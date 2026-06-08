@@ -4,7 +4,7 @@
 # carbon
 
 path `beyond/carbon` · uuid `0d9f34bd-dc5f-8d20-a4a3-29f189a062da` · diamond `400409b2-6a41-8a26-be43-3de3eda2de4c`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types · exports function · escapes —
 links `6/6` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law compute is never carbon-free; every step's gCO2e is estimated from energy an
 
 ---
 
-<sub>content-uuid `8a3710d9-4048-8ca4-936d-1cbbfac8dada` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6fc3e5d6-b464-804d-aec1-33b8f226ae19` · `pnpm readme` · `pnpm computed:check`</sub>

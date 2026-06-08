@@ -32,7 +32,7 @@ import { describe, expect, it } from 'vitest'
 import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { BG_COUNTRY_BUNDLE, COUNTRY_BUNDLES } from '@/iso/3166/1/country'
-import { COUNTRY_APIS, BANK_APIS } from '@/config/country-apis'
+import { COUNTRY_APIS, BANK_APIS } from '@/country/api'
 import { isBgIban, parseBgIban } from '@/iso/13616'
 import {
   validateBgVatId,
@@ -87,7 +87,7 @@ describe('BG implementation — pillar #1: country bundle exists in registry', (
 
 describe('BG implementation — pillar #3 + #4: every BG endpoint has clientImplemented: true', () => {
   // Known-pending client implementations. Each entry MUST have a matching
-  // "lands in follow-on batch" comment in src/config/country-apis.ts; this
+  // "lands in follow-on batch" comment in src/country/api.ts; this
   // list shrinks as those batches ship. NEW unimplemented entries that
   // aren't on this list still fail the test → the tripwire keeps catching
   // unintended regressions while letting tracked work-in-progress through.

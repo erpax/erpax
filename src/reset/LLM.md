@@ -3,15 +3,15 @@
 
 # reset
 
-path `reset` · uuid `a665f014-69fa-87f5-988a-692aa0541c05` · diamond `0fe0095c-127b-89ec-80db-272aef2d4047`
+path `reset` · uuid `a665f014-69fa-87f5-988a-692aa0541c05` · diamond `49b5ec53-444f-86a6-8a1c-5f3bb843595d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·password·sti · exports reset · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·pollination·reservoir · ← balance·landmarks·pollination·reservoir
+neighbors → action·collapse·law·merge·password·research·sti · ← action·collapse·law·merge·password·research·sti
 analysis —
 law reset is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5c25b55b-93f2-8a67-92d4-8c9129da3984` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4cd46a3b-ce8a-896a-a400-3387e5b3f3df` · `pnpm readme` · `pnpm computed:check`</sub>

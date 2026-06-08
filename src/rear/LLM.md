@@ -3,15 +3,15 @@
 
 # rear
 
-path `rear` · uuid `511be61a-9050-8b47-93af-be8c22117208` · diamond `d02b4be5-5bf2-8ae8-a965-213c1ae72182`
+path `rear` · uuid `511be61a-9050-8b47-93af-be8c22117208` · diamond `f67a8336-e7b6-8cc2-9e11-b60bbbfc2de8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports rear · escapes —
-links `4/4` · folded `1` · bonds in `10` out `10`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accrual·agriculture·balance·contracts·default·hardcover·horo·landmarks·power·reviews · ← accrual·agriculture·balance·contracts·default·hardcover·horo·landmarks·power·reviews
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law rear is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4ce1fae4-6c72-8331-8fc7-1972235e1ed3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1824a415-bf14-852d-9119-da50e71fc9c5` · `pnpm readme` · `pnpm computed:check`</sub>

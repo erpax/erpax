@@ -12,7 +12,7 @@
  * @standard ISCO-08 · ESCO v1.2 · НКПД-2011 · NACE Rev.2.1 · IEC 62264-1:2013 · UN/CEFACT Rec 20 · EN-16931 · SFIA 8
  * @audit catalogue-only clients (clientImplemented:false) — endpoints are real, modules pending
  */
-import type { CountryApi } from '@/config/country-apis'
+import type { CountryApi } from '@/country/api'
 
 /** ESCO — resolve an ISCO-08 occupation to its skills/competencies across 27 EU languages. */
 export const ESCO_API: CountryApi = {

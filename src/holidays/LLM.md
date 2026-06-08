@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports holidays · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·euenergy·holographic·landmarks · ← balance·euenergy·holographic·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law holidays is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d121a252-e489-8aca-894f-31dd2a86abb7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a855243d-1bfd-892f-8cd5-2e17541fc1d1` · `pnpm readme` · `pnpm computed:check`</sub>

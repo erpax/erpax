@@ -3,15 +3,15 @@
 
 # holographic
 
-path `holographic` · uuid `5d018913-b3f1-8341-aa70-3213b1beabfb` · diamond `e024a648-ffad-843e-97a1-e4f03919ce11`
+path `holographic` · uuid `5d018913-b3f1-8341-aa70-3213b1beabfb` · diamond `7da7907b-507b-8fa6-9268-b8d3c08b3cef`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports akashic·aura·config·dimension·duality·fractal·identity·merge·one·self · exports holographic · escapes —
-links `19/19` · folded `1` · bonds in `92` out `91`
+links `19/19` · folded `1` · bonds in `85` out `80`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·accounting·accounts·activities·admin·allocation·analytics·aura·auth·balance·batches·best·beyond·biological·catalogue·centers·chat·checks·clip·coding·collide·comment·consciousness·consent·conventional·cooking·correlation·corruption·crosses·cup·currencies·current·deduplication·editor·employee·euenergy·fertility·handling·has·header·holidays·holographic·homeopathic·id·instrument·interactive·it·item·itsocial·join·landmarks·maintainer·meal·mens·notice·operation·pathophysiology·performances·policy·pollination·qualification·query·quote·quotes·received·returns·rheumatologic·roadmap·satire·saturday·scorecard·seasonal·sections·sell·sequence·sign·snapshots·stat·submissions·suite·suspended·telephone·tour·tourist·union·value·wheel·width·window·winery · ← 3986·6585·accounting·accounts·activities·admin·allocation·analytics·aura·auth·balance·batches·best·beyond·biological·biological·catalogue·centers·chat·checks·clip·coding·collide·comment·consciousness·consent·conventional·cooking·correlation·corruption·crosses·cup·currencies·current·deduplication·editor·employee·euenergy·fertility·handling·has·header·holidays·holographic·homeopathic·id·instrument·interactive·it·item·itsocial·join·landmarks·maintainer·meal·mens·notice·operation·pathophysiology·performances·policy·pollination·qualification·query·quote·quotes·received·returns·rheumatologic·roadmap·satire·saturday·scorecard·seasonal·sections·sell·sequence·sign·snapshots·stat·submissions·suite·suspended·telephone·tour·tourist·union·value·wheel·width·window·winery
+neighbors → access·agent·akashic·analog·animism·atom·aura·beyond·cache·cases·classroom·cloning·collapse·compass·competencies·config·consciousness·contribution·corruption·cost·defence·diamond·dimension·duality·education·federation·fractal·gravity·health·hermeticism·hinduism·identity·justice·linearity·llm·logic·matrix·matter·memory·merge·message·one·paganism·peace·projection·proof·protestantism·readme·receipt·reference·religion·rodin·science·sectors·seed·self·sequence·services·shinto·similar·skill·skills·society·sparsity·stream·sufficient·sync·team·test·thought·torus·transaction·trinity·typography·uuid·vedanta·void·website·whole·wisdom · ← access·agent·akashic·analog·animism·atom·aura·beyond·cache·cases·classroom·cloning·collapse·compass·competencies·config·consciousness·contribution·corruption·cost·cost·defence·diamond·dimension·duality·education·federation·fractal·gravity·health·hermeticism·hinduism·identity·justice·linearity·llm·logic·matrix·matter·memory·merge·message·one·paganism·peace·projection·proof·protestantism·readme·receipt·reference·religion·rodin·science·sectors·seed·self·sequence·services·shinto·similar·skill·skills·society·sparsity·stream·sufficient·sync·sync·team·test·thought·torus·transaction·trinity·typography·typography·uuid·uuid·vedanta·void·website·whole·whole·wisdom
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `8c3d20f9-da8b-87b6-a752-7126f12eeb23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83a2d916-70bb-8dd4-aaba-3500f6629897` · `pnpm readme` · `pnpm computed:check`</sub>

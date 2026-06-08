@@ -3,15 +3,15 @@
 
 # rescue
 
-path `rescue` · uuid `e822da66-29f0-8da0-8fab-95f39637ab3d` · diamond `8596c060-fce4-832e-a246-cb0571a6774e`
+path `rescue` · uuid `e822da66-29f0-8da0-8fab-95f39637ab3d` · diamond `ab81c5ca-ccbf-81ee-b170-8ded09db2d58`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·organization·search·sti · exports rescue · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·organization·search·sti · ← collapse·law·merge·organization·search·sti
 analysis —
 law rescue is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95e8d19a-ced7-8f88-99fa-6809e63f875e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92212e68-589e-8034-95c3-e65222979071` · `pnpm readme` · `pnpm computed:check`</sub>

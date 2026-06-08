@@ -25,7 +25,21 @@
 
 - partition `development` · sub-root `91f0328b-2317-8a07-916a-8a6bd4bf3306`
 - bond degree `224` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the cross binding is computed (entangle over the pair); never hand-asserted` · banner
+
+## analytics
+
+- bond degree `224` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `a124ba46-ce15-8906-97af-fcf01a7d77dd` · framed by typography partition `development` bonds `224` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a336beea-6015-8001-8ace-23dc5d12d3cf` · framed by typography partition `development` bonds `224` · `pnpm readme` · `pnpm readme:check`</sub>

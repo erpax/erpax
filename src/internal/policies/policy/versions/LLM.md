@@ -3,15 +3,15 @@
 
 # versions
 
-path `internal/policies/policy/versions` · uuid `ca2e22c2-4266-86b4-96db-880f338baa99` · diamond `b1139ec1-24d8-85be-b450-55d74364604b`
+path `internal/policies/policy/versions` · uuid `ca2e22c2-4266-86b4-96db-880f338baa99` · diamond `bbd7a25f-9c25-85b5-8d93-7a88e5193c8d`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `6` out `6`
+links `0/0` · folded `1` · bonds in `39` out `39`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dataprotection·landmarks·memories·stat·thing · ← cohort·dataprotection·landmarks·memories·stat·thing
+neighbors → access·akashic·angel·audit·begin·close·collections·conversion·cost·currency·date·defence·deploy·dimension·education·end·fs·horo·identity·law·localize·measure·merge·open·pages·period·phase·policies·posts·proof·rate·receipts·sequence·signal·snapshot·tamper·tax·uuid·whole · ← access·akashic·angel·audit·begin·close·collections·conversion·cost·currency·date·defence·deploy·dimension·education·end·fs·horo·identity·law·localize·measure·merge·open·pages·period·phase·policies·posts·proof·rate·receipts·sequence·signal·snapshot·tamper·tax·uuid·whole
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `fed1bc02-84c5-8e44-8c0c-05abd4d94a2d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `209f6573-0416-86d4-94a0-ba5156f412d8` · `pnpm readme` · `pnpm computed:check`</sub>

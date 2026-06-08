@@ -3,15 +3,15 @@
 
 # leave
 
-path `leave` · uuid `2c732e76-de39-85da-b0d4-e41f8b4bc6b6` · diamond `5530d10b-65a0-8b9c-897a-20e4f0d5aed6`
+path `leave` · uuid `2c732e76-de39-85da-b0d4-e41f8b4bc6b6` · diamond `b8f00dfd-13e0-8472-b665-6d960f4fa91f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports leave · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → leases·leg · ← leases·leg
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law leave is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dbaa9ecf-e9b5-8de0-be55-ec9844f8478d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `471a56c5-deb0-80e8-a209-d4f6d91e656b` · `pnpm readme` · `pnpm computed:check`</sub>

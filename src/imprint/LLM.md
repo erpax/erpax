@@ -3,15 +3,15 @@
 
 # imprint
 
-path `imprint` · uuid `b0c0c240-81d9-89fc-b7d6-0552533a9c44` · diamond `f9a5e9aa-a1b3-8b35-9ffd-c05348753d10`
+path `imprint` · uuid `b0c0c240-81d9-89fc-b7d6-0552533a9c44` · diamond `05c4e122-1171-85fe-9ab9-e8c9e0556a37`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·publisher·sti · exports imprint · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → deduction·events·landmarks·researcher·reverse·rootstock·sandbox·width · ← deduction·events·landmarks·researcher·reverse·rootstock·sandbox·width
+neighbors → collapse·law·merge·publisher·sti · ← collapse·law·merge·publisher·sti
 analysis —
 law imprint is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8c4d1265-fb0f-8a21-bbb2-517033141b0e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c00a2ddb-8ec7-8deb-b8aa-8093cf481ecf` · `pnpm readme` · `pnpm computed:check`</sub>

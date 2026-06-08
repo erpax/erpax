@@ -3,15 +3,15 @@
 
 # imperial
 
-path `imperial` · uuid `f51f6e8c-4981-8d52-b46a-1ecad194f58b` · diamond `a378b3a6-a23b-8356-825a-4fad012d02f7`
+path `imperial` · uuid `f51f6e8c-4981-8d52-b46a-1ecad194f58b` · diamond `216e2d72-94f5-8f36-8fbd-7fb37d9adde7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports imperial · escapes —
-links `4/4` · folded `1` · bonds in `11` out `11`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·company·exif·file·landmarks·memories·pulmonary·sanitization·standards·stat · ← amount·cohort·company·exif·file·landmarks·memories·pulmonary·sanitization·standards·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law imperial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7c11d093-09c2-87f7-8605-e4063e493227` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8df2e90-6975-8880-a4a4-f382e04f4200` · `pnpm readme` · `pnpm computed:check`</sub>

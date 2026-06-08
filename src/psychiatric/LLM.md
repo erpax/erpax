@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports psychiatric · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law psychiatric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8859415d-afe3-8b64-978d-841494db0efc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd3c9b15-9370-8d72-90e3-2ebe23010021` · `pnpm readme` · `pnpm computed:check`</sub>

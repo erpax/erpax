@@ -3,15 +3,15 @@
 
 # isrc
 
-path `isrc` · uuid `3656a9fe-22a4-8b81-9ed6-800242f5b23a` · diamond `ec12b0bf-14fb-876c-94de-c3fcfe70dc28`
+path `isrc` · uuid `3656a9fe-22a4-8b81-9ed6-800242f5b23a` · diamond `cc11dd27-f881-8371-9e64-6f5a879e837c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports isrc · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law isrc is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `57bfbf2b-ae00-842d-98b5-a139794d6c58` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1fc34a07-992d-886c-a856-190b92102d3c` · `pnpm readme` · `pnpm computed:check`</sub>

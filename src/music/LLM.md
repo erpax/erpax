@@ -3,15 +3,15 @@
 
 # music
 
-path `music` · uuid `88870852-ae4f-81ca-8e57-2142ac0569fe` · diamond `6100f7b9-22f9-8fbd-8d19-7b13cfd06b28`
+path `music` · uuid `88870852-ae4f-81ca-8e57-2142ac0569fe` · diamond `c044429d-dfe5-89fd-90fb-68b9206ced7f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports album·arrangement·composition·event·form·format·group·law·member·object·playlist·production·recording·release·sheet·store·type·venue·video · exports music · escapes —
-links `19/19` · folded `1` · bonds in `5` out `5`
+links `19/19` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·rvpark·stat · ← cohort·landmarks·memories·rvpark·stat
+neighbors → album·albums·arrangement·composition·credited·event·form·format·group·law·member·object·orphism·playlist·production·recorded·recording·release·sheet·store·sufism·type·venue·video · ← album·albums·arrangement·composition·credited·event·form·format·group·law·member·object·orphism·playlist·production·recorded·recording·release·sheet·store·sufism·type·venue·video
 analysis —
 law a recording is bound to the composition it realises; the sound credited to a work must trace back to that work's authorship.
 
 ---
 
-<sub>content-uuid `c77c2de6-dea5-8318-a21a-4db4daa259a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `36640e08-c402-8507-a0c3-e58ad12f6ecd` · `pnpm readme` · `pnpm computed:check`</sub>

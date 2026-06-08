@@ -3,15 +3,15 @@
 
 # insertion
 
-path `insertion` · uuid `78d769fd-7be2-849c-adcf-b27a9c48a081` · diamond `58947d03-a5b3-84fb-861f-1a4711164a8a`
+path `insertion` · uuid `78d769fd-7be2-849c-adcf-b27a9c48a081` · diamond `3fefc13e-1a6e-8e3b-8498-38def5ebde5a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports insertion · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·country·harden·landmarks·memories·stat · ← cohort·country·harden·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law insertion is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `541db9f0-9196-8b93-96ae-7201be8fda36` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `38f00c7a-102c-886e-83ae-c24e38c39a3b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # park
 
-path `park` · uuid `11c2c1b6-5699-84dd-80a4-3fbf36a2b781` · diamond `b6fc1a54-19bc-840f-9853-e31b39b85623`
+path `park` · uuid `11c2c1b6-5699-84dd-80a4-3fbf36a2b781` · diamond `a5985c26-eefa-8afa-a20b-b51eb1625d86`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports amusement·law·rv · exports park · escapes —
-links `3/3` · folded `1` · bonds in `2` out `2`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical · ← landmarks·periodical
+neighbors → amusement·law·rv · ← amusement·law·rv
 analysis —
 law park is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4a89be04-5e5d-8ddc-9b95-17d6c4d78b7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0526b4a2-178d-8d1f-bc28-3488ffa0558e` · `pnpm readme` · `pnpm computed:check`</sub>

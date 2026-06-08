@@ -3,15 +3,15 @@
 
 # partial
 
-path `partial` · uuid `64637808-e64b-8509-a550-7b94237301ea` · diamond `7bed3e3d-0112-8efa-b45a-fd906a4fff9e`
+path `partial` · uuid `64637808-e64b-8509-a550-7b94237301ea` · diamond `e25b8c10-f6a6-8dd4-be2f-667218f96230`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bathrooms·collapse·law·merge·number·sti · exports partial · escapes —
-links `6/6` · folded `1` · bonds in `40` out `40`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounts·akashic·balance·center·comment·confirmation·corruption·customer·diffusion·dropoff·evaluated·events·fact·fertility·flight·founder·girls·homeopathic·id·inventory·invoice·landmarks·marine·mass·memories·partial·platform·plumber·runs·sell·siblings·signatures·snapshots·spouse·swatch·system·tour·transactions·valid · ← accounting·accounts·akashic·balance·center·comment·confirmation·corruption·customer·diffusion·dropoff·evaluated·events·fact·fertility·flight·founder·girls·homeopathic·id·inventory·invoice·landmarks·marine·mass·memories·partial·platform·plumber·runs·sell·siblings·signatures·snapshots·spouse·swatch·system·tour·transactions·valid
+neighbors → bathrooms·collapse·law·merge·number·sti · ← bathrooms·collapse·law·merge·number·sti
 analysis —
 law partial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `08f586b5-da46-8777-9b25-258392c14990` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f0e3b9c-0185-8a8f-96a3-b2c9fea7803e` · `pnpm readme` · `pnpm computed:check`</sub>

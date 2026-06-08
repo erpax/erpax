@@ -23,7 +23,7 @@
 
 - partition `landlord` · sub-root `3c84c784-5a2e-8178-b4c8-9c658e1f1359`
 - bond degree `9` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `90a58e82-3680-81d9-9b91-66474e9c0f28` · framed by typography partition `landlord` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3aabb91a-4479-8a7f-9dde-d52aa038ac97` · framed by typography partition `landlord` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

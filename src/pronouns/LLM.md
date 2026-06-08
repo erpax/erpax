@@ -3,15 +3,15 @@
 
 # pronouns
 
-path `pronouns` · uuid `a49a1889-eaa6-8126-9562-64c65628ec0f` · diamond `5b0eeb6f-eece-85be-a21c-d1625a1d6eeb`
+path `pronouns` · uuid `a49a1889-eaa6-8126-9562-64c65628ec0f` · diamond `84db0fef-e717-810a-b1f2-5d0c304dc995`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports pronouns · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·customer·landmarks·latitude·laundry·law · ← activities·customer·landmarks·latitude·laundry·law
+neighbors → law·pronoun·thing · ← law·pronoun·thing
 analysis —
 law pronouns is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `31ff7140-4851-8434-8cbc-010ea5458806` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e630a970-1fc5-8169-88c4-b5a3a54b579d` · `pnpm readme` · `pnpm computed:check`</sub>

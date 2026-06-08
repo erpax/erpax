@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·party·sti · exports political · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·harden·landmarks·memories·stat · ← cohort·harden·landmarks·memories·stat
+neighbors → collapse·law·merge·party·sti · ← collapse·law·merge·party·sti
 analysis —
 law political is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d33ba65f-6f9c-80dc-9e02-d8ba2e758ae6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0092cfbd-b3e4-8509-be11-a9f8ef4a79cf` · `pnpm readme` · `pnpm computed:check`</sub>

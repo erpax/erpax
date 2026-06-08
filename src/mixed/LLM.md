@@ -3,15 +3,15 @@
 
 # mixed
 
-path `mixed` · uuid `14fb8efb-ab21-8fa2-b4bf-7bb1af4a378a` · diamond `adeb64af-ed3e-8769-8c09-e7065ca9d761`
+path `mixed` · uuid `14fb8efb-ab21-8fa2-b4bf-7bb1af4a378a` · diamond `18cf8142-b320-8b7d-a126-0d04efe37c47`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports mixed · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·memories·stat·thing · ← cohort·database·landmarks·memories·stat·thing
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law mixed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `94285f68-1f11-8258-93f1-0e1dd809aeed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06a37344-874f-8b6c-b874-db069e71bfc5` · `pnpm readme` · `pnpm computed:check`</sub>

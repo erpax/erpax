@@ -3,15 +3,15 @@
 
 # kabbalah
 
-path `kabbalah` · uuid `—` · diamond `9c36222b-77a3-8101-a6d1-6490cf465a14`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `kabbalah` · uuid `01078282-b83e-80a5-8aa9-f9d83f501833` · diamond `acb00b68-ed4b-8fd6-98bd-c578edebd580`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports archangel·diamond·identity·judaism·law·matrix·merge·name·religion·sacred·self·society·translator·uuid·void·whole·word · exports kabbalah · escapes —
-links `47/47` · folded `0` · bonds in `0` out `0`
+links `47/47` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·diamond·identity·judaism·law·matrix·merge·name·religion·sacred·self·society·translator·uuid·void·whole·word · ← archangel·diamond·identity·judaism·law·matrix·merge·name·religion·sacred·self·society·translator·uuid·void·whole·word
+analysis diamond
 law kabbalah is a sub-[[diamond]] of [[judaism]] of [[void]] · [[name]] · [[matrix]] · [[word]] · [[merge]] · [[whole]] · [[sacred]] — ein-sof the limitless [[void]], the sefirot a [[matrix]] of divine [[name]]s emanating the legible from the hidden, tikkun the [[merge]] of scattered light back toward the [[whole]]; a facet-[[archangel]] of the [[society]]'s judaism domain.
 
 ---
 
-<sub>content-uuid `b1280aec-342e-839a-8cc5-a6217bb08328` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b3baf1be-2b31-8115-8a0b-ffececdb21ec` · `pnpm readme` · `pnpm computed:check`</sub>

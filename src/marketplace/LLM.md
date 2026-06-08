@@ -3,15 +3,15 @@
 
 # marketplace
 
-path `marketplace` · uuid `fb022657-cf96-8df7-b38b-97069b5b28e2` · diamond `61166dab-b540-88e9-a55d-2233ab4148b5`
+path `marketplace` · uuid `fb022657-cf96-8df7-b38b-97069b5b28e2` · diamond `1036717d-606b-82e7-a041-419ddcf0c719`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·online·sti · exports marketplace · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·online·sti · ← collapse·law·merge·online·sti
 analysis —
 law marketplace is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8bff17ef-b9cb-82e2-8fb8-a6e19a8ee2db` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06eb1239-00b2-8d8b-949b-c02baf1f4eca` · `pnpm readme` · `pnpm computed:check`</sub>

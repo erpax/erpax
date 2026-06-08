@@ -23,7 +23,22 @@
 
 - partition `ecommerce` · sub-root `0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4`
 - bond degree `33` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GS1-GTIN` · catalogue
+- `NIST-INCITS-359-2012` · catalogue
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `78dcf00f-f228-8642-b1df-8bc42c5746ee` · framed by typography partition `ecommerce` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c84bb531-d3eb-89cb-a4f2-2a97d1e0bad3` · framed by typography partition `ecommerce` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

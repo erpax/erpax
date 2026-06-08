@@ -23,7 +23,21 @@
 
 - partition `covid` · sub-root `744258de-1ba1-837e-9a14-2efa0cdff635`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cbd50172-58ea-8839-85ed-fc910518bbab` · framed by typography partition `covid` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e3e85ea1-e422-8a33-8b75-775641cc658a` · framed by typography partition `covid` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

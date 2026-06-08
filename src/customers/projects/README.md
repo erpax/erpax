@@ -25,7 +25,29 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 §125 estimation-uncertainty (project budgets)` · banner
+- `IFRS IFRS-15 §126 milestone-billing` · banner
+- `IFRS IFRS-15 §35 over-time-recognition` · banner
+- `IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress` · banner
+- `ISO-19011:2018 audit-trail wip-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-606-10-25-27 over-time-criteria` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
@@ -41,4 +63,4 @@
 
 ---
 
-<sub>content-uuid `0e8702af-3227-86f5-98b8-90234839d4e2` · framed by typography partition `customers` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `89fb06f3-05c5-81f1-aab9-d58f8c99c190` · framed by typography partition `customers` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # reference
 
-path `reference` · uuid `a95ff693-d9d5-8fd4-9d7d-bc96a2bf2e05` · diamond `0dc08249-3f8d-8e23-b043-7fa3b50faa3a`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `reference` · uuid `c31350d7-a49a-80f2-81bb-8947e91cd7b1` · diamond `beae84d9-c006-81de-9340-72493a46d2cc`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports api·collapse·content·law·merge·quantity·sti·time·value · exports reference · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
+links `9/9` · folded `1` · bonds in `37` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·find·landmarks·memories·stat·utterance · ← cohort·database·find·landmarks·memories·stat·utterance
+neighbors → agent·akashic·api·cloning·coil·collapse·consciousness·content·definition·dependency·diamond·fs·gate·generate·github·holographic·identity·law·law·mapping·mcp·merge·part·practice·prayer·quantity·reference·role·seal·self·society·standards·sti·thought·time·uuid·value·whole · ← agent·akashic·api·cloning·coil·collapse·consciousness·content·definition·dependency·diamond·fs·gate·generate·github·holographic·identity·law·mapping·mcp·merge·part·practice·prayer·quantity·reference·role·seal·self·society·standards·sti·thought·time·uuid·value·whole
 analysis agent·diamond
 law reference is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `be9a9b58-6227-8178-afdd-dbac9319ebe1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f09cc7d1-1a06-8a41-8c08-8403e3a9485c` · `pnpm readme` · `pnpm computed:check`</sub>

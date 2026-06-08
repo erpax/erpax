@@ -3,15 +3,15 @@
 
 # packs
 
-path `packs` · uuid `42280e54-aade-8ff0-9f00-015a850049a3` · diamond `82dbf73b-3c71-8782-be8c-c2973b0796b8`
+path `packs` · uuid `42280e54-aade-8ff0-9f00-015a850049a3` · diamond `30f84641-aab9-8710-b9c5-83ba66bf6baa`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/fields·@/horo·@/membership/admin/mutate/access·@/standard/collection/hook·@/tenant/scoped/read · exports const·default · escapes —
-links `14/14` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks · ← create·landmarks
+links `14/14` · folded `1` · bonds in `13` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·balance·choice·coordinate·grade·horo·items·lots·orders·pack·pickup·postharvest · ← accounting·balance·choice·coordinate·grade·horo·items·items·lots·orders·pack·pickup·postharvest
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2f77a7b7-a0f4-8df6-918f-296ed20a5229` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2fab3a92-136c-872b-997d-1100d1c0a301` · `pnpm readme` · `pnpm computed:check`</sub>

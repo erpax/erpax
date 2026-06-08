@@ -3,15 +3,15 @@
 
 # scopes
 
-path `plugins/mcp/scopes` · uuid `—` · diamond `ccf30546-5295-850a-97e3-c5e3c03b2fca`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `plugins/mcp/scopes` · uuid `03cf6368-d501-828f-854e-64659e8b20ee` · diamond `3c9a5e57-6499-8444-a7b2-01b4205909d4`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
-links `5/5` · folded `0` · bonds in `0` out `0`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·1·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → access·cross·law·mcp·plugins · ← access·cross·law·mcp·plugins
+analysis —
 law scopes is one word on the plugins/mcp diamond path — `plugins/mcp/scopes`, not camelCase `mcpScopes`.
 
 ---
 
-<sub>content-uuid `ea9ca48f-b7ee-8888-966f-76a3c598e559` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a32f6888-1b10-8f2b-915a-d34e20b0bfed` · `pnpm readme` · `pnpm computed:check`</sub>

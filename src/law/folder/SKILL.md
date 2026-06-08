@@ -11,6 +11,7 @@ The user's standing command, made a gate: **every atom is ONE generic lowercase 
 
 - **NAME** — the folder is not one word: a hyphen (`trading-apis`), camelCase (`appCollections`), or a `.suffix` (`account.service`). The generic-naming law: name by the generic data-type in one concatenated word; regulation refs live only in [[standards]] and banners, never in a folder name.
 - **TRINITY** — a *code* folder (one holding `index.ts` or `test.ts`) is missing any of `SKILL.md` / `index.ts` / `test.ts`. A folder holding **only** a `SKILL.md` is a legal vocabulary word (antimatter-only) — the trinity is required only once matter appears.
+- **SEAL** — empty or incomplete folders are **not sealed**: no `SKILL.md` and no `index.ts` ⇒ empty; partial trinity or stray matter without a nested child atom ⇒ incomplete. `deriveFolderModel` and the diamond membership audit both fail closed; an unsealed parent forbids sealed descendants ([[seal]] propagation).
 
 ## Why `src/config/trading-apis/index.ts` was a violation
 

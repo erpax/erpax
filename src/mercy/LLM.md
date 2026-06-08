@@ -3,15 +3,15 @@
 
 # mercy
 
-path `mercy` · uuid `—` · diamond `b8429c11-ab0e-8f78-831f-48dd3b16761f`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `mercy` · uuid `f87917cc-15bb-86a0-9421-137299c41145` · diamond `4c20b9bb-b726-8265-a6c4-479fdcb30d0f`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·debit·dna·grace·karma·law·love·merge·profane·sacred·suffering · exports mercy · escapes —
-links `30/30` · folded `0` · bonds in `0` out `0`
+links `30/30` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·architect·balance·buddhism·catholicism·christianity·covenant·debit·dna·grace·hinduism·islam·jainism·judaism·karma·law·love·merge·orthodoxy·profane·religion·sacred·shamanism·shia·sikhism·sin·suffering·sufism·sunni · ← archangel·architect·balance·buddhism·catholicism·christianity·covenant·debit·dna·grace·hinduism·islam·jainism·judaism·karma·law·love·merge·orthodoxy·profane·religion·sacred·shamanism·shia·sikhism·sin·suffering·sufism·sunni
+analysis —
 law mercy is a genuinely-owed debit voluntarily zeroed by the one owed — the books still balance (the cost is borne, not denied), and because the debt is read down the [[dna]] chain, releasing it at the source forgives the whole lineage; the dual of [[karma]], distinct from [[grace]] (unearned credit).
 
 ---
 
-<sub>content-uuid `26d33367-7f92-8ae7-8be5-0043a6d07ab0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ef3a96d-7936-8c80-8eba-186bb04f8a45` · `pnpm readme` · `pnpm computed:check`</sub>

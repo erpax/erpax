@@ -3,15 +3,15 @@
 
 # predecessor
 
-path `predecessor` · uuid `e972b890-b74c-8ce8-8b53-7ace95a5a953` · diamond `aa6e5c9f-4880-868a-8e98-36d3aac87700`
+path `predecessor` · uuid `e972b890-b74c-8ce8-8b53-7ace95a5a953` · diamond `d6c52af4-c84a-871d-b49c-e61dcd866e8f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports predecessor · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law predecessor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `506de308-1ecb-88f9-8aa6-944eebd5383b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72a5f546-4010-8aa9-99d9-27628922efe1` · `pnpm readme` · `pnpm computed:check`</sub>

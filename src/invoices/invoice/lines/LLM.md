@@ -3,15 +3,15 @@
 
 # lines
 
-path `invoices/invoice/lines` · uuid `098bc3f2-4883-8aea-a422-a6c5268e2fa2` · diamond `fcf41394-18f9-8ce7-8960-beee910ee6cc`
+path `invoices/invoice/lines` · uuid `098bc3f2-4883-8aea-a422-a6c5268e2fa2` · diamond `7da5f641-f655-80cf-9a80-47070a720318`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/invoices/invoice/lines/hooks·@/un/cefact/5305 · exports but·const·when · escapes —
-links `8/8` · folded `1` · bonds in `15` out `15`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·candidate·crisis·esr·feed·landmarks·mobile·moved·performance·quote·rv·sandbox·sla·training · ← agriculture·balance·candidate·crisis·esr·feed·landmarks·mobile·moved·performance·quote·rv·sandbox·sla·training
+links `8/8` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounts·horo·invoices·items·law·standard·tax · ← accounting·accounts·horo·invoices·items·law·standard·tax
 analysis —
 law each EN-16931 BG-25 line carries its own net + VAT (BG-30) that feed the GL double-entry and recompute inventory; the line is content-addressed, summing into its header without drift.
 
 ---
 
-<sub>content-uuid `630d4a5d-1dd7-8d4c-a1aa-d81317dc58fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `71a1269e-31cb-834e-b0d5-26acd68d6698` · `pnpm readme` · `pnpm computed:check`</sub>

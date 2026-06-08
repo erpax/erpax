@@ -3,15 +3,15 @@
 
 # place
 
-path `place` · uuid `03d8a8ec-f309-89b5-bc81-fd75c7147e89` · diamond `ab7f663f-d192-8394-94d1-74ca4f2b24bb`
+path `place` · uuid `03d8a8ec-f309-89b5-bc81-fd75c7147e89` · diamond `bf3fd404-eeb7-8715-9d79-dc0499f8ee1f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports birth·contained·contains·death·education·experience·law·worship · exports place · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·funnel·landmarks·misconceptions · ← action·funnel·landmarks·misconceptions
+neighbors → aquarium·bakery·birth·brewery·bridge·campground·canal·casino·cemetery·contained·contains·continent·courthouse·crematorium·death·education·experience·itinerary·landform·latitude·law·locksmith·longitude·playground·pond·recycle·worship · ← aquarium·bakery·birth·brewery·bridge·campground·canal·casino·cemetery·contained·contains·continent·courthouse·crematorium·death·education·experience·itinerary·landform·latitude·law·locksmith·longitude·playground·pond·recycle·worship
 analysis —
 law place is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1ab7907d-bf50-8e28-8c12-b79d7175c6dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aa28c0aa-b1e7-8e2a-880c-776a956df4ad` · `pnpm readme` · `pnpm computed:check`</sub>

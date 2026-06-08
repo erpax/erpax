@@ -3,15 +3,15 @@
 
 # resource
 
-path `resource` · uuid `837e9106-0b3c-83bd-b9c5-1edbde1f4dca` · diamond `7d14f7aa-a0aa-81a9-9e1b-a919cc1deb3d`
+path `resource` · uuid `837e9106-0b3c-83bd-b9c5-1edbde1f4dca` · diamond `434bcdb4-384c-80dc-9561-8b1acc21153d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·learning·merge·sti·type · exports resource · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·diagnostic·landmarks·memories·stat · ← cohort·diagnostic·landmarks·memories·stat
+neighbors → collapse·drain·law·learning·merge·sti·type · ← collapse·drain·law·learning·merge·sti·type
 analysis —
 law resource is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f22ee6b9-b3bc-893e-9e1d-6792b2bb09b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eea859b6-cabd-80d1-8281-144448bebe46` · `pnpm readme` · `pnpm computed:check`</sub>

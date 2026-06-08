@@ -33,7 +33,8 @@
 import type { AgentContext, AgentRuntime, DomainEvent } from '../types'
 import type { Team } from '../team'
 import { teamUuid } from '../team'
-import { connectAgentSociety, roomIdForTenant, type AgentSociety } from './society'
+import { connectAgentSociety, domainToErpaxEvent, roomIdForTenant, type AgentSociety } from './society'
+import { enforceTeamCommsEmit } from '@/team/comms'
 
 /** A member's presence in the circle — its human name + content-addressed uuid (the voice). */
 export interface HoroMember {
@@ -108,8 +109,25 @@ export function joinHoro(team: Team, opts: JoinHoroOpts): HoroPresence {
     roomId,
     presence,
     members: team.members.map((m) => ({ name: m.name, uuid: m.uuid })),
-    // unknown/absent voice ⇒ undefined ⇒ the breath falls back to `presence` (the team voice).
-    publish: (ev, asMember) => breath.publish(ev, asMember === undefined ? undefined : voiceOf.get(asMember)),
+    publish: (ev, asMember) => {
+      const voicedAs = asMember === undefined ? undefined : voiceOf.get(asMember)
+      const envelope = domainToErpaxEvent(ev, voicedAs ?? presence)
+      const verdict = enforceTeamCommsEmit({
+        scopeTenantId: tenantId,
+        team,
+        emit: {
+          tenantId,
+          event: envelope.event,
+          eventUuid: envelope.uuid,
+          agent: envelope.agent,
+          payload: envelope.payload,
+          depth: 0,
+          emittedAt: envelope.ts,
+        },
+      })
+      if (!verdict.ok) throw new Error(`team-comms: ${verdict.reason ?? 'emit rejected'}`)
+      breath.publish(ev, voicedAs)
+    },
     close: () => breath.close(),
   }
 }

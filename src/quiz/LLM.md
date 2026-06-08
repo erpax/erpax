@@ -3,15 +3,15 @@
 
 # quiz
 
-path `quiz` · uuid `4360b29b-869e-8acf-8f87-34069538a331` · diamond `9b583afd-5426-86fa-beba-87f557e1e476`
+path `quiz` · uuid `4360b29b-869e-8acf-8f87-34069538a331` · diamond `39864b56-ce50-86a2-98f6-572f76793942`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports quiz · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law quiz is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `908cd217-c276-8146-afa7-e90e3229fdcd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2c259421-86fc-8179-b97f-2ca109640374` · `pnpm readme` · `pnpm computed:check`</sub>

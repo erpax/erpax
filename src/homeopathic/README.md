@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `homeopathic` · sub-root `eebc67a3-d27f-8360-bff3-362853daefe1`
-- bond degree `232` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `eebc67a3-d27f-8360-bff3-362853daefe1`
-- bonds in `115` · out `113`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `10bd7c41-724d-8df3-9ef2-0c66297a2523` · framed by typography partition `homeopathic` bonds `232` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ecf726f-b05a-8abb-b792-968d69d7e981` · framed by typography partition `homeopathic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `crematorium` · sub-root `52dd4081-c620-8412-93cc-7f1c5628f89f`
 - bond degree `6` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `33a4de9d-d450-89b6-a489-5e76ad29569b` · framed by typography partition `crematorium` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2e966aa9-8857-8c82-9218-0187c42d65d5` · framed by typography partition `crematorium` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

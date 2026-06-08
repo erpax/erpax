@@ -3,15 +3,15 @@
 
 # pond
 
-path `pond` · uuid `79cc92b1-41a8-8b7e-aeff-fa26a61d4c11` · diamond `0fb6a90b-98dc-80e2-81a3-e9dc448024e8`
+path `pond` · uuid `79cc92b1-41a8-8b7e-aeff-fa26a61d4c11` · diamond `71e548b2-92e4-85c9-aaf3-53aaa0f25102`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·place · exports pond · escapes —
-links `2/2` · folded `1` · bonds in `10` out `10`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → blocks·bound·cohort·landmarks·memories·notice·occurrence·ofmech·stat·trial · ← blocks·bound·cohort·landmarks·memories·notice·occurrence·ofmech·stat·trial
+neighbors → law·place · ← law·place
 analysis —
 law a pond is a bounded body of still water — it is defined by its edge, so it is a place with a perimeter and not a flow.
 
 ---
 
-<sub>content-uuid `b6d00ef9-af2e-86a5-8b18-6681294c81d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c3bd628-7dd9-8c56-9b0e-67cbdd109922` · `pnpm readme` · `pnpm computed:check`</sub>

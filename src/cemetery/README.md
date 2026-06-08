@@ -23,7 +23,7 @@
 
 - partition `cemetery` · sub-root `56892016-0bbf-87e8-81db-499a09c3451c`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8545013d-716f-8f49-8345-4fad12bb5868` · framed by typography partition `cemetery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3a6dea8-2e61-84a6-b687-5d3bc15e50d6` · framed by typography partition `cemetery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

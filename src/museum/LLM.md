@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports museum · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·thing · ← law·thing
 analysis —
 law museum is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `44384a67-559f-8de6-b659-39b43fab6ca4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f838faa-a35c-86e5-82e6-e4d60f4edbe1` · `pnpm readme` · `pnpm computed:check`</sub>

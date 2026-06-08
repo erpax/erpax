@@ -3,15 +3,15 @@
 
 # identification
 
-path `identification` · uuid `5e6e10c8-3f63-8e7e-a94b-8d5eb6b2df9b` · diamond `1e004241-5e4d-8496-963f-440ad858c208`
+path `identification` · uuid `5e6e10c8-3f63-8e7e-a94b-8d5eb6b2df9b` · diamond `3ff9ef5c-40c6-80a9-949b-cc5aab198d1d`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports IdentifierKind·async·const·interface · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → diet·landmarks·live · ← diet·landmarks·live
+links `7/7` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → certification·collapse·law·merge·number·sti·vehicle · ← certification·collapse·law·merge·number·sti·vehicle
 analysis —
 law identification is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c2b822dd-81ef-8e55-93f0-69828ecaec97` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `23f27622-535b-8a97-8807-3c6697669719` · `pnpm readme` · `pnpm computed:check`</sub>

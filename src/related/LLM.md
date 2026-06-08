@@ -3,15 +3,15 @@
 
 # related
 
-path `related` · uuid `f33464b3-2f13-80db-b684-47c70760803e` · diamond `7db797b3-9aec-84e0-8ccd-43e3e7ce4b2a`
+path `related` · uuid `f33464b3-2f13-80db-b684-47c70760803e` · diamond `593353a4-4ac2-831b-b7a1-8f55eebccb83`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports anatomy·condition·diet·drug·exercise·law·link·structure·therapy · exports related · escapes —
-links `9/9` · folded `1` · bonds in `8` out `8`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dislike·income·landmarks·lend·mass·segments·teller·vitepress · ← dislike·income·landmarks·lend·mass·segments·teller·vitepress
+neighbors → anatomy·condition·diet·drug·exercise·law·link·structure·therapy · ← anatomy·condition·diet·drug·exercise·law·link·structure·therapy
 analysis —
 law related is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `56a7fec2-e8da-8f72-8016-af9ec06ea3ed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `976a3b75-60ec-8e42-80fb-4a7dd6413158` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # randomized
 
-path `randomized` · uuid `03fdc74b-276e-8a2d-91cd-8699fa8192b4` · diamond `9a7fe7fe-150e-810e-85f5-021318f8e5e9`
+path `randomized` · uuid `03fdc74b-276e-8a2d-91cd-8699fa8192b4` · diamond `e3503ed0-3ef4-8fe7-85f8-a53acfd8fa82`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports randomized · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·cohort·error·landmarks·lineage·memories·stat · ← agent·cohort·error·landmarks·lineage·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law randomized is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a7d1cdf5-5188-8e53-97b3-4743a4dbaa82` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d22da541-62ed-8b01-938d-3f0704635992` · `pnpm readme` · `pnpm computed:check`</sub>

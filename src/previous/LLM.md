@@ -3,15 +3,15 @@
 
 # previous
 
-path `previous` · uuid `34755b98-e25a-8f3d-81df-e44642b54366` · diamond `65508dce-7e91-82db-a37d-98fa5970394c`
+path `previous` · uuid `34755b98-e25a-8f3d-81df-e44642b54366` · diamond `ec0d4d05-0caa-86ec-99df-4e5b5a8c24ed`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·date·item·law·merge·number·owners·start·sti · exports previous · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → backlog·landmarks·participant·significant·translator·window · ← backlog·landmarks·participant·significant·translator·window
+neighbors → collapse·date·item·law·merge·number·owners·start·sti · ← collapse·date·item·law·merge·number·owners·start·sti
 analysis —
 law previous is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bee1b3d4-1ab3-8f8e-83e9-5d8d16b65851` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eba1aed6-c6eb-8c00-b6f7-e900ba22aa88` · `pnpm readme` · `pnpm computed:check`</sub>

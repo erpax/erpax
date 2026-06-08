@@ -23,7 +23,21 @@
 
 - partition `drug` · sub-root `6e036fb0-6ddc-87d6-ade9-afd1cb981d51`
 - bond degree `60` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `60` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d948a01b-6ff5-88df-96c3-5b4dcea793c3` · framed by typography partition `drug` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c8136cbe-d730-8a85-afab-ff310be50a7e` · framed by typography partition `drug` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

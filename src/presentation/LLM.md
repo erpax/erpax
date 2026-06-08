@@ -3,15 +3,15 @@
 
 # presentation
 
-path `presentation` · uuid `05141e14-f3dc-8c2a-a467-fb08bec8ba1e` · diamond `7cd8618f-29ff-8c3b-a78c-86eb9a400bcf`
+path `presentation` · uuid `05141e14-f3dc-8c2a-a467-fb08bec8ba1e` · diamond `4c022cb3-bb44-887d-90a7-cc4d92af25c7`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·digital·document·law·merge·sti · exports presentation · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·colorist·ecosystem·landmarks·memories·owned·search·stat · ← cohort·colorist·ecosystem·landmarks·memories·owned·search·stat
+neighbors → collapse·digital·document·law·merge·sti · ← collapse·digital·document·law·merge·sti
 analysis —
 law presentation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3d8e487a-3681-8a5c-bc01-e819991d3735` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0164b683-309f-8586-90cf-30ed05e77cb0` · `pnpm readme` · `pnpm computed:check`</sub>

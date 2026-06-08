@@ -3,15 +3,15 @@
 
 # plays
 
-path `plays` · uuid `5e01c46c-ab5d-80d0-b0e2-9932a207ffc3` · diamond `bddd29a5-2840-82ac-bad3-7d71d856c67e`
+path `plays` · uuid `5e01c46c-ab5d-80d0-b0e2-9932a207ffc3` · diamond `9d7c33d8-3b18-8c77-ac28-89ba07e02e1e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·user · exports plays · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·consume·dx·landmarks·median·memories·stat · ← cohort·consume·dx·landmarks·median·memories·stat
+neighbors → collapse·law·merge·sti·user · ← collapse·law·merge·sti·user
 analysis —
 law plays is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4ab4ed4-f278-8643-a247-27a82ed56427` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8eefb87a-7355-80b5-9dac-edb9e91e7931` · `pnpm readme` · `pnpm computed:check`</sub>

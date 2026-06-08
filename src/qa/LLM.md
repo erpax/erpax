@@ -3,15 +3,15 @@
 
 # qa
 
-path `qa` · uuid `848644d1-3811-8998-84af-c8b17b7cc179` · diamond `77c191ca-8396-86e2-bba2-35874314309f`
+path `qa` · uuid `848644d1-3811-8998-84af-c8b17b7cc179` · diamond `5a03f2ca-4a12-8717-b125-f6ae61c3b727`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·page·sti · exports qa · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·distance·landmarks·memories·stat·urologic · ← cohort·distance·landmarks·memories·stat·urologic
+neighbors → collapse·law·merge·page·sti · ← collapse·law·merge·page·sti
 analysis —
 law qa is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `32fa919b-2d31-8dab-8e9f-4c59e99b4a98` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1228fda7-79c4-81f3-a2ca-7250a902d14a` · `pnpm readme` · `pnpm computed:check`</sub>

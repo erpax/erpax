@@ -3,15 +3,15 @@
 
 # rv
 
-path `rv` · uuid `e9a18409-e652-85f9-acf3-8dc4dce60bae` · diamond `3b3bca10-d513-8c38-8d67-155a5309d632`
+path `rv` · uuid `e9a18409-e652-85f9-acf3-8dc4dce60bae` · diamond `f2a6fc51-7230-8982-972d-74e08b717d3c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·park·sti · exports rv · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·aquaculture·feed·landmarks·lines·max·mobile·sla · ← agriculture·aquaculture·feed·landmarks·lines·max·mobile·sla
+neighbors → collapse·law·merge·park·sti · ← collapse·law·merge·park·sti
 analysis —
 law rv is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5bff6289-0474-8066-8f6a-6fc2cbcff3fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d52b4b9-72a6-865a-b264-504a4b2196b3` · `pnpm readme` · `pnpm computed:check`</sub>

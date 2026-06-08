@@ -3,15 +3,15 @@
 
 # operation
 
-path `operation` · uuid `83b1f9e9-5fed-8fa6-8264-a39a00b3114b` · diamond `db901fdc-07aa-8dc7-804f-596958fc6a0e`
+path `operation` · uuid `83b1f9e9-5fed-8fa6-8264-a39a00b3114b` · diamond `4a37e6ef-e62a-8786-8fec-a7882022d9df`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·years · exports operation · escapes —
-links `5/5` · folded `1` · bonds in `12` out `12`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → admin·c19·colleagues·conference·departure·enterprisebudget·fertility·hall·holographic·itsocial·landmarks·society · ← admin·c19·colleagues·conference·departure·enterprisebudget·fertility·hall·holographic·itsocial·landmarks·society
+neighbors → collapse·law·merge·sti·years · ← collapse·law·merge·sti·years
 analysis —
 law years in operation is an elapsed duration measured from a start instant — it only ever grows and is never negative.
 
 ---
 
-<sub>content-uuid `7f0e7b8f-3f95-838f-9934-1789a698f5dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d85f94ce-fa40-806e-8811-31ec263b852b` · `pnpm readme` · `pnpm computed:check`</sub>

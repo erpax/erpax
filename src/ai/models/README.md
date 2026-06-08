@@ -2,7 +2,7 @@
 
 # models
 
-> atom `ai/models` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `ai/models` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
 - bond degree `27` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -47,7 +47,7 @@
 
 ## analytics
 
-- bond degree `27` · sealed `1` · horo `7`
+- bond degree `27` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `11`
 
@@ -61,8 +61,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ef86b4c7-1944-8394-b148-546c47633a15` · framed by typography partition `ai` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f0f9bf87-3d84-809d-9386-bfbaff9b25a1` · framed by typography partition `ai` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

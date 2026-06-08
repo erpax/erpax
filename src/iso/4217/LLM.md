@@ -3,15 +3,15 @@
 
 # 4217
 
-path `iso/4217` · uuid `16deeb27-0a6e-83f4-86cd-064598254e17` · diamond `92b8f58f-4650-8724-91c9-baabc243c8b6`
+path `iso/4217` · uuid `16deeb27-0a6e-83f4-86cd-064598254e17` · diamond `31c7044f-dfe7-8687-b6d2-db57fcb5b6ea`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports isIso4217 · escapes —
-links `1/1` · folded `1` · bonds in `5` out `5`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·stat · ← coach·cohort·landmarks·memories·stat
+neighbors → law · ← law
 analysis —
 law every `currency` value is a valid ISO-4217:2015 three-letter alphabetic code, validated at the boundary against the runtime table (`Intl.supportedValuesOf`), never a frozen shipped list.
 
 ---
 
-<sub>content-uuid `77180d70-df6d-8c97-ad41-9a5f67ee1750` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e63c997-0912-8fd5-98be-2a98cd8f7717` · `pnpm readme` · `pnpm computed:check`</sub>

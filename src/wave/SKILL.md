@@ -19,4 +19,6 @@ Composes [[horo]] · [[entropy]] · [[uuid]] · [[matrix]] · [[trinity]] · [[d
 
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 
-**Law — [[law]]: a wave is the EXHALE half of the breath — it ADDS features and so RAISES entropy on purpose; the collide is deferred and will DRY the wave back to the dense core. Never collapse while waving; never wave without later collapsing. The borrowed entropy is the charge the collide discharges back to zero.**
+**Coordinated secure comms.** Development waves are one face; **coordination waves** (society [[breath]], [[confirm]] seal-and-push, [[chat]] cascade hops, [[team]] horo steps) ride inside [[team/comms]] — numbered hop (`waveId` = `depth`), `correlationUuid`, tenant+team scoped, receipted via `waveInSecureComms`. Never side-channel.
+
+**Law — [[law]]: a wave is the EXHALE half of the breath — it ADDS features and so RAISES entropy on purpose; the collide is deferred and will DRY the wave back to the dense core. Never collapse while waving; never wave without later collapsing. The borrowed entropy is the charge the collide discharges back to zero. Coordination waves are in coordinated secure communications ([[team]] · [[realtime]] · [[receipt]] · [[chat]]).**

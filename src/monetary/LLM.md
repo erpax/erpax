@@ -3,15 +3,15 @@
 
 # monetary
 
-path `monetary` · uuid `79830e1a-dd1d-803f-8367-f3158f08c499` · diamond `ec34d524-0956-8ec1-a6ff-fddd9c46138e`
+path `monetary` · uuid `79830e1a-dd1d-803f-8367-f3158f08c499` · diamond `199fbf1d-7b0e-89b5-a2e4-1d140a9f37f4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·distribution·grant·law·merge·sti · exports monetary · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·does·landmarks·literary·made·memories·stat · ← amount·cohort·does·landmarks·literary·made·memories·stat
+neighbors → amount·collapse·distribution·grant·law·merge·sti · ← amount·collapse·distribution·grant·law·merge·sti
 analysis —
 law monetary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `703a4474-f2be-8a62-8e08-6a15a4632da2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e4ae936e-8d04-8a0a-821d-721336564aa2` · `pnpm readme` · `pnpm computed:check`</sub>

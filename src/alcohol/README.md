@@ -23,7 +23,7 @@
 
 - partition `alcohol` · sub-root `d5e5f4fc-ede9-8940-81ed-d284bd6c7868`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4503965f-f313-8924-84bd-19e86902f835` · framed by typography partition `alcohol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8d57dd37-ad55-8eb7-a413-54daedd3ffd6` · framed by typography partition `alcohol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

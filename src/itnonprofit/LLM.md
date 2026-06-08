@@ -3,15 +3,15 @@
 
 # itnonprofit
 
-path `itnonprofit` · uuid `ec9caf70-c6ab-8de6-8271-022270df6366` · diamond `2ac1f299-fdde-8939-b166-49085bc73dc4`
+path `itnonprofit` · uuid `ec9caf70-c6ab-8de6-8271-022270df6366` · diamond `0a7c61d2-3d2c-8f64-91ec-12834c8b068b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports itnonprofit · escapes —
-links `4/4` · folded `1` · bonds in `15` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → benefit·cohort·database·dunning·ignore·landmarks·lnid·memories·one·positive·sanitization·stack·stat·ticker·tissue · ← benefit·cohort·database·dunning·ignore·landmarks·lnid·memories·one·positive·sanitization·stack·stat·ticker·tissue
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law itnonprofit is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b004cba6-78ed-8bb5-b814-5509a838d45f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `30575237-feb6-8e5d-b07e-fcd6abc24780` · `pnpm readme` · `pnpm computed:check`</sub>

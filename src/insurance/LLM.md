@@ -3,15 +3,15 @@
 
 # insurance
 
-path `insurance` · uuid `a921fb85-8319-84d4-bb13-7e70e7e787d7` · diamond `efdeb32f-fd8a-890e-93e4-4434c0fa5d33`
+path `insurance` · uuid `a921fb85-8319-84d4-bb13-7e70e7e787d7` · diamond `88f26641-0805-80b0-9c11-0f9fee931b7b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agency·collapse·health·included·law·merge·plan·sti · exports insurance · escapes —
-links `8/8` · folded `1` · bonds in `2` out `2`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → agency·collapse·health·included·law·merge·plan·sti · ← agency·collapse·health·included·law·merge·plan·sti
 analysis —
 law insurance is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `513c7fc4-affe-8556-bc5d-2e6fd03dc690` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `25084c31-81e7-8531-9f3f-4f092674a7f4` · `pnpm readme` · `pnpm computed:check`</sub>

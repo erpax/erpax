@@ -3,15 +3,15 @@
 
 # harvest
 
-path `harvest` · uuid `35bb4408-36aa-8501-8bbc-6c91b445c331` · diamond `2606b76d-c2c1-84dc-b21f-35e0dc28fd11`
+path `harvest` · uuid `35bb4408-36aa-8501-8bbc-6c91b445c331` · diamond `e01052bc-55e7-8a2c-9d91-df6bf18035aa`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·biological·commerce·crop·items·journal·planting·recognition·season·share·yield · exports harvest · escapes —
-links `26/26` · folded `1` · bonds in `2` out `2`
+links `26/26` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `0·0·0`
-neighbors → alternative·landmarks · ← alternative·landmarks
+neighbors → agriculture·animal·apiculture·aquaculture·assets·balance·biomass·choice·commerce·compost·covercrop·crop·cropplan·degreeday·dormancy·entries·fodder·forestry·grade·hardiness·items·lactation·lineage·livestock·maturity·perennial·planting·pollination·postharvest·recognition·season·share·tunnel·withdrawal·yield · ← agriculture·animal·apiculture·aquaculture·assets·balance·biomass·choice·commerce·compost·covercrop·crop·cropplan·degreeday·dormancy·entries·fodder·forestry·grade·hardiness·items·lactation·lineage·livestock·maturity·perennial·planting·pollination·postharvest·recognition·season·share·tunnel·withdrawal·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a962e9eb-9dea-853f-85e2-d1d3e5c72de5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b6ee7ac-cc30-8865-9a85-33648206edc2` · `pnpm readme` · `pnpm computed:check`</sub>

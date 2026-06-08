@@ -23,7 +23,7 @@
 
 - partition `chiropractic` · sub-root `ae65ae03-80e2-831e-ab7d-ad49d709b668`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1c0cdd71-119f-8592-9ed7-8211c7999410` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `138011c8-5491-870f-8ec7-a9062a7b5ae3` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

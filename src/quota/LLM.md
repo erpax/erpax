@@ -3,15 +3,15 @@
 
 # quota
 
-path `quota` · uuid `35ac61ac-a910-8356-bee1-f21fc937390c` · diamond `915b3678-15cd-82d8-b954-e75dc316d8b6`
+path `quota` · uuid `35ac61ac-a910-8356-bee1-f21fc937390c` · diamond `b2fd9936-a52c-82f5-9033-0cc0ac3376eb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports employees·fiscal·forecast·law·territory · exports quota · escapes —
-links `6/6` · folded `1` · bonds in `13` out `13`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·coach·cohort·incentive·landmarks·memories·nonprofit501d·pool·prerequisites·spa·stat·target·trinity · ← age·coach·cohort·incentive·landmarks·memories·nonprofit501d·pool·prerequisites·spa·stat·target·trinity
+neighbors → commissions·employees·forecast·grade·law·periods·territory · ← commissions·employees·forecast·grade·law·periods·territory
 analysis —
 law a quota is a period sales target for a rep, team, or territory, against which attainment % and variance-to-goal are measured — often the basis of compensation.
 
 ---
 
-<sub>content-uuid `6dd39cab-fdd9-8e8c-af3f-96d7a7673e6e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6fffb49f-3e96-8fed-b421-87ccd7096c63` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -9,6 +9,6 @@ Delivery of events as they arrive: an **append-only log** plus a **per-subscribe
 
 The [[translator]] facet — [[realtime/translator]] — translates that tail as it arrives, reducing each message to its language-independent meaning.
 
-Matter-twin: `src/realtime/index.ts` (`append` · `since` · `advance`). Composes [[stream]] · [[event]] · [[live]] · [[sequence]].
+Matter-twin: `src/realtime/index.ts` (`append` · `since` · `advance`). Team-scoped emits onto the live bus are gated by [[team/comms]] ([[chat]] · [[team]] · [[access]] · [[receipt]]). Composes [[stream]] · [[event]] · [[live]] · [[sequence]].
 
 @standard append-only log + cursor (the pull-based realtime model)

@@ -3,15 +3,15 @@
 
 # reconciliation
 
-path `reconciliation` · uuid `84acb7e3-30cc-8756-a411-d424b6e34433` · diamond `175d880e-faf6-846e-bb2d-9025fd5c7897`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `reconciliation` · uuid `d115bcee-2e37-81a3-8f37-212ce4e9e48d` · diamond `f0a6f332-a665-8a7c-a3d1-abf47b942a9b`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·law·reconciliations · exports reconciliation · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cdformat·cohort·landmarks·memories·stat · ← cdformat·cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → accounting·balance·balance·currency·law·law·proof·reconciliations·uuid · ← accounting·balance·currency·law·proof·reconciliations·uuid
+analysis —
 law a reconciliation closes only when the two records it matches net to zero difference; any residual stays open as a flagged exception.
 
 ---
 
-<sub>content-uuid `0a3d0dd7-a87d-8595-aa20-a78cf269d8e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf719812-6244-8d8f-a60d-f081ba16d15c` · `pnpm readme` · `pnpm computed:check`</sub>

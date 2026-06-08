@@ -3,15 +3,15 @@
 
 # prefix
 
-path `prefix` · uuid `920904cd-1e5a-84a3-aec3-8bc88698909e` · diamond `d6512a54-f371-82b9-8851-9e588f406b24`
+path `prefix` · uuid `920904cd-1e5a-84a3-aec3-8bc88698909e` · diamond `277cf853-9b75-809c-b9ef-b1686bf1c6c4`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports code·collapse·honorific·law·merge·postal·sti · exports prefix · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·pregnancy·replication · ← balance·landmarks·pregnancy·replication
+neighbors → code·collapse·honorific·law·merge·postal·sti · ← code·collapse·honorific·law·merge·postal·sti
 analysis —
 law prefix is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bdf05fe3-e9c7-8b81-bd56-e63d7dec09e6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f0fcbc9-2ac8-8f86-9d5f-c4cb6574df0e` · `pnpm readme` · `pnpm computed:check`</sub>

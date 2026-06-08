@@ -3,15 +3,15 @@
 
 # pharmacy
 
-path `pharmacy` · uuid `a6e8cf43-1824-8978-ad94-f6333a07e1ce` · diamond `43349aa0-121a-8e99-8c98-161ae63bee55`
+path `pharmacy` · uuid `a6e8cf43-1824-8978-ad94-f6333a07e1ce` · diamond `234b18a7-2f8a-8fa3-aafd-44bf3ef249dc`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports category·health·law·plan · exports pharmacy · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 2020·landmarks · ← 2020·landmarks
+neighbors → category·health·law·plan · ← category·health·law·plan
 analysis —
 law pharmacy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7d729476-c62c-84fd-a980-fc357c0508b7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `46da640e-b78d-8203-92fd-2b2832d2d596` · `pnpm readme` · `pnpm computed:check`</sub>

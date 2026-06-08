@@ -3,15 +3,15 @@
 
 # image
 
-path `image` · uuid `5856f542-b857-8ff2-9c72-d53a82921c23` · diamond `84393146-310c-8a1d-bed9-3ca4b28e7ed2`
+path `image` · uuid `5856f542-b857-8ff2-9c72-d53a82921c23` · diamond `a8f0741c-0828-8a96-97f9-32c12244d765`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports gallery·law·layout·object·page·primary·snapshot · exports image · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → gallery·hermeticism·law·layout·object·orthodoxy·page·primary·snapshot · ← gallery·hermeticism·law·layout·object·orthodoxy·page·primary·snapshot
 analysis —
 law image is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b59f5c30-e18e-8ba9-bb12-0bc0bac441aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ca90c40-0e72-8813-9cf1-60744fddbdc1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # hardcover
 
-path `hardcover` · uuid `03369a1b-559b-81ee-b567-d098ea268b0f` · diamond `f8a0c92b-e581-8e4d-8491-cbc314791fa9`
+path `hardcover` · uuid `03369a1b-559b-81ee-b567-d098ea268b0f` · diamond `a5616229-cc57-8ca0-bd2d-2e97ac47a0ea`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hardcover · escapes —
-links `4/4` · folded `1` · bonds in `34` out `34`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·animal·apiculture·aquaculture·balance·biological·biomagnetism·chinese·comment·cover·crisis·crop·definition·donate·florist·footer·government·hamiltonian·horo·issue·knows·lifestyle·lineup·masthead·percentage·pickup·plus·position·rear·reviews·screen·travel·website·worth · ← agriculture·animal·apiculture·aquaculture·balance·biological·biomagnetism·chinese·comment·cover·crisis·crop·definition·donate·florist·footer·government·hamiltonian·horo·issue·knows·lifestyle·lineup·masthead·percentage·pickup·plus·position·rear·reviews·screen·travel·website·worth
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hardcover is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `832bc2f9-fe42-8b7a-a88d-011d5395dfae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65472f0f-d93d-86a4-8970-ecc5250257ab` · `pnpm readme` · `pnpm computed:check`</sub>

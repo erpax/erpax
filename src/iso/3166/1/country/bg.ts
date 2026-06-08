@@ -33,7 +33,7 @@
 
 import { COUNTRY_PROFILES } from '@/config/regional-defaults';
 import { COUNTRY_SPECIFICS } from '@/config/country-specifics';
-import { COUNTRY_APIS, BANK_APIS } from '@/config/country-apis';
+import { COUNTRY_APIS, BANK_APIS } from '@/country/api';
 import type { CountryBundle } from './types';
 
 const CODE = 'BG' as const;

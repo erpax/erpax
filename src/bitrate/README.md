@@ -23,7 +23,7 @@
 
 - partition `bitrate` · sub-root `d7afdf63-3f13-8603-a6b4-26f2cfcd31f0`
 - bond degree `6` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1bd1bbee-2238-893e-aab2-147179ecf05a` · framed by typography partition `bitrate` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `76b38850-466c-8668-bd44-fab1e36ad254` · framed by typography partition `bitrate` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

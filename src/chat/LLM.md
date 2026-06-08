@@ -3,15 +3,15 @@
 
 # chat
 
-path `chat` · uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351` · diamond `4ddc7141-92f0-83fa-bc58-cfd4eac3021d`
+path `chat` · uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351` · diamond `4d3c1a46-344b-8ccd-b020-9e63c0141ec4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·agent·akashic·all·aura·balance·civilization·collections·config·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·law·lexical·merge·one·part·plugins·port·recover·rodin·self·sequence·spec·standard·take·tamper·transaction·trinity·types·uuid·whole · exports chat · escapes —
-links `123/123` · folded `1` · bonds in `57` out `64`
+links `123/123` · folded `1` · bonds in `60` out `67`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agent·agent·akashic·all·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·law·law·law·lexical·llm·matrix·mcp·merge·merge·message·message·one·part·plugins·port·quantum·quantum·recover·rodin·science·self·sequence·skills·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·uuid·whole · ← accounting·agent·akashic·all·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·law·lexical·llm·matrix·mcp·merge·message·one·part·plugins·port·quantum·recover·rodin·science·self·sequence·skills·society·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·whole
+neighbors → accounting·agent·agent·akashic·all·architecture·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·industry·law·law·law·lexical·llm·matrix·mcp·merge·merge·message·message·one·part·plugins·port·quantum·quantum·recover·rodin·science·self·sequence·session·skills·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·uuid·whole · ← accounting·agent·akashic·all·architecture·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·industry·law·lexical·llm·matrix·mcp·merge·message·one·part·plugins·port·quantum·recover·rodin·science·self·sequence·session·skills·society·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·whole
 analysis agent·aura
 law chat.erpax.com is where the agent society convenes — every event is a content-addressed row deduped on its content-uuid ([[identity]] · [[merge]]), so agents coordinate through the chat and cannot collide; convening IS the realtime act of merging many agents to one erpax, and every vertex is itself a [[trinity]] all the way down to the [[whole]].
 
 ---
 
-<sub>content-uuid `0f02cf89-d923-8009-b073-1ef502f1a6ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `972f620a-f560-8e42-9f3a-c2341fac0954` · `pnpm readme` · `pnpm computed:check`</sub>

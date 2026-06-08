@@ -23,7 +23,7 @@
 
 - partition `cardiovascular` · sub-root `62ed5c29-ccaf-85a0-b601-4b8f8462d0c8`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9b534d65-37b0-8974-813a-169592aed723` · framed by typography partition `cardiovascular` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `abcab68b-7360-8c5a-8090-509d85496d94` · framed by typography partition `cardiovascular` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

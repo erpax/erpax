@@ -3,15 +3,15 @@
 
 # midpoint
 
-path `midpoint` · uuid `b493edf9-d684-851f-86d5-4eb4057739da` · diamond `cbc11395-396d-8820-9f65-19341ad8e9a0`
+path `midpoint` · uuid `b493edf9-d684-851f-86d5-4eb4057739da` · diamond `4a0bb8a6-9c23-8ff7-b949-abd858f73415`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports midpoint · escapes —
-links `5/5` · folded `1` · bonds in `14` out `14`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·chemical·cohort·effective·endpoint·files·landmarks·memories·prerequisites·replacer·sampling·stat·subscription·urologic · ← age·chemical·cohort·effective·endpoint·files·landmarks·memories·prerequisites·replacer·sampling·stat·subscription·urologic
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law midpoint is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e8939a01-ad0e-8ae6-a197-6a9d7400f690` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a1914625-fbd8-8365-9e84-a4e6844383a1` · `pnpm readme` · `pnpm computed:check`</sub>

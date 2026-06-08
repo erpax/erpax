@@ -3,15 +3,15 @@
 
 # confirm
 
-path `confirm` · uuid `079e8289-1a74-8e03-bcc1-94b92adcae4a` · diamond `966acded-ca52-8f4b-b90b-3919e2be9321`
+path `confirm` · uuid `079e8289-1a74-8e03-bcc1-94b92adcae4a` · diamond `6435a386-4980-8dc4-9bea-228e417abed3`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/diamond·@/guardian·@/law/folder·@/quantum/boundary·@/readme·@/seal·@/tamper/import·@/typography · exports const·function·interface · escapes —
-links `15/15` · folded `1` · bonds in `21` out `21`
+links `15/15` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `1·0·0`
-neighbors → action·cloudflare·collapse·deploy·diamond·engineering·folder·innovation·integrity·law·merge·payload·purity·quantum·resolve·seal·sti·test·thought·uuid·worker · ← action·cloudflare·collapse·deploy·diamond·engineering·folder·innovation·integrity·law·merge·payload·purity·quantum·resolve·seal·sti·test·thought·uuid·worker
+neighbors → action·cloudflare·collapse·deploy·diamond·engineering·folder·industry·innovation·integrity·law·merge·payload·purity·quantum·resolve·seal·serverless·session·sti·test·thought·uuid·worker · ← action·cloudflare·collapse·deploy·diamond·engineering·folder·industry·innovation·integrity·law·merge·payload·purity·quantum·resolve·seal·serverless·session·sti·test·thought·uuid·worker
 analysis purity
 law confirm is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `80b820e1-c5f0-82a8-82ac-72e3697d43e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34ab2bbf-4b9f-807e-b71a-03129078fe73` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # results
 
-path `results` · uuid `7b8768c8-17ef-86f8-be1b-c54a79f602ee` · diamond `5d1ed057-0d63-8a56-99f0-ac6cbcb92383`
+path `results` · uuid `7b8768c8-17ef-86f8-be1b-c54a79f602ee` · diamond `e844e346-a416-89e1-9343-bd733a80fd06`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·page·search·sti · exports results · escapes —
-links `6/6` · folded `1` · bonds in `26` out `27`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·balance·befriend·breakfast·clip·corruption·dropoff·entity·fields·friday·game·getting·homeopathic·id·log·parent·quality·results·resume·rheumatologic·roadmap·sections·seed·sell·suite·syllabus · ← accounting·balance·befriend·breakfast·clip·corruption·dropoff·entity·fields·friday·game·getting·homeopathic·id·log·parent·quality·results·resume·rheumatologic·roadmap·sections·seed·sell·suite·syllabus
+neighbors → collapse·law·merge·page·search·sti · ← collapse·law·merge·page·search·sti
 analysis —
 law results is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6a30874e-f259-8337-a632-cb9710ab193e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ca5102a-7013-84f0-b19a-9ebcca5e1f97` · `pnpm readme` · `pnpm computed:check`</sub>

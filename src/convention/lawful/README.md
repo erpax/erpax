@@ -25,7 +25,7 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `34` · analysis neighbors `tamper/import`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `af8fdd47-2620-88e4-80ad-5164de4def4a` · framed by typography partition `convention` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8edcc832-33c4-8b7d-a64d-e158e0ac4f13` · framed by typography partition `convention` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

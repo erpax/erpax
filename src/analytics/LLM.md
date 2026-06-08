@@ -4,7 +4,7 @@
 # analytics
 
 path `analytics` · uuid `1e1d4000-e724-879d-846e-e62b59be6535` · diamond `a541a37e-de7a-8772-a8e9-6de4f153f779`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/balance·@/cost·@/entropy·@/harmony·@/horo·@/standards·@/uuid/matrix · exports AccountLine·BalanceSheetData·IncomeStatementData·TrendAnalysisCard·TrendAnalysisData·TrialBalanceAccount·TrialBalanceData·const·interface·maxTamperCost·trendAnalysisSource·trendAnalysisWidget·type · escapes —
 links `27/27` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `f7d278b1-5f77-8308-b599-1b3e47e4634a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6a20731-1000-8ab5-a68a-68c3ce262f89` · `pnpm readme` · `pnpm computed:check`</sub>

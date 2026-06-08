@@ -23,7 +23,21 @@
 
 - partition `database` · sub-root `b341472b-4fb0-82c6-81f5-d1d04a2fc8d4`
 - bond degree `84` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+- `d1_databases`/`D1` · atom `cloudflare/d1-databases/D1`
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `84` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `1` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b678752d-9aba-8223-9809-2b15261bc12c` · framed by typography partition `database` bonds `84` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9bef86f8-8036-8109-808a-339fc15cf7ba` · framed by typography partition `database` bonds `84` · `pnpm readme` · `pnpm readme:check`</sub>

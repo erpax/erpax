@@ -30,7 +30,7 @@
  * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
  * @see ../config/regional-defaults.ts
  * @see ../config/country-specifics.ts
- * @see ../config/country-apis.ts
+ * @see ../country/api.ts
  * @see ./country-api-clients.ts
  */
 
@@ -47,8 +47,8 @@ import {
   getFiscalYearStartMonth,
   getCurrencyDecimals,
 } from '@/config/country-specifics'
-import type { CountryApi } from '@/config/country-apis'
-import { COUNTRY_APIS, BANK_APIS, hasEInvoicingPortal } from '@/config/country-apis'
+import type { CountryApi } from '@/country/api'
+import { COUNTRY_APIS, BANK_APIS, hasEInvoicingPortal } from '@/country/api'
 import type { TradingApi } from '@/trading/api'
 import { getTradingApis } from '@/trading/api'
 import { extractIbanCountry, isValidIban } from '@/iban'

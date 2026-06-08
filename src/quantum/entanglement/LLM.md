@@ -6,12 +6,12 @@
 path `quantum/entanglement` · uuid `23b597f1-d923-8704-a9f8-d652775bf0d0` · diamond `acc4f997-71e1-808f-bfd6-7894305ce177`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports entanglement · escapes —
-links `16/16` · folded `1` · bonds in `16` out `16`
+links `16/16` · folded `1` · bonds in `29` out `34`
 faces worker·plugin·pwa `1·0·0`
-neighbors → 16931·bindings·bundle·checklist·cohort·employment·harden·landmarks·loyalty·measurement·memories·mobility·owned·parent·sanitization·stat · ← 16931·bindings·bundle·checklist·cohort·employment·harden·landmarks·loyalty·measurement·memories·mobility·owned·parent·sanitization·stat
+neighbors → app·aura·boundary·cloning·cloning·communication·development·dust·entanglement·export·graph·gravity·gravity·import·karma·key·law·law·links·matrix·matrix·merge·merge·particle·quantum·quantum·reciprocal·research·singularity·singularity·superdense·teleportation·translator·typography · ← app·aura·boundary·cloning·communication·development·development·dust·entanglement·export·graph·graph·gravity·import·karma·key·law·links·matrix·merge·particle·quantum·reciprocal·research·singularity·superdense·teleportation·translator·typography
 analysis —
 law the corpus is maximally entangled only when every link is reciprocal AND content is monogamous (one uuid per meaning, the no-cloning [[merge]] law) — reciprocity=1 plus monogamy is the closed geometry that drives directed-link entropy to zero.
 
 ---
 
-<sub>content-uuid `45ff481c-6f68-8bb4-888c-b864834c0aa4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f668a6e5-8f19-8874-b77f-8548c667a138` · `pnpm readme` · `pnpm computed:check`</sub>

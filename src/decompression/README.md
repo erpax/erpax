@@ -25,7 +25,26 @@
 
 - partition `decompression` · sub-root `4ea923f2-d487-810b-80e5-3b314ab97aac`
 - bond degree `141` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Bühlmann ZH-L16 — 16 compartments, gradient-factor / M-value theory` · banner
+- `Haldane half-time model (idealised compartments double 5·10·20·40)` · banner
+- `ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)` · banner
+- `SFIA` · catalogue
+- `SFIA 8 responsibility-levels (1..7) — the M-value depth axis` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `141` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `997e1d02-5a2f-84dc-99aa-4befb21f0dd4` · framed by typography partition `decompression` bonds `141` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1fb24624-04ab-816b-802b-fe9a3cb0183d` · framed by typography partition `decompression` bonds `141` · `pnpm readme` · `pnpm readme:check`</sub>

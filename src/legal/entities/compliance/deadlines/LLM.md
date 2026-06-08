@@ -3,15 +3,15 @@
 
 # deadlines
 
-path `legal/entities/compliance/deadlines` · uuid `c1dbacc2-aec6-8745-a6bc-86d21c524e33` · diamond `4b1b02eb-da1e-85c0-b1cd-ca152ce2cae3`
+path `legal/entities/compliance/deadlines` · uuid `c1dbacc2-aec6-8745-a6bc-86d21c524e33` · diamond `5bedbc1f-7af4-8373-b20b-43620b2762b5`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `2/2` · folded `1` · bonds in `1` out `1`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → lease · ← lease
+neighbors → entities·law·notifications · ← entities·law·notifications
 analysis —
 law every compliance obligation carries a due date with a derived on-track/at-risk/overdue status per entity and jurisdiction — so the compliance calendar makes lateness a computed state, never an unobserved miss.
 
 ---
 
-<sub>content-uuid `804510f9-72f8-87b2-a209-8f803a860e57` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1624aadf-6bb6-8993-8afd-b288bda8ba68` · `pnpm readme` · `pnpm computed:check`</sub>

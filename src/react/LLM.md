@@ -3,15 +3,15 @@
 
 # react
 
-path `react` · uuid `c6644e8d-14fc-8a5a-8212-6f8121aa24c7` · diamond `4486f50a-6cb1-8e67-b323-d2ff414824ed`
+path `react` · uuid `c6644e8d-14fc-8a5a-8212-6f8121aa24c7` · diamond `7af34c5e-2e2f-8d2a-88ef-0b358da053e8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports react · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law react is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `069ffc8c-8f2e-8bea-8144-5cb037d4c578` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2bb93a9-26cf-86b7-948c-3bb2afe19871` · `pnpm readme` · `pnpm computed:check`</sub>

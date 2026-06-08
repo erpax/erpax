@@ -3,15 +3,15 @@
 
 # icfrs
 
-path `legal/entities/management/assessment/icfrs` · uuid `064ab201-5f06-8e49-ac4a-8f02ceed2dbb` · diamond `61e52c4b-f4a5-8b1a-b7d7-f9180a527316`
+path `legal/entities/management/assessment/icfrs` · uuid `064ab201-5f06-8e49-ac4a-8f02ceed2dbb` · diamond `08c371bb-6df4-859e-b9e2-2fd7072bfcd6`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `5` out `5`
+links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·stat · ← coach·cohort·landmarks·memories·stat
+neighbors → entities · ← entities
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f42a3132-5d40-8a67-8a03-fccb63c05b8b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0f22843-8d2d-8555-875b-0e5049942268` · `pnpm readme` · `pnpm computed:check`</sub>

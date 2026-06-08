@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `osteopathic` · sub-root `fba7c300-02e8-8ef1-bd20-44b22311f3d3`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `fba7c300-02e8-8ef1-bd20-44b22311f3d3`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `936fa158-f43c-87d4-bff6-fe7dde3f5343` · framed by typography partition `osteopathic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `976a270b-04b9-8a5d-92cb-804331d93ced` · framed by typography partition `osteopathic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

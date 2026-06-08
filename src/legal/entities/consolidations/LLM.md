@@ -3,15 +3,15 @@
 
 # consolidations
 
-path `legal/entities/consolidations` · uuid `d1b1fdf0-0223-81d5-a699-ed925933e328` · diamond `7050fa6d-b799-8388-9982-a510e015f916`
+path `legal/entities/consolidations` · uuid `d1b1fdf0-0223-81d5-a699-ed925933e328` · diamond `5f5835e1-2597-839f-8cb2-2e627577e246`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/validate/consolidation/readiness · exports const · escapes —
-links `2/2` · folded `1` · bonds in `2` out `2`
+links `2/2` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → lease·section · ← lease·section
+neighbors → consolidation·elimination·entities·goodwill·law·relatedparty · ← consolidation·elimination·entities·goodwill·law·relatedparty
 analysis —
 law a group consolidation only proceeds when every entity is closure-ready and intercompany balances reconcile — eliminations net the inside-the-group flows to zero, so the consolidated whole is the sum of entities minus what they owe each other, not a raw addition.
 
 ---
 
-<sub>content-uuid `13f5db9e-a774-8e0c-b1ec-487a648d1093` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bfb4f6f0-0fa8-8797-9b11-b362163f62b7` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # party
 
-path `party` · uuid `dea176fb-ed60-8e65-8c80-f0bd6450dc90` · diamond `9c503c68-3472-8a7e-addc-67f4834f5fd2`
+path `party` · uuid `dea176fb-ed60-8e65-8c80-f0bd6450dc90` · diamond `7f2c41a1-b416-82ae-83a5-0e0e3926f544`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/types/parties · exports *:./aging.service·*:./workflow.service·AgingBucket·AgingBucketKey·BucketDefinition·DEFAULT_AGING_BUCKETS · escapes —
-links `24/24` · folded `1` · bonds in `8` out `7`
+links `24/24` · folded `1` · bonds in `40` out `40`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·friday·landmarks·memories·musical·sanitization·stat · ← cohort·friday·friday·landmarks·memories·musical·sanitization·stat
+neighbors → accounting·accounts·akashic·allocations·attestations·balance·calculations·certification·checks·commerce·conflict·corruption·customers·dimension·duality·events·fields·flow·fractal·horo·identity·invoices·law·matter·measurements·merge·orders·party·plugins·political·runs·sequence·size·society·standard·tags·tax·transaction·transactions·vendors · ← accounting·accounts·akashic·allocations·attestations·balance·calculations·certification·checks·commerce·conflict·corruption·customers·dimension·duality·events·fields·flow·fractal·horo·identity·invoices·law·matter·measurements·merge·orders·party·plugins·political·runs·sequence·size·society·standard·tags·tax·transaction·transactions·vendors
 analysis —
 law one party is seen through infinitely many roles via a single context-keyed reference (never one FK per role), and receivable and payable are the SAME document seen from opposite ends — so both sides share one aging algorithm and one lifecycle, differing only in sign and direction.
 
 ---
 
-<sub>content-uuid `15ce2e47-fb87-8b5e-bed4-3c3caec3ce9f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `53d6fa5f-a09a-8130-8c21-522e79d9d56d` · `pnpm readme` · `pnpm computed:check`</sub>

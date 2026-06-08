@@ -23,7 +23,7 @@
 
 - partition `car` · sub-root `7ea60c64-5dcd-831d-9021-cc9338fb6d64`
 - bond degree `18` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `383f510a-56aa-8155-a984-e433e7cbdff3` · framed by typography partition `car` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d6a8894-c8d4-893a-bd73-f029cb860e33` · framed by typography partition `car` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

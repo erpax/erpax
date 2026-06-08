@@ -3,15 +3,15 @@
 
 # paint
 
-path `paint` · uuid `738ec5d1-4973-8784-900c-c8123a427630` · diamond `3495ea87-899f-8dd4-ac06-fd6c26e7af7d`
+path `paint` · uuid `738ec5d1-4973-8784-900c-c8123a427630` · diamond `e4140276-2dd2-80d5-88d3-81dabef4524f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports paint · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law a paint is an applying-of-coating act on a surface, so it must name the object it covers; an unattached PaintAction is void.
 
 ---
 
-<sub>content-uuid `e3ef4c9c-fda1-8b3f-8859-7b29278f942b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a048f1f3-5559-8788-b1ef-bb90859e10a9` · `pnpm readme` · `pnpm computed:check`</sub>

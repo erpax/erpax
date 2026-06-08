@@ -23,7 +23,7 @@
 
 - partition `coffee` · sub-root `468116b0-3e33-8e4d-b3f0-7604c5d01958`
 - bond degree `20` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `44fe9816-d822-8b25-bac7-184e3e16e05b` · framed by typography partition `coffee` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `866a9ba4-cad1-8ef8-b277-9f45ab2f4464` · framed by typography partition `coffee` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

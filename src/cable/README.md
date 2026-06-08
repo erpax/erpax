@@ -23,7 +23,7 @@
 
 - partition `cable` · sub-root `9eae32db-3705-8f1e-b190-9d8ecb959e25`
 - bond degree `20` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1d4d7647-5af2-8698-991b-2e548071609c` · framed by typography partition `cable` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `219d6606-5a3e-81c3-8b63-b5b14a272e62` · framed by typography partition `cable` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # retired
 
-path `retired` · uuid `88bd7408-d81e-8d15-a3dd-b292fbbe7100` · diamond `4eae6979-c57d-83c4-a731-ffd2da527009`
+path `retired` · uuid `88bd7408-d81e-8d15-a3dd-b292fbbe7100` · diamond `6b38efac-e439-8b1c-b4c1-ad802d0ca8df`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports retired · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law retired is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d645a866-66c2-8de4-885c-219a489445a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c60eabdf-b283-8dde-b1a1-e32d85f9712a` · `pnpm readme` · `pnpm computed:check`</sub>

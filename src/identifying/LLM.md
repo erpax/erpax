@@ -3,15 +3,15 @@
 
 # identifying
 
-path `identifying` · uuid `08e11581-cce5-8292-8c13-8f86d03d2a7a` · diamond `238c1df9-3896-8f81-8be1-ee6878f5290a`
+path `identifying` · uuid `08e11581-cce5-8292-8c13-8f86d03d2a7a` · diamond `186d3691-e2f8-824e-a83e-e9cb3987d4d6`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·exam·law·merge·sti·test · exports identifying · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·exam·law·merge·sti·test · ← collapse·exam·law·merge·sti·test
 analysis —
 law identifying is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0a123d61-999a-833b-8ece-1757a53fed82` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84db16ba-0c2f-8fbf-8ddc-ce78caf0ada3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·merge·sti·time · exports modified · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mobility·stat·warning · ← cohort·landmarks·memories·mobility·stat·warning
+neighbors → collapse·date·law·merge·sti·time · ← collapse·date·law·merge·sti·time
 analysis —
 law modified is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5c803b28-2dde-8387-b6ef-b8f5dd6cbf97` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `188a543e-9c64-8a60-a1df-42cc5319e81f` · `pnpm readme` · `pnpm computed:check`</sub>

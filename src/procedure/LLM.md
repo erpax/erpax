@@ -3,15 +3,15 @@
 
 # procedure
 
-path `procedure` · uuid `4377db3a-9ea6-81fc-bccb-4855458bb089` · diamond `b9f22266-a861-8290-bcaf-05693bbcf8f0`
+path `procedure` · uuid `4377db3a-9ea6-81fc-bccb-4855458bb089` · diamond `aa98beef-6f5e-822f-a523-9e29e683305c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports diagnostic·law·medical·palliative·surgical·therapeutic·type · exports procedure · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·smoking·stat · ← cohort·landmarks·memories·smoking·stat
+neighbors → diagnostic·law·medical·palliative·surgical·therapeutic·type · ← diagnostic·law·medical·palliative·surgical·therapeutic·type
 analysis —
 law procedure is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5f762c04-72bd-8d23-8b64-a422b2f9c719` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `73a7e211-5824-8800-9837-077a1bbd1a43` · `pnpm readme` · `pnpm computed:check`</sub>

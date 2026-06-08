@@ -3,15 +3,15 @@
 
 # lifestyle
 
-path `lifestyle` · uuid `b2954b2e-506d-8085-a82f-9117dbbbcb69` · diamond `3c8ec945-65ef-8297-9c70-6bf7860fb9da`
+path `lifestyle` · uuid `b2954b2e-506d-8085-a82f-9117dbbbcb69` · diamond `0564d94f-d68c-80d2-b800-35c8745b3c55`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·modification·sti · exports lifestyle · escapes —
-links `5/5` · folded `1` · bonds in `29` out `28`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agriculture·animal·aquaculture·based·breastfeeding·center·clinician·district·emergence·events·footer·government·hardcover·high·id·infectious·joint·lineup·longitude·love·opportunity·position·process·progression·rule·suite·temple · ← accounting·accounting·agriculture·animal·aquaculture·based·breastfeeding·center·clinician·district·emergence·events·footer·government·hardcover·high·id·infectious·joint·lineup·longitude·love·opportunity·position·process·progression·rule·suite·temple
+neighbors → collapse·law·merge·modification·sti · ← collapse·law·merge·modification·sti
 analysis —
 law lifestyle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3bd21f35-a600-8df9-b035-140496610cd6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19f89941-9c01-80c1-b990-a3c2d4225e11` · `pnpm readme` · `pnpm computed:check`</sub>

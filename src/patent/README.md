@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `patent` · sub-root `f03318d0-6a0e-8653-9b2d-d9054c8be18f`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `24` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `f03318d0-6a0e-8653-9b2d-d9054c8be18f`
-- bonds in `3` · out `3`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `99429a49-88d9-86f3-8030-aa281581f5c7` · framed by typography partition `patent` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e9012855-d8b8-8fdf-a0bb-d6b73652e85a` · framed by typography partition `patent` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

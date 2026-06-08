@@ -3,15 +3,15 @@
 
 # oncologic
 
-path `oncologic` · uuid `592ff385-dc92-84ab-95b5-313591c1f75a` · diamond `457a9d89-bdd6-8266-863d-d7a938ac79bc`
+path `oncologic` · uuid `592ff385-dc92-84ab-95b5-313591c1f75a` · diamond `6ccb269b-94e6-8914-b4a7-4e3e89a8d0fc`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports oncologic · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·hosp·landmarks·memories·source·spa·stat · ← cohort·hosp·landmarks·memories·source·spa·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law oncologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `20f9c876-db22-8474-bedc-375fec497cd0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `369f2990-0a1b-8e52-afc5-5b4057effa8e` · `pnpm readme` · `pnpm computed:check`</sub>

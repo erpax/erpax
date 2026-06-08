@@ -3,15 +3,15 @@
 
 # interference
 
-path `interference` · uuid `fc9efc54-402d-8f2b-9cee-4207eff0dec5` · diamond `11e488ab-6da4-8572-9f77-67a529919b68`
+path `interference` · uuid `fc9efc54-402d-8f2b-9cee-4207eff0dec5` · diamond `5f816fbd-c7ed-886c-a87a-f70afedda7cb`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
-links `15/15` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·means · ← landmarks·means
+links `15/15` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → gravity·harmony·law·link·phase·photon·quantum·superposition·wave · ← gravity·harmony·law·link·phase·photon·quantum·superposition·wave
 analysis —
 law interference combines amplitudes by phase (I = a1²+a2²+2a1a2·cos φ) — reinforcing in phase, cancelling out of phase — but the cross term averages to zero over a period, so energy is conserved: it redistributes, never creates.
 
 ---
 
-<sub>content-uuid `832d7ae0-2489-83ea-bd5a-9822dec5b526` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `48dd8775-60b9-83a9-bdef-1312e02db896` · `pnpm readme` · `pnpm computed:check`</sub>

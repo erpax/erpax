@@ -25,7 +25,25 @@
 
 - partition `diversity` · sub-root `98c56cae-47f1-8a0b-8214-112cd3026c76`
 - bond degree `36` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed, never hand-asserted` · banner
+- `Pielou (1966) The Measurement of Diversity in Different Types of Biological Collections` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `Shannon (1948) A Mathematical Theory of Communication — information entropy` · banner
+- `Simpson (1949) Measurement of Diversity — Nature 163:688` · banner
+
+## analytics
+
+- bond degree `36` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `cad29c78-ccf1-8c49-ba81-cfda1c5c353a` · framed by typography partition `diversity` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `738b3152-3702-8014-bd8d-ebe9204f1663` · framed by typography partition `diversity` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `bike` · sub-root `dcbcff65-9da7-823d-87fa-6902c7e6c0f4`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ecb7f34d-738e-825c-bcf2-1103a45f2ecc` · framed by typography partition `bike` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a0476212-ce94-8217-bbd0-e06e9f1583af` · framed by typography partition `bike` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

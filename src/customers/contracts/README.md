@@ -25,7 +25,45 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `99` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ASC-606` · catalogue
+- `eIDAS` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IAS-1` · catalogue
+- `IAS-8` · catalogue
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IFRS-15 §10 contract-with-customer` · banner
+- `IFRS IFRS-15 §17 contract-combination` · banner
+- `IFRS IFRS-15 §22 performance-obligations` · banner
+- `IFRS IFRS-15 §47 transaction-price decomposition` · banner
+- `IFRS IFRS-15 §50-59 variable-consideration` · banner
+- `IFRS IFRS-15 §60-65 financing-component` · banner
+- `IFRS-15` · catalogue
+- `ISO-19011:2018 audit-trail contract-lifecycle` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time effective-from effective-to` · banner
+- `SOX` · catalogue
+- `SOX §404 internal-controls contract-approval` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-606-10-25 contract-existence` · banner
+- `US-GAAP ASC-606-10-25-13 contract-modifications` · banner
+- `US-GAAP ASC-606-10-25-9 contract-combination` · banner
+
+## analytics
+
+- bond degree `99` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `25`
 
 ## identity
 
@@ -41,4 +79,4 @@
 
 ---
 
-<sub>content-uuid `2bf927ab-9b9d-82ae-b919-5a797549732d` · framed by typography partition `customers` bonds `99` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `08b4fe1b-4de4-8ada-aca6-f8ee5630a426` · framed by typography partition `customers` bonds `99` · `pnpm readme` · `pnpm readme:check`</sub>

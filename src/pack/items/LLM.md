@@ -3,15 +3,15 @@
 
 # items
 
-path `pack/items` · uuid `b090fe53-32ee-84e4-aa66-70edea05367e` · diamond `824cb1f3-cec3-8671-a23c-d6fbd7cfdf3d`
+path `pack/items` · uuid `b090fe53-32ee-84e4-aa66-70edea05367e` · diamond `d6be5e54-9644-851c-9b8c-501272d23f5f`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/fields·@/membership/admin/mutate/access·@/standard/collection/hook·@/tenant/scoped/read · exports const·default · escapes —
-links `15/15` · folded `1` · bonds in `10` out `9`
+links `15/15` · folded `1` · bonds in `44` out `48`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·issue·landmarks·motel·snapshots·tour·visit·visual · ← accounting·balance·comment·issue·landmarks·motel·snapshots·tour·visit·visual
+neighbors → accounting·accounting·agriculture·apiculture·aquaculture·balance·batches·biomass·bundle·coordinate·crop·cropplan·currency·currency·declarations·deduction·fields·forestry·harvest·identity·inspections·jurisdictions·lactation·law·law·lines·livestock·materials·measure·merge·movements·num·orders·packages·packs·packs·postharvest·proof·quotes·seed·share·standard·tax·taxexempt·transaction·upsell·variant·variants · ← accounting·agriculture·apiculture·aquaculture·balance·batches·biomass·bundle·coordinate·crop·cropplan·currency·declarations·deduction·fields·forestry·harvest·identity·inspections·jurisdictions·lactation·law·lines·livestock·materials·measure·merge·movements·num·orders·packages·packs·postharvest·proof·quotes·seed·share·standard·tax·taxexempt·transaction·upsell·variant·variants
 analysis —
 law a pack line is the units of one produced [[lot/variants|lot-variant]] packed into one [[packs|pack]] — header-primary with an optional option breakdown whose double-entry holds when supplied (options present ⇒ header = Σ options; `unitsBackordered = max(0, ordered − packed)`).
 
 ---
 
-<sub>content-uuid `83f49235-d31c-8874-8d30-03ccd8efb188` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e30e318-70c1-8924-b7cb-aada90159a04` · `pnpm readme` · `pnpm computed:check`</sub>

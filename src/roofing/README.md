@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `roofing` · sub-root `f5f8d3dc-f56c-8c15-af76-2339b7921515`
-- bond degree `20` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `f5f8d3dc-f56c-8c15-af76-2339b7921515`
-- bonds in `7` · out `7`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1f20e3d0-085e-8e6f-8259-40fe7f3dc6e0` · framed by typography partition `roofing` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1eb6939d-ebb3-8ac8-b9cd-2d56b95096c8` · framed by typography partition `roofing` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # inker
 
-path `inker` · uuid `a698a2ed-fe89-8bd3-9232-775455823f9f` · diamond `e66286c5-7025-8a4c-8ab6-ff57cc58df5f`
+path `inker` · uuid `a698a2ed-fe89-8bd3-9232-775455823f9f` · diamond `b61bf394-e783-8f5a-b01a-73be649963d9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports inker · escapes —
-links `2/2` · folded `1` · bonds in `3` out `3`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·materials·pwa · ← balance·materials·pwa
+neighbors → law·thing · ← law·thing
 analysis —
 law inker is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `87c35076-f6ef-82b0-854b-a1bb684ec1b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc86ace9-a2cb-8bdd-9c1b-7a2c4b8327e1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # optician
 
-path `optician` · uuid `d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14` · diamond `dd3bf276-e3b1-828a-b165-0b44e9ba5974`
+path `optician` · uuid `d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14` · diamond `5e1df0ae-852f-8077-8022-2a1e2992e60c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports optician · escapes —
-links `2/2` · folded `1` · bonds in `26` out `26`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → archive·authenticator·axis·brainstorm·bridge·consolidation·cook·copay·details·edits·goodwill·hematologic·involved·landmarks·meal·measurement·negative·painting·play·reported·score·snid·specialty·story·taxonomic·unity · ← archive·authenticator·axis·brainstorm·bridge·consolidation·cook·copay·details·edits·goodwill·hematologic·involved·landmarks·meal·measurement·negative·painting·play·reported·score·snid·specialty·story·taxonomic·unity
+neighbors → law·thing · ← law·thing
 analysis —
 law optician is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c75a4e1c-9f27-8c69-ab22-37cb3d13c17e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ebfed8d1-2318-803b-a668-e20683a341f1` · `pnpm readme` · `pnpm computed:check`</sub>

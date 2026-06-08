@@ -3,15 +3,15 @@
 
 # leg
 
-path `leg` · uuid `9a64ceb0-e118-83af-b4b2-a5c139deff58` · diamond `3cd9f8cf-7b7c-8dab-ad8c-5ef84deb5bb4`
+path `leg` · uuid `9a64ceb0-e118-83af-b4b2-a5c139deff58` · diamond `b36f8791-7c16-87d1-a000-48508c3dd7db`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports leg · escapes —
-links `4/4` · folded `1` · bonds in `1` out `1`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → leave · ← leave
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law leg is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7f299340-af1d-8de8-af51-fcfb39d0a50f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63dcbd35-2644-841a-8f90-aaa8ebb341e1` · `pnpm readme` · `pnpm computed:check`</sub>

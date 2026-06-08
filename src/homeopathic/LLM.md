@@ -3,15 +3,15 @@
 
 # homeopathic
 
-path `homeopathic` · uuid `eebc67a3-d27f-8360-bff3-362853daefe1` · diamond `485428c0-9120-8dcb-b8a6-88f215faba85`
+path `homeopathic` · uuid `eebc67a3-d27f-8360-bff3-362853daefe1` · diamond `dcfb86e5-87ca-8bcc-9cc7-6eaee888c09b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports homeopathic · escapes —
-links `4/4` · folded `1` · bonds in `115` out `113`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·9110·access·age·analog·analytics·atom·aura·auth·balance·base·based·befriend·beyond·breakfast·broker·cardiovascular·carriers·certified·city·clip·cohort·collections·conference·cooking·crest·cropplan·customer·declaration·dietary·diffusion·document·electrician·embassy·evaluated·events·film·findings·flight·flow·force·founder·handling·hearing·holographic·honorific·hook·hooks·hopats·horo·id·idempotency·invite·itcooperative·jewelry·landmarks·list·llm·localize·longitude·maintainer·marine·markup·mass·measure·memories·names·office·overview·partial·period·polarity·process·query·restriction·results·rev2·reviews·rheumatologic·right·risk·risks·river·roadmap·rodin·roles·rooms·rsvp·rule·runs·sandbox·saturday·scorecard·screen·sections·sectors·sell·settings·sign·snapshots·statistics·structured·swatch·tax·teller·termination·transactions·voting·wheelbase·width·window·wp · ← 3986·6585·9110·access·age·analog·analytics·atom·aura·auth·balance·base·based·befriend·beyond·breakfast·broker·cardiovascular·carriers·certified·city·clip·cohort·collections·conference·cooking·crest·cropplan·customer·declaration·dietary·diffusion·document·electrician·embassy·evaluated·events·film·film·findings·flight·flow·force·founder·handling·hearing·holographic·honorific·hook·hooks·hopats·horo·id·idempotency·invite·itcooperative·jewelry·landmarks·list·llm·localize·longitude·maintainer·marine·markup·mass·measure·memories·names·office·overview·partial·period·polarity·process·query·restriction·results·rev2·reviews·rheumatologic·right·risk·risks·river·roadmap·roadmap·rodin·roles·rooms·rsvp·rule·runs·sandbox·saturday·scorecard·screen·sections·sectors·sell·settings·sign·snapshots·statistics·structured·swatch·tax·teller·termination·transactions·voting·wheelbase·width·window·wp
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law homeopathic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e95dec7-004e-87b8-8ac9-57f3ade5017d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `198abc77-c9f0-8e96-a287-e8e68abd3219` · `pnpm readme` · `pnpm computed:check`</sub>

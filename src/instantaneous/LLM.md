@@ -3,15 +3,15 @@
 
 # instantaneous
 
-path `instantaneous` · uuid `6d912f2b-6bb0-8312-b260-59f701ac2de3` · diamond `c3b396e4-1599-81dd-a518-504c69ec3780`
+path `instantaneous` · uuid `6d912f2b-6bb0-8312-b260-59f701ac2de3` · diamond `40591b15-e9a7-8ef1-b229-b64c8679074c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·sti · exports instantaneous · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agency·cohort·has·inactive·landmarks·memories·physiological·stat · ← agency·cohort·has·inactive·landmarks·memories·physiological·stat
+neighbors → collapse·event·law·merge·sti · ← collapse·event·law·merge·sti
 analysis —
 law instantaneous is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6478ef1e-e230-86ca-8e6f-2c5df7c5db00` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44241c5d-afbf-84b9-931e-ea70f593021c` · `pnpm readme` · `pnpm computed:check`</sub>

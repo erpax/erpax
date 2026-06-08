@@ -4,7 +4,7 @@
 # authenticated
 
 path `authenticated` · uuid `c4849e96-80aa-8957-8c97-0ec77464cf23` · diamond `244eef9d-6e3f-83be-927d-92219a99fa92`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/iso/27002·@/types · exports const · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law presence of a verified `req.user` is the gate — `authenticated` grants iff
 
 ---
 
-<sub>content-uuid `d02dffe6-9480-860c-bb7d-5329e74da42c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `77d7fa81-d2b6-8573-a43e-da87f3c40259` · `pnpm readme` · `pnpm computed:check`</sub>

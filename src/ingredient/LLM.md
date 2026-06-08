@@ -3,15 +3,15 @@
 
 # ingredient
 
-path `ingredient` · uuid `8c9894ad-939f-860e-abc5-7b144155d9db` · diamond `0b80f31b-4375-8d38-abf4-e25fc2320377`
+path `ingredient` · uuid `8c9894ad-939f-860e-abc5-7b144155d9db` · diamond `c6519998-37f6-8d69-b1b4-869933e01e21`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports active·collapse·law·merge·recipe·sti · exports ingredient · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → active·collapse·law·merge·recipe·sti · ← active·collapse·law·merge·recipe·sti
 analysis —
 law ingredient is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fbbf37b5-50d2-8d43-8325-9eda79e8c479` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee2a6298-048d-89dd-81ee-4154355cad23` · `pnpm readme` · `pnpm computed:check`</sub>

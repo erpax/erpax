@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports isBgIban·isIban·parseBgIban·type · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → law · ← law
 analysis —
 law an IBAN is self-validating — its mod-97 check digits (ISO 7064) make the identifier carry its own integrity proof, so a typo fails the checksum, not the bank.
 
 ---
 
-<sub>content-uuid `13117764-1dad-8052-ba89-e261bf17a367` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ef05b025-a1a8-81e1-a69e-3b41ba04b40d` · `pnpm readme` · `pnpm computed:check`</sub>

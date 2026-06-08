@@ -3,15 +3,15 @@
 
 # perspective
 
-path `perspective` · uuid `8aac93fc-1543-8e80-aee7-90837f86e0ef` · diamond `821eb0bd-3bb4-88d7-bf54-2758356c3f72`
+path `perspective` · uuid `8aac93fc-1543-8e80-aee7-90837f86e0ef` · diamond `d8e093b2-3a5c-8f6b-9513-33b445d256eb`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `16/16` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·tenant · ← cohort·landmarks·memories·stat·tenant
+links `16/16` · folded `1` · bonds in `14` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·balance·brainstorm·connections·corruption·duality·entry·fields·flow·give·identity·law·merge·take · ← accounting·balance·brainstorm·connections·corruption·duality·entry·fields·flow·give·identity·law·merge·take
 analysis —
 law one content ⇒ one [[identity]], but it READS differently per party (payer's [[give]] is payee's [[take]], seller's AR is buyer's AP) — the view is the inverse map computed not stored, and the two party-views always net to zero ([[balance]]).
 
 ---
 
-<sub>content-uuid `a4e7e871-40d9-855a-83ec-3d3b6664fbce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22587aa8-4886-8de5-9efd-4bccae0d7a0c` · `pnpm readme` · `pnpm computed:check`</sub>

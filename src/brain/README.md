@@ -25,7 +25,7 @@
 
 - partition `brain` · sub-root `702f6ecf-ff93-858c-8bb5-de7778aa50f4`
 - bond degree `27` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -57,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `bf9efeb3-aabe-86da-b0fd-d8fd45d52fd2` · framed by typography partition `brain` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bea8ec81-06c8-88cd-914d-db9399b58f8c` · framed by typography partition `brain` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `downpayment` · sub-root `cb079685-0d0a-8188-8037-431d8cd5d5eb`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4b98053e-c3a1-84e2-af1c-46a30c062c77` · framed by typography partition `downpayment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f592893b-1134-88a8-861a-b1549cbb8751` · framed by typography partition `downpayment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

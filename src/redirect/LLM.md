@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·law·redirects·url · exports redirect · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·law·redirects·url · ← balance·law·redirects·url
 analysis —
 law one redirect is the singular model of one [[redirects]] row — a rule forwarding one address to another; every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `40ab6703-ec34-86c2-aea8-2bd6eb205d02` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `481744e8-6740-8e37-a8cb-0dd7ca93c26d` · `pnpm readme` · `pnpm computed:check`</sub>

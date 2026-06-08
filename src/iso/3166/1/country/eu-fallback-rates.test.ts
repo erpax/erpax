@@ -12,7 +12,7 @@
  * @audit ISO-19011:2018 audit-trail external-system-evidence
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  * @see src/services/country-api-clients.ts
- * @see src/config/country-apis.ts (ECB_RATES pan-EU entry)
+ * @see src/country/api.ts (ECB_RATES pan-EU entry)
  */
 
 import { afterEach, describe, expect, it, vi } from 'vitest'
@@ -20,7 +20,7 @@ import {
   lookupEcbExchangeRate,
   lookupEuFallbackRate,
 } from '@/country/api/client'
-import { COUNTRY_APIS } from '@/config/country-apis'
+import { COUNTRY_APIS } from '@/country/api'
 
 const ECB_DAILY = '<gesmes:Envelope><Cube><Cube time="2026-05-09"><Cube currency="USD" rate="1.0823" /><Cube currency="GBP" rate="0.8541" /></Cube></Cube></gesmes:Envelope>'
 

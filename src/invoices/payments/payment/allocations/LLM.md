@@ -3,15 +3,15 @@
 
 # allocations
 
-path `invoices/payments/payment/allocations` · uuid `0b50d883-bb8c-83b3-966b-32c409b16b25` · diamond `dc8db3ab-6f53-84f9-a340-b622ff0639dc`
+path `invoices/payments/payment/allocations` · uuid `0b50d883-bb8c-83b3-966b-32c409b16b25` · diamond `26ab8a1a-a852-88b5-ba66-e796b6803e2e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks·terminals · ← create·landmarks·terminals
+links `7/7` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·identity·law·party·payments·proof·standard·transaction · ← accounting·identity·law·party·payments·proof·standard·transaction
 analysis —
 law an allocation explicitly maps one payment onto the specific invoices/bills it settles — the sum of allocations cannot exceed the payment, and the settle is auditable evidence (FIFO or manual), never an implicit guess about which debt the cash cleared.
 
 ---
 
-<sub>content-uuid `2d12647f-988e-87f7-81bb-66c03a902491` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e300c83f-8635-8ceb-b2fb-3093cbb6e640` · `pnpm readme` · `pnpm computed:check`</sub>

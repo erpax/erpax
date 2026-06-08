@@ -3,15 +3,15 @@
 
 # indication
 
-path `indication` · uuid `e6d9e18c-8592-81b3-a175-7e376a67b9ea` · diamond `0d6fd6c9-a33d-872b-9ba5-6a56793612e4`
+path `indication` · uuid `e6d9e18c-8592-81b3-a175-7e376a67b9ea` · diamond `1a4cbc14-bbaa-8510-8d24-b331ff858826`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports approved·collapse·law·medical·merge·prevention·sti·treatment · exports indication · escapes —
-links `8/8` · folded `1` · bonds in `6` out `7`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·civilization·cohort·discover·landmarks·memories·stat · ← agent·cohort·discover·landmarks·memories·stat
+neighbors → approved·collapse·law·medical·merge·prevention·sti·treatment · ← approved·collapse·law·medical·merge·prevention·sti·treatment
 analysis —
 law indication is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd91909f-963b-8553-b168-c3e09dcc697f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6040d940-3b07-8fdf-a86d-614dee518ae1` · `pnpm readme` · `pnpm computed:check`</sub>

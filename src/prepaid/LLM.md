@@ -3,15 +3,15 @@
 
 # prepaid
 
-path `prepaid` · uuid `6a38c87c-e01e-8c2a-929e-bcd0d6ef5c16` · diamond `a597d3db-4d4e-87b0-b7e3-624163fbaa66`
+path `prepaid` · uuid `6a38c87c-e01e-8c2a-929e-bcd0d6ef5c16` · diamond `c79fbdd9-5606-8183-ac25-211fdc5aa861`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accrual·deferral·deferredrevenue·fixed·gl·journal·law·recognition · exports prepaid · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·industry·landmarks·memories·stat · ← cohort·industry·landmarks·memories·stat
+neighbors → accrual·assets·deferral·deferredrevenue·entries·journals·law·recognition·share · ← accrual·assets·deferral·deferredrevenue·entries·journals·law·recognition·share
 analysis —
 law a prepaid is an asset only until its benefit is consumed — it must be drawn down to expense across the period it serves, never recognized all at once or left to overstate assets.
 
 ---
 
-<sub>content-uuid `7c5db634-2fbd-855e-a4f6-58ec4fdbd201` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b1a765ba-9d8a-8790-b851-a474cfe7adbf` · `pnpm readme` · `pnpm computed:check`</sub>

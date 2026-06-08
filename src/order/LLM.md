@@ -3,15 +3,15 @@
 
 # order
 
-path `order` · uuid `bfccce0e-f2ce-8033-91a0-b4b4a234ca85` · diamond `dbc6c14b-40e9-82d6-a026-94205dbe702b`
+path `order` · uuid `bfccce0e-f2ce-8033-91a0-b4b4a234ca85` · diamond `516a92a2-ef3c-8dbe-999c-603aa0d9a5d1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·date·delivery·item·law·list·number·part·percentage·pre·quantity·references·status·type·value · exports order · escapes —
-links `15/15` · folded `1` · bonds in `10` out `10`
+links `15/15` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·cohort·collect·corrects·countersigned·europe·landmarks·memories·shannon·stat · ← address·cohort·collect·corrects·countersigned·europe·landmarks·memories·shannon·stat
+neighbors → action·archangel·architect·catholicism·confucianism·date·delivery·item·law·list·number·part·percentage·pre·quantity·references·ritual·status·type·value·zoroastrianism · ← action·archangel·architect·catholicism·confucianism·date·delivery·item·law·list·number·part·percentage·pre·quantity·references·ritual·status·type·value·zoroastrianism
 analysis —
 law an order confirms accepted offers — its value equals the sum of its line items, and it advances through its statuses in one direction.
 
 ---
 
-<sub>content-uuid `e8fff49d-aca2-81b8-a33d-11d150c6e7d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `98e6d8ed-a072-8e65-bd55-d702ee93f5e5` · `pnpm readme` · `pnpm computed:check`</sub>

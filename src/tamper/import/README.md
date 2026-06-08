@@ -2,7 +2,7 @@
 
 # import
 
-> atom `tamper/import` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `tamper/import` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,27 @@
 ## typography graph
 
 - partition `tamper` · sub-root `3759fd7e-a41d-8b46-b85f-008b24a237ba`
-- bond degree `118` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity` · `quantum/boundary` · `tamper/import`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `60` · analysis neighbors `aura` · `quantum/boundary` · `tamper/import`
+- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `60` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `041e9f45-3959-88df-b51f-72777153e544`
-- bonds in `45` · out `44`
+- uuid `c34cceb3-27b2-85b2-882e-8e29e097983a`
+- bonds in `14` · out `20`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `2a6a3ae8-f347-8d2c-a7ef-6e9cb413d0f5` · framed by typography partition `tamper` bonds `118` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bce9bbf9-7310-8076-a4dd-16a332693250` · framed by typography partition `tamper` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

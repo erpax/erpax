@@ -23,7 +23,21 @@
 
 - partition `cuisine` · sub-root `0fdc2b0f-79fe-88f3-a4ea-8f1f1a566ceb`
 - bond degree `20` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d5001024-fa30-8e55-83a4-ac970b840271` · framed by typography partition `cuisine` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a2b0bcc2-8210-8255-a503-e08828bb27ad` · framed by typography partition `cuisine` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

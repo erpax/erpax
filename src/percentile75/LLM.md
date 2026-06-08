@@ -3,15 +3,15 @@
 
 # percentile75
 
-path `percentile75` · uuid `ba85a383-b980-83a6-b932-c9a7cab5f3b4` · diamond `bb0280d4-9abf-804c-976b-a6d33392c7da`
+path `percentile75` · uuid `ba85a383-b980-83a6-b932-c9a7cab5f3b4` · diamond `09a2aabd-2116-8ea3-a5cf-7981f6bd51a2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports percentile75 · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical · ← landmarks·periodical
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law percentile75 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f1f4c343-dcaf-8a86-8833-41899a4853be` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c2ad42f-6401-807c-b107-f5f1fb52ac8a` · `pnpm readme` · `pnpm computed:check`</sub>

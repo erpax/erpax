@@ -3,15 +3,15 @@
 
 # rate
 
-path `rate` · uuid `e877b856-8697-887e-bad9-d56eebc3852d` · diamond `68ce0d82-7451-8a51-baf1-bd192962d802`
+path `rate` · uuid `e877b856-8697-887e-bad9-d56eebc3852d` · diamond `3b8d2012-b1ce-8731-bdd6-a734d030be4d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports calculate·currency·duality·fields·hooks·identity·law·manufacturing·measure·number·standard·value·versions · exports rate · escapes —
-links `30/30` · folded `1` · bonds in `4` out `4`
+links `30/30` · folded `1` · bonds in `45` out `45`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agriculture·allocation·annual·aquaculture·biomass·calculate·capacity·coinsurance·compensation·conversion·crop·currency·current·discount·duality·evapotranspiration·fertility·fields·fodder·grade·hooks·identity·interest·irrigation·kpi·law·manufacturing·measure·mortality·number·percentage·plan·rates·science·settings·shipping·specification·spread·standard·tax·throughput·transaction·value·versions·yield · ← agriculture·allocation·annual·aquaculture·biomass·calculate·capacity·coinsurance·compensation·conversion·crop·currency·current·discount·duality·evapotranspiration·fertility·fields·fodder·grade·hooks·identity·interest·irrigation·kpi·law·manufacturing·measure·mortality·number·percentage·plan·rates·science·settings·shipping·specification·spread·standard·tax·throughput·transaction·value·versions·yield
 analysis —
 law a rate is value-per-unit pinned to a point in time; a blank rate resolves to its no-op identity (×1 / +0%) along the jurisdiction cascade, never to a hardcoded literal.
 
 ---
 
-<sub>content-uuid `d85d7836-587c-8f7d-af08-d0eca29aa010` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6015857-47bb-8996-8936-321c46b390be` · `pnpm readme` · `pnpm computed:check`</sub>

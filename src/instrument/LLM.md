@@ -3,15 +3,15 @@
 
 # instrument
 
-path `instrument` · uuid `4f6a679c-399f-8023-9ab6-2927febd88f8` · diamond `a9a37cb3-4f90-81b5-953b-f2fef5bf9fa5`
+path `instrument` · uuid `4f6a679c-399f-8023-9ab6-2927febd88f8` · diamond `52e3eae2-8100-8556-bd74-6c126113eafc`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports instrument · escapes —
-links `2/2` · folded `1` · bonds in `17` out `17`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·center·contractual·corrects·dropoff·founder·holographic·id·landmarks·marine·memories·opportunity·postcode·progression·recourse·spouse·wp · ← akashic·center·contractual·corrects·dropoff·founder·holographic·id·landmarks·marine·memories·opportunity·postcode·progression·recourse·spouse·wp
+neighbors → law·thing · ← law·thing
 analysis —
 law instrument is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9f809d5a-74b9-84a4-92fe-6f9e6c2de5bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d1d6be59-3b6d-8af2-8e84-c989e6d32093` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # listing
 
-path `listing` · uuid `1ae4ceaf-ae89-833e-83a5-b9fb10db06dc` · diamond `b98591c0-d822-8bad-9f63-ee5bdcf267ef`
+path `listing` · uuid `1ae4ceaf-ae89-833e-83a5-b9fb10db06dc` · diamond `c0978b63-1d72-8baf-bab2-7bcb5df9844f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·estate·law·merge·real·sti · exports listing · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·coil·landmarks·memories·stat · ← cohort·coil·landmarks·memories·stat
+neighbors → collapse·estate·law·merge·real·sti · ← collapse·estate·law·merge·real·sti
 analysis —
 law listing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `02040c66-bbcf-8300-9345-985c87e0fafe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bac7dc94-c427-81e4-a530-96d24f93ed0d` · `pnpm readme` · `pnpm computed:check`</sub>

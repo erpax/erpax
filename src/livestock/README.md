@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `livestock` · sub-root `e65257f2-eec5-8b15-aeec-66366f6b248d`
-- bond degree `45` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `83` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `e65257f2-eec5-8b15-aeec-66366f6b248d`
-- bonds in `5` · out `5`
+- bonds in `24` · out `24`
 - trinity form·code·proof `1`·`0`·`0`
 - links `43` / `43`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b1d095f8-7a35-8277-812c-65947a7c9163` · framed by typography partition `livestock` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `809f6ea3-1914-8630-b91a-b4573eb5dd7f` · framed by typography partition `livestock` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>

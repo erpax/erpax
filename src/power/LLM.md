@@ -3,15 +3,15 @@
 
 # power
 
-path `power` · uuid `85683986-9ede-898b-8c63-459f850131c3` · diamond `f3fc8bc4-c0c9-8cf9-8d3b-11214f4c1058`
+path `power` · uuid `85683986-9ede-898b-8c63-459f850131c3` · diamond `9322d220-235c-8b5d-b699-767b3ae26703`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/anchor·@/cost·@/integrity·@/proof/projection·@/tamper/cost·@/uuid/matrix · exports function·interface · escapes —
-links `13/13` · folded `1` · bonds in `9` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accrual·biological·default·defect·gift·horo·landmarks·rear·reviews · ← accrual·biological·default·defect·gift·horo·landmarks·rear·reviews
+links `13/13` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → age·anchor·awareness·collapse·cost·diffusion·duality·history·identity·integrity·law·market·merge·network·proof·relocate·society·zeropoint · ← age·anchor·awareness·collapse·cost·diffusion·duality·history·identity·integrity·law·market·merge·network·proof·relocate·society·zeropoint
 analysis —
 law power only composes the already-shipped amplifiers over one live usage snapshot and never re-adds a term, so usage monotonically raises the cost-to-forge and zero usage falls back to the bare digest floor.
 
 ---
 
-<sub>content-uuid `866259d3-6619-8442-a625-ed004ccd5d0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6e3216bf-94e0-8838-872c-0371bc82407a` · `pnpm readme` · `pnpm computed:check`</sub>

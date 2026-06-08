@@ -3,15 +3,15 @@
 
 # naics
 
-path `naics` · uuid `955983a8-df55-850f-a1f5-fee172c8c38a` · diamond `39c92399-a4c0-8aa6-8dbf-39121519df9c`
+path `naics` · uuid `955983a8-df55-850f-a1f5-fee172c8c38a` · diamond `5dfa8674-ebec-802b-adff-f195e448d24e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports naics · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·electrician·landmarks·memories·sibling·stat · ← cohort·electrician·landmarks·memories·sibling·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law naics is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `999763fe-1400-845b-8e0d-471be6fae525` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `270c7504-a67d-89b3-8c31-cbb0424b125d` · `pnpm readme` · `pnpm computed:check`</sub>

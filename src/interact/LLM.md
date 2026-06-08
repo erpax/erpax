@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports interact · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·quote·stat · ← cohort·landmarks·memories·quote·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law interact is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3c962b66-096a-8964-ad3e-e3d5943734ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6eddb457-0351-8cd5-8793-1a91f432a393` · `pnpm readme` · `pnpm computed:check`</sub>

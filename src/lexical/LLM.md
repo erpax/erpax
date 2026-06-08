@@ -3,15 +3,15 @@
 
 # lexical
 
-path `lexical` · uuid `a839cd92-4dae-8ddc-bfb7-9efe75c858d6` · diamond `5179cf76-13fc-8434-b295-a1770b338516`
+path `lexical` · uuid `a839cd92-4dae-8ddc-bfb7-9efe75c858d6` · diamond `ca231390-8e14-8215-b1bd-72946a1934e4`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·config·cost·fields·fractal·identity·law·localize·part·tamper·uuid·whole · exports lexical · escapes —
-links `23/23` · folded `1` · bonds in `2` out `2`
+links `23/23` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → begin·chat·collapse·components·config·cost·fields·fractal·identity·law·localize·media·part·uuid·whole · ← begin·chat·collapse·components·config·cost·fields·fractal·identity·law·localize·media·part·uuid·whole
 analysis —
 law lexical is the one rich-text node-tree every prose field collapses to ([[collapse]]) and the densest tamper surface — `locales × nodes` independent content-addresses per localized field, so [[localize|localizing]] Lexical is the cheapest push of crack-[[cost]] toward ∞.
 
 ---
 
-<sub>content-uuid `16d1146f-18fb-8b2e-98b5-ceea3d7d3745` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2a0a8c98-2013-8d60-b30b-c147ad811370` · `pnpm readme` · `pnpm computed:check`</sub>

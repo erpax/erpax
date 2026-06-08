@@ -3,15 +3,15 @@
 
 # pool
 
-path `pool` · uuid `9b0d1471-58ac-8375-902a-95211cd346a4` · diamond `95759f9e-4b3f-884a-9507-4f28aa580fd6`
+path `pool` · uuid `9b0d1471-58ac-8375-902a-95211cd346a4` · diamond `24a88475-ca8b-85a6-a066-039769ad6554`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·public·sti·swimming · exports pool · escapes —
-links `6/6` · folded `1` · bonds in `12` out `12`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·befriend·coach·cohort·encodes·landmarks·memories·postponed·quota·separation·spa·stat · ← address·befriend·coach·cohort·encodes·landmarks·memories·postponed·quota·separation·spa·stat
+neighbors → collapse·law·merge·public·sti·swimming · ← collapse·law·merge·public·sti·swimming
 analysis —
 law pool is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `699ac315-aa8f-8461-8eee-6051e53fcfaa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ac7ee461-030c-8f5f-9786-be1c65bcf9a0` · `pnpm readme` · `pnpm computed:check`</sub>

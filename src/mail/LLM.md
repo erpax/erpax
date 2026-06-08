@@ -3,15 +3,15 @@
 
 # mail
 
-path `mail` · uuid `b94d4ecd-6ad3-8c2e-9b7d-1dc568d607d9` · diamond `803afbfa-5211-8854-b795-b02e2813e5bb`
+path `mail` · uuid `b94d4ecd-6ad3-8c2e-9b7d-1dc568d607d9` · diamond `e75cb68c-5c97-861b-ae02-1aa2e0144753`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·offers·prescription·sti · exports mail · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·entropy·landmarks·meal·memories·radiation·stat · ← cohort·entropy·landmarks·meal·memories·radiation·stat
+neighbors → collapse·law·merge·offers·prescription·sti · ← collapse·law·merge·offers·prescription·sti
 analysis —
 law mail is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f8bfef6-e2ba-8fed-8959-73660639e857` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d2265b5-9e25-8b43-851c-72e7dbbd49c4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -14,6 +14,7 @@ import type {
 } from './types'
 import type { SpecChainStep } from '@/spec/generator'
 import { processEffects } from './effect-processor'
+import { assertStrictDispatch } from './strict-apply'
 
 /**
  * Run one agent's `onEvent` and process its effects — the single per-agent body
@@ -22,6 +23,7 @@ import { processEffects } from './effect-processor'
  * the run does not.
  */
 async function runEvent(agent: DomainAgent, ctx: AgentContext, ev: DomainEvent): Promise<AgentEffect[]> {
+  assertStrictDispatch(ctx, ev)
   if (!agent.onEvent) return []
   const effects = await agent.onEvent(ctx, ev)
   await processEffects(effects, ctx)

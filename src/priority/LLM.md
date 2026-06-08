@@ -3,15 +3,15 @@
 
 # priority
 
-path `priority` · uuid `619f71b7-9df5-8588-8f72-e0a3fe38700e` · diamond `5fbb162a-6cad-84dc-a531-6fcdc5524836`
+path `priority` · uuid `619f71b7-9df5-8588-8f72-e0a3fe38700e` · diamond `88e91dd6-18f9-8ba8-a87b-b865d8cbfe86`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·sla·workflow · exports priority · escapes —
-links `3/3` · folded `1` · bonds in `2` out `2`
+links `3/3` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → backlog·definitions·law·passenger·queue·sla · ← backlog·definitions·law·passenger·queue·sla
 analysis —
 law priority is the relative-weight field that orders work by urgency and escalation level (P1–P4, Blocker→Low, SLA-breach risk) — a rank, not a state.
 
 ---
 
-<sub>content-uuid `0e503d88-a89b-88a4-bdd7-c4798378dad7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4263223-e464-8441-a31b-35c4d8485dc1` · `pnpm readme` · `pnpm computed:check`</sub>

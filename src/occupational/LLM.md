@@ -3,15 +3,15 @@
 
 # occupational
 
-path `occupational` · uuid `f9afea3a-556d-8a51-80a9-22993f275347` · diamond `c675a747-40cf-8fba-92e8-9209cd7d6398`
+path `occupational` · uuid `f9afea3a-556d-8a51-80a9-22993f275347` · diamond `e34e307f-fd26-8f70-a77f-64c5ea4ccb81`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports awarded·category·collapse·credential·educational·experience·law·merge·program·requirements·sti·therapy · exports occupational · escapes —
-links `12/12` · folded `1` · bonds in `3` out `3`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·lower·preparation · ← landmarks·lower·preparation
+neighbors → awarded·category·collapse·credential·educational·experience·law·merge·program·requirements·sti·therapy · ← awarded·category·collapse·credential·educational·experience·law·merge·program·requirements·sti·therapy
 analysis —
 law occupational is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `88d74d36-322a-8fae-925d-e4f3d7d8a40a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa25aad5-4362-8285-8f95-9152e3cf1bd1` · `pnpm readme` · `pnpm computed:check`</sub>

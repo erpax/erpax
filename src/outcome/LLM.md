@@ -3,15 +3,15 @@
 
 # outcome
 
-path `outcome` · uuid `be763025-d6be-81b2-8558-17e785355f7c` · diamond `0210b13a-2805-81ff-acb4-50058775cb98`
+path `outcome` · uuid `be763025-d6be-81b2-8558-17e785355f7c` · diamond `a823b2b3-b07b-840d-b76c-f960e2ebe852`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports adverse·collapse·law·merge·serious·sti · exports outcome · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·declarations·landmarks·memories·note·pasture·stat · ← cohort·declarations·landmarks·memories·note·pasture·stat
+neighbors → adverse·collapse·law·merge·serious·sti · ← adverse·collapse·law·merge·serious·sti
 analysis —
 law outcome is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7bb784ff-5508-8dc9-a700-85f0f87267cf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee0710f4-d283-8d61-89ed-30b197fbf462` · `pnpm readme` · `pnpm computed:check`</sub>

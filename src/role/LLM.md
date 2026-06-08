@@ -3,15 +3,15 @@
 
 # role
 
-path `role` · uuid `4b8661d3-cf61-832b-9d6c-2da433272a72` · diamond `294c51fd-e0ad-83a3-baf6-c854c4651347`
+path `role` · uuid `4b8661d3-cf61-832b-9d6c-2da433272a72` · diamond `123fa99c-c2df-8178-a383-6b5de025ede2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports biological·chemical·educational·employee·law·link·name·organization·performance · exports role · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → administration·cohort·landmarks·memories·stat · ← administration·cohort·landmarks·memories·stat
+neighbors → biological·chemical·educational·employee·law·link·name·organization·performance·reference · ← biological·chemical·educational·employee·law·link·name·organization·performance·reference
 analysis —
 law role is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8b0bd058-a896-8571-8381-58dd24ae17d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `baa8a01e-3b72-8cdf-ad9e-2f6c6769dade` · `pnpm readme` · `pnpm computed:check`</sub>

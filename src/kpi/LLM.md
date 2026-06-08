@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·measure·metric·rate·schedule · exports kpi · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → boat·cohort·landmarks·memories·stat·volume · ← boat·cohort·landmarks·memories·stat·volume
+neighbors → law·measure·metric·rate·schedule·scorecard · ← law·measure·metric·rate·schedule·scorecard
 analysis —
 law a KPI is a target [[metric]] bound to a threshold, formula, frequency, and owner — the measurable objective beneath strategy, so performance is a computed variance against the target, never a vibe.
 
 ---
 
-<sub>content-uuid `35106931-34ef-87b2-8f43-6d2bdf3b61bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e95b75f9-1381-896d-9f3f-e28df6161769` · `pnpm readme` · `pnpm computed:check`</sub>

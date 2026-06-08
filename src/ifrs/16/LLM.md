@@ -3,15 +3,15 @@
 
 # 16
 
-path `ifrs/16` · uuid `5a20f026-5620-8f75-98eb-01758f828476` · diamond `2613122e-6645-868d-a2be-e2ea30baa042`
+path `ifrs/16` · uuid `5a20f026-5620-8f75-98eb-01758f828476` · diamond `ceaf2493-e497-8ba4-88fe-00a8d54b859e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports DiscountRateBasis·Lease·LeaseClassification·LeaseLiability·LeaseModification·LeaseModificationKind·LeasePayment·LeaseStatus·PaymentFrequency·PaymentTiming·RouAsset·UnderlyingAssetCategory·isDiscountRateBasis·isLeaseClassification·isLeaseModificationKind·isLeaseStatus·isPaymentFrequency·isPaymentTiming·qualifiesForShortTermExemption · escapes —
-links `1/1` · folded `1` · bonds in `7` out `7`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → codes·cohort·landmarks·measurement·memories·satire·stat · ← codes·cohort·landmarks·measurement·memories·satire·stat
+neighbors → law · ← law
 analysis —
 law IFRS 16 / ASC 842 owns the canonical lessee types — every lease, bar the two narrow §5 exemptions (short-term, low-value), puts a right-of-use asset AND a lease liability on the balance sheet — the one shape the Leases collection and future amortisation service project onto, so the classification union cannot drift.
 
 ---
 
-<sub>content-uuid `3ee5de37-70b4-8309-9302-edfd4bad61ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b821d9f6-89ee-8093-9938-d19cdfe9f9ce` · `pnpm readme` · `pnpm computed:check`</sub>

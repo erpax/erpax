@@ -3,15 +3,15 @@
 
 # movie
 
-path `movie` · uuid `b8ac1403-f4bf-8b17-961f-7eddc29313c1` · diamond `ad51d676-c73b-84f5-99d5-72fb6e6af286`
+path `movie` · uuid `b8ac1403-f4bf-8b17-961f-7eddc29313c1` · diamond `590c9111-d822-86e2-b24a-b2ff2d3b596b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports clip·law·rental·series·store·theater · exports movie · escapes —
-links `6/6` · folded `1` · bonds in `2` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·landmarks·landmarks · ← accounting·landmarks
+neighbors → clip·law·rental·series·store·theater · ← clip·law·rental·series·store·theater
 analysis —
 law movie is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `41acf653-2ac3-8ad4-9d2b-adec87cc000e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9fde4397-0150-88a6-9c2f-d8e49a30b45e` · `pnpm readme` · `pnpm computed:check`</sub>

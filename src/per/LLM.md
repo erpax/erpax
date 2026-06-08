@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports per · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law per is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9d953a72-a472-8333-b053-1d1e4c3c0fc8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dbac8afd-e5df-837a-9847-db9968025aa5` · `pnpm readme` · `pnpm computed:check`</sub>

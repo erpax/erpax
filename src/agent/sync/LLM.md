@@ -4,7 +4,7 @@
 # sync
 
 path `agent/sync` · uuid `5e46aec2-1452-8280-89ed-e8779874a699` · diamond `6189732b-bd01-862f-9292-f82484efdad1`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/integrity · exports *:./chat-broadcast·*:./discovery·*:./horo·*:./payload-chat·*:./society·*:./training-broadcast·function·interface · escapes —
 links `12/12` · folded `1` · bonds in `26` out `31`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every agent publishes into one per-tenant room that broadcasts to every peer
 
 ---
 
-<sub>content-uuid `d1cebee0-cff3-88bd-9125-06f858cfbc07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62f41470-54c9-8af6-a7cb-dfe28fe1c042` · `pnpm readme` · `pnpm computed:check`</sub>

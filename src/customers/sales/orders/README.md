@@ -25,7 +25,46 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `157` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ASC-606` · collection
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017` · collection
+- `EN-16931:2017 §BG-13 delivery-information (downstream of the order)` · banner
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-Directive-2006/112/EC` · collection
+- `EU-UCC` · catalogue
+- `EU-VAT-Directive 2006/112/EC supply-of-goods-or-services` · banner
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IFRS-15 §10 contract-with-customer (order = contract or modification)` · banner
+- `IFRS IFRS-15 §31 transfer-of-control` · banner
+- `IFRS-15` · collection
+- `INCOTERMS-2020` · catalogue
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-9735` · catalogue
+- `Peppol-BIS-3.0` · collection
+- `Peppol-BIS-3.0 Order ordering-process` · banner
+- `UBL-2.1` · collection
+- `UBL-2.1 Order document-schema` · banner
+- `UN-EDIFACT ORDERS d96a customer-order` · banner
+- `UN-EDIFACT ORDRSP d96a order-response` · banner
+- `UN-EDIFACT-ORDERS-d96a` · collection
+- `US-GAAP ASC-606 revenue-from-contracts` · banner
+- `WCO-HS` · catalogue
+
+## analytics
+
+- bond degree `157` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `26`
 
 ## identity
 
@@ -41,4 +80,4 @@
 
 ---
 
-<sub>content-uuid `32e22608-4bb1-80f4-b6f1-bcc649fe2ad8` · framed by typography partition `customers` bonds `157` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `670bfbf6-2861-8c44-a161-190053818909` · framed by typography partition `customers` bonds `157` · `pnpm readme` · `pnpm readme:check`</sub>

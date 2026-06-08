@@ -3,15 +3,15 @@
 
 # originates
 
-path `originates` · uuid `ccea1ddf-9e1c-87f4-8370-5b007d973ca5` · diamond `ec713665-9754-8230-b58d-f1e9f7588ea8`
+path `originates` · uuid `ccea1ddf-9e1c-87f4-8370-5b007d973ca5` · diamond `55e29154-cf5f-8a0c-a695-60b5322d2fa7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports originates · escapes —
-links `2/2` · folded `1` · bonds in `7` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aggregation·cache·emergence·menu·t·translate · ← action·aggregation·cache·emergence·menu·t·translate
+neighbors → law·thing · ← law·thing
 analysis —
 law originates is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e678b77e-835b-8e39-aadd-032ce8ff8d0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14fbbee0-33bf-8143-acd3-11fa10d48e65` · `pnpm readme` · `pnpm computed:check`</sub>

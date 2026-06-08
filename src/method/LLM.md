@@ -3,15 +3,15 @@
 
 # method
 
-path `method` · uuid `9ff97d5a-f1a3-88d6-87dd-7cfee5a1a804` · diamond `3394404e-0eba-8491-b37f-890aa7c5fc49`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `method` · uuid `0faf1d19-1570-8c19-8b95-672cd61e52f1` · diamond `d4825c4f-3e7e-80c4-bce2-3fbc1ca35872`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports const·function·interface · escapes —
-links `33/33` · folded `1` · bonds in `12` out `12`
-faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·aura·catalogue·cohort·cooking·displacement·landmarks·language·memories·messages·metatron·trading · ← addressed·aura·catalogue·cohort·cooking·displacement·landmarks·language·memories·messages·metatron·trading
+links `33/33` · folded `1` · bonds in `31` out `31`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accepted·applies·atom·available·boundary·collapse·cooking·delivery·diamond·digit·enum·enumeration·exported·fractal·harmony·has·horo·http·identity·import·law·measurement·merge·name·path·return·rodin·sequence·sti·transmission·uuid · ← accepted·applies·atom·available·boundary·collapse·cooking·delivery·diamond·digit·enum·enumeration·exported·fractal·harmony·has·horo·http·identity·import·law·measurement·merge·name·path·return·rodin·sequence·sti·transmission·uuid
 analysis diamond·quantum/boundary·tamper/import
 law every method name has a path of diamonds — the atom chain from corpus root to its `index.ts` barrel plus the exported symbol at the leaf; the path is the method's address in the lattice, content-uuid sealed at `{ atomPath, symbol }`; computed by `methodPath`/`scanMethodPaths`, never hand-listed.
 
 ---
 
-<sub>content-uuid `8ff49c5d-6e09-8cc7-b77a-41c8508dc1d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99321c2a-bc99-8afc-8ff5-ac46d3f243cd` · `pnpm readme` · `pnpm computed:check`</sub>

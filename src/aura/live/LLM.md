@@ -4,7 +4,7 @@
 # live
 
 path `aura/live` · uuid `544e30b6-8262-8445-8c58-048cced2e033` · diamond `03b5d76e-16e3-8a01-92da-eb7375ec06aa`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/digit·@/horo·@/signal·@/uuid/matrix · exports const·function·interface · escapes —
 links `10/10` · folded `1` · bonds in `14` out `15`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the live aura is the animation — the analog field stepping through the hor
 
 ---
 
-<sub>content-uuid `d4950c00-10e9-8da4-8a60-aec62ccb3afe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f33587ac-a2f4-8f06-90b5-46b3ebc84b28` · `pnpm readme` · `pnpm computed:check`</sub>

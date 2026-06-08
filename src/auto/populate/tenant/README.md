@@ -2,7 +2,7 @@
 
 # tenant
 
-> atom `auto/populate/tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `auto/populate/tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
 - bond degree `42` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -38,7 +38,7 @@
 
 ## analytics
 
-- bond degree `42` · sealed `1` · horo `8`
+- bond degree `42` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
@@ -52,8 +52,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e7f2030e-7750-818c-a8de-92ccb33544c4` · framed by typography partition `auto` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f64d73a2-3292-8505-a15b-7b9765910c0a` · framed by typography partition `auto` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

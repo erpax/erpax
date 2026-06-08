@@ -3,15 +3,15 @@
 
 # train
 
-path `quantum/train` · uuid `08e6d577-34a3-8970-9b06-5e005f3ed873` · diamond `a9d9664c-da7c-8a48-9a72-3d9b32b80c78`
+path `quantum/train` · uuid `08e6d577-34a3-8970-9b06-5e005f3ed873` · diamond `8acb0b01-0fd8-8b14-a11d-af7db8561eb4`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/rodin · exports const · escapes —
-links `14/14` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → answer·comedy·edition·landmarks·sanitization·start·width·win · ← answer·comedy·edition·landmarks·sanitization·start·width·win
+links `14/14` · folded `1` · bonds in `35` out `37`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·allocation·aura·breath·classroom·command·competencies·db·decompression·derive·education·entropy·gap·generate·hooks·horo·law·law·llm·manufacturing·merge·merge·positions·reservation·rodin·routing·science·self·sequence·society·sparsity·station·train·training·trip·users·uuid · ← akashic·allocation·aura·breath·classroom·command·competencies·db·decompression·derive·education·entropy·gap·generate·hooks·horo·law·llm·manufacturing·merge·positions·reservation·rodin·routing·science·self·sequence·society·sparsity·station·train·training·trip·users·uuid
 analysis aura
 law infinite agents cannot exceed the device — only distinct content can. Content-addressing collapses N agents on the same work into one cached result (the merge bound), so device cost is the distinct work, never the agent count. Zero-entropy, no-erasure computation dissipates less (Landauer/Bennett); the 2/3 is the rodin working-ratio, symbolic of that purification, never a measured energy figure.
 
 ---
 
-<sub>content-uuid `928949d1-bb95-83b2-b94f-b01fdea8002b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45a602f0-315e-887d-93f5-1829a0726811` · `pnpm readme` · `pnpm computed:check`</sub>

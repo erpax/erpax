@@ -3,15 +3,15 @@
 
 # tpg
 
-path `oecd/tpg` · uuid `227f289c-ade6-8b9d-b7fe-c6a92045d4e1` · diamond `0d73f1c9-8f2f-8b24-bede-f172817e7376`
+path `oecd/tpg` · uuid `227f289c-ade6-8b9d-b7fe-c6a92045d4e1` · diamond `b676229d-1367-828e-8bdb-d6c327d1c67f`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports BepsTpFileType·OecdTpMethod·const · escapes —
-links `0/0` · folded `1` · bonds in `6` out `6`
+links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·encodes·landmarks·memories·stack·stat · ← cohort·encodes·landmarks·memories·stack·stat
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `ead044ed-57df-8229-be38-e2561e3982e3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e30810e-0842-8669-9df5-2da20b11944c` · `pnpm readme` · `pnpm computed:check`</sub>

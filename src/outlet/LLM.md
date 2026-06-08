@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports outlet · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·generically·landmarks·memories·stat · ← cohort·generically·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law outlet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d1229b40-eb54-8942-a286-7ab063936f64` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f05d998-5c19-85fd-9af0-87b8208b3660` · `pnpm readme` · `pnpm computed:check`</sub>

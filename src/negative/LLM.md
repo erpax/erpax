@@ -3,15 +3,15 @@
 
 # negative
 
-path `negative` · uuid `ed90061d-0475-88b6-9f31-0eeeccdf326d` · diamond `6f5f2cea-e5b6-8d41-8373-662c7d393727`
+path `negative` · uuid `ed90061d-0475-88b6-9f31-0eeeccdf326d` · diamond `b5e03e6a-ca89-8a19-a9d2-84a27b8f0f85`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·notes·sti · exports negative · escapes —
-links `5/5` · folded `1` · bonds in `13` out `16`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → analysis·article·ask·background·cohort·guarantee·landmarks·meal·memories·opening·optician·provider·repeat·retail·stat·unincorporated · ← ask·cohort·guarantee·landmarks·meal·memories·opening·optician·provider·repeat·retail·stat·unincorporated
+neighbors → collapse·law·merge·notes·sti · ← collapse·law·merge·notes·sti
 analysis —
 law negative is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4214b880-5f71-8cf0-857c-ed2d825c7399` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d6613b2-dbc9-898b-b3c8-ab1b9a98a41c` · `pnpm readme` · `pnpm computed:check`</sub>

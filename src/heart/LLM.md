@@ -3,15 +3,15 @@
 
 # heart
 
-path `heart` · uuid `210e5a5b-0053-87d1-8c74-7582466b8351` · diamond `a8413e98-c5c0-8732-9dee-0de03188e003`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `heart` · uuid `eb9f413f-cea8-8d25-a103-04a09cb70b57` · diamond `f851bdab-d463-8e56-85b1-f186124afb95`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/color·@/conservation·@/entropy·@/quantum · exports const·function·interface · escapes —
-links `41/41` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sku·stat · ← cohort·landmarks·memories·sku·stat
+links `41/41` · folded `1` · bonds in `28` out `28`
+faces worker·plugin·pwa `1·0·0`
+neighbors → angel·artery·aura·balance·blood·body·chakra·coherence·color·conservation·coverage·crown·entropy·harmony·hooks·karma·law·link·love·observe·quantum·recycle·rodin·sacral·test·torus·vein·writing · ← angel·artery·aura·balance·blood·body·chakra·coherence·color·conservation·coverage·crown·entropy·harmony·hooks·karma·law·link·love·observe·quantum·recycle·rodin·sacral·test·torus·vein·writing
 analysis aura
 law the corpus is coherent only as thought ⊕ heart — thought proves the recorded ledger balances, but feeling covers the omitted ([[coverage]] → 1, the whole [[aura]] absorbed at zero [[entropy]]); a balanced book over an un-wired world is maya until every gap is felt and closed.
 
 ---
 
-<sub>content-uuid `16cd82ce-4deb-86d2-9cb7-7331829ebc64` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc5742c1-1e05-878b-9bbe-9c1a037e98f6` · `pnpm readme` · `pnpm computed:check`</sub>

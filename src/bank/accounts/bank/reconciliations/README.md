@@ -2,7 +2,7 @@
 
 # reconciliations
 
-> atom `bank/accounts/bank/reconciliations` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `bank/accounts/bank/reconciliations` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `34` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -56,7 +56,7 @@
 
 ## analytics
 
-- bond degree `34` · sealed `1` · horo `1`
+- bond degree `34` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `20`
 
@@ -70,8 +70,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d83d718d-e44d-869c-b029-7506e382ebb6` · framed by typography partition `bank` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3d349a75-1826-84ce-b38c-e0315c706021` · framed by typography partition `bank` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `midwifery` · sub-root `6a178cc6-6d3a-8f11-a8c1-ed03729b6e87`
-- bond degree `26` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `6a178cc6-6d3a-8f11-a8c1-ed03729b6e87`
-- bonds in `11` · out `11`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `85a268e3-289d-8161-9c9c-a811db1c8cb0` · framed by typography partition `midwifery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b80ffb6f-ad1a-8168-bcda-eddd290b0366` · framed by typography partition `midwifery` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

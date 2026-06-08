@@ -3,15 +3,15 @@
 
 # nose
 
-path `nose` · uuid `492f358e-6763-8cae-b114-2e25d5b8bdb0` · diamond `4a67e6dc-9476-8958-a74c-787c45c95c76`
+path `nose` · uuid `492f358e-6763-8cae-b114-2e25d5b8bdb0` · diamond `6ab1bf0d-bc55-8a43-8549-c23508da25d0`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nose · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·unordered · ← cohort·landmarks·memories·stat·unordered
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nose is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a783bf5b-f952-8c5e-8f51-e82988382feb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `66d44df3-9e13-84c7-9b80-661ce349e4a3` · `pnpm readme` · `pnpm computed:check`</sub>

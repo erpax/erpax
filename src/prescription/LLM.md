@@ -3,15 +3,15 @@
 
 # prescription
 
-path `prescription` · uuid `ead2d4d8-80a8-8dc8-857a-8aafd255e1ba` · diamond `515269c0-2562-8bcc-ab25-a566ebb3562e`
+path `prescription` · uuid `ead2d4d8-80a8-8dc8-857a-8aafd255e1ba` · diamond `b1169338-ede1-88e5-9004-e0dbe2a8cc5a`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·drug·law·mail·merge·offers·status·sti · exports prescription · escapes —
-links `8/8` · folded `1` · bonds in `6` out `6`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·prescribing·pruning·stat · ← cohort·landmarks·memories·prescribing·pruning·stat
+neighbors → collapse·drug·law·mail·merge·offers·status·sti · ← collapse·drug·law·mail·merge·offers·status·sti
 analysis —
 law prescription is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8e573c50-cee9-89f0-b205-70076d85d425` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `95100281-eefd-829f-b8ba-daec1a337b9c` · `pnpm readme` · `pnpm computed:check`</sub>

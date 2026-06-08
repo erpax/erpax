@@ -3,15 +3,15 @@
 
 # retention
 
-path `retention` · uuid `50a85819-9bde-809f-a670-da6c3b37a418` · diamond `98bb0acc-456b-8d73-b020-643b4eeecb62`
+path `retention` · uuid `50a85819-9bde-809f-a670-da6c3b37a418` · diamond `3ae09869-47c6-8ead-adde-65b62b8e9e6c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports activities·campaign·churn·customers·law·segment · exports retention · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → civic·issn·landform·landmarks · ← civic·issn·landform·landmarks
+neighbors → activities·archival·campaign·choice·churn·customers·habit·law·pickup·segment · ← activities·archival·campaign·choice·churn·customers·habit·law·pickup·segment
 analysis —
 law retention is the discipline of keeping an existing customer — measured by at-risk indicators and acted on before churn, it is cheaper than acquisition and is the inverse of the [[churn]] it works to prevent.
 
 ---
 
-<sub>content-uuid `5a846fc9-46a7-884b-be1b-df86ea6edb5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80738273-de3b-8359-a1fd-f5ea25f106c7` · `pnpm readme` · `pnpm computed:check`</sub>

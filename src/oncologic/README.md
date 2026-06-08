@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `oncologic` · sub-root `592ff385-dc92-84ab-95b5-313591c1f75a`
-- bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `592ff385-dc92-84ab-95b5-313591c1f75a`
-- bonds in `7` · out `7`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `89ce6bc2-7c4c-87d7-8b0d-85405e412b98` · framed by typography partition `oncologic` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a3b7e18f-f023-8c88-ab65-d1a4fa313d47` · framed by typography partition `oncologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

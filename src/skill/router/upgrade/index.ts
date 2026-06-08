@@ -6,10 +6,10 @@
  * typography partition/bonds · standards · bindings · wikilink/matrix/backlink neighbors
  * into one YAML block so the whole corpus frontmatter graph is connected (no orphans).
  *
- *   pnpm exec tsx src/skill/router/upgrade.ts --sync    # materialize drift
- *   pnpm exec tsx src/skill/router/upgrade.ts --verify  # fail-closed drift gate
+ *   pnpm exec tsx src/skill/router/upgrade/index.ts --sync    # materialize drift
+ *   pnpm exec tsx src/skill/router/upgrade/index.ts --verify  # fail-closed drift gate
  *
- * @see ./build-index.mjs — ../readme — ../../typography — ../../diamond — ../../uuid/matrix
+ * @see ../build-index.mjs — ../../../readme — ../../../typography — ../../../diamond — ../../../uuid/matrix
  */
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -83,10 +83,14 @@ const existingDescription = (text: string): string | undefined => {
   return m
 }
 
-/** Derive the Use-when description from body prose when frontmatter lacks a trigger. */
+/** Derive the Use-when description from existing frontmatter or body prose. */
 export function deriveDescription(leaf: string, text: string): string {
   const prior = existingDescription(text)
-  if (prior && /^Use when/i.test(prior)) return prior
+  if (prior) {
+    const stripped = prior.replace(new RegExp(`^Use when reasoning about ${leaf} —\\s*`, 'i'), '').trim()
+    if (/^Use when/i.test(stripped)) return stripped
+    return `Use when reasoning about ${leaf} — ${stripped}`
+  }
   const body = stripFrontmatter(text)
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`[^`]*`/g, ' ')
@@ -300,11 +304,15 @@ export function connectFrontmatter(
   return draft
 }
 
-/** Connect every atom in the corpus — same tree ⇒ same patches. */
-export function connectCorpus(cwd: string = process.cwd()): Map<string, ConnectedFrontmatter> {
+/** Connect atoms — same tree ⇒ same patches. Optional scope limits the walk. */
+export function connectCorpus(
+  cwd: string = process.cwd(),
+  scope?: readonly string[],
+): Map<string, ConnectedFrontmatter> {
   const upgradeCtx = buildUpgradeContext(cwd)
   const out = new Map<string, ConnectedFrontmatter>()
-  for (const atomPath of listAtomPaths(cwd)) {
+  const paths = scope ? [...scope].sort() : listAtomPaths(cwd)
+  for (const atomPath of paths) {
     const text = readFileSync(join(cwd, SRC, atomPath, 'SKILL.md'), 'utf8')
     const fm = connectFrontmatter(atomPath, text, upgradeCtx)
     const upgraded = upgradeSkillText(text, fm)
@@ -316,10 +324,14 @@ export function connectCorpus(cwd: string = process.cwd()): Map<string, Connecte
 }
 
 /** Materialize upgraded frontmatter to disk; returns count written. */
-export function materializeSkillFrontmatter(cwd: string = process.cwd()): number {
-  const patches = connectCorpus(cwd)
+export function materializeSkillFrontmatter(
+  cwd: string = process.cwd(),
+  scope?: readonly string[],
+): number {
+  const patches = connectCorpus(cwd, scope)
   let n = 0
   for (const [atomPath, fm] of patches) {
+    if (scope && !scope.includes(atomPath)) continue
     const path = join(cwd, SRC, atomPath, 'SKILL.md')
     const text = readFileSync(path, 'utf8')
     const expected = upgradeSkillText(text, fm)
@@ -332,8 +344,11 @@ export function materializeSkillFrontmatter(cwd: string = process.cwd()): number
 }
 
 /** Drift gate — committed SKILL.md frontmatter ≡ computed upgrade. */
-export function verifySkillFrontmatter(cwd: string = process.cwd()): { ok: boolean; drift: string[] } {
-  const patches = connectCorpus(cwd)
+export function verifySkillFrontmatter(
+  cwd: string = process.cwd(),
+  scope?: readonly string[],
+): { ok: boolean; drift: string[] } {
+  const patches = connectCorpus(cwd, scope)
   const drift: string[] = []
   for (const [atomPath, fm] of patches) {
     const path = join(cwd, SRC, atomPath, 'SKILL.md')
@@ -344,23 +359,32 @@ export function verifySkillFrontmatter(cwd: string = process.cwd()): { ok: boole
   return { ok: drift.length === 0, drift }
 }
 
+const atomScope = (): readonly string[] | undefined => {
+  const i = process.argv.indexOf('--atom')
+  if (i < 0 || !process.argv[i + 1]) return undefined
+  return process.argv[i + 1]!.split(',').map((s) => s.trim()).filter(Boolean)
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const cwd = process.cwd()
   const verify = process.argv.includes('--verify')
   const sync = process.argv.includes('--sync')
+  const scope = atomScope()
   if (sync) {
-    const n = materializeSkillFrontmatter(cwd)
-    const patches = connectCorpus(cwd)
-    const g = buildFrontmatterGraph(patches)
-    const conn = graphConnectivity(g, new Set([...patches.keys()].map((p) => p.split('/').pop()!)))
+    const n = materializeSkillFrontmatter(cwd, scope)
     console.log(`skill:upgrade — materialized ${n} SKILL.md frontmatter patch(es)`)
-    console.log(
-      `  graph: ${conn.connected ? 'connected' : 'DISCONNECTED'} · components ${conn.components} · orphans ${conn.orphans.length}`,
-    )
+    if (!scope) {
+      const patches = connectCorpus(cwd)
+      const g = buildFrontmatterGraph(patches)
+      const conn = graphConnectivity(g, new Set([...patches.keys()].map((p) => p.split('/').pop()!)))
+      console.log(
+        `  graph: ${conn.connected ? 'connected' : 'DISCONNECTED'} · components ${conn.components} · orphans ${conn.orphans.length}`,
+      )
+    }
     process.exit(0)
   }
   if (verify) {
-    const { ok, drift } = verifySkillFrontmatter(cwd)
+    const { ok, drift } = verifySkillFrontmatter(cwd, scope)
     if (!ok) {
       console.error(`skill:upgrade verify FAIL — ${drift.length} drift(s)`)
       for (const d of drift.slice(0, 20)) console.error(`  ${d}`)

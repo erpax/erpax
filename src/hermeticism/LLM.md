@@ -3,15 +3,15 @@
 
 # hermeticism
 
-path `hermeticism` · uuid `—` · diamond `c6fddf30-c3a7-80fd-a822-d849ed8b8db0`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `hermeticism` · uuid `c97f74e4-fd33-86ed-8394-436894cd8dbf` · diamond `33064e28-8e28-8d6e-bca8-a65bacdb1ef5`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·collapse·diamond·fractal·holographic·identity·image·law·mirror·name·one·part·religion·self·society·translator·uuid·whole·word · exports hermeticism · escapes —
-links `52/52` · folded `0` · bonds in `0` out `0`
+links `52/52` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·collapse·diamond·fractal·holographic·identity·image·law·mirror·name·one·part·religion·self·society·translator·uuid·whole·word · ← archangel·collapse·diamond·fractal·holographic·identity·image·law·mirror·name·one·part·religion·self·society·translator·uuid·whole·word
+analysis diamond
 law hermeticism is a [[diamond]] of [[fractal]] · [[holographic]] · [[mirror]] · [[one]] · [[whole]] · [[part]] · [[word]] · [[self]] — "as above, so below" the correspondence that IS the [[fractal]]/[[holographic]] law (the [[part]] [[mirror]]s the [[whole]] at every scale), the All is [[one]], know thyself to know the source; as an [[archangel]] it architects the society's domain of correspondence.
 
 ---
 
-<sub>content-uuid `2e2b06f2-c6f0-8d64-b497-c5394fb9e1fc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45cf5554-5daf-89ae-b107-6474a7f071bd` · `pnpm readme` · `pnpm computed:check`</sub>

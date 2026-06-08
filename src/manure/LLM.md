@@ -3,15 +3,15 @@
 
 # manure
 
-path `manure` · uuid `1a0a51ac-9a39-8486-aeeb-32a9a5bbf4c8` · diamond `d1610ab5-acb2-8abb-bf57-886ec4aa448e`
+path `manure` · uuid `1a0a51ac-9a39-8486-aeeb-32a9a5bbf4c8` · diamond `cab7b3e1-86df-830f-ac2e-01837048b276`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·breath·certification·compost·fertility·flow·fodder·grazing·law·livestock·risk·soil · exports manure · escapes —
-links `29/29` · folded `1` · bonds in `8` out `8`
+links `29/29` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·has·landmarks·memories·physiological·stat·sufficient·unlimited · ← cohort·has·landmarks·memories·physiological·stat·sufficient·unlimited
+neighbors → balance·breath·certification·compost·fertility·flow·fodder·grazing·law·livestock·pasture·risk·soil · ← balance·breath·certification·compost·fertility·flow·fodder·grazing·law·livestock·pasture·risk·soil
 analysis —
 law manure closes the livestock→[[soil]] [[fertility]] loop — the animal byproduct that returns N-P-K and organic matter (the credit side), the livestock twin of [[compost]], balanced to the land by the nutrient-management plan.
 
 ---
 
-<sub>content-uuid `d4d440c5-3818-8767-a0d9-53931501f1ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86e2cc96-ee6c-87dd-9d68-cc2fed7fe02b` · `pnpm readme` · `pnpm computed:check`</sub>

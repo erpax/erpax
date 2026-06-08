@@ -3,15 +3,15 @@
 
 # lactose
 
-path `lactose` · uuid `13843951-16c6-856c-a5bf-dc759a1b2102` · diamond `5fcfbc38-67eb-8d8a-bcf0-3fee09932f5a`
+path `lactose` · uuid `13843951-16c6-856c-a5bf-dc759a1b2102` · diamond `52ad724b-fb51-869b-979d-50141217d8fb`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports lactose · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → available·comprised·keep·landmarks·production·request·subcellular · ← available·comprised·keep·landmarks·production·request·subcellular
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law lactose is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `83a279a0-0df5-80bc-be79-e1cb0bbb8ec5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16ed2ff4-7e54-8419-ba00-6ed3438812b1` · `pnpm readme` · `pnpm computed:check`</sub>

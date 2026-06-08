@@ -23,7 +23,7 @@
 
 - partition `bottleneck` · sub-root `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f`
 - bond degree `71` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `27023d23-c3b9-889a-9269-ca7445c96368` · framed by typography partition `bottleneck` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f41846bc-78d7-8a8d-b48e-f6642bdad013` · framed by typography partition `bottleneck` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

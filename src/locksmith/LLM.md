@@ -3,15 +3,15 @@
 
 # locksmith
 
-path `locksmith` · uuid `4fd752ee-5bc2-8639-a6bd-64a14d114b0a` · diamond `ea3b8a8d-48f4-8b61-af6b-6d9a05b6d46e`
+path `locksmith` · uuid `4fd752ee-5bc2-8639-a6bd-64a14d114b0a` · diamond `b70b2211-5e2b-8227-b3d6-9a70151c7799`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports locksmith · escapes —
-links `3/3` · folded `1` · bonds in `5` out `5`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → law·place·thing · ← law·place·thing
 analysis —
 law locksmith is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1e1a4913-8abf-8810-9f51-3eae9e0b1c61` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86777431-3681-894b-8e72-abbc8b383a80` · `pnpm readme` · `pnpm computed:check`</sub>

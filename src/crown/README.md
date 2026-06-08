@@ -25,7 +25,22 @@
 
 - partition `crown` · sub-root `48d919a0-451b-85fa-ae41-46431d357a08`
 - bond degree `12` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `note, colour and uuid computed from the position math, never hand-asserted` · banner
+- `note·colour·uuid computed from the position math, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `85490bba-2a46-8cd3-9963-27f97132899b` · framed by typography partition `crown` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `410b41fa-f476-8e6f-9029-86680d8c3b5b` · framed by typography partition `crown` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # prepend
 
-path `prepend` · uuid `a851db16-6865-83c8-9426-fa6b06e57f12` · diamond `802ac2dc-1953-8789-8bd4-0cb814fc3d1f`
+path `prepend` · uuid `a851db16-6865-83c8-9426-fa6b06e57f12` · diamond `09f19e83-69df-85b6-8033-c0a3be62c944`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports prepend · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·discover·incorporated·industry·landmarks·memories·preschool·sea·stat · ← cohort·discover·incorporated·industry·landmarks·memories·preschool·sea·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law prepend is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `10bcf0e1-2b38-8639-88f3-8411dac7fec4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc60ee68-0500-8e8d-bd62-c73816892040` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,28 @@
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
 - bond degree `122` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IFRS IAS-19 employee-benefits short-term` · banner
+- `ISO-19011:2018 audit-trail time-tracking-evidence` · banner
+- `ISO-4217:2015 currency-codes hourly-rate` · banner
+- `ISO-8601-1:2019 date-time work-date` · banner
+- `SOX §404 internal-controls payroll-evidence` · banner
+- `US-GAAP ASC-606 revenue-from-contracts-with-customers performance-obligation-progress` · banner
+- `US-GAAP ASC-710 compensation-general` · banner
+
+## analytics
+
+- bond degree `122` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `6fa79682-2999-8ba1-8e57-5b9abbc9a921` · framed by typography partition `employees` bonds `122` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ceb5cd1-512b-8cdc-b560-bc38573c740a` · framed by typography partition `employees` bonds `122` · `pnpm readme` · `pnpm readme:check`</sub>

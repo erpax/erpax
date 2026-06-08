@@ -3,15 +3,15 @@
 
 # parts
 
-path `parts` · uuid `89fc724d-a107-8db1-a9ba-1281313078cf` · diamond `03891d96-b162-872c-954c-f537a25cc3a5`
+path `parts` · uuid `89fc724d-a107-8db1-a9ba-1281313078cf` · diamond `9073d6fa-0d0f-89fb-b5ca-2670c9cce28e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports auto·collapse·law·merge·sti·store · exports parts · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·anchor·high·landmarks·list·memories·progression·symbol · ← akashic·anchor·high·landmarks·list·memories·progression·symbol
+neighbors → auto·collapse·law·merge·sti·store · ← auto·collapse·law·merge·sti·store
 analysis —
 law parts is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `93b0e5ef-3de0-8f45-bedf-20ab9b286469` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `430f8aec-58a7-8b97-b8ee-d57f6a2cd5e4` · `pnpm readme` · `pnpm computed:check`</sub>

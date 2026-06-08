@@ -3,15 +3,15 @@
 
 # research
 
-path `quantum/research` · uuid `f2a22870-40a9-8da9-9f5a-a9745e81f284` · diamond `f266a1c7-18a5-8e82-ad8e-eacff67c9704`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `quantum/research` · uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4` · diamond `23b96711-6a07-8bdd-80f5-f68c638ffef2`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/entry · exports const·function·interface · escapes —
-links `16/16` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·unspecified · ← cohort·landmarks·memories·stat·unspecified
-analysis agent·diamond·hallucination·purity
+links `16/16` · folded `1` · bonds in `61` out `76`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accept·access·account·accounting·agent·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·collapse·consultant·consulting·cost·cost·cross·design·development·drone·email·entanglement·entropy·entropy·entry·entry·expense·feedback·gate·harmony·history·identity·identity·interview·law·law·law·law·law·literature·localize·matrix·mcp·merge·merge·merge·oid·organization·plugins·profane·project·proof·proof·quantum·receipt·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint·zeropoint · ← accept·access·account·accounting·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·consultant·consulting·cost·cross·design·development·drone·email·entanglement·entropy·entry·expense·feedback·gate·harmony·history·identity·interview·law·literature·localize·matrix·mcp·merge·oid·organization·plugins·profane·project·proof·quantum·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint
+analysis agent
 law research is a billable expense, and its worth is the entropy it reduces. A run debits the resources it consumes (agents × tokens) and credits the disorder it closes; it is worthwhile only when it reduces more entropy than it costs.
 
 ---
 
-<sub>content-uuid `c250f087-e656-87bd-92e9-386509689f48` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20364a1b-aba8-86b0-b656-f3b469433bd1` · `pnpm readme` · `pnpm computed:check`</sub>

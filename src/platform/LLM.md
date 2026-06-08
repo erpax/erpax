@@ -3,15 +3,15 @@
 
 # platform
 
-path `platform` · uuid `45b3d167-ee20-87b0-bd66-8d70697e877f` · diamond `36a1b62a-2ee2-80eb-862b-70fe0c554373`
+path `platform` · uuid `45b3d167-ee20-87b0-bd66-8d70697e877f` · diamond `d17adfd1-19d5-8c80-acfc-10189e6cc2aa`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·arrival·collapse·departure·digital·enumeration·game·law·merge·runtime·sti·target · exports platform · escapes —
-links `12/12` · folded `1` · bonds in `29` out `29`
+links `12/12` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·all·binding·chat·cohort·colleagues·command·comment·conference·details·document·earned·founder·id·landmarks·maintainer·mcp·memories·office·parent·partial·plastic·policy·recorded·roadmap·seed·sell·sign·suspended · ← accounting·all·binding·chat·cohort·colleagues·command·comment·conference·details·document·earned·founder·id·landmarks·maintainer·mcp·memories·office·parent·partial·plastic·policy·recorded·roadmap·seed·sell·sign·suspended
+neighbors → action·arrival·collapse·departure·digital·enumeration·game·law·merge·plugin·runtime·sti·target · ← action·arrival·collapse·departure·digital·enumeration·game·law·merge·plugin·runtime·sti·target
 analysis —
 law platform is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `98f2702b-df88-813d-b4e2-b7e72d5353e6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab0675e9-beef-80d0-a1fb-329ceebf4a08` · `pnpm readme` · `pnpm computed:check`</sub>

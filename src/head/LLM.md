@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports head · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law head is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6d85c46d-a433-88e0-9eb9-e3347a6b6a12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae921850-fda1-8ff7-83c4-7fac05d8121b` · `pnpm readme` · `pnpm computed:check`</sub>

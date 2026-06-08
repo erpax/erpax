@@ -20,6 +20,8 @@ import type { Payload } from 'payload'
 import type { SupportedLocale } from '@/i18n'
 import type { Translator, SpecChainStep } from '@/spec/generator'
 import type { McpClient } from '@/agents/mcp'
+import type { Receipt } from '@/receipt'
+import type { ToolGrant } from '@/sandbox'
 
 export type AgentId =
   | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'
@@ -63,6 +65,16 @@ export interface EvidenceFrame {
 
 /** Severity classification for `escalate` effects (mirrors UxGap.severity). */
 export type GapSeverity = 'info' | 'minor' | 'major' | 'blocker' | 'critical'
+
+/** Law state threaded through AgentContext — receipt chain + depth + actor identity. */
+export interface AgentLawState {
+  readonly depth: number
+  readonly actor: string
+  readonly grant: ToolGrant
+  readonly receiptHead: { leafUuid: string; seq: number } | null
+  readonly untrustedPayload?: unknown
+  readonly onReceipt?: (receipt: Receipt) => void
+}
 
 /**
  * Discriminated union of every effect a DomainAgent can request. The
@@ -117,6 +129,11 @@ export interface AgentContext {
   readonly mcp:      McpClient
   /** Set when the context is dispatched as part of a chain step. */
   readonly chain?:   { id: string; step: SpecChainStep }
+  /**
+   * Law state for strict-apply gates — depth, grant, receipt chain, actor.
+   * When omitted, `defaultAgentLawState` applies at each gate (fail-closed).
+   */
+  readonly law?:     AgentLawState
 }
 
 /**

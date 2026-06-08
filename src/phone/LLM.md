@@ -3,15 +3,15 @@
 
 # phone
 
-path `phone` · uuid `240de62d-b4ed-856b-b341-eba5abdf10de` · diamond `8f5cb66d-168b-8921-a1e0-a811b40c5b56`
+path `phone` · uuid `240de62d-b4ed-856b-b341-eba5abdf10de` · diamond `129a69ee-7e2c-8ddc-9d51-ae27c86b11a5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·mobile·service·sti·store · exports phone · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·occurrence·stat · ← cohort·landmarks·memories·occurrence·stat
+neighbors → collapse·law·merge·mobile·service·sti·store · ← collapse·law·merge·mobile·service·sti·store
 analysis —
 law phone is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d79d73c7-39b2-8bdb-82cf-f08b8329c866` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b59e02e-a5da-8aa4-a62b-804b7cfa5603` · `pnpm readme` · `pnpm computed:check`</sub>

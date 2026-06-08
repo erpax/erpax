@@ -3,15 +3,15 @@
 
 # principles
 
-path `principles` · uuid `6eb2ed72-4e79-8095-a4ac-ae2082748253` · diamond `62d28ae6-0bdf-8916-97af-a57f81022ad0`
+path `principles` · uuid `6eb2ed72-4e79-8095-a4ac-ae2082748253` · diamond `1f0f5263-4a0b-8dbf-9e1c-3fe104a60961`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·publishing·sti · exports principles · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·biofield·cohort·invoices·landmarks·memories·stat · ← action·biofield·cohort·invoices·landmarks·memories·stat
+neighbors → collapse·law·merge·principle·publishing·sti · ← collapse·law·merge·principle·publishing·sti
 analysis —
 law principles is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ceae4444-7dbf-825c-80e8-ee056696d9e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12cfa550-ff40-843a-8a87-80abdb8975bd` · `pnpm readme` · `pnpm computed:check`</sub>

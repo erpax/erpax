@@ -3,15 +3,15 @@
 
 # permaculture
 
-path `permaculture` · uuid `2f784f5e-d5a2-842f-a6c0-e6ae1acab08a` · diamond `fa1ae17f-27f7-8eac-bc9c-c015ad484932`
+path `permaculture` · uuid `2f784f5e-d5a2-842f-a6c0-e6ae1acab08a` · diamond `103dfa76-4111-855a-a62d-59fd0c231200`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·breath·certification·covercrop·crop·fertility·fractal·irrigation·law·organic·rotation·soil·tillage·whole · exports permaculture · escapes —
-links `25/25` · folded `1` · bonds in `14` out `14`
+links `25/25` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·boys·connected·corruption·dropoff·entity·fertility·flight·getting·id·landmarks·memories·syllabus · ← accounting·balance·boys·connected·corruption·dropoff·entity·fertility·flight·getting·id·landmarks·memories·syllabus
+neighbors → agriculture·balance·breath·certification·covercrop·crop·fertility·fractal·irrigation·law·organic·regeneration·rotation·soil·tillage·whole · ← agriculture·balance·breath·certification·covercrop·crop·fertility·fractal·irrigation·law·organic·regeneration·rotation·soil·tillage·whole
 analysis —
 law design the farm as a closed-loop [[whole]] where the system's outputs feed its own inputs (no waste, [[balance]]d) — the agronomic twin of the [[breath]].
 
 ---
 
-<sub>content-uuid `a4fbac36-93bc-8bbe-93e4-3addcd6d590d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c0e710d-d2f2-8f99-8b12-24ba9a620ac6` · `pnpm readme` · `pnpm computed:check`</sub>

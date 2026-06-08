@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports pending · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law pending is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `128f60ea-7a32-8f3b-94ca-5248ae1039b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fac81eb0-3a8c-8868-ab02-afd51f713be5` · `pnpm readme` · `pnpm computed:check`</sub>

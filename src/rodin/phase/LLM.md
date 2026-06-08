@@ -3,15 +3,15 @@
 
 # phase
 
-path `rodin/phase` · uuid `dcc1c65d-9c37-8bbd-bc24-79a94b35b0d3` · diamond `dae8cd88-b305-85c6-9c2b-0edf72daf2a7`
+path `rodin/phase` · uuid `dcc1c65d-9c37-8bbd-bc24-79a94b35b0d3` · diamond `2a9b1640-48be-824b-ae75-4c581e5d0296`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports axis·breath·cmyk·coil·duality·flow·horo·notes·rodin·signal·versions · exports phase · escapes —
-links `18/18` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·stat · ← cohort·landmarks·memories·notice·stat
+links `18/18` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → axis·breath·cmyk·coil·duality·flow·horo·interference·notes·rodin·signal·versions · ← axis·breath·cmyk·coil·duality·flow·horo·interference·notes·rodin·signal·versions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a4546062-7108-815a-9a28-e00124565a84` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b978ccf7-86ba-8def-9bae-0ec0f1c8085b` · `pnpm readme` · `pnpm computed:check`</sub>

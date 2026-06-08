@@ -3,15 +3,15 @@
 
 # inseam
 
-path `inseam` · uuid `96198ea8-3d63-8b89-b769-1bee37d38720` · diamond `033b8db2-1197-8ca7-af4b-7217446cadca`
+path `inseam` · uuid `96198ea8-3d63-8b89-b769-1bee37d38720` · diamond `88e3c9ed-406f-8a70-9e14-74e16e3086ae`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports inseam · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat·unlimited · ← action·cohort·landmarks·memories·stat·unlimited
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law inseam is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ec2b751d-3997-8f33-a9fa-c212add7aa56` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0f2e9c8-b8cb-8401-aa3e-33dc2b5d881d` · `pnpm readme` · `pnpm computed:check`</sub>

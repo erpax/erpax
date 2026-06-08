@@ -3,15 +3,15 @@
 
 # node
 
-path `node` · uuid `4ec81ff2-6f34-8c25-9957-c8140d8e4905` · diamond `782263f8-cb9e-8bc5-9f3c-2e9d1a172cb6`
+path `node` · uuid `4ec81ff2-6f34-8c25-9957-c8140d8e4905` · diamond `972832b8-1d43-86e1-89d3-c5da9ce89e69`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·constraint·law·merge·quantity·sti·type · exports node · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·constraint·graph·law·merge·quantity·sti·type · ← collapse·constraint·graph·law·merge·quantity·sti·type
 analysis —
 law node is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7fa0e712-6c24-8c10-ae27-76e017f3b635` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e948685e-4f0b-83d2-9685-554f12b98675` · `pnpm readme` · `pnpm computed:check`</sub>

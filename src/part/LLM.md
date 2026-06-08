@@ -3,15 +3,15 @@
 
 # part
 
-path `part` · uuid `67dbd698-ceb3-82b9-9cef-28cbd53c4a9b` · diamond `e1f67e29-c8ff-83bb-94e2-5d541a985043`
+path `part` · uuid `67dbd698-ceb3-82b9-9cef-28cbd53c4a9b` · diamond `7d79cfca-8c64-8288-9759-436425f3491a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports accounting·collections·fields·identity·law·manufacturing·plugins·sequence·uuid·whole · exports part · escapes —
-links `11/11` · folded `1` · bonds in `6` out `6`
+links `11/11` · folded `1` · bonds in `54` out `54`
 faces worker·plugin·pwa `0·0·0`
-neighbors → auto·cohort·landmarks·memories·stat·statistic · ← auto·cohort·landmarks·memories·stat·statistic
+neighbors → accessory·accounting·animism·atom·bio·chat·chem·collapse·collections·decompression·diamond·domain·duality·element·entity·episode·fields·fractal·generate·has·herd·hermeticism·identity·invoice·law·lexical·manufacturing·memory·metatron·order·paganism·plugins·protestantism·reference·religion·reverse·sequence·series·share·shinto·skills·spare·sync·system·team·thought·torus·transaction·trinity·trip·tv·uuid·whole·wisdom · ← accessory·accounting·animism·atom·bio·chat·chem·collapse·collections·decompression·diamond·domain·duality·element·entity·episode·fields·fractal·generate·has·herd·hermeticism·identity·invoice·law·lexical·manufacturing·memory·metatron·order·paganism·plugins·protestantism·reference·religion·reverse·sequence·series·share·shinto·skills·spare·sync·system·team·thought·torus·transaction·trinity·trip·tv·uuid·whole·wisdom
 analysis —
 law a part is the universal member of a [[whole]] (field, entry-line, BOM component, plugin) — self-similar at every scale, carrying its own content-[[uuid]] so the whole's aura is the Merkle of its parts.
 
 ---
 
-<sub>content-uuid `3495b519-8b3b-888b-9d48-5193fec5e6a6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `988fb982-0b78-8f35-9090-d2d4fe12fdbe` · `pnpm readme` · `pnpm computed:check`</sub>

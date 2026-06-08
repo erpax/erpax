@@ -4,7 +4,7 @@
 # tool
 
 path `agents/mcp/tool` · uuid `4f4610e2-8769-816b-8544-8f265cc4a990` · diamond `bd0685d1-c641-85d6-98c5-52262a68e0b1`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports assertAdminOnTenant·assertTenantMatch·buildBatchTools·buildChainTools·buildCloudflareTools·buildConsistencyTools·buildErrorTools·buildEventsTools·buildFormatTools·buildGovernanceTools·buildIntegrityExtensionTools·buildKvTools·buildSecurityTools·buildShareTools·buildVersionsTools·type·wrapToolsWithTenantGuard · escapes —
 links `9/9` · folded `1` · bonds in `5` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law each MCP area is a self-contained builder exporting one buildXxxTools factor
 
 ---
 
-<sub>content-uuid `36f74b68-87f6-8ec5-865e-38054f4fadfa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a00d32b9-b85a-8b54-a124-e7f87dad0aba` · `pnpm readme` · `pnpm computed:check`</sub>

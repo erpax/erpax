@@ -3,15 +3,15 @@
 
 # released
 
-path `released` · uuid `79ef5067-96ab-8a93-9a94-a24232e40616` · diamond `493d9a17-d5fc-81c1-9c9d-621499ba82ea`
+path `released` · uuid `79ef5067-96ab-8a93-9a94-a24232e40616` · diamond `a0d42b34-7f94-8898-ae3d-e2d17a95e4aa`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·sti · exports released · escapes —
-links `5/5` · folded `1` · bonds in `13` out `13`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·analog·atom·aura·collide·complication·dietary·idempotency·integrity·landmarks·list·physical·ui · ← 3986·analog·atom·aura·collide·complication·dietary·idempotency·integrity·landmarks·list·physical·ui
+neighbors → collapse·event·law·merge·sti · ← collapse·event·law·merge·sti
 analysis —
 law released is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `47340a8a-9ba9-8f5b-be07-ff7e43a00ab8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1220eb0a-1c70-8eb5-ba2f-1800bd2d7e3a` · `pnpm readme` · `pnpm computed:check`</sub>

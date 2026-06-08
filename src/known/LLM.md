@@ -3,15 +3,15 @@
 
 # known
 
-path `known` · uuid `79addb4d-f29b-82e9-8194-7c86d5e98f82` · diamond `8b282c45-0fe9-82ce-9298-e55fc6fc7289`
+path `known` · uuid `79addb4d-f29b-82e9-8194-7c86d5e98f82` · diamond `e4089828-2955-8b94-8310-44bbc2baf6bb`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·damages·law·merge·sti·vehicle · exports known · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·damages·law·merge·sti·vehicle · ← collapse·damages·law·merge·sti·vehicle
 analysis —
 law known is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9c91da89-cf5c-8120-9aab-d4efa5206d96` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a689f7c8-4177-89d1-a907-891085dfc7e8` · `pnpm readme` · `pnpm computed:check`</sub>

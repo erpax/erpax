@@ -3,15 +3,15 @@
 
 # maybe
 
-path `maybe` · uuid `c3c16bda-96de-87e2-91c1-8e180fe0c2b4` · diamond `ee586940-33d5-8689-83d3-b981f519f5be`
+path `maybe` · uuid `c3c16bda-96de-87e2-91c1-8e180fe0c2b4` · diamond `01a21421-a995-82f4-a385-c7ca5f30fa35`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports maybe · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·declarations·landmarks·memories·note·pasture·stat·values · ← cohort·declarations·landmarks·memories·note·pasture·stat·values
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law maybe is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ec80022b-471b-85ff-8d18-0a625110b070` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `88455e04-1970-821d-9b67-578327d9e8e9` · `pnpm readme` · `pnpm computed:check`</sub>

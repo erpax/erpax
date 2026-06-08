@@ -3,15 +3,15 @@
 
 # optometric
 
-path `optometric` · uuid `993258a5-d52d-8b88-89b1-51525018da32` · diamond `559b1b71-61e9-820e-89c6-8f3b3d974f47`
+path `optometric` · uuid `993258a5-d52d-8b88-89b1-51525018da32` · diamond `0de8165c-6086-82db-acd9-234d5071b0b8`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports optometric · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → adult·cohort·entropy·landmarks·memories·stat · ← adult·cohort·entropy·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law optometric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `55d3c6f9-07bc-8c9a-b944-809578753ad8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d5bc0f3-6ba5-8c77-8426-9933c2b508cd` · `pnpm readme` · `pnpm computed:check`</sub>

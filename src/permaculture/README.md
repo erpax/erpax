@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `permaculture` · sub-root `2f784f5e-d5a2-842f-a6c0-e6ae1acab08a`
-- bond degree `45` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `49` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `2f784f5e-d5a2-842f-a6c0-e6ae1acab08a`
-- bonds in `14` · out `14`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`0`·`0`
 - links `25` / `25`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `90858804-2658-8e2e-aae7-c2c05eb9239d` · framed by typography partition `permaculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8412591a-9da0-8722-aef9-f2b1210690c1` · framed by typography partition `permaculture` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

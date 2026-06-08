@@ -3,15 +3,15 @@
 
 # plus
 
-path `plus` · uuid `8b4d5df7-e17e-81e5-932e-a3310f41016a` · diamond `a5d0baaa-f566-8bf3-bbdb-91d18fa1a84b`
+path `plus` · uuid `8b4d5df7-e17e-81e5-932e-a3310f41016a` · diamond `fea0f0c6-37da-81e8-b8d9-c44e3054f297`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·ones·sti·user · exports plus · escapes —
-links `6/6` · folded `1` · bonds in `12` out `12`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·apiculture·crisis·donate·hardcover·landmarks·masthead·pickup·seat·test·travel·worth · ← agriculture·apiculture·crisis·donate·hardcover·landmarks·masthead·pickup·seat·test·travel·worth
+neighbors → collapse·law·merge·ones·sti·user · ← collapse·law·merge·ones·sti·user
 analysis —
 law plus is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b1248ef2-56f2-88da-a1d2-57b9649ce11c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c606e51a-495a-8e9e-b855-ec55059f6b8d` · `pnpm readme` · `pnpm computed:check`</sub>

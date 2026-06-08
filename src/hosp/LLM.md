@@ -3,15 +3,15 @@
 
 # hosp
 
-path `hosp` · uuid `f8feff88-0281-863e-9683-91dffd9b0018` · diamond `d9d7c6b2-8777-807c-8dee-dd02c1ed7be1`
+path `hosp` · uuid `f8feff88-0281-863e-9683-91dffd9b0018` · diamond `d0574a83-f13a-8ffc-8098-a6d7b00fa644`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·law·merge·num·pats·sti · exports hosp · escapes —
-links `7/7` · folded `1` · bonds in `9` out `9`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → available·cohort·landmarks·memories·oncologic·source·spa·stat·western · ← available·cohort·landmarks·memories·oncologic·source·spa·stat·western
+neighbors → collapse·cvd·law·merge·num·pats·sti · ← collapse·cvd·law·merge·num·pats·sti
 analysis —
 law hosp is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a51e5776-e580-8301-8595-937fdf3c2b61` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `64eb4eaf-dce4-8e54-89f4-b9aef87a9031` · `pnpm readme` · `pnpm computed:check`</sub>

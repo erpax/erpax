@@ -3,15 +3,15 @@
 
 # recommended
 
-path `recommended` · uuid `b3c96078-6a9e-8035-8e26-8341b8b08c54` · diamond `7c8e1afd-1db4-8a59-9f35-dd488beb1637`
+path `recommended` · uuid `b3c96078-6a9e-8035-8e26-8341b8b08c54` · diamond `2735650c-0ea0-833b-bee7-f3938500b943`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·dose·intake·law·merge·schedule·sti · exports recommended · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·dose·intake·law·merge·schedule·sti · ← collapse·dose·intake·law·merge·schedule·sti
 analysis —
 law recommended is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0709e8d5-874c-8845-a330-2d07dd3ca36d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfd5900d-12f1-8bfd-8093-18a82b2aacaa` · `pnpm readme` · `pnpm computed:check`</sub>

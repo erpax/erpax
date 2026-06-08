@@ -25,7 +25,47 @@
 
 - partition `csrd` · sub-root `40c2bb44-c647-8885-bfb2-0098df4e897d`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU CSRD Directive 2022/2464` · banner
+- `EU EFRAG ESRS-XBRL taxonomy` · banner
+- `EU ESRS 1 General Requirements` · banner
+- `EU ESRS 2 General Disclosures` · banner
+- `EU SFDR 2019/2088 sustainable-finance` · banner
+- `EU Taxonomy Regulation 2020/852` · banner
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-CSRD` · catalogue
+- `EU-ESRS` · catalogue
+- `GHG-Protocol` · catalogue
+- `IFRS S1 general-sustainability-disclosure` · banner
+- `IFRS S2 climate-disclosures` · banner
+- `ISAE 3000 limited-assurance (rises to reasonable-assurance under CSRD by 2028)` · banner
+- `ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)` · banner
+- `ISO-14064-1` · catalogue
+- `OECD GRI Standards` · banner
+- `XBRL` · catalogue
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `27`
 
 ## identity
 
@@ -41,4 +81,4 @@
 
 ---
 
-<sub>content-uuid `1f2c6a9b-4ee9-8978-aec3-ae2d38c08651` · framed by typography partition `csrd` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6c02ac9-93f5-82d1-9cae-94753b461b8e` · framed by typography partition `csrd` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

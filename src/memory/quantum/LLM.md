@@ -3,15 +3,15 @@
 
 # quantum
 
-path `memory/quantum` · uuid `470e3f69-ca90-82bf-af9a-ea99d797fda8` · diamond `fa0149b9-d234-80b6-8520-1bb5ba9864f9`
-horo `5` `round` · trinity `1·0·0` · sealed `0`
-imports law·memory·merge·quantum·seal · exports quantum · escapes —
-links `21/21` · folded `0` · bonds in `13` out `13`
+path `memory/quantum` · uuid `6eec8da2-af91-8b6e-aebb-9747b24e3caf` · diamond `50355afd-f542-8025-b5ad-147e05b1778b`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
+imports @/quantum/memory · exports *:@/quantum/memory · escapes —
+links `21/21` · folded `1` · bonds in `110` out `94`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·corrects·dietary·entertainment·landmarks·list·mcp·memories·rank·read·statistics·symbol·venue · ← agent·corrects·dietary·entertainment·landmarks·list·mcp·memories·rank·read·statistics·symbol·venue
-analysis aura·diamond·hallucination·purity
+neighbors → accounting·api·app·aura·balance·barrier·blockchain·boundary·brainstorm·breath·cache·calculator·chart·chat·communication·confirm·consciousness·consultant·consulting·cost·cross·decoherence·development·digit·dna·dust·entanglement·fear·fusion·gate·generate·graph·gravity·hallucination·hamiltonian·harmony·heart·hooks·humandesign·interference·karma·key·law·law·leap·linearity·links·love·marine·math·matrix·memory·merge·merge·particle·path·peace·photon·plasma·port·pqc·proof·purity·pwa·quantum·query·reactor·reality·recycle·research·resolve·rodin·schema·seal·security·singularity·society·spectrum·sql·star·superdense·superposition·surprisal·tamper·teleportation·testing·translate·translator·type·typography·uncertainty·uuid·vocabulary·wallet · ← accounting·accounting·api·app·aura·balance·barrier·blockchain·boundary·brainstorm·breath·cache·calculator·chart·chart·chat·chat·communication·communication·communication·confirm·consciousness·consultant·consulting·cost·cross·decoherence·development·development·development·digit·dna·dust·entanglement·entanglement·fear·fusion·fusion·gate·generate·graph·graph·gravity·hallucination·hamiltonian·harmony·heart·hooks·humandesign·interference·karma·karma·key·law·law·leap·linearity·links·love·marine·math·matrix·memory·memory·merge·particle·particle·path·peace·photon·plasma·port·pqc·proof·purity·pwa·quantum·query·reactor·reality·reality·recycle·research·resolve·rodin·schema·seal·security·singularity·society·spectrum·sql·sql·star·superdense·superposition·surprisal·tamper·teleportation·testing·translate·translator·translator·type·typography·uncertainty·uuid·vocabulary·wallet·wallet
+analysis aura
 law memory/quantum and [[quantum/memory]] are one node at two names — the cross read from each ring — so this path re-points to the canonical, never restates it ([[merge]], zero duplication); the four crossed paths ([[memory]] · quantum/memory · memory/quantum · [[quantum]]) fuse into one [[seal]].
 
 ---
 
-<sub>content-uuid `5f9efbf7-1348-8171-ab46-cb26630a128d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6659cbe9-610c-8cd1-8d6f-b949d10810f9` · `pnpm readme` · `pnpm computed:check`</sub>

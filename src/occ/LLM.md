@@ -3,15 +3,15 @@
 
 # occ
 
-path `occ` · uuid `8d2f33d3-de67-8ee1-90d5-3b51c615cc42` · diamond `ac5f68e2-0e4b-8908-ad72-90648193893e`
+path `occ` · uuid `8d2f33d3-de67-8ee1-90d5-3b51c615cc42` · diamond `acf29734-07fc-8630-a9c5-994c65cf0f76`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports beds·collapse·cvd·icu·law·merge·num·sti · exports occ · escapes —
-links `8/8` · folded `1` · bonds in `0` out `0`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → beds·collapse·cvd·icu·law·merge·num·sti · ← beds·collapse·cvd·icu·law·merge·num·sti
 analysis —
 law occ is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `86a3c979-102f-81b0-a6b0-45c02eee086c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `03f4c615-9d52-8826-8635-b12d2b25010a` · `pnpm readme` · `pnpm computed:check`</sub>

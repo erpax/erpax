@@ -2,7 +2,7 @@
 
 # bank
 
-> atom `bank` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `bank` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,7 +23,7 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `32` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -57,7 +57,7 @@
 
 ## analytics
 
-- bond degree `32` · sealed `1` · horo `2`
+- bond degree `32` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `23`
 
@@ -71,8 +71,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2bde0eba-393d-8473-95b0-6990f67c88c9` · framed by typography partition `bank` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2ae3c205-80d0-8c1f-b868-836a17ac5478` · framed by typography partition `bank` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # landmark
 
-path `landmark` · uuid `263cd5bd-a45b-89ae-b32d-f2cc07bb68b1` · diamond `ceb7213f-5136-86f3-bd2f-f540a535e1e7`
+path `landmark` · uuid `263cd5bd-a45b-89ae-b32d-f2cc07bb68b1` · diamond `6bba1a6e-be27-83b5-90d3-6a5cdd55d26c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·landmarks·law·location · exports landmark · escapes —
-links `8/8` · folded `1` · bonds in `6` out `6`
+links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·classroom·cohort·landmarks·memories·stat · ← addressed·classroom·cohort·landmarks·memories·stat
+neighbors → balance·landmarks·law·location · ← balance·landmarks·law·location
 analysis —
 law landmark is the singular model of one notable place used as a point of reference; the plural store is its collection ([[balance]]: every collection has its model).
 
 ---
 
-<sub>content-uuid `afc4fb5a-3717-8950-94fe-5c60e69cbdc4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `18567a28-e293-82fc-b097-aa35faf4ed63` · `pnpm readme` · `pnpm computed:check`</sub>

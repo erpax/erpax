@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports mutual · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law mutual is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ed57ec3a-bec4-81ef-b890-1809606e0dfd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0293e69f-ca53-86f9-8115-ecc848779fb4` · `pnpm readme` · `pnpm computed:check`</sub>

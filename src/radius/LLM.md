@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports radius · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·urologic · ← cohort·landmarks·memories·stat·urologic
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law radius is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e76f3c86-d478-801b-9e6b-1d87f327040c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5d98495d-e6eb-89c5-9d85-a47ff99543de` · `pnpm readme` · `pnpm computed:check`</sub>

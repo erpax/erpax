@@ -3,15 +3,15 @@
 
 # made
 
-path `made` · uuid `88b6a1ce-0781-84d3-aaa6-857a225de37f` · diamond `7699e552-3000-8efd-af1e-19fe456e6a0e`
+path `made` · uuid `88b6a1ce-0781-84d3-aaa6-857a225de37f` · diamond `a263ee0d-c850-8c76-bb43-68659b6af5b8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports made · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·landmarks·literary·memories·monetary·stat · ← amount·cohort·landmarks·literary·memories·monetary·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law made is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `504ceea2-3242-8d6b-aeed-dd0ed24ca274` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c17014c8-748a-8342-acd7-81de7418ee0a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # night
 
-path `night` · uuid `6780b825-7af9-84a5-9fbd-4bcabbcabd6b` · diamond `ec39bce7-7bf5-8bed-b532-6e3e73f92ea6`
+path `night` · uuid `6780b825-7af9-84a5-9fbd-4bcabbcabd6b` · diamond `77bb1ee0-9bda-813e-a668-4d79c8f42aaa`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports club·collapse·law·merge·sti · exports night · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·consortium·grade·landmarks·memories·qapage·sanitization·stat · ← cohort·consortium·grade·landmarks·memories·qapage·sanitization·stat
+neighbors → club·collapse·law·merge·sti · ← club·collapse·law·merge·sti
 analysis —
 law night is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e986675-2c00-80ea-a3ec-882829fac1cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3447f2d6-1d19-882d-87e0-d08bfc146b92` · `pnpm readme` · `pnpm computed:check`</sub>

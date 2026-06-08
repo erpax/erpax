@@ -3,15 +3,15 @@
 
 # model
 
-path `model` · uuid `a63d5c10-2ca7-848a-acdb-585de23db45a` · diamond `214739f2-e6b1-87f7-8552-b8317704eba7`
+path `model` · uuid `a63d5c10-2ca7-848a-acdb-585de23db45a` · diamond `fdb34c63-3d12-8202-989d-f9295b309187`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports date·law·product·programming·vehicle · exports model · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·distance·governmental·landmarks·memories·stat · ← amount·cohort·distance·governmental·landmarks·memories·stat
+neighbors → balance·dashboard·date·law·product·programming·translate·vehicle · ← balance·dashboard·date·law·product·programming·translate·vehicle
 analysis —
 law model is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e219a1b5-4b9f-8de4-bcb9-c85ef7b42a8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0f75dcca-51cf-84ca-97c2-39812b2f6ae5` · `pnpm readme` · `pnpm computed:check`</sub>

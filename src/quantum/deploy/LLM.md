@@ -3,15 +3,15 @@
 
 # deploy
 
-path `quantum/deploy` · uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c` · diamond `dbe28a6c-c63d-8db2-8be9-3b300ba52df0`
+path `quantum/deploy` · uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c` · diamond `33a0ce47-e634-8a1b-85d7-2455d6bda375`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports anchor·bindings·confirm·database·deploy·finality·gate·law·measurement·migrate·payload·proof·quantum·reality·snapshot·versions·worker · exports deploy · escapes —
-links `27/27` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `27/27` · folded `1` · bonds in `31` out `35`
+faces worker·plugin·pwa `1·0·0`
+neighbors → anchor·backup·bindings·bindings·command·config·confirm·database·database·deploy·dev·finality·fs·gate·gate·harden·harmony·law·law·mcp·measurement·migrate·observability·optimize·payload·proof·reality·reality·rodin·secret·snapshot·stack·upload·versions·worker · ← anchor·backup·bindings·bindings·command·config·confirm·database·deploy·dev·finality·fs·gate·harden·harmony·law·mcp·measurement·migrate·observability·optimize·payload·proof·reality·rodin·secret·snapshot·stack·upload·versions·worker
 analysis —
 law only a gate-green tree may collapse into reality — deployment is ordered (gate → migrate → build → push) and shipping an unverified tree forges reality, so the gate is the precondition of the release. The release is finality one way: the live world is never mutated in place; recovery is re-collapsing a prior immutable [[snapshot]], so every running state is one a gate once let through.
 
 ---
 
-<sub>content-uuid `c9655b70-7aca-899d-8d40-ed4dc8e46793` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cbed8c1c-b5a6-8d46-96cc-d09affcb1788` · `pnpm readme` · `pnpm computed:check`</sub>

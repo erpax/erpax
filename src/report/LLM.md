@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports diversity·law·number·staffing · exports report · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·positions·psychological · ← balance·landmarks·positions·psychological
+neighbors → diversity·law·number·staffing · ← diversity·law·number·staffing
 analysis —
 law report is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4fa5eab3-ae32-80e1-ae80-4d59cdd57a36` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ccbcde44-3578-81d1-b230-53a6929093f1` · `pnpm readme` · `pnpm computed:check`</sub>

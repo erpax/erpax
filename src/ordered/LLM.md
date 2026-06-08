@@ -3,15 +3,15 @@
 
 # ordered
 
-path `ordered` · uuid `2692e2cc-b116-8643-8639-f61cb67dc1b2` · diamond `e2c5a3c5-9b9b-8f9b-a3cd-d5ae1cd0ca02`
+path `ordered` · uuid `2692e2cc-b116-8643-8639-f61cb67dc1b2` · diamond `35eb2d36-551b-8e06-b804-c6e4b346fd14`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·item·law·merge·sti · exports ordered · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contains·dermatologic·import·landmarks·meal·memories·stat · ← cohort·contains·dermatologic·import·landmarks·meal·memories·stat
+neighbors → collapse·item·law·merge·sti · ← collapse·item·law·merge·sti
 analysis —
 law ordered is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2bae8f1e-e316-8dd0-b2e4-38af2c1e9edf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a970ae44-bc3f-8c0b-a95c-1a267f319070` · `pnpm readme` · `pnpm computed:check`</sub>

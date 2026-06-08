@@ -3,15 +3,15 @@
 
 # modulation
 
-path `modulation` · uuid `4bfbcb00-1dcc-8510-894d-102003c3d9cc` · diamond `80bf91ab-46e9-8d73-8f72-cedfc7814eff`
+path `modulation` · uuid `4bfbcb00-1dcc-8510-894d-102003c3d9cc` · diamond `cc3332eb-f2d1-80cf-946e-a8171c4f8d57`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports broadcast·collapse·law·merge·signal·sti · exports modulation · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dated·inventories·landmarks · ← dated·inventories·landmarks
+neighbors → broadcast·collapse·law·merge·signal·sti · ← broadcast·collapse·law·merge·signal·sti
 analysis —
 law modulation encodes information onto a carrier by varying one of its properties — the carrier itself conveys nothing until modulated, and the scheme that imposes the variation must match the one that recovers it.
 
 ---
 
-<sub>content-uuid `c397d1df-b29f-86e8-914f-ec6530dd437b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ed882e4-099c-8d15-9e27-56c50eaf82e0` · `pnpm readme` · `pnpm computed:check`</sub>

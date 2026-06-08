@@ -3,15 +3,15 @@
 
 # replication
 
-path `replication` · uuid `4074498d-f505-8b9a-8b72-9d953579cf74` · diamond `d806d670-46ec-83b3-97ec-5ddc71e51c6a`
+path `replication` · uuid `4074498d-f505-8b9a-8b72-9d953579cf74` · diamond `ccda4670-8e2f-8edf-8970-32c6e8dadb63`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports consistency·database·federation·identity·law·merge · exports replication · escapes —
-links `7/7` · folded `1` · bonds in `17` out `17`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessibility·action·advance·clause·cohort·element·harden·landmarks·literature·memories·pharmacology·prefix·resources·self·stat·therapeutic·western · ← accessibility·action·advance·clause·cohort·element·harden·landmarks·literature·memories·pharmacology·prefix·resources·self·stat·therapeutic·western
+neighbors → cloning·consistency·cost·database·federation·identity·law·merge · ← cloning·consistency·cost·database·federation·identity·law·merge
 analysis —
 law replication keeps the same content-addressed data in multiple places (primary→replica) so every copy converges on one [[identity]] ([[merge]]), with lag the only divergence to bound.
 
 ---
 
-<sub>content-uuid `fe476269-8506-8870-a74d-78d731ba8569` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1275e247-e5e1-8782-a8d8-a46590019efc` · `pnpm readme` · `pnpm computed:check`</sub>

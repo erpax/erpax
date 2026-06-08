@@ -3,15 +3,15 @@
 
 # included
 
-path `included` · uuid `f76d0a53-3068-8799-baa1-c46053972652` · diamond `acf4ee33-dca9-8b06-ba0e-b786df3c0aae`
+path `included` · uuid `f76d0a53-3068-8799-baa1-c46053972652` · diamond `62fb9cdc-063c-8270-b7e9-a53437c0b595`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports added·catalog·collapse·composition·data·factor·health·insurance·law·merge·plan·risk·sti·tax·value · exports included · escapes —
-links `15/15` · folded `1` · bonds in `5` out `5`
+links `15/15` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·reverse·stat · ← cohort·landmarks·memories·reverse·stat
+neighbors → added·catalog·collapse·composition·data·factor·health·insurance·law·merge·plan·risk·sti·tax·value · ← added·catalog·collapse·composition·data·factor·health·insurance·law·merge·plan·risk·sti·tax·value
 analysis —
 law included is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1a693ecd-6cce-8fcd-ba47-572628489867` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `08530392-a1a9-8137-b03b-a76c4f30bcb7` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # change
 
 path `audit/trail/after/change` · uuid `21431e57-6817-8be0-ac40-c56c7e91f317` · diamond `a448d840-278d-8b8a-a737-2e3f5c293c2e`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/iso/19011 · exports function · escapes —
 links `4/4` · folded `1` · bonds in `5` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every write emits a canonical audit entry on two channels — a streaming lo
 
 ---
 
-<sub>content-uuid `4b5b31fa-88e7-8cad-82ec-e0dae0955331` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d8131bfa-23a7-8ff6-b568-0ae24d80cd1c` · `pnpm readme` · `pnpm computed:check`</sub>

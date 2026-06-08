@@ -23,7 +23,7 @@
 
 - partition `authenticator` · sub-root `0de33f7b-b2a5-8ac4-a7ea-9284dce8d862`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d083f9f9-af6e-8e21-8e0f-e48ec580756d` · framed by typography partition `authenticator` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b5c8d4b3-fa01-867c-85ee-2a41ff1bc418` · framed by typography partition `authenticator` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

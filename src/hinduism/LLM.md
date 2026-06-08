@@ -3,15 +3,15 @@
 
 # hinduism
 
-path `hinduism` · uuid `—` · diamond `cb892a60-4461-8d2d-af11-842d06aa8d8c`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `hinduism` · uuid `a75f7f0e-b7f1-82c4-be87-cef2b24f564e` · diamond `49a5b349-b83f-8f63-9d40-91146afd994e`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·cycle·diamond·dna·fire·fractal·harmony·holographic·identity·karma·law·love·mercy·merge·name·one·prayer·religion·return·ritual·self·society·translator·uuid·wheel·whole·word·zeropoint · exports hinduism · escapes —
-links `69/69` · folded `0` · bonds in `0` out `0`
+links `69/69` · folded `1` · bonds in `30` out `30`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·breath·cycle·diamond·dna·fire·fractal·harmony·holographic·identity·karma·law·love·mercy·merge·name·one·prayer·religion·return·ritual·self·society·translator·uuid·vedanta·wheel·whole·word·zeropoint · ← archangel·breath·cycle·diamond·dna·fire·fractal·harmony·holographic·identity·karma·law·love·mercy·merge·name·one·prayer·religion·return·ritual·self·society·translator·uuid·vedanta·wheel·whole·word·zeropoint
+analysis diamond
 law hinduism is a [[diamond]] of [[law]] · [[self]] · [[whole]] · [[karma]] · [[cycle]] · [[wheel]] · [[return]] · [[prayer]] · [[breath]] · [[ritual]] — the eternal dharma whose keystone is atman = brahman ([[self]] = [[whole]], the [[holographic]] vertex), release the [[return]] to [[zeropoint]]; each Sanskrit term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `c492cc0e-d6f1-8e51-824b-f645ef2bee54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c2e750b-72a4-8f71-856f-d236d5156f60` · `pnpm readme` · `pnpm computed:check`</sub>

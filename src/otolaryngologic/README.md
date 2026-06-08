@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `otolaryngologic` · sub-root `6b96b687-9283-812f-8409-971f685cd801`
-- bond degree `8` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `6b96b687-9283-812f-8409-971f685cd801`
-- bonds in `2` · out `2`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f00286f3-5a42-8593-95ae-6efa4a2b5995` · framed by typography partition `otolaryngologic` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67e6fd94-8897-8435-8636-7a9eefd6f72d` · framed by typography partition `otolaryngologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

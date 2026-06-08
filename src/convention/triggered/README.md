@@ -25,7 +25,7 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `25` · analysis neighbors `aura`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `3524b31c-6d18-87ff-ba67-3a286840fa68` · framed by typography partition `convention` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3e771105-d884-837f-a247-8bf874d13e77` · framed by typography partition `convention` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

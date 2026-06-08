@@ -3,15 +3,15 @@
 
 # hooks
 
-path `hooks` · uuid `3a658e69-ed7c-86e0-b18b-59db2375967d` · diamond `9bfd4426-c3b0-8b3a-be2a-12ad3421975a`
-horo `6` `6` · trinity `1·1·1` · sealed `0`
+path `hooks` · uuid `742779e4-53e2-8c02-b0ce-00cd526850d0` · diamond `15eb2ad1-4d1d-8176-a81b-c35d0bd28c41`
+horo `3` `3` · trinity `1·1·1` · sealed `0`
 imports @/enforce/posting/immutability·@/generate/reversing/entry·@/update/fiscal/calendar/on/period/change·@/validate/audit/compliance/reporting·@/validate/closing/period·@/validate/consolidation/readiness·@/validate/double/entry·@/validate/fiscal/period/posting·@/validate/multi/currency/closing·@/validate/post/close/analytics·@/validate/tax/period/closing · exports enforcePostingImmutability·for·generateReversingEntries·updateFiscalCalendarOnPeriodChange·validateAuditComplianceReporting·validateClosingPeriod·validateConsolidationReadiness·validateDoubleEntry·validateFiscalPeriodPosting·validateMultiCurrencyClosing·validatePostCloseAnalytics·validateTaxPeriodClosing · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·1·0`
-neighbors → api·flight·getting·homeopathic·hook·hopats·landmarks·rheumatologic·right·sell · ← api·flight·getting·homeopathic·hook·hopats·landmarks·rheumatologic·right·sell
+links `6/6` · folded `1` · bonds in `113` out `113`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·accounts·activities·adjustments·admin·allocation·analytics·assets·atom·aura·auth·axis·balance·beyond·by·carriers·cases·centers·change·chat·close·code·coherence·coil·collections·color·commerce·connections·conservation·conversion·coordinate·corruption·currency·declarations·defence·definitions·diamond·disclosures·ecommerce·education·engine·event·events·factory·failures·federation·fields·findings·harmony·health·heart·hook·hooks·hooks·horo·identifier·identity·instances·integrity·jobs·justice·law·law·manufacturing·media·messages·milestones·models·number·obligations·operations·optimize·orders·packages·payload·pipelines·plugin·port·position·quantum·rate·rates·reconcile·records·returns·reviews·rodin·routings·science·scorecards·sectors·segments·self·sequence·services·skills·sti·submissions·supto·tag·tenant·terminals·test·timestamp·torus·train·transaction·trinity·upload·variances·worker·workflow · ← access·accounting·accounts·activities·adjustments·admin·allocation·analytics·assets·assets·atom·aura·auth·axis·balance·beyond·by·carriers·cases·centers·change·chat·close·code·coherence·coil·collections·color·commerce·connections·conservation·conversion·coordinate·corruption·currency·declarations·defence·definitions·diamond·disclosures·ecommerce·education·engine·event·events·factory·failures·federation·fields·findings·harmony·health·heart·hook·hooks·hooks·horo·identifier·identity·instances·integrity·jobs·justice·law·manufacturing·media·messages·milestones·models·number·obligations·operations·optimize·orders·packages·payload·pipelines·plugin·port·position·quantum·rate·rates·reconcile·records·returns·reviews·rodin·routings·science·scorecards·sectors·segments·self·sequence·services·skills·sti·submissions·supto·tag·tenant·terminals·test·timestamp·torus·train·transaction·trinity·upload·variances·worker·workflow
 analysis analytics·aura·diamond·hallucination·purity
 law —
 
 ---
 
-<sub>content-uuid `4bd4e81c-ed2d-8c21-a03f-b8f8b696a7a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `76246b80-b986-8582-a3a5-64a840e75271` · `pnpm readme` · `pnpm computed:check`</sub>

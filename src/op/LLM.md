@@ -3,15 +3,15 @@
 
 # op
 
-path `op` · uuid `c17a82bb-b12a-8d0a-887c-e93cfee768a7` · diamond `70f24d93-ce51-8361-b65e-4f1de32ee3a7`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `op` · uuid `661db463-982c-8994-bb82-3b8f469e7517` · diamond `b5e8e226-381d-8edd-a0a2-fea7950fc1cf`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·post·pre·sti · exports op · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `8` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·separation·stat · ← cohort·landmarks·memories·separation·stat
-analysis diamond·hallucination·purity
+neighbors → collapse·dry·law·law·merge·op·post·pre·sti · ← collapse·dry·law·merge·op·post·pre·sti
+analysis —
 law op is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `286a0bf6-87d7-8966-976b-e122fb2d5051` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19ce3ee6-b6b0-839e-ab66-a829f773cd49` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # odometer
 
-path `odometer` · uuid `973de0a1-0692-86ba-ac94-642c2e4540d1` · diamond `94b0bade-6c48-8967-932f-9a1d6668349b`
+path `odometer` · uuid `973de0a1-0692-86ba-ac94-642c2e4540d1` · diamond `aa8b0178-18a9-89ca-a80a-2a9546936874`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·mileage·sti · exports odometer · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·mileage·sti · ← collapse·law·merge·mileage·sti
 analysis —
 law odometer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2d71dc2e-1d70-81cd-913b-87b796aba4bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe9d8919-5bfe-8195-a873-f62681eadedc` · `pnpm readme` · `pnpm computed:check`</sub>

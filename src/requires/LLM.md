@@ -3,15 +3,15 @@
 
 # requires
 
-path `requires` · uuid `768b3fc9-34f7-8e56-8144-d8876657bdf9` · diamond `36de3851-88be-8819-ba68-c41821e2f04b`
+path `requires` · uuid `768b3fc9-34f7-8e56-8144-d8876657bdf9` · diamond `4f37f3d6-7ea5-8d4a-be4a-153b59896a39`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·subscription · exports requires · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti·subscription · ← collapse·law·merge·sti·subscription
 analysis —
 law requires is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bfb8242f-7266-8d53-bf64-8514da0f181a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0cf2bb42-8aa6-830e-a3d4-d830908fa059` · `pnpm readme` · `pnpm computed:check`</sub>

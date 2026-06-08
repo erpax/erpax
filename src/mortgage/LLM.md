@@ -3,15 +3,15 @@
 
 # mortgage
 
-path `mortgage` · uuid `b60d3248-f185-8e7a-8a51-d04390421cd7` · diamond `6d3581fc-0dfa-83ba-9055-4cc7cf556380`
+path `mortgage` · uuid `b60d3248-f185-8e7a-8a51-d04390421cd7` · diamond `8137e4df-b562-8304-900f-b3243214010f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·domiciled·law·loan·mandate·merge·sti · exports mortgage · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → amount·collapse·domiciled·law·loan·mandate·merge·sti · ← amount·collapse·domiciled·law·loan·mandate·merge·sti
 analysis —
 law mortgage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4a1686d5-2bf4-8f20-9bc1-f2aed63a36fe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d191a638-0544-8cbb-b730-b9573bbffb66` · `pnpm readme` · `pnpm computed:check`</sub>

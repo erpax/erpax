@@ -4,7 +4,7 @@
 # chat
 
 path `agent/chat` · uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351` · diamond `d88ae90a-dce5-8328-8fa9-dd1e4d9780dd`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/communication · exports AgentChat·const · escapes —
 links `12/12` · folded `1` · bonds in `60` out `67`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an agent chat is an ordered thread of content-[[uuid]] [[message]]s that fol
 
 ---
 
-<sub>content-uuid `83df58e9-11a6-807a-9042-73f1d381f750` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6afa0b3b-20e0-8840-9f25-7c3cd7f0a047` · `pnpm readme` · `pnpm computed:check`</sub>

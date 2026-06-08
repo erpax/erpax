@@ -3,15 +3,15 @@
 
 # inside
 
-path `inside` · uuid `3c346ff4-b879-8b2f-b08c-0d9f886771b2` · diamond `479eeb79-9cef-8cf0-b876-f97e14466dca`
+path `inside` · uuid `3c346ff4-b879-8b2f-b08c-0d9f886771b2` · diamond `7d91272b-cbc9-8447-ae9d-f604c1549eef`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports inside · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·memories·stat · ← cohort·euenergy·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law inside is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e881e4bb-aabe-88ae-a911-6d927014df34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1976e3bb-cf56-8e8f-9e98-74ddd987d31f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `artery` · sub-root `c902da2e-92b5-80f6-bcfd-f5dd676f48f8`
 - bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -57,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `ea0935f3-b079-86cd-b18d-9c3ef2a5c3c1` · framed by typography partition `artery` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06fd2b26-7c43-8c93-92a7-e14c66655fcd` · framed by typography partition `artery` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

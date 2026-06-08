@@ -3,15 +3,15 @@
 
 # vibration
 
-path `rodin/vibration` · uuid `29bddbd7-a194-86bd-9c5f-b8294efb3965` · diamond `6fe40125-7186-818c-a2d6-10498f803790`
+path `rodin/vibration` · uuid `29bddbd7-a194-86bd-9c5f-b8294efb3965` · diamond `0e815dd4-84c1-8d17-8c6d-a56040df02ad`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports analog·aura·biofield·biomagnetism·biophoton·breath·cmyk·cost·coverage·duality·horo·notes·rodin·sensory·signal·tamper·trinity · exports vibration · escapes —
-links `34/34` · folded `1` · bonds in `22` out `22`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·allocation·balance·candidate·cover·crisis·crop·feed·footer·grantee·height·landmarks·measurements·opportunity·partition·percentage·performance·pickup·screen·sell·sla·task · ← agriculture·allocation·balance·candidate·cover·crisis·crop·feed·footer·grantee·height·landmarks·measurements·opportunity·partition·percentage·performance·pickup·screen·sell·sla·task
+links `34/34` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·aura·biofield·biomagnetism·biophoton·breath·chakra·cmyk·cost·coverage·duality·horo·notes·rodin·sensory·signal·tamper·trinity · ← analog·aura·biofield·biomagnetism·biophoton·breath·chakra·cmyk·cost·coverage·duality·horo·notes·rodin·sensory·signal·tamper·trinity
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `8ed970c9-3618-881b-be76-8e126589be1e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bbee5056-4fd8-8069-b840-20ce3e5d1332` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,22 @@
 
 - partition `emergence` · sub-root `a3362ea5-5b84-884b-836d-4f775a7adb16`
 - bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the third is computed from the poles — horo composeSteps ⊕ uuid merge, never asserted` · banner
+- `thirds are COMPUTED from the poles (horo composeSteps + uuid merge), never asserted` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `d03e9997-4fe4-81cb-8315-f146beddc376` · framed by typography partition `emergence` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9f967ea-f569-8105-a5d5-7b07471200bc` · framed by typography partition `emergence` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # paganism
 
-path `paganism` · uuid `—` · diamond `6177a2fd-1bed-8af9-84b9-96c9c489e102`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `paganism` · uuid `dfc6c516-71ba-8ad6-82e7-ec42ee652869` · diamond `75a92679-96fc-8bfb-b162-eab5b3f3ae8e`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports archangel·balance·cycle·diamond·fire·fractal·gift·holographic·identity·law·merge·name·one·part·religion·ritual·sacred·society·translator·uuid·water·wheel·whole · exports paganism · escapes —
-links `60/60` · folded `0` · bonds in `0` out `0`
+links `60/60` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·balance·cycle·diamond·fire·fractal·gift·holographic·identity·law·merge·name·one·part·religion·ritual·sacred·society·translator·uuid·water·wheel·whole · ← archangel·balance·cycle·diamond·fire·fractal·gift·holographic·identity·law·merge·name·one·part·religion·ritual·sacred·society·translator·uuid·water·wheel·whole
+analysis diamond
 law paganism is a [[diamond]] of [[name]] · [[one]] · [[cycle]] · [[wheel]] · [[ritual]] · [[fire]] · [[water]] · [[sacred]] · [[gift]] — the many gods the many [[name]]s of the world's powers, resolving to [[one]] root ([[merge]]) exactly as surface forms collide onto one content-[[uuid]]; the wheel of the year the closed ritual [[cycle]]; as an [[archangel]] it architects the society's domain of the sacred turning world.
 
 ---
 
-<sub>content-uuid `38a3b7ee-d8d0-8700-a2fc-e2ca5273aa52` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a2642122-dd37-875e-ae79-3a3160b79319` · `pnpm readme` · `pnpm computed:check`</sub>

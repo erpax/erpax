@@ -3,15 +3,15 @@
 
 # lyrics
 
-path `lyrics` · uuid `0f63ff0a-cf89-8cde-b28a-1cb877494432` · diamond `851e88f2-2325-82eb-9c19-546df6896b97`
+path `lyrics` · uuid `0f63ff0a-cf89-8cde-b28a-1cb877494432` · diamond `bb6df8f8-8290-8875-8a86-b90537c9bd82`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports lyrics · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law lyrics are the words bound to a song and to no other — the text is meaningless apart from the work it belongs to, so it travels only as that work's attached content, never as a free-floating row.
 
 ---
 
-<sub>content-uuid `2c9653da-6a11-876e-a713-d921e80bd6b2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b45b06b8-4c40-82b3-910d-a19ee87c8b05` · `pnpm readme` · `pnpm computed:check`</sub>

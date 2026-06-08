@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `particle` · sub-root `4db7f4e0-2b20-8614-a3f7-57784975cb9f`
-- bond degree `26` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `50` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `819296ad-88b6-84d7-b3e0-55b46d5139d7`
-- bonds in `4` · out `4`
+- bonds in `15` · out `17`
 - trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `cf3061d6-0c09-8307-9380-b16cb75eb0de` · framed by typography partition `particle` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c732caa9-cfad-8f85-bfb0-92bc3f7b5e8f` · framed by typography partition `particle` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

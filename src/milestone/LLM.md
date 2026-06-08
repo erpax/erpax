@@ -3,15 +3,15 @@
 
 # milestone
 
-path `milestone` · uuid `198fef17-9338-88e3-b7c3-7affdf4b2ae6` · diamond `43680cc9-3d6b-83bb-878d-fd70ada30e05`
+path `milestone` · uuid `198fef17-9338-88e3-b7c3-7affdf4b2ae6` · diamond `e6e9da17-c114-89d6-9786-09e49466b316`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·law·milestones·project · exports milestone · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·courthouse·landmarks·memories·plugins·prevention·stat · ← cohort·courthouse·landmarks·memories·plugins·prevention·stat
+neighbors → balance·law·milestones·project · ← balance·law·milestones·project
 analysis —
 law milestone is the singular model whose plural store is the [[milestones]] collection — every collection [[balance]]s against its one model.
 
 ---
 
-<sub>content-uuid `493c033e-02a0-8046-a0d1-3616d96b3252` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8983323f-0d59-8454-8805-0c241f653b97` · `pnpm readme` · `pnpm computed:check`</sub>

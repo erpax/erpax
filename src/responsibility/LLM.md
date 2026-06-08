@@ -3,15 +3,15 @@
 
 # responsibility
 
-path `responsibility` · uuid `2e75c16a-17c1-8d68-999f-19d5793e66df` · diamond `435e298a-a5e3-8feb-bb92-d0d85b926eb4`
+path `responsibility` · uuid `2e75c16a-17c1-8d68-999f-19d5793e66df` · diamond `35166daf-8d2b-852d-a47d-20f4abcb3f02`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·law·position·responsibilities · exports responsibility · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → balance·law·position·responsibilities · ← balance·law·position·responsibilities
 analysis —
 law a duty is held by a position, never by no one; an unassigned responsibility is an entropy leak the society must answer for.
 
 ---
 
-<sub>content-uuid `f7ae378b-ba1d-89e0-9fee-c54c96158453` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a5bc51a-b6e9-8543-abe6-dd7f24158cdd` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `akashic` · sub-root `bde29fb6-9409-8030-8c8f-79db7939ba70`
 - bond degree `286` · analysis neighbors `aura` · `diamond`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5046abd4-2b4a-8ece-8a03-a46b94836c21` · framed by typography partition `akashic` bonds `286` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4f17df25-0c28-8590-831e-dfae45979829` · framed by typography partition `akashic` bonds `286` · `pnpm readme` · `pnpm readme:check`</sub>

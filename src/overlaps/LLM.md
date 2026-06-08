@@ -3,15 +3,15 @@
 
 # overlaps
 
-path `overlaps` · uuid `d719fb95-cc5c-8376-b65b-d44404ca501b` · diamond `7899dfff-25b4-8d9b-a50c-76595871a318`
+path `overlaps` · uuid `d719fb95-cc5c-8376-b65b-d44404ca501b` · diamond `ee997de8-7b3d-838f-847f-287e18d574b8`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports overlaps · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·overview·privilege · ← balance·landmarks·overview·privilege
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law overlaps is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `87cc49d7-5e2e-8cb9-8d4e-766e8c41cf43` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5233dc9a-16cf-8c22-bb92-779d8ea1369f` · `pnpm readme` · `pnpm computed:check`</sub>

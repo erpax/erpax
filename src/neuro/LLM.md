@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports neuro · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law neuro is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `745527d0-88a0-8c5d-9471-ee3ed4e0f142` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `130c6c39-0883-844b-ba02-eaf1eb3e733a` · `pnpm readme` · `pnpm computed:check`</sub>

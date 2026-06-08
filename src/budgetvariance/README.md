@@ -23,7 +23,7 @@
 
 - partition `budgetvariance` · sub-root `3f6c75a0-3cc4-8c7e-8ea9-85e6f355bf1f`
 - bond degree `28` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ecbdac07-f2ed-8f5a-9da6-f9b3a6203ad2` · framed by typography partition `budgetvariance` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `833fe5ed-5f16-89b4-a6b8-343b0d876bcd` · framed by typography partition `budgetvariance` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

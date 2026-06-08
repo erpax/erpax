@@ -3,15 +3,15 @@
 
 # plumber
 
-path `plumber` · uuid `7b1daf6d-5b16-8a98-9a34-a369be13f98e` · diamond `f84ba40e-3caa-8616-80e9-f43641b17556`
+path `plumber` · uuid `7b1daf6d-5b16-8a98-9a34-a369be13f98e` · diamond `bb17a9e8-712a-8460-89a9-20f179742e37`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·organization · exports plumber · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·partial·stat · ← cohort·landmarks·memories·partial·stat
+neighbors → law·organization · ← law·organization
 analysis —
 law plumber is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6a0fe7a8-3467-83a4-9599-86445170c1ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3fed57ba-9a47-8de7-bf82-4356c27e0ca5` · `pnpm readme` · `pnpm computed:check`</sub>

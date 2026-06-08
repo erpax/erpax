@@ -3,15 +3,15 @@
 
 # isic
 
-path `isic` · uuid `9b8f4f55-666d-89f0-a608-808b90fff7c7` · diamond `d3a49d79-d69d-8957-9b0e-0e311569ed96`
+path `isic` · uuid `9b8f4f55-666d-89f0-a608-808b90fff7c7` · diamond `5d133a56-cc31-82fa-a011-b74456a6393c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports isic · escapes —
-links `3/3` · folded `1` · bonds in `0` out `0`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → law·organization·thing · ← law·organization·thing
 analysis —
 law isic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9fad7ab3-7016-83df-b70c-1dd3396ef055` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7bef9e57-ddd2-865b-9066-1da099964622` · `pnpm readme` · `pnpm computed:check`</sub>

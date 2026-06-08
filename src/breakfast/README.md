@@ -23,7 +23,7 @@
 
 - partition `breakfast` · sub-root `18638372-aa81-83d2-ab8f-ec4ff0636473`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8801c760-73f7-852f-b072-fe6b5f1eff19` · framed by typography partition `breakfast` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d178ea32-6654-840f-b390-79f9415ee848` · framed by typography partition `breakfast` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

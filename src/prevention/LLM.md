@@ -3,15 +3,15 @@
 
 # prevention
 
-path `prevention` · uuid `6c4532dd-67eb-8c2b-a68e-7c6f61b1816d` · diamond `035f4a75-b47b-8479-911f-14e341578126`
+path `prevention` · uuid `6c4532dd-67eb-8c2b-a68e-7c6f61b1816d` · diamond `ac687613-df04-82df-a42a-a54fd275bfcf`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·disease·indication·info·law·merge·primary·secondary·sti · exports prevention · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·courthouse·landmarks·memories·milestone·plugins·stat · ← cohort·courthouse·landmarks·memories·milestone·plugins·stat
+neighbors → collapse·disease·indication·info·law·merge·primary·secondary·sti · ← collapse·disease·indication·info·law·merge·primary·secondary·sti
 analysis —
 law prevention is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6a1ab30b-8bc7-8d07-afe9-ca4e484ec367` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d295e64f-7444-8f87-a6fd-2c3fb9baed8b` · `pnpm readme` · `pnpm computed:check`</sub>

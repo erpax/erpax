@@ -3,15 +3,15 @@
 
 # passenger
 
-path `passenger` · uuid `addaccba-14b8-87e5-b32d-eb67bc4623d2` · diamond `d220cf03-7eaf-8462-b01b-dc0ce2aa4505`
+path `passenger` · uuid `addaccba-14b8-87e5-b32d-eb67bc4623d2` · diamond `013c46e8-7194-89e0-8e12-1c7cb6b8fec5`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·priority·sequence·status·sti · exports passenger · escapes —
-links `8/8` · folded `1` · bonds in `2` out `2`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → associated·landmarks · ← associated·landmarks
+neighbors → collapse·law·merge·number·priority·sequence·status·sti · ← collapse·law·merge·number·priority·sequence·status·sti
 analysis —
 law passenger is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `eac07f7a-d32c-8266-934a-0e0a7a7b2476` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4dd19452-fff7-85cf-b97e-fd51ed96afa4` · `pnpm readme` · `pnpm computed:check`</sub>

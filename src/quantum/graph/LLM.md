@@ -3,15 +3,15 @@
 
 # graph
 
-path `quantum/graph` · uuid `fa7cf446-e628-8de9-bbe6-1dc0c077cb6d` · diamond `a8f758b1-8e58-8244-b80a-66801e128f99`
+path `quantum/graph` · uuid `fa7cf446-e628-8de9-bbe6-1dc0c077cb6d` · diamond `3eaaa09d-7759-8f7a-bbc0-754b11adcae3`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/graph · exports const · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → episode·landmarks · ← episode·landmarks
+links `9/9` · folded `1` · bonds in `10` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·entanglement·entanglement·graph·law·law·link·links·matrix·merge·merge·node·quantum·quantum · ← atom·entanglement·graph·law·link·links·matrix·merge·node·quantum
 analysis —
 law an edge is an entangled pair and [[entanglement]] is symmetric, so a coherent corpus reciprocates every edge in both directions — directed-link entropy → 0.
 
 ---
 
-<sub>content-uuid `c0c5bc5d-bdfa-8239-b037-868215fa88e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b922df63-1af3-88b6-9d6d-c45e54d4c552` · `pnpm readme` · `pnpm computed:check`</sub>

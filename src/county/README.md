@@ -23,7 +23,7 @@
 
 - partition `county` · sub-root `d0801e11-ae5c-8a21-a4c3-eba4a6e82bd2`
 - bond degree `20` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c5da120c-dddf-88d8-9e3e-eedceff3e64d` · framed by typography partition `county` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d12aa9a4-2066-8999-9481-ed59e29e4b48` · framed by typography partition `county` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

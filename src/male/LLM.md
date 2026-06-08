@@ -3,15 +3,15 @@
 
 # male
 
-path `male` · uuid `f673b72d-2fc1-81e9-a709-2f09a70e2561` · diamond `6e91de55-f3a8-8df3-b49b-4cbf89c1e74b`
+path `male` · uuid `f673b72d-2fc1-81e9-a709-2f09a70e2561` · diamond `47a6d7f1-e41c-8254-8fb5-d48cda3676f4`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports male · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·catalog·harden·landmarks·sanitization · ← atom·catalog·harden·landmarks·sanitization
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law male is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `61a341a5-3634-840e-b26b-56833bb6ca75` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8c3b17e-6f5b-892a-ae4d-725b0a4ec999` · `pnpm readme` · `pnpm computed:check`</sub>

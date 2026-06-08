@@ -23,7 +23,21 @@
 
 - partition `dosage` · sub-root `e0afd2ff-7a39-8b88-8f24-5276649c12fc`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `655d4a35-0ef3-8370-bd88-5ac390523852` · framed by typography partition `dosage` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d41523c1-e928-8cac-932c-b4120b6742b2` · framed by typography partition `dosage` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

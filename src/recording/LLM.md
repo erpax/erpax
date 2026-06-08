@@ -3,15 +3,15 @@
 
 # recording
 
-path `recording` · uuid `76262f7e-0742-8039-bf32-edbcd7579fc2` · diamond `89aba14e-c422-8cbf-b467-0cc57f238b33`
+path `recording` · uuid `76262f7e-0742-8039-bf32-edbcd7579fc2` · diamond `ecac4cba-b1e6-820f-8b6d-6b9877455f00`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·music · exports recording · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → chat·cohort·landmarks·memories·stat · ← chat·cohort·landmarks·memories·stat
+neighbors → law·music · ← law·music
 analysis —
 law recording is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8cb8547a-9a38-864b-8bb3-4c1a649793aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6baf3941-f618-8cd9-be4a-6a99f7168d8e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # lodging
 
-path `lodging` · uuid `da0485f7-b477-8c50-a331-a7f07db5ea23` · diamond `2de3ef42-1253-8b68-91f7-f1e26b201efa`
+path `lodging` · uuid `da0485f7-b477-8c50-a331-a7f07db5ea23` · diamond `d237f753-dbe7-81e0-b1a2-8126f3a5ef64`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports business·collapse·description·law·merge·reservation·sti·type·unit · exports lodging · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → business·collapse·description·law·merge·reservation·sti·type·unit · ← business·collapse·description·law·merge·reservation·sti·type·unit
 analysis —
 law lodging is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6a08e75c-d50b-8cbf-abaa-d79135e2c0d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7b6103b1-5d57-8c16-af1f-1ca19bbd5586` · `pnpm readme` · `pnpm computed:check`</sub>

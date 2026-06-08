@@ -3,15 +3,15 @@
 
 # measured
 
-path `measured` · uuid `4310d31e-f902-8894-8043-1a5134d8c199` · diamond `81a801e8-6e98-8ff4-a1a6-ab0da9cbb9fa`
+path `measured` · uuid `4310d31e-f902-8894-8043-1a5134d8c199` · diamond `cb28fed8-c53c-83b7-bbb1-b97d3106b5c1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·property·sti·variable·variables · exports measured · escapes —
-links `7/7` · folded `1` · bonds in `3` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← authenticity·landmarks·terminals
+neighbors → collapse·law·merge·property·sti·variable·variables · ← collapse·law·merge·property·sti·variable·variables
 analysis —
 law measured is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `809ff6e9-e298-8b25-aa67-47a32b8cc85e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ec04482e-f566-8325-b5f4-f8f09ee89e53` · `pnpm readme` · `pnpm computed:check`</sub>

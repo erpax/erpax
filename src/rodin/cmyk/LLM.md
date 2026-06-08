@@ -3,15 +3,15 @@
 
 # cmyk
 
-path `rodin/cmyk` · uuid `3bb55ac5-2a7f-8b24-a7ce-502b57e0998e` · diamond `f8640a2d-522a-8a95-a9cc-733e5497f32b`
+path `rodin/cmyk` · uuid `3bb55ac5-2a7f-8b24-a7ce-502b57e0998e` · diamond `3803b011-6d66-827f-9c12-c9b7e1ad15a2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports axis·balance·coil·config·give·horo·identity·polarity·rodin·tags·take · exports cmyk · escapes —
-links `22/22` · folded `1` · bonds in `8` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·access·agent·classified·cmyk·id·landmarks·landmarks·update · ← 3986·access·agent·classified·cmyk·id·landmarks·update
+links `22/22` · folded `1` · bonds in `25` out `25`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·aura·axis·balance·biophoton·breath·chakra·coil·config·decompression·give·horo·identity·localize·notes·oid·phase·polarity·rodin·science·signal·tags·take·theme·vibration · ← analog·aura·axis·balance·biophoton·breath·chakra·coil·config·decompression·give·horo·identity·localize·notes·oid·phase·polarity·rodin·science·signal·tags·take·theme·vibration
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `aae48a93-9d63-8ba0-a60a-18357888b321` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0697c3dd-e803-8dcf-b902-66d9f505f885` · `pnpm readme` · `pnpm computed:check`</sub>

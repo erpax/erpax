@@ -3,15 +3,15 @@
 
 # middle
 
-path `middle` · uuid `9b39ad05-a616-8fa3-af45-4d2cb1b134ad` · diamond `08e02c38-d7f0-8f65-9030-9a566e5e3c08`
+path `middle` · uuid `9b39ad05-a616-8fa3-af45-4d2cb1b134ad` · diamond `accf662f-3d25-827b-b546-9744a6a35373`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·school·sti · exports middle · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·checks·landmarks·profane · ← balance·checks·landmarks·profane
+neighbors → collapse·law·merge·school·sti · ← collapse·law·merge·school·sti
 analysis —
 law middle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `86af3cd5-54be-8f87-b15e-385bee3546f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fbfde1c-8c71-81fc-8696-9da195815784` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # key
 
-path `quantum/communication/key` · uuid `04e7333f-3be1-8a56-9c13-8b937b48df7a` · diamond `18a45333-1abf-8f1f-9f4e-870a00b3cea1`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `quantum/communication/key` · uuid `39f2f300-12eb-817c-8167-0fd802a83b46` · diamond `ba0410e7-fc4c-8c94-8d15-ab501088aa5a`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/communication·@/entanglement·@/uuid/matrix · exports const · escapes —
-links `14/14` · folded `0` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+links `14/14` · folded `1` · bonds in `12` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → ch·cloning·collapse·communication·entanglement·law·law·merge·merge·musical·quantum·sti·tamper·uuid · ← ch·cloning·collapse·communication·entanglement·law·merge·musical·quantum·sti·tamper·uuid
+analysis —
 law the shared secret IS the symmetric entangled binding (`sharedKey(a,b) === sharedKey(b,a)`), so it is computed on both ends without ever travelling; interception necessarily alters the content-uuid, so `eavesdropDetected` fires whenever the relayed identity differs — no-cloning makes the clone attempt detectable.
 
 ---
 
-<sub>content-uuid `47df25c6-75bc-88ce-b711-fc77208294fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34fd3a76-0058-88d0-8b1c-ed6b7221c1d8` · `pnpm readme` · `pnpm computed:check`</sub>

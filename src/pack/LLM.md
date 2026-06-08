@@ -3,15 +3,15 @@
 
 # pack
 
-path `pack` · uuid `0e330fdc-a353-864f-9d82-3bf65782f94e` · diamond `e9481704-21c7-85e2-97e9-2b47f9ae35c9`
+path `pack` · uuid `0e330fdc-a353-864f-9d82-3bf65782f94e` · diamond `fbba9ec6-7c32-8f5d-8025-31f1bdafdbed`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·law·packs·product · exports pack · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → balance·law·packs·product · ← balance·law·packs·product
 analysis —
 law a pack is the singular model of one packs row — a bundled unit of [[product]] items handled as one.
 
 ---
 
-<sub>content-uuid `ebedf90e-fa53-8888-a495-2611d10e5ca4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `08d42057-cf66-8e02-bed1-25c0d0981c35` · `pnpm readme` · `pnpm computed:check`</sub>

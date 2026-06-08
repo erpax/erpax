@@ -3,15 +3,15 @@
 
 # remediation
 
-path `remediation` · uuid `7332e4a9-7262-89c7-82bc-9f77d0dbf98a` · diamond `5ebbe005-c1c7-8966-ada2-b95e1a2cbced`
+path `remediation` · uuid `7332e4a9-7262-89c7-82bc-9f77d0dbf98a` · diamond `1ed86ee5-2edf-81d6-8a09-5c1ab0352375`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports contracts·indemnity·law·liability·matter·warranty · exports remediation · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·forcemajeure·landmarks·literary·memories·midwifery·moisture·spa·stat · ← amount·cohort·forcemajeure·landmarks·literary·memories·midwifery·moisture·spa·stat
+neighbors → contracts·disputeresolution·indemnity·law·liability·matter·termination·warranty · ← contracts·disputeresolution·indemnity·law·liability·matter·termination·warranty
 analysis —
 law remediation is the contractually-specified remedy for breach (payment·replacement·repair·specific-performance·cure-period) with its calculation (liquidated damages·penalties·fees) — the consequence the contract pre-commits, not an ad-hoc response.
 
 ---
 
-<sub>content-uuid `17e18dd2-4b08-8d65-bb15-81e26cb2d93e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `74ab23dc-755f-8ca2-a30a-f064aeb5c93a` · `pnpm readme` · `pnpm computed:check`</sub>

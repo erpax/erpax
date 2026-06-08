@@ -3,15 +3,15 @@
 
 # info
 
-path `info` · uuid `ff6dee05-68b2-88de-bc0d-89a6e63e3c6c` · diamond `bf88901f-8836-80c8-bbf1-295857e947d4`
+path `info` · uuid `ff6dee05-68b2-88de-bc0d-89a6e63e3c6c` · diamond `677fb6ef-98d7-8b99-9e34-95ad04485c7e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports benefits·closures·collapse·disease·funding·getting·government·law·merge·ownership·prescribing·prevention·public·school·sti·tested·transport·usage · exports info · escapes —
-links `18/18` · folded `1` · bonds in `2` out `2`
+links `18/18` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → benefits·closures·collapse·disease·funding·getting·government·law·merge·ownership·prescribing·prevention·public·school·sti·tested·transport·usage · ← benefits·closures·collapse·disease·funding·getting·government·law·merge·ownership·prescribing·prevention·public·school·sti·tested·transport·usage
 analysis —
 law info is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `463ebf62-70cf-89e7-9428-4e55ef321a8d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `18db3438-270e-86f6-aaa7-6da841a46549` · `pnpm readme` · `pnpm computed:check`</sub>

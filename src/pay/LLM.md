@@ -3,15 +3,15 @@
 
 # pay
 
-path `pay` · uuid `1ad98d6f-cc5a-88e7-ac92-c2927c19e65d` · diamond `4e0c06fe-0539-8806-976c-7ffe20eaa1ec`
+path `pay` · uuid `1ad98d6f-cc5a-88e7-ac92-c2927c19e65d` · diamond `1bb40e7b-6e4d-84a2-98de-14976425b14e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports pay · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical · ← landmarks·periodical
+neighbors → action·collapse·law·merge·shift·sti · ← action·collapse·law·merge·shift·sti
 analysis —
 law pay is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `657c1457-f5cb-8707-a027-190540a2c3f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `25787718-978b-8e67-89d0-0b7e2d851fd4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # level
 
-path `level` · uuid `08b31149-6a2e-8e1c-baf1-8887c5e0882b` · diamond `1200e6dd-2599-8b94-a8a2-a01b344f3929`
+path `level` · uuid `08b31149-6a2e-8e1c-baf1-8887c5e0882b` · diamond `8f78a832-9452-834b-9791-e997193dbd7d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·educational·evidence·floor·inventory·law·legal·medical·merge·proficiency·sti·value · exports level · escapes —
-links `12/12` · folded `1` · bonds in `5` out `5`
+links `12/12` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mission·stat · ← cohort·landmarks·memories·mission·stat
+neighbors → collapse·educational·evidence·floor·inventory·law·leap·legal·medical·merge·photon·proficiency·sti·superposition·value · ← collapse·educational·evidence·floor·inventory·law·leap·legal·medical·merge·photon·proficiency·sti·superposition·value
 analysis —
 law level is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9b390093-0474-820d-a78b-7532feeb234d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `092e9663-d186-8345-b81f-e8d53880324d` · `pnpm readme` · `pnpm computed:check`</sub>

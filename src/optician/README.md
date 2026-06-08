@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `optician` · sub-root `d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14`
-- bond degree `54` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14`
-- bonds in `26` · out `26`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `68ac8014-687f-8e69-84e4-d3538fef9bd5` · framed by typography partition `optician` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `63e114ef-54d2-8843-bcb3-bdd2c66ea2d7` · framed by typography partition `optician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

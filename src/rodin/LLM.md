@@ -3,15 +3,15 @@
 
 # rodin
 
-path `rodin` · uuid `94bd194e-4e70-8b5e-895f-3ae355f9b986` · diamond `309ee6c5-5553-8e41-b19c-f6f2f323d724`
+path `rodin` · uuid `94bd194e-4e70-8b5e-895f-3ae355f9b986` · diamond `068f96ce-da45-89d7-8ccb-c64785fd371f`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/horo·@/uuid/matrix · exports const·function · escapes —
-links `52/52` · folded `1` · bonds in `18` out `18`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·9110·analog·assets·aura·bio·biometric·breakfast·catalogue·certified·corrects·courthouse·dropoff·homeopathic·idempotency·right·self·symbol · ← 3986·9110·analog·assets·aura·bio·biometric·breakfast·catalogue·certified·corrects·courthouse·dropoff·homeopathic·idempotency·right·self·symbol
+links `52/52` · folded `1` · bonds in `72` out `71`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·akashic·analog·angel·atom·aura·auth·axis·balance·baseline·boltzmann·breath·calculator·chakra·chat·cmyk·coil·collapse·config·consciousness·decompression·deploy·diamond·duality·dust·element·fold·fractal·hamiltonian·harmony·heart·holographic·honest·hooks·horo·humandesign·identity·law·leap·linearity·logic·mala·math·merge·metatron·method·notes·octave·operations·phase·polarity·quantum·religion·render·roles·science·self·sequence·signal·similar·skills·society·sparsity·team·torus·train·trinity·typography·uuid·vibration·zeropoint · ← access·akashic·analog·angel·atom·aura·auth·axis·balance·baseline·boltzmann·breath·calculator·chakra·chat·cmyk·coil·collapse·config·consciousness·decompression·deploy·diamond·duality·dust·element·fold·fractal·hamiltonian·harmony·heart·holographic·honest·hooks·horo·humandesign·identity·law·leap·linearity·logic·mala·math·merge·metatron·method·notes·octave·operations·phase·polarity·quantum·religion·render·roles·science·self·sequence·signal·similar·skills·society·sparsity·team·torus·torus·train·trinity·typography·uuid·vibration·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `7e4aac56-0457-8c9d-87ae-5f7b1aec718e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `88c1a5e7-0161-8100-bddf-fc0ddbf8fd59` · `pnpm readme` · `pnpm computed:check`</sub>

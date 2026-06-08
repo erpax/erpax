@@ -3,15 +3,15 @@
 
 # certifications
 
-path `legal/entities/management/certifications` · uuid `5c65e51f-d41a-8e16-8884-6b2041a4efd3` · diamond `c99eda1c-9ed4-824b-9810-35fd22d92e94`
+path `legal/entities/management/certifications` · uuid `5c65e51f-d41a-8e16-8884-6b2041a4efd3` · diamond `c7ce0fa4-0f91-8106-8e48-c4720ec04aaa`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `4` out `4`
+links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → entities · ← entities
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `1dd0a145-8174-8093-ae3d-a563acdba925` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `15b21db2-4ce4-8688-969e-6c339fd3d92e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # pediatric
 
-path `pediatric` · uuid `cdb76453-eb36-8f32-aa6d-d1c2a2441188` · diamond `6e0b4952-f35c-8e55-b5f4-28c456862903`
+path `pediatric` · uuid `cdb76453-eb36-8f32-aa6d-d1c2a2441188` · diamond `4cc01c0e-c256-8f49-9845-79b98b69c378`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports pediatric · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → annual·cohort·landmarks·memories·opinion·quote·stat·warning · ← annual·cohort·landmarks·memories·opinion·quote·stat·warning
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law pediatric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1fd3d66e-8edf-87b8-a8bd-80f6ee692037` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d172ff31-b86c-8a48-a687-c1f785ab7ee2` · `pnpm readme` · `pnpm computed:check`</sub>

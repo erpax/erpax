@@ -23,7 +23,7 @@
 
 - partition `locker` · sub-root `6ecd612d-bd44-8b20-8afa-233438c66127`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1e2760eb-1184-8ab8-9585-1f25b3a9a62c` · framed by typography partition `locker` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b435d790-bf95-8a8a-b98d-08648bde3acc` · framed by typography partition `locker` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

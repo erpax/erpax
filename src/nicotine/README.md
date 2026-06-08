@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `nicotine` · sub-root `aa5aa73a-a2b6-8df3-aa52-643edc2ea8f8`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `aa5aa73a-a2b6-8df3-aa52-643edc2ea8f8`
-- bonds in `6` · out `6`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a6e32796-2b2c-815f-a50f-98e21afe459b` · framed by typography partition `nicotine` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2a6199e2-8ad2-826d-8470-f29b2a9ded2a` · framed by typography partition `nicotine` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

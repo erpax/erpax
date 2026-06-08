@@ -23,7 +23,7 @@
 
 - partition `brainstorm` · sub-root `b20df82f-692e-8830-baa4-8afaadf1b9e5`
 - bond degree `46` · analysis neighbors `aura`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `686c9c16-90be-82bc-a664-c58719ace455` · framed by typography partition `brainstorm` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `537218ff-12bc-8b13-a68d-490731e94fc7` · framed by typography partition `brainstorm` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>

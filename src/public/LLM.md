@@ -3,15 +3,15 @@
 
 # public
 
-path `public` · uuid `b71a7f32-a4aa-8f47-98b4-2ab763b1da37` · diamond `3a15bb2c-aacd-88ef-b718-7895df524685`
+path `public` · uuid `b71a7f32-a4aa-8f47-98b4-2ab763b1da37` · diamond `55f311bd-27b8-8f83-8f07-4b17bcbd0abc`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports access·article·ask·closures·collapse·info·law·merge·news·pool·sti·swimming·toilet·transport · exports public · escapes —
-links `14/14` · folded `1` · bonds in `17` out `19`
+links `14/14` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·1`
-neighbors → c19·corrects·dropoff·founder·id·landmarks·landmarks·list·list·memories·progression·public·qualification·qualifications·satire·score·sell·spouse·translator · ← c19·corrects·dropoff·founder·id·landmarks·list·memories·progression·public·qualification·qualifications·satire·score·sell·spouse·translator
+neighbors → access·article·ask·closures·collapse·diamond·info·law·merge·news·pool·pwa·sti·swimming·toilet·transport · ← access·article·ask·closures·collapse·diamond·info·law·merge·news·pool·pwa·sti·swimming·toilet·transport
 analysis —
 law public is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `baf45e1f-cf05-84c8-97c9-bb1c4c61ace3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `01a2e9e6-a5db-8549-a59a-3b2e0ea588fe` · `pnpm readme` · `pnpm computed:check`</sub>

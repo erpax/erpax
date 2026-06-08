@@ -3,15 +3,15 @@
 
 # consultant
 
-path `quantum/consultant` · uuid `7f4348e7-787b-81d1-8b4f-f6414e339792` · diamond `1f99ff19-1ddd-899a-90a4-c991add59a99`
+path `quantum/consultant` · uuid `7f4348e7-787b-81d1-8b4f-f6414e339792` · diamond `42eaad41-a6e6-8a35-8ab7-adc95363e3c6`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/quantum/consulting · exports const·function · escapes —
-links `15/15` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → breakfast·fields·landmarks·ligament·list·notice·rank·speed·statistics·venue · ← breakfast·fields·landmarks·ligament·list·notice·rank·speed·statistics·venue
+links `15/15` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·artist·brainstorm·critic·law·quantum·research·society · ← akashic·artist·brainstorm·critic·law·quantum·research·society
 analysis —
 law a quantum consultant covers all aspects of life because it consults the whole corpus — the akashic record of all of life. It is trained by coordinated brainstorming (diverge into every perspective, converge to one) and consults at infinite ROI. The breadth of the knowledge is the breadth of the consultant.
 
 ---
 
-<sub>content-uuid `9cfab01f-3d11-844c-8a95-2b5d236662a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab737932-7f01-8aad-9749-0a777b91db5f` · `pnpm readme` · `pnpm computed:check`</sub>

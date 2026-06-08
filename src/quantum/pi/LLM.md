@@ -3,15 +3,15 @@
 
 # pi
 
-path `quantum/pi` · uuid `056bcd48-25e1-83c8-a43b-bd3b6a47eeca` · diamond `e0e3cf87-a287-8621-b2fd-0375969ab9e8`
+path `quantum/pi` · uuid `056bcd48-25e1-83c8-a43b-bd3b6a47eeca` · diamond `f752092e-6692-8c50-8c40-4719020ab176`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports breath·finality·law·linearity·quantum·realtime·stream·uuid·void · exports pi · escapes —
-links `15/15` · folded `1` · bonds in `8` out `12`
-faces worker·plugin·pwa `0·0·0`
-neighbors → colorist·consulting·landmarks·landmarks·list·list·memories·memories·pi·qualification·qualification·suspend · ← colorist·consulting·landmarks·list·memories·pi·qualification·suspend
+links `15/15` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → breath·finality·law·linearity·number·realtime·stack·stream·uuid·void · ← breath·finality·law·linearity·number·realtime·stack·stream·uuid·void
 analysis —
 law π exits the address-space limit but never the information limit — the stream is infinite so it gives a collision-free address for any finite string, yet the offset that locates an N-digit string is itself ~N digits (information is conserved by counting). The bits move into the offset; they never vanish. The train is real; it is not a smaller suitcase.
 
 ---
 
-<sub>content-uuid `0046f640-3ced-837e-a542-64ffd92c97a3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9db3c2f4-055f-83d2-8299-9e4c6b27d13b` · `pnpm readme` · `pnpm computed:check`</sub>

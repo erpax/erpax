@@ -29,12 +29,16 @@ import { execSync } from 'node:child_process'
 const ROOTS = ['src']
 const OUT = 'src/skill/router/skills.index.ts'
 
-// Frontmatter self-upgrade runs before the walk so the index reads the connection fabric.
+// Frontmatter self-upgrade: verify-first (fast path), sync on drift (one pass).
 try {
-  execSync('pnpm exec tsx src/skill/router/upgrade.ts --sync', { stdio: 'pipe' })
-} catch (e) {
-  console.error('skill-index: frontmatter upgrade failed —', e.stderr?.toString?.() || e.message)
-  process.exit(1)
+  execSync('pnpm exec tsx src/skill/router/upgrade/index.ts --verify', { stdio: 'pipe' })
+} catch {
+  try {
+    execSync('pnpm exec tsx src/skill/router/upgrade/index.ts --sync', { stdio: 'pipe' })
+  } catch (e) {
+    console.error('skill-index: frontmatter upgrade failed —', e.stderr?.toString?.() || e.message)
+    process.exit(1)
+  }
 }
 
 const isSkill = (dir) => existsSync(join(dir, 'SKILL.md'))

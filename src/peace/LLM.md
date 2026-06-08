@@ -3,15 +3,15 @@
 
 # peace
 
-path `peace` · uuid `3f9f881a-a4f3-8828-b639-0eead99886fe` · diamond `86d6c466-ba8e-82de-9ed2-f391ededd2d4`
+path `peace` · uuid `3f9f881a-a4f3-8828-b639-0eead99886fe` · diamond `1a840ddd-7e20-89c1-a372-405b76c683cf`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports function·interface · escapes —
-links `39/39` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `39/39` · folded `1` · bonds in `36` out `36`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·angel·bahai·competition·cost·decide·drone·education·entry·harmony·history·holographic·identity·islam·karma·logic·matrix·memory·merge·prayer·proof·quantum·receipt·routing·sandbox·society·sync·tamper·taoism·team·trinity·utility·uuid·war·whole·zeropoint · ← akashic·angel·bahai·competition·cost·decide·drone·education·entry·harmony·history·holographic·identity·islam·karma·logic·matrix·memory·merge·prayer·proof·quantum·receipt·routing·sandbox·society·sync·tamper·taoism·team·trinity·utility·uuid·war·whole·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f7137a78-5358-82d9-a7c6-d5a171c51c6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b9acc01-9850-8ef7-b262-d456bdc5ec94` · `pnpm readme` · `pnpm computed:check`</sub>

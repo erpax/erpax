@@ -25,7 +25,32 @@
 
 - partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
 - bond degree `38` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 53 self-referential-closure (currency identity element)` · banner
+- `Conservation Law 53 self-referential-closure (currency identity element); never hand-asserted` · banner
+- `EN 16931 §BG-7 currency-code element (XXX accepted)` · banner
+- `EN-16931` · catalogue
+- `EU-2002/58` · catalogue
+- `IAS 21 §38 presentation-currency translation` · banner
+- `IFRS 1 §IG7 non-monetary items presentation` · banner
+- `IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)` · banner
+- `ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)` · banner
+- `ISO 4217 §6.5 "No currency" — code XXX, numeric 999` · banner
+- `ISO-20022` · catalogue
+- `RFC-8785` · catalogue
+
+## analytics
+
+- bond degree `38` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
@@ -41,4 +66,4 @@
 
 ---
 
-<sub>content-uuid `09f30ce2-477a-82eb-ae95-75b69108b782` · framed by typography partition `currency` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d898f518-838a-8020-b092-bdfe3c34d0ec` · framed by typography partition `currency` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `misconceptions` · sub-root `ff4946a3-c31c-8d53-87a0-fdc97a9d9f1a`
-- bond degree `32` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `ff4946a3-c31c-8d53-87a0-fdc97a9d9f1a`
-- bonds in `14` · out `14`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `67f94194-2cba-8394-ae40-1a2a49b49aab` · framed by typography partition `misconceptions` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `93f3502f-f9d9-8aa2-ba6c-fa4549a8ec0b` · framed by typography partition `misconceptions` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

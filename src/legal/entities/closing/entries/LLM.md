@@ -3,15 +3,15 @@
 
 # entries
 
-path `legal/entities/closing/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `809c135b-76ce-8b6b-9027-090d0c9a1508`
+path `legal/entities/closing/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `338863b6-5022-86e3-b14b-0bb27a59a7a5`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/generate/reversing/entry·@/validate/closing/period·@/validate/multi/currency/closing · exports const · escapes —
-links `1/1` · folded `1` · bonds in `1` out `1`
+links `1/1` · folded `1` · bonds in `37` out `40`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → accounting·accounting·accrual·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·identity·journals·law·law·law·modifications·orders·postings·prepaid·proof·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·standard·transaction·transactions · ← accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transaction·transactions·transactions
 analysis —
 law period-end close zeroes the P&L accounts to retained earnings, auto-generates the reversing entries, locks the period, and leaves an immutable close audit trail.
 
 ---
 
-<sub>content-uuid `90aee8b7-4a6d-82db-8d9a-a33d4cf37b06` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d32a4b5c-1df1-83e4-8ca3-90be4d18ee23` · `pnpm readme` · `pnpm computed:check`</sub>

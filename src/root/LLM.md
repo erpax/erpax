@@ -3,15 +3,15 @@
 
 # root
 
-path `root` · uuid `01caacdc-22cd-8fa6-a4fe-01d37c65f4c7` · diamond `72498f88-de9e-8e0e-bec8-5e175e04deb6`
+path `root` · uuid `01caacdc-22cd-8fa6-a4fe-01d37c65f4c7` · diamond `fb6a2f1c-64d3-8377-8a81-0496263a0f25`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/chakra · exports const · escapes —
-links `10/10` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → api·binding·departure·landmarks·requests·rooms · ← api·binding·departure·landmarks·requests·rooms
+links `10/10` · folded `1` · bonds in `3` out `3`
+faces worker·plugin·pwa `1·0·0`
+neighbors → chakra·horo·law · ← chakra·horo·law
 analysis —
 law root is a standalone projection of [[chakra]] center 0 ([[horo]] position 0) that never recomputes the math — the uuid is computed FROM the position math and the colour rendered FROM the uuid, never the reverse; only the position→note→uuid math is claimed, not the traditional red.
 
 ---
 
-<sub>content-uuid `a0d6ec92-7307-8e61-8fd0-06de74d681f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `51f79a4e-031c-8a40-9f8d-e6b3b7488166` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,14 +23,14 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
-- bond degree `401` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `maxtampercost` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `version` · `vibration` · `war` · `zoroastrianism`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- bond degree `438` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `architecture` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `maxtampercost` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `version` · `vibration` · `war` · `zoroastrianism`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `029b5e98-e1c2-863a-ada7-9fae45b45812`
-- bonds in `88` · out `89`
+- bonds in `106` · out `107`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `cd5d93d1-419b-87d5-9306-62b7f2073809` · framed by typography partition `quantum` bonds `401` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4990cb70-edc3-8d75-af72-cd6bb04978bc` · framed by typography partition `quantum` bonds `438` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # keyword
 
-path `keyword` · uuid `66d9e455-27a7-85c7-89f1-fd2431402978` · diamond `d30c50d3-c6be-87a9-a5fd-2bde3e74c027`
+path `keyword` · uuid `66d9e455-27a7-85c7-89f1-fd2431402978` · diamond `757552a9-c70b-844d-88a9-bde05baf45b9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·content·keywords·law · exports keyword · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·max·menu·quote·sandbox·scheduled · ← landmarks·max·menu·quote·sandbox·scheduled
+neighbors → balance·content·keywords·law·optimization · ← balance·content·keywords·law·optimization
 analysis —
 law the singular model of one [[keywords]] row — a salient term used to index or retrieve content; every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `a2fd627c-80bb-8157-bbaf-558d2feea877` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `786a2d06-9642-86a7-9614-21b66dcddc4b` · `pnpm readme` · `pnpm computed:check`</sub>

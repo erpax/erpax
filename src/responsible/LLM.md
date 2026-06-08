@@ -3,15 +3,15 @@
 
 # responsible
 
-path `responsible` · uuid `f1052b2e-ed32-803a-a48d-07a98507b9d2` · diamond `49a24e2a-c6c8-8566-8f4d-a798e8fb8525`
+path `responsible` · uuid `f1052b2e-ed32-803a-a48d-07a98507b9d2` · diamond `a86c486a-cbda-8143-af22-bae57a1385de`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports responsible · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·legislation·merge·sti · ← collapse·law·legislation·merge·sti
 analysis —
 law responsible is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9ae1ebc0-ef93-8838-8cf8-5eda66712418` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44c6bfa8-c876-83de-a3fd-589410294760` · `pnpm readme` · `pnpm computed:check`</sub>

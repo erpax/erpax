@@ -3,15 +3,15 @@
 
 # query
 
-path `quantum/query` · uuid `87937cb3-5bb6-8fd6-acff-6fa8dabaed6c` · diamond `c1e040e2-012f-8d84-8883-a6b042f7d4e8`
+path `quantum/query` · uuid `87937cb3-5bb6-8fd6-acff-6fa8dabaed6c` · diamond `abd3e632-5bbb-89bb-87b8-f551eb90cee8`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `10/10` · folded `1` · bonds in `35` out `37`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·akashic·allocation·aura·breakfast·classified·collect·comedy·compass·competencies·cost·day·declaration·depth·editor·entertainment·gears·holographic·homeopathic·landmarks·landmarks·liquor·list·maintainer·marine·memories·memories·query·representation·roles·saturday·sections·sell·solve·stages·total·update · ← 3986·akashic·allocation·aura·breakfast·classified·collect·comedy·compass·competencies·cost·day·declaration·depth·editor·entertainment·gears·holographic·homeopathic·landmarks·liquor·list·maintainer·marine·memories·query·representation·roles·saturday·sections·sell·solve·stages·total·update
+links `10/10` · folded `1` · bonds in `8` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → engine·law·law·merge·quantum·query·sql·thing·uuid · ← engine·law·merge·quantum·query·sql·thing·uuid
 analysis —
 law two queries share one identity iff their normalized text (trimmed and lower-cased) is equal — normalization defines the equivalence, so a lookup hits the same cache key under any whitespace or case variation, and any meaningful change yields a new uuid that invalidates by content-address.
 
 ---
 
-<sub>content-uuid `45928445-d380-834f-a481-207b199ca5c0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e3846a3-c83a-82de-af8e-59c39dbbf86d` · `pnpm readme` · `pnpm computed:check`</sub>

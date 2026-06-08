@@ -3,15 +3,15 @@
 
 # properties
 
-path `properties/investment/properties` · uuid `bf1a0fd6-5666-8be1-8753-c3c46cb4a444` · diamond `e79c7073-31fe-8de4-afec-97beeeff330c`
+path `properties/investment/properties` · uuid `bf1a0fd6-5666-8be1-8753-c3c46cb4a444` · diamond `264ff7c1-44d6-8b8c-954d-20f6512045da`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → brewery·cohort·landmarks·memories·separation·stat · ← brewery·cohort·landmarks·memories·separation·stat
+links `3/3` · folded `1` · bonds in `9` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → classifications·impairment·leases·leases·measurements·orders·properties·properties·requests·spaces · ← classifications·impairment·leases·measurements·orders·properties·properties·requests·spaces
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `6568fb95-d531-8bd6-951b-7cce2adff326` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a895060-3a7c-857c-842c-61786eca77c5` · `pnpm readme` · `pnpm computed:check`</sub>

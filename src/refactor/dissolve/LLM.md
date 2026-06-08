@@ -3,15 +3,15 @@
 
 # dissolve
 
-path `refactor/dissolve` · uuid `fbcbcee7-1980-8bb4-944d-0feadc9a3468` · diamond `f518994c-453d-87de-b39f-efca8f61d0aa`
+path `refactor/dissolve` · uuid `fbcbcee7-1980-8bb4-944d-0feadc9a3468` · diamond `fa98ec83-dee1-865a-b97f-cd17442a393b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports identity·merge·normalize·sequence · exports dissolve · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·cohort·defence·downpayment·elementary·increment·landmarks·memories·stat · ← address·cohort·defence·downpayment·elementary·increment·landmarks·memories·stat
+neighbors → accounting·identity·invariant·merge·normalize·refactor·sequence · ← accounting·identity·invariant·merge·normalize·refactor·sequence
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `37d1c2f9-f06e-8766-8b56-6ab4ec5f72e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe292ae3-5b62-8a51-9e66-69df04dc728a` · `pnpm readme` · `pnpm computed:check`</sub>

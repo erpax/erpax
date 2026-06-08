@@ -3,15 +3,15 @@
 
 # number
 
-path `number` · uuid `cc2f97b8-6ba0-894c-abaa-4a322ab998b3` · diamond `112b5b41-2847-89cc-9d1b-dfd240e80187`
+path `number` · uuid `cc2f97b8-6ba0-894c-abaa-4a322ab998b3` · diamond `75ce10f6-c5bd-8876-9215-90b9094a8fb3`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·commerce·fields·hooks·identity · exports number · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `77` out `77`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·landmarks·performances · ← accounting·balance·landmarks·performances
+neighbors → accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·breath·bus·catalog·clip·collapse·commerce·confirmation·credits·digit·doors·episode·episodes·fax·fields·finality·flight·forward·full·gears·global·guests·harmony·hooks·id·identification·identity·issue·item·law·linearity·loan·location·measure·membership·number·office·order·partial·passenger·pi·players·post·previous·rate·reality·realtime·report·rooms·science·seasons·seat·sequence·serial·service·sms·snapshot·stage·stream·supto·tracking·transaction·units·utility·uuid·vehicle·volume·zeropoint · ← accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·breath·bus·catalog·clip·collapse·commerce·confirmation·credits·digit·doors·episode·episodes·fax·fields·finality·flight·forward·full·gears·global·guests·harmony·hooks·id·identification·identity·issue·item·law·linearity·loan·location·measure·membership·number·office·order·partial·passenger·pi·players·post·previous·rate·reality·realtime·report·rooms·science·seasons·seat·sequence·serial·service·sms·snapshot·stage·stream·supto·tracking·transaction·units·utility·uuid·vehicle·volume·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `b79a232e-b53f-818a-aeb0-488e585e9a12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c879940-0ce5-800b-abae-a3beba6f7d08` · `pnpm readme` · `pnpm computed:check`</sub>

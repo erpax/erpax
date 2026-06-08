@@ -2,7 +2,7 @@
 
 # chat
 
-> atom `agent/chat` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `agent/chat` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
 - bond degree `210` · analysis neighbors `agent` · `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -37,7 +37,7 @@
 
 ## analytics
 
-- bond degree `210` · sealed `1` · horo `8`
+- bond degree `210` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
@@ -51,8 +51,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1bbfab55-2077-8edb-902b-83b22e1a5a7e` · framed by typography partition `agent` bonds `210` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4275305-58e2-848e-933e-95e4862ab723` · framed by typography partition `agent` bonds `210` · `pnpm readme` · `pnpm readme:check`</sub>

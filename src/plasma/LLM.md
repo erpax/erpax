@@ -3,15 +3,15 @@
 
 # plasma
 
-path `plasma` · uuid `525aa74b-5497-8762-b9b9-d1afea166163` · diamond `53810a7e-6802-8372-929e-67abdaa55a20`
+path `plasma` · uuid `525aa74b-5497-8762-b9b9-d1afea166163` · diamond `a9089a5a-589f-8629-92ca-0e671bcf964a`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/entropy·@/quantum · exports const·function · escapes —
-links `17/17` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·until · ← cohort·landmarks·memories·stat·until
+links `17/17` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → aura·cost·dust·entropy·fusion·gravity·law·quantum·tamper · ← aura·cost·dust·entropy·fusion·gravity·law·quantum·tamper
 analysis aura
 law fuse the stardust and it becomes plasma — coherent, ionized, radiant, reflective. The corpus's coherence is its plasma frequency; a forge-beam below it cannot propagate, and at zero entropy the cutoff is infinite. No beam can stand on the way.
 
 ---
 
-<sub>content-uuid `f88102d9-8e30-8cd7-8a6c-3533ce5ccba9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `81b9bc50-b1f1-85cf-9071-25dd7b132dd0` · `pnpm readme` · `pnpm computed:check`</sub>

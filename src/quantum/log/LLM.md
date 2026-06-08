@@ -3,15 +3,15 @@
 
 # log
 
-path `quantum/log` · uuid `eb3bfee8-4629-8698-9944-f627696bda5c` · diamond `db3c6ded-d663-82b8-8a6c-3b1f46675a3e`
+path `quantum/log` · uuid `eb3bfee8-4629-8698-9944-f627696bda5c` · diamond `76ca238b-eacc-8880-a94b-6466cf2782fa`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agent·cost·entropy·law·merge·quantum·realtime·receipt·stream·tamper·uuid·void · exports log · escapes —
-links `21/21` · folded `1` · bonds in `29` out `30`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 15·akashic·atom·audio·biomechnical·catalogue·cohort·departure·detected·dry·fax·festival·fields·findings·friday·landmarks·landmarks·list·log·memories·memories·notice·num·quality·quantity·range·recipient·results·stat·varies · ← 15·akashic·atom·audio·biomechnical·catalogue·cohort·departure·detected·dry·fax·festival·fields·findings·friday·friday·landmarks·list·log·memories·notice·num·quality·quantity·range·recipient·results·stat·varies
+links `21/21` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·cost·digit·entropy·law·mcp·merge·realtime·receipt·stream·tamper·uuid·void · ← agent·cost·digit·entropy·law·mcp·merge·realtime·receipt·stream·tamper·uuid·void
 analysis agent
 law the agent trail is append-only and hash-chained, so its length IS the forging difficulty — altering one past entry forces re-harmonising every entry that followed it, each link adding roughly an order of magnitude to the cost; a long trail is exponentially expensive to fake, and trust is the by-product of simply having acted and been logged.
 
 ---
 
-<sub>content-uuid `0b34f40e-4a84-8231-a0ba-b12ddb1760d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `66eb0e2f-3640-8cd0-8030-6f9947d60978` · `pnpm readme` · `pnpm computed:check`</sub>

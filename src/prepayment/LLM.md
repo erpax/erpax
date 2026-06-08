@@ -3,15 +3,15 @@
 
 # prepayment
 
-path `prepayment` · uuid `20d51746-78e7-8d79-9d3a-53f141e1a1b8` · diamond `38f4a234-cf97-882e-ad51-fb26e1a9fe0a`
+path `prepayment` · uuid `20d51746-78e7-8d79-9d3a-53f141e1a1b8` · diamond `8d71f894-9359-8ebc-944d-1b4abc63120e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·early·law·merge·penalty·sti · exports prepayment · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·western · ← cohort·landmarks·memories·stat·western
+neighbors → collapse·early·law·merge·penalty·sti · ← collapse·early·law·merge·penalty·sti
 analysis —
 law prepayment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4a19648e-7c90-8bc9-9627-e6fb767ed419` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `37923169-9a85-81a3-a732-4b5e5c25acf4` · `pnpm readme` · `pnpm computed:check`</sub>

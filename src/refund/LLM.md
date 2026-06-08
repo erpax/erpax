@@ -3,15 +3,15 @@
 
 # refund
 
-path `refund` · uuid `831814aa-b9c4-81ff-afa1-fc1b26e012b6` · diamond `96ae5e92-4334-88b4-a334-8d4e5c6ab5ff`
+path `refund` · uuid `831814aa-b9c4-81ff-afa1-fc1b26e012b6` · diamond `127c14fd-6c51-8cdc-bb81-9a010c2fee32`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·enumeration·law·merge·sti·type · exports refund · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·enumeration·law·merge·sti·type · ← collapse·enumeration·law·merge·sti·type
 analysis —
 law refund is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5d86f23d-cf80-8d87-a81d-525225f069e2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1349f4a9-7c09-8300-97ca-e6d3431feea4` · `pnpm readme` · `pnpm computed:check`</sub>

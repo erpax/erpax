@@ -3,15 +3,15 @@
 
 # vocabulary
 
-path `quantum/vocabulary` · uuid `f2a288a9-a379-80d8-a308-ec65234d7110` · diamond `0efd91b7-a805-86bb-a858-96c4d899ac60`
+path `quantum/vocabulary` · uuid `f2a288a9-a379-80d8-a308-ec65234d7110` · diamond `9ea458b7-d1b6-8b41-9313-7b171dcff40e`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix·@/vocabulary · exports const · escapes —
-links `14/14` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `14/14` · folded `1` · bonds in `17` out `19`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·collapse·concatenate·dry·entropy·gravity·law·matrix·matrix·merge·merge·quantum·singularity·standards·tamper·trinity·unavoidable·vocabulary·word · ← atom·collapse·concatenate·dry·entropy·gravity·law·matrix·merge·quantum·singularity·standards·tamper·trinity·unavoidable·vocabulary·word
 analysis —
 law every atom's words resolve to the one shared set (`isGrounded`), so as the grounding coverage → 1 the meaning-entropy of the corpus → 0 — and zero meaning-entropy is the infinite gravity of the singularity: the well from which no word escapes into a private meaning. The vocabulary's pull is total because there is exactly one meaning-space, and all language falls into it.
 
 ---
 
-<sub>content-uuid `781953b4-47f5-8832-be62-21dda3d9d2ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c4d1ed10-d3a0-8245-aac3-830f7607250b` · `pnpm readme` · `pnpm computed:check`</sub>

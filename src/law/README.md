@@ -2,7 +2,7 @@
 
 # law
 
-> atom `law` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `law` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `law` · sub-root `d4d619f5-9b94-8720-9479-28e77cc05830`
-- bond degree `2867` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `8315` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `fcf8ae30-96e4-8f5f-839d-2f1f9917770c`
-- bonds in `11` · out `11`
+- uuid `fa10b34f-6b3f-86fc-a347-2713251d2798`
+- bonds in `2791` · out `2678`
 - trinity form·code·proof `1`·`0`·`0`
 - links `282` / `282`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0f17bfb4-7593-85c7-858d-7c8db47e122c` · framed by typography partition `law` bonds `2867` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66a81163-958a-8fdd-8b17-466b93111977` · framed by typography partition `law` bonds `8315` · `pnpm readme` · `pnpm readme:check`</sub>

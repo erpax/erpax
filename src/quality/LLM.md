@@ -3,15 +3,15 @@
 
 # quality
 
-path `quality` · uuid `c499bdcb-6cda-876c-90fe-a0e655e26155` · diamond `5d15a7d9-1f37-8e66-a46c-ea3af30bba08`
+path `quality` · uuid `c499bdcb-6cda-876c-90fe-a0e655e26155` · diamond `cb48a177-fbc4-88b5-9b0f-12745f8f74da`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·video · exports quality · escapes —
-links `5/5` · folded `1` · bonds in `13` out `13`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·biomechnical·device·fields·has·landmarks·list·log·numeric·password·recipient·results·symbol · ← akashic·biomechnical·device·fields·has·landmarks·list·log·numeric·password·recipient·results·symbol
+neighbors → collapse·failure·inspection·law·merge·sti·video · ← collapse·failure·inspection·law·merge·sti·video
 analysis —
 law quality is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7f291a27-1ce1-8071-bcfe-a19974773a6b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e4ba660-6cec-8967-ba48-c730327faabb` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,7 +1,15 @@
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
-import { folderViolations, folderGuardians, NAME_BASELINE, TRINITY_BASELINE, ONE_WORD } from '@/law/folder'
+import {
+  folderViolations,
+  folderGuardians,
+  folderMatterState,
+  folderMatterComplete,
+  NAME_BASELINE,
+  TRINITY_BASELINE,
+  ONE_WORD,
+} from '@/law/folder'
 
 // The folder-shape law (./index.ts), computed from the live tree. The ratchet
 // decision is pure (no fs / process), so it is regression-locked here; the live
@@ -56,6 +64,13 @@ describe('folder: the folder-shape law (computed)', () => {
     expect(existsSync(join(process.cwd(), 'src/trading/api/index.ts'))).toBe(true)
   })
 
+  it('country/api is conforming after country-apis relocation', () => {
+    const folders = new Set([...v.name.map((n) => n.folder), ...v.trinity.map((t) => t.folder)])
+    expect(folders.has('config/country-apis')).toBe(false)
+    expect(folders.has('country/api')).toBe(false)
+    expect(existsSync(join(process.cwd(), 'src/country/api/test.ts'))).toBe(true)
+  })
+
   // The law atom obeys its own law (dogfood — the guardian is tamper-proof).
   it('dogfoods — src/law/folder is itself conforming', () => {
     const folders = new Set([...v.name.map((n) => n.folder), ...v.trinity.map((t) => t.folder)])
@@ -64,6 +79,17 @@ describe('folder: the folder-shape law (computed)', () => {
 
   // (The pure fail-closed ratchet decision is regression-locked in @/guardian and
   // its composition into a seal in @/seal — folder only wires them to its two axes.)
+
+  it('folderMatterState — empty and incomplete are not matter-complete', () => {
+    expect(folderMatterState(0, 0, false)).toBe('empty')
+    expect(folderMatterComplete('empty')).toBe(false)
+    expect(folderMatterState(1, 0, false)).toBe('vocabulary')
+    expect(folderMatterComplete('vocabulary')).toBe(true)
+    expect(folderMatterState(1, 1, false)).toBe('incomplete')
+    expect(folderMatterComplete('incomplete')).toBe(false)
+    expect(folderMatterState(1, 1, true)).toBe('code-complete')
+    expect(folderMatterComplete('code-complete')).toBe(true)
+  })
 
   it('ONE_WORD accepts a generic word, rejects hyphen / camelCase / dot-suffix', () => {
     expect(ONE_WORD.test('trading')).toBe(true)

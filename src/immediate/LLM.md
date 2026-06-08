@@ -3,15 +3,15 @@
 
 # immediate
 
-path `immediate` · uuid `d08db2bc-155d-8767-bac9-f7b810e87965` · diamond `8d8c010c-1c60-8ab8-94cd-6341a703d059`
+path `immediate` · uuid `d08db2bc-155d-8767-bac9-f7b810e87965` · diamond `dab811c7-9ba9-8e78-860e-23806adcbe06`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·job·law·merge·start·sti · exports immediate · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·job·law·merge·start·sti · ← collapse·job·law·merge·start·sti
 analysis —
 law immediate is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `76680323-6fa0-8ad5-a61c-f3605f31a296` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `de551742-199d-8ea8-86e5-1a8709b4061a` · `pnpm readme` · `pnpm computed:check`</sub>

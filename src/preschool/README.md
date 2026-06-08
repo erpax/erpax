@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `preschool` · sub-root `58c609e7-b712-86a3-8638-3632ff947a8c`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `58c609e7-b712-86a3-8638-3632ff947a8c`
-- bonds in `7` · out `7`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5b645ad2-b381-8272-a749-825ddb11dd8c` · framed by typography partition `preschool` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `037d7bb1-49ed-8f92-bb7e-65a21905fdc5` · framed by typography partition `preschool` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

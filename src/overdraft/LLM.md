@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports account·collapse·law·limit·merge·sti · exports overdraft · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·functional·industry·landmarks·memories·stat · ← cohort·functional·industry·landmarks·memories·stat
+neighbors → account·collapse·law·limit·merge·sti · ← account·collapse·law·limit·merge·sti
 analysis —
 law overdraft is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7b31bb58-6cf5-82a1-9b3c-a91b518420cb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `38e73d49-9601-8344-9c53-41dda031e5c6` · `pnpm readme` · `pnpm computed:check`</sub>

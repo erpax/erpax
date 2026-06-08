@@ -23,7 +23,7 @@
 
 - partition `buddhist` · sub-root `405571da-9653-8ad4-a328-726ce611e855`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ac77fee4-b1ea-8d30-ad39-69abd70894e9` · framed by typography partition `buddhist` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4c9d7467-6202-8208-be08-24c597aa7260` · framed by typography partition `buddhist` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

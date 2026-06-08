@@ -3,15 +3,15 @@
 
 # handling
 
-path `handling` · uuid `bbbc8030-9706-88ef-954c-6d8e1c6bcbc0` · diamond `4d60004b-e625-88cf-b6b5-4668253ee77d`
+path `handling` · uuid `bbbc8030-9706-88ef-954c-6d8e1c6bcbc0` · diamond `1b6703cb-afc6-831c-9c44-2080c918f935`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·time · exports handling · escapes —
-links `5/5` · folded `1` · bonds in `38` out `38`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·akashic·analytics·atom·aura·balance·certified·coding·cohort·cooking·corrects·debit·departure·details·drive·dropoff·game·header·holographic·homeopathic·idempotency·import·landmarks·list·marry·memories·memory·notice·office·pats·qualification·right·risk·sell·spouse·stat·temporarily·virus · ← 3986·akashic·analytics·atom·aura·balance·certified·coding·cohort·cooking·corrects·debit·departure·details·drive·dropoff·game·header·holographic·homeopathic·idempotency·import·landmarks·list·marry·memories·memory·notice·office·pats·qualification·right·risk·sell·spouse·stat·temporarily·virus
+neighbors → collapse·law·merge·sti·time · ← collapse·law·merge·sti·time
 analysis —
 law handling is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d223912a-71f0-85ba-9626-ec3399313cff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28582b8d-2ec9-82eb-a762-eb70d6f8baff` · `pnpm readme` · `pnpm computed:check`</sub>

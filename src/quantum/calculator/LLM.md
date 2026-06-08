@@ -3,15 +3,15 @@
 
 # calculator
 
-path `quantum/calculator` · uuid `2b3e0125-2630-8299-89c1-25dd93ff963e` · diamond `7a823d2a-8e7b-8dfd-b0fb-5254e8171f74`
+path `quantum/calculator` · uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea` · diamond `93b3b611-e64d-842c-9c9f-e3136fec70e8`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/quantum/math · exports const · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·shipped·stat · ← cohort·landmarks·memories·shipped·stat
-analysis diamond·hallucination·purity
+links `9/9` · folded `1` · bonds in `11` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → calculator·collapse·dry·law·law·law·math·medical·merge·quantum·risk·rodin·sti · ← calculator·collapse·dry·law·math·medical·merge·quantum·risk·rodin·sti
+analysis —
 law every result is already folded — `add`, `mul` and `fold` always land in the single-digit range 0..9, and applying `fold` to any of their outputs returns it unchanged (a fixed point), because (ℤ/9ℤ) is closed under the digital root; the substrate has no multi-digit states, so equal inputs are forced to the same digit and the calculator is content-addressable by construction.
 
 ---
 
-<sub>content-uuid `723c32a8-9add-8ddc-9688-3116e5e20e69` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9db3e51-9045-8095-bd6e-05b771973676` · `pnpm readme` · `pnpm computed:check`</sub>

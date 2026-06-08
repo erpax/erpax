@@ -3,15 +3,15 @@
 
 # makes
 
-path `makes` · uuid `570ab0c9-b7a3-8c2f-9c10-fcd633edf8c8` · diamond `b0679b79-c89e-8a1c-9939-9b7eb9675df6`
+path `makes` · uuid `570ab0c9-b7a3-8c2f-9c10-fcd633edf8c8` · diamond `88640529-d685-829a-8637-bf623dce6977`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·offer·sti · exports makes · escapes —
-links `5/5` · folded `1` · bonds in `13` out `13`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·breakfast·center·composite·feed·flight·florist·grantee·landmarks·lineup·partition·reverse·sla · ← balance·breakfast·center·composite·feed·flight·florist·grantee·landmarks·lineup·partition·reverse·sla
+neighbors → collapse·law·merge·offer·sti · ← collapse·law·merge·offer·sti
 analysis —
 law makes is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `af6194c0-139a-87cf-8e6f-581805e19b16` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `79ec148a-daa5-8735-8695-2b2c92da95ed` · `pnpm readme` · `pnpm computed:check`</sub>

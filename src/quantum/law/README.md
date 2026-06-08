@@ -2,7 +2,7 @@
 
 # law
 
-> atom `quantum/law` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/law` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,14 +23,14 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
-- bond degree `2867` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- bond degree `8315` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `fcf8ae30-96e4-8f5f-839d-2f1f9917770c`
-- bonds in `11` · out `11`
+- uuid `fa10b34f-6b3f-86fc-a347-2713251d2798`
+- bonds in `2791` · out `2678`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `f4847900-39c0-898b-9ea6-4c456325624a` · framed by typography partition `quantum` bonds `2867` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c78ddc32-883a-876a-af6c-3c1ed63013d6` · framed by typography partition `quantum` bonds `8315` · `pnpm readme` · `pnpm readme:check`</sub>

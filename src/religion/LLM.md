@@ -3,15 +3,15 @@
 
 # religion
 
-path `religion` · uuid `—` · diamond `2a2746ae-9a7b-8fef-b030-70293a847e2e`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `religion` · uuid `0ceebb11-45ce-8704-9bb3-8a17583e7be1` · diamond `88f023e4-5252-86b8-ac58-8e3b5f8df324`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports angel·animism·archangel·architect·bahai·bogomilism·breath·buddhism·catholicism·christianity·confucianism·covenant·diamond·digit·faith·fractal·generate·gnosticism·harmony·hermeticism·hinduism·holographic·horo·identity·islam·jainism·judaism·kabbalah·karma·law·link·manichaeism·matrix·mercy·merge·metatron·orphism·orthodoxy·paganism·part·prayer·protestantism·quantum·realtime·religion·ritual·rodin·sacred·self·sequence·shamanism·shia·shinto·sikhism·sin·society·sufism·sunni·taoism·translate·translator·uuid·vedanta·void·whole·word·zeropoint·zoroastrianism · exports religion · escapes —
-links `127/127` · folded `0` · bonds in `0` out `0`
+links `127/127` · folded `1` · bonds in `67` out `67`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → angel·animism·archangel·architect·bahai·bogomilism·breath·buddhism·catholicism·christianity·confucianism·covenant·diamond·digit·faith·fractal·generate·gnosticism·harmony·hermeticism·hinduism·holographic·horo·identity·islam·jainism·judaism·kabbalah·karma·law·link·manichaeism·matrix·mercy·merge·metatron·orphism·orthodoxy·paganism·part·prayer·protestantism·realtime·religion·ritual·rodin·sacred·self·sequence·shamanism·shia·shinto·sikhism·sin·society·sufism·sunni·taoism·translate·translator·uuid·vedanta·void·whole·word·zeropoint·zoroastrianism · ← angel·animism·archangel·architect·bahai·bogomilism·breath·buddhism·catholicism·christianity·confucianism·covenant·diamond·digit·faith·fractal·generate·gnosticism·harmony·hermeticism·hinduism·holographic·horo·identity·islam·jainism·judaism·kabbalah·karma·law·link·manichaeism·matrix·mercy·merge·metatron·orphism·orthodoxy·paganism·part·prayer·protestantism·realtime·religion·ritual·rodin·sacred·self·sequence·shamanism·shia·shinto·sikhism·sin·society·sufism·sunni·taoism·translate·translator·uuid·vedanta·void·whole·word·zeropoint·zoroastrianism
+analysis diamond
 law every religion is a surface dialect over prefix-free invariants — stripping the prefix collapses each tradition-term to one content-[[uuid]] (the invariant atom), so src translates all faiths through the atom interlingua in [[realtime]]: many forms to one meaning, never one meaning to many ([[translator]] no-cloning); unity at the root, [[harmony]] (not erasure) at the surface. Each tradition is a complete [[diamond]] composed of invariant sub-diamonds and an [[architect]]/[[archangel]] of the [[society]]; the capstone binds them by the one math (content-[[uuid]] → [[digit]] → [[rodin]] → [[horo]] → [[harmony]]) into one [[diamond]] — diamonds of diamonds forming a diamond, [[fractal]] and [[holographic]] (each is the [[self]]).
 
 ---
 
-<sub>content-uuid `ce23dd3f-5c1d-8618-874f-4ecf37f018c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bcba235c-4867-88e6-aa95-94463ef38f6a` · `pnpm readme` · `pnpm computed:check`</sub>

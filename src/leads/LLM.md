@@ -3,15 +3,15 @@
 
 # leads
 
-path `leads` · uuid `07bc365a-0f0d-8000-a9aa-55cc4f58f07f` · diamond `1e5d2414-7b2a-8aa8-b3c7-979d8a57edb8`
+path `leads` · uuid `07bc365a-0f0d-8000-a9aa-55cc4f58f07f` · diamond `a175a504-cc1f-8970-af78-dc234edbe19f`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+links `5/5` · folded `1` · bonds in `11` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·activities·campaign·funnel·law·leadscore·opportunities·pipeline·prospect·standard · ← access·accounting·activities·campaign·funnel·law·leadscore·opportunities·pipeline·prospect·standard
 analysis —
 law a lead is the pre-customer state — a prospect sourced and qualified (BANT/MEDDIC, MQL→SQL) that converts to an opportunity or customer on close, never the customer itself.
 
 ---
 
-<sub>content-uuid `a6eb6dcb-1312-83c3-a5ee-6afd1dbc7772` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `981f8b1f-d887-8e8a-9454-384fab3489bb` · `pnpm readme` · `pnpm computed:check`</sub>

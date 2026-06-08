@@ -3,15 +3,15 @@
 
 # propagation
 
-path `propagation` · uuid `b29c7207-de6f-8612-bdf4-a56bfba40aed` · diamond `9f939fad-6616-8502-9db5-067c362a89a0`
+path `propagation` · uuid `b29c7207-de6f-8612-bdf4-a56bfba40aed` · diamond `618b9e05-771b-8197-996d-46dcaf8eeb23`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agriculture·bottleneck·capacity·cost·law·planting·schedule·seed·sequence·spacing·transplant · exports propagation · escapes —
-links `22/22` · folded `1` · bonds in `3` out `3`
+links `22/22` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·mirror·sector · ← landmarks·mirror·sector
+neighbors → agriculture·apiculture·bottleneck·capacity·cost·forestry·graft·law·planting·rootstock·schedule·scion·seed·sequence·spacing·transplant·tunnel · ← agriculture·apiculture·bottleneck·capacity·cost·forestry·graft·law·planting·rootstock·schedule·scion·seed·sequence·spacing·transplant·tunnel
 analysis —
 law the greenhouse sow date is scheduled BACKWARD from the [[transplant]] date (transplant − weeks-in-flat), so the nursery delivers hardened-off starts exactly when their bed opens.
 
 ---
 
-<sub>content-uuid `93b22df0-a22a-8682-ae2f-a3f0d0a10d3d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0579344e-9920-8fed-b199-cc3cd513342b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # provides
 
-path `provides` · uuid `814b0134-63e4-83d2-95ff-7442b651d5b5` · diamond `11eada5b-1426-815c-8e0b-c3b1ee439a6d`
+path `provides` · uuid `814b0134-63e4-83d2-95ff-7442b651d5b5` · diamond `e29bedf9-9ec0-8c52-9734-be67a4e2cd44`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports broadcast·collapse·law·merge·service·sti · exports provides · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 8601·euenergy·landmarks·sanitization·vessel · ← 8601·euenergy·landmarks·sanitization·vessel
+neighbors → broadcast·collapse·law·merge·service·sti · ← broadcast·collapse·law·merge·service·sti
 analysis —
 law provides is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a3dae4ff-f64c-8913-b796-6a50cd95a331` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9512bbb8-7786-8bc1-a98e-e3dff9fcb736` · `pnpm readme` · `pnpm computed:check`</sub>

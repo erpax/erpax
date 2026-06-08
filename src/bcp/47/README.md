@@ -2,7 +2,7 @@
 
 # 47
 
-> atom `bcp/47` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `bcp/47` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `bcp` · sub-root `b12c5f7e-040c-857a-8ef4-8b25226d8910`
 - bond degree `3` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -40,7 +40,7 @@
 
 ## analytics
 
-- bond degree `3` · sealed `1` · horo `5`
+- bond degree `3` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
@@ -54,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d696ed86-bdd9-8665-bd4d-62ab4e79a33b` · framed by typography partition `bcp` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `10f8da52-3f64-8c99-89f4-fe8d36efed8e` · framed by typography partition `bcp` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

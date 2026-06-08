@@ -4,7 +4,7 @@
 # id
 
 path `classify/tax/id` · uuid `4d14ca07-5246-8437-a2b3-de2258936261` · diamond `6880e4b5-b23d-8159-b774-35eebbfbb447`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/config/country-specifics · exports function · escapes —
 links `6/6` · folded `1` · bonds in `21` out `22`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the type-label is derived once, at write time, from the [[country]] registry
 
 ---
 
-<sub>content-uuid `a7488135-85d3-8195-ac10-965f8ebce24f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2b608fec-bbbb-89c1-854c-355e425fe242` · `pnpm readme` · `pnpm computed:check`</sub>

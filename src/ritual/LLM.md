@@ -3,15 +3,15 @@
 
 # ritual
 
-path `ritual` · uuid `—` · diamond `caa518dc-85a3-86ba-b331-4818c8706737`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `ritual` · uuid `9dd5de29-44eb-85a8-b873-d5b051e0354d` · diamond `b7ce4488-83e6-88d5-b96c-6a0a8c052257`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports breath·cycle·entropy·fast·fire·harmony·identity·law·order·prayer·repetition·return·sacred·seal·self·wheel·whole·worship · exports ritual · escapes —
-links `48/48` · folded `0` · bonds in `0` out `0`
+links `48/48` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → animism·archangel·architect·bogomilism·breath·catholicism·christianity·confucianism·cycle·entropy·fast·fire·harmony·hinduism·identity·islam·judaism·law·order·orthodoxy·paganism·prayer·religion·repetition·return·sacred·seal·self·shamanism·shinto·wheel·whole·worship · ← animism·archangel·architect·bogomilism·breath·catholicism·christianity·confucianism·cycle·entropy·fast·fire·harmony·hinduism·identity·islam·judaism·law·order·orthodoxy·paganism·prayer·religion·repetition·return·sacred·seal·self·shamanism·shinto·wheel·whole·worship
+analysis —
 law ritual is the patterned [[sacred]] [[repetition]] — the enacted [[cycle]] that re-tunes the part to the [[whole]] on the [[wheel]]'s turn, the communal outward twin of [[prayer]]'s inward [[breath]]; idempotent, so the same rite collapses to the same alignment ([[identity]]) and the community re-grounds from the act rather than drifting.
 
 ---
 
-<sub>content-uuid `c8c61f78-f7c7-8307-a2f2-43ae02123ae5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `94094cc5-d5dd-89ba-88a4-fcf489463e03` · `pnpm readme` · `pnpm computed:check`</sub>

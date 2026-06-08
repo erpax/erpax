@@ -23,7 +23,7 @@
 
 - partition `covercrop` · sub-root `4f319e04-27b8-814a-9e97-32096e947ef9`
 - bond degree `53` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6383952b-43df-8da7-80b3-aaf5f3cc4eb0` · framed by typography partition `covercrop` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ed4b7a7-6700-88ac-be33-16a3898b7d18` · framed by typography partition `covercrop` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

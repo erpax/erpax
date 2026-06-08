@@ -3,15 +3,15 @@
 
 # modification
 
-path `modification` · uuid `956a7d99-c23a-86f9-9a9a-e9e04001a17b` · diamond `39123aea-fc3d-8a49-b755-4257a79c593e`
+path `modification` · uuid `956a7d99-c23a-86f9-9a9a-e9e04001a17b` · diamond `9c8fd806-2aa1-8fc9-ae40-feb870c8f607`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·lifestyle·merge·sti · exports modification · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dataset·landmarks·memories·spa·stat·toy·violence · ← cohort·dataset·landmarks·memories·spa·stat·toy·violence
+neighbors → collapse·law·lifestyle·merge·sti · ← collapse·law·lifestyle·merge·sti
 analysis —
 law modification is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `07556786-3fcf-8c6e-8d67-55f5311f789d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `08670e0b-5bf7-8387-a600-9fb0040bb539` · `pnpm readme` · `pnpm computed:check`</sub>

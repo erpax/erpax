@@ -23,7 +23,7 @@
 
 - partition `befriend` · sub-root `796f0521-699a-8aa0-8a1d-8702e4a79e0d`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ba74c3d2-0a1a-8851-872e-908c93f81049` · framed by typography partition `befriend` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2b7cab2-fe88-8793-bf53-1f9d5343c0c1` · framed by typography partition `befriend` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

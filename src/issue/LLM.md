@@ -3,15 +3,15 @@
 
 # issue
 
-path `issue` · uuid `0c810b86-dc70-89f8-b46f-4a7ae3b8e3de` · diamond `a3b897c5-1dda-8df7-8c0f-21e69dbb5137`
+path `issue` · uuid `0c810b86-dc70-89f8-b46f-4a7ae3b8e3de` · diamond `f6e7fb1b-cec4-82a0-ae91-e25a3068e739`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·comic·law·merge·number·publication·sti · exports issue · escapes —
-links `7/7` · folded `1` · bonds in `44` out `48`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·agriculture·apiculture·aquaculture·balance·batches·biomagnetism·buildings·cooking·crisis·crop·cup·cup·decompression·fertility·footer·hardcover·horo·id·invite·issued·iswc·items·knows·landmarks·landmarks·lineup·login·materials·max·memories·note·overview·overview·position·progression·returns·seat·snapshots·spouse·system·table·tags·tasks·tour·university·user · ← accounting·agriculture·apiculture·aquaculture·balance·batches·biomagnetism·buildings·cooking·crisis·crop·cup·decompression·fertility·footer·hardcover·horo·id·invite·issued·iswc·items·knows·landmarks·lineup·login·materials·max·memories·note·overview·position·progression·returns·seat·snapshots·spouse·system·table·tags·tasks·tour·university·user
+neighbors → collapse·comic·law·merge·number·publication·sti · ← collapse·comic·law·merge·number·publication·sti
 analysis —
 law issue is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6c7dac9f-6900-8896-af21-7eadf71d9ed4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c05613d-552f-810e-bfa0-5edbbd47288f` · `pnpm readme` · `pnpm computed:check`</sub>

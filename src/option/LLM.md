@@ -3,15 +3,15 @@
 
 # option
 
-path `option` · uuid `5cc1752d-d59e-8a54-ad0a-011f90005d96` · diamond `ba112700-0a29-8f2f-b31c-4ab7413e53e3`
+path `option` · uuid `5cc1752d-d59e-8a54-ad0a-011f90005d96` · diamond `c3f6bb44-91f1-892a-908d-1cd73e3003d9`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·coinsurance·contact·copay·drug·health·law·plan·point · exports option · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → action·coinsurance·contact·copay·drug·health·law·plan·point · ← action·coinsurance·contact·copay·drug·health·law·plan·point
 analysis —
 law option is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `137755be-3830-8843-baa4-c59e55bd786c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `25d870b3-51b9-8337-b06d-a82711ed2092` · `pnpm readme` · `pnpm computed:check`</sub>

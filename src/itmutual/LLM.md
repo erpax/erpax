@@ -3,15 +3,15 @@
 
 # itmutual
 
-path `itmutual` · uuid `4e94d7c4-0ece-8b09-aea6-3eb484748491` · diamond `f0a4cad7-3cce-8450-915d-50e0258b875c`
+path `itmutual` · uuid `4e94d7c4-0ece-8b09-aea6-3eb484748491` · diamond `47084553-6364-8d36-bb1b-a87ec0174e4f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports itmutual · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law itmutual is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5e941e46-8883-8195-ba4b-9d893ac96517` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d572ea56-f856-8566-8cf9-4d827aca15ac` · `pnpm readme` · `pnpm computed:check`</sub>

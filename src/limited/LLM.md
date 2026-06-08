@@ -3,15 +3,15 @@
 
 # limited
 
-path `limited` · uuid `dcfd5f2a-0e2a-8069-8a40-137985d32f37` · diamond `ab4f92e6-9e2b-895e-b8c3-78a8e7ea86a5`
+path `limited` · uuid `dcfd5f2a-0e2a-8069-8a40-137985d32f37` · diamond `324272d0-332c-8030-9621-defd68db9197`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports limited · escapes —
-links `4/4` · folded `1` · bonds in `10` out `10`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → branch·cohort·electrician·fdacategory·issn·landmarks·memories·opinion·sanitization·stat · ← branch·cohort·electrician·fdacategory·issn·landmarks·memories·opinion·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law limited is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `93a558d1-226e-85e4-8ff8-25f0304995b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d082261b-29fb-8c97-87f1-dfdb98532822` · `pnpm readme` · `pnpm computed:check`</sub>

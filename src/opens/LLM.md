@@ -3,15 +3,15 @@
 
 # opens
 
-path `opens` · uuid `681519de-9f96-8785-8fdc-461151b253fa` · diamond `7b87b05d-4f0f-80d3-b802-9ccd0e7d6a8e`
+path `opens` · uuid `681519de-9f96-8785-8fdc-461151b253fa` · diamond `85ab9363-79c6-8c27-92cf-161288d394e9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports opens · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·finite·landmarks·law · ← balance·finite·landmarks·law
+neighbors → law·thing · ← law·thing
 analysis —
 law opens is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `227184ef-5ba1-8b22-b843-00e0a6bee5f1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4122ab13-6a80-86e9-a59d-4bb00c0c3984` · `pnpm readme` · `pnpm computed:check`</sub>

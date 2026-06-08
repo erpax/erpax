@@ -23,7 +23,7 @@
 
 - partition `age` · sub-root `80f88272-c47a-8da1-98ce-fafab0cff77d`
 - bond degree `72` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `16c21a75-98f9-87ab-88ce-d7c19138d868` · framed by typography partition `age` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ebbbd940-d944-82b0-b1f1-323bea21859c` · framed by typography partition `age` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

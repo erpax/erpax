@@ -3,15 +3,15 @@
 
 # msrp
 
-path `msrp` · uuid `ff9d7605-d6c6-8787-a32b-19e533b29acb` · diamond `4eef448f-9887-816e-9804-242a483563c3`
+path `msrp` · uuid `ff9d7605-d6c6-8787-a32b-19e533b29acb` · diamond `300f35f3-4427-8cbb-9397-7e027b66451a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports msrp · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·landmarks · ← action·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law msrp is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2b657181-a972-8cd2-b0bf-b2ea7c093897` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc973f1e-52e2-877e-8e72-515178d1c5cc` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # roles
 
-path `roles/user/roles` · uuid `ddd21d8e-a056-8b0c-922d-f903661d130f` · diamond `66584911-fbf9-82c9-8a87-dc8952dfdd0f`
+path `roles/user/roles` · uuid `ddd21d8e-a056-8b0c-922d-f903661d130f` · diamond `97ef5a36-c81a-872a-9bfc-d88ae8647c42`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/is/super/admin·@/roles/user/roles/hooks · exports const · escapes —
-links `7/7` · folded `1` · bonds in `9` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → competency·homeopathic·landmarks·marine·pats·query·safety·sections·solve · ← competency·homeopathic·landmarks·marine·pats·query·safety·sections·solve
+links `7/7` · folded `1` · bonds in `9` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·access·agent·classroom·cross·identity·law·law·rodin·roles·users · ← access·agent·classroom·cross·identity·law·rodin·roles·users
 analysis —
 law a user-role is the join that grants a [[users|user]] the capabilities and skill routes of one linked [[roles|role]]; the assignment is deduplicated by hook ([[access]]).
 
 ---
 
-<sub>content-uuid `34f259ad-275d-8e57-93cd-d7cd8763c23e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d3297b5-1b23-889f-ad62-56d458666f9d` · `pnpm readme` · `pnpm computed:check`</sub>

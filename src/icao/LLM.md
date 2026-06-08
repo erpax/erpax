@@ -3,15 +3,15 @@
 
 # icao
 
-path `icao` · uuid `a78d8f46-eca1-8c53-a232-74c96630b549` · diamond `60fda1a6-f93e-888c-859b-74f93057b660`
+path `icao` · uuid `a78d8f46-eca1-8c53-a232-74c96630b549` · diamond `908787dd-fd2b-8eef-92d0-08a7ff1f3ef9`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports icao · escapes —
-links `5/5` · folded `1` · bonds in `6` out `5`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → decontextualized·infectious·itsocial·received·tour · ← brewery·decontextualized·infectious·itsocial·received·tour
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law icao is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5f20ea32-a611-8fd6-b917-18af618316ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2992569b-b934-8762-bd17-934bcf49474a` · `pnpm readme` · `pnpm computed:check`</sub>

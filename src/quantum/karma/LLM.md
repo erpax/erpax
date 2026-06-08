@@ -3,15 +3,15 @@
 
 # karma
 
-path `quantum/karma` · uuid `e70d8816-0afe-80d9-8354-fe381dc4e796` · diamond `7383bae5-01bb-865f-aad9-bffd4d7e1a49`
+path `quantum/karma` · uuid `e70d8816-0afe-80d9-8354-fe381dc4e796` · diamond `9191794a-32be-85ba-adb1-821e877a4b0e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/dna·@/karma · exports const · escapes —
-links `17/17` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·cycle·landmarks·memories·stat·utterance · ← cohort·cycle·landmarks·memories·stat·utterance
+links `17/17` · folded `1` · bonds in `33` out `34`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·dna·entanglement·entropy·entropy·entry·expense·fear·heart·hinduism·jainism·karma·law·lineage·love·mercy·merge·peace·quantum·quantum·religion·tag·tamper·wallet·zoroastrianism · ← accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·entanglement·entropy·entry·expense·fear·fear·heart·hinduism·jainism·karma·law·lineage·love·love·mercy·merge·peace·quantum·religion·tag·tamper·wallet·zoroastrianism
 analysis —
 law an atom's karma is netted along itself AND its whole DNA lineage (`[atom, ...genome(atom)]`), never beside the account; because each child's content-uuid folds its parent, editing any ancestor shifts the descendant's inherited balance and its uuid together — so the moral debt read down the chain cannot be silently rewritten.
 
 ---
 
-<sub>content-uuid `878e3b7e-283e-8724-bfc8-90115d88edc7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `88adb149-264d-84a2-aca1-e74e425e8c99` · `pnpm readme` · `pnpm computed:check`</sub>

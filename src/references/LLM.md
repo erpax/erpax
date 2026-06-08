@@ -3,15 +3,15 @@
 
 # references
 
-path `references` · uuid `6bf01c5a-f5d1-8de2-8e4c-1bf3fc26ee5c` · diamond `3f459721-5258-8dca-ab58-e8c5a589566a`
+path `references` · uuid `6bf01c5a-f5d1-8de2-8e4c-1bf3fc26ee5c` · diamond `581514c1-7803-8f68-bba2-d5902ace65aa`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·order·sti · exports references · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·order·sti · ← collapse·law·merge·order·sti
 analysis —
 law references is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `eed6e469-1013-8d1a-a35a-4422115e9e0e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `48a0abf5-b369-87da-986c-cc50af254271` · `pnpm readme` · `pnpm computed:check`</sub>

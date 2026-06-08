@@ -3,15 +3,15 @@
 
 # possible
 
-path `possible` · uuid `95535a6d-5725-853f-ba86-1c5c1bbdcdec` · diamond `bd72c202-9e70-88c0-95c1-7d90c14ebb1e`
+path `possible` · uuid `95535a6d-5725-853f-ba86-1c5c1bbdcdec` · diamond `a3025b3d-3917-8faf-81a4-8cbb1d524003`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·complication·law·merge·sti·treatment · exports possible · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·complication·law·merge·sti·treatment · ← collapse·complication·law·merge·sti·treatment
 analysis —
 law possible is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f586dcc5-6e7d-8ff0-84af-f8d5d6e801c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84c2b7bf-ad9d-83f5-b83d-7ebba7d34dee` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # reimbursement
 
-path `reimbursement` · uuid `a5919c12-8264-8875-8bc6-c93a5643faa8` · diamond `20d44af5-00cd-83ca-8808-4c121a87d1b6`
+path `reimbursement` · uuid `a5919c12-8264-8875-8bc6-c93a5643faa8` · diamond `4f80ace8-d976-8b10-9e45-64d361e0416f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports reimbursement · escapes —
-links `4/4` · folded `1` · bonds in `12` out `12`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → analytics·anchor·balance·cohort·comedy·corrects·grant·marry·memories·postcode·sell·symbol · ← analytics·anchor·balance·cohort·comedy·corrects·grant·marry·memories·postcode·sell·symbol
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law reimbursement is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9b35c215-3804-8edd-88c9-adc40b666699` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e775b5e9-b14a-868b-9559-c3d153358978` · `pnpm readme` · `pnpm computed:check`</sub>

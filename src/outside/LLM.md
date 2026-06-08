@@ -3,15 +3,15 @@
 
 # outside
 
-path `outside` · uuid `f5b2670d-05f9-8a0e-b117-2723a2c49171` · diamond `16b412c4-e940-86b8-b763-1f2ddd642e52`
+path `outside` · uuid `f5b2670d-05f9-8a0e-b117-2723a2c49171` · diamond `5d9e35f5-5442-81c1-8958-ed2212d46ec7`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports outside · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terms · ← landmarks·terms
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law outside is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f1ddf5c2-04bd-8472-9448-0b800c901249` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3fb2f950-5f58-802b-a3c8-66d84eb3af76` · `pnpm readme` · `pnpm computed:check`</sub>

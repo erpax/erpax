@@ -3,15 +3,15 @@
 
 # relevant
 
-path `relevant` · uuid `c020f7f3-216f-8ec5-bbbc-a1ca83c17769` · diamond `a4bdcec6-19c8-8620-bdac-3bc4e339463b`
+path `relevant` · uuid `c020f7f3-216f-8ec5-bbbc-a1ca83c17769` · diamond `e07e624b-95ee-8356-8ec6-57a938597ab2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·occupation·specialty·sti · exports relevant · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·occupation·specialty·sti · ← collapse·law·merge·occupation·specialty·sti
 analysis —
 law relevant is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fd34ccc7-bb8a-81f4-9afe-5acf50dbb0dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdb3055b-570e-822d-a52c-c827929ea003` · `pnpm readme` · `pnpm computed:check`</sub>

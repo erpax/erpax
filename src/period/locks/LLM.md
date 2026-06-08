@@ -3,15 +3,15 @@
 
 # locks
 
-path `period/locks` · uuid `fa79eff9-12f7-8b1f-8bae-b719d43bad20` · diamond `2e776ea4-e634-8f34-ab97-08960399685b`
+path `period/locks` · uuid `fa79eff9-12f7-8b1f-8bae-b719d43bad20` · diamond `7940e935-5df8-8d40-982f-2e60f1d2a4ef`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth · exports const · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·unsaturated · ← cohort·landmarks·memories·stat·unsaturated
+neighbors → accounting·law·lock·period · ← accounting·law·lock·period
 analysis —
 law a period lock is the gate that closes an accounting [[period]] to new postings while still permitting reversals and prior-period adjustments, recording who closed it and when.
 
 ---
 
-<sub>content-uuid `515f4e89-b133-8858-b9ae-e9e261df3c7a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `058bd6c9-ff43-8045-bb8a-3b6971f5d371` · `pnpm readme` · `pnpm computed:check`</sub>

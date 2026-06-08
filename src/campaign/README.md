@@ -23,7 +23,7 @@
 
 - partition `campaign` · sub-root `9c47542c-311c-8582-8ea9-89b07c5f296a`
 - bond degree `15` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a513743e-9eaf-8a5c-a3f0-0cf1ff0711cf` · framed by typography partition `campaign` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b0999447-0e57-864c-bcab-84bb31940053` · framed by typography partition `campaign` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

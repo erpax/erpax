@@ -3,15 +3,15 @@
 
 # radiation
 
-path `radiation` · uuid `0aa3449f-abd6-8caa-979f-854cd0499d71` · diamond `467ad614-28a7-8bbb-9f13-155643eaf38a`
+path `radiation` · uuid `0aa3449f-abd6-8caa-979f-854cd0499d71` · diamond `c9ce69d4-1b35-8eba-bedd-64d4a76f90e9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·therapy · exports radiation · escapes —
-links `5/5` · folded `1` · bonds in `16` out `16`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aggregate·benefits·center·commissions·contained·endocrine·entropy·expense·landmarks·mail·meal·pipelines·retail·srp·urologic·within · ← aggregate·benefits·center·commissions·contained·endocrine·entropy·expense·landmarks·mail·meal·pipelines·retail·srp·urologic·within
+neighbors → biomagnetism·biophoton·collapse·law·merge·sti·therapy · ← biomagnetism·biophoton·collapse·law·merge·sti·therapy
 analysis —
 law radiation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `57e183f1-68d9-86d0-bf0c-c3b65d5a4428` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83fed220-607b-8f15-873c-99edca5b1d74` · `pnpm readme` · `pnpm computed:check`</sub>

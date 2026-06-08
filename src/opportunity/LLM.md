@@ -3,15 +3,15 @@
 
 # opportunity
 
-path `opportunity` · uuid `edebdfda-c15d-840a-870d-3e99c2e75507` · diamond `5be9cb4f-0bc8-84b8-a11b-63865c69b8ae`
+path `opportunity` · uuid `edebdfda-c15d-840a-870d-3e99c2e75507` · diamond `972dd635-6964-8939-9927-49513665b54e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·law·opportunities·sales · exports opportunity · escapes —
-links `7/7` · folded `1` · bonds in `18` out `18`
+links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·audit·center·composite·conventional·cover·crisis·fire·instrument·landmarks·lifestyle·longitude·performance·progression·seat·spouse·spreadsheet·vibration · ← agriculture·audit·center·composite·conventional·cover·crisis·fire·instrument·landmarks·lifestyle·longitude·performance·progression·seat·spouse·spreadsheet·vibration
+neighbors → balance·law·opportunities·sales · ← balance·law·opportunities·sales
 analysis —
 law one opportunity is the singular model of exactly one row in its plural store, so the model and the collection stay in one-to-one balance — no row without its model, no model without its row.
 
 ---
 
-<sub>content-uuid `0865b415-8bcd-809a-9e53-228758518605` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93b33d92-a60d-80ab-8a82-b430592d12f7` · `pnpm readme` · `pnpm computed:check`</sub>

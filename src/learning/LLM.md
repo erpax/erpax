@@ -3,15 +3,15 @@
 
 # learning
 
-path `learning` · uuid `13d0ec7e-2d2f-8ed4-8d11-4ed66c56c355` · diamond `b74c2564-d69d-8f20-9ad2-a937f4dbe076`
+path `learning` · uuid `13d0ec7e-2d2f-8ed4-8d11-4ed66c56c355` · diamond `923d0bed-9733-880c-84e4-d99beea32ee8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·resource·sti·type · exports learning · escapes —
-links `6/6` · folded `1` · bonds in `17` out `16`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·calendars·cohort·contingency·decentralization·driving·followup·landmarks·lei·memories·musical·replacee·separation·standards·stat·urologic · ← address·calendars·cohort·commerce·contingency·decentralization·driving·followup·landmarks·lei·memories·musical·replacee·separation·standards·stat·urologic
+neighbors → collapse·law·merge·resource·sti·type · ← collapse·law·merge·resource·sti·type
 analysis —
 law learning is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `22037540-8aee-8557-b37d-0d26c748fbc6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `57ea997f-252a-8ed3-9bc8-9ebba1ed7e32` · `pnpm readme` · `pnpm computed:check`</sub>

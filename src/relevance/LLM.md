@@ -3,15 +3,15 @@
 
 # relevance
 
-path `relevance` · uuid `0e376791-731b-8d6f-8c3b-ada5dc1bd93c` · diamond `fd514d7b-b50d-85f5-98eb-94568a4c0e71`
+path `relevance` · uuid `0e376791-731b-8d6f-8c3b-ada5dc1bd93c` · diamond `f5e09b7a-c80a-8523-b279-de65f102f749`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports relevance · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·literary·memories·stat · ← cohort·landmarks·literary·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law relevance is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0f06bea9-7be5-8890-a92e-259068be4b32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bef74485-d230-8327-a75b-4e4cfd8f596b` · `pnpm readme` · `pnpm computed:check`</sub>

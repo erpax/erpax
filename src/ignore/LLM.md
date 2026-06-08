@@ -3,15 +3,15 @@
 
 # ignore
 
-path `ignore` · uuid `13de5785-f2f7-8896-8a6e-2571c752920c` · diamond `dc370846-79a3-871b-a6ff-b6b8bdbf16e0`
+path `ignore` · uuid `13de5785-f2f7-8896-8a6e-2571c752920c` · diamond `4af4441d-1e94-8f7e-8886-eec6810ac985`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports ignore · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·itnonprofit·landmarks·memories·stack·stat · ← cohort·itnonprofit·landmarks·memories·stack·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law ignore is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `064e66d0-c206-813a-a424-af31294a89f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3869625b-bbc2-81c5-9f98-0f831180eb5b` · `pnpm readme` · `pnpm computed:check`</sub>

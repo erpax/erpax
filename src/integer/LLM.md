@@ -3,15 +3,15 @@
 
 # integer
 
-path `integer` · uuid `c1b13291-8bb1-852d-b9f2-630e3a58472c` · diamond `289ac2a7-7d7a-89ff-8307-f85224d4a198`
+path `integer` · uuid `c1b13291-8bb1-852d-b9f2-630e3a58472c` · diamond `240011fd-b511-8b59-b3e2-0926dc54dcef`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports integer · escapes —
-links `2/2` · folded `1` · bonds in `13` out `13`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·bindings·checklist·cohort·landmarks·memories·pipelines·requisitions·sanitization·separation·stand·stat·until · ← agent·bindings·checklist·cohort·landmarks·memories·pipelines·requisitions·sanitization·separation·stand·stat·until
+neighbors → law·thing · ← law·thing
 analysis —
 law integer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `603a417e-d912-8125-a2f2-6ebbbbd18989` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `79bde420-34a5-8e64-851c-416955e18266` · `pnpm readme` · `pnpm computed:check`</sub>

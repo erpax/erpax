@@ -3,15 +3,15 @@
 
 # production
 
-path `production` · uuid `b6cee662-db61-82e5-839e-0c2d9d3d5a5d` · diamond `23186ca3-22b0-89d9-b86f-2ccfa39ea5d4`
+path `production` · uuid `b6cee662-db61-82e5-839e-0c2d9d3d5a5d` · diamond `96ed1437-50c9-81ad-8a1d-e8c4d80829d6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports album·collapse·company·date·law·merge·music·sti·type · exports production · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·lactose·landmarks·memories·misses·stat · ← cohort·lactose·landmarks·memories·misses·stat
+neighbors → album·collapse·company·date·law·merge·music·sti·type · ← album·collapse·company·date·law·merge·music·sti·type
 analysis —
 law production is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cb78be38-8404-892f-ad39-303c5d854473` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b38cc64-9d81-86b4-920b-ba57f500bfc1` · `pnpm readme` · `pnpm computed:check`</sub>

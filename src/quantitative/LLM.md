@@ -3,15 +3,15 @@
 
 # quantitative
 
-path `quantitative` · uuid `6d82e628-e638-8343-9710-b8578ab7385d` · diamond `8848bf35-6079-8b8a-bc0c-2cd70b09374a`
+path `quantitative` · uuid `6d82e628-e638-8343-9710-b8578ab7385d` · diamond `82151aba-b615-895c-a9c1-49ba2e6f5e70`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·distribution·law·merge·sti·value · exports quantitative · escapes —
-links `6/6` · folded `1` · bonds in `12` out `12`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·cohort·gears·landmarks·list·marry·mcp·memories·parlor·range·tinid·venue · ← atom·cohort·gears·landmarks·list·marry·mcp·memories·parlor·range·tinid·venue
+neighbors → collapse·distribution·law·merge·sti·value · ← collapse·distribution·law·merge·sti·value
 analysis —
 law a quantitative value is a magnitude inseparable from its unit — the number alone is undefined, so comparison or arithmetic is valid only between values sharing one commensurable unit.
 
 ---
 
-<sub>content-uuid `98f492b0-28f4-871d-92d0-e38b1c55b5bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16beda6b-efd9-862c-82e4-712dc1e57b19` · `pnpm readme` · `pnpm computed:check`</sub>

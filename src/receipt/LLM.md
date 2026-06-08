@@ -3,15 +3,15 @@
 
 # receipt
 
-path `receipt` · uuid `28b58bdc-d91c-8477-89cb-fcae1465ae53` · diamond `4f189244-ef2d-8447-bb20-c08e7d36bb1e`
+path `receipt` · uuid `28b58bdc-d91c-8477-89cb-fcae1465ae53` · diamond `32750db1-1dc1-81d1-84fe-31e626e01eae`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports Receipt·function·interface · escapes —
-links `21/21` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → gtin8·landmarks·measurement·steering · ← gtin8·landmarks·measurement·steering
+links `21/21` · folded `1` · bonds in `25` out `22`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·bindings·blood·exchange·history·holographic·identity·log·mcp·merge·peace·proof·request·research·sandbox·sanitization·security·self·society·trading·uuid·vein · ← access·access·bindings·blood·exchange·history·holographic·identity·log·mcp·mcp·merge·peace·proof·request·research·research·sandbox·sanitization·security·self·society·trading·uuid·vein
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a6902d5b-ab18-8152-b30d-c93da8f73b47` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c70cf33a-3eb6-84cd-ba1b-d7c662f5978c` · `pnpm readme` · `pnpm computed:check`</sub>

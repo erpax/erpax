@@ -3,15 +3,15 @@
 
 # positive
 
-path `positive` · uuid `4af42787-a61d-82b6-b59f-b3f818a92d87` · diamond `86cdcc5f-acad-8b97-82c4-97f9cdb02527`
+path `positive` · uuid `4af42787-a61d-82b6-b59f-b3f818a92d87` · diamond `32392d4e-0a87-82d8-8229-b923edbc6ebd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·notes·sti · exports positive · escapes —
-links `5/5` · folded `1` · bonds in `11` out `11`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → blocks·cohort·discount·format·itnonprofit·landmarks·live·meal·memories·skills·stat · ← blocks·cohort·discount·format·itnonprofit·landmarks·live·meal·memories·skills·stat
+neighbors → collapse·law·merge·notes·sti · ← collapse·law·merge·notes·sti
 analysis —
 law positive is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c315aca3-0e5b-8c59-891f-c1dff8231630` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a46e8008-de87-8841-873d-08b5718312df` · `pnpm readme` · `pnpm computed:check`</sub>

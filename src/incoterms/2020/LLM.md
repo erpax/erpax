@@ -3,15 +3,15 @@
 
 # 2020
 
-path `incoterms/2020` · uuid `f838d825-c4fd-822e-958f-686d5cb6fe5c` · diamond `377c3a7d-6521-8f13-984a-44ba382b90a5`
+path `incoterms/2020` · uuid `f838d825-c4fd-822e-958f-686d5cb6fe5c` · diamond `beb46e3e-fd11-8682-85bb-d997bf449659`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports Incoterm2020·const · escapes —
-links `0/0` · folded `1` · bonds in `6` out `6`
+links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pharmacy·privilege·stat · ← cohort·landmarks·memories·pharmacy·privilege·stat
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `6a81334b-7d09-81ef-a7c6-755257e50618` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2168dfc1-d2a9-8966-be23-d33c9a2e6d3c` · `pnpm readme` · `pnpm computed:check`</sub>

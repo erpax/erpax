@@ -4,7 +4,7 @@
 # reporting
 
 path `audit/compliance/reporting` · uuid `caa3c982-4c08-8075-844b-01fe88af0b39` · diamond `0296d237-a12c-8e4e-93c1-6744d3f3a315`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports AuditComplianceReporting · escapes —
 links `0/0` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ca81cc2f-cf59-835f-aa82-70d0af807de9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `945a78b4-3048-8a19-b156-5b95c507c6dc` · `pnpm readme` · `pnpm computed:check`</sub>

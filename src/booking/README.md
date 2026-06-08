@@ -23,7 +23,7 @@
 
 - partition `booking` · sub-root `e1778417-9ecd-8679-9ccc-79eabab26480`
 - bond degree `35` · analysis neighbors `agent`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c171d6d1-96d9-8515-9415-5be50a799ccb` · framed by typography partition `booking` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `31b83c69-ecd2-8e3d-8a29-254e4ed9aa71` · framed by typography partition `booking` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

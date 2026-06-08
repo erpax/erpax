@@ -20,7 +20,7 @@
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  * @compliance SOX §404 internal-controls fx-revaluation-evidence
  * @see ../services/country-api-clients.ts (lookupBnbExchangeRate)
- * @see ../config/country-apis.ts (БНБ rates entry, clientImplemented: true)
+ * @see ../country/api.ts (БНБ rates entry, clientImplemented: true)
  */
 
 import type { Payload } from 'payload'

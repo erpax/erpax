@@ -3,15 +3,15 @@
 
 # latitude
 
-path `latitude` · uuid `41b397a8-85c8-8477-8afa-21ed03c43458` · diamond `f7167f24-e2ef-8a7f-86fa-12acf5bbcaba`
+path `latitude` · uuid `41b397a8-85c8-8477-8afa-21ed03c43458` · diamond `6f56dfee-9828-819a-a32b-24872d0c0595`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports latitude · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·landmarks·laundry·law·pronouns·section · ← activities·landmarks·laundry·law·pronouns·section
+neighbors → law·place·thing · ← law·place·thing
 analysis —
 law latitude is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `98fa5f21-f008-8a4b-8ff1-68fa8ca9a28f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8371a6b-049f-833d-9c79-bc1690d628ba` · `pnpm readme` · `pnpm computed:check`</sub>

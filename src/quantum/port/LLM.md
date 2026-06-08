@@ -3,15 +3,15 @@
 
 # port
 
-path `quantum/port` · uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a` · diamond `1e494013-7932-8071-89a7-e9d767d3cc1a`
+path `quantum/port` · uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a` · diamond `b79bbf9d-2932-8cd7-b654-f0ba0456642f`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `10/10` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·memories·stat · ← cohort·database·landmarks·memories·stat
-analysis quantum/boundary·tamper/import
+links `10/10` · folded `1` · bonds in `40` out `42`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·law·manufacturing·measure·merge·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid · ← access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid
+analysis —
 law the port-uuid is a pure function of the source content, so re-porting is idempotent — an unchanged source always ports to the same identity and merges to a no-op, while only a genuinely changed source yields a new one; "port all upstreams again" can run any number of times and the ported set is fixed, surfacing only the real gaps.
 
 ---
 
-<sub>content-uuid `9428dbd9-9ca5-8b9a-8eb8-6e128ce588c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `24387ee3-67c4-87ad-aaea-bcc7596372d5` · `pnpm readme` · `pnpm computed:check`</sub>

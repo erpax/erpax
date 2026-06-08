@@ -3,15 +3,15 @@
 
 # entities
 
-path `legal/entities` · uuid `2046f58e-868a-8d9d-a590-07f08cf6e000` · diamond `dc5d864b-8a62-8bb2-9da2-ac6fabbe5a1c`
+path `legal/entities` · uuid `2046f58e-868a-8d9d-a590-07f08cf6e000` · diamond `bbb6393d-b085-8bf8-aa05-b549c106eb9a`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `15/15` · folded `1` · bonds in `3` out `3`
+links `15/15` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → committees·landmarks·lease · ← committees·landmarks·lease
+neighbors → calendars·certifications·checklists·combinations·committees·consolidations·deadlines·files·functions·icfrs·owners·registers·reportings·reports·schedules·taxexempt·transactions · ← calendars·certifications·checklists·combinations·committees·consolidations·deadlines·files·functions·icfrs·owners·registers·reportings·reports·schedules·taxexempt·transactions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a2143128-3697-86af-b225-c63a569b117d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfb187e7-b22f-8bbd-926e-dea9b08dc296` · `pnpm readme` · `pnpm computed:check`</sub>

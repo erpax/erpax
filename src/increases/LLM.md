@@ -3,15 +3,15 @@
 
 # increases
 
-path `increases` · uuid `b9322efb-b6ca-8393-8c1b-377ecdc6ce17` · diamond `f1c4d0e3-3541-8c4c-99b1-6a7acaa0f507`
+path `increases` · uuid `b9322efb-b6ca-8393-8c1b-377ecdc6ce17` · diamond `275c4524-8d3d-8c70-ab6f-c16591cebc81`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·risk·sti · exports increases · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·season·terminals · ← landmarks·season·terminals
+neighbors → collapse·law·merge·risk·sti · ← collapse·law·merge·risk·sti
 analysis —
 law increases is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ec2f9829-4d26-8fb8-923f-c10af8891545` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f881b938-a134-88c4-bcae-f003fd888905` · `pnpm readme` · `pnpm computed:check`</sub>

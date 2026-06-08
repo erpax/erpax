@@ -140,7 +140,10 @@ const SRC = 'src'
  */
 
 /** Fail-closed verifier — lists impurities; sealed only when the lattice holds. */
-export function verifyDiamond(model: DiamondModel | CollectionDiamondModel): {
+export function verifyDiamond(
+  model: DiamondModel | CollectionDiamondModel,
+  opts?: { readonly parentSealed?: boolean },
+): {
   sealed: boolean
   impurities: string[]
 } {
@@ -160,6 +163,9 @@ export function verifyDiamond(model: DiamondModel | CollectionDiamondModel): {
     impurities.push(`boundary escapes (${model.escapes.length}): ${model.escapes.slice(0, 3).join(', ')}`)
   }
   if (!model.folded && model.kind === 'atom') impurities.push('not folded into matrix')
+  if (model.sealed && opts?.parentSealed === false) {
+    impurities.push('seal propagation: parent unsealed forbids child sealed')
+  }
   if (model.kind === 'collection') {
     const c = model as CollectionDiamondModel
     if (c.tamperProofUuid && !c.trinity.code) impurities.push('collection missing code barrel (index.ts)')

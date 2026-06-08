@@ -7,11 +7,11 @@ path `registry` · uuid `14207f66-d6a3-8e67-a64d-bfef0f2c9d8f` · diamond `2bb2a
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports StandardFamily·function·interface · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+faces worker·plugin·pwa `1·0·0`
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law registry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `20c8dbc0-c970-82b2-aac2-b55a3c3e175e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2511a1b2-8f51-8c58-8d24-b1fbb800e231` · `pnpm readme` · `pnpm computed:check`</sub>

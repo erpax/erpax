@@ -25,7 +25,21 @@
 
 - partition `duality` · sub-root `32d1b730-f4a8-82a7-9075-0d3c1f5fb9b3`
 - bond degree `371` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `dual pairs are read from the SKILL.md markers and trusted only when intentional — never asserted` · banner
+
+## analytics
+
+- bond degree `371` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `7b1f1201-54ee-8393-bd9d-49a27d4f7511` · framed by typography partition `duality` bonds `371` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d3127a8-66e6-8cbf-ab57-21d5c0afbabf` · framed by typography partition `duality` bonds `371` · `pnpm readme` · `pnpm readme:check`</sub>

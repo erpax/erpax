@@ -3,15 +3,15 @@
 
 # polarity
 
-path `rodin/polarity` · uuid `8ae85e53-11c2-8763-ba1d-af8864adebf5` · diamond `66c9da57-ab48-8fc4-9c74-0b7b5c1345f2`
+path `rodin/polarity` · uuid `8ae85e53-11c2-8763-ba1d-af8864adebf5` · diamond `d4cec74b-59ab-8c5c-8647-ca43f6284f8e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports axis·balance·cmyk·coil·duality·give·rodin·take · exports polarity · escapes —
-links `16/16` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → certified·homeopathic·landmarks · ← certified·homeopathic·landmarks
+links `16/16` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → axis·balance·breath·cmyk·coil·decompression·duality·give·horo·rodin·signal·take · ← axis·balance·breath·cmyk·coil·decompression·duality·give·horo·rodin·signal·take
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `7ef90dd9-55f7-8b06-b5bf-7c6e26fa9f5b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `471bf25a-455f-811b-a9d5-2d6e9eac862c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # notifications
 
-path `legal/entities/compliance/deadlines/compliance/notifications` · uuid `b3c1a0e4-794c-892d-b8e2-cc37799fe6d7` · diamond `96f985b5-fc56-894e-a92c-c04bbc03f8df`
+path `legal/entities/compliance/deadlines/compliance/notifications` · uuid `b3c1a0e4-794c-892d-b8e2-cc37799fe6d7` · diamond `fb42edef-9000-8ddd-bee9-30f3ff7460ed`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `5` out `5`
+links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → food·income·landmarks·lease·reverse · ← food·income·landmarks·lease·reverse
+neighbors → deadlines · ← deadlines
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `dbe477d8-a088-88b7-b59e-db4538c8502e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7a42f3d-5a6f-8fe4-9237-430cad51ab23` · `pnpm readme` · `pnpm computed:check`</sub>

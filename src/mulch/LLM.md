@@ -3,15 +3,15 @@
 
 # mulch
 
-path `mulch` · uuid `62c100e9-edb2-84cb-9a64-ba215f5245a2` · diamond `7a5519c7-5d9c-8b68-9c35-c0c62c9df294`
+path `mulch` · uuid `62c100e9-edb2-84cb-9a64-ba215f5245a2` · diamond `ee62c8fe-9c5d-84b0-a44b-e297dbab5447`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·cost·covercrop·cultivation·irrigation·moisture·soil·transplant · exports mulch · escapes —
-links `17/17` · folded `1` · bonds in `4` out `4`
+links `17/17` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agriculture·cost·covercrop·cultivation·irrigation·moisture·scouting·soil·tillage·transplant · ← agriculture·cost·covercrop·cultivation·irrigation·moisture·scouting·soil·tillage·transplant
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `59557e31-10e5-8df1-86e2-d1c86bbafd91` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85f899d8-5b18-8fc2-9609-cc1a3f456470` · `pnpm readme` · `pnpm computed:check`</sub>

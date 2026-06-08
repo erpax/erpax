@@ -3,15 +3,15 @@
 
 # material
 
-path `material` · uuid `3fd0bf13-a354-847e-b47c-ad497b54451c` · diamond `7bdc2d8c-252d-849a-93df-b3b54e88e2bb`
+path `material` · uuid `3fd0bf13-a354-847e-b47c-ad497b54451c` · diamond `d9ebf498-91e2-85ba-b675-9359082036b8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports extent·law · exports material · escapes —
-links `2/2` · folded `1` · bonds in `13` out `14`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·chemical·cohort·effective·endpoint·files·landmarks·memories·prerequisites·replacer·sampling·stat·subscription·urologic · ← age·cohort·effective·endpoint·files·landmarks·memories·prerequisites·replacer·sampling·stat·subscription·urologic
+neighbors → extent·law · ← extent·law
 analysis —
 law material is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1c756599-f961-8155-ae16-a88be38052cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9e74cf9b-9f5d-8179-b71b-e46c04d1c367` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports refers · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law refers is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d1659a92-6820-8e32-bca4-8f4e795c92d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c83b1046-10ed-8fb4-845e-6a817a3fbcbe` · `pnpm readme` · `pnpm computed:check`</sub>

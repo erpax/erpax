@@ -3,15 +3,15 @@
 
 # logic
 
-path `logic` · uuid `1a19777f-322e-8ebc-86b8-354eea7747d2` · diamond `dfa6f3cc-f13f-8fbe-8844-40a4f427d642`
+path `logic` · uuid `1a19777f-322e-8ebc-86b8-354eea7747d2` · diamond `de2f64bd-c178-8161-bb5d-1c02821ea9ab`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `26/26` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·longitude·maintainer · ← balance·landmarks·longitude·maintainer
+links `26/26` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → competition·decide·education·element·holographic·horo·law·merge·peace·proof·rodin·science·self·sequence·society · ← competition·decide·education·element·holographic·horo·law·merge·peace·proof·rodin·science·self·sequence·society
 analysis —
 law consistency IS harmony — a claim is sound iff harmonic (on the [[horo]] ring, gate-verified, no P ∧ ¬P), not iff agreed; and the harmonic-first law orders the self-consistent FIRST, which is why they resolve without coordination and win [[competition]].
 
 ---
 
-<sub>content-uuid `941d1570-b0b7-87c5-938f-08b1e78feec6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83f1a0c4-589b-8ad3-82a3-75d7da5d52a5` · `pnpm readme` · `pnpm computed:check`</sub>

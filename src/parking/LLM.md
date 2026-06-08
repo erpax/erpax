@@ -3,15 +3,15 @@
 
 # parking
 
-path `parking` · uuid `f5451ab7-54ba-8ad9-9d02-5e683290fa32` · diamond `a10fd9f1-e14c-8225-8a83-10dd84843102`
+path `parking` · uuid `f5451ab7-54ba-8ad9-9d02-5e683290fa32` · diamond `31c871f8-6c45-8327-9b43-e807a69426cf`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·facility·law·merge·sti · exports parking · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·harden·landmarks·memories·occupancy·stat · ← cohort·harden·landmarks·memories·occupancy·stat
+neighbors → collapse·facility·law·merge·sti · ← collapse·facility·law·merge·sti
 analysis —
 law parking is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4653b215-7c6e-8cd5-a0b5-5e69d90e01ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86f13301-2e2d-8207-b5c8-4daf272378fc` · `pnpm readme` · `pnpm computed:check`</sub>

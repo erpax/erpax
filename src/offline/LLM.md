@@ -3,15 +3,15 @@
 
 # offline
 
-path `offline` · uuid `7c9b8d1a-ac94-823b-ac2f-0ae7e6efa9eb` · diamond `0206403d-4e1b-8a95-8380-4d6b58a2c044`
+path `offline` · uuid `7c9b8d1a-ac94-823b-ac2f-0ae7e6efa9eb` · diamond `dc608cec-ed32-87f2-bc48-985cf52859ee`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports offline · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bundle·cohort·landmarks·manuscript·memories·plan·stat·statistic · ← bundle·cohort·landmarks·manuscript·memories·plan·stat·statistic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law offline is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1eebd5a0-f92c-8ed2-bd66-d70ef9b1c05f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd998a59-8275-86b0-b90a-ce4b7e0f70f0` · `pnpm readme` · `pnpm computed:check`</sub>

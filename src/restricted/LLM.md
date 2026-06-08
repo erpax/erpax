@@ -3,15 +3,15 @@
 
 # restricted
 
-path `restricted` · uuid `6f58ee76-0705-8241-b0f2-89f6235326de` · diamond `d72a94ab-672d-8de4-8266-64119500582d`
+path `restricted` · uuid `6f58ee76-0705-8241-b0f2-89f6235326de` · diamond `53451cf6-d4f8-8d20-a980-0c7daccc2153`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·diet·law·merge·sti · exports restricted · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·diet·law·merge·sti · ← collapse·diet·law·merge·sti
 analysis —
 law restricted is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `91f74994-d400-8723-982d-1c771da70b50` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1af291f3-cf89-886a-b358-c766a83ee552` · `pnpm readme` · `pnpm computed:check`</sub>

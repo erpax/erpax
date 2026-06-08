@@ -3,15 +3,15 @@
 
 # petite
 
-path `petite` · uuid `14331073-782d-8292-ad37-cc8c7acf3f0e` · diamond `27a163af-eff6-814b-9e49-d6269e636c8b`
+path `petite` · uuid `14331073-782d-8292-ad37-cc8c7acf3f0e` · diamond `27ec9f22-f8a8-8275-9e11-d8d1de96889b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports petite · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·landmarks · ← action·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law petite is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `56940bb3-11de-8bc7-8356-581657bc74c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fb330921-ab5e-86a7-8fc9-aec971d45642` · `pnpm readme` · `pnpm computed:check`</sub>

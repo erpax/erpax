@@ -3,15 +3,15 @@
 
 # human
 
-path `human` · uuid `9188ea84-55c0-8bc4-ba03-eea4d5e1fa02` · diamond `c4cd72b4-5d04-80d8-8458-8c282087d4dc`
+path `human` · uuid `9188ea84-55c0-8bc4-ba03-eea4d5e1fa02` · diamond `2f52a65b-9ac3-8de3-9a41-14efd1f81f73`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports human · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·entity·landmarks·memories·stat·ticketed · ← cohort·entity·landmarks·memories·stat·ticketed
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law human is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6b977f56-1b4e-87a5-8893-173758f45061` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0175823e-2b44-8414-a7db-dff50f46a86f` · `pnpm readme` · `pnpm computed:check`</sub>

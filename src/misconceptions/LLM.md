@@ -3,15 +3,15 @@
 
 # misconceptions
 
-path `misconceptions` · uuid `ff4946a3-c31c-8d53-87a0-fdc97a9d9f1a` · diamond `c7c5c399-f35c-89b2-b6e0-f3a25c7d5bfb`
+path `misconceptions` · uuid `ff4946a3-c31c-8d53-87a0-fdc97a9d9f1a` · diamond `8faf2584-087f-80eb-9c75-69da997f74ec`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports misconceptions · escapes —
-links `4/4` · folded `1` · bonds in `14` out `14`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·attendance·cohort·country·edits·entropy·euenergy·funnel·landmarks·memories·place·product·see·stat · ← access·attendance·cohort·country·edits·entropy·euenergy·funnel·landmarks·memories·place·product·see·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law misconceptions is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c7db85d4-be67-846a-9609-9420dda5687f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b11b0db-7c5c-85a2-b345-e3440552302a` · `pnpm readme` · `pnpm computed:check`</sub>

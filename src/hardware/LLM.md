@@ -3,15 +3,15 @@
 
 # hardware
 
-path `hardware` · uuid `e813542a-4231-8eca-bb8a-0a1279f08ee2` · diamond `b2bda927-1629-8ecc-807a-20fe4802ada0`
+path `hardware` · uuid `e813542a-4231-8eca-bb8a-0a1279f08ee2` · diamond `4cd39479-363f-8b1f-8674-ed5d7df862b1`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports hardware · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law hardware is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `35278759-650d-8e2e-8a22-7fbbc4ecf3b7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a95caad-366f-8072-9e02-c0a590983b9c` · `pnpm readme` · `pnpm computed:check`</sub>

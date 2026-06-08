@@ -3,15 +3,15 @@
 
 # pets
 
-path `pets` · uuid `710e8ede-03cf-8b04-ae3d-8cdb15f23503` · diamond `77fcb39c-45b8-8a83-99fe-f56471a7d102`
+path `pets` · uuid `710e8ede-03cf-8b04-ae3d-8cdb15f23503` · diamond `50829a40-ed78-8b6a-a80d-54ac3cb6a792`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports allowed·collapse·law·merge·sti · exports pets · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks · ← create·landmarks
+neighbors → allowed·collapse·law·merge·sti · ← allowed·collapse·law·merge·sti
 analysis —
 law pets is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f79c1c9-acd3-8265-b097-0a886ebb37e3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc5d146f-b8b1-8ff4-a56c-f04fe6653de2` · `pnpm readme` · `pnpm computed:check`</sub>

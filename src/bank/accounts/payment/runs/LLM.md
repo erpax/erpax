@@ -4,7 +4,7 @@
 # runs
 
 path `bank/accounts/payment/runs` · uuid `580005e3-30f4-86a6-8087-68d1126e7f6d` · diamond `0a04ff06-e785-8e03-ba9f-9cc025c170d8`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
 links `5/5` · folded `1` · bonds in `22` out `25`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `4d56d3d6-f237-8776-aeaa-f098672ae052` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d458f15-0c4a-849a-b7d8-184ed00fd953` · `pnpm readme` · `pnpm computed:check`</sub>

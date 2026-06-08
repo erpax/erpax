@@ -3,15 +3,15 @@
 
 # oriented
 
-path `oriented` · uuid `53b64526-7b27-82ea-afe6-666793d88d64` · diamond `3e14724b-f4b1-87b8-9ed9-9be7c0e3182e`
+path `oriented` · uuid `53b64526-7b27-82ea-afe6-666793d88d64` · diamond `69bf06be-9049-8c4c-82ab-fa3583d8439c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports adult·collapse·enumeration·law·merge·sti · exports oriented · escapes —
-links `6/6` · folded `1` · bonds in `5` out `6`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·chats·cohort·landmarks·memories·stat · ← chats·cohort·landmarks·memories·stat
+neighbors → adult·collapse·enumeration·law·merge·sti · ← adult·collapse·enumeration·law·merge·sti
 analysis —
 law oriented is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a16adcb2-a1d5-8bce-b618-a09c399954de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc70113a-f7a9-89f0-94f1-32bb2f6df501` · `pnpm readme` · `pnpm computed:check`</sub>

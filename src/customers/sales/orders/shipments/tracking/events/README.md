@@ -25,7 +25,28 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `80` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EDIFACT IFTSTA international-multimodal-status-message` · banner
+- `IFRS IFRS-15 §38 point-in-time-revenue-recognition` · banner
+- `INCOTERMS 2020 control-transfer-points` · banner
+- `INCOTERMS-2020` · catalogue
+- `ISO-19011:2018 audit-trail shipment-tracking` · banner
+- `ISO-8601-1:2019 date-time event-time` · banner
+- `ISO-9735` · catalogue
+- `SOX §404 internal-controls delivery-evidence TOM-LOG-02` · banner
+
+## analytics
+
+- bond degree `80` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `fbbd97bd-a419-816c-aace-9bf87e646bcd` · framed by typography partition `customers` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `84a7d298-90bc-812e-bd54-6f206e7964d4` · framed by typography partition `customers` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

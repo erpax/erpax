@@ -25,7 +25,27 @@
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
 - bond degree `35` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.5 PII receipt-images` · banner
+- `IFRS IAS-19 employee-benefits` · banner
+- `IFRS IAS-21 §28 fx-on-reimbursement` · banner
+- `ISO-19011:2018 audit-trail expense-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls four-eyes` · banner
+
+## analytics
+
+- bond degree `35` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -41,4 +61,4 @@
 
 ---
 
-<sub>content-uuid `3a9a3d0e-7d50-8351-a83d-12d7b908f640` · framed by typography partition `employees` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7de40744-0640-8709-b0de-a7ce5ca771cd` · framed by typography partition `employees` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

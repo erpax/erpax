@@ -3,15 +3,15 @@
 
 # horo
 
-path `horo` · uuid `d9405f16-f225-8313-b871-1fad0192d3f4` · diamond `55483615-d4aa-8ee6-b56b-bb61a770850a`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `horo` · uuid `07087838-3aed-86c6-b88c-42689b789787` · diamond `95aa9383-9cfd-896b-852d-b03c856c16b6`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports HoroStep·const·function·interface · escapes —
-links `63/63` · folded `1` · bonds in `30` out `31`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·chinese·colleagues·crest·crisis·default·defect·dropoff·first·founder·hardcover·homeopathic·honorific·issue·landmarks·lineup·manufacturing·parent·photograph·pickup·power·rear·reverse·rheumatologic·right·screen·seed·sell·snapshots·worth · ← balance·chinese·colleagues·crest·crisis·default·defect·dropoff·first·founder·hardcover·homeopathic·honorific·issue·landmarks·lineup·manufacturing·parent·photograph·pickup·power·rear·reverse·rheumatologic·right·screen·seed·sell·snapshots·worth
+links `63/63` · folded `1` · bonds in `133` out `131`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·adjustments·age·agent·analog·analytics·atom·attestations·aura·auth·axis·balance·base·baseline·begin·boundary·breath·brow·career·cases·chakra·civilization·classifications·close·cmyk·coil·collapse·collide·config·coordinate·crest·cross·crown·customers·decompression·definitions·descent·diamond·digit·dimension·domain·element·emergence·engine·entries·events·expand·factory·flow·fold·forge·fractal·gravity·hamiltonian·harmony·hooks·identifier·identity·integrity·law·leap·lines·live·localize·logic·lots·mandates·manufacturing·math·matter·merge·method·mirror·navel·notes·octave·one·orders·packs·party·phase·polarity·postings·profane·readme·receipts·religion·reveal·reverse·rodin·root·round·routing·run·runs·sacral·sacred·sales·schedule·science·season·self·sequence·share·shift·shifts·signal·similar·skills·society·spectrum·statements·stream·subscriptions·superposition·tags·team·termination·throat·torus·train·transactions·typography·unity·uuid·versions·vibration·wave·weave·workflow·zeropoint · ← access·adjustments·age·agent·analog·analytics·atom·attestations·aura·auth·axis·balance·base·baseline·begin·boundary·breath·brow·career·cases·chakra·civilization·classifications·close·cmyk·coil·collapse·collide·config·coordinate·crest·cross·crown·customers·decompression·definitions·descent·diamond·digit·dimension·domain·element·emergence·engine·entries·events·expand·factory·flow·fold·forge·fractal·gravity·hamiltonian·harmony·hooks·identifier·identity·integrity·law·leap·lines·live·localize·logic·lots·mandates·manufacturing·math·matter·merge·method·mirror·navel·notes·octave·one·orders·packs·party·phase·polarity·postings·profane·readme·receipts·religion·reveal·reverse·rodin·root·round·routing·run·runs·sacral·sacred·sales·schedule·science·season·self·sequence·share·shift·shifts·signal·similar·skills·society·spectrum·statements·statements·stream·subscriptions·superposition·tags·team·termination·throat·torus·torus·train·transactions·typography·unity·uuid·versions·vibration·wave·weave·workflow·zeropoint
 analysis aura
 law a state is a position on one closed ring {1,2,4,8,7,5,9} — two states compose to a third, the close (9) re-opens the next octave's [[base]] (1), and it is [[harmony]]-checked: off-ring is escape, who cannot dance cannot join.
 
 ---
 
-<sub>content-uuid `f090de47-c32f-810d-876c-b9e26bb3579c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3449646-fa30-80c9-92c0-afe8c5726249` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·vessel · exports lymphatic · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·occupancy·stat · ← cohort·landmarks·memories·occupancy·stat
+neighbors → collapse·law·merge·sti·vessel · ← collapse·law·merge·sti·vessel
 analysis —
 law lymphatic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b0e730c0-cd7b-8bf9-82e2-d0bdef7564f8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8cb77202-073c-88cd-a144-90cfacd19fd7` · `pnpm readme` · `pnpm computed:check`</sub>

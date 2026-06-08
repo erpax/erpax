@@ -4,7 +4,7 @@
 # industry
 
 path `ai/industry` · uuid `1419d023-4718-8c52-985e-21600d5ddac0` · diamond `377d4a34-4bd9-86f5-9e0c-0d608881ea03`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/agent/sync·@/ai·@/integrity·@/memory/session·@/receipt·@/sandbox · exports AiIndustryProblem·RemedyCoverage·const·function·interface · escapes —
 links `40/40` · folded `1` · bonds in `20` out `21`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every AI industry failure mode maps to a content-[[uuid]] diamond facet — 
 
 ---
 
-<sub>content-uuid `39bc7ade-e17c-834b-b2dc-6185679cb3cd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1281cb3-b7e1-8c53-9a72-567b1e1d87f6` · `pnpm readme` · `pnpm computed:check`</sub>

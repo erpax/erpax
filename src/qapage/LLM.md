@@ -3,15 +3,15 @@
 
 # qapage
 
-path `qapage` · uuid `ba0e8f4a-900d-88d7-b6e8-fdb901a54da6` · diamond `df840deb-5e73-8a8e-a23e-f6624420c702`
+path `qapage` · uuid `ba0e8f4a-900d-88d7-b6e8-fdb901a54da6` · diamond `97ae4ddb-f014-8a3b-b3fb-762dd7694927`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports qapage · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → elementary·landmarks·night·opinion·recycling·replacer·sanitization · ← elementary·landmarks·night·opinion·recycling·replacer·sanitization
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law qapage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `72bbc975-ca95-88fc-b19b-8531ef0d17d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5c0aaee-4e0c-8e67-b46d-6ca7984c29fa` · `pnpm readme` · `pnpm computed:check`</sub>

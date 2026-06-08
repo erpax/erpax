@@ -3,15 +3,15 @@
 
 # parcel
 
-path `parcel` · uuid `ae677579-72a0-8aac-b020-035f1bcb7f2b` · diamond `43dc19ad-da6f-80a7-ab02-d9361e53cdc2`
+path `parcel` · uuid `ae677579-72a0-8aac-b020-035f1bcb7f2b` · diamond `c6a3b360-71f7-81f6-95a9-8da7f8a7a3bd`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·delivery·law·merge·sti · exports parcel · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·delivery·law·merge·sti · ← collapse·delivery·law·merge·sti
 analysis —
 law parcel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `15be7d4a-39c8-8363-b4b3-1a0ad0a2a1e7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7e54b85-1da1-8bd9-ad16-e5dd5b6cfa92` · `pnpm readme` · `pnpm computed:check`</sub>

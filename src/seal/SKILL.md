@@ -13,6 +13,8 @@ Because a seal is the [[merge]] of content-addressed verdicts, it is itself an a
 
 **Law — [[law]]: a seal is the AND of its guardians — SEALED iff every guardian holds; an empty set is NOT sealed (fail-closed). Only a sealed tree may be committed and pushed; an unsealed tree is left untouched.**
 
+**Law — [[law]]: empty or incomplete folders are NOT sealed — no atom identity (empty), partial trinity, or stray matter without a nested child atom (incomplete) ⇒ `sealed: false`; parent unsealed ⇒ no descendant may seal (propagation).**
+
 **Law — [[law]]: all is passed with uuids without [[payload]] — `pnpm confirm:uuid` crosses uuid-pure guardians (aura · folders · imports · readme · boundary · diamond · typography) without loading Payload; the seal is substrate-independent.**
 
 @see [[guardian]] · [[gate]] · [[confirm]] · [[breath]] · [[merge]] · [[identity]] · [[law]] · [[cost]] · [[uuid]] · [[payload]]

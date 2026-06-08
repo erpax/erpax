@@ -3,15 +3,15 @@
 
 # parasite
 
-path `parasite` · uuid `75dc7b98-2307-8741-a760-445819926e31` · diamond `3f410f82-9d64-8de6-81a5-6caaddb8c32d`
+path `parasite` · uuid `75dc7b98-2307-8741-a760-445819926e31` · diamond `3695cc85-100b-8619-80fa-eccbad26af7d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports parasite · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·synthetic · ← cohort·landmarks·memories·stat·synthetic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law parasite is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d55c2717-ab3b-86bc-9123-a865a2f51e82` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aab58dbf-c5f9-879f-9b03-cde06c9a2802` · `pnpm readme` · `pnpm computed:check`</sub>

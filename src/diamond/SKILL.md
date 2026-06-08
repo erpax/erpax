@@ -57,6 +57,8 @@ Every diamond — repository, folder, file, method, README, CSS facet, Payload *
 
 **Law (additive) — [[law]]: all diamonds share ONE DiamondModel — folders, files, methods, READMEs, and Payload collections in every [[dimension]] project the same shape; one verifier, one uuid pipeline; forging any diamond requires forging the whole model.**
 
+**Law — [[law]]: empty or incomplete folders are NOT sealed — stray matter without a nested child atom fails diamond membership; partial trinity fails folder matter; README `sealed` and guardians fail closed.**
+
 **Operational memory IS the diamond lattice** ([[memory/architecture]]): walking `deriveDiamond` / `verifyDiamond` on the sealed tree IS what the system remembers — not chat, not Memories rows, not agent context. `operationalMemoryFacet(atomPath)` is the live-tree memory vertex; `architectureMemoryDigest` stable ⇒ memory stable ([[akashic]] · [[thought]]).
 
 @see [[memory/architecture]] · [[akashic]] · [[memory/session]]

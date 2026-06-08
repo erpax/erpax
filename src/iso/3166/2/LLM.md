@@ -3,15 +3,15 @@
 
 # 2
 
-path `iso/3166/2` · uuid `5dfa5ebd-025f-8835-8b94-96adc1d2d74a` · diamond `ae816daf-2add-8511-97b0-df38bca15a1b`
+path `iso/3166/2` · uuid `5dfa5ebd-025f-8835-8b94-96adc1d2d74a` · diamond `d89a62e5-5cea-86e8-8e7f-26380ebf1ab1`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports isIso3166_2 · escapes —
-links `1/1` · folded `1` · bonds in `4` out `4`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law · ← law
 analysis —
 law a subdivision code is only valid as `<alpha-2>-<subdivision>` — a region is always named relative to its country, never standalone, so the parent country is inseparable from the subnational jurisdiction.
 
 ---
 
-<sub>content-uuid `e2c25151-d0c2-8062-b0c0-c8f382e63e54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d49e3653-3682-8641-b856-30989d057ee5` · `pnpm readme` · `pnpm computed:check`</sub>

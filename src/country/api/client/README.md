@@ -2,7 +2,7 @@
 
 # client
 
-> atom `country/api/client` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `country/api/client` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -15,7 +15,7 @@
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[boundary]]/escape `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
@@ -25,7 +25,7 @@
 
 - partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
 - bond degree `11` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -61,7 +61,7 @@
 
 ## analytics
 
-- bond degree `11` · sealed `1` · horo `8`
+- bond degree `11` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `25`
 
@@ -71,12 +71,12 @@
 - bonds in `3` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
-- folded `1` · escapes `0`
+- folded `1` · escapes `1`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fcbee6a1-a65a-8ca7-9e4b-fc9a52bc544a` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `346235a4-e528-8beb-91a6-cb8330fc2069` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # it
 
-path `it` · uuid `0c8c8022-f288-8257-9da9-1970be5a2a2d` · diamond `49cfa624-3ec1-86fa-81bd-f6ba3265ec9a`
+path `it` · uuid `0c8c8022-f288-8257-9da9-1970be5a2a2d` · diamond `da15b2bc-5d33-834b-9290-315e08bac109`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·nonprofit·sti·type · exports it · escapes —
-links `6/6` · folded `1` · bonds in `12` out `12`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·fertility·holographic·id·landmarks·maintainer·progression·snapshots·spouse·tour·used · ← accounting·balance·fertility·holographic·id·landmarks·maintainer·progression·snapshots·spouse·tour·used
+neighbors → collapse·law·merge·nonprofit·sti·type · ← collapse·law·merge·nonprofit·sti·type
 analysis —
 law it is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0161a2ad-7202-8c71-8229-121adbf7fb38` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4262f275-0269-8fbd-825c-06692ff7a357` · `pnpm readme` · `pnpm computed:check`</sub>

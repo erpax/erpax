@@ -6,7 +6,10 @@
  * **What this is:** a structured catalogue of the public endpoints each
  * country's authorities expose, with auth model, format, documentation
  * URL, and a one-line description. Consumed by:
- *   - the country-API client services (`src/services/country-api-clients/`)
+ * Lives at `src/country/api/` — the one-word diamond path for the authority
+ * catalogue (relocated from the hyphenated `config/country-apis` violation).
+ *
+ *   - the country-API client services (`@/country/api/client`)
  *     for the public/no-auth endpoints we ship working clients for;
  *   - the admin UI to surface "this country has an e-invoicing portal,
  *     here's the link" rather than silently no-op-ing;

@@ -3,15 +3,15 @@
 
 # includes
 
-path `includes` · uuid `dc4d8b45-ae88-8ee1-811d-33ab8ff7d250` · diamond `4db5d28c-a6bd-8829-a158-fde810855918`
+path `includes` · uuid `dc4d8b45-ae88-8ee1-811d-33ab8ff7d250` · diamond `36c938d7-df4d-8072-b373-39abd067258a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports attraction·collapse·domain·formulary·health·law·merge·network·object·plan·range·sti · exports includes · escapes —
-links `12/12` · folded `1` · bonds in `5` out `5`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bill·cohort·landmarks·memories·stat · ← bill·cohort·landmarks·memories·stat
+neighbors → attraction·collapse·domain·formulary·health·law·merge·network·object·plan·range·sti · ← attraction·collapse·domain·formulary·health·law·merge·network·object·plan·range·sti
 analysis —
 law includes is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `24a2fc50-4d45-8362-897b-d3c0439bcbce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `25871bef-3fcb-80cd-a778-4d3db5da233a` · `pnpm readme` · `pnpm computed:check`</sub>

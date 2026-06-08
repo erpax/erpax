@@ -3,15 +3,15 @@
 
 # installment
 
-path `installment` · uuid `622a4515-1c75-8317-864a-0a12343feaa4` · diamond `176d6863-d336-84fb-b8e8-713795536ce3`
+path `installment` · uuid `622a4515-1c75-8317-864a-0a12343feaa4` · diamond `eb9c7bcf-07b9-89f2-89b6-fb2132e43fbe`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports installment · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law installment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `63c6c0e3-ea8b-8794-86a4-c10c49195bdf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `624891da-3189-895a-b93b-49b53e1efd69` · `pnpm readme` · `pnpm computed:check`</sub>

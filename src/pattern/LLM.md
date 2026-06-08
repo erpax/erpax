@@ -3,15 +3,15 @@
 
 # pattern
 
-path `pattern` · uuid `8c290a1c-301e-82d0-9d5b-7e298cb106a2` · diamond `819eddea-00b2-878e-86cd-70c490db0e07`
+path `pattern` · uuid `8c290a1c-301e-82d0-9d5b-7e298cb106a2` · diamond `e9f272d2-98c2-8507-9e31-d028bbc0d1a7`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·value · exports pattern · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·reveal·value · ← law·reveal·value
 analysis —
 law pattern is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dff896b6-efa5-8f29-ab25-25d79c3d4c57` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b3758df5-dd62-8ea3-81c0-f00586ecd43f` · `pnpm readme` · `pnpm computed:check`</sub>

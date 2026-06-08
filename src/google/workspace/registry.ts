@@ -4,7 +4,7 @@
  * core models accounting/manufacturing/commerce/HR; Workspace supplies email,
  * calendar, drive, docs, sheets, directory).
  *
- * Mirrors the country-API registry (`src/config/country-apis`): ONE declarative
+ * Mirrors the country-API registry (`src/country/api`): ONE declarative
  * array, helpers derive everything (scopes, gap-map) — computed-not-hardcoded.
  * Each entry names the OAuth scopes, the REST base, the Google-native id that
  * anchors a resource's identity, and the erpax collection (`fills`) the service
@@ -16,7 +16,7 @@
  * @standard IETF RFC 6749 OAuth 2.0 authorization-framework
  * @standard OpenID Connect Core 1.0 (Google as the OIDC provider)
  * @standard Google API Discovery Service (the live machine-readable surface)
- * @see src/config/country-apis/index.ts — the sibling external-API registry
+ * @see src/country/api/index.ts — the sibling external-API registry
  * @see ./fusion.ts — the content-uuid bridge that merges a fetched resource into the mesh
  */
 

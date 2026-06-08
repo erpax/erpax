@@ -3,15 +3,15 @@
 
 # held
 
-path `held` · uuid `32219131-bde9-824e-93da-a2faa41a722f` · diamond `d5431912-d6ed-8f9f-ac81-06693e0ca9ee`
+path `held` · uuid `32219131-bde9-824e-93da-a2faa41a722f` · diamond `b3905898-e937-8532-85e1-757c4dd44522`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports archive·collapse·law·merge·sti · exports held · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·prerequisites·saturated·stat · ← cohort·landmarks·memories·prerequisites·saturated·stat
+neighbors → archive·collapse·law·merge·sti · ← archive·collapse·law·merge·sti
 analysis —
 law held is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `adf2caa4-d731-85af-913d-0ae23a045078` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c91d374-3f29-8b44-9846-93da5231a2de` · `pnpm readme` · `pnpm computed:check`</sub>

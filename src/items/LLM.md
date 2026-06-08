@@ -3,15 +3,15 @@
 
 # items
 
-path `items` · uuid `b090fe53-32ee-84e4-aa66-70edea05367e` · diamond `83149fef-9792-83b7-b41c-a56bdca2bd7c`
+path `items` · uuid `b090fe53-32ee-84e4-aa66-70edea05367e` · diamond `3e9fbfda-19c1-8015-9743-99894071a5b3`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/items/hooks · exports const · escapes —
-links `18/18` · folded `1` · bonds in `10` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·issue·landmarks·motel·snapshots·tour·visit·visual · ← accounting·balance·comment·issue·landmarks·motel·snapshots·tour·visit·visual
+links `18/18` · folded `1` · bonds in `44` out `48`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounting·agriculture·apiculture·aquaculture·balance·batches·biomass·bundle·coordinate·crop·cropplan·currency·currency·declarations·deduction·fields·forestry·harvest·identity·inspections·jurisdictions·lactation·law·law·lines·livestock·materials·measure·merge·movements·num·orders·packages·packs·packs·postharvest·proof·quotes·seed·share·standard·tax·taxexempt·transaction·upsell·variant·variants · ← accounting·agriculture·apiculture·aquaculture·balance·batches·biomass·bundle·coordinate·crop·cropplan·currency·declarations·deduction·fields·forestry·harvest·identity·inspections·jurisdictions·lactation·law·lines·livestock·materials·measure·merge·movements·num·orders·packages·packs·postharvest·proof·quotes·seed·share·standard·tax·taxexempt·transaction·upsell·variant·variants
 analysis —
 law one catalog/inventory model — garments, produce, and [[seed]] strip their prefix and [[merge]] into a single sellable/purchasable row with GL posting; trust the data over the schema.
 
 ---
 
-<sub>content-uuid `baef1ef3-051e-85e2-ac6a-4536a802ce32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `61aed925-bd8c-8fe0-8778-8e7b1fda2049` · `pnpm readme` · `pnpm computed:check`</sub>

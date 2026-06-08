@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports ikey · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law ikey is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cd1f440a-9460-81e7-a540-97d63de6ff5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fb87d2e0-5849-8b10-a679-a8538f405778` · `pnpm readme` · `pnpm computed:check`</sub>

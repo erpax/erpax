@@ -3,15 +3,15 @@
 
 # liability
 
-path `liability` · uuid `27d1ddaf-2d17-8960-8f4d-1919da7f7529` · diamond `8424b06a-2470-80bb-afd6-2098bea5d00c`
+path `liability` · uuid `27d1ddaf-2d17-8960-8f4d-1919da7f7529` · diamond `ffef06fb-d14c-8676-8ce7-9211fe2a8f50`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports contracts·indemnity·law·matter·provisions·warranty · exports liability · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → contracts·disputeresolution·equity·indemnity·law·matter·provision·provisions·readme·remediation·termination·warranty · ← contracts·disputeresolution·equity·indemnity·law·matter·provision·provisions·readme·remediation·termination·warranty
 analysis —
 law liability is the contract clause that limits, excludes, or caps damages — by type (contractual, tort, consequential, indirect, punitive), with surviving clauses and statutory override; the mirror of the [[indemnity]] and [[warranty]] it sits beside.
 
 ---
 
-<sub>content-uuid `1c8dfdb1-7386-8b73-9370-b0ae1a3b02fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7cd0a052-7de2-8f55-b143-5c51ed32842a` · `pnpm readme` · `pnpm computed:check`</sub>

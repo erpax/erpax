@@ -3,15 +3,15 @@
 
 # note
 
-path `note` · uuid `a32cb6da-0b31-8c51-91df-5c231206f375` · diamond `80bac957-2b53-8bc2-a699-cbf6c0a497a7`
+path `note` · uuid `a32cb6da-0b31-8c51-91df-5c231206f375` · diamond `90d921cd-4603-81a4-9f66-2d8a77fd74dd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·digital·document·law·merge·sti · exports note · escapes —
-links `6/6` · folded `1` · bonds in `22` out `22`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → adults·bedrooms·chest·cohort·constitution·declarations·descent·diagnosis·hindu·hvacbusiness·issue·landmarks·maybe·memories·object·outcome·pasture·stat·tire·tool·unsid·values · ← adults·bedrooms·chest·cohort·constitution·declarations·descent·diagnosis·hindu·hvacbusiness·issue·landmarks·maybe·memories·object·outcome·pasture·stat·tire·tool·unsid·values
+neighbors → collapse·digital·document·law·merge·sti · ← collapse·digital·document·law·merge·sti
 analysis —
 law a note is annotation, never authority — it attaches commentary to a thing without altering or binding the thing it is about.
 
 ---
 
-<sub>content-uuid `c6581bd0-3b5b-8ad6-bf6f-11921c86ebc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d745bb0-fcb3-8347-81d9-e8e4c3dc02df` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # pre
 
-path `pre` · uuid `93c59cab-66e0-88d9-8eb2-d60a2c6dfebb` · diamond `7cdc2b46-6b35-8e24-834d-d84ae16ad1a2`
+path `pre` · uuid `93c59cab-66e0-88d9-8eb2-d60a2c6dfebb` · diamond `9c367334-83a2-879d-a16f-dcf1a6cb849b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·op·order·sti · exports pre · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dvdformat·landmarks·memories·pawn·stat · ← cohort·dvdformat·landmarks·memories·pawn·stat
+neighbors → action·collapse·law·merge·op·order·sti · ← action·collapse·law·merge·op·order·sti
 analysis —
 law pre is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c9890f9f-2cb0-800c-835a-c10f297496c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ea24a12-2942-8022-8860-773366434207` · `pnpm readme` · `pnpm computed:check`</sub>

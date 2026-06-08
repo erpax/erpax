@@ -3,15 +3,15 @@
 
 # multi
 
-path `multi` · uuid `bfe450bf-7e83-8716-abda-c63d441b3dd6` · diamond `a00667ee-2934-8040-81fd-0d1d536e3246`
+path `multi` · uuid `bfe450bf-7e83-8716-abda-c63d441b3dd6` · diamond `8299f360-4275-8144-bf01-ca8740710c74`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports multi · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law multi is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ee42ebfc-176c-8f3e-b407-e0b464b3a661` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ea53c5b-1248-8fb3-a42f-7b482e852c7a` · `pnpm readme` · `pnpm computed:check`</sub>

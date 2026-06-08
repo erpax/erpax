@@ -3,15 +3,15 @@
 
 # reservation
 
-path `reservation` · uuid `1770cdc0-85f1-869e-8440-a1f999745d8b` · diamond `457ca518-d7d5-8921-98c6-cff1677c2b59`
+path `reservation` · uuid `1770cdc0-85f1-869e-8440-a1f999745d8b` · diamond `a3a23c58-45da-8a28-9373-6a28ea22f158`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports boat·bus·car·establishment·event·flight·food·id·law·lodging·package·rental·status·sub·taxi·train·type · exports reservation · escapes —
-links `17/17` · folded `1` · bonds in `2` out `2`
+links `17/17` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·side · ← landmarks·side
+neighbors → boat·bus·car·establishment·event·flight·food·id·law·lodging·package·rental·status·sub·taxi·train·type · ← boat·bus·car·establishment·event·flight·food·id·law·lodging·package·rental·status·sub·taxi·train·type
 analysis —
 law reservation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d1234c4e-2ade-8b02-a3a8-c47ecaa51ada` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aa5f60a2-ce7d-8c44-a689-765765b6a034` · `pnpm readme` · `pnpm computed:check`</sub>

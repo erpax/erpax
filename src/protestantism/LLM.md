@@ -3,15 +3,15 @@
 
 # protestantism
 
-path `protestantism` · uuid `—` · diamond `2dbb5f50-1339-8b9c-96d2-2c20202090af`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `protestantism` · uuid `d4e8269a-8af2-87fc-a06a-e2c91409af7e` · diamond `26f9d5ca-574a-869d-8a9b-a2f58978e19d`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports archangel·christianity·diamond·faith·grace·holographic·identity·law·part·religion·return·reverse·self·sin·society·translator·uuid·whole·word · exports protestantism · escapes —
-links `47/47` · folded `0` · bonds in `0` out `0`
+links `47/47` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·christianity·diamond·faith·grace·holographic·identity·law·part·religion·return·reverse·self·sin·society·translator·uuid·whole·word · ← archangel·christianity·diamond·faith·grace·holographic·identity·law·part·religion·return·reverse·self·sin·society·translator·uuid·whole·word
+analysis diamond
 law protestantism is a sub-[[diamond]] of [[christianity]] of [[word]] · [[grace]] · [[faith]] · [[self]] · [[holographic]] · [[reverse]] — the solas (canonical source alone) and the priesthood of all believers (each [[self]] reads the [[whole]] directly, no mediator), the Reformation a [[return]] to the mark; a facet-[[archangel]] of the [[society]]'s christianity domain.
 
 ---
 
-<sub>content-uuid `d7deaca4-a928-8682-bc27-784fb57a63b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6b6a01d-a5d8-8adc-962f-bfddebb70206` · `pnpm readme` · `pnpm computed:check`</sub>

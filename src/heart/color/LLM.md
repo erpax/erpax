@@ -6,12 +6,12 @@
 path `heart/color` · uuid `955e8ae5-e8e3-89e3-b818-b2129c86809b` · diamond `4721c2ce-6da1-8e62-85a9-d2d60578ed9a`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports color · escapes —
-links `11/11` · folded `1` · bonds in `4` out `4`
+links `11/11` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `1·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → chakra·chart·coherence·color·design·heart·hooks·interior·law·law·photon·pixel·render·swatch·test·vehicle · ← chakra·chart·chart·coherence·color·design·heart·hooks·interior·law·photon·pixel·render·swatch·test·vehicle
 analysis —
 law the heart's colour is green by computation — the A432-anchored 4th-[[chakra]] hue that renders only when the aura is whole (a passing test); it is read from the position, never hand-set.
 
 ---
 
-<sub>content-uuid `b39b6c29-0ff8-8b83-9e01-8fe916e7b486` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `77e63ac6-8c81-8350-af04-54459cea48e0` · `pnpm readme` · `pnpm computed:check`</sub>

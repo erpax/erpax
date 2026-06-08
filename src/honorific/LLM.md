@@ -3,15 +3,15 @@
 
 # honorific
 
-path `honorific` · uuid `30695db1-a98a-8662-b206-fbda778e026d` · diamond `5595fc22-29b4-8ca0-8b99-85a66361fff0`
+path `honorific` · uuid `30695db1-a98a-8662-b206-fbda778e026d` · diamond `4cf1e193-93a6-8e44-9a4d-6e70737eedbd`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·prefix·sti·suffix · exports honorific · escapes —
-links `6/6` · folded `1` · bonds in `17` out `17`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·base·befriend·exemplifies·fertility·finite·flight·homeopathic·horo·landmarks·live·oid·rheumatologic·right·roadmap·runbook·sell · ← agent·base·befriend·exemplifies·fertility·finite·flight·homeopathic·horo·landmarks·live·oid·rheumatologic·right·roadmap·runbook·sell
+neighbors → collapse·law·merge·prefix·sti·suffix · ← collapse·law·merge·prefix·sti·suffix
 analysis —
 law honorific is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5f2bfee7-5eea-866e-b4ad-cc434447ca59` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c271b228-cce2-8798-9fb7-a31a1140fa6e` · `pnpm readme` · `pnpm computed:check`</sub>

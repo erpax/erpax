@@ -3,15 +3,15 @@
 
 # historical
 
-path `historical` · uuid `1f820393-a646-894e-8f71-1229517c8368` · diamond `c61986cf-e731-860b-8819-b65e9c0ef47d`
+path `historical` · uuid `1f820393-a646-894e-8f71-1229517c8368` · diamond `3089b3d5-3c33-8680-9ed7-015e9dc05e80`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports buildings·collapse·enrollment·landmarks·law·merge·sti·total · exports historical · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·coordinates·landmarks·memories·stat · ← cohort·coordinates·landmarks·memories·stat
+neighbors → buildings·collapse·enrollment·landmarks·law·merge·sti·total · ← buildings·collapse·enrollment·landmarks·law·merge·sti·total
 analysis —
 law historical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `29977006-9eb0-8711-bb35-0af2921cdb12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `235c6fc7-c047-8181-b490-77aba8560606` · `pnpm readme` · `pnpm computed:check`</sub>

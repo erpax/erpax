@@ -3,15 +3,15 @@
 
 # price
 
-path `price` · uuid `7f764a8c-2eb3-877f-a979-6c1206c4be8b` · diamond `ad5e48aa-9388-80ff-ab75-a099523255d0`
+path `price` · uuid `7f764a8c-2eb3-877f-a979-6c1206c4be8b` · diamond `0da1e13f-3c7b-8f1e-b1bf-304b331bbd0e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports component·compound·currency·enumeration·high·law·limit·low·max·min·purchase·range·specification·total·type·unit·until·valid · exports price · escapes —
-links `18/18` · folded `1` · bonds in `12` out `12`
+links `18/18` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·activities·best·conditions·confirmation·interaction·landmarks·llm·mass·positions·progression·runs · ← access·activities·best·conditions·confirmation·interaction·landmarks·llm·mass·positions·progression·runs
+neighbors → component·compound·currency·enumeration·high·law·limit·low·max·min·purchase·range·specification·total·type·unit·until·valid · ← component·compound·currency·enumeration·high·law·limit·low·max·min·purchase·range·specification·total·type·unit·until·valid
 analysis —
 law price is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0709209a-33a9-8ce1-921d-9b82ed90955b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3894cb71-badc-8076-9475-dd2e8431eb55` · `pnpm readme` · `pnpm computed:check`</sub>

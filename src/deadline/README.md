@@ -23,7 +23,21 @@
 
 - partition `deadline` · sub-root `1bc7fc2d-e6d6-8034-9584-3d97b4b946a9`
 - bond degree `16` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `0211fa46-c4ed-84c6-a94a-f4e468742148` · framed by typography partition `deadline` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7adb739f-8561-86c9-890e-5db407a3aa7c` · framed by typography partition `deadline` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -4,7 +4,7 @@
 # 47
 
 path `bcp/47` · uuid `b12c5f7e-040c-857a-8ef4-8b25226d8910` · diamond `0ca0d304-4b9c-8575-b60c-495e98d5057c`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports ensureValidLocale·getSafeLocale·getSupportedLocales·isBcp47·isDefaultLocale·isValidLocale·resolveLocale·type · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a language tag is valid only if it matches the BCP 47 (RFC 5646 + RFC 4647) 
 
 ---
 
-<sub>content-uuid `860c6d7d-a61b-8aa9-b5ef-521a61c520b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5c779f00-15fa-84ba-8748-0ccf369a1925` · `pnpm readme` · `pnpm computed:check`</sub>

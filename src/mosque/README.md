@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `mosque` · sub-root `3491275b-a911-89fa-a59f-bb928589521d`
-- bond degree `10` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `3491275b-a911-89fa-a59f-bb928589521d`
-- bonds in `4` · out `4`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `047e8af8-2814-8628-91e3-be57c36a8f62` · framed by typography partition `mosque` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ed30cc03-4cc9-8b99-b254-732984af70ba` · framed by typography partition `mosque` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

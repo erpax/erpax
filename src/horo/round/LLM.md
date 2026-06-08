@@ -3,15 +3,15 @@
 
 # round
 
-path `horo/round` · uuid `58f20aea-8928-8dda-b983-159d82de930a` · diamond `61acc15e-b447-8bca-838b-e1809c478602`
+path `horo/round` · uuid `58f20aea-8928-8dda-b983-159d82de930a` · diamond `715727b4-03f4-877b-aff6-217ebee9b0e1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports admin·balance·coil·descent·horo·law·reconcile·sequence·unity · exports round · escapes —
-links `12/12` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → affiliation·landmarks · ← affiliation·landmarks
+links `12/12` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → admin·balance·breath·coil·descent·horo·law·notes·reconcile·sequence·signal·unity · ← admin·balance·breath·coil·descent·horo·law·notes·reconcile·sequence·signal·unity
 analysis —
 law [[horo]] position 5 — the completing turn that brings a returning flow to rest (delivered · received), the two sides nearing [[balance]]; the last position before the ring closes at [[unity]].
 
 ---
 
-<sub>content-uuid `725091ca-e6ce-8bea-9224-6522dd8810d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `de711e63-6c59-8e63-99a3-d690b88255e5` · `pnpm readme` · `pnpm computed:check`</sub>

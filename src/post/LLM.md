@@ -3,15 +3,15 @@
 
 # post
 
-path `post` · uuid `a2cf4b66-6d1c-8631-a1c9-d487d4c561fb` · diamond `c3884446-5231-8c63-aa30-2e81dffa20b8`
+path `post` · uuid `a2cf4b66-6d1c-8631-a1c9-d487d4c561fb` · diamond `a58b5bfa-de7b-805e-8f41-8b858c150887`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports blog·box·collapse·law·merge·number·office·op·sti · exports post · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → blocks·cassette·findings·landmarks·meal·update · ← blocks·cassette·findings·landmarks·meal·update
+neighbors → blog·box·collapse·law·merge·number·office·op·sti·tweet · ← blog·box·collapse·law·merge·number·office·op·sti·tweet
 analysis —
 law post is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `02cdab2f-7185-8a18-b6d5-87b25fca21ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42f77e86-fbc9-82e5-a468-8660932990c4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `design` · sub-root `1d43a866-ede0-878d-9c7f-8794b58a4721`
 - bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `every token/palette entry is computed from an atom's uuid via pixel(); no hardcoded hex` · banner
+- `every token/palette/role colour computed via pixel(uuid); zero hardcoded hex in the design system` · banner
+- `the analog aura — colour as a projection of one content-uuid (digit → A432 spectrum)` · banner
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `18489f9d-6b48-85ee-a517-b3b11c5f4042` · framed by typography partition `design` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a64f0c8-2cea-8fd4-a5c1-76efd601db3b` · framed by typography partition `design` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

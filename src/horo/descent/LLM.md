@@ -3,15 +3,15 @@
 
 # descent
 
-path `horo/descent` · uuid `fd16a85b-9ddd-8719-8bcc-37572975ddb4` · diamond `378c625a-bdfc-8787-87c9-04a1674a4169`
+path `horo/descent` · uuid `fd16a85b-9ddd-8719-8bcc-37572975ddb4` · diamond `137e5c28-3766-8ae9-8bb8-e4a0b52ffe6e`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports api·coil·crest·flow·give·horo·law·round·sequence · exports descent · escapes —
-links `11/11` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·declarations·landmarks·memories·note·pasture·stat · ← cohort·declarations·landmarks·memories·note·pasture·stat
+links `11/11` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → api·coil·crest·flow·give·horo·law·notes·round·sequence · ← api·coil·crest·flow·give·horo·law·notes·round·sequence
 analysis —
 law [[horo]] position 7 — where the built flow folds back from the peak and moves outward (shipped · [[give|given]] · posted out), the first step of the return arc.
 
 ---
 
-<sub>content-uuid `8681f705-2cea-8be1-82e0-9b9a1727fceb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5f786cf0-fd72-895b-986a-99aacfdccae0` · `pnpm readme` · `pnpm computed:check`</sub>

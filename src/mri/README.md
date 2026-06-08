@@ -23,7 +23,7 @@
 
 - partition `mri` · sub-root `b58c11c9-5123-831f-8e71-3b281e26983e`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2ab0d440-98d6-8e67-a05a-06b3559b1968` · framed by typography partition `mri` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e6fed256-98a9-83fc-a4c7-a530c126207c` · framed by typography partition `mri` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

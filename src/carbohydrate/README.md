@@ -23,7 +23,7 @@
 
 - partition `carbohydrate` · sub-root `639a20eb-afe1-88f3-9759-4582678d9edc`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d76b9986-4b84-8c35-bc6c-7ebfbd5d16df` · framed by typography partition `carbohydrate` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1fac5ee5-4554-807f-87d9-fa33d0e9807a` · framed by typography partition `carbohydrate` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

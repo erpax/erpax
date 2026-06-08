@@ -3,15 +3,15 @@
 
 # media
 
-path `media` · uuid `532cdb92-d0c1-8469-91b9-98c6947db609` · diamond `3ab11872-595a-8f51-9773-e1d59d9e632f`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `media` · uuid `7b517e9c-e681-80b1-94a0-2efb4181418a` · diamond `a2559340-b438-8773-9116-e4b80232271b`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/i18n·@/media/hooks·@/membership/admin/mutate/access·@/tenant/scoped/read · exports MediaComponent·const · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·octave·stat · ← cohort·landmarks·memories·octave·stat
-analysis diamond·hallucination·purity
+links `4/4` · folded `1` · bonds in `30` out `31`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·after·appearance·associated·audit·authenticity·before·category·context·during·enumeration·gallery·hooks·item·law·law·lexical·link·manipulation·media·news·object·organization·original·posting·posts·rating·review·social·subscription·upload · ← access·after·appearance·associated·audit·authenticity·before·category·context·during·enumeration·gallery·hooks·item·law·lexical·link·manipulation·media·news·object·organization·original·posting·posts·rating·review·social·subscription·upload
+analysis —
 law one media object lives as coexisting facets in a single folder — the Payload upload collection, its React render facet (picking image/video by MIME) and its sub-renderers — with tenant-scoped uploads to R2 and computed multi-size variants; one folder per object ⇒ no scatter ⇒ no drift.
 
 ---
 
-<sub>content-uuid `76847421-5c77-8b09-bece-0d01d8d1a8d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22907e41-ed69-8188-a2da-e7d4fab7a6da` · `pnpm readme` · `pnpm computed:check`</sub>

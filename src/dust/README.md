@@ -25,7 +25,23 @@
 
 - partition `dust` · sub-root `8d98ebcd-aac5-8007-bbdf-dbb1db05cace`
 - bond degree `44` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from @/quantum (the live-matrix proof); the dust IS the proof, scattered` · banner
+- `computed from the live matrix, never hand-asserted` · banner
+- `RFC 9562 §5.8 content-uuid + stellar nucleosynthesis (the standard astrophysical account)` · banner
+
+## analytics
+
+- bond degree `44` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `02c61fd4-f440-8154-bd33-b64844637265` · framed by typography partition `dust` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `671e086d-5b30-828b-809d-b52665226a28` · framed by typography partition `dust` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

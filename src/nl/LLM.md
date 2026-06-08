@@ -3,15 +3,15 @@
 
 # nl
 
-path `nl` · uuid `b15f8009-a2f5-894a-a151-9339afeb1a93` · diamond `c026eaae-3ef2-8f62-a8d3-e73e7f07f62d`
+path `nl` · uuid `b15f8009-a2f5-894a-a151-9339afeb1a93` · diamond `335f5781-78b0-8bd8-afd6-c5c505bae59c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·nonprofit·sti·type · exports nl · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·nonprofit·sti·type · ← collapse·law·merge·nonprofit·sti·type
 analysis —
 law nl is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e2314330-c377-8f81-9d02-9061d59a2afa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7b04557a-76ad-86b0-9fc3-686796ba67c9` · `pnpm readme` · `pnpm computed:check`</sub>

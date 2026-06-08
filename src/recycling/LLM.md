@@ -3,15 +3,15 @@
 
 # recycling
 
-path `recycling` · uuid `9b02a502-4c03-8f87-8837-dbed9bc68241` · diamond `03d034df-2995-890e-9bd9-870b0dbbcaa2`
+path `recycling` · uuid `9b02a502-4c03-8f87-8837-dbed9bc68241` · diamond `e89f7346-91b1-80a2-a6b9-8a13a42b4ddc`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports center·collapse·law·merge·sti · exports recycling · escapes —
-links `5/5` · folded `1` · bonds in `25` out `26`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·akashic·api·axis·clinician·cohort·connection·contained·deferral·department·game·id·landmarks·landmarks·list·mandate·marine·memories·posted·qapage·recycling·sections·spreadsheet·stat·thing·urologic · ← agent·akashic·api·axis·clinician·cohort·connection·contained·deferral·department·game·id·landmarks·list·mandate·marine·memories·posted·qapage·recycling·sections·spreadsheet·stat·thing·urologic
+neighbors → center·collapse·law·merge·sti · ← center·collapse·law·merge·sti
 analysis —
 law recycling returns spent matter as the input of the next cycle, so every discarded thing it names must route to a center, never to a void.
 
 ---
 
-<sub>content-uuid `d2977fba-d9b0-8f90-a9f8-206d63338fcf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `581b0950-450a-8bf3-81b8-254e818ad07d` · `pnpm readme` · `pnpm computed:check`</sub>

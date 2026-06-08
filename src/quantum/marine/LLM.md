@@ -3,15 +3,15 @@
 
 # marine
 
-path `quantum/marine` · uuid `ede57021-d23c-8359-bfc1-f9b6903c66f6` · diamond `e211553c-770e-869f-9307-b4d874f8c078`
+path `quantum/marine` · uuid `ede57021-d23c-8359-bfc1-f9b6903c66f6` · diamond `723c1b02-17c5-89cf-8a42-8eacacbf3a3f`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports MaritimeZone·const·function · escapes —
-links `18/18` · folded `1` · bonds in `107` out `114`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·accounting·age·agent·akashic·akashic·angel·atom·attestations·aura·balance·boys·breakfast·calendars·chat·chat·city·classified·clinician·cohort·comedy·competency·conference·confirmation·contractual·corrects·credits·death·debit·depth·destination·drive·drone·dropoff·eat·eliminations·endorser·enterprisebudget·entertainment·entity·fat·fax·flight·founder·game·gears·good·high·hobby·homeopathic·hours·id·id·instrument·landmarks·license·list·live·localize·locations·maintainer·manufacturing·marine·marine·marry·mass·mcp·memories·memories·memories·nonprofit527·office·partial·pats·postcode·progression·qualification·qualified·query·read·recommendation·recycling·requests·restriction·rheumatologic·roadmap·roles·rooms·safety·satire·saturday·sections·sections·sector·see·seed·sell·sequence·sign·soundtrack·spouse·symbol·tax·tax·temporarily·transport·upon·video·virus·warranty·whole·win·wp · ← 3986·access·accounting·age·agent·akashic·angel·atom·attestations·aura·balance·boys·breakfast·calendars·chat·city·classified·clinician·cohort·comedy·competency·conference·confirmation·contractual·corrects·credits·death·debit·depth·destination·drive·drone·dropoff·eat·eliminations·endorser·enterprisebudget·entertainment·entity·fat·fax·flight·founder·game·gears·good·high·hobby·homeopathic·hours·id·instrument·landmarks·license·list·live·localize·locations·maintainer·manufacturing·marine·marine·marry·mass·mcp·memories·nonprofit527·office·partial·pats·postcode·progression·qualification·qualified·query·read·recommendation·recycling·requests·restriction·rheumatologic·roadmap·roles·rooms·safety·satire·saturday·sections·sector·see·seed·sell·sequence·sign·soundtrack·spouse·symbol·tax·temporarily·transport·upon·video·virus·warranty·whole·win·wp
+links `18/18` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·balance·cargo·identity·law·quantum·sea·ship·uuid·vessel · ← accounting·balance·cargo·identity·law·quantum·sea·ship·uuid·vessel
 analysis —
 law the sea is governed by geometry — distance from the baseline fixes the zone, the zone fixes the sovereign; beyond every zone, only the flag (the vessel's identity) governs. A sacrifice for the common voyage is shared by all in proportion, and the books balance even at sea.
 
 ---
 
-<sub>content-uuid `0feee508-1701-8175-b21a-b4134e4f7621` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99705dd6-b492-80a1-8a51-f9a135940967` · `pnpm readme` · `pnpm computed:check`</sub>

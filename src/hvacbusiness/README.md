@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `hvacbusiness` · sub-root `a092ce02-3b6a-8e8e-bf90-528bfe3937ea`
-- bond degree `20` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `a092ce02-3b6a-8e8e-bf90-528bfe3937ea`
-- bonds in `8` · out `8`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6ab086e9-1234-8ad4-a485-33b251170648` · framed by typography partition `hvacbusiness` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `44654e5d-828b-8753-9cf9-7e1fc73f050a` · framed by typography partition `hvacbusiness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # 7064
 
-path `iso/7064` · uuid `831a6a5a-9088-82cc-99c8-3e957f166729` · diamond `4b995df6-de42-86f4-a78d-303e1dfbf056`
+path `iso/7064` · uuid `831a6a5a-9088-82cc-99c8-3e957f166729` · diamond `c80f41a9-e486-888c-8aac-120e040789d8`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports decodeBgEgn·isBgEgn·type · escapes —
-links `1/1` · folded `1` · bonds in `3` out `3`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks·terminals · ← create·landmarks·terminals
+neighbors → law · ← law
 analysis —
 law a check-character system embeds integrity into the identifier itself — the trailing check digit is computed from the body (mod-11 / mod-97-10 / mod-37-2), so a single-digit error or transposition is caught by the number, not by a lookup.
 
 ---
 
-<sub>content-uuid `b0e68d73-882f-8670-a196-8be9b1a2e57d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12b7a50c-3250-8578-875a-9f39e0489e2b` · `pnpm readme` · `pnpm computed:check`</sub>

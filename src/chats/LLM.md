@@ -3,9 +3,9 @@
 
 # chats
 
-path `chats` · uuid `9e795428-4d27-8fa9-b270-55a98f196236` · diamond `39800920-2aa8-8b8f-a5f1-263ab8a0196d`
+path `chats` · uuid `9e795428-4d27-8fa9-b270-55a98f196236` · diamond `2cc36e88-0f3d-823c-8a0d-54f256604e41`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
-imports @/agent/sync·@/auth·@/standard/collection/hook · exports default · escapes —
+imports @/agent/sync·@/auth·@/standard/collection/hook·@/team/comms · exports default · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
 neighbors → content·law·thing·uuid · ← content·law·thing·uuid
@@ -14,4 +14,4 @@ law chat is the per-tenant content-addressed agent-event bus where each row is a
 
 ---
 
-<sub>content-uuid `9b66bc5c-184d-8507-885a-979305d89ed4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7febccc3-e1d8-81ef-a432-003785cc08ff` · `pnpm readme` · `pnpm computed:check`</sub>

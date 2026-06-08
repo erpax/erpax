@@ -3,15 +3,15 @@
 
 # recommendation
 
-path `recommendation` · uuid `bc47aeaf-221f-8f79-b5ae-da7fa8a788e5` · diamond `49c5532b-4a16-8bdd-adc3-2f766b68faa1`
+path `recommendation` · uuid `bc47aeaf-221f-8f79-b5ae-da7fa8a788e5` · diamond `79bca739-6b4e-8a78-b491-399cca58ebc4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports guideline·law·medical·strength · exports recommendation · escapes —
-links `4/4` · folded `1` · bonds in `17` out `17`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·colleagues·conference·declaration·details·enterprisebudget·fertility·gears·license·marine·memories·office·policy·process·requests·sell·win · ← cohort·colleagues·conference·declaration·details·enterprisebudget·fertility·gears·license·marine·memories·office·policy·process·requests·sell·win
+neighbors → guideline·law·medical·strength · ← guideline·law·medical·strength
 analysis —
 law a recommendation is a review that picks a winner, so it must carry its strength — a suggestion without a graded confidence is an opinion masquerading as a verdict.
 
 ---
 
-<sub>content-uuid `197e15e1-76ed-8736-9616-fa63428a5e59` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1bc72177-8901-8d55-b948-f93a70612253` · `pnpm readme` · `pnpm computed:check`</sub>

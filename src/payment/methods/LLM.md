@@ -3,15 +3,15 @@
 
 # methods
 
-path `payment/methods` · uuid `f0ac8880-4e2a-83af-8ed4-9723b118b04c` · diamond `fe44392e-b9cf-8954-a029-6dd42b67ce10`
+path `payment/methods` · uuid `f0ac8880-4e2a-83af-8ed4-9723b118b04c` · diamond `4ecdc3f2-fa31-878a-8675-b5b668dc419f`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/is/super/admin·@/payment/methods/hooks · exports const · escapes —
-links `7/7` · folded `1` · bonds in `1` out `1`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → access·commerce·defence·identity·law·proof·standard · ← access·commerce·defence·identity·law·proof·standard
 analysis —
 law a payment-method is a tokenized billing-instrument vault — Stripe tokens and AES-GCM encryption minimize PCI-DSS scope so sensitive card/bank data is never stored raw.
 
 ---
 
-<sub>content-uuid `029b860b-a0d2-893c-bb71-bb5bf1063d9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `02bf5367-3aed-8e08-a6b0-fedea105d34e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # emitter
 
 path `chain/event/emitter` · uuid `78522b2d-1585-8a0c-a12e-0e5a1e0c78e1` · diamond `de3015c1-6458-8d4c-afb2-68aed52767cf`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/event/emitter.service·@/types/events · exports AggregateType·const·function · escapes —
 links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a status-transition emit fires once and only on the entry edge (prev ≠ toS
 
 ---
 
-<sub>content-uuid `0f30a609-6019-8034-aec6-c65f8eff48fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e49540cb-e9d5-81fc-b4f6-04fd32b05e99` · `pnpm readme` · `pnpm computed:check`</sub>

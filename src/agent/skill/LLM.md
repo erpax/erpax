@@ -3,9 +3,9 @@
 
 # skill
 
-path `agent/skill` · uuid `08b35a76-d37a-8616-b024-420fe1fce83b` · diamond `3798428d-7e50-868b-98f1-b56841efb04c`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
-imports @/agents/mcp · exports *:./service·AgentContext·AgentEffect·AgentId·AgentRegistry·AgentRuntime·AuditLeaf·DomainAgent·DomainEvent·ERPAX_MCP_PROMPTS·ERPAX_MCP_RESOURCES·ErpaxMcpPrompt·ErpaxMcpResource·ErpaxMcpTool·EvidenceFrame·GapSeverity·McpClient·McpToolDescriptor·agentRegistry·agentRuntime·buildBlockCatalog·buildErpaxMcpTools·chainBlocks·chainsAsBlockCompositions·checkRegistryCoupling·composeBlocks·conveneAgentSociety·createAgentContext·createAgentRegistry·createAgentRuntime·createInProcessMcpClient·disbandAgentSociety·erpaxMcpPrompts·erpaxMcpResources·erpaxMcpTools·manifestOf·processEffect·processEffects·validateComposition · escapes —
+path `agent/skill` · uuid `08b35a76-d37a-8616-b024-420fe1fce83b` · diamond `ef482508-48f9-896a-9ab6-8ee3dc47af00`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
+imports @/agents/mcp · exports *:./service·AGENT_RUNTIME_GRANT·AgentContext·AgentEffect·AgentId·AgentLawState·AgentRegistry·AgentRuntime·AuditLeaf·DomainAgent·DomainEvent·ERPAX_MCP_PROMPTS·ERPAX_MCP_RESOURCES·ErpaxMcpPrompt·ErpaxMcpResource·ErpaxMcpTool·EvidenceFrame·GapSeverity·McpClient·McpToolDescriptor·StrictApplyViolation·agentRegistry·agentRuntime·assertStrictDispatch·assertStrictEffect·assertStrictMcpCall·buildBlockCatalog·buildErpaxMcpTools·chainBlocks·chainsAsBlockCompositions·checkRegistryCoupling·composeBlocks·conveneAgentSociety·createAgentContext·createAgentRegistry·createAgentRuntime·createInProcessMcpClient·defaultAgentLawState·disbandAgentSociety·erpaxMcpPrompts·erpaxMcpResources·erpaxMcpTools·manifestOf·processEffect·processEffects·strictApplyDispatch·strictApplyEffect·strictApplyMcpCall·validateComposition · escapes —
 links `10/10` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
 neighbors → agent·baked·holographic·law·merge·team·typography · ← agent·baked·holographic·law·merge·team·typography
@@ -14,4 +14,4 @@ law an agent's competence is the UNION of its loaded skills (a skill one agent l
 
 ---
 
-<sub>content-uuid `04bbd924-566a-8675-8c09-fb480272dc23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3bb7e431-66f1-80b6-8f5c-ac2e684e99df` · `pnpm readme` · `pnpm computed:check`</sub>

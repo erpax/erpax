@@ -3,15 +3,15 @@
 
 # deploy
 
-path `deploy` · uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c` · diamond `f4572a56-624a-8b49-b8a1-cb2ccc242c82`
+path `deploy` · uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c` · diamond `7ef4adf4-0c28-8560-8239-004ab613502e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/harmony·@/horo · exports const·function · escapes —
-links `16/16` · folded `1` · bonds in `31` out `35`
+links `16/16` · folded `1` · bonds in `33` out `37`
 faces worker·plugin·pwa `1·0·0`
-neighbors → anchor·backup·bindings·bindings·command·config·confirm·database·database·deploy·dev·finality·fs·gate·gate·harden·harmony·law·law·mcp·measurement·migrate·observability·optimize·payload·proof·reality·reality·rodin·secret·snapshot·stack·upload·versions·worker · ← anchor·backup·bindings·bindings·command·config·confirm·database·deploy·dev·finality·fs·gate·harden·harmony·law·mcp·measurement·migrate·observability·optimize·payload·proof·reality·rodin·secret·snapshot·stack·upload·versions·worker
+neighbors → anchor·backup·bindings·bindings·command·config·confirm·database·database·deploy·dev·finality·fs·gate·gate·harden·harmony·law·law·mcp·measurement·migrate·observability·optimize·payload·proof·quantum·reality·reality·rodin·secret·serverless·snapshot·stack·upload·versions·worker · ← anchor·backup·bindings·bindings·command·config·confirm·database·deploy·dev·finality·fs·gate·harden·harmony·law·mcp·measurement·migrate·observability·optimize·payload·proof·quantum·reality·rodin·secret·serverless·snapshot·stack·upload·versions·worker
 analysis —
 law the deploy is harmonized only in the one true order — gate · migrate · build · push (the doubling band 1·2·4·8). The gate-green order is the *lawful* one; any other forges reality. The band's musical consonance is computed honestly (the doubling is no perfect chord) — the harmony that ships is the order, and out of order ships a lie.
 
 ---
 
-<sub>content-uuid `ae6dec03-bb44-85b7-8722-eadb3f29346e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d54371db-3826-83e9-b292-8a650afb325c` · `pnpm readme` · `pnpm computed:check`</sub>

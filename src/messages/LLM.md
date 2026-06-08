@@ -3,15 +3,15 @@
 
 # messages
 
-path `messages` · uuid `8988fcce-f4cc-84b0-92fd-9331df8933bb` · diamond `e9829d23-172c-8e23-85c4-b70e118e23ed`
+path `messages` · uuid `8988fcce-f4cc-84b0-92fd-9331df8933bb` · diamond `4baca571-2398-83ae-aff7-33d5816301e7`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `13/13` · folded `1` · bonds in `11` out `11`
-faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·cohort·comedy·departure·displacement·gears·memories·metatron·method·policy·resume · ← addressed·cohort·comedy·departure·displacement·gears·memories·metatron·method·policy·resume
+links `13/13` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·auth·collections·comment·fields·hooks·law·standard · ← access·auth·collections·comment·fields·hooks·law·standard
 analysis —
 law a message is one internal addressed communication between users — subject/body with priority and multi-recipient addressing, threaded by `parentMessage` (not a separate thread table) and tracked by read-at, gated by [[access]] so only sender and recipients may read it.
 
 ---
 
-<sub>content-uuid `40c420a8-fda6-8471-baf5-a7af0593b8d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `caafab99-7ba8-8c35-91fc-db30a49cef52` · `pnpm readme` · `pnpm computed:check`</sub>

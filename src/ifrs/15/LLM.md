@@ -3,15 +3,15 @@
 
 # 15
 
-path `ifrs/15` · uuid `1455b312-39de-8b27-b580-72d678360a52` · diamond `9ca76ef6-ecc6-88df-ad83-317651e57cd5`
+path `ifrs/15` · uuid `1455b312-39de-8b27-b580-72d678360a52` · diamond `d3b56b62-c5ef-8b74-a2ff-766adcef4c11`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports Allocation·Contract·ContractAsset·ContractLiability·InputMethodKind·OutputMethodKind·OverTimeMeasurement·PerformanceObligation·RecognitionTiming·RefundLiability·RevenueRecognition·TransactionPrice·VariableConsideration·VariableConsiderationMethod·isInputMethodKind·isOutputMethodKind·isOverTimeMeasurement·isRecognitionTiming·isVariableConsiderationMethod · escapes —
-links `1/1` · folded `1` · bonds in `7` out `7`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → fungus·landmarks·laser·log·num·owned·preschool · ← fungus·landmarks·laser·log·num·owned·preschool
+neighbors → law · ← law
 analysis —
 law IFRS 15 / ASC 606 owns the canonical types for the five-step revenue model (identify contract → obligations → transaction price → allocate → recognize) plus its balance-sheet artefacts (ContractAsset/Liability, RefundLiability) — the one shape every revenue collection and posting service projects onto, so the obligation enums cannot drift.
 
 ---
 
-<sub>content-uuid `1ba3ac5a-f618-8909-b900-7dc4e961c728` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b0d497c1-d25a-8bfc-a073-24a8f5213e6b` · `pnpm readme` · `pnpm computed:check`</sub>

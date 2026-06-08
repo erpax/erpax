@@ -3,15 +3,15 @@
 
 # kiosk
 
-path `kiosk` · uuid `e41b7364-3bd4-868b-b478-a5df9c1c0fb5` · diamond `deca587c-5447-8a81-b91a-937c86f36ec9`
+path `kiosk` · uuid `e41b7364-3bd4-868b-b478-a5df9c1c0fb5` · diamond `b679cf6a-d3ba-8e7a-b46c-25827ba1e263`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports kiosk · escapes —
-links `4/4` · folded `1` · bonds in `16` out `16`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·deduction·desktop·entropy·issn·landmarks·memories·rates·recipient·relationship·restocking·shannon·snid·stat·thing·tracking · ← cohort·deduction·desktop·entropy·issn·landmarks·memories·rates·recipient·relationship·restocking·shannon·snid·stat·thing·tracking
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law kiosk is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `478b117e-58b0-880c-9524-6f075d76bb7f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `696a4ac9-4c5c-8ee8-aa9b-3f5622120464` · `pnpm readme` · `pnpm computed:check`</sub>

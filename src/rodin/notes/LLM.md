@@ -3,15 +3,15 @@
 
 # notes
 
-path `rodin/notes` · uuid `c7a1c1c1-c63c-8ad8-86f4-39f163c7ceb8` · diamond `32be10bd-136a-85f2-9dde-d6fa51515736`
+path `rodin/notes` · uuid `c7a1c1c1-c63c-8ad8-86f4-39f163c7ceb8` · diamond `2b36de4e-f171-8395-b645-d8a25b1275d0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports balance·base·breath·cmyk·crest·descent·duality·horo·octave·rodin·round·share·signal·unity·weave · exports notes · escapes —
-links `26/26` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·continuation·landmarks·memories·stat · ← cohort·continuation·landmarks·memories·stat
+links `26/26` · folded `1` · bonds in `25` out `25`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·aura·balance·base·breath·chakra·cmyk·crest·descent·duality·harmony·horo·negative·octave·phase·positive·release·rodin·round·science·share·signal·unity·vibration·weave · ← analog·aura·balance·base·breath·chakra·cmyk·crest·descent·duality·harmony·horo·negative·octave·phase·positive·release·rodin·round·science·share·signal·unity·vibration·weave
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `0aec2e87-edbc-8d24-8d35-91aff3bea5d4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a41dfc90-c941-885a-87b1-0b1363f2d1f2` · `pnpm readme` · `pnpm computed:check`</sub>

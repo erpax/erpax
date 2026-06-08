@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → acknowledgment·interior·landmarks · ← acknowledgment·interior·landmarks
+neighbors → law·privilege·tests · ← law·privilege·tests
 analysis —
 law an internal control is a register entry typed by purpose (preventive/detective/corrective/compensating) and mapped to its COSO-2013 component, carrying owner, frequency, review dates and SOX §404 scope — and proven effective by its [[internal/controls/control/tests|control tests]].
 
 ---
 
-<sub>content-uuid `f86c525f-67f3-8685-8d2b-4f7d48932d95` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `79150546-acbd-843c-b7d4-7c5cf174fd8e` · `pnpm readme` · `pnpm computed:check`</sub>

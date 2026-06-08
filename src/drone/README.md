@@ -25,7 +25,22 @@
 
 - partition `drone` · sub-root `2ed3cbf6-baa6-803c-8ca9-23d8511235bf`
 - bond degree `52` · analysis neighbors `agent` · `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 19011:2018 §6.4 reconnaissance is read-only evidence-gathering` · banner
+- `RFC 9562 §5.8 content-uuid (the nodes a drone flies)` · banner
+
+## analytics
+
+- bond degree `52` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `aa1490af-991a-80f3-b1f2-4f7bbb92485d` · framed by typography partition `drone` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ef8c8b8-1532-89f9-828a-e8f06441477d` · framed by typography partition `drone` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

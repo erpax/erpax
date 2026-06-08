@@ -3,15 +3,15 @@
 
 # question
 
-path `question` · uuid `7f655628-13fc-8298-a49e-a2a17b89892a` · diamond `9281dbb4-85e5-89d9-bf63-b1d2f9ef2405`
+path `question` · uuid `7f655628-13fc-8298-a49e-a2a17b89892a` · diamond `5818a473-8d86-8850-961a-f2bb04665c79`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports answer·command·concatenate·edu·law·step·type · exports question · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → answer·command·concatenate·edu·law·step·type·workflow · ← answer·command·concatenate·edu·law·step·type·workflow
 analysis —
 law question is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `97348c14-0645-850d-ba36-ed6a3bd16698` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3ca670e0-a56f-8abb-8bd3-928381543cf7` · `pnpm readme` · `pnpm computed:check`</sub>

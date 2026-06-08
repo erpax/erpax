@@ -2,7 +2,7 @@
 
 # path
 
-> atom `path` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `path` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `path` · sub-root `ffe8628d-ff57-8b56-84fa-02fee1cfb601`
-- bond degree `42` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `83` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `9334e894-59e5-8cd9-ae5f-60e4e4b73cad`
-- bonds in `5` · out `5`
+- uuid `ffe8628d-ff57-8b56-84fa-02fee1cfb601`
+- bonds in `26` · out `25`
 - trinity form·code·proof `1`·`1`·`1`
 - links `26` / `26`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `8ddc40df-c504-8b26-9662-e2082b4e79ad` · framed by typography partition `path` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0cfe902f-9630-84d2-b2ba-949b5450235b` · framed by typography partition `path` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>

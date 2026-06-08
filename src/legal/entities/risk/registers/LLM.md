@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
 links `1/1` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → entities·forcemajeure·indemnity·law·risk · ← entities·forcemajeure·indemnity·law·risk
 analysis —
 law every enterprise risk is scored twice — inherent then residual likelihood×impact — with the mitigating controls between them, so residual risk is what survives the controls, measured against appetite, not a single ungoverned guess.
 
 ---
 
-<sub>content-uuid `d1d12c1e-e375-8ce5-8275-902b5f309a2a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b3b446a-997a-821a-aadb-17eb82b80c34` · `pnpm readme` · `pnpm computed:check`</sub>

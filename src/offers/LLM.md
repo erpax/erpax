@@ -3,15 +3,15 @@
 
 # offers
 
-path `offers` · uuid `e11a648b-36f1-8fed-9952-f064560449fe` · diamond `83860673-00f2-86f0-93af-c5c49594e771`
+path `offers` · uuid `e11a648b-36f1-8fed-9952-f064560449fe` · diamond `3cd77294-b02d-8048-a448-5e9ec3e5e701`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·mail·prescription · exports offers · escapes —
-links `3/3` · folded `1` · bonds in `4` out `4`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·mail·prescription · ← law·mail·prescription
 analysis —
 law offers is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e418fbea-9c50-8cf6-9828-0f5551d1074e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `737f5143-4836-83fc-b4a2-68bcccda7b08` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # calculator
 
 path `average/calculator` · uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea` · diamond `5bccc13f-97fe-8fc9-9047-3db6e998bce9`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports — · exports function · escapes —
 links `2/2` · folded `1` · bonds in `11` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the arithmetic mean is computed in exactly one place and is zero-guarded —
 
 ---
 
-<sub>content-uuid `1dcee370-a41b-8eb8-908c-2eb1fb5d3b44` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `67279661-2a0d-8f07-847e-380015ef73ff` · `pnpm readme` · `pnpm computed:check`</sub>

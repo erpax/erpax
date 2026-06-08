@@ -3,15 +3,15 @@
 
 # legal
 
-path `legal` · uuid `54d96cb3-8004-8306-948d-a75378f9bc30` · diamond `64900e67-b070-8bd2-9598-3410b5bb63bf`
+path `legal` · uuid `54d96cb3-8004-8306-948d-a75378f9bc30` · diamond `c790d7fe-28fd-8ff1-a6da-018e71f01842`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports address·collapse·drug·force·law·legislation·level·merge·name·representative·service·status·sti·value · exports legal · escapes —
-links `14/14` · folded `1` · bonds in `13` out `13`
+links `14/14` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·biological·colour·evaluated·fact·gluten·hearing·id·instructions·landmarks·lease·progression·reviews · ← accounting·biological·colour·evaluated·fact·gluten·hearing·id·instructions·landmarks·lease·progression·reviews
+neighbors → address·collapse·commitment·contract·declaration·drug·force·law·legislation·level·merge·name·representative·service·status·sti·value · ← address·collapse·commitment·contract·declaration·drug·force·law·legislation·level·merge·name·representative·service·status·sti·value
 analysis —
 law legal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c2b5b676-70aa-853e-a312-cd87eca55490` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6d725f4-445d-811d-82c2-f84862957c8b` · `pnpm readme` · `pnpm computed:check`</sub>

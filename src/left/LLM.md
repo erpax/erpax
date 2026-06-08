@@ -3,15 +3,15 @@
 
 # left
 
-path `left` · uuid `57198c40-5ac3-8ce0-a0b8-95a32fc729dd` · diamond `7eb88ebe-271c-80c0-89ab-f31c6bd141c7`
+path `left` · uuid `57198c40-5ac3-8ce0-a0b8-95a32fc729dd` · diamond `851f7ac7-406b-8134-b3f5-c9a624044fc0`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports left · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·auth·id·landmarks·lease·prerequisite·progression·spouse · ← accounting·auth·id·landmarks·lease·prerequisite·progression·spouse
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law left is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a8dd28e8-b8f6-86d2-829d-9feed14b1f63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `48cc4c8c-44b0-8f7f-8cfc-df99e5c2a073` · `pnpm readme` · `pnpm computed:check`</sub>

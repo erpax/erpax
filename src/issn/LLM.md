@@ -3,15 +3,15 @@
 
 # issn
 
-path `issn` · uuid `12f521fc-f064-80ed-9838-8070c85dd78d` · diamond `aab907fd-8913-8fe7-b76e-37320d7cc96d`
+path `issn` · uuid `12f521fc-f064-80ed-9838-8070c85dd78d` · diamond `fd2082dc-70ea-8bbd-9395-3c5640277425`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports issn · escapes —
-links `3/3` · folded `1` · bonds in `36` out `37`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·appearance·availability·computational·dangerous·deduction·electrician·featured·federation·full·funnel·harden·hostel·implements·kiosk·landmarks·limited·lnid·meal·membership·net·notice·occupancy·occupation·opinion·opponent·owned·painting·prerequisite·restocking·retail·retention·sanitization·sha256·shannon·snid·standards · ← amount·appearance·computational·dangerous·deduction·electrician·featured·federation·full·funnel·harden·hostel·implements·kiosk·landmarks·limited·lnid·meal·membership·net·notice·occupancy·occupation·opinion·opponent·owned·painting·prerequisite·restocking·retail·retention·sanitization·sha256·shannon·snid·standards
+neighbors → creative·law·thing · ← creative·law·thing
 analysis —
 law issn is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `db617973-a618-8591-aa68-9cacb9843da7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22203d0b-b80a-8381-984e-ef71ef6308a9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `renal` · sub-root `5808b689-5e54-8b52-b8cc-f5004376d9a8`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d05ad4a8-7b1a-81d1-a8e2-52c0ba0092af` · framed by typography partition `renal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8c93b97e-4b27-87c6-b850-f2d54fac1ce0` · framed by typography partition `renal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

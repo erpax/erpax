@@ -3,15 +3,15 @@
 
 # recipe
 
-path `recipe` · uuid `83312512-fd4c-8831-b471-cd76bfadd4d0` · diamond `8d18ba11-7ffb-860e-a9a4-b8fba4cbaaae`
+path `recipe` · uuid `83312512-fd4c-8831-b471-cd76bfadd4d0` · diamond `cf61f745-8504-8e5b-b3df-3d201b6762f8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports category·cuisine·ingredient·instructions·law·yield · exports recipe · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·landmarks·reconciliations · ← accounting·balance·landmarks·reconciliations
+neighbors → category·cuisine·ingredient·instructions·law·yield · ← category·cuisine·ingredient·instructions·law·yield
 analysis —
 law recipe is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `423af320-886b-8aae-a3d3-33704ecf8316` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fc07d58-01c7-8984-8407-8ed41c6a31d0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # online
 
-path `online` · uuid `7160ebea-7597-885f-b7c4-ae0f698c2689` · diamond `4aba44fa-5aa3-89f2-a0c0-7f9d255b1341`
+path `online` · uuid `7160ebea-7597-885f-b7c4-ae0f698c2689` · diamond `3bed2b35-bf0a-8882-940d-3799435e31ec`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports business·collapse·law·marketplace·merge·players·sti·store · exports online · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·surprisal · ← cohort·landmarks·memories·stat·surprisal
+neighbors → business·collapse·law·marketplace·merge·players·sti·store · ← business·collapse·law·marketplace·merge·players·sti·store
 analysis —
 law online is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `78673ab8-e8d0-87a1-afc4-3d8fd3f45ab3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16da1a1e-58d2-87f2-a300-5a8dcd09c4c1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports like · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → brewery·cohort·landmarks·memories·stat · ← brewery·cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law like is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ab58fa72-b673-8711-afca-83ece4c43518` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2580f1d4-22e3-8c0b-93fa-f1eb5b0d1053` · `pnpm readme` · `pnpm computed:check`</sub>

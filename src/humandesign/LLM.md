@@ -3,15 +3,15 @@
 
 # humandesign
 
-path `humandesign` · uuid `addfa438-0c14-890f-8f33-0cfdd1a53bef` · diamond `48f2113d-bef1-888a-b043-ac405085a496`
+path `humandesign` · uuid `addfa438-0c14-890f-8f33-0cfdd1a53bef` · diamond `e1806df4-7cf2-8747-ac6f-c4f62168d8b8`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/quantum · exports const·function · escapes —
-links `18/18` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·stat · ← coach·cohort·landmarks·memories·stat
+links `18/18` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → chakra·law·merge·quantum·rodin·society·torus·uuid · ← chakra·law·merge·quantum·rodin·society·torus·uuid
 analysis —
 law encode the structure, dissolve the claim.
 
 ---
 
-<sub>content-uuid `e4aa7435-bce2-8d01-a9f4-d7ae6f9fec9e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `104199db-6f43-8378-8097-95c1c9f3610d` · `pnpm readme` · `pnpm computed:check`</sub>

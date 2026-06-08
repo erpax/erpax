@@ -3,15 +3,15 @@
 
 # phases
 
-path `lot/work/phases` · uuid `1ab9b677-c1ef-801a-b4f4-c4c77758ccb3` · diamond `68fc07b5-cb0b-883d-bf10-69518fbcfbed`
+path `lot/work/phases` · uuid `1ab9b677-c1ef-801a-b4f4-c4c77758ccb3` · diamond `f2e15a39-c42b-81c1-913b-b83adbbc4315`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports const·default · escapes —
-links `19/19` · folded `1` · bonds in `2` out `2`
+links `19/19` · folded `1` · bonds in `11` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → accounting·accounting·balance·coordinate·coordinate·law·law·lots·lots·merge·merge·operations·phases·phases·sequence·variants · ← accounting·balance·coordinate·law·lots·merge·operations·phases·phases·sequence·variants
 analysis —
 law a routing step is one sort-ordered position in a [[lots|lot]]'s phase chain whose `workPhase` always resolves into the [[work/phases]] catalog (100% over 291 011 etrima rows); `sort`-order IS the route ([[sequence]]), state is DERIVED from watermarks never stored, and over-run is WARNED not blocked.
 
 ---
 
-<sub>content-uuid `e97d8bb0-c0a8-80e1-91cb-499c5c118cfb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `707014f2-610e-8ab7-8ff0-a59f8ee19814` · `pnpm readme` · `pnpm computed:check`</sub>

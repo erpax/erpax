@@ -3,15 +3,15 @@
 
 # owners
 
-path `legal/entities/beneficial/owners` · uuid `3fd819fc-a39e-8dcc-94b8-0ffa55cfa173` · diamond `f9f29cc8-c806-8852-8f10-2775f7fa36d2`
+path `legal/entities/beneficial/owners` · uuid `3fd819fc-a39e-8dcc-94b8-0ffa55cfa173` · diamond `e40b4d42-454e-8fc6-b939-c22b65c5cdd6`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·calculation·id·landmarks·lease·progression·spouse · ← accounting·calculation·id·landmarks·lease·progression·spouse
+neighbors → accounting·auth·entities·identity·law·previous·proof·standard · ← accounting·auth·entities·identity·law·previous·proof·standard
 analysis —
 law the register of a legal entity's ultimate beneficial owners — direct/indirect ownership percent, control type, PEP status, and KYC link — as required by AMLD-5 / the Corporate Transparency Act.
 
 ---
 
-<sub>content-uuid `7c987e1f-881b-887c-b6c2-e33b72815ab7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c29db96f-d974-84e7-8169-f0e59dfe78f5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `discount` · sub-root `403b05da-22b0-80f8-97c2-23b3e38451bb`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `14e4be25-40d9-88bf-842e-8b83a2a6f9c4` · framed by typography partition `discount` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b1b51b92-1401-8fc3-a9e0-dc5b952edfcf` · framed by typography partition `discount` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

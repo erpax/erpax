@@ -3,15 +3,15 @@
 
 # legislative
 
-path `legislative` · uuid `7a650bc6-6af4-81fd-bb1a-35edd69f11f2` · diamond `5d5e97da-1f63-81ce-872b-b27ef954b2a7`
+path `legislative` · uuid `7a650bc6-6af4-81fd-bb1a-35edd69f11f2` · diamond `5c62076f-e051-8797-9e6d-14920774fb5a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports building·collapse·law·merge·sti · exports legislative · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical·terminals · ← landmarks·periodical·terminals
+neighbors → building·collapse·law·merge·sti · ← building·collapse·law·merge·sti
 analysis —
 law legislative is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a2eee97c-60ce-874a-a0b2-1b96074dce76` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6f9bdd76-61f9-8a69-a2fe-5c38a24e5672` · `pnpm readme` · `pnpm computed:check`</sub>

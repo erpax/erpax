@@ -3,15 +3,15 @@
 
 # license
 
-path `license` · uuid `8d3bd73d-0dda-80ae-85ea-dc7886e429b8` · diamond `83435eb2-723a-877b-9c16-9dee8fc865ea`
+path `license` · uuid `8d3bd73d-0dda-80ae-85ea-dc7886e429b8` · diamond `554bd3dc-4355-8e31-b060-07da2749c33f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports contracts·law·matter·restriction·termination · exports license · escapes —
-links `7/7` · folded `1` · bonds in `27` out `27`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·auth·balance·catalogue·chinese·document·gears·id·incentives·landmarks·liquor·list·marine·mcp·memories·out·prerequisites·process·progression·psychological·recommendation·roadmap·rule·saturday·schedules·sell·test · ← angel·auth·balance·catalogue·chinese·document·gears·id·incentives·landmarks·liquor·list·marine·mcp·memories·out·prerequisites·process·progression·psychological·recommendation·roadmap·rule·saturday·schedules·sell·test
+neighbors → acquire·contracts·law·matter·page·restriction·sd·termination · ← acquire·contracts·law·matter·page·restriction·sd·termination
 analysis —
 law a license is a contract granting a right to use IP/goods — licensor to licensee, scoped (exclusive vs non-exclusive, sublicense) and bounded by term, fees, [[restriction]], and [[termination]].
 
 ---
 
-<sub>content-uuid `fc9ce467-e545-87b5-ab2d-58ec04e49789` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3786e2cc-183e-80fc-9f05-ea22edd8c1d9` · `pnpm readme` · `pnpm computed:check`</sub>

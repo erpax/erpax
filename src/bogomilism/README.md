@@ -23,7 +23,7 @@
 
 - partition `bogomilism` · sub-root `1f9371d1-eec8-8939-a5a9-a165ff702cd0`
 - bond degree `59` · analysis neighbors `diamond`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `54951493-5503-809b-9f7a-f966dd1df29a` · framed by typography partition `bogomilism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `37861d07-e955-8ed8-8a14-fd11d4f17cbd` · framed by typography partition `bogomilism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

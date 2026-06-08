@@ -3,15 +3,15 @@
 
 # property
 
-path `property` · uuid `fead4df5-57ff-82fd-87f5-5dca6f62be54` · diamond `c871df9d-1867-82f1-a756-e1b5ede274b4`
+path `property` · uuid `fead4df5-57ff-82fd-87f5-5dca6f62be54` · diamond `7e50f962-8f94-8188-abd4-df4bfe9e7a91`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports additional·constraint·id·law·measured·specification·stupid·value · exports property · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → additional·constraint·id·law·measured·specification·stupid·value · ← additional·constraint·id·law·measured·specification·stupid·value
 analysis —
 law property is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7768ec3e-2377-8d8a-bf7a-b2d15876ad0e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d06fb53-9ace-8752-9039-3fa388cafb50` · `pnpm readme` · `pnpm computed:check`</sub>

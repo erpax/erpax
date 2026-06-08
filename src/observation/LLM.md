@@ -3,15 +3,15 @@
 
 # observation
 
-path `observation` · uuid `224fe76a-10f9-8a64-a865-43f1a89ce242` · diamond `9c5fcc58-f2de-8198-9a49-0ba585a20020`
+path `observation` · uuid `224fe76a-10f9-8a64-a865-43f1a89ce242` · diamond `06809810-60fe-8ef9-a549-671099d204e9`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports about·date·law·period · exports observation · escapes —
-links `4/4` · folded `1` · bonds in `12` out `12`
+links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → awarded·catalog·cohort·complex·creative·edits·expand·landmarks·memories·product·stat·term · ← awarded·catalog·cohort·complex·creative·edits·expand·landmarks·memories·product·stat·term
+neighbors → about·date·emr·law·period · ← about·date·emr·law·period
 analysis —
 law observation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `14be0e09-5fa1-8f0c-91ce-931963f1fac6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f6b2d5a5-459b-8870-b6db-22d1b3b5e8c8` · `pnpm readme` · `pnpm computed:check`</sub>

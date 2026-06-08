@@ -3,15 +3,15 @@
 
 # risk
 
-path `risk` · uuid `5aef1e55-0d13-809e-9c11-9646c98858dd` · diamond `c1bf21bb-fa4d-89ff-994b-79489cbc2cf3`
+path `risk` · uuid `5aef1e55-0d13-809e-9c11-9646c98858dd` · diamond `39f7782e-b155-8026-9c9c-238c3ef9c1fa`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports incident·legal·workflow · exports risk · escapes —
-links `3/3` · folded `1` · bonds in `16` out `16`
+links `3/3` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·base·befriend·breakfast·certified·clip·cooking·declaration·founder·handling·homeopathic·memories·rheumatologic·right·roadmap·sell · ← 3986·base·befriend·breakfast·certified·clip·cooking·declaration·founder·handling·homeopathic·memories·rheumatologic·right·roadmap·sell
+neighbors → calculator·dormancy·estimates·estimator·factor·hedge·incident·included·increases·manure·medical·mortality·registers·score·scouting·share·withdrawal·workflow · ← calculator·dormancy·estimates·estimator·factor·hedge·incident·included·increases·manure·medical·mortality·registers·score·scouting·share·withdrawal·workflow
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `633ee690-03b6-8d27-ba54-988c0574de2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb713f44-9323-8196-84d0-764ec3e66416` · `pnpm readme` · `pnpm computed:check`</sub>

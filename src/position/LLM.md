@@ -3,15 +3,15 @@
 
 # position
 
-path `position` · uuid `59bfbf93-8cbd-8c08-93ad-acf7bde6c77c` · diamond `ebad7b0c-3261-880b-a790-1deb8678fdaf`
+path `position` · uuid `59bfbf93-8cbd-8c08-93ad-acf7bde6c77c` · diamond `3c46f535-b24e-81db-a17a-c3af4825f727`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/allocation·@/decompression·@/integrity · exports const·function·interface · escapes —
-links `30/30` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·aquaculture·biological·comment·florist·government·hardcover·issue·landmarks·lifestyle·max·overview·worth · ← agriculture·aquaculture·biological·comment·florist·government·hardcover·issue·landmarks·lifestyle·max·overview·worth
+links `30/30` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → allocation·collections·duality·fractal·hooks·identity·law·merge·named·numbered·responsibility·self·standard·steering·sufficient · ← allocation·collections·duality·fractal·hooks·identity·law·merge·named·numbered·responsibility·self·standard·steering·sufficient
 analysis —
 law a position is one rung on the harmonic rate ladder where government IS society — same harmonic ⇒ same hourly rate regardless of function; job descriptions computed, conditions content-addressed and chained so tamper is a hash mismatch.
 
 ---
 
-<sub>content-uuid `30ff7832-4966-85c9-81fa-b0bde4a02de7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da491164-1dac-8fa6-80f2-73ee09ffa4cd` · `pnpm readme` · `pnpm computed:check`</sub>

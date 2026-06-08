@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·reservation·sti · exports package · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·hospital·landmarks·memories·stat · ← cohort·hospital·landmarks·memories·stat
+neighbors → collapse·law·merge·reservation·sti · ← collapse·law·merge·reservation·sti
 analysis —
 law package is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `820b5596-dbc2-8632-8e62-4d87ca16f731` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e13586c-ccd5-8624-b4a8-7928055139c5` · `pnpm readme` · `pnpm computed:check`</sub>

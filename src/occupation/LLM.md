@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports has·law·location·relevant · exports occupation · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → issn·landmarks·quotes·statistic · ← issn·landmarks·quotes·statistic
+neighbors → has·law·location·relevant · ← has·law·location·relevant
 analysis —
 law occupation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `62b89538-f708-8b74-be6e-8040cda8c407` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a83c578-abe2-8b1c-8c55-fa6fd321a71e` · `pnpm readme` · `pnpm computed:check`</sub>

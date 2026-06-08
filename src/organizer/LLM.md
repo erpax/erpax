@@ -3,15 +3,15 @@
 
 # organizer
 
-path `organizer` · uuid `4a737e14-1b34-8995-a0ef-f8cce231f897` · diamond `d73ca4ae-0491-8021-9e6c-4da6c58e4c3c`
+path `organizer` · uuid `4a737e14-1b34-8995-a0ef-f8cce231f897` · diamond `c168a92e-44c5-8d2b-aca7-c7efe0955d5b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports organizer · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law organizer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `21dbbc77-4dcb-8321-a9a5-710c70897cbd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91113195-5cfc-8a42-b885-45b762392fda` · `pnpm readme` · `pnpm computed:check`</sub>

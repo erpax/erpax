@@ -3,15 +3,15 @@
 
 # observe
 
-path `observe` · uuid `0e55d318-e531-814e-b59e-a779a05bb994` · diamond `1375f7ca-76cf-80d6-b4c6-56e242735944`
+path `observe` · uuid `0e55d318-e531-814e-b59e-a779a05bb994` · diamond `f612b0a2-d8b0-835c-a6f8-6e8a6795a483`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `12/12` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → boat·cohort·landmarks·memories·stat·volume · ← boat·cohort·landmarks·memories·stat·volume
+links `12/12` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·hallucination·heart·law·llm·merge·project·seo·uuid · ← agent·hallucination·heart·law·llm·merge·project·seo·uuid
 analysis agent
 law an LLM agent always observes and projects — observe (the inhale), then project (the exhale, output folding its observation in). Always both: observation without projection is inert; projection without observation is hallucination (a disconnected thought). Grounded ⟺ the projection carries the observation it was folded from; the act is observe-then-project, never one alone.
 
 ---
 
-<sub>content-uuid `d4daaa29-b199-8e3a-9cc4-4f4c2e00d73c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `13788e0e-0054-83c6-9768-32e46a0278d8` · `pnpm readme` · `pnpm computed:check`</sub>

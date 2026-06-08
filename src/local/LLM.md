@@ -3,15 +3,15 @@
 
 # local
 
-path `local` · uuid `9a664cfb-579d-83e8-a811-829dd61840ee` · diamond `489c64d3-e6e1-85f7-98da-27857aa32b17`
+path `local` · uuid `9a664cfb-579d-83e8-a811-829dd61840ee` · diamond `48a50e06-45e9-81c8-a1d1-049af841858e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports business·collapse·law·merge·sti · exports local · escapes —
-links `5/5` · folded `1` · bonds in `4` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician·terminals · ← applicant·landmarks·physician·terminals
+neighbors → business·collapse·law·merge·sti · ← business·collapse·law·merge·sti
 analysis —
 law local is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b0ec2673-58a1-8100-b350-da75bceb4c5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `808b2390-27b2-89c2-acb6-0e3322b109aa` · `pnpm readme` · `pnpm computed:check`</sub>

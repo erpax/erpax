@@ -3,15 +3,15 @@
 
 # 14289
 
-path `iso/14289` · uuid `7ace7031-a723-851f-aa22-f3e117d42487` · diamond `1fc7ee49-0aae-8068-83be-024e8f640835`
+path `iso/14289` · uuid `7ace7031-a723-851f-aa22-f3e117d42487` · diamond `1091441c-3944-8e9c-b6c8-de0c74556137`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports PDF_UA_DEFAULT·pdfUaProfileToXmp·type · escapes —
-links `0/0` · folded `1` · bonds in `1` out `1`
+links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `6e4fed2d-0d7c-8201-a041-2e82cb735e1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `29a2ad4f-29a2-86ab-8035-99b658406b3f` · `pnpm readme` · `pnpm computed:check`</sub>

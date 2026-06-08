@@ -3,15 +3,15 @@
 
 # reservoir
 
-path `reservoir` · uuid `794af776-c63d-81ad-8c81-b3a5237703cf` · diamond `e267a19f-eedc-839d-a64e-bc67da39ae8b`
+path `reservoir` · uuid `794af776-c63d-81ad-8c81-b3a5237703cf` · diamond `00e2fcdb-bd44-894d-95d3-1f979a39f3e0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports reservoir · escapes —
-links `2/2` · folded `1` · bonds in `3` out `3`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·reset·terminals · ← landmarks·reset·terminals
+neighbors → law·thing · ← law·thing
 analysis —
 law reservoir is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `84229849-fe3d-8ecc-be6c-23f4d524e7c1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `52f2a57f-2aee-884a-a42d-61c726cceabf` · `pnpm readme` · `pnpm computed:check`</sub>

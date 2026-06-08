@@ -23,7 +23,21 @@
 
 - partition `cycle` · sub-root `33df03d6-53c1-8e7f-82cc-cdf946f633cd`
 - bond degree `51` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `51` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b175ed81-6b99-820a-810f-bdac08f7ed6f` · framed by typography partition `cycle` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e5cef070-8855-878c-8cfb-9725820b3ca8` · framed by typography partition `cycle` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

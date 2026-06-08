@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `paperback` · sub-root `e3b62d3e-eb39-83b5-bbb2-9e9ba948d2fa`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `e3b62d3e-eb39-83b5-bbb2-9e9ba948d2fa`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9891b2df-a4bb-8131-95d0-28b93bdf6a94` · framed by typography partition `paperback` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4da7a72a-f015-893b-8c18-110a028986ed` · framed by typography partition `paperback` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

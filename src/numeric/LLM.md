@@ -3,15 +3,15 @@
 
 # numeric
 
-path `numeric` · uuid `c9709fc3-07ec-8482-a62a-c52a1523e65d` · diamond `ae4b9b5d-d090-8183-8bac-ee6da3a44daf`
+path `numeric` · uuid `c9709fc3-07ec-8482-a62a-c52a1523e65d` · diamond `38a29efa-1e92-866a-840c-a54962f6b7df`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports numeric · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → about·database·fire·landmarks·quality · ← about·database·fire·landmarks·quality
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law numeric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `623b79b0-f0aa-8f07-9e15-9c5e0da7b14d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aaf174b5-21b7-8cd8-92b8-ed7d1ee1e945` · `pnpm readme` · `pnpm computed:check`</sub>

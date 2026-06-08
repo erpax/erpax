@@ -3,15 +3,15 @@
 
 # isbn
 
-path `isbn` · uuid `e66072d3-d141-86b9-83b9-8383272ef58e` · diamond `f73b6ce2-88eb-87f6-8004-69b237f8f9af`
+path `isbn` · uuid `e66072d3-d141-86b9-83b9-8383272ef58e` · diamond `c658952f-d3db-86ca-899c-ddee297f6a0a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports isbn · escapes —
-links `3/3` · folded `1` · bonds in `0` out `0`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → creative·law·thing · ← creative·law·thing
 analysis —
 law isbn is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ced7ca36-777a-8ab1-940e-07bdc673e146` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e11ec2c0-d2c7-8dd0-a9ad-0d3ce81a2318` · `pnpm readme` · `pnpm computed:check`</sub>

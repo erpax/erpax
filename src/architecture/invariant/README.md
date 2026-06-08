@@ -2,7 +2,7 @@
 
 # invariant
 
-> atom `architecture/invariant` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `architecture/invariant` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `architecture` · sub-root `66fe5a3e-24bf-891a-bead-173fbb6a8ec8`
 - bond degree `44` · analysis neighbors `aura` · `diamond`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -72,7 +72,7 @@
 
 ## analytics
 
-- bond degree `44` · sealed `1` · horo `4`
+- bond degree `44` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `36`
 
@@ -86,8 +86,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `59033041-2689-874c-b208-5ef1467f53b2` · framed by typography partition `architecture` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9663b567-909b-8ed0-b913-db68fcc82d20` · framed by typography partition `architecture` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

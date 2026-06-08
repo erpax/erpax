@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·requirements·sti · exports processor · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·lei·memories·stat · ← cohort·landmarks·lei·memories·stat
+neighbors → collapse·law·merge·requirements·sti · ← collapse·law·merge·requirements·sti
 analysis —
 law processor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dc6d91d3-fab0-8902-a4b5-5ee9ec6dbd91` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d234512b-84a6-8c57-ab6e-b34d89fd5ff0` · `pnpm readme` · `pnpm computed:check`</sub>

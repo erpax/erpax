@@ -3,15 +3,15 @@
 
 # profile
 
-path `profile` · uuid `f57e4ec3-f810-89dc-904a-11348fdc2d48` · diamond `e10f4af5-7838-8837-8984-08394767933d`
+path `profile` · uuid `f57e4ec3-f810-89dc-904a-11348fdc2d48` · diamond `641de0b9-5301-875d-8647-aeaa07881504`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·page·sti · exports profile · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·page·sti · ← collapse·law·merge·page·sti
 analysis —
 law profile is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e3b8761c-d142-8b3f-8f0a-d711478b2cdc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89f9b941-6aab-8712-87bd-f8b381a42225` · `pnpm readme` · `pnpm computed:check`</sub>

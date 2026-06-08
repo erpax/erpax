@@ -3,15 +3,15 @@
 
 # jewelry
 
-path `jewelry` · uuid `672118dc-ed58-8858-b93d-3452373dfd9c` · diamond `bbbf2cb4-6578-8dc3-b9d1-7b35beb6951e`
+path `jewelry` · uuid `672118dc-ed58-8858-b93d-3452373dfd9c` · diamond `6a9d7ba1-85a3-8ef6-a378-8419b54bbf51`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports jewelry · escapes —
-links `5/5` · folded `1` · bonds in `9` out `11`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·homeopathic·id·landmarks·lead·leadscore·progression·reviews·spouse·tour · ← homeopathic·id·landmarks·lead·leadscore·progression·reviews·spouse·tour
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law jewelry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e523b361-4f4f-83c6-ba70-1a20829aa2e7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a95482d2-af79-8190-b562-e4f4c3469ee0` · `pnpm readme` · `pnpm computed:check`</sub>

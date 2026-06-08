@@ -4,7 +4,7 @@
 # communication
 
 path `agent/communication` · uuid `4216c47d-0575-848a-910e-ec04c82c54d8` · diamond `79a6d4ce-7325-8eb8-9976-b9f817c6c5cd`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/communication · exports const·sameMessage · escapes —
 links `12/12` · folded `1` · bonds in `17` out `25`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an agent-to-agent message IS its content-[[uuid]], and relaying preserves th
 
 ---
 
-<sub>content-uuid `31d4df1a-fcdb-80b8-95b4-ed921928248d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfb4154a-f190-8bc9-90b9-2323d8abf689` · `pnpm readme` · `pnpm computed:check`</sub>

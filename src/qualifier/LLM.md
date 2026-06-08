@@ -3,15 +3,15 @@
 
 # qualifier
 
-path `qualifier` · uuid `f748e54c-6ace-80fd-b1b5-7eeb0d54df69` · diamond `0626be90-5667-8e9c-b613-5c2a8931b70e`
+path `qualifier` · uuid `f748e54c-6ace-80fd-b1b5-7eeb0d54df69` · diamond `8b22f4eb-6eb4-811d-b01c-8840390549a2`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·measurement·merge·sti · exports qualifier · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·balance·corrects·details·exif·landmarks·qualification · ← akashic·balance·corrects·details·exif·landmarks·qualification
+neighbors → collapse·law·measurement·merge·sti · ← collapse·law·measurement·merge·sti
 analysis —
 law qualifier is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6afc3224-6b81-8a41-a321-2aa1105dcccb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc0b10eb-251f-8ff2-a6f2-66af91619add` · `pnpm readme` · `pnpm computed:check`</sub>

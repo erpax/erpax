@@ -3,15 +3,15 @@
 
 # patient
 
-path `patient` · uuid `07d38894-cd08-8469-bc26-aa2f3de2bc62` · diamond `8a24f8f1-dde0-8bd5-a36c-73e926e8aaa7`
+path `patient` · uuid `07d38894-cd08-8469-bc26-aa2f3de2bc62` · diamond `d6793c21-c778-884c-aa4a-32f480712a00`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports patient · escapes —
-links `2/2` · folded `1` · bonds in `24` out `24`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accepted·accounting·amount·applies·car·chapter·comment·consumption·cup·database·dosage·drug·fractal·landmarks·literary·mentions·midwifery·rooms·satellite·separation·spa·topics·tour·unlimited · ← accepted·accounting·amount·applies·car·chapter·comment·consumption·cup·database·dosage·drug·fractal·landmarks·literary·mentions·midwifery·rooms·satellite·separation·spa·topics·tour·unlimited
+neighbors → emr·law·thing · ← emr·law·thing
 analysis —
 law patient is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `df5a672c-357e-8733-8a9a-1051e40f4d70` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd9a0ced-f061-81eb-8fe6-752e36732f0b` · `pnpm readme` · `pnpm computed:check`</sub>

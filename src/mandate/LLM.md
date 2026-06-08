@@ -3,15 +3,15 @@
 
 # mandate
 
-path `mandate` · uuid `99064461-7a54-8025-b99f-7e3aafda0ce1` · diamond `c4b0df19-c2dd-82b6-917a-dd533a6d8119`
+path `mandate` · uuid `99064461-7a54-8025-b99f-7e3aafda0ce1` · diamond `277a1ae0-2b53-8bca-84d9-d873d30a9ea2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·law·loan·merge·mortgage·sti · exports mandate · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·recycling·tall · ← balance·landmarks·recycling·tall
+neighbors → amount·collapse·law·loan·merge·mortgage·sti · ← amount·collapse·law·loan·merge·mortgage·sti
 analysis —
 law mandate is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9169e833-23e7-86a7-9cbc-e55b4e872b9b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17594ad4-1fcb-8ed3-b5de-99ac719e37a0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # registered
 
 path `agents/registered` · uuid `a5099e24-ed4b-8741-a28f-5c2acd661d93` · diamond `44b6081d-e49c-815e-b750-64ca3564d924`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports ConsistencyAgent·CustomerSupportAgent·DataAgent·DesignAgent·EngineeringAgent·EnterpriseSearchAgent·HrAgent·LegalAgent·MarketingAgent·MetaSkillAgent·OpsAgent·PluginsAgent·ProductAgent·ProductivityAgent·SalesAgent·TRAINING_EMIT·TRAINING_TRIGGER·planTrainingEffects · escapes —
 links `1/1` · folded `1` · bonds in `7` out `8`
 faces worker·plugin·pwa `0·1·0`
@@ -14,4 +14,4 @@ law barrel re-export at `@/agents/registered`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `82d7b3b1-b81a-89e0-8b7c-a8dbd71812b2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `77fa0aa3-a242-82be-b429-a6171fe543fb` · `pnpm readme` · `pnpm computed:check`</sub>

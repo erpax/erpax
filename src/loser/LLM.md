@@ -3,15 +3,15 @@
 
 # loser
 
-path `loser` · uuid `0ec432ec-57a4-84a6-b187-b009b8e558d9` · diamond `1bd546b4-b726-854b-a826-9e157809f4be`
+path `loser` · uuid `0ec432ec-57a4-84a6-b187-b009b8e558d9` · diamond `34cec29e-f7a6-8de8-bdab-048493081da0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports loser · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law loser is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c404165b-0b62-8fec-886f-faca9bd02efb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e5a37dd-bff7-813e-bade-a3dc60859f3a` · `pnpm readme` · `pnpm computed:check`</sub>

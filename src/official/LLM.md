@@ -3,15 +3,15 @@
 
 # official
 
-path `official` · uuid `0f6ada35-4911-8dc7-966c-620c867e5abd` · diamond `4d033579-d00a-81fd-b4e9-685901b1439f`
+path `official` · uuid `0f6ada35-4911-8dc7-966c-620c867e5abd` · diamond `777e91aa-2118-87ab-a504-c8f22adb59ae`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports official · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·player·stat·until · ← cohort·landmarks·memories·player·stat·until
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law official is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0ce9f041-b04d-8d17-b012-24af42967afe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a57a80bb-c699-8644-b4e9-9ac3da6c0ae8` · `pnpm readme` · `pnpm computed:check`</sub>

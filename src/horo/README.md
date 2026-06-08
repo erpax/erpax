@@ -2,7 +2,7 @@
 
 # horo
 
-> atom `horo` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `horo` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `horo` · sub-root `2cd52f5e-6d33-8f01-b0c1-ca7c8d435134`
-- bond degree `216` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `420` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `d9405f16-f225-8313-b871-1fad0192d3f4`
-- bonds in `30` · out `31`
+- uuid `07087838-3aed-86c6-b88c-42689b789787`
+- bonds in `133` · out `131`
 - trinity form·code·proof `1`·`1`·`1`
 - links `63` / `63`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `16f9351d-fa08-8f3d-b3c9-6daf3d6a1415` · framed by typography partition `horo` bonds `216` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ad7cff0-c170-8b8d-a1a0-bbc291235d4c` · framed by typography partition `horo` bonds `420` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # cloudflare
 
-path `cloudflare` · uuid `8e6ca479-db8e-895f-8e9d-ac04195ec061` · diamond `edc55018-eb6b-8ca0-a286-9aa5ac16a79e`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `cloudflare` · uuid `7d8488af-095b-82a2-ad16-fb5883e454b7` · diamond `5e90bd51-fc0d-8b55-9dff-5fc7b7a0232c`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports AI_GATEWAY_VAR_KEYS·AI_STACK_BINDING_TYPES·AnalyticsEngineDataset·BrowserBinding·CLOUDFLARE_BINDING_TYPES·CLOUDFLARE_SEAL_KID·D1Database·DurableObjectNamespace·EmailSendBinding·KVNamespace·MediatorAuthorizer·Queue·R2Bucket·VectorizeIndex·WRANGLER_BINDING_ENV_KEYS·WRANGLER_SECRET_ENV_KEYS·agentAiWorkerFace·aiBindingDiamond·aiModelAtomPath·aiSecretIdentity·async·atomsLinkedByBindingType·bindingAtomPath·bindingBoundaryUuid·bindingDeploymentFaces·bindingDiamond·canonicalizeCloudflareConfig·cloudflareAiAccountingExtras·cloudflareBindingDiamond·cloudflareBindingFace·cloudflareConfigContentUuid·decryptCloudflareAiSecretIfUuid·decryptCloudflareIfUuid·deriveAiBindingDiamonds·deriveWranglerBindingDiamonds·deriveWranglerDiamonds·filterAiBindings·function·interface·isAiRelatedBinding·loadRepoAiBindings·mergeCloudflareBinding·parseWranglerBindings·sealCloudflareAiSecret·sealCloudflareConfig·stripJsoncComments·type·verifyAiBindingDiamonds·wranglerEnvToCloudflareConfig · escapes —
-links `23/23` · folded `1` · bonds in `10` out `10`
+links `23/23` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·agent·ai·audit·confirm·diamond·innovation·law·path·secret · ← access·agent·ai·audit·confirm·diamond·innovation·law·path·secret
+neighbors → access·agent·ai·audit·confirm·diamond·innovation·law·path·quantum·secret·serverless·superposition·uuid·worker · ← access·agent·ai·audit·confirm·diamond·innovation·law·path·quantum·secret·serverless·superposition·uuid·worker
 analysis agent·ai·diamond·innovation·quantum·secret·serverless·worker
 law serverless IS the quantum host — every Cloudflare binding is a superposed facet that collapses to a sealed diamond; erpax deployed on Workers IS the existence proof (`proveServerlessQuantum` · [[quantum/serverless]]).
 
 ---
 
-<sub>content-uuid `a6828667-ed39-8281-97e0-873b691837cd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af4e1424-a2fb-8ce8-8ca0-a7c1705e91e1` · `pnpm readme` · `pnpm computed:check`</sub>

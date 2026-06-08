@@ -25,7 +25,34 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `33` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ASC-606` · catalogue
+- `IAS-1` · catalogue
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IFRS-15 §22 performance-obligations` · banner
+- `IFRS IFRS-15 §31-35 control-transfer point-in-time-recognition` · banner
+- `IFRS IFRS-15 §35 over-time-recognition` · banner
+- `IFRS-15` · catalogue
+- `ISO-19011:2018 audit-trail performance-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time completion-dates` · banner
+- `SOX §404 internal-controls revenue-completeness TOM-AR-04` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-606-10-25-25 performance-obligations` · banner
+- `US-GAAP ASC-606-10-25-27 transfer-of-control` · banner
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
@@ -41,4 +68,4 @@
 
 ---
 
-<sub>content-uuid `0165b0ef-85b5-85ea-94a9-8c5e085f36b8` · framed by typography partition `customers` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8001f40e-019d-814b-9dad-67a853174f44` · framed by typography partition `customers` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # prospect
 
-path `prospect` · uuid `23337cb4-2d98-84a6-a922-6f2ad1f83b90` · diamond `eead3dc8-b2c9-84af-aeeb-21759c9fc29a`
+path `prospect` · uuid `23337cb4-2d98-84a6-a922-6f2ad1f83b90` · diamond `6c6af3c0-cefe-8608-baf9-52a2a6e39036`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports activities·customers·law·lead-score·leads·opportunities · exports prospect · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → activities·customers·law·leads·leadscore·opportunities · ← activities·customers·law·leads·leadscore·opportunities
 analysis —
 law a prospect is a party in the discovery/research phase, before it has qualified as a lead — the first stage of the prospect→lead→opportunity progression.
 
 ---
 
-<sub>content-uuid `b7d76fd9-4c3e-87ad-9747-2667b934a9b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8ca93a2-bcdc-8aec-939d-95c6e7ce256f` · `pnpm readme` · `pnpm computed:check`</sub>

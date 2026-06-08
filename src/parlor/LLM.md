@@ -3,15 +3,15 @@
 
 # parlor
 
-path `parlor` · uuid `653a40f1-13c4-8f47-b1de-ff3ac4d37174` · diamond `c8c01cfd-a3d9-87cd-9d37-21b4db76f721`
+path `parlor` · uuid `653a40f1-13c4-8f47-b1de-ff3ac4d37174` · diamond `b4de128a-e38d-8726-8390-821f0b8cb482`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·tattoo · exports parlor · escapes —
-links `5/5` · folded `1` · bonds in `14` out `16`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·dietary·dropoff·enrolling·grant·idempotency·landmarks·likes·list·list·marry·parlor·qualification·qualification·quantitative·venue · ← atom·dietary·dropoff·enrolling·grant·idempotency·landmarks·likes·list·marry·parlor·qualification·quantitative·venue
+neighbors → collapse·law·merge·sti·tattoo · ← collapse·law·merge·sti·tattoo
 analysis —
 law parlor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e4e9d8d6-c25a-8cb6-8c97-e558a8129314` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `879147d5-965f-863d-87c6-5a5a79d3928b` · `pnpm readme` · `pnpm computed:check`</sub>

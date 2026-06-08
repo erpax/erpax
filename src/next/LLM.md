@@ -3,15 +3,15 @@
 
 # next
 
-path `next` · uuid `ef2f8206-4395-8135-8a4f-b00b17ca2044` · diamond `348b75d9-ce22-82c3-8c50-ef862afc6bad`
+path `next` · uuid `ef2f8206-4395-8135-8a4f-b00b17ca2044` · diamond `2e1a51aa-e88c-83c3-9164-c4f1a752f8d7`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·item·law·merge·sti · exports next · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 38·cohort·landmarks·memories·sanitization·stat · ← 38·cohort·landmarks·memories·sanitization·stat
+neighbors → collapse·item·law·merge·sti · ← collapse·item·law·merge·sti
 analysis —
 law next is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2ef976e0-758e-8773-9ead-79835773c1f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe7bb185-fb5a-8c76-bb35-2e5de421e525` · `pnpm readme` · `pnpm computed:check`</sub>

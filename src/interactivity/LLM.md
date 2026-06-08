@@ -3,15 +3,15 @@
 
 # interactivity
 
-path `interactivity` · uuid `ca08a243-697a-8ebd-ba50-11e6151bec4b` · diamond `d08b067e-ffd3-8a8c-8afa-fef4ef7c1176`
+path `interactivity` · uuid `ca08a243-697a-8ebd-ba50-11e6151bec4b` · diamond `ba91a1d7-a565-80d0-ac7a-c87a84a02dad`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·type · exports interactivity · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·comment·fertility·interactive·landmarks·spouse·structured · ← access·accounting·comment·fertility·interactive·landmarks·spouse·structured
+neighbors → collapse·law·merge·sti·type · ← collapse·law·merge·sti·type
 analysis —
 law interactivity is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dd6c2d4d-71a3-8c77-94b4-348fc3fad47f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `11520721-0b96-8c4e-9ae9-471a1d522c05` · `pnpm readme` · `pnpm computed:check`</sub>

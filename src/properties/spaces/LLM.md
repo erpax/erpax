@@ -3,15 +3,15 @@
 
 # spaces
 
-path `properties/spaces` · uuid `8a082457-9673-84f7-87be-7ad7f9e0cc07` · diamond `8d5420ee-566f-8bbe-87f2-aa702c11990c`
+path `properties/spaces` · uuid `8a082457-9673-84f7-87be-7ad7f9e0cc07` · diamond `09ea6f66-0946-8fdf-a19d-b55cdc51f73c`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `3/3` · folded `1` · bonds in `9` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accrual·balance·commitment·disagree·equilibrium·landmarks·lend·minutes·reviews · ← accrual·balance·commitment·disagree·equilibrium·landmarks·lend·minutes·reviews
+links `3/3` · folded `1` · bonds in `5` out `5`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·properties·requests·space·standard · ← accounting·properties·requests·space·standard
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `00ea0c04-2d6a-85d6-8c27-4df33495084d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86ac6451-31f5-850f-97e2-2add04525bb9` · `pnpm readme` · `pnpm computed:check`</sub>

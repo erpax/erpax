@@ -3,15 +3,15 @@
 
 # rotation
 
-path `rotation` · uuid `4339f04e-6372-8c0b-a166-e2102c80f465` · diamond `7b9105d6-d906-83c4-8750-c03f9667eede`
+path `rotation` · uuid `4339f04e-6372-8c0b-a166-e2102c80f465` · diamond `e3c87d03-8ba9-81a5-ad38-8920d2ca9139`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·allocation·balance·capacity·covercrop·crop·family·fertility·law·planting·season·sequence·soil · exports rotation · escapes —
-links `32/32` · folded `1` · bonds in `2` out `2`
+links `32/32` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·pixel · ← landmarks·pixel
+neighbors → agriculture·allocation·balance·capacity·covercrop·crop·cropplan·family·fertility·forestry·grazing·herd·law·organic·pasture·perennial·permaculture·planting·season·sequence·soil·taxonomy · ← agriculture·allocation·balance·capacity·covercrop·crop·cropplan·family·fertility·forestry·grazing·herd·law·organic·pasture·perennial·permaculture·planting·season·sequence·soil·taxonomy
 analysis —
 law the multi-year non-repetition of a [[crop]] [[family]] in the same bed (a family returns no sooner than ~3–4 years) — the *constraint* over the planting [[sequence]], not the bare sequence, keeping [[soil]] [[capacity]] and pest pressure in [[balance]].
 
 ---
 
-<sub>content-uuid `4b7dc334-562b-8fb9-836e-37a8a2edee6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f39fc35-cde4-890b-bcc1-98497a00ad5e` · `pnpm readme` · `pnpm computed:check`</sub>

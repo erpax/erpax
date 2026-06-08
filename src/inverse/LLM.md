@@ -3,15 +3,15 @@
 
 # inverse
 
-path `inverse` · uuid `ac513ebc-d4cf-8932-9eb2-d63aa8ecead8` · diamond `a24a79cc-b849-8cd5-b72f-f764e0e52559`
+path `inverse` · uuid `ac513ebc-d4cf-8932-9eb2-d63aa8ecead8` · diamond `1290c5d2-39e1-8d61-b9e1-74bffa7ab50d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports inverse · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·customer·investment·medical·progression·taxonomy·tour · ← accounting·customer·investment·medical·progression·taxonomy·tour
+neighbors → law·thing · ← law·thing
 analysis —
 law an inverse relates the same pair in reversed direction — if A→B holds under a property then B→A holds under its inverse, so the two directions must be declared together or the relation is asymmetric and incomplete.
 
 ---
 
-<sub>content-uuid `61af9a88-a07b-8bea-9130-2be09751d5c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `954ba74f-d25c-86ef-a600-8fb755b8b85d` · `pnpm readme` · `pnpm computed:check`</sub>

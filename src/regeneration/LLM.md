@@ -3,15 +3,15 @@
 
 # regeneration
 
-path `regeneration` · uuid `—` · diamond `a40fc16d-56d9-868c-9dca-ff7123f74ca1`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `regeneration` · uuid `ceed7be0-a0a6-81e6-9d7c-00112d18f2c1` · diamond `4bd2bdc7-14f0-8f98-bb9b-33034322f065`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·function·interface · escapes —
-links `24/24` · folded `0` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+links `24/24` · folded `1` · bonds in `16` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·aura·blood·coordinate·gate·law·link·one·organic·permaculture·proof·propose·skin·tamper·uuid·whole · ← akashic·aura·blood·coordinate·gate·law·link·one·organic·permaculture·proof·propose·skin·tamper·uuid·whole
+analysis aura
 law a content-addressed organism cannot lose what it never stores (regenerates from seed) and cannot keep a wound the gate can detect (heals to gap 0) — so it is alive: it regrows ⊕ heals.
 
 ---
 
-<sub>content-uuid `e2238dda-90d8-8e62-87b1-bd519e46183c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e65cc7f-5337-825c-bff3-d5675d39b0a3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # plugin
 
-path `plugin` · uuid `b2fb9284-ac96-8df7-8c9b-fcc82baad032` · diamond `f2b730bc-17e9-8b97-b843-5392fbf63ece`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `plugin` · uuid `972f065f-f33e-8545-9de0-d2f78042dc03` · diamond `683c3d66-120c-8c4d-8356-cceaf2fd0c15`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports DIMENSIONAL_PLUGINS·DimensionId·DimensionalCoverageResult·DimensionalPlugin·checkDimensionalCoverage·dimensionForCollection·totalCollectionCount · escapes —
-links `22/22` · folded `1` · bonds in `5` out `5`
+links `22/22` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·1·0`
-neighbors → cohort·landmarks·memories·stages·stat · ← cohort·landmarks·memories·stages·stat
+neighbors → balance·diamond·hooks·law·payload·platform·plugin·plugins·pwa·vitepress·worker · ← balance·diamond·hooks·law·payload·platform·plugin·plugins·pwa·vitepress·worker
 analysis diamond
 law the plugin deployment face is the host-extension of a [[diamond]] — Payload plugin, Cursor hook, VitePress plugin, or MCP extension that plugs into a runtime already running.
 
 ---
 
-<sub>content-uuid `615ee5e1-8a15-8d17-926a-725a7db35b73` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c2fc0ec-e81a-889f-a02d-4e73ad22025b` · `pnpm readme` · `pnpm computed:check`</sub>

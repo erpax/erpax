@@ -3,15 +3,15 @@
 
 # markup
 
-path `markup` · uuid `68a9fab7-e10d-8fcf-b1c0-0ec3456b292b` · diamond `7c0fafa3-d65c-8643-b3d8-e02c1445d460`
+path `markup` · uuid `68a9fab7-e10d-8fcf-b1c0-0ec3456b292b` · diamond `f9eab3f0-6af7-89c8-834f-9fb31f6117af`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·speech·sti·text · exports markup · escapes —
-links `6/6` · folded `1` · bonds in `26` out `27`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·action·addressed·cohort·corrects·depreciate·dietary·ebitda·entertainment·expert·grant·homeopathic·landmarks·landmarks·list·markup·marry·memories·qualification·saturday·shred·slogan·smiles·stat·symbol·venue·wp · ← 3986·action·addressed·cohort·corrects·depreciate·dietary·ebitda·entertainment·expert·grant·homeopathic·landmarks·list·markup·marry·memories·qualification·saturday·shred·slogan·smiles·stat·symbol·venue·wp
+neighbors → collapse·law·merge·speech·sti·text · ← collapse·law·merge·speech·sti·text
 analysis —
 law markup is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cb45ac08-30a4-8ff3-8854-29a5096a1af4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe0847ed-5008-85fb-95b3-05f56e6c6cf6` · `pnpm readme` · `pnpm computed:check`</sub>

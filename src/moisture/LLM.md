@@ -3,15 +3,15 @@
 
 # moisture
 
-path `moisture` · uuid `29fc82c2-29c3-8a66-8b88-916299de0f97` · diamond `becc3b43-d04b-892f-92f7-27266c9adec5`
+path `moisture` · uuid `29fc82c2-29c3-8a66-8b88-916299de0f97` · diamond `108a313d-9235-8f43-9b41-a5a9b34d523c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·capacity·evapotranspiration·fertility·irrigation·law·mulch·schedule·soil·tillage · exports moisture · escapes —
-links `22/22` · folded `1` · bonds in `7` out `7`
+links `22/22` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·landmarks·memories·midwifery·remediation·stat · ← amount·cohort·landmarks·memories·midwifery·remediation·stat
+neighbors → agriculture·balance·capacity·evapotranspiration·fertility·irrigation·law·mulch·mycorrhizae·salinity·schedule·soil·tillage · ← agriculture·balance·capacity·evapotranspiration·fertility·irrigation·law·mulch·mycorrhizae·salinity·schedule·soil·tillage
 analysis —
 law soil moisture is a [[capacity]] reservoir bounded by field capacity and the wilting point — irrigation/rain credit it, evapotranspiration debits it, and the deficit is refilled before crop stress ([[balance]]); the water-axis twin of the nutrient budget.
 
 ---
 
-<sub>content-uuid `9bc16861-8fdb-85ea-889f-988e2009ebda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6e97afef-d94a-8a7d-bc3c-11543a443e36` · `pnpm readme` · `pnpm computed:check`</sub>

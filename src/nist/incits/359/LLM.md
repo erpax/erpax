@@ -3,15 +3,15 @@
 
 # 359
 
-path `nist/incits/359` · uuid `acf72bfb-d234-8743-9d8c-23fafb1e90b7` · diamond `a3f4829a-bf28-8ad9-825a-1b8a180b6080`
+path `nist/incits/359` · uuid `acf72bfb-d234-8743-9d8c-23fafb1e90b7` · diamond `252883d0-d121-8b49-8c3a-48b6d4945a6c`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports AddRoleResource·AnyScope·BIT_DELETE·BIT_READ·BIT_WRITE·MutationArgs·PermissionDigit·PermissionTriplet·RoleDefinition·RoleMatch·ScopeResourceCollection·ScopedResource·addRole·grant·hasAllRoles·hasAnyRole·hasCachedRole·hasRole·hasStrictRole·permissionStringToTriplet·permissionTripletToString·removeRole·revoke·scopeResourceCollections · escapes —
-links `0/0` · folded `1` · bonds in `7` out `7`
+links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·episode·landmarks·memories·musical·pronounceable·stat · ← cohort·episode·landmarks·memories·musical·pronounceable·stat
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `ac7aa679-817d-8331-8b26-f52ac80e989e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3c91b886-25f8-869b-893c-209d6d282a0d` · `pnpm readme` · `pnpm computed:check`</sub>

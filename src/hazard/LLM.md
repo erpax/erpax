@@ -3,15 +3,15 @@
 
 # hazard
 
-path `hazard` · uuid `9f4b6cbb-1ae6-856d-a510-5488168e7b6d` · diamond `54031787-4353-8aec-8b38-e2729fb53e51`
+path `hazard` · uuid `9f4b6cbb-1ae6-856d-a510-5488168e7b6d` · diamond `18655463-5c40-86ad-a91e-7cde455d29b6`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accessibility·collapse·law·merge·sti · exports hazard · escapes —
-links `5/5` · folded `1` · bonds in `8` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dangerous·landmarks·memories·reporting·stat · ← cardiovascular·cohort·dangerous·entropy·landmarks·memories·reporting·stat
+neighbors → accessibility·collapse·law·merge·sti · ← accessibility·collapse·law·merge·sti
 analysis —
 law hazard is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9baf5f68-0ae1-8c41-8d1e-6b4c5c135e63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c895e4b3-6603-8439-a3a2-dda95282f994` · `pnpm readme` · `pnpm computed:check`</sub>

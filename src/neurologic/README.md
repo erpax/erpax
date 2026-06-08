@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `neurologic` · sub-root `7dd5903b-3125-8582-9fd5-2a6ce30218ee`
-- bond degree `15` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `7dd5903b-3125-8582-9fd5-2a6ce30218ee`
-- bonds in `6` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `74f5da0a-06d4-8966-b017-7a118f84ccc8` · framed by typography partition `neurologic` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87b862ed-feeb-871e-8864-290eaa192c57` · framed by typography partition `neurologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # navel
 
-path `navel` · uuid `2313e805-1385-8e8e-9796-9bc8b4ac32d3` · diamond `ff12a324-959c-8177-bcb0-24e538bba9cd`
+path `navel` · uuid `2313e805-1385-8e8e-9796-9bc8b4ac32d3` · diamond `9c7d9e30-fd50-8dfb-a12b-c44981761290`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/chakra · exports const · escapes —
-links `9/9` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `9/9` · folded `1` · bonds in `3` out `3`
+faces worker·plugin·pwa `1·0·0`
+neighbors → chakra·horo·law · ← chakra·horo·law
 analysis —
 law the navel is a pure projection of [[chakra]] at index 2 — it holds no math of its own; uuid is computed from the position math and colour rendered FROM the uuid (never the reverse), and the fire-of-identity role is named as cultural overlay, never claimed.
 
 ---
 
-<sub>content-uuid `bfa58e18-ca5e-8e40-bf69-64e6eb9f1c1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e9b3e6e-3c4b-8db8-961c-773cbf6803d9` · `pnpm readme` · `pnpm computed:check`</sub>

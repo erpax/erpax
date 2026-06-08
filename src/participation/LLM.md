@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·has·law·merge·offer·sti · exports participation · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·requisition·stat · ← action·cohort·landmarks·memories·requisition·stat
+neighbors → collapse·has·law·merge·offer·sti · ← collapse·has·law·merge·offer·sti
 analysis —
 law participation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5593d5ce-8163-8ea6-9700-5f1d18163a60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b9e8b75-4b83-8f93-b574-0f6f1a594238` · `pnpm readme` · `pnpm computed:check`</sub>

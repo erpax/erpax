@@ -3,15 +3,15 @@
 
 # classifications
 
-path `held/for/sale/classifications` · uuid `e0ceb759-08e4-87a3-94b3-8a0f9a24b5f5` · diamond `7f59e4c1-a31a-8f5d-aa8a-f33853b878b7`
+path `held/for/sale/classifications` · uuid `e0ceb759-08e4-87a3-94b3-8a0f9a24b5f5` · diamond `46d894c1-e038-8c6c-90a2-345f1902468b`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `17/17` · folded `1` · bonds in `5` out `5`
+links `17/17` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·mappings·memories·stat · ← cohort·landmarks·mappings·memories·stat
+neighbors → accounting·assets·balance·classification·close·combinations·entries·entry·horo·law·measurements·properties·standard · ← accounting·assets·balance·classification·close·combinations·entries·entry·horo·law·measurements·properties·standard
 analysis —
 law classifying an asset held-for-sale (IFRS 5 §6, sale highly-probable within 12 months) triggers §15 remeasurement to the lower of carrying amount and FV−CTS, suspends depreciation, and posts a [[journal/entries]] [[entry]] that keeps the [[accounting]] [[balance]] across a [[horo]] disposal ring.
 
 ---
 
-<sub>content-uuid `829f9d05-dc3b-8ef5-b469-1588c2750369` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `db89f045-5e6b-8ff8-bd07-197a1ef119c4` · `pnpm readme` · `pnpm computed:check`</sub>

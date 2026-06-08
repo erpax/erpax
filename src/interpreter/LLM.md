@@ -3,15 +3,15 @@
 
 # interpreter
 
-path `interpreter` · uuid `da98dcb5-4971-8e67-8485-3bdb90f2be7d` · diamond `7611c52b-f967-8f35-80a3-cdde031063f4`
+path `interpreter` · uuid `da98dcb5-4971-8e67-8485-3bdb90f2be7d` · diamond `ed65031b-9f11-8fe5-93b8-e77d570ad9e5`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports claim·collapse·law·merge·sti · exports interpreter · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dependencies·fulfillment·landmarks·memories·stat · ← cohort·dependencies·fulfillment·landmarks·memories·stat
+neighbors → claim·collapse·law·merge·sti · ← claim·collapse·law·merge·sti
 analysis —
 law an interpreter renders a claim into another form without altering its truth value — interpretation preserves the source claim's meaning, so an interpreter that changes what is asserted is a distortion, not an interpreter.
 
 ---
 
-<sub>content-uuid `caee475f-da78-8a39-b2f4-601b6886597a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d13d9b69-e959-82e8-b01c-bfbbf91822aa` · `pnpm readme` · `pnpm computed:check`</sub>

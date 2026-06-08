@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports event·issue·law·type·volume · exports publication · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·owned·stat · ← cohort·landmarks·memories·owned·stat
+neighbors → event·issue·law·type·volume · ← event·issue·law·type·volume
 analysis —
 law publication is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7738993f-a54c-842d-90bf-3c84d1476ca8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3397f91-97b8-8891-b5b4-195efdc7a913` · `pnpm readme` · `pnpm computed:check`</sub>

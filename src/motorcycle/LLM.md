@@ -3,15 +3,15 @@
 
 # motorcycle
 
-path `motorcycle` · uuid `0617262f-902a-83b6-a1d6-eca8b3eb36d1` · diamond `bfa16e02-3452-8a6d-ae91-9e1769619370`
+path `motorcycle` · uuid `0617262f-902a-83b6-a1d6-eca8b3eb36d1` · diamond `afe8710d-28df-8093-a838-5249779faef0`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports dealer·law·repair · exports motorcycle · escapes —
-links `3/3` · folded `1` · bonds in `5` out `5`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·communicate·landmarks·memories·stat · ← cohort·communicate·landmarks·memories·stat
+neighbors → dealer·law·repair · ← dealer·law·repair
 analysis —
 law motorcycle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `38742618-93d7-84f0-a21f-31d2813a6b3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63504321-36cc-841b-8a6f-57c4352a5e86` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # variances
 
-path `items/bills/of/materials/work/orders/cost/variances` · uuid `8abf0e36-4073-8865-acc9-55d99ee44045` · diamond `5bd090e6-d7bf-8345-a46b-b961acfd60fe`
+path `items/bills/of/materials/work/orders/cost/variances` · uuid `8abf0e36-4073-8865-acc9-55d99ee44045` · diamond `96c68e98-e6a7-8536-8125-d894370853b8`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `12/12` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician·terminals · ← landmarks·physician·terminals
+links `12/12` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·balance·fields·hooks·identity·law·manufacturing·orders·proof·standard·transaction·variance · ← accounting·balance·fields·hooks·identity·law·manufacturing·orders·proof·standard·transaction·variance
 analysis —
 law generated on [[work/orders|work-order]] close, it decomposes standard vs actual cost into material/labour/overhead variances whose disposition journal entries must balance (debit = credit, [[balance]]).
 
 ---
 
-<sub>content-uuid `9ce74f12-008e-85f2-9e58-8393ea4b8944` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4c62236-5383-84a9-a416-e9eca5f554af` · `pnpm readme` · `pnpm computed:check`</sub>

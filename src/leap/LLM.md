@@ -3,15 +3,15 @@
 
 # leap
 
-path `leap` · uuid `29f89521-49be-81f8-b7e1-ac3b0cdacec9` · diamond `a28e025e-dd54-8912-980c-ee8a822a76bd`
+path `leap` · uuid `29f89521-49be-81f8-b7e1-ac3b0cdacec9` · diamond `41341782-1cdc-8295-9b37-3cf40afd7807`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/photon·@/signal·@/uuid/matrix · exports Transition·const·function·interface · escapes —
-links `24/24` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `24/24` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → barrier·breath·collapse·decoherence·hamiltonian·horo·law·level·merge·photon·quantum·rodin·signal·spectrum·superposition·uncertainty·uuid·wave · ← barrier·breath·collapse·decoherence·hamiltonian·horo·law·level·merge·photon·quantum·rodin·signal·spectrum·superposition·uncertainty·uuid·wave
 analysis —
 law a leap is the discrete merge of two energy rungs that emits or absorbs one photon (E = h·Δν); its coordinate is the symmetric content-uuid of the two states, identical for emission and absorption, so the spectral line is one binding however the leap runs.
 
 ---
 
-<sub>content-uuid `2d83fd6e-31e9-8106-9b47-f96d831503ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `885499bb-5419-8a4d-a64c-ec3145f607c6` · `pnpm readme` · `pnpm computed:check`</sub>

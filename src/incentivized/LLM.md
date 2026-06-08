@@ -3,15 +3,15 @@
 
 # incentivized
 
-path `incentivized` · uuid `74ab56a6-e4fd-856a-9814-0b6455c4b966` · diamond `c55f0ac3-4133-874f-84cc-b5e889db3a71`
+path `incentivized` · uuid `74ab56a6-e4fd-856a-9814-0b6455c4b966` · diamond `9d8262a8-0328-8d11-8311-ff20ff649f1f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·item·law·merge·sti · exports incentivized · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·item·law·merge·sti · ← collapse·item·law·merge·sti
 analysis —
 law incentivized is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bdc4efd6-a323-851e-8476-4bec63cf5364` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e6451e26-4dc7-8e6b-8770-96c08d2c9fc7` · `pnpm readme` · `pnpm computed:check`</sub>

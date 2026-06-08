@@ -3,15 +3,15 @@
 
 # health
 
-path `health` · uuid `8aab4a63-a581-81c6-9897-a0bbc2ccd3b4` · diamond `d5dfa60b-886d-89b8-9ba6-b944260cc582`
+path `health` · uuid `8aab4a63-a581-81c6-9897-a0bbc2ccd3b4` · diamond `ea5402ec-f3e6-8fa0-9cd6-4122e07175c2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports access·accounting·collections·duality·fields·fractal·holographic·hooks·identity·law·merge·sequence·standard · exports health · escapes —
-links `18/18` · folded `1` · bonds in `2` out `2`
+links `18/18` · folded `1` · bonds in `52` out `52`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → access·accounting·age·animal·apiculture·aspect·beauty·biomagnetism·biometric·biophoton·business·career·category·club·coinsurance·collections·condition·content·copay·drug·duality·emr·enumeration·fields·formulary·fractal·has·holographic·hooks·identity·included·includes·insurance·law·livestock·marketing·merge·mortality·option·pharmacy·plan·sectors·sequence·sharing·specification·standard·tier·topic·url·uses·wellbeing·withdrawal · ← access·accounting·age·animal·apiculture·aspect·beauty·biomagnetism·biometric·biophoton·business·career·category·club·coinsurance·collections·condition·content·copay·drug·duality·emr·enumeration·fields·formulary·fractal·has·holographic·hooks·identity·included·includes·insurance·law·livestock·marketing·merge·mortality·option·pharmacy·plan·sectors·sequence·sharing·specification·standard·tier·topic·url·uses·wellbeing·withdrawal
 analysis —
 law health flows care between one party (in N role contexts) and providers along a monotonic encounter chain — status is DERIVED never stored, the chart is content-addressed and accountable OUT to [[accounting]].
 
 ---
 
-<sub>content-uuid `066a51a3-12c0-89a1-908b-95effe14eca1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `46529f9a-7ad2-80c9-b783-975605b30815` · `pnpm readme` · `pnpm computed:check`</sub>

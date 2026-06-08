@@ -25,7 +25,25 @@
 
 - partition `cross` · sub-root `d465d0ad-e345-84aa-9b1a-9097fd39e8f2`
 - bond degree `70` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 27002 §5.15 access-control + §5.3 segregation-of-duties` · banner
+- `ISO-27002` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `NIST INCITS-359 role-based-access-control` · banner
+- `NIST-INCITS-359-2012` · catalogue
+
+## analytics
+
+- bond degree `70` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `d7a643d5-445b-8cca-8816-883cde798a26` · framed by typography partition `cross` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7beefc8e-275b-811e-8c85-a57ef2737275` · framed by typography partition `cross` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # policies
 
-path `internal/policies` · uuid `7074e46e-8114-86d8-9025-5c9cdfa45746` · diamond `6f6b5b8f-dfde-83eb-95ed-05da0d24d01e`
+path `internal/policies` · uuid `7074e46e-8114-86d8-9025-5c9cdfa45746` · diamond `652b1fda-c7e7-86ee-8385-195e4141eeb9`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → civic·cohort·landmarks·memories·stat · ← civic·cohort·landmarks·memories·stat
+neighbors → acknowledgments·standard·versions · ← acknowledgments·standard·versions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `d5bfbed4-3e93-8104-9a0c-e5afd9280d00` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9f31beb-1a41-8ce1-a106-9bd278a0a58f` · `pnpm readme` · `pnpm computed:check`</sub>

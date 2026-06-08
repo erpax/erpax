@@ -23,7 +23,7 @@
 
 - partition `maternity` · sub-root `58bb79ee-251f-82c1-95b5-d02c285caf75`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f75dbd97-3af2-8931-b2d2-4dfb3c7c7596` · framed by typography partition `maternity` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1691cfe3-e15d-806e-98aa-d795bd57ed18` · framed by typography partition `maternity` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

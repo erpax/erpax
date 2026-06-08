@@ -3,15 +3,15 @@
 
 # podiatric
 
-path `podiatric` · uuid `3b0b412f-0ad6-83ce-920a-4f3345b2abb6` · diamond `a17cff98-7088-871a-9b7b-1b8e01b53987`
+path `podiatric` · uuid `3b0b412f-0ad6-83ce-920a-4f3345b2abb6` · diamond `e5afb92e-7abf-8f68-a239-521cc345dbdd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports podiatric · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bindings·cohort·harden·landmarks·memories·sell·stat · ← bindings·cohort·harden·landmarks·memories·sell·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law podiatric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `83ddd6fa-2896-8965-889c-d94147998f71` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `999583a3-9c70-8e1c-8dee-c7bb42aadd57` · `pnpm readme` · `pnpm computed:check`</sub>

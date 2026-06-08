@@ -23,7 +23,7 @@
 
 - partition `breastfeeding` · sub-root `3c556d9a-f492-8f4d-bdb5-56c989153bef`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `67b0c6d2-3e3f-87bf-a37e-77bd6bd98618` · framed by typography partition `breastfeeding` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `62480014-58d2-876f-adae-935a2125a515` · framed by typography partition `breastfeeding` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

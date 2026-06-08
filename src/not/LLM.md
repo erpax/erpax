@@ -3,15 +3,15 @@
 
 # not
 
-path `not` · uuid `63fe04e9-e972-8f55-a3e1-634657157aad` · diamond `3b015ab1-5c6d-8093-bc3a-2f076896d2fc`
+path `not` · uuid `63fe04e9-e972-8f55-a3e1-634657157aad` · diamond `b200bdd5-4029-80c5-bcba-b9929f12bd79`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·countries·does·law·merge·ship·sti·supported · exports not · escapes —
-links `8/8` · folded `1` · bonds in `2` out `2`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·countries·does·law·merge·ship·sti·supported · ← collapse·countries·does·law·merge·ship·sti·supported
 analysis —
 law not is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `093600cb-2ce6-86a4-b00c-273b3bb4063a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06a9fa88-b963-843f-911a-cf45a5fa0098` · `pnpm readme` · `pnpm computed:check`</sub>

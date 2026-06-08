@@ -3,15 +3,15 @@
 
 # mentions
 
-path `mentions` · uuid `fca87a37-2b55-8e6f-9ccb-830e7b303235` · diamond `967a7189-cd8c-89c3-addf-077772976379`
+path `mentions` · uuid `fca87a37-2b55-8e6f-9ccb-830e7b303235` · diamond `eae12347-e51f-83be-a3c1-7b5a092ea568`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports mentions · escapes —
-links `2/2` · folded `1` · bonds in `19` out `19`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accepted·applies·available·cohort·conversion·deleted·entropy·harden·hosting·iata·landmarks·may·memories·patient·restocking·sanitization·stat·trained·types · ← accepted·applies·available·cohort·conversion·deleted·entropy·harden·hosting·iata·landmarks·may·memories·patient·restocking·sanitization·stat·trained·types
+neighbors → law·mention·thing · ← law·mention·thing
 analysis —
 law mentions is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `048c225d-e45d-813b-bc9a-e041a74289bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10ce4562-5c0f-8d90-926e-baa924203566` · `pnpm readme` · `pnpm computed:check`</sub>

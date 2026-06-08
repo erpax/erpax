@@ -3,15 +3,15 @@
 
 # mixtape
 
-path `mixtape` · uuid `1cc0fc6f-cef9-8b16-8c1d-ac86bfca626f` · diamond `517ae379-c41a-89ca-bd1d-ec6c3700eae4`
+path `mixtape` · uuid `1cc0fc6f-cef9-8b16-8c1d-ac86bfca626f` · diamond `3faf7717-c343-814f-8630-20ed0990e6f9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports mixtape · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → brewery·cohort·idempotency·landmarks·memories·stat · ← brewery·cohort·idempotency·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law mixtape is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `27c4959c-628e-89d9-be09-7e978dcdb834` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3004ada0-3a2f-88e0-95d2-94808e551c05` · `pnpm readme` · `pnpm computed:check`</sub>

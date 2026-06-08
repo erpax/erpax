@@ -3,15 +3,15 @@
 
 # research
 
-path `research` · uuid `f2a22870-40a9-8da9-9f5a-a9745e81f284` · diamond `18eb3648-28cc-88a6-976a-f8795528a015`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `research` · uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4` · diamond `b87138f6-778c-8a36-8494-257b1690c87d`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·akashic·anchor·angel·breath·civilization·collapse·history·law·localize·merge·oid·profane·proof·sacred·science·uuid·zeropoint · exports research · escapes —
-links `27/27` · folded `1` · bonds in `5` out `5`
+links `27/27` · folded `1` · bonds in `61` out `76`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·unspecified · ← cohort·landmarks·memories·stat·unspecified
-analysis agent·diamond·hallucination·purity
+neighbors → accept·access·account·accounting·agent·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·collapse·consultant·consulting·cost·cost·cross·design·development·drone·email·entanglement·entropy·entropy·entry·entry·expense·feedback·gate·harmony·history·identity·identity·interview·law·law·law·law·law·literature·localize·matrix·mcp·merge·merge·merge·oid·organization·plugins·profane·project·proof·proof·quantum·receipt·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint·zeropoint · ← accept·access·account·accounting·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·consultant·consulting·cost·cross·design·development·drone·email·entanglement·entropy·entry·expense·feedback·gate·harmony·history·identity·interview·law·literature·localize·matrix·mcp·merge·oid·organization·plugins·profane·project·proof·quantum·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint
+analysis agent
 law research debits entropy and erpax credits it as tamper-cost — every source must collapse into content-addressed merged atoms, so the inhaled disorder leaves only a denser, harder core.
 
 ---
 
-<sub>content-uuid `fde58ffa-0c87-8d7f-ad47-0bf536c4f48e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d95a8c6-43e6-8975-910b-24465f73ca80` · `pnpm readme` · `pnpm computed:check`</sub>

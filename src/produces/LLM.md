@@ -3,15 +3,15 @@
 
 # produces
 
-path `produces` · uuid `00603ba5-85a8-83ae-8d84-c78fb9558814` · diamond `2f406a02-aea8-878c-9f80-92169d082fc0`
+path `produces` · uuid `00603ba5-85a8-83ae-8d84-c78fb9558814` · diamond `9683e2b1-b2fa-8d00-9080-3d370aaca0f9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports produces · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·exercise·landmarks·memories·stat · ← cohort·exercise·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law produces is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `59a4fee6-d2b3-8c9b-b6ac-04d25d3191ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `88a47b93-f65d-8d5b-855a-4c4c288ed6e6` · `pnpm readme` · `pnpm computed:check`</sub>

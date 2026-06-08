@@ -23,7 +23,21 @@
 
 - partition `depublic` · sub-root `0066bc08-575a-8231-93f8-60f9ac4aa84d`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5b2007df-cb35-8f06-887d-2db0ba1de09e` · framed by typography partition `depublic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3dc54ef9-5863-886f-94ef-98e3c72745d4` · framed by typography partition `depublic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

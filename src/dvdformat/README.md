@@ -23,7 +23,21 @@
 
 - partition `dvdformat` · sub-root `765c14d9-9e40-89f3-8403-f072a5b92fd3`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a0294d85-7386-84b3-903b-38c23a8e6461` · framed by typography partition `dvdformat` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `90fc05a2-ca89-8bdf-ac60-f57e0e8b60c4` · framed by typography partition `dvdformat` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

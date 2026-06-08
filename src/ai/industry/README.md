@@ -2,7 +2,7 @@
 
 # industry
 
-> atom `ai/industry` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `ai/industry` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
 - bond degree `64` · analysis neighbors `diamond`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -39,7 +39,7 @@
 
 ## analytics
 
-- bond degree `64` · sealed `1` · horo `4`
+- bond degree `64` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
@@ -53,8 +53,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7a51c6fe-d895-83f4-af27-61c98f0a3cf8` · framed by typography partition `ai` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4829c9b-5769-8eb0-9f0e-77138ba68211` · framed by typography partition `ai` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -33,7 +33,7 @@ import {
   type ReadmeModel,
 } from '@/readme'
 import { parseWranglerBindings } from '@/cloudflare'
-import { readFileSync } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
 import { conserves } from '@/conservation'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import { UUID_MATRIX_ROOT } from '@/uuid/matrix'
@@ -221,6 +221,32 @@ describe('readme — per-folder debit/credit statement', () => {
     expect(renderFolderReadme(m)).toContain('## [[standards]]')
   })
 
+  it('empty or incomplete folders are not sealed', () => {
+    const ctx = buildReadmeCorpusContext()
+    const graph = buildReadmeTypographyGraph()
+    const incomplete = deriveFolderModel('agents/mcp', process.cwd(), ctx, graph)
+    expect(incomplete.code).toBe(1)
+    expect(incomplete.proof).toBe(1)
+    expect(incomplete.sealed).toBe(false)
+    const stray = deriveFolderModel('skill/router', process.cwd(), ctx, graph)
+    expect(stray.sealed).toBe(false)
+    const vocab = deriveFolderModel('law', process.cwd(), ctx, graph)
+    if (vocab.code === 0 && vocab.form === 1) expect(vocab.sealed || !vocab.folded).toBeTruthy()
+  })
+
+  it('sealed atoms have pure diamond membership', () => {
+    const ctx = buildReadmeCorpusContext()
+    const graph = buildReadmeTypographyGraph()
+    const sample = ['law/folder', 'trading/api', 'readme', 'seal']
+    for (const p of sample) {
+      const m = deriveFolderModel(p, process.cwd(), ctx, graph)
+      if (m.sealed) {
+        expect(m.form).toBe(1)
+        if (m.code) expect(m.proof).toBe(1)
+      }
+    }
+  })
+
   it('aggregateCorpusAnalytics is deterministic on a fixed slice', () => {
     const ctx = buildReadmeCorpusContext()
     const graph = buildReadmeTypographyGraph()
@@ -233,5 +259,20 @@ describe('readme — per-folder debit/credit statement', () => {
     const text = readFileSync(join(process.cwd(), 'wrangler.jsonc'), 'utf8')
     const map = buildBindingsByAtom(parseWranglerBindings(text))
     expect((map.get('database') ?? []).some((b) => b.name === 'D1')).toBe(true)
+  })
+
+  it('seal propagation: phantom prefix forbids sealed descendants (skill/router)', () => {
+    const ctx = buildReadmeCorpusContext()
+    const m = deriveFolderModel('skill/router', process.cwd(), ctx)
+    expect(existsSync(join(process.cwd(), 'src/skill/SKILL.md'))).toBe(false)
+    expect(m.sealed).toBe(false)
+  })
+
+  it('seal propagation: nested child inherits parent seal (law/folder)', () => {
+    const ctx = buildReadmeCorpusContext()
+    const parent = deriveFolderModel('law', process.cwd(), ctx)
+    const child = deriveFolderModel('law/folder', process.cwd(), ctx)
+    if (parent.sealed) expect(child.sealed).toBe(true)
+    else expect(child.sealed).toBe(false)
   })
 })

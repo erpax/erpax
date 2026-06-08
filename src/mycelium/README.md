@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `mycelium` · sub-root `ac80d139-7d3d-81b6-8c95-db75fa987151`
-- bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `40` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `ac80d139-7d3d-81b6-8c95-db75fa987151`
-- bonds in `2` · out `2`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `23` / `23`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cf86d11c-e61c-8da9-a18a-bdbda65b3ddc` · framed by typography partition `mycelium` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8b82a6f8-b23d-88e7-ba73-9acbf6481c43` · framed by typography partition `mycelium` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

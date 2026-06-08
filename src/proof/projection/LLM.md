@@ -3,15 +3,15 @@
 
 # projection
 
-path `proof/projection` · uuid `ebeee172-bd6d-803b-8da7-cd992c20ec58` · diamond `f1bdc952-dbb0-860d-b4eb-fea4bc2b80a7`
+path `proof/projection` · uuid `ebeee172-bd6d-803b-8da7-cd992c20ec58` · diamond `b5456a4f-917d-8f8d-ad82-3392996f994b`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/anchor·@/cost·@/integrity · exports function·interface · escapes —
-links `29/29` · folded `1` · bonds in `4` out `4`
+links `29/29` · folded `1` · bonds in `19` out `24`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → all·anchor·beyond·cost·entry·give·history·holographic·identity·identity·law·law·llm·localize·localize·merge·merge·proof·take·torus·uuid·uuid·version·zeropoint · ← all·anchor·beyond·cost·entry·give·history·holographic·identity·law·llm·localize·merge·proof·take·torus·uuid·version·zeropoint
 analysis —
 law the forward project (content → content-[[uuid]]) is free, deterministic and O(1) — cost 0 — while its inverse (recover the analog negative without the held key) costs EXACTLY the borrowed [[anchor]] ([[tamper/cost]]): 0 with no anchor, 2^128 under rfc3161-ecdsa-p256, unbounded ONLY under blockchain-pow — never unbounded by default; and when it IS ∞ that ∞ is TAGGED (`unbounded: true`), never serialized as a raw number.
 
 ---
 
-<sub>content-uuid `dd5fef38-0146-8292-b1a2-1044db80e18e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a908b5ad-7a2a-8afc-872e-54767a2d27fb` · `pnpm readme` · `pnpm computed:check`</sub>

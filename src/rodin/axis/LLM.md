@@ -3,15 +3,15 @@
 
 # axis
 
-path `rodin/axis` · uuid `79002f48-dcef-8007-9995-5ee4b2944ac1` · diamond `212d119a-fa8b-804a-8e58-057b615992d2`
+path `rodin/axis` · uuid `79002f48-dcef-8007-9995-5ee4b2944ac1` · diamond `1d5cfbb4-d98e-8f7e-8778-794667daaaa1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports access·auth·close·cmyk·coil·config·duality·hooks·horo·identity·polarity·rodin·sequence·unity · exports axis · escapes —
-links `21/21` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → biofield·checkout·edits·emergency·import·landmarks·musical·optician·percentile10·recycling · ← biofield·checkout·edits·emergency·import·landmarks·musical·optician·percentile10·recycling
+links `21/21` · folded `1` · bonds in `22` out `22`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·analog·aura·auth·close·cmyk·coil·config·decompression·duality·hooks·horo·identity·metatron·phase·polarity·rodin·sequence·signal·team·torus·unity · ← access·analog·aura·auth·close·cmyk·coil·config·decompression·duality·hooks·horo·identity·metatron·phase·polarity·rodin·sequence·signal·team·torus·unity
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2613bac7-2f1f-882b-a964-7833bdf7d71d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cec49151-3d2b-8b01-86e8-526d5042988e` · `pnpm readme` · `pnpm computed:check`</sub>

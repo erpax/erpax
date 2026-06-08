@@ -3,15 +3,15 @@
 
 # recover
 
-path `recover` · uuid `05332c49-99dd-82c7-a9c5-eb6514bcb05f` · diamond `1d0eb76b-878a-8cc5-be19-af16b17b9948`
+path `recover` · uuid `05332c49-99dd-82c7-a9c5-eb6514bcb05f` · diamond `eaf59018-9028-8156-bb8d-69bc888f9894`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collections·config·database·port·types · exports recover · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·id·invariant·memories·recourse·recruiting·sell · ← accounting·id·invariant·memories·recourse·recruiting·sell
+neighbors → chat·collapse·collections·concatenate·config·database·decompression·fields·generate·limit·merge·one·port·profane·research·sequence·society·types · ← chat·collapse·collections·concatenate·config·database·decompression·fields·generate·limit·merge·one·port·profane·research·sequence·society·types
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `037d9170-6630-833e-b45f-f40268710a42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d5940be3-34ea-8913-8b44-557bd5da61c0` · `pnpm readme` · `pnpm computed:check`</sub>

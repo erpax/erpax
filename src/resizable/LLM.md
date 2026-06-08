@@ -3,15 +3,15 @@
 
 # resizable
 
-path `resizable` · uuid `ab2120e7-6acb-8111-83b4-24f756b872d6` · diamond `dc35c5d4-7671-83fd-8fd5-8a0d60dcc740`
+path `resizable` · uuid `ab2120e7-6acb-8111-83b4-24f756b872d6` · diamond `1b183bd5-8d04-8d9d-b03a-85eff9c12a55`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports resizable · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·first·landmarks·memories·stat · ← cohort·first·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law resizable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `045dbd72-6290-8c81-bd02-0590e6f7eee3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00d00dea-f4c4-8a54-82cf-84a728a1d0da` · `pnpm readme` · `pnpm computed:check`</sub>

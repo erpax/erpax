@@ -3,15 +3,15 @@
 
 # unity
 
-path `horo/unity` · uuid `3904d354-4609-8360-a4a9-be578ee3a74c` · diamond `2225bfd2-ef03-8f49-ae3c-8b386727eb06`
+path `horo/unity` · uuid `3904d354-4609-8360-a4a9-be578ee3a74c` · diamond `5e84df77-6357-8635-adc9-5f6868eefc31`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports base·begin·close·coil·end·flow·horo·law·merge·one · exports unity · escapes —
-links `14/14` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·optician·stat · ← cohort·landmarks·memories·optician·stat
+links `14/14` · folded `1` · bonds in `17` out `17`
+faces worker·plugin·pwa `1·0·0`
+neighbors → axis·base·begin·close·coil·diamond·end·flow·horo·law·merge·notes·octave·one·round·signal·torus · ← axis·base·begin·close·coil·diamond·end·flow·horo·law·merge·notes·octave·one·round·signal·torus
 analysis —
 law [[horo]] position 9 — the absorbing close where every flow resolves (settled · sealed · reconciled) and which mirror-twins the next octave's [[base]]: a close IS the next ring's open (the [[merge]] point).
 
 ---
 
-<sub>content-uuid `b1a19eaa-44c1-8f94-96e8-1c85681d0af4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `67ef1ff3-e55f-82cc-918f-3e472ff0918c` · `pnpm readme` · `pnpm computed:check`</sub>

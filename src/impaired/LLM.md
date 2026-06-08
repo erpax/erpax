@@ -3,15 +3,15 @@
 
 # impaired
 
-path `impaired` · uuid `e0cfb2a9-1cb3-8034-8194-86e7cf4e96b7` · diamond `5dda3dac-8e81-8ebf-b643-34c0e5c7863b`
+path `impaired` · uuid `e0cfb2a9-1cb3-8034-8194-86e7cf4e96b7` · diamond `e814d0bf-a0c2-881f-8141-142a08b0bf4d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports impaired · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·provisioned·stat · ← cohort·landmarks·memories·provisioned·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law impaired is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `755381e8-8467-877c-89eb-393b28c25a8c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `82029f3f-82a2-8d0f-9338-1234bf8bc80a` · `pnpm readme` · `pnpm computed:check`</sub>

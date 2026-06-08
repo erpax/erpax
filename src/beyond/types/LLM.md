@@ -4,7 +4,7 @@
 # types
 
 path `beyond/types` · uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59` · diamond `4f1eaaa8-260a-822d-baa7-9ba3394c1b75`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/agent · exports InverseEffect·PqcAlgorithm·interface · escapes —
 links `5/5` · folded `1` · bonds in `21` out `24`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every value carries the provenance, cost, and reversibility a future regulat
 
 ---
 
-<sub>content-uuid `c000ac30-0156-8012-9630-cfe01392c888` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70ec0f0c-c0a8-8f67-b668-a0d8cf2e3c49` · `pnpm readme` · `pnpm computed:check`</sub>

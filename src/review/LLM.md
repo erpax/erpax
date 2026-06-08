@@ -3,15 +3,15 @@
 
 # review
 
-path `review` · uuid `7f98d129-6067-8d40-8144-9fe9cd868ef3` · diamond `fb124639-542a-85c7-b956-ffe5dd8ee854`
+path `review` · uuid `7f98d129-6067-8d40-8144-9fe9cd868ef3` · diamond `a5c22808-8d3d-8ef6-8e0d-3106f2621eb2`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·article·aspect·associated·body·claim·count·critic·employer·item·law·media·news·rating·result·user · exports review · escapes —
-links `16/16` · folded `1` · bonds in `6` out `6`
+links `16/16` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → boat·cohort·landmarks·memories·stat·volume · ← boat·cohort·landmarks·memories·stat·volume
+neighbors → action·article·aspect·associated·body·claim·count·critic·employer·item·law·media·news·rating·result·user · ← action·article·aspect·associated·body·claim·count·critic·employer·item·law·media·news·rating·result·user
 analysis —
 law review is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `040e4098-ad50-86b1-9a5f-8fff96e479d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0dd5f839-f526-8fa2-84df-30c50763aa77` · `pnpm readme` · `pnpm computed:check`</sub>

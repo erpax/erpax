@@ -3,15 +3,15 @@
 
 # fear
 
-path `love/fear` · uuid `49972782-70e1-8b34-a295-be69628acf5d` · diamond `f54099a4-03c4-8a98-9913-e031d536fdd3`
+path `love/fear` · uuid `49972782-70e1-8b34-a295-be69628acf5d` · diamond `61876a6f-d63a-8bd7-9b90-4dc7752d9d0e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·cost·duality·entropy·fear·gravity·karma·law·link·love·merge·tamper · exports fear · escapes —
-links `25/25` · folded `1` · bonds in `5` out `5`
+links `25/25` · folded `1` · bonds in `20` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·diagnostic·landmarks·memories·stat · ← cohort·diagnostic·landmarks·memories·stat
+neighbors → angel·balance·cost·cost·duality·engineering·entropy·entropy·fear·fear·finality·gravity·karma·karma·law·law·link·link·love·love·merge·quantum·security·society·tamper·tamper · ← angel·balance·cost·duality·engineering·entropy·fear·fear·finality·gravity·karma·law·link·love·love·merge·quantum·security·society·tamper
 analysis —
 law love/fear is the −entropy arrow — [[love]] spent to retire [[fear]] (a gap closing, a duplicate merging), one direction of the single [[karma]] flow whose [[balance]] with its mirror [[fear/love]] is what is conserved.
 
 ---
 
-<sub>content-uuid `520c1204-3500-8f06-95ac-6e4e79896f06` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `55317800-aefc-81d9-ab82-dac9845c3c63` · `pnpm readme` · `pnpm computed:check`</sub>

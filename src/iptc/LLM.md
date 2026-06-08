@@ -3,15 +3,15 @@
 
 # iptc
 
-path `iptc` · uuid `f5d6d372-ae7a-8cae-8a30-076a52990322` · diamond `9b13d2d4-f5ef-8f90-b9f2-5ec090a68d82`
+path `iptc` · uuid `f5d6d372-ae7a-8cae-8a30-076a52990322` · diamond `a3e3e458-23de-8975-aaa0-910d6c4dc198`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·digital·enumeration·law·merge·source·sti · exports iptc · escapes —
-links `7/7` · folded `1` · bonds in `0` out `0`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·digital·enumeration·law·merge·source·sti · ← collapse·digital·enumeration·law·merge·source·sti
 analysis —
 law iptc is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `45cdba26-107f-8b5d-9750-4c313cd3ebe8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5b64310-1a07-85b2-96d5-a19e80a957df` · `pnpm readme` · `pnpm computed:check`</sub>

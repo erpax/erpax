@@ -3,15 +3,15 @@
 
 # permit
 
-path `permit` · uuid `aa08197e-5b7b-8de3-a3e3-22e5ba901d7f` · diamond `b797dd20-9dd1-8f7a-8f8b-1fb56ea29e20`
+path `permit` · uuid `aa08197e-5b7b-8de3-a3e3-22e5ba901d7f` · diamond `c8371086-5c1b-8052-9457-9ef9a4d4ea2d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports audience·government·law · exports permit · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cleaning·clincal·cohort·landmarks·memories·stat · ← cleaning·clincal·cohort·landmarks·memories·stat
+neighbors → audience·government·law · ← audience·government·law
 analysis —
 law permit is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a0d90fea-3956-8c3f-b563-d27739d6343d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c7508e6c-f435-816c-b7a9-a27faf964f6f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `biomass` · sub-root `a21b1c67-45fa-80e3-989c-5310f4cc1e72`
 - bond degree `59` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -58,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `ab13c07f-cf07-8d59-96da-bede0ff34ad4` · framed by typography partition `biomass` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `55e4701e-132b-8da8-87c6-13a47f8fcd3e` · framed by typography partition `biomass` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

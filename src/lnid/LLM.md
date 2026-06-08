@@ -3,15 +3,15 @@
 
 # lnid
 
-path `lnid` · uuid `7ecf1ad2-c4bd-8718-89eb-6b8084747cd4` · diamond `0eac9f2a-9bdf-80b4-a98c-353e14a51c5c`
+path `lnid` · uuid `7ecf1ad2-c4bd-8718-89eb-6b8084747cd4` · diamond `778af299-2c7e-85d9-8fc9-30c27c335fff`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports lnid · escapes —
-links `4/4` · folded `1` · bonds in `31` out `32`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activity·announcement·applicable·applicant·boat·complex·contained·cream·disjoint·driven·fdacategory·forum·funnel·given·hold·issn·itnonprofit·laboratory·landmarks·notice·observability·photograph·sanitization·separation·software·spa·specialty·storage·stream·uuid·vegetarian·western · ← activity·announcement·applicable·boat·complex·contained·cream·disjoint·driven·fdacategory·forum·funnel·given·hold·issn·itnonprofit·laboratory·landmarks·notice·observability·photograph·sanitization·separation·software·spa·specialty·storage·stream·uuid·vegetarian·western
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law lnid is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fb14bda9-1c2b-8b03-9be8-6a9348dfdfcf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9529b83-a3f8-8789-90c5-53d51c58d567` · `pnpm readme` · `pnpm computed:check`</sub>

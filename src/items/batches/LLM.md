@@ -3,15 +3,15 @@
 
 # batches
 
-path `items/batches` · uuid `980d0d8c-3dec-885b-955b-5148dfb10fca` · diamond `ea190b33-b5c2-8e34-8fed-4cf39bc3bd48`
+path `items/batches` · uuid `980d0d8c-3dec-885b-955b-5148dfb10fca` · diamond `7493f11c-6f9e-847e-b018-aa48c3ffe71a`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `9` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·colleagues·comment·fertility·holographic·issue·landmarks·orders·spouse · ← access·accounting·colleagues·fertility·holographic·issue·landmarks·orders·spouse
+links `6/6` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·collections·fields·inspections·items·law·standard · ← accounting·collections·fields·inspections·items·law·standard
 analysis —
 law a batch carries lot identity and parent-batch genealogy (one-step-back, one-step-forward) so any unit traces to its sources and forward to its products — the recall and traceability spine (EU 178/2002, GS1 AI(10)).
 
 ---
 
-<sub>content-uuid `4ccdd909-3695-8f6b-a5a9-c522c09c74e2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6ce641d5-e3a6-8a24-9b5d-2b34bae06b81` · `pnpm readme` · `pnpm computed:check`</sub>

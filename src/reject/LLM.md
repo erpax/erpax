@@ -3,15 +3,15 @@
 
 # reject
 
-path `reject` · uuid `22bb68fd-c115-885f-bf6f-34297a736d47` · diamond `f1394547-a78e-86a1-bb14-bab7b7fed809`
+path `reject` · uuid `22bb68fd-c115-885f-bf6f-34297a736d47` · diamond `3330e8b4-0119-85d2-9ab2-ca4947197869`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports reject · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attendee·candidate·cohort·landmarks·memories·stat · ← attendee·candidate·cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law reject is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d37e1eb7-c258-88a6-92e1-80c75684df24` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d63b69c8-0520-88ba-9d58-3c5feb5af522` · `pnpm readme` · `pnpm computed:check`</sub>

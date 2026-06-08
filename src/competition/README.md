@@ -25,7 +25,7 @@
 
 - partition `competition` · sub-root `fd4da768-c567-8844-93ef-8efee42195ab`
 - bond degree `57` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `76d1240a-9dd1-8fc6-b771-c4e1c43a3f05` · framed by typography partition `competition` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4b00a30f-291c-8d44-b7f6-71e795d3aa1c` · framed by typography partition `competition` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

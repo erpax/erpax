@@ -25,7 +25,22 @@
 
 - partition `element` · sub-root `389eb490-b30a-8c5e-bfbd-ec53df1f3934`
 - bond degree `74` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IUPAC periodic table — periods, groups, main-group valence` · banner
+- `Lewis octet rule (duet for period 1) — stability = a full outer shell` · banner
+
+## analytics
+
+- bond degree `74` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `321ff776-f95e-8b06-a39b-5c031ad059c7` · framed by typography partition `element` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e16623a4-8374-8969-8a95-fde268ba8bfb` · framed by typography partition `element` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

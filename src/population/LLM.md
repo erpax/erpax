@@ -3,15 +3,15 @@
 
 # population
 
-path `population` · uuid `a6018d84-2308-8533-97a0-e92c6bdde92f` · diamond `9d66adb2-22ba-89d2-9268-0101d0310ee3`
+path `population` · uuid `a6018d84-2308-8533-97a0-e92c6bdde92f` · diamond `c7c118b6-4679-8407-a3a4-04e34fe7264a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·statistical·sti·target·type · exports population · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → archangel·architect·collapse·diamond·law·merge·statistical·sti·target·type · ← archangel·architect·collapse·diamond·law·merge·statistical·sti·target·type
 analysis —
 law population is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3cde58c1-e9f4-8d55-990d-cf1ff66fc1bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cafeb652-de1f-88d5-b89e-a6028cd074f4` · `pnpm readme` · `pnpm computed:check`</sub>

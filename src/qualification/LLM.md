@@ -3,15 +3,15 @@
 
 # qualification
 
-path `qualification` · uuid `f030ce11-f67e-8de6-b41c-e5534503c6b3` · diamond `8ddbd560-1e51-8dba-8bcd-793764cc1643`
+path `qualification` · uuid `f030ce11-f67e-8de6-b41c-e5534503c6b3` · diamond `fc5c2f81-7c16-810c-a483-563be17427c6`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·competency·qualifications · exports qualification · escapes —
-links `6/6` · folded `1` · bonds in `83` out `69`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·accounting·app·aura·balance·block·boys·breakfast·c19·charitable·chat·communication·config·connection·consulting·corrects·destination·details·dietary·district·drone·duplicate·ebitda·enrolling·fat·fax·funding·game·gears·generator·grade·grant·handling·header·holographic·hours·joint·landmarks·ligament·likes·list·literature·marine·markup·marry·memories·parlor·pats·pi·pipeline·policy·progression·public·qualifications·qualified·qualifier·qualitative·range·reconcile·request·sanitization·schema·security·shred·srp·symbol·temporarily·tracks·violence · ← 3986·accounting·accounting·app·aura·balance·block·boys·breakfast·c19·charitable·chat·chat·communication·communication·communication·config·connection·consulting·corrects·destination·destination·destination·details·dietary·district·drone·drone·duplicate·ebitda·enrolling·enrolling·fat·fax·funding·game·gears·generator·grade·grade·grant·handling·header·holographic·hours·joint·joint·landmarks·landmarks·ligament·likes·list·literature·marine·markup·marry·memories·parlor·parlor·pats·pi·pi·pipeline·policy·progression·public·qualifications·qualified·qualifier·qualitative·range·reconcile·request·request·sanitization·schema·security·shred·srp·symbol·temporarily·tracks·violence
+neighbors → balance·competency·qualifications · ← balance·competency·qualifications
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `cd0bae64-f04b-8484-84e8-6192b06f1ad3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44e72fd3-c534-8a17-a918-e201799099d9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # names
 
-path `migrate/names` · uuid `0dc0e77c-661f-8bb8-8ddd-97cc5b003a75` · diamond `778be8c3-0b54-8303-8524-1961077f26cc`
+path `migrate/names` · uuid `0dc0e77c-661f-8bb8-8ddd-97cc5b003a75` · diamond `5aa02636-7cfe-8c84-97e1-5f90e5f40465`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports function·interface · escapes —
-links `6/6` · folded `1` · bonds in `6` out `6`
+links `6/6` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dietary·dropoff·homeopathic·landmarks·list·musical · ← dietary·dropoff·homeopathic·landmarks·list·musical
+neighbors → collapse·merge·migrate·quaternary·test · ← collapse·merge·migrate·quaternary·test
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `d3e4a626-ce3f-8b2b-a2c3-612a3838830c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `35eeb759-58cb-8b12-9e6b-e8270a671164` · `pnpm readme` · `pnpm computed:check`</sub>

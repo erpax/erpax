@@ -3,15 +3,15 @@
 
 # navigation
 
-path `navigation` · uuid `a0514b42-5583-858b-b6a7-941c83a8d4c7` · diamond `4925607c-188d-8df8-91de-1497064bc93d`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
-imports collapse·element·law·merge·site·sti · exports navigation · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+path `navigation` · uuid `a0514b42-5583-858b-b6a7-941c83a8d4c7` · diamond `a68e9144-eb16-8567-9a02-5dd97b02cb0a`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports — · exports function·interface · escapes —
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·element·law·merge·site·sti·typography · ← collapse·element·law·merge·site·sti·typography
 analysis —
 law navigation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4abe363-c068-80c2-82a1-c7ddf817be40` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dcd0f694-bc09-8864-9cea-3e1bdb6a4775` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # mens
 
-path `mens` · uuid `789fa2ff-48da-8c7b-8aca-22dd08398ffd` · diamond `d32847f6-67f9-87c0-9a92-009ddca1ed21`
+path `mens` · uuid `789fa2ff-48da-8c7b-8aca-22dd08398ffd` · diamond `fa68e015-6424-894b-8ce5-cf4c83d482e9`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports clothing·collapse·law·merge·sti·store · exports mens · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·auth·colleagues·command·fertility·holographic·landmarks·spouse · ← access·auth·colleagues·command·fertility·holographic·landmarks·spouse
+neighbors → clothing·collapse·law·merge·sti·store · ← clothing·collapse·law·merge·sti·store
 analysis —
 law mens is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4ba8e609-ee8b-8fdc-b26c-a30d5a248b11` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `79d04c8c-c16c-8ec8-ba48-1dc9bc7b2213` · `pnpm readme` · `pnpm computed:check`</sub>

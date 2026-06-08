@@ -3,15 +3,15 @@
 
 # legislation
 
-path `legislation` · uuid `2a913f39-0a75-84d8-8b79-5c51d22d6302` · diamond `52351df9-9e2c-8a91-9a5f-191c626ca6bb`
+path `legislation` · uuid `2a913f39-0a75-84d8-8b79-5c51d22d6302` · diamond `31bde77d-6005-8e80-a19b-69a32c8a35fd`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/constitution·@/governance·@/integrity · exports LawRank·const·function·interface · escapes —
-links `16/16` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → episode·landmarks · ← episode·landmarks
+links `16/16` · folded `1` · bonds in `32` out `32`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·amends·applicability·applies·changes·civilization·commences·consolidates·constitution·corrects·corruption·countersigned·duality·ensures·force·fractal·governance·identity·implementation·law·legal·merge·object·passed·proof·repeals·responsible·separation·sequence·society·standard·transposes · ← akashic·amends·applicability·applies·changes·civilization·commences·consolidates·constitution·corrects·corruption·countersigned·duality·ensures·force·fractal·governance·identity·implementation·law·legal·merge·object·passed·proof·repeals·responsible·separation·sequence·society·standard·transposes
 analysis —
 law the power to legislate and the limit on it are one act — an ordinary majority enacts a statute, a supermajority moves the [[constitution]], and the gap between the two thresholds IS the rule of law (no majority repeals an entrenched article).
 
 ---
 
-<sub>content-uuid `07e3c66a-7b29-863e-941b-f4596596a1b2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c934661c-f703-801e-a7ea-662b84a42025` · `pnpm readme` · `pnpm computed:check`</sub>

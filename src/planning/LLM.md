@@ -3,15 +3,15 @@
 
 # planning
 
-path `planning` · uuid `38f4f382-529b-8eef-879c-c6b3e1f2fd18` · diamond `a0ddd089-d401-8677-af34-6fad850f3525`
+path `planning` · uuid `38f4f382-529b-8eef-879c-c6b3e1f2fd18` · diamond `05c87050-6b6e-8635-b63d-3be58b31987a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·plannings·project · exports planning · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician · ← landmarks·physician
+neighbors → balance·plannings·project · ← balance·plannings·project
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `846379f0-f731-89e1-ac00-72dd03991a80` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe80659d-9f6f-8873-993c-9aa014dc3e13` · `pnpm readme` · `pnpm computed:check`</sub>

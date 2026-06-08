@@ -23,7 +23,21 @@
 
 - partition `distillery` · sub-root `ff20de8a-4b39-830f-90ce-8fa9ece7d486`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b71d72df-2d69-8e0b-be52-52eafae224ce` · framed by typography partition `distillery` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6d10ca9f-e388-820a-9eac-055293f4b20f` · framed by typography partition `distillery` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

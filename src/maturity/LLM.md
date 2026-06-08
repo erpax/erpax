@@ -3,15 +3,15 @@
 
 # maturity
 
-path `maturity` · uuid `c282e76b-da85-8d73-9238-e5016d050c6b` · diamond `0bd51a0f-282b-8ea9-b655-17a26b965a7c`
+path `maturity` · uuid `c282e76b-da85-8d73-9238-e5016d050c6b` · diamond `c70fa637-08aa-8bd1-8b89-67e5d4869c8f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·degreeday·grade·harvest·measure·planting·season·transplant · exports maturity · escapes —
-links `18/18` · folded `1` · bonds in `4` out `4`
+links `18/18` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agriculture·animal·apiculture·aquaculture·crop·degreeday·dormancy·evapotranspiration·grade·harvest·measure·perennial·planting·pollination·rootstock·scion·season·transplant·tunnel·variant · ← agriculture·animal·apiculture·aquaculture·crop·degreeday·dormancy·evapotranspiration·grade·harvest·measure·perennial·planting·pollination·rootstock·scion·season·transplant·tunnel·variant
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `11b5f78e-6f6f-844e-b0b7-ff9f85b58f91` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aa3081d7-a537-858c-9d4a-7f5f39fc960f` · `pnpm readme` · `pnpm computed:check`</sub>

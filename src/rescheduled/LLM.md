@@ -3,15 +3,15 @@
 
 # rescheduled
 
-path `rescheduled` · uuid `b3f34e29-0ec0-81e5-b366-7ce0ec907b8a` · diamond `b58e1eb7-c431-8178-bcfe-ab0dfde168d7`
+path `rescheduled` · uuid `b3f34e29-0ec0-81e5-b366-7ce0ec907b8a` · diamond `4812ce47-a98f-881b-bc15-8739d0e799bf`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports rescheduled · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → committee·garden·landmarks·measurements·short · ← committee·garden·landmarks·measurements·short
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law rescheduled is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7a1b3288-077c-8181-9c04-37e9008bbd06` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `581712b4-64e6-846b-9355-68f7c64a7a73` · `pnpm readme` · `pnpm computed:check`</sub>

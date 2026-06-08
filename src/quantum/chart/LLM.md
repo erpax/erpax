@@ -3,15 +3,15 @@
 
 # chart
 
-path `quantum/chart` · uuid `ef568946-90df-859f-91ef-66780c606592` · diamond `5315d805-168a-8f11-9e18-e5acaf173a15`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `quantum/chart` · uuid `98c17fb4-10d6-8d86-a044-c4d54127f197` · diamond `6d1366c4-f363-8c24-acf5-7a6158c59953`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/chart·@/color · exports const · escapes —
-links `15/15` · folded `0` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·mention·stat · ← coach·cohort·landmarks·mention·stat
-analysis diamond·hallucination·purity
+links `15/15` · folded `1` · bonds in `9` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·chart·color·color·data·law·law·quantum·quantum·scale·scale·series·series·signal · ← analog·chart·color·data·law·quantum·scale·series·signal
+analysis —
 law rendering is deterministic — a chart's values map one-to-one onto the [[color]] spectrum by their normalized position, so the same data is always the same colour field (no rendering state, just the spec projected through the aura).
 
 ---
 
-<sub>content-uuid `fa3b09f4-0ab4-8a65-b488-6e743603f9ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7f1b3c8-d8cd-86ef-b18d-8e2a1e6edf16` · `pnpm readme` · `pnpm computed:check`</sub>

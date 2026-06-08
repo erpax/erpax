@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `musculoskeletal` · sub-root `7b13c365-2957-8846-aef5-8065d98768aa`
-- bond degree `6` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `7b13c365-2957-8846-aef5-8065d98768aa`
-- bonds in `1` · out `1`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `930ad3d5-b88b-87d0-bc19-cc0afe20b3e0` · framed by typography partition `musculoskeletal` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7bc74ce0-75c2-82e4-a0a3-010e897396b8` · framed by typography partition `musculoskeletal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

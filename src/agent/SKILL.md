@@ -49,6 +49,19 @@ FORM: **an agent returns effects, it never performs them.** A `DomainAgent` is a
 
 An agent reaching a peer is how the society covers its own gaps: where `emit` broadcasts an [[event]], `ctx.call` invokes exactly the agent whose capability answers ([[team]], [[contribution]]). The same form holds at every scale — agents spawn agents, the contract identical ([[fractal]]). This is the actor layer of the [[society]]; the loop that drives it to whole lives there.
 
+## Strictly apply — law at runtime (fail-closed)
+
+**Agents strictly apply** corpus law on every dispatch and effect — no optional bypass paths.
+
+- **Dispatch** (`runtime.dispatchEvent` / `dispatchTo`) — `assertStrictDispatch` runs before any agent `onEvent`: `cascadeDepthVerdict` caps society cascade hops; `trustBoundaryVerdict` pre-flights untrusted payloads (prompt-injection); cross-tenant events are rejected; every gate emits a uuid-chained [[receipt]].
+- **Effects** (`processEffect`) — `assertStrictEffect` runs before substrate I/O: Payload `create`/`update` use `overrideAccess:false` (the actor's [[access]] scope IS the boundary — never widen); `emit`/`call` reject cross-tenant targets; `call` respects depth cap.
+- **MCP** (`createInProcessMcpClient`) — every `callTool` passes `groundToolCall` + `trustBoundaryVerdict` via `assertStrictMcpCall`; ungrounded capability or injection ⇒ `StrictApplyViolation`, handler never runs.
+- **Society breath** (`chat-broadcast`) — threads `AgentLawState` (depth, grant, untrusted payload) into `createAgentContext` and the in-process MCP client; `cascadeDepthVerdict` stops runaway loops before dispatch.
+
+Matter-twin: `src/agent/strict-apply.ts` (gates) wired through `effect-processor.ts`, `runtime.ts`, `agents/mcp/in-process-client.ts`, `sync/chat-broadcast.ts`. Remedies from `src/ai/industry/` (`groundToolCall`, `trustBoundaryVerdict`, `cascadeDepthVerdict`). Proven by `strict-apply.test.ts` + `agents/mcp/test.ts`.
+
+**Law — [[law]]: agents strictly apply — every dispatch, effect, and MCP tool call passes the law checklist (sandbox + receipt + access scope + depth cap) before execute; violation throws `StrictApplyViolation` and nothing runs.**
+
 ## Standards
 
 - **RFC 9562 §5.8 name-based UUIDv8** — tenant-scoped content-addressed agent (and team) identity: identical content ⇒ identical uuid within a tenant (clones merge); distinct tenants get distinct uuids (no cross-tenant collision). `@audit` Conservation Law 8 content-uuid · merge set-union (no coordination).

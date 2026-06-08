@@ -3,15 +3,15 @@
 
 # restaurant
 
-path `restaurant` · uuid `1e45cc11-569d-8e6d-957e-8238e4e1b10d` · diamond `a870811c-b575-85de-9339-cebcbdaa9aad`
+path `restaurant` · uuid `1e45cc11-569d-8e6d-957e-8238e4e1b10d` · diamond `021062b2-a616-80a0-b040-7d575fea6d6f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports fast·food·law · exports restaurant · escapes —
-links `3/3` · folded `1` · bonds in `4` out `4`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → fast·food·law · ← fast·food·law
 analysis —
 law restaurant is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `77387351-117e-8dee-b97a-15657acc7d5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3cf1e5c0-48d7-84b6-89c9-e60cda17910e` · `pnpm readme` · `pnpm computed:check`</sub>

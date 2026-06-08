@@ -3,15 +3,15 @@
 
 # postharvest
 
-path `postharvest` · uuid `af6bb63e-f5d5-8e96-b901-14de0dad8ef8` · diamond `e5d242ff-3e49-8b0d-864b-198e0c8dce20`
+path `postharvest` · uuid `af6bb63e-f5d5-8e96-b901-14de0dad8ef8` · diamond `16f9bfd4-abe5-83a5-9e6a-36720887b3dc`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agriculture·biological·commerce·grade·harvest·items·law·measure·packs·yield · exports postharvest · escapes —
-links `21/21` · folded `1` · bonds in `7` out `7`
+links `21/21` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·ofmech·opinion·stat · ← action·cohort·landmarks·memories·ofmech·opinion·stat
+neighbors → agriculture·aquaculture·assets·commerce·fodder·grade·harvest·items·law·lineage·measure·packs·yield · ← agriculture·aquaculture·assets·commerce·fodder·grade·harvest·items·law·lineage·measure·packs·yield
 analysis —
 law postharvest cannot improve quality, only slow its loss — the cooling→washing→curing→grading→packing→storage chain bridges field asset to sellable [[items]], and shrink (the gross-to-marketable [[yield]] gap) is the conserved loss to minimize.
 
 ---
 
-<sub>content-uuid `800ede93-9f18-82ef-98fd-02641c13394d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a13b2f61-c9ae-8d4b-87b2-c77006150d07` · `pnpm readme` · `pnpm computed:check`</sub>

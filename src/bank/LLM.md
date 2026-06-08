@@ -4,7 +4,7 @@
 # bank
 
 path `bank` · uuid `b27d6c5c-978f-8d23-8f59-1cd44ddaf7ea` · diamond `d875467b-efca-899f-acc4-fa26d995560b`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports accounting·fields·identity·law·reconcile·transaction · exports bank · escapes —
 links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law `bank` is the financial-institution context a [[transaction]] or account ref
 
 ---
 
-<sub>content-uuid `49c03c94-1b00-8903-9b7a-7571902fa691` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a23dd0c0-d9ad-81da-9821-99081d4d5d4e` · `pnpm readme` · `pnpm computed:check`</sub>

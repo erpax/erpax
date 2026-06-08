@@ -3,15 +3,15 @@
 
 # help
 
-path `help` · uuid `b29f8f63-7fd2-8b75-877e-988407a5a09a` · diamond `1238ffcd-4516-8323-ba9e-b22bf684cd41`
+path `help` · uuid `b29f8f63-7fd2-8b75-877e-988407a5a09a` · diamond `86b77906-42b1-871a-9b72-2a3e32e25547`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·software·sti · exports help · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·software·sti · ← collapse·law·merge·software·sti
 analysis —
 law help is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b36a2845-ad7f-8d5f-a157-900ee2bdf264` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0864478-1639-8457-821e-bd908ae3c77f` · `pnpm readme` · `pnpm computed:check`</sub>

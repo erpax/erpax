@@ -2,7 +2,7 @@
 
 # pwa
 
-> atom `pwa` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `pwa` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `pwa` · sub-root `702247ff-0ba6-8c4d-a00c-e7d106178b52`
-- bond degree `43` · analysis neighbors `diamond`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `73` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `57a84af4-a6d7-8746-bde0-317054471dba`
-- bonds in `7` · out `7`
+- uuid `04abbc62-235f-8e2d-8ae3-6a04152cbf53`
+- bonds in `21` · out `23`
 - trinity form·code·proof `1`·`1`·`1`
 - links `23` / `23`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4e107aa9-bdae-8940-b3fc-5514b5c8fc6f` · framed by typography partition `pwa` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d630d3d9-0578-8905-9a0f-80420d0e9d83` · framed by typography partition `pwa` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>

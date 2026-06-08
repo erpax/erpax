@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·service·sti · exports professional · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·vitepress · ← cohort·landmarks·memories·stat·vitepress
+neighbors → collapse·law·merge·service·sti · ← collapse·law·merge·service·sti
 analysis —
 law professional is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d64104fe-ff67-86b7-9a98-2adc89551692` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ccea496d-c2bc-84f7-a39f-da04b35fd31e` · `pnpm readme` · `pnpm computed:check`</sub>

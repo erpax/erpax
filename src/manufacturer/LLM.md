@@ -3,15 +3,15 @@
 
 # manufacturer
 
-path `manufacturer` · uuid `e01c571a-bf56-8cea-9d42-f6f6f997c5af` · diamond `b2735647-4ea5-8e80-a762-a93f1abc122a`
+path `manufacturer` · uuid `e01c571a-bf56-8cea-9d42-f6f6f997c5af` · diamond `3a2d5b23-f173-8c96-b2e4-ef1e3d81f133`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports manufacturer · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·equal·landmarks·memories·stat · ← cohort·equal·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law the maker-of-a-product is one collided word, so every attestation of "manufacturer" folds to the same identity rather than a per-context duplicate.
 
 ---
 
-<sub>content-uuid `ebce5a03-7b06-86d9-acc0-a2430e6a2a42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f33d457-cc95-8c7e-b30e-cd1ed89af8fd` · `pnpm readme` · `pnpm computed:check`</sub>

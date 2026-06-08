@@ -3,15 +3,15 @@
 
 # office
 
-path `office` · uuid `3ef2df95-7379-86be-b7a1-cc98ba8a2b6d` · diamond `c4ded72a-50fa-82ed-abea-11f33a8d3b47`
+path `office` · uuid `3ef2df95-7379-86be-b7a1-cc98ba8a2b6d` · diamond `987c366a-46e4-878f-9a86-43ec3c5c82f6`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports box·collapse·equipment·government·law·merge·number·physicians·post·sti·store · exports office · escapes —
-links `11/11` · folded `1` · bonds in `52` out `52`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·agent·all·aura·base·catalogue·chat·cohort·collections·connection·contractual·corrects·declaration·diffusion·drone·dropoff·embassy·entertainment·exemplifies·flow·force·game·gears·governinglaw·grant·handling·hobby·homeopathic·id·list·marine·marry·memories·memories·memory·mention·office·office·platform·recommendation·rheumatologic·roadmap·satire·saturday·sections·seed·sell·sell·sign·symbol·tax·wp · ← access·agent·all·aura·base·catalogue·chat·cohort·collections·connection·contractual·corrects·declaration·diffusion·drone·dropoff·embassy·entertainment·exemplifies·flow·force·game·gears·governinglaw·grant·handling·hobby·homeopathic·id·list·marine·marry·memories·memories·memory·mention·office·office·platform·recommendation·rheumatologic·roadmap·satire·saturday·sections·seed·seed·sell·sign·symbol·tax·wp
+neighbors → box·collapse·equipment·government·law·merge·number·physicians·post·sti·store · ← box·collapse·equipment·government·law·merge·number·physicians·post·sti·store
 analysis —
 law office is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3863bea4-d6fb-82a5-aac8-10ec2d1c1d79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `acc0093c-8a8d-801d-85cb-1b84a5e8d0ec` · `pnpm readme` · `pnpm computed:check`</sub>

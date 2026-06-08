@@ -3,15 +3,15 @@
 
 # receive
 
-path `receive` · uuid `55593ce1-69e8-84d6-b06f-7a9ac6651b09` · diamond `e714a5f5-289a-808b-bc19-8b7b55db1a70`
+path `receive` · uuid `55593ce1-69e8-84d6-b06f-7a9ac6651b09` · diamond `c39b627f-bb8a-854b-bc83-76b9bda50506`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports receive · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·doors·instruction·landmarks·memories·sandbox·stat · ← cohort·doors·instruction·landmarks·memories·sandbox·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law receive is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `833a143a-511f-89af-a2ac-c7ee7ea97c50` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d7e0d76b-2bbb-8ee7-96ff-68136e152d32` · `pnpm readme` · `pnpm computed:check`</sub>

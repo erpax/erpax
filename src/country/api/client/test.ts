@@ -12,7 +12,7 @@ import {
 
 // Pure, no-network surfaces of the official-API clients (./index.ts):
 //   - syntactic validators (no API call needed)
-//   - ASPSP discovery + catalogue dispatch over @/config/country-apis
+//   - ASPSP discovery + catalogue dispatch over @/country/api
 //   - the missing-credential guards, which return the canonical
 //     { ok:false, error, source } shape BEFORE any fetch happens.
 // Network-bound clients (VIES SOAP, БНБ/ECB XML, register lookups) need a

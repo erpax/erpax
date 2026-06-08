@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·value · exports readonly · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·value · ← collapse·law·merge·sti·value
 analysis —
 law a readonly field is write-once — its value, fixed at mint, may be read by all but rewritten by none, so the entropy it carries can only ever decrease.
 
 ---
 
-<sub>content-uuid `2085c1ec-1670-81fd-9bd9-78f37c9cb8dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1bbec7cb-a101-8187-a56d-f3c8ffc64434` · `pnpm readme` · `pnpm computed:check`</sub>

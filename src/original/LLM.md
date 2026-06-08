@@ -3,15 +3,15 @@
 
 # original
 
-path `original` · uuid `8ab495b2-db33-823a-a896-6c4e45737aac` · diamond `45dc14f4-71df-8196-aeb3-4cc6254d1e9e`
+path `original` · uuid `8ab495b2-db33-823a-a896-6c4e45737aac` · diamond `4dc81819-0c07-8a08-965b-85b98c4f4e40`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·context·description·law·link·media·merge·sti · exports original · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·context·description·law·link·media·merge·sti · ← collapse·context·description·law·link·media·merge·sti
 analysis —
 law original is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `49214b35-d452-83f9-946f-11b5d27f97c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d8729771-8a51-88a9-9841-3071fc5eab34` · `pnpm readme` · `pnpm computed:check`</sub>

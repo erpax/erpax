@@ -3,15 +3,15 @@
 
 # herd
 
-path `herd` · uuid `70b3a338-3256-8100-92f9-1e3441dff04b` · diamond `3c4b3c15-d9a4-858e-a57f-979b37ae0228`
+path `herd` · uuid `70b3a338-3256-8100-92f9-1e3441dff04b` · diamond `30d44586-fccc-864b-a722-b54d53e87281`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports animal·biological·breed·capacity·cohort·fodder·grazing·law·livestock·lots·measure·mortality·part·pasture·rotation·whole·yield · exports herd · escapes —
-links `38/38` · folded `1` · bonds in `8` out `8`
+links `38/38` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → budgetvariance·cohort·engagement·lactation·landmarks·memories·stat·tissue · ← budgetvariance·cohort·engagement·lactation·landmarks·memories·stat·tissue
+neighbors → animal·assets·biomass·breed·capacity·cohort·fodder·grazing·law·livestock·lots·measure·mortality·part·pasture·rotation·whole·yield · ← animal·assets·biomass·breed·capacity·cohort·fodder·grazing·law·livestock·lots·measure·mortality·part·pasture·rotation·whole·yield
 analysis —
 law a herd is one production-and-accounting unit holding many [[animal]]s — the [[livestock]] twin of [[lots]]/[[cohort]], grouped, moved, grazed, and measured together; one whole, many parts.
 
 ---
 
-<sub>content-uuid `543fe8df-711f-8fd5-b830-9b0fb2594a42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7fcee48-397d-8023-9dc4-6ac183b3720e` · `pnpm readme` · `pnpm computed:check`</sub>

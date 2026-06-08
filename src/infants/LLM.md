@@ -3,15 +3,15 @@
 
 # infants
 
-path `infants` · uuid `be1e381b-372c-8da1-b593-56d64d0c247a` · diamond `6259289c-8bfe-8e43-bea9-1d4ce623a2c7`
+path `infants` · uuid `be1e381b-372c-8da1-b593-56d64d0c247a` · diamond `f0335878-1092-8f55-b4d9-82c515872aa9`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports infants · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cdformat·cohort·landmarks·memories·nsn·saturday·stat·toc · ← cdformat·cohort·landmarks·memories·nsn·saturday·stat·toc
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law infants is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b3d75b8b-4949-86de-b8c9-a9b6b594e6d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f62acf55-d429-893e-aaef-45954708b899` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # people
 
-path `people` · uuid `e6e4678b-42de-83d5-b237-d8f76789787c` · diamond `599f0048-d6a2-87ab-ba71-47c584b3b1c1`
+path `people` · uuid `e6e4678b-42de-83d5-b237-d8f76789787c` · diamond `b37d8576-f9db-8639-a95b-1e4fad91df44`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports audience·collapse·law·merge·sti · exports people · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → audience·collapse·law·merge·sti · ← audience·collapse·law·merge·sti
 analysis —
 law people is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4e6c5b62-86d8-841f-9a3e-02e644b4ce27` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42d19e10-48b7-88c5-b699-dfffe63b6978` · `pnpm readme` · `pnpm computed:check`</sub>

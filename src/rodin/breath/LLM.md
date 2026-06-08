@@ -3,15 +3,15 @@
 
 # breath
 
-path `rodin/breath` · uuid `6e05f921-b49b-875b-960d-5e8439da67cb` · diamond `19c4aa8d-37f4-8699-8f9c-e98da29361ca`
+path `rodin/breath` · uuid `6e05f921-b49b-875b-960d-5e8439da67cb` · diamond `e70ba10d-1de7-8921-abdd-fcc31f5ba7b8`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·cmyk·duality·flow·give·horo·notes·phase·polarity·rodin·round·sequence·signal·take · exports breath · escapes —
-links `27/27` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician·terminals · ← landmarks·physician·terminals
+links `27/27` · folded `1` · bonds in `87` out `87`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·animism·balance·bogomilism·brainstorm·breath·buddhism·chakra·chat·christianity·classroom·cmyk·collapse·collide·compost·concatenate·cost·crisis·derive·development·diffusion·drone·duality·duality·engineering·expand·flow·friction·fusion·generate·give·habit·hamiltonian·hinduism·horo·judaism·law·leap·llm·lung·manure·market·memory·merge·network·notes·number·octave·payload·permaculture·phase·pi·planting·polarity·prayer·proof·quantum·religion·research·reverse·ritual·rodin·round·science·seal·self·sequence·sequence·shamanism·signal·sikhism·skills·society·sparsity·standard·step·stream·sufism·take·taoism·team·thought·train·uuid·vibration·war·wave · ← agent·animism·balance·bogomilism·brainstorm·breath·buddhism·chakra·chat·christianity·classroom·cmyk·collapse·collide·compost·concatenate·cost·crisis·derive·development·diffusion·drone·duality·engineering·expand·flow·friction·fusion·generate·give·habit·hamiltonian·hinduism·horo·judaism·law·leap·llm·llm·lung·manure·market·memory·merge·network·notes·number·octave·payload·permaculture·phase·pi·planting·polarity·prayer·proof·quantum·religion·research·reverse·ritual·rodin·round·science·seal·self·sequence·shamanism·signal·sikhism·skills·society·sparsity·standard·step·stream·sufism·take·taoism·team·thought·train·uuid·uuid·vibration·war·wave
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e1bd7b10-a47c-8e49-9d3b-1cb6bdbb3210` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a983ed7-7c3d-8afe-b490-8349c35cc3da` · `pnpm readme` · `pnpm computed:check`</sub>

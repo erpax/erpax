@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports nsn · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → infants·landmarks · ← infants·landmarks
+neighbors → law·thing · ← law·thing
 analysis —
 law nsn is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7667e6f7-6cf1-88d3-9f2c-f2db599c53e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `76c6485b-78dc-86ac-aefe-28c826bf087d` · `pnpm readme` · `pnpm computed:check`</sub>

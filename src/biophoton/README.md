@@ -23,7 +23,7 @@
 
 - partition `biophoton` · sub-root `72cb2745-dbef-8f4f-9e5e-2117948455d2`
 - bond degree `45` · analysis neighbors `aura`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `340100cb-3cb4-8404-9c4a-7636217cb4ca` · framed by typography partition `biophoton` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5c527e9-4991-870d-bd34-f3ae9ea1dedb` · framed by typography partition `biophoton` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

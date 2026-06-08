@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports category·collapse·drug·law·merge·sti·warning · exports pregnancy · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·country·landmarks·memories·prefix·product·stat · ← cohort·country·landmarks·memories·prefix·product·stat
+neighbors → category·collapse·drug·law·merge·sti·warning · ← category·collapse·drug·law·merge·sti·warning
 analysis —
 law pregnancy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e99e85a5-18e6-8dde-831c-eb2e86184bd2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6ea7351-0483-8159-8204-10b312265dfb` · `pnpm readme` · `pnpm computed:check`</sub>

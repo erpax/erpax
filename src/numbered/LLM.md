@@ -3,15 +3,15 @@
 
 # numbered
 
-path `numbered` · uuid `e67e1ba4-bc51-8709-a9d3-3618bad32224` · diamond `66828f9e-f2d8-87f1-abbc-c517c734c0d6`
+path `numbered` · uuid `e67e1ba4-bc51-8709-a9d3-3618bad32224` · diamond `e621f9b0-0b31-8e99-9fca-4368a9b9d2c7`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·position·sti · exports numbered · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → departure·events·itsocial·menu·significant·t · ← departure·events·itsocial·menu·significant·t
+neighbors → collapse·law·merge·position·sti · ← collapse·law·merge·position·sti
 analysis —
 law numbered is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `52c3969d-d0a0-8bf2-80e8-b178adb64b77` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `248233a7-8af7-874b-8733-b86cdd83788a` · `pnpm readme` · `pnpm computed:check`</sub>

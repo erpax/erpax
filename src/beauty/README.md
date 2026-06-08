@@ -23,7 +23,7 @@
 
 - partition `beauty` · sub-root `bb80f344-d2e9-8521-8600-eafaebef45b2`
 - bond degree `23` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `afbc3075-aef7-87f1-b316-28d9e2591af3` · framed by typography partition `beauty` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6fb92c42-0801-89db-9ee5-f4402a756fa7` · framed by typography partition `beauty` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

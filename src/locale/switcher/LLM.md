@@ -3,15 +3,15 @@
 
 # switcher
 
-path `locale/switcher` · uuid `—` · diamond `99e96bbd-9e0d-8939-ab43-1a4d66c0c4eb`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `locale/switcher` · uuid `073f2301-e08a-8875-9bb6-85e0b1705ccf` · diamond `25f30377-6562-845f-b51f-2bf733449c5d`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports FrontendLocaleSwitcher·default · escapes —
-links `1/1` · folded `0` · bonds in `0` out `0`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → law · ← law
+analysis —
 law barrel re-export at `@/locale/switcher`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `de61ffc3-24db-81ea-a405-2171bc5b3d54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `61a9ac23-330b-84df-b66c-dc8401c976f1` · `pnpm readme` · `pnpm computed:check`</sub>

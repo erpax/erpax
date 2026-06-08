@@ -4,7 +4,7 @@
 # billing
 
 path `billing` · uuid `00104ff6-0f74-81d1-8b48-3be285fb3eff` · diamond `097b63df-49db-8810-8d56-4ab583aebe4a`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports — · exports *:./stripeWebhookHandlers · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law billing is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `71a49836-84d5-8070-9dc1-b3488074a30f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fce3f08b-26f9-899b-88d6-3f3403c2648f` · `pnpm readme` · `pnpm computed:check`</sub>

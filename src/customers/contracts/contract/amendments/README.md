@@ -25,7 +25,35 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `28` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ASC-606` · catalogue
+- `GDPR Art.6(1)(b) lawful-basis-contract-modification` · banner
+- `IAS-1` · catalogue
+- `IAS-8` · catalogue
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IAS-8 accounting-policies changes` · banner
+- `IFRS IFRS-15 §10 contract-with-customer` · banner
+- `IFRS IFRS-15 §20 contract-modifications` · banner
+- `IFRS-15` · catalogue
+- `ISO-19011:2018 audit-trail amendment-lifecycle` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time amendment-effective-date` · banner
+- `SOX §302 management-certification contract-approvals` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-606-10-25-13 contract-modifications` · banner
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `15`
 
 ## identity
 
@@ -41,4 +69,4 @@
 
 ---
 
-<sub>content-uuid `d668cc38-3979-8677-89f1-d3fc4ac2ef99` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `489af710-dfa0-87e2-8400-fe76b1f6ab1d` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

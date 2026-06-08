@@ -3,15 +3,15 @@
 
 # marry
 
-path `marry` · uuid `d0c8c408-4c04-857a-b703-e1ac1c615679` · diamond `46f01b68-04e6-85ce-9ef5-694e4c0dcf98`
+path `marry` · uuid `d0c8c408-4c04-857a-b703-e1ac1c615679` · diamond `fa9c5dd4-ac6f-8b17-9b95-8bf64f6bebe3`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports marry · escapes —
-links `5/5` · folded `1` · bonds in `77` out `72`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·akashic·analog·analytics·assets·aura·block·chat·cohort·collections·connection·convenience·corrects·destination·details·dietary·district·drive·drone·dropoff·dry·duplicate·embassy·enrolling·entertainment·exemplifies·flow·force·funding·gears·generator·grade·grant·handling·hobby·landmarks·ligament·likes·liquor·list·marine·markup·marry·memories·memories·mention·office·parlor·pats·qualification·qualifications·quantitative·range·recourse·reimbursement·request·restriction·rheumatologic·roadmap·sanitization·saturday·scorecard·sections·security·seed·sell·shred·sign·tinid·tour·virus·voting · ← addressed·akashic·analog·analytics·assets·aura·block·chat·cohort·collections·connection·convenience·corrects·destination·destination·details·dietary·district·drive·drone·dropoff·dry·duplicate·embassy·enrolling·enrolling·entertainment·exemplifies·flow·force·funding·gears·generator·grade·grant·grant·handling·hobby·landmarks·ligament·likes·liquor·liquor·list·marine·markup·marry·memories·mention·office·parlor·pats·qualification·qualifications·quantitative·range·recourse·reimbursement·request·request·restriction·rheumatologic·roadmap·sanitization·saturday·scorecard·sections·security·security·seed·sell·shred·sign·tinid·tour·virus·voting
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law marry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0e454241-af55-8738-9ebd-f29ae9ecb69c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14dc31c8-53c9-88cc-99c0-2c81242e0db0` · `pnpm readme` · `pnpm computed:check`</sub>

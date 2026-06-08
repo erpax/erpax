@@ -3,15 +3,15 @@
 
 # reconcile
 
-path `reconcile` · uuid `2aee5d48-7c08-892c-b037-00fdee91a655` · diamond `3eb5a9fe-b960-80ec-bb13-e53bb102b71d`
+path `reconcile` · uuid `2aee5d48-7c08-892c-b037-00fdee91a655` · diamond `b1a2bf33-df9d-8c7d-b7fa-eebff8b5ade2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·commerce·currency·hooks·jobs·law·manufacturing·queries · exports reconcile · escapes —
-links `13/13` · folded `1` · bonds in `13` out `13`
+links `13/13` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·coding·entertainment·header·landmarks·memories·periodical·physician·qualification·terminals·venue·workflow·wp · ← balance·coding·entertainment·header·landmarks·memories·periodical·physician·qualification·terminals·venue·workflow·wp
+neighbors → accounting·balance·bank·batch·commerce·conservation·consistency·currency·deduplication·flow·hooks·idempotency·jobs·law·manufacturing·queries·round · ← accounting·balance·bank·batch·commerce·conservation·consistency·currency·deduplication·flow·hooks·idempotency·jobs·law·manufacturing·queries·round
 analysis —
 law a reconciliation is a link between two records of the same value-flow (bank line ↔ payment, GL ↔ subledger, intercompany debit ↔ credit); `reconciled?` is DERIVED from whether the link exists and amounts agree — never a stored boolean.
 
 ---
 
-<sub>content-uuid `8f876547-89d3-858c-a22a-1fc8da7c25cf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `994c6128-2127-8c5b-a59c-1767a0050b15` · `pnpm readme` · `pnpm computed:check`</sub>

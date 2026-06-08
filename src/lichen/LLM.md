@@ -3,15 +3,15 @@
 
 # lichen
 
-path `lichen` · uuid `8c636999-b08a-8c3d-8c34-77eb47ad5f59` · diamond `2e8c8ccd-62f9-880b-b57e-bf1fd3fedbba`
+path `lichen` · uuid `8c636999-b08a-8c3d-8c34-77eb47ad5f59` · diamond `fde2f352-a432-8409-8489-f7da37772ef2`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports diversity·ecosystem·identity·law·merge·mycelium·self·symbiosis·whole · exports lichen · escapes —
-links `19/19` · folded `1` · bonds in `4` out `4`
+links `19/19` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → diversity·ecosystem·identity·law·merge·mycelium·self·symbiosis·whole · ← diversity·ecosystem·identity·law·merge·mycelium·self·symbiosis·whole
 analysis —
 law a lichen is a partnership wearing one body (fungus + photosynthetic partner, often a third yeast) — so the individual is a question not a given, and the [[merge]] of partners IS the [[identity]], erpax's actor-merge made visible in nature.
 
 ---
 
-<sub>content-uuid `d97e1a9f-88a1-883d-8032-2bfa69766dba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2a702848-abde-859e-a245-9e6df01e1858` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `courthouse` · sub-root `61f27c87-bef7-8628-b651-86b7ce5314a7`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `eb279f14-dd12-87d3-8456-71ecbc6fd8b3` · framed by typography partition `courthouse` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `68da4821-f041-8ce6-ae48-3b8b330e88eb` · framed by typography partition `courthouse` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

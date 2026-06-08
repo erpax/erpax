@@ -3,15 +3,15 @@
 
 # opportunities
 
-path `leads/opportunities` · uuid `68a6c2d6-35dd-8769-913f-86605a52e5f6` · diamond `ceff3e6d-b3d1-849e-901b-95408f6554d0`
+path `leads/opportunities` · uuid `68a6c2d6-35dd-8769-913f-86605a52e5f6` · diamond `874d191b-004d-8c28-8db2-407084c3747c`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `5/5` · folded `1` · bonds in `11` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → activities·attribution·forecast·funnel·law·leads·leadscore·opportunity·pipeline·prospect·segments · ← activities·attribution·forecast·funnel·law·leads·leadscore·opportunity·pipeline·prospect·segments
 analysis —
 law an opportunity is a deal moving through the sales pipeline — stage progression to close-won/lost with a weighted forecast (amount × probability), creating a contract on close-won; the [[leads]] graduate here.
 
 ---
 
-<sub>content-uuid `24b415cd-909c-8a2b-9523-5971647f8042` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc509326-78a1-846e-ba3c-2a17f4edf876` · `pnpm readme` · `pnpm computed:check`</sub>

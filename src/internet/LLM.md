@@ -3,15 +3,15 @@
 
 # internet
 
-path `internet` · uuid `37491475-0f5c-8450-99fd-84c17e3274de` · diamond `9ba1e184-ad0d-8fd5-a68b-45d819994d96`
+path `internet` · uuid `37491475-0f5c-8450-99fd-84c17e3274de` · diamond `be5fc0db-6f69-861e-b20b-813732bcdeb3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports cafe·collapse·law·merge·sti · exports internet · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·lei·memories·motel·stat · ← cohort·landmarks·lei·memories·motel·stat
+neighbors → cafe·collapse·law·merge·sti · ← cafe·collapse·law·merge·sti
 analysis —
 law internet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9e5215c8-5165-8fc8-ae4b-3217d30aa299` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `445e7406-766c-8617-a387-8ef303ffb7e0` · `pnpm readme` · `pnpm computed:check`</sub>

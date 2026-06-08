@@ -2,7 +2,7 @@
 
 # teleportation
 
-> atom `quantum/communication/teleportation` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `quantum/communication/teleportation` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -23,22 +23,22 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
-- bond degree `10` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- bond degree `21` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `2879a358-0ddd-870c-9979-4bf529e1d2e6`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `942382db-5919-848e-b520-01f99955d24c` · framed by typography partition `quantum` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5f54d354-2362-8846-bd54-4be5d826f23f` · framed by typography partition `quantum` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

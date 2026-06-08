@@ -23,7 +23,21 @@
 
 - partition `dormancy` · sub-root `6daa6a4e-c628-8bfa-b136-6d8002b973f4`
 - bond degree `38` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `38` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `75831c8e-72aa-8bec-8f1f-e5ac35929088` · framed by typography partition `dormancy` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `edc9c65f-8dfc-8909-84d7-847fc5bccc54` · framed by typography partition `dormancy` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

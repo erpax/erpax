@@ -3,15 +3,15 @@
 
 # researcher
 
-path `researcher` · uuid `36781a55-3a62-8758-ba2c-b6479b8d5791` · diamond `45683c6e-f779-8440-ad9f-607079d10d77`
+path `researcher` · uuid `36781a55-3a62-8758-ba2c-b6479b8d5791` · diamond `e0f55885-77f2-8122-8083-84f8228f3521`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports researcher · escapes —
-links `3/3` · folded `1` · bonds in `7` out `7`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → command·equals·imprint·significant·standards·text·winery · ← command·equals·imprint·significant·standards·text·winery
+neighbors → law·person·thing · ← law·person·thing
 analysis —
 law researcher is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f42c99d4-0d8f-8309-8618-431791d6d569` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b72658a-5a7c-8aae-a01d-98ac8787a858` · `pnpm readme` · `pnpm computed:check`</sub>

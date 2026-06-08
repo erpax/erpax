@@ -3,15 +3,15 @@
 
 # itsocial
 
-path `itsocial` · uuid `fbc13033-26d4-8c22-97e9-b2127b8e5084` · diamond `51db9580-22e4-860e-8646-0c0d55ed1df1`
+path `itsocial` · uuid `fbc13033-26d4-8c22-97e9-b2127b8e5084` · diamond `66d4d44c-d1d7-8d4e-b044-b02392dfdfbf`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports itsocial · escapes —
-links `4/4` · folded `1` · bonds in `16` out `16`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → basic·binding·cup·description·euenergy·holographic·icao·landmarks·maintainer·numbered·operation·policy·received·rooms·soundtrack·suite · ← basic·binding·cup·description·euenergy·holographic·icao·landmarks·maintainer·numbered·operation·policy·received·rooms·soundtrack·suite
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law itsocial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9d5f073b-1974-8501-b4bd-cad1768cbefc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c4632da-25fa-8e60-9420-64e1038e3c2c` · `pnpm readme` · `pnpm computed:check`</sub>

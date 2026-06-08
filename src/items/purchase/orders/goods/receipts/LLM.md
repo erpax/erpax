@@ -3,15 +3,15 @@
 
 # receipts
 
-path `items/purchase/orders/goods/receipts` · uuid `96e945f8-5396-886b-ad34-5b77f05b8167` · diamond `d719ef34-7a81-8de8-adea-25597cc1df4d`
+path `items/purchase/orders/goods/receipts` · uuid `96e945f8-5396-886b-ad34-5b77f05b8167` · diamond `e9b58c88-1e97-8501-86ea-9f95ec974c2d`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/chain/event/emitter·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
-links `1/1` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `1/1` · folded `1` · bonds in `13` out `17`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounting·collections·fields·horo·identity·law·law·law·orders·proof·proof·sales·standard·supto·transaction·versions · ← accounting·collections·fields·horo·identity·law·orders·proof·sales·standard·supto·transaction·versions
 analysis —
 law a goods receipt is the second leg of the three-way match — it confirms vendor goods arrival and posts the GL accrual (debit inventory, credit AP), while revenue timing stays deferred to the shipment FOB point, so GR date ≠ revenue date.
 
 ---
 
-<sub>content-uuid `bdc31f0b-62b2-8f8c-9622-53e46bacc81f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19fbb630-2923-87d6-87b9-19549e457fe4` · `pnpm readme` · `pnpm computed:check`</sub>

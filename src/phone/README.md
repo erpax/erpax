@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `phone` · sub-root `240de62d-b4ed-856b-b341-eba5abdf10de`
-- bond degree `20` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `24` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `240de62d-b4ed-856b-b341-eba5abdf10de`
-- bonds in `5` · out `5`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dfd2d384-0a47-8787-a5dc-e770f1020a18` · framed by typography partition `phone` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8a95da6a-9598-801f-927a-bf2d982dba25` · framed by typography partition `phone` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

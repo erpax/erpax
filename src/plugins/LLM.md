@@ -3,15 +3,15 @@
 
 # plugins
 
-path `plugins` · uuid `dc340842-c181-89c8-8c96-e4a8f89543b7` · diamond `d0e26b2a-0483-8538-8668-91687ad44881`
+path `plugins` · uuid `dc340842-c181-89c8-8c96-e4a8f89543b7` · diamond `b78bbe60-9f9b-8d80-8dc4-aedf9ffaf602`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·collections·config·fractal·identity·law·merge·sequence · exports plugins · escapes —
-links `10/10` · folded `1` · bonds in `29` out `29`
+links `10/10` · folded `1` · bonds in `30` out `30`
 faces worker·plugin·pwa `0·1·0`
-neighbors → 5305·actionable·blood·buyer·catalog·check·cohort·corporation·countersigned·courthouse·distinguishing·documentation·estimate·extent·features·harden·landmarks·memo·memories·milestone·nicotine·outlier·prevention·privilege·restocking·sanitization·screening·social·stat · ← 5305·actionable·blood·buyer·catalog·check·cohort·corporation·countersigned·courthouse·distinguishing·documentation·estimate·extent·features·harden·landmarks·memo·memories·milestone·nicotine·outlier·prevention·privilege·restocking·sanitization·screening·social·stat
+neighbors → accounting·all·bindings·chat·collapse·collections·comment·commerce·config·domain·ecommerce·fractal·identity·law·manufacturing·mcp·merge·one·part·party·plugin·port·redirects·research·scopes·sequence·skills·tag·torus·whole · ← accounting·all·bindings·chat·collapse·collections·comment·commerce·config·domain·ecommerce·fractal·identity·law·manufacturing·mcp·merge·one·part·party·plugin·port·redirects·research·scopes·sequence·skills·tag·torus·whole
 analysis —
 law Reference the imports to skills ⇒ DRY, clean, auto-configurable.
 
 ---
 
-<sub>content-uuid `e1d46761-3fc7-8832-b194-7ee5dfa8829b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a1c41c8-5f1b-8c43-bc9e-6e35fd25c56e` · `pnpm readme` · `pnpm computed:check`</sub>

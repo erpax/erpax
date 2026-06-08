@@ -3,15 +3,15 @@
 
 # interval
 
-path `interval` · uuid `f9cab71d-24da-8aa3-98d8-1b2af0acb22f` · diamond `98d97132-b548-8923-9580-a8d52e22c64f`
+path `interval` · uuid `f9cab71d-24da-8aa3-98d8-1b2af0acb22f` · diamond `1af06903-085c-80ec-acb7-50334d5b57c6`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·dataset·law·merge·sti·time · exports interval · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·dataset·law·merge·sti·time · ← collapse·dataset·law·merge·sti·time
 analysis —
 law interval is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c831f5e6-2cfd-890f-a2e1-035fe40390a3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a40a7a3-fb85-8c76-b30a-4cffad72410b` · `pnpm readme` · `pnpm computed:check`</sub>

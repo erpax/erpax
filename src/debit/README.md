@@ -23,7 +23,21 @@
 
 - partition `debit` · sub-root `ed56e325-5232-89e0-ae73-479ae5c9c636`
 - bond degree `18` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `18` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c7f87328-5991-8aff-aed2-0b3e9ad6b547` · framed by typography partition `debit` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b66184be-aa2d-8fe4-ade1-1ed108522751` · framed by typography partition `debit` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

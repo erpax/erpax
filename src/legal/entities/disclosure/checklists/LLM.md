@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·id·lease·progression·spouse·tour · ← accounting·id·lease·progression·spouse·tour
+neighbors → checklist·disclosure·entities·materiality·provision·relatedparty · ← checklist·disclosure·entities·materiality·provision·relatedparty
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3d90cd6e-6107-8fae-8c77-da20bf0bae64` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99e03057-a8b8-854d-afa5-8a8f8b501462` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # pitch
 
-path `pitch` · uuid `1e02bf68-ff7d-81a3-b353-2184ece9d749` · diamond `618a09b8-253c-847a-b4e1-fe8d01737371`
+path `pitch` · uuid `1e02bf68-ff7d-81a3-b353-2184ece9d749` · diamond `d91f3867-6055-8751-b2f9-bf2f8919a136`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports camping·collapse·law·merge·sti · exports pitch · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → camping·collapse·law·merge·sti · ← camping·collapse·law·merge·sti
 analysis —
 law the staked plot-of-ground is one collided word, so CampingPitch and any compound bearing this stem fold to the same identity rather than minting a duplicate.
 
 ---
 
-<sub>content-uuid `f7263673-cf2d-8f24-b0c5-e600f1685a96` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22e1c148-544f-89e2-b54b-b40fcd1c87fe` · `pnpm readme` · `pnpm computed:check`</sub>

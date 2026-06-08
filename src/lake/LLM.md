@@ -3,15 +3,15 @@
 
 # lake
 
-path `lake` · uuid `e75764f6-2e7a-83fb-ae09-6239844aae9e` · diamond `9a40aa78-e003-8cfb-90a8-ec7d838a8fc4`
+path `lake` · uuid `e75764f6-2e7a-83fb-ae09-6239844aae9e` · diamond `da186192-32c9-8107-ab38-306d5e0a3127`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports body·collapse·law·merge·sti·water · exports lake · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → body·collapse·law·merge·sti·water · ← body·collapse·law·merge·sti·water
 analysis —
 law lake is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8fb567fe-89ea-8b99-8e1e-d785114920e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `910af45f-b52c-88a6-b82a-0c57c652c171` · `pnpm readme` · `pnpm computed:check`</sub>

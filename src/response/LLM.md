@@ -3,15 +3,15 @@
 
 # response
 
-path `response` · uuid `922bca2d-c335-846a-96bc-71ce3c46ec92` · diamond `3ed8949f-d125-8e2f-98ec-cd4d8a356fa3`
+path `response` · uuid `922bca2d-c335-846a-96bc-71ce3c46ec92` · diamond `40557098-e0e3-8d7a-aa85-901937abc753`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·rsvp·sti·type · exports response · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → command·landmarks·retail · ← command·landmarks·retail
+neighbors → collapse·law·merge·rsvp·sti·type · ← collapse·law·merge·rsvp·sti·type
 analysis —
 law response is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b3df98d9-7a6f-873e-bf9c-758321a1456a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c01b7da-847b-83c6-850c-b781d0158447` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # irrigation
 
-path `irrigation` · uuid `d7857ec9-719b-8e71-beb9-6e292cf813d6` · diamond `e33cb173-c4af-83fe-abcc-c777b85376f0`
+path `irrigation` · uuid `d7857ec9-719b-8e71-beb9-6e292cf813d6` · diamond `79e27f7b-f572-8f86-9637-7ab60e52ea96`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·capacity·crop·evapotranspiration·fertility·law·moisture·mulch·rate·schedule·soil · exports irrigation · escapes —
-links `25/25` · folded `1` · bonds in `1` out `1`
+links `25/25` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → agriculture·balance·capacity·crop·evapotranspiration·fertility·law·moisture·mulch·permaculture·rate·salinity·schedule·soil·transplant · ← agriculture·balance·capacity·crop·evapotranspiration·fertility·law·moisture·mulch·permaculture·rate·salinity·schedule·soil·transplant
 analysis —
 law irrigation credits the soil-water reservoir that [[evapotranspiration]] debits — a water-budget [[balance]] scheduled to replace the deficit before the [[crop]] hits stress.
 
 ---
 
-<sub>content-uuid `eeb89201-8d95-823d-a1ca-b6d354730937` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7536cf04-09e4-8089-b003-84d61b1ca8bf` · `pnpm readme` · `pnpm computed:check`</sub>

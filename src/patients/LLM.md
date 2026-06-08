@@ -3,15 +3,15 @@
 
 # patients
 
-path `patients` · uuid `4bba9b38-808a-8f7f-b07f-673e3c0bfb6b` · diamond `5a7f0c16-0bf2-8d44-91ad-7a8f30353436`
+path `patients` · uuid `4bba9b38-808a-8f7f-b07f-673e3c0bfb6b` · diamond `1a5e9713-5042-8ebb-a85c-f8f9706c133d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accepting·collapse·law·merge·new·sti · exports patients · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·comment·deduplication·id·landmarks·progression·spouse · ← access·comment·deduplication·id·landmarks·progression·spouse
+neighbors → accepting·collapse·law·merge·new·sti · ← accepting·collapse·law·merge·new·sti
 analysis —
 law the recipients of care are one collided word, so isAcceptingNewPatients and every other compound bearing this stem fold to the same identity rather than minting a duplicate.
 
 ---
 
-<sub>content-uuid `e56586bd-bef9-8a98-986a-fbd85724a437` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `59032f53-9b49-8a2d-84d0-48e0a7662d66` · `pnpm readme` · `pnpm computed:check`</sub>

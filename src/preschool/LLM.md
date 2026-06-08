@@ -3,15 +3,15 @@
 
 # preschool
 
-path `preschool` · uuid `58c609e7-b712-86a3-8638-3632ff947a8c` · diamond `06a323ce-b489-8863-986e-0670051ce471`
+path `preschool` · uuid `58c609e7-b712-86a3-8638-3632ff947a8c` · diamond `63d27ef8-241a-80fb-98b4-d3ff5af8199f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports preschool · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 15·cohort·landmarks·memories·owned·prepend·stat · ← 15·cohort·landmarks·memories·owned·prepend·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law preschool is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5f8977c5-1f13-8898-aa97-fdaffff0e60f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c931f650-fd8c-80ac-8309-1f34f6c7fd11` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `brokerage` · sub-root `c01008ae-d2bb-8b51-ab17-e5c1a61f6db8`
 - bond degree `15` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `33f9f006-282e-8202-877c-dbc8a46107e5` · framed by typography partition `brokerage` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b942444b-3609-8596-9013-3bbd84667a3a` · framed by typography partition `brokerage` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

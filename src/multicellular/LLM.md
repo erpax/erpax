@@ -3,15 +3,15 @@
 
 # multicellular
 
-path `multicellular` · uuid `8ee66291-05ec-866c-86c1-4045cd6fab45` · diamond `aada3015-3734-8d18-b96f-44910f5e8c3e`
+path `multicellular` · uuid `8ee66291-05ec-866c-86c1-4045cd6fab45` · diamond `d8c4183f-4b49-8596-9d4e-1eef9b619c26`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports multicellular · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·postings·stat · ← cohort·landmarks·memories·postings·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law multicellular is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `860b0b7f-b162-8e84-93df-9641b463b0d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e58d0aed-35d8-8cfb-af65-d108259bec5e` · `pnpm readme` · `pnpm computed:check`</sub>

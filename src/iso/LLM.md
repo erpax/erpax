@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports iso · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·stat · ← coach·cohort·landmarks·memories·stat
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law iso is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8cc9eccc-33a4-874f-8cd7-b9aef14a9672` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca7d87ec-faa9-85a0-9864-99682817cf45` · `pnpm readme` · `pnpm computed:check`</sub>

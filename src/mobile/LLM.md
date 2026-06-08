@@ -3,15 +3,15 @@
 
 # mobile
 
-path `mobile` · uuid `dca9d830-7326-88ab-ac40-6594ea3f02d6` · diamond `a9ee8bd3-95de-8d4b-9e7f-c70a235e9bf8`
+path `mobile` · uuid `dca9d830-7326-88ab-ac40-6594ea3f02d6` · diamond `a51b9070-e719-83fb-af33-ab961cb1cfe3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports application·collapse·law·merge·phone·sti·store·url · exports mobile · escapes —
-links `8/8` · folded `1` · bonds in `13` out `13`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·candidate·esr·feed·landmarks·lines·moved·muscle·rv·sandbox·sla·thesis · ← agriculture·balance·candidate·esr·feed·landmarks·lines·moved·muscle·rv·sandbox·sla·thesis
+neighbors → application·collapse·law·merge·phone·sti·store·url · ← application·collapse·law·merge·phone·sti·store·url
 analysis —
 law mobile is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `38720ca1-1953-8495-a381-439479f88711` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e22a7adc-a073-8090-8dff-74a0a541c764` · `pnpm readme` · `pnpm computed:check`</sub>

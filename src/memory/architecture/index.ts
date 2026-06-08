@@ -297,7 +297,7 @@ export function projectMemoryToArchitecture(
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const rawPath = process.argv[2] ?? 'merge'
+  const rawPath = process.argv[2] ?? 'memory/architecture'
   const live = operationalMemoryFacet(rawPath)
   const projection = projectMemoryToArchitecture({ atomPath: rawPath })
   const identity = operationalMemoryIsArchitecture({ atomPath: rawPath })

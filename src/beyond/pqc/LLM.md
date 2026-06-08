@@ -4,7 +4,7 @@
 # pqc
 
 path `beyond/pqc` · uuid `52eb6f00-a748-87e6-b66d-5bb81ca292d8` · diamond `a9bd0b85-416f-804e-a899-2269e4d8f955`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types · exports function · escapes —
 links `11/11` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the [[signature]] that seals the [[audit]] chain must be forgeable by no adv
 
 ---
 
-<sub>content-uuid `5032682d-5894-849d-8549-347c05d0f513` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7ffd815-c611-8197-969a-974ba579cf9a` · `pnpm readme` · `pnpm computed:check`</sub>

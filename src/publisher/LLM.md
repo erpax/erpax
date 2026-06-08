@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports imprint·law·sd · exports publisher · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·compensation·publishing · ← balance·compensation·publishing
+neighbors → imprint·law·sd · ← imprint·law·sd
 analysis —
 law publisher is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c8f0e23a-3f4b-8257-a52e-d8c7e7e1f2f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7d7bceba-4ad7-85bb-8f6c-1b3b728f02a4` · `pnpm readme` · `pnpm computed:check`</sub>

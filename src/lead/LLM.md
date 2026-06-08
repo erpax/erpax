@@ -3,15 +3,15 @@
 
 # lead
 
-path `lead` · uuid `870651e4-f6f1-8ac6-8f68-3236f7e9d5fb` · diamond `35f0c900-21b6-89f5-837d-d690881b374a`
+path `lead` · uuid `870651e4-f6f1-8ac6-8f68-3236f7e9d5fb` · diamond `eeaa1ed4-f525-871a-85d1-e43c287d4452`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·delivery·law·merge·sti·time · exports lead · escapes —
-links `6/6` · folded `1` · bonds in `8` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cache·grantee·jewelry·leadscore·partition·promotion·tour · ← cache·grantee·jewelry·leadscore·partition·promotion·promotion·tour
+neighbors → collapse·delivery·law·merge·sti·time · ← collapse·delivery·law·merge·sti·time
 analysis —
 law lead is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `996ea729-c4ec-86e0-9542-ba2f8c149c7b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c3c6e4b9-fcea-8bd9-86eb-374a3edd261d` · `pnpm readme` · `pnpm computed:check`</sub>

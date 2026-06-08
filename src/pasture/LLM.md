@@ -3,15 +3,15 @@
 
 # pasture
 
-path `pasture` · uuid `24448bfe-ce53-8bad-bf1e-b5966f366c54` · diamond `0cd107a8-a778-87b1-8606-4fbc58943880`
+path `pasture` · uuid `24448bfe-ce53-8bad-bf1e-b5966f366c54` · diamond `63937d9d-46be-8502-9df4-b522e199948c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports allocation·bottleneck·capacity·crop·fertility·grazing·herd·law·leases·livestock·manure·rotation·season · exports pasture · escapes —
-links `30/30` · folded `1` · bonds in `11` out `11`
+links `30/30` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·declarations·descent·hindu·landmarks·maybe·memories·note·outcome·stat·values · ← cohort·declarations·descent·hindu·landmarks·maybe·memories·note·outcome·stat·values
+neighbors → allocation·bottleneck·capacity·crop·fertility·grazing·herd·law·leases·livestock·manure·rotation·season · ← allocation·bottleneck·capacity·crop·fertility·grazing·herd·law·leases·livestock·manure·rotation·season
 analysis —
 law pasture is the grazing land-unit whose forage productivity is a carrying-[[capacity]] measure (animal-units), bounded by the land × [[season]] [[bottleneck]] — the livestock counterpart of a [[crop]] field.
 
 ---
 
-<sub>content-uuid `546c810c-d4ac-8e5b-ac16-46e7844b75e8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a1694b0-1e29-8c86-b116-bd597093208f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # list
 
-path `list` · uuid `76f41c53-81b9-856c-920c-7a8bdac59e1e` · diamond `fa6b4179-f0fc-8aff-821b-99a7fe633ba7`
+path `list` · uuid `76f41c53-81b9-856c-920c-7a8bdac59e1e` · diamond `812c201c-8fea-8c50-8248-c307c0c74c46`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports breadcrumb·collapse·element·feature·item·law·merge·order·sti·type · exports list · escapes —
-links `10/10` · folded `1` · bonds in `163` out `156`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·accounting·addressed·akashic·all·analog·anchor·angel·app·atom·befriend·binding·biomechnical·block·boys·breakfast·broker·c19·certified·charity·chat·chat·clinician·clip·cohort·collections·comedy·communication·community·complication·conference·connection·consent·consultant·consulting·convenience·corrects·corrects·cross·day·death·debit·decooperative·dermatology·destination·details·dietary·district·documentation·drive·dropoff·duplicate·embassy·emr·encodes·entity·fax·fields·findings·flow·force·friday·game·generator·handling·hobby·homeopathic·hours·iata·id·id·idempotency·idempotency·import·landmarks·landmarks·landmarks·leisure·license·ligament·link·liquor·list·list·literature·llm·log·love·marine·markup·marry·medicine·memories·memories·memories·memory·memory·mention·musical·names·notice·nutrition·offered·office·parent·parlor·parts·physical·pi·policy·process·progression·project·public·qualification·qualifications·quality·quantitative·quantity·quantum·query·range·read·recycling·released·request·restriction·resume·roadmap·rule·safety·sanitization·saturday·sections·seed·sell·sequence·shelter·sign·solve·speed·spouse·srp·statistics·steering·suggestions·suite·symbol·tinid·tracks·tvclip·ui·violence·voting·wp · ← 3986·access·access·access·accounting·accounting·addressed·akashic·all·analog·anchor·angel·app·atom·befriend·binding·biomechnical·block·boys·breakfast·broker·c19·certified·charity·chat·chat·chat·clinician·clip·cohort·collections·comedy·communication·communication·communication·community·complication·conference·connection·consent·consultant·consulting·convenience·corrects·cross·day·death·debit·decooperative·dermatology·destination·details·dietary·dietary·district·documentation·documentation·drive·dropoff·duplicate·embassy·emr·encodes·entity·fax·fields·findings·flow·force·friday·game·generator·handling·hobby·homeopathic·hours·iata·id·idempotency·import·landmarks·leisure·license·ligament·link·liquor·liquor·list·list·literature·llm·log·love·marine·markup·marry·medicine·memories·memories·memory·mention·musical·names·notice·nutrition·offered·office·parent·parlor·parlor·parts·physical·pi·pi·policy·process·progression·project·project·public·public·qualification·qualifications·quality·quantitative·quantity·quantum·query·range·read·recycling·released·request·request·restriction·resume·roadmap·rule·safety·sanitization·saturday·sections·seed·sell·sequence·shelter·sign·solve·speed·spouse·srp·statistics·steering·suggestions·suite·symbol·tinid·tracks·tvclip·ui·violence·voting·wp
+neighbors → breadcrumb·collapse·element·feature·item·law·merge·order·sti·type · ← breadcrumb·collapse·element·feature·item·law·merge·order·sti·type
 analysis —
 law list is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ae07ec77-0809-8c3e-aba5-27b70bda9675` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1de0e4c9-68d7-89cb-a036-abf4949496c9` · `pnpm readme` · `pnpm computed:check`</sub>

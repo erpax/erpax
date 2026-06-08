@@ -25,7 +25,22 @@
 
 - partition `domain` · sub-root `f65c6e03-ce46-88d3-aa91-bc8a185f754d`
 - bond degree `63` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC 8555 §8.4 (ACME DNS-01 challenge) + CA/Browser-Forum domain-control-validation` · banner
+- `the record value is the content-uuid (@/verification); computed, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `63` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `1f712cb1-2ea8-8c3e-aa82-593d4085b4d4` · framed by typography partition `domain` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4bb463ae-33d5-8c5e-841e-75addfbb9a39` · framed by typography partition `domain` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `recycling` · sub-root `9b02a502-4c03-8f87-8837-dbed9bc68241`
-- bond degree `57` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `9b02a502-4c03-8f87-8837-dbed9bc68241`
-- bonds in `25` · out `26`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9e8ad498-d8e1-8a8a-9207-64e461d6a906` · framed by typography partition `recycling` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66aab84f-48dc-8cb9-98ba-ba5dce43ecca` · framed by typography partition `recycling` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

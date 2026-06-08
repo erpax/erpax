@@ -3,15 +3,15 @@
 
 # right
 
-path `right` · uuid `6990bcf0-8b07-8a49-a47b-c1144766b615` · diamond `c87b42b8-92a5-8d78-9d1d-db8eaef44e37`
+path `right` · uuid `6990bcf0-8b07-8a49-a47b-c1144766b615` · diamond `e448910c-47f8-87f6-add1-c48124654a67`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports right · escapes —
-links `4/4` · folded `1` · bonds in `25` out `25`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·9110·analog·aura·balance·base·breakfast·certified·crest·dropoff·handling·homeopathic·honorific·hook·hooks·hopats·horo·idempotency·name·polygon·registered·risk·risks·rodin·saturday · ← 3986·9110·analog·aura·balance·base·breakfast·certified·crest·dropoff·handling·homeopathic·honorific·hook·hooks·hopats·horo·idempotency·name·polygon·registered·risk·risks·rodin·saturday
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law right is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ac0fe943-11d4-8fb2-aa02-e53ff246aabf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99599817-e08e-8fac-9ac7-db9eedd608f4` · `pnpm readme` · `pnpm computed:check`</sub>

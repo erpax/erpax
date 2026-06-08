@@ -3,15 +3,15 @@
 
 # nonprofit501d
 
-path `nonprofit501d` · uuid `ff153def-4a78-8970-bae0-72f79c83584d` · diamond `4668d7ac-c18d-8bbe-a7a4-5c08ed9f4eed`
+path `nonprofit501d` · uuid `ff153def-4a78-8970-bae0-72f79c83584d` · diamond `b6e70826-6431-89ed-ba2d-65c0d4095fab`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nonprofit501d · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·quota·stat · ← cohort·landmarks·memories·quota·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nonprofit501d is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `54d19cb2-a8d5-807b-a918-36ab5298e030` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e23f66e-f8aa-8c5f-ad7a-2242f55176e1` · `pnpm readme` · `pnpm computed:check`</sub>

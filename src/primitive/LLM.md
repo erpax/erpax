@@ -3,15 +3,15 @@
 
 # primitive
 
-path `primitive` · uuid `—` · diamond `94a8a3ff-4b09-886a-91cb-b9df7e18e90d`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `primitive` · uuid `1b221dc0-3fa3-8195-bde3-4c8bbfdb9aad` · diamond `409aea40-49ee-818f-a331-df5e7178ad5e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports atom·aura·block·component·diamond·dimension·fields·fractal·law·pixel·proof·seal·uuid · exports primitive · escapes —
-links `31/31` · folded `0` · bonds in `0` out `0`
+links `31/31` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+neighbors → atom·aura·block·component·css·diamond·dimension·fields·fractal·law·pixel·proof·seal·uuid · ← atom·aura·block·component·css·diamond·dimension·fields·fractal·law·pixel·proof·seal·uuid
+analysis aura·diamond
 law a primitive is the irreducible UI vertex — the frontend's [[atom]], its render its content-[[uuid]] [[pixel]] — complete and sealed in itself; [[component]]s compose primitives and [[block]]s compose components, the same [[fractal]] ladder the [[diamond]] holds at every scale.
 
 ---
 
-<sub>content-uuid `768556a2-bd00-8d28-9db5-3d654d719144` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce879f74-5251-8188-bd33-c615400a56b1` · `pnpm readme` · `pnpm computed:check`</sub>

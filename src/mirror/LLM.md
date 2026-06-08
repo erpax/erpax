@@ -3,15 +3,15 @@
 
 # mirror
 
-path `mirror` · uuid `ffd55b5b-dce6-804f-8b89-b9b59ec55b56` · diamond `982b49f4-fe93-843d-987b-f84be133159c`
+path `mirror` · uuid `ffd55b5b-dce6-804f-8b89-b9b59ec55b56` · diamond `bc0db21a-4abc-867f-95ef-b553ff9fe27c`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/horo·@/name · exports const · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·propagation·stat · ← cohort·landmarks·memories·propagation·stat
+links `9/9` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → digit·duality·hermeticism·horo·law·name·uuid · ← digit·duality·hermeticism·horo·law·name·uuid
 analysis —
 law a path read left→right and right→left is two different paths (different words, different folders) — like a reversed digit sequence. But its value, the digital root of the word-digit sum, is direction-invariant because the sum commutes, so the folder carries the same max computed value on both sides, in words and in digits. The horo is the path read both ways; the value is one, the path is two.
 
 ---
 
-<sub>content-uuid `1c4f9fca-4edf-837d-ba89-fb410670d53a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a613305-0b7f-8e0c-915d-ea92da43ff2e` · `pnpm readme` · `pnpm computed:check`</sub>

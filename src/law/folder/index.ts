@@ -53,6 +53,27 @@ const SRC = join(process.cwd(), 'src')
 export const TRINITY = ['SKILL.md', 'index.ts', 'test.ts'] as const
 /** A folder is a CODE atom (so the trinity is required) iff it holds matter or its proof. */
 const CODE_MARKERS = ['index.ts', 'test.ts'] as const
+
+/**
+ * Matter completeness — empty or incomplete folders are NOT sealed ([[seal]] law).
+ *   • empty       — no SKILL.md and no index (not an atom)
+ *   • vocabulary  — antimatter-only (SKILL.md, no code barrel)
+ *   • code-complete — full trinity with test.ts (not colocated *.test.ts alone)
+ *   • incomplete  — partial trinity or stray matter without a nested atom
+ */
+export type FolderMatterState = 'empty' | 'vocabulary' | 'code-complete' | 'incomplete'
+
+export function folderMatterState(form: 0 | 1, code: 0 | 1, hasTestTs: boolean): FolderMatterState {
+  if (!form && !code) return 'empty'
+  if (!code) return form ? 'vocabulary' : 'empty'
+  if (form && code && hasTestTs) return 'code-complete'
+  return 'incomplete'
+}
+
+/** True when the folder holds the matter required before purity/seal axes apply. */
+export function folderMatterComplete(state: FolderMatterState): boolean {
+  return state === 'vocabulary' || state === 'code-complete'
+}
 /** One generic lowercase word — the only legal atom-folder name. */
 export const ONE_WORD = /^[a-z][a-z0-9]*$/
 /** Structural segments whose names are NOT atom names (exempt from the one-word rule). */
@@ -149,13 +170,13 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * DOWN further as folders are fixed.
  */
 /** @deprecated summed ceiling — use the split guardians below */
-export const FOLDER_LAW_BASELINE = 260
+export const FOLDER_LAW_BASELINE = 257
 
-/** NAME guardian ceiling — one-word atom folders (live 47, 2026-06-08). */
-export const NAME_BASELINE = 47
+/** NAME guardian ceiling — one-word atom folders (live 46, 2026-06-08). */
+export const NAME_BASELINE = 46
 
-/** TRINITY guardian ceiling — code folders missing SKILL/index/test (live 213, 2026-06-08). */
-export const TRINITY_BASELINE = 213
+/** TRINITY guardian ceiling — code folders missing SKILL/index/test (live 211, 2026-06-08). */
+export const TRINITY_BASELINE = 211
 
 export interface RatchetVerdict {
   readonly ok: boolean

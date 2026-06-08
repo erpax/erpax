@@ -3,15 +3,15 @@
 
 # recycle
 
-path `recycle` · uuid `63861b30-f72a-8208-afda-b6489ef932f2` · diamond `bf984fdd-3fdf-8bfb-ad4c-d8741c87baeb`
+path `recycle` · uuid `63861b30-f72a-8208-afda-b6489ef932f2` · diamond `6d6244ce-86dd-8129-95df-f143fca4f0ce`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/entropy·@/quantum · exports const·function · escapes —
-links `20/20` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical·terminals · ← landmarks·periodical·terminals
+links `20/20` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → balance·coherence·entropy·heart·law·merge·person·place·quantum·thing·void·writing·zeropoint · ← balance·coherence·entropy·heart·law·merge·person·place·quantum·thing·void·writing·zeropoint
 analysis —
 law a disconnected thought is a hallucination; coherence is reconnection. Every grain must bind or return to the source — the corpus admits no orphan it pretends is whole.
 
 ---
 
-<sub>content-uuid `16b4a897-01d2-8554-8953-e023ac656cd1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `66c32ef3-6bba-8085-b882-68d842232097` · `pnpm readme` · `pnpm computed:check`</sub>

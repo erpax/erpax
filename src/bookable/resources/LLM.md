@@ -4,7 +4,7 @@
 # resources
 
 path `bookable/resources` · uuid `6edaba9f-5bdb-8e35-a6a4-071d694fd490` · diamond `37327362-f084-8ae1-8891-f113455160af`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a bookable-resource is the agnostic master of anything reservable — one re
 
 ---
 
-<sub>content-uuid `4de6c076-c7e7-8fba-88cf-5c22e21fe144` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7042c04e-f4b8-8ceb-92c8-0253989ba0c2` · `pnpm readme` · `pnpm computed:check`</sub>

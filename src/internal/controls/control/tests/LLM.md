@@ -3,15 +3,15 @@
 
 # tests
 
-path `internal/controls/control/tests` · uuid `2f0526b4-9b02-8436-9679-dbde1ac51417` · diamond `4852f219-10ea-8918-964c-6c1abb047077`
+path `internal/controls/control/tests` · uuid `2f0526b4-9b02-8436-9679-dbde1ac51417` · diamond `439fee84-d0af-854a-8e42-2a89fbec2de7`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
-links `1/1` · folded `1` · bonds in `8` out `7`
+links `1/1` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cable·cohort·deduplication·fire·landmarks·memories·stat · ← audit·cable·cohort·deduplication·fire·landmarks·memories·stat
+neighbors → controls·law·proof · ← controls·law·proof
 analysis —
 law a control test records its sampling method, assertion, sample size, tolerance and deviation count/rate, and concludes on the tested control's effectiveness — the evidence linking a SOX §404 control to its verdict.
 
 ---
 
-<sub>content-uuid `6d0ada41-c304-8901-8e4d-2b4be55c3003` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b53630b1-2dc4-8a69-8040-8680a1052ba9` · `pnpm readme` · `pnpm computed:check`</sub>

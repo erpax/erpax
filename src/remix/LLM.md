@@ -3,15 +3,15 @@
 
 # remix
 
-path `remix` · uuid `337d104b-16a4-81f2-8b22-b3eb48e663f1` · diamond `9081aa1c-7322-80e7-9144-4c1178cdeadb`
+path `remix` · uuid `337d104b-16a4-81f2-8b22-b3eb48e663f1` · diamond `468f2636-9ed6-8c6f-9e64-317ff576d81e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports remix · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calendars·cohort·landmarks·memories·stat · ← calendars·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law remix is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `063b49a9-a30d-82e2-98f3-8c0e6a78d6e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f2365cb-345a-851b-9eb5-cf98571a1c6b` · `pnpm readme` · `pnpm computed:check`</sub>

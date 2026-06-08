@@ -3,15 +3,15 @@
 
 # referee
 
-path `referee` · uuid `19bdc4f4-d8f9-8209-a9c1-0f7361ac6a5f` · diamond `be7062c7-3ebf-8e13-94d9-896e30d062cc`
+path `referee` · uuid `19bdc4f4-d8f9-8209-a9c1-0f7361ac6a5f` · diamond `8db77fd4-beaf-8534-a7de-e308c714da98`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports referee · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat·tuesday · ← action·cohort·landmarks·memories·stat·tuesday
+neighbors → law·person·thing · ← law·person·thing
 analysis —
 law referee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f9a902d8-5cd5-8eb9-a4d5-c90a8d664a95` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d5d0b33-b7b8-89f8-8940-cd19e5af36c0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # masthead
 
-path `masthead` · uuid `31e9c6ac-0c91-80db-83e8-a522f779ad95` · diamond `8930e4dd-8970-849d-b481-b50cd0e20bc9`
+path `masthead` · uuid `31e9c6ac-0c91-80db-83e8-a522f779ad95` · diamond `54682319-f3e6-81c5-b93b-9c4d14b9f1c1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports masthead · escapes —
-links `2/2` · folded `1` · bonds in `20` out `20`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·animal·apiculture·aquaculture·crisis·definition·donate·esr·government·hardcover·max·percentage·pickup·plus·sbbi·screen·torus·training·travel·user · ← agriculture·animal·apiculture·aquaculture·crisis·definition·donate·esr·government·hardcover·max·percentage·pickup·plus·sbbi·screen·torus·training·travel·user
+neighbors → law·thing · ← law·thing
 analysis —
 law masthead is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b401abbb-1513-8dc4-b470-3ec238029ba2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `767e6631-9124-8129-bb92-8a0549082066` · `pnpm readme` · `pnpm computed:check`</sub>

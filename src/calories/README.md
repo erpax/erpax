@@ -23,7 +23,7 @@
 
 - partition `calories` · sub-root `5fe6ffe4-59ea-8d1b-846b-89a040ef0419`
 - bond degree `6` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5b6ad3c6-f864-8692-8e2e-c8434eb1fc48` · framed by typography partition `calories` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bc246116-a0a8-8be3-8ffb-577053b77203` · framed by typography partition `calories` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # materiality
 
-path `materiality` · uuid `0ed0ae75-9910-8231-8125-fdd9db38a5d6` · diamond `624e1c16-d1ce-83ee-8b27-c8fd7c04e55f`
+path `materiality` · uuid `0ed0ae75-9910-8231-8125-fdd9db38a5d6` · diamond `fd4c503d-f5a4-8f7b-9889-997dac6dab18`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports audit·decide·financial·internal·law·legal · exports materiality · escapes —
-links `7/7` · folded `1` · bonds in `12` out `12`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attendee·candidate·cohort·doors·engagement·instruction·landmarks·memories·pharmacology·sandbox·stat·vegetarian · ← attendee·candidate·cohort·doors·engagement·instruction·landmarks·memories·pharmacology·sandbox·stat·vegetarian
+neighbors → checklists·decide·disclosure·events·findings·law·statements · ← checklists·decide·disclosure·events·findings·law·statements
 analysis —
 law materiality is the qualitative-and-quantitative threshold that [[decide]]s significant from immaterial — the gate governing what must be disclosed, adjusted, or pulled into audit scope.
 
 ---
 
-<sub>content-uuid `ccd555fc-794b-835b-914e-3be6b7304031` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4009f2cc-8058-8280-a1fc-52182d9ec5b6` · `pnpm readme` · `pnpm computed:check`</sub>

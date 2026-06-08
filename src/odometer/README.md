@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `odometer` · sub-root `973de0a1-0692-86ba-ac94-642c2e4540d1`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `973de0a1-0692-86ba-ac94-642c2e4540d1`
-- bonds in `4` · out `4`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `57639a4d-745f-8e1e-b581-f182bd7fb7b9` · framed by typography partition `odometer` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13c9585d-b2ab-87ea-ae9a-fbca7afcc40f` · framed by typography partition `odometer` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `dimension` · sub-root `bd1c5d7a-14ac-832a-8783-332309d3a359`
 - bond degree `188` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)` · banner
+- `ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries` · banner
+- `W3C Web Components composition pattern` · banner
+
+## analytics
+
+- bond degree `188` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `fbb800e4-21cd-8bb5-9ce8-e5cb7e016e66` · framed by typography partition `dimension` bonds `188` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f1e166fc-0c31-8bd1-aacf-e88201379477` · framed by typography partition `dimension` bonds `188` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # rating
 
-path `rating` · uuid `aeef50de-d08f-83c0-8936-77b791952944` · diamond `2bdf2fa2-958a-833c-a69a-f37219c16d8f`
+path `rating` · uuid `aeef50de-d08f-83c0-8936-77b791952944` · diamond `20ea29ea-d3d1-825e-af18-086793572962`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports aggregate·best·certification·content·count·employer·endorsement·enumeration·explanation·law·manipulation·media·review·star·value·worst · exports rating · escapes —
-links `16/16` · folded `1` · bonds in `3` out `3`
+links `16/16` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audit·fertility·standards · ← audit·fertility·standards
+neighbors → aggregate·best·certification·content·count·employer·endorsement·enumeration·explanation·law·manipulation·media·review·star·value·worst · ← aggregate·best·certification·content·count·employer·endorsement·enumeration·explanation·law·manipulation·media·review·star·value·worst
 analysis —
 law rating is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `40fce822-aaa3-8e87-89c2-5710f476a24a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8bd812d8-b162-8df5-9de2-860a90dc1226` · `pnpm readme` · `pnpm computed:check`</sub>

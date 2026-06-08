@@ -41,6 +41,8 @@ import {
   parseWranglerBindings,
   deriveWranglerBindingDiamonds,
   bindingDeploymentFaces,
+  bindingAtomPath,
+  bindingBoundaryUuid,
   cloudflareBindingFace,
   type WranglerBindingEntry,
 } from '@/cloudflare'
@@ -168,16 +170,28 @@ export const entanglementHolds = (): boolean => {
   return reciprocalWhole && nc.holds && symmetricFix
 }
 
-/** Existence proof: cloudflare + quantum subgraphs seal on the live tree. */
+/** Existence proof: wrangler binding diamonds (serverless facet) + quantum atom seal on live tree. */
 export function existenceSealed(cwd = process.cwd()): boolean {
-  const cloud = computeDiamond({ kind: 'path', path: 'cloudflare', cwd })
   const quantum = computeDiamond({ kind: 'path', path: 'quantum', cwd })
-  return (
-    verifyDiamond(cloud.model).sealed &&
-    verifyDiamond(quantum.model).sealed &&
-    cloud.model.sealed &&
-    quantum.model.sealed
-  )
+  return verifyDiamond(quantum.model).sealed && bindingsSealed(cwd)
+}
+
+/** Full DiamondComputation for one wrangler binding (serverless facet stage base). */
+function bindingComputation(entry: WranglerBindingEntry): DiamondComputation {
+  return computeDiamond({
+    kind: 'cloudflare',
+    binding: {
+      atomPath: bindingAtomPath(entry.type, entry.bindingName),
+      boundaryUuid: bindingBoundaryUuid({
+        type: entry.type,
+        bindingName: entry.bindingName,
+        config: entry.config,
+      }),
+      bindingName: entry.bindingName,
+      bindingType: entry.type,
+      links: entry.type === 'ai' ? ['worker', 'cloudflare', 'ai'] : ['cloudflare', 'worker'],
+    },
+  })
 }
 
 /** Compute all six properties on the live system. */
@@ -210,8 +224,11 @@ export function proveServerlessQuantum(cwd = process.cwd()): ServerlessQuantumPr
 
   const stages: ServerlessQuantumStage[] = []
 
-  // 1 — serverless bindings facet
-  const cloudBase = computeDiamond({ kind: 'path', path: 'cloudflare', cwd })
+  const aiEntry = entries.find((e) => e.type === 'ai')
+  if (!aiEntry) throw new Error('proveServerlessQuantum: wrangler.jsonc missing ai binding')
+
+  // 1 — serverless bindings facet (AI binding diamond = representative sealed facet)
+  const bindBase = bindingComputation(aiEntry)
   const bindExtra: DiamondComputationStage[] = []
   pushStage(bindExtra, 'bindings', { count: entries.length }, {
     types: [...new Set(entries.map((e) => e.type))].sort(),
@@ -219,18 +236,17 @@ export function proveServerlessQuantum(cwd = process.cwd()): ServerlessQuantumPr
     bindingUuids,
   })
   stages.push(
-    finalizeStage('serverless-bindings', cloudBase, bindExtra, props.bindingsSealed),
+    finalizeStage('serverless-bindings', bindBase, bindExtra, props.bindingsSealed),
   )
 
-  // 2 — worker deployment face (cloudflare ⊕ worker atom)
+  // 2 — worker deployment face (AI binding ⊕ worker atom)
   const workerBase = computeDiamond({ kind: 'path', path: 'worker', cwd })
-  const aiEntry = entries.find((e) => e.type === 'ai')
-  const aiModel = aiEntry ? deriveWranglerBindingDiamonds([aiEntry])[0] : null
+  const aiModel = deriveWranglerBindingDiamonds([aiEntry])[0]!
   const workerExtra: DiamondComputationStage[] = []
-  pushStage(workerExtra, 'deployment-faces', { atomPath: 'cloudflare' }, {
-    cloudflare: deploymentFaces(cloudBase.model as DiamondModel),
-    ai: aiModel ? bindingDeploymentFaces(aiEntry!.type, aiModel) : null,
-    aiFace: aiEntry ? cloudflareBindingFace(aiEntry.type) : null,
+  pushStage(workerExtra, 'deployment-faces', { atomPath: bindBase.model.atomPath }, {
+    ai: bindingDeploymentFaces(aiEntry.type, aiModel),
+    aiFace: cloudflareBindingFace(aiEntry.type),
+    worker: deploymentFaces(workerBase.model as DiamondModel),
   })
   stages.push(finalizeStage('worker-face', workerBase, workerExtra, props.workerHosted))
 
@@ -267,13 +283,13 @@ export function proveServerlessQuantum(cwd = process.cwd()): ServerlessQuantumPr
   // 6 — existence proof (erpax IS the proof) — cloudflare ⊕ quantum seal on live tree
   const existExtra: DiamondComputationStage[] = []
   pushStage(existExtra, 'existence', { repo: 'erpax', proofAtom: 'quantum/serverless' }, {
-    cloudflareUuid: diamondUuid(cloudBase.model),
+    serverlessFacetUuid: uuid(jcsCanonicalize({ bindings: bindingUuids })),
     quantumUuid: diamondUuid(quantumBase.model),
     wranglerBindings: entries.length,
   })
   stages.push(finalizeStage('existence', quantumBase, existExtra, props.existenceSealed))
 
-  const serverlessFacetUuid = diamondUuid(cloudBase.model)
+  const serverlessFacetUuid = uuid(jcsCanonicalize({ bindings: bindingUuids }))
   const quantumFacetUuid = diamondUuid(quantumBase.model)
   const isomorphismUuid = uuid(
     jcsCanonicalize({

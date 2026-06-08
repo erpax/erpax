@@ -23,7 +23,26 @@
 
 - partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
 - bond degree `135` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931` · catalogue
+- `EU-2002/58` · catalogue
+- `IFRS-9` · catalogue
+- `ISO-20022` · catalogue
+- `RFC-8785` · catalogue
+- `SAF-T` · catalogue
+
+## analytics
+
+- bond degree `135` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -39,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `3618df75-118e-8227-864c-1426aa77e4f7` · framed by typography partition `currency` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `40a026b8-08ac-8497-a878-c31c635b4dfd` · framed by typography partition `currency` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>

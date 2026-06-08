@@ -3,15 +3,15 @@
 
 # interacting
 
-path `interacting` · uuid `6bc6d42e-b87b-8442-a0ca-4c70bc7b89bf` · diamond `43d704b7-dc81-8b65-86a0-629ff53a0a3e`
+path `interacting` · uuid `6bc6d42e-b87b-8442-a0ca-4c70bc7b89bf` · diamond `f4d7bf9b-ddbf-8c30-b756-20e55bd225a1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·drug·law·merge·sti · exports interacting · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·collide·landmarks·memories·sanitization·stat·utterance · ← cohort·collide·landmarks·memories·sanitization·stat·utterance
+neighbors → collapse·drug·law·merge·sti · ← collapse·drug·law·merge·sti
 analysis —
 law interacting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b11832ab-3eef-8de6-a5cd-3d3e90a1b0f1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28c80d90-279a-85f7-863f-e01c6a0a853b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # period
 
-path `period` · uuid `30e05202-9953-85fe-b814-e7b20a36244a` · diamond `b5c1b205-dce5-85ca-a4ec-252dd389b80e`
+path `period` · uuid `30e05202-9953-85fe-b814-e7b20a36244a` · diamond `0bbc1477-827a-8a55-8f80-492472767e23`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports accounting·date·fields·law·start·versions · exports period · escapes —
-links `9/9` · folded `1` · bonds in `18` out `25`
+links `9/9` · folded `1` · bonds in `17` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·accounting·accounts·accrual·adjustment·clip·default·fertility·first·home·homeopathic·landmarks·landmarks·landmarks·landmarks·milestones·progression·reviews·reviews·reviews·runs·spouse·transactions · ← access·accounting·accounts·accrual·adjustment·clip·default·fertility·first·home·homeopathic·landmarks·milestones·progression·reviews·runs·spouse·transactions
+neighbors → accounting·billing·breed·certification·checker·date·fields·integration·law·law·locks·observation·organic·season·service·start·versions·withdrawal · ← accounting·billing·breed·certification·checker·date·fields·integration·law·locks·observation·organic·season·service·start·versions·withdrawal
 analysis —
 law a period is a date-range from [[start]] to end (or a fiscal-period code) that fixes the time-based [[accounting]] cutoff — which period a value falls in — and drives [[versions]] over that span.
 
 ---
 
-<sub>content-uuid `efb9dc3d-2d30-8594-b6c2-748cc4867a91` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12aa617c-b762-850a-add4-c1aabba3d6ab` · `pnpm readme` · `pnpm computed:check`</sub>

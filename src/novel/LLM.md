@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports novel · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law novel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fd8eb6db-6278-810d-aba1-4ebb361b1514` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f3e9d0f-ee74-8580-802e-f03b20956764` · `pnpm readme` · `pnpm computed:check`</sub>

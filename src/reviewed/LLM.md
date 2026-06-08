@@ -3,15 +3,15 @@
 
 # reviewed
 
-path `reviewed` · uuid `f3123fa7-b7de-818b-bbdc-9d69737b022f` · diamond `9f5d5d64-ff2a-87cd-9228-7b09b1fc35c3`
+path `reviewed` · uuid `f3123fa7-b7de-818b-bbdc-9d69737b022f` · diamond `64c6e9f8-1c2f-8ae7-bcd9-6c7cb342be12`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports claim·item·last·law · exports reviewed · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → checks·destination·landmarks·obligations·projects·sandbox · ← checks·destination·landmarks·obligations·projects·sandbox
+neighbors → claim·item·last·law · ← claim·item·last·law
 analysis —
 law reviewed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a76700c1-889e-81ab-a81a-02f97fbcdce9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c18dbf6-d0d5-82b1-bdd0-ab6dbaa0b92a` · `pnpm readme` · `pnpm computed:check`</sub>

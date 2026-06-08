@@ -23,7 +23,7 @@
 
 - partition `calendar` · sub-root `8c6d5f75-c8c8-8356-ac83-d6a65b5b2c29`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `0aa9c487-7476-8ee2-9618-30db0c777ace` · framed by typography partition `calendar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `680c12ab-c0bf-8001-81b9-8a74dc6c8c3e` · framed by typography partition `calendar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

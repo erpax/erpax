@@ -3,15 +3,15 @@
 
 # idempotency
 
-path `idempotency` · uuid `878e73a6-735f-8f5f-b133-9858d8fa09f9` · diamond `806d5dce-324f-8084-9ad5-49a514757368`
+path `idempotency` · uuid `878e73a6-735f-8f5f-b133-9858d8fa09f9` · diamond `4e7614e4-4ac6-8c0d-8049-26d5d36bcdd9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports deduplication·ingest·jobs·reconcile·transaction · exports idempotency · escapes —
-links `5/5` · folded `1` · bonds in `51` out `46`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·9110·all·analog·angel·assets·aura·awareness·base·binding·biometric·breakfast·brewery·catalogue·coach·coding·connected·details·dropoff·earned·endorser·findings·flight·handling·homeopathic·hopats·id·landmarks·liquor·list·manufacturing·memories·memory·mixtape·parlor·physical·released·rheumatologic·right·risks·river·rodin·saturday·self·symbol · ← 3986·6585·9110·akashic·all·analog·angel·assets·aura·awareness·base·binding·biometric·breakfast·brewery·catalogue·coach·coding·connected·details·dropoff·earned·encodes·endorser·findings·flight·getting·handling·homeopathic·hopats·id·landmarks·liquor·liquor·list·list·manufacturing·memories·memory·mixtape·parlor·physical·released·rheumatologic·right·risks·river·rodin·saturday·self·symbol
+neighbors → deduplication·ingest·jobs·reconcile·transaction · ← deduplication·ingest·jobs·reconcile·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `251702d7-4f26-8497-97e3-66912f1886ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4a79b78-9a2d-8aa2-9f17-bf360159afd0` · `pnpm readme` · `pnpm computed:check`</sub>

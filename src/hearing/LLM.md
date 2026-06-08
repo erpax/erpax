@@ -3,15 +3,15 @@
 
 # hearing
 
-path `hearing` · uuid `f5905787-cd42-8d43-afb3-6ef0f071c8bc` · diamond `7853aa9b-e566-8e8c-8252-e096c70b019d`
+path `hearing` · uuid `f5905787-cd42-8d43-afb3-6ef0f071c8bc` · diamond `d7c9b2e8-dddb-83c2-bb92-89568edbaa46`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hearing · escapes —
-links `4/4` · folded `1` · bonds in `13` out `13`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·biological·claim·clip·entity·fact·homeopathic·landmarks·legal·promotion·reviews·spouse · ← accounting·balance·biological·claim·clip·entity·fact·homeopathic·landmarks·legal·promotion·reviews·spouse
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hearing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cedc500a-1186-82a0-94b4-ef7f80a5e8b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6aa762cd-5472-81df-a659-2ae86d82f50b` · `pnpm readme` · `pnpm computed:check`</sub>

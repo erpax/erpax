@@ -3,15 +3,15 @@
 
 # member
 
-path `member` · uuid `880dcb05-b1ba-86cb-bd88-c69f43a6b13e` · diamond `74f9961b-a21b-8495-9985-42d2897567e2`
+path `member` · uuid `880dcb05-b1ba-86cb-bd88-c69f43a6b13e` · diamond `b67edc53-fe11-83c0-b10b-0ac12c195b44`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports group·has·law·music·program·tier·valid · exports member · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·meets·terminals · ← landmarks·meets·terminals
+neighbors → group·has·law·music·program·tier·valid · ← group·has·law·music·program·tier·valid
 analysis —
 law member is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `415a49a6-a15d-800b-8778-452d5b2cfd3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be975153-9bc0-8474-9257-d5a7a7188e0d` · `pnpm readme` · `pnpm computed:check`</sub>

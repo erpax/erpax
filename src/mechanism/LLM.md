@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports mechanism · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → art·cohort·landmarks·memories·stat · ← art·cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law mechanism is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4ee487b1-0e9f-8b2e-b857-54879f31628a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `35c0a462-3825-8cc8-ae9e-8830595b4ba0` · `pnpm readme` · `pnpm computed:check`</sub>

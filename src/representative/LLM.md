@@ -3,15 +3,15 @@
 
 # representative
 
-path `representative` · uuid `334a97a3-1c05-80b1-88af-aff41391d612` · diamond `8ebae537-b130-8603-93e1-c89f261da0af`
+path `representative` · uuid `334a97a3-1c05-80b1-88af-aff41391d612` · diamond `28d48e6f-62f2-8719-a0d8-fcdd35086acf`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legal·merge·page·sti · exports representative · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accepts·cohort·landmarks·memories·stat · ← accepts·cohort·landmarks·memories·stat
+neighbors → collapse·law·legal·merge·page·sti · ← collapse·law·legal·merge·page·sti
 analysis —
 law representative is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `daf04403-004b-86b9-a092-d8422ad13907` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `40caf490-7d92-84b6-a0be-581fca668946` · `pnpm readme` · `pnpm computed:check`</sub>

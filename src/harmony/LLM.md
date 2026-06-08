@@ -3,15 +3,15 @@
 
 # harmony
 
-path `harmony` · uuid `6fcd4d80-b87f-8f55-9cee-bf67b1474273` · diamond `845e631a-df1c-896a-a3b5-970085b1066b`
+path `harmony` · uuid `6fcd4d80-b87f-8f55-9cee-bf67b1474273` · diamond `b676b0ab-567d-8488-8e75-b938a15537e5`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/signal · exports A432·BandHarmony·Consonance·IntervalCheck·const·function · escapes —
-links `31/31` · folded `1` · bonds in `5` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·landmarks·memories·stat·word · ← cohort·landmarks·memories·stat·word
+links `31/31` · folded `1` · bonds in `65` out `65`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·analytics·architect·atom·aura·bahai·balance·body·boltzmann·buddhism·chakra·christianity·coherence·collapse·confucianism·coordinate·cost·decide·deploy·diamond·drone·duality·equilibrium·gate·gravity·heart·hinduism·hooks·horo·interference·islam·jainism·judaism·law·link·matrix·merge·message·method·notes·number·octave·one·orphism·peace·photon·prayer·quantum·religion·research·ritual·rodin·sequence·signal·sikhism·standard·sti·sufism·superposition·taoism·testing·typography·uuid·war·wisdom · ← akashic·analytics·architect·atom·aura·bahai·balance·body·boltzmann·buddhism·chakra·christianity·coherence·collapse·confucianism·coordinate·cost·decide·deploy·diamond·drone·duality·equilibrium·gate·gravity·heart·hinduism·hooks·horo·interference·islam·jainism·judaism·law·link·matrix·merge·message·method·notes·number·octave·one·orphism·peace·photon·prayer·quantum·religion·research·ritual·rodin·sequence·signal·sikhism·standard·sti·sufism·superposition·taoism·testing·typography·uuid·war·wisdom
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `0a959548-89cc-8b83-92cd-a57f36ac1799` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b1e0c579-49b9-8201-a985-b3b1f2736b10` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # diamond
 
-> atom `diamond` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `diamond` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,13 +25,32 @@
 ## typography graph
 
 - partition `diamond` · sub-root `a130df88-625a-8941-9db8-46097408c3f2`
-- bond degree `402` · analysis neighbors `access` · `agent` · `ai` · `akashic` · `analytics/max-tamper-cost` · `animism` · `archangel` · `architect` · `architecture` · `aura` · `auth` · `bahai` · `bogomilism` · `buddhism` · `card` · `catholicism` · `christianity` · `cloudflare` · `confucianism` · `css` · `diamond` · `digit` · `dimension` · `examples` · `factory` · `gnosticism` · `gravity` · `hallucination` · `hermeticism` · `hinduism` · `hooks` · `innovation` · `invariant` · `islam` · `jainism` · `judaism` · `kabbalah` · `manichaeism` · `maxtampercost` · `memories` · `memory` · `method` · `orphism` · `orthodoxy` · `paganism` · `pagination` · `plugin` · `primitive` · `propose` · `protestantism` · `provider` · `purity` · `pwa` · `quantum/boundary` · `readme` · `reference` · `religion` · `seed` · `session` · `shamanism` · `shia` · `shinto` · `sikhism` · `sufism` · `sunni` · `taoism` · `text` · `thought` · `trading` · `typography` · `vedanta` · `word` · `worker` · `zoroastrianism`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `419` · analysis neighbors `access` · `agent` · `ai` · `akashic` · `analytics/max-tamper-cost` · `animism` · `archangel` · `architect` · `architecture` · `aura` · `auth` · `bahai` · `bogomilism` · `buddhism` · `card` · `catholicism` · `christianity` · `cloudflare` · `confucianism` · `css` · `diamond` · `digit` · `dimension` · `examples` · `factory` · `gnosticism` · `gravity` · `hallucination` · `hermeticism` · `hinduism` · `hooks` · `industry` · `innovation` · `invariant` · `islam` · `jainism` · `judaism` · `kabbalah` · `manichaeism` · `maxtampercost` · `memories` · `memory` · `method` · `orphism` · `orthodoxy` · `paganism` · `pagination` · `plugin` · `primitive` · `propose` · `protestantism` · `provider` · `purity` · `pwa` · `quantum/boundary` · `readme` · `reference` · `religion` · `seed` · `serverless` · `session` · `shamanism` · `shia` · `shinto` · `sikhism` · `sufism` · `sunni` · `taoism` · `text` · `thought` · `typography` · `vedanta` · `word` · `worker` · `zoroastrianism`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+- `d1_databases`/`D1` · atom `cloudflare/d1-databases/D1`
+- `durable_objects`/`AUDIT_CHAIN_DO` · atom `cloudflare/durable-objects/AUDIT_CHAIN_DO`
+- `durable_objects`/`ERPAX_DO` · atom `cloudflare/durable-objects/ERPAX_DO`
+- `durable_objects`/`JOB_LOCK` · atom `cloudflare/durable-objects/JOB_LOCK`
+- `durable_objects`/`RATE_LIMITER` · atom `cloudflare/durable-objects/RATE_LIMITER`
+- `durable_objects`/`TENANT_QUOTA` · atom `cloudflare/durable-objects/TENANT_QUOTA`
+
+## [[standards]]
+
+- `model computed from live tree + factory opts; never hand-asserted` · banner
+
+## analytics
+
+- bond degree `419` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `6` · standards `1`
 
 ## identity
 
-- uuid `5830268b-f259-82cb-9925-4af466b6a40f`
-- bonds in `97` · out `97`
+- uuid `a130df88-625a-8941-9db8-46097408c3f2`
+- bonds in `105` · out `104`
 - trinity form·code·proof `1`·`1`·`1`
 - links `171` / `172`
 - folded `1` · escapes `0`
@@ -42,4 +61,4 @@
 
 ---
 
-<sub>content-uuid `a1806861-1cdc-8be0-8cc8-a525f011a522` · framed by typography partition `diamond` bonds `402` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a556b74b-5a51-8342-bc35-a891f34659e8` · framed by typography partition `diamond` bonds `419` · `pnpm readme` · `pnpm readme:check`</sub>

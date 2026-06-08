@@ -3,15 +3,15 @@
 
 # narcotic
 
-path `narcotic` · uuid `338bf931-47bf-8b27-8d0c-aa09bb196ea8` · diamond `a09346f0-ca0f-86a9-83d8-c0ffe1b70f17`
+path `narcotic` · uuid `338bf931-47bf-8b27-8d0c-aa09bb196ea8` · diamond `034eef07-7850-8008-833b-1475388532bb`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports narcotic · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·month · ← landmarks·month
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law narcotic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `af1185a7-d3bd-81f7-8b5c-df7b7939ff7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c4886b4-59ac-8327-8a1a-2271f7d5d59d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # ingest
 
-path `ingest` · uuid `6ebd3dcb-1fa7-81e9-9d87-b9fa1de4b0bc` · diamond `ec1656da-f2d6-8024-927d-8a2cf0e2b104`
+path `ingest` · uuid `6ebd3dcb-1fa7-81e9-9d87-b9fa1de4b0bc` · diamond `1daac77a-78c1-825f-bd3a-ec71c84ea1af`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `16/16` · folded `1` · bonds in `5` out `5`
+links `16/16` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → batch·deduplication·empirical·federation·flow·idempotency·identity·law·lineage·merge·oauth·self·workspace · ← batch·deduplication·empirical·federation·flow·idempotency·identity·law·lineage·merge·oauth·self·workspace
 analysis —
 law ingest is idempotent because [[identity]] is content — a record upserts IFF its content-uuid is unseen, so re-fetching unchanged data is a no-op and re-runs are always safe ([[merge]]: same content ⇒ one).
 
 ---
 
-<sub>content-uuid `ef7d596e-b599-8c41-9856-4b8ad7f60c3d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7fe6de2e-2345-82e7-9ff0-271ff889c8e5` · `pnpm readme` · `pnpm computed:check`</sub>

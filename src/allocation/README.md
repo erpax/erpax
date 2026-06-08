@@ -25,7 +25,7 @@
 
 - partition `allocation` · sub-root `c9bf5689-48f9-85ad-99d2-1dce65710963`
 - bond degree `93` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -60,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `49cd290c-97ca-8b43-ba25-c76063c9a904` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `576a74a9-a0f0-8291-809f-55a75c0ddc85` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -4,7 +4,7 @@
 # reconciliations
 
 path `bank/accounts/bank/reconciliations` · uuid `82a12496-eb74-84d9-9f85-27ef78add94d` · diamond `acfffdab-0131-872f-a50b-105df5aed8bf`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `9` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `efa09dc0-023a-8c9e-af04-8e2042171c1f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72422cae-7e44-82e9-8504-6d7c3b8f4d6d` · `pnpm readme` · `pnpm computed:check`</sub>

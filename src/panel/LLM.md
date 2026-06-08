@@ -3,15 +3,15 @@
 
 # panel
 
-path `panel` · uuid `9744121d-1c58-8cc4-8a34-18e40c96e283` · diamond `e34f31d0-782d-863e-a4fa-f99d6ebc6d8f`
+path `panel` · uuid `9744121d-1c58-8cc4-8a34-18e40c96e283` · diamond `b8973c0d-bb52-848d-b4f8-dd7c47fc0289`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·medical·merge·sti·test · exports panel · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amusement·landmarks·route · ← amusement·landmarks·route
+neighbors → collapse·law·medical·merge·sti·test · ← collapse·law·medical·merge·sti·test
 analysis —
 law panel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e976204b-3ccf-8700-8753-2200ea7c1205` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69d4b4a9-b509-89a1-8c06-cd908a266425` · `pnpm readme` · `pnpm computed:check`</sub>

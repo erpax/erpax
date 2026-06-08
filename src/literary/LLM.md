@@ -3,15 +3,15 @@
 
 # literary
 
-path `literary` · uuid `eeedfa0f-fef3-8707-8d0b-1cefa86c7c38` · diamond `eaa4ff83-b9dc-8eda-a522-33a00dced21c`
+path `literary` · uuid `eeedfa0f-fef3-8707-8d0b-1cefa86c7c38` · diamond `c24bab91-fa58-808f-bc72-a83653d71d88`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·sti · exports literary · escapes —
-links `5/5` · folded `1` · bonds in `18` out `18`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·creator·forcemajeure·fractal·landmarks·made·memories·monetary·notice·patient·recognizing·relevance·remediation·reports·sanitization·stat·tech · ← amount·cohort·creator·forcemajeure·fractal·landmarks·made·memories·monetary·notice·patient·recognizing·relevance·remediation·reports·sanitization·stat·tech
+neighbors → collapse·event·law·merge·sti · ← collapse·event·law·merge·sti
 analysis —
 law literary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7570c061-ee5c-8f5b-b992-ccab8b4cef37` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1de1950-766b-8cb4-a995-58f72273ced6` · `pnpm readme` · `pnpm computed:check`</sub>

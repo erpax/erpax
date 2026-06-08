@@ -3,15 +3,15 @@
 
 # ones
 
-path `ones` · uuid `29591b4c-93ee-80eb-9ff5-d37399f4350e` · diamond `b540c196-e585-877d-a1f2-9a2521a6e36d`
+path `ones` · uuid `29591b4c-93ee-80eb-9ff5-d37399f4350e` · diamond `dd7c3d08-dd80-886f-a535-e74b78e553e1`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·plus·sti·user · exports ones · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·plus·sti·user · ← collapse·law·merge·plus·sti·user
 analysis —
 law ones is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e5630c0c-a237-839a-9757-6a0ddc3a77c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c71f5ec9-c55a-82dd-abf5-25d9818f94dc` · `pnpm readme` · `pnpm computed:check`</sub>

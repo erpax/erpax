@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports respiratory · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·length·mass·segments · ← landmarks·length·mass·segments
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law respiratory is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c5a354d7-c4ac-81cf-862a-13206ef9e977` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b37e2368-cf3f-85d8-8fb8-aad5d73024d7` · `pnpm readme` · `pnpm computed:check`</sub>

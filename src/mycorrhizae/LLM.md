@@ -3,15 +3,15 @@
 
 # mycorrhizae
 
-path `mycorrhizae` · uuid `dd790be9-9493-8ab0-875b-e4eca884ec17` · diamond `822175a6-63da-8716-8230-06d5db933694`
+path `mycorrhizae` · uuid `dd790be9-9493-8ab0-875b-e4eca884ec17` · diamond `2de86c60-b456-8918-82bd-10ad3ee54133`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·covercrop·fertility·give·law·merge·moisture·mycelium·soil·symbiosis·take·tillage · exports mycorrhizae · escapes —
-links `23/23` · folded `1` · bonds in `5` out `5`
+links `23/23` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·products·stat · ← cohort·landmarks·memories·products·stat
+neighbors → agriculture·covercrop·fertility·give·law·merge·moisture·mycelium·soil·symbiosis·take·tillage · ← agriculture·covercrop·fertility·give·law·merge·moisture·mycelium·soil·symbiosis·take·tillage
 analysis —
 law mycorrhizae are the living two-way [[merge]] at the root zone — fungi trade phosphorus and water for plant carbon, a [[fertility]] mechanism the N-P-K budget misses, suppressed by [[tillage]].
 
 ---
 
-<sub>content-uuid `7e79ad75-ec11-8ba9-9265-7af9a20e324a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `070174d5-27e9-81ca-a794-331c3d8dcab2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # lab
 
-path `lab` · uuid `08cbebc2-4fa0-829a-8f37-c3e20cd25fe3` · diamond `947f2862-781b-82c1-ace8-8f3b1702cb22`
+path `lab` · uuid `08cbebc2-4fa0-829a-8f37-c3e20cd25fe3` · diamond `550dfe12-63c3-89af-84b9-51d1296f298a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·diagnostic·law·merge·sti · exports lab · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician·terminals · ← landmarks·physician·terminals
+neighbors → collapse·diagnostic·law·merge·sti · ← collapse·diagnostic·law·merge·sti
 analysis —
 law lab is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `40294837-5441-838f-ba87-2d13bfda2855` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af915ecc-6935-83f8-894f-4598905961df` · `pnpm readme` · `pnpm computed:check`</sub>

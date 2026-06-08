@@ -3,15 +3,15 @@
 
 # quest
 
-path `quest` · uuid `ce519215-7fd8-8ba1-a80e-4afd5b7b0e3e` · diamond `bdde2727-58d4-8803-8716-c358ed0ac13c`
+path `quest` · uuid `ce519215-7fd8-8ba1-a80e-4afd5b7b0e3e` · diamond `221a31cc-44a6-8318-9854-41947b34b9af`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports quest · escapes —
-links `2/2` · folded `1` · bonds in `14` out `14`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → am·brewery·change·clinical·cohort·enum·float·landmarks·memories·screen·sender·separation·stages·stat · ← am·brewery·change·clinical·cohort·enum·float·landmarks·memories·screen·sender·separation·stages·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law quest is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `df813914-73ca-8806-a75e-422ec4dadf74` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2664c39b-796a-8b28-95fe-498796f08bcf` · `pnpm readme` · `pnpm computed:check`</sub>

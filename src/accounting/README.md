@@ -2,7 +2,7 @@
 
 # accounting
 
-> atom `accounting` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `accounting` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `accounting` · sub-root `8b33fe24-86ed-890b-bd50-163f8f64b128`
 - bond degree `739` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
 
 ## [[cloudflare]] bindings
 
@@ -49,7 +49,7 @@
 
 ## analytics
 
-- bond degree `739` · sealed `1` · horo `5`
+- bond degree `739` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `13`
 
@@ -63,8 +63,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `cf7fbb1a-7970-8564-888c-d9345256b885` · framed by typography partition `accounting` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9eb00531-0bf5-8f8f-b667-c20ad7768241` · framed by typography partition `accounting` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>

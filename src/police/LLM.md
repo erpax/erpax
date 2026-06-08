@@ -3,15 +3,15 @@
 
 # police
 
-path `police` · uuid `dd4567b4-ff54-8f34-a888-974e5a53c590` · diamond `73e30180-63bc-8a60-b158-e2d14a97dc07`
+path `police` · uuid `dd4567b4-ff54-8f34-a888-974e5a53c590` · diamond `e3e7553e-6afb-8178-bbdd-56fd518a700e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·station·sti · exports police · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sanitization·standard·stat·symptoms · ← cohort·landmarks·memories·sanitization·standard·stat·symptoms
+neighbors → collapse·law·merge·station·sti · ← collapse·law·merge·station·sti
 analysis —
 law police is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `33106804-4bee-8074-8937-e75552317b73` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `796f0257-217b-8be2-a3cb-d2896cce6011` · `pnpm readme` · `pnpm computed:check`</sub>

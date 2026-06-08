@@ -3,15 +3,15 @@
 
 # processing
 
-path `processing` · uuid `f545dd3d-93c6-82d3-b01a-1d383d133699` · diamond `f96c2817-806c-858d-8d76-0e78db6d1380`
+path `processing` · uuid `f545dd3d-93c6-82d3-b01a-1d383d133699` · diamond `e727633c-3421-8f34-bbf4-851fbf7e6a3a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·country·last·law·merge·sti·time · exports processing · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·separation·stat · ← cohort·landmarks·memories·separation·stat
+neighbors → collapse·country·last·law·merge·sti·time · ← collapse·country·last·law·merge·sti·time
 analysis —
 law processing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f2c4cba4-b15e-8578-92db-f2274cc87804` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7091465c-162a-88c9-b040-79c2f4bf0ee2` · `pnpm readme` · `pnpm computed:check`</sub>

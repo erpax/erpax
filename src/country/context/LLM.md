@@ -3,9 +3,9 @@
 
 # context
 
-path `country/context` · uuid `adaba9aa-d971-877d-b313-6d100a0c8dc7` · diamond `813f25c7-2186-8f62-a688-bb1acc2270ed`
+path `country/context` · uuid `adaba9aa-d971-877d-b313-6d100a0c8dc7` · diamond `6e6ccc97-be58-835e-9f8e-1fecc365630d`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
-imports @/config/country-apis·@/config/country-specifics·@/config/regional-defaults·@/iban·@/trading/api · exports function·interface · escapes —
+imports @/config/country-specifics·@/config/regional-defaults·@/country/api·@/iban·@/trading/api · exports function·interface · escapes —
 links `2/2` · folded `1` · bonds in `8` out `9`
 faces worker·plugin·pwa `0·0·0`
 neighbors → collapse·country·description·law·law·media·merge·original·sti · ← collapse·country·description·law·media·merge·original·sti
@@ -14,4 +14,4 @@ law every country branch resolves through one canonical merge — first-non-null
 
 ---
 
-<sub>content-uuid `6b05e724-41a2-8e35-bc2a-c2b30fa5fa52` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `56047930-e780-813a-a46a-b276518ff1a4` · `pnpm readme` · `pnpm computed:check`</sub>

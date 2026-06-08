@@ -3,15 +3,15 @@
 
 # quantity
 
-path `quantity` · uuid `97c879bd-2202-80af-9a94-93da6b762c00` · diamond `2d0a165d-848d-8ba5-ad32-c4949d2e5ae7`
+path `quantity` · uuid `97c879bd-2202-80af-9a94-93da6b762c00` · diamond `722ec6c6-2680-8a2d-aaf7-736023ed8ffa`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports eligible·law·node·order·reference·required·type · exports quantity · escapes —
-links `7/7` · folded `1` · bonds in `12` out `12`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·details·grant·landmarks·ligament·list·log·memories·progression·range·trade·wellbeing · ← akashic·details·grant·landmarks·ligament·list·log·memories·progression·range·trade·wellbeing
+neighbors → eligible·law·node·order·reference·required·type · ← eligible·law·node·order·reference·required·type
 analysis —
 law quantity is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4d5d1702-9d90-8552-b50b-63d34724a139` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `804876d8-5638-86d9-943b-4c709a2aba4a` · `pnpm readme` · `pnpm computed:check`</sub>

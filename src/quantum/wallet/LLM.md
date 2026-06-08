@@ -3,15 +3,15 @@
 
 # wallet
 
-path `quantum/wallet` · uuid `359504fb-5948-8313-aeac-16da7383f4a8` · diamond `46907a7f-10a6-84ea-ae23-d5f700f1dd64`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `quantum/wallet` · uuid `f3e13781-1ca1-8237-873d-d1a523c50e59` · diamond `b72aa3e1-e193-8e39-999d-37f55661b40b`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/entry·@/uuid/matrix·@/wallet · exports const · escapes —
-links `19/19` · folded `0` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+links `19/19` · folded `1` · bonds in `12` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → account·balance·cost·entry·entry·identity·karma·law·law·merge·money·quantum·quantum·uuid·uuid·wallet · ← account·balance·cost·entry·identity·karma·law·merge·money·quantum·uuid·wallet
+analysis —
 law a wallet's state IS its content-[[uuid]], so any balance change is tamper-evident (new state-uuid), and every transfer is a balanced double-[[entry]] (payer credited, payee debited) over a [[merge]]-chain of state-uuids.
 
 ---
 
-<sub>content-uuid `1e7d4401-3247-80f1-824b-eadf132d94c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd205cef-efa3-813e-be08-047b4ef058c9` · `pnpm readme` · `pnpm computed:check`</sub>

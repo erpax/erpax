@@ -3,15 +3,15 @@
 
 # refactor
 
-path `refactor` · uuid `a82f830e-b285-8d46-a6a5-9f464cde7019` · diamond `e3d4db8f-512c-86f5-8c84-8382b7221344`
+path `refactor` · uuid `a82f830e-b285-8d46-a6a5-9f464cde7019` · diamond `5b160739-eb30-8894-b088-5874475c764c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports atom·dissolve·gate·identity·integrity·matrix·merge·normalize·payload·proof·refactor·self·sequence·vitepress·zeropoint · exports refactor · escapes —
-links `21/21` · folded `1` · bonds in `4` out `4`
+links `21/21` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·atom·contribution·dissolve·gate·identity·integrity·law·matrix·merge·normalize·payload·proof·refactor·self·sequence·vitepress·zeropoint · ← accounting·atom·contribution·dissolve·gate·identity·integrity·law·matrix·merge·normalize·payload·proof·refactor·self·sequence·vitepress·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3b2b1322-2e4d-80bc-a2bf-28521d99e08f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `37e22aa8-c551-8608-b081-67d8b859c270` · `pnpm readme` · `pnpm computed:check`</sub>

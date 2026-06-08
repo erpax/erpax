@@ -3,15 +3,15 @@
 
 # hook
 
-path `hook` · uuid `3862969b-2c32-8e17-a522-fe48fdf96f22` · diamond `827565d3-71af-8087-9f9d-270993f8f9c0`
+path `hook` · uuid `3862969b-2c32-8e17-a522-fe48fdf96f22` · diamond `26342eae-b900-8959-a3dc-afa521cd0b38`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·event·hooks·law · exports hook · escapes —
-links `9/9` · folded `1` · bonds in `10` out `10`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → crest·homeopathic·hooks·landmarks·memories·rheumatologic·right·sell·society·swatch · ← crest·homeopathic·hooks·landmarks·memories·rheumatologic·right·sell·society·swatch
+neighbors → balance·event·hooks·law · ← balance·event·hooks·law
 analysis —
 law a hook is the one place logic runs on a record event — the singular model whose plural store is the [[hooks]] collection, so behaviour lives through the lifecycle gateway, never scattered ([[balance]]: every collection has its model).
 
 ---
 
-<sub>content-uuid `2051b22b-42b9-8930-8cee-406e01cef751` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4daaafa7-a67b-851a-8fb7-a0ab1226a1aa` · `pnpm readme` · `pnpm computed:check`</sub>

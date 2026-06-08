@@ -3,15 +3,15 @@
 
 # insert
 
-path `insert` · uuid `7470443d-3ce6-8d84-8d0a-0f3c2d64b8fd` · diamond `ac706eeb-bd29-8778-bf02-9dc23449f331`
+path `insert` · uuid `7470443d-3ce6-8d84-8d0a-0f3c2d64b8fd` · diamond `08f2d640-ff7b-8493-aa4f-ac768cdcd339`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports insert · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law insert is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b04cd74e-0ce2-88d4-a391-290d793d566e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae5d02e4-92af-8e4b-9f01-2d53481b1fff` · `pnpm readme` · `pnpm computed:check`</sub>

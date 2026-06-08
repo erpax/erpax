@@ -3,15 +3,15 @@
 
 # queue
 
-path `queue` · uuid `d9f589a0-47df-8f8e-8622-c1b7b6f1a6ee` · diamond `caf54088-f600-8272-9907-8fd49a0ef79a`
+path `queue` · uuid `d9f589a0-47df-8f8e-8622-c1b7b6f1a6ee` · diamond `0019bb8b-8c57-85fe-8a50-fd37a52eaebd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports activities·assignment·backlog·law·priority·sla·status·ticket·users·work · exports queue · escapes —
-links `10/10` · folded `1` · bonds in `5` out `5`
+links `10/10` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·generically·landmarks·memories·stat · ← cohort·generically·landmarks·memories·stat
+neighbors → activities·assignment·backlog·bindings·law·priority·pwa·request·sla·status·ticket·users·work · ← activities·assignment·backlog·bindings·law·priority·pwa·request·sla·status·ticket·users·work
 analysis —
 law a queue is the ordered collection of pending [[work]], routed in order by priority/SLA/assignment.
 
 ---
 
-<sub>content-uuid `3d93f33e-3816-85ac-8eb4-fc57396e1a9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d290ea9-6997-8fd0-915b-af6d9860522c` · `pnpm readme` · `pnpm computed:check`</sub>

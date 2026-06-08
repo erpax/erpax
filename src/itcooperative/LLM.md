@@ -3,15 +3,15 @@
 
 # itcooperative
 
-path `itcooperative` · uuid `6174b74e-9144-8ad0-93af-c88d201bed4f` · diamond `ff561aa7-28f0-873b-b641-1c601e7a5851`
+path `itcooperative` · uuid `6174b74e-9144-8ad0-93af-c88d201bed4f` · diamond `bceb87ce-a40c-8046-b3e7-c890618efc23`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports itcooperative · escapes —
-links `4/4` · folded `1` · bonds in `13` out `17`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·colleagues·fertility·findings·finite·homeopathic·id·landmarks·landmarks·landmarks·progression·progression·snapshots·spouse·suite·tour · ← accounting·colleagues·fertility·findings·finite·homeopathic·id·landmarks·progression·snapshots·spouse·suite·tour
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law itcooperative is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b1c28d18-1147-805b-acde-c21079be3e59` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2e12cb0-5b6b-8c80-8b5f-9808de2aed41` · `pnpm readme` · `pnpm computed:check`</sub>

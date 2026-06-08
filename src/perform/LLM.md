@@ -3,15 +3,15 @@
 
 # perform
 
-path `perform` · uuid `a0922b97-03c5-86db-a3e9-a63541815c15` · diamond `cd727f06-d307-8ea9-ad88-3ddb4836733d`
+path `perform` · uuid `a0922b97-03c5-86db-a3e9-a63541815c15` · diamond `be336b76-1d2a-8ecf-badf-6da3a4fdb068`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti·time · exports perform · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks · ← create·landmarks
+neighbors → action·collapse·law·merge·sti·time · ← action·collapse·law·merge·sti·time
 analysis —
 law perform is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a5ebad9a-0a89-85c5-860d-8790a1bfb044` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3748059d-34a9-876d-bb26-7955d6bd6fa6` · `pnpm readme` · `pnpm computed:check`</sub>

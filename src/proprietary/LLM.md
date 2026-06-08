@@ -3,15 +3,15 @@
 
 # proprietary
 
-path `proprietary` · uuid `6054881f-1ffa-80f4-82d0-7862cc999098` · diamond `c03ef725-aa28-8025-8d93-cadf72d358cc`
+path `proprietary` · uuid `6054881f-1ffa-80f4-82d0-7862cc999098` · diamond `2070d033-d0fc-8187-8e37-5fc4bb9d9de2`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·name·non · exports proprietary · escapes —
-links `3/3` · folded `1` · bonds in `10` out `10`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·corrects·crisis·donate·government·maintainer·screen·test·transit·worth · ← agriculture·corrects·crisis·donate·government·maintainer·screen·test·transit·worth
+neighbors → law·name·non · ← law·name·non
 analysis —
 law proprietary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `58d4fb3a-b9d7-836e-8961-7eda613e3d17` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ef329914-60dc-83cf-9519-045a2d25c83c` · `pnpm readme` · `pnpm computed:check`</sub>

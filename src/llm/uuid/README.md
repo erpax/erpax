@@ -2,7 +2,7 @@
 
 # uuid
 
-> atom `llm/uuid` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `llm/uuid` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `llm` · sub-root `1dc20a80-a088-8179-af1d-9b43e719cfdb`
-- bond degree `288` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `743` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `24e4b798-6290-86a4-8ce3-9eeb44d5c2ca`
-- bonds in `6` · out `6`
+- uuid `e70f3d2a-47f6-8016-999c-4e133dd0f081`
+- bonds in `235` · out `231`
 - trinity form·code·proof `1`·`1`·`1`
 - links `23` / `23`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4a9e83c4-c03f-8533-80db-02d360f3b284` · framed by typography partition `llm` bonds `288` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `662aca4f-7fcf-88b3-a761-32e1c6d540ba` · framed by typography partition `llm` bonds `743` · `pnpm readme` · `pnpm readme:check`</sub>

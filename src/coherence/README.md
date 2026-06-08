@@ -25,7 +25,7 @@
 
 - partition `coherence` · sub-root `e46ab8e5-28f7-8a8a-87f5-6c5f0945ba11`
 - bond degree `70` · analysis neighbors `aura`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -56,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `1be26eff-477c-8391-8519-799603ebb1b1` · framed by typography partition `coherence` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dfd855ce-4036-8cd8-863e-f281c214d83b` · framed by typography partition `coherence` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

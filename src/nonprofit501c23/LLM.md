@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nonprofit501c23 · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nonprofit501c23 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `870746b4-c12a-852e-aca3-a393b10847ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ea4aa05-6e71-83e4-bf34-b3c49b7c6153` · `pnpm readme` · `pnpm computed:check`</sub>

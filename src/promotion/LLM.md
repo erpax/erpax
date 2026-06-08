@@ -3,15 +3,15 @@
 
 # promotion
 
-path `promotion` · uuid `db9f353b-90b1-85c2-8ea4-04f61698d4a8` · diamond `35fc51fa-bda1-8315-9d44-a4f2e268ae8f`
+path `promotion` · uuid `db9f353b-90b1-85c2-8ea4-04f61698d4a8` · diamond `53e7c7f9-6abe-8ca4-a450-660ee44c5243`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports promotion · escapes —
-links `4/4` · folded `1` · bonds in `9` out `10`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dashboard·fact·hearing·illustrator·lead·lead·promotion·promotion·promotional·snapshots · ← dashboard·fact·hearing·illustrator·lead·promotion·promotion·promotional·snapshots
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law promotion is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `16281126-564a-8b54-957e-07b6f975b985` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e753953-54e5-827b-ae8d-2ae12bdd641d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `metatron` · sub-root `3cc1c0c2-2085-8b5c-941b-e752bd338f7d`
-- bond degree `32` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `60` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `3cc1c0c2-2085-8b5c-941b-e752bd338f7d`
-- bonds in `5` · out `5`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `25` / `25`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `36e8a984-df30-821e-89e6-f52230a6745b` · framed by typography partition `metatron` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6758d99f-5673-800c-b56c-4d64e31cc921` · framed by typography partition `metatron` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

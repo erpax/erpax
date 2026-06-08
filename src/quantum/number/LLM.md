@@ -3,15 +3,15 @@
 
 # number
 
-path `quantum/number` · uuid `cc2f97b8-6ba0-894c-abaa-4a322ab998b3` · diamond `af8bcf90-4bca-86a6-804f-7971d08c65c9`
+path `quantum/number` · uuid `cc2f97b8-6ba0-894c-abaa-4a322ab998b3` · diamond `3da87ecc-1484-8083-bcb7-fd5746693e49`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports breath·collapse·digit·finality·harmony·law·linearity·number·reality·realtime·sequence·snapshot·stream · exports number · escapes —
-links `21/21` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·landmarks·performances · ← accounting·balance·landmarks·performances
+links `21/21` · folded `1` · bonds in `77` out `77`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·breath·bus·catalog·clip·collapse·commerce·confirmation·credits·digit·doors·episode·episodes·fax·fields·finality·flight·forward·full·gears·global·guests·harmony·hooks·id·identification·identity·issue·item·law·linearity·loan·location·measure·membership·number·office·order·partial·passenger·pi·players·post·previous·rate·reality·realtime·report·rooms·science·seasons·seat·sequence·serial·service·sms·snapshot·stage·stream·supto·tracking·transaction·units·utility·uuid·vehicle·volume·zeropoint · ← accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·breath·bus·catalog·clip·collapse·commerce·confirmation·credits·digit·doors·episode·episodes·fax·fields·finality·flight·forward·full·gears·global·guests·harmony·hooks·id·identification·identity·issue·item·law·linearity·loan·location·measure·membership·number·office·order·partial·passenger·pi·players·post·previous·rate·reality·realtime·report·rooms·science·seasons·seat·sequence·serial·service·sms·snapshot·stage·stream·supto·tracking·transaction·units·utility·uuid·vehicle·volume·zeropoint
 analysis —
 law the dot collapses iff the number is rational — a rational's digit-stream terminates or repeats, so the measurement finishes to a finite snapshot; an irrational's never repeats, so the dot can never settle it and the stream runs forever. Whether the measurement ends is fixed by the number's arithmetic nature, not by where you stop reading.
 
 ---
 
-<sub>content-uuid `9421de15-4c90-8be0-af95-328049391c20` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4197c177-5306-8b70-ac76-ad43d94c55d8` · `pnpm readme` · `pnpm computed:check`</sub>

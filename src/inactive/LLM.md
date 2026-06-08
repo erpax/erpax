@@ -3,15 +3,15 @@
 
 # inactive
 
-path `inactive` · uuid `dd7a68e1-2e0b-8a37-83bc-1fe750a54eaa` · diamond `2968b99d-5f74-81e5-bb69-cc87b298083b`
+path `inactive` · uuid `dd7a68e1-2e0b-8a37-83bc-1fe750a54eaa` · diamond `28799796-bf3f-8d16-8b99-01741f537b21`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports inactive · escapes —
-links `4/4` · folded `1` · bonds in `14` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → added·casino·cohort·composer·dangerous·extra·has·instantaneous·landmarks·memories·physiological·reverse·stat·system·urologic · ← added·casino·cohort·dangerous·extra·has·instantaneous·landmarks·memories·physiological·reverse·stat·system·urologic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law inactive is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2a4c701a-8839-86aa-9f30-bd20a6f50362` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43a1e943-c64f-8856-b711-9b2e10a77768` · `pnpm readme` · `pnpm computed:check`</sub>

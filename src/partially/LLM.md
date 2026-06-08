@@ -3,15 +3,15 @@
 
 # partially
 
-path `partially` · uuid `615fe152-11e0-84ca-8f3c-6e74fde9d1c6` · diamond `a5f376d9-5e0a-8c3c-9830-fc40c6fe1d9d`
+path `partially` · uuid `615fe152-11e0-84ca-8f3c-6e74fde9d1c6` · diamond `dfe72193-597c-85eb-a262-3ecc2b89463b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports partially · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calendars·cohort·landmarks·memories·stat · ← calendars·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law partially is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `47e5564f-5611-8ee1-b836-6a01bc484189` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3afd19f3-ae72-89f9-ae04-602cb7a8f541` · `pnpm readme` · `pnpm computed:check`</sub>

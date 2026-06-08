@@ -3,15 +3,15 @@
 
 # lots
 
-path `lots` · uuid `a5018200-a52d-8ba6-a2d1-f54041036141` · diamond `ae3c14d6-36f9-83b0-960a-d1ae10e9e29d`
+path `lots` · uuid `a5018200-a52d-8ba6-a2d1-f54041036141` · diamond `168ab8ed-ebd4-8c39-a7ee-1f706fa4a2f0`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/horo·@/standard/collection/hook · exports const·default · escapes —
-links `23/23` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `23/23` · folded `1` · bonds in `16` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·balance·certification·coordinate·entry·grade·herd·horo·law·lineage·lot·organic·packs·phases·variants · ← accounting·balance·certification·coordinate·entry·grade·herd·horo·law·lineage·lot·organic·packs·phases·phases·variants
 analysis —
 law a lot's state is DERIVED from lifecycle watermarks on the [[horo]] ring, never stored (100% NULL in 20yr etrima), and its totals ARE the sum of its [[lot/variants]] through a monotonic funnel ([[balance]], double-entry).
 
 ---
 
-<sub>content-uuid `6b63c853-332f-8243-a10a-d50116054586` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `447e6a05-c052-8bf4-8dd0-332966d28880` · `pnpm readme` · `pnpm computed:check`</sub>

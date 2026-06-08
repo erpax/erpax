@@ -3,15 +3,15 @@
 
 # lease
 
-path `lease` · uuid `f307c62c-953e-8a57-bfdd-2686a04d0763` · diamond `badde59a-cbfb-8fe3-bf2b-acac72e6d3fd`
+path `lease` · uuid `f307c62c-953e-8a57-bfdd-2686a04d0763` · diamond `2a8181c9-f892-82b7-9564-eeb61ac3f7c3`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·length·merge·offer·sti · exports lease · escapes —
-links `6/6` · folded `1` · bonds in `17` out `17`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → actions·checklists·combinations·consolidations·deadlines·emissions·empirical·entities·leases·left·legal·members·minutes·notifications·owners·tags·transactions · ← actions·checklists·combinations·consolidations·deadlines·emissions·empirical·entities·leases·left·legal·members·minutes·notifications·owners·tags·transactions
+neighbors → collapse·law·length·merge·offer·sti · ← collapse·law·length·merge·offer·sti
 analysis —
 law lease is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e34b8c11-53f7-8060-ada6-c853cc9d400b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9d66f26-69fd-8eea-8c75-c21fab4bf612` · `pnpm readme` · `pnpm computed:check`</sub>

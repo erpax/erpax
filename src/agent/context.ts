@@ -35,6 +35,7 @@ import type {
   EvidenceFrame,
 } from './types'
 import type { McpClient } from '@/agents/mcp'
+import type { AgentLawState } from './types'
 
 /** The substrate to build an AgentContext from — only `runtime`/`payload`/`tenantId`/`mcp` are required. */
 export interface AgentContextSpec {
@@ -48,6 +49,7 @@ export interface AgentContextSpec {
   readonly audit?: (leaf: AuditLeaf) => void
   readonly capture?: (frame: EvidenceFrame) => void
   readonly chain?: AgentContext['chain']
+  readonly law?: AgentLawState
 }
 
 /** No-op default for an unwired substrate callback. */
@@ -72,6 +74,7 @@ export function createAgentContext(spec: AgentContextSpec): AgentContext {
     mcp: spec.mcp,
     call: (agentId, ev) => spec.runtime.dispatchTo(ctx, agentId, ev),
     chain: spec.chain,
+    law: spec.law,
   }
   return ctx
 }

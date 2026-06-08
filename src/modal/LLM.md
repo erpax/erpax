@@ -3,15 +3,15 @@
 
 # modal
 
-path `modal` · uuid `—` · diamond `56e0ae43-3262-881c-a826-ebb763f38383`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `modal` · uuid `7f1ecdee-0bed-85eb-a654-627f91420f4b` · diamond `966f0621-6ccd-86b1-a236-f70c8a98c964`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports CreateBillModal·CreateInvoiceModal·CreateJournalEntryModal · escapes —
-links `1/1` · folded `0` · bonds in `0` out `0`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → law · ← law
+analysis —
 law barrel re-export at `@/modal`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `d971b039-ff17-8891-84b1-b6c6f5822c8a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `114cb82b-d649-8d81-837b-015eb65339ab` · `pnpm readme` · `pnpm computed:check`</sub>

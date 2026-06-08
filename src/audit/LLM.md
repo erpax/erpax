@@ -4,7 +4,7 @@
 # audit
 
 path `audit` · uuid `ad9f3271-fbf4-876f-a76a-b6da7a1ac515` · diamond `05d1e1ee-0900-802b-abf7-255c891ca06a`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports access·accounting·description·fields·versions · exports audit · escapes —
 links `5/5` · folded `1` · bonds in `30` out `29`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `c7bc149a-86e4-8403-8378-db571d38ae87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe16d9dd-0a3a-8e9c-aa24-d23c0ce6bd26` · `pnpm readme` · `pnpm computed:check`</sub>

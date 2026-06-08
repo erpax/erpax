@@ -3,15 +3,15 @@
 
 # laser
 
-path `laser` · uuid `5dec0a24-0dc2-8995-91ea-2c6ff88f68c8` · diamond `70b6aa06-903e-8dff-9042-7a9c75fca30c`
+path `laser` · uuid `5dec0a24-0dc2-8995-91ea-2c6ff88f68c8` · diamond `198b92c9-7f00-862f-861c-0b62adeeafbc`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports laser · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 15·cohort·landmarks·memories·stat · ← 15·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law laser is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `92ed1530-77bf-8f1e-9777-c751e9c56da6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a814c3e8-9031-8fce-91b8-b9226c4c4016` · `pnpm readme` · `pnpm computed:check`</sub>

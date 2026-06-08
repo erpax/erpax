@@ -23,7 +23,7 @@
 
 - partition `clothing` · sub-root `4fd198af-8df3-8452-91e0-a98e585d92f1`
 - bond degree `20` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ffe3fb2c-6962-8fb5-aecb-e8ad4db597a4` · framed by typography partition `clothing` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7282f253-f568-807f-a2a8-df707c036a8a` · framed by typography partition `clothing` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

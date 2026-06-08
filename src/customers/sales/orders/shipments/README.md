@@ -25,7 +25,33 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `26` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017 §BG-13 delivery-information` · banner
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-UCC` · catalogue
+- `INCOTERMS-2020` · catalogue
+- `ISO-19011:2018 audit-trail fulfillment-evidence` · banner
+- `ISO-3166-1:2020 country-codes ship-from ship-to` · banner
+- `ISO-8601-1:2019 date-time shipped-at delivered-at` · banner
+- `ISO-9735` · catalogue
+- `SOX §404 internal-controls dispatch-controls` · banner
+- `WCO-HS` · catalogue
+
+## analytics
+
+- bond degree `26` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
@@ -41,4 +67,4 @@
 
 ---
 
-<sub>content-uuid `d5475901-3776-891e-979a-484a7b9f81e7` · framed by typography partition `customers` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `791493af-5da2-8dbe-9275-4577e6481fc9` · framed by typography partition `customers` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

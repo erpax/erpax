@@ -3,15 +3,15 @@
 
 # lower
 
-path `lower` · uuid `220cc1cd-9327-853f-a928-96ff5677ba1b` · diamond `3e1365c9-06b2-804e-b701-a59414e6bf64`
+path `lower` · uuid `220cc1cd-9327-853f-a928-96ff5677ba1b` · diamond `e1933b10-6a69-8219-b147-26e8795b2961`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports lower · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·occupational·preparation·stat · ← cohort·landmarks·memories·occupational·preparation·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law lower is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b16c345d-8190-81a1-a896-1b3ba8ef2aac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ee77549-9717-8168-880d-716ea67bcca0` · `pnpm readme` · `pnpm computed:check`</sub>

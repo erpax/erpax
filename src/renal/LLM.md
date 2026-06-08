@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports renal · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·except·landmarks·render · ← balance·except·landmarks·render
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law renal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `026e20a0-d4b0-8f1b-8ce9-05738c124aa9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f8d94f0-df76-8955-af66-fd02783ac5d1` · `pnpm readme` · `pnpm computed:check`</sub>

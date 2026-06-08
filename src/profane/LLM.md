@@ -3,15 +3,15 @@
 
 # profane
 
-path `profane` · uuid `283eca17-f7f9-8900-ad55-bbad9f35426f` · diamond `256d7b13-66f5-86a3-b7aa-3eea31046aa7`
+path `profane` · uuid `283eca17-f7f9-8900-ad55-bbad9f35426f` · diamond `2b4e63f1-01af-88b6-9318-58ece4f482f9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports akashic·angel·aura·balance·generate·history·merge·proof·recover·sacred·standard·tamper·trinity·uuid · exports profane · escapes —
-links `24/24` · folded `1` · bonds in `5` out `5`
+links `24/24` · folded `1` · bonds in `36` out `36`
 faces worker·plugin·pwa `0·0·0`
-neighbors → details·landmarks·middle·nutrition·physiotherapy · ← details·landmarks·middle·nutrition·physiotherapy
+neighbors → accounting·akashic·angel·aura·balance·bogomilism·civilization·collapse·cost·duality·faith·generate·gnosticism·hallucination·history·horo·limit·lineage·manichaeism·mercy·merge·orphism·port·proof·recover·research·sacred·science·sequence·shinto·sin·standard·suffering·trinity·uuid·zoroastrianism · ← accounting·akashic·angel·aura·balance·bogomilism·civilization·collapse·cost·duality·faith·generate·gnosticism·hallucination·history·horo·limit·lineage·manichaeism·mercy·merge·orphism·port·proof·recover·research·sacred·science·sequence·shinto·sin·standard·suffering·trinity·uuid·zoroastrianism
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `f13345c0-b54f-860c-8901-c3d8e00d5c3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e2b48e26-7fa2-840e-8c93-264ec5212526` · `pnpm readme` · `pnpm computed:check`</sub>

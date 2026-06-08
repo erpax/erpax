@@ -4,7 +4,7 @@
 # accounting
 
 path `accounting` · uuid `fd3e612d-c5be-8dcb-a973-232bb1198fa2` · diamond `4c5c0608-5389-8912-931a-36c2cc59f4aa`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports AccountQueries·AccountType·AccountingEntryBuilder·AgingReportDTO·BalanceSheetDTO·BalanceSheetSection·DebitCreditLogic·DebitCreditRule·FinancialAnalysisEngine·IncomeStatementDTO·JournalEntryLine·StandardTransactions·TrialBalanceDTO·TrialBalanceRow·ValidatedEntry·generateAPAgingReport·generateARAgingReport·generateBalanceSheet·generateIncomeStatement·generateTrialBalance · escapes —
 links `79/79` · folded `1` · bonds in `228` out `225`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every posting is a debit⊕credit⊕balance trinity and no entry writes unle
 
 ---
 
-<sub>content-uuid `2e524d5d-dd18-8a8b-9209-4273290a3bf6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb2062d9-0b79-8379-a794-15af1940edbe` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports attendee·capacity·collapse·law·merge·sti · exports remaining · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → auto·cohort·landmarks·memories·monthly·stat · ← auto·cohort·landmarks·memories·monthly·stat
+neighbors → attendee·capacity·collapse·law·merge·sti · ← attendee·capacity·collapse·law·merge·sti
 analysis —
 law remaining is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ae2f0018-6905-8d83-ac43-104640312432` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14f52749-a5b7-8467-a6d6-4dbcf3328b6f` · `pnpm readme` · `pnpm computed:check`</sub>

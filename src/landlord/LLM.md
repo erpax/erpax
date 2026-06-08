@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports landlord · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician·terminals · ← landmarks·physician·terminals
+neighbors → law·person·thing · ← law·person·thing
 analysis —
 law landlord is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `554d9081-1bf7-8aa8-b2fe-6cc06bc6f1cd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d5403b83-ef79-891c-adbc-e023cb2f82d5` · `pnpm readme` · `pnpm computed:check`</sub>

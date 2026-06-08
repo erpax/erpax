@@ -3,15 +3,15 @@
 
 # provision
 
-path `provision` · uuid `69bd7e77-bfb9-8bca-a323-c7d70b5767ad` · diamond `d8f457ad-c1e5-8f04-befc-ee6253626fbf`
+path `provision` · uuid `69bd7e77-bfb9-8bca-a323-c7d70b5767ad` · diamond `898457d3-96e4-81eb-901a-bdb7cc470bc8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accrual·balance·commitments·disclosure·journal·law·legal·liability · exports provision · escapes —
-links `8/8` · folded `1` · bonds in `3` out `3`
+links `8/8` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → database·landmarks·scion · ← database·landmarks·scion
+neighbors → accrual·balance·checklists·contingencies·disclosure·entries·escrow·law·liability · ← accrual·balance·checklists·contingencies·disclosure·entries·escrow·law·liability
 analysis —
 law a provision is recognized only when a past event creates a present obligation whose outflow is both probable and reliably measurable; otherwise it stays a disclosed contingency.
 
 ---
 
-<sub>content-uuid `a19d10cb-0155-8f15-a9af-eb8d2071059f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf914c0c-f0c4-8825-a9a4-bd453675ade7` · `pnpm readme` · `pnpm computed:check`</sub>

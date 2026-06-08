@@ -3,15 +3,15 @@
 
 # planting
 
-path `planting` · uuid `12ae433c-305d-81e6-a2d3-ed3c085a7ba7` · diamond `2c297c35-40e9-8f5c-9dc5-a224197a6e33`
+path `planting` · uuid `12ae433c-305d-81e6-a2d3-ed3c085a7ba7` · diamond `32d6855a-701e-8f0f-ba29-7189992f66aa`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agriculture·breath·crop·cropplan·give·harvest·law·market·propagation·rotation·schedule·season·sequence·share·spacing·take·transplant·yield · exports planting · escapes —
-links `33/33` · folded `1` · bonds in `2` out `2`
+links `33/33` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closing·landmarks · ← closing·landmarks
+neighbors → agriculture·breath·crop·cropplan·degreeday·fertility·frost·give·hardiness·harvest·law·market·maturity·pollination·propagation·rotation·schedule·season·seed·sequence·share·spacing·take·tillage·transplant·yield · ← agriculture·breath·crop·cropplan·degreeday·fertility·frost·give·hardiness·harvest·law·market·maturity·pollination·propagation·rotation·schedule·season·seed·sequence·share·spacing·take·tillage·transplant·yield
 analysis —
 law succession turns one glut into a continuous [[harvest]] — sow again every picking window (interval ≈ (days-to-maturity + harvest-window)÷2) and divide total row-length across the plantings, plus a +10–20% overplant buffer for germination loss.
 
 ---
 
-<sub>content-uuid `6a3a30e2-e508-8baa-882e-ae86c3aed669` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0aef7fc-703a-89cc-926a-b083c7aca011` · `pnpm readme` · `pnpm computed:check`</sub>

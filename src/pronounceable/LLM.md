@@ -3,15 +3,15 @@
 
 # pronounceable
 
-path `pronounceable` · uuid `c44ae00d-9a83-807e-b69d-84538ee1246b` · diamond `bed29658-bf73-8c29-8cf7-157ef2b17669`
+path `pronounceable` · uuid `c44ae00d-9a83-807e-b69d-84538ee1246b` · diamond `0de97f12-d392-842d-8b6b-5aace205483e`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·text · exports pronounceable · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 359·landmarks·musical · ← 359·landmarks·musical
+neighbors → collapse·law·merge·sti·text · ← collapse·law·merge·sti·text
 analysis —
 law pronounceable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ac2192ca-686f-8d00-883d-936f4b72d6bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5cb590ba-6fc9-81d6-ae2f-c1b6637182b7` · `pnpm readme` · `pnpm computed:check`</sub>

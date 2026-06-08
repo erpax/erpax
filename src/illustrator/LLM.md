@@ -3,15 +3,15 @@
 
 # illustrator
 
-path `illustrator` · uuid `ad4a7216-922e-81c1-a37a-6c4027576f05` · diamond `d7502d93-d7c3-8813-9488-5f248390886e`
+path `illustrator` · uuid `ad4a7216-922e-81c1-a37a-6c4027576f05` · diamond `b546ea18-5738-82ee-b688-6c8ecefaaffa`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports illustrator · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → biological·gluten·instructions·landmarks·percentage·promotion·temple · ← biological·gluten·instructions·landmarks·percentage·promotion·temple
+neighbors → law·thing · ← law·thing
 analysis —
 law illustrator is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1aaab228-29df-8d2e-ad01-c8274acb8b66` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8959084f-1905-80c7-b971-56b834aaade4` · `pnpm readme` · `pnpm computed:check`</sub>

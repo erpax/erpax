@@ -3,15 +3,15 @@
 
 # message
 
-path `message` · uuid `ab07d1ae-04f3-8a6c-b3f8-6869450e6194` · diamond `d619b9f4-0b9a-8b33-beea-5a49bd931178`
+path `message` · uuid `ab07d1ae-04f3-8a6c-b3f8-6869450e6194` · diamond `9b702eab-dfcd-8bc2-b3c4-1fc918eee514`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/localize·@/signal·@/uuid/matrix · exports const·function·interface · escapes —
-links `22/22` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `22/22` · folded `1` · bonds in `26` out `22`
+faces worker·plugin·pwa `1·0·0`
+neighbors → attachment·chat·collect·communication·cost·email·harmony·holographic·identity·llm·localize·memo·merge·oid·one·signal·standard·teleportation·topography·translate·translation·uuid · ← attachment·chat·chat·collect·communication·communication·communication·cost·email·harmony·holographic·identity·llm·localize·memo·merge·oid·one·signal·standard·teleportation·topography·translate·translation·uuid·uuid
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `934c367c-1f59-8074-aa1d-66590466ad94` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ef6d798-5661-8642-b99d-b4e46e66981c` · `pnpm readme` · `pnpm computed:check`</sub>

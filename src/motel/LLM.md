@@ -3,15 +3,15 @@
 
 # motel
 
-path `motel` · uuid `37633cd0-5fb1-8a08-9c72-bf902d9c6617` · diamond `b707bde9-b2bd-8f19-ba74-d8d265cdec48`
+path `motel` · uuid `37633cd0-5fb1-8a08-9c72-bf902d9c6617` · diamond `e3cf22ce-d05b-83bd-83a1-1e13425a5623`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports motel · escapes —
-links `2/2` · folded `1` · bonds in `3` out `3`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·internet·items · ← balance·internet·items
+neighbors → law·thing · ← law·thing
 analysis —
 law a motel is one lodging place that can be occupied by at most one guest-stay per unit at a time; double-booking the same unit is the forbidden state.
 
 ---
 
-<sub>content-uuid `22b5522d-d3cf-8f0c-8f9c-f9db9d322186` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `97684fd6-8037-8e05-af9e-5144c9cec934` · `pnpm readme` · `pnpm computed:check`</sub>

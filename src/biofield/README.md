@@ -23,7 +23,7 @@
 
 - partition `biofield` · sub-root `85bfe319-dff3-88d8-bd31-df58e478c523`
 - bond degree `45` · analysis neighbors `aura`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c47ff0c4-dcdb-80d7-adc8-5c0455220507` · framed by typography partition `biofield` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `957cfe5f-ea75-88a6-b981-1a7a8d4af05f` · framed by typography partition `biofield` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

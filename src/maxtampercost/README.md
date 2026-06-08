@@ -2,18 +2,18 @@
 
 # maxtampercost
 
-> atom `maxtampercost` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `maxtampercost` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `8` | [[balance]] `8` |
 | [[balance]] `2` | [[liability]]/[[links]]/dangling `2` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `16` | Σ `16` |
@@ -23,16 +23,16 @@
 ## typography graph
 
 - partition `maxtampercost` · sub-root `79ec51aa-2f49-8f41-b2f7-a1d7f44efa7d`
-- bond degree `15` · analysis neighbors `analytics` · `analytics/max-tamper-cost` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `27` · analysis neighbors `analytics` · `analytics/max-tamper-cost` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `79ec51aa-2f49-8f41-b2f7-a1d7f44efa7d`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `10`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
@@ -40,4 +40,4 @@
 
 ---
 
-<sub>content-uuid `b5f68d71-90e4-85fb-82f3-d7a8c37ae549` · framed by typography partition `maxtampercost` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `825db406-b487-82a0-9900-d291795c4343` · framed by typography partition `maxtampercost` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

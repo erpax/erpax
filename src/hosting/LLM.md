@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·organization·sti · exports hosting · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mentions·stat · ← cohort·landmarks·memories·mentions·stat
+neighbors → collapse·law·merge·organization·sti · ← collapse·law·merge·organization·sti
 analysis —
 law hosting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a18a425a-bbdd-87e2-abeb-b86e39c67320` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `714ea4c6-ca79-828a-b3c2-13755433c451` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -7,11 +7,11 @@ path `quantum/chat` · uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351` · diamond `6
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
 links `11/11` · folded `1` · bonds in `57` out `64`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·accounting·agent·agent·akashic·all·aura·balance·breakfast·catalogue·chat·chat·city·classified·colleagues·communication·communication·conference·contractual·corrects·dropoff·enterprisebudget·fertility·flight·founder·gears·getting·high·holographic·id·landmarks·landmarks·landmarks·leisure·liquor·list·list·list·marine·marry·mcp·memories·memories·memory·merchant·office·parent·platform·policy·qualification·qualification·recording·requests·roadmap·saturday·sections·seed·sell·sign·spatial·spouse·syllabus·tax·tour · ← 3986·accounting·agent·akashic·all·aura·balance·breakfast·catalogue·chat·chat·city·classified·colleagues·communication·conference·contractual·corrects·dropoff·enterprisebudget·fertility·flight·founder·gears·getting·high·holographic·id·landmarks·leisure·liquor·list·list·marine·marine·marry·mcp·memories·memory·office·parent·platform·policy·qualification·recording·requests·roadmap·saturday·sections·seed·sell·sign·spatial·spouse·syllabus·tax·tour
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·agent·agent·akashic·all·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·law·law·law·lexical·llm·matrix·mcp·merge·merge·message·message·one·part·plugins·port·quantum·quantum·recover·rodin·science·self·sequence·skills·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·uuid·whole · ← accounting·agent·akashic·all·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·law·lexical·llm·matrix·mcp·merge·message·one·part·plugins·port·quantum·recover·rodin·science·self·sequence·skills·society·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·whole
 analysis agent·aura
 law the thread-uuid is the order-dependent merkle fold of its message-uuids — `threadUuid` reduces them through `merge` from a fixed seed, so it is determined entirely by which messages are present and in what order. Appending, dropping, reordering, or altering any one message changes the thread-uuid (`appended` proves the append case), and no rewritten thread can reproduce a prior thread-uuid: the history is tamper-evident by construction.
 
 ---
 
-<sub>content-uuid `e26d3657-ebfa-89ca-ba40-1e756c2285e7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `64dd2ca2-3474-8f62-9872-2516a94211a2` · `pnpm readme` · `pnpm computed:check`</sub>

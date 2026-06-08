@@ -3,15 +3,15 @@
 
 # monday
 
-path `monday` · uuid `a65ca668-c180-8a54-b1ff-e62a29ace337` · diamond `4aaa0a01-7396-8347-ba48-0ffacee81c40`
+path `monday` · uuid `a65ca668-c180-8a54-b1ff-e62a29ace337` · diamond `db3c4808-9d16-86eb-9a60-38be9102fcc9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports monday · escapes —
-links `4/4` · folded `1` · bonds in `15` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·apiculture·aquaculture·biological·biomagnetism·entity·footer·has·height·landmarks·lineup·quote·reverse·test·worth · ← animal·apiculture·aquaculture·biological·biomagnetism·entity·footer·has·height·landmarks·lineup·quote·reverse·test·worth
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law monday is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3a4f1ab2-ee70-83cb-8ac0-0c03329cfe12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a2cf2a3-05d5-8ab7-a335-5112d8082109` · `pnpm readme` · `pnpm computed:check`</sub>

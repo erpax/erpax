@@ -3,15 +3,15 @@
 
 # import
 
-path `quantum/import` · uuid `041e9f45-3959-88df-b51f-72777153e544` · diamond `adce6023-7aa8-8c7e-bbb6-1a1741ac0dc8`
-horo `2` `share` · trinity `1·0·0` · sealed `0`
+path `quantum/import` · uuid `c34cceb3-27b2-85b2-882e-8e29e097983a` · diamond `ef5e4d74-bd99-89c7-96a8-cf98a70e8cc2`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports aura·convention·cost·entanglement·import·law·quantum·tamper · exports import · escapes —
-links `12/12` · folded `0` · bonds in `45` out `44`
-faces worker·plugin·pwa `0·0·0`
-neighbors → analog·aura·axis·balance·cohort·controlled·dance·differential·drone·entertainment·exported·fat·fax·force·founder·gears·grade·grant·grazing·handling·harden·header·import·landmarks·landmarks·link·list·meal·memo·memories·ordered·privilege·region·register·restocking·restriction·score·sections·series·shallow·shannon·shop·stat·symbol · ← analog·aura·aura·axis·balance·cohort·controlled·dance·differential·drone·entertainment·exported·fat·fat·fax·force·founder·gears·grade·grant·grazing·handling·harden·header·import·landmarks·link·list·meal·memo·memories·ordered·privilege·region·register·restocking·restriction·score·sections·series·shallow·shannon·shop·stat·symbol
-analysis aura·diamond·hallucination·purity·quantum/boundary·tamper/import
+links `12/12` · folded `1` · bonds in `14` out `20`
+faces worker·plugin·pwa `1·0·0`
+neighbors → aura·boundary·convention·cost·cost·cost·duality·entanglement·expense·exported·fresh·import·law·law·law·lawful·method·tamper·tamper·tamper · ← aura·boundary·convention·cost·duality·entanglement·expense·exported·fresh·import·law·lawful·method·tamper
+analysis aura·quantum/boundary·tamper/import
 law quantum computed import — entanglement with atom barrels only, derived from live source, never hand-drawn; deep imports are escapes that must collapse to `@/x`.
 
 ---
 
-<sub>content-uuid `896edfcc-eae9-8df0-ad7e-41ac012814b6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72be3e2d-c4a8-8e96-8479-2dc01560d474` · `pnpm readme` · `pnpm computed:check`</sub>

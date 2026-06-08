@@ -3,15 +3,15 @@
 
 # runbook
 
-path `runbook` · uuid `f3d9f926-6c36-8ffe-878c-05506bc00c62` · diamond `6360ea28-9d10-8fb3-b796-168a2f3386f1`
+path `runbook` · uuid `f3d9f926-6c36-8ffe-878c-05506bc00c62` · diamond `cc3db7a9-a685-8a35-8563-cf3a7234440e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·schedule·workflow · exports runbook · escapes —
-links `3/3` · folded `1` · bonds in `10` out `10`
+links `3/3` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·complete·cup·escrow·honorific·landmarks·memories·stat·total·unit · ← cohort·complete·cup·escrow·honorific·landmarks·memories·stat·total·unit
+neighbors → definitions·incident·law·schedule · ← definitions·incident·law·schedule
 analysis —
 law a runbook is an ordered, executable playbook of standard operating steps (incident response, failover, deployment, maintenance) — the procedure made repeatable so any operator runs it the same way.
 
 ---
 
-<sub>content-uuid `02294927-5ed1-80c0-b929-2431c972b72a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f660bb9b-9efd-803f-842a-678cf7b6bd9d` · `pnpm readme` · `pnpm computed:check`</sub>

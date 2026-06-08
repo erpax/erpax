@@ -23,7 +23,7 @@
 
 - partition `buyer` · sub-root `03ee15dd-b3ed-86ec-9187-6ad8f7da7cf5`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `96ac06ed-6789-835e-a0ed-58773cdcdfca` · framed by typography partition `buyer` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `581440f4-e574-8c45-a8b3-28b29c8b253d` · framed by typography partition `buyer` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

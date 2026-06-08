@@ -3,15 +3,15 @@
 
 # permissions
 
-path `permissions` · uuid `56e58b77-0ad4-8508-9d21-610b2b201e98` · diamond `cda5f182-6a4d-8ca0-ac27-58ce55bb9ac4`
+path `permissions` · uuid `56e58b77-0ad4-8508-9d21-610b2b201e98` · diamond `76bf12c5-49ea-8f46-b92a-dcc5473db0f3`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports permissions · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → allowed·cohort·landmarks·memories·stat · ← allowed·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law permissions is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `de759e43-de66-820b-ab81-7abeaaa4110a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8ba4de2-a4a6-8bc2-8068-7e426f37b596` · `pnpm readme` · `pnpm computed:check`</sub>

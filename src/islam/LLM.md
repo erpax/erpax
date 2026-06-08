@@ -3,15 +3,15 @@
 
 # islam
 
-path `islam` · uuid `—` · diamond `010ae481-03ce-8b6d-b13c-7a5a2a223e17`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `islam` · uuid `ef861c49-da1e-8844-b24d-fd7665da9e27` · diamond `6a83e4ca-f8d0-8852-9a63-a6bd9e035bf7`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·balance·cycle·diamond·faith·fast·fractal·gift·harmony·identity·law·mercy·merge·name·one·path·peace·prayer·religion·return·ritual·society·translator·uuid·word · exports islam · escapes —
-links `62/62` · folded `0` · bonds in `0` out `0`
+links `62/62` · folded `1` · bonds in `28` out `28`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·balance·cycle·diamond·faith·fast·fractal·gift·harmony·identity·law·mercy·merge·name·one·path·peace·prayer·religion·return·ritual·shia·society·sufism·sunni·translator·uuid·word · ← archangel·balance·cycle·diamond·faith·fast·fractal·gift·harmony·identity·law·mercy·merge·name·one·path·peace·prayer·religion·return·ritual·shia·society·sufism·sunni·translator·uuid·word
+analysis diamond
 law islam is a [[diamond]] of [[one]] · [[mercy]] · [[name]] · [[word]] · [[prayer]] · [[fast]] · [[gift]] · [[faith]] · [[peace]] · [[law]] — submission to the absolute [[one]] (tawhid), the ninety-nine [[name]]s its facets never forked ([[identity]]), [[peace]] the rest of being tuned; each Arabic term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `bd88842a-28e3-8aed-93ef-f0b0e6dbeb0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `206f2ca9-1712-8ed7-9c75-0ac18a813738` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # intake
 
-path `intake` · uuid `11db3421-3ee7-84fd-9818-d9fa62a1fa43` · diamond `38853396-0b97-89ca-85c9-9adf9241b560`
+path `intake` · uuid `11db3421-3ee7-84fd-9818-d9fa62a1fa43` · diamond `a106aaaf-a65c-83c5-9bdd-14035fadba71`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·maximum·merge·recommended·sti · exports intake · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·maximum·merge·recommended·sti · ← collapse·law·maximum·merge·recommended·sti
 analysis —
 law intake is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8b3168ce-8b95-8755-a22a-1af021ad2656` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6ef7af93-92b2-8799-b071-28ca5627ca7a` · `pnpm readme` · `pnpm computed:check`</sub>

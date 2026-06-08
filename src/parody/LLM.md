@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports parody · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → generator·landmarks·requests·solve · ← generator·landmarks·requests·solve
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law parody is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ca1c9b82-b6e3-8579-92d5-aaf8f6eee4ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b872e7b7-be31-8954-9bcb-45528ddd17a7` · `pnpm readme` · `pnpm computed:check`</sub>

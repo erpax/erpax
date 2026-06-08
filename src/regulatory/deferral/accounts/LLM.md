@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `2/2` · folded `1` · bonds in `19` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·access·accounting·accounting·accounting·auth·colleagues·equilibrium·holographic·id·id·invite·landmarks·partial·period·progression·reconciliations·runs·snapshots·spouse·tour·visit · ← access·accounting·auth·colleagues·equilibrium·holographic·id·invite·landmarks·partial·period·progression·reconciliations·reconciliations·runs·snapshots·spouse·tour·visit
+neighbors → access·access·accounting·accounting·accounting·adjustments·auth·collections·escrow·hooks·identity·identity·law·lines·locations·orders·party·proof·reconciliations·runs·standard·transaction · ← access·accounting·adjustments·auth·collections·escrow·hooks·identity·law·lines·locations·orders·party·proof·reconciliations·reconciliations·runs·standard·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `35b97d8d-ecf4-8abc-b5f3-c86276241aea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f3e1f41-aead-81f7-a942-be1979c5cb51` · `pnpm readme` · `pnpm computed:check`</sub>

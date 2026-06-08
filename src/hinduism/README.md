@@ -2,17 +2,17 @@
 
 # hinduism
 
-> atom `hinduism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `hinduism` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `hinduism` · sub-root `a75f7f0e-b7f1-82c4-be87-cef2b24f564e`
-- bond degree `35` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `92` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `a75f7f0e-b7f1-82c4-be87-cef2b24f564e`
+- bonds in `30` · out `30`
 - trinity form·code·proof `1`·`0`·`0`
 - links `69` / `69`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a1eda16c-0c8e-85dd-8c62-0aaed11561a5` · framed by typography partition `hinduism` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e4ae63d-517e-88f3-a1cd-e4110679551d` · framed by typography partition `hinduism` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

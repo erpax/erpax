@@ -3,15 +3,15 @@
 
 # payment
 
-path `payment` · uuid `c83af989-6379-83c4-8c2c-d1d9d4b51ef6` · diamond `3299f31b-cb70-8009-89f7-c14113944bc4`
+path `payment` · uuid `c83af989-6379-83c4-8c2c-d1d9d4b51ef6` · diamond `01b7644e-d98c-80c8-bca0-d1aac0cb6caf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·amount·commerce·currency·date·law·transaction · exports payment · escapes —
-links `11/11` · folded `1` · bonds in `5` out `5`
+links `11/11` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audience·cohort·landmarks·memories·stat · ← audience·cohort·landmarks·memories·stat
+neighbors → accepted·accounting·amount·api·applies·card·charge·commerce·contactless·currency·date·down·due·frequency·law·loan·minimum·run·scheduled·service·specification·trading·transaction·url · ← accepted·accounting·amount·api·applies·card·charge·commerce·contactless·currency·date·down·due·frequency·law·loan·minimum·run·scheduled·service·specification·trading·transaction·url
 analysis —
 law a payment is one cash inflow/outflow — a [[transaction]] binding a cash GL account, amount, [[date]], and counterparty in the [[accounting]]/[[commerce]] cycle.
 
 ---
 
-<sub>content-uuid `d71fe571-2fed-8a56-bced-d142cc4ec537` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0766a815-5463-8ee0-b9ab-a94244c54386` · `pnpm readme` · `pnpm computed:check`</sub>

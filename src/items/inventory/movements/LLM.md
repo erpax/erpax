@@ -3,15 +3,15 @@
 
 # movements
 
-path `items/inventory/movements` · uuid `e2b16d2a-a8a6-8fcc-8938-e22aec2fb54d` · diamond `a48aaf6c-1367-84e3-9952-18d226580504`
+path `items/inventory/movements` · uuid `e2b16d2a-a8a6-8fcc-8938-e22aec2fb54d` · diamond `1c8e1981-dccf-812e-9c74-ae72c5dcb361`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `6/6` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·balance·commerce·inventories·items·law·locations·movement·orders·transaction · ← accounting·balance·commerce·inventories·items·law·locations·movement·orders·transaction
 analysis —
 law the append-only stock ledger — every quantity change records its source and destination location and posts COGS/variance to the GL, never an in-place edit ([[balance]]).
 
 ---
 
-<sub>content-uuid `58a3419a-5ca7-8ddd-985d-d7ec25f958d4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ff1ae69b-5cd6-8638-abde-b4cc17591868` · `pnpm readme` · `pnpm computed:check`</sub>

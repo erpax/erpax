@@ -3,15 +3,15 @@
 
 # month
 
-path `month` · uuid `511e9f38-4c00-8d6b-ae36-3d72012dff2e` · diamond `cf4d3492-0098-875d-a4f2-b1f62633247b`
+path `month` · uuid `511e9f38-4c00-8d6b-ae36-3d72012dff2e` · diamond `71efc139-dddc-8337-ac1d-09355128e06b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports day·law·week · exports month · escapes —
-links `3/3` · folded `1` · bonds in `5` out `5`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·narcotic·stat · ← cohort·landmarks·memories·narcotic·stat
+neighbors → day·law·week · ← day·law·week
 analysis —
 law a month is the integer 1–12 with January fixed at 1 — outside that closed range it does not name a month.
 
 ---
 
-<sub>content-uuid `95d4e140-0287-88af-be79-82f6d2d42da6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `363a3141-7131-8eae-8890-684b7f09967b` · `pnpm readme` · `pnpm computed:check`</sub>

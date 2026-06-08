@@ -59,6 +59,9 @@ import {
   type SkillPage,
 } from '@/typography'
 import { conserves, trialBalance } from '@/conservation'
+import { sealPropagatedFromAncestors } from '@/seal'
+import { folderMatterState, folderMatterComplete } from '@/law/folder'
+import { diamondMembershipOk } from '@/diamond/membership'
 import {
   computeDiamond,
   deploymentFaces,
@@ -256,7 +259,7 @@ interface PackageJson {
 }
 
 /** Derive the README model from the live tree (matrix barrel + fs walk + package.json). Impure: reads fs. */
-export function deriveModel(cwd: string = process.cwd()): ReadmeModel {
+export function deriveModel(cwd: string = process.cwd(), analytics?: CorpusAnalytics): ReadmeModel {
   const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as PackageJson
   const counts = walkCounts(join(cwd, SRC))
   const { ring, axis } = projectRing()
@@ -292,7 +295,7 @@ export function deriveModel(cwd: string = process.cwd()): ReadmeModel {
     node: Object.entries(engines)
       .map(([k, v]) => `${k} ${v}`)
       .join(' · '),
-    analytics: deriveCorpusAnalytics(cwd),
+    analytics: analytics ?? deriveCorpusAnalytics(cwd),
   }
 }
 
@@ -409,8 +412,8 @@ export function renderReadme(model: ReadmeModel): string {
 }
 
 /** The full pipeline: live tree → README markdown bytes. */
-export function generateReadme(cwd: string = process.cwd()): string {
-  return renderReadme(deriveModel(cwd))
+export function generateReadme(cwd: string = process.cwd(), analytics?: CorpusAnalytics): string {
+  return renderReadme(deriveModel(cwd, analytics))
 }
 
 /** One posting on the debit or credit side — account is an atom wikilink path. */
@@ -657,10 +660,22 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
 
 /** Derive corpus analytics from every atom folder README model. */
 export function deriveCorpusAnalytics(cwd: string = process.cwd()): CorpusAnalytics {
+  return buildReadmeCorpus(cwd).analytics
+}
+
+/** One corpus scan — folder models + analytics (reuse across root README + materialize). */
+export interface ReadmeCorpus {
+  readonly models: readonly FolderReadmeModel[]
+  readonly ctx: FolderReadmeContext
+  readonly graph: AnalysisTypographyGraph
+  readonly analytics: CorpusAnalytics
+}
+
+export function buildReadmeCorpus(cwd: string = process.cwd()): ReadmeCorpus {
   const graph = buildReadmeTypographyGraph(cwd)
   const ctx = buildReadmeCorpusContext(cwd)
   const models = listAtomPaths(cwd).map((p) => deriveFolderModel(p, cwd, ctx, graph))
-  return aggregateCorpusAnalytics(models)
+  return { models, ctx, graph, analytics: aggregateCorpusAnalytics(models) }
 }
 
 type FolderAccountingInput = Pick<
@@ -882,12 +897,10 @@ export function deriveFolderModel(
   const dir = join(cwd, SRC, atomPath)
   const form = (existsSync(join(dir, 'SKILL.md')) ? 1 : 0) as 0 | 1
   const code = (existsSync(join(dir, 'index.ts')) || existsSync(join(dir, 'index.tsx')) ? 1 : 0) as 0 | 1
-  const proof = (
-    existsSync(dir) &&
-    (existsSync(join(dir, 'test.ts')) || readdirSync(dir).some((f) => f.endsWith('.test.ts')))
-      ? 1
-      : 0
-  ) as 0 | 1
+  const hasTestTs = existsSync(join(dir, 'test.ts'))
+  const matterState = folderMatterState(form, code, hasTestTs)
+  // Proof leg = test.ts for code atoms (colocated *.test.ts does not complete the trinity).
+  const proof = (code ? (hasTestTs ? 1 : 0) : 0) as 0 | 1
   const leaf = atomPath.split('/').pop() ?? atomPath
   const node = nodeOf(atomPath) ?? nodeOf(leaf)
   const matrixAtom = node?.atom ?? leaf
@@ -968,14 +981,30 @@ export function deriveFolderModel(
       /* wrangler.jsonc absent — skip CF accounting extras */
     }
   }
-  const sealed = Boolean(
-    (!code || (form && code && proof)) &&
+  const localSealed = Boolean(
+    folderMatterComplete(matterState) &&
+      diamondMembershipOk(atomPath, cwd) &&
       folded &&
       linksResolved === linksTotal &&
       onHoroRing(horo) &&
       uuid !== null &&
       escapes === 0 &&
       statement.balanced,
+  )
+  const ancestorCache = new Map<string, boolean>()
+  const ancestorSealed = (prefix: string): boolean => {
+    let v = ancestorCache.get(prefix)
+    if (v === undefined) {
+      v = deriveFolderModel(prefix, cwd, ctx, graph).sealed
+      ancestorCache.set(prefix, v)
+    }
+    return v
+  }
+  const sealed = sealPropagatedFromAncestors(
+    atomPath,
+    localSealed,
+    (p) => existsSync(join(cwd, SRC, p, 'SKILL.md')),
+    ancestorSealed,
   )
   const bindings = ctx.bindingsByAtom?.get(atomPath) ?? []
   const standards = ctx.standardsByAtom?.get(atomPath) ?? []
@@ -1226,12 +1255,14 @@ export interface ComputedFaceDrift {
 }
 
 /** Write README.md + LLM.md + diamond.json in every atom folder; returns count written. */
-export function materializeComputedFaces(cwd: string = process.cwd()): number {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+export function materializeComputedFaces(
+  cwd: string = process.cwd(),
+  corpus: ReadmeCorpus = buildReadmeCorpus(cwd),
+): number {
+  const { models } = corpus
   let n = 0
-  for (const atomPath of listAtomPaths(cwd)) {
-    const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
+  for (const folder of models) {
+    const atomPath = folder.atomPath
     const computation = folderComputation(atomPath, cwd)
     const diamond = computation.model
     const law = lawLineForAtom(atomPath, cwd)
@@ -1245,14 +1276,16 @@ export function materializeComputedFaces(cwd: string = process.cwd()): number {
 }
 
 /** Drift gate for all computed faces per folder. */
-export function verifyComputedFaces(cwd: string = process.cwd()): ComputedFaceDrift {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+export function verifyComputedFaces(
+  cwd: string = process.cwd(),
+  corpus: ReadmeCorpus = buildReadmeCorpus(cwd),
+): ComputedFaceDrift {
+  const { models } = corpus
   const readmeDrift: string[] = []
   const llmDrift: string[] = []
   const diamondDrift: string[] = []
-  for (const atomPath of listAtomPaths(cwd)) {
-    const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
+  for (const folder of models) {
+    const atomPath = folder.atomPath
     const computation = folderComputation(atomPath, cwd)
     const diamond = computation.model
     const law = lawLineForAtom(atomPath, cwd)
@@ -1291,7 +1324,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const cwd = process.cwd()
   const verify = process.argv.includes('--verify')
   const foldersOnly = process.argv.includes('--folders-only')
-  const expectedRoot = generateReadme(cwd)
+  const corpus = buildReadmeCorpus(cwd)
+  const expectedRoot = generateReadme(cwd, corpus.analytics)
   if (verify) {
     let failed = false
     const rootPath = join(cwd, 'README.md')
@@ -1306,7 +1340,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       console.error('✖ readme:check — root README drift.')
       failed = true
     }
-    const { readme, llm, diamond } = verifyComputedFaces(cwd)
+    const { readme, llm, diamond } = verifyComputedFaces(cwd, corpus)
     if (!readme.ok) {
       console.error(`✖ readme:check — ${readme.drift.length} folder README(s) drift: ${readme.drift.slice(0, 5).join(', ')}${readme.drift.length > 5 ? '…' : ''}`)
       failed = true
@@ -1327,8 +1361,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   if (!foldersOnly) {
     writeFileSync(join(cwd, 'README.md'), expectedRoot)
-    console.log(`readme: wrote README.md — content-uuid ${readmeUuid(deriveModel(cwd))}`)
+    console.log(`readme: wrote README.md — content-uuid ${readmeUuid(deriveModel(cwd, corpus.analytics))}`)
   }
-  const n = materializeComputedFaces(cwd)
+  const n = materializeComputedFaces(cwd, corpus)
   console.log(`readme: wrote ${n} folder computed faces (README.md + LLM.md + diamond.json)`)
 }

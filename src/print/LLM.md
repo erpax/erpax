@@ -3,15 +3,15 @@
 
 # print
 
-path `print` · uuid `33478ec3-e826-8f25-9a8f-e3bd4e3a5bf7` · diamond `a25016dc-178a-812d-8084-ea6aab8f2bda`
+path `print` · uuid `33478ec3-e826-8f25-9a8f-e3bd4e3a5bf7` · diamond `abece5af-45fb-80df-a329-ca8e0345a997`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·column·edition·law·merge·page·section·sti · exports print · escapes —
-links `8/8` · folded `1` · bonds in `7` out `7`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·countersigned·landform·landmarks·memories·stat·thing · ← cohort·countersigned·landform·landmarks·memories·stat·thing
+neighbors → collapse·column·edition·law·merge·page·section·sti · ← collapse·column·edition·law·merge·page·section·sti
 analysis —
 law print is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `269d3d29-7f3e-8f96-b20d-b0fcb0c2e83e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `135114d5-6fb8-842d-8a50-04b96e6b3de9` · `pnpm readme` · `pnpm computed:check`</sub>

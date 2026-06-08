@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `lung` · sub-root `ea8311c2-903c-847e-a86d-f21fa4698bbb`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `30` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `cafd4697-0434-898c-98b8-8c777b908a0c`
-- bonds in `2` · out `2`
+- uuid `ea8311c2-903c-847e-a86d-f21fa4698bbb`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e4fcff7b-e966-81a2-a193-7dd8e4add81f` · framed by typography partition `lung` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fc944c2d-0a5d-825a-a3bf-61f824376150` · framed by typography partition `lung` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

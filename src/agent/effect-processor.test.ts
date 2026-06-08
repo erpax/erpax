@@ -34,7 +34,7 @@ describe('processEffect', () => {
     expect(ctx.payload.create).toHaveBeenCalledWith({
       collection: 'invoices',
       data: { amount: 100 },
-      overrideAccess: true,
+      overrideAccess: false,
     })
   })
 
@@ -48,13 +48,19 @@ describe('processEffect', () => {
       collection: 'invoices',
       id: 'inv-1',
       data: { status: 'paid' },
-      overrideAccess: true,
+      overrideAccess: false,
     })
+  })
+
+  it('rejects cross-tenant emit (strict-apply)', async () => {
+    const ctx = mockCtx({ tenantId: 'tenant-a' })
+    const ev = { id: 'invoice:activated', tenantId: 'tenant-b', payload: {}, emittedAt: '2026-05-11T00:00:00Z' }
+    await expect(processEffect({ kind: 'emit', event: ev }, ctx)).rejects.toThrow(/strict-apply/)
   })
 
   it('handles emit — routes through ctx.emit verbatim', async () => {
     const ctx = mockCtx()
-    const ev = { id: 'invoice:activated', tenantId: 't', payload: {}, emittedAt: '2026-05-11T00:00:00Z' }
+    const ev = { id: 'invoice:activated', tenantId: 'tenant-1', payload: {}, emittedAt: '2026-05-11T00:00:00Z' }
     await processEffect({ kind: 'emit', event: ev }, ctx)
     expect(ctx.emit).toHaveBeenCalledWith(ev)
   })
@@ -75,7 +81,7 @@ describe('processEffect', () => {
 
   it('handles call — addresses one named agent via ctx.call (the agent-to-agent effect twin)', async () => {
     const ctx = mockCtx()
-    const event = { id: 'fx:quote-requested', tenantId: 't', payload: { pair: 'EURBGN' }, emittedAt: '' }
+    const event = { id: 'fx:quote-requested', tenantId: 'tenant-1', payload: { pair: 'EURBGN' }, emittedAt: '' }
     await processEffect({ kind: 'call', agentId: 'finance', event }, ctx)
     expect(ctx.call).toHaveBeenCalledWith('finance', event)
   })

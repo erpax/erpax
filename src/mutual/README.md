@@ -23,7 +23,7 @@
 
 - partition `mutual` · sub-root `c67446da-14a7-8651-a95a-54561b8fa18b`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `54920780-8399-8606-847e-d7d94a5ed068` · framed by typography partition `mutual` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `de552a55-4faa-8c86-9991-e8bcee6f5255` · framed by typography partition `mutual` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

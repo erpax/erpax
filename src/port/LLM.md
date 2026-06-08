@@ -3,15 +3,15 @@
 
 # port
 
-path `port` · uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a` · diamond `619a12d5-6422-8079-95f8-f0e6ab20e0fc`
+path `port` · uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a` · diamond `54d0e416-2358-82f6-80bb-3770fe54bc10`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
-imports @/diamond/projection·@/integrity · exports function·interface · escapes —
-links `40/40` · folded `1` · bonds in `5` out `5`
+imports @/diamond·@/integrity · exports function·interface · escapes —
+links `40/40` · folded `1` · bonds in `40` out `42`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·memories·stat · ← cohort·database·landmarks·memories·stat
-analysis quantum/boundary·tamper/import
+neighbors → access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·law·manufacturing·measure·merge·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid · ← access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid
+analysis —
 law every Rails/ActiveAdmin construct has one mechanical Payload home (the Rosetta map), and a port is done only as a complete [[trinity]] — matter (code) · antimatter (SKILL) · backend (generated schema) — that all agree.
 
 ---
 
-<sub>content-uuid `c9fbf798-e5c5-806c-9e98-553759fab382` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb71bc82-def5-8d20-ac2f-52f91db030bf` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `muscle` · sub-root `c3ac508c-7e29-8369-8286-d209fcd382a2`
-- bond degree `26` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `c3ac508c-7e29-8369-8286-d209fcd382a2`
-- bonds in `12` · out `12`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6e961ceb-fae4-86fb-b4b0-6356768b86ff` · framed by typography partition `muscle` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `05f6bb56-f660-8295-a5b6-48e4315695ba` · framed by typography partition `muscle` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

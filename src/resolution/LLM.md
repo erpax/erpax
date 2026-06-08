@@ -3,15 +3,15 @@
 
 # resolution
 
-path `resolution` · uuid `51de1a2d-33fa-8fe3-8642-709f202168bc` · diamond `2a427e9b-17d8-8f11-bf00-4103555b03ee`
+path `resolution` · uuid `51de1a2d-33fa-8fe3-8642-709f202168bc` · diamond `6cac1566-4f71-85dc-96cf-94dec84ad9f3`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports comment·escalation·status·ticket·workflow · exports resolution · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → false·follow·landmarks · ← false·follow·landmarks
+neighbors → comment·escalation·incident·instances·sla·status·ticket · ← comment·escalation·incident·instances·sla·status·ticket
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `ad946dbf-03fc-84ea-9637-2c37e8551081` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc5c1e3d-fddf-8010-9d16-4066374759e9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # dom
 
 path `can/use/dom` · uuid `2180c717-8b06-8a97-a587-5719462f670f` · diamond `c9c143e3-11df-82b1-b81c-eecd5ebc0552`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports default · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law branch on DOM availability through this one guard — never poke `window` or
 
 ---
 
-<sub>content-uuid `54c38514-6e81-8a61-a106-feee6f9dc456` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee50572e-0ab5-8f12-994f-9ce609c4a622` · `pnpm readme` · `pnpm computed:check`</sub>

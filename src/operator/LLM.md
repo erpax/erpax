@@ -3,15 +3,15 @@
 
 # operator
 
-path `operator` · uuid `def6e692-6438-88d6-9e16-261627bafa03` · diamond `baa70b8d-3c91-8253-b32b-6b534bf2478c`
+path `operator` · uuid `def6e692-6438-88d6-9e16-261627bafa03` · diamond `6699bc9b-5c9d-8b26-a58c-d32f4476166f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·service·sti · exports operator · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·coherence·consume·coordinate·driving·has·landmarks·physiological·playlist · ← action·coherence·consume·coordinate·driving·has·landmarks·physiological·playlist
+neighbors → collapse·law·merge·service·sti · ← collapse·law·merge·service·sti
 analysis —
 law operator is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e352ba86-a7ac-83cf-a434-483da3239a36` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3a8903d-dda8-8990-a021-4e1cf637bfe7` · `pnpm readme` · `pnpm computed:check`</sub>

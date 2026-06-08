@@ -3,15 +3,15 @@
 
 # roadmap
 
-path `roadmap` · uuid `b4a40999-147c-863f-8ed6-0621222eddf2` · diamond `72459772-0be1-8319-8921-153349267517`
+path `roadmap` · uuid `b4a40999-147c-863f-8ed6-0621222eddf2` · diamond `8d515707-584e-8c89-944c-c108ea8fe248`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports customers·law·projects·schedule · exports roadmap · escapes —
-links `5/5` · folded `1` · bonds in `65` out `69`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·3986·6585·access·akashic·all·anchor·angel·atom·balance·base·befriend·best·certified·chat·cohort·colleagues·conference·connection·declaration·diffusion·drone·dropoff·encodes·enterprisebudget·entertainment·fertility·founder·founder·gears·getting·grant·hobby·holographic·homeopathic·homeopathic·honorific·hours·landmarks·license·ligament·list·llm·maintainer·marine·marry·memories·memories·mention·office·parent·platform·progression·project·qualitative·requests·results·rheumatologic·risk·saturday·sections·seed·seed·sell·speed·syllabus·tour·upper·wp · ← 3986·6585·access·akashic·all·anchor·angel·atom·balance·base·befriend·best·certified·chat·cohort·colleagues·conference·connection·declaration·diffusion·drone·drone·dropoff·encodes·enterprisebudget·entertainment·fertility·founder·gears·getting·grant·hobby·holographic·homeopathic·honorific·hours·landmarks·license·ligament·list·llm·maintainer·marine·marry·memories·mention·office·parent·platform·progression·project·qualitative·requests·results·rheumatologic·risk·saturday·sections·seed·sell·speed·syllabus·tour·upper·wp
+neighbors → development·law·milestones·projects·schedule·tasks · ← development·law·milestones·projects·schedule·tasks
 analysis —
 law a roadmap is a dependency-ordered sequence of deliverables across time — a milestone cannot precede the work it depends on, so the timeline is constrained by the dependency graph and finite resources, never a free wishlist.
 
 ---
 
-<sub>content-uuid `824612c2-8b31-8882-af8b-d163df1b6e2d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0f2ef7b-2df2-8162-98dd-319558c0d77c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # tenant
 
 path `allow/public/read/tenant` · uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da` · diamond `a4877819-86fc-8913-90d2-af31af26d034`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/iso/27002 · exports async·const·function · escapes —
 links `5/5` · folded `1` · bonds in `12` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law public read is tenant-scoped opt-in — only tenants flagged `allowPublicRea
 
 ---
 
-<sub>content-uuid `9de14371-72eb-8ea0-994b-6ae09a45a9ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e016d5db-d177-84c5-914b-1568c9d05145` · `pnpm readme` · `pnpm computed:check`</sub>

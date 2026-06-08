@@ -3,15 +3,15 @@
 
 # run
 
-path `run` · uuid `ae03ef2e-f3dc-8ead-9d46-12be5f54fdb6` · diamond `ab48694b-d224-8ee1-8ff2-578ece909efe`
+path `run` · uuid `ae03ef2e-f3dc-8ead-9d46-12be5f54fdb6` · diamond `5339bc10-9f2b-8054-bfca-813846005ab4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·batch·dev·entry·horo·jobs·law·payment·schedule·society · exports run · escapes —
-links `18/18` · folded `1` · bonds in `1` out `1`
-faces worker·plugin·pwa `1·0·0`
-neighbors → landmarks · ← landmarks
+links `18/18` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `0·0·0`
+neighbors → balance·batch·dev·entry·horo·jobs·law·payment·schedule·society · ← balance·batch·dev·entry·horo·jobs·law·payment·schedule·society
 analysis —
 law one run is one bounded pass of a batch process — gather a set, authorise, execute once, reconcile — moving along a draft → approved → executed → settled lifecycle ([[horo]]).
 
 ---
 
-<sub>content-uuid `0541ecd7-9405-81c2-ab5d-22c841cf2c7d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72c2d4d9-49ba-88ce-8a89-7f12d0071c56` · `pnpm readme` · `pnpm computed:check`</sub>

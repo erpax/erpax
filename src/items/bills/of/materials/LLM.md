@@ -3,15 +3,15 @@
 
 # materials
 
-path `items/bills/of/materials` · uuid `ebf56f60-61ac-83ff-aeb4-df838a9d8663` · diamond `926f2673-abbf-8ef3-9028-93cc5cf22404`
+path `items/bills/of/materials` · uuid `ebf56f60-61ac-83ff-aeb4-df838a9d8663` · diamond `56dc4dc1-d457-8733-beaf-1765c03e7523`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `11` out `11`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·deduction·id·inker·issue·issued·landmarks·progression·snapshots·spouse·tour · ← accounting·deduction·id·inker·issue·issued·landmarks·progression·snapshots·spouse·tour
+links `5/5` · folded `1` · bonds in `5` out `5`
+faces worker·plugin·pwa `1·0·0`
+neighbors → bundle·centers·items·law·orders · ← bundle·centers·items·law·orders
 analysis —
 law the versioned recipe of components + quantities per finished good, controlled per engineering change, that seeds [[work/orders|work-order]] execution and cost-of-conversion absorption.
 
 ---
 
-<sub>content-uuid `0ffc7240-a36b-8912-aee8-703adb79cff6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9e1cd42-099b-8071-84fa-a8d6e9062a7c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `duns` · sub-root `6ae629ec-e5bd-8c89-b613-ff11cf1e759e`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8a10d266-c4f7-8ec0-bc08-891103893921` · framed by typography partition `duns` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d9c7977d-17fd-8f96-b6ca-a1b6560fdd92` · framed by typography partition `duns` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -4,7 +4,7 @@
 # before
 
 path `before` · uuid `c4d44480-de75-8d94-b65b-bf9633b1befb` · diamond `156bbd35-d0cc-882b-8d5b-bb027abddb20`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports collapse·law·media·merge·sti · exports before · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law before is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `2126567c-6710-8509-a28a-f922e2209e20` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a2663496-f982-8476-b9ae-836d65353eff` · `pnpm readme` · `pnpm computed:check`</sub>

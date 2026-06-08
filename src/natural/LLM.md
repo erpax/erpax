@@ -3,15 +3,15 @@
 
 # natural
 
-path `natural` · uuid `ca76ad09-9596-8ea0-8f89-c0515767e0ce` · diamond `ffba5b56-b366-895c-877b-45f740da8e32`
+path `natural` · uuid `ca76ad09-9596-8ea0-8f89-c0515767e0ce` · diamond `de9005ec-474f-8c6c-a09b-59537dc8fa01`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·progression·sti · exports natural · escapes —
-links `5/5` · folded `1` · bonds in `25` out `25`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → borrow·breakfast·coffee·cohort·competency·conflict·connected·death·description·diet·eat·endpoints·guideline·incentive·landmarks·likes·manufacturing·maps·memories·municipality·natural·physiological·postcode·saturday·therapeutic · ← borrow·breakfast·coffee·cohort·competency·conflict·connected·death·description·diet·eat·endpoints·guideline·incentive·landmarks·likes·manufacturing·maps·memories·municipality·natural·physiological·postcode·saturday·therapeutic
+neighbors → collapse·law·merge·progression·sti · ← collapse·law·merge·progression·sti
 analysis —
 law natural is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `760e00e3-3347-86fe-a40a-857559d80ec9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e18b26c3-2828-86a3-acb8-1b985d14bb88` · `pnpm readme` · `pnpm computed:check`</sub>

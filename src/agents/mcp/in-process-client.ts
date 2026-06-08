@@ -12,6 +12,8 @@
  */
 
 import type { PayloadRequest } from 'payload'
+import type { AgentLawState } from '@/agent/types'
+import { assertStrictMcpCall, defaultAgentLawState } from '@/agent/strict-apply'
 import type { ErpaxMcpTool } from './tool-defs'
 
 export interface McpToolDescriptor {
@@ -24,16 +26,24 @@ export interface McpClient {
   callTool(name: string, args: Record<string, unknown>): Promise<string>
 }
 
+export interface InProcessMcpClientOptions {
+  /** Law state for strict-apply gates on every tool call. */
+  readonly law?: AgentLawState
+}
+
 export function createInProcessMcpClient(
   tools: ReadonlyArray<ErpaxMcpTool>,
   req: PayloadRequest,
+  options?: InProcessMcpClientOptions,
 ): McpClient {
   const byName = new Map(tools.map((t) => [t.name, t]))
+  const law = options?.law ?? defaultAgentLawState()
   return {
     listTools: () => tools.map((t) => ({ name: t.name, description: t.description })),
     async callTool(name, args) {
       const tool = byName.get(name)
       if (!tool) throw new Error(`unknown MCP tool: ${name}`)
+      assertStrictMcpCall(law, name, args)
       const out = await tool.handler(args, req)
       return out.content.map((c) => c.text).join('\n')
     },

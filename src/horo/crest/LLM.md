@@ -3,15 +3,15 @@
 
 # crest
 
-path `horo/crest` · uuid `6f95de25-0cf6-8b51-b2fd-725190a99721` · diamond `c219fcf5-e893-885a-9c29-953b3f3c7b64`
+path `horo/crest` · uuid `6f95de25-0cf6-8b51-b2fd-725190a99721` · diamond `6a377c4d-16c1-86dc-a4ec-9062dc7fa77a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports coil·descent·horo·law·merge·queries·sequence·tags·weave · exports crest · escapes —
-links `11/11` · folded `1` · bonds in `11` out `11`
-faces worker·plugin·pwa `0·0·0`
-neighbors → flight·homeopathic·hook·horo·landmarks·propose·requests·rheumatologic·right·seed·sell · ← flight·homeopathic·hook·horo·landmarks·propose·requests·rheumatologic·right·seed·sell
+links `11/11` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → coil·descent·horo·law·merge·notes·queries·sequence·tags·weave · ← coil·descent·horo·law·merge·notes·queries·sequence·tags·weave
 analysis —
 law [[horo]] position 8 — the peak where the ascent completes (packed · assembled) and architectures [[merge]]; the next doubling folds back down to begin the return at [[descent]].
 
 ---
 
-<sub>content-uuid `02ef4835-4c21-8550-9cd7-edca7030f171` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3cc23ab1-96d5-8be5-a9bc-f5ac766bee8a` · `pnpm readme` · `pnpm computed:check`</sub>

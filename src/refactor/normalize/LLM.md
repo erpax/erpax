@@ -3,15 +3,15 @@
 
 # normalize
 
-path `refactor/normalize` · uuid `8faa4667-ec3c-859e-8fc8-f8ef2b9aef66` · diamond `2c9c7d88-b668-814e-98ba-02d0c2b7c131`
+path `refactor/normalize` · uuid `8faa4667-ec3c-859e-8fc8-f8ef2b9aef66` · diamond `4d1aa831-29ea-83b8-a34f-98d2e78d80c5`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports dissolve·identity·sequence · exports normalize · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
+links `5/5` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → allowed·cohort·landmarks·memories·stat · ← allowed·cohort·landmarks·memories·stat
+neighbors → dissolve·identity·refactor·sequence · ← dissolve·identity·refactor·sequence
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `476ad4a7-1925-818d-9d75-f4093db83685` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19bb5e69-2183-835a-806b-51b97a4df680` · `pnpm readme` · `pnpm computed:check`</sub>

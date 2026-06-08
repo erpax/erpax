@@ -3,15 +3,15 @@
 
 # medicine
 
-path `medicine` · uuid `09b9b2bc-7229-84ff-b2e2-31c44602b20a` · diamond `918f4f9e-e2bf-8ffd-b793-df624370241d`
+path `medicine` · uuid `09b9b2bc-7229-84ff-b2e2-31c44602b20a` · diamond `fd7ce2bc-aec6-8817-9913-8c1a9ab04ed1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·system · exports medicine · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·fertility·landmarks·list·mcp·progression·spouse·tour · ← accounting·fertility·landmarks·list·mcp·progression·spouse·tour
+neighbors → collapse·law·merge·sti·system · ← collapse·law·merge·sti·system
 analysis —
 law medicine is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3bb4751b-a2aa-8e2b-a178-5014b651a4f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `873c50b6-07ac-8f7f-bb07-232b7e1c0dd8` · `pnpm readme` · `pnpm computed:check`</sub>

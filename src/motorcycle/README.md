@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `motorcycle` · sub-root `0617262f-902a-83b6-a1d6-eca8b3eb36d1`
-- bond degree `15` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `11` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `0617262f-902a-83b6-a1d6-eca8b3eb36d1`
-- bonds in `5` · out `5`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8828d3c5-00ad-8a1b-945c-9e2522b58a9e` · framed by typography partition `motorcycle` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `90d5afe9-8218-83d5-bec3-32a367170148` · framed by typography partition `motorcycle` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

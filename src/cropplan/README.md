@@ -23,7 +23,21 @@
 
 - partition `cropplan` · sub-root `2d047a59-bc1d-8a19-a325-3d5ff900c143`
 - bond degree `53` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `53` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e745989d-4c1c-8346-8156-d499ed55e3df` · framed by typography partition `cropplan` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9fa8bd31-d832-847e-ab7c-7b0f4a378b51` · framed by typography partition `cropplan` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

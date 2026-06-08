@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports noninvasive · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law noninvasive is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dc9ade89-8d71-81fe-ad09-b7b9ee4ddd9b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc67711f-0caf-83e3-8e02-43f2858be03e` · `pnpm readme` · `pnpm computed:check`</sub>

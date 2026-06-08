@@ -3,15 +3,15 @@
 
 # one
 
-path `one` · uuid `cb9ce3d8-397b-8f82-b87b-a201b50f8044` · diamond `33b7a9a5-1716-8a79-b104-aa1f2e2ff2ed`
+path `one` · uuid `cb9ce3d8-397b-8f82-b87b-a201b50f8044` · diamond `d38b40a7-9016-8ac7-ad70-2ff8ea50304d`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports access·all·identity·merge·one·plugins·recover·sequence·torus·zeropoint · exports one · escapes —
-links `15/15` · folded `1` · bonds in `6` out `6`
+links `15/15` · folded `1` · bonds in `66` out `66`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·itnonprofit·landmarks·memories·stat·tissue · ← cohort·itnonprofit·landmarks·memories·stat·tissue
+neighbors → access·agent·all·aura·bahai·body·catholicism·chat·coil·collapse·collide·consciousness·contribution·cost·decompression·dimension·duality·emergence·entropy·expand·fold·forge·fusion·gate·generate·grace·gravity·harmony·hermeticism·hinduism·holographic·horo·identity·islam·judaism·matrix·merge·merge·message·metatron·one·one·paganism·plugins·recover·regeneration·science·self·sequence·sequence·shia·sikhism·skills·society·sufism·sunni·tamper·team·test·torus·trinity·unity·uuid·vedanta·whole·zeropoint · ← access·agent·all·aura·bahai·body·catholicism·chat·coil·collapse·collide·consciousness·contribution·cost·decompression·dimension·duality·emergence·entropy·expand·fold·forge·fusion·gate·generate·grace·gravity·harmony·hermeticism·hinduism·holographic·horo·identity·islam·judaism·matrix·merge·merge·message·metatron·one·one·paganism·plugins·recover·regeneration·science·self·sequence·shia·sikhism·skills·society·sufism·sunni·tamper·team·test·torus·trinity·unity·uuid·vedanta·whole·whole·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `278b7007-23b3-8224-895b-21ce6643af25` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `75441bdc-0d36-82af-b0c7-ab2441cef634` · `pnpm readme` · `pnpm computed:check`</sub>

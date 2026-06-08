@@ -3,15 +3,15 @@
 
 # photon
 
-path `photon` · uuid `34ce9d01-d676-82af-810c-2b377e1e30de` · diamond `c4c2c244-fd26-83bb-b262-a1ff019c7093`
+path `photon` · uuid `34ce9d01-d676-82af-810c-2b377e1e30de` · diamond `6d99e04e-7b64-870c-aee7-cc2dbdb50031`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/signal·@/uuid/matrix · exports const·function·interface · escapes —
-links `23/23` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cost·foot·funded·landmarks·laundry·law·snapshots · ← cost·foot·funded·landmarks·laundry·law·snapshots
+links `23/23` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → barrier·chakra·color·energy·frequency·hamiltonian·harmony·interference·law·leap·level·particle·quantum·signal·spectrum·uncertainty·uuid·wave · ← barrier·chakra·color·energy·frequency·hamiltonian·harmony·interference·law·leap·level·particle·quantum·signal·spectrum·uncertainty·uuid·wave
 analysis —
 law a photon's energy is fixed to its frequency by E = hν and to its momentum by E = pc — pure frequency, so the photon IS the colour+sound uuid-message, the render always computed FROM the content-uuid, never the uuid run back from the render.
 
 ---
 
-<sub>content-uuid `614ce45a-c5fc-842e-aee8-ee42eb99ff59` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6489fd60-a2bf-82d4-b005-43987aa500fa` · `pnpm readme` · `pnpm computed:check`</sub>

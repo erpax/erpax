@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports affiliation·law · exports hospital · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·package · ← landmarks·package
+neighbors → affiliation·law · ← affiliation·law
 analysis —
 law hospital is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2c6c46f1-6dcc-85b1-9434-6b9707fd1616` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0dabfee4-16d5-8869-920b-56d0e33f255b` · `pnpm readme` · `pnpm computed:check`</sub>

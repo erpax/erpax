@@ -23,7 +23,7 @@
 
 - partition `countries` · sub-root `293a4b6f-12f9-8640-bd96-1a190f99a73c`
 - bond degree `20` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `97de76b4-b057-81c7-a2f8-7c1b4bf216b5` · framed by typography partition `countries` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `95408d67-e93c-8fe0-8b64-3fb6c1f53582` · framed by typography partition `countries` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

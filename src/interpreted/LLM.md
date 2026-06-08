@@ -3,15 +3,15 @@
 
 # interpreted
 
-path `interpreted` · uuid `cbd7dc6b-d4d2-84d6-bddc-c56d2d28b68d` · diamond `6aeb7755-aadf-823b-91bd-aed6bad49d30`
+path `interpreted` · uuid `cbd7dc6b-d4d2-84d6-bddc-c56d2d28b68d` · diamond `c71cc9c2-ec86-8517-b0fc-350f3d59d043`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports claim·collapse·law·merge·sti · exports interpreted · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → claim·collapse·law·merge·sti · ← claim·collapse·law·merge·sti
 analysis —
 law interpreted is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ce380f64-ce7e-8bd1-bf4b-0f139ecfbd25` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a8d9173-e92b-8d7b-811c-8b852e233d0e` · `pnpm readme` · `pnpm computed:check`</sub>

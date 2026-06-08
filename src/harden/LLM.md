@@ -3,15 +3,15 @@
 
 # harden
 
-path `harden` · uuid `e40414df-8357-835b-8393-6a845935a470` · diamond `e9c7e77e-4045-818c-b1c9-48163846de18`
+path `harden` · uuid `e40414df-8357-835b-8393-6a845935a470` · diamond `da0ef581-c057-868c-a67d-6041554b7221`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports access·auth·config·deploy·optimize·upload · exports harden · escapes —
-links `6/6` · folded `1` · bonds in `64` out `65`
+links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → adult·aspect·beneficiary·bindings·brewery·casino·catalog·center·change·checklist·coach·cohort·composite·consumable·country·creative·defence·deleted·desktop·differential·djmix·draw·effective·endpoint·entanglement·fs·grazing·has·import·insertion·issn·landmarks·male·mandates·may·membership·memo·memories·mentions·mobility·observability·occupancy·parent·parking·performer·plugins·podiatric·political·privilege·product·records·replace·replication·restocking·search·sell·separation·shannon·speakable·stat·statistic·tech·terms·therapeutic·therapy · ← adult·aspect·beneficiary·bindings·brewery·casino·catalog·center·change·checklist·coach·cohort·composite·consumable·country·creative·defence·deleted·desktop·differential·djmix·draw·endpoint·entanglement·fs·grazing·has·import·insertion·issn·landmarks·male·mandates·may·membership·memo·memories·mentions·mobility·observability·occupancy·parent·parking·performer·plugins·podiatric·political·privilege·product·records·replace·replication·restocking·search·sell·separation·shannon·speakable·stat·statistic·tech·terms·therapeutic·therapy
+neighbors → access·api·auth·beyond·bindings·config·deploy·engineering·optimize·upload · ← access·api·auth·beyond·bindings·config·deploy·engineering·optimize·upload
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f8517bad-ab3a-8694-80a8-5571e4562f2f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d9527b2-bd3b-876b-9092-759ef2ed4eb2` · `pnpm readme` · `pnpm computed:check`</sub>

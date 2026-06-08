@@ -3,15 +3,15 @@
 
 # musculoskeletal
 
-path `musculoskeletal` · uuid `7b13c365-2957-8846-aef5-8065d98768aa` · diamond `04158f2b-5de3-8f8e-9f49-ab9b6f9efed9`
+path `musculoskeletal` · uuid `7b13c365-2957-8846-aef5-8065d98768aa` · diamond `ffcab902-9be3-84a6-95e3-dd84ca621e83`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports musculoskeletal · escapes —
-links `4/4` · folded `1` · bonds in `1` out `1`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law musculoskeletal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e3177228-06ac-85dd-ab46-5a3b13e0e6e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cde564d2-0ce5-850b-8b7e-42c55bda829d` · `pnpm readme` · `pnpm computed:check`</sub>

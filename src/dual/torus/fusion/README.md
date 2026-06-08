@@ -25,7 +25,24 @@
 
 - partition `dual` · sub-root `7e30f964-ac4d-8ec7-8f27-6deddfb3ca2d`
 - bond degree `113` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law` · banner
+- `fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law, computed` · banner
+- `the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `113` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `a264a5aa-1c06-8b6f-829f-aca06cd6d885` · framed by typography partition `dual` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2fcc12f9-f97f-805c-9ac7-d17547311d7c` · framed by typography partition `dual` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # pathophysiology
 
-path `pathophysiology` · uuid `ea2854f8-4095-88aa-8310-f7fb0da1c41c` · diamond `c36036ef-04d3-8938-bf19-8d5b593aa06a`
+path `pathophysiology` · uuid `ea2854f8-4095-88aa-8310-f7fb0da1c41c` · diamond `13c7e066-85ca-8416-9400-0323a920f057`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports associated·law · exports pathophysiology · escapes —
-links `2/2` · folded `1` · bonds in `25` out `24`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·breakfast·catalogue·comedy·conference·departure·dropoff·enterprisebudget·fertility·generator·holographic·id·invariant·landmarks·mcp·memories·pathophysiology·recourse·requests·sections·sign·speed·tvclip·vent · ← access·breakfast·catalogue·comedy·conference·departure·dropoff·enterprisebudget·fertility·generator·holographic·id·invariant·landmarks·mcp·mcp·memories·pathophysiology·recourse·requests·sections·sign·speed·tvclip·vent
+neighbors → associated·law · ← associated·law
 analysis —
 law pathophysiology is defined only as a deviation from a baseline of normal function — without the healthy reference there is no disorder to describe, so it is always stated relative to the norm it departs from.
 
 ---
 
-<sub>content-uuid `4fa6ccbe-b626-8201-b15a-2f942df9fde6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a0a0ff1-d441-8359-be78-b2d0dbf3445e` · `pnpm readme` · `pnpm computed:check`</sub>

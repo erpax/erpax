@@ -2,7 +2,7 @@
 
 # beyond
 
-> atom `beyond` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `beyond` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
 - bond degree `72` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -69,7 +69,7 @@
 
 ## analytics
 
-- bond degree `72` · sealed `1` · horo `7`
+- bond degree `72` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `33`
 
@@ -83,8 +83,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `866bff76-f32e-8cbe-93f3-8f559eed408b` · framed by typography partition `beyond` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4b103a21-ea34-8bf4-9f98-f611f30481f6` · framed by typography partition `beyond` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

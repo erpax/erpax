@@ -25,7 +25,7 @@
 
 - partition `compost` · sub-root `cda9024a-3a6e-850b-b561-e11c1c1ea90c`
 - bond degree `56` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -59,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `1e7c8f1c-5835-8429-b78c-58ca4474ae0c` · framed by typography partition `compost` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c340cf9f-67bf-873c-b273-e0e3717d82c4` · framed by typography partition `compost` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>

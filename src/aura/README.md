@@ -2,7 +2,7 @@
 
 # aura
 
-> atom `aura` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `aura` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `aura` · sub-root `863a5e37-ab12-800b-aa2e-be7556faeb44`
-- bond degree `438` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `architecture` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `maxtampercost` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `version` · `vibration` · `war` · `zoroastrianism`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- bond degree `438` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `maxtampercost` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `upgrade` · `version` · `vibration` · `war` · `zoroastrianism`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -39,7 +39,7 @@
 
 ## analytics
 
-- bond degree `438` · sealed `1` · horo `4`
+- bond degree `438` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
@@ -53,8 +53,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b2d78f8a-fd72-8c1e-9f9b-a52e5123dca0` · framed by typography partition `aura` bonds `438` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6df874de-43ab-8c81-8f98-8cf418bea6f0` · framed by typography partition `aura` bonds `438` · `pnpm readme` · `pnpm readme:check`</sub>

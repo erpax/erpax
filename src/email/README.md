@@ -23,7 +23,22 @@
 
 - partition `email` · sub-root `92d28840-d260-8e3b-83f6-7f8b7795e559`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `15078f1d-6b38-815f-a0c5-54ebb8b91d6d` · framed by typography partition `email` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ea3e6c1-f72b-8018-8df9-ddef30a17011` · framed by typography partition `email` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

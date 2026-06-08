@@ -3,15 +3,15 @@
 
 # returned
 
-path `returned` · uuid `65356b7f-31e8-89d9-abdd-ecc5411ed067` · diamond `a161441d-bad1-802d-8782-ae8d26fbb575`
+path `returned` · uuid `65356b7f-31e8-89d9-abdd-ecc5411ed067` · diamond `45a85365-dbd2-8c2c-9113-47a9239f5fc5`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports returned · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law returned is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `19dc4f0b-1c9f-8fb7-9a21-cc3503673cc3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26da46bd-6083-8d27-bd79-681c872ee61c` · `pnpm readme` · `pnpm computed:check`</sub>

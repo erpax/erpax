@@ -3,15 +3,15 @@
 
 # packages
 
-path `items/packages` · uuid `6482f2b5-aade-8e90-94ec-b84061673d14` · diamond `f6955385-4320-8b94-b837-50c4096025f3`
+path `items/packages` · uuid `6482f2b5-aade-8e90-94ec-b84061673d14` · diamond `a1808308-9bb0-87f5-9ef6-93ff1dc14d00`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `7/7` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·collections·fields·hooks·items·law·shipments·standard · ← access·accounting·collections·fields·hooks·items·law·shipments·standard
 analysis —
 law a logistic handling unit identified by a unique SSCC, self-nesting (pallet → carton → contents), binding item-lot lines to one shipment.
 
 ---
 
-<sub>content-uuid `df4bd445-e4fb-85af-8004-26ea34574b37` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d26ca646-b508-84a0-b503-2c8cbd7652af` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # placebo
 
-path `placebo` · uuid `f0c0d70f-d23e-8044-acc7-5e2f1291e874` · diamond `35d8695e-3e48-803e-99f6-da50d6eda4b5`
+path `placebo` · uuid `f0c0d70f-d23e-8044-acc7-5e2f1291e874` · diamond `9a919e5d-6aac-8461-a143-5952669e4e4b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports placebo · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sanitization·stat · ← cohort·landmarks·memories·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law placebo is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cb38ba58-70bd-83eb-8ade-34bff076fbff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df0641a3-06ed-8d53-92a7-87c217bafc2a` · `pnpm readme` · `pnpm computed:check`</sub>

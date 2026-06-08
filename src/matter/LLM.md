@@ -3,15 +3,15 @@
 
 # matter
 
-path `matter` · uuid `9fa22fa3-5612-889f-8501-aa0f526dd30a` · diamond `7d4f392a-0b9d-8e96-b46f-21bf3ab3556b`
+path `matter` · uuid `9fa22fa3-5612-889f-8501-aa0f526dd30a` · diamond `4241fe39-6f81-8ea7-a841-62bad91fe1b3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports access·akashic·allocation·balance·begin·close·compass·conflict·dimension·entry·holographic·horo·identity·localize·party·positions·privilege·proof·society·standard·transaction·trust · exports matter · escapes —
-links `35/35` · folded `1` · bonds in `5` out `5`
+links `35/35` · folded `1` · bonds in `45` out `45`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·separation·stat · ← cohort·landmarks·memories·separation·stat
+neighbors → access·akashic·allocation·amendment·assignment·auditright·balance·begin·clause·close·compass·confidentiality·conflict·consent·dataprotection·digit·dimension·disputeresolution·entry·forcemajeure·fs·governinglaw·holographic·horo·identity·indemnity·jurisdiction·law·liability·license·localize·party·positions·privilege·proof·remediation·restriction·society·standard·termination·transaction·trust·twinned·utilities·warranty · ← access·akashic·allocation·amendment·assignment·auditright·balance·begin·clause·close·compass·confidentiality·conflict·consent·dataprotection·digit·dimension·disputeresolution·entry·forcemajeure·fs·governinglaw·holographic·horo·identity·indemnity·jurisdiction·law·liability·license·localize·party·positions·privilege·proof·remediation·restriction·society·standard·termination·transaction·trust·twinned·utilities·warranty
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `25b79226-acec-82c3-b279-a179dab9bce6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `347eb14e-a5cd-8887-b76a-df45052cdcfc` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,29 @@
 
 - partition `en` · sub-root `aecfc1ef-8d5b-85e2-9373-2b82f1c6b070`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017` should grep to a single home that owns the types. Before this module, three places defined overlapping shapes:` · banner
+- `EN-16931:2017+A1:2019 semantic-model-electronic-invoice` · banner
+- `EN-16931` citation greps to, so the invoice shape is defined once and referenced, never re-defined.` · banner
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `ILO-C100` · catalogue
+- `UN-CEFACT` · catalogue
+
+## analytics
+
+- bond degree `3` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
@@ -41,4 +63,4 @@
 
 ---
 
-<sub>content-uuid `b12c4f42-44f8-8231-a4ba-40208aaabdcc` · framed by typography partition `en` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bbfd1485-d428-82b9-9edb-38f1978bdf31` · framed by typography partition `en` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

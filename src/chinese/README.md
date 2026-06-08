@@ -23,7 +23,7 @@
 
 - partition `chinese` · sub-root `a99cc645-b40a-8d06-82a8-08d70d119771`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `91e00131-db9e-88a9-9953-eed90e5cd13e` · framed by typography partition `chinese` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `57145ca0-11a1-84d0-8a7f-1272cf21a279` · framed by typography partition `chinese` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `radio` · sub-root `951af94d-8b45-8c5d-a312-fd9c4479ee67`
-- bond degree `33` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `51` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `951af94d-8b45-8c5d-a312-fd9c4479ee67`
-- bonds in `5` · out `5`
+- bonds in `14` · out `14`
 - trinity form·code·proof `1`·`0`·`0`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `95fb862a-850b-8822-aa6e-b1ab798f7018` · framed by typography partition `radio` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `46983363-650b-8f39-a56d-bdf88160d00a` · framed by typography partition `radio` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

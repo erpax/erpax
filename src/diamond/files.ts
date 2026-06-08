@@ -26,6 +26,29 @@ import {
   listAtomPaths,
   type FolderReadmeModel,
 } from '@/readme'
+import {
+  ALLOWED_DIAMOND_FILES,
+  CODE_MARKERS,
+  COLOCATED,
+  TRINITY_CODE,
+  TRINITY_FORM,
+  diamondAtomKind,
+  diamondMembershipViolations,
+  isChildAtomDir,
+  type DiamondAtomKind,
+  type DiamondMembershipViolation,
+} from './membership'
+
+export {
+  ALLOWED_DIAMOND_FILES,
+  CODE_MARKERS,
+  COLOCATED,
+  TRINITY_CODE,
+  TRINITY_FORM,
+  diamondAtomKind,
+  isChildAtomDir,
+  type DiamondAtomKind,
+}
 
 /** Must match @/readme COMPUTED_FACES — inlined to break diamond ↔ readme circular init. */
 const COMPUTED_FACES = ['README.md', 'LLM.md', 'diamond.json'] as const
@@ -35,52 +58,7 @@ import { computeBoundary } from '@/quantum/boundary'
 
 const SRC = 'src'
 
-/** Vocabulary atom — antimatter-only (SKILL.md, no code barrel). */
-export type DiamondAtomKind = 'vocabulary' | 'code'
-
-/** Trinity form leg — the only markdown that may be hand-authored (sealed by gates). */
-export const TRINITY_FORM = 'SKILL.md' as const
-
-/** Full trinity code legs for a code atom. */
-export const TRINITY_CODE = ['index.ts', 'test.ts'] as const
-
-/** Presence of matter or proof ⇒ code atom (trinity required by folder law). */
-export const CODE_MARKERS = ['index.ts', 'index.tsx', 'test.ts', 'test.tsx'] as const
-
-/** Tolerated co-locations (folder law + trinity organ). */
-export const COLOCATED = [
-  'index.tsx',
-  'index.test.ts',
-  'index.test.tsx',
-  'test.tsx',
-  'translations.ts',
-  'seed.ts',
-] as const
-
-/** UI component facets — rare necessities in component atoms. */
-const TSX_EXT = /\.tsx$/i
-const COLOCATED_TEST = /\.test\.(ts|tsx)$/i
-const FORBIDDEN_NAME = /\.(bak|backup)$/i
-
-const computedSet = (): ReadonlySet<string> => new Set(COMPUTED_FACES)
-
-const vocabularyCore = (): ReadonlySet<string> =>
-  new Set([TRINITY_FORM, ...COLOCATED, ...COMPUTED_FACES])
-
-const codeCore = (): ReadonlySet<string> =>
-  new Set([TRINITY_FORM, ...TRINITY_CODE, ...COLOCATED, ...COMPUTED_FACES])
-
-/** Allowed basenames per atom kind — nested child dirs are always allowed. */
-export const ALLOWED_DIAMOND_FILES: Readonly<Record<DiamondAtomKind, ReadonlySet<string>>> = {
-  vocabulary: vocabularyCore(),
-  code: codeCore(),
-}
-
-export interface DiamondFileViolation {
-  readonly atomPath: string
-  readonly file: string
-  readonly reason: string
-}
+export type DiamondFileViolation = DiamondMembershipViolation
 
 export interface DiamondAuditContext {
   readonly cwd: string
@@ -99,40 +77,9 @@ const isDir = (p: string): boolean => {
   }
 }
 
-const basenames = (dir: string): string[] => {
-  try {
-    return readdirSync(dir)
-  } catch {
-    return []
-  }
-}
-
-/** Classify atom kind from live basenames — code wins when matter or proof is present. */
-export function diamondAtomKind(files: Iterable<string>): DiamondAtomKind {
-  const set = new Set(files)
-  return CODE_MARKERS.some((m) => set.has(m)) ? 'code' : 'vocabulary'
-}
-
 /** Allowed basenames for this kind (does not include pattern allowlist). */
 export function allowedDiamondFiles(kind: DiamondAtomKind): ReadonlySet<string> {
   return ALLOWED_DIAMOND_FILES[kind]
-}
-
-/** Nested child atom — subdirectory holding its own SKILL.md diamond. */
-export function isChildAtomDir(parentDir: string, name: string): boolean {
-  return existsSync(join(parentDir, name, TRINITY_FORM))
-}
-
-const isAllowedFile = (name: string, kind: DiamondAtomKind): boolean => {
-  if (FORBIDDEN_NAME.test(name)) return false
-  if (name.startsWith('.') && name !== '.gitkeep') return false
-  const allowed = ALLOWED_DIAMOND_FILES[kind]
-  if (allowed.has(name)) return true
-  if (kind === 'code') {
-    if (TSX_EXT.test(name)) return true
-    if (COLOCATED_TEST.test(name)) return true
-  }
-  return false
 }
 
 /** Build once per corpus scan — caches folder + diamond models per atomPath. */
@@ -208,36 +155,7 @@ export function auditDiamondFolder(
   auditCtx: DiamondAuditContext = buildDiamondAuditContext(cwd),
   mode: DiamondFileAuditMode = 'full',
 ): { ok: boolean; violations: DiamondFileViolation[] } {
-  const dir = join(cwd, SRC, atomPath)
-  const entries = basenames(dir)
-  const fileNames = entries.filter((e) => !isDir(join(dir, e)))
-  const kind = diamondAtomKind(fileNames)
-  const violations: DiamondFileViolation[] = []
-
-  for (const e of entries) {
-    const p = join(dir, e)
-    if (isDir(p)) {
-      if (!isChildAtomDir(dir, e)) {
-        violations.push({ atomPath, file: e + '/', reason: 'stray-dir' })
-      }
-      continue
-    }
-    if (FORBIDDEN_NAME.test(e)) {
-      violations.push({ atomPath, file: e, reason: 'forbidden-backup' })
-      continue
-    }
-    if (e.startsWith('.')) {
-      violations.push({ atomPath, file: e, reason: 'stray-dotfile' })
-      continue
-    }
-    if (e.endsWith('.md') && e !== TRINITY_FORM && !computedSet().has(e)) {
-      violations.push({ atomPath, file: e, reason: 'stray-markdown' })
-      continue
-    }
-    if (!isAllowedFile(e, kind)) {
-      violations.push({ atomPath, file: e, reason: 'stray-file' })
-    }
-  }
+  const violations: DiamondFileViolation[] = [...diamondMembershipViolations(atomPath, cwd)]
 
   if (mode === 'full') {
     for (const face of COMPUTED_FACES) {

@@ -3,15 +3,15 @@
 
 # findings
 
-path `internal/controls/audit/findings` · uuid `c2be9c7a-6b9c-8c70-8c4e-a01ebdfd9de4` · diamond `58883dd2-81a4-83ed-b9cc-72d84608306b`
+path `internal/controls/audit/findings` · uuid `c2be9c7a-6b9c-8c70-8c4e-a01ebdfd9de4` · diamond `55d2bbbc-fb3b-8ea8-84ad-99a2151c632e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
-links `9/9` · folded `1` · bonds in `35` out `36`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·akashic·angel·audit·befriend·clip·colleagues·conventional·corrects·cup·database·departure·diffusion·encodes·friday·homeopathic·id·idempotency·interior·itcooperative·landmarks·list·llm·log·max·memories·oid·owner·post·progression·quote·risks·seed·sell·symbol·system · ← access·akashic·angel·befriend·clip·colleagues·conventional·corrects·cup·database·departure·diffusion·encodes·friday·homeopathic·id·idempotency·interior·itcooperative·landmarks·list·llm·log·max·memories·oid·owner·post·progression·quote·risks·seed·sell·symbol·system
+neighbors → access·akashic·finding·functions·hooks·law·materiality·plans·proof·provisions · ← access·akashic·finding·functions·hooks·law·materiality·plans·proof·provisions
 analysis —
 law an audit finding is an issue raised against a control — classified by severity (deficiency / significant deficiency / material weakness / misstatement) with root cause, management response and remediation status — persisted as permanent, tamper-evident evidence ([[proof]]).
 
 ---
 
-<sub>content-uuid `608c31f8-3ca4-8f6a-844f-667992cbf607` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3500a1d9-cfca-8199-a55b-c486e9fd384e` · `pnpm readme` · `pnpm computed:check`</sub>

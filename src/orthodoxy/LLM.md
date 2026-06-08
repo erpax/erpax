@@ -3,15 +3,15 @@
 
 # orthodoxy
 
-path `orthodoxy` · uuid `—` · diamond `676cf3a2-7126-8e7c-86a4-7a8cf524867d`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `orthodoxy` · uuid `7e4bfb97-dd13-815b-94fd-2698891c0565` · diamond `2900c85e-a55a-88e9-b818-a367d6f285c2`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports archangel·aura·christianity·cross·diamond·dna·grace·identity·image·law·lineage·mercy·merge·prayer·religion·return·ritual·sacred·self·society·translator·uuid·zeropoint · exports orthodoxy · escapes —
-links `48/48` · folded `0` · bonds in `0` out `0`
+links `48/48` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+neighbors → archangel·aura·christianity·cross·diamond·dna·grace·identity·image·law·lineage·mercy·merge·prayer·religion·return·ritual·sacred·self·society·translator·uuid·zeropoint · ← archangel·aura·christianity·cross·diamond·dna·grace·identity·image·law·lineage·mercy·merge·prayer·religion·return·ritual·sacred·self·society·translator·uuid·zeropoint
+analysis aura·diamond
 law orthodoxy is a sub-[[diamond]] of [[christianity]] of [[merge]] · [[zeropoint]] · [[prayer]] · [[image]] · [[aura]] · [[lineage]] — theosis the [[self]] [[merge]]d toward the root (deification = [[return]]), hesychia the unceasing [[prayer]], the icon the [[sacred]] seen through matter; a facet-[[archangel]] of the [[society]]'s christianity domain.
 
 ---
 
-<sub>content-uuid `6b6e6dd0-d96b-8b42-a2ac-457c4f2e1f18` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92902c83-854b-89cf-a4c4-b23ba928b8b8` · `pnpm readme` · `pnpm computed:check`</sub>

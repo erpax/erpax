@@ -2,7 +2,7 @@
 
 # heart
 
-> atom `heart` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `heart` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `heart` · sub-root `c7ad9cf8-738e-8390-aacb-942d908a05c4`
-- bond degree `40` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `86` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `210e5a5b-0053-87d1-8c74-7582466b8351`
-- bonds in `5` · out `5`
+- uuid `eb9f413f-cea8-8d25-a103-04a09cb70b57`
+- bonds in `28` · out `28`
 - trinity form·code·proof `1`·`1`·`1`
 - links `41` / `41`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `a098d097-01d2-87a0-9b38-75bdb74a8ac9` · framed by typography partition `heart` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `33386f03-e6dd-800f-ac95-48d7a55a31b7` · framed by typography partition `heart` bonds `86` · `pnpm readme` · `pnpm readme:check`</sub>

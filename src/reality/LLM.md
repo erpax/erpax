@@ -3,15 +3,15 @@
 
 # reality
 
-path `reality` · uuid `bf2b44af-c3bf-858f-acc5-fac1b41bb9b8` · diamond `2e5ca557-1dec-85bf-a9ad-b9d2699412be`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `reality` · uuid `7017b6ae-ca8f-841a-a74f-930176f58eaa` · diamond `78b8e5aa-1c89-8453-b418-386ca0eb4964`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `15/15` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → catalog·disclosures·inflow·install·landmarks·worth · ← catalog·disclosures·inflow·install·landmarks·worth
-analysis diamond·hallucination·purity
+links `15/15` · folded `1` · bonds in `20` out `22`
+faces worker·plugin·pwa `1·0·0`
+neighbors → anchor·collapse·deploy·device·finality·fs·generator·law·law·literature·matrix·matrix·merge·number·proof·quantum·quantum·reality·snapshot·uuid·verification·void · ← anchor·collapse·deploy·deploy·device·finality·fs·generator·law·literature·matrix·merge·number·proof·quantum·reality·snapshot·uuid·verification·void
+analysis —
 law reality is the live shipped state (what is actually on main / [[deploy]]ed), the live [[matrix]] root its fingerprint — a claim is real iff it matches that root ([[proof]]), content-addressed truth never assertion.
 
 ---
 
-<sub>content-uuid `733fdc22-8f70-84e2-b354-f1d74e8256d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80d65b3e-156f-80ac-8b12-9c127cc67b2c` · `pnpm readme` · `pnpm computed:check`</sub>

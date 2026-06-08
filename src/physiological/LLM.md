@@ -3,15 +3,15 @@
 
 # physiological
 
-path `physiological` · uuid `021ffa8c-8263-8b3c-8ca2-f39a6131280d` · diamond `97a5fe84-9e8b-8835-bfeb-82e72ac4c684`
+path `physiological` · uuid `021ffa8c-8263-8b3c-8ca2-f39a6131280d` · diamond `6fd75cb9-8c33-83bf-8e49-2de8f662d89a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports benefits·collapse·law·merge·sti · exports physiological · escapes —
-links `5/5` · folded `1` · bonds in `31` out `31`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accommodation·action·apartment·catalog·coherence·cohort·coordinate·corrects·driving·except·form·has·iata·inactive·incentive·instantaneous·landmarks·manure·memories·natural·operator·permitted·quote·schedules·services·spa·spouse·stat·therapeutic·unlimited·updates · ← accommodation·action·apartment·catalog·coherence·cohort·coordinate·corrects·driving·except·form·has·iata·inactive·incentive·instantaneous·landmarks·manure·memories·natural·operator·permitted·quote·schedules·services·spa·spouse·stat·therapeutic·unlimited·updates
+neighbors → benefits·collapse·law·merge·sti · ← benefits·collapse·law·merge·sti
 analysis —
 law physiological is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a0725a79-4ebe-88eb-9b35-141b39b711e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a52bbfb-c702-8e93-9815-383ce435d6ee` · `pnpm readme` · `pnpm computed:check`</sub>

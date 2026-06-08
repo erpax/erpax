@@ -3,15 +3,15 @@
 
 # living
 
-path `living` · uuid `5ad96184-4188-812b-9be4-1db65e271564` · diamond `a5684184-2284-89d3-bf61-fa2f8f6eae6a`
+path `living` · uuid `5ad96184-4188-812b-9be4-1db65e271564` · diamond `d846a16e-ef3f-832e-b036-152805cc3b67`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports living · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·cohort·landmarks·memories·stat · ← address·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law living is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c43887cf-84af-8dbb-b429-d0ec6f7d90f4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b17fb19d-405d-8bbc-9354-592b8f013584` · `pnpm readme` · `pnpm computed:check`</sub>

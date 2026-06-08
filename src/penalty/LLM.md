@@ -3,15 +3,15 @@
 
 # penalty
 
-path `penalty` · uuid `37649311-1996-8fb1-ba13-5ef30e3e2661` · diamond `3875c3bd-a9a1-839b-8d53-67d22f4364de`
+path `penalty` · uuid `37649311-1996-8fb1-ba13-5ef30e3e2661` · diamond `99d2f8ff-a3ab-80a8-9c53-907bf7cc839a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·early·law·merge·prepayment·sti · exports penalty · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·early·law·merge·prepayment·sti · ← collapse·early·law·merge·prepayment·sti
 analysis —
 law penalty is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3513c2b7-0c3d-8f36-a307-d5643c702ba0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e66ace73-a1e3-8bc4-8624-8043bb82891b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # invite
 
-path `invite` · uuid `f6f27cf1-77fa-88d3-97e3-25f7352df29d` · diamond `39828865-233c-8804-95a3-e0aee69605dc`
+path `invite` · uuid `f6f27cf1-77fa-88d3-97e3-25f7352df29d` · diamond `3f99e281-514d-88ad-9201-1be8cfa1a20f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports invite · escapes —
-links `5/5` · folded `1` · bonds in `7` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounts·homeopathic·inventory·issue·landmarks·spouse·system · ← accounts·homeopathic·inventory·issue·landmarks·spouse·system
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law invite is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a0776292-de0d-87b4-ac2b-5e36e088d660` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f8a2f07-d6f5-8b50-a721-c972f40d2294` · `pnpm readme` · `pnpm computed:check`</sub>

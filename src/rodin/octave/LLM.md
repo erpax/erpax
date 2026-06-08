@@ -3,15 +3,15 @@
 
 # octave
 
-path `rodin/octave` · uuid `b57df10a-3973-8dc5-901b-4dd0964af038` · diamond `be12b57c-789c-84ea-bffd-2382db2c1831`
+path `rodin/octave` · uuid `b57df10a-3973-8dc5-901b-4dd0964af038` · diamond `690f7d5a-3aff-8010-a1a3-c578c5d115cd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports begin·breath·close·coil·fractal·horo·merge·notes·rodin·sequence·torus·unity · exports octave · escapes —
-links `19/19` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·media·weave · ← landmarks·media·weave
+links `19/19` · folded `1` · bonds in `16` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → begin·breath·chakra·close·coil·coordinate·decompression·fractal·harmony·horo·merge·notes·rodin·sequence·torus·unity · ← begin·breath·chakra·close·coil·coordinate·decompression·fractal·harmony·horo·merge·notes·rodin·sequence·torus·unity
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `94638f7f-4281-80a1-8b54-5843a1599c9f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `56084319-e0b8-82fb-b38f-8b645ebdd7f8` · `pnpm readme` · `pnpm computed:check`</sub>

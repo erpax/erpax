@@ -3,15 +3,15 @@
 
 # import
 
-path `tamper/import` · uuid `041e9f45-3959-88df-b51f-72777153e544` · diamond `cc8bebcb-4526-8147-9c84-343ea4fbf850`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `tamper/import` · uuid `c34cceb3-27b2-85b2-882e-8e29e097983a` · diamond `8803e67c-e5fc-8bf8-8367-1f25fbdfa6b5`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/cost · exports const·function·interface · escapes —
-links `8/8` · folded `1` · bonds in `45` out `44`
+links `8/8` · folded `1` · bonds in `14` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → analog·aura·axis·balance·cohort·controlled·dance·differential·drone·entertainment·exported·fat·fax·force·founder·gears·grade·grant·grazing·handling·harden·header·import·landmarks·landmarks·link·list·meal·memo·memories·ordered·privilege·region·register·restocking·restriction·score·sections·series·shallow·shannon·shop·stat·symbol · ← analog·aura·aura·axis·balance·cohort·controlled·dance·differential·drone·entertainment·exported·fat·fat·fax·force·founder·gears·grade·grant·grazing·handling·harden·header·import·landmarks·link·list·meal·memo·memories·ordered·privilege·region·register·restocking·restriction·score·sections·series·shallow·shannon·shop·stat·symbol
-analysis aura·diamond·hallucination·purity·quantum/boundary·tamper/import
+neighbors → aura·boundary·convention·cost·cost·cost·duality·entanglement·expense·exported·fresh·import·law·law·law·lawful·method·tamper·tamper·tamper · ← aura·boundary·convention·cost·duality·entanglement·expense·exported·fresh·import·law·lawful·method·tamper
+analysis aura·quantum/boundary·tamper/import
 law anything importing not from index raises. The index is the atom's public seal; an import past it to a deep internal is an uncovered coupling that lowers tamper-cost. Import only from the index, and the import graph seals to ∞ — every deep import is a billed gap.
 
 ---
 
-<sub>content-uuid `d83803b8-f0e3-8334-9b73-866f9109fbb6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85fa9bd3-d5e5-887a-a0a3-c454423abac2` · `pnpm readme` · `pnpm computed:check`</sub>

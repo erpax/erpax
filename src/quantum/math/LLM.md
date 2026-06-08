@@ -3,15 +3,15 @@
 
 # math
 
-path `quantum/math` · uuid `ec8b01d1-80e2-816b-b802-3efdefe60fc9` · diamond `e6afd8e2-7a35-888a-acc6-96783a808aa5`
+path `quantum/math` · uuid `ec8b01d1-80e2-816b-b802-3efdefe60fc9` · diamond `81cfa2e5-399d-8cdf-98cc-ddd559689b65`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/horo · exports const · escapes —
-links `24/24` · folded `1` · bonds in `5` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← chemical·cohort·landmarks·memories·stat
+links `24/24` · folded `1` · bonds in `26` out `27`
+faces worker·plugin·pwa `1·0·0`
+neighbors → action·calculation·calculator·collapse·cost·digit·dry·entropy·expression·gravity·horo·law·law·math·matrix·merge·quantum·rodin·science·singularity·solve·solver·sti·tamper·uuid·void·zeropoint · ← action·calculation·calculator·collapse·cost·digit·dry·entropy·expression·gravity·horo·law·math·matrix·merge·quantum·rodin·science·singularity·solve·solver·sti·tamper·uuid·void·zeropoint
 analysis —
 law the digital root is a homomorphism onto (ℤ/9ℤ) — root(a+b) === root(root(a)+root(b)), the fold closes mod-9 and never escapes 1..9. Every value here is a derived root, never a stored magnitude, so the math carries zero entropy: compute, don't store; fold, don't sprawl.
 
 ---
 
-<sub>content-uuid `560bc816-aafe-8e46-8d4a-2a0e0af21ab0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5a5c712-4c9a-802d-8f26-8718c3711381` · `pnpm readme` · `pnpm computed:check`</sub>

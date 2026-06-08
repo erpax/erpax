@@ -3,15 +3,15 @@
 
 # playlist
 
-path `playlist` · uuid `da1fd408-11d4-8a69-828a-d7b50a93410e` · diamond `c4a33005-a45f-823e-b08f-5bcf705bd017`
+path `playlist` · uuid `da1fd408-11d4-8a69-828a-d7b50a93410e` · diamond `a50730c7-5a55-8ea9-9719-1bfe7dc49efd`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·music · exports playlist · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·consume·entity·landmarks·memories·operator·stat · ← cohort·consume·entity·landmarks·memories·operator·stat
+neighbors → law·music · ← law·music
 analysis —
 law playlist is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6c3c0db0-28d2-8f83-8f7b-22a38c4fad3e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8cdf16e1-be58-800a-a74a-fd5fe051df22` · `pnpm readme` · `pnpm computed:check`</sub>

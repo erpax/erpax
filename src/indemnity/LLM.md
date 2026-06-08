@@ -3,15 +3,15 @@
 
 # indemnity
 
-path `indemnity` · uuid `3e50d454-3c94-89db-a520-fd33b6b946e4` · diamond `fed034bb-526a-8a99-be35-9958e76ad540`
+path `indemnity` · uuid `3e50d454-3c94-89db-a520-fd33b6b946e4` · diamond `0a827c6d-f4fe-814e-9877-8ae6ed642ef2`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports contracts·law·legal·liability·matter · exports indemnity · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → contracts·law·liability·matter·registers·remediation·warranty · ← contracts·law·liability·matter·registers·remediation·warranty
 analysis —
 law an indemnity is one party's promise to make another whole for loss or liability arising from a specified trigger (third-party claim, breach, negligence) — the obligation is bounded by its defined scope, caps and procedure.
 
 ---
 
-<sub>content-uuid `8c70aa1e-7519-8f31-9718-3dca693111ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e38efcf5-e84d-885f-8823-ee6744d0c208` · `pnpm readme` · `pnpm computed:check`</sub>

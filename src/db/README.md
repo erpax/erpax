@@ -25,7 +25,23 @@
 
 - partition `db` · sub-root `db14bd7d-6f1e-8b90-b30f-25a8e48592b1`
 - bond degree `27` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `content-addressed storage (RFC 9562 §5.8 UUIDv8) · append-only (the akashic record)` · banner
+- `the key is the content's uuid (content-addressed); dedup and round-trip are computed, never assigned` · banner
+- `the key is the content's uuid (content-addressed); dedup and the round-trip are computed` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `252bc9c2-0146-838b-9597-8e1d59325f1d` · framed by typography partition `db` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `076f44ad-d420-893b-a22c-3a9cd3f021fd` · framed by typography partition `db` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

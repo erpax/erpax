@@ -3,15 +3,15 @@
 
 # polymer
 
-path `polymer` · uuid `213d5187-8e27-89e0-b195-8007107326e7` · diamond `2885d3b0-f2d6-824f-ba05-cc1e38ce863f`
+path `polymer` · uuid `213d5187-8e27-89e0-b195-8007107326e7` · diamond `8c7404d3-09cc-890f-9dbc-92b265c3ea4d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports bio·collapse·has·law·merge·sequence·sti · exports polymer · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·requirements·stat·transfer · ← cohort·landmarks·memories·requirements·stat·transfer
+neighbors → bio·collapse·has·law·merge·sequence·sti · ← bio·collapse·has·law·merge·sequence·sti
 analysis —
 law polymer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `13b33b4f-8586-82fa-ab88-fb67380034ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5f23f8e4-adb2-8d8d-bb5a-99696a526c18` · `pnpm readme` · `pnpm computed:check`</sub>

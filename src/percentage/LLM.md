@@ -3,15 +3,15 @@
 
 # percentage
 
-path `percentage` · uuid `723de288-6480-8514-bdae-d1c3739a07cf` · diamond `14cc0bb4-e2db-8a11-a673-a5bd638490c7`
+path `percentage` · uuid `723de288-6480-8514-bdae-d1c3739a07cf` · diamond `1a4c713f-6513-8b51-890d-fdc0287ae745`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports annual·collapse·law·merge·order·rate·sti·weight · exports percentage · escapes —
-links `8/8` · folded `1` · bonds in `16` out `16`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·biological·crisis·donate·grants·hardcover·illustrator·landmarks·masthead·sbbi·screen·soil·temple·torus·vibration·worth · ← agriculture·biological·crisis·donate·grants·hardcover·illustrator·landmarks·masthead·sbbi·screen·soil·temple·torus·vibration·worth
+neighbors → annual·collapse·law·merge·order·rate·sti·weight · ← annual·collapse·law·merge·order·rate·sti·weight
 analysis —
 law percentage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `51d8801c-e8de-89af-8569-c434363902ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72169dc2-b28e-8f9d-b833-5780cd12cad9` · `pnpm readme` · `pnpm computed:check`</sub>

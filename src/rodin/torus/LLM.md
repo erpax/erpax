@@ -3,15 +3,15 @@
 
 # torus
 
-path `rodin/torus` · uuid `950be603-c3c9-8d0a-9b9c-25d72587f836` · diamond `b7052d0a-7728-8010-8130-547397fb0edc`
+path `rodin/torus` · uuid `950be603-c3c9-8d0a-9b9c-25d72587f836` · diamond `e57647d0-7449-8b0b-8003-98c619bf10e7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports axis·balance·base·coil·fractal·horo·merge·octave·part·rodin·unity·whole · exports torus · escapes —
-links `21/21` · folded `1` · bonds in `11` out `11`
-faces worker·plugin·pwa `0·0·0`
-neighbors → biological·grants·landmarks·masthead·percentage·promise·sbbi·seat·sla·soil·task · ← biological·grants·landmarks·masthead·percentage·promise·sbbi·seat·sla·soil·task
+links `21/21` · folded `1` · bonds in `66` out `70`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·akashic·all·anchor·angel·atom·axis·balance·base·begin·beyond·chakra·chat·coil·collapse·collections·config·consciousness·cross·database·decompression·dimension·duality·end·entropy·fields·fractal·fractal·fusion·generate·give·gravity·heart·holographic·hooks·horo·horo·humandesign·law·limit·linearity·localize·manufacturing·matrix·merge·merge·metatron·octave·one·part·plugins·projection·proof·reverse·rodin·rodin·science·self·sequence·society·stack·take·transaction·types·unity·utility·uuid·whole·whole·zeropoint · ← access·akashic·all·anchor·angel·atom·axis·balance·base·begin·beyond·chakra·chat·coil·collapse·collections·config·consciousness·cross·database·decompression·dimension·duality·end·entropy·fields·fractal·fusion·fusion·generate·give·gravity·heart·holographic·hooks·horo·humandesign·law·limit·linearity·localize·manufacturing·matrix·merge·metatron·octave·one·part·plugins·projection·proof·reverse·rodin·science·self·sequence·society·stack·take·transaction·types·unity·utility·uuid·whole·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2c642b37-3e29-8746-b132-9e486c2bf9a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07694a72-4b01-84ba-9817-ee7a5da18c1e` · `pnpm readme` · `pnpm computed:check`</sub>

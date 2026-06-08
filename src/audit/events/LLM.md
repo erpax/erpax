@@ -4,7 +4,7 @@
 # events
 
 path `audit/events` · uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3` · diamond `c655200f-fbb2-83cb-94f1-85f08bd069bc`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/populate/tenant · exports default · escapes —
 links `5/5` · folded `1` · bonds in `23` out `27`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ed5255c0-0a99-8918-a05c-25f48f76a4a0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b96e64dc-8d08-8054-aa88-c5023530fd0e` · `pnpm readme` · `pnpm computed:check`</sub>

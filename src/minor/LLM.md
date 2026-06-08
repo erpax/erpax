@@ -3,15 +3,15 @@
 
 # minor
 
-path `minor` · uuid `974b2b12-d4fb-8efd-ad96-14a0ee1a56f2` · diamond `ee1a1e8b-1ac2-83fb-b4b0-6d05356f0b6b`
+path `minor` · uuid `974b2b12-d4fb-8efd-ad96-14a0ee1a56f2` · diamond `f67eef13-2d45-8a44-8e01-08bdd08af67a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports minor · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → application·cohort·landmarks·memories·person·stat·statistic·unlimited · ← application·cohort·landmarks·memories·person·stat·statistic·unlimited
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law minor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `855533a8-485e-8475-b56a-ce3f4b955d3d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8c71dd77-e0bf-89cc-9b1d-ca77eca1570c` · `pnpm readme` · `pnpm computed:check`</sub>

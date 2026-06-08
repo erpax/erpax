@@ -3,15 +3,15 @@
 
 # located
 
-path `located` · uuid `78816ee7-46e7-8a37-9311-59c13cd3abd3` · diamond `b63659e9-b601-804f-b1b1-db15922c2eb6`
+path `located` · uuid `78816ee7-46e7-8a37-9311-59c13cd3abd3` · diamond `0e72fa54-61d8-8fd5-b7ee-52255854d635`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·location·merge·sti·subcellular · exports located · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·location·merge·sti·subcellular · ← collapse·law·location·merge·sti·subcellular
 analysis —
 law located is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c63ee689-055f-8bb7-a0e3-81a60b7bc1da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da08b197-5137-807a-9488-0e700dbfa915` · `pnpm readme` · `pnpm computed:check`</sub>

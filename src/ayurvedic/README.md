@@ -23,7 +23,7 @@
 
 - partition `ayurvedic` · sub-root `b38fdd6b-ed53-854d-beb1-cb508208a263`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `eddc541f-1ae9-88e1-b385-f012c901a0de` · framed by typography partition `ayurvedic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `315b4c14-80d6-8326-a514-f703cd611a18` · framed by typography partition `ayurvedic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

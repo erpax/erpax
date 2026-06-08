@@ -23,7 +23,7 @@
 
 - partition `phonetic` · sub-root `de46de97-b2e0-8442-aa7c-4bf89d5ccb8b`
 - bond degree `15` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c0dd70b2-4f2e-8eed-b3ab-4feb22f88f2d` · framed by typography partition `phonetic` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1fb18037-80d1-8d36-b9cc-83c32dfa4f0d` · framed by typography partition `phonetic` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # main
 
-path `main` · uuid `fcc1aeff-bef7-8a7d-85d2-b594ef6f8358` · diamond `c94af334-5d37-8d67-b539-364f2d070a61`
+path `main` · uuid `fcc1aeff-bef7-8a7d-85d2-b594ef6f8358` · diamond `8b10bb13-205f-87b9-a89c-6b5b9a3f2bd0`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·content·entity·law·merge·page·sti · exports main · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·content·entity·law·merge·page·sti · ← collapse·content·entity·law·merge·page·sti
 analysis —
 law main is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e2f1ec02-035b-84f5-a881-b36dc6aa31a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5c2398de-a0e7-8813-8456-00ef353c0c63` · `pnpm readme` · `pnpm computed:check`</sub>

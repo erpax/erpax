@@ -3,15 +3,15 @@
 
 # project
 
-path `project` · uuid `0837057b-5912-8421-a0ec-7b7401cb6834` · diamond `22e177d5-9fdc-89b6-9f68-c1b7dc6064e6`
+path `project` · uuid `0837057b-5912-8421-a0ec-7b7401cb6834` · diamond `0b70a71b-4f42-8cc3-9153-c27d307c137f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·research · exports project · escapes —
-links `2/2` · folded `1` · bonds in `19` out `24`
+links `2/2` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → all·anchor·best·corrects·entity·getting·high·hobby·id·id·landmarks·landmarks·liquor·list·list·llm·llm·memories·memories·progression·roadmap·syllabus·variables·wp · ← all·anchor·best·corrects·entity·getting·high·hobby·id·landmarks·liquor·list·llm·memories·progression·roadmap·syllabus·variables·wp
+neighbors → law·milestone·observe·planning·research · ← law·milestone·observe·planning·research
 analysis —
 law project is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9623a3cb-3ba0-86aa-8bf0-bea7d7f88861` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b743edc-77c9-8932-95b6-27033de4343b` · `pnpm readme` · `pnpm computed:check`</sub>

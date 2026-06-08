@@ -3,15 +3,15 @@
 
 # owned
 
-path `owned` · uuid `9fa437cd-9bb2-8753-ac6b-cda911b106de` · diamond `cc224b74-6950-8fc3-bada-fa905efe57db`
+path `owned` · uuid `9fa437cd-9bb2-8753-ac6b-cda911b106de` · diamond `4e4649bd-9328-89f2-a398-7db0375794c8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·through · exports owned · escapes —
-links `2/2` · folded `1` · bonds in `34` out `34`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 15·about·acquire·checkins·cohort·colleague·consume·contained·electrician·encodes·entanglement·faith·issn·landmarks·length·loyalty·measurement·memories·preschool·presentation·producer·publication·replacee·resources·responsibilities·score·stack·stat·structures·tobacco·unlimited·until·vendor·war · ← 15·about·acquire·checkins·cohort·colleague·consume·contained·electrician·encodes·entanglement·faith·issn·landmarks·length·loyalty·measurement·memories·preschool·presentation·producer·publication·replacee·resources·responsibilities·score·stack·stat·structures·tobacco·unlimited·until·vendor·war
+neighbors → law·through · ← law·through
 analysis —
 law owned is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d903c0d3-1038-81ce-9918-163d6d6b5791` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c6474b01-2efc-80cc-8ca4-6ff6744fe448` · `pnpm readme` · `pnpm computed:check`</sub>

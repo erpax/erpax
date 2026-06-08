@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·some·sti · exports products · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mycorrhizae·stat · ← cohort·landmarks·memories·mycorrhizae·stat
+neighbors → collapse·law·merge·some·sti · ← collapse·law·merge·some·sti
 analysis —
 law products is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `85cdffa5-71ad-812e-8025-c03a72166d62` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `086cf532-1980-83f6-8bd3-e51e1cf53ba3` · `pnpm readme` · `pnpm computed:check`</sub>

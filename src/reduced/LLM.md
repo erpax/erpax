@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports reduced · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law reduced is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `855d83f7-0af0-8900-9d1a-958bfcb4b95e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e3d546c-7351-8645-ba22-bc2c14d4b1ca` · `pnpm readme` · `pnpm computed:check`</sub>

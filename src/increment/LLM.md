@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports billing·collapse·law·merge·sti · exports increment · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dissolve·landmarks·memories·stat · ← cohort·dissolve·landmarks·memories·stat
+neighbors → billing·collapse·law·merge·sti · ← billing·collapse·law·merge·sti
 analysis —
 law increment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4162c5eb-2354-8a54-a8c3-663351bf2d72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4aee7405-2f36-850a-bcb5-46f6ac9efc83` · `pnpm readme` · `pnpm computed:check`</sub>

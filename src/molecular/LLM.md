@@ -3,15 +3,15 @@
 
 # molecular
 
-path `molecular` · uuid `8c75afc0-537d-8a09-82fd-da842b78a8e3` · diamond `5317cbe0-afc2-8dae-ab88-d596678b69c4`
+path `molecular` · uuid `8c75afc0-537d-8a09-82fd-da842b78a8e3` · diamond `18e18e2a-7e95-887b-b27c-a7a4cf91c7c8`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·entity·formula·function·has·law·merge·monoisotopic·sti·weight · exports molecular · escapes —
-links `10/10` · folded `1` · bonds in `5` out `5`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·expand·landmarks·memories·stat · ← cohort·expand·landmarks·memories·stat
+neighbors → collapse·entity·formula·function·has·law·merge·monoisotopic·sti·weight · ← collapse·entity·formula·function·has·law·merge·monoisotopic·sti·weight
 analysis —
 law molecular is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `047f44c0-0339-89be-844b-82a095ade1f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00114394-f302-8248-a392-d206063f23f8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # evidences
 
-path `media/audit/evidences` · uuid `7b224d07-f99b-8f2f-b981-a8f26eb043b8` · diamond `412129f8-e6a0-82b4-8273-d87e8fe5afba`
+path `media/audit/evidences` · uuid `7b224d07-f99b-8f2f-b981-a8f26eb043b8` · diamond `623e7bc9-f9cd-8a77-b783-cd00a049d205`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·embedded·landmarks·memories·spouse·stat · ← cohort·embedded·landmarks·memories·spouse·stat
+links `2/2` · folded `1` · bonds in `3` out `3`
+faces worker·plugin·pwa `1·0·0`
+neighbors → law·samples·transactions · ← law·samples·transactions
 analysis —
 law a piece of audit-evidence is documentary support (PDF, statement, workpaper, signed approval) carried with its chain-of-custody, confidentiality classification and retention schedule, and linked to the control, test, sample or finding it supports (ISA-500 / PCAOB AS-1105).
 
 ---
 
-<sub>content-uuid `6002a96e-ba01-8c6f-83c8-a8ffa67b2a9e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a61b8e5c-66e0-88dc-9239-6bc642e035a5` · `pnpm readme` · `pnpm computed:check`</sub>

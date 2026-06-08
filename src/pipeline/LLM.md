@@ -3,15 +3,15 @@
 
 # pipeline
 
-path `pipeline` · uuid `7ebf9c49-914b-8617-b677-a62ade429b08` · diamond `41cc9ba5-0d22-80b8-8f7e-9297fd6244e9`
+path `pipeline` · uuid `7ebf9c49-914b-8617-b677-a62ade429b08` · diamond `23b0dd46-9e7b-8e04-92fa-2088237f1f8b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports customers·forecast·law·leads·opportunities · exports pipeline · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·corrects·drone·duplicate·entertainment·grant·landmarks·qualification·symbol · ← aura·corrects·drone·duplicate·entertainment·grant·landmarks·qualification·symbol
+neighbors → forecast·funnel·law·leads·opportunities·orders·positions · ← forecast·funnel·law·leads·opportunities·orders·positions
 analysis —
 law a pipeline is one deal's monotonic progression through ordered sales stages (lead → qualified → proposal → negotiation → won/lost); the funnel position carries value, probability and close date and is the deal's stage on the ring, never an arbitrary flag.
 
 ---
 
-<sub>content-uuid `dc7081be-02f0-8584-9cc7-2a84d713c77e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7efea879-a9fa-80db-9f93-a95fab42ed1b` · `pnpm readme` · `pnpm computed:check`</sub>

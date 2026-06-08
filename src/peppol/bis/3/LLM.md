@@ -3,15 +3,15 @@
 
 # 3
 
-path `peppol/bis/3` · uuid `c4ea32d7-f8e8-82f9-9e8b-df9c50272dce` · diamond `0a066288-70e3-8d30-86e8-b54947497a50`
+path `peppol/bis/3` · uuid `c4ea32d7-f8e8-82f9-9e8b-df9c50272dce` · diamond `d9c3fd2b-6503-82ce-9153-279a6ad146b0`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports PEPPOL_BIS_3_CUSTOMIZATION_ID·PeppolBillingMessage·PeppolDocumentTypeId·PeppolEndpointId·PeppolEnvelope·PeppolParticipantIdentifier·PeppolParticipantIdentifierScheme·PeppolProfileId·formatPeppolParticipantId·isPeppolDocumentTypeId·isPeppolParticipantIdentifierScheme·isPeppolProfileId·parsePeppolParticipantId · escapes —
-links `1/1` · folded `1` · bonds in `4` out `4`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law · ← law
 analysis —
 law Peppol BIS Billing 3.0 wraps an EN-16931 semantic invoice (UBL 2.1 syntax) in the network envelope — CustomizationID + ProfileID + ISO-6523 ParticipantIdentifier + EndpointID; a message is Peppol-conformant only when both the semantic model and that envelope are present.
 
 ---
 
-<sub>content-uuid `b4e21f36-7e22-8515-b3ae-5ab751f18ff5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce0ce39d-1a94-86a1-90f8-dfc166486815` · `pnpm readme` · `pnpm computed:check`</sub>

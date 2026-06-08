@@ -3,15 +3,15 @@
 
 # relatedparty
 
-path `relatedparty` · uuid `ebdaed60-7d58-8563-a795-875a395480bc` · diamond `125b3787-a401-8bc9-aaba-614e4c6dfa51`
+path `relatedparty` · uuid `ebdaed60-7d58-8563-a795-875a395480bc` · diamond `9a4444b0-7591-8de6-82b9-cdf876b884ba`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports consolidations·legal · exports relatedparty · escapes —
-links `4/4` · folded `1` · bonds in `4` out `4`
+links `4/4` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → checklists·consolidations·transactions · ← checklists·consolidations·transactions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8170c036-0ce3-835f-bf33-12b82b8c6aa4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `264061d1-bd8c-87e1-bd3e-ce5e80686d46` · `pnpm readme` · `pnpm computed:check`</sub>

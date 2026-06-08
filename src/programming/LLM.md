@@ -3,15 +3,15 @@
 
 # programming
 
-path `programming` · uuid `151f81f3-1f31-868d-a115-378d0264d4a0` · diamond `d29d2728-7268-8144-8359-20c4e36d6355`
+path `programming` · uuid `151f81f3-1f31-868d-a115-378d0264d4a0` · diamond `cf3000b4-c4f5-813a-969b-5262aa3c56d4`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·language·law·merge·model·sti · exports programming · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·prognosis·terminals · ← landmarks·prognosis·terminals
+neighbors → collapse·language·law·merge·model·sti · ← collapse·language·law·merge·model·sti
 analysis —
 law programming is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d84f645b-608c-8e10-a808-a32489191ce2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce077a2e-9dd0-8db6-853c-83286202b3e4` · `pnpm readme` · `pnpm computed:check`</sub>

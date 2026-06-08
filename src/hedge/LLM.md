@@ -3,15 +3,15 @@
 
 # hedge
 
-path `hedge` · uuid `cb21fc44-9d39-8c82-8e31-84dd5375a02b` · diamond `bd2f79ef-079b-8a1a-addb-a056c29cfecc`
+path `hedge` · uuid `cb21fc44-9d39-8c82-8e31-84dd5375a02b` · diamond `d64ba5ed-f836-8b0a-8363-4d75dcc40ca9`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·currency·fair·financial·fx·law·risk·standard · exports hedge · escapes —
-links `9/9` · folded `1` · bonds in `4` out `4`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·balance·currency·law·measurements·risk·standard·statements·transaction·transactions · ← accounting·balance·currency·law·measurements·risk·standard·statements·transaction·transactions
 analysis —
 law a hedge is an instrument designated to offset a specific market risk (FX · rate · commodity) — the designation is what unlocks hedge accounting under IFRS-9; an undesignated derivative is just marked to market, so the offset must be declared, not assumed.
 
 ---
 
-<sub>content-uuid `c337d1e8-07ed-8f66-8e8e-b117c02fe6c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a86b4a29-27fa-87bd-ba51-1918cc4094ed` · `pnpm readme` · `pnpm computed:check`</sub>

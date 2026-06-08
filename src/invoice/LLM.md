@@ -3,15 +3,15 @@
 
 # invoice
 
-path `invoice` · uuid `aab0223e-3d3e-87a2-b1d4-408034984a7c` · diamond `e64de089-be63-8e2c-b7b2-ba2747c9d4d3`
+path `invoice` · uuid `aab0223e-3d3e-87a2-b1d4-408034984a7c` · diamond `463fc3f0-4881-8356-97ba-4a5357f3382a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·part · exports invoice · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·id·landmarks·partial·progression·reports·spouse·tour · ← accounting·id·landmarks·partial·progression·reports·spouse·tour
+neighbors → law·part · ← law·part
 analysis —
 law invoice is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e161d604-8b3d-8b2b-ab11-9cefaab7ae7f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b100203-859f-8ccb-9454-f2578dcea9b0` · `pnpm readme` · `pnpm computed:check`</sub>

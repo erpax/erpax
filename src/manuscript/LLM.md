@@ -3,15 +3,15 @@
 
 # manuscript
 
-path `manuscript` · uuid `5738bc47-e5bc-8ffc-a383-3959ec106b2a` · diamond `452392ba-789a-8e60-b1f7-29e4fc39e7a0`
+path `manuscript` · uuid `5738bc47-e5bc-8ffc-a383-3959ec106b2a` · diamond `7cfb066c-d0d2-8296-9032-617f1719d647`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports manuscript · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·offline·stat · ← cohort·landmarks·memories·offline·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law a manuscript is defined by being hand-wrought, not printed — once typeset or mechanically reproduced it ceases to be one.
 
 ---
 
-<sub>content-uuid `e0c0e204-8f9e-8360-8ac9-b5333c9ebae2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `933d64e4-a8a5-89eb-a76e-6bc8182452f6` · `pnpm readme` · `pnpm computed:check`</sub>

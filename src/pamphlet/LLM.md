@@ -3,15 +3,15 @@
 
 # pamphlet
 
-path `pamphlet` · uuid `ff42307a-c16b-87f0-87f5-a34c1874480b` · diamond `a7b2027d-d992-8f60-9d1e-3468d96e2284`
+path `pamphlet` · uuid `ff42307a-c16b-87f0-87f5-a34c1874480b` · diamond `987831da-f796-88ed-9ad1-69ad15c3b3da`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports pamphlet · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical · ← landmarks·periodical
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law pamphlet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8b48c50a-1576-8325-b2ac-19a8ce482c3e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c2c187e3-c656-8125-83a4-d5e87147ad34` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # hours
 
-path `hours` · uuid `e08756b5-a2a7-892f-8e8e-88af825e19ee` · diamond `11af104e-8664-8bd6-9af5-ce4b2cc50011`
+path `hours` · uuid `e08756b5-a2a7-892f-8e8e-88af825e19ee` · diamond `d42b8e58-4e84-8e9d-adf4-4d8786fad3de`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports available·collapse·law·merge·opening·special·specification·sti·work · exports hours · escapes —
-links `9/9` · folded `1` · bonds in `8` out `8`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·certified·landmarks·list·marine·memories·qualification·roadmap · ← 3986·certified·landmarks·list·marine·memories·qualification·roadmap
+neighbors → available·collapse·law·merge·opening·special·specification·sti·work · ← available·collapse·law·merge·opening·special·specification·sti·work
 analysis —
 law hours is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4e2c13ae-acc8-8652-a493-ee5ac8798d63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a39b55dd-2388-82cf-9380-be0cf0011743` · `pnpm readme` · `pnpm computed:check`</sub>

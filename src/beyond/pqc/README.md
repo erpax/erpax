@@ -2,7 +2,7 @@
 
 # pqc
 
-> atom `beyond/pqc` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `beyond/pqc` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
 - bond degree `18` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -40,7 +40,7 @@
 
 ## analytics
 
-- bond degree `18` · sealed `1` · horo `4`
+- bond degree `18` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
@@ -54,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `000f0d3a-0a46-8cff-98fb-3edc0a0a8928` · framed by typography partition `beyond` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `09334282-f46d-810c-b494-c5ae9ea66d54` · framed by typography partition `beyond` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

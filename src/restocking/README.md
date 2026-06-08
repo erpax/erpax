@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `restocking` · sub-root `8f8ed18c-7f8c-8b1b-a301-bba159becb89`
-- bond degree `58` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `8f8ed18c-7f8c-8b1b-a301-bba159becb89`
-- bonds in `26` · out `26`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `df2e704e-5893-82c9-9c4b-fee25b070313` · framed by typography partition `restocking` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ad6c750-e16f-888b-871c-10583dfac23a` · framed by typography partition `restocking` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

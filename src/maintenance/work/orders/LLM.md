@@ -3,15 +3,15 @@
 
 # orders
 
-path `maintenance/work/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `8063b34c-b26d-88c8-af01-29451b325794`
+path `maintenance/work/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `f161ecc7-d173-85d1-aeeb-d5f451bf4ab8`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `17/17` · folded `1` · bonds in `8` out `8`
+links `17/17` · folded `1` · bonds in `48` out `51`
 faces worker·plugin·pwa `0·0·0`
-neighbors → batches·events·landmarks·returns·sha·snapshots·spouse·visit · ← batches·events·landmarks·returns·sha·snapshots·spouse·visit
+neighbors → accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·law·law·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances · ← accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances
 analysis —
 law a work order is the executable FM job promoted from a [[maintenance/requests]] request, tracking parts/labour/cost and posting a [[journal/entries]] [[entry]] on completion whose IAS-16 capex-vs-opex split is set by `capitalisationTreatment`.
 
 ---
 
-<sub>content-uuid `95b80f84-afff-8b37-b1af-2fb335961365` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f18a5883-a3b3-8d68-acdb-d688f9a58daa` · `pnpm readme` · `pnpm computed:check`</sub>

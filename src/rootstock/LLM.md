@@ -3,15 +3,15 @@
 
 # rootstock
 
-path `rootstock` · uuid `4d6e4a8d-fa47-8386-9786-903e8e98a3c2` · diamond `1a9a542e-b324-815a-ae9a-cf6202572b46`
+path `rootstock` · uuid `4d6e4a8d-fa47-8386-9786-903e8e98a3c2` · diamond `054e4bad-a108-802c-a2eb-40a4c47e3e7d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports biological·graft·law·maturity·perennial·propagation·scion·seed·soil·spacing·taxonomy · exports rootstock · escapes —
-links `25/25` · folded `1` · bonds in `4` out `4`
+links `25/25` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → imprint·landmarks·sandbox·window · ← imprint·landmarks·sandbox·window
+neighbors → assets·graft·law·maturity·perennial·propagation·scion·seed·soil·spacing·taxonomy · ← assets·graft·law·maturity·perennial·propagation·scion·seed·soil·spacing·taxonomy
 analysis —
 law the rootstock is the root-providing lower plant a [[scion]] is [[graft]]ed onto — chosen once for the [[perennial]]'s multi-decade life, it controls vigour, size, and disease resistance as a capitalized [[biological/assets|bearer-plant]] asset.
 
 ---
 
-<sub>content-uuid `29bd90f5-5f54-833b-94d9-c610af2a2e38` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89dc5680-f04f-8b4a-84c6-64a64117f389` · `pnpm readme` · `pnpm computed:check`</sub>

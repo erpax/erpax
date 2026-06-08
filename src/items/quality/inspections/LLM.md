@@ -3,15 +3,15 @@
 
 # inspections
 
-path `items/quality/inspections` · uuid `ba2d22e6-2ec8-847b-bf8a-76bb35c038b9` · diamond `31bc318e-7172-863a-a9c4-12aa5ae2ad99`
+path `items/quality/inspections` · uuid `ba2d22e6-2ec8-847b-bf8a-76bb35c038b9` · diamond `3d8620f7-d464-801e-92f7-55aacb5116d8`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `7/7` · folded `1` · bonds in `11` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·batches·defect·identity·inspection·items·law·orders·proof·standard·transaction · ← accounting·batches·defect·identity·inspection·items·law·orders·proof·standard·transaction
 analysis —
 law every inspection records an outcome disposition (pass/fail/conditional) with nonconformance evidence that drives the inventory write-off — measurement attested as [[proof]].
 
 ---
 
-<sub>content-uuid `add155b0-f9dc-80ff-a9e3-802fe519c193` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5ee7603-cfab-8ee8-8ce7-0b578fc17368` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # reality
 
-> atom `reality` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `reality` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `reality` · sub-root `bf2b44af-c3bf-858f-acc5-fac1b41bb9b8`
-- bond degree `41` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `68` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `bf2b44af-c3bf-858f-acc5-fac1b41bb9b8`
-- bonds in `6` · out `6`
+- uuid `7017b6ae-ca8f-841a-a74f-930176f58eaa`
+- bonds in `20` · out `22`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `dabb1272-8165-8074-9c60-c114befa3859` · framed by typography partition `reality` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `724a8580-1f8f-8564-90f5-7fc224138957` · framed by typography partition `reality` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # nonprofit527
 
-path `nonprofit527` · uuid `5cf64568-d168-8aff-ae1c-18a6fceba21b` · diamond `7b86d1f8-4f22-8792-ac69-d49b9b2b9da3`
+path `nonprofit527` · uuid `5cf64568-d168-8aff-ae1c-18a6fceba21b` · diamond `83ccd04a-eafa-88a0-9937-e0bd018a82d8`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nonprofit527 · escapes —
-links `4/4` · folded `1` · bonds in `10` out `10`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → city·connections·corrects·corruption·euenergy·flight·founder·id·marine·memories · ← city·connections·corrects·corruption·euenergy·flight·founder·id·marine·memories
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nonprofit527 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `80c248b3-b8c5-8705-936d-ec761cd45e2d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8cb96f0c-dd30-8a9e-b46e-d217237846c7` · `pnpm readme` · `pnpm computed:check`</sub>

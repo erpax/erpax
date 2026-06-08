@@ -3,15 +3,15 @@
 
 # intersects
 
-path `intersects` · uuid `795c2167-5c3a-8ecd-8374-607358053da7` · diamond `492c07a4-05fb-893b-96c1-95ae5243666f`
+path `intersects` · uuid `795c2167-5c3a-8ecd-8374-607358053da7` · diamond `bd72df6c-548f-85ab-9f72-4baf06d66b23`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports intersects · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law intersects is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6c9c5ae4-26e3-8f25-a4eb-1df3050a43ed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6b6bd85c-1727-86c3-8950-1db6255421e6` · `pnpm readme` · `pnpm computed:check`</sub>

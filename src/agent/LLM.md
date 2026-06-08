@@ -3,9 +3,9 @@
 
 # agent
 
-path `agent` · uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09` · diamond `3798428d-7e50-868b-98f1-b56841efb04c`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
-imports @/agents/mcp · exports *:./service·AgentContext·AgentEffect·AgentId·AgentRegistry·AgentRuntime·AuditLeaf·DomainAgent·DomainEvent·ERPAX_MCP_PROMPTS·ERPAX_MCP_RESOURCES·ErpaxMcpPrompt·ErpaxMcpResource·ErpaxMcpTool·EvidenceFrame·GapSeverity·McpClient·McpToolDescriptor·agentRegistry·agentRuntime·buildBlockCatalog·buildErpaxMcpTools·chainBlocks·chainsAsBlockCompositions·checkRegistryCoupling·composeBlocks·conveneAgentSociety·createAgentContext·createAgentRegistry·createAgentRuntime·createInProcessMcpClient·disbandAgentSociety·erpaxMcpPrompts·erpaxMcpResources·erpaxMcpTools·manifestOf·processEffect·processEffects·validateComposition · escapes —
+path `agent` · uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09` · diamond `ef482508-48f9-896a-9ab6-8ee3dc47af00`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
+imports @/agents/mcp · exports *:./service·AGENT_RUNTIME_GRANT·AgentContext·AgentEffect·AgentId·AgentLawState·AgentRegistry·AgentRuntime·AuditLeaf·DomainAgent·DomainEvent·ERPAX_MCP_PROMPTS·ERPAX_MCP_RESOURCES·ErpaxMcpPrompt·ErpaxMcpResource·ErpaxMcpTool·EvidenceFrame·GapSeverity·McpClient·McpToolDescriptor·StrictApplyViolation·agentRegistry·agentRuntime·assertStrictDispatch·assertStrictEffect·assertStrictMcpCall·buildBlockCatalog·buildErpaxMcpTools·chainBlocks·chainsAsBlockCompositions·checkRegistryCoupling·composeBlocks·conveneAgentSociety·createAgentContext·createAgentRegistry·createAgentRuntime·createInProcessMcpClient·defaultAgentLawState·disbandAgentSociety·erpaxMcpPrompts·erpaxMcpResources·erpaxMcpTools·manifestOf·processEffect·processEffects·strictApplyDispatch·strictApplyEffect·strictApplyMcpCall·validateComposition · escapes —
 links `60/60` · folded `1` · bonds in `69` out `69`
 faces worker·plugin·pwa `1·0·0`
 neighbors → access·agent·ai·akashic·aura·auth·balance·booking·breath·chat·class·cloudflare·communication·contribution·coordinate·cost·decentralization·diamond·drone·duality·duality·ecosystem·entropy·entry·estate·event·fold·fractal·gate·generate·gravity·hallucination·holographic·horo·identity·infectious·interaction·karma·law·law·log·mcp·merge·merge·observe·one·pixel·real·reference·request·research·reversibility·roles·self·skill·skills·society·standard·statistic·sync·team·tenants·trinity·types·unavoidable·users·uuid·whole·worker · ← access·agent·ai·akashic·aura·auth·balance·booking·breath·chat·chat·class·cloudflare·communication·contribution·coordinate·cost·decentralization·diamond·drone·duality·ecosystem·entropy·entry·estate·event·fold·fractal·gate·generate·gravity·hallucination·holographic·horo·identity·infectious·interaction·karma·law·log·mcp·mcp·merge·observe·one·pixel·real·reference·request·research·research·reversibility·roles·self·skill·skills·society·standard·statistic·sync·team·tenants·trinity·types·unavoidable·users·uuid·whole·worker
@@ -14,4 +14,4 @@ law an agent IS its content — its [[identity]] is the content-uuid of its skil
 
 ---
 
-<sub>content-uuid `576fae01-8ff1-8fda-b925-599ee3683d27` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a80c1f8-0b20-88dc-b233-e0dd72815384` · `pnpm readme` · `pnpm computed:check`</sub>

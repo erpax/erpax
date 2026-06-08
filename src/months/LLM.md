@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·experience·law·merge·sti · exports months · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·identifier·landmarks·memories·stat · ← cohort·identifier·landmarks·memories·stat
+neighbors → collapse·experience·law·merge·sti · ← collapse·experience·law·merge·sti
 analysis —
 law months is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bc1e4ec3-29ae-8394-9e5d-2ff207d18ed0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7d11ae05-b22f-81a4-8f27-687e5ac74592` · `pnpm readme` · `pnpm computed:check`</sub>

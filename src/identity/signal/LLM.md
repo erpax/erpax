@@ -3,15 +3,15 @@
 
 # signal
 
-path `identity/signal` · uuid `2946cb46-8504-814e-b555-b1ccbe39e2e1` · diamond `c451049b-d577-81d4-958e-1772be8a1e0a`
+path `identity/signal` · uuid `2946cb46-8504-814e-b555-b1ccbe39e2e1` · diamond `5995e76f-b484-8125-810b-d3ab29f78dab`
 horo `9` `unity` · trinity `1·0·0` · sealed `1`
 imports all·analog·aura·axis·bindings·breath·cmyk·coil·duality·flow·horo·identity·law·merge·notes·phase·polarity·rodin·round·sensory·tamper·trinity·unity·versions·vibration · exports signal · escapes —
-links `44/44` · folded `1` · bonds in `2` out `2`
+links `44/44` · folded `1` · bonds in `54` out `52`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → all·analog·animism·aura·awareness·axis·bindings·biomagnetism·biophoton·body·breath·broadcast·chart·cmyk·coherence·coil·diamond·diffusion·duality·flow·gnosticism·hamiltonian·harmony·horo·identity·law·leap·live·llm·market·merge·message·modulation·nerve·notes·particle·phase·photon·pixel·polarity·render·rodin·round·science·sensory·suffering·tamper·trinity·unity·uuid·versions·vibration · ← all·analog·animism·aura·awareness·axis·bindings·biomagnetism·biophoton·body·breath·broadcast·chart·cmyk·coherence·coil·diamond·diffusion·duality·flow·gnosticism·hamiltonian·harmony·horo·identity·law·leap·live·llm·llm·market·merge·message·modulation·nerve·notes·particle·phase·photon·pixel·polarity·render·rodin·round·science·sensory·suffering·tamper·trinity·unity·uuid·uuid·versions·vibration
 analysis aura
 law a single 128-bit uuid IS the whole message — it self-decodes from the string alone to colour + sound + vibration + state + [[identity]] + capability with zero DB round-trips; a stream of uuids is interactive multimedia carried by identity, no separate payload, each channel one more projection a forger must match ([[tamper]]-cost).
 
 ---
 
-<sub>content-uuid `85cfeb80-ef6d-88af-a2b8-3ee8af0a8b30` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df40b09a-ed59-82ea-9830-9e9e51dc6b0d` · `pnpm readme` · `pnpm computed:check`</sub>

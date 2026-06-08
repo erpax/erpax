@@ -3,15 +3,15 @@
 
 # mcp
 
-path `quantum/mcp` · uuid `be236224-ec0d-8ef8-bcb5-8cbbd642b75b` · diamond `75c03a35-1248-80f0-ad94-b4c496694649`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `quantum/mcp` · uuid `5f105b12-20b5-82f1-8c73-516cf2a12909` · diamond `41a419c0-179e-89ac-83a2-c1d568831455`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports access·agent·atom·broker·law·mcp·payload·quantum·receipt·sandbox·skills·vitepress · exports mcp · escapes —
-links `26/26` · folded `1` · bonds in `36` out `44`
-faces worker·plugin·pwa `0·0·0`
-neighbors → access·access·access·agent·agent·angel·api·atom·atom·auth·binding·broadcaster·chat·cohort·collection·corrects·cross·departure·details·document·gears·golf·id·landmarks·landmarks·license·marine·matrix·mcp·mcp·medicine·pathophysiology·pathophysiology·platform·quantitative·quantum·read·read·safety·safety·sections·sign·transport·vent · ← access·agent·angel·api·atom·auth·binding·broadcaster·chat·cohort·colleagues·corrects·cross·departure·details·document·gears·golf·id·landmarks·license·marine·matrix·mcp·mcp·medicine·pathophysiology·platform·quantitative·quantum·read·safety·sections·sign·transport·vent
+links `26/26` · folded `1` · bonds in `44` out `52`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·access·access·agent·agent·angel·api·atom·atom·auth·bindings·broker·chat·collapse·collections·cost·deploy·dimension·domain·fs·generate·generator·github·identity·law·law·limit·log·mcp·mcp·memories·metadata·path·payload·payload·plugins·receipt·receipt·reference·request·research·sandbox·sandbox·scopes·self·skills·society·tool·trust·uuid·vitepress·workspace · ← access·agent·angel·api·atom·auth·bindings·broker·chat·collapse·collections·cost·deploy·dimension·domain·fs·generate·generator·github·identity·law·limit·log·mcp·mcp·memories·metadata·path·payload·plugins·receipt·reference·request·research·sandbox·scopes·self·skills·society·tool·trust·uuid·vitepress·workspace
 analysis agent
 law the tool surface is a pure projection of the corpus — add an atom or a skill and its tools manifest with no hand-list, so the door can never expose more or less than what exists. No call escapes the gate: each one inherits exactly the key owner's reach (never more), passes the sandbox capability check, and leaves a uuid-chained receipt — power and proof in the one move.
 
 ---
 
-<sub>content-uuid `2b6f7bf2-5f26-8fe7-8b12-74742f53cd7e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9fc3859-9104-8400-b66c-e2e1573e68db` · `pnpm readme` · `pnpm computed:check`</sub>

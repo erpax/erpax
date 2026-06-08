@@ -23,7 +23,7 @@
 
 - partition `animism` · sub-root `2d2cea7d-1084-8a5f-9d73-0f608e322c86`
 - bond degree `72` · analysis neighbors `aura` · `diamond`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d7c44807-5d2e-8bcc-b53e-58094c807859` · framed by typography partition `animism` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2670d8ef-f624-8b5e-9600-b5e8aebb2b8e` · framed by typography partition `animism` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

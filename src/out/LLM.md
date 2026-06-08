@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·check·collapse·law·merge·sti · exports out · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → account·cohort·landmarks·license·memories·stat · ← account·cohort·landmarks·license·memories·stat
+neighbors → action·check·collapse·law·merge·sti · ← action·check·collapse·law·merge·sti
 analysis —
 law out is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7beaa4fa-48cd-8409-a00c-5aa50b5b2127` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a7ea732-7279-8162-abce-0b98e9d15ba1` · `pnpm readme` · `pnpm computed:check`</sub>

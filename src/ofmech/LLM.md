@@ -3,15 +3,15 @@
 
 # ofmech
 
-path `ofmech` · uuid `c568d7b5-54d8-8b54-9556-f1a897fc9f7c` · diamond `2cbf8fd1-700e-818d-802b-be4c477ba913`
+path `ofmech` · uuid `c568d7b5-54d8-8b54-9556-f1a897fc9f7c` · diamond `7638b82d-27c2-8d22-bcdd-0de82404e5f3`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports ofmech · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pond·postharvest·stat · ← cohort·landmarks·memories·pond·postharvest·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law ofmech is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7a2d3513-d2e1-804c-990b-d74f2110dff1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5bf17cbb-d761-8b3f-9064-2a89aa22cc2b` · `pnpm readme` · `pnpm computed:check`</sub>

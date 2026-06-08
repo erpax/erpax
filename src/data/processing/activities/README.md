@@ -25,7 +25,26 @@
 
 - partition `data` · sub-root `57efddc7-808a-83f8-bfed-9ab404ae86c8`
 - bond degree `70` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.30(1) records-controller` · banner
+- `GDPR Art.30(2) records-processor` · banner
+- `GDPR Art.5(1)(e) storage-limitation` · banner
+- `ISO-19011:2018 audit-trail ropa-evidence` · banner
+- `ISO-27701:2019 §6.3.1 records-of-processing` · banner
+- `ISO-8601-1:2019 date-time review-due-at` · banner
+
+## analytics
+
+- bond degree `70` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `6efbe555-a332-89c4-a039-e1601a1fc397` · framed by typography partition `data` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2e1634a9-b253-8383-b01c-5d26b988ae68` · framed by typography partition `data` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

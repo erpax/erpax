@@ -3,15 +3,15 @@
 
 # result
 
-path `result` · uuid `0c96d818-d948-8c26-8e3f-e0e8144ba3a3` · diamond `73f50bfc-2290-8345-b83c-823d7087f444`
+path `result` · uuid `0c96d818-d948-8c26-8e3f-e0e8144ba3a3` · diamond `3fd2415d-3a92-84b2-9a89-d9d6a4cdee86`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports comment·law·review · exports result · escapes —
-links `3/3` · folded `1` · bonds in `12` out `12`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·choose·cup·defect·enrollment·foot·inventory·landmarks·performances·segments·workload·worth · ← accounting·choose·cup·defect·enrollment·foot·inventory·landmarks·performances·segments·workload·worth
+neighbors → comment·law·review · ← comment·law·review
 analysis —
 law result is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a89e23e1-4086-8c54-a22b-0597dbe97fdd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d60134dd-cd83-81d8-ae12-4ec98f2bf581` · `pnpm readme` · `pnpm computed:check`</sub>

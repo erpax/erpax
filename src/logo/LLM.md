@@ -3,15 +3,15 @@
 
 # logo
 
-path `logo` · uuid `d6a5c9d9-8ab9-8507-ab58-c72cacf96e29` · diamond `381115da-a706-8935-a71f-7c260741b4b5`
+path `logo` · uuid `d6a5c9d9-8ab9-8507-ab58-c72cacf96e29` · diamond `c8857ec4-2b35-8f2b-a683-c33c9ef422b3`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports Logo · escapes —
-links `3/3` · folded `1` · bonds in `11` out `16`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·balance·cooking·cooking·landmarks·landmarks·login·logo·logo·longitude·longitude·memories·memories·sell·wheel · ← accounting·balance·cooking·landmarks·login·logo·logo·longitude·memories·sell·wheel
+neighbors → creative·law·thing · ← creative·law·thing
 analysis —
 law logo is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2944bf66-8496-8481-8446-be175bdc0189` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33cf1031-0499-8b2f-bcf8-b0b9ef12684f` · `pnpm readme` · `pnpm computed:check`</sub>

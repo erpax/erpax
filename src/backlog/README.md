@@ -23,7 +23,7 @@
 
 - partition `backlog` · sub-root `48be0aed-b4b8-8105-bafc-a7e552a36316`
 - bond degree `18` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `aeeb31c2-aa41-8b17-b01a-e47e1b98a491` · framed by typography partition `backlog` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fac6271c-d83a-8e47-8061-280d6fdb998c` · framed by typography partition `backlog` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # psychological
 
-path `psychological` · uuid `1b363b15-e6c5-86ec-bf0e-ca3283e7e1df` · diamond `407c1f70-6a2a-8533-98f0-8eb5c2485d35`
+path `psychological` · uuid `1b363b15-e6c5-86ec-bf0e-ca3283e7e1df` · diamond `960dc04c-185b-8611-a35c-938be9dc38db`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·treatment · exports psychological · escapes —
-links `5/5` · folded `1` · bonds in `11` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·license·memories·occupancy·prerequisites·report·sanitization·stat · ← article·cohort·database·landmarks·license·memories·occupancy·prerequisites·report·sanitization·stat
+neighbors → collapse·law·merge·sti·treatment · ← collapse·law·merge·sti·treatment
 analysis —
 law the mind-directed qualifier is one collided word, so PsychologicalTreatment and any compound sharing this stem fold to the same identity rather than minting a duplicate.
 
 ---
 
-<sub>content-uuid `e8715dc3-8ce6-83d2-8bd8-d68438bd7963` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `522b9865-f5e9-813e-b455-85a07f7df733` · `pnpm readme` · `pnpm computed:check`</sub>

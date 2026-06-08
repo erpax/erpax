@@ -24,13 +24,28 @@
 ## typography graph
 
 - partition `deep` · sub-root `2b0d2543-9ee0-8258-a07b-0acb5b089364`
-- bond degree `5364` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `5373` · analysis neighbors `aura`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `semantics asserted against the live index.ts; never hand-asserted` · banner
+- `structural recursion over plain objects; arrays are opaque leaves` · banner
+
+## analytics
+
+- bond degree `5373` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `2091437a-c6eb-8672-91c7-1797d57f8f23`
-- bonds in `1788` · out `1755`
+- bonds in `1792` · out `1759`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `1f59e64e-c0ac-8cf8-825f-d541d96d325d` · framed by typography partition `deep` bonds `5364` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `79e56e49-0c91-84d8-b6fc-b8e28acad85f` · framed by typography partition `deep` bonds `5373` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # nutrition
 
-path `nutrition` · uuid `3d9bd9b7-d557-8b28-aac5-d7ff48091464` · diamond `db99b5c7-d20b-879b-b5c8-5d2ce81e4a1e`
+path `nutrition` · uuid `3d9bd9b7-d557-8b28-aac5-d7ff48091464` · diamond `0e63213b-73c0-8611-aff9-135afabdced8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports information·law · exports nutrition · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·header·landmarks·liquor·list·memories·profane·sufficient · ← agent·header·landmarks·liquor·list·memories·profane·sufficient
+neighbors → information·law · ← information·law
 analysis —
 law nutrition is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e40765a5-a577-8102-89a0-4fae6947c80b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f072699-2308-8788-8677-cee8cab21ba9` · `pnpm readme` · `pnpm computed:check`</sub>

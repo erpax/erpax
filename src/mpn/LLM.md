@@ -3,15 +3,15 @@
 
 # mpn
 
-path `mpn` · uuid `73733113-e733-8ca9-86cb-516306a3ddcd` · diamond `5b0d9a91-9a08-89e9-a443-0d76f92a045a`
+path `mpn` · uuid `73733113-e733-8ca9-86cb-516306a3ddcd` · diamond `953cf33c-f2c3-8ffd-87d7-70b0810b6e80`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports mpn · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·us · ← cohort·landmarks·memories·stat·us
+neighbors → law·thing · ← law·thing
 analysis —
 law mpn is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `36ea230f-a0d8-879f-89e9-cfd442e0daf5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14b42c74-6821-8aa4-847f-a4a171a6932b` · `pnpm readme` · `pnpm computed:check`</sub>

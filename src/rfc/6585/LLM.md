@@ -3,15 +3,15 @@
 
 # 6585
 
-path `rfc/6585` · uuid `1c943f7a-3fdc-8804-8ea9-2996b1d8ce02` · diamond `ce6e87fb-0049-899f-8bbf-473b08aad45f`
+path `rfc/6585` · uuid `1c943f7a-3fdc-8804-8ea9-2996b1d8ce02` · diamond `20b145c6-4682-855c-8b56-e26618bf2021`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports checkRateLimit·clearRateLimit·getRateLimitKey·getRateLimitResetSeconds · escapes —
-links `0/0` · folded `1` · bonds in `22` out `22`
+links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·9110·access·analog·aura·auth·base·clip·conference·declaration·dropoff·holographic·homeopathic·id·idempotency·mention·rheumatologic·risks·river·roadmap·sell·tax · ← 3986·9110·access·analog·aura·auth·base·clip·conference·declaration·dropoff·holographic·homeopathic·id·idempotency·mention·rheumatologic·risks·river·roadmap·sell·tax
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `948f10d6-8148-8c23-b5d8-33f2364f3676` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49728994-50d1-88a9-b065-685bd4a3842b` · `pnpm readme` · `pnpm computed:check`</sub>

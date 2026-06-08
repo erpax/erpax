@@ -3,15 +3,15 @@
 
 # redundancy
 
-path `redundancy` · uuid `33cfd375-bafc-80e9-b7b0-de8d81fed636` · diamond `a7820190-23aa-8ac9-b3b8-92c07bb9ceee`
+path `redundancy` · uuid `33cfd375-bafc-80e9-b7b0-de8d81fed636` · diamond `e115ac26-98ce-8305-8a11-34c1e4e06a2d`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/shannon · exports const·function · escapes —
-links `13/13` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·entropy·landmarks·memories·sanitization·stat · ← cohort·entropy·landmarks·memories·sanitization·stat
+links `13/13` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → cost·coverage·entropy·law·proof·shannon·tamper·uuid · ← cost·coverage·entropy·law·proof·shannon·tamper·uuid
 analysis —
 law redundancy R = 1 − H/H_max is the structure that detects tamper — zero for an incompressible source, one for a fully-determined one; it IS coverage, so redundancy → 1 ⇔ coverage → 1 ⇔ tamper-cost toward its +∞ limit.
 
 ---
 
-<sub>content-uuid `9931caa0-fc5a-8958-b89e-98d128a878de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `57462ae4-6b92-82f8-94ee-fad7190fbe2c` · `pnpm readme` · `pnpm computed:check`</sub>

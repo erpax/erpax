@@ -23,7 +23,21 @@
 
 - partition `diabetic` · sub-root `eedfb2d0-caeb-8d5a-bf84-fb43ef9ef430`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a499d0b1-a983-84a9-a870-b3f47aee752d` · framed by typography partition `diabetic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e01d652-a8a7-8e58-b84b-56c12b1d366f` · framed by typography partition `diabetic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

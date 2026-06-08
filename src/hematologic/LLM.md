@@ -3,15 +3,15 @@
 
 # hematologic
 
-path `hematologic` · uuid `cb5fa588-8f79-88f5-8fb1-2000a9127fa3` · diamond `4c8b2676-ab34-8cdc-a137-916977c59f0a`
+path `hematologic` · uuid `cb5fa588-8f79-88f5-8fb1-2000a9127fa3` · diamond `954f04bb-e536-88f2-84eb-b4d7cdfb6d15`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hematologic · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·optician·stat · ← cohort·landmarks·memories·optician·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hematologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9e9e6fe3-5434-87fa-8cc1-026b439e2e14` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12009fb3-7b1c-8ca2-a35f-9aeb7f06916e` · `pnpm readme` · `pnpm computed:check`</sub>

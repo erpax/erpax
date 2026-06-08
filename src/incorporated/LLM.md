@@ -3,15 +3,15 @@
 
 # incorporated
 
-path `incorporated` · uuid `1748d593-bfe9-8a5f-8735-97450d5a9262` · diamond `f0fe3ed6-cee8-85c9-9457-8d83af3ae6d1`
+path `incorporated` · uuid `1748d593-bfe9-8a5f-8735-97450d5a9262` · diamond `9141b608-fe33-824a-83b3-26672666064b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports incorporated · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → approved·cohort·landmarks·measurement·memories·prepend·stat·transfer · ← approved·cohort·landmarks·measurement·memories·prepend·stat·transfer
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law incorporated is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `616770b5-29c6-8433-9964-df49ee4cdfcb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f43bd735-43ac-880f-99d4-fb3a4634b3f7` · `pnpm readme` · `pnpm computed:check`</sub>

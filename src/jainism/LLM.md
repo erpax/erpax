@@ -3,15 +3,15 @@
 
 # jainism
 
-path `jainism` · uuid `—` · diamond `06b760b1-f9d8-8722-ab75-ee9748775b60`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `jainism` · uuid `3c083ec4-e204-8799-913f-a8b93492b08a` · diamond `0301fe41-0af2-8d25-8b0e-9f5e9547dab8`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports archangel·balance·diamond·dna·ethics·faith·fast·fractal·gift·harmony·identity·karma·law·mercy·merge·path·proof·religion·return·self·society·suffering·translator·uuid·wisdom·zeropoint · exports jainism · escapes —
-links `60/60` · folded `0` · bonds in `0` out `0`
+links `60/60` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·balance·diamond·dna·ethics·faith·fast·fractal·gift·harmony·identity·karma·law·mercy·merge·path·proof·religion·return·self·society·suffering·translator·uuid·wisdom·zeropoint · ← archangel·balance·diamond·dna·ethics·faith·fast·fractal·gift·harmony·identity·karma·law·mercy·merge·path·proof·religion·return·self·society·suffering·translator·uuid·wisdom·zeropoint
+analysis diamond
 law jainism is a [[diamond]] of [[mercy]] · [[ethics]] · [[karma]] · [[balance]] · [[self]] · [[fast]] · [[gift]] · [[path]] · [[zeropoint]] — ahimsa absolute, [[karma]] as literal matter weighing the [[self]] (jiva) until austerity zeroes the [[balance]] and the soul returns to [[zeropoint]] (kevala); each term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `bec8afe3-0201-847d-bd5e-900d287203ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7bf4dcb0-1d3a-86ea-bace-025f69a1c10e` · `pnpm readme` · `pnpm computed:check`</sub>

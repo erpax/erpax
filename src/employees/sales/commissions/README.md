@@ -25,7 +25,27 @@
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
 - bond degree `33` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §91 §92 §93 §94 incremental-costs-of-obtaining` · banner
+- `IFRS IFRS-15 §99 §103 §104 §105 §106 amortisation` · banner
+- `ISO-19011:2018 audit-trail commission-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls commission-completeness` · banner
+- `US-GAAP ASC-340-40-25-1 incremental-costs` · banner
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -41,4 +61,4 @@
 
 ---
 
-<sub>content-uuid `d503f4c8-0971-84d7-9478-8c7f63f28102` · framed by typography partition `employees` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `75f550b9-2a10-8ef1-9052-e35a5e35d20b` · framed by typography partition `employees` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

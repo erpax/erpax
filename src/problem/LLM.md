@@ -3,15 +3,15 @@
 
 # problem
 
-path `problem` · uuid `f9e45343-32af-8bb3-b2fe-7a2023ba4807` · diamond `98d48caa-3247-89fe-8228-9410200dd252`
+path `problem` · uuid `f9e45343-32af-8bb3-b2fe-7a2023ba4807` · diamond `1279cc06-f6b1-82eb-a478-1be8722820ac`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports problem · escapes —
-links `4/4` · folded `1` · bonds in `9` out `9`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → album·closing·cohort·communicate·database·landmarks·memories·sanitization·stat · ← album·closing·cohort·communicate·database·landmarks·memories·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law problem is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `34736dc8-3eea-889b-bbf6-de951cac88c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `24b2e380-0363-82ce-a822-5dffb556b97c` · `pnpm readme` · `pnpm computed:check`</sub>

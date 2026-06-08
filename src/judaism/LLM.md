@@ -3,15 +3,15 @@
 
 # judaism
 
-path `judaism` · uuid `—` · diamond `3beb8106-993c-8f91-8ac6-7d57948ae413`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `judaism` · uuid `90e46675-3c5e-854f-8164-d0a034918b95` · diamond `80730b22-cca2-8c45-83a3-863c51601193`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·covenant·cycle·diamond·fast·fractal·harmony·identity·justice·law·mercy·merge·name·one·prayer·religion·return·ritual·self·sin·society·suffering·translator·uuid·void·whole·word · exports judaism · escapes —
-links `59/59` · folded `0` · bonds in `0` out `0`
+links `59/59` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·breath·covenant·cycle·diamond·fast·fractal·harmony·identity·justice·kabbalah·law·mercy·merge·name·one·prayer·religion·return·ritual·self·sin·society·suffering·translator·uuid·void·whole·word · ← archangel·breath·covenant·cycle·diamond·fast·fractal·harmony·identity·justice·kabbalah·law·mercy·merge·name·one·prayer·religion·return·ritual·self·sin·society·suffering·translator·uuid·void·whole·word
+analysis diamond
 law judaism is a [[diamond]] of [[covenant]] · [[law]] · [[name]] · [[mercy]] · [[justice]] · [[sin]] · [[return]] · [[ritual]] · [[prayer]] — the single brit between a people and the [[one]], the torah kept and argued, the world repaired toward the [[whole]] (tikkun); each Hebrew term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `f3f9edb7-5e6d-8304-b64c-350eeb22caee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c0484a8-3e0f-8c56-82a8-51ebcc9d32a9` · `pnpm readme` · `pnpm computed:check`</sub>

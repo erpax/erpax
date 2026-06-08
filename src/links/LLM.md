@@ -3,15 +3,15 @@
 
 # links
 
-path `links` · uuid `786990e6-a5b8-8d3f-aa16-de392dea9ca5` · diamond `d9db46b6-79a9-8380-b7b3-a555922fdb91`
+path `links` · uuid `786990e6-a5b8-8d3f-aa16-de392dea9ca5` · diamond `ef6270af-a6d3-8d14-8aee-0ab712855158`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·significant·sti · exports links · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → app·aura·collapse·dashboard·development·digit·drone·entanglement·graph·gravity·law·matrix·merge·network·particle·quantum·seo·significant·sti·topography · ← app·aura·collapse·dashboard·development·digit·drone·entanglement·graph·gravity·law·matrix·merge·network·particle·quantum·seo·significant·sti·topography
 analysis —
 law links is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `73274f49-9379-8967-b7fe-f786e3947efd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31ebac61-7395-899d-a8f4-9a2da4af4696` · `pnpm readme` · `pnpm computed:check`</sub>

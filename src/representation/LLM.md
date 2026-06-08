@@ -3,15 +3,15 @@
 
 # representation
 
-path `representation` · uuid `0b41493b-52f8-8897-b4ff-05462bf1e766` · diamond `f68e6e5c-4a74-80bc-b6e3-2a072e3bc41e`
+path `representation` · uuid `0b41493b-52f8-8897-b4ff-05462bf1e766` · diamond `9954df43-f0bd-8035-a789-3fe2c386d34d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·has·law·merge·sti · exports representation · escapes —
-links `5/5` · folded `1` · bonds in `17` out `17`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → adjustments·boarding·built·caption·equipment·euenergy·follow·iata·landmarks·locality·override·query·relocate·sanitization·standards·story·taggings · ← adjustments·boarding·built·caption·equipment·euenergy·follow·iata·landmarks·locality·override·query·relocate·sanitization·standards·story·taggings
+neighbors → collapse·has·law·merge·sti · ← collapse·has·law·merge·sti
 analysis —
 law representation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `74a5fe9d-9c05-8347-aa07-806458c4ad65` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `058ef16e-4e5e-8941-b45f-446661a21e19` · `pnpm readme` · `pnpm computed:check`</sub>

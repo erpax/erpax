@@ -2,7 +2,7 @@
 
 # memory
 
-> atom `memory` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `memory` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,16 +21,16 @@
 
 ## typography graph
 
-- partition `memory` · sub-root `c9ecf7d1-ba4a-8450-819b-46a296e7350d`
-- bond degree `88` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `memory` · sub-root `0c4dc312-c925-8fbb-a790-8b94bda228f2`
+- bond degree `113` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `2d3e45c3-92ec-87d3-802c-6f3f07b555c5`
-- bonds in `24` · out `21`
+- uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e`
+- bonds in `29` · out `33`
 - trinity form·code·proof `1`·`0`·`0`
-- links `11` / `11`
+- links `17` / `17`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b6e61a91-5b30-8543-b751-5ef820b10dde` · framed by typography partition `memory` bonds `88` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fe2c9848-774b-8b85-8962-5aa3fe94df95` · framed by typography partition `memory` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # lend
 
-path `lend` · uuid `11da4c96-4fc1-8653-b475-0d0634cef6dc` · diamond `06c5801c-1e11-8d11-9abb-0ec73dd222af`
+path `lend` · uuid `11da4c96-4fc1-8653-b475-0d0634cef6dc` · diamond `d8687b1a-9ae0-8a7c-9e70-18ca08e91d51`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports lend · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dislike·income·landmarks·mass·periods·related·segments·spaces·teller·vitepress · ← dislike·income·landmarks·mass·periods·related·segments·spaces·teller·vitepress
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law lend is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6498e79f-8f3d-8aac-8e0a-afb51104042a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `96fd886f-952f-8c49-9815-bedccf53f1ec` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # husky
 
-path `husky` · uuid `38a684a8-a5db-892a-899a-1e1122a0d209` · diamond `e0308b28-08a7-8bf0-b681-f9eea7d4267e`
+path `husky` · uuid `38a684a8-a5db-892a-899a-1e1122a0d209` · diamond `418df4e7-081b-8fea-b1e2-a74147e34f88`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports husky · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·stat · ← coach·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law husky is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2ea6ec86-0f72-8df7-bd18-04f08b4c4eb8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6f582d9-c242-804f-bfbb-4f682be0d60d` · `pnpm readme` · `pnpm computed:check`</sub>

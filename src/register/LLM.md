@@ -3,15 +3,15 @@
 
 # register
 
-path `register` · uuid `86c7ff8f-9189-83fc-9d58-1a2fe7bd188d` · diamond `ba963739-add7-837a-a4a8-a1a92b4bf54f`
+path `register` · uuid `86c7ff8f-9189-83fc-9d58-1a2fe7bd188d` · diamond `0a208b62-be70-812e-9e71-4da818572d46`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti·un · exports register · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·import·landmarks·memories·stat · ← cohort·import·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti·un · ← action·collapse·law·merge·sti·un
 analysis —
 law register is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `99ae9d0d-32c7-814f-b6dc-6af9fd45237d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `52bdd538-309f-8c04-af37-af4b86b8d191` · `pnpm readme` · `pnpm computed:check`</sub>

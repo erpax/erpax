@@ -3,15 +3,15 @@
 
 # physical
 
-path `physical` · uuid `62dc3dab-16c4-8bc9-a9f0-b99ce33d46b3` · diamond `8f04d7ce-ac90-8280-99bd-7ef52acf18ad`
+path `physical` · uuid `62dc3dab-16c4-8bc9-a9f0-b99ce33d46b3` · diamond `1580f23a-d697-8a39-9b6d-76f5b1d24607`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports activity·attendee·capacity·category·collapse·exam·law·maximum·merge·requirement·sti·therapy · exports physical · escapes —
-links `12/12` · folded `1` · bonds in `15` out `15`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·analog·atom·aura·collide·complication·dermatology·dietary·idempotency·integrity·landmarks·list·released·ui·vent · ← agent·analog·atom·aura·collide·complication·dermatology·dietary·idempotency·integrity·landmarks·list·released·ui·vent
+neighbors → activity·attendee·capacity·category·collapse·exam·law·maximum·merge·requirement·sti·therapy · ← activity·attendee·capacity·category·collapse·exam·law·maximum·merge·requirement·sti·therapy
 analysis —
 law physical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `084e2d00-5a4d-87e2-a859-57071273234c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c4e69f19-da53-8cdd-8dfb-48304eb190cb` · `pnpm readme` · `pnpm computed:check`</sub>

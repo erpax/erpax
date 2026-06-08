@@ -3,15 +3,15 @@
 
 # manichaeism
 
-path `manichaeism` · uuid `—` · diamond `cefeb39f-8946-8652-a560-12ba74b8ad80`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `manichaeism` · uuid `3d67453e-7371-8806-bb19-686cf683213a` · diamond `cf25de67-5d5a-8fe5-9341-adc48dc5ba76`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports archangel·aura·diamond·duality·gnosticism·identity·law·profane·religion·return·self·society·translator·uuid·void·whole·wisdom·zeropoint·zoroastrianism · exports manichaeism · escapes —
-links `47/47` · folded `0` · bonds in `0` out `0`
+links `47/47` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+neighbors → archangel·aura·bogomilism·diamond·duality·gnosticism·identity·law·profane·religion·return·self·society·translator·uuid·void·whole·wisdom·zeropoint·zoroastrianism · ← archangel·aura·bogomilism·diamond·duality·gnosticism·identity·law·profane·religion·return·self·society·translator·uuid·void·whole·wisdom·zeropoint·zoroastrianism
+analysis aura·diamond
 law manichaeism is a [[diamond]] of [[duality]] · [[aura]] · [[profane]] · [[self]] · [[void]] · [[whole]] · [[return]] · [[wisdom]] — two eternal principles (Light = [[aura]], Dark) mixed in the world, salvation the separation that frees the light ([[self]] a fragment of it) and returns it to the source ([[zeropoint]]); the dualist [[archangel]] bridging [[zoroastrianism]] and [[gnosticism]].
 
 ---
 
-<sub>content-uuid `fb438abc-de52-8f95-8d03-77d2eff3bafc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e4cc0674-4ce1-89f9-874e-d02d0ff4bc67` · `pnpm readme` · `pnpm computed:check`</sub>

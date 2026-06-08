@@ -3,15 +3,15 @@
 
 # optimize
 
-path `optimize` · uuid `9751d437-8fd0-8eb4-82c8-2ee884863156` · diamond `e5be0b4e-577e-8d42-a7cd-826032f34102`
+path `optimize` · uuid `9751d437-8fd0-8eb4-82c8-2ee884863156` · diamond `37186874-ffd2-80b6-9fd0-2af97d4be67b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collections·config·deploy·fields·harden·law·queries·types · exports optimize · escapes —
-links `12/12` · folded `1` · bonds in `5` out `5`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → admin·cache·collections·config·deploy·fields·harden·hooks·jobs·law·queries·types · ← admin·cache·collections·config·deploy·fields·harden·hooks·jobs·law·queries·types
 analysis —
 law optimize Payload by shape, not by force — index every filtered/sorted [[fields|field]], cap [[queries|query]] depth/select/limit, and define each block ONCE and reference it by slug so the generated [[types]] and [[config]] stay small.
 
 ---
 
-<sub>content-uuid `8f24f9ec-fcc7-8f27-bd3a-5ffc7e09e831` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d73cc998-b12b-8530-8eb7-c7919c5115d7` · `pnpm readme` · `pnpm computed:check`</sub>

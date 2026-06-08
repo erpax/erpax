@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `physiotherapy` · sub-root `5a0a5fd1-8939-8555-858d-df513894e918`
-- bond degree `10` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `5a0a5fd1-8939-8555-858d-df513894e918`
-- bonds in `3` · out `3`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5c41da55-722a-85d7-86c9-40404732796a` · framed by typography partition `physiotherapy` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3a8965a3-83cf-858d-8141-692af493487c` · framed by typography partition `physiotherapy` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

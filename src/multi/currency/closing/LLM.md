@@ -3,15 +3,15 @@
 
 # closing
 
-path `multi/currency/closing` · uuid `d6231602-10d9-81e7-afd6-d5ceb5b39950` · diamond `90cde352-fc20-84d9-8fbf-a7b3c95e8913`
+path `multi/currency/closing` · uuid `d6231602-10d9-81e7-afd6-d5ceb5b39950` · diamond `3163ae55-6ac3-86fa-98b1-7d4de0d10507`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/currency/reconciliation · exports ...·CurrencyBalance·CurrencyReconciliation·ExchangeRateRevaluation·MultiCurrencyReconciliation·barrel · escapes —
-links `1/1` · folded `1` · bonds in `21` out `22`
+links `1/1` · folded `1` · bonds in `3` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → album·albums·arrangement·composer·credential·euenergy·forcemajeure·forecast·gravity·landmarks·mandates·num·planting·problem·recognition·recognized·registered·sanitization·serving·statistic·variable·varies · ← album·albums·arrangement·credential·euenergy·forcemajeure·forecast·gravity·landmarks·mandates·num·planting·problem·recognition·recognized·registered·sanitization·serving·statistic·variable·varies
+neighbors → accounting·checker·law·law · ← accounting·checker·law
 analysis —
 law closing must balance per currency, not just consolidated — exchange rates pinned to the period-end date make revaluation deterministic, and an immutable chain leaf proves no rate change was hidden.
 
 ---
 
-<sub>content-uuid `e785fbc4-b3d0-8a2b-89ce-d16f36b0c31a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42157ed3-e59d-8345-bae2-1b54bf0c6795` · `pnpm readme` · `pnpm computed:check`</sub>

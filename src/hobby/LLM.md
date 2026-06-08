@@ -3,15 +3,15 @@
 
 # hobby
 
-path `hobby` · uuid `4f3ea5e1-df4a-86d9-b575-341e8ba1ede6` · diamond `7023154b-e8b8-89fc-be6d-355f39000574`
+path `hobby` · uuid `4f3ea5e1-df4a-86d9-b575-341e8ba1ede6` · diamond `d0410d84-a177-8620-bb95-9469f4a07724`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·shop·sti · exports hobby · escapes —
-links `5/5` · folded `1` · bonds in `63` out `61`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·agent·akashic·analog·atom·aura·best·c19·carriers·catalogue·clinician·cohort·community·conference·connection·contractual·corrects·corruption·diffusion·dropoff·editor·founder·grant·has·id·join·ligament·liquor·list·localize·locations·marine·marry·mass·memories·memory·office·pats·progression·project·read·roadmap·satire·saturday·schema·seasonal·seat·sections·sectors·see·seed·sell·sequence·sign·skill·solve·sync·tax·tour·venue · ← 3986·access·agent·akashic·analog·atom·best·c19·carriers·catalogue·clinician·cohort·community·conference·connection·contractual·corrects·corrects·corruption·diffusion·dropoff·editor·founder·grant·has·id·join·ligament·liquor·list·localize·locations·marine·marry·mass·memories·memory·office·pats·progression·project·read·roadmap·satire·saturday·schema·schema·seasonal·seat·sections·sectors·see·seed·seed·sell·sequence·sign·skill·solve·sync·tax·tour·venue
+neighbors → collapse·law·merge·shop·sti · ← collapse·law·merge·shop·sti
 analysis —
 law hobby is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6c8ee6e3-57a0-8405-9096-5fd25aae14a7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9d7e53e-6cf7-8f00-8885-91331eb072ac` · `pnpm readme` · `pnpm computed:check`</sub>

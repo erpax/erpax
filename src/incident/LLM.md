@@ -3,15 +3,15 @@
 
 # incident
 
-path `incident` · uuid `a2768456-406b-88ba-8fbd-038febaf681f` · diamond `056d1720-5727-8857-832c-5b3dbbfe44de`
+path `incident` · uuid `a2768456-406b-88ba-8fbd-038febaf681f` · diamond `aca5bbda-8ecb-89f6-8ad5-46d626a9b950`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports audit·law·resolution·risk·runbook·schedule·workflow · exports incident · escapes —
-links `9/9` · folded `1` · bonds in `0` out `0`
+links `9/9` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → defect·events·law·resolution·risk·runbook·schedule·workflow · ← defect·events·law·resolution·risk·runbook·schedule·workflow
 analysis —
 law an incident is the log of an unplanned adverse event (downtime, stoppage, safety) tracking root-cause, impact, [[resolution]], and prevention — the record from which a [[runbook]] is followed and recurrence prevented.
 
 ---
 
-<sub>content-uuid `46c745a5-f078-8548-84b0-3f49decb0216` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `faa7ec70-2add-8ee5-a535-d054e56e339d` · `pnpm readme` · `pnpm computed:check`</sub>

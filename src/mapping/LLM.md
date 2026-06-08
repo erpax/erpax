@@ -3,15 +3,15 @@
 
 # mapping
 
-path `mapping` · uuid `30565f60-3e5f-81b9-b04c-451240c0442e` · diamond `78e30303-8c34-8c98-87cf-d12493f1afc5`
+path `mapping` · uuid `30565f60-3e5f-81b9-b04c-451240c0442e` · diamond `e5ce6253-a9a8-83a9-8528-f654d0ba61f3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·law·mappings·reference · exports mapping · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → balance·law·mappings·reference · ← balance·law·mappings·reference
 analysis —
 law every source value resolves to exactly one target; an ambiguous or missing correspondence is not a mapping.
 
 ---
 
-<sub>content-uuid `172111c6-1fe9-817d-a814-ad24327d99d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8fe60002-64d5-80a4-afce-6a9123169af6` · `pnpm readme` · `pnpm computed:check`</sub>

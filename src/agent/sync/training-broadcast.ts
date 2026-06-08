@@ -25,6 +25,7 @@ import type { AgentContext, DomainEvent } from '../types'
 import type { HeldLine, RequiredLine } from '@/competency/gap'
 import { processEffects } from '../effect-processor'
 import { createAgentContext } from '../context'
+import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '../strict-apply'
 import { TRAINING_TRIGGER } from '@/agents/registered'
 import { chatEmit, type ChatClient } from './payload-chat'
 
@@ -133,11 +134,18 @@ export function trainingAfterChange(): CollectionAfterChangeHook {
       const { agentRuntime } = await import('@/agent/bootstrap')
       const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
       const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
+      const law = defaultAgentLawState({
+        depth: 1,
+        actor: 'training-broadcast',
+        grant: AGENT_RUNTIME_GRANT,
+        untrustedPayload: ev.payload,
+      })
       const ctx: AgentContext = createAgentContext({
         runtime: agentRuntime,
         payload: req.payload,
         tenantId,
-        mcp: createInProcessMcpClient(buildErpaxMcpTools(agentRuntime.registry as never), req),
+        law,
+        mcp: createInProcessMcpClient(buildErpaxMcpTools(agentRuntime.registry as never), req, { law }),
         emit: chatEmit(req.payload as unknown as ChatClient, 1), // the priced plan broadcasts as a society row
       })
       const effects = await agentRuntime.dispatchEvent(ctx, ev)

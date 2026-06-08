@@ -3,15 +3,15 @@
 
 # ai
 
-path `cloudflare/ai` · uuid `76b57c9d-9ec1-833f-a3eb-6ed37e897098` · diamond `82b46917-16c4-802a-b82f-3881208fd8a2`
+path `cloudflare/ai` · uuid `b3b0066a-e1d6-8a07-89b5-9fa59c6670d4` · diamond `51ef27af-a7de-820b-8fae-d16203cef0e3`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports AI_GATEWAY_VAR_KEYS·AI_STACK_BINDING_TYPES·agentAiWorkerFace·aiBindingDiamond·aiModelAtomPath·aiSecretIdentity·cloudflareAiAccountingExtras·decryptCloudflareAiSecretIfUuid·deriveAiBindingDiamonds·filterAiBindings·isAiRelatedBinding·loadRepoAiBindings·organ·sealCloudflareAiSecret·verifyAiBindingDiamonds · escapes —
-links `11/11` · folded `1` · bonds in `11` out `12`
+links `11/11` · folded `1` · bonds in `13` out `14`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·bindings·cloudflare·diamond·identity·innovation·law·law·models·path·payload·secret · ← agent·bindings·cloudflare·diamond·identity·innovation·law·models·path·payload·secret
+neighbors → agent·bindings·cloudflare·diamond·identity·industry·innovation·law·law·models·path·payload·secret·serverless · ← agent·bindings·cloudflare·diamond·identity·industry·innovation·law·models·path·payload·secret·serverless
 analysis agent·cloudflare·diamond·secret
 law every Cloudflare Workers AI binding has a sealed diamond; innovation ships test-first ([[innovation]]).
 
 ---
 
-<sub>content-uuid `18bb8aef-b437-8aa1-a8c7-bfd65e171953` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6423bbd9-d823-8906-9d63-362142895596` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # communication
 
-path `quantum/communication` · uuid `4216c47d-0575-848a-910e-ec04c82c54d8` · diamond `5259ebb8-f7b0-8712-9317-d87b7a29fc97`
+path `quantum/communication` · uuid `4216c47d-0575-848a-910e-ec04c82c54d8` · diamond `e971b04c-0dd7-8c4f-9a63-390714a64a2b`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/communication·@/entanglement · exports const · escapes —
-links `10/10` · folded `1` · bonds in `14` out `22`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agent·change·chat·clinician·communication·communication·enrolling·landmarks·landmarks·landmarks·list·list·list·memories·memories·memory·memory·memory·qualification·qualification·qualification·segment · ← agent·change·chat·chat·clinician·communication·communication·enrolling·landmarks·list·memories·memory·qualification·segment
+links `10/10` · folded `1` · bonds in `17` out `25`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·channel·chat·cloning·communication·communication·entanglement·key·law·law·law·merge·merge·message·message·message·quantum·quantum·quantum·send·superdense·teleportation·uuid·uuid·uuid · ← agent·channel·chat·chat·cloning·communication·communication·entanglement·key·law·merge·message·quantum·send·superdense·teleportation·uuid
 analysis agent
 law a message's identity IS its content-uuid, so the channel can only carry meaning faithfully — a received message is intact iff its uuid equals the original's (`intact` = `sameMessage`), and because every distinct meaning has a distinct uuid, a forged or altered message necessarily presents a different identity. No-cloning holds across the matrix: nothing can wear a meaning's uuid without being that exact meaning.
 
 ---
 
-<sub>content-uuid `a6a10e67-c3bd-8741-99e1-9ef7c5d7742b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f19fad4-2e9e-8ed8-8a6d-830e2135bd7f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports authority·collapse·law·merge·sti · exports recognizing · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·literary·memories·stat · ← cohort·landmarks·literary·memories·stat
+neighbors → authority·collapse·law·merge·sti · ← authority·collapse·law·merge·sti
 analysis —
 law recognizing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `db84d331-8c46-89b7-8dc0-306324bdfdc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `11cc9971-d30b-810f-92ed-e9ff0014d218` · `pnpm readme` · `pnpm computed:check`</sub>

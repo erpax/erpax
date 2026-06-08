@@ -3,15 +3,15 @@
 
 # mosque
 
-path `mosque` · uuid `3491275b-a911-89fa-a59f-bb928589521d` · diamond `eb7158d5-bb0e-8d1a-88f2-849b2041d16e`
+path `mosque` · uuid `3491275b-a911-89fa-a59f-bb928589521d` · diamond `a7b35289-569b-82cd-9410-b26852c9ca7f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports mosque · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law mosque is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `46028a2e-8ed6-8c87-ba0b-9ec3b93217da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `226d51f7-2e2b-846f-8001-e1886d7523f7` · `pnpm readme` · `pnpm computed:check`</sub>

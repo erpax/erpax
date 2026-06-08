@@ -23,7 +23,7 @@
 
 - partition `copay` · sub-root `0587d678-8f5f-8586-b4e6-39010c0b4320`
 - bond degree `23` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `eb2b2372-f9b9-8c52-9fe7-7f8a7cf58f94` · framed by typography partition `copay` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f27b5c3c-5f58-8e83-9318-885585d110c7` · framed by typography partition `copay` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

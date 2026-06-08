@@ -4,7 +4,7 @@
 # explainability
 
 path `beyond/explainability` · uuid `8ea65168-3acd-889e-8648-f89debe3d64b` · diamond `d3bb5636-1f2e-81ef-ae90-a84c7ea6cd01`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types · exports function · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every outcome carries its own explanation, composed deterministically (no LL
 
 ---
 
-<sub>content-uuid `492d88cc-1051-84a2-8cf0-a13519ddd725` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ded7458-f86b-8c39-8016-f93b427f1822` · `pnpm readme` · `pnpm computed:check`</sub>

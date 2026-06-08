@@ -23,7 +23,21 @@
 
 - partition `currencies` · sub-root `32cb9160-bc9d-8a86-8d77-e75ec2ccfaa0`
 - bond degree `16` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `db5d644e-f983-8b4d-8b1c-f4543e9ff0ec` · framed by typography partition `currencies` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a8df7c86-08a7-8973-a556-48e7099bc72f` · framed by typography partition `currencies` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

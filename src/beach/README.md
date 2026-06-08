@@ -23,7 +23,7 @@
 
 - partition `beach` · sub-root `9367614f-4c85-80d7-b4fd-aa15b206638e`
 - bond degree `6` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6c955825-3d1e-810f-bd65-0c08114001be` · framed by typography partition `beach` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e3e36e74-d204-815d-a807-d1ad59dfb413` · framed by typography partition `beach` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -24,13 +24,27 @@
 ## typography graph
 
 - partition `deploy` · sub-root `be02e68c-774d-88a2-b917-34ac0505d2db`
-- bond degree `108` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `114` · analysis neighbors —
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed` · banner
+
+## analytics
+
+- bond degree `114` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c`
-- bonds in `31` · out `35`
+- bonds in `33` · out `37`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `6a46d2ff-9727-801a-9c2b-3dc33604f12c` · framed by typography partition `deploy` bonds `108` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bcb53bf2-8b30-8d31-a8e4-580f34c30a9f` · framed by typography partition `deploy` bonds `114` · `pnpm readme` · `pnpm readme:check`</sub>

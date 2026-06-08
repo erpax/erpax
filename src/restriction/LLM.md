@@ -3,15 +3,15 @@
 
 # restriction
 
-path `restriction` · uuid `91e09aab-c33e-87fc-8691-3279952a05ab` · diamond `ce6ab110-79ec-8a0b-863c-d4050b04a055`
+path `restriction` · uuid `91e09aab-c33e-87fc-8691-3279952a05ab` · diamond `0e1d2ce7-60d7-8a7b-b802-089d0a4ca870`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports contracts·law·license·matter · exports restriction · escapes —
-links `5/5` · folded `1` · bonds in `16` out `16`
+links `5/5` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → catalogue·destination·drone·dropoff·entertainment·game·homeopathic·import·landmarks·list·marine·marry·memories·patent·progression·wp · ← catalogue·destination·drone·dropoff·entertainment·game·homeopathic·import·landmarks·list·marine·marry·memories·patent·progression·wp
+neighbors → contracts·law·license·matter · ← contracts·law·license·matter
 analysis —
 law a restriction is a negative grant on a [[license]] — field-of-use, geographic, customer-type, sublicense, or derivative-work limits — bounding what the licensee may do; absence of a restriction is permission.
 
 ---
 
-<sub>content-uuid `72cf239d-782f-8fab-9f04-4d8c141f68f2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58a11f3c-9893-8e7a-a401-6776d1dc5692` · `pnpm readme` · `pnpm computed:check`</sub>

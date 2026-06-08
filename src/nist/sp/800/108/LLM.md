@@ -3,15 +3,15 @@
 
 # 108
 
-path `nist/sp/800/108` · uuid `c7569585-f1ea-8855-aead-319c4e740ed0` · diamond `9be74098-5ee5-860a-89e3-362a189461d4`
+path `nist/sp/800/108` · uuid `c7569585-f1ea-8855-aead-319c4e740ed0` · diamond `54b15eb0-3907-8661-87b8-e150b4dea701`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports deriveSecretFromPayloadSecret·internalSecretPurpose·type · escapes —
-links `0/0` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `0/0` · folded `1` · bonds in `0` out `0`
+faces worker·plugin·pwa `1·0·0`
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `d92c4f20-d348-8b64-9918-867b054e8d07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fb1391f-39a9-878f-9e73-1ab9c6313601` · `pnpm readme` · `pnpm computed:check`</sub>

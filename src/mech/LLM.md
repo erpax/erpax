@@ -3,15 +3,15 @@
 
 # mech
 
-path `mech` · uuid `a1b48589-59ed-8fc0-9532-85f20399be18` · diamond `b5af2750-27e9-82ce-9637-6f1815d792b6`
+path `mech` · uuid `a1b48589-59ed-8fc0-9532-85f20399be18` · diamond `d0c8f168-7782-8513-b66b-75046a67a44a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·law·merge·num·pats·sti·vent · exports mech · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·surprisal · ← cohort·landmarks·memories·stat·surprisal
+neighbors → collapse·cvd·law·merge·num·pats·sti·vent · ← collapse·cvd·law·merge·num·pats·sti·vent
 analysis —
 law mech is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2ba07771-f955-83c0-ae8b-0927b5c6923d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `102071eb-9e73-84b7-8c33-2eb3a56444eb` · `pnpm readme` · `pnpm computed:check`</sub>

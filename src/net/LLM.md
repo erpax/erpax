@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·worth · exports net · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·issn·landmarks·memories·stat · ← cohort·issn·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·worth · ← collapse·law·merge·sti·worth
 analysis —
 law net is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9d1e3556-4629-8c9c-a833-6117b19e00c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `053e7044-ae4a-8d78-a8ef-5c9c20a16ece` · `pnpm readme` · `pnpm computed:check`</sub>

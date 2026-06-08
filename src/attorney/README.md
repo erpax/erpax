@@ -23,7 +23,7 @@
 
 - partition `attorney` · sub-root `397816d1-5115-8802-a9dd-7730ef9c7729`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `2d6319aa-868d-8ae7-b6c2-83d6e836060a` · framed by typography partition `attorney` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `187d4971-aee2-8af9-a61c-c1b938702029` · framed by typography partition `attorney` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # engineering
 
-path `reverse/engineering` · uuid `8f75109f-06e2-83e6-a4e4-b2e3e2e42324` · diamond `b713069c-7e46-8348-b2a2-4849486fad57`
+path `reverse/engineering` · uuid `8f75109f-06e2-83e6-a4e4-b2e3e2e42324` · diamond `0fe5b13f-56f8-8081-8d04-cb6e69e9bbee`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accept·akashic·atom·audit·breath·confirm·derive·fear·finality·gravity·harden·merge·migrate·proof·reverse·security·uuid·word · exports engineering · escapes —
-links `30/30` · folded `1` · bonds in `2` out `2`
+links `30/30` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → accept·akashic·atom·audit·breath·confirm·derive·fear·finality·gravity·harden·merge·migrate·proof·reverse·security·uuid·word · ← accept·akashic·atom·audit·breath·confirm·derive·fear·finality·gravity·harden·merge·migrate·proof·reverse·security·uuid·word
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `5a58530f-c6e6-80f8-8c41-2c6f6403f776` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `68b4dd85-1dc9-8056-bcb6-0382cc730fbd` · `pnpm readme` · `pnpm computed:check`</sub>

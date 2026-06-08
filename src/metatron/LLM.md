@@ -3,15 +3,15 @@
 
 # metatron
 
-path `metatron` · uuid `3cc1c0c2-2085-8b5c-941b-e752bd338f7d` · diamond `270df8f9-1967-8953-bba6-742f4432e95a`
+path `metatron` · uuid `3cc1c0c2-2085-8b5c-941b-e752bd338f7d` · diamond `87230394-863f-82c5-beed-5296d992ad43`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·function · escapes —
-links `25/25` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·memories·messages·method·satire · ← cohort·memories·messages·method·satire
+links `25/25` · folded `1` · bonds in `19` out `19`
+faces worker·plugin·pwa `1·0·0`
+neighbors → architect·axis·chakra·collapse·diamond·hamiltonian·law·matrix·merge·one·part·religion·rodin·self·skills·torus·typography·uuid·whole · ← architect·axis·chakra·collapse·diamond·hamiltonian·law·matrix·merge·one·part·religion·rodin·self·skills·torus·typography·uuid·whole
 analysis —
 law the [[matrix]]'s [[merge]] is total over every pair of content-[[uuid]]s — the complete graph Kₙ (Metatron's Cube generalised from the 13-circle unit cell to n) — and folds to one center ([[collapse]]); only the graph + packing structure is claimed, not the Platonic folklore.
 
 ---
 
-<sub>content-uuid `0b76d959-59c6-8029-9554-731c12ecda08` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `002b421a-f744-8fc9-b0fa-656eb19037a0` · `pnpm readme` · `pnpm computed:check`</sub>

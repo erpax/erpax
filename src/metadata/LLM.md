@@ -3,15 +3,15 @@
 
 # metadata
 
-path `metadata` · uuid `61f20092-1e51-864b-8108-cf601bc9d742` · diamond `56a7d7cb-1a29-881f-ac22-d44b76a34fb1`
+path `metadata` · uuid `61f20092-1e51-864b-8108-cf601bc9d742` · diamond `f16038cf-0e19-8dcc-9c6f-d62bea0dd8d6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports config·fields·identity·queries·tags · exports metadata · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `7` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → accounting·config·fields·fields·identity·identity·mcp·queries·tags · ← accounting·config·fields·identity·mcp·queries·tags
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `007790f3-cbb3-89e7-ab61-3afc4a294310` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9e631bab-34ff-8ad1-9edf-a9fb080e7080` · `pnpm readme` · `pnpm computed:check`</sub>

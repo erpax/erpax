@@ -3,15 +3,15 @@
 
 # npi
 
-path `npi` · uuid `712974b2-252a-89fd-87c9-5692c4d24d54` · diamond `1edb842e-bf06-8389-93e2-d1446d3a6721`
+path `npi` · uuid `712974b2-252a-89fd-87c9-5692c4d24d54` · diamond `9518e710-9cdf-842d-8588-abd849f1fbab`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·us · exports npi · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·us · ← collapse·law·merge·sti·us
 analysis —
 law npi is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95a8df66-c8f0-8194-af19-0f864de1aa09` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2da774ed-0d6d-8dc3-97fd-79f41befa157` · `pnpm readme` · `pnpm computed:check`</sub>

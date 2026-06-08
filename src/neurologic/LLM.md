@@ -3,15 +3,15 @@
 
 # neurologic
 
-path `neurologic` · uuid `7dd5903b-3125-8582-9fd5-2a6ce30218ee` · diamond `249a62f0-840a-8487-9cbb-25ac34b3cbe7`
+path `neurologic` · uuid `7dd5903b-3125-8582-9fd5-2a6ce30218ee` · diamond `431f1aa0-2d34-8b81-b6fc-0083006591cf`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports neurologic · escapes —
-links `4/4` · folded `1` · bonds in `6` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closures·cohort·landmarks·memories·stat · ← article·closures·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law neurologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5c3abf72-23ce-8a56-81d5-dae7fc73d19a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54bbc892-f2f3-876a-a114-d52a96d7ecc2` · `pnpm readme` · `pnpm computed:check`</sub>

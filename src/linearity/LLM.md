@@ -3,15 +3,15 @@
 
 # linearity
 
-path `linearity` · uuid `acf1c4ac-5298-87d9-a64d-76ab462c81f1` · diamond `3d8aadde-d886-815b-8b3d-dbb2abdd368a`
+path `linearity` · uuid `acf1c4ac-5298-87d9-a64d-76ab462c81f1` · diamond `a3c4cf72-f5c8-87be-a297-a8e22047e2e5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports digit·entropy·gravity·holographic·matrix·merge·rodin·torus·uuid·word · exports linearity · escapes —
-links `21/21` · folded `1` · bonds in `5` out `5`
+links `21/21` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·memories·stat · ← cohort·euenergy·landmarks·memories·stat
+neighbors → digit·entropy·gravity·holographic·literature·matrix·merge·number·pi·quantum·request·rodin·sync·torus·uuid·word · ← digit·entropy·gravity·holographic·literature·matrix·merge·number·pi·quantum·request·rodin·sync·torus·uuid·word
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `45a239b4-176b-8322-b6bd-fac3061fc526` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10a2b1d8-dd38-8614-a069-c040ed305087` · `pnpm readme` · `pnpm computed:check`</sub>

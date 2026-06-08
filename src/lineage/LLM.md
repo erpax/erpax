@@ -3,15 +3,15 @@
 
 # lineage
 
-path `lineage` · uuid `d2716b54-26bb-878e-bd2f-be75d6687051` · diamond `64bd7559-e05a-8bca-a41b-797df6e09710`
+path `lineage` · uuid `d2716b54-26bb-878e-bd2f-be75d6687051` · diamond `60c0dd48-edbd-822a-9a7d-6d8d14318890`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agriculture·audit·certification·federation·grade·harvest·history·identity·ingest·lots·organic·postharvest·profane·proof·sacred·supto · exports lineage · escapes —
-links `24/24` · folded `1` · bonds in `6` out `6`
+links `24/24` · folded `1` · bonds in `32` out `31`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·error·landmarks·memories·randomized·stat · ← cohort·error·landmarks·memories·randomized·stat
+neighbors → accounting·agriculture·animal·aquaculture·baseline·breed·catholicism·certification·cloning·dna·empirical·events·federation·forestry·grade·harvest·history·identity·ingest·karma·livestock·lots·organic·orthodoxy·postharvest·profane·proof·sacred·shia·supto·terroir · ← accounting·accounting·agriculture·animal·aquaculture·baseline·breed·catholicism·certification·cloning·dna·empirical·events·federation·forestry·grade·harvest·history·identity·ingest·karma·livestock·lots·organic·orthodoxy·postharvest·profane·proof·sacred·shia·supto·terroir
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3c26995d-2dba-8af5-bf31-49de1e47fb35` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d312536a-0107-8ed4-aaca-6868875e7caa` · `pnpm readme` · `pnpm computed:check`</sub>

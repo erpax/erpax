@@ -3,15 +3,15 @@
 
 # industry
 
-path `industry` · uuid `a713f0f5-7d70-8a2a-8295-05c926a85b63` · diamond `a7ca3f4f-8339-8ff5-8420-9cc9003a4c39`
+path `industry` · uuid `a713f0f5-7d70-8a2a-8295-05c926a85b63` · diamond `97dc9d53-98d9-8b6c-b3be-705b03929bcb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports industry · escapes —
-links `2/2` · folded `1` · bonds in `18` out `18`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → benefit·close·cohort·discover·functional·geometry·goodwill·landmarks·memories·overdraft·prepaid·prepend·provider·saturated·stat·temporal·trans·unsaturated · ← benefit·close·cohort·discover·functional·geometry·goodwill·landmarks·memories·overdraft·prepaid·prepend·provider·saturated·stat·temporal·trans·unsaturated
+neighbors → law·sector·thing · ← law·sector·thing
 analysis —
 law industry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ef4e810a-5193-8e5c-97d3-676affaba45e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d9a8d94-d091-892a-accc-86ed4befe2a6` · `pnpm readme` · `pnpm computed:check`</sub>

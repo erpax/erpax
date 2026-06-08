@@ -3,15 +3,15 @@
 
 # history
 
-path `history` · uuid `c57ca07d-2e65-8f8a-9e3f-32bf07d56fdf` · diamond `da445db8-61d2-8cba-b819-db4e4a00408c`
+path `history` · uuid `c57ca07d-2e65-8f8a-9e3f-32bf07d56fdf` · diamond `4b91e927-c674-855d-835f-7adf1f50d0af`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports akashic·begin·chat·coil·end·fractal·identity·law·merge·proof·self·sequence·society·standard·tamper · exports history · escapes —
-links `27/27` · folded `1` · bonds in `5` out `5`
+links `27/27` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → archive·cohort·landmarks·memories·stat · ← archive·cohort·landmarks·memories·stat
+neighbors → akashic·anchor·angel·begin·cases·chat·coil·competition·contribution·cost·end·fractal·identity·law·lineage·merge·patent·peace·power·profane·projection·proof·receipt·research·sacred·science·self·sequence·shred·society·standard·sufficient·voting · ← akashic·anchor·angel·begin·cases·chat·coil·competition·contribution·cost·end·fractal·identity·law·lineage·merge·patent·peace·power·profane·projection·proof·receipt·research·sacred·science·self·sequence·shred·society·standard·sufficient·voting
 analysis —
 law git history is the [[akashic]] time axis — a content-addressed Merkle DAG that is at once a knowledge source AND a distributed [[tamper/cost]] level (forging the past = rewriting every commit on every clone); wiring it in raises forge cost at zero maintenance cost.
 
 ---
 
-<sub>content-uuid `68e6a193-304e-8f71-a83c-b746b3a3b002` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9005e61d-dc2a-8441-b4da-88b2b191666f` · `pnpm readme` · `pnpm computed:check`</sub>

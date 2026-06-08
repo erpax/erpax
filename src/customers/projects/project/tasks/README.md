@@ -25,7 +25,24 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `30` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §35 over-time-recognition` · banner
+- `IFRS IFRS-15 §B18 cost-to-cost` · banner
+- `ISO-19011:2018 audit-trail wbs-evidence` · banner
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `adb98289-727f-840e-b6d0-d8c2af081e08` · framed by typography partition `customers` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4400652d-5ff3-84af-9fae-4132a7c9cd4b` · framed by typography partition `customers` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `physiological` · sub-root `021ffa8c-8263-8b3c-8ca2-f39a6131280d`
-- bond degree `68` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `021ffa8c-8263-8b3c-8ca2-f39a6131280d`
-- bonds in `31` · out `31`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ad66fc68-7889-83bd-8ac5-1558f242171b` · framed by typography partition `physiological` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ffd47c5-7463-85d7-945b-25b08a72787a` · framed by typography partition `physiological` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

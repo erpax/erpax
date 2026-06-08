@@ -3,15 +3,15 @@
 
 # keep
 
-path `keep` · uuid `51a76e66-7f06-8509-9345-0d2f8d85aa9f` · diamond `7ab01115-71a2-8388-b6e0-7e90fee59c9c`
+path `keep` · uuid `51a76e66-7f06-8509-9345-0d2f8d85aa9f` · diamond `6fb5315c-e443-89a5-86bb-05fc4866b499`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports keep · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → about·lactose·landmarks · ← about·lactose·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law keep is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `60e89f09-ea04-8820-8ee0-fda65dd830fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d1cea6ea-43c3-8de2-b317-de572d665dc0` · `pnpm readme` · `pnpm computed:check`</sub>

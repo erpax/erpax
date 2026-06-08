@@ -3,15 +3,15 @@
 
 # rvpark
 
-path `rvpark` · uuid `710caebd-a764-8c0a-909d-33b74754b34c` · diamond `997178da-68af-814c-8e0e-b652d0307166`
+path `rvpark` · uuid `710caebd-a764-8c0a-909d-33b74754b34c` · diamond `98a9e52a-ec53-80ff-8da4-fffdf54b3370`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports rvpark · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → beach·cohort·gym·landmarks·memories·music·stat · ← beach·cohort·gym·landmarks·memories·music·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law rvpark is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f8ea03b9-ca5a-85a7-b55a-4bf204283b6b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `681eb682-ee71-8d98-a8eb-bfee1ddf7b4c` · `pnpm readme` · `pnpm computed:check`</sub>

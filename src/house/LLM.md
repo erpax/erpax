@@ -3,15 +3,15 @@
 
 # house
 
-path `house` · uuid `ae01bd64-9958-8022-9519-9bf99aecc9e1` · diamond `9a63b8f8-94ab-8678-a218-177b59cd65e7`
+path `house` · uuid `ae01bd64-9958-8022-9519-9bf99aecc9e1` · diamond `0ed25f84-0832-89ef-bc6c-26b8997bf915`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·painter · exports house · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·painter · ← law·painter
 analysis —
 law house is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1bf6c9f5-2993-8013-8b08-3cacf147f161` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0308a40-af4b-8ccf-81ad-9fca4eb5e0b6` · `pnpm readme` · `pnpm computed:check`</sub>

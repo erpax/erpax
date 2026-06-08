@@ -3,15 +3,15 @@
 
 # development
 
-path `quantum/development` · uuid `68775545-1723-8452-a806-bc6502ece6f7` · diamond `73177f31-593e-8a09-a38b-776967e28760`
+path `quantum/development` · uuid `68775545-1723-8452-a806-bc6502ece6f7` · diamond `efc6de1c-2b80-86eb-afe0-68ab68dcda1a`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/development · exports const·nextMove·ranked · escapes —
-links `22/22` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `22/22` · folded `1` · bonds in `26` out `33`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·anchor·aura·aura·balance·breath·collide·cost·development·development·entanglement·entanglement·expand·fusion·generate·law·law·law·links·matrix·matrix·merge·quantum·quantum·quantum·research·reveal·roadmap·sequence·singularity·society·uuid·wave · ← analog·anchor·aura·balance·breath·collide·cost·development·development·entanglement·expand·fusion·generate·law·links·matrix·merge·quantum·research·reveal·roadmap·sequence·singularity·society·uuid·wave
 analysis aura
 law the roadmap is totally ordered by feasibility (now ≺ near ≺ research), and `theOneMove` is always the highest-feasibility move not yet built — never a later one jumped ahead of an earlier. Every entry must be a grounded engineering move (graph + crypto on the classical matrix); none may claim an actual quantum computer, so the quantum names label only the end state, never the mechanism.
 
 ---
 
-<sub>content-uuid `79a8aa8a-0660-8c4e-be61-b2b802f3aad9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6273a442-7e29-8952-8f08-41770cbcd6b8` · `pnpm readme` · `pnpm computed:check`</sub>

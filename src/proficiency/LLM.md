@@ -3,15 +3,15 @@
 
 # proficiency
 
-path `proficiency` · uuid `9ab3b689-4c17-8832-9b2c-050bb05b7d7a` · diamond `9ebf4d2a-8c10-8e94-b09b-ed1d0bdcdeb4`
+path `proficiency` · uuid `9ab3b689-4c17-8832-9b2c-050bb05b7d7a` · diamond `1536f770-18d3-8d0e-a8e7-eb3bfc531e90`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·level·merge·sti · exports proficiency · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·level·merge·sti · ← collapse·law·level·merge·sti
 analysis —
 law proficiency is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e826a8ca-a11c-8dd9-b36f-198aa858e6c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ae35a09-0da9-8a67-a195-5098dc6db5b4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # postal
 
-path `postal` · uuid `e2b47328-aa57-801a-8df9-357504ece288` · diamond `c8f10e2d-8513-8711-89e8-eec81c1edf8f`
+path `postal` · uuid `e2b47328-aa57-801a-8df9-357504ece288` · diamond `1c9879aa-f079-8f75-bcd5-fb0791f29b17`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports address·begin·code·collapse·end·law·merge·prefix·range·service·specification·sti · exports postal · escapes —
-links `12/12` · folded `1` · bonds in `6` out `6`
+links `12/12` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat·unsid · ← action·cohort·landmarks·memories·stat·unsid
+neighbors → address·begin·code·collapse·end·law·merge·prefix·range·service·specification·sti·validation · ← address·begin·code·collapse·end·law·merge·prefix·range·service·specification·sti·validation
 analysis —
 law postal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `15066f7f-8301-81b3-bc3b-d25a7a035d2a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c20ab90f-0b1d-8cca-9b5e-02e5759011eb` · `pnpm readme` · `pnpm computed:check`</sub>

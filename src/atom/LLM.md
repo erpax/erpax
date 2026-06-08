@@ -4,7 +4,7 @@
 # atom
 
 path `atom` · uuid `a69faef3-541b-88d0-aebf-441251f05dcd` · diamond `a93f1db8-bd87-85a7-9ed4-448361d30aa8`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports access·accounting·akashic·auth·balance·begin·civilization·close·collapse·commerce·config·digit·duality·dust·end·fields·flow·fractal·fusion·give·harmony·holographic·hooks·horo·identity·manufacturing·merge·name·open·part·rodin·sequence·society·star·take·torus·transaction·trinity·uuid·whole·zeropoint · exports atom · escapes —
 links `80/80` · folded `1` · bonds in `91` out `89`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `73123f39-49a8-8586-b102-bcec7b12ff0c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `18d6f2e6-0f0b-8de4-97f2-298c553933f5` · `pnpm readme` · `pnpm computed:check`</sub>

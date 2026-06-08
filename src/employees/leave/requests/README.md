@@ -25,7 +25,33 @@
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
 - bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BG Labour Code Art.155-176` · banner
+- `BG-Labour-Code` · collection
+- `EU Working Time Directive 2003/88/EC minimum-leave` · banner
+- `EU-Directive-2003/88/EC` · collection
+- `IAS-19` · collection
+- `IFRS IAS-19 §11 §13 §14 short-term-employee-benefits` · banner
+- `IFRS IAS-19 §16 accumulating-paid-absences` · banner
+- `ISO-19011:2018 audit-trail leave-evidence` · banner
+- `ISO-8601-1:2019` · collection
+- `ISO-8601-1:2019 date-time` · banner
+- `US FMLA family-medical-leave-act` · banner
+- `US-FMLA` · collection
+- `US-GAAP ASC-710-10-25 compensated-absences` · banner
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
@@ -41,4 +67,4 @@
 
 ---
 
-<sub>content-uuid `04e04524-c7aa-8f44-9d57-34b46a3944bf` · framed by typography partition `employees` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `93e95b31-4345-8f23-be16-8bcbaea35606` · framed by typography partition `employees` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

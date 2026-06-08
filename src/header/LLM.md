@@ -3,15 +3,15 @@
 
 # header
 
-path `header` · uuid `38745e62-d5c2-804a-9777-c475c0d873a9` · diamond `fbf31614-9805-8fd1-948d-00f22b754f62`
+path `header` · uuid `38745e62-d5c2-804a-9777-c475c0d873a9` · diamond `081d2838-fe6b-8dcb-be1d-132117e605f1`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports Header·HeaderGlobal · escapes —
-links `5/5` · folded `1` · bonds in `21` out `21`
+links `5/5` · folded `1` · bonds in `5` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·aura·balance·certified·coding·collide·courthouse·cropplan·entertainment·fax·handling·holographic·import·journal·landmarks·nutrition·qualification·reconcile·rsvp·satire·workflow · ← angel·aura·balance·certified·coding·collide·courthouse·cropplan·entertainment·fax·handling·holographic·import·journal·landmarks·nutrition·qualification·reconcile·rsvp·satire·workflow
+neighbors → collapse·law·law·merge·sti·wp · ← collapse·law·merge·sti·wp
 analysis —
 law header is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `22aa050a-5634-8e1f-9f72-45ce28d8b1b7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e5b0fab-d4fc-8593-901c-3db7f0b6c20e` · `pnpm readme` · `pnpm computed:check`</sub>

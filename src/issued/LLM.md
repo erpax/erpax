@@ -3,15 +3,15 @@
 
 # issued
 
-path `issued` · uuid `35801c52-6152-84c7-bf46-103e13dc5be8` · diamond `fcf90b56-f1cc-85ad-a1d9-9bd3e4832bf9`
+path `issued` · uuid `35801c52-6152-84c7-bf46-103e13dc5be8` · diamond `f881c1e6-3af1-8177-a65b-a11176d20abf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports date·law·through · exports issued · escapes —
-links `3/3` · folded `1` · bonds in `8` out `7`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·colleagues·fertility·issue·landmarks·materials·spouse · ← accounting·availability·colleagues·fertility·issue·landmarks·materials·spouse
+neighbors → date·law·through · ← date·law·through
 analysis —
 law issued is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c279cf6a-9456-89f4-96b5-642cf72f1ff4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8dc6a07b-ed7a-856a-a715-54b6be61e209` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # refunds
 
-path `invoices/credit/memos/refunds` · uuid `b903a4b3-0b61-8e52-9ecb-15f12663f5db` · diamond `a4dd2dd9-a041-82c1-966b-8adae65cb89a`
+path `invoices/credit/memos/refunds` · uuid `b903a4b3-0b61-8e52-9ecb-15f12663f5db` · diamond `60d3e601-402b-87e6-a9ca-66d41de95ea7`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/utility · exports default · escapes —
-links `7/7` · folded `1` · bonds in `8` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·differential·entropy·landmarks·memories·snid·stat · ← accounting·cohort·differential·entropy·landmarks·memories·snid·stat
+links `7/7` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·entries·invoices·law·memos·orders · ← access·accounting·entries·invoices·law·memos·orders
 analysis —
 law a refund is the cash-out leg of a credit memo (ISO-20022 pacs.004 return) — it posts a GL journal entry, tokenises card data (never stored), and clears only through refund-approval segregation of duties.
 
 ---
 
-<sub>content-uuid `d26d75a6-d357-87ba-a1b1-3177f8322d8c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a70983c9-7a69-8b5b-b55f-95b7c4e6585e` · `pnpm readme` · `pnpm computed:check`</sub>

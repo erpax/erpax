@@ -3,15 +3,15 @@
 
 # responsibilities
 
-path `responsibilities` · uuid `8d037b6f-1ac0-8645-8d89-c1a896075029` · diamond `5b881e97-21dc-8625-9379-4e028facc3ca`
+path `responsibilities` · uuid `8d037b6f-1ac0-8645-8d89-c1a896075029` · diamond `97cef2e4-0cb8-80bc-8bf8-9cc8b4511e26`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports responsibilities · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·owned·score·stat · ← cohort·landmarks·memories·owned·score·stat
+neighbors → law·responsibility·thing · ← law·responsibility·thing
 analysis —
 law responsibilities is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `479278b6-3ea4-8baf-b764-ab5302ffb8ed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `40093181-fcb6-801a-961d-c89609028fd2` · `pnpm readme` · `pnpm computed:check`</sub>

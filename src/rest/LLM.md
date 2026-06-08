@@ -3,15 +3,15 @@
 
 # rest
 
-path `rest` · uuid `7f8d1dea-f1f1-8670-ad42-0cbb31ff14b4` · diamond `dc0c07a6-44a8-8477-ac57-2a421f8cc88b`
+path `rest` · uuid `7f8d1dea-f1f1-8670-ad42-0cbb31ff14b4` · diamond `92b6e5a9-ffd6-886e-85fe-d556976bb738`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·periods·sti · exports rest · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·calorie·chinese·choose·customer·guideline·landmarks·photograph·section · ← activities·calorie·chinese·choose·customer·guideline·landmarks·photograph·section
+neighbors → collapse·law·merge·periods·sti · ← collapse·law·merge·periods·sti
 analysis —
 law rest is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2ee47300-abca-8727-96ef-960c9a64a82c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2b9fcb80-dec1-83e5-b8cd-6cf61822a0da` · `pnpm readme` · `pnpm computed:check`</sub>

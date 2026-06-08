@@ -3,15 +3,15 @@
 
 # leisure
 
-path `leisure` · uuid `fee5c9eb-090a-83a5-a1e9-efdb4c0ddc94` · diamond `ee4b7cc9-9068-8024-9216-9244587b4778`
+path `leisure` · uuid `fee5c9eb-090a-83a5-a1e9-efdb4c0ddc94` · diamond `9d7ebe45-59d5-8ef0-9d3a-ea56386926d4`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports leisure · escapes —
-links `4/4` · folded `1` · bonds in `14` out `14`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → befriend·chat·cohort·conference·corrects·fertility·founder·id·landmarks·list·llm·meal·parent·seed · ← befriend·chat·cohort·conference·corrects·fertility·founder·id·landmarks·list·llm·meal·parent·seed
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law leisure is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e867db94-9e8b-8c54-b62e-9261c7a75e18` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04d39618-cbf5-8537-9ea4-14f116e2e1d3` · `pnpm readme` · `pnpm computed:check`</sub>

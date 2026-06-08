@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `rheumatologic` · sub-root `642684eb-7f65-889f-9a4b-468d13b67aa6`
-- bond degree `80` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `642684eb-7f65-889f-9a4b-468d13b67aa6`
-- bonds in `38` · out `38`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bb8d95bb-8637-88ee-ab48-5ea372a7376b` · framed by typography partition `rheumatologic` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd9c5f50-defa-8962-997c-cee5bc2667bb` · framed by typography partition `rheumatologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

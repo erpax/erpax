@@ -3,15 +3,15 @@
 
 # range
 
-path `range` · uuid `a5f41e7e-a425-8375-8dcb-3d9784a7ad41` · diamond `a33b0dc3-9a88-8789-80e4-20f4f698514d`
+path `range` · uuid `a5f41e7e-a425-8375-8dcb-3d9784a7ad41` · diamond `fd0bfda7-cc42-82dc-b515-01d03e001168`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports age·code·collapse·includes·law·merge·normal·postal·price·specification·sti·taxonomic·typical · exports range · escapes —
-links `13/13` · folded `1` · bonds in `17` out `16`
+links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → anchor·departure·detected·documentation·fields·friday·landmarks·list·log·marry·notice·progression·qualification·quantitative·quantity·venue · ← anchor·departure·departure·detected·documentation·fields·friday·landmarks·list·log·marry·notice·progression·qualification·quantitative·quantity·venue
+neighbors → age·code·collapse·includes·law·merge·normal·postal·price·specification·sti·taxonomic·typical · ← age·code·collapse·includes·law·merge·normal·postal·price·specification·sti·taxonomic·typical
 analysis —
 law range is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `30d772d7-13b3-8f78-8741-407ea9ad5862` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05ab9384-1c3c-818f-b4bb-b91d7cc9b6f4` · `pnpm readme` · `pnpm computed:check`</sub>

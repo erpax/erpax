@@ -3,15 +3,15 @@
 
 # life
 
-path `life` · uuid `134baa70-fed0-880a-bbec-454c8121c04a` · diamond `c4b778c1-2754-8939-8e9f-7794c13b07d2`
+path `life` · uuid `134baa70-fed0-880a-bbec-454c8121c04a` · diamond `1fc5ec3b-0c5d-8049-9352-3b5965cfe18a`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·sti · exports life · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·event·law·merge·sti · ← collapse·event·law·merge·sti
 analysis —
 law life is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e1267823-b0af-814c-9f37-6ffeddf7b536` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6db2a10b-0b21-8a4a-a867-4f3471ab4dbe` · `pnpm readme` · `pnpm computed:check`</sub>

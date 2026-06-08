@@ -3,15 +3,15 @@
 
 # perennial
 
-path `perennial` · uuid `ae8dedfa-a2a1-8dd4-9b26-09a9ce00ea4d` · diamond `8865c3ae-b12d-8dce-910d-4c96ccdca5b7`
+path `perennial` · uuid `ae8dedfa-a2a1-8dd4-9b26-09a9ce00ea4d` · diamond `67e6b38e-a08b-8189-9eda-e3822fcb0490`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·biological·crop·dormancy·graft·harvest·impairment·law·maturity·rootstock·rotation·scion·season·spacing·terroir·yield · exports perennial · escapes —
-links `33/33` · folded `1` · bonds in `4` out `4`
+links `33/33` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·fire·landmarks·load · ← accounting·fire·landmarks·load
+neighbors → agriculture·assets·crop·dormancy·graft·harvest·impairment·law·maturity·rootstock·rotation·scion·season·spacing·terroir·yield · ← agriculture·assets·crop·dormancy·graft·harvest·impairment·law·maturity·rootstock·rotation·scion·season·spacing·terroir·yield
 analysis —
 law a perennial's productive plant is a depreciating fixed asset (IAS-16 bearer plant), only its growing produce is IAS-41 — so renewal replaces [[rotation]], [[yield]] ramps over years rather than resetting each season, and the standing plant outlives any single harvest.
 
 ---
 
-<sub>content-uuid `2ce33545-a0f6-8264-9c65-55983018cd39` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1abbc761-77e2-8d3e-b57f-ea5509914206` · `pnpm readme` · `pnpm computed:check`</sub>

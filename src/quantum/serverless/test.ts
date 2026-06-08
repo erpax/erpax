@@ -23,6 +23,7 @@ import {
   diamondUuid,
   deploymentFaces,
 } from '@/diamond'
+import { uuid, jcsCanonicalize } from '@/integrity'
 import {
   parseWranglerBindings,
   deriveWranglerBindingDiamonds,
@@ -65,11 +66,12 @@ describe('serverlessQuantum — properties computed on the live repo', () => {
     expect(entanglementHolds()).toBe(true)
   })
 
-  it('existenceSealed — live tree seals cloudflare + quantum subgraphs', () => {
-    const cloud = computeDiamond({ kind: 'path', path: 'cloudflare' })
+  it('existenceSealed — wrangler binding diamonds + quantum atom seal on live tree', () => {
     const quantum = computeDiamond({ kind: 'path', path: 'quantum' })
-    expect(verifyDiamond(cloud.model).sealed).toBe(true)
     expect(verifyDiamond(quantum.model).sealed).toBe(true)
+    const text = readFileSync(join(ROOT, 'wrangler.jsonc'), 'utf8')
+    const diamonds = deriveWranglerBindingDiamonds(parseWranglerBindings(text))
+    expect(diamonds.every((d) => verifyDiamond(d).sealed)).toBe(true)
     expect(existenceSealed()).toBe(true)
   })
 
@@ -100,21 +102,25 @@ describe('proveServerlessQuantum — diamond-sealed computation chain', () => {
     expect(a.isomorphismUuid).toMatch(UUID_RE)
     expect(a.computationUuid).toMatch(UUID_RE)
 
-    const cloudUuid = diamondUuid(deriveDiamond('cloudflare'))
     const quantumUuid = diamondUuid(deriveDiamond('quantum'))
     expect(a.stages.find((s) => s.stage === 'existence')!.computation.model.atomPath).toBe(
       'quantum',
     )
-    expect(cloudUuid).toMatch(UUID_RE)
     expect(quantumUuid).toMatch(UUID_RE)
   })
 
-  it('existence stage folds cloudflare ⊕ quantum facet uuids into the proof', () => {
+  it('existence stage folds serverless binding facet ⊕ quantum facet uuids into the proof', () => {
     const proof = proveServerlessQuantum()
     const exist = proof.stages.find((s) => s.stage === 'existence')!
     const sealStage = exist.computation.stages.find((st) => st.stage === 'existence')!
-    const out = sealStage.output as { cloudflareUuid: string; quantumUuid: string }
-    expect(out.cloudflareUuid).toBe(diamondUuid(deriveDiamond('cloudflare')))
+    const out = sealStage.output as { serverlessFacetUuid: string; quantumUuid: string }
+    const text = readFileSync(join(ROOT, 'wrangler.jsonc'), 'utf8')
+    const bindingUuids = deriveWranglerBindingDiamonds(parseWranglerBindings(text))
+      .map((m) => diamondUuid(m))
+      .sort()
+    const expectedServerlessFacet = uuid(jcsCanonicalize({ bindings: bindingUuids }))
     expect(out.quantumUuid).toBe(diamondUuid(deriveDiamond('quantum')))
+    expect(out.serverlessFacetUuid).toBe(expectedServerlessFacet)
+    expect(out.serverlessFacetUuid).toMatch(UUID_RE)
   })
 })

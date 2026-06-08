@@ -3,15 +3,15 @@
 
 # physiotherapy
 
-path `physiotherapy` · uuid `5a0a5fd1-8939-8555-858d-df513894e918` · diamond `d14e8ac3-b53f-86d9-8d1d-c88621297a9b`
+path `physiotherapy` · uuid `5a0a5fd1-8939-8555-858d-df513894e918` · diamond `771daabb-167a-87ab-9cfa-1bfa5fccff93`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports physiotherapy · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·browser·profane · ← balance·browser·profane
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law physiotherapy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b6a416b-8b0e-860b-888a-05e46d4db568` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `95092b78-3547-8e75-a267-656db3340108` · `pnpm readme` · `pnpm computed:check`</sub>

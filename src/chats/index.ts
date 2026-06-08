@@ -21,6 +21,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
 import { chatBroadcastAfterChange } from '@/agent/sync'
+import { teamCommsBeforeChange } from '@/team/comms'
 
 const Chat: CollectionConfig = {
   slug: 'chat',
@@ -77,11 +78,21 @@ const Chat: CollectionConfig = {
           'Cascade hop count — the broadcast hook stops re-dispatching past MAX_BROADCAST_DEPTH (runaway-loop guard). An original publish is 0; an agent reaction is parent+1.',
       },
     },
+    {
+      name: 'emittedAt',
+      type: 'text',
+      admin: {
+        description:
+          'ISO-8601 emit time stamped when the envelope uuid was derived — used by team/comms to re-verify eventUuid at write time.',
+      },
+    },
   ],
-  // afterChange broadcast — a new chat row dispatches its embedded event into
-  // the shared society runtime (Payload's hook IS the broadcast; runs before
-  // the audit hook). Best-effort + guarded; never breaks the write.
-  hooks: standardCollectionHooks('chat', { afterChange: [chatBroadcastAfterChange()] }),
+  // beforeChange team-comms gate — tenant match, eventUuid integrity, depth cap
+  // (fail-closed). afterChange broadcast dispatches into the society runtime.
+  hooks: standardCollectionHooks('chat', {
+    beforeChange: [teamCommsBeforeChange()],
+    afterChange: [chatBroadcastAfterChange()],
+  }),
   timestamps: true,
 }
 

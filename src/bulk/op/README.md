@@ -2,7 +2,7 @@
 
 # op
 
-> atom `bulk/op` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `bulk/op` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `bulk` · sub-root `0e1069f8-b184-866b-b249-56308d6f5199`
 - bond degree `29` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -51,7 +51,7 @@
 
 ## analytics
 
-- bond degree `29` · sealed `1` · horo `4`
+- bond degree `29` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `15`
 
@@ -65,8 +65,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `64bbd709-02e1-8c67-9806-a92589978a45` · framed by typography partition `bulk` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `df72584c-a465-8ca5-ad77-8eab8a5bb3ac` · framed by typography partition `bulk` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

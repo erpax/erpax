@@ -3,15 +3,15 @@
 
 # iso6523
 
-path `iso6523` · uuid `63f3ecc0-c05c-85d1-8d86-7f11d9c1cae6` · diamond `a8777472-1c0a-8bd6-b52d-5ecfbd4d256e`
+path `iso6523` · uuid `63f3ecc0-c05c-85d1-8d86-7f11d9c1cae6` · diamond `9e70c2db-fc64-8219-a3fe-b993305b89f0`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports iso6523 · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 38·cohort·landmarks·memories·sanitization·stat · ← 38·cohort·landmarks·memories·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law iso6523 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9e8761bd-c169-8434-9769-b5d316913e32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `920fb08c-27de-8926-9adc-0e2eb0e6f42f` · `pnpm readme` · `pnpm computed:check`</sub>

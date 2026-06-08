@@ -3,15 +3,15 @@
 
 # replacee
 
-path `replacee` · uuid `0c2af669-1d70-8fc0-877d-a1696023aa63` · diamond `0b9f74e0-37f9-89fe-b61e-d3832fd54e69`
+path `replacee` · uuid `0c2af669-1d70-8fc0-877d-a1696023aa63` · diamond `261fc8a6-9c14-87e0-b23e-4f53fa3c4783`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports replacee · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·learning·memories·owned·stat · ← cohort·landmarks·learning·memories·owned·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law replacee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `300af5a0-653c-80f4-b4c3-645111830f5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00cdd933-2d08-829c-85f1-672fac9d30e9` · `pnpm readme` · `pnpm computed:check`</sub>

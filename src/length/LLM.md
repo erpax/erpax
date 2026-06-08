@@ -3,15 +3,15 @@
 
 # length
 
-path `length` · uuid `5fde7ce6-d789-83e9-85f4-6df69bf822cf` · diamond `6a8806b6-468b-8c3b-86b2-29a6d50af70d`
+path `length` · uuid `5fde7ce6-d789-83e9-85f4-6df69bf822cf` · diamond `286c495a-1f35-8c02-99bc-9bb7ce4d5545`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·lease·max·merge·min·sti·value · exports length · escapes —
-links `8/8` · folded `1` · bonds in `9` out `9`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → acquire·complications·landmarks·mass·owned·respiratory·scion·segments·teller · ← acquire·complications·landmarks·mass·owned·respiratory·scion·segments·teller
+neighbors → collapse·law·lease·max·merge·min·sti·value · ← collapse·law·lease·max·merge·min·sti·value
 analysis —
 law length is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5053898f-0d4a-85ac-b62b-be9fcd914c89` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a8622f1-f6cb-813e-96f0-30fe27494e3b` · `pnpm readme` · `pnpm computed:check`</sub>

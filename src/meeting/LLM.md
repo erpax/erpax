@@ -3,15 +3,15 @@
 
 # meeting
 
-path `meeting` · uuid `5f4aec97-f419-818a-9050-815eb711abd2` · diamond `659c48fe-aa74-8141-893f-e345d3564462`
+path `meeting` · uuid `5f4aec97-f419-818a-9050-815eb711abd2` · diamond `d67abd5d-02cc-8728-bb4d-afe69c4282a5`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·room·sti · exports meeting · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closes·cohort·landmarks·memories·stat·statistic · ← closes·cohort·landmarks·memories·stat·statistic
+neighbors → collapse·law·merge·room·sti · ← collapse·law·merge·room·sti
 analysis —
 law meeting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a5f38876-1b07-8a82-b37c-88ee106f707b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d470fdcb-546a-83d8-9d76-9629f726c8a5` · `pnpm readme` · `pnpm computed:check`</sub>

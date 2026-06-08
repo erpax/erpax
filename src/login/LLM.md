@@ -3,15 +3,15 @@
 
 # login
 
-path `login` · uuid `7181aeea-b2b8-8865-92cd-58111184bc20` · diamond `6ca280bd-b698-82e9-8704-f6b1f4b08584`
+path `login` · uuid `7181aeea-b2b8-8865-92cd-58111184bc20` · diamond `02f8957d-c458-81ad-9bce-4248144fdd68`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports Login · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·cooking·fertility·issue·landmarks·logo·longitude · ← accounting·balance·cooking·fertility·issue·landmarks·logo·longitude
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law login is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `529e98a6-c66a-8bb3-bcd0-1951f84ba80e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86bc8818-d1f3-8fbb-81ef-5aaf8254f7b8` · `pnpm readme` · `pnpm computed:check`</sub>

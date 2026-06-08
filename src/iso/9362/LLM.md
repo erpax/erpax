@@ -3,15 +3,15 @@
 
 # 9362
 
-path `iso/9362` · uuid `c5aec3f3-b632-889d-a8e3-49418f9472db` · diamond `6ebe392e-c173-8800-be57-8a06c51db1ab`
+path `iso/9362` · uuid `c5aec3f3-b632-889d-a8e3-49418f9472db` · diamond `04c96173-4963-816a-86a5-ff9a7953d597`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports isSwiftBic · escapes —
-links `0/0` · folded `1` · bonds in `3` out `3`
+links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
-neighbors → database·landmarks·terms · ← database·landmarks·terms
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3893e078-e90e-81cb-a8fb-73feab47ca79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3846c82a-1672-8ef6-a477-084c9ce4c1ef` · `pnpm readme` · `pnpm computed:check`</sub>

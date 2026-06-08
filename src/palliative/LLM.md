@@ -3,15 +3,15 @@
 
 # palliative
 
-path `palliative` · uuid `080e13ca-1d11-827d-9f6a-4b9ce14e0383` · diamond `4ab102c5-cee7-8048-85db-169868e0376e`
+path `palliative` · uuid `080e13ca-1d11-827d-9f6a-4b9ce14e0383` · diamond `af29fb25-56fc-8f82-8867-4e83f6f67c85`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·procedure·sti · exports palliative · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·procedure·sti · ← collapse·law·merge·procedure·sti
 analysis —
 law palliative is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e06d872e-25dc-8720-85f9-1991cfe9549f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6fdb8fb7-7abd-8f4b-96a0-5cb31acf2d17` · `pnpm readme` · `pnpm computed:check`</sub>

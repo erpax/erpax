@@ -23,7 +23,7 @@
  * @compliance SOX §404 internal-controls process-walk-through
  * @compliance EU 2015/2366 strong-customer-authentication
  * @see src/standards/iso-3166-1/countries/bg.ts
- * @see src/config/country-apis.ts (BANK_APIS.BG)
+ * @see src/country/api.ts (BANK_APIS.BG)
  * @see src/services/bank-statement-import.service.ts
  * @see src/services/camt053-import.service.ts
  */

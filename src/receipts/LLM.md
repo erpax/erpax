@@ -3,15 +3,15 @@
 
 # receipts
 
-path `receipts` · uuid `96e945f8-5396-886b-ad34-5b77f05b8167` · diamond `28f317b1-240e-81b1-9cdb-a906a1d900b5`
+path `receipts` · uuid `96e945f8-5396-886b-ad34-5b77f05b8167` · diamond `6a1a17c2-389a-87be-b6c3-17b1b5e80010`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `7/7` · folded `1` · bonds in `13` out `17`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounting·collections·fields·horo·identity·law·law·law·orders·proof·proof·sales·standard·supto·transaction·versions · ← accounting·collections·fields·horo·identity·law·orders·proof·sales·standard·supto·transaction·versions
 analysis —
 law every issued fiscal receipt carries its УНП and per-tax-group VAT breakdown, is sealed into the content-uuid audit chain, and is never deleted — only ever superseded.
 
 ---
 
-<sub>content-uuid `f6677ca4-8b9d-82f2-a689-a336a317e9fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdc18f72-8d07-86b7-bf1a-e11b3c67d3e7` · `pnpm readme` · `pnpm computed:check`</sub>

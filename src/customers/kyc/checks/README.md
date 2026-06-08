@@ -25,7 +25,26 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `15` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-AMLD-6 Directive-2018/1673 anti-money-laundering` · banner
+- `EU-Regulation-2015/847 wire-transfers` · banner
+- `FATF-Recommendation-10 customer-due-diligence` · banner
+- `ISO-19011:2018 audit-trail kyc-evidence` · banner
+- `ISO/IEC-19794 biometric-data-interchange-formats` · banner
+- `USA-PATRIOT-Act §326 customer-identification-program` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `599527a6-e6ef-8d72-acbc-0062366a1793` · framed by typography partition `customers` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b2b08504-5eda-830b-80c4-19b1860d81a6` · framed by typography partition `customers` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

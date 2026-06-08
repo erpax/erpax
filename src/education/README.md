@@ -23,7 +23,21 @@
 
 - partition `education` · sub-root `add6b7ba-3f6d-880b-8b55-f066da7b47cc`
 - bond degree `92` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `92` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5a4888f5-4b10-8aec-81f9-e453a4d902d6` · framed by typography partition `education` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2bd402f7-3393-8d13-97d4-fe733a76f755` · framed by typography partition `education` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

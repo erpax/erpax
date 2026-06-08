@@ -3,15 +3,15 @@
 
 # boundary
 
-path `quantum/boundary` · uuid `—` · diamond `9e4605e8-4add-8424-9406-381b62d995d5`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `quantum/boundary` · uuid `b74f651a-8bee-80ed-90f5-38a70e50cf96` · diamond `e2d0f27c-50e1-8007-9000-1744a55b5f19`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/integrity·@/tamper/import · exports boundary·function·interface·per · escapes —
-links `17/17` · folded `0` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity·tamper/import
+links `17/17` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → aura·convention·diamond·entanglement·export·exported·horo·import·integrity·law·method·quantum·tamper·text·uuid · ← aura·convention·diamond·entanglement·export·exported·horo·import·integrity·law·method·quantum·tamper·text·uuid
+analysis aura·tamper/import
 law quantum computed import/export — every file's boundary is algorithmically derived from its source bytes and content-addressed; imports are barrel entanglements only, exports are the public facet; drift between recomputation and stored boundary is impurity; deep escapes must collapse to `@/x` so tamper-cost rises.
 
 ---
 
-<sub>content-uuid `3b1438e7-4ecb-8710-ad23-21e24b2bfd81` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ad0d736-c273-897b-87a5-23ea3af8aee4` · `pnpm readme` · `pnpm computed:check`</sub>

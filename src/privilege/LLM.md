@@ -3,15 +3,15 @@
 
 # privilege
 
-path `privilege` · uuid `ee394eb9-effc-81cc-ab27-7ea9dd3c3d5a` · diamond `c7f76d39-d3c6-8ee8-af22-099a51bfed7c`
+path `privilege` · uuid `ee394eb9-effc-81cc-ab27-7ea9dd3c3d5a` · diamond `01d52742-77ce-8216-b15b-4318d960ce8b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports access·beyond·conflict·data·internal·law·localize·matter·proof · exports privilege · escapes —
-links `16/16` · folded `1` · bonds in `20` out `20`
+links `16/16` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 2020·acquired·asin·colleague·colour·constraints·dateline·entropy·file·gravity·harden·iata·import·landmarks·misses·overlaps·plugins·restocking·suggestion·symptoms · ← 2020·acquired·asin·colleague·colour·constraints·dateline·entropy·file·gravity·harden·iata·import·landmarks·misses·overlaps·plugins·restocking·suggestion·symptoms
+neighbors → access·activities·beyond·confidentiality·conflict·controls·law·localize·matter·proof·requisitions·runs · ← access·activities·beyond·confidentiality·conflict·controls·law·localize·matter·proof·requisitions·runs
 analysis —
 law privilege is a computed [[access]] scope (capability × matter isolation) plus crypto-shred, never a by-name grant — since erpax keeps no native secret, confidentiality is enforced by gating reads and by destroying a key, not by trusting a label.
 
 ---
 
-<sub>content-uuid `4c3da893-4ad5-8094-941b-043d56a66895` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c39e7427-22e7-84c6-910d-69a48ae4f4c9` · `pnpm readme` · `pnpm computed:check`</sub>

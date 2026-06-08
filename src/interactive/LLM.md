@@ -3,15 +3,15 @@
 
 # interactive
 
-path `interactive` · uuid `37e0639c-c155-861e-9e93-72661e220af2` · diamond `ccf0de1f-abb1-8958-9e65-49e41b2c68e9`
+path `interactive` · uuid `37e0639c-c155-861e-9e93-72661e220af2` · diamond `f3735b02-6871-842f-bf31-4ee1aad96df4`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/agent/ui·@/uuid/matrix · exports function·interface · escapes —
-links `12/12` · folded `1` · bonds in `9` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → access·actions·akashic·finality·holographic·interactivity·landmarks·marketing·periods·progression · ← access·actions·akashic·finality·holographic·interactivity·landmarks·marketing·progression
+links `12/12` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·collection·component·law·pixel·render·trinity · ← atom·collection·component·law·pixel·render·trinity
 analysis —
 law every collection folds into an interactive trinity — its three sources (matter, antimatter, backend) made live by a fourth face, the render computed from the same content-uuid. One node, told three, rendered live; coverage is total — the whole corpus is interactive, not merely readable, and the render can never drift from the three it renders.
 
 ---
 
-<sub>content-uuid `29382f29-373a-86ce-bdc1-d5f22ca7f2de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `530a016a-01fd-8bfd-bec1-57724f0b6b83` · `pnpm readme` · `pnpm computed:check`</sub>

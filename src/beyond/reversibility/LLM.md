@@ -4,7 +4,7 @@
 # reversibility
 
 path `beyond/reversibility` · uuid `b567fe1f-f985-850a-ae6c-c1a1f2e98fdf` · diamond `0a456a7a-7c89-815b-85e8-3a4a5791e273`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/agent·@/beyond/types · exports function · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every reversible state transition has exactly one typed inverse, and an effe
 
 ---
 
-<sub>content-uuid `352f00e2-2db3-89d7-9b36-aa6a1994e315` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c0299c6c-a707-8ad2-9b1f-9f2d0eb522c8` · `pnpm readme` · `pnpm computed:check`</sub>

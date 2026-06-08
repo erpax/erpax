@@ -3,15 +3,15 @@
 
 # pet
 
-path `pet` · uuid `3a6f45ae-c047-8ddd-b806-b80bf8e5822e` · diamond `cc27f076-352b-8ae3-be5a-3964410478da`
+path `pet` · uuid `3a6f45ae-c047-8ddd-b806-b80bf8e5822e` · diamond `82aa11a9-4a9d-8870-be17-8267d4da489c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports pet · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks · ← create·landmarks
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law pet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fe6cfc62-e6f9-896e-8826-df86e2cc0cc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a788cc9c-6c40-89c8-97ca-b009e67c79f8` · `pnpm readme` · `pnpm computed:check`</sub>

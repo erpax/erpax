@@ -3,15 +3,15 @@
 
 # required
 
-path `required` · uuid `48c00789-6703-8bb1-8dd7-6d27178951a0` · diamond `f32c1044-51ec-8161-b6c5-91c048036b2c`
+path `required` · uuid `48c00789-6703-8bb1-8dd7-6d27178951a0` · diamond `2f20c86c-19d1-8802-940f-a2f6181e470b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports age·collapse·collateral·competency·gender·law·max·merge·min·quantity·sti·time·value · exports required · escapes —
-links `13/13` · folded `1` · bonds in `5` out `5`
+links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → age·collapse·collateral·competency·gender·law·max·merge·min·quantity·sti·time·value · ← age·collapse·collateral·competency·gender·law·max·merge·min·quantity·sti·time·value
 analysis —
 law required is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0a665c5b-9050-821e-a946-dee63ad4dc9e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e693b3c2-1a9b-8636-bf05-b9aa8c6eab8b` · `pnpm readme` · `pnpm computed:check`</sub>

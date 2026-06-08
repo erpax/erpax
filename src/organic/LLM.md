@@ -3,15 +3,15 @@
 
 # organic
 
-path `organic` · uuid `20279e6e-f779-8cfe-9e86-1d9e6adeccab` · diamond `0bbcf977-5966-83e7-a5de-c205fbba232e`
+path `organic` · uuid `20279e6e-f779-8cfe-9e86-1d9e6adeccab` · diamond `45440a86-365d-8455-816b-f7b3327b3261`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agriculture·audit·certification·compost·conversion·covercrop·crop·integrity·law·lineage·lots·period·proof·rotation·standard·standards · exports organic · escapes —
-links `32/32` · folded `1` · bonds in `2` out `2`
+links `32/32` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → agriculture·audit·certification·compost·conversion·covercrop·crop·integrity·law·lineage·lots·period·permaculture·proof·regeneration·rotation·seed·standard·standards · ← agriculture·audit·certification·compost·conversion·covercrop·crop·integrity·law·lineage·lots·period·permaculture·proof·regeneration·rotation·seed·standard·standards
 analysis —
 law organic is a [[standard]]-backed production status the [[crop]] carries through the chain — the claim is only as good as the unforgeable [[proof]] behind it.
 
 ---
 
-<sub>content-uuid `903b66b2-d541-8022-9718-fbe83e6a5def` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92efa3b4-4d79-8f9f-8ab2-9768165aa28d` · `pnpm readme` · `pnpm computed:check`</sub>

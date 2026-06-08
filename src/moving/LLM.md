@@ -3,15 +3,15 @@
 
 # moving
 
-path `moving` · uuid `be432e0e-2b9c-8d8b-8183-5d24310474d0` · diamond `ac4202f1-35ec-8a87-9571-42e9dad11e7c`
+path `moving` · uuid `be432e0e-2b9c-8d8b-8183-5d24310474d0` · diamond `c8429074-7a51-8e2b-83f5-afd9213365db`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·company·law·merge·sti · exports moving · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·company·law·merge·sti · ← collapse·company·law·merge·sti
 analysis —
 law moving is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `845101de-e202-8d62-955f-cee77479c2d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a69fd1a7-5b53-8b66-a4f0-237d02ed6848` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # num
 
-path `num` · uuid `bf32736b-1dfc-8d69-a011-16e3c4dc8b90` · diamond `e21cfbbe-ef4a-8a2d-9851-bc91199cb4dd`
+path `num` · uuid `bf32736b-1dfc-8d69-a011-16e3c4dc8b90` · diamond `ed384458-5e40-8f05-843f-5f78b88fd000`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports adults·beds·children·collapse·constraints·cvd·died·ho·hosp·icu·items·law·mech·merge·occ·overflow·pats·sti·tot·tracks·use·vent · exports num · escapes —
-links `22/22` · folded `1` · bonds in `11` out `11`
+links `22/22` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 15·alignment·audio·calendars·closing·incentive·landmarks·log·meal·tenant·varies · ← 15·alignment·audio·calendars·closing·incentive·landmarks·log·meal·tenant·varies
+neighbors → adults·beds·children·collapse·constraints·cvd·died·ho·hosp·icu·items·law·mech·merge·occ·overflow·pats·sti·tot·tracks·use·vent · ← adults·beds·children·collapse·constraints·cvd·died·ho·hosp·icu·items·law·mech·merge·occ·overflow·pats·sti·tot·tracks·use·vent
 analysis —
 law num is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `184181c8-11a3-88fa-9c31-fe4c76e2d370` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `290a0cf2-4590-8b69-9958-d3f11619473c` · `pnpm readme` · `pnpm computed:check`</sub>

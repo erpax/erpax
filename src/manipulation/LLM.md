@@ -3,15 +3,15 @@
 
 # manipulation
 
-path `manipulation` · uuid `12fcb628-429a-8575-a9d6-ab434d16a791` · diamond `ae6dc61a-df61-87c4-bd85-4d4bb7b0836b`
+path `manipulation` · uuid `12fcb628-429a-8575-a9d6-ab434d16a791` · diamond `1103e461-a26e-8a25-a3ad-9a9ef2c581a1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·enumeration·law·media·merge·rating·sti · exports manipulation · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·enumeration·law·media·merge·rating·sti · ← collapse·enumeration·law·media·merge·rating·sti
 analysis —
 law manipulation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `92bcfb59-b8b6-8efe-8b98-ecc3663ed78f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc4e38b6-8e74-881c-a9e0-43c2b208aad9` · `pnpm readme` · `pnpm computed:check`</sub>

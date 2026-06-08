@@ -2,7 +2,7 @@
 
 # reconciliation
 
-> atom `reconciliation` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `reconciliation` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `reconciliation` · sub-root `84acb7e3-30cc-8756-a411-d424b6e34433`
-- bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `25` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `84acb7e3-30cc-8756-a411-d424b6e34433`
-- bonds in `5` · out `5`
+- uuid `d115bcee-2e37-81a3-8f37-212ce4e9e48d`
+- bonds in `7` · out `9`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `706d523d-cb45-832f-8b0c-61ab7ac56b93` · framed by typography partition `reconciliation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `77ef3415-305b-840b-8481-767478aa24ff` · framed by typography partition `reconciliation` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

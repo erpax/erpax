@@ -3,15 +3,15 @@
 
 # parents
 
-path `parents` · uuid `aa17d789-f25f-8a11-8115-04a9f7f943ff` · diamond `74ce19cb-bb1e-84aa-8194-c125518f16a3`
+path `parents` · uuid `aa17d789-f25f-8a11-8115-04a9f7f943ff` · diamond `4281ef16-3fc3-854d-8a20-ea76515bf004`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·person · exports parents · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·person · ← law·person
 analysis —
 law parents is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `be5451f0-85f3-80a6-9058-300e7466466a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69c060d5-f524-85b2-b765-20ba7d2529f1` · `pnpm readme` · `pnpm computed:check`</sub>

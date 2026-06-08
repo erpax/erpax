@@ -3,15 +3,15 @@
 
 # only
 
-path `only` · uuid `209f8650-bf68-8f8f-b821-0d1cd5d610be` · diamond `50af0b1e-81b8-8a6b-8733-a5a488d4090f`
+path `only` · uuid `209f8650-bf68-8f8f-b821-0d1cd5d610be` · diamond `0560a043-9143-87d1-ac32-e8ddb9d7df48`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports only · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·works · ← cohort·landmarks·memories·stat·works
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law only is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5726aad1-37f3-8274-b9c3-aaac3c770aef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df918317-3f5d-8e1d-b56d-20fa41c530b0` · `pnpm readme` · `pnpm computed:check`</sub>

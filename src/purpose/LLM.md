@@ -3,15 +3,15 @@
 
 # purpose
 
-path `purpose` · uuid `c52bd316-b98c-885c-8ce3-f2874579281a` · diamond `bac0d0a4-b3db-82fb-92e6-e4e9d82ae110`
+path `purpose` · uuid `c52bd316-b98c-885c-8ce3-f2874579281a` · diamond `a2f71f6e-d6a5-8e2a-811d-936c63d8ae12`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·device·law·medical·merge·sti · exports purpose · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·urologic · ← cohort·landmarks·memories·stat·urologic
+neighbors → collapse·device·law·medical·merge·sti · ← collapse·device·law·medical·merge·sti
 analysis —
 law purpose is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a3ad7d49-245e-8189-9a5d-5bead4113f89` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1520d568-8a97-8d6b-be7d-66844c5427db` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # market
 
-path `market` · uuid `9d1eccfe-a2a2-8f17-83fc-e2607e6559c5` · diamond `53ac5c49-905a-81de-8f48-fb7ec1c26a70`
+path `market` · uuid `9d1eccfe-a2a2-8f17-83fc-e2607e6559c5` · diamond `08028d74-addc-8a79-82f5-5dbdfc2b20ef`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports awareness·bottleneck·breath·commerce·constraint·desire·diffusion·distribution·entry·friction·habit·law·network·power·proof·signal·society·status·trend · exports market · escapes —
-links `48/48` · folded `1` · bonds in `2` out `2`
+links `48/48` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → explanation·landmarks · ← explanation·landmarks
+neighbors → age·awareness·bottleneck·breath·career·commerce·constraint·desire·diffusion·distribution·entry·friction·habit·law·network·pickup·planting·power·proof·share·signal·society·sparsity·status·symbiosis·trend·wellbeing·yield·zeropoint · ← age·awareness·bottleneck·breath·career·commerce·constraint·desire·diffusion·distribution·entry·friction·habit·law·network·pickup·planting·power·proof·share·signal·society·sparsity·status·symbiosis·trend·wellbeing·yield·zeropoint
 analysis —
 law a market is the PRODUCT (not sum) of its atoms, so the near-zero atom caps the whole ([[bottleneck]]) — growth means finding the zero atom and lifting it, never multiplying a non-zero one by the zero.
 
 ---
 
-<sub>content-uuid `f113bf45-dfca-8e95-bdf2-c5fb90471445` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8aa12494-3f07-8a74-8a17-e0b0f74b0097` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports recognized · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closing·landmarks · ← closing·landmarks
+neighbors → law·thing · ← law·thing
 analysis —
 law recognized is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `de72d3b3-34e2-86be-bb46-a1b441d24ebf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `01f61502-4b13-8cd9-9854-1d56cdd919f7` · `pnpm readme` · `pnpm computed:check`</sub>

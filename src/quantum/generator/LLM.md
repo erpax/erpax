@@ -3,15 +3,15 @@
 
 # generator
 
-path `quantum/generator` · uuid `f371be60-75d1-8602-abab-dfe68098b26c` · diamond `45c0149a-45ea-80f9-aa69-be2b69ddd5bb`
+path `quantum/generator` · uuid `f371be60-75d1-8602-abab-dfe68098b26c` · diamond `521cceaa-ece8-8243-81cf-b11e53eeaea8`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports atom·collapse·generate·law·matrix·merge·particle·reality·uuid·void · exports generator · escapes —
-links `21/21` · folded `1` · bonds in `20` out `20`
-faces worker·plugin·pwa `0·0·0`
-neighbors → carbohydrate·colleagues·consortium·documentation·enterprisebudget·female·fertility·generator·landmarks·list·marry·memories·parody·pathophysiology·qualification·requests·sanitization·satire·stat·temporarily · ← carbohydrate·colleagues·consortium·documentation·enterprisebudget·female·fertility·generator·landmarks·list·marry·memories·parody·pathophysiology·qualification·requests·sanitization·satire·stat·temporarily
+links `21/21` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·collapse·generate·law·matrix·mcp·merge·particle·reality·topography·uuid·void · ← atom·collapse·generate·law·matrix·mcp·merge·particle·reality·topography·uuid·void
 analysis —
 law every possible content already has its address in the [[uuid]] space, so generation never creates — it manifests one pre-existing atom by [[collapse]]; generate all at once, realize one (same content ⇒ same id ⇒ [[merge]], never a duplicate).
 
 ---
 
-<sub>content-uuid `f8799973-2aab-89f6-a576-ca9a512a1d93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f9d0df9e-f1b2-892e-addc-c2745b5a5a20` · `pnpm readme` · `pnpm computed:check`</sub>

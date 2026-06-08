@@ -3,15 +3,15 @@
 
 # variants
 
-path `lot/variants` · uuid `1ee9df98-6e5d-8b9c-9791-404f0167ec62` · diamond `01dc248f-e0c1-8d79-b3bf-95f26feea6e8`
+path `lot/variants` · uuid `1ee9df98-6e5d-8b9c-9791-404f0167ec62` · diamond `dae4c95c-75ec-8e42-9189-f92285780fb3`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports const·default · escapes —
-links `14/14` · folded `1` · bonds in `5` out `5`
+links `14/14` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·variance · ← cohort·landmarks·memories·stat·variance
+neighbors → accounting·balance·coordinate·fields·items·law·lots·phases · ← accounting·balance·coordinate·fields·items·law·lots·phases
 analysis —
 law a variant total IS the [[balance|sum]] of its option postings — `units = Σ options[].units` and `unitsProduced = Σ options[].produced` (100.00% over 67 865 etrima rows), computed-not-stored so the roll-up can never drift from its parts, monotonic down the ordered≥produced≥…≥delivered funnel.
 
 ---
 
-<sub>content-uuid `2d0d3344-7125-801c-9524-6abc4f4c847c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b7f1cd10-1d4e-8f7f-855e-1fade4eb2b9e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `campground` · sub-root `74ada8cd-faeb-8e28-be29-0c818ec21a07`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `31ec2999-92ee-87ae-b6ef-3a7e67693dce` · framed by typography partition `campground` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6c4cd85e-211b-86f9-ab2d-9431e7c3b261` · framed by typography partition `campground` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

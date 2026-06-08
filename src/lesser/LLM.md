@@ -3,15 +3,15 @@
 
 # lesser
 
-path `lesser` · uuid `76cfc569-9807-8321-b376-d057e60a4ced` · diamond `019e6a08-6f86-8462-bedc-0976f2b4bd11`
+path `lesser` · uuid `76cfc569-9807-8321-b376-d057e60a4ced` · diamond `2aaed9fa-9b0c-86d0-865f-51b2976f1753`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports equal·law · exports lesser · escapes —
-links `2/2` · folded `1` · bonds in `9` out `9`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → distinguishing·eat·id·landmarks·memories·municipality·sections·seed·supported · ← distinguishing·eat·id·landmarks·memories·municipality·sections·seed·supported
+neighbors → equal·law · ← equal·law
 analysis —
 law lesser is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6bc319de-c403-8975-b919-94d9ed84d7d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f9438451-21ea-81da-9874-ac3cd0197f0d` · `pnpm readme` · `pnpm computed:check`</sub>

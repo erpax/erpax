@@ -3,15 +3,15 @@
 
 # routing
 
-path `routing` · uuid `8b4837de-9a12-859f-b39c-a2b450870db7` · diamond `8c7f0e1c-a969-8244-9bf1-eda9fd05307b`
+path `routing` · uuid `8b4837de-9a12-859f-b39c-a2b450870db7` · diamond `9bed8c13-ffdb-8564-8b41-fba4d2bf2ad5`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports ModelTier·RiskLevel·function · escapes —
-links `19/19` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `19/19` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → competition·horo·law·peace·sandbox·self·society·sparsity·train · ← competition·horo·law·peace·sandbox·self·society·sparsity·train
 analysis —
 law route an action to a compute tier by its RISK, not by where the model runs — because safety lives in the [[sandbox]] enforcement gate, not in model tier; the gate being absolute frees routing to prefer the cheapest sufficient model.
 
 ---
 
-<sub>content-uuid `dc15da1a-95cc-8b8e-82cc-386569b04501` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62a227a6-6ce3-8b6d-827f-4d37c66359b5` · `pnpm readme` · `pnpm computed:check`</sub>

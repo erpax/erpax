@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·house·law·merge·sti · exports painter · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·deleted·landmarks·memories·stat · ← cohort·deleted·landmarks·memories·stat
+neighbors → collapse·house·law·merge·sti · ← collapse·house·law·merge·sti
 analysis —
 law a painter is an occupational role, meaningful only in relation to the thing it paints.
 
 ---
 
-<sub>content-uuid `1e3bff6e-22a7-8b7e-bbb7-ba0c50388751` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4c40bc6-8a20-8111-a488-bd596999a41e` · `pnpm readme` · `pnpm computed:check`</sub>

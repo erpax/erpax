@@ -3,15 +3,15 @@
 
 # incentives
 
-path `incentives` · uuid `16bcbb05-3f9f-8963-bc42-6659c7e8ad02` · diamond `aede547a-0c37-80c0-8b05-25e7d8dc8c26`
+path `incentives` · uuid `16bcbb05-3f9f-8963-bc42-6659c7e8ad02` · diamond `8d4ab882-5530-8a9c-832f-7bab9d35a8b7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports incentives · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·license·memories·stat · ← cohort·landmarks·license·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law incentives is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dc584c3e-a109-8b02-bd87-391f46d780b1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e093f770-f985-85cd-be1e-a32400165c35` · `pnpm readme` · `pnpm computed:check`</sub>

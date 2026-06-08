@@ -9,29 +9,46 @@
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `15` | [[balance]] `15` |
+| [[balance]] `6` | [[liability]]/[[links]]/dangling `6` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `29` | Σ `29` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `memory` · sub-root `c9ecf7d1-ba4a-8450-819b-46a296e7350d`
-- bond degree `150` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `memory` · sub-root `eb81a305-e908-8a4d-9c54-91a1b18b12fa`
+- bond degree `345` · analysis neighbors `aura` · `cloudflare`
+- graph root `7e6d6386-c55f-8ee0-8474-f5765aa3b44b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `345` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `470e3f69-ca90-82bf-af9a-ea99d797fda8`
-- bonds in `13` · out `13`
-- trinity form·code·proof `1`·`0`·`0`
-- links `21` / `21`
-- folded `0` · escapes `0`
+- uuid `451a7b00-e368-8b7b-bf17-b6f823b5ef7b`
+- bonds in `115` · out `99`
+- trinity form·code·proof `1`·`1`·`1`
+- links `15` / `21`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
@@ -39,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `749bb93e-ed99-8cf3-a365-02312f8faaba` · framed by typography partition `memory` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8b6991f6-2676-835a-8de3-716a69b70c2d` · framed by typography partition `memory` bonds `345` · `pnpm readme` · `pnpm readme:check`</sub>

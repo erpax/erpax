@@ -3,15 +3,15 @@
 
 # math
 
-path `math` · uuid `ec8b01d1-80e2-816b-b802-3efdefe60fc9` · diamond `f70a6cd7-0076-8824-8368-60793dbf44d8`
+path `math` · uuid `ec8b01d1-80e2-816b-b802-3efdefe60fc9` · diamond `877a8cac-2662-8136-a61a-9da10d118be2`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·expression·law·merge·solve·solver·sti · exports math · escapes —
-links `8/8` · folded `1` · bonds in `5` out `4`
+links `8/8` · folded `1` · bonds in `26` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← chemical·cohort·landmarks·memories·stat
+neighbors → action·calculation·calculator·collapse·cost·digit·dry·entropy·expression·gravity·horo·law·law·math·matrix·merge·quantum·rodin·science·singularity·solve·solver·sti·tamper·uuid·void·zeropoint · ← action·calculation·calculator·collapse·cost·digit·dry·entropy·expression·gravity·horo·law·math·matrix·merge·quantum·rodin·science·singularity·solve·solver·sti·tamper·uuid·void·zeropoint
 analysis —
 law math is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b3e5aafc-9f9f-80b4-88a8-20d2bc04d379` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5abf6c5-ebd8-8c52-a6c2-96ab7ea79680` · `pnpm readme` · `pnpm computed:check`</sub>

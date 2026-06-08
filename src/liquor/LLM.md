@@ -3,15 +3,15 @@
 
 # liquor
 
-path `liquor` · uuid `ff654b7e-6957-8816-83d6-8a0feecbbcac` · diamond `cd83a733-bb0e-8984-94ab-34008ef07d67`
+path `liquor` · uuid `ff654b7e-6957-8816-83d6-8a0feecbbcac` · diamond `67476193-92ab-8334-9742-4d6477251ec3`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports liquor · escapes —
-links `5/5` · folded `1` · bonds in `22` out `27`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·breakfast·breakfast·chat·corrects·entity·entity·hobby·id·idempotency·idempotency·landmarks·license·liquor·list·list·llm·marry·marry·memories·memory·nutrition·offered·progression·project·query·sections · ← angel·breakfast·chat·corrects·entity·hobby·id·idempotency·landmarks·license·liquor·list·llm·marry·memories·memory·nutrition·offered·progression·project·query·sections
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law liquor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `45aeb34e-5ba0-8412-af41-439e5a4d7c44` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7ef70e8-3548-8eab-ba2d-ee593a516bff` · `pnpm readme` · `pnpm computed:check`</sub>

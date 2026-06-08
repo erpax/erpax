@@ -3,15 +3,15 @@
 
 # queries
 
-path `queries` · uuid `55b0b83f-dc8c-856e-bec2-587317e34a83` · diamond `b9cf5bc8-6e12-8f79-a610-05034b1de6c5`
+path `queries` · uuid `55b0b83f-dc8c-856e-bec2-587317e34a83` · diamond `50da94ee-56f4-8abb-a6d6-5717cf36de06`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports api·fields·optimize · exports queries · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → assets·biometric·cohort·landmarks·memories·stat·term · ← assets·biometric·cohort·landmarks·memories·stat·term
+neighbors → accounting·aggregation·api·cache·cardinality·commerce·crest·dimension·fields·flow·localize·manufacturing·metadata·nullability·optimize·pages·port·reconcile·redirects·search·tag·transaction · ← accounting·aggregation·api·cache·cardinality·commerce·crest·dimension·fields·flow·localize·manufacturing·metadata·nullability·optimize·pages·port·reconcile·redirects·search·tag·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2ac4116b-9824-8104-849d-7ac070df12e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `674fb43c-3837-854c-b5ba-6891ab4b5261` · `pnpm readme` · `pnpm computed:check`</sub>

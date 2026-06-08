@@ -2,7 +2,7 @@
 
 # emitter
 
-> atom `chain/event/emitter` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `chain/event/emitter` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `chain` · sub-root `78522b2d-1585-8a0c-a12e-0e5a1e0c78e1`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
 
 ## [[cloudflare]] bindings
 
@@ -38,7 +38,7 @@
 
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `4`
+- bond degree `12` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
@@ -52,8 +52,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `00492c8d-f052-8da6-b6c9-b16f28a48860` · framed by typography partition `chain` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `07fe24ad-dee6-8f8e-8cce-71430f17aabb` · framed by typography partition `chain` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

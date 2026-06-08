@@ -3,15 +3,15 @@
 
 # ice
 
-path `ice` · uuid `16bbecb6-aa9b-8ff6-a0de-3c06285ea47e` · diamond `e3308425-089d-8cfd-9223-7823bb6ab645`
+path `ice` · uuid `16bbecb6-aa9b-8ff6-a0de-3c06285ea47e` · diamond `9677bdff-518f-8b61-8fec-8e592bd03b8e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·cream·law·merge·shop·sti · exports ice · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → center·cohort·landmarks·memories·notice·stat·utterance · ← center·cohort·landmarks·memories·notice·stat·utterance
+neighbors → collapse·cream·law·merge·shop·sti · ← collapse·cream·law·merge·shop·sti
 analysis —
 law ice is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4857a1a-3ba2-8307-8b68-3ce89fccaf07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70c03095-9f24-8008-9a3b-5b388b05c0b9` · `pnpm readme` · `pnpm computed:check`</sub>

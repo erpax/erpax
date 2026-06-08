@@ -3,15 +3,15 @@
 
 # actions
 
-path `legal/entities/board/actions` · uuid `c689eae7-a0d0-89a6-a6fb-4150050c39a1` · diamond `5eb5fd4c-ff66-85ef-be65-949165f367e9`
+path `legal/entities/board/actions` · uuid `c689eae7-a0d0-89a6-a6fb-4150050c39a1` · diamond `b293d5c8-6ea6-8e45-a1a1-3f5ed84bbdc2`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `3` out `3`
+links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → interactive·landmarks·lease · ← interactive·landmarks·lease
+neighbors → minutes · ← minutes
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `885aef62-47a1-8e42-9d92-d11d9e45fb0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2462d2e2-5c1e-85f0-a670-6dd8ab534373` · `pnpm readme` · `pnpm computed:check`</sub>

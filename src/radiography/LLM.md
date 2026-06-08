@@ -3,15 +3,15 @@
 
 # radiography
 
-path `radiography` · uuid `2fdd1ee3-5313-841b-8e6b-40bd7c6cb0bd` · diamond `01b6dcc9-443e-8cb1-ac0d-39f40f308ef2`
+path `radiography` · uuid `2fdd1ee3-5313-841b-8e6b-40bd7c6cb0bd` · diamond `0a85d2c4-f3a8-8d6d-92ad-df21aa097dbb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports radiography · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·database·landmarks · ← action·database·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law radiography is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2d365788-9873-8d72-9e18-7b198827803d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85d9fc2c-34cb-8246-b314-c117cc704d86` · `pnpm readme` · `pnpm computed:check`</sub>

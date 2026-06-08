@@ -3,15 +3,15 @@
 
 # overview
 
-path `overview` · uuid `6778b098-09bc-810d-9fff-8041761008b7` · diamond `a908d9dc-03f6-8dfe-a157-a760552117db`
+path `overview` · uuid `6778b098-09bc-810d-9fff-8041761008b7` · diamond `d8f2ab4d-3292-8d2a-a102-324d2ebf90fb`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·employer·law·merge·sti · exports overview · escapes —
-links `5/5` · folded `1` · bonds in `13` out `12`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·chinese·cooking·government·homeopathic·issue·longitude·overlaps·photograph·position·snapshots · ← accounting·balance·chinese·cooking·government·homeopathic·issue·issue·longitude·overlaps·photograph·position·snapshots
+neighbors → collapse·employer·law·merge·sti · ← collapse·employer·law·merge·sti
 analysis —
 law overview is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `88987136-d249-88d7-92a3-d97f0fe05f01` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `325f803d-3cd1-8c5e-8628-219305cb25dd` · `pnpm readme` · `pnpm computed:check`</sub>

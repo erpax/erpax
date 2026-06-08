@@ -23,7 +23,7 @@
 
 - partition `contagiousness` · sub-root `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `272bb48f-7da8-8682-b9fa-876fd120610f` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `679db14a-303c-8e0a-8e82-9859f09f60df` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

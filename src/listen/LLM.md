@@ -3,15 +3,15 @@
 
 # listen
 
-path `listen` · uuid `f3b61f78-43cc-8827-85b1-7b82b0eafe30` · diamond `56354e75-65c9-8c61-8cc9-1fc9eb9026e3`
+path `listen` · uuid `f3b61f78-43cc-8827-85b1-7b82b0eafe30` · diamond `d44d94da-f1fb-8240-9ca2-549233e51d18`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports listen · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law listen is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d28aecf4-5b36-89bb-b4ce-77f72e8eb1c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `501e2505-ab1e-856d-aa6e-5f3be38653bc` · `pnpm readme` · `pnpm computed:check`</sub>

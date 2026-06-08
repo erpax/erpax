@@ -3,15 +3,15 @@
 
 # healthcare
 
-path `healthcare` · uuid `b8f3829e-5aa7-8ee4-bc8a-eb3c9fb2d0c1` · diamond `e4cba8cd-0732-863f-8092-88588009bf43`
+path `healthcare` · uuid `b8f3829e-5aa7-8ee4-bc8a-eb3c9fb2d0c1` · diamond `af8fd2c3-6f91-891a-a5e8-bca7d9342fb6`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·data·law·merge·reporting·sti · exports healthcare · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → archive·cohort·landmarks·memories·stat · ← archive·cohort·landmarks·memories·stat
+neighbors → collapse·data·law·merge·reporting·sti · ← collapse·data·law·merge·reporting·sti
 analysis —
 law healthcare is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d3d0a572-5b71-8d6b-a9b7-2d308717b347` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07bf4ffe-9775-8959-a98c-ccdceaf3f070` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `artform` · sub-root `793eb0d2-e690-8c77-874c-49dfc77b5068`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ff5cfea9-4d2a-800f-b26e-52594c796579` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c418af8d-729d-85b3-9ebe-8a8088fbe553` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

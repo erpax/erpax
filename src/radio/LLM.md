@@ -3,15 +3,15 @@
 
 # radio
 
-path `radio` · uuid `951af94d-8b45-8c5d-a312-fd9c4479ee67` · diamond `2021e364-8cfa-8d3b-8f03-ad6fc91128b3`
+path `radio` · uuid `951af94d-8b45-8c5d-a312-fd9c4479ee67` · diamond `9cb40593-2d51-8ee7-ba67-df2f4869a89c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports am·broadcast·channel·clip·collapse·episode·fm·law·merge·season·series·service·station·sti · exports radio · escapes —
-links `14/14` · folded `1` · bonds in `5` out `5`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → am·broadcast·channel·clip·collapse·episode·fm·law·merge·season·series·service·station·sti · ← am·broadcast·channel·clip·collapse·episode·fm·law·merge·season·series·service·station·sti
 analysis —
 law radio is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a4ee7238-ab8e-8054-b020-cd29eae5e673` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a5bd1ed0-4147-8b4c-9444-3d4dbf740772` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports mri · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law mri is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b44d248c-aa03-8e38-83c7-31302c17ca0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc3516df-7a41-8e8d-9de6-cf71b1318f72` · `pnpm readme` · `pnpm computed:check`</sub>

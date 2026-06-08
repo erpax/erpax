@@ -3,15 +3,15 @@
 
 # samples
 
-path `internal/controls/control/tests/audit/samples` · uuid `1ce8eb8a-48fd-8338-bfec-d5019f59b86d` · diamond `3d075b7a-781c-8368-a825-189aff6502b8`
+path `internal/controls/control/tests/audit/samples` · uuid `1ce8eb8a-48fd-8338-bfec-d5019f59b86d` · diamond `188ec937-36a0-8ac9-ab45-53a829351296`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
-links `1/1` · folded `1` · bonds in `5` out `5`
+links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → civic·cohort·landmarks·memories·stat · ← civic·cohort·landmarks·memories·stat
+neighbors → evidences·law · ← evidences·law
 analysis —
 law an audit sample is one item drawn for a control test, carrying its pass/fail result, exception category, tester and amount — the ISA-530 per-item evidence that rolls up into the test's deviation rate.
 
 ---
 
-<sub>content-uuid `64ed11e7-08fb-8a93-b723-a464cebeff1c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3d6c505-c113-8a42-9dbd-571579d9f8bc` · `pnpm readme` · `pnpm computed:check`</sub>

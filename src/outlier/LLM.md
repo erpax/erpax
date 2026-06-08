@@ -3,15 +3,15 @@
 
 # outlier
 
-path `outlier` · uuid `2343e569-7d71-8bfd-989a-1a81b2213543` · diamond `f68b205f-854b-84af-a6b0-2631d9d9dfd2`
+path `outlier` · uuid `2343e569-7d71-8bfd-989a-1a81b2213543` · diamond `b9cfdc54-1974-83e0-bb88-650b0324f65a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports calculate·metric·sampling · exports outlier · escapes —
-links `3/3` · folded `1` · bonds in `8` out `8`
+links `3/3` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memo·memories·plugins·restocking·screening·stat · ← cohort·landmarks·memo·memories·plugins·restocking·screening·stat
+neighbors → aggregation·calculate·empirical·metric·sampling·trend · ← aggregation·calculate·empirical·metric·sampling·trend
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `912d2446-c296-8f9a-9e26-ccd3d9f31f29` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c0b5588d-670f-8325-ae65-2738604ae9f0` · `pnpm readme` · `pnpm computed:check`</sub>

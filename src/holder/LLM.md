@@ -3,15 +3,15 @@
 
 # holder
 
-path `holder` · uuid `7e147c1a-aa61-804f-b82d-68a938ef1ca2` · diamond `817a440e-0c2f-8b0f-9b07-8e66ccc40520`
+path `holder` · uuid `7e147c1a-aa61-804f-b82d-68a938ef1ca2` · diamond `e8de508e-4523-8c62-b8ac-243bbb31ed9f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·copyright·law·merge·sti · exports holder · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·copyright·law·merge·sti · ← collapse·copyright·law·merge·sti
 analysis —
 law holder is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8c1c2031-b5a2-8a64-aec9-da7392af402d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a278dbcd-2fc6-8e9e-b7ac-28c5ec6104b0` · `pnpm readme` · `pnpm computed:check`</sub>

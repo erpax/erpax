@@ -3,15 +3,15 @@
 
 # international
 
-path `international` · uuid `7f7395bf-bcb8-87c0-a558-c52ecccb1be4` · diamond `6178d6ef-26e3-8093-845d-3c1d54a03ffa`
+path `international` · uuid `7f7395bf-bcb8-87c0-a558-c52ecccb1be4` · diamond `704d35f9-1401-8dc8-a61a-3e8190268232`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports international · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·centers·command·details·features·thing · ← activities·centers·command·details·features·thing
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law international is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `52204da4-bd6d-804d-b661-3c6b1165e401` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31007db9-e856-859d-b43f-58f50c3d2ef4` · `pnpm readme` · `pnpm computed:check`</sub>

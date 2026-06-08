@@ -25,7 +25,7 @@
 
 - partition `blockchain` · sub-root `2eec06cd-eea8-863e-bb18-a9b45cecc3a3`
 - bond degree `52` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -56,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `0c4efa84-ed43-895b-a506-5793e1d33bb3` · framed by typography partition `blockchain` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a383b12a-8500-8586-8c16-7c492daed281` · framed by typography partition `blockchain` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

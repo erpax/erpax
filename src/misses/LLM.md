@@ -3,15 +3,15 @@
 
 # misses
 
-path `misses` · uuid `2ad75109-1c5d-89e5-b89b-4ce97a6e4353` · diamond `2247d81e-563b-8e31-9a29-df6b6aa48455`
+path `misses` · uuid `2ad75109-1c5d-89e5-b89b-4ce97a6e4353` · diamond `3386f38f-d779-8dc7-b2cc-6879e740cbc4`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports misses · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·dance·database·landmarks·privilege·production·tracks·utterance · ← balance·dance·database·landmarks·privilege·production·tracks·utterance
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law misses is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `69d6bb31-bcb2-82ac-abd2-88a4b6b2acea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `74f0a9ff-1e5d-8390-b54a-30dff733cde1` · `pnpm readme` · `pnpm computed:check`</sub>

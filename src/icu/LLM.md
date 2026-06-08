@@ -3,15 +3,15 @@
 
 # icu
 
-path `icu` · uuid `272173f6-c72d-857d-a257-af9dbd5d9fe8` · diamond `fe2f908f-c99a-8914-b7a1-f9b5d1369e66`
+path `icu` · uuid `272173f6-c72d-857d-a257-af9dbd5d9fe8` · diamond `7d35ef13-0d85-8101-9637-0e7ed0067896`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports beds·collapse·cvd·law·merge·num·occ·sti · exports icu · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → beds·collapse·cvd·law·merge·num·occ·sti · ← beds·collapse·cvd·law·merge·num·occ·sti
 analysis —
 law icu is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2f8c6aa8-eff0-86d0-90b1-faf8d2b52890` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `73ceaf83-c28c-88e7-aef3-a90e678ce311` · `pnpm readme` · `pnpm computed:check`</sub>

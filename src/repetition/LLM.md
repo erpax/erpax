@@ -3,15 +3,15 @@
 
 # repetition
 
-path `repetition` · uuid `79e9337c-deb0-8dc9-8bdf-3d4215235226` · diamond `4bb55693-4b1d-86e7-8508-26c2dae94f4b`
+path `repetition` · uuid `79e9337c-deb0-8dc9-8bdf-3d4215235226` · diamond `df78c5ce-fa44-8692-9bb7-199a890a5be7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·exercise·law·repetitions · exports repetition · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·doors·landmarks·memories·sandbox·stat · ← cohort·doors·landmarks·memories·sandbox·stat
+neighbors → balance·exercise·law·repetitions·ritual · ← balance·exercise·law·repetitions·ritual
 analysis —
 law one repetition is the singular model of exactly one [[repetitions]] row — every collection has its model ([[balance]]), so the plural store and its singular type are two halves of one node.
 
 ---
 
-<sub>content-uuid `bcdb0d35-ad9e-887e-9ad5-555a807864af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16611bbd-2a43-8362-a78e-e92f03fcaced` · `pnpm readme` · `pnpm computed:check`</sub>

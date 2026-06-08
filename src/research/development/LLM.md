@@ -3,15 +3,15 @@
 
 # development
 
-path `research/development` · uuid `68775545-1723-8452-a806-bc6502ece6f7` · diamond `bfcdcb75-ff34-8dd4-9474-b0d64bf9a9fb`
+path `research/development` · uuid `68775545-1723-8452-a806-bc6502ece6f7` · diamond `f47f6d93-031f-804f-b868-23b0a37f2838`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/entanglement · exports const · escapes —
-links `12/12` · folded `1` · bonds in `4` out `4`
+links `12/12` · folded `1` · bonds in `26` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → analog·anchor·aura·aura·balance·breath·collide·cost·development·development·entanglement·entanglement·expand·fusion·generate·law·law·law·links·matrix·matrix·merge·quantum·quantum·quantum·research·reveal·roadmap·sequence·singularity·society·uuid·wave · ← analog·anchor·aura·balance·breath·collide·cost·development·development·entanglement·expand·fusion·generate·law·links·matrix·merge·quantum·research·reveal·roadmap·sequence·singularity·society·uuid·wave
 analysis aura
 law this direction's cross equals its mirror's — the research↔development pair is one order-free entangled binding, never two independent edges.
 
 ---
 
-<sub>content-uuid `ef2e72bd-896d-8dea-b2e3-cc7ebc440069` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b3281b6c-171f-8786-82c0-fdc671d362d6` · `pnpm readme` · `pnpm computed:check`</sub>

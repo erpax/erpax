@@ -23,7 +23,7 @@
 
 - partition `museum` · sub-root `d65e553b-7cc5-8431-97d9-367fc916e3b3`
 - bond degree `6` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `946f69d2-4552-84a5-ada7-0d8bef46c5c3` · framed by typography partition `museum` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `54e44f4d-38e8-86d4-ad0d-b412e9d4a701` · framed by typography partition `museum` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `allergies` · sub-root `aaf99cc2-548f-870d-bd53-4955fe9c405b`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `91d4354c-4b51-8dcf-a41e-afd681cc4c87` · framed by typography partition `allergies` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `006f4fe0-0e90-8542-948d-e14fa32d35a4` · framed by typography partition `allergies` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

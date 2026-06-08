@@ -4,7 +4,7 @@
 # models
 
 path `ai/models` · uuid `62bd9410-68a2-8fef-bbac-b62afa9be411` · diamond `84491d4f-0b64-863c-82eb-9b6201174aba`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/eu/ai/act·@/standard/collection/hook · exports AI_MODELS·default·type · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the model catalog is one accountable folder with two facets (the admin-edita
 
 ---
 
-<sub>content-uuid `47ef8002-3942-8693-bcea-b65836a900fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c5fa38fc-163e-88b8-ab36-6f5c4f4c549e` · `pnpm readme` · `pnpm computed:check`</sub>

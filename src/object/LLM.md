@@ -3,15 +3,15 @@
 
 # object
 
-path `object` · uuid `8574b6a3-3907-8d74-a704-0022a94800fd` · diamond `0b3e0a22-36d9-8e21-b340-5a7700a77317`
+path `object` · uuid `8574b6a3-3907-8d74-a704-0022a94800fd` · diamond `45e73f50-b593-835c-9283-c0df94adae20`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports alignment·audio·image·includes·law·legislation·media·music·snapshot·text·video · exports object · escapes —
-links `11/11` · folded `1` · bonds in `8` out `8`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bedrooms·cohort·declarations·hvacbusiness·landmarks·memories·note·stat · ← bedrooms·cohort·declarations·hvacbusiness·landmarks·memories·note·stat
+neighbors → alignment·audio·image·includes·law·legislation·media·music·snapshot·text·video · ← alignment·audio·image·includes·law·legislation·media·music·snapshot·text·video
 analysis —
 law object is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b98cd3f4-c5d5-8a87-a497-e483349591c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab1d5f9f-78c0-8d92-8eea-0c8ba55f4bcd` · `pnpm readme` · `pnpm computed:check`</sub>

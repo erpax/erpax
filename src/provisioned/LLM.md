@@ -3,15 +3,15 @@
 
 # provisioned
 
-path `provisioned` · uuid `95d73872-4414-8b9e-a428-2b12a66775ae` · diamond `a393430b-b742-87b6-87a0-2076d6de51bd`
+path `provisioned` · uuid `95d73872-4414-8b9e-a428-2b12a66775ae` · diamond `142646cc-7f7c-8ccf-8564-45707302b782`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports provisioned · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → impaired·landmarks·scion · ← impaired·landmarks·scion
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law provisioned is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2338dc23-8a06-8373-aa77-2befabbbf33a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `edb3f824-26ff-8dcc-ba65-2af31facbae7` · `pnpm readme` · `pnpm computed:check`</sub>

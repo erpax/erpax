@@ -3,15 +3,15 @@
 
 # midwifery
 
-path `midwifery` · uuid `6a178cc6-6d3a-8f11-a8c1-ed03729b6e87` · diamond `4643b7ba-4d96-8133-8843-78136a1c1792`
+path `midwifery` · uuid `6a178cc6-6d3a-8f11-a8c1-ed03729b6e87` · diamond `50bb3c9d-2157-82ae-8fd4-1b29c964dd76`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports midwifery · escapes —
-links `4/4` · folded `1` · bonds in `11` out `11`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → account·amount·cohort·drug·individual·landmarks·memories·moisture·patient·remediation·stat · ← account·amount·cohort·drug·individual·landmarks·memories·moisture·patient·remediation·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law midwifery is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `99514bc7-867c-80ba-ac06-1c4dd5f1d0fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `24dd7955-7ab2-8a57-8e0b-827ae7610dff` · `pnpm readme` · `pnpm computed:check`</sub>

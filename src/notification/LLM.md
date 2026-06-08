@@ -3,15 +3,15 @@
 
 # notification
 
-path `notification` · uuid `d1730275-6194-8ffa-a643-62b5509a207d` · diamond `b9f28b60-a26a-88cc-9256-bd5684e013c9`
+path `notification` · uuid `d1730275-6194-8ffa-a643-62b5509a207d` · diamond `da6bcfc8-813e-8d2a-b3a4-680671a13c90`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports NotificationCategory·NotificationChannel·async·interface · escapes —
-links `10/10` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pollination·stat · ← cohort·landmarks·memories·pollination·stat
+links `10/10` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → civilization·consent·corruption·cost·event·flow·fractal·identity·merge·society · ← civilization·consent·corruption·cost·event·flow·fractal·identity·merge·society
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `ba5353c2-6352-8052-996b-f24c25cadb44` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c879691a-f169-8986-9e9a-d14b80c4b13e` · `pnpm readme` · `pnpm computed:check`</sub>

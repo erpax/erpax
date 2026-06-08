@@ -3,15 +3,15 @@
 
 # multiple
 
-path `multiple` · uuid `174076e3-095f-804b-8a3a-fe13a026e89f` · diamond `e2d3bcf8-e072-807c-ad58-ba5ef3a0710e`
+path `multiple` · uuid `174076e3-095f-804b-8a3a-fe13a026e89f` · diamond `5187fc2d-59c4-81db-be46-fec0dc257e3e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·values · exports multiple · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·values · ← collapse·law·merge·sti·values
 analysis —
 law multiple is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5ed9056c-71aa-8b41-a93d-262a1ec67fc4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2c212c41-5e89-8eb0-bb8d-17f819485429` · `pnpm readme` · `pnpm computed:check`</sub>

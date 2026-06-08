@@ -3,15 +3,15 @@
 
 # painting
 
-path `painting` · uuid `ea9793d9-468a-8a04-9863-f30e337a0130` · diamond `ea47f7f5-aeb6-8604-9bc1-afca31852371`
+path `painting` · uuid `ea9793d9-468a-8a04-9863-f30e337a0130` · diamond `e56507a7-cad6-83cd-a14a-443c2ae9c950`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports creative·law · exports painting · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audience·issn·landmarks·optician·separation·tape · ← audience·issn·landmarks·optician·separation·tape
+neighbors → creative·law · ← creative·law
 analysis —
 law painting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `46289c4e-d247-8899-a3c2-215ba3104785` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93444e56-4fc7-8661-9c70-c7d59fd76c50` · `pnpm readme` · `pnpm computed:check`</sub>

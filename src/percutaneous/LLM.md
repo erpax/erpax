@@ -3,15 +3,15 @@
 
 # percutaneous
 
-path `percutaneous` · uuid `2177561a-890c-833b-84e8-935e445f9f97` · diamond `f14ff161-b947-8769-88aa-ce27790bf47c`
+path `percutaneous` · uuid `2177561a-890c-833b-84e8-935e445f9f97` · diamond `e38a658c-93d2-848e-b6ba-743dfe20ce47`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports percutaneous · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → arts·cohort·euenergy·gravity·landmarks·memories·stat·tenants · ← arts·cohort·euenergy·gravity·landmarks·memories·stat·tenants
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law percutaneous is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b561bf42-c121-82e1-8042-8d7a61a3433c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8c08c4e-7070-816b-b5f4-168e66bec460` · `pnpm readme` · `pnpm computed:check`</sub>

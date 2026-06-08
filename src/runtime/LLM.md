@@ -3,15 +3,15 @@
 
 # runtime
 
-path `runtime` · uuid `5aa0e5f3-2454-8aa0-b11e-03cb7b079d70` · diamond `9836bd09-d8bd-864d-878c-9ca759a63217`
+path `runtime` · uuid `5aa0e5f3-2454-8aa0-b11e-03cb7b079d70` · diamond `7339e8ae-cd6f-8807-a396-9bea5efb7468`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·platform · exports runtime · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·memories·stat · ← cohort·euenergy·landmarks·memories·stat
+neighbors → law·platform · ← law·platform
 analysis —
 law runtime is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fb0cca5e-f797-8364-a79c-54d2e1ece666` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb444370-1194-841f-8f8c-7e2f45cafbb3` · `pnpm readme` · `pnpm computed:check`</sub>

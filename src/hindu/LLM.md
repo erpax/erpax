@@ -3,15 +3,15 @@
 
 # hindu
 
-path `hindu` · uuid `8c0781ef-23eb-8545-a818-bbb3d4a58170` · diamond `06c3e8fb-cf58-8ef0-92ef-0031a9c81f93`
+path `hindu` · uuid `8c0781ef-23eb-8545-a818-bbb3d4a58170` · diamond `0ca9519d-98a6-8cc4-a682-0ec47adcc40a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·temple · exports hindu · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → carriers·cohort·declarations·landmarks·memories·note·pasture·stat · ← carriers·cohort·declarations·landmarks·memories·note·pasture·stat
+neighbors → collapse·law·merge·sti·temple · ← collapse·law·merge·sti·temple
 analysis —
 law hindu is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `958e392c-44e4-8968-a7ae-e9b170dfd62a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8d22d37-7133-8943-83d3-03fae12fabd0` · `pnpm readme` · `pnpm computed:check`</sub>

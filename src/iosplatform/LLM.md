@@ -3,15 +3,15 @@
 
 # iosplatform
 
-path `iosplatform` · uuid `1c3ee1c5-c15e-8c62-af59-15fd52d2214d` · diamond `7d3f8452-6efc-8e88-91ff-0168b5cb8a13`
+path `iosplatform` · uuid `1c3ee1c5-c15e-8c62-af59-15fd52d2214d` · diamond `de84f5e1-cb6f-8ad3-840b-364038a58ef4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports iosplatform · escapes —
-links `4/4` · folded `1` · bonds in `1` out `1`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law iosplatform is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fba247b5-a68a-862c-a395-3ba228267882` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cccc71e1-1228-8a68-adc3-b0ccf632b900` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # risks
 
-path `risks` · uuid `f059c595-2fc0-8258-bca7-cd499d991709` · diamond `1ecd35eb-33e5-8230-9f18-4452f644b460`
+path `risks` · uuid `f059c595-2fc0-8258-bca7-cd499d991709` · diamond `092583a6-72b7-8c3e-9512-25e79d4620fc`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports risks · escapes —
-links `2/2` · folded `1` · bonds in `11` out `11`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·9110·breakfast·dropoff·findings·flight·homeopathic·idempotency·rheumatologic·right · ← 3986·6585·9110·breakfast·dropoff·findings·flight·homeopathic·idempotency·rheumatologic·right
+neighbors → law·thing · ← law·thing
 analysis —
 law risks is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cd9fe120-72e0-8ecb-b58e-1d591e7677e2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `71c4c157-4bcf-8c2d-b754-41f510602fa0` · `pnpm readme` · `pnpm computed:check`</sub>

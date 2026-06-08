@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports maternity · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law maternity is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `16443d72-19be-822b-a40d-2c10c3775e32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83cd221e-55c1-8657-a1aa-657cd1aefa40` · `pnpm readme` · `pnpm computed:check`</sub>

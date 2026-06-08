@@ -3,15 +3,15 @@
 
 # hips
 
-path `hips` · uuid `6e0a40da-8981-8662-b168-19559ecba641` · diamond `5a18bf25-4076-853c-a702-b89d987dfad7`
+path `hips` · uuid `6e0a40da-8981-8662-b168-19559ecba641` · diamond `1ca0ef00-bc8e-83c8-b5be-b383cc93e8aa`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hips · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·shared·stat · ← cohort·landmarks·memories·shared·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hips is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2535028f-10bc-8acd-9ed8-941b9bf2957d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d92f373-522a-862e-95d6-b1abdce97fa0` · `pnpm readme` · `pnpm computed:check`</sub>

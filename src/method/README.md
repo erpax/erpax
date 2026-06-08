@@ -2,7 +2,7 @@
 
 # method
 
-> atom `method` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `method` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `method` · sub-root `0faf1d19-1570-8c19-8b95-672cd61e52f1`
-- bond degree `60` · analysis neighbors `diamond` · `quantum/boundary` · `tamper/import`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `98` · analysis neighbors `diamond` · `quantum/boundary` · `tamper/import`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `9ff97d5a-f1a3-88d6-87dd-7cfee5a1a804`
-- bonds in `12` · out `12`
+- uuid `0faf1d19-1570-8c19-8b95-672cd61e52f1`
+- bonds in `31` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `33` / `33`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `a6c3b9af-3946-8d47-8f8f-225f6c02e5c1` · framed by typography partition `method` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a44d4b2c-672d-84e4-9721-3c8b54219d79` · framed by typography partition `method` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>

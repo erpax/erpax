@@ -3,15 +3,15 @@
 
 # reportage
 
-path `reportage` · uuid `a50fc365-b316-8f42-905c-2f2d02449a4f` · diamond `17068800-9001-8702-9ec0-81f7df31fbb8`
+path `reportage` · uuid `a50fc365-b316-8f42-905c-2f2d02449a4f` · diamond `30699855-e9bf-8a02-bd5b-6bfe6122d3b1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·merge·news·sti · exports reportage · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → article·collapse·law·merge·news·sti · ← article·collapse·law·merge·news·sti
 analysis —
 law reportage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2287f734-77a5-8e21-a5b9-e851f99a02f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `97c38c2a-b65b-83a0-8566-9ebc1e52a97e` · `pnpm readme` · `pnpm computed:check`</sub>

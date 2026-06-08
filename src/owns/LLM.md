@@ -3,15 +3,15 @@
 
 # owns
 
-path `owns` · uuid `19b22b9c-6edf-851b-8d05-897ecba6cb15` · diamond `cb68fc51-a859-8be2-9831-e28a40842661`
+path `owns` · uuid `19b22b9c-6edf-851b-8d05-897ecba6cb15` · diamond `c4bedb59-dd39-878f-b7e3-9afdcbcb9d66`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports owns · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law owns is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5bff77fb-5625-8b25-9a25-791175bc9d75` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `41aecaee-b839-8ff4-afb4-785923d7e49a` · `pnpm readme` · `pnpm computed:check`</sub>

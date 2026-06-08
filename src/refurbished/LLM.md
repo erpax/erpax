@@ -3,15 +3,15 @@
 
 # refurbished
 
-path `refurbished` · uuid `10c08ee5-7822-8fef-a7ea-abcdf366b9ec` · diamond `f8cf9bf0-cb58-8225-b7f5-1a110b1e4b59`
+path `refurbished` · uuid `10c08ee5-7822-8fef-a7ea-abcdf366b9ec` · diamond `80bb653f-8501-8343-8baf-fdbf107e70ee`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports refurbished · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law refurbished is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `35988657-a428-8ce3-bc92-3f88b6e7c094` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5187c2fe-56ec-8ebf-9daf-2dad9320e646` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # memo
 
-path `memo` · uuid `b23c0c22-64df-88f1-aec5-a5c1137c0093` · diamond `6dba2c40-7f32-834f-a387-8487a5de8c4f`
+path `memo` · uuid `b23c0c22-64df-88f1-aec5-a5c1137c0093` · diamond `766b5d8c-168d-837e-8ddb-7b58dbb60b92`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·law·memos·message · exports memo · escapes —
-links `9/9` · folded `1` · bonds in `9` out `9`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dateline·entropy·harden·import·landmarks·outlier·plugins·restocking·screening · ← dateline·entropy·harden·import·landmarks·outlier·plugins·restocking·screening
+neighbors → balance·law·memos·message · ← balance·law·memos·message
 analysis —
 law a memo is the singular model of one row whose plural store is the [[memos]] collection — every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `6fc09d63-1ff4-86cc-b49c-1ac1ecc3801e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2a0c0de-6462-8c05-84d3-65c15aebfacb` · `pnpm readme` · `pnpm computed:check`</sub>

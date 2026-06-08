@@ -3,15 +3,15 @@
 
 # offer
 
-path `offer` · uuid `60c0ded3-a6d3-841f-a928-e0eb0a9d58a5` · diamond `e2f1961b-e2de-89a6-a57a-2a701e9fec51`
+path `offer` · uuid `60c0ded3-a6d3-841f-a928-e0eb0a9d58a5` · diamond `44cfc9d0-c092-853f-a778-fc489b28b507`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accepted·aggregate·catalog·condition·count·details·has·item·law·lease·makes·participation·purchase·shipping·sponsorship · exports offer · escapes —
-links `15/15` · folded `1` · bonds in `4` out `4`
+links `15/15` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accepted·aggregate·catalog·condition·count·details·has·item·law·lease·makes·participation·purchase·shipping·sponsorship · ← accepted·aggregate·catalog·condition·count·details·has·item·law·lease·makes·participation·purchase·shipping·sponsorship
 analysis —
 law an offer carries an explicit businessFunction (sell/lease/repair/dispose); when absent it collapses to the sell identity, so an offer is never function-ambiguous.
 
 ---
 
-<sub>content-uuid `9fcbc430-76c2-84cb-ab55-fd641667f4f4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3578158f-847c-8475-9ea3-c45539365483` · `pnpm readme` · `pnpm computed:check`</sub>

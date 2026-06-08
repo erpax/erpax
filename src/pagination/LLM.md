@@ -3,15 +3,15 @@
 
 # pagination
 
-path `pagination` · uuid `730a7749-ae8d-8c65-aa66-30d84028c96e` · diamond `40bf3d10-680e-8a4d-87ff-e12788f7bff0`
+path `pagination` · uuid `730a7749-ae8d-8c65-aa66-30d84028c96e` · diamond `bc568378-1e57-832a-b45d-a9db41bb1c1a`
 horo `1` `base` · trinity `1·1·0` · sealed `0`
 imports — · exports Pagination · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·measurement·memories·satire·stat · ← cohort·landmarks·measurement·memories·satire·stat
+neighbors → creative·law · ← creative·law
 analysis diamond·hallucination·purity
 law pagination is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a0acba3c-1f51-85bf-81f9-08d33d8daf52` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `76adc547-f247-8a52-b758-e7382e020507` · `pnpm readme` · `pnpm computed:check`</sub>

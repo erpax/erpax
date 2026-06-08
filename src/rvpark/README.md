@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `rvpark` · sub-root `710caebd-a764-8c0a-909d-33b74754b34c`
-- bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `710caebd-a764-8c0a-909d-33b74754b34c`
-- bonds in `7` · out `7`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e2b9d2c2-0db1-88eb-a03b-2d71ed8d7b2e` · framed by typography partition `rvpark` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `49ae2074-ca7b-8817-8133-7ccf983cf135` · framed by typography partition `rvpark` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

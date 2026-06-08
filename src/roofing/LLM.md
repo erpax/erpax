@@ -3,15 +3,15 @@
 
 # roofing
 
-path `roofing` · uuid `f5f8d3dc-f56c-8c15-af76-2339b7921515` · diamond `65166348-2904-83e8-8a5b-f38b688eb2ae`
+path `roofing` · uuid `f5f8d3dc-f56c-8c15-af76-2339b7921515` · diamond `51cf3df4-da91-8614-bb9e-15e0084b6d58`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·contractor·law·merge·sti · exports roofing · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·reserved·sanitization·stat · ← action·cohort·landmarks·memories·reserved·sanitization·stat
+neighbors → collapse·contractor·law·merge·sti · ← collapse·contractor·law·merge·sti
 analysis —
 law roofing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `032391a8-24d4-83ff-a3dd-7d4abcf700bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2bdcadd7-2c66-819b-8c5f-aaa14050edc0` · `pnpm readme` · `pnpm computed:check`</sub>

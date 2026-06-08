@@ -3,15 +3,15 @@
 
 # reportings
 
-path `legal/entities/segment/reportings` · uuid `4038c05b-d53b-89c3-ba6b-a1a538d6acac` · diamond `5976cd74-25f9-8897-95ab-61abe03f8f25`
+path `legal/entities/segment/reportings` · uuid `4038c05b-d53b-89c3-ba6b-a1a538d6acac` · diamond `d081d448-5ea1-8eec-adc8-0df9a48af128`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `3` out `3`
+links `0/0` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical·terminals · ← landmarks·periodical·terminals
+neighbors → entities·segment · ← entities·segment
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `093d13aa-d83e-87fc-badb-7725fed68e69` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c255c7e-5973-8e04-9eee-580aac910df7` · `pnpm readme` · `pnpm computed:check`</sub>

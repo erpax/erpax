@@ -3,15 +3,15 @@
 
 # pharmacology
 
-path `pharmacology` · uuid `61a559dd-47a4-8351-b5e2-338ac0c6d43d` · diamond `c16a4cc2-a30b-82e8-aa50-7748c84cd7b9`
+path `pharmacology` · uuid `61a559dd-47a4-8351-b5e2-338ac0c6d43d` · diamond `fefa3ce0-46b7-8142-84ec-76b4b5004d9a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports clincal·clinical·collapse·law·merge·sti · exports pharmacology · escapes —
-links `6/6` · folded `1` · bonds in `12` out `12`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activity·attendee·candidate·catalog·cohort·evapotranspiration·landmarks·materiality·memories·replication·stat·term · ← activity·attendee·candidate·catalog·cohort·evapotranspiration·landmarks·materiality·memories·replication·stat·term
+neighbors → clincal·clinical·collapse·law·merge·sti · ← clincal·clinical·collapse·law·merge·sti
 analysis —
 law pharmacology is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7012fe9b-56a0-81bf-8343-318b698af5c7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3fce64ec-d972-864d-acb0-6494f9650f9f` · `pnpm readme` · `pnpm computed:check`</sub>

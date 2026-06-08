@@ -3,15 +3,15 @@
 
 # payments
 
-path `invoices/payments` · uuid `e2d3c3c6-bde2-8ba9-a943-00c36ccb2ea7` · diamond `b7a79344-d77f-84c3-8bfe-a2090ac24b03`
+path `invoices/payments` · uuid `e2d3c3c6-bde2-8ba9-a943-00c36ccb2ea7` · diamond `cea304aa-7217-82cc-af62-502550eb8f76`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/invoices/payments/hooks · exports const · escapes —
-links `7/7` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agency·cohort·landmarks·memories·sanitization·stat·uk · ← agency·cohort·landmarks·memories·sanitization·stat·uk
+links `7/7` · folded `1` · bonds in `12` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounting·allocations·dunning·employees·escrow·identity·identity·law·law·loan·proof·proof·standard·standard·tenure·transaction·transaction · ← accounting·allocations·dunning·employees·escrow·identity·law·loan·proof·standard·tenure·transaction
 analysis —
 law every payment is double-entry money-movement posted to the GL and guarded by the period lock — cash recorded against an invoice can never land in a closed period, and its content-uuid hash makes the posting tamper-evident.
 
 ---
 
-<sub>content-uuid `ab0166b1-ac59-8165-9473-32c49591a3da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d8dcdb9-b222-8feb-8839-c3d8a8531b7e` · `pnpm readme` · `pnpm computed:check`</sub>

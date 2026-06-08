@@ -23,7 +23,7 @@
 
 - partition `psychiatric` · sub-root `2446c6ed-e323-8c4f-8353-bc981ab2e8a5`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b8ee8150-ff6d-8ba8-8815-160e0f0c1535` · framed by typography partition `psychiatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86316d93-df14-88a9-8e20-f7c0e9cbacff` · framed by typography partition `psychiatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

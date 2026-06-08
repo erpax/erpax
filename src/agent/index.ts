@@ -5,10 +5,22 @@ export * from './service'
 export { createAgentContext } from './context'
 
 export type {
-  AgentId, DomainAgent, AgentContext, AgentEffect,
+  AgentId, DomainAgent, AgentContext, AgentEffect, AgentLawState,
   AgentRegistry, AgentRuntime,
   DomainEvent, AuditLeaf, EvidenceFrame, GapSeverity,
 } from './types'
+
+export {
+  StrictApplyViolation,
+  AGENT_RUNTIME_GRANT,
+  defaultAgentLawState,
+  strictApplyDispatch,
+  strictApplyEffect,
+  strictApplyMcpCall,
+  assertStrictDispatch,
+  assertStrictEffect,
+  assertStrictMcpCall,
+} from './strict-apply'
 
 export { createAgentRegistry } from './registry'
 export { processEffect, processEffects } from './effect-processor'

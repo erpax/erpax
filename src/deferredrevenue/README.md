@@ -23,7 +23,21 @@
 
 - partition `deferredrevenue` · sub-root `d20bce8e-7383-8544-8768-03cb13701d68`
 - bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `70c4f09c-022b-86b6-b2bf-bc8a80fa7e06` · framed by typography partition `deferredrevenue` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0255c1c3-12a6-892d-ab8a-5cab435467aa` · framed by typography partition `deferredrevenue` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

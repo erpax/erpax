@@ -3,15 +3,15 @@
 
 # functions
 
-path `legal/entities/internal/audit/functions` · uuid `ac7acdc3-19f4-8af6-ad49-8f734ef62fd5` · diamond `ed9ce417-f3f2-84a0-ad6a-6b583f50a20c`
+path `legal/entities/internal/audit/functions` · uuid `ac7acdc3-19f4-8af6-ad49-8f734ef62fd5` · diamond `03b6415d-075b-8d2a-b29a-06bd29359e47`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·plannings·stat · ← cohort·landmarks·memories·plannings·stat
+neighbors → entities·findings·law · ← entities·findings·law
 analysis —
 law the internal-audit function is the independent assurance organ — a chartered CAE line reporting to the audit committee with its own annual plan, so control over the controls stays separate from those it audits.
 
 ---
 
-<sub>content-uuid `958366ff-0e73-8593-9ef6-30881b0b9269` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43b6040d-998b-8edf-b011-23de207a9a9c` · `pnpm readme` · `pnpm computed:check`</sub>

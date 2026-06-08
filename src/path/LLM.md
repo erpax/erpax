@@ -3,15 +3,15 @@
 
 # path
 
-path `path` · uuid `9334e894-59e5-8cd9-ae5f-60e4e4b73cad` · diamond `a7de3221-386a-83d1-80c8-c691ba2bc495`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `path` · uuid `ffe8628d-ff57-8b56-84fa-02fee1cfb601` · diamond `2488af12-bbde-8373-9845-9977e86b6021`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports PathSurface·const·function · escapes —
-links `26/26` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·shared·stat · ← cohort·landmarks·memories·shared·stat
+links `26/26` · folded `1` · bonds in `26` out `25`
+faces worker·plugin·pwa `1·0·0`
+neighbors → ai·api·atom·buddhism·cloudflare·diamond·dimension·entropy·fs·github·identity·integrity·islam·jainism·law·mcp·merge·method·name·purity·quantum·sti·sunni·uuid·vitepress · ← ai·api·atom·buddhism·cloudflare·diamond·dimension·entropy·fs·fs·github·identity·integrity·islam·jainism·law·mcp·merge·method·name·purity·quantum·sti·sunni·uuid·vitepress
 analysis —
 law all external APIs follow these paths and merge themselves with erpax in all quantum dimensions — one canonical atom path, content-uuid sealed, gates fail closed.
 
 ---
 
-<sub>content-uuid `e8f4c596-a058-8ce9-b53f-f6608b1059fe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fbeae38-c90e-87a7-8089-ba4e3e1b1064` · `pnpm readme` · `pnpm computed:check`</sub>

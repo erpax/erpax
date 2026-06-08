@@ -3,15 +3,15 @@
 
 # assets
 
-path `mineral/resource/assets` · uuid `303ae367-4c71-8291-9728-9f736ba9e6ce` · diamond `c8134c45-73ab-8eb0-b93c-12ae47f40c30`
+path `mineral/resource/assets` · uuid `303ae367-4c71-8291-9728-9f736ba9e6ce` · diamond `369ef1f7-ccb0-8323-92df-5f36d55fa5b4`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `13` out `14`
+links `6/6` · folded `1` · bonds in `45` out `51`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·analog·aura·bio·biometric·coding·has·idempotency·landmarks·marry·max·progression·queries·rodin · ← analog·aura·bio·biometric·coding·has·idempotency·landmarks·marry·max·progression·queries·rodin
+neighbors → access·accounting·accounting·accounting·agriculture·animal·apiculture·aquaculture·asset·assets·balance·biomass·breed·classifications·collections·collections·combinations·crop·entries·fertility·fields·fields·forestry·fractal·goodwill·graft·grants·harvest·herd·hooks·hooks·identity·impairment·intangible·lactation·law·livestock·measurements·merge·mortality·orders·perennial·postharvest·prepaid·proof·requests·rootstock·schedules·soil·standard·standard · ← access·accounting·agriculture·animal·apiculture·aquaculture·asset·assets·balance·biomass·breed·classifications·collections·combinations·crop·entries·fertility·fields·forestry·fractal·goodwill·graft·grants·harvest·herd·hooks·identity·impairment·intangible·lactation·law·livestock·measurements·merge·mortality·orders·perennial·postharvest·prepaid·proof·requests·rootstock·schedules·soil·standard
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `1c07b7bf-9be2-87b0-970a-5a3d201c0371` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d4a6617-8179-8a20-a46d-9f656934d074` · `pnpm readme` · `pnpm computed:check`</sub>

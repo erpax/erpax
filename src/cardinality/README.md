@@ -23,7 +23,7 @@
 
 - partition `cardinality` · sub-root `f34c3453-0e82-84d9-b10c-0a5628aaf70e`
 - bond degree `22` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `772c3279-61bb-8c94-94ff-3947145482aa` · framed by typography partition `cardinality` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `30650faa-c04c-8326-b04d-f2726dc66a88` · framed by typography partition `cardinality` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

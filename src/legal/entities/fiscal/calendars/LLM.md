@@ -3,15 +3,15 @@
 
 # calendars
 
-path `legal/entities/fiscal/calendars` · uuid `1a72aa08-945f-868b-858e-6d3d418ce76e` · diamond `d988c1bb-3847-8755-b57a-7ddeb221f9c3`
+path `legal/entities/fiscal/calendars` · uuid `1a72aa08-945f-868b-858e-6d3d418ce76e` · diamond `f0182b73-7879-8246-b68d-eb45ddac6b50`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth · exports const · escapes —
-links `6/6` · folded `1` · bonds in `32` out `32`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·amends·applicability·applies·chakra·city·comic·consignment·correction·corruption·count·dropoff·eliminations·enhanced·followup·founder·good·id·imaging·landmarks·learning·marine·memories·num·partially·progression·remix·residence·sell·spouse·transaction·whole · ← akashic·amends·applicability·applies·chakra·city·comic·consignment·correction·corruption·count·dropoff·eliminations·enhanced·followup·founder·good·id·imaging·landmarks·learning·marine·memories·num·partially·progression·remix·residence·sell·spouse·transaction·whole
+neighbors → accounting·calendar·entities·identity·law·proof·standard · ← accounting·calendar·entities·identity·law·proof·standard
 analysis —
 law every posting date resolves to exactly one fiscal year/period/quarter/week — a denormalized O(1) lookup generated from FiscalPeriods config, immutable after generation and lineage-traced, so date-to-period is computed not re-declared ([[proof]] via chain leaf).
 
 ---
 
-<sub>content-uuid `0ae3b60a-e904-8069-abaa-b1170413b90e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d5b1333-6527-8081-90c7-1e948b1fbafa` · `pnpm readme` · `pnpm computed:check`</sub>

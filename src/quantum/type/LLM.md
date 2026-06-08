@@ -3,15 +3,15 @@
 
 # type
 
-path `quantum/type` · uuid `f61cafea-773d-8f7d-b752-1324e910e591` · diamond `6ba2b665-911c-83c9-8e66-753afef1939b`
+path `quantum/type` · uuid `f61cafea-773d-8f7d-b752-1324e910e591` · diamond `f9893f79-0e8f-80e7-a793-0bb181a237e9`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `12/12` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `12/12` · folded `1` · bonds in `95` out `95`
+faces worker·plugin·pwa `1·0·0`
+neighbors → action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·law·learning·list·loan·location·lodging·map·matrix·measurement·medical·merge·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·quantum·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·uk·unit·us·usage·uuid·vehicle·wearable · ← action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·law·learning·list·loan·location·lodging·map·matrix·measurement·medical·merge·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·quantum·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·uk·unit·us·usage·uuid·vehicle·wearable
 analysis —
 law a type's identity is the content-uuid of its canonical structural shape and nothing else — so `sameType` reduces exactly to uuid-equality of those shapes (structural, not nominal: two shapes that print identically ARE the same type and merge), and any change to the shape, however small, yields a different uuid (the type is tamper-evident by construction, never by inspection).
 
 ---
 
-<sub>content-uuid `f21bdae4-033c-856a-80ff-35897300c51e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `afaea5b9-9f84-8cd2-92fd-c1fd270872d3` · `pnpm readme` · `pnpm computed:check`</sub>

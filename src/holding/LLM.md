@@ -3,15 +3,15 @@
 
 # holding
 
-path `holding` · uuid `ab7e4f9c-91c3-808e-a9d8-37a1059b0032` · diamond `dc7b4037-f256-8fad-b8b9-01dbfe29f213`
+path `holding` · uuid `ab7e4f9c-91c3-808e-a9d8-37a1059b0032` · diamond `bef74a61-3f12-89c9-876a-fbd860c84210`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports archive·collapse·law·merge·sti · exports holding · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·postponed·stat·submission · ← cohort·landmarks·memories·postponed·stat·submission
+neighbors → archive·collapse·law·merge·sti · ← archive·collapse·law·merge·sti
 analysis —
 law holding is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `26aa14c0-2588-8dcf-9486-83f4a9b02662` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e6536de-b7c7-8cfc-b570-4ab5b5edfe28` · `pnpm readme` · `pnpm computed:check`</sub>

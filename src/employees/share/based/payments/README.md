@@ -25,7 +25,31 @@
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
 - bond degree `50` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-2 §10-§13 equity-settled-share-based-payment` · banner
+- `IFRS IFRS-2 §15-§19 vesting-conditions` · banner
+- `IFRS IFRS-2 §30-§33 cash-settled-share-based-payment` · banner
+- `IFRS IFRS-2 §44 disclosure-requirements` · banner
+- `IFRS-2` · catalogue
+- `ISO 19011:2018 §6.4.6 audit-evidence-equity-grants` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time grant-vesting-exercise` · banner
+- `SOX §404 internal-controls TOM-EQU-01` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-718 stock-compensation` · banner
+
+## analytics
+
+- bond degree `50` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `6d077746-601e-8225-a70c-820388c5f60d` · framed by typography partition `employees` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e0a9291-bdd0-8b16-8a7b-b5eec2a856a5` · framed by typography partition `employees` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

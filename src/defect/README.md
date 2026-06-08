@@ -23,7 +23,21 @@
 
 - partition `defect` · sub-root `5651d0b6-581f-814c-9069-3cbcf3177b71`
 - bond degree `33` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `94cb5ab6-6e43-8640-92fa-370f4fcbfce9` · framed by typography partition `defect` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `38373268-bc69-83a6-ab63-d2a3b7b1137c` · framed by typography partition `defect` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

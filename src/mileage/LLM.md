@@ -3,15 +3,15 @@
 
 # mileage
 
-path `mileage` · uuid `69750ca1-876e-8705-87a9-5296421a7d5d` · diamond `2a8e2af5-ecd5-863c-bb79-a9f506136944`
+path `mileage` · uuid `69750ca1-876e-8705-87a9-5296421a7d5d` · diamond `e43b67c3-9168-8f47-8c1a-5a7b5027b084`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·odometer·sti · exports mileage · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·odometer·sti · ← collapse·law·merge·odometer·sti
 analysis —
 law mileage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0c9c5273-4ee6-8b88-b389-c9d5b58c67bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0340341d-831b-87a5-a4e6-3981e3ce087c` · `pnpm readme` · `pnpm computed:check`</sub>

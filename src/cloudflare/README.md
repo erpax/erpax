@@ -2,7 +2,7 @@
 
 # cloudflare
 
-> atom `cloudflare` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `cloudflare` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -26,8 +26,8 @@
 ## typography graph
 
 - partition `cloudflare` · sub-root `29127283-cb09-8fe6-ae5e-13f41e36f651`
-- bond degree `50` · analysis neighbors `agent` · `ai` · `diamond` · `innovation` · `quantum` · `secret` · `serverless` · `worker`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- bond degree `60` · analysis neighbors `agent` · `ai` · `diamond` · `innovation` · `quantum` · `secret` · `serverless` · `worker`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -72,14 +72,14 @@
 
 ## analytics
 
-- bond degree `50` · sealed `1` · horo `2`
+- bond degree `60` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `27` · standards `8`
 
 ## identity
 
-- uuid `8e6ca479-db8e-895f-8e9d-ac04195ec061`
-- bonds in `10` · out `10`
+- uuid `7d8488af-095b-82a2-ad16-fb5883e454b7`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`1`·`1`
 - links `23` / `23`
 - folded `1` · escapes `0`
@@ -90,4 +90,4 @@
 
 ---
 
-<sub>content-uuid `5e3b6be9-817d-8922-8fe1-459a6c9ba088` · framed by typography partition `cloudflare` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c276c534-2b73-8927-ba0b-64cc58e5f13e` · framed by typography partition `cloudflare` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,6 +1,6 @@
 /**
  * Country API Clients — working integrations with the public, no-auth and
- * api-key official APIs catalogued in `src/config/country-apis.ts`.
+ * api-key official APIs catalogued in `src/country/api.ts`.
  *
  * One file per *auth pattern*, not per country: the catalogue is broad,
  * but the realised auth surface is narrow (no-auth JSON, key-in-query,
@@ -14,10 +14,10 @@
  *
  * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
  * @audit ISO-19011:2018 audit-trail external-system-evidence
- * @see ../config/country-apis.ts
+ * @see ../country/api.ts
  */
 
-import { COUNTRY_APIS, BANK_APIS } from '@/config/country-apis'
+import { COUNTRY_APIS, BANK_APIS } from '@/country/api'
 
 export interface ApiResult<T> {
   readonly ok: boolean

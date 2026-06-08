@@ -23,7 +23,21 @@
 
 - partition `endocrine` · sub-root `754c79b9-f304-8632-800b-5421cc280807`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4a3b0bff-a29e-80ec-bf9a-81cb61939460` · framed by typography partition `endocrine` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7e40bf52-aefc-8457-a225-0187dead731f` · framed by typography partition `endocrine` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

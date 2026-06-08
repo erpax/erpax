@@ -4,7 +4,7 @@
 # accounting
 
 path `agents/accounting` · uuid `fd3e612d-c5be-8dcb-a973-232bb1198fa2` · diamond `b27adb17-35ae-850f-bcb2-419c81067f7e`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports FinanceAgent · escapes —
 links `1/1` · folded `1` · bonds in `228` out `225`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law barrel re-export at `@/agents/accounting`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `be2ff0d1-3f9b-8bdd-abb3-63c56f5711b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5bc154ae-6ab9-876c-a04d-42fae4b55595` · `pnpm readme` · `pnpm computed:check`</sub>

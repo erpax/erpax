@@ -3,15 +3,15 @@
 
 # measurement
 
-path `measurement` · uuid `b0a58c8f-c81c-8f15-97bc-3013b0b8435d` · diamond `9f98babd-b661-8a0d-a92e-583da914bb43`
+path `measurement` · uuid `b0a58c8f-c81c-8f15-97bc-3013b0b8435d` · diamond `574e4b31-baa8-8e67-87a4-bb5cb03b02fa`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports body·collapse·denominator·enum·enumeration·has·law·merge·method·qualifier·sti·suggested·technique·type·wearable · exports measurement · escapes —
-links `15/15` · folded `1` · bonds in `47` out `47`
+links `15/15` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 16·article·audience·bundle·category·clearance·coach·codes·cohort·computational·contractor·dermatology·detected·ebitda·entanglement·entropy·estate·europe·extra·gtin8·incorporated·instructions·landmarks·lei·memories·nursing·optician·owned·pagination·principle·pub·receipt·reverse·sanitization·satire·satisfaction·schedule·shipped·sources·sponsorship·standards·stat·storage·supto·term·translation·war · ← 16·article·audience·bundle·category·clearance·coach·codes·cohort·computational·contractor·dermatology·detected·ebitda·entanglement·entropy·estate·europe·extra·gtin8·incorporated·instructions·landmarks·lei·memories·nursing·optician·owned·pagination·principle·pub·receipt·reverse·sanitization·satire·satisfaction·schedule·shipped·sources·sponsorship·standards·stat·storage·supto·term·translation·war
+neighbors → biometric·body·collapse·denominator·deploy·device·enum·enumeration·has·law·merge·method·qualifier·sti·suggested·technique·type·wearable · ← biometric·body·collapse·denominator·deploy·device·enum·enumeration·has·law·merge·method·qualifier·sti·suggested·technique·type·wearable
 analysis —
 law measurement is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7463e033-7540-82a5-8a71-0431b20f2ae5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6399ebc9-35ab-8d31-96df-214f12f278dd` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `blood` · sub-root `016700eb-d572-8a5f-86eb-a56dbf097a32`
 - bond degree `30` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -57,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `efeeab85-d79d-88e7-8e4e-991cfaffa3fc` · framed by typography partition `blood` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5fb1ee87-b171-888b-971e-5d8fc57b083b` · framed by typography partition `blood` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

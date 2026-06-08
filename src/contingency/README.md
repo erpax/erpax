@@ -23,7 +23,7 @@
 
 - partition `contingency` · sub-root `215cf9dd-3d8e-8919-a525-8e95249f0941`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4fa23efd-0d97-8ecd-b2e2-353c5ab08816` · framed by typography partition `contingency` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c6b9ac79-0c14-8cd9-af68-36066bc1c081` · framed by typography partition `contingency` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

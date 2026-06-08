@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports passed · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·satire·stat · ← cohort·landmarks·memories·satire·stat
+neighbors → collapse·law·legislation·merge·sti · ← collapse·law·legislation·merge·sti
 analysis —
 law passed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0b9d6650-f9d1-8e58-b7ec-85241f33ea13` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0550c183-9679-8f2c-a052-ae6892ac304b` · `pnpm readme` · `pnpm computed:check`</sub>

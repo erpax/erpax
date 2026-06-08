@@ -2,17 +2,17 @@
 
 # kabbalah
 
-> atom `kabbalah` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `kabbalah` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `kabbalah` · sub-root `01078282-b83e-80a5-8aa9-f9d83f501833`
-- bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `53` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `01078282-b83e-80a5-8aa9-f9d83f501833`
+- bonds in `17` · out `17`
 - trinity form·code·proof `1`·`0`·`0`
 - links `47` / `47`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d543eec8-d2b7-8aa9-844d-2ae457af4607` · framed by typography partition `kabbalah` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `37a97897-ecd2-86e6-941b-006edb18f12a` · framed by typography partition `kabbalah` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # itvolunteer
 
-path `itvolunteer` · uuid `f094fbbf-0c85-8fdb-8e94-688141fe13cc` · diamond `45c9a20c-5d9f-8cdf-b023-337389b6a3a8`
+path `itvolunteer` · uuid `f094fbbf-0c85-8fdb-8e94-688141fe13cc` · diamond `ee29ab90-2d65-8cf6-b04a-2810bde9696d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports itvolunteer · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law itvolunteer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8a0d8933-b35a-8919-9d26-168902abd88f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17c429d1-5be6-8545-8bd3-c47cb263a80c` · `pnpm readme` · `pnpm computed:check`</sub>

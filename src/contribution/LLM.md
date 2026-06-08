@@ -3,15 +3,15 @@
 
 # contribution
 
-path `contribution` · uuid `d4998f4f-5d54-8545-ab22-82ad24c46053` · diamond `20efc1ad-828e-8366-bc90-1133d830c577`
+path `contribution` · uuid `d4998f4f-5d54-8545-ab22-82ad24c46053` · diamond `f79085c1-5097-8026-b4c1-51790b2dee4c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports akashic·aura·chat·derive·generate·give·history·holographic·identity·integrity·merge·one·proof·refactor·self·society·tamper · exports contribution · escapes —
-links `33/33` · folded `1` · bonds in `23` out `23`
+links `33/33` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·akashic·aura·chat·competition·cost·derive·faith·generate·give·history·holographic·identity·integrity·law·merge·one·proof·refactor·sacred·self·society·team · ← agent·akashic·aura·chat·competition·cost·derive·faith·generate·give·history·holographic·identity·integrity·law·merge·one·proof·refactor·sacred·self·society·team
+neighbors → agent·akashic·aura·chat·competition·cost·derive·faith·generate·give·history·holographic·identity·integrity·law·merge·one·proof·refactor·sacred·self·session·society·team · ← agent·akashic·aura·chat·competition·cost·derive·faith·generate·give·history·holographic·identity·integrity·law·merge·one·proof·refactor·sacred·self·session·society·team
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `6b14f4e5-0616-81e2-8aaf-f4a59e3639ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a1622ad-7c5e-8ceb-a312-d15938fafd90` · `pnpm readme` · `pnpm computed:check`</sub>

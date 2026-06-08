@@ -3,15 +3,15 @@
 
 # justice
 
-path `justice` · uuid `bd0d41f0-e714-878a-954a-c26bc310bf6f` · diamond `980480f8-a070-8b72-81a7-866822a06b5a`
+path `justice` · uuid `bd0d41f0-e714-878a-954a-c26bc310bf6f` · diamond `50256f12-30e7-8ea9-adca-1049226937de`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports access·accounting·collections·duality·fields·fractal·holographic·hooks·identity·law·merge·standard·transaction · exports justice · escapes —
-links `15/15` · folded `1` · bonds in `4` out `4`
+links `15/15` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → access·accounting·bahai·case·cases·collections·confucianism·duality·fields·fractal·holographic·hooks·identity·judaism·law·merge·shia·sikhism·standard·transaction·zoroastrianism · ← access·accounting·bahai·case·cases·collections·confucianism·duality·fields·fractal·holographic·hooks·identity·judaism·law·merge·shia·sikhism·standard·transaction·zoroastrianism
 analysis —
 law adjudication is a balanced state-machine over a docket — a case moves filed→heard→adjudicated→sealed and resolves only when charge↔defence balance into a judgment, exactly as a ledger balances debit↔credit; evidence is append-only and content-addressed, visibility row-level by party.
 
 ---
 
-<sub>content-uuid `8971b4af-387f-8ae4-ac42-1ba82df780ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee7a468e-c57e-83bf-a514-4fa5d4097cf8` · `pnpm readme` · `pnpm computed:check`</sub>

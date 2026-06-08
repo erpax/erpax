@@ -3,15 +3,15 @@
 
 # mobility
 
-path `mobility` · uuid `e345ae17-8589-8e0c-8d2c-0be4fd302ede` · diamond `d8bf51c9-f775-8d6a-8286-edf6073503e7`
+path `mobility` · uuid `e345ae17-8589-8e0c-8d2c-0be4fd302ede` · diamond `46d7a67f-dd4e-8b85-8b5f-758457917c8a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·provider·sti · exports mobility · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·entanglement·forge·fs·harden·landmarks·memories·modified·stat·warning · ← cohort·entanglement·forge·fs·harden·landmarks·memories·modified·stat·warning
+neighbors → collapse·law·merge·provider·sti · ← collapse·law·merge·provider·sti
 analysis —
 law mobility is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `aedf3284-3b98-8d13-a5bf-7d6db7812e27` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ed7b120-7f11-8bcc-ad95-17888a8b4d8a` · `pnpm readme` · `pnpm computed:check`</sub>

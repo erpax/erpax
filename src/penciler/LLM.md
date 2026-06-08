@@ -3,15 +3,15 @@
 
 # penciler
 
-path `penciler` · uuid `8cfe5b90-3df9-8c3f-96a3-4dd1fbb61a52` · diamond `82839ab0-cec7-8891-a73e-a315e101e02b`
+path `penciler` · uuid `8cfe5b90-3df9-8c3f-96a3-4dd1fbb61a52` · diamond `2d6ebdb0-b13c-823f-9933-0e8a7343150d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·person · exports penciler · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·person · ← law·person
 analysis —
 law penciler is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ea06348d-bcdb-8550-87e0-9f0c046e0919` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8616c7fb-bba3-8b17-9dad-6ad8ccdc7f22` · `pnpm readme` · `pnpm computed:check`</sub>

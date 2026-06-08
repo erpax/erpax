@@ -3,15 +3,15 @@
 
 # keywords
 
-path `keywords` · uuid `8128c75c-cd39-8c37-a106-c0f141433027` · diamond `009411aa-2327-8f89-8030-a8bc654c8503`
+path `keywords` · uuid `8128c75c-cd39-8c37-a106-c0f141433027` · diamond `57812462-d472-8397-a518-2352236ab103`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports keywords · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·diabetic·landmarks·memories·stat · ← cohort·diabetic·landmarks·memories·stat
+neighbors → keyword·law·optimization·thing · ← keyword·law·optimization·thing
 analysis —
 law keywords is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `eff3b35f-23ac-8426-97d4-f1089d879b9e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1d7f2cb-b9c6-8896-9e87-1493280f0652` · `pnpm readme` · `pnpm computed:check`</sub>

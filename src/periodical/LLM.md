@@ -3,15 +3,15 @@
 
 # periodical
 
-path `periodical` · uuid `6b3ab881-3686-8aa2-b1b4-b22fcc5ab5f2` · diamond `dbeab851-c6fc-8ade-85e0-0d0ae7cc2f42`
+path `periodical` · uuid `6b3ab881-3686-8aa2-b1b4-b22fcc5ab5f2` · diamond `9a692de1-6dee-8713-90ee-253b65a612b7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports creative·law · exports periodical · escapes —
-links `2/2` · folded `1` · bonds in `29` out `29`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accountable·actor·actors·alumni·athlete·attendees·attorney·author·boolean·bust·collider·component·contraindication·created·denominator·label·landmarks·legislative·overdosage·pamphlet·park·pay·percentile75·percentile90·prognosis·reconcile·recycle·reportings·repository · ← accountable·actor·actors·alumni·athlete·attendees·attorney·author·boolean·bust·collider·component·contraindication·created·denominator·label·landmarks·legislative·overdosage·pamphlet·park·pay·percentile75·percentile90·prognosis·reconcile·recycle·reportings·repository
+neighbors → creative·law · ← creative·law
 analysis —
 law periodical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6384727e-0058-88e1-bd6f-08b18a9fb2e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aea4b491-4747-897f-8b56-0900ef55995a` · `pnpm readme` · `pnpm computed:check`</sub>

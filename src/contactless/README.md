@@ -23,7 +23,7 @@
 
 - partition `contactless` · sub-root `f00e50a3-97b6-8a42-91b3-d872238cca9d`
 - bond degree `15` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ed0d6bed-3a15-8d4f-b567-997cd2c161c6` · framed by typography partition `contactless` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6b12df44-9ae4-8fcb-a645-d5045d5a5a72` · framed by typography partition `contactless` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

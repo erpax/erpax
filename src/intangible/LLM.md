@@ -3,15 +3,15 @@
 
 # intangible
 
-path `intangible` · uuid `0027a96b-14fa-8edb-b1a3-13070515345a` · diamond `59bdd369-0cc7-8415-bbe6-c2cfe5063fa2`
+path `intangible` · uuid `0027a96b-14fa-8edb-b1a3-13070515345a` · diamond `b2a9e8b1-d6cf-863e-928e-bf1930b4fbed`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports amortize·fixed·impairment·law·legal · exports intangible · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·driving·landmarks·memories·stat · ← cohort·driving·landmarks·memories·stat
+neighbors → amortize·assets·combinations·impairment·law·medical·schedules · ← amortize·assets·combinations·impairment·law·medical·schedules
 analysis —
 law an identifiable intangible asset is carried subject to amortization and [[impairment]] per IAS-38 — distinct from goodwill, which is not amortized.
 
 ---
 
-<sub>content-uuid `f49d0605-1a7f-8df1-87fa-9cc154141565` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a650471-5a2b-8c84-aba9-ac65eedb5a66` · `pnpm readme` · `pnpm computed:check`</sub>

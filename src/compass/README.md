@@ -23,7 +23,7 @@
 
 - partition `compass` · sub-root `1dd09c48-7c78-800c-afd9-704ee2d2be26`
 - bond degree `40` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `35cdcbd6-6da4-8449-af65-9771d131a5d5` · framed by typography partition `compass` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94a47027-f828-8516-8424-61f10a5a0e44` · framed by typography partition `compass` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

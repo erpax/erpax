@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·person · exports performers · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·person · ← law·person
 analysis —
 law performers is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9cb6dd8d-f401-8a31-96f9-574b8b7d5d23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `def1cd3e-962a-8c64-91c4-eb819919dfd6` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,22 @@
 
 - partition `dry` · sub-root `f92cd1c0-9f4d-8f95-b8aa-ca2ef5a061a2`
 - bond degree `115` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `the dry-clean is computed from the tree, never a hand-run script` · banner
+
+## analytics
+
+- bond degree `115` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `6473456b-968f-8718-a976-3ad4085bad86` · framed by typography partition `dry` bonds `115` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c4970e85-c9eb-85f1-b86c-14b9bbd9b3da` · framed by typography partition `dry` bonds `115` · `pnpm readme` · `pnpm readme:check`</sub>

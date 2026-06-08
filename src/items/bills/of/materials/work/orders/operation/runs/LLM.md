@@ -7,11 +7,11 @@ path `items/bills/of/materials/work/orders/operation/runs` · uuid `580005e3-30f
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
 links `4/4` · folded `1` · bonds in `22` out `25`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounts·balance·clip·company·correlation·emission·getting·homeopathic·id·landmarks·measure·partial·period·price·progression·progression·reviews·runs·snapshots·spouse·tour·tour·types · ← accounting·accounts·balance·clip·company·correlation·emission·entity·getting·homeopathic·id·landmarks·measure·partial·period·price·progression·reviews·runs·snapshots·spouse·tour
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounting·accounts·adjustments·balance·centers·close·compensation·employees·entries·entry·give·horo·identity·law·mandates·orders·party·privilege·proof·proof·runs·standard·transaction·transaction · ← accounting·accounts·adjustments·balance·centers·close·compensation·employees·entries·entry·give·horo·identity·law·mandates·orders·party·privilege·proof·runs·standard·transaction
 analysis —
 law the execution record of one routing step on a [[work/orders|work order]] — quantities ordered/produced/scrapped/backordered at one operation × work-center, yielding the ISA-95 yield and scrap KPIs.
 
 ---
 
-<sub>content-uuid `e7b5f91a-5350-8b61-a813-1149e66f6c60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8040ff2-8b23-8e79-9ed4-0d2c49cbad27` · `pnpm readme` · `pnpm computed:check`</sub>

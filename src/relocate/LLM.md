@@ -3,15 +3,15 @@
 
 # relocate
 
-path `relocate` · uuid `9d9bee9e-7ff4-8a74-ac2e-90c161d1fad1` · diamond `a7f1ba74-f1e7-83f5-8da3-4ffadad0c1fe`
+path `relocate` · uuid `9d9bee9e-7ff4-8a74-ac2e-90c161d1fad1` · diamond `14304793-c820-8420-8690-38d5c1cd8f9c`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/gravity·@/uuid/matrix · exports const·interface · escapes —
-links `17/17` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → auto·caption·cohort·landmarks·memories·motor·representation·stat·statistic·url · ← auto·caption·cohort·landmarks·memories·motor·representation·stat·statistic·url
+links `17/17` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analytics·anchor·balance·collapse·command·cost·gravity·matrix·merge·power·sequence·tamper · ← analytics·anchor·balance·collapse·command·cost·gravity·matrix·merge·power·sequence·tamper
 analysis analytics
 law —
 
 ---
 
-<sub>content-uuid `22923599-6bce-86db-82da-6d211f4d032d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27bde28d-03a1-8a1a-a3eb-c4a9da2d457c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # organization
 
-path `organization` · uuid `4d06b647-680b-8d31-9e7a-369c0fbf83d9` · diamond `d3e3bb68-6ce0-887d-b793-9546f713c14d`
+path `organization` · uuid `4d06b647-680b-8d31-9e7a-369c0fbf83d9` · diamond `4b017207-1fb8-8d46-8fc2-ecae9faeca04`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports archive·educational·government·hiring·hosting·law·media·medical·news·parent·rescue·research·role·search·source·sports·sub · exports organization · escapes —
-links `17/17` · folded `1` · bonds in `4` out `4`
+links `17/17` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → archive·authenticator·brand·broadcaster·consortium·cooperative·corporation·educational·government·hiring·hosting·isic·law·media·medical·news·parent·plumber·rescue·research·role·search·source·sports·sub·tenant · ← archive·authenticator·brand·broadcaster·consortium·cooperative·corporation·educational·government·hiring·hosting·isic·law·media·medical·news·parent·plumber·rescue·research·role·search·source·sports·sub·tenant
 analysis —
 law an organization is one named collective agent, and every typed variant (school, NGO, corporation, sub, parent) is the same node specialized, never a separate kind.
 
 ---
 
-<sub>content-uuid `15c7dd09-7d92-85d9-bc62-8998d970f1d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ac72eeb5-e658-89bc-9061-c25dfc5c9b26` · `pnpm readme` · `pnpm computed:check`</sub>

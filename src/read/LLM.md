@@ -3,15 +3,15 @@
 
 # read
 
-path `read` · uuid `10bd67eb-6757-8d6e-bae4-0f7214df8968` · diamond `ef346119-1c7e-8ea3-96ba-44aa9860005d`
+path `read` · uuid `10bd67eb-6757-8d6e-bae4-0f7214df8968` · diamond `c74e0032-5cd3-8952-8cbe-0fc42e4f3b9c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·date·law · exports read · escapes —
-links `3/3` · folded `1` · bonds in `22` out `20`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·attestations·binding·cross·details·emr·high·hobby·id·list·literature·marine·mcp·memories·pats·progression·quantum·safety·sections·topics · ← access·access·attestations·binding·cross·details·emr·high·hobby·id·list·literature·marine·mcp·mcp·memories·pats·progression·quantum·safety·sections·topics
+neighbors → action·date·law · ← action·date·law
 analysis —
 law read is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `309675f5-37ba-84da-988a-bc3f1ec5a940` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `09391020-aaa9-8ced-8f4e-cf0e2a5d6e4d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # metric
 
-path `metric` · uuid `add824e7-9af7-8005-bc43-3ca83bed284d` · diamond `69a9cdd8-3ffd-898a-95d2-edac379d5288`
+path `metric` · uuid `add824e7-9af7-8005-bc43-3ca83bed284d` · diamond `24f1a862-e33c-81a7-b607-35a56dac8acb`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports defect·kpi·law·measure·schedule · exports metric · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·obstetric·stat · ← cohort·landmarks·memories·obstetric·stat
+neighbors → attrition·breed·defect·distribution·kpi·law·measure·observability·outlier·sampling·schedule·trend · ← attrition·breed·defect·distribution·kpi·law·measure·observability·outlier·sampling·schedule·trend
 analysis —
 law a metric is one quantitative observation pinned to a period — the dated data point a [[kpi]] aggregates, so performance is a [[measure]] taken on a [[schedule]], not a standing assertion.
 
 ---
 
-<sub>content-uuid `bc856e93-b7fd-8621-b8fd-c3030ca6af21` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c8a5ddea-4fac-8a9c-af64-cf2048cdc946` · `pnpm readme` · `pnpm computed:check`</sub>

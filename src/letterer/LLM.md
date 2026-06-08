@@ -3,15 +3,15 @@
 
 # letterer
 
-path `letterer` · uuid `8f255ce4-62ab-8711-a245-858acb6d89fa` · diamond `700ef9c3-d3a2-8b7d-8101-480f61bb81ec`
+path `letterer` · uuid `8f255ce4-62ab-8711-a245-858acb6d89fa` · diamond `4afabec2-b931-8c6d-87cd-6d457f976365`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports letterer · escapes —
-links `3/3` · folded `1` · bonds in `5` out `5`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·memories·stat · ← cohort·euenergy·landmarks·memories·stat
+neighbors → law·person·thing · ← law·person·thing
 analysis —
 law letterer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b53cd3e-6849-8413-ac72-a0d8a432ba4d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5703de2a-9c6a-85d5-bb32-73bb8cee53fb` · `pnpm readme` · `pnpm computed:check`</sub>

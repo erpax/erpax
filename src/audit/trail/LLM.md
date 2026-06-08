@@ -4,7 +4,7 @@
 # trail
 
 path `audit/trail` · uuid `d7206082-cb49-8c0d-a909-4fb55996ce72` · diamond `0f4c143c-6a8a-8461-a2e8-ea551c5a0176`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports — · exports AuditEventCtx·AuditEventInput·ChainLinkStatus·WriteAuditEventResult·writeAuditEvent · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law barrel re-export at `@/audit/trail`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `5f1e750b-0071-8b5c-996e-685565d9565e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `238872f7-7942-8ac3-b5fd-f8cf6a0c07e4` · `pnpm readme` · `pnpm computed:check`</sub>

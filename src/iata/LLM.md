@@ -3,15 +3,15 @@
 
 # iata
 
-path `iata` · uuid `9b314b7a-198c-8d6c-9a3b-2bde25ef17da` · diamond `4a5f59fd-7cfc-8a77-a27d-5ca18092bcad`
+path `iata` · uuid `9b314b7a-198c-8d6c-9a3b-2bde25ef17da` · diamond `549fa8b8-8d8c-87bf-90fe-ffc0495a2459`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports iata · escapes —
-links `5/5` · folded `1` · bonds in `18` out `19`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·brewery·change·declarations·extended·gravity·id·landmarks·list·memories·mentions·notice·physiological·privilege·pronoun·representation·requests·updates·uses · ← animal·change·declarations·extended·gravity·id·landmarks·list·memories·mentions·notice·physiological·privilege·pronoun·representation·requests·updates·uses
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law iata is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ddf59667-e733-8e0c-9706-f7f9f5cce5f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `24aaf887-4cac-87f2-80c9-015481550bc5` · `pnpm readme` · `pnpm computed:check`</sub>

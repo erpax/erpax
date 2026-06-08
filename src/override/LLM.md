@@ -3,15 +3,15 @@
 
 # override
 
-path `override` · uuid `0a768a8b-3b57-8317-a4ef-c42bb89e2846` · diamond `b8be45c9-ad59-8ad2-9b3f-b31de2ad6a80`
+path `override` · uuid `0a768a8b-3b57-8317-a4ef-c42bb89e2846` · diamond `d80a47a5-5aec-8fe0-8697-5956fa0d59e6`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merchant·merge·policy·return·seasonal·sti · exports override · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·representation·stat · ← cohort·landmarks·memories·representation·stat
+neighbors → collapse·law·merchant·merge·policy·return·seasonal·sti · ← collapse·law·merchant·merge·policy·return·seasonal·sti
 analysis —
 law override is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dc651605-dd81-86e5-a544-87610d845185` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf1647e4-70df-8ef0-9fca-424684fb73cf` · `pnpm readme` · `pnpm computed:check`</sub>

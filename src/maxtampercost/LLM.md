@@ -3,15 +3,15 @@
 
 # maxtampercost
 
-path `maxtampercost` · uuid `—` · diamond `a4d9caab-fbff-8680-b03d-a5c02ec6258b`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `maxtampercost` · uuid `79ec51aa-2f49-8f41-b2f7-a1d7f44efa7d` · diamond `8bc117f2-218e-8bd0-9f0e-d149c5051fb0`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports analytics·cost·law·purity·tamper · exports maxtampercost · escapes —
-links `8/10` · folded `0` · bonds in `0` out `0`
+links `8/10` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → analytics·cost·law·maxtampercost·purity·tamper · ← analytics·cost·law·maxtampercost·purity·tamper
 analysis analytics·analytics/max-tamper-cost·aura·diamond·hallucination·purity
 law maxtampercost collapses to the analytics tamper-cost lever — one word, content-addressed.
 
 ---
 
-<sub>content-uuid `2aaa952d-ca86-81a5-82b6-17d46022583d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `351c6a4f-1094-8f2f-b09c-13d7c9474508` · `pnpm readme` · `pnpm computed:check`</sub>

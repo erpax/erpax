@@ -3,15 +3,15 @@
 
 # opponent
 
-path `opponent` · uuid `279b911a-48a3-80ee-9800-60327062c1f7` · diamond `7f21b50c-53b5-8a60-860c-6c96c1d0970a`
+path `opponent` · uuid `279b911a-48a3-80ee-9800-60327062c1f7` · diamond `f1d98549-657f-8f1e-897e-25ceec5bb3c1`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports opponent · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·issn·landmarks·memories·stat · ← cohort·issn·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law opponent is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `71ef7615-dccc-8c8b-8339-45dff2dbd8ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `29a2a18f-8cf1-8df6-a910-b3b54963fc38` · `pnpm readme` · `pnpm computed:check`</sub>

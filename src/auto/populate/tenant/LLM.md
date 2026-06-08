@@ -4,7 +4,7 @@
 # tenant
 
 path `auto/populate/tenant` · uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da` · diamond `029b888a-3000-8735-85de-36bc43dfb60e`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports — · exports const · escapes —
 links `8/8` · folded `1` · bonds in `12` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a row's [[tenant]] is derived from the request [[user]], not the client — 
 
 ---
 
-<sub>content-uuid `29f07a08-8e76-883a-b8ab-61936b704ba6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d46faaa2-c967-8e17-83b4-dbe9c7894f4d` · `pnpm readme` · `pnpm computed:check`</sub>

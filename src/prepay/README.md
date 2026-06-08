@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `prepay` · sub-root `247bb763-fb68-8bee-9922-630d616d1315`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `247bb763-fb68-8bee-9922-630d616d1315`
-- bonds in `6` · out `6`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b82d9291-629a-84fb-a558-2c282641327f` · framed by typography partition `prepay` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e735533-31e1-8b0a-8be2-665005b4ecb6` · framed by typography partition `prepay` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

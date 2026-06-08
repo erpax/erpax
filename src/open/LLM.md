@@ -3,15 +3,15 @@
 
 # open
 
-path `open` · uuid `d8632b38-3f77-833c-b609-dc874add7918` · diamond `1d83ad9f-93e4-84db-a715-5212f52d034b`
+path `open` · uuid `d8632b38-3f77-833c-b609-dc874add7918` · diamond `3c38470c-1ab4-8b3f-b92a-a1b23b57530d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·begin·close·flow·identity·law·versions · exports open · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
+links `9/9` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → finding·landmarks · ← finding·landmarks
+neighbors → accounting·atom·base·begin·close·decompression·defence·duality·education·flow·identity·law·shred·versions·whole·workflow · ← accounting·atom·base·begin·close·decompression·defence·duality·education·flow·identity·law·shred·versions·whole·workflow
 analysis —
 law open is the permitting boundary — what is open admits change (postable · editable · still able to [[flow]]); the dual of [[close]], and the transition is timestamp-derived, never stored.
 
 ---
 
-<sub>content-uuid `250e161a-93e0-8b17-a873-c0e31f664eb8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d2ae6239-0bf3-8603-b30e-84a7f8e6219e` · `pnpm readme` · `pnpm computed:check`</sub>

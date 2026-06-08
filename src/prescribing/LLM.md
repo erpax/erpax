@@ -3,15 +3,15 @@
 
 # prescribing
 
-path `prescribing` · uuid `4e6ee463-a1b5-8f01-a5af-82a74a5e6bd3` · diamond `692a1770-7479-883b-b079-7d5638407e21`
+path `prescribing` · uuid `4e6ee463-a1b5-8f01-a5af-82a74a5e6bd3` · diamond `263fe5a2-c848-816a-bd02-1309bfdecfb3`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·info·law·merge·sti · exports prescribing · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·good·prescription · ← balance·good·prescription
+neighbors → collapse·info·law·merge·sti · ← collapse·info·law·merge·sti
 analysis —
 law prescribing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `39a8dd56-64ce-8e56-ac27-6d1b6d4c9359` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e0d3b9d-c95b-8661-bb4d-789b1d1ddf4a` · `pnpm readme` · `pnpm computed:check`</sub>

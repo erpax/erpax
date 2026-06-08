@@ -23,7 +23,7 @@
 
 - partition `holidays` · sub-root `2e2aa4fd-3b69-89eb-91e6-7076d26b78f7`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b972713-dc86-8bf0-9a91-82fcbedfd40d` · framed by typography partition `holidays` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eba78929-fd12-823c-ba8b-529133386044` · framed by typography partition `holidays` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

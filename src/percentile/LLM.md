@@ -3,15 +3,15 @@
 
 # percentile
 
-path `percentile` · uuid `84e8aecd-b9c5-8452-b8eb-6b804ec2e03c` · diamond `d2e280ad-150c-84a9-abe2-6f075281d81b`
+path `percentile` · uuid `84e8aecd-b9c5-8452-b8eb-6b804ec2e03c` · diamond `f9085e2e-0bbe-8fc3-87e6-78d14aaebf2d`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports percentile · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat·thing · ← action·cohort·landmarks·memories·stat·thing
+neighbors → law·thing · ← law·thing
 analysis —
 law percentile is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b97eee7-e236-8e70-bcf4-ffcb9bf74c8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0560c800-3fac-832d-b7f3-1b82fcabff4d` · `pnpm readme` · `pnpm computed:check`</sub>

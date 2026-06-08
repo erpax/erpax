@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports art·collapse·law·merge·sti · exports medium · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·complex·landmarks·memories·stat · ← cohort·complex·landmarks·memories·stat
+neighbors → art·collapse·law·merge·sti · ← art·collapse·law·merge·sti
 analysis —
 law medium is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c53b9146-7f5b-8e39-91a4-688d839b675e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89dcd080-24e8-89ab-a34e-ea5e4ff1fb88` · `pnpm readme` · `pnpm computed:check`</sub>

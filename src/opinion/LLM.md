@@ -3,15 +3,15 @@
 
 # opinion
 
-path `opinion` · uuid `3d49fba9-7404-8b22-9e59-5f80ee46ea53` · diamond `1f28c0c4-a9fe-836e-9a43-7eb05b434243`
+path `opinion` · uuid `3d49fba9-7404-8b22-9e59-5f80ee46ea53` · diamond `cc517953-a292-8718-8c29-67ea2a422650`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·merge·news·sti · exports opinion · escapes —
-links `6/6` · folded `1` · bonds in `15` out `15`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·database·deleted·issn·landmarks·limited·notice·parent·pediatric·postharvest·qapage·redirects·sanitization·standards·urologic · ← action·database·deleted·issn·landmarks·limited·notice·parent·pediatric·postharvest·qapage·redirects·sanitization·standards·urologic
+neighbors → article·collapse·law·merge·news·sti · ← article·collapse·law·merge·news·sti
 analysis —
 law opinion is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `84c590e9-51d3-8001-a5d5-8d24a08cbc68` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d775b30-78d7-85d0-8e85-78080bc3441d` · `pnpm readme` · `pnpm computed:check`</sub>

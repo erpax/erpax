@@ -3,15 +3,15 @@
 
 # rule
 
-path `rule` · uuid `b16adc22-688b-8a70-b74d-217c3cfdf0fb` · diamond `34631ffa-4a61-8982-a9fe-67102acaa771`
+path `rule` · uuid `b16adc22-688b-8a70-b74d-217c3cfdf0fb` · diamond `d092c9c3-e49c-89e2-a666-286d26538235`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·governance·rules · exports rule · escapes —
-links `6/6` · folded `1` · bonds in `32` out `32`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·akashic·angel·aura·balance·catalogue·city·clip·cohort·contractual·corrects·details·dropoff·factor·gears·governinglaw·high·homeopathic·id·landmarks·license·lifestyle·list·memories·policy·process·progression·saturday·sections·sell·spouse·wp · ← accounting·akashic·angel·aura·balance·catalogue·city·clip·cohort·contractual·corrects·details·dropoff·factor·gears·governinglaw·high·homeopathic·id·landmarks·license·lifestyle·list·memories·policy·process·progression·saturday·sections·sell·spouse·wp
+neighbors → balance·governance·rules · ← balance·governance·rules
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `0c796ded-835e-808e-a2b8-86daddc0d343` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ae693f3-ee67-8684-b3d7-7574d0055ef6` · `pnpm readme` · `pnpm computed:check`</sub>

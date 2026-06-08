@@ -3,15 +3,15 @@
 
 # instruction
 
-path `instruction` · uuid `2884c136-f434-8106-be17-ce06a755915d` · diamond `71e2a525-6b0f-87c6-919c-502701346af5`
+path `instruction` · uuid `2884c136-f434-8106-be17-ce06a755915d` · diamond `061b5371-30ec-891b-ba6c-d7dbd727dd0e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·document·instructions·law · exports instruction · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·materiality·memories·receive·stat · ← cohort·landmarks·materiality·memories·receive·stat
+neighbors → balance·document·instructions·law · ← balance·document·instructions·law
 analysis —
 law one instruction is the singular model of the [[instructions]] plural store — a directive step to be carried out; every collection has exactly its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `7a31f7a0-40ca-813d-b31f-bc85838eb3f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31f32726-0d4e-8a6d-a7da-6499090641dd` · `pnpm readme` · `pnpm computed:check`</sub>

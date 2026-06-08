@@ -1598,7 +1598,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-apis/index.ts",
+        "path": "src/country/api/index.ts",
         "section": ""
       },
       {
@@ -1892,7 +1892,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-apis/index.ts",
+        "path": "src/country/api/index.ts",
         "section": ""
       },
       {
@@ -5951,7 +5951,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-apis/index.ts",
+        "path": "src/country/api/index.ts",
         "section": ""
       },
       {
@@ -6077,7 +6077,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-apis/index.ts",
+        "path": "src/country/api/index.ts",
         "section": ""
       },
       {

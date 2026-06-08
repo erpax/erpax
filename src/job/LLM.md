@@ -3,15 +3,15 @@
 
 # job
 
-path `job` · uuid `552ffef0-c9de-8b63-9624-11b88c3c03e0` · diamond `6be9cde4-dfdf-8c72-9250-5d796b2757cd`
+path `job` · uuid `552ffef0-c9de-8b63-9624-11b88c3c03e0` · diamond `7dcb4dbf-0db3-8730-b423-9e472abf0bf8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports benefits·collapse·date·duration·immediate·law·location·merge·openings·posting·start·sti·title·total·type · exports job · escapes —
-links `15/15` · folded `1` · bonds in `4` out `4`
+links `15/15` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → benefits·collapse·date·duration·immediate·law·location·merge·openings·posting·start·sti·title·total·type · ← benefits·collapse·date·duration·immediate·law·location·merge·openings·posting·start·sti·title·total·type
 analysis —
 law job is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `46a4adb6-805f-81ec-9240-b797a2f32093` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a40058d-cd3b-8ee7-af12-769a219dcc05` · `pnpm readme` · `pnpm computed:check`</sub>

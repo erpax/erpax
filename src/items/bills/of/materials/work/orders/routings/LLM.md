@@ -3,15 +3,15 @@
 
 # routings
 
-path `items/bills/of/materials/work/orders/routings` · uuid `b7bb1407-4054-8648-8d1f-3bd24613d051` · diamond `46d3646e-4aac-85c5-b285-7fda1d15aab3`
+path `items/bills/of/materials/work/orders/routings` · uuid `b7bb1407-4054-8648-8d1f-3bd24613d051` · diamond `70be9834-90a3-82f6-b65a-5cb184241f9c`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `8/8` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·centers·hooks·law·operations·orders · ← access·accounting·centers·hooks·law·operations·orders
 analysis —
 law the ordered process steps that make a [[work/orders|work order]] — each step's operation, work center, and run-time per unit yield cost-of-conversion; the second universal manufacturing primitive alongside the BOM.
 
 ---
 
-<sub>content-uuid `0c092898-1932-829f-86a4-978d098acdc0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a22735b8-bdcd-8f0b-a22a-0675df3e407b` · `pnpm readme` · `pnpm computed:check`</sub>

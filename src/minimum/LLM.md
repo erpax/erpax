@@ -3,15 +3,15 @@
 
 # minimum
 
-path `minimum` · uuid `20f0f589-5c23-8201-8166-6bd2ea422c48` · diamond `af7f8a39-009b-8036-9e6a-df637b21e5c7`
+path `minimum` · uuid `20f0f589-5c23-8201-8166-6bd2ea422c48` · diamond `1cd26ab8-be18-884a-a8b9-59221d053850`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports account·amount·collapse·due·inflow·law·merge·monthly·payment·repayment·sti · exports minimum · escapes —
-links `11/11` · folded `1` · bonds in `4` out `4`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → account·amount·collapse·due·inflow·law·merge·monthly·payment·repayment·sti · ← account·amount·collapse·due·inflow·law·merge·monthly·payment·repayment·sti
 analysis —
 law minimum is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ad7d067c-2c01-8abb-9a7f-38dd41ccd402` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f50744aa-a7d3-80d0-8f91-a7a79b869917` · `pnpm readme` · `pnpm computed:check`</sub>

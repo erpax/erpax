@@ -3,15 +3,15 @@
 
 # non
 
-path `non` · uuid `c8750c62-c665-8d88-afa6-915d796f72fb` · diamond `c4c03fcc-4583-8042-a057-7fb5910867b9`
+path `non` · uuid `c8750c62-c665-8d88-afa6-915d796f72fb` · diamond `884a17c8-07a1-8274-bdee-9528ea97263b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·equal·law·merge·name·proprietary·sti · exports non · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·equal·law·merge·name·proprietary·sti · ← collapse·equal·law·merge·name·proprietary·sti
 analysis —
 law non is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `df4e4d94-e175-8912-9864-1b69d28f9aa9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af60a1d7-a45f-8838-a007-3544e57eb439` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # measure
 
-path `measure` · uuid `d7ba8ac9-1265-8b6b-ac54-40e19513a696` · diamond `07f9846d-a0ab-81d4-8e91-5c4cfc4a0a96`
+path `measure` · uuid `d7ba8ac9-1265-8b6b-ac54-40e19513a696` · diamond `bfa158b0-54da-8c56-9430-323e00c7399a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·calculate·commerce·crop·currency·dimension·fields·identity·law·manufacturing·number·port·rate·standard·value·versions · exports measure · escapes —
-links `25/25` · folded `1` · bonds in `8` out `8`
+links `25/25` · folded `1` · bonds in `49` out `49`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·homeopathic·id·landmarks·progression·runs·spouse·tour · ← accounting·homeopathic·id·landmarks·progression·runs·spouse·tour
+neighbors → agriculture·baseline·biofield·biomagnetism·biomass·biophoton·calculate·capacity·cohort·commerce·conversion·crop·currency·degreeday·dimension·empirical·evapotranspiration·fertility·field·fields·grade·grazing·herd·identity·items·kpi·lactation·law·manufacturing·maturity·metric·number·port·postharvest·rate·salinity·science·scouting·seed·spacing·standard·throughput·time·total·trend·value·versions·wellbeing·yield · ← agriculture·baseline·biofield·biomagnetism·biomass·biophoton·calculate·capacity·cohort·commerce·conversion·crop·currency·degreeday·dimension·empirical·evapotranspiration·fertility·field·fields·grade·grazing·herd·identity·items·kpi·lactation·law·manufacturing·maturity·metric·number·port·postharvest·rate·salinity·science·scouting·seed·spacing·standard·throughput·time·total·trend·value·versions·wellbeing·yield
 analysis —
 law a measured quantity is a `value` + a Rec-20 `unit` of measure, NEVER a unit-baked field name — blanks route to the `C62` identity element ([[identity]]) and quantities sum only within a [[dimension]]; the substance twin of [[currency]].
 
 ---
 
-<sub>content-uuid `58f81c76-0edb-8e6f-bb35-1f79116479bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a9f2f8b7-1a98-829b-b5fc-582e0dc9978c` · `pnpm readme` · `pnpm computed:check`</sub>

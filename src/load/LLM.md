@@ -3,15 +3,15 @@
 
 # load
 
-path `load` · uuid `91e3837b-e442-8195-9f87-df5ab494d7d9` · diamond `ec545478-1c87-856f-b7bb-0d0282ac86fb`
+path `load` · uuid `91e3837b-e442-8195-9f87-df5ab494d7d9` · diamond `6a26d7f2-1d18-8b35-bbab-0efceb54d592`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·roof·sti · exports load · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·balance·landmarks·perennial · ← access·balance·landmarks·perennial
+neighbors → collapse·law·merge·roof·sti · ← collapse·law·merge·roof·sti
 analysis —
 law load is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f8e5da0a-ed61-8f30-b979-edca36940dd8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ede6c1d9-76a1-8558-84a3-983d883ee185` · `pnpm readme` · `pnpm computed:check`</sub>

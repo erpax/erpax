@@ -17,7 +17,7 @@ import { describe, expect, it } from 'vitest'
 import { BG_COUNTRY_BUNDLE, COUNTRY_BUNDLES, getCountryBundle } from '@/iso/3166/1/country'
 import { COUNTRY_PROFILES } from '@/config/regional-defaults'
 import { COUNTRY_SPECIFICS } from '@/config/country-specifics'
-import { COUNTRY_APIS, BANK_APIS } from '@/config/country-apis'
+import { COUNTRY_APIS, BANK_APIS } from '@/country/api'
 
 describe('BG_COUNTRY_BUNDLE — canonical merge', () => {
   it('exposes the right ISO-3166-1 alpha-2 + display name', () => {

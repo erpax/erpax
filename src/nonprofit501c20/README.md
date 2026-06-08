@@ -23,7 +23,7 @@
 
 - partition `nonprofit501c20` · sub-root `d2bd9bfc-3dc0-871e-a537-3320e98c899f`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b56b8477-20f2-8e34-84d1-1598d136b500` · framed by typography partition `nonprofit501c20` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8fbd7875-bf03-88ec-a896-1c80a8cadec3` · framed by typography partition `nonprofit501c20` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

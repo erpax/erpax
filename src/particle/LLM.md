@@ -3,15 +3,15 @@
 
 # particle
 
-path `particle` · uuid `819296ad-88b6-84d7-b3e0-55b46d5139d7` · diamond `8f907c1c-7747-80f2-aa91-d9bbd9d83840`
+path `particle` · uuid `819296ad-88b6-84d7-b3e0-55b46d5139d7` · diamond `6adc667e-fc22-8894-82d0-9dc6b172c244`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/gravity·@/uuid/matrix · exports const·interface · escapes —
-links `12/12` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `12/12` · folded `1` · bonds in `15` out `17`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·digit·duality·entanglement·generator·gravity·law·links·matrix·particle·photon·quantum·quantum·signal·uuid·uuid·void · ← atom·digit·duality·entanglement·generator·gravity·law·links·matrix·particle·photon·quantum·signal·uuid·void
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3f1c3a76-73e1-84e3-b1f8-d5aeec5cd24b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f56d1e81-c715-8f29-b8bd-854247378be4` · `pnpm readme` · `pnpm computed:check`</sub>

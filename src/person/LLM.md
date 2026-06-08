@@ -3,15 +3,15 @@
 
 # person
 
-path `person` · uuid `d63eec22-64c9-8ba8-a9e9-090dceba2765` · diamond `53fe2a3e-906b-829c-af34-706401e414ac`
+path `person` · uuid `d63eec22-64c9-8ba8-a9e9-090dceba2765` · diamond `d3dbd0f4-ffac-85a6-81bb-4df005038ef4`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accountable·law · exports person · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·minor·separation·stat·statistic · ← cohort·landmarks·memories·minor·separation·stat·statistic
+neighbors → accountable·actor·actors·alumni·athlete·attendees·attorney·author·borrower·buyer·colorist·composer·contributor·creator·dentist·landlord·law·lender·letterer·owner·parents·participant·penciler·performer·performers·pronoun·recycle·referee·researcher · ← accountable·actor·actors·alumni·athlete·attendees·attorney·author·borrower·buyer·colorist·composer·contributor·creator·dentist·landlord·law·lender·letterer·owner·parents·participant·penciler·performer·performers·pronoun·recycle·referee·researcher
 analysis —
 law person is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1ea384f8-c6d9-8dd4-90ad-c23744eda55c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f0ea3a7-8121-8d31-bdb0-5d506262bc70` · `pnpm readme` · `pnpm computed:check`</sub>

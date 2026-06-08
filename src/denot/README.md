@@ -23,7 +23,21 @@
 
 - partition `denot` · sub-root `73e321e7-d6ef-89ef-bec6-eecc755a0307`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e46abc1a-7576-83ae-88ea-9c3e6171f179` · framed by typography partition `denot` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fbd7cb9a-5bea-8046-aa88-8f2e9c3fea23` · framed by typography partition `denot` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

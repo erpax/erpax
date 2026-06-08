@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·company·law·merge·sti · exports registration · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·memories·stat · ← cohort·euenergy·landmarks·memories·stat
+neighbors → collapse·company·law·merge·sti · ← collapse·company·law·merge·sti
 analysis —
 law registration is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6c2bc39e-ea7a-87e6-8bde-bc9f16eea650` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f3d063b7-2ec5-8bea-91db-6b5ffea15c5d` · `pnpm readme` · `pnpm computed:check`</sub>

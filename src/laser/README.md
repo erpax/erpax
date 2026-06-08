@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `laser` · sub-root `5dec0a24-0dc2-8995-91ea-2c6ff88f68c8`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `5dec0a24-0dc2-8995-91ea-2c6ff88f68c8`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `432c6964-3c70-87b9-aeba-56c485ac7e4d` · framed by typography partition `laser` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `52ed0824-553a-853e-ac60-7fdd502e2768` · framed by typography partition `laser` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

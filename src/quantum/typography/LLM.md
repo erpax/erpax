@@ -3,15 +3,15 @@
 
 # typography
 
-path `quantum/typography` · uuid `0a0bf935-75e3-8ad9-8fdc-9f0146ef8c7d` · diamond `c9968a92-ec44-8254-9001-c02b648ce9f8`
+path `quantum/typography` · uuid `82ab24f4-005d-8182-bac5-66672634808c` · diamond `95b53b60-fb7c-8eea-9327-d875b4c74f02`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/typography · exports const · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → emission·employees·first·foot·government·landmarks·template · ← emission·employees·first·foot·government·landmarks·template
+links `9/9` · folded `1` · bonds in `42` out `46`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analytics·atom·aura·blockchain·collapse·cost·css·diamond·digit·entanglement·form·fractal·gate·guardian·harmony·holographic·holographic·horo·identity·law·law·link·matrix·metatron·name·navigation·payload·proof·purity·quantum·rodin·seal·search·search·sequence·skill·tamper·tamper·text·trinity·typography·typography·uuid·vitepress·word·worker · ← analytics·atom·aura·blockchain·collapse·cost·css·diamond·digit·entanglement·form·fractal·gate·guardian·harmony·holographic·horo·identity·law·link·matrix·metatron·name·navigation·payload·proof·purity·quantum·rodin·seal·search·sequence·skill·tamper·text·trinity·typography·typography·uuid·vitepress·word·worker
 analysis analytics·aura·diamond·purity
 law tamper-cost is exactly the count of distinct typographic dimensions a page actually uses (`tamperBits` = `depth`), so it rises monotonically as features are added and is bounded above by `FEATURES.length` — and it reaches that ceiling precisely when the typography is gapless (coverage = 1). The holographic maximum is the full feature set; a forger must reproduce every dimension present, no fewer.
 
 ---
 
-<sub>content-uuid `79ebe29c-8850-8743-bc88-52e15e3bbf9d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8bad368-992a-851e-a8b1-ddd42c4ba664` · `pnpm readme` · `pnpm computed:check`</sub>

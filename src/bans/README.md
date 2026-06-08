@@ -23,7 +23,7 @@
 
 - partition `bans` · sub-root `2d0d37b8-35ba-8539-8cc4-6fbf0e41afa1`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cdcebf31-6954-8eab-a8cd-e15aec265b17` · framed by typography partition `bans` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60d4168e-6896-81a1-a33b-332171a045f4` · framed by typography partition `bans` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

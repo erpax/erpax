@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·dose·law·merge·schedule·sti · exports reported · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·optician·score·stat · ← cohort·landmarks·memories·optician·score·stat
+neighbors → collapse·dose·law·merge·schedule·sti · ← collapse·dose·law·merge·schedule·sti
 analysis —
 law reported is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b173db9a-04c0-8209-ac28-5c7e09824fa3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `96baa4eb-0d26-84c8-b9c7-ff8460ef2bc5` · `pnpm readme` · `pnpm computed:check`</sub>

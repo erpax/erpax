@@ -3,15 +3,15 @@
 
 # nonprofit
 
-path `nonprofit` · uuid `e04d766c-af24-836a-ae26-9bad3be872bb` · diamond `daf1d8c6-33e3-85b9-aeb4-5049cc85ff15`
+path `nonprofit` · uuid `e04d766c-af24-836a-ae26-9bad3be872bb` · diamond `b12eee96-9e98-896b-ba0d-0827353174f6`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·de·it·law·merge·nl·status·sti·type·uk·us · exports nonprofit · escapes —
-links `11/11` · folded `1` · bonds in `4` out `4`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·de·it·law·merge·nl·status·sti·type·uk·us · ← collapse·de·it·law·merge·nl·status·sti·type·uk·us
 analysis —
 law nonprofit is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e579eef4-cb1a-8091-a60b-97da7067abff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ac1ddc9-f451-8bf2-b6c0-1e252375edb6` · `pnpm readme` · `pnpm computed:check`</sub>

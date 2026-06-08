@@ -3,15 +3,15 @@
 
 # 38
 
-path `nist/sp/800/38` · uuid `ea586891-397e-8d46-b057-c00238484b9c` · diamond `aa32fce1-db5d-83b7-a17f-50e17193f843`
+path `nist/sp/800/38` · uuid `ea586891-397e-8d46-b057-c00238484b9c` · diamond `7ce4c406-2dd7-85ac-8241-e4156abde876`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports decryptField·decryptFields·encryptField·encryptFields·generateEncryptionKey·isEncrypted · escapes —
-links `0/0` · folded `1` · bonds in `11` out `11`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·db·iso6523·landmarks·memories·next·sanitization·standards·stat·trip·unordered · ← cohort·db·iso6523·landmarks·memories·next·sanitization·standards·stat·trip·unordered
+links `0/0` · folded `1` · bonds in `1` out `1`
+faces worker·plugin·pwa `1·0·0`
+neighbors → secret · ← secret
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `abfd3ba9-0bf1-85b8-ae3f-3050053a9c1e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0195f328-12e5-8797-b642-8373bd82644f` · `pnpm readme` · `pnpm computed:check`</sub>

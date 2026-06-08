@@ -3,15 +3,15 @@
 
 # physician
 
-path `physician` · uuid `edd34940-e494-8dda-9853-c1c6d6d84d58` · diamond `0135e55b-d71c-896c-bb8d-1eb0afe6e1cb`
+path `physician` · uuid `edd34940-e494-8dda-9853-c1c6d6d84d58` · diamond `37f56f18-3bd8-8c17-a75b-0470fab90df7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports individual·law · exports physician · escapes —
-links `2/2` · folded `1` · bonds in `27` out `27`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aquarium·bakery·biophoton·breath·breed·calories·campground·cases·cdcpmdrecord·contactless·contagiousness·content·county·credited·deadline·editor·expand·lab·landlord·landmarks·local·lock·planning·point·reconcile·variances·withdrawn · ← aquarium·bakery·biophoton·breath·breed·calories·campground·cases·cdcpmdrecord·contactless·contagiousness·content·county·credited·deadline·editor·expand·lab·landlord·landmarks·local·lock·planning·point·reconcile·variances·withdrawn
+neighbors → individual·law · ← individual·law
 analysis —
 law physician is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `51ac134a-8863-8db8-b54e-25c1968a47bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b396705-e1f8-8341-91f9-b564f0abc468` · `pnpm readme` · `pnpm computed:check`</sub>

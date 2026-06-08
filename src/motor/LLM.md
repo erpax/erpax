@@ -3,15 +3,15 @@
 
 # motor
 
-path `motor` · uuid `fff76384-733a-8817-be56-ab45adcf4671` · diamond `6dd0ead2-1bd3-8ae1-95d9-11edc8ae1223`
+path `motor` · uuid `fff76384-733a-8817-be56-ab45adcf4671` · diamond `fdb74f7f-385f-80e7-b88a-c2889e68b306`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·nerve·sti · exports motor · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → clinical·landmarks·relocate·sender·statistic·tenants · ← clinical·landmarks·relocate·sender·statistic·tenants
+neighbors → collapse·law·merge·nerve·sti · ← collapse·law·merge·nerve·sti
 analysis —
 law motor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4df93269-c50d-89bd-b48b-37936a0a8956` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a403a08f-0b5f-877b-af68-3407377b0d77` · `pnpm readme` · `pnpm computed:check`</sub>

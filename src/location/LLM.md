@@ -3,15 +3,15 @@
 
 # location
 
-path `location` · uuid `d62e7f3e-44b3-8774-9fd8-b1692af04b31` · diamond `7635e3ea-c95c-892c-b49b-bbfd654a4cbb`
+path `location` · uuid `d62e7f3e-44b3-8774-9fd8-b1692af04b31` · diamond `baba6b69-87bb-88b9-8b84-6a48489beb30`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports activity·announcement·applicable·applicant·body·content·created·display·dropoff·feature·founding·game·global·home·item·job·law·located·number·occupation·pickup·requirements·service·specification·sports·study·subcellular·type·virtual·work · exports location · escapes —
-links `30/30` · folded `1` · bonds in `3` out `3`
+links `30/30` · folded `1` · bonds in `32` out `32`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks·terminals · ← create·landmarks·terminals
+neighbors → activity·announcement·applicable·applicant·body·content·created·display·dropoff·feature·founding·game·global·home·item·job·landmark·law·located·number·occupation·pickup·requirements·service·space·specification·sports·study·subcellular·type·virtual·work · ← activity·announcement·applicable·applicant·body·content·created·display·dropoff·feature·founding·game·global·home·item·job·landmark·law·located·number·occupation·pickup·requirements·service·space·specification·sports·study·subcellular·type·virtual·work
 analysis —
 law location is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3f3b90fe-1f91-8a67-8c7f-16db06796898` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4140a317-18bf-849f-91a1-b45fbd82c1c5` · `pnpm readme` · `pnpm computed:check`</sub>

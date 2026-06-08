@@ -3,15 +3,15 @@
 
 # performing
 
-path `performing` · uuid `ed064305-85ea-888e-85e0-93cb9d6721b1` · diamond `9a1b368e-fcac-8a95-94d0-9c1dab946e70`
+path `performing` · uuid `ed064305-85ea-888e-85e0-93cb9d6721b1` · diamond `1b1e6b1d-5e4f-884c-973c-c381bcf0fd73`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports arts·collapse·event·group·law·merge·sti·theater · exports performing · escapes —
-links `8/8` · folded `1` · bonds in `3` out `3`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audience·goodwill·landmarks · ← audience·goodwill·landmarks
+neighbors → arts·collapse·event·group·law·merge·sti·theater · ← arts·collapse·event·group·law·merge·sti·theater
 analysis —
 law performing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b48bc0b9-29d5-82b2-a3de-303449de62da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a83c8f42-5648-872a-9c98-048495858f74` · `pnpm readme` · `pnpm computed:check`</sub>

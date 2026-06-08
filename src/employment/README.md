@@ -23,7 +23,21 @@
 
 - partition `employment` · sub-root `59bd883d-8a99-88ac-bae2-9b0a5b327980`
 - bond degree `23` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `23` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d04a0822-e164-8fb1-ab3f-75187812b22b` · framed by typography partition `employment` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c761c8b-92f0-8c34-b45a-706b1a0733b5` · framed by typography partition `employment` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # join
 
-path `join` · uuid `c25d6c6b-3585-8a91-a89f-30029ec9006b` · diamond `6ac31da7-97e4-8fc6-a493-58940089ba1a`
+path `join` · uuid `c25d6c6b-3585-8a91-a89f-30029ec9006b` · diamond `0512f35a-e50b-8f3c-bcda-3726c562c831`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports join · escapes —
-links `5/5` · folded `1` · bonds in `15` out `15`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·carrier·carriers·colleagues·dropoff·fertility·founder·hobby·holographic·id·landmarks·memories·spouse·tour · ← access·accounting·carrier·carriers·colleagues·dropoff·fertility·founder·hobby·holographic·id·landmarks·memories·spouse·tour
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law join is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f3cf4441-66a2-8559-8006-070e9ada0833` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c5e4db15-93c9-803d-82cc-72934313f093` · `pnpm readme` · `pnpm computed:check`</sub>

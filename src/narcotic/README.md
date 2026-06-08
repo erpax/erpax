@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `narcotic` · sub-root `338bf931-47bf-8b27-8d0c-aa09bb196ea8`
-- bond degree `8` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `338bf931-47bf-8b27-8d0c-aa09bb196ea8`
-- bonds in `2` · out `2`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8d7738d4-2e6f-823f-a1b2-81201dcedbe0` · framed by typography partition `narcotic` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59cff210-2aea-84ae-a438-28008cb95c9c` · framed by typography partition `narcotic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

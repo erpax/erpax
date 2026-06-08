@@ -3,15 +3,15 @@
 
 # past
 
-path `past` · uuid `2ddac16d-7e7d-8946-ad2a-a297f5cc1940` · diamond `145182bb-d5cd-8a68-bac8-712a98727258`
+path `past` · uuid `2ddac16d-7e7d-8946-ad2a-a297f5cc1940` · diamond `c2c100f8-c723-855d-8b0c-b48549163cb1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports past · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accepting·cohort·landmarks·memories·neck·stat · ← accepting·cohort·landmarks·memories·neck·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law past is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `beae01d3-a375-8870-b86a-a18ba84e320b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `acddc1b5-717f-863f-8347-6d375b87e1f3` · `pnpm readme` · `pnpm computed:check`</sub>

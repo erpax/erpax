@@ -3,15 +3,15 @@
 
 # bindings
 
-path `quantum/bindings` · uuid `09c6c882-5ea8-86eb-8b4c-d1dec858d824` · diamond `f22b9d05-1090-83e2-bbaf-dd039700113e`
+path `quantum/bindings` · uuid `09c6c882-5ea8-86eb-8b4c-d1dec858d824` · diamond `4e2caf50-9c7a-8702-b90d-3608c3a86ab4`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports access·ai·analytics·bindings·broker·cache·database·deploy·email·law·quantum·queue·receipt·sandbox·storage·uuid·worker · exports bindings · escapes —
-links `30/30` · folded `1` · bonds in `14` out `14`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 16931·checklist·cohort·employment·entanglement·harden·integer·landmarks·memories·parent·podiatric·sell·shopping·stat · ← 16931·checklist·cohort·employment·entanglement·harden·integer·landmarks·memories·parent·podiatric·sell·shopping·stat
+links `30/30` · folded `1` · bonds in `32` out `33`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·ai·analytics·binding·bindings·broker·cache·config·currency·database·deploy·deploy·dev·device·email·harden·identity·jobs·law·law·manufacturing·mcp·plugins·queue·receipt·sandbox·search·signal·storage·sufficient·supto·uuid·worker · ← access·ai·analytics·binding·bindings·broker·cache·config·currency·database·deploy·deploy·dev·device·email·harden·identity·jobs·law·manufacturing·mcp·plugins·queue·receipt·sandbox·search·signal·storage·sufficient·supto·uuid·worker
 analysis analytics
 law attach-all is safe only because each call is gated — a binding is a capability grant, not a free reach, so widening the door to all 26 senses is bounded by the invariant that every use passes [[access]] in the caller's request, draws its credential from the [[broker]], and emits a [[receipt]]; it is the gate per call, never the length of the binding list, that holds, and a Durable-Object class reaches the Worker at all only as a named export of the OpenNext `main` entry.
 
 ---
 
-<sub>content-uuid `39069c52-ed06-82d8-87b2-7bcbd86a918f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a9dc2bdb-d3f1-8685-9cd8-232dfa601c7c` · `pnpm readme` · `pnpm computed:check`</sub>

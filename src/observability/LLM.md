@@ -3,15 +3,15 @@
 
 # observability
 
-path `observability` · uuid `eacd2673-aaee-8d28-a244-6b09de873db9` · diamond `a1817800-617a-8a76-a1d7-e8642dfba5e1`
+path `observability` · uuid `eacd2673-aaee-8d28-a244-6b09de873db9` · diamond `de9ac9dc-0d98-8e55-8b54-02093c333acd`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports audit·deploy·jobs·metric·sampling · exports observability · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → harden·landmarks·lnid·regular · ← harden·landmarks·lnid·regular
+neighbors → deploy·events·jobs·metric·sampling·sla · ← deploy·events·jobs·metric·sampling·sla
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `51a1a636-dbe6-8f32-8e4d-2c0aecd44070` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea45e198-8b62-89e5-b37d-69a3351437f8` · `pnpm readme` · `pnpm computed:check`</sub>

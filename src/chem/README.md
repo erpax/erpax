@@ -23,7 +23,7 @@
 
 - partition `chem` · sub-root `9fce621d-459f-8248-8464-fc9e9c489672`
 - bond degree `43` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a10ed1b2-e99b-8dd6-aa0d-f1c4b66d9960` · framed by typography partition `chem` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `607ed32d-dd25-8c9e-9789-8e188199280b` · framed by typography partition `chem` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

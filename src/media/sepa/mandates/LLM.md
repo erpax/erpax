@@ -3,15 +3,15 @@
 
 # mandates
 
-path `media/sepa/mandates` · uuid `6aa80160-9705-876c-a605-814996966ed6` · diamond `8ccd6b20-63e8-8c9d-ba44-821d32067653`
+path `media/sepa/mandates` · uuid `6aa80160-9705-876c-a605-814996966ed6` · diamond `3339744a-c995-8784-bfea-dd087d0b38d2`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → closing·gravity·harden·landmarks·product·therapeutic·urltemplate · ← closing·gravity·harden·landmarks·product·therapeutic·urltemplate
+links `8/8` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·horo·identity·law·proof·runs·standard·transaction · ← accounting·horo·identity·law·proof·runs·standard·transaction
 analysis —
 law a SEPA mandate is the debtor's standing authorization (pain.008) — its sequence-state walks FRST → RCUR on the [[horo]] ring, it expires 36 months after the last collection, and a revoked or expired mandate can authorize no PaymentRun.
 
 ---
 
-<sub>content-uuid `3339f6ce-2155-821c-ac15-b29f91aa0153` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b0556f2-3bd1-89bf-8343-8bf4c3e72bae` · `pnpm readme` · `pnpm computed:check`</sub>

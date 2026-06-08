@@ -3,15 +3,15 @@
 
 # hostel
 
-path `hostel` · uuid `b6d9d19e-4834-8fab-9538-66f81fa4698e` · diamond `c460055f-121b-819d-ab56-86d19e200ea9`
+path `hostel` · uuid `b6d9d19e-4834-8fab-9538-66f81fa4698e` · diamond `3c7385d6-8245-83ea-a673-a314ad69e531`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports hostel · escapes —
-links `2/2` · folded `1` · bonds in `9` out `9`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → digital·issn·landmarks·percentile25·search·start·sugar·throughput·time · ← digital·issn·landmarks·percentile25·search·start·sugar·throughput·time
+neighbors → law·thing · ← law·thing
 analysis —
 law hostel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `99f6fd4e-3b8c-887f-b46f-b4d4d117b066` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33b4ad50-10c8-8e30-82aa-6bd9dd645f40` · `pnpm readme` · `pnpm computed:check`</sub>

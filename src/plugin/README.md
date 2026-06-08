@@ -2,7 +2,7 @@
 
 # plugin
 
-> atom `plugin` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `plugin` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `plugin` · sub-root `972f065f-f33e-8545-9de0-d2f78042dc03`
-- bond degree `26` · analysis neighbors `diamond`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `38` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `b2fb9284-ac96-8df7-8c9b-fcc82baad032`
-- bonds in `5` · out `5`
+- uuid `972f065f-f33e-8545-9de0-d2f78042dc03`
+- bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `22` / `22`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `154cdf5a-7a75-8d78-961d-fcc7b2a46c11` · framed by typography partition `plugin` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `000510e3-8939-8374-bfa2-ecccfb634cff` · framed by typography partition `plugin` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

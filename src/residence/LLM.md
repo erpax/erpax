@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports community·family·gated·law·single · exports residence · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calendars·cohort·landmarks·memories·stat · ← calendars·cohort·landmarks·memories·stat
+neighbors → community·family·gated·law·single · ← community·family·gated·law·single
 analysis —
 law a residence is a place qualified by who dwells there, so it binds a person to a location — a residence with no resident is just a place.
 
 ---
 
-<sub>content-uuid `2590045a-f666-8da3-aa11-e23760816c36` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85ba524d-c60e-8da3-9542-34f88b23235d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # page
 
-path `page` · uuid `35dc5f33-4f1c-88b5-a005-f78765dc3a60` · diamond `6d7f748d-d041-8638-aee0-9f7507ecc134`
+path `page` · uuid `35dc5f33-4f1c-88b5-a005-f78765dc3a60` · diamond `6bd892af-b9f0-8fc8-ab03-8344ed85e813`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web · exports page · escapes —
-links `34/34` · folded `1` · bonds in `5` out `5`
+links `34/34` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·principle·stat · ← cohort·landmarks·memories·principle·stat
+neighbors → about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web · ← about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web
 analysis —
 law page is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `337208b7-c542-808d-b412-5719cbd9f332` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b6fc8d7-ac28-877e-87bb-51ff86866116` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # command
 
-path `payload/command` · uuid `5b279972-c7eb-8269-b0fa-f56ea10676c0` · diamond `03a1b414-afcb-8d64-8691-cfe28674ad57`
+path `payload/command` · uuid `5b279972-c7eb-8269-b0fa-f56ea10676c0` · diamond `4569a3ac-82a0-8a1b-b22b-c0bd214b5901`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·function · escapes —
-links `11/11` · folded `1` · bonds in `20` out `20`
+links `11/11` · folded `1` · bonds in `21` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·action·all·copyright·equals·features·fertility·id·international·mens·pipelines·platform·researcher·response·salon·similar·swatch·tenant·text · ← access·accounting·action·all·copyright·equals·features·fertility·id·international·mens·pipelines·platform·researcher·response·salon·similar·swatch·tenant·text
+neighbors → answer·collapse·concatenate·deploy·dry·generate·karma·law·law·merge·merge·migrate·name·payload·question·relocate·self·sequence·society·step·train·uuid·workflow · ← answer·collapse·concatenate·deploy·dry·generate·karma·law·merge·migrate·name·payload·question·relocate·self·sequence·society·step·train·uuid·workflow
 analysis —
 law the Payload CLI command set, folded — each command is a name (name ≡ path ≡ uuid), the set folds to one root by the merge. Both sides encoded: every reversible command pairs with its inverse (migrate ↔ migrate:down, fresh ↔ reset); the generators are forward-only, their inverse the config they read.
 
 ---
 
-<sub>content-uuid `6b40309a-a2b5-8132-b3d8-745dba77b649` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `52649034-3f95-8199-976e-a07686d91ca5` · `pnpm readme` · `pnpm computed:check`</sub>

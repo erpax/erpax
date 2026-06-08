@@ -25,7 +25,29 @@
 
 - partition `dashboard` · sub-root `e5bfb39e-468f-86bb-8414-ffe0ae176ff9`
 - bond degree `43` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `ISO-27002` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `MCP` · catalogue
+- `NIST-INCITS-359-2012` · catalogue
+
+## analytics
+
+- bond degree `43` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
@@ -41,4 +63,4 @@
 
 ---
 
-<sub>content-uuid `2759b761-9da0-8edb-8915-73e7f73a994e` · framed by typography partition `dashboard` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59d0f1f1-f949-888a-919f-2a41c64e54dd` · framed by typography partition `dashboard` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

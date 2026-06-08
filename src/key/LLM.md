@@ -3,15 +3,15 @@
 
 # key
 
-path `key` · uuid `04e7333f-3be1-8a56-9c13-8b937b48df7a` · diamond `4011338f-84fa-8927-9f23-08acb48942ea`
+path `key` · uuid `39f2f300-12eb-817c-8167-0fd802a83b46` · diamond `1c7c51f9-4a90-8b44-8933-e312b0fc6691`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports ch·collapse·law·merge·musical·sti · exports key · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `12` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → ch·cloning·collapse·communication·entanglement·law·law·merge·merge·musical·quantum·sti·tamper·uuid · ← ch·cloning·collapse·communication·entanglement·law·merge·musical·quantum·sti·tamper·uuid
+analysis —
 law key is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2a60b3a6-0810-8f3f-8443-37a6b5ccafe7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `57c7bda0-9d74-8e3b-af51-901b3655cbfd` · `pnpm readme` · `pnpm computed:check`</sub>

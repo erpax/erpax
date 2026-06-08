@@ -3,15 +3,15 @@
 
 # referenced
 
-path `referenced` · uuid `f2ddf232-6e4d-8fde-8188-8bba6ad65b4f` · diamond `6315fb91-2fc1-827c-baf7-c217f3d5e1af`
+path `referenced` · uuid `f2ddf232-6e4d-8fde-8188-8bba6ad65b4f` · diamond `3c63ca0b-f837-85a4-a292-7bc25006e9ab`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports referenced · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·communicate·landmarks·memories·stat · ← cohort·communicate·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law referenced is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `09b6dd8a-866c-8440-afbd-62abcc4b30dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27af7ef1-7155-82af-9875-02a8690856b9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # ownership
 
-path `ownership` · uuid `6136c334-e519-88de-baa3-db352cbdccfc` · diamond `0774139d-a866-8f29-ab52-482b690792bf`
+path `ownership` · uuid `6136c334-e519-88de-baa3-db352cbdccfc` · diamond `019e3a83-0581-8a2b-bf98-d1f3353414cd`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·funding·info·law·merge·sti · exports ownership · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks · ← create·landmarks
+neighbors → collapse·funding·info·law·merge·sti · ← collapse·funding·info·law·merge·sti
 analysis —
 law ownership is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1ee63d2b-53a2-8f0f-844d-b3445e5b9ab2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `522434df-0ae4-8d62-afd8-7cae3f457a0c` · `pnpm readme` · `pnpm computed:check`</sub>

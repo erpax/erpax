@@ -3,15 +3,15 @@
 
 # means
 
-path `means` · uuid `3579b88d-f0d7-8fd4-b67f-aada837f1270` · diamond `a7dfde6d-010e-8e48-b149-def97a63c235`
+path `means` · uuid `3579b88d-f0d7-8fd4-b67f-aada837f1270` · diamond `74cb542c-1887-84cc-b95b-f206190f6388`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports means · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → interference·landmarks·transactions · ← interference·landmarks·transactions
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law means is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `37c488fa-c4c1-8436-865f-88b3044564db` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ee507dd-4105-88f0-ae2b-1f0bca97899d` · `pnpm readme` · `pnpm computed:check`</sub>

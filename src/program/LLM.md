@@ -3,15 +3,15 @@
 
 # program
 
-path `program` · uuid `fa7659cc-85d9-8b01-8028-f81bce674146` · diamond `b6e889ad-2d3f-8b04-a80a-fa0e5ee01fbe`
+path `program` · uuid `fa7659cc-85d9-8b01-8028-f81bce674146` · diamond `f9a5503a-a71e-8c8e-a69e-763c62c76882`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports based·educational·has·law·member·membership·mode·name·occupational·prerequisites·tier·type·used·work · exports program · escapes —
-links `14/14` · folded `1` · bonds in `5` out `5`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·tenant · ← cohort·landmarks·memories·stat·tenant
+neighbors → based·educational·has·law·member·membership·mode·name·occupational·prerequisites·tier·type·used·work · ← based·educational·has·law·member·membership·mode·name·occupational·prerequisites·tier·type·used·work
 analysis —
 law program is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5d4628cc-cde5-8cae-bfb6-8d8793add817` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1dea370e-4b1e-8ffe-b25c-f982c782b630` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # instance
 
-path `instance` · uuid `70231d13-3d70-8676-9254-c9a6fd715ff2` · diamond `6b8512eb-2ff0-8b8c-85ea-2edf2383c794`
+path `instance` · uuid `70231d13-3d70-8676-9254-c9a6fd715ff2` · diamond `9b942030-d63f-8039-961d-dd8281706d90`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·course·has·law·merge·sti · exports instance · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·course·has·law·merge·sti · ← collapse·course·has·law·merge·sti
 analysis —
 law instance is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0dd57ad9-735d-89e7-ba2a-ce822e1389b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5f27d0f6-c341-8f8e-889a-8ed2bc7214c9` · `pnpm readme` · `pnpm computed:check`</sub>

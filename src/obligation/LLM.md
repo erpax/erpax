@@ -3,15 +3,15 @@
 
 # obligation
 
-path `obligation` · uuid `2b63555d-7978-8248-956a-e3f78b5ba9ed` · diamond `14cdf2a1-64a1-830f-a727-6fd5db2ca786`
+path `obligation` · uuid `2b63555d-7978-8248-956a-e3f78b5ba9ed` · diamond `1d759bd5-8d1f-8a09-a130-821f59c6153a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·law·obligations · exports obligation · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → accounting·balance·law·obligations · ← accounting·balance·law·obligations
 analysis —
 law an obligation is a debt owed under an arrangement — it discharges only when the value it commits is actually transferred or performed.
 
 ---
 
-<sub>content-uuid `0fe57cd5-c7f8-8888-80e4-45ebff47c610` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `37b91c48-1350-8b0a-aebf-6b1f337babff` · `pnpm readme` · `pnpm computed:check`</sub>

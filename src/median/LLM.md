@@ -3,15 +3,15 @@
 
 # median
 
-path `median` · uuid `df5fb9c1-29f4-87f5-ab48-722930cabde2` · diamond `743f1f12-faf8-842a-8816-ed1d54a3b943`
+path `median` · uuid `df5fb9c1-29f4-87f5-ab48-722930cabde2` · diamond `bc3fb384-0e82-80bb-8e6b-3d0e50e28611`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports median · escapes —
-links `2/2` · folded `1` · bonds in `9` out `9`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dx·landmarks·memories·notice·plays·product·stat·unspecified · ← cohort·dx·landmarks·memories·notice·plays·product·stat·unspecified
+neighbors → law·thing · ← law·thing
 analysis —
 law median is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ba0c1cc5-78d9-80e2-8a75-22a3d51b3141` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da5ef2c7-96cb-89c5-9c58-95ef8340d338` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # offered
 
-path `offered` · uuid `a4a5a221-9920-8d2d-bbf2-8883dee726fb` · diamond `89fbf17e-5151-8586-8868-d1cd0adf108f`
+path `offered` · uuid `a4a5a221-9920-8d2d-bbf2-8883dee726fb` · diamond `b006d822-502b-89ba-8aa0-d94c1a341e74`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports item·law·returns·store · exports offered · escapes —
-links `4/4` · folded `1` · bonds in `15` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·angel·befriend·corrects·details·founder·id·landmarks·liquor·list·llm·memories·memory·progression·spouse · ← 9110·angel·befriend·corrects·details·founder·id·landmarks·liquor·list·llm·memories·memory·progression·spouse
+neighbors → item·law·returns·store · ← item·law·returns·store
 analysis —
 law offered is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `477acc94-9347-8bf3-b29a-0d54e6ad8d62` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `40e16f39-106d-8533-af85-3dbe0382a812` · `pnpm readme` · `pnpm computed:check`</sub>

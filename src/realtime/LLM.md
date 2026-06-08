@@ -3,15 +3,15 @@
 
 # realtime
 
-path `realtime` · uuid `b9dfc937-39b0-8a96-b0ad-143208095392` · diamond `8838c88b-0c44-84aa-bf97-0f2980de34aa`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `realtime` · uuid `b9dfc937-39b0-8a96-b0ad-143208095392` · diamond `5009c2cb-35dc-8bee-9fd5-6ff1526ee2a4`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports const · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
+links `11/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bathrooms·cause·landmarks · ← bathrooms·cause·landmarks
+neighbors → event·live·log·memory·number·pi·religion·sequence·stream·topography·translator·uuid · ← event·live·log·memory·number·pi·religion·sequence·stream·topography·translator·uuid
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e1c916ed-d9ec-8473-baff-927aa695c932` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b95d0141-b22f-8c9c-89ba-de416fd395f2` · `pnpm readme` · `pnpm computed:check`</sub>

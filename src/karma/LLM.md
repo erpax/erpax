@@ -3,15 +3,15 @@
 
 # karma
 
-path `karma` · uuid `e70d8816-0afe-80d9-8354-fe381dc4e796` · diamond `1c868db8-bad7-8c03-8936-4b296d31649f`
+path `karma` · uuid `e70d8816-0afe-80d9-8354-fe381dc4e796` · diamond `fd107fb3-d9da-8e91-97d1-8b06f5b08e75`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/entry · exports const · escapes —
-links `19/19` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·cycle·landmarks·memories·stat·utterance · ← cohort·cycle·landmarks·memories·stat·utterance
+links `19/19` · folded `1` · bonds in `33` out `34`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·dna·entanglement·entropy·entropy·entry·expense·fear·heart·hinduism·jainism·karma·law·lineage·love·mercy·merge·peace·quantum·quantum·religion·tag·tamper·wallet·zoroastrianism · ← accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·entanglement·entropy·entry·expense·fear·fear·heart·hinduism·jainism·karma·law·lineage·love·love·mercy·merge·peace·quantum·religion·tag·tamper·wallet·zoroastrianism
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `657fbd20-0555-8fd8-9269-6b91c813ffdc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c81fbd31-d73d-897e-bb3a-4d90b2e229ea` · `pnpm readme` · `pnpm computed:check`</sub>

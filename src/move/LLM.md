@@ -3,15 +3,15 @@
 
 # move
 
-path `move` · uuid `4df81a1d-9b92-8043-baf9-4aedb93fa74e` · diamond `2dc5d709-a740-8d0f-97f3-7e8b4a7db277`
+path `move` · uuid `4df81a1d-9b92-8043-baf9-4aedb93fa74e` · diamond `8566abff-ddad-8790-99bf-559c00a9760d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports move · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law a move changes only the location of a thing — the thing itself is conserved, never created or destroyed by the transit.
 
 ---
 
-<sub>content-uuid `3bc551dc-2d0a-8c35-a9d7-c6102c5f8084` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f55a3e7-2880-8c59-8b99-13acc422c211` · `pnpm readme` · `pnpm computed:check`</sub>

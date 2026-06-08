@@ -3,15 +3,15 @@
 
 # marketing
 
-path `marketing` · uuid `5494e8f5-d321-8da6-a8a9-99e80e369d49` · diamond `40143429-1c11-8a83-8e3b-52a5ad9b3eee`
+path `marketing` · uuid `5494e8f5-d321-8da6-a8a9-99e80e369d49` · diamond `00cb125e-a94e-86dd-af79-8fcad72451ae`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·health·law·merge·plan·sti·url · exports marketing · escapes —
-links `7/7` · folded `1` · bonds in `7` out `7`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → debit·disagree·events·film·interactive·landmarks·minutes · ← debit·disagree·events·film·interactive·landmarks·minutes
+neighbors → collapse·health·law·merge·plan·seo·sti·url · ← collapse·health·law·merge·plan·seo·sti·url
 analysis —
 law marketing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9b168e2e-8eed-8831-a4dc-4d23666929b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9596f18-3368-859a-9ff3-df29894f860f` · `pnpm readme` · `pnpm computed:check`</sub>

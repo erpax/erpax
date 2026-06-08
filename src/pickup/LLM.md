@@ -3,15 +3,15 @@
 
 # pickup
 
-path `pickup` · uuid `8f0ae9bb-048e-8ca8-b752-3be1a2aeb08f` · diamond `0cf6934e-7f63-8581-8576-12947383c945`
+path `pickup` · uuid `8f0ae9bb-048e-8ca8-b752-3be1a2aeb08f` · diamond `b4bb0bb1-3ff1-82dd-8e33-652d2dff4b9b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agriculture·carriers·commerce·cost·distribution·friction·market·packs·retention·share · exports pickup · escapes —
-links `18/18` · folded `1` · bonds in `26` out `26`
+links `18/18` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·breakfast·crisis·crop·definition·feed·friction·getting·hamiltonian·hardcover·horo·landmarks·manufacturing·masthead·plus·promise·sandbox·screen·seat·sell·soil·syllabus·thesis·training·vibration·worth · ← agriculture·breakfast·crisis·crop·definition·feed·friction·getting·hamiltonian·hardcover·horo·landmarks·manufacturing·masthead·plus·promise·sandbox·screen·seat·sell·soil·syllabus·thesis·training·vibration·worth
+neighbors → agriculture·carriers·commerce·cost·distribution·friction·location·market·packs·retention·share · ← agriculture·carriers·commerce·cost·distribution·friction·location·market·packs·retention·share
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `149a1076-819f-88c8-b3a3-f5fdf987d789` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45521523-e5cb-898a-baad-6ac760d010ec` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports recruiting · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → id·recourse·recover·sell · ← id·recourse·recover·sell
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law recruiting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `93373bcb-5ddf-8b3a-8d8c-0b3a732c9d15` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06f693de-1bd6-8817-9027-4c4615da4806` · `pnpm readme` · `pnpm computed:check`</sub>

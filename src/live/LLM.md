@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports blog·broadcast·collapse·law·merge·posting·sti·update · exports live · escapes —
 links `8/8` · folded `1` · bonds in `14` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·blocks·brewery·cohort·dietary·honorific·identification·landmarks·landmarks·marine·mention·positive·rank·stat·unemployment · ← aura·blocks·brewery·cohort·dietary·honorific·identification·landmarks·marine·memories·positive·rank·stat·unemployment
+neighbors → aura·blog·broadcast·collapse·digit·horo·law·law·merge·posting·realtime·signal·society·sti·update · ← aura·blog·broadcast·collapse·digit·horo·law·merge·posting·realtime·signal·society·sti·update
 analysis aura
 law live is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9c97e045-b761-84eb-af94-fee0f652f582` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f508e4fb-1c55-8a20-902a-381de01b82b4` · `pnpm readme` · `pnpm computed:check`</sub>

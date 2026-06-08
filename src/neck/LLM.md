@@ -3,15 +3,15 @@
 
 # neck
 
-path `neck` · uuid `2d115423-a319-8bfb-882f-d7a0a6cf8829` · diamond `a380ec75-6e14-864e-a685-967dd91bba26`
+path `neck` · uuid `2d115423-a319-8bfb-882f-d7a0a6cf8829` · diamond `5480b488-2862-807d-bb96-e632ddcde25c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports neck · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accepting·cohort·landmarks·memories·past·stat · ← accepting·cohort·landmarks·memories·past·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law neck is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `41ed72d6-a68c-8cbc-b8c5-c88ba93496af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `64b00388-5967-8bd4-bd80-a4b929065730` · `pnpm readme` · `pnpm computed:check`</sub>

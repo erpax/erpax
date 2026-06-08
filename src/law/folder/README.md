@@ -2,7 +2,7 @@
 
 # folder
 
-> atom `law/folder` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `law/folder` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `law` · sub-root `d4d619f5-9b94-8720-9479-28e77cc05830`
-- bond degree `23` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `31` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `f9db8668-cfeb-8785-8105-c034e401e8ee`
-- bonds in `6` · out `6`
+- uuid `a8ed3933-f54f-80bb-8576-ded34bee5263`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `cdd18a40-b322-8be3-921c-427bbec9c082` · framed by typography partition `law` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13195cf2-4864-811b-bfa9-4614e576f05a` · framed by typography partition `law` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

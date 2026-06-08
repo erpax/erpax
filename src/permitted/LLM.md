@@ -3,15 +3,15 @@
 
 # permitted
 
-path `permitted` · uuid `d01b11bb-398e-81aa-b57d-530bd664e619` · diamond `a9a34594-840a-8992-afb9-acd0466e10a8`
+path `permitted` · uuid `d01b11bb-398e-81aa-b57d-530bd664e619` · diamond `3dfeefe6-dcac-8b62-8fde-9bd94466eb7f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·usage · exports permitted · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → catalog·has·landmarks·physiological · ← catalog·has·landmarks·physiological
+neighbors → collapse·law·merge·sti·usage · ← collapse·law·merge·sti·usage
 analysis —
 law permitted is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d006a5e8-1cc5-832c-9e3c-0e55564a2381` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `40c7510a-7321-8c56-89a0-512d5c812133` · `pnpm readme` · `pnpm computed:check`</sub>

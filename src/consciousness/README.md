@@ -25,7 +25,7 @@
 
 - partition `consciousness` · sub-root `d1085374-7ad5-87b4-9aef-692d85408886`
 - bond degree `55` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -56,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `fbba1c2e-027a-86b6-9f12-cec327962a27` · framed by typography partition `consciousness` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `762d08c8-e816-800b-993e-074dd9d3d977` · framed by typography partition `consciousness` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>

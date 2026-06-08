@@ -3,15 +3,15 @@
 
 # joint
 
-path `joint` · uuid `d4c9d168-8935-8ff4-bcb4-19372d6c2a0b` · diamond `48245e87-2f40-8e88-849e-b79337df0490`
+path `joint` · uuid `d4c9d168-8935-8ff4-bcb4-19372d6c2a0b` · diamond `43415553-7d8a-83ba-bb4c-2f3fdef48b5b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports joint · escapes —
-links `2/2` · folded `1` · bonds in `22` out `25`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agent·angel·balance·comedy·corrects·day·district·district·enrolling·entertainment·entertainment·entity·exif·fat·fax·joint·landmarks·lifestyle·memories·pats·qualification·qualification·suspended·symbol · ← accounting·agent·angel·balance·comedy·corrects·day·district·enrolling·entertainment·entity·exif·fat·fax·joint·landmarks·lifestyle·memories·pats·qualification·suspended·symbol
+neighbors → law·thing · ← law·thing
 analysis —
 law joint is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95944c88-8f96-809c-8c06-4800f78f923b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10f46f13-1951-8fbb-baa6-ea9ba573068c` · `pnpm readme` · `pnpm computed:check`</sub>

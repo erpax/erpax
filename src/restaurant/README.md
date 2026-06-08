@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `restaurant` · sub-root `1e45cc11-569d-8e6d-957e-8238e4e1b10d`
-- bond degree `13` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `11` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `1e45cc11-569d-8e6d-957e-8238e4e1b10d`
-- bonds in `4` · out `4`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3a3ea30e-2674-81e7-803b-d5c6ef2728b3` · framed by typography partition `restaurant` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `15c603a7-2365-8922-81eb-3f160d937b17` · framed by typography partition `restaurant` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

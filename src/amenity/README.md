@@ -23,7 +23,7 @@
 
 - partition `amenity` · sub-root `21d42c03-dd99-8867-8d4f-b0c1e336e166`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `59b44cbb-d164-89f0-b660-40613ecedf8a` · framed by typography partition `amenity` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f4a95402-91e2-898a-bf38-178010e770f1` · framed by typography partition `amenity` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

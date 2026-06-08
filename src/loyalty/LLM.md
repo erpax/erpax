@@ -3,15 +3,15 @@
 
 # loyalty
 
-path `loyalty` · uuid `cfa1b83b-b5db-88e9-a34b-bd0fcf74ae88` · diamond `97d39ad7-a406-869e-a63d-90f336eecd74`
+path `loyalty` · uuid `cfa1b83b-b5db-88e9-a34b-bd0fcf74ae88` · diamond `5c4a828e-2035-8f23-ae38-9352929bf158`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports loyalty · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·entanglement·landmarks·memories·owned·stat · ← cohort·contained·entanglement·landmarks·memories·owned·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law loyalty is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `48b8bdfd-7b64-8b9a-99f8-2fcb4bf21cc6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d4de88b-ae3f-8940-b551-2bc1737dcc4b` · `pnpm readme` · `pnpm computed:check`</sub>

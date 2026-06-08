@@ -3,15 +3,15 @@
 
 # normal
 
-path `normal` · uuid `3ca77cc3-8ea0-8fbf-a74c-e6fbe7c7cc9a` · diamond `e00421e6-4dad-8e86-a330-daf50500f88e`
+path `normal` · uuid `3ca77cc3-8ea0-8fbf-a74c-e6fbe7c7cc9a` · diamond `0a7de902-4041-80cb-8b63-45c3721cf59d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·range·sti · exports normal · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·range·sti · ← collapse·law·merge·range·sti
 analysis —
 law normal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c3b800fb-7a06-89cf-be3e-852fd54858d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `454ddfb9-9410-8297-865a-03665f8d5c08` · `pnpm readme` · `pnpm computed:check`</sub>

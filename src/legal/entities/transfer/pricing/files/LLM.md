@@ -3,15 +3,15 @@
 
 # files
 
-path `legal/entities/transfer/pricing/files` · uuid `d2d0ac0f-32e8-8f85-be9b-e4456b2ae600` · diamond `94558784-1381-8f78-bab4-723e11c324ec`
+path `legal/entities/transfer/pricing/files` · uuid `d2d0ac0f-32e8-8f85-be9b-e4456b2ae600` · diamond `4f5bbea7-5cd0-8491-a751-c227c770b98f`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/oecd/tpg·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·layout·material·memories·midpoint·stat·urologic · ← cohort·landmarks·layout·material·memories·midpoint·stat·urologic
+neighbors → accounting·entities·identity·proof·standard·transaction · ← accounting·entities·identity·proof·standard·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `4ab77af1-2cb9-8e4f-9c91-08ac00a6b47e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f308dfe3-386f-85c3-97ce-1274338bbade` · `pnpm readme` · `pnpm computed:check`</sub>

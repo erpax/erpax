@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `iosplatform` · sub-root `1c3ee1c5-c15e-8c62-af59-15fd52d2214d`
-- bond degree `6` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `1c3ee1c5-c15e-8c62-af59-15fd52d2214d`
-- bonds in `1` · out `1`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d5671ad8-f455-8f2f-aa2c-8f1bda481da7` · framed by typography partition `iosplatform` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ed2145f-00b8-843f-b346-472c6fa11e2a` · framed by typography partition `iosplatform` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

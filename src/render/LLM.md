@@ -3,15 +3,15 @@
 
 # render
 
-path `render` · uuid `4dc48e2d-7800-8bed-a6b5-8fbe71fd2b6d` · diamond `cdcdd433-c9bc-851e-b58d-22065c3dd054`
+path `render` · uuid `4dc48e2d-7800-8bed-a6b5-8fbe71fd2b6d` · diamond `9bb26a4d-ef28-832a-8964-707253319ba5`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/pixel·@/rodin·@/signal·@/uuid/matrix · exports const·function·interface · escapes —
-links `18/18` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·renal·terminals · ← landmarks·renal·terminals
+links `18/18` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·atom·aura·color·component·digit·interactive·law·pixel·rodin·signal·ui·uuid · ← analog·atom·aura·color·component·digit·interactive·law·pixel·rodin·signal·ui·uuid
 analysis aura
 law colour, sound and vibration are three projections of one digit, so they can never disagree — the render is a single identity seen, heard AND felt; change one channel and you have changed the content, hence all three. To render fully is to read the whole sensory identity off the uuid, not to compose three separate looks.
 
 ---
 
-<sub>content-uuid `9bf2726e-96af-80a9-86f0-070d3fbaa2b6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b6a89759-7ff6-8433-b78f-c06177fbb20b` · `pnpm readme` · `pnpm computed:check`</sub>

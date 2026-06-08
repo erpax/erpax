@@ -4,7 +4,7 @@
 # cost
 
 path `beyond/cost` · uuid `806c15e6-dc68-8594-93cb-076001eef221` · diamond `f3b38283-8835-8a1d-8c38-31efd377fe62`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types · exports function · escapes —
 links `5/5` · folded `1` · bonds in `151` out `150`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every step has a price; spend is conserved against a tenant cap and the step
 
 ---
 
-<sub>content-uuid `7ad322cc-07e4-8986-a654-e3bc25b36131` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c140f89-87fc-80eb-a182-36edb31f50d5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # practices
 
-path `practices` · uuid `f43db4f2-36a8-88fc-8fb7-77cfeb581c35` · diamond `094134ac-fcbc-8558-bcd6-81f749721598`
+path `practices` · uuid `f43db4f2-36a8-88fc-8fb7-77cfeb581c35` · diamond `89c9bd7e-9fb7-8672-b0a1-66c6ff71d376`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports practices · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·practice·thing · ← law·practice·thing
 analysis —
 law practices is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c34ad807-63fd-8fb9-aa68-0ae7508ee866` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `adb8d7e2-1846-8107-bdbb-aba1bcef15c0` · `pnpm readme` · `pnpm computed:check`</sub>

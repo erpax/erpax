@@ -3,15 +3,15 @@
 
 # max
 
-path `max` · uuid `e43ef302-a45c-8dbf-b8f9-900763f8cdd9` · diamond `83c608ee-645f-8e89-bae0-f744595d5f28`
+path `max` · uuid `e43ef302-a45c-8dbf-b8f9-900763f8cdd9` · diamond `3d3e155a-69c4-8c8c-9dee-f8d05e8e772a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports age·child·collapse·efficiency·energy·law·length·merge·price·required·scale·sti·suggested·value · exports max · escapes —
-links `14/14` · folded `1` · bonds in `48` out `48`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·assets·based·bio·biomagnetism·biometric·cache·candidate·coffee·comment·conventional·crisis·cup·definition·diffusion·emergence·esr·feed·fertility·findings·government·grantee·height·id·issue·keyword·knows·landmarks·maintainer·masthead·menu·notice·policy·position·quote·rv·saturday·seat·soil·spouse·territory·test·thing·tissue·translate·urologic·warranty·worth · ← agriculture·assets·based·bio·biomagnetism·biometric·cache·candidate·coffee·comment·conventional·crisis·cup·definition·diffusion·emergence·esr·feed·fertility·findings·government·grantee·height·id·issue·keyword·knows·landmarks·maintainer·masthead·menu·notice·policy·position·quote·rv·saturday·seat·soil·spouse·territory·test·thing·tissue·translate·urologic·warranty·worth
+neighbors → age·child·collapse·efficiency·energy·law·length·merge·price·required·scale·sti·suggested·value · ← age·child·collapse·efficiency·energy·law·length·merge·price·required·scale·sti·suggested·value
 analysis —
 law max is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b65f4941-803b-87c9-b3b8-61cd0a88e2d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b68cd9a4-7548-8362-83d7-07c8bb4f4ff8` · `pnpm readme` · `pnpm computed:check`</sub>

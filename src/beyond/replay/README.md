@@ -2,7 +2,7 @@
 
 # replay
 
-> atom `beyond/replay` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `beyond/replay` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
 - bond degree `15` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -39,7 +39,7 @@
 
 ## analytics
 
-- bond degree `15` · sealed `1` · horo `1`
+- bond degree `15` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
@@ -53,8 +53,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c8fb6b34-f4f2-8081-b5ef-0c617e02d65e` · framed by typography partition `beyond` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `70210258-b6fd-86d1-9736-47b39b5a4b9f` · framed by typography partition `beyond` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

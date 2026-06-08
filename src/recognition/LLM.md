@@ -3,15 +3,15 @@
 
 # recognition
 
-path `recognition` · uuid `9568da8a-7c6e-860d-a93a-379c1f266e08` · diamond `7a377f0a-2030-8168-81c2-1064bff3c573`
+path `recognition` · uuid `9568da8a-7c6e-860d-a93a-379c1f266e08` · diamond `84147810-7a0e-80fd-9f5a-6cde5e08db7b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accrual·balance·customers·deferral·journal·law · exports recognition · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closing·landmarks·terminals · ← closing·landmarks·terminals
+neighbors → accrual·agriculture·balance·deferral·entries·harvest·law·performances·prepaid·share · ← accrual·agriculture·balance·deferral·entries·harvest·law·performances·prepaid·share
 analysis —
 law recognition is the gate for when an asset, liability, revenue, or expense enters the financial statements — satisfy the framework's criteria and it is recorded, not before.
 
 ---
 
-<sub>content-uuid `976765f3-8fc8-81c2-9ba8-6605a00cfd4b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c8d2ac7-b21c-8568-a716-2fedc21061e2` · `pnpm readme` · `pnpm computed:check`</sub>

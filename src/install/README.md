@@ -23,7 +23,7 @@
 
 - partition `install` · sub-root `7b754096-8c40-86a7-984e-a48b1ab2aa01`
 - bond degree `19` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `66114374-aa6a-8961-9248-5fee82ab1dab` · framed by typography partition `install` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2f0f929e-e035-84c6-94bc-8a139e441ff7` · framed by typography partition `install` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

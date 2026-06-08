@@ -3,15 +3,15 @@
 
 # postcode
 
-path `postcode` · uuid `47516369-7adb-8dc5-948c-2f858ed2aeb1` · diamond `329d31ea-1160-8b6b-a042-801d09586ff3`
+path `postcode` · uuid `47516369-7adb-8dc5-948c-2f858ed2aeb1` · diamond `7d7fde9c-190b-85fd-ae70-90be48d7d4ca`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports postcode · escapes —
-links `4/4` · folded `1` · bonds in `18` out `18`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·anchor·awareness·cohort·corrects·diet·dropoff·high·id·instrument·landmarks·manufacturing·marine·memories·natural·progression·reimbursement·wp · ← age·anchor·awareness·cohort·corrects·diet·dropoff·high·id·instrument·landmarks·manufacturing·marine·memories·natural·progression·reimbursement·wp
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law postcode is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c41d7d27-0cd9-8d42-869c-913c6c019bec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1744f79-547a-8ee9-b12d-3af38961bf92` · `pnpm readme` · `pnpm computed:check`</sub>

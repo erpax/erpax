@@ -3,15 +3,15 @@
 
 # resume
 
-path `resume` · uuid `8b95483c-df38-8e31-8020-b4091fb8d426` · diamond `e1358e07-59b8-8e47-9899-f183ea6474b7`
+path `resume` · uuid `8b95483c-df38-8e31-8020-b4091fb8d426` · diamond `16a2c576-3519-8fad-a67b-31098d6b9591`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports resume · escapes —
-links `5/5` · folded `1` · bonds in `18` out `18`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accept·akashic·atom·audit·breakfast·config·depth·fat·fields·grant·hall·list·literature·memories·messages·progression·results·wellbeing · ← accept·akashic·atom·audit·breakfast·config·depth·fat·fields·grant·hall·list·literature·memories·messages·progression·results·wellbeing
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law resume is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `93c79e2e-d760-85fd-b97c-9b181b921a4c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fee85c11-9168-8ba6-96f4-6a410a37080d` · `pnpm readme` · `pnpm computed:check`</sub>

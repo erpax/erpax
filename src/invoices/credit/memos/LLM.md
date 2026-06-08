@@ -3,15 +3,15 @@
 
 # memos
 
-path `invoices/credit/memos` · uuid `6f223d31-3170-8474-a3bf-7e9d070699b1` · diamond `3787b292-42d5-83fa-8e28-f9c99b23793d`
+path `invoices/credit/memos` · uuid `6f223d31-3170-8474-a3bf-7e9d070699b1` · diamond `5ad18b5a-4b70-86ec-b07b-f3baf0a8423e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/utility · exports default · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `6/6` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·customers·memo·proof·refunds·tenants·transaction · ← accounting·customers·memo·proof·refunds·tenants·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `9397fa7e-0b1d-891c-8b59-a4397ef58db1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3f9c820-b1bd-8489-bdf9-2325bf7f8620` · `pnpm readme` · `pnpm computed:check`</sub>

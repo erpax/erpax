@@ -3,15 +3,15 @@
 
 # mortality
 
-path `mortality` · uuid `5ce4dd0a-5110-8dfd-9ead-dac9fb506c6c` · diamond `74de6aae-4870-8da6-823e-ba2fe49b2988`
+path `mortality` · uuid `5ce4dd0a-5110-8dfd-9ead-dac9fb506c6c` · diamond `1022f26d-5b65-816d-8fdd-8da206220809`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports animal·apiculture·aquaculture·biological·biomass·entry·forestry·health·law·livestock·rate·risk·scouting·yield · exports mortality · escapes —
-links `27/27` · folded `1` · bonds in `2` out `2`
+links `27/27` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → animal·apiculture·aquaculture·assets·biomass·entry·forestry·health·herd·law·livestock·rate·risk·scouting·yield · ← animal·apiculture·aquaculture·assets·biomass·entry·forestry·health·herd·law·livestock·rate·risk·scouting·yield
 analysis —
 law death-loss is the negative biological transformation — it writes the living asset down through P&L (distinct from price change) and de-recognizes it via a balanced [[entry]]; the loss twin of [[yield]], one atom across every living-production domain.
 
 ---
 
-<sub>content-uuid `81192ffa-7859-8b8d-aa94-e9e4093121be` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bad19512-23dc-8d59-9744-bcd71326305b` · `pnpm readme` · `pnpm computed:check`</sub>

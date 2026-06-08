@@ -3,15 +3,15 @@
 
 # record
 
-path `record` · uuid `3fb075db-2d98-8e00-9a9e-437b8aa16601` · diamond `827b9a57-466e-8b1a-84b5-ccdc16e85168`
+path `record` · uuid `3fb075db-2d98-8e00-9a9e-437b8aa16601` · diamond `2df1c825-09d9-86bd-bf18-95bba6d2cfa9`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports cdcpmd·collapse·label·law·merge·sti · exports record · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·recorded·unlimited · ← balance·landmarks·recorded·unlimited
+neighbors → cdcpmd·collapse·emr·label·law·merge·snapshot·sti · ← cdcpmd·collapse·emr·label·law·merge·snapshot·sti
 analysis —
 law record is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f0e32009-cbf4-868a-890e-f5f076622a67` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b0d5fb20-6299-8def-ad34-f4703dbeb383` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # revenue
 
-path `revenue` · uuid `46ce69fd-fd27-8ff0-8f98-a042f1ec0211` · diamond `bec56431-eafe-8d72-b97f-ea5053901498`
+path `revenue` · uuid `46ce69fd-fd27-8ff0-8f98-a042f1ec0211` · diamond `08fec1ad-61d1-8087-b8f5-e2c33d4b4886`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·contracts·currency·customers·deferredrevenue·invoices·law · exports revenue · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·churn·contracts·currency·deferredrevenue·enterprisebudget·forecast·invoices·law·obligations·yearly·yield · ← accounting·churn·contracts·currency·deferredrevenue·enterprisebudget·forecast·invoices·law·obligations·yearly·yield
 analysis —
 law revenue recognises only as performance obligations are satisfied — at a point in time or over time — with the remainder deferred (IFRS-15 / ASC-606).
 
 ---
 
-<sub>content-uuid `b8ca5144-0e78-8bd0-90d0-818ea98e1684` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e162d6ff-ef2c-816d-be54-6be8e9b712a8` · `pnpm readme` · `pnpm computed:check`</sub>

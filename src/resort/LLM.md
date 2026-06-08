@@ -3,15 +3,15 @@
 
 # resort
 
-path `resort` · uuid `858ec556-81c2-86cb-a965-327dc90da37d` · diamond `8f811862-56ef-8ef8-b1da-2a6708045b4c`
+path `resort` · uuid `858ec556-81c2-86cb-a965-327dc90da37d` · diamond `35c0b11d-86f1-8e54-b4ba-487c2bb40adb`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·ski · exports resort · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·feature·landmarks·memories·stat · ← cohort·feature·landmarks·memories·stat
+neighbors → law·ski · ← law·ski
 analysis —
 law resort is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3f917ce0-afdc-84c7-8370-a595fa074ed5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87084e35-7e78-8eb8-8cd7-52df8d674f03` · `pnpm readme` · `pnpm computed:check`</sub>

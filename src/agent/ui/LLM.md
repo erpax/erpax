@@ -4,7 +4,7 @@
 # ui
 
 path `agent/ui` · uuid `551fe44f-61a6-84df-ada7-440b52fe1499` · diamond `d7caa8d1-c821-892a-8fb0-533ccfb23f35`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/render·@/uuid/matrix·@/vitepress · exports function·interface · escapes —
 links `22/22` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a UI agent renders identity, never paints. Every atom has a UI computed from
 
 ---
 
-<sub>content-uuid `da3faf9c-2223-863c-b540-124631ca8bd0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `621bf913-af70-8c2d-9d31-69cafe276698` · `pnpm readme` · `pnpm computed:check`</sub>

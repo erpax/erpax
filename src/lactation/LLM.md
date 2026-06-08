@@ -3,15 +3,15 @@
 
 # lactation
 
-path `lactation` · uuid `b590a495-f82a-8c7f-8799-7340721c8693` · diamond `aa13c680-df25-8f29-909f-4cdbfa7be912`
+path `lactation` · uuid `b590a495-f82a-8c7f-8799-7340721c8693` · diamond `a38795d5-57f4-8ed1-9283-a879c38ca14b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports animal·biological·breed·grade·harvest·items·law·livestock·measure·season·withdrawal·yield · exports lactation · escapes —
-links `23/23` · folded `1` · bonds in `7` out `7`
+links `23/23` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → budgetvariance·cohort·herd·laboratory·landmarks·memories·stat · ← budgetvariance·cohort·herd·laboratory·landmarks·memories·stat
+neighbors → animal·assets·breed·grade·harvest·items·law·livestock·measure·season·withdrawal·yield · ← animal·assets·breed·grade·harvest·items·law·livestock·measure·season·withdrawal·yield
 analysis —
 law lactation is the per-animal dairy production phase between parturition and dry-off, and milk is the agricultural produce realized at each milking — the IAS-41 [[harvest]] event measured at fair-value-less-costs-to-sell.
 
 ---
 
-<sub>content-uuid `6d1608b7-e46d-8988-b0aa-432329c97680` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e01424c-3b6e-8eb1-9c38-af5a4588a214` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # rank
 
-path `rank` · uuid `34ba1952-84d1-8e60-bdc0-a7e56aeaf72c` · diamond `962337fa-05b1-859b-a511-a94ff4f9e01b`
+path `rank` · uuid `34ba1952-84d1-8e60-bdc0-a7e56aeaf72c` · diamond `293db0d9-ffbc-8e48-8bfd-02f938a6ce31`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·taxon · exports rank · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → consultant·euenergy·live·notice·quantum·request·sell·statistics·tinid · ← consultant·euenergy·live·notice·quantum·request·sell·statistics·tinid
+neighbors → collapse·engine·law·merge·optimization·sti·taxon · ← collapse·engine·law·merge·optimization·sti·taxon
 analysis —
 law rank is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `064f6534-bebd-885f-8910-298ea5d2a1e8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d5f8d1c9-e11d-8532-8ac1-cdd13a4c0983` · `pnpm readme` · `pnpm computed:check`</sub>

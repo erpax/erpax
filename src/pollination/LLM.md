@@ -3,15 +3,15 @@
 
 # pollination
 
-path `pollination` · uuid `378f1d8a-fb1c-8f77-bd9c-cddb44faa9d2` · diamond `4da45e0c-609d-80f8-ada6-a207e3fcaf84`
+path `pollination` · uuid `378f1d8a-fb1c-8f77-bd9c-cddb44faa9d2` · diamond `49be4618-9fa2-8696-bee6-409178fd2e87`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·harvest·law·maturity·planting·scouting·seed·tunnel·yield · exports pollination · escapes —
-links `21/21` · folded `1` · bonds in `15` out `15`
+links `21/21` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → allocation·colleagues·dropoff·founder·holographic·id·landmarks·lawful·memories·notification·reset·sections·see·spouse·star · ← allocation·colleagues·dropoff·founder·holographic·id·landmarks·lawful·memories·notification·reset·sections·see·spouse·star
+neighbors → agriculture·apiculture·crop·dormancy·harvest·law·maturity·planting·scouting·seed·tunnel·yield · ← agriculture·apiculture·crop·dormancy·harvest·law·maturity·planting·scouting·seed·tunnel·yield
 analysis —
 law pollination is the pollen transfer that sets fruit and seed — a [[yield]] prerequisite upstream of [[maturity]] for fruiting [[crop]]s, and an ecosystem service the farm must protect or provide.
 
 ---
 
-<sub>content-uuid `ff72148e-6482-8122-b419-2c3bcc4dc76c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c5986b6-11ec-823b-bed2-8a45fa70373e` · `pnpm readme` · `pnpm computed:check`</sub>

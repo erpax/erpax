@@ -4,7 +4,7 @@
 # beyond
 
 path `beyond` · uuid `76c8fe58-fec1-8ffc-b2f4-577e2d7140b1` · diamond `b70b900e-097a-814a-aed3-b3675f0c01b3`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/beyond/bitemporal·@/beyond/carbon·@/beyond/cost·@/beyond/erasure·@/beyond/explainability·@/beyond/pqc·@/beyond/provenance·@/beyond/replay·@/beyond/reversibility·@/beyond/types · exports AgentCapability·AiProvenance·BitemporalCoordinates·CarbonEstimate·CausalLink·Cipher·CostMetric·DEFAULT_DENY·Explanation·InverseEffect·KeyVault·PqcAlgorithm·PqcSignature·Provenance·ReplayRequest·ReplayResult·SealedRecord·TenantIsolationViolation·TenantScopedQuery·asOf·assertAgentCanCallTool·assertAgentCanRead·assertAgentCanWrite·assertAgentJurisdiction·autoExplain·checkTenantIsolation·declareAgentCapability·effectsHash·estimateCarbon·estimateMicroUsd·findAgentsWithoutCapability·getAgentCapability·getBudget·getCausalAncestry·getProvenance·getTenantCarbon·inverseOf·isAnnexIvCompliant·isApprovedPqc·isExplanationComplete·isFullyReversible·isHistoricalQuery·isReplayStable·listAgentCapabilities·open·provenanceUuid·recordAiInvocation·recordCarbon·recordCausalLink·recordCost·replayLeaf·seal·setBudget·shred·signPqc·tenantScopedFind·verifyPqc · escapes —
 links `18/18` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `8a9d887f-8fc3-886c-9d61-74b6d85ad3ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `90739666-865d-82f4-be05-81b0764b3f6a` · `pnpm readme` · `pnpm computed:check`</sub>

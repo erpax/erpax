@@ -3,15 +3,15 @@
 
 # password
 
-path `password` · uuid `a217e95d-362f-82be-a297-4e2db60e3d14` · diamond `1e06b680-8fd9-8bba-91c1-7d440036cc78`
+path `password` · uuid `a217e95d-362f-82be-a297-4e2db60e3d14` · diamond `6c1ce04a-7260-84f7-9e65-099bcdb56e18`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·reset·sti · exports password · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·quality·terminals · ← landmarks·quality·terminals
+neighbors → action·collapse·law·merge·reset·sti · ← action·collapse·law·merge·reset·sti
 analysis —
 law password is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ae521ba9-1b0c-8e8b-a57c-bdec7aba372a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27c3698a-079c-8c35-8903-01a025cb9bec` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # field
 
 path `base/accounting/field` · uuid `23770393-a143-8c85-adc5-86018040c085` · diamond `b1ab4b04-3a86-8a6b-b694-cd7de9df8763`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/config/regional-defaults · exports DEFAULT_CURRENCY·SUPPORTED_CURRENCIES·const·currencyOptions · escapes —
 links `6/6` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every recurring accounting field is built by one factory — currency is amo
 
 ---
 
-<sub>content-uuid `b9473bb5-5317-85bc-b021-49dca70eb498` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d99f3c86-e369-8b78-855a-f397806dfa93` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # paperback
 
-path `paperback` · uuid `e3b62d3e-eb39-83b5-bbb2-9e9ba948d2fa` · diamond `797aa6af-8204-8943-9913-018adafe9eb5`
+path `paperback` · uuid `e3b62d3e-eb39-83b5-bbb2-9e9ba948d2fa` · diamond `ce0fd7ae-f02a-8009-a7e7-90c4dfd755a9`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports paperback · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·extended·landmarks·memories·stat · ← cohort·extended·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law paperback is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c8072be6-4916-859d-b79f-41dd38d30886` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `98ac477e-d5e9-87fc-a313-de88af1726d6` · `pnpm readme` · `pnpm computed:check`</sub>

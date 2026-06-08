@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports instructor · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·thing · ← law·thing
 analysis —
 law instructor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `98c4e184-47e0-8e56-a9c9-042609ed8434` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1716e582-c292-8543-9c45-83794f2efac3` · `pnpm readme` · `pnpm computed:check`</sub>

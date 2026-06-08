@@ -3,15 +3,15 @@
 
 # lender
 
-path `lender` · uuid `a4687099-b1c8-82e8-8a52-ef71bae3bd33` · diamond `163e7283-8470-85f3-84ef-acd5fa1dd7e6`
+path `lender` · uuid `a4687099-b1c8-82e8-8a52-ef71bae3bd33` · diamond `4994c604-cd37-84bf-bf70-14ddc41ee1d0`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports lender · escapes —
-links `3/3` · folded `1` · bonds in `4` out `4`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → exam·landmarks·musical·surprisal · ← exam·landmarks·musical·surprisal
+neighbors → law·person·thing · ← law·person·thing
 analysis —
 law lender is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `93bb3622-5cf0-8ffd-b6b5-f45a987927eb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05c71905-74f0-853a-b1d3-02fae6bb05c9` · `pnpm readme` · `pnpm computed:check`</sub>

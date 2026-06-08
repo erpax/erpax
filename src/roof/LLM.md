@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·load·merge·sti · exports roof · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sculpture·stat · ← cohort·landmarks·memories·sculpture·stat
+neighbors → collapse·law·load·merge·sti · ← collapse·law·load·merge·sti
 analysis —
 law roof is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0fcebdf2-d482-8df5-95a5-d209abe417d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7759dd4-38f8-8ec6-b1b6-2701638d655f` · `pnpm readme` · `pnpm computed:check`</sub>

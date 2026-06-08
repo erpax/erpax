@@ -3,15 +3,15 @@
 
 # quote
 
-path `quote` · uuid `7a047d64-2983-89c6-9bec-a186243756b4` · diamond `615111ef-a7ef-8b2d-b730-031c7b047ca9`
+path `quote` · uuid `7a047d64-2983-89c6-9bec-a186243756b4` · diamond `982c42b2-798b-8300-b488-6e50e5586cff`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports quote · escapes —
-links `5/5` · folded `1` · bonds in `45` out `45`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·allocation·annual·aquaculture·biomagnetism·cache·candidate·coherence·company·conventional·crisis·cup·currencies·currency·disc·dropoff·esr·feed·fertility·findings·florist·government·holographic·id·interact·keyword·landmarks·lines·maintainer·max·monday·notice·pediatric·physiological·saturday·series·shannon·spa·specified·spouse·system·territory·tour·urologic·worth · ← agriculture·allocation·annual·aquaculture·biomagnetism·cache·candidate·coherence·company·conventional·crisis·cup·currencies·currency·disc·dropoff·esr·feed·fertility·findings·florist·government·holographic·id·interact·keyword·landmarks·lines·maintainer·max·monday·notice·pediatric·physiological·saturday·series·shannon·spa·specified·spouse·system·territory·tour·urologic·worth
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law quote is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `61323019-c864-8e99-9370-2ec2a673beda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c441a189-c786-81c5-8be1-ce95b10b490a` · `pnpm readme` · `pnpm computed:check`</sub>

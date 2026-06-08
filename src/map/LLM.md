@@ -3,15 +3,15 @@
 
 # map
 
-path `map` · uuid `03b8c1a2-5322-8aa6-bdb7-c6f44e081c00` · diamond `a2308453-c90d-8ec7-ae73-2c04183bce9a`
+path `map` · uuid `03b8c1a2-5322-8aa6-bdb7-c6f44e081c00` · diamond `3118c0a0-9664-8fc7-ae46-fd626dc89687`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports category·has·law·type · exports map · escapes —
-links `4/4` · folded `1` · bonds in `6` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·cohort·landmarks·memories·spacing·stat·tenant · ← cohort·landmarks·memories·spacing·stat·tenant
+neighbors → category·has·law·type · ← category·has·law·type
 analysis —
 law map is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `00cf4e36-5ea3-8ed0-b948-3906969bd3ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `946376af-eab1-81c8-bae8-0000cf1d1a3d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # primary
 
-path `primary` · uuid `ef40813f-c984-8a6c-a24d-bb76b47533fb` · diamond `227cd6b5-fbb9-8808-bf72-2c084e8249a8`
+path `primary` · uuid `ef40813f-c984-8a6c-a24d-bb76b47533fb` · diamond `31cbccb5-4a2b-8408-90ca-028c3e2677f0`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·image·law·merge·page·prevention·sti · exports primary · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·image·law·merge·page·prevention·sti · ← collapse·image·law·merge·page·prevention·sti
 analysis —
 law primary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cbc9090b-3a0e-801d-ac9b-a94b52acf441` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3639d9f9-70f5-8e73-963a-72f0ce2f3658` · `pnpm readme` · `pnpm computed:check`</sub>

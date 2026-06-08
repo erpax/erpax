@@ -3,15 +3,15 @@
 
 # requests
 
-path `maintenance/requests` · uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a` · diamond `20c3b670-5ca6-843c-8240-ad70b4fbac6c`
+path `maintenance/requests` · uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a` · diamond `13d6bd9b-8d4a-8013-a6ba-adc40a9908b7`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `27` out `26`
+links `8/8` · folded `1` · bonds in `16` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → backup·binding·carbohydrate·chat·conference·considerations·consortium·crest·departure·fertility·generator·iata·id·landmarks·marine·memories·notary·parody·pathophysiology·policy·recommendation·repair·roadmap·root·sign·suspended · ← backup·binding·carbohydrate·chat·conference·considerations·consortium·crest·departure·departure·fertility·generator·iata·id·landmarks·marine·memories·notary·parody·pathophysiology·policy·recommendation·repair·roadmap·root·sign·suspended
+neighbors → access·accounting·assets·employees·identity·identity·law·law·orders·proof·proof·properties·request·resources·shred·spaces·standard·standard·transaction·users · ← access·accounting·assets·employees·identity·law·orders·proof·properties·request·resources·shred·spaces·standard·transaction·users
 analysis —
 law a maintenance request is the FM service-ticket intake raised against a property/space/asset — triaged by SLA priority and promoted to a [[maintenance/work/orders]] work order for execution.
 
 ---
 
-<sub>content-uuid `155491a4-268b-8fb0-9dca-6bb9ff522304` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87dffca9-b8cb-8b9b-ab2d-dc64bb0be0b3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # playground
 
-path `playground` · uuid `068e687e-d443-81eb-a75e-9adb55a87742` · diamond `9649e14e-00a7-8e7e-a807-1cfd9f7791d5`
+path `playground` · uuid `068e687e-d443-81eb-a75e-9adb55a87742` · diamond `18e36827-8ce5-8e1b-8fc3-06b633b2166a`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·place · exports playground · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·place · ← law·place
 analysis —
 law playground is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4dea33c4-cb46-86d6-9267-694697d59cb5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd896f24-a1ef-8efd-a3f1-50123f4c46ff` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # interior
 
-path `interior` · uuid `f979bb91-5b47-8348-87aa-27957696d8fa` · diamond `3f5402ac-7431-82a1-b266-3504f3cfc6f7`
+path `interior` · uuid `f979bb91-5b47-8348-87aa-27957696d8fa` · diamond `d9b24ca1-e490-8541-8516-9cad783e4545`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·color·law·merge·sti·type·vehicle · exports interior · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → controls·findings·spouse · ← controls·findings·spouse
+neighbors → collapse·color·law·merge·sti·type·vehicle · ← collapse·color·law·merge·sti·type·vehicle
 analysis —
 law interior is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f6e00abc-cf28-83f6-bd35-81ae9451ad08` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee77b545-946b-8ff7-a43f-5a9a26a7fb0d` · `pnpm readme` · `pnpm computed:check`</sub>

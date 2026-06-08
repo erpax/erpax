@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti·url · exports install · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·inspection·landmarks·memories·reality·stat · ← cohort·inspection·landmarks·memories·reality·stat
+neighbors → action·collapse·law·merge·sti·url · ← action·collapse·law·merge·sti·url
 analysis —
 law install is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `138c1cd3-b225-8d3b-97e5-1104087e72f4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a513e3ff-a6c4-86ea-a38f-769c4ba16c93` · `pnpm readme` · `pnpm computed:check`</sub>

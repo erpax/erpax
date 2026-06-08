@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports plastic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·pixel·platform · ← balance·landmarks·pixel·platform
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law plastic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `023ac4b2-f2b8-8250-93c7-ab4de2533e99` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4bf7a974-2a77-8563-8c3e-23aba6ada4cf` · `pnpm readme` · `pnpm computed:check`</sub>

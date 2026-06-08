@@ -3,15 +3,15 @@
 
 # mode
 
-path `mode` · uuid `92a41e93-c4b4-8ac5-bb07-03733ce65eae` · diamond `4e467a35-0c96-8283-83a1-df5427fe86b2`
+path `mode` · uuid `92a41e93-c4b4-8ac5-bb07-03733ce65eae` · diamond `dcac7d14-6b5e-82f9-be19-319c5771f5d6`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports access·attendance·collapse·course·educational·enumeration·event·game·law·merge·play·program·sti·sufficient · exports mode · escapes —
-links `14/14` · folded `1` · bonds in `4` out `4`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → access·attendance·collapse·course·educational·enumeration·event·game·law·merge·play·program·sti·sufficient · ← access·attendance·collapse·course·educational·enumeration·event·game·law·merge·play·program·sti·sufficient
 analysis —
 law mode is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d0075da6-fde6-84b9-a270-4e31684ceea8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd8f130a-c4b4-8cdb-a6ad-2b1c47e279f6` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `bahai` · sub-root `e3b63286-3fbf-801b-aa1d-374c44cd05a1`
 - bond degree `47` · analysis neighbors `diamond`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `89beef91-e79e-8eac-9ec7-aebe941103d2` · framed by typography partition `bahai` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0d137445-b0f0-853e-ad60-37fde57c8082` · framed by typography partition `bahai` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

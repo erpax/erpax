@@ -3,15 +3,15 @@
 
 # quantum
 
-path `quantum` · uuid `470e3f69-ca90-82bf-af9a-ea99d797fda8` · diamond `c3a7444b-0814-81a3-805f-a6cd08927df2`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `quantum` · uuid `6eec8da2-af91-8b6e-aebb-9747b24e3caf` · diamond `3ad2cd1e-16e7-814c-b558-e375c60bb771`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/cost·@/digit·@/uuid/matrix · exports const·function · escapes —
-links `37/37` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agent·corrects·dietary·entertainment·landmarks·list·mcp·memories·rank·read·statistics·symbol·venue · ← agent·corrects·dietary·entertainment·landmarks·list·mcp·memories·rank·read·statistics·symbol·venue
-analysis aura·diamond·hallucination·purity
-law each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost.
+links `45/47` · folded `1` · bonds in `110` out `94`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·api·app·aura·balance·barrier·blockchain·boundary·brainstorm·breath·cache·calculator·chart·chat·communication·confirm·consciousness·consultant·consulting·cost·cross·decoherence·development·digit·dna·dust·entanglement·fear·fusion·gate·generate·graph·gravity·hallucination·hamiltonian·harmony·heart·hooks·humandesign·interference·karma·key·law·law·leap·linearity·links·love·marine·math·matrix·memory·merge·merge·particle·path·peace·photon·plasma·port·pqc·proof·purity·pwa·quantum·query·reactor·reality·recycle·research·resolve·rodin·schema·seal·security·singularity·society·spectrum·sql·star·superdense·superposition·surprisal·tamper·teleportation·testing·translate·translator·type·typography·uncertainty·uuid·vocabulary·wallet · ← accounting·accounting·api·app·aura·balance·barrier·blockchain·boundary·brainstorm·breath·cache·calculator·chart·chart·chat·chat·communication·communication·communication·confirm·consciousness·consultant·consulting·cost·cross·decoherence·development·development·development·digit·dna·dust·entanglement·entanglement·fear·fusion·fusion·gate·generate·graph·graph·gravity·hallucination·hamiltonian·harmony·heart·hooks·humandesign·interference·karma·karma·key·law·law·leap·linearity·links·love·marine·math·matrix·memory·memory·merge·particle·particle·path·peace·photon·plasma·port·pqc·proof·purity·pwa·quantum·query·reactor·reality·reality·recycle·research·resolve·rodin·schema·seal·security·singularity·society·spectrum·sql·sql·star·superdense·superposition·surprisal·tamper·teleportation·testing·translate·translator·translator·type·typography·uncertainty·uuid·vocabulary·wallet·wallet
+analysis aura
+law serverless IS the quantum host — Workers bindings superpose, invocations collapse to content-uuid, path+seal+binding entangle, and erpax on Cloudflare IS the existence proof (`proveServerlessQuantum` folds both facets to one uuid).
 
 ---
 
-<sub>content-uuid `495119d9-54e5-87aa-9948-fea8690eeade` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5efd3045-1d94-832a-9516-525f0f922e31` · `pnpm readme` · `pnpm computed:check`</sub>

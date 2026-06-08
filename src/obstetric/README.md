@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `obstetric` · sub-root `b7e9cc77-876a-8344-b3a1-740619678e4b`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `b7e9cc77-876a-8344-b3a1-740619678e4b`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6bf0a60d-a79f-8dd6-82fb-f698a7ce3cc3` · framed by typography partition `obstetric` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a37689f7-4526-88e4-b249-572af370f167` · framed by typography partition `obstetric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

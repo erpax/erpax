@@ -3,15 +3,15 @@
 
 # orders
 
-path `items/purchase/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `e0db6b7f-4d6e-8d1d-8ccc-6211f41c0a74`
+path `items/purchase/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `ccdfd946-e57e-831b-8349-9f9dff66ed42`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/chain/event/emitter·@/enforce/segregation/of/duty · exports default · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → batches·events·landmarks·returns·sha·snapshots·spouse·visit · ← batches·events·landmarks·returns·sha·snapshots·spouse·visit
+links `7/7` · folded `1` · bonds in `48` out `51`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·law·law·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances · ← accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances
 analysis —
 law a purchase order is the vendor purchase commitment and first leg of the three-way match (PO → [[items/purchase/orders/goods/receipts|receipt]] → invoice), whose Incoterms FOB point gates the timing of GL posting (IFRS-15 §38-42).
 
 ---
 
-<sub>content-uuid `62f820ce-0f43-8c67-809d-cbb2b9b257fd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3288c552-5236-8bae-b655-879e54483b43` · `pnpm readme` · `pnpm computed:check`</sub>

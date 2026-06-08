@@ -3,15 +3,15 @@
 
 # reason
 
-path `reason` · uuid `11354f83-59cf-8fd6-9312-15792168f9de` · diamond `9e78fc84-9dec-8354-b53f-30a1dc468b97`
+path `reason` · uuid `11354f83-59cf-8fd6-9312-15792168f9de` · diamond `cf891bb7-0b28-808b-b27d-edca0133b157`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports audit·fields·status · exports reason · escapes —
-links `3/3` · folded `1` · bonds in `2` out `2`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → audit·fields·status · ← audit·fields·status
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8ef38584-82a5-8c90-8fd5-d9169864bc6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd49950f-8e78-8fa0-9036-3f071effb2bb` · `pnpm readme` · `pnpm computed:check`</sub>

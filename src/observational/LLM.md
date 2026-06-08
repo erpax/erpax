@@ -3,15 +3,15 @@
 
 # observational
 
-path `observational` · uuid `f148da50-075f-8339-a36b-96c2ade842a3` · diamond `2a6ac0ff-de80-8e23-96dd-256c4a1a703a`
+path `observational` · uuid `f148da50-075f-8339-a36b-96c2ade842a3` · diamond `83a8404e-1fc2-8874-852d-26bb9fa044cb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·design·law·medical·merge·sti·study · exports observational · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·design·law·medical·merge·sti·study · ← collapse·design·law·medical·merge·sti·study
 analysis —
 law observational is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7f81d257-d49f-889a-b852-bc9347a003c1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa0c82cb-7127-8f9e-ab76-bb2e8467f027` · `pnpm readme` · `pnpm computed:check`</sub>

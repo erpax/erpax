@@ -23,7 +23,7 @@
 
 - partition `overdraft` · sub-root `d878575a-17d0-884f-8a1a-3c10e1cb67b5`
 - bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1f7b6845-e628-8a6b-8e93-dfb8d5fbc49e` · framed by typography partition `overdraft` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3caf672-da2c-8730-acb2-dfc6b8bf4e21` · framed by typography partition `overdraft` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

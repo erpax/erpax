@@ -25,7 +25,31 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `22` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU UCC §6 customs-declaration` · banner
+- `EU UCC Regulation 952/2013 union-customs-code` · banner
+- `EU-UCC` · catalogue
+- `ISO-19011:2018 audit-trail customs-evidence` · banner
+- `ISO-3166-1:2020 country-codes country-of-origin` · banner
+- `ISO-4217:2015 currency-codes valuation-currency` · banner
+- `ISO-8601-1:2019 date-time declaration-date` · banner
+- `OECD BEPS Action 13 transfer-pricing-documentation` · banner
+- `WCO Data Model 3.x customs-data-elements` · banner
+- `WCO HS Convention harmonised-system` · banner
+- `WCO-HS` · catalogue
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `8ac0f0d7-4af0-8582-b7f6-6e0bdfd58778` · framed by typography partition `customers` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0fe21a63-b232-8343-9e8b-5b5c7cbfde32` · framed by typography partition `customers` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

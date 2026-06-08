@@ -3,15 +3,15 @@
 
 # mala
 
-path `mala` · uuid `92e72ef7-b20d-84da-a0b5-359ba4299beb` · diamond `b3bfd5fa-16f3-8417-b60c-d616b0c70bbc`
+path `mala` · uuid `92e72ef7-b20d-84da-a0b5-359ba4299beb` · diamond `1bbee47b-94a3-81d9-8cf5-30f795486be4`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/duality·@/horo · exports const·function · escapes —
-links `12/12` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `12/12` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → chakra·digit·duality·fold·law·rodin·sequence·step · ← chakra·digit·duality·fold·law·rodin·sequence·step
 analysis —
 law 108 is the round — 1¹·2²·3³ = 9×12, digital root 9 (the rodin axis). The dualities walk it as steps; the next math is the full mala. Each step is a dual pair, and the round returns to its start.
 
 ---
 
-<sub>content-uuid `7a291a95-c127-87ee-87b3-109f22241499` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c315b442-4e2b-8b6a-88b1-2567ba366f5e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # pos
 
-path `pos` · uuid `945282cf-893e-8fc3-8b40-00f340dbb6f3` · diamond `80c28638-5234-8e9d-b0d3-6e1151c4b697`
+path `pos` · uuid `945282cf-893e-8fc3-8b40-00f340dbb6f3` · diamond `bc742a67-b7f5-8bab-b189-48fc2e87f05e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·has·law·merge·sti · exports pos · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → create·landmarks · ← create·landmarks
+neighbors → collapse·has·law·merge·sti · ← collapse·has·law·merge·sti
 analysis —
 law pos is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fe1bc2ca-9173-82c0-98ea-7d7d609a39d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c48d9e5-35b9-83e9-89e6-666469ad2927` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `mycorrhizae` · sub-root `dd790be9-9493-8ab0-875b-e4eca884ec17`
-- bond degree `27` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `41` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `dd790be9-9493-8ab0-875b-e4eca884ec17`
-- bonds in `5` · out `5`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `23` / `23`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d74703e3-14d3-88a6-af1c-5a640d2d2ffa` · framed by typography partition `mycorrhizae` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `419d1ee9-e974-8e09-bb64-97b6d727e075` · framed by typography partition `mycorrhizae` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

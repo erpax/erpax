@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `legislative` · sub-root `7a650bc6-6af4-81fd-bb1a-35edd69f11f2`
-- bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `7a650bc6-6af4-81fd-bb1a-35edd69f11f2`
-- bonds in `3` · out `3`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a60d651a-9077-8e0a-8df9-53a847024047` · framed by typography partition `legislative` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2ea249c0-0870-895f-affd-2c44f9f3d766` · framed by typography partition `legislative` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

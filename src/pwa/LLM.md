@@ -3,15 +3,15 @@
 
 # pwa
 
-path `pwa` · uuid `57a84af4-a6d7-8746-bde0-317054471dba` · diamond `c16bc2e4-bf2f-8e9d-be24-b51bd3005393`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `pwa` · uuid `04abbc62-235f-8e2d-8ae3-6a04152cbf53` · diamond `cde36825-2b13-871e-b34a-7b703c1b13e6`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/integrity·@/uuid/format · exports AssetKind·function·interface · escapes —
-links `23/23` · folded `1` · bonds in `7` out `7`
+links `23/23` · folded `1` · bonds in `21` out `23`
 faces worker·plugin·pwa `0·0·1`
-neighbors → cohort·facility·inker·landmarks·memories·stat·varies · ← cohort·facility·inker·landmarks·memories·stat·varies
+neighbors → app·cache·cost·diamond·duality·fractal·identity·law·law·merge·plugin·proof·public·pwa·quantum·queue·search·sequence·standard·test·uuid·uuid·worker · ← app·cache·cost·diamond·duality·fractal·identity·law·merge·plugin·proof·public·pwa·quantum·queue·search·sequence·standard·test·uuid·worker
 analysis diamond
 law the PWA deployment face is the offline installable shell of a [[diamond]] — service worker, manifest, and content-addressed cache that survives disconnect from the canonical server.
 
 ---
 
-<sub>content-uuid `b47e17f5-7c30-8929-8456-b66b1226e88a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `02b7f9be-8fe8-84d3-9c04-7d22ee2c0ec1` · `pnpm readme` · `pnpm computed:check`</sub>

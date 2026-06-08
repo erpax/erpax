@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports laboratory · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·lactation·landmarks·lnid · ← balance·lactation·landmarks·lnid
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law laboratory is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a8ea37dc-60a3-8cb4-a987-d290956f4421` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9e2ee90d-f1b4-8177-afff-c133c0cb3a3e` · `pnpm readme` · `pnpm computed:check`</sub>

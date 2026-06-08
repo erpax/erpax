@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports PDF_A_DEFAULT·PDF_A_HYBRID_INVOICE·buildPdfAXmp·pdfAProfileToXmp·type · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → law · ← law
 analysis —
 law every PDF the project emits for archival must declare a PDF/A conformance level in its XMP packet — long-term readability is a self-asserted, embedded fact (the 10-year retention mandate), not an external promise.
 
 ---
 
-<sub>content-uuid `fcd56d6e-c3d4-8720-8cd8-3c47f3546f7e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ccdf36ca-309c-8a37-9390-10b7d02d06e1` · `pnpm readme` · `pnpm computed:check`</sub>

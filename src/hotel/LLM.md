@@ -3,15 +3,15 @@
 
 # hotel
 
-path `hotel` · uuid `d554dcb3-b055-8b42-b281-f1a2b763045a` · diamond `54ff8262-451e-88d5-979b-c552a2bfc5ed`
+path `hotel` · uuid `d554dcb3-b055-8b42-b281-f1a2b763045a` · diamond `c2472ab7-b1d8-8c36-84b5-b2e18b76c07c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·room · exports hotel · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·room · ← law·room
 analysis —
 law hotel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9840f54c-9c65-83ce-9231-5bfe95fe5c10` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c7356998-10c9-8d91-84ac-68a6b3df6398` · `pnpm readme` · `pnpm computed:check`</sub>

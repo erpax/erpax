@@ -23,7 +23,7 @@
 
 - partition `products` · sub-root `5d27dc21-c3c0-8f7b-846c-3a39529e8c25`
 - bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6f91e53b-4cf0-8a22-977a-bb8b5373ebb2` · framed by typography partition `products` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6698da24-730a-8516-a1e7-26e0a9f7e20e` · framed by typography partition `products` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

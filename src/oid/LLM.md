@@ -3,15 +3,15 @@
 
 # oid
 
-path `oid` · uuid `9eae411a-3cad-8f3d-bb9e-081e19b8faca` · diamond `c4d448a8-1c4c-8203-83ec-af140a389d68`
+path `oid` · uuid `9eae411a-3cad-8f3d-bb9e-081e19b8faca` · diamond `889d4dc6-e9ff-8276-9efd-15f94a975cc6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports cmyk·fractal·identity·law·localize·merge·proof·standard·tamper·uuid · exports oid · escapes —
-links `18/18` · folded `1` · bonds in `16` out `16`
+links `18/18` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·atom·befriend·clip·declaration·deduplication·dropoff·editor·findings·flight·honorific·id·landmarks·seed·shelter·width · ← accounting·atom·befriend·clip·declaration·deduplication·dropoff·editor·findings·flight·honorific·id·landmarks·seed·shelter·width
+neighbors → angel·begin·cmyk·cost·fractal·identity·law·llm·localize·merge·message·proof·research·standard·uuid · ← angel·begin·cmyk·cost·fractal·identity·law·llm·localize·merge·message·proof·research·standard·uuid
 analysis —
 law every uuid has a canonical OID on the ISO `2.25` arc — a lossless re-encoding carrying no new entropy, so it is recomputed not stored; a second independently-verifiable notation of the same identity that increments [[tamper/cost]].
 
 ---
 
-<sub>content-uuid `c1ab2344-de72-8e02-9e30-1c9d6fc01b4d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f2598b4e-3bc6-8fe1-903d-e136df883552` · `pnpm readme` · `pnpm computed:check`</sub>

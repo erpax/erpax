@@ -3,15 +3,15 @@
 
 # hyper
 
-path `hyper` · uuid `b14c5b55-cb73-8cf5-b3e5-97fa4f9fead7` · diamond `0387f604-14fc-87f2-b988-17de29f3869d`
+path `hyper` · uuid `b14c5b55-cb73-8cf5-b3e5-97fa4f9fead7` · diamond `10b106f8-97a9-8a7f-8f18-56efec5a2b00`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·entry·law·merge·sti·toc · exports hyper · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·entry·law·merge·sti·toc · ← collapse·entry·law·merge·sti·toc
 analysis —
 law hyper is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f63d9cf4-5a84-8f2f-9d8d-f365b0090112` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86837cdd-a00d-8590-9cf9-84aa249ffc5a` · `pnpm readme` · `pnpm computed:check`</sub>

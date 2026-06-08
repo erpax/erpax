@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `movie` · sub-root `b8ac1403-f4bf-8b17-961f-7eddc29313c1`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `23` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `b8ac1403-f4bf-8b17-961f-7eddc29313c1`
-- bonds in `2` · out `3`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `85a32a6e-3128-8a63-8f10-58f3b0160897` · framed by typography partition `movie` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `15efe1a5-23e3-8ef9-9c2a-da6a3b5f88b0` · framed by typography partition `movie` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # realtime
 
-> atom `realtime` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `realtime` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -12,33 +12,34 @@
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `11` | [[balance]] `11` |
+| [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `9` | Σ `9` |
+| Σ `20` | Σ `20` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `realtime` · sub-root `29bf50c9-ba45-8a3e-8d15-d16a3086d704`
-- bond degree `20` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `38` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `b9dfc937-39b0-8a96-b0ad-143208095392`
-- bonds in `3` · out `3`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
-- links `7` / `7`
+- links `11` / `12`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6eb2461a-7a5a-813a-a5b5-c11f35959273` · framed by typography partition `realtime` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `121b5c67-162c-89b6-bc6c-1a1989dab701` · framed by typography partition `realtime` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

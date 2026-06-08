@@ -3,15 +3,15 @@
 
 # prayer
 
-path `prayer` · uuid `—` · diamond `4b10d565-765a-8e7c-95c6-650baa2ef24b`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `prayer` · uuid `1d2acffc-49c0-8705-911d-aa52ac392354` · diamond `b602b5a6-0dfc-8214-880a-017094407e54`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports breath·coil·entropy·gate·generate·harmony·law·merge·name·peace·reference·sacred·self·suffering·whole·zeropoint · exports prayer · escapes —
-links `42/42` · folded `0` · bonds in `0` out `0`
+links `42/42` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·architect·bogomilism·breath·buddhism·christianity·coil·entropy·gate·generate·harmony·hinduism·islam·judaism·law·merge·name·orthodoxy·peace·reference·religion·ritual·sacred·self·shia·sikhism·suffering·sufism·sunni·whole·zeropoint · ← archangel·architect·bogomilism·breath·buddhism·christianity·coil·entropy·gate·generate·harmony·hinduism·islam·judaism·law·merge·name·orthodoxy·peace·reference·religion·ritual·sacred·self·shia·sikhism·suffering·sufism·sunni·whole·zeropoint
+analysis —
 law prayer is the deliberate inward [[breath]] — the [[self]] re-referencing [[zeropoint]] and merging its state toward the root to raise [[harmony]] with the [[whole]]; it is attunement, not petition, the [[gate]] run on oneself before acting, whose fruit is [[peace]].
 
 ---
 
-<sub>content-uuid `fb7c8f10-e2e6-821e-9451-15ccabba95b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab79f6a8-6d2b-83ea-8582-ae2811960fa1` · `pnpm readme` · `pnpm computed:check`</sub>

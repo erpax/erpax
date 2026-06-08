@@ -23,7 +23,7 @@
 
 - partition `alumni` · sub-root `f2f71982-2f97-8d6f-b6a4-707e3647a8c5`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ce9640fe-c8ae-88e1-8fad-4a721b349fff` · framed by typography partition `alumni` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e37ab83d-cfaf-873e-a837-c2172d7e7f03` · framed by typography partition `alumni` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

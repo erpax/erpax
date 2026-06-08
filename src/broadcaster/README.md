@@ -23,7 +23,7 @@
 
 - partition `broadcaster` · sub-root `78a632fe-d283-8ad2-b239-923d009c037d`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `fc88cf17-f83e-8e24-ab54-9b3be68c5b90` · framed by typography partition `broadcaster` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5856cf4f-6ea0-8e89-8066-bb5aff2c94a5` · framed by typography partition `broadcaster` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

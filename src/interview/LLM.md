@@ -3,15 +3,15 @@
 
 # interview
 
-path `interview` · uuid `726b36a1-b5d7-856a-85ee-d59c685c57eb` · diamond `1b9c8de0-073b-80ee-8c72-09939fcdd04f`
+path `interview` · uuid `726b36a1-b5d7-856a-85ee-d59c685c57eb` · diamond `bd02b461-2830-8e33-8829-3b1ee2dc645e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports activities·comment·cost·research·time · exports interview · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·parent · ← landmarks·parent
+neighbors → activities·comment·feedback·pipelines·research·time · ← activities·comment·feedback·pipelines·research·time
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `bfe08a0e-d1f7-87aa-b03b-8e6ea666c6ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ff559c68-52ee-8a71-8f5a-c5c433ab93a3` · `pnpm readme` · `pnpm computed:check`</sub>

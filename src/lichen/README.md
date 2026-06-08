@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `lichen` · sub-root `8c636999-b08a-8c3d-8c34-77eb47ad5f59`
-- bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `28` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `8c636999-b08a-8c3d-8c34-77eb47ad5f59`
-- bonds in `4` · out `4`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`0`·`0`
 - links `19` / `19`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a729d021-ed72-8728-85eb-d2a825f7982c` · framed by typography partition `lichen` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7bd03bd2-8adf-8dd4-82d3-aeb0827e5887` · framed by typography partition `lichen` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # involved
 
-path `involved` · uuid `73384ac7-18f4-827c-94a6-31de8a372c8f` · diamond `7dcf65b7-8eb3-80da-98b6-256204e2c381`
+path `involved` · uuid `73384ac7-18f4-827c-94a6-31de8a372c8f` · diamond `af2bfdd1-5904-8b6a-b7e3-aef59f60c777`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports biological·collapse·law·merge·process·sti · exports involved · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·optician·terminals · ← landmarks·optician·terminals
+neighbors → biological·collapse·law·merge·process·sti · ← biological·collapse·law·merge·process·sti
 analysis —
 law involved is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3be501b1-0078-8318-b0bd-53bf2b047e84` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0fb006b3-08e8-8314-b06f-f9f823050805` · `pnpm readme` · `pnpm computed:check`</sub>

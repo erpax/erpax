@@ -3,15 +3,15 @@
 
 # published
 
-path `published` · uuid `0771bf2a-c3d1-8036-a630-4839cf9d3080` · diamond `e0bbf36c-2792-8564-9afd-113c65302d10`
+path `published` · uuid `c6f72ab4-290d-8217-9d0a-a52280b1d63f` · diamond `bf4be42f-67b0-8558-82af-abf1dd60f304`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports date·law·sd · exports published · escapes —
-links `3/3` · folded `1` · bonds in `4` out `4`
+links `3/3` · folded `1` · bonds in `6` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → access·auth·date·law·law·scope·sd · ← access·auth·date·law·scope·sd
+analysis —
 law published is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e437af74-7007-88e4-b11e-43412c220a21` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87316806-76d6-8ffa-a52b-9f22c519d870` · `pnpm readme` · `pnpm computed:check`</sub>

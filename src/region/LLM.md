@@ -3,15 +3,15 @@
 
 # region
 
-path `region` · uuid `cd6f8613-35d8-8d6f-8583-5b01d048de21` · diamond `9c5b353a-ef40-8d07-940f-ef1943c5614f`
+path `region` · uuid `cd6f8613-35d8-8d6f-8583-5b01d048de21` · diamond `2b6dbff0-5ff7-8adb-9a5b-43c4e26783d4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports address·collapse·defined·drained·eligible·ineligible·law·merge·sti · exports region · escapes —
-links `9/9` · folded `1` · bonds in `9` out `9`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → anatomy·computational·diagnostic·driving·except·import·landmarks·sti·term · ← anatomy·computational·diagnostic·driving·except·import·landmarks·sti·term
+neighbors → address·collapse·defined·drained·eligible·ineligible·law·merge·sti·validation · ← address·collapse·defined·drained·eligible·ineligible·law·merge·sti·validation
 analysis —
 law region is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ecaef351-2b7f-870b-b412-ee17074d7cfe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ebc9253-76a4-8e72-b35b-ef142751cdff` · `pnpm readme` · `pnpm computed:check`</sub>

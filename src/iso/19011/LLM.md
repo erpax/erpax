@@ -7,11 +7,11 @@ path `iso/19011` · uuid `50128731-5b5b-8939-aa11-d034123f4a2a` · diamond `36b4
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports AuditChangeRecord·AuditEntry·AuditEntryInput·AuditOperation·AuditSeverity·AuditTrailContext · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+faces worker·plugin·pwa `1·0·0`
+neighbors → law · ← law
 analysis —
 law the audit-trail shape (`AuditEntry` who/what/when/why) has exactly one canonical home here that the log emitter and the durable `audit-events` collection both import — so drift between what auditors query and what the aggregator emits becomes a compile-time error, not a silent divergence.
 
 ---
 
-<sub>content-uuid `7524fae8-9538-8cee-8273-bd8dee78e2a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a00a645-56f2-8863-9b78-e926fd1f9ee5` · `pnpm readme` · `pnpm computed:check`</sub>

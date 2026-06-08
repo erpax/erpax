@@ -3,15 +3,15 @@
 
 # river
 
-path `river` · uuid `27b1d870-05f9-86d7-8dc6-5ee1c552496e` · diamond `9a68641c-579c-81a6-8041-07902f26c47d`
+path `river` · uuid `27b1d870-05f9-86d7-8dc6-5ee1c552496e` · diamond `09c7c219-baea-8c70-9ccd-0a5d7e79c4d7`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports body·collapse·law·merge·sti·water · exports river · escapes —
-links `6/6` · folded `1` · bonds in `13` out `13`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·9110·atom·balance·breakfast·declaration·dropoff·getting·homeopathic·idempotency·rheumatologic·syllabus · ← 3986·6585·9110·atom·balance·breakfast·declaration·dropoff·getting·homeopathic·idempotency·rheumatologic·syllabus
+neighbors → body·collapse·law·merge·sti·water · ← body·collapse·law·merge·sti·water
 analysis —
 law river is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `665df51f-c6e8-89a3-9f8d-d214565672ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e640a461-7583-8303-8f16-dafa48aad192` · `pnpm readme` · `pnpm computed:check`</sub>

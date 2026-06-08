@@ -3,15 +3,15 @@
 
 # nail
 
-path `nail` · uuid `5cf97c83-ca53-8d2d-bb61-4fa0b4a16846` · diamond `77cd5d62-aab4-8d30-96e6-8f188871bac9`
+path `nail` · uuid `5cf97c83-ca53-8d2d-bb61-4fa0b4a16846` · diamond `e822a03f-1dbb-8a3a-b633-a4bdbcf3460a`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·salon·sti · exports nail · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·salon·sti · ← collapse·law·merge·salon·sti
 analysis —
 law nail is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `38bb45cb-6c90-8627-bacb-86782a2721cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `746ecd4b-67ad-8d76-94cf-563e3b51e136` · `pnpm readme` · `pnpm computed:check`</sub>

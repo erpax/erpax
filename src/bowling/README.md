@@ -23,7 +23,7 @@
 
 - partition `bowling` · sub-root `2a61d26b-0edc-819c-97b7-bb7548334b31`
 - bond degree `16` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `938ba95f-f561-8d9a-a07c-a8cebb9825c7` · framed by typography partition `bowling` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f67d64f3-e3ae-88ef-a296-7c54e4c8ae46` · framed by typography partition `bowling` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

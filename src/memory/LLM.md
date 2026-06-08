@@ -3,15 +3,15 @@
 
 # memory
 
-path `memory` · uuid `2d3e45c3-92ec-87d3-802c-6f3f07b555c5` · diamond `259a02de-0e63-8ab7-855b-cd6c3b79d9c6`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports collapse·law·memory·merge·quantum·requirements·seal·sti · exports memory · escapes —
-links `11/11` · folded `1` · bonds in `24` out `21`
+path `memory` · uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e` · diamond `10f00b22-0b35-82fa-99f0-8de63b6ddbd3`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
+imports akashic·collapse·diamond·law·memory·merge·quantum·requirements·seal·sti·thought · exports memory · escapes —
+links `17/17` · folded `1` · bonds in `29` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attachment·chat·communication·corrects·eligibility·handling·hobby·id·idempotency·liquor·list·llm·medical·memories·offered·office·spouse·tinid·tracks·trade·trailer · ← attachment·chat·communication·communication·communication·corrects·eligibility·handling·hobby·id·idempotency·liquor·list·list·llm·medical·memories·offered·office·spouse·tinid·tracks·trade·trailer
+neighbors → akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·law·memory·memory·merge·merge·part·peace·purity·quantum·quantum·realtime·requirements·seal·seal·self·snapshot·sti·sync·thought·uuid·whole · ← akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·memory·memory·merge·part·peace·purity·quantum·realtime·requirements·seal·self·snapshot·sti·sync·thought·uuid·whole
 analysis diamond·hallucination·purity
-law memory is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
+law memory is one schema.org word, content-addressed; operational memory IS the architecture lattice ([[memory/architecture]]), not a side store — same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `89264a74-df45-8632-b04f-64d57135b922` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a0c0d90-8ee5-8dc5-a318-4d1fb5fb1d1f` · `pnpm readme` · `pnpm computed:check`</sub>

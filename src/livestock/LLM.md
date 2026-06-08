@@ -3,15 +3,15 @@
 
 # livestock
 
-path `livestock` · uuid `e65257f2-eec5-8b15-aeec-66366f6b248d` · diamond `09f2a2a7-5029-8ab8-8d53-891236f09686`
+path `livestock` · uuid `e65257f2-eec5-8b15-aeec-66366f6b248d` · diamond `504f77a0-89ba-8119-8f67-de35128e9c8d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·animal·biological·breed·crop·fertility·fodder·grazing·harvest·health·herd·items·lactation·law·lineage·manure·mortality·pasture·share·soil·withdrawal · exports livestock · escapes —
-links `43/43` · folded `1` · bonds in `5` out `5`
+links `43/43` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bundle·cohort·landmarks·memories·stat · ← bundle·cohort·landmarks·memories·stat
+neighbors → agriculture·animal·apiculture·aquaculture·assets·biomass·breed·crop·fertility·fodder·grazing·harvest·health·herd·items·lactation·law·lineage·manure·mortality·pasture·share·soil·withdrawal · ← agriculture·animal·apiculture·aquaculture·assets·biomass·breed·crop·fertility·fodder·grazing·harvest·health·herd·items·lactation·law·lineage·manure·mortality·pasture·share·soil·withdrawal
 analysis —
 law livestock is the animal half of [[agriculture]] — each animal is an IAS-41 [[biological/assets|biological asset]] (fair-value-less-costs-to-sell, re-measured as it grows) whose produce is realized at [[harvest]], the same event that turns a [[crop]] into inventory.
 
 ---
 
-<sub>content-uuid `ede1f0dd-2033-8791-b200-1e8da282690c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8bfaa606-e655-8027-9159-93b51ed7a621` · `pnpm readme` · `pnpm computed:check`</sub>

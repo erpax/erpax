@@ -29,7 +29,7 @@ describe('memory/architecture — sanitization', () => {
   })
 
   it('ephemeral debris does not change sanitizedUuid', () => {
-    const base = { atomPath: 'merge', kind: 'fact', title: 'sealed thought' }
+    const base = { atomPath: 'memory/session', kind: 'fact', title: 'sealed thought' }
     const withDebris = {
       ...base,
       uuid: 'dead-beef',
@@ -55,18 +55,18 @@ describe('memory/architecture — sanitization', () => {
 describe('memory/architecture — projection into lattice', () => {
   it('sealed atom projects diamond contentUuid matching session meet', () => {
     const projection = projectMemoryToArchitecture({
-      atomPath: 'merge',
+      atomPath: 'memory/session',
       kind: 'fact',
       sessionId: 'ephemeral',
     })
     expect(projection.sealed).toBe(true)
     expect(projection.diamond).not.toBeNull()
-    const sessionArtifact = sessionDiamondFromPath('merge')
+    const sessionArtifact = sessionDiamondFromPath('memory/session')
     expect(projection.diamond!.contentUuid).toBe(sessionArtifact!.contentUuid)
   })
 
   it('matrix facet uses horo ring digits from generated matrix', () => {
-    const projection = projectMemoryToArchitecture({ atomPath: 'merge' })
+    const projection = projectMemoryToArchitecture({ atomPath: 'memory/architecture' })
     expect(projection.matrix).not.toBeNull()
     expect(HORO_DIGITS).toContain(projection.matrix!.horo as (typeof HORO_DIGITS)[number])
     expect(projection.matrix!.coordinate).toMatch(/ · \d+\//)
@@ -94,8 +94,8 @@ describe('memory/architecture — projection into lattice', () => {
 
 describe('memory/architecture — operational memory IS architecture', () => {
   it('architectureMemoryDigest is stable across repeated live-tree reads', () => {
-    const a = operationalMemoryFacet('merge')
-    const b = operationalMemoryFacet('merge')
+    const a = operationalMemoryFacet('memory/architecture')
+    const b = operationalMemoryFacet('memory/architecture')
     expect(a).not.toBeNull()
     expect(b!.digest).toBe(a!.digest)
     expect(b!.diamondUuid).toBe(a!.diamondUuid)
@@ -105,7 +105,7 @@ describe('memory/architecture — operational memory IS architecture', () => {
   it('operationalMemoryIsArchitecture: live facet ≡ sanitized blob projection', () => {
     expect(
       operationalMemoryIsArchitecture({
-        atomPath: 'merge',
+        atomPath: 'memory/architecture',
         kind: 'fact',
         sessionId: 'ephemeral-cursor',
         messages: [{ role: 'user', content: 'forget me' }],
@@ -115,9 +115,9 @@ describe('memory/architecture — operational memory IS architecture', () => {
   })
 
   it('ephemeral-only delta does not change architecture digest', () => {
-    const clean = operationalMemoryFacet('merge')!
+    const clean = operationalMemoryFacet('memory/architecture')!
     const withDebris = projectMemoryToArchitecture({
-      atomPath: 'merge',
+      atomPath: 'memory/architecture',
       sessionId: 'x',
       threadId: 'y',
       __securitybot_metadata__: { pii: true },
@@ -136,7 +136,7 @@ describe('memory/architecture — operational memory IS architecture', () => {
     expect(isArchitectureContentField('sessionId')).toBe(false)
     expect(ARCHITECTURE_CONTENT_FIELDS.has('atomPath')).toBe(true)
     const sanitized = sanitizeMemoryRecord({
-      atomPath: 'merge',
+      atomPath: 'memory/session',
       kind: 'fact',
       title: 'sealed',
       sessionId: 'gone',

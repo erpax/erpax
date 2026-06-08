@@ -3,15 +3,15 @@
 
 # photos
 
-path `photos` · uuid `c1312b5b-0e85-8dcd-bb91-ab9ade18429f` · diamond `7295ca1a-e305-8541-a5b8-fa289058119a`
+path `photos` · uuid `c1312b5b-0e85-8dcd-bb91-ab9ade18429f` · diamond `3b0d6971-70e6-8b80-b5d9-5878a07a4e92`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports creative·law · exports photos · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → campaign·cohort·landmarks·memories·stat · ← campaign·cohort·landmarks·memories·stat
+neighbors → creative·law · ← creative·law
 analysis —
 law photos is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `24f09535-00ad-8fb6-9baf-2f9480e200c0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e6a323c-e50e-8847-a68f-c30091517937` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `bathrooms` · sub-root `d140a039-836d-812f-b2bc-e678680dcec3`
 - bond degree `26` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ca1112e6-33ee-8d7a-9a8f-a3aa1a1eccae` · framed by typography partition `bathrooms` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2ac367f-d979-87aa-9237-ac04067ab974` · framed by typography partition `bathrooms` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

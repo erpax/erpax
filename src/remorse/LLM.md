@@ -3,15 +3,15 @@
 
 # remorse
 
-path `remorse` · uuid `37ebf746-20a1-812c-a974-1ca3a0feb84f` · diamond `929f66e1-13b0-8976-ac66-b530ca67cf01`
+path `remorse` · uuid `37ebf746-20a1-812c-a974-1ca3a0feb84f` · diamond `d5998c5e-0664-84c4-99f4-ecc85205ebfd`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·customer·fees·label·law·merge·return·shipping·source·sti · exports remorse · escapes —
-links `11/11` · folded `1` · bonds in `6` out `6`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·fractal·landmarks·memories·pipelines·stat · ← cohort·fractal·landmarks·memories·pipelines·stat
+neighbors → amount·collapse·customer·fees·label·law·merge·return·shipping·source·sti · ← amount·collapse·customer·fees·label·law·merge·return·shipping·source·sti
 analysis —
 law remorse is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2d8fd347-fffe-8182-b3c6-6b9159e76727` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2180a8b4-deb0-8412-973b-9fcd1a55353d` · `pnpm readme` · `pnpm computed:check`</sub>

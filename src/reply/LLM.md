@@ -3,15 +3,15 @@
 
 # reply
 
-path `reply` · uuid `ad8f01c3-a495-8c78-b2ae-274a52117c89` · diamond `dd3f837b-9882-8f22-8efa-baf7489b3512`
+path `reply` · uuid `ad8f01c3-a495-8c78-b2ae-274a52117c89` · diamond `40ca9cbe-aa30-8dea-8a71-20c52b388b1d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti·url · exports reply · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·structure · ← cohort·landmarks·memories·stat·structure
+neighbors → action·collapse·law·merge·sti·url · ← action·collapse·law·merge·sti·url
 analysis —
 law reply is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `780cbfb6-a709-8ad9-b7a0-1c20c58fa848` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c4e331b-d49c-887b-b44a-807e2aea77b2` · `pnpm readme` · `pnpm computed:check`</sub>

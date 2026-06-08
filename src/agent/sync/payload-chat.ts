@@ -24,6 +24,7 @@
 import type { ErpaxEvent } from '@/agent/sync'
 import { domainToErpaxEvent } from './society'
 import type { DomainEvent } from '../types'
+import { enforceTeamCommsEmit } from '@/team/comms'
 
 export const CHAT_COLLECTION = 'chat' as const
 
@@ -76,7 +77,23 @@ export async function publishToChat(
   tenantId: string,
   depth = 0,
 ): Promise<void> {
-  await client.create({ collection: CHAT_COLLECTION, data: { ...eventToChatMessage(e), tenant: tenantId, depth } })
+  const verdict = enforceTeamCommsEmit({
+    scopeTenantId: tenantId,
+    emit: {
+      tenantId,
+      event: e.event,
+      eventUuid: e.uuid,
+      agent: e.agent,
+      payload: e.payload,
+      depth,
+      emittedAt: e.ts,
+    },
+  })
+  if (!verdict.ok) throw new Error(`team-comms: ${verdict.reason ?? 'emit rejected'}`)
+  await client.create({
+    collection: CHAT_COLLECTION,
+    data: { ...eventToChatMessage(e), tenant: tenantId, depth, emittedAt: e.ts },
+  })
 }
 
 /**

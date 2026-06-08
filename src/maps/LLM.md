@@ -3,15 +3,15 @@
 
 # maps
 
-path `maps` · uuid `35419379-0672-8616-860b-5b0e8583c6a0` · diamond `4cbad84c-bc2e-8b0a-af8c-5196590dcd4d`
+path `maps` · uuid `35419379-0672-8616-860b-5b0e8583c6a0` · diamond `994c0044-55c1-87a3-9b18-d88ef0866095`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports maps · escapes —
-links `2/2` · folded `1` · bonds in `12` out `12`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collections·drone·entertainment·grant·landmarks·natural·propose·saturday·symbol·terminals·tinid·venue · ← collections·drone·entertainment·grant·landmarks·natural·propose·saturday·symbol·terminals·tinid·venue
+neighbors → law·thing · ← law·thing
 analysis —
 law a map is bound to the one place it depicts — every map URL resolves to a single real location, so a map pointing nowhere (or to the wrong place) is a gap, not a map.
 
 ---
 
-<sub>content-uuid `7375ef86-08b1-8462-b74b-26fb15d89ca9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdd31a78-c398-8ad2-a3da-8bdec9895323` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # membership
 
-path `membership` · uuid `a7f656ac-9d3c-888a-b208-e4aad92839a2` · diamond `c51810e9-ac39-8c6a-bf61-d9ee6a282ef9`
+path `membership` · uuid `a7f656ac-9d3c-888a-b208-e4aad92839a2` · diamond `554b90df-e927-886f-a956-d8b0f4166c37`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·earned·law·merge·number·points·program·sti·used · exports membership · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → add·harden·issn·landmarks·search · ← add·harden·issn·landmarks·search
+neighbors → collapse·earned·law·merge·number·points·program·sti·used · ← collapse·earned·law·merge·number·points·program·sti·used
 analysis —
 law membership is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f9134916-4dc7-8409-87b0-980c6107f1d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe249d9f-c543-89b5-b9a6-96685e7f372a` · `pnpm readme` · `pnpm computed:check`</sub>

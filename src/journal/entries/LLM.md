@@ -3,15 +3,15 @@
 
 # entries
 
-path `journal/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `ca06ccc3-7bb8-8ed4-a955-432b4fb183c7`
+path `journal/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `e2778e28-a716-8fa8-9777-ce8bf179bdc8`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/enforce/segregation/of/duty·@/fields·@/utility · exports default · escapes —
-links `6/6` · folded `1` · bonds in `1` out `1`
+links `6/6` · folded `1` · bonds in `37` out `40`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → accounting·accounting·accrual·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·identity·journals·law·law·law·modifications·orders·postings·prepaid·proof·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·standard·transaction·transactions · ← accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transaction·transactions·transactions
 analysis —
 law every entry's debits equal its credits, creator never equals approver, and once posted it is immutable within its locked period.
 
 ---
 
-<sub>content-uuid `07ba9a68-2467-838f-8b54-04209926d392` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1af322b4-b7e9-8f51-a97c-0cd2cd0b21be` · `pnpm readme` · `pnpm computed:check`</sub>

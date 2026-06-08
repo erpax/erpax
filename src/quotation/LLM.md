@@ -3,15 +3,15 @@
 
 # quotation
 
-path `quotation` · uuid `853a5f77-a305-8823-ac79-f905ec3fe612` · diamond `0ffe8ac5-f0c3-8877-be2f-a9a685959163`
+path `quotation` · uuid `853a5f77-a305-8823-ac79-f905ec3fe612` · diamond `95cf7c5f-47de-8046-a606-e379c9e9ec4d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports quotation · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·scorecard·scouting·stat·tape · ← cohort·landmarks·memories·scorecard·scouting·stat·tape
+neighbors → law·thing · ← law·thing
 analysis —
 law a quotation is bound to its source — the words are inseparable from the author or work they are attributed to, so a quote stripped of its origin is a fabrication, not a quotation.
 
 ---
 
-<sub>content-uuid `c41c7a77-18fb-8f74-9314-1462d69885a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `47af0734-8c49-8110-9d14-df1dfbfee4b5` · `pnpm readme` · `pnpm computed:check`</sub>

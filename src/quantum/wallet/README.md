@@ -2,7 +2,7 @@
 
 # wallet
 
-> atom `quantum/wallet` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `quantum/wallet` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -23,22 +23,22 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
-- bond degree `30` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- bond degree `45` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `359504fb-5948-8313-aeac-16da7383f4a8`
-- bonds in `5` · out `5`
+- uuid `f3e13781-1ca1-8237-873d-d1a523c50e59`
+- bonds in `12` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
 - links `19` / `19`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5deaf904-61b6-8cf6-afce-15804d37bb45` · framed by typography partition `quantum` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `53988d82-9bf7-8d6c-93ee-babe1e6f5b11` · framed by typography partition `quantum` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

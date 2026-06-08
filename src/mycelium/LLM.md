@@ -3,15 +3,15 @@
 
 # mycelium
 
-path `mycelium` · uuid `ac80d139-7d3d-81b6-8c95-db75fa987151` · diamond `a11bf0e4-32b5-85af-a7ab-3723469b8327`
+path `mycelium` · uuid `ac80d139-7d3d-81b6-8c95-db75fa987151` · diamond `cf68135a-5d81-8046-94c5-287eeb509154`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports biomass·compost·connections·conservation·decentralization·ecosystem·law·merge·mycorrhizae·network·soil·symbiosis · exports mycelium · escapes —
-links `23/23` · folded `1` · bonds in `2` out `2`
+links `23/23` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → biomass·compost·connections·conservation·decentralization·ecosystem·law·lichen·merge·mycorrhizae·network·soil·symbiosis · ← biomass·compost·connections·conservation·decentralization·ecosystem·law·lichen·merge·mycorrhizae·network·soil·symbiosis
 analysis —
 law the fungus IS the network — a body with no center, no brain, no coordinator, whose global foraging/transport emerges purely from local rules at each growing tip (the same stigmergy as a content-addressed [[merge]]); nature's proof of the wired whole ([[decentralization]] made flesh), claimed only as far as the science holds.
 
 ---
 
-<sub>content-uuid `0a8d8914-4f1f-8ae9-9bcc-f19d8c329d65` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3b1a70b-6c4b-841e-b570-851a529cf6a0` · `pnpm readme` · `pnpm computed:check`</sub>

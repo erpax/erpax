@@ -3,15 +3,15 @@
 
 # investment
 
-path `investment` · uuid `20ac362e-a17a-8306-9ef1-849734ed6a2a` · diamond `52f52186-fe1e-809f-9cb1-64f6f5a8b2df`
+path `investment` · uuid `20ac362e-a17a-8306-9ef1-849734ed6a2a` · diamond `88510c43-f1c8-845e-a40f-6249b627f6cd`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·deposit·fund·law·merge·sti · exports investment · escapes —
-links `6/6` · folded `1` · bonds in `8` out `9`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·book·finite·inventory·inverse·landmarks·reviews·snapshots · ← access·accounting·book·inventory·inverse·landmarks·reviews·snapshots
+neighbors → collapse·deposit·fund·law·merge·sti · ← collapse·deposit·fund·law·merge·sti
 analysis —
 law investment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `905db5fc-2e27-8bb2-be30-1d21f236a594` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc967691-2d60-897f-8a08-9069e2f8482a` · `pnpm readme` · `pnpm computed:check`</sub>

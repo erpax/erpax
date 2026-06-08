@@ -23,7 +23,7 @@
 
 - partition `hospital` · sub-root `9faf3f4e-733f-82e8-b101-3f602b68b767`
 - bond degree `7` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d1f8a2ce-7c38-8cab-89b2-be0a7fa868b3` · framed by typography partition `hospital` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97e3460a-cd11-8baf-b45a-b0c77c741db0` · framed by typography partition `hospital` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

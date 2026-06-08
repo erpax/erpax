@@ -3,15 +3,15 @@
 
 # http
 
-path `http` · uuid `1a6d85ad-ad30-83d4-aefb-fb589d99c16f` · diamond `075584cd-c0a8-8948-853e-8d3f19ad50a3`
+path `http` · uuid `1a6d85ad-ad30-83d4-aefb-fb589d99c16f` · diamond `5753ce17-174f-8e0f-a496-b452beb5dcd0`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·method·sti · exports http · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·method·sti · ← collapse·law·merge·method·sti
 analysis —
 law http is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ec5563f0-2135-81b6-941a-1aa149d24bd7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `018deb78-435e-8c15-9c55-6fd0e6de2388` · `pnpm readme` · `pnpm computed:check`</sub>

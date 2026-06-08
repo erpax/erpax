@@ -3,15 +3,15 @@
 
 # requisition
 
-path `requisition` · uuid `a68ff8a3-4d53-8ab3-8058-04c3e8891168` · diamond `24da45ae-9ecb-82d9-b112-6f882705ed64`
+path `requisition` · uuid `a68ff8a3-4d53-8ab3-8058-04c3e8891168` · diamond `c05fb291-8b97-8012-bd1a-353361b9b4aa`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·law·purchase·requisitions · exports requisition · escapes —
-links `7/7` · folded `1` · bonds in `7` out `7`
+links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·details·landmarks·memories·participation·stat · ← action·cohort·details·landmarks·memories·participation·stat
+neighbors → balance·law·purchase·requisitions · ← balance·law·purchase·requisitions
 analysis —
 law a requisition is a request, never a purchase — it commits no funds and conserves no value until it is approved into one, so demand and procurement stay double-entry separate.
 
 ---
 
-<sub>content-uuid `689d5194-3f33-87a1-a4f4-35b2e32157b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58ef371d-681c-8fca-8407-c776b797220d` · `pnpm readme` · `pnpm computed:check`</sub>

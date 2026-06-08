@@ -3,15 +3,15 @@
 
 # identified
 
-path `identified` · uuid `16baeffc-da25-8fd4-bb63-9d0e70cb4cef` · diamond `550526c5-04e1-8c17-81cb-d2f76ff61d75`
+path `identified` · uuid `16baeffc-da25-8fd4-bb63-9d0e70cb4cef` · diamond `985d454f-866f-8a2a-94c9-091b1b6d1282`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports identified · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → account·landmarks · ← account·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law identified is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d502d56e-3d70-8beb-8629-24410c2fef34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a11d20d-607a-897a-aefa-827b12649288` · `pnpm readme` · `pnpm computed:check`</sub>

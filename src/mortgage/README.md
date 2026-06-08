@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `mortgage` · sub-root `b60d3248-f185-8e7a-8a51-d04390421cd7`
-- bond degree `21` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `27` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `b60d3248-f185-8e7a-8a51-d04390421cd7`
-- bonds in `5` · out `5`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6feb05a1-d633-87bf-ae99-7d01a52895d4` · framed by typography partition `mortgage` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `17d08258-6763-810c-b8d5-d46d9aa036b8` · framed by typography partition `mortgage` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # readme
 
-path `readme` · uuid `—` · diamond `ccaa8d3b-5dc9-8184-a417-9e42384d5717`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
-imports @/aura·@/cloudflare/ai·@/conservation·@/diamond·@/horo·@/quantum/boundary·@/typography·@/uuid/matrix · exports ComputedFace·const·function·interface·renderDiamondJson · escapes —
-links `70/70` · folded `0` · bonds in `0` out `0`
+path `readme` · uuid `ae3c0269-7f7d-8a02-bc07-9553409eeb5a` · diamond `1462a650-1877-890f-b660-bc0119c1070a`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
+imports @/aura·@/cloudflare·@/conservation·@/diamond·@/horo·@/law/folder·@/quantum/boundary·@/seal·@/typography·@/uuid/matrix · exports ComputedFace·const·function·interface·renderDiamondJson · escapes @/diamond/membership
+links `70/70` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `1·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity·quantum/boundary·tamper/import
+neighbors → accounting·asset·atom·aura·balance·conservation·credit·debit·diamond·entropy·entry·generate·holographic·horo·identity·law·liability·matrix·merge·purity·seal·self·sequence·trinity·uuid·whole·worker · ← accounting·asset·atom·aura·balance·conservation·credit·debit·diamond·entropy·entry·generate·holographic·horo·identity·law·liability·matrix·merge·purity·seal·self·sequence·trinity·uuid·whole·worker
+analysis aura·diamond·purity
 law the README is a [[diamond]] — a content-addressed projection of the live tree, regenerable with zero [[entropy]] and drift-detectable (a hand-edit fails `pnpm readme:check` closed) — root and every atom folder; each per-folder README IS the debit/credit statement of that diamond's completeness; typography IS the diamond projected. Derived from the tree ([[matrix]] · fs walk · package.json), never hand-typed.
 
 ---
 
-<sub>content-uuid `965258b0-e8bc-82ea-9551-636b770fcc27` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1bc3f7e1-dea9-82ea-be57-ddaa1934cfba` · `pnpm readme` · `pnpm computed:check`</sub>

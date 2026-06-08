@@ -3,15 +3,15 @@
 
 # podcast
 
-path `podcast` · uuid `975b2bcd-74af-8f20-93ea-005f3536e7d5` · diamond `9a51083b-4666-8317-9a79-066ae197230e`
+path `podcast` · uuid `975b2bcd-74af-8f20-93ea-005f3536e7d5` · diamond `d41f6b98-eab0-8366-bd36-451e199da1cb`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·episode·law·merge·season·series·sti · exports podcast · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·episode·law·merge·season·series·sti · ← collapse·episode·law·merge·season·series·sti
 analysis —
 law podcast is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b13c77db-e2f5-881c-9035-611f6356bd44` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `837c23a6-cd2f-831c-8b61-dd85dc246684` · `pnpm readme` · `pnpm computed:check`</sub>

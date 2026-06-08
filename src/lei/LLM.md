@@ -3,15 +3,15 @@
 
 # lei
 
-path `lei` · uuid `834832ea-510a-8ab2-ba26-afb20e97f548` · diamond `c37ee0b5-96d8-81cb-ae4f-54bd36cb1939`
+path `lei` · uuid `834832ea-510a-8ab2-ba26-afb20e97f548` · diamond `44626c47-d23e-87e6-949e-b14507f14938`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports lei · escapes —
-links `5/5` · folded `1` · bonds in `12` out `12`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·edits·europe·internet·landmarks·learning·measurement·memories·processor·schedules·stat·urologic · ← cohort·edits·europe·internet·landmarks·learning·measurement·memories·processor·schedules·stat·urologic
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law lei is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `eeb71930-f577-811a-9c18-196e455518c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2c1afa5-cf64-8593-b2ce-d399e22149e1` · `pnpm readme` · `pnpm computed:check`</sub>

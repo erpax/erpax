@@ -3,15 +3,15 @@
 
 # meets
 
-path `meets` · uuid `5e76df75-93ab-81b2-8dc9-d5059215dd9e` · diamond `cadfbcc0-4b86-845e-b49a-13d7255e5951`
+path `meets` · uuid `5e76df75-93ab-81b2-8dc9-d5059215dd9e` · diamond `05b6b2fe-cb54-80ac-9b61-b6ab2f9f9ee9`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·emission·law·merge·standard·sti · exports meets · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·contained·landmarks·member · ← balance·contained·landmarks·member
+neighbors → collapse·emission·law·merge·standard·sti · ← collapse·emission·law·merge·standard·sti
 analysis —
 law meets is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7a5684af-97c0-8391-a04e-b34b7bb7d4d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b135b633-ca6e-8f84-8308-d64bd8ed960d` · `pnpm readme` · `pnpm computed:check`</sub>

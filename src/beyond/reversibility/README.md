@@ -2,7 +2,7 @@
 
 # reversibility
 
-> atom `beyond/reversibility` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `beyond/reversibility` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
 - bond degree `13` · analysis neighbors `agent`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -47,7 +47,7 @@
 
 ## analytics
 
-- bond degree `13` · sealed `1` · horo `8`
+- bond degree `13` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `11`
 
@@ -61,8 +61,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e7b9f3a3-9ef5-814d-ab27-b7cf15284a81` · framed by typography partition `beyond` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a67d9b4-88a9-81f6-9384-bd1d701ea4d8` · framed by typography partition `beyond` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # rent
 
-path `rent` · uuid `aecdaac1-5e87-8a92-b936-49914d0ada43` · diamond `9661dac8-0839-8b59-a669-fe83232b31f6`
+path `rent` · uuid `aecdaac1-5e87-8a92-b936-49914d0ada43` · diamond `d3f13677-29af-834d-9c2a-72446b795127`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports rent · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law rent is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `936e700f-8f6e-85a2-977c-5c084460aa34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc5cc4aa-de3d-85df-b94a-c936d9c8bebf` · `pnpm readme` · `pnpm computed:check`</sub>

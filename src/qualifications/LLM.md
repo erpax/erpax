@@ -3,15 +3,15 @@
 
 # qualifications
 
-path `qualifications` · uuid `eb818fba-097e-86ec-82a7-f3111c63a0bb` · diamond `0a298080-54dc-8ebf-823a-962f9ed61bf7`
+path `qualifications` · uuid `eb818fba-097e-86ec-82a7-f3111c63a0bb` · diamond `84a3fa8a-610c-860c-a79c-7ddc3e226044`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports qualifications · escapes —
-links `2/2` · folded `1` · bonds in `10` out `10`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·enrolling·landmarks·likes·list·marry·memories·public·qualification·qualifications · ← atom·enrolling·landmarks·likes·list·marry·memories·public·qualification·qualifications
+neighbors → law·qualification·thing · ← law·qualification·thing
 analysis —
 law qualifications is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `21b33911-b85f-80ee-9386-d99a9d004e87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e6223b7-1495-89fe-8e6f-8ed3222f31c9` · `pnpm readme` · `pnpm computed:check`</sub>

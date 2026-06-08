@@ -3,15 +3,15 @@
 
 # lyricist
 
-path `lyricist` · uuid `287eff70-2306-8c0f-a99d-92ffff0de450` · diamond `2f33231a-f6fd-8b1d-88a2-06ac8dc9c434`
+path `lyricist` · uuid `287eff70-2306-8c0f-a99d-92ffff0de450` · diamond `0f19d624-2cad-87f7-956d-4d55947b4b40`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports lyricist · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·certified·dietary·dropoff·flow·landmarks·sell·start · ← 3986·certified·dietary·dropoff·flow·landmarks·sell·start
+neighbors → law·thing · ← law·thing
 analysis —
 law lyricist is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1b80fe3f-4518-87a1-bc22-7275042ea51c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `01ed1559-23d3-84e7-a08c-8d109c36cee2` · `pnpm readme` · `pnpm computed:check`</sub>

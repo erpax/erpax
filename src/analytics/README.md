@@ -2,7 +2,7 @@
 
 # analytics
 
-> atom `analytics` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `analytics` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `analytics` · sub-root `496bc66f-de12-8dce-94f7-0c34d1d7570b`
 - bond degree `80` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `maxtampercost` · `purity` · `relocate` · `typography` · `unavoidable`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -63,7 +63,7 @@
 
 ## analytics
 
-- bond degree `80` · sealed `1` · horo `7`
+- bond degree `80` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `27`
 
@@ -77,8 +77,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `464f6236-f687-8678-98b4-6a84fa9c4e77` · framed by typography partition `analytics` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `28ff86df-ab5a-895f-88ba-f6991656f6ae` · framed by typography partition `analytics` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

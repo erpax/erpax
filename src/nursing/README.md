@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `nursing` · sub-root `e944337d-4260-8c06-9234-5cec4177de44`
-- bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `e944337d-4260-8c06-9234-5cec4177de44`
-- bonds in `7` · out `7`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `33cac662-b188-8f75-b9d9-791070a78e40` · framed by typography partition `nursing` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7378b9e3-fe7b-8133-b1a0-9c4f18a57a04` · framed by typography partition `nursing` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

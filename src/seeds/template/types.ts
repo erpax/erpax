@@ -15,7 +15,7 @@
  */
 
 import type { CountryProfile } from '@/config/regional-defaults'
-import type { CountryApiKind } from '@/config/country-apis'
+import type { CountryApiKind } from '@/country/api'
 
 /** The five IAS-1 §54 statement-of-financial-position / P&L element types. */
 export type AccountElementType = 'asset' | 'liability' | 'equity' | 'revenue' | 'expense'

@@ -1,6 +1,6 @@
 /**
  * Commercial trading-API registry — the COMMERCIAL sibling of the official
- * per-country authority registry (`src/config/country-apis/index.ts`). Lives at
+ * per-country authority registry (`src/country/api/index.ts`). Lives at
  * `src/trading/api/` — the one-word diamond path for the commercial catalogue
  * (relocated from the hyphenated `config/trading-apis` violation).
  *
@@ -43,7 +43,7 @@
  * @compliance PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2)
  * @compliance EN-16931 + Peppol-BIS-3 e-invoicing access-points
  * @reference GS1 GTIN/GLN product-data networks
- * @see src/config/country-apis/index.ts        (the official-authority twin)
+ * @see src/country/api/index.ts        (the official-authority twin)
  * @see src/country/context/index.ts            (the consumer merge seam)
  * @see src/tenant/remote/secret/index.ts       (resolveTradingApiCredential — the credentials sandbox)
  */

@@ -3,15 +3,15 @@
 
 # jurisdiction
 
-path `jurisdiction` · uuid `031dacb0-4e06-804b-b604-b267f444ea25` · diamond `23366511-b700-8ab3-ae0f-5c0844c8f5ea`
+path `jurisdiction` · uuid `031dacb0-4e06-804b-b604-b267f444ea25` · diamond `859fe7a2-0d13-821b-979b-0e208bc59ab5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports contracts·law·matter·standard · exports jurisdiction · escapes —
-links `4/4` · folded `1` · bonds in `4` out `4`
+links `4/4` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → juniors·landmarks·scouting·terminals · ← juniors·landmarks·scouting·terminals
+neighbors → cases·contracts·disputeresolution·governinglaw·law·matter·standard · ← cases·contracts·disputeresolution·governinglaw·law·matter·standard
 analysis —
 law a jurisdiction binds a matter to exactly one governing law and one forum (exclusive or non-exclusive) plus a dispute-resolution mode; this choice, not the substance, decides which court or arbitral body hears it.
 
 ---
 
-<sub>content-uuid `29668552-3bf2-8c9c-9857-bea8bb6bd3ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4511e724-b6ff-86a4-8caa-c388e995e04c` · `pnpm readme` · `pnpm computed:check`</sub>

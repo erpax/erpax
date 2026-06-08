@@ -25,7 +25,46 @@
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
 - bond degree `62` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `GDPR Art.30 records-of-processing-activities` · banner
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `GDPR Art.9 special-categories-of-personal-data` · banner
+- `IFRS IAS-19 employee-benefits` · banner
+- `IFRS-2` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban payroll-bank-account` · banner
+- `ISO-17442-1` · catalogue
+- `ISO-17442-1:2020 lei employer-identifier` · banner
+- `ISO-19011:2018 audit-trail employee-master` · banner
+- `ISO-3166-1:2020 country-codes citizenship work-country` · banner
+- `ISO-3166-2` · catalogue
+- `ISO-3166-2:2020 subdivision-codes` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time hire-date termination-date` · banner
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic payroll-bank-account` · banner
+- `SOX §404 internal-controls payroll-master` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-710 compensation-general` · banner
+- `US-GAAP ASC-715 compensation-retirement-benefits` · banner
+
+## analytics
+
+- bond degree `62` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `26`
 
 ## identity
 
@@ -41,4 +80,4 @@
 
 ---
 
-<sub>content-uuid `24a82a88-5d9c-8d1e-8bc5-d895c5dabd20` · framed by typography partition `employees` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a320723-e37b-8ccf-9fff-1a5bd135d29e` · framed by typography partition `employees` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>

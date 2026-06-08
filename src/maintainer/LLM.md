@@ -3,15 +3,15 @@
 
 # maintainer
 
-path `maintainer` · uuid `a8118cc4-8e4b-846e-95e7-72db18b49445` · diamond `a8d6b53b-0b1b-85a5-ae37-e3458c89b231`
+path `maintainer` · uuid `a8118cc4-8e4b-846e-95e7-72db18b49445` · diamond `1f923484-4be6-8ad8-a246-14652e9fd793`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports maintainer · escapes —
-links `2/2` · folded `1` · bonds in `45` out `45`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agriculture·all·allocation·balance·based·binding·colleagues·comment·correlation·crop·css·declaration·emergence·enrollment·fertility·flight·florist·holographic·homeopathic·id·it·itsocial·logic·marine·max·memories·parent·platform·policy·proprietary·query·quote·received·roadmap·seat·seed·sell·society·spouse·suspended·thing·tour·user·wp · ← accounting·agriculture·all·allocation·balance·based·binding·colleagues·comment·correlation·crop·css·declaration·emergence·enrollment·fertility·flight·florist·holographic·homeopathic·id·it·itsocial·logic·marine·max·memories·parent·platform·policy·proprietary·query·quote·received·roadmap·seat·seed·sell·society·spouse·suspended·thing·tour·user·wp
+neighbors → law·thing · ← law·thing
 analysis —
 law maintainer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `27712a49-77a5-89bb-84c9-4f2ed303b9c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `59b27553-6b01-8a25-9017-9f525a8a4f61` · `pnpm readme` · `pnpm computed:check`</sub>

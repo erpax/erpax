@@ -3,15 +3,15 @@
 
 # ho
 
-path `ho` · uuid `24873b6d-7b38-835d-bef4-1eebe61d107f` · diamond `102241be-5dbb-832b-bc74-479c051aa4f5`
+path `ho` · uuid `24873b6d-7b38-835d-bef4-1eebe61d107f` · diamond `4a78e0e5-19d4-87c3-8ccc-d54ea2421d92`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·law·merge·num·pats·sti · exports ho · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·cvd·law·merge·num·pats·sti · ← collapse·cvd·law·merge·num·pats·sti
 analysis —
 law ho is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e8b0fcc8-43a0-8c3e-a959-aaf1362823f8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f06439dd-4e38-83b1-82e6-928066c712e0` · `pnpm readme` · `pnpm computed:check`</sub>

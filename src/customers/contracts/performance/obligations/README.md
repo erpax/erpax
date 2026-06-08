@@ -25,7 +25,31 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `28` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §22 distinct-performance-obligation` · banner
+- `IFRS IFRS-15 §31 satisfaction-of-performance-obligation` · banner
+- `IFRS IFRS-15 §35 over-time-recognition` · banner
+- `IFRS IFRS-15 §38 point-in-time-recognition` · banner
+- `IFRS IFRS-15 §41-§43 progress-measurement` · banner
+- `ISO-19011:2018 audit-trail po-satisfaction` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time satisfaction-date` · banner
+- `SOX §404 internal-controls revenue-recognition` · banner
+- `US-GAAP ASC-606-10-25-14 distinct-goods-services` · banner
+- `US-GAAP ASC-606-10-25-31 progress-measurement` · banner
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `a642f42b-a5e3-8d16-ab28-06d98529740f` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `569ade19-01ad-8d91-b3d1-54312a583f25` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

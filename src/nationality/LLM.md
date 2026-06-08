@@ -3,15 +3,15 @@
 
 # nationality
 
-path `nationality` · uuid `962444c1-d326-8d95-aac1-0a21174c6544` · diamond `f665826a-065e-8f7d-a72c-8d4c37ef6515`
+path `nationality` · uuid `962444c1-d326-8d95-aac1-0a21174c6544` · diamond `d448adca-2388-862b-a991-91d62259840f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports nationality · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·womens · ← cohort·landmarks·memories·stat·womens
+neighbors → law·thing · ← law·thing
 analysis —
 law nationality is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `81f315cc-6e60-8309-bf21-1199fcb4da86` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86435afb-5cd0-8602-b96a-f97faf05295f` · `pnpm readme` · `pnpm computed:check`</sub>

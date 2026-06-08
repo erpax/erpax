@@ -3,15 +3,15 @@
 
 # invoices
 
-path `invoices` · uuid `012efb77-8b29-8824-b4b4-55d46c24594b` · diamond `edb92833-3c0f-82f2-923f-6fbfb4491582`
+path `invoices` · uuid `012efb77-8b29-8824-b4b4-55d46c24594b` · diamond `c7f1a08a-0069-8891-a329-4578ff21e4fa`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/fields·@/invoices/hooks·@/iso/4217·@/un/cefact/5305·@/utility · exports const · escapes —
-links `8/8` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → biofield·cohort·landmarks·memories·principles·stat · ← biofield·cohort·landmarks·memories·principles·stat
+links `8/8` · folded `1` · bonds in `17` out `17`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·bookings·cycles·deferredrevenue·dunning·identity·law·lines·milestones·orders·party·performances·refunds·revenue·sales·subscriptions·transaction · ← accounting·bookings·cycles·deferredrevenue·dunning·identity·law·lines·milestones·orders·party·performances·refunds·revenue·sales·subscriptions·transaction
 analysis —
 law an EN-16931 invoice header posts its totals as a GL double-entry behind a period-lock guard, content-addressed by [[identity]]; once the fiscal period locks, the posting is corrected by reversal, never edited in place.
 
 ---
 
-<sub>content-uuid `59f9a386-bee0-8c92-adfd-0bc213a08012` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc25c698-3529-8136-85b6-87ccc8f0e246` · `pnpm readme` · `pnpm computed:check`</sub>

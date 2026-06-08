@@ -4,7 +4,7 @@
 # replay
 
 path `beyond/replay` · uuid `53220e35-ac53-8506-b714-2b7c70c2201c` · diamond `3d9e9373-871f-8242-9a6d-282d05f821b4`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/agent·@/beyond/types·@/integrity · exports async·function · escapes —
 links `7/7` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the same inputs always recompute to the same [[integrity]] hash; a replay co
 
 ---
 
-<sub>content-uuid `7ecffda1-6c72-870e-85da-4f3f44ce006c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6cd21d4a-3b69-8b20-8b62-f2f3cc798030` · `pnpm readme` · `pnpm computed:check`</sub>

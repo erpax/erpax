@@ -25,7 +25,21 @@
 
 - partition `decoherence` · sub-root `b0d8ef07-c620-898f-bfad-814e14c164fa`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `coherence e^(−t/τ); purity ½(1+c²); von Neumann entropy of the 2-state ρ — all computed` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `0604ca62-4fdf-8ec3-ad9a-bdcf2c563688` · framed by typography partition `decoherence` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8a09a45d-6d54-8c53-bb04-bf1af1cc97b3` · framed by typography partition `decoherence` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

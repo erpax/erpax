@@ -7,11 +7,11 @@ path `quantum/app` · uuid `0f109ddb-4304-874a-81f7-bb0455225bd1` · diamond `a7
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
 links `15/15` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·care·id·landmarks·list·qualification·scope·sexual·variance · ← accounting·balance·care·id·landmarks·list·qualification·scope·sexual·variance
+faces worker·plugin·pwa `1·0·0`
+neighbors → app·atom·entanglement·law·links·matrix·merge·pwa·quantum·uuid · ← app·atom·entanglement·law·links·matrix·merge·pwa·quantum·uuid
 analysis —
 law no folder is exempt — `everyFolderIsQuantumApp()` holds iff the count of nodes carrying a content-uuid equals the total node count, so a single matrix node without a uuid identity falsifies the whole thesis; being a quantum app is not a property some atoms have but the closure condition of the corpus itself.
 
 ---
 
-<sub>content-uuid `4621acac-ff6f-8f31-b327-78b4e2d90b2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4efbca0e-9793-8586-a1f0-9e4f9364c8df` · `pnpm readme` · `pnpm computed:check`</sub>

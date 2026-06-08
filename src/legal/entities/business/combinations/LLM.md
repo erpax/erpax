@@ -3,15 +3,15 @@
 
 # combinations
 
-path `legal/entities/business/combinations` · uuid `0dee3d0e-d5f6-8fc2-ae2f-1b2c16edad38` · diamond `73602333-f52f-8982-800c-bc06df381dd4`
+path `legal/entities/business/combinations` · uuid `0dee3d0e-d5f6-8fc2-ae2f-1b2c16edad38` · diamond `36732d4b-e87f-88de-b036-b830c8d4ef53`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `11/11` · folded `1` · bonds in `1` out `1`
+links `11/11` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → lease · ← lease
+neighbors → accounting·assets·attestations·classifications·combination·entities·entries·goodwill·identity·intangible·law·measurements·proof · ← accounting·assets·attestations·classifications·combination·entities·entries·goodwill·identity·intangible·law·measurements·proof
 analysis —
 law goodwill is the residual, not an input — IFRS 3 §32 computes it as consideration + NCI + previously-held interest − fair value of identifiable net assets, so an acquisition's PPA must allocate to every asset/liability first and goodwill is whatever is left ([[accounting]] double-entry).
 
 ---
 
-<sub>content-uuid `750e557f-8fb7-85c4-8137-d790711fe6dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af3cb70a-1949-8715-9961-5104cd666750` · `pnpm readme` · `pnpm computed:check`</sub>

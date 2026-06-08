@@ -3,15 +3,15 @@
 
 # headline
 
-path `headline` · uuid `5e155505-44ec-813c-b21b-8256c82c3a4b` · diamond `f09d2a8b-a532-8f80-9e42-14f9730ad5fe`
+path `headline` · uuid `5e155505-44ec-813c-b21b-8256c82c3a4b` · diamond `00c34636-e93e-8b53-a51a-cd59d79ff5d1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports alternative·law · exports headline · escapes —
-links `2/2` · folded `1` · bonds in `10` out `10`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·cup·fact·film·landmarks·reverse·spouse·tour·transactions · ← accounting·balance·cup·fact·film·landmarks·reverse·spouse·tour·transactions
+neighbors → alternative·law · ← alternative·law
 analysis —
 law headline is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0159f2d8-dee7-8ba1-a86e-27b7f33acc79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `de82d895-eaae-83c1-a6ad-b2b3fedf8b6d` · `pnpm readme` · `pnpm computed:check`</sub>

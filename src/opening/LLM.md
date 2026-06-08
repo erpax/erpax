@@ -3,15 +3,15 @@
 
 # opening
 
-path `opening` · uuid `d2adccd2-c6bf-8791-9455-551bcb6b1643` · diamond `74e879f3-e78c-85ca-8102-421c53e57265`
+path `opening` · uuid `d2adccd2-c6bf-8791-9455-551bcb6b1643` · diamond `ec3e55ed-f50b-8012-a443-332b5f6d006e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·hours·law·merge·special·specification·sti · exports opening · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → article·cohort·landmarks·memories·negative·stat · ← article·cohort·landmarks·memories·negative·stat
+neighbors → collapse·hours·law·merge·special·specification·sti · ← collapse·hours·law·merge·special·specification·sti
 analysis —
 law opening is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1269c434-4fd7-8b03-9112-a4917701fad4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84441e99-f2d1-8bb3-a443-5a2a56097944` · `pnpm readme` · `pnpm computed:check`</sub>

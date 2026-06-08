@@ -3,15 +3,15 @@
 
 # itsport
 
-path `itsport` · uuid `86f5cd64-d7f7-8b3d-9473-7a3aaabb3b2f` · diamond `b20d4dcc-772d-8683-96cf-0b45bce824a2`
+path `itsport` · uuid `86f5cd64-d7f7-8b3d-9473-7a3aaabb3b2f` · diamond `b03e2e5e-6ffd-89b3-bec2-bc48ea3fd9f7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports itsport · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law itsport is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c9d15897-8474-8dcb-874d-3d7365baf483` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6568cd03-2a52-8989-9b7b-23f17f881169` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # news
 
-path `news` · uuid `727e546b-6ad3-8437-b140-73511a2fda3b` · diamond `949fe505-a2ce-8bd4-9b2c-71b89244aa46`
+path `news` · uuid `727e546b-6ad3-8437-b140-73511a2fda3b` · diamond `61dfbf42-29b3-86eb-9fb1-f2acecfce3c4`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports analysis·article·ask·background·collapse·guidelines·law·media·merge·opinion·organization·public·reportage·review·sti·updates · exports news · escapes —
-links `16/16` · folded `1` · bonds in `0` out `0`
+links `16/16` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → analysis·article·ask·background·collapse·guidelines·law·media·merge·opinion·organization·public·reportage·review·sti·updates · ← analysis·article·ask·background·collapse·guidelines·law·media·merge·opinion·organization·public·reportage·review·sti·updates
 analysis —
 law news is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1008b185-65b9-8ad2-9fb7-52f5cc8e6974` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07647c05-7efb-8c1a-936d-5a96ab5819b3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # requirement
 
-path `requirement` · uuid `9e25544e-e7a0-8f2d-a463-9620ca0cbf9e` · diamond `d43add7b-2587-8ade-85da-f78b94f48061`
+path `requirement` · uuid `9e25544e-e7a0-8f2d-a463-9620ca0cbf9e` · diamond `246a8a6f-6fa6-8206-acc4-4c897086fc88`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accessibility·action·advance·booking·clearance·collapse·eligibility·has·law·merge·physical·security·sensory·sti·tier·work · exports requirement · escapes —
-links `16/16` · folded `1` · bonds in `5` out `5`
+links `16/16` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·text · ← cohort·landmarks·memories·stat·text
+neighbors → accessibility·action·advance·booking·clearance·collapse·eligibility·has·law·merge·physical·prerequisite·security·sensory·sti·tier·work · ← accessibility·action·advance·booking·clearance·collapse·eligibility·has·law·merge·physical·prerequisite·security·sensory·sti·tier·work
 analysis —
 law requirement is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c916053d-5172-8fcb-ae7e-86b99341f333` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99f26e5d-6925-8af5-b0e0-80abb0cf9a39` · `pnpm readme` · `pnpm computed:check`</sub>

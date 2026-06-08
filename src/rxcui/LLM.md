@@ -3,15 +3,15 @@
 
 # rxcui
 
-path `rxcui` · uuid `48d39c2d-aa5a-8dde-9a36-c00e4273263e` · diamond `3859e1c2-177b-8074-ab82-c68d6cdbbb81`
+path `rxcui` · uuid `48d39c2d-aa5a-8dde-9a36-c00e4273263e` · diamond `a8a65fce-ad8c-8dc9-88ee-318e3bc7bcfc`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports rxcui · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law rxcui is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9e35fbe1-a3d4-88cd-be2f-0546b3c23c9b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3769eafa-2765-826b-86bd-69277bbe97be` · `pnpm readme` · `pnpm computed:check`</sub>

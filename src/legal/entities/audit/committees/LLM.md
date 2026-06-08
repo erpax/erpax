@@ -3,15 +3,15 @@
 
 # committees
 
-path `legal/entities/audit/committees` · uuid `5c11ad0f-15f6-88d0-8a23-1c5cd8fb2114` · diamond `9c5fd17b-3fb7-8865-bd9e-c4a1fc73ff7f`
+path `legal/entities/audit/committees` · uuid `5c11ad0f-15f6-88d0-8a23-1c5cd8fb2114` · diamond `4a7817a1-eaa4-8783-8d5b-5940d1d7a843`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `2/2` · folded `1` · bonds in `1` out `1`
+links `2/2` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → entities · ← entities
+neighbors → committee·entities·members·minutes · ← committee·entities·members·minutes
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8635fdfd-f130-8d80-8346-178244ff72c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4f134ad-8fef-87e1-920b-3047e88211d4` · `pnpm readme` · `pnpm computed:check`</sub>

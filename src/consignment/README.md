@@ -23,7 +23,7 @@
 
 - partition `consignment` · sub-root `c665c964-60e4-808c-a095-84783df6892a`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `54fda142-67dc-8ab1-a20b-f2406893072d` · framed by typography partition `consignment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b32631b7-696a-8124-b124-96afe058d22a` · framed by typography partition `consignment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

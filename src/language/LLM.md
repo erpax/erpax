@@ -3,15 +3,15 @@
 
 # language
 
-path `language` · uuid `daeffa42-d802-8c84-a8b3-2f4e8c4290a8` · diamond `e319fffe-08c0-8f61-a7a3-71ffa8748f8b`
+path `language` · uuid `daeffa42-d802-8c84-a8b3-2f4e8c4290a8` · diamond `04b5a66c-e135-8b18-a947-377c07bd0d7f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports available·computer·knows·law·programming·subtitle · exports language · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·config·controlled·corrects·landmarks·memories·method·satire·spreadsheet · ← cohort·config·controlled·corrects·landmarks·memories·method·satire·spreadsheet
+neighbors → available·computer·knows·law·programming·subtitle·translator · ← available·computer·knows·law·programming·subtitle·translator
 analysis —
 law language is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `18004968-4267-8b42-9a67-85f6a7d2a89f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54bdcabd-ad30-82a2-82a4-eea34957d2db` · `pnpm readme` · `pnpm computed:check`</sub>

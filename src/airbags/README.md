@@ -23,7 +23,7 @@
 
 - partition `airbags` · sub-root `7097fb80-e9e8-8179-ab54-f63dbc77ed5d`
 - bond degree `15` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9b96733b-a980-86c0-ad54-60d1f6fb1212` · framed by typography partition `airbags` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `db6f925b-7d65-8c3f-bc2b-1fcbc3a527d5` · framed by typography partition `airbags` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

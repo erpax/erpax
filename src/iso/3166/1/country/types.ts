@@ -19,13 +19,13 @@
  * @audit ISO-19011:2018 audit-trail country-decision-evidence
  * @see ../../../config/regional-defaults.ts
  * @see ../../../config/country-specifics.ts
- * @see ../../../config/country-apis.ts
+ * @see ../../../country/api.ts
  * @see ../../../services/country-context.ts
  */
 
 import type { CountryProfile } from '@/config/regional-defaults';
 import type { CountrySpecifics } from '@/config/country-specifics';
-import type { CountryApi } from '@/config/country-apis';
+import type { CountryApi } from '@/country/api';
 
 /**
  * Canonical view of every standardized fact about a country, normalized for
@@ -50,7 +50,7 @@ export interface CountryBundle {
   /**
    * Bank-domain APIs for the country (PSD2 ASPSPs, BIC directories,
    * domestic clearing-house registries). Pulled from `BANK_APIS` in
-   * `src/config/country-apis.ts` — separate from `apis` because the
+   * `src/country/api.ts` — separate from `apis` because the
    * bank-side endpoints are tenant-specific (driven by the tenant's
    * bank-account country, not the company-of-record country).
    */

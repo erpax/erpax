@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `nerve` · sub-root `05d8fb87-d556-8ee1-abf2-209adb2e7433`
-- bond degree `11` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `19` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `76cb2aea-c68a-841d-b3d0-d408b8b48825`
-- bonds in `2` · out `2`
+- uuid `05d8fb87-d556-8ee1-abf2-209adb2e7433`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `bb88e062-ab47-886a-b1e0-da16de2d4ad1` · framed by typography partition `nerve` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9ea4d88b-f31f-85e7-888c-75f8c029007b` · framed by typography partition `nerve` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

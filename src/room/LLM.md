@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports hotel·law·meeting · exports room · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·give·good · ← balance·give·good
+neighbors → hotel·law·meeting · ← hotel·law·meeting
 analysis —
 law room is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9a8f6591-d73b-8bd3-a860-9f0f81c536a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ef6e28b0-d7a7-8807-a9bc-0b6452fdce33` · `pnpm readme` · `pnpm computed:check`</sub>

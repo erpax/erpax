@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·guidelines·law·merge·sti · exports quarantine · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·guidelines·law·merge·sti · ← collapse·guidelines·law·merge·sti
 analysis —
 law quarantine is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5841a357-7c41-8166-aeb4-208d67cfc1ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e491925-3e73-8af3-be29-6e3d372299c7` · `pnpm readme` · `pnpm computed:check`</sub>

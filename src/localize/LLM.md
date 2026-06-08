@@ -3,15 +3,15 @@
 
 # localize
 
-path `localize` · uuid `1033138f-c956-81bd-8930-63e13507656d` · diamond `f5922e5a-ae71-83b4-a5c6-4340ad57f5dc`
+path `localize` · uuid `1033138f-c956-81bd-8930-63e13507656d` · diamond `8b4e04ee-086c-89ae-bc7b-e0a486b20f5f`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/i18n/localization·@/integrity·@/tamper/cost·@/uuid/format · exports CmykChannel·IdentificationLevel·TranslatableScope·const·function·interface · escapes —
-links `40/40` · folded `1` · bonds in `15` out `15`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·competency·debit·editor·electrician·hobby·homeopathic·landmarks·marine·memories·pats·progression·saturday·sections·sell · ← 3986·competency·debit·editor·electrician·hobby·homeopathic·landmarks·marine·memories·pats·progression·saturday·sections·sell
+links `40/40` · folded `1` · bonds in `36` out `35`
+faces worker·plugin·pwa `1·0·0`
+neighbors → angel·cmyk·confidentiality·config·conversion·cost·decompression·dimension·fields·fractal·give·horo·identity·lexical·llm·matter·merge·message·oid·privilege·projection·proof·queries·research·seed·standard·tags·take·torus·translate·translation·translations·translator·uuid·versions · ← angel·cmyk·confidentiality·config·conversion·cost·decompression·dimension·fields·fractal·give·horo·identity·lexical·llm·matter·merge·message·oid·privilege·projection·projection·proof·queries·research·seed·standard·tags·take·torus·translate·translation·translations·translator·uuid·versions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `85d3af44-c634-8595-91b9-c5935c634fc4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc0c0a89-a053-8629-94f7-e059fa023881` · `pnpm readme` · `pnpm computed:check`</sub>

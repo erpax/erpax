@@ -3,15 +3,15 @@
 
 # hvac
 
-path `hvac` · uuid `8c94d8b9-27ac-898c-bb01-c188802b2dbb` · diamond `223e7f43-67b9-8868-95a9-f802749d3612`
+path `hvac` · uuid `8c94d8b9-27ac-898c-bb01-c188802b2dbb` · diamond `304d1f0c-6f9e-8772-bcaa-792ef7133dfe`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports business·collapse·law·merge·sti · exports hvac · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·covers·landmarks·memories·shared·stat · ← cohort·covers·landmarks·memories·shared·stat
+neighbors → business·collapse·law·merge·sti · ← business·collapse·law·merge·sti
 analysis —
 law hvac is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9ab228c6-8e80-841b-b505-d40ba497efbd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `927d8012-d808-86c4-954e-1a1f3eec27a8` · `pnpm readme` · `pnpm computed:check`</sub>

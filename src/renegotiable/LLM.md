@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·loan·merge·sti · exports renegotiable · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·loan·merge·sti · ← collapse·law·loan·merge·sti
 analysis —
 law renegotiable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `31be49f1-9f65-8bd5-ba30-3a8b7bbfb957` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `672f2ed4-ddfb-84b6-a069-9d0357805002` · `pnpm readme` · `pnpm computed:check`</sub>

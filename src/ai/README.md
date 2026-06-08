@@ -2,7 +2,7 @@
 
 # ai
 
-> atom `ai` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `ai` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
 - bond degree `48` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -82,7 +82,7 @@
 
 ## analytics
 
-- bond degree `48` · sealed `1` · horo `2`
+- bond degree `48` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `2` · standards `45`
 
@@ -96,8 +96,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a556b1c4-4dc7-8834-99fe-acefc3822000` · framed by typography partition `ai` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f85a9481-51bd-817a-a55f-8940d06752f8` · framed by typography partition `ai` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>

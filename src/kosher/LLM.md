@@ -3,15 +3,15 @@
 
 # kosher
 
-path `kosher` · uuid `318bc2df-af50-8210-be18-7d476b61426e` · diamond `23ad8921-0fd6-8e95-b0b3-6c523b11a8fe`
+path `kosher` · uuid `318bc2df-af50-8210-be18-7d476b61426e` · diamond `e0f18ee8-d33e-864d-a9dc-2ad9c50c5d2e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports kosher · escapes —
-links `4/4` · folded `1` · bonds in `5` out `4`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← animal·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law kosher is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2827f1b5-aabc-8fd8-88d8-8a6a9f542e7f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed4b2442-4aa2-8d2e-92b9-03de145e4301` · `pnpm readme` · `pnpm computed:check`</sub>

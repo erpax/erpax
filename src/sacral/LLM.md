@@ -3,15 +3,15 @@
 
 # sacral
 
-path `sacral` · uuid `3db3512e-aae9-8326-a5e7-32b42989814f` · diamond `6e4a6684-b510-8f3c-9eab-a16909cc75e2`
+path `sacral` · uuid `3db3512e-aae9-8326-a5e7-32b42989814f` · diamond `a0f90735-9962-8a74-a0b1-cd193a825a10`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/chakra · exports const · escapes —
-links `11/11` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `11/11` · folded `1` · bonds in `4` out `4`
+faces worker·plugin·pwa `1·0·0`
+neighbors → chakra·heart·horo·law · ← chakra·heart·horo·law
 analysis —
 law the sacral center is index 1 of the chakra ring, so its note, uuid and colour are read from the shared position math and rendered from that uuid — never recomputed and never asserted from tradition.
 
 ---
 
-<sub>content-uuid `b86b36ee-7f8f-8a78-b7b2-5be96ee42c72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1032e64f-a83a-8fc8-80e1-09bd0d2972d7` · `pnpm readme` · `pnpm computed:check`</sub>

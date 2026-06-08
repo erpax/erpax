@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nonprofit501c19 · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nonprofit501c19 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9e66459c-1c2c-8c92-881a-ca50a35eddd1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa1d00c0-6dff-84fe-9c98-4a8a4fc40275` · `pnpm readme` · `pnpm computed:check`</sub>

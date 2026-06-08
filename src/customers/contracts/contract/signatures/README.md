@@ -25,7 +25,36 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `21` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ASC-606` · catalogue
+- `eIDAS` · catalogue
+- `eIDAS Regulation (EU) 2014/910 electronic-signature` · banner
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IFRS IFRS-15 §10 contract-with-customer` · banner
+- `IFRS IFRS-15 §23 contract-identification` · banner
+- `IFRS-15` · catalogue
+- `ISO-19011:2018 audit-trail e-signature-evidence` · banner
+- `ISO-8601-1:2019 date-time signature-timestamp` · banner
+- `SOX` · catalogue
+- `SOX §302 management-certification audit-trail` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-606-10-25-1 contract-existence` · banner
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `16`
 
 ## identity
 
@@ -41,4 +70,4 @@
 
 ---
 
-<sub>content-uuid `9d36b347-16d9-82b0-b3dc-acfdc6ef92b0` · framed by typography partition `customers` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `70ca1aec-4e87-8d54-b473-093fb552f47f` · framed by typography partition `customers` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

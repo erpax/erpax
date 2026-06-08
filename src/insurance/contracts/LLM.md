@@ -3,15 +3,15 @@
 
 # contracts
 
-path `insurance/contracts` · uuid `527206ca-0fa5-833f-9afb-6703f2a74806` · diamond `1765d18a-9859-8dd1-8912-fc4b3af54a20`
+path `insurance/contracts` · uuid `527206ca-0fa5-833f-9afb-6703f2a74806` · diamond `90b4b75a-b552-8808-a1dd-1d19ea31d727`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `11` out `11`
+links `5/5` · folded `1` · bonds in `32` out `32`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·default·defect·inventory·landmarks·performances·progression·rear·segments·spouse·tour · ← accounting·default·defect·inventory·landmarks·performances·progression·rear·segments·spouse·tour
+neighbors → accounting·amendment·amendments·assignment·auditright·clause·confidentiality·consent·contract·dataprotection·deferredrevenue·disputeresolution·entry·forcemajeure·governinglaw·indemnity·jurisdiction·law·liability·license·measurements·obligations·orders·performances·proof·remediation·restriction·revenue·signatures·termination·transaction·warranty · ← accounting·amendment·amendments·assignment·auditright·clause·confidentiality·consent·contract·dataprotection·deferredrevenue·disputeresolution·entry·forcemajeure·governinglaw·indemnity·jurisdiction·law·liability·license·measurements·obligations·orders·performances·proof·remediation·restriction·revenue·signatures·termination·transaction·warranty
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8dfe37e0-a819-873b-bdbb-d74f46993783` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab3528ff-51e4-8ad5-b4c7-3a22b2461be3` · `pnpm readme` · `pnpm computed:check`</sub>

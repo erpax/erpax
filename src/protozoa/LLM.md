@@ -3,15 +3,15 @@
 
 # protozoa
 
-path `protozoa` · uuid `e11b6412-de4f-8288-8169-b6f366120360` · diamond `489fd4a1-5576-8b29-bed3-e1d256cdb687`
+path `protozoa` · uuid `e11b6412-de4f-8288-8169-b6f366120360` · diamond `d5d4eddd-8907-8fde-a532-cfa1251e0dc0`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports protozoa · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bar·cohort·landmarks·memories·stat · ← bar·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law protozoa is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6fe64fa2-8610-8fe0-90f0-53b5b96a35a0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4b81fe5-b1ed-8dcf-a687-646e1bd0bf83` · `pnpm readme` · `pnpm computed:check`</sub>

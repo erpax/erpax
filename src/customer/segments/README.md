@@ -25,7 +25,24 @@
 
 - partition `customer` · sub-root `3ee5e60d-4127-84c7-abc4-3dae70dd0302`
 - bond degree `30` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §4 portfolio-practical-expedient` · banner
+- `IFRS IFRS-8 §22 disclosure-of-segment-information` · banner
+- `ISO-19011:2018 audit-trail crm-segmentation` · banner
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `195eb7aa-4f7a-8d1d-a532-fd9f07f91364` · framed by typography partition `customer` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd681fba-3619-8949-bc61-e520074f07f4` · framed by typography partition `customer` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # superdense
 
-path `quantum/communication/superdense` · uuid `—` · diamond `bedc8e10-982b-8532-bdf8-0e304f821576`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `quantum/communication/superdense` · uuid `4178a80e-0f9a-85b5-b30d-2b07d55bc028` · diamond `442dcad1-a815-8b3d-9042-08595848eb4c`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `13/13` · folded `0` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+links `13/13` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → communication·entanglement·law·link·merge·quantum·uuid · ← communication·entanglement·law·link·merge·quantum·uuid
+analysis —
 law one entangled binding carries the full ordered pair — `encode(from,to)` is order-dependent, so the single uuid fixes (sender, receiver) and `carries` confirms it; the channel's capacity exceeds its surface because sender and receiver share the entanglement.
 
 ---
 
-<sub>content-uuid `d953ee40-bdf7-8d21-ac57-184397dd8246` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8717bc07-7510-82ff-8ece-0022e3bd2837` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # lung
 
-path `lung` · uuid `cafd4697-0434-898c-98b8-8c777b908a0c` · diamond `22dd26de-085c-84be-839f-90e10459bb40`
+path `lung` · uuid `ea8311c2-903c-847e-a86d-f21fa4698bbb` · diamond `86db01d9-4741-8c2c-af65-5f94866bfedd`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/conservation · exports const·function·interface · escapes —
-links `14/14` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `14/14` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → blood·body·breath·conservation·duality·entropy·fractal·law·society·wave · ← blood·body·breath·conservation·duality·entropy·fractal·law·society·wave
 analysis —
 law the lung is the gas-exchange surface — erpax inhales gaps and exhales gate-green atoms across a fractal surface >250× a sphere's, by passive down-gradient exchange (Fick's law), in a closed tidal cycle that conserves; the breath IS the self-evolution.
 
 ---
 
-<sub>content-uuid `44ed0eaf-5950-8451-adc9-f4e4cd4253c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12bee7b6-92b2-8a24-ae94-c5bd5d34cee7` · `pnpm readme` · `pnpm computed:check`</sub>

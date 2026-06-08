@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·text · exports phonetic · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → benefit·cohort·landmarks·memories·stat · ← benefit·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·text · ← collapse·law·merge·sti·text
 analysis —
 law phonetic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `63279021-b653-8e5a-9cd0-772cbb9474e7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ad07e34-4cb4-8d70-a627-2c8db244158b` · `pnpm readme` · `pnpm computed:check`</sub>

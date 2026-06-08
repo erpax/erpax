@@ -3,15 +3,15 @@
 
 # monthly
 
-path `monthly` · uuid `55fc283e-82fe-8e25-8f75-a77c312869eb` · diamond `799de117-d598-87e4-ab81-80cd30d699ea`
+path `monthly` · uuid `55fc283e-82fe-8e25-8f75-a77c312869eb` · diamond `6e5dfa06-a0f9-85d1-a715-0f16bec7970f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·law·merge·minimum·repayment·sti · exports monthly · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → deactivate·landmarks·remaining · ← deactivate·landmarks·remaining
+neighbors → amount·collapse·law·merge·minimum·repayment·sti · ← amount·collapse·law·merge·minimum·repayment·sti
 analysis —
 law monthly is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bcdaae38-7ff2-84a9-bd5f-c71844c13720` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfac00d3-7936-8cef-b5a6-e62928e7f917` · `pnpm readme` · `pnpm computed:check`</sub>

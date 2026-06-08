@@ -3,15 +3,15 @@
 
 # play
 
-path `play` · uuid `676f32d1-8059-8cc0-bcd2-e37b0f77e7d8` · diamond `772313e4-91dc-82d6-9d9e-d40edf00348f`
+path `play` · uuid `676f32d1-8059-8cc0-bcd2-e37b0f77e7d8` · diamond `8ffce021-eb92-8cca-96ef-a389798abb6c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·game·law·mode · exports play · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·optician · ← landmarks·optician
+neighbors → action·game·law·mode · ← action·game·law·mode
 analysis —
 law play is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7127fc37-67ad-874e-b26b-904567eb4242` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0de90e9e-ecdf-8f69-90ae-2dcdc338c672` · `pnpm readme` · `pnpm computed:check`</sub>

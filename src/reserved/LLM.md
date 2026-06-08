@@ -3,15 +3,15 @@
 
 # reserved
 
-path `reserved` · uuid `328e2b0b-ab81-8bb6-bacd-bea7fe500bfd` · diamond `886cfebc-fffe-8110-bf65-c59e8aae19de`
+path `reserved` · uuid `328e2b0b-ab81-8bb6-bacd-bea7fe500bfd` · diamond `43494276-6a44-8a7d-920e-df000b39afc2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·ticket · exports reserved · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·roofing·sanitization·stat · ← cohort·landmarks·memories·roofing·sanitization·stat
+neighbors → collapse·law·merge·sti·ticket · ← collapse·law·merge·sti·ticket
 analysis —
 law reserved is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `28581ab7-caf1-8aa2-954e-345a93783a4d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b77228b2-63a2-82f2-bc1f-4b1feed12322` · `pnpm readme` · `pnpm computed:check`</sub>

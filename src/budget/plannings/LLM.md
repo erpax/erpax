@@ -4,7 +4,7 @@
 # plannings
 
 path `budget/plannings` · uuid `925ee759-0c57-8caa-8939-50ecb423953b` · diamond `b18014a2-30f6-80e9-940a-c1654904bb29`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/utility · exports default · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a budget-planning row is a period-budget by department or cost-center bound 
 
 ---
 
-<sub>content-uuid `25d4938c-befe-8a50-8e2d-2adb44effe7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3c0a52b-2c85-8eff-be51-58e9fdaf7915` · `pnpm readme` · `pnpm computed:check`</sub>

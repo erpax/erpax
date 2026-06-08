@@ -23,7 +23,7 @@
 
 - partition `buddhism` · sub-root `7e6ee2c9-6208-87b3-b7e4-89fee868c32b`
 - bond degree `77` · analysis neighbors `diamond`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `883a6845-aaf3-83c5-99d6-0939db759395` · framed by typography partition `buddhism` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c61d73ae-6c5e-88db-8eb1-ce6c0afccb8a` · framed by typography partition `buddhism` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # principle
 
-path `principle` · uuid `61f8d35d-a54b-82c1-b0a1-5fae5b099aad` · diamond `93ebc52f-9f5c-8e25-a54d-7ec1e7d31172`
+path `principle` · uuid `61f8d35d-a54b-82c1-b0a1-5fae5b099aad` · diamond `117a77fc-4a95-8a1b-8c93-c4761e9f16b2`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·governance·principles · exports principle · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → diabetic·landmarks·measurement·page·sanitization·superficial·tenure · ← diabetic·landmarks·measurement·page·sanitization·superficial·tenure
+neighbors → balance·governance·principles · ← balance·governance·principles
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `d5329524-d31f-863c-a143-e43d133f5b5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aab9b3ca-ba68-87ef-b91f-a084be927cbd` · `pnpm readme` · `pnpm computed:check`</sub>

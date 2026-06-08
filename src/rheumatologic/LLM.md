@@ -3,15 +3,15 @@
 
 # rheumatologic
 
-path `rheumatologic` · uuid `642684eb-7f65-889f-9a4b-468d13b67aa6` · diamond `bea7d3de-887e-8574-bbe2-51f54dde21df`
+path `rheumatologic` · uuid `642684eb-7f65-889f-9a4b-468d13b67aa6` · diamond `2e85e9d3-ce80-8021-9254-a600dcf9369a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports rheumatologic · escapes —
-links `4/4` · folded `1` · bonds in `38` out `38`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·9110·access·auth·balance·base·befriend·clip·cooking·crest·declaration·dropoff·encodes·founder·gears·high·holographic·homeopathic·honorific·hook·hooks·hopats·horo·idempotency·marine·marry·memories·office·results·risk·risks·river·roadmap·sections·sectors·seed·sell · ← 3986·6585·9110·access·auth·balance·base·befriend·clip·cooking·crest·declaration·dropoff·encodes·founder·gears·high·holographic·homeopathic·honorific·hook·hooks·hopats·horo·idempotency·marine·marry·memories·office·results·risk·risks·river·roadmap·sections·sectors·seed·sell
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law rheumatologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bfb8457e-ad08-8cdf-9473-5a0c16837734` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `77167f5c-a1ca-8f09-8be1-f72586d4737c` · `pnpm readme` · `pnpm computed:check`</sub>

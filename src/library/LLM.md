@@ -3,15 +3,15 @@
 
 # library
 
-path `library` · uuid `f4f1a9e2-cc4e-8f21-a77d-cb0b21f79df1` · diamond `0ebeacfc-2c92-86ff-a087-ec326367f102`
+path `library` · uuid `f4f1a9e2-cc4e-8f21-a77d-cb0b21f79df1` · diamond `83be9010-9a4e-8034-8068-7caa5833bb8f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports executable·law·name·system · exports library · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·until · ← cohort·landmarks·memories·stat·until
+neighbors → executable·law·name·system · ← executable·law·name·system
 analysis —
 law library is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c5f86287-a52c-8c8c-8c2f-25dabcf32efe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd152058-a1ee-82cc-86d6-4886d74d04c0` · `pnpm readme` · `pnpm computed:check`</sub>

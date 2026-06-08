@@ -3,15 +3,15 @@
 
 # inform
 
-path `inform` · uuid `7fd6485d-acb4-806c-a010-b30b414b760c` · diamond `806ffb9e-098a-8192-9961-3ee6d8071e8f`
+path `inform` · uuid `7fd6485d-acb4-806c-a010-b30b414b760c` · diamond `8cda7199-d909-8b9a-b570-5c1206cf1d81`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports inform · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law to inform is to transfer knowledge that did not exist on the receiving side — every inform action has a recipient and a payload, so informing with nothing new conveyed is a no-op, not an action.
 
 ---
 
-<sub>content-uuid `d560dc61-354e-8fdc-a932-a01eb85f3173` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d90b2ad-babc-8f68-90dd-38502b155e49` · `pnpm readme` · `pnpm computed:check`</sub>

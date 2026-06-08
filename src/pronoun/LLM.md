@@ -3,15 +3,15 @@
 
 # pronoun
 
-path `pronoun` · uuid `14c0fbda-2a3c-8b26-a578-b66178a63692` · diamond `d7677837-a2f7-8da1-85f9-65d85fe193a9`
+path `pronoun` · uuid `14c0fbda-2a3c-8b26-a578-b66178a63692` · diamond `45dd3500-56b3-8f71-85ef-ce77dd0e5853`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·law·person·pronouns · exports pronoun · escapes —
-links `9/9` · folded `1` · bonds in `8` out `8`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → additional·consortium·iata·landmarks·maximum·spa·store·urologic · ← additional·consortium·iata·landmarks·maximum·spa·store·urologic
+neighbors → balance·law·person·pronouns · ← balance·law·person·pronouns
 analysis —
 law a pronoun is the singular model of one term by which a person chooses to be referred to, whose plural store is the [[pronouns]] collection ([[balance]]: every collection has its model).
 
 ---
 
-<sub>content-uuid `3da7b6f0-e103-8fe1-8833-4e93298cf27a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `52299503-967a-8b8b-9f9a-8a9673b51e8e` · `pnpm readme` · `pnpm computed:check`</sub>

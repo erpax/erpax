@@ -3,15 +3,15 @@
 
 # purchase
 
-path `purchase` · uuid `80b5bd45-ccc2-8242-844c-f77421b0276b` · diamond `84e3fd10-1963-8134-8c01-b1d2173e68bf`
+path `purchase` · uuid `80b5bd45-ccc2-8242-844c-f77421b0276b` · diamond `13aa95d3-e940-8505-b26d-6de89ce798b3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·limit·merge·offer·price·sti·type · exports purchase · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·may·memories·stat · ← cohort·landmarks·may·memories·stat
+neighbors → collapse·date·law·limit·merge·offer·price·requisition·sti·type · ← collapse·date·law·limit·merge·offer·price·requisition·sti·type
 analysis —
 law purchase is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7a8dd896-e1e0-8176-a528-c02a6f2b603f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `013fdd5a-0619-8251-8a92-b08a9df16c1d` · `pnpm readme` · `pnpm computed:check`</sub>

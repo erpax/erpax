@@ -24,8 +24,10 @@
  */
 import type { CollectionAfterChangeHook } from 'payload'
 import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '../types'
+import { cascadeDepthVerdict } from '@/ai/industry'
 import { processEffects } from '../effect-processor'
 import { createAgentContext } from '../context'
+import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '../strict-apply'
 import { chatEmit, type ChatClient } from './payload-chat'
 
 /** Past this many cascade hops the broadcast stops re-dispatching — runaway guard. */
@@ -72,17 +74,25 @@ export function chatBroadcastAfterChange(): CollectionAfterChangeHook {
     const ev = chatDocToDomainEvent(row)
     if (!ev) return doc
     const depth = typeof row.depth === 'number' ? row.depth : 0
-    if (depth >= MAX_BROADCAST_DEPTH) return doc // runaway-loop guard
+    const depthVerdict = cascadeDepthVerdict(depth)
+    if (!depthVerdict.allowed) return doc // runaway-loop guard (ai/industry remedy)
     try {
       const { agentRuntime } = await import('@/agent/bootstrap')
       const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
       const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
       const client = req.payload as unknown as ChatClient
+      const law = defaultAgentLawState({
+        depth,
+        actor: 'society-chat-broadcast',
+        grant: AGENT_RUNTIME_GRANT,
+        untrustedPayload: ev.payload,
+      })
       const ctx: AgentContext = createAgentContext({
         runtime: agentRuntime,
         payload: req.payload,
         tenantId: ev.tenantId,
-        mcp: createInProcessMcpClient(buildErpaxMcpTools(agentRuntime.registry as never), req),
+        law,
+        mcp: createInProcessMcpClient(buildErpaxMcpTools(agentRuntime.registry as never), req, { law }),
         emit: chatEmit(client, depth + 1), // a reaction becomes the next row (one hop deeper)
       })
       const effects = await broadcastChatRow(agentRuntime, ctx, row)

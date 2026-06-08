@@ -3,15 +3,15 @@
 
 # lock
 
-path `lock` · uuid `d3a4d46e-a168-8c26-8f12-743fc25803b8` · diamond `fa2c5745-2cd9-8107-be96-42577799cb9b`
+path `lock` · uuid `d3a4d46e-a168-8c26-8f12-743fc25803b8` · diamond `c424cd9a-f4ef-8379-b9fc-1005e5c5ea89`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports access·balance·law·locks · exports lock · escapes —
-links `8/8` · folded `1` · bonds in `3` out `3`
+links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician·terminals · ← landmarks·physician·terminals
+neighbors → access·balance·law·locks · ← access·balance·law·locks
 analysis —
 law a lock is the singular model of one locks row — a hold that prevents change to a record or resource, gated by [[access]].
 
 ---
 
-<sub>content-uuid `cf034535-17da-8c4b-ac6f-01eb0bd779fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7e9a1c0e-4eba-8bc7-a27f-31916f8ae253` · `pnpm readme` · `pnpm computed:check`</sub>

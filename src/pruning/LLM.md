@@ -3,15 +3,15 @@
 
 # pruning
 
-path `pruning` · uuid `d65e60cd-1032-89ae-92e1-a6a0f4624d95` · diamond `5b56f44b-5fed-8018-a0da-e7e52ace218f`
+path `pruning` · uuid `d65e60cd-1032-89ae-92e1-a6a0f4624d95` · diamond `38b9c159-efec-82a6-9dad-4b56e77d0aec`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·cost·crop·grade·manufacturing·scouting·season·trellis·yield · exports pruning · escapes —
-links `18/18` · folded `1` · bonds in `5` out `5`
+links `18/18` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·prescription·stat · ← cohort·landmarks·memories·prescription·stat
+neighbors → agriculture·cost·crop·dormancy·grade·manufacturing·scouting·season·trellis·yield · ← agriculture·cost·crop·dormancy·grade·manufacturing·scouting·season·trellis·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `4f9d4f0d-e50d-870b-a235-1318be63eb15` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9591930a-76ad-8d5b-a5af-6779a8fb86c8` · `pnpm readme` · `pnpm computed:check`</sub>

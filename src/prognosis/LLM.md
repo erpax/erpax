@@ -3,15 +3,15 @@
 
 # prognosis
 
-path `prognosis` · uuid `95be6bf7-1a3e-895b-846a-7a8d3284df52` · diamond `40b7734c-e159-8e8c-8e1e-eeb1eaf9d952`
+path `prognosis` · uuid `95be6bf7-1a3e-895b-846a-7a8d3284df52` · diamond `5c684d40-5dff-88ca-949c-9355483a8fe5`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·expected·law·merge·sti · exports prognosis · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·periodical·programming · ← balance·landmarks·periodical·programming
+neighbors → collapse·expected·law·merge·sti · ← collapse·expected·law·merge·sti
 analysis —
 law prognosis is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5029ab5e-a959-8e15-a3bc-ee3a35c6d872` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e9db083-c1b5-83bc-93f2-df92bbcf878c` · `pnpm readme` · `pnpm computed:check`</sub>

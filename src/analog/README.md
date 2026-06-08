@@ -23,7 +23,7 @@
 
 - partition `analog` · sub-root `42b0ffed-7503-8c8e-86af-25ce2b978a5e`
 - bond degree `95` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bdfbde4f-f438-8b13-86fa-34738e0a5416` · framed by typography partition `analog` bonds `95` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a34c28fa-a69f-8b24-b0cd-23ea54ff2851` · framed by typography partition `analog` bonds `95` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # hiring
 
-path `hiring` · uuid `d315685a-3920-816a-8616-6aa4041fd97b` · diamond `74b289ae-5a7f-8c70-84db-4b4095e5a61f`
+path `hiring` · uuid `d315685a-3920-816a-8616-6aa4041fd97b` · diamond `75c90178-7fa3-8aae-aa84-030258510a6c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·organization·sti · exports hiring · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·organization·sti · ← collapse·law·merge·organization·sti
 analysis —
 law hiring is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `74b75f6b-ad59-868c-ab32-0becef004f6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c330c34d-48d1-814a-ac7a-b5731b07412a` · `pnpm readme` · `pnpm computed:check`</sub>

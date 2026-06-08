@@ -23,7 +23,7 @@
 
 - partition `biological` · sub-root `40a0b53b-7053-8f4a-b5ab-1d7131414b2d`
 - bond degree `24` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -66,4 +66,4 @@
 
 ---
 
-<sub>content-uuid `8faef467-606a-89cd-a098-c0d88887a8c7` · framed by typography partition `biological` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7f7cf0ed-4d5e-8c3c-8312-b8145df5a1c8` · framed by typography partition `biological` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

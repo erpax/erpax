@@ -3,15 +3,15 @@
 
 # monoisotopic
 
-path `monoisotopic` · uuid `35cfe4f1-58d2-8c54-80ee-7d57f5f8deba` · diamond `c2cb144b-5c3d-8d14-ae65-8f50252973d9`
+path `monoisotopic` · uuid `35cfe4f1-58d2-8c54-80ee-7d57f5f8deba` · diamond `76ccd1a3-8ab9-8206-81d4-9cf3036a9910`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·molecular·sti·weight · exports monoisotopic · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·molecular·sti·weight · ← collapse·law·merge·molecular·sti·weight
 analysis —
 law this word is the single collided form of monoisotopicMolecularWeight, carrying its schema.org meaning without splitting back into the compound.
 
 ---
 
-<sub>content-uuid `d3945811-ea66-83ce-91bd-f4f49ab39383` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69f7a8e3-1f10-8174-9b1b-6159b27fdf4c` · `pnpm readme` · `pnpm computed:check`</sub>

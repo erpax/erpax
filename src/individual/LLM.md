@@ -3,15 +3,15 @@
 
 # individual
 
-path `individual` · uuid `651a358f-99ab-8196-b5a1-e7188a16cb8e` · diamond `71629a33-01f0-8922-82a0-5fcbb16ec37d`
+path `individual` · uuid `651a358f-99ab-8196-b5a1-e7188a16cb8e` · diamond `89f3319b-cc3a-880c-b461-800db277e119`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·physician·product·sti · exports individual · escapes —
-links `6/6` · folded `1` · bonds in `7` out `6`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → account·cohort·landmarks·memories·midwifery·stat · ← account·civilization·cohort·landmarks·memories·midwifery·stat
+neighbors → collapse·law·merge·physician·product·sti · ← collapse·law·merge·physician·product·sti
 analysis —
 law individual is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `804aebf2-9e0e-83a4-9f75-768dd5995b12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ba8d725-3033-80a5-9ee4-dbdf8aa822c2` · `pnpm readme` · `pnpm computed:check`</sub>

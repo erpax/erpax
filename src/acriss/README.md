@@ -23,7 +23,7 @@
 
 - partition `acriss` · sub-root `5d4d9e3e-4f18-82e6-a282-b6e72e18064a`
 - bond degree `15` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
 
 ## [[cloudflare]] bindings
 
@@ -54,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `4bec6256-64c8-8eba-9399-40c4fc7dce8e` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a5db777-e8ee-8c4d-999f-b6456b6a1409` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

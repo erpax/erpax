@@ -3,15 +3,15 @@
 
 # nicotine
 
-path `nicotine` · uuid `aa5aa73a-a2b6-8df3-aa52-643edc2ea8f8` · diamond `f515407d-36a9-8382-84de-8aef7a400616`
+path `nicotine` · uuid `aa5aa73a-a2b6-8df3-aa52-643edc2ea8f8` · diamond `dc0c1506-ff62-80a5-b6db-d7fa982d72a7`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nicotine · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → buyer·cohort·landmarks·memories·plugins·stat · ← buyer·cohort·landmarks·memories·plugins·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nicotine is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `13224590-33d2-8180-ae46-f9a02b73edba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ece77ff-0465-8a60-a0c9-590c90c84328` · `pnpm readme` · `pnpm computed:check`</sub>

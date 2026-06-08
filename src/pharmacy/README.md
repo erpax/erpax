@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `pharmacy` · sub-root `a6e8cf43-1824-8978-ad94-f6333a07e1ce`
-- bond degree `10` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `14` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `a6e8cf43-1824-8978-ad94-f6333a07e1ce`
-- bonds in `2` · out `2`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6083a3b2-4ce6-8872-aec5-aa472ecc7d94` · framed by typography partition `pharmacy` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0da02e02-f0f7-8342-9080-92c1cc04a6c4` · framed by typography partition `pharmacy` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

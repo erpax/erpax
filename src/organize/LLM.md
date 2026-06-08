@@ -3,15 +3,15 @@
 
 # organize
 
-path `organize` · uuid `89969462-290a-8c18-a595-95d3b0e5ed02` · diamond `c959fce0-0ed9-8eb7-9182-ff7c34a42466`
+path `organize` · uuid `89969462-290a-8c18-a595-95d3b0e5ed02` · diamond `66f62164-3b53-8920-a25b-8f5217042a0c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports organize · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law organize is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a38a3a34-7a7a-8760-9520-73ae78616c81` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d658eb01-bb83-897c-85a5-ae304af94591` · `pnpm readme` · `pnpm computed:check`</sub>

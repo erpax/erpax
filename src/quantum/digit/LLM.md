@@ -3,15 +3,15 @@
 
 # digit
 
-path `quantum/digit` · uuid `4cf458d4-f2bd-802c-91b2-168ed47f199b` · diamond `215c0147-ff37-8faa-af93-fc5db76a97fd`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `quantum/digit` · uuid `757b6ec0-52a3-8a21-8bf0-f0c0be92876e` · diamond `5ecba8cb-ab54-85c7-85f7-f4a76a03c6d9`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports analog·digit·law·links·matrix·matter·quantum·sequence·stream·uuid·word · exports digit · escapes —
-links `20/20` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → analytics·apply·cohort·landmarks·memories·stat · ← analytics·apply·cohort·landmarks·memories·stat
+links `20/20` · folded `1` · bonds in `38` out `42`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·atom·aura·consciousness·cost·default·diamond·digit·horo·law·law·linearity·links·live·log·mala·math·matrix·matter·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·sequence·stream·strength·tamper·text·topography·trinity·typography·uuid·uuid·word·word · ← analog·atom·aura·consciousness·cost·default·diamond·digit·horo·law·linearity·links·live·log·mala·math·matrix·matter·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·stream·strength·tamper·text·topography·trinity·typography·uuid·word
 analysis aura·diamond
 law the digit corpus obeys the SAME address-law as the word corpus — one-folder-per-unit, crosslinked by [[links]], folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither corpus has a law the other lacks. Because the identical uuid folds both, a measurement (a digit-stream) and a sentence (a letter-stream) are crosslinkable on one shelf; the symbolic and the numeric share a single matrix, never two.
 
 ---
 
-<sub>content-uuid `e9674dab-fd65-81b8-bd1c-5d42be35d84e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34833b3c-db82-8dbb-ab03-8b64565394e1` · `pnpm readme` · `pnpm computed:check`</sub>

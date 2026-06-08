@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `motel` · sub-root `37633cd0-5fb1-8a08-9c72-bf902d9c6617`
-- bond degree `8` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `37633cd0-5fb1-8a08-9c72-bf902d9c6617`
-- bonds in `3` · out `3`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6354bf13-f75a-8554-9355-356d51e5fb46` · framed by typography partition `motel` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `402eff00-70c4-82ab-ab9b-68a56dd78727` · framed by typography partition `motel` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

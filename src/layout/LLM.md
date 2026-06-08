@@ -3,15 +3,15 @@
 
 # layout
 
-path `layout` · uuid `0e9db199-b4db-8aac-b067-755c2b7c79e4` · diamond `bcc97b98-d0a8-8a8e-8f30-76d20251f5f7`
+path `layout` · uuid `0e9db199-b4db-8aac-b067-755c2b7c79e4` · diamond `fb3d9951-0faa-8c6c-b070-ea4ce7887964`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·image·law·merge·sti · exports layout · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·files·landmarks·memories·occupancy·stat · ← cohort·files·landmarks·memories·occupancy·stat
+neighbors → collapse·image·law·merge·sti · ← collapse·image·law·merge·sti
 analysis —
 law layout is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f462b837-8c9a-8de8-bfdb-506643a4b611` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f9f77569-0cf8-87e1-b81e-fd322cdb3ed4` · `pnpm readme` · `pnpm computed:check`</sub>

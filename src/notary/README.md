@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `notary` · sub-root `3a4bbcd9-a861-89ce-92e6-209aa4b2cd98`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `3a4bbcd9-a861-89ce-92e6-209aa4b2cd98`
-- bonds in `7` · out `7`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0714839d-eea1-8607-8dca-867f0cb2a793` · framed by typography partition `notary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6a857999-f766-8df6-a725-f4afef0e9bde` · framed by typography partition `notary` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

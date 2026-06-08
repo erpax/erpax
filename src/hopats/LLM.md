@@ -3,15 +3,15 @@
 
 # hopats
 
-path `hopats` · uuid `3e2a6e12-f39a-8094-8afa-b5104ff44ec4` · diamond `94cec41f-402e-8f77-b178-5f4a6bb4013c`
+path `hopats` · uuid `3e2a6e12-f39a-8094-8afa-b5104ff44ec4` · diamond `11f28ba0-94b6-88f5-bd78-4c9294f574e1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hopats · escapes —
-links `4/4` · folded `1` · bonds in `12` out `12`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → admin·balance·base·breakfast·homeopathic·hooks·idempotency·landmarks·received·rheumatologic·right·sell · ← admin·balance·base·breakfast·homeopathic·hooks·idempotency·landmarks·received·rheumatologic·right·sell
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hopats is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `483cd5ff-8840-849b-bf8e-2ab037c31dda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4104a7d4-153d-8e51-bda9-bd0e46f2a179` · `pnpm readme` · `pnpm computed:check`</sub>

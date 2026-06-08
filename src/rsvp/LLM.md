@@ -3,15 +3,15 @@
 
 # rsvp
 
-path `rsvp` · uuid `907fe590-952a-84dc-9e1b-e14781ac82c8` · diamond `d3cc2ea4-3600-89ad-b260-487e9683a2b7`
+path `rsvp` · uuid `907fe590-952a-84dc-9e1b-e14781ac82c8` · diamond `322b4948-e86f-840b-b6a6-7d3f4148ab66`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·response·sti·type · exports rsvp · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → certified·header·homeopathic·landmarks · ← certified·header·homeopathic·landmarks
+neighbors → action·collapse·law·merge·response·sti·type · ← action·collapse·law·merge·response·sti·type
 analysis —
 law rsvp is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fdd34e62-866b-8cca-a4fa-dfebf0d4f08e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb91f6da-ebd7-8e15-90e7-9c5c599d3744` · `pnpm readme` · `pnpm computed:check`</sub>

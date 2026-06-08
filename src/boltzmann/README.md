@@ -25,7 +25,7 @@
 
 - partition `boltzmann` · sub-root `4618156b-109a-8e4d-bbfc-b8a26cd61225`
 - bond degree `32` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -56,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `960de2a8-ed0a-87f3-9db5-84d1779394a2` · framed by typography partition `boltzmann` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `413a5229-bafb-8ce5-9986-5a8d80dbb8ce` · framed by typography partition `boltzmann` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

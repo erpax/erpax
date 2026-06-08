@@ -25,7 +25,22 @@
 
 - partition `digit` · sub-root `6a5ae215-b295-8318-8b8c-a7c627444dd5`
 - bond degree `131` · analysis neighbors `aura` · `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC 9562 §5.8 content-uuid + the horo digital-root ring` · banner
+- `the digit address is computed from the live matrix, never hand-maintained` · banner
+
+## analytics
+
+- bond degree `131` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `441ba8fd-adf3-83cc-a234-5ef45e420be3` · framed by typography partition `digit` bonds `131` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1118371b-ff8f-8828-8b8f-96e23843ead6` · framed by typography partition `digit` bonds `131` · `pnpm readme` · `pnpm readme:check`</sub>

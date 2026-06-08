@@ -4,7 +4,7 @@
 # identifier
 
 path `bg/identifier` · uuid `e8c8b64e-7061-8f4f-8616-6a17230e37f8` · diamond `636939f2-ab86-8c1b-9a0a-96b39f6f1a2c`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports function·interface · escapes —
 links `21/21` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a BG party has no row until its number checks out — the ЕГН/ЕИК IS t
 
 ---
 
-<sub>content-uuid `a7645d57-ba4a-8410-91ff-5e9f01256883` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f98a288-b86d-81c2-94a1-36171cfdd39d` · `pnpm readme` · `pnpm computed:check`</sub>

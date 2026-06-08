@@ -3,15 +3,15 @@
 
 # policy
 
-path `policy` · uuid `49db6472-926d-8797-bfab-060aaafd919a` · diamond `c9aef5db-3838-882c-ba53-1a792c16dcfb`
+path `policy` · uuid `49db6472-926d-8797-bfab-060aaafd919a` · diamond `33b9c884-5598-8202-994c-d649c7eebcfe`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports actionable·boarding·bylines·category·checking·collapse·corrections·country·coverage·diversity·ethics·fact·feedback·has·law·merchant·merge·mission·no·override·priorities·product·return·seasonal·sources·sti·type·unnamed·verification · exports policy · escapes —
-links `29/29` · folded `1` · bonds in `40` out `42`
+links `29/29` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·admin·amortize·api·cache·cafe·calculate·catalogue·chat·cohort·colleagues·comment·conference·document·emergence·fertility·founder·gears·holographic·id·itsocial·landmarks·landmarks·list·maintainer·max·memories·memories·messages·platform·policy·process·qualification·recommendation·requests·rule·sell·society·soundtrack·spouse·stat · ← access·accounting·admin·amortize·api·cache·cafe·calculate·catalogue·chat·cohort·colleagues·comment·conference·document·emergence·fertility·founder·gears·holographic·id·itsocial·landmarks·list·maintainer·max·memories·messages·platform·policy·process·qualification·recommendation·requests·rule·sell·society·soundtrack·spouse·stat
+neighbors → actionable·boarding·bylines·category·checking·collapse·corrections·country·coverage·diversity·ethics·fact·feedback·has·law·merchant·merge·mission·no·override·priorities·product·return·seasonal·sources·sti·type·unnamed·verification · ← actionable·boarding·bylines·category·checking·collapse·corrections·country·coverage·diversity·ethics·fact·feedback·has·law·merchant·merge·mission·no·override·priorities·product·return·seasonal·sources·sti·type·unnamed·verification
 analysis —
 law policy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8b7cbbfb-2148-86b3-9b12-e9765ec6a49a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `53d36328-7e95-8a8c-be42-c61a57b9424b` · `pnpm readme` · `pnpm computed:check`</sub>

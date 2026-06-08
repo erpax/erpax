@@ -3,15 +3,15 @@
 
 # query
 
-path `query` · uuid `87937cb3-5bb6-8fd6-acff-6fa8dabaed6c` · diamond `74c26302-c806-870b-9608-c8c5d3c64d38`
+path `query` · uuid `87937cb3-5bb6-8fd6-acff-6fa8dabaed6c` · diamond `964bdbb9-49b6-890b-bd1f-b83fb1f4b857`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports query · escapes —
-links `2/2` · folded `1` · bonds in `35` out `37`
+links `2/2` · folded `1` · bonds in `8` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·akashic·allocation·aura·breakfast·classified·collect·comedy·compass·competencies·cost·day·declaration·depth·editor·entertainment·gears·holographic·homeopathic·landmarks·landmarks·liquor·list·maintainer·marine·memories·memories·query·representation·roles·saturday·sections·sell·solve·stages·total·update · ← 3986·akashic·allocation·aura·breakfast·classified·collect·comedy·compass·competencies·cost·day·declaration·depth·editor·entertainment·gears·holographic·homeopathic·landmarks·liquor·list·maintainer·marine·memories·query·representation·roles·saturday·sections·sell·solve·stages·total·update
+neighbors → engine·law·law·merge·quantum·query·sql·thing·uuid · ← engine·law·merge·quantum·query·sql·thing·uuid
 analysis —
 law query is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fd0ca8f9-a76e-8d56-a9fc-84e5ea4c0ef2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17dd574f-a720-8527-8931-c9375d5e1ad1` · `pnpm readme` · `pnpm computed:check`</sub>

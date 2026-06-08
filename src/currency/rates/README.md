@@ -25,7 +25,25 @@
 
 - partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
 - bond degree `24` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates` · banner
+- `ISO-19011:2018 audit-trail rate-update` · banner
+- `ISO-4217:2015 currency-codes from-currency to-currency` · banner
+- `ISO-8601-1:2019 date-time rate-date` · banner
+- `US-GAAP ASC-830 foreign-currency-matters` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `b0bb43a2-189e-8e08-a41d-524a94c7d899` · framed by typography partition `currency` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e143a085-c60a-8cff-8a8a-c920c41fa8ea` · framed by typography partition `currency` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

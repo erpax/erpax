@@ -3,15 +3,15 @@
 
 # nerve
 
-path `nerve` · uuid `76cb2aea-c68a-841d-b3d0-d408b8b48825` · diamond `cc98cfc5-c5b2-84fc-8b9f-49d1bbf3e921`
+path `nerve` · uuid `05d8fb87-d556-8ee1-abf2-209adb2e7433` · diamond `6aa04b52-8d84-80d4-8756-8f5ec21f9d8f`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function·interface · escapes —
-links `10/10` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `10/10` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → body·fractal·gate·law·motor·signal · ← body·fractal·gate·law·motor·signal
 analysis —
 law the nerve is the all-or-nothing signal — it fires fully at threshold or not at all (the gate: pass/fail, never partial), cannot re-fire within its refractory window (idempotent), and leaps node-to-node by saltatory conduction (the fractal reach).
 
 ---
 
-<sub>content-uuid `5ace9590-d1ed-8702-954e-5be5b2507410` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfaedaff-56cc-85a2-aec6-d87ae846142b` · `pnpm readme` · `pnpm computed:check`</sub>

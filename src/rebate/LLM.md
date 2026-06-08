@@ -3,15 +3,15 @@
 
 # rebate
 
-path `rebate` · uuid `ccdc2fb1-54dd-8aa0-b65f-8ab07caa9aac` · diamond `78283ac0-fcab-8618-8f40-78bed1b2c65a`
+path `rebate` · uuid `ccdc2fb1-54dd-8aa0-b65f-8ab07caa9aac` · diamond `24748198-70ae-8919-8a08-d49c5f267e5c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports rebate · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → authority·cohort·landmarks·memories·stat · ← authority·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law rebate is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0e449209-dd0c-8e1b-af6b-17502f1da0c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e578beb0-bfcb-82ed-9ea7-cf859e00a3b9` · `pnpm readme` · `pnpm computed:check`</sub>

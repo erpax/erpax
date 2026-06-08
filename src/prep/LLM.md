@@ -3,15 +3,15 @@
 
 # prep
 
-path `prep` · uuid `f32b7fb9-d17e-86e2-baf3-064d566b6eeb` · diamond `620967ad-9144-8c98-bbed-9cf1eb2485e0`
+path `prep` · uuid `f32b7fb9-d17e-86e2-baf3-064d566b6eeb` · diamond `6961d238-56e9-84eb-936d-d47ac2bea56a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·time · exports prep · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti·time · ← collapse·law·merge·sti·time
 analysis —
 law prep is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5cb1ad9f-d744-8882-9b01-152d37c3ae1a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7be709ea-3cd2-8a85-a51d-bac6578a3ba6` · `pnpm readme` · `pnpm computed:check`</sub>

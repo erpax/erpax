@@ -3,15 +3,15 @@
 
 # hardiness
 
-path `hardiness` · uuid `ff6dcf42-ab98-886b-a7aa-762a3609c6a4` · diamond `ef8c0d4e-542f-8633-ac37-9abfcbb296d7`
+path `hardiness` · uuid `ff6dcf42-ab98-886b-a7aa-762a3609c6a4` · diamond `a33974ec-8971-8f09-9eb9-34fb4f4baded`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·frost·harvest·law·planting·season·taxonomy·tunnel · exports hardiness · escapes —
-links `16/16` · folded `1` · bonds in `6` out `5`
+links `16/16` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessibility·cohort·landmarks·memories·stat · ← accessibility·cohort·effective·landmarks·memories·stat
+neighbors → agriculture·crop·frost·harvest·law·planting·season·taxonomy·tunnel·variant · ← agriculture·crop·frost·harvest·law·planting·season·taxonomy·tunnel·variant
 analysis —
 law hardiness is cold tolerance with two faces — the [[crop]] trait (hardy/half-hardy/tender/very-tender) and the site's USDA zone — and together they decide what overwinters and what may be planted when.
 
 ---
 
-<sub>content-uuid `b89f7ca0-6eb0-8c51-8c81-751f2807aa63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f7dda148-9d9f-8f2f-a6a4-d0db1fae7b59` · `pnpm readme` · `pnpm computed:check`</sub>

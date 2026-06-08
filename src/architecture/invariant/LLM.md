@@ -4,7 +4,7 @@
 # invariant
 
 path `architecture/invariant` · uuid `66fe5a3e-24bf-891a-bead-173fbb6a8ec8` · diamond `9fd0222a-c275-81ee-9766-bf3114986bad`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports InvariantAxis·InvariantContext·InvariantResult·InvariantSeverity·InvariantSuiteResult·LAW_CATALOG·TRINITY·async·buildAgentLawProfile·buildAllAgentLawProfiles·checkAgentLawCoverage·function·inferEmittedEffectKinds·rollUpToTrinity·runInvariantsAtBoot·trinityForPriorLaw·trinityGrouping·type · escapes —
 links `21/21` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `a3f028e5-5427-8100-98dd-0528d50e5501` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a446b10-4ecb-8c6e-9178-299c1513b5f4` · `pnpm readme` · `pnpm computed:check`</sub>

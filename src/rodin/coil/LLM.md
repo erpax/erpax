@@ -3,15 +3,15 @@
 
 # coil
 
-path `rodin/coil` · uuid `eaa79d09-aaea-8279-ba24-05dc15748e41` · diamond `1d35cded-17e2-8f31-a50c-9c2d671aa0c2`
+path `rodin/coil` · uuid `eaa79d09-aaea-8279-ba24-05dc15748e41` · diamond `8503c7a5-5883-8416-b44b-23a5fe9e89b2`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/rodin · exports const·function·interface · escapes —
-links `30/30` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·listing·memories·stat · ← cohort·landmarks·listing·memories·stat
+links `30/30` · folded `1` · bonds in `40` out `40`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·auth·axis·balance·base·begin·close·cmyk·coordinate·crest·decompression·descent·duality·end·fractal·generate·history·hooks·horo·matrix·merge·octave·one·phase·polarity·prayer·reference·reverse·rodin·round·self·sequence·share·signal·similar·society·torus·unity·weave·whole · ← access·auth·axis·balance·base·begin·close·cmyk·coordinate·crest·decompression·descent·duality·end·fractal·generate·history·hooks·horo·matrix·merge·octave·one·phase·polarity·prayer·reference·reverse·rodin·round·self·sequence·share·signal·similar·society·torus·unity·weave·whole
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `42cbc4b5-8217-8367-a662-4f293b01c6df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04953c4a-e0e8-877a-a286-3934ecd92c34` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # replacer
 
-path `replacer` · uuid `ae231138-857b-89df-ba44-f67128928645` · diamond `2c0f3b65-f132-8517-9034-2770d6cca33e`
+path `replacer` · uuid `ae231138-857b-89df-ba44-f67128928645` · diamond `4389c7b4-a72d-842e-9a0c-8c16cf56c9b4`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports replacer · escapes —
-links `2/2` · folded `1` · bonds in `13` out `13`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·cohort·collapse·compensation·gastroenterologic·landmarks·material·memories·midpoint·qapage·stat·thing·urologic · ← age·cohort·collapse·compensation·gastroenterologic·landmarks·material·memories·midpoint·qapage·stat·thing·urologic
+neighbors → law·thing · ← law·thing
 analysis —
 law replacer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `797cd584-b19c-8278-8660-9831c54e1d41` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f38bddc-3659-8b99-b46c-f117f09feae8` · `pnpm readme` · `pnpm computed:check`</sub>

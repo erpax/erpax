@@ -3,15 +3,15 @@
 
 # participant
 
-path `participant` · uuid `cf4d7c17-923f-899d-8557-96d4d26ba05c` · diamond `40a55994-ddbd-86bb-9def-2cafa4de3014`
+path `participant` · uuid `cf4d7c17-923f-899d-8557-96d4d26ba05c` · diamond `8576c4b9-1ee5-8a92-b2b7-7499b5506cdf`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·person · exports participant · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·previous·sell·standards·stat · ← cohort·landmarks·memories·notice·previous·sell·standards·stat
+neighbors → law·person · ← law·person
 analysis —
 law participant is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `06b77826-2ee2-81f6-afd2-e6e2b933a2b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3edab01-7f9b-8a71-a9a0-0dc0ff74a49f` · `pnpm readme` · `pnpm computed:check`</sub>

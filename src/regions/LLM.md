@@ -3,15 +3,15 @@
 
 # regions
 
-path `regions` · uuid `9ce3589c-939e-8afd-8c99-f239e42a87d1` · diamond `7b4980b8-ac8b-8998-a4a9-2899c889d9eb`
+path `regions` · uuid `9ce3589c-939e-8afd-8c99-f239e42a87d1` · diamond `51c5f33b-e289-85f5-a2e7-5d7ff0afd2e0`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports allowed·collapse·law·merge·sti · exports regions · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → members·minutes·transactions · ← members·minutes·transactions
+neighbors → allowed·collapse·law·merge·sti · ← allowed·collapse·law·merge·sti
 analysis —
 law regions is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `73590195-c698-800c-addb-22055e66b73c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63d9523b-df8b-8bfb-8a94-17fac3c26491` · `pnpm readme` · `pnpm computed:check`</sub>

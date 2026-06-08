@@ -3,15 +3,15 @@
 
 # inspection
 
-path `inspection` · uuid `a018f76d-05df-810c-863d-d9fb985f6c08` · diamond `5db31e3f-b82d-8dda-b98b-c8b65c9259a4`
+path `inspection` · uuid `a018f76d-05df-810c-863d-d9fb985f6c08` · diamond `6b105a50-6d12-8c3e-a1dd-3a3da715796d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·inspections·quality · exports inspection · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·djmix·install·landmarks · ← balance·djmix·install·landmarks
+neighbors → balance·inspections·quality · ← balance·inspections·quality
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `b225e224-0ea8-834b-9fb0-7839c4b48b3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58b3e3e1-bfc8-89ef-a685-2a5c9b6b970d` · `pnpm readme` · `pnpm computed:check`</sub>

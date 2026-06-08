@@ -3,15 +3,15 @@
 
 # osteopathic
 
-path `osteopathic` · uuid `fba7c300-02e8-8ef1-bd20-44b22311f3d3` · diamond `858285c2-dbea-8870-b711-1319a18a3a71`
+path `osteopathic` · uuid `fba7c300-02e8-8ef1-bd20-44b22311f3d3` · diamond `c35361e4-20c7-8add-9e00-666f1719dde6`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports osteopathic · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·separation·stat · ← cohort·landmarks·memories·separation·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law osteopathic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `84f9703d-b419-8fa2-8563-cfbcba1b1713` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ab8b88e-ab37-8c7b-a3d8-e2abb11bc3da` · `pnpm readme` · `pnpm computed:check`</sub>

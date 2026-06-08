@@ -3,15 +3,15 @@
 
 # received
 
-path `received` · uuid `fa61857d-5137-8890-9023-332b488122c4` · diamond `53b0fb17-8767-87ad-9d9f-04382be5f4a9`
+path `received` · uuid `fa61857d-5137-8890-9023-332b488122c4` · diamond `07f4f45b-3485-8d0f-9157-92f7c2acd461`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·merge·sti · exports received · escapes —
-links `5/5` · folded `1` · bonds in `17` out `17`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·bank·basic·comment·consent·considerations·cup·decontextualized·flight·holographic·hopats·icao·itsocial·landmarks·maintainer·society · ← accounting·balance·bank·basic·comment·consent·considerations·cup·decontextualized·flight·holographic·hopats·icao·itsocial·landmarks·maintainer·society
+neighbors → collapse·date·law·merge·sti · ← collapse·date·law·merge·sti
 analysis —
 law received is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e1468fd-6358-86ee-947c-ce723a0c5c10` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `918990ae-f70d-874d-8c97-2520583d24bf` · `pnpm readme` · `pnpm computed:check`</sub>

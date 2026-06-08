@@ -3,15 +3,15 @@
 
 # priorities
 
-path `priorities` · uuid `c2adf8f6-e0d1-809f-8560-8b7288da4a38` · diamond `35a1023e-159e-89df-9ead-9c39b321f45e`
+path `priorities` · uuid `c2adf8f6-e0d1-809f-8560-8b7288da4a38` · diamond `c222d246-e897-8143-b0c1-342ac356c495`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·coverage·law·merge·mission·policy·sti · exports priorities · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·coverage·law·merge·mission·policy·sti · ← collapse·coverage·law·merge·mission·policy·sti
 analysis —
 law priorities is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2159ecd5-31c8-810b-9994-e9f6b8fea6e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `57860a1a-30eb-8fab-9cdb-00ba212b1327` · `pnpm readme` · `pnpm computed:check`</sub>

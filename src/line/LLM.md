@@ -3,15 +3,15 @@
 
 # line
 
-path `line` · uuid `4c825cf7-8d88-88a0-b25d-154320cfe7c6` · diamond `685041ca-613f-8f90-b8a1-d08aa981ee24`
+path `line` · uuid `4c825cf7-8d88-88a0-b25d-154320cfe7c6` · diamond `45c8d115-483c-806c-b47f-51d0402e4118`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports line · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law line is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `44108bf9-7ae9-85e2-9213-337723dbb65e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be94bf76-d25d-84b6-8739-008741d3f67f` · `pnpm readme` · `pnpm computed:check`</sub>

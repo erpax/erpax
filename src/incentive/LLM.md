@@ -3,15 +3,15 @@
 
 # incentive
 
-path `incentive` · uuid `44528147-9863-8661-931e-32c4007b0d10` · diamond `3dc473bb-33de-86a5-87ff-866eb8c0ee25`
+path `incentive` · uuid `44528147-9863-8661-931e-32c4007b0d10` · diamond `f9d328a8-fdc1-85ee-8614-fcf0ed9ea229`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·compensation·expense·financial·law·merge·qualified·status·sti·type · exports incentive · escapes —
-links `11/11` · folded `1` · bonds in `13` out `12`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attraction·cohort·document·form·has·landmarks·memories·natural·num·physiological·quota·stat · ← attraction·cohort·composer·document·form·has·landmarks·memories·natural·num·physiological·quota·stat
+neighbors → amount·collapse·compensation·expense·financial·law·merge·qualified·status·sti·type · ← amount·collapse·compensation·expense·financial·law·merge·qualified·status·sti·type
 analysis —
 law incentive is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4a41771e-1256-8a2d-afe0-d7bb453641c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c992cbb3-8266-8b18-b9aa-a109eedbf35f` · `pnpm readme` · `pnpm computed:check`</sub>

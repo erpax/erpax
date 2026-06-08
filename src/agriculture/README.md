@@ -2,21 +2,20 @@
 
 # agriculture
 
-> atom `agriculture` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `agriculture` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `8` | Σ `8` |
+| Σ `7` | Σ `7` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
@@ -24,7 +23,7 @@
 
 - partition `agriculture` · sub-root `d65965f6-9220-88d9-949e-9cb968223e53`
 - bond degree `244` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -38,22 +37,22 @@
 
 ## analytics
 
-- bond degree `244` · sealed `1` · horo `5`
-- variance `0` · balanced `1` · trinity sum `2`
+- bond degree `244` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `3`
 
 ## identity
 
 - uuid `d65965f6-9220-88d9-949e-9cb968223e53`
 - bonds in `72` · out `72`
-- trinity form·code·proof `1`·`0`·`1`
+- trinity form·code·proof `1`·`0`·`0`
 - links `89` / `89`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f68b47f0-87da-86e2-acb9-ef382313b3a5` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `415580b1-9670-8725-a5a3-caa46f0772e3` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>

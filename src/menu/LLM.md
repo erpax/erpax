@@ -3,15 +3,15 @@
 
 # menu
 
-path `menu` · uuid `b202beb8-03db-865b-9c79-04a9de156cf7` · diamond `b1f3458e-6506-87ab-bb92-14b2e875c248`
+path `menu` · uuid `b202beb8-03db-865b-9c79-04a9de156cf7` · diamond `d17e5186-3f66-817e-8f9d-2bdcb3f0ad8b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports add·has·item·law·section · exports menu · escapes —
-links `5/5` · folded `1` · bonds in `12` out `13`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attrition·breastfeeding·deduction·distance·invariant·keyword·landmarks·max·numbered·originates·sandbox·t·translate · ← attrition·breastfeeding·deduction·distance·keyword·landmarks·max·numbered·originates·sandbox·t·translate
+neighbors → add·has·item·law·section · ← add·has·item·law·section
 analysis —
 law menu is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `865e88b2-c085-8582-9f4e-6cee80592859` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a61f23f-df30-819a-a7ae-f826061c0dc6` · `pnpm readme` · `pnpm computed:check`</sub>

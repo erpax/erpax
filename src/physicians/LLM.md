@@ -3,15 +3,15 @@
 
 # physicians
 
-path `physicians` · uuid `7c61ee8b-744e-8b34-81e0-54c453affe06` · diamond `3cc60f0c-b40f-8c8a-b471-4e65f916ed50`
+path `physicians` · uuid `7c61ee8b-744e-8b34-81e0-54c453affe06` · diamond `d3b211f4-9e95-855c-bd52-7dfa65b83aea`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·office·sti · exports physicians · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·office·sti · ← collapse·law·merge·office·sti
 analysis —
 law physicians is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `44b4568e-ddd2-897d-9bc3-a6c336b68c1c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `08933090-5252-8d43-aff4-b3f89dfca543` · `pnpm readme` · `pnpm computed:check`</sub>

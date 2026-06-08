@@ -3,15 +3,15 @@
 
 # otolaryngologic
 
-path `otolaryngologic` · uuid `6b96b687-9283-812f-8409-971f685cd801` · diamond `25b0f1fa-1176-817a-a86b-155393ec6812`
+path `otolaryngologic` · uuid `6b96b687-9283-812f-8409-971f685cd801` · diamond `fd696f0e-dccd-8482-a81e-19b4fd58a87d`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports otolaryngologic · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law otolaryngologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f5f417fb-ac19-8e52-a701-353f78f2bed2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5eaa22ad-847f-8208-a905-be5d7cc7bf40` · `pnpm readme` · `pnpm computed:check`</sub>

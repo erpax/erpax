@@ -3,15 +3,15 @@
 
 # repayment
 
-path `repayment` · uuid `c9f5dee5-2dc2-8fe7-a816-3000596b866d` · diamond `fabd68e6-f15d-8303-9c28-189a0ca209e1`
+path `repayment` · uuid `c9f5dee5-2dc2-8fe7-a816-3000596b866d` · diamond `e548db85-813f-8fb3-a43c-24ec61274aa4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·form·law·loan·merge·minimum·monthly·specification·sti · exports repayment · escapes —
-links `10/10` · folded `1` · bonds in `6` out `6`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat·unlimited · ← action·cohort·landmarks·memories·stat·unlimited
+neighbors → amount·collapse·form·law·loan·merge·minimum·monthly·specification·sti · ← amount·collapse·form·law·loan·merge·minimum·monthly·specification·sti
 analysis —
 law repayment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e98bd867-8c74-84f1-9f89-1c15c69b7b72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a295d14-0426-8b8f-b23b-bf6a94afb6de` · `pnpm readme` · `pnpm computed:check`</sub>

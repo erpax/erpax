@@ -3,15 +3,15 @@
 
 # lineup
 
-path `lineup` · uuid `1f4af530-7511-80c0-af47-77a4fe207335` · diamond `013aca60-80f2-86ed-856d-9f1b54c8d4c0`
+path `lineup` · uuid `1f4af530-7511-80c0-af47-77a4fe207335` · diamond `ddfa1917-43b3-8cad-8805-4982c7032cd3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports broadcast·collapse·law·merge·sti · exports lineup · escapes —
-links `5/5` · folded `1` · bonds in `24` out `24`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·animal·apiculture·aquaculture·biological·biomagnetism·breastfeeding·crisis·feed·florist·grantee·hardcover·has·height·horo·issue·knows·landmarks·lifestyle·makes·monday·partition·sla·website · ← agriculture·animal·apiculture·aquaculture·biological·biomagnetism·breastfeeding·crisis·feed·florist·grantee·hardcover·has·height·horo·issue·knows·landmarks·lifestyle·makes·monday·partition·sla·website
+neighbors → broadcast·collapse·law·merge·sti · ← broadcast·collapse·law·merge·sti
 analysis —
 law lineup is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `42dac8a5-e08e-898d-9043-857bb52ffe8d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `123dd7a7-c513-8382-9acb-66b6d2219345` · `pnpm readme` · `pnpm computed:check`</sub>

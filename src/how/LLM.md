@@ -3,15 +3,15 @@
 
 # how
 
-path `how` · uuid `1c46a400-4063-8087-ba9f-54933c53617b` · diamond `9f4e629d-50a1-8f2a-a231-d9afddb5feeb`
+path `how` · uuid `1c46a400-4063-8087-ba9f-54933c53617b` · diamond `8f6767a8-2c49-8e86-9a59-1605591ad6cb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports direction·item·law·performed·section·step·supply·tip·tool · exports how · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bundle·cohort·landmarks·memories·stat · ← bundle·cohort·landmarks·memories·stat
+neighbors → direction·item·law·performed·section·step·supply·tip·tool · ← direction·item·law·performed·section·step·supply·tip·tool
 analysis —
 law how is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `60a64bed-f563-8c67-a531-7f65b0fe1cda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1482c13e-b2fd-8721-9338-82ad4cf8f453` · `pnpm readme` · `pnpm computed:check`</sub>

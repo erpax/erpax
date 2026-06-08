@@ -3,15 +3,15 @@
 
 # weave
 
-path `horo/weave` · uuid `bb237327-acdc-8170-91c5-02f037e3477b` · diamond `781ad782-78ee-8461-a1a7-bef25b16c9ad`
+path `horo/weave` · uuid `bb237327-acdc-8170-91c5-02f037e3477b` · diamond `55fa2f45-676a-8e41-86a7-b39c11b9962b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports coil·crest·database·flow·horo·law·sequence·share·whole · exports weave · escapes —
-links `10/10` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·octave · ← landmarks·octave
+links `10/10` · folded `1` · bonds in `11` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → coil·crest·database·flow·horo·law·notes·propose·sequence·share·whole · ← coil·crest·database·flow·horo·law·notes·propose·sequence·share·whole
 analysis —
 law [[horo]] position 4 — the interlinking step where the parts meet and the flow is worked (in-production · woven into relationships), the composition where members link and relations are stored.
 
 ---
 
-<sub>content-uuid `2766cd45-163a-8ea4-b9ca-3be412a58914` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b673a5e-e52e-8f12-9482-f194bdad5dca` · `pnpm readme` · `pnpm computed:check`</sub>

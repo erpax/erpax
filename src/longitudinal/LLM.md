@@ -3,15 +3,15 @@
 
 # longitudinal
 
-path `longitudinal` · uuid `9c156db1-8e3a-88e5-bc26-0c394a6ee435` · diamond `8df3b0d1-5c45-85a7-b502-6d4187e9471b`
+path `longitudinal` · uuid `9c156db1-8e3a-88e5-bc26-0c394a6ee435` · diamond `7eb4d1e6-6372-868d-ab7f-d1363c83d7c9`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports longitudinal · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·prerequisites·stat · ← cohort·landmarks·memories·prerequisites·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law longitudinal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ff2e28be-0e21-8ed7-89ad-23b51b739a45` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dff21311-ab56-833a-9857-c13da84a10a1` · `pnpm readme` · `pnpm computed:check`</sub>

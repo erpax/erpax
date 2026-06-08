@@ -3,15 +3,15 @@
 
 # lose
 
-path `lose` · uuid `7f301bd9-fecd-8ba8-b8e7-bfeed927a5a1` · diamond `9875e423-ac39-850d-a7b7-e6474c2f8022`
+path `lose` · uuid `7f301bd9-fecd-8ba8-b8e7-bfeed927a5a1` · diamond `4cbab84a-6fb1-856c-8539-284c3d98c0d8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports lose · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law lose is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5010c25e-9e29-8d99-9732-8f6ab161bee0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `856c238d-4561-8754-a91f-d1b2a04f2c85` · `pnpm readme` · `pnpm computed:check`</sub>

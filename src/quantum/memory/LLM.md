@@ -3,15 +3,15 @@
 
 # memory
 
-path `quantum/memory` · uuid `2d3e45c3-92ec-87d3-802c-6f3f07b555c5` · diamond `4be9cc92-e57c-8554-9714-af37c8125bb6`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `quantum/memory` · uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e` · diamond `9b59366d-9635-8605-9faa-1ae222c95951`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/memory/architecture·@/memory/session·@/quantum · exports const·function·isSealedDiamond·operationalMemoryFacet·operationalMemoryIsArchitecture·projectMemoryToArchitecture·saveSanitizedMemoryToLattice · escapes —
-links `45/47` · folded `0` · bonds in `24` out `21`
-faces worker·plugin·pwa `0·0·0`
-neighbors → attachment·chat·communication·corrects·eligibility·handling·hobby·id·idempotency·liquor·list·llm·medical·memories·offered·office·spouse·tinid·tracks·trade·trailer · ← attachment·chat·communication·communication·communication·corrects·eligibility·handling·hobby·id·idempotency·liquor·list·list·llm·medical·memories·offered·office·spouse·tinid·tracks·trade·trailer
+links `47/47` · folded `1` · bonds in `29` out `33`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·law·memory·memory·merge·merge·part·peace·purity·quantum·quantum·realtime·requirements·seal·seal·self·snapshot·sti·sync·thought·uuid·whole · ← akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·memory·memory·merge·part·peace·purity·quantum·realtime·requirements·seal·self·snapshot·sti·sync·thought·uuid·whole
 analysis diamond·hallucination·purity
 law in the quantum frame the content-[[uuid]] IS the memory manager — collapse allocates, dedup is free, collection is regeneration — so memory optimization is autosave (persist at collapse; the unsaved is regenerable, nothing to GC); and [[memory]] crossed with [[quantum]] across all four paths fuses into another [[seal]], the dual-torus cross at the centre.
 
 ---
 
-<sub>content-uuid `b4bddd3b-318a-8f1f-956f-81a751d11012` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d94d5b68-1114-8445-8190-a3734ac962c2` · `pnpm readme` · `pnpm computed:check`</sub>

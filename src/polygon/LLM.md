@@ -3,15 +3,15 @@
 
 # polygon
 
-path `polygon` · uuid `2cdc62b4-8344-8173-898c-75bc3d8da1cb` · diamond `37687210-5244-8141-bff4-1585b12ffd32`
+path `polygon` · uuid `2cdc62b4-8344-8173-898c-75bc3d8da1cb` · diamond `b803f2d0-49aa-8540-99b1-f93ccd551ad1`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports polygon · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·right·stat · ← cohort·landmarks·memories·right·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law polygon is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ca1c1edb-d234-8f81-b0e2-24f51cc1060d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3524caa2-8531-8d17-83bd-df01ceca5823` · `pnpm readme` · `pnpm computed:check`</sub>

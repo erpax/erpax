@@ -3,15 +3,15 @@
 
 # network
 
-path `network` · uuid `50ecb2f2-e310-8b8f-b5aa-25d210074aaf` · diamond `18e90d15-d129-8eed-86f3-e07420a16cd2`
+path `network` · uuid `50ecb2f2-e310-8b8f-b5aa-25d210074aaf` · diamond `fd0cb3e3-fe9f-8aeb-9c36-66477a426ed9`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bottleneck·breath·cohort·competition·connections·decentralization·desire·diffusion·ecosystem·engagement·habit·links·market·mass·merge·network·power · exports network · escapes —
-links `29/29` · folded `1` · bonds in `4` out `2`
+links `29/29` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← analysis·background·landmarks·terminals
+neighbors → bottleneck·brain·breath·cohort·collapse·competition·connection·connections·decentralization·desire·diffusion·ecosystem·engagement·habit·includes·law·links·market·mass·merge·mycelium·network·plan·power·science·tier · ← bottleneck·brain·breath·cohort·collapse·competition·connection·connections·decentralization·desire·diffusion·ecosystem·engagement·habit·includes·law·links·market·mass·merge·mycelium·network·plan·power·science·tier
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a02f70ec-140c-8340-b151-0b7d85f7f676` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd1a80e6-473a-80d5-8aec-dafbbd4c3eb2` · `pnpm readme` · `pnpm computed:check`</sub>

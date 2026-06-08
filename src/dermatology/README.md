@@ -23,7 +23,21 @@
 
 - partition `dermatology` · sub-root `8048f07f-de34-8515-a22a-82815923fc53`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `25a8008b-8082-8419-a339-1cadb530c45f` · framed by typography partition `dermatology` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1b80d233-baba-805a-89ac-fafae858a0b6` · framed by typography partition `dermatology` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

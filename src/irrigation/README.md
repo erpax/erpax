@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `irrigation` · sub-root `d7857ec9-719b-8e71-beb9-6e292cf813d6`
-- bond degree `22` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `50` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `d7857ec9-719b-8e71-beb9-6e292cf813d6`
-- bonds in `1` · out `1`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `25` / `25`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2b893cb0-21b3-80ec-998b-15c57dd6d2b8` · framed by typography partition `irrigation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `878ff960-b8d9-85fb-b9fb-83655f23dd39` · framed by typography partition `irrigation` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

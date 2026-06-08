@@ -3,15 +3,15 @@
 
 # muscle
 
-path `muscle` · uuid `c3ac508c-7e29-8369-8286-d209fcd382a2` · diamond `eeeff0a3-c101-88f6-8383-9010154e7c65`
+path `muscle` · uuid `c3ac508c-7e29-8369-8286-d209fcd382a2` · diamond `1166eb43-6697-8577-942e-d4435838b278`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·law · exports muscle · escapes —
-links `2/2` · folded `1` · bonds in `12` out `12`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·cover·feed·getting·landmarks·memories·mobile·municipality·sla·supported·syllabus·thesis · ← agriculture·cover·feed·getting·landmarks·memories·mobile·municipality·sla·supported·syllabus·thesis
+neighbors → action·law · ← action·law
 analysis —
 law muscle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `629ef8e0-96f2-8054-9c8d-78a27b66e4a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a212f55d-c318-8dfb-a88b-28b1a57dc768` · `pnpm readme` · `pnpm computed:check`</sub>

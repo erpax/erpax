@@ -3,15 +3,15 @@
 
 # progression
 
-path `progression` · uuid `9ded40e1-f024-817d-bd31-ed4c3d2d212b` · diamond `0eca1e65-6b21-8118-bff4-b7b5103fb1fe`
+path `progression` · uuid `9ded40e1-f024-817d-bd31-ed4c3d2d212b` · diamond `08216ed4-86a8-866e-8c92-e5d07ad9c2d3`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·natural·sti · exports progression · escapes —
-links `5/5` · folded `1` · bonds in `183` out `170`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounts·akashic·amendments·analog·anchor·angel·assets·aura·auth·bio·biological·biometric·block·bone·breakfast·browser·calendars·carriers·center·centers·checklists·checks·city·classified·clinician·coding·cohort·commission·commitment·competency·confirmation·consent·considerations·contracts·contractual·cooking·corrects·correlation·cost·current·customers·dashboard·debit·departure·depth·description·details·devices·diet·dietary·district·document·documentation·emissions·empirical·employee·employees·emr·entertainment·evaluated·events·factor·fax·film·findings·game·getting·girls·good·governinglaw·guideline·high·hobby·id·instrument·interactive·interest·inverse·invoice·issue·it·itcooperative·jewelry·landmarks·left·legal·license·lifestyle·liquor·list·literature·llm·localize·manufacturing·marine·mass·materials·measure·medicine·memories·milestones·offered·opportunity·owners·parts·patients·pats·period·positions·postcode·price·process·project·projects·public·qualification·quantity·quotes·range·read·reconciliations·recourse·reports·restriction·resume·reviews·roadmap·rule·runs·safety·sales·saturday·sections·sector·see·segments·sell·sequence·sign·signatures·solve·spouse·spread·spreadsheet·statistics·structured·submissions·suggestions·supplement·supported·syllabus·symbol·tag·taxonomy·temporarily·topics·tourist·trading·transactions·transport·tvclip·upon·variables·video·visits·visual·window·workspace·wp · ← access·access·accounts·akashic·amendments·analog·anchor·angel·assets·aura·auth·bio·biological·biometric·block·bone·breakfast·browser·calendars·carriers·center·centers·checklists·checks·city·classified·clinician·coding·cohort·commission·commitment·competency·confirmation·consent·considerations·contracts·contractual·cooking·corrects·corrects·correlation·cost·current·customers·dashboard·dashboard·debit·departure·depth·description·details·details·devices·diet·dietary·district·document·documentation·documentation·emissions·empirical·employee·employees·emr·entertainment·evaluated·events·events·factor·fax·film·film·findings·game·getting·girls·good·governinglaw·guideline·high·hobby·id·instrument·interactive·interest·inverse·invoice·issue·it·itcooperative·itcooperative·jewelry·landmarks·left·legal·license·lifestyle·liquor·list·literature·llm·localize·manufacturing·marine·mass·materials·measure·medicine·memories·milestones·offered·opportunity·owners·parts·patients·pats·period·positions·postcode·price·process·project·projects·public·qualification·quantity·quotes·quotes·range·read·reconciliations·recourse·reports·reports·restriction·resume·reviews·reviews·roadmap·rule·runs·runs·safety·sales·saturday·sections·sector·see·segments·sell·sequence·sign·signatures·solve·spouse·spread·spreadsheet·statistics·structured·submissions·suggestions·supplement·supported·syllabus·symbol·tag·taxonomy·temporarily·topics·tourist·trading·transactions·transactions·transport·tvclip·upon·variables·video·visits·visual·window·workspace·wp
+neighbors → collapse·law·merge·natural·sti · ← collapse·law·merge·natural·sti
 analysis —
 law progression is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `97cdcd96-26db-84ca-8876-af913f4630df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4055ada5-3eb5-8f16-a96b-13a89d0cccbd` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # limit
 
-path `limit` · uuid `a936eea0-e41d-82c4-afcf-27aebf65bf28` · diamond `d224351b-7be2-84a8-a48e-39eb27003944`
+path `limit` · uuid `a936eea0-e41d-82c4-afcf-27aebf65bf28` · diamond `f96982a1-5844-8c20-b74a-d8f44d396c6c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·generate·identity·law·merge·profane·proof·recover·sacred·science·sequence·society·torus·trinity·uuid · exports limit · escapes —
-links `27/27` · folded `1` · bonds in `5` out `5`
+links `27/27` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → angel·auth·balance·barrier·choice·domain·floor·generate·identity·income·law·llm·mcp·merge·overdraft·price·profane·proof·purchase·recover·sacred·science·scouting·sequence·society·torus·trinity·uncertainty·uuid · ← angel·auth·balance·barrier·choice·domain·floor·generate·identity·income·law·llm·mcp·merge·overdraft·price·profane·proof·purchase·recover·sacred·science·scouting·sequence·society·torus·trinity·uncertainty·uuid
 analysis —
 law erpax can do exactly what is provable within FORM and no more — the Gödel boundary (truth, judgment, finality, true-erasure, prevention, the subjective) is never faked from within; the missing third is supplied from OUTSIDE by the [[trinity]] ([[society]]'s will, measurement, the human, crypto-shred).
 
 ---
 
-<sub>content-uuid `1f9d87c4-005a-8338-88ea-675f8c3cde72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b2a0879-34ee-8017-953c-5d37e3902651` · `pnpm readme` · `pnpm computed:check`</sub>

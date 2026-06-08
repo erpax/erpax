@@ -2,7 +2,7 @@
 
 # cloning
 
-> atom `cloning` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `cloning` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `cloning` · sub-root `4ea131a4-5375-89da-a0b2-61d7c6b569d7`
 - bond degree `53` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
 
 ## [[cloudflare]] bindings
 
@@ -42,7 +42,7 @@
 
 ## analytics
 
-- bond degree `53` · sealed `1` · horo `7`
+- bond degree `53` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
@@ -56,8 +56,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6fb91dbe-80ec-863d-90c6-916e5e25cc44` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dc19c61e-2f96-8618-a30d-6f0a6d96873f` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # schedules
 
-path `legal/entities/debt/schedules` · uuid `021bba8b-136a-860a-8802-68fee80e709a` · diamond `ad583d41-c922-82fc-b8df-91e09c754737`
+path `legal/entities/debt/schedules` · uuid `021bba8b-136a-860a-8802-68fee80e709a` · diamond `40957030-e9e5-8470-87fb-6f207368d264`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `1/1` · folded `1` · bonds in `9` out `9`
+links `1/1` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accommodation·cohort·landmarks·lei·license·memories·physiological·siblings·stat · ← accommodation·cohort·landmarks·lei·license·memories·physiological·siblings·stat
+neighbors → accounting·assets·balance·entities·identity·intangible·law·proof·standard·transaction · ← accounting·assets·balance·entities·identity·intangible·law·proof·standard·transaction
 analysis —
 law the register of a legal entity's debt instruments (loans, bonds, leases, convertible notes) tracking covenants and repayment schedules, each classified current vs non-current per IFRS-9 / IAS-1.
 
 ---
 
-<sub>content-uuid `25cb5e83-afab-89b6-844d-2b4f0f9d998a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `59f3a147-3c3d-807b-ae7b-058ae134fea3` · `pnpm readme` · `pnpm computed:check`</sub>

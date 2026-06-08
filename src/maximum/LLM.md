@@ -3,15 +3,15 @@
 
 # maximum
 
-path `maximum` · uuid `a4ca3f2d-f7a3-8a61-8e84-d7dd9913e488` · diamond `eb538bbe-952a-87ea-af12-24c07a58353a`
+path `maximum` · uuid `a4ca3f2d-f7a3-8a61-8e84-d7dd9913e488` · diamond `22a83fa7-5535-825b-9c6f-af777d753d9a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports attendee·capacity·collapse·dose·enrollment·intake·law·merge·physical·schedule·sti·virtual · exports maximum · escapes —
-links `12/12` · folded `1` · bonds in `7` out `7`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pronoun·stat·usage·use · ← cohort·landmarks·memories·pronoun·stat·usage·use
+neighbors → attendee·capacity·collapse·dose·enrollment·intake·law·merge·physical·schedule·sti·virtual · ← attendee·capacity·collapse·dose·enrollment·intake·law·merge·physical·schedule·sti·virtual
 analysis —
 law maximum is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ef04e125-4c83-86c9-874b-075e888d1922` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5d3519e9-2dc8-8f8e-a0c3-4ef7984e243e` · `pnpm readme` · `pnpm computed:check`</sub>

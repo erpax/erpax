@@ -3,15 +3,15 @@
 
 # information
 
-path `information` · uuid `a1442341-3315-8370-be47-dfb4d819ca29` · diamond `aadb0fbf-27ea-8284-a1c9-c1647e0fb9ee`
+path `information` · uuid `a1442341-3315-8370-be47-dfb4d819ca29` · diamond `b96e542f-3a01-8724-b936-c7ef691e37e8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports center·collapse·law·merge·nutrition·sti·tourist · exports information · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → center·collapse·law·merge·nutrition·science·sti·tourist · ← center·collapse·law·merge·nutrition·science·sti·tourist
 analysis —
 law information is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `881fd94e-8316-8bce-ade7-2dbc6795f66a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e725ac1-3cf0-8b43-b8df-2ad5be2cd9ef` · `pnpm readme` · `pnpm computed:check`</sub>

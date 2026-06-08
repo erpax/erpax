@@ -4,7 +4,7 @@
 # auto
 
 path `auto` · uuid `75643502-1919-8f9e-ab01-0b11260bd9d8` · diamond `fb97aafb-0660-823c-949e-4ab276da5b92`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+horo `8` `crest` · trinity `1·0·0` · sealed `0`
 imports body·collapse·dealer·law·merge·parts·rental·repair·shop·sti·store·wash · exports auto · escapes —
 links `12/12` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law auto is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `4c816124-6834-86e2-8ffe-f45ad3e29058` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f31e9a7f-429c-8136-b624-da72d66a7a46` · `pnpm readme` · `pnpm computed:check`</sub>

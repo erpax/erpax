@@ -3,15 +3,15 @@
 
 # likes
 
-path `likes` · uuid `01caa10e-2030-89fb-ac09-917730a5fdaa` · diamond `c35b434c-465b-8a1d-87bb-459505f0c6da`
+path `likes` · uuid `01caa10e-2030-89fb-ac09-917730a5fdaa` · diamond `ad469715-0e5c-820e-b5bc-0cf79d989da1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·user · exports likes · escapes —
-links `5/5` · folded `1` · bonds in `20` out `20`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·cohort·dance·destination·dietary·drive·enrolling·grade·grant·landmarks·marry·memories·natural·parlor·qualification·qualifications·shop·stat·sufficient·tinid · ← aura·cohort·dance·destination·dietary·drive·enrolling·grade·grant·landmarks·marry·memories·natural·parlor·qualification·qualifications·shop·stat·sufficient·tinid
+neighbors → collapse·law·merge·sti·user · ← collapse·law·merge·sti·user
 analysis —
 law likes is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd31a4e9-a788-8023-9914-d30993ddc7c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9e45135-dfa6-8510-8279-74765f314cd3` · `pnpm readme` · `pnpm computed:check`</sub>

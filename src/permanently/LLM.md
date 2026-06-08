@@ -3,15 +3,15 @@
 
 # permanently
 
-path `permanently` · uuid `fb508b1b-769e-8f31-aa43-20592797cf6a` · diamond `d3385693-92c7-83ff-946a-fa6904c27ca1`
+path `permanently` · uuid `fb508b1b-769e-8f31-aa43-20592797cf6a` · diamond `6db1ae01-faf0-8e6c-bfa2-1565c74a6c86`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports permanently · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law permanently is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `64ad727e-61bd-84b7-b530-3183768b0c71` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d88f6cf3-40c0-8395-828d-f9a029f64853` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # admin
 
-> atom `admin` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `admin` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,7 +23,7 @@
 
 - partition `admin` · sub-root `ce84b495-c8c5-82dd-93b4-144c06e69c35`
 - bond degree `36` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
 
 ## [[cloudflare]] bindings
 
@@ -42,7 +42,7 @@
 
 ## analytics
 
-- bond degree `36` · sealed `1` · horo `8`
+- bond degree `36` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `8`
 
@@ -56,8 +56,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fa63276b-7439-8365-b325-26f32043d772` · framed by typography partition `admin` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `610a692a-37b1-8785-90ea-36a0debd5d72` · framed by typography partition `admin` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

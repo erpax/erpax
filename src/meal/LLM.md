@@ -3,15 +3,15 @@
 
 # meal
 
-path `meal` · uuid `fdfe3e77-697e-84a5-9b0e-c78834fdc1ec` · diamond `f7e05ff2-84a3-8bab-b492-d7929666e78e`
+path `meal` · uuid `fdfe3e77-697e-84a5-9b0e-c78834fdc1ec` · diamond `4ad16ec1-0872-858c-8e0e-e4d75207673c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·service·sti · exports meal · escapes —
-links `5/5` · folded `1` · bonds in `27` out `28`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·after·appearance·associated·authenticity·beds·catalog·contains·duns·entropy·fungus·holographic·import·issn·landmarks·leisure·mail·negative·num·optician·ordered·positive·post·radiation·retail·skills·structure·union · ← access·after·appearance·associated·beds·catalog·contains·duns·entropy·fungus·holographic·import·issn·landmarks·leisure·mail·negative·num·optician·ordered·positive·post·radiation·retail·skills·structure·union
+neighbors → collapse·law·merge·service·sti · ← collapse·law·merge·service·sti
 analysis —
 law meal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4b812c8b-b01a-82dd-8b63-a4cfdd7af77f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `98104c7b-634a-8344-a286-2a44631d0773` · `pnpm readme` · `pnpm computed:check`</sub>

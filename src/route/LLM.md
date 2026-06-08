@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports administration·collapse·law·merge·sti · exports route · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·panel·stat · ← cohort·landmarks·memories·panel·stat
+neighbors → administration·collapse·law·merge·sti · ← administration·collapse·law·merge·sti
 analysis —
 law route is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e33e721e-ba8a-8ea9-bf9c-ac861f074b46` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `664392bd-6bf2-8abc-8a44-5c8e8e3d3c25` · `pnpm readme` · `pnpm computed:check`</sub>

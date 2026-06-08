@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·region·sti · exports ineligible · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·region·sti · ← collapse·law·merge·region·sti
 analysis —
 law ineligible is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `816973d3-ffac-8682-80e5-0cfe7937b027` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3791a7da-7528-89ec-8bf7-b8a8c20607d4` · `pnpm readme` · `pnpm computed:check`</sub>

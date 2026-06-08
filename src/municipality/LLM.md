@@ -3,15 +3,15 @@
 
 # municipality
 
-path `municipality` · uuid `e6271a68-194c-8403-889d-4d145736d648` · diamond `ea5593e8-5b8b-8432-a60a-ab64a75248d6`
+path `municipality` · uuid `e6271a68-194c-8403-889d-4d145736d648` · diamond `debe2e30-72df-8d1c-8030-e52aca3bfcc7`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports municipality · escapes —
-links `4/4` · folded `1` · bonds in `14` out `13`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → biomagnetism·composite·connected·consent·death·eat·landmarks·lesser·memories·muscle·natural·sla·supported · ← biomagnetism·composer·composite·connected·consent·death·eat·landmarks·lesser·memories·muscle·natural·sla·supported
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law municipality is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f2cd6f08-e513-86ec-aebe-3a6a4d53db5a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6588dd53-0007-8ef5-9e87-7776bf2920dd` · `pnpm readme` · `pnpm computed:check`</sub>

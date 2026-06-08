@@ -2,7 +2,7 @@
 
 # communication
 
-> atom `agent/communication` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `agent/communication` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
 - bond degree `72` · analysis neighbors `agent`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -37,7 +37,7 @@
 
 ## analytics
 
-- bond degree `72` · sealed `1` · horo `7`
+- bond degree `72` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
@@ -51,8 +51,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `39010946-6040-8191-9811-6a7b7d98337f` · framed by typography partition `agent` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e216eb21-7635-8222-968e-cb447e3d17ce` · framed by typography partition `agent` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

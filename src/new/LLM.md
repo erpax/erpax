@@ -3,15 +3,15 @@
 
 # new
 
-path `new` · uuid `2dbd11aa-c18a-8d4a-b1b9-5782b0cc1ac5` · diamond `0a071053-951f-8c43-af65-e78fc89b82fd`
+path `new` · uuid `2dbd11aa-c18a-8d4a-b1b9-5782b0cc1ac5` · diamond `d7c14025-e06d-8131-9677-0356cb96be45`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accepting·collapse·law·merge·patients·sti · exports new · escapes —
-links `6/6` · folded `1` · bonds in `0` out `0`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → accepting·collapse·law·merge·patients·sti · ← accepting·collapse·law·merge·patients·sti
 analysis —
 law new is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fe9c8102-ab95-823d-8f18-656eb746eb96` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8ab8fa1-1d7d-87e2-a991-e0a6e9c5928b` · `pnpm readme` · `pnpm computed:check`</sub>

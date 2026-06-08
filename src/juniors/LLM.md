@@ -3,15 +3,15 @@
 
 # juniors
 
-path `juniors` · uuid `3b7a762f-17d1-815d-9b6e-6bb9e2770c4c` · diamond `8fd68502-4190-8167-830a-233f9c68472b`
+path `juniors` · uuid `3b7a762f-17d1-815d-9b6e-6bb9e2770c4c` · diamond `ae8ecf36-8597-8610-b74c-f4a8cbfa5cf5`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports juniors · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·contained·jurisdiction·landmarks·scouting · ← balance·contained·jurisdiction·landmarks·scouting
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law juniors is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `607938cc-b3f5-8a22-ae91-1789659115b1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd507762-bcfa-8cbf-98e7-8b1ea9348aa5` · `pnpm readme` · `pnpm computed:check`</sub>

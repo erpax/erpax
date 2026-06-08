@@ -3,15 +3,15 @@
 
 # last
 
-path `last` · uuid `7a0b19d8-a5e9-8daf-96ab-ca6e3ff0925c` · diamond `11a43102-e102-85ce-a5df-b3ee39d530ea`
+path `last` · uuid `7a0b19d8-a5e9-8daf-96ab-ca6e3ff0925c` · diamond `713f0557-ac52-8083-ad2b-04045ecebabf`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·country·law·merge·processing·reviewed·sti · exports last · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·deleted·landmarks·memories·stat·thing · ← cohort·deleted·landmarks·memories·stat·thing
+neighbors → collapse·country·law·merge·processing·reviewed·sti · ← collapse·country·law·merge·processing·reviewed·sti
 analysis —
 law last is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a12071bc-5e8b-843d-b602-f89b97fde0a6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f6f87b0-06fd-8a26-802a-fc6f9602a3c2` · `pnpm readme` · `pnpm computed:check`</sub>

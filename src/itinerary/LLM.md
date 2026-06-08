@@ -3,15 +3,15 @@
 
 # itinerary
 
-path `itinerary` · uuid `3c61495e-f5f5-8296-b1e0-9a1bb5643f02` · diamond `0acf2564-fb35-83fc-ac3b-35b5e2f86dfb`
+path `itinerary` · uuid `3c61495e-f5f5-8296-b1e0-9a1bb5643f02` · diamond `42dd0659-6756-88bc-859d-8fef6829a52e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports itinerary · escapes —
-links `3/3` · folded `1` · bonds in `5` out `5`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·musical·stat · ← cohort·landmarks·memories·musical·stat
+neighbors → law·place·thing · ← law·place·thing
 analysis —
 law itinerary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1fa1690e-9beb-884f-8b0f-aa850e9a9c8b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1a6113e-b35c-8e2b-b079-8305ba89beab` · `pnpm readme` · `pnpm computed:check`</sub>

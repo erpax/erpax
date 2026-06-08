@@ -3,15 +3,15 @@
 
 # preparation
 
-path `preparation` · uuid `ed218be0-fd52-8907-9c39-55f30df493fb` · diamond `68b4b3eb-5df2-8366-8708-dc6cee9c57ad`
+path `preparation` · uuid `ed218be0-fd52-8907-9c39-55f30df493fb` · diamond `a4d20644-d6ce-849b-b64e-a3baa28ce727`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports preparation · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·driving·landmarks·lower·memories·occupational·standards·stat · ← cohort·driving·landmarks·lower·memories·occupational·standards·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law preparation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `166f580c-7539-8bfa-93db-0c8e79b54d53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2b83811c-c045-872c-958e-fb55cbe21f6b` · `pnpm readme` · `pnpm computed:check`</sub>

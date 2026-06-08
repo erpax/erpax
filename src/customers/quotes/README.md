@@ -25,7 +25,26 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `40` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §10 contract-with-customer` · banner
+- `ISO-19011:2018 audit-trail quote-issuance` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time issued-at expires-at` · banner
+- `SOX §404 internal-controls quote-approval` · banner
+- `US-GAAP ASC-606-10-25 contract-existence` · banner
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `19f37b05-7352-80b4-af7e-da8027dc9c63` · framed by typography partition `customers` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3b419e05-5224-8ef1-b8d7-6d43d29ea88e` · framed by typography partition `customers` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

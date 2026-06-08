@@ -3,15 +3,15 @@
 
 # protein
 
-path `protein` · uuid `eb1799e0-3ce5-8cb5-bd09-c45d4191fb0f` · diamond `ba3688a1-4dc5-83ce-a86e-81de50b79fb6`
+path `protein` · uuid `eb1799e0-3ce5-8cb5-bd09-c45d4191fb0f` · diamond `a2328170-b7b7-85ae-8ebd-4fd9f067f4b2`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports content·law · exports protein · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·transfer · ← cohort·landmarks·memories·stat·transfer
+neighbors → content·law · ← content·law
 analysis —
 law protein is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8dbc611a-c7f1-83bb-9e91-789571188d56` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c19e3383-72b4-8fc0-afb9-fe44e1daf4c9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,25 @@
 
 - partition `ecosystem` · sub-root `bfcbbfb2-e52e-8fca-8465-e51196a6bb11`
 - bond degree `81` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed, never hand-asserted` · banner
+- `Elton (1958) vs May, Will a Large Complex System be Stable? (1972) — diversity–stability debate` · banner
+- `EU-1958` · catalogue
+- `Lindeman, The Trophic-Dynamic Aspect of Ecology (1942) — ~10% energy per level` · banner
+- `Tansley (1935) — coined "ecosystem": organisms plus environment as one system` · banner
+
+## analytics
+
+- bond degree `81` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `12f90c19-171c-8a0a-84a0-a30ca38fbc55` · framed by typography partition `ecosystem` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `75d143e9-3356-8d12-851d-5c3a525838f7` · framed by typography partition `ecosystem` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>

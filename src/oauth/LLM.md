@@ -3,15 +3,15 @@
 
 # oauth
 
-path `oauth` · uuid `ec6c1381-8884-8822-982b-44720fc4e739` · diamond `9dc0804f-985f-8ab2-86e8-fd0ff5fb9963`
+path `oauth` · uuid `ec6c1381-8884-8822-982b-44720fc4e739` · diamond `3e9774f5-f7a3-8b17-be21-0fe6ee9b66ce`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports GrantType·function·interface · escapes —
-links `14/14` · folded `1` · bonds in `4` out `4`
+links `14/14` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → access·identity·ingest·law·sandbox·self·workspace · ← access·identity·ingest·law·sandbox·self·workspace
 analysis —
 law the OAuth 2.0 token lifecycle (acquire · refresh · scope) is pure policy and the token-endpoint call is the only I/O boundary; one atom serves every external API with least-privilege [[access]] and per-tenant secrets released only through the [[sandbox]] broker — never in the registry.
 
 ---
 
-<sub>content-uuid `b8fbe6fe-b24e-8bb7-a204-da468839c070` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aed72e93-7438-8c06-b87e-1db13fee546d` · `pnpm readme` · `pnpm computed:check`</sub>

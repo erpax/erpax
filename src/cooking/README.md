@@ -23,7 +23,7 @@
 
 - partition `cooking` · sub-root `2abc5039-805e-8e44-ac09-dbb7644d36ef`
 - bond degree `15` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `64dcb6b7-d3bd-8a19-bdf3-6d1060e40193` · framed by typography partition `cooking` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `be3832ec-9676-8ef5-aba6-bbb000dbc955` · framed by typography partition `cooking` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

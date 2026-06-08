@@ -3,15 +3,15 @@
 
 # producer
 
-path `producer` · uuid `f315dce0-4dad-8c8e-b77f-9b1c6d6a1abe` · diamond `cdb63e31-09f5-8c07-b19f-5b5fbdfd24e1`
+path `producer` · uuid `f315dce0-4dad-8c8e-b77f-9b1c6d6a1abe` · diamond `daeb0a7c-de55-892b-8447-4259c2a9354d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports producer · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·owned·stat · ← cohort·landmarks·memories·owned·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law producer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `edef5500-30dd-8482-8b42-e4ad9ef79c06` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b73d920a-a1b9-8708-8d60-20e41c2c4ef0` · `pnpm readme` · `pnpm computed:check`</sub>

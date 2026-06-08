@@ -3,15 +3,15 @@
 
 # height
 
-path `height` · uuid `1b733707-ab4b-87ed-84cc-124e4778b317` · diamond `e0dc4512-b3d4-81c2-9183-322f51ea5775`
+path `height` · uuid `1b733707-ab4b-87ed-84cc-124e4778b317` · diamond `46bd3a14-0dc9-8f52-9149-e8796833845d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports height · escapes —
-links `2/2` · folded `1` · bonds in `18` out `18`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·biological·biomagnetism·breastfeeding·candidate·coffee·florist·grantee·landmarks·lineup·longitude·max·monday·parent·partition·seed·vibration·worth · ← animal·biological·biomagnetism·breastfeeding·candidate·coffee·florist·grantee·landmarks·lineup·longitude·max·monday·parent·partition·seed·vibration·worth
+neighbors → law·thing · ← law·thing
 analysis —
 law height is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b1d91dd1-7a6b-8187-997e-ae8c96a04771` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `add16e6b-e5a9-8bd9-8323-352a63d2dc8a` · `pnpm readme` · `pnpm computed:check`</sub>

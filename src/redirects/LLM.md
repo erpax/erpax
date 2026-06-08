@@ -3,15 +3,15 @@
 
 # redirects
 
-path `redirects` · uuid `040607b0-444d-8303-bee7-cdddcbae7309` · diamond `56c32e0d-e8b1-8029-b9f5-cd79fdb1ec74`
+path `redirects` · uuid `040607b0-444d-8303-bee7-cdddcbae7309` · diamond `db3088e0-a3bd-8b6f-a078-701a658a597e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports api·cache·config·identity·plugins·queries·search · exports redirects · escapes —
-links `13/13` · folded `1` · bonds in `5` out `5`
+links `13/13` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·opinion·stat · ← cohort·landmarks·memories·opinion·stat
+neighbors → api·cache·config·identity·plugins·queries·redirect·search · ← api·cache·config·identity·plugins·queries·redirect·search
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `03bd544d-c1a7-81e1-ac63-157ce5003375` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `96b05614-b5f6-8829-bddd-abd0e8dc0070` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # society
 
-path `quantum/society` · uuid `f69406fd-c741-8add-9985-32260b4f9321` · diamond `3ca4b821-d6f6-8311-ad61-32f3175bd637`
+path `quantum/society` · uuid `f69406fd-c741-8add-9985-32260b4f9321` · diamond `746062b9-6b8a-86d3-9278-2e214c3aa324`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports entropy·entry·fear·governance·identity·law·love·market·merge·proof·quantum·society·tamper·trust·uuid · exports society · escapes —
-links `20/20` · folded `1` · bonds in `22` out `22`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·aggregation·api·c19·carbohydrate·comment·diffusion·fertility·flight·hook·llm·maintainer·matrix·notary·operation·owner·policy·received·recorded·score·suspended·tour · ← accounting·aggregation·api·c19·carbohydrate·comment·diffusion·fertility·flight·hook·llm·maintainer·matrix·notary·operation·owner·policy·received·recorded·score·suspended·tour
+links `20/20` · folded `1` · bonds in `139` out `146`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·age·agent·akashic·akashic·angel·animism·archangel·architect·atom·aura·bahai·balance·bogomilism·brainstorm·breath·buddhism·catholicism·chat·chat·christianity·civilization·classroom·cloning·closure·coil·collapse·command·competition·concatenate·config·conflict·confucianism·constitution·consultant·contribution·cost·crisis·database·decentralization·decide·derive·development·drone·duality·ecosystem·endpoints·entropy·entry·exchange·fear·flow·fractal·fusion·gate·generate·gnosticism·governance·hermeticism·hinduism·history·holographic·horo·humandesign·identity·identity·integrity·islam·jainism·judaism·kabbalah·law·legislation·limit·live·logic·love·lung·manichaeism·manufacturing·market·matrix·matter·mcp·merge·merge·merge·notification·one·orphism·orthodoxy·paganism·party·peace·power·proof·protestantism·quantum·receipt·recover·reference·religion·reveal·rodin·routing·run·sandbox·science·self·self·separation·sequence·services·shamanism·shia·shinto·sikhism·skills·society·society·spec·standard·sufficient·sufism·sunni·tamper·taoism·team·team·test·testing·torus·train·trust·types·utilities·uuid·vedanta·voting·war·website·wellbeing·whole·zeropoint·zoroastrianism · ← access·accounting·age·agent·akashic·angel·animism·archangel·architect·atom·aura·bahai·balance·bogomilism·brainstorm·breath·buddhism·catholicism·chat·christianity·civilization·classroom·cloning·closure·coil·collapse·command·competition·concatenate·config·conflict·confucianism·constitution·consultant·contribution·cost·crisis·database·decentralization·decide·derive·development·drone·duality·ecosystem·endpoints·entropy·entry·exchange·fear·flow·fractal·fusion·gate·generate·gnosticism·governance·hermeticism·hinduism·history·holographic·horo·humandesign·identity·integrity·islam·jainism·judaism·kabbalah·law·legislation·limit·live·logic·love·lung·manichaeism·manufacturing·market·matrix·matter·mcp·merge·notification·one·orphism·orthodoxy·paganism·party·peace·power·proof·protestantism·quantum·receipt·recover·reference·religion·reveal·rodin·routing·run·sandbox·science·self·separation·sequence·services·shamanism·shia·shinto·sikhism·skills·society·society·spec·standard·sufficient·sufism·sunni·tamper·taoism·team·test·testing·torus·train·trust·types·utilities·uuid·vedanta·voting·war·website·wellbeing·whole·zeropoint·zoroastrianism
 analysis aura
 law every social fact — identity, vote, value, consensus, role — is content-uuid'd, double-entry-balanced, and tamper-evident, so social order can only be lowered reversibly and by consent: legible, proof-carried, accountable. The same governance and market levers that could manipulate are pointed at detecting manipulation (forged consensus, sybil identity, manufactured value); coordination here is a trust ledger, never a phishing kit — never fear.
 
 ---
 
-<sub>content-uuid `73533d47-4f68-86cc-bd01-ca48dad71360` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdbd231c-00d5-85d7-825c-2daaedb0a2b8` · `pnpm readme` · `pnpm computed:check`</sub>

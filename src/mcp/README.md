@@ -2,7 +2,7 @@
 
 # mcp
 
-> atom `mcp` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `mcp` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `mcp` · sub-root `23a1e7a1-7e17-81e7-b1bd-f23ae0eda49c`
-- bond degree `143` · analysis neighbors `agent`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `159` · analysis neighbors `agent`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `be236224-ec0d-8ef8-bcb5-8cbbd642b75b`
-- bonds in `36` · out `44`
+- uuid `5f105b12-20b5-82f1-8c73-516cf2a12909`
+- bonds in `44` · out `52`
 - trinity form·code·proof `1`·`0`·`0`
 - links `25` / `25`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `824499cb-76c1-883a-829e-d8ae1f29dea2` · framed by typography partition `mcp` bonds `143` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6c03c2ed-e4d8-8f4c-b732-99f63f24e60b` · framed by typography partition `mcp` bonds `159` · `pnpm readme` · `pnpm readme:check`</sub>

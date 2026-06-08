@@ -3,15 +3,15 @@
 
 # inventory
 
-path `inventory` · uuid `1a3a0401-bc11-840a-bf54-dda78b5a4a73` · diamond `48057f6a-0175-8c9b-ac6b-e0bec1448695`
+path `inventory` · uuid `1a3a0401-bc11-840a-bf54-dda78b5a4a73` · diamond `ccd897de-f63d-8868-acd6-899ae1e9fe42`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·level·merge·sti · exports inventory · escapes —
-links `5/5` · folded `1` · bonds in `16` out `15`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·checks·contracts·defect·fusion·id·investment·invitation·invite·landmarks·partial·result·snapshots·structured·tour · ← accounting·checks·contracts·defect·finite·fusion·id·investment·invitation·invite·landmarks·partial·result·snapshots·structured·tour
+neighbors → collapse·law·level·merge·movement·sti · ← collapse·law·level·merge·movement·sti
 analysis —
 law inventory is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d3cf43c4-c3fb-89db-a324-3df368e79e70` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26031d67-f6b0-8f00-9566-0a55ec7764a3` · `pnpm readme` · `pnpm computed:check`</sub>

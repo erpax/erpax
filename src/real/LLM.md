@@ -3,15 +3,15 @@
 
 # real
 
-path `real` · uuid `5bb22e8a-fb09-848b-9691-aa820a233894` · diamond `efb042eb-0a6d-85dc-9572-01e28064baec`
+path `real` · uuid `5bb22e8a-fb09-848b-9691-aa820a233894` · diamond `f0fa77fd-6c2b-8e78-9935-bb638706ba7c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agent·collapse·estate·law·listing·merge·sti · exports real · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·memories·stat · ← cohort·database·landmarks·memories·stat
+neighbors → agent·collapse·estate·law·listing·merge·sti · ← agent·collapse·estate·law·listing·merge·sti
 analysis agent
 law real is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2de47eed-c873-879d-bb80-ba42cc871c7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `03acfdc6-5a1e-8477-a505-33a8de2fb46d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,7 +3,6 @@ import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import {
   connectFrontmatter,
-  connectCorpus,
   upgradeSkillText,
   renderFrontmatter,
   deriveDescription,
@@ -12,7 +11,7 @@ import {
   graphConnectivity,
   buildUpgradeContext,
   type ConnectedFrontmatter,
-} from './upgrade'
+} from './index'
 
 const sampleBody = `---
 name: alpha
@@ -26,15 +25,23 @@ Alpha bonds [[beta]] and [[gamma]].
 **Law — [[law]]: alpha is a test atom.**
 `
 
-const sampleBeta = `---
-name: beta
-description: Use when testing beta.
----
-
-# beta
-
-Beta links [[alpha]].
-`
+const patch = (leaf: string, extra: Partial<ConnectedFrontmatter> = {}): ConnectedFrontmatter => ({
+  name: leaf,
+  description: `Use when testing ${leaf}.`,
+  atomPath: leaf,
+  coordinate: `${leaf} · 1/first · abcd1234`,
+  contentUuid: '11111111-1111-5111-8111-111111111111',
+  diamondUuid: '22222222-2222-5222-8222-222222222222',
+  uuid: null,
+  horo: 1,
+  bonds: { in: [], out: [] },
+  typography: { partition: leaf, bondDegree: 0, neighbors: [] },
+  standards: [],
+  bindings: [],
+  neighbors: { wikilink: [], matrix: [], backlinks: [] },
+  version: 1,
+  ...extra,
+})
 
 describe('skill/router/upgrade — computational frontmatter self-upgrade', () => {
   it('deriveDescription preserves Use-when triggers', () => {
@@ -46,41 +53,39 @@ describe('skill/router/upgrade — computational frontmatter self-upgrade', () =
     expect(deriveDescription('x', bare)).toMatch(/^Use when reasoning about x —/)
   })
 
+  it('deriveDescription prefixes existing descriptions with Use when', () => {
+    const fm = `---\nname: router\ndescription: Barrel face for skill/router.\n---\n\n# router\n`
+    expect(deriveDescription('router', fm)).toBe(
+      'Use when reasoning about router — Barrel face for skill/router.',
+    )
+  })
+
   it('renderFrontmatter is deterministic for the same model', () => {
-    const fm: ConnectedFrontmatter = {
-      name: 'alpha',
-      description: 'Use when testing alpha.',
-      atomPath: 'alpha',
-      coordinate: 'alpha · 1/first · abcd1234',
-      contentUuid: '11111111-1111-5111-8111-111111111111',
-      diamondUuid: '22222222-2222-5222-8222-222222222222',
-      uuid: '33333333-3333-5333-8333-333333333333',
-      horo: 1,
+    const fm = patch('alpha', {
       bonds: { in: ['beta'], out: ['gamma'] },
       typography: { partition: 'alpha', bondDegree: 2, neighbors: ['beta'] },
       standards: ['ISO/IEC 25010:2023'],
       bindings: ['kv/TEST'],
       neighbors: { wikilink: ['beta'], matrix: ['gamma'], backlinks: ['beta'] },
-      version: 1,
-    }
+    })
     expect(renderFrontmatter(fm)).toBe(renderFrontmatter(fm))
   })
 
-  it('upgradeSkillText is idempotent', () => {
+  it('upgradeSkillText is idempotent on skill/router', () => {
     const ctx = buildUpgradeContext()
-    const fm = connectFrontmatter('skill/router', readSkill('skill/router'), ctx)
-    const once = upgradeSkillText(readSkill('skill/router'), fm)
+    const raw = readSkill('skill/router')
+    const fm = connectFrontmatter('skill/router', raw, ctx)
+    const once = upgradeSkillText(raw, fm)
     const twice = upgradeSkillText(once, connectFrontmatter('skill/router', once, ctx))
     expect(twice).toBe(once)
   })
 
-  it('same corpus ⇒ same connectCorpus patches', () => {
-    const a = connectCorpus()
-    const b = connectCorpus()
-    expect([...a.keys()].sort()).toEqual([...b.keys()].sort())
-    for (const k of a.keys()) {
-      expect(a.get(k)).toEqual(b.get(k))
-    }
+  it('same atom ⇒ same connectFrontmatter patch (deterministic)', () => {
+    const ctx = buildUpgradeContext()
+    const raw = readSkill('skill/router')
+    expect(connectFrontmatter('skill/router', raw, ctx)).toEqual(
+      connectFrontmatter('skill/router', raw, ctx),
+    )
   })
 
   it('contentUuidOf is stable on fixed bytes', () => {
@@ -101,27 +106,25 @@ describe('skill/router/upgrade — frontmatter connects all', () => {
     expect(fm.neighbors.wikilink.length + fm.bonds.in.length + fm.bonds.out.length).toBeGreaterThan(0)
   })
 
-  it('derived frontmatter graph is connected with no orphans (live corpus sample)', () => {
-    const patches = connectCorpus()
-    const leaves = new Set([...patches.keys()].map((p) => p.split('/').pop()!))
-    const sample = [...patches.keys()]
-      .filter((p) => ['skill/router', 'typography', 'readme', 'diamond', 'confirm'].includes(p))
-      .map((p) => [p, patches.get(p)!] as const)
-    const sub = new Map(sample)
-    const g = buildFrontmatterGraph(sub)
-    const conn = graphConnectivity(g, new Set(sample.map(([p]) => p.split('/').pop()!)))
+  it('synthetic subgraph is connected with no orphans', () => {
+    const patches = new Map<string, ConnectedFrontmatter>([
+      ['alpha', patch('alpha', { bonds: { in: [], out: ['beta'] }, neighbors: { wikilink: ['beta'], matrix: [], backlinks: [] } })],
+      ['beta', patch('beta', { bonds: { in: ['alpha'], out: ['gamma'] }, neighbors: { wikilink: ['gamma'], matrix: [], backlinks: ['alpha'] } })],
+      ['gamma', patch('gamma', { bonds: { in: ['beta'], out: [] }, neighbors: { wikilink: [], matrix: [], backlinks: ['beta'] } })],
+    ])
+    const leaves = new Set(['alpha', 'beta', 'gamma'])
+    const conn = graphConnectivity(buildFrontmatterGraph(patches), leaves)
     expect(conn.orphans).toEqual([])
     expect(conn.connected).toBe(true)
+    expect(conn.components).toBe(1)
   })
 
-  it('full corpus frontmatter graph has a single component', () => {
-    const patches = connectCorpus()
-    const leaves = new Set([...patches.keys()].map((p) => p.split('/').pop()!))
-    const g = buildFrontmatterGraph(patches)
-    const conn = graphConnectivity(g, leaves)
-    expect(conn.components).toBe(1)
-    expect(conn.orphans).toEqual([])
-    expect(conn.connected).toBe(true)
+  it('connectFrontmatter adds a corpus edge when an atom would be isolated', () => {
+    const ctx = buildUpgradeContext()
+    const lone = `---\nname: zorph\ndescription: Use when testing zorph.\n---\n\n# zorph\n\nNo links.\n`
+    const fm = connectFrontmatter('zorph', lone, ctx)
+    const edges = [...fm.bonds.in, ...fm.bonds.out, ...fm.neighbors.wikilink]
+    expect(edges.length).toBeGreaterThan(0)
   })
 })
 

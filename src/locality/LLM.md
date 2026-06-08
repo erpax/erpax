@@ -3,15 +3,15 @@
 
 # locality
 
-path `locality` · uuid `68aec34a-87bd-87f4-b1ee-a927ac18f3e3` · diamond `cdabae30-62f2-8ab1-9f85-2b66d97c5d02`
+path `locality` · uuid `68aec34a-87bd-87f4-b1ee-a927ac18f3e3` · diamond `4e87e26e-4e87-805b-bf9b-32646ecac069`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports address·collapse·law·merge·sti · exports locality · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bundle·cohort·dermatologic·landmarks·memories·representation·sanitization·stat·uk · ← bundle·cohort·dermatologic·landmarks·memories·representation·sanitization·stat·uk
+neighbors → address·collapse·law·merge·sti·validation · ← address·collapse·law·merge·sti·validation
 analysis —
 law locality is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ad3c230f-4cd9-826e-8ca1-859636174d51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bfe4bec7-ddf7-898e-811e-da57daa81088` · `pnpm readme` · `pnpm computed:check`</sub>

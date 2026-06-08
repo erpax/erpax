@@ -3,15 +3,15 @@
 
 # pathology
 
-path `pathology` · uuid `fbe101a7-4257-8d97-b4ff-6935643176ff` · diamond `6921d258-38a8-85cd-8495-5704cd34ec1b`
+path `pathology` · uuid `fbe101a7-4257-8d97-b4ff-6935643176ff` · diamond `d5317af8-56bd-881a-b59f-e08c6216821b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·test · exports pathology · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·settings·stat · ← action·cohort·landmarks·memories·settings·stat
+neighbors → collapse·law·merge·sti·test · ← collapse·law·merge·sti·test
 analysis —
 law pathology is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3ee4a602-4de4-80de-8686-f7951c045565` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `82c05885-b5cd-839f-a61a-a1be0d769f16` · `pnpm readme` · `pnpm computed:check`</sub>

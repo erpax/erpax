@@ -3,15 +3,15 @@
 
 # prerequisites
 
-path `prerequisites` · uuid `40bcc534-c51b-861a-9bb2-a21288c3b114` · diamond `0498bf89-d571-8663-8fc6-ce7aa7c0e8eb`
+path `prerequisites` · uuid `40bcc534-c51b-861a-9bb2-a21288c3b114` · diamond `cb90ef95-6def-82cd-afd7-e1e59234d6c8`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·course·law·merge·program·sti · exports prerequisites · escapes —
-links `6/6` · folded `1` · bonds in `18` out `18`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → complication·composition·cup·entropy·held·landmarks·license·longitudinal·material·midpoint·psychological·quota·sanitization·spa·tissue·uk·underbust·urltemplate · ← complication·composition·cup·entropy·held·landmarks·license·longitudinal·material·midpoint·psychological·quota·sanitization·spa·tissue·uk·underbust·urltemplate
+neighbors → collapse·course·law·merge·prerequisite·program·sti · ← collapse·course·law·merge·prerequisite·program·sti
 analysis —
 law prerequisites is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `294249b6-77a7-89f9-a037-0381096299a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04580e28-0a6e-84bf-b373-c447c92e123c` · `pnpm readme` · `pnpm computed:check`</sub>

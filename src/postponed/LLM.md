@@ -3,15 +3,15 @@
 
 # postponed
 
-path `postponed` · uuid `f7aaf4dc-3c07-86b7-b083-f863f981ec39` · diamond `d44f2f65-0269-8096-9918-a706f1285dc8`
+path `postponed` · uuid `f7aaf4dc-3c07-86b7-b083-f863f981ec39` · diamond `6850eacc-da46-8949-95db-72c8004f85d8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports postponed · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·holding·landmarks·memories·pool·stat · ← coach·cohort·holding·landmarks·memories·pool·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law postponed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c1ed35f4-33c2-8d41-80dc-18708c371f10` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a462a8a4-a2cc-8723-8036-0d356668ff32` · `pnpm readme` · `pnpm computed:check`</sub>

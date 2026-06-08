@@ -3,15 +3,15 @@
 
 # motorized
 
-path `motorized` · uuid `7b1b815c-b246-8c78-8ef9-b74151e19579` · diamond `a330bd10-ddab-860e-8c66-f2305dd9127b`
+path `motorized` · uuid `7b1b815c-b246-8c78-8ef9-b74151e19579` · diamond `0ee85e07-108b-8aa2-b8cc-d62a5f530974`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports bicycle·collapse·law·merge·sti · exports motorized · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → bicycle·collapse·law·merge·sti · ← bicycle·collapse·law·merge·sti
 analysis —
 law motorized is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `33767f79-88f4-8800-bc02-e9672fd29c30` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `60e9bb36-b0c0-8503-95e6-cb74be8ad712` · `pnpm readme` · `pnpm computed:check`</sub>

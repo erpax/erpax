@@ -7,11 +7,11 @@ path `run/dev` · uuid `dfb6e34b-927e-8360-8049-7b5a53eacf54` · diamond `0886fa
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports api·bindings·database·deploy·law · exports dev · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `1·0·0`
-neighbors → cohort·landmarks·memories·records·sector·stat · ← cohort·landmarks·memories·records·sector·stat
+faces worker·plugin·pwa `0·0·0`
+neighbors → api·bindings·database·deploy·law·run · ← api·bindings·database·deploy·law·run
 analysis —
 law a change is confirmed by driving the running app — `smoke.ts` (Local API) for backend/DB, `driver.mjs` (Playwright) for the frontend — launched dev-push OFF for steady-state (push is not idempotent).
 
 ---
 
-<sub>content-uuid `6c5fa50c-4155-8168-9b8e-524cae379e4f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae4298fa-a444-8e67-a9dd-abc503e7133a` · `pnpm readme` · `pnpm computed:check`</sub>

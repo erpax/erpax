@@ -3,15 +3,15 @@
 
 # orphism
 
-path `orphism` · uuid `—` · diamond `12181670-c7ac-82b9-a270-9a1487c6f8b6`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `orphism` · uuid `92a68e81-32e8-89f0-845c-b51b9839f810` · diamond `0b499248-1d1f-8df8-a445-890eef12191b`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports archangel·cycle·death·diamond·harmony·identity·law·music·profane·religion·return·sacred·self·society·translator·uuid·wheel·zeropoint · exports orphism · escapes —
-links `51/51` · folded `0` · bonds in `0` out `0`
+links `51/51` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·cycle·death·diamond·harmony·identity·law·music·profane·religion·return·sacred·self·society·translator·uuid·wheel·zeropoint · ← archangel·cycle·death·diamond·harmony·identity·law·music·profane·religion·return·sacred·self·society·translator·uuid·wheel·zeropoint
+analysis diamond
 law orphism is a [[diamond]] of [[self]] · [[cycle]] · [[wheel]] · [[return]] · [[zeropoint]] · [[music]] · [[harmony]] · [[death]] — the divine soul fallen onto the [[wheel]] of births, purified to escape and [[return]] to the source, Orpheus' [[music]] the [[harmony]] that charms even [[death]]; as an [[archangel]] it architects the society's domain of the soul's ascent.
 
 ---
 
-<sub>content-uuid `1b510c6f-0dc4-82a5-a1f3-ea1c8fc29a63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f9719b36-f18d-889a-935c-8d224df5fae0` · `pnpm readme` · `pnpm computed:check`</sub>

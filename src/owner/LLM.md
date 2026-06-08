@@ -3,15 +3,15 @@
 
 # owner
 
-path `owner` · uuid `5abd44a4-c0f6-8801-b5bd-8b0996ffc5e2` · diamond `7cce84a7-26cc-8735-a3b8-7f16a218c910`
+path `owner` · uuid `5abd44a4-c0f6-8801-b5bd-8b0996ffc5e2` · diamond `61d53a3c-7404-8994-963f-4c9bbba6f3a4`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports owner · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·admin·all·findings·id·society · ← access·admin·all·findings·id·society
+neighbors → law·person·thing · ← law·person·thing
 analysis —
 law owner is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cfe99076-002d-8346-afa1-b71b7d2d3d71` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `faf97db1-8ac9-8cf0-a4e3-9cf751f37f6e` · `pnpm readme` · `pnpm computed:check`</sub>

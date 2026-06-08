@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
 links `1/1` · folded `1` · bonds in `22` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounting·catalogue·consolidates·currencies·elevation·entity·founder·headline·homeopathic·id·landmarks·lease·means·partial·period·progression·progression·reconciliations·regions·reviews·reviews·spouse·spouse·taxonomy·tour·tour·tour · ← accounting·catalogue·consolidates·currencies·elevation·entity·founder·headline·homeopathic·id·landmarks·lease·means·partial·period·progression·reconciliations·regions·reviews·spouse·taxonomy·tour
+neighbors → accounting·accounting·accounting·adjustments·elimination·eliminations·entities·entries·entries·entry·evidences·fractal·hedge·horo·identity·law·party·proof·proof·rates·reconciliations·relatedparty·standard·standard·tenants·transaction·transaction·transaction·trinity · ← accounting·adjustments·elimination·eliminations·entities·entries·entry·evidences·fractal·hedge·horo·identity·law·party·proof·rates·reconciliations·relatedparty·standard·tenants·transaction·trinity
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `65aabb0a-e73c-85af-87ef-1973a746bfc7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b0a7401d-1e5c-82e8-b1e8-87ca76230c87` · `pnpm readme` · `pnpm computed:check`</sub>

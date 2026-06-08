@@ -3,15 +3,15 @@
 
 # income
 
-path `income` · uuid `0bb343f9-6c8d-8836-990e-28d9c0c377e3` · diamond `9fcb8b87-95e5-8ac8-9fd4-1afe87253812`
+path `income` · uuid `0bb343f9-6c8d-8836-990e-28d9c0c377e3` · diamond `2116d2fc-5bef-83f1-8a0f-6954ffcbd2b1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·limit·merge·sti · exports income · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·lend·mass·notifications·related·segments·vitepress · ← landmarks·lend·mass·notifications·related·segments·vitepress
+neighbors → collapse·law·limit·merge·sti · ← collapse·law·limit·merge·sti
 analysis —
 law income is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c42b65ff-8587-8b97-8261-1c8a4d935298` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b88dd18b-b449-8432-809d-c4cd41d8c691` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # sql
 
-path `quantum/sql` · uuid `dd494eb6-de9d-8e45-af4f-e9e222a7737f` · diamond `f64b33dd-bccf-817d-8989-c99545243f51`
+path `quantum/sql` · uuid `dd494eb6-de9d-8e45-af4f-e9e222a7737f` · diamond `6e2fca85-fa69-8d89-9407-d75e8b3404da`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/sql·@/uuid/matrix · exports const · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `9/9` · folded `1` · bonds in `8` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → column·law·law·merge·merge·quantum·quantum·query·sql·table·uuid·uuid · ← column·law·merge·quantum·query·sql·table·uuid
 analysis —
 law query-identity is the canonical normal form, never the surface syntax. Two queries share one uuid iff they normalize to the same form, so every member of a normalization-equivalence class (reordered columns and all) collapses to exactly one cache key, and any change that survives normalization necessarily forks the uuid — equivalence-by-content, invalidation-by-content, both at once.
 
 ---
 
-<sub>content-uuid `6df58ddc-4b29-822d-b58d-2ec38b15c0f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1680855e-f4a0-827e-8f3f-20cefebe27aa` · `pnpm readme` · `pnpm computed:check`</sub>

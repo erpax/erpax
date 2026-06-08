@@ -3,15 +3,15 @@
 
 # named
 
-path `named` · uuid `25167d6b-3e8e-8a1e-927b-16d58d3b058c` · diamond `edfcc1ca-939a-8e3b-a919-e66fcf8411b7`
+path `named` · uuid `25167d6b-3e8e-8a1e-927b-16d58d3b058c` · diamond `cfff1f11-e97c-8aba-ac09-51b924656085`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·position·sti · exports named · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `12` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → college·controlled·decooperative·entertainment·game·landmarks · ← college·controlled·decooperative·entertainment·game·landmarks
+neighbors → akashic·collapse·collapse·complete·convention·cost·exported·fronted·law·law·lawful·merge·merge·position·sti · ← akashic·collapse·complete·convention·cost·exported·fronted·law·lawful·merge·position·sti
 analysis —
 law named is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cd03bd96-42fc-8d99-a2b7-5dc39c039091` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4ea3305f-65cf-802e-a49d-77acba1a8f3e` · `pnpm readme` · `pnpm computed:check`</sub>

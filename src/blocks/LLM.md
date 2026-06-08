@@ -4,7 +4,7 @@
 # blocks
 
 path `blocks` · uuid `8ce2cc40-5b21-803c-b7da-4f37c0ba399a` · diamond `69760cf6-8613-8f11-ac6f-e9c37fb02e25`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports Archive·ArchiveBlock·Banner·BannerBlock·CallToAction·CallToActionBlock·Code·CodeBlock·Content·ContentBlock·FormBlock·FormBlockPayload·MediaBlock·MediaBlockPayload·RelatedPosts·type · escapes —
 links `6/6` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a block is the one word recording that a [[user]] has barred another — a d
 
 ---
 
-<sub>content-uuid `0ba18eee-87f0-84a5-a972-d13a7d2608a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d39a0cea-1f33-8919-9f11-814a06c16afa` · `pnpm readme` · `pnpm computed:check`</sub>

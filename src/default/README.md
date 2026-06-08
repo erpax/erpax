@@ -25,7 +25,23 @@
 
 - partition `default` · sub-root `a58f5bc3-b73e-8d88-bd53-1d143a39d2e0`
 - bond degree `22` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `computed-not-hardcoded · content-addressed identity (RFC 9562) · no free parameters (zero entropy)` · banner
+- `the architectural default is computed from the name (uuid → digit); nothing is assigned` · banner
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `655d74bd-af90-891e-a19f-54f9960d1ea4` · framed by typography partition `default` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `877afa18-dcc1-890c-8c6d-6d9f8b16e020` · framed by typography partition `default` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

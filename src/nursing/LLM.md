@@ -3,15 +3,15 @@
 
 # nursing
 
-path `nursing` · uuid `e944337d-4260-8c06-9234-5cec4177de44` · diamond `070dd0c5-20bd-8799-afc8-335c00704f98`
+path `nursing` · uuid `e944337d-4260-8c06-9234-5cec4177de44` · diamond `5e2a4407-c42e-8dee-8ac3-77fa074bbc16`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports nursing · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dermatology·landmarks·measurement·memories·stat·storage · ← cohort·dermatology·landmarks·measurement·memories·stat·storage
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law nursing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `76141caa-01e9-87b5-a4f8-c3147ea369aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfbae4f3-0491-8595-ade6-06c419892bc4` · `pnpm readme` · `pnpm computed:check`</sub>

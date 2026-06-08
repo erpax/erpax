@@ -3,15 +3,15 @@
 
 # repeals
 
-path `repeals` · uuid `6368b789-0f78-8d20-9b2e-b03ed924dd70` · diamond `fc5d03fb-8b2f-8feb-97de-1807d581be6c`
+path `repeals` · uuid `6368b789-0f78-8d20-9b2e-b03ed924dd70` · diamond `29c474d5-25fa-8cc2-a408-c0379757b14d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports repeals · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → distinguishing·landmarks·notice·sponsor · ← distinguishing·landmarks·notice·sponsor
+neighbors → collapse·law·legislation·merge·sti · ← collapse·law·legislation·merge·sti
 analysis —
 law repeals is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a7a94056-ada7-8517-bdb7-e6ab21391fe4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04e73240-3081-8441-8441-e913144d7880` · `pnpm readme` · `pnpm computed:check`</sub>

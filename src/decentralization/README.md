@@ -25,7 +25,28 @@
 
 - partition `decentralization` · sub-root `7dd4fb78-345c-8528-9ba4-cd754cb5bf87`
 - bond degree `44` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Barabási–Albert preferential attachment (1999) — why flat networks re-centralize` · banner
+- `computed, never hand-asserted` · banner
+- `COSO-ERM-2017` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `Gini coefficient` · banner
+- `Herfindahl–Hirschman Index (HHI)` · banner
+- `Nakamoto coefficient (Srinivasan & Lee, 2017)` · banner
+
+## analytics
+
+- bond degree `44` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `b3f14755-7233-8240-a3f6-d4fb065e4e35` · framed by typography partition `decentralization` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d79aa0d8-57f1-846f-92a5-92f7f1187516` · framed by typography partition `decentralization` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

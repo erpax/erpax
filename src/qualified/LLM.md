@@ -3,15 +3,15 @@
 
 # qualified
 
-path `qualified` · uuid `d8244197-c539-8995-8ea7-643506f53916` · diamond `1205c23d-fa25-8a02-8a71-214f2e989de4`
+path `qualified` · uuid `d8244197-c539-8995-8ea7-643506f53916` · diamond `744fa487-4649-8b53-a216-2bb37799354d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·expense·incentive·law·merge·sti·type · exports qualified · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·artist·boys·crematorium·details·landmarks·marine·qualification · ← akashic·artist·boys·crematorium·details·landmarks·marine·qualification
+neighbors → collapse·expense·incentive·law·merge·sti·type · ← collapse·expense·incentive·law·merge·sti·type
 analysis —
 law qualified is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `60ab99b3-6245-833f-af59-634dc4c19a60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `330dfcbc-2398-8492-be86-9e8a2e945039` · `pnpm readme` · `pnpm computed:check`</sub>

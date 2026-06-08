@@ -3,15 +3,15 @@
 
 # regular
 
-path `regular` · uuid `852de4e0-caff-8b1c-96a3-b687cc396c56` · diamond `11aec96c-04fc-8699-9b5c-45e073a51154`
+path `regular` · uuid `852de4e0-caff-8b1c-96a3-b687cc396c56` · diamond `21906023-a9c4-8ea2-9cf7-f2ff92e4696d`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports regular · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·observability·sources·stat · ← cohort·landmarks·memories·observability·sources·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law regular is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2ddb58d3-9847-86f9-a957-82787a457f12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aab54431-9bd9-83a2-8911-44f833319b01` · `pnpm readme` · `pnpm computed:check`</sub>

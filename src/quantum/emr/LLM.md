@@ -3,15 +3,15 @@
 
 # emr
 
-path `quantum/emr` · uuid `2ee151b3-49f6-8429-b3e8-8653d05b21e9` · diamond `c0801510-8a1d-8fba-9942-f0cc103f1e17`
+path `quantum/emr` · uuid `2ee151b3-49f6-8429-b3e8-8653d05b21e9` · diamond `9ac122a7-b986-8e8e-85c4-dfda4b1199f1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports akashic·diagnosis·finality·health·law·observation·patient·record·reverse·snapshot·tamper·uuid · exports emr · escapes —
-links `22/22` · folded `1` · bonds in `15` out `15`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accept·access·biomechnical·cohort·data·fields·landmarks·list·memories·progression·read·safety·shelter·symbol·venue · ← accept·access·biomechnical·cohort·data·fields·landmarks·list·memories·progression·read·safety·shelter·symbol·venue
+links `22/22` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·biometric·diagnosis·finality·health·law·observation·patient·record·reverse·snapshot·tamper·uuid · ← akashic·biometric·diagnosis·finality·health·law·observation·patient·record·reverse·snapshot·tamper·uuid
 analysis —
 law the EMR is a [[health]]-state snapshot chain — each encounter and [[observation]] is content-addressed, immutable, append-only; a correction is a new superseding entry never a deletion, so the full history stays reversible and tamper-evident.
 
 ---
 
-<sub>content-uuid `13617fd5-205f-8424-8416-9f8272efff0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e77d698e-fb9d-8ab6-8bb0-55b8ff3704a4` · `pnpm readme` · `pnpm computed:check`</sub>

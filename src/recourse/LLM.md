@@ -3,15 +3,15 @@
 
 # recourse
 
-path `recourse` · uuid `42680b66-06a1-82c4-b888-05f5329ac745` · diamond `56c3a01b-55f4-886d-b72a-c960976434c3`
+path `recourse` · uuid `42680b66-06a1-82c4-b888-05f5329ac745` · diamond `56ccb273-387e-85b5-a6a1-438b52c45db3`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·loan·merge·sti · exports recourse · escapes —
-links `5/5` · folded `1` · bonds in `18` out `18`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·atom·contractual·game·id·instrument·landmarks·marry·memories·pathophysiology·progression·recourse·recover·recruiting·sections·sell·vent·wp · ← accounting·atom·contractual·game·id·instrument·landmarks·marry·memories·pathophysiology·progression·recourse·recover·recruiting·sections·sell·vent·wp
+neighbors → collapse·law·loan·merge·sti · ← collapse·law·loan·merge·sti
 analysis —
 law recourse is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `45ed1c4f-0d5d-84b0-9824-e0c1c7c2d644` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `571ab135-b01f-8dc7-9406-36664ea101ce` · `pnpm readme` · `pnpm computed:check`</sub>

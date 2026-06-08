@@ -3,15 +3,15 @@
 
 # 1
 
-path `iso/3166/1` · uuid `7aa04c27-0544-8b6e-9478-21c2b02d9c23` · diamond `19043902-1be0-826d-8e69-4dc7d2fcd727`
+path `iso/3166/1` · uuid `7aa04c27-0544-8b6e-9478-21c2b02d9c23` · diamond `5d4924e0-c193-8748-b983-94aaee48254a`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports isIso3166Alpha2·isIso3166Alpha3 · escapes —
-links `1/1` · folded `1` · bonds in `5` out `5`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·stat · ← coach·cohort·landmarks·memories·stat
+neighbors → law · ← law
 analysis —
 law a country is identified only by its ISO 3166-1 code (alpha-2 / alpha-3) — every `country` field across the corpus speaks one canonical codeset, so the same place is the same code everywhere, never a free-text name.
 
 ---
 
-<sub>content-uuid `44382092-e50f-89be-8816-6ddd10c2bd65` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d722a3fc-edf9-8869-ba1f-e503af579321` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # security
 
-path `quantum/security` · uuid `77b56802-f1c9-8cc7-a042-dbfb947e665f` · diamond `1ea88e7e-73bc-8ae6-a8d5-ecf45b991322`
+path `quantum/security` · uuid `77b56802-f1c9-8cc7-a042-dbfb947e665f` · diamond `f30f439f-4495-8e01-8285-51e4490e36dd`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports cost·duality·entry·fear·law·love·proof·quantum·receipt·sandbox·security·tamper·trust·uuid · exports security · escapes —
-links `19/19` · folded `1` · bonds in `17` out `19`
-faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·atom·catalogue·cohort·entertainment·grant·landmarks·marry·marry·memories·memories·qualification·security·shred·spreadsheet·symbol·tvclip·wellbeing·win · ← addressed·atom·catalogue·cohort·entertainment·grant·landmarks·marry·memories·qualification·security·shred·spreadsheet·symbol·tvclip·wellbeing·win
+links `19/19` · folded `1` · bonds in `25` out `26`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·biometric·clearance·collapse·cost·duality·engineering·entry·fear·law·law·love·merge·proof·quantum·receipt·requirement·research·sandbox·screening·security·sti·tamper·testing·trust·uuid · ← access·biometric·clearance·collapse·cost·duality·engineering·entry·fear·law·love·merge·proof·quantum·receipt·requirement·research·sandbox·screening·security·sti·tamper·testing·trust·uuid
 analysis —
 law security is bidirectional, so a finding is never one-sided — every control is read both ways at once and reported as the balanced blue/red pair (verify it holds ⊕ price forging past it), the same double-entry as everything else. The conjugate law binds the two: the cost to forge past a control equals its compression — squeeze it to the 128-bit uuid and the forging temperature rises, depth being tamper-cost. Red prices the attack but never ships it; coverage (proven vs assumed) is the metric.
 
 ---
 
-<sub>content-uuid `01b292a1-15a8-8728-92d9-bfc1e66223f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `367f4148-dc8b-8b8f-9b27-c0109af8d28a` · `pnpm readme` · `pnpm computed:check`</sub>

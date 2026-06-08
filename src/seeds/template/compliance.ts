@@ -11,7 +11,7 @@
  * @see ../../../country-context.ts
  */
 
-import type { CountryApi, CountryApiKind } from '@/config/country-apis'
+import type { CountryApi, CountryApiKind } from '@/country/api'
 import { resolveCountryContext } from '@/country/context'
 import type { CompliancePosture } from './types'
 

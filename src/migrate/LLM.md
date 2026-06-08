@@ -3,15 +3,15 @@
 
 # migrate
 
-path `migrate` · uuid `df048300-50ee-87a3-9be0-f61182dde037` · diamond `6f843050-3baf-8d5b-be28-be4cb1e28a75`
+path `migrate` · uuid `df048300-50ee-87a3-9be0-f61182dde037` · diamond `ffe70f62-cc30-8c32-9ca6-94f266c68e9a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·dissolution·generate·merge·quaternary · exports migrate · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·command·deploy·dissolution·dry·engineering·generate·merge·names·port·quaternary · ← collapse·command·deploy·dissolution·dry·engineering·generate·merge·names·port·quaternary
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `73b65780-633e-8135-97a3-037c433c77d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `acad54b3-1148-8fdf-b06c-90c0492aa6ff` · `pnpm readme` · `pnpm computed:check`</sub>

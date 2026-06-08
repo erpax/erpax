@@ -3,15 +3,15 @@
 
 # notary
 
-path `notary` · uuid `3a4bbcd9-a861-89ce-92e6-209aa4b2cd98` · diamond `8db6f16b-cab2-838f-b1fb-6000bc958ee7`
+path `notary` · uuid `3a4bbcd9-a861-89ce-92e6-209aa4b2cd98` · diamond `d50ba96b-3b13-8753-89a1-2d4483d691f1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports notary · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cache·carbohydrate·consortium·fertility·landmarks·requests·society · ← cache·carbohydrate·consortium·fertility·landmarks·requests·society
+neighbors → law·thing · ← law·thing
 analysis —
 law notary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b7a07350-d546-8c73-873a-e31ce304ac6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ba775c0-a88f-8ba5-bade-db44cb90ca44` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # prion
 
-path `prion` · uuid `4e0d1d80-4778-8981-9b45-636c0cb86dee` · diamond `a19e6504-3c10-8608-a2c0-88662e86e74f`
+path `prion` · uuid `4e0d1d80-4778-8981-9b45-636c0cb86dee` · diamond `42dbe66c-92b8-802f-b474-52c2cc312c6b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports prion · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·complex·landmarks·memories·stat · ← cohort·complex·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law prion is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bbc92c43-710e-80ad-b747-17f75655b8f2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a72e2395-1c1c-8627-ac63-da84fd58bf97` · `pnpm readme` · `pnpm computed:check`</sub>

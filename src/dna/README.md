@@ -25,7 +25,21 @@
 
 - partition `dna` · sub-root `b8a42a0a-29e8-898c-bcb7-e81bfa836033`
 - bond degree `66` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the live matrix parent-chain; never hand-asserted` · banner
+
+## analytics
+
+- bond degree `66` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `6da97e1e-3eae-858d-8488-070c2614fdb6` · framed by typography partition `dna` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d51c33ad-b2ea-89f1-8efa-ce1321e6d566` · framed by typography partition `dna` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

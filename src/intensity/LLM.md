@@ -3,15 +3,15 @@
 
 # intensity
 
-path `intensity` · uuid `59fa82a7-443b-8bbb-86c5-b0dcb67b3ef0` · diamond `00f1e01b-4f09-874c-81e8-304a41a60bc2`
+path `intensity` · uuid `59fa82a7-443b-8bbb-86c5-b0dcb67b3ef0` · diamond `a7385b9a-347f-86a8-9c66-d1da6b4bf9c8`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports intensity · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sanitization·stat · ← cohort·landmarks·memories·sanitization·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law intensity is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0d4e6183-7887-89f7-bc29-2d460b7e41cf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd0315a0-20f8-8cae-a246-6c5493707142` · `pnpm readme` · `pnpm computed:check`</sub>

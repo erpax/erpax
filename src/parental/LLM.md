@@ -3,15 +3,15 @@
 
 # parental
 
-path `parental` · uuid `b3ad06b8-1514-87da-abfe-6de980972665` · diamond `e1b68afe-d036-8340-a39b-198400a27070`
+path `parental` · uuid `b3ad06b8-1514-87da-abfe-6de980972665` · diamond `269d0dfd-59e5-89d5-92c3-a982eb20c4bf`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports parental · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → batch·cohort·landmarks·memories·notice·stat · ← batch·cohort·landmarks·memories·notice·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law parental is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0a99fd28-4c9c-8df1-8e8c-7ddc310ce8e6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58e12cee-4d78-87b8-a181-40f580eabf6b` · `pnpm readme` · `pnpm computed:check`</sub>

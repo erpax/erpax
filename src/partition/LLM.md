@@ -3,15 +3,15 @@
 
 # partition
 
-path `partition` · uuid `1d8b654a-8f54-8be2-8503-de37f1d2643e` · diamond `6222d1ef-b467-8959-8d9a-fc0b56d2feab`
+path `partition` · uuid `1d8b654a-8f54-8be2-8503-de37f1d2643e` · diamond `f898332e-6653-8ec1-a67f-f54b16cadd83`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports database·law·schema · exports partition · escapes —
-links `3/3` · folded `1` · bonds in `13` out `13`
+links `3/3` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → allocation·borrow·candidate·crisis·feed·grantee·height·landmarks·lead·lineup·makes·screen·vibration · ← allocation·borrow·candidate·crisis·feed·grantee·height·landmarks·lead·lineup·makes·screen·vibration
+neighbors → database·law·schema·sparsity · ← database·law·schema·sparsity
 analysis —
 law one logical table divides into partitions (by range/hash/list) so a query prunes to only the partitions it needs — physical division for performance/governance, the same rows.
 
 ---
 
-<sub>content-uuid `7a19cad2-4cf8-88ef-a106-1133b2105876` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a08c1460-4f23-86b3-821e-1a884aee3436` · `pnpm readme` · `pnpm computed:check`</sub>

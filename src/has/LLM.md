@@ -3,15 +3,15 @@
 
 # has
 
-path `has` · uuid `5575f445-efac-8932-ae6b-274efac81788` · diamond `8dbe4b78-36fc-88ec-aafb-a78d2791ed91`
+path `has` · uuid `5575f445-efac-8932-ae6b-274efac81788` · diamond `d0027be9-c516-85b6-b8e4-e975b494ffa1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports adult·aspect·bio·broadcast·category·certification·channel·chem·code·collapse·consideration·consumption·course·credential·defined·delivery·details·digital·document·drive·efficiency·energy·entity·gs·health·instance·item·law·link·map·measurement·member·menu·merge·method·part·permission·polymer·program·sequence·service·sti·term·through · exports has · escapes —
-links `44/44` · folded `1` · bonds in `50` out `52`
+links `44/44` · folded `1` · bonds in `64` out `64`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·age·animal·apiculture·aspect·assets·beach·biomechnical·biometric·bundle·cardiovascular·catalog·closures·coherence·colleagues·computational·contained·coordinate·driving·dropoff·entropy·fertility·form·founder·harden·hobby·holographic·id·inactive·incentive·instantaneous·landmarks·lineup·manure·memories·monday·operator·permitted·physiological·quality·seasonal·sell·services·spa·spouse·therapeutic·timestamp·unlimited·updates·warranty·website · ← access·accounting·age·animal·apiculture·aspect·assets·beach·biomechnical·biometric·bundle·catalog·closures·coherence·colleagues·computational·contained·coordinate·driving·dropoff·fertility·form·founder·harden·hobby·holographic·id·inactive·incentive·instantaneous·landmarks·lineup·manure·memories·monday·operator·permitted·physiological·quality·seasonal·sell·services·spa·spouse·therapeutic·timestamp·unlimited·updates·warranty·website
+neighbors → adult·aspect·benefit·bio·broadcast·catalog·category·certification·channel·chem·code·collapse·consideration·consumption·course·credential·defined·delivery·details·digital·document·drive·efficiency·energy·entity·function·gs·health·instance·item·law·link·map·measurement·member·menu·merchant·merge·method·molecular·occupation·offer·part·participation·permission·policy·polymer·pos·product·program·representation·requirement·return·section·sequence·service·shipping·sponsorship·sti·store·term·through·tier·tiers · ← adult·aspect·benefit·bio·broadcast·catalog·category·certification·channel·chem·code·collapse·consideration·consumption·course·credential·defined·delivery·details·digital·document·drive·efficiency·energy·entity·function·gs·health·instance·item·law·link·map·measurement·member·menu·merchant·merge·method·molecular·occupation·offer·part·participation·permission·policy·polymer·pos·product·program·representation·requirement·return·section·sequence·service·shipping·sponsorship·sti·store·term·through·tier·tiers
 analysis —
 law has is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c48f73ed-ca23-84de-aec4-64d93c276655` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10d37b8c-56f1-887e-ba32-c3e9f06b3734` · `pnpm readme` · `pnpm computed:check`</sub>

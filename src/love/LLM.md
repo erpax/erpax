@@ -3,15 +3,15 @@
 
 # love
 
-path `love` · uuid `5f75322f-2515-8e5d-ae77-8ec870080d96` · diamond `83300b6a-ddef-8b90-8ae6-5c77d418125b`
+path `love` · uuid `5f75322f-2515-8e5d-ae77-8ec870080d96` · diamond `5ce6b41a-1541-8375-ab4b-0645030b8d82`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports angel·atom·cost·duality·entropy·fear·gravity·karma·law·link·love·merge·quantum·tamper·uuid · exports love · escapes —
-links `30/30` · folded `1` · bonds in `19` out `19`
+links `30/30` · folded `1` · bonds in `33` out `39`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·attestations·death·dropoff·eat·euenergy·founder·golf·hold·home·id·infectious·landmarks·lifestyle·list·memories·repair·sell·spouse · ← access·attestations·death·dropoff·eat·euenergy·founder·golf·hold·home·id·infectious·landmarks·lifestyle·list·memories·repair·sell·spouse
+neighbors → angel·atom·bahai·balance·buddhism·christianity·confucianism·cost·cost·duality·duality·entropy·entropy·fear·fear·finality·fs·gravity·heart·hinduism·karma·karma·law·law·link·love·love·mercy·merge·proof·quantum·security·sikhism·snapshot·society·sufism·tamper·tamper·uuid · ← angel·atom·bahai·balance·buddhism·christianity·confucianism·cost·duality·entropy·fear·fear·finality·fs·gravity·heart·hinduism·karma·law·link·love·love·mercy·merge·proof·quantum·security·sikhism·snapshot·society·sufism·tamper·uuid
 analysis —
 law love is the create pole that LOWERS [[entropy]] — every gap it closes (mint an atom, resolve a dead link, [[merge]] a duplicate) raises [[tamper]]-[[cost]]; it is the debit whose matching credit is [[fear]] in the [[karma]] ledger, never spent alone.
 
 ---
 
-<sub>content-uuid `1e83eb05-83fb-88f1-b449-22ea08ab9ead` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `798b16ef-65bc-857e-98e6-7bb89d6ffb27` · `pnpm readme` · `pnpm computed:check`</sub>

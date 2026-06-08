@@ -23,7 +23,21 @@
 
 - partition `dunning` · sub-root `a92ea2ba-7a34-88c2-903f-578e482723c9`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cd2e4d94-f431-8059-9a70-1d542c206ec3` · framed by typography partition `dunning` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9151a8e9-4420-8fea-9190-3841b23fa88f` · framed by typography partition `dunning` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

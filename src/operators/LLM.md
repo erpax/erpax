@@ -3,15 +3,15 @@
 
 # operators
 
-path `operators` · uuid `1bc6e7f1-4626-8fdd-8d5a-84e8d8a7dbee` · diamond `440db013-6af4-8b17-8687-738538d97178`
+path `operators` · uuid `1bc6e7f1-4626-8fdd-8d5a-84e8d8a7dbee` · diamond `aae679e7-e879-87e5-bec9-322ca03ff6cc`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
-links `1/1` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `1/1` · folded `1` · bonds in `2` out `2`
+faces worker·plugin·pwa `1·0·0`
+neighbors → devices·law · ← devices·law
 analysis —
 law each СУПТО operator is the 4-digit code forming the second segment of every УНП, bound to one user; a decommission retires the mapping while the audit trail is preserved, never erased.
 
 ---
 
-<sub>content-uuid `fffdbc46-e79f-84c7-8392-85e7b1f749bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `254897e5-6a2c-8a24-8279-00899e9a5354` · `pnpm readme` · `pnpm computed:check`</sub>

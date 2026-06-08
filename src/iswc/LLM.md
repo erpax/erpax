@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports iswc · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → buildings·correlation·issue·landmarks·snapshots · ← buildings·correlation·issue·landmarks·snapshots
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law iswc is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c77e66bd-f658-8cb3-a595-093b5cedc841` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0a0bfd2-87a1-8645-9383-5c4478a855e0` · `pnpm readme` · `pnpm computed:check`</sub>

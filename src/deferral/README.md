@@ -23,7 +23,21 @@
 
 - partition `deferral` · sub-root `90903979-bddd-82e0-9cb8-089b06b52377`
 - bond degree `34` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `34` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c169454c-3122-89b9-965b-cca5f3239082` · framed by typography partition `deferral` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8adade7e-2214-8ce8-aac1-d2484e83cdf1` · framed by typography partition `deferral` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

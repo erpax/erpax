@@ -2,7 +2,7 @@
 
 # memory
 
-> atom `quantum/memory` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `quantum/memory` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,35 +11,34 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `45` | [[balance]] `45` |
-| [[balance]] `2` | [[liability]]/[[links]]/dangling `2` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `55` | Σ `55` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
-- bond degree `88` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- bond degree `113` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `2d3e45c3-92ec-87d3-802c-6f3f07b555c5`
-- bonds in `24` · out `21`
+- uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e`
+- bonds in `29` · out `33`
 - trinity form·code·proof `1`·`1`·`1`
-- links `45` / `47`
-- folded `0` · escapes `0`
+- links `47` / `47`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a897d404-295a-871b-ba22-5ddfde5440fb` · framed by typography partition `quantum` bonds `88` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8141952c-d0e6-8953-b195-813dd8a00d34` · framed by typography partition `quantum` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

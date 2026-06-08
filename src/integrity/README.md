@@ -2,7 +2,7 @@
 
 # integrity
 
-> atom `integrity` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `integrity` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,14 +23,14 @@
 
 ## typography graph
 
-- partition `integrity` · sub-root `ebabaf5c-1569-8e44-80ce-39525495bea1`
-- bond degree `51` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `integrity` · sub-root `797b228e-19d3-89b7-a84a-dbe2db72ba7f`
+- bond degree `106` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `fc239b84-3abf-80fc-a530-2335730ea07f`
-- bonds in `7` · out `7`
+- uuid `ebabaf5c-1569-8e44-80ce-39525495bea1`
+- bonds in `34` · out `34`
 - trinity form·code·proof `1`·`1`·`1`
 - links `19` / `19`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `10d9ce33-ed5f-8952-8ba0-13295be2e097` · framed by typography partition `integrity` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c34e3dcc-c295-8b6c-9878-9d53321dadc9` · framed by typography partition `integrity` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>

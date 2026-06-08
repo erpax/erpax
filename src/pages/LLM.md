@@ -3,15 +3,15 @@
 
 # pages
 
-path `pages` · uuid `efaf9fa1-250a-8c7b-b175-554924a386b0` · diamond `065c8f6e-a5ec-8cac-abf1-310901eaab32`
+path `pages` · uuid `efaf9fa1-250a-8c7b-b175-554924a386b0` · diamond `b21a2ed5-ff77-8c30-b2fd-c31ef2f4620e`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/authenticated/or/published·@/blocks/config·@/ensure/unique/slug/within/tenant·@/hero·@/i18n·@/pages/access·@/pages/hooks·@/shareds · exports const · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `5/5` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·admin·all·identity·queries·versions · ← access·admin·all·identity·queries·versions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e76905f5-0d54-8c27-af65-94d0984664dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6bc32a6-b3a6-8679-acc0-577b073ee0ac` · `pnpm readme` · `pnpm computed:check`</sub>

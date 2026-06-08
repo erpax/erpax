@@ -2,7 +2,7 @@
 
 # change
 
-> atom `audit/trail/after/change` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `audit/trail/after/change` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
 - bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -43,7 +43,7 @@
 
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `8`
+- bond degree `19` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `7`
 
@@ -57,8 +57,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ec5104e1-00be-822b-92ea-84b9c639eba0` · framed by typography partition `audit` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4cad43e9-5d5a-89c7-abe5-2cb867720ac0` · framed by typography partition `audit` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

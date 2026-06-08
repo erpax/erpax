@@ -3,15 +3,15 @@
 
 # roles
 
-path `roles` · uuid `ddd21d8e-a056-8b0c-922d-f903661d130f` · diamond `70b30a56-be1e-807c-9f02-3bacaf87a925`
+path `roles` · uuid `ddd21d8e-a056-8b0c-922d-f903661d130f` · diamond `dd1560b7-f4c8-8b03-9fcc-5f616462d667`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/is/super/admin·@/nist/incits/359·@/roles/hooks · exports const · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → competency·homeopathic·landmarks·marine·pats·query·safety·sections·solve · ← competency·homeopathic·landmarks·marine·pats·query·safety·sections·solve
+links `6/6` · folded `1` · bonds in `9` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·access·agent·classroom·cross·identity·law·law·rodin·roles·users · ← access·agent·classroom·cross·identity·law·rodin·roles·users
 analysis —
 law a role is a definition (name + binding) carrying an optional capability and skill routes that users inherit on assignment — capabilities live on the role, not the user ([[access]]).
 
 ---
 
-<sub>content-uuid `c069b086-07a1-894e-9e37-1d4fff27414f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2dd0731b-d665-85c1-a7ff-ba2907e59350` · `pnpm readme` · `pnpm computed:check`</sub>

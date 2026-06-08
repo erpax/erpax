@@ -2,17 +2,17 @@
 
 # innovation
 
-> atom `innovation` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `innovation` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `innovation` · sub-root `eef1d224-8e0c-8737-9ffb-2fe4ffc37c73`
-- bond degree `15` · analysis neighbors `cloudflare` · `diamond` · `hallucination` · `purity` · `secret`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `26` · analysis neighbors `cloudflare` · `diamond` · `secret`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `eef1d224-8e0c-8737-9ffb-2fe4ffc37c73`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d6aa20ca-26d5-83d0-9467-ab1c563c60df` · framed by typography partition `innovation` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1eb14615-056b-8f83-980f-29638752f602` · framed by typography partition `innovation` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

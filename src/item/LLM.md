@@ -3,15 +3,15 @@
 
 # item
 
-path `item` · uuid `26207f4d-33ce-88e0-b67a-6282713147b8` · diamond `e2598735-dae7-8930-84b1-1c9a9b8de8ec`
+path `item` · uuid `26207f4d-33ce-88e0-b67a-6282713147b8` · diamond `33d94fe3-5cee-87e2-a857-a18ef1c1d122`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports amount·appearance·availability·condition·data·defect·element·feed·fees·funded·game·has·how·incentivized·label·law·list·location·media·menu·next·number·offer·offered·order·ordered·page·parent·previous·return·review·reviewed·shipped·shipping·source·status·type · exports item · escapes —
-links `37/37` · folded `1` · bonds in `7` out `7`
+links `37/37` · folded `1` · bonds in `37` out `37`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·correlation·holographic·landmarks·snapshots·wheel · ← access·accounting·correlation·holographic·landmarks·snapshots·wheel
+neighbors → amount·appearance·availability·condition·data·defect·element·feed·fees·funded·game·has·how·incentivized·label·law·list·location·media·menu·next·number·offer·offered·order·ordered·page·parent·previous·return·review·reviewed·shipped·shipping·source·status·type · ← amount·appearance·availability·condition·data·defect·element·feed·fees·funded·game·has·how·incentivized·label·law·list·location·media·menu·next·number·offer·offered·order·ordered·page·parent·previous·return·review·reviewed·shipped·shipping·source·status·type
 analysis —
 law item is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c983b3bb-3d30-8499-9254-0ad1ecaa1a88` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4f15732-c799-8c1b-867c-9d69807c5e93` · `pnpm readme` · `pnpm computed:check`</sub>

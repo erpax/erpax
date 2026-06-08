@@ -3,15 +3,15 @@
 
 # share
 
-path `horo/share` · uuid `bdfe9b13-fc95-819b-9181-c5a5b06711a3` · diamond `53d34eeb-3983-853e-bfd5-bc1387c463b3`
+path `horo/share` · uuid `bdfe9b13-fc95-819b-9181-c5a5b06711a3` · diamond `ce1cf3e8-bf08-8150-8d8b-f35cf6d7c5c1`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·base·choice·coil·collections·customers·deferral·deferredrevenue·duality·fractal·harvest·horo·law·market·part·pickup·prepaid·recognition·risk·season·sequence·weave·whole · exports share · escapes —
-links `48/48` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `48/48` · folded `1` · bonds in `31` out `31`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agriculture·balance·base·choice·coil·collections·crop·deferral·deferredrevenue·duality·fractal·harvest·horo·items·law·livestock·market·notes·orders·part·periods·pickup·planting·prepaid·recognition·risk·season·sequence·weave·whole·yield · ← agriculture·balance·base·choice·coil·collections·crop·deferral·deferredrevenue·duality·fractal·harvest·horo·items·law·livestock·market·notes·orders·part·periods·pickup·planting·prepaid·recognition·risk·season·sequence·weave·whole·yield
 analysis —
 law [[horo]] position 2 — the [[whole]] splits and a member joins; its domain instance is a proportional, contingent, pooled claim under shared [[risk]] (the CSA share), the inverse of a fixed order.
 
 ---
 
-<sub>content-uuid `5fc383fa-d888-8db7-addb-479e2b8d8290` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c84d7bc9-415f-8c2d-9d6d-ba23c3bb746e` · `pnpm readme` · `pnpm computed:check`</sub>

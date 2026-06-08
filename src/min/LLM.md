@@ -3,15 +3,15 @@
 
 # min
 
-path `min` · uuid `bb2ec3d1-5afc-85d2-a60f-df72e959e938` · diamond `3c1383f0-5589-8e21-97b1-cb8398284e4b`
+path `min` · uuid `bb2ec3d1-5afc-85d2-a60f-df72e959e938` · diamond `814ef5b8-03da-8773-af94-f50128d1f60c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports age·child·collapse·efficiency·energy·law·length·merge·price·required·scale·sti·suggested·value · exports min · escapes —
-links `14/14` · folded `1` · bonds in `4` out `4`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → age·child·collapse·efficiency·energy·law·length·merge·price·required·scale·sti·suggested·value · ← age·child·collapse·efficiency·energy·law·length·merge·price·required·scale·sti·suggested·value
 analysis —
 law min is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0fc1bee8-6f90-80d6-9aea-d1584d1d2a6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20c77261-9f13-8e79-b84f-cd53c0e4aee7` · `pnpm readme` · `pnpm computed:check`</sub>

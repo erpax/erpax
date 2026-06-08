@@ -3,15 +3,15 @@
 
 # patent
 
-path `patent` · uuid `f03318d0-6a0e-8653-9b2d-d9054c8be18f` · diamond `76d9c021-2625-838a-bd5e-fb136cfb2907`
+path `patent` · uuid `f03318d0-6a0e-8653-9b2d-d9054c8be18f` · diamond `f3acf38f-8202-89aa-a802-e760c8a223f1`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/anchor · exports const·function·interface · escapes —
-links `16/16` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·restriction·urologic · ← landmarks·restriction·urologic
+links `16/16` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·anchor·history·law·merge·proof·tamper·uuid · ← akashic·anchor·history·law·merge·proof·tamper·uuid
 analysis —
 law a monopoly on math or on the already-known is illegitimate. Anchor the truth and it is prior art; encode it as math and it is unpatentable — the public domain defends itself by construction.
 
 ---
 
-<sub>content-uuid `9fa49cf7-e362-8056-bbba-718f24a74bbf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33348fcb-2321-8b8f-9e96-f3ff35a98d85` · `pnpm readme` · `pnpm computed:check`</sub>

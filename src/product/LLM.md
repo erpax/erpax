@@ -3,15 +3,15 @@
 
 # product
 
-path `product` · uuid `e46ea64b-3378-83ac-873f-b0a85a8fb3a2` · diamond `a5eb3de0-9662-8971-9eaa-5477edb150dc`
+path `product` · uuid `e46ea64b-3378-83ac-873f-b0a85a8fb3a2` · diamond `4f5e2705-29f0-873a-881d-a8baae425f45`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collection·days·enumeration·financial·group·has·id·individual·law·link·model·policy·return·supported·target · exports product · escapes —
-links `15/15` · folded `1` · bonds in `14` out `14`
+links `15/15` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → barrier·edits·harden·landmarks·mandates·median·misconceptions·musical·observation·pregnancy·sanitization·therapeutic·unspecified·western · ← barrier·edits·harden·landmarks·mandates·median·misconceptions·musical·observation·pregnancy·sanitization·therapeutic·unspecified·western
+neighbors → acquired·asin·collection·combination·consumable·days·enumeration·financial·group·has·id·individual·law·link·model·pack·policy·return·supported·target · ← acquired·asin·collection·combination·consumable·days·enumeration·financial·group·has·id·individual·law·link·model·pack·policy·return·supported·target
 analysis —
 law product is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `11edc503-b857-8f25-a367-b3434c9d3941` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a81d8fc8-41c0-8834-80ce-d624a65dae33` · `pnpm readme` · `pnpm computed:check`</sub>

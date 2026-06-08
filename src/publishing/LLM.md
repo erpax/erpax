@@ -3,15 +3,15 @@
 
 # publishing
 
-path `publishing` · uuid `3daf141a-100a-8139-8212-d7170680e115` · diamond `d0b370ef-72b0-8a67-ac15-78de7d2226c4`
+path `publishing` · uuid `3daf141a-100a-8139-8212-d7170680e115` · diamond `cf003cef-2c7c-8a3b-ae1d-df0a562d460d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·principles·sti · exports publishing · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·publisher·terminals · ← landmarks·publisher·terminals
+neighbors → collapse·law·merge·principles·sti · ← collapse·law·merge·principles·sti
 analysis —
 law publishing principles are the declared editorial rules content is judged against; the standard must be stated before the work, not invented after it.
 
 ---
 
-<sub>content-uuid `0b1f68b2-311b-869f-8d3a-3a398ae77f8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `974abf8a-cc97-81e5-867f-8d91a6a568f4` · `pnpm readme` · `pnpm computed:check`</sub>

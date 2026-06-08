@@ -3,15 +3,15 @@
 
 # payload
 
-path `payload` · uuid `f51c4ab0-c22e-80aa-b591-76ae74a54966` · diamond `4986f287-c29c-846b-aa36-bbb5f7cfd8ef`
+path `payload` · uuid `f51c4ab0-c22e-80aa-b591-76ae74a54966` · diamond `c53eaf59-ede2-8286-8051-d2c507a8e5c3`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports default · escapes —
-links `33/33` · folded `1` · bonds in `4` out `4`
+links `33/33` · folded `1` · bonds in `36` out `35`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → access·ai·api·breath·command·config·confirm·database·deploy·diamond·duality·fields·github·hooks·identity·integrity·invariant·law·mcp·merge·payload·plugin·purity·refactor·schema·seal·self·skills·stack·trinity·types·typography·unavoidable·uuid·vitepress · ← access·ai·api·breath·command·config·confirm·database·deploy·diamond·duality·fields·github·hooks·identity·integrity·invariant·law·mcp·mcp·merge·payload·plugin·purity·refactor·schema·seal·self·skills·stack·trinity·types·typography·unavoidable·uuid·vitepress
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a62b4838-1842-85e2-b5e9-bfc56d7463fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `79c7f8f3-7a18-8d08-9481-6388c08e9dfe` · `pnpm readme` · `pnpm computed:check`</sub>

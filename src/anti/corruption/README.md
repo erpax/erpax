@@ -2,7 +2,7 @@
 
 # corruption
 
-> atom `anti/corruption` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `anti/corruption` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `anti` · sub-root `3f6af27a-e7ba-83c4-8910-296fe78e5ca9`
 - bond degree `72` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -38,7 +38,7 @@
 
 ## analytics
 
-- bond degree `72` · sealed `1` · horo `4`
+- bond degree `72` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
@@ -52,8 +52,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `37d45dfc-cb7f-8ca4-a75f-ae97258eea69` · framed by typography partition `anti` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `074a2527-df0a-8c10-925a-b57014543886` · framed by typography partition `anti` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

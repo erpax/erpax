@@ -3,15 +3,15 @@
 
 # parent
 
-path `parent` · uuid `e929625c-70a4-84ec-a6b3-c1ffc9b1d27b` · diamond `d833bd4f-fd7f-89ff-b38a-3b534193a830`
+path `parent` · uuid `e929625c-70a4-84ec-a6b3-c1ffc9b1d27b` · diamond `9044608c-710e-8e4c-ac40-c23cb2d5b096`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports audience·item·law·organization·service·taxon · exports parent · escapes —
-links `6/6` · folded `1` · bonds in `42` out `42`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessory·accounting·atom·bindings·catalogue·chat·checklist·cohort·colleagues·collect·declaration·document·dropoff·electrician·entanglement·enum·fertility·founder·gears·harden·height·horo·id·interview·landmarks·leisure·list·maintainer·mention·opinion·platform·results·roadmap·seed·sell·sender·sign·sold·surprisal·tax·tour·treat · ← accessory·accounting·atom·bindings·catalogue·chat·checklist·cohort·colleagues·collect·declaration·document·dropoff·electrician·entanglement·enum·fertility·founder·gears·harden·height·horo·id·interview·landmarks·leisure·list·maintainer·mention·opinion·platform·results·roadmap·seed·sell·sender·sign·sold·surprisal·tax·tour·treat
+neighbors → audience·item·law·organization·service·taxon · ← audience·item·law·organization·service·taxon
 analysis —
 law parent is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `45dc0053-4950-8b10-b1de-f4837cbc7036` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df114f17-76db-8972-b9ef-c92d823876e1` · `pnpm readme` · `pnpm computed:check`</sub>

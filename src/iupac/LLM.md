@@ -3,15 +3,15 @@
 
 # iupac
 
-path `iupac` · uuid `d4338da9-4cd2-8ac8-9873-ffebbb2fde52` · diamond `8c2af43b-02ab-88c7-8d35-e63aed36bb3c`
+path `iupac` · uuid `d4338da9-4cd2-8ac8-9873-ffebbb2fde52` · diamond `f8374d2e-3a6f-81be-b997-c075945cf537`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·name·sti · exports iupac · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·gift·landmarks · ← accounting·balance·gift·landmarks
+neighbors → collapse·law·merge·name·sti · ← collapse·law·merge·name·sti
 analysis —
 law iupac is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `75fa4f0f-66ce-8416-8e7a-a306e3d207f2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `226e27ab-9db1-8fdd-85f3-b5e1e9f017c3` · `pnpm readme` · `pnpm computed:check`</sub>

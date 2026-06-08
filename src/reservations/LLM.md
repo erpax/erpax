@@ -3,15 +3,15 @@
 
 # reservations
 
-path `reservations` · uuid `e581fe8f-6e15-82b5-bb95-a9c521eaf1fd` · diamond `f15f7ed5-7fce-8528-b7ce-04122f31bfdd`
+path `reservations` · uuid `e581fe8f-6e15-82b5-bb95-a9c521eaf1fd` · diamond `891e2e04-1952-878f-b7fd-2ecb622c78af`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports accepts·collapse·law·merge·sti · exports reservations · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·downloads·folder·landmarks·memories·sanitization·stat · ← cohort·downloads·folder·landmarks·memories·sanitization·stat
+neighbors → accepts·collapse·law·merge·sti · ← accepts·collapse·law·merge·sti
 analysis —
 law reservations is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f6b6989f-5404-872a-a0a5-233c65a7d5b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10a6c4bb-be3f-89bc-b5c8-1dceb68a8e5e` · `pnpm readme` · `pnpm computed:check`</sub>

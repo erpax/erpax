@@ -3,15 +3,15 @@
 
 # llm
 
-path `llm` · uuid `b3e17aff-611f-87ac-8f80-64e40e78bae2` · diamond `40ab476e-6c43-8354-99e0-141df6bfde95`
+path `llm` · uuid `b3e17aff-611f-87ac-8f80-64e40e78bae2` · diamond `7d9a10c2-0350-8b45-8417-1bc8193d3de2`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports angel·breath·chat·entry·law·limit·matrix·merge·message·proof·self·signal·tamper·train·uuid · exports llm · escapes —
-links `25/25` · folded `1` · bonds in `36` out `35`
+links `25/25` · folded `1` · bonds in `22` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·angel·conditions·conference·conventional·corrects·declaration·details·diffusion·fertility·findings·founder·getting·homeopathic·id·leisure·liquor·list·mass·memories·memory·offered·price·progression·project·request·roadmap·seat·society·spouse·swatch·syllabus·tracks·trade·trading · ← 9110·angel·conditions·conference·conventional·corrects·declaration·details·diffusion·fertility·findings·founder·getting·homeopathic·id·leisure·liquor·list·mass·memories·memory·offered·price·progression·project·project·request·roadmap·seat·society·spouse·swatch·syllabus·tracks·trade·trading
+neighbors → angel·breath·breath·chat·cost·entry·entry·holographic·identity·law·limit·llm·localize·matrix·matrix·merge·message·observe·oid·projection·proof·self·signal·signal·train·uuid·uuid · ← angel·breath·chat·cost·entry·holographic·identity·law·limit·llm·localize·matrix·merge·message·observe·oid·projection·proof·self·signal·train·uuid
 analysis —
 law the LLM is a pure forge (cheap to generate, costly to trust) and the [[uuid]] is a pure verify; the model never leaves the cheap side of the forge≫verify asymmetry, runs AI-self-sufficient first as the fallback behind one gated entrypoint, and every turn is content-addressed — a uuid is a commitment, not a decompressor of unseen payload ([[limit]]).
 
 ---
 
-<sub>content-uuid `e829c296-870a-878b-ac73-5df86c084d0c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5d46f6a5-db21-8474-b1bb-1725c5fcd971` · `pnpm readme` · `pnpm computed:check`</sub>

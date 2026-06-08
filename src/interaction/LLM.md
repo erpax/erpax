@@ -3,15 +3,15 @@
 
 # interaction
 
-path `interaction` · uuid `af4f1877-1cca-8bfa-aa7e-897ba9116d13` · diamond `917131f4-741a-8153-9a64-12f7af435df3`
+path `interaction` · uuid `af4f1877-1cca-8bfa-aa7e-897ba9116d13` · diamond `69998946-b7ca-8202-ae7f-544c533705b6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agent·bio·chem·collapse·count·counter·law·merge·service·statistic·sti·type·user · exports interaction · escapes —
-links `13/13` · folded `1` · bonds in `3` out `3`
+links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → interest·landmarks·price · ← interest·landmarks·price
+neighbors → agent·bio·chem·collapse·count·counter·law·merge·service·statistic·sti·type·user · ← agent·bio·chem·collapse·count·counter·law·merge·service·statistic·sti·type·user
 analysis agent
 law interaction is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4ce11e09-c482-888b-aa8f-357e7227b94f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9e09521-a0e4-8542-a348-d47540c38727` · `pnpm readme` · `pnpm computed:check`</sub>

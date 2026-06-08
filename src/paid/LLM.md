@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports paid · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law paid is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b6eebdd1-23b3-8395-9475-c6b421bca7d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c66a5ed-0f12-87f8-83ca-04712dc81171` · `pnpm readme` · `pnpm computed:check`</sub>

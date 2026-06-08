@@ -23,7 +23,21 @@
 
 - partition `electrician` · sub-root `6a356ec3-7cc2-84cb-b2dd-3daaf878b407`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `13d57a08-95d8-8d11-88ec-8e8c379f7cec` · framed by typography partition `electrician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9fc0c6c-3f6e-84f7-a99a-dea9ff42bdec` · framed by typography partition `electrician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

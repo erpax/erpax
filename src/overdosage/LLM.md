@@ -3,15 +3,15 @@
 
 # overdosage
 
-path `overdosage` · uuid `6a37a54c-18c7-8b4a-af9d-5cc5b04a6cb9` · diamond `08bea103-889b-8eb6-a033-42432bfee1d6`
+path `overdosage` · uuid `6a37a54c-18c7-8b4a-af9d-5cc5b04a6cb9` · diamond `2a355002-122e-826d-b0da-9e9c816fd2b1`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports overdosage · escapes —
-links `2/2` · folded `1` · bonds in `3` out `3`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical·terminals · ← landmarks·periodical·terminals
+neighbors → law·thing · ← law·thing
 analysis —
 law overdosage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3d9c1b0b-79bb-8bef-b88a-4036682ed7d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab6c158b-5f73-827d-84c3-80e6f6d1fd71` · `pnpm readme` · `pnpm computed:check`</sub>

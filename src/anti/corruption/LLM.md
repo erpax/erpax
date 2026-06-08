@@ -4,7 +4,7 @@
 # corruption
 
 path `anti/corruption` · uuid `3f6af27a-e7ba-83c4-8910-296fe78e5ca9` · diamond `5bf0aaf0-360f-8be1-aef3-035fc81d5e21`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports function·interface · escapes —
 links `17/17` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a ledger is corruption-free iff four invariants hold at once — content-uui
 
 ---
 
-<sub>content-uuid `44b29493-b572-8833-9ad8-625a403f15e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8786d03b-fff0-8dc6-8686-0de2885488be` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # permission
 
-path `permission` · uuid `efe08a19-63c0-8fe5-a05a-6c1b68ab6856` · diamond `5d40495b-17f4-817b-9094-f7bfafa9860c`
+path `permission` · uuid `efe08a19-63c0-8fe5-a05a-6c1b68ab6856` · diamond `b3e7d922-992d-8d20-b5a9-c340cb441279`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·digital·document·has·law·merge·sti·type · exports permission · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·digital·document·has·law·merge·sti·type · ← collapse·digital·document·has·law·merge·sti·type
 analysis —
 law permission is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `43ac0a7e-ea14-8cb2-8acb-80543631ee79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34884a95-8cd3-890a-9300-d38a38aa8a04` · `pnpm readme` · `pnpm computed:check`</sub>

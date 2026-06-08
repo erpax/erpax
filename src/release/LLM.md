@@ -3,15 +3,15 @@
 
 # release
 
-path `release` · uuid `152e00c6-f24f-842b-a8da-1903b5e2e466` · diamond `7f58b70e-e601-8e94-a028-c9dc906e155d`
+path `release` · uuid `152e00c6-f24f-842b-a8da-1903b5e2e466` · diamond `d736c2ad-85c2-8be7-903b-03095d8395f0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports album·date·format·law·music·notes·type · exports release · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → album·date·format·law·music·notes·type · ← album·date·format·law·music·notes·type
 analysis —
 law release is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5e4a61e6-3f6d-8f09-99eb-041337a5d76d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7873685a-45a0-88f4-b1a5-8e9deee1b57e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # icubeds
 
-path `icubeds` · uuid `24c720c1-7071-85c0-8ba7-5e1178e4fe6c` · diamond `7eb954a8-c88d-8d9b-864b-1c76fe0d1243`
+path `icubeds` · uuid `24c720c1-7071-85c0-8ba7-5e1178e4fe6c` · diamond `2a9b235c-2b86-8cd7-8beb-4a9882434b86`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports icubeds · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·evapotranspiration·landmarks·memories·satire·stat · ← cohort·evapotranspiration·landmarks·memories·satire·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law icubeds is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e48927e9-d785-84c6-a681-66415b233e33` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c6cd1f9-3f07-8a38-ad31-752b7eda2ec8` · `pnpm readme` · `pnpm computed:check`</sub>

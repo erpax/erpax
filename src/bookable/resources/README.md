@@ -2,7 +2,7 @@
 
 # resources
 
-> atom `bookable/resources` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `bookable/resources` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `bookable` · sub-root `81a5c4cf-d55f-83da-84b6-028a286649f2`
 - bond degree `28` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -75,7 +75,7 @@
 
 ## analytics
 
-- bond degree `28` · sealed `1` · horo `4`
+- bond degree `28` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `39`
 
@@ -89,8 +89,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9e3e7a0a-dc2d-83c1-8961-916b128536ae` · framed by typography partition `bookable` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67aa6df7-e99b-8da9-aec2-7e10d6be74f4` · framed by typography partition `bookable` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

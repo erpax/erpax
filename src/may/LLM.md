@@ -3,15 +3,15 @@
 
 # may
 
-path `may` · uuid `2cb830c1-a52b-891b-8110-d1a0eb730943` · diamond `fb2d24bd-9307-825e-aa5a-6aa3fc1841bf`
+path `may` · uuid `2cb830c1-a52b-891b-8110-d1a0eb730943` · diamond `3fbd87a1-d853-8c36-9038-82f84ac7e027`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports may · escapes —
-links `4/4` · folded `1` · bonds in `18` out `18`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → biomechnical·boat·codes·cohort·delivery·departure·detected·entropy·harden·landmarks·memories·mentions·purchase·sanitization·stat·subscription·types·want · ← biomechnical·boat·codes·cohort·delivery·departure·detected·entropy·harden·landmarks·memories·mentions·purchase·sanitization·stat·subscription·types·want
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law may is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1d74d839-d730-8223-9ef3-a06854b1c202` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `980b2897-ef9e-885f-b799-eab51ba6db5e` · `pnpm readme` · `pnpm computed:check`</sub>

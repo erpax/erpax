@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `protozoa` · sub-root `e11b6412-de4f-8288-8169-b6f366120360`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `e11b6412-de4f-8288-8169-b6f366120360`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dd38f3d8-aa2f-8432-881f-cad71c630fcc` · framed by typography partition `protozoa` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b082e22d-989d-8765-810f-2a389edd0b05` · framed by typography partition `protozoa` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

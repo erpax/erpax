@@ -27,6 +27,7 @@
  */
 
 import type { AgentContext, AgentEffect } from './types'
+import { assertStrictEffect } from './strict-apply'
 
 /** Mustache-style placeholder substitution. */
 function compose(template: string, vars: Record<string, unknown>): string {
@@ -34,12 +35,13 @@ function compose(template: string, vars: Record<string, unknown>): string {
 }
 
 export async function processEffect(eff: AgentEffect, ctx: AgentContext): Promise<void> {
+  assertStrictEffect(ctx, eff)
   switch (eff.kind) {
     case 'create':
       await ctx.payload.create({
         collection: eff.collection,
         data: eff.data as Record<string, unknown>,
-        overrideAccess: true,
+        overrideAccess: false,
       } as never)
       return
 
@@ -48,7 +50,7 @@ export async function processEffect(eff: AgentEffect, ctx: AgentContext): Promis
         collection: eff.collection,
         id: eff.id,
         data: eff.patch as Record<string, unknown>,
-        overrideAccess: true,
+        overrideAccess: false,
       } as never)
       return
 

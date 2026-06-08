@@ -23,7 +23,7 @@
 
 - partition `barcode` · sub-root `efb58195-0ddd-8fcc-a18c-2f7d92ddb663`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c3be7729-dab9-8cb5-ad8f-f43c70d37c02` · framed by typography partition `barcode` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f724c1a9-8ff4-8607-8b4a-a6adaf687e51` · framed by typography partition `barcode` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

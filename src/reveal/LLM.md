@@ -3,15 +3,15 @@
 
 # reveal
 
-path `reveal` · uuid `e93bfb3c-5ddf-88e5-b232-34f082f15e0f` · diamond `5e599827-37e7-8eae-97cd-8e63aab72c44`
+path `reveal` · uuid `e93bfb3c-5ddf-88e5-b232-34f082f15e0f` · diamond `cd5d8847-b55e-805d-bb19-b07497765475`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/entropy·@/horo·@/uuid/matrix · exports const·function·interface · escapes —
-links `36/36` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `36/36` · folded `1` · bonds in `16` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → development·duality·entropy·fusion·gate·horo·law·link·matrix·merge·pattern·proof·society·trinity·uuid·zeropoint · ← development·duality·entropy·fusion·gate·horo·law·link·matrix·merge·pattern·proof·society·trinity·uuid·zeropoint
 analysis —
 law emergence is detected, never decreed — reveal surfaces a triad ONLY when the matrix already holds all three reciprocal bindings (the [[entropy]] symmetry made closed), so a pattern can be *revealed* but never *injected*; the density the [[development]] exhale builds is the only thing that can make new structure appear, and meaning over it is deferred to judgment, keeping the detector honest (a heuristic, not a [[proof]]).
 
 ---
 
-<sub>content-uuid `cb4b1abc-78eb-823e-9f5f-1c29b705719a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49cba525-85d0-8a17-b472-47986a19f2eb` · `pnpm readme` · `pnpm computed:check`</sub>

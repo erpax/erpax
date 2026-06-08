@@ -3,15 +3,15 @@
 
 # lead-score
 
-path `lead-score` · uuid `157b5c0b-a795-8cb2-8a68-8e7c03b86f01` · diamond `d3de01a6-208b-899e-94d7-89d5cbeab586`
+path `lead-score` · uuid `157b5c0b-a795-8cb2-8a68-8e7c03b86f01` · diamond `f0118595-5f79-8b66-b377-09289bb6b300`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports activities·law·leads·opportunities·prospect·segment · exports lead-score · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·jewelry·lead·reviews · ← accounting·jewelry·lead·reviews
+neighbors → activities·law·leads·opportunities·prospect·segment · ← activities·law·leads·opportunities·prospect·segment
 analysis —
 law a lead-score is a DERIVED ranking of prospect quality (behavioural + firmographic signals against a model), not stored truth — a threshold crossing is the handoff event to sales.
 
 ---
 
-<sub>content-uuid `000ff243-aeb7-8064-850f-2cd0ec9dc75f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7335b388-b3f0-89ce-9844-b5b05e59c5dc` · `pnpm readme` · `pnpm computed:check`</sub>

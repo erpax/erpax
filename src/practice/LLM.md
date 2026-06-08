@@ -3,15 +3,15 @@
 
 # practice
 
-path `practice` · uuid `7b88ee16-ea8f-8306-8165-bd29af7d99b9` · diamond `27fba74e-9061-8f9b-91d8-04bd243212d5`
+path `practice` · uuid `7b88ee16-ea8f-8306-8165-bd29af7d99b9` · diamond `bc2e2b43-5fd8-8e5f-99e0-6214c5a0289f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·law·practices·reference · exports practice · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → balance·law·practices·reference · ← balance·law·practices·reference
 analysis —
 law the singular model of one [[practices]] row — an established way of doing something within a domain; every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `6d19cc38-295f-88e9-999d-391aab8266b6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ceaf1ecd-78b5-8a4b-8b0c-dfd1b83c15ad` · `pnpm readme` · `pnpm computed:check`</sub>

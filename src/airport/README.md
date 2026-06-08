@@ -23,7 +23,7 @@
 
 - partition `airport` · sub-root `ce862497-e3da-8eb7-a68c-c38471a944b1`
 - bond degree `11` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b010904c-595d-8bc3-a72c-55f2998825d5` · framed by typography partition `airport` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1f10abe6-0c8a-8975-87bf-642cf903498c` · framed by typography partition `airport` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

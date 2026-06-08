@@ -3,15 +3,15 @@
 
 # repository
 
-path `repository` · uuid `5ef0b441-258c-8529-a3c3-2825b96739cf` · diamond `b43d5b61-2ff0-8685-b41b-33e2b6b334f6`
+path `repository` · uuid `5ef0b441-258c-8529-a3c3-2825b96739cf` · diamond `e3c4d05c-335b-8c0e-bea0-5f548fa53371`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports repository · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical·terminals · ← landmarks·periodical·terminals
+neighbors → code·collapse·law·merge·sti · ← code·collapse·law·merge·sti
 analysis —
 law repository is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a64d111c-5253-8e1a-bfea-8aa0e329f665` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b024884e-2d36-8bd7-b284-44cfbc998be1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # acknowledgments
 
-path `internal/policies/policy/acknowledgments` · uuid `0ade7a04-1423-8cbc-9792-6e35ad43910a` · diamond `57cf39bd-1161-8343-bd13-44fe693de30a`
+path `internal/policies/policy/acknowledgments` · uuid `0ade7a04-1423-8cbc-9792-6e35ad43910a` · diamond `ca09653b-9b62-842a-8ad2-0301acba740a`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/role/based/access · exports const · escapes —
-links `1/1` · folded `1` · bonds in `5` out `5`
+links `1/1` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·generically·landmarks·memories·stat · ← cohort·generically·landmarks·memories·stat
+neighbors → acknowledgment·law·policies · ← acknowledgment·law·policies
 analysis —
 law a policy acknowledgment is the per-employee-per-policy-version attestation — signed-document upload, acknowledged date and status (pending/overdue/expired) — the SOX §404 evidence that a specific person accepted a specific policy version.
 
 ---
 
-<sub>content-uuid `2477ce12-5e4b-89cd-8ab8-d065667c6d47` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d579c756-7904-8fd2-baf5-f4fc91ed4bf5` · `pnpm readme` · `pnpm computed:check`</sub>

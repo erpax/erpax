@@ -3,15 +3,15 @@
 
 # margin
 
-path `margin` · uuid `460a93ce-d66d-8368-b972-a981a55f4cba` · diamond `d1bf8556-0e4a-85ed-bad7-214818882ab6`
+path `margin` · uuid `460a93ce-d66d-8368-b972-a981a55f4cba` · diamond `07d4463d-2219-8dbb-8ad5-3a0a487f2fc5`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·error·law·merge·sti · exports margin · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·error·law·merge·sti · ← collapse·error·law·merge·sti
 analysis —
 law margin is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9d443137-bae4-8b64-a396-5db371eec92f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80c55880-9ee5-8b04-a5b0-cdbef9d2eaac` · `pnpm readme` · `pnpm computed:check`</sub>

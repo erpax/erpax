@@ -3,15 +3,15 @@
 
 # export
 
-path `quantum/export` · uuid `—` · diamond `37abdbe1-bb9a-8b46-a3e4-2752957285dc`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `quantum/export` · uuid `8bb1642a-b500-8fe1-8b31-f79e1243d0e2` · diamond `54181141-6309-8c07-823c-e842b855c1bc`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports convention·duality·entanglement·exported·law·quantum·tamper · exports export · escapes —
-links `8/8` · folded `0` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity·quantum/boundary
+links `8/8` · folded `1` · bonds in `7` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → boundary·convention·duality·entanglement·exported·law·law·tamper · ← boundary·convention·duality·entanglement·exported·law·tamper
+analysis quantum/boundary
 law quantum computed export — the public facet is algorithmically derived from source and content-addressed; every cross-atom symbol must be reachable from the atom's index barrel.
 
 ---
 
-<sub>content-uuid `2dd4370a-e671-8fbc-a2b0-f94c46f90c24` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `13b6ade0-163e-8474-bae3-f53bb3564860` · `pnpm readme` · `pnpm computed:check`</sub>

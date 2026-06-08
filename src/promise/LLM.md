@@ -3,15 +3,15 @@
 
 # promise
 
-path `promise` · uuid `f5e3809c-cc48-8d5c-9a2a-51dc99f4c962` · diamond `b20dfb51-4ebd-8161-ac19-e72df75ebbac`
+path `promise` · uuid `f5e3809c-cc48-8d5c-9a2a-51dc99f4c962` · diamond `b5a8ab45-4ecc-8f64-9a32-105ab65287cf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·warranty · exports promise · escapes —
-links `5/5` · folded `1` · bonds in `17` out `17`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·apiculture·borrow·candidate·corrects·footer·grants·landmarks·pickup·sandbox·sbbi·seat·sell·soil·torus·training·travel · ← agriculture·apiculture·borrow·candidate·corrects·footer·grants·landmarks·pickup·sandbox·sbbi·seat·sell·soil·torus·training·travel
+neighbors → collapse·law·merge·sti·warranty · ← collapse·law·merge·sti·warranty
 analysis —
 law promise is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `85b4a600-38a5-8666-8558-5ddc2f8b6431` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d18e5f40-f104-8283-84fb-c5e7afdf3270` · `pnpm readme` · `pnpm computed:check`</sub>

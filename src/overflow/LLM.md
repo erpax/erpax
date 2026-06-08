@@ -3,15 +3,15 @@
 
 # overflow
 
-path `overflow` · uuid `62d7ae20-b910-8c4e-bd39-cf78c823408f` · diamond `b6d6e155-6c63-83ed-b216-f12be1d33670`
+path `overflow` · uuid `62d7ae20-b910-8c4e-bd39-cf78c823408f` · diamond `34fb84a0-4093-8560-ade8-d2cb3989388f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·law·merge·num·pats·sti · exports overflow · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·cvd·law·merge·num·pats·sti · ← collapse·cvd·law·merge·num·pats·sti
 analysis —
 law overflow is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3e31cc69-bd86-8067-95ee-30422e9640aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91a6d398-f87e-8ae5-bc16-31cc07a969c3` · `pnpm readme` · `pnpm computed:check`</sub>

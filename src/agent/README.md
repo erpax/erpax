@@ -2,7 +2,7 @@
 
 # agent
 
-> atom `agent` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `agent` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
 - bond degree `251` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -57,7 +57,7 @@
 
 ## analytics
 
-- bond degree `251` · sealed `1` · horo `8`
+- bond degree `251` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `21`
 
@@ -71,8 +71,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `db4d034c-368c-897b-9547-bbc8a7065798` · framed by typography partition `agent` bonds `251` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a3c448ba-88d9-87ca-97bd-25e367151e2e` · framed by typography partition `agent` bonds `251` · `pnpm readme` · `pnpm readme:check`</sub>

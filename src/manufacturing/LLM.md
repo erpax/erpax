@@ -3,15 +3,15 @@
 
 # manufacturing
 
-path `manufacturing` · uuid `5f1b8d16-8da8-8539-9f81-d13071b7d228` · diamond `6d682de4-34cc-80cc-ad9e-0677f37c4066`
+path `manufacturing` · uuid `5f1b8d16-8da8-8539-9f81-d13071b7d228` · diamond `640bc883-99a6-86ba-9e75-341793a198e8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·all·allocation·balance·bindings·collections·decompression·fields·hooks·horo·identity·jobs·measure·merge·part·plugins·port·queries·rate·sequence·society·standard·torus·train·transaction·variant·whole·work·zeropoint · exports manufacturing · escapes —
-links `33/33` · folded `1` · bonds in `29` out `28`
+links `33/33` · folded `1` · bonds in `46` out `46`
 faces worker·plugin·pwa `0·0·0`
-neighbors → awareness·borrow·breakfast·cardiovascular·comment·consortium·description·diet·distance·entity·frame·guideline·horo·idempotency·landmarks·marine·natural·photograph·pickup·postcode·progression·solve·standards·supported·translate·warranty·worth·wp · ← age·awareness·borrow·breakfast·cardiovascular·comment·consortium·description·diet·distance·entity·frame·guideline·horo·idempotency·landmarks·marine·natural·photograph·pickup·postcode·progression·solve·standards·supported·translate·warranty·worth·wp
+neighbors → accounting·agriculture·all·allocation·atom·balance·baseline·bindings·centers·collections·commerce·cropplan·cultivation·decompression·empirical·enterprisebudget·fields·flow·fodder·hooks·horo·identity·jobs·lot·measure·merge·part·plugins·port·pruning·queries·rate·reconcile·seed·sequence·society·standard·tag·time·torus·train·transaction·variances·variant·whole·zeropoint · ← accounting·agriculture·all·allocation·atom·balance·baseline·bindings·centers·collections·commerce·cropplan·cultivation·decompression·empirical·enterprisebudget·fields·flow·fodder·hooks·horo·identity·jobs·lot·measure·merge·part·plugins·port·pruning·queries·rate·reconcile·seed·sequence·society·standard·tag·time·torus·train·transaction·variances·variant·whole·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `601756bf-4b2c-852f-869f-bde22f4190e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9392eea1-d447-8761-a409-e446c594bbd9` · `pnpm readme` · `pnpm computed:check`</sub>

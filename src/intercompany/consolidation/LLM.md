@@ -3,15 +3,15 @@
 
 # consolidation
 
-path `intercompany/consolidation` · uuid `977687ba-57b0-8456-8e15-a163746a3de6` · diamond `3f6f4a26-c9ae-80eb-acee-1c4e572d991e`
+path `intercompany/consolidation` · uuid `977687ba-57b0-8456-8e15-a163746a3de6` · diamond `e5deb559-f8b2-8807-ab10-09f9d1aa6f5f`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/intercompany/reconciliation · exports IntercompanyReconciliation·for · escapes —
-links `1/1` · folded `1` · bonds in `3` out `3`
+links `1/1` · folded `1` · bonds in `4` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·optician·terminals · ← landmarks·optician·terminals
+neighbors → accounting·balance·consolidations·law·law · ← accounting·balance·consolidations·law
 analysis —
 law consolidation is NEVER automatic — readiness requires every entity closed AND every intercompany balance reconciled per pair·per currency; elimination entries are prepared but not posted (evidence → human approval → GL), and each readiness assessment chains tamper-evidently to the prior.
 
 ---
 
-<sub>content-uuid `e16df5d6-b73b-8cb9-bfcd-86a1479d6da5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `800185c8-995e-8c99-adaf-193345b46a43` · `pnpm readme` · `pnpm computed:check`</sub>

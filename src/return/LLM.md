@@ -3,15 +3,15 @@
 
 # return
 
-path `return` · uuid `1727599e-a2b7-8703-bd64-f30c31bfa7a6` · diamond `30168ca3-ba9c-8069-a882-60158e7d13c2`
+path `return` · uuid `1727599e-a2b7-8703-bd64-f30c31bfa7a6` · diamond `59c3fcd7-4a03-807e-9584-c69a8f913748`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·amount·category·collapse·country·customer·days·defect·enumeration·fees·has·item·label·law·link·merchant·merge·method·override·policy·product·remorse·seasonal·shipping·source·sti · exports return · escapes —
-links `26/26` · folded `1` · bonds in `0` out `0`
+links `26/26` · folded `1` · bonds in `47` out `47`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → action·amount·bogomilism·buddhism·category·christianity·collapse·country·covenant·customer·days·defect·enumeration·fees·gnosticism·has·hinduism·islam·item·jainism·judaism·label·law·link·manichaeism·merchant·merge·method·orphism·orthodoxy·override·policy·product·protestantism·remorse·ritual·seasonal·shamanism·shia·shipping·sikhism·sin·source·sti·sufism·taoism·zoroastrianism · ← action·amount·bogomilism·buddhism·category·christianity·collapse·country·covenant·customer·days·defect·enumeration·fees·gnosticism·has·hinduism·islam·item·jainism·judaism·label·law·link·manichaeism·merchant·merge·method·orphism·orthodoxy·override·policy·product·protestantism·remorse·ritual·seasonal·shamanism·shia·shipping·sikhism·sin·source·sti·sufism·taoism·zoroastrianism
 analysis —
 law return is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `924b790c-6b9d-8a72-ba6a-8faff44f22de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e2d2d93-4364-8697-be3d-6d550121ebfe` · `pnpm readme` · `pnpm computed:check`</sub>

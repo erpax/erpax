@@ -3,15 +3,15 @@
 
 # purity
 
-path `purity` · uuid `—` · diamond `483fecd3-7d18-852a-a96e-5168debfbc43`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `purity` · uuid `115e5162-f061-8360-8ade-8c11b6d9d196` · diamond `9a2a3335-5497-89bf-95c2-5143276c3315`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports analytics·anchor·atom·aura·bottleneck·collapse·confirm·convention·cost·dimension·entropy·folder·gate·hallucination·integrity·law·link·matrix·merge·path·payload·quantum·seal·sequence·sin·suffering·tamper·trinity·unavoidable·uuid·whole·zeropoint · exports purity · escapes —
-links `79/79` · folded `0` · bonds in `0` out `0`
+links `79/79` · folded `1` · bonds in `38` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis access·accounting·ai·analytics·analytics/max-tamper-cost·anchoring·animism·anyone·api·apply·archangel·architect·archival·aura·auth·authenticated·bahai·bitemporal·bogomilism·boundary·buddhism·by·calculator·carbon·card·catholicism·chain·change·chart·checker·christianity·client·cloudflare·confirm·confucianism·context·corpus·cost·covenant·cross·css·diamond·dom·emitter·equity·examples·explainability·export·factory·fallback·field·github·gnosticism·guardian·hallucination·hermeticism·hero·hinduism·hooks·id·import·innovation·islam·jainism·judaism·kabbalah·key·manichaeism·maxtampercost·media·memory·mercy·merge·modal·op·orphism·orthodoxy·paganism·pagination·pqc·prayer·primitive·propose·protestantism·provenance·provider·published·purity·quantum·readme·reality·reconciliation·regeneration·registered·religion·replay·research·resolve·reversibility·ritual·router·scopes·seal·secret·seed·shamanism·shareds·shia·shinto·sikhism·sin·suffering·sufism·sunni·superdense·switcher·sync·taoism·teleportation·tenant·thought·timestamp·tool·topology·trading·trail·types·typography·validation·vedanta·wallet·wisdom·zoroastrianism
+neighbors → analytics·anchor·atom·aura·bottleneck·collapse·confirm·convention·cost·css·dimension·entropy·folder·gate·hallucination·integrity·law·link·matrix·maxtampercost·memory·merge·path·payload·quantum·readme·seal·sequence·sin·suffering·sync·tamper·trinity·typography·unavoidable·uuid·whole·zeropoint · ← analytics·anchor·atom·aura·bottleneck·collapse·confirm·convention·cost·css·dimension·entropy·folder·gate·hallucination·integrity·law·link·matrix·maxtampercost·memory·merge·path·payload·quantum·readme·seal·sequence·sin·suffering·sync·tamper·trinity·typography·unavoidable·uuid·whole·zeropoint
+analysis access·analytics·analytics/max-tamper-cost·architecture·aura·auth·card·confirm·css·diamond·examples·hallucination·hooks·maxtampercost·memory·pagination·propose·provider·readme·seal·seed·session·sync·trading·typography
 law all is passed with uuids without [[payload]] — uuid purity (`pnpm confirm:uuid`) proves the content-address layer sealed before any backend plugin loads.
 
 ---
 
-<sub>content-uuid `bdb38a72-991d-8675-83d9-f562372e71c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `465fa113-feb9-890b-a629-0cf05b4e01a6` · `pnpm readme` · `pnpm computed:check`</sub>

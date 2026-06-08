@@ -23,7 +23,7 @@
 
 - partition `athlete` · sub-root `050c9482-8073-8274-902b-1bc606cab378`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `39bc6284-6eb2-80df-ad6c-1d1eabcd0f5b` · framed by typography partition `athlete` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1a5e5128-a684-8144-a06a-8b6bf7501116` · framed by typography partition `athlete` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

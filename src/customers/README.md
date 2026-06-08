@@ -25,7 +25,51 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `63` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ASC-606` · catalogue
+- `COSO-ERM-2017` · catalogue
+- `eIDAS` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017 §BG-7 buyer` · banner
+- `EU-2014/55` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-UCC` · catalogue
+- `GDPR Art.5 data-minimization` · banner
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IAS-1` · catalogue
+- `IAS-8` · catalogue
+- `IFRS IFRS-9 financial-instruments accounts-receivable` · banner
+- `IFRS-15` · catalogue
+- `INCOTERMS-2020` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-17442-1` · catalogue
+- `ISO-17442-1:2020 lei` · banner
+- `ISO-3166-1:2020 country-codes via-addresses` · banner
+- `ISO-4217:2015 currency-codes default-currency` · banner
+- `ISO-9735` · catalogue
+- `Peppol-BIS-3.0` · catalogue
+- `SOX` · catalogue
+- `UBL-2.1` · catalogue
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-310 receivables` · banner
+- `WCO-HS` · catalogue
+
+## analytics
+
+- bond degree `63` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `31`
 
 ## identity
 
@@ -41,4 +85,4 @@
 
 ---
 
-<sub>content-uuid `7d3e33ee-9638-804b-91e5-96f39881385d` · framed by typography partition `customers` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c180775b-dd56-838d-a374-b7ea5c90f5a2` · framed by typography partition `customers` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>

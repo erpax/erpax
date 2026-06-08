@@ -3,15 +3,15 @@
 
 # pawn
 
-path `pawn` · uuid `baa11e40-b41f-8a3d-8cf6-63dd4a3cbceb` · diamond `7d524779-a761-824a-96a5-204b6ca30e62`
+path `pawn` · uuid `baa11e40-b41f-8a3d-8cf6-63dd4a3cbceb` · diamond `f2df1c99-1c28-8467-9977-09e92694a861`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·shop·sti · exports pawn · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dvdformat·landmarks·memories·pre·stat · ← cohort·dvdformat·landmarks·memories·pre·stat
+neighbors → collapse·law·merge·shop·sti · ← collapse·law·merge·shop·sti
 analysis —
 law pawn is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1a39980a-d602-8d8f-8983-5d480b5f5585` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `497dedec-acaf-8eab-9946-95b01a630e01` · `pnpm readme` · `pnpm computed:check`</sub>

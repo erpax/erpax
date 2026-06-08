@@ -23,7 +23,21 @@
 
 - partition `dealer` · sub-root `46f64c70-94d8-839a-a55e-20bb1c44ffb1`
 - bond degree `20` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `fef059a4-23f5-8456-ac77-c8034a3a842b` · framed by typography partition `dealer` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13f6dcd3-120a-88cd-adb3-e575df2b2fa3` · framed by typography partition `dealer` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

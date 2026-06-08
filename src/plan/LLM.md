@@ -3,15 +3,15 @@
 
 # plan
 
-path `plan` · uuid `4860c41a-afd2-8466-98b7-4b7b0744521a` · diamond `b925b415-3098-8586-b6fd-484c868e8be9`
+path `plan` · uuid `4860c41a-afd2-8466-98b7-4b7b0744521a` · diamond `8adfd6d0-a73c-8461-ac6d-08fb1264958e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accommodation·action·apartment·category·coinsurance·collapse·copay·cost·drug·exercise·floor·formulary·health·id·included·includes·insurance·law·marketing·merge·network·option·pharmacy·rate·sharing·specification·standard·sti·tier·url·uses · exports plan · escapes —
-links `31/31` · folded `1` · bonds in `6` out `6`
+links `31/31` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·offline·stat · ← cohort·landmarks·memories·notice·offline·stat
+neighbors → accommodation·action·apartment·category·coinsurance·collapse·copay·cost·drug·exercise·floor·formulary·health·id·included·includes·insurance·law·marketing·merge·network·option·pharmacy·rate·sharing·specification·standard·sti·tier·url·uses · ← accommodation·action·apartment·category·coinsurance·collapse·copay·cost·drug·exercise·floor·formulary·health·id·included·includes·insurance·law·marketing·merge·network·option·pharmacy·rate·sharing·specification·standard·sti·tier·url·uses
 analysis —
 law plan is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `87e8cc9e-fb59-86a5-b89b-d5bac32744ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43f98fdc-385b-868d-83cb-cdb6a551f4ac` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # longitude
 
-path `longitude` · uuid `759527a7-78f7-83fd-97bb-93b38a80eb0b` · diamond `64c49534-f2ca-8f1f-bf19-6c19e4c84629`
+path `longitude` · uuid `759527a7-78f7-83fd-97bb-93b38a80eb0b` · diamond `f5f38bc5-215b-8180-81c1-8ed8cf61e4b1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports longitude · escapes —
-links `3/3` · folded `1` · bonds in `16` out `15`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·center·cooking·entity·government·height·homeopathic·landmarks·lifestyle·logic·login·logo·opportunity·overview · ← accounting·balance·center·cooking·entity·government·height·homeopathic·landmarks·lifestyle·logic·login·logo·logo·opportunity·overview
+neighbors → law·place·thing · ← law·place·thing
 analysis —
 law longitude is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d09b6648-9482-8fd2-9b88-93297adb18f1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70a30520-d8c4-83b8-9d5f-afe4d7f42e90` · `pnpm readme` · `pnpm computed:check`</sub>

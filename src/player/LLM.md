@@ -3,15 +3,15 @@
 
 # player
 
-path `player` · uuid `a5d3a2b8-9250-88fd-b7ea-3f25568dfc83` · diamond `a84a3206-050c-819d-9daf-6782c34f33a7`
+path `player` · uuid `a5d3a2b8-9250-88fd-b7ea-3f25568dfc83` · diamond `c7072ef4-c48f-826c-ab78-2379c043a268`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·type · exports player · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·official·stat·until · ← cohort·landmarks·memories·official·stat·until
+neighbors → collapse·law·merge·sti·type · ← collapse·law·merge·sti·type
 analysis —
 law player is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dd2a248b-fb28-8e69-8c61-69dcbe6c4cc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea535dd1-d6f9-8f1f-a84d-fcb7360d46c6` · `pnpm readme` · `pnpm computed:check`</sub>

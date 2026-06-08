@@ -3,15 +3,15 @@
 
 # provider
 
-path `provider` · uuid `2d15584f-f27c-8c0c-a571-81962162154d` · diamond `4d85e201-cd68-8e07-a304-e2964d4d6584`
+path `provider` · uuid `2d15584f-f27c-8c0c-a571-81962162154d` · diamond `4e15ffee-b98a-853c-a984-35c42cfc002b`
 horo `2` `share` · trinity `1·1·0` · sealed `0`
 imports law·mobility · exports provider · escapes —
-links `2/2` · folded `1` · bonds in `13` out `14`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·article·ask·close·cohort·industry·landmarks·memories·negative·points·stat·supply·tie·trans · ← access·ask·close·cohort·industry·landmarks·memories·negative·points·stat·supply·tie·trans
+neighbors → closure·law·mobility · ← closure·law·mobility
 analysis diamond·hallucination·purity
 law provider is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `297fa9b6-23ac-833d-9113-e29138deef06` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab93a950-c3a2-830a-aae5-312ff96d7e16` · `pnpm readme` · `pnpm computed:check`</sub>

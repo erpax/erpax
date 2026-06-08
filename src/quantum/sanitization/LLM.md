@@ -3,15 +3,15 @@
 
 # sanitization
 
-path `quantum/sanitization` · uuid `7a8ca2d0-9d66-82fb-b9b6-3a848f8bdb80` · diamond `0138a9ce-c2a4-8dc5-a8fa-637d3b8b3d9e`
+path `quantum/sanitization` · uuid `7a8ca2d0-9d66-82fb-b9b6-3a848f8bdb80` · diamond `9c834b40-dd9e-823e-92d5-ba376dbde9c9`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/integrity·@/memory/architecture·@/receipt·@/shred · exports SanitizeBoundary·function · escapes —
-links `24/24` · folded `1` · bonds in `99` out `99`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 38·action·additional·album·alignment·audience·availability·beauty·benefit·blood·boat·boltzmann·bundle·caption·catalog·closing·consume·contained·crown·dangerous·db·differential·djmix·edition·elementary·en13402·entanglement·entropy·except·exif·fertility·folder·forecast·friendly·front·funnel·gastroenterologic·generator·goodwill·imperial·integer·intensity·interacting·iso6523·issn·itnonprofit·landmarks·limited·list·literary·lnid·locality·male·marry·may·measurement·memories·mentions·next·night·opinion·party·payments·performer·placebo·plugins·police·prerequisites·principle·problem·product·provides·psychological·pulmonary·qapage·qualification·rates·redundancy·registered·representation·reservations·reserved·roofing·rules·sacred·sanitization·sd·sectional·separation·staffing·store·toc·train·trip·uk·unordered·unsaturated·utterance·want · ← 38·action·additional·album·alignment·audience·availability·beauty·benefit·blood·boat·boltzmann·bundle·caption·catalog·closing·consume·contained·crown·dangerous·db·differential·djmix·edition·elementary·en13402·entanglement·entropy·except·exif·fertility·folder·forecast·friendly·front·funnel·gastroenterologic·generator·goodwill·imperial·integer·intensity·interacting·iso6523·issn·itnonprofit·landmarks·limited·list·literary·lnid·locality·male·marry·may·measurement·memories·mentions·next·night·opinion·party·payments·performer·placebo·plugins·police·prerequisites·principle·problem·product·provides·psychological·pulmonary·qapage·qualification·rates·redundancy·registered·representation·reservations·reserved·roofing·rules·sacred·sanitization·sd·sectional·separation·staffing·store·toc·train·trip·uk·unordered·unsaturated·utterance·want
+links `24/24` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accept·access·biometric·collapse·dataprotection·finality·law·merge·proof·receipt·sandbox·shred·tamper·uuid·void · ← accept·access·biometric·collapse·dataprotection·finality·law·merge·proof·receipt·sandbox·shred·tamper·uuid·void
 analysis —
 law sanitization never mutates in place — it collapses through the gate. Dirty input cannot act until it resolves clean; the unauthorized reader gets a redacted projection while the content-addressed original stays whole; and the only true erasure is shredding the key into the void. Because every scrub emits a receipt, removing data is itself provable — sanitization is authorized and audited, never a silent edit (it is not tamper).
 
 ---
 
-<sub>content-uuid `3576c914-58dc-8787-a461-b71064ca49e3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9c1c4d6-80ee-8e6a-adc5-6483f94bfcd1` · `pnpm readme` · `pnpm computed:check`</sub>

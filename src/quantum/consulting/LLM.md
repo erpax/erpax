@@ -3,15 +3,15 @@
 
 # consulting
 
-path `quantum/consulting` · uuid `392e30c6-0df2-8a60-abb9-ebbcf541ecdb` · diamond `0218691f-4454-88af-814a-6d519dff2c05`
+path `quantum/consulting` · uuid `392e30c6-0df2-8a60-abb9-ebbcf541ecdb` · diamond `fb54409a-9e0e-86ed-90e8-2f488562ad6b`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/quantum/research · exports const·function · escapes —
-links `12/12` · folded `1` · bonds in `8` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → consulting·landmarks·landmarks·list·memories·pi·qualification·scorecard·terminals · ← consulting·landmarks·list·memories·pi·qualification·scorecard·terminals
+links `12/12` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·balance·cost·expense·law·quantum·research · ← akashic·balance·cost·expense·law·quantum·research
 analysis —
 law knowledge is non-rivalrous, so consulting is infinite profit at no cost. Research pays once; a content-addressed answer is then served at zero marginal cost and reused without bound, and ROI tends to infinity. The platform's worth is research done once and consulted forever.
 
 ---
 
-<sub>content-uuid `5fcf3950-a0e7-8fd0-bcfd-aba5abffc163` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f275c256-53ad-8b14-aacd-8859d542e494` · `pnpm readme` · `pnpm computed:check`</sub>

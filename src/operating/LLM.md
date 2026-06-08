@@ -3,15 +3,15 @@
 
 # operating
 
-path `operating` · uuid `c5a28633-31a7-8787-bdd9-94653ee9321d` · diamond `e6080a09-37ce-8949-a3c8-3ba10c830c5e`
+path `operating` · uuid `c5a28633-31a7-8787-bdd9-94653ee9321d` · diamond `a67b858b-40c7-812a-9da4-9d25fd2f7a0e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·system · exports operating · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti·system · ← collapse·law·merge·sti·system
 analysis —
 law operating is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d1198ee1-1f24-892f-810a-4912d90d65b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6a0a7eb-a04b-893a-90a0-1850e52a00b7` · `pnpm readme` · `pnpm computed:check`</sub>

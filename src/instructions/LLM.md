@@ -3,15 +3,15 @@
 
 # instructions
 
-path `instructions` · uuid `6c6a7c60-e71e-8c44-b29e-6941e73c4090` · diamond `e5935fb9-67ca-8f05-ba15-423e8674e553`
+path `instructions` · uuid `6c6a7c60-e71e-8c44-b29e-6941e73c4090` · diamond `c6bf709f-ff11-816b-ac68-4ef7b9349573`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·recipe·sti · exports instructions · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → biological·cafe·emissions·illustrator·landmarks·legal·measurement · ← biological·cafe·emissions·illustrator·landmarks·legal·measurement
+neighbors → collapse·instruction·law·merge·recipe·sti · ← collapse·instruction·law·merge·recipe·sti
 analysis —
 law instructions are an ordered sequence of steps — their meaning is the order, so reordering them is not the same instructions.
 
 ---
 
-<sub>content-uuid `df40d799-35d6-8be0-b5c0-1dfa1bd87da8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c55a000d-d6e8-8c15-831a-51fe379a1ac7` · `pnpm readme` · `pnpm computed:check`</sub>

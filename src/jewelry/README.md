@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `jewelry` · sub-root `672118dc-ed58-8858-b93d-3452373dfd9c`
-- bond degree `26` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `672118dc-ed58-8858-b93d-3452373dfd9c`
-- bonds in `9` · out `11`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `61970009-1997-8b0a-8aae-759a4f836624` · framed by typography partition `jewelry` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e954f9cc-2b8c-87b4-9dce-2841e628e4dd` · framed by typography partition `jewelry` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

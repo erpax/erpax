@@ -3,15 +3,15 @@
 
 # offset
 
-path `offset` · uuid `db4f37ec-5d90-873e-bb4f-0cda1c356324` · diamond `97e5315e-e9d1-84da-bda3-429fec69080f`
+path `offset` · uuid `db4f37ec-5d90-873e-bb4f-0cda1c356324` · diamond `9036c2ea-8304-80ae-b2f4-f2e86627ffa8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·end·law·merge·start·sti · exports offset · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·end·law·merge·start·sti · ← collapse·end·law·merge·start·sti
 analysis —
 law offset is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a2ee12ab-b15a-8227-8d1d-14f3924ce972` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc7e6837-f833-8183-82cb-54c81625485a` · `pnpm readme` · `pnpm computed:check`</sub>

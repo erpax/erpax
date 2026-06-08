@@ -4,30 +4,15 @@ import { navigationGroupsFromPaths, pathNavMeta } from '@/navigation'
 
 const SAMPLE = ['agents/mcp/tool', 'agents/accounting', 'vitepress', 'corpus', 'skill/router'] as const
 
-const subsetTree = (items: ReturnType<typeof navigationGroupsFromPaths>) =>
-  items
-    .filter((i) => ['agents', 'corpus', 'skill', 'vitepress'].includes(i.text))
-    .map((i) => ({
-      text: i.text,
-      link: i.link,
-      collapsed: i.collapsed,
-      items: i.items?.map((c) => ({
-        text: c.text,
-        link: c.link,
-        collapsed: c.collapsed,
-        items: c.items,
-      })),
-    }))
-
 describe('corpus — sidebar aligned with navigationGroupsFromPaths', () => {
   beforeAll(() => {
     if (allSkills.length === 0) walk(SKILLS_DIR)
   })
 
-  it('walk sidebar matches pure path-derived groups for sample atoms', () => {
-    const pure = navigationGroupsFromPaths([...SAMPLE])
-    const live = walk(SKILLS_DIR).filter((i) => subsetTree(pure).some((p) => p.text === i.text))
-    expect(subsetTree(pure)).toEqual(subsetTree(live))
+  it('walk sidebar equals navigationGroupsFromPaths of every collected skill path', () => {
+    const paths = allSkills.map((s) => s.route.replace(/^\//, '').replace(/\/SKILL$/, ''))
+    const pure = navigationGroupsFromPaths(paths)
+    expect(pure).toEqual(walk(SKILLS_DIR))
   })
 
   it('live corpus paths carry consistent nav · group metadata', () => {

@@ -23,7 +23,21 @@
 
 - partition `dentist` · sub-root `f381adf9-8f30-81f4-a064-64ecfd5d664e`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `76b95286-c2b8-8da4-bca7-c45e81fd9f68` · framed by typography partition `dentist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2941b6af-c70f-83a7-b326-a0cc122ab280` · framed by typography partition `dentist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # obstetric
 
-path `obstetric` · uuid `b7e9cc77-876a-8344-b3a1-740619678e4b` · diamond `19fffc64-ab12-8f10-92ab-d4549111646d`
+path `obstetric` · uuid `b7e9cc77-876a-8344-b3a1-740619678e4b` · diamond `fdd3e873-06c7-8d78-b52f-a73f78ea7f4f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports obstetric · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·metric·stat · ← cohort·landmarks·memories·metric·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law obstetric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fefe2984-7ef7-8360-90e4-1e9bfc67af73` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b6cb361-e10e-8550-b7df-ca39833ec8ab` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # origin
 
-path `origin` · uuid `b8db516d-cd17-88c8-bf98-d93b7647d85b` · diamond `497d8f3a-f996-8be0-9422-0f3f4b006b96`
+path `origin` · uuid `b8db516d-cd17-88c8-bf98-d93b7647d85b` · diamond `8ef0cef7-98fa-8b2f-a988-8e842c795290`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports address·collapse·cost·country·evidence·law·merge·shipping·sti·trip · exports origin · escapes —
-links `10/10` · folded `1` · bonds in `6` out `6`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → adverse·cohort·landmarks·memories·sensory·stat · ← adverse·cohort·landmarks·memories·sensory·stat
+neighbors → address·collapse·cost·country·evidence·law·merge·shipping·sti·trip · ← address·collapse·cost·country·evidence·law·merge·shipping·sti·trip
 analysis —
 law origin is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8e400654-5892-8781-8019-182232920a6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `59cffd59-c2de-8585-a6e0-3f7620a56304` · `pnpm readme` · `pnpm computed:check`</sub>

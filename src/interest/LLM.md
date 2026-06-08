@@ -3,15 +3,15 @@
 
 # interest
 
-path `interest` · uuid `c5fa2264-805a-85e2-a2f8-a8ed6d91b363` · diamond `d5c2d6ea-0259-8605-9793-0c3d8c4c2388`
+path `interest` · uuid `c5fa2264-805a-85e2-a2f8-a8ed6d91b363` · diamond `171804b9-35ff-8abe-8d73-d944cfdb0f0a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·rate·sti · exports interest · escapes —
-links `5/5` · folded `1` · bonds in `4` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → interaction·landmarks·progression · ← interaction·landmarks·periods·progression
+neighbors → collapse·law·merge·rate·sti · ← collapse·law·merge·rate·sti
 analysis —
 law interest is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d30f15f8-f9e0-8507-a120-533e2b000187` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `429fbfb4-ae07-8f9a-8e97-9d4b6d123dd8` · `pnpm readme` · `pnpm computed:check`</sub>

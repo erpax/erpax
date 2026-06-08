@@ -4,7 +4,7 @@
 # events
 
 path `api/audit/events` · uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3` · diamond `169e6403-7cb1-8478-9e1c-e4a3a7ea1edb`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `23` out `27`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every outbound external-API call lands one immutable row — kind-bucketed, 
 
 ---
 
-<sub>content-uuid `7430f75d-babd-860c-a0b1-20787096c5dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4b15f5d-308e-8e92-a65c-2ebd7a3d1303` · `pnpm readme` · `pnpm computed:check`</sub>

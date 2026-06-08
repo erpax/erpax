@@ -3,15 +3,15 @@
 
 # performed
 
-path `performed` · uuid `def8fcaf-ddf5-853e-9e72-3c6217b04229` · diamond `e00eb7b7-ca4f-8688-a3d0-bf3bc4af38c9`
+path `performed` · uuid `def8fcaf-ddf5-853e-9e72-3c6217b04229` · diamond `5af8e3df-8611-8cf3-9096-6733083d8f97`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·how·law·merge·sti·work · exports performed · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·how·law·merge·sti·work · ← collapse·how·law·merge·sti·work
 analysis —
 law performed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `13542ab9-f23a-86c9-b55d-624368315385` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3c1f0372-5ef6-8d54-8c70-6f605b1c2b59` · `pnpm readme` · `pnpm computed:check`</sub>

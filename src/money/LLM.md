@@ -3,15 +3,15 @@
 
 # money
 
-path `money` · uuid `8b9410ac-9cd7-8f49-8f2e-0ac62e0e5279` · diamond `4e40d78f-1d8c-88e6-9b06-471d6bc2b802`
+path `money` · uuid `8b9410ac-9cd7-8f49-8f2e-0ac62e0e5279` · diamond `0b6858fe-e515-8641-932c-c1747fa8ab28`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports isMoney · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·dated·law·merge·specification·sti·transfer·wallet · ← collapse·dated·law·merge·specification·sti·transfer·wallet
 analysis —
 law money is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b1d3ee1e-eb50-82e8-aa5e-76d49d2162eb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ae2ffbd-6fd7-8536-8f4f-d826fac62820` · `pnpm readme` · `pnpm computed:check`</sub>

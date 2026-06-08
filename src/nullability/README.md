@@ -23,7 +23,7 @@
 
 - partition `nullability` · sub-root `949b8e62-462a-886b-84c6-28136a157d74`
 - bond degree `21` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ae99eb78-d861-8b33-8480-0d910e87c2b1` · framed by typography partition `nullability` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `867699ba-be18-80b0-a9d1-121e39e6daac` · framed by typography partition `nullability` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

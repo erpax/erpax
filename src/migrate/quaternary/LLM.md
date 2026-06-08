@@ -3,15 +3,15 @@
 
 # quaternary
 
-path `migrate/quaternary` · uuid `fa916bc4-0606-86eb-8ec9-9a9eabf92b17` · diamond `c3c05183-77f8-8794-8564-fef71e401988`
+path `migrate/quaternary` · uuid `fa916bc4-0606-86eb-8ec9-9a9eabf92b17` · diamond `5dbbf0fa-e9a5-8de7-9fa2-0e3bc8b311bb`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function·interface · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → aura·collapse·coordinate·dissolution·dry·folder·law·merge·migrate·names·translations·trinity · ← aura·collapse·coordinate·dissolution·dry·folder·law·merge·migrate·names·translations·trinity
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `c2c3c322-1613-8190-b8ae-e184923d8486` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34ff501c-c273-8d76-9e66-a8c82c3de4c0` · `pnpm readme` · `pnpm computed:check`</sub>

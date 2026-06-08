@@ -3,15 +3,15 @@
 
 # occurrence
 
-path `occurrence` · uuid `4e1f4061-559f-87ad-894e-34f6fa354426` · diamond `71ad9f25-e523-8e91-8429-600f2c88d425`
+path `occurrence` · uuid `4e1f4061-559f-87ad-894e-34f6fa354426` · diamond `25a59dd9-8be9-8eca-a626-0e433d273783`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports occurrence · escapes —
-links `4/4` · folded `1` · bonds in `11` out `11`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bound·cohort·eprelease·goodwill·landmarks·memories·notice·phone·pond·stat·statistic · ← bound·cohort·eprelease·goodwill·landmarks·memories·notice·phone·pond·stat·statistic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law occurrence is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `38e26b4f-0d62-8ab9-b403-db8de5e0963e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3ea4294-9038-8c58-a59d-67b27ea37e02` · `pnpm readme` · `pnpm computed:check`</sub>

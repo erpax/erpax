@@ -3,15 +3,15 @@
 
 # jobs
 
-path `jobs` · uuid `d0decf6f-e1a4-8633-b85e-da039773cfa6` · diamond `2b30dc64-31c5-8688-81b5-121334d0ef05`
+path `jobs` · uuid `d0decf6f-e1a4-8633-b85e-da039773cfa6` · diamond `a6efa429-72aa-879a-babd-981db3fea435`
 horo `1` `base` · trinity `1·0·1` · sealed `1`
 imports hooks·law·optimize · exports jobs · escapes —
-links `3/3` · folded `1` · bonds in `7` out `7`
+links `3/3` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → carriers·dislike·goods·landmarks·mass·segments·spouse · ← carriers·dislike·goods·landmarks·mass·segments·spouse
+neighbors → batch·bindings·currency·desire·event·hooks·idempotency·law·manufacturing·observability·optimize·port·reconcile·run·spec·supto · ← batch·bindings·currency·desire·event·hooks·idempotency·law·manufacturing·observability·optimize·port·reconcile·run·spec·supto
 analysis —
 law slow/async work leaves the request lifecycle for the queue as idempotent, retry-safe tasks (a runner must actually run it) — never inline in a hook.
 
 ---
 
-<sub>content-uuid `bb9e502c-ba6c-8cda-afbf-ab51870969a0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `68398a8d-016a-8959-a9e1-9c0e5b02fdde` · `pnpm readme` · `pnpm computed:check`</sub>

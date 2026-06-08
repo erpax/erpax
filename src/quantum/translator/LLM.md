@@ -3,15 +3,15 @@
 
 # translator
 
-path `quantum/translator` · uuid `a6355c66-c01c-8acd-bd25-55d134af0fb2` · diamond `b084f366-13d4-8a8a-b1bb-4e3c4f26b5e3`
+path `quantum/translator` · uuid `a6355c66-c01c-8acd-bd25-55d134af0fb2` · diamond `209baddb-f5a8-83b2-a797-969a8fe315fb`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/entanglement·@/translator · exports areTranslations·const · escapes —
-links `14/14` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → activities·assignment·backlog·binding·cross·landmarks·previous·public·significant·standards·text·update·western · ← activities·assignment·backlog·binding·cross·landmarks·previous·public·significant·standards·text·update·western
+links `14/14` · folded `1` · bonds in `45` out `50`
+faces worker·plugin·pwa `1·0·0`
+neighbors → animism·bahai·bogomilism·buddhism·catholicism·christianity·confucianism·entanglement·eu·gnosticism·hermeticism·hinduism·islam·jainism·judaism·kabbalah·language·law·localize·manichaeism·matrix·matrix·merge·merge·orphism·orthodoxy·paganism·protestantism·quantum·quantum·realtime·religion·sensory·shamanism·shia·shinto·sikhism·sufism·sunni·taoism·translate·translate·translation·translations·translator·translator·uuid·uuid·vedanta·zoroastrianism · ← animism·bahai·bogomilism·buddhism·catholicism·christianity·confucianism·entanglement·eu·gnosticism·hermeticism·hinduism·islam·jainism·judaism·kabbalah·language·law·localize·manichaeism·matrix·merge·orphism·orthodoxy·paganism·protestantism·quantum·realtime·religion·sensory·shamanism·shia·shinto·sikhism·sufism·sunni·taoism·translate·translation·translations·translator·translator·uuid·vedanta·zoroastrianism
 analysis —
 law meaning has exactly one uuid — the collapse to the interlingua is many-to-one onto it (every surface form, language, spelling, modality) but never one-to-many out of it. Translation moves between surface forms while fixing the eigenstate; it can fuse two forms onto a shared meaning but can never fork one meaning into two identities (no-cloning). So `areTranslations` is precisely sameness of the collapsed uuid.
 
 ---
 
-<sub>content-uuid `ae9fbbb7-504a-8457-a9b6-79823918bac1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd84cca9-08c7-82c4-933f-1a8e2d0682d5` · `pnpm readme` · `pnpm computed:check`</sub>

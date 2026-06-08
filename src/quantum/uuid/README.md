@@ -2,7 +2,7 @@
 
 # uuid
 
-> atom `quantum/uuid` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/uuid` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,14 +23,14 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
-- bond degree `288` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- bond degree `743` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `24e4b798-6290-86a4-8ce3-9eeb44d5c2ca`
-- bonds in `6` · out `6`
+- uuid `e70f3d2a-47f6-8016-999c-4e133dd0f081`
+- bonds in `235` · out `231`
 - trinity form·code·proof `1`·`1`·`1`
 - links `49` / `49`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `332aca0c-e1c7-8349-ab39-eaacfba4e7dd` · framed by typography partition `quantum` bonds `288` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67462595-d75f-888e-8958-d7dc784fde5b` · framed by typography partition `quantum` bonds `743` · `pnpm readme` · `pnpm readme:check`</sub>

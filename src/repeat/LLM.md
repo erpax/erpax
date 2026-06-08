@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·count·frequency·law·merge·sti · exports repeat · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → article·cohort·landmarks·memories·negative·stat · ← article·cohort·landmarks·memories·negative·stat
+neighbors → collapse·count·frequency·law·merge·sti · ← collapse·count·frequency·law·merge·sti
 analysis —
 law repeat is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `845f2837-d8d6-879b-80f3-14b821443457` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0f81271b-fa0a-8893-86e2-a4c5fab8b45f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `psychological` · sub-root `1b363b15-e6c5-86ec-bf0e-ca3283e7e1df`
-- bond degree `27` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `1b363b15-e6c5-86ec-bf0e-ca3283e7e1df`
-- bonds in `11` · out `10`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `605d0c98-cbf7-8a3c-97cb-02dc7399044b` · framed by typography partition `psychological` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e66433a9-968b-8068-acea-27807758c6a0` · framed by typography partition `psychological` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

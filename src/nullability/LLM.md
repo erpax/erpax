@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports calculate·database·fields·law·queries · exports nullability · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·golf·id·infectious·landmarks·safety·sections · ← access·golf·id·infectious·landmarks·safety·sections
+neighbors → calculate·cardinality·constraint·database·fields·law·queries · ← calculate·cardinality·constraint·database·fields·law·queries
 analysis —
 law NULL is the absent value under three-valued logic — it propagates through calculations, is ignored by aggregates, and is testable only with IS NULL / COALESCE; a [[fields|field]] is nullable or NOT NULL, never silently coerced.
 
 ---
 
-<sub>content-uuid `949c0c47-dead-8802-977e-659a7b2f5a64` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ebfb83ab-6a18-8e68-9194-4fef2acde9d2` · `pnpm readme` · `pnpm computed:check`</sub>

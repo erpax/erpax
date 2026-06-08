@@ -3,15 +3,15 @@
 
 # ligament
 
-path `ligament` · uuid `4903c30f-4ffa-8e8d-b4c2-3d3ec9367fa9` · diamond `f22b7052-5eb9-8c26-aa82-302f9e7e3c86`
+path `ligament` · uuid `4903c30f-4ffa-8e8d-b4c2-3d3ec9367fa9` · diamond `4ba19e43-5f2a-84c5-858f-bcdf4573fb87`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports ligament · escapes —
-links `2/2` · folded `1` · bonds in `15` out `15`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·consultant·cross·dietary·entertainment·grant·hobby·list·marry·memories·notice·qualification·quantity·roadmap·wellbeing · ← 3986·consultant·cross·dietary·entertainment·grant·hobby·list·marry·memories·notice·qualification·quantity·roadmap·wellbeing
+neighbors → law·thing · ← law·thing
 analysis —
 law ligament is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `91c6c2be-8632-8572-a0ee-1793bd092b83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `feed5d90-a7d8-888d-895c-90b5ff607395` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # transactions
 
 path `bank/accounts/bank/transactions` · uuid `de64d7c1-15fd-8ae5-a415-173b51516c8d` · diamond `d0548bfc-a496-84de-adb0-6841b3cf1a38`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `12/12` · folded `1` · bonds in `22` out `29`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `7709c5d8-89d6-8eff-932a-59bf466ff556` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bad8398d-65ea-8331-a8a8-8430897d51ac` · `pnpm readme` · `pnpm computed:check`</sub>

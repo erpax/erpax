@@ -3,15 +3,15 @@
 
 # ocean
 
-path `ocean` · uuid `345be815-9ed4-8b2f-be44-88525f1af22d` · diamond `d33a398a-a10f-8c64-9afb-679a2a645b1e`
+path `ocean` · uuid `345be815-9ed4-8b2f-be44-88525f1af22d` · diamond `c5d5e5b1-4e61-80d3-a1d9-16206b7953d6`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports body·collapse·law·merge·sti·water · exports ocean · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → body·collapse·law·merge·sti·water · ← body·collapse·law·merge·sti·water
 analysis —
 law ocean is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e5fecce2-5cb9-8231-a3f8-f9866d9d6190` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a32332f-36ae-87c2-9eec-191e373cf3f6` · `pnpm readme` · `pnpm computed:check`</sub>

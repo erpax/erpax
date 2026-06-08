@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·service·sti · exports output · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·commissions·landmarks·memories·stat · ← cohort·commissions·landmarks·memories·stat
+neighbors → collapse·law·merge·service·sti · ← collapse·law·merge·service·sti
 analysis —
 law output is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a920b8d2-8e55-8d48-ae2d-c844fc0f9051` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7e617a4c-2eb5-8a59-9865-3573ec6eaf92` · `pnpm readme` · `pnpm computed:check`</sub>

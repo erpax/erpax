@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports replace · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·harden·landmarks·memories·stat · ← cohort·harden·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law replace is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d7ff278e-16bb-8f3e-84c9-779649b49cc0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `320e8e57-10d0-8431-bb2b-d4ae1906a743` · `pnpm readme` · `pnpm computed:check`</sub>

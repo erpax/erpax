@@ -3,15 +3,15 @@
 
 # rooms
 
-path `rooms` · uuid `e04e11e6-1a5e-8c53-a76e-4a8838057322` · diamond `61e9e9a1-42eb-88f3-91fb-2611a43a2f1b`
+path `rooms` · uuid `e04e11e6-1a5e-8c53-a76e-4a8838057322` · diamond `e59de095-e430-8dac-aeea-02177769d4fa`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports rooms · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·basic·entity·homeopathic·itsocial·landmarks·marine·patient·root·sandbox · ← balance·basic·entity·homeopathic·itsocial·landmarks·marine·patient·root·sandbox
+neighbors → collapse·law·merge·number·sti · ← collapse·law·merge·number·sti
 analysis —
 law rooms is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `67f49b58-f4c4-86bf-855d-d1b171636583` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b13ade3c-89dc-84e4-8f35-a2bd698b09c4` · `pnpm readme` · `pnpm computed:check`</sub>

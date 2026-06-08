@@ -25,7 +25,30 @@
 
 - partition `emission` · sub-root `3dd9e7ba-8841-8299-a9d5-4aed60a80404`
 - bond degree `28` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed, never hand-asserted` · banner
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `GHG Protocol Corporate Standard (Scope 1 / 2 / 3)` · banner
+- `GHG-Protocol` · catalogue
+- `ILO-C100` · catalogue
+- `IPCC AR5 (2014) — 100-yr Global Warming Potentials (Table 8.A.1)` · banner
+- `ISO 14064 — Greenhouse gas quantification and reporting` · banner
+- `ISO-14064-1` · catalogue
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -41,4 +64,4 @@
 
 ---
 
-<sub>content-uuid `3157d8ce-c28e-8512-bb5b-bd6559818285` · framed by typography partition `emission` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c13f6464-4d15-8a3d-8e63-95ec25839396` · framed by typography partition `emission` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

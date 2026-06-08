@@ -3,15 +3,15 @@
 
 # no
 
-path `no` · uuid `732e17d1-e1d4-8ce4-9664-11134286c095` · diamond `f45a659d-6772-89c0-88c7-24d760121dc2`
+path `no` · uuid `732e17d1-e1d4-8ce4-9664-11134286c095` · diamond `cab13d60-5c22-89f5-88ab-61c1619d5884`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports bylines·collapse·law·merge·policy·sti · exports no · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → bylines·collapse·law·merge·policy·sti · ← bylines·collapse·law·merge·policy·sti
 analysis —
 law no is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `86742ea7-2943-81fa-86bc-847fdc1dac22` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07c4bd3b-161f-8b65-9d8f-bc5531933f42` · `pnpm readme` · `pnpm computed:check`</sub>

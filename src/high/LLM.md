@@ -3,15 +3,15 @@
 
 # high
 
-path `high` · uuid `7ebcd599-e605-8008-ad92-78d3956017b8` · diamond `ccdc1146-93d3-86f7-8959-8fc9278f5256`
+path `high` · uuid `7ebcd599-e605-8008-ad92-78d3956017b8` · diamond `0693d4f4-14a0-8bb0-ad77-22f3477db09b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·price·school·sti · exports high · escapes —
-links `6/6` · folded `1` · bonds in `32` out `32`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·anchor·angel·befriend·chat·competency·contractual·corrects·details·encodes·founder·id·landmarks·lifestyle·marine·memories·parts·pats·postcode·process·progression·project·read·rheumatologic·rule·saturday·sections·see·sell·shelter·spouse·video · ← akashic·anchor·angel·befriend·chat·competency·contractual·corrects·details·encodes·founder·id·landmarks·lifestyle·marine·memories·parts·pats·postcode·process·progression·project·read·rheumatologic·rule·saturday·sections·see·sell·shelter·spouse·video
+neighbors → collapse·law·merge·price·school·sti · ← collapse·law·merge·price·school·sti
 analysis —
 law high is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2864c3fd-5c4d-8857-824d-975d1301b651` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `081d2272-8cbc-83cc-ac38-0e89342f28fc` · `pnpm readme` · `pnpm computed:check`</sub>

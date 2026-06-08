@@ -3,15 +3,15 @@
 
 # newspaper
 
-path `newspaper` · uuid `80622aeb-5958-8ba3-a842-3f94425f8997` · diamond `572417b6-4efc-8781-bbf0-f64c9c897839`
+path `newspaper` · uuid `80622aeb-5958-8ba3-a842-3f94425f8997` · diamond `6cff8925-8c26-8877-9fa0-e78e373eeac2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports newspaper · escapes —
-links `2/2` · folded `1` · bonds in `0` out `0`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → law·thing · ← law·thing
 analysis —
 law newspaper is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0bb69dfa-89ab-8793-ba09-855d4c72b18d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07d71fab-63df-8009-9f31-f4517bd12c51` · `pnpm readme` · `pnpm computed:check`</sub>

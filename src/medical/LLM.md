@@ -3,15 +3,15 @@
 
 # medical
 
-path `medical` · uuid `dd75faed-972f-8872-8664-29d908bdcb9e` · diamond `5edb5f70-1b3a-8459-9f4a-f73b27f94431`
+path `medical` · uuid `dd75faed-972f-8872-8664-29d908bdcb9e` · diamond `d19e9832-47e9-8f1a-8082-a515796f35bc`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports article·audience·business·calculator·cause·clinic·code·collapse·condition·contraindication·design·device·entity·enumeration·estimator·evidence·factor·guideline·imaging·indication·intangible·law·level·merge·observational·organization·panel·procedure·purpose·recommendation·risk·scholarly·score·sign·specialty·stage·status·sti·study·symptom·technique·test·therapy·type · exports medical · escapes —
-links `44/44` · folded `1` · bonds in `4` out `4`
+links `44/44` · folded `1` · bonds in `47` out `47`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·inverse·landmarks·memory · ← balance·inverse·landmarks·memory
+neighbors → article·audience·business·calculator·cause·clinic·code·collapse·condition·contraindication·design·device·entity·enumeration·estimator·evidence·factor·guideline·imaging·indication·intangible·law·level·merge·observational·organization·page·panel·procedure·purpose·recommendation·risk·scholarly·score·sign·specialty·stage·status·sti·study·symptom·technique·test·therapy·trial·type·web · ← article·audience·business·calculator·cause·clinic·code·collapse·condition·contraindication·design·device·entity·enumeration·estimator·evidence·factor·guideline·imaging·indication·intangible·law·level·merge·observational·organization·page·panel·procedure·purpose·recommendation·risk·scholarly·score·sign·specialty·stage·status·sti·study·symptom·technique·test·therapy·trial·type·web
 analysis —
 law medical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b01d0126-58fd-8fa3-86b4-b6ca8aaf3f63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `118e0152-88e0-8020-9628-1c0b8f6b4cc8` · `pnpm readme` · `pnpm computed:check`</sub>

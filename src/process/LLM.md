@@ -3,15 +3,15 @@
 
 # process
 
-path `process` · uuid `dd32756e-eca3-86c6-9ef7-709b85296b40` · diamond `d93aec7b-1264-8899-8de8-b0ad27c2c857`
+path `process` · uuid `dd32756e-eca3-86c6-9ef7-709b85296b40` · diamond `32c1421c-aed8-88ff-88a0-e231c2427a43`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·biological·collapse·involved·law·merge·sti · exports process · escapes —
-links `7/7` · folded `1` · bonds in `26` out `26`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·akashic·angel·aura·balance·catalogue·city·cohort·corrects·details·dropoff·factor·gears·high·homeopathic·license·lifestyle·list·memories·policy·progression·recommendation·rule·saturday·sell·spouse · ← accounting·akashic·angel·aura·balance·catalogue·city·cohort·corrects·details·dropoff·factor·gears·high·homeopathic·license·lifestyle·list·memories·policy·progression·recommendation·rule·saturday·sell·spouse
+neighbors → action·biological·collapse·involved·law·merge·sti · ← action·biological·collapse·involved·law·merge·sti
 analysis —
 law process is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d31d4434-9a0f-8863-8558-5f9187befc42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `255cbafd-d4f3-8b73-a624-7d4414b7047c` · `pnpm readme` · `pnpm computed:check`</sub>

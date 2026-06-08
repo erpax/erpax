@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·law·lots·manufacturing · exports lot · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·law·lots·manufacturing · ← balance·law·lots·manufacturing
 analysis —
 law a lot is the singular model of one row — a tracked batch of like units produced or handled together — whose plural store is the [[lots]] collection ([[balance]]: every collection has its model).
 
 ---
 
-<sub>content-uuid `5ef87c69-cfe9-813d-99c2-6067effea43e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `deb61eed-3886-856d-9c2e-9adef61685f1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # hold
 
-path `hold` · uuid `8ecf9c47-afe3-86cc-a008-0e38590f09cf` · diamond `9b7acf9b-226a-8da8-8688-ad18f3173f5e`
+path `hold` · uuid `8ecf9c47-afe3-86cc-a008-0e38590f09cf` · diamond `4c382a4d-4ccc-88cd-b1c9-25bf2ca5311f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hold · escapes —
-links `4/4` · folded `1` · bonds in `15` out `14`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bundle·classified·cohort·compass·constraint·deduplication·global·landmarks·lnid·love·memories·stat·statistic·tax · ← aura·bundle·classified·cohort·compass·constraint·deduplication·global·landmarks·lnid·love·memories·stat·statistic·tax
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hold is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3dc9f34e-fb47-858b-9a8e-89f888a962e3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a71f385-9e38-83be-ab30-cf2189296b36` · `pnpm readme` · `pnpm computed:check`</sub>

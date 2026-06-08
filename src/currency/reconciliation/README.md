@@ -25,7 +25,28 @@
 
 - partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
 - bond degree `25` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 60 chain-leaf binding; never hand-asserted` · banner
+- `IAS 21 §38 presentation-currency translation · IFRS 9 FX gains/losses · ISO 4217` · banner
+- `IFRS-21:2023 (translation of foreign operations)` · banner
+- `IFRS-9` · catalogue
+- `IFRS-9:2023 (foreign exchange gains/losses)` · banner
+- `ISO-4217:2023 (currency codes, decimal places)` · banner
+- `SAF-T` · catalogue
+- `SAF-T:3.0.2 (multi-currency period coding)` · banner
+
+## analytics
+
+- bond degree `25` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `b601636d-30fb-873f-b60a-30e668901dac` · framed by typography partition `currency` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `444fd75c-962d-8a95-ae9d-c2fb7274b224` · framed by typography partition `currency` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

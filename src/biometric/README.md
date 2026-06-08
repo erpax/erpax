@@ -23,7 +23,7 @@
 
 - partition `biometric` · sub-root `4d930689-daf1-8cbd-9be0-638eae66884b`
 - bond degree `49` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `62e7ea26-493c-8bbd-8639-dc72b2e48dcd` · framed by typography partition `biometric` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d44ffe57-d8dc-881b-a5b8-22562b06cfec` · framed by typography partition `biometric` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

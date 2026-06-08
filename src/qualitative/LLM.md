@@ -3,15 +3,15 @@
 
 # qualitative
 
-path `qualitative` · uuid `b0d17e74-e590-8280-bcaa-0cd8685bb257` · diamond `0ad90d2d-c3ef-887a-bb20-04a1e02e87c9`
+path `qualitative` · uuid `b0d17e74-e590-8280-bcaa-0cd8685bb257` · diamond `c79db38f-d539-8ea0-82df-0d15adbdf547`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·value · exports qualitative · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → block·connection·drone·dropoff·entertainment·game·landmarks·qualification·roadmap · ← block·connection·drone·dropoff·entertainment·game·landmarks·qualification·roadmap
+neighbors → collapse·law·merge·sti·value · ← collapse·law·merge·sti·value
 analysis —
 law qualitative is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bc3f94ca-6375-8134-9ba2-48784c98ee17` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e61f84d-9ba2-86a1-bd91-179f9f2c8d32` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # ngo
 
-path `ngo` · uuid `741bb15a-d062-85d6-b10b-a66b81c7114c` · diamond `85921ed1-8db2-84a1-8504-eb5bba4496bc`
+path `ngo` · uuid `741bb15a-d062-85d6-b10b-a66b81c7114c` · diamond `70e18836-d323-8e1c-8d8f-141d867a6f0d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports ngo · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law ngo is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cf878ff6-030f-8265-81f0-8075c8bbf173` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `009d94d5-c303-8afc-bc80-19fa64efe3fc` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # 3986
 
-path `rfc/3986` · uuid `fc8c0e10-05e1-8dc4-b115-1a4c5b9f75ea` · diamond `3bf747c8-efe9-82f7-ac96-e833ccd16537`
+path `rfc/3986` · uuid `fc8c0e10-05e1-8dc4-b115-1a4c5b9f75ea` · diamond `924d8277-1f97-81f1-9f2d-ef99986140b9`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports buildOrigin·ensureProtocol·generatePreviewPath·getClientSideURL·getOriginFromHeaders·getServerSideURL·getUrlOrigin·joinUrl·normalizeUrl·resolvePublicSiteUrl·resolvePublicSiteUrlFromHeaders·safeParseUrl·type · escapes —
-links `0/0` · folded `1` · bonds in `63` out `62`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 6585·9110·access·akashic·analog·angel·aura·auth·balance·based·breakfast·catalogue·certified·chat·cmyk·cohort·conference·connection·declaration·departure·dropoff·duplicate·ebitda·electrician·flow·founder·fresh·handling·hobby·holographic·homeopathic·hours·id·idempotency·landmarks·ligament·list·localize·lyricist·marine·markup·memories·mention·qualification·query·released·rheumatologic·right·risk·risks·river·roadmap·rodin·saturday·sections·sectors·sell·sign·solve·tax·wheel·wp · ← 6585·9110·access·akashic·analog·angel·aura·auth·balance·based·breakfast·catalogue·certified·chat·cmyk·cohort·conference·connection·declaration·departure·dropoff·duplicate·ebitda·electrician·flow·founder·fresh·handling·hobby·holographic·homeopathic·hours·id·idempotency·landmarks·ligament·list·localize·lyricist·marine·markup·memories·mention·qualification·query·released·rheumatologic·right·risk·risks·river·roadmap·roadmap·rodin·saturday·sections·sectors·sell·sign·solve·tax·wheel·wp
+links `0/0` · folded `1` · bonds in `0` out `0`
+faces worker·plugin·pwa `1·0·0`
+neighbors → — · ← —
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a40b4897-8f28-8afb-a7bf-1cac781cf94f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b572f34a-54f0-80cc-af25-8eadf992a581` · `pnpm readme` · `pnpm computed:check`</sub>

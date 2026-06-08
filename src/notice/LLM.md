@@ -3,15 +3,15 @@
 
 # notice
 
-path `notice` · uuid `2b7f414d-e0e6-81ce-bb32-4e0407263e18` · diamond `9ee318fc-a337-84b1-a046-990f88de23b8`
+path `notice` · uuid `2b7f414d-e0e6-81ce-bb32-4e0407263e18` · diamond `a015d475-f629-8d4a-befa-39b524d64ffb`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·copyright·law·merge·sti · exports notice · escapes —
-links `5/5` · folded `1` · bonds in `77` out `77`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 8601·accommodation·accounting·additional·adjustments·airbags·available·axles·batch·bed·bedrooms·bound·breakfast·built·casino·clinical·cohort·comment·configuration·consultant·credit·dietary·domiciled·enum·enumeration·faq·fertility·fields·formation·frost·gas·given·gtin13·handling·holographic·iata·ice·id·issn·landmarks·ligament·list·literary·lnid·log·max·median·notice·occurrence·opinion·parental·participant·phase·plan·pond·prerequisite·quote·range·rank·repeals·saturday·screenshot·sculpture·sell·send·separation·size·sponsorship·statistics·suite·tongue·tour·uknonprofit·upper·utterance·vessel·wp · ← 8601·accommodation·accounting·additional·adjustments·airbags·available·axles·batch·bed·bedrooms·bound·breakfast·built·casino·clinical·cohort·comment·configuration·consultant·credit·dietary·domiciled·enum·enumeration·faq·fertility·fields·formation·frost·gas·given·gtin13·handling·holographic·iata·ice·id·issn·landmarks·ligament·list·literary·lnid·log·max·median·notice·occurrence·opinion·parental·participant·phase·plan·pond·prerequisite·quote·range·rank·repeals·saturday·screenshot·sculpture·sell·send·separation·size·sponsorship·statistics·suite·tongue·tour·uknonprofit·upper·utterance·vessel·wp
+neighbors → collapse·copyright·law·merge·sti · ← collapse·copyright·law·merge·sti
 analysis —
 law notice is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `77a99cf1-f633-8e3c-b3c3-3a7f525b6fbb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14bc3676-3311-84e1-b7b6-675c5a744ae9` · `pnpm readme` · `pnpm computed:check`</sub>

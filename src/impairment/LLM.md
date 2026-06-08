@@ -3,15 +3,15 @@
 
 # impairment
 
-path `impairment` · uuid `cccd3c84-a0b8-8d29-80d9-420ae903a9b0` · diamond `bfcfa602-d187-8fb0-b41e-49aa4933db27`
+path `impairment` · uuid `cccd3c84-a0b8-8d29-80d9-420ae903a9b0` · diamond `feef4d34-45bd-8591-ae43-943e86d780d1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports biological·fixed·goodwill·intangible·law·properties · exports impairment · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → assets·goodwill·intangible·law·perennial·properties·terroir · ← assets·goodwill·intangible·law·perennial·properties·terroir
 analysis —
 law when an asset's recoverable amount falls permanently below book value, the excess is written down and recognized as a loss (IAS-36, mandatory for all assets).
 
 ---
 
-<sub>content-uuid `854c0e6d-0876-81dd-8566-2b37cacae8c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca977fc7-7a89-81f2-bf74-20f8d7d2cd3f` · `pnpm readme` · `pnpm computed:check`</sub>

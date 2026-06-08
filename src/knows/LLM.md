@@ -3,15 +3,15 @@
 
 # knows
 
-path `knows` · uuid `4583cbdc-72a0-8b8f-a7f1-9c56c27d4f73` · diamond `b189fad6-6b1a-8879-a596-1a86f25a0761`
+path `knows` · uuid `4583cbdc-72a0-8b8f-a7f1-9c56c27d4f73` · diamond `ae2368a3-628e-8b22-8abe-aab7f0588070`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports about·language·law · exports knows · escapes —
-links `3/3` · folded `1` · bonds in `11` out `12`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·biological·breastfeeding·government·hardcover·issue·landmarks·lineup·max·screen·website·worth · ← biological·breastfeeding·government·hardcover·issue·landmarks·lineup·max·screen·website·worth
+neighbors → about·language·law · ← about·language·law
 analysis —
 law knows is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95c2a5ba-3c13-8cf0-a259-b701425ead77` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea3ee541-8696-8de1-9ae4-6e0b83b8637e` · `pnpm readme` · `pnpm computed:check`</sub>

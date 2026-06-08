@@ -3,15 +3,15 @@
 
 # performance
 
-path `performance` · uuid `94343679-6f08-8c92-a061-89df4d0a7fb5` · diamond `ce908767-6316-82fb-b2a0-a7b6d15f2a3c`
+path `performance` · uuid `94343679-6f08-8c92-a061-89df4d0a7fb5` · diamond `eb6419b0-a012-8751-981f-cc2e53d6d801`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·first·law·merge·role·sti · exports performance · escapes —
-links `6/6` · folded `1` · bonds in `15` out `15`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·breakfast·center·cover·crisis·feed·founder·landmarks·lines·opportunity·seed·sla·thesis·vibration · ← agriculture·balance·breakfast·center·cover·crisis·feed·founder·landmarks·lines·opportunity·seed·sla·thesis·vibration
+neighbors → collapse·first·law·merge·role·sti · ← collapse·first·law·merge·role·sti
 analysis —
 law performance is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `acce79c6-2447-859f-9b71-9cc7df86d863` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f6def08f-dd86-8a56-b1cd-0847a1c7fbf7` · `pnpm readme` · `pnpm computed:check`</sub>

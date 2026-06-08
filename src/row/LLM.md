@@ -3,15 +3,15 @@
 
 # row
 
-path `row` · uuid `31d9a354-9365-850a-b4b5-4dc80d05a906` · diamond `48908615-205e-83c9-83a7-7c6bbc68b56c`
+path `row` · uuid `31d9a354-9365-850a-b4b5-4dc80d05a906` · diamond `e3954a6a-a23a-802d-8ede-40409f7c07a3`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·seat·sti · exports row · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·seat·sti · ← collapse·law·merge·seat·sti
 analysis —
 law row is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `15ff24b4-eec4-8239-bfc9-b3d645d628bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0f33c5d0-0533-8691-9c30-83957a532e14` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # pixel
 
-path `pixel` · uuid `be48e810-8f01-8df3-a741-1cbea4728077` · diamond `2d40fd4b-6679-82cc-8df6-31c64ebef031`
+path `pixel` · uuid `be48e810-8f01-8df3-a741-1cbea4728077` · diamond `c2840ef0-9c8d-8362-b9a9-a03012d1d69f`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/color·@/digit·@/uuid/matrix · exports const·function·interface · escapes —
-links `19/19` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → action·arrival·cohort·dentistry·differential·entropy·funnel·landmarks·memories·plastic·rotation·stat·symptoms · ← action·arrival·cohort·dentistry·differential·entropy·funnel·landmarks·memories·plastic·rotation·stat·symptoms
+links `19/19` · folded `1` · bonds in `16` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·analog·atom·aura·color·component·design·digit·interactive·law·primitive·render·signal·ui·uuid·vitepress · ← agent·analog·atom·aura·color·component·design·digit·interactive·law·primitive·render·signal·ui·uuid·vitepress
 analysis aura
 law the atom and the pixel are one identity at two scales — the content-uuid and its rendered colour. Everything shown is pixels, every pixel an atom's uuid-colour, computed never assigned. To render is to read the identity, not to paint over it.
 
 ---
 
-<sub>content-uuid `277d04dd-25b2-836e-9384-263b7b224c83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14a53937-b052-8700-8a8f-0796184b2866` · `pnpm readme` · `pnpm computed:check`</sub>

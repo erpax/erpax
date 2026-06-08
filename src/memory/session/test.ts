@@ -18,19 +18,19 @@ import {
 import { sanitizedMemoryUuid, sanitizeMemoryRecord } from '@/memory/architecture'
 
 describe('memory/session — save ⇐ isDiamond', () => {
-  it('confirm is a sealed diamond (the gate substrate)', () => {
-    expect(isSealedDiamond('confirm')).toBe(true)
-    const artifact = sessionDiamondFromPath('confirm')
+  it('memory/session is a sealed diamond (lattice substrate)', () => {
+    expect(isSealedDiamond('memory/session')).toBe(true)
+    const artifact = sessionDiamondFromPath('memory/session')
     expect(artifact).not.toBeNull()
-    expect(artifact!.atomPath).toBe('confirm')
+    expect(artifact!.atomPath).toBe('memory/session')
     expect(artifact!.contentUuid).toMatch(
       /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/,
     )
   })
 
   it('sessionDiamondFromPath is deterministic', () => {
-    const a = sessionDiamondFromPath('merge')
-    const b = sessionDiamondFromPath('merge')
+    const a = sessionDiamondFromPath('memory/architecture')
+    const b = sessionDiamondFromPath('memory/architecture')
     expect(a).not.toBeNull()
     expect(b!.contentUuid).toBe(a!.contentUuid)
   })
@@ -45,7 +45,7 @@ describe('memory/session — save ⇐ isDiamond', () => {
 
   it('saveThoughtIfDiamond persists sealed atoms', () => {
     const lattice = emptySessionLattice()
-    const res = saveThoughtIfDiamond(lattice, 'merge', 'society-breath-7')
+    const res = saveThoughtIfDiamond(lattice, 'memory/session', 'society-breath-7')
     expect(res.saved).toBe(true)
     expect(distinctSessionArtifacts(res.lattice)).toBe(1)
   })
@@ -79,8 +79,8 @@ describe('memory/session — all sessions meet (merge by contentUuid)', () => {
   })
 
   it('merge is commutative on distinct count', () => {
-    const a = saveThoughtIfDiamond(emptySessionLattice(), 'merge', 'x').lattice
-    const b = saveThoughtIfDiamond(emptySessionLattice(), 'chat', 'y').lattice
+    const a = saveThoughtIfDiamond(emptySessionLattice(), 'memory/session', 'x').lattice
+    const b = saveThoughtIfDiamond(emptySessionLattice(), 'memory/architecture', 'y').lattice
     expect(distinctSessionArtifacts(mergeSessionLattices(a, b))).toBe(
       distinctSessionArtifacts(mergeSessionLattices(b, a)),
     )
@@ -96,7 +96,7 @@ describe('memory/session — all sessions meet (merge by contentUuid)', () => {
 describe('memory/session — sanitized memory → lattice', () => {
   it('saveSanitizedMemoryToLattice strips ephemeral debris then persists sealed atoms', () => {
     const debris = {
-      atomPath: 'merge',
+      atomPath: 'memory/session',
       kind: 'fact',
       sessionId: 'cursor-42',
       __securitybot_metadata__: { trace: 'ephemeral' },
@@ -106,6 +106,6 @@ describe('memory/session — sanitized memory → lattice', () => {
     const res = saveSanitizedMemoryToLattice(emptySessionLattice(), debris, 'cursor-42')
     expect(res.saved).toBe(true)
     expect(res.sanitizedUuid).toBe(sanitizedUuid)
-    expect(res.artifact!.contentUuid).toBe(sessionDiamondFromPath('merge')!.contentUuid)
+    expect(res.artifact!.contentUuid).toBe(sessionDiamondFromPath('memory/session')!.contentUuid)
   })
 })

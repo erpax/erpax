@@ -4,7 +4,7 @@
 # published
 
 path `authenticated/or/published` · uuid `c6f72ab4-290d-8217-9d0a-a52280b1d63f` · diamond `4c20cf37-9efd-8aa6-b86a-f929d5a1a569`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/iso/27002·@/scope · exports const · escapes —
 links `8/8` · folded `1` · bonds in `6` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law draft visibility is authenticated-only — a session grants full [[access]],
 
 ---
 
-<sub>content-uuid `54614727-36fa-8783-b8c6-2405a9e92584` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0164b83c-8a6d-8fd9-a1ad-c546d2e87644` · `pnpm readme` · `pnpm computed:check`</sub>

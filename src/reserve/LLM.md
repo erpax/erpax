@@ -3,15 +3,15 @@
 
 # reserve
 
-path `reserve` · uuid `67de5a7d-d858-8b92-b3bf-f6934c16439a` · diamond `15b51eac-0462-885a-abb2-2a0e0b1dabee`
+path `reserve` · uuid `67de5a7d-d858-8b92-b3bf-f6934c16439a` · diamond `7c2df622-1dc8-870e-9c6e-b17449cd5e96`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports reserve · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law reserve is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9cc6b423-3588-829e-ab18-9dc95ae9f71a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6841b24a-704f-8d41-875f-8da42a086803` · `pnpm readme` · `pnpm computed:check`</sub>

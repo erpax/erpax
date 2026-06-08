@@ -3,15 +3,15 @@
 
 # pats
 
-path `pats` · uuid `d1f40252-c4bd-8fc6-8f76-ecc1e198eb59` · diamond `c7021ee3-96ae-8bc3-9192-3a928a348b40`
+path `pats` · uuid `d1f40252-c4bd-8fc6-8f76-ecc1e198eb59` · diamond `52012ad7-80fc-8378-baf9-1456cfc8c019`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·ho·hosp·law·mech·merge·num·overflow·sti·vent · exports pats · escapes —
-links `11/11` · folded `1` · bonds in `29` out `29`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·angel·catalogue·competency·corrects·debit·drive·editor·entity·handling·high·hobby·id·joint·localize·marine·marry·memories·progression·qualification·read·roles·safety·seed·symbol·tax·upper·virus·wp · ← akashic·angel·catalogue·competency·corrects·debit·drive·editor·entity·handling·high·hobby·id·joint·localize·marine·marry·memories·progression·qualification·read·roles·safety·seed·symbol·tax·upper·virus·wp
+neighbors → collapse·cvd·ho·hosp·law·mech·merge·num·overflow·sti·vent · ← collapse·cvd·ho·hosp·law·mech·merge·num·overflow·sti·vent
 analysis —
 law pats is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `30a8157e-5a03-8902-b56c-4e36457beece` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `627a6bba-cb68-8f18-b303-09b34b163934` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `contraindication` · sub-root `f2054bcd-3394-8205-bee6-f0de3fa0b008`
 - bond degree `11` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8eec2a64-19b9-88b5-b38b-8df59b62566d` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2f3db2dd-ef8c-8cb2-b21d-d81593ad53dd` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

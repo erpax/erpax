@@ -3,15 +3,15 @@
 
 # teleportation
 
-path `quantum/communication/teleportation` · uuid `—` · diamond `716e7ebe-4b8c-8463-9ab8-7687ebbbbcb0`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `quantum/communication/teleportation` · uuid `2879a358-0ddd-870c-9979-4bf529e1d2e6` · diamond `a80c7760-2e92-8a18-ac7a-8abc03df4c1e`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/communication·@/entanglement·@/uuid/matrix · exports const · escapes —
-links `11/11` · folded `0` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+links `11/11` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → communication·entanglement·law·merge·message·quantum·uuid · ← communication·entanglement·law·merge·message·quantum·uuid
+analysis —
 law teleportation is the content-uuid reconstructed over the entangled channel — no matter is sent, only the address, yet the meaning arrives whole because `reconstructed` holds iff the received uuid equals the original's; the carrier never travels, only the identity regenerates.
 
 ---
 
-<sub>content-uuid `e7c642c9-470f-833a-b4b6-995df9b1b602` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `423e195e-49ab-8322-9c1c-7e54ffc482c2` · `pnpm readme` · `pnpm computed:check`</sub>

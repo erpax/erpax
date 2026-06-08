@@ -3,15 +3,15 @@
 
 # point
 
-path `point` · uuid `b63da265-6337-83b5-951e-b0bd593d7d9c` · diamond `3fdfefbc-6d19-8deb-a83b-5647aaa67e72`
+path `point` · uuid `b63da265-6337-83b5-951e-b0bd593d7d9c` · diamond `f04f44fc-60a9-84e5-b0b5-784cd77216cb`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·contact·entry·law·merge·option·sti · exports point · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·physician · ← landmarks·physician
+neighbors → collapse·contact·entry·law·merge·option·sti · ← collapse·contact·entry·law·merge·option·sti
 analysis —
 law point is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `53a7fa7e-763c-8bfc-a48c-dc793a3b4529` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5478b01f-6200-8217-84f2-70b54e3d1aae` · `pnpm readme` · `pnpm computed:check`</sub>

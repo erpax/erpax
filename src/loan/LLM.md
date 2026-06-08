@@ -3,15 +3,15 @@
 
 # loan
 
-path `loan` · uuid `43f735df-869a-8b0b-91a9-1e366e0f3dc4` · diamond `2181551a-9d3a-8e3a-bc7a-9b87197ad643`
+path `loan` · uuid `43f735df-869a-8b0b-91a9-1e366e0f3dc4` · diamond `8bd5feaa-9889-802b-b016-3e43668ca6c6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·credit·form·frequency·law·mandate·merge·mortgage·number·payment·payments·recourse·renegotiable·repayment·sti·term·type · exports loan · escapes —
-links `18/18` · folded `1` · bonds in `4` out `4`
+links `18/18` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → amount·collapse·credit·form·frequency·law·mandate·merge·mortgage·number·payment·payments·recourse·renegotiable·repayment·sti·term·type · ← amount·collapse·credit·form·frequency·law·mandate·merge·mortgage·number·payment·payments·recourse·renegotiable·repayment·sti·term·type
 analysis —
 law loan is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5f443c95-4804-8180-bf9b-fde6b9e20291` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cea57b85-596e-804c-b941-11ecd310d2bc` · `pnpm readme` · `pnpm computed:check`</sub>

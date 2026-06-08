@@ -3,15 +3,15 @@
 
 # iptcdigital
 
-path `iptcdigital` · uuid `f26f19fb-758e-82b1-b11e-45c364ed4610` · diamond `bd617ac1-11ad-8635-97fb-57365f337d7a`
+path `iptcdigital` · uuid `f26f19fb-758e-82b1-b11e-45c364ed4610` · diamond `2c89ba7a-1eae-8c2c-ad7b-9cd420dd13e8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports iptcdigital · escapes —
-links `4/4` · folded `1` · bonds in `1` out `1`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law iptcdigital is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3241aa43-2edc-8fea-a110-afa03452255b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f1078cc4-b232-80d6-8dc4-98e6114bfb1f` · `pnpm readme` · `pnpm computed:check`</sub>

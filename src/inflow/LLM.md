@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports account·collapse·law·merge·minimum·sti · exports inflow · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → active·cohort·landmarks·memories·reality·stat · ← active·cohort·landmarks·memories·reality·stat
+neighbors → account·collapse·law·merge·minimum·sti · ← account·collapse·law·merge·minimum·sti
 analysis —
 law inflow is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6d950dd9-e5be-871e-a563-19e23e724f72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83bb8f4e-a0fe-8e3c-a960-99f6d125a9a4` · `pnpm readme` · `pnpm computed:check`</sub>

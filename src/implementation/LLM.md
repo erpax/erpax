@@ -3,15 +3,15 @@
 
 # implementation
 
-path `implementation` · uuid `f0678e8a-2d7c-8598-81f5-49440b1cc829` · diamond `0fe73663-5155-83d0-b6e2-33606b6f778c`
+path `implementation` · uuid `f0678e8a-2d7c-8598-81f5-49440b1cc829` · diamond `cf2bcf2a-6891-8a1e-b376-d741fde9511f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·ensures·law·legislation·merge·sti · exports implementation · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·ensures·law·legislation·merge·sti · ← collapse·ensures·law·legislation·merge·sti
 analysis —
 law implementation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `21c22f18-c7a3-8351-902f-0c1208c9655a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `212d3f44-8a52-8837-83eb-df2111769e7b` · `pnpm readme` · `pnpm computed:check`</sub>

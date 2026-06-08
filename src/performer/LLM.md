@@ -3,15 +3,15 @@
 
 # performer
 
-path `performer` · uuid `e53cd73d-80ac-8bcf-b440-cd4b2285a40e` · diamond `96137bf0-c3cf-8b3f-aff9-811983bdb636`
+path `performer` · uuid `e53cd73d-80ac-8bcf-b440-cd4b2285a40e` · diamond `2704a607-3141-83c9-8929-3526ceaa3ce0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·person · exports performer · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·differential·djmix·harden·landmarks·memories·sanitization·stat · ← cohort·differential·djmix·harden·landmarks·memories·sanitization·stat
+neighbors → law·person · ← law·person
 analysis —
 law performer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f737d03-fe8e-8281-8deb-a45e7e1a22ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d68ce7de-8389-8999-b727-5eb8b424f48a` · `pnpm readme` · `pnpm computed:check`</sub>

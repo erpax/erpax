@@ -25,7 +25,26 @@
 
 - partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
 - bond degree `36` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §126 milestone-billing` · banner
+- `IFRS IFRS-15 §35 over-time-recognition` · banner
+- `ISO-19011:2018 audit-trail milestone-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `US-GAAP ASC-606-10-25-30 milestone-method` · banner
+
+## analytics
+
+- bond degree `36` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `4c6ace53-62f5-88b5-9c16-36f497a2cfe5` · framed by typography partition `customers` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4377f8d9-fde6-8c0b-a88d-137afa24072e` · framed by typography partition `customers` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

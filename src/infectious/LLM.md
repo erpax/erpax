@@ -3,15 +3,15 @@
 
 # infectious
 
-path `infectious` · uuid `de9457f2-d5c6-8ac3-b470-ee316066c307` · diamond `3c57bf2b-25da-8efc-ad07-ea566268cb43`
+path `infectious` · uuid `de9457f2-d5c6-8ac3-b470-ee316066c307` · diamond `95d3cdf5-eb64-88e4-a9e5-db05e3a6f719`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agent·class·collapse·disease·law·merge·sti · exports infectious · escapes —
-links `7/7` · folded `1` · bonds in `13` out `13`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → basic·decontextualized·emergence·flight·golf·icao·id·landmarks·lifestyle·love·memories·nullability·sections · ← basic·decontextualized·emergence·flight·golf·icao·id·landmarks·lifestyle·love·memories·nullability·sections
+neighbors → agent·class·collapse·disease·law·merge·sti · ← agent·class·collapse·disease·law·merge·sti
 analysis agent
 law infectious is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `441af739-a201-82c1-a637-f137c96f070a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17bc7ed6-b46b-8a16-9926-3367fec28e8c` · `pnpm readme` · `pnpm computed:check`</sub>

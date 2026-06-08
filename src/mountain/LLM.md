@@ -3,15 +3,15 @@
 
 # mountain
 
-path `mountain` · uuid `5d4077c2-575b-8d9c-81d4-ea82077f4520` · diamond `77ad3a96-e8a2-89a9-b3cb-ca49e2328e13`
+path `mountain` · uuid `5d4077c2-575b-8d9c-81d4-ea82077f4520` · diamond `05b6a251-23bf-878a-a0bb-dac8dd9f5b87`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports mountain · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law mountain is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `800a25fe-145b-87f6-88de-9c39811e2420` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9e9227a-aaaf-8ec0-873c-e8c71847599b` · `pnpm readme` · `pnpm computed:check`</sub>

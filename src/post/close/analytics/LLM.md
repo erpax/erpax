@@ -3,15 +3,15 @@
 
 # analytics
 
-path `post/close/analytics` · uuid `1e1d4000-e724-879d-846e-e62b59be6535` · diamond `d99cf24a-3c8e-83be-8967-8de46600bc1f`
+path `post/close/analytics` · uuid `1e1d4000-e724-879d-846e-e62b59be6535` · diamond `fd138709-2f31-889a-a746-01bfdc604e10`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports PostCloseAnalytics·so · escapes —
-links `0/0` · folded `1` · bonds in `19` out `19`
+links `0/0` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·addressed·atom·aura·balance·binding·catalogue·colleagues·corrects·digit·entity·handling·holographic·homeopathic·marry·reimbursement·spreadsheet·symbol·tvclip · ← accounting·addressed·atom·aura·balance·binding·catalogue·colleagues·corrects·digit·entity·handling·holographic·homeopathic·marry·reimbursement·spreadsheet·symbol·tvclip
+neighbors → accounting·atom·aura·balance·bindings·collections·cost·dimension·dry·entropy·hallucination·harmony·hooks·horo·matrix·maxtampercost·purity·relocate·standards·tamper·trinity·typography·unavoidable · ← accounting·atom·aura·balance·bindings·collections·cost·dimension·dry·entropy·hallucination·harmony·hooks·horo·matrix·maxtampercost·purity·relocate·standards·tamper·trinity·typography·unavoidable
 analysis analytics/max-tamper-cost·aura·bindings·cost·hallucination·hooks·maxtampercost·purity·relocate·typography·unavoidable
 law —
 
 ---
 
-<sub>content-uuid `7ffc3c8d-1365-8a9d-86ae-8e5891510579` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cbaf18ff-5277-8418-a8ac-a662ea45db02` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # potential
 
-path `potential` · uuid `5a52e9fa-36ae-83a5-a61f-0c02baeb80c4` · diamond `e0e18c66-9561-8cc9-96e7-0eae3e0fd71d`
+path `potential` · uuid `5a52e9fa-36ae-83a5-a61f-0c02baeb80c4` · diamond `800aa551-b0b7-8003-8c1a-6c1c0eebcd24`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti·use · exports potential · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·thing · ← cohort·landmarks·memories·stat·thing
+neighbors → action·collapse·law·merge·sti·use · ← action·collapse·law·merge·sti·use
 analysis —
 law potential is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `40600153-f85f-8ecb-afa0-516553eb0810` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6e170460-2f98-8890-b065-fb2fccce6949` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # movement
 
-path `movement` · uuid `9dde97fa-3878-8826-b368-742bc8ff58bd` · diamond `a0ea3b4b-2a23-83f9-86c4-788d53a31035`
+path `movement` · uuid `9dde97fa-3878-8826-b368-742bc8ff58bd` · diamond `c15b1b0d-eedd-8a7f-93bf-b4305a77feeb`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·inventory·movements · exports movement · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·inventory·movements · ← balance·inventory·movements
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `7f4ce70b-0190-8195-ba64-fc2d6e633908` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3482ba66-fdaf-815c-a70a-5323c06dd0d0` · `pnpm readme` · `pnpm computed:check`</sub>

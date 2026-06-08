@@ -3,15 +3,15 @@
 
 # registered
 
-path `registered` · uuid `819543a0-cbee-8dff-adb7-d80f7776129d` · diamond `d50b3ea4-1a11-8876-8b5f-cd0c0f53c1f6`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `registered` · uuid `a5099e24-ed4b-8741-a28f-5c2acd661d93` · diamond `4db24fa2-d58f-81e9-8659-571fc731ae9b`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·date·first·law·merge·sti·vehicle · exports registered · escapes —
-links `7/7` · folded `1` · bonds in `7` out `7`
+links `7/7` · folded `1` · bonds in `7` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → album·closing·database·forecast·landmarks·right·sanitization · ← album·closing·database·forecast·landmarks·right·sanitization
-analysis diamond·hallucination·purity
+neighbors → collapse·date·first·law·law·merge·sti·vehicle · ← collapse·date·first·law·merge·sti·vehicle
+analysis —
 law registered is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f1174d08-f5b2-8706-9231-96462eeb54e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `11f7da63-7d3e-82b6-9ae2-dd752e918fbe` · `pnpm readme` · `pnpm computed:check`</sub>

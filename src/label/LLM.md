@@ -3,15 +3,15 @@
 
 # label
 
-path `label` · uuid `d382ecc0-87f7-823a-bc18-c41f6e29d772` · diamond `54c4998b-bb72-80cd-bc04-81cdfb142ee6`
+path `label` · uuid `d382ecc0-87f7-823a-bc18-c41f6e29d772` · diamond `64ebaf1c-3446-88ef-9b72-b97a0f73efe9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·customer·defect·details·enumeration·item·law·merge·record·remorse·return·shipping·source·sti·time·transit · exports label · escapes —
-links `16/16` · folded `1` · bonds in `3` out `3`
+links `16/16` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·periodical·terminals · ← landmarks·periodical·terminals
+neighbors → collapse·customer·defect·details·enumeration·item·law·merge·record·remorse·return·shipping·source·sti·time·transit · ← collapse·customer·defect·details·enumeration·item·law·merge·record·remorse·return·shipping·source·sti·time·transit
 analysis —
 law label is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c8d2b2ac-360d-820d-8c34-21927c6cef29` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fb12ba94-4bd7-8b72-8fed-0e333b463b57` · `pnpm readme` · `pnpm computed:check`</sub>

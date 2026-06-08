@@ -3,15 +3,15 @@
 
 # occupancy
 
-path `occupancy` · uuid `577a2c8b-bf30-8d72-9848-616a7cc74e28` · diamond `5c11971b-e2cf-83d4-850e-16de9c2fb8a8`
+path `occupancy` · uuid `577a2c8b-bf30-8d72-9848-616a7cc74e28` · diamond `1130db77-9909-857d-bf05-8d895c60abd6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports occupancy · escapes —
-links `2/2` · folded `1` · bonds in `15` out `15`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accepted·aggregate·casino·computational·desktop·harden·issn·landmarks·layout·lymphatic·parking·pipelines·psychological·shannon·speakable · ← accepted·aggregate·casino·computational·desktop·harden·issn·landmarks·layout·lymphatic·parking·pipelines·psychological·shannon·speakable
+neighbors → law·thing · ← law·thing
 analysis —
 law occupancy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8175f9f4-6256-885e-aa0c-15b2c2296d20` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf9628e4-26ae-8bb5-9849-e588b57b96d6` · `pnpm readme` · `pnpm computed:check`</sub>

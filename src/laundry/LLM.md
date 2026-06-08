@@ -3,15 +3,15 @@
 
 # laundry
 
-path `laundry` · uuid `bb9a0da1-9d1f-89ad-a770-b4b6bba73811` · diamond `6cfcc286-37b2-8d96-9735-afb587c2fe19`
+path `laundry` · uuid `bb9a0da1-9d1f-89ad-a770-b4b6bba73811` · diamond `1bf7321c-6b07-8a1a-abb4-09b46078754e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports cleaning·collapse·dry·law·merge·sti · exports laundry · escapes —
-links `6/6` · folded `1` · bonds in `11` out `11`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·activities·calorie·funded·landmarks·latitude·law·photon·pronouns·spouse · ← access·accounting·activities·calorie·funded·landmarks·latitude·law·photon·pronouns·spouse
+neighbors → cleaning·collapse·dry·law·merge·sti · ← cleaning·collapse·dry·law·merge·sti
 analysis —
 law laundry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e5784625-c7da-8963-bad7-e219fc7e7d17` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c8acf77-5ef5-80a5-b253-ce496c5970f7` · `pnpm readme` · `pnpm computed:check`</sub>

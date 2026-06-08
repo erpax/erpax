@@ -3,15 +3,15 @@
 
 # pulmonary
 
-path `pulmonary` · uuid `1b2c7ecc-7b12-8c21-b054-813f8bc44fdd` · diamond `12cf2786-73e4-8523-99c3-ee7cffec3baa`
+path `pulmonary` · uuid `1b2c7ecc-7b12-8c21-b054-813f8bc44fdd` · diamond `4829fd6a-994d-8e77-9b4f-25ba88b9e672`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports pulmonary · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·exif·imperial·landmarks·memories·sanitization·stat · ← cohort·exif·imperial·landmarks·memories·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law pulmonary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5b4d97c4-e4f2-860a-84fa-6381318a33ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `316c31de-c85b-8984-a3e5-c539da378c6c` · `pnpm readme` · `pnpm computed:check`</sub>
