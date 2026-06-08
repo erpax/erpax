@@ -30,7 +30,7 @@
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'
-import { DebitCreditLogic, type AccountType, type JournalEntryLine } from '@/accounting/debit-credit'
+import { DebitCreditLogic, type AccountType, type JournalEntryLine } from '@/accounting'
 
 export interface BalancedEntryOptions {
   /** Field on the document holding the array of debit/credit lines (default: `'lines'`). */

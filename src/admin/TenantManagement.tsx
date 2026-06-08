@@ -27,10 +27,10 @@ import {
   BatchTenantActionRequest,
 } from '@/types/tenant';
 import { tenantService } from '@/tenant.service';
-import HostTable from '@/admin/TenantTable';
-import HostFilters from '@/admin/TenantFilters';
-import HostDialog from '@/admin/TenantDialog';
-import BatchActionsBar from '@/admin/BatchActionsBar';
+import HostTable from './TenantTable';
+import HostFilters from './TenantFilters';
+import HostDialog from './TenantDialog';
+import BatchActionsBar from './BatchActionsBar';
 
 interface HostManagementProps {
   onTenantCreated?: (tenant: Tenant) => void;

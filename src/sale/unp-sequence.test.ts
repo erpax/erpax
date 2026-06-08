@@ -9,7 +9,7 @@
 
 import { describe, it, expect, vi } from 'vitest'
 import type { CollectionBeforeChangeHook } from 'payload'
-import { assignSaleUnpHook } from '@/sale/unp-sequence'
+import { assignSaleUnpHook } from './unp-sequence'
 
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
 

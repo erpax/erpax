@@ -5,9 +5,9 @@
  * @standard ISO IAS-19 employee-benefits + IAS-26 retirement-benefits
  * @feature hr_core
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
-import { planTrainingEffects, TRAINING_EMIT, TRAINING_TRIGGER } from '@/agents/registered/hr.training'
+import { planTrainingEffects, TRAINING_EMIT, TRAINING_TRIGGER } from './hr.training'
 
 export const HrAgent: DomainAgent = {
   id: 'hr',

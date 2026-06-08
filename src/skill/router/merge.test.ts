@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { installedToNode, mergeCatalogue, skillsForAgent, erpaxDomain, type InstalledSkill } from '@/skill/router/merge'
-import type { SkillNode } from '@/skill/router/resolve'
+import { installedToNode, mergeCatalogue, skillsForAgent, erpaxDomain, type InstalledSkill } from './merge'
+import type { SkillNode } from './resolve'
 
 const atom = (name: string): SkillNode => ({
   route: `/${name}/SKILL`, path: [name], name, description: `${name} root`,

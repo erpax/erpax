@@ -18,11 +18,11 @@
  */
 
 import type { Config, Endpoint, PayloadRequest } from 'payload'
-import { SKILL_INDEX } from '@/skill/router/skills.index'
-import { parseRequest } from '@/skill/router/resolve'
-import { resolveHarmonicContext } from '@/skill/router/subgraph'
-import { rate } from '@/skill/router/rating'
-import { serializeSkill } from '@/skill/router/serialize'
+import { SKILL_INDEX } from './skills.index'
+import { parseRequest } from './resolve'
+import { resolveHarmonicContext } from './subgraph'
+import { rate } from './rating'
+import { serializeSkill } from './serialize'
 
 const SITE = (process.env.ERPAX_SITE_URL ?? '').replace(/\/$/, '')
 

@@ -5,7 +5,7 @@
  * inherits from. Declares the baseline standards every business needs
  * regardless of regulated-role specialisation.
  */
-import { defineTenantRole } from '@/tenant/role/registry'
+import { defineTenantRole } from '@/tenant/role'
 
 defineTenantRole({
   id: 'business',

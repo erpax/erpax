@@ -11,10 +11,10 @@
  */
 
 import type React from 'react'
-import type { Page, Post } from '@/payload-types'
+import type { Page, Post } from '@/types'
 
-import { getCachedDocument } from '@/rfc/9110/get-document'
-import { getCachedRedirects } from '@/rfc/9110/get-redirects'
+import { getCachedDocument } from '@/rfc/9110'
+import { getCachedRedirects } from '@/rfc/9110'
 import { notFound, redirect } from 'next/navigation'
 
 interface Props {

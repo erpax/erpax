@@ -7,7 +7,7 @@ import React from 'react'
 
 import { getPayloadSdk } from '@/payload/sdk'
 
-import '@/login/index.scss'
+import './index.scss'
 
 const baseClass = 'loginPage'
 

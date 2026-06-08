@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { buildDailyReport, type DailySaleInput } from '@/sale/daily-report'
+import { buildDailyReport, type DailySaleInput } from './daily-report'
 
 const SALES: DailySaleInput[] = [
   { fiscalDeviceNumber: '12345678', saleDate: '2026-04-10T09:00:00Z', total: 1_200_00, paymentType: 'card', items: [{ vatRate: 20, amount: 1_000_00 }] },

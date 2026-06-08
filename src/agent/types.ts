@@ -19,7 +19,7 @@
 import type { Payload } from 'payload'
 import type { SupportedLocale } from '@/i18n'
 import type { Translator, SpecChainStep } from '@/spec/generator'
-import type { McpClient } from '@/agents/mcp/in-process-client'
+import type { McpClient } from '@/agents/mcp'
 
 export type AgentId =
   | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'

@@ -38,7 +38,7 @@
 
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 import { CANONICAL_AREAS } from '@/agents/mcp/standardization'
-import { registerFace, listFaces, type SeoVortexFace } from '@/website/seo-vortex'
+import { registerFace, listFaces, type SeoVortexFace } from '@/website'
 
 // ─── Schema.org Action JSON-LD per tool ────────────────────────────
 

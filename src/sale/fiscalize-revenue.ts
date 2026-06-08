@@ -20,9 +20,9 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
-import { requiresFiscalization } from '@/naredba/n/18/scope'
-import { resolveFiscalContext, type FiscalContext } from '@/sale/fiscal-context'
-import { reverseSale } from '@/sale/reverse-sale'
+import { requiresFiscalization } from '@/naredba/n/18'
+import { resolveFiscalContext, type FiscalContext } from './fiscal-context'
+import { reverseSale } from './reverse-sale'
 
 /** The fiscal sale payment types (Наредба Н-18 / касов бон). */
 export type FiscalPaymentType = 'cash' | 'card' | 'bank_transfer' | 'voucher'

@@ -21,7 +21,7 @@ import Stripe from 'stripe'
 import type { PayloadRequest } from 'payload'
 import { APIError } from 'payload'
 
-import type { Config, Order, Transaction } from '@/payload-types'
+import type { Config, Order, Transaction } from '@/types'
 
 import { apiErr, ERR } from '@/error'
 import {

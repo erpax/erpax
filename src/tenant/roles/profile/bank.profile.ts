@@ -9,7 +9,7 @@
  * @standard Basel III/IV + BCBS 239 + CRR + CRD + IFRS 9 ECL + AnaCredit
  *           + FINREP + COREP + SREP + MiFID II + EMIR + BRRD + DGSD + FATCA + CRS
  */
-import { defineTenantRole } from '@/tenant/role/registry'
+import { defineTenantRole } from '@/tenant/role'
 
 defineTenantRole({
   id: 'bank',

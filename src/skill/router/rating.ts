@@ -16,7 +16,7 @@
  *
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
-import type { SkillNode } from '@/skill/router/resolve'
+import type { SkillNode } from './resolve'
 import { norm } from '@/corpus/index.mts'
 
 export interface Rating {

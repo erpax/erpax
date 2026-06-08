@@ -25,8 +25,8 @@
  * @audit Conservation Law 55 (tamper-reversibility-cost) — the fight is priced, not forbidden
  */
 import { agentUuid, cloneAgent, type AgentDef, type ClonedAgent } from '@/agent/service'
-import { computeTamperReverseCost } from '@/integrity/tamper-reverse-cost'
-import { proveBeyondResources } from '@/integrity/resource-bound'
+import { computeTamperReverseCost } from '@/integrity'
+import { proveBeyondResources } from '@/integrity'
 
 /** The three ways an agent can fight the harmonic order. */
 export type Disharmony = 'tamper' | 'phantom-leverage' | 'off-ring'

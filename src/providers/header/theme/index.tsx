@@ -1,6 +1,6 @@
 'use client'
 
-import type { Theme } from '@/providers/theme/types'
+import type { Theme } from '@/providers/theme'
 
 import React, { createContext, useCallback, use, useState } from 'react'
 

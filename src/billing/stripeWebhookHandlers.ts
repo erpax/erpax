@@ -27,7 +27,7 @@
  */
 
 import { Payload, PayloadRequest } from 'payload'
-import type { Subscription } from '@/payload-types'
+import type { Subscription } from '@/types'
 import Stripe from 'stripe'
 import { emitEvent } from '@/event/emitter.service'
 

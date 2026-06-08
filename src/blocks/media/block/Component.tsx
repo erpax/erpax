@@ -4,9 +4,9 @@ import { cn } from '@/ui'
 import React from 'react'
 import RichText from '@/rich/text'
 
-import type { MediaBlock as MediaBlockProps } from '@/payload-types'
+import type { MediaBlock as MediaBlockProps } from '@/types'
 
-import { Media } from '@/media/Component'
+import { Media } from '@/media'
 
 type Props = MediaBlockProps & {
   breakout?: boolean

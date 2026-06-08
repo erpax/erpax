@@ -1,7 +1,7 @@
 import type { CollectionBeforeChangeHook } from 'payload'
 import type { Where } from 'payload'
 
-import type { User, Role, UserRole } from '@/payload-types'
+import type { User, Role, UserRole } from '@/types'
 import { extractID } from '@/extract/id'
 import { apiErr, ERR } from '@/error'
 

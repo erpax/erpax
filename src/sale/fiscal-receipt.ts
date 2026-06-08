@@ -16,8 +16,8 @@
  * @see .claude/skills/supto/SKILL.md · src/standards/naredba-n-18/unp.ts
  */
 
-import { isValidUnp } from '@/naredba/n/18/unp'
-import { bgTaxGroupForRate, type BgTaxGroup } from '@/naredba/n/18/vat-groups'
+import { isValidUnp } from '@/naredba/n/18'
+import { bgTaxGroupForRate, type BgTaxGroup } from '@/naredba/n/18'
 import { calculateBgVat } from '@/country/client/bg-vat'
 
 export interface FiscalReceiptLine {

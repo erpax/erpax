@@ -17,7 +17,7 @@ import type { Where } from 'payload'
 import { getPayload, type RequiredDataFromCollectionSlug, type TypedLocale } from 'payload'
 import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
-import { homeStatic } from '@/seed/home-static'
+import { homeStatic } from '@/seed'
 
 import { RenderBlocks } from '@/block/RenderBlocks'
 import { RenderHero } from '@/hero/RenderHero'
@@ -25,7 +25,7 @@ import { generateMeta } from '@/generate/meta'
 import PageClient from '@/app/(frontend)/[locale]/[slug]/page.client'
 import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
-import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG

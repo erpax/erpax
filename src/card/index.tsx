@@ -16,9 +16,9 @@ import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import React, { Fragment } from 'react'
 
-import type { Post } from '@/payload-types'
+import type { Post } from '@/types'
 
-import { Media } from '@/media/Component'
+import { Media } from '@/media'
 
 export type CardPostData = Pick<Post, 'slug' | 'categories' | 'meta' | 'title'>
 

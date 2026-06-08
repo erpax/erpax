@@ -6,7 +6,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/ui/select'
+} from '@/ui'
 import React, { useState } from 'react'
 import { useTranslations } from 'next-intl'
 

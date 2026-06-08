@@ -1,6 +1,6 @@
 'use client'
 
-import { Footer } from '@/payload-types'
+import { Footer } from '@/types'
 import { RowLabelProps, useRowLabel, useTranslation } from '@payloadcms/ui'
 
 export const RowLabel: React.FC<RowLabelProps> = () => {

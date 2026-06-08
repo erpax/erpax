@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { generatePreviewPath } from '@/rfc/3986/generate-preview-path'
+import { generatePreviewPath } from '@/rfc/3986'
 
 type DocumentPreviewCollection = 'pages' | 'posts'
 

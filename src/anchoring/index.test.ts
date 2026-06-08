@@ -9,7 +9,7 @@ import {
   NOTARY_STUB_BACKEND, anchorRoot, listAnchors, verifyAnchor, isExternalAnchor, anchorLeaf,
   type ChainBackend, type AnchorReceipt,
 } from '@/anchoring'
-import { computeContentDigest, computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentDigest, computeContentUuid } from '@/integrity'
 
 describe('anchoring: the stub is honest — never false assurance', () => {
   it('the notary stub is NOT an external anchor', () => {

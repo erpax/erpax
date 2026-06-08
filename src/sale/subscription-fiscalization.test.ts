@@ -17,7 +17,7 @@ import {
   wireSubscriptionFiscalizationSubscriber,
   __resetSubscriptionFiscalizationForTests,
   type SubscriptionInvoicedPayload,
-} from '@/sale/subscription-fiscalization'
+} from './subscription-fiscalization'
 
 const CHARGE: SubscriptionInvoicedPayload = {
   subscriptionId: 'sub-1',

@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, vi } from 'vitest'
-import { deriveSaleOperatorCodeHook } from '@/sale/operator-code'
+import { deriveSaleOperatorCodeHook } from './operator-code'
 
 type HookArgs = Parameters<ReturnType<typeof deriveSaleOperatorCodeHook>>[0]
 

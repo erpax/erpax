@@ -20,7 +20,7 @@ import { useTranslations } from 'next-intl'
 
 import '@/admin/bar/index.scss'
 
-import { getClientSideURL } from '@/rfc/3986/get-url'
+import { getClientSideURL } from '@/rfc/3986'
 
 const baseClass = 'admin-bar'
 

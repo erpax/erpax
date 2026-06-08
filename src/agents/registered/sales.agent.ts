@@ -5,7 +5,7 @@
  * @standard IFRS IFRS-15 §9 contract-with-customer
  * @feature crm @role sales — write @role sales-manager — write
  */
-import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
 
 export const SalesAgent: DomainAgent = {

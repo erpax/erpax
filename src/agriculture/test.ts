@@ -10,7 +10,7 @@ import {
   shareDeliveryEntry,
   sharePrepayEntry,
   shareSeasonFlows,
-} from '@/agriculture/accountable'
+} from './accountable'
 
 describe('agriculture/accountable — agriculture events as balanced double-entries', () => {
   it('harvest (IAS-41 §13): asset → inventory, balanced; the asset is credited, inventory debited', () => {

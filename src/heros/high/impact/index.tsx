@@ -2,10 +2,10 @@
 import { useHeaderTheme } from '@/providers/header/theme'
 import React, { useEffect } from 'react'
 
-import type { Page } from '@/payload-types'
+import type { Page } from '@/types'
 
-import { CMSLink } from '@/link/Component'
-import { Media } from '@/media/Component'
+import { CMSLink } from '@/link'
+import { Media } from '@/media'
 import RichText from '@/rich/text'
 
 export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {

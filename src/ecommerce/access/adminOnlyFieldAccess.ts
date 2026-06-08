@@ -9,7 +9,7 @@
 
 import type { FieldAccess } from 'payload'
 
-import { commerceHasStaffRole } from '@/ecommerce/access/utilities'
+import { commerceHasStaffRole } from './utilities'
 
 export const adminOnlyFieldAccess: FieldAccess = ({ req: { user } }) =>
   commerceHasStaffRole(user)

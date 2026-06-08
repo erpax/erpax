@@ -6,7 +6,7 @@
  *
  * @feature meta_automation
  */
-import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/agent'
 
 export const MetaSkillAgent: DomainAgent = {
   id: 'meta-skill',

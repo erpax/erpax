@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parseTagList, toTagListString, cleanTagNames, reconcileTags } from '@/tag/list'
+import { parseTagList, toTagListString, cleanTagNames, reconcileTags } from './list'
 
 describe('tag/list — TagList + DefaultParser port (the text↔tags bridge)', () => {
   it('parses a delimited string: trims, lower-cases, dedupes (preserving order)', () => {

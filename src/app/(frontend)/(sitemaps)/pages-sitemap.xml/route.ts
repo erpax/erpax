@@ -15,7 +15,7 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 import { unstable_cache } from 'next/cache'
 
-import { getServerSideURL } from '@/rfc/3986/get-url'
+import { getServerSideURL } from '@/rfc/3986'
 
 /** D1/SQLite cannot tolerate concurrent opens during OpenNext/workerd static generation (SQLITE_BUSY). */
 export const dynamic = 'force-dynamic'

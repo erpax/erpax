@@ -9,9 +9,9 @@
 
 import type { Locale, PayloadRequest, TypedLocale } from 'payload'
 
-import type { PreviewSearchParams } from '@/app/(frontend)/next/preview/route'
+import type { PreviewSearchParams } from '@/app'
 import { getPreviewSecret } from '@/get/preview/secret'
-import { resolveLocale } from '@/bcp/47/locale-utils'
+import { resolveLocale } from '@/bcp/47'
 
 type CollectionKey = 'posts' | 'pages' | 'products'
 

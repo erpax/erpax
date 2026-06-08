@@ -21,8 +21,8 @@
  * @see ./list.ts · ./setTagList.ts · ./taggedWith.ts · ../tags
  */
 import type { Field } from 'payload'
-import { toTagListString } from '@/tag/list'
-import { setTagList, tagListOn, DEFAULT_CONTEXT } from '@/tag/setTagList'
+import { toTagListString } from './list'
+import { setTagList, tagListOn, DEFAULT_CONTEXT } from './setTagList'
 
 export interface TagListFieldOptions {
   /** Field name (default `${context}List`, e.g. context 'skill' → 'skillList'). */

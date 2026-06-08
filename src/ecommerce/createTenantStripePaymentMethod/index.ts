@@ -17,9 +17,9 @@
 
 import { stripeAdapter } from '@payloadcms/plugin-ecommerce/payments/stripe'
 
-import { tenantAwareInitiatePayment } from '@/ecommerce/stripe/tenantAwareInitiatePayment'
-import { tenantConfirmOrder } from '@/ecommerce/stripe/tenantConfirmOrder'
-import { tenantStripeWebhookEndpoint } from '@/ecommerce/stripe/tenantStripeWebhook'
+import { tenantAwareInitiatePayment } from '../stripe/tenantAwareInitiatePayment'
+import { tenantConfirmOrder } from '../stripe/tenantConfirmOrder'
+import { tenantStripeWebhookEndpoint } from '../stripe/tenantStripeWebhook'
 
 /**
  * Stripe payment method: secrets come from `Tenants` (see `stripeSecretKey`, `stripeWebhookSecret`).

@@ -56,19 +56,19 @@ import { isSuperAdmin, isSuperAdminAccess } from '@/is/super/admin'
 // No domain silos: organizing by actual data type/concern, not business domain.
 // Collections are self-contained with clear boundaries for future plugin extraction.
 import * as allCollections from '@/collections'
-import { tenantCollectionsConfig } from '@/tenants/scope'
+import { tenantCollectionsConfig } from '@/tenants'
 import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from '@/footer/config'
 import { Header } from '@/header/config'
-import { beforeSyncWithSearch } from '@/search/beforeSync'
-import { searchDocField, searchFields } from '@/search/fieldOverrides'
+import { beforeSyncWithSearch } from '@/search'
+import { searchDocField, searchFields } from '@/search'
 import { defaultLexical } from '@/default/lexical'
 import { createEcommercePlugin } from '@/ecommerce/configureEcommercePlugin'
 import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
 } from '@/nist/sp/800/108'
-import { getServerSideURL } from '@/rfc/3986/get-url'
+import { getServerSideURL } from '@/rfc/3986'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
 import { tenantAwareResendEmailAdapter } from '@/email/tenantAwareResendEmailAdapter'
 import localization from '@/i18n/localization'
@@ -80,7 +80,7 @@ import {
   type SupportedLocale,
 } from '@/i18n'
 
-import type { Config } from '@/payload-types'
+import type { Config } from '@/types'
 
 /** `buildConfig({ logger })` type — used so Workers can supply a non-pino logger without `any`. */
 type PayloadBuildConfigLogger = NonNullable<Parameters<typeof buildConfig>[0]['logger']>

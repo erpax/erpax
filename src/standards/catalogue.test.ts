@@ -13,7 +13,7 @@ import { describe, it, expect } from 'vitest'
 import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from './catalogue'
 import { STANDARDS_REGISTRY } from './registry'
 import collectionConfig from '@/standards'
-import { uuid } from '@/integrity/content-uuid'
+import { uuid } from '@/integrity'
 import { uuidColor } from '@/uuid/projection'
 
 // The payload `standards.family` enum — DERIVED from the live collection config

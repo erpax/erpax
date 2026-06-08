@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createJournalEntryAction } from '@/dashboard/actions';
-import Modal from '@/modal/Modal';
+import Modal from './Modal';
 
 /**
  * Modal for creating a balanced journal entry (debits = credits).

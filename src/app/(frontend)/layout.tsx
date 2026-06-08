@@ -23,7 +23,7 @@ import { InitTheme } from '@/providers/theme/init/theme'
 import { mergeOpenGraph } from '@/merge/open/graph'
 
 import '@/app/(frontend)/globals.css'
-import { getServerSideURL } from '@/rfc/3986/get-url'
+import { getServerSideURL } from '@/rfc/3986'
 import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {

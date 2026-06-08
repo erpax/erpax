@@ -1,5 +1,5 @@
 import type { Payload } from 'payload'
-import type { WorkflowDefinition } from '@/payload-types'
+import type { WorkflowDefinition } from '@/types'
 
 /**
  * Seed the ONE universal erpax workflow the standards collectively define.

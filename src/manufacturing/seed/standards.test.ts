@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { STANDARD_REGISTRY, ESCO_API, NACE_RAMON, standardFor, standardApis } from '@/manufacturing/seed/standards'
+import { STANDARD_REGISTRY, ESCO_API, NACE_RAMON, standardFor, standardApis } from './standards'
 
 describe('manufacturing/seeds/standards — standards pinned + their related APIs wired', () => {
   it('every standard is pinned to a version + authority (a true @standard banner)', () => {

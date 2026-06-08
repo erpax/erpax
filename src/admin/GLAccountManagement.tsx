@@ -15,10 +15,10 @@ import {
 } from '@/types/gl-account';
 import { glAccountService } from '@/gl/account.service';
 import { Plus, Edit2, Lock, Unlock, Trash2 } from 'lucide-react';
-import GLAccountTree from '@/admin/GLAccountTree';
-import GLAccountDialog from '@/admin/GLAccountDialog';
-import GLAccountFilters from '@/admin/GLAccountFilters';
-import GLAccountDetailDialog from '@/admin/GLAccountDetailDialog';
+import GLAccountTree from './GLAccountTree';
+import GLAccountDialog from './GLAccountDialog';
+import GLAccountFilters from './GLAccountFilters';
+import GLAccountDetailDialog from './GLAccountDetailDialog';
 
 interface GLAccountManagementProps {
   tenantId: string;

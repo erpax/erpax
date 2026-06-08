@@ -45,8 +45,8 @@
  * @standard ISO 19011:2018 §6.4.6 (per-agent law audit-trailed)
  */
 
-import type { DomainAgent, AgentEffect } from '@/agent/types'
-import { agentRegistry } from '@/agent/bootstrap'
+import type { DomainAgent, AgentEffect } from '@/agent'
+import { agentRegistry } from '@/agent'
 
 export type LawCategory =
   | 'spec-coverage'         // Law 1, 7

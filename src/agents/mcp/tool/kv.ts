@@ -26,7 +26,7 @@ import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/m
 import {
   computeKvBindingUuid, resolveKeyUuid, toUuidMap,
 } from '@/uuid/kv'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 import { assertTenantMatch } from '@/agents/mcp/tool/_guards'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 

@@ -104,7 +104,7 @@ import {
 // Slice BBBBBBBB (2026-05-11) — pull chain-declared producers from the
 // BUSINESS_CHAINS registry. Any chain step with `producer: { onStatus | onCreate, aggregate }`
 // scoped to this collection's slug gets auto-wired into afterChange.
-import { wireChainProducersFor } from '@/business/chain/wire-producers'
+import { wireChainProducersFor } from '@/business/chain'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/auth'
 import type { UserRole } from '@/types/auth'
 import {

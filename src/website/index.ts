@@ -217,3 +217,6 @@ export function exportMediaBundle(seeds: ReadonlyArray<PageSeed>): string {
 export function importMediaBundle(ndjson: string): ReadonlyArray<PageSeed> {
   return ndjson.trim().split('\n').filter((l) => l).map((l) => JSON.parse(l) as PageSeed)
 }
+
+export { listFaces } from './seo-vortex'
+export type { SeoVortexFace } from './seo-vortex'

@@ -1,7 +1,7 @@
 import type { Access, Where } from 'payload'
 
 import { getAllowPublicReadTenantIds } from '@/allow/public/read/tenant'
-import { commerceHasStaffRole } from '@/ecommerce/access/utilities'
+import { commerceHasStaffRole } from './utilities'
 
 /**
  * Ecommerce read predicate — staff see all statuses, anonymous see only

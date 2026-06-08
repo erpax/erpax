@@ -11,7 +11,7 @@
  *           INSPIRE + eIDAS QTSP + OECD BEPS Pillar 2 + DAC6/DAC7 +
  *           AMLD6 + UN SDG + IFRS S1/S2
  */
-import { defineTenantRole } from '@/tenant/role/registry'
+import { defineTenantRole } from '@/tenant/role'
 
 defineTenantRole({
   id: 'government',

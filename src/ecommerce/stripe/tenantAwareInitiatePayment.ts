@@ -14,7 +14,7 @@
 
 import { stripeAdapter } from '@payloadcms/plugin-ecommerce/payments/stripe'
 
-import type { Cart } from '@/payload-types'
+import type { Cart } from '@/types'
 import { apiErr, ERR } from '@/error'
 import { resolveStripeSecretForCart } from '@/tenant/remote/secret'
 

@@ -22,7 +22,7 @@ import { EcommerceClientProvider } from '@/ecommerce/client/provider'
 import { IntlChrome } from '@/intl/chrome'
 import { routing } from '@/i18n/routing'
 import localization from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 type Args = {

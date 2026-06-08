@@ -17,7 +17,7 @@
  * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
  * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
  */
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 import { cloneAgent, distinctAgents, type AgentDef, type ClonedAgent } from '@/agent/service'
 
 export interface Team {

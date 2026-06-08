@@ -5,7 +5,7 @@ import {
   workspaceApisForGap,
   allWorkspaceScopes,
   WORKSPACE_SERVICES,
-} from '@/google/workspace/registry'
+} from './registry'
 
 describe('google-workspace/registry — the computed Workspace API catalogue', () => {
   it('every entry is a real Google API: OAuth scopes, a versioned base, a native id, a target gap', () => {

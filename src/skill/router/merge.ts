@@ -20,7 +20,7 @@
  * @standard ESCO/SFIA — installed skills enter the same competency taxonomy
  * @see ./skills.index (erpax atoms) · ./installed.catalogue (the loaded catalogue)
  */
-import type { SkillNode } from '@/skill/router/resolve'
+import type { SkillNode } from './resolve'
 
 /** One installed Claude domain skill (a row of the generated `installed.catalogue.ts`). */
 export interface InstalledSkill {

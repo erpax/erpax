@@ -21,7 +21,7 @@
 import { createLocalReq, getPayload, type Payload } from 'payload'
 
 import config from '@/payload.config'
-import type { User } from '@/payload-types'
+import type { User } from '@/types'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 
 /** Minimal valid PNG (1×1). */

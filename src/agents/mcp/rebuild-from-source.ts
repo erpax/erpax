@@ -40,7 +40,7 @@
 
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 import { extractCorpus } from '@/spec/generator'
-import type { SpecCorpus } from '@/spec/generator/types'
+import type { SpecCorpus } from '@/spec/generator'
 
 export interface ExpectedTool {
   readonly name: string

@@ -11,7 +11,7 @@
 import React from 'react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-import { Button } from '@/ui/button'
+import { Button } from '@/ui'
 import { Link, routing } from '@/i18n/routing'
 
 type Args = {

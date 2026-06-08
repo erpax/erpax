@@ -24,7 +24,7 @@ import {
 // DRY: single source of truth for date arithmetic lives in the
 // accounting utilities. Re-export here so existing parties consumers
 // (receivables/payables/reports) keep their import surface stable.
-import { daysBetween } from '@/utility/calculations'
+import { daysBetween } from '@/utility'
 export { daysBetween }
 
 /**

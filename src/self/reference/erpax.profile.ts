@@ -12,7 +12,7 @@
  * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
  */
 
-import { defineTenantRole } from '@/tenant/role/registry'
+import { defineTenantRole } from '@/tenant/role'
 
 defineTenantRole({
   id: 'erpax-platform',

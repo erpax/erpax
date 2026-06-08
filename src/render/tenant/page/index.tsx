@@ -1,4 +1,4 @@
-import type { Page } from '@/payload-types'
+import type { Page } from '@/types'
 
 import { RenderBlocks } from '@/block/RenderBlocks'
 import { RenderHero } from '@/hero/RenderHero'

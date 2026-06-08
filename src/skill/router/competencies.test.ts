@@ -7,8 +7,8 @@ import {
   competencyRouteOptions,
   TRANSVERSAL_ROOTS,
   type CorpusCompetency,
-} from '@/skill/router/competencies'
-import type { SkillNode } from '@/skill/router/resolve'
+} from './competencies'
+import type { SkillNode } from './resolve'
 
 describe('skill-router/competencies — the competency taxonomy computed from the corpus', () => {
   it('the catalogue is non-empty and every competency is keyed by a content-addressed route', () => {

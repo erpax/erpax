@@ -16,10 +16,10 @@
  * @standard ESCO v1.2 skills-pillar sub-classification + reusability tiers
  * @standard SFIA 8 responsibility-levels 1..7 (held vs required; gap = required − held)
  */
-import type { SkillNode } from '@/skill/router/resolve'
-import { SKILL_INDEX } from '@/skill/router/skills.index'
-import { INSTALLED_CATALOGUE } from '@/skill/router/installed.catalogue'
-import { mergeCatalogue } from '@/skill/router/merge'
+import type { SkillNode } from './resolve'
+import { SKILL_INDEX } from './skills.index'
+import { INSTALLED_CATALOGUE } from './installed.catalogue'
+import { mergeCatalogue } from './merge'
 
 /** ESCO Skills-pillar sub-classification (mono-hierarchy: one group per concept). */
 export type CompetencySubClassification = 'knowledge' | 'language' | 'skill' | 'transversal'

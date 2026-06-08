@@ -25,7 +25,7 @@ import {
   type ChainLink,
   type LinkStore,
 } from '@/uuid/chain'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 
 interface TestPayload { kind: string }
 

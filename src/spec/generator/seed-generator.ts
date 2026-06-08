@@ -6,7 +6,7 @@
  * corpus + a chain id, build the canonical `ChainStepImpl[]` source
  * that the runner consumes:
  *
- *   import type { ChainImpls, ChainStepImpl } from '@/business/chain/run-chain'
+ *   import type { ChainImpls, ChainStepImpl } from '@/business/chain'
  *
  *   const ts = () => Date.now().toString(36)
  *
@@ -183,7 +183,7 @@ ${[...contributingFiles].map((f) => ` *   - ${f}`).join('\n')}
 
   const source = `${banner}
 
-import type { ChainImpls, ChainStepImpl } from '@/business/chain/run-chain'
+import type { ChainImpls, ChainStepImpl } from '@/business/chain'
 
 const ts = () => Date.now().toString(36)
 

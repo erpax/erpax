@@ -11,4 +11,6 @@ A filesystem is stateful, so every state of the tree is a [[snapshot]]; its cont
 
 **Law — [[law]]: erpax's substrate is a tree where every [[path]] IS the address and every leaf [[word]] IS the [[atom]] — derived from the live tree first (never a stale index), and every state of the tree is a [[snapshot]].**
 
-@see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · [[snapshot]] · [[mcp]] · [[github]]
+All external APIs follow the computed path in [[path]] — fs, [[url]], [[github]], [[mcp]], and [[api]] merge at one canonical atom path and entangle with erpax in every [[dimension]] (content-[[uuid]] sealed; gates fail closed).
+
+@see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · [[snapshot]] · [[mcp]] · [[github]] · [[dimension]]

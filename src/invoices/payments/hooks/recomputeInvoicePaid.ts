@@ -16,7 +16,7 @@
  * @see src/hooks/factories/recompute-parent-aggregates.ts
  * @see src/collections/InvoiceLines/hooks/recomputeInvoiceTotals.ts
  */
-import { recomputeParentAggregates } from '@/factory/recompute-parent-aggregates'
+import { recomputeParentAggregates } from '@/factory'
 
 export const invoicePaidTotals = recomputeParentAggregates({
   childSlug: 'payments',

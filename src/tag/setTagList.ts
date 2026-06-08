@@ -21,7 +21,7 @@
  * @see ./list.ts (parse/reconcile) · ./taggedWith.ts (reverse read) · ../tags/taggings/counter.ts
  */
 import type { CollectionSlug, Payload, Where } from 'payload'
-import { parseTagList, reconcileTags } from '@/tag/list'
+import { parseTagList, reconcileTags } from './list'
 
 /** The default tagging context (the gem's `:tags`). */
 export const DEFAULT_CONTEXT = 'tags'

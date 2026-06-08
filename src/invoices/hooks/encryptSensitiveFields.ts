@@ -1,6 +1,6 @@
 import type { CollectionBeforeChangeHook, CollectionAfterReadHook } from 'payload'
 import { encryptFields, decryptFields } from '@/nist/sp/800/38'
-import type { Invoice } from '@/payload-types'
+import type { Invoice } from '@/types'
 
 /**
  * Encryption hooks for Invoices — encrypt Stripe invoice / payment-intent IDs.

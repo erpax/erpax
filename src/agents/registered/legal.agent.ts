@@ -6,7 +6,7 @@
  * @standard eIDAS qualified-trust-services
  * @feature legal_core
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
 
 export const LegalAgent: DomainAgent = {

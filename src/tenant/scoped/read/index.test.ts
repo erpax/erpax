@@ -18,7 +18,7 @@ import {
   tenantScopedCollectionReadAccess,
   tenantScopedPostsReadAccess,
 } from '@/tenant/scoped/read'
-import { wherePublished } from '@/scope/filters'
+import { wherePublished } from '@/scope'
 
 const getAllowPublicReadTenantIds = vi.fn()
 

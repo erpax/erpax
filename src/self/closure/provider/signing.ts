@@ -62,9 +62,9 @@
 
 import type { InternalProvider, FallbackContext } from '@/self/closure/types'
 import { registerInternalProvider } from '@/self/closure'
-import type { ContentUuid } from '@/integrity/content-uuid'
-import type { SignedUuid, SignatureAlg } from '@/integrity/signatures'
-import { signContentUuid } from '@/integrity/signatures'
+import type { ContentUuid } from '@/integrity'
+import type { SignedUuid, SignatureAlg } from '@/integrity'
+import { signContentUuid } from '@/integrity'
 
 export interface SigningParams<T> {
   readonly uuid: ContentUuid<T>

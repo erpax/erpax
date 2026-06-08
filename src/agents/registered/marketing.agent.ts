@@ -4,7 +4,7 @@
  *
  * @standard GDPR consent-tracking @feature marketing
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
 
 export const MarketingAgent: DomainAgent = {

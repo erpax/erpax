@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-import type { ParsedRequest, SkillNode } from '@/skill/router/resolve'
-import { relatedSubgraph, resolveHarmonicContext } from '@/skill/router/subgraph'
+import type { ParsedRequest, SkillNode } from './resolve'
+import { relatedSubgraph, resolveHarmonicContext } from './subgraph'
 
 const node = (
   name: string,

@@ -19,7 +19,7 @@
  *
  * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
  */
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 
 export interface AgentDef {
   name: string
@@ -88,4 +88,4 @@ export function distinctAgents(swarm: ReadonlyArray<AgentDef>, tenantId = ''): C
 }
 
 // The team scale — multiple agents sharing skills (the competence union).
-export * from '@/agent/team'
+export * from './team'

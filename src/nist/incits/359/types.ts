@@ -6,7 +6,7 @@
  * @security ISO-27002 §5.15 access-control
  */
 
-import type { Role } from '@/payload-types'
+import type { Role } from '@/types'
 
 /** Minimal row shape from `roles` for predicate checks (matches stored docs). */
 export type RoleDefinition = Pick<Role, 'name' | 'binding' | 'scopedCollection' | 'resource'>

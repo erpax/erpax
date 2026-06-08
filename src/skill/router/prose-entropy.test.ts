@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { corpusProseEntropy, meanProseRatio, proseEntropy } from '@/skill/router/prose-entropy'
+import { corpusProseEntropy, meanProseRatio, proseEntropy } from './prose-entropy'
 
 describe('prose-entropy — references vs plain text (the point-4 metric)', () => {
   it('all plain text ⇒ proseRatio 1 (max entropy, nothing referenced)', () => {

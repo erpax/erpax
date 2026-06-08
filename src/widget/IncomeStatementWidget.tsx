@@ -9,7 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '@/dashboard';
-import type { IncomeStatementData } from '@/analytics/types';
+import type { IncomeStatementData } from '@/analytics';
 
 interface IncomeStatementWidgetProps {
   data: IncomeStatementData | null;

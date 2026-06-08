@@ -1,6 +1,6 @@
 import type { Access } from 'payload'
 
-import type { Tenant, User } from '@/payload-types'
+import type { Tenant, User } from '@/types'
 
 import { isSuperAdmin } from '@/is/super/admin'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'

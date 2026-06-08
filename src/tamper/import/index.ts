@@ -26,14 +26,28 @@ export interface ImportViolation {
   readonly spec: string
 }
 
-/** An `@/PATH` import is from an INDEX iff PATH is a directory carrying an index.ts (the atom's face). */
-function isIndexImport(spec: string): boolean {
-  const base = SRC + '/' + spec.replace(/^@\//, '')
+/** An `@/PATH` import is from an INDEX iff PATH is a directory carrying index.ts or index.tsx (the atom's face). */
+export function isIndexImport(spec: string, root = SRC): boolean {
+  const base = root + '/' + spec.replace(/^@\//, '')
   try {
-    return statSync(base).isDirectory() && existsSync(base + '/index.ts')
+    if (!statSync(base).isDirectory()) return false
+    return existsSync(base + '/index.ts') || existsSync(base + '/index.tsx')
   } catch {
     return false
   }
+}
+
+export const BARREL_ALIASES: Readonly<Record<string, string>> = { '@/payload-types': '@/types' }
+
+export function resolveBarrel(spec: string, root = SRC): string | null {
+  const alias = BARREL_ALIASES[spec]
+  if (alias && isIndexImport(alias, root)) return alias
+  const parts = spec.replace(/^@\//, '').split('/')
+  for (let len = parts.length; len >= 1; len--) {
+    const candidate = '@/' + parts.slice(0, len).join('/')
+    if (isIndexImport(candidate, root)) return candidate
+  }
+  return null
 }
 
 /** Scan the source: total `@/` imports + the non-index violations (the raises). */

@@ -11,6 +11,6 @@
  * @see src/plugins/accounting/utilities/period-lock.ts
  */
 
-import { validateNotLocked } from '@/utility/period-lock'
+import { validateNotLocked } from '@/utility'
 
 export const paymentsBeforeChange = [validateNotLocked]

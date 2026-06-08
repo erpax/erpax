@@ -21,7 +21,7 @@ import { getPayload, type TypedLocale } from 'payload'
 import React, { cache } from 'react'
 
 import { routing } from '@/i18n/routing'
-import type { Product } from '@/payload-types'
+import type { Product } from '@/types'
 import { generateMeta } from '@/generate/meta'
 import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
 import { getProductPrice, formatProductPrice } from '@/product/price'
@@ -29,7 +29,7 @@ import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
 } from '@/site/tenant/where'
-import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 export async function generateStaticParams() {

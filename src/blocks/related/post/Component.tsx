@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import React from 'react'
 import RichText from '@/rich/text'
 
-import type { Post } from '@/payload-types'
+import type { Post } from '@/types'
 
 import { Card } from '@/card'
 import { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'

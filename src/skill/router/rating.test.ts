@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-import type { SkillNode } from '@/skill/router/resolve'
-import { rate, rateAll } from '@/skill/router/rating'
+import type { SkillNode } from './resolve'
+import { rate, rateAll } from './rating'
 
 const node = (name: string, related: string[] = []): SkillNode => ({
   route: `/${name}/SKILL`,

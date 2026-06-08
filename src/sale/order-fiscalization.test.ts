@@ -18,7 +18,7 @@ import {
   wireOrderFiscalizationSubscriber,
   __resetOrderFiscalizationForTests,
   type OrderActivatedPayload,
-} from '@/sale/order-fiscalization'
+} from './order-fiscalization'
 
 const ORDER: OrderActivatedPayload = {
   orderId: 'ord-1',

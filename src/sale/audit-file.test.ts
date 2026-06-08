@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { buildSalesAuditReport, toSalesAuditXml, type SalesAuditInput } from '@/sale/audit-file'
+import { buildSalesAuditReport, toSalesAuditXml, type SalesAuditInput } from './audit-file'
 
 const SALES: SalesAuditInput[] = [
   { unp: '12345678-0042-0000002', fiscalDeviceNumber: '12345678', operatorCode: '0042', saleDate: '2026-04-20T10:00:00Z', total: 1_200_00, vatTotal: 200_00, currency: 'BGN', paymentType: 'card', status: 'closed', fiscalReceiptNumber: 'R-2' },

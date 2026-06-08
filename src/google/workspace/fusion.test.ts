@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { fuseWorkspaceResource, fusesIdentically, externalRef, type WorkspaceResource } from '@/google/workspace/fusion'
+import { fuseWorkspaceResource, fusesIdentically, externalRef, type WorkspaceResource } from './fusion'
 
 const TENANT = 'tenant-uuid-1'
 const gmailMsg: WorkspaceResource = {

@@ -2,7 +2,7 @@ import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'paylo
 
 import { revalidatePath, revalidateTag } from 'next/cache'
 
-import type { Post } from '@/payload-types'
+import type { Post } from '@/types'
 
 /**
  * Posts cache-revalidation hook — fires after publish/unpublish to bust ISR.

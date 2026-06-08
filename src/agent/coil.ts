@@ -15,7 +15,7 @@
  * @standard ISO/IEC 25010:2023 §5.4 reusability (single shared society per tenant)
  * @see ../agent-sync/society.ts connectAgentSociety (the jack)
  */
-import { connectAgentSociety, resolveAgentSyncHost, type AgentSociety } from '@/agent/sync/society'
+import { connectAgentSociety, resolveAgentSyncHost, type AgentSociety } from '@/agent/sync'
 import type { AgentContext, AgentRuntime } from '@/agent/types'
 
 const convened = new Map<string, AgentSociety>()

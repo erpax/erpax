@@ -29,7 +29,7 @@ import {
   type TargetUuid,
   type ShareUuid,
 } from '@/uuid/share'
-import type { UuidLinkedLeaf } from '@/integrity/uuid-linked-chain'
+import type { UuidLinkedLeaf } from '@/integrity'
 
 interface FakeRow extends Record<string, unknown> {
   id: string

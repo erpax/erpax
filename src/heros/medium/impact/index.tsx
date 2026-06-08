@@ -1,9 +1,9 @@
 import React from 'react'
 
-import type { Page } from '@/payload-types'
+import type { Page } from '@/types'
 
-import { CMSLink } from '@/link/Component'
-import { Media } from '@/media/Component'
+import { CMSLink } from '@/link'
+import { Media } from '@/media'
 import RichText from '@/rich/text'
 
 export const MediumImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {

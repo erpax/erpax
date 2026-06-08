@@ -26,7 +26,7 @@
  * @see src/services/entry/index.ts — toDoubleEntry (the balanced debit/credit pair)
  */
 
-import { fuseWorkspaceResource, type FusedResource } from '@/google/workspace/fusion'
+import { fuseWorkspaceResource, type FusedResource } from './fusion'
 import { toDoubleEntry, type Entry } from '@/entry'
 
 // ── Minimal typed shapes of the Google API resources (only the fields used) ──

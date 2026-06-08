@@ -7,12 +7,12 @@ import { useTranslations } from 'next-intl'
 import React, { useCallback, useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
 import RichText from '@/rich/text'
-import { Button } from '@/ui/button'
+import { Button } from '@/ui'
 import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 
 import { getPayloadSdk } from '@/payload/sdk'
 
-import { fields } from '@/blocks/form/fields'
+import { fields } from './fields'
 
 /**
  * Payload form-builder block renderer — react-hook-form-driven dynamic field rendering.

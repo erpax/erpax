@@ -20,7 +20,7 @@ import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
 import RichText from '@/rich/text'
 
-import type { Post } from '@/payload-types'
+import type { Post } from '@/types'
 
 import { PostHero } from '@/heros/post/hero'
 import { generateMeta } from '@/generate/meta'
@@ -28,7 +28,7 @@ import PageClient from '@/app/(frontend)/[locale]/posts/[slug]/page.client'
 import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
 import type { SupportedLocale } from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 export async function generateStaticParams() {

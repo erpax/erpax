@@ -56,7 +56,7 @@
  * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
  */
 
-import { defineTenantRole } from '@/tenant/role/registry'
+import { defineTenantRole } from '@/tenant/role'
 
 defineTenantRole({
   id: 'country',

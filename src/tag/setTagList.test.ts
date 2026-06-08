@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import type { Payload } from 'payload'
-import { findOrCreateTags, tagListOn, setTagList } from '@/tag/setTagList'
+import { findOrCreateTags, tagListOn, setTagList } from './setTagList'
 
 // A minimal in-memory Payload — enough to exercise the tag engine's
 // find/create/delete with the `{ and: [{ field: { equals|in } }] }` shapes it

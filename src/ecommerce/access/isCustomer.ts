@@ -10,7 +10,7 @@
 
 import type { FieldAccess } from 'payload'
 
-import { commerceHasCustomerRole } from '@/ecommerce/access/utilities'
+import { commerceHasCustomerRole } from './utilities'
 
 export const isCustomer: FieldAccess = ({ req }) =>
   Boolean(req.user && commerceHasCustomerRole(req.user))

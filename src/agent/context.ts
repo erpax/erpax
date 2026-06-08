@@ -34,7 +34,7 @@ import type {
   DomainEvent,
   EvidenceFrame,
 } from '@/agent/types'
-import type { McpClient } from '@/agents/mcp/in-process-client'
+import type { McpClient } from '@/agents/mcp'
 
 /** The substrate to build an AgentContext from — only `runtime`/`payload`/`tenantId`/`mcp` are required. */
 export interface AgentContextSpec {

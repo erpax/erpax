@@ -9,7 +9,7 @@
 
 import { describe, it, expect } from 'vitest'
 import type { CollectionBeforeChangeHook } from 'payload'
-import { enforceSaleImmutability } from '@/sale/sale-immutability'
+import { enforceSaleImmutability } from './sale-immutability'
 
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
 

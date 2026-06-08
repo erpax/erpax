@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createVendorBillAction } from '@/dashboard/actions';
-import Modal from '@/modal/Modal';
+import Modal from './Modal';
 
 interface CreateBillModalProps {
   onClose: () => void;

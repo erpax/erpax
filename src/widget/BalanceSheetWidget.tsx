@@ -9,7 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '@/dashboard';
-import type { BalanceSheetData } from '@/analytics/types';
+import type { BalanceSheetData } from '@/analytics';
 
 interface BalanceSheetWidgetProps {
   data: BalanceSheetData | null;

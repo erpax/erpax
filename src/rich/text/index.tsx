@@ -28,7 +28,7 @@ import type {
   BannerBlock as BannerBlockProps,
   CallToActionBlock as CTABlockProps,
   MediaBlock as MediaBlockProps,
-} from '@/payload-types'
+} from '@/types'
 import { BannerBlock } from '@/blocks/banner/Component'
 import { CallToActionBlock } from '@/blocks/call/to/action/Component'
 import { codedFromRegistry, ERR } from '@/error'

@@ -11,7 +11,7 @@ import {
   type DriveFile,
   type Person,
   type SheetTxnRow,
-} from '@/google/workspace/fusion-transforms'
+} from './fusion-transforms'
 
 const TENANT = 'tenant-uuid-1'
 /** RFC 9562 §5.8 — version nibble 8, variant 0b10 (8|9|a|b). */

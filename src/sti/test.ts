@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { isSubTypeOf, SCHEMA_ORG_PARENT, toJsonLd } from '@/sti/schema-org'
+import { isSubTypeOf, SCHEMA_ORG_PARENT, toJsonLd } from './schema-org'
 
 describe('schema-org — one node hosts the type graph, projected to JSON-LD', () => {
   it('projects a typed node: @context + @type + @id + properties', () => {

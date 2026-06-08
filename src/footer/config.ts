@@ -11,9 +11,9 @@
 
 import type { GlobalConfig } from 'payload'
 
-import { link } from '@/link/field'
+import { link } from '@/link'
 import { localeRecord } from '@/i18n'
-import { revalidateFooter } from '@/footer/hook/revalidateFooter'
+import { revalidateFooter } from './hook/revalidateFooter'
 
 export const Footer: GlobalConfig = {
   slug: 'footer',

@@ -1,14 +1,14 @@
 import type { StateField } from '@payloadcms/plugin-form-builder/types'
 import type { Control, FieldErrorsImpl } from 'react-hook-form'
 
-import { Label } from '@/ui/label'
+import { Label } from '@/ui'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/ui/select'
+} from '@/ui'
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import { Controller } from 'react-hook-form'

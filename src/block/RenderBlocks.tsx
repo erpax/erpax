@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import type { Page } from '@/payload-types'
+import type { Page } from '@/types'
 
 import { ArchiveBlock } from '@/blocks/archive/block/Component'
 import { CallToActionBlock } from '@/blocks/call/to/action/Component'

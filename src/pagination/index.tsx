@@ -17,7 +17,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from '@/ui/pagination'
+} from '@/ui'
 import { cn } from '@/ui'
 import { useRouter } from '@/i18n/routing'
 import React from 'react'

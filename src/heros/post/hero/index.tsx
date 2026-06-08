@@ -1,9 +1,9 @@
 import { formatDateTime } from '@/iso/8601'
 import React from 'react'
 
-import type { Post } from '@/payload-types'
+import type { Post } from '@/types'
 
-import { Media } from '@/media/Component'
+import { Media } from '@/media'
 import { formatAuthors } from '@/format/author'
 import { getTranslations } from 'next-intl/server'
 

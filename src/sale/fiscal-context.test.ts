@@ -10,7 +10,7 @@
 
 import { describe, it, expect, vi } from 'vitest'
 import type { Payload } from 'payload'
-import { resolveFiscalContext } from '@/sale/fiscal-context'
+import { resolveFiscalContext } from './fiscal-context'
 
 type DeviceFixture = {
   individualNumber?: string

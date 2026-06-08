@@ -5,7 +5,7 @@
  * @standard ISO 20022 + ECB FX-rates
  * @feature data_analytics
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
 
 export const DataAgent: DomainAgent = {

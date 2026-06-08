@@ -13,7 +13,7 @@ import { z } from 'zod'
 import type { Where } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
-import { createAgentContext } from '@/agent/context'
+import { createAgentContext } from '@/agent'
 import { getActorId } from '@/auth'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })

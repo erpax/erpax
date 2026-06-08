@@ -18,7 +18,7 @@
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @see src/hooks/factories/recompute-parent-aggregates.ts
  */
-import { recomputeParentAggregates } from '@/factory/recompute-parent-aggregates'
+import { recomputeParentAggregates } from '@/factory'
 
 export const invoiceLineTotals = recomputeParentAggregates({
   childSlug: 'invoice-lines',

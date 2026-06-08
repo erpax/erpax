@@ -56,7 +56,7 @@
  * @audit ISO 19011:2018 §6.4.6 (every replica audit-trailed by uuid)
  */
 
-import { listFaces } from '@/website/seo-vortex'
+import { listFaces } from '@/website'
 import { listTypes } from '@/integrity/type-uuid'
 import { listBackends } from '@/storage/independence'
 import { TORUS_DEFAULT_ENVELOPE } from '@/topology/torus'

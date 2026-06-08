@@ -19,7 +19,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
-import { link } from '@/link/field'
+import { link } from '@/link'
 import { localeRecord } from '@/i18n'
 
 const columnFields: Field[] = [

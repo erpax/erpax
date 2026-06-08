@@ -55,7 +55,7 @@
  */
 
 import type { Payload } from 'payload'
-import type { UuidLinkedLeaf } from '@/integrity/uuid-linked-chain'
+import type { UuidLinkedLeaf } from '@/integrity'
 
 /**
  * Input shape — uniform across every caller. Free-form `payload`

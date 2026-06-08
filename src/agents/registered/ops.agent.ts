@@ -5,7 +5,7 @@
  * @standard ISO 41001 facility-management + ISO 55000 asset-management
  * @feature operations
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent/types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
 
 export const OpsAgent: DomainAgent = {

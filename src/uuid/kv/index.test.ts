@@ -24,7 +24,7 @@ import {
   toUuidMap,
   resolveKeyUuid,
 } from '@/uuid/kv'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 
 // Phantom shapes for type-branding compile-time clarity.
 interface Currency { code: string }

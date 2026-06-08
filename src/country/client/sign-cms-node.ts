@@ -24,7 +24,7 @@
  * @see ./bg-pades-signer.ts
  */
 
-import type { BgPadesSignerConfig } from '@/country/client/bg-pades-signer'
+import type { BgPadesSignerConfig } from './bg-pades-signer'
 
 /**
  * Build a default `signCms` adapter from a per-tenant cert/key pair.

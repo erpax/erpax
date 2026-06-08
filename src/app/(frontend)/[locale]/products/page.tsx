@@ -17,7 +17,7 @@ import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
 
-import type { Product } from '@/payload-types'
+import type { Product } from '@/types'
 import { buildPublishedProductsWhere } from '@/site/tenant/where'
 import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
 import { getProductPrice, formatProductPrice } from '@/product/price'

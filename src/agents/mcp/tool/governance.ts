@@ -21,7 +21,7 @@ import {
   verifyGovernance,
 } from '@/uuid/governance'
 import type { ChainLink, LinkStore } from '@/uuid/chain'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 import { SLOT_TAGS, CAPABILITIES, type SlotTag } from '@/uuid/format'
 import { assertTenantMatch } from '@/agents/mcp/tool/_guards'
 

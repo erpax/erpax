@@ -9,7 +9,7 @@
  */
 
 import { extractCorpus } from '@/spec/generator'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { BUSINESS_CHAINS } from '@/business/chain'
 
 export interface ErpaxMcpResource {
   readonly name: string

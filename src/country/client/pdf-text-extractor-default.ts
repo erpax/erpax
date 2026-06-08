@@ -21,7 +21,7 @@
  * @see ./bg-bank-statement-pdf.ts (PdfTextExtractor consumer interface)
  */
 
-import type { PdfTextExtractor } from '@/country/client/bg-bank-statement-pdf'
+import type { PdfTextExtractor } from './bg-bank-statement-pdf'
 
 /**
  * Default extractor backed by `pdf-parse`. Returns the joined per-page

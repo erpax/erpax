@@ -18,8 +18,8 @@
  * @audit Conservation Law 53 self-referential-closure (pending reconciliation)
  */
 import { describe, it, expect, vi } from 'vitest'
-import { writeAuditEvent } from '@/audit/trail/write-audit-event'
-import type { UuidLinkedLeaf } from '@/integrity/uuid-linked-chain'
+import { writeAuditEvent } from './write-audit-event'
+import type { UuidLinkedLeaf } from '@/integrity'
 
 function fakePayload(opts: {
   createImpl?: (args: { collection: string; data: Record<string, unknown> }) => Promise<unknown>

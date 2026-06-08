@@ -12,9 +12,9 @@
 
 import type { GlobalConfig } from 'payload'
 
-import { link } from '@/link/field'
+import { link } from '@/link'
 import { localeRecord } from '@/i18n'
-import { revalidateHeader } from '@/header/hook/revalidateHeader'
+import { revalidateHeader } from './hook/revalidateHeader'
 
 export const Header: GlobalConfig = {
   slug: 'header',

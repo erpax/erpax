@@ -10,7 +10,7 @@
  * @see docs/STANDARDS.md §4.3
  */
 
-import type { Config } from '@/payload-types'
+import type { Config } from '@/types'
 import type { SupportedLocale } from '@/i18n/localization'
 import { defaultLocale } from '@/i18n/localization'
 import type { Locale, TypedLocale } from 'payload'

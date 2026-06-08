@@ -13,10 +13,10 @@
 
 import { createAgentRegistry } from '@/agent/registry'
 import { createAgentRuntime } from '@/agent/runtime'
-import { buildErpaxMcpTools } from '@/agents/mcp/tool-defs'
-import { createInProcessMcpClient } from '@/agents/mcp/in-process-client'
-import { ERPAX_MCP_RESOURCES } from '@/agents/mcp/resource-defs'
-import { ERPAX_MCP_PROMPTS } from '@/agents/mcp/prompt-defs'
+import { buildErpaxMcpTools } from '@/agents/mcp'
+import { createInProcessMcpClient } from '@/agents/mcp'
+import { ERPAX_MCP_RESOURCES } from '@/agents/mcp'
+import { ERPAX_MCP_PROMPTS } from '@/agents/mcp'
 // Side-effect imports — register the erpax-platform self-tenant role + load
 // the rest of the substrate primitives so they're available at boot.
 import '@/self/reference'

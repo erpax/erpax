@@ -16,21 +16,21 @@ import type { InvariantResult, InvariantContext } from '@/architecture/invariant
 import { norm } from '@/corpus/index.mts'
 
 import { FEATURE_REGISTRY, TIERS, featuresForTier, type Tier } from '@/feature/registry'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
-import { SCHEDULED_TASKS } from '@/scheduled/task/registry'
-import { cronMatchesMinute } from '@/scheduled/task/runner'
+import { BUSINESS_CHAINS } from '@/business/chain'
+import { SCHEDULED_TASKS } from '@/scheduled/task'
+import { cronMatchesMinute } from '@/scheduled/task'
 import { ROLES_REGISTRY, ROLE_IDS } from '@/roles/registry'
-import { agentRegistry } from '@/agent/bootstrap'
+import { agentRegistry } from '@/agent'
 import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/integrity'
 import { UUID_MATRIX_NODES, UUID_MATRIX_EDGES } from '@/uuid/matrix'
 import { digitalRoot } from '@/horo'
 import { collectGenome, computeGenomeUuid } from '@/cloning'
 import { checkErpaxObservesItself } from '@/self/reference'
-import { listFaces, checkSeoVortexCoupling } from '@/website/seo-vortex'
+import { listFaces, checkSeoVortexCoupling } from '@/website'
 import { verifyAggregate, checkNoDoubleVoting, listBallots } from '@/voting'
 import { ruleOfLawHolds, constitutionalCode } from '@/legislation'
-import { checkRegistryCoupling } from '@/agent/blocks'
+import { checkRegistryCoupling } from '@/agent'
 import { checkWindowCoherence, checkStreamUuidChain, makeStream, type ClockedEvent } from '@/stream'
 import { checkStorageIndependence, consensusRead, memoryPut } from '@/storage/independence'
 // Slice CCCCCCC cleanup: break the import cycle by lazily loading
@@ -38,17 +38,17 @@ import { checkStorageIndependence, consensusRead, memoryPut } from '@/storage/in
 // chain checks → tool-defs → dry-proof → architecture-invariants →
 // checks would otherwise leave undefined exports at module-load.
 // Type-only imports stay static (no runtime cycle).
-import { checkAutoGenerationCoverage } from '@/agents/mcp/auto-generated'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
-import { checkMcpToolStandardization } from '@/agents/mcp/standardization'
-import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/agents/mcp/presentation'
-import { checkMcpRebuildableFromSource } from '@/agents/mcp/rebuild-from-source'
-import { checkMcpSelfTestable } from '@/agents/mcp/self-test'
-import { checkMcpDryCleanliness } from '@/agents/mcp/dry-clean'
+import { checkAutoGenerationCoverage } from '@/agents/mcp'
+import type { ErpaxMcpTool } from '@/agents/mcp'
+import { checkMcpToolStandardization } from '@/agents/mcp'
+import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/agents/mcp'
+import { checkMcpRebuildableFromSource } from '@/agents/mcp'
+import { checkMcpSelfTestable } from '@/agents/mcp'
+import { checkMcpDryCleanliness } from '@/agents/mcp'
 import { checkPwaUuidIntegrity } from '@/pwa'
 
 async function loadMcpTools(): Promise<ReadonlyArray<ErpaxMcpTool>> {
-  const m = await import('@/agents/mcp/tool-defs')
+  const m = await import('@/agents/mcp')
   return m.buildErpaxMcpTools(agentRegistry)
 }
 import { checkTorusBounded } from '@/topology/torus'
@@ -59,12 +59,12 @@ async function loadCheckDryProofPublished(origin: string) {
   return m.checkDryProofPublished(origin)
 }
 import { checkAgentLawCoverage } from '@/architecture/invariant/by-agent'
-import { checkUuidShortDisplay } from '@/integrity/uuid-short'
-import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/integrity/type-uuid'
-import { checkInfiniteFiniteness } from '@/integrity/uuid-stream'
+import { checkUuidShortDisplay } from '@/integrity'
+import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/integrity'
+import { checkInfiniteFiniteness } from '@/integrity'
 import { checkDimensionalCoverage } from '@/plugin/dimensions'
 import { checkDimensionalPluginScaffolded } from '@/dimension'
-import { computeContentUuid as _computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid as _computeContentUuid } from '@/integrity'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -2348,7 +2348,7 @@ export async function checkReplicationConsensusProbe(_ctx: InvariantContext): Pr
   const tenantId = 'probe-tenant'
   // Use a deterministic synthetic object so the uuid is reproducible.
   const obj = { tenantId, kind: 'replication', payload: { value: 'fixed-payload' } }
-  const { computeContentUuid } = await import('@/integrity/content-uuid')
+  const { computeContentUuid } = await import('@/integrity')
   const uuid = computeContentUuid(obj as Record<string, unknown>, tenantId)
   memoryPut(collection, { ...obj, uuid })
   const cr = await consensusRead({ collection, uuid, tenantId, minAgreement: 1 })

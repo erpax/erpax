@@ -1,4 +1,4 @@
-import type { User } from '@/payload-types'
+import type { User } from '@/types'
 import type { Access, Where } from 'payload'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 

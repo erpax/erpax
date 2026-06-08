@@ -10,7 +10,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import type { Payload } from 'payload'
 import type { EventEmitterService } from '@/event/emitter.service'
-import { createReceiptForSale, wireReceiptSubscriber, __resetReceiptSubscriberForTests } from '@/sale/receipt-subscriber'
+import { createReceiptForSale, wireReceiptSubscriber, __resetReceiptSubscriberForTests } from './receipt-subscriber'
 
 const SALE = {
   id: 'sale-1',

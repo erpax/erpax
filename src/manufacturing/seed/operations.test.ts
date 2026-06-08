@@ -8,7 +8,7 @@ import {
   PAY_BAND,
   totalObservedPhases,
   type Operation,
-} from '@/manufacturing/seed/operations'
+} from './operations'
 
 describe('manufacturing/seeds/operations — the etrima vocabulary, harmonised with the standards', () => {
   it('every operation is fully classified — code + ISCO-08 + ISA-95 + UoM (no bare untyped string)', () => {

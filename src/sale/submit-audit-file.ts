@@ -17,8 +17,8 @@ import {
   toSalesAuditXml,
   type SalesAuditReport,
   type SalesAuditInput,
-} from '@/sale/audit-file'
-import { vatTotalForItems } from '@/sale/fiscal-receipt'
+} from './audit-file'
+import { vatTotalForItems } from './fiscal-receipt'
 
 interface SaleRow {
   unp?: unknown

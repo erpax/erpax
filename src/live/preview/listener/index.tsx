@@ -7,7 +7,7 @@
  * @rfc 9110 http-semantics
  * @see src/components/README.md
  */
-import { getClientSideURL } from '@/rfc/3986/get-url'
+import { getClientSideURL } from '@/rfc/3986'
 import { RefreshRouteOnSave as PayloadLivePreview } from '@payloadcms/live-preview-react'
 import { useRouter } from 'next/navigation'
 import React from 'react'

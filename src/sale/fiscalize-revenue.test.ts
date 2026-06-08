@@ -10,7 +10,7 @@
 
 import { describe, it, expect, vi } from 'vitest'
 import type { Payload } from 'payload'
-import { fiscalizeRevenue, reverseRevenueFiscalization, type RevenueInput } from '@/sale/fiscalize-revenue'
+import { fiscalizeRevenue, reverseRevenueFiscalization, type RevenueInput } from './fiscalize-revenue'
 
 const INPUT: RevenueInput = {
   sourceType: 'order',

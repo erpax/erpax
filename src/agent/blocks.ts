@@ -41,7 +41,7 @@
  */
 
 import type { DomainAgent, AgentId, AgentRegistry, AgentEffect } from '@/agent/types'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { BUSINESS_CHAINS } from '@/business/chain'
 
 export type BlockCategory =
   | 'commerce' | 'accounting' | 'risk' | 'people'

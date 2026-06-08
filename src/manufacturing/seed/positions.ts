@@ -20,7 +20,7 @@
  * @standard SFIA 8 responsibility-levels (1..7) — the autonomy axis (positions service)
  * @audit derived from etrima_production.positions — codes + pay not re-typed
  */
-import { PAY_BAND } from '@/manufacturing/seed/operations'
+import { PAY_BAND } from './operations'
 
 export interface SeedPosition {
   /** 8-digit Bulgarian НКПД code (the national reference key). */

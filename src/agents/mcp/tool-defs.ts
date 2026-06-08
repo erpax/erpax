@@ -50,7 +50,7 @@ import {
   generateMultimediaForWorkflow, generateMarketingPage,
 } from '@/spec/generator'
 import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { BUSINESS_CHAINS } from '@/business/chain'
 import { getTradingApis, getTradingApisByCategory, type TradingApiCategory } from '@/config/trading-apis'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/integrity'
 // `@/cloning` is imported for TYPES ONLY at module scope (erased at runtime). Its
@@ -72,13 +72,13 @@ import { tenantPins } from '@/archival'
 import { listProposals } from '@/meta/automation'
 import { listAgentCapabilities } from '@/beyond'
 import { seedFromE2e, seedFromSpec, exportMediaBundle, importMediaBundle } from '@/website'
-import { deriveSeoMeta, generateChannelVariants, reviewBrandVoice, auditSeo, buildOnboardingDrip, checkMarketingTransparency, ERPAX_MARKETING_STRATEGY } from '@/website/marketing-skills'
+import { deriveSeoMeta, generateChannelVariants, reviewBrandVoice, auditSeo, buildOnboardingDrip, checkMarketingTransparency, ERPAX_MARKETING_STRATEGY } from '@/website'
 import {
   registerFace, listFaces, crossLink, renderJsonLd, renderOgMeta,
   generateSitemap, generateRobots, checkSeoVortexCoupling, bitemporalAnchor,
   validateMicrodata, type SeoVortexFace, type SchemaType, type OgType,
-} from '@/website/seo-vortex'
-import { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents, type SiteSurface } from '@/website/shadcn-components'
+} from '@/website'
+import { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents, type SiteSurface } from '@/website'
 import {
   createBallot, castVote, computeAggregate, verifyAggregate,
   listBallots, listVotes, exportBallotBundle,
@@ -88,7 +88,7 @@ import {
   buildBlockCatalog, manifestOf, composeBlocks, validateComposition,
   chainBlocks, checkRegistryCoupling, chainsAsBlockCompositions,
   type AgentBlockManifest,
-} from '@/agent/blocks'
+} from '@/agent'
 import {
   makeStream, tumblingWindow,
   checkWindowCoherence, checkStreamUuidChain,
@@ -112,7 +112,7 @@ import {
   buildShareTools, buildFormatTools, buildGovernanceTools, buildErrorTools,
   buildBatchTools, buildVersionsTools,
 } from '@/agents/mcp/tool'
-import { wrapToolsWithTenantGuard } from '@/agents/mcp/tool/_guards'
+import { wrapToolsWithTenantGuard } from '@/agents/mcp/tool'
 import { nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest, UUID_MATRIX_NODES } from '@/uuid/matrix'
 // ── the quantum-leap atoms, wired onto the live MCP matrix surface (the society's tool) ──
 import { leap as quantumLeap } from '@/leap'
@@ -217,23 +217,23 @@ import { uploadTestArtifacts } from '@/capture/media'
 import * as allCollections from '@/collections'
 import {
   LAW_CATALOG, buildAgentLawProfile, buildAllAgentLawProfiles, checkAgentLawCoverage,
-} from '@/architecture/invariant/by-agent'
+} from '@/architecture/invariant'
 import {
   shortUuid, parseShortUuid, lookupShort, displayUuid,
   checkUuidShortDisplay, SHORT_UUID_POLICY, type ShortUuidKind,
-} from '@/integrity/uuid-short'
+} from '@/integrity'
 import {
   computeTypeUuid, registerType,
   getType, getTypeByUuid, listTypes, verifyType, ensureBaselineTypesRegistered,
   checkTypeUuidCoverage, type TypeDescriptor,
-} from '@/integrity/type-uuid'
+} from '@/integrity'
 import {
   recordUuid, queryUuidStream, snapshotFromRegistries,
   buildInfiniteFinitenessReport, checkInfiniteFiniteness, type UuidSource,
-} from '@/integrity/uuid-stream'
+} from '@/integrity'
 import {
   TRINITY, trinityGrouping, trinityForPriorLaw, rollUpToTrinity,
-} from '@/architecture/invariant/trinity'
+} from '@/architecture/invariant'
 import {
   DIMENSIONAL_PLUGINS, checkDimensionalCoverage, dimensionForCollection,
   totalCollectionCount,
@@ -241,9 +241,9 @@ import {
 import {
   DIMENSION_PLUGIN_FACTORIES, allDimensionalPlugins, checkDimensionalPluginScaffolded,
 } from '@/dimension'
-import { computeContentUuid } from '@/integrity/content-uuid'
-import type { AgentRegistry } from '@/agent/types'
-import { createAgentContext } from '@/agent/context'
+import { computeContentUuid } from '@/integrity'
+import type { AgentRegistry } from '@/agent'
+import { createAgentContext } from '@/agent'
 import {
   planSelfResearch,
   securingGrant,

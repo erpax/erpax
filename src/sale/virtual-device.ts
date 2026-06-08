@@ -18,7 +18,7 @@
  * @see src/services/sales/fiscal-receipt.ts · src/services/sales/submit-audit-file.ts
  */
 
-import type { FiscalDeviceDriver, FiscalReceipt } from '@/sale/fiscal-receipt'
+import type { FiscalDeviceDriver, FiscalReceipt } from './fiscal-receipt'
 
 export interface ElectronicReceipt {
   /** The unique sales number (УНП) — the receipt's regulatory identifier. */

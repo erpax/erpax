@@ -9,7 +9,7 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from 'vitest'
-import { seedSubscriptionPlans, getOrCreatePlan } from '@/seeding/seedSubscriptionPlans'
+import { seedSubscriptionPlans, getOrCreatePlan } from './seedSubscriptionPlans'
 import type { TenantConfig } from '@/config/types'
 import type { Payload } from 'payload'
 

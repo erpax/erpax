@@ -66,8 +66,8 @@
  * @see ./index.ts (resolveCurrency, realtimeRate — consumers of this bridge)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
+import type { ContentUuid } from '@/integrity'
 import { resolveCurrency } from '@/currency/fallback'
 
 /**

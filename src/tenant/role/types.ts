@@ -16,7 +16,7 @@
  * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
  */
 
-import type { AgentId } from '@/agent/types'
+import type { AgentId } from '@/agent'
 
 export type AuditCadence = 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual'
 

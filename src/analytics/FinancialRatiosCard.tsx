@@ -1,5 +1,5 @@
 import React from 'react';
-import { FinancialAnalysisEngine } from '@/accounting/financial-analysis';
+import { FinancialAnalysisEngine } from '@/accounting';
 import type { AccountLine, BalanceSheetData, IncomeStatementData } from '@/analytics/types';
 
 /**

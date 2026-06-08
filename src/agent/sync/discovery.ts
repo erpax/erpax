@@ -21,7 +21,7 @@
  * @audit Conservation Law 8 content-uuid · Law 62 coverage (each fill ↑ coverage)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 import type { ErpaxEvent } from '@/agent/sync'
 import type { DomainEvent } from '@/agent/types'
 

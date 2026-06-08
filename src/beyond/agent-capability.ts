@@ -28,7 +28,7 @@
  * @standard EU AI Act Art. 14 human-oversight (role-bound oversight)
  */
 
-import type { AgentId, DomainAgent } from '@/agent/types'
+import type { AgentId, DomainAgent } from '@/agent'
 
 /** What an agent is licensed to do. Wildcards: '*' = any, 'collection.*' = any field. */
 export interface AgentCapability {

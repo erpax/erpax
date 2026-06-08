@@ -19,8 +19,8 @@
  * @see src/services/integrity/content-uuid.ts — computeContentUuid
  */
 import { computeContentUuid } from '@/integrity'
-import type { WorkspaceServiceId } from '@/google/workspace/registry'
-import { workspaceApi } from '@/google/workspace/registry'
+import type { WorkspaceServiceId } from './registry'
+import { workspaceApi } from './registry'
 
 /** A raw external Workspace resource, before fusion. */
 export interface WorkspaceResource {

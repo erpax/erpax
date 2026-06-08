@@ -9,7 +9,7 @@
 
 import { describe, it, expect, vi } from 'vitest'
 import type { Payload } from 'payload'
-import { collectSales, submitSalesAuditFile } from '@/sale/submit-audit-file'
+import { collectSales, submitSalesAuditFile } from './submit-audit-file'
 
 const DOCS = [
   { unp: '12345678-0042-0000001', fiscalDeviceNumber: '12345678', operatorCode: '0042', saleDate: '2026-04-10T09:00:00Z', total: 500_00, status: 'closed' },

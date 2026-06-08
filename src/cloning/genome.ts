@@ -13,8 +13,8 @@
 
 import { computeContentUuid } from '@/integrity'
 import { extractCorpus } from '@/spec/generator'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
-import { agentRegistry, erpaxMcpTools } from '@/agent/bootstrap'
+import { BUSINESS_CHAINS } from '@/business/chain'
+import { agentRegistry, erpaxMcpTools } from '@/agent'
 import { listTenantRoles } from '@/tenant/role'
 import type { CollectionSpec, SpecStandard } from '@/spec/generator'
 

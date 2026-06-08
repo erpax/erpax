@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { POSITIONS, iscoOf, positionHarmonic, type SeedPosition } from '@/manufacturing/seed/positions'
-import { PAY_BAND } from '@/manufacturing/seed/operations'
+import { POSITIONS, iscoOf, positionHarmonic, type SeedPosition } from './positions'
+import { PAY_BAND } from './operations'
 
 describe('manufacturing/seeds/positions — the real ladder, ISCO-08 anchored from НКПД', () => {
   it('the ISCO-08 unit group is the first 4 digits of the 8-digit НКПД code', () => {

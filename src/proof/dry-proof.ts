@@ -39,11 +39,11 @@
  * @audit ISO/IEC 27001 §A.18.2 (independent review of conformance)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
-import { registerFace, listFaces, type SeoVortexFace } from '@/website/seo-vortex'
+import { computeContentUuid } from '@/integrity'
+import { registerFace, listFaces, type SeoVortexFace } from '@/website'
 import { runAllInvariants, type InvariantContext, type InvariantSuiteResult } from '@/architecture/invariant'
-import { selfTestAll, type SelfTestSuite } from '@/agents/mcp/self-test'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import { selfTestAll, type SelfTestSuite } from '@/agents/mcp'
+import type { ErpaxMcpTool } from '@/agents/mcp'
 import { crackVerdict } from '@/tamper/cost'
 import { matrixDigest } from '@/uuid/matrix'
 import { verifyBitcoinGenesis, type BitcoinGenesisProof } from '@/proof/bitcoin/genesi'

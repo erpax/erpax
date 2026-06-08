@@ -1,5 +1,5 @@
 import type { Payload } from 'payload'
-import type { Standard } from '@/payload-types'
+import type { Standard } from '@/types'
 import { STANDARDS_CATALOGUE } from './catalogue'
 
 /**

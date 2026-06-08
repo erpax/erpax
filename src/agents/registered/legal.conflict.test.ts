@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-import type { DomainEvent } from '@/agent/types'
-import { CONFLICT_EMIT, CONFLICT_TRIGGER, planConflictEffects } from '@/agents/registered/legal.conflict'
+import type { DomainEvent } from '@/agent'
+import { CONFLICT_EMIT, CONFLICT_TRIGGER, planConflictEffects } from './legal.conflict'
 
 const ev = (payload: Record<string, unknown>): DomainEvent => ({
   id: CONFLICT_TRIGGER,

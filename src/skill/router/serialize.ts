@@ -5,7 +5,7 @@
  * after the access check.
  */
 
-import type { SkillNode, SkillFormat } from '@/skill/router/resolve'
+import type { SkillNode, SkillFormat } from './resolve'
 
 /** What the endpoint should emit: an inline body, or a redirect. */
 export type Served =

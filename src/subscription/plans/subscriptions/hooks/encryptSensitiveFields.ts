@@ -1,6 +1,6 @@
 import { CollectionBeforeChangeHook, CollectionAfterReadHook } from 'payload'
 import { encryptFields, decryptFields } from '@/nist/sp/800/38'
-import type { Subscription } from '@/payload-types'
+import type { Subscription } from '@/types'
 
 /**
  * Encryption hooks for Subscriptions — encrypt Stripe customer/subscription IDs.

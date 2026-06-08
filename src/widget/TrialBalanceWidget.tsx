@@ -9,7 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '@/dashboard';
-import type { TrialBalanceData } from '@/analytics/types';
+import type { TrialBalanceData } from '@/analytics';
 
 interface TrialBalanceWidgetProps {
   data: TrialBalanceData | null;

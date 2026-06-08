@@ -18,7 +18,7 @@
  *
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
-import { resolveSkill, type ParsedRequest, type ResolveResult, type SkillNode } from '@/skill/router/resolve'
+import { resolveSkill, type ParsedRequest, type ResolveResult, type SkillNode } from './resolve'
 import { norm } from '@/corpus/index.mts'
 
 export interface Subgraph {

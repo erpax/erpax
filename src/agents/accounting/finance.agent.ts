@@ -25,7 +25,7 @@
 
 import type {
   DomainAgent, AgentContext, AgentEffect, DomainEvent,
-} from '@/agent/types'
+} from '@/agent'
 import type { SpecChainStep } from '@/spec/generator'
 
 const OWNED_COLLECTIONS = [

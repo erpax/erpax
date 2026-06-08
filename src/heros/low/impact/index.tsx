@@ -1,6 +1,6 @@
 import React from 'react'
 
-import type { Page } from '@/payload-types'
+import type { Page } from '@/types'
 
 import RichText from '@/rich/text'
 

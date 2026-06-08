@@ -22,7 +22,7 @@ import {
   GENESIS_PREV_UUID,
   computeChainLinkUuid, forgeGenesisLink, forgeChainLink,
 } from '@/uuid/chain'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })

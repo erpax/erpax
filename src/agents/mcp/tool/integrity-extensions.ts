@@ -27,7 +27,7 @@ import { writeAuditEvent } from '@/audit/trail/write-audit-event'
 import {
   computeTamperReverseCost, meetsThreshold,
   type RegulatoryThreshold,
-} from '@/integrity/tamper-reverse-cost'
+} from '@/integrity'
 import { assertAdminOnTenant } from '@/agents/mcp/tool/_guards'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 

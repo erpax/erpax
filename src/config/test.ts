@@ -18,7 +18,7 @@ import { Roles } from '@/roles'
 import { Tenants } from '@/tenants'
 import { UserRoles } from '@/roles/user/roles'
 import { Users } from '@/users'
-import { SCOPE_BY_COLLECTION } from '@/scope/collectionScopes'
+import { SCOPE_BY_COLLECTION } from '@/scope'
 
 /** Mirrors `collections` order in `payload.config.ts` — keep aligned with `APP_COLLECTION_SLUGS`. */
 const REGISTERED_COLLECTION_CONFIGS = [

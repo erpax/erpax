@@ -35,7 +35,7 @@ import {
   type PadesSignatureDictionary,
   type PadesSignatureDictionaryInput,
 } from '@/etsi/en/319/142'
-import type { BgNapMtlsConfig } from '@/country/client/bg-nap-mtls'
+import type { BgNapMtlsConfig } from './bg-nap-mtls'
 
 export interface ApiResult<T> {
   readonly ok: boolean

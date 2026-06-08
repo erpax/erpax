@@ -11,7 +11,7 @@
  * @see src/components/README.md
  */
 
-import { Button, type ButtonProps } from '@/ui/button'
+import { Button, type ButtonProps } from '@/ui'
 import { cn } from '@/ui'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
@@ -20,7 +20,7 @@ import React from 'react'
 import type { SupportedLocale } from '@/i18n/localization'
 import { supportedLocales } from '@/i18n/localization'
 
-import type { Page, Post } from '@/payload-types'
+import type { Page, Post } from '@/types'
 
 type CMSLinkType = {
   appearance?: 'inline' | ButtonProps['variant']

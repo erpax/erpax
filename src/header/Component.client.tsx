@@ -4,7 +4,7 @@ import { Link } from '@/i18n/routing'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
-import type { Header } from '@/payload-types'
+import type { Header } from '@/types'
 
 import { Logo } from '@/logo/Logo'
 import { HeaderNav } from '@/header/nav'

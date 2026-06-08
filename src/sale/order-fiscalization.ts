@@ -21,7 +21,7 @@ import {
   type FiscalPaymentType,
   type RevenueInput,
   type RevenueItem,
-} from '@/sale/fiscalize-revenue'
+} from './fiscalize-revenue'
 
 interface OrderLine {
   itemId?: string

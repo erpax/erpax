@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, vi } from 'vitest'
-import { validateSaleFiscalRefsHook } from '@/sale/validate-fiscal-refs'
+import { validateSaleFiscalRefsHook } from './validate-fiscal-refs'
 
 type HookArgs = Parameters<ReturnType<typeof validateSaleFiscalRefsHook>>[0]
 

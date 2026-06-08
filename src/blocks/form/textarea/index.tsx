@@ -1,10 +1,10 @@
 import type { TextField } from '@payloadcms/plugin-form-builder/types'
 import type { FieldErrorsImpl, FieldValues, UseFormRegister } from 'react-hook-form'
 
-import { Textarea as TextAreaComponent } from '@/ui/textarea'
+import { Textarea as TextAreaComponent } from '@/ui'
 import React from 'react'
 
-import { FormField } from '@/blocks/form/FormField'
+import { FormField } from '../FormField'
 
 export const Textarea: React.FC<
   TextField & {

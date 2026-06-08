@@ -1,11 +1,11 @@
 import type { SupportedLocale } from '@/i18n/localization'
 
-import { getCachedGlobal } from '@/rfc/9110/get-globals'
+import { getCachedGlobal } from '@/rfc/9110'
 import { Link } from '@/i18n/routing'
 import React from 'react'
 
 import { ThemeSelector } from '@/providers/theme/theme/selector'
-import { CMSLink } from '@/link/Component'
+import { CMSLink } from '@/link'
 import { Logo } from '@/logo/Logo'
 
 export async function Footer({ locale }: { locale: SupportedLocale }) {
