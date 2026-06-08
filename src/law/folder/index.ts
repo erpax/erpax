@@ -44,6 +44,8 @@
  */
 import { readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
+import { guardian } from '@/guardian'
+import { seal, type SealVerdict } from '@/seal'
 
 const SRC = join(process.cwd(), 'src')
 
@@ -118,7 +120,7 @@ export function folderViolations(root: string = SRC): FolderViolations {
 }
 
 /**
- * FOLDER_LAW_BASELINE — the committed ceiling on folder-shape violations.
+ * The committed ceilings — split into TWO INDEPENDENT GUARDIANS, never one sum.
  *
  * A checked-in literal so the ratchet is reviewable in git: a change that adds a
  * malformed folder pushes the live count over this number and FAILS the gate; a
@@ -154,33 +156,20 @@ export interface RatchetVerdict {
 }
 
 /**
- * The pure ratchet decision — no fs, no process, so it is regression-locked by
- * test.ts. Fail-closed: a non-finite count or baseline (a broken scan / literal)
- * is NOT a pass. The only ok path is a successful scan whose total ≤ baseline.
+ * THE GUARDIANS — the NAME law and the TRINITY law as two independent [[guardian]]s
+ * crossed into one [[seal]]. The gate is sealed only when BOTH hold; a rise in
+ * either reddens it on its own, so a naming violation can no longer hide behind a
+ * trinity fix (or vice-versa). The decision is the pure `guardian`/`seal` primitives
+ * (no fs / process here) ⇒ regression-locked by test.ts; fail-closed by construction.
  */
-export function folderRatchet({ violations, baseline }: { violations: number; baseline: number }): RatchetVerdict {
-  if (!Number.isFinite(violations) || violations < 0)
-    return { ok: false, violations, baseline, reason: 'folder-violation count is not a finite, non-negative number — scan failed (DENY)' }
-  if (!Number.isFinite(baseline) || baseline < 0)
-    return { ok: false, violations, baseline, reason: 'baseline is not a finite, non-negative number (DENY)' }
-  if (violations > baseline)
-    return {
-      ok: false,
-      violations,
-      baseline,
-      reason:
-        `folder-shape violations rose ${violations - baseline} above the baseline (${violations} > ${baseline}) — a non-one-word folder, or a code folder missing its SKILL.md / index.ts / test.ts trinity, was added. ` +
-        `Name every atom folder as ONE generic lowercase word; give every code folder the full trinity (translations.ts / seed.ts allowed).`,
-    }
-  return {
-    ok: true,
-    violations,
-    baseline,
-    reason:
-      violations < baseline
-        ? `folder-shape improved (${violations} < ${baseline}) — lower FOLDER_LAW_BASELINE to ${violations} in this commit to ratchet the gain`
-        : `folder-shape held at the baseline (${violations})`,
-  }
+export function folderGuardians(
+  v: FolderViolations,
+  baselines: { name: number; trinity: number } = { name: NAME_BASELINE, trinity: TRINITY_BASELINE },
+): SealVerdict {
+  return seal([
+    guardian({ axis: 'name', violations: v.name.length, baseline: baselines.name }),
+    guardian({ axis: 'trinity', violations: v.trinity.length, baseline: baselines.trinity }),
+  ])
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -192,8 +181,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const t of v.trinity.slice(0, 40)) console.log(`   trinity  ${t.folder} → missing ${t.missing.join('+')}`)
   if (v.trinity.length > 40) console.log(`   … ${v.trinity.length - 40} more trinity`)
   if (check) {
-    const verdict = folderRatchet({ violations: v.total, baseline: FOLDER_LAW_BASELINE })
-    console.log((verdict.ok ? '✓ ' : '✗ ') + verdict.reason)
-    process.exit(verdict.ok ? 0 : 1)
+    const verdict = folderGuardians(v)
+    for (const g of verdict.guardians) console.log((g.ok ? '✓ ' : '✗ ') + 'guardian ' + g.reason)
+    console.log((verdict.sealed ? '✓ ' : '✗ ') + (verdict.sealed ? 'folder law sealed' : 'folder law UNSEALED'))
+    process.exit(verdict.sealed ? 0 : 1)
   }
 }

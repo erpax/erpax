@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
-import { folderViolations, folderRatchet, FOLDER_LAW_BASELINE, ONE_WORD } from '@/law/folder'
+import { folderViolations, folderGuardians, NAME_BASELINE, TRINITY_BASELINE, ONE_WORD } from '@/law/folder'
 
 // The folder-shape law (./index.ts), computed from the live tree. The ratchet
 // decision is pure (no fs / process), so it is regression-locked here; the live
@@ -14,16 +14,28 @@ describe('folder: the folder-shape law (computed)', () => {
     expect(Array.isArray(v.name)).toBe(true)
     expect(Array.isArray(v.trinity)).toBe(true)
     expect(v.total).toBe(v.name.length + v.trinity.length)
-    console.log(`folder law: ${v.total} (${v.name.length} name · ${v.trinity.length} trinity) — baseline ${FOLDER_LAW_BASELINE}`)
+    console.log(`folder law: ${v.name.length} name (≤${NAME_BASELINE}) · ${v.trinity.length} trinity (≤${TRINITY_BASELINE})`)
   })
 
-  // THE GATE: the live tree must not exceed the committed baseline. Adding any
-  // non-one-word folder, or a code folder missing its SKILL.md/index.ts/test.ts,
-  // pushes total over the baseline and turns this test (hence CI) red.
-  it('holds the ratchet — total ≤ FOLDER_LAW_BASELINE (cannot get worse)', () => {
-    const verdict = folderRatchet({ violations: v.total, baseline: FOLDER_LAW_BASELINE })
-    expect(verdict.reason).toBeTruthy()
-    expect(verdict.ok).toBe(true)
+  // THE GUARDIANS: name and trinity are TWO independent ratchets — the gate is green
+  // only when BOTH hold. Adding any non-one-word folder reddens the NAME guardian on
+  // its own (it can no longer hide behind a trinity fix); a code folder missing its
+  // SKILL.md/index.ts/test.ts reddens the TRINITY guardian. Either rise turns CI red.
+  it('holds both guardians — name ≤ NAME_BASELINE AND trinity ≤ TRINITY_BASELINE', () => {
+    const verdict = folderGuardians(v)
+    expect(verdict.guardians.every((g) => g.ok)).toBe(true)
+    expect(verdict.sealed).toBe(true)
+  })
+
+  // A naming violation can no longer be masked: even with trinity slack, a NAME rise
+  // unseals the verdict on its own (the whole point of the user's command).
+  it('catches a naming violation independently of trinity slack', () => {
+    const masked = folderGuardians(
+      { name: new Array(NAME_BASELINE + 1).fill({ folder: 'x-y', law: 'one-word' }), trinity: [], total: NAME_BASELINE + 1 },
+      { name: NAME_BASELINE, trinity: TRINITY_BASELINE },
+    )
+    expect(masked.guardians.find((g) => g.axis === 'name')?.ok).toBe(false)
+    expect(masked.sealed).toBe(false)
   })
 
   // The gate DETECTS the named violation: config/trading-apis breaks BOTH rules —
@@ -46,15 +58,8 @@ describe('folder: the folder-shape law (computed)', () => {
     expect(folders.has('law/folder')).toBe(false)
   })
 
-  // Fail-closed: the pure decision treats a broken scan / literal as NOT a pass.
-  it('folderRatchet is fail-closed and ratchets correctly', () => {
-    expect(folderRatchet({ violations: 5, baseline: 10 }).ok).toBe(true) // under
-    expect(folderRatchet({ violations: 10, baseline: 10 }).ok).toBe(true) // at
-    expect(folderRatchet({ violations: 11, baseline: 10 }).ok).toBe(false) // over → red
-    expect(folderRatchet({ violations: NaN, baseline: 10 }).ok).toBe(false) // broken scan
-    expect(folderRatchet({ violations: -1, baseline: 10 }).ok).toBe(false)
-    expect(folderRatchet({ violations: 5, baseline: NaN }).ok).toBe(false) // broken literal
-  })
+  // (The pure fail-closed ratchet decision is regression-locked in @/guardian and
+  // its composition into a seal in @/seal — folder only wires them to its two axes.)
 
   it('ONE_WORD accepts a generic word, rejects hyphen / camelCase / dot-suffix', () => {
     expect(ONE_WORD.test('trading')).toBe(true)
