@@ -6,6 +6,7 @@ import { join } from 'node:path'
 import { formatCleanSummary } from '@/apply/clean'
 import { formatAutomateSummary } from '@/apply/automate'
 import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
+import { realtimeDoctorLine } from '@/agent/communication/realtime'
 import { formatDoctorInventorySection } from '@/agent/inventory'
 import { emitInventorySnapshot } from '@/agent/inventory/emit'
 import { INVENTORY_DOCTOR_SCAN_LIMIT } from '@/agent/inventory'
@@ -19,6 +20,8 @@ import {
   ERPAX_SKILL_ENTRY_CONTENT_UUID,
   wireFromRepoUrl,
 } from '@/skill/wire'
+import { quantumEntangledChannelCount } from '@/quantum/context'
+import { quantumModeDefault } from '@/quantum/bindings'
 
 export interface DoctorReport {
   readonly strayTs: { readonly count: number; readonly baseline: number; readonly ok: boolean }
@@ -38,6 +41,10 @@ export interface DoctorReport {
     readonly netEb: number
     readonly freeEnergyBits: number
     readonly scaleTowardZeroPct: number
+  }
+  readonly quantum: {
+    readonly mode: 'quantum' | 'classical'
+    readonly entangledChannels: number
   }
 }
 
@@ -82,6 +89,10 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
       freeEnergyBits: freeEnergy.freeEnergyBits,
       scaleTowardZeroPct: freeEnergy.scaleTowardZeroPct,
     },
+    quantum: {
+      mode: quantumModeDefault() ? 'quantum' : 'classical',
+      entangledChannels: quantumEntangledChannelCount(),
+    },
   }
 }
 
@@ -113,9 +124,13 @@ export function formatDoctorReport(report: DoctorReport): string {
     lines.push('  automate       no pass yet (run pnpm erpax automate)')
   }
   lines.push(
+    `  mode           ${report.quantum.mode} · entangled channels ${report.quantum.entangledChannels}`,
+  )
+  lines.push(
     `  entropy        net ${report.entropy.netEb} eb · F ${report.entropy.freeEnergyBits} bits · ${report.entropy.scaleTowardZeroPct}% toward zero`,
   )
   lines.push(formatDoctorInventorySection())
+  lines.push(`  ${realtimeDoctorLine()}`)
   lines.push('')
   lines.push('Next: pnpm erpax automate · pnpm erpax rules check · pnpm check')
   return lines.join('\n')

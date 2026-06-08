@@ -118,8 +118,10 @@ export interface FinishedIdeaCrossOpts {
   /** Skip expensive SKILL frontmatter verify inside computed drift check. */
   readonly computedDriftLight?: boolean
   readonly cwd?: string
-  /** When true with cwd, emit literary-word impurity via useCaseOf (lazy rules import). */
+  /** When true with cwd, emit literary-word impurity via caseOf (lazy rules import). */
   readonly literaryWordCheck?: boolean
+  /** When true with cwd, emit classical-mode for poll-only watch loops without subscribe. */
+  readonly classicalModeCheck?: boolean
 }
 
 export { assertEveryPathFollowed, followEveryPath, pathWalkCoverage, type PathFollowVerdict } from '@/path'
@@ -341,8 +343,8 @@ export function finishedIdeaCrossed(
   if (opts?.literaryWordCheck && opts.cwd) {
     try {
       const requireRules = createRequire(import.meta.url)
-      const { useCaseOf } = requireRules('@/rules/word-without-logic') as typeof import('@/rules/word-without-logic')
-      const uc = useCaseOf(atomPath, opts.cwd)
+      const { caseOf } = requireRules('@/rules/word-without-logic') as typeof import('@/rules/word-without-logic')
+      const uc = caseOf(atomPath, opts.cwd)
       if (uc.isLiterary) {
         impurities.push(
           `literary-word: no code logic (${uc.readmeWords} readme words · ${uc.linesOfCode} loc · ${uc.importerCount} importers)`,
@@ -350,6 +352,21 @@ export function finishedIdeaCrossed(
       }
     } catch {
       /* literary scan unavailable — cross continues */
+    }
+  }
+
+  if (opts?.classicalModeCheck && opts.cwd) {
+    if (
+      atomPath === 'quantum' ||
+      atomPath.startsWith('quantum/') ||
+      atomPath === 'agent/communication' ||
+      atomPath === 'agent'
+    ) {
+      const requireQuantum = createRequire(import.meta.url)
+      const { classicalModeWatchViolations } = requireQuantum('@/quantum/context') as typeof import('@/quantum/context')
+      for (const rel of classicalModeWatchViolations(opts.cwd)) {
+        impurities.push(`classical-mode: ${rel} poll-only watch without subscribe`)
+      }
     }
   }
 

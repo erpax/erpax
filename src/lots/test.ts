@@ -3,7 +3,7 @@ import { deriveLotState } from '@/lots'
 import Lots from '@/lots'
 
 // Helper: call the hook with only the data arg (the rest are unused by deriveLotState).
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+ 
 const derive = (data: Record<string, unknown>): Record<string, unknown> =>
   deriveLotState({ data } as any) as Record<string, unknown>
 

@@ -193,7 +193,7 @@ export function importTargetToAtomPath(importTarget: string, atomPaths: Readonly
   return best
 }
 
-/** Scan src for @/ imports — one pass index for useCaseOf. */
+/** Scan src for @/ imports — one pass index for caseOf. */
 export function buildImportIndex(cwd: string = process.cwd()): Map<string, number> {
   const atoms = new Set(listAtomPaths(cwd).filter((p) => p !== '.'))
   const counts = new Map<string, number>()
@@ -236,7 +236,7 @@ export function buildImportIndex(cwd: string = process.cwd()): Map<string, numbe
 }
 
 /** Derive use-case evidence: tests · importers · MCP · SKILL behavior prose. */
-export function useCaseOf(
+export function caseOf(
   atomPath: string,
   cwd: string = process.cwd(),
   importIndex?: ReadonlyMap<string, number>,
@@ -339,7 +339,7 @@ export function wordWithoutLogicViolations(cwd: string = process.cwd()): WordWit
   const violations: WordWithoutLogicViolation[] = []
 
   for (const atomPath of atoms) {
-    const uc = useCaseOf(atomPath, cwd, importIndex)
+    const uc = caseOf(atomPath, cwd, importIndex)
     const kind = classifyKind(uc, atomDir(atomPath, cwd))
     if (!kind) continue
     violations.push({
@@ -364,7 +364,7 @@ export function wordWithoutLogicViolations(cwd: string = process.cwd()): WordWit
   )
 
   const withUseCase = atoms.filter((p) => {
-    const uc = useCaseOf(p, cwd, importIndex)
+    const uc = caseOf(p, cwd, importIndex)
     return !uc.isLiterary && (uc.useCase !== null || uc.hasLogic)
   }).length
 

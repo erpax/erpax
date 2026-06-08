@@ -3,8 +3,8 @@
 
 # 38
 
-path `nist/sp/800/38` · uuid `5d5f341c-08e2-8899-8092-9180dc107ca8` · diamond `73061503-af9c-8f67-a22e-68bf7db42e0d`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `nist/sp/800/38` · uuid `bb7f9408-7bb7-86c9-88d2-7bac7cd6f950` · diamond `090c463f-2794-8e5e-b659-42917af7efff`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports decryptField·decryptFields·encryptField·encryptFields·generateEncryptionKey·isEncrypted · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `eb828353-9469-8c7a-a49d-a0f81a724e02` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f808955-4c02-8fd5-a4dd-d9d782a1f945` · `pnpm readme` · `pnpm computed:check`</sub>

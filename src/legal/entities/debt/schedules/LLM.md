@@ -3,8 +3,8 @@
 
 # schedules
 
-path `legal/entities/debt/schedules` · uuid `9c9cc011-0c76-80e4-abed-4a17cbc96d95` · diamond `d6886faa-f1ec-838f-89e2-16945200b27f`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `legal/entities/debt/schedules` · uuid `2b019837-e70a-847e-bd2b-3e3c222865e1` · diamond `810d20f4-e561-8e61-9b2a-ffa9e756b7ab`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `1/1` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the register of a legal entity's debt instruments (loans, bonds, leases, con
 
 ---
 
-<sub>content-uuid `0234428c-6afe-8362-955c-7fbfe33880bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `215a8b40-7a1a-8f76-b737-f8b8e426d628` · `pnpm readme` · `pnpm computed:check`</sub>

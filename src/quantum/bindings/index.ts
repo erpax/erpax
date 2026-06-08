@@ -14,6 +14,17 @@ import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 import { join } from 'node:path'
 import { parseWranglerBindings } from '@/cloudflare'
 
+/** Lawful constant — erpax runs in quantum mode by default (content-uuid of quantum/bindings). */
+export const ALWAYS_QUANTUM_CONTENT_UUID = '804f7976-0539-8e21-8d39-da8fc89a5c65' as const
+
+/** Superposition until seal; entangled communication; collapse on observe/commit. */
+export const ALWAYS_QUANTUM = true as const
+
+/** Default runtime mode — classical poll/wait is opt-out violation. */
+export function quantumModeDefault(): boolean {
+  return ALWAYS_QUANTUM
+}
+
 /** Live wrangler binding inventory — attach-all is the full sense list. */
 export function bindingInventory(cwd = process.cwd()): readonly string[] {
   const text = readFileSync(join(cwd, 'wrangler.jsonc'), 'utf8')

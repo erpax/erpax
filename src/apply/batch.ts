@@ -4,6 +4,9 @@
 import { execSync } from 'node:child_process'
 import { existsSync, readdirSync, statSync } from 'node:fs'
 import { join, relative, dirname } from 'node:path'
+import { publish, sessionApplyPath, subscribe } from '@/agent/communication/realtime'
+import { quantumModeDefault } from '@/quantum/bindings'
+import { withQuantumContext } from '@/quantum/context'
 import type { SessionLawDomain } from './report'
 
 const SRC = 'src'
@@ -76,14 +79,32 @@ const run = (cmd: string, cwd: string): void => {
 export function applySessionLawBatch(
   batches: readonly string[],
   cwd: string = process.cwd(),
+  opts?: { readonly __quantumWrapped?: boolean },
 ): BatchApplyResult {
+  if (quantumModeDefault() && !opts?.__quantumWrapped) {
+    return withQuantumContext(
+      () => applySessionLawBatch(batches, cwd, { __quantumWrapped: true }),
+      {
+        path: sessionApplyPath(),
+        agentId: 'session:apply',
+        label: `batch:${batches.join(',')}`,
+      },
+    ).result
+  }
+
   const errors: string[] = []
   let hooksRegenerated = false
   let matrixGenerated = false
   let skillUpgraded = 0
   let readmeRegenerated = false
+  const wavePath = sessionApplyPath()
+  const off = subscribe(wavePath, () => undefined)
+  const wave = (phase: string): void => {
+    publish(wavePath, { kind: 'generic', payload: { phase, batch: batches } })
+  }
 
   try {
+    wave('hooks')
     run('node src/path/hooks.registry.mjs --emit', cwd)
     hooksRegenerated = true
   } catch (e) {
@@ -94,6 +115,7 @@ export function applySessionLawBatch(
   const quantumScope = scope.filter((p) => p === 'quantum' || p.startsWith('quantum/'))
 
   if (quantumScope.length > 0 || batches.includes('quantum') || batches.includes('all')) {
+    wave('skill-upgrade')
     try {
       const atomArg =
         quantumScope.length > 0 && quantumScope.length < 200
@@ -112,6 +134,7 @@ export function applySessionLawBatch(
   }
 
   if (batches.some((b) => ['core', 'quantum', 'medical', 'all'].includes(b))) {
+    wave('matrix')
     try {
       run('node src/uuid/matrix/collide.mjs --emit', cwd)
       matrixGenerated = true
@@ -121,6 +144,7 @@ export function applySessionLawBatch(
   }
 
   if (batches.length > 0) {
+    wave('readme')
     try {
       const foldersOnly = batches.includes('all') ? '' : ' --folders-only'
       run(
@@ -133,6 +157,7 @@ export function applySessionLawBatch(
     }
   }
 
+  off()
   return {
     batch: batches,
     hooksRegenerated,

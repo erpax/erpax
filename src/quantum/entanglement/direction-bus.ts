@@ -117,6 +117,11 @@ export function peekDirection(path: string): SealedDirection | null {
   return channelOf(path).latest
 }
 
+/** Active entangled direction channels (one per path with subscribers or history). */
+export function entangledChannelCount(): number {
+  return channels.size
+}
+
 /** Reset all channels — tests only. */
 export function __resetDirectionBusForTests(): void {
   channels.clear()

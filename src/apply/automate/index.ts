@@ -14,10 +14,17 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import {
   automateDirectionPath,
+  bindWatchRealtime,
+  inventoryWatchPath,
+  violationsWatchPath,
+} from '@/agent/communication/realtime'
+import {
   interruptTokenFor,
   isDirectionStale,
   type InterruptToken,
 } from '@/quantum/entanglement/direction-bus'
+import { quantumModeDefault } from '@/quantum/bindings'
+import { withQuantumContext } from '@/quantum/context'
 import { HORO_DIGITS, composeSteps, horoRatio } from '@/horo'
 import { deriveCorpusAnalytics, type CorpusAnalytics } from '@/readme'
 import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
@@ -51,7 +58,7 @@ import {
 } from '../efficiency'
 import { emitEfficiency as emitEfficiencyLedger } from '../emit-efficiency'
 
-export { automateDirectionPath } from '@/quantum/entanglement/direction-bus'
+export { automateDirectionPath } from '@/agent/communication/realtime'
 
 export const AUTOMATE_MANIFEST_REL = join('src', 'apply', 'automate.manifest.generated.json')
 
@@ -130,6 +137,8 @@ export interface AutomateCycleOpts {
   /** Test / partial override — skip live measure for supplied keys. */
   readonly metrics?: Partial<EfficiencyMetrics>
   readonly skipClean?: boolean
+  /** @internal — set by withQuantumContext wrapper */
+  readonly __quantumWrapped?: boolean
 }
 
 export interface AutomateCycleResult {
@@ -152,6 +161,7 @@ export interface MaxEfficiencyLoopOpts {
   readonly cwd?: string
   readonly dryRun?: boolean
   readonly force?: boolean
+  readonly skipClean?: boolean
   readonly maxCycles?: number
   readonly onCycle?: (result: AutomateCycleResult) => void
 }
@@ -221,27 +231,37 @@ export function rulesLightScan(cwd: string = process.cwd()): RulesLightScanResul
   return { axes: scan.axes, totalOverBaseline, fingerprint: scan.fingerprint }
 }
 
+/** Violation headroom from an existing light scan (avoids rescan). */
+export function violationFloorDistanceFromRules(rules: RulesLightScanResult): number {
+  return CLEAN_SCAN_AXES.reduce(
+    (s, axis) => s + Math.max(0, rules.axes[axis].baseline - rules.axes[axis].count),
+    0,
+  )
+}
+
 /** Violation headroom — sum of (baseline − count) on light axes (higher is better). */
 export function violationFloorDistance(cwd: string = process.cwd()): number {
-  const scan = scanCleanAxes(cwd)
-  let dist = 0
-  for (const axis of CLEAN_SCAN_AXES) {
-    const row = scan.axes[axis]
-    dist += Math.max(0, row.baseline - row.count)
-  }
-  return dist
+  return violationFloorDistanceFromRules(rulesLightScan(cwd))
+}
+
+export interface TamperCostOfOpts {
+  readonly violationFloorDistance?: number
+  readonly rules?: RulesLightScanResult
 }
 
 /** Tamper cost from corpus signals — source of truth for workTamperProduct. */
 export function tamperCostOf(
   corpus: CorpusAnalytics,
   cwd: string = process.cwd(),
+  opts: TamperCostOfOpts = {},
 ): TamperCostVerdict {
   const folderCount = Math.max(corpus.folderCount, 1)
   const contentUuidPct = Math.round((corpus.sealed / folderCount) * 1000) / 10
   const sealedPct = contentUuidPct
   const matrixEdges = corpus.meanBondDegree
-  const vfd = violationFloorDistance(cwd)
+  const vfd =
+    opts.violationFloorDistance ??
+    (opts.rules ? violationFloorDistanceFromRules(opts.rules) : violationFloorDistance(cwd))
 
   const uuidNorm = corpus.sealed / folderCount
   const matrixNorm = Math.min(1, matrixEdges / 50)
@@ -278,8 +298,9 @@ export function tamperCostOf(
 export function tamperCostReport(
   corpus: CorpusAnalytics,
   cwd: string = process.cwd(),
+  opts: TamperCostOfOpts = {},
 ): TamperCostReport {
-  const current = tamperCostOf(corpus, cwd)
+  const current = tamperCostOf(corpus, cwd, opts)
   const prior = loadAutomateManifest(cwd)?.tamper.product ?? loadEfficiencyStore(cwd).latest?.workTamperProduct ?? null
   const delta = prior !== null ? Math.round((current.product - prior) * 1000) / 1000 : null
   return {
@@ -288,6 +309,52 @@ export function tamperCostReport(
     delta,
     monotone: delta === null || delta >= 0,
   }
+}
+
+const buildLightCorpus = (
+  inventory: TaskInventory,
+  prior: EfficiencyMetrics | null,
+): CorpusAnalytics => {
+  const folderCount = Math.max(inventory.session.totalAtoms, 1)
+  const sealed = inventory.session.trinity
+  const entropyEb = prior?.entropyEb ?? 0
+  return {
+    folderCount,
+    sealed,
+    balanced: sealed,
+    meanBondDegree: prior ? Math.round(prior.concentrationTopScore * 10) / 10 : 0,
+    totalVariance: 0,
+    withBindings: 0,
+    distinctStandards: 0,
+    byHoro: [],
+    entropy: {
+      unit: 'eb',
+      totalGapEb: Math.max(0, folderCount - sealed),
+      totalSealEb: Math.max(sealed * 2, 1),
+      netEntropyEb: entropyEb,
+      sealGapRatio: sealed / folderCount,
+      sealedMass: sealed,
+      unsealedMass: folderCount - sealed,
+      bySector: [],
+    },
+    quantumThinking: {
+      atomsWithThinking: 0,
+      totalSuperposition: 0,
+      totalCollapse: 0,
+      totalSealUuids: sealed,
+      sealedThinking: sealed,
+      byPartition: [],
+    },
+  }
+}
+
+/** Corpus snapshot for automate — light from inventory + prior store; cold-start falls back once. */
+export function corpusForAutomate(inventory: TaskInventory, cwd: string = process.cwd()): CorpusAnalytics {
+  const prior = loadEfficiencyStore(cwd).latest
+  if (prior?.entropyEb !== undefined && inventory.session.totalAtoms > 0) {
+    return buildLightCorpus(inventory, prior)
+  }
+  return deriveCorpusAnalytics(cwd)
 }
 
 const abortIfStale = (
@@ -300,10 +367,17 @@ const abortIfStale = (
 
 /** One automated pass — abortable on direction stale at every phase boundary. */
 export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult {
+  const agentId = opts.agentId ?? 'apply/automate'
+  const passId = opts.passId ?? 'automate:cycle'
+  if (quantumModeDefault() && !opts.__quantumWrapped) {
+    return withQuantumContext(
+      () => automateCycle({ ...opts, __quantumWrapped: true }),
+      { path: automateDirectionPath(), agentId, label: passId },
+    ).result
+  }
+
   const cwd = opts.cwd ?? process.cwd()
   const dryRun = opts.dryRun !== false
-  const passId = opts.passId ?? 'automate:cycle'
-  const agentId = opts.agentId ?? 'apply/automate'
   const token = opts.token ?? interruptTokenFor(automateDirectionPath(), agentId)
   const started = performance.now()
   const stopHeartbeat = startProgressHeartbeat('erpax automate', 15_000)
@@ -312,8 +386,14 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
   let phase = 'inventory'
 
   const inventory = taskInventory(cwd)
-  for (const hint of inventory.duplicateHints) {
+  const hintCap = 5
+  for (const hint of inventory.duplicateHints.slice(0, hintCap)) {
     process.stderr.write(`automate hint: ${hint}\n`)
+  }
+  if (inventory.duplicateHints.length > hintCap) {
+    process.stderr.write(
+      `automate hint: … +${inventory.duplicateHints.length - hintCap} more duplicates (log only)\n`,
+    )
   }
 
   let stale = abortIfStale(token, phase)
@@ -360,8 +440,8 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
   }
 
   phase = 'measure'
-  const corpus = deriveCorpusAnalytics(cwd)
-  const tamper = tamperCostReport(corpus, cwd)
+  const corpus = corpusForAutomate(inventory, cwd)
+  const tamper = tamperCostReport(corpus, cwd, { rules })
   const violationCount = CLEAN_SCAN_AXES.reduce((s, axis) => s + rules.axes[axis].count, 0)
   const freeEnergy = freeEnergyFromEntropy({
     entropyEb: corpus.entropy.netEntropyEb,
@@ -542,7 +622,7 @@ function abortedResult(
     inventory,
     clean,
     rules,
-    tamper: tamperCostReport(deriveCorpusAnalytics(cwd), cwd),
+    tamper,
     before: snap,
     after: snap,
     ratchet: efficiencyRatchet(loadEfficiencyStore(cwd).latest, snap.metrics),
@@ -570,6 +650,7 @@ export function maxEfficiencyLoop(opts: MaxEfficiencyLoopOpts = {}): void {
       cwd,
       dryRun: opts.dryRun,
       force: opts.force,
+      skipClean: opts.skipClean,
       passId: 'automate:watch',
     })
     opts.onCycle?.(result)
@@ -584,11 +665,14 @@ export function maxEfficiencyLoop(opts: MaxEfficiencyLoopOpts = {}): void {
   tick()
   if (maxCycles <= 1) return
 
-  const id = setInterval(tick, intervalMs)
-  id.unref?.()
+  const { stop } = bindWatchRealtime({
+    paths: [automateDirectionPath(), violationsWatchPath(), inventoryWatchPath()],
+    onSignal: tick,
+    pollMs: intervalMs,
+  })
 
   process.on('SIGINT', () => {
-    clearInterval(id)
+    stop()
     process.stderr.write('\nautomate watch — stopped\n')
     process.exit(0)
   })
@@ -701,14 +785,20 @@ export function runAutomateCli(argv: readonly string[] = process.argv.slice(2)):
   const watch = argv.includes('watch') || argv.includes('--watch')
   const apply = argv.includes('--apply')
   const force = argv.includes('--force')
+  const skipClean = argv.includes('--skip-clean')
   const maxCycles = Number(argv.find((a) => a.startsWith('--max='))?.slice(6) ?? (watch ? Number.POSITIVE_INFINITY : 1))
 
   if (watch) {
-    maxEfficiencyLoop({ dryRun: !apply, force, maxCycles: Number.isFinite(maxCycles) ? maxCycles : undefined })
+    maxEfficiencyLoop({
+      dryRun: !apply,
+      force,
+      skipClean,
+      maxCycles: Number.isFinite(maxCycles) ? maxCycles : undefined,
+    })
     return 0
   }
 
-  const result = automateCycle({ dryRun: !apply, force })
+  const result = automateCycle({ dryRun: !apply, force, skipClean })
   console.log(renderAutomateReport(result))
   if (result.aborted) return 2
   if (!result.tamper.monotone && result.tamper.priorProduct !== null) return 1

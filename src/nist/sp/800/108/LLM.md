@@ -3,7 +3,7 @@
 
 # 108
 
-path `nist/sp/800/108` · uuid `90307b56-db01-829d-996e-006e5366fd32` · diamond `9775656e-641f-88de-aa48-36c082de2494`
+path `nist/sp/800/108` · uuid `dde48729-8858-8170-b00f-5226508edad8` · diamond `4a754b7d-fde2-85d3-900e-496e040cd177`
 horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports deriveSecretFromPayloadSecret·internalSecretPurpose·type · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `45ec57ef-c7e4-8be6-b3fe-9821c0c5773a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `73b3a301-03b6-853c-b282-832d06e1b97c` · `pnpm readme` · `pnpm computed:check`</sub>

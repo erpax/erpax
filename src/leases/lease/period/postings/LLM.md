@@ -3,7 +3,7 @@
 
 # postings
 
-path `leases/lease/period/postings` · uuid `947ca018-5803-8452-a9a8-07c5c11aa29c` · diamond `7fe8e5ec-7e1e-83c2-8c7f-5b0bf4590d32`
+path `leases/lease/period/postings` · uuid `f0e80193-f68b-88eb-aec9-6e7c9f5a710e` · diamond `04216d75-fcd9-8f7e-8605-4e552985f3b2`
 horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
 links `3/3` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3dca81d0-0adb-8428-bb8f-9a7c8871a5ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7178fd6f-e204-8ddc-8f34-b8b7a0d4d03b` · `pnpm readme` · `pnpm computed:check`</sub>

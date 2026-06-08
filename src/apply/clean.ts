@@ -20,14 +20,16 @@ import {
   writeFileSync,
 } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
+import { cleanDirectionPath, subscribe } from '@/agent/communication/realtime'
 import {
-  cleanDirectionPath,
   interruptTokenFor,
   isDirectionStale,
   type InterruptToken,
 } from '@/quantum/entanglement/direction-bus'
+import { quantumModeDefault } from '@/quantum/bindings'
+import { withQuantumContext } from '@/quantum/context'
 
-export { cleanDirectionPath } from '@/quantum/entanglement/direction-bus'
+export { cleanDirectionPath } from '@/agent/communication/realtime'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
 import { computedBaseline } from '@/law/folder/baseline'
 import { concentrationViolations } from '@/rules/concentration'
@@ -114,6 +116,8 @@ export interface DryCleanCycleOpts {
   readonly token?: InterruptToken
   /** Test / partial override — skip live measure for supplied keys. */
   readonly metrics?: Partial<EfficiencyMetrics>
+  /** @internal — set by withQuantumContext wrapper */
+  readonly __quantumWrapped?: boolean
 }
 
 export interface DryCleanCycleResult {
@@ -409,10 +413,17 @@ const shouldSkipScan = (
 
 /** One coordinated dry-clean cycle — abortable on direction stale. */
 export function dryCleanCycle(opts: DryCleanCycleOpts = {}): DryCleanCycleResult {
+  const agentId = opts.agentId ?? 'apply/clean'
+  if (quantumModeDefault() && !opts.__quantumWrapped) {
+    return withQuantumContext(
+      () => dryCleanCycle({ ...opts, __quantumWrapped: true }),
+      { path: cleanDirectionPath(), agentId, label: 'clean:cycle' },
+    ).result
+  }
+
   const cwd = opts.cwd ?? process.cwd()
   const dryRun = opts.dryRun !== false
   const force = opts.force === true
-  const agentId = opts.agentId ?? 'apply/clean'
   const token = opts.token ?? interruptTokenFor(cleanDirectionPath(), agentId)
 
   const priorManifest = loadCleanManifest(cwd)
@@ -648,7 +659,9 @@ export function renderCleanReport(result: DryCleanCycleResult, cwd: string = pro
 export function runCleanCli(argv: readonly string[] = process.argv.slice(2)): number {
   const apply = argv.includes('--apply')
   const force = argv.includes('--force')
+  const off = subscribe(cleanDirectionPath(), () => undefined)
   const result = dryCleanCycle({ dryRun: !apply, force })
+  off()
   console.log(renderCleanReport(result))
   if (result.aborted) return 2
   if (result.apply.errors.length > 0) return 1

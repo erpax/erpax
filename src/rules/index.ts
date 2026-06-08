@@ -242,7 +242,7 @@ export {
 export type { WordMatterViolation, WordMatterKind } from './word-matter'
 export {
   wordWithoutLogicViolations,
-  useCaseOf,
+  caseOf,
   wordWithoutLogicFixSuggestion,
   buildImportIndex,
   isOrphanReexportOnly,

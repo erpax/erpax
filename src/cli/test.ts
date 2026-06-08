@@ -35,6 +35,12 @@ describe('cli/registry — minimal operational surface', () => {
     expect(resolveAction('readme', 'waves')?.cmd).toMatch(/--waves/)
   })
 
+  it('resolves readme paths (--paths flag or action)', () => {
+    expect(resolveAction('readme', 'paths')?.cmd).toMatch(/src\/readme\/index\.ts --paths/)
+    expect(resolveAction('readme', '--paths')?.cmd).toMatch(/src\/readme\/index\.ts --paths/)
+    expect(LEGACY_ALIASES['readme:paths']).toBe('erpax readme paths')
+  })
+
   it('rules check routes through cli wrapper', () => {
     expect(resolveAction('rules', 'check')?.cmd).toBe('__rules_check__')
   })

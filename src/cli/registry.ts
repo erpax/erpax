@@ -25,6 +25,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     check: { desc: 'Verify readme + faces (waves)', cmd: `${TSX} src/readme/index.ts --verify --waves` },
     'check-full': { desc: 'Verify full corpus readme + faces', cmd: `${TSX} src/readme/index.ts --verify` },
     regen: { desc: 'Focused face regen for atom path(s)', cmd: `${TSX} src/readme/regen.ts` },
+    paths: {
+      desc: 'Explicit atom paths only (--paths a,b · also: erpax readme --paths)',
+      cmd: `${TSX} src/readme/index.ts --paths`,
+    },
   },
   lint: {
     default: { desc: 'ESLint whole repo', cmd: `${ESLINT} .` },
@@ -220,6 +224,7 @@ export const LEGACY_ALIASES: Record<string, string> = {
   'readme:check:full': 'erpax readme check-full',
   'readme:check:waves': 'erpax readme check',
   'readme:regen': 'erpax readme regen',
+  'readme:paths': 'erpax readme paths',
   'computed:check': 'erpax readme check-full',
   'lint:src': 'erpax lint src',
   'lint:imports': 'erpax lint imports',
@@ -280,7 +285,10 @@ export const LEGACY_ALIASES: Record<string, string> = {
 export function resolveAction(domain: string, action?: string): CliAction | undefined {
   const d = CLI_REGISTRY[domain]
   if (!d) return undefined
-  if (action) return d[action]
+  if (action) {
+    const key = action.startsWith('--') ? action.slice(2) : action
+    return d[key] ?? d[action]
+  }
   if (d.default) return d.default
   return undefined
 }

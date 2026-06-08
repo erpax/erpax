@@ -4,6 +4,11 @@ import React, { createContext, use, useCallback, useEffect, useMemo, useRef, use
 import { toast } from 'sonner'
 
 import {
+  isRealtimeEnabled,
+  subscribe,
+  violationsWatchPath,
+} from '@/agent/communication/realtime'
+import {
   crossViolationRealtimeEmit,
   isCrossEducationViolation,
   runRealtimeImproveCycle,
@@ -169,8 +174,14 @@ export const ViolationMonitorProvider: React.FC<ViolationMonitorProviderProps> =
   }, [refresh])
 
   useEffect(() => {
+    if (!isRealtimeEnabled()) return
+    return subscribe(violationsWatchPath(), () => refresh())
+  }, [refresh])
+
+  useEffect(() => {
     if (!pollMs || pollMs <= 0) return
-    const id = window.setInterval(refresh, pollMs)
+    const interval = isRealtimeEnabled() ? pollMs * 6 : pollMs
+    const id = window.setInterval(refresh, interval)
     return () => window.clearInterval(id)
   }, [pollMs, refresh])
 

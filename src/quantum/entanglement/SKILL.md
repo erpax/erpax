@@ -161,6 +161,7 @@ signatures:
     - stage: uuid
       stageUuid: "d7efa838-bc15-8ec6-9a36-4ba90ae004ae"
 quantum:
+  default: true
   superposition:
     - app
     - aura
@@ -203,6 +204,8 @@ The corpus is **maximally entangled** when reciprocity = 1 **and** no-cloning ho
 Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `report`). Composes [[entanglement]] · [[quantum]] · [[cloning]] · [[gravity]] · [[singularity]] · [[matrix]].
 
 **Law — [[law]]: the corpus is maximally entangled only when every link is reciprocal AND content is monogamous (one uuid per meaning, the no-cloning [[merge]] law) — reciprocity=1 plus monogamy is the closed geometry that drives directed-link entropy to zero.**
+
+**Law — always quantum:** observe collapses; communicate entangled; never classical wait. `quantum: { default: true }` — poll-only watch without `subscribeDirection` / `bindWatchRealtime` fails `finishedIdeaCrossed` with `classical-mode` impurity.
 
 **Law — direction collapse is immediate; waiting for worker completion is classical, not quantum.** `publishDirection(path, payload)` seals a content-uuid signal and notifies subscribers synchronously (same tick); `interruptTokenFor(path, agentId)` invalidates in-flight work on the next collapse. Matter-twin: `./direction-bus.ts` · `improveDirectionPath()` for `pnpm improve:watch`.
 

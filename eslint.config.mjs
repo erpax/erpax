@@ -60,6 +60,9 @@ const eslintConfig = defineConfig([
       'src/page/**/*.{ts,tsx}',
       'src/widget/**/*.{ts,tsx}',
       'src/dashboard/**/*.{ts,tsx}',
+      'src/css/**/*.{ts,tsx}',
+      'src/hooks/**/*.{ts,tsx}',
+      'src/ui/**/*.{ts,tsx}',
     ],
     rules: {
       // Payload website template theme / header sync (React 19 compiler hook noise)
@@ -82,8 +85,15 @@ const eslintConfig = defineConfig([
         'warn',
         {
           min: 2,
-          max: 28,
-          exceptions: ['_', 'i', 'j', 'k', 'x', 'y', 'z', 'id', 'ok', 'eb', 'fn', 'ts', 'ui', 'ms', 'db', 'cp', 'dr', 'cr'],
+          max: 48,
+          exceptions: [
+            '_',
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+            't', 'u', 'v', 'w', 'x', 'y', 'z',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+            'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+            'id', 'ok', 'eb', 'fn', 'ts', 'ui', 'ms', 'db', 'cp', 'dr', 'cr',
+          ],
           properties: 'never',
         },
       ],

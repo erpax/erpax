@@ -3,7 +3,7 @@
 
 # entries
 
-path `legal/entities/closing/entries` · uuid `f0205628-43e1-894a-a16a-2bf0f0a7913c` · diamond `7d6c014d-75fb-87c8-b82d-b1bdb6207ff2`
+path `legal/entities/closing/entries` · uuid `fa8ec8fc-f8ea-8057-bab8-282051ef26d0` · diamond `ba99520c-b5a8-8726-83b0-80d288b28be8`
 horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/generate/reversing/entry·@/validate/closing/period·@/validate/multi/currency/closing · exports const · escapes —
 links `1/1` · folded `1` · bonds in `34` out `34`
@@ -14,4 +14,4 @@ law period-end close zeroes the P&L accounts to retained earnings, auto-generate
 
 ---
 
-<sub>content-uuid `1f831435-27eb-8dc4-aa0e-184d93482ac5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eca84ccd-e57b-8ce4-bc16-5016008cdcda` · `pnpm readme` · `pnpm computed:check`</sub>

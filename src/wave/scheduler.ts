@@ -19,7 +19,7 @@ import {
   isP0BlockingAtom,
   type MaxWorkTamperPolicy,
 } from './policy'
-import { buildImportIndex, useCaseOf } from '@/rules/word-without-logic'
+import { buildImportIndex, caseOf } from '@/rules/word-without-logic'
 
 export interface CorpusWaveScheduleOpts extends SelfBalancingWaveLoadOpts<string> {
   readonly root?: string
@@ -73,7 +73,7 @@ export function corpusWaveOptsLiteraryPriority(
   return {
     ...base,
     weightOf: (path: string) => {
-      const uc = useCaseOf(path, cwd, importIndex)
+      const uc = caseOf(path, cwd, importIndex)
       const units = pathComparableUnits(path)
       const boost = literaryWordWavePriority(path, {
         literary: uc.isLiterary,

@@ -3,15 +3,15 @@
 
 # type
 
-path `medical/type` · uuid `f13f2b08-d39c-841f-b113-0b26b4a6d667` · diamond `b8b469e0-a28b-80ce-9f5b-660e79f8bbc6`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `medical/type` · uuid `2963e7ac-56f3-8d12-89f2-51c985ce6054` · diamond `faac5d01-8e99-8bc1-bcd7-764a6ad7816d`
+horo `8` `crest` · trinity `0·0·0` · sealed `0`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `90` out `90`
+links `0/0` · folded `1` · bonds in `91` out `91`
 faces worker·plugin·pwa `1·0·0`
-neighbors → action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·learning·list·loan·location·lodging·map·measurement·medical·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·uk·unit·us·usage·vehicle·wearable · ← action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·learning·list·loan·location·lodging·map·measurement·medical·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·uk·unit·us·usage·vehicle·wearable
-analysis diamond·hallucination·purity
+neighbors → action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·learning·list·loan·location·lodging·map·measurement·medical·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·type·uk·unit·us·usage·vehicle·wearable · ← action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·learning·list·loan·location·lodging·map·measurement·medical·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·type·uk·unit·us·usage·vehicle·wearable
+analysis —
 law medical/type names type under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `e6d175a0-c6e9-87d3-a06e-5fb346c91183` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3f572c0-431d-877c-b96d-86e38c4849fc` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -585,6 +585,8 @@ Matter-twin: `src/quantum/dimension-realtime.ts` · `QuantumDimensionsProvider.t
 
 **Law — [[law]]: readme generation loads agent thinking and transforms to quantum inline — `loadAgentThinking` · `transformThinkingToQuantum` in `src/readme/quantum-thinking.ts` run during `deriveFolderModel` (single pass with entropy/balance sheet); per-folder README carries `## quantum thinking`; root README rolls up corpus quantum thinking. No post-hoc upgrade required for the quantum face on computed READMEs.**
 
+**Law — always quantum:** observe collapses; communicate entangled; never classical wait. `ALWAYS_QUANTUM` · `quantumModeDefault()` in `quantum/bindings`; `withQuantumContext` in `quantum/context` — superposition until seal, direction-bus collapse on observe, `pnpm erpax quantum status` for pending paths and bond reciprocity.
+
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 

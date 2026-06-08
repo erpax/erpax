@@ -3,8 +3,8 @@
 
 # standards
 
-path `taxing/jurisdictions/reporting/standards` · uuid `e7e3a4cf-4f9a-8964-ba75-b0ddabbc2ff9` · diamond `85561254-332c-84e8-87dd-eed529df4424`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `taxing/jurisdictions/reporting/standards` · uuid `3ff7d31b-b2a9-8d21-be58-21d5b414d481` · diamond `305a70ac-dacc-8115-a2df-e382b0ae123a`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `1/1` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `eb9ffa07-d4a6-8177-aecf-4af9e323c05a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8fc99513-3343-8495-98d8-d42f60f6bff6` · `pnpm readme` · `pnpm computed:check`</sub>

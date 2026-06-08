@@ -3,8 +3,8 @@
 
 # checklists
 
-path `legal/entities/disclosure/checklists` · uuid `7d011570-851e-8f0f-b4d3-176eddd9b979` · diamond `f1e59e74-f1b4-84de-9d20-eb05ab7a9854`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `legal/entities/disclosure/checklists` · uuid `d028bc7d-185e-8b6c-909c-7f13cfa185de` · diamond `7176c42d-b57d-8e4b-bb55-26724e5cfe78`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `00d32f1f-c4b7-898a-8804-f260706d359b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4292326d-c6c7-822c-80c7-458ff0aac5a4` · `pnpm readme` · `pnpm computed:check`</sub>

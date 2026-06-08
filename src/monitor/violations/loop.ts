@@ -29,13 +29,19 @@ import {
   formatEfficiencySummary,
 } from '@/apply/efficiency'
 import {
+  bindWatchRealtime,
   improveDirectionPath,
+  violationsWatchPath,
+} from '@/agent/communication/realtime'
+import {
   interruptTokenFor,
   isDirectionStale,
   peekDirection,
   type InterruptToken,
   type SealedDirection,
 } from '@/quantum/entanglement/direction-bus'
+import { quantumModeDefault } from '@/quantum/bindings'
+import { withQuantumContext } from '@/quantum/context'
 
 export interface RealtimeImproveLoopOpts {
   readonly cwd?: string
@@ -57,6 +63,8 @@ export interface RealtimeImproveLoopOpts {
   readonly directionPath?: string
   /** Token captured at cycle start — aborts mid-loop when stale. */
   readonly directionToken?: InterruptToken
+  /** @internal — set by withQuantumContext wrapper */
+  readonly __quantumWrapped?: boolean
 }
 
 export interface RealtimeImproveCycleResult {
@@ -86,13 +94,20 @@ export function improveWaveCorrelationUuid(opts: {
 
 /** One improve cycle — wave-batched scan, capped auto-fixes, human-gate queue. */
 export function runRealtimeImproveCycle(opts: RealtimeImproveLoopOpts = {}): RealtimeImproveCycleResult {
+  const actor = opts.actor ?? 'monitor-improve-loop'
+  const directionPath = opts.directionPath ?? improveDirectionPath()
+  if (quantumModeDefault() && !opts.__quantumWrapped) {
+    return withQuantumContext(
+      () => runRealtimeImproveCycle({ ...opts, __quantumWrapped: true }),
+      { path: directionPath, agentId: actor, label: 'improve:watch' },
+    ).result
+  }
+
   const cwd = opts.cwd ?? process.cwd()
   const policy = maxWorkTamperPolicy()
   const maxFixes = opts.maxFixes ?? policy.maxFixesPerCycle
   const dryRun = opts.dryRun ?? false
-  const actor = opts.actor ?? 'monitor-improve-loop'
   const pathLedgerDepth = opts.pathLedgerDepth ?? 0
-  const directionPath = opts.directionPath ?? improveDirectionPath()
   const directionToken =
     opts.directionToken ?? interruptTokenFor(directionPath, actor)
 
@@ -263,7 +278,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
   tick()
   if (watch) {
-    console.log(`improve:watch — every ${intervalMs}ms · max ${maxFixes} fixes/cycle (Ctrl+C to stop)`)
-    setInterval(tick, intervalMs)
+    bindWatchRealtime({
+      paths: [improveDirectionPath(), violationsWatchPath()],
+      onSignal: tick,
+      pollMs: intervalMs,
+    })
+    process.on('SIGINT', () => {
+      process.stderr.write('\nimprove:watch — stopped\n')
+      process.exit(0)
+    })
   }
 }

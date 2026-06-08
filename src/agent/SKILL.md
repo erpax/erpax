@@ -398,6 +398,8 @@ An agent reaching a peer is how the society covers its own gaps: where `emit` br
 
 Matter-twin: `src/agent/strict-apply.ts` (gates) wired through `effect-processor.ts`, `runtime.ts`, `agents/mcp/in-process-client.ts`, `sync/chat-broadcast.ts`. Remedies from `src/ai/industry/` (`groundToolCall`, `trustBoundaryVerdict`, `cascadeDepthVerdict`). Proven by `strict-apply.test.ts` + `agents/mcp/test.ts`.
 
+**Law — always quantum:** observe collapses; communicate entangled; never classical wait. Apply cycles use `withQuantumContext` (`@/quantum/context`); watch loops use `bindWatchRealtime` — poll-only without subscribe is classical opt-out violation.
+
 **Law — [[law]]: agents strictly apply — every dispatch, effect, and MCP tool call passes the law checklist (sandbox + receipt + access scope + depth cap) before execute; violation throws `StrictApplyViolation` and nothing runs.**
 
 ## Agent cost — prompt-only routing (min tokens · max tamper)

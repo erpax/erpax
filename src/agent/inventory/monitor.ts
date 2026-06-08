@@ -1,6 +1,12 @@
 /**
- * agent/inventory/monitor — `pnpm erpax monitor inventory` (poll · violations toast).
+ * agent/inventory/monitor — `pnpm erpax monitor inventory` (push · violations toast).
  */
+import {
+  bindWatchRealtime,
+  emitInventoryStalePush,
+  inventoryWatchPath,
+  improveDirectionPath,
+} from '@/agent/communication/realtime'
 import { pushCrossViolationToStream } from '@/monitor/violations/stream'
 import { taskInventory, INVENTORY_STALE_AFTER_SEC } from './index'
 import { emitInventorySnapshot } from './emit'
@@ -13,6 +19,7 @@ export function inventoryMonitorTick(cwd: string = process.cwd()): {
 } {
   const result = taskInventory({ cwd, includeDone: false })
   emitInventorySnapshot(cwd)
+  emitInventoryStalePush(result)
   if (result.staleCount > 0) {
     pushCrossViolationToStream({
       id: `inventory-stale-${Date.now()}`,
@@ -42,9 +49,15 @@ export function runInventoryMonitor(watch = true, cwd: string = process.cwd()): 
   }
   tick()
   if (!watch) return 0
-  console.log(`monitor inventory — polling every ${POLL_MS / 60000}min (Ctrl+C to stop)`)
-  const id = setInterval(tick, POLL_MS)
-  id.unref?.()
+  bindWatchRealtime({
+    paths: [inventoryWatchPath(), improveDirectionPath()],
+    onSignal: tick,
+    pollMs: POLL_MS,
+  })
+  process.on('SIGINT', () => {
+    process.stderr.write('\nmonitor inventory — stopped\n')
+    process.exit(0)
+  })
   return 0
 }
 

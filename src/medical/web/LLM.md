@@ -3,15 +3,15 @@
 
 # web
 
-path `medical/web` · uuid `c8383ecd-1967-8fc9-880f-9d762863ae5c` · diamond `c2cacb22-312d-877d-a146-382e0f1e8c3e`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `medical/web` · uuid `cb3ff6ff-e7da-82f5-a5b2-0c691051c30c` · diamond `a7aeea37-8311-8f66-9e1a-c223b19a9fd3`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `14` out `14`
+links `5/5` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
-neighbors → api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time · ← api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time
-analysis diamond·hallucination·purity
+neighbors → api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time·web · ← api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time·web
+analysis —
 law medical/web names web under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `e03e07a3-7d90-8ae3-bbd0-5aa0beb5c65e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0410dd3f-c0ab-8662-805b-029e7c04d13e` · `pnpm readme` · `pnpm computed:check`</sub>

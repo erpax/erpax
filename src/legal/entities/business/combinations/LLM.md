@@ -3,8 +3,8 @@
 
 # combinations
 
-path `legal/entities/business/combinations` · uuid `7ecb08ab-e0a5-8355-972f-bb5360e4ffd5` · diamond `a1ff2e63-550e-8a10-ab00-0cf28ad257d2`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `legal/entities/business/combinations` · uuid `80902581-adea-8ac5-9b31-9494e43646e7` · diamond `75063485-1aa6-8971-9737-0323bd900164`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `11/11` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law goodwill is the residual, not an input — IFRS 3 §32 computes it as consid
 
 ---
 
-<sub>content-uuid `65a6dcca-82c6-8962-82e4-33d6437aae85` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7e86e85-ac9e-824d-aced-54d1bda1544c` · `pnpm readme` · `pnpm computed:check`</sub>

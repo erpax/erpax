@@ -3,8 +3,8 @@
 
 # certifications
 
-path `legal/entities/management/certifications` · uuid `b7b5fe37-18c7-85ae-8932-7e66d3dda83b` · diamond `6121f672-200a-8231-8a2f-e520d765d31c`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `legal/entities/management/certifications` · uuid `2942fd51-57d5-82d5-8b1f-a9033b39b1c7` · diamond `b1db3b78-6910-8729-b6de-877d5e53e2b0`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `cb3e8209-826c-83ce-a5c4-e9853247c631` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b33a0130-6910-8938-8b4e-83303f14dd0b` · `pnpm readme` · `pnpm computed:check`</sub>

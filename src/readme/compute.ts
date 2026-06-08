@@ -1719,7 +1719,7 @@ export function materializeComputedFacesForPathsStable(
   paths: readonly string[],
   cwd: string = process.cwd(),
 ): number {
-  let frozen = buildReadmeCorpusFrozenInputs(cwd)
+  const frozen = buildReadmeCorpusFrozenInputs(cwd)
   let n = materializeComputedFacesForPaths(paths, cwd, frozen.graph, frozen.ctx)
   const next = buildReadmeCorpusFrozenInputs(cwd)
   if (next.graph.root !== frozen.graph.root) {

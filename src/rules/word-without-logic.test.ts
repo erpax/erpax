@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os'
 import { computedBaseline, clearRatchetCache } from '@/law/folder/baseline'
 import {
   wordWithoutLogicViolations,
-  useCaseOf,
+  caseOf,
   isOrphanReexportOnly,
   buildImportIndex,
   importTargetToAtomPath,
@@ -61,7 +61,7 @@ describe('rules/word-without-logic — fixtures', () => {
     writeFileSync(join(src, 'importer/index.ts'), 'export const imported = 1\n')
     mkdirSync(join(src, 'consumer'), { recursive: true })
     writeFileSync(join(src, 'consumer/SKILL.md'), '---\nname: consumer\n---\n\nUses importer.\n')
-    writeFileSync(join(src, 'consumer/index.ts'), "import { imported } from '@/importer'\nexport const x = imported\n")
+    writeFileSync(join(src, 'consumer/index.ts'), `import { imported } from '${'@/importer'}'\nexport const x = imported\n`)
   })
 
   afterAll(() => {
@@ -80,13 +80,13 @@ describe('rules/word-without-logic — fixtures', () => {
     expect(importTargetToAtomPath('importer/extra', atoms)).toBe('importer')
   })
 
-  it('useCaseOf classifies fixture atoms', () => {
+  it('caseOf classifies fixture atoms', () => {
     const index = buildImportIndex(fixtureRoot)
-    expect(useCaseOf('prose-heavy', fixtureRoot, index).isLiterary).toBe(true)
-    expect(useCaseOf('orphan-export', fixtureRoot, index).isLiterary).toBe(true)
-    expect(useCaseOf('with-logic', fixtureRoot, index).isLiterary).toBe(false)
-    expect(useCaseOf('vocab-exception', fixtureRoot, index).isLiterary).toBe(false)
-    expect(useCaseOf('importer', fixtureRoot, index).importerCount).toBeGreaterThan(0)
+    expect(caseOf('prose-heavy', fixtureRoot, index).isLiterary).toBe(true)
+    expect(caseOf('orphan-export', fixtureRoot, index).isLiterary).toBe(true)
+    expect(caseOf('with-logic', fixtureRoot, index).isLiterary).toBe(false)
+    expect(caseOf('vocab-exception', fixtureRoot, index).isLiterary).toBe(false)
+    expect(caseOf('importer', fixtureRoot, index).importerCount).toBeGreaterThan(0)
   })
 
   it('wordWithoutLogicViolations ranks literary fixtures', () => {

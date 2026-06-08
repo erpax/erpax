@@ -3,8 +3,8 @@
 
 # returns
 
-path `tax/jurisdictions/tax/returns` · uuid `51c5f62f-22c8-85bc-ae3a-1d305ed805ab` · diamond `8b69dcbc-ab9c-8d3f-9d96-a5713925b6bc`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `tax/jurisdictions/tax/returns` · uuid `72221902-b625-8d12-98ab-bbb3fd2119f3` · diamond `09c4280b-1c0b-87b9-ac33-43f70b954c47`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `9b932b58-5971-8e2e-840c-1dba026ded8e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca2c196f-acef-8278-8228-273c3886e5c2` · `pnpm readme` · `pnpm computed:check`</sub>

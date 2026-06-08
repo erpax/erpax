@@ -24,8 +24,14 @@ import {
   type CrossDimension,
 } from '@/seal'
 import {
+  bindWatchRealtime,
+  improveDirectionPath,
+  publish,
+  strictApplyPath,
+  violationsWatchPath,
+} from '@/agent/communication/realtime'
+import {
   drainCrossViolationStream,
-  pushCrossViolationToStream,
   type CrossViolationOrigin,
 } from './stream'
 import { fieldEntanglementUnhooked } from './entanglement'
@@ -621,19 +627,20 @@ export function crossViolationFromStrictApply(opts: {
   }
   const verdict = crossConceptForViolation(input)
   const notify = crossConceptNotificationPayload(input, { gate: 'strict-apply' })
-  pushCrossViolationToStream({
+  const streamed = {
     id: violationEventId('cross-concept', opts.atomPath, `strict-apply:${opts.gate}:${opts.reason}`),
     atomPath: opts.atomPath,
     accountCode: accountCodeOf(opts.atomPath),
     detail: `strict-apply (${opts.gate}): ${opts.reason}`,
-    severity: 'error',
+    severity: 'error' as const,
     scannedAt,
     crossDimension: verdict.dimension,
     crossEducation: opts.crossEducation || notify.crossEducation,
     uncrossedAxes: notify.uncrossedAxes,
-    origin: 'strict-apply',
+    origin: 'strict-apply' as const,
     gate: opts.gate,
-  })
+  }
+  publish(strictApplyPath(), { kind: 'violation', payload: streamed, emittedAt: scannedAt })
 }
 
 export {
@@ -692,7 +699,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
   tick()
   if (watch) {
-    console.log(`violations:watch — polling every ${intervalMs}ms (Ctrl+C to stop)`)
-    setInterval(tick, intervalMs)
+    bindWatchRealtime({
+      paths: [violationsWatchPath(), strictApplyPath(), improveDirectionPath()],
+      onSignal: tick,
+      pollMs: intervalMs,
+    })
+    process.on('SIGINT', () => {
+      process.stderr.write('\nviolations:watch — stopped\n')
+      process.exit(0)
+    })
   }
 }

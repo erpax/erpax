@@ -3,8 +3,8 @@
 
 # postings
 
-path `journal/entries/gl/postings` · uuid `0d01c048-9f46-8fef-b356-855de2df9f79` · diamond `d58bc3b4-87da-849c-a7b8-b42efa510afa`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `journal/entries/gl/postings` · uuid `c073c045-03d9-83f1-a745-9ef65ea7fa72` · diamond `3a068c7b-9793-8b11-abe5-072f7c7cbcaa`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/chain/event/emitter·@/utility · exports default · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law each posting is exactly one debit-or-credit line bound to a single GL accoun
 
 ---
 
-<sub>content-uuid `e55ee6bb-48be-8a58-ad36-500ba989ba08` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c710714-1ba2-89df-ae8e-e2e189a1d8ac` · `pnpm readme` · `pnpm computed:check`</sub>

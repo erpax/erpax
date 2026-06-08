@@ -3,8 +3,8 @@
 
 # codes
 
-path `tax/jurisdictions/tax/codes` · uuid `43e28114-41f4-81ed-a485-7a55732b565c` · diamond `e12f1f99-1bbe-8732-a1ea-6242ec69303e`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `tax/jurisdictions/tax/codes` · uuid `057dd535-bfa4-8127-8b23-ba2e8baf5cd5` · diamond `00c2f77b-8377-8ab9-90ac-59cd36225af6`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/base/accounting/field·@/un/cefact/5305 · exports const · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `5038872f-e175-8e02-9205-29e7d8ce0a38` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3734fa5e-5073-8cd5-b0e8-b28164bad766` · `pnpm readme` · `pnpm computed:check`</sub>

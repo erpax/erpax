@@ -3,8 +3,8 @@
 
 # owners
 
-path `legal/entities/beneficial/owners` · uuid `9f25efe8-dbd3-8bd4-8e85-8f3ee16fad27` · diamond `d512324c-44f9-8b3e-92e0-e449ff34b68c`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `legal/entities/beneficial/owners` · uuid `b05d4eb3-e71a-8bb9-ad92-1add1231a30e` · diamond `3b6b0b5f-d4ed-8977-9969-8ee881210795`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the register of a legal entity's ultimate beneficial owners — direct/indir
 
 ---
 
-<sub>content-uuid `bad872bd-d321-852a-bd41-a916ef928c51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22763a64-c8d2-828e-8980-0cddaeeed1ad` · `pnpm readme` · `pnpm computed:check`</sub>

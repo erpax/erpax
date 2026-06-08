@@ -3,15 +3,15 @@
 
 # calculator
 
-path `medical/calculator` · uuid `8a887dd6-1870-8f52-86c5-84d6cc79868c` · diamond `82e598f4-b548-8e56-8666-b3c201ade5f3`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `medical/calculator` · uuid `b0a96ee1-ef6b-84d7-9164-52816da68c14` · diamond `187ff4f4-9a43-877a-855b-a3a8edd04041`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
-neighbors → calculator·collapse·law·medical·merge·risk·sti · ← calculator·collapse·law·medical·merge·risk·sti
-analysis diamond·hallucination·purity
+neighbors → calculator·calculator·collapse·law·medical·merge·risk·sti · ← calculator·calculator·collapse·law·medical·merge·risk·sti
+analysis —
 law medical/calculator names calculator under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `1da52bd7-d78c-864f-824f-754293b13b6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9382835d-fe1e-8d59-bb7d-53d9d3cdcaf8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # arrangements
 
-path `warehouse/locations/consignment/arrangements` · uuid `f768dc1b-680d-8f72-8da1-2b7259165f9b` · diamond `c9a7028f-c1b7-8aae-912b-4324e7f04ad7`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `warehouse/locations/consignment/arrangements` · uuid `077c1bc9-9b3c-87dd-93a6-17dc3436eeaa` · diamond `74563738-afb0-8964-9630-dc2b43c6b1b4`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law control does not transfer until the consignee sells onward — the consignor
 
 ---
 
-<sub>content-uuid `a6671393-7745-808f-b0e4-e7077268cca3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0cccbc76-f449-898e-b998-bda9f3a38f6f` · `pnpm readme` · `pnpm computed:check`</sub>

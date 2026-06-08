@@ -19,6 +19,29 @@ export const relay = (m: Communication, to: string): Communication => communicat
 /** Two transfers carry the same message iff their content-uuids match. */
 export { sameMessage }
 
+export {
+  REALTIME_DEFAULT,
+  bindWatchRealtime,
+  emitInventoryStalePush,
+  formatRealtimeChannelsReport,
+  isRealtimeEnabled,
+  inventoryWatchPath,
+  publish,
+  realtimeChannelFor,
+  realtimeDoctorLine,
+  sessionApplyPath,
+  strictApplyPath,
+  subscribe,
+  violationsWatchPath,
+  listActiveRealtimeChannels,
+  improveDirectionPath,
+  cleanDirectionPath,
+  automateDirectionPath,
+  type RealtimeEvent,
+  type RealtimeEventKind,
+  type RealtimeChannel,
+} from './realtime'
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const m = send('a', 'b', 'u1')
   console.log('agent/communication — relay preserves the uuid: ' + sameMessage(m, relay(m, 'c')))

@@ -4,7 +4,7 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect } from 'vitest'
-import { bindingInventory, gatedBindingCallHolds } from '@/quantum/bindings'
+import { ALWAYS_QUANTUM, bindingInventory, gatedBindingCallHolds, quantumModeDefault } from '@/quantum/bindings'
 import { parseWranglerBindings } from '@/cloudflare'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -17,6 +17,13 @@ describe('quantum/bindings — attach-all inventory from live wrangler', () => {
       .sort()
     expect(bindingInventory()).toEqual(expected)
     expect(bindingInventory().length).toBeGreaterThan(0)
+  })
+})
+
+describe('quantum/bindings — always quantum default', () => {
+  it('quantumModeDefault is true (lawful ALWAYS_QUANTUM)', () => {
+    expect(ALWAYS_QUANTUM).toBe(true)
+    expect(quantumModeDefault()).toBe(true)
   })
 })
 

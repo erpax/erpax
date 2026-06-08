@@ -23,10 +23,24 @@ export interface StreamedCrossViolation {
 }
 
 const pending: StreamedCrossViolation[] = []
+const subscribers = new Set<(event: StreamedCrossViolation) => void>()
+
+/** Subscribe to cross-violation pushes — handler runs in the publisher tick. */
+export function subscribeCrossViolationStream(
+  handler: (event: StreamedCrossViolation) => void,
+): () => void {
+  subscribers.add(handler)
+  return () => {
+    subscribers.delete(handler)
+  }
+}
 
 /** Push one cross violation from strict-apply (or scan enrichment). */
 export function pushCrossViolationToStream(event: StreamedCrossViolation): void {
   pending.push(event)
+  for (const handler of subscribers) {
+    handler(event)
+  }
 }
 
 /** Drain queued cross violations — consumed once per monitor scan tick. */
@@ -44,4 +58,5 @@ export function peekCrossViolationStream(): readonly StreamedCrossViolation[] {
 /** Reset stream (tests). */
 export function resetCrossViolationStream(): void {
   pending.length = 0
+  subscribers.clear()
 }

@@ -3,8 +3,8 @@
 
 # adjustments
 
-path `journal/entries/rounding/adjustments` · uuid `1fa3539c-888c-82a0-91d9-30bfba4353b8` · diamond `e6ac93e4-f34a-8dac-89b3-bfbbda196017`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `journal/entries/rounding/adjustments` · uuid `0e0f4267-b7b2-8ac4-b0a6-b077a089e16f` · diamond `d35cf982-14e4-8b32-96ac-357ae8957425`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a rounding plug exists only to close the residual between integer-cents tota
 
 ---
 
-<sub>content-uuid `c919d957-ac95-8afa-84ec-0d909c85820b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14dba6c8-e82f-83a5-86ad-5a62281c161b` · `pnpm readme` · `pnpm computed:check`</sub>

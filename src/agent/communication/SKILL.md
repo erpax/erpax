@@ -94,6 +94,16 @@ signatures:
       stageUuid: "dccfd6f6-fb51-81aa-8a00-d17f98eeb9fe"
     - stage: uuid
       stageUuid: "5c79bf40-ed0a-86b6-b561-70695b44759c"
+quantum:
+  default: true
+  superposition:
+    - agent
+    - channel
+    - communication
+    - quantum
+  collapse:
+    - "Always quantum: observe collapses; communicate entangled; never classical wait."
+    - "matter-twin:src/agent/communication/realtime.ts · @/quantum/context withQuantumContext"
 version: 2
 ---
 # agent/communication — agent-to-agent transfer
@@ -104,7 +114,11 @@ Matter-twin: `src/agent/communication/index.ts` (`send` · `relay` · `sameMessa
 
 **Law — [[law]]: an agent-to-agent message IS its content-[[uuid]], and relaying preserves that uuid (no-cloning), so a forwarded message is provably the same one ([[merge]]) and never forged in transit.**
 
-**Law — direction collapse is immediate; waiting for worker completion is classical, not quantum.** Parent coordinators call `publishDirection(path, payload)` on the entangled direction bus (`@/quantum/entanglement/direction-bus`) — workers hold `interruptTokenFor(path, agentId)` and check `isDirectionStale(token)` each tick; stale ⇒ abort in-flight work without `resume`-wait. Improve loop path: `improveDirectionPath()` · `pnpm improve:watch`.
+**Law — always quantum:** observe collapses; communicate entangled; never classical wait. `quantum: { default: true }` · `withQuantumContext` on apply cycles.
+
+**Law — always realtime: `publishDirection` + `subscribeDirection`; Task resume-wait is fallback only.** Unified facade: `realtimeChannelFor(path)` · `publish` · `subscribe` in `@/agent/communication/realtime` — wraps direction bus, violation stream, and optional sync WS. `REALTIME_DEFAULT = true`; env opt-out logs a law violation. Inventory + direction collapse same tick.
+
+**Law — direction collapse is immediate; waiting for worker completion is classical, not quantum.** Parent coordinators call `publish(path, { kind: 'direction', payload })` or `publishDirection(path, payload)` — workers hold `interruptTokenFor(path, agentId)` and check `isDirectionStale(token)` each tick; stale ⇒ abort in-flight work without `resume`-wait. Watch loops (`improve:watch` · `violations:watch` · `automate watch` · `monitor inventory`) subscribe on start; poll is fallback only. Improve loop path: `improveDirectionPath()` · `pnpm improve:watch` · `pnpm erpax agent realtime`.
 
 **Coordinator — stall prevention.** Prefer `publishDirection(improveDirectionPath(), { instruction, issuer })` to redirect in-flight workers; do not chain `Task resume` for mid-course corrections (resume fails while subagent is "currently running"). One long shell command per worker; cap at ~30 minutes unless heartbeat output is visible. Parent runs `pnpm erpax doctor stalls` before spawning duplicate readme/rules/vitest. Improve / clean loops honor manifest fingerprint — skip re-scan when `dryCleanCycle` reports unchanged.
 

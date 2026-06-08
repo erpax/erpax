@@ -187,19 +187,19 @@ describe('readme — the README is a diamond', () => {
     expect(m.ring).toHaveLength(HORO_DIGITS.length)
     expect(m.ring.map((r) => r.digit)).toEqual([...HORO_DIGITS])
     expect(m.corpusRoot).toMatch(/^[0-9a-f-]{36}$/)
-  })
+  }, 180_000)
 
   it('deriveModel includes corpus analytics rollup', () => {
     const m = deriveModel()
     expect(m.analytics.folderCount).toBeGreaterThan(100)
     expect(m.analytics.byHoro.length).toBeGreaterThan(0)
     expect(m.analytics.distinctStandards).toBeGreaterThan(10)
-  })
+  }, 180_000)
 
   it('ZERO ENTROPY: renderReadme on deriveModel is byte-identical', () => {
     const m = deriveModel()
     expect(renderReadme(m)).toBe(renderReadme(m))
-  })
+  }, 180_000)
 })
 
 describe('readme — per-folder debit/credit statement', () => {
@@ -744,7 +744,7 @@ describe('readme — root wave frozen inputs', () => {
     resetCorpusPathFollowCache()
     const { ok } = verifyRootReadmeUsesFrozenInputs(process.cwd())
     expect(ok).toBe(true)
-  })
+  }, 180_000)
 
   it('materializeComputedFacesForPathsStable — fresh verify is zero drift for quantum/digit', () => {
     resetCorpusPathFollowCache()

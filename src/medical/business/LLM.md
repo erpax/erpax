@@ -3,15 +3,15 @@
 
 # business
 
-path `medical/business` · uuid `0cc122e0-d4f5-8e79-9e48-79b7a29f3633` · diamond `3b0a7504-9cef-814b-9e80-fa62289e04d9`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `medical/business` · uuid `40513533-55e3-8691-aa99-569f0e1853c7` · diamond `94f3aa44-9a03-83ba-b5db-215eedd7fb37`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `22` out `22`
+links `5/5` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `1·0·0`
-neighbors → audience·automotive·beauty·chain·collapse·construction·days·entertainment·entity·event·function·health·home·hvac·law·local·lodging·medical·merge·online·sti·type · ← audience·automotive·beauty·chain·collapse·construction·days·entertainment·entity·event·function·health·home·hvac·law·local·lodging·medical·merge·online·sti·type
-analysis diamond·hallucination·purity
+neighbors → audience·automotive·beauty·business·chain·collapse·construction·days·entertainment·entity·event·function·health·home·hvac·law·local·lodging·medical·merge·online·sti·type · ← audience·automotive·beauty·business·chain·collapse·construction·days·entertainment·entity·event·function·health·home·hvac·law·local·lodging·medical·merge·online·sti·type
+analysis —
 law medical/business names business under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `ac38d423-bbd5-8ff8-b06b-64a4e3435f04` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6c10e24-a454-8292-9b18-db6a93a534a8` · `pnpm readme` · `pnpm computed:check`</sub>

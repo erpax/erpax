@@ -3,8 +3,8 @@
 
 # actions
 
-path `legal/entities/board/actions` · uuid `9ab09748-0aaf-85c2-8ae0-061156bc2a11` · diamond `1fe5ea85-e124-8f4b-be7e-5341f1adb667`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `legal/entities/board/actions` · uuid `156bb7ad-3393-85df-ad65-68fecaf02b43` · diamond `09d82169-dcff-8399-ab1a-8975000a0496`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3832eec4-974f-8ecb-8f60-1d5ef47697a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f7a8ae2-91eb-83c2-bdb1-542021f5a4de` · `pnpm readme` · `pnpm computed:check`</sub>

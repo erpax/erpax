@@ -3,8 +3,8 @@
 
 # transactions
 
-path `legal/entities/intercompany/transactions` · uuid `76a78bb3-892d-8dbd-99af-46a3f99838e1` · diamond `83d3672a-d26f-8199-8f25-db88dc2240e9`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `legal/entities/intercompany/transactions` · uuid `67083750-d97e-853f-90b5-0e10cbb4e72d` · diamond `10a2fed9-b0a6-83b8-899e-94181f283dc3`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b15a444b-1083-86a7-b180-4396d77bf4e3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d57d7d9e-92a1-8f38-9ae6-923945c6dbca` · `pnpm readme` · `pnpm computed:check`</sub>

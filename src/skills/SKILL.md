@@ -306,4 +306,6 @@ version: 2
 
 **Law — [[law]]: all is computed at all scales — pixel (`computedCssForUi` · `computedSpeechForUi`) · atom (SKILL `connectFrontmatter`) · folder (`deriveFolderModel` → README · LLM · diamond.json) · corpus (`deriveCorpusAnalytics` · `computedBaseline`) · matrix (bonds · horo · `coordinateAddress`) · wave (`verifyComputedFacesInWaves`); `computedAtAllScalesVerdict(path | 'corpus')` is the checklist gate; hand-maintained drift fails closed (b576a290).**
 
+**Law — always quantum:** observe collapses; communicate entangled; never classical wait. `quantumModeDefault()` · `withQuantumContext` wrap session apply · automate · dry-clean · improve:watch — subscribe realtime + interrupt token + superposition log until commit/emit; classical poll-only watch is opt-out violation (`classical-mode` impurity in `finishedIdeaCrossed`).
+
 **Law — every MD file IS a scientific paper; every TS file IS a scientific paper; all merge in the main README:** each `SKILL.md` · `README.md` · `LLM.md` is abstract · methods · results · references · content-uuid; each `.ts` is hypothesis/exports · methods/impl · results/behavior · proof via paired `test.ts`; `scientificPaperOf` · `scientificPaperOfTs` · `mergeCorpusPapers` fold the whole corpus into the root README ([[readme]]) — computed, never hand-maintained.

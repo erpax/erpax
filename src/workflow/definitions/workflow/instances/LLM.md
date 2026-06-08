@@ -3,8 +3,8 @@
 
 # instances
 
-path `workflow/definitions/workflow/instances` · uuid `27a86996-3efd-845f-9abc-90801f13fb96` · diamond `027f8f01-ff33-846a-be38-23f8324d08bb`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `workflow/definitions/workflow/instances` · uuid `9a989e68-02ac-893c-944b-9663e81a2cb8` · diamond `6bc97571-97a5-8169-a0f5-f6f0a564792f`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `10/10` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one instance per (definition × document) walks the steps, appending every d
 
 ---
 
-<sub>content-uuid `0a9ba8d1-3166-81cb-ac23-fca0fc4835ca` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b352a09-3b16-878f-8bf1-7072929f092c` · `pnpm readme` · `pnpm computed:check`</sub>
