@@ -39,7 +39,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           NODE_ENV: production
           PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
-        run: pnpm run migrate:production
+        run: pnpm erpax deploy db
 
       - name: Build and deploy
         env:
@@ -48,4 +48,4 @@ jobs:
           PAYLOAD_BUILD_USE_REMOTE_D1: 'true'
           CLOUDFLARE_ENV: staging
         run: |
-          pnpm run deploy:app
+          pnpm erpax deploy app

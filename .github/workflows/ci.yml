@@ -51,10 +51,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run linter
-        run: pnpm run lint
+        run: pnpm erpax lint
 
       - name: Application src (zero ESLint warnings)
-        run: pnpm run lint:src
+        run: pnpm erpax lint src
 
   typecheck:
     name: TypeScript
@@ -78,16 +78,16 @@ jobs:
       # payload.config imports @/skill/router/skills.index, which is gitignored
       # and generated. Generate it before any step that loads the config.
       - name: Generate skill index
-        run: pnpm run skill:index
+        run: pnpm erpax corpus skill
 
       # Slice TTT: regenerate payload-types from the live config and fail if
       # the committed payload-types.ts is out of sync. Stale types let tsc
       # pass in dev but break in fresh checkouts.
       - name: Verify payload-types.ts is fresh
-        run: pnpm run payload:verify-types
+        run: pnpm erpax payload verify-types
 
       - name: Typecheck (tsc --noEmit)
-        run: pnpm run typecheck
+        run: pnpm erpax lint typecheck
 
   test-int:
     name: Integration Tests
@@ -112,10 +112,10 @@ jobs:
       # payload.config imports @/skill/router/skills.index, which is gitignored
       # and generated. Generate it before any step that loads the config.
       - name: Generate skill index
-        run: pnpm run skill:index
+        run: pnpm erpax corpus skill
 
       - name: Run integration tests
-        run: pnpm run test:int
+        run: pnpm erpax test int
 
   build:
     name: Production build

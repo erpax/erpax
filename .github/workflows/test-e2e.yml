@@ -33,13 +33,13 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Typecheck
-        run: pnpm run typecheck
+        run: pnpm erpax lint typecheck
 
       - name: Install Playwright browsers
         run: pnpm exec playwright install chromium
 
       - name: Run E2E tests
-        run: pnpm run test:e2e
+        run: pnpm erpax test e2e
 
       - name: Upload Playwright report
         if: always()
