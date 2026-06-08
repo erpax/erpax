@@ -147,3 +147,13 @@ export function crossSeals(root: string = SRC): { readonly crosses: readonly Cro
   crosses.sort((a, b) => a.base.localeCompare(b.base))
   return { crosses, unsealed: crosses.filter((c) => !c.sealed) }
 }
+
+// CLI: the cross gate — `tsx src/aura/index.ts` prints every quantum cross and
+// exits non-zero if any is unsealed (a diagonal restating its twin = duplication).
+// Pure TS, reusing crossSeals — no second implementation (the no-duplication law it gates).
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const { crosses, unsealed } = crossSeals()
+  console.log(`aura crosses — ${crosses.length} quantum cross(es), ${unsealed.length} unsealed`)
+  for (const c of crosses) console.log(`  ${c.sealed ? '✓' : '✗'} ${c.base}: ${c.reason}`)
+  process.exit(unsealed.length === 0 ? 0 : 1)
+}
