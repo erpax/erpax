@@ -13,7 +13,7 @@
  * @see ./scan (the gap report) -- ./propose (the weave queue) -- ../coordinate (derive-from-fs)
  */
 import { readdirSync, lstatSync, readFileSync, existsSync } from 'node:fs'
-import { join, dirname, basename } from 'node:path'
+import { join, dirname, basename, relative } from 'node:path'
 
 /** Real directory -- skips symlinks (the src/skills self-symlink would ELOOP). */
 export const isRealDir = (p: string): boolean => {
@@ -85,4 +85,65 @@ export function testCoverage(root: string): {
     else untested.push(leafOf(sk))
   }
   return { codeAtoms, tested, coverage: codeAtoms ? tested / codeAtoms : 1, untested: untested.sort() }
+}
+
+/** The src root the cross organ derives from (cwd-relative, like scan.mjs). */
+const SRC = join(process.cwd(), 'src')
+
+export interface CrossSeal {
+  /** The base atom x of the cross (the word the two rings cross on). */
+  readonly base: string
+  /** The two diagonals: [quantum/x, x/quantum]. */
+  readonly diagonals: readonly [string, string]
+  /** Sealed iff the diagonals collapse to one canonical (one re-points to / re-exports the other). */
+  readonly sealed: boolean
+  readonly reason: string
+}
+
+/**
+ * crossSeals — the THIRD aura completeness axis, beside link-resolution (gap=0) and
+ * test-coverage. A quantum cross is the four corners `x · quantum/x · x/quantum · quantum`;
+ * it is DERIVED from the live tree, never hand-listed. A cross exists when BOTH diagonals
+ * (`quantum/x` and `x/quantum`) carry a SKILL.md. It is SEALED iff the two diagonals
+ * collapse to ONE canonical — at least one re-points to (or `export *`s) the other (one
+ * node, two names; the [[merge]] law at path scale). Two independent restatements are
+ * UNSEALED: duplication is entropy, the weak link the tamper-cost lever reads.
+ *
+ * @audit derived from fs — the SAME walk as the link/coverage gates (walkSkills)
+ */
+export function crossSeals(root: string = SRC): { readonly crosses: readonly CrossSeal[]; readonly unsealed: readonly CrossSeal[] } {
+  const relDirs = new Set(walkSkills(root).map((p) => relative(root, dirname(p)).split(/[\\/]/).join('/')))
+  const crosses: CrossSeal[] = []
+  for (const rel of relDirs) {
+    const m = /^quantum\/([^/]+)$/.exec(rel) // a single-segment quantum diagonal: quantum/x
+    if (!m) continue
+    const base = m[1]
+    const baseDiagonal = `${base}/quantum`
+    if (!relDirs.has(baseDiagonal)) continue // a cross needs BOTH diagonals
+    const corpus = (relDir: string): string => {
+      let t = ''
+      for (const leaf of ['SKILL.md', 'index.ts']) {
+        try {
+          t += readFileSync(join(root, relDir, leaf), 'utf8')
+        } catch {
+          /* leaf absent — fine */
+        }
+      }
+      return t
+    }
+    const qText = corpus(rel)
+    const bText = corpus(baseDiagonal)
+    // sealed = one diagonal re-points to / re-exports the other (its path appears in the twin)
+    const sealed = bText.includes(`quantum/${base}`) || qText.includes(`${base}/quantum`)
+    crosses.push({
+      base,
+      diagonals: [rel, baseDiagonal],
+      sealed,
+      reason: sealed
+        ? `quantum/${base} ⊕ ${base}/quantum collapse to one canonical (one re-points to the other)`
+        : `quantum/${base} and ${base}/quantum both exist but neither re-points to the other — duplication, not a seal`,
+    })
+  }
+  crosses.sort((a, b) => a.base.localeCompare(b.base))
+  return { crosses, unsealed: crosses.filter((c) => !c.sealed) }
 }

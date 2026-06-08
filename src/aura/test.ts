@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { norm, stripCode, LINK_RE, leafOf } from '@/aura'
+import { norm, stripCode, LINK_RE, leafOf, crossSeals } from '@/aura'
 
 describe('aura', () => {
   // norm: lowercase + strip [-_]
@@ -67,5 +67,23 @@ describe('aura', () => {
   })
   it('leafOf handles nested path', () => {
     expect(leafOf('/root/src/migrate/quaternary/SKILL.md')).toBe('quaternary')
+  })
+})
+
+// The cross organ — the third aura completeness axis, derived from the live tree.
+// A quantum cross (x · quantum/x · x/quantum · quantum) is sealed iff its two
+// diagonals collapse to one canonical. This is THE GATE: no diagonal may duplicate
+// its twin (duplication is entropy), so unsealed must be empty.
+describe('aura: quantum crosses are sealed (derived from the live tree)', () => {
+  const { crosses, unsealed } = crossSeals()
+
+  it('detects the memory cross and finds it sealed', () => {
+    const mem = crosses.find((c) => c.base === 'memory')
+    expect(mem).toBeDefined()
+    expect(mem?.sealed).toBe(true)
+  })
+
+  it('every quantum cross is sealed — no diagonal restates its twin', () => {
+    expect(unsealed.map((c) => c.base)).toEqual([])
   })
 })
