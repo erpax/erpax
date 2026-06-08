@@ -234,6 +234,7 @@ function fullConfirm() {
   // OUT of the fast --hook/scoped modes (which never reach fullConfirm()).
   const buildChecks = [
     ['standards', 'pnpm run standards'],
+    ['readme:check', 'pnpm run readme:check'],
     ['lint', 'pnpm run lint'],
     ['lint:src', 'pnpm run lint:src'],
     ['lint:imports', 'pnpm run lint:imports'],
