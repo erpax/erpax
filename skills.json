@@ -1,0 +1,7 @@
+{
+  "version": "1",
+  "repository": "https://github.com/erpax/erpax",
+  "entryPoint": ".claude/skills/SKILL.md",
+  "contentUuid": "29c9640e-0e90-566b-96ac-988d0580776b",
+  "wellKnown": "/.well-known/ai-skills.json"
+}

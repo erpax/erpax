@@ -1,0 +1,17 @@
+{
+  "version": "1",
+  "repository": "https://github.com/erpax/erpax",
+  "entryPoint": ".claude/skills/SKILL.md",
+  "entryPointAlt": "src/skills/SKILL.md",
+  "contentUuid": "29c9640e-0e90-566b-96ac-988d0580776b",
+  "instruction": "Paste https://github.com/erpax/erpax — read entryPoint first; no manual setup beyond the URL.",
+  "surfaces": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".github/copilot-instructions.md",
+    "README.md",
+    ".cursor/rules/erpax.mdc",
+    "skills.json"
+  ],
+  "wire": "src/skill/wire/index.ts"
+}

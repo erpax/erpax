@@ -1,5 +1,25 @@
 /** skill/router — catch-all skill corpus router barrel. */
+export {
+  wireFromRepoUrl,
+  normalizeErpaxRepoUrl,
+  ERPAX_CANONICAL_REPO,
+  ERPAX_SKILL_ENTRY,
+  ERPAX_SKILL_ENTRY_ALT,
+  ERPAX_SKILL_ENTRY_CONTENT_UUID,
+  ERPAX_AGENT_SURFACES,
+  type WireFromRepoUrl,
+  type WireFromRepoUrlResult,
+  type WireFromRepoUrlError,
+} from '../wire'
 export { SKILL_INDEX } from './skills.index'
+export {
+  loadSkillByAtomPath,
+  sealSkillExcerpt,
+  skillFileForAtomPath,
+  DEFAULT_SKILL_EXCERPT_CHARS,
+  type SealedSkillExcerpt,
+  type LazySkillLoadOpts,
+} from './lazy-load'
 export { skillRouterPlugin } from './plugin'
 export {
   connectFrontmatter,
@@ -8,7 +28,25 @@ export {
   renderFrontmatter,
   materializeSkillFrontmatter,
   verifySkillFrontmatter,
+  verifySignatures,
+  parseSignaturesFromText,
+  signaturesFromStages,
+  signaturesMatch,
   buildFrontmatterGraph,
   graphConnectivity,
+  parseQuantumSkill,
+  generateQuantumSkill,
+  upgradeQuantumSkillText,
+  inferQuantumEnvironment,
+  entangledFieldsOf,
+  mergeEntangledFields,
+  collapseTriggersOf,
+  isQuantumSkillPath,
+  type QuantumSkillParsed,
+  type QuantumSkillModel,
+  type QuantumEnvironment,
+  type EntangledField,
   type ConnectedFrontmatter,
+  type FrontmatterSignatures,
+  type FrontmatterStageSignature,
 } from './upgrade'

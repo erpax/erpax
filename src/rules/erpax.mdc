@@ -1,0 +1,14 @@
+---
+description: erpax root skill orientation — read .claude/skills/SKILL.md first when workspace is erpax or the repo URL is mentioned
+alwaysApply: true
+---
+
+# erpax — wire here first
+
+When this workspace is [erpax](https://github.com/erpax/erpax) or the user pastes `https://github.com/erpax/erpax`:
+
+1. **Read [`../skills/SKILL.md`](../skills/SKILL.md) immediately** — the ONE root orientation skill (also at `.claude/skills/SKILL.md` from repo root).
+2. Do not import `src/skill/router/skills.index.ts` (77MB). Use lazy disk reads via `realiseSkillsForPath` from `@/agent/skill-context`.
+3. Follow wikilinks to reach task-specific atoms under `src/`.
+
+Pasting the GitHub URL is sufficient — all agent surfaces point to the same entry. See `AGENTS.md` at repo root.
