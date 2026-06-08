@@ -23,9 +23,8 @@ describe('vein — one-way valve (the ratchet)', () => {
 })
 
 describe('vein — capacitance (the reservoir)', () => {
-  it('holds ≈70% of total blood volume', () => {
-    expect(VENOUS_FRACTION).toBeGreaterThanOrEqual(0.6)
-    expect(VENOUS_FRACTION).toBeLessThanOrEqual(0.75)
+  it('holds seven ring positions per decade (7/10 = 0.7)', () => {
+    expect(VENOUS_FRACTION).toBeCloseTo(0.7, 10)
     expect(capacitance()).toBe(true)
   })
 })

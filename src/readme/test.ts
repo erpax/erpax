@@ -24,12 +24,18 @@ import {
   deriveFolderModel,
   deriveFolderAccounting,
   buildFolderReadmeContext,
+  buildReadmeCorpusContext,
   buildReadmeTypographyGraph,
   renderFolderReadme,
   folderReadmeUuid,
   listAtomPaths,
+  deriveCorpusAnalytics,
+  aggregateCorpusAnalytics,
+  buildBindingsByAtom,
   type ReadmeModel,
 } from '@/readme'
+import { parseWranglerBindings } from '@/cloudflare'
+import { readFileSync } from 'node:fs'
 import { conserves } from '@/conservation'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import { UUID_MATRIX_ROOT } from '@/uuid/matrix'
@@ -59,6 +65,16 @@ const FIXED: ReadmeModel = {
   payload: ['payload 4.0.0'],
   stack: ['zod 3.25.76'],
   node: 'node >=20',
+  analytics: {
+    folderCount: 3,
+    sealed: 1,
+    balanced: 3,
+    meanBondDegree: 4.5,
+    totalVariance: 0,
+    withBindings: 0,
+    distinctStandards: 2,
+    byHoro: [{ digit: 1, measure: 'base', atoms: 1, sealed: 1 }],
+  },
 }
 
 describe('readme — the README is a diamond', () => {
@@ -180,5 +196,36 @@ describe('readme — per-folder debit/credit statement', () => {
     expect(g.wikilinkCount).toBeGreaterThan(100)
     expect(g.analysisCount).toBeGreaterThan(0)
     expect(g.organs.length).toBeGreaterThanOrEqual(8)
+  })
+
+  it('cloudflare atom README lists wrangler bindings', () => {
+    const ctx = buildReadmeCorpusContext()
+    const m = deriveFolderModel('cloudflare', process.cwd(), ctx)
+    const md = renderFolderReadme(m)
+    expect(m.bindings.length).toBeGreaterThan(20)
+    expect(md).toContain('## [[cloudflare]] bindings')
+    expect(md).toContain('d1_databases')
+    expect(md).toContain('## analytics')
+  })
+
+  it('readme atom cites standards from banners', () => {
+    const ctx = buildReadmeCorpusContext()
+    const m = deriveFolderModel('readme', process.cwd(), ctx)
+    expect(m.standards.some((s) => s.id.includes('RFC 9562'))).toBe(true)
+    expect(renderFolderReadme(m)).toContain('## [[standards]]')
+  })
+
+  it('aggregateCorpusAnalytics is deterministic', () => {
+    const a = deriveCorpusAnalytics()
+    const b = deriveCorpusAnalytics()
+    expect(a).toEqual(b)
+    expect(a.folderCount).toBeGreaterThan(100)
+    expect(a.distinctStandards).toBeGreaterThan(10)
+  })
+
+  it('buildBindingsByAtom maps TYPE_LINKS atoms', () => {
+    const text = readFileSync(join(process.cwd(), 'wrangler.jsonc'), 'utf8')
+    const map = buildBindingsByAtom(parseWranglerBindings(text))
+    expect((map.get('database') ?? []).some((b) => b.name === 'D1')).toBe(true)
   })
 })

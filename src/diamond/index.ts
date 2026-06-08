@@ -21,8 +21,11 @@
  * @audit model computed from live tree + factory opts; never hand-asserted
  * @see ./SKILL.md — ../readme — ../method — ../quantum/boundary — ../factory
  */
+import { createRequire } from 'node:module'
 import { existsSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
+
+const requireAtom = createRequire(import.meta.url)
 import { toAtomPath } from '@/path'
 import { deriveFolderModel, buildFolderReadmeContext, type FolderReadmeModel } from '@/readme'
 import { methodPath, atomPathOf, parseMethodExports, type MethodDiamond } from '@/method'
@@ -65,8 +68,6 @@ import {
   diamondFileViolations,
   diamondFilesGuardian,
 } from './files'
-import { computeCssDiamond } from '@/css'
-import { portDiamond } from '@/port'
 export {
   ALLOWED_DIAMOND_FILES,
   TRINITY_FORM,
@@ -477,6 +478,7 @@ function computeCssKindDiamond(
   content: string | undefined,
   cwd: string,
 ): DiamondComputation {
+  const { computeCssDiamond } = requireAtom('@/css') as typeof import('@/css')
   const css = computeCssDiamond({ path, content, cwd })
   const model: DiamondModel = {
     kind: 'file',
@@ -504,6 +506,7 @@ function computePortKindDiamond(
   targetLang: string,
   atomPath: string,
 ): DiamondComputation {
+  const { portDiamond } = requireAtom('@/port') as typeof import('@/port')
   const port = portDiamond(sourceLang, targetLang, atomPath)
   const model: DiamondModel = {
     kind: 'atom',

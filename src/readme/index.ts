@@ -42,7 +42,15 @@ import {
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
-import { cloudflareAiAccountingExtras } from '@/cloudflare/ai'
+import {
+  cloudflareAiAccountingExtras,
+  isAiRelatedBinding,
+  atomsLinkedByBindingType,
+  bindingAtomPath,
+  parseWranglerBindings,
+  type WranglerBindingEntry,
+} from '@/cloudflare'
+import { STANDARDS_CATALOGUE } from '../standards/catalogue'
 import {
   buildAnalysisTypographyGraph,
   atomTypographyContext,
@@ -73,6 +81,51 @@ export interface AxisFacet {
   readonly atoms: number
 }
 
+/** One wrangler binding related to an atom (via TYPE_LINKS or cloudflare subtree). */
+export interface FolderBindingRef {
+  readonly type: string
+  readonly name: string
+  readonly atomPath: string
+}
+
+/** One cited standard on an atom (banner · collection factory · catalogue cross-ref). */
+export interface FolderStandardRef {
+  readonly id: string
+  readonly source: 'banner' | 'collection' | 'catalogue'
+}
+
+/** Structured per-atom metrics — rolls up to corpus analytics on the root README. */
+export interface FolderAnalytics {
+  readonly bondDegree: number
+  readonly sealed: 0 | 1
+  readonly horo: number | null
+  readonly variance: number
+  readonly balanced: 0 | 1
+  readonly trinitySum: number
+  readonly bindingCount: number
+  readonly standardCount: number
+}
+
+/** Horo-ring rollup row for corpus analytics. */
+export interface CorpusHoroRollup {
+  readonly digit: number
+  readonly measure: string
+  readonly atoms: number
+  readonly sealed: number
+}
+
+/** Aggregated metrics from every per-folder README model. */
+export interface CorpusAnalytics {
+  readonly folderCount: number
+  readonly sealed: number
+  readonly balanced: number
+  readonly meanBondDegree: number
+  readonly totalVariance: number
+  readonly withBindings: number
+  readonly distinctStandards: number
+  readonly byHoro: readonly CorpusHoroRollup[]
+}
+
 /** The README's content model — a pure projection of the live tree. */
 export interface ReadmeModel {
   readonly name: string
@@ -91,6 +144,7 @@ export interface ReadmeModel {
   readonly payload: readonly string[]
   readonly stack: readonly string[]
   readonly node: string
+  readonly analytics: CorpusAnalytics
 }
 
 const SRC = 'src'
@@ -238,6 +292,7 @@ export function deriveModel(cwd: string = process.cwd()): ReadmeModel {
     node: Object.entries(engines)
       .map(([k, v]) => `${k} ${v}`)
       .join(' · '),
+    analytics: deriveCorpusAnalytics(cwd),
   }
 }
 
@@ -305,6 +360,23 @@ export function renderReadme(model: ReadmeModel): string {
     `- **${model.skills}** \`SKILL.md\` — the form (antimatter)`,
     `- **${model.index}** \`index.ts\` — the code (matter)`,
     `- **${model.tests}** \`test.ts\` — the proof`,
+    '',
+    '## corpus analytics',
+    '',
+    'Every per-folder README carries structured analytics (bond degree · seal · horo · variance · bindings · standards);',
+    'this section rolls them up from the live tree.',
+    '',
+    `- **${model.analytics.sealed}** / **${model.analytics.folderCount}** sealed · **${model.analytics.balanced}** / **${model.analytics.folderCount}** balanced`,
+    `- mean bond degree \`${model.analytics.meanBondDegree}\` · total variance \`${model.analytics.totalVariance}\``,
+    `- **${model.analytics.withBindings}** atoms with [[cloudflare]] bindings · **${model.analytics.distinctStandards}** distinct [[standards]] cited`,
+    '',
+    '| digit | measure | atoms | sealed |',
+    '| ----: | ------- | ----: | -----: |',
+  )
+  for (const row of model.analytics.byHoro) {
+    L.push(`| ${row.digit} | ${row.measure} | ${row.atoms} | ${row.sealed} |`)
+  }
+  L.push(
     '',
     '## scripts',
     '',
@@ -383,6 +455,9 @@ export interface FolderReadmeModel {
   readonly linksTotal: number
   readonly escapes: number
   readonly typography: FolderTypographyFrame
+  readonly bindings: readonly FolderBindingRef[]
+  readonly standards: readonly FolderStandardRef[]
+  readonly analytics: FolderAnalytics
   readonly sealed: boolean
   readonly statement: FolderAccounting
 }
@@ -405,6 +480,8 @@ const foldedPathSet = (): Set<string> => {
 export interface FolderReadmeContext {
   readonly resolver: (target: string) => boolean
   readonly folded: Set<string>
+  readonly bindingsByAtom?: ReadonlyMap<string, readonly FolderBindingRef[]>
+  readonly standardsByAtom?: ReadonlyMap<string, readonly FolderStandardRef[]>
 }
 
 const sumAmounts = (lines: readonly StatementLine[]): number =>
@@ -412,6 +489,179 @@ const sumAmounts = (lines: readonly StatementLine[]): number =>
 
 const onHoroRing = (horo: number | null): boolean =>
   horo !== null && HORO_DIGITS.includes(horo as (typeof HORO_DIGITS)[number])
+
+const BANNER_TAG_RE = /@(?:standard|accounting|compliance|audit|rfc)\s+([^\n*]+)/g
+const COLLECTION_STANDARDS_RE = /standards:\s*\[([\s\S]*?)\]/g
+
+const loadWranglerEntries = (cwd: string): readonly WranglerBindingEntry[] => {
+  const path = join(cwd, 'wrangler.jsonc')
+  if (!existsSync(path)) return []
+  try {
+    return parseWranglerBindings(readFileSync(path, 'utf8'))
+  } catch {
+    return []
+  }
+}
+
+const bindingRefOf = (entry: WranglerBindingEntry): FolderBindingRef => ({
+  type: entry.type,
+  name: entry.bindingName,
+  atomPath: bindingAtomPath(entry.type, entry.bindingName),
+})
+
+/** Map each atom path to wrangler bindings (TYPE_LINKS · cloudflare subtree · AI stack). */
+export function buildBindingsByAtom(
+  entries: readonly WranglerBindingEntry[],
+): ReadonlyMap<string, readonly FolderBindingRef[]> {
+  const map = new Map<string, FolderBindingRef[]>()
+  const add = (atomPath: string, ref: FolderBindingRef): void => {
+    const arr = map.get(atomPath) ?? []
+    if (!arr.some((r) => r.type === ref.type && r.name === ref.name)) arr.push(ref)
+    map.set(atomPath, arr)
+  }
+  for (const entry of entries) {
+    const ref = bindingRefOf(entry)
+    add('cloudflare', ref)
+    if (isAiRelatedBinding(entry)) add('cloudflare/ai', ref)
+    for (const link of atomsLinkedByBindingType(entry.type)) add(link, ref)
+  }
+  for (const [k, v] of map) {
+    map.set(
+      k,
+      v.sort((a, b) => a.type.localeCompare(b.type) || a.name.localeCompare(b.name)),
+    )
+  }
+  return map
+}
+
+const parseStandardsFromText = (
+  text: string,
+  source: FolderStandardRef['source'],
+  acc: Map<string, FolderStandardRef['source']>,
+): void => {
+  if (source === 'banner') {
+    for (const m of text.matchAll(BANNER_TAG_RE)) acc.set(m[1]!.trim(), source)
+    return
+  }
+  for (const m of text.matchAll(COLLECTION_STANDARDS_RE)) {
+    for (const sm of m[1]!.matchAll(/['"]([^'"]+)['"]/g)) acc.set(sm[1]!.trim(), source)
+  }
+}
+
+/** Map each atom path to cited standards (banners · collection factory · catalogue). */
+export function buildStandardsByAtom(
+  cwd: string,
+  atomPaths: readonly string[],
+): ReadonlyMap<string, readonly FolderStandardRef[]> {
+  const map = new Map<string, readonly FolderStandardRef[]>()
+  for (const atomPath of atomPaths) {
+    const dir = join(cwd, SRC, atomPath)
+    const raw = new Map<string, FolderStandardRef['source']>()
+    for (const file of ['index.ts', 'SKILL.md'] as const) {
+      const p = join(dir, file)
+      if (!existsSync(p)) continue
+      try {
+        const text = readFileSync(p, 'utf8')
+        parseStandardsFromText(text, 'banner', raw)
+        if (file === 'index.ts') parseStandardsFromText(text, 'collection', raw)
+      } catch {
+        /* unreadable — skip */
+      }
+    }
+    const prefix = `src/${atomPath}/`
+    for (const entry of STANDARDS_CATALOGUE) {
+      if (entry.modules.some((m) => m.path.startsWith(prefix)) && !raw.has(entry.id)) {
+        raw.set(entry.id, 'catalogue')
+      }
+    }
+    if (raw.size === 0) continue
+    map.set(
+      atomPath,
+      [...raw.entries()]
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([id, source]) => ({ id, source })),
+    )
+  }
+  return map
+}
+
+/** Build folder analytics facet — pure on folder model fields. */
+export function folderAnalyticsOf(
+  fields: Pick<
+    FolderReadmeModel,
+    'typography' | 'sealed' | 'horo' | 'statement' | 'form' | 'code' | 'proof' | 'bindings' | 'standards'
+  >,
+): FolderAnalytics {
+  return {
+    bondDegree: fields.typography.bondDegree,
+    sealed: fields.sealed ? 1 : 0,
+    horo: fields.horo,
+    variance: fields.statement.variance,
+    balanced: fields.statement.balanced ? 1 : 0,
+    trinitySum: fields.form + fields.code + fields.proof,
+    bindingCount: fields.bindings.length,
+    standardCount: fields.standards.length,
+  }
+}
+
+/** Roll up per-folder analytics into corpus metrics — pure, deterministic. */
+export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): CorpusAnalytics {
+  const folderCount = models.length
+  let sealed = 0
+  let balanced = 0
+  let bondSum = 0
+  let totalVariance = 0
+  let withBindings = 0
+  const standardIds = new Set<string>()
+  const byHoroAcc = new Map<number, { atoms: number; sealed: number }>()
+  for (const m of models) {
+    if (m.sealed) sealed++
+    if (m.statement.balanced) balanced++
+    bondSum += m.analytics.bondDegree
+    totalVariance += m.analytics.variance
+    if (m.bindings.length > 0) withBindings++
+    for (const s of m.standards) standardIds.add(s.id)
+    const digit = m.horo ?? 0
+    const row = byHoroAcc.get(digit) ?? { atoms: 0, sealed: 0 }
+    row.atoms++
+    if (m.sealed) row.sealed++
+    byHoroAcc.set(digit, row)
+  }
+  const meanBondDegree = folderCount > 0 ? Math.round((bondSum * 100) / folderCount) / 100 : 0
+  const byHoro: CorpusHoroRollup[] = [...byHoroAcc.entries()]
+    .sort((a, b) => {
+      const ai = HORO_DIGITS.indexOf(a[0] as (typeof HORO_DIGITS)[number])
+      const bi = HORO_DIGITS.indexOf(b[0] as (typeof HORO_DIGITS)[number])
+      if (ai >= 0 && bi >= 0) return ai - bi
+      if (ai >= 0) return -1
+      if (bi >= 0) return 1
+      return a[0] - b[0]
+    })
+    .map(([digit, row]) => ({
+      digit,
+      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
+      atoms: row.atoms,
+      sealed: row.sealed,
+    }))
+  return {
+    folderCount,
+    sealed,
+    balanced,
+    meanBondDegree,
+    totalVariance,
+    withBindings,
+    distinctStandards: standardIds.size,
+    byHoro,
+  }
+}
+
+/** Derive corpus analytics from every atom folder README model. */
+export function deriveCorpusAnalytics(cwd: string = process.cwd()): CorpusAnalytics {
+  const graph = buildReadmeTypographyGraph(cwd)
+  const ctx = buildReadmeCorpusContext(cwd)
+  const models = listAtomPaths(cwd).map((p) => deriveFolderModel(p, cwd, ctx, graph))
+  return aggregateCorpusAnalytics(models)
+}
 
 type FolderAccountingInput = Pick<
   FolderReadmeModel,
@@ -590,6 +840,18 @@ export function buildFolderReadmeContext(srcRoot: string): FolderReadmeContext {
   return { resolver, folded: foldedPathSet() }
 }
 
+/** Folder context + wrangler bindings + standards index (one corpus scan). */
+export function buildReadmeCorpusContext(cwd: string = process.cwd()): FolderReadmeContext {
+  const srcRoot = join(cwd, SRC)
+  const base = buildFolderReadmeContext(srcRoot)
+  const atomPaths = listAtomPaths(cwd)
+  return {
+    ...base,
+    bindingsByAtom: buildBindingsByAtom(loadWranglerEntries(cwd)),
+    standardsByAtom: buildStandardsByAtom(cwd, atomPaths),
+  }
+}
+
 const frameOf = (
   graph: AnalysisTypographyGraph | undefined,
   atomPath: string,
@@ -621,14 +883,18 @@ export function deriveFolderModel(
   const form = (existsSync(join(dir, 'SKILL.md')) ? 1 : 0) as 0 | 1
   const code = (existsSync(join(dir, 'index.ts')) || existsSync(join(dir, 'index.tsx')) ? 1 : 0) as 0 | 1
   const proof = (
-    existsSync(join(dir, 'test.ts')) || readdirSync(dir).some((f) => f.endsWith('.test.ts')) ? 1 : 0
+    existsSync(dir) &&
+    (existsSync(join(dir, 'test.ts')) || readdirSync(dir).some((f) => f.endsWith('.test.ts')))
+      ? 1
+      : 0
   ) as 0 | 1
   const leaf = atomPath.split('/').pop() ?? atomPath
-  const node = nodeOf(leaf)
+  const node = nodeOf(atomPath) ?? nodeOf(leaf)
+  const matrixAtom = node?.atom ?? leaf
   const horo = node?.horo ?? null
   const uuid = node?.uuid ?? null
-  const bondsIn = backlinksOf(leaf).length
-  const bondsOut = neighborsOf(leaf).length
+  const bondsIn = backlinksOf(matrixAtom).length
+  const bondsOut = neighborsOf(matrixAtom).length
   const folded = ctx.folded.has(atomPath)
   let linksTotal = 0
   let linksResolved = 0
@@ -711,11 +977,27 @@ export function deriveFolderModel(
       escapes === 0 &&
       statement.balanced,
   )
+  const bindings = ctx.bindingsByAtom?.get(atomPath) ?? []
+  const standards = ctx.standardsByAtom?.get(atomPath) ?? []
+  const analytics = folderAnalyticsOf({
+    typography,
+    sealed,
+    horo,
+    statement,
+    form,
+    code,
+    proof,
+    bindings,
+    standards,
+  })
   return {
     atomPath,
     leaf,
     ...fields,
     measure: measureOf(horo),
+    bindings,
+    standards,
+    analytics,
     sealed,
     statement,
   }
@@ -764,6 +1046,26 @@ export function renderFolderReadme(model: FolderReadmeModel): string {
     }`,
     `- graph root \`${model.typography.graphRoot || '—'}\``,
     '',
+    '## [[cloudflare]] bindings',
+    '',
+    ...(model.bindings.length > 0
+      ? model.bindings.map(
+          (b) => `- \`${b.type}\`/\`${b.name}\` · atom \`${b.atomPath}\``,
+        )
+      : ['—']),
+    '',
+    '## [[standards]]',
+    '',
+    ...(model.standards.length > 0
+      ? model.standards.map((s) => `- \`${s.id}\` · ${s.source}`)
+      : ['—']),
+    '',
+    '## analytics',
+    '',
+    `- bond degree \`${model.analytics.bondDegree}\` · sealed \`${model.analytics.sealed}\` · horo \`${model.analytics.horo ?? '—'}\``,
+    `- variance \`${model.analytics.variance}\` · balanced \`${model.analytics.balanced}\` · trinity sum \`${model.analytics.trinitySum}\``,
+    `- bindings \`${model.analytics.bindingCount}\` · standards \`${model.analytics.standardCount}\``,
+    '',
     '## identity',
     '',
     `- uuid \`${model.uuid ?? '—'}\``,
@@ -794,7 +1096,7 @@ export function listAtomPaths(cwd: string = process.cwd()): string[] {
 
 export function generateFolderReadme(atomPath: string, cwd: string = process.cwd()): string {
   const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  const ctx = buildReadmeCorpusContext(cwd)
   return renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx, graph))
 }
 
@@ -926,7 +1228,7 @@ export interface ComputedFaceDrift {
 /** Write README.md + LLM.md + diamond.json in every atom folder; returns count written. */
 export function materializeComputedFaces(cwd: string = process.cwd()): number {
   const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  const ctx = buildReadmeCorpusContext(cwd)
   let n = 0
   for (const atomPath of listAtomPaths(cwd)) {
     const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
@@ -945,7 +1247,7 @@ export function materializeComputedFaces(cwd: string = process.cwd()): number {
 /** Drift gate for all computed faces per folder. */
 export function verifyComputedFaces(cwd: string = process.cwd()): ComputedFaceDrift {
   const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  const ctx = buildReadmeCorpusContext(cwd)
   const readmeDrift: string[] = []
   const llmDrift: string[] = []
   const diamondDrift: string[] = []

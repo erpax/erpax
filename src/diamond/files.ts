@@ -30,7 +30,7 @@ import {
 /** Must match @/readme COMPUTED_FACES — inlined to break diamond ↔ readme circular init. */
 const COMPUTED_FACES = ['README.md', 'LLM.md', 'diamond.json'] as const
 type ComputedFace = (typeof COMPUTED_FACES)[number]
-import { folderInputToDiamond, renderDiamondJson, type DiamondModel } from '@/diamond/projection'
+import { folderInputToDiamond, renderDiamondJson, type DiamondModel } from './projection'
 import { computeBoundary } from '@/quantum/boundary'
 
 const SRC = 'src'

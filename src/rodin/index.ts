@@ -68,6 +68,12 @@ export function reverseIsInverse(): { product: number; forward: number[]; revers
   return { product: composeSteps(2, 5), forward: f, reverse: r, mirrors: JSON.stringify(r) === JSON.stringify([f[0]!, ...f.slice(1).reverse()]) }
 }
 
+/** Rodin distributed-flow share — 6 helix positions of 9 (2/3), not `0.666`. */
+export const RODIN_FLOW_RATIO = DOUBLING.length / (DOUBLING.length + AXIS.length)
+
+/** Rodin creativity/control share — 3 axis positions of 9 (1/3), not `0.333`. */
+export const RODIN_CONTROL_RATIO = AXIS.length / (DOUBLING.length + AXIS.length)
+
 /** PROOF: {3,6,9} is disjoint from the helix; 3↔6 swap, 9 is fixed; the 6:3 = 2/3 split. */
 export function axisOffCircuit(): { triad: number[]; disjoint: boolean; under2: { from: number; to: number }[]; nineFixed: boolean; flow: number; control: number } {
   const helix = new Set(orbit(2))

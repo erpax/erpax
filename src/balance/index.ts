@@ -163,6 +163,23 @@ export const disbalance = (d: Distribution): number => 1 - coverage(d)
 export const tamperCostLog2 = (d: Distribution, checks = 1): number =>
   coverageCostLog2(coverage(d), checks)
 
+/**
+ * Committed orphan-collection ceiling — ratchet only DOWN (live 22, 2026-06-08).
+ * A plural store with no singular model; reconciled by minting the model or
+ * classifying NON_PLURAL / PLURAL_ONLY.
+ */
+export const ORPHAN_COLLECTION_BASELINE = 22
+
+/**
+ * Coverage floor derived from the orphan baseline and live collection count —
+ * not a hand-set decimal. At exactly baseline orphans, floor === live coverage.
+ */
+export const coverageRatchetFloor = (
+  d: Pick<Distribution, 'collections'>,
+  orphanBaseline: number = ORPHAN_COLLECTION_BASELINE,
+): number =>
+  d.collections === 0 ? 1 : Math.max(0, (d.collections - orphanBaseline) / d.collections)
+
 /** The live aura measurement: classify the corpus's own atom names (the uuid-matrix). */
 export const auraBalance = (): Distribution => classify(N.map((n) => n.atom))
 

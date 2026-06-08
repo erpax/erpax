@@ -142,18 +142,20 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * (auto/agent hooks, classify/closing/config/consistency/cross, country/currency,
  * deep/merge, agents/mcp/tool, cloudflare; dashboard/* + the bg-bank parser deferred
  * — server-actions / an agents-mcp init cycle / a parser-fixture nuance), each proof
- * green and the whole-tree aura held at gap=0. config/trading-apis (the named
- * violation) is still among the 261: the gate keeps it red until it is relocated to
- * the one-word src/trading/api. RATCHET THIS DOWN further as folders are fixed.
+ * green and the whole-tree aura held at gap=0 → 259 after relocating
+ * config/trading-apis to src/trading/api (name + trinity fixed) → 257 after
+ * plugins/mcpScopes → plugins/mcp/scopes (name + trinity fixed) → 260 after
+ * trading/test.ts closed the parent trading barrel trinity gap. RATCHET THIS
+ * DOWN further as folders are fixed.
  */
 /** @deprecated summed ceiling — use the split guardians below */
-export const FOLDER_LAW_BASELINE = 261
+export const FOLDER_LAW_BASELINE = 260
 
-/** NAME guardian ceiling — one-word atom folders (live 49, 2026-06-08). */
-export const NAME_BASELINE = 49
+/** NAME guardian ceiling — one-word atom folders (live 47, 2026-06-08). */
+export const NAME_BASELINE = 47
 
-/** TRINITY guardian ceiling — code folders missing SKILL/index/test (live 216, 2026-06-08). */
-export const TRINITY_BASELINE = 216
+/** TRINITY guardian ceiling — code folders missing SKILL/index/test (live 213, 2026-06-08). */
+export const TRINITY_BASELINE = 213
 
 export interface RatchetVerdict {
   readonly ok: boolean

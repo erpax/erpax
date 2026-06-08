@@ -50,7 +50,7 @@ export interface Law {
  * than the constitution's amendment supermajority (`AMENDMENT_RULE`, 2/3). The
  * gap between the two thresholds IS the entrenchment of the foundation.
  */
-export const LEGISLATIVE_RULE: ProposalRule = { quorum: 0.5, threshold: 0.5 }
+export const LEGISLATIVE_RULE: ProposalRule = { quorum: 1 / 2, threshold: 1 / 2 }
 
 function contentUuidOf(rank: LawRank, title: string, text: string): string {
   return uuid({ rank, title, text })

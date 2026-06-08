@@ -47,6 +47,20 @@ export function digitalRoot(n: number): number {
   return dr
 }
 
+/** A horo digit as a normalized ratio — e.g. `horoRatio(9)` ⇒ 9/10 (unity per decade). */
+export function horoRatio(digit: HoroStep | number, divisor = 10): number {
+  return Number(digit) / divisor
+}
+
+/**
+ * Imperial-standard exact rational — halves, thirds, quarters, and horo decade
+ * ratios. Never a decimal literal where an exact rational exists (`0.333` drifts
+ * from `1/3`; `horoRatio(9)` is 9/10, not `0.9` hand-set).
+ */
+export function imperialRatio(numerator: number, denominator: number): number {
+  return numerator / denominator
+}
+
 /**
  * Compose two states via product mod 9 (digital root). Always lands back on the
  * ring (0 → 9, the absorbing unity). Two states compose to a third — the lattice

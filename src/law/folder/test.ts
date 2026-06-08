@@ -38,18 +38,22 @@ describe('folder: the folder-shape law (computed)', () => {
     expect(masked.sealed).toBe(false)
   })
 
-  // The gate DETECTS the named violation: config/trading-apis breaks BOTH rules —
-  // a hyphenated (non-one-word) name AND a code folder missing its SKILL.md/test.ts.
-  // (Its relocation to the one-word src/trading/api home is the prescribed fix,
-  // deferred while a live builder is mid-wave on that exact file — see SKILL.md.)
-  it('detects the named violation config/trading-apis (name + trinity)', () => {
-    const named = (arr: { folder: string }[]) => arr.some((x) => x.folder === 'config/trading-apis')
-    // Only assert while the file is present (the builder may relocate it at any time);
-    // once it is gone this is vacuously fine and the baseline ratchets down.
-    if (existsSync(join(process.cwd(), 'src/config/trading-apis/index.ts'))) {
-      expect(named(v.name)).toBe(true) // hyphen → not one word
-      expect(named(v.trinity)).toBe(true) // index.ts-only → missing SKILL.md + test.ts
-    }
+  // plugins/mcpScopes was a camelCase name+trinity violation — relocated to
+  // src/plugins/mcp/scopes (one-word path, full trinity). The gate must stay green.
+  it('plugins/mcp/scopes is conforming after mcpScopes relocation', () => {
+    const folders = new Set([...v.name.map((n) => n.folder), ...v.trinity.map((t) => t.folder)])
+    expect(folders.has('plugins/mcpScopes')).toBe(false)
+    expect(folders.has('plugins/mcp/scopes')).toBe(false)
+    expect(existsSync(join(process.cwd(), 'src/plugins/mcp/scopes/index.ts'))).toBe(true)
+  })
+
+  // config/trading-apis was the canonical name+trinity violation — relocated to
+  // src/trading/api (one-word path, full trinity). The gate must stay green.
+  it('trading/api is conforming after trading-apis relocation', () => {
+    const folders = new Set([...v.name.map((n) => n.folder), ...v.trinity.map((t) => t.folder)])
+    expect(folders.has('config/trading-apis')).toBe(false)
+    expect(folders.has('trading/api')).toBe(false)
+    expect(existsSync(join(process.cwd(), 'src/trading/api/index.ts'))).toBe(true)
   })
 
   // The law atom obeys its own law (dogfood — the guardian is tamper-proof).

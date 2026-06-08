@@ -56,3 +56,7 @@ Every diamond — repository, folder, file, method, README, CSS facet, Payload *
 **Matter-twin:** `src/diamond/index.ts` — `DiamondModel` · `CollectionDiamondModel` · `deriveDiamond` · `deriveCollectionDiamond` · `diamondUuid` · `verifyDiamond`. Projections (not parallel schemas): [[readme]] FolderReadmeModel → `folderModelToDiamond`; [[method]] MethodDiamond → `methodModelToDiamond`; [[factory]]/createAccountingCollection → `deriveCollectionDiamond` (tamper-proof uuid + horoStates are diamond facets injected at config-build).
 
 **Law (additive) — [[law]]: all diamonds share ONE DiamondModel — folders, files, methods, READMEs, and Payload collections in every [[dimension]] project the same shape; one verifier, one uuid pipeline; forging any diamond requires forging the whole model.**
+
+**Operational memory IS the diamond lattice** ([[memory/architecture]]): walking `deriveDiamond` / `verifyDiamond` on the sealed tree IS what the system remembers — not chat, not Memories rows, not agent context. `operationalMemoryFacet(atomPath)` is the live-tree memory vertex; `architectureMemoryDigest` stable ⇒ memory stable ([[akashic]] · [[thought]]).
+
+@see [[memory/architecture]] · [[akashic]] · [[memory/session]]

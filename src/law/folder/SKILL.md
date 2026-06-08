@@ -16,7 +16,7 @@ The user's standing command, made a gate: **every atom is ONE generic lowercase 
 
 It breaks **both**: `trading-apis` is two hyphenated words, and the folder holds only `index.ts` — no `SKILL.md`, no `test.ts`. It passed every existing gate because the file-purity sibling law ([[quaternary]]) flags only *disallowed* files — it never checks the folder **name** and never a **missing** trinity member. This law closes that gap: `folderViolations()` now reports `config/trading-apis` under **both** name and trinity, and `test.ts` asserts that detection.
 
-The prescribed fix is to relocate the catalogue to the one-word home its own header already names for its clients — `src/trading/api/index.ts` (with the full trinity), updating the one importer (`src/trading/api/client/index.ts`'s `import … from '@/config/trading-apis'`). That relocation is **deferred, not done**: a live builder is mid-wave on that exact file (it imports and is actively editing it), and racing a concurrent writer corrupts both works ([[merge]] is a sequence, not a loop). The gate does not need the file moved to do its job — it keeps `config/trading-apis` red until someone relocates it, which is the whole point.
+The prescribed fix was to relocate the catalogue to the one-word home its own header already names for its clients — `src/trading/api/index.ts` (with the full trinity), updating importers from `@/config/trading-apis` to `@/trading/api`. **Done** — the NAME and TRINITY guardians ratcheted down by one each.
 
 ## The gate is a ratchet, not zero — but it still fails on every new violation
 

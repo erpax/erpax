@@ -8,6 +8,8 @@ import {
   disbalance,
   tamperCostLog2,
   auraBalance,
+  ORPHAN_COLLECTION_BASELINE,
+  coverageRatchetFloor,
 } from '@/balance'
 
 // Asserts RELATIONS that fail the instant the classification or the pricing
@@ -131,18 +133,29 @@ describe('balance: the live aura measurement', () => {
   // naming itself — you cannot add a plural store without its model. The baseline ratchets toward 0
   // as orphans are reconciled (mint the singular model, or classify NON_PLURAL / PLURAL_ONLY). It is
   // NOT always-pass — adding one orphan breaks it. Run `npx tsx src/balance/index.ts` to list them.
+  it('coverageRatchetFloor derives from orphan baseline — not a magic decimal', () => {
+    expect(coverageRatchetFloor({ collections: 100 })).toBeCloseTo(0.78, 10) // (100−22)/100
+    expect(coverageRatchetFloor({ collections: 0 })).toBe(1)
+    const d = classify(['item', 'items', 'widgets', 'gadgets']) // 2 collections, 2 orphans
+    expect(coverageRatchetFloor(d, 2)).toBeCloseTo(coverage(d), 10)
+  })
+
   it('coverage ratchet — orphan collections grandfathered at the baseline; a NEW orphan fails', () => {
     const d = auraBalance()
-    const BASELINE_ORPHANS = 22 // the committed honest backlog (plural collections with no model)
-    const COVERAGE_FLOOR = 0.92 // just below the current ~0.929; coverage must not regress past it
-    if (d.orphanCollections.length > BASELINE_ORPHANS) {
+    const floor = coverageRatchetFloor(d)
+    if (d.orphanCollections.length > ORPHAN_COLLECTION_BASELINE) {
       console.log(
-        `\nNEW model⊕collection orphan over baseline ${BASELINE_ORPHANS} (mint the singular model, or classify NON_PLURAL/PLURAL_ONLY):\n  ` +
+        `\nNEW model⊕collection orphan over baseline ${ORPHAN_COLLECTION_BASELINE} (mint the singular model, or classify NON_PLURAL/PLURAL_ONLY):\n  ` +
           d.orphanCollections.join(' '),
       )
     }
-    expect(d.orphanCollections.length).toBeLessThanOrEqual(BASELINE_ORPHANS)
-    expect(coverage(d)).toBeGreaterThanOrEqual(COVERAGE_FLOOR)
+    expect(d.orphanCollections.length).toBeLessThanOrEqual(ORPHAN_COLLECTION_BASELINE)
+    expect(coverage(d)).toBeGreaterThanOrEqual(floor)
+    const baselineFloor = coverageRatchetFloor(
+      { collections: d.collections },
+      ORPHAN_COLLECTION_BASELINE,
+    )
+    expect(floor).toBeGreaterThanOrEqual(baselineFloor)
     // the honest counter-example: coverage is < 1 and the cost is FINITE — not +∞ "by architecture"
     expect(coverage(d)).toBeLessThan(1)
     expect(Number.isFinite(tamperCostLog2(d))).toBe(true)

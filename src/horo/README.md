@@ -25,7 +25,7 @@
 
 - partition `horo` · sub-root `2cd52f5e-6d33-8f01-b0c1-ca7c8d435134`
 - bond degree `216` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `fe975d6e-c58a-8470-a05c-2c5f15834285` · framed by typography partition `horo` bonds `216` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `16f9351d-fa08-8f3d-b3c9-6daf3d6a1415` · framed by typography partition `horo` bonds `216` · `pnpm readme` · `pnpm readme:check`</sub>

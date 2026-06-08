@@ -22,6 +22,7 @@
  * @see ../heart (the destination) -- ../artery (the outbound pair) -- ../conservation
  */
 import { conserves, type Entry } from '@/conservation'
+import { HORO_DIGITS, horoRatio } from '@/horo'
 
 // ── 1. ONE-WAY VALVE — the ratchet ───────────────────────────────────────
 
@@ -35,9 +36,10 @@ export const flowThrough = (path: readonly number[]): number[] => path.map(valve
 
 // ── 2. CAPACITANCE — the reservoir ───────────────────────────────────────
 
-/** Veins are capacitance vessels: ≈70% of total blood volume rests in them. */
-export const VENOUS_FRACTION = 0.7
-export const capacitance = (): boolean => VENOUS_FRACTION >= 0.6 && VENOUS_FRACTION <= 0.75
+/** Veins hold the seven flow-ring positions' share of the decade — 7/10 ≈ 70% capacitance. */
+export const VENOUS_FRACTION = HORO_DIGITS.length / 10
+export const capacitance = (): boolean =>
+  VENOUS_FRACTION >= horoRatio(6) && VENOUS_FRACTION <= horoRatio(3, 4)
 
 // ── 3. RECIPROCAL RETURN — the closed loop ───────────────────────────────
 

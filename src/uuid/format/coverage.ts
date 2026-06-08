@@ -21,8 +21,12 @@
  * @see ./index.ts (encodeStructured / decodeStructured)
  */
 
+import { horoRatio } from '@/horo'
 import { decodeStructured, CAPABILITIES, SLOT_TAGS } from '@/uuid/format'
 import type { SlotName } from '@/uuid/format'
+
+/** PASS threshold for structured-uuid coverage — horo unity (9) per decade. */
+export const structuredCoveragePassThreshold = (): number => horoRatio(9)
 
 /**
  * Expected capability profile per slot. When a uuid's slot tag falls

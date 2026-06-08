@@ -1,5 +1,15 @@
 import { describe, it, expect } from 'vitest'
-import { totalOutput, efficiency, moreEfficient, wasteFraction, costEntry, type Ledger } from '@/cost'
+import {
+  totalOutput,
+  efficiency,
+  moreEfficient,
+  wasteFraction,
+  costEntry,
+  harmonicFloors,
+  bhtCollisionLog2,
+  type Ledger,
+} from '@/cost'
+import { imperialRatio } from '@/horo'
 import { isBalanced, net } from '@/entry'
 
 describe('cost — one efficiency law for every society cost (vs productivity + creativity)', () => {
@@ -31,6 +41,15 @@ describe('cost — one efficiency law for every society cost (vs productivity + 
     expect(wasteFraction(100, 60)).toBeCloseTo(0.4, 10)
     expect(wasteFraction(100, 120)).toBe(0) // clamped — productive cost can't exceed total
     expect(wasteFraction(0, 0)).toBe(0)
+  })
+
+  it('harmonic floors use exact rationals — D, D/2, D/3 (third harmonic)', () => {
+    const d = 256
+    const [preimage, birthday, bht] = harmonicFloors(d)
+    expect(preimage).toBe(d)
+    expect(birthday).toBe(d / 2)
+    expect(bht).toBe(d / 3)
+    expect(bhtCollisionLog2(d)).toBe(imperialRatio(d, 3))
   })
 
   it('costEntry accounts for a cost as a balanced double-entry (resource credited, output debited)', () => {

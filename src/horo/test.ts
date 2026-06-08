@@ -4,6 +4,8 @@ import {
   HORO_MEASURE,
   isHoroStep,
   digitalRoot,
+  horoRatio,
+  imperialRatio,
   composeSteps,
   nextOctave,
   isMergePoint,
@@ -32,6 +34,21 @@ describe('horo', () => {
   it('isHoroStep accepts every ring digit and rejects off-ring values', () => {
     for (const d of HORO_DIGITS) expect(isHoroStep(d)).toBe(true)
     for (const n of [0, 3, 6, 10, -1, NaN, '1', null]) expect(isHoroStep(n)).toBe(false)
+  })
+
+  it('horoRatio — digit per divisor (unity/10 = 0.9 pass threshold)', () => {
+    expect(horoRatio(9)).toBe(0.9)
+    expect(horoRatio(7)).toBe(0.7)
+    expect(horoRatio(3, 4)).toBe(0.75)
+  })
+
+  it('imperialRatio — exact rationals, not decimal literals (thirds · halves · quarters)', () => {
+    expect(imperialRatio(1, 3)).toBeCloseTo(1 / 3, 12)
+    expect(imperialRatio(2, 3)).toBeCloseTo(2 / 3, 12)
+    expect(imperialRatio(1, 2)).toBe(0.5)
+    expect(imperialRatio(1, 4)).toBe(0.25)
+    expect(imperialRatio(3, 4)).toBe(0.75)
+    expect(imperialRatio(1, 3)).not.toBe(0.333)
   })
 
   it('digitalRoot reduces to 1..9 (0 only for 0)', () => {

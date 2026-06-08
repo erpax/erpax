@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import {
   doublingGroup, reverseIsInverse, axisOffCircuit, nineIsVoid, octaveFixesDigit,
   cayleyIsCyclic, compositionMatrix, stateUuids, cmykKey, proof,
-  orbit, unitsMod9, DOUBLING, AXIS,
+  orbit, unitsMod9, DOUBLING, AXIS, RODIN_FLOW_RATIO, RODIN_CONTROL_RATIO,
 } from '@/rodin'
 import { UUID_MATRIX_NODES } from '@/uuid/matrix'
 
@@ -32,6 +32,9 @@ describe('rodin: vortex math = (ℤ/9ℤ) group theory, computed', () => {
     expect(a.nineFixed).toBe(true)
     expect([...AXIS].every((d) => !new Set(orbit(2)).has(d))).toBe(true)
     expect(a.flow / (a.flow + a.control)).toBeCloseTo(2 / 3)
+    expect(RODIN_FLOW_RATIO).toBe(2 / 3)
+    expect(RODIN_CONTROL_RATIO).toBe(1 / 3)
+    expect(RODIN_FLOW_RATIO).not.toBe(0.666)
   })
 
   it('9 is the void (additive identity of digital root): dr(n+9) = dr(n)', () => {

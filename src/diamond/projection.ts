@@ -7,7 +7,10 @@
  * @see ./index.ts — ../readme
  */
 import { uuid, jcsCanonicalize } from '@/integrity'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { HORO_DIGITS, HORO_MEASURE, validateHoroStates, type HoroState } from '@/horo'
+import { nodeOf, UUID_MATRIX_NODES } from '@/uuid/matrix'
 
 /** Trinity completeness — form (SKILL.md) · code (index.ts) · proof (test.ts). */
 export interface DiamondTrinity {
@@ -103,23 +106,8 @@ export interface FolderDiamondInput {
   readonly sealed: boolean
 }
 
-const WORKER_ROOTS = new Set([
-  'confirm',
-  'readme',
-  'typography',
-  'guardian',
-  'agent',
-  'mcp',
-  'run',
-  'cron',
-  'worker',
-  'seal',
-  'breath',
-  'cloudflare',
-])
-
-const PLUGIN_ROOTS = new Set(['plugin', 'plugins', 'vitepress', 'hooks'])
-const PWA_ROOTS = new Set(['pwa', 'public'])
+const WORKER_EXPORT =
+  /(?:Gate|Guardian|Confirm|generate|derive|render|compute|audit|execute|cron|Worker|folderViolations|folderGuardians|typographyGuardian)/i
 
 const pathUnder = (atomPath: string, root: string): boolean =>
   atomPath === root || atomPath.startsWith(`${root}/`)
@@ -131,28 +119,68 @@ const pathUnderAny = (atomPath: string, roots: ReadonlySet<string>): boolean => 
   return false
 }
 
+/** Worker roots — scanned from matrix paths + live barrels (never hand-listed). */
+let workerRootsCache: ReadonlySet<string> | undefined
+const workerRoots = (): ReadonlySet<string> => {
+  if (workerRootsCache) return workerRootsCache
+  const roots = new Set<string>()
+  const src = join(process.cwd(), 'src')
+  for (const n of UUID_MATRIX_NODES) {
+    const paths: string[] = n.path ? [n.path] : [...(n.members ?? [])]
+    for (const p of paths) {
+      if (p.includes('/')) continue
+      try {
+        const body = readFileSync(join(src, p, 'index.ts'), 'utf8')
+        if (WORKER_EXPORT.test(body)) roots.add(p)
+      } catch {
+        /* no code barrel at this matrix path */
+      }
+    }
+  }
+  workerRootsCache = roots
+  return roots
+}
+
 export const measureOf = (digit: number | null): string | null => {
   if (digit === null) return null
   const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
   return i >= 0 ? HORO_MEASURE[i]! : String(digit)
 }
 
-/** Which deployment faces materialise for this diamond. */
+/** Which deployment faces materialise — path · kind · matrix scan · exports (never hand-listed roots). */
 export function deploymentFaces(model: DiamondModel | CollectionDiamondModel): DeploymentFaces {
   const p = model.atomPath
-  const worker =
-    model.kind === 'method' ||
-    pathUnderAny(p, WORKER_ROOTS) ||
-    p.startsWith('cloudflare/') ||
-    model.cloudflare?.workerFace === true ||
-    p.endsWith('/hooks') ||
-    p.includes('/hook')
+  const root = p.split('/')[0] ?? p
+  const node = nodeOf(p) ?? nodeOf(root)
+
+  const pwa =
+    root === 'public' ||
+    root === 'pwa' ||
+    p.startsWith('public/') ||
+    p.startsWith('pwa/')
+
   const plugin =
-    pathUnderAny(p, PLUGIN_ROOTS) ||
-    p === 'tenants' ||
-    p.includes('multi-tenant') ||
-    model.exports.some((e) => /plugin/i.test(e))
-  const pwa = pathUnderAny(p, PWA_ROOTS)
+    !pwa &&
+    (root === 'plugin' ||
+      root === 'plugins' ||
+      root === 'tenants' ||
+      root === 'vitepress' ||
+      p.startsWith('plugins/') ||
+      p.includes('multi-tenant') ||
+      node?.dim === 'plugins' ||
+      model.exports.some((e) => /plugin/i.test(e)))
+
+  const worker =
+    !pwa &&
+    !plugin &&
+    (model.kind === 'method' ||
+      model.cloudflare?.workerFace === true ||
+      p.endsWith('/hooks') ||
+      p.includes('/hook') ||
+      p.startsWith('cloudflare/') ||
+      pathUnderAny(p, workerRoots()) ||
+      model.exports.some((e) => WORKER_EXPORT.test(e)))
+
   return { worker, plugin, pwa }
 }
 

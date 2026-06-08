@@ -46,6 +46,19 @@ describe('conservation: double-entry = physical conservation (Pacioli 1494 / Noe
     expect(boundaryConserves(exact - 1, ins, outs)).toBe(false)
   })
 
+  // 4b. Exact imperial rationals conserve when debits = credits (no float drift).
+  it('trialBalance with exact thirds conserves — 1/3 + 2/3 = 1', () => {
+    const third = 1 / 3
+    const twoThirds = 2 / 3
+    const entries: Entry[] = [
+      { debit: third, credit: 0 },
+      { debit: twoThirds, credit: 0 },
+      { debit: 0, credit: 1 },
+    ]
+    expect(trialBalance(entries)).toBe(0)
+    expect(conserves(entries)).toBe(true)
+  })
+
   // 5. NOETHER table: correct and frozen (immutable).
   it("NOETHER['time-translation'] === 'energy' and the table is frozen", () => {
     expect(NOETHER['time-translation']).toBe('energy')

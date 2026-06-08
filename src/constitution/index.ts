@@ -69,7 +69,7 @@ export const CONSTITUTION: ReadonlyArray<Article> = [
 ]
 
 /** Amendment requires a supermajority — a higher bar than ordinary governance. */
-export const AMENDMENT_RULE = { quorum: 0.5, threshold: 2 / 3 }
+export const AMENDMENT_RULE = { quorum: 1 / 2, threshold: 2 / 3 }
 
 export function getArticle(id: string): Article | undefined {
   return CONSTITUTION.find((a) => a.id === id)

@@ -94,6 +94,33 @@ export interface TamperReverseCostInput {
 }
 
 /**
+ * Quick named-threshold check — common regulatory minima.
+ *
+ *   meetsThreshold(cost, 'gdpr-art-32')   → 80 bits
+ *   meetsThreshold(cost, 'eidas-qes')     → 112 bits
+ *   meetsThreshold(cost, 'pci-dss-§3.6')  → 112 bits
+ *   meetsThreshold(cost, 'nist-category-5') → 128 bits
+ *   meetsThreshold(cost, 'post-quantum')   → 256 bits
+ */
+export type RegulatoryThreshold =
+  | 'gdpr-art-32'
+  | 'eidas-qes'
+  | 'pci-dss-§3.6'
+  | 'nist-category-5'
+  | 'post-quantum'
+
+/** External-standard bit minima — cited by name, not duplicated as bare literals at call sites. */
+const THRESHOLD_BITS: Readonly<Record<RegulatoryThreshold, number>> = {
+  'gdpr-art-32':     80,
+  'eidas-qes':       112,
+  'pci-dss-§3.6':    112,
+  'nist-category-5': 128,
+  'post-quantum':    256,
+}
+
+const DEFAULT_REGULATORY_THRESHOLD: RegulatoryThreshold = 'eidas-qes'
+
+/**
  * Compute the tamper-reversibility cost for a leaf at the given
  * depth in the chain, with the given stream / dimension width.
  *
@@ -112,7 +139,7 @@ export function computeTamperReverseCost(input: TamperReverseCostInput): TamperR
   const {
     leafDepth, streamCount, dimensionCount,
     signatureBitsPerSeal = 128,
-    thresholdBits = 112,
+    thresholdBits = THRESHOLD_BITS[DEFAULT_REGULATORY_THRESHOLD],
   } = input
   if (leafDepth < 1) {
     throw new Error('computeTamperReverseCost: leafDepth must be ≥ 1 (genesis leaf has nothing to tamper)')
@@ -130,30 +157,6 @@ export function computeTamperReverseCost(input: TamperReverseCostInput): TamperR
     meetsThreshold: totalBits >= thresholdBits,
     thresholdBits,
   }
-}
-
-/**
- * Quick named-threshold check — common regulatory minima.
- *
- *   meetsThreshold(cost, 'gdpr-art-32')   → 80 bits
- *   meetsThreshold(cost, 'eidas-qes')     → 112 bits
- *   meetsThreshold(cost, 'pci-dss-§3.6')  → 112 bits
- *   meetsThreshold(cost, 'nist-category-5') → 128 bits
- *   meetsThreshold(cost, 'post-quantum')   → 256 bits
- */
-export type RegulatoryThreshold =
-  | 'gdpr-art-32'
-  | 'eidas-qes'
-  | 'pci-dss-§3.6'
-  | 'nist-category-5'
-  | 'post-quantum'
-
-const THRESHOLD_BITS: Readonly<Record<RegulatoryThreshold, number>> = {
-  'gdpr-art-32':     80,
-  'eidas-qes':       112,
-  'pci-dss-§3.6':    112,
-  'nist-category-5': 128,
-  'post-quantum':    256,
 }
 
 export function meetsThreshold(cost: TamperReverseCost, name: RegulatoryThreshold): boolean {
