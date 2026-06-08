@@ -62,6 +62,8 @@ import {
   verifyRootReadmeUsesFrozenInputs,
   verifyComputedFacesForPaths,
   materializeComputedFacesForPathsStable,
+  generateFolderReadme,
+  deriveFolderReadme,
   resetCorpusPathFollowCache,
   COMPARABLE_UNIT,
   LANDAUER_BIT,
@@ -770,6 +772,27 @@ describe('readme — root wave frozen inputs', () => {
     expect(drift.llm.drift).toEqual([])
     expect(drift.diamond.drift).toEqual([])
   }, 180_000)
+
+  it('materializeComputedFacesForPathsStable — smoke cloudflare,database,readme zero drift', () => {
+    resetCorpusPathFollowCache()
+    const cwd = process.cwd()
+    const paths = ['cloudflare', 'database', 'readme']
+    materializeComputedFacesForPathsStable(paths, cwd)
+    const drift = verifyComputedFacesForPaths(paths, cwd)
+    expect(drift.readme.drift, drift.readme.drift.join()).toEqual([])
+    expect(drift.llm.drift).toEqual([])
+    expect(drift.diamond.drift).toEqual([])
+  }, 300_000)
+
+  it('generateFolderReadme matches frozen deriveFolderReadme bytes', () => {
+    resetCorpusPathFollowCache()
+    const cwd = process.cwd()
+    for (const atomPath of ['cloudflare', 'database', 'readme']) {
+      expect(generateFolderReadme(atomPath, cwd)).toBe(
+        renderFolderReadme(deriveFolderReadme(atomPath, cwd)),
+      )
+    }
+  }, 300_000)
 })
 
 describe('readme — path-follow gravity gate', () => {
