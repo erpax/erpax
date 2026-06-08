@@ -23,7 +23,7 @@ staged=$(git diff --cached --name-only --diff-filter=ACMR)
 # 1. Payload types + admin importmap — regen when any collection / payload-config /
 #    fields file changes. The verify gate (`payload-verify-types.sh`) runs in
 #    pre-push and would otherwise reject a stale `src/payload-types.ts`.
-if echo "$staged" | grep -E '^src/(plugins/.*/collections/|collections/|fields/|.*payload\.config\.ts$|.*payload-config\.ts$)' >/dev/null; then
+if echo "$staged" | grep -E '^src/(plugins/.*/collections/|collections/|fields/|.*payload\.config\.ts$|.*payload-config\.ts$)' | grep -v '/README\.md$' >/dev/null; then
   echo "pre-commit: collection/config change — regenerating Payload types + importmap"
   pnpm exec payload generate:types >/dev/null
   pnpm exec payload generate:importmap >/dev/null
