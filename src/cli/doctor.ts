@@ -4,12 +4,15 @@
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { formatCleanSummary } from '@/apply/clean'
+import { formatAutomateSummary } from '@/apply/automate'
 import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
+import { formatDoctorInventorySection } from '@/agent/inventory'
+import { emitInventorySnapshot } from '@/agent/inventory/emit'
 import { loadEfficiencyStore } from '@/apply/efficiency'
 import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
 import { computedBaseline } from '@/law/folder/baseline'
 import { rulesOf, strayTsViolations } from '@/rules'
-import { deriveCorpusAnalytics } from '@/readme'
+import { deriveCorpusAnalytics } from '@/readme/compute'
 import {
   ERPAX_SKILL_ENTRY,
   ERPAX_SKILL_ENTRY_CONTENT_UUID,
@@ -29,6 +32,7 @@ export interface DoctorReport {
     readonly exists: boolean
   }
   readonly clean: string | null
+  readonly automate: string | null
   readonly entropy: {
     readonly netEb: number
     readonly freeEnergyBits: number
@@ -71,6 +75,7 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
       exists: existsSync(join(cwd, entryPath)),
     },
     clean: formatCleanSummary(cwd),
+    automate: formatAutomateSummary(cwd),
     entropy: {
       netEb: corpus.entropy.netEntropyEb,
       freeEnergyBits: freeEnergy.freeEnergyBits,
@@ -101,11 +106,17 @@ export function formatDoctorReport(report: DoctorReport): string {
   } else {
     lines.push('  clean          no pass yet (run pnpm erpax clean)')
   }
+  if (report.automate) {
+    lines.push(`  automate       ${report.automate}`)
+  } else {
+    lines.push('  automate       no pass yet (run pnpm erpax automate)')
+  }
   lines.push(
     `  entropy        net ${report.entropy.netEb} eb · F ${report.entropy.freeEnergyBits} bits · ${report.entropy.scaleTowardZeroPct}% toward zero`,
   )
+  lines.push(formatDoctorInventorySection())
   lines.push('')
-  lines.push('Next: pnpm erpax rules check · pnpm erpax clean · pnpm check')
+  lines.push('Next: pnpm erpax automate · pnpm erpax rules check · pnpm check')
   return lines.join('\n')
 }
 
@@ -118,5 +129,10 @@ export function runDoctor(cwd: string = process.cwd(), sub?: string): number {
   if (sub === 'stalls') return runDoctorStalls()
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
+  try {
+    emitInventorySnapshot(cwd)
+  } catch {
+    /* emit-only — doctor still reports when snapshot dir missing */
+  }
   return report.entrySkill.exists ? 0 : 1
 }

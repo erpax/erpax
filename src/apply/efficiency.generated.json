@@ -1,0 +1,7 @@
+{
+  "_law": "efficiency UP only — each pass must improve vs prior snapshot; regressions require documented exceptions",
+  "contentUuid": "a18ebd36-efficiency-ratchet-baseline",
+  "sealedAt": "2026-06-08",
+  "latest": null,
+  "passes": []
+}

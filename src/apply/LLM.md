@@ -3,15 +3,15 @@
 
 # apply
 
-path `apply` · uuid `b2b8c8f3-88bf-8d69-bd90-5d899c63b4b0` · diamond `ecb65f98-9b67-8377-b0ad-66030e10a907`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports action·collapse·direct·law·merge·sti · exports apply · escapes —
-links `6/6` · folded `1` · bonds in `8` out `9`
+path `apply` · uuid `d98ba2ba-3148-88a0-99b4-3e7b0e93296d` · diamond `95d80f4d-f3b2-8022-a0b4-c413ffda57a4`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
+imports @/accounting·@/path·@/readme·@/seal·@/uuid/matrix · exports SessionLawDomain·function·interface · escapes —
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·apply·collapse·consistency·direct·law·law·merge·sti · ← action·apply·collapse·consistency·direct·law·merge·sti
+neighbors → action·apply·collapse·direct·law·merge·sti · ← action·apply·collapse·direct·law·merge·sti
 analysis —
 law to apply is to lodge an offer of oneself with a target — it creates a pending candidacy, never the acceptance, which only the receiver may grant.
 
 ---
 
-<sub>content-uuid `794039f8-8460-89c3-823c-70ec8a3c5fa9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28fbbad4-65e2-8707-b80b-9cc52df2ff5a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -60,6 +60,20 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     default: { desc: 'Watch violations loop', cmd: `${TSX} src/monitor/violations/index.ts --watch` },
     violations: { desc: 'Watch violations', cmd: `${TSX} src/monitor/violations/index.ts --watch` },
     improve: { desc: 'Improve watch loop', cmd: `${TSX} src/monitor/violations/loop.ts --watch` },
+    inventory: {
+      desc: 'Poll task inventory every 5min (violations toast on stale)',
+      cmd: `${TSX} src/agent/inventory/monitor.ts`,
+    },
+  },
+  agent: {
+    default: {
+      desc: 'Subagent task inventory (oldest→newest)',
+      cmd: `${TSX} src/agent/inventory/cli.ts`,
+    },
+    inventory: {
+      desc: 'Full coordinator inventory report',
+      cmd: `${TSX} src/agent/inventory/cli.ts`,
+    },
   },
   confirm: {
     default: { desc: 'Scoped confirm (payload ⊕ vitepress)', cmd: `${TSX} src/confirm/matter.ts` },
@@ -83,6 +97,16 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     cycle: {
       desc: 'Coordinated dry-clean cycle',
       cmd: `${TSX} src/apply/clean.ts`,
+    },
+  },
+  automate: {
+    default: {
+      desc: 'Orchestration pass: inventory → clean → measure → ratchet',
+      cmd: `${TSX} src/apply/automate/index.ts`,
+    },
+    watch: {
+      desc: 'Watch loop (replaces improve+violations+inventory ad-hoc)',
+      cmd: `${TSX} src/apply/automate/index.ts watch`,
     },
   },
   standards: {
@@ -203,6 +227,8 @@ export const LEGACY_ALIASES: Record<string, string> = {
   'lint:accounting-structure': 'erpax rules accounting',
   'violations:watch': 'erpax monitor violations',
   'improve:watch': 'erpax monitor improve',
+  'automate:watch': 'erpax automate watch',
+  automate: 'erpax automate',
   confirm: 'erpax confirm',
   'confirm:full': 'erpax confirm full',
   'confirm:uuid': 'erpax confirm uuid',

@@ -525,7 +525,10 @@ export function dryCleanCycle(opts: DryCleanCycleOpts = {}): DryCleanCycleResult
     persistCleanManifest(manifest, cwd)
     emitted.push(relative(cwd, cleanManifestPath(cwd)))
     if (ratchet.ok) {
-      const { ratchet: passRatchet } = recordEfficiencyPass('clean:cycle', { cwd, persist: true })
+      const { ratchet: passRatchet } = recordEfficiencyPass('clean:cycle', {
+        ...snapOpts,
+        persist: true,
+      })
       if (passRatchet.ok) emitted.push(relative(cwd, join('src', 'apply', 'efficiency.generated.json')))
     }
   } else {

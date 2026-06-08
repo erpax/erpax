@@ -21,6 +21,40 @@
  */
 import { entanglement as matrixEntanglement } from '@/quantum'
 import { reciprocity, isFullyEntangled, noCloning } from '@/entanglement'
+import {
+  COLLAPSE_HOOKS,
+  FIELD_ENTANGLEMENT_REGISTRY,
+  fieldEntanglementCount,
+  fieldEntanglementKey,
+  entangledFieldsFromRegistry,
+  type CollapseHookId,
+  type FieldEntanglement,
+} from '@/quantum/entanglement/registry'
+
+export {
+  COLLAPSE_HOOKS,
+  FIELD_ENTANGLEMENT_REGISTRY,
+  fieldEntanglementCount,
+  entangledFieldsFromRegistry,
+  type CollapseHookId,
+  type FieldEntanglement,
+} from '@/quantum/entanglement/registry'
+
+export {
+  DIRECTION_COLLAPSE_EVENT,
+  improveDirectionPath,
+  cleanDirectionPath,
+  automateDirectionPath,
+  publishDirection,
+  subscribeDirection,
+  interruptTokenFor,
+  isDirectionStale,
+  peekDirection,
+  __resetDirectionBusForTests,
+  type DirectionPayload,
+  type SealedDirection,
+  type InterruptToken,
+} from '@/quantum/entanglement/direction-bus'
 
 /** The Bell-test analogue: the corpus is "maximally entangled" when reciprocity = 1 AND no-cloning holds. */
 export const isMaximallyEntangled = (): boolean => isFullyEntangled() && noCloning()
@@ -31,6 +65,19 @@ export interface EntanglementReport {
   reciprocity: number
   noCloning: boolean
   maximal: boolean
+}
+
+/**
+ * Field-level entanglement — which partners a text field is superposed with,
+ * what collapses it on write, and the matrix bond. Returns null when the
+ * collection/field pair is outside the static registry (top collections from
+ * the 01a03ea0 audit).
+ */
+export function fieldEntanglementOf(
+  collectionSlug: string,
+  fieldPath: string,
+): FieldEntanglement | null {
+  return FIELD_ENTANGLEMENT_REGISTRY[fieldEntanglementKey(collectionSlug, fieldPath)] ?? null
 }
 
 /** The physics read-out: the reciprocal-edge fraction (symmetric binding) + no-cloning (unique identity, the CKW monogamy root). */
