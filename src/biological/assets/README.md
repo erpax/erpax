@@ -2,7 +2,7 @@
 
 # assets
 
-> atom `biological/assets` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `biological/assets` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,6 +23,29 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a living class is carried at fair-value-less-costs-to-sell (never cost), re-measured each reporting date, with the change split into biological-transformation vs price-change; bearer plants are carved out to IAS-16.`
+- `seal:sealed`
+- `trigger:Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection.`
+- `trigger:a living class is carried at fair-value-less-costs-to-sell (never cost), re-measured each reporting date, with the change split into biological-transformation vs price-change; bearer plants are carved out to IAS-16.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `17c36fef-13f9-8182-9089-9cb01060a08b` · `b1343cc3-e96e-803c-b0bd-352bf121af93`
+- content uuids `97c3100c-cb3b-8f20-bb41-d9b7103c5a8a` · `9f96adcf-55e3-8e99-b8d4-1a03dfbd4958` · `c92cf8ca-6d50-8ef2-8955-f87e70461ed5`
+
 ## [[entropy]] — gaps · seals
 
 > account code `biological/assets` · currency `eb` (entropy-bit)
@@ -36,7 +59,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
@@ -44,15 +67,15 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `1` eb | Σ seal `12.985` eb |
+| Σ gap `1` eb | Σ seal `13.385` eb |
 
-> net residual `-11.985` eb · seal/gap ratio `12.985` · [[entropy]] · [[seal]]
+> net residual `-12.385` eb · seal/gap ratio `13.385` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `biological` · sub-root `ab3d5220-1513-816e-8db6-98b66fd2a6db`
 - bond degree `120` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -78,7 +101,6 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 - `IFRS IAS-41 §40 disclosure-by-class` · banner
 - `IFRS IFRS-13 fair-value-input-hierarchy` · banner
 - `IFRS-13` · catalogue
-- `ISO 19011:2018 §6.4.6 audit-evidence-biological-assets` · banner
 - `ISO-4217` · catalogue
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1` · catalogue
@@ -119,19 +141,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·4 | 1 | 100 |
+| ring·8 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `120` · sealed `1` · horo `4`
+- bond degree `120` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `24`
+- bindings `0` · standards `23`
 
 ## identity
 
-- uuid `c44886d9-3ea3-8f13-8f74-a56bad0f080f`
+- uuid `c92cf8ca-6d50-8ef2-8955-f87e70461ed5`
 - bonds in `33` · out `33`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
@@ -143,4 +165,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `e3785a4e-c324-80f5-9d41-68a885f4ec10` · framed by typography partition `biological` bonds `120` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d1d1124b-93d4-8d1e-acb3-13d73a1b95cc` · framed by typography partition `biological` bonds `120` · `pnpm readme` · `pnpm readme:check`</sub>

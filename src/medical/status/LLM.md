@@ -3,15 +3,15 @@
 
 # status
 
-path `medical/status` · uuid `e37fbb13-28d6-8706-9ce5-9c883fa1d04a` · diamond `23419d91-55d6-850c-9548-ad09ad6336cb`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `medical/status` · uuid `c2e4ddef-767e-8432-a1d6-bbc11d9d2e84` · diamond `817fe994-ded8-83a6-8caa-9bf2df72018a`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `32` out `32`
+links `5/5` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `1·0·0`
-neighbors → action·active·age·approved·attrition·career·creative·delivery·diffusion·drug·enumeration·escalation·fields·force·game·incentive·item·legal·market·medical·nonprofit·order·passenger·prescription·queue·reason·reservation·resolution·server·study·ticket·work · ← action·active·age·approved·attrition·career·creative·delivery·diffusion·drug·enumeration·escalation·fields·force·game·incentive·item·legal·market·medical·nonprofit·order·passenger·prescription·queue·reason·reservation·resolution·server·study·ticket·work
-analysis diamond·hallucination·purity
+neighbors → action·active·age·approved·attrition·career·creative·delivery·diffusion·drug·enumeration·escalation·fields·force·game·incentive·item·legal·market·medical·nonprofit·order·passenger·prescription·queue·reason·reservation·resolution·server·status·study·ticket·work · ← action·active·age·approved·attrition·career·creative·delivery·diffusion·drug·enumeration·escalation·fields·force·game·incentive·item·legal·market·medical·nonprofit·order·passenger·prescription·queue·reason·reservation·resolution·server·status·study·ticket·work
+analysis —
 law medical/status names status under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `cb95f042-6c0d-8ac0-aa3d-fcd12e062f6f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d013e002-120b-82d5-9180-a78a7d551d4c` · `pnpm readme` · `pnpm computed:check`</sub>

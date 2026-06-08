@@ -3,15 +3,15 @@
 
 # types
 
-path `beyond/types` · uuid `89efa96f-971f-854c-81b2-5ab3487e9b82` · diamond `c7d40632-21bd-87cb-89b8-b7b6f1b3367f`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `beyond/types` · uuid `95a3a2aa-e0e9-8c8e-840b-0c2c5e6c449b` · diamond `510eb621-2194-8b12-aa91-df6a4a9f913a`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/agent · exports InverseEffect·PqcAlgorithm·interface · escapes —
 links `5/5` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
 neighbors → chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
-analysis agent
+analysis agent·diamond·hallucination·purity
 law every value carries the provenance, cost, and reversibility a future regulator will demand — the type is the contract, asserted once and conserved everywhere.
 
 ---
 
-<sub>content-uuid `0d66f613-d95b-8972-bb55-836308adf414` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2620a998-efd7-85ae-af15-28ce2cb996ea` · `pnpm readme` · `pnpm computed:check`</sub>

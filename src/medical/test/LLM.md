@@ -3,15 +3,15 @@
 
 # test
 
-path `medical/test` · uuid `1eae2732-c4e5-8708-9634-4ef3b67c4abd` · diamond `858d5947-209e-8905-9fd4-5e6a92874873`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `medical/test` · uuid `6ffcc35d-f937-843f-8657-907840657707` · diamond `a2f2d5c4-4aa0-88b6-9764-7d3161d626c6`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `21` out `21`
+links `5/5` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·available·blood·collapse·color·diamond·folder·heart·hooks·identifying·imaging·law·medical·merge·names·panel·pathology·pwa·sti·sub·typical · ← aura·available·blood·collapse·color·diamond·folder·heart·hooks·identifying·imaging·law·medical·merge·names·panel·pathology·pwa·sti·sub·typical
-analysis aura·diamond·hallucination·purity
+neighbors → aura·available·blood·collapse·color·diamond·folder·heart·hooks·identifying·imaging·law·medical·merge·names·panel·pathology·pwa·sti·sub·test·typical · ← aura·available·blood·collapse·color·diamond·folder·heart·hooks·identifying·imaging·law·medical·merge·names·panel·pathology·pwa·sti·sub·test·typical
+analysis aura
 law medical/test names test under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `49469206-4aed-883d-a598-92df0fff39ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `96cf6e3d-0431-846f-ba75-7cf779c79ede` · `pnpm readme` · `pnpm computed:check`</sub>

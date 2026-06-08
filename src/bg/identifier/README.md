@@ -2,7 +2,7 @@
 
 # identifier
 
-> atom `bg/identifier` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `bg/identifier` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,6 +23,30 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a BG party has no row until its number checks out — the ЕГН/ЕИК IS the [[identity]] and must prove itself self-consistent by pure modulo-11 (decode-then-check, no lookup) at the onboarding boundary.`
+- `seal:unsealed`
+- `trigger:Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).`
+- `trigger:a BG party has no row until its number checks out — the ЕГН/ЕИК IS the [[identity]] and must prove itself self-consistent by pure modulo-11 (decode-then-check, no lookup) at the onboarding boundary.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `ca8be9b8-d645-809a-bccd-910ba0b0eff6` · `e08e3d71-0b16-886b-bb6b-36dbb4a42b0c` · `e9776490-25b7-8202-a40f-9cf36e9fd6ab`
+- content uuids `36eb60e8-31a4-8162-858f-1d280effa018` · `d278978c-30ce-8b6a-8348-ed4c1df31fde` · `e533e254-b2eb-8cf0-b7ff-f965a2c40b73`
+
 ## [[entropy]] — gaps · seals
 
 > account code `bg/identifier` · currency `eb` (entropy-bit)
@@ -36,22 +60,22 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `2` eb | Σ seal `11.5` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
 
-> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `bg` · sub-root `23fe5468-5fd3-8477-b4c4-7bdb43b3476a`
 - bond degree `37` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -98,19 +122,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·5 | 1 | 100 |
+| ring·8 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `37` · sealed `0` · horo `5`
+- bond degree `37` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `cfb5fef4-a8fb-89f8-afc5-83558bb09529`
+- uuid `23fe5468-5fd3-8477-b4c4-7bdb43b3476a`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `21` / `21`
@@ -122,4 +146,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `6e175fdd-7584-8b71-89bd-14c554c4421c` · framed by typography partition `bg` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9904b007-b570-8fbd-aa55-a810e3353851` · framed by typography partition `bg` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

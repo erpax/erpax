@@ -3,8 +3,8 @@
 
 # assets
 
-path `biological/assets` · uuid `c44886d9-3ea3-8f13-8f74-a56bad0f080f` · diamond `2ad2703c-fce8-87d9-93d6-84e2b40e0d95`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `biological/assets` · uuid `c92cf8ca-6d50-8ef2-8955-f87e70461ed5` · diamond `1e1ca540-0895-89fe-a0a5-cfae928d3df0`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `13/13` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a living class is carried at fair-value-less-costs-to-sell (never cost), re-
 
 ---
 
-<sub>content-uuid `821ca829-783f-8d70-81fd-582815a9bd3b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b0ddad1-72df-8c3f-b9d5-7d22e7075da3` · `pnpm readme` · `pnpm computed:check`</sub>

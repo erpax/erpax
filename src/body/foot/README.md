@@ -40,8 +40,8 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 ### seal
 
 - path follow `1` · receipt `1` · sealed `1`
-- entry uuids `3c95512c-610a-8714-a3fc-cd62a0d1db31`
-- content uuids `669af01b-4cc0-802e-82ef-5e3d317fc345` · `c619e1bf-b159-8ba9-af80-166f1ef0f790`
+- entry uuids `5da8249e-2170-87d0-82fe-8be200d159ca`
+- content uuids `057d3dd6-8d68-85aa-915f-e63d59327e5f` · `c619e1bf-b159-8ba9-af80-166f1ef0f790`
 
 ## [[entropy]] — gaps · seals
 
@@ -72,7 +72,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 - partition `body` · sub-root `b70b1e80-f5ea-8aba-b5c6-839f0990809a`
 - bond degree `21` · analysis neighbors —
-- graph root `33a1ea6e-dc58-8009-b0f9-2114d20f9dca`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -140,4 +140,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `25cda943-6100-8f57-97ec-387161ce3bf5` · framed by typography partition `body` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ab9f4f9-65dd-8c3a-80e8-54785a7610de` · framed by typography partition `body` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

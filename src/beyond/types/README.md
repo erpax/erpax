@@ -2,7 +2,7 @@
 
 # types
 
-> atom `beyond/types` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/types` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,6 +23,35 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:agent`
+- `explore:diamond`
+- `explore:hallucination`
+- `explore:purity`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:every value carries the provenance, cost, and reversibility a future regulator will demand — the type is the contract, asserted once and conserved everywhere.`
+- `seal:unsealed`
+- `trigger:Use when you need the shared type vocabulary for the next-horizon conservation primitives (Laws 11-20+22) — causal provenance, deterministic replay, tenant-isolation proof, bitemporal coordinates, cost and carbon metrics, post-quantum signatures, self-explainability, reversible inverse-effects, and AI-decision provenance — what no current standard fully demands yet every regulator will within five years.`
+- `trigger:every value carries the provenance, cost, and reversibility a future regulator will demand — the type is the contract, asserted once and conserved everywhere.`
+- `trigger:interfaces `CausalLink` · `Provenance` · `ReplayRequest` · `ReplayResult` · `TenantScopedQuery` · `BitemporalCoordinates` · `CostMetric` · `CarbonEstimate` · `PqcSignature` · `Explanation` · `AiProvenance`; the `PqcAlgorithm` and `InverseEffect` unions. Builds on [[audit]] leaves and the [[agent]] effect.`
+- `trigger:matter-twin:src/beyond/types/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3ad139e0-bb32-83ce-bdbe-01456b52bf28` · `572ff0f2-3b26-8ff3-9f96-008d6977ba72`
+- content uuids `aca03880-72c6-8961-a23a-1084b4691357` · `cde36fd7-e9cf-833d-acb3-f44d2d4acad6`
+
 ## [[entropy]] — gaps · seals
 
 > account code `beyond/types` · currency `eb` (entropy-bit)
@@ -36,22 +65,22 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `1` eb | Σ seal `11.1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
 
-> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `beyond` · sub-root `ec7e7d91-7746-8185-bcbd-22a1d84517ed`
-- bond degree `66` · analysis neighbors `agent`
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- bond degree `69` · analysis neighbors `agent` · `diamond` · `hallucination` · `purity`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -111,19 +140,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·1 | 1 | 100 |
+| ring·8 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `66` · sealed `0` · horo `1`
+- bond degree `69` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `17`
 
 ## identity
 
-- uuid `89efa96f-971f-854c-81b2-5ab3487e9b82`
+- uuid `95a3a2aa-e0e9-8c8e-840b-0c2c5e6c449b`
 - bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -135,4 +164,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `b94476ea-6ebc-8166-89cd-6f3d8934977a` · framed by typography partition `beyond` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6cd539dd-4825-8477-bcc5-8e527a841916` · framed by typography partition `beyond` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>

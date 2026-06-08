@@ -86,6 +86,7 @@ import { join } from 'node:path'
 import {
   assertCorpusPathFollowGate,
   buildReadmeCorpus,
+  buildReadmeCorpusFrozenInputs,
   deriveModel,
   deriveReadmeRootInputsInWaves,
   generateReadme,
@@ -113,6 +114,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const waveProgress = (ordinal: number, itemCount: number): void => {
     console.log(`readme:waves — horo wave ${ordinal}/7 · ${itemCount} paths`)
   }
+  const frozen = pathFilter ? undefined : buildReadmeCorpusFrozenInputs(cwd, verify ? { pathFollowGate: true } : undefined)
   const corpus =
     pathFilter || waves
       ? undefined
@@ -120,7 +122,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const expectedRoot = pathFilter
     ? ''
     : waves
-      ? renderRootReadmeInWaves(cwd, undefined, waveProgress)
+      ? renderRootReadmeInWaves(cwd, frozen!, waveProgress)
       : generateReadme(cwd, corpus!)
   if (verify) {
     let failed = false

@@ -437,7 +437,7 @@ export function renderReadme(
   for (const row of model.analytics.byHoro) {
     L.push(`| ${row.digit} | ${row.measure} | ${row.atoms} | ${row.sealed} |`)
   }
-  const entropyOpts = entropyRender ?? readmeCorpusEntropyRenderOpts()
+  const entropyOpts = entropyRender ?? readmeCorpusEntropyRenderOpts(process.cwd(), readmeCorpusFrozenAt())
   L.push('', renderCorpusEntropySection(model.analytics.entropy, entropyOpts))
   L.push('', renderCorpusQuantumThinkingSection(model.analytics.quantumThinking))
   if (model.papers.total > 0) {
@@ -579,6 +579,8 @@ let cachedCorpusPathFollow: CorpusPathFollowOpts | null = null
 let cachedCorpusPathFollowAt: string | undefined
 let cachedThinkingCtx: ThinkingLoadContext | null = null
 let cachedThinkingAt: string | undefined
+let cachedEntropyRender: CorpusEntropyRenderOpts | null = null
+let cachedEntropyRenderAt: string | undefined
 
 /** Stable receipt-chain anchor — typography graph root (content-addressed, not wall clock). */
 export function readmeCorpusFrozenAt(graph?: AnalysisTypographyGraph): string {
@@ -594,14 +596,20 @@ export interface ReadmeCorpusFrozenInputs {
 }
 
 /** Live rules + efficiency snapshot for corpus entropy footer — freeze once per pass. */
-export function readmeCorpusEntropyRenderOpts(cwd: string = process.cwd()): CorpusEntropyRenderOpts {
+export function readmeCorpusEntropyRenderOpts(
+  cwd: string = process.cwd(),
+  anchor: string = readmeCorpusFrozenAt(),
+): CorpusEntropyRenderOpts {
+  if (cachedEntropyRender && cachedEntropyRenderAt === anchor) return cachedEntropyRender
   const rulesSnapshot = rulesOf(cwd, { force: true })
   const violationCount = rulesSnapshot.axes.reduce((s, a) => s + a.violations, 0)
   const effLatest = loadEfficiencyStore(cwd).latest
-  return {
+  cachedEntropyRender = {
     violationCount,
     workTamperProduct: effLatest?.workTamperProduct ?? 0,
   }
+  cachedEntropyRenderAt = anchor
+  return cachedEntropyRender
 }
 
 export interface ReadmeCorpusContextOpts {
@@ -618,7 +626,7 @@ export function buildReadmeCorpusFrozenInputs(
 ): ReadmeCorpusFrozenInputs {
   const graph = buildReadmeTypographyGraph(cwd)
   const at = readmeCorpusFrozenAt(graph)
-  const entropyRender = readmeCorpusEntropyRenderOpts(cwd)
+  const entropyRender = readmeCorpusEntropyRenderOpts(cwd, at)
   const ctx = buildReadmeCorpusContext(cwd, { ...opts, frozenAt: at, frozenGraph: graph })
   return { graph, ctx, at, entropyRender }
 }
@@ -664,6 +672,8 @@ export function resetCorpusPathFollowCache(): void {
   cachedCorpusPathFollowAt = undefined
   cachedThinkingCtx = null
   cachedThinkingAt = undefined
+  cachedEntropyRender = null
+  cachedEntropyRenderAt = undefined
 }
 
 /** Cached path ledger for quantum thinking load — one lattice walk per process. */
