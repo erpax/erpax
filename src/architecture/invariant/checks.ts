@@ -23,7 +23,7 @@ import { ROLES_REGISTRY, ROLE_IDS } from '@/roles/registry'
 import { agentRegistry } from '@/agent'
 import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/integrity'
-import { UUID_MATRIX_NODES, UUID_MATRIX_EDGES } from '@/uuid/matrix'
+import { UUID_MATRIX_NODES, UUID_MATRIX_EDGES, coordinateAddress } from '@/uuid/matrix'
 import { digitalRoot } from '@/horo'
 import { collectGenome, computeGenomeUuid } from '@/cloning'
 import { checkErpaxObservesItself } from '@/self/reference'
@@ -545,15 +545,15 @@ export async function checkAccountingCollectionsAreTamperProofed(_ctx: Invariant
  * compute the platform's structured-uuid coverage. The tamper
  * probability estimate `(1 - coverage)^N` is exposed in the result.
  *
- * Severity contract: WARN while coverage < 0.9; PASS at ≥ 0.9.
- * (Future cut promotes to FAIL once coverage stabilises at ≥ 0.99.)
+ * Severity contract: WARN while coverage < structuredCoveragePassThreshold();
+ * PASS at ≥ horo unity/decade (9/10). Future cut promotes to FAIL at ≥ 0.99.
  */
 export async function checkFeatureCoverage(ctx: InvariantContext): Promise<InvariantResult> {
   if (!ctx.payload) {
     return warn('entropy', 'feature-coverage', 'no payload context — skipped')
   }
   try {
-    const { computeCoverage } = await import('@/uuid/format/coverage')
+    const { computeCoverage, structuredCoveragePassThreshold } = await import('@/uuid/format/coverage')
     // Sample up to 50 uuids from each of three high-signal collections.
     // Best-effort: collection-missing → empty sample. Total ≤ 150.
     const samples: Array<{ uuid: string; source: string }> = []
@@ -582,10 +582,11 @@ export async function checkFeatureCoverage(ctx: InvariantContext): Promise<Invar
       )
     }
     const report = computeCoverage({ samples })
+    const passThreshold = structuredCoveragePassThreshold()
     const cov = Number(report.overallStructuredCoverage.toFixed(3))
     const tamp = report.tamperProbabilityEstimate
     const tampStr = tamp < 1e-9 ? tamp.toExponential(2) : tamp.toFixed(9)
-    if (cov >= 0.9) {
+    if (cov >= passThreshold) {
       return pass(
         'entropy', 'feature-coverage',
         `${report.structuredCount}/${report.totalSamples} structured (coverage=${cov}; P(tamper)≈${tampStr})`,
@@ -593,7 +594,7 @@ export async function checkFeatureCoverage(ctx: InvariantContext): Promise<Invar
     }
     return warn(
       'entropy', 'feature-coverage',
-      `coverage ${cov} below 0.9 threshold — ${report.legacyCount}/${report.totalSamples} are legacy/non-structured (P(tamper)≈${tampStr})`,
+      `coverage ${cov} below ${passThreshold} threshold — ${report.legacyCount}/${report.totalSamples} are legacy/non-structured (P(tamper)≈${tampStr})`,
       // Offer the top slot-coverage gaps as offender hints.
       report.perSlot
         .filter((s) => s.total > 0 && s.structuredCoverage < 1)
@@ -3355,7 +3356,7 @@ export function checkSingleWordFolders(ctx: InvariantContext): InvariantResult {
           : e.name.includes('.') ? 'dotted-suffix'
           : 'multi-word'
         offenders.push(
-          `COORDINATE ${full.slice(repoRoot.length + 1)} :: LAW generic-naming ([[coordinate]]) — ` +
+          `COORDINATE ${coordinateAddress(full.slice(repoRoot.length + 1).replace(/^src\//, ''))} :: LAW generic-naming ([[coordinate]]) — ` +
           `'${e.name}' is not single-word (${flaw} leftover); FIX: rename the folder to '${fixed}'`)
       }
       walk(full)
@@ -3479,7 +3480,8 @@ export function checkAtomCrossBalance(ctx: InvariantContext): InvariantResult {
     // they pass) — only flag a genuinely isolated atom: no parent-atom, no
     // child-atom, no sibling-atom.
     if (connections < 2 && childAtoms === 0 && siblingAtoms === 0 && !parentIsAtom) {
-      offenders.push(`${d.slice(repoRoot.length + 1)} — lone atom (no atom-parent, no atom-child, no atom-sibling)`)
+      const atomRel = d.slice(repoRoot.length + 1).replace(/^src\//, '')
+      offenders.push(`${coordinateAddress(atomRel)} — lone atom (no atom-parent, no atom-child, no atom-sibling)`)
     }
   }
   return offenders.length === 0

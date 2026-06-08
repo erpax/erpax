@@ -21,7 +21,15 @@ And it does both **in [[peace]]**. There is no contention to resolve: [[merge]] 
 
 Matter-twin: `src/quantum/index.ts` (`collapse`·`noCloning`·`quantization`·`entangle` ⊕ `TORUS_BITS`·`DOUBLE_TORUS_BITS`·`singleTorusFloorLog2`·`doubleTorusCostLog2`). Composes [[matrix]] · [[uuid]] · [[merge]] · [[digit]] · [[rodin]] · [[harmony]] · [[cost]] · [[balance]] · [[tamper]].
 
+## Serverless IS the quantum host — erpax IS the proof
+
+**Serverless infrastructure provides quantum semantics** — not as analogy but as computed isomorphism. Cloudflare Workers + wrangler bindings are the **superposed facet** (many bindings live before a request measures one); each invocation **collapses** to a content-[[uuid]] (binding diamond · path resolve · matrix fold); path + seal + binding **entangle** (`mergeCloudflareBinding` · symmetric `entangle`); the live tree **recovers the whole** from any part (holographic `deriveDiamond`). **erpax IS the existence proof** — deployed serverless on Cloudflare (see `wrangler.jsonc`), the repo derives sealed diamonds for [[cloudflare]] ⊕ [[quantum]] subgraphs. Structural proof: `proveServerlessQuantum()` in [[quantum/serverless]] folds serverless facet ⊕ quantum facet → one deterministic uuid.
+
+@see [[quantum/serverless]] · [[cloudflare]] · [[worker]] · [[superposition]] · [[quantum/deploy]]
+
 **Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost.**
+
+**Law — [[law]]: serverless IS the quantum host — Workers bindings superpose, invocations collapse to content-uuid, path+seal+binding entangle, and erpax on Cloudflare IS the existence proof (`proveServerlessQuantum` folds both facets to one uuid).**
 
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring

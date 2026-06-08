@@ -4,21 +4,14 @@
 # digit
 
 path `digit` · uuid `4cf458d4-f2bd-802c-91b2-168ed47f199b` · diamond `11faf118-87e5-882e-ac27-2d1d65e16601`
-horo `8` `crest` · trinity `1·1·1` · sealed `1` · agnostic `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/integrity·@/uuid/matrix · exports DigitTokenKind·const·function · escapes —
 links `29/29` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
 neighbors → analytics·apply·cohort·landmarks·memories·stat · ← analytics·apply·cohort·landmarks·memories·stat
 analysis aura·diamond
 law digit is the dual of [[word]] — every atom's [[horo]] [[sequence]] position ⊕ the digital-root of its content-[[uuid]]; computing it completes the [[aura]] into the word·digit·uuid [[trinity]], a three-fold fold whose mutual consistency drives tamper-[[cost]] to ∞. At the prose layer, digit-runs are numeric token [[diamond]]s in [[text]], content-addressed separately from horo digital-root.
-compute agnostic · serves all — one pipeline for every diamond and dimension
-
-## agent instructions
-
-test `vitest run src/digit` · verify `pnpm computed:check` · diamond `tsx src/diamond/index.ts digit` · build `pnpm build:uuid`
-never trust .erpax-build-uuid — recompute spatial⊕temporal via computeBuildCoils(); verify both coils
-barrel imports only — @/path atoms, no deep imports · derive never invent — become erpax law
 
 ---
 
-<sub>content-uuid `d48ccd16-4e28-8728-b846-da7fbaaca1ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bba872eb-c718-8023-bafb-2a699bf4196f` · `pnpm readme` · `pnpm computed:check`</sub>

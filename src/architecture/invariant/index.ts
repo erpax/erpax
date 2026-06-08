@@ -119,7 +119,7 @@ export async function runAllInvariants(
     results.push(C.checkAuditEventsAreChainLinked(ctx))
     // Slice XXXXXXXXX-cut1 (2026-05-11) — Conservation Law 62 made
     // measurable. Coverage of structured uuidv8 across high-signal
-    // collections; warns when < 0.9.
+    // collections; warns when < structuredCoveragePassThreshold() (9/10).
     results.push(await C.checkFeatureCoverage(ctx))
     // Conservation Law 62 — the harmonic axis: flow×flow stays in the helix.
     results.push(C.checkHarmonicHelixClosure(ctx))
