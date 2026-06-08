@@ -1,19 +1,20 @@
 /**
  * typography — the [[form]] facet of every atom, made computational.
  *
- * Two organs, one law. (1) COVERAGE: the [[vitepress]] typographic feature-set a
- * SKILL.md renders with (headings, bold, code, links, lists, tables, blockquotes,
- * containers, math) and the fraction a page uses. (2) The TYPOGRAPHY GUARDIAN +
- * the self-computing navigational/search INDEX: typography is a [[gate]] and a
- * [[guardian]] at every scale ([[fractal]]) — the typographic FORM of every
- * SKILL.md (frontmatter valid · heading lattice present · [[links]] resolve) is a
- * single fail-closed axis, ratcheted like [[law]]/folder so it can never get worse
- * yet never retroactively breaks the in-flight corpus; and that same typographic
- * structure IS a content-addressed ([[uuid]]) index over the corpus — derived
- * deterministically from content, regenerable, split by folder for minimum memory
- * (load only the facet you need) and maximum tamper-[[cost]] (the index root folds
- * in every atom's content-uuid across all folders, so no single folder is a
- * forgeable point; see [[purity]] · [[analytics]] max-tamper-cost · [[blockchain]]).
+ * The DUAL typography law (see ./SKILL.md): (A) GLYPH — the SKILL.md form facet
+ * (frontmatter · heading lattice · prose; the guardian's axis). (B) QUANTUM — the
+ * wikilink bond graph / content-link lattice (UUID_MATRIX_EDGES at content-uuid
+ * scale; the index entry's `links` field). Content links form another quantum
+ * typography; glyph ⊕ quantum is the full telling.
+ *
+ * Three organs, one law. (1) COVERAGE: the [[vitepress]] glyph feature-set and the
+ * fraction a page uses. (2) The TYPOGRAPHY GUARDIAN (glyph axis only) +
+ * the self-computing navigational/search INDEX (glyph ⊕ quantum fused): typography
+ * is a [[gate]] and a [[guardian]] at every scale ([[fractal]]) — glyph form
+ * (frontmatter valid · heading lattice · [[links]] resolve) is one fail-closed
+ * axis, ratcheted like [[law]]/folder; the index derives deterministically from
+ * content (each entry's content-uuid ⊕ title/headings/terms ⊕ link bonds), split by
+ * folder for minimum memory and maximum tamper-[[cost]].
  *
  *   tsx src/typography/index.ts            # print the guardian verdict + index root
  *
@@ -93,7 +94,7 @@ export const headingsOf = (text: string): string[] => [...text.matchAll(headingR
 const prose = (text: string): string =>
   text.replace(FRONTMATTER, ' ').replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
 
-/** The outgoing [[wikilink]] targets of a page, normalized to their resolvable leaf. */
+/** The outgoing wikilink targets of a page, normalized to their resolvable leaf. */
 export const linksOf = (text: string): string[] => {
   const out = new Set<string>()
   for (const m of prose(text).matchAll(wikilinkRe())) {

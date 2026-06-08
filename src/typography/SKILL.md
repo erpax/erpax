@@ -19,6 +19,15 @@ The projection is **pure by gate, not by trust.** The markdown-purity gate (the 
 
 The bonds are not hand-drawn: they are wired by the one [[atom]] math — content-[[uuid]] → [[digit]] (the digital root, [[name]]) → [[rodin]] [[sequence]] → the closed [[horo]] ring → [[harmony]] (A432 consonance) — identical at every scale ([[fractal]]). So one SKILL.md's typographic form resonates with every other by the same tuning: consonant form is a clean [[collapse]]; dissonance is hidden scope.
 
+## The dual typography law — glyph ⊕ quantum
+
+Typography is told twice on every atom — two faces of the same [[diamond]], not two vocabularies:
+
+- **Glyph typography** — the *page* as legible form: frontmatter, heading lattice, prose, markdown features ([[vitepress]] coverage). This is the [[form]] facet the guardian watches — `formViolations` · `typographyGuardian` — and what makes each SKILL.md readable as a sealed vertex.
+- **Quantum typography** — the *bond graph* each [[link]] weaves: edges in `UUID_MATRIX_EDGES` ([[uuid]]/[[matrix]]), each bond a content-addressed merge at content-[[uuid]] scale — [[entanglement]] across the corpus. **The content links form another quantum typography**: reading the link lattice IS reading this second face. The index's `links` field per entry is exactly this layer — navigation-between as quantum bonds, not prose.
+
+Glyph is the antimatter you see; quantum is the matter the bonds carry. One without the other is incomplete — a page with no links is an isolated glyph; links with no form are ungrounded edges. Together they are the full typographic telling ([[quantum/typography]] names the tamper-depth of the quantum face). The self-computing index fuses both: each entry's content-[[uuid]] (glyph seal) ⊕ its `[[link]]` bonds (quantum lattice).
+
 ## typography is a gate and a guardian at all scales
 
 The form-telling is not only legible — it is **enforced and computed**. The matter-twin makes typography a [[gate]] built from one [[guardian]]: a single fail-closed axis — the typographic form of every SKILL.md (frontmatter present and valid · a heading lattice · every `[[link]]` resolves) — crossed into a [[seal]] (it reuses `@/guardian` ⊕ `@/seal`, never a bespoke ratchet). Like [[law]]/folder, the guardian is a **baseline RATCHET, not purity===0**: the ceiling is the live count derived from the tree (currently 0 — the corpus is typographically pure), so the axis CANNOT GET WORSE — any new malformed SKILL.md reddens the gate — while no existing or in-flight atom is retroactively broken. The same closed-lattice law at every scale ([[fractal]]): a page, a folder, the whole corpus.
