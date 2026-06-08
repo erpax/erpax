@@ -19,6 +19,7 @@ import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
 import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS, bhtCollisionLog2 } from '@/cost'
 import { auraBalance, coverage as schemaCoverage } from '@/balance'
 import { orphans } from '@/entropy'
+import { crossSeals } from '@/aura'
 
 export interface TamperLever {
   lever: string
@@ -47,8 +48,12 @@ const lever = (name: string, v: CrackVerdict): TamperLever => ({
   binding: v.binding,
 })
 
-/** Analyze the corpus relating to MAX tamper cost — the weakest link, the levers, the distance to ∞. */
-export const maxTamperCost = (): MaxTamperCostReport => {
+/**
+ * Analyze the corpus relating to MAX tamper cost — the weakest link, the levers,
+ * the distance to ∞. PURE by default (no disk): the live cross-seal count is passed
+ * IN (`unsealedCrosses`) by the fs-allowed caller (the CLI), never read here.
+ */
+export const maxTamperCost = ({ unsealedCrosses = 0 }: { unsealedCrosses?: number } = {}): MaxTamperCostReport => {
   const d = auraBalance()
   const cov = schemaCoverage(d)
   // The PER-RECORD floor — three commitment threat models, coverage held OUT (its
@@ -65,7 +70,14 @@ export const maxTamperCost = (): MaxTamperCostReport => {
     { lever: 'quantum (BHT) collision vs bare 106-bit uuid', bindingLog2: bhtCollisionLog2(ERPAX_DIGEST_BITS), binding: 'collision' },
     { lever: 'quantum (BHT) collision vs full 256-bit digest', bindingLog2: bhtCollisionLog2(CONTENT_DIGEST_BITS), binding: 'collision' },
   ]
+  // The cross lever — duplication breaks the content-uuid binding. An UNSEALED cross
+  // is the same meaning at two independent representations, so a forger edits one
+  // diagonal and the twin never catches it: a 0-bit second-preimage, the cheapest
+  // forgery of all (it caps the whole chain at 0 until the cross is sealed).
+  if (unsealedCrosses > 0)
+    levers.push({ lever: `${unsealedCrosses} unsealed cross(es) — duplicated meaning, content-uuid binding broken`, bindingLog2: 0, binding: 'second-preimage' })
   const weakest = levers.reduce((m, l) => (l.bindingLog2 < m.bindingLog2 ? l : m))
+  const crossWeak = weakest.lever.includes('unsealed cross')
   const quantum = weakest.lever.startsWith('quantum')
   return {
     coverage: cov,
@@ -74,16 +86,20 @@ export const maxTamperCost = (): MaxTamperCostReport => {
     orphanCollections: d.orphanCollections.length,
     weakest,
     levers,
-    fix: quantum
-      ? 'quantum (BHT) collision on the bare uuid is the floor (2^35) — commit the FULL 256-bit content digest (→ 2^85) AND use a hash-based post-quantum anchor (Shor breaks RSA/ECC)'
-      : weakest.binding === 'collision'
-        ? 'thread anchorCommitmentBits=CONTENT_DIGEST_BITS (256): closes the 2^53 chosen-content collision to 2^128'
-        : 'commitment binds at second-preimage; close the coverage gap toward 1 to drive cost → ∞',
+    fix: crossWeak
+      ? 'seal the unsealed cross(es): make one diagonal re-point to / export * the other so the duplicated meaning collapses to one content-uuid (the merge law at path scale) — closes the 0-bit binding that caps the whole chain'
+      : quantum
+        ? 'quantum (BHT) collision on the bare uuid is the floor (2^35) — commit the FULL 256-bit content digest (→ 2^85) AND use a hash-based post-quantum anchor (Shor breaks RSA/ECC)'
+        : weakest.binding === 'collision'
+          ? 'thread anchorCommitmentBits=CONTENT_DIGEST_BITS (256): closes the 2^53 chosen-content collision to 2^128'
+          : 'commitment binds at second-preimage; close the coverage gap toward 1 to drive cost → ∞',
   }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const r = maxTamperCost()
+  // The fs-allowed edge: derive the live cross-seal count and pass it in (the
+  // module itself stays pure — no disk read inside maxTamperCost).
+  const r = maxTamperCost({ unsealedCrosses: crossSeals().unsealed.length })
   console.log('max-tamper-cost (coverage ' + (100 * r.coverage).toFixed(1) + '%, gap-to-∞ ' + r.gapToInfinity.toFixed(4) + '):')
   for (const l of r.levers) console.log('  ' + l.bindingLog2.toFixed(2).padStart(8) + ' log2  ' + l.binding.padEnd(16) + l.lever)
   console.log('  WEAKEST: ' + r.weakest.lever + ' @ ' + r.weakest.bindingLog2.toFixed(2) + ' log2 (' + r.weakest.binding + ')')

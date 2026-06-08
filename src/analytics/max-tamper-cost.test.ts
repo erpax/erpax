@@ -41,4 +41,18 @@ describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', 
   it('the fix names the full digest + the post-quantum anchor', () => {
     expect(r.fix).toMatch(/256|post-quantum/)
   })
+
+  // An unsealed cross is duplicated meaning — the content-uuid binding broken — so it
+  // is a 0-bit forgery that becomes the weakest link, capping the whole chain at 0
+  // until sealed. (Passed in, keeping the module pure; the CLI reads crossSeals live.)
+  it('an unsealed cross is the 0-bit weakest link, and the fix is to seal it', () => {
+    const withCross = maxTamperCost({ unsealedCrosses: 1 })
+    expect(withCross.weakest.lever).toContain('unsealed cross')
+    expect(withCross.weakest.bindingLog2).toBe(0)
+    expect(withCross.fix).toMatch(/seal the unsealed cross/)
+  })
+
+  it('with no unsealed crosses the quantum (BHT) floor remains the weakest (default is pure)', () => {
+    expect(maxTamperCost().weakest.lever.startsWith('quantum')).toBe(true)
+  })
 })
