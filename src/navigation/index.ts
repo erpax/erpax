@@ -10,7 +10,7 @@
  *   tsx src/navigation/index.ts agents/mcp/tool
  *
  * @audit nav · group · route computed from the path only — never assigned
- * @see ../corpus -- ../vitepress -- ../compass -- ./groups.ts -- ./SKILL.md
+ * @see ../corpus -- ../vitepress -- ../compass -- ./groups -- ./SKILL.md
  */
 
 export {

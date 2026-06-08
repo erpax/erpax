@@ -9,9 +9,9 @@
  *   tsx src/navigation/distribute.ts --apply medical
  *   tsx src/navigation/distribute.ts --apply body
  *
- * @see ./groups.ts — ../wave/load — ../seal — ../readme
+ * @see ./groups — ../wave/load — ../seal — ../readme
  */
-import { existsSync, mkdirSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { selfBalancingWaveLoad, pathComparableUnits } from '@/wave/load'
 import { finishedIdeaCrossed } from '@/seal'
@@ -23,7 +23,7 @@ import {
   listAtomPaths,
 } from '@/readme'
 import { hasWordFolderTrinity } from '@/law/folder/word'
-import { BODY_FOLD_ROOT, MEDICAL_WAVE_1, COMPUTER_WAVE_1, NAV_HUBS, type NavHub } from './groups'
+import { BODY_FOLD_ROOT, MEDICAL_WAVE_1, COMPUTER_WAVE_1, type NavHub } from './groups'
 
 const SRC = 'src'
 
