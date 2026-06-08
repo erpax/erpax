@@ -9,7 +9,7 @@
  */
 
 import canUseDOM from '@/can/use/dom'
-import { buildOrigin, normalizeUrl, resolvePublicSiteUrl as resolvePublicSiteUrlUtil } from '@/rfc/3986/url-utils'
+import { buildOrigin, normalizeUrl, resolvePublicSiteUrl as resolvePublicSiteUrlUtil } from './url-utils'
 
 /** Optional headers from `next/headers` or Web `Request` — used when `NEXT_PUBLIC_SERVER_URL` is unset. */
 export type ServerOriginOptions = {

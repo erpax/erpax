@@ -33,7 +33,7 @@
  * @see ../../dry-proof.ts ../../bitcoin/genesis src/services/anchor src/services/uuid-matrix
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 import { ANCHOR_STRENGTH_BITS, anchoredFloorLog2, anchorBinding, type AnchorKind } from '@/anchor'
 import { ERPAX_DIGEST_BITS } from '@/cost'
 

@@ -13,17 +13,17 @@
  * @standard ISO/IEC 25010:2023 §5.4 reusability
  */
 
-export type { TenantRoleProfile, AuditPolicy, AuditCadence } from '@/tenant/role/types'
+export type { TenantRoleProfile, AuditPolicy, AuditCadence } from './types'
 export {
   defineTenantRole, getTenantRole, listTenantRoles, getEffectiveProfile,
   __resetRegistryForTests,
-} from '@/tenant/role/registry'
+} from './registry'
 
 // Side-effect imports — register the 5 reference profiles at module load.
 // Order matters: parents before children
 // (business → payment-provider → bank ; business → government → country).
-import '@/tenant/roles/profile/business.profile'
-import '@/tenant/roles/profile/payment-provider.profile'
-import '@/tenant/roles/profile/bank.profile'
-import '@/tenant/roles/profile/government.profile'
-import '@/tenant/roles/profile/country.profile'
+import '../roles/profile/business.profile'
+import '../roles/profile/payment-provider.profile'
+import '../roles/profile/bank.profile'
+import '../roles/profile/government.profile'
+import '../roles/profile/country.profile'

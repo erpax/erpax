@@ -6,7 +6,7 @@
  * are all the same". Everything else MERGES BY EXTENSION into its canonical:
  *   *.ts        -> index.ts   (matter)        *.md  -> SKILL.md  (antimatter)
  *   *.test.ts   -> test.ts    (the test, part of the architecture, one per folder)
- *   translations.ts / seed.ts                  (per-folder computed / opening data)
+ *   translations.ts / seed.ts / README.md      (per-folder computed / opening data / diamond projection)
  * A leftover same-extension file is entropy -- collide it into the canonical
  * ([[collapse]] · [[merge]] · [[dissolution]]).
  *
@@ -25,7 +25,7 @@ import { join, extname } from 'node:path'
 import { isRealDir } from '@/aura'
 
 /** Canonical word-atom files -- one per role, per folder. */
-export const CANONICAL = ['SKILL.md', 'index.ts', 'test.ts', 'translations.ts', 'seed.ts'] as const
+export const CANONICAL = ['SKILL.md', 'index.ts', 'test.ts', 'translations.ts', 'seed.ts', 'README.md'] as const
 /** Files the frameworks require (Next.js app router · Payload · admin) -- all allowed. */
 export const FRAMEWORK = new Set<string>([
   'page.tsx', 'layout.tsx', 'loading.tsx', 'not-found.tsx', 'error.tsx', 'global-error.tsx',

@@ -17,7 +17,7 @@
  */
 
 import { Access, PayloadRequest } from 'payload'
-import type { Subscription } from '@/payload-types'
+import type { Subscription } from '@/types'
 import type { Iso27002ControlId } from '@/iso/27002'
 import { getUserContext } from '@/auth'
 

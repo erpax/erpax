@@ -4,7 +4,7 @@ import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 
 import { isSuperAdmin } from '@/is/super/admin'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { isAccessingSelf } from '@/users/access/isAccessingSelf'
+import { isAccessingSelf } from './isAccessingSelf'
 import { getCollectionIDType } from '@/get/collection/id/type'
 
 /**

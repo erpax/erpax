@@ -5,4 +5,4 @@
  * @see docs/STANDARDS.md §4.2
  */
 
-export * from '@/factory/collection-factory';
+export * from './collection-factory';

@@ -20,6 +20,8 @@ pnpm readme         # regenerate README.md from the live tree
 pnpm readme:check   # the drift gate — exit 1 if committed ≠ regenerated (fail closed)
 ```
 
-**Law — [[law]]: the README is a [[diamond]] — a content-addressed projection of the live tree, regenerable with zero [[entropy]] and drift-detectable (a hand-edit fails `pnpm readme:check` closed) — and its typography IS the diamond projected: the facets are the closed [[horo]] ring in measure-walk order, the seal is the [[matrix]] root content-[[uuid]], so reading the README is reading the crystal. Derived from the tree ([[matrix]] · fs walk · package.json), never hand-typed.**
+**Every README (root and per-folder) is 100% computed** — zero hand-authored prose; every token is a derived facet (atom path, horo position, trinity counts, bond degrees, content-[[uuid]], seal status). Each per-folder README is a **quantum accounting statement** of that [[diamond]]'s completeness: trinity present (form·code·proof), folded in the lattice, links resolved, bonds in/out — credit/debit/balance rows computed live. Ties [[purity]], [[seal]], [[diamond]]; drift fails `pnpm readme:check` closed.
+
+**Law — [[law]]: the README is a [[diamond]] — a content-addressed projection of the live tree, regenerable with zero [[entropy]] and drift-detectable (a hand-edit fails `pnpm readme:check` closed) — root and every atom folder; each is a quantum accounting statement of completeness; typography IS the diamond projected. Derived from the tree ([[matrix]] · fs walk · package.json), never hand-typed.**
 
 @see [[diamond]] · [[self/generate]] · [[horo]] · [[matrix]] · [[aura]] · [[trinity]]

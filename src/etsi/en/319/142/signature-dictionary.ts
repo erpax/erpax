@@ -31,7 +31,7 @@ import {
   padesLevelOid,
   type PadesLevel,
   type PadesSubFilter,
-} from '@/etsi/en/319/142/profile'
+} from './profile'
 
 export interface PadesSignatureDictionaryInput {
   /** Optional human reason shown in the signature panel. */

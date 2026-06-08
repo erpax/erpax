@@ -14,7 +14,7 @@ import type {
   PaymentFrequency,
   PaymentTiming,
   LeaseModificationKind,
-} from '@/ifrs/16/types'
+} from './types'
 
 const CLASSIFICATIONS = new Set<LeaseClassification>([
   'finance',

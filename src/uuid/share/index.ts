@@ -55,9 +55,9 @@
  */
 
 import type { Payload, Where } from 'payload'
-import type { ContentUuid } from '@/integrity/content-uuid'
-import { writeAuditEvent } from '@/audit/trail/write-audit-event'
-import type { UuidLinkedLeaf } from '@/integrity/uuid-linked-chain'
+import type { ContentUuid } from '@/integrity'
+import { writeAuditEvent } from '@/audit/trail'
+import type { UuidLinkedLeaf } from '@/integrity'
 // Slice YYYYYYYYY-cut1 (2026-05-11) — share grants emit structured
 // uuidv8 (Law 61) so the shareUuid self-describes: slot=share +
 // SHARED + (SIGNED|SEALED for sign/admin grants). Federation peers

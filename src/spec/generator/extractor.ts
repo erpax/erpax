@@ -44,7 +44,7 @@ import type {
   CollectionSpec, SpecCorpus, SpecStandard, SpecChainStep, SpecFeature,
   SpecRole, SpecEmit, SpecSubscribe, SpecExample, SpecInvariant,
   SpecUseCase, SpecSummary, SpecSlice, SpecCron, SpecSee,
-} from '@/spec/generator/types'
+} from './types'
 
 const STANDARD_ALIASES = new Set(['standard', 'accounting', 'compliance', 'audit', 'security'])
 

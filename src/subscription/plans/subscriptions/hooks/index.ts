@@ -8,5 +8,5 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/subscription/plans/subscriptions/hooks/emitLifecycleEvents'
-export * from '@/subscription/plans/subscriptions/hooks/encryptSensitiveFields'
+export * from './emitLifecycleEvents'
+export * from './encryptSensitiveFields'

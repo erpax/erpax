@@ -28,9 +28,9 @@
  */
 
 // Component facet — render atoms.
-export { default as Money } from '@/shared/Money'
-export { default as AuditedTimestamp } from '@/shared/AuditedTimestamp'
-export { default as AddressBlock } from '@/shared/AddressBlock'
+export { default as Money } from './Money'
+export { default as AuditedTimestamp } from './AuditedTimestamp'
+export { default as AddressBlock } from './AddressBlock'
 
 // Field facet — reusable Payload Field factories.
-export * from '@/shared/field'
+export * from './field'

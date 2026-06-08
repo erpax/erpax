@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { attemptTransition, deadEnds, crossDomainEdges, emittedEvents } from '@/workflow/engine'
 import type { StateMachine } from '@/workflow/engine'
-import { WORKFLOW_CATALOG_SM } from '@/workflow/engine/fixtures'
+import { WORKFLOW_CATALOG_SM } from './fixtures'
 
 const SM: StateMachine = {
   states: [

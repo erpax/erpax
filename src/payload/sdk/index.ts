@@ -12,9 +12,9 @@
 
 import { PayloadSDK } from '@payloadcms/sdk'
 
-import type { Config } from '@/payload-types'
+import type { Config } from '@/types'
 import canUseDOM from '@/can/use/dom'
-import { getClientSideURL, getServerSideURL } from '@/rfc/3986/get-url'
+import { getClientSideURL, getServerSideURL } from '@/rfc/3986'
 
 function apiBaseURL(): string {
   const origin = canUseDOM

@@ -19,7 +19,7 @@ import {
   type ResolvedWidget,
   type AnyWidgetSpec,
 } from '@/dashboard/spec';
-import { DASHBOARD_REGISTRY, DASHBOARDS } from '@/dashboard/dashboards';
+import { DASHBOARD_REGISTRY, DASHBOARDS } from './dashboards';
 import { Nav } from '@/dashboard/nav';
 
 import { getUserContext } from '@/auth';

@@ -57,9 +57,9 @@
  */
 
 import { listFaces } from '@/website'
-import { listTypes } from '@/integrity/type-uuid'
+import { listTypes } from './type-uuid'
 import { listBackends } from '@/storage/independence'
-import { TORUS_DEFAULT_ENVELOPE } from '@/topology/torus'
+import { TORUS_DEFAULT_ENVELOPE } from '@/topology'
 
 export type UuidSource =
   | 'object'           // Law 8 — content-addressable instance (slice RRRRR)

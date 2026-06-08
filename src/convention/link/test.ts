@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { coverage, linkTally } from '@/convention/link/index.ts'
+import { coverage, linkTally } from './index.ts'
 
 describe('convention/link — every [[link]] resolves (coverage = resolving / total)', () => {
   it('coverage ∈ [0,1] — a pure ratio, no fallback', () => {

@@ -28,22 +28,22 @@
 
 // Side-effect imports — each provider file calls
 // `registerInternalProvider(...)` at module top-level.
-import '@/self/closure/provider/signing'
-import '@/self/closure/provider/federation'
-import '@/self/closure/provider/notification'
-import '@/self/closure/provider/search'
+import './signing'
+import './federation'
+import './notification'
+import './search'
 
-export { InternalSigningProvider } from '@/self/closure/provider/signing'
-export type { SigningParams, SigningResult } from '@/self/closure/provider/signing'
+export { InternalSigningProvider } from './signing'
+export type { SigningParams, SigningResult } from './signing'
 
-export { InternalFederationProvider } from '@/self/closure/provider/federation'
-export type { FederationPushParams, FederationPushResult } from '@/self/closure/provider/federation'
+export { InternalFederationProvider } from './federation'
+export type { FederationPushParams, FederationPushResult } from './federation'
 
-export { InternalNotificationProvider } from '@/self/closure/provider/notification'
+export { InternalNotificationProvider } from './notification'
 export type {
   NotificationParams as InternalNotificationParams,
   NotificationResult as InternalNotificationResult,
-} from '@/self/closure/provider/notification'
+} from './notification'
 
-export { InternalSearchProvider } from '@/self/closure/provider/search'
-export type { SearchParams, SearchResult } from '@/self/closure/provider/search'
+export { InternalSearchProvider } from './search'
+export type { SearchParams, SearchResult } from './search'

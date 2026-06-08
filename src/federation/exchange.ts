@@ -7,7 +7,7 @@
  */
 
 import { computeContentUuid, verifyContentUuid, stripNonContentFields } from '@/integrity'
-import type { FederatedRow, TrustEntry, ImportResult } from '@/federation/types'
+import type { FederatedRow, TrustEntry, ImportResult } from './types'
 
 /** Export a local row as a FederatedRow (envelope-wrapped, verifiable). */
 export function exportRow(args: {

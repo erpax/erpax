@@ -14,6 +14,6 @@
  * @see src/items/hooks/item.ts
  */
 
-import { itemAccountingHook } from '@/items/hooks/item'
+import { itemAccountingHook } from './item'
 
 export const itemsAfterChange = [itemAccountingHook]

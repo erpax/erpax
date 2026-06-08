@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { bgTaxGroupForRate, BG_TAX_GROUP_RATE, type BgTaxGroup } from '@/naredba/n/18/vat-groups'
+import { bgTaxGroupForRate, BG_TAX_GROUP_RATE, type BgTaxGroup } from './vat-groups'
 
 describe('bgTaxGroupForRate', () => {
   it('maps the three statutory rates to А/Г/Б', () => {

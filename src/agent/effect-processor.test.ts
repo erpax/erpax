@@ -6,8 +6,8 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect, vi } from 'vitest'
-import { processEffect, processEffects } from '@/agent/effect-processor'
-import type { AgentContext, AgentEffect } from '@/agent/types'
+import { processEffect, processEffects } from './effect-processor'
+import type { AgentContext, AgentEffect } from './types'
 
 function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
   return {

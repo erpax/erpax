@@ -14,7 +14,7 @@ import { useTranslation } from '@payloadcms/ui'
 import React from 'react'
 
 import { SeedButton } from '@/before/dashboard/seed/button'
-import '@/before/dashboard/index.scss'
+import './index.scss'
 
 const baseClass = 'before-dashboard'
 

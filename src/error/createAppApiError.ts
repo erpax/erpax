@@ -1,7 +1,7 @@
 import { APIError } from 'payload'
 
-import type { AppErrorCode } from '@/error/errorCodes'
-import { apiErrorJson } from '@/error/httpApiError'
+import type { AppErrorCode } from './errorCodes'
+import { apiErrorJson } from './httpApiError'
 
 export type AppApiErrorPayload = { code: string } & Record<string, unknown>
 

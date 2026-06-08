@@ -7,11 +7,11 @@
  * @see ./bg.ts
  */
 
-export type { CountryBundle } from '@/iso/3166/1/country/types';
-export { BG_COUNTRY_BUNDLE } from '@/iso/3166/1/country/bg';
+export type { CountryBundle } from './types';
+export { BG_COUNTRY_BUNDLE } from './bg';
 
-import { BG_COUNTRY_BUNDLE } from '@/iso/3166/1/country/bg';
-import type { CountryBundle } from '@/iso/3166/1/country/types';
+import { BG_COUNTRY_BUNDLE } from './bg';
+import type { CountryBundle } from './types';
 
 /**
  * Registry of every curated `CountryBundle`. Add a new country by importing

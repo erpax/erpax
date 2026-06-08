@@ -15,7 +15,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import type { Field } from 'payload'
-import { createAccountingCollection } from '@/factory/collection-factory'
+import { createAccountingCollection } from './collection-factory'
 import {
   notesField, auditFields, statusField, currencyField,
 } from '@/fields'

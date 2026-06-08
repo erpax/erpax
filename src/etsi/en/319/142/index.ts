@@ -14,10 +14,10 @@ export {
   PADES_DEFAULT_LEVEL,
   PADES_DEFAULT_SUBFILTER,
   padesLevelOid,
-} from '@/etsi/en/319/142/profile'
+} from './profile'
 
 export {
   buildPadesSignatureDictionary,
   type PadesSignatureDictionaryInput,
   type PadesSignatureDictionary,
-} from '@/etsi/en/319/142/signature-dictionary'
+} from './signature-dictionary'

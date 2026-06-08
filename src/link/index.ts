@@ -14,10 +14,10 @@
  * @see docs/STANDARDS.md §3
  */
 
-export { appearanceOptions, link, type LinkAppearances } from '@/link/field'
-export { linkGroup } from '@/link/group'
+export { appearanceOptions, link, type LinkAppearances } from './field'
+export { linkGroup } from './group'
 
 // CMSLink is a client React component ('use client'); re-exported for name
 // resolution. Server-only importers should prefer the specific facet files
 // (@/link/field, @/link/group) to avoid pulling the client bundle.
-export { CMSLink } from '@/link/Component'
+export { CMSLink } from './Component'

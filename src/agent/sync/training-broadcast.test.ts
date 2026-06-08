@@ -5,8 +5,8 @@ import {
   normalizeRequired,
   buildAssessedEvent,
   JOB_LEVEL_TO_SFIA,
-} from '@/agent/sync/training-broadcast'
-import { TRAINING_TRIGGER } from '@/agents/registered/hr.training'
+} from './training-broadcast'
+import { TRAINING_TRIGGER } from '@/agents/registered'
 
 describe('training-broadcast — the schema-aware projection that arms the loop', () => {
   it('maps the 11-rung org ladder to SFIA 1..7, monotone, blanks to the fundamental', () => {

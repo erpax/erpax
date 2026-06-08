@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { selectBestCandidate, voteFor, type CachedCandidate } from '@/ai/cache-vote'
+import { selectBestCandidate, voteFor, type CachedCandidate } from './cache-vote'
 
 const id = (s: string) => s
 

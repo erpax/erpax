@@ -24,3 +24,4 @@ export type { ErpaxMcpPrompt } from '@/agents/mcp'
 export { ERPAX_MCP_PROMPTS } from '@/agents/mcp'
 
 export { agentRegistry, agentRuntime, erpaxMcpTools, erpaxMcpResources, erpaxMcpPrompts } from './bootstrap'
+export { manifestOf, buildBlockCatalog, composeBlocks, validateComposition, chainBlocks, checkRegistryCoupling, chainsAsBlockCompositions } from './blocks'

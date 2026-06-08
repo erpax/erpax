@@ -11,7 +11,7 @@ import type {
   RoleDefinition,
   RoleMatch,
   ScopeResourceCollection,
-} from '@/nist/incits/359/types'
+} from './types'
 
 function tupleFromDocument(resource: RoleDefinition['resource']): {
   collection: ScopeResourceCollection

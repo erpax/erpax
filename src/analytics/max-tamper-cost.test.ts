@@ -6,7 +6,7 @@
  * @standard ISO/IEC-29119:2022 software testing (computed invariant)
  */
 import { describe, it, expect } from 'vitest'
-import { maxTamperCost } from '@/analytics/max-tamper-cost'
+import { maxTamperCost } from './max-tamper-cost'
 
 describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', () => {
   const r = maxTamperCost()

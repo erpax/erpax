@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { getCachedDocument } from '@/rfc/9110/get-document'
+import { getCachedDocument } from './get-document'
 
 // Mock the payloadCache module
 vi.mock('@/utilities/payloadCache', () => ({

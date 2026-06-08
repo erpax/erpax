@@ -10,7 +10,7 @@
  * @standard ISO/IEC 25010:2023 §5.4 reusability
  */
 
-import type { TenantRoleProfile } from '@/tenant/role/types'
+import type { TenantRoleProfile } from './types'
 
 const REGISTRY = new Map<string, TenantRoleProfile>()
 

@@ -6,11 +6,11 @@
  * `erpax-platform` TenantRoleProfile so any code calling
  * `getTenantRole('erpax-platform')` resolves it.
  */
-import '@/self/reference/erpax.profile'
+import './erpax.profile'
 
 import { listTenantRoles } from '@/tenant/role'
 import { collectGenome } from '@/cloning'
-import { agentRegistry } from '@/agent/bootstrap'
+import { agentRegistry } from '@/agent'
 
 /**
  * Conservation Law 23 — `checkErpaxObservesItself`.

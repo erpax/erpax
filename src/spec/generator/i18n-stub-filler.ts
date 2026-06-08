@@ -11,9 +11,9 @@
  * @rfc 8259 json
  */
 
-import type { Bundles, I18nAuditReport } from '@/spec/generator/i18n-audit'
-import type { GeneratedTranslations } from '@/spec/generator/translation-generator'
-import { STUB_PREFIX } from '@/spec/generator/i18n-keys'
+import type { Bundles, I18nAuditReport } from './i18n-audit'
+import type { GeneratedTranslations } from './translation-generator'
+import { STUB_PREFIX } from './i18n-keys'
 
 export interface StubFillResult {
   readonly bundles: Bundles

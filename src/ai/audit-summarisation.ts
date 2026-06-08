@@ -15,7 +15,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
-import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from '@/ai/cloudflare-ai'
+import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
 
 export interface AuditSummarisationInput {
   readonly periodStart: string // ISO 8601

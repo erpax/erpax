@@ -27,7 +27,7 @@
  * @standard schema.org — the type vocabulary, collided to single words
  * @see @/corpus (loadCorpus — the one deduped walk) · @/law · ../import · ../dry · ./SKILL.md
  */
-import { loadCorpus } from '@/corpus/index.mts'
+import { loadCorpus } from '@/corpus'
 
 /** The invariant marker — a SKILL.md is lawful iff its body carries a `**Law` line. */
 export const LAW_MARKER = /\*\*Law/

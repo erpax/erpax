@@ -72,14 +72,14 @@
  * @standard W3C i18n key-naming-best-practices
  */
 
-import type { SpecCorpus, CollectionSpec } from '@/spec/generator/types'
-import type { EvidenceCorpus } from '@/spec/generator/evidence-collector'
-import type { E2eSpecCorpus } from '@/spec/generator/e2e-spec-extractor'
+import type { SpecCorpus, CollectionSpec } from './types'
+import type { EvidenceCorpus } from './evidence-collector'
+import type { E2eSpecCorpus } from './e2e-spec-extractor'
 import {
   collectionKeys, chainKeys, chainStepKey,
   workflowKeys, workflowStepKey, humaniseSlug,
-} from '@/spec/generator/i18n-keys'
-import { SPEC_TEMPLATES, templateKey, compose, allTemplateKeys, type SpecTypeKind } from '@/spec/generator/spec-templates'
+} from './i18n-keys'
+import { SPEC_TEMPLATES, templateKey, compose, allTemplateKeys, type SpecTypeKind } from './spec-templates'
 
 /** Output of `generateTranslations()` — flat key→default-English map. */
 export interface GeneratedTranslations {

@@ -7,7 +7,7 @@ import { describe, it, expect } from 'vitest'
 import {
   computeContentUuid, computeContentDigest, verifyContentUuid, jcsCanonicalize,
   stripNonContentFields, tenantNamespace, NON_CONTENT_FIELDS,
-} from '@/integrity/content-uuid'
+} from './content-uuid'
 
 describe('jcsCanonicalize (RFC 8785)', () => {
   it('sorts object keys lexicographically', () => {

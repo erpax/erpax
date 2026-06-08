@@ -12,7 +12,7 @@
 import type { AccessArgs } from 'payload'
 import type { Iso27002ControlId } from '@/iso/27002'
 
-import type { User } from '@/payload-types'
+import type { User } from '@/types'
 
 type isAuthenticated = (args: AccessArgs<User>) => boolean
 

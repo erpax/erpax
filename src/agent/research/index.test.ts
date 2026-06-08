@@ -18,7 +18,7 @@ import {
   registerResearchSociety,
   type Finding,
 } from '@/agent/research'
-import { createMemoryPayload } from '@/agent/research/memory'
+import { createMemoryPayload } from './memory'
 import { verifyReceiptChain } from '@/receipt'
 
 const TENANT = 'erpax-research-tenant'

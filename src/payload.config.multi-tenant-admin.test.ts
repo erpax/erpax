@@ -20,7 +20,7 @@
 
 import { createLocalReq, getPayload, type Payload } from 'payload'
 
-import config from '@/payload.config'
+import config from '@/payload'
 import type { User } from '@/types'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 

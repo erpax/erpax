@@ -10,8 +10,8 @@
 
 import { describe, it, expect } from 'vitest'
 
-import type { RoleDefinition } from '@/nist/incits/359/types'
-import { hasAllRoles, hasAnyRole, hasRole, hasStrictRole } from '@/nist/incits/359/predicates'
+import type { RoleDefinition } from './types'
+import { hasAllRoles, hasAnyRole, hasRole, hasStrictRole } from './predicates'
 
 describe('permission predicates', () => {
   const globalEditor: RoleDefinition = {

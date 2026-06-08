@@ -8,4 +8,4 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/tenants/access/updateAndDelete'
+export * from './updateAndDelete'

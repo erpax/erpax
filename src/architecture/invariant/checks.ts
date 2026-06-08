@@ -12,8 +12,8 @@
 import { createHash } from 'node:crypto'
 import { readFileSync, readdirSync, existsSync, statSync, type Dirent } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
-import type { InvariantResult, InvariantContext } from '@/architecture/invariant/types'
-import { norm } from '@/corpus/index.mts'
+import type { InvariantResult, InvariantContext } from './types'
+import { norm } from '@/corpus'
 
 import { FEATURE_REGISTRY, TIERS, featuresForTier, type Tier } from '@/feature/registry'
 import { BUSINESS_CHAINS } from '@/business/chain'
@@ -51,18 +51,18 @@ async function loadMcpTools(): Promise<ReadonlyArray<ErpaxMcpTool>> {
   const m = await import('@/agents/mcp')
   return m.buildErpaxMcpTools(agentRegistry)
 }
-import { checkTorusBounded } from '@/topology/torus'
+import { checkTorusBounded } from '@/topology'
 // Lazy — `proof/dry-proof.ts` imports `runAllInvariants` from this
 // module's barrel, so a static import here would close the cycle.
 async function loadCheckDryProofPublished(origin: string) {
   const m = await import('@/proof/dry-proof')
   return m.checkDryProofPublished(origin)
 }
-import { checkAgentLawCoverage } from '@/architecture/invariant/by-agent'
+import { checkAgentLawCoverage } from './by-agent'
 import { checkUuidShortDisplay } from '@/integrity'
 import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/integrity'
 import { checkInfiniteFiniteness } from '@/integrity'
-import { checkDimensionalCoverage } from '@/plugin/dimensions'
+import { checkDimensionalCoverage } from '@/plugin'
 import { checkDimensionalPluginScaffolded } from '@/dimension'
 import { computeContentUuid as _computeContentUuid } from '@/integrity'
 

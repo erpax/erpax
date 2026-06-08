@@ -24,9 +24,9 @@ import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
 import { autoSetTimestamp } from '@/auto/set/timestamp'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
-import { validateNotLocked } from '@/utility/period-lock'
+import { validateNotLocked } from '@/utility'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
-import { inventoryMovementPostingHook } from '@/items/inventory/movements/hooks/inventory-movement'
+import { inventoryMovementPostingHook } from './hooks/inventory-movement'
 
 const InventoryMovements: CollectionConfig = {
   slug: 'inventory-movements',

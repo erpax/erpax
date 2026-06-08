@@ -22,8 +22,8 @@
  */
 
 import type { ErpaxEvent } from '@/agent/sync'
-import { domainToErpaxEvent } from '@/agent/sync/society'
-import type { DomainEvent } from '@/agent/types'
+import { domainToErpaxEvent } from './society'
+import type { DomainEvent } from '../types'
 
 export const CHAT_COLLECTION = 'chat' as const
 

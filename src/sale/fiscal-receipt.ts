@@ -18,7 +18,7 @@
 
 import { isValidUnp } from '@/naredba/n/18'
 import { bgTaxGroupForRate, type BgTaxGroup } from '@/naredba/n/18'
-import { calculateBgVat } from '@/country/client/bg-vat'
+import { calculateBgVat } from '@/country/client'
 
 export interface FiscalReceiptLine {
   readonly description: string

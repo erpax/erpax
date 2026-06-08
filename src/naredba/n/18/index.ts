@@ -8,6 +8,6 @@
  * @standard BG Наредба-Н-18 §СУПТО retail-fiscal-regime
  * @standard BG ЗДДС §118 fiscal-receipt-obligation
  */
-export * from '@/naredba/n/18/scope'
-export * from '@/naredba/n/18/unp'
-export * from '@/naredba/n/18/vat-groups'
+export * from './scope'
+export * from './unp'
+export * from './vat-groups'

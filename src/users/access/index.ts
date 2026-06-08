@@ -8,7 +8,7 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/users/access/create'
-export * from '@/users/access/isAccessingSelf'
-export * from '@/users/access/read'
-export * from '@/users/access/updateAndDelete'
+export * from './create'
+export * from './isAccessingSelf'
+export * from './read'
+export * from './updateAndDelete'

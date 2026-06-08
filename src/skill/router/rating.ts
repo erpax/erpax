@@ -17,7 +17,7 @@
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
 import type { SkillNode } from './resolve'
-import { norm } from '@/corpus/index.mts'
+import { norm } from '@/corpus'
 
 export interface Rating {
   /** the rated atom (normalized leaf-word). */

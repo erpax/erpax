@@ -29,7 +29,7 @@ import {
   ERPAX_DIGEST_BITS,
   CONTENT_DIGEST_BITS,
 } from '@/cost'
-import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from '@/standards/catalogue'
+import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from '@/standards'
 
 // The deep security capability — the weakest link relating to MAX tamper cost.
 export { maxTamperCost, type MaxTamperCostReport, type TamperLever } from './max-tamper-cost'

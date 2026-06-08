@@ -8,6 +8,6 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/posts/hooks/beforeChange'
-export * from '@/posts/hooks/populateAuthors'
-export * from '@/posts/hooks/revalidatePost'
+export * from './beforeChange'
+export * from './populateAuthors'
+export * from './revalidatePost'

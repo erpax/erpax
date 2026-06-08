@@ -62,8 +62,8 @@ import type {
   Vendor,
   JournalEntry,
   InventoryMovement,
-} from '@/payload-types'
-import { generateTrialBalance, type TrialBalanceRow } from '@/accounting/reports.service'
+} from '@/types'
+import { generateTrialBalance, type TrialBalanceRow } from '@/accounting'
 
 export interface SafTExportOptions {
   /** Tenant id whose data to export. */

@@ -11,5 +11,5 @@
  * @standard W3C Verifiable Credentials Data Model 2.0
  */
 
-export type { FederatedRow, TrustEntry, ImportResult, FederationManifest } from '@/federation/types'
-export { exportRow, importRow } from '@/federation/exchange'
+export type { FederatedRow, TrustEntry, ImportResult, FederationManifest } from './types'
+export { exportRow, importRow } from './exchange'

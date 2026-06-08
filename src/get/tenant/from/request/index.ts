@@ -12,7 +12,7 @@ import configPromise from '@payload-config'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { getPayload } from 'payload'
 
-import type { Tenant } from '@/payload-types'
+import type { Tenant } from '@/types'
 
 /**
  * Resolve the active tenant document from the `payload-tenant` cookie.

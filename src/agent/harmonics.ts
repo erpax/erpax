@@ -24,7 +24,7 @@
  * @standard NIST FIPS 180-4 sha-256 (the content-uuid digest)
  * @audit Conservation Law 55 (tamper-reversibility-cost) — the fight is priced, not forbidden
  */
-import { agentUuid, cloneAgent, type AgentDef, type ClonedAgent } from '@/agent/service'
+import { agentUuid, cloneAgent, type AgentDef, type ClonedAgent } from './service'
 import { computeTamperReverseCost } from '@/integrity'
 import { proveBeyondResources } from '@/integrity'
 

@@ -11,7 +11,7 @@ export {
   ensureProtocol,
   joinUrl,
   resolvePublicSiteUrl,
-} from '@/rfc/3986/url-utils'
+} from './url-utils'
 
 export {
   getOriginFromHeaders,
@@ -19,6 +19,6 @@ export {
   getClientSideURL,
   resolvePublicSiteUrl as resolvePublicSiteUrlFromHeaders,
   type ServerOriginOptions,
-} from '@/rfc/3986/get-url'
+} from './get-url'
 
-export { generatePreviewPath } from '@/rfc/3986/generate-preview-path'
+export { generatePreviewPath } from './generate-preview-path'

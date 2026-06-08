@@ -27,7 +27,7 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { TaxPeriodReconciliation } from '@/tax/period/reconciliation'
-import type { FiscalPeriod } from '@/payload-types'
+import type { FiscalPeriod } from '@/types'
 
 type TransferPricingAdjustmentInput = Parameters<
   typeof TaxPeriodReconciliation.assessTaxPeriodReadiness

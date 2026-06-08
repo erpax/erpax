@@ -8,8 +8,8 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/invoices/payments/hooks/afterChange'
-export * from '@/invoices/payments/hooks/beforeChange'
-export * from '@/invoices/payments/hooks/beforeValidate'
+export * from './afterChange'
+export * from './beforeChange'
+export * from './beforeValidate'
 // GL posting hook (dissolved from the former accounting/hooks slice).
-export * from '@/invoices/payments/hooks/payment'
+export * from './payment'

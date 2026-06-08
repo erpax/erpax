@@ -18,16 +18,16 @@ export {
   type AiCallOptions,
   type AiCallResult,
   type WorkersAiBinding,
-} from '@/ai/cloudflare-ai'
+} from './cloudflare-ai'
 
 // Per-feature thin wrappers (one per FEATURE_REGISTRY ai_* entry).
-export { extractInvoiceFromScan, type InvoiceOcrInput, type InvoiceOcrOutput } from '@/ai/invoice-ocr'
-export { matchBankTransactionToInvoice, type BankMatchInput, type BankMatchOutput } from '@/ai/bank-matching'
-export { screenSubjectAgainstSanctions, type SanctionsScreeningInput, type SanctionsScreeningOutput } from '@/ai/sanctions-screening'
-export { detectJournalEntryAnomalies, type JournalEntryAnomalyInput, type JournalEntryAnomalyOutput } from '@/ai/anomaly-detection'
-export { classifyInvoiceLineTax, type TaxClassificationInput, type TaxClassificationOutput } from '@/ai/tax-classification'
-export { suggestHsCode, type HsCodeSuggestionInput, type HsCodeSuggestionOutput } from '@/ai/hs-code-suggestion'
-export { classifyDocument, type DocumentClassificationInput, type DocumentClassificationOutput, type DocumentKind } from '@/ai/document-classification'
-export { embedAndUpsertDocument, type EmbedDocumentInput, type EmbedDocumentOutput, type VectorizeBinding } from '@/ai/embed-document'
-export { semanticSearch, type SemanticSearchInput, type SemanticSearchOutput, type VectorizeQueryBinding } from '@/ai/semantic-search'
-export { summariseAuditTrail, type AuditSummarisationInput, type AuditSummarisationOutput } from '@/ai/audit-summarisation'
+export { extractInvoiceFromScan, type InvoiceOcrInput, type InvoiceOcrOutput } from './invoice-ocr'
+export { matchBankTransactionToInvoice, type BankMatchInput, type BankMatchOutput } from './bank-matching'
+export { screenSubjectAgainstSanctions, type SanctionsScreeningInput, type SanctionsScreeningOutput } from './sanctions-screening'
+export { detectJournalEntryAnomalies, type JournalEntryAnomalyInput, type JournalEntryAnomalyOutput } from './anomaly-detection'
+export { classifyInvoiceLineTax, type TaxClassificationInput, type TaxClassificationOutput } from './tax-classification'
+export { suggestHsCode, type HsCodeSuggestionInput, type HsCodeSuggestionOutput } from './hs-code-suggestion'
+export { classifyDocument, type DocumentClassificationInput, type DocumentClassificationOutput, type DocumentKind } from './document-classification'
+export { embedAndUpsertDocument, type EmbedDocumentInput, type EmbedDocumentOutput, type VectorizeBinding } from './embed-document'
+export { semanticSearch, type SemanticSearchInput, type SemanticSearchOutput, type VectorizeQueryBinding } from './semantic-search'
+export { summariseAuditTrail, type AuditSummarisationInput, type AuditSummarisationOutput } from './audit-summarisation'

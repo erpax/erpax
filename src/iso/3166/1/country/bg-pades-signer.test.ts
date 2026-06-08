@@ -15,7 +15,7 @@ import { describe, expect, it, vi } from 'vitest'
 import {
   prepareBgPadesSignature,
   signBgPadesPdf,
-} from '@/country/client/bg-pades-signer'
+} from '@/country/client'
 
 const TEXT = new TextEncoder()
 

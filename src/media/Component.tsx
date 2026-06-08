@@ -12,7 +12,7 @@
 
 import React, { Fragment } from 'react'
 
-import type { Props } from '@/media/types'
+import type { Props } from './types'
 
 import { ImageMedia } from '@/media/image/media'
 import { VideoMedia } from '@/media/video/media'

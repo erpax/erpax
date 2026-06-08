@@ -8,7 +8,7 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/items/hooks/afterChange'
-export * from '@/items/hooks/beforeValidate'
+export * from './afterChange'
+export * from './beforeValidate'
 // GL posting hook (dissolved from the former accounting/hooks slice).
-export * from '@/items/hooks/item'
+export * from './item'

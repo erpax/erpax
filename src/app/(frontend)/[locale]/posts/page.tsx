@@ -18,7 +18,7 @@ import configPromise from '@payload-config'
 import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
-import PageClient from '@/app/(frontend)/[locale]/posts/page.client'
+import PageClient from './page.client'
 
 type Args = {
   params: Promise<{ locale: TypedLocale }>

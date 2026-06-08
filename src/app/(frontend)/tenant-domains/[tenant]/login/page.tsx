@@ -14,7 +14,7 @@
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
 
-import { Login } from '@/login/client.page'
+import { Login } from '@/login'
 
 type RouteParams = {
   tenant: string

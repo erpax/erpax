@@ -9,7 +9,7 @@
  * @see src/standards/nist-incits-359/
  */
 
-import type { Tenant, User } from '@/payload-types'
+import type { Tenant, User } from '@/types'
 import { extractID } from '@/extract/id'
 
 /**

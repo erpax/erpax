@@ -5,8 +5,8 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect } from 'vitest'
-import { createAgentRegistry } from '@/agent/registry'
-import type { DomainAgent } from '@/agent/types'
+import { createAgentRegistry } from './registry'
+import type { DomainAgent } from './types'
 
 const finance: DomainAgent = {
   id: 'finance',

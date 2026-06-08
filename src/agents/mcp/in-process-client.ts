@@ -12,7 +12,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from './tool-defs'
 
 export interface McpToolDescriptor {
   readonly name: string

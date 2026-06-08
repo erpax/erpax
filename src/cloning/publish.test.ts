@@ -4,7 +4,7 @@
  * itself). Slice HHHHHH (TDD).
  */
 import { describe, it, expect } from 'vitest'
-import { publishSelf } from '@/cloning/publish'
+import { publishSelf } from './publish'
 
 describe('publishSelf', () => {
   it('returns a GenomePublication with bundle + uuid + lineage metadata', () => {

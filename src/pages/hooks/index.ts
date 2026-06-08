@@ -8,5 +8,5 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/pages/hooks/beforeChange'
-export * from '@/pages/hooks/revalidatePage'
+export * from './beforeChange'
+export * from './revalidatePage'

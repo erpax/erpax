@@ -55,7 +55,7 @@
  * @see /src/services/self-closure/index.ts (Law 53 fallbacks consume errors)
  */
 
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 import {
   encodeStructured, SLOT_TAGS, CAPABILITIES,
 } from '@/uuid/format'

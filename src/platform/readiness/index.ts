@@ -18,19 +18,19 @@
  * @audit ISO 19011:2018 §6.4.6 (readiness audit-trailed)
  */
 
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
-import type { AgentRegistry } from '@/agent/types'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import type { ErpaxMcpTool } from '@/agents/mcp'
+import type { AgentRegistry } from '@/agent'
+import { BUSINESS_CHAINS } from '@/business/chain'
 import { listTenantRoles } from '@/tenant/role'
 import { supportedLocales } from '@/i18n'
 import { TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY } from '@/integrity'
-import { SHADCN_SURFACE_MAP } from '@/website/shadcn-components'
+import { SHADCN_SURFACE_MAP } from '@/website'
 import { listBackends } from '@/storage/independence'
 // Slice PPPPPPPP — comprehensive observability surface.
-import { TRINITY, rollUpToTrinity } from '@/architecture/invariant/trinity'
-import { getCurrentProofBundle } from '@/proof/dry-proof'
+import { TRINITY, rollUpToTrinity } from '@/architecture/invariant'
+import { getCurrentProofBundle } from '@/proof'
 import { checkPwaUuidIntegrity, totalCachedBytes } from '@/pwa'
-import { DIMENSIONAL_PLUGINS } from '@/plugin/dimensions'
+import { DIMENSIONAL_PLUGINS } from '@/plugin'
 
 export interface ToolCatalogEntry {
   readonly name: string

@@ -16,7 +16,7 @@ import {
   bgVatRateForCategory,
   calculateBgVat,
   summariseBgVat,
-} from '@/country/client/bg-vat'
+} from '@/country/client'
 
 describe('BG_VAT_RATES — pinned rates', () => {
   it('matches COUNTRY_SPECIFICS.BG (20 / 9 / 0)', () => {

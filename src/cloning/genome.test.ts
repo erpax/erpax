@@ -4,7 +4,7 @@
  * Slice HHHHHH (TDD).
  */
 import { describe, it, expect } from 'vitest'
-import { collectGenome, computeGenomeUuid } from '@/cloning/genome'
+import { collectGenome, computeGenomeUuid } from './genome'
 
 describe('collectGenome', () => {
   it('returns a structured bundle with all 6 sections', () => {

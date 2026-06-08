@@ -49,7 +49,7 @@
  * @audit ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 import { NIL_UUID } from '@/uuid/format'
 
 const PWA_NS = 'erpax-pwa'

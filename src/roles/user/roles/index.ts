@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { isSuperAdminAccess } from '@/is/super/admin'
 
-import { preventDuplicateAssignment } from '@/roles/user/roles/hooks/preventDuplicateAssignment'
+import { preventDuplicateAssignment } from '@/roles/user/roles/hooks'
 
 /**
  * Join collection: users ↔ {@link ../Roles `roles`} definitions (`users_roles` HABTM equivalent).

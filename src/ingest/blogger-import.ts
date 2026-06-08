@@ -28,7 +28,7 @@ import {
   convertBloggerAtomXml,
   slugifyUnicode,
   type ConvertBloggerAtomOptions,
-} from '@/ingest/blogger-to-json'
+} from './blogger-to-json'
 
 type CliOpts = ConvertBloggerAtomOptions & {
   feed?: string

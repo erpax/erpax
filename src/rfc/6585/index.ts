@@ -8,4 +8,4 @@ export {
   checkRateLimit,
   clearRateLimit,
   getRateLimitResetSeconds,
-} from '@/rfc/6585/rate-limit'
+} from './rate-limit'

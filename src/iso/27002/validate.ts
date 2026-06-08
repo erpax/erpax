@@ -9,7 +9,7 @@
  * @see ./types.ts
  */
 
-import type { Iso27002ControlId } from '@/iso/27002/types'
+import type { Iso27002ControlId } from './types'
 
 const KNOWN_IDS = new Set<Iso27002ControlId>([
   '5.4',

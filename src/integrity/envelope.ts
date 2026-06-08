@@ -59,7 +59,7 @@
  * @see ./content-uuid.ts (computeContentUuid — provides the salt)
  * @see ./signatures.ts (SignedUuid — sister type for in-transit authenticity)
  */
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from './content-uuid'
 
 /**
  * Allowed envelope algorithms. AES-GCM-256 is the default and only the

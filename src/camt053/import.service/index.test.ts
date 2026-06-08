@@ -15,7 +15,7 @@ import {
   parseCamt053,
   parseCamt053Multi,
 } from '@/camt053/import.service'
-import { importStandards } from '@/export/standards-import'
+import { importStandards } from '@/export'
 
 const SAMPLE_CAMT053 = `<?xml version="1.0" encoding="UTF-8"?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08">

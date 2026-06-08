@@ -5,8 +5,8 @@
  * agent-to-agent wire). @see ./context.ts
  */
 import { describe, it, expect, vi } from 'vitest'
-import { createAgentContext } from '@/agent/context'
-import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '@/agent/types'
+import { createAgentContext } from './context'
+import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from './types'
 
 const PAYLOAD = {} as AgentContext['payload']
 const MCP = {} as AgentContext['mcp']

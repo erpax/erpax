@@ -30,10 +30,10 @@
  * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
  */
 
-import type { AgentContext, AgentRuntime, DomainEvent } from '@/agent/types'
-import type { Team } from '@/agent/team'
-import { teamUuid } from '@/agent/team'
-import { connectAgentSociety, roomIdForTenant, type AgentSociety } from '@/agent/sync/society'
+import type { AgentContext, AgentRuntime, DomainEvent } from '../types'
+import type { Team } from '../team'
+import { teamUuid } from '../team'
+import { connectAgentSociety, roomIdForTenant, type AgentSociety } from './society'
 
 /** A member's presence in the circle — its human name + content-addressed uuid (the voice). */
 export interface HoroMember {

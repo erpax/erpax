@@ -9,7 +9,7 @@
  * @see src/components/README.md
  */
 
-import { MediaBlock } from '@/blocks/media/block/Component'
+import { MediaBlock } from '@/blocks'
 import {
   DefaultNodeTypes,
   SerializedBlockNode,
@@ -22,15 +22,15 @@ import {
   RichText as ConvertRichText,
 } from '@payloadcms/richtext-lexical/react'
 
-import { CodeBlock, CodeBlockProps } from '@/blocks/code/Component'
+import { CodeBlock, CodeBlockProps } from '@/blocks'
 
 import type {
   BannerBlock as BannerBlockProps,
   CallToActionBlock as CTABlockProps,
   MediaBlock as MediaBlockProps,
 } from '@/types'
-import { BannerBlock } from '@/blocks/banner/Component'
-import { CallToActionBlock } from '@/blocks/call/to/action/Component'
+import { BannerBlock } from '@/blocks'
+import { CallToActionBlock } from '@/blocks'
 import { codedFromRegistry, ERR } from '@/error'
 import { cn } from '@/ui'
 

@@ -26,7 +26,7 @@
  * @standard ISO/IEC 12207 software-life-cycle (single substrate seam)
  */
 
-import type { AgentContext, AgentEffect } from '@/agent/types'
+import type { AgentContext, AgentEffect } from './types'
 
 /** Mustache-style placeholder substitution. */
 function compose(template: string, vars: Record<string, unknown>): string {

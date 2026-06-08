@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 import type { Header } from '@/types'
 
-import { Logo } from '@/logo/Logo'
+import { Logo } from '@/logo'
 import { HeaderNav } from '@/header/nav'
 
 interface HeaderClientProps {

@@ -9,7 +9,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { getOriginFromHeaders, getServerSideURL, getClientSideURL, resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { getOriginFromHeaders, getServerSideURL, getClientSideURL, resolvePublicSiteUrl } from './get-url'
 
 // Mock canUseDOM
 vi.mock('@/can/use/dom', () => ({

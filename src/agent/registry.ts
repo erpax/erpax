@@ -14,7 +14,7 @@
  * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)
  */
 
-import type { AgentId, AgentRegistry, DomainAgent } from '@/agent/types'
+import type { AgentId, AgentRegistry, DomainAgent } from './types'
 
 export function createAgentRegistry(agents: ReadonlyArray<DomainAgent>): AgentRegistry {
   const byId = new Map<AgentId, DomainAgent>()

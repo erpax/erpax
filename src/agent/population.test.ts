@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { boundedPopulation, isHarmonic, recursivePopulation, steadyStatePopulation } from '@/agent/population'
+import { boundedPopulation, isHarmonic, recursivePopulation, steadyStatePopulation } from './population'
 
 describe('population — born/live/die, harmonic + hardware-bounded', () => {
   it("steady-state = birth × lifespan (Little's law)", () => {

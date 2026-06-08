@@ -206,13 +206,15 @@ export interface CollapseRewrite {
   readonly to: string
 }
 
-/** Skip rewrites that would break barrels or create intra-atom import cycles. */
-export function shouldSkipCollapse(file: string, from: string, to: string): boolean {
-  if (file.endsWith('/index.ts') || file === 'index.ts') return true
+/**
+ * Skip barrel collapse only for intra-atom imports — those use relative rewrites
+ * (`planIntraAtomCollapse`) instead. Cross-atom index.ts consumers MUST collapse
+ * to the target barrel (the old blanket index.ts skip left planCollapse empty).
+ */
+export function shouldSkipCollapse(file: string, _from: string, to: string): boolean {
   const atom = to.replace(/^@\//, '')
   const norm = file.replace(/\\/g, '/')
-  if (norm === atom + '/index.ts' || norm.startsWith(atom + '/')) return true
-  return false
+  return norm.startsWith(atom + '/')
 }
 
 /** Plan rewrites: every deep `@/` spec → its nearest barrel (index.ts face). */
@@ -249,7 +251,8 @@ export function planIntraAtomCollapse(root = SRC): CollapseRewrite[] {
   const rewrites: CollapseRewrite[] = []
   const seen = new Set<string>()
   for (const v of nonIndexImports(root)) {
-    if (resolveBarrel(v.spec, root)) continue
+    const barrel = resolveBarrel(v.spec, root)
+    if (barrel && !shouldSkipCollapse(v.file, v.spec, barrel)) continue
     const rel = relativeIntraAtomImport(v.file, v.spec)
     if (!rel) continue
     const key = v.file + '|' + v.spec + '|' + rel

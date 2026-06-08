@@ -3,4 +3,4 @@
  *
  * @standard BCP-47 language-tag
  */
-export { isBcp47 } from '@/bcp/47/language-tag'
+export { isBcp47 } from './language-tag'

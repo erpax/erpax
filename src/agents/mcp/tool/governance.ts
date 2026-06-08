@@ -14,8 +14,8 @@
  * @see /src/services/uuid-governance/index.ts
  */
 import { z } from 'zod'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
+import type { ErpaxMcpTool } from '../tool-defs'
 import {
   establishGovernance, attestWithinGovernance, governanceHasCapability,
   verifyGovernance,
@@ -23,7 +23,7 @@ import {
 import type { ChainLink, LinkStore } from '@/uuid/chain'
 import type { ContentUuid } from '@/integrity'
 import { SLOT_TAGS, CAPABILITIES, type SlotTag } from '@/uuid/format'
-import { assertTenantMatch } from '@/agents/mcp/tool/_guards'
+import { assertTenantMatch } from './_guards'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))

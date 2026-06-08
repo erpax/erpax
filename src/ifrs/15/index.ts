@@ -22,7 +22,7 @@ export type {
   ContractAsset,
   ContractLiability,
   RefundLiability,
-} from '@/ifrs/15/types'
+} from './types'
 
 export {
   isRecognitionTiming,
@@ -30,4 +30,4 @@ export {
   isOutputMethodKind,
   isInputMethodKind,
   isVariableConsiderationMethod,
-} from '@/ifrs/15/validate'
+} from './validate'

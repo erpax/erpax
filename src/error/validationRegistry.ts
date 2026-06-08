@@ -1,7 +1,7 @@
 import { ValidationError } from 'payload'
 
-import type { AppErrorCode } from '@/error/errorCodes'
-import { ERROR_REGISTRY } from '@/error/registry'
+import type { AppErrorCode } from './errorCodes'
+import { ERROR_REGISTRY } from './registry'
 
 export function buildRegistryFieldEntry(path: string, code: AppErrorCode) {
   return { code, message: ERROR_REGISTRY[code].message, path }

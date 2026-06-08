@@ -4,14 +4,14 @@ import { CollectionConfig } from 'payload'
 // service-generated DTO via `financialReportingService`; COGS will fold
 // into `gl-posting.service.ts`'s invoice handler when built.
 import { invoiceAccountingHook } from '@/invoices/hooks'
-import { validateNotLocked } from '@/utility/period-lock'
+import { validateNotLocked } from '@/utility'
 import { adminOnly, multiTenantRead } from '@/auth'
 import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
 import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '@/fields'
-import { isIso4217 } from '@/iso/4217/validate'
+import { isIso4217 } from '@/iso/4217'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.

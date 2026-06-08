@@ -11,9 +11,9 @@
 import { describe, it, expect } from 'vitest'
 
 import { APP_COLLECTION_SLUGS } from '@/config/appCollections'
-import { VersionStatus, VERSION_STATUS_FIELD, TENANT_FIELD } from '@/scope/constants'
-import { SCOPE_BY_COLLECTION } from '@/scope/collectionScopes'
-import { wherePublished, wherePublishedAnd } from '@/scope/filters'
+import { VersionStatus, VERSION_STATUS_FIELD, TENANT_FIELD } from './constants'
+import { SCOPE_BY_COLLECTION } from './collectionScopes'
+import { wherePublished, wherePublishedAnd } from './filters'
 
 describe('scopes', () => {
   describe('constants', () => {

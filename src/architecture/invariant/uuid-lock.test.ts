@@ -9,7 +9,7 @@
  * @see ./checks.ts (checkAtomsLockedToUuid)
  */
 import { describe, it, expect } from 'vitest'
-import { checkAtomsLockedToUuid } from '@/architecture/invariant/checks'
+import { checkAtomsLockedToUuid } from './checks'
 
 describe('architecture-invariants: atoms-locked-to-uuid (lock all to uuid)', () => {
   it('runs fs-derived and returns a well-formed entropy result (fail=identical copy, warn=ambiguous)', () => {

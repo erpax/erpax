@@ -19,10 +19,10 @@ export type {
   VatBreakdown,
   DocumentTotals,
   InvoiceHeader,
-} from '@/en/16931/types'
+} from './types'
 
 export {
   isInvoiceTypeCode,
   isVatCategoryCode,
   isPaymentMeansCode,
-} from '@/en/16931/validate'
+} from './validate'

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { agentUuid, cloneAgent, isSameAgent, distinctAgents, type AgentDef } from '@/agent/service'
+import { agentUuid, cloneAgent, isSameAgent, distinctAgents, type AgentDef } from './service'
 
 const a: AgentDef = { name: 'auditor', skills: ['anti-corruption', 'perspective', 'standard'], purpose: 'detect fraud' }
 

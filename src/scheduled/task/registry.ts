@@ -26,7 +26,7 @@
  * @see ./types.ts
  */
 
-import type { ScheduledTaskRegistry } from '@/scheduled/task/types'
+import type { ScheduledTaskRegistry } from './types'
 
 export const SCHEDULED_TASKS: ScheduledTaskRegistry = {
   // ─── Core: Payload jobs queue (every 15 min) ────────────────────────

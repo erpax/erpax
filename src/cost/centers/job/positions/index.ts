@@ -16,7 +16,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
-import { trainingAfterChange } from '@/agent/sync/training-broadcast'
+import { trainingAfterChange } from '@/agent/sync'
 import { accountingCollectionAccess } from '@/auth'
 import { currencyField, statusField, notesField, auditFields, legalEntityField } from '@/base/accounting/field'
 import { competencyLineField } from '@/competency'

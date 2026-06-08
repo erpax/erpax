@@ -12,7 +12,7 @@ import type { Payload, PayloadRequest, Where } from 'payload'
 import type { Role } from '@/types'
 import { extractID } from '@/extract/id'
 
-import type { ScopeResourceCollection } from '@/nist/incits/359/types'
+import type { ScopeResourceCollection } from './types'
 
 export type AddRoleResource =
   | undefined

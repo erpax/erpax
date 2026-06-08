@@ -30,7 +30,7 @@
  * @see ../factories/collection-factory.ts
  */
 
-import { createAccountingCollection } from '@/factory/collection-factory'
+import { createAccountingCollection } from '@/factory'
 import { referenceField } from '@/base/accounting/field'
 
 export default createAccountingCollection({

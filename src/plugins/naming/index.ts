@@ -30,7 +30,7 @@
  * @see ../services/integrity/content-uuid.ts (nameUuid — the primitive)
  */
 import type { Config, Field, Plugin } from 'payload'
-import { uuid } from '@/integrity/content-uuid'
+import { uuid } from '@/integrity'
 
 /** Fixed-length DB identifier (33 chars): `e` + the path's content-uuid as 32 hex. The leading letter keeps it a valid unquoted SQL identifier (a uuid may start with a digit). */
 const uuidName = (path: string): string => 'e' + uuid(path).replace(/-/g, '')

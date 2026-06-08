@@ -40,7 +40,7 @@
  * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
  */
 
-import type { DomainAgent, AgentId, AgentRegistry, AgentEffect } from '@/agent/types'
+import type { DomainAgent, AgentId, AgentRegistry, AgentEffect } from './types'
 import { BUSINESS_CHAINS } from '@/business/chain'
 
 export type BlockCategory =

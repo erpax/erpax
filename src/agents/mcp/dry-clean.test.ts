@@ -21,8 +21,8 @@ import {
   dryCleanScan,
   MAX_DESCRIPTION_OVERLAP,
   DRIFT_THRESHOLD_EPSILON,
-} from '@/agents/mcp/dry-clean'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+} from './dry-clean'
+import type { ErpaxMcpTool } from './tool-defs'
 
 function tool(name: string, description: string): ErpaxMcpTool {
   return {

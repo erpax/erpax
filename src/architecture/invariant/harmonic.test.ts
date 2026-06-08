@@ -5,7 +5,7 @@
  * @see ./checks.ts (checkHarmonicHelixClosure), src/services/uuid-matrix
  */
 import { describe, it, expect } from 'vitest'
-import { checkHarmonicHelixClosure } from '@/architecture/invariant/checks'
+import { checkHarmonicHelixClosure } from './checks'
 
 describe('architecture-invariants: harmonic-helix-closure (Conservation Law 62, harmonic axis)', () => {
   it('flow×flow never escapes the helix; stored dir matches recompute', () => {

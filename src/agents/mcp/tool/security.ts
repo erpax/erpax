@@ -21,12 +21,12 @@
  * @see /src/services/safety-mode/index.ts
  */
 import { z } from 'zod'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import {
   attackSurfaceReport, assertMinimumMode, getSafetyMode,
   type SafetyMode,
 } from '@/safety/mode'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from '../tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))

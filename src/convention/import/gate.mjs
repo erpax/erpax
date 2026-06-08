@@ -34,7 +34,7 @@
  * only ever move DOWN. Derived from `tsx src/tamper/import/index.ts`
  * (purity 80.7% = 1379 non-index of 7146 `@/` imports, 2026-06-06).
  */
-export const IMPORT_PURITY_BASELINE = 890
+export const IMPORT_PURITY_BASELINE = 0
 
 /**
  * The pure ratchet decision — separated from I/O so the logic is regression-locked

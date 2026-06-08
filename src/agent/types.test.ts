@@ -12,7 +12,7 @@ import { describe, it, expectTypeOf } from 'vitest'
 import type {
   AgentId, DomainAgent, AgentContext, AgentEffect,
   AgentRegistry, AgentRuntime, EvidenceFrame, AuditLeaf, DomainEvent, GapSeverity,
-} from '@/agent/types'
+} from './types'
 
 describe('agent types', () => {
   it('AgentId is a closed string union with the canonical agent ids', () => {

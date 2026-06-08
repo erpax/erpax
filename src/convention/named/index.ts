@@ -40,7 +40,7 @@
  * @standard schema.org — the type vocabulary, collided to single words
  * @see @/corpus (loadCorpus + norm — the one deduped walk + the one normalizer) · ../fronted · ../lawful · ../../law · ./SKILL.md
  */
-import { loadCorpus, norm } from '@/corpus/index.mts'
+import { loadCorpus, norm } from '@/corpus'
 
 /** The route's leaf word — the last path segment, the folder the name must equal. */
 const leafOf = (route: string): string => route.split('/').pop() as string

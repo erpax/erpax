@@ -9,7 +9,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { requiresFiscalization } from '@/naredba/n/18/scope'
+import { requiresFiscalization } from './scope'
 
 describe('requiresFiscalization', () => {
   it('requires a касов бон for cash / card / voucher (in scope)', () => {

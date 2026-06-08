@@ -34,11 +34,11 @@
  * @compliance ISO-27001 A.5.36 conformance-with-policies
  */
 
-import type { EvidenceCorpus, WorkflowEvidence } from '@/spec/generator/evidence-collector'
+import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
 import {
   workflowKeys, workflowStepKey, chainKeys, humaniseSlug,
   STUB_PREFIX,
-} from '@/spec/generator/i18n-keys'
+} from './i18n-keys'
 
 /**
  * Translator contract — a function that resolves an i18n key to its

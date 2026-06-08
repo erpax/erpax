@@ -21,8 +21,8 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { invoiceAccountingHook } from '@/invoices/hooks/invoice'
-import { billAccountingHook } from '@/invoices/hooks/bill'
+import { invoiceAccountingHook } from './invoice'
+import { billAccountingHook } from './bill'
 import { paymentAccountingHook } from '@/invoices/payments/hooks'
 import { eventEmitter } from '@/event/emitter.service'
 import type { AllDomainEvents } from '@/types/events'

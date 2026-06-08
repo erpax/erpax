@@ -15,7 +15,7 @@ import { Controller } from 'react-hook-form'
 
 import { Error } from '@/blocks/form/error'
 import { Width } from '@/blocks/form/width'
-import { stateOptions } from '@/blocks/form/state/options'
+import { stateOptions } from './options'
 
 export const State: React.FC<
   StateField & {

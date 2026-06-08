@@ -1,6 +1,6 @@
 import type { Payload } from 'payload'
 
-import { COURT_DOCKET, COURT_PROCEEDING, type CourtCase } from '@/internal/controls/audit/findings/court-docket'
+import { COURT_DOCKET, COURT_PROCEEDING, type CourtCase } from './court-docket'
 
 /**
  * Seed for `audit-findings` — records the erpax-court proceeding (the society's

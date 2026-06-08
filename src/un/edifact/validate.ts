@@ -6,7 +6,7 @@
  * @see ./types.ts
  */
 
-import type { EdifactSyntaxId, EdifactMessageType } from '@/un/edifact/types'
+import type { EdifactSyntaxId, EdifactMessageType } from './types'
 
 const SYNTAX_IDS = new Set<EdifactSyntaxId>(['UNOA', 'UNOB', 'UNOC', 'UNOD', 'UNOY'])
 const MESSAGE_TYPES = new Set<EdifactMessageType>(['INVOIC', 'DESADV', 'PAYMUL'])

@@ -7,8 +7,8 @@
  * suite is deterministic.
  */
 import { describe, it, expect } from 'vitest'
-import { publishSelf } from '@/cloning/publish'
-import { bootFromFederation, type BootOutcome } from '@/cloning/boot'
+import { publishSelf } from './publish'
+import { bootFromFederation, type BootOutcome } from './boot'
 
 /** Narrow the discriminated boot outcome to its failure branch for assertions. */
 const asBootFailure = (r: BootOutcome): Extract<BootOutcome, { ok: false }> =>

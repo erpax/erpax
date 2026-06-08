@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { SearchIcon } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 
-import { FrontendLocaleSwitcher } from '@/locale/switcher/Frontend'
+import { FrontendLocaleSwitcher } from '@/locale/switcher'
 
 export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
   const navItems = data?.navItems || []

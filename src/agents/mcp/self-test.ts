@@ -36,7 +36,7 @@
  */
 
 import type { ZodTypeAny, ZodRawShape } from 'zod'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from './tool-defs'
 
 export type SelfTestVerdict = 'pass' | 'skip' | 'fail'
 

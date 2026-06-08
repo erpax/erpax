@@ -11,8 +11,8 @@ import {
   statusField,
   auditFields,
 } from '@/fields'
-import { validateNotLocked } from '@/utility/period-lock'
-import { validateBalancedEntry } from '@/journal/entries/hooks/balanced-entry'
+import { validateNotLocked } from '@/utility'
+import { validateBalancedEntry } from './hooks/balanced-entry'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.

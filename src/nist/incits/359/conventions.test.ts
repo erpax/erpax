@@ -10,7 +10,7 @@
 
 import { describe, it, expect } from 'vitest'
 
-import { permissionStringToTriplet, permissionTripletToString } from '@/nist/incits/359/conventions'
+import { permissionStringToTriplet, permissionTripletToString } from './conventions'
 
 describe('permission conventions (unix analogy)', () => {
   it('round-trips triplet to string like chmod notation', () => {

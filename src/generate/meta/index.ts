@@ -11,10 +11,10 @@
 
 import type { Metadata } from 'next'
 
-import type { Media, Page, Post, Product, Config } from '@/payload-types'
+import type { Media, Page, Post, Product, Config } from '@/types'
 
 import { mergeOpenGraph } from '@/merge/open/graph'
-import { getServerSideURL } from '@/rfc/3986/get-url'
+import { getServerSideURL } from '@/rfc/3986'
 
 const getImageURL = (
   image: Media | Config['db']['defaultIDType'] | null | undefined,

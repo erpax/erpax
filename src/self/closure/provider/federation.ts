@@ -37,7 +37,7 @@
  * @feature self_closure
  */
 
-import type { InternalProvider, FallbackContext } from '@/self/closure/types'
+import type { InternalProvider, FallbackContext } from '../types'
 import { registerInternalProvider } from '@/self/closure'
 
 export interface FederationPushParams {

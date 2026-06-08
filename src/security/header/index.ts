@@ -10,4 +10,4 @@ export {
   buildSecurityHeaders,
   applySecurityHeaders,
   type SecurityHeadersConfig,
-} from '@/security/header/headers'
+} from './headers'

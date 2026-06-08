@@ -1,9 +1,9 @@
-import { CallToAction } from '@/blocks/call/to/action/config'
-import { Content } from '@/blocks/content/config'
-import { MediaBlock } from '@/blocks/media/block/config'
+import { CallToAction } from '@/blocks'
+import { Content } from '@/blocks'
+import { MediaBlock } from '@/blocks'
 import { slugField } from 'payload'
 import type { PayloadRequest } from 'payload'
-import { generatePreviewPath } from '@/rfc/3986/generate-preview-path'
+import { generatePreviewPath } from '@/rfc/3986'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 import {
   MetaDescriptionField,
@@ -22,7 +22,7 @@ import {
 import type { DefaultDocumentIDType, Where } from 'payload'
 import { localeRecord } from '@/i18n'
 
-import { productsBeforeChange } from '@/media/products/hooks/beforeChange'
+import { productsBeforeChange } from '@/media/products/hooks'
 
 /**
  * Products — ecommerce-plugin product override (variants, pricing, SEO).

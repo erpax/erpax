@@ -33,7 +33,7 @@ import { EU_AI_ACT_RISK_OPTIONS } from '@/eu/ai/act'
 // Co-located service facet — the model-id registry the router dispatches over.
 // Re-exported so `@/ai/models` resolves both the collection (default) and the
 // registry constant/type from one folder address (one accountable object).
-export { AI_MODELS, type AiModelId } from '@/ai/models/service'
+export { AI_MODELS, type AiModelId } from './service'
 
 const AiModels: CollectionConfig = {
   slug: 'ai-models',

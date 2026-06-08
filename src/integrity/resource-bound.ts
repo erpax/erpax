@@ -32,7 +32,7 @@
  * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
  * @see ./tamper-reverse-cost.ts (the bit-cost this prices in joules)
  */
-import type { TamperReverseCost } from '@/integrity/tamper-reverse-cost'
+import type { TamperReverseCost } from './tamper-reverse-cost'
 
 /** Landauer floor at the CMB (2.725 K): kT·ln2 joules per irreversible bit operation — the absolute minimum. */
 export const LANDAUER_FLOOR_JOULES = 2.61e-23

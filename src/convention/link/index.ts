@@ -29,7 +29,7 @@ import { join } from 'node:path'
 // The corpus index is an `.mts` module; the `@/` alias resolver does not probe `.mts`,
 // so we name the index explicitly (the repo-proven specifier — cf. scripts/ingest-corpus-to-search.ts).
 // This is still the atom's INDEX (its public entry), not a deep internal file.
-import { walk, wikiMap, norm, SKILLS_DIR } from '@/corpus/index.mts'
+import { walk, wikiMap, norm, SKILLS_DIR } from '@/corpus'
 // stripCode has ONE home (the DRY law): the aura speech-gate. Compose it, don't re-implement.
 import { stripCode } from '@/aura'
 

@@ -7,9 +7,9 @@
  * @compliance SOX §404 internal-controls
  */
 import React, { useState } from 'react';
-import CreateInvoiceModal from '@/modal/CreateInvoiceModal';
-import CreateBillModal from '@/modal/CreateBillModal';
-import CreateJournalEntryModal from '@/modal/CreateJournalEntryModal';
+import CreateInvoiceModal from '@/modal';
+import CreateBillModal from '@/modal';
+import CreateJournalEntryModal from '@/modal';
 
 interface QuickActionsWidgetProps {
   userRole: 'admin' | 'accountant';

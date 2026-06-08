@@ -7,4 +7,4 @@ export {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
   type InternalSecretPurpose,
-} from '@/nist/sp/800/108/kdf'
+} from './kdf'

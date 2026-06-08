@@ -13,7 +13,7 @@ import type {
   OutputMethodKind,
   InputMethodKind,
   VariableConsiderationMethod,
-} from '@/ifrs/15/types'
+} from './types'
 
 const TIMING = new Set<RecognitionTiming>(['point_in_time', 'over_time'])
 const MEASUREMENT = new Set<OverTimeMeasurement>(['output_method', 'input_method'])

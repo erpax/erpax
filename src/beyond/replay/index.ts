@@ -15,7 +15,7 @@
  */
 
 import { computeContentUuid, jcsCanonicalize } from '@/integrity'
-import type { AgentEffect } from '@/agent/types'
+import type { AgentEffect } from '@/agent'
 import type { ReplayRequest, ReplayResult } from '@/beyond/types'
 
 /**

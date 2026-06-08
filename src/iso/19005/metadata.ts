@@ -13,8 +13,8 @@
  * @see ./profile.ts
  */
 
-import type { PdfAProfile } from '@/iso/19005/profile'
-import { pdfAProfileToXmp, PDF_A_DEFAULT } from '@/iso/19005/profile'
+import type { PdfAProfile } from './profile'
+import { pdfAProfileToXmp, PDF_A_DEFAULT } from './profile'
 import type { PdfUaProfile } from '@/iso/14289'
 import { pdfUaProfileToXmp } from '@/iso/14289'
 

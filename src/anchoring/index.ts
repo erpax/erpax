@@ -30,7 +30,7 @@
  * @audit Conservation Law 55/62 (tamper cost; the anchor is mandatory external entropy)
  */
 
-import { computeContentDigest, uuid } from '@/integrity/content-uuid'
+import { computeContentDigest, uuid } from '@/integrity'
 
 export type ChainKind = 'bitcoin-opreturn' | 'ethereum-l2' | 'cardano-metadata' | 'atproto' | 'notary-signature'
 

@@ -18,7 +18,7 @@
  */
 import { readdirSync, statSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
-import { uuid, jcsCanonicalize } from '@/integrity/content-uuid'
+import { uuid, jcsCanonicalize } from '@/integrity'
 
 const SRC = join(process.cwd(), 'src')
 /** Generated / framework trees — not atom barrels (mirrors [[law/folder]]). */

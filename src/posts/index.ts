@@ -11,15 +11,13 @@ import {
 
 import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/access'
 import { tenantScopedPostsReadAccess } from '@/tenant/scoped/read'
-import { documentPreviewAdmin } from '@/shareds/documentPreviewAdmin'
-import { defaultVersionedDrafts } from '@/shareds/versionedDrafts'
-import { Banner } from '@/blocks/banner/config'
-import { Code } from '@/blocks/code/config'
-import { MediaBlock } from '@/blocks/media/block/config'
+import { documentPreviewAdmin } from '@/shareds'
+import { defaultVersionedDrafts } from '@/shareds'
+import { Banner, Code, MediaBlockPayload as MediaBlock } from '@/blocks'
 import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant'
-import { postsBeforeChange } from '@/posts/hooks/beforeChange'
-import { populateAuthors } from '@/posts/hooks/populateAuthors'
-import { revalidateDelete, revalidatePost } from '@/posts/hooks/revalidatePost'
+import { postsBeforeChange } from '@/posts/hooks'
+import { populateAuthors } from '@/posts/hooks'
+import { revalidateDelete, revalidatePost } from '@/posts/hooks'
 
 import {
   MetaDescriptionField,

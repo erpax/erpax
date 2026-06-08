@@ -3,7 +3,7 @@
 import React, { Fragment, useCallback, useState } from 'react'
 import { toast, useTranslation } from '@payloadcms/ui'
 
-import '@/before/dashboard/seed/button/index.scss'
+import './index.scss'
 
 const SuccessMessage: React.FC = () => {
   const { t: translate } = useTranslation()

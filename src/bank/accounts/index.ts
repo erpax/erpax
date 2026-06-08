@@ -23,7 +23,7 @@ import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
 import { deriveCountryFromIban } from '@/derive/country/from/iban'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
 import { isValidIban } from '@/iban'
-import { isSwiftBic } from '@/iso/9362/bic'
+import { isSwiftBic } from '@/iso/9362'
 
 const BankAccounts: CollectionConfig = {
   slug: 'bank-accounts',

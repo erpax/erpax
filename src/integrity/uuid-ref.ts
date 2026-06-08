@@ -30,7 +30,7 @@
  */
 
 import type { Payload, Field } from 'payload'
-import { verifyContentUuid } from '@/integrity/content-uuid'
+import { verifyContentUuid } from './content-uuid'
 
 /** UUIDv8 regex — RFC 9562 §4 textual form for version 8 + RFC 9562 variant. */
 const UUID_V8_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i

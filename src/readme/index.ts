@@ -28,15 +28,19 @@
  * @audit every number is read from the live tree (matrix · fs walk · package.json), never hand-set
  * @see ../diamond — ../aura — ../horo — ../sequence — ../matrix — ../self/generate
  */
-import { readFileSync, writeFileSync, readdirSync, lstatSync, type Dirent } from 'node:fs'
-import { join } from 'node:path'
+import { readFileSync, writeFileSync, readdirSync, lstatSync, existsSync, type Dirent } from 'node:fs'
+import { join, dirname, relative } from 'node:path'
 import {
   UUID_MATRIX_NODES,
   UUID_MATRIX_EDGES,
   UUID_MATRIX_ROOT,
   toUuid,
+  nodeOf,
+  neighborsOf,
+  backlinksOf,
 } from '@/uuid/matrix'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import { walkSkills, LINK_RE, stripCode } from '@/aura'
 
 /** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
 export interface RingFacet {
@@ -310,26 +314,260 @@ export function generateReadme(cwd: string = process.cwd()): string {
   return renderReadme(deriveModel(cwd))
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  const cwd = process.cwd()
-  const out = join(cwd, 'README.md')
-  const expected = generateReadme(cwd)
-  if (process.argv.includes('--verify')) {
+/** One line of the quantum accounting statement — credit/debit/balance are computed counts. */
+export interface AccountingLine {
+  readonly facet: string
+  readonly credit: number
+  readonly debit: number
+  readonly balance: number
+}
+
+/** Per-atom README model — 100% derived from the live tree (zero hand prose). */
+export interface FolderReadmeModel {
+  readonly atomPath: string
+  readonly leaf: string
+  readonly form: 0 | 1
+  readonly code: 0 | 1
+  readonly proof: 0 | 1
+  readonly uuid: string | null
+  readonly horo: number | null
+  readonly measure: string | null
+  readonly bondsIn: number
+  readonly bondsOut: number
+  readonly folded: boolean
+  readonly linksResolved: number
+  readonly linksTotal: number
+  readonly sealed: boolean
+  readonly accounting: readonly AccountingLine[]
+}
+
+const measureOf = (digit: number | null): string | null => {
+  if (digit === null) return null
+  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
+  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
+}
+
+const foldedPathSet = (): Set<string> => {
+  const s = new Set<string>()
+  for (const n of UUID_MATRIX_NODES) {
+    if (n.path) s.add(n.path)
+    if (n.members) for (const m of n.members) s.add(m)
+  }
+  return s
+}
+
+export interface FolderReadmeContext {
+  readonly resolver: (target: string) => boolean
+  readonly folded: Set<string>
+}
+
+/** Build link resolver + fold ledger once per corpus scan. */
+export function buildFolderReadmeContext(srcRoot: string): FolderReadmeContext {
+  const pathset = new Set<string>()
+  const leaf = new Set<string>()
+  for (const sk of walkSkills(srcRoot)) {
+    const rel = relative(srcRoot, dirname(sk)).replace(/\\/g, '/')
+    pathset.add(rel.toLowerCase())
+    const parts = rel.split('/')
+    leaf.add(parts[parts.length - 1]!.toLowerCase())
+  }
+  const resolver = (target: string): boolean => {
+    const t = target.trim().toLowerCase()
+    return t.includes('/') ? pathset.has(t) : leaf.has(t)
+  }
+  return { resolver, folded: foldedPathSet() }
+}
+
+/** Derive the per-folder completeness model — impure (reads fs + matrix). */
+export function deriveFolderModel(
+  atomPath: string,
+  cwd: string = process.cwd(),
+  ctx: FolderReadmeContext = buildFolderReadmeContext(join(cwd, SRC)),
+): FolderReadmeModel {
+  const dir = join(cwd, SRC, atomPath)
+  const form = (existsSync(join(dir, 'SKILL.md')) ? 1 : 0) as 0 | 1
+  const code = (existsSync(join(dir, 'index.ts')) || existsSync(join(dir, 'index.tsx')) ? 1 : 0) as 0 | 1
+  const proof = (
+    existsSync(join(dir, 'test.ts')) || readdirSync(dir).some((f) => f.endsWith('.test.ts')) ? 1 : 0
+  ) as 0 | 1
+  const leaf = atomPath.split('/').pop() ?? atomPath
+  const node = nodeOf(leaf)
+  const horo = node?.horo ?? null
+  const uuid = node?.uuid ?? null
+  const bondsIn = backlinksOf(leaf).length
+  const bondsOut = neighborsOf(leaf).length
+  const folded = ctx.folded.has(atomPath)
+  let linksTotal = 0
+  let linksResolved = 0
+  try {
+    const skill = readFileSync(join(dir, 'SKILL.md'), 'utf8')
+    const text = stripCode(skill)
+    const re = new RegExp(LINK_RE.source, LINK_RE.flags)
+    for (let m; (m = re.exec(text)); ) {
+      linksTotal++
+      if (ctx.resolver(m[1]!)) linksResolved++
+    }
+  } catch {
+    /* no SKILL.md — links stay 0 */
+  }
+  const codeRequired = code ? 1 : 0
+  const trinityCredit = form + code + proof
+  const trinityDebit = (code ? 3 : 1) - trinityCredit
+  const linkDebit = linksTotal - linksResolved
+  const accounting: AccountingLine[] = [
+    { facet: 'trinity.form', credit: form, debit: 1 - form, balance: 2 * form - 1 },
+    { facet: 'trinity.code', credit: code, debit: codeRequired - code, balance: code - (codeRequired - code) },
+    { facet: 'trinity.proof', credit: proof, debit: codeRequired - proof, balance: proof - (codeRequired - proof) },
+    { facet: 'lattice.folded', credit: folded ? 1 : 0, debit: folded ? 0 : 1, balance: folded ? 1 : -1 },
+    { facet: 'links.resolve', credit: linksResolved, debit: linkDebit, balance: linksResolved - linkDebit },
+    { facet: 'bonds.in', credit: bondsIn, debit: 0, balance: bondsIn },
+    { facet: 'bonds.out', credit: bondsOut, debit: 0, balance: bondsOut },
+  ]
+  const sealed =
+    (!code || (form && code && proof)) &&
+    folded &&
+    linksResolved === linksTotal &&
+    (horo === null || HORO_DIGITS.includes(horo as (typeof HORO_DIGITS)[number]))
+  return {
+    atomPath,
+    leaf,
+    form,
+    code,
+    proof,
+    uuid,
+    horo,
+    measure: measureOf(horo),
+    bondsIn,
+    bondsOut,
+    folded,
+    linksResolved,
+    linksTotal,
+    sealed,
+    accounting,
+  }
+}
+
+/** Content-uuid of the folder model bytes (same tree ⇒ same uuid). */
+export function folderReadmeUuid(model: FolderReadmeModel): string {
+  return toUuid(Buffer.from(stableStringify(model), 'utf8'))
+}
+
+/** Render folder README — pure; every token is a computed facet ([[diamond]] · [[purity]] · [[seal]]). */
+export function renderFolderReadme(model: FolderReadmeModel): string {
+  const uuid = folderReadmeUuid(model)
+  const L: string[] = [
+    '<!-- GENERATED by src/readme/index.ts — quantum accounting statement; do NOT edit by hand. -->',
+    '',
+    `# ${model.leaf}`,
+    '',
+    `> atom \`${model.atomPath}\` · horo \`${model.horo ?? '—'}\` \`${model.measure ?? '—'}\` · sealed \`${model.sealed ? 1 : 0}\``,
+    '',
+    '## quantum accounting',
+    '',
+    '| facet | credit | debit | balance |',
+    '| ----- | -----: | ----: | ------: |',
+  ]
+  for (const row of model.accounting) {
+    L.push(`| ${row.facet} | ${row.credit} | ${row.debit} | ${row.balance} |`)
+  }
+  L.push(
+    '',
+    '## identity',
+    '',
+    `- uuid \`${model.uuid ?? '—'}\``,
+    `- bonds in \`${model.bondsIn}\` · out \`${model.bondsOut}\``,
+    `- trinity form·code·proof \`${model.form}\`·\`${model.code}\`·\`${model.proof}\``,
+    `- links \`${model.linksResolved}\` / \`${model.linksTotal}\``,
+    `- folded \`${model.folded ? 1 : 0}\``,
+    '',
+    '## seal',
+    '',
+    `- \`${model.sealed ? 'sealed' : 'unsealed'}\` — [[purity]] · [[seal]] · [[diamond]]`,
+    '',
+    '---',
+    '',
+    `<sub>content-uuid \`${uuid}\` · \`pnpm readme\` · \`pnpm readme:check\`</sub>`,
+    '',
+  )
+  return L.join('\n')
+}
+
+/** Every atom folder (a SKILL.md path) under src/. */
+export function listAtomPaths(cwd: string = process.cwd()): string[] {
+  const root = join(cwd, SRC)
+  return walkSkills(root)
+    .map((sk) => relative(root, dirname(sk)).replace(/\\/g, '/'))
+    .sort()
+}
+
+export function generateFolderReadme(atomPath: string, cwd: string = process.cwd()): string {
+  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  return renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx))
+}
+
+/** Write README.md in every atom folder; returns count written. */
+export function materializeFolderReadmes(cwd: string = process.cwd()): number {
+  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  let n = 0
+  for (const atomPath of listAtomPaths(cwd)) {
+    const body = renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx))
+    writeFileSync(join(cwd, SRC, atomPath, 'README.md'), body)
+    n++
+  }
+  return n
+}
+
+export function verifyFolderReadmes(cwd: string = process.cwd()): { ok: boolean; drift: string[] } {
+  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  const drift: string[] = []
+  for (const atomPath of listAtomPaths(cwd)) {
+    const expected = renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx))
+    const path = join(cwd, SRC, atomPath, 'README.md')
     let actual = ''
     try {
-      actual = readFileSync(out, 'utf8')
+      actual = readFileSync(path, 'utf8')
+    } catch {
+      drift.push(atomPath + ' (missing)')
+      continue
+    }
+    if (actual !== expected) drift.push(atomPath)
+  }
+  return { ok: drift.length === 0, drift }
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const cwd = process.cwd()
+  const verify = process.argv.includes('--verify')
+  const foldersOnly = process.argv.includes('--folders-only')
+  const expectedRoot = generateReadme(cwd)
+  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  if (verify) {
+    let failed = false
+    const rootPath = join(cwd, 'README.md')
+    let actualRoot = ''
+    try {
+      actualRoot = readFileSync(rootPath, 'utf8')
     } catch {
       console.error('✖ readme:check — README.md is missing. Run `pnpm readme`.')
-      process.exit(1)
+      failed = true
     }
-    if (actual === expected) {
-      console.log('✓ readme:check — README is a diamond: committed ≡ regenerated (zero entropy).')
-      process.exit(0)
+    if (!failed && actualRoot !== expectedRoot) {
+      console.error('✖ readme:check — root README drift.')
+      failed = true
     }
-    console.error('✖ readme:check — DRIFT: README.md ≠ the generator output. The README is hand-edited or stale.')
-    console.error('  Regenerate it from the tree: `pnpm readme`.')
-    process.exit(1)
+    const { ok, drift } = verifyFolderReadmes(cwd)
+    if (!ok) {
+      console.error(`✖ readme:check — ${drift.length} folder README(s) drift: ${drift.slice(0, 5).join(', ')}${drift.length > 5 ? '…' : ''}`)
+      failed = true
+    }
+    if (failed) process.exit(1)
+    console.log(`✓ readme:check — root + ${listAtomPaths(cwd).length} folder READMEs ≡ regenerated (zero entropy).`)
+    process.exit(0)
   }
-  writeFileSync(out, expected)
-  console.log(`readme: wrote ${out} (${expected.length} bytes) — content-uuid ${readmeUuid(deriveModel(cwd))}`)
+  if (!foldersOnly) {
+    writeFileSync(join(cwd, 'README.md'), expectedRoot)
+    console.log(`readme: wrote README.md — content-uuid ${readmeUuid(deriveModel(cwd))}`)
+  }
+  const n = materializeFolderReadmes(cwd)
+  console.log(`readme: wrote ${n} folder README.md files`)
 }

@@ -6,9 +6,9 @@ import { cn } from '@/ui'
 import NextImage from 'next/image'
 import React from 'react'
 
-import type { Props as MediaProps } from '@/media/types'
+import type { Props as MediaProps } from '../../types'
 
-import { cssVariables } from '@/cssVariables'
+import { cssVariables } from '../../../cssVariables.js'
 import { getMediaUrl } from '@/get/media/url'
 
 const { breakpoints } = cssVariables

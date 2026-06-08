@@ -15,6 +15,6 @@ export {
   PDF_A_DEFAULT,
   PDF_A_HYBRID_INVOICE,
   pdfAProfileToXmp,
-} from '@/iso/19005/profile'
+} from './profile'
 
-export { buildPdfAXmp, type PdfAMetadataInput } from '@/iso/19005/metadata'
+export { buildPdfAXmp, type PdfAMetadataInput } from './metadata'

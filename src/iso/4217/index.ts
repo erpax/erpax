@@ -3,4 +3,4 @@
  *
  * @standard ISO-4217:2015 currency-codes
  */
-export { isIso4217 } from '@/iso/4217/validate'
+export { isIso4217 } from './validate'

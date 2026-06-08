@@ -13,7 +13,7 @@
 export {
   SCOPE_BY_COLLECTION,
   type CollectionKey,
-} from '@/scope/collectionScopes'
-export { TENANT_FIELD, VERSION_STATUS_FIELD, VersionStatus, type VersionStatusValue } from '@/scope/constants'
-export { wherePublished, wherePublishedAnd } from '@/scope/filters'
-export type { CollectionScope } from '@/scope/types'
+} from './collectionScopes'
+export { TENANT_FIELD, VERSION_STATUS_FIELD, VersionStatus, type VersionStatusValue } from './constants'
+export { wherePublished, wherePublishedAnd } from './filters'
+export type { CollectionScope } from './types'

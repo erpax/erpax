@@ -14,8 +14,8 @@
  * @see ./types.ts ./README.md
  */
 
-import type { Iso27002ControlId, Iso27002Theme } from '@/iso/27002/types'
-import { iso27002Title, iso27002Theme } from '@/iso/27002/types'
+import type { Iso27002ControlId, Iso27002Theme } from './types'
+import { iso27002Title, iso27002Theme } from './types'
 
 /** A single coverage row — id + title + theme, ready for rendering. */
 export interface ControlCoverageRow {

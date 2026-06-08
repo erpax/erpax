@@ -2,7 +2,7 @@ import React from 'react';
 import { FinancialAnalysisEngine } from '@/accounting';
 import { formatCurrency } from '@/dashboard';
 
-import type { IncomeStatementData } from '@/analytics/types';
+import type { IncomeStatementData } from './types';
 
 /**
  * Cost structure card — fixed vs variable cost split, contribution margin.

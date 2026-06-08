@@ -12,7 +12,7 @@
 
 import type { Metadata } from 'next'
 
-import { RelatedPosts } from '@/blocks/related/post/Component'
+import { RelatedPosts } from '@/blocks'
 import { PayloadRedirects } from '@/payload/redirect'
 import configPromise from '@payload-config'
 import { getPayload, type TypedLocale } from 'payload'
@@ -24,7 +24,7 @@ import type { Post } from '@/types'
 
 import { PostHero } from '@/heros/post/hero'
 import { generateMeta } from '@/generate/meta'
-import PageClient from '@/app/(frontend)/[locale]/posts/[slug]/page.client'
+import PageClient from './page.client'
 import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
 import type { SupportedLocale } from '@/i18n/localization'

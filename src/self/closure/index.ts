@@ -46,7 +46,7 @@ import type {
   InternalProvider,
   FallbackContext,
   FallbackOutcome,
-} from '@/self/closure/types'
+} from './types'
 import { requireSafetyMode } from '@/safety/mode'
 
 export type {
@@ -54,8 +54,8 @@ export type {
   InternalProvider,
   FallbackContext,
   FallbackOutcome,
-} from '@/self/closure/types'
-export { EXTERNAL_ROLES } from '@/self/closure/types'
+} from './types'
+export { EXTERNAL_ROLES } from './types'
 
 // SAFE-INMEM: providers form a write-once registry populated at module
 // load via static imports of `./providers/*`. The graph is immutable

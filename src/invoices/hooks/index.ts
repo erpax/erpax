@@ -8,8 +8,8 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/invoices/hooks/encryptSensitiveFields'
+export * from './encryptSensitiveFields'
 // GL posting hooks (dissolved from the former accounting/hooks slice —
 // invoices carry the `bill` kind, so bill.hook co-locates here too).
-export * from '@/invoices/hooks/invoice'
-export * from '@/invoices/hooks/bill'
+export * from './invoice'
+export * from './bill'

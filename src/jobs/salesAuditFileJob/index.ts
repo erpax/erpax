@@ -14,7 +14,7 @@
  */
 
 import type { Payload } from 'payload'
-import { submitSalesAuditFile } from '@/sale/submit-audit-file'
+import { submitSalesAuditFile } from '@/sale'
 
 /** Prior calendar month as `[periodStart, periodEnd]` ISO strings (UTC). */
 export function priorMonthUtc(now: Date = new Date()): { periodStart: string; periodEnd: string } {

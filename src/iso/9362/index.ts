@@ -3,4 +3,4 @@
  *
  * @standard ISO-9362:2022 bic
  */
-export { isSwiftBic } from '@/iso/9362/bic'
+export { isSwiftBic } from './bic'

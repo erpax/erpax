@@ -10,10 +10,10 @@ import {
 import React, { useState } from 'react'
 import { useTranslations } from 'next-intl'
 
-import type { Theme } from '@/providers/theme/theme/selector/types'
+import type { Theme } from './types'
 
 import { useTheme } from '@/providers/theme'
-import { themeLocalStorageKey } from '@/providers/theme/theme/selector/types'
+import { themeLocalStorageKey } from './types'
 
 export const ThemeSelector: React.FC = () => {
   const { setTheme } = useTheme()

@@ -3,10 +3,10 @@ import { adminOnly, multiTenantRead } from '@/auth'
 import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { paymentsBeforeValidate } from '@/invoices/payments/hooks/beforeValidate'
-import { paymentsBeforeChange } from '@/invoices/payments/hooks/beforeChange'
-import { paymentsAfterChange } from '@/invoices/payments/hooks/afterChange'
-import { invoicePaidTotals } from '@/invoices/payments/hooks/recomputeInvoicePaid'
+import { paymentsBeforeValidate } from '@/invoices/payments/hooks'
+import { paymentsBeforeChange } from '@/invoices/payments/hooks'
+import { paymentsAfterChange } from '@/invoices/payments/hooks'
+import { invoicePaidTotals } from '@/invoices/payments/hooks'
 
 /**
  * Payments — money-movement records with GL posting + period-lock guard.

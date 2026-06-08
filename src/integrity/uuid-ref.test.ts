@@ -5,7 +5,7 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import {
   uuidRef, registerUuidRef, UUID_REF_REGISTRY,
-} from '@/integrity/uuid-ref'
+} from './uuid-ref'
 
 beforeEach(() => UUID_REF_REGISTRY.clear())
 

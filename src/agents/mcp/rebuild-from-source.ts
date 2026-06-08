@@ -38,7 +38,7 @@
  * @audit ISO 19011:2018 §6.4.6 (rebuild plan audit-trailed)
  */
 
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from './tool-defs'
 import { extractCorpus } from '@/spec/generator'
 import type { SpecCorpus } from '@/spec/generator'
 

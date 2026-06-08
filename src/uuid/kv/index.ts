@@ -64,8 +64,8 @@
  * @see ../identity-element/index.ts (identity elements per slot — blank uuids)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
+import type { ContentUuid } from '@/integrity'
 
 /**
  * A binding from a content-uuid'd key to a content-uuid'd value.

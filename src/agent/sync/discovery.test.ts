@@ -17,9 +17,9 @@ import {
   contributionsByAgent,
   collectiveGap,
   type Discovery,
-} from '@/agent/sync/discovery'
-import { domainToErpaxEvent } from '@/agent/sync/society'
-import type { DomainEvent } from '@/agent/types'
+} from './discovery'
+import { domainToErpaxEvent } from './society'
+import type { DomainEvent } from '../types'
 
 const TENANT = 'tenant-contrib'
 const TS = '2026-06-01T00:00:00.000Z'

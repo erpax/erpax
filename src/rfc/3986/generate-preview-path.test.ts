@@ -11,7 +11,7 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import type { PayloadRequest } from 'payload'
-import { generatePreviewPath } from '@/rfc/3986/generate-preview-path'
+import { generatePreviewPath } from './generate-preview-path'
 
 vi.mock('@/get/preview/secret', () => ({
   getPreviewSecret: () => 'test-preview-secret-123',

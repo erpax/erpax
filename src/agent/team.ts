@@ -18,7 +18,7 @@
  * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
  */
 import { computeContentUuid } from '@/integrity'
-import { cloneAgent, distinctAgents, type AgentDef, type ClonedAgent } from '@/agent/service'
+import { cloneAgent, distinctAgents, type AgentDef, type ClonedAgent } from './service'
 
 export interface Team {
   readonly id: string

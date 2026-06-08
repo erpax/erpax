@@ -18,7 +18,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 
-import '@/admin/bar/index.scss'
+import './index.scss'
 
 import { getClientSideURL } from '@/rfc/3986'
 

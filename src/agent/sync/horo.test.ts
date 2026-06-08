@@ -5,12 +5,12 @@
  * @see ./horo.ts, src/team/SKILL.md
  */
 import { describe, it, expect } from 'vitest'
-import { joinHoro } from '@/agent/sync/horo'
-import { connectAgentSociety, roomIdForTenant } from '@/agent/sync/society'
-import type { AgentSociety } from '@/agent/sync/society'
-import { spawnTeam, teamUuid } from '@/agent/team'
-import type { AgentDef } from '@/agent/service'
-import type { AgentContext, AgentRuntime, DomainEvent } from '@/agent/types'
+import { joinHoro } from './horo'
+import { connectAgentSociety, roomIdForTenant } from './society'
+import type { AgentSociety } from './society'
+import { spawnTeam, teamUuid } from '../team'
+import type { AgentDef } from '../service'
+import type { AgentContext, AgentRuntime, DomainEvent } from '../types'
 
 const TENANT = 'tenant-horo'
 const base: AgentDef = { name: 'base', skills: ['society'], purpose: 'build' }

@@ -44,7 +44,7 @@ import {
   type HoroStep,
 } from '@/horo'
 import type { DashboardSpec } from '@/dashboard/spec'
-import { DASHBOARDS } from '@/dashboard/dashboards'
+import { DASHBOARDS } from '../dashboards'
 
 // The pure RENDER of this model — re-exported so `@/dashboard/nav` is the single
 // face (model + component): the renderer imports `Nav` from here, never the deep

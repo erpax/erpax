@@ -12,7 +12,7 @@ import {
   verifyUuidLinkedChain,
   GENESIS_PREV_UUID,
   type UuidLinkedLeaf,
-} from '@/integrity/uuid-linked-chain'
+} from './uuid-linked-chain'
 
 const TS = '2026-06-06T12:00:00.000Z'
 

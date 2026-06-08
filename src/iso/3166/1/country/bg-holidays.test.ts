@@ -15,7 +15,7 @@ import {
   bgHolidaysForYear,
   isBgBusinessDay,
   nextBgBusinessDay,
-} from '@/country/client/bg-holidays'
+} from '@/country/client'
 
 describe('bgHolidaysForYear — fixed-date coverage', () => {
   it('always includes the 10 evergreen fixed holidays', () => {

@@ -35,8 +35,8 @@
  * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
  */
 
-import type { SpecCorpus, SpecExample } from '@/spec/generator/types'
-import { generateChains } from '@/spec/generator/chain-registry-generator'
+import type { SpecCorpus, SpecExample } from './types'
+import { generateChains } from './chain-registry-generator'
 
 /** Output of `generateSeed()` — the rendered TS source + provenance. */
 export interface GeneratedSeed {

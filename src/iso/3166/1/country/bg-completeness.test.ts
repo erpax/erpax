@@ -44,8 +44,8 @@ import {
   acquireAspspToken,
   fetchAspspAccounts,
   initiateSepaCreditTransfer,
-} from '@/country/client/berlin-group-psd2'
-import { postBgNapMtls, submitBgSaft } from '@/country/client/bg-nap-mtls'
+} from '@/country/client'
+import { postBgNapMtls, submitBgSaft } from '@/country/client'
 import { INDUSTRY_TEMPLATES, BG_NSS_TEMPLATE } from '@/seeds/template'
 import { isBgEgn, decodeBgEgn } from '@/iso/7064'
 import {
@@ -53,18 +53,18 @@ import {
   bgVatRateForCategory,
   calculateBgVat,
   summariseBgVat,
-} from '@/country/client/bg-vat'
+} from '@/country/client'
 import {
   bgHolidaysForYear,
   isBgBusinessDay,
   nextBgBusinessDay,
-} from '@/country/client/bg-holidays'
-import { buildBgHybridInvoice } from '@/country/client/bg-hybrid-invoice'
+} from '@/country/client'
+import { buildBgHybridInvoice } from '@/country/client'
 import { PDF_A_HYBRID_INVOICE, buildPdfAXmp } from '@/iso/19005'
 import {
   prepareBgPadesSignature,
   signBgPadesPdf,
-} from '@/country/client/bg-pades-signer'
+} from '@/country/client'
 import {
   PADES_DEFAULT_LEVEL,
   buildPadesSignatureDictionary,

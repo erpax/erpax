@@ -14,8 +14,8 @@
  * @see ../bg-bank-statement-pdf.ts
  */
 
-import '@/country/clients/bg/bank/parser/unicredit-bulbank'
-import '@/country/clients/bg/bank/parser/fibank'
+import './unicredit-bulbank'
+import './fibank'
 
 // Re-export types for ergonomic consumption alongside the registry.
 export type {

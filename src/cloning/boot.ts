@@ -21,8 +21,8 @@
  * @audit ISO 19011:2018 §6.4.6 (clone provenance preserved)
  */
 
-import { checkCloneIntegrity } from '@/cloning/verify'
-import type { GenomePublication, GenomeScope } from '@/cloning/publish'
+import { checkCloneIntegrity } from './verify'
+import type { GenomePublication, GenomeScope } from './publish'
 
 export interface BootResult {
   readonly ok: boolean

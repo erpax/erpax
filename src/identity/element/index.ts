@@ -56,8 +56,8 @@
  * @see ../country-fallback/index.ts  (slot='country',  blank='ZZ')
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
+import type { ContentUuid } from '@/integrity'
 import { requireSafetyMode } from '@/safety/mode'
 
 /**

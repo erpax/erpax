@@ -9,7 +9,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 
-import type { Tenant } from '@/payload-types'
+import type { Tenant } from '@/types'
 
 import { defaultLocale, isValidLocale, supportedLocales, type SupportedLocale } from '@/i18n'
 

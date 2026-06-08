@@ -12,8 +12,8 @@ import {
   publishEmit,
   readChatSince,
   type ChatClient,
-} from '@/agent/sync/payload-chat'
-import { domainToErpaxEvent } from '@/agent/sync/society'
+} from './payload-chat'
+import { domainToErpaxEvent } from './society'
 import type { ErpaxEvent } from '@/agent/sync'
 
 const TENANT = 'tenant-chat'

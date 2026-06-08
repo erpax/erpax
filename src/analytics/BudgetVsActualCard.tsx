@@ -2,7 +2,7 @@ import React from 'react';
 import { FinancialAnalysisEngine } from '@/accounting';
 import { formatCurrency } from '@/dashboard';
 
-import type { IncomeStatementData } from '@/analytics/types';
+import type { IncomeStatementData } from './types';
 
 /**
  * Budget vs Actual variance card — IFRS IAS-1 presentation overlay.

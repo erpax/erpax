@@ -26,7 +26,7 @@ import {
   bucketAgeDays,
   daysBetween,
   type AgingBucketKey as CalcAgingBucketKey,
-} from '@/utility/calculations'
+} from './calculations'
 import {
   DEFAULT_AGING_BUCKETS,
   daysBetween as partiesDaysBetween,

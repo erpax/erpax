@@ -19,7 +19,7 @@
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
 import { resolveSkill, type ParsedRequest, type ResolveResult, type SkillNode } from './resolve'
-import { norm } from '@/corpus/index.mts'
+import { norm } from '@/corpus'
 
 export interface Subgraph {
   /** the seed + its related subgraph, BFS order — the skills the message loads. */

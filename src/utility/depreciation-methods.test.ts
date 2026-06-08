@@ -27,7 +27,7 @@ import {
   calculateDoubleDecliningBalanceDepreciation,
   calculateSumOfYearsDigitsDepreciation,
   calculateUnitsOfActivityDepreciation,
-} from '@/utility/calculations'
+} from './calculations'
 import {
   initializeDepreciation,
   type FixedAssetForDepreciation,

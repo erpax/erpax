@@ -16,7 +16,7 @@ import { describe, it, expect } from 'vitest'
 
 import { verifyRoot, tamperedAtoms } from '@/uuid/matrix'
 import { matrixBreaks, snapshot } from '@/schema/test'
-import { SCHEMA_TEST_SEED } from '@/schema/test/seed'
+import { SCHEMA_TEST_SEED } from './seed'
 
 describe('the matrix is unbreakable', () => {
   it('verifyRoot folds every bind to the one UUID_MATRIX_ROOT', () => {

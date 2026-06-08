@@ -16,7 +16,7 @@ import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
 import { Search } from '@/search'
-import PageClient from '@/app/(frontend)/[locale]/search/page.client'
+import PageClient from './page.client'
 import { CardPostData } from '@/card'
 
 type Args = {

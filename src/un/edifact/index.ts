@@ -27,10 +27,10 @@ export type {
   EdifactDesadv,
   EdifactPaymul,
   EdifactInterchange,
-} from '@/un/edifact/types'
+} from './types'
 
 export {
   isEdifactSyntaxId,
   isEdifactMessageType,
   isBalancedInvoicNet,
-} from '@/un/edifact/validate'
+} from './validate'

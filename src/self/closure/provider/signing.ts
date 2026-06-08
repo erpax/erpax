@@ -60,7 +60,7 @@
  * @see /src/services/integrity/signatures.ts (Slice HHHHHHHHH Cut 1)
  */
 
-import type { InternalProvider, FallbackContext } from '@/self/closure/types'
+import type { InternalProvider, FallbackContext } from '../types'
 import { registerInternalProvider } from '@/self/closure'
 import type { ContentUuid } from '@/integrity'
 import type { SignedUuid, SignatureAlg } from '@/integrity'

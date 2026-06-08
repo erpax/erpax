@@ -21,10 +21,10 @@
  * @standard RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)
  * @see ../service (agent identity) · ../../cross (role→capability) · ../../receipt (audit)
  */
-import { agentUuid, type AgentDef } from '@/agent/service'
-import { type Discovery, type DiscoveryKind } from '@/agent/sync/discovery'
+import { agentUuid, type AgentDef } from '../service'
+import { type Discovery, type DiscoveryKind } from '@/agent/sync'
 import { ANGELIC_HIERARCHY, capabilityOfRole } from '@/cross'
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 import { issueReceipt, type Decision, type Receipt } from '@/receipt'
 import type { UserRole } from '@/types/auth'
 import type { AccessRole } from '@/uuid/share'

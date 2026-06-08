@@ -25,11 +25,11 @@ export type {
   Pain008DirectDebit,
   Pacs004Return,
   Pacs004ReturnTransaction,
-} from '@/iso/20022/types'
+} from './types'
 
 export {
   isBookingStatus,
   isCreditDebitIndicator,
   isChargeBearerCode,
   isBankTransactionCodeShape,
-} from '@/iso/20022/validate'
+} from './validate'

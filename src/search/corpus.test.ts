@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { corpusAtomToSearchDoc, corpusToSearchDocs, SKILL_RELATION } from '@/search/corpus'
+import { corpusAtomToSearchDoc, corpusToSearchDocs, SKILL_RELATION } from './corpus'
 
 describe('search-corpus — code into the content-uuid search surface', () => {
   it('maps an atom to a content-uuid search doc (relationTo:skill, value:uuid)', () => {

@@ -12,7 +12,7 @@
  */
 
 import { describe, expect, it } from 'vitest'
-import { buildBgHybridInvoice } from '@/country/client/bg-hybrid-invoice'
+import { buildBgHybridInvoice } from '@/country/client'
 
 const SAMPLE_EN_16931_XML =
   '<?xml version="1.0" encoding="UTF-8"?><Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"><ID>INV-2026-001</ID></Invoice>'

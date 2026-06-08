@@ -38,7 +38,7 @@ import {
   signBgPadesPdf,
   type BgPadesSignerConfig,
   type SignedPadesPdf,
-} from '@/country/client/bg-pades-signer'
+} from '@/country/client'
 
 export interface EvidenceAttestationInput {
   /** Workflow slug (e.g. `'order-to-cash'`, `'procure-to-pay'`). */

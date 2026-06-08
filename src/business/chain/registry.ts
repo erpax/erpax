@@ -15,7 +15,7 @@
  * @see docs/BUSINESS_CHAINS.md (auto-generated from this registry)
  */
 
-import type { BusinessChainRegistry } from '@/business/chain/types'
+import type { BusinessChainRegistry } from './types'
 
 export const BUSINESS_CHAINS: BusinessChainRegistry = {
   // ─── Cut 1 — closest-to-shippable ───────────────────────────────────

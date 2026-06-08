@@ -29,7 +29,7 @@
  * @audit ISO 19011:2018 §6.4.6 (every tool standards-traceable)
  */
 
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from './tool-defs'
 
 /**
  * Canonical MCP areas — every tool's `<area>` segment must be one of

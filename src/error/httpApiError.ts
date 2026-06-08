@@ -9,8 +9,8 @@
  * @see ./errorCodes.ts
  */
 
-import type { AppErrorCode } from '@/error/errorCodes'
-import { ERROR_REGISTRY } from '@/error/registry'
+import type { AppErrorCode } from './errorCodes'
+import { ERROR_REGISTRY } from './registry'
 
 export function apiErrorJson(code: AppErrorCode): {
   body: { code: string; message: string; error: string }

@@ -24,7 +24,7 @@ import {
   handleInvoicePaymentFailed,
   handleChargeRefunded,
   type StripeWebhookContext,
-} from '@/billing/stripeWebhookHandlers'
+} from '@/billing'
 
 /**
  * Stripe webhook handler - processes all billing events

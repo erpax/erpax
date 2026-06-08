@@ -17,7 +17,7 @@
  * @audit ISO 19011:2018 §6.4.6 spec-traceability
  */
 
-import type { CollectionSpec, SpecCorpus, SpecChainStep, SpecEmit } from '@/spec/generator/types'
+import type { CollectionSpec, SpecCorpus, SpecChainStep, SpecEmit } from './types'
 
 export interface GeneratedChainStep {
   readonly collection: string

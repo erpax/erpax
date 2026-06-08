@@ -40,7 +40,7 @@ import { runAllInvariants, formatInvariantResult } from '@/architecture/invarian
 import {
   checkAiFallbackReturnsError,
   checkNotificationFallback,
-} from '@/architecture/invariant/checks'
+} from './checks'
 
 // A minimal stub — enough for the pure degradation checks (a MISSING AI binding,
 // a notification with NO target). It is NOT a database: `create` returns a fake

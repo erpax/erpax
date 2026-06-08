@@ -2,11 +2,11 @@ import React, { Fragment } from 'react'
 
 import type { Page } from '@/types'
 
-import { ArchiveBlock } from '@/blocks/archive/block/Component'
-import { CallToActionBlock } from '@/blocks/call/to/action/Component'
-import { ContentBlock } from '@/blocks/content/Component'
-import { FormBlock } from '@/blocks/form/Component'
-import { MediaBlock } from '@/blocks/media/block/Component'
+import { ArchiveBlock } from '@/blocks'
+import { CallToActionBlock } from '@/blocks'
+import { ContentBlock } from '@/blocks'
+import { FormBlock } from '@/blocks'
+import { MediaBlock } from '@/blocks'
 
 const blockComponents = {
   archive: ArchiveBlock,

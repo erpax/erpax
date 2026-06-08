@@ -3,8 +3,8 @@ import { adminOnly, multiTenantRead } from '@/auth'
 import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
-import { itemsBeforeValidate } from '@/items/hooks/beforeValidate'
-import { itemsAfterChange } from '@/items/hooks/afterChange'
+import { itemsBeforeValidate } from '@/items/hooks'
+import { itemsAfterChange } from '@/items/hooks'
 
 /**
  * Items — sellable / purchasable inventory rows with GL posting. Also the unified

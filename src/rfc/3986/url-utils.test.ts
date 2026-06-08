@@ -16,7 +16,7 @@ import {
   ensureProtocol,
   joinUrl,
   resolvePublicSiteUrl,
-} from '@/rfc/3986/url-utils'
+} from './url-utils'
 
 describe('urlUtils', () => {
   describe('normalizeUrl', () => {

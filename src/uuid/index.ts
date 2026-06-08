@@ -24,7 +24,7 @@ import type { Config, Field, Plugin } from 'payload'
 import {
   tamperProofUuidField,
   tamperProofBeforeChangeHook,
-} from '@/integrity/tamper-proof-uuid-field'
+} from '@/integrity'
 
 const isNamed = (f: Field): f is Field & { name: string } =>
   'name' in f && typeof (f as { name?: unknown }).name === 'string'

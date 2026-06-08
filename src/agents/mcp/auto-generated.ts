@@ -46,13 +46,13 @@
  */
 
 import { z } from 'zod'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from './tool-defs'
 import type { AgentRegistry } from '@/agent'
 import { manifestOf } from '@/agent'
 import { BUSINESS_CHAINS } from '@/business/chain'
 import { listTenantRoles } from '@/tenant/role'
 import { TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/integrity'
-import { ATOM_CATALOGUE } from '@/agents/mcp/atom-catalogue.generated'
+import { ATOM_CATALOGUE } from './atom-catalogue.generated'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))

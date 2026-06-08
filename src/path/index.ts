@@ -11,7 +11,7 @@
  * @audit paths computed deterministically; never hand-mapped per surface
  * @see ../fs -- ../github -- ../mcp -- ../api -- ../quantum -- ../integrity -- ./SKILL.md
  */
-import { uuid, jcsCanonicalize } from '@/integrity/content-uuid'
+import { uuid, jcsCanonicalize } from '@/integrity'
 
 /** Every address surface that folds into the one canonical atom path. */
 export type PathSurface = 'fs' | 'url' | 'github' | 'mcp' | 'api' | 'http'

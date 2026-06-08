@@ -3,7 +3,7 @@ import type { CollectionConfig } from 'payload'
 import { isSuperAdminAccess } from '@/is/super/admin'
 import { scopeResourceCollections } from '@/nist/incits/359'
 
-import { validateRoleDefinition } from '@/roles/hooks/validateRoleDefinition'
+import { validateRoleDefinition } from '@/roles/hooks'
 
 /**
  * Role **definitions** (`name` + binding). Assign users via {@link ../UserRoles `user_roles`}.

@@ -37,7 +37,7 @@
 import { existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { walkSkills, readSkill, norm } from '@/aura'
-import { walk, wikiMap, SKILLS_DIR } from '@/corpus/index.mts'
+import { walk, wikiMap, SKILLS_DIR } from '@/corpus'
 
 const SRC = 'src'
 

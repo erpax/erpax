@@ -13,7 +13,7 @@ import { applySecurityHeaders, defaultSecurityHeaders } from '@/security/header'
  *
  * Example in API route:
  * ```typescript
- * import { applySecurityHeadersMiddleware } from '@/middleware-security'
+ * import { applySecurityHeadersMiddleware } from './middleware-security'
  *
  * export async function GET(req: NextRequest) {
  *   const response = new Response('...')

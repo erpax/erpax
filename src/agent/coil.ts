@@ -16,7 +16,7 @@
  * @see ../agent-sync/society.ts connectAgentSociety (the jack)
  */
 import { connectAgentSociety, resolveAgentSyncHost, type AgentSociety } from '@/agent/sync'
-import type { AgentContext, AgentRuntime } from '@/agent/types'
+import type { AgentContext, AgentRuntime } from './types'
 
 const convened = new Map<string, AgentSociety>()
 

@@ -15,7 +15,7 @@
 
 import type { Access, PayloadRequest, Where } from 'payload'
 import type { UserContext, UserRole } from '@/types/auth'
-import type { User } from '@/payload-types'
+import type { User } from '@/types'
 import { ACCOUNTING_WRITE_ROLES } from '@/roles/registry'
 
 export { isSuperAdminAccess as superAdminOnly } from '@/is/super/admin'

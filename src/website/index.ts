@@ -218,5 +218,41 @@ export function importMediaBundle(ndjson: string): ReadonlyArray<PageSeed> {
   return ndjson.trim().split('\n').filter((l) => l).map((l) => JSON.parse(l) as PageSeed)
 }
 
-export { listFaces } from './seo-vortex'
-export type { SeoVortexFace } from './seo-vortex'
+export {
+  registerFace,
+  listFaces,
+  getFace,
+  crossLink,
+  renderJsonLd,
+  renderOgMeta,
+  generateSitemap,
+  generateRobots,
+  checkSeoVortexCoupling,
+  bitemporalAnchor,
+  validateMicrodata,
+  __resetFacesForTests,
+} from './seo-vortex'
+export type { SeoVortexFace, SchemaType, OgType, SchemaEdge, SeoCouplingResult, MicrodataValidation } from './seo-vortex'
+export {
+  deriveSeoMeta,
+  deriveKeywords,
+  generateChannelVariants,
+  reviewBrandVoice,
+  auditSeo,
+  buildOnboardingDrip,
+  checkMarketingTransparency,
+  ERPAX_MARKETING_STRATEGY,
+  ERPAX_DEFAULT_VOICE,
+} from './marketing-skills'
+export type {
+  MarketingChannel,
+  BrandVoice,
+  TransparencyFinding,
+  SeoMeta,
+  ChannelVariants,
+  BrandVoiceFinding,
+  SeoAudit,
+  EmailDrip,
+} from './marketing-skills'
+export { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents } from './shadcn-components'
+export type { SiteSurface, ShadcnComponentSet } from './shadcn-components'

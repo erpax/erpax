@@ -8,7 +8,7 @@
  */
 
 import type { Metadata } from 'next'
-import { getServerSideURL } from '@/rfc/3986/get-url'
+import { getServerSideURL } from '@/rfc/3986'
 
 const buildDefaultOpenGraph = (siteOrigin?: string): Metadata['openGraph'] => {
   const base = siteOrigin ?? getServerSideURL()

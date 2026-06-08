@@ -3,7 +3,7 @@
 import { cn } from '@/ui'
 import React, { useEffect, useRef } from 'react'
 
-import type { Props as MediaProps } from '@/media/types'
+import type { Props as MediaProps } from '../../types'
 
 import { getMediaUrl } from '@/get/media/url'
 

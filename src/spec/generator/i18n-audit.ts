@@ -14,13 +14,13 @@
  * @rfc 8259 json
  */
 
-import type { SpecCorpus } from '@/spec/generator/types'
-import type { EvidenceCorpus } from '@/spec/generator/evidence-collector'
+import type { SpecCorpus } from './types'
+import type { EvidenceCorpus } from './evidence-collector'
 import {
   collectionKeys, chainKeys, chainStepKey,
   workflowKeys, workflowStepKey, defaultEnglishFor,
   STUB_PREFIX,
-} from '@/spec/generator/i18n-keys'
+} from './i18n-keys'
 
 /** A single missing-key row. */
 export interface MissingKey {

@@ -11,7 +11,7 @@ import type {
   PeppolDocumentTypeId,
   PeppolProfileId,
   PeppolParticipantIdentifier,
-} from '@/peppol/bis/3/types'
+} from './types'
 
 const SCHEMES = new Set<PeppolParticipantIdentifierScheme>([
   '0007',

@@ -14,7 +14,7 @@
  * @see ./httpApiError.ts
  */
 
-import { ERR, type AppErrorCode } from '@/error/errorCodes'
+import { ERR, type AppErrorCode } from './errorCodes'
 
 type Entry = { status: number; message: string }
 

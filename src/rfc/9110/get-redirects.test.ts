@@ -9,7 +9,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { getCachedRedirects } from '@/rfc/9110/get-redirects'
+import { getCachedRedirects } from './get-redirects'
 
 // Mock the payloadCache module
 vi.mock('@/utilities/payloadCache', () => ({

@@ -33,7 +33,7 @@ import type {
   AuditLeaf,
   DomainEvent,
   EvidenceFrame,
-} from '@/agent/types'
+} from './types'
 import type { McpClient } from '@/agents/mcp'
 
 /** The substrate to build an AgentContext from — only `runtime`/`payload`/`tenantId`/`mcp` are required. */

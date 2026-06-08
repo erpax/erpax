@@ -6,8 +6,8 @@ import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
 import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
 import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty';
-import { validateNotLocked } from '@/utility/period-lock';
-import { periodEndAdjustmentPostingHook } from '@/gl/accounts/period/end/adjustments/hooks/period-end-adjustment';
+import { validateNotLocked } from '@/utility';
+import { periodEndAdjustmentPostingHook } from './hooks/period-end-adjustment';
 
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.

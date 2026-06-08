@@ -12,7 +12,7 @@
 import type { PayloadSDK } from '@payloadcms/sdk'
 import { getPayload, Payload } from 'payload'
 
-import config from '@/payload.config'
+import config from '@/payload'
 import type { Config } from '@/types'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 

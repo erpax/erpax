@@ -20,6 +20,10 @@ import {
   renderReadme,
   generateReadme,
   readmeUuid,
+  deriveFolderModel,
+  renderFolderReadme,
+  folderReadmeUuid,
+  listAtomPaths,
   type ReadmeModel,
 } from '@/readme'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
@@ -100,5 +104,29 @@ describe('readme — the README is a diamond', () => {
 
   it('ZERO ENTROPY: generateReadme on the live tree is deterministic (run twice ⇒ identical)', () => {
     expect(generateReadme()).toBe(generateReadme())
+  })
+})
+
+describe('readme — per-folder quantum accounting', () => {
+  it('deriveFolderModel is computed from the live tree', () => {
+    const m = deriveFolderModel('readme')
+    expect(m.atomPath).toBe('readme')
+    expect(m.form).toBe(1)
+    expect(m.code).toBe(1)
+    expect(m.accounting.length).toBeGreaterThan(0)
+  })
+
+  it('renderFolderReadme is stable and contains accounting lines', () => {
+    const m = deriveFolderModel('readme')
+    const md = renderFolderReadme(m)
+    expect(renderFolderReadme(m)).toBe(md)
+    expect(md).toContain('## quantum accounting')
+    expect(md).toContain('| trinity.form |')
+    expect(md).toContain(folderReadmeUuid(m))
+  })
+
+  it('lists atom paths from SKILL.md walk', () => {
+    expect(listAtomPaths().length).toBeGreaterThan(100)
+    expect(listAtomPaths()).toContain('readme')
   })
 })

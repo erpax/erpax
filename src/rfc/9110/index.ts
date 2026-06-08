@@ -11,8 +11,8 @@ export {
   getCachedPayloadCollectionAll,
   getCachedPayloadById,
   getCachedPayloadLocalizedDocument,
-} from '@/rfc/9110/cache'
+} from './cache'
 
-export { getCachedDocument } from '@/rfc/9110/get-document'
-export { getCachedGlobal } from '@/rfc/9110/get-globals'
-export { getCachedRedirects } from '@/rfc/9110/get-redirects'
+export { getCachedDocument } from './get-document'
+export { getCachedGlobal } from './get-globals'
+export { getCachedRedirects } from './get-redirects'

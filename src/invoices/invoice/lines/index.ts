@@ -4,9 +4,9 @@ import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
-import { invoiceLinesBeforeValidate } from '@/invoices/invoice/lines/hooks/beforeValidate'
-import { invoiceLineTotals } from '@/invoices/invoice/lines/hooks/recomputeInvoiceTotals'
-import { itemInventory } from '@/invoices/invoice/lines/hooks/recomputeItemInventory'
+import { invoiceLinesBeforeValidate } from '@/invoices/invoice/lines/hooks'
+import { invoiceLineTotals } from '@/invoices/invoice/lines/hooks'
+import { itemInventory } from '@/invoices/invoice/lines/hooks'
 
 /**
  * Invoice Lines — line items (BG-25) for an invoice header.

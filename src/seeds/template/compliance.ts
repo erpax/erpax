@@ -13,7 +13,7 @@
 
 import type { CountryApi, CountryApiKind } from '@/config/country-apis'
 import { resolveCountryContext } from '@/country/context'
-import type { CompliancePosture } from '@/seeds/template/types'
+import type { CompliancePosture } from './types'
 
 /** Distinct official-API kinds for a country, in catalogue order. */
 function uniqueKinds(apis: ReadonlyArray<CountryApi>): CountryApiKind[] {

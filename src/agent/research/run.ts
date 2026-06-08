@@ -23,7 +23,7 @@ import {
   type Finding,
   type PayloadLike,
 } from '@/agent/research'
-import { createMemoryPayload } from '@/agent/research/memory'
+import { createMemoryPayload } from './memory'
 import { verifyReceiptChain } from '@/receipt'
 
 /** A finding paired with the research specialist that proposed it (its lens). */

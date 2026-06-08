@@ -17,8 +17,8 @@
  */
 
 import type { Payload } from 'payload'
-import { SCHEDULED_TASKS } from '@/scheduled/task/registry'
-import type { ScheduledTask, ScheduledTaskRunResult } from '@/scheduled/task/types'
+import { SCHEDULED_TASKS } from './registry'
+import type { ScheduledTask, ScheduledTaskRunResult } from './types'
 
 /** Per-task handler signature. */
 export type ScheduledTaskHandler = (

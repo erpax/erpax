@@ -18,7 +18,7 @@ import { describe, it, expect } from 'vitest'
 import {
   computeTamperReverseCost,
   meetsThreshold,
-} from '@/integrity/tamper-reverse-cost'
+} from './tamper-reverse-cost'
 
 describe('computeTamperReverseCost', () => {
   it('Ed25519 at depth 1 already exceeds eIDAS QES (112 bits)', () => {

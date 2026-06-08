@@ -24,7 +24,7 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 import { emitOnStatusTransition, emitOnCreate } from '@/chain/event/emitter'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { BUSINESS_CHAINS } from './registry'
 
 /**
  * Return every afterChange hook needed to satisfy chain emits owned by

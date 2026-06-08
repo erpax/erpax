@@ -14,7 +14,7 @@ import type {
   InvoiceTypeCode,
   VatCategoryCode,
   PaymentMeansCode,
-} from '@/en/16931/types'
+} from './types'
 
 const INVOICE_TYPE_CODES = new Set<InvoiceTypeCode>([
   '326',

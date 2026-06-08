@@ -8,5 +8,5 @@
  * @audit ISO-19011:2018 audit-trail collection-module-boundary
  */
 
-export * from '@/users/hooks/ensureUniqueUsername'
-export * from '@/users/hooks/setCookieBasedOnDomain'
+export * from './ensureUniqueUsername'
+export * from './setCookieBasedOnDomain'

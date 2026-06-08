@@ -10,4 +10,4 @@ export {
   decryptFields,
   isEncrypted,
   generateEncryptionKey,
-} from '@/nist/sp/800/38/aes-gcm'
+} from './aes-gcm'

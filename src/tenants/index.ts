@@ -3,7 +3,7 @@ import type { CollectionConfig } from 'payload'
 import { authenticated } from '@/authenticated'
 import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/is/super/admin'
 import { localeRecord } from '@/i18n'
-import { updateAndDeleteAccess } from '@/tenants/access/updateAndDelete'
+import { updateAndDeleteAccess } from '@/tenants/access'
 
 const superAdminSecretsAccess = {
   read: isSuperAdminFieldAccess,

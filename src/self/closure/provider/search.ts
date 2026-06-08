@@ -29,7 +29,7 @@
  * @see ../../multi-search/index.ts (multiSearch)
  */
 
-import type { InternalProvider, FallbackContext } from '@/self/closure/types'
+import type { InternalProvider, FallbackContext } from '../types'
 import { registerInternalProvider } from '@/self/closure'
 import type { MultiSearchHit, MultiSearchResult } from '@/multi/search'
 

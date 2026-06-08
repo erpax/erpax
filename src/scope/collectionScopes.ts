@@ -12,7 +12,7 @@
 
 import type { AppCollectionSlug } from '@/config/appCollections'
 
-import type { CollectionScope } from '@/scope/types'
+import type { CollectionScope } from './types'
 
 /**
  * Which scope features apply per app collection (reference only).

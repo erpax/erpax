@@ -54,7 +54,7 @@ import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
 import {
   computeTamperReverseCost,
   type TamperReverseCost,
-} from '@/integrity/tamper-reverse-cost'
+} from '@/integrity'
 import { supportedLocales } from '@/i18n/localization'
 
 // ── The translatable surface — every structural element, no gaps ───────────

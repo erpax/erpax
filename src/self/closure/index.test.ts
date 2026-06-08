@@ -30,7 +30,7 @@ import {
   __resetInternalProviderRegistryForTests,
   EXTERNAL_ROLES,
 } from '@/self/closure'
-import type { InternalProvider, FallbackContext } from '@/self/closure/types'
+import type { InternalProvider, FallbackContext } from './types'
 
 interface StubParams { amount: number }
 interface StubResult { paymentId: string; amount: number; via: string }

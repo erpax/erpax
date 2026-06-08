@@ -16,8 +16,8 @@ export type {
   PeppolEndpointId,
   PeppolEnvelope,
   PeppolBillingMessage,
-} from '@/peppol/bis/3/types'
-export { PEPPOL_BIS_3_CUSTOMIZATION_ID } from '@/peppol/bis/3/types'
+} from './types'
+export { PEPPOL_BIS_3_CUSTOMIZATION_ID } from './types'
 
 export {
   isPeppolParticipantIdentifierScheme,
@@ -25,4 +25,4 @@ export {
   isPeppolProfileId,
   formatPeppolParticipantId,
   parsePeppolParticipantId,
-} from '@/peppol/bis/3/validate'
+} from './validate'

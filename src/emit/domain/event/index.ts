@@ -21,7 +21,7 @@
 
 import type { PayloadRequest } from 'payload'
 import { eventEmitter } from '@/event/emitter.service'
-import { publishEmit, type ChatClient } from '@/agent/sync/payload-chat'
+import { publishEmit, type ChatClient } from '@/agent/sync'
 import type { DomainEvent } from '@/types/events'
 
 /**

@@ -36,10 +36,10 @@ export type {
   SafTSourceDocuments,
   // Top-level
   SafTAuditFile,
-} from '@/saf/t/types'
+} from './types'
 
 export {
   isSafTSourceDocumentType,
   isSafTPaymentMechanism,
   isBalancedGeneralLedger,
-} from '@/saf/t/validate'
+} from './validate'

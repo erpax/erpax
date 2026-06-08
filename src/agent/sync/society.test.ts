@@ -5,8 +5,8 @@ import {
   roomIdForTenant,
   domainToErpaxEvent,
   erpaxToDomainEvent,
-} from '@/agent/sync/society'
-import type { DomainEvent } from '@/agent/types'
+} from './society'
+import type { DomainEvent } from '../types'
 
 const dev: DomainEvent = {
   id: 'invoice:activated',

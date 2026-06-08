@@ -15,7 +15,7 @@ import { PayloadSDKError } from '@payloadcms/sdk'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-import type { User } from '@/payload-types'
+import type { User } from '@/types'
 import { getPayloadSdk } from '@/payload/sdk'
 
 export const getMeUser = async (args?: {

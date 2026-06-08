@@ -3,7 +3,7 @@ import { isSuperAdminAccess } from '@/is/super/admin'
 import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,
-} from '@/payment/methods/hooks/encryptSensitiveFields'
+} from '@/payment/methods/hooks'
 
 /**
  * Payment Methods — tokenized card / bank-account references for billing.

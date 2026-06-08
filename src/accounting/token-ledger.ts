@@ -17,7 +17,7 @@
  * @audit ISO-19011 double-entry-invariant (debits = credits)
  */
 import { ANCHOR } from '@/allocation'
-import { StandardTransactions, type ValidatedEntry } from '@/accounting/debit-credit'
+import { StandardTransactions, type ValidatedEntry } from './debit-credit'
 
 /** One inter-agent token spend — the unit the ledger accounts for. */
 export interface TokenSpend {

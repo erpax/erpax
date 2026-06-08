@@ -39,7 +39,7 @@
  */
 
 import type { Field, CollectionBeforeChangeHook } from 'payload'
-import { computeContentUuid, stripNonContentFields } from '@/integrity/content-uuid'
+import { computeContentUuid, stripNonContentFields } from './content-uuid'
 // Slice ZZZZZZZZZ-cut1 (2026-05-11) — collection rows now carry
 // structured uuidv8 (Law 61) with slot=collectionRow + TAMPER_PROOF
 // capability. Every accounting collection's `uuid` field

@@ -2,7 +2,7 @@ import type { Access } from 'payload'
 import type { Iso27002ControlId } from '@/iso/27002'
 
 import { isSuperAdmin } from '@/is/super/admin'
-import type { Tenant } from '@/payload-types'
+import type { Tenant } from '@/types'
 import { extractID } from '@/extract/id'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
 

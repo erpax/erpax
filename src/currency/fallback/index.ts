@@ -310,7 +310,7 @@ export async function realtimeRate(
   // derived via the currency-uuid bridge so replay + federation +
   // cache layers compose for free. Same (from, to, asOf, tenant) →
   // same uuid → cache hit / consensus check / audit dedup.
-  const { computeRateQuoteUuid } = await import('@/currency/fallback/currency-uuid')
+  const { computeRateQuoteUuid } = await import('./currency-uuid')
   const provenanceUuid = computeRateQuoteUuid({
     fromCurrency: from, toCurrency: to, asOf, tenantId: ctx.tenantId,
   })
@@ -352,7 +352,7 @@ export async function realtimeRate(
 export {
   type Currency, type CurrencyUuid, type RateQuoteUuid, type ExchangeUuid,
   computeCurrencyUuid, computeRateQuoteUuid, computeExchangeUuid,
-} from '@/currency/fallback/currency-uuid'
+} from './currency-uuid'
 
 /**
  * Convert an amount from one currency to another using the real-time

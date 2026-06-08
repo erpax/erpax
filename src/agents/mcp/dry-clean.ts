@@ -33,7 +33,7 @@
  */
 
 import { createHash } from 'node:crypto'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from './tool-defs'
 
 // Slice OOOOOOOO (2026-05-11) — per user "the stable amount of drift is
 // a computation". The threshold above which MCP overlap is *real drift*

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FinancialAnalysisEngine } from '@/accounting';
-import type { AccountLine, BalanceSheetData, IncomeStatementData } from '@/analytics/types';
+import type { AccountLine, BalanceSheetData, IncomeStatementData } from './types';
 
 /**
  * Financial ratios card — liquidity, profitability, solvency.

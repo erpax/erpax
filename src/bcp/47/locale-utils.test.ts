@@ -19,7 +19,7 @@ import {
   getSupportedLocales,
   isDefaultLocale,
   type LocaleInput,
-} from '@/bcp/47/locale-utils'
+} from './locale-utils'
 
 /** Build a minimal `PayloadRequest`-shaped mock supplying only the
  *  `locale` field these utilities read. The cast is honest: the

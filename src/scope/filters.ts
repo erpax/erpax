@@ -10,7 +10,7 @@
 
 import type { Where } from 'payload'
 
-import { VERSION_STATUS_FIELD, VersionStatus } from '@/scope/constants'
+import { VERSION_STATUS_FIELD, VersionStatus } from './constants'
 
 /** Public/anonymous reads: only rows whose version status is published. */
 export const wherePublished: Where = {

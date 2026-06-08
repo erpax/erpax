@@ -6,8 +6,8 @@ import React from 'react'
 
 import { AdminBar } from '@/admin/bar'
 import { DocumentHtmlLang } from '@/document/html/lang'
-import { Footer } from '@/footer/Component'
-import { Header } from '@/header/Component'
+import { Footer } from '@/footer'
+import { Header } from '@/header'
 import type { SupportedLocale } from '@/i18n/localization'
 
 export async function IntlChrome({

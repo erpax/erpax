@@ -65,7 +65,7 @@
  * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 
 export type BackendId = 'memory' | 'd1' | 'r2' | 'kv' | 'do' | 'ipfs' | 'arweave' | 'filecoin' | 'peer-erpax' | 'federation' | string
 

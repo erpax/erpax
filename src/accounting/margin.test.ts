@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { invoiceMargin, lineMargin, unitCost, type InvoiceLineInput } from '@/accounting/margin'
+import { invoiceMargin, lineMargin, unitCost, type InvoiceLineInput } from './margin'
 
 describe('margin — billing delivers cost + margin (materials + labor vs price)', () => {
   it('unit cost = materials + labor (the manufactured cost)', () => {

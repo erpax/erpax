@@ -37,7 +37,11 @@ export function isIndexImport(spec: string, root = SRC): boolean {
   }
 }
 
-export const BARREL_ALIASES: Readonly<Record<string, string>> = { '@/payload-types': '@/types' }
+export const BARREL_ALIASES: Readonly<Record<string, string>> = {
+  '@/payload-types': '@/types',
+  '@/corpus/index.mts': '@/corpus',
+  '@/payload.config': '@/payload',
+}
 
 export function resolveBarrel(spec: string, root = SRC): string | null {
   const alias = BARREL_ALIASES[spec]

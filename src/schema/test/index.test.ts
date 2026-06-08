@@ -16,7 +16,7 @@ import { describe, it, expect } from 'vitest'
 
 import { verifyRoot, tamperedAtoms } from '@/uuid/matrix'
 import { matrixBreaks, societyConvened, snapshot } from '@/schema/test'
-import { SCHEMA_TEST_SEED } from '@/schema/test/seed'
+import { SCHEMA_TEST_SEED } from './seed'
 
 describe('the agent society is convened — agents chat in coordinated teams, every session', () => {
   it('the chat collection wires the broadcast hook + the bootstrap registers the agents', () => {

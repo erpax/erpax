@@ -16,13 +16,13 @@
  * @standard RFC 7515 JWS compact serialization
  */
 import { describe, it, expect } from 'vitest'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from './content-uuid'
 import {
   signContentUuid,
   verifyContentUuidSignature,
   toJws,
   fromJws,
-} from '@/integrity/signatures'
+} from './signatures'
 
 interface Invoice { id: string; amount: number }
 

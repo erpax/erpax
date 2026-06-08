@@ -20,7 +20,7 @@ export type {
   RouAsset,
   LeaseLiability,
   Lease,
-} from '@/ifrs/16/types'
+} from './types'
 
 export {
   isLeaseClassification,
@@ -30,4 +30,4 @@ export {
   isPaymentTiming,
   isLeaseModificationKind,
   qualifiesForShortTermExemption,
-} from '@/ifrs/16/validate'
+} from './validate'

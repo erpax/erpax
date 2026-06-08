@@ -52,14 +52,14 @@
  * @see /src/services/integrity/signatures.ts (HHHHHHHHH — self-attestations)
  */
 
-import type { ContentUuid } from '@/integrity/content-uuid'
+import type { ContentUuid } from '@/integrity'
 import {
   encodeStructured, hasCapability, decodeStructured, CAPABILITIES,
   type SlotTag, type SlotName,
 } from '@/uuid/format'
 import { forgeGenesisLink, forgeChainLink, verifyChain } from '@/uuid/chain'
 import type { ChainLink, LinkStore } from '@/uuid/chain'
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 
 /** A self-governing entity's autonomous boundary. */
 export interface GovernanceScope<E> {

@@ -25,7 +25,7 @@ import {
   FinancialRatios,
 } from '@/types/financial-statements';
 import { journalEntryService, type JournalEntryBalance } from '@/journal/entry/service';
-import { DebitCreditLogic } from '@/accounting/debit-credit';
+import { DebitCreditLogic } from '@/accounting';
 
 /**
  * GL balance bucket — the canonical JournalEntryBalance (accountId, debit, credit,

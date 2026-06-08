@@ -3,5 +3,5 @@
  *
  * @standard ISO-13616-1:2020 iban
  */
-export { isIban } from '@/iso/13616/iban'
-export { isBgIban, parseBgIban, type BgIbanParts } from '@/iso/13616/iban-bg'
+export { isIban } from './iban'
+export { isBgIban, parseBgIban, type BgIbanParts } from './iban-bg'

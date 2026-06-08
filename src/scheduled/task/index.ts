@@ -12,12 +12,12 @@ export type {
   ScheduledTaskRegistry,
   ScheduledTaskRunResult,
   IdempotencyKey,
-} from '@/scheduled/task/types'
-export { SCHEDULED_TASKS, SCHEDULED_TASK_IDS, tasksForFeature } from '@/scheduled/task/registry'
+} from './types'
+export { SCHEDULED_TASKS, SCHEDULED_TASK_IDS, tasksForFeature } from './registry'
 export {
   runDueScheduledTasks,
   registerScheduledTaskHandler,
   getScheduledTaskHandler,
   cronMatchesMinute,
   type ScheduledTaskHandler,
-} from '@/scheduled/task/runner'
+} from './runner'

@@ -439,7 +439,7 @@ export async function counterGet(ctx: MediatorContext, scopedKey: string): Promi
 
 import {
   buildNextLeaf, type UuidLinkedLeaf, verifyUuidLinkedChain, type ChainVerifyResult,
-} from '@/integrity/uuid-linked-chain'
+} from '@/integrity'
 
 /**
  * Append a uuid-linked leaf to the tenant's audit chain DO. Returns

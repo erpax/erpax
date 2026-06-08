@@ -10,7 +10,7 @@ import type {
   BookingStatus,
   CreditDebitIndicator,
   ChargeBearerCode,
-} from '@/iso/20022/types'
+} from './types'
 
 const BOOKING_STATUSES = new Set<BookingStatus>(['BOOK', 'PDNG', 'INFO', 'FUTR'])
 const CR_DR = new Set<CreditDebitIndicator>(['CRDT', 'DBIT'])

@@ -22,7 +22,7 @@ import { Providers } from '@/provider'
 import { InitTheme } from '@/providers/theme/init/theme'
 import { mergeOpenGraph } from '@/merge/open/graph'
 
-import '@/app/(frontend)/globals.css'
+import './globals.css'
 import { getServerSideURL } from '@/rfc/3986'
 import { headers } from 'next/headers'
 

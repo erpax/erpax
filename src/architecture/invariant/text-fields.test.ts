@@ -3,7 +3,7 @@ import {
   strongerTypeForTextField,
   detectMistypedTextFields,
   checkTextFieldsAreStronglyTyped,
-} from '@/architecture/invariant/checks'
+} from './checks'
 
 describe('strict typing — text fields that are really another type (computed static break)', () => {
   it('maps an unambiguous name to its stronger type', () => {

@@ -25,9 +25,9 @@ import type {
   InvariantResult,
   InvariantSuiteResult,
   InvariantAxis,
-} from '@/architecture/invariant/types'
+} from './types'
 
-import * as C from '@/architecture/invariant/checks'
+import * as C from './checks'
 
 export type {
   InvariantContext,
@@ -35,9 +35,9 @@ export type {
   InvariantSuiteResult,
   InvariantAxis,
   InvariantSeverity,
-} from '@/architecture/invariant/types'
+} from './types'
 
-export { runInvariantsAtBoot } from '@/architecture/invariant/onInit'
+export { runInvariantsAtBoot } from './onInit'
 
 /** Run all invariants. Skips axes listed in `ctx.skipAxes`. */
 export async function runAllInvariants(

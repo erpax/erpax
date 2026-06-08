@@ -17,9 +17,9 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-export type { AddRoleResource, MutationArgs } from '@/nist/incits/359/payload'
+export type { AddRoleResource, MutationArgs } from './payload'
 
-export { addRole, grant, removeRole, revoke } from '@/nist/incits/359/payload'
+export { addRole, grant, removeRole, revoke } from './payload'
 
 export type {
   AnyScope,
@@ -27,11 +27,11 @@ export type {
   RoleMatch,
   ScopedResource,
   ScopeResourceCollection,
-} from '@/nist/incits/359/types'
+} from './types'
 
-export { scopeResourceCollections } from '@/nist/incits/359/types'
+export { scopeResourceCollections } from './types'
 
-export { hasAllRoles, hasAnyRole, hasCachedRole, hasRole, hasStrictRole } from '@/nist/incits/359/predicates'
+export { hasAllRoles, hasAnyRole, hasCachedRole, hasRole, hasStrictRole } from './predicates'
 
 export {
   BIT_DELETE,
@@ -39,6 +39,6 @@ export {
   BIT_WRITE,
   permissionStringToTriplet,
   permissionTripletToString,
-} from '@/nist/incits/359/conventions'
+} from './conventions'
 
-export type { PermissionDigit, PermissionTriplet } from '@/nist/incits/359/conventions'
+export type { PermissionDigit, PermissionTriplet } from './conventions'

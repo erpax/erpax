@@ -11,8 +11,8 @@
  * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
  */
 
-import { createAgentRegistry } from '@/agent/registry'
-import { createAgentRuntime } from '@/agent/runtime'
+import { createAgentRegistry } from './registry'
+import { createAgentRuntime } from './runtime'
 import { buildErpaxMcpTools } from '@/agents/mcp'
 import { createInProcessMcpClient } from '@/agents/mcp'
 import { ERPAX_MCP_RESOURCES } from '@/agents/mcp'
@@ -21,28 +21,28 @@ import { ERPAX_MCP_PROMPTS } from '@/agents/mcp'
 // the rest of the substrate primitives so they're available at boot.
 import '@/self/reference'
 
-import { FinanceAgent } from '@/agents/accounting/finance.agent'
-import { SalesAgent } from '@/agents/registered/sales.agent'
-import { MarketingAgent } from '@/agents/registered/marketing.agent'
-import { HrAgent } from '@/agents/registered/hr.agent'
-import { LegalAgent } from '@/agents/registered/legal.agent'
-import { OpsAgent } from '@/agents/registered/ops.agent'
-import { EngineeringAgent } from '@/agents/registered/engineering.agent'
-import { CustomerSupportAgent } from '@/agents/registered/customer-support.agent'
-import { DataAgent } from '@/agents/registered/data.agent'
-import { DesignAgent } from '@/agents/registered/design.agent'
-import { ProductAgent } from '@/agents/registered/product.agent'
-import { ProductivityAgent } from '@/agents/registered/productivity.agent'
-import { EnterpriseSearchAgent } from '@/agents/registered/enterprise-search.agent'
-import { PluginsAgent } from '@/agents/registered/plugins.agent'
-import { MetaSkillAgent } from '@/agents/registered/meta-skill.agent'
+import { FinanceAgent } from '@/agents/accounting'
+import { SalesAgent } from '@/agents/registered'
+import { MarketingAgent } from '@/agents/registered'
+import { HrAgent } from '@/agents/registered'
+import { LegalAgent } from '@/agents/registered'
+import { OpsAgent } from '@/agents/registered'
+import { EngineeringAgent } from '@/agents/registered'
+import { CustomerSupportAgent } from '@/agents/registered'
+import { DataAgent } from '@/agents/registered'
+import { DesignAgent } from '@/agents/registered'
+import { ProductAgent } from '@/agents/registered'
+import { ProductivityAgent } from '@/agents/registered'
+import { EnterpriseSearchAgent } from '@/agents/registered'
+import { PluginsAgent } from '@/agents/registered'
+import { MetaSkillAgent } from '@/agents/registered'
 // Slice ZZZZZZZZ (2026-05-11) — ConsistencyAgent owns code-consistency
 // gap closure: factory `emits:` not hooked, services pointing at
 // missing slugs, static relationTo orphans, chain emits without
 // producers. Subscribes to invariant:warned/failed; cron offset 30min
 // from MetaSkillAgent so they don't contend on the invariant suite.
-import { ConsistencyAgent } from '@/agents/registered/consistency.agent'
-import type { DomainAgent } from '@/agent/types'
+import { ConsistencyAgent } from '@/agents/registered'
+import type { DomainAgent } from './types'
 
 /**
  * The 16 registered DomainAgents — one per skill-domain catalogue id,

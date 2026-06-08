@@ -36,8 +36,8 @@
  * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
  */
 
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
-import { CANONICAL_AREAS } from '@/agents/mcp/standardization'
+import type { ErpaxMcpTool } from './tool-defs'
+import { CANONICAL_AREAS } from './standardization'
 import { registerFace, listFaces, type SeoVortexFace } from '@/website'
 
 // ─── Schema.org Action JSON-LD per tool ────────────────────────────

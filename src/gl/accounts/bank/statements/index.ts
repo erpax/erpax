@@ -5,8 +5,8 @@ import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
 import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
 import { currencyField } from '@/base/accounting/field';
-import { validateNotLocked } from '@/utility/period-lock';
-import { bankStatementImportedHook } from '@/gl/accounts/bank/statements/hooks/bank-statement';
+import { validateNotLocked } from '@/utility';
+import { bankStatementImportedHook } from './hooks/bank-statement';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.

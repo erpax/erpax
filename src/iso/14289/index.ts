@@ -11,4 +11,4 @@ export {
   type PdfUaProfile,
   PDF_UA_DEFAULT,
   pdfUaProfileToXmp,
-} from '@/iso/14289/profile'
+} from './profile'

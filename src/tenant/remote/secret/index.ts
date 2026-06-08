@@ -13,7 +13,7 @@
 
 import type { Payload } from 'payload'
 
-import type { Cart, Tenant, User } from '@/payload-types'
+import type { Cart, Tenant, User } from '@/types'
 
 /** Non-production fallback for local DX — remote APIs should be configured on each Tenant in production. */
 export function devStripeSecretFallback(): string {

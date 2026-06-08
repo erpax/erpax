@@ -20,7 +20,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
-import { chatBroadcastAfterChange } from '@/agent/sync/chat-broadcast'
+import { chatBroadcastAfterChange } from '@/agent/sync'
 
 const Chat: CollectionConfig = {
   slug: 'chat',

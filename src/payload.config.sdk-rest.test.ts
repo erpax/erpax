@@ -12,7 +12,7 @@
 
 import { getPayload } from 'payload'
 
-import config from '@/payload.config'
+import config from '@/payload'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 
 import { createPayloadSdkRest, loginAsTestUser } from '../tests/helpers/payloadSdkRest'

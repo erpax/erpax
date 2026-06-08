@@ -45,12 +45,12 @@
  * @audit ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
  */
 
-import type { SpecCorpus, CollectionSpec, SpecStandard } from '@/spec/generator/types'
-import type { EvidenceCorpus, WorkflowEvidence } from '@/spec/generator/evidence-collector'
-import type { E2eSpecCorpus, E2eWorkflowSpec, UxGap } from '@/spec/generator/e2e-spec-extractor'
-import type { Translator } from '@/spec/generator/multimedia-generator'
-import { chainIdForWorkflow } from '@/spec/generator/multimedia-generator'
-import { workflowKeys, chainKeys, humaniseSlug } from '@/spec/generator/i18n-keys'
+import type { SpecCorpus, CollectionSpec, SpecStandard } from './types'
+import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
+import type { E2eSpecCorpus, E2eWorkflowSpec, UxGap } from './e2e-spec-extractor'
+import type { Translator } from './multimedia-generator'
+import { chainIdForWorkflow } from './multimedia-generator'
+import { workflowKeys, chainKeys, humaniseSlug } from './i18n-keys'
 
 export interface MarketingPageOptions {
   readonly locale: string

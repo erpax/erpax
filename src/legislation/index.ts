@@ -25,7 +25,7 @@
  * @compliance Venice Commission Rule of Law (law public, prospective, stable, equally applied)
  * @audit ISO-19011:2018 §6.4 audit-evidence (every law content-addressed + citable)
  */
-import { uuid } from '@/integrity/content-uuid'
+import { uuid } from '@/integrity'
 import { CONSTITUTION } from '@/constitution'
 import { tally, type Ballot, type ProposalRule, type Verdict } from '@/governance'
 

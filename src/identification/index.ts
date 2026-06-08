@@ -54,7 +54,7 @@
  */
 
 import type { Payload } from 'payload'
-import type { ShortUuidKind } from '@/integrity/uuid-short'
+import type { ShortUuidKind } from '@/integrity'
 
 /** Identifier kinds the resolver can recognise. */
 export type IdentifierKind =
@@ -228,7 +228,7 @@ async function resolveShortUuid<T>(
   short: string,
   ctx: IdentifyContext,
 ): Promise<IdentificationResult<T>> {
-  const { parseShortUuid, lookupShort } = await import('@/integrity/uuid-short')
+  const { parseShortUuid, lookupShort } = await import('@/integrity')
   const parsed = parseShortUuid(short)
   if (!parsed || parsed.kind === 'unknown') {
     return { kind: 'short-uuid', row: null, matchedRule: 'short-uuid:unknown-prefix' }

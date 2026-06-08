@@ -29,9 +29,9 @@
  * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
  */
 
-import type { SpecCorpus, SpecInvariant } from '@/spec/generator/types'
+import type { SpecCorpus, SpecInvariant } from './types'
 import type { BusinessChain } from '@/business/chain'
-import { generateChains } from '@/spec/generator/chain-registry-generator'
+import { generateChains } from './chain-registry-generator'
 
 export interface GeneratedTest {
   readonly chainId: string
@@ -142,6 +142,7 @@ export function generateTest(corpus: SpecCorpus, chainId: string): GeneratedTest
 
   const exportName = camelImplsName(chainId)
   const kebabBase = chainId.toLowerCase().replace(/_/g, '-')
+  const at = '@/'
 
   const banner = `/**
  * # ${chain.name.replace(/\b\w/g, (c) => c.toUpperCase())} — generated from JSDoc spec
@@ -171,7 +172,7 @@ import {
   runChain,
   type ChainContext,
 } from '@/business/chain'
-import { ${exportName} } from '@/services/accounting/seeds/chains/${kebabBase}'
+import { ${exportName} } from '${at}services/accounting/seeds/chains/${kebabBase}'
 
 describe('Chain — ${chain.name.replace(/\b\w/g, (c) => c.toUpperCase())}', () => {
   let payload: Payload

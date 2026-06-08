@@ -11,7 +11,7 @@
 
 import { writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
-import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { BUSINESS_CHAINS } from './registry'
 
 const out: string[] = []
 out.push('# Business Chains — auto-generated from `src/services/business-chains/registry.ts`')

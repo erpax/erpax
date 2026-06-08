@@ -48,8 +48,8 @@
  * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
  */
 
-import type { DomainEvent } from '@/agent/types'
-import { computeContentUuid } from '@/integrity/content-uuid'
+import type { DomainEvent } from '@/agent'
+import { computeContentUuid } from '@/integrity'
 import { NIL_UUID } from '@/uuid/format'
 
 /**

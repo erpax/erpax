@@ -25,7 +25,7 @@ import {
   operatorDashboard,
   readOverviewDashboard,
   auditorDashboard,
-} from '@/dashboard/dashboards'
+} from '../dashboards'
 
 describe('selectDashboard — capability picks the RIGHT base dashboard (computed from the registry)', () => {
   it('admin → Admin Control', () => {

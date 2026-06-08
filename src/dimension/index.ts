@@ -30,7 +30,7 @@
  */
 
 import type { Config, Plugin } from 'payload'
-import { DIMENSIONAL_PLUGINS, type DimensionId } from '@/plugin/dimensions'
+import { DIMENSIONAL_PLUGINS, type DimensionId } from '@/plugin'
 
 /**
  * Make a no-op plugin factory for one dimension. Each factory returns

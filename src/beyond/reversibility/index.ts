@@ -9,7 +9,7 @@
  * @standard ISO 19011:2018 §6.4.6 audit-evidence (reversal trail)
  */
 
-import type { AgentEffect } from '@/agent/types'
+import type { AgentEffect } from '@/agent'
 import type { InverseEffect } from '@/beyond/types'
 
 /** Compute the typed inverse of an AgentEffect, or null if irreversible. */

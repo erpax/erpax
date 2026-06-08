@@ -16,8 +16,8 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect, vi } from 'vitest'
-import { createInProcessMcpClient } from '@/agents/mcp/in-process-client'
-import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
+import { createInProcessMcpClient } from './in-process-client'
+import type { ErpaxMcpTool } from './tool-defs'
 import type { PayloadRequest } from 'payload'
 
 /** Build a fake tool with a spy handler. */

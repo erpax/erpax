@@ -10,7 +10,7 @@
  * @see ./matrix.generated.ts (the data) · src/services/uuid-matrix/collide.mjs (the collider)
  */
 import { createHash } from 'node:crypto'
-import { norm } from '@/corpus/index.mts'
+import { norm } from '@/corpus'
 import {
   UUID_MATRIX_NODES,
   UUID_MATRIX_EDGES,
@@ -18,7 +18,7 @@ import {
   UUID_MATRIX_DIMS,
   type MatrixNode,
   type MatrixEdge,
-} from '@/uuid/matrix/matrix.generated'
+} from './matrix.generated'
 
 export { UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT, UUID_MATRIX_DIMS }
 export type { MatrixNode, MatrixEdge }

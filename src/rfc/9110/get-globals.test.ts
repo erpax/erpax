@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { getCachedGlobal } from '@/rfc/9110/get-globals'
+import { getCachedGlobal } from './get-globals'
 
 // Mock the payloadCache module
 vi.mock('@/utilities/payloadCache', () => ({

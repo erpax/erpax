@@ -59,8 +59,8 @@
  */
 
 import { DEFAULT_COUNTRY } from '@/config/regional-defaults'
-import { computeContentUuid } from '@/integrity/content-uuid'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
+import type { ContentUuid } from '@/integrity'
 
 /** The canonical "blank country" — CLDR ZZ (Unknown Region). */
 export const BLANK_COUNTRY = 'ZZ' as const

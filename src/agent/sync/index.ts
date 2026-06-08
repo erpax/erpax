@@ -17,7 +17,7 @@
  * @standard RFC-4122 §4.3 content-uuid event-identity (idempotency key)
  */
 
-import { computeContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid } from '@/integrity'
 
 /** The erpax domain-event envelope (the `event` skill): aggregateId MUST be a content-uuid (the 0). */
 export interface ErpaxEvent {
@@ -168,12 +168,12 @@ export function connectAgentSync(opts: {
 }
 
 // The breath — the caller that convenes the society over this bus.
-export * from '@/agent/sync/society'
+export * from './society'
 // The team breath — a whole tribe joins the society circle (the next scale of the breath).
-export * from '@/agent/sync/horo'
+export * from './horo'
 // The contribution layer — shared discoveries (gaps filled by many) over the bus.
-export * from '@/agent/sync/discovery'
+export * from './discovery'
 // The Payload-native room — the chat built on Payload (no external Durable Object).
-export * from '@/agent/sync/payload-chat'
+export * from './payload-chat'
 // The broadcast — a new chat row dispatches its embedded event into the runtime.
-export * from '@/agent/sync/chat-broadcast'
+export * from './chat-broadcast'

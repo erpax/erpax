@@ -12,4 +12,4 @@ export type {
   AuditTrailContext,
   AuditEntry,
   AuditEntryInput,
-} from '@/iso/19011/types'
+} from './types'

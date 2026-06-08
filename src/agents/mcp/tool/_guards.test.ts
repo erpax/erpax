@@ -29,7 +29,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import type { PayloadRequest } from 'payload'
-import { assertTenantMatch, assertAdminOnTenant, wrapToolsWithTenantGuard, type WrappableTool } from '@/agents/mcp/tool/_guards'
+import { assertTenantMatch, assertAdminOnTenant, wrapToolsWithTenantGuard, type WrappableTool } from './_guards'
 
 /** Build a minimal `PayloadRequest`-shaped object for testing. */
 function reqWith(user: { tenant?: string; roles?: ReadonlyArray<string> } | undefined): PayloadRequest {

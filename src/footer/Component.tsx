@@ -6,7 +6,7 @@ import React from 'react'
 
 import { ThemeSelector } from '@/providers/theme/theme/selector'
 import { CMSLink } from '@/link'
-import { Logo } from '@/logo/Logo'
+import { Logo } from '@/logo'
 
 export async function Footer({ locale }: { locale: SupportedLocale }) {
   const footerData = await getCachedGlobal('footer', 1, locale)()

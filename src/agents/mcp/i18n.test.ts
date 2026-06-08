@@ -19,7 +19,7 @@ import {
   makeToolI18n,
   resolveTranslation,
   PLATFORM_TENANT_KEY,
-} from '@/agents/mcp/i18n'
+} from './i18n'
 
 describe('resolveLocalized', () => {
   it('returns the locale-exact match', () => {

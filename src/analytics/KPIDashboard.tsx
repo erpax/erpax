@@ -1,7 +1,7 @@
 import React from 'react';
 import { FinancialAnalysisEngine } from '@/accounting';
 import { formatCurrency } from '@/dashboard';
-import type { AccountLine, BalanceSheetData, IncomeStatementData } from '@/analytics/types';
+import type { AccountLine, BalanceSheetData, IncomeStatementData } from './types';
 
 /**
  * Top-level KPI grid — derives ratios + health score from balance sheet + income statement.

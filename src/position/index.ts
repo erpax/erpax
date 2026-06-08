@@ -36,8 +36,8 @@
 
 import { ANCHOR, hourlyRate } from '@/allocation'
 import { levelCeiling } from '@/decompression'
-import { buildNextLeaf, payloadContentUuid } from '@/integrity/uuid-linked-chain'
-import type { UuidLinkedLeaf } from '@/integrity/uuid-linked-chain'
+import { buildNextLeaf, payloadContentUuid } from '@/integrity'
+import type { UuidLinkedLeaf } from '@/integrity'
 
 /** SFIA 8 responsibility levels 1..7 — the verb that defines each level's autonomy (the job-type axis). */
 export const SFIA_RESPONSIBILITY: Readonly<Record<number, string>> = {

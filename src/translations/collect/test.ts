@@ -16,7 +16,7 @@
  * @see ./collect.ts (the collector) · ../translation (model) · ../aura (the gap)
  */
 import { describe, it, expect } from 'vitest'
-import { TRANSLATIONS_CATALOGUE } from '@/translations/catalogue'
+import { TRANSLATIONS_CATALOGUE } from '../catalogue'
 import { messageUuid, splitWords, isAtomWord } from '@/message'
 import { nodeOf, verifyRoot } from '@/uuid/matrix'
 import { defaultLocale } from '@/i18n/localization'

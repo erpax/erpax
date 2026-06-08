@@ -4,8 +4,8 @@
  * into the runtime; a non-event row is a no-op. @see ./chat-broadcast.ts
  */
 import { describe, it, expect } from 'vitest'
-import { chatDocToDomainEvent, broadcastChatRow } from '@/agent/sync/chat-broadcast'
-import type { AgentContext, AgentRuntime, DomainEvent } from '@/agent/types'
+import { chatDocToDomainEvent, broadcastChatRow } from './chat-broadcast'
+import type { AgentContext, AgentRuntime, DomainEvent } from '../types'
 
 const TS = '2026-06-01T00:00:00.000Z'
 

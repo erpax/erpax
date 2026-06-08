@@ -21,12 +21,12 @@
  * @see ./chat-broadcast (the sibling room breath this mirrors)
  */
 import type { CollectionAfterChangeHook } from 'payload'
-import type { AgentContext, DomainEvent } from '@/agent/types'
+import type { AgentContext, DomainEvent } from '../types'
 import type { HeldLine, RequiredLine } from '@/competency/gap'
-import { processEffects } from '@/agent/effect-processor'
-import { createAgentContext } from '@/agent/context'
-import { TRAINING_TRIGGER } from '@/agents/registered/hr.training'
-import { chatEmit, type ChatClient } from '@/agent/sync/payload-chat'
+import { processEffects } from '../effect-processor'
+import { createAgentContext } from '../context'
+import { TRAINING_TRIGGER } from '@/agents/registered'
+import { chatEmit, type ChatClient } from './payload-chat'
 
 /** The 11-rung org ladder (`job-positions.level`) → SFIA responsibility level 1..7 (the M-value depth). */
 export const JOB_LEVEL_TO_SFIA: Readonly<Record<string, number>> = {

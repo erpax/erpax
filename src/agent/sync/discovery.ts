@@ -23,7 +23,7 @@
 
 import { computeContentUuid } from '@/integrity'
 import type { ErpaxEvent } from '@/agent/sync'
-import type { DomainEvent } from '@/agent/types'
+import type { DomainEvent } from '../types'
 
 /** The society's development moves — each fills a gap (drives the aura/tsc tail to 0). */
 export type DiscoveryKind = 'mint' | 'weave' | 'collapse' | 'fix' | 'internalise' | 'proof'

@@ -25,7 +25,7 @@
  * @see ./iban.ts
  */
 
-import { isIban } from '@/iso/13616/iban'
+import { isIban } from './iban'
 
 /**
  * Decomposed BG-22 IBAN. Every field is the raw substring lifted from

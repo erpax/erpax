@@ -3,8 +3,8 @@
  * Slice HHHHHH (TDD).
  */
 import { describe, it, expect } from 'vitest'
-import { publishSelf } from '@/cloning/publish'
-import { checkCloneIntegrity, type CloneIntegrityResult } from '@/cloning/verify'
+import { publishSelf } from './publish'
+import { checkCloneIntegrity, type CloneIntegrityResult } from './verify'
 
 /** Narrow the discriminated result to its failure branch for assertions. */
 const asFailure = (r: CloneIntegrityResult): Extract<CloneIntegrityResult, { ok: false }> =>

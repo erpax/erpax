@@ -4,11 +4,11 @@ import { autoSetTimestamp } from '@/auto/set/timestamp'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminOrAccountant, scopedAccess } from '@/auth'
 import { currencyField, statusField, auditFields, unpField, fiscalDeviceNumberField, operatorCodeField, saleStatusOptions } from '@/fields'
-import { assignSaleUnpHook } from '@/sale/unp-sequence'
-import { deriveSaleOperatorCodeHook } from '@/sale/operator-code'
-import { validateSaleFiscalRefsHook } from '@/sale/validate-fiscal-refs'
-import { enforceSaleImmutability } from '@/sale/sale-immutability'
-import { emitSaleClosedHook } from '@/sale/sale-event'
+import { assignSaleUnpHook } from '@/sale'
+import { deriveSaleOperatorCodeHook } from '@/sale'
+import { validateSaleFiscalRefsHook } from '@/sale'
+import { enforceSaleImmutability } from '@/sale'
+import { emitSaleClosedHook } from '@/sale'
 
 /**
  * СУПТО Sales (продажби) — the Наредба Н-18 sale register.

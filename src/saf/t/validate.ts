@@ -8,7 +8,7 @@
 import type {
   SafTSourceDocumentType,
   SafTPaymentMechanism,
-} from '@/saf/t/types'
+} from './types'
 
 const SOURCE_DOCUMENT_TYPES = new Set<SafTSourceDocumentType>([
   'sales_invoice',

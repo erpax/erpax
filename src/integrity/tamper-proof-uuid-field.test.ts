@@ -9,8 +9,8 @@ import {
   TAMPER_PROOF_COLLECTIONS_REGISTRY,
   isTamperProofCollection,
   registerTamperProofCollection,
-} from '@/integrity/tamper-proof-uuid-field'
-import { verifyContentUuid } from '@/integrity/content-uuid'
+} from './tamper-proof-uuid-field'
+import { verifyContentUuid } from './content-uuid'
 import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/uuid/format'
 
 beforeEach(() => {

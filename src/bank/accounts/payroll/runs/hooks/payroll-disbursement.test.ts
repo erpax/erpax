@@ -12,7 +12,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { payrollDisbursementHook } from '@/bank/accounts/payroll/runs/hooks/payroll-disbursement'
+import { payrollDisbursementHook } from './payroll-disbursement'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
 type HookArgs = Parameters<typeof payrollDisbursementHook>[0]

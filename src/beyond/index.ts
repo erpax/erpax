@@ -32,20 +32,20 @@ export type {
 
 export { recordCausalLink, getCausalAncestry, getProvenance, provenanceUuid } from '@/beyond/provenance'
 export { effectsHash, replayLeaf, isReplayStable } from '@/beyond/replay'
-export type { TenantIsolationViolation } from '@/beyond/tenant-isolation'
-export { checkTenantIsolation, tenantScopedFind } from '@/beyond/tenant-isolation'
+export type { TenantIsolationViolation } from './tenant-isolation'
+export { checkTenantIsolation, tenantScopedFind } from './tenant-isolation'
 export { asOf, isHistoricalQuery } from '@/beyond/bitemporal'
 export { setBudget, recordCost, estimateMicroUsd, getBudget } from '@/beyond/cost'
 export { estimateCarbon, recordCarbon, getTenantCarbon } from '@/beyond/carbon'
-export type { AgentCapability } from '@/beyond/agent-capability'
+export type { AgentCapability } from './agent-capability'
 export {
   declareAgentCapability, getAgentCapability,
   assertAgentCanCallTool, assertAgentCanRead, assertAgentCanWrite, assertAgentJurisdiction,
   findAgentsWithoutCapability, listAgentCapabilities, DEFAULT_DENY,
-} from '@/beyond/agent-capability'
+} from './agent-capability'
 export { signPqc, verifyPqc, isApprovedPqc } from '@/beyond/pqc'
 export { autoExplain, isExplanationComplete } from '@/beyond/explainability'
 export { inverseOf, isFullyReversible } from '@/beyond/reversibility'
 export type { Cipher, SealedRecord, KeyVault } from '@/beyond/erasure'
 export { seal, open, shred } from '@/beyond/erasure'
-export { recordAiInvocation, isAnnexIvCompliant } from '@/beyond/ai-audit'
+export { recordAiInvocation, isAnnexIvCompliant } from './ai-audit'

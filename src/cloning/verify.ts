@@ -11,8 +11,8 @@
  * @audit ISO 19011:2018 §6.4.6
  */
 
-import { computeGenomeUuid, type GenomeBundle } from '@/cloning/genome'
-import type { GenomePublication } from '@/cloning/publish'
+import { computeGenomeUuid, type GenomeBundle } from './genome'
+import type { GenomePublication } from './publish'
 
 export type CloneIntegrityResult =
   | { ok: true }

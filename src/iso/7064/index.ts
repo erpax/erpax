@@ -6,4 +6,4 @@
  * @standard ISO-7064:2003 check-character-systems
  */
 
-export { isBgEgn, decodeBgEgn, type EgnDecoded } from '@/iso/7064/egn-bg'
+export { isBgEgn, decodeBgEgn, type EgnDecoded } from './egn-bg'

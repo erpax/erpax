@@ -45,7 +45,7 @@ import {
   notesField,
   auditFields,
 } from '@/base/accounting/field'
-import { validateNotLocked } from '@/utility/period-lock'
+import { validateNotLocked } from '@/utility'
 
 const PaymentRuns: CollectionConfig = {
   slug: 'payment-runs',

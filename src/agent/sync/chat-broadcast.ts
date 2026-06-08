@@ -23,10 +23,10 @@
  * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
  */
 import type { CollectionAfterChangeHook } from 'payload'
-import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '@/agent/types'
-import { processEffects } from '@/agent/effect-processor'
-import { createAgentContext } from '@/agent/context'
-import { chatEmit, type ChatClient } from '@/agent/sync/payload-chat'
+import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '../types'
+import { processEffects } from '../effect-processor'
+import { createAgentContext } from '../context'
+import { chatEmit, type ChatClient } from './payload-chat'
 
 /** Past this many cascade hops the broadcast stops re-dispatching — runaway guard. */
 export const MAX_BROADCAST_DEPTH = 32

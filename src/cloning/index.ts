@@ -10,14 +10,14 @@
  * @audit ISO 19011:2018 §6.4.6 (clone provenance + Conservation Law 24)
  */
 
-export type { GenomeBundle, CollectGenomeOptions } from '@/cloning/genome'
-export { collectGenome, computeGenomeUuid } from '@/cloning/genome'
+export type { GenomeBundle, CollectGenomeOptions } from './genome'
+export { collectGenome, computeGenomeUuid } from './genome'
 
-export type { GenomeScope, GenomeSignature, GenomePublication, PublishSelfArgs } from '@/cloning/publish'
-export { publishSelf } from '@/cloning/publish'
+export type { GenomeScope, GenomeSignature, GenomePublication, PublishSelfArgs } from './publish'
+export { publishSelf } from './publish'
 
-export type { BootSuccess, BootFailure, BootOutcome } from '@/cloning/boot'
-export { bootFromFederation } from '@/cloning/boot'
+export type { BootSuccess, BootFailure, BootOutcome } from './boot'
+export { bootFromFederation } from './boot'
 
-export type { CloneIntegrityResult } from '@/cloning/verify'
-export { checkCloneIntegrity } from '@/cloning/verify'
+export type { CloneIntegrityResult } from './verify'
+export { checkCloneIntegrity } from './verify'

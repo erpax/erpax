@@ -9,7 +9,7 @@ import {
   detectSplitPurchases,
   detectBidRotation,
   detectBidCartelPairs,
-} from '@/anti/corruption/cross-entity'
+} from './cross-entity'
 
 describe('anti-corruption cross-entity — the schemes only the GRAPH + FEDERATION can see', () => {
   it('self-dealing: approver who owns the payee is caught (ACFE conflict of interest)', () => {

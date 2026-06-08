@@ -1,7 +1,7 @@
 import type { CollectionBeforeChangeHook } from 'payload'
 
 import { isSuperAdmin } from '@/is/super/admin'
-import type { Tenant } from '@/payload-types'
+import type { Tenant } from '@/types'
 import { extractID } from '@/extract/id'
 import { apiErr, ERR } from '@/error'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'

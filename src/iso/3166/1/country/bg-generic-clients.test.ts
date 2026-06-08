@@ -23,8 +23,8 @@ import {
   fetchAspspAccounts,
   initiateSepaCreditTransfer,
   type AspspConfig,
-} from '@/country/client/berlin-group-psd2'
-import { postBgNapMtls, submitBgSaft } from '@/country/client/bg-nap-mtls'
+} from '@/country/client'
+import { postBgNapMtls, submitBgSaft } from '@/country/client'
 
 const ASPSP: AspspConfig = {
   name: 'Test BG ASPSP',

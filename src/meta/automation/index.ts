@@ -26,8 +26,8 @@
  * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
  */
 
-import type { McpClient } from '@/agents/mcp/in-process-client'
-import type { InvariantResult } from '@/architecture/invariant/types'
+import type { McpClient } from '@/agents/mcp'
+import type { InvariantResult } from '@/architecture/invariant'
 
 export interface FixProposal {
   readonly invariant: string                              // checkSpecCoverage100Percent / etc.

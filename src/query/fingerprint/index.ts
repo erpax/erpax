@@ -68,8 +68,8 @@
  * @see ../multi-search/index.ts  (multi-search wraps its query in this service)
  */
 
-import { computeContentUuid, jcsCanonicalize } from '@/integrity/content-uuid'
-import type { ContentUuid } from '@/integrity/content-uuid'
+import { computeContentUuid, jcsCanonicalize } from '@/integrity'
+import type { ContentUuid } from '@/integrity'
 import { NIL_UUID } from '@/uuid/format'
 
 /**

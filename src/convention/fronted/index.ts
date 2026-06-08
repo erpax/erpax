@@ -38,7 +38,7 @@
  * @standard schema.org — the type vocabulary, collided to single words
  * @see @/corpus (loadCorpus — the one deduped walk + the same frontmatter slice) · @/law · ../lawful · ../complete · ./SKILL.md
  */
-import { loadCorpus } from '@/corpus/index.mts'
+import { loadCorpus } from '@/corpus'
 
 /** The frontmatter block of a SKILL.md body — the `---\n…\n---` head, or '' if there is none. */
 export const frontmatter = (body: string): string => body.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? ''

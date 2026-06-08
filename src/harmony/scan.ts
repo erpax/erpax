@@ -20,7 +20,7 @@
  */
 import { readFileSync, readdirSync, statSync, type Stats } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
-import { norm } from '@/corpus/index.mts'
+import { norm } from '@/corpus'
 
 type WalkPredicate = (entry: string, path: string) => boolean
 

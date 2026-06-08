@@ -15,7 +15,7 @@ import {
   incrementUnp,
   firstUnp,
   UNP_MAX_SEQUENCE,
-} from '@/naredba/n/18/unp'
+} from './unp'
 
 describe('УНП — Наредба Н-18 unique sales number', () => {
   it('formats parts into XXXXXXXX-ZZZZ-NNNNNNN', () => {

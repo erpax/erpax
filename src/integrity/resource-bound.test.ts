@@ -5,8 +5,8 @@ import {
   beyondUniverse,
   proveBeyondResources,
   RESOURCE_BUDGETS,
-} from '@/integrity/resource-bound'
-import { computeTamperReverseCost } from '@/integrity/tamper-reverse-cost'
+} from './resource-bound'
+import { computeTamperReverseCost } from './tamper-reverse-cost'
 
 describe('resource-bound — tamper-cost exceeds the universe when ALL is uuid-driven (Law 55, physical)', () => {
   it('the Landauer energy floor is monotone in bits (more search ⇒ strictly more energy)', () => {

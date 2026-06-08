@@ -14,7 +14,7 @@
  *   export type MarketingPluginAccess = PluginAccess<'emailSend' | 'browserRender' | 'analyticsWrite'>
  *
  *   // Plugin's mediator factory:
- *   import { pluginMediator } from '@/cloudflare/plugin-access'
+ *   import { pluginMediator } from './plugin-access'
  *
  *   export function marketingMediator(req: PayloadRequest): MarketingPluginAccess {
  *     return pluginMediator(req, ['emailSend', 'browserRender', 'analyticsWrite'])
@@ -45,7 +45,7 @@
  * @see ./index.ts makeMediator
  */
 import type { PayloadRequest } from 'payload'
-import { erpaxMediator } from '@/cloudflare/plugin-helper'
+import { erpaxMediator } from './plugin-helper'
 import type { ErpaxCfEnv } from '@/cloudflare'
 
 /** The complete mediator surface — derived from `makeMediator`'s return shape. */

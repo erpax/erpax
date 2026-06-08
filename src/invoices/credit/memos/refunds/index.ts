@@ -23,7 +23,7 @@ import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
-import { validateNotLocked } from '@/utility/period-lock'
+import { validateNotLocked } from '@/utility'
 
 const Refunds: CollectionConfig = {
   slug: 'refunds',

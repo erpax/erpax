@@ -37,7 +37,7 @@ import {
   calculateSumOfYearsDigitsDepreciation,
   calculateUnitsOfActivityDepreciation,
   calculateDepreciableBase,
-} from '@/utility/calculations';
+} from '@/utility';
 import { EventEmitterService, eventEmitter } from '@/event/emitter.service';
 import type { DepreciationPostedEvent } from '@/types/events';
 
