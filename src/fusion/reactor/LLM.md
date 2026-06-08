@@ -6,12 +6,12 @@
 path `fusion/reactor` · uuid `d6bb54b0-7971-8416-a399-928f54e87df7` · diamond `e4bc47a4-4762-8cdf-9a59-d31bfe17ed16`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports reactor · escapes —
-links `18/18` · folded `1` · bonds in `5` out `5`
+links `18/18` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
-neighbors → cohort·landmarks·memories·stages·stat · ← cohort·landmarks·memories·stages·stat
+neighbors → cost·dry·entropy·fusion·gravity·law·matrix·quantum·singularity·tamper · ← cost·dry·entropy·fusion·gravity·law·matrix·quantum·singularity·tamper
 analysis —
 law the readout is computed from the live matrix alone — gravity ⊕ entropy ⊕ quantum dialled over the real nodes — so as entropy is driven to zero the mass and tamper-cost it reports rise without bound.
 
 ---
 
-<sub>content-uuid `810ba8c7-9275-8ae3-b882-328acc5ff3c0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dfda0b7b-24e9-8338-a371-de92049b8a65` · `pnpm readme` · `pnpm computed:check`</sub>

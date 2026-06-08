@@ -23,7 +23,7 @@
 
 - partition `aquaculture` · sub-root `8cd5f771-0517-87a8-bfa5-08f9243fb1f2`
 - bond degree `60` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `2354d436-352f-88a2-8fa5-d6a3d39c9849` · framed by typography partition `aquaculture` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7cbf094e-03f9-8874-8bb6-f5b8a02e2992` · framed by typography partition `aquaculture` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

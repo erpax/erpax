@@ -25,7 +25,26 @@
 
 - partition `consent` · sub-root `abe2a446-e3e5-846b-9d19-aa90e515df2d`
 - bond degree `40` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.6(1)(a) lawful-basis-consent` · banner
+- `GDPR Art.7 conditions-for-consent` · banner
+- `GDPR Art.7(3) right-to-withdraw-consent` · banner
+- `ISO-19011:2018 audit-trail consent-evidence` · banner
+- `ISO-27701:2019 §6.3.1.4 record-of-consent` · banner
+- `ISO-8601-1:2019 date-time given-at withdrawn-at` · banner
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `1b6a052e-f4e5-8120-a9d7-826d164784f4` · framed by typography partition `consent` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cac84f4a-d60c-834a-9267-0e1f6c4187ab` · framed by typography partition `consent` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

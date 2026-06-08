@@ -25,7 +25,23 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `23` · analysis neighbors `tamper/import`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted` · banner
+- `imports + on-disk existence scanned LIVE from src/scripts/.vitepress; coverage = resolving/total, never hand-asserted` · banner
+- `TypeScript module resolution (tsconfig `@/` · banner
+
+## analytics
+
+- bond degree `23` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `de460a8d-6fe1-8adc-a303-280185482a41` · framed by typography partition `convention` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2007cf88-64f2-809f-9847-db44c62c8289` · framed by typography partition `convention` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -24,8 +24,23 @@
 ## typography graph
 
 - partition `confirm` · sub-root `079e8289-1a74-8e03-bcc1-94b92adcae4a`
-- bond degree `71` · analysis neighbors `purity`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- bond degree `72` · analysis neighbors `purity`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `72` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `1eaf305c-39c7-82a7-ada3-b50b0d47c1b1` · framed by typography partition `confirm` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d3f3e7c3-e16c-8b5b-858f-ca893528b02f` · framed by typography partition `confirm` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

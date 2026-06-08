@@ -25,7 +25,25 @@
 
 - partition `conservation` · sub-root `64a4f4c7-7be3-8423-b46e-32f965b45152`
 - bond degree `90` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed, never hand-asserted` · banner
+- `Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit` · banner
+- `First Law of Thermodynamics — energy is conserved in an isolated system` · banner
+- `Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `90` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `b7d78b72-558b-884c-8642-47fafd9666a1` · framed by typography partition `conservation` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4b60c0c0-8493-8f1f-bd46-93180701e50d` · framed by typography partition `conservation` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>

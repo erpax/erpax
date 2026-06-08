@@ -23,7 +23,7 @@
 
 - partition `geriatric` · sub-root `4dbf423d-de41-8e8d-8a16-71e2f4bf0530`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2c4e84aa-cf9e-8aa3-bc1f-9abbfe4d78e9` · framed by typography partition `geriatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a7c02026-8ec4-83ec-98ca-d54272e08177` · framed by typography partition `geriatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

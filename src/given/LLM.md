@@ -3,15 +3,15 @@
 
 # given
 
-path `given` · uuid `5ff53694-3e55-8a0e-9ff4-f0469443c3b5` · diamond `0df571e4-8211-8f53-addd-d1c5a4516e9b`
+path `given` · uuid `5ff53694-3e55-8a0e-9ff4-f0469443c3b5` · diamond `206113cf-bc2c-8971-ab5c-2d05bd4f9781`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·name·sti · exports given · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·lnid·memories·notice·stat · ← cohort·landmarks·lnid·memories·notice·stat
+neighbors → collapse·law·merge·name·sti · ← collapse·law·merge·name·sti
 analysis —
 law the personal-forename qualifier is one collided word, so givenName and its kin fold to the same identity rather than a per-compound duplicate.
 
 ---
 
-<sub>content-uuid `d6bae654-f9b7-825e-8ac4-c56127275fb7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `efef48b1-4a5e-8f68-8d91-ab5d5c7c6824` · `pnpm readme` · `pnpm computed:check`</sub>

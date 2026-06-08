@@ -2,7 +2,7 @@
 
 # generate
 
-> atom `generate` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `generate` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `generate` · sub-root `a620f060-8e35-8d7f-a033-815c6e8245e4`
-- bond degree `94` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `231` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `950c7322-9ae8-8258-ad76-872ae860b96a`
-- bonds in `4` · out `4`
+- uuid `869a8d0b-90ba-8b19-8644-b49b26ff6f6f`
+- bonds in `70` · out `74`
 - trinity form·code·proof `1`·`0`·`0`
 - links `30` / `30`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `08bd9dad-366c-84c2-8df0-940224579752` · framed by typography partition `generate` bonds `94` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0bc3020b-157a-8a4c-8814-c92ad2d6ab23` · framed by typography partition `generate` bonds `231` · `pnpm readme` · `pnpm readme:check`</sub>

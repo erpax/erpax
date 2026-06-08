@@ -2,7 +2,7 @@
 
 # fs
 
-> atom `fs` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `fs` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `fs` · sub-root `03c5f9b1-d78b-8229-9e0f-3dbed14a5bde`
-- bond degree `50` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `91` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `79525e77-6eb6-87de-ba62-9ba5a7a6eeca`
-- bonds in `7` · out `7`
+- uuid `e254f12b-a87e-8f88-8fb1-ae1d14dc6a14`
+- bonds in `25` · out `30`
 - trinity form·code·proof `1`·`0`·`0`
 - links `26` / `26`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5f2da08a-4d3c-88aa-b2de-cd59e33bec37` · framed by typography partition `fs` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6dd0a98c-2f85-8eed-bbf1-08f7bad99013` · framed by typography partition `fs` bonds `91` · `pnpm readme` · `pnpm readme:check`</sub>

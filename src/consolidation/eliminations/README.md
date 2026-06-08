@@ -25,7 +25,28 @@
 
 - partition `consolidation` · sub-root `4fc2f3ba-94b4-8ed5-9da6-dcdc137a02de`
 - bond degree `13` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-21 §39 foreign-currency-translation-on-consolidation` · banner
+- `IFRS IFRS-10 §B86 consolidated-financial-statements` · banner
+- `ISO-19011:2018 audit-trail consolidation-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time consolidation-date` · banner
+- `SOX §404 internal-controls consolidation-control TOM-CON-01` · banner
+- `US-GAAP ASC-810-10-45 consolidation-elimination` · banner
+- `US-GAAP ASC-830-30 foreign-currency-translation` · banner
+
+## analytics
+
+- bond degree `13` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `48b4b832-67c8-80a7-a953-261731110b60` · framed by typography partition `consolidation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c68ee68f-012a-80c4-b546-2c6df3defc90` · framed by typography partition `consolidation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

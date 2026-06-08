@@ -3,15 +3,15 @@
 
 # journals
 
-path `gl/accounts/recurring/journals` · uuid `351d815f-6ec0-8f8d-9b69-7865c480bfda` · diamond `225bb2e8-0da8-805a-8fae-d284ba5f2921`
+path `gl/accounts/recurring/journals` · uuid `351d815f-6ec0-8f8d-9b69-7865c480bfda` · diamond `5085c861-5333-8653-9ec9-b7d692b20d70`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `5` out `4`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← accounting·cohort·landmarks·memories·stat
+neighbors → accounting·accrual·centers·deferral·entries·journal·law·prepaid · ← accounting·accrual·centers·deferral·entries·journal·law·prepaid
 analysis —
 law a recurring journal is a template, not an entry — a scheduled job materialises it into a balanced journal-entry each period (RRULE-driven), four-eyes-gated on auto-post so automation never escapes [[accounting]] control.
 
 ---
 
-<sub>content-uuid `6c61c1a8-9e58-8dd9-9789-f57f0e05e9b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `742e9f83-d4a3-87fc-8716-5f4e12db4268` · `pnpm readme` · `pnpm computed:check`</sub>

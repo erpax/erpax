@@ -3,15 +3,15 @@
 
 # workspace
 
-path `google/workspace` · uuid `2d9f4c14-a18e-8708-93f6-ffa6f543e9b9` · diamond `1d03f35b-be05-8a02-92ad-53a3be27096b`
+path `google/workspace` · uuid `2d9f4c14-a18e-8708-93f6-ffa6f543e9b9` · diamond `9361b24d-03bb-8bc2-a7c3-9df84d43ba0e`
 horo `7` `descent` · trinity `1·0·1` · sealed `1`
 imports accounting·api·connections·entry·federation·flow·identity·ingest·law·merge·standard · exports workspace · escapes —
-links `22/22` · folded `1` · bonds in `7` out `7`
+links `22/22` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·biological·id·landmarks·periods·progression·spouse · ← accounting·biological·id·landmarks·periods·progression·spouse
+neighbors → accounting·api·connections·entry·federation·flow·identity·ingest·law·mcp·merge·oauth·standard · ← accounting·api·connections·entry·federation·flow·identity·ingest·law·mcp·merge·oauth·standard
 analysis —
 law a fetched Workspace resource is content-addressed and fused by the [[merge]] law — same content ⇒ same uuid ⇒ idempotent upsert; the Google id is the externalRef tag, not the [[identity]], and credentials never enter the registry.
 
 ---
 
-<sub>content-uuid `461e4bf6-60d3-85b3-ad92-9798ef12cf54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a9040f8-1000-87f7-9756-b7d1198300bc` · `pnpm readme` · `pnpm computed:check`</sub>

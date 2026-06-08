@@ -3,15 +3,15 @@
 
 # frequency
 
-path `frequency` · uuid `a4f80f2a-28c3-8108-ae9a-f738dc92f478` · diamond `bba235b5-02a4-82a8-adc4-faf0e2d54d56`
+path `frequency` · uuid `a4f80f2a-28c3-8108-ae9a-f738dc92f478` · diamond `46707670-b81f-86a0-a5bb-bcfabeeb513a`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports activity·broadcast·law·loan·payment·repeat·specification·value · exports frequency · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → activity·broadcast·law·loan·payment·photon·repeat·specification·spectrum·value · ← activity·broadcast·law·loan·payment·photon·repeat·specification·spectrum·value
 analysis —
 law frequency is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `987aab5c-54d9-83f3-8be6-c17a46566ce6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9637b34-83a6-8392-a71f-df7aa01c0334` · `pnpm readme` · `pnpm computed:check`</sub>

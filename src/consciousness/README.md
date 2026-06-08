@@ -25,7 +25,22 @@
 
 - partition `consciousness` · sub-root `d1085374-7ad5-87b4-9aef-692d85408886`
 - bond degree `55` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the live matrix, never hand-asserted` · banner
+- `RFC 9562 §5.8 content-uuid + the horo digital-root ring` · banner
+
+## analytics
+
+- bond degree `55` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `b7f04ab3-7372-8cb9-9c34-b3623d7f7fc5` · framed by typography partition `consciousness` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fbba1c2e-027a-86b6-9f12-cec327962a27` · framed by typography partition `consciousness` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>

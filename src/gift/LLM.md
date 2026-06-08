@@ -3,15 +3,15 @@
 
 # gift
 
-path `gift` · uuid `7a386dfa-1a87-8e48-9e01-dca9297c5530` · diamond `f6a5478d-58e6-8d79-b2fe-3896fbfc3332`
+path `gift` · uuid `7a386dfa-1a87-8e48-9e01-dca9297c5530` · diamond `057e52e0-2060-8da6-a75e-2bcb61b2d5cf`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports gift · escapes —
-links `2/2` · folded `1` · bonds in `7` out `8`
+links `2/2` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accrual·correlation·default·iupac·landmarks·power·reviews · ← accrual·correlation·default·iupac·landmarks·power·reviews
+neighbors → animism·islam·jainism·law·paganism·shinto·sikhism·thing · ← animism·islam·jainism·law·paganism·shinto·sikhism·thing
 analysis —
 law gift is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4367fac9-191a-8506-abbb-27715991b291` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10c469a1-abad-8b42-a57d-ca87d3dceee6` · `pnpm readme` · `pnpm computed:check`</sub>

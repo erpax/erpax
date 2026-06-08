@@ -25,7 +25,24 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `169` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word` · banner
+- `CommonMark / Obsidian double-bracket wikilink syntax — resolved by normalized leaf word against the shared corpus map` · banner
+- `coverage read LIVE from the corpus wikiMap (`walk(SKILLS_DIR)`); never asserted, never defaulted — total > 0 by architecture` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `169` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `c1cddcec-b605-81c5-98ed-c40908f12cca` · framed by typography partition `convention` bonds `169` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cc4485af-9c01-83a3-9226-492f509c41cd` · framed by typography partition `convention` bonds `169` · `pnpm readme` · `pnpm readme:check`</sub>

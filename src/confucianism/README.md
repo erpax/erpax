@@ -23,7 +23,21 @@
 
 - partition `confucianism` · sub-root `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3`
 - bond degree `65` · analysis neighbors `diamond`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `65` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7627b07d-10a1-894f-98d6-cc3e0c3eea74` · framed by typography partition `confucianism` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `88378962-07a1-8626-9c2b-b0ee5a44c26a` · framed by typography partition `confucianism` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

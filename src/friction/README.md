@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `friction` · sub-root `2d3fe81b-44be-892c-b585-64385466a1b2`
-- bond degree `31` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `29` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `2d3fe81b-44be-892c-b585-64385466a1b2`
-- bonds in `10` · out `10`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`0`·`0`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c78ac04b-9b3f-8bcd-a75b-f7118ae12a6b` · framed by typography partition `friction` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb2be545-4afa-87b6-b33f-95e0588162b7` · framed by typography partition `friction` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

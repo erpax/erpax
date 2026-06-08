@@ -3,15 +3,15 @@
 
 # gated
 
-path `gated` · uuid `d2c3a361-4734-8813-ade3-4c37391860ae` · diamond `f56b7427-ffb6-842b-962b-1d4d40c4b268`
+path `gated` · uuid `d2c3a361-4734-8813-ade3-4c37391860ae` · diamond `934a47b7-2a3f-8be7-ac3f-56ac61de131d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·community·law·merge·residence·sti · exports gated · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·continuation·landmarks·memories·stat · ← cohort·continuation·landmarks·memories·stat
+links `6/6` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → collapse·community·law·merge·residence·sti · ← collapse·community·law·merge·residence·sti
 analysis —
 law gated is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `64dd52eb-c55d-8fdb-8855-3d763e140ff9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3c02da1-1810-8511-aec6-d51f64ed1a84` · `pnpm readme` · `pnpm computed:check`</sub>

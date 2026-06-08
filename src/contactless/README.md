@@ -23,7 +23,21 @@
 
 - partition `contactless` · sub-root `f00e50a3-97b6-8a42-91b3-d872238cca9d`
 - bond degree `15` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `31a8e932-eb88-8dd0-b690-d19ea24fda8e` · framed by typography partition `contactless` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ed0d6bed-3a15-8d4f-b567-997cd2c161c6` · framed by typography partition `contactless` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

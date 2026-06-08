@@ -25,7 +25,24 @@
 
 - partition `constitution` · sub-root `dd6e74f8-f181-8d94-8dc1-a3e42437dfcf`
 - bond degree `36` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 37000:2021 governance-of-organizations principle-of-purpose` · banner
+- `ISO-37000` · catalogue
+- `US-CTA-2021` · catalogue
+- `Venice Commission Rule of Law (entrenched fundamental guarantees)` · banner
+
+## analytics
+
+- bond degree `36` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `4c2bb121-906b-8649-a3ec-f053ec7dd453` · framed by typography partition `constitution` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `80e928a1-31fe-85cf-ba5c-a8eadff925c9` · framed by typography partition `constitution` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

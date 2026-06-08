@@ -3,15 +3,15 @@
 
 # gallery
 
-path `gallery` · uuid `8fd02d1a-2f1d-8e16-b787-e4582e2492bb` · diamond `b896383f-bdb6-80f4-b568-aafe599f01e5`
+path `gallery` · uuid `8fd02d1a-2f1d-8e16-b787-e4582e2492bb` · diamond `30341c42-c331-87f9-a7d0-b094430296e0`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports art·collapse·image·law·media·merge·sti·video · exports gallery · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → art·collapse·image·law·media·merge·sti·video · ← art·collapse·image·law·media·merge·sti·video
 analysis —
 law gallery is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `be12717e-d8d8-8457-b9ea-71987429d0d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0680176f-49b4-8b45-82b7-b21220e7de23` · `pnpm readme` · `pnpm computed:check`</sub>

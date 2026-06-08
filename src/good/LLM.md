@@ -3,15 +3,15 @@
 
 # good
 
-path `good` · uuid `652f1693-44cd-8ba6-9cc2-545099414fef` · diamond `0b5cdb4a-7a77-89a0-8c38-3f619034e642`
+path `good` · uuid `652f1693-44cd-8ba6-9cc2-545099414fef` · diamond `f0d42aa2-c5ab-8cd4-b873-70f615e0e574`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·law·merge·sti·type · exports good · escapes —
-links `6/6` · folded `1` · bonds in `18` out `18`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·calendars·center·city·commitments·corruption·eliminations·fields·id·landmarks·marine·memories·prescribing·progression·room·sell·video·whole · ← balance·calendars·center·city·commitments·corruption·eliminations·fields·id·landmarks·marine·memories·prescribing·progression·room·sell·video·whole
+neighbors → amount·collapse·law·merge·sti·type · ← amount·collapse·law·merge·sti·type
 analysis —
 law good is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a1a71aea-2bac-8c15-907e-ccd16f8425d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1164a948-0839-8103-92b2-2c85707b6dbc` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # fractal
 
-path `fractal` · uuid `9fffbbc0-237b-827c-bec2-18b5a5e0e8db` · diamond `9f5ef6e3-a65b-884e-9d5f-af52c8573159`
+path `fractal` · uuid `9fffbbc0-237b-827c-bec2-18b5a5e0e8db` · diamond `45a7f28b-1038-885f-b235-4929a83b92b3`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports atom·collapse·collections·duality·fields·generate·holographic·identity·part·plugins·self·sequence·sufficient·trinity·whole · exports fractal · escapes —
-links `18/18` · folded `1` · bonds in `8` out `8`
+links `18/18` · folded `1` · bonds in `111` out `109`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activity·brewery·landmarks·literary·patient·remorse·spa·urologic · ← activity·brewery·landmarks·literary·patient·remorse·spa·urologic
+neighbors → access·agent·akashic·analog·animism·archangel·architect·assets·atom·aura·bahai·beyond·biofield·buddhism·cases·chat·christianity·cloning·coil·collapse·collections·competencies·competition·components·confucianism·connections·corruption·defence·diamond·dimension·duality·dust·ecosystem·education·element·emergence·family·federation·fields·gate·generate·health·hermeticism·hinduism·history·holographic·horo·identity·integrity·islam·jainism·judaism·justice·law·legislation·lexical·link·localize·lung·memory·merge·method·nerve·notification·octave·oid·orders·paganism·part·party·permaculture·plugins·port·position·primitive·pwa·religion·rodin·science·sectors·seed·self·separation·sequence·services·shamanism·share·shinto·sikhism·similar·skills·society·sti·stream·sufficient·sync·taoism·taxonomy·team·testing·torus·transactions·trinity·typography·uuid·voting·website·whole·zoroastrianism · ← access·agent·akashic·analog·animism·archangel·architect·assets·atom·aura·bahai·beyond·biofield·buddhism·cases·chat·christianity·cloning·coil·collapse·collections·competencies·competition·components·confucianism·connections·corruption·defence·diamond·dimension·duality·dust·ecosystem·education·element·emergence·family·federation·fields·gate·generate·health·hermeticism·hinduism·history·holographic·horo·identity·integrity·islam·jainism·judaism·justice·law·legislation·lexical·link·localize·lung·memory·merge·method·nerve·notification·octave·oid·orders·paganism·part·party·permaculture·plugins·port·position·primitive·pwa·religion·rodin·science·sectors·seed·self·separation·sequence·services·shamanism·share·shinto·sikhism·similar·skills·society·sti·stream·sufficient·sync·sync·taoism·taxonomy·team·testing·torus·torus·transactions·trinity·typography·uuid·voting·website·whole·zoroastrianism
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `b28508e0-8099-83f6-b870-3f0e18db1cc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e1c9f03-3be2-82f8-b45a-2e77a41b54a9` · `pnpm readme` · `pnpm computed:check`</sub>

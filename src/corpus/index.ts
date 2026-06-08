@@ -14,3 +14,11 @@ export {
   wikiMap,
 } from './index.mts'
 export type { Duality, LoadedAtom, SidebarItem } from './index.mts'
+export {
+  adminGroupOf,
+  navigationGroupsFromPaths,
+  navManifestFromPaths,
+  pathNavMeta,
+  routeOfPath,
+} from '@/navigation'
+export type { NavGroup, NavManifestEntry, PathNavMeta } from '@/navigation'

@@ -3,15 +3,15 @@
 
 # frame
 
-path `frame` · uuid `d2b412da-9b2b-8275-8331-1ce776a2561c` · diamond `ce7c153a-c517-8d9a-8bdf-dffdb341406a`
+path `frame` · uuid `d2b412da-9b2b-8275-8331-1ce776a2561c` · diamond `98409d55-fa41-8eac-8dbf-e2f285aadd88`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·size·sti·video · exports frame · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → breakfast·conventional·description·diet·distance·guideline·manufacturing·photograph·translate · ← breakfast·conventional·description·diet·distance·guideline·manufacturing·photograph·translate
+neighbors → collapse·law·merge·size·sti·video · ← collapse·law·merge·size·sti·video
 analysis —
 law frame is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cf4a92b2-21ae-83d3-96f4-f091c19d8120` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `377b7cc6-6495-86cb-b805-fdf41b713d92` · `pnpm readme` · `pnpm computed:check`</sub>

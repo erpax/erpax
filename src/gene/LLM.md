@@ -3,15 +3,15 @@
 
 # gene
 
-path `gene` · uuid `4d32f6ab-51f3-8f61-a510-45674d09b66e` · diamond `d3c06a44-e08c-87a0-855e-5469b86b36f0`
+path `gene` · uuid `4d32f6ab-51f3-8f61-a510-45674d09b66e` · diamond `90f960de-8e82-8d20-825b-0cfa8d6e1e8b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports gene · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → available·cohort·landmarks·memories·stat · ← available·cohort·landmarks·memories·stat
+neighbors → law·science·thing · ← law·science·thing
 analysis —
 law gene is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6384a479-6c21-83de-afa4-ec4743da5479` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b46d2077-52b8-8ba9-b424-7a4093445c68` · `pnpm readme` · `pnpm computed:check`</sub>

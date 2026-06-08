@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `funnel` · sub-root `5c072a83-cf61-8634-b705-24bc5244868a`
-- bond degree `42` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `22` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `5c072a83-cf61-8634-b705-24bc5244868a`
-- bonds in `17` · out `17`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `87674672-7b35-84f2-8504-4c64ce2b8c63` · framed by typography partition `funnel` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27a28967-3e85-899b-aa0c-861fadec3d74` · framed by typography partition `funnel` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

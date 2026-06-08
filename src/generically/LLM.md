@@ -3,15 +3,15 @@
 
 # generically
 
-path `generically` · uuid `53e09c54-5c3b-821d-a791-35d1c4519757` · diamond `27405525-b82a-80e9-930b-217c13a01f63`
+path `generically` · uuid `53e09c54-5c3b-821d-a791-35d1c4519757` · diamond `3ee0957d-137b-89c9-8b47-127970f15323`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports available·collapse·law·merge·sti · exports generically · escapes —
-links `5/5` · folded `1` · bonds in `16` out `16`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → acknowledgments·church·contagiousness·cooperative·coverage·covercrop·cropped·discusses·episodes·landmarks·merge·outlet·queue·serves·title·week · ← acknowledgments·church·contagiousness·cooperative·coverage·covercrop·cropped·discusses·episodes·landmarks·merge·outlet·queue·serves·title·week
+neighbors → available·collapse·law·merge·sti · ← available·collapse·law·merge·sti
 analysis —
 law generically is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ae59a7d9-25df-8411-989c-20b1ce43270c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e4836f7b-d523-806f-aecd-c0a0d02a43c7` · `pnpm readme` · `pnpm computed:check`</sub>

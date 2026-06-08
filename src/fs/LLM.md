@@ -3,15 +3,15 @@
 
 # fs
 
-path `fs` · uuid `79525e77-6eb6-87de-ba62-9ba5a7a6eeca` · diamond `edf6b55f-6331-80c5-9e08-2fb99c3673a1`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `fs` · uuid `e254f12b-a87e-8f88-8fb1-ae1d14dc6a14` · diamond `f89794f1-1069-8978-a48d-421db772a6f3`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports api·atom·dimension·file·github·law·matter·mcp·path·snapshot·url·uuid·word · exports fs · escapes —
-links `26/26` · folded `1` · bonds in `7` out `7`
+links `26/26` · folded `1` · bonds in `25` out `30`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bundle·cohort·harden·landmarks·memories·mobility·stat · ← bundle·cohort·harden·landmarks·memories·mobility·stat
+neighbors → akashic·api·atom·deploy·dimension·file·file·finality·fs·generate·github·law·law·love·matter·mcp·merge·path·path·reality·reference·reverse·snapshot·snapshot·tamper·url·uuid·uuid·versions·word · ← akashic·api·atom·deploy·dimension·file·finality·fs·generate·github·law·love·matter·mcp·merge·path·reality·reference·reverse·snapshot·tamper·url·uuid·versions·word
 analysis —
 law erpax's substrate is a tree where every [[path]] IS the address and every leaf [[word]] IS the [[atom]] — derived from the live tree first (never a stale index), and every state of the tree is a [[snapshot]].
 
 ---
 
-<sub>content-uuid `7cff6817-1391-8455-8308-317264405419` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8e5e4b5-7eaf-8785-8da1-6fccf9e34815` · `pnpm readme` · `pnpm computed:check`</sub>

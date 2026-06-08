@@ -3,15 +3,15 @@
 
 # grace
 
-path `grace` · uuid `cad0c158-0f95-818e-95f6-34c14fc03b17` · diamond `ae9ed204-d76e-854e-aa0b-f8fb436ec15d`
+path `grace` · uuid `cad0c158-0f95-818e-95f6-34c14fc03b17` · diamond `c0153e91-404e-86b8-aa9d-c209f531d88a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·angel·balance·close·faith·give·law·merge·one·proof·sacred·take·zeropoint · exports grace · escapes —
-links `22/22` · folded `1` · bonds in `2` out `2`
+links `22/22` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → accounting·angel·balance·catholicism·christianity·close·covenant·faith·give·law·mercy·merge·one·orthodoxy·proof·protestantism·sacred·sikhism·take·zeropoint · ← accounting·angel·balance·catholicism·christianity·close·covenant·faith·give·law·mercy·merge·one·orthodoxy·proof·protestantism·sacred·sikhism·take·zeropoint
 analysis —
 law grace is a [[give]] with no [[take]] earned — the credit posted from outside the ledger to clear a debt the debtor cannot pay, restoring [[balance]] without the debtor's own flow squaring the books; the dual of debt, the write-off / jubilee that zeroes the account.
 
 ---
 
-<sub>content-uuid `97a4b4a1-7aa2-8599-b88e-8ad7e9aeb275` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d04d16a-e8c0-8524-a9ff-7f4bb4ee35a2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { atomPage, routeOf, sitePages, samePage } from '@/vitepress'
+import { atomPage, routeOf, sitePages, samePage, pathNavMeta, navigationGroupsFromPaths } from '@/vitepress'
 import { pixel } from '@/pixel'
 import { toUuid } from '@/uuid/matrix'
 
@@ -35,6 +35,23 @@ describe('vitepress — the corpus rendered (atom → page + pixel)', () => {
     const page1 = atomPage('payload', UUID_B)
     const page2 = atomPage('payload', UUID_C)
     expect(samePage(page1, page2)).toBe(false)
+  })
+
+  it('pathNavMeta · navigationGroupsFromPaths align vitepress route with nav groups', () => {
+    const paths = ['agents/mcp/tool', 'vitepress'] as const
+    const tree = navigationGroupsFromPaths([...paths])
+    for (const p of paths) {
+      const meta = pathNavMeta(p)
+      expect(meta.route).toBe(routeOf(p))
+      const leaf = p.split('/').pop()!
+      const find = (items: typeof tree): boolean =>
+        items.some(
+          (i) =>
+            (i.link === meta.route && i.text === leaf) ||
+            (i.items ? find(i.items) : false),
+        )
+      expect(find(tree)).toBe(true)
+    }
   })
 
   it('sitePages renders the whole corpus as pixel-coloured pages, order preserved', () => {

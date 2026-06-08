@@ -3,15 +3,15 @@
 
 # forward
 
-path `forward` · uuid `5374879f-e16b-8d5a-8efb-7da5ca540017` · diamond `74f80c49-4963-8efb-8958-015cb2192c37`
+path `forward` · uuid `5374879f-e16b-8d5a-8efb-7da5ca540017` · diamond `184687d4-3a5b-8cef-b56f-b49ba52a70bb`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·gears·law·merge·number·sti · exports forward · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·gears·law·merge·number·sti · ← collapse·gears·law·merge·number·sti
 analysis —
 law forward is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a2cee437-cbf5-827d-a13e-590eb6a6cb78` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c33e5a2f-30bd-881d-b622-5ce0bce6c750` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # girls
 
-path `girls` · uuid `1f4d157a-de17-846e-b4ab-7be11f8e3a06` · diamond `cced4d06-8772-8576-a1ab-8fb989a3fbdf`
+path `girls` · uuid `1f4d157a-de17-846e-b4ab-7be11f8e3a06` · diamond `e4729558-5c9e-8052-9e48-1a4726ac2fca`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports girls · escapes —
-links `4/4` · folded `1` · bonds in `11` out `11`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·decompression·depreciate·id·landmarks·partial·progression·quotes·spouse·system·tags · ← accounting·decompression·depreciate·id·landmarks·partial·progression·quotes·spouse·system·tags
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law girls is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0d9885b5-c465-8365-8bd7-01cab255360e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5238fb0a-f3f0-8f35-87cf-54712b7513ed` · `pnpm readme` · `pnpm computed:check`</sub>

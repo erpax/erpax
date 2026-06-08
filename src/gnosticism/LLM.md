@@ -3,15 +3,15 @@
 
 # gnosticism
 
-path `gnosticism` · uuid `—` · diamond `2229936f-08ca-8d78-aecf-112a0b90521a`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `gnosticism` · uuid `31b5f225-08f5-8e20-bf1b-2fe376afb5e8` · diamond `3ac3fb4d-0642-862d-a0b2-d34c8f427ab8`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·diamond·duality·identity·law·profane·religion·return·self·signal·society·translator·uuid·void·whole·wisdom·word · exports gnosticism · escapes —
-links `47/47` · folded `0` · bonds in `0` out `0`
+links `47/47` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·bogomilism·diamond·duality·identity·law·manichaeism·profane·religion·return·self·signal·society·translator·uuid·void·whole·wisdom·word · ← archangel·bogomilism·diamond·duality·identity·law·manichaeism·profane·religion·return·self·signal·society·translator·uuid·void·whole·wisdom·word
+analysis diamond
 law gnosticism is a [[diamond]] of [[wisdom]] · [[self]] · [[signal]] · [[duality]] · [[profane]] · [[void]] · [[whole]] · [[return]] · [[word]] — gnosis the saving [[wisdom]] that frees the spark ([[signal]]) trapped in a false order ([[profane]], the demiurge's forged creation), salvation the [[return]] of the spark to the true source once it knows itself; as an [[archangel]] it architects the society's domain of saving knowledge.
 
 ---
 
-<sub>content-uuid `c604d38a-9620-8c76-aa2a-2d7abe9d9f2e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c556b5fe-da17-8460-a7ec-02d5c4792595` · `pnpm readme` · `pnpm computed:check`</sub>

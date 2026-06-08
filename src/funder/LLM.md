@@ -3,15 +3,15 @@
 
 # funder
 
-path `funder` · uuid `bd52813c-9a6b-85d3-b90c-ec1a536cf60f` · diamond `17a51646-d85e-8632-8dc7-39399695651e`
+path `funder` · uuid `bd52813c-9a6b-85d3-b90c-ec1a536cf60f` · diamond `86db0ad9-53da-8d7c-bfb2-76d1b8f214d6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports funder · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → law·thing · ← law·thing
 analysis —
 law funder is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a65de104-4b0d-8ffc-af11-2b361acd9a92` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89b8d17f-d40a-83c4-a5e5-870acb6f9f6a` · `pnpm readme` · `pnpm computed:check`</sub>

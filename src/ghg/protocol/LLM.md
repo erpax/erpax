@@ -3,15 +3,15 @@
 
 # protocol
 
-path `ghg/protocol` · uuid `e342a455-3316-8de0-91ca-e267255f4406` · diamond `98845ee2-a862-899c-b8dd-d9db6a93cb5f`
+path `ghg/protocol` · uuid `e342a455-3316-8de0-91ca-e267255f4406` · diamond `69fb4dbe-5980-8b19-8c97-b45d04834be2`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports GhgCategory·GhgMethodology·GhgScope·GwpHorizon·const · escapes —
-links `1/1` · folded `1` · bonds in `5` out `5`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·musical·stat · ← cohort·landmarks·memories·musical·stat
+neighbors → law · ← law
 analysis —
 law the GHG Protocol fixes the 4 + 3 + 15 = 22 sub-categories of Scope 1 + 2 + 3 plus the activity-vs-spend methodology hierarchy and GWP horizon — the canonical answer-path for per-source carbon posting and the ESRS E1 disclosure roll-up.
 
 ---
 
-<sub>content-uuid `12e26379-0e7c-8828-b2d6-9108efd60b03` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a39085fc-c634-8685-b55e-a6f491b68d93` · `pnpm readme` · `pnpm computed:check`</sub>

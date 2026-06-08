@@ -3,15 +3,15 @@
 
 # game
 
-path `game` · uuid `fdfd5a19-a098-8016-8d6c-8dd6babad4b2` · diamond `98be1465-c6e1-811d-b225-333b4c49c428`
+path `game` · uuid `fdfd5a19-a098-8016-8d6c-8dd6babad4b2` · diamond `4926abaf-3d04-809a-956b-f981963dd943`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·availability·clip·edition·enumeration·item·law·location·mode·platform·play·series·server·status·tip·type·video · exports game · escapes —
-links `17/17` · folded `1` · bonds in `58` out `56`
+links `17/17` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·angel·arrival·aura·balance·conference·consent·cooking·corrects·courthouse·dance·debit·dentistry·departure·details·drone·eat·enterprisebudget·entertainment·exemplifies·founder·game·gears·handling·id·invariant·landmarks·list·marine·memories·named·office·progression·qualification·qualitative·recourse·recycling·restriction·results·satire·saturday·sector·sectors·seed·sell·sign·spouse·symbol·temporarily·tracks·tvclip·vent·virus·win·wp · ← access·accounting·accounting·angel·arrival·aura·balance·conference·consent·cooking·corrects·courthouse·dance·debit·dentistry·departure·departure·details·drone·eat·enterprisebudget·entertainment·exemplifies·founder·game·gears·handling·id·invariant·landmarks·list·marine·memories·named·office·progression·qualification·qualitative·recourse·recycling·restriction·results·satire·saturday·sector·sectors·seed·sell·sign·spouse·symbol·temporarily·tracks·tvclip·vent·virus·win·wp
+neighbors → action·availability·clip·edition·enumeration·item·law·location·mode·platform·play·series·server·status·tip·type·video · ← action·availability·clip·edition·enumeration·item·law·location·mode·platform·play·series·server·status·tip·type·video
 analysis —
 law game is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `29692d56-a9b2-8d2c-8cf1-77ec51365c07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f50ebbc2-7ef1-8106-9a0f-1c1499dc99a9` · `pnpm readme` · `pnpm computed:check`</sub>

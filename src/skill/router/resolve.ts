@@ -27,6 +27,10 @@ export interface SkillNode {
   readonly siblings: readonly string[]
   readonly children: readonly string[]
   readonly related: readonly string[]
+  /** ancestor path segments — VitePress `nav` / sidebar group chain. */
+  readonly nav: readonly string[]
+  /** top-level path segment — Payload `admin.group` bucket. */
+  readonly group: string
   /** content-addressed id (sha → uuid of the content); optional until computed. */
   readonly contentUuid?: string
 }

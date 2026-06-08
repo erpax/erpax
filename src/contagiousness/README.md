@@ -23,7 +23,21 @@
 
 - partition `contagiousness` · sub-root `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
 - bond degree `12` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c2ecaed7-8909-83e5-be64-6c8cbc91fb10` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `272bb48f-7da8-8682-b9fa-876fd120610f` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

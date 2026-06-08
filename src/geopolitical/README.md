@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `geopolitical` · sub-root `a9c04eb3-61eb-85c4-930b-e16734f4359b`
-- bond degree `6` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `a9c04eb3-61eb-85c4-930b-e16734f4359b`
-- bonds in `1` · out `1`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9065c792-d91a-885b-a9d2-5df21a9ee3d2` · framed by typography partition `geopolitical` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `14c4a69b-6307-839c-89b8-df998ffdaae2` · framed by typography partition `geopolitical` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

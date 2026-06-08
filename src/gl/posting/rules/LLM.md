@@ -3,15 +3,15 @@
 
 # rules
 
-path `gl/posting/rules` · uuid `793b792a-ecca-8bad-9819-6e392b85f16c` · diamond `70b4b9b0-4560-8737-a0e3-58f7e1d33fd6`
+path `gl/posting/rules` · uuid `793b792a-ecca-8bad-9819-6e392b85f16c` · diamond `ff75b378-60b5-8272-8dfe-13310ae356a1`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth · exports const · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
+links `3/3` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·landmarks·memories·sanitization·stat · ← amount·cohort·landmarks·memories·sanitization·stat
+neighbors → accounting·balance·law·rule · ← accounting·balance·law·rule
 analysis —
 law each GL account carries its validation-metadata — type, normal debit/credit polarity, balance-sheet-vs-P&L category, reconciliation frequency, cash-flow relevance, close flag — that drives double-entry validation ([[accounting]], [[balance]]).
 
 ---
 
-<sub>content-uuid `05c4d740-fbfe-86c8-8527-8b8339a0fabf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `daa24720-61a9-8b2a-945e-324502503fbf` · `pnpm readme` · `pnpm computed:check`</sub>

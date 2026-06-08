@@ -3,15 +3,15 @@
 
 # friction
 
-path `friction` · uuid `2d3fe81b-44be-892c-b585-64385466a1b2` · diamond `67864fd4-2800-8660-a060-e81438b1bd75`
+path `friction` · uuid `2d3fe81b-44be-892c-b585-64385466a1b2` · diamond `9ce65c77-5f91-8c81-90f4-65d3597a3e93`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports breath·conversion·desire·distribution·market·trend · exports friction · escapes —
-links `11/11` · folded `1` · bonds in `10` out `10`
+links `11/11` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·crisis·definition·donate·hamiltonian·landmarks·pickup·screen·temple·travel · ← agriculture·crisis·definition·donate·hamiltonian·landmarks·pickup·screen·temple·travel
+neighbors → breath·conversion·desire·diffusion·distribution·habit·market·pickup·trend · ← breath·conversion·desire·diffusion·distribution·habit·market·pickup·trend
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `c8d7de6a-e9a1-8412-8464-11ae022b2f32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a306e27-0a8d-8a69-9c54-defcad846fd7` · `pnpm readme` · `pnpm computed:check`</sub>

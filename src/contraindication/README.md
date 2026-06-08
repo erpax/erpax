@@ -23,7 +23,21 @@
 
 - partition `contraindication` · sub-root `f2054bcd-3394-8205-bee6-f0de3fa0b008`
 - bond degree `11` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `11` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6c9370a7-6391-87c0-835d-37540ce41a11` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8eec2a64-19b9-88b5-b38b-8df59b62566d` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

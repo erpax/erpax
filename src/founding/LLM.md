@@ -3,15 +3,15 @@
 
 # founding
 
-path `founding` · uuid `66684f37-854f-8181-8491-aab218df70fd` · diamond `5b029cc3-2b05-8274-99ad-aef1c08bcd27`
+path `founding` · uuid `66684f37-854f-8181-8491-aab218df70fd` · diamond `e727ec04-a12c-89e5-95d4-ccac659ea154`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·location·merge·sti · exports founding · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·edits·landmarks·memories·stat · ← cohort·edits·landmarks·memories·stat
+neighbors → collapse·date·law·location·merge·sti · ← collapse·date·law·location·merge·sti
 analysis —
 law founding is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `54c9cae0-a475-8fc2-96fa-34e9733e7920` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `47b0eb06-552c-856f-9202-d977f74f5e8b` · `pnpm readme` · `pnpm computed:check`</sub>

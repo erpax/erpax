@@ -3,15 +3,15 @@
 
 # funding
 
-path `funding` · uuid `78ba185c-e14d-85b6-b8cb-68b0749df44e` · diamond `c8ea9cd3-87a6-8314-bd99-b338940f7a55`
+path `funding` · uuid `78ba185c-e14d-85b6-b8cb-68b0749df44e` · diamond `8016e99f-7b69-8e79-b2ef-2bdd96021dc6`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agency·info·law·ownership·scheme · exports funding · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·corrects·drone·entertainment·grant·landmarks·marry·qualification·shred·symbol · ← addressed·corrects·drone·entertainment·grant·landmarks·marry·qualification·shred·symbol
+neighbors → agency·info·law·ownership·scheme · ← agency·info·law·ownership·scheme
 analysis —
 law funding is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `288f017e-0d66-879e-8523-d229766baf2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3748f7d3-30f6-8879-adab-7f3014324e91` · `pnpm readme` · `pnpm computed:check`</sub>

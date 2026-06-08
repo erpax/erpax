@@ -3,15 +3,15 @@
 
 # grade
 
-path `grade` · uuid `6f0db5b3-007e-8b18-9793-66d9e6698d6c` · diamond `10b1b749-12ec-886c-889a-f6c3d4b3799b`
+path `grade` · uuid `6f0db5b3-007e-8b18-9793-66d9e6698d6c` · diamond `92da971d-02fb-838e-aba0-569f3e5bba8d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agriculture·harvest·lots·measure·packs·postharvest·quota·rate·standards·yield · exports grade · escapes —
-links `20/20` · folded `1` · bonds in `10` out `14`
+links `20/20` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·enrolling·enrolling·grade·import·landmarks·landmarks·likes·marry·memories·memories·night·qualification·qualification · ← atom·enrolling·grade·import·landmarks·likes·marry·memories·night·qualification
+neighbors → agriculture·harvest·lactation·lineage·lots·maturity·measure·packs·postharvest·pruning·quota·rate·standards·trellis·withdrawal·yield · ← agriculture·harvest·lactation·lineage·lots·maturity·measure·packs·postharvest·pruning·quota·rate·standards·trellis·withdrawal·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `c397dff3-15c6-8f13-a583-e6b22a199079` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8fcaf749-47f8-827f-a5a9-57726013bc04` · `pnpm readme` · `pnpm computed:check`</sub>

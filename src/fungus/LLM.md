@@ -3,15 +3,15 @@
 
 # fungus
 
-path `fungus` · uuid `ad00a97a-618b-8244-bc11-2d13a37784d7` · diamond `768508e3-c1e0-8570-afe0-85806be16eee`
+path `fungus` · uuid `ad00a97a-618b-8244-bc11-2d13a37784d7` · diamond `2d05ade0-e80b-8e50-a6b5-bef762f9bc45`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports fungus · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 15·art·cohort·landmarks·meal·memories·stat·varies · ← 15·art·cohort·landmarks·meal·memories·stat·varies
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law fungus is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `46d93f65-bdb4-8229-95a1-4fbae255b0fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ce92c81-afe2-8f31-834a-cc042a31e03d` · `pnpm readme` · `pnpm computed:check`</sub>

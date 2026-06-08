@@ -23,7 +23,22 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `derivable artifacts (skills.index, docs/) are gitignored — regenerated at build from src` · banner
+- `one source of truth — a committed derivable is duplicated state that can drift` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `edb7a07c-9277-880b-830a-80ea5b1d9f4a` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3bca5828-2f8c-8fc7-96ef-5a703b0b703d` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

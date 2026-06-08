@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports geriatric · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law geriatric is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e9a6f764-e1ab-8990-8805-7253a3e213c0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `154ca1cd-2f31-8699-aff2-5bf6de3599f5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -6,6 +6,7 @@
 // slug are the same address (the uuid is the router; the route is its name).
 import { existsSync, readFileSync, readdirSync, realpathSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { navigationGroupsFromPaths } from '../navigation/index.ts'
 
 // src is the 0: skills live co-located with their matter-twin code, so the docs
 // emerge from the code itself. srcDir + sidebar + wiki-links all derive from this
@@ -15,6 +16,8 @@ export const SKILLS_DIR = 'src'
 export type SidebarItem = { text: string; link?: string; collapsed?: boolean; items?: SidebarItem[] }
 export const wikiMap: Record<string, string> = {} // normalized leaf word → route
 export const allSkills: { name: string; route: string }[] = [] // flat list → the reading chain
+const skillPaths: string[] = [] // src-relative atom paths (SKILL.md dirs) → nav tree input
+let corpusCollected = false
 
 /**
  * Canonical key: lowercase + strip `-`/`_`. So a prose link's generic one-word name
@@ -31,59 +34,46 @@ export function routeOf(relDir: string): string {
   return '/' + relative(SKILLS_DIR, relDir).split(/[\\/]/).join('/') + '/SKILL'
 }
 
-export function walk(dir: string, seen: Set<string> = new Set()): SidebarItem[] {
+/** Filesystem pass — wikiMap · allSkills · skillPaths (one realpath plane). */
+function collectCorpus(dir: string, seen: Set<string> = new Set()): void {
   // Follow symlinks — they GATEWAY to shared configs; never skip them. But this
   // walker is intra-dimensional: it enumerates each real node ONCE (realpath dedup).
-  // `src/skills → .` (the harness shim: .claude → src, so skills resolve at
-  // .claude/skills/<word> = src/<word>) re-enters src — not an infinite loop, a
-  // gateway the walker HANDS OFF: the real node is already enumerated on this
-  // plane, so crossing INTO the next dimension (the same atom seen as a skill) is
-  // the HOOKS' job (the vitepress transform / payload beforeChange-afterRead), not
-  // the traversal's. The walk stays in its dimension; the hooks open the next.
   const real = realpathSync(dir)
-  if (seen.has(real)) return []
+  if (seen.has(real)) return
   seen.add(real)
-  const items: SidebarItem[] = []
   for (const name of readdirSync(dir).sort()) {
+    if (name === 'node_modules' || name.startsWith('.')) continue
     const full = join(dir, name)
     if (!statSync(full).isDirectory()) continue
     const rel = relative('.', full)
     const route = routeOf(rel)
-    // Only a dir WITH a SKILL.md is a routable page. A SKILL-less matter-twin
-    // dir (services/proof, collections/Users/access, hooks/collections, …) is
-    // recursed for its skill children but never registered — otherwise it
-    // shadows the real same-named atom in the leaf wikiMap and points
-    // [[proof]] → /services/proof/SKILL (a dead link). Many such dirs share a
-    // leaf word with a real atom; without this guard the last-walked one wins.
     const hasSkill = existsSync(join(full, 'SKILL.md'))
     if (hasSkill) {
-      wikiMap[norm(name)] = route // normalized leaf-word resolution (case/hyphen-insensitive)
-      // Trailing-suffix aliases — the dissolution split compound names into nested
-      // folders, sometimes under domain containers (gl-accounts → gl/accounts,
-      // SalesOrders → customers/sales/orders). Prose [[links]] still carry the bare
-      // compound name, so register EVERY trailing-suffix concatenation of the path
-      // (orders, salesorders, customerssalesorders) as a fill-in alias. A real leaf
-      // word (set unconditionally above, every walk) always wins over a compound
-      // alias; among aliases the first walked wins (deterministic by sort order).
+      wikiMap[norm(name)] = route
       const segs = route.replace(/^\//, '').replace(/\/SKILL$/, '').split('/')
       const addAlias = (k: string) => { if (k && !(k in wikiMap)) wikiMap[k] = route }
       for (let i = segs.length - 1; i >= 0; i--) {
         const key = norm(segs.slice(i).join(''))
         addAlias(key)
-        // naive singular/plural so the model/collection duality reconciles:
-        // [[tenant]] → tenants, [[architecture-invariants]] → architecture/invariant.
         addAlias(key.endsWith('s') ? key.slice(0, -1) : key + 's')
-        // …and the -y/-ies class ([[parties]] → party, [[ConsignmentInventory]] → inventories).
         if (key.endsWith('ies')) addAlias(key.slice(0, -3) + 'y')
         else if (key.endsWith('y')) addAlias(key.slice(0, -1) + 'ies')
       }
       allSkills.push({ name, route })
+      skillPaths.push(relative(SKILLS_DIR, rel).split(/[\\/]/).join('/'))
     }
-    const children = walk(full, seen)
-    if (hasSkill) items.push(children.length ? { text: name, link: route, collapsed: true, items: children } : { text: name, link: route })
-    else if (children.length) items.push({ text: name, collapsed: true, items: children }) // SKILL-less container: a group header, no page link
+    collectCorpus(full, seen)
   }
-  return items
+}
+
+/** Sidebar tree — derived from collected skill paths via `navigationGroupsFromPaths`. */
+export function walk(dir: string): SidebarItem[] {
+  if (!corpusCollected) {
+    collectCorpus(SKILLS_DIR)
+    corpusCollected = true
+  }
+  if (dir !== SKILLS_DIR) return []
+  return navigationGroupsFromPaths(skillPaths) as SidebarItem[]
 }
 
 /** One loaded atom for the search ingest — route + frontmatter + raw body (the caller computes the content-uuid). */

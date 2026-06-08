@@ -3,15 +3,15 @@
 
 # golf
 
-path `golf` · uuid `91d52ee9-7e4d-8bf3-a861-c75332a6065b` · diamond `eb721dc3-cb90-8224-9c2e-57639add9659`
+path `golf` · uuid `91d52ee9-7e4d-8bf3-a861-c75332a6065b` · diamond `c97f3e17-e940-8b57-b1be-81e820dfdb99`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·course·law·merge·sti · exports golf · escapes —
-links `5/5` · folded `1` · bonds in `13` out `13`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·api·connected·entity·flight·id·infectious·landmarks·love·mcp·memories·nullability·spouse · ← accounting·api·connected·entity·flight·id·infectious·landmarks·love·mcp·memories·nullability·spouse
+neighbors → collapse·course·law·merge·sti · ← collapse·course·law·merge·sti
 analysis —
 law golf is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d3b9c8d1-6572-8400-881e-e7455cb4042b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `55bfe72a-9eb8-8227-ba3b-f9e40565345c` · `pnpm readme` · `pnpm computed:check`</sub>

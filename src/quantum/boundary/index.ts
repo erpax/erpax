@@ -51,7 +51,8 @@ export function classifyImports(specs: readonly string[], root = SRC): { barrels
   const barrels = new Set<string>()
   const escapes: string[] = []
   for (const spec of specs) {
-    if (isIndexImport(spec, root)) barrels.add(spec)
+    const barrel = resolveBarrel(spec, root) ?? (isIndexImport(spec, root) ? spec : null)
+    if (barrel) barrels.add(barrel)
     else escapes.push(spec)
   }
   return { barrels: [...barrels].sort(), escapes: escapes.sort() }

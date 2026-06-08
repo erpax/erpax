@@ -3,15 +3,15 @@
 
 # governing-law
 
-path `governing-law` · uuid `b78ec19e-f3b5-80de-bb69-37f8303a083d` · diamond `4dea97bb-e084-8b62-b9ec-3abcd7ba2642`
+path `governing-law` · uuid `b78ec19e-f3b5-80de-bb69-37f8303a083d` · diamond `93fd2263-7e48-8128-a3ee-ed1e20a9d7f8`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports contracts·dispute-resolution·jurisdiction·law·matter·standard · exports governing-law · escapes —
-links `7/7` · folded `1` · bonds in `13` out `13`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·angel·balance·clip·factor·getting·landmarks·memories·office·progression·rule·syllabus·wp · ← accounting·angel·balance·clip·factor·getting·landmarks·memories·office·progression·rule·syllabus·wp
+neighbors → cases·contracts·disputeresolution·jurisdiction·law·matter·standard · ← cases·contracts·disputeresolution·jurisdiction·law·matter·standard
 analysis —
 law the choice-of-law clause binds a contract to one [[jurisdiction]]'s law — fixing interpretation (UCC vs. Common Law), applicable standards, and dispute resolution; the matter's legal frame is chosen, not ambient.
 
 ---
 
-<sub>content-uuid `d7c601d5-d267-8149-994a-b67688de5df1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b56c53d4-7ffd-8b35-a8eb-be1371e8d39f` · `pnpm readme` · `pnpm computed:check`</sub>

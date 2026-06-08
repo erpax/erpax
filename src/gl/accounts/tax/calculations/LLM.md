@@ -3,15 +3,15 @@
 
 # calculations
 
-path `gl/accounts/tax/calculations` · uuid `b74b50ce-102c-8fda-8c30-6631e70fa44f` · diamond `9ac54596-edf0-8eef-a9cf-a0b264b8d589`
+path `gl/accounts/tax/calculations` · uuid `b74b50ce-102c-8fda-8c30-6631e70fa44f` · diamond `96206d13-73cf-88d1-801b-068826a1951c`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·country·landmarks·memories·stat · ← cohort·country·landmarks·memories·stat
+neighbors → accounting·calculation·deduction·identity·law·party·proof·returns·standard·tax·taxexempt · ← accounting·calculation·deduction·identity·law·party·proof·returns·standard·tax·taxexempt
 analysis —
 law a tax calculation is a computed liability snapshot per period and jurisdiction — rate over gross/taxable/net, bound to a GL payable account and filing/payment deadlines — moving calculated→filed→paid; one immutable position, not a recompute.
 
 ---
 
-<sub>content-uuid `a6d18000-d587-88b1-afe5-ca9c07e377d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `087f465a-7ae6-858c-884a-0795148200cf` · `pnpm readme` · `pnpm computed:check`</sub>

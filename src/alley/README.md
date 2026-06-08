@@ -23,7 +23,7 @@
 
 - partition `alley` · sub-root `1e4cb938-0c1e-85a5-94cf-455b36f1a8a2`
 - bond degree `16` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `32fe1cea-b697-8742-8da3-d57bc9410022` · framed by typography partition `alley` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `72604e03-3471-84b5-8d0a-cf11159f3147` · framed by typography partition `alley` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

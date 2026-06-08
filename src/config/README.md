@@ -24,7 +24,43 @@
 
 - partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
 - bond degree `166` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `Berlin-Group-PSD2` · catalogue
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EU-2002/58` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `IFRS-9` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-17442-1` · catalogue
+- `ISO-19160-4` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-3166-1` · catalogue
+- `ISO-3166-2` · catalogue
+- `ISO/IEC-29119` · catalogue
+- `SWIFT-MT` · catalogue
+- `UPU-S42` · catalogue
+
+## analytics
+
+- bond degree `166` · sealed `1` · horo `9`
+- variance `0` · balanced `1` · trinity sum `2`
+- bindings `0` · standards `23`
 
 ## identity
 
@@ -40,4 +76,4 @@
 
 ---
 
-<sub>content-uuid `72c63fa4-e007-81b6-b292-a2271aa486e8` · framed by typography partition `config` bonds `166` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dcd79061-42bb-8d67-90c2-0875d2ba7869` · framed by typography partition `config` bonds `166` · `pnpm readme` · `pnpm readme:check`</sub>

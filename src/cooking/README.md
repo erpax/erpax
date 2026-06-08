@@ -23,7 +23,21 @@
 
 - partition `cooking` · sub-root `2abc5039-805e-8e44-ac09-dbb7644d36ef`
 - bond degree `15` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b4ad6368-79e5-876b-8ba4-1e1e2f586e35` · framed by typography partition `cooking` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `64dcb6b7-d3bd-8a19-bdf3-6d1060e40193` · framed by typography partition `cooking` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

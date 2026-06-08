@@ -15,6 +15,14 @@
  */
 import { pixel, type Pixel } from '@/pixel'
 import { toUuid } from '@/uuid/matrix'
+export {
+  adminGroupOf,
+  navigationGroupsFromPaths,
+  navManifestFromPaths,
+  pathNavMeta,
+  routeOfPath,
+} from '@/navigation'
+export type { NavGroup, NavManifestEntry, PathNavMeta } from '@/navigation'
 
 /** A rendered corpus page — where the atom is read (route) and how it looks (its uuid-pixel). */
 export interface AtomPage {

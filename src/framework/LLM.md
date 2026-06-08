@@ -3,15 +3,15 @@
 
 # framework
 
-path `framework` · uuid `5fb795f6-a50b-81e4-a11b-5c35c62fcea2` · diamond `428bdeba-185d-897c-b85b-d321297fb0c0`
+path `framework` · uuid `5fb795f6-a50b-81e4-a11b-5c35c62fcea2` · diamond `1d050856-6e75-8dd7-944c-29f9fbd1aebf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·educational·law·merge·sti · exports framework · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·educational·law·merge·sti · ← collapse·educational·law·merge·sti
 analysis —
 law framework is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e438487-bcce-8696-b75f-d9aa606616ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e7b5bd2-d38d-85dd-9ad7-20a159035ab1` · `pnpm readme` · `pnpm computed:check`</sub>

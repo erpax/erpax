@@ -23,7 +23,7 @@
 
 - partition `anesthesia` · sub-root `4fb2f4b0-47e8-87b6-b0f7-4aa3b49c59ba`
 - bond degree `12` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `86d1c65c-3c4f-8638-885d-d0e5f9ac96f4` · framed by typography partition `anesthesia` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `340189ec-7dc0-86c6-bf19-dc2dec0cfc9a` · framed by typography partition `anesthesia` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

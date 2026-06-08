@@ -3,15 +3,15 @@
 
 # friday
 
-path `friday` · uuid `90077fd9-36ae-8ea0-b90a-d464c954ca5b` · diamond `a78cdf87-d334-89df-accd-8402a254898e`
+path `friday` · uuid `90077fd9-36ae-8ea0-b90a-d464c954ca5b` · diamond `9f498008-e7d4-8769-bf70-a81b32a7b764`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports friday · escapes —
-links `4/4` · folded `1` · bonds in `18` out `22`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·atom·departure·fax·festival·festival·fields·findings·friday·landmarks·landmarks·list·log·log·mass·memories·party·party·range·results·symbol·wellbeing · ← akashic·atom·departure·fax·festival·fields·findings·friday·landmarks·list·log·mass·memories·party·range·results·symbol·wellbeing
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law friday is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `64c63678-4622-894e-b3ce-481dee367ed2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26398b2d-1e8f-8933-ac9f-1115ae4d0521` · `pnpm readme` · `pnpm computed:check`</sub>

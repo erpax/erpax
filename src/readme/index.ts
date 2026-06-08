@@ -61,7 +61,6 @@ import {
 import { conserves, trialBalance } from '@/conservation'
 import {
   computeDiamond,
-  deriveDiamond,
   deploymentFaces,
   diamondUuid,
   renderDiamondJson,

@@ -3,15 +3,15 @@
 
 # general
 
-path `general` · uuid `8f4c864f-4fc6-8c49-99a0-8d7852348a50` · diamond `522948e9-169f-843f-ac7e-596da80b4c14`
+path `general` · uuid `8f4c864f-4fc6-8c49-99a0-8d7852348a50` · diamond `d3d3b241-2176-8652-bdbb-5f668890c90f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·contractor·law·merge·sti · exports general · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·contractor·law·merge·sti · ← collapse·contractor·law·merge·sti
 analysis —
 law general is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0217626a-b4f8-8ebd-b79b-e70de8708a85` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f8bf6cbf-5708-8670-b385-bf24f0142967` · `pnpm readme` · `pnpm computed:check`</sub>

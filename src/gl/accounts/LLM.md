@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
 links `8/8` · folded `1` · bonds in `19` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·access·accounting·accounting·accounting·auth·colleagues·equilibrium·holographic·id·id·invite·landmarks·partial·period·progression·reconciliations·runs·snapshots·spouse·tour·visit · ← access·accounting·auth·colleagues·equilibrium·holographic·id·invite·landmarks·partial·period·progression·reconciliations·reconciliations·runs·snapshots·spouse·tour·visit
+neighbors → access·access·accounting·accounting·accounting·adjustments·auth·collections·escrow·hooks·identity·identity·law·lines·locations·orders·party·proof·reconciliations·runs·standard·transaction · ← access·accounting·adjustments·auth·collections·escrow·hooks·identity·law·lines·locations·orders·party·proof·reconciliations·reconciliations·runs·standard·transaction
 analysis —
 law the Chart of Accounts is the typed spine every [[transaction]] posts against — each account carries one accountType (asset/liability/equity/revenue/expense/gain-loss) and canonical role so resolution is deterministic, never free-text.
 
 ---
 
-<sub>content-uuid `9ac7bffb-2900-8db5-a370-21c8e7a99667` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `005c5737-8857-8bb5-9133-b0f1875240f0` · `pnpm readme` · `pnpm computed:check`</sub>

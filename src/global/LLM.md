@@ -3,15 +3,15 @@
 
 # global
 
-path `global` · uuid `c73a05e4-1c69-807e-9afc-88010087cfad` · diamond `70b5e88c-95dc-82c0-b6cb-c827ba974eb9`
+path `global` · uuid `c73a05e4-1c69-807e-9afc-88010087cfad` · diamond `c09c8710-40ba-8b7e-93d8-42d6e356a6d3`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·location·merge·number·sti · exports global · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·hold·landmarks·memories·special·stat·statistic · ← cohort·hold·landmarks·memories·special·stat·statistic
+neighbors → collapse·law·location·merge·number·sti · ← collapse·law·location·merge·number·sti
 analysis —
 law global is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ebaa6f26-b557-821d-b3fe-1076255861f1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a297cb7-ed0b-820f-bf7c-4a78c57191d6` · `pnpm readme` · `pnpm computed:check`</sub>

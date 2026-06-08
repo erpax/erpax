@@ -3,15 +3,15 @@
 
 # geopolitical
 
-path `geopolitical` · uuid `a9c04eb3-61eb-85c4-930b-e16734f4359b` · diamond `41b2706a-1cce-8d51-9d4c-c81e1f3dc353`
+path `geopolitical` · uuid `a9c04eb3-61eb-85c4-930b-e16734f4359b` · diamond `bfd8a356-8f11-868f-9450-5b34a2fc0476`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports geopolitical · escapes —
-links `4/4` · folded `1` · bonds in `1` out `1`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law geopolitical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c72a4d52-156b-875d-a0f5-988df8207ac0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e89306a2-8033-86a5-9878-3eeb310c250e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `anbi` · sub-root `de9532f0-a26e-8885-872f-ae8e35aa4dab`
 - bond degree `12` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `26610dc0-a4bb-8daf-be67-eb2e36a9065b` · framed by typography partition `anbi` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6eacf0c7-5da3-88a5-8e2c-ca1a7bb700ab` · framed by typography partition `anbi` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

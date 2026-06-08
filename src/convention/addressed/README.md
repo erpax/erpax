@@ -25,7 +25,22 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `19` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content` · banner
+- `RFC-9562` · catalogue
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `2f1e1c3d-341f-8c32-aac8-b53f1ef9e969` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d47afa75-f6b6-8ca0-8018-6acb456a1b2d` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

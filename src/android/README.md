@@ -23,7 +23,7 @@
 
 - partition `android` · sub-root `e9c86493-9430-875b-99e5-4211c90ef36d`
 - bond degree `12` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `2328e8f5-ec97-8910-a195-a0daed3303dc` · framed by typography partition `android` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4eb7bfd6-6096-8aa1-ae58-cd535695b87f` · framed by typography partition `android` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # function
 
-path `function` · uuid `1c3829a4-686c-87cb-bbab-dc6dcde8978b` · diamond `accbb1f2-128b-8e49-b396-d3212e9139aa`
+path `function` · uuid `1c3829a4-686c-87cb-bbab-dc6dcde8978b` · diamond `338dd7c1-4793-8ebc-9703-2556b9eb7a00`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports business·collapse·has·law·merge·molecular·sti · exports function · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → business·collapse·has·law·merge·molecular·sti · ← business·collapse·has·law·merge·molecular·sti
 analysis —
 law function is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `febaf035-e526-8710-8157-11e418b4f40c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb74a360-1dc0-818c-acc7-03e171d690b9` · `pnpm readme` · `pnpm computed:check`</sub>

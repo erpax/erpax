@@ -3,15 +3,15 @@
 
 # garden
 
-path `garden` · uuid `37f1bed3-a172-870b-8a9a-197a93c4114b` · diamond `3ff4cbf9-e55e-8eeb-aaff-e9e2d2c7fccc`
+path `garden` · uuid `37f1bed3-a172-870b-8a9a-197a93c4114b` · diamond `1bff1d72-5c61-8ee5-a763-612b1ff5bddc`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports garden · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·committee·landmarks·memories·rescheduled·stat · ← cohort·committee·landmarks·memories·rescheduled·stat
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law garden is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `319867cc-4ca0-8c49-87dd-db5ef94cabeb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f2c1a21-c337-888c-9892-b02b0a78de87` · `pnpm readme` · `pnpm computed:check`</sub>

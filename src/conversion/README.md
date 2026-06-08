@@ -23,7 +23,21 @@
 
 - partition `conversion` · sub-root `1a3488d9-0f78-8a53-80a8-e5ec343e424e`
 - bond degree `83` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `83` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b97aa6b2-0306-8a3e-9bae-5a36ac29e7a8` · framed by typography partition `conversion` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `966da03e-a93f-8ba0-9a64-86978a494031` · framed by typography partition `conversion` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>

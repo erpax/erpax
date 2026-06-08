@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `goodwill` · sub-root `ae4a3523-7f54-8f54-8a0c-5b2e6e103089`
-- bond degree `31` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `19` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `ae4a3523-7f54-8f54-8a0c-5b2e6e103089`
-- bonds in `12` · out `12`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7dfb25b1-7d6e-8acd-9523-92ca3dbd5452` · framed by typography partition `goodwill` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4daca22c-16e2-870d-9068-510b796600b7` · framed by typography partition `goodwill` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # gluten
 
-path `gluten` · uuid `a47df7a9-eae2-8c3f-8474-2e66da643c48` · diamond `b0e78b82-bd0d-8cf1-95b7-f69d8e66afcb`
+path `gluten` · uuid `a47df7a9-eae2-8c3f-8474-2e66da643c48` · diamond `f514a595-2de5-8f45-b453-bac0a4bb5d3a`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gluten · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → biological·fact·illustrator·landmarks·legal·members · ← biological·fact·illustrator·landmarks·legal·members
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gluten is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `87f0dd64-b3ee-8b1f-a496-048b4f321ef8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `50dbb075-a796-8cce-97ac-4d018c3caa6e` · `pnpm readme` · `pnpm computed:check`</sub>

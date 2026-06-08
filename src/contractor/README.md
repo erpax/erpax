@@ -23,7 +23,21 @@
 
 - partition `contractor` · sub-root `8fa5835b-fdd7-8d32-92bb-b648615048cf`
 - bond degree `20` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e4174cfe-3482-800d-bed0-4ee443af61b9` · framed by typography partition `contractor` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `37d65ed3-9fa0-8a5f-acde-bfd01bb40927` · framed by typography partition `contractor` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

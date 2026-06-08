@@ -3,15 +3,15 @@
 
 # give
 
-path `give` · uuid `3f9a10f3-43ca-8629-8fdc-b7aec1942dee` · diamond `f981702d-570e-8529-be9f-b68e63e91ec3`
+path `give` · uuid `3f9a10f3-43ca-8629-8fdc-b7aec1942dee` · diamond `e116f76c-2457-8d53-8bc3-e6f79bc3d0b4`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports accounting·angel·balance·close·commerce·flow·give·grace·identity·law·take · exports give · escapes —
-links `22/22` · folded `1` · bonds in `4` out `4`
+links `22/22` · folded `1` · bonds in `40` out `40`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·landmarks·room · ← accounting·balance·landmarks·room
+neighbors → access·accounting·angel·atom·balance·breath·chat·civilization·close·cmyk·commerce·contribution·conversion·decompression·descent·dimension·duality·entry·exchange·flow·give·grace·identity·law·localize·mycorrhizae·perspective·planting·polarity·projection·proof·reverse·runs·symbiosis·take·team·torus·transaction·trinity·whole · ← access·accounting·angel·atom·balance·breath·chat·civilization·close·cmyk·commerce·contribution·conversion·decompression·descent·dimension·duality·entry·exchange·flow·give·grace·identity·law·localize·mycorrhizae·perspective·planting·polarity·projection·proof·reverse·runs·symbiosis·take·team·torus·transaction·trinity·whole
 analysis —
 law the outflow side of every exchange (credit · out · grant · send), dual of [[take]]; equilibrium is Σ[[give]] = Σ[[take]] ([[balance]]).
 
 ---
 
-<sub>content-uuid `d83e4a6c-2e6e-8011-a168-1788bd036b22` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d3155c5-0500-8a2d-89e9-ad4ccabaeaa3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,27 @@
 
 - partition `consistency` · sub-root `6ae1b17e-6830-8066-9e1b-a7c2a7b151d6`
 - bond degree `33` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `ISO/IEC-29119` · catalogue
+- `WCAG-2.1` · catalogue
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -39,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `8f58d2cf-58fa-8aee-bd1d-fe321960641f` · framed by typography partition `consistency` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a383529-2791-8610-a57e-6c5bf104e73a` · framed by typography partition `consistency` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

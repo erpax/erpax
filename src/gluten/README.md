@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `gluten` · sub-root `a47df7a9-eae2-8c3f-8474-2e66da643c48`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `a47df7a9-eae2-8c3f-8474-2e66da643c48`
-- bonds in `6` · out `6`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `083ff882-04b6-8156-b80d-ac9118293994` · framed by typography partition `gluten` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e07a0928-aa61-84d6-a3f5-e55b11c8b0ff` · framed by typography partition `gluten` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

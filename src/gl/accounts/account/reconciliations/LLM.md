@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
 links `7/7` · folded `1` · bonds in `9` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounts·accounts·commissions·film·film·landmarks·progression·recipe·tour·transactions · ← accounting·accounts·film·landmarks·progression·recipe·reviews·tour·transactions
+neighbors → accounting·accounting·accounts·accounts·entries·law·proof·reconciliation·statements·statements·transaction·transactions · ← accounting·accounts·entries·law·proof·reconciliation·statements·transaction·transactions
 analysis —
 law a reconciliation is signed-off evidence that the difference is zero — GL against subledger/bank/intercompany — with preparer/reviewer segregation; an unclosed reconciliation is an unbalanced book.
 
 ---
 
-<sub>content-uuid `83cd3faa-fc4a-8c10-bee6-e03a1c92a840` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c241e3c6-01f0-892d-808f-8a6c36305640` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,30 @@
 
 - partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
 - bond degree `75` · analysis neighbors `agent`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `BCP-47 language-tag` · banner
+- `EU-Taxonomy-2020/852` · catalogue
+- `GDPR Art.4(7) data-controller` · banner
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `ISO-17442-1` · catalogue
+- `ISO-17442-1:2020 lei` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 country-codes` · banner
+- `ISO-4217:2015 currency-codes` · banner
+
+## analytics
+
+- bond degree `75` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -41,4 +64,4 @@
 
 ---
 
-<sub>content-uuid `74adf3b7-bbd2-88f4-b4a6-cd5b92e524fa` · framed by typography partition `config` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0244c396-3cca-82e8-90d6-a672b4e70c17` · framed by typography partition `config` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>

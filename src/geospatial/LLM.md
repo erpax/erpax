@@ -3,15 +3,15 @@
 
 # geospatial
 
-path `geospatial` · uuid `7ecc1c4c-1d46-8450-8e1c-5b31f7592b4a` · diamond `19f5d271-61d1-8c60-9a63-5a38e119b0ee`
+path `geospatial` · uuid `7ecc1c4c-1d46-8450-8e1c-5b31f7592b4a` · diamond `939a1222-f819-8cc4-859c-d601c374b6f7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·geometry·law·merge·sti · exports geospatial · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·geometry·law·merge·sti · ← collapse·geometry·law·merge·sti
 analysis —
 law geospatial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b08a5c4-2d81-8db5-b2f6-78ce3bc6d484` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0cfe6e91-e9c7-8c0e-a324-fd7d017eb963` · `pnpm readme` · `pnpm computed:check`</sub>

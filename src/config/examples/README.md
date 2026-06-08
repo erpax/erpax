@@ -25,7 +25,27 @@
 
 - partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
 - bond degree `12` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `BCP-47 language-tag` · banner
+- `EU-Taxonomy-2020/852` · catalogue
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 country-codes` · banner
+- `ISO-4217:2015 currency-codes` · banner
+
+## analytics
+
+- bond degree `12` · sealed `0` · horo `6`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -41,4 +61,4 @@
 
 ---
 
-<sub>content-uuid `a3c82e71-86ee-864f-bdb7-700f3b301d26` · framed by typography partition `config` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6f9b0ffd-5435-8a2a-be97-055fb3ad9ff3` · framed by typography partition `config` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

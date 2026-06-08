@@ -23,7 +23,7 @@
 
 - partition `apiculture` · sub-root `db77d786-3cf4-8a05-b0a6-00d9e5a8d5ad`
 - bond degree `45` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5cc42ed9-48b4-88a8-bc23-8a3fb28cb7b5` · framed by typography partition `apiculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `810a131f-e4ba-83ac-8b87-5e8d7d307073` · framed by typography partition `apiculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

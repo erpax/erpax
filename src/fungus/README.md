@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `fungus` · sub-root `ad00a97a-618b-8244-bc11-2d13a37784d7`
-- bond degree `20` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `ad00a97a-618b-8244-bc11-2d13a37784d7`
-- bonds in `8` · out `8`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e3eb70ef-8bd3-8244-b4f2-4c1d908b7f99` · framed by typography partition `fungus` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `57142100-b4b0-8179-bd17-a9889ac069d7` · framed by typography partition `fungus` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

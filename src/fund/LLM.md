@@ -3,15 +3,15 @@
 
 # fund
 
-path `fund` · uuid `0bfbd06e-cf2c-8a42-b3f4-ad77ac6a8d34` · diamond `bbc03408-fb58-8aed-9207-f903e6a928f9`
+path `fund` · uuid `0bfbd06e-cf2c-8a42-b3f4-ad77ac6a8d34` · diamond `8bc86c07-167f-8880-9ef0-611608523caf`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·investment·law·merge·sti · exports fund · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·investment·law·merge·sti · ← collapse·investment·law·merge·sti
 analysis —
 law fund is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8d36ba25-b1c3-8da0-95ab-0e73275fdd67` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dcb64f22-9cc3-8493-8ca2-5525d9537aac` · `pnpm readme` · `pnpm computed:check`</sub>

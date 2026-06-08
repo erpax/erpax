@@ -25,7 +25,23 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `16` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `coverage = importPurity() read live from @/tamper/import; never re-implemented, never defaulted` · banner
+- `the import graph is the config — the public face is index.ts only (shallow, never deep)` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `000c18b8-85cd-8a5a-93cc-fed684e00f1e` · framed by typography partition `convention` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `394996c4-0e53-8681-9f57-ac3cd23206e9` · framed by typography partition `convention` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

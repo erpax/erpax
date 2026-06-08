@@ -23,7 +23,7 @@
 
 - partition `amradio` · sub-root `92e6535b-6a97-890b-b19b-8b44b77bf38a`
 - bond degree `12` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `52c3eeda-17cf-8813-b7ca-c32b8c389e06` · framed by typography partition `amradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4150f50-83cf-8e7b-813a-65abd80c4bea` · framed by typography partition `amradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # formulary
 
-path `formulary` · uuid `2e5bd938-0c51-8d69-b052-2b18e6bdffc6` · diamond `03d39e1c-333b-8ced-9995-babe81579e73`
+path `formulary` · uuid `2e5bd938-0c51-8d69-b052-2b18e6bdffc6` · diamond `d2bb1048-3b6a-8c1d-b07e-eeb5cf186a06`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·health·includes·law·merge·plan·sti · exports formulary · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·health·includes·law·merge·plan·sti · ← collapse·health·includes·law·merge·plan·sti
 analysis —
 law formulary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3533bfc1-8d3b-8275-9099-ce25cdd5e1c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8dfd6f8-6a6a-80ad-b1bd-7c772076acab` · `pnpm readme` · `pnpm computed:check`</sub>

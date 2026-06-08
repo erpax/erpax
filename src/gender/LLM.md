@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·required·suggested·type · exports gender · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·required·suggested·type · ← law·required·suggested·type
 analysis —
 law gender is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2b713edb-ac10-83d7-98ed-270ab6455a2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f78503cb-0ce1-8f3e-bb27-ba0b514c9b36` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # founder
 
-path `founder` · uuid `a259098f-a58b-872e-82af-4369675d4c87` · diamond `6d12ec0c-8a29-8e84-90a8-88712d854155`
+path `founder` · uuid `a259098f-a58b-872e-82af-4369675d4c87` · diamond `a4a0f173-d3e1-825e-a852-2c79e8394d1a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports founder · escapes —
-links `2/2` · folded `1` · bonds in `83` out `82`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·agent·akashic·analog·atom·aura·best·bio·biological·calendars·carriers·catalogue·chat·clinician·cohort·colleagues·compass·competency·complications·connected·corruption·deduplication·diffusion·dropoff·duplicate·eat·editor·electrician·embassy·fertility·game·gears·has·high·hobby·homeopathic·horo·id·import·instrument·join·landmarks·leisure·llm·locations·love·marine·measurements·memories·nonprofit527·offered·parent·partial·performance·platform·policy·pollination·public·rheumatologic·risk·roadmap·saturday·seasonal·seat·sections·sectors·see·seed·sell·sequence·sign·snapshots·stat·statistics·sync·task·tax·temporarily·transactions·video·whole · ← 3986·access·agent·akashic·analog·atom·aura·best·bio·biological·calendars·carriers·catalogue·chat·clinician·cohort·colleagues·compass·competency·complications·connected·corruption·deduplication·diffusion·dropoff·duplicate·eat·editor·electrician·embassy·fertility·game·gears·has·high·hobby·homeopathic·horo·id·import·instrument·join·landmarks·leisure·llm·locations·love·marine·measurements·memories·nonprofit527·offered·parent·partial·performance·platform·policy·pollination·public·rheumatologic·risk·roadmap·roadmap·saturday·seasonal·seat·sections·sectors·see·seed·sell·sequence·sign·snapshots·stat·statistics·sync·task·tax·temporarily·transactions·video·whole
+neighbors → law·thing · ← law·thing
 analysis —
 law the one-who-founded-an-organization is a single collided word, so every attestation of "founder" resolves to the same identity instead of a duplicate.
 
 ---
 
-<sub>content-uuid `a4a4702a-97c5-8991-822a-71ddff5c558f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc49f6fe-b038-8789-9a23-4a257d12add0` · `pnpm readme` · `pnpm computed:check`</sub>

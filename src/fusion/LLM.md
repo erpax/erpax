@@ -3,15 +3,15 @@
 
 # fusion
 
-path `fusion` · uuid `4c828c05-935d-84a4-96e4-52f0bd340316` · diamond `2ac56d45-1f9c-84da-9d3b-3b1c8de357a7`
+path `fusion` · uuid `4c828c05-935d-84a4-96e4-52f0bd340316` · diamond `37df2b15-7644-8c01-bf0e-d963fb750137`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/fusion/reactor·@/uuid/matrix · exports const·function·reactor·type · escapes —
-links `40/40` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·comment·customer·inventory·invitation·landmarks·reports·tour · ← accounting·comment·customer·inventory·invitation·landmarks·reports·tour
+links `40/40` · folded `1` · bonds in `33` out `37`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·anchor·atom·breath·collapse·cost·cross·development·dry·dust·entropy·entropy·forge·fusion·gate·gravity·law·law·link·mass·matrix·merge·merge·one·plasma·quantum·quantum·reactor·reveal·singularity·society·star·tamper·torus·torus·whole·zeropoint · ← akashic·anchor·atom·breath·collapse·cost·cross·development·dry·dust·entropy·forge·fusion·gate·gravity·gravity·law·link·mass·matrix·merge·one·plasma·quantum·reactor·reveal·singularity·society·star·tamper·torus·whole·zeropoint
 analysis —
 law every fusion is a content-uuid collision `merge(a,b) → c` that removes duplication and folds atoms toward the one root — order-independent, so the same inputs always fuse to the same matrix.
 
 ---
 
-<sub>content-uuid `229c1deb-1514-8445-be25-c78ffee80126` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80345a15-0375-88d4-a7a6-3f0ea177838a` · `pnpm readme` · `pnpm computed:check`</sub>

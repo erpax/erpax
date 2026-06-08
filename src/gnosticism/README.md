@@ -2,17 +2,17 @@
 
 # gnosticism
 
-> atom `gnosticism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `gnosticism` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `gnosticism` · sub-root `31b5f225-08f5-8e20-bf1b-2fe376afb5e8`
-- bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `59` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `31b5f225-08f5-8e20-bf1b-2fe376afb5e8`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`0`·`0`
 - links `47` / `47`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `10860afb-2ebe-8e38-a58b-1d721138c36c` · framed by typography partition `gnosticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a2357116-e0ca-8fc5-a7be-ec5205947d0b` · framed by typography partition `gnosticism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `conference` · sub-root `fcde9e1d-c6f2-8ef1-86b7-520f1271c3dd`
 - bond degree `15` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c65d35db-c3b1-85d5-9424-3c32a3242aea` · framed by typography partition `conference` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5a13e9a0-73dd-8f9a-9839-43fc64eade54` · framed by typography partition `conference` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

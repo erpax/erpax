@@ -3,15 +3,15 @@
 
 # free
 
-path `free` · uuid `f687749e-2dea-81cf-98a4-49ff131cb27b` · diamond `2b1c9e08-d2d4-8aed-a55e-4b05698f1ba2`
+path `free` · uuid `f687749e-2dea-81cf-98a4-49ff131cb27b` · diamond `df3349b2-645c-897f-b33d-275035a82b54`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accessible·law·shipping·threshold · exports free · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·measurements·memories·stat · ← cohort·landmarks·measurements·memories·stat
+neighbors → accessible·law·shipping·threshold · ← accessible·law·shipping·threshold
 analysis —
 law free is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c9f45700-a5a8-8baa-bd1b-f51159e77126` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6efaf61b-9a3e-8e63-8f7d-4716a2571974` · `pnpm readme` · `pnpm computed:check`</sub>

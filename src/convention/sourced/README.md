@@ -25,7 +25,26 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `21` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `<id> …` line names the external standard it` · banner
+- `<id> …` line names the external standard it realises — schema.org, an ISO/IEC code, a W3C spec, a national regulation. The marker may live in the `SKILL.md` body or in the sibling `index.ts` JSDoc; both are the atom's public face. It states one rule and computes its own compliance, and it does not re-implement the corpus walk or the SKILL reader — it` · banner
+- `<id> …` marker — a JSDoc/prose tag that names the external standard the atom cites.` · banner
+- `marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree.` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `THE LAW, written as a self-measuring atom:` · banner
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `83a81941-a1bb-87d0-bb0d-e476b29dc8f0` · framed by typography partition `convention` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e5924c3a-fbff-8e6d-ad2a-702fa66d2968` · framed by typography partition `convention` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

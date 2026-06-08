@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports four · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessible·landmarks·shannon·terminated · ← accessible·landmarks·shannon·terminated
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law four is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f1a5044a-8d5f-8a33-ba4a-a7c4bdb0a6ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `693d67ab-b9bc-812e-b3db-a6665f6e8914` · `pnpm readme` · `pnpm computed:check`</sub>

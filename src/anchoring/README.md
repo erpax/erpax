@@ -25,7 +25,7 @@
 
 - partition `anchoring` · sub-root `d680be10-fe5c-87ae-b7e2-eb63119945e5`
 - bond degree `18` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -70,4 +70,4 @@
 
 ---
 
-<sub>content-uuid `19136e0d-9bb7-8196-990a-b3739c21d879` · framed by typography partition `anchoring` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0872a0be-ef65-8408-83e1-ebbb86fbe036` · framed by typography partition `anchoring` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

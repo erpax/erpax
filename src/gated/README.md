@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `gated` · sub-root `d2c3a361-4734-8813-ade3-4c37391860ae`
-- bond degree `18` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `20` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `d2c3a361-4734-8813-ade3-4c37391860ae`
-- bonds in `5` · out `5`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7cdfdc1f-f34a-82f6-952f-af28adf15000` · framed by typography partition `gated` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `864a196a-d27a-80ad-b57d-c6ab8df318ab` · framed by typography partition `gated` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

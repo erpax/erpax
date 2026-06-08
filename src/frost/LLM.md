@@ -3,15 +3,15 @@
 
 # frost
 
-path `frost` · uuid `d8504d0d-e206-88a3-ab5b-5417c274d63e` · diamond `dc6c69bc-d3e2-8d48-b4a4-51b815f22510`
+path `frost` · uuid `d8504d0d-e206-88a3-ab5b-5417c274d63e` · diamond `6981d368-33da-85f1-9298-ae92e45917bc`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·degreeday·hardiness·law·planting·season·tunnel · exports frost · escapes —
-links `16/16` · folded `1` · bonds in `6` out `6`
+links `16/16` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → batch·cohort·landmarks·memories·notice·stat · ← batch·cohort·landmarks·memories·notice·stat
+neighbors → agriculture·crop·degreeday·dormancy·hardiness·law·planting·season·terroir·tunnel · ← agriculture·crop·degreeday·dormancy·hardiness·law·planting·season·terroir·tunnel
 analysis —
 law frost is the freeze event that bounds the [[season]] — last-spring and first-fall frost define the frost-free window that caps which [[crop]]s are feasible; the dates are probabilistic per-station, never a fixed calendar.
 
 ---
 
-<sub>content-uuid `5cd1dd36-22cc-89b2-afb9-c3b5d32cb17a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ba72107-bda5-8aa7-be44-30ff492f42f5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # getting
 
-path `getting` · uuid `5c555003-2488-83b3-8684-3e99bb471daf` · diamond `c310b0ac-e60a-8d03-b719-91005f756642`
+path `getting` · uuid `5c555003-2488-83b3-8684-3e99bb471daf` · diamond `9778052e-7fe5-8628-b4b4-917e1ee47a23`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·info·law·merge·sti·tested · exports getting · escapes —
-links `6/6` · folded `1` · bonds in `40` out `40`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·access·accounting·angel·atom·attestations·balance·breakfast·catalogue·chat·city·clip·comment·contractual·conventional·declaration·diffusion·dropoff·entity·flight·getting·governinglaw·hooks·idempotency·landmarks·llm·muscle·permaculture·pickup·progression·project·results·river·roadmap·runs·seed·supported·syllabus·tax·tour · ← 9110·access·accounting·angel·atom·attestations·balance·breakfast·catalogue·chat·city·clip·comment·contractual·conventional·declaration·diffusion·dropoff·entity·flight·getting·governinglaw·hooks·id·landmarks·llm·muscle·permaculture·pickup·progression·project·results·river·roadmap·runs·seed·supported·syllabus·tax·tour
+neighbors → collapse·info·law·merge·sti·tested · ← collapse·info·law·merge·sti·tested
 analysis —
 law getting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8223f9e6-b8fc-8d85-ad8a-140e9fc846a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a87b9e4-0f92-813d-8ca3-47a48c11f26a` · `pnpm readme` · `pnpm computed:check`</sub>

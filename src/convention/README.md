@@ -25,7 +25,25 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `42` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `conventionChecks runs every convention's live coverage; the registry only collects, no logic` · banner
+- `each convention is computed-not-hardcoded; the collider product (zero entropy ⟺ ∞)` · banner
+- `each coverage is a live computation in its atom; this file only collects them, no logic` · banner
+- `RFC-9562` · catalogue
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `42` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `cc96e9a9-95f5-8b8b-850b-084bfe975e47` · framed by typography partition `convention` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b778fbfc-d685-89e2-83ae-3b57583fcac5` · framed by typography partition `convention` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

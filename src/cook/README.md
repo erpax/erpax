@@ -23,7 +23,21 @@
 
 - partition `cook` · sub-root `e4a175fc-8e46-8fdd-8efe-fbbf909e2a4c`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9c0fe561-72f3-89bd-a24b-7e3afa2c1074` · framed by typography partition `cook` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c519bc58-d6e1-8282-96ab-d63b0273b639` · framed by typography partition `cook` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -19,6 +19,7 @@
 import { readdirSync, statSync, lstatSync, existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 import { createHash } from 'node:crypto'
+import { execSync } from 'node:child_process'
 
 // src is the 0 (the axis): every node is `src/[name]/[action].[format]`, so the
 // skill corpus is loaded FROM src — collections/modules carry their co-located
@@ -27,6 +28,14 @@ import { createHash } from 'node:crypto'
 // derived relative to each root (the root = 0, stripped from the route).
 const ROOTS = ['src']
 const OUT = 'src/skill/router/skills.index.ts'
+
+// Frontmatter self-upgrade runs before the walk so the index reads the connection fabric.
+try {
+  execSync('pnpm exec tsx src/skill/router/upgrade.ts --sync', { stdio: 'pipe' })
+} catch (e) {
+  console.error('skill-index: frontmatter upgrade failed —', e.stderr?.toString?.() || e.message)
+  process.exit(1)
+}
 
 const isSkill = (dir) => existsSync(join(dir, 'SKILL.md'))
 // Skip symlinks: the `.claude → src` merge leaves a `src/skills → .` self-symlink,
@@ -54,6 +63,14 @@ function fmValue(fm, key) {
     v = v.slice(1, -1)
   }
   return v
+}
+
+/** Nav · group · route from path segments — mirrors @/navigation pathNavMeta. */
+function pathNavMeta(segments) {
+  const nav = segments.slice(0, -1)
+  const group = segments[0] ?? ''
+  const route = '/' + segments.join('/') + '/SKILL'
+  return { nav, group, route }
 }
 
 /** Leaf words of every [[link]] in the body (code stripped), deduped, self excluded. */
@@ -96,6 +113,7 @@ function nodeFor(skillDir, root) {
   const siblings = subDirs(parent).filter((d) => d !== rel && isSkill(d)).map((d) => basename(d))
   const children = subDirs(rel).filter(isSkill).map((d) => basename(d))
 
+  const { nav, group } = pathNavMeta(segments)
   return {
     route,
     path: segments,
@@ -106,6 +124,8 @@ function nodeFor(skillDir, root) {
     siblings,
     children,
     related: relatedOf(body, self),
+    nav,
+    group,
     contentUuid: contentUuid(raw),
   }
 }

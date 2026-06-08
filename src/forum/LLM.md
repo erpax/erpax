@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·discussion·law·merge·posting·sti · exports forum · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·lnid·memories·stat · ← cohort·database·landmarks·lnid·memories·stat
+neighbors → collapse·discussion·law·merge·posting·sti · ← collapse·discussion·law·merge·posting·sti
 analysis —
 law forum is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e4c6a77-3f78-80c3-beb4-2daa20c76919` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f2f95ea-63e2-8347-a4b1-5436fe77ce6f` · `pnpm readme` · `pnpm computed:check`</sub>

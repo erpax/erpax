@@ -3,15 +3,15 @@
 
 # fuel
 
-path `fuel` · uuid `f61f3886-a0d1-83b0-a86b-2262246d5489` · diamond `9f017f42-4b0d-8e2e-9a2b-34dadf940ad5`
+path `fuel` · uuid `f61f3886-a0d1-83b0-a86b-2262246d5489` · diamond `ccb75df0-4774-82b7-930a-d4903147b2d1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports capacity·collapse·consumption·efficiency·law·merge·sti·type · exports fuel · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → civilization·cohort·landmarks·memories·stat · ← civilization·cohort·landmarks·memories·stat
+neighbors → capacity·collapse·consumption·efficiency·law·merge·sti·type · ← capacity·collapse·consumption·efficiency·law·merge·sti·type
 analysis —
 law fuel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ca01049a-7041-8c9f-aa5d-3e26b427177d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `90c2b3ec-ca00-862d-b271-857d3d8529da` · `pnpm readme` · `pnpm computed:check`</sub>

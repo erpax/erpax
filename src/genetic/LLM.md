@@ -3,15 +3,15 @@
 
 # genetic
 
-path `genetic` · uuid `675741fc-5896-8e80-8261-e60f37dd0a8e` · diamond `b499b61c-aa1d-8886-b445-d72264f82ea6`
+path `genetic` · uuid `675741fc-5896-8e80-8261-e60f37dd0a8e` · diamond `aa0e42b7-e6ff-82ec-8765-5853539d3a35`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports genetic · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → area·cohort·landmarks·memories·stat · ← area·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law genetic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `85d7ac01-5052-8cd9-ac54-ddd548464d16` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91405197-7985-8127-9371-5cdff348c6b6` · `pnpm readme` · `pnpm computed:check`</sub>

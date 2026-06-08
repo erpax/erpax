@@ -3,15 +3,15 @@
 
 # founders
 
-path `founders` · uuid `464a6fdf-92f8-805b-9a06-0bf521a769cf` · diamond `973fb242-35de-8097-aaf5-d942dc01fe1f`
+path `founders` · uuid `464a6fdf-92f8-805b-9a06-0bf521a769cf` · diamond `db77dece-b6d3-8957-b4ee-783f6dbe8f13`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports founders · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·siblings·stat·varies · ← cohort·landmarks·memories·siblings·stat·varies
+neighbors → law·thing · ← law·thing
 analysis —
 law founders is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `59bc6a0d-cd0d-865b-8c10-c796ae629bcf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b6fecbfc-a1ef-8f94-bf37-9a629d2841f2` · `pnpm readme` · `pnpm computed:check`</sub>

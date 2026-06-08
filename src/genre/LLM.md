@@ -3,15 +3,15 @@
 
 # genre
 
-path `genre` · uuid `635f2c96-5266-82d5-b399-924eb16b8367` · diamond `a7d388e0-0d57-8ce0-a9bb-476a50bb925e`
+path `genre` · uuid `635f2c96-5266-82d5-b399-924eb16b8367` · diamond `f1b51b8b-53ed-8629-8a50-14cba0697202`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports genre · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·geographic·landmarks·memories·stat · ← cohort·geographic·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law genre is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `345ebaa2-5fd2-8575-998f-4739c307eb79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80a6b2e4-66b3-86f9-8242-8fb94679bde4` · `pnpm readme` · `pnpm computed:check`</sub>

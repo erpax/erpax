@@ -3,15 +3,15 @@
 
 # governance
 
-path `governance` · uuid `53029436-5c63-83cc-bbb7-57e654c2f434` · diamond `3704482a-69d1-8e46-83ad-c1c76b6883b5`
+path `governance` · uuid `53029436-5c63-83cc-bbb7-57e654c2f434` · diamond `fdd30da2-597f-8d4f-9fd3-e3dc9946f3c0`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports Vote·function·interface · escapes —
-links `14/14` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `14/14` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → balance·certification·civilization·committee·constitution·corruption·finality·identity·law·legislation·merge·principle·proof·rule·separation·sequence·society·voting · ← balance·certification·civilization·committee·constitution·corruption·finality·identity·law·legislation·merge·principle·proof·rule·separation·sequence·society·voting
 analysis —
 law a formal system cannot generate its own finality, so the binding verdict comes from outside it by the vote; one-person-one-vote is the content-uuid law (a re-vote updates the same node) and quorum+threshold is its [[balance]] — an unstuffable count.
 
 ---
 
-<sub>content-uuid `76bcae47-5eee-86c2-9b9c-ba883f5c761c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b122bda9-3381-8517-aec4-54834967b818` · `pnpm readme` · `pnpm computed:check`</sub>

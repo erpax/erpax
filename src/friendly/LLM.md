@@ -3,15 +3,15 @@
 
 # friendly
 
-path `friendly` · uuid `b70af739-4668-8c2e-9fbf-ecc7e99f4f60` · diamond `c3e9561d-a799-898c-a21c-48d7a4942a2d`
+path `friendly` · uuid `b70af739-4668-8c2e-9fbf-ecc7e99f4f60` · diamond `108320ef-60c5-8f12-8679-519fe38a265e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·family·law·merge·sti · exports friendly · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → candidate·cohort·consumable·effective·landmarks·memories·sanitization·stat · ← candidate·cohort·consumable·effective·landmarks·memories·sanitization·stat
+neighbors → collapse·family·law·merge·sti · ← collapse·family·law·merge·sti
 analysis —
 law friendly is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9b36708a-e0a1-8e56-8aaf-126f48c4a40d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed119037-8846-898d-a4ba-ccb6c72ea50a` · `pnpm readme` · `pnpm computed:check`</sub>

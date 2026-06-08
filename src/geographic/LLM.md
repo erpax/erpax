@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports area·collapse·law·merge·sti · exports geographic · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·genre·landmarks·memories·stat · ← cohort·genre·landmarks·memories·stat
+neighbors → area·collapse·law·merge·sti · ← area·collapse·law·merge·sti
 analysis —
 law geographic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f3b3dcdf-ac82-8119-8bd3-1caf2c319524` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91a2f222-f0dd-8b71-a115-56cba7334022` · `pnpm readme` · `pnpm computed:check`</sub>

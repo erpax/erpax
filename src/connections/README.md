@@ -25,7 +25,34 @@
 
 - partition `connections` · sub-root `eb793249-1b5f-8bae-b67d-c288257f782b`
 - bond degree `60` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `GDPR Art 17 right-to-erasure Art 21 right-to-object (mute/block)` · banner
+- `ISO 20022 financial-business-party-relationships` · banner
+- `ISO-19011:2018 audit-trail transparent-relationship-ledger` · banner
+- `ISO-20022` · catalogue
+- `OASIS UBL 2.1 business-relationship (B2B trade edges)` · banner
+- `Peppol BIS billing-and-procurement (B2B / B2G interoperability)` · banner
+- `Peppol-BIS-3.0` · catalogue
+- `RFC-4122` · catalogue
+- `RFC-4122 §4.3 content-uuid edge-identity` · banner
+- `UBL-2.1` · catalogue
+- `W3C ActivityPub server-to-server federation (the cross-platform sync)` · banner
+- `W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)` · banner
+- `W3C-ActivityPub` · catalogue
+
+## analytics
+
+- bond degree `60` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
@@ -41,4 +68,4 @@
 
 ---
 
-<sub>content-uuid `48540189-f715-81cf-921a-83b84b6ad397` · framed by typography partition `connections` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a7039b7f-60fb-8ae4-bab2-0f1939097c8a` · framed by typography partition `connections` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

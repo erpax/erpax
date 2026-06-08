@@ -3,15 +3,15 @@
 
 # github
 
-path `github` · uuid `—` · diamond `5c3dbbb2-cef0-8800-91f9-7b2ddc31bdea`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `github` · uuid `e2a0a0ed-a638-814e-bcda-e28cb20ece94` · diamond `b1a86d95-72c0-82e1-af3b-67ad89e930ec`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports api·atom·dimension·fs·generate·identity·law·mcp·merge·path·payload·proof·snapshot·url·uuid · exports github · escapes —
-links `38/38` · folded `0` · bonds in `0` out `0`
+links `38/38` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → api·atom·dimension·fs·generate·identity·law·mcp·merge·path·payload·proof·reference·snapshot·url·uuid · ← api·atom·dimension·fs·generate·identity·law·mcp·merge·path·payload·proof·reference·snapshot·url·uuid
+analysis —
 law github is a read face of the one corpus — the same one-word [[atom]] tree the [[fs]] and [[mcp]] expose, served by URL as a content-pinned [[snapshot]]; only the atom's SKILL.md is authored, every config around it is computed.
 
 ---
 
-<sub>content-uuid `8e302fa5-4a83-83ed-8503-9239d900814c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e4c442d-89a6-8d3a-b90e-a6f055be16f7` · `pnpm readme` · `pnpm computed:check`</sub>

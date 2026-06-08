@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports class·collapse·law·merge·sti · exports functional · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agency·industry·landmarks·overdraft·satirical · ← agency·industry·landmarks·overdraft·satirical
+neighbors → class·collapse·law·merge·sti · ← class·collapse·law·merge·sti
 analysis —
 law functional is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9ee12ee4-7caf-8c43-ac65-496e5f315736` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f1b3c6fe-81c9-838e-b830-0f2c91461e10` · `pnpm readme` · `pnpm computed:check`</sub>

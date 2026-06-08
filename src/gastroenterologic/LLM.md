@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gastroenterologic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·replacer·sanitization·subscription · ← landmarks·replacer·sanitization·subscription
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gastroenterologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b0b2a84f-cda7-8734-b9a8-f7f2f451ca37` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58d1fa14-15d8-836b-b70c-e73261aadf6e` · `pnpm readme` · `pnpm computed:check`</sub>

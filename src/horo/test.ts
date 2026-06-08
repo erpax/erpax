@@ -36,10 +36,12 @@ describe('horo', () => {
     for (const n of [0, 3, 6, 10, -1, NaN, '1', null]) expect(isHoroStep(n)).toBe(false)
   })
 
-  it('horoRatio — digit per divisor (unity/10 = 0.9 pass threshold)', () => {
+  it('horoRatio — digit per divisor (unity/10 = 0.9 pass threshold)', async () => {
     expect(horoRatio(9)).toBe(0.9)
     expect(horoRatio(7)).toBe(0.7)
     expect(horoRatio(3, 4)).toBe(0.75)
+    const { structuredCoveragePassThreshold } = await import('@/uuid/format/coverage')
+    expect(structuredCoveragePassThreshold()).toBe(horoRatio(9))
   })
 
   it('imperialRatio — exact rationals, not decimal literals (thirds · halves · quarters)', () => {

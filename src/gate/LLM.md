@@ -3,15 +3,15 @@
 
 # gate
 
-path `gate` · uuid `b079aad2-959e-82a1-a707-f7ecd7b2a03b` · diamond `d62ebae7-c76d-8a69-8900-82dd0e0ee17c`
+path `gate` · uuid `b079aad2-959e-82a1-a707-f7ecd7b2a03b` · diamond `00cce88f-f0fa-8737-8e4e-cec516f11cfa`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports angel·architecture·aura·balance·coordinate·cost·coverage·cross·fractal·gate·harmony·identity·merge·proof·sealed·sequence·standard·tamper·uuid · exports gate · escapes —
-links `42/42` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·saturday·terminals · ← landmarks·saturday·terminals
+links `42/42` · folded `1` · bonds in `75` out `73`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·agent·angel·arrival·aura·balance·buddhism·closure·concatenate·config·conservation·coordinate·cost·coverage·cross·css·dashboard·decide·departure·deploy·diamond·ecosystem·entropy·expand·fractal·fusion·gate·generate·gravity·guardian·hallucination·harmony·identity·invariant·law·merge·nerve·one·prayer·proof·purity·quantum·refactor·reference·regeneration·research·resolve·reveal·reverse·science·seal·sealed·sequence·similar·sin·skills·skin·society·standard·suffering·tamper·test·testing·translate·types·typography·unavoidable·uuid·vitepress·war·whole·zeropoint · ← access·accounting·accounting·agent·angel·arrival·aura·balance·buddhism·closure·concatenate·config·conservation·coordinate·cost·coverage·cross·css·dashboard·decide·departure·deploy·deploy·diamond·ecosystem·entropy·expand·fractal·fusion·gate·generate·gravity·guardian·hallucination·harmony·identity·invariant·law·merge·nerve·one·prayer·proof·purity·quantum·refactor·reference·regeneration·research·resolve·reveal·reverse·science·seal·sealed·sequence·similar·sin·skills·skin·society·standard·suffering·tamper·test·testing·translate·types·typography·unavoidable·uuid·vitepress·war·whole·zeropoint
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `33e9637c-f2e5-8544-90c8-7970fb2b6eec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62c3d7a7-fe56-88da-b1d4-7b35b86172f8` · `pnpm readme` · `pnpm computed:check`</sub>

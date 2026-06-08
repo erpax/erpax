@@ -3,15 +3,15 @@
 
 # funded
 
-path `funded` · uuid `32ffc05c-9c49-80f1-a0b7-392b1a22195f` · diamond `c3cbabc5-5711-8375-95ea-67f5cf52f09d`
+path `funded` · uuid `32ffc05c-9c49-80f1-a0b7-392b1a22195f` · diamond `34313e10-e961-8cad-a1e5-561331fce9aa`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·item·law·merge·sti · exports funded · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → conventional·foot·landmarks·laundry·law·photon·snapshots · ← conventional·foot·landmarks·laundry·law·photon·snapshots
+neighbors → collapse·item·law·merge·sti · ← collapse·item·law·merge·sti
 analysis —
 law funded is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7e49d0e1-a18e-873d-8608-a0cbd188b9bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `09cdfa7e-1de9-8166-9803-461e9818e4d5` · `pnpm readme` · `pnpm computed:check`</sub>

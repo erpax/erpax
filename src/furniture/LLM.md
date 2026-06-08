@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports furniture · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law furniture is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4312752-7d30-865c-8806-d566bab19170` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89fedd77-4be0-8b6f-b896-d5c32bb242dc` · `pnpm readme` · `pnpm computed:check`</sub>

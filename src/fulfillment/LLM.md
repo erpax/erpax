@@ -3,15 +3,15 @@
 
 # fulfillment
 
-path `fulfillment` · uuid `1081cbb0-6d58-86fc-aa9b-db811c208c41` · diamond `bd31e7c7-ffd0-8e44-ae20-f79549e91809`
+path `fulfillment` · uuid `1081cbb0-6d58-86fc-aa9b-db811c208c41` · diamond `994c5737-6232-8123-95ed-123dd2aef68e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·enumeration·law·merge·sti·type · exports fulfillment · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·interpreter·landmarks·memories·stat · ← cohort·interpreter·landmarks·memories·stat
+neighbors → collapse·enumeration·law·merge·sti·type · ← collapse·enumeration·law·merge·sti·type
 analysis —
 law fulfillment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1bdc403f-3a51-8b49-8d49-cbd4dbccdd5b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `482311f4-7cbb-8074-8687-180a30b1162a` · `pnpm readme` · `pnpm computed:check`</sub>

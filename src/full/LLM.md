@@ -3,15 +3,15 @@
 
 # full
 
-path `full` · uuid `1e0ec79d-4b3f-82b0-9776-9f63adf0f5ba` · diamond `4664cada-7895-8836-88e4-367052d5c3d4`
+path `full` · uuid `1e0ec79d-4b3f-82b0-9776-9f63adf0f5ba` · diamond `cef545a9-7e7c-8d32-b844-d95e0e43ae0b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bathrooms·collapse·law·merge·number·sti · exports full · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·issn·landmarks·memories·stat · ← cohort·issn·landmarks·memories·stat
+neighbors → bathrooms·collapse·law·merge·number·sti · ← bathrooms·collapse·law·merge·number·sti
 analysis —
 law full is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `250d385b-c5ca-8474-815a-9eff813aa75d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1fa1e083-cc12-80f4-860f-20dedeafe803` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,36 @@
 
 - partition `consistency` · sub-root `6ae1b17e-6830-8066-9e1b-a7c2a7b151d6`
 - bond degree `29` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited` · banner
+- `ISO 9241-210:2019 human-centred-design` · banner
+- `ISO-19011:2018 audit-trail visual-evidence ux-gap-finding` · banner
+- `ISO/IEC 25010:2023 §5.1 functional-completeness` · banner
+- `ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path` · banner
+- `ISO/IEC-29119` · catalogue
+- `ISO/IEC-29119:2022 software-testing system-test-level` · banner
+- `Slice PPPPPPPP-cont CREATE_GAP emergence` · banner
+- `W3C-WAI-ARIA-1.2 accessibility-landmarks` · banner
+- `WCAG-2.1` · catalogue
+- `WCAG-2.1-AA contrast text-spacing` · banner
+
+## analytics
+
+- bond degree `29` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `16`
 
 ## identity
 
@@ -41,4 +70,4 @@
 
 ---
 
-<sub>content-uuid `c1e3033d-0f2c-8f73-bafb-161ada7b23fe` · framed by typography partition `consistency` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c7d3abb-5d70-8cdd-b29c-397fb3793f00` · framed by typography partition `consistency` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

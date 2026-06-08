@@ -23,7 +23,22 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `40` · analysis neighbors `tamper/import`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `an atom's only public face is its index.ts; what it exports through it IS its contract` · banner
+- `the producer dual of importPurity — index-reachable cross-atom symbols, live over src` · banner
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `7a10cd17-81f2-8097-aaff-695dbb5fee52` · framed by typography partition `convention` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6deee94-0aae-8275-a91a-140fdcb0d1ac` · framed by typography partition `convention` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

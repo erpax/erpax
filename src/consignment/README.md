@@ -23,7 +23,21 @@
 
 - partition `consignment` · sub-root `c665c964-60e4-808c-a095-84783df6892a`
 - bond degree `12` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a5c7f733-aba8-8a86-959a-eb9d9c77abaf` · framed by typography partition `consignment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `54fda142-67dc-8ab1-a20b-f2406893072d` · framed by typography partition `consignment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

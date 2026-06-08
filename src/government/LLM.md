@@ -3,15 +3,15 @@
 
 # government
 
-path `government` · uuid `82ee9cc2-2ba4-8e49-b950-f3ae1e0aaac4` · diamond `2fe26622-5454-834c-8cb4-6ba0d34472f4`
+path `government` · uuid `82ee9cc2-2ba4-8e49-b950-f3ae1e0aaac4` · diamond `8f3c2536-cb8d-8c1d-a069-12a2c06f3f1e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports benefits·building·collapse·info·law·merge·office·organization·permit·service·sti·type · exports government · escapes —
-links `12/12` · folded `1` · bonds in `16` out `16`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·hardcover·knows·lifestyle·longitude·masthead·max·overview·position·proprietary·quote·spreadsheet·transit·typography·website·worth · ← agriculture·hardcover·knows·lifestyle·longitude·masthead·max·overview·position·proprietary·quote·spreadsheet·transit·typography·website·worth
+neighbors → benefits·building·collapse·info·law·merge·office·organization·permit·service·sti·type · ← benefits·building·collapse·info·law·merge·office·organization·permit·service·sti·type
 analysis —
 law government is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2fb9834f-4547-8e5d-99e6-87f9d1af8047` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a676310-66e7-8b7f-83a1-d674552316e1` · `pnpm readme` · `pnpm computed:check`</sub>

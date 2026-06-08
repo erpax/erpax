@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·home·law·merge·sporting·sti·store · exports goods · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → carriers·dislike·jobs·landmarks·mass·segments·spouse · ← carriers·dislike·jobs·landmarks·mass·segments·spouse
+neighbors → collapse·home·law·merge·sporting·sti·store · ← collapse·home·law·merge·sporting·sti·store
 analysis —
 law goods is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6bacdd11-55d7-8569-99ca-b335142b32a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd5d0dd1-7f22-85ba-a7e7-47e50ccc2d89` · `pnpm readme` · `pnpm computed:check`</sub>

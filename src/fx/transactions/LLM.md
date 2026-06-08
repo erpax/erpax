@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `12/12` · folded `1` · bonds in `22` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounting·catalogue·consolidates·currencies·elevation·entity·founder·headline·homeopathic·id·landmarks·lease·means·partial·period·progression·progression·reconciliations·regions·reviews·reviews·spouse·spouse·taxonomy·tour·tour·tour · ← accounting·catalogue·consolidates·currencies·elevation·entity·founder·headline·homeopathic·id·landmarks·lease·means·partial·period·progression·reconciliations·regions·reviews·spouse·taxonomy·tour
+neighbors → accounting·accounting·accounting·adjustments·elimination·eliminations·entities·entries·entries·entry·evidences·fractal·hedge·horo·identity·law·party·proof·proof·rates·reconciliations·relatedparty·standard·standard·tenants·transaction·transaction·transaction·trinity · ← accounting·adjustments·elimination·eliminations·entities·entries·entry·evidences·fractal·hedge·horo·identity·law·party·proof·rates·reconciliations·relatedparty·standard·tenants·transaction·trinity
 analysis —
 law each FX transaction is one durable conversion or revaluation event whose `exchangeRate` is sourced from the [[currency/rates]] master (never invented) — it is the IAS-21 audit evidence for the FX gain/loss line, distinct from the rate table it reads.
 
 ---
 
-<sub>content-uuid `3086d9b2-2b3d-87f6-835e-e2b7e1083b67` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `03f9f3e1-5cd7-8b33-812d-405f03f8a6f4` · `pnpm readme` · `pnpm computed:check`</sub>

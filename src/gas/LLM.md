@@ -3,15 +3,15 @@
 
 # gas
 
-path `gas` · uuid `9387c1f3-016a-8b68-86d8-91e308266ab8` · diamond `965dd7a3-05db-8970-9895-3e4f9b8bda5a`
+path `gas` · uuid `9387c1f3-016a-8b68-86d8-91e308266ab8` · diamond `fbe80278-8101-8b61-b1e7-6142e5b0b0fc`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·station·sti · exports gas · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·formation·landmarks·memories·notice·stat · ← cohort·formation·landmarks·memories·notice·stat
+neighbors → collapse·law·merge·station·sti · ← collapse·law·merge·station·sti
 analysis —
 law gas is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `392ec784-6d2d-8a8a-a73f-c3d13b9c192f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `73f46a34-c152-8faf-a445-1a4f48efb751` · `pnpm readme` · `pnpm computed:check`</sub>

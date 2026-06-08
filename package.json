@@ -42,6 +42,8 @@
     "claude:plugin": "node scripts/claude-plugin.mjs",
     "matrix:generate": "node src/uuid/matrix/collide.mjs --emit",
     "skill:index": "node src/skill/router/build-index.mjs",
+    "skill:upgrade": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/skill/router/upgrade.ts --sync",
+    "skill:upgrade:check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/skill/router/upgrade.ts --verify",
     "corpus:generate": "pnpm atoms:catalogue && pnpm matrix:generate && pnpm skill:index && pnpm readme",
     "mint:atoms": "node src/generate/mint.mjs",
     "d1:audit": "node src/database/d1-column-audit.mjs",

@@ -6,6 +6,7 @@ import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
 import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from '../src/corpus/index.mts'
+import { pathNavMeta } from '../src/navigation/index.ts'
 
 // ── Heap budget for `docs:build` (the OOM note — MEASURED) ─────────────────
 // `vitepress build` holds every rendered SKILL.md page (≈2906 today) in V8's
@@ -294,7 +295,9 @@ export default defineConfig({
     const rel = pageData.relativePath
     if (rel.endsWith('SKILL.md')) {
       const relg = relationsFromPath(rel)
-      Object.assign(pageData.frontmatter, relg)
+      const atomRel = rel.replace(/\/SKILL\.md$/, '')
+      const { nav, group } = pathNavMeta(atomRel)
+      Object.assign(pageData.frontmatter, relg, { nav, group })
       const route = '/' + rel.replace(/\.md$/, '')
       // prev/next walk the sequence reading-chain (override the alphabetical sidebar)
       // so `next` reads the corpus as the dance.

@@ -3,15 +3,15 @@
 
 # generic
 
-path `generic` · uuid `34e8d2b6-8d43-89da-81e7-5b89f6a07263` · diamond `b71573ac-da63-8ce0-a228-5f92718aee49`
+path `generic` · uuid `34e8d2b6-8d43-89da-81e7-5b89f6a07263` · diamond `5ddac57b-82fe-8fd1-a306-751029ab1a3d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports generic · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law generic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8c4b21a9-1db0-844b-a59f-14f0bc094153` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5597ffd-b36a-818e-861a-4adcf23f6208` · `pnpm readme` · `pnpm computed:check`</sub>

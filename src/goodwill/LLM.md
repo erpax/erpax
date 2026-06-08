@@ -3,15 +3,15 @@
 
 # goodwill
 
-path `goodwill` · uuid `ae4a3523-7f54-8f54-8a0c-5b2e6e103089` · diamond `78c60a0e-c725-8de4-8abf-32f575f5db21`
+path `goodwill` · uuid `ae4a3523-7f54-8f54-8a0c-5b2e6e103089` · diamond `5a8f992f-445d-8207-a8fa-7560ed2c7acf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports consolidations·fair·fixed·impairment·law·legal · exports goodwill · escapes —
-links `7/7` · folded `1` · bonds in `12` out `12`
+links `7/7` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → benefit·cohort·industry·landmarks·memories·occurrence·optician·performing·plannings·sanitization·separation·stat · ← benefit·cohort·industry·landmarks·memories·occurrence·optician·performing·plannings·sanitization·separation·stat
+neighbors → assets·combinations·consolidations·impairment·law·measurements · ← assets·combinations·consolidations·impairment·law·measurements
 analysis —
 law goodwill is the residual — acquisition cost minus the fair value of identifiable net assets — not amortized but [[impairment]]-tested annually, allocated to the cash-generating units that justify it.
 
 ---
 
-<sub>content-uuid `02c9cf98-0a4a-8de5-913b-998575b749ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a36ab66b-65bd-84ea-b90f-e7e0b5592b3f` · `pnpm readme` · `pnpm computed:check`</sub>

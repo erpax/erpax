@@ -3,15 +3,15 @@
 
 # gears
 
-path `gears` · uuid `90f8e21e-4b82-8e6c-8fec-ae9ce0bbf82b` · diamond `bfeebadb-d4c6-80d8-8d5f-983faed92fbd`
+path `gears` · uuid `90f8e21e-4b82-8e6c-8fec-ae9ce0bbf82b` · diamond `c0f316d8-4aff-8ee9-86a2-a59cf01ab1e9`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·forward·law·merge·number·sti · exports gears · escapes —
-links `6/6` · folded `1` · bonds in `53` out `57`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·akashic·allocation·atom·aura·aura·boys·breakfast·catalogue·chat·coach·cohort·comedy·community·contractual·depth·destination·dropoff·electrician·founder·game·gears·gears·import·landmarks·license·locations·marine·marry·mcp·memories·memories·messages·office·parent·policy·process·propose·qualification·quantitative·query·recommendation·rheumatologic·roadmap·rule·satire·saturday·sections·sections·seed·sell·sign·snid·soundtrack·tinid·win·wp · ← akashic·allocation·atom·aura·boys·breakfast·catalogue·chat·coach·cohort·comedy·community·contractual·depth·destination·dropoff·electrician·founder·game·gears·gears·import·landmarks·license·locations·marine·marry·mcp·memories·messages·office·parent·policy·process·propose·qualification·quantitative·query·recommendation·rheumatologic·roadmap·rule·satire·saturday·sections·seed·sell·sign·snid·soundtrack·tinid·win·wp
+neighbors → collapse·forward·law·merge·number·sti · ← collapse·forward·law·merge·number·sti
 analysis —
 law gears is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `04d52c84-832e-870c-b874-ef20bedf8eeb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2396ff7e-cb1a-86b9-8a20-985b3afe97b9` · `pnpm readme` · `pnpm computed:check`</sub>

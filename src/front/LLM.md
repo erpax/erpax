@@ -3,15 +3,15 @@
 
 # front
 
-path `front` · uuid `733daaa1-9184-882e-a871-1ba1e8e5a519` · diamond `ea419870-71fb-8f3b-8d6f-6327fbabecf2`
+path `front` · uuid `733daaa1-9184-882e-a871-1ba1e8e5a519` · diamond `bd8cf263-7c4b-825e-b18c-c8205e21d0ac`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports front · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·entropy·landmarks·memories·sanitization·stat · ← cohort·entropy·landmarks·memories·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law front is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9fffdffe-9557-8442-9b17-e17eb80d4a3a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `faff30c0-de71-8118-8f71-4d6a82c3bb9d` · `pnpm readme` · `pnpm computed:check`</sub>

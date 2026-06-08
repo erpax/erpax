@@ -3,15 +3,15 @@
 
 # funnel
 
-path `funnel` · uuid `5c072a83-cf61-8634-b705-24bc5244868a` · diamond `10b7b805-d98e-8cb7-8877-9b3bfcc72fac`
+path `funnel` · uuid `5c072a83-cf61-8634-b705-24bc5244868a` · diamond `14599b8d-c63b-8860-b848-6bd717ebbab8`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports conversion·customers·forecast·law·leads·opportunities·pipeline · exports funnel · escapes —
-links `7/7` · folded `1` · bonds in `17` out `17`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·availability·clinical·ecosystem·entropy·issn·landmarks·lnid·misconceptions·pixel·place·sanitization·sender·sentiment·standards·throughput·varies · ← action·availability·clinical·ecosystem·entropy·issn·landmarks·lnid·misconceptions·pixel·place·sanitization·sender·sentiment·standards·throughput·varies
+neighbors → conversion·forecast·law·leads·opportunities·orders·pipeline · ← conversion·forecast·law·leads·opportunities·orders·pipeline
 analysis —
 law a funnel measures conversion rate, width, and velocity stage-by-stage along the pipeline (lead → qualified → opportunity → order) — the rate at which prospects pass each stage, not the stages themselves.
 
 ---
 
-<sub>content-uuid `2044eca2-c510-8636-ba74-c9d2358bbc2a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42ff7852-67e7-8e4b-a872-0a63c85035e5` · `pnpm readme` · `pnpm computed:check`</sub>

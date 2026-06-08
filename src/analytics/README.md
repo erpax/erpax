@@ -25,7 +25,7 @@
 
 - partition `analytics` · sub-root `496bc66f-de12-8dce-94f7-0c34d1d7570b`
 - bond degree `80` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `maxtampercost` · `purity` · `relocate` · `typography` · `unavoidable`
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -81,4 +81,4 @@
 
 ---
 
-<sub>content-uuid `fbcfb394-22bb-8392-8e21-315013a006e4` · framed by typography partition `analytics` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `464f6236-f687-8678-98b4-6a84fa9c4e77` · framed by typography partition `analytics` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

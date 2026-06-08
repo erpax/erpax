@@ -25,7 +25,22 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `catches + leaks scanned live from src; coverage = (catches − leaks)/catches, never assumed` · banner
+- `error propagation over swallow/default · no defined fallback · zero-entropy (no hidden state)` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `62e06feb-aea6-89f6-86cd-aec45dd42451` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4970ffe6-6d9a-8630-b23d-95d608bb50f9` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

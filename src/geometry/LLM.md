@@ -3,15 +3,15 @@
 
 # geometry
 
-path `geometry` · uuid `6a3c5ee9-559d-8484-a141-aae257f1e98b` · diamond `11adcf1f-7fb6-8514-929f-68b2fc9f4cb9`
+path `geometry` · uuid `6a3c5ee9-559d-8484-a141-aae257f1e98b` · diamond `e237f98d-5e04-89cb-87da-4c453cc7df5a`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·geospatial·law·merge·sti · exports geometry · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·industry·landmarks·memories·stat·temporal · ← cohort·industry·landmarks·memories·stat·temporal
+neighbors → collapse·geospatial·law·merge·sti · ← collapse·geospatial·law·merge·sti
 analysis —
 law geometry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b5f902f4-580b-8c72-b028-a285c477fdd9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2a26c98f-125c-826f-9c1b-ed5335955ca9` · `pnpm readme` · `pnpm computed:check`</sub>
