@@ -2,6 +2,7 @@
  * cli/gate — authoritative CI/pre-push gate lanes (confirm:full ⊇ gate).
  */
 import { spawnSync } from 'node:child_process'
+import { startProgressHeartbeat } from './progress-heartbeat'
 
 /** Label + shell command. Labels are stable for confirm/matter reporting. */
 export const GATE_LANES: readonly (readonly [string, string])[] = [
@@ -16,9 +17,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   ['test:int', 'pnpm erpax test int'],
 ]
 
-export function runShell(cmd: string, passthrough: readonly string[] = []): number {
+export function runShell(cmd: string, passthrough: readonly string[] = [], heartbeatLabel?: string): number {
   const full = passthrough.length ? `${cmd} ${passthrough.map((a) => JSON.stringify(a)).join(' ')}` : cmd
+  const stop = heartbeatLabel ? startProgressHeartbeat(heartbeatLabel) : () => {}
   const r = spawnSync(full, { shell: true, stdio: 'inherit', cwd: process.cwd() })
+  stop()
   return r.status ?? 1
 }
 
@@ -27,7 +30,7 @@ export function runGate(): number {
   for (let i = 0; i < total; i++) {
     const [label, cmd] = GATE_LANES[i]!
     console.log(`\n▶ gate [${i + 1}/${total}] — ${label}`)
-    const code = runShell(cmd)
+    const code = runShell(cmd, [], `gate — ${label}`)
     if (code !== 0) {
       console.error(`\n✗ gate — failed at lane ${i + 1}/${total}: ${label}`)
       return code

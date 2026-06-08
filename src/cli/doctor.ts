@@ -4,8 +4,10 @@
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { formatCleanSummary } from '@/apply/clean'
+import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
 import { loadEfficiencyStore } from '@/apply/efficiency'
-import { rulesOf } from '@/rules'
+import { computedBaseline } from '@/law/folder/baseline'
+import { strayTsViolations } from '@/rules'
 import {
   ERPAX_SKILL_ENTRY,
   ERPAX_SKILL_ENTRY_CONTENT_UUID,
@@ -25,21 +27,35 @@ export interface DoctorReport {
     readonly exists: boolean
   }
   readonly clean: string | null
+  readonly entropy: {
+    readonly netEb: number
+    readonly freeEnergyBits: number
+    readonly scaleTowardZeroPct: number
+  }
 }
 
 export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
-  const snapshot = rulesOf(cwd, { force: true })
-  const strayAxis = snapshot.axes.find((a) => a.axis === 'stray-ts')
+  const strayCount = strayTsViolations(cwd).length
+  const strayBaseline = computedBaseline('stray-ts', cwd)
   const store = loadEfficiencyStore(cwd)
   const last = store.passes.length ? store.passes[store.passes.length - 1]! : null
   const wire = wireFromRepoUrl('https://github.com/erpax/erpax')
   const entryPath = wire.ok ? wire.entryPoint : ERPAX_SKILL_ENTRY
+  const violationCount = snapshot.axes.reduce((s, a) => s + a.violations, 0)
+  const corpus = deriveCorpusAnalytics(cwd)
+  const lastMetrics = last?.metrics
+  const freeEnergy = freeEnergyFromEntropy({
+    entropyEb: corpus.entropy.netEntropyEb,
+    violationCount,
+    workTamperProduct: lastMetrics?.workTamperProduct ?? 0,
+    totalSealEb: corpus.entropy.totalSealEb,
+  })
 
   return {
     strayTs: {
-      count: strayAxis?.violations ?? snapshot.strayTs.length,
-      baseline: strayAxis?.baseline ?? 0,
-      ok: (strayAxis?.violations ?? 0) <= (strayAxis?.baseline ?? 0),
+      count: strayCount,
+      baseline: strayBaseline,
+      ok: strayCount <= strayBaseline,
     },
     efficiency: {
       passCount: store.passes.length,
@@ -50,6 +66,12 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
       path: entryPath,
       contentUuid: ERPAX_SKILL_ENTRY_CONTENT_UUID,
       exists: existsSync(join(cwd, entryPath)),
+    },
+    clean: formatCleanSummary(cwd),
+    entropy: {
+      netEb: corpus.entropy.netEntropyEb,
+      freeEnergyBits: freeEnergy.freeEnergyBits,
+      scaleTowardZeroPct: freeEnergy.scaleTowardZeroPct,
     },
   }
 }
@@ -71,12 +93,23 @@ export function formatDoctorReport(report: DoctorReport): string {
   lines.push(
     `  entry skill    ${report.entrySkill.path} (${report.entrySkill.contentUuid.slice(0, 8)}…) — ${skillMark}`,
   )
+  if (report.clean) {
+    lines.push(`  clean          ${report.clean}`)
+  } else {
+    lines.push('  clean          no pass yet (run pnpm erpax clean)')
+  }
   lines.push('')
-  lines.push('Next: pnpm erpax rules check · pnpm check')
+  lines.push('Next: pnpm erpax rules check · pnpm erpax clean · pnpm check')
   return lines.join('\n')
 }
 
-export function runDoctor(cwd: string = process.cwd()): number {
+export function runDoctorStalls(): number {
+  console.log(formatStallTable(detectStalledProcesses()))
+  return 0
+}
+
+export function runDoctor(cwd: string = process.cwd(), sub?: string): number {
+  if (sub === 'stalls') return runDoctorStalls()
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
   return report.entrySkill.exists ? 0 : 1

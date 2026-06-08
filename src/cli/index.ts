@@ -34,7 +34,7 @@ export function runCli(argv: readonly string[]): number {
   }
 
   if (rawDomain === 'doctor' || rawDomain === 'status') {
-    return runDoctor()
+    return runDoctor(process.cwd(), action)
   }
 
   const legacy = resolveLegacyColon(rawDomain, action)
@@ -73,5 +73,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 export { GATE_LANES } from './gate'
 export { CLI_REGISTRY, LEGACY_ALIASES, AURA_SCAN_PATH } from './registry'
 export { printHelp, suggestNearestDomain } from './help'
-export { runDoctor, collectDoctorReport } from './doctor'
+export { runDoctor, runDoctorStalls, collectDoctorReport } from './doctor'
 export { runRulesCheck, topFailedAxes, AXIS_FIX_HINTS } from './rules-check'

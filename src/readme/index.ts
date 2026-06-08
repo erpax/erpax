@@ -1327,6 +1327,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const corpus = buildReadmeCorpus(cwd)
   const expectedRoot = generateReadme(cwd, corpus.analytics)
   if (verify) {
+    const stopVerifyHeartbeat =
+      pathFilter || waves ? () => {} : startProgressHeartbeat('readme:check')
     let failed = false
     const rootPath = join(cwd, 'README.md')
     let actualRoot = ''
@@ -1353,6 +1355,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       console.error(`✖ computed:check — ${diamond.drift.length} folder diamond.json drift: ${diamond.drift.slice(0, 5).join(', ')}${diamond.drift.length > 5 ? '…' : ''}`)
       failed = true
     }
+    stopVerifyHeartbeat()
     if (failed) process.exit(1)
     const n = listAtomPaths(cwd).length
     console.log(`✓ readme:check — root + ${n} folder READMEs ≡ regenerated (zero entropy).`)

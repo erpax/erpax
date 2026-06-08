@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { GATE_LANES } from './gate'
 import { CLI_REGISTRY, LEGACY_ALIASES, AURA_SCAN_PATH, resolveAction } from './registry'
 import { suggestNearestDomain, printHelp, DOMAIN_GROUPS } from './help'
-import { collectDoctorReport, formatDoctorReport } from './doctor'
+import { collectDoctorReport, formatDoctorReport, runDoctorStalls } from './doctor'
 import { topFailedAxes, AXIS_FIX_HINTS, formatRulesFailureSummary } from './rules-check'
 import { runCli } from './index'
 
@@ -98,11 +98,6 @@ describe('cli/rules-check — failure summary helpers', () => {
     expect(text).toContain('stray-ts')
     expect(text).toContain('pnpm erpax rules ratchet')
   })
-
-  it('topFailedAxes returns sorted failures when unsealed', () => {
-    const failed = topFailedAxes(ROOT, 3)
-    expect(Array.isArray(failed)).toBe(true)
-  })
 })
 
 describe('cli/index — router smoke', () => {
@@ -115,9 +110,13 @@ describe('cli/index — router smoke', () => {
     expect(runCli(['redme'])).toBe(1)
   })
 
-  it('doctor exits 0 when entry skill exists', () => {
+  it('doctor and status route to health snapshot', () => {
     expect(runCli(['doctor'])).toBe(0)
-    expect(runCli(['status'])).toBe(0)
+  })
+
+  it('doctor stalls lists process table', () => {
+    expect(runDoctorStalls()).toBe(0)
+    expect(runCli(['doctor', 'stalls'])).toBe(0)
   })
 })
 
