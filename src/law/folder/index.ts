@@ -42,103 +42,36 @@
  * @audit the law is computed from the live tree; the ratchet decision is a pure fn (test.ts)
  * @see ../../migrate/quaternary (the file-purity sibling) · ../../convention/import (the ratchet pattern) · ../SKILL.md (the canonical laws)
  */
-import { readdirSync, statSync } from 'node:fs'
-import { join } from 'node:path'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
-
-const SRC = join(process.cwd(), 'src')
-
-/** The required core of every CODE atom — present ⇒ the folder is a unit, not a word. */
-export const TRINITY = ['SKILL.md', 'index.ts', 'test.ts'] as const
-/** A folder is a CODE atom (so the trinity is required) iff it holds matter or its proof. */
-const CODE_MARKERS = ['index.ts', 'test.ts'] as const
-
-/**
- * Matter completeness — empty or incomplete folders are NOT sealed ([[seal]] law).
- *   • empty       — no SKILL.md and no index (not an atom)
- *   • vocabulary  — antimatter-only (SKILL.md, no code barrel)
- *   • code-complete — full trinity with test.ts (not colocated *.test.ts alone)
- *   • incomplete  — partial trinity or stray matter without a nested atom
- */
-export type FolderMatterState = 'empty' | 'vocabulary' | 'code-complete' | 'incomplete'
-
-export function folderMatterState(form: 0 | 1, code: 0 | 1, hasTestTs: boolean): FolderMatterState {
-  if (!form && !code) return 'empty'
-  if (!code) return form ? 'vocabulary' : 'empty'
-  if (form && code && hasTestTs) return 'code-complete'
-  return 'incomplete'
+import { computedBaseline } from './baseline'
+export { TRINITY, ONE_WORD, ALPHANUMERIC_NAME, CODE_MARKERS } from './constants'
+import {
+  folderViolations,
+  alphanumericNameViolations,
+  alphanumericFileStem,
+  isAlphanumericStem,
+  type NameViolation,
+  type TrinityViolation,
+  type FolderViolations,
+  type AlphanumericNameViolation,
+} from './scan'
+export {
+  folderViolations,
+  alphanumericNameViolations,
+  alphanumericFileStem,
+  isAlphanumericStem,
+  type NameViolation,
+  type TrinityViolation,
+  type FolderViolations,
+  type AlphanumericNameViolation,
 }
 
-/** True when the folder holds the matter required before purity/seal axes apply. */
-export function folderMatterComplete(state: FolderMatterState): boolean {
-  return state === 'vocabulary' || state === 'code-complete'
-}
-/** One generic lowercase word — the only legal atom-folder name. */
-export const ONE_WORD = /^[a-z][a-z0-9]*$/
-/** Structural segments whose names are NOT atom names (exempt from the one-word rule). */
-const isFrameworkSegment = (name: string): boolean =>
-  /^\([^)]*\)$/.test(name) || // Next.js route group   (frontend)
-  /^\[.*\]$/.test(name) || // dynamic route segment    [slug] [...rest]
-  name.startsWith('@') || // parallel-route slot        @modal
-  /^[0-9]+$/.test(name) // numeric standard id          iso/4217 · en/16931
-/** Generated / framework trees: names are URLs or disposable output — not atoms. */
-const SKIP_TREES = new Set(['app', 'migrations'])
-
-const isDir = (p: string): boolean => {
-  try {
-    return statSync(p).isDirectory()
-  } catch {
-    return false
-  }
-}
-
-export interface NameViolation {
-  readonly folder: string
-  readonly law: 'one-word'
-}
-export interface TrinityViolation {
-  readonly folder: string
-  readonly missing: readonly string[]
-  readonly law: 'trinity'
-}
-export interface FolderViolations {
-  readonly name: NameViolation[]
-  readonly trinity: TrinityViolation[]
-  readonly total: number
-}
-
-/** Compute every folder-shape violation in the live src tree — the single source of truth. */
-export function folderViolations(root: string = SRC): FolderViolations {
-  const name: NameViolation[] = []
-  const trinity: TrinityViolation[] = []
-  const walk = (dir: string, rel: string): void => {
-    let entries: string[]
-    try {
-      entries = readdirSync(dir).sort()
-    } catch {
-      return
-    }
-    const files = new Set(entries.filter((e) => !isDir(join(dir, e))))
-    // TRINITY: once a folder holds matter (or its proof) it must hold the whole trinity.
-    if (CODE_MARKERS.some((m) => files.has(m))) {
-      const missing = TRINITY.filter((f) => !files.has(f))
-      if (missing.length) trinity.push({ folder: rel || '.', missing, law: 'trinity' })
-    }
-    for (const e of entries) {
-      if (e.startsWith('.') || e === 'node_modules') continue
-      const p = join(dir, e)
-      if (!isDir(p)) continue
-      if (!rel && SKIP_TREES.has(e)) continue // skip generated/framework trees at the root
-      const childRel = rel ? rel + '/' + e : e
-      // NAME: every atom folder is one generic word (structural segments exempt).
-      if (!isFrameworkSegment(e) && !ONE_WORD.test(e)) name.push({ folder: childRel, law: 'one-word' })
-      walk(p, childRel)
-    }
-  }
-  walk(root, '')
-  return { name, trinity, total: name.length + trinity.length }
-}
+export {
+  folderMatterState,
+  folderMatterComplete,
+  type FolderMatterState,
+} from './matter'
 
 /**
  * The committed ceilings — split into TWO INDEPENDENT GUARDIANS, never one sum.
@@ -169,32 +102,12 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * trading/test.ts closed the parent trading barrel trinity gap. RATCHET THIS
  * DOWN further as folders are fixed.
  */
-/** @deprecated summed ceiling — use the split guardians below */
-export const FOLDER_LAW_BASELINE = 257
-
-/** NAME guardian ceiling — one-word atom folders (live 46, 2026-06-08). */
-export const NAME_BASELINE = 46
-
-/** TRINITY guardian ceiling — code folders missing SKILL/index/test (live 211, 2026-06-08). */
-export const TRINITY_BASELINE = 211
-
-export interface RatchetVerdict {
-  readonly ok: boolean
-  readonly violations: number
-  readonly baseline: number
-  readonly reason: string
-}
-
-/**
- * THE GUARDIANS — the NAME law and the TRINITY law as two independent [[guardian]]s
- * crossed into one [[seal]]. The gate is sealed only when BOTH hold; a rise in
- * either reddens it on its own, so a naming violation can no longer hide behind a
- * trinity fix (or vice-versa). The decision is the pure `guardian`/`seal` primitives
- * (no fs / process here) ⇒ regression-locked by test.ts; fail-closed by construction.
- */
 export function folderGuardians(
-  v: FolderViolations,
-  baselines: { name: number; trinity: number } = { name: NAME_BASELINE, trinity: TRINITY_BASELINE },
+  v: import('./scan').FolderViolations,
+  baselines: { name: number; trinity: number } = {
+    name: computedBaseline('folder-name'),
+    trinity: computedBaseline('folder-trinity'),
+  },
 ): SealVerdict {
   return seal([
     guardian({ axis: 'name', violations: v.name.length, baseline: baselines.name }),
@@ -202,10 +115,46 @@ export function folderGuardians(
   ])
 }
 
+export {
+  computedBaseline,
+  loadRatchet,
+  clearRatchetCache,
+  BASELINE_CONST_TO_AXIS,
+  type RatchetAxis,
+  type RatchetSnapshot,
+} from './baseline'
+
+export {
+  hasWordCode,
+  hasWordFolderTrinity,
+  wordFolderViolations,
+  wordDiamondViolations,
+  wordDiamondFixSuggestion,
+  wordCodeStatus,
+  resolveWordPath,
+  matterForWord,
+  deadHubWikilinks,
+  applyTopHubWordPivots,
+  writeWordPivot,
+  pivotIndexTsWithReexport,
+  type WordFolderAudit,
+  type WordFolderViolation,
+  type WordDiamondAudit,
+  type WordDiamondViolation,
+  type MatterPrescription,
+  type MatterAction,
+  type WordCodeStatus,
+  type HubDeadWikilink,
+} from './word'
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const v = folderViolations()
+  const alpha = alphanumericNameViolations()
   const check = process.argv.includes('--check')
   console.log(`folder law: ${v.total} violation(s) — ${v.name.length} name (non-one-word) · ${v.trinity.length} trinity (code folder missing SKILL/index/test)`)
+  console.log(
+    `alphanumeric-name: ${alpha.length} violation(s) (≤${computedBaseline('alphanumeric-name')}) — ${alpha.filter((a) => a.kind === 'folder').length} folder · ${alpha.filter((a) => a.kind === 'file').length} file`,
+  )
   for (const n of v.name.slice(0, 40)) console.log(`   name     ${n.folder}`)
   if (v.name.length > 40) console.log(`   … ${v.name.length - 40} more name`)
   for (const t of v.trinity.slice(0, 40)) console.log(`   trinity  ${t.folder} → missing ${t.missing.join('+')}`)

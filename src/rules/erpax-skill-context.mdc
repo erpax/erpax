@@ -1,0 +1,19 @@
+---
+description: When opening or editing any erpax src/ file, realise required skills without loading skills.index
+globs:
+  - src/**
+alwaysApply: false
+---
+
+# erpax skill realisation
+
+On first touch of any file under `src/`:
+
+1. Call `realiseSkillsForPath(path)` from `@/agent/skill-context` (or use `skillContext` returned by `strictApplyDispatch`).
+2. Read the returned `markdown` payload — ordered ancestors · self · bonds · hub · imports, each with quantum block + eb + rules snapshot.
+3. Never import or load `src/skill/router/skills.index.ts` (77MB bundle). Use `loadSkillByAtomPath` / lazy disk reads only.
+4. For import tracing: `skillsForImport('@/foo')` resolves 1-hop atom paths via barrel/index-face rules.
+
+Example: `src/invoices/hooks/deriveNumber.ts` → focal `invoices/hooks`, bearing `invoices`, hub `invoices`, bonds from invoices SKILL + matrix neighbors.
+
+Cap: `MAX_AGENT_SKILL_CONTEXT_BYTES` (50KB). Atom count capped at horo wave depth via `agentCostPolicy`.

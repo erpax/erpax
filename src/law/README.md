@@ -21,14 +21,28 @@
 
 ## typography graph
 
-- partition `law` · sub-root `d4d619f5-9b94-8720-9479-28e77cc05830`
-- bond degree `8315` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `law` · sub-root `49ff6485-6475-8a8e-ad5e-aa8ad78a1515`
+- bond degree `8325` · analysis neighbors `aura`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `8325` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `fa10b34f-6b3f-86fc-a347-2713251d2798`
-- bonds in `2791` · out `2678`
+- bonds in `2794` · out `2680`
 - trinity form·code·proof `1`·`0`·`0`
 - links `282` / `282`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `66a81163-958a-8fdd-8b17-466b93111977` · framed by typography partition `law` bonds `8315` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec2d0930-4960-8140-a55b-ccf0a9f91dab` · framed by typography partition `law` bonds `8325` · `pnpm readme` · `pnpm readme:check`</sub>

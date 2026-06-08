@@ -14,7 +14,6 @@ import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
-import { emitRatchet as emitRatchetArtifact } from '@/law/folder/emit-ratchet'
 import { matrixCrackViolations } from '@/matrix'
 import {
   computeRulesOf,
@@ -262,7 +261,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const emitRatchet = process.argv.includes('--emit-ratchet')
   const accountingOnly = process.argv.includes('--accounting-only')
   if (emitRatchet) {
-    emitRatchetArtifact()
+    // Delegate to emit-ratchet entry — avoids top-level await in this barrel.
+    const { execSync } = require('node:child_process') as typeof import('node:child_process')
+    const extra = process.argv.includes('--bootstrap') ? ' --bootstrap' : ''
+    execSync(`pnpm rules:ratchet${extra}`, { stdio: 'inherit', cwd: process.cwd() })
     process.exit(0)
   }
   const stopHeartbeat = check ? startProgressHeartbeat('rules:check') : () => {}

@@ -3,10 +3,10 @@
 
 # folder
 
-path `law/folder` · uuid `a8ed3933-f54f-80bb-8576-ded34bee5263` · diamond `9ff5989a-751c-8700-8b01-e4f0c822f951`
+path `law/folder` · uuid `a8ed3933-f54f-80bb-8576-ded34bee5263` · diamond `cb6cdb02-a5e4-825c-af16-957d0482e79b`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
-imports @/guardian·@/seal · exports const·function·interface · escapes —
-links `12/12` · folded `1` · bonds in `10` out `10`
+imports @/guardian·@/seal · exports FolderMatterState·const·function·interface · escapes —
+links `13/13` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
 neighbors → collapse·confirm·convention·cost·law·merge·purity·quaternary·standards·test · ← collapse·confirm·convention·cost·law·merge·purity·quaternary·standards·test
 analysis —
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `61f8ac5d-f68c-8f8f-8e93-da48ccb4be53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87f2be2e-ffc7-8ce6-80e0-a29facb3725e` · `pnpm readme` · `pnpm computed:check`</sub>

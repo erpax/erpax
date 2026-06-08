@@ -23,16 +23,31 @@
 
 ## typography graph
 
-- partition `law` · sub-root `d4d619f5-9b94-8720-9479-28e77cc05830`
-- bond degree `31` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `law` · sub-root `49ff6485-6475-8a8e-ad5e-aa8ad78a1515`
+- bond degree `33` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability` · banner
+- `the law is computed from the live tree; the ratchet decision is a pure fn (test.ts)` · banner
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `a8ed3933-f54f-80bb-8576-ded34bee5263`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
-- links `12` / `12`
+- links `13` / `13`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `13195cf2-4864-811b-bfa9-4614e576f05a` · framed by typography partition `law` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c7e8f27-a3d1-8396-b185-576949ef3494` · framed by typography partition `law` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

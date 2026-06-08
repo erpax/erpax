@@ -6,9 +6,11 @@ import {
   folderGuardians,
   folderMatterState,
   folderMatterComplete,
-  NAME_BASELINE,
-  TRINITY_BASELINE,
+  computedBaseline,
   ONE_WORD,
+  alphanumericNameViolations,
+  alphanumericFileStem,
+  isAlphanumericStem,
 } from '@/law/folder'
 
 // The folder-shape law (./index.ts), computed from the live tree. The ratchet
@@ -22,14 +24,14 @@ describe('folder: the folder-shape law (computed)', () => {
     expect(Array.isArray(v.name)).toBe(true)
     expect(Array.isArray(v.trinity)).toBe(true)
     expect(v.total).toBe(v.name.length + v.trinity.length)
-    console.log(`folder law: ${v.name.length} name (≤${NAME_BASELINE}) · ${v.trinity.length} trinity (≤${TRINITY_BASELINE})`)
+    console.log(`folder law: ${v.name.length} name (≤${computedBaseline('folder-name')}) · ${v.trinity.length} trinity (≤${computedBaseline('folder-trinity')})`)
   })
 
   // THE GUARDIANS: name and trinity are TWO independent ratchets — the gate is green
   // only when BOTH hold. Adding any non-one-word folder reddens the NAME guardian on
   // its own (it can no longer hide behind a trinity fix); a code folder missing its
   // SKILL.md/index.ts/test.ts reddens the TRINITY guardian. Either rise turns CI red.
-  it('holds both guardians — name ≤ NAME_BASELINE AND trinity ≤ TRINITY_BASELINE', () => {
+  it('holds both guardians — name and trinity at ratchet baselines', () => {
     const verdict = folderGuardians(v)
     expect(verdict.guardians.every((g) => g.ok)).toBe(true)
     expect(verdict.sealed).toBe(true)
@@ -38,9 +40,11 @@ describe('folder: the folder-shape law (computed)', () => {
   // A naming violation can no longer be masked: even with trinity slack, a NAME rise
   // unseals the verdict on its own (the whole point of the user's command).
   it('catches a naming violation independently of trinity slack', () => {
+    const nameBaseline = computedBaseline('folder-name')
+    const trinityBaseline = computedBaseline('folder-trinity')
     const masked = folderGuardians(
-      { name: new Array(NAME_BASELINE + 1).fill({ folder: 'x-y', law: 'one-word' }), trinity: [], total: NAME_BASELINE + 1 },
-      { name: NAME_BASELINE, trinity: TRINITY_BASELINE },
+      { name: new Array(nameBaseline + 1).fill({ folder: 'x-y', law: 'one-word' }), trinity: [], total: nameBaseline + 1 },
+      { name: nameBaseline, trinity: trinityBaseline },
     )
     expect(masked.guardians.find((g) => g.axis === 'name')?.ok).toBe(false)
     expect(masked.sealed).toBe(false)
@@ -97,5 +101,24 @@ describe('folder: the folder-shape law (computed)', () => {
     expect(ONE_WORD.test('trading-apis')).toBe(false)
     expect(ONE_WORD.test('appCollections')).toBe(false)
     expect(ONE_WORD.test('account.service')).toBe(false)
+  })
+
+  it('ALPHANUMERIC_NAME — folder segments and file stems are [a-z0-9]+ only', () => {
+    expect(isAlphanumericStem('coa')).toBe(true)
+    expect(isAlphanumericStem('debit')).toBe(true)
+    expect(isAlphanumericStem('field-visibility')).toBe(false)
+    expect(isAlphanumericStem('reports.service')).toBe(false)
+    expect(alphanumericFileStem('margin.test.ts')).toBe('margin')
+    expect(alphanumericFileStem('foo-bar.test.ts')).toBe('foo-bar')
+  })
+
+  it('alphanumeric-name guardian holds at committed baseline', () => {
+    const alpha = alphanumericNameViolations()
+    expect(alpha.length).toBeLessThanOrEqual(computedBaseline('alphanumeric-name'))
+    expect(alpha.some((v) => v.path === 'accounting/debit-credit.ts')).toBe(false)
+    expect(alpha.some((v) => v.path === 'admin/ui/field-visibility.ts')).toBe(false)
+    console.log(
+      `alphanumeric-name: ${alpha.length} (≤${computedBaseline('alphanumeric-name')}) — ${alpha.filter((a) => a.kind === 'folder').length} folder · ${alpha.filter((a) => a.kind === 'file').length} file`,
+    )
   })
 })
