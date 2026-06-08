@@ -71,7 +71,7 @@ export function publishDirection(
   const ch = channelOf(path)
   const issuedAt = payload.issuedAt ?? new Date().toISOString()
   const generation = ch.generation + 1
-  const body: DirectionPayload = { ...payload, issuedAt }
+  const body = { ...payload, issuedAt } as DirectionPayload
   const seal = computeContentUuid(
     { id: DIRECTION_COLLAPSE_EVENT, path, payload: body, generation },
     path,

@@ -316,6 +316,7 @@ export function quantumBlockAsEnvironment(block: QuantumThinkingBlock): QuantumE
       pathFollow: block.seal.pathFollow,
       canonicalRecord: block.seal.pathFollow,
       analogResults: block.atomPath.includes('/emr') || block.atomPath.includes('/device'),
+      speechResults: false,
       signatures: null,
       contentUuid: block.seal.contentUuids[0] ?? null,
     },

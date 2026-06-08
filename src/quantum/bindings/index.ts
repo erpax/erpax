@@ -29,7 +29,7 @@ export function quantumModeDefault(): boolean {
 export function bindingInventory(cwd = process.cwd()): readonly string[] {
   const text = readFileSync(join(cwd, 'wrangler.jsonc'), 'utf8')
   return parseWranglerBindings(text)
-    .map((e) => e.name)
+    .map((e) => e.bindingName)
     .sort()
 }
 

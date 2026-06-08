@@ -13,7 +13,7 @@ describe('quantum/bindings — attach-all inventory from live wrangler', () => {
   it('bindingInventory matches parseWranglerBindings names', () => {
     const text = readFileSync(join(process.cwd(), 'wrangler.jsonc'), 'utf8')
     const expected = parseWranglerBindings(text)
-      .map((e) => e.name)
+      .map((e) => e.bindingName)
       .sort()
     expect(bindingInventory()).toEqual(expected)
     expect(bindingInventory().length).toBeGreaterThan(0)

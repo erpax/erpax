@@ -21,9 +21,9 @@ describe('quantum — Radix dimension panel mount', () => {
     )
     const snap = buildDimensionSnapshot()
     for (const axis of snap.axes) {
-      expect(screen.getByText(axis.dimension)).toBeInTheDocument()
+      expect(screen.getByText(axis.dimension)).toBeTruthy()
     }
-    expect(screen.getByText(/Quantum dimensions/)).toBeInTheDocument()
+    expect(screen.getByText(/Quantum dimensions/)).toBeTruthy()
   })
 
   it('provider snapshot fingerprint is stable across refresh', () => {

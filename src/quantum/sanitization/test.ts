@@ -28,7 +28,7 @@ describe('quantum/sanitization — input boundary', () => {
     const args = {
       raw: { atomPath: 'merge', kind: 'fact' },
       actor: 'agent:test',
-      head: null as const,
+      head: null,
       timestampIso: '2026-06-08T00:00:00.000Z',
     }
     const a = scrubInput(args)

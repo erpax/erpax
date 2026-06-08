@@ -363,7 +363,7 @@ const abortIfStale = (
   phase: string,
 ): { aborted: true; phase: string; reason: string } | null => {
   if (!isDirectionStale(token)) return null
-  return { aborted: true, phase, reason: 'direction stale — parent redirected mid-cycle' }
+  return { phase, reason: 'direction stale — parent redirected mid-cycle' }
 }
 
 /** One automated pass — abortable on direction stale at every phase boundary. */
@@ -405,7 +405,7 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
 
   if (performance.now() - started > AUTOMATE_CYCLE_BUDGET_MS) {
     stopHeartbeat()
-    return abortedResult(cwd, inventory, { aborted: true, phase, reason: 'cycle budget exceeded' }, started, dryRun, priorManifest)
+    return abortedResult(cwd, inventory, { phase, reason: 'cycle budget exceeded' }, started, dryRun, priorManifest)
   }
 
   phase = 'dry-clean'
@@ -422,7 +422,7 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
 
   if (clean?.aborted) {
     stopHeartbeat()
-    return abortedResult(cwd, inventory, { aborted: true, phase, reason: clean.abortReason ?? 'clean aborted' }, started, dryRun, priorManifest, clean, rulesLightScan(cwd))
+    return abortedResult(cwd, inventory, { phase, reason: clean.abortReason ?? 'clean aborted' }, started, dryRun, priorManifest, clean, rulesLightScan(cwd))
   }
 
   stale = abortIfStale(token, phase)

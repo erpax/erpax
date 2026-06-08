@@ -64,7 +64,7 @@ export const QuantumDimensionsProvider: React.FC<QuantumDimensionsProviderProps>
   emitOnChange = true,
 }) => {
   const [snapshot, setSnapshot] = useState<DimensionSnapshot>(() => buildDimensionSnapshot())
-  const priorSeals = useRef<Readonly<Record<string, string>>>({})
+  const priorSeals = useRef<Record<string, string>>({})
 
   const refresh = useCallback(() => {
     const next = buildDimensionSnapshot()
