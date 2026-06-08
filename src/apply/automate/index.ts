@@ -678,6 +678,9 @@ export function maxEfficiencyLoop(opts: MaxEfficiencyLoopOpts = {}): void {
   })
 }
 
+const fmtMetric = (n: number | null | undefined, digits = 1): string =>
+  n != null && Number.isFinite(n) ? n.toFixed(digits) : '∞'
+
 export function formatAutomateSummaryLine(result: AutomateCycleResult): string {
   if (result.aborted) {
     return `⏸ automate:${result.phase} ABORTED — ${result.abortReason} (${result.durationMs}ms)`
@@ -689,8 +692,8 @@ export function formatAutomateSummaryLine(result: AutomateCycleResult): string {
     `${status} automate:${result.manifest.cycleId}`,
     `atoms=${result.inventory.session.totalAtoms}`,
     `trinity=${result.inventory.session.trinityPct.toFixed(1)}%`,
-    `F=${m.freeEnergyBits.toFixed(1)}`,
-    `w×t=${t.product.toFixed(1)}`,
+    `F=${fmtMetric(m.freeEnergyBits)}`,
+    `w×t=${fmtMetric(t.product)}`,
     `tamper²=${Number.isFinite(t.tamperCostLog2) ? t.tamperCostLog2.toFixed(1) : '∞'}`,
     `${result.durationMs}ms`,
   ]
@@ -706,8 +709,8 @@ export function formatAutomateSummary(cwd: string = process.cwd()): string | nul
   const parts = [
     `automate:${m.cycleId}`,
     `trinity=${m.inventory.trinityPct}%`,
-    `F=${m.freeEnergyBits.toFixed(1)}`,
-    `w×t=${m.tamper.product.toFixed(1)}`,
+    `F=${fmtMetric(m.freeEnergyBits)}`,
+    `w×t=${fmtMetric(m.tamper.product)}`,
     m.ratchetOk ? 'ratchet✓' : 'ratchet✖',
     m.dryRun ? 'dry-run' : 'applied',
   ]
