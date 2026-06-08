@@ -2,7 +2,7 @@
 
 # commitments
 
-> atom `commitments` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `commitments` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `commitments` · sub-root `98330a8e-5a19-8bf9-933b-24c323542f1f`
 - bond degree `31` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -48,7 +48,7 @@
 
 ## analytics
 
-- bond degree `31` · sealed `1` · horo `1`
+- bond degree `31` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `12`
 
@@ -62,8 +62,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `90aca873-8868-8ad1-92d1-c1b3ed72f4ba` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d84d9d26-1b55-8107-ab0a-c6ca4eb240ae` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

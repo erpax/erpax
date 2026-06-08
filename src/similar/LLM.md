@@ -3,15 +3,15 @@
 
 # similar
 
-path `similar` · uuid `7cc4380f-6ae5-8e92-9ff0-0325dc2c1f06` · diamond `a08cfa9d-0cbf-8807-99d0-f5431257ea6f`
+path `similar` · uuid `7cc4380f-6ae5-8e92-9ff0-0325dc2c1f06` · diamond `0a680c9c-50ef-8653-8cee-fd9c85eb2ecb`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports similar · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·command·endpoints·features·landmarks·salon · ← activities·command·endpoints·features·landmarks·salon
+neighbors → coil·entropy·fractal·gate·holographic·horo·law·merge·rodin·self·sequence·similar·thing·whole · ← coil·entropy·fractal·gate·holographic·horo·law·merge·rodin·self·sequence·similar·thing·whole
 analysis —
 law similar is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ea6a4920-4763-84de-9c7c-dcf0c010add4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f974454-b179-801b-8592-8c78809c2f3d` · `pnpm readme` · `pnpm computed:check`</sub>

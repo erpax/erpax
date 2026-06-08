@@ -3,15 +3,15 @@
 
 # seating
 
-path `seating` · uuid `0de3c59d-2060-8b6a-b967-c7e1b654cd97` · diamond `b21403bb-c269-8bcf-aef9-a5dae433907b`
+path `seating` · uuid `0de3c59d-2060-8b6a-b967-c7e1b654cd97` · diamond `43d8e572-8aef-8f97-bc63-81fdac7cfab5`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports capacity·collapse·law·merge·sti·type·vehicle · exports seating · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → capacity·collapse·law·merge·sti·type·vehicle · ← capacity·collapse·law·merge·sti·type·vehicle
 analysis —
 law seating is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e6de969e-0f7c-8abc-92f0-1944749f48de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ff5431a-f311-89fb-bfe0-daca7ebb375d` · `pnpm readme` · `pnpm computed:check`</sub>

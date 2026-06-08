@@ -3,15 +3,15 @@
 
 # singularity
 
-path `singularity` · uuid `501e3aaf-f3d8-80a5-b18c-1716c46b7f50` · diamond `57f72ebd-0c28-8be2-a73b-0b5b83a82d39`
+path `singularity` · uuid `501e3aaf-f3d8-80a5-b18c-1716c46b7f50` · diamond `3f23be97-d954-8015-b7e5-e9beaaf8f7c2`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/gravity·@/quantum · exports const·interface · escapes —
-links `28/28` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `28/28` · folded `1` · bonds in `17` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → aura·collapse·cost·development·dry·entanglement·fusion·gravity·law·math·matrix·merge·quantum·reactor·vocabulary·void · ← aura·collapse·cost·development·dry·entanglement·entanglement·fusion·gravity·law·math·matrix·merge·quantum·reactor·vocabulary·void
 analysis —
 law the singularity is the [[gravity]] well computed on the live [[matrix]] — the maximally-entangled (max-in-degree) atom is a trapped surface everything falls toward ([[merge]]/[[fusion]] of duplicates), where the tamper-[[cost]]→∞ event horizon means it cannot be forged from outside: perfect [[dry]], all mass at one center.
 
 ---
 
-<sub>content-uuid `90d0fad7-cfa6-84da-92ae-7500be8c90d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d67beb64-13f3-835c-a3a5-0aeaf1bf812d` · `pnpm readme` · `pnpm computed:check`</sub>

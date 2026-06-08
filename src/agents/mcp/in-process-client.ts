@@ -14,6 +14,7 @@
 import type { PayloadRequest } from 'payload'
 import type { AgentLawState } from '@/agent/types'
 import { assertStrictMcpCall, defaultAgentLawState } from '@/agent/strict-apply'
+import { actorFromRequest } from '@/access'
 import type { ErpaxMcpTool } from './tool-defs'
 
 export interface McpToolDescriptor {
@@ -43,7 +44,7 @@ export function createInProcessMcpClient(
     async callTool(name, args) {
       const tool = byName.get(name)
       if (!tool) throw new Error(`unknown MCP tool: ${name}`)
-      assertStrictMcpCall(law, name, args)
+      assertStrictMcpCall(law, name, args, undefined, { actor: actorFromRequest(req) })
       const out = await tool.handler(args, req)
       return out.content.map((c) => c.text).join('\n')
     },

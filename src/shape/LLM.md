@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports shape · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law shape is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9f287de2-4afd-806d-9fce-7339015a9fd8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a116f537-8bf9-8c44-9ad3-a50acc72dc65` · `pnpm readme` · `pnpm computed:check`</sub>

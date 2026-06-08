@@ -3,15 +3,15 @@
 
 # shipped
 
-path `shipped` · uuid `3eeef7dc-de81-88fa-997d-1a5c0c3b9d7d` · diamond `5a16ff83-c95d-81e0-91ed-93f8c64c6b15`
+path `shipped` · uuid `3eeef7dc-de81-88fa-997d-1a5c0c3b9d7d` · diamond `4c53c564-4b68-8a1d-a8c4-f37c320b8e49`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·item·law·merge·sti · exports shipped · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calculator·cohort·despatch·dissolution·landmarks·measurement·memories·scorecards·stat·supto · ← calculator·cohort·despatch·dissolution·landmarks·measurement·memories·scorecards·stat·supto
+neighbors → collapse·item·law·merge·sti · ← collapse·item·law·merge·sti
 analysis —
 law shipped is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `192757c3-2536-895a-aec3-974bf22ba9b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d9ecca9-e138-846d-9d95-c23193c693ec` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·size·sti · exports serving · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closing·cohort·landmarks·memories·stat · ← closing·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·size·sti · ← collapse·law·merge·size·sti
 analysis —
 law serving is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `392d0db5-d934-8559-a512-c202ec686ce6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `56b5a2de-a94d-8418-80bc-5f9bd22d5e9a` · `pnpm readme` · `pnpm computed:check`</sub>

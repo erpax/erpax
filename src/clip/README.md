@@ -23,7 +23,7 @@
 
 - partition `clip` · sub-root `b9f21fe7-42d9-8095-85c2-55059028dc27`
 - bond degree `26` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `79bf1b12-f512-8e17-8bff-69625410ffb2` · framed by typography partition `clip` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a5131ac2-bb94-82b0-aa95-32c4e5786317` · framed by typography partition `clip` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

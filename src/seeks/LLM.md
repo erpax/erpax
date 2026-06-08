@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports seeks · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·thing · ← law·thing
 analysis —
 law seeks is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5b199382-6d14-8320-923e-90072c0e0241` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d22e68c-fe94-8f71-9392-3941c0dfa165` · `pnpm readme` · `pnpm computed:check`</sub>

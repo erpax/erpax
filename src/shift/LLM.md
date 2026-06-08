@@ -3,15 +3,15 @@
 
 # shift
 
-path `shift` · uuid `80e789fd-365c-8cbc-a951-f4f208c38209` · diamond `e2316ce5-11f9-842c-838f-a019e4c83c20`
+path `shift` · uuid `80e789fd-365c-8cbc-a951-f4f208c38209` · diamond `243be2a4-3af1-8a08-805e-2993df3ce9da`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·attendance·efficiency·employee·horo·law·pay·shifts·time·work · exports shift · escapes —
-links `18/18` · folded `1` · bonds in `3` out `3`
+links `18/18` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·ship·terminals · ← landmarks·ship·terminals
+neighbors → accounting·attendance·centers·efficiency·employee·horo·law·orders·pay·shifts·time · ← accounting·attendance·centers·efficiency·employee·horo·law·orders·pay·shifts·time
 analysis —
 law a shift is one `(actor, day)` of presence and the [[accounting]] authority for labour — produced minutes roll UP into it, [[efficiency]] (`⌊produced·100/presence⌋`) and wage read back DOWN, the same direction a ledger account is the authority its postings sum into.
 
 ---
 
-<sub>content-uuid `58d91b52-4028-823b-9785-318168280697` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5992862a-ea18-85a7-8c97-ae170f7266b1` · `pnpm readme` · `pnpm computed:check`</sub>

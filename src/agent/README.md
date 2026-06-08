@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
-- bond degree `251` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `agent` · sub-root `6c7e3159-1d51-809d-a4e0-83db8d6c35d5`
+- bond degree `254` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `comms` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
+- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
 
 ## [[cloudflare]] bindings
 
@@ -57,7 +57,7 @@
 
 ## analytics
 
-- bond degree `251` · sealed `0` · horo `8`
+- bond degree `254` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `21`
 
@@ -66,7 +66,7 @@
 - uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09`
 - bonds in `69` · out `69`
 - trinity form·code·proof `1`·`1`·`1`
-- links `60` / `60`
+- links `63` / `63`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -75,4 +75,4 @@
 
 ---
 
-<sub>content-uuid `a3c448ba-88d9-87ca-97bd-25e367151e2e` · framed by typography partition `agent` bonds `251` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5cfc9751-1d62-8ca2-b5bd-6bfb43ebffdd` · framed by typography partition `agent` bonds `254` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # service
 
-path `service` · uuid `1f79dddc-6a94-8fea-ba0a-43ed98cd85a4` · diamond `94efc94e-1c20-89a2-a283-647120ef48bd`
+path `service` · uuid `1f79dddc-6a94-8fea-ba0a-43ed98cd85a4` · diamond `369dfecf-7197-8928-9ae4-c9a9319d2e70`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports accounting·address·area·audience·available·broadcast·cable·channel·conversion·currency·drive·emergency·financial·food·government·has·interaction·law·legal·location·meal·number·operator·output·parent·payment·period·phone·postal·professional·provides·radio·satellite·shipping·sms·taxi·terms·through·tier·type·url · exports service · escapes —
-links `41/41` · folded `1` · bonds in `1` out `1`
+links `41/41` · folded `1` · bonds in `41` out `41`
 faces worker·plugin·pwa `0·0·0`
-neighbors → contained · ← contained
+neighbors → accounting·address·area·audience·available·broadcast·cable·channel·conversion·currency·drive·emergency·financial·food·government·has·interaction·law·legal·location·meal·number·operator·output·parent·payment·period·phone·postal·professional·provides·radio·satellite·shipping·sms·taxi·terms·through·tier·type·url · ← accounting·address·area·audience·available·broadcast·cable·channel·conversion·currency·drive·emergency·financial·food·government·has·interaction·law·legal·location·meal·number·operator·output·parent·payment·period·phone·postal·professional·provides·radio·satellite·shipping·sms·taxi·terms·through·tier·type·url
 analysis —
 law service is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ca801d42-7131-8792-9311-77f502e8fd2f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b3ac30d-bec7-8983-ade2-826f59a4389e` · `pnpm readme` · `pnpm computed:check`</sub>

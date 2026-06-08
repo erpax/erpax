@@ -3,15 +3,15 @@
 
 # see
 
-path `see` · uuid `768eed87-201e-8420-86c6-aacf3bbe222d` · diamond `7c5fa1b9-72fa-8db5-9ab4-7edea0c7f388`
+path `see` · uuid `768eed87-201e-8420-86c6-aacf3bbe222d` · diamond `33c1b618-a05e-8ecc-abd3-08c62ae67e95`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports see · escapes —
-links `4/4` · folded `1` · bonds in `19` out `19`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·all·allocation·binding·corrects·dropoff·founder·high·hobby·id·landmarks·marine·memories·misconceptions·pollination·progression·sections·sell·sign · ← akashic·all·allocation·binding·corrects·dropoff·founder·high·hobby·id·landmarks·marine·memories·misconceptions·pollination·progression·sections·sell·sign
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law see is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a18225df-0c96-8ce6-9257-20a8b6d8926b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0634331-d440-8e3f-9b92-23a5c930f3e9` · `pnpm readme` · `pnpm computed:check`</sub>

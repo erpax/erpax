@@ -3,15 +3,15 @@
 
 # sha256
 
-path `sha256` · uuid `d3fb7754-5b83-8bed-b086-4c6df9f215f7` · diamond `96062a0f-ae10-8c83-ba6c-9ff53cca23dd`
+path `sha256` · uuid `d3fb7754-5b83-8bed-b086-4c6df9f215f7` · diamond `23c9df8d-51db-8ff8-8660-e964254bb7f4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports sha256 · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·issn·landmarks·memories·stat · ← cohort·issn·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law sha256 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a579764a-f25c-83f1-8c3f-77376d79db4b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1edc96d9-0acb-88da-a1e7-f25c1da7386d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -16,16 +16,30 @@
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
-| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[typography]]/partition `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `45` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `—`
+- bond degree `30` · analysis neighbors —
+- graph root `—`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `05ffaf62-ef95-8c3e-a3c6-41d7cb5f9274` · framed by typography partition `quantum` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `33220aae-d326-8e33-b4f5-a919470661ca` · framed by typography partition `quantum` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

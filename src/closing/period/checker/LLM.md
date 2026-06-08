@@ -4,7 +4,7 @@
 # checker
 
 path `closing/period/checker` · uuid `6c9d747c-d9cf-8dea-96c8-90425c7f2d8d` · diamond `fa104a7f-70dc-8a2b-b91e-8cd57021caa9`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports class · escapes —
 links `10/10` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a [[period]] closes only through the gate — in-range, not already closed, 
 
 ---
 
-<sub>content-uuid `55bee7e9-357c-86e7-a44f-863c39e11344` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f68fd071-be74-829f-a7ab-5edd836dff36` · `pnpm readme` · `pnpm computed:check`</sub>

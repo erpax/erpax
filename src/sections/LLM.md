@@ -3,15 +3,15 @@
 
 # sections
 
-path `sections` · uuid `8f2c139f-197e-8803-9470-1374cae0d30f` · diamond `f6597b8d-c359-8be1-857c-9ada8c39dc57`
+path `sections` · uuid `8f2c139f-197e-8803-9470-1374cae0d30f` · diamond `1fe9df83-4b32-840f-a498-a012129d7901`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·syllabus · exports sections · escapes —
-links `5/5` · folded `1` · bonds in `75` out `73`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·accounting·agent·akashic·allocation·anchor·answer·breakfast·chat·classified·clinician·cohort·comedy·community·competency·conference·connection·contractual·death·debit·declaration·depth·details·diffusion·dropoff·editor·founder·gears·high·hobby·holographic·homeopathic·id·import·infectious·landmarks·lesser·liquor·list·localize·marine·marry·mcp·memories·mention·models·nullability·office·pathophysiology·pollination·progression·query·read·recourse·recycling·results·rheumatologic·roadmap·roles·rule·safety·sector·sectors·see·seed·sell·sequence·sign·station·tax·variables·win·wp · ← 3986·accounting·agent·akashic·allocation·anchor·answer·breakfast·chat·classified·clinician·cohort·comedy·community·competency·conference·connection·contractual·death·debit·declaration·depth·details·diffusion·dropoff·editor·founder·gears·gears·high·hobby·holographic·homeopathic·id·import·infectious·landmarks·lesser·liquor·list·localize·marine·marine·marry·mcp·memories·mention·models·nullability·office·pathophysiology·pollination·progression·query·read·recourse·recycling·results·rheumatologic·roadmap·roles·rule·safety·sector·sectors·see·seed·sell·sequence·sign·station·tax·variables·win·wp
+neighbors → collapse·law·merge·sti·syllabus · ← collapse·law·merge·sti·syllabus
 analysis —
 law sections is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d51c8e45-20c3-842c-800b-fc0745b41a2a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ecbeb31-c497-859d-91d1-fddb700a445b` · `pnpm readme` · `pnpm computed:check`</sub>

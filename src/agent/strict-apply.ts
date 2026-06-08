@@ -16,6 +16,7 @@ import {
   groundToolCall,
   trustBoundaryVerdict,
 } from '@/ai/industry'
+import { accessVerdict, actorFromScope, type AccessActor } from '@/access'
 import { expectedEventUuid, extractSecureWave, waveInSecureComms } from '@/team/comms'
 import type { Receipt } from '@/receipt'
 import type { ToolGrant, ToolAction } from '@/sandbox'
@@ -77,8 +78,13 @@ export function strictApplyDispatch(
   if (!depthVerdict.allowed) {
     return { allowed: false, reason: depthVerdict.reason }
   }
-  if (ev.tenantId !== ctx.tenantId) {
-    return { allowed: false, reason: `cross-tenant dispatch: event tenant '${ev.tenantId}' ≠ ctx '${ctx.tenantId}'` }
+  const dispatchAccess = accessVerdict(
+    actorFromScope(ctx.tenantId, law.actor),
+    { level: 'agent', tenantId: ev.tenantId },
+    'dispatch',
+  )
+  if (!dispatchAccess.allowed) {
+    return { allowed: false, reason: `cross-tenant dispatch: ${dispatchAccess.reason}` }
   }
   const untrusted = opts?.untrustedPayload ?? law.untrustedPayload ?? ev.payload
   const boundary = trustBoundaryVerdict({
@@ -145,8 +151,13 @@ export function strictApplyEffect(ctx: AgentContext, eff: AgentEffect): StrictAp
         }
         return { allowed: true, receipt: r.receipt }
       }
-      if (eff.event.tenantId !== ctx.tenantId) {
-        return { allowed: false, reason: `cross-tenant emit: '${eff.event.tenantId}' ≠ '${ctx.tenantId}'` }
+      const emitAccess = accessVerdict(
+        actorFromScope(ctx.tenantId, law.actor),
+        { level: 'emit', tenantId: eff.event.tenantId },
+        'emit',
+      )
+      if (!emitAccess.allowed) {
+        return { allowed: false, reason: `cross-tenant emit: ${emitAccess.reason}` }
       }
       return { allowed: true }
     }
@@ -154,8 +165,13 @@ export function strictApplyEffect(ctx: AgentContext, eff: AgentEffect): StrictAp
     case 'call': {
       const depthVerdict = cascadeDepthVerdict(law.depth)
       if (!depthVerdict.allowed) return { allowed: false, reason: depthVerdict.reason }
-      if (eff.event.tenantId !== ctx.tenantId) {
-        return { allowed: false, reason: `cross-tenant call: '${eff.event.tenantId}' ≠ '${ctx.tenantId}'` }
+      const callAccess = accessVerdict(
+        actorFromScope(ctx.tenantId, law.actor),
+        { level: 'agent', tenantId: eff.event.tenantId },
+        'call',
+      )
+      if (!callAccess.allowed) {
+        return { allowed: false, reason: `cross-tenant call: ${callAccess.reason}` }
       }
       return { allowed: true }
     }
@@ -187,7 +203,19 @@ export function strictApplyMcpCall(
   toolName: string,
   args: Record<string, unknown>,
   timestampIso?: string,
+  opts?: { readonly actor?: AccessActor },
 ): StrictApplyVerdict {
+  const tid = args.tenantId
+  if (typeof tid === 'string' && tid.length > 0 && opts?.actor) {
+    const tenantAccess = accessVerdict(
+      opts.actor,
+      { level: 'mcp', tenantId: tid, toolName },
+      'execute',
+    )
+    if (!tenantAccess.allowed) {
+      return { allowed: false, reason: tenantAccess.reason }
+    }
+  }
   const grounded = groundToolCall(law.grant, MCP_TOOL_ACTION, { tool: toolName, args })
   if (!grounded.grounded) {
     return { allowed: false, reason: grounded.reason }
@@ -214,8 +242,9 @@ export function assertStrictMcpCall(
   toolName: string,
   args: Record<string, unknown>,
   timestampIso?: string,
+  opts?: { readonly actor?: AccessActor },
 ): Receipt {
-  const v = strictApplyMcpCall(law, toolName, args, timestampIso)
+  const v = strictApplyMcpCall(law, toolName, args, timestampIso, opts)
   if (!v.allowed || !v.receipt) {
     throw new StrictApplyViolation('mcp', v.reason ?? 'blocked without receipt')
   }

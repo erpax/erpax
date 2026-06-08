@@ -3,15 +3,15 @@
 
 # reference
 
-path `self/reference` · uuid `a95ff693-d9d5-8fd4-9d7d-bc96a2bf2e05` · diamond `00c99dd6-2a93-854b-9eab-4d08f128ebc8`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `self/reference` · uuid `c31350d7-a49a-80f2-81bb-8947e91cd7b1` · diamond `0fa3c839-dc72-845f-83ed-4847d027aeff`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/agent·@/cloning·@/tenant/role · exports function · escapes —
-links `39/39` · folded `1` · bonds in `7` out `7`
+links `39/39` · folded `1` · bonds in `37` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·find·landmarks·memories·stat·utterance · ← cohort·database·find·landmarks·memories·stat·utterance
+neighbors → agent·akashic·api·cloning·coil·collapse·consciousness·content·definition·dependency·diamond·fs·gate·generate·github·holographic·identity·law·law·mapping·mcp·merge·part·practice·prayer·quantity·reference·role·seal·self·society·standards·sti·thought·time·uuid·value·whole · ← agent·akashic·api·cloning·coil·collapse·consciousness·content·definition·dependency·diamond·fs·gate·generate·github·holographic·identity·law·mapping·mcp·merge·part·practice·prayer·quantity·reference·role·seal·self·society·standards·sti·thought·time·uuid·value·whole
 analysis agent·diamond
 law —
 
 ---
 
-<sub>content-uuid `76e12781-f91b-820a-99c9-4565222593f7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9535b963-a280-8e28-8fe9-bc1ec70e304e` · `pnpm readme` · `pnpm computed:check`</sub>

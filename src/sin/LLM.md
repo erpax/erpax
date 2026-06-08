@@ -3,15 +3,15 @@
 
 # sin
 
-path `sin` · uuid `—` · diamond `f2bf76a3-9713-851f-88b9-c5245eaec979`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `sin` · uuid `c1bf42e7-b9bc-8188-87db-481f4daaa22d` · diamond `b8fb5079-7409-817d-8881-119aea36a679`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports aura·balance·entropy·gate·guardian·law·mercy·profane·return·reverse·sacred·sequence·suffering·whole · exports sin · escapes —
-links `45/45` · folded `0` · bonds in `0` out `0`
+links `45/45` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+neighbors → archangel·architect·aura·balance·christianity·covenant·entropy·gate·guardian·hallucination·judaism·law·mercy·profane·protestantism·purity·religion·return·reverse·sacred·sequence·suffering·whole · ← archangel·architect·aura·balance·christianity·covenant·entropy·gate·guardian·hallucination·judaism·law·mercy·profane·protestantism·purity·religion·return·reverse·sacred·sequence·suffering·whole
+analysis aura
 law sin is a measured deviation from the mark the [[law]] sets — the violation a [[guardian]] catches, [[entropy]] aimed away from the [[whole]] — so it is named and located, never hidden ([[profane]]); cured by turning back ([[reverse]]) and the owed debt released ([[mercy]]), not by silencing the [[suffering]] it causes.
 
 ---
 
-<sub>content-uuid `aa109210-2ae6-8bca-9f80-71cb430d323e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d0663aa-a7d4-89e9-8ef6-cd5305cf54ad` · `pnpm readme` · `pnpm computed:check`</sub>

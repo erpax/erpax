@@ -2,17 +2,17 @@
 
 # shinto
 
-> atom `shinto` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `shinto` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `shinto` · sub-root `b2eadaea-345a-8b88-a6ea-e4bf01b43c3f`
-- bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `68` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `b2eadaea-345a-8b88-a6ea-e4bf01b43c3f`
+- bonds in `22` · out `22`
 - trinity form·code·proof `1`·`0`·`0`
 - links `51` / `51`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5ea9169a-9cf7-8d4e-a175-22f3f53fa5d8` · framed by typography partition `shinto` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `35e99d44-72dc-86f1-bccf-a95d419dd5ec` · framed by typography partition `shinto` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>

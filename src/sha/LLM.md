@@ -3,15 +3,15 @@
 
 # sha
 
-path `sha` · uuid `adb9f0d8-c45b-84af-93ac-bd0b4d731942` · diamond `009435a8-949a-80d0-bdc1-5cbb50e80a12`
+path `sha` · uuid `adb9f0d8-c45b-84af-93ac-bd0b4d731942` · diamond `983c4cc5-5bdb-8900-aa44-afc93229078f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sha · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·deleted·landmarks·orders · ← balance·deleted·landmarks·orders
+neighbors → law·thing · ← law·thing
 analysis —
 law sha is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dd67c6fb-1e0a-88a6-94c0-0f8971644e8b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9bd500e0-21eb-8046-9221-2a3ede18e6e9` · `pnpm readme` · `pnpm computed:check`</sub>

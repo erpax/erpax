@@ -16,21 +16,35 @@
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
-| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[typography]]/partition `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `743` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `—`
+- bond degree `474` · analysis neighbors —
+- graph root `—`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `474` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `e70f3d2a-47f6-8016-999c-4e133dd0f081`
-- bonds in `235` · out `231`
+- bonds in `239` · out `235`
 - trinity form·code·proof `1`·`1`·`1`
 - links `49` / `49`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `67462595-d75f-888e-8958-d7dc784fde5b` · framed by typography partition `quantum` bonds `743` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd50326a-83c5-895e-b6cf-c7989593affb` · framed by typography partition `quantum` bonds `474` · `pnpm readme` · `pnpm readme:check`</sub>

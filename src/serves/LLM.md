@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·cuisine·law·merge·sti · exports serves · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·generically·landmarks·memories·stat · ← cohort·generically·landmarks·memories·stat
+neighbors → collapse·cuisine·law·merge·sti · ← collapse·cuisine·law·merge·sti
 analysis —
 law serves is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `35224b1a-4f90-8e5e-bee5-76229a697925` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62762ad8-19c4-8c88-a430-3351499a5250` · `pnpm readme` · `pnpm computed:check`</sub>

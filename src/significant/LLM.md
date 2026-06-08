@@ -3,15 +3,15 @@
 
 # significant
 
-path `significant` · uuid `1a787c15-e60d-86c2-853d-3ff381b0fd3d` · diamond `58f43c0c-c84f-88cf-ad50-ed2a3659a8d2`
+path `significant` · uuid `1a787c15-e60d-86c2-853d-3ff381b0fd3d` · diamond `a7e8c110-0d2e-8c03-924b-7ffc6dccca54`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·link·links·merge·sti · exports significant · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·customer·equals·invitation·landmarks·numbered·previous·researcher·translator·width · ← activities·customer·equals·invitation·landmarks·numbered·previous·researcher·translator·width
+neighbors → collapse·law·link·links·merge·sti · ← collapse·law·link·links·merge·sti
 analysis —
 law significant is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f8204444-bbf9-8926-b13b-1442015d5616` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42f04fdd-5337-8654-acf5-15f54a01bdf0` · `pnpm readme` · `pnpm computed:check`</sub>

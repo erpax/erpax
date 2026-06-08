@@ -3,15 +3,15 @@
 
 # sign
 
-path `sign` · uuid `e1e53939-66c8-89de-a585-7cfe1f4b360d` · diamond `f8c7d1a9-e5e0-8416-ba68-8b40bcee3e09`
+path `sign` · uuid `e1e53939-66c8-89de-a585-7cfe1f4b360d` · diamond `edd8702c-974e-80df-9b55-b48128b60e58`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports call·collapse·detected·distinguishing·law·medical·merge·sti·symptom·vital · exports sign · escapes —
-links `10/10` · folded `1` · bonds in `49` out `49`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·accounting·agent·akashic·angel·atom·aura·auth·balance·breakfast·catalogue·chat·cohort·colleagues·conference·consent·corrects·entertainment·entity·fertility·founder·game·gears·hobby·holographic·homeopathic·id·landmarks·list·marine·marry·mcp·memories·mention·office·parent·pathophysiology·platform·progression·requests·sections·see·seed·sell·spreadsheet·tax·vent·wp · ← 3986·access·accounting·agent·akashic·angel·atom·aura·auth·balance·breakfast·catalogue·chat·cohort·colleagues·conference·consent·corrects·entertainment·entity·fertility·founder·game·gears·hobby·holographic·homeopathic·id·landmarks·list·marine·marry·mcp·memories·mention·office·parent·pathophysiology·platform·progression·requests·sections·see·seed·sell·spreadsheet·tax·vent·wp
+neighbors → call·collapse·detected·distinguishing·law·medical·merge·sti·symptom·vital · ← call·collapse·detected·distinguishing·law·medical·merge·sti·symptom·vital
 analysis —
 law sign is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c2b28bde-2557-85ee-82f9-9ed515020b1f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84444105-e922-8e86-8bc4-5eddd4b8ad64` · `pnpm readme` · `pnpm computed:check`</sub>

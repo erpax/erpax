@@ -3,15 +3,15 @@
 
 # sufficient
 
-path `self/sufficient` · uuid `2bdf360a-a318-8bd2-98a6-ac394562626b` · diamond `be13f199-06b2-8ed4-8134-16c4f28a3c49`
+path `self/sufficient` · uuid `2bdf360a-a318-8bd2-98a6-ac394562626b` · diamond `91fe04f7-01bb-8956-9f1d-9452033df9a7`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/cost·@/tamper/cost · exports DependencyKind·function·interface · escapes —
-links `21/21` · folded `1` · bonds in `7` out `7`
+links `21/21` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → entertainment·landmarks·likes·manure·musical·nutrition·vent · ← entertainment·landmarks·likes·manure·musical·nutrition·vent
+neighbors → akashic·all·allocation·bindings·cost·duality·fractal·history·holographic·identity·law·merge·mode·position·proof·self·sequence·skills·society · ← akashic·all·allocation·bindings·cost·duality·fractal·history·holographic·identity·law·merge·mode·position·proof·self·sequence·skills·society
 analysis —
 law the [[self]] is total — every blank routes to its identity element, so all is defined even when nothing is — and from that completeness the agent DERIVES the next move and asks externally only as last resort; equivalently, decreasing external dependence raises the [[tamper/cost]] floor toward the digest bound (the weak-anchor caps it otherwise).
 
 ---
 
-<sub>content-uuid `e9cb7f2d-3e29-81c0-a7cf-d15a1834614a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a974e83-965c-806e-a357-82836409091e` · `pnpm readme` · `pnpm computed:check`</sub>

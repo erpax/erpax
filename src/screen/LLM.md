@@ -3,15 +3,15 @@
 
 # screen
 
-path `screen` · uuid `1fb71606-1175-8ec9-9a4d-5d9f62ad3e59` · diamond `3cfb843a-6ee6-8cde-bc2b-5dbc71c9ce9b`
+path `screen` · uuid `1fb71606-1175-8ec9-9a4d-5d9f62ad3e59` · diamond `c82a4a80-8d85-8f42-881c-4fe4804eb116`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·count·law·merge·sti · exports screen · escapes —
-links `5/5` · folded `1` · bonds in `34` out `34`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·apiculture·borrow·candidate·contagiousness·cover·create·crisis·crop·css·definition·donate·esr·fire·friction·hamiltonian·hardcover·homeopathic·horo·knows·landmarks·masthead·partition·percentage·pickup·players·proprietary·quest·sandbox·thing·travel·treat·vibration·western · ← agriculture·apiculture·borrow·candidate·contagiousness·cover·create·crisis·crop·css·definition·donate·esr·fire·friction·hamiltonian·hardcover·homeopathic·horo·knows·landmarks·masthead·partition·percentage·pickup·players·proprietary·quest·sandbox·thing·travel·treat·vibration·western
+neighbors → collapse·count·law·merge·sti · ← collapse·count·law·merge·sti
 analysis —
 law screen is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9cdfef5c-8327-8d19-8626-a9f024e4ca79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5210c46d-311f-8c2b-a2f1-f427a8155f18` · `pnpm readme` · `pnpm computed:check`</sub>

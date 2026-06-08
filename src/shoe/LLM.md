@@ -3,15 +3,15 @@
 
 # shoe
 
-path `shoe` · uuid `1e93f4c3-565f-8489-8ecd-5ee725c9899b` · diamond `51d91636-b04b-8b34-aec5-59c2f0d51372`
+path `shoe` · uuid `1e93f4c3-565f-8489-8ecd-5ee725c9899b` · diamond `7f98e94b-49fe-85b5-a3b6-9aa0cdcd083d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports shoe · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law shoe is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8a386fcf-5fa4-8dba-abc3-723eaa62cdb9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b365eb9-7dc1-85a7-a310-32cbba15b6e5` · `pnpm readme` · `pnpm computed:check`</sub>

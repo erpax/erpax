@@ -3,15 +3,15 @@
 
 # sbbi
 
-path `sbbi` · uuid `45123754-6ebc-849a-9ec9-618560ff60ff` · diamond `5500e0ea-1600-8bcb-8a57-a30b3cc51da1`
+path `sbbi` · uuid `45123754-6ebc-849a-9ec9-618560ff60ff` · diamond `993e2764-19a0-85ec-8821-0dd7520e78ba`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports sbbi · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → grants·landmarks·masthead·percentage·promise·task·torus·user · ← grants·landmarks·masthead·percentage·promise·task·torus·user
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law sbbi is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b48b0aab-eaf1-806c-9cf2-98cc51f29e80` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92b85950-57b0-87b8-9d98-8c0d93fd7170` · `pnpm readme` · `pnpm computed:check`</sub>

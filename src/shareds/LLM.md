@@ -3,15 +3,15 @@
 
 # shareds
 
-path `shareds` · uuid `—` · diamond `c2473aa1-0374-8d70-8ebc-4bef86194f9c`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `shareds` · uuid `2051b678-1443-8456-a58c-845a96631728` · diamond `d24c900f-6ae7-825f-a308-9d7f574e851e`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./documentPreviewAdmin·*:./versionedDrafts · escapes —
-links `1/1` · folded `0` · bonds in `0` out `0`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → law · ← law
+analysis —
 law barrel re-export at `@/shareds`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `99f56ddd-c829-812c-b4a9-cd617d3eca31` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9604c70c-1b3d-8f69-8f77-45ba71a63c1f` · `pnpm readme` · `pnpm computed:check`</sub>

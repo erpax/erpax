@@ -4,7 +4,7 @@
 # collection
 
 path `collection` · uuid `70c0d8a5-1db9-8d74-94bd-4fc580a1fa63` · diamond `8c87ddfe-8704-86d1-8f11-2b773dbc8d0f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports cvd·date·law·page·product·size·target · exports collection · escapes —
 links `7/7` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law collection is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `68da9686-e721-8395-8952-2f6b294ca596` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `436351f7-467f-8425-85be-7c1d2307b8dd` · `pnpm readme` · `pnpm computed:check`</sub>

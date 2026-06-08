@@ -3,15 +3,15 @@
 
 # skin
 
-path `skin` · uuid `eca36889-8fc0-8fd4-a858-332cee8902a6` · diamond `16a59475-d3b7-8285-8939-5af0c91a8cb6`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `skin` · uuid `7eab7791-988d-8738-823c-b63c8d0e6598` · diamond `04513b71-5017-822f-ae2d-8a7099e514bc`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports Token·const·function·interface · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·landmarks·memories·stat · ← cohort·contained·landmarks·memories·stat
+links `9/9` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → body·gate·law·regeneration·sandbox·self · ← body·gate·law·regeneration·sandbox·self
 analysis —
 law the skin is the boundary — the largest organ, a selectively-permeable barrier (permit the sanctioned, block the threat: the sandbox), continuously regenerated from seed (~28-day renewal, it heals), holding the interior to its setpoint by negative feedback (homeostasis); it is the self/non-self membrane.
 
 ---
 
-<sub>content-uuid `e2bb4ec4-9b38-843f-90df-67b127bd9cc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d685aa4-74c8-882e-980a-94e8396c87bd` · `pnpm readme` · `pnpm computed:check`</sub>

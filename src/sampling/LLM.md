@@ -3,15 +3,15 @@
 
 # sampling
 
-path `sampling` · uuid `b5c1b86f-683d-8cc5-89b8-a04cc1fd44cc` · diamond `602b1263-ba71-88b6-afdb-deaffdd0a695`
+path `sampling` · uuid `b5c1b86f-683d-8cc5-89b8-a04cc1fd44cc` · diamond `288237e0-2302-8a11-813a-398a75582425`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports aggregation·calculate·distribution·law·metric · exports sampling · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → charitable·cohort·effective·endpoint·landmarks·material·memories·midpoint·stat · ← charitable·cohort·effective·endpoint·landmarks·material·memories·midpoint·stat
+neighbors → aggregation·baseline·calculate·distribution·empirical·law·metric·observability·outlier·science · ← aggregation·baseline·calculate·distribution·empirical·law·metric·observability·outlier·science
 analysis —
 law a sample is a representative subset drawn by a stated method (random/stratified/systematic) with a [[calculate]]d sample size and quantified sampling error, so an inference about the whole carries a known confidence.
 
 ---
 
-<sub>content-uuid `72d83123-f264-8511-80f7-f886b28e4668` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6944da3d-9ed8-83b9-9e11-7f00168971d2` · `pnpm readme` · `pnpm computed:check`</sub>

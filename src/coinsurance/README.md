@@ -23,7 +23,7 @@
 
 - partition `coinsurance` · sub-root `e8c78058-462b-8165-abbc-9adf516820f7`
 - bond degree `26` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `50c31a2f-4ddf-8fb1-b33d-523b4894280e` · framed by typography partition `coinsurance` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7dbccbd5-2aad-8543-9d43-56f6bbbedee4` · framed by typography partition `coinsurance` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # shop
 
-path `shop` · uuid `b89199a9-e6dd-8b46-9dab-8453b17b373c` · diamond `ceddf5f7-fa4c-8f05-8670-311cefa8e469`
+path `shop` · uuid `b89199a9-e6dd-8b46-9dab-8453b17b373c` · diamond `9da6bac3-a422-8341-a4ea-08c9fe25603f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports auto·body·cafe·coffee·collapse·cream·hobby·ice·law·merge·pawn·sti·tire · exports shop · escapes —
-links `13/13` · folded `1` · bonds in `6` out `6`
+links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·import·landmarks·likes·memories·stat · ← cohort·import·landmarks·likes·memories·stat
+neighbors → auto·body·cafe·coffee·collapse·cream·hobby·ice·law·merge·pawn·sti·tire · ← auto·body·cafe·coffee·collapse·cream·hobby·ice·law·merge·pawn·sti·tire
 analysis —
 law shop is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1a88d92e-cce5-85b1-b6f7-ea757f8c92c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `020d7e91-54a1-88e0-b9e0-b577c0df4e6e` · `pnpm readme` · `pnpm computed:check`</sub>

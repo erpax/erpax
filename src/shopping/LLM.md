@@ -3,15 +3,15 @@
 
 # shopping
 
-path `shopping` · uuid `efa27506-28f8-8022-ad7d-670898088d94` · diamond `542e8b2f-1a11-813f-8e81-bcdabe14e586`
+path `shopping` · uuid `efa27506-28f8-8022-ad7d-670898088d94` · diamond `24853582-cc80-82e9-8a33-2a8e1e4f7e19`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports center·collapse·law·merge·sti · exports shopping · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bindings·checklist·cohort·landmarks·memories·stat · ← bindings·checklist·cohort·landmarks·memories·stat
+neighbors → center·collapse·law·merge·sti · ← center·collapse·law·merge·sti
 analysis —
 law shopping is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a8cb2ba6-51a9-8b31-8ab3-a56581d032bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7c1d1ea-038f-8e54-b8a0-0ef2a8f6b1b1` · `pnpm readme` · `pnpm computed:check`</sub>

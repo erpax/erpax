@@ -3,15 +3,15 @@
 
 # single
 
-path `single` · uuid `6dda3cba-7dd1-85d4-b6b6-85b90f631bf5` · diamond `44ca6173-89f2-8f2a-944a-150759b1742c`
+path `single` · uuid `6dda3cba-7dd1-85d4-b6b6-85b90f631bf5` · diamond `4bc43b3e-a35f-89cc-8807-6a46755a0413`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·family·law·merge·residence·sti · exports single · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·family·law·merge·residence·sti · ← collapse·family·law·merge·residence·sti
 analysis —
 law single is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `074ff6fd-795a-87c3-a4f2-524e4bb9c01f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `35c35692-34e6-8cbf-a66b-74bb8672bef8` · `pnpm readme` · `pnpm computed:check`</sub>

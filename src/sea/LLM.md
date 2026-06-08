@@ -3,15 +3,15 @@
 
 # sea
 
-path `sea` · uuid `9214b8a0-5fe8-8e46-9728-cd7a46b9c4db` · diamond `04c06e7f-0eee-8aef-b97b-41c861dbe5a5`
+path `sea` · uuid `9214b8a0-5fe8-8e46-9728-cd7a46b9c4db` · diamond `c47b67f8-00d6-8eab-bdb8-9fa388144561`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports body·collapse·law·merge·sti·water · exports sea · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·prepend·stat · ← cohort·landmarks·memories·prepend·stat
+neighbors → body·collapse·law·marine·merge·sti·water · ← body·collapse·law·marine·merge·sti·water
 analysis —
 law sea is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f5434c24-0a11-896d-8f44-6862e192c521` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f13f508-2c45-8b8f-a91a-ab4334641101` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `catholicism` · sub-root `4554f61f-6885-8e3a-a67b-27ce9966278f`
 - bond degree `59` · analysis neighbors `diamond`
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9b749dc8-aea2-89d1-b295-6f3f0180dbfa` · framed by typography partition `catholicism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e5a6c8ff-e47a-8a4c-8470-7d3bc46e0b8a` · framed by typography partition `catholicism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

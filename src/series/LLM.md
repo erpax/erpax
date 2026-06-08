@@ -3,15 +3,15 @@
 
 # series
 
-path `series` · uuid `86db35cb-8780-8ae7-908b-3ccd3d12c8d2` · diamond `08bba51e-289b-8b3e-9c93-f4b2b10470fa`
+path `series` · uuid `86db35cb-8780-8ae7-908b-3ccd3d12c8d2` · diamond `5f823427-e547-83ae-b4f9-3e5413e159a0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports book·comic·creative·event·game·law·movie·part·podcast·radio·tv·video·work · exports series · escapes —
-links `13/13` · folded `1` · bonds in `9` out `9`
+links `13/13` · folded `1` · bonds in `16` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·deleted·import·landmarks·memories·quote·shannon·stat·thing · ← cohort·deleted·import·landmarks·memories·quote·shannon·stat·thing
+neighbors → book·chart·comic·creative·event·game·law·movie·part·podcast·radio·spectrum·tv·video·work · ← book·chart·chart·comic·creative·event·game·law·movie·part·podcast·radio·spectrum·tv·video·work
 analysis —
 law a series is identity carried across its members — each item keeps its own uuid yet inherits the series' position, so order is information that no member may contradict.
 
 ---
 
-<sub>content-uuid `7f45968f-1e6a-86a5-b952-65b5d1fb45b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d6b6d79-d7f5-8934-8fc7-52a573e32450` · `pnpm readme` · `pnpm computed:check`</sub>

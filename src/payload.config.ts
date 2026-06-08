@@ -81,7 +81,18 @@ import {
   type SupportedLocale,
 } from '@/i18n'
 
+import { adminGroupOf } from '@/navigation'
+import { COLLECTION_DIAMOND_KEY } from '@/factory/collection-factory'
 import type { Config } from '@/types'
+
+/** Payload admin.group — first path segment of the collection atom (computed, never hand-set). */
+function collectionAdminGroup(c: CollectionConfig): string {
+  const diamond = (c as Record<string, unknown>)[COLLECTION_DIAMOND_KEY] as
+    | { atomPath?: string }
+    | undefined
+  const atomPath = diamond?.atomPath ?? c.slug.replace(/-/g, '/')
+  return adminGroupOf(atomPath)
+}
 
 /** `buildConfig({ logger })` type — used so Workers can supply a non-pino logger without `any`. */
 type PayloadBuildConfigLogger = NonNullable<Parameters<typeof buildConfig>[0]['logger']>
@@ -293,6 +304,10 @@ export default buildConfig({
   collections: (Object.values(allCollections) as CollectionConfig[]).map((c) => ({
     ...c,
     lockDocuments: false as const,
+    admin: {
+      ...c.admin,
+      group: collectionAdminGroup(c),
+    },
   })),
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],

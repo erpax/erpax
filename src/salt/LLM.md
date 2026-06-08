@@ -3,15 +3,15 @@
 
 # salt
 
-path `salt` · uuid `8f62870b-6660-8d96-a34e-d07d1734f556` · diamond `c361e816-8d7a-83fc-a15d-662c1b21602c`
+path `salt` · uuid `8f62870b-6660-8d96-a34e-d07d1734f556` · diamond `00619858-553a-8bb0-8ef8-84066adc4c35`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports salt · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·family·landmarks·memories·stat · ← cohort·contained·family·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law salt is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `aebc35b5-be4b-891f-8a4a-dc3019c49989` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5bdb3dbe-262a-86be-ab06-443575c55a13` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -96,6 +96,7 @@ import type {
 import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { autoPopulateCreatedBy } from '@/auto/populate/created/by'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
+import { adminGroupOf } from '@/navigation'
 // Slice AAAAAAAA (2026-05-11) — factory auto-wires structured `emits:` into
 // afterChange hooks. Single source of truth for the chain-emit producers.
 import {
@@ -457,6 +458,8 @@ export const createAccountingCollection = (
   const description = opts.description
     ? `${opts.description}\n\n— ${diamondNote}`
     : diamondNote
+  const atomPath = opts.atomPath ?? opts.slug
+  const adminGroup = adminGroupOf(atomPath)
 
   const config: CollectionConfig & { readonly [COLLECTION_DIAMOND_KEY]?: typeof collectionDiamond } = {
     slug: opts.slug,
@@ -465,6 +468,7 @@ export const createAccountingCollection = (
       useAsTitle: opts.useAsTitle,
       defaultColumns: opts.defaultColumns,
       description,
+      group: adminGroup,
     },
     access: {
       read: scopedAccess(),

@@ -3,15 +3,15 @@
 
 # seller
 
-path `seller` · uuid `09c92fa6-891f-8565-9140-818f0f2919d3` · diamond `59570b39-6651-8ae0-b456-ac5b851f5242`
+path `seller` · uuid `09c92fa6-891f-8565-9140-818f0f2919d3` · diamond `6abb088d-28e3-8531-94c1-9b5028ad48b6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports seller · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → art·cohort·landmarks·memories·stat · ← art·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law a seller is a role an entity plays in an offer, not a kind of entity — the same actor that sells here may buy or provide elsewhere, so seller-ness is a directed edge of a transaction, never an intrinsic type.
 
 ---
 
-<sub>content-uuid `d82745ec-d774-8c6b-acf4-fac9d254000e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1859b4b-3407-82f8-af83-75bd2f6ba82a` · `pnpm readme` · `pnpm computed:check`</sub>

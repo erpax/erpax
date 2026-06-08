@@ -3,15 +3,15 @@
 
 # scale
 
-path `scale` · uuid `9c0e994c-2d6e-86c2-b290-5c56f04ec39a` · diamond `4fd4bfd7-0ebd-8270-8522-feef54656513`
+path `scale` · uuid `9c0e994c-2d6e-86c2-b290-5c56f04ec39a` · diamond `b91ec65e-19f0-8861-8039-841e3bab4bfb`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·efficiency·energy·law·max·merge·min·sti · exports scale · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `10` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·vitepress · ← cohort·landmarks·memories·stat·vitepress
+neighbors → chart·collapse·efficiency·energy·law·max·merge·min·sti · ← chart·chart·collapse·efficiency·energy·law·max·merge·min·sti
 analysis —
 law scale is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7e92d810-74f4-8f33-84b6-24c671516592` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d280846-d27c-8beb-925f-3565c72574bc` · `pnpm readme` · `pnpm computed:check`</sub>

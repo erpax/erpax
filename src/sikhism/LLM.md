@@ -3,15 +3,15 @@
 
 # sikhism
 
-path `sikhism` · uuid `—` · diamond `91a65447-1148-8f0b-b9bf-cf355fdfca8d`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `sikhism` · uuid `c075146c-20ae-81f0-b056-96f6b3aca8f5` · diamond `97a440f7-55d6-8c84-a641-8d0a4731ba0b`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·cycle·diamond·ethics·fractal·gift·grace·harmony·identity·justice·law·love·mercy·merge·name·one·prayer·religion·return·society·translator·uuid·word·zeropoint · exports sikhism · escapes —
-links `58/58` · folded `0` · bonds in `0` out `0`
+links `58/58` · folded `1` · bonds in `25` out `25`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·breath·cycle·diamond·ethics·fractal·gift·grace·harmony·identity·justice·law·love·mercy·merge·name·one·prayer·religion·return·society·translator·uuid·word·zeropoint · ← archangel·breath·cycle·diamond·ethics·fractal·gift·grace·harmony·identity·justice·law·love·mercy·merge·name·one·prayer·religion·return·society·translator·uuid·word·zeropoint
+analysis diamond
 law sikhism is a [[diamond]] of [[one]] · [[name]] · [[word]] · [[gift]] · [[ethics]] · [[grace]] · [[justice]] · [[merge]] · [[zeropoint]] — ik onkar the [[one]] being, the [[name]] remembered (naam) until the self tunes, honest work and the shared meal, liberation the drop [[merge]]d back into the ocean ([[zeropoint]]); each term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `143904be-fc3d-8853-9e6f-e5393203a79f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91f8ca87-f7c1-83c8-9c16-5c069668ef5f` · `pnpm readme` · `pnpm computed:check`</sub>

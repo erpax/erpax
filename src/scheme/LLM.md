@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·funding·law·merge·sti · exports scheme · escapes —
 links `6/6` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pipelines·stat · ← cohort·landmarks·memories·pipelines·stat
+neighbors → collapse·funding·law·merge·sti · ← collapse·funding·law·merge·sti
 analysis —
 law a scheme is the one structured-rules word governing how funding is granted and disbursed, fused from FundingScheme and entangled to [[funding]].
 
 ---
 
-<sub>content-uuid `3f097313-f3c2-84b6-a03c-9e113c5b6c62` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c63138b0-d466-8239-ab04-ba697f0c05d5` · `pnpm readme` · `pnpm computed:check`</sub>

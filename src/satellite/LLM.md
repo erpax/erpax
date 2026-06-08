@@ -3,15 +3,15 @@
 
 # satellite
 
-path `satellite` · uuid `10c08ea0-0178-8b90-8663-377fe44fefa3` · diamond `be439111-dd4d-8749-9d35-eb82d896b741`
+path `satellite` · uuid `10c08ea0-0178-8b90-8663-377fe44fefa3` · diamond `3b3dc704-4ee2-8d8d-825b-a3f007da9f39`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports cable·collapse·law·merge·service·sti · exports satellite · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·memories·patient·stat·thing · ← cohort·database·landmarks·memories·patient·stat·thing
+neighbors → cable·collapse·law·merge·service·sti · ← cable·collapse·law·merge·service·sti
 analysis —
 law satellite is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `391b7f88-eeed-806e-b261-64736b5f9a9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `147e07b4-1d96-85c0-9819-a831fa21fb9d` · `pnpm readme` · `pnpm computed:check`</sub>

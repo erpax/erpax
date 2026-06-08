@@ -23,7 +23,7 @@
 
 - partition `cheat` · sub-root `d953bfd3-9b23-8751-895a-9a089dcbc278`
 - bond degree `15` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `69e94fa8-52f3-8e68-b65d-901db0ee6eb7` · framed by typography partition `cheat` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `58d663ae-47a3-8cf7-82b5-c595e392aeb7` · framed by typography partition `cheat` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

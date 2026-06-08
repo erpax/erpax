@@ -3,15 +3,15 @@
 
 # siblings
 
-path `siblings` · uuid `ca56c1ad-429a-877d-88f1-a75acab721bb` · diamond `7edd9ab4-9383-8807-aada-b7de5aace15f`
+path `siblings` · uuid `ca56c1ad-429a-877d-88f1-a75acab721bb` · diamond `b7b35428-53e0-8fc7-8a20-c5cc13054017`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports dimension·law·sibling · exports siblings · escapes —
-links `4/4` · folded `1` · bonds in `14` out `14`
+links `4/4` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → colleague·contained·entropy·festival·founders·gravity·landmarks·partial·schedules·sequential·spa·surprisal·varies·want · ← colleague·contained·entropy·festival·founders·gravity·landmarks·partial·schedules·sequential·spa·surprisal·varies·want
+neighbors → dimension·law·sibling · ← dimension·law·sibling
 analysis —
 law siblings is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `841e66c2-0e53-805d-96d6-0adbdbabff69` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a6c1248-cf21-8c9e-83c9-9f338129a27e` · `pnpm readme` · `pnpm computed:check`</sub>

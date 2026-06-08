@@ -3,15 +3,15 @@
 
 # scheduled
 
-path `scheduled` · uuid `2caee6ed-0362-8f0f-82df-51e8e65c5faf` · diamond `e2984190-2543-8927-bb16-6b663808eaca`
+path `scheduled` · uuid `2caee6ed-0362-8f0f-82df-51e8e65c5faf` · diamond `1561530b-66fe-8230-9f51-999172d20528`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·merge·payment·sti·time · exports scheduled · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·keyword·value · ← balance·keyword·value
+neighbors → collapse·date·law·merge·payment·sti·time · ← collapse·date·law·merge·payment·sti·time
 analysis —
 law scheduled is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `93e45e7d-cc36-89c8-9da7-b35d6fdd31ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b1d4f2c-bc47-897e-9af9-37fc97de50c2` · `pnpm readme` · `pnpm computed:check`</sub>

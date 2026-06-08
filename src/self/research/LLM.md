@@ -3,15 +3,15 @@
 
 # research
 
-path `self/research` · uuid `f2a22870-40a9-8da9-9f5a-a9745e81f284` · diamond `a8d55221-fe6c-80d3-a23e-c855889d5710`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `self/research` · uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4` · diamond `966c7b99-0c7c-8b08-9a73-2f19e6ae5fb3`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/receipt·@/sandbox · exports async·const·function·interface · escapes —
-links `57/57` · folded `1` · bonds in `5` out `5`
+links `57/57` · folded `1` · bonds in `61` out `76`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·unspecified · ← cohort·landmarks·memories·stat·unspecified
-analysis agent·diamond·hallucination·purity
+neighbors → accept·access·account·accounting·agent·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·collapse·consultant·consulting·cost·cost·cross·design·development·drone·email·entanglement·entropy·entropy·entry·entry·expense·feedback·gate·harmony·history·identity·identity·interview·law·law·law·law·law·literature·localize·matrix·mcp·merge·merge·merge·oid·organization·plugins·profane·project·proof·proof·quantum·receipt·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint·zeropoint · ← accept·access·account·accounting·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·consultant·consulting·cost·cross·design·development·drone·email·entanglement·entropy·entry·expense·feedback·gate·harmony·history·identity·interview·law·literature·localize·matrix·mcp·merge·oid·organization·plugins·profane·project·proof·quantum·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint
+analysis agent
 law —
 
 ---
 
-<sub>content-uuid `db733da6-9bef-875a-951c-3923e68f389e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `937302f1-fe20-83ce-9793-21ee1ceffe86` · `pnpm readme` · `pnpm computed:check`</sub>

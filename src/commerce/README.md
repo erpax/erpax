@@ -25,7 +25,7 @@
 
 - partition `commerce` · sub-root `f7fcd544-d657-81f0-8cbb-1fdd2ab2f1c3`
 - bond degree `138` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -62,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `c3e6c09e-31bd-827b-99a4-b46e1b4df2cc` · framed by typography partition `commerce` bonds `138` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c230c69-a74e-8826-8e51-af6eb86677d1` · framed by typography partition `commerce` bonds `138` · `pnpm readme` · `pnpm readme:check`</sub>

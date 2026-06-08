@@ -3,15 +3,15 @@
 
 # shares
 
-path `shares` · uuid `7abe7948-1544-805c-8cd2-2f23cf1c6bf3` · diamond `60222bc4-ca40-808c-9dd3-1ce717bcdd1c`
+path `shares` · uuid `7abe7948-1544-805c-8cd2-2f23cf1c6bf3` · diamond `ed7be702-7942-8f7d-9430-45f680d17f93`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/populate/tenant · exports default · escapes —
-links `1/1` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `1/1` · folded `1` · bonds in `6` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·identity·law·law·periods·proof·standard · ← accounting·identity·law·periods·proof·standard
 analysis —
 law each row is a `(granteeUuid, accessRole, targetUuid)` grant per tenant that `checkShare` reads as the read-time access source of truth; every grant/revoke is chain-attested and revocation is a soft flag, never a delete.
 
 ---
 
-<sub>content-uuid `46286989-9226-809e-bc2e-6430d331aaaa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8bf56e4-ba42-867d-b94b-4b583e81687d` · `pnpm readme` · `pnpm computed:check`</sub>

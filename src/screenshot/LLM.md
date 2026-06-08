@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports screenshot · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·notice · ← landmarks·notice
+neighbors → law·thing · ← law·thing
 analysis —
 law screenshot is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `390aa381-32e6-894f-8b97-848abeccad98` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05320aba-f289-816e-9a9a-0fcb13a18dd5` · `pnpm readme` · `pnpm computed:check`</sub>

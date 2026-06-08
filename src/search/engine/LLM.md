@@ -3,15 +3,15 @@
 
 # engine
 
-path `search/engine` · uuid `c250c0c9-143d-83f5-84e9-3046afa4d36c` · diamond `07b7c6ac-ba8a-8059-be2e-68b5d5cb132b`
+path `search/engine` · uuid `c250c0c9-143d-83f5-84e9-3046afa4d36c` · diamond `6a2bba3f-c9fd-8d85-8830-a6dbc586c160`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `10/10` · folded `1` · bonds in `4` out `4`
+links `10/10` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → aura·displacement·event·find·flow·hooks·horo·identity·law·matrix·merge·query·rank·search·specification·standard·vehicle·workflow · ← aura·displacement·event·find·flow·hooks·horo·identity·law·matrix·merge·query·rank·search·specification·standard·vehicle·workflow
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `c9aaca2b-145d-80c6-bce2-6e114d2f0948` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7930b40e-f8b7-828c-a6cb-a8d77e9b4b4f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # salinity
 
-path `salinity` · uuid `0fd8688a-2722-8d83-8aba-f10b140a1b3d` · diamond `129ee647-c17a-8b4d-bf90-ab5dc274734c`
+path `salinity` · uuid `0fd8688a-2722-8d83-8aba-f10b140a1b3d` · diamond `b8228ac5-1522-8421-9f3d-91febaf3d9ca`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agriculture·fertility·irrigation·law·measure·moisture·soil · exports salinity · escapes —
-links `19/19` · folded `1` · bonds in `5` out `5`
+links `19/19` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → article·cohort·landmarks·memories·stat · ← article·cohort·landmarks·memories·stat
+neighbors → agriculture·aquaculture·fertility·irrigation·law·measure·moisture·soil · ← agriculture·aquaculture·fertility·irrigation·law·measure·moisture·soil
 analysis —
 law salinity is soluble-salt buildup (ECe) — a [[soil]]-degradation axis orthogonal to N-P-K [[fertility]]: a soil can be chemically fertile yet too saline to crop, and the measured ECe is the [[measure]] both the [[irrigation]] water and the fertility plan are judged against.
 
 ---
 
-<sub>content-uuid `bc1e56cf-2b6c-8640-bdc1-1cdb551f4852` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80ee8e72-ae48-86ea-96ee-4a59e86a2b2a` · `pnpm readme` · `pnpm computed:check`</sub>

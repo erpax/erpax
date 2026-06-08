@@ -2,7 +2,7 @@
 
 # requirements
 
-> atom `compliance/frameworks/compliance/requirements` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `compliance/frameworks/compliance/requirements` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `compliance` · sub-root `9b1931fc-526d-8686-bbd2-928435640965`
 - bond degree `36` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -40,7 +40,7 @@
 
 ## analytics
 
-- bond degree `36` · sealed `1` · horo `7`
+- bond degree `36` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
@@ -54,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `655b039a-bf38-8c93-b56a-c0b48fc7c389` · framed by typography partition `compliance` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dc633c34-6612-8bb9-86f6-fbafe6424e21` · framed by typography partition `compliance` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

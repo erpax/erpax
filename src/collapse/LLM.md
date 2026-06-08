@@ -4,7 +4,7 @@
 # collapse
 
 path `collapse` · uuid `5c3cb38e-0a65-8fb1-a7a5-158f54af9308` · diamond `57e8fae7-871b-87f3-b53b-9b99ec4ae32b`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+horo `4` `weave` · trinity `1·0·0` · sealed `0`
 imports akashic·all·angel·atom·aura·breath·code·commerce·competencies·duality·entity·fractal·generate·holographic·horo·law·merge·network·one·part·plugins·power·profane·proof·recover·research·rodin·sacred·self·sequence·spec·standard·tags·transaction·trinity·types·whole·zeropoint · exports collapse · escapes —
 links `78/78` · folded `1` · bonds in `1594` out `1589`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `fa1590bd-9ec4-8c7b-8f76-31725ed04c9e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe25503a-a7d9-8ed3-9295-679ed3a27f0d` · `pnpm readme` · `pnpm computed:check`</sub>

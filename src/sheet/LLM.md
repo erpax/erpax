@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·music·sti · exports sheet · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistical · ← cohort·landmarks·memories·stat·statistical
+neighbors → collapse·law·merge·music·sti · ← collapse·law·merge·music·sti
 analysis —
 law sheet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3a2ece54-1678-8539-b6b7-5c0520968c9f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee65d29b-52f2-81f3-a648-c22e6e50e616` · `pnpm readme` · `pnpm computed:check`</sub>

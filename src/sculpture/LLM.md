@@ -3,15 +3,15 @@
 
 # sculpture
 
-path `sculpture` · uuid `5c524098-0b6f-800f-bc0e-42ecb5bc57be` · diamond `d5fb1a40-8b81-8667-8fba-74ba34fa6b0a`
+path `sculpture` · uuid `5c524098-0b6f-800f-bc0e-42ecb5bc57be` · diamond `63e7900e-1a46-8387-9b19-9c60b410f209`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sculpture · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·notice·roof·search·theater · ← landmarks·notice·roof·search·theater
+neighbors → law·thing · ← law·thing
 analysis —
 law sculpture is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `aa1ce62e-8c26-8fcb-99cd-e873157a929e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `03dd1ae0-6ce2-8fb6-a8d6-b81795d08739` · `pnpm readme` · `pnpm computed:check`</sub>

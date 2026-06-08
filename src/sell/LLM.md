@@ -3,15 +3,15 @@
 
 # sell
 
-path `sell` · uuid `21577df2-f6cf-83fa-9be5-634885226000` · diamond `47a7def1-b831-8e86-a94e-a5f33eedf853`
+path `sell` · uuid `21577df2-f6cf-83fa-9be5-634885226000` · diamond `231cef13-9505-82a0-a031-646b2c0ad6ab`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports sell · escapes —
-links `5/5` · folded `1` · bonds in `123` out `120`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·access·accounting·age·akashic·atom·aura·befriend·best·beyond·bindings·breakfast·calendars·cardiovascular·catalogue·chat·clinician·cohort·comedy·comment·community·compass·conference·cooking·corruption·crest·declaration·deduplication·destination·dietary·diffusion·drive·dropoff·editor·electrician·eliminations·encodes·exemplifies·findings·flight·founder·game·gears·good·grant·handling·harden·has·high·hobby·holographic·homeopathic·honorific·hook·hooks·hopats·horo·id·invariant·landmarks·license·list·localize·locations·logo·love·lyricist·maintainer·marine·marry·memories·notice·office·parent·partial·participant·pickup·platform·podiatric·policy·process·progression·promise·public·query·rank·recommendation·recourse·recover·recruiting·reimbursement·results·rheumatologic·risk·roadmap·rule·saturday·sections·sectors·see·seed·sign·solve·soundtrack·spouse·stat·statistics·structured·suspended·swatch·thesis·variables·vent·vibration·virus·voting·win·workflow·wp · ← 3986·6585·access·accounting·age·akashic·atom·aura·befriend·best·beyond·bindings·breakfast·breakfast·calendars·cardiovascular·catalogue·chat·clinician·cohort·comedy·comment·community·compass·conference·cooking·corruption·crest·declaration·deduplication·destination·dietary·dietary·diffusion·drive·dropoff·editor·electrician·eliminations·encodes·exemplifies·findings·flight·founder·game·gears·good·grant·handling·harden·has·high·hobby·holographic·homeopathic·honorific·hook·hooks·hopats·horo·id·invariant·landmarks·license·list·localize·locations·logo·love·lyricist·maintainer·marine·marry·memories·notice·office·office·parent·partial·participant·pickup·platform·podiatric·policy·process·progression·promise·public·query·rank·recommendation·recourse·recover·recruiting·reimbursement·results·rheumatologic·risk·roadmap·rule·saturday·sections·sectors·see·seed·sign·solve·soundtrack·spouse·stat·statistics·structured·suspended·swatch·thesis·variables·vent·vibration·virus·voting·win·workflow·wp
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law sell is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5dce4ef5-4d3b-8e30-aaee-885641b981b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `de9c6048-9586-8362-a46f-13b0a57b1289` · `pnpm readme` · `pnpm computed:check`</sub>

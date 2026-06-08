@@ -3,15 +3,15 @@
 
 # server
 
-path `server` · uuid `c2b23919-359a-831d-bb0d-aecb45198c2a` · diamond `d2f0e365-c945-883e-91bb-5780eec2a17f`
+path `server` · uuid `c2b23919-359a-831d-bb0d-aecb45198c2a` · diamond `3463bb35-2be5-89f2-b4d9-8911b68ce2da`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·game·law·merge·status·sti · exports server · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·game·law·merge·status·sti · ← collapse·game·law·merge·status·sti
 analysis —
 law server is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `421c3506-adf4-8d5b-a99f-96dfe6a82161` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eae21f95-45dd-81d4-b5d7-89249a4fba60` · `pnpm readme` · `pnpm computed:check`</sub>

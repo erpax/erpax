@@ -3,15 +3,15 @@
 
 # security
 
-path `security` · uuid `77b56802-f1c9-8cc7-a042-dbfb947e665f` · diamond `10653c62-dca7-86b4-9466-0142f04c4215`
+path `security` · uuid `77b56802-f1c9-8cc7-a042-dbfb947e665f` · diamond `8dbe7578-718a-8c52-b228-7cd4b215af43`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports clearance·collapse·law·merge·requirement·screening·sti · exports security · escapes —
-links `7/7` · folded `1` · bonds in `17` out `19`
+links `7/7` · folded `1` · bonds in `25` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·atom·catalogue·cohort·entertainment·grant·landmarks·marry·marry·memories·memories·qualification·security·shred·spreadsheet·symbol·tvclip·wellbeing·win · ← addressed·atom·catalogue·cohort·entertainment·grant·landmarks·marry·memories·qualification·security·shred·spreadsheet·symbol·tvclip·wellbeing·win
+neighbors → access·biometric·clearance·collapse·cost·duality·engineering·entry·fear·law·law·love·merge·proof·quantum·receipt·requirement·research·sandbox·screening·security·sti·tamper·testing·trust·uuid · ← access·biometric·clearance·collapse·cost·duality·engineering·entry·fear·law·love·merge·proof·quantum·receipt·requirement·research·sandbox·screening·security·sti·tamper·testing·trust·uuid
 analysis —
 law security is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2cd78a74-f174-8e12-8d42-21708d6a6d53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d1d45c46-bdc6-831a-b1a3-776f43297dc0` · `pnpm readme` · `pnpm computed:check`</sub>

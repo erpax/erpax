@@ -2,7 +2,7 @@
 
 # memory
 
-> atom `quantum/memory` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/memory` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -16,21 +16,35 @@
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
-| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[typography]]/partition `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `113` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `—`
+- bond degree `69` · analysis neighbors —
+- graph root `—`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `69` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e`
-- bonds in `29` · out `33`
+- uuid `a34b1a22-051a-87cf-92c9-73e1ce0ece5f`
+- bonds in `31` · out `38`
 - trinity form·code·proof `1`·`1`·`1`
 - links `47` / `47`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `8141952c-d0e6-8953-b195-813dd8a00d34` · framed by typography partition `quantum` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b5ca4911-5cfc-8742-8853-59feb20c304d` · framed by typography partition `quantum` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>

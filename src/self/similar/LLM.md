@@ -3,15 +3,15 @@
 
 # similar
 
-path `self/similar` · uuid `7cc4380f-6ae5-8e92-9ff0-0325dc2c1f06` · diamond `e31ba42a-92a7-8986-8f7f-f0e594c58a05`
+path `self/similar` · uuid `7cc4380f-6ae5-8e92-9ff0-0325dc2c1f06` · diamond `a9c210bc-ddda-879d-9e65-05bed65906fb`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/rodin · exports function · escapes —
-links `20/20` · folded `1` · bonds in `6` out `6`
+links `20/20` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·command·endpoints·features·landmarks·salon · ← activities·command·endpoints·features·landmarks·salon
+neighbors → coil·entropy·fractal·gate·holographic·horo·law·merge·rodin·self·sequence·similar·thing·whole · ← coil·entropy·fractal·gate·holographic·horo·law·merge·rodin·self·sequence·similar·thing·whole
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `0fbf061f-c16d-8af8-a7eb-823276b67369` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `53a0c3e4-2721-8267-afd8-0ab9d378262a` · `pnpm readme` · `pnpm computed:check`</sub>

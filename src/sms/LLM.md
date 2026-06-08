@@ -3,15 +3,15 @@
 
 # sms
 
-path `sms` · uuid `6afb0274-4b66-866f-b760-fad5ee6e3bff` · diamond `f393b143-2e76-8023-bdda-59e94532a50c`
+path `sms` · uuid `6afb0274-4b66-866f-b760-fad5ee6e3bff` · diamond `34866f2c-b24f-8462-953f-acdfb936b300`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·service·sti · exports sms · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·number·service·sti · ← collapse·law·merge·number·service·sti
 analysis —
 law sms is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `21dc212b-2850-82af-8086-9610f8fdeead` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d8a3b2b6-169f-8831-b934-ccb9d0bb9e98` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # segment
 
-path `segment` · uuid `f729ad2f-87f2-80ca-88ef-56a50d17d77c` · diamond `aff02338-1fc3-8593-b9ed-345c37ad24f0`
+path `segment` · uuid `f729ad2f-87f2-80ca-88ef-56a50d17d77c` · diamond `fffcfc67-cfd5-8fd1-9df5-23f12113f3b8`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports cost·dimension·financial·law·legal · exports segment · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·communication·landmarks·memories·stat · ← action·cohort·communication·landmarks·memories·stat
+neighbors → awareness·centers·cohort·diffusion·dimension·law·leadscore·reportings·retention·statements·upsell · ← awareness·centers·cohort·diffusion·dimension·law·leadscore·reportings·retention·statements·upsell
 analysis —
 law a segment is a reporting dimension over the ledger, NOT a chart-of-accounts axis — revenue/expense/asset/liability group for disclosure without polluting the GL.
 
 ---
 
-<sub>content-uuid `4994bc61-ab41-836c-8550-5f077d28fc26` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1594770e-50ed-8952-9f1c-0921cd62dcf1` · `pnpm readme` · `pnpm computed:check`</sub>

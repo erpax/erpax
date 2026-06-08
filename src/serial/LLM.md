@@ -3,15 +3,15 @@
 
 # serial
 
-path `serial` · uuid `f20ed395-4fa7-8984-becc-f9ce5863c9db` · diamond `4fe56e10-c584-893b-ab61-f2607181af89`
+path `serial` · uuid `f20ed395-4fa7-8984-becc-f9ce5863c9db` · diamond `3350550d-e1b8-8d45-b16c-3f7a0f6a38f8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports serial · escapes —
-links `5/5` · folded `1` · bonds in `8` out `8`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → catalog·coach·cohort·defence·landmarks·memories·stat·tech · ← catalog·coach·cohort·defence·landmarks·memories·stat·tech
+neighbors → collapse·law·merge·number·sti · ← collapse·law·merge·number·sti
 analysis —
 law serial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f31eec1c-8497-8b83-a38d-e3caf393f0cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e99bbd0-8890-84ed-9115-0fe2c0804c7d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # size
 
-path `size` · uuid `6282e83a-3162-8ee4-bc79-ed9262bf625b` · diamond `76d3b9a0-0115-8abf-adc8-b5863587fe3d`
+path `size` · uuid `6282e83a-3162-8ee4-bc79-ed9262bf625b` · diamond `26eaaef5-30ae-8c5c-bf33-65d0884edf34`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collection·content·enumeration·file·floor·frame·group·law·party·serving·specification·system·video·wearable · exports size · escapes —
-links `14/14` · folded `1` · bonds in `6` out `6`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·separation·stat · ← cohort·landmarks·memories·notice·separation·stat
+neighbors → collection·content·enumeration·file·floor·frame·group·law·party·serving·specification·system·video·wearable · ← collection·content·enumeration·file·floor·frame·group·law·party·serving·specification·system·video·wearable
 analysis —
 law size is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `83b92aa2-3db3-8408-9756-c3bb590385a0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `81f5c452-94a2-88eb-b01c-44cee845ef34` · `pnpm readme` · `pnpm computed:check`</sub>

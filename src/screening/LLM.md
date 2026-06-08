@@ -3,15 +3,15 @@
 
 # screening
 
-path `screening` · uuid `bbaf7ba9-91c5-8317-96eb-ccd5c09d89af` · diamond `37471e03-34cd-8efe-9f9e-7f3f8e84c38a`
+path `screening` · uuid `bbaf7ba9-91c5-8317-96eb-ccd5c09d89af` · diamond `7ec70158-9dac-8f35-b2a2-ae376aeb0dc2`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·security·sti · exports screening · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memo·memories·outlier·plugins·restocking·stat · ← cohort·landmarks·memo·memories·outlier·plugins·restocking·stat
+neighbors → collapse·event·law·merge·security·sti · ← collapse·event·law·merge·security·sti
 analysis —
 law screening is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e327192c-6d7a-8781-a2ea-a2697124cbbd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e94d167-fe2c-8ce2-92b1-019ae0308e5f` · `pnpm readme` · `pnpm computed:check`</sub>

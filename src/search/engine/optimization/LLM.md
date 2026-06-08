@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
 links `7/7` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·support · ← cohort·landmarks·memories·stat·support
+neighbors → discover·keyword·keywords·rank·search · ← discover·keyword·keywords·rank·search
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `03894bb3-e642-801d-8f3e-29413dbaab1d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5219660-088d-8b23-bc26-a18f2134415f` · `pnpm readme` · `pnpm computed:check`</sub>

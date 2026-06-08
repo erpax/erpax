@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports art·collapse·law·merge·sti · exports sequential · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·siblings·stat · ← cohort·landmarks·memories·siblings·stat
+neighbors → art·collapse·law·merge·sti · ← art·collapse·law·merge·sti
 analysis —
 law sequential is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `44d9b5c9-ca86-8dad-9d29-2cae81565dbf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14b72062-e19e-8b91-97d0-4c745cf89bc6` · `pnpm readme` · `pnpm computed:check`</sub>

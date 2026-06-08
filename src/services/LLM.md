@@ -3,15 +3,15 @@
 
 # services
 
-path `services` · uuid `09101c0f-0d5e-84b5-802b-925e86b2cc7f` · diamond `96133d87-700f-8638-9f73-51219cfb19eb`
+path `services` · uuid `09101c0f-0d5e-84b5-802b-925e86b2cc7f` · diamond `dd7c7a30-1adc-8f91-94d1-55c355f1885f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports akashic·atom·collapse·collections·fractal·holographic·hooks·identity·law·merge·proof·self·society·trinity·uuid · exports services · escapes —
-links `25/25` · folded `1` · bonds in `8` out `8`
+links `25/25` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·corrects·has·landmarks·memories·physiological·spa·stat · ← cohort·corrects·has·landmarks·memories·physiological·spa·stat
+neighbors → akashic·atom·collapse·collections·fractal·holographic·hooks·identity·law·merge·proof·self·society·trinity·uuid · ← akashic·atom·collapse·collections·fractal·holographic·hooks·identity·law·merge·proof·self·society·trinity·uuid
 analysis —
 law logic belongs in services, never in the schema — one folder = one pure organ, testable in isolation with no Payload booted, composed by import with no root barrel ([[holographic]]).
 
 ---
 
-<sub>content-uuid `7031d0a9-f872-85c9-a8c6-ec1b9727a516` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7b531003-98ae-8bb8-8043-c983eecf8453` · `pnpm readme` · `pnpm computed:check`</sub>

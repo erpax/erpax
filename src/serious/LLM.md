@@ -3,15 +3,15 @@
 
 # serious
 
-path `serious` · uuid `2f83ba57-1405-8a57-a2a6-e8f504e518e0` · diamond `84a11606-0cfe-80cc-bde6-531cdd5ef77a`
+path `serious` · uuid `2f83ba57-1405-8a57-a2a6-e8f504e518e0` · diamond `693030c2-3088-8b5f-b081-c5a9cdd18eb4`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports adverse·collapse·law·merge·outcome·sti · exports serious · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → adverse·collapse·law·merge·outcome·sti · ← adverse·collapse·law·merge·outcome·sti
 analysis —
 law serious is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a42c6e15-5d5b-88a0-9017-14db6a018eaa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0715695a-eab1-880b-b65a-5043bde76ed3` · `pnpm readme` · `pnpm computed:check`</sub>

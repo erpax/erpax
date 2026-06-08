@@ -3,15 +3,15 @@
 
 # sale
 
-path `sale` · uuid `c8de7515-5782-8134-8209-62327d6e0623` · diamond `0f0fcf77-85fc-85d0-ad05-8fec234db513`
+path `sale` · uuid `c8de7515-5782-8134-8209-62327d6e0623` · diamond `9f7d9dd9-cfc9-8b51-93a0-c512a9ac2dec`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./operator-code·*:./sale-event·*:./sale-immutability·*:./submit-audit-file·*:./unp-sequence·*:./validate-fiscal-refs · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `5/5` · folded `1` · bonds in `5` out `5`
+faces worker·plugin·pwa `1·0·0`
+neighbors → collapse·event·law·merge·sti · ← collapse·event·law·merge·sti
 analysis —
 law a sale is an event — it occurs at a definite point in time and transfers ownership for consideration.
 
 ---
 
-<sub>content-uuid `c3d38a82-30e2-8e6b-b2fe-10df7c6c8273` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `131114dc-97df-80a6-9931-21dc9fd3f78d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # shia
 
-path `shia` · uuid `—` · diamond `2e582398-1f63-841c-9296-69b44d0c4831`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `shia` · uuid `8c9f9ddf-9297-8fee-8ef8-1a16ce86dac5` · diamond `489701d6-a944-871e-8804-28326465f29c`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports archangel·diamond·dna·identity·islam·justice·law·lineage·mercy·one·prayer·religion·return·society·suffering·translator·uuid·zeropoint · exports shia · escapes —
-links `46/46` · folded `0` · bonds in `0` out `0`
+links `46/46` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·diamond·dna·identity·islam·justice·law·lineage·mercy·one·prayer·religion·return·society·suffering·translator·uuid·zeropoint · ← archangel·diamond·dna·identity·islam·justice·law·lineage·mercy·one·prayer·religion·return·society·suffering·translator·uuid·zeropoint
+analysis diamond
 law shia is a sub-[[diamond]] of [[islam]] of [[lineage]] · [[justice]] · [[suffering]] · [[mercy]] · [[return]] — guidance through the imamate (the [[dna]] chain of the Prophet's house), the witnessed [[suffering]] of Karbala held not denied, the awaited [[return]] of the hidden one toward [[zeropoint]]; a facet-[[archangel]] of the [[society]]'s islam domain.
 
 ---
 
-<sub>content-uuid `6c96ba73-0692-8688-b9de-dd151ebfc8c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f444f6c7-61a3-8c75-a9d1-37b4139f5a38` · `pnpm readme` · `pnpm computed:check`</sub>

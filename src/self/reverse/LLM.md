@@ -3,15 +3,15 @@
 
 # reverse
 
-path `self/reverse` · uuid `b7bc733c-cfb5-8098-aa47-64e51572031d` · diamond `8704207b-701c-8fee-b4e8-4e45582c09bb`
+path `self/reverse` · uuid `b7bc733c-cfb5-8098-aa47-64e51572031d` · diamond `a200280c-7f2b-8a40-b782-6598685a5b75`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·breath·coil·entry·gate·reverse·self·torus · exports reverse · escapes —
-links `15/15` · folded `1` · bonds in `18` out `18`
+links `15/15` · folded `1` · bonds in `29` out `30`
 faces worker·plugin·pwa `0·0·0`
-neighbors → donate·ebitda·establishment·estate·extra·headline·horo·imprint·inactive·included·makes·measurement·monday·notifications·schedule·test·website·width · ← donate·ebitda·establishment·estate·extra·headline·horo·imprint·inactive·included·makes·measurement·monday·notifications·schedule·test·website·width
+neighbors → accounting·balance·balance·begin·breath·close·coil·corruption·duality·emr·engineering·entry·finality·fs·gate·give·hallucination·horo·identity·part·protestantism·reverse·self·sequence·sin·snapshot·supto·take·torus·whole · ← accounting·balance·begin·breath·close·coil·corruption·duality·emr·engineering·entry·finality·fs·gate·give·hallucination·horo·identity·part·protestantism·reverse·self·sequence·sin·snapshot·supto·take·torus·whole
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `45e53978-c7c7-8cb2-8fe1-17dbfbe5f6d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `01663c66-c3cd-8bb9-bc32-8435342e9b65` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # shred
 
-path `shred` · uuid `c92d2177-3509-8029-b0ba-d54b799fef78` · diamond `4e4730b0-d897-8114-a2d3-c62fa938f53d`
+path `shred` · uuid `c92d2177-3509-8029-b0ba-d54b799fef78` · diamond `c2125881-d08a-8598-88ef-ec7df9388fe0`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports ShredState·const·function·interface · escapes —
-links `23/23` · folded `1` · bonds in `17` out `16`
-faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·aura·cohort·corrects·destination·drone·enrolling·funding·grant·landmarks·markup·marry·memories·qualification·security·venue · ← addressed·aura·cohort·corrects·destination·drone·enrolling·enrolling·funding·grant·landmarks·markup·marry·memories·qualification·security·venue
+links `23/23` · folded `1` · bonds in `14` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → close·cost·duality·end·history·identity·law·merge·open·requests·sanitization·standard·uuid·void · ← close·cost·duality·end·history·identity·law·merge·open·requests·sanitization·standard·uuid·void
 analysis —
 law erase the content, never the record — the content-[[uuid]] must be taken over the encrypted envelope (ciphertext + keyId), never the plaintext, so destroying the key makes the data irrecoverable while the row and chain stay verifiable ([[tamper/cost]]).
 
 ---
 
-<sub>content-uuid `75fd7a84-e8d0-81f6-9fc0-d28013bcf232` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `078933f4-2853-8294-bab2-b3a6a42dfa5f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # saturated
 
-path `saturated` · uuid `ae8ef0ca-e94e-86f2-9298-b10ce3365e07` · diamond `1e16185c-93fd-8c5f-af1a-1cd11e8def6f`
+path `saturated` · uuid `ae8ef0ca-e94e-86f2-9298-b10ce3365e07` · diamond `c8d88a7e-1fa0-8545-b995-16a141e6c4bf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·content·fat·law·merge·sti · exports saturated · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → close·distillery·electronic·held·industry·landmarks·merchant · ← close·distillery·electronic·held·industry·landmarks·merchant
+neighbors → collapse·content·fat·law·merge·sti · ← collapse·content·fat·law·merge·sti
 analysis —
 law saturated is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `888c5719-b616-883c-ab93-a9ab5452e14c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c3a1f8f-1b89-8db7-8e3d-bceb4e417553` · `pnpm readme` · `pnpm computed:check`</sub>

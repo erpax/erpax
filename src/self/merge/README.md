@@ -2,7 +2,7 @@
 
 # merge
 
-> atom `self/merge` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `self/merge` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `self` · sub-root `b4dbad62-5160-8e20-965a-beb081d259ee`
-- bond degree `1831` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `5364` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `0fa7a355-de7f-8d47-8813-1afa5368a613`
-- bonds in `5` · out `5`
+- uuid `2091437a-c6eb-8672-91c7-1797d57f8f23`
+- bonds in `1788` · out `1755`
 - trinity form·code·proof `1`·`0`·`0`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ac9f310a-90ef-8560-a32d-2d76904c6650` · framed by typography partition `self` bonds `1831` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ad62419b-3e03-8916-84d3-a63d084aa8d7` · framed by typography partition `self` bonds `5364` · `pnpm readme` · `pnpm readme:check`</sub>

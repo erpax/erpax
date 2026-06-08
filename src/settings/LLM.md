@@ -3,15 +3,15 @@
 
 # settings
 
-path `settings` · uuid `043cf820-5454-8cef-bf5e-90599298e20f` · diamond `d99c706e-f3b4-8816-aae5-45b1765230f8`
+path `settings` · uuid `043cf820-5454-8cef-bf5e-90599298e20f` · diamond `2eda409c-147e-8676-afd0-8d2ba4fa2270`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·delivery·law·link·merge·rate·shipping·sti·time · exports settings · escapes —
-links `9/9` · folded `1` · bonds in `11` out `11`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·attendance·correlation·effective·emergency·homeopathic·landmarks·pathology·snapshots·thing·wheelbase · ← accounting·attendance·correlation·effective·emergency·homeopathic·landmarks·pathology·snapshots·thing·wheelbase
+neighbors → collapse·delivery·law·link·merge·rate·shipping·sti·time · ← collapse·delivery·law·link·merge·rate·shipping·sti·time
 analysis —
 law settings are reusable named configuration linked into many shipments by reference, so one edit to the setting reprices every shipment that points at it.
 
 ---
 
-<sub>content-uuid `a1fdd17f-1439-88d1-a15d-532367fd4d60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06b73f91-d6da-8e97-86c3-11f5930d4ef2` · `pnpm readme` · `pnpm computed:check`</sub>

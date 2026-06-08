@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports allowed·collapse·law·merge·sti · exports smoking · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·procedure·stat · ← cohort·landmarks·memories·procedure·stat
+neighbors → allowed·collapse·law·merge·sti · ← allowed·collapse·law·merge·sti
 analysis —
 law smoking is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f24d21d7-fe32-8512-ad92-69d40bf6d3c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72a2add5-a001-8318-b5f5-801200762f30` · `pnpm readme` · `pnpm computed:check`</sub>

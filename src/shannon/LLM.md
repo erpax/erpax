@@ -3,15 +3,15 @@
 
 # shannon
 
-path `shannon` · uuid `883463dd-6d1a-8d1b-873c-177ef6a6d822` · diamond `72ce4b76-4c0b-8446-b910-e444c7c22ac0`
+path `shannon` · uuid `883463dd-6d1a-8d1b-873c-177ef6a6d822` · diamond `ad9d4523-2ad2-89f8-82a4-e98fd1752d3c`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/surprisal · exports const·function · escapes —
-links `15/15` · folded `1` · bonds in `26` out `26`
-faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·computer·deduction·deleted·desire·desktop·federation·four·harden·import·issn·kiosk·landmarks·memories·occupancy·order·quote·rates·relationship·restocking·separation·series·stat·terminated·thing · ← amount·cohort·computer·deduction·deleted·desire·desktop·federation·four·harden·import·issn·kiosk·landmarks·memories·occupancy·order·quote·rates·relationship·restocking·separation·series·stat·terminated·thing
+links `15/15` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → boltzmann·cost·entropy·law·redundancy·surprisal·tamper·uuid · ← boltzmann·cost·entropy·law·redundancy·surprisal·tamper·uuid
 analysis —
 law information entropy H = −Σ pᵢ·log₂ pᵢ is the expected surprisal — zero at certainty, maximal (log₂ n) at uniform — the bits a message carries and the bits a tamper must reproduce; it is the information twin of thermodynamic entropy (same −Σp ln p).
 
 ---
 
-<sub>content-uuid `66c3a336-ee00-8e54-b738-f4da796b2e6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fb0ba865-0a33-8a34-ac0c-7825df69fdc5` · `pnpm readme` · `pnpm computed:check`</sub>

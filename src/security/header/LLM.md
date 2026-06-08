@@ -3,15 +3,15 @@
 
 # header
 
-path `security/header` · uuid `38745e62-d5c2-804a-9777-c475c0d873a9` · diamond `a7e274a5-3d77-810c-b318-55ed6852d6eb`
+path `security/header` · uuid `38745e62-d5c2-804a-9777-c475c0d873a9` · diamond `3bde93a3-76cf-84ac-b32c-7640dd800a6c`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports applySecurityHeaders·buildSecurityHeaders·defaultSecurityHeaders·type · escapes —
-links `1/1` · folded `1` · bonds in `21` out `21`
+links `1/1` · folded `1` · bonds in `5` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·aura·balance·certified·coding·collide·courthouse·cropplan·entertainment·fax·handling·holographic·import·journal·landmarks·nutrition·qualification·reconcile·rsvp·satire·workflow · ← angel·aura·balance·certified·coding·collide·courthouse·cropplan·entertainment·fax·handling·holographic·import·journal·landmarks·nutrition·qualification·reconcile·rsvp·satire·workflow
+neighbors → collapse·law·law·merge·sti·wp · ← collapse·law·merge·sti·wp
 analysis —
 law the security headers are a composite of independent standards (HSTS · CSP · Referrer-Policy · Permissions-Policy · nosniff · frame-options) emitted by pure functions over a config object — defense-in-depth is layered and I/O-free, computed from configuration, never hardcoded per route.
 
 ---
 
-<sub>content-uuid `ba5d9c01-a1f5-81b9-b188-506fffd4dd5c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d49f7e8e-fcae-8731-a5e0-c170f7abed7e` · `pnpm readme` · `pnpm computed:check`</sub>

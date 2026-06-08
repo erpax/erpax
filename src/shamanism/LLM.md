@@ -3,15 +3,15 @@
 
 # shamanism
 
-path `shamanism` · uuid `—` · diamond `dfd49792-d9ca-88d6-aa53-6dd3f78659ad`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `shamanism` · uuid `2cf2e742-da69-8af1-b3f4-7c444f0d3b2e` · diamond `5549615a-2b5a-8aea-98f3-bccedfcbae40`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·cross·cycle·death·diamond·dimension·fractal·generate·identity·law·mercy·name·religion·return·ritual·sacred·society·suffering·translator·uuid·whole · exports shamanism · escapes —
-links `54/54` · folded `0` · bonds in `0` out `0`
+links `54/54` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·breath·cross·cycle·death·diamond·dimension·fractal·generate·identity·law·mercy·name·religion·return·ritual·sacred·society·suffering·translator·uuid·whole · ← archangel·breath·cross·cycle·death·diamond·dimension·fractal·generate·identity·law·mercy·name·religion·return·ritual·sacred·society·suffering·translator·uuid·whole
+analysis diamond
 law shamanism is a [[diamond]] of [[cross]] · [[breath]] · [[suffering]] · [[mercy]] · [[death]] · [[return]] · [[sacred]] · [[ritual]] — the practitioner who crosses between [[dimension]]s and returns with what closes a gap, the wounded healer turning [[suffering]] into the cure ([[mercy]] restoring the [[whole]]); as an [[archangel]] it architects the society's domain of the crossing.
 
 ---
 
-<sub>content-uuid `1a3a6c1f-1915-83f7-b084-6fdbf5a3edd6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f1d99610-cbf4-8673-99fa-5baa195c78b5` · `pnpm readme` · `pnpm computed:check`</sub>

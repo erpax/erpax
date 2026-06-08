@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports significance · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·thing · ← law·thing
 analysis —
 law significance is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d4bbd740-76cd-8c34-9a16-c0460654209c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5b5cf2d1-b540-8c48-bfeb-e03a985a3973` · `pnpm readme` · `pnpm computed:check`</sub>

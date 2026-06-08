@@ -3,15 +3,15 @@
 
 # separation
 
-path `separation` · uuid `9ef856dd-2e71-84da-a8f5-f8283f83f3d0` · diamond `46b249bd-5e2c-84fe-a503-11853ae03f81`
+path `separation` · uuid `9ef856dd-2e71-84da-a8f5-f8283f83f3d0` · diamond `c2da20c3-d9fc-8249-a984-9cfafafd7b17`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/anti/corruption · exports Branch·function·interface · escapes —
-links `10/10` · folded `1` · bonds in `41` out `41`
+links `10/10` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·address·area·audience·available·brewery·bylines·change·conventional·cup·draw·embed·file·fire·follow·goodwill·harden·integer·landmarks·learning·lnid·matter·notice·op·osteopathic·painting·patient·person·pool·processing·properties·quest·salary·sanitization·shannon·size·taggings·temperature·terms·therapeutic·unlimited · ← accounting·address·area·audience·available·brewery·bylines·change·conventional·cup·draw·embed·file·fire·follow·goodwill·harden·integer·landmarks·learning·lnid·matter·notice·op·osteopathic·painting·patient·person·pool·processing·properties·quest·salary·sanitization·shannon·size·taggings·temperature·terms·therapeutic·unlimited
+neighbors → balance·constitution·corruption·duality·fractal·governance·law·legislation·society · ← balance·constitution·corruption·duality·fractal·governance·law·legislation·society
 analysis —
 law tyranny and fraud are one violation at different scales — no actor may hold two branches of the state, the identical segregation-of-duties check that forbids a payment's creator from approving it ([[fractal]]: one law, every scale); adds no new logic.
 
 ---
 
-<sub>content-uuid `4170dfe0-f8f5-896f-a3e4-9c0e85e2b60c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d488b8f6-01cb-8857-9247-e4d4000b09de` · `pnpm readme` · `pnpm computed:check`</sub>

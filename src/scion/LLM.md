@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports graft·law·maturity·perennial·propagation·rootstock·taxonomy·variant · exports scion · escapes —
 links `21/21` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·length·memories·provision·provisioned·stat · ← cohort·database·landmarks·length·memories·provision·provisioned·stat
+neighbors → graft·law·maturity·perennial·propagation·rootstock·taxonomy·variant · ← graft·law·maturity·perennial·propagation·rootstock·taxonomy·variant
 analysis —
 law scion is the aerial fruiting cultivar [[graft|grafted]] onto a [[rootstock]] — it carries the produce identity (the variety, a [[taxonomy]] rank and species [[variant]]), and scion ⊕ rootstock is the [[perennial]]'s two-part clonal genetics.
 
 ---
 
-<sub>content-uuid `e96241f0-5f0b-808d-96c4-1fd349fedff8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c8ac3bd3-8d93-8bb7-82f3-ea927e36c6bd` · `pnpm readme` · `pnpm computed:check`</sub>

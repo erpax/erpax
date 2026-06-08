@@ -3,15 +3,15 @@
 
 # seasonal
 
-path `seasonal` · uuid `33662b29-45c7-852e-8df7-3f1c69ff3794` · diamond `43ab2681-457f-8eea-9ae0-6390164c44ae`
+path `seasonal` · uuid `33662b29-45c7-852e-8df7-3f1c69ff3794` · diamond `c0396f9c-3d6a-86f5-9594-4f964787f4aa`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merchant·merge·override·policy·return·sti · exports seasonal · escapes —
-links `8/8` · folded `1` · bonds in `18` out `18`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·colleagues·deduplication·dropoff·euenergy·fertility·founder·has·hobby·holographic·id·landmarks·memories·season·seed·spouse·tour · ← access·accounting·colleagues·deduplication·dropoff·euenergy·fertility·founder·has·hobby·holographic·id·landmarks·memories·season·seed·spouse·tour
+neighbors → collapse·law·merchant·merge·override·policy·return·sti · ← collapse·law·merchant·merge·override·policy·return·sti
 analysis —
 law seasonal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d1355f1d-4f0d-8312-ba79-d574a1d14629` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f7395a0-f0b0-8a4a-98e9-a196d6d878f1` · `pnpm readme` · `pnpm computed:check`</sub>

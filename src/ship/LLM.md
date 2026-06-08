@@ -3,15 +3,15 @@
 
 # ship
 
-path `ship` · uuid `8c27033a-adbe-82ad-8486-e958dbce555e` · diamond `ac1501eb-aa31-8352-bdc3-4e22cde9cbe7`
+path `ship` · uuid `8c27033a-adbe-82ad-8486-e958dbce555e` · diamond `48d61f52-4294-84be-b72f-43656ff28edd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·does·law·merge·not·sti · exports ship · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → diffusion·landmarks·shift · ← diffusion·landmarks·shift
+neighbors → collapse·does·law·marine·merge·not·sti · ← collapse·does·law·marine·merge·not·sti
 analysis —
 law ship is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e494e532-7bc1-8953-9765-4ddf7dce2b98` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da60ecfb-0a98-8f6b-b325-e0feb04489dd` · `pnpm readme` · `pnpm computed:check`</sub>

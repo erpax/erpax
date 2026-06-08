@@ -339,10 +339,12 @@ export function waveInSecureComms(opts: {
     emit,
     team: opts.team,
   })
-  const result: WaveInSecureCommsResult = { verdict, emit }
-  if (opts.receipt) {
-    const waveVerdict = verdict.ok ? verdict : { ok: false as const, reason: verdict.reason }
-    result.receipt = receiptTeamCommsEmit({
+  if (!opts.receipt) return { verdict, emit }
+  const waveVerdict = verdict.ok ? verdict : { ok: false as const, reason: verdict.reason }
+  return {
+    verdict,
+    emit,
+    receipt: receiptTeamCommsEmit({
       verdict: waveVerdict,
       actor: opts.receipt.actor,
       emit: {
@@ -351,7 +353,6 @@ export function waveInSecureComms(opts: {
       },
       head: opts.receipt.head,
       timestampIso: opts.receipt.timestampIso,
-    })
+    }),
   }
-  return result
 }

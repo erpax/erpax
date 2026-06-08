@@ -3,15 +3,15 @@
 
 # safety
 
-path `safety` · uuid `d648e0ec-bb89-8a60-99e3-fa412418d7ee` · diamond `66219463-f054-82ac-90cf-41d8d48d2f6e`
+path `safety` · uuid `d648e0ec-bb89-8a60-99e3-fa412418d7ee` · diamond `9d16bdd6-054d-855a-977e-7880f5afb974`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·consideration·law·merge·sti · exports safety · escapes —
-links `5/5` · folded `1` · bonds in `21` out `19`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·attestations·binding·details·emr·id·landmarks·list·literature·marine·mcp·memories·nullability·pats·progression·read·roles·sections·topics · ← access·access·attestations·binding·details·emr·id·landmarks·list·literature·marine·mcp·mcp·memories·nullability·pats·progression·read·roles·sections·topics
+neighbors → closure·collapse·consideration·law·merge·sti · ← closure·collapse·consideration·law·merge·sti
 analysis —
 law safety is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `26492796-976d-83df-9e7a-a1432cb44637` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54bcaf89-4c47-84d3-9e0d-837e5c6612aa` · `pnpm readme` · `pnpm computed:check`</sub>

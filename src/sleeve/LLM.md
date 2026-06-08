@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports sleeve · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law sleeve is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b9947c27-20ba-89a0-b70a-b4ba7ccf50b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `75899ec6-3596-83a5-a9c2-a3253badda5f` · `pnpm readme` · `pnpm computed:check`</sub>

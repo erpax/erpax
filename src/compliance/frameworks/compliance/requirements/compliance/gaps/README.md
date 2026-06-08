@@ -2,7 +2,7 @@
 
 # gaps
 
-> atom `compliance/frameworks/compliance/requirements/compliance/gaps` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `compliance/frameworks/compliance/requirements/compliance/gaps` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `compliance` · sub-root `9b1931fc-526d-8686-bbd2-928435640965`
 - bond degree `3` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -41,7 +41,7 @@
 
 ## analytics
 
-- bond degree `3` · sealed `1` · horo `1`
+- bond degree `3` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `5`
 
@@ -55,8 +55,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5fcbb53a-648f-8f22-9969-562cd68bf8b1` · framed by typography partition `compliance` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e338c0cc-36a3-80b0-9981-58e1b3283cef` · framed by typography partition `compliance` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `casino` · sub-root `6e1f71e3-3b90-8ff6-b21e-8d6c2162b9cf`
 - bond degree `9` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ce2a22c2-41e8-8621-a314-a1598aeabac2` · framed by typography partition `casino` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ada5d604-cf9a-8630-a64b-9562d79a6259` · framed by typography partition `casino` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

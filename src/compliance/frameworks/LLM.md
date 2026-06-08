@@ -4,7 +4,7 @@
 # frameworks
 
 path `compliance/frameworks` · uuid `c015579c-2e59-8c0e-aa04-abe14ffd58e8` · diamond `8b62ba9e-e239-8ff2-b704-e479d3a61fe1`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/authenticated · exports const · escapes —
 links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `0e786c80-d184-85d8-ba8b-83a2fd05b188` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c9e508b-b27d-8181-9a17-670ed44d3dbf` · `pnpm readme` · `pnpm computed:check`</sub>

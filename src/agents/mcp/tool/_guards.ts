@@ -35,11 +35,7 @@
  * @audit Conservation Law 58 uuid-self-protection (tenant-scope branch)
  */
 import type { PayloadRequest } from 'payload'
-
-interface UserShape {
-  readonly tenant?: string
-  readonly roles?: ReadonlyArray<string>
-}
+import { actorFromRequest, mcpAdminMutateVerdict, mcpTenantVerdict } from '@/access'
 
 /**
  * Assert that the caller's authenticated tenant equals the claimed
@@ -50,16 +46,9 @@ interface UserShape {
  * but does NOT include any caller-supplied content (no log injection).
  */
 export function assertTenantMatch(claimedTenantId: string, req: PayloadRequest): void {
-  const user = req.user as UserShape | undefined
-  // No user = trusted internal context (boot, cron, agent runtime).
-  if (!user) return
-  // Super-admin can act cross-tenant for federation / migration / audit.
-  if (Array.isArray(user.roles) && user.roles.includes('super-admin')) return
-  const callerTenant = user.tenant ?? 'platform'
-  if (claimedTenantId !== callerTenant) {
-    throw new Error(
-      `tenant guard (Slice BBBBBBBBBB-cut3): caller scoped to tenant='${sanitize(callerTenant)}' but tool was called with tenantId='${sanitize(claimedTenantId)}'`,
-    )
+  const v = mcpTenantVerdict(actorFromRequest(req), claimedTenantId)
+  if (!v.allowed) {
+    throw new Error(`tenant guard (Slice BBBBBBBBBB-cut3): ${sanitize(v.reason ?? 'denied')}`)
   }
 }
 
@@ -73,19 +62,10 @@ export function assertTenantMatch(claimedTenantId: string, req: PayloadRequest):
  * audit events as part of their declared surface).
  */
 export function assertAdminOnTenant(claimedTenantId: string, req: PayloadRequest): void {
-  assertTenantMatch(claimedTenantId, req)
-  const user = req.user as UserShape | undefined
-  if (!user) return // internal context — trusted
-  const roles = Array.isArray(user.roles) ? user.roles : []
-  if (
-    roles.includes('super-admin')
-    || roles.includes('admin')
-    || roles.includes('tenant-admin')
-    || roles.includes('auditor')
-  ) return
-  throw new Error(
-    `tenant guard (Slice BBBBBBBBBB-cut3): caller lacks admin/auditor role required for state-mutating MCP tool on tenant='${sanitize(claimedTenantId)}'`,
-  )
+  const v = mcpAdminMutateVerdict(actorFromRequest(req), claimedTenantId)
+  if (!v.allowed) {
+    throw new Error(`tenant guard (Slice BBBBBBBBBB-cut3): ${sanitize(v.reason ?? 'denied')}`)
+  }
 }
 
 /** Strip non-printable + length-cap for safe inclusion in error messages. */

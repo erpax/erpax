@@ -3,15 +3,15 @@
 
 # smiles
 
-path `smiles` · uuid `1b5fc7b4-5502-8c60-a9e0-5f1cc431de59` · diamond `502288c0-b3d7-82e1-a06c-274f77b68cdd`
+path `smiles` · uuid `1b5fc7b4-5502-8c60-a9e0-5f1cc431de59` · diamond `5a65e08e-9cb1-8f2e-b79c-fc94523976e4`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports smiles · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·markup·memories·stat · ← cohort·landmarks·markup·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law smiles is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `188ecc29-1661-8904-9072-84c93e81d10a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `71949138-20d8-8a5a-9504-ef5b851cb696` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `charge` · sub-root `0135b4d8-b315-8dd7-b352-cae5831fafec`
 - bond degree `23` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ed35a869-5475-8843-8702-db07605e78ba` · framed by typography partition `charge` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `562c035a-29ad-8744-a6ec-af4ce0164055` · framed by typography partition `charge` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

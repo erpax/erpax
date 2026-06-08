@@ -4,7 +4,7 @@
 # requirements
 
 path `compliance/frameworks/compliance/requirements` · uuid `bdb9d68b-e5d5-8475-8f10-5189d89d018b` · diamond `e694b16a-0598-8e49-a800-a6c9786fed2b`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/authenticated · exports const · escapes —
 links `1/1` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `f22c8536-4c2b-8c3d-bde6-27ac12d8632e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `30616865-f1ca-8468-92d4-240a9e0ec5c2` · `pnpm readme` · `pnpm computed:check`</sub>

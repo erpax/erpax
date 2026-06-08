@@ -23,7 +23,7 @@
 
 - partition `collar` · sub-root `cdd2fc19-d735-8f25-9cbd-4f938e455d99`
 - bond degree `12` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `f0126940-d119-8f87-92ac-2f67c45ee91d` · framed by typography partition `collar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2dba5b00-fcbe-8e1b-9550-2accc4ade8c6` · framed by typography partition `collar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

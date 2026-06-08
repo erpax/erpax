@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `seasonal` · sub-root `33662b29-45c7-852e-8df7-3f1c69ff3794`
-- bond degree `48` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `28` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `33662b29-45c7-852e-8df7-3f1c69ff3794`
-- bonds in `18` · out `18`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `02867733-7ab1-8344-9433-995164da9817` · framed by typography partition `seasonal` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86a2d18a-1410-808f-b4e2-2cbc9a101368` · framed by typography partition `seasonal` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

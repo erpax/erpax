@@ -47,6 +47,21 @@ export function routeOfPath(atomPath: string): string {
   return segs.length ? '/' + segs.join('/') + '/SKILL' : '/SKILL'
 }
 
+/** VitePress top-nav anchors — first N sequence-order skills that exist at atom paths. */
+export function topNavAnchorsFromSequence(
+  sequenceOrder: readonly string[],
+  existsAt: (atomPath: string) => boolean,
+  count = 2,
+): readonly { readonly text: string; readonly link: string }[] {
+  const out: { text: string; link: string }[] = []
+  for (const name of sequenceOrder) {
+    if (!existsAt(name)) continue
+    out.push({ text: name, link: routeOfPath(name) })
+    if (out.length >= count) break
+  }
+  return out
+}
+
 /** Compute `nav` · `group` · `route` from one atom path (frontmatter injection). */
 export function pathNavMeta(atomPath: string): PathNavMeta {
   const path = segmentsOf(atomPath)

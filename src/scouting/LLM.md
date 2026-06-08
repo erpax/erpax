@@ -3,15 +3,15 @@
 
 # scouting
 
-path `scouting` · uuid `12b0d881-c682-8a7d-9f40-b3292a5e7be6` · diamond `91664d0c-baf3-81fb-b32a-beb55bb75b48`
+path `scouting` · uuid `12b0d881-c682-8a7d-9f40-b3292a5e7be6` · diamond `d9271fc2-fc28-8151-9c16-d034a069f9dd`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·cost·crop·cultivation·limit·measure·mulch·risk·workflow · exports scouting · escapes —
-links `20/20` · folded `1` · bonds in `5` out `5`
+links `20/20` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → disclosure·juniors·jurisdiction·quotation·score · ← disclosure·juniors·jurisdiction·quotation·score
+neighbors → agriculture·cost·crop·cultivation·drone·limit·measure·mortality·mulch·pollination·pruning·risk·trellis·workflow · ← agriculture·cost·crop·cultivation·drone·limit·measure·mortality·mulch·pollination·pruning·risk·trellis·workflow
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e18d8841-c31e-843e-b532-a32788a8c275` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1fea2a59-a276-8853-8c86-88e7c5318cec` · `pnpm readme` · `pnpm computed:check`</sub>

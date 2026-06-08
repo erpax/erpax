@@ -3,15 +3,15 @@
 
 # generate
 
-path `self/generate` · uuid `950c7322-9ae8-8258-ad76-872ae860b96a` · diamond `2a0cffa6-1c32-8b43-b12d-3ff99477b0d0`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `self/generate` · uuid `869a8d0b-90ba-8b19-8644-b49b26ff6f6f` · diamond `c698b4b6-9fb7-806a-92f0-27a17c10ffdf`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports akashic·aura·breath·coil·fs·gate·generate·github·mcp·merge·self·zeropoint · exports generate · escapes —
-links `25/25` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `25/25` · folded `1` · bonds in `70` out `74`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·akashic·akashic·allocation·atom·aura·aura·brainstorm·breath·chat·code·coil·collapse·command·compass·concatenate·contribution·derive·development·diamond·duality·element·fractal·fs·gate·generate·generate·generator·github·law·limit·link·matrix·mcp·memory·merge·merge·migrate·one·part·port·prayer·profane·propose·quantum·readme·recover·reference·religion·sacred·science·self·self·sequence·shamanism·shinto·skills·society·source·spec·stream·suffering·sync·test·thought·topography·torus·train·trinity·uuid·website·whole·wisdom·zeropoint · ← agent·akashic·allocation·atom·aura·brainstorm·breath·chat·code·coil·collapse·command·compass·concatenate·contribution·derive·development·diamond·duality·element·fractal·fs·gate·generate·generate·generator·github·law·limit·link·matrix·mcp·memory·merge·migrate·one·part·port·prayer·profane·propose·quantum·readme·recover·reference·religion·sacred·science·self·sequence·shamanism·shinto·skills·society·source·spec·stream·suffering·sync·test·thought·topography·torus·train·trinity·uuid·website·whole·wisdom·zeropoint
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `6244915e-f446-8d0e-9174-65f6cb984465` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d60463d0-2d71-85b3-b680-8b268ae28877` · `pnpm readme` · `pnpm computed:check`</sub>

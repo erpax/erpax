@@ -3,15 +3,15 @@
 
 # t
 
-path `saf/t` · uuid `f7a8cf38-c1e8-8844-ad57-3b74d2d00e26` · diamond `a20e1653-cc0d-8e92-9b78-3b9acd09affd`
+path `saf/t` · uuid `f7a8cf38-c1e8-8844-ad57-3b74d2d00e26` · diamond `ebc7f0ff-7e0f-8001-abbd-5044d92eca82`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports //·SafTAmountStructure·SafTCustomer·SafTGeneralLedgerEntries·SafTJournal·SafTMasterFiles·SafTMovementOfGoods·SafTPartyId·SafTPayment·SafTPaymentMechanism·SafTPaymentMethod·SafTProduct·SafTSalesInvoice·SafTSalesInvoiceLine·SafTSourceDocuments·SafTSupplier·SafTTaxInformation·SafTTaxTableEntry·SafTTransaction·isBalancedGeneralLedger·isSafTPaymentMechanism·isSafTSourceDocumentType · escapes —
-links `1/1` · folded `1` · bonds in `10` out `10`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aggregation·based·cache·distance·emergence·landmarks·menu·numbered·originates·saturday · ← aggregation·based·cache·distance·emergence·landmarks·menu·numbered·originates·saturday
+neighbors → law · ← law
 analysis —
 law SAF-T owns ONE canonical set of types for the four top-level sections (Header · MasterFiles · GeneralLedgerEntries · SourceDocuments) plus the cross-cutting code-list structures — the single shape every consumer (export service, country profile, fixtures) projects the GL + master data onto, so country variants extend the baseline rather than fork it.
 
 ---
 
-<sub>content-uuid `b99fb286-0a04-8113-82b7-06aa57f6bac7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f292a7f-0b72-817e-b79b-86be0da73b84` · `pnpm readme` · `pnpm computed:check`</sub>

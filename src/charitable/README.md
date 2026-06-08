@@ -23,7 +23,7 @@
 
 - partition `charitable` · sub-root `a22b9ef6-36e1-8c2f-82dc-cd124f873c1c`
 - bond degree `12` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `f36454f8-8ce1-8cc6-ae8c-cf9a4c723141` · framed by typography partition `charitable` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d2258c29-6639-8840-beb5-962208454289` · framed by typography partition `charitable` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # shelter
 
-path `shelter` · uuid `e78dadd1-3c80-8f29-b688-33dccf19b6a1` · diamond `82051186-14fc-8847-b5cc-0e581327f6e1`
+path `shelter` · uuid `e78dadd1-3c80-8f29-b688-33dccf19b6a1` · diamond `c44d893e-18f2-8dde-8ee8-b996a517fb6b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports animal·collapse·law·merge·sti · exports shelter · escapes —
-links `5/5` · folded `1` · bonds in `14` out `14`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → clip·corrects·dashboard·dropoff·emr·encodes·high·id·landmarks·list·memories·oid·spouse·venue · ← clip·corrects·dashboard·dropoff·emr·encodes·high·id·landmarks·list·memories·oid·spouse·venue
+neighbors → animal·collapse·law·merge·sti · ← animal·collapse·law·merge·sti
 analysis —
 law shelter is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `07aef77c-9e37-80ab-956e-b334af5a0ade` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9debe91-ebbc-83da-bce5-868835bc0b95` · `pnpm readme` · `pnpm computed:check`</sub>

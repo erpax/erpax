@@ -3,15 +3,15 @@
 
 # shared
 
-path `shared` · uuid `ad504558-985a-846a-b3bc-2ba4eeef4e19` · diamond `9e051b2e-1003-83f7-becd-1a7ba066d478`
+path `shared` · uuid `ad504558-985a-846a-b3bc-2ba4eeef4e19` · diamond `2c6736e3-ed6f-8350-a435-2ce1f9f7f6f0`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./field·AddressBlock·AuditedTimestamp·Money · escapes —
-links `0/0` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → auto·boat·cable·code·cohort·covers·hips·hvac·landmarks·memories·path·stat·thumbnail · ← auto·boat·cable·code·cohort·covers·hips·hvac·landmarks·memories·path·stat·thumbnail
+links `0/0` · folded `1` · bonds in `1` out `1`
+faces worker·plugin·pwa `1·0·0`
+neighbors → content · ← content
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e7d54a2b-3cd8-8968-a932-c6bf42b8304f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `474dfb8d-b944-87f9-8bb6-5d15d75c02f6` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # closure
 
-path `self/closure` · uuid `28aeca8e-a0db-8217-a98b-0338bc2a26eb` · diamond `244cb751-a529-8036-bd8a-f11d82e9c3e0`
+path `self/closure` · uuid `28aeca8e-a0db-8217-a98b-0338bc2a26eb` · diamond `c2f1b6ef-40a8-8796-a46e-bb0a2ebbfafa`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/safety/mode·@/self/closure·@/self/closure/provider · exports EXTERNAL_ROLES·ExternalRole·FallbackContext·FallbackOutcome·InternalProvider·async·function · escapes —
-links `16/16` · folded `1` · bonds in `5` out `5`
+links `16/16` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·database·landmarks·memories·stat · ← cohort·database·landmarks·memories·stat
+neighbors → audit·gate·law·merge·proof·provider·safety·self·society · ← audit·gate·law·merge·proof·provider·safety·self·society
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `aa44184b-643c-8aac-b779-6a7098d4b8b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6798b803-1d4e-8928-8975-1b022f15d69e` · `pnpm readme` · `pnpm computed:check`</sub>

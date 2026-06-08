@@ -56,8 +56,31 @@ const can = (op: AccessRole, slug: string): Access => async ({ req, id }) =>
 - **Access Operation** (login, across everything): `id`/`data`/`doc` are `undefined`, a returned `Where` = "no access" — guard `if (!data) ...`.
 - **Field access** = booleans only (no `Where`); use `req.locale` for locale-specific access.
 
+## Computed access at all levels (`src/access/index.ts`)
+Access is **never hand-pinned** at call sites — it is **derived** through `accessVerdict(actor, resource, action)` and the `computedAccess` namespace. Each level delegates to an existing policy fn (no duplication of [[team]]/comms):
+
+| Level | Surface | Computed via | Hand-kept (intentional) |
+|---|---|---|---|
+| **L1** payload | collection CRUD | `crossCrudVerdict` → [[cross]] `decideCross` + live collection `access` fns at Payload boundary (`overrideAccess: false`) | Per-slug bundles in `@/auth` (`accountingCollectionAccess`, …) until full cross migration |
+| **L2** field | field booleans | same lattice; Payload field `access` | locale-specific field rules |
+| **L3** global | globals CRUD | same cross factory | rare bespoke globals |
+| **L4** mcp | MCP tools | `mcpTenantVerdict` / `mcpAdminMutateVerdict` ← `actorFromRequest` | `wrapToolsWithTenantGuard` mutating set in tool-defs |
+| **L5** agent | dispatch / call / effects | `accessVerdict` level `agent` → [[team]] `tenantMatchVerdict` via `agentTenantVerdict` | `strict-apply` cascade + trust boundary ([[sandbox]] · [[receipt]]) |
+| **L6** emit | chat / realtime | level `emit` → `tenantMatchVerdict` + `waveInSecureComms` | `MAX_BROADCAST_DEPTH` cap |
+| **L7** sandbox | untrusted tool grants | `sandboxVerdict` → [[sandbox]] `permits` | WASM/worker runtime boundary |
+| **L8** docs | vitepress SKILL routes | `docsReadVerdict` — antimatter public by construction | tenant-scoped *data* pages use L1 `tenantScopedRead` + `allowPublicRead` |
+
+Actor identity flows from `actorFromRequest(req)` (Payload user / API key owner) or `actorFromScope(tenantId)` (society dispatch). Content-[[uuid]] + [[horo]] coordinate bind policy at every level; blocked paths are [[receipt]]ed where the gate emits audit ([[sandbox]] · strict-apply MCP).
+
+```ts
+import { accessVerdict, actorFromRequest, computedAccess } from '@/access'
+
+const v = accessVerdict(actorFromRequest(req), { level: 'mcp', tenantId: args.tenantId }, 'execute')
+// MCP _guards.ts throws from the same mcpTenantVerdict; strict-apply wires L5/L6/L4
+```
+
 ## Matter-twin & composes
-A single agnostic factory (`src/access/cross`) over `services/uuid-share` (`checkShare` on role-uuids) + `services/uuid-format` (`hasCapability`) + the roles registry (user → roles), wired into every collection/field/global `access` — **generated, not hand-written per slug** (it replaces `roleBasedAccess` / `tenantScopedRead` / `isSuperAdmin` …). Composes [[rodin]] · [[horo]] · [[identity]] · [[uuid]] · [[one]] · [[all]] · [[merge]] · [[collapse]] · [[proof]] · [[society]] · [[trinity]] · [[duality]] (give/take = grant/revoke) · [[fractal]] · [[config]] · [[Roles]] · [[roles/user/roles]].
+A single agnostic factory (`src/cross`) over `services/uuid-share` (`checkShare` on role-uuids) + `services/uuid-format` (`hasCapability`) + the roles registry (user → roles), wired into every collection/field/global `access` — **generated, not hand-written per slug** (it replaces `roleBasedAccess` / `tenantScopedRead` / `isSuperAdmin` …). The computed layer (`index.ts`) unifies verdicts across Payload, MCP, agents, and docs. Composes [[rodin]] · [[horo]] · [[identity]] · [[uuid]] · [[one]] · [[all]] · [[merge]] · [[collapse]] · [[proof]] · [[society]] · [[trinity]] · [[duality]] (give/take = grant/revoke) · [[fractal]] · [[config]] · [[Roles]] · [[roles/user/roles]] · [[sandbox]] · [[receipt]] · [[team]].
 
 ## Ported from CanCanCan (the computational ability — one function, never per-controller checks)
 erpax's cross IS CanCanCan's `Ability`, content-addressed. CanCan proved authorization is **one computed ability per actor** (`Ability.new(user)` — every `can`/`cannot` rule in one class), not name-checks scattered per controller — which is *why* erpax access can only be defined **computationally**. The port (source: `ceccec/erpax/app/models/ability.rb`, [[port]]):

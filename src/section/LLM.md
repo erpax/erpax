@@ -3,15 +3,15 @@
 
 # section
 
-path `section` · uuid `9bcf5df2-4f72-8b17-8708-09e3df807ace` · diamond `383112a7-cfb2-8df9-aa3e-7a0349356ff4`
+path `section` · uuid `9bcf5df2-4f72-8b17-8708-09e3df807ace` · diamond `37aae8f3-7d3a-8ee9-a276-13967d82e2b6`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports article·collapse·has·how·law·menu·merge·print·seat·sti · exports section · escapes —
-links `10/10` · folded `1` · bonds in `11` out `11`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → awareness·coffee·consolidations·correlation·diet·diffusion·film·landmarks·latitude·rest·university · ← awareness·coffee·consolidations·correlation·diet·diffusion·film·landmarks·latitude·rest·university
+neighbors → article·collapse·has·how·law·menu·merge·print·seat·sti · ← article·collapse·has·how·law·menu·merge·print·seat·sti
 analysis —
 law section is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c9650669-9786-8038-8ac1-10dc6d898fad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ddb39bb-3830-84e5-8600-e62b7846dd8f` · `pnpm readme` · `pnpm computed:check`</sub>

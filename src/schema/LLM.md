@@ -3,15 +3,15 @@
 
 # schema
 
-path `schema` · uuid `569c450d-b910-83ec-ad69-566a96e9a9ed` · diamond `35cd6bca-1625-8b37-9436-21f40c8ade60`
+path `schema` · uuid `569c450d-b910-83ec-ad69-566a96e9a9ed` · diamond `e1aae630-3f09-845d-b7e1-46eaa5797fbd`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports cardinality·collections·database·fields·types · exports schema · escapes —
-links `5/5` · folded `1` · bonds in `9` out `13`
+links `5/5` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → hobby·hobby·landmarks·landmarks·qualification·schema·schema·score·score·skill·symbol·symbol·vent · ← hobby·landmarks·qualification·schema·schema·score·skill·symbol·vent
+neighbors → cardinality·collections·constraint·database·field·fields·law·matrix·merge·partition·payload·quantum·schema·sti·test·testing·type·types·uuid·verification · ← cardinality·collections·constraint·database·field·fields·law·matrix·merge·partition·payload·quantum·schema·sti·test·testing·type·types·uuid·verification
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `dd920baa-ea90-83ed-b4f8-14cafe5018d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `47426272-f9fd-8662-860b-769edc0a6eac` · `pnpm readme` · `pnpm computed:check`</sub>

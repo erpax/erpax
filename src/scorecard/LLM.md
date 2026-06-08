@@ -3,15 +3,15 @@
 
 # scorecard
 
-path `scorecard` · uuid `50bf55d0-8367-8c71-a058-a8ae7f658253` · diamond `8d238427-d281-8ba8-8a89-9be25288690b`
+path `scorecard` · uuid `50bf55d0-8367-8c71-a058-a8ae7f658253` · diamond `758f3967-8065-8424-8328-2dc7cacaf38a`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·kpi·scorecards · exports scorecard · escapes —
-links `6/6` · folded `1` · bonds in `18` out `18`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·consulting·disease·euenergy·final·flight·holographic·homeopathic·id·landmarks·marry·memories·quotation·score·spa·spouse·utterance·width · ← aura·consulting·disease·euenergy·final·flight·holographic·homeopathic·id·landmarks·marry·memories·quotation·score·spa·spouse·utterance·width
+neighbors → balance·kpi·scorecards · ← balance·kpi·scorecards
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `6327a03a-844a-89f5-b5fe-34db0b2337f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f473a02-fcee-8b86-9e76-28ab65c148aa` · `pnpm readme` · `pnpm computed:check`</sub>

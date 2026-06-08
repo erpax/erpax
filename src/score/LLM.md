@@ -3,15 +3,15 @@
 
 # score
 
-path `score` · uuid `6de74571-44c2-8a94-b712-09735d9b18dc` · diamond `ff83e525-04d7-8f57-bf73-b84425a4ffbe`
+path `score` · uuid `6de74571-44c2-8a94-b712-09735d9b18dc` · diamond `161539bf-3f63-896b-9158-92aa09cb73cf`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·medical·merge·risk·sti · exports score · escapes —
-links `6/6` · folded `1` · bonds in `15` out `14`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → admin·binding·id·import·optician·owned·public·recorded·reported·responsibilities·schema·scorecard·scouting·society · ← admin·binding·id·import·optician·owned·public·recorded·reported·responsibilities·schema·schema·scorecard·scouting·society
+neighbors → collapse·law·medical·merge·risk·sti · ← collapse·law·medical·merge·risk·sti
 analysis —
 law score is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ea328616-41ab-8508-b700-3e64541d55e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a142568-43cc-8a5e-bdcb-2194ce5c6bf1` · `pnpm readme` · `pnpm computed:check`</sub>

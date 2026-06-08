@@ -3,15 +3,15 @@
 
 # seal
 
-path `seal` · uuid `—` · diamond `5587196a-5f5b-88f6-b87d-635798add573`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `seal` · uuid `b2f34d53-f985-8a70-95e5-7ffa287bab52` · diamond `aaedd1c2-63a3-8a11-bfc8-3a7fa2627cb9`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/guardian · exports function·interface · escapes —
-links `22/22` · folded `0` · bonds in `0` out `0`
+links `23/23` · folded `1` · bonds in `28` out `27`
 faces worker·plugin·pwa `1·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → blockchain·breath·confirm·cost·covenant·css·diamond·gate·guardian·hallucination·identity·innovation·law·memory·merge·payload·primitive·purity·quantum·readme·reference·ritual·secret·stream·thought·typography·uuid · ← blockchain·breath·confirm·cost·covenant·css·diamond·gate·guardian·hallucination·identity·innovation·law·memory·memory·merge·payload·primitive·purity·quantum·readme·reference·ritual·secret·stream·thought·typography·uuid
+analysis purity
 law all is passed with uuids without [[payload]] — `pnpm confirm:uuid` crosses uuid-pure guardians (aura · folders · imports · readme · boundary · diamond · typography) without loading Payload; the seal is substrate-independent.
 
 ---
 
-<sub>content-uuid `8206c1ca-68e6-8bff-b23c-c3dc7151f12d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `66820e2f-a0bf-8055-ab78-d23bbf7a2a82` · `pnpm readme` · `pnpm computed:check`</sub>

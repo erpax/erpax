@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports seek · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law seek is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d4116e39-2f1e-882f-93d8-5e31de027ea7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5bea66b-1eb0-871a-986e-76e6aef4732e` · `pnpm readme` · `pnpm computed:check`</sub>

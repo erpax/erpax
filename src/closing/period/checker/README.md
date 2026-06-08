@@ -2,7 +2,7 @@
 
 # checker
 
-> atom `closing/period/checker` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `closing/period/checker` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `closing` · sub-root `6c9d747c-d9cf-8dea-96c8-90425c7f2d8d`
 - bond degree `15` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -42,7 +42,7 @@
 
 ## analytics
 
-- bond degree `15` · sealed `1` · horo `2`
+- bond degree `15` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
@@ -56,8 +56,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `aed91948-095c-8269-a1bc-109e4023cbd0` · framed by typography partition `closing` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4c753d13-0f75-8e72-9463-e9e21263e99c` · framed by typography partition `closing` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

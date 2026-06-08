@@ -3,15 +3,15 @@
 
 # ski
 
-path `ski` · uuid `8aa63b81-864e-84f9-be87-a50c5060d373` · diamond `0a62ed05-a281-857a-ad9b-51f25d61e81f`
+path `ski` · uuid `8aa63b81-864e-84f9-be87-a50c5060d373` · diamond `f198528c-17ad-8253-a2bb-5190e85a0afd`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·resort·sti · exports ski · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·resort·sti · ← collapse·law·merge·resort·sti
 analysis —
 law ski is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f05523b3-fc80-8c2e-acfa-be04b2c0c109` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a324c800-033c-84b1-89e0-08027275b911` · `pnpm readme` · `pnpm computed:check`</sub>

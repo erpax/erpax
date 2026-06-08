@@ -3,15 +3,15 @@
 
 # school
 
-path `school` · uuid `dae16bc0-6dab-87b3-8a93-49a5739ad076` · diamond `972fce2b-1908-84df-9486-03a933f087f6`
+path `school` · uuid `dae16bc0-6dab-87b3-8a93-49a5739ad076` · diamond `9df6932c-a5c2-8517-b95b-07ebd83d3a11`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports closures·district·elementary·high·info·law·middle · exports school · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → closures·district·elementary·high·info·law·middle · ← closures·district·elementary·high·info·law·middle
 analysis —
 law school is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1b48c77b-040e-8232-9e89-c58813c3f9c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e2e4500-e653-8396-bfac-9d85fa09c24b` · `pnpm readme` · `pnpm computed:check`</sub>

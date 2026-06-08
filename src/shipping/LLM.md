@@ -3,15 +3,15 @@
 
 # shipping
 
-path `shipping` · uuid `6dd477fd-f372-868b-967c-08efb0ab10e9` · diamond `83aaf63b-dbef-899a-bf8b-21be0fa83d9b`
+path `shipping` · uuid `6dd477fd-f372-868b-967c-08efb0ab10e9` · diamond `80e2a62e-8970-8e89-977d-15d6b56bc612`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports amount·collapse·conditions·customer·defect·delivery·destination·details·fees·free·has·item·label·law·link·merge·offer·origin·rate·remorse·return·service·settings·sti·threshold·time · exports shipping · escapes —
-links `26/26` · folded `1` · bonds in `4` out `4`
+links `26/26` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amendments·balance·id·landmarks · ← amendments·balance·id·landmarks
+neighbors → amount·collapse·conditions·customer·defect·delivery·destination·details·fees·free·has·item·label·law·link·merge·offer·origin·rate·remorse·return·service·settings·sti·threshold·time · ← amount·collapse·conditions·customer·defect·delivery·destination·details·fees·free·has·item·label·law·link·merge·offer·origin·rate·remorse·return·service·settings·sti·threshold·time
 analysis —
 law shipping is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b2e9d5b6-d604-8b5f-b658-cdb04b959e08` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `23019ae8-dd3c-824c-9f9f-3fae99ae6a04` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # test
 
-path `schema/test` · uuid `3a9fe10c-4e80-833d-b0fb-4556bcc12a2e` · diamond `ee8d558d-7588-8cee-b434-b070381137d6`
+path `schema/test` · uuid `3a9fe10c-4e80-833d-b0fb-4556bcc12a2e` · diamond `f0442f07-19b7-8bc5-bd4c-0368b5311379`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·interface · escapes —
-links `32/32` · folded `1` · bonds in `14` out `14`
+links `32/32` · folded `1` · bonds in `37` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·corrects·crisis·css·drive·license·max·monday·moved·plus·proprietary·reverse·transit·width · ← agriculture·corrects·crisis·css·drive·license·max·monday·moved·plus·proprietary·reverse·transit·width
+neighbors → aura·available·blood·collapse·color·confirm·diamond·dimension·dissolution·dry·folder·gate·generate·heart·holographic·hooks·identifying·imaging·law·medical·merge·merge·names·one·panel·pathology·pwa·schema·seed·society·sti·sub·tamper·team·testing·trinity·types·typical · ← aura·available·blood·collapse·color·confirm·diamond·dimension·dissolution·dry·folder·gate·generate·heart·holographic·hooks·identifying·imaging·law·medical·merge·names·one·panel·pathology·pwa·schema·seed·society·sti·sub·tamper·team·testing·trinity·types·typical
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `214708a8-bcbf-89df-81ac-9abe1910e73c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f441da5d-8afd-85a1-bbad-701f8086cbf2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # sla
 
-path `sla` · uuid `878778a0-7d46-86e7-862e-b06d72da8beb` · diamond `eb5bcbd1-fc42-8d38-8f6c-9ac2925e9fb5`
+path `sla` · uuid `878778a0-7d46-86e7-862e-b06d72da8beb` · diamond `1d90387b-2c7b-847d-ab22-cb9c7813fce0`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports activities·customers·escalation·invoices·law·observability·resolution·workflow · exports sla · escapes —
-links `9/9` · folded `1` · bonds in `26` out `26`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·biological·candidate·composite·consent·cover·crisis·eat·feed·grantee·lines·lineup·makes·mobile·moved·municipality·muscle·performance·rv·supplement·temple·thesis·torus·vibration·worth · ← agriculture·balance·biological·candidate·composite·consent·cover·crisis·eat·feed·grantee·lines·lineup·makes·mobile·moved·municipality·muscle·performance·rv·supplement·temple·thesis·torus·vibration·worth
+neighbors → activities·customers·cycles·escalation·law·observability·priority·queue·resolution·workflow · ← activities·customers·cycles·escalation·law·observability·priority·queue·resolution·workflow
 analysis —
 law an SLA is a response/resolution guarantee on a ticket whose breach is detected against the clock and drives [[escalation]] — the customer-impact metric the [[resolution]] is measured against.
 
 ---
 
-<sub>content-uuid `4b4b00bd-32bd-8a30-8c79-62bffb59830f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `129a10a6-ea83-8f0e-bb92-5007832357c7` · `pnpm readme` · `pnpm computed:check`</sub>

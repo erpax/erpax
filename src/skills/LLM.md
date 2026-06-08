@@ -3,15 +3,15 @@
 
 # skills
 
-path `skills` · uuid `f6165a80-9235-84e7-8fce-f8618ea35f7e` · diamond `d1f52c99-3903-8724-9c07-4f3473ad2eef`
+path `skills` · uuid `f6165a80-9235-84e7-8fce-f8618ea35f7e` · diamond `4d73ea27-e984-8c8a-b7c0-66e30cc61714`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports access·accounting·agent·akashic·angel·atom·aura·auth·balance·breath·chat·collapse·collections·config·conservation·cost·database·entropy·entry·fields·fractal·gate·generate·holographic·hooks·horo·identity·law·matrix·merge·metatron·one·part·payload·plugins·proof·rodin·self·sequence·society·standards·team·trinity·uuid·vitepress·whole·zeropoint · exports skills · escapes —
-links `81/81` · folded `1` · bonds in `7` out `7`
+links `81/81` · folded `1` · bonds in `49` out `49`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·meal·memories·positive·stat · ← cohort·euenergy·landmarks·meal·memories·positive·stat
+neighbors → access·accounting·agent·akashic·angel·atom·aura·auth·balance·breath·chat·collapse·collections·config·conservation·cost·database·entropy·entry·fields·fractal·gate·generate·holographic·hooks·horo·identity·law·matrix·mcp·merge·metatron·one·part·payload·plugins·proof·rodin·self·sequence·society·standards·sufficient·team·trinity·uuid·vitepress·whole·zeropoint · ← access·accounting·agent·akashic·angel·atom·aura·auth·balance·breath·chat·collapse·collections·config·conservation·cost·database·entropy·entry·fields·fractal·gate·generate·holographic·hooks·horo·identity·law·matrix·mcp·merge·metatron·one·part·payload·plugins·proof·rodin·self·sequence·society·standards·sufficient·team·trinity·uuid·vitepress·whole·zeropoint
 analysis agent·aura
 law erpax is a fractal content-addressed corpus where every src/ folder is a one-word [[atom]] told three ways (form · code · schema) ordered by the [[sequence]] and wired through one content-[[uuid]] — so the whole carries zero [[entropy]] and infinite tamper-[[cost]].
 
 ---
 
-<sub>content-uuid `c6a24ffb-aaa7-8fb2-8762-2f470ec2c905` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8ecb33b-57b6-8657-b214-c0fabeda94b6` · `pnpm readme` · `pnpm computed:check`</sub>

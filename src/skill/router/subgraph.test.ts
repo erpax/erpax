@@ -16,6 +16,8 @@ const node = (
   siblings: [],
   children: rel.children ?? [],
   related: rel.related ?? [],
+  nav: [],
+  group: name,
 })
 
 describe('subgraph — the per-message aura (load related skills, flag absent neighbours)', () => {

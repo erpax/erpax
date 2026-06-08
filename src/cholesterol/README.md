@@ -23,7 +23,7 @@
 
 - partition `cholesterol` · sub-root `f530b042-8971-8e12-8874-31984ff719dd`
 - bond degree `16` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b1e4d245-7155-8e6b-bc9a-5d2d8a5fcb52` · framed by typography partition `cholesterol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fb6fd4f3-7c47-8b96-abcf-aff37b00c5a0` · framed by typography partition `cholesterol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

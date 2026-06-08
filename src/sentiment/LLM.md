@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports activities·comment·feedback·law·satisfaction · exports sentiment · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·funnel·landmarks·memories·standards·stat · ← cohort·funnel·landmarks·memories·standards·stat
+neighbors → activities·comment·engagement·feedback·law·satisfaction · ← activities·comment·engagement·feedback·law·satisfaction
 analysis —
 law the polarity and intensity of emotion (positive/negative/neutral, a score) read from text, survey, or interaction.
 
 ---
 
-<sub>content-uuid `3d114fa3-075c-8f2b-8c73-ac4a12885a6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4afac00b-7680-8409-8759-83dffe115b44` · `pnpm readme` · `pnpm computed:check`</sub>

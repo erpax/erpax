@@ -3,15 +3,15 @@
 
 # sector
 
-path `sector` · uuid `36c621b0-5f90-82ca-aab9-152030a593e0` · diamond `d68f69ef-15d2-865d-8a39-3f5c9d86c6a2`
+path `sector` · uuid `36c621b0-5f90-82ca-aab9-152030a593e0` · diamond `06616522-2bb9-843a-a95d-9c614f09fd6b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·industry·law·sectors · exports sector · escapes —
-links `9/9` · folded `1` · bonds in `9` out `9`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audit·dev·game·landmarks·marine·memories·progression·propagation·sections · ← audit·dev·game·landmarks·marine·memories·progression·propagation·sections
+neighbors → balance·industry·law·sectors · ← balance·industry·law·sectors
 analysis —
 law a sector is the singular model of exactly one [[sectors]] row — one broad division of economic activity; the model and its plural store always [[balance]].
 
 ---
 
-<sub>content-uuid `b7d4df64-03ce-8940-b8fa-f6a31c074bf6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `737b1d26-e177-872e-93f2-61818de93152` · `pnpm readme` · `pnpm computed:check`</sub>

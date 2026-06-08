@@ -3,15 +3,15 @@
 
 # sender
 
-path `sender` · uuid `13a32738-7d2c-8f21-b742-9b3aae1b0935` · diamond `85f802ab-5d39-8181-b448-35613f671636`
+path `sender` · uuid `13a32738-7d2c-8f21-b742-9b3aae1b0935` · diamond `e629e4c1-5b1c-85b9-937e-6684ddcd63ff`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sender · escapes —
-links `2/2` · folded `1` · bonds in `14` out `14`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → boltzmann·charitable·combination·create·euenergy·funnel·landmarks·motor·parent·players·quest·treat·varies·western · ← boltzmann·charitable·combination·create·euenergy·funnel·landmarks·motor·parent·players·quest·treat·varies·western
+neighbors → law·thing · ← law·thing
 analysis —
 law sender is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dabb3f48-600d-850e-b37e-698a64abf015` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `559a9f64-7383-8da1-bc93-5df03f4f56c1` · `pnpm readme` · `pnpm computed:check`</sub>

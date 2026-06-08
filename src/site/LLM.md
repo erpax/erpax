@@ -3,15 +3,15 @@
 
 # site
 
-path `site` · uuid `e22dd034-7a1b-82c8-ba6c-0b59f3fd6f9f` · diamond `55dca6e6-cb5b-83b3-bf49-dd0acbf4dcbf`
+path `site` · uuid `e22dd034-7a1b-82c8-ba6c-0b59f3fd6f9f` · diamond `d54b6d71-52ab-8e6c-bf67-482dace58a2d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·element·law·merge·navigation·sti·web · exports site · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → allowed·cohort·landmarks·memories·stat · ← allowed·cohort·landmarks·memories·stat
+neighbors → collapse·element·law·merge·navigation·sti·web · ← collapse·element·law·merge·navigation·sti·web
 analysis —
 law site is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6fdb46a7-de4c-8798-ba60-7fb6ef4b4a50` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72cced08-aeeb-8a22-8498-93c54e73f487` · `pnpm readme` · `pnpm computed:check`</sub>

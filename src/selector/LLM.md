@@ -3,15 +3,15 @@
 
 # selector
 
-path `selector` · uuid `e162e034-bf6f-8dc9-8e72-93237ebcc117` · diamond `5312ba2c-8daa-8816-b43f-b1d7e833d36b`
+path `selector` · uuid `e162e034-bf6f-8dc9-8e72-93237ebcc117` · diamond `9425e837-3ffd-88f1-b706-0c10730d2a7c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·css·law·merge·sti·type · exports selector · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·css·law·merge·sti·type · ← collapse·css·law·merge·sti·type
 analysis —
 law selector is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c7f23523-dec7-82c6-85c5-f9276dcf1221` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b0bd2372-c190-8dbb-a9a4-fd488df97aa0` · `pnpm readme` · `pnpm computed:check`</sub>

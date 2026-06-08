@@ -3,15 +3,15 @@
 
 # shipment
 
-path `shipment` · uuid `78a4578d-fece-8a77-a156-ab71af8f1dc7` · diamond `4bfe3947-2bec-80bd-a891-57ce81655a25`
+path `shipment` · uuid `78a4578d-fece-8a77-a156-ab71af8f1dc7` · diamond `bc764904-2e76-8ad7-a2b4-1c106bdf604b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·delivery·law·shipments · exports shipment · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bar·cohort·landmarks·memories·stat·word · ← bar·cohort·landmarks·memories·stat·word
+neighbors → balance·delivery·law·shipments · ← balance·delivery·law·shipments
 analysis —
 law a shipment is one consignment of goods moved from origin to destination — the singular model whose plural store is the [[shipments]] collection ([[balance]]: every collection has its model).
 
 ---
 
-<sub>content-uuid `4e5522c4-8935-8742-9696-48450fb2f503` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63d34e75-3c67-819b-b0e0-d637685a4ee4` · `pnpm readme` · `pnpm computed:check`</sub>

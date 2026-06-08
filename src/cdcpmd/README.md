@@ -23,7 +23,7 @@
 
 - partition `cdcpmd` · sub-root `a9aae335-464f-800f-ad6d-812bf79b5ad2`
 - bond degree `16` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `dd4d42aa-109b-8090-8baf-7f8382aa237d` · framed by typography partition `cdcpmd` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d2f3328c-fb56-8c07-8c5e-0f9244de83a6` · framed by typography partition `cdcpmd` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

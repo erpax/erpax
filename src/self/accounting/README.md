@@ -2,7 +2,7 @@
 
 # accounting
 
-> atom `self/accounting` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `self/accounting` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `self` · sub-root `b4dbad62-5160-8e20-965a-beb081d259ee`
-- bond degree `735` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `739` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `ad355258-c719-81be-b94f-269e50dd133a`
-- bonds in `225` · out `221`
+- uuid `fd3e612d-c5be-8dcb-a973-232bb1198fa2`
+- bonds in `228` · out `225`
 - trinity form·code·proof `1`·`1`·`1`
 - links `18` / `18`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `f53c6254-60d2-8ace-b258-2ad52d2a1c64` · framed by typography partition `self` bonds `735` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b1c02bae-996b-8812-be4e-399042b8dbf0` · framed by typography partition `self` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>

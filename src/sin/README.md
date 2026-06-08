@@ -2,17 +2,17 @@
 
 # sin
 
-> atom `sin` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `sin` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `sin` · sub-root `c1bf42e7-b9bc-8188-87db-481f4daaa22d`
-- bond degree `27` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `70` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `c1bf42e7-b9bc-8188-87db-481f4daaa22d`
+- bonds in `23` · out `23`
 - trinity form·code·proof `1`·`0`·`0`
 - links `45` / `45`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9440288f-fe6a-8bc7-afff-699b9d4835e5` · framed by typography partition `sin` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6f5ea7b-36cf-8300-9bea-f963de2f9efd` · framed by typography partition `sin` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

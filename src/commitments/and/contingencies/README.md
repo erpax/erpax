@@ -2,7 +2,7 @@
 
 # contingencies
 
-> atom `commitments/and/contingencies` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `commitments/and/contingencies` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,7 @@
 
 - partition `commitments` · sub-root `98330a8e-5a19-8bf9-933b-24c323542f1f`
 - bond degree `31` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -47,7 +47,7 @@
 
 ## analytics
 
-- bond degree `31` · sealed `1` · horo `7`
+- bond degree `31` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `11`
 
@@ -61,8 +61,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b081745b-eba0-839c-9773-854f8de23d7d` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7fa87fb7-192c-8f24-bb89-cbd12b3faaa3` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

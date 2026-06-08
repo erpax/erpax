@@ -3,15 +3,15 @@
 
 # seasons
 
-path `seasons` · uuid `ca7c2133-4bf7-8b32-8f18-f6c31a5697dc` · diamond `ce785aad-4fdc-8811-8d0a-e184507a6ab7`
+path `seasons` · uuid `ca7c2133-4bf7-8b32-8f18-f6c31a5697dc` · diamond `28e462ca-3a67-848e-aa26-15007fcffad9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·number · exports seasons · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·number · ← law·number
 analysis —
 law seasons is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fae54949-09d1-8559-8e21-5d64a3ad265f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `371c0f75-05f3-8564-9f1e-900510b922fd` · `pnpm readme` · `pnpm computed:check`</sub>

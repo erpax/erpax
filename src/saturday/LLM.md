@@ -3,15 +3,15 @@
 
 # saturday
 
-path `saturday` · uuid `a8805b7e-e47b-8644-afdc-f9b1636d6108` · diamond `e4dfe8ea-2638-84a9-918c-a3d671bc9703`
+path `saturday` · uuid `a8805b7e-e47b-8644-afdc-f9b1636d6108` · diamond `2139d42c-c4e5-8e0b-a036-3e48cbb52388`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports saturday · escapes —
-links `4/4` · folded `1` · bonds in `67` out `67`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·9110·aggregation·akashic·angel·aura·balance·borrow·breakfast·breastfeeding·chat·classified·community·composition·consortium·corrects·details·diffusion·distance·document·dropoff·electrician·endpoint·entertainment·failed·features·flight·followup·founder·game·gate·gears·high·hobby·holographic·homeopathic·id·idempotency·infants·landmarks·license·list·localize·maps·marine·markup·marry·max·memories·natural·notice·office·process·progression·query·quote·right·roadmap·rule·seed·sell·solve·spouse·symbol·t·tour·wp · ← 3986·9110·aggregation·akashic·angel·aura·balance·borrow·breakfast·breastfeeding·chat·classified·community·composition·consortium·corrects·details·diffusion·distance·document·dropoff·electrician·endpoint·entertainment·failed·features·flight·followup·founder·game·gate·gears·high·hobby·holographic·homeopathic·id·idempotency·infants·landmarks·license·list·localize·maps·marine·markup·marry·max·memories·natural·notice·office·process·progression·query·quote·right·roadmap·rule·seed·sell·solve·spouse·symbol·t·tour·wp
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law saturday is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f3288564-414a-8a8c-b21a-fd3691965a56` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70468d75-207a-8ab8-938d-d9367b30e077` · `pnpm readme` · `pnpm computed:check`</sub>

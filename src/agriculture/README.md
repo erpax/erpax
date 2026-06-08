@@ -23,7 +23,7 @@
 
 - partition `agriculture` · sub-root `d65965f6-9220-88d9-949e-9cb968223e53`
 - bond degree `244` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
 
 ## [[cloudflare]] bindings
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `415580b1-9670-8725-a5a3-caa46f0772e3` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a1504f63-89c5-8440-9c37-11d36c7df7a8` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # seo
 
-path `seo` · uuid `f65a74a2-3afa-8c99-82e6-95d633ac639f` · diamond `e8c496fd-a840-8f17-a2fd-3613756fbab5`
+path `seo` · uuid `f65a74a2-3afa-8c99-82e6-95d633ac639f` · diamond `f667a52a-fc8a-8516-9aa6-db805e41d133`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/name · exports function·interface · escapes —
-links `10/10` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·disclosures·landmarks·memories·stat · ← cohort·disclosures·landmarks·memories·stat
+links `10/10` · folded `1` · bonds in `7` out `7`
+faces worker·plugin·pwa `1·0·0`
+neighbors → entropy·law·links·marketing·name·observe·vitepress · ← entropy·law·links·marketing·name·observe·vitepress
 analysis —
 law every atom projects comprehensive marketing/SEO — title, meta description (≤160), keywords, canonical, schema.org JSON-LD — all computed from what the agent observes (name, description, links), none hand-authored. The test is the forcing function: it fails if any atom's SEO is incomplete, so the corpus stays marketing-complete by construction, and what the test generates is exactly what vitepress displays.
 
 ---
 
-<sub>content-uuid `06846517-b17e-89b3-8554-592c1ec6320b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8953fda9-378b-8374-8498-9b1a7b21df2a` · `pnpm readme` · `pnpm computed:check`</sub>

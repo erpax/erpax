@@ -4,7 +4,7 @@
 # gaps
 
 path `compliance/frameworks/compliance/requirements/compliance/gaps` · uuid `ecb82648-479e-8622-9549-118a09d6e196` · diamond `d86c9090-779d-8440-ab23-66afb96ae99f`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `8c6c90a8-6286-81b0-b753-ff9972c043a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `deceaf39-c3ee-81f8-bf5c-5ae33624fe5c` · `pnpm readme` · `pnpm computed:check`</sub>

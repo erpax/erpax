@@ -3,15 +3,15 @@
 
 # set
 
-path `set` · uuid `80f83bee-8b6d-8bcc-ae58-46c073fb9cb4` · diamond `9b73e434-46df-8f03-bd56-8adca95f3909`
+path `set` · uuid `80f83bee-8b6d-8bcc-ae58-46c073fb9cb4` · diamond `40f6aa6a-4aa9-8109-a70c-aefc2bb6b0e3`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports category·code·collapse·defined·law·merge·sti·term · exports set · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·cohort·landmarks·memories·stat · ← animal·cohort·landmarks·memories·stat
+neighbors → category·code·collapse·defined·law·merge·sti·term · ← category·code·collapse·defined·law·merge·sti·term
 analysis —
 law set is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `46085b48-ab3f-8624-af00-84359e0ac0a7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3c6a3713-e442-8ebe-a40c-ca0c636f5ef5` · `pnpm readme` · `pnpm computed:check`</sub>

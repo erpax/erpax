@@ -3,15 +3,15 @@
 
 # society
 
-path `self/society` · uuid `f69406fd-c741-8add-9985-32260b4f9321` · diamond `01433949-fbc8-807a-af9b-79af0bf4cf75`
+path `self/society` · uuid `f69406fd-c741-8add-9985-32260b4f9321` · diamond `a0960384-421e-8f03-be15-720203c3aa58`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports access·akashic·breath·chat·coil·gate·merge·self·society·team · exports society · escapes —
-links `18/18` · folded `1` · bonds in `22` out `22`
+links `18/18` · folded `1` · bonds in `139` out `146`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·aggregation·api·c19·carbohydrate·comment·diffusion·fertility·flight·hook·llm·maintainer·matrix·notary·operation·owner·policy·received·recorded·score·suspended·tour · ← accounting·aggregation·api·c19·carbohydrate·comment·diffusion·fertility·flight·hook·llm·maintainer·matrix·notary·operation·owner·policy·received·recorded·score·suspended·tour
+neighbors → access·accounting·age·agent·akashic·akashic·angel·animism·archangel·architect·atom·aura·bahai·balance·bogomilism·brainstorm·breath·buddhism·catholicism·chat·chat·christianity·civilization·classroom·cloning·closure·coil·collapse·command·competition·concatenate·config·conflict·confucianism·constitution·consultant·contribution·cost·crisis·database·decentralization·decide·derive·development·drone·duality·ecosystem·endpoints·entropy·entry·exchange·fear·flow·fractal·fusion·gate·generate·gnosticism·governance·hermeticism·hinduism·history·holographic·horo·humandesign·identity·identity·integrity·islam·jainism·judaism·kabbalah·law·legislation·limit·live·logic·love·lung·manichaeism·manufacturing·market·matrix·matter·mcp·merge·merge·merge·notification·one·orphism·orthodoxy·paganism·party·peace·power·proof·protestantism·quantum·receipt·recover·reference·religion·reveal·rodin·routing·run·sandbox·science·self·self·separation·sequence·services·shamanism·shia·shinto·sikhism·skills·society·society·spec·standard·sufficient·sufism·sunni·tamper·taoism·team·team·test·testing·torus·train·trust·types·utilities·uuid·vedanta·voting·war·website·wellbeing·whole·zeropoint·zoroastrianism · ← access·accounting·age·agent·akashic·angel·animism·archangel·architect·atom·aura·bahai·balance·bogomilism·brainstorm·breath·buddhism·catholicism·chat·christianity·civilization·classroom·cloning·closure·coil·collapse·command·competition·concatenate·config·conflict·confucianism·constitution·consultant·contribution·cost·crisis·database·decentralization·decide·derive·development·drone·duality·ecosystem·endpoints·entropy·entry·exchange·fear·flow·fractal·fusion·gate·generate·gnosticism·governance·hermeticism·hinduism·history·holographic·horo·humandesign·identity·integrity·islam·jainism·judaism·kabbalah·law·legislation·limit·live·logic·love·lung·manichaeism·manufacturing·market·matrix·matter·mcp·merge·notification·one·orphism·orthodoxy·paganism·party·peace·power·proof·protestantism·quantum·receipt·recover·reference·religion·reveal·rodin·routing·run·sandbox·science·self·separation·sequence·services·shamanism·shia·shinto·sikhism·skills·society·society·spec·standard·sufficient·sufism·sunni·tamper·taoism·team·test·testing·torus·train·trust·types·utilities·uuid·vedanta·voting·war·website·wellbeing·whole·zeropoint·zoroastrianism
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `8764f321-208b-8098-a9d5-fc156627d4e6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63e03093-7f42-851e-8a52-b1a7189779fe` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # sectional
 
-path `sectional` · uuid `b42cb4c9-8961-8d1e-a71b-7a7774b08c73` · diamond `cbdf3eb3-500d-8947-a113-39df45073891`
+path `sectional` · uuid `b42cb4c9-8961-8d1e-a71b-7a7774b08c73` · diamond `06d2e3c5-1146-8314-b4af-3db3e4eca784`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports sectional · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·crown·landmarks·memories·sanitization·stat · ← cohort·crown·landmarks·memories·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law sectional is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd5beca1-40b4-820d-85e4-80a6df26a729` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `190070ae-bfe9-83bb-a190-6bedfd7bb097` · `pnpm readme` · `pnpm computed:check`</sub>

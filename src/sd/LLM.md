@@ -3,15 +3,15 @@
 
 # sd
 
-path `sd` · uuid `bce8f3ed-2f10-8a31-96be-00f49b0e07a2` · diamond `28398382-8881-8fbd-b6ed-7ad1f941d45b`
+path `sd` · uuid `bce8f3ed-2f10-8a31-96be-00f49b0e07a2` · diamond `cae72bb8-e200-80e5-b3c4-4d5c52743ccd`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·license·merge·published·publisher·sti · exports sd · escapes —
-links `8/8` · folded `1` · bonds in `7` out `7`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → candidate·cohort·landmarks·memories·sanitization·stat·utterance · ← candidate·cohort·landmarks·memories·sanitization·stat·utterance
+neighbors → collapse·date·law·license·merge·published·publisher·sti · ← collapse·date·law·license·merge·published·publisher·sti
 analysis —
 law sd is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4f6d2ca5-44dc-8134-8447-4627655081fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9deb5866-5610-893f-a611-aef61e13bc28` · `pnpm readme` · `pnpm computed:check`</sub>

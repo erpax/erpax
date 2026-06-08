@@ -3,15 +3,15 @@
 
 # salary
 
-path `salary` · uuid `240b853a-9213-8dc6-8f21-1b945bc48ef3` · diamond `e282bec4-cf7e-865b-ba4d-7f85438a3046`
+path `salary` · uuid `240b853a-9213-8dc6-8f21-1b945bc48ef3` · diamond `53373ebb-5f8e-8c0f-a3a7-0fedfb144401`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports base·collapse·completion·currency·estimated·law·merge·sti·training·upon · exports salary · escapes —
-links `10/10` · folded `1` · bonds in `6` out `6`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bylines·cohort·landmarks·memories·separation·stat · ← bylines·cohort·landmarks·memories·separation·stat
+neighbors → base·collapse·completion·currency·estimated·law·merge·sti·training·upon · ← base·collapse·completion·currency·estimated·law·merge·sti·training·upon
 analysis —
 law salary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `96d08f13-78bf-8963-8a40-cfea04edefcf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `64658d24-b482-8a47-b7c6-9ef7ea075b6f` · `pnpm readme` · `pnpm computed:check`</sub>

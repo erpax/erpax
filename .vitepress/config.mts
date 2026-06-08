@@ -6,7 +6,7 @@ import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
 import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from '../src/corpus/index.mts'
-import { pathNavMeta } from '../src/navigation/index.ts'
+import { pathNavMeta, topNavAnchorsFromSequence } from '../src/navigation/index.ts'
 
 // ── Heap budget for `docs:build` (the OOM note — MEASURED) ─────────────────
 // `vitepress build` holds every rendered SKILL.md page (≈2906 today) in V8's
@@ -78,6 +78,7 @@ const readingChain = [...allSkills].sort(
   (a, b) => seqRank(a.name) - seqRank(b.name) || a.route.localeCompare(b.route),
 )
 const chainIndex = new Map(readingChain.map((s, i) => [s.route, i]))
+const topNav = topNavAnchorsFromSequence(SEQ, (name) => existsSync(join(SKILLS_DIR, name, 'SKILL.md')))
 
 // ── Directional relations, COMPUTED from the path (never stored) ───────────
 // The path IS the address, so a skill's neighbours are derivable: ancestors /
@@ -268,10 +269,7 @@ export default defineConfig({
   // tsconfig otherwise → "Transforming destructuring … not supported yet").
   vite: { build: { target: 'esnext' } },
   themeConfig: {
-    nav: [
-      { text: 'sequence', link: routeOf(join(SKILLS_DIR, 'sequence')) },
-      { text: 'identity', link: routeOf(join(SKILLS_DIR, 'identity')) },
-    ],
+    nav: topNav,
     sidebar: [{ text: 'skills (the fractal path-set)', items: skillSidebar }],
     search: { provider: 'local' },
     outline: 'deep',

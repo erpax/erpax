@@ -3,15 +3,15 @@
 
 # schedule
 
-path `schedule` · uuid `bf68bc92-e985-8535-8f83-b46409cf402e` · diamond `f58301fd-debb-8547-83b1-9071d17c6464`
+path `schedule` · uuid `bf68bc92-e985-8535-8f83-b46409cf402e` · diamond `46f1d180-eb36-8f95-b287-27b80b504b3f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports begin·bookable·bookings·horo·law·work · exports schedule · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·measurement·memories·reverse·stat · ← cohort·landmarks·measurement·memories·reverse·stat
+neighbors → backlog·begin·bookings·cohort·course·cropplan·dose·horo·incident·irrigation·kpi·law·maximum·metric·moisture·planting·propagation·recommended·reported·resources·roadmap·run·runbook·season·shifts·timezone·trend · ← backlog·begin·bookings·cohort·course·cropplan·dose·horo·incident·irrigation·kpi·law·maximum·metric·moisture·planting·propagation·recommended·reported·resources·roadmap·run·runbook·season·shifts·timezone·trend
 analysis —
 law a schedule is the commitment of work to a time-coordinate — a resource, shift, project task or appointment bound to a calendar slot on the [[horo]] time ring.
 
 ---
 
-<sub>content-uuid `a7e0d323-af88-831b-8705-902ec77ff8a5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d17977f0-33f7-8764-ae41-ebfb82b0a512` · `pnpm readme` · `pnpm computed:check`</sub>

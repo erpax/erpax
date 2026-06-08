@@ -3,15 +3,15 @@
 
 # sku
 
-path `sku` · uuid `1579ac26-9d60-8c79-973e-542c1d0cd9d0` · diamond `13a5d8db-ad89-88a1-b50f-e685e8662854`
+path `sku` · uuid `1579ac26-9d60-8c79-973e-542c1d0cd9d0` · diamond `b6898a91-49d1-8c0a-9350-096804a5bb8f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sku · escapes —
-links `2/2` · folded `1` · bonds in `11` out `11`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → add·application·coach·cohort·complex·heart·landmarks·memories·snid·stat·variables · ← add·application·coach·cohort·complex·heart·landmarks·memories·snid·stat·variables
+neighbors → law·thing · ← law·thing
 analysis —
 law sku is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a4c771b2-2705-8758-9c0b-8e08dc5bc5f2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `82775a91-853a-80a1-ad72-5ba37661492e` · `pnpm readme` · `pnpm computed:check`</sub>

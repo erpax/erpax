@@ -3,15 +3,15 @@
 
 # search
 
-path `search` · uuid `558a72c7-89d0-866a-a9fa-64d1edf92df5` · diamond `fa49f2b6-7e8a-8f8a-b129-eafddd04e359`
+path `search` · uuid `558a72c7-89d0-866a-a9fa-64d1edf92df5` · diamond `e1a2e74c-29a2-86c7-934f-628c5e8be070`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./beforeSync·*:./corpus·*:./fieldOverrides · escapes —
-links `8/8` · folded `1` · bonds in `10` out `10`
+links `8/8` · folded `1` · bonds in `15` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → article·cohort·harden·hostel·landmarks·membership·memories·presentation·sculpture·stat · ← article·cohort·harden·hostel·landmarks·membership·memories·presentation·sculpture·stat
+neighbors → admin·bindings·engine·identity·link·optimization·organization·page·pwa·queries·redirects·rescue·results·typography · ← admin·bindings·engine·identity·link·optimization·organization·page·pwa·queries·redirects·rescue·results·typography·typography
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `b3e442a3-ab3c-8cb3-8a2f-5abec32bf967` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `808a2d40-2df0-8614-8fb0-d6421e034f33` · `pnpm readme` · `pnpm computed:check`</sub>

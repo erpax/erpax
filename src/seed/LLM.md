@@ -3,15 +3,15 @@
 
 # seed
 
-path `seed` · uuid `af8038af-3aaf-8a4b-94a2-ba9cd0841b05` · diamond `b5cbc993-ced1-86e9-b052-31d8e24855b1`
+path `seed` · uuid `af8038af-3aaf-8a4b-94a2-ba9cd0841b05` · diamond `85bc8ce0-ac01-811e-850a-cecd3a4bee69`
 horo `1` `base` · trinity `1·1·0` · sealed `0`
 imports @/error · exports const · escapes —
-links `35/35` · folded `1` · bonds in `73` out `74`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agriculture·akashic·all·atom·aura·befriend·catalogue·chat·clip·coding·cohort·colleagues·conference·connection·corrects·crest·death·declaration·diffusion·document·drone·dropoff·eat·electrician·encodes·entertainment·entity·fertility·findings·force·founder·game·gears·getting·grant·height·hobby·hobby·horo·id·landmarks·leisure·lesser·list·maintainer·marine·marry·memories·mention·office·office·oid·parent·pats·performance·platform·results·rheumatologic·roadmap·saturday·seasonal·sections·sectors·seed·seed·sell·sign·supplement·syllabus·symbol·tax·venue·worth · ← accounting·agriculture·akashic·all·atom·aura·befriend·catalogue·chat·clip·coding·cohort·colleagues·conference·connection·corrects·crest·death·declaration·diffusion·document·drone·dropoff·eat·electrician·encodes·entertainment·entity·fertility·findings·force·founder·game·gears·getting·grant·height·hobby·horo·id·landmarks·leisure·lesser·list·maintainer·marine·marry·memories·mention·office·oid·parent·pats·performance·platform·results·rheumatologic·roadmap·roadmap·saturday·seasonal·sections·sectors·seed·seed·sell·sign·supplement·syllabus·symbol·tax·venue·worth
+links `35/35` · folded `1` · bonds in `30` out `30`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·akashic·aura·code·crop·cropplan·currency·empirical·endpoints·fractal·graft·holographic·identity·items·law·localize·manufacturing·measure·organic·planting·pollination·propagation·rootstock·spacing·standard·test·testing·transplant·variant·version · ← accounting·akashic·aura·code·crop·cropplan·currency·empirical·endpoints·fractal·graft·holographic·identity·items·law·localize·manufacturing·measure·organic·planting·pollination·propagation·rootstock·spacing·standard·test·testing·transplant·variant·version
 analysis aura·diamond·hallucination·purity
 law a seed is the minimal encoded starting state a system grows from, derived never re-typed — the opening books computed from `country-context`, every constant a function of its source (real data or the identity element), so a fresh clone reproduces the same seed; the agronomic seed is the same atom one [[fractal]] scale down ([[holographic]]: the whole recoverable from the part).
 
 ---
 
-<sub>content-uuid `c3b867fd-a2b7-803d-8b8f-c9ae8638297b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ceb6d552-9fde-8845-92e7-a2eff5ac20f9` · `pnpm readme` · `pnpm computed:check`</sub>

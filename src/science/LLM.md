@@ -3,15 +3,15 @@
 
 # science
 
-path `science` · uuid `4e42d97c-297d-87a1-b0e8-f5d82d270308` · diamond `d4b42453-b518-8aa1-8b64-99eb9b610e61`
+path `science` · uuid `4e42d97c-297d-87a1-b0e8-f5d82d270308` · diamond `2668855e-eb3f-8167-8d15-616e78bc9fa8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports aggregation·akashic·angel·aura·balance·bottleneck·breath·breed·chat·classroom·cmyk·compass·compound·constraint·cost·dimension·distribution·duality·element·energy·entropy·fallback·feedback·flow·force·fractal·gate·gene·generate·history·holographic·hooks·horo·identity·information·law·limit·logic·mass·math·matrix·measure·merge·network·notes·number·one·profane·proof·rate·research·rodin·sacred·sampling·sequence·signal·society·sparsity·standard·tamper·torus·train·transaction·uuid·whole·zeropoint · exports science · escapes —
-links `150/150` · folded `1` · bonds in `2` out `2`
+links `150/150` · folded `1` · bonds in `67` out `67`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → aggregation·akashic·angel·aura·balance·bottleneck·breath·breed·chat·classroom·cmyk·compass·compound·constraint·cost·dimension·distribution·domain·duality·element·energy·entropy·fallback·feedback·flow·force·fractal·gate·gene·generate·history·holographic·hooks·horo·identity·information·law·limit·logic·mass·math·matrix·measure·merge·network·notes·number·one·profane·proof·rate·research·rodin·sacred·sampling·sequence·signal·society·sparsity·standard·tamper·torus·train·transaction·uuid·whole·zeropoint · ← aggregation·akashic·angel·aura·balance·bottleneck·breath·breed·chat·classroom·cmyk·compass·compound·constraint·cost·dimension·distribution·domain·duality·element·energy·entropy·fallback·feedback·flow·force·fractal·gate·gene·generate·history·holographic·hooks·horo·identity·information·law·limit·logic·mass·math·matrix·measure·merge·network·notes·number·one·profane·proof·rate·research·rodin·sacred·sampling·sequence·signal·society·sparsity·standard·tamper·torus·train·transaction·uuid·whole·zeropoint
 analysis aura
 law each mystery that resolves onto the atoms is [[research]] [[entropy]] converted to [[tamper]]-[[cost]]; the correspondence is kept only where one measurement and one form share one ratio (✓), and named metaphor (~) otherwise — never overclaimed.
 
 ---
 
-<sub>content-uuid `5931cd3d-083d-8f96-8547-6b55254a5726` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `78ecfc1b-551c-8f2f-8844-c3edd0117328` · `pnpm readme` · `pnpm computed:check`</sub>

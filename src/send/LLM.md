@@ -3,15 +3,15 @@
 
 # send
 
-path `send` · uuid `7aef3441-0676-86b7-8c30-f55bd3bfa15b` · diamond `716f1f33-e2b4-85f9-9d0d-7a0e753d112b`
+path `send` · uuid `7aef3441-0676-86b7-8c30-f55bd3bfa15b` · diamond `3dccb26e-cc28-8946-aa8b-ccae41330c83`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports send · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·stat · ← cohort·landmarks·memories·notice·stat
+neighbors → action·collapse·communication·law·merge·sti · ← action·collapse·communication·law·merge·sti
 analysis —
 law send is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c4c231fd-65ca-823c-adad-633800860646` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0fbc372e-cc3f-8b47-8146-f73119d393c3` · `pnpm readme` · `pnpm computed:check`</sub>

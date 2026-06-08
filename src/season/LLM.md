@@ -3,15 +3,15 @@
 
 # season
 
-path `season` · uuid `9df00562-c211-8481-a0cb-105287b64a16` · diamond `762fd690-dc72-8c5c-bf5c-2eeb70c096a4`
+path `season` · uuid `9df00562-c211-8481-a0cb-105287b64a16` · diamond `864101dd-b332-8f7d-964b-20d722cf205b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·bottleneck·capacity·crop·degreeday·frost·hardiness·harvest·horo·law·period·planting·schedule·time·tunnel · exports season · escapes —
-links `31/31` · folded `1` · bonds in `4` out `4`
+links `31/31` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·increases·landmarks·seasonal · ← balance·increases·landmarks·seasonal
+neighbors → agriculture·apiculture·bottleneck·capacity·contains·covercrop·creative·crop·cropplan·cultivation·degreeday·dormancy·evapotranspiration·frost·hardiness·harvest·horo·lactation·law·maturity·pasture·perennial·period·planting·podcast·pruning·radio·rotation·schedule·share·time·tunnel·tv·work · ← agriculture·apiculture·bottleneck·capacity·contains·covercrop·creative·crop·cropplan·cultivation·degreeday·dormancy·evapotranspiration·frost·hardiness·harvest·horo·lactation·law·maturity·pasture·perennial·period·planting·podcast·pruning·radio·rotation·schedule·share·time·tunnel·tv·work
 analysis —
 law the season is the time-axis [[bottleneck]] of [[agriculture]] (land × season caps how much can be grown), set by the probabilistic frost-free window and heat accumulation — regional and never a copied calendar.
 
 ---
 
-<sub>content-uuid `77d42d4b-b02d-8f5e-bb03-7ed7acd98e64` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `81986c97-e1a2-8c22-8165-f739f96c7d4e` · `pnpm readme` · `pnpm computed:check`</sub>

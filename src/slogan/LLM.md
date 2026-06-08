@@ -3,15 +3,15 @@
 
 # slogan
 
-path `slogan` · uuid `b9975c82-20e7-8fdf-bc40-300682330631` · diamond `207e3544-2926-8afb-833d-c4a90f63193a`
+path `slogan` · uuid `b9975c82-20e7-8fdf-bc40-300682330631` · diamond `ed660928-2f38-8b46-9a36-727c1b68ba20`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports slogan · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·markup·memories·stat · ← action·cohort·landmarks·markup·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law slogan is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3cc187d0-e4dc-8bed-a2da-f2446c510ac5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f8580bd6-4085-83e3-8d08-31be81305752` · `pnpm readme` · `pnpm computed:check`</sub>

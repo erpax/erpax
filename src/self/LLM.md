@@ -3,15 +3,15 @@
 
 # self
 
-path `self` · uuid `dbcf2eb9-0f6e-875d-a294-d197a5734e02` · diamond `f15dbe09-4de4-8615-b002-539f27536674`
+path `self` · uuid `dbcf2eb9-0f6e-875d-a294-d197a5734e02` · diamond `ccc13556-7685-8068-a24c-046fce77955b`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports akashic·coil·config·generate·holographic·horo·identity·link·merge·metatron·one·proof·rodin·sacred·self·sequence·sufficient·zeropoint · exports self · escapes —
-links `36/36` · folded `1` · bonds in `11` out `11`
+links `36/36` · folded `1` · bonds in `100` out `97`
 faces worker·plugin·pwa `0·0·0`
-neighbors → certified·cohort·detected·idempotency·landmarks·memories·replication·request·rodin·stat·uk · ← certified·cohort·detected·idempotency·landmarks·memories·replication·request·rodin·stat·uk
+neighbors → accounting·agent·akashic·allocation·anchor·answer·bogomilism·breath·buddhism·chat·classroom·cloning·closure·coil·collapse·command·compass·competition·concatenate·config·confucianism·consciousness·contribution·decentralization·decide·decompression·derive·diamond·dimension·duality·education·fractal·generate·gnosticism·hermeticism·hinduism·history·holographic·hooks·horo·identity·ingest·jainism·judaism·kabbalah·law·lichen·link·llm·logic·manichaeism·matrix·mcp·memory·merge·metatron·models·oauth·one·orphism·orthodoxy·payload·position·prayer·proof·protestantism·readme·receipt·refactor·reference·religion·research·reverse·ritual·rodin·routing·sacred·sandbox·sequence·services·similar·skills·skin·society·storage·sufficient·sufism·taoism·team·thought·torus·train·uuid·vedanta·version·whole·zeropoint · ← accounting·agent·akashic·allocation·anchor·answer·bogomilism·breath·buddhism·chat·classroom·cloning·closure·coil·collapse·command·compass·competition·concatenate·config·confucianism·consciousness·contribution·decentralization·decide·decompression·derive·diamond·dimension·duality·education·fractal·generate·generate·gnosticism·hermeticism·hinduism·history·holographic·hooks·horo·identity·ingest·jainism·judaism·kabbalah·law·lichen·link·llm·logic·manichaeism·matrix·mcp·memory·merge·metatron·models·oauth·one·orphism·orthodoxy·payload·position·prayer·proof·protestantism·readme·receipt·refactor·reference·religion·research·reverse·ritual·rodin·routing·sacred·sandbox·sequence·services·similar·skills·skin·society·society·storage·sufficient·sufism·taoism·team·thought·torus·train·uuid·uuid·vedanta·version·whole·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `550a1547-2167-823e-91dc-642ec80ed9a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `148e7c9c-9831-8293-bd8b-d78446fbbc91` · `pnpm readme` · `pnpm computed:check`</sub>

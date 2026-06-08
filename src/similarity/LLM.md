@@ -3,15 +3,15 @@
 
 # similarity
 
-path `similarity` · uuid `4a7311ee-68c2-8444-b566-fc1e15ceb5e7` · diamond `9ddca17a-9231-86cb-9130-99cbbbe5c824`
+path `similarity` · uuid `4a7311ee-68c2-8444-b566-fc1e15ceb5e7` · diamond `57ebd161-d7e6-8121-9d65-e850c24e51c6`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports bio·chem·collapse·law·merge·sti · exports similarity · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → bio·chem·collapse·law·merge·sti · ← bio·chem·collapse·law·merge·sti
 analysis —
 law similarity is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2f88e4c1-c1c1-8d20-8358-4f1e2b9e67ed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb37bc08-b36c-87a2-a49f-017dab51f962` · `pnpm readme` · `pnpm computed:check`</sub>

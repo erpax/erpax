@@ -23,7 +23,7 @@
 
 - partition `church` · sub-root `46484840-5321-8cba-8c77-778c60438a60`
 - bond degree `7` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1be10ccd-faf9-8b3b-b1bd-bafae5bb3240` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `17e04c88-b00a-8caa-bd59-2ef0aa99dda6` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

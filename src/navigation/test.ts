@@ -6,6 +6,7 @@ import {
   pathNavMeta,
   routeOfPath,
   segmentsOf,
+  topNavAnchorsFromSequence,
 } from '@/navigation'
 
 const SAMPLE_PATHS = [
@@ -77,5 +78,16 @@ describe('navigation — path-derived nav groups', () => {
 
   it('routeOfPath matches corpus/vitepress route law', () => {
     expect(routeOfPath('skill/router')).toBe('/skill/router/SKILL')
+  })
+
+  it('topNavAnchorsFromSequence picks the first N live rodin-order skills', () => {
+    const anchors = topNavAnchorsFromSequence(
+      ['config', 'identity', 'access'],
+      (p) => p === 'config' || p === 'identity',
+    )
+    expect(anchors).toEqual([
+      { text: 'config', link: '/config/SKILL' },
+      { text: 'identity', link: '/identity/SKILL' },
+    ])
   })
 })

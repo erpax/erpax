@@ -23,7 +23,7 @@
 
 - partition `chat` · sub-root `92464f93-1e6c-8031-87da-a8d3661dabed`
 - bond degree `210` · analysis neighbors `agent` · `aura`
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7cd15e53-5b35-80cc-b433-d01f99d212c0` · framed by typography partition `chat` bonds `210` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `807bfc32-cb4c-8337-9cea-205fc3909f07` · framed by typography partition `chat` bonds `210` · `pnpm readme` · `pnpm readme:check`</sub>

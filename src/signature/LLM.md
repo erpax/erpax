@@ -3,15 +3,15 @@
 
 # signature
 
-path `signature` · uuid `e8f6626d-292d-8741-a6bd-1be7b9565c74` · diamond `f6a8f468-bd8c-8ca8-ae92-c61cb01831d7`
+path `signature` · uuid `e8f6626d-292d-8741-a6bd-1be7b9565c74` · diamond `436e26d9-7c73-8e4b-933e-0e3f0c545dfd`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·identity·law·signatures · exports signature · escapes —
-links `8/8` · folded `1` · bonds in `4` out `4`
+links `8/8` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·identity·law·pqc·signatures · ← balance·identity·law·pqc·signatures
 analysis —
 law a signature binds one signer to specific content — break the binding (alter the content or the mark) and the signature no longer verifies; it is the cryptographic tie between an [[identity]] and what it attests.
 
 ---
 
-<sub>content-uuid `810d81e3-f445-8905-b28b-d9f7405c9d5d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6e354f6-e0c6-8230-85b7-04d17b95f069` · `pnpm readme` · `pnpm computed:check`</sub>

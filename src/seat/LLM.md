@@ -3,15 +3,15 @@
 
 # seat
 
-path `seat` · uuid `cb6f0c45-3b34-8336-8a9a-65775d5c02eb` · diamond `51ca2d7e-a43f-8294-97e3-872a6a7d1b8b`
+path `seat` · uuid `cb6f0c45-3b34-8336-8a9a-65775d5c02eb` · diamond `c85340c0-d5a9-8b7d-86a4-2d7b51a0d541`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·number·row·section·ticketed · exports seat · escapes —
-links `5/5` · folded `1` · bonds in `30` out `30`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·akashic·aura·coach·crisis·crop·cup·emergence·endorser·founder·grants·hobby·id·issue·landmarks·llm·maintainer·max·opportunity·pickup·plus·promise·satire·soil·spouse·temporarily·torus·training·user·variables · ← accounting·akashic·aura·coach·crisis·crop·cup·emergence·endorser·founder·grants·hobby·id·issue·landmarks·llm·maintainer·max·opportunity·pickup·plus·promise·satire·soil·spouse·temporarily·torus·training·user·variables
+neighbors → law·number·row·section·ticketed · ← law·number·row·section·ticketed
 analysis —
 law seat is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cd732eb0-5bf8-8a16-b4ae-646d63ba1a4e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ae18548-7e29-8f58-a12e-b8b4040e066c` · `pnpm readme` · `pnpm computed:check`</sub>

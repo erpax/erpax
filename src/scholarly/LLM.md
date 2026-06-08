@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·medical·merge·sti · exports scholarly · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·euenergy·landmarks·literature·memories·stat · ← cohort·euenergy·landmarks·literature·memories·stat
+neighbors → article·collapse·law·medical·merge·sti · ← article·collapse·law·medical·merge·sti
 analysis —
 law scholarly is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `db67a642-0da7-8a33-8a36-a84b49907828` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a18344c2-f33f-8fa8-8347-982d2cb96e5e` · `pnpm readme` · `pnpm computed:check`</sub>

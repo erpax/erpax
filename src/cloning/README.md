@@ -25,7 +25,7 @@
 
 - partition `cloning` · sub-root `4ea131a4-5375-89da-a0b2-61d7c6b569d7`
 - bond degree `53` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -60,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `dc19c61e-2f96-8618-a30d-6f0a6d96873f` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ab1ce69d-6a24-87c6-9955-60ed2c126889` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

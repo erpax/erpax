@@ -2,17 +2,17 @@
 
 # sikhism
 
-> atom `sikhism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `sikhism` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `sikhism` · sub-root `c075146c-20ae-81f0-b056-96f6b3aca8f5`
-- bond degree `30` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `77` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `c075146c-20ae-81f0-b056-96f6b3aca8f5`
+- bonds in `25` · out `25`
 - trinity form·code·proof `1`·`0`·`0`
 - links `58` / `58`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `80c840ea-d5fc-8a36-be54-3807ae2d8d5c` · framed by typography partition `sikhism` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fb935eec-ed49-8ee7-8afc-3b49729f8ae9` · framed by typography partition `sikhism` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>

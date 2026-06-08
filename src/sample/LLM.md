@@ -3,15 +3,15 @@
 
 # sample
 
-path `sample` · uuid `d41cb4a7-14e5-8b21-b675-9291201a89d5` · diamond `c6d82f63-0d88-8bdc-88aa-f5a306644a69`
+path `sample` · uuid `d41cb4a7-14e5-8b21-b675-9291201a89d5` · diamond `80c2a4fc-e312-8fa9-9b59-53ad6b34a39a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti·tissue·type · exports sample · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → code·collapse·law·merge·sti·tissue·type · ← code·collapse·law·merge·sti·tissue·type
 analysis —
 law sample is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `eb654ea0-5858-8a66-9a56-3e4f5151a4ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f3ec797e-34b6-81dc-b9ef-27107be5d76b` · `pnpm readme` · `pnpm computed:check`</sub>

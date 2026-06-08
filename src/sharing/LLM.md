@@ -3,15 +3,15 @@
 
 # sharing
 
-path `sharing` · uuid `d3c3a795-6d5e-8c90-ae01-a408ed088e62` · diamond `5196c2da-6a59-8d55-9018-6f17c2c68855`
+path `sharing` · uuid `d3c3a795-6d5e-8c90-ae01-a408ed088e62` · diamond `28bff7b4-ae86-8162-a1f7-ed007d120a93`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·cost·health·law·merge·plan·specification·sti · exports sharing · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cdformat·cohort·landmarks·memories·stat · ← cdformat·cohort·landmarks·memories·stat
+neighbors → collapse·cost·health·law·merge·plan·specification·sti · ← collapse·cost·health·law·merge·plan·specification·sti
 analysis —
 law sharing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fff1d0ed-771e-8d9c-95f7-ad865a5c82f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ae5b841-ddf7-8c0f-8f9d-11052e24c359` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # same
 
-path `same` · uuid `20775feb-ceae-868d-9b78-5d86682c1a3f` · diamond `1a9f714a-c787-8bfd-b8d9-5357524fa2cb`
+path `same` · uuid `20775feb-ceae-868d-9b78-5d86682c1a3f` · diamond `05c41e77-9b2e-81b7-a4b9-98e9b4d65ca5`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports same · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law same is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3d77bb26-aa9b-86b2-9f6e-d776a713e8f7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1bfdcff2-7f3f-82ae-b951-e29f32d1a862` · `pnpm readme` · `pnpm computed:check`</sub>

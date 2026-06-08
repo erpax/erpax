@@ -3,15 +3,15 @@
 
 # whole
 
-path `self/whole` · uuid `3848860b-acb8-84a5-8324-379b0cebd3cc` · diamond `d0969060-5a7d-8ddc-b06b-db728daac007`
+path `self/whole` · uuid `3848860b-acb8-84a5-8324-379b0cebd3cc` · diamond `b2e50c99-c134-8a19-abdb-2d6e5f428b3c`
 horo `9` `unity` · trinity `1·0·0` · sealed `1`
 imports coil·gate·holographic·one·self·similar·torus·whole · exports whole · escapes —
-links `16/16` · folded `1` · bonds in `9` out `9`
+links `16/16` · folded `1` · bonds in `107` out `107`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·calendars·corruption·dropoff·eliminations·founder·good·landmarks·marine · ← balance·calendars·corruption·dropoff·eliminations·founder·good·landmarks·marine
+neighbors → accounting·agent·agriculture·akashic·all·animism·archangel·atom·aura·begin·bogomilism·catholicism·chat·christianity·close·coherence·coil·collapse·collections·config·consciousness·cost·decentralization·decompression·diamond·dimension·domain·duality·ecosystem·element·end·entropy·entry·fields·forge·fractal·fusion·gate·generate·give·gnosticism·gravity·hallucination·herd·hermeticism·hinduism·holographic·holographic·identity·judaism·kabbalah·law·lexical·lichen·manichaeism·manufacturing·matrix·memory·merge·metatron·one·one·open·paganism·part·peace·permaculture·plugins·prayer·protestantism·purity·readme·reference·regeneration·religion·reverse·ritual·science·sectors·self·sequence·shamanism·share·shinto·similar·sin·skills·society·suffering·sustainability·sync·take·tamper·taoism·team·thought·torus·trinity·uuid·vedanta·versions·void·weave·whole·whole·wisdom·yield · ← accounting·agent·agriculture·akashic·all·animism·archangel·atom·aura·begin·bogomilism·catholicism·chat·christianity·close·coherence·coil·collapse·collections·config·consciousness·cost·decentralization·decompression·diamond·dimension·domain·duality·ecosystem·element·end·entropy·entry·fields·forge·fractal·fusion·gate·generate·give·gnosticism·gravity·hallucination·herd·hermeticism·hinduism·holographic·identity·judaism·kabbalah·law·lexical·lichen·manichaeism·manufacturing·matrix·memory·merge·metatron·one·open·paganism·part·peace·permaculture·plugins·prayer·protestantism·purity·readme·reference·regeneration·religion·reverse·ritual·science·sectors·self·sequence·shamanism·share·shinto·similar·sin·skills·society·suffering·sustainability·sync·take·tamper·taoism·team·thought·torus·torus·trinity·uuid·uuid·vedanta·versions·void·weave·whole·whole·wisdom·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8e83ff84-f298-8be6-af79-3435837da60c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f288c1d3-4208-8c09-b04b-8381561e270d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # served
 
-path `served` · uuid `a804edf7-4988-8ffc-9052-9279ca61648a` · diamond `76979d97-3002-8b7f-9687-fe97f3e60a73`
+path `served` · uuid `a804edf7-4988-8ffc-9052-9279ca61648a` · diamond `2c515665-5602-8302-aaa9-52a6c92fd28a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports area·collapse·law·merge·sti · exports served · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → area·collapse·law·merge·sti · ← area·collapse·law·merge·sti
 analysis —
 law served is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7d46b377-f94e-80db-ac13-1000f50b6b7e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `735a2aca-ad0a-89b9-a629-03ec10b5b64b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # secret
 
-path `secret` · uuid `—` · diamond `649733e7-6a48-86c6-a0a8-605ca3322223`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `secret` · uuid `1d82c5c6-2afd-84ed-8935-3a2cbfdef37a` · diamond `e1d2cb51-d921-8614-8587-a997fa6fc5c5`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports SecretIdentityContent·const·function·interface · escapes —
-links `6/6` · folded `0` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis ai·cloudflare·diamond·hallucination·innovation·purity
+links `6/6` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → 38·ai·cloudflare·config·deploy·innovation·integrity·seal · ← 38·ai·cloudflare·config·deploy·innovation·integrity·seal
+analysis ai·cloudflare·innovation
 law —
 
 ---
 
-<sub>content-uuid `25b7d74c-c1a8-8f43-a406-d612c0f11010` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `30265b47-aed0-8f3c-bb6e-667b504e32db` · `pnpm readme` · `pnpm computed:check`</sub>

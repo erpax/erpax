@@ -3,15 +3,15 @@
 
 # secondary
 
-path `secondary` · uuid `354be15b-da9d-8c75-bc2e-81a06a4ee61f` · diamond `190114ba-679b-8538-8e62-23ae9112b241`
+path `secondary` · uuid `354be15b-da9d-8c75-bc2e-81a06a4ee61f` · diamond `a9b689f1-743f-8593-b2d6-23616ceca19c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·prevention·sti · exports secondary · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·prevention·sti · ← collapse·law·merge·prevention·sti
 analysis —
 law secondary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd60ef3c-e9b3-82f5-920a-b2d820aebb18` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89fbaea2-dee4-8640-8d0d-b016f4a2b1ac` · `pnpm readme` · `pnpm computed:check`</sub>

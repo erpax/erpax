@@ -23,7 +23,7 @@
 
 - partition `coach` · sub-root `75c376eb-5dc1-8940-8dcb-6b9d820b9ee9`
 - bond degree `7` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `329fafeb-8984-8061-9992-f0411f69ff58` · framed by typography partition `coach` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9d987b2a-38f4-8d62-b721-cd4d1895f882` · framed by typography partition `coach` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

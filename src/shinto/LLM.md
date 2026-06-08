@@ -3,15 +3,15 @@
 
 # shinto
 
-path `shinto` · uuid `—` · diamond `917852fb-2565-8542-906a-51729d7d2af5`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `shinto` · uuid `b2eadaea-345a-8b88-a6ea-e4bf01b43c3f` · diamond `65656388-1ea4-8ae7-94a8-d75439d49a72`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·atom·cycle·diamond·fractal·generate·gift·holographic·identity·law·name·part·profane·religion·ritual·sacred·society·translator·uuid·water·whole·zeropoint · exports shinto · escapes —
-links `51/51` · folded `0` · bonds in `0` out `0`
+links `51/51` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·atom·cycle·diamond·fractal·generate·gift·holographic·identity·law·name·part·profane·religion·ritual·sacred·society·translator·uuid·water·whole·zeropoint · ← archangel·atom·cycle·diamond·fractal·generate·gift·holographic·identity·law·name·part·profane·religion·ritual·sacred·society·translator·uuid·water·whole·zeropoint
+analysis diamond
 law shinto is a [[diamond]] of [[sacred]] · [[ritual]] · [[water]] · [[cycle]] · [[gift]] · [[name]] — the kami the [[sacred]] dwelling in every [[part]] ([[holographic]]), purity (harae) the [[profane]] washed back toward [[zeropoint]], the shrine renewed by re-derivation ([[generate]]); each Japanese term strips its prefix to one content-[[uuid]] ([[translator]]), and as an [[archangel]] it architects the society's domain of ritual purity.
 
 ---
 
-<sub>content-uuid `5d9476d9-84f7-826d-86ba-d2761b4cf009` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a8c9630-0ac5-870c-be73-ca13086eeda7` · `pnpm readme` · `pnpm computed:check`</sub>

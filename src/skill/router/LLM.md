@@ -3,15 +3,15 @@
 
 # router
 
-path `skill/router` · uuid `—` · diamond `723ca0a7-8ca4-89b1-84d4-905ea3c4466e`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
-imports — · exports SKILL_INDEX·skillRouterPlugin · escapes —
-links `1/1` · folded `0` · bonds in `0` out `0`
+path `skill/router` · uuid `2bbdffe5-9fda-874a-ae4c-05894539a20b` · diamond `cceb0116-ffbd-8283-bb96-110ad588f462`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
+imports — · exports SKILL_INDEX·buildFrontmatterGraph·connectCorpus·connectFrontmatter·graphConnectivity·materializeSkillFrontmatter·renderFrontmatter·skillRouterPlugin·type·upgradeSkillText·verifySkillFrontmatter · escapes —
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·1·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → law · ← law
+analysis —
 law barrel re-export at `@/skill/router`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `549c6479-f9e9-85a3-bda5-280c4962f9aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d067066-3762-8e72-973b-9ca58440c3b6` · `pnpm readme` · `pnpm computed:check`</sub>

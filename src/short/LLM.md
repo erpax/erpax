@@ -3,15 +3,15 @@
 
 # short
 
-path `short` · uuid `482ec0cd-e882-8645-8ad1-978330343f2b` · diamond `37730a15-f16d-87c7-9732-1a70d2b493f1`
+path `short` · uuid `482ec0cd-e882-8645-8ad1-978330343f2b` · diamond `0f540907-d041-89d0-b075-b14083d8f1f3`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·story · exports short · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·measurements·memories·rescheduled·stat · ← cohort·landmarks·measurements·memories·rescheduled·stat
+neighbors → collapse·law·merge·sti·story · ← collapse·law·merge·sti·story
 analysis —
 law short is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9d97ed6d-9494-8305-9b5e-c7e7b5662172` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `799cf163-9f2d-8487-8030-2b8d63b55564` · `pnpm readme` · `pnpm computed:check`</sub>

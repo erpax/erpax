@@ -3,15 +3,15 @@
 
 # satire
 
-path `satire` · uuid `470abf41-9927-8d59-94f6-8e0fb3438d2a` · diamond `c9db33c4-97e5-8f79-a2e9-99b2156351c1`
+path `satire` · uuid `470abf41-9927-8d59-94f6-8e0fb3438d2a` · diamond `443dfa17-37e3-8296-9591-314f5fadd88c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports satire · escapes —
-links `4/4` · folded `1` · bonds in `36` out `37`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 16·addressed·aura·available·blog·catalogue·cohort·collide·config·diffusion·displacement·enterprisebudget·game·gears·generator·header·hobby·holographic·icubeds·landmarks·language·marine·measurement·memories·memories·metatron·office·pagination·passed·public·seat·stat·story·symbol·tax·temporarily·trinity · ← 16·addressed·aura·available·blog·catalogue·cohort·collide·config·diffusion·displacement·enterprisebudget·game·gears·generator·header·hobby·holographic·icubeds·landmarks·language·marine·measurement·memories·metatron·office·pagination·passed·public·seat·stat·story·symbol·tax·temporarily·trinity
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law satire is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8da402ab-a4e5-8ab3-bb44-2d160468172c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9656cc0-23d8-840c-8a84-3737a75c7cb0` · `pnpm readme` · `pnpm computed:check`</sub>

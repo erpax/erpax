@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports CollectionScope·SCOPE_BY_COLLECTION·TENANT_FIELD·VERSION_STATUS_FIELD·VersionStatus·type·wherePublished·wherePublishedAnd · escapes —
 links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → app·boat·cohort·landmarks·memories·stat·volume · ← app·boat·cohort·landmarks·memories·stat·volume
+neighbors → collapse·law·merge·published·sti·tenant·warranty · ← collapse·law·merge·published·sti·tenant·warranty
 analysis —
 law scope is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `67af6c1c-c010-8ddc-9d42-1bb221dad95d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d48b9b97-ac07-83b2-9ccf-8d2bab4b40f4` · `pnpm readme` · `pnpm computed:check`</sub>

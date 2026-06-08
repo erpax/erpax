@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·merge·sti · exports satirical · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·functional·landmarks·memories·stat · ← cohort·functional·landmarks·memories·stat
+neighbors → article·collapse·law·merge·sti · ← article·collapse·law·merge·sti
 analysis —
 law satirical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3c388668-fdaa-8198-8790-f01bc017ba43` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d6d9d67-717a-8d15-acad-e5e33fbe4cf5` · `pnpm readme` · `pnpm computed:check`</sub>

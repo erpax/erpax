@@ -3,15 +3,15 @@
 
 # sacred
 
-path `sacred` · uuid `e04d1249-c8e0-8424-af2e-35dfc2a68a3b` · diamond `57e425e3-11bc-89ac-ad3b-f8296e5b4fcf`
+path `sacred` · uuid `e04d1249-c8e0-8424-af2e-35dfc2a68a3b` · diamond `2f241cbd-b45e-84bb-b984-1137e1bece11`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·akashic·aura·balance·close·contribution·generate·history·identity·law·merge·profane·proof·standard·tamper·trinity·uuid·zeropoint · exports sacred · escapes —
-links `31/31` · folded `1` · bonds in `7` out `7`
+links `31/31` · folded `1` · bonds in `48` out `48`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·landmarks·memories·sanitization·stat·thursday · ← coach·cohort·landmarks·memories·sanitization·stat·thursday
+neighbors → accounting·akashic·angel·animism·aura·balance·bogomilism·civilization·close·collapse·contribution·cost·duality·faith·generate·grace·hallucination·history·horo·identity·kabbalah·law·limit·lineage·mercy·merge·orphism·orthodoxy·paganism·port·prayer·profane·proof·religion·research·ritual·science·self·sequence·shamanism·shinto·sin·standard·suffering·trinity·uuid·wisdom·zeropoint · ← accounting·akashic·angel·animism·aura·balance·bogomilism·civilization·close·collapse·contribution·cost·duality·faith·generate·grace·hallucination·history·horo·identity·kabbalah·law·limit·lineage·mercy·merge·orphism·orthodoxy·paganism·port·prayer·profane·proof·religion·research·ritual·science·self·sequence·shamanism·shinto·sin·standard·suffering·trinity·uuid·wisdom·zeropoint
 analysis aura
 law sacred is the verified-true — content-uuid recomputes ([[proof]]), the books [[balance]], the lineage traces to a real source; the dual of [[profane]], audited at every scale before every act.
 
 ---
 
-<sub>content-uuid `a5b3556c-c7d9-8b00-a9c4-ad1282118be9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bbc9ed46-94c0-860a-8ba2-1b7e2dc26307` · `pnpm readme` · `pnpm computed:check`</sub>

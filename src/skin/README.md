@@ -2,7 +2,7 @@
 
 # skin
 
-> atom `skin` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `skin` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `skin` · sub-root `7eab7791-988d-8738-823c-b63c8d0e6598`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `18` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `eca36889-8fc0-8fd4-a858-332cee8902a6`
-- bonds in `5` · out `5`
+- uuid `7eab7791-988d-8738-823c-b63c8d0e6598`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9348e085-8d51-8040-a345-8ce85ccede36` · framed by typography partition `skin` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3cf37691-9e20-8b10-8034-4d5ffd31c10f` · framed by typography partition `skin` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

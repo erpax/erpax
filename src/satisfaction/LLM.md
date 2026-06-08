@@ -3,15 +3,15 @@
 
 # satisfaction
 
-path `satisfaction` · uuid `1e01b484-05d7-8246-ac4e-8a3c576a6744` · diamond `5a9f2768-36b0-8adf-81d9-76d355774eeb`
+path `satisfaction` · uuid `1e01b484-05d7-8246-ac4e-8a3c576a6744` · diamond `3630286c-3521-8331-b539-2d5cf1c860d3`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports comment·customers·employees·sentiment · exports satisfaction · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → article·cohort·landmarks·measurement·memories·stat · ← article·cohort·landmarks·measurement·memories·stat
+neighbors → attrition·comment·customers·employees·engagement·feedback·reviews·sentiment · ← attrition·comment·customers·employees·engagement·feedback·reviews·sentiment
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `49d78849-a8dd-809d-b7fc-95602df8a15b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e37d0b4-49e1-8f52-aef7-5e742d46813f` · `pnpm readme` · `pnpm computed:check`</sub>

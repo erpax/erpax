@@ -3,15 +3,15 @@
 
 # sequence
 
-path `sequence` · uuid `f26a016f-616c-8d3c-a293-019bc38b2735` · diamond `fa6fe2b8-8c4d-8995-85de-fdb201447760`
+path `sequence` · uuid `f26a016f-616c-8d3c-a293-019bc38b2735` · diamond `7a620ee6-8761-866b-a310-78858cfc9532`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports akashic·aura·commerce·config·generate·holographic·hooks·horo·identity·law·merge·part·plugins·port·profane·proof·recover·sacred·tags·trinity·versions · exports sequence · escapes —
-links `39/39` · folded `1` · bonds in `15` out `15`
+links `39/39` · folded `1` · bonds in `136` out `132`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·atom·catalogue·cohort·colleagues·founder·hobby·holographic·id·landmarks·list·marine·memories·progression·sections · ← akashic·atom·catalogue·cohort·colleagues·founder·hobby·holographic·id·landmarks·list·marine·memories·progression·sections
+neighbors → access·accounting·age·akashic·architect·atom·aura·axis·base·begin·beyond·bio·breath·career·chat·cloning·coil·collapse·command·commerce·compass·competencies·concatenate·config·constitution·coordinate·corruption·crest·decompression·defence·descent·development·diamond·digit·dimension·dissolve·drone·duality·education·element·end·expand·federation·flow·fractal·gate·generate·governance·gravity·hallucination·harmony·has·health·history·holographic·hooks·horo·identifier·identity·invariant·law·legislation·limit·logic·mala·manufacturing·matrix·merge·method·normalize·number·octave·one·part·party·passenger·phases·planting·plugins·polymer·port·profane·proof·propagation·purity·pwa·readme·realtime·recover·refactor·religion·relocate·reverse·rodin·rotation·round·sacred·science·self·share·similar·sin·skills·society·sparsity·spec·standard·sti·stream·subscriptions·sufficient·sunni·tag·tags·thought·tillage·torus·train·trinity·typography·uuid·version·versions·vitepress·war·wave·weave·website·whole·wisdom·writing·zeropoint · ← access·accounting·age·akashic·architect·atom·aura·axis·base·begin·beyond·bio·breath·breath·career·chat·cloning·coil·collapse·command·commerce·compass·competencies·concatenate·config·constitution·coordinate·corruption·crest·decompression·defence·descent·development·diamond·digit·digit·dimension·dissolve·drone·duality·education·element·end·expand·federation·flow·fractal·gate·generate·governance·gravity·gravity·hallucination·harmony·has·health·history·holographic·hooks·horo·identifier·identity·invariant·law·legislation·limit·logic·mala·manufacturing·matrix·merge·method·normalize·number·octave·one·one·part·party·passenger·phases·planting·plugins·polymer·port·profane·proof·propagation·purity·pwa·readme·realtime·recover·refactor·religion·relocate·reverse·rodin·rotation·round·sacred·science·self·share·similar·sin·skills·society·sparsity·spec·standard·sti·stream·subscriptions·sufficient·sunni·tag·tags·thought·tillage·torus·train·trinity·typography·uuid·version·versions·vitepress·war·wave·weave·website·whole·wisdom·writing·zeropoint
 analysis aura
 law the atoms compose in the fixed order `0·3·6·9·1·2·4·8·7·5` (the map over the [[identity]]-entangled whole); applied in sequence, identical things derive identical addresses and [[merge]] by design — losing the sequence is losing the path.
 
 ---
 
-<sub>content-uuid `dcd42896-49b9-8eef-8e7e-c28901430d3e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cee66329-3aed-8465-bab0-fd015a460d5a` · `pnpm readme` · `pnpm computed:check`</sub>

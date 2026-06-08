@@ -25,7 +25,7 @@
 
 - partition `chakra` · sub-root `0b1b99f8-aafb-8c47-bab7-f0593c4d948e`
 - bond degree `80` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -57,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `27903362-ba02-862f-945a-47046881544e` · framed by typography partition `chakra` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bf377e7a-425e-8c49-8736-a825d9c941df` · framed by typography partition `chakra` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

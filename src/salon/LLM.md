@@ -3,15 +3,15 @@
 
 # salon
 
-path `salon` · uuid `f49c7be9-de92-80b9-bbd7-be80e6017ed2` · diamond `a4b2ed3a-58fc-84bd-a62d-803a4cd06ee4`
+path `salon` · uuid `f49c7be9-de92-80b9-bbd7-be80e6017ed2` · diamond `381cc89e-4daf-8682-9626-9bd9bf4303c5`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports beauty·collapse·hair·law·merge·nail·sti · exports salon · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attrition·command·customer·emission·employee·endpoints·features·similar · ← attrition·command·customer·emission·employee·endpoints·features·similar
+neighbors → beauty·collapse·hair·law·merge·nail·sti · ← beauty·collapse·hair·law·merge·nail·sti
 analysis —
 law salon is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3fd2e346-e271-85d6-87dc-fd2073932d0f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `38683774-057a-8945-9be4-750c883375e5` · `pnpm readme` · `pnpm computed:check`</sub>

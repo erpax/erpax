@@ -23,7 +23,7 @@
 
 - partition `scion` · sub-root `87f43e2f-7357-8905-85ce-2f0a81632b60`
 - bond degree `27` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `32102c12-59a2-833b-a58e-37440296ff7b` · framed by typography partition `scion` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `479cf27e-83bd-8d44-a013-463a20fe4591` · framed by typography partition `scion` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

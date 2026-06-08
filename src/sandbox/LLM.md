@@ -3,15 +3,15 @@
 
 # sandbox
 
-path `sandbox` · uuid `158cc2c7-0b9d-838d-b9a5-4a2bdf4ebe8e` · diamond `cb70d00e-efbb-8a74-aa5d-0f473f5d9737`
+path `sandbox` · uuid `158cc2c7-0b9d-838d-b9a5-4a2bdf4ebe8e` · diamond `41378aed-1546-8fd1-b440-fe6597ba7562`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/receipt · exports function·interface · escapes —
-links `21/21` · folded `1` · bonds in `27` out `27`
-faces worker·plugin·pwa `0·0·0`
-neighbors → backlog·befriend·bone·book·coffee·country·crop·doors·homeopathic·imprint·keyword·landmarks·lines·materiality·menu·mobile·pickup·promise·receive·repetition·reviewed·rooms·rootstock·screen·throat·translate·wheelbase · ← backlog·befriend·bone·book·coffee·country·crop·doors·homeopathic·imprint·keyword·landmarks·lines·materiality·menu·mobile·pickup·promise·receive·repetition·reviewed·rooms·rootstock·screen·throat·translate·wheelbase
+links `21/21` · folded `1` · bonds in `22` out `20`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·bindings·exchange·identity·law·mcp·merge·oauth·peace·proof·receipt·research·routing·sanitization·security·self·skin·society·trading·uuid · ← access·access·bindings·exchange·identity·law·mcp·mcp·merge·oauth·peace·proof·receipt·research·routing·sanitization·security·self·skin·society·trading·uuid
 analysis —
 law an untrusted tool's identity IS its content-[[uuid]] (recomputed, never a claimed label) and it runs under a content-addressed grant {capabilities, allowedHosts, credentialHandles} — every action is `permits`-evaluated AND [[receipt]]ed in one step, secrets brokered at the host boundary only by handle, and all three guarantees are encoded natively ([[self]]-sufficient, importing nothing external).
 
 ---
 
-<sub>content-uuid `2a5b1e02-6810-8824-b508-9b04786fae49` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a1c59cfc-7839-8827-a80e-305a97c8b171` · `pnpm readme` · `pnpm computed:check`</sub>

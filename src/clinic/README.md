@@ -23,7 +23,7 @@
 
 - partition `clinic` · sub-root `8501af6c-e673-8e5a-8fa4-7d6cc4c665e3`
 - bond degree `16` · analysis neighbors —
-- graph root `afa3120b-8d1d-8d7f-baa6-86e32f4b7115`
+- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `22160017-a05d-8437-862e-ab6f5a154c1d` · framed by typography partition `clinic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0fc12480-8aa2-8aeb-ba72-a5bb336750bc` · framed by typography partition `clinic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
