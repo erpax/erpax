@@ -6,7 +6,11 @@
  */
 import { existsSync, readdirSync, lstatSync } from 'node:fs'
 import { join } from 'node:path'
-import { materializeComputedFacesForPaths } from './compute'
+import {
+  materializeComputedFacesForPaths,
+  buildReadmeCorpusContext,
+  buildReadmeTypographyGraph,
+} from './compute'
 
 function listAtoms(root: string, prefix = ''): string[] {
   const out: string[] = []
@@ -39,10 +43,11 @@ export function expandRegenScopes(scopes: readonly string[], cwd: string = proce
 
 export function regenFaces(scopes: readonly string[], cwd: string = process.cwd()): number {
   const paths = expandRegenScopes(scopes, cwd)
-  for (const atomPath of paths) {
-    materializeComputedFacesForPaths([atomPath], cwd)
-    console.log('wrote', atomPath)
-  }
+  if (paths.length === 0) return 0
+  const graph = buildReadmeTypographyGraph(cwd)
+  const ctx = buildReadmeCorpusContext(cwd)
+  materializeComputedFacesForPaths(paths, cwd, graph, ctx)
+  for (const atomPath of paths) console.log('wrote', atomPath)
   console.log(`regen-faces: ${paths.length} atom(s)`)
   return paths.length
 }
