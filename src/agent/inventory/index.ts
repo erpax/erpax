@@ -81,6 +81,12 @@ export function resolveTerminalsDir(cwd: string, override?: string): string | nu
   return existsSync(dir) ? dir : null
 }
 
+const finiteMs = (value: number, fallback: number): number =>
+  Number.isFinite(value) ? value : fallback
+
+const finiteSec = (value: number): number =>
+  Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0
+
 const normalizeTitle = (raw: string): string =>
   raw
     .toLowerCase()
@@ -162,8 +168,8 @@ const parseTranscriptFile = (filePath: string): ParsedTranscript | null => {
     titleKey: normalizeTitle(title),
     paths: extractPaths(raw),
     done,
-    startedAtMs: stat.birthtimeMs || stat.ctimeMs,
-    lastActivityMs: stat.mtimeMs,
+    startedAtMs: finiteMs(stat.birthtimeMs || stat.ctimeMs, stat.mtimeMs),
+    lastActivityMs: finiteMs(stat.mtimeMs, stat.ctimeMs),
   }
 }
 
@@ -219,7 +225,10 @@ const parseTerminalFile = (filePath: string, nowMs: number): ParsedTerminal | nu
   const endedMatch = header.match(/^ended_at:/m)
   const runningMatch = header.match(/^running_for_ms:\s*(\d+)/m)
   const stat = statSync(filePath)
-  const startedAtMs = startedMatch?.[1] ? Date.parse(startedMatch[1]) : stat.birthtimeMs
+  const startedAtMs = finiteMs(
+    startedMatch?.[1] ? Date.parse(startedMatch[1]) : stat.birthtimeMs,
+    stat.birthtimeMs,
+  )
   const runningMs = runningMatch ? Number(runningMatch[1]) : Math.max(0, nowMs - startedAtMs)
   return {
     id: `term-${basename(filePath, '.txt')}`,
@@ -229,8 +238,8 @@ const parseTerminalFile = (filePath: string, nowMs: number): ParsedTerminal | nu
     command: (cmdMatch?.[1] ?? '').slice(0, 100),
     done: Boolean(endedMatch),
     startedAtMs,
-    lastActivityMs: stat.mtimeMs,
-    ageSeconds: Math.floor(runningMs / 1000),
+    lastActivityMs: finiteMs(stat.mtimeMs, startedAtMs),
+    ageSeconds: finiteSec(runningMs / 1000),
   }
 }
 
@@ -325,8 +334,8 @@ export function taskInventory(opts: TaskInventoryOpts = {}): TaskInventoryResult
   for (const file of listSubagentFiles(transcriptRoots, opts.scanLimit)) {
     const parsed = parseTranscriptFile(file)
     if (!parsed) continue
-    const idleSec = Math.floor((nowMs - parsed.lastActivityMs) / 1000)
-    const ageSeconds = Math.floor((nowMs - parsed.startedAtMs) / 1000)
+    const idleSec = finiteSec((nowMs - parsed.lastActivityMs) / 1000)
+    const ageSeconds = finiteSec((nowMs - parsed.startedAtMs) / 1000)
     let status: InventoryStatus
     if (parsed.done) {
       status = 'done'

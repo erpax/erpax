@@ -37,7 +37,17 @@ const snapshotPayload = (result: TaskInventoryResult): Omit<InventorySnapshot, '
   staleCount: result.staleCount,
   duplicateCount: result.duplicateCount,
   warnings: result.warnings,
-  rows: result.rows,
+  rows: result.rows.map((row) => ({
+    id: row.id,
+    ageSeconds: row.ageSeconds,
+    status: row.status,
+    title: row.title,
+    speedUpHint: row.speedUpHint,
+    source: row.source,
+    startedAtMs: row.startedAtMs,
+    lastActivityMs: row.lastActivityMs,
+    ...(row.paths?.length ? { paths: row.paths } : {}),
+  })),
 })
 
 export function buildInventorySnapshot(
