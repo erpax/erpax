@@ -1,8 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { sharedKey, eavesdropDetected } from '@/quantum/communication/key'
 import { communicate } from '@/communication'
+import { toUuid } from '@/uuid/matrix'
 
-const CU = '0fa7a355-0000-8000-8000-000000000000'
+const CU = toUuid(Buffer.from('quantum:key:demo', 'utf8'))
+const CU_TAMPERED = toUuid(Buffer.from('quantum:key:tampered', 'utf8'))
 
 describe('quantum/communication/key — shared secret + eavesdrop detection', () => {
   it('the shared key is symmetric: sharedKey(a,b) === sharedKey(b,a)', () => {
@@ -21,7 +23,7 @@ describe('quantum/communication/key — shared secret + eavesdrop detection', ()
 
   it('an intercept-resend yields a different uuid and IS detected (no-cloning)', () => {
     const original = communicate('alice', 'bob', CU)
-    const tampered = communicate('alice', 'bob', '22222222-0000-8000-8000-000000000000')
+    const tampered = communicate('alice', 'bob', CU_TAMPERED)
     expect(eavesdropDetected(original, tampered)).toBe(true)
   })
 

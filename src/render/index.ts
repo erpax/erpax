@@ -20,6 +20,7 @@ import { pixel } from '@/pixel'
 import { signalForStep, type Signal } from '@/signal'
 import { DOUBLING } from '@/rodin'
 import { isHoroStep, composeSteps, type HoroStep } from '@/horo'
+import { toUuid } from '@/uuid/matrix'
 
 /** A sound facet of the render — the A432 tone the uuid's digit decodes to (frequency + diatonic note). */
 export interface Sound {
@@ -101,7 +102,7 @@ export const sameRender = (a: string, b: string): boolean => {
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const u = '12345678-1234-8123-8123-123456789abc'
+  const u = toUuid(Buffer.from('render:demo', 'utf8'))
   const r = render(u)
   console.log('render — the full sensory pixel (uuid → colour + sound + vibration):')
   console.log('  ' + u.slice(0, 8) + '… → digit ' + r.digit)

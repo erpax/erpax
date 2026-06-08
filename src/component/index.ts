@@ -20,6 +20,7 @@
  * @see ../pixel -- ../atom -- ../uuid -- ../signal -- ../vitepress -- ./SKILL.md
  */
 import { pixel, samePixel, type Pixel } from '@/pixel'
+import { toUuid } from '@/uuid/matrix'
 
 /** The pixel a component shows is the pixel of its atom-uuid: a component IS an atom rendered. */
 export function componentPixel(uuid: string): Pixel {
@@ -33,7 +34,7 @@ export function componentPixel(uuid: string): Pixel {
 export const sameComponent = (a: string, b: string): boolean => samePixel(a, b)
 
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const u = '12345678-1234-8123-8123-123456789abc'
+  const u = toUuid(Buffer.from('component:demo', 'utf8'))
   const p = componentPixel(u)
   console.log('component — the atom rendered (uuid → its pixel):')
   console.log('  ' + u.slice(0, 8) + '… → digit ' + p.digit + ' → ' + p.color)

@@ -24,17 +24,21 @@ import {
   toUuidMap,
   resolveKeyUuid,
 } from '@/uuid/kv'
-import type { ContentUuid } from '@/integrity'
+import { computeContentUuid, type ContentUuid } from '@/integrity'
 
 // Phantom shapes for type-branding compile-time clarity.
 interface Currency { code: string }
 interface CurrencyDef { numericCode: number }
 
+const TENANT = 'tenant-1'
+const currencyKey = (code: string) => computeContentUuid({ code }, TENANT) as ContentUuid<Currency>
+const currencyVal = (numericCode: number) => computeContentUuid({ numericCode }, TENANT) as ContentUuid<CurrencyDef>
+
 describe('UuidMap — typed pointer table', () => {
   it('set / get / has / delete with content-uuid keys', () => {
     const m = new UuidMap<Currency, CurrencyDef>()
-    const k1 = '00000000-0000-5000-8000-000000000001' as ContentUuid<Currency>
-    const v1 = '00000000-0000-5000-8000-000000000eur' as ContentUuid<CurrencyDef>
+    const k1 = currencyKey('EUR')
+    const v1 = currencyVal(978)
     expect(m.has(k1)).toBe(false)
     m.set(k1, v1)
     expect(m.get(k1)).toBe(v1)
@@ -47,10 +51,10 @@ describe('UuidMap — typed pointer table', () => {
 
   it('iterates as KvBinding entries', () => {
     const m = new UuidMap<Currency, CurrencyDef>()
-    const k1 = '00000000-0000-5000-8000-000000000001' as ContentUuid<Currency>
-    const k2 = '00000000-0000-5000-8000-000000000002' as ContentUuid<Currency>
-    const v1 = '00000000-0000-5000-8000-aaaaaaaaaaaa' as ContentUuid<CurrencyDef>
-    const v2 = '00000000-0000-5000-8000-bbbbbbbbbbbb' as ContentUuid<CurrencyDef>
+    const k1 = currencyKey('EUR')
+    const k2 = currencyKey('JPY')
+    const v1 = currencyVal(978)
+    const v2 = currencyVal(392)
     m.set(k1, v1)
     m.set(k2, v2)
     const collected = [...m]
@@ -65,8 +69,8 @@ describe('UuidMap — typed pointer table', () => {
 describe('computeKvBindingUuid — binding-level content uuid', () => {
   it('is stable for the same (keyUuid, valueUuid, tenant) tuple', () => {
     const args = {
-      keyUuid:   '00000000-0000-5000-8000-keyk' as ContentUuid<Currency>,
-      valueUuid: '00000000-0000-5000-8000-valv' as ContentUuid<CurrencyDef>,
+      keyUuid:   currencyKey('EUR'),
+      valueUuid: currencyVal(978),
       tenantId:  'tenant-1',
     }
     const a = computeKvBindingUuid(args)
@@ -76,20 +80,20 @@ describe('computeKvBindingUuid — binding-level content uuid', () => {
   })
 
   it('differs when value-uuid changes (same key, new value → new binding)', () => {
-    const k = '00000000-0000-5000-8000-keyk' as ContentUuid<Currency>
+    const k = currencyKey('EUR')
     const a = computeKvBindingUuid({
-      keyUuid: k, valueUuid: '00000000-0000-5000-8000-aaaaaaaaaaaa' as ContentUuid<CurrencyDef>, tenantId: 't',
+      keyUuid: k, valueUuid: currencyVal(978), tenantId: 't',
     })
     const b = computeKvBindingUuid({
-      keyUuid: k, valueUuid: '00000000-0000-5000-8000-bbbbbbbbbbbb' as ContentUuid<CurrencyDef>, tenantId: 't',
+      keyUuid: k, valueUuid: currencyVal(840), tenantId: 't',
     })
     expect(a).not.toBe(b)
   })
 
   it('differs across tenants (per-tenant binding namespace)', () => {
     const args = {
-      keyUuid:   '00000000-0000-5000-8000-keyk' as ContentUuid<Currency>,
-      valueUuid: '00000000-0000-5000-8000-valv' as ContentUuid<CurrencyDef>,
+      keyUuid:   currencyKey('EUR'),
+      valueUuid: currencyVal(978),
     }
     expect(computeKvBindingUuid({ ...args, tenantId: 'tenant-1' }))
       .not.toBe(computeKvBindingUuid({ ...args, tenantId: 'tenant-2' }))
@@ -134,25 +138,25 @@ describe('toUuidMap — adapter from string-keyed entries', () => {
 describe('freezeUuid — registry-freeze pattern (closes Finding 3)', () => {
   it('is stable for the same entries regardless of insertion order', () => {
     const a = new UuidMap<Currency, CurrencyDef>()
-    a.set('00000000-0000-5000-8000-000001' as ContentUuid<Currency>, '00000000-0000-5000-8000-0aaa' as ContentUuid<CurrencyDef>)
-    a.set('00000000-0000-5000-8000-000002' as ContentUuid<Currency>, '00000000-0000-5000-8000-0bbb' as ContentUuid<CurrencyDef>)
+    a.set(currencyKey('EUR'), currencyVal(978))
+    a.set(currencyKey('JPY'), currencyVal(392))
     const b = new UuidMap<Currency, CurrencyDef>()
-    b.set('00000000-0000-5000-8000-000002' as ContentUuid<Currency>, '00000000-0000-5000-8000-0bbb' as ContentUuid<CurrencyDef>)
-    b.set('00000000-0000-5000-8000-000001' as ContentUuid<Currency>, '00000000-0000-5000-8000-0aaa' as ContentUuid<CurrencyDef>)
+    b.set(currencyKey('JPY'), currencyVal(392))
+    b.set(currencyKey('EUR'), currencyVal(978))
     expect(a.freezeUuid('tenant-1')).toBe(b.freezeUuid('tenant-1'))
   })
 
   it('changes when a new binding is added after freeze (registry-tamper detection)', () => {
     const m = new UuidMap<Currency, CurrencyDef>()
-    m.set('00000000-0000-5000-8000-000001' as ContentUuid<Currency>, '00000000-0000-5000-8000-0aaa' as ContentUuid<CurrencyDef>)
+    m.set(currencyKey('EUR'), currencyVal(978))
     const frozen = m.freezeUuid('tenant-1')
-    m.set('00000000-0000-5000-8000-000002' as ContentUuid<Currency>, '00000000-0000-5000-8000-0bbb' as ContentUuid<CurrencyDef>)
+    m.set(currencyKey('JPY'), currencyVal(392))
     expect(m.freezeUuid('tenant-1')).not.toBe(frozen)
   })
 
   it('differs across tenants (per-tenant freeze namespace)', () => {
     const m = new UuidMap<Currency, CurrencyDef>()
-    m.set('00000000-0000-5000-8000-000001' as ContentUuid<Currency>, '00000000-0000-5000-8000-0aaa' as ContentUuid<CurrencyDef>)
+    m.set(currencyKey('EUR'), currencyVal(978))
     expect(m.freezeUuid('tenant-1')).not.toBe(m.freezeUuid('tenant-2'))
   })
 })

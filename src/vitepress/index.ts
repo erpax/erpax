@@ -14,6 +14,7 @@
  * @see ../pixel -- ../payload -- ../identity -- ../duality -- ./SKILL.md -- ../../.vitepress/corpus.mts
  */
 import { pixel, type Pixel } from '@/pixel'
+import { toUuid } from '@/uuid/matrix'
 
 /** A rendered corpus page — where the atom is read (route) and how it looks (its uuid-pixel). */
 export interface AtomPage {
@@ -47,7 +48,7 @@ export const samePage = (a: AtomPage, b: AtomPage): boolean =>
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const path = 'identity/signal'
-  const uuid = '12345678-1234-8123-8123-123456789abc'
+  const uuid = toUuid(Buffer.from('vitepress:demo:' + path, 'utf8'))
   const page = atomPage(path, uuid)
   console.log('vitepress — the corpus rendered (atom → page + pixel):')
   console.log('  ' + path + ' → ' + page.route + '  ▉ ' + page.pixel.color + ' (digit ' + page.pixel.digit + ')')

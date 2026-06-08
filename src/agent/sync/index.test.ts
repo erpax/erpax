@@ -1,14 +1,21 @@
 import { describe, it, expect } from 'vitest'
-import { encodeEvent, decodeEvent, roomWebSocketUrl, type ErpaxEvent } from '@/agent/sync'
+import { computeContentUuid } from '@/integrity'
+import { encodeEvent, decodeEvent, roomWebSocketUrl, eventContentUuid, type ErpaxEvent } from '@/agent/sync'
 
-const ev: ErpaxEvent = {
-  v: 1,
-  uuid: '11111111-1111-5111-8111-111111111111',
-  event: 'invoice:activated',
-  aggregateId: '22222222-2222-5222-8222-222222222222',
-  agent: 'agent-a',
-  ts: '2026-06-01T00:00:00.000Z',
-  payload: { amount: 1000 },
+const TENANT = 'tenant-1'
+
+function honestEvent(overrides: Partial<ErpaxEvent> = {}): ErpaxEvent {
+  const base: ErpaxEvent = {
+    v: 1,
+    uuid: '',
+    event: 'invoice:activated',
+    aggregateId: computeContentUuid({ invoiceId: 'inv-7' }, TENANT),
+    agent: 'agent-a',
+    ts: '2026-06-01T00:00:00.000Z',
+    payload: { amount: 1000 },
+    ...overrides,
+  }
+  return { ...base, uuid: eventContentUuid(base, TENANT) }
 }
 
 describe('agent-sync — the erpax realtime event bus over the chat.erpax.com DO', () => {
@@ -17,6 +24,7 @@ describe('agent-sync — the erpax realtime event bus over the chat.erpax.com DO
   })
 
   it('encode → decode round-trips an erpax event', () => {
+    const ev = honestEvent()
     const decoded = decodeEvent({ name: 'agent-a', message: encodeEvent(ev) }, 'agent-b')
     expect(decoded).toEqual(ev)
   })
@@ -26,6 +34,7 @@ describe('agent-sync — the erpax realtime event bus over the chat.erpax.com DO
   })
 
   it('ignores its own echo (idempotent self-filter)', () => {
+    const ev = honestEvent()
     expect(decodeEvent({ name: 'agent-a', message: encodeEvent(ev) }, 'agent-a')).toBeNull()
   })
 

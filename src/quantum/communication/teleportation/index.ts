@@ -38,7 +38,7 @@ export const reconstructed = (original: Communication, received: Communication):
   sameMessage(original, received)
 
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const cu = '0fa7a355-0000-8000-8000-000000000000'
+  const cu = toUuid(Buffer.from('teleportation:demo', 'utf8'))
   const sent = communicate('alice', 'bob', cu)
   const got = teleport('alice', 'bob', cu)
   console.log(

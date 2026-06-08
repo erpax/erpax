@@ -1,8 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { teleport, channel, reconstructed } from '@/quantum/communication/teleportation'
 import { communicate } from '@/communication'
+import { toUuid } from '@/uuid/matrix'
 
-const CU = '0fa7a355-0000-8000-8000-000000000000'
+const CU = toUuid(Buffer.from('teleportation:test:original', 'utf8'))
+const CU_OTHER = toUuid(Buffer.from('teleportation:test:other', 'utf8'))
 
 describe('quantum/communication/teleportation — identity reconstructed over the entangled channel', () => {
   it('the teleported message carries the SAME content-uuid it was addressed by', () => {
@@ -20,7 +22,7 @@ describe('quantum/communication/teleportation — identity reconstructed over th
 
   it('a different content-uuid is NOT a reconstruction of the original (identity is the message)', () => {
     const original = communicate('alice', 'bob', CU)
-    const other = teleport('alice', 'bob', '11111111-0000-8000-8000-000000000000')
+    const other = teleport('alice', 'bob', CU_OTHER)
     expect(reconstructed(original, other)).toBe(false)
   })
 

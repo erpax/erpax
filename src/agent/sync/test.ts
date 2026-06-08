@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { computeContentUuid } from '@/integrity'
 import {
   eventContentUuid,
   verifyEventUuid,
@@ -18,7 +19,7 @@ function honestEvent(overrides: Partial<ErpaxEvent> = {}): ErpaxEvent {
     v: 1,
     uuid: '',
     event: 'invoice:activated',
-    aggregateId: 'agg-content-uuid',
+    aggregateId: computeContentUuid({ invoiceId: 'inv-7' }, TENANT),
     agent: 'finance-agent',
     ts: '2026-06-07T00:00:00.000Z',
     payload: { amount: 100 },

@@ -22,6 +22,7 @@
  * @audit Conservation Law 53 self-referential-closure
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { toUuid } from '@/uuid/matrix'
 import {
   withInternalFallback,
   registerInternalProvider,
@@ -222,7 +223,7 @@ describe('InternalFederationProvider — self-as-peer', () => {
     const ctx = fakeCtx()
     const out = await withInternalFallback({
       role: 'federation-peer',
-      params: { peerUrl: 'https://peer-b.erpax.example/v1/federation', contentUuid: '00000000-0000-5000-8000-feed' },
+      params: { peerUrl: 'https://peer-b.erpax.example/v1/federation', contentUuid: toUuid(Buffer.from('federation:peer-row', 'utf8')) },
       ctx,
       external: async (): Promise<Record<string, unknown>> => { throw new Error('peer unreachable: ECONNREFUSED') },
     })
@@ -243,7 +244,7 @@ describe('InternalSigningProvider — AdES via per-tenant key', () => {
     await expect(
       withInternalFallback({
         role: 'signing-tsp',
-        params: { uuid: '00000000-0000-5000-8000-aaaa', kid: 'tenant-1/signing/2026' },
+        params: { uuid: toUuid(Buffer.from('signing:payload-a', 'utf8')), kid: 'tenant-1/signing/2026' },
         ctx,
         external: async (): Promise<Record<string, unknown>> => { throw new Error('qtsp-unreachable') },
       }),
@@ -258,10 +259,11 @@ describe('InternalSigningProvider — AdES via per-tenant key', () => {
       { name: 'Ed25519' }, true, ['sign', 'verify'],
     ) as CryptoKeyPair
     const ctx = fakeCtx()
+    const contentUuid = toUuid(Buffer.from('signing:payload-b', 'utf8'))
     const out = await withInternalFallback({
       role: 'signing-tsp',
       params: {
-        uuid: '00000000-0000-5000-8000-bbbb',
+        uuid: contentUuid,
         kid: 'tenant-1/signing/2026',
         injectedSigningKey: pair.privateKey,
       },
@@ -272,7 +274,7 @@ describe('InternalSigningProvider — AdES via per-tenant key', () => {
     expect(out.result.assurance).toBe('AdES')
     expect(out.result.producedBy).toBe('erpax-self')
     expect(out.result.alg).toBe('EdDSA')
-    expect(out.result.uuid).toBe('00000000-0000-5000-8000-bbbb')
+    expect(out.result.uuid).toBe(contentUuid)
     expect((out.result.sig as string).length).toBeGreaterThan(0)
   })
 })

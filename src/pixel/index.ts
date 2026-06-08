@@ -16,6 +16,7 @@
  */
 import { digitalRootOfUuid } from '@/digit'
 import { colorOf } from '@/color'
+import { toUuid } from '@/uuid/matrix'
 
 /** A pixel — a content-uuid rendered: its digit (position on the ring) and the colour that digit shows. */
 export interface Pixel {
@@ -33,7 +34,7 @@ export function pixel(uuid: string): Pixel {
 export const samePixel = (a: string, b: string): boolean => pixel(a).color === pixel(b).color && pixel(a).digit === pixel(b).digit
 
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const u = '12345678-1234-8123-8123-123456789abc'
+  const u = toUuid(Buffer.from('pixel:demo', 'utf8'))
   const p = pixel(u)
   console.log('pixel — the atom rendered (uuid → digit → colour):')
   console.log('  ' + u.slice(0, 8) + '… → digit ' + p.digit + ' → ' + p.color)

@@ -1,3 +1,5 @@
+import { toUuid } from '@/uuid/matrix'
+
 /**
  * communication — conveying a message from a sender to a receiver over a [[channel]]. In erpax the
  * [[message]] IS its content-[[uuid]] (self-decoding, no payload), so a communication is the transfer
@@ -23,6 +25,6 @@ export const communicate = (from: string, to: string, contentUuid: string): Comm
 export const sameMessage = (a: Communication, b: Communication): boolean => a.uuid === b.uuid
 
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const m = communicate('alice', 'bob', '0fa7a355-0000-8000-8000-000000000000')
+  const m = communicate('alice', 'bob', toUuid(Buffer.from('communication:demo', 'utf8')))
   console.log('communication — message = content-uuid: ' + m.from + '→' + m.to + ' ' + m.uuid.slice(0, 8) + '…')
 }

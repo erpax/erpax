@@ -131,9 +131,23 @@ describe('tamperProofBeforeChangeHook — update', () => {
     // snapshot that legitimately carries its own (prior) uuid. The hook must NOT
     // treat that as a manual tamper, and must re-stamp from the RESTORED content
     // (amount 100), not the current doc (amount 250).
+    const staleSnapshotUuid = encodeStructured({
+      slotTag: SLOT_TAGS.collectionRow,
+      capabilities: CAPABILITIES.TAMPER_PROOF,
+      schemaVersion: 1,
+      content: { tenant: 't1', amount: 100, currency: 'USD' },
+      tenantId: 't1',
+    })
+    const currentRowUuid = encodeStructured({
+      slotTag: SLOT_TAGS.collectionRow,
+      capabilities: CAPABILITIES.TAMPER_PROOF,
+      schemaVersion: 1,
+      content: { tenant: 't1', amount: 250, currency: 'EUR' },
+      tenantId: 't1',
+    })
     const result = (await hook({
-      data: { tenant: 't1', amount: 100, uuid: 'e1da2699-3ad2-803d-ba00-5b8e998518dd' },
-      originalDoc: { tenant: 't1', amount: 250, uuid: 'be659290-af21-822e-ba00-64dc4d2e977e' },
+      data: { tenant: 't1', amount: 100, uuid: staleSnapshotUuid },
+      originalDoc: { tenant: 't1', amount: 250, uuid: currentRowUuid },
       operation: 'update',
       req: { context: { isRestoringVersion: true } } as never,
       collection: {} as never,
