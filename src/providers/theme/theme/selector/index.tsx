@@ -1,5 +1,7 @@
 'use client'
 
+export { defaultTheme, themeLocalStorageKey } from './types'
+export type { Theme } from './types'
 import {
   Select,
   SelectContent,
