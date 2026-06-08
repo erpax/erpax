@@ -1,15 +1,45 @@
 ---
 name: cloudflare
-description: Use when touching a Cloudflare binding from erpax — the typed ErpaxCfEnv surface, the fail-fast boot probe (checkCloudflareBindingsHealthy, OK iff D1 is bound, the rest degrade gracefully), or the tenant-scoped mediator wrappers (KV/R2/DO/AI/Queue/Vectorize/Browser/Email/Workflows) that gate every binding op fail-closed, tenant-namespace its keys, and audit-trail the call.
+description: Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed.
 ---
 
-# cloudflare — the mediated edge surface (every binding access flows through erpax)
+# cloudflare — mediated edge, every binding a diamond (AI-first)
 
-The typed Cloudflare runtime surface ERPax expects on Workers, plus the law that **no MCP handler touches `env.<BINDING>` directly**. `checkCloudflareBindingsHealthy` is the pure boot probe — partitioning the expected [[bindings]] into available vs missing and reporting OK **iff D1 is bound** (the rest degrade gracefully), called from `payload.onInit` so a misconfiguration surfaces at boot, not on first request. Every other access — `kvGet`, `r2Put`, `auditChainAppendLinked`, `counterIncrement`, `vectorizeQuery`, `browserRender`, … — routes through a mediator wrapper that (1) **tenant-scopes** the key (`t:<tenantId>/…`, so cross-tenant reads are impossible), (2) **fail-closed** [[access]] gates the op (no authorizer installed ⇒ DENIED, never the default), and (3) **[[audit]]-trails** the call to `audit-events` — a dropped receipt is surfaced, never silently swallowed. The [[uuid]]-linked [[chain]] mediators carry `prevLeafUuid` so any [[tamper]] on leaf K breaks every leaf from K+1 onward.
+Cloudflare **merges with erpax at every quantum binding**. Workers AI (`ai` binding `AI`), vectorize RAG (`VECTORIZE_DOCS`), and the inference stack are **first-class diamonds** — see [[cloudflare/ai]].
 
-Matter-twin: `src/cloudflare/index.ts` (`checkCloudflareBindingsHealthy` ⊕ `makeMediator` over `ErpaxCfEnv`). Composes [[bindings]] · [[tenant]] · [[access]] · [[audit]] · [[integrity]] · [[uuid]] · [[chain]] · [[tamper]] · [[cost]].
+## Laws
 
-**Law — [[law]]: every Cloudflare binding access flows through erpax — tenant-scoped, [[access]]-gated fail-closed, and [[audit]]-trailed — and the boot probe is OK iff D1 is bound (the rest degrade gracefully).**
+1. **Binding access** — mediators only; fail-closed [[access]]; [[audit]]-trailed.
+2. **Credential sealing** — `sealCloudflareConfig` + [[secret]] `sealCloudflareAiSecret` / `decryptIfUuid`.
+3. **All bindings have diamonds** — `bindingDiamond` / `deriveWranglerDiamonds` from `wrangler.jsonc`.
+4. **Innovation test-first** — [[innovation]]: AI wires proven in `ai-binding.test.ts` before law.
 
-@standard Cloudflare Workers Runtime API
-@audit composed from the live ErpaxCfEnv probe + the mediator wrappers; binding access is never un-gated
+## Wiring table (all scales)
+
+| Scale | Pattern | Cloudflare wire |
+| ----- | ------- | ---------------- |
+| Repo | confirm:uuid | `gateCloudflareAi` — AI-stack diamonds sealed |
+| Atom | DiamondModel | `aiBindingDiamond` per wrangler AI entry |
+| File | quantum/boundary | sealed env imports via [[secret]] |
+| Method | methodPath | `aiModelAtomPath` / `ai://` |
+| Path | toAtomPath | 7th surface `cloudflare` — `ai://`, `r2://`, `d1://` |
+| README | debit/credit | `[[asset]]/[[cloudflare]]/ai/bindings` |
+| Typography | analysis graph | `cloudflare` → `agent` workers-ai-face |
+| Agent | worker face | `agentAiWorkerFace` |
+
+## AI bindings in this repo (wrangler.jsonc)
+
+| Binding | Type | Role |
+| ------- | ---- | ---- |
+| AI | `ai` | Workers AI runtime |
+| VECTORIZE_DOCS | `vectorize` | RAG index `erpax-docs` |
+| AI_CACHE | `kv_namespaces` | inference cache |
+| QUEUE_AI_BATCH | `queues` | batch embeddings |
+| ANALYTICS_AI | `analytics_engine_datasets` | inference telemetry |
+| RATE_LIMITER_AI | `ratelimit` | ingress AI cap |
+
+Matter-twin: `index.ts` · `ai.ts` · `bindings.ts` · `wrangler.ts` · `seal.ts` · `ai/`.
+
+**Law — [[law]]: Cloudflare Workers AI bindings are sealed diamonds wired at every scale; test-first ([[innovation]]).**
+
+@see [[cloudflare/ai]] · [[diamond]] · [[path]] · [[secret]] · [[agent]] · [[innovation]] · [[confirm]]

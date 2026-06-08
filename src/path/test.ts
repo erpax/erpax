@@ -5,7 +5,7 @@ const ATOM = 'law/folder'
 
 describe('path — all surfaces merge at one canonical atom path', () => {
   it('exports every merged surface', () => {
-    expect(PATH_SURFACES).toEqual(['fs', 'url', 'github', 'mcp', 'api', 'http'])
+    expect(PATH_SURFACES).toEqual(['fs', 'url', 'github', 'mcp', 'api', 'http', 'cloudflare'])
   })
 
   it('fs paths normalize to atom/subatom (no src/, no index.ts)', () => {
@@ -45,6 +45,20 @@ describe('path — all surfaces merge at one canonical atom path', () => {
     expect(toAtomPath('/api/corpus/law/folder', 'api')).toBe(ATOM)
     expect(toAtomPath('/api/atoms/law/folder', 'api')).toBe(ATOM)
     expect(toAtomPath('https://tenant.example/api/corpus/law/folder', 'api')).toBe(ATOM)
+  })
+
+  it('cloudflare surfaces — r2, d1, ai, workers.dev, wrangler binding URIs', () => {
+    expect(toAtomPath(`r2://erpax/t:tenant/${ATOM}/report.pdf`, 'cloudflare')).toBe(ATOM)
+    expect(toAtomPath(`d1://erpax/t:tenant/${ATOM}`, 'cloudflare')).toBe(ATOM)
+    expect(toAtomPath(`ai://agent/research`, 'cloudflare')).toBe('agent/research')
+    expect(toAtomPath(`ai://@cf/meta/llama-3.1-8b-instruct`, 'cloudflare')).toBe(
+      'meta/llama-3.1-8b-instruct',
+    )
+    expect(toAtomPath(`https://erpax.workers.dev/api/corpus/${ATOM}`, 'cloudflare')).toBe(ATOM)
+    expect(toAtomPath(`wrangler://binding/D1`, 'cloudflare')).toBe('D1')
+    expect(
+      pathsMeet(`src/${ATOM}/index.ts`, `r2://erpax/${ATOM}/x.pdf`, 'fs', 'cloudflare'),
+    ).toBe(true)
   })
 
   it('http URLs auto-detect github, api, and docs routes', () => {

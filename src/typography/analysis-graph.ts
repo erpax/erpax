@@ -30,6 +30,9 @@ export const ANALYSIS_ORGANS = [
   'hallucination',
   'quantum/boundary',
   'diamond',
+  'cloudflare',
+  'agent',
+  'secret',
   'aura',
   'tamper/import',
 ] as const
@@ -75,7 +78,7 @@ export interface AtomTypographyContext {
   readonly analysisEdges: number
 }
 
-const COMPOSE_EDGES: ReadonlyArray<readonly [AnalysisOrgan, AnalysisOrgan, string]> = [
+const COMPOSE_EDGES: ReadonlyArray<readonly [string, string, string]> = [
   ['analytics', 'analytics/max-tamper-cost', 'compose'],
   ['analytics/max-tamper-cost', 'aura', 'cross-seals'],
   ['analytics/max-tamper-cost', 'purity', 'impurity-lever'],
@@ -86,6 +89,9 @@ const COMPOSE_EDGES: ReadonlyArray<readonly [AnalysisOrgan, AnalysisOrgan, strin
   ['quantum/boundary', 'analytics/max-tamper-cost', 'boundary-digest'],
   ['aura', 'hallucination', 'aura-gap'],
   ['purity', 'analytics/max-tamper-cost', 'max-tamper-cost'],
+  ['cloudflare', 'agent', 'workers-ai-face'],
+  ['cloudflare', 'diamond', 'binding-diamond'],
+  ['cloudflare', 'secret', 'ai-key-seal'],
 ]
 
 const organByLeaf = (): Map<string, AnalysisOrgan> => {

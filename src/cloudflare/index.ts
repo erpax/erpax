@@ -1,3 +1,55 @@
+export {
+  sealCloudflareConfig,
+  decryptCloudflareIfUuid,
+  canonicalizeCloudflareConfig,
+  cloudflareConfigContentUuid,
+  wranglerEnvToCloudflareConfig,
+  CLOUDFLARE_SEAL_KID,
+  WRANGLER_SECRET_ENV_KEYS,
+  WRANGLER_BINDING_ENV_KEYS,
+  type CloudflareConfigPlain,
+  type SealedCloudflareConfig,
+} from './seal'
+
+export {
+  CLOUDFLARE_BINDING_TYPES,
+  bindingDiamond,
+  cloudflareBindingDiamond,
+  bindingAtomPath,
+  bindingBoundaryUuid,
+  cloudflareBindingFace,
+  bindingDeploymentFaces,
+  mergeCloudflareBinding,
+  deriveWranglerBindingDiamonds,
+  type CloudflareBindingType,
+  type CloudflareBindingInput,
+  type CloudflareBindingFace,
+  type WranglerBindingEntry,
+} from './bindings'
+
+export {
+  stripJsoncComments,
+  parseWranglerBindings,
+  deriveWranglerDiamonds,
+} from './wrangler'
+
+export {
+  aiBindingDiamond,
+  aiModelAtomPath,
+  agentAiWorkerFace,
+  deriveAiBindingDiamonds,
+  filterAiBindings,
+  isAiRelatedBinding,
+  loadRepoAiBindings,
+  sealCloudflareAiSecret,
+  decryptCloudflareAiSecretIfUuid,
+  verifyAiBindingDiamonds,
+  cloudflareAiAccountingExtras,
+  AI_STACK_BINDING_TYPES,
+  AI_GATEWAY_VAR_KEYS,
+  aiSecretIdentity,
+} from './ai'
+
 /**
  * Cloudflare integration — typed bindings + boot health check.
  *

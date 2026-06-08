@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest'
-import { checkCloudflareBindingsHealthy } from '@/cloudflare'
+import { checkCloudflareBindingsHealthy, verifyAiBindingDiamonds } from '@/cloudflare'
+import { gateCloudflareAi } from '@/confirm'
 import type { ErpaxCfEnv, D1Database } from '@/cloudflare'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 // cloudflare (./index.ts): checkCloudflareBindingsHealthy is the pure boot probe —
 // it partitions the expected bindings into available vs missing and is OK iff D1 is
@@ -39,5 +42,15 @@ describe('cloudflare — checkCloudflareBindingsHealthy: the fail-fast boot prob
     expect(h.available).toEqual(['D1'])
     expect(h.missing.length).toBeGreaterThan(0)
     expect(h.missing).not.toContain('D1')
+  })
+
+  it('integration — live wrangler AI bindings verify + confirm:uuid gate', () => {
+    const text = readFileSync(join(process.cwd(), 'wrangler.jsonc'), 'utf8')
+    const verdict = verifyAiBindingDiamonds(text)
+    expect(verdict.count).toBeGreaterThanOrEqual(6)
+    expect(verdict.ok).toBe(true)
+    const gate = gateCloudflareAi()
+    expect(gate.axis).toBe('cloudflare:ai')
+    expect(gate.ok).toBe(true)
   })
 })

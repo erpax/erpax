@@ -28,7 +28,7 @@ export const PATH_SURFACES: readonly PathSurface[] = [
 ] as const
 
 const LEAF_FILE =
-  /^(?:index|SKILL)(?:\.(?:ts|tsx|md|mts|mjs|cjs))?$|\.(?:tsx?|md|mts|mjs|cjs|json)$/i
+  /^(?:index|SKILL)(?:\.(?:ts|tsx|md|mts|mjs|cjs))?$|\.(?:tsx?|md|mts|mjs|cjs|json|pdf|png|webp)$/i
 
 const GITHUB_HOSTS = new Set(['github.com', 'raw.githubusercontent.com'])
 

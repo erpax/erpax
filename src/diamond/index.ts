@@ -6,25 +6,83 @@
  * content-uuid pipeline ⇒ forging any diamond requires forging the whole model
  * ⇒ maximum tamper-cost.
  *
+ * Canonical pipeline: `computeDiamond` — normalize path → trinity scan →
+ * boundary → links/typography → horo from matrix → seal → diamondUuid.
+ * All adapters delegate here; no parallel derive logic.
+ *
  * Composes existing organs (never re-derives by hand):
  *   [[readme]]/deriveFolderModel · [[method]]/methodPath · [[quantum/boundary]]
  *   · [[typography]]/linksOf · [[horo]] · [[path]]/toAtomPath · [[integrity]]
  *
  *   tsx src/diamond/index.ts readme
  *   tsx src/diamond/index.ts law/folder/folderGuardians
+ *   tsx src/diamond/index.ts --audit-files
  *
  * @audit model computed from live tree + factory opts; never hand-asserted
  * @see ./SKILL.md — ../readme — ../method — ../quantum/boundary — ../factory
  */
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
-import { uuid, jcsCanonicalize } from '@/integrity'
 import { toAtomPath } from '@/path'
 import { deriveFolderModel, buildFolderReadmeContext, type FolderReadmeModel } from '@/readme'
 import { methodPath, atomPathOf, parseMethodExports, type MethodDiamond } from '@/method'
 import { computeBoundary, type FileBoundary } from '@/quantum/boundary'
 import { linksOf } from '@/typography'
-import { HORO_DIGITS, HORO_MEASURE, validateHoroStates, type HoroState } from '@/horo'
+import { HORO_DIGITS, type HoroState } from '@/horo'
+import {
+  type DiamondModel,
+  type CollectionDiamondModel,
+  type DiamondComputationStage,
+  type CloudflareDiamondFacet,
+  folderInputToDiamond,
+  diamondCanonicalPayload,
+  diamondUuid,
+  stageUuid,
+  computationUuid,
+  validateHoroStates,
+} from './projection'
+
+export type {
+  DiamondTrinity,
+  DiamondKind,
+  CloudflareDiamondFacet,
+  DiamondModel,
+  CollectionDiamondModel,
+  DeploymentFaces,
+  DiamondComputationStage,
+} from './projection'
+export {
+  measureOf,
+  deploymentFaces,
+  diamondCanonicalPayload,
+  diamondUuid,
+  stageUuid,
+  computationUuid,
+  renderDiamondJson,
+} from './projection'
+import {
+  ALLOWED_DIAMOND_FILES,
+  diamondFileViolations,
+  diamondFilesGuardian,
+} from './files'
+import { computeCssDiamond } from '@/css'
+import { portDiamond } from '@/port'
+export {
+  ALLOWED_DIAMOND_FILES,
+  TRINITY_FORM,
+  TRINITY_CODE,
+  CODE_MARKERS,
+  COLOCATED,
+  DIAMOND_FILES_BASELINE,
+  auditDiamondFolder,
+  diamondAtomKind,
+  allowedDiamondFiles,
+  isChildAtomDir,
+  diamondFileViolations,
+  diamondFilesGuardian,
+  type DiamondAtomKind,
+  type DiamondFileViolation,
+} from './files'
 
 /** Factory opts surface for collection diamonds — avoids circular import with @/factory. */
 export interface CollectionDiamondInput {
@@ -38,167 +96,47 @@ export interface CollectionDiamondInput {
   readonly subscribesTo?: readonly string[]
 }
 
-const SRC = 'src'
-
-/** Trinity completeness — form (SKILL.md) · code (index.ts) · proof (test.ts). */
-export interface DiamondTrinity {
-  readonly form: 0 | 1
-  readonly code: 0 | 1
-  readonly proof: 0 | 1
-}
-
-/** Which scale / quantum dimension this diamond lives at. */
-export type DiamondKind = 'atom' | 'file' | 'method' | 'collection'
-
-/**
- * THE one shape — every diamond in every quantum dimension projects this model.
- * Organ-specific views ([[readme]] FolderReadmeModel, [[method]] MethodDiamond,
- * [[quantum/boundary]] FileBoundary) are thin adapters into this interface.
- */
-export interface DiamondModel {
-  readonly kind: DiamondKind
-  /** Src-relative path of diamond folders (e.g. `readme`, `law/folder`). */
+/** Pre-resolved Cloudflare binding fields — [[cloudflare]]/bindingDiamond resolves then delegates. */
+export interface CloudflareComputeInput {
   readonly atomPath: string
-  /** Matrix node uuid or computed boundary uuid — identity at this scale. */
-  readonly boundaryUuid: string | null
-  readonly trinity: DiamondTrinity
-  readonly horo: number | null
-  readonly measure: string | null
-  /** Quantum import entanglements (@/ barrels or wikilinks). */
-  readonly imports: readonly string[]
-  /** Quantum export facets (barrel symbols or atom name). */
-  readonly exports: readonly string[]
-  /** Deep-import escapes — off-ring entanglements lowering tamper-cost. */
-  readonly escapes: readonly string[]
-  /** Outgoing wikilink bond targets (typography quantum). */
+  readonly boundaryUuid: string
+  readonly bindingName: string
+  readonly bindingType: string
   readonly links: readonly string[]
-  readonly linksResolved: number
-  readonly linksTotal: number
-  readonly folded: boolean
-  readonly bondsIn: number
-  readonly bondsOut: number
-  /** Derived seal — complete trinity + folded + links + on-ring horo. */
-  readonly sealed: boolean
+  readonly resourceAtom?: string | null
+  readonly cloudflare?: CloudflareDiamondFacet
 }
 
-/**
- * Three deployment faces of the same diamond — worker · plugin · pwa.
- * All are latent on every diamond; booleans mark which face materialises
- * for this model (computed from path/kind/exports, never hand-listed).
- *
- * @see ./SKILL.md — ../worker — ../plugin — ../pwa
- */
-export interface DeploymentFaces {
-  /** Autonomous executor — hook, CLI, guardian, agent, MCP handler. */
-  readonly worker: boolean
-  /** Host extension — Payload plugin, Cursor hook, VitePress plugin, MCP extension. */
-  readonly plugin: boolean
-  /** Offline installable shell — service worker, manifest, public/ cache. */
-  readonly pwa: boolean
+/** Unified input to the canonical diamond pipeline — one shape, all scales. */
+export type DiamondInput =
+  | { readonly kind: 'path'; readonly path: string; readonly cwd?: string }
+  | { readonly kind: 'collection'; readonly opts: CollectionDiamondInput; readonly cwd?: string }
+  | { readonly kind: 'method'; readonly file: string; readonly symbol: string }
+  | { readonly kind: 'cloudflare'; readonly binding: CloudflareComputeInput }
+  | { readonly kind: 'css'; readonly path: string; readonly content?: string; readonly cwd?: string }
+  | {
+      readonly kind: 'port'
+      readonly sourceLang: string
+      readonly targetLang: string
+      readonly atomPath: string
+    }
+
+/** Fractal pipeline result — model plus content-addressed stage chain. */
+export interface DiamondComputation {
+  readonly model: DiamondModel | CollectionDiamondModel
+  readonly stages: readonly DiamondComputationStage[]
+  readonly computationUuid: string
 }
 
-const WORKER_ROOTS = new Set([
-  'confirm',
-  'readme',
-  'typography',
-  'guardian',
-  'agent',
-  'mcp',
-  'run',
-  'cron',
-  'worker',
-  'seal',
-  'breath',
-])
+/** Alias — css/port pipelines share the same stage machinery. */
+export type DiamondComputationResult = DiamondComputation
 
-const PLUGIN_ROOTS = new Set(['plugin', 'plugins', 'vitepress', 'hooks'])
-
-const PWA_ROOTS = new Set(['pwa', 'public'])
-
-const pathUnder = (atomPath: string, root: string): boolean =>
-  atomPath === root || atomPath.startsWith(`${root}/`)
-
-const pathUnderAny = (atomPath: string, roots: ReadonlySet<string>): boolean => {
-  for (const r of roots) {
-    if (pathUnder(atomPath, r)) return true
-  }
-  return false
-}
-
-/** Which deployment faces materialise for this diamond — same model, three host-axis facets. */
-export function deploymentFaces(model: DiamondModel | CollectionDiamondModel): DeploymentFaces {
-  const p = model.atomPath
-  const worker =
-    model.kind === 'method' ||
-    pathUnderAny(p, WORKER_ROOTS) ||
-    p.endsWith('/hooks') ||
-    p.includes('/hook')
-  const plugin =
-    pathUnderAny(p, PLUGIN_ROOTS) ||
-    p === 'tenants' ||
-    p.includes('multi-tenant') ||
-    model.exports.some((e) => /plugin/i.test(e))
-  const pwa = pathUnderAny(p, PWA_ROOTS)
-  return { worker, plugin, pwa }
-}
+const SRC = 'src'
 
 /**
  * Payload collection dimension — extends the core model with factory-injected
  * facets (tamper-proof uuid, horo state ring, standards/event metadata).
  */
-export interface CollectionDiamondModel extends DiamondModel {
-  readonly kind: 'collection'
-  readonly slug: string
-  readonly tamperProofUuid: boolean
-  readonly horoStates: readonly HoroState[]
-  readonly horoStateName: string | null
-  readonly standards: readonly string[]
-  readonly emits: readonly string[]
-  readonly subscribesTo: readonly string[]
-}
-
-const measureOf = (digit: number | null): string | null => {
-  if (digit === null) return null
-  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
-  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
-}
-
-/** Canonical bytes for content-addressing — excludes derived `sealed` flag. */
-function canonicalDiamondPayload(model: DiamondModel | CollectionDiamondModel): Record<string, unknown> {
-  const base: Record<string, unknown> = {
-    kind: model.kind,
-    atomPath: model.atomPath,
-    boundaryUuid: model.boundaryUuid,
-    trinity: model.trinity,
-    horo: model.horo,
-    measure: model.measure,
-    imports: [...model.imports].sort(),
-    exports: [...model.exports].sort(),
-    escapes: [...model.escapes].sort(),
-    links: [...model.links].sort(),
-    linksResolved: model.linksResolved,
-    linksTotal: model.linksTotal,
-    folded: model.folded,
-    bondsIn: model.bondsIn,
-    bondsOut: model.bondsOut,
-  }
-  if (model.kind === 'collection') {
-    const c = model as CollectionDiamondModel
-    base.slug = c.slug
-    base.tamperProofUuid = c.tamperProofUuid
-    base.horoStates = c.horoStates.map((s) => ({ code: s.code, step: s.step, label: s.label ?? null }))
-    base.horoStateName = c.horoStateName
-    base.standards = [...c.standards].sort()
-    base.emits = [...c.emits].sort()
-    base.subscribesTo = [...c.subscribesTo].sort()
-  }
-  return base
-}
-
-/** Content-uuid of the canonical model — same diamond ⇒ same uuid everywhere. */
-export function diamondUuid(model: DiamondModel | CollectionDiamondModel): string {
-  return uuid(jcsCanonicalize(canonicalDiamondPayload(model)))
-}
 
 /** Fail-closed verifier — lists impurities; sealed only when the lattice holds. */
 export function verifyDiamond(model: DiamondModel | CollectionDiamondModel): {
@@ -239,24 +177,7 @@ export function folderModelToDiamond(
   boundary?: FileBoundary,
   links?: readonly string[],
 ): DiamondModel {
-  return {
-    kind: 'atom',
-    atomPath: folder.atomPath,
-    boundaryUuid: folder.uuid ?? boundary?.boundaryUuid ?? null,
-    trinity: { form: folder.form, code: folder.code, proof: folder.proof },
-    horo: folder.horo,
-    measure: folder.measure,
-    imports: boundary?.imports ?? [],
-    exports: boundary?.exports ?? [],
-    escapes: boundary?.escapes ?? [],
-    links: links ?? [],
-    linksResolved: folder.linksResolved,
-    linksTotal: folder.linksTotal,
-    folded: folder.folded,
-    bondsIn: folder.bondsIn,
-    bondsOut: folder.bondsOut,
-    sealed: folder.sealed,
-  }
+  return folderInputToDiamond(folder, boundary, links ?? [])
 }
 
 /** Adapter: [[method]] MethodDiamond → DiamondModel. */
@@ -299,44 +220,249 @@ function linksForAtom(atomPath: string, cwd: string): readonly string[] {
   }
 }
 
-/**
- * Derive the unified diamond model for an atom folder.
- * Accepts src-relative atomPath (`readme`) or absolute/fs path (`…/src/readme/index.ts`).
- */
-export function deriveDiamond(input: string, cwd: string = process.cwd()): DiamondModel {
+/** Resolve path input to atomPath or method export — shared normalization step. */
+function resolvePathInput(
+  input: string,
+  cwd: string,
+): { readonly atomPath: string } | { readonly method: { readonly file: string; readonly symbol: string } } {
   const srcRoot = join(cwd, SRC)
-  let atomPath: string
 
   if (input.startsWith('/') || input.includes(`${SRC}/`) || input.includes(`${SRC}\\`)) {
     const abs = input.startsWith('/') ? input : join(cwd, input.replace(/^\/+/, ''))
     const rel = relative(srcRoot, abs).replace(/\\/g, '/')
-    atomPath = toAtomPath(relative(cwd, abs).replace(/\\/g, '/'), 'fs')
+    let atomPath = toAtomPath(relative(cwd, abs).replace(/\\/g, '/'), 'fs')
     if (rel.endsWith('index.ts')) atomPath = atomPathOf(rel)
-  } else {
-    const parts = input.split('/')
-    if (parts.length >= 2) {
-      const parent = parts.slice(0, -1).join('/')
-      const leaf = parts[parts.length - 1]!
-      const barrel = join(srcRoot, parent, 'index.ts')
-      if (existsSync(barrel)) {
-        try {
-          const body = readFileSync(barrel, 'utf8')
-          if (parseMethodExports(body).includes(leaf)) {
-            return methodModelToDiamond(methodPath(`${parent}/index.ts`, leaf))
-          }
-        } catch {
-          /* fall through to atom path */
-        }
-      }
-    }
-    atomPath = toAtomPath(input, 'fs') || input.replace(/^src\//, '')
+    return { atomPath }
   }
 
+  const parts = input.split('/')
+  if (parts.length >= 2) {
+    const parent = parts.slice(0, -1).join('/')
+    const leaf = parts[parts.length - 1]!
+    const barrel = join(srcRoot, parent, 'index.ts')
+    if (existsSync(barrel)) {
+      try {
+        const body = readFileSync(barrel, 'utf8')
+        if (parseMethodExports(body).includes(leaf)) {
+          return { method: { file: `${parent}/index.ts`, symbol: leaf } }
+        }
+      } catch {
+        /* fall through to atom path */
+      }
+    }
+  }
+
+  const atomPath = toAtomPath(input, 'fs') || input.replace(/^src\//, '')
+  return { atomPath }
+}
+
+/**
+ * Core atom pipeline — trinity · boundary · links · horo · matrix fold.
+ * Records path → horo stages; seal + uuid appended by finalizeComputation.
+ */
+function computeAtomPipeline(
+  atomPath: string,
+  cwd: string,
+  pathInput: string,
+  stages: DiamondComputationStage[],
+): { folder: FolderReadmeModel; boundary?: FileBoundary; links: readonly string[] } {
+  pushStage(stages, 'path', { path: pathInput }, { atomPath })
+
+  const srcRoot = join(cwd, SRC)
   const ctx = buildFolderReadmeContext(srcRoot)
   const folder = deriveFolderModel(atomPath, cwd, ctx)
+
+  pushStage(stages, 'trinity', { atomPath }, {
+    form: folder.form,
+    code: folder.code,
+    proof: folder.proof,
+  })
+
   const boundary = boundaryForAtom(atomPath, cwd)
+  pushStage(
+    stages,
+    'boundary',
+    { atomPath },
+    boundary
+      ? {
+          boundaryUuid: boundary.boundaryUuid,
+          imports: [...boundary.imports].sort(),
+          exports: [...boundary.exports].sort(),
+          escapes: [...boundary.escapes].sort(),
+        }
+      : null,
+  )
+
   const links = linksForAtom(atomPath, cwd)
-  return folderModelToDiamond(folder, boundary, links)
+  pushStage(stages, 'links', { atomPath }, {
+    links: [...links].sort(),
+    linksResolved: folder.linksResolved,
+    linksTotal: folder.linksTotal,
+  })
+
+  pushStage(stages, 'horo', { leaf: folder.leaf }, {
+    horo: folder.horo,
+    measure: folder.measure,
+    matrixUuid: folder.uuid,
+    folded: folder.folded,
+    bondsIn: folder.bondsIn,
+    bondsOut: folder.bondsOut,
+  })
+
+  return { folder, boundary, links }
+}
+
+function pushStage(
+  stages: DiamondComputationStage[],
+  stage: string,
+  input: unknown,
+  output: unknown,
+): void {
+  stages.push({ stage, input, output, stageUuid: stageUuid(stage, input, output) })
+}
+
+function finalizeComputation(
+  model: DiamondModel | CollectionDiamondModel,
+  stages: DiamondComputationStage[],
+): DiamondComputation {
+  const verdict = verifyDiamond(model)
+  pushStage(stages, 'seal', { kind: model.kind, atomPath: model.atomPath }, {
+    sealed: verdict.sealed,
+    impurities: [...verdict.impurities],
+    modelSealed: model.sealed,
+  })
+
+  const contentUuid = diamondUuid(model)
+  pushStage(stages, 'uuid', { canonical: diamondCanonicalPayload(model) }, { contentUuid })
+
+  return { model, stages, computationUuid: computationUuid(stages) }
+}
+
+function computePathDiamond(rawPath: string, cwd: string): DiamondComputation {
+  const resolved = resolvePathInput(rawPath, cwd)
+  if ('method' in resolved) {
+    return computeMethodDiamond(resolved.method.file, resolved.method.symbol, rawPath)
+  }
+  const stages: DiamondComputationStage[] = []
+  const { folder, boundary, links } = computeAtomPipeline(resolved.atomPath, cwd, rawPath, stages)
+  const model = folderInputToDiamond(folder, boundary, links)
+  return finalizeComputation(model, stages)
+}
+
+function computeMethodDiamond(
+  file: string,
+  symbol: string,
+  rawPath?: string,
+): DiamondComputation {
+  const stages: DiamondComputationStage[] = []
+  const m = methodPath(file, symbol)
+  pushStage(stages, 'path', { path: rawPath ?? m.address, file, symbol }, {
+    atomPath: m.atomPath,
+    address: m.address,
+    file: m.file,
+    symbol: m.symbol,
+  })
+  pushStage(stages, 'trinity', { address: m.address }, { form: 0, code: 1, proof: 0 })
+  pushStage(stages, 'boundary', { atomPath: m.atomPath, symbol }, {
+    boundaryUuid: m.boundaryUuid,
+  })
+  pushStage(stages, 'links', { address: m.address }, {
+    links: [],
+    linksResolved: 0,
+    linksTotal: 0,
+  })
+  pushStage(stages, 'horo', { address: m.address }, {
+    horo: null,
+    measure: null,
+    matrixUuid: null,
+    folded: true,
+    bondsIn: 0,
+    bondsOut: 0,
+  })
+  return finalizeComputation(methodModelToDiamond(m), stages)
+}
+
+function computeCollectionDiamond(
+  opts: CollectionDiamondInput,
+  cwd: string,
+): DiamondComputation {
+  const atomPath = opts.atomPath ?? opts.slug
+  const stages: DiamondComputationStage[] = []
+  const { folder, boundary, links } = computeAtomPipeline(atomPath, cwd, atomPath, stages)
+  const base = folderInputToDiamond(folder, boundary, links)
+  const tamperProofUuid = opts.injectTamperProofUuid !== false
+  const horoStates = (opts.horoStates ?? []) as readonly HoroState[]
+  const horoStateName = horoStates.length > 0 ? (opts.horoStateName ?? 'state') : null
+  const { form, code, proof } = base.trinity
+  const sealed = Boolean(
+    (!code || (form && code && proof)) &&
+      base.folded &&
+      base.linksResolved === base.linksTotal &&
+      (base.horo === null || HORO_DIGITS.includes(base.horo as (typeof HORO_DIGITS)[number])) &&
+      (horoStates.length === 0 || validateHoroStates(horoStates).ok) &&
+      tamperProofUuid,
+  )
+
+  pushStage(stages, 'collection', { slug: opts.slug, atomPath }, {
+    slug: opts.slug,
+    tamperProofUuid,
+    horoStates: horoStates.map((s) => ({ code: s.code, step: s.step, label: s.label ?? null })),
+    horoStateName,
+    standards: [...(opts.standards ?? [])].sort(),
+    emits: emitIds(opts.emits),
+    subscribesTo: [...(opts.subscribesTo ?? [])].sort(),
+  })
+
+  const model: CollectionDiamondModel = {
+    ...base,
+    kind: 'collection',
+    slug: opts.slug,
+    atomPath,
+    boundaryUuid: boundary?.boundaryUuid ?? base.boundaryUuid,
+    exports: base.exports.length > 0 ? base.exports : [opts.slug],
+    sealed,
+    tamperProofUuid,
+    horoStates,
+    horoStateName,
+    standards: [...(opts.standards ?? [])].sort(),
+    emits: emitIds(opts.emits),
+    subscribesTo: [...(opts.subscribesTo ?? [])].sort(),
+  }
+  return finalizeComputation(model, stages)
+}
+
+function computeCloudflareDiamond(binding: CloudflareComputeInput): DiamondComputation {
+  const stages: DiamondComputationStage[] = []
+  const links = [...binding.links].sort()
+  const resourceAtom = binding.resourceAtom ?? null
+
+  pushStage(stages, 'path', {
+    bindingName: binding.bindingName,
+    bindingType: binding.bindingType,
+  }, { atomPath: binding.atomPath })
+  pushStage(stages, 'trinity', { atomPath: binding.atomPath }, { form: 1, code: 1, proof: 1 })
+  pushStage(stages, 'boundary', { atomPath: binding.atomPath }, {
+    boundaryUuid: binding.boundaryUuid,
+    imports: resourceAtom ? [`@/path:${resourceAtom}`] : ['@/cloudflare'],
+    exports: [binding.bindingName, binding.bindingType].sort(),
+    escapes: [],
+  })
+  pushStage(stages, 'links', { atomPath: binding.atomPath }, {
+    links,
+    linksResolved: links.length,
+    linksTotal: links.length,
+  })
+  pushStage(stages, 'horo', { atomPath: binding.atomPath }, {
+    horo: null,
+    measure: null,
+    matrixUuid: null,
+    folded: true,
+    bondsIn: links.length,
+    bondsOut: links.length,
+  })
+
+  const model = buildCloudflareDiamond(binding)
+  return finalizeComputation(model, stages)
 }
 
 /** Normalize emit entries to event id strings for the model. */
@@ -344,6 +470,114 @@ function emitIds(emits: CollectionDiamondInput['emits']): readonly string[] {
   return (emits ?? [])
     .map((e) => (typeof e === 'string' ? e : e.event))
     .sort()
+}
+
+function computeCssKindDiamond(
+  path: string,
+  content: string | undefined,
+  cwd: string,
+): DiamondComputation {
+  const css = computeCssDiamond({ path, content, cwd })
+  const model: DiamondModel = {
+    kind: 'file',
+    atomPath: css.path,
+    boundaryUuid: css.seal.contentUuid,
+    trinity: { form: 0, code: 0, proof: 0 },
+    horo: null,
+    measure: null,
+    imports: [],
+    exports: [],
+    escapes: [],
+    links: [],
+    linksResolved: 0,
+    linksTotal: 0,
+    folded: true,
+    bondsIn: 0,
+    bondsOut: 0,
+    sealed: true,
+  }
+  return { model, stages: css.stages, computationUuid: css.computationUuid }
+}
+
+function computePortKindDiamond(
+  sourceLang: string,
+  targetLang: string,
+  atomPath: string,
+): DiamondComputation {
+  const port = portDiamond(sourceLang, targetLang, atomPath)
+  const model: DiamondModel = {
+    kind: 'atom',
+    atomPath,
+    boundaryUuid: port.computationUuid,
+    trinity: { form: 1, code: 1, proof: 1 },
+    horo: null,
+    measure: null,
+    imports: [sourceLang],
+    exports: [targetLang],
+    escapes: [],
+    links: [],
+    linksResolved: 0,
+    linksTotal: 0,
+    folded: true,
+    bondsIn: 0,
+    bondsOut: 0,
+    sealed: true,
+  }
+  return { model, stages: port.stages, computationUuid: port.computationUuid }
+}
+
+function buildCloudflareDiamond(binding: CloudflareComputeInput): DiamondModel {
+  const links = [...binding.links]
+  const resourceAtom = binding.resourceAtom ?? null
+  const model: DiamondModel = {
+    kind: 'atom',
+    atomPath: binding.atomPath,
+    boundaryUuid: binding.boundaryUuid,
+    trinity: { form: 1, code: 1, proof: 1 },
+    horo: null,
+    measure: null,
+    imports: resourceAtom ? [`@/path:${resourceAtom}`] : ['@/cloudflare'],
+    exports: [binding.bindingName, binding.bindingType],
+    escapes: [],
+    links,
+    linksResolved: links.length,
+    linksTotal: links.length,
+    folded: true,
+    bondsIn: links.length,
+    bondsOut: links.length,
+    sealed: true,
+  }
+  return binding.cloudflare ? { ...model, cloudflare: binding.cloudflare } : model
+}
+
+/**
+ * Canonical diamond pipeline — ONE fractal computation for all scales.
+ * Each stage (path · trinity · boundary · links · horo · seal · uuid) is
+ * content-addressed; computationUuid folds all stageUuids.
+ */
+export function computeDiamond(input: DiamondInput): DiamondComputation {
+  switch (input.kind) {
+    case 'path':
+      return computePathDiamond(input.path, input.cwd ?? process.cwd())
+    case 'collection':
+      return computeCollectionDiamond(input.opts, input.cwd ?? process.cwd())
+    case 'method':
+      return computeMethodDiamond(input.file, input.symbol)
+    case 'cloudflare':
+      return computeCloudflareDiamond(input.binding)
+    case 'css':
+      return computeCssKindDiamond(input.path, input.content, input.cwd ?? process.cwd())
+    case 'port':
+      return computePortKindDiamond(input.sourceLang, input.targetLang, input.atomPath)
+  }
+}
+
+/**
+ * Derive the unified diamond model for an atom folder.
+ * Accepts src-relative atomPath (`readme`) or absolute/fs path (`…/src/readme/index.ts`).
+ */
+export function deriveDiamond(input: string, cwd: string = process.cwd()): DiamondModel {
+  return computeDiamond({ kind: 'path', path: input, cwd }).model as DiamondModel
 }
 
 /**
@@ -355,94 +589,41 @@ export function deriveCollectionDiamond(
   opts: CollectionDiamondInput,
   cwd: string = process.cwd(),
 ): CollectionDiamondModel {
-  const atomPath = opts.atomPath ?? opts.slug
-  const srcRoot = join(cwd, SRC)
-  const dir = join(srcRoot, atomPath)
-  const dirExists = existsSync(dir)
-  const form = (dirExists && existsSync(join(dir, 'SKILL.md')) ? 1 : 0) as 0 | 1
-  const code = (dirExists && existsSync(join(dir, 'index.ts')) ? 1 : 0) as 0 | 1
-  let proof = 0 as 0 | 1
-  if (dirExists) {
-    try {
-      proof = (
-        existsSync(join(dir, 'test.ts')) ||
-        existsSync(join(dir, 'index.test.ts')) ||
-        readdirSync(dir).some((f) => f.endsWith('.test.ts'))
-          ? 1
-          : 0
-      ) as 0 | 1
-    } catch {
-      proof = 0
-    }
-  }
-  const tamperProofUuid = opts.injectTamperProofUuid !== false
-  const horoStates = (opts.horoStates ?? []) as readonly HoroState[]
-  const horoStateName = horoStates.length > 0 ? (opts.horoStateName ?? 'state') : null
-
-  let boundary: FileBoundary | undefined
-  const barrel = join(dir, 'index.ts')
-  if (existsSync(barrel)) boundary = computeBoundary(barrel, srcRoot)
-
-  const links = dirExists ? linksForAtom(atomPath, cwd) : []
-  let folder: FolderReadmeModel | null = null
-  if (dirExists) {
-    try {
-      const ctx = buildFolderReadmeContext(srcRoot)
-      folder = deriveFolderModel(atomPath, cwd, ctx)
-    } catch {
-      folder = null
-    }
-  }
-
-  const horo = folder?.horo ?? null
-  const linksResolved = folder?.linksResolved ?? 0
-  const linksTotal = folder?.linksTotal ?? 0
-  const folded = folder?.folded ?? false
-  const bondsIn = folder?.bondsIn ?? 0
-  const bondsOut = folder?.bondsOut ?? 0
-  const sealed =
-    (!code || (form && code && proof)) &&
-    folded &&
-    linksResolved === linksTotal &&
-    (horo === null || HORO_DIGITS.includes(horo as (typeof HORO_DIGITS)[number])) &&
-    (horoStates.length === 0 || validateHoroStates(horoStates).ok) &&
-    tamperProofUuid
-
-  return {
-    kind: 'collection',
-    slug: opts.slug,
-    atomPath,
-    boundaryUuid: boundary?.boundaryUuid ?? folder?.uuid ?? null,
-    trinity: { form, code, proof },
-    horo,
-    measure: measureOf(horo),
-    imports: boundary?.imports ?? [],
-    exports: boundary?.exports ?? [opts.slug],
-    escapes: boundary?.escapes ?? [],
-    links,
-    linksResolved,
-    linksTotal,
-    folded,
-    bondsIn,
-    bondsOut,
-    sealed,
-    tamperProofUuid,
-    horoStates,
-    horoStateName,
-    standards: [...(opts.standards ?? [])].sort(),
-    emits: emitIds(opts.emits),
-    subscribesTo: [...(opts.subscribesTo ?? [])].sort(),
-  }
+  return computeDiamond({ kind: 'collection', opts, cwd }).model as CollectionDiamondModel
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
+  if (process.argv.includes('--audit-files')) {
+    const violations = diamondFileViolations()
+    const verdict = diamondFilesGuardian(violations.length)
+    const byReason = new Map<string, number>()
+    for (const v of violations) byReason.set(v.reason, (byReason.get(v.reason) ?? 0) + 1)
+    console.log(`diamond/files — ${violations.length} violation(s) across atom folders`)
+    console.log(
+      '  allowed vocabulary:',
+      [...ALLOWED_DIAMOND_FILES.vocabulary].sort().join(' · '),
+    )
+    console.log('  allowed code:', [...ALLOWED_DIAMOND_FILES.code].sort().join(' · '))
+    console.log(
+      '  by reason:',
+      [...byReason.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .map(([k, n]) => `${k}:${n}`)
+        .join(' '),
+    )
+    for (const v of violations.slice(0, 20)) {
+      console.log(`   ${v.atomPath} → ${v.file} (${v.reason})`)
+    }
+    if (violations.length > 20) console.log(`   … ${violations.length - 20} more`)
+    console.log((verdict.sealed ? '✓ ' : '✗ ') + verdict.guardians[0]!.reason)
+    process.exit(verdict.sealed ? 0 : 1)
+  }
   const target = process.argv[2] ?? 'diamond'
-  const model = target.includes('/') && !target.startsWith('src/')
-    ? deriveDiamond(target)
-    : deriveDiamond(target)
+  const { model, stages, computationUuid: compUuid } = computeDiamond({ kind: 'path', path: target })
   const v = verifyDiamond(model)
   console.log(`diamond — ${model.kind} @ ${model.atomPath}`)
   console.log(`  uuid: ${diamondUuid(model)}`)
+  console.log(`  computation: ${compUuid} (${stages.length} stages)`)
   console.log(`  trinity: ${model.trinity.form}·${model.trinity.code}·${model.trinity.proof}`)
   console.log(`  sealed: ${v.sealed}${v.impurities.length ? ' — ' + v.impurities.join('; ') : ''}`)
 }

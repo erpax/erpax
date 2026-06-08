@@ -32,6 +32,7 @@ export const internalSecretPurpose = {
   preview: 'preview',
   cron: 'cron',
   fieldEncryption: 'field-encryption',
+  cloudflareConfig: 'cloudflare-config',
 } as const
 
 export type InternalSecretPurpose = (typeof internalSecretPurpose)[keyof typeof internalSecretPurpose]
