@@ -3,8 +3,8 @@
 
 # accounts
 
-path `regulatory/deferral/accounts` · uuid `15b5affa-5db0-8e0d-8a2a-177a2309e4c2` · diamond `41174711-cf5e-82f1-824c-20ed597cd8d1`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `regulatory/deferral/accounts` · uuid `4a8b1007-7044-8b3b-a641-4672e7809871` · diamond `29108236-b6ed-80f8-b949-580a8987bd5e`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `2/2` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `9be3d5de-1470-8be8-8241-1ebf3dc3f9cb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b5c951d-c101-82e0-86a5-e52811e2f783` · `pnpm readme` · `pnpm computed:check`</sub>

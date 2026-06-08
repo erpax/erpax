@@ -3,8 +3,8 @@
 
 # roles
 
-path `roles/user/roles` · uuid `8414414c-7a23-8a2b-b154-17403de703a4` · diamond `ff6780b7-a853-8b71-8db6-d2c511b2a9e7`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `roles/user/roles` · uuid `8af2c6ee-e5f2-8a02-9dca-c20c13a9971a` · diamond `9c8f74ea-6c7a-83d8-bc23-d7177798dafb`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/is/super/admin·@/roles/user/roles/hooks · exports const · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a user-role is the join that grants a [[users|user]] the capabilities and sk
 
 ---
 
-<sub>content-uuid `2d30de9a-9bbf-84f5-aa34-e57045bcb848` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `face7e99-57e8-83d2-a672-608735eca5ab` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -13,7 +13,7 @@
  *
  * @see ../coa — ../../readme/entropy — ../../entry — ../SKILL.md
  */
-import { type ValidatedEntry } from '../debit'
+import { type AccountType, type ValidatedEntry } from '../debit'
 import {
   accountCodeOf,
   accountCoordinateOf,

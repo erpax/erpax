@@ -3,8 +3,8 @@
 
 # closing
 
-path `period/end/closing` · uuid `7459545e-9a33-8524-89a9-72b46610762f` · diamond `9e4106be-94bb-8191-9288-e454793684ab`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `period/end/closing` · uuid `d3b251d5-d1f3-847f-ac32-53e5b27adf5c` · diamond `a4c3d170-4962-87cf-b391-da3b0de2a3cf`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/closing/period/checker · exports ...·ClosingPeriodChecker·ClosingValidation·ReversalEntry·barrel · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a period closes only when it is eligible (not already closed/locked, correct
 
 ---
 
-<sub>content-uuid `6729a466-f3bc-86e7-8e39-709c82ebf260` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b501425f-1d15-8a69-9235-35148df0ae56` · `pnpm readme` · `pnpm computed:check`</sub>

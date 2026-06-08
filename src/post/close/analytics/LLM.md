@@ -3,8 +3,8 @@
 
 # analytics
 
-path `post/close/analytics` · uuid `04ea0659-2bbd-8010-9b21-e11ca17a800a` · diamond `34942bc1-2747-84a3-a9d6-fe4605de2088`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `post/close/analytics` · uuid `deb36261-dfa8-8178-ab22-51c4a89a0436` · diamond `d1c297f0-47ed-80ec-815f-c1cd3339c04f`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports — · exports PostCloseAnalytics·so · escapes —
 links `0/0` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `e740bf1f-ba08-8484-a36e-d3e27c359e53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `53a8b8e3-4036-8bba-8744-8f4e55fe17fb` · `pnpm readme` · `pnpm computed:check`</sub>

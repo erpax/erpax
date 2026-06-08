@@ -3,8 +3,8 @@
 
 # key
 
-path `quantum/communication/key` · uuid `09776fa5-81c5-82d6-b76f-c28ad441f974` · diamond `9b77fde2-ba4f-8847-851b-09689fc4caba`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `quantum/communication/key` · uuid `933ce437-0317-830b-9b53-f25503921708` · diamond `c45ec3dc-6cce-85e7-974f-8536f23eb23b`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/communication·@/entanglement·@/uuid/matrix · exports const · escapes —
 links `14/14` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the shared secret IS the symmetric entangled binding (`sharedKey(a,b) === sh
 
 ---
 
-<sub>content-uuid `4dde86d5-dcc2-84b8-8226-4d63473a5cca` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28f1a3c3-c996-87a9-a41d-3c19f0e67acc` · `pnpm readme` · `pnpm computed:check`</sub>

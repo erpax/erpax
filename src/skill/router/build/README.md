@@ -2,7 +2,7 @@
 
 # build
 
-> atom `skill/router/build` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
+> atom `skill/router/build` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -10,16 +10,18 @@
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[balance]] `1` | [[liability]]/[[trinity]]/form `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## quantum thinking
 
@@ -29,20 +31,25 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 ### superposition
 
 - `gap:ancestor:[[gap]]/[[path]]/ancestor`
-- `gap:trinity:[[gap]]/[[trinity]]/code`
-- `gap:trinity:[[gap]]/[[trinity]]/form`
-- `gap:trinity:[[gap]]/[[trinity]]/proof`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
 
 ### collapse
 
-- `balance:variance=1`
+- `balance:conserved`
+- `law:build emit is computed — regenerate from live corpus; never hand-edit generated index files.`
 - `seal:unsealed`
+- `trigger:../index.ts`
+- `trigger:../merge`
+- `trigger:../upgrade`
+- `trigger:Use when the skill router index or installed catalogue must emit — buildSkillIndex and buildInstalledCatalogue compile the corpus for fs-less Workers.`
+- `trigger:[[navigation]]`
+- `trigger:build emit is computed — regenerate from live corpus; never hand-edit generated index files.`
 
 ### seal
 
 - path follow `1` · receipt `1` · sealed `0`
-- entry uuids `3d6516a6-0783-8b9e-ac2d-627d3c5d45de` · `576b5411-a516-8a0a-9df8-4faef99e7442` · `9fac091d-e470-83dd-be00-e8f575c15edb` · `e6a50d8c-464d-8f63-8250-548dcd6a4ccc` · +1 more
-- content uuids `1b868312-18fb-84db-9b2d-22a8c23b5e6c` · `5048e89c-7943-84a2-9caf-0a23ab2f1bc3` · `717aae5a-a73e-8673-b4ca-49a9b85e9790` · `72cb9031-b18a-854b-b749-ea26bf283005` · +1 more
+- entry uuids `293c5ace-30c6-8136-b01b-99a8ff6129b3` · `47212d40-2993-81eb-9075-7b81d52f5c76` · `df6acdbf-b523-8114-8f07-1fc2ec28e438`
+- content uuids `717aae5a-a73e-8673-b4ca-49a9b85e9790` · `e729716e-eba9-81ac-b84e-30790af197b5` · `fec6eae6-a139-8e5c-a9aa-12bb93ac3098`
 
 ## [[entropy]] — gaps · seals
 
@@ -52,22 +59,27 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | [[gap]] debit (eb) | [[seal]] credit (eb) |
 | -----------------: | -------------------: |
-| [[gap]]/[[trinity]]/form `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
-| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[links]]/resolved `1` eb |
-| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[horo]]/ring `0.8` eb |
-| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[identity]]/uuid `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `5.755` eb | Σ seal `6.8` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
 
-> net residual `-1.045` eb · seal/gap ratio `1.182` · [[entropy]] · [[seal]]
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `skill` · sub-root `f57fe0a3-fa07-86dd-9b47-1ae9c2e8007b`
-- bond degree `0` · analysis neighbors —
-- graph root `2e3a71a7-3cde-802e-9718-63cf7b3359aa`
+- bond degree `12` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -90,21 +102,21 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unbalanced | 1 | 100 |
+| balanced | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[gravity]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| not-held | 1 | 100 |
+| held | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### folder law / trinity
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| empty | 1 | 100 |
+| code-complete | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[horo]] ring
@@ -117,16 +129,16 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ## analytics
 
-- bond degree `0` · sealed `0` · horo `8`
-- variance `1` · balanced `0` · trinity sum `0`
+- bond degree `12` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
 - uuid `f7113a03-e7a2-83fc-b9e5-1ce19cd491b6`
 - bonds in `4` · out `4`
-- trinity form·code·proof `0`·`0`·`0`
-- links `0` / `0`
+- trinity form·code·proof `1`·`1`·`1`
+- links `4` / `4`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -135,4 +147,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `37eb3ff0-a4bf-8a91-a034-854e3995cdee` · framed by typography partition `skill` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `be714125-c8f0-858b-80f9-c82d30c2f42d` · framed by typography partition `skill` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

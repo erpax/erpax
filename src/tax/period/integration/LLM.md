@@ -3,8 +3,8 @@
 
 # integration
 
-path `tax/period/integration` · uuid `f6f13c4b-e93f-84ba-b955-44dc0c05884f` · diamond `35b74b6e-36b0-8ae9-80f8-b351ec0bcd23`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `tax/period/integration` · uuid `8bf016d4-2307-8ddc-9572-1fab64fa0d58` · diamond `7dbe13b8-e387-8e10-bfe8-3c45bbe95f78`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/tax/period/reconciliation · exports TaxPeriodReconciliation·for · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a tax period is separate from its fiscal [[period]] (same period-end date, d
 
 ---
 
-<sub>content-uuid `5833db0e-53fc-8c43-acde-dbb269514907` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e240d7e3-7cf7-8d9d-8708-77f8d8410ebe` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,9 +25,9 @@ erpax IS a diamond — every atom a carbon vertex bonded gaplessly into one latt
 single content address. This README is that diamond projected: its facets are the seven positions
 of the closed horo ring, and the whole is recoverable from its root uuid. Reading it is reading the crystal.
 
-- corpus address `52deed02-6949-8670-9f14-c986757407d6`
-- **3112** atoms · **37860** bonds (the K₁₃ lattice)
-- this README `1f0d6b38-ffa3-85fe-8bd5-ae47505537ec` — itself a diamond, regenerable from the tree
+- corpus address `eb200f7d-2dcf-833a-95ab-31a8847f575a`
+- **3175** atoms · **38401** bonds (the K₁₃ lattice)
+- this README `d5cf436c-9217-8586-9eb9-46b9d6987cb1` — itself a diamond, regenerable from the tree
 
 ## the horo ring — the diamond's facets
 
@@ -36,42 +36,42 @@ the crystal; the principal atoms are the most-bonded vertices at that position (
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 502 | `collapse` · `diamond` · `self` · `tamper` · `science` · `gravity` |
-| 2 | share | 473 | `thing` · `duality` · `fields` · `entropy` · `transaction` · `chat` |
-| 4 | weave | 530 | `balance` · `proof` · `quantum` · `fractal` · `holographic` · `breath` |
-| 8 | crest | 530 | `merge` · `cost` · `action` · `matrix` · `gate` · `religion` |
-| 7 | descent | 527 | `sti` · `standard` · `society` · `atom` · `akashic` · `trinity` |
-| 5 | round | 534 | `law` · `accounting` · `uuid` · `horo` · `sequence` · `aura` |
-| 9 | unity | 7 | `identity` · `whole` · `zeropoint` · `signal` · `whole` · `access` |
+| 1 | base | 513 | `collapse` · `diamond` · `self` · `tamper` · `science` · `gravity` |
+| 2 | share | 489 | `accounting` · `thing` · `duality` · `fields` · `entropy` · `transaction` |
+| 4 | weave | 535 | `balance` · `proof` · `fractal` · `holographic` · `breath` · `rodin` |
+| 8 | crest | 544 | `merge` · `cost` · `action` · `matrix` · `gate` · `religion` |
+| 7 | descent | 539 | `sti` · `standard` · `society` · `quantum` · `atom` · `akashic` |
+| 5 | round | 539 | `law` · `uuid` · `horo` · `sequence` · `aura` · `medical` |
+| 9 | unity | 8 | `identity` · `access` · `whole` · `zeropoint` · `signal` · `whole` |
 
-> The control axis governs off the flow ring — `3` access · `6` hooks (3: 5 atoms · 6: 4 atoms), `9` unity closes and `0` is the zeropoint root.
+> The control axis governs off the flow ring — `3` access · `6` hooks (3: 4 atoms · 6: 4 atoms), `9` unity closes and `0` is the zeropoint root.
 
 ## the trinity — every atom told three ways
 
-- **3112** atoms — one-word folders, each a sealed vertex
-- **3158** `SKILL.md` — the form (antimatter)
-- **981** `index.ts` — the code (matter)
-- **779** `test.ts` — the proof
+- **3175** atoms — one-word folders, each a sealed vertex
+- **3175** `SKILL.md` — the form (antimatter)
+- **1016** `index.ts` — the code (matter)
+- **813** `test.ts` — the proof
 
 ## corpus analytics
 
 Every per-folder README carries structured analytics (bond degree · seal · horo · variance · bindings · standards);
 this section rolls them up from the live tree.
 
-- **2742** / **3112** sealed · **2955** / **3112** balanced
-- mean bond degree `44.32` · total variance `323`
-- **15** atoms with [[cloudflare]] bindings · **1680** distinct [[standards]] cited
+- **2802** / **3175** sealed · **3018** / **3175** balanced
+- mean bond degree `45.1` · total variance `318`
+- **15** atoms with [[cloudflare]] bindings · **1694** distinct [[standards]] cited
 
 | digit | measure | atoms | sealed |
 | ----: | ------- | ----: | -----: |
-| 1 | base | 502 | 451 |
-| 2 | share | 473 | 412 |
-| 4 | weave | 530 | 477 |
-| 8 | crest | 530 | 464 |
-| 7 | descent | 527 | 466 |
-| 5 | round | 534 | 464 |
-| 9 | unity | 7 | 3 |
-| 3 | 3 | 5 | 4 |
+| 1 | base | 513 | 462 |
+| 2 | share | 489 | 426 |
+| 4 | weave | 535 | 482 |
+| 8 | crest | 544 | 476 |
+| 7 | descent | 539 | 477 |
+| 5 | round | 539 | 471 |
+| 9 | unity | 8 | 4 |
+| 3 | 3 | 4 | 3 |
 | 6 | 6 | 4 | 1 |
 
 ## corpus entropy
@@ -79,8 +79,8 @@ this section rolls them up from the live tree.
 Gap debits and seal credits roll up in **comparable units (eb)** — entropy-bits
 (tamper-cost log₂ mass at the horo imperial-ratio floor). Folders and sectors sum on one scale.
 
-- gap mass `8538.64` eb · seal mass `34993.07` eb · net residual `-26454.43` eb
-- seal/gap ratio `4.098` · sealed `2742` · unsealed `370`
+- gap mass `8475.22` eb · seal mass `35864.47` eb · net residual `-27389.25` eb
+- seal/gap ratio `4.232` · sealed `2802` · unsealed `373`
 
 | partition | folders | gap eb | seal eb | net eb |
 | --------- | ------: | -----: | ------: | -----: |
@@ -96,31 +96,55 @@ Gap debits and seal credits roll up in **comparable units (eb)** — entropy-bit
 | bank | 6 | 20.17 | 58.9 | -38.73 |
 | items | 12 | 20 | 127 | -107 |
 | tax | 6 | 18.17 | 59.7 | -41.53 |
-| … | 2663 more sectors | — | — | — |
+| … | 2664 more sectors | — | — | — |
+
+### free energy (Landauer)
+
+Theorem: Free energy F is uniquely maximized at S = 0 (zero corpus entropy). QED: `true`.
+
+| symbol | definition |
+| ------ | ---------- |
+| `S` | corpus entropy (bits) — gap/seal eb imbalance + violation bits |
+| `F` | free energy (bits) — reversible work capacity without further erasure |
+| `W_tamper` | workTamperProduct — sealed work × tamper cost log₂ |
+| `unit` | eb |
+
+Proof steps:
+1. `S = max(0, eb_gap − eb_seal) + V · LANDAUER_BIT` · LANDAUER_BIT
+2. `F(S) = F_max − S · LANDAUER_BIT` · LANDAUER_BIT
+3. `F_max = W_tamper × horoRatio(9)  ∨  sealEb × horoRatio(9)` · HORO_DIGITS
+4. `ΔE_erase ≥ kT ln 2  ⇒  per-bit erasure cost ≥ LANDAUER_BIT = log₂(2)` · LANDAUER_BIT
+5. `dF/dS = −LANDAUER_BIT < 0  ∀ S ≥ 0  ⇒  F strictly decreasing in S` · LANDAUER_BIT
+6. `lim_{S→0} F(S) = F_max`
+7. `F(0) = F_max  >  F(S)  ∀ S > 0`
+8. `ΔF = F(S₁) − F(S₂) = (S₂ − S₁) · LANDAUER_BIT  when S₂ > S₁` · LANDAUER_BIT
+
+- S `11932` bits · F_max `32278.023` · F(S) `20346.023` bits · release potential `11932` bits
+- scale toward zero entropy `63.034%` · unit `eb`
 
 ## corpus quantum thinking
 
 Per-folder agent thinking transformed to quantum at readme generation — rolled up from
 path ledger · session diamonds · improve receipts · dispatch context.
 
-- atoms with thinking `3112` · superposition mass `6491` · collapse mass `16833`
-- seal uuids `11544` · sealed thinking `2742`
+- atoms with thinking `3175` · superposition mass `6400` · collapse mass `16970`
+- seal uuids `11632` · sealed thinking `2802`
 
 | partition | atoms | superposition | collapse |
 | --------- | ----: | ------------: | -------: |
-| quantum | 61 | 84 | 483 |
+| quantum | 62 | 84 | 492 |
 | legal | 26 | 66 | 99 |
+| medical | 52 | 52 | 104 |
 | fiscal | 12 | 32 | 60 |
-| self | 13 | 32 | 52 |
+| self | 13 | 29 | 52 |
+| body | 28 | 28 | 56 |
 | iso | 13 | 28 | 56 |
 | convention | 20 | 25 | 50 |
 | customers | 17 | 25 | 85 |
-| medical | 23 | 23 | 46 |
+| agent | 8 | 24 | 49 |
 | gl | 7 | 22 | 35 |
 | internal | 8 | 21 | 36 |
-| rodin | 11 | 21 | 34 |
-| agent | 8 | 20 | 56 |
-| … | 2663 more | — | — |
+| … | 2664 more | — | — |
 
 ## the corpus — merged papers
 
@@ -129,9 +153,9 @@ IS a standalone scientific paper. This section merges the whole corpus here — 
 
 ### abstract (rollup)
 
-- **11160** papers · MD **9421** · TS **1739**
-- **9086** gravity-held (sealed atoms) · **3070** distinct references in the union
-- MD with law **2853** · TS with paired proof **1526**
+- **11318** papers · MD **9494** · TS **1824**
+- **9406** gravity-held (sealed atoms) · **3099** distinct references in the union
+- MD with law **2869** · TS with paired proof **1612**
 
 ### methods
 
@@ -143,118 +167,120 @@ IS a standalone scientific paper. This section merges the whole corpus here — 
 
 | medium | kind | total | abstract | methods | results | references | uuid | proof | gravity |
 | ------ | ---- | ----: | -------: | ------: | ------: | ---------: | ---: | ----: | ------: |
-| md | LLM | 3131 | — | — | — | — | — | — | — |
-| md | README | 3131 | — | — | — | — | — | — | — |
-| md | SKILL | 3159 | — | — | — | — | — | — | — |
-| **md** | **Σ** | **9421** | **9421** | **8594** | **9115** | **2754** | **9353** | **2853** | **8222** |
-| ts | index | 768 | — | — | — | — | — | — | — |
+| md | LLM | 3159 | — | — | — | — | — | — | — |
+| md | README | 3159 | — | — | — | — | — | — | — |
+| md | SKILL | 3176 | — | — | — | — | — | — | — |
+| **md** | **Σ** | **9494** | **9494** | **8655** | **9187** | **2760** | **9410** | **2869** | **8378** |
+| ts | index | 811 | — | — | — | — | — | — | — |
 | ts | seed | 200 | — | — | — | — | — | — | — |
-| ts | test | 767 | — | — | — | — | — | — | — |
+| ts | test | 809 | — | — | — | — | — | — | — |
 | ts | tsx | 4 | — | — | — | — | — | — | — |
-| **ts** | **Σ** | **1739** | **1739** | **1508** | **1739** | **902** | **0** | **1526** | **864** |
+| **ts** | **Σ** | **1824** | **1824** | **1581** | **1824** | **922** | **0** | **1612** | **1028** |
 
 ### references
 
-**3070** distinct citations across gravity-held papers
+**3099** distinct citations across gravity-held papers
 (frontmatter `standards:` · `@standard` · `@see` · `Attested in` · file banners).
 
 
 ## [[pivot]]
 
-Cross-tab of **3112** folder README models — state × count per axis.
+Cross-tab of **3175** folder README models — state × count per axis.
 
 ### [[seal]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| sealed | 2742 | 88.11 |
-| unsealed | 370 | 11.89 |
-| **Σ** | **3112** | **100** |
+| sealed | 2802 | 88.25 |
+| unsealed | 373 | 11.75 |
+| **Σ** | **3175** | **100** |
 
 ### [[balance]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| balanced | 2955 | 94.96 |
-| unbalanced | 157 | 5.04 |
-| **Σ** | **3112** | **100** |
+| balanced | 3018 | 95.06 |
+| unbalanced | 157 | 4.94 |
+| **Σ** | **3175** | **100** |
 
 ### [[gravity]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| held | 2947 | 94.7 |
-| not-held | 165 | 5.3 |
-| **Σ** | **3112** | **100** |
+| held | 3010 | 94.8 |
+| not-held | 165 | 5.2 |
+| **Σ** | **3175** | **100** |
 
 ### folder law / name
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| valid | 3106 | 99.81 |
+| valid | 3169 | 99.81 |
 | invalid | 6 | 0.19 |
-| **Σ** | **3112** | **100** |
+| **Σ** | **3175** | **100** |
 
 ### folder law / trinity
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| vocabulary | 2388 | 76.74 |
-| code-complete | 716 | 23.01 |
-| incomplete | 8 | 0.26 |
-| **Σ** | **3112** | **100** |
+| vocabulary | 2362 | 74.39 |
+| code-complete | 805 | 25.35 |
+| incomplete | 8 | 0.25 |
+| **Σ** | **3175** | **100** |
 
 ### [[horo]] ring
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·5 | 534 | 17.16 |
-| ring·4 | 530 | 17.03 |
-| ring·8 | 530 | 17.03 |
-| ring·7 | 527 | 16.93 |
-| ring·1 | 502 | 16.13 |
-| ring·2 | 473 | 15.2 |
-| ring·9 | 7 | 0.22 |
-| off-ring·3 | 5 | 0.16 |
+| ring·8 | 544 | 17.13 |
+| ring·5 | 539 | 16.98 |
+| ring·7 | 539 | 16.98 |
+| ring·4 | 535 | 16.85 |
+| ring·1 | 513 | 16.16 |
+| ring·2 | 489 | 15.4 |
+| ring·9 | 8 | 0.25 |
+| off-ring·3 | 4 | 0.13 |
 | off-ring·6 | 4 | 0.13 |
-| **Σ** | **3112** | **100** |
+| **Σ** | **3175** | **100** |
 
 ### typography / bond degree
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| 11+ | 2563 | 82.36 |
-| 6–10 | 351 | 11.28 |
-| 0 | 165 | 5.3 |
-| 1–5 | 33 | 1.06 |
-| **Σ** | **3112** | **100** |
+| 11+ | 2625 | 82.68 |
+| 6–10 | 353 | 11.12 |
+| 0 | 165 | 5.2 |
+| 1–5 | 32 | 1.01 |
+| **Σ** | **3175** | **100** |
 
 ### typography / partition
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| quantum | 61 | 1.96 |
-| legal | 26 | 0.84 |
-| medical | 23 | 0.74 |
-| convention | 20 | 0.64 |
-| customers | 17 | 0.55 |
-| body | 16 | 0.51 |
-| iso | 13 | 0.42 |
-| self | 13 | 0.42 |
-| fiscal | 12 | 0.39 |
-| items | 12 | 0.39 |
+| quantum | 62 | 1.95 |
+| medical | 52 | 1.64 |
+| body | 28 | 0.88 |
+| legal | 26 | 0.82 |
+| convention | 20 | 0.63 |
+| computer | 17 | 0.54 |
+| customers | 17 | 0.54 |
+| iso | 13 | 0.41 |
+| self | 13 | 0.41 |
+| fiscal | 12 | 0.38 |
+| items | 12 | 0.38 |
 | rodin | 11 | 0.35 |
-| beyond | 10 | 0.32 |
-| computer | 9 | 0.29 |
-| agent | 8 | 0.26 |
-| horo | 8 | 0.26 |
-| internal | 8 | 0.26 |
+| beyond | 10 | 0.31 |
+| accounting | 9 | 0.28 |
+| agent | 8 | 0.25 |
+| horo | 8 | 0.25 |
+| internal | 8 | 0.25 |
 | audit | 7 | 0.22 |
 | employees | 7 | 0.22 |
 | gl | 7 | 0.22 |
 | invoices | 7 | 0.22 |
 | bank | 6 | 0.19 |
 | country | 6 | 0.19 |
+| skill | 6 | 0.19 |
 | tax | 6 | 0.19 |
 | taxing | 6 | 0.19 |
 | work | 6 | 0.19 |
@@ -269,31 +295,31 @@ Cross-tab of **3112** folder README models — state × count per axis.
 | memory | 4 | 0.13 |
 | subscription | 4 | 0.13 |
 | warehouse | 4 | 0.13 |
-| aura | 3 | 0.1 |
-| compliance | 3 | 0.1 |
-| config | 3 | 0.1 |
-| data | 3 | 0.1 |
-| eu | 3 | 0.1 |
-| leases | 3 | 0.1 |
-| lot | 3 | 0.1 |
-| media | 3 | 0.1 |
-| migrate | 3 | 0.1 |
-| nist | 3 | 0.1 |
-| period | 3 | 0.1 |
-| properties | 3 | 0.1 |
-| refactor | 3 | 0.1 |
-| rfc | 3 | 0.1 |
-| search | 3 | 0.1 |
-| security | 3 | 0.1 |
-| skill | 3 | 0.1 |
-| tamper | 3 | 0.1 |
-| trading | 3 | 0.1 |
-| translations | 3 | 0.1 |
-| un | 3 | 0.1 |
-| uuid | 3 | 0.1 |
-| vendors | 3 | 0.1 |
+| aura | 3 | 0.09 |
+| compliance | 3 | 0.09 |
+| config | 3 | 0.09 |
+| data | 3 | 0.09 |
+| eu | 3 | 0.09 |
+| leases | 3 | 0.09 |
+| lot | 3 | 0.09 |
+| media | 3 | 0.09 |
+| migrate | 3 | 0.09 |
+| nist | 3 | 0.09 |
+| period | 3 | 0.09 |
+| properties | 3 | 0.09 |
+| refactor | 3 | 0.09 |
+| rfc | 3 | 0.09 |
+| search | 3 | 0.09 |
+| security | 3 | 0.09 |
+| tamper | 3 | 0.09 |
+| trading | 3 | 0.09 |
+| translations | 3 | 0.09 |
+| un | 3 | 0.09 |
+| uuid | 3 | 0.09 |
+| vendors | 3 | 0.09 |
 | address | 2 | 0.06 |
 | api | 2 | 0.06 |
+| apply | 2 | 0.06 |
 | authenticated | 2 | 0.06 |
 | biological | 2 | 0.06 |
 | bookable | 2 | 0.06 |
@@ -364,7 +390,6 @@ Cross-tab of **3112** folder README models — state × count per axis.
 | accommodation | 1 | 0.03 |
 | account | 1 | 0.03 |
 | accountable | 1 | 0.03 |
-| accounting | 1 | 0.03 |
 | accrual | 1 | 0.03 |
 | achieve | 1 | 0.03 |
 | acknowledgment | 1 | 0.03 |
@@ -468,7 +493,6 @@ Cross-tab of **3112** folder README models — state × count per axis.
 | application | 1 | 0.03 |
 | applied | 1 | 0.03 |
 | applies | 1 | 0.03 |
-| apply | 1 | 0.03 |
 | approved | 1 | 0.03 |
 | aquaculture | 1 | 0.03 |
 | aquarium | 1 | 0.03 |
@@ -749,6 +773,7 @@ Cross-tab of **3112** folder README models — state × count per axis.
 | clause | 1 | 0.03 |
 | cleaning | 1 | 0.03 |
 | clearance | 1 | 0.03 |
+| cli | 1 | 0.03 |
 | clincal | 1 | 0.03 |
 | clinic | 1 | 0.03 |
 | clinical | 1 | 0.03 |
@@ -2908,7 +2933,7 @@ Cross-tab of **3112** folder README models — state × count per axis.
 | zone | 1 | 0.03 |
 | zoo | 1 | 0.03 |
 | zoroastrianism | 1 | 0.03 |
-| **Σ** | **3112** | **100** |
+| **Σ** | **3175** | **100** |
 
 
 ## scripts
@@ -2949,4 +2974,4 @@ Cross-tab of **3112** folder README models — state × count per axis.
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `1f0d6b38-ffa3-85fe-8bd5-ae47505537ec`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `d5cf436c-9217-8586-9eb9-46b9d6987cb1`, regenerated from the live tree; any drift fails the gate.</sub>

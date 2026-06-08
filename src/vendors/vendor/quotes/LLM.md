@@ -3,8 +3,8 @@
 
 # quotes
 
-path `vendors/vendor/quotes` · uuid `b868e63d-9994-8299-9bb3-69e7054e34c9` · diamond `4169615c-2fb7-8955-8ee5-c3f03cb2b884`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `vendors/vendor/quotes` · uuid `eb9d2345-eea4-8c8c-8a13-da80f1aebff9` · diamond `4c940c6c-a694-8ebd-89b0-8c1041e8539e`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/incoterms/2020·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a vendor-quote is one supplier's RFQ response with its award decision and ra
 
 ---
 
-<sub>content-uuid `609750c6-4bb1-8281-97cd-9bb70d12d7e7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4f10602b-305f-8837-a2a5-719fdf46566f` · `pnpm readme` · `pnpm computed:check`</sub>

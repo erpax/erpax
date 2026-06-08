@@ -2,7 +2,7 @@
 
 # optimization
 
-> atom `search/engine/optimization` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `search/engine/optimization` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -43,8 +43,8 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 ### seal
 
 - path follow `1` · receipt `1` · sealed `1`
-- entry uuids `d33688b8-7be2-8e54-a4eb-215a67cc3c4d` · `e28a228a-7be0-83b6-8629-ad8f8b984a4c`
-- content uuids `897a3722-39d8-8127-aed5-930e1d73941e` · `b6239a26-5b87-88b7-bb31-f65d1acf7a14` · `d591aaac-0425-8ed1-99b6-3d906db1c102`
+- entry uuids `9683684d-a148-8b6c-a522-36ed16e547af` · `b944b6c3-53c7-85e8-b972-bce4dbd15ca6`
+- content uuids `5f50cca7-3b03-8076-bd08-d21a6ad931bb` · `d5805741-28fb-8b41-a5df-c1970f25a7af` · `d591aaac-0425-8ed1-99b6-3d906db1c102`
 
 ## [[entropy]] — gaps · seals
 
@@ -59,7 +59,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
@@ -67,15 +67,15 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `1` eb | Σ seal `12.985` eb |
+| Σ gap `1` eb | Σ seal `13.285` eb |
 
-> net residual `-11.985` eb · seal/gap ratio `12.985` · [[entropy]] · [[seal]]
+> net residual `-12.285` eb · seal/gap ratio `13.285` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `search` · sub-root `08b1b391-d9e7-84a5-8326-25981742cd0f`
 - bond degree `15` · analysis neighbors —
-- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -119,19 +119,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·4 | 1 | 100 |
+| ring·7 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `15` · sealed `1` · horo `4`
+- bond degree `15` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `b6239a26-5b87-88b7-bb31-f65d1acf7a14`
+- uuid `5f50cca7-3b03-8076-bd08-d21a6ad931bb`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -143,4 +143,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `cd5137d4-1d08-8a14-b796-636d68fcfb9a` · framed by typography partition `search` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `84b4c629-3128-824f-b744-f0e1f83735dc` · framed by typography partition `search` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

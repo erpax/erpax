@@ -3,15 +3,15 @@
 
 # risk
 
-path `medical/risk` · uuid `3c080cd4-5373-87c9-9db1-95e5032b6eb7` · diamond `93bf741a-7388-8a56-a874-8c428442c75e`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `medical/risk` · uuid `304635f3-56e5-8783-b85c-1ead7633a1fc` · diamond `0b5d4fc1-40cb-8a91-a71a-c846c2ecc1eb`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `18` out `18`
+links `5/5` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
-neighbors → calculator·dormancy·estimates·estimator·factor·hedge·incident·included·increases·manure·medical·mortality·registers·score·scouting·share·withdrawal·workflow · ← calculator·dormancy·estimates·estimator·factor·hedge·incident·included·increases·manure·medical·mortality·registers·score·scouting·share·withdrawal·workflow
-analysis diamond·hallucination·purity
+neighbors → calculator·dormancy·estimates·estimator·factor·hedge·incident·included·increases·manure·medical·mortality·registers·risk·score·scouting·share·withdrawal·workflow · ← calculator·dormancy·estimates·estimator·factor·hedge·incident·included·increases·manure·medical·mortality·registers·risk·score·scouting·share·withdrawal·workflow
+analysis —
 law medical/risk names risk under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `8150546a-8ee8-8c4e-af52-2f1e6a22e3a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b79c367-4c91-87ba-85d8-1bc91868e5fb` · `pnpm readme` · `pnpm computed:check`</sub>

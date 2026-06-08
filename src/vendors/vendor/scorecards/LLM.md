@@ -3,8 +3,8 @@
 
 # scorecards
 
-path `vendors/vendor/scorecards` · uuid `1b49ec1e-1ae2-8c15-b820-3173b63ac926` · diamond `b33a29f1-f7b8-83f5-9c43-a10b82de8696`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `vendors/vendor/scorecards` · uuid `9bc63369-5a18-8c71-a8df-ba34b8f96965` · diamond `1354873c-707b-8452-8c1c-4b282786dca7`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a scorecard is the periodic, evidence-backed re-evaluation of one vendor (OT
 
 ---
 
-<sub>content-uuid `3b903b2d-e825-8e16-845d-2da01328c852` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `09fbc941-778e-879f-bc02-45f13e1cf38f` · `pnpm readme` · `pnpm computed:check`</sub>

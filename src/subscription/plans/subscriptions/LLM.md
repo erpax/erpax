@@ -3,8 +3,8 @@
 
 # subscriptions
 
-path `subscription/plans/subscriptions` · uuid `f153f7bc-88c7-8e82-a1f9-8e8b8c9d1d05` · diamond `b4dd1ddc-d905-896c-9fe2-ef836bcb9616`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `subscription/plans/subscriptions` · uuid `573dedca-79aa-8699-8cb8-d7c18297ac6c` · diamond `12b273e2-90e2-8fa4-a8ec-fe2522d24263`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/is/super/admin·@/subscription/plans/subscriptions/hooks · exports const · escapes —
 links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3c192a4e-4df4-894b-bc4f-31e756d7d672` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a1b21c7b-6e85-8f58-a2be-ae2deda8d09b` · `pnpm readme` · `pnpm computed:check`</sub>

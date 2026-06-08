@@ -3,7 +3,7 @@
 
 # access
 
-path `security/remote/access` · uuid `3023f0b9-198f-8bba-88ea-5b6107f8822e` · diamond `6fab62aa-52eb-8015-b767-ae11f5880fe1`
+path `security/remote/access` · uuid `3b5a111f-9611-8fd5-ae19-09a8d6fca2c8` · diamond `6da23e58-3050-8607-aba3-cfb1df867236`
 horo `6` `6` · trinity `1·1·1` · sealed `0`
 imports @/anchor·@/receipt·@/sandbox·@/tamper/cost · exports function·interface · escapes —
 links `40/40` · folded `1` · bonds in `124` out `124`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b08be19f-4231-8bd0-99f8-191d84848dad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91c03abf-7cc7-80c9-b4f6-959ae3a9bcbc` · `pnpm readme` · `pnpm computed:check`</sub>

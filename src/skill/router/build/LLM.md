@@ -4,9 +4,9 @@
 # build
 
 path `skill/router/build` · uuid `f7113a03-e7a2-83fc-b9e5-1ce19cd491b6` · diamond `9284fe1c-4ef9-86be-92b1-f6856ad45e84`
-horo `8` `crest` · trinity `0·0·0` · sealed `0`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/aura·@/navigation · exports const·function · escapes —
-links `0/0` · folded `1` · bonds in `4` out `4`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
 neighbors → law·links·navigation·router · ← law·links·navigation·router
 analysis —
@@ -14,4 +14,4 @@ law build emit is computed — regenerate from live corpus; never hand-edit gene
 
 ---
 
-<sub>content-uuid `a924b5d0-ca8d-81a4-ad67-566fbf2c4c31` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ff238532-4de9-8620-8ce4-d634b45723a7` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # optimization
 
-path `search/engine/optimization` · uuid `b6239a26-5b87-88b7-bb31-f65d1acf7a14` · diamond `92e0717a-cb39-888f-946f-68d36c2b487a`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `search/engine/optimization` · uuid `5f50cca7-3b03-8076-bd08-d21a6ad931bb` · diamond `50089538-39ae-8b06-a8e4-a75d67f59dd0`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
 links `7/7` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `38b55bf2-6989-80c1-a5b6-77e3a459c7af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `351583a2-1e6a-8c39-a47e-c7d9eaf07fd3` · `pnpm readme` · `pnpm computed:check`</sub>

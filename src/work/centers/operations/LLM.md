@@ -3,8 +3,8 @@
 
 # operations
 
-path `work/centers/operations` · uuid `83aa00bd-c952-8520-959b-ac21273f7b01` · diamond `cae0c6a9-f0de-8c56-96fa-6492ee87d539`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `work/centers/operations` · uuid `248c3904-0aa0-8735-beb3-87088a7cd56c` · diamond `ec73f45f-3f69-8d17-8bef-021b10fd7496`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law operations is the reusable operation-type catalog (Cut · Sew · Mix · Asse
 
 ---
 
-<sub>content-uuid `4c2096bf-a116-8a41-9cac-f4cbea576019` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ca4c345-137f-8e13-b86e-59eeba6d0c1f` · `pnpm readme` · `pnpm computed:check`</sub>

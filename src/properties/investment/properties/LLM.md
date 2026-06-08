@@ -3,8 +3,8 @@
 
 # properties
 
-path `properties/investment/properties` · uuid `1ea523fa-07e8-8c38-a453-0ac55b096b5f` · diamond `a1994066-8c79-8bd0-81ac-c7c124571841`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `properties/investment/properties` · uuid `a41f45b8-327e-879d-8a91-a6c1089cef45` · diamond `24aae316-6aef-8226-8d5c-3a7612f5b8ec`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `3/3` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `c4ea121e-efe3-89f2-89e4-32dd72a5c0a5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8694957a-ba05-8dd3-8911-21b7a6143338` · `pnpm readme` · `pnpm computed:check`</sub>

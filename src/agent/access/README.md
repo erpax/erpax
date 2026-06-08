@@ -2,7 +2,7 @@
 
 # access
 
-> atom `agent/access` · horo `9` `unity` · [[balance]] `1` · [[seal]] `0`
+> atom `agent/access` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -33,24 +33,17 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 - `explore:diamond`
 - `explore:hallucination`
 - `explore:purity`
-- `gap:ancestor:[[gap]]/[[path]]/ancestor`
 
 ### collapse
 
 - `balance:conserved`
-- `law:an agent does everything both ways — via the MCP gateway and via the filesystem — and the two are equivalent: the same content reaches the same content-uuid regardless of modality (the path, not the identity). MCP is trust-native (every call passes the sandbox and emits a receipt); fs is direct. The modality is the choice of trust, not of truth.`
-- `seal:unsealed`
-- `trigger:Use when reasoning about how an agent acts — it does everything both through the MCP gateway (trust-native, sandboxed and receipted) and through the filesystem (direct), the two equivalent because content-addressed, the modality the choice of trust not of truth.`
-- `trigger:an agent does everything both ways — via the MCP gateway and via the filesystem — and the two are equivalent: the same content reaches the same content-uuid regardless of modality (the path, not the identity). MCP is trust-native (every call passes the sandbox and emits a receipt); fs is direct. The modality is the choice of trust, not of truth.`
-- `trigger:matter-twin:src/agent/access/index.ts`
-- `trigger:reachVia is content-addressed (modality-free); trustNative marks the MCP door (sandbox + receipt) only`
-- `trigger:the official @payloadcms/plugin-mcp gateway · content-addressed identity (RFC 9562) · trust-native sandbox+receipt`
+- `seal:sealed`
 
 ### seal
 
-- path follow `1` · receipt `1` · sealed `0`
-- entry uuids `72de56f7-28dd-8578-9a67-9bb92c441987` · `bbbb4c0b-caf3-806e-a7e0-11462bf2e25c`
-- content uuids `bc441b6d-6b25-81ac-a343-4fe21a4187c7` · `e6724f14-778c-8448-8b0c-10170507e2e8`
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `9cc1667b-cf5a-8b07-983e-dea409182921`
+- content uuids `12a41848-21bd-8151-a1a6-3f0c21c1e8c0` · `dc3b9293-137f-839b-a7a7-1aba6aff4937`
 
 ## [[entropy]] — gaps · seals
 
@@ -60,7 +53,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | [[gap]] debit (eb) | [[seal]] credit (eb) |
 | -----------------: | -------------------: |
-| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/form `1` eb |
 |  | [[seal]]/[[trinity]]/code `1` eb |
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
@@ -69,18 +62,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `1` eb | Σ seal `11.9` eb |
+| Σ gap `0` eb | Σ seal `13.485` eb |
 
-> net residual `-10.9` eb · seal/gap ratio `11.9` · [[entropy]] · [[seal]]
+> net residual `-13.485` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `agent` · sub-root `f4b94bea-9669-8515-9167-4d09383cd078`
+- partition `agent` · sub-root `8006d51e-d673-8575-a8e1-a9c71caacb47`
 - bond degree `412` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9eb764d2-12af-88d1-a220-afe79901fdba`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -98,7 +92,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unsealed | 1 | 100 |
+| sealed | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[balance]]
@@ -132,7 +126,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ## analytics
 
-- bond degree `412` · sealed `0` · horo `9`
+- bond degree `412` · sealed `1` · horo `9`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
@@ -146,8 +140,8 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2a9f8581-c635-8740-aa8f-aded3bed171a` · framed by typography partition `agent` bonds `412` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6470dbac-74ae-802f-8534-d6802adc95ec` · framed by typography partition `agent` bonds `412` · `pnpm readme` · `pnpm readme:check`</sub>
