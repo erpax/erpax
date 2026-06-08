@@ -2,29 +2,28 @@
 
 # shift
 
-> atom `shift` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
+> atom `shift` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `6` |  |
-| Σ `13` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `13` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `shift` · sub-root `80e789fd-365c-8cbc-a951-f4f208c38209`
 - bond degree `17` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `18` / `18`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `shift`
-- partition root `80e789fd-365c-8cbc-a951-f4f208c38209`
-- bond degree `17`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `412f9cc3-8fcb-8c1f-a0b6-b357a2f9d504` · framed by typography partition `shift` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1a2771a2-7946-8e6a-909d-0e8141982628` · framed by typography partition `shift` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

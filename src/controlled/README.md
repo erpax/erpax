@@ -2,29 +2,28 @@
 
 # controlled
 
-> atom `controlled` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `controlled` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `18` |  |
-| Σ `25` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `25` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `controlled` · sub-root `e25a2428-ead8-8ff6-b469-60f70270dd91`
 - bond degree `22` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `4` / `4`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `controlled`
-- partition root `e25a2428-ead8-8ff6-b469-60f70270dd91`
-- bond degree `22`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9ea97133-2371-8cd1-a5db-17c550fff664` · framed by typography partition `controlled` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `891067c0-44d2-8b9a-955f-08fda571eb11` · framed by typography partition `controlled` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

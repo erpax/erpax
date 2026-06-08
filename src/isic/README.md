@@ -2,28 +2,28 @@
 
 # isic
 
-> atom `isic` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `isic` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| Σ `7` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `6` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `isic` · sub-root `9b8f4f55-666d-89f0-a608-808b90fff7c7`
 - bond degree `3` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +33,10 @@
 - links `3` / `3`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `isic`
-- partition root `9b8f4f55-666d-89f0-a608-808b90fff7c7`
-- bond degree `3`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `32a94f60-3ea2-8ea2-a7f6-99955acb3683` · framed by typography partition `isic` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e1f9854-8a2b-82c3-88fd-84dc8f812ecf` · framed by typography partition `isic` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

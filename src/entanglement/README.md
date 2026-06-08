@@ -2,31 +2,30 @@
 
 # entanglement
 
-> atom `entanglement` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
+> atom `entanglement` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `32` |  |
-| Σ `41` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `41` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `entanglement` · sub-root `6682e649-5672-8655-b92e-eb470d882c57`
 - bond degree `73` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +35,10 @@
 - links `15` / `15`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `entanglement`
-- partition root `6682e649-5672-8655-b92e-eb470d882c57`
-- bond degree `73`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b2a246e4-3b22-8899-bff7-c6a0fd152fe5` · framed by typography partition `entanglement` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67829411-b58b-89cd-a53c-41dc431e772c` · framed by typography partition `entanglement` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,30 +2,28 @@
 
 # tool
 
-> atom `tool` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `tool` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `4` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `14` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `14` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `tool` · sub-root `be4046de-d5b2-8b34-8ead-76c01334612b`
 - bond degree `15` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `2` / `2`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `tool`
-- partition root `be4046de-d5b2-8b34-8ead-76c01334612b`
-- bond degree `15`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2bd883c5-c518-8b8b-b3cb-951ba67baf3e` · framed by typography partition `tool` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d914495b-7429-8abc-88cf-6664f5910631` · framed by typography partition `tool` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

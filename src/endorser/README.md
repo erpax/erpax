@@ -2,29 +2,28 @@
 
 # endorser
 
-> atom `endorser` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `endorser` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `18` |  |
-| Σ `25` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `25` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `endorser` · sub-root `d90c0a87-862b-8c94-ac9f-32b9b9d54e08`
 - bond degree `22` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `9` / `9`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `endorser`
-- partition root `d90c0a87-862b-8c94-ac9f-32b9b9d54e08`
-- bond degree `22`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c0010e56-6d2e-873a-bad0-f9c6b68f3f79` · framed by typography partition `endorser` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `48f09680-9d5a-8205-8b48-537a6113c7e7` · framed by typography partition `endorser` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

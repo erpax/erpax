@@ -2,29 +2,28 @@
 
 # defect
 
-> atom `defect` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `defect` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `20` |  |
-| Σ `27` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `27` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `defect` · sub-root `5651d0b6-581f-814c-9069-3cbcf3177b71`
 - bond degree `31` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `7` / `7`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `defect`
-- partition root `5651d0b6-581f-814c-9069-3cbcf3177b71`
-- bond degree `31`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e0e8c527-2a60-8c6b-87c8-de81466bb97d` · framed by typography partition `defect` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `360b956b-c7aa-8633-9369-dc5880c1b0bd` · framed by typography partition `defect` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

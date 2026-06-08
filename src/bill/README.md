@@ -2,29 +2,28 @@
 
 # bill
 
-> atom `bill` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `bill` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `18` |  |
-| Σ `25` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `25` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `bill` · sub-root `2c328c56-758b-82f1-a1b8-a7e5b992b320`
 - bond degree `22` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `4` / `4`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `bill`
-- partition root `2c328c56-758b-82f1-a1b8-a7e5b992b320`
-- bond degree `22`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `3f8e3d0a-4cd3-8ff8-92e1-ef1bbc495ccc` · framed by typography partition `bill` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e4097fc-ce61-8cc3-b10d-b85da31564a9` · framed by typography partition `bill` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

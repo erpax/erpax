@@ -2,29 +2,28 @@
 
 # benefits
 
-> atom `benefits` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `benefits` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `10` |  |
-| Σ `17` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `17` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `benefits` · sub-root `6a4869e8-95cf-8702-b745-9717fc4f5e0e`
 - bond degree `24` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `8` / `8`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `benefits`
-- partition root `6a4869e8-95cf-8702-b745-9717fc4f5e0e`
-- bond degree `24`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2604b764-c64a-8932-93ee-4efb382231e3` · framed by typography partition `benefits` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `794a75ba-d4e0-8601-bef4-696167c53e42` · framed by typography partition `benefits` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

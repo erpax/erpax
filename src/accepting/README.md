@@ -2,29 +2,28 @@
 
 # accepting
 
-> atom `accepting` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `accepting` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `12` |  |
-| Σ `19` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `19` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `accepting` · sub-root `785a01e2-8e0e-8a54-b60e-42664d3fb240`
 - bond degree `20` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `6` / `6`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `accepting`
-- partition root `785a01e2-8e0e-8a54-b60e-42664d3fb240`
-- bond degree `20`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9c02c938-cb12-84ff-a8a4-62b700b41054` · framed by typography partition `accepting` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `991ab69e-6b01-8aac-befa-8d1cf6c8c380` · framed by typography partition `accepting` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

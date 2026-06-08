@@ -2,29 +2,28 @@
 
 # qualifier
 
-> atom `qualifier` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `qualifier` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `14` |  |
-| Σ `21` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `21` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `qualifier` · sub-root `f748e54c-6ace-80fd-b1b5-7eeb0d54df69`
 - bond degree `20` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `5` / `5`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `qualifier`
-- partition root `f748e54c-6ace-80fd-b1b5-7eeb0d54df69`
-- bond degree `20`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7f90e21c-529a-87df-9b76-dc8628dd0cf8` · framed by typography partition `qualifier` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b064d47a-950f-87a4-b199-7e419ff69913` · framed by typography partition `qualifier` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

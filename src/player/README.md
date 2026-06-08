@@ -2,29 +2,28 @@
 
 # player
 
-> atom `player` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `player` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `12` |  |
-| Σ `19` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `19` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `player` · sub-root `a5d3a2b8-9250-88fd-b7ea-3f25568dfc83`
 - bond degree `17` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `5` / `5`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `player`
-- partition root `a5d3a2b8-9250-88fd-b7ea-3f25568dfc83`
-- bond degree `17`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f23834da-e5ca-8e8a-8daf-a5e070d95f2b` · framed by typography partition `player` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2d80010c-6adb-8b38-b3fe-f1d6873718e2` · framed by typography partition `player` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

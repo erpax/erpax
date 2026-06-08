@@ -2,29 +2,28 @@
 
 # choice
 
-> atom `choice` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
+> atom `choice` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `10` |  |
-| Σ `17` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `17` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `choice` · sub-root `86a41757-b780-8dea-83ac-4be4c78732f4`
 - bond degree `21` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `18` / `18`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `choice`
-- partition root `86a41757-b780-8dea-83ac-4be4c78732f4`
-- bond degree `21`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `3d7cfbf8-90c2-84e5-ae0c-b33366a8a460` · framed by typography partition `choice` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bb3f2c6b-13bb-8182-83a8-b40bc48a3957` · framed by typography partition `choice` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

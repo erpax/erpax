@@ -2,29 +2,28 @@
 
 # sentiment
 
-> atom `sentiment` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `sentiment` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `12` |  |
-| Σ `19` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `19` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `sentiment` · sub-root `934ce2ff-96e0-80e6-8339-451bb3211dde`
 - bond degree `19` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `5` / `5`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `sentiment`
-- partition root `934ce2ff-96e0-80e6-8339-451bb3211dde`
-- bond degree `19`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `500e9d8d-cf72-873a-92f4-7bb000362b69` · framed by typography partition `sentiment` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `201e2ac8-054b-8c5e-8d62-064f116a8e90` · framed by typography partition `sentiment` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

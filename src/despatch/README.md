@@ -2,29 +2,28 @@
 
 # despatch
 
-> atom `despatch` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `despatch` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `10` |  |
-| Σ `17` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `17` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `despatch` · sub-root `628241e3-49d5-8e2c-880e-514a91c1b19a`
 - bond degree `14` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `4` / `4`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `despatch`
-- partition root `628241e3-49d5-8e2c-880e-514a91c1b19a`
-- bond degree `14`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `dc492ce1-9f35-8aef-b93a-72a7272efe34` · framed by typography partition `despatch` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c6d90b7-f001-865d-8c8a-aa46e26e568c` · framed by typography partition `despatch` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

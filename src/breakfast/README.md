@@ -2,29 +2,28 @@
 
 # breakfast
 
-> atom `breakfast` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `breakfast` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `131` |  |
-| Σ `138` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `138` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `breakfast` · sub-root `18638372-aa81-83d2-ab8f-ec4ff0636473`
 - bond degree `137` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `5` / `5`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `breakfast`
-- partition root `18638372-aa81-83d2-ab8f-ec4ff0636473`
-- bond degree `137`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0a62cb93-d880-88d5-92c4-4e0e93e9df68` · framed by typography partition `breakfast` bonds `137` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `639a632f-cbd1-8f53-b0d4-34ad4185b366` · framed by typography partition `breakfast` bonds `137` · `pnpm readme` · `pnpm readme:check`</sub>

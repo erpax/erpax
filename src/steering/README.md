@@ -2,29 +2,28 @@
 
 # steering
 
-> atom `steering` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
+> atom `steering` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `26` |  |
-| Σ `33` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `33` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `steering` · sub-root `7997291b-de3c-8e20-be00-78bda395974b`
 - bond degree `32` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `6` / `6`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `steering`
-- partition root `7997291b-de3c-8e20-be00-78bda395974b`
-- bond degree `32`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9535c7d7-2dbc-8a73-9cc8-803d65c6e8ba` · framed by typography partition `steering` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d25ea1b-7492-8906-9ba9-2ad1fed661ac` · framed by typography partition `steering` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

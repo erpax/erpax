@@ -2,29 +2,28 @@
 
 # saturated
 
-> atom `saturated` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `saturated` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `14` |  |
-| Σ `21` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `21` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `saturated` · sub-root `ae8ef0ca-e94e-86f2-9298-b10ce3365e07`
 - bond degree `22` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `6` / `6`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `saturated`
-- partition root `ae8ef0ca-e94e-86f2-9298-b10ce3365e07`
-- bond degree `22`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1764b6ef-bf91-8a6d-b53a-64989c3622da` · framed by typography partition `saturated` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `993ebdfd-2bf9-80e7-99d4-d1718f0b9da9` · framed by typography partition `saturated` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

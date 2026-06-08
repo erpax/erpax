@@ -2,30 +2,28 @@
 
 # science
 
-> atom `science` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
+> atom `science` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `4` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `12` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `12` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `science` · sub-root `4e42d97c-297d-87a1-b0e8-f5d82d270308`
 - bond degree `77` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `150` / `150`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `science`
-- partition root `4e42d97c-297d-87a1-b0e8-f5d82d270308`
-- bond degree `77`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0304962d-01e7-88b4-83aa-6215aba68170` · framed by typography partition `science` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3a30148d-ad1e-852c-a91b-8ba4d60ba80b` · framed by typography partition `science` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>

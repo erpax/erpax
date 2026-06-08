@@ -2,29 +2,28 @@
 
 # gallery
 
-> atom `gallery` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `gallery` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `8` |  |
-| Σ `15` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `15` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `gallery` · sub-root `8fd02d1a-2f1d-8e16-b787-e4582e2492bb`
 - bond degree `19` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `8` / `8`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `gallery`
-- partition root `8fd02d1a-2f1d-8e16-b787-e4582e2492bb`
-- bond degree `19`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b10821e8-3f08-8076-a281-e3d18cd3aa9a` · framed by typography partition `gallery` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e35d4e67-6c51-8d28-aa7d-cb92ae5e2fe2` · framed by typography partition `gallery` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

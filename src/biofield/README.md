@@ -2,30 +2,28 @@
 
 # biofield
 
-> atom `biofield` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
+> atom `biofield` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `14` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `22` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `22` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `biofield` · sub-root `85bfe319-dff3-88d8-bd31-df58e478c523`
 - bond degree `33` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `18` / `18`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `biofield`
-- partition root `85bfe319-dff3-88d8-bd31-df58e478c523`
-- bond degree `33`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `91cb73b5-f0e3-8125-921f-8eb040e17507` · framed by typography partition `biofield` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fd98b813-f0c7-8a6e-963d-05fd5472da3a` · framed by typography partition `biofield` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

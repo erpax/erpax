@@ -2,26 +2,28 @@
 
 # architect
 
-> atom `architect` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `architect` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `7` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `architect` · sub-root `1ef5146c-ac9a-8551-ae94-b6be5211eb8b`
 - bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `48` / `48`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `architect`
-- partition root `1ef5146c-ac9a-8551-ae94-b6be5211eb8b`
-- bond degree `27`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6589280e-f5ab-8e25-87d6-306a556193be` · framed by typography partition `architect` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b9d9e5c3-f570-87bb-a109-498df5875f78` · framed by typography partition `architect` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,28 +2,30 @@
 
 # replay
 
-> atom `beyond/replay` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `beyond/replay` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `9` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
 - bond degree `8` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +35,10 @@
 - links `7` / `7`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `beyond`
-- partition root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `8`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fd7967e4-039d-86ce-8460-4922ad0d675c` · framed by typography partition `beyond` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5f2c06e2-637c-8622-ba9d-bff6d28f67c8` · framed by typography partition `beyond` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

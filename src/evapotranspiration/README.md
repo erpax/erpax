@@ -2,29 +2,28 @@
 
 # evapotranspiration
 
-> atom `evapotranspiration` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `evapotranspiration` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `12` |  |
-| Σ `19` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `19` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `evapotranspiration` · sub-root `0d1091aa-c52d-82be-90cf-4b52d1f15d8e`
 - bond degree `25` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `18` / `18`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `evapotranspiration`
-- partition root `0d1091aa-c52d-82be-90cf-4b52d1f15d8e`
-- bond degree `25`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d685f637-6047-8342-aa8d-a2280ed873ce` · framed by typography partition `evapotranspiration` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `245bc4a7-3704-88c1-a79f-0427c3552098` · framed by typography partition `evapotranspiration` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

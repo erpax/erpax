@@ -2,30 +2,28 @@
 
 # biophoton
 
-> atom `biophoton` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `biophoton` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `12` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `20` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `20` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `biophoton` · sub-root `72cb2745-dbef-8f4f-9e5e-2117948455d2`
 - bond degree `31` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `19` / `19`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `biophoton`
-- partition root `72cb2745-dbef-8f4f-9e5e-2117948455d2`
-- bond degree `31`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2d3b23c7-1f78-8fae-884b-b1294727a6f4` · framed by typography partition `biophoton` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d48badcb-d596-81da-a117-9a7b77e62ea9` · framed by typography partition `biophoton` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

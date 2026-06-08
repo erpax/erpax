@@ -2,32 +2,30 @@
 
 # analytics
 
-> atom `analytics` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `analytics` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `38` |  |
-| [[asset]]/[[typography]]/neighbors `10` |  |
-| Σ `57` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `57` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `analytics` · sub-root `496bc66f-de12-8dce-94f7-0c34d1d7570b`
 - bond degree `70` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `purity` · `relocate` · `typography` · `unavoidable`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -37,18 +35,10 @@
 - links `27` / `27`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `analytics`
-- partition root `496bc66f-de12-8dce-94f7-0c34d1d7570b`
-- bond degree `70`
-- analysis neighbors `10`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d230bd44-f8d6-8684-a101-d1af6d4dc1d4` · framed by typography partition `analytics` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9d824467-ec10-8129-96bd-fda99eb34905` · framed by typography partition `analytics` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

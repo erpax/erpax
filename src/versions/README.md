@@ -2,30 +2,29 @@
 
 # versions
 
-> atom `versions` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `versions` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `12` |  |
-| Σ `20` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `8` | Σ `8` |
 
-> [[balance]] `20` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `versions` · sub-root `c11ed1d2-4e8c-8ba3-9980-18f1391f97f4`
 - bond degree `51` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +34,10 @@
 - links `14` / `14`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `versions`
-- partition root `c11ed1d2-4e8c-8ba3-9980-18f1391f97f4`
-- bond degree `51`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4ce3e8ba-658e-8b1d-9d03-ede2dbd4a4d5` · framed by typography partition `versions` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7222c7fe-c08a-8332-931b-3a9ff24bc740` · framed by typography partition `versions` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

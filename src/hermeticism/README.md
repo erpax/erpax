@@ -2,26 +2,28 @@
 
 # hermeticism
 
-> atom `hermeticism` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `hermeticism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `7` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `hermeticism` · sub-root `c97f74e4-fd33-86ed-8394-436894cd8dbf`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `52` / `52`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `hermeticism`
-- partition root `c97f74e4-fd33-86ed-8394-436894cd8dbf`
-- bond degree `24`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4d01ad55-2296-81d1-8bee-8f4777035b6b` · framed by typography partition `hermeticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0b5b7e6f-8c09-8fb9-943f-9b5f59d71b12` · framed by typography partition `hermeticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

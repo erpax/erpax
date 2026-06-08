@@ -2,30 +2,28 @@
 
 # profane
 
-> atom `profane` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `profane` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `10` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `18` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `18` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `profane` · sub-root `283eca17-f7f9-8900-ad55-bbad9f35426f`
 - bond degree `53` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `24` / `24`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `profane`
-- partition root `283eca17-f7f9-8900-ad55-bbad9f35426f`
-- bond degree `53`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `30b3e804-2268-8e99-aa70-76a6c606f35b` · framed by typography partition `profane` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `404c2f33-8ef9-81a3-8675-aeb09ea026e8` · framed by typography partition `profane` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

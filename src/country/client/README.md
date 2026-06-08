@@ -2,28 +2,30 @@
 
 # client
 
-> atom `country/client` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `country/client` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `9` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `country` · sub-root `848e38e2-9727-8485-8282-1c51d8b96a6c`
 - bond degree `10` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +35,10 @@
 - links `1` / `1`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `country`
-- partition root `848e38e2-9727-8485-8282-1c51d8b96a6c`
-- bond degree `10`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5e5b1f76-c782-8f31-829a-cdb263aca4f4` · framed by typography partition `country` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a343641e-2a1a-8f80-85f6-def868dba1e2` · framed by typography partition `country` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

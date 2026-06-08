@@ -2,26 +2,28 @@
 
 # jainism
 
-> atom `jainism` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `jainism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `7` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `jainism` · sub-root `3c083ec4-e204-8799-913f-a8b93492b08a`
 - bond degree `31` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `60` / `60`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `jainism`
-- partition root `3c083ec4-e204-8799-913f-a8b93492b08a`
-- bond degree `31`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7409d942-2daa-8696-b982-e860e0d31105` · framed by typography partition `jainism` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4f05a22a-b67c-8783-bc9c-b1bec51bc4ed` · framed by typography partition `jainism` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

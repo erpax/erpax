@@ -2,26 +2,28 @@
 
 # shia
 
-> atom `shia` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `shia` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `7` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `shia` · sub-root `8c9f9ddf-9297-8fee-8ef8-1a16ce86dac5`
 - bond degree `23` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `46` / `46`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `shia`
-- partition root `8c9f9ddf-9297-8fee-8ef8-1a16ce86dac5`
-- bond degree `23`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0143bf48-de55-84d6-a4f8-d8cd339ac177` · framed by typography partition `shia` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce639c39-2447-8836-af0e-a2578f8b0669` · framed by typography partition `shia` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

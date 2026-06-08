@@ -2,30 +2,28 @@
 
 # law
 
-> atom `law` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `law` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `22` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `30` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `30` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `law` · sub-root `0343031a-7a0b-8e24-8f32-d065040b07df`
-- bond degree `2860` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- bond degree `2861` · analysis neighbors `aura`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `282` / `282`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `law`
-- partition root `0343031a-7a0b-8e24-8f32-d065040b07df`
-- bond degree `2860`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0f394f57-c5ff-8c97-910d-cd9b983689c0` · framed by typography partition `law` bonds `2860` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0d737b81-4710-8b67-bf21-5f03d990396d` · framed by typography partition `law` bonds `2861` · `pnpm readme` · `pnpm readme:check`</sub>

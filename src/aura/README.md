@@ -2,32 +2,30 @@
 
 # aura
 
-> atom `aura` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `aura` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `177` |  |
-| [[asset]]/[[typography]]/neighbors `87` |  |
-| Σ `273` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `273` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `aura` · sub-root `863a5e37-ab12-800b-aa2e-be7556faeb44`
 - bond degree `400` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `version` · `vibration` · `war` · `zoroastrianism`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -37,18 +35,10 @@
 - links `68` / `68`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `aura`
-- partition root `863a5e37-ab12-800b-aa2e-be7556faeb44`
-- bond degree `400`
-- analysis neighbors `87`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `3088ac22-2e61-8503-ac53-f4c936453e43` · framed by typography partition `aura` bonds `400` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9c0b3292-9fd4-86d3-82fe-0dbc76acb0fb` · framed by typography partition `aura` bonds `400` · `pnpm readme` · `pnpm readme:check`</sub>

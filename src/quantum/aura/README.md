@@ -2,32 +2,30 @@
 
 # aura
 
-> atom `quantum/aura` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `quantum/aura` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `177` |  |
-| [[asset]]/[[typography]]/neighbors `87` |  |
-| Σ `273` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `273` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `678c4743-3cae-8719-9877-00fe8dd11715`
+- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
 - bond degree `400` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `version` · `vibration` · `war` · `zoroastrianism`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -37,18 +35,10 @@
 - links `17` / `17`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `quantum`
-- partition root `678c4743-3cae-8719-9877-00fe8dd11715`
-- bond degree `400`
-- analysis neighbors `87`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `97e14c98-4585-866f-a78e-72b5b13473cc` · framed by typography partition `quantum` bonds `400` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d6c6a0df-1c9d-82cc-981e-06078ce6f11e` · framed by typography partition `quantum` bonds `400` · `pnpm readme` · `pnpm readme:check`</sub>

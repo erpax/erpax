@@ -2,26 +2,28 @@
 
 # orphism
 
-> atom `orphism` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `orphism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `7` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `orphism` · sub-root `92a68e81-32e8-89f0-845c-b51b9839f810`
 - bond degree `23` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `51` / `51`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `orphism`
-- partition root `92a68e81-32e8-89f0-845c-b51b9839f810`
-- bond degree `23`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `aba6b7b9-2e9a-8fe8-bbf7-5e74469b6095` · framed by typography partition `orphism` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a826f359-7038-8fa1-92bf-22039f14cb03` · framed by typography partition `orphism` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

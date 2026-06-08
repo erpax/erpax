@@ -2,30 +2,28 @@
 
 # css
 
-> atom `css` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
+> atom `css` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `20` |  |
-| [[asset]]/[[typography]]/neighbors `2` |  |
-| Σ `29` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `29` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `css` · sub-root `8ac7e2ab-b02d-8084-9f94-5da3562b0671`
 - bond degree `35` · analysis neighbors `diamond` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `28` / `28`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `css`
-- partition root `8ac7e2ab-b02d-8084-9f94-5da3562b0671`
-- bond degree `35`
-- analysis neighbors `2`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6708b6b2-45a0-859f-837d-0bec7ed8daaa` · framed by typography partition `css` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6158550a-5b3e-8a18-9285-619ea74a1b1d` · framed by typography partition `css` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

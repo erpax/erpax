@@ -2,30 +2,28 @@
 
 # war
 
-> atom `war` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `war` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `28` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `36` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `36` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `war` · sub-root `2f805749-d1ea-8e60-8c0d-321d59d55c8e`
 - bond degree `49` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `40` / `40`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `war`
-- partition root `2f805749-d1ea-8e60-8c0d-321d59d55c8e`
-- bond degree `49`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `370271b2-2f53-8633-93f7-37bdab5e0a20` · framed by typography partition `war` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0db20a02-d6f5-8de5-a5fa-0611df81bc7f` · framed by typography partition `war` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,44 +2,38 @@
 
 # seal
 
-> atom `seal` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `seal` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `9` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `seal` · sub-root `fb894f10-980a-806a-88c7-354b458eee42`
-- bond degree `32` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- partition `seal` · sub-root `b2f34d53-f985-8a70-95e5-7ffa287bab52`
+- bond degree `36` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
 - uuid `—`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`1`·`1`
-- links `18` / `18`
+- links `22` / `22`
 - folded `0` · escapes `0`
-
-## typography graph
-
-- partition `seal`
-- partition root `fb894f10-980a-806a-88c7-354b458eee42`
-- bond degree `32`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
 
 ## [[seal]]
 
@@ -47,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `5168dc9c-1388-8524-b799-c12029faadb5` · framed by typography partition `seal` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9448ba97-50ff-85fe-a0cd-38c83b79ffb6` · framed by typography partition `seal` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

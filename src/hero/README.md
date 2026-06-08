@@ -2,28 +2,30 @@
 
 # hero
 
-> atom `hero` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `hero` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `9` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `hero` · sub-root `f79bbcb9-85a7-85ae-811f-43088cc46140`
 - bond degree `4` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +35,10 @@
 - links `1` / `1`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `hero`
-- partition root `f79bbcb9-85a7-85ae-811f-43088cc46140`
-- bond degree `4`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c7f03a51-c0c4-8d27-8b27-718b414d0509` · framed by typography partition `hero` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d27eb9b-7961-81fe-9d7d-eb16d26100c1` · framed by typography partition `hero` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>

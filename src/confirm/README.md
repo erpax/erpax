@@ -2,45 +2,38 @@
 
 # confirm
 
-> atom `confirm` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
+> atom `confirm` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `8` |  |
-| Σ `15` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[boundary]]/escape `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `15` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `confirm` · sub-root `1d9ffd48-8dd0-8834-b690-ad65220843b6`
-- bond degree `25` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- partition `confirm` · sub-root `079e8289-1a74-8e03-bcc1-94b92adcae4a`
+- bond degree `35` · analysis neighbors `purity` · `quantum/boundary` · `tamper/import`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
 - uuid `1d9ffd48-8dd0-8834-b690-ad65220843b6`
 - bonds in `4` · out `4`
-- trinity form·code·proof `1`·`0`·`0`
-- links `5` / `5`
-- folded `1` · escapes `0`
-
-## typography graph
-
-- partition `confirm`
-- partition root `1d9ffd48-8dd0-8834-b690-ad65220843b6`
-- bond degree `25`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- trinity form·code·proof `1`·`1`·`1`
+- links `15` / `15`
+- folded `1` · escapes `1`
 
 ## [[seal]]
 
@@ -48,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `669fde06-286e-81e7-bb7b-c13ebf69b698` · framed by typography partition `confirm` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4201cac6-7e77-84ed-b1f4-1f989f1c6f3d` · framed by typography partition `confirm` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

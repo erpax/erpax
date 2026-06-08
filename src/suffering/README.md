@@ -2,26 +2,28 @@
 
 # suffering
 
-> atom `suffering` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `suffering` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `4` |  |
-| Σ `8` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `4` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `suffering` · sub-root `0d69b983-11bf-8c6d-815f-03297011afe2`
 - bond degree `28` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `33` / `33`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `suffering`
-- partition root `0d69b983-11bf-8c6d-815f-03297011afe2`
-- bond degree `28`
-- analysis neighbors `4`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `768cab8c-7219-811f-991e-1f54f554564f` · framed by typography partition `suffering` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f257cd75-6565-8f65-b5f5-d7616eaca8f4` · framed by typography partition `suffering` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

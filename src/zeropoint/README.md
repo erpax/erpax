@@ -2,28 +2,28 @@
 
 # zeropoint
 
-> atom `zeropoint` · horo `9` `unity` · [[balance]] `0` · [[seal]] `0`
+> atom `zeropoint` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| Σ `7` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `6` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `zeropoint` · sub-root `9bb13e63-391d-874e-a627-94e9ddd93bf1`
 - bond degree `85` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +33,10 @@
 - links `51` / `51`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `zeropoint`
-- partition root `9bb13e63-391d-874e-a627-94e9ddd93bf1`
-- bond degree `85`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `cb4f7613-3b66-8fff-8c37-74738a2db17e` · framed by typography partition `zeropoint` bonds `85` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3449b83d-eb6b-8d8e-ac3c-00740428c572` · framed by typography partition `zeropoint` bonds `85` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,31 +2,30 @@
 
 # accounting
 
-> atom `agents/accounting` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `agents/accounting` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `446` |  |
-| [[asset]]/[[typography]]/neighbors `4` |  |
-| Σ `458` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `457` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
 - bond degree `734` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +35,10 @@
 - links `1` / `1`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `agents`
-- partition root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `734`
-- analysis neighbors `4`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9be9cf7c-610b-86af-8a22-5fdeeafd16bc` · framed by typography partition `agents` bonds `734` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ed1b852-5e83-8088-b1a4-5254a056831b` · framed by typography partition `agents` bonds `734` · `pnpm readme` · `pnpm readme:check`</sub>

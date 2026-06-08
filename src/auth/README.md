@@ -2,31 +2,30 @@
 
 # auth
 
-> atom `auth` · horo `6` `6` · [[balance]] `0` · [[seal]] `0`
+> atom `auth` · horo `6` `6` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `56` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `67` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `66` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `auth` · sub-root `6534ea1f-c98a-8977-919f-968e8abcfd39`
 - bond degree `94` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +35,10 @@
 - links `14` / `14`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `auth`
-- partition root `6534ea1f-c98a-8977-919f-968e8abcfd39`
-- bond degree `94`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9cc1dd3a-cff0-855c-87b9-627dca8e45b0` · framed by typography partition `auth` bonds `94` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a3ebc3a3-e54b-8ecc-b59e-c4f3bb7f1409` · framed by typography partition `auth` bonds `94` · `pnpm readme` · `pnpm readme:check`</sub>

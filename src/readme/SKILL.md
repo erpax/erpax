@@ -30,7 +30,7 @@ pnpm readme:check   # the drift gate — exit 1 if committed ≠ regenerated (fa
 | [[credit]] | Right column — liabilities/gaps the diamond OWES |
 | [[asset]] | Debit account class for present facets (trinity · lattice · links · horo · identity · boundary) |
 | [[liability]] | Credit account class for missing facets and impurities |
-| [[balance]] | Equilibrium — sealed iff debits = credits (zero [[entropy]]) |
+| [[balance]] | Contra postings close the journal (every asset debit · every liability credit pairs `[[balance]]`); variance `0` iff Σdebit = Σcredit ([[conservation]]) |
 | [[conservation]] | `trialBalance` / `conserves` — Σdebit = Σcredit is the conservation law |
 | [[entry]] | Universal double-entry — every README row is a balanced posting pair |
 | [[accounting]] | The chart-of-accounts metaphor — each folder IS an account, README IS its statement |

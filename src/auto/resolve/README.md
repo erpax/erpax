@@ -2,28 +2,30 @@
 
 # resolve
 
-> atom `auto/resolve` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `auto/resolve` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `9` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
 - bond degree `12` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +35,10 @@
 - links `17` / `17`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `auto`
-- partition root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
-- bond degree `12`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0d5028aa-c7e8-8251-991f-e7a0006d567a` · framed by typography partition `auto` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f357e1c9-f1c0-8abe-bc4c-fe98d129952d` · framed by typography partition `auto` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

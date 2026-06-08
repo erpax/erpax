@@ -2,31 +2,29 @@
 
 # config
 
-> atom `config` · horo `9` `unity` · [[balance]] `0` · [[seal]] `0`
+> atom `config` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `20` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `29` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `8` | Σ `8` |
 
-> [[balance]] `29` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
-- bond degree `81` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- bond degree `82` · analysis neighbors `aura`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +34,10 @@
 - links `30` / `30`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `config`
-- partition root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
-- bond degree `81`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `862a8b3d-6d3f-8967-a10c-2895bc8d8419` · framed by typography partition `config` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4439ce9-b8fb-8cd5-b5fd-395041ed12b0` · framed by typography partition `config` bonds `82` · `pnpm readme` · `pnpm readme:check`</sub>

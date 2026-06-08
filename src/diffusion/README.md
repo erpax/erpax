@@ -2,29 +2,28 @@
 
 # diffusion
 
-> atom `diffusion` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `diffusion` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `90` |  |
-| Σ `97` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `97` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `diffusion` · sub-root `cf951b26-9f06-8c2b-9f6f-b1aee212a58f`
 - bond degree `108` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `36` / `36`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `diffusion`
-- partition root `cf951b26-9f06-8c2b-9f6f-b1aee212a58f`
-- bond degree `108`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `10f0e93b-32e3-8a80-961e-815a61fef94e` · framed by typography partition `diffusion` bonds `108` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `091948dc-70e3-8cf9-a4a7-b8e34095a87f` · framed by typography partition `diffusion` bonds `108` · `pnpm readme` · `pnpm readme:check`</sub>

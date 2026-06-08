@@ -2,30 +2,28 @@
 
 # akashic
 
-> atom `akashic` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `akashic` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `152` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `160` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `160` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `akashic` · sub-root `b665a26f-9969-8279-9b5e-bd96b51c8cbd`
 - bond degree `255` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `53` / `53`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `akashic`
-- partition root `b665a26f-9969-8279-9b5e-bd96b51c8cbd`
-- bond degree `255`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f10709d9-8e99-8ef5-a770-2c2d5b6ad7a8` · framed by typography partition `akashic` bonds `255` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce45e649-cd70-88eb-8cb1-1b5b4dbc214e` · framed by typography partition `akashic` bonds `255` · `pnpm readme` · `pnpm readme:check`</sub>

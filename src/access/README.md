@@ -2,29 +2,28 @@
 
 # access
 
-> atom `access` · horo `6` `6` · [[balance]] `0` · [[seal]] `0`
+> atom `access` · horo `6` `6` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `244` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `253` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `252` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `access` · sub-root `0e4b457c-8c5f-8fe4-a7cc-a05454ed73a4`
 - bond degree `406` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `46` / `46`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `access`
-- partition root `0e4b457c-8c5f-8fe4-a7cc-a05454ed73a4`
-- bond degree `406`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `473acdc6-521d-82ba-a1f4-f1b2a552536d` · framed by typography partition `access` bonds `406` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b1ab93a9-1df4-8b8e-aa96-6ee68b5b740a` · framed by typography partition `access` bonds `406` · `pnpm readme` · `pnpm readme:check`</sub>

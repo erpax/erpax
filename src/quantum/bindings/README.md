@@ -2,30 +2,28 @@
 
 # bindings
 
-> atom `quantum/bindings` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `quantum/bindings` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `28` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `36` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `36` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `678c4743-3cae-8719-9877-00fe8dd11715`
+- partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
 - bond degree `68` · analysis neighbors `analytics`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `30` / `30`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `quantum`
-- partition root `678c4743-3cae-8719-9877-00fe8dd11715`
-- bond degree `68`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b4409d61-2f23-887b-be4a-4835155d0e49` · framed by typography partition `quantum` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f54ac2c1-9375-85c7-95cc-631e70f78876` · framed by typography partition `quantum` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>

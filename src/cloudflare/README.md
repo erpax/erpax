@@ -2,44 +2,38 @@
 
 # cloudflare
 
-> atom `cloudflare` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `cloudflare` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `9` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `cloudflare` · sub-root `0d1e3068-9fda-8dd8-9dae-29c09c96b52c`
-- bond degree `13` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- partition `cloudflare` · sub-root `2ca69ef1-6390-8940-aa1d-eebeb987caae`
+- bond degree `15` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
 - uuid `—`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`1`·`1`
-- links `18` / `18`
+- links `16` / `16`
 - folded `0` · escapes `0`
-
-## typography graph
-
-- partition `cloudflare`
-- partition root `0d1e3068-9fda-8dd8-9dae-29c09c96b52c`
-- bond degree `13`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
 
 ## [[seal]]
 
@@ -47,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `896f24cd-c7f5-83f2-bf34-136558d25cc1` · framed by typography partition `cloudflare` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ae2af9d-9283-869f-ad04-8188e65a7787` · framed by typography partition `cloudflare` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

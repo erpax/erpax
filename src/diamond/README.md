@@ -2,28 +2,31 @@
 
 # diamond
 
-> atom `diamond` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `diamond` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` | [[liability]]/[[links]]/dangling `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[links]]/resolved `165` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[typography]]/neighbors `133` |  |
-| Σ `303` | Σ `5` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `165` | [[balance]] `165` |
+| [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `174` | Σ `174` |
 
-> [[balance]] `298` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `diamond` · sub-root `5830268b-f259-82cb-9925-4af466b6a40f`
-- bond degree `288` · analysis neighbors `access` · `accounting` · `agent` · `analytics/max-tamper-cost` · `anchoring` · `animism` · `anyone` · `apply` · `archangel` · `architect` · `archival` · `aura` · `auth` · `authenticated` · `bahai` · `bitemporal` · `bogomilism` · `boundary` · `buddhism` · `by` · `calculator` · `carbon` · `card` · `catholicism` · `chain` · `change` · `chart` · `checker` · `christianity` · `client` · `cloudflare` · `confucianism` · `context` · `corpus` · `cost` · `covenant` · `cross` · `css` · `diamond` · `dimension` · `dom` · `emitter` · `examples` · `explainability` · `export` · `factory` · `fallback` · `field` · `github` · `gnosticism` · `gravity` · `guardian` · `hallucination` · `hermeticism` · `hero` · `hinduism` · `hooks` · `id` · `import` · `islam` · `jainism` · `judaism` · `kabbalah` · `key` · `manichaeism` · `media` · `memory` · `mercy` · `merge` · `method` · `modal` · `op` · `orphism` · `orthodoxy` · `paganism` · `pagination` · `plugin` · `pqc` · `prayer` · `primitive` · `propose` · `protestantism` · `provenance` · `provider` · `published` · `purity` · `pwa` · `quantum` · `quantum/boundary` · `readme` · `reality` · `reconciliation` · `reference` · `regeneration` · `registered` · `religion` · `replay` · `research` · `resolve` · `reversibility` · `ritual` · `router` · `seal` · `seed` · `shamanism` · `shareds` · `shia` · `shinto` · `sikhism` · `sin` · `suffering` · `sufism` · `sunni` · `superdense` · `switcher` · `sync` · `taoism` · `teleportation` · `tenant` · `thought` · `timestamp` · `tool` · `topology` · `trading` · `trail` · `types` · `typography` · `validation` · `vedanta` · `wallet` · `wisdom` · `worker` · `zoroastrianism`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- bond degree `289` · analysis neighbors `access` · `accounting` · `agent` · `analytics/max-tamper-cost` · `anchoring` · `animism` · `anyone` · `apply` · `archangel` · `architect` · `archival` · `aura` · `auth` · `authenticated` · `bahai` · `bitemporal` · `bogomilism` · `boundary` · `buddhism` · `by` · `calculator` · `carbon` · `card` · `catholicism` · `chain` · `change` · `chart` · `checker` · `christianity` · `client` · `cloudflare` · `confucianism` · `context` · `corpus` · `cost` · `covenant` · `cross` · `css` · `diamond` · `dimension` · `dom` · `emitter` · `examples` · `explainability` · `export` · `factory` · `fallback` · `field` · `github` · `gnosticism` · `gravity` · `guardian` · `hallucination` · `hermeticism` · `hero` · `hinduism` · `hooks` · `id` · `import` · `islam` · `jainism` · `judaism` · `kabbalah` · `key` · `manichaeism` · `media` · `memory` · `mercy` · `merge` · `method` · `modal` · `op` · `orphism` · `orthodoxy` · `paganism` · `pagination` · `plugin` · `pqc` · `prayer` · `primitive` · `propose` · `protestantism` · `provenance` · `provider` · `published` · `purity` · `pwa` · `quantum` · `quantum/boundary` · `readme` · `reality` · `reconciliation` · `reference` · `regeneration` · `registered` · `religion` · `replay` · `research` · `resolve` · `reversibility` · `ritual` · `router` · `seal` · `secret` · `seed` · `shamanism` · `shareds` · `shia` · `shinto` · `sikhism` · `sin` · `suffering` · `sufism` · `sunni` · `superdense` · `switcher` · `sync` · `taoism` · `teleportation` · `tenant` · `thought` · `timestamp` · `tool` · `topology` · `trading` · `trail` · `types` · `typography` · `validation` · `vedanta` · `wallet` · `wisdom` · `worker` · `zoroastrianism`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -33,18 +36,10 @@
 - links `165` / `166`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `diamond`
-- partition root `5830268b-f259-82cb-9925-4af466b6a40f`
-- bond degree `288`
-- analysis neighbors `133`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `8986c232-8001-8c8e-bce0-1bd91eeab06d` · framed by typography partition `diamond` bonds `288` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9a64bc9-530d-819c-b1cd-398f395eb2ac` · framed by typography partition `diamond` bonds `289` · `pnpm readme` · `pnpm readme:check`</sub>

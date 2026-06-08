@@ -416,8 +416,14 @@ function buildFolderAccounting(fields: FolderAccountingInput): FolderAccounting 
   const debits: StatementLine[] = []
   const credits: StatementLine[] = []
   const post = (debitAccount: string, debit: number, creditAccount: string, credit: number): void => {
-    if (debit > 0) debits.push({ account: debitAccount, amount: debit })
-    if (credit > 0) credits.push({ account: creditAccount, amount: credit })
+    if (debit > 0) {
+      debits.push({ account: debitAccount, amount: debit })
+      credits.push({ account: '[[balance]]', amount: debit })
+    }
+    if (credit > 0) {
+      credits.push({ account: creditAccount, amount: credit })
+      debits.push({ account: '[[balance]]', amount: credit })
+    }
   }
   const codeRequired = fields.code ? 1 : 0
   post('[[asset]]/[[trinity]]/form', fields.form, '[[liability]]/[[trinity]]/form', 1 - fields.form)
@@ -460,19 +466,6 @@ function buildFolderAccounting(fields: FolderAccountingInput): FolderAccounting 
     fields.typography.partitionRoot ? 1 : 0,
     '[[liability]]/[[typography]]/partition',
     fields.typography.partitionRoot ? 0 : 1,
-  )
-  const bondDegree = fields.bondsIn + fields.bondsOut
-  post(
-    '[[asset]]/[[bonds]]/degree',
-    bondDegree,
-    '[[liability]]/[[bonds]]/isolated',
-    bondDegree > 0 ? 0 : 1,
-  )
-  post(
-    '[[asset]]/[[typography]]/neighbors',
-    fields.typography.analysisNeighbors.length,
-    '[[liability]]/[[typography]]/analysis-gap',
-    fields.typography.graphRoot ? 0 : 1,
   )
   const totalDebits = sumAmounts(debits)
   const totalCredits = sumAmounts(credits)
@@ -721,14 +714,6 @@ export function renderFolderReadme(model: FolderReadmeModel): string {
     `- trinity form·code·proof \`${model.form}\`·\`${model.code}\`·\`${model.proof}\``,
     `- links \`${model.linksResolved}\` / \`${model.linksTotal}\``,
     `- folded \`${model.folded ? 1 : 0}\` · escapes \`${model.escapes}\``,
-    '',
-    '## typography graph',
-    '',
-    `- partition \`${model.typography.partition}\``,
-    `- partition root \`${model.typography.partitionRoot || '—'}\``,
-    `- bond degree \`${model.typography.bondDegree}\``,
-    `- analysis neighbors \`${model.typography.analysisNeighbors.length}\``,
-    `- graph root \`${model.typography.graphRoot || '—'}\``,
     '',
     '## [[seal]]',
     '',

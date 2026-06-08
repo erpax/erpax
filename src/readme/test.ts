@@ -32,13 +32,14 @@ import {
 } from '@/readme'
 import { conserves } from '@/conservation'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import { UUID_MATRIX_ROOT } from '@/uuid/matrix'
 
 const FIXED: ReadmeModel = {
   name: 'erpax',
   description: 'a fixed model for the pure render test',
   version: '1.0.0',
   license: 'MIT',
-  corpusRoot: 'ede33b50-988c-8e53-a3fe-04b9aa48796f',
+  corpusRoot: UUID_MATRIX_ROOT,
   atoms: 3,
   bonds: 2,
   skills: 3,
@@ -79,7 +80,7 @@ describe('readme — the README is a diamond', () => {
   it('embeds its own content-uuid in the rendered diamond (the seal)', () => {
     const md = renderReadme(FIXED)
     expect(md).toContain(readmeUuid(FIXED))
-    expect(md).toContain('ede33b50-988c-8e53-a3fe-04b9aa48796f') // the corpus root seal
+    expect(md).toContain(FIXED.corpusRoot) // the corpus root seal (computed matrix root)
   })
 
   it('TYPOGRAPHY = the diamond: facets are the closed horo ring in measure-walk order', () => {

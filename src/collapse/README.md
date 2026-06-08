@@ -2,30 +2,28 @@
 
 # collapse
 
-> atom `collapse` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `collapse` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `10` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `18` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `18` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `collapse` · sub-root `5c3cb38e-0a65-8fb1-a7a5-158f54af9308`
 - bond degree `1616` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `78` / `78`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `collapse`
-- partition root `5c3cb38e-0a65-8fb1-a7a5-158f54af9308`
-- bond degree `1616`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0467ce9b-c433-8e0c-a04d-43e417b3a376` · framed by typography partition `collapse` bonds `1616` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8b7f082d-3714-8a97-af62-c6cf5b4c5c1a` · framed by typography partition `collapse` bonds `1616` · `pnpm readme` · `pnpm readme:check`</sub>

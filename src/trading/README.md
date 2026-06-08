@@ -2,31 +2,30 @@
 
 # trading
 
-> atom `trading` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `trading` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[trinity]]/proof `1` |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `26` |  |
-| [[asset]]/[[typography]]/neighbors `3` |  |
-| Σ `37` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[trinity]]/proof `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `36` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `trading` · sub-root `b0d00b62-7748-8923-8fcf-be00c361b1db`
 - bond degree `43` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +35,10 @@
 - links `35` / `35`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `trading`
-- partition root `b0d00b62-7748-8923-8fcf-be00c361b1db`
-- bond degree `43`
-- analysis neighbors `3`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2c70201a-20e1-8af6-8263-7e04906fb0c4` · framed by typography partition `trading` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2fe2601-e98b-8288-b97e-a9f652504acc` · framed by typography partition `trading` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

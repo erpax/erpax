@@ -2,29 +2,28 @@
 
 # enterprisebudget
 
-> atom `enterprisebudget` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
+> atom `enterprisebudget` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `33` |  |
-| Σ `40` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `40` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `enterprisebudget` · sub-root `5e393942-8f43-8ef6-aaae-72d1e26dfbe5`
 - bond degree `47` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `26` / `26`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `enterprisebudget`
-- partition root `5e393942-8f43-8ef6-aaae-72d1e26dfbe5`
-- bond degree `47`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `79b68ed0-6017-887f-a8ed-98e908029153` · framed by typography partition `enterprisebudget` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ad48de2d-00bc-8734-8503-2b1f89489218` · framed by typography partition `enterprisebudget` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

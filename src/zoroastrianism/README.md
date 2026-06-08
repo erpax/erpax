@@ -2,26 +2,28 @@
 
 # zoroastrianism
 
-> atom `zoroastrianism` · horo `—` `—` · [[balance]] `0` · [[seal]] `0`
+> atom `zoroastrianism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[asset]]/[[boundary]]/barrel `1` | [[liability]]/[[identity]]/uuid `1` |
-| [[asset]]/[[typography]]/partition `1` | [[liability]]/[[bonds]]/isolated `1` |
-| [[asset]]/[[typography]]/neighbors `4` |  |
-| Σ `8` | Σ `4` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `4` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `zoroastrianism` · sub-root `6cf90c29-6e5d-8e42-9379-32b5217adc54`
 - bond degree `28` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -31,18 +33,10 @@
 - links `51` / `51`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `zoroastrianism`
-- partition root `6cf90c29-6e5d-8e42-9379-32b5217adc54`
-- bond degree `28`
-- analysis neighbors `4`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `dbcc78d7-1864-8c27-bf42-7d41819c0f60` · framed by typography partition `zoroastrianism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d6e81fb4-a8b7-8c9d-87de-ffd2350d064d` · framed by typography partition `zoroastrianism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

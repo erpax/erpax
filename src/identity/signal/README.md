@@ -2,30 +2,28 @@
 
 # signal
 
-> atom `identity/signal` · horo `9` `unity` · [[balance]] `0` · [[seal]] `0`
+> atom `identity/signal` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `4` |  |
-| [[asset]]/[[typography]]/neighbors `1` |  |
-| Σ `12` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `12` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `identity` · sub-root `b7e2b408-e05c-80ec-894d-7da74fa699c1`
 - bond degree `67` · analysis neighbors `aura`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -35,18 +33,10 @@
 - links `44` / `44`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `identity`
-- partition root `b7e2b408-e05c-80ec-894d-7da74fa699c1`
-- bond degree `67`
-- analysis neighbors `1`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `46ee3d2e-3de0-8574-acb1-8b995b96d149` · framed by typography partition `identity` bonds `67` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bf73a752-551c-855c-ba76-9f8c1a88bf0a` · framed by typography partition `identity` bonds `67` · `pnpm readme` · `pnpm readme:check`</sub>

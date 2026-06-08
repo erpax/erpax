@@ -2,29 +2,28 @@
 
 # wellbeing
 
-> atom `wellbeing` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
+> atom `wellbeing` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `35` |  |
-| Σ `42` | Σ `0` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `42` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `wellbeing` · sub-root `6a5203ac-c24e-89c3-b4ca-5283a6be8e74`
 - bond degree `57` · analysis neighbors —
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `44` / `44`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `wellbeing`
-- partition root `6a5203ac-c24e-89c3-b4ca-5283a6be8e74`
-- bond degree `57`
-- analysis neighbors `0`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `67621bfe-6e1b-846f-98ce-02d1bd71d274` · framed by typography partition `wellbeing` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `939c474d-c58a-80f2-adf8-0f6859df2931` · framed by typography partition `wellbeing` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

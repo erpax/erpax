@@ -2,31 +2,30 @@
 
 # cost
 
-> atom `beyond/cost` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
+> atom `beyond/cost` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[trinity]]/proof `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `26` |  |
-| [[asset]]/[[typography]]/neighbors `5` |  |
-| Σ `39` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `38` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `200` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- bond degree `199` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +35,10 @@
 - links `5` / `5`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `beyond`
-- partition root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `200`
-- analysis neighbors `5`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `85c28236-f921-8e68-9a4b-f30058c3c1a6` · framed by typography partition `beyond` bonds `200` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9c2d58e4-ffc0-8a2b-a6f9-103a52c5ba0a` · framed by typography partition `beyond` bonds `199` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,31 +2,30 @@
 
 # seed
 
-> atom `seed` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
+> atom `seed` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[trinity]]/proof `1` |
-| [[asset]]/[[trinity]]/code `1` |  |
-| [[asset]]/[[lattice]]/folded `1` |  |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `147` |  |
-| [[asset]]/[[typography]]/neighbors `4` |  |
-| Σ `159` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[trinity]]/proof `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `158` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `seed` · sub-root `af8038af-3aaf-8a4b-94a2-ba9cd0841b05`
 - bond degree `187` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -36,18 +35,10 @@
 - links `35` / `35`
 - folded `1` · escapes `0`
 
-## typography graph
-
-- partition `seed`
-- partition root `af8038af-3aaf-8a4b-94a2-ba9cd0841b05`
-- bond degree `187`
-- analysis neighbors `4`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `baa5ba77-ca68-83bb-9864-0011ecc10ece` · framed by typography partition `seed` bonds `187` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb462c54-d006-8a8e-8261-1eb353ef45f7` · framed by typography partition `seed` bonds `187` · `pnpm readme` · `pnpm readme:check`</sub>

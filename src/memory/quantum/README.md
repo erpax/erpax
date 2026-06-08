@@ -2,29 +2,28 @@
 
 # quantum
 
-> atom `memory/quantum` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
+> atom `memory/quantum` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
-| [[asset]]/[[trinity]]/form `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` |  |
-| [[asset]]/[[horo]]/ring `1` |  |
-| [[asset]]/[[identity]]/uuid `1` |  |
-| [[asset]]/[[boundary]]/barrel `1` |  |
-| [[asset]]/[[typography]]/partition `1` |  |
-| [[asset]]/[[bonds]]/degree `26` |  |
-| [[asset]]/[[typography]]/neighbors `4` |  |
-| Σ `36` | Σ `1` |
+| [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `35` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `memory` · sub-root `c9ecf7d1-ba4a-8450-819b-46a296e7350d`
 - bond degree `150` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
+- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
 
 ## identity
 
@@ -34,18 +33,10 @@
 - links `21` / `21`
 - folded `0` · escapes `0`
 
-## typography graph
-
-- partition `memory`
-- partition root `c9ecf7d1-ba4a-8450-819b-46a296e7350d`
-- bond degree `150`
-- analysis neighbors `4`
-- graph root `8e0333cd-772f-8747-b779-904b57e10b0d`
-
 ## [[seal]]
 
 - `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d3e1f7a5-c24a-8d72-8769-983e4c9ce7c8` · framed by typography partition `memory` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `069ce73a-bed9-8156-b9ac-c009a53178ea` · framed by typography partition `memory` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
