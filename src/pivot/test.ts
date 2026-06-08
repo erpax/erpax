@@ -39,7 +39,6 @@ const synthetic = (overrides: Partial<FolderReadmeModel> & { atomPath: string })
   const bondDegree = overrides.typography?.bondDegree ?? baseTypography.bondDegree
   const horo = overrides.horo ?? 1
   return {
-    atomPath: overrides.atomPath,
     leaf,
     form,
     code,
@@ -58,6 +57,21 @@ const synthetic = (overrides: Partial<FolderReadmeModel> & { atomPath: string })
     standards: [],
     sealed,
     statement: { ...baseStatement, balanced, ...overrides.statement },
+    entropy: {
+      unit: 'eb',
+      gaps: [],
+      seals: [],
+      totalGapEb: 0,
+      totalSealEb: 0,
+      netEntropyEb: 0,
+      sealGapRatio: 0,
+    },
+    quantumThinking: {
+      atomPath: overrides.atomPath,
+      superposition: [],
+      collapse: [],
+      seal: { entryUuids: [], contentUuids: [], pathFollow: false, receipt: false, sealed: true },
+    },
     analytics: {
       bondDegree,
       sealed: sealed ? 1 : 0,
@@ -69,6 +83,7 @@ const synthetic = (overrides: Partial<FolderReadmeModel> & { atomPath: string })
       standardCount: 0,
     },
     ...overrides,
+    atomPath: overrides.atomPath,
   }
 }
 

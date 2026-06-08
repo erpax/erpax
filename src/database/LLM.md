@@ -4,7 +4,7 @@
 # database
 
 path `database` · uuid `f4d0d06c-d9a2-806c-b4a6-afd77a91389b` · diamond `7c93e65f-cd73-8d60-a20f-a8d1233d8f38`
-horo `5` `round` · trinity `1·0·0` · sealed `0`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports deploy·fields·identity·law·recover · exports database · escapes —
 links `6/6` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the schema is generated from config, never hand-authored — migrations are 
 
 ---
 
-<sub>content-uuid `65c030c2-77fb-81fb-b908-8dae50717031` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e824c7ab-b2c6-86f3-a1ba-1b673b93c170` · `pnpm readme` · `pnpm computed:check`</sub>

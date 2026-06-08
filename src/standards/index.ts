@@ -191,3 +191,5 @@ export default createAccountingCollection({
       admin: { description: 'Optional decentralised-identifier URI for the publisher entity (Slice DDDDDD).' } },
   ],
 })
+export { STANDARDS_CATALOGUE, STANDARDS_COUNT } from './catalogue'
+export type { CatalogueEntry } from './catalogue'

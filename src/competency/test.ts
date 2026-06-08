@@ -1,4 +1,6 @@
 import { describe, it, expect } from 'vitest'
+import { isNamedField } from '@/test'
+import type { ArrayField } from 'payload'
 import { competencyLineField } from '@/competency'
 
 // The actor-merge made literal: held vs required are the SAME shape around one
@@ -6,15 +8,17 @@ import { competencyLineField } from '@/competency'
 describe('competency — one competency-line, held or required', () => {
   it('defaults to the held line', () => {
     const f = competencyLineField()
+    if (!isNamedField(f)) throw new Error('named')
     expect(f.name).toBe('competencies')
     expect(f.type).toBe('array')
-    expect(f.label).toBe('Held competencies')
+    expect((f as ArrayField).label).toBe('Held competencies')
   })
 
   it('required mode flips the names + label but keeps the array shape', () => {
     const f = competencyLineField({ mode: 'required' })
+    if (!isNamedField(f)) throw new Error('named')
     expect(f.name).toBe('requiredCompetencies')
-    expect(f.label).toBe('Required competencies')
+    expect((f as ArrayField).label).toBe('Required competencies')
     expect(f.type).toBe('array')
   })
 
@@ -46,8 +50,10 @@ describe('competency — one competency-line, held or required', () => {
 
   it('explicit name + label + description override the defaults', () => {
     const f = competencyLineField({ name: 'skills', label: 'Skills', description: 'desc' })
+    if (!isNamedField(f)) throw new Error('named')
+    const af = f as ArrayField
     expect(f.name).toBe('skills')
-    expect(f.label).toBe('Skills')
+    expect(af.label).toBe('Skills')
     expect((f as { admin?: { description?: string } }).admin?.description).toBe('desc')
   })
 })

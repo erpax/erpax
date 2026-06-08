@@ -2,7 +2,7 @@
 
 # chain
 
-> atom `business/chain` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `business/chain` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,6 +23,30 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:each business chain is encoded ONCE — its steps, standards, and Socratic check live in one registry entry, so a step's `requires` precede it and its producer wiring is the single source of truth for which events fire.`
+- `seal:sealed`
+- `trigger:Use when you need the canonical business-chain barrel — the 15+ registered (collection, action, emitted-event) workflows that map to published process standards (SOX P2P, IFRS-15 over-time, IFRS-16 lease cycle), each encoded ONCE with its Socratic check, plus the runner, context, and producer auto-wiring.`
+- `trigger:each business chain is encoded ONCE — its steps, standards, and Socratic check live in one registry entry, so a step's `requires` precede it and its producer wiring is the single source of truth for which events fire.`
+- `trigger:matter-twin:src/business/chain/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `7825cca0-662e-8934-a656-58f2edcf165f` · `7d8b51e5-6bb2-8657-ad35-af22bd21ddbb`
+- content uuids `46b8400c-043f-8aab-8322-ccf1af3217c4` · `b46d9c85-ee50-8360-b664-5c79bc5653d6` · `f0056657-6bc3-8233-a6a4-261d9a36fab8`
+
 ## [[entropy]] — gaps · seals
 
 > account code `business/chain` · currency `eb` (entropy-bit)
@@ -36,7 +60,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
@@ -44,15 +68,15 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `1` eb | Σ seal `13.085` eb |
+| Σ gap `1` eb | Σ seal `12.985` eb |
 
-> net residual `-12.085` eb · seal/gap ratio `13.085` · [[entropy]] · [[seal]]
+> net residual `-11.985` eb · seal/gap ratio `12.985` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `business` · sub-root `1a7bf3a6-7f2f-8956-9614-15052c7ef1a0`
 - bond degree `12` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -97,19 +121,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·5 | 1 | 100 |
+| ring·4 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `5`
+- bond degree `12` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `61d97984-1155-8640-9576-60c39d8687d4`
+- uuid `46b8400c-043f-8aab-8322-ccf1af3217c4`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
@@ -121,4 +145,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `5d33d88a-e80e-88e5-ad56-237b50848653` · framed by typography partition `business` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `245a980e-57e0-8392-a165-07329d7e771f` · framed by typography partition `business` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

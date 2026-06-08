@@ -23,7 +23,7 @@ describe('team — hub re-exports agent algebra', () => {
       ),
       TENANT,
     )
-    expect(teamSkills(tribe).sort()).toEqual(['localize', 'matrix'])
+    expect([...teamSkills(tribe)].sort()).toEqual(['localize', 'matrix'])
     expect(tribe.members.every((m) => m.skills.includes('localize') && m.skills.includes('matrix'))).toBe(true)
     expect(teamUuid(tribe, TENANT)).toMatch(/^[0-9a-f-]{36}$/)
   })

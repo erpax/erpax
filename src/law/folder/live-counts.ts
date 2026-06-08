@@ -19,6 +19,16 @@ import { wordFolderViolations, wordDiamondViolations } from './word'
 import type { RatchetAxis } from './baseline-types'
 import { RATCHET_AXES } from './ratchet-math'
 
+/** Axes wired through leaf scan imports (scan · tightened-scans · tamper/import · word/links). */
+export const PARALLEL_SCAN_AXES = RATCHET_AXES.filter(
+  (axis): axis is RatchetAxis =>
+    axis !== 'word-matter' &&
+    axis !== 'matrix-crack' &&
+    axis !== 'logic-concentration' &&
+    axis !== 'word-without-code' &&
+    axis !== 'word-without-logic',
+)
+
 /** Scan live corpus — one count per gate axis. */
 export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Record<RatchetAxis, number>> {
   const folder = folderViolations(join(cwd, 'src'))

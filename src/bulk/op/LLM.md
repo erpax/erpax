@@ -3,7 +3,7 @@
 
 # op
 
-path `bulk/op` · uuid `6911cde0-37d9-8970-8c9c-af48bebc230f` · diamond `882ec2bc-dbe5-8ff7-94c7-dff10b806fc2`
+path `bulk/op` · uuid `dc27f972-5bc3-85d2-be6d-c96a07d6c1b4` · diamond `5ae7c0ae-0490-8198-8369-566c41a3c62a`
 horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth · exports BulkFormat·BulkOperationKind·async·interface·map · escapes —
 links `3/3` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law every bulk import/export flows through one contract — audited up front, id
 
 ---
 
-<sub>content-uuid `8010aa98-323f-8f95-8342-e58568150965` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a50d2017-a530-8f95-8fd6-c9068117fef8` · `pnpm readme` · `pnpm computed:check`</sub>

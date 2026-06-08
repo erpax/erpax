@@ -126,7 +126,7 @@ const workerRoots = (): ReadonlySet<string> => {
   const roots = new Set<string>()
   const src = join(process.cwd(), 'src')
   for (const n of UUID_MATRIX_NODES) {
-    const paths: string[] = n.path ? [n.path] : [...(n.members ?? [])]
+    const paths: string[] = n.path ? [n.path] : []
     for (const p of paths) {
       if (p.includes('/')) continue
       try {

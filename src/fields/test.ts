@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { isNamedField } from '@/test'
 import {
   currencyField,
   amountField,
@@ -39,12 +40,17 @@ describe('fields — schema = UI from one definition', () => {
   describe('currencyField', () => {
     it('defaults name to "currency" and is a text field', () => {
       const f = currencyField()
+      if (!isNamedField(f)) throw new Error('named field')
       expect(f.name).toBe('currency')
       expect(f.type).toBe('text')
     })
 
     it('honours a custom name (FX-pair fields)', () => {
-      expect(currencyField({ name: 'fromCurrency' }).name).toBe('fromCurrency')
+      {
+      const fx = currencyField({ name: 'fromCurrency' })
+      if (!isNamedField(fx)) throw new Error('named field')
+      expect(fx.name).toBe('fromCurrency')
+    }
     })
 
     it('validate accepts a valid ISO 4217 code and rejects garbage', () => {
@@ -86,6 +92,7 @@ describe('fields — schema = UI from one definition', () => {
   })
 
   it('codeField is a required, unique, indexed text field', () => {
+    if (!isNamedField(codeField)) throw new Error('named field')
     expect(codeField.name).toBe('code')
     expect(codeField.type).toBe('text')
     expect((codeField as any).required).toBe(true)

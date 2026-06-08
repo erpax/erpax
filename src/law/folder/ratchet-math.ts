@@ -45,7 +45,7 @@ export const AXIS_HORO: Readonly<Record<RatchetAxis, HoroStep>> = {
   'logic-concentration': 7,
   'word-matter': 5,
   'word-without-code': 2,
-  'word-without-logic': 3,
+  'word-without-logic': 2,
   'word-incomplete-diamond': 1,
   'matrix-crack': 8,
 }

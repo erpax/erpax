@@ -3,8 +3,8 @@
 
 # reciprocal
 
-path `convention/reciprocal` · uuid `8035b848-6c49-8d6e-9e7f-eb83562adc28` · diamond `3303357d-9c48-894a-9c1a-9ff1e1bcaf49`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `convention/reciprocal` · uuid `e292a473-56d8-8608-a43a-ad11731b7bb4` · diamond `dca159d0-0022-8b06-8b02-57f4d1af9b33`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·function·interface · escapes —
 links `14/14` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every directed edge f→t is reciprocated by t→f (symmetric entanglement);
 
 ---
 
-<sub>content-uuid `51afcd62-8399-8b4c-8fcf-f673ec91aa66` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `78b09cb3-5909-8127-ba75-f925d0e5806a` · `pnpm readme` · `pnpm computed:check`</sub>

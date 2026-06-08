@@ -3,15 +3,15 @@
 
 # types
 
-path `config/types` · uuid `38c73c81-b5ec-858a-a7e0-70fc75fb5b83` · diamond `6f9ce139-488a-86d2-8795-decff0426986`
-horo `9` `unity` · trinity `1·1·1` · sealed `0`
+path `config/types` · uuid `65cd7adc-ceb9-848d-89e1-178b4854cb8e` · diamond `221aed33-6b95-8b49-8de8-efa8001c492e`
+horo `3` `3` · trinity `1·1·1` · sealed `0`
 imports — · exports FeatureLimit·FeatureLimits·interface · escapes —
 links `3/3` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
 neighbors → chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
-analysis agent
+analysis agent·diamond·hallucination·purity
 law a tenant's entire business surface (branding, model, plans, marketing, flags, localization) is one agnostic typed seed — `TenantConfig` — so onboarding a tenant is authoring one conforming object, never editing code.
 
 ---
 
-<sub>content-uuid `0c76223c-4d32-8e5f-913a-04d3eeb1e0ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42ab8bf5-6a2b-8287-8f70-64407efa6714` · `pnpm readme` · `pnpm computed:check`</sub>

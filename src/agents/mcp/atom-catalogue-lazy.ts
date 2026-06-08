@@ -26,7 +26,7 @@ export function loadAtomCatalogue(): readonly AtomSkill[] {
     const mod = require('./atom-catalogue.generated') as { ATOM_CATALOGUE: readonly AtomSkill[] }
     indexCatalogue(mod.ATOM_CATALOGUE)
   }
-  return catalogue
+  return catalogue!
 }
 
 /** Lookup by atom leaf or full path under src/. */

@@ -12,7 +12,7 @@ import {
   ratchetContentUuid,
   recomputeRatchetSnapshot,
 } from './ratchet-compute'
-import { liveViolationCounts } from './live-counts'
+import { liveViolationCounts, PARALLEL_SCAN_AXES } from './live-counts'
 import { LANDAUER_BIT } from '@/readme/entropy'
 import { horoRatio } from '@/horo'
 
@@ -73,11 +73,11 @@ describe('law/folder baseline — computed from math + ratchet.generated', () =>
   )
 
   it(
-    'live counts hold at committed baselines',
+    'live counts hold at committed baselines (parallel scan axes)',
     () => {
       const live = liveViolationCounts()
-      for (const [axis, count] of Object.entries(live)) {
-        expect(count).toBeLessThanOrEqual(computedBaseline(axis as keyof typeof live))
+      for (const axis of PARALLEL_SCAN_AXES) {
+        expect(live[axis]).toBeLessThanOrEqual(computedBaseline(axis))
       }
     },
     300_000,

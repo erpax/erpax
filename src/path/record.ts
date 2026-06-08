@@ -49,7 +49,7 @@ export const pathCanonicalEnvelope = (args: {
   readonly seq?: number
 }): PathCanonicalEnvelope => {
   const atomPath = normalizeAtomPath(args.atomPath)
-  const payloadUuid = uuid(jcsCanonicalize(stripNonContentFields(args.payload)))
+  const payloadUuid = uuid(jcsCanonicalize(stripNonContentFields(args.payload as Record<string, unknown>)))
   return {
     kind: PATH_CANONICAL_KIND,
     atomPath,

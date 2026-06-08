@@ -2,9 +2,11 @@
 
 # types
 
-> atom `config/types` · horo `9` `unity` · [[balance]] `1` · [[seal]] `0`
+> atom `config/types` · horo `3` `3` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `config/types` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,66 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:agent`
+- `explore:diamond`
+- `explore:hallucination`
+- `explore:purity`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a tenant's entire business surface (branding, model, plans, marketing, flags, localization) is one agnostic typed seed — `TenantConfig` — so onboarding a tenant is authoring one conforming object, never editing code.`
+- `seal:unsealed`
+- `trigger:BCP-47 language-tag`
+- `trigger:ISO-4217:2015 currency-codes`
+- `trigger:Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers.`
+- `trigger:a tenant's entire business surface (branding, model, plans, marketing, flags, localization) is one agnostic typed seed — `TenantConfig` — so onboarding a tenant is authoring one conforming object, never editing code.`
+- `trigger:matter-twin:src/config/types/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `53badf07-0ed6-8180-a7a2-3a12a8d7ac8b` · `8cabfb37-725a-8a96-8686-a509c5d8c50e` · `bb5c0abb-df82-8b06-a325-849e87bfd047`
+- content uuids `039ee484-5666-832d-b6a3-670c46ccb77c` · `344bb5a1-5aaa-8656-9a62-714a65d5c7b8` · `bdd9a303-3916-815e-9658-c009767d8014`
+
+## [[entropy]] — gaps · seals
+
+> account code `config/types` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `12` eb |
+
+> net residual `-10` eb · seal/gap ratio `6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `config` · sub-root `c9f7efd9-b1c7-84e6-886d-4c6b7e88b2c1`
-- bond degree `66` · analysis neighbors `agent`
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- partition `config` · sub-root `0b6985b1-5568-805f-b300-f4c3b8434c44`
+- bond degree `69` · analysis neighbors `agent` · `diamond` · `hallucination` · `purity`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -78,19 +135,19 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·9 | 1 | 100 |
+| off-ring·3 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `66` · sealed `0` · horo `9`
+- bond degree `69` · sealed `0` · horo `3`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `10`
 
 ## identity
 
-- uuid `38c73c81-b5ec-858a-a7e0-70fc75fb5b83`
+- uuid `65cd7adc-ceb9-848d-89e1-178b4854cb8e`
 - bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
@@ -102,4 +159,4 @@
 
 ---
 
-<sub>content-uuid `6b41e6bb-a9cf-81c2-8269-290645af4b45` · framed by typography partition `config` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94678406-7ebb-8885-8696-cb27da68a063` · framed by typography partition `config` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>

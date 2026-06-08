@@ -2,7 +2,7 @@
 
 # store
 
-> atom `computer/store` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
+> atom `computer/store` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -13,7 +13,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -21,7 +21,7 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## quantum thinking
 
@@ -30,26 +30,18 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 
 ### superposition
 
-- `explore:diamond`
-- `explore:hallucination`
-- `explore:purity`
-- `gap:ancestor:[[gap]]/[[path]]/ancestor`
-- `gap:unfolded:[[gap]]/[[lattice]]/unfolded`
+- `dispatch:eb=1.585`
 
 ### collapse
 
-- `balance:variance=1`
-- `law:computer/store names store under computer — one word, content-addressed, nested not duplicated.`
-- `seal:unsealed`
-- `trigger:Use when reasoning about store as a hardware facet of [[computer]] — vocabulary pivot to @/store; nested not duplicated.`
-- `trigger:computer/store names store under computer — one word, content-addressed, nested not duplicated.`
-- `trigger:schema.org — the type vocabulary, collided to single words`
+- `balance:conserved`
+- `seal:sealed`
 
 ### seal
 
-- path follow `0` · receipt `1` · sealed `0`
-- entry uuids `e91dd287-f811-8580-8792-4f59bab7ecda` · `f5a34c0a-a0e7-8f1c-86e9-af6dc0975951`
-- content uuids `18013e0f-b405-8c9e-84fc-28cc357bb8f3` · `358a7a5a-4e0f-8c13-9671-49b70f4d603f`
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `56c5c066-f824-82d0-9936-70187fe2b64f`
+- content uuids `31958bc0-cabe-841a-af36-ab511d4c4712` · `aac5f350-d8a9-8413-a284-12169ff39ff7`
 
 ## [[entropy]] — gaps · seals
 
@@ -59,25 +51,28 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | [[gap]] debit (eb) | [[seal]] credit (eb) |
 | -----------------: | -------------------: |
-| [[gap]]/[[lattice]]/unfolded `2` eb | [[seal]]/[[trinity]]/form `1` eb |
-| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
 |  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `3` eb | Σ seal `9.1` eb |
+| Σ gap `0` eb | Σ seal `12.985` eb |
 
-> net residual `-6.1` eb · seal/gap ratio `3.033` · [[entropy]] · [[seal]]
+> net residual `-12.985` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `computer` · sub-root `2a12ac7e-c64f-86aa-8eef-26512ef88f43`
-- bond degree `149` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `18ba71ef-f698-8bfa-ab3f-a1f658df4222`
+- partition `computer` · sub-root `ae89383c-e32a-8ff7-a09c-469186a7d317`
+- bond degree `148` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -93,14 +88,14 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unsealed | 1 | 100 |
+| sealed | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[balance]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unbalanced | 1 | 100 |
+| balanced | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[gravity]]
@@ -121,28 +116,28 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·1 | 1 | 100 |
+| ring·4 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `149` · sealed `0` · horo `1`
-- variance `1` · balanced `0` · trinity sum `3`
+- bond degree `148` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `287e5351-298a-8ac1-93b9-9e6f9bbe9482`
-- bonds in `36` · out `36`
+- uuid `31958bc0-cabe-841a-af36-ab511d4c4712`
+- bonds in `37` · out `37`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2d67825c-c5c9-851a-a870-c3ed86e032d6` · framed by typography partition `computer` bonds `149` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `40ea54a1-c10e-8faa-9ff1-5d43109c1819` · framed by typography partition `computer` bonds `148` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -27,7 +27,7 @@ describe('authenticated', () => {
   })
 
   it('grants authenticated callers (user present)', () => {
-    expect(authenticated(args({ id: 1, email: 'ceci@psg.bg' }))).toBe(true)
+    expect(authenticated(args({ id: '1', email: 'ceci@psg.bg' }))).toBe(true)
   })
 
   it('declares access, identity and authentication controls', () => {

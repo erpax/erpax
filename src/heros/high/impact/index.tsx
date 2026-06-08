@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import type { Page } from '@/types'
 
 import { CMSLink } from '@/link/component'
-import { Media } from '@/media'
+import { MediaComponent as Media } from '@/media'
 import RichText from '@/rich/text'
 
 export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {

@@ -3,8 +3,8 @@
 
 # quantum
 
-path `quantum` · uuid `182aa43b-a0af-8c76-9404-1e38d741f7c7` · diamond `c861208f-f8d5-89d4-a4c3-fb32aea91950`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `quantum` · uuid `7f14aab8-a353-8cec-9b7f-1f12707a9931` · diamond `cdd3e331-4446-8a71-8a0e-496720840686`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/cost·@/digit·@/uuid/matrix · exports DIMENSION_ATOM_PATHS·PARTITION2D_SAMPLES·appendDimensionToLog·architectureBits·architectureBond·architectureBondStable·architectureFoldPaths·architectureMask·basis2D·buildDimensionSnapshot·cell2DKey·collapse2D·collapseDimensionState·combineArchitectures·const·dimensionLogAdvance·dimensionRealtimeEmit·dimensionSessionUuid·dimensionSnapshotFingerprint·dimensionWaveCorrelationUuid·doubleArchitectureBits·function·interact64·probabilities2D·quantum2dHolds·quantumInAllDimensions·recordArchitectureFoldOnPath·recordWordOnPath·seal2D·superpose2D·total2D·type·uniform2D·wordAddress · escapes —
 links `74/74` · folded `1` · bonds in `128` out `128`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law readme generation loads agent thinking and transforms to quantum inline — 
 
 ---
 
-<sub>content-uuid `9716da65-5aef-8731-b3c1-e59025de9b54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `394dbcd8-6e55-8166-baef-85755e166e01` · `pnpm readme` · `pnpm computed:check`</sub>

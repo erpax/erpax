@@ -3,8 +3,8 @@
 
 # exported
 
-path `convention/exported` · uuid `f60cba62-9b32-89ab-993f-cf0f7bfe6066` · diamond `eed5478d-39ed-8f11-8687-033c0d1f9ceb`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `convention/exported` · uuid `b42ef380-2580-8967-a643-61d21d22d4c8` · diamond `8ecf23e2-fb62-8036-b0b2-16748cce199d`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collider·cost·duality·fronted·import·law·named·shallow·tamper · exports exported · escapes —
 links `16/16` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every cross-atom symbol is re-exported from its atom's index (its one public
 
 ---
 
-<sub>content-uuid `87adf4a2-d4fc-8ced-8418-ecfea0b87b61` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19c41212-6d6b-84af-999e-772db75588be` · `pnpm readme` · `pnpm computed:check`</sub>

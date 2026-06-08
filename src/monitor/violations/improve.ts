@@ -14,7 +14,7 @@ import { postSealOnPath } from '@/accounting'
 import { jcsCanonicalize, uuid } from '@/integrity'
 import { recordPathVisit, recordOnPath, type PathCanonicalEntry } from '@/path'
 import { pivotIndexTsWithReexport } from '@/law/folder/word'
-import { materializeComputedFacesForPaths } from '@/readme'
+import { materializeComputedFacesForPathsStable } from '@/readme'
 import { issueReceipt, type Receipt } from '@/receipt'
 import { maxWorkTamperPolicy, tamperCostForImproveReceipt } from '@/wave'
 import type { ViolationEvent, ViolationSource } from './index'
@@ -413,7 +413,7 @@ export function improveInRealtime(
       applied = true
     }
     if (applied && !dryRun) {
-      materializeComputedFacesForPaths([atomPath], cwd)
+      materializeComputedFacesForPathsStable([atomPath], cwd)
     }
   } else if (violation.source === 'entanglement' && atomPath === 'matrix') {
     action = 'matrix-fold-batch'
@@ -426,7 +426,7 @@ export function improveInRealtime(
   } else {
     action = 'regen-computed-faces'
     if (!dryRun && existsSync(join(dir, 'SKILL.md'))) {
-      materializeComputedFacesForPaths([atomPath], cwd)
+      materializeComputedFacesForPathsStable([atomPath], cwd)
       applied = true
     } else if (dryRun) {
       applied = true

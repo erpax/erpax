@@ -126,7 +126,7 @@ function patchEntangledFieldComponents(
         },
       },
     }
-  })
+  }) as Field[]
 }
 
 function prependListColumns(collection: CollectionConfig): string[] {

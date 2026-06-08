@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `consent/records` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,57 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `19738e0e-e80d-8e13-acfa-9f98bf4b462e` · `690fbc5f-228b-8e5d-9927-bfef8f046ada`
+- content uuids `651b7b9c-d936-86d2-9746-3dc63c654b2f` · `eadf26cd-6f9d-83d2-aba3-93bd443dd183` · `eef7d013-b0d5-8450-9494-0f234afecf82`
+
+## [[entropy]] — gaps · seals
+
+> account code `consent/records` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `12.685` eb |
+
+> net residual `-11.685` eb · seal/gap ratio `12.685` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `consent` · sub-root `7c22d3b5-965f-8422-a252-1ed40f2b4723`
+- partition `consent` · sub-root `cff5649a-1996-8892-a187-c7668ab03714`
 - bond degree `30` · analysis neighbors —
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -36,7 +84,6 @@
 - `GDPR Art.6(1)(a) lawful-basis-consent` · banner
 - `GDPR Art.7 conditions-for-consent` · banner
 - `GDPR Art.7(3) right-to-withdraw-consent` · banner
-- `ISO-19011:2018 audit-trail consent-evidence` · banner
 - `ISO-27701:2019 §6.3.1.4 record-of-consent` · banner
 - `ISO-8601-1:2019 date-time given-at withdrawn-at` · banner
 
@@ -82,11 +129,11 @@
 
 - bond degree `30` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `6`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `30f1204c-0a78-89f3-8d09-69ef49907f3d`
+- uuid `eadf26cd-6f9d-83d2-aba3-93bd443dd183`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -98,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `2272d60d-6e9b-8e8e-8139-617dccee7983` · framed by typography partition `consent` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `afd5f473-4ebf-83da-bdc2-87e4b4dd68dc` · framed by typography partition `consent` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

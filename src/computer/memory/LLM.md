@@ -3,15 +3,15 @@
 
 # memory
 
-path `computer/memory` · uuid `bccc2418-3d82-861b-8e56-1dd78588557d` · diamond `7fdf2b8c-e9f8-8488-ab8e-2750a4e5f16f`
+path `computer/memory` · uuid `bccc2418-3d82-861b-8e56-1dd78588557d` · diamond `51fe1b77-64bb-812b-a127-730beda14aba`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
-imports @/memory/quantum · exports allocateMemory·dedupHolds · escapes —
+imports @/memory/quantum·@/path·@/readme · exports allocateMemory·dedupHolds·function·interface · escapes —
 links `4/4` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
 neighbors → akashic·architecture·collapse·computer·diamond·law·memory·memory·merge·quantum·quantum·requirements·seal·session·sti·sync·thought·uuid · ← akashic·architecture·collapse·computer·diamond·law·memory·memory·merge·quantum·quantum·requirements·seal·session·sti·sync·thought·uuid
 analysis diamond·hallucination·purity
-law computer/memory names memory as a part of the machine — one word, content-addressed, nested not duplicated.
+law computer/memory is executable working memory — quantum dedup plus bounded address cells, not glossary prose.
 
 ---
 
-<sub>content-uuid `d4be8edb-67c2-8bb4-bdb7-c0ae7acf2b2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `29022347-0b33-822b-a899-ee3ac16af4c1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -57,7 +57,7 @@ export const CORPUS_ENTROPY_SOURCE_EVENT_PREFIX = 'corpus-entropy' as const
 export interface CorpusJournalLine {
   readonly lineNumber: number
   readonly accountCode: string
-  readonly accountType: 'asset' | 'liability' | 'equity' | 'expense'
+  readonly accountType: 'asset' | 'liability' | 'equity' | 'income' | 'expense' | 'cogs'
   readonly description: string
   readonly debit: number
   readonly credit: number

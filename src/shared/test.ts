@@ -17,25 +17,23 @@ import {
 // real field shapes + the runtime validators each factory wires (ISO-4217
 // currency, ISO-4217 decimal places, the XXX blank identity, etc.).
 
-// A field validate fn from Payload has a wide signature; we only exercise the
-// value arg, so call it through a narrow local type.
-type Validator = (value: unknown) => true | string
-const validatorOf = (f: { validate?: unknown }): Validator => {
-  const v = f.validate
-  if (typeof v !== 'function') throw new Error('expected a validate function')
-  return (value: unknown) => (v as (val: unknown) => true | string)(value)
+import { isNamedField, fieldWithValidate, validatorOf } from '@/test'
+
+const named = (f: ReturnType<typeof currencyField>) => {
+  if (!isNamedField(f)) throw new Error('expected named field')
+  return f
 }
 
 describe('shared — reusable Payload Field factories', () => {
   it('currencyField defaults to the canonical DEFAULT_CURRENCY on the `currency` name', () => {
-    const f = currencyField()
+    const f = named(currencyField())
     expect(f.name).toBe('currency')
     expect(f.type).toBe('text')
     expect((f as { defaultValue?: string }).defaultValue).toBe(DEFAULT_CURRENCY)
   })
 
   it('currencyField validate accepts valid ISO 4217, rejects junk, allows empty', () => {
-    const v = validatorOf(currencyField())
+    const v = validatorOf(fieldWithValidate(currencyField()))
     expect(v('EUR')).toBe(true)
     expect(v('USD')).toBe(true)
     expect(v('')).toBe(true) // empty round-trips
@@ -48,18 +46,18 @@ describe('shared — reusable Payload Field factories', () => {
   it('currencyField allowBlank admits the ISO 4217 XXX identity and forces required off', () => {
     const f = currencyField({ allowBlank: true, required: true })
     expect((f as { required?: boolean }).required).toBeUndefined()
-    expect(validatorOf(f)('XXX')).toBe(true)
+    expect(validatorOf(fieldWithValidate(f))('XXX')).toBe(true)
   })
 
   it('currencyField custom name supports FX-pair fields', () => {
-    expect(currencyField({ name: 'fromCurrency' }).name).toBe('fromCurrency')
+    expect(named(currencyField({ name: 'fromCurrency' })).name).toBe('fromCurrency')
   })
 
   it('amountField enforces ISO 4217 decimal-place precision', () => {
-    const v = validatorOf(amountField())
+    const v = validatorOf(fieldWithValidate(amountField()))
     expect(v(10.99)).toBe(true)
     expect(v(10.999)).not.toBe(true) // 3 dp > default 2
-    const v0 = validatorOf(amountField('Qty', 0))
+    const v0 = validatorOf(fieldWithValidate(amountField('Qty', 0)))
     expect(v0(5)).toBe(true)
     expect(v0(5.1)).not.toBe(true)
   })
@@ -72,7 +70,7 @@ describe('shared — reusable Payload Field factories', () => {
   })
 
   it('codeField is a unique indexed required text identifier', () => {
-    expect(codeField.name).toBe('code')
+    expect(named(codeField).name).toBe('code')
     expect((codeField as { unique?: boolean }).unique).toBe(true)
     expect((codeField as { index?: boolean }).index).toBe(true)
     expect((codeField as { required?: boolean }).required).toBe(true)
@@ -104,16 +102,16 @@ describe('shared — reusable Payload Field factories', () => {
   })
 
   it('referenceField defaults to a unique indexed required `reference`', () => {
-    const f = referenceField()
+    const f = named(referenceField())
     expect(f.name).toBe('reference')
     expect((f as { unique?: boolean }).unique).toBe(true)
     expect((f as { required?: boolean }).required).toBe(true)
-    expect(referenceField({ name: 'invoiceNo', required: false }).name).toBe('invoiceNo')
+    expect(named(referenceField({ name: 'invoiceNo', required: false })).name).toBe('invoiceNo')
     expect((referenceField({ required: false }) as { required?: boolean }).required).toBe(false)
   })
 
   it('countryCodeField is an indexed text code; legalEntityField relates to legal-entities', () => {
-    const cc = countryCodeField()
+    const cc = named(countryCodeField())
     expect(cc.name).toBe('countryCode')
     expect((cc as { index?: boolean }).index).toBe(true)
     const le = legalEntityField({ required: true })

@@ -3,8 +3,8 @@
 
 # amortize
 
-path `calculate/amortize` · uuid `44dbc87b-78a6-8275-8c6e-cd6a2f997133` · diamond `c49bfb7a-a987-84c1-a08b-f008f6b13d19`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `calculate/amortize` · uuid `96d5476e-d022-8d50-bc58-32d5e054ebe3` · diamond `0c0a51f8-a0c8-821a-9ea6-576ad2c73ccf`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·calculate·currency·port · exports amortize · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `bf83ae8c-634a-8709-81b3-bdd6644475d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `79b316e0-7fee-8e78-9d27-c5e55d0e0b9c` · `pnpm readme` · `pnpm computed:check`</sub>

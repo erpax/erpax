@@ -3,8 +3,8 @@
 
 # named
 
-path `convention/named` · uuid `a5a8d0a6-f51e-8ca1-9e9b-a8cf0ee2a754` · diamond `8fbd19d5-0a1e-8e33-a8bc-4abf8a50c40e`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `convention/named` · uuid `a226273b-a101-8c37-b288-de2a621dbddc` · diamond `52d94655-1d6b-86cc-bc82-683ca90b2acf`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/corpus · exports function·interface · escapes —
 links `13/13` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the frontmatter name is the path — every atom's `name` equals its folder l
 
 ---
 
-<sub>content-uuid `684cb8e0-14c8-8d72-a350-186a2372834e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86f629e0-510f-8787-bebc-75b420cd1842` · `pnpm readme` · `pnpm computed:check`</sub>

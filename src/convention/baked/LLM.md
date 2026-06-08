@@ -3,15 +3,15 @@
 
 # baked
 
-path `convention/baked` · uuid `4d0abb6c-9ecc-8655-b393-9e569b68339e` · diamond `7990de69-0e3e-8adf-ba74-e763cdfa5861`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `convention/baked` · uuid `43bf40e3-3038-8cf5-94e3-a3388986085d` · diamond `4641de89-9928-8a0a-b4a5-54a08be181c4`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports akashic·cost·fresh·law·skill·tamper · exports baked · escapes —
-links `12/12` · folded `1` · bonds in `6` out `6`
+links `12/12` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·cost·fresh·law·skill·tamper · ← akashic·cost·fresh·law·skill·tamper
+neighbors → agent·akashic·cost·fresh·law·skill·tamper · ← agent·akashic·cost·fresh·law·skill·tamper
 analysis —
 law any artifact fully derivable from src is gitignored and regenerated at build, never committed — a stored derivable is a second copy of the [[akashic]] source that can drift, stored entropy that lowers tamper-cost. The tree is the one truth; each bundle is a content-uuid projection regenerated deterministically.
 
 ---
 
-<sub>content-uuid `99188ae6-d4ec-83a1-932e-355438844a8e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eaf80970-263b-86f3-b28f-716c511f8d8a` · `pnpm readme` · `pnpm computed:check`</sub>

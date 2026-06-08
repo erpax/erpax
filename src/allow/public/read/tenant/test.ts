@@ -42,7 +42,9 @@ describe('allow/public/read/tenant', () => {
     const { payload, find } = stubPayload({ docs: [] })
     await getAllowPublicReadTenantIds(payload)
     expect(find).toHaveBeenCalledTimes(1)
-    const arg = find.mock.calls[0][0] as { collection: string; where: unknown }
+    const calls = find.mock.calls as unknown as Array<[{ collection: string; where: unknown }]>
+    expect(calls.length).toBeGreaterThan(0)
+    const arg = calls[0][0]
     expect(arg.collection).toBe('tenants')
     expect(arg.where).toEqual({ allowPublicRead: { equals: true } })
   })

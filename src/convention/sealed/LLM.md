@@ -3,8 +3,8 @@
 
 # sealed
 
-path `convention/sealed` · uuid `f7bf6b1c-96d2-8a76-81d7-d43c93ee4590` · diamond `eb58b177-b710-8db6-a0f4-deb43ce4da4c`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `convention/sealed` · uuid `8873e75d-0265-8e47-a64e-d2a91e522591` · diamond `8c5db77c-65c8-8cd7-94b5-a577195ec59b`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports function · escapes —
 links `7/7` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law entropy leaves through error handling — a swallowed (empty catch) or defau
 
 ---
 
-<sub>content-uuid `7d99764a-8a92-842c-ab09-f47bf73b4bb2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b5f2e43-7242-84b1-9767-53a84b494b83` · `pnpm readme` · `pnpm computed:check`</sub>

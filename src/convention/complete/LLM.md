@@ -3,8 +3,8 @@
 
 # complete
 
-path `convention/complete` · uuid `f57f2c6a-a5a2-837a-a895-5bdb0665f946` · diamond `d75b273c-637f-844e-8a58-26572267cf54`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `convention/complete` · uuid `d3ced307-15f9-89e9-b5f9-206d70eb9601` · diamond `17d5dc6c-6f09-862d-8038-4705430196b5`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function · escapes —
 links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an atom is the trinity {SKILL.md, index.ts, test.ts}; the corpus is complete
 
 ---
 
-<sub>content-uuid `362fb813-8e1c-8806-a214-d42695cea941` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5952618-56f7-8196-905b-f29f666d9574` · `pnpm readme` · `pnpm computed:check`</sub>

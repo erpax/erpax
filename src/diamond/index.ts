@@ -31,8 +31,10 @@ import {
   deriveFolderModel,
   buildFolderReadmeContext,
   buildReadmeTypographyGraph,
+  type FolderReadmeContext,
   type FolderReadmeModel,
 } from '@/readme'
+import type { AnalysisTypographyGraph } from '@/typography/analysis-graph'
 import { methodPath, atomPathOf, parseMethodExports, type MethodDiamond } from '@/method'
 import { computeBoundary, type FileBoundary } from '@/quantum/boundary'
 import { linksOf } from '@/typography'
@@ -115,7 +117,14 @@ export interface CloudflareComputeInput {
 
 /** Unified input to the canonical diamond pipeline — one shape, all scales. */
 export type DiamondInput =
-  | { readonly kind: 'path'; readonly path: string; readonly cwd?: string }
+  | {
+      readonly kind: 'path'
+      readonly path: string
+      readonly cwd?: string
+      /** Frozen readme typography graph — same snapshot as deriveFolderModel / verify. */
+      readonly graph?: AnalysisTypographyGraph
+      readonly ctx?: FolderReadmeContext
+    }
   | { readonly kind: 'collection'; readonly opts: CollectionDiamondInput; readonly cwd?: string }
   | { readonly kind: 'method'; readonly file: string; readonly symbol: string }
   | { readonly kind: 'cloudflare'; readonly binding: CloudflareComputeInput }
@@ -277,12 +286,13 @@ function computeAtomPipeline(
   cwd: string,
   pathInput: string,
   stages: DiamondComputationStage[],
+  frozen?: { readonly graph: AnalysisTypographyGraph; readonly ctx: FolderReadmeContext },
 ): { folder: FolderReadmeModel; boundary?: FileBoundary; links: readonly string[] } {
   pushStage(stages, 'path', { path: pathInput }, { atomPath })
 
   const srcRoot = join(cwd, SRC)
-  const ctx = buildFolderReadmeContext(srcRoot)
-  const graph = buildReadmeTypographyGraph(cwd)
+  const ctx = frozen?.ctx ?? buildFolderReadmeContext(srcRoot)
+  const graph = frozen?.graph ?? buildReadmeTypographyGraph(cwd)
   const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
 
   pushStage(stages, 'trinity', { atomPath }, {
@@ -351,13 +361,23 @@ function finalizeComputation(
   return { model, stages, computationUuid: computationUuid(stages) }
 }
 
-function computePathDiamond(rawPath: string, cwd: string): DiamondComputation {
+function computePathDiamond(
+  rawPath: string,
+  cwd: string,
+  frozen?: { readonly graph: AnalysisTypographyGraph; readonly ctx: FolderReadmeContext },
+): DiamondComputation {
   const resolved = resolvePathInput(rawPath, cwd)
   if ('method' in resolved) {
     return computeMethodDiamond(resolved.method.file, resolved.method.symbol, rawPath)
   }
   const stages: DiamondComputationStage[] = []
-  const { folder, boundary, links } = computeAtomPipeline(resolved.atomPath, cwd, rawPath, stages)
+  const { folder, boundary, links } = computeAtomPipeline(
+    resolved.atomPath,
+    cwd,
+    rawPath,
+    stages,
+    frozen,
+  )
   const model = folderInputToDiamond(folder, boundary, links)
   return finalizeComputation(model, stages)
 }
@@ -573,7 +593,11 @@ function buildCloudflareDiamond(binding: CloudflareComputeInput): DiamondModel {
 export function computeDiamond(input: DiamondInput): DiamondComputation {
   switch (input.kind) {
     case 'path':
-      return computePathDiamond(input.path, input.cwd ?? process.cwd())
+      return computePathDiamond(
+        input.path,
+        input.cwd ?? process.cwd(),
+        input.graph && input.ctx ? { graph: input.graph, ctx: input.ctx } : undefined,
+      )
     case 'collection':
       return computeCollectionDiamond(input.opts, input.cwd ?? process.cwd())
     case 'method':

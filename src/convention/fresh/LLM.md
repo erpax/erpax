@@ -3,8 +3,8 @@
 
 # fresh
 
-path `convention/fresh` · uuid `cb062ec4-bfa1-88ed-bf87-bc6d270d65ed` · diamond `99285a10-b45f-8a03-af39-5f89948d6e42`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `convention/fresh` · uuid `25bce488-bf93-8181-8be6-f31361a0780a` · diamond `fa96b116-4cfb-857b-81b2-c2cb54d679e8`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/cost · exports const·function·interface · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law no stale refs — every import target exists on disk. An `@/` import whose t
 
 ---
 
-<sub>content-uuid `8665c28f-66a0-84d2-aea4-0e6919ff8257` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b90caef0-2626-8c70-a881-f8b9251208a5` · `pnpm readme` · `pnpm computed:check`</sub>

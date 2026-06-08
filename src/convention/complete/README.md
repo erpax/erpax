@@ -2,9 +2,11 @@
 
 # complete
 
-> atom `convention/complete` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/complete` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `convention/complete` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `29352fe9-e31b-8ba8-8ba1-771b96e6649a`
+- content uuids `315bae71-be15-8d17-845a-0b8398476200` · `d3ced307-15f9-89e9-b5f9-206d70eb9601`
+
+## [[entropy]] — gaps · seals
+
+> account code `convention/complete` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.285` eb |
+
+> net residual `-13.285` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
+- partition `convention` · sub-root `e04d17a8-d4b6-8896-a087-5e22565ea455`
 - bond degree `50` · analysis neighbors `aura`
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -69,19 +116,19 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·2 | 1 | 100 |
+| ring·7 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `50` · sealed `1` · horo `2`
+- bond degree `50` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `f57f2c6a-a5a2-837a-a895-5bdb0665f946`
+- uuid `d3ced307-15f9-89e9-b5f9-206d70eb9601`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
@@ -93,4 +140,4 @@
 
 ---
 
-<sub>content-uuid `c2c449e7-ff56-89d1-bf35-8ed5c86c0557` · framed by typography partition `convention` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66005b18-53d6-88cc-9539-81549af0c28a` · framed by typography partition `convention` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -184,7 +184,7 @@ describe('nextInvoiceSequence', () => {
       docs: [{ number: `INV-${year}-005` }, { number: 'LEGACY-99' }],
     })
     const seq = await nextInvoiceSequence(
-      { payload: { find } } as HookArgs['req'],
+      { payload: { find } } as unknown as HookArgs['req'],
       'tenant-1',
       'INV',
       year,

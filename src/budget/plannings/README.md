@@ -2,7 +2,7 @@
 
 # plannings
 
-> atom `budget/plannings` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `budget/plannings` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,6 +23,30 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a budget-planning row is a period-budget by department or cost-center bound to GL line items — created and approved by different parties (segregation of duties) and enforced against the [[accounting]] period lock, so no budget posts to a closed period.`
+- `seal:unsealed`
+- `trigger:Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.`
+- `trigger:a budget-planning row is a period-budget by department or cost-center bound to GL line items — created and approved by different parties (segregation of duties) and enforced against the [[accounting]] period lock, so no budget posts to a closed period.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `75d46602-a930-80cc-88e2-bd4efa7bf124` · `ab7ebb94-9a30-8fd9-8cf9-287a8a9c59de` · `de4b5918-2824-80c5-8928-58822e8371fc`
+- content uuids `39ed5129-f0dc-8c2e-b71b-51d55b8ac82d` · `4e9384c6-e723-8c6d-854c-568a67a43874` · `5b8726ff-24df-85f8-a7e1-7d1544de98ac`
+
 ## [[entropy]] — gaps · seals
 
 > account code `budget/plannings` · currency `eb` (entropy-bit)
@@ -36,22 +60,22 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `2` eb | Σ seal `11.1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
 
-> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `budget` · sub-root `44dd88ef-5cab-8769-88a1-2cac0149c386`
 - bond degree `25` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -61,7 +85,6 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 - `IFRS IAS-1 presentation-of-financial-statements` · banner
 - `IFRS IAS-8 accounting-policies-changes-and-errors` · banner
-- `ISO-19011:2018 audit-trail` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1` · catalogue
 - `ISO-8601-1:2019 date-time fiscal-year period` · banner
@@ -102,19 +125,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·1 | 1 | 100 |
+| ring·2 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `25` · sealed `0` · horo `1`
+- bond degree `25` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `8`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `24d65ed7-f08a-8226-9375-af1b5cedb618`
+- uuid `44dd88ef-5cab-8769-88a1-2cac0149c386`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -126,4 +149,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `c3d2e8b9-de1c-8293-8238-ef030c2e6d87` · framed by typography partition `budget` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `634f9aaa-623c-8f14-ab13-78d1ca1c7880` · framed by typography partition `budget` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

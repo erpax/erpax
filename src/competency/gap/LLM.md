@@ -3,8 +3,8 @@
 
 # gap
 
-path `competency/gap` · uuid `cf6f821f-3eef-8dda-88ee-1b0b2e7ab014` · diamond `ea2e16b8-d5e2-8ec8-898f-9e1dab5305e1`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `competency/gap` · uuid `128a5dae-f842-801a-ba85-22278bf2cec7` · diamond `88820a61-3a46-8cb8-ac91-150a14ac41db`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
 links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the gap is the pure stateless function `max(0, required − held)` per compe
 
 ---
 
-<sub>content-uuid `03588fd8-4e21-8e0a-8cb1-623d47f08586` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d2ad1030-f77c-8ac2-9c52-da0cb3641c97` · `pnpm readme` · `pnpm computed:check`</sub>

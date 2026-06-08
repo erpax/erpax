@@ -241,4 +241,6 @@ pnpm readme:check   # the drift gate — exit 1 if committed ≠ regenerated (fa
 
 **Law — [[law]]: agent thinking transforms to quantum at readme generation — immediately, not post-hoc.** `loadAgentThinking(atomPath)` reads session diamond receipts · path ledger entries · improve receipts (from entropy gaps) · `cheapAgentDispatch` context; `transformThinkingToQuantum` collapses to superposition (open hypotheses) · collapse (decisions/law) · seal (content-uuid receipts). Hooked before `renderFolderReadme` in the same pass as `deriveFolderModel` — zero-latency, no separate `skill:upgrade` quantum face. Root README rolls up `aggregateCorpusQuantumThinking`. Matter-twin: `src/readme/quantum-thinking.ts`.
 
+**Law — single-runner:** only one `pnpm readme` / `readme:check` / `readme:regen` / improve regen-computed-faces process at a time — concurrent writers drift the frozen typography graph anchor.
+
 @see [[diamond]] · [[self/generate]] · [[horo]] · [[matrix]] · [[aura]] · [[trinity]] · [[conservation]] · [[entry]] · [[balance]] · [[entropy]] · [[quantum]]

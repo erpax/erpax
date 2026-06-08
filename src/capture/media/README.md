@@ -23,6 +23,30 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every recorded test artifact becomes a [[media]] record, and every video carries a WebVTT track built from its step titles — captured evidence is always captioned and provenance-bearing.`
+- `seal:sealed`
+- `trigger:Use when turning Playwright test artifacts into Media records — screenshots and videos are uploaded to the Media collection and each video gets a WebVTT subtitle track built from its test step titles, so marketing pages can embed live, captioned evidence of documented capabilities.`
+- `trigger:every recorded test artifact becomes a [[media]] record, and every video carries a WebVTT track built from its step titles — captured evidence is always captioned and provenance-bearing.`
+- `trigger:matter-twin:src/capture/media/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `9d3f6e66-01ec-830f-a436-f8a7688ecaf8` · `db304b17-0442-854b-821b-ab193800f965`
+- content uuids `66b3305c-d56d-87d6-a213-4386484f9cf7` · `7fe107f7-af20-8ebb-9056-14a2bee4e177` · `d897b8c0-4bb3-81b2-b101-a32652b13130`
+
 ## [[entropy]] — gaps · seals
 
 > account code `capture/media` · currency `eb` (entropy-bit)
@@ -52,7 +76,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 - partition `capture` · sub-root `3f6fd05a-d18a-8c07-96cd-b3d741a4f3fc`
 - bond degree `90` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -68,7 +92,6 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 - `EU-2018/957` · catalogue
 - `ISO 19011:2018 audit-trail test-evidence` · banner
 - `ISO-19011` · catalogue
-- `ISO-19011:2018 audit-trail test-recording-provenance` · banner
 - `ISO/IEC 14496-30 timed-text-formats` · banner
 - `W3C WebVTT` · banner
 - `W3C WebVTT video-text-track-format` · banner
@@ -117,11 +140,11 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 - bond degree `90` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `14`
+- bindings `0` · standards `13`
 
 ## identity
 
-- uuid `f992f1b1-f565-8a98-913b-8d0055f057f7`
+- uuid `d897b8c0-4bb3-81b2-b101-a32652b13130`
 - bonds in `29` · out `29`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -133,4 +156,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `bd319ebc-3413-8ed6-a9e0-4802852d4d1c` · framed by typography partition `capture` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ace0133d-b40d-88a1-957a-3aa89cace31c` · framed by typography partition `capture` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,6 +3,7 @@
 import React, { createContext, useCallback, use, useEffect, useState } from 'react'
 
 import type { Theme, ThemeContextType } from './types'
+export type { Theme } from './types'
 
 import canUseDOM from '@/can/use/dom'
 import { defaultTheme, getImplicitPreference, themeLocalStorageKey } from './shared'

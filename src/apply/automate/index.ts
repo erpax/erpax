@@ -363,7 +363,7 @@ const abortIfStale = (
   phase: string,
 ): { aborted: true; phase: string; reason: string } | null => {
   if (!isDirectionStale(token)) return null
-  return { phase, reason: 'direction stale — parent redirected mid-cycle' }
+  return { aborted: true, phase, reason: 'direction stale — parent redirected mid-cycle' }
 }
 
 /** One automated pass — abortable on direction stale at every phase boundary. */

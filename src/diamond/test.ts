@@ -137,7 +137,7 @@ describe('diamond — collection dimension (Payload backend)', () => {
     const model = deriveCollectionDiamond({
       slug: 'horo-test',
       horoStates: FULL_RING,
-      horoStateDefault: 'base',
+      horoStateName: 'base',
     })
     const v = verifyDiamond(model)
     expect(model.kind).toBe('collection')

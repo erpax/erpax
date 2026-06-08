@@ -2,9 +2,11 @@
 
 # baked
 
-> atom `convention/baked` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/baked` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `convention/baked` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:any artifact fully derivable from src is gitignored and regenerated at build, never committed — a stored derivable is a second copy of the [[akashic]] source that can drift, stored entropy that lowers tamper-cost. The tree is the one truth; each bundle is a content-uuid projection regenerated deterministically.`
+- `seal:sealed`
+- `trigger:Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.`
+- `trigger:any artifact fully derivable from src is gitignored and regenerated at build, never committed — a stored derivable is a second copy of the [[akashic]] source that can drift, stored entropy that lowers tamper-cost. The tree is the one truth; each bundle is a content-uuid projection regenerated deterministically.`
+- `trigger:derivable artifacts (skills.index, docs/) are gitignored — regenerated at build from src`
+- `trigger:one source of truth — a committed derivable is duplicated state that can drift`
+
+### seal
+
+- path follow `0` · receipt `1` · sealed `1`
+- entry uuids `0bea7b16-cf05-8bff-9ef1-54412b66b1c6` · `2d6e13f1-e481-8661-ae6a-d4aad69fac92`
+- content uuids `43bf40e3-3038-8cf5-94e3-a3388986085d` · `4d005987-15e9-8e20-accf-41d074a46670` · `b60ef462-0cac-8b92-b7af-d6aa1888537f`
+
+## [[entropy]] — gaps · seals
+
+> account code `convention/baked` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.685` eb |
+
+> net residual `-7.515` eb · seal/gap ratio `3.371` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
-- bond degree `19` · analysis neighbors —
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- partition `convention` · sub-root `e04d17a8-d4b6-8896-a087-5e22565ea455`
+- bond degree `22` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -31,7 +82,6 @@
 
 ## [[standards]]
 
-- `derivable artifacts (skills.index, docs/) are gitignored — regenerated at build from src` · banner
 - `one source of truth — a committed derivable is duplicated state that can drift` · banner
 
 ## [[pivot]]
@@ -68,20 +118,20 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·8 | 1 | 100 |
+| ring·1 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `8`
+- bond degree `22` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
-- bindings `0` · standards `2`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `4d0abb6c-9ecc-8655-b393-9e569b68339e`
-- bonds in `6` · out `6`
+- uuid `43bf40e3-3038-8cf5-94e3-a3388986085d`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `12` / `12`
 - folded `1` · escapes `0`
@@ -92,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `cd1e6aeb-fe9f-8011-849b-a966e0aacdee` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cda55c96-b24f-8af5-a293-82a4da27fc3f` · framed by typography partition `convention` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

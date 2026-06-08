@@ -2,9 +2,11 @@
 
 # apply
 
-> atom `consistency/apply` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `consistency/apply` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `consistency/apply` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every consistency fix is a deterministic, idempotent, audited transform — read · rewrite · write-back · report — so re-running is a no-op and a missing target is the empty summary.`
+- `seal:sealed`
+- `trigger:ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited`
+- `trigger:ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path`
+- `trigger:Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to.`
+- `trigger:every consistency fix is a deterministic, idempotent, audited transform — read · rewrite · write-back · report — so re-running is a no-op and a missing target is the empty summary.`
+- `trigger:matter-twin:src/consistency/apply/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `5d3c2a10-fa94-8711-8ae3-1ef81f6d9a23` · `cdcb6a96-7eda-8918-af24-ca8dfe00d7e6`
+- content uuids `08cbe740-e12c-8e37-984d-217fad2d63c2` · `b39a6158-c1dc-8cf0-b061-f8ed95aa0a1b` · `de689477-fc22-8773-87c4-1bb90680f5ec`
+
+## [[entropy]] — gaps · seals
+
+> account code `consistency/apply` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `12.785` eb |
+
+> net residual `-11.785` eb · seal/gap ratio `12.785` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `consistency` · sub-root `3371c9c5-a1d5-8d8c-b216-12378d9c588b`
-- bond degree `26` · analysis neighbors —
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- partition `consistency` · sub-root `6134f2e8-d684-8049-ac0d-738ce4bb3894`
+- bond degree `36` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -38,14 +91,10 @@
 - `EU-2022/2554` · catalogue
 - `EU-2022/2555` · catalogue
 - `EU-2022/868` · catalogue
-- `ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited` · banner
-- `ISO 9241-210:2019 human-centred-design` · banner
-- `ISO-19011:2018 audit-trail visual-evidence ux-gap-finding` · banner
 - `ISO/IEC 25010:2023 §5.1 functional-completeness` · banner
 - `ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path` · banner
 - `ISO/IEC-29119` · catalogue
 - `ISO/IEC-29119:2022 software-testing system-test-level` · banner
-- `Slice PPPPPPPP-cont CREATE_GAP emergence` · banner
 - `W3C-WAI-ARIA-1.2 accessibility-landmarks` · banner
 - `WCAG-2.1` · catalogue
 - `WCAG-2.1-AA contrast text-spacing` · banner
@@ -84,20 +133,20 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·7 | 1 | 100 |
+| ring·2 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `26` · sealed `1` · horo `7`
+- bond degree `36` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `16`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `1e1a16a7-0cfe-8c3d-a2ee-acc131e1440f`
-- bonds in `7` · out `7`
+- uuid `b39a6158-c1dc-8cf0-b061-f8ed95aa0a1b`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
 - folded `1` · escapes `0`
@@ -108,4 +157,4 @@
 
 ---
 
-<sub>content-uuid `272b7a14-e1be-8daa-8c11-c8ee813182d2` · framed by typography partition `consistency` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `493b18cf-47f1-8387-bffa-0d63702c22c5` · framed by typography partition `consistency` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

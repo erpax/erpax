@@ -3,15 +3,15 @@
 
 # store
 
-path `computer/store` · uuid `287e5351-298a-8ac1-93b9-9e6f9bbe9482` · diamond `29ff8a18-d592-8de6-9d9f-2663c77933b5`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `computer/store` · uuid `31958bc0-cabe-841a-af36-ab511d4c4712` · diamond `69cab8f9-94c4-8a5e-a830-0f093cdb08d3`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `36` out `36`
+links `5/5` · folded `1` · bonds in `37` out `37`
 faces worker·plugin·pwa `1·0·0`
-neighbors → auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·toy·wholesale · ← auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·toy·wholesale
-analysis diamond·hallucination·purity
+neighbors → auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·store·toy·wholesale · ← auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·store·toy·wholesale
+analysis —
 law computer/store names store under computer — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `c51e5c00-69f7-8c10-ae35-7ecc5d714216` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5c7f21da-a5b0-8261-823b-d346e2a470db` · `pnpm readme` · `pnpm computed:check`</sub>

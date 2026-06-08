@@ -15,6 +15,7 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable
  * @see ./SKILL.md — ../seal — ../integrity — ../purity — ../quantum/uuid — ../../scripts/pre-push-uuid.sh
  */
+import { readFileSync } from 'node:fs'
 import { execSync } from 'node:child_process'
 import { join } from 'node:path'
 import { guardian, type GuardianVerdict } from '@/guardian'
@@ -24,6 +25,7 @@ import { nonIndexImports } from '@/tamper/import'
 import { boundaryDigest } from '@/quantum/boundary'
 import { listAtomPaths, buildReadmeTypographyGraph, loadSkillPages } from '@/readme'
 import { deriveDiamond, verifyDiamond, diamondUuid } from '@/diamond'
+import { verifyAiBindingDiamonds } from '@/cloudflare'
 import {
   formViolations,
   typographyGuardian,
@@ -242,6 +244,28 @@ export function gateTypography(cwd: string = process.cwd()): UuidGateResult {
   }
 }
 
+
+/** Cloudflare AI bindings — wrangler ai/vectorize/RAG stack diamonds seal without Payload. */
+export function gateCloudflareAi(cwd: string = process.cwd()): UuidGateResult {
+  try {
+    const text = readFileSync(join(cwd, 'wrangler.jsonc'), 'utf8')
+    const verdict = verifyAiBindingDiamonds(text)
+    return {
+      axis: 'cloudflare:ai',
+      ok: verdict.ok,
+      reason: verdict.ok
+        ? `cloudflare:ai sealed — ${verdict.count} AI-stack binding diamond(s)`
+        : `cloudflare:ai FAIL — ${verdict.broken} broken diamond(s)`,
+    }
+  } catch (e) {
+    return {
+      axis: 'cloudflare:ai',
+      ok: false,
+      reason: 'cloudflare:ai gate failed — ' + ((e as Error).message?.split('\n')[0] ?? 'wrangler.jsonc missing'),
+    }
+  }
+}
+
 /** Run every uuid-pure gate; default order is cheapest-first where practical. */
 export function uuidGates(cwd: string = process.cwd()): readonly UuidGateResult[] {
   return [
@@ -252,6 +276,7 @@ export function uuidGates(cwd: string = process.cwd()): readonly UuidGateResult[
     gateReadme(cwd),
     gateBoundary(),
     gateDiamond(cwd),
+    gateCloudflareAi(cwd),
     gateTypography(cwd),
   ]
 }

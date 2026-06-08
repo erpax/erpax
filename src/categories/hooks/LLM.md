@@ -3,8 +3,8 @@
 
 # hooks
 
-path `categories/hooks` · uuid `404e657d-1644-8b22-bbac-e50f247a5389` · diamond `e15c52d1-245f-85f3-9a5c-346e871396cb`
-horo `6` `6` · trinity `1·1·1` · sealed `0`
+path `categories/hooks` · uuid `76a1d22a-dad8-8cba-8835-70a747d05a7b` · diamond `18574822-0dd1-8ff0-8607-9f293eef5ae6`
+horo `6` `6` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./beforeChange · escapes —
 links `3/3` · folded `1` · bonds in `105` out `105`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the Categories beforeChange chain is one ordered barrel — every row is ten
 
 ---
 
-<sub>content-uuid `59ba25f6-bd43-8d4e-ae1b-40b3ef10b884` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3957eef-9b33-8514-9e1a-10db54a9139b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # ai
 
-path `cloudflare/ai` · uuid `d2f4926f-cbee-844d-ab25-b8c23f854b7b` · diamond `6aa5a1fb-aea8-8350-b7c8-12ef04f67d69`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `cloudflare/ai` · uuid `180fdded-f9ee-830c-bb74-ab8c55ef52b7` · diamond `a3075b20-318c-8207-a912-1f022c9d004d`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports AI_GATEWAY_VAR_KEYS·AI_STACK_BINDING_TYPES·agentAiWorkerFace·aiBindingDiamond·aiModelAtomPath·aiSecretIdentity·cloudflareAiAccountingExtras·decryptCloudflareAiSecretIfUuid·deriveAiBindingDiamonds·filterAiBindings·isAiRelatedBinding·loadRepoAiBindings·organ·sealCloudflareAiSecret·verifyAiBindingDiamonds · escapes —
 links `11/11` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every Cloudflare Workers AI binding has a sealed diamond; innovation ships t
 
 ---
 
-<sub>content-uuid `4f1e819c-d5e5-83a0-8a29-d0c6e8c1db0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a00669b-ee78-8c5b-97f3-8c646999f9f1` · `pnpm readme` · `pnpm computed:check`</sub>

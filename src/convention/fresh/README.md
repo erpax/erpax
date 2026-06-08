@@ -2,9 +2,11 @@
 
 # fresh
 
-> atom `convention/fresh` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/fresh` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `convention/fresh` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:tamper/import`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `9bea7112-42e0-8000-9e64-8412d6e787fe`
+- content uuids `1d225e77-1ebc-8ebc-8a02-1e745f0f2675` · `25bce488-bf93-8181-8be6-f31361a0780a`
+
+## [[entropy]] — gaps · seals
+
+> account code `convention/fresh` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.785` eb |
+
+> net residual `-12.785` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
+- partition `convention` · sub-root `e04d17a8-d4b6-8896-a087-5e22565ea455`
 - bond degree `11` · analysis neighbors `tamper/import`
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -33,8 +80,6 @@
 
 ## [[standards]]
 
-- `imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted` · banner
-- `imports + on-disk existence scanned LIVE from src/scripts/.vitepress; coverage = resolving/total, never hand-asserted` · banner
 - `TypeScript module resolution (tsconfig `@/` · banner
 
 ## [[pivot]]
@@ -71,19 +116,19 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·5 | 1 | 100 |
+| ring·2 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `11` · sealed `1` · horo `5`
+- bond degree `11` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `cb062ec4-bfa1-88ed-bf87-bc6d270d65ed`
+- uuid `25bce488-bf93-8181-8be6-f31361a0780a`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `0` / `0`
@@ -95,4 +140,4 @@
 
 ---
 
-<sub>content-uuid `5c0a82b5-2823-8839-a83a-713e8dc788aa` · framed by typography partition `convention` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6ce93d7e-5df2-8812-9bbb-1cc86b576105` · framed by typography partition `convention` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

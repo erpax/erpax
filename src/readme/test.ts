@@ -69,6 +69,7 @@ import {
 } from '@/readme'
 import { followEveryPathAll, ledgerFromPathWalk } from '@/path'
 import { deriveDiamond } from '@/diamond'
+import { diamondMembershipOk } from '@/diamond/membership'
 import { finishedIdeaCrossed } from '@/seal'
 import { parseWranglerBindings } from '@/cloudflare'
 import { readFileSync, existsSync } from 'node:fs'
@@ -333,9 +334,22 @@ describe('readme — per-folder debit/credit statement', () => {
   })
 
   it('diamond membership stray forbids gravity even when trinity complete', () => {
-    const ctx = buildReadmeCorpusContext()
-    const graph = buildReadmeTypographyGraph()
-    const m = deriveFolderModel('agents/mcp', process.cwd(), ctx, graph)
+    const cwd = process.cwd()
+    const ctx = buildReadmeCorpusContext(cwd)
+    const graph = buildReadmeTypographyGraph(cwd)
+    const strayPath =
+      listAtomPaths(cwd).find((p) => {
+        const dir = join(cwd, 'src', p)
+        const trinityComplete =
+          existsSync(join(dir, 'SKILL.md')) &&
+          existsSync(join(dir, 'index.ts')) &&
+          existsSync(join(dir, 'test.ts'))
+        return trinityComplete && !diamondMembershipOk(p, cwd)
+      }) ?? 'agent'
+    const m = deriveFolderModel(strayPath, cwd, ctx, graph)
+    expect(m.code).toBe(1)
+    expect(m.proof).toBe(1)
+    expect(diamondMembershipOk(strayPath, cwd)).toBe(false)
     expect(m.sealed).toBe(false)
     expect(m.statement.balanced).toBe(false)
     expect(m.statement.variance).toBeGreaterThan(0)

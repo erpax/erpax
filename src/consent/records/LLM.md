@@ -3,7 +3,7 @@
 
 # records
 
-path `consent/records` · uuid `30f1204c-0a78-89f3-8d09-69ef49907f3d` · diamond `37d21ee2-ac5b-8720-b375-836ce23d9642`
+path `consent/records` · uuid `eadf26cd-6f9d-83d2-aba3-93bd443dd183` · diamond `21f26fae-a01b-876d-beaf-1e1b82c847ba`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `17270089-9fe8-8505-a179-6047be307646` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0a5429a-ee9b-8caf-bbb0-060f8e2342f5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # honest
 
-path `convention/honest` · uuid `61528455-4d3d-8674-919a-681c9b72f820` · diamond `56321463-2a39-8e90-bf40-cce7794a93ed`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `convention/honest` · uuid `e3f54738-cc97-8721-8dbc-a31dc217153c` · diamond `5123c758-fdfc-8443-af02-a8e4dd084756`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function · escapes —
 links `11/11` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law metaphysics is named as convention, never asserted as fact. The arithmetic i
 
 ---
 
-<sub>content-uuid `2826fca7-67af-8f96-993f-f525cc758aa7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8c26b411-3f08-8d67-a8b8-07f8ed5c1d20` · `pnpm readme` · `pnpm computed:check`</sub>

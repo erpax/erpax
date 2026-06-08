@@ -3,7 +3,7 @@
 
 # media
 
-path `capture/media` · uuid `f992f1b1-f565-8a98-913b-8d0055f057f7` · diamond `32cee6b0-997c-8c1c-8f2a-3b125ce81fcc`
+path `capture/media` · uuid `d897b8c0-4bb3-81b2-b101-a32652b13130` · diamond `b89703d3-c02e-8bff-86d5-00f8a04a7e24`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports async·function·interface · escapes —
 links `5/5` · folded `1` · bonds in `29` out `29`
@@ -14,4 +14,4 @@ law every recorded test artifact becomes a [[media]] record, and every video car
 
 ---
 
-<sub>content-uuid `ec04a97a-f7a7-8540-a8d4-ce58440852c7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f1d549f4-655d-868b-88f5-940a11f152bc` · `pnpm readme` · `pnpm computed:check`</sub>

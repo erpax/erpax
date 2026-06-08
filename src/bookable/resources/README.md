@@ -2,7 +2,7 @@
 
 # resources
 
-> atom `bookable/resources` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `bookable/resources` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,6 +23,30 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a bookable-resource is the agnostic master of anything reservable — one resource node (room, vehicle, equipment, slot) carrying its rate ladder and availability, paired with its [[bookable/resources/bookings]].`
+- `seal:unsealed`
+- `trigger:Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.`
+- `trigger:a bookable-resource is the agnostic master of anything reservable — one resource node (room, vehicle, equipment, slot) carrying its rate ladder and availability, paired with its [[bookable/resources/bookings]].`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `0af379d8-9850-8d7f-aaa4-0b560497b468` · `3eb20601-e7f2-801e-92e3-e74b8fc93f36` · `7b699d38-f6f8-8a73-81d0-fb44e0fcfe41`
+- content uuids `1b405c0b-91fe-8e18-98f6-1f3829ddf19b` · `65772618-c04c-8c05-af74-6bd7b11d3614` · `9cfdea24-6cc5-8dff-bbc6-2f04d776e64d`
+
 ## [[entropy]] — gaps · seals
 
 > account code `bookable/resources` · currency `eb` (entropy-bit)
@@ -36,22 +60,22 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `2` eb | Σ seal `11.8` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
 
-> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `bookable` · sub-root `0fbb8584-2be2-8d8c-b71f-c692ff3a833e`
 - bond degree `29` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -84,7 +108,6 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 - `ILO-C001` · catalogue
 - `ILO-C100` · catalogue
 - `ISO-18513:2021 tourism-services-vocabulary (when kind=hotel_room)` · banner
-- `ISO-19011:2018 audit-trail resource-master-changes` · banner
 - `ISO-3166-1` · catalogue
 - `ISO-3166-1:2020 country-codes resource-country` · banner
 - `ISO-41001` · catalogue
@@ -133,19 +156,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·8 | 1 | 100 |
+| ring·5 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `29` · sealed `0` · horo `8`
+- bond degree `29` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `39`
+- bindings `0` · standards `38`
 
 ## identity
 
-- uuid `9d3ba530-2c87-852a-8eeb-7ba614ba0604`
+- uuid `91ce16c3-7ce6-88e4-a532-298d5ca80a80`
 - bonds in `9` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
@@ -157,4 +180,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `adb38d69-6aec-8c45-af69-2fb90a9cf718` · framed by typography partition `bookable` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `76945f86-42e3-82f4-8a5a-3c50f55e9492` · framed by typography partition `bookable` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

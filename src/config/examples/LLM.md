@@ -3,7 +3,7 @@
 
 # examples
 
-path `config/examples` · uuid `dd3d97ea-e437-8fc4-b509-37a10fcb72f0` · diamond `29130dc5-07ef-898d-be20-fc294db72fbb`
+path `config/examples` · uuid `d26be1fc-3ec6-8167-990a-f21cbf9f9723` · diamond `83f1d3a9-e8a6-854e-928a-52f45731ff96`
 horo `9` `unity` · trinity `1·1·1` · sealed `0`
 imports @/config/types · exports const·function · escapes —
 links `5/5` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law every example tenant is a self-contained object that satisfies the one agnos
 
 ---
 
-<sub>content-uuid `475e624c-692f-8a20-9e65-9ba7818b3d89` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34531263-5933-8e34-92f8-db70148a5373` · `pnpm readme` · `pnpm computed:check`</sub>

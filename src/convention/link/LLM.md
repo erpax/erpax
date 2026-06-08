@@ -3,8 +3,8 @@
 
 # link
 
-path `convention/link` · uuid `f9f30763-26c7-8226-9c63-c0fc17bed200` · diamond `1b433223-1ac2-8733-a268-2fafd742935f`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `convention/link` · uuid `016c8124-b604-8307-99ce-9b37f41a840c` · diamond `16512ade-fd8f-8ceb-835d-d09309629a8b`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/corpus · exports function·interface · escapes —
 links `21/21` · folded `1` · bonds in `43` out `43`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every wikilink resolves to a real atom — no dead wires. A link is a uuid-e
 
 ---
 
-<sub>content-uuid `56c30a11-a161-8ccf-b99c-051f66fea872` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eacd296a-0208-8330-b232-4b164758e200` · `pnpm readme` · `pnpm computed:check`</sub>

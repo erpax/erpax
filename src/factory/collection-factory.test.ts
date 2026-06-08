@@ -14,6 +14,8 @@
  * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
  */
 import { describe, it, expect } from 'vitest'
+import type { CollectionConfig } from 'payload'
+import type { CollectionDiamondModel } from '@/diamond'
 import type { Field } from 'payload'
 import { createAccountingCollection, COLLECTION_DIAMOND_KEY } from './collection-factory'
 import { verifyDiamond, diamondUuid } from '@/diamond'
@@ -205,7 +207,7 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
       horoStates: FULL_RING,
       fields: () => [{ name: 'name', type: 'text' }],
     })
-    const model = cfg[COLLECTION_DIAMOND_KEY]
+    const model = (cfg as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]
     expect(model).toBeDefined()
     expect(model!.horoStates).toHaveLength(7)
     expect(model!.tamperProofUuid).toBe(true)
@@ -230,8 +232,8 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
       defaultColumns: ['name'],
       fields: () => [{ name: 'name', type: 'text' }],
     })
-    expect(Object.keys(a[COLLECTION_DIAMOND_KEY]!).sort()).toEqual(
-      Object.keys(b[COLLECTION_DIAMOND_KEY]!).sort(),
+    expect(Object.keys((a as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]!).sort()).toEqual(
+      Object.keys((b as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]!).sort(),
     )
   })
 })

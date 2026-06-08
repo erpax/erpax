@@ -2,7 +2,7 @@
 
 # ebitda
 
-> atom `calculate/ebitda` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `calculate/ebitda` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,6 +21,28 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when reasoning about ebitda — ports the EBITDA calculator verbatim (calculate, port): EBITDA = operating profit + depreciation + amortization (equivalently net income + interest + tax + D&A). Pure function over`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `0cf5057f-cbc5-8362-a831-11ea4e7cf13e` · `891fb2f4-37e3-8f8d-b109-a1f10c12a07b` · `b433a9ed-7575-81b2-a4fe-d0c54e543c7a`
+- content uuids `28d6426e-9d60-87f6-af71-80a603d11e3a` · `31a7818f-fa15-8e1d-8cca-348bd484dbde` · `de175b75-3fe2-86b8-b5fb-cff8547f879f` · `e685def3-385a-882e-9e97-10936bf4bb52`
+
 ## [[entropy]] — gaps · seals
 
 > account code `calculate/ebitda` · currency `eb` (entropy-bit)
@@ -32,7 +54,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 | [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
 | [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
@@ -40,15 +62,15 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `3.17` eb | Σ seal `11.085` eb |
+| Σ gap `3.17` eb | Σ seal `11.285` eb |
 
-> net residual `-7.915` eb · seal/gap ratio `3.497` · [[entropy]] · [[seal]]
+> net residual `-8.115` eb · seal/gap ratio `3.56` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `calculate` · sub-root `0426e13a-ff60-8e54-aaf5-24ee96055370`
 - bond degree `13` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -92,19 +114,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·5 | 1 | 100 |
+| ring·7 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `13` · sealed `1` · horo `5`
+- bond degree `13` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `558b8d9a-50cb-8b53-9f53-a8bd0ff4fcaf`
+- uuid `31a7818f-fa15-8e1d-8cca-348bd484dbde`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -116,4 +138,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `771f8a37-a6e5-89da-ac06-735ee24363eb` · framed by typography partition `calculate` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `579eb34c-3b29-85b8-b996-f546ec79ab0e` · framed by typography partition `calculate` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

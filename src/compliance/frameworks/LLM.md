@@ -3,7 +3,7 @@
 
 # frameworks
 
-path `compliance/frameworks` · uuid `1050fa30-2bcd-8dad-9732-b9127754496a` · diamond `14d43072-5161-8978-b4d7-d3840230969a`
+path `compliance/frameworks` · uuid `612cdd4b-3734-8fa4-940b-0f254d8f7ea6` · diamond `2af0a08d-7a98-8488-a831-6e2b94f0e6ef`
 horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/authenticated · exports const · escapes —
 links `1/1` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `075e94b9-10e9-8501-970e-5ca9ae23ed13` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4bcceb4c-d012-8a0e-9bd0-666871621f8a` · `pnpm readme` · `pnpm computed:check`</sub>

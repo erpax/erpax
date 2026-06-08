@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { createAccountingCollection } from '@/factory/collection-factory'
+import type { Config } from 'payload'
 import { adminUiPlugin } from './index'
 
 describe('plugins/admin-ui — collection enhancement', () => {
@@ -15,9 +16,7 @@ describe('plugins/admin-ui — collection enhancement', () => {
     })
 
     const plugin = adminUiPlugin()
-    const config = plugin({
-      collections: [base],
-    })
+    const config = plugin({ collections: [base], secret: 'test' } as Config) as Config
 
     const c = config.collections![0]!
     expect(c.admin?.defaultColumns?.slice(0, 4)).toEqual([
@@ -26,9 +25,9 @@ describe('plugins/admin-ui — collection enhancement', () => {
       'erpaxHoro',
       'uuid',
     ])
-    const uuidField = c.fields?.find((f) => 'name' in f && f.name === 'uuid')
+    const uuidField = c.fields?.find((f) => 'name' in f && (f as { name: string }).name === 'uuid')
     expect(uuidField?.admin?.components?.Cell).toBe('@/admin/ui/cells/ContentUuidChipCell')
-    const uiField = c.fields?.find((f) => 'name' in f && f.name === 'erpaxPathAccount')
+    const uiField = c.fields?.find((f) => 'name' in f && (f as { name: string }).name === 'erpaxPathAccount')
     expect(uiField?.type).toBe('ui')
   })
 })

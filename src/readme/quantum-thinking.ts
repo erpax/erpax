@@ -21,6 +21,7 @@ import {
   type QuantumEnvironment,
 } from '@/skill/router/upgrade/quantum'
 import { stripFrontmatter, FRONTMATTER } from '@/skill/router/upgrade/seal'
+import { UUID_MATRIX_ROOT } from '@/uuid/matrix'
 import type { FolderEntropyAccounting } from './entropy'
 
 /** Minimal folder facets needed for thinking load — avoids circular import. */
@@ -91,8 +92,13 @@ export interface CorpusQuantumThinkingRollup {
 
 export interface ThinkingLoadContext {
   readonly pathLedger: readonly PathCanonicalEntry[]
+  /** Frozen typography graph root — same law as readmeCorpusFrozenAt (never wall clock). */
   readonly at?: string
 }
+
+/** Receipt-chain anchor when ctx.at absent — matrix root, not Date.now(). */
+export const thinkingReceiptAnchor = (ctx?: ThinkingLoadContext): string =>
+  ctx?.at ?? UUID_MATRIX_ROOT
 
 const uniqueSorted = (items: readonly string[]): string[] =>
   [...new Set(items.filter(Boolean))].sort()
@@ -172,7 +178,7 @@ export function loadAgentThinking(
     'uuid' | 'entropy' | 'linksTotal' | 'linksResolved' | 'typography' | 'sealed' | 'statement'
   >,
 ): AgentThinking {
-  const at = ctx?.at ?? new Date().toISOString()
+  const at = thinkingReceiptAnchor(ctx)
   const pathLedger = (ctx?.pathLedger ?? []).filter((e) => e.atomPath === atomPath)
   const entropy = folder?.entropy
   const improveReceipts = entropy ? synthesizeImproveReceipts(atomPath, entropy, at) : []

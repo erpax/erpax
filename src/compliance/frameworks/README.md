@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `compliance/frameworks` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,55 @@
 
 > [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/compliance/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `45de0794-951b-89df-9cb8-3c3bb85b6c64` · `87b24ec9-571d-85ad-b310-be83f8de0de5` · `e82d1d0d-e48c-88ce-8a22-00ba7fe1a38c` · `fb1d14e8-a047-8841-a3eb-4a8c484d8136`
+- content uuids `20855e35-a62a-8223-8ae8-62e6f4eb9e82` · `29d01bb8-c89c-825d-b1a8-a34cd2b4186e` · `64ddf355-0a87-8b5b-a7f0-e1a6d117f481` · `7c2375d7-290e-8196-a465-2697334d1ccd`
+
+## [[entropy]] — gaps · seals
+
+> account code `compliance/frameworks` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/compliance/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.4` eb |
+
+> net residual `-5.4` eb · seal/gap ratio `2.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `compliance` · sub-root `e6b33a58-3e66-81b0-a618-e68b7e76e9f5`
+- partition `compliance` · sub-root `7662057a-ec95-88c2-bbf3-3319903f58a7`
 - bond degree `0` · analysis neighbors —
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -85,7 +131,7 @@
 
 ## identity
 
-- uuid `1050fa30-2bcd-8dad-9732-b9127754496a`
+- uuid `612cdd4b-3734-8fa4-940b-0f254d8f7ea6`
 - bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -97,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `7dc7c341-52b3-89c9-a605-5076c0afeece` · framed by typography partition `compliance` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e83158f-ef32-8733-8205-a87d042a0604` · framed by typography partition `compliance` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

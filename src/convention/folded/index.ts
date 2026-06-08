@@ -49,7 +49,6 @@ const foldedPaths = (): Set<string> => {
   const s = new Set<string>()
   for (const n of UUID_MATRIX_NODES) {
     if (n.path) s.add(n.path)
-    if (n.members) for (const m of n.members) s.add(m)
   }
   return s
 }

@@ -23,6 +23,31 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every bulk import/export flows through one contract — audited up front, idempotent by `operationId`, and per-row fail-closed into `transaction-failures` — so the per-format importers collapse to a single [[op]] ([[dry]]).`
+- `seal:unsealed`
+- `trigger:Use when enqueueing or processing a bulk import or export (CSV, Excel, JSON/JSONL, UBL/CII XML, camt.053/054, pain.001/008, EDIFACT, OCR) — the single bulk-operations contract that writes an audit row up front, dispatches to the queue, and lands each failed row in transaction-failures for operator review.`
+- `trigger:every bulk import/export flows through one contract — audited up front, idempotent by `operationId`, and per-row fail-closed into `transaction-failures` — so the per-format importers collapse to a single [[op]] ([[dry]]).`
+- `trigger:matter-twin:src/bulk/op/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `6253a3a7-5304-8fc6-b7d0-9a403e2906d8` · `916c7581-caa4-816e-9d0c-bbee1859a8e9` · `e45f0758-5f4d-8844-91fe-a66e1ba27b62`
+- content uuids `9396ee8c-05bc-84b1-a315-850b0e776893` · `bd6abe78-47e0-82c5-8c7f-92475f653f6d` · `e0e627ca-5570-8a79-ad8c-ee4f1c112d0d`
+
 ## [[entropy]] — gaps · seals
 
 > account code `bulk/op` · currency `eb` (entropy-bit)
@@ -51,7 +76,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 - partition `bulk` · sub-root `dc27f972-5bc3-85d2-be6d-c96a07d6c1b4`
 - bond degree `26` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -68,7 +93,6 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 - `EU-2017/828` · catalogue
 - `ILO-C001` · catalogue
 - `ISO 20022 camt.053 pain.001 pain.008` · banner
-- `ISO-19011:2018 audit-trail bulk-ops-evidence` · banner
 - `ISO-20022` · catalogue
 - `ISO/IEC 19503:2005 XMI` · banner
 - `rfc-4180 csv-format` · banner
@@ -117,11 +141,11 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 - bond degree `26` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `15`
+- bindings `0` · standards `14`
 
 ## identity
 
-- uuid `6911cde0-37d9-8970-8c9c-af48bebc230f`
+- uuid `dc27f972-5bc3-85d2-be6d-c96a07d6c1b4`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
@@ -133,4 +157,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `bb4daf49-12e4-8e47-8c4c-b2c40fcaeca2` · framed by typography partition `bulk` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `77dd0d21-2e81-8f0b-9590-3df12a785bc6` · framed by typography partition `bulk` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

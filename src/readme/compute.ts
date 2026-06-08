@@ -143,6 +143,9 @@ export interface CorpusAnalytics {
   readonly byHoro: readonly CorpusHoroRollup[]
   readonly entropy: CorpusEntropyRollup
   readonly quantumThinking: CorpusQuantumThinkingRollup
+  /** Frozen at deriveModel — renderReadme uses these instead of re-scanning rules. */
+  readonly rulesViolationCount?: number
+  readonly workTamperProduct?: number
 }
 
 /** Canonical Git repo URL — Cloudflare Deploy button clones this repo and reads wrangler.jsonc. */
@@ -308,6 +311,8 @@ export function deriveModel(
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([k, v]) => [k, cleanScript(v)] as const)
   const engines = pkg.engines ?? {}
+  const entropySnap = readmeCorpusEntropyRenderOpts(cwd, readmeCorpusFrozenAt())
+  const baseAnalytics = analytics ?? deriveCorpusAnalytics(cwd)
   return {
     name: pkg.name ?? 'erpax',
     description: pkg.description ?? '',
@@ -327,7 +332,11 @@ export function deriveModel(
     node: Object.entries(engines)
       .map(([k, v]) => `${k} ${v}`)
       .join(' · '),
-    analytics: analytics ?? deriveCorpusAnalytics(cwd),
+    analytics: {
+      ...baseAnalytics,
+      rulesViolationCount: entropySnap.violationCount,
+      workTamperProduct: entropySnap.workTamperProduct,
+    },
     papers: papers ?? emptyMergedPapers(),
   }
 }
@@ -437,7 +446,11 @@ export function renderReadme(
   for (const row of model.analytics.byHoro) {
     L.push(`| ${row.digit} | ${row.measure} | ${row.atoms} | ${row.sealed} |`)
   }
-  const entropyOpts = entropyRender ?? readmeCorpusEntropyRenderOpts(process.cwd(), readmeCorpusFrozenAt())
+  const entropyOpts =
+    entropyRender ?? {
+      violationCount: model.analytics.rulesViolationCount ?? 0,
+      workTamperProduct: model.analytics.workTamperProduct ?? 0,
+    }
   L.push('', renderCorpusEntropySection(model.analytics.entropy, entropyOpts))
   L.push('', renderCorpusQuantumThinkingSection(model.analytics.quantumThinking))
   if (model.papers.total > 0) {
@@ -969,8 +982,7 @@ export function deriveCorpusAnalyticsInWaves(
 
 /** Derive corpus analytics from folder models — no MD/TS paper scan (fast path for deriveModel). */
 export function deriveCorpusAnalytics(cwd: string = process.cwd()): CorpusAnalytics {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+  const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd)
   const models = listAtomPaths(cwd).map((p) => deriveFolderModel(p, cwd, ctx, graph))
   return aggregateCorpusAnalytics(models)
 }
@@ -1397,7 +1409,7 @@ export function deriveFolderModel(
     bindings,
     standards,
   })
-  const pathFollow = ctx.pathFollowGate ? corpusPathFollowOpts() : undefined
+  const pathFollow = ctx.pathFollowGate ? corpusPathFollowOpts(ctx.thinkingCtx?.at) : undefined
   const crossSnapshot: DiamondModel = {
     kind: 'atom',
     atomPath,
@@ -1449,9 +1461,9 @@ export function deriveFolderModel(
   }
   const quantumThinking = quantumThinkingOf(folderDraft, cwd, ctx.thinkingCtx)
   return {
+    ...fields,
     atomPath,
     leaf,
-    ...fields,
     measure: measureOf(horo),
     bindings,
     standards,
@@ -1568,10 +1580,17 @@ export function listAtomPaths(cwd: string = process.cwd()): string[] {
     .sort()
 }
 
+/** Derive folder README model — frozen typography graph + receipt chain (write ≡ verify). */
+export function deriveFolderReadme(
+  atomPath: string,
+  cwd: string = process.cwd(),
+  frozen: ReadmeCorpusFrozenInputs = buildReadmeCorpusFrozenInputs(cwd),
+): FolderReadmeModel {
+  return deriveFolderModel(atomPath, cwd, frozen.ctx, frozen.graph)
+}
+
 export function generateFolderReadme(atomPath: string, cwd: string = process.cwd()): string {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
-  return renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx, graph))
+  return renderFolderReadme(deriveFolderReadme(atomPath, cwd))
 }
 
 export function verifyFolderReadmes(cwd: string = process.cwd()): { ok: boolean; drift: string[] } {
@@ -1759,7 +1778,7 @@ export function materializeComputedFaces(
   corpus: ReadmeCorpus = buildReadmeCorpus(cwd),
   paths?: readonly string[],
 ): number {
-  if (paths && paths.length > 0) return materializeComputedFacesForPaths(paths, cwd)
+  if (paths && paths.length > 0) return materializeComputedFacesForPathsStable(paths, cwd)
   const { models } = corpus
   let n = 0
   for (const folder of models) {

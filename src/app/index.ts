@@ -31,3 +31,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const a = app('merge')
   console.log('app — every atom is an app · app("merge") = ' + (a ? a.name + ' (' + a.links + ' links)' : 'n/a'))
 }
+export type PreviewSearchParams = {
+  readonly path: string
+  readonly previewSecret: string
+}

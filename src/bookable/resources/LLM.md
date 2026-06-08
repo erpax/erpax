@@ -3,8 +3,8 @@
 
 # resources
 
-path `bookable/resources` · uuid `9d3ba530-2c87-852a-8eeb-7ba614ba0604` · diamond `a4b075ca-5605-8bc7-8e5a-9ecd979fddde`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `bookable/resources` · uuid `91ce16c3-7ce6-88e4-a532-298d5ca80a80` · diamond `21ca111d-090f-80b3-9246-331e85648038`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/medical/device·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `9` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a bookable-resource is the agnostic master of anything reservable — one re
 
 ---
 
-<sub>content-uuid `4477d24e-4ee6-854d-b58d-4e6304386c51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `90672a8e-837a-8eb3-8b05-308462185272` · `pnpm readme` · `pnpm computed:check`</sub>

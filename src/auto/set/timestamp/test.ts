@@ -12,7 +12,7 @@ import { autoSetTimestamp } from '@/auto/set/timestamp'
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
 
 const fire = (hook: CollectionBeforeChangeHook, data: Record<string, unknown>): Promise<Record<string, unknown>> =>
-  hook({ data, req: {}, operation: 'update', collection: undefined } as HookArgs) as Promise<Record<string, unknown>>
+  hook({ data, req: {}, operation: 'update', collection: undefined } as unknown as HookArgs) as Promise<Record<string, unknown>>
 
 const ISO_UTC = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/
 

@@ -2,9 +2,11 @@
 
 # gap
 
-> atom `competency/gap` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `competency/gap` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `competency/gap` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=1.585`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `76da3b4c-e1f9-80c3-9e38-182e17bb8ac8`
+- content uuids `128a5dae-f842-801a-ba85-22278bf2cec7` · `714d07eb-e833-8a14-a757-4abbff4a0c89`
+
+## [[entropy]] — gaps · seals
+
+> account code `competency/gap` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.085` eb |
+
+> net residual `-13.085` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `competency` · sub-root `1816a001-5d4b-89ac-baf0-fd1ec44b61e1`
+- partition `competency` · sub-root `8c9f277a-707f-8241-b501-d55ba0bd2f35`
 - bond degree `30` · analysis neighbors —
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -71,19 +118,19 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·2 | 1 | 100 |
+| ring·5 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `2`
+- bond degree `30` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `cf6f821f-3eef-8dda-88ee-1b0b2e7ab014`
+- uuid `128a5dae-f842-801a-ba85-22278bf2cec7`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -95,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `ff2e9838-dbd8-81c8-aeaa-59821f6b78c7` · framed by typography partition `competency` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9d8c1eaf-e257-8752-88f3-1800ac96bfa3` · framed by typography partition `competency` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

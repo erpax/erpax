@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `config/examples` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every example tenant is a self-contained object that satisfies the one agnostic `TenantConfig` contract — the template seeds a working tenant by copy-and-edit, never by code change.`
+- `seal:unsealed`
+- `trigger:BCP-47 language-tag`
+- `trigger:ISO-4217:2015 currency-codes`
+- `trigger:Use when seeding or referencing a self-contained tenant template — the business-model-agnostic example `TenantConfig`s (course-builder, newsletter, marketplace) and the `getConfigByBusinessModel` / `listExampleConfigs` accessors over them.`
+- `trigger:every example tenant is a self-contained object that satisfies the one agnostic `TenantConfig` contract — the template seeds a working tenant by copy-and-edit, never by code change.`
+- `trigger:matter-twin:src/config/examples/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `0f0a68bd-d1cd-80ad-b823-127ea427f8c4` · `34647cd9-c0a5-8914-8660-bda62342152d` · `8742faa3-6bee-8285-891c-30f2da524580`
+- content uuids `1609ba50-950b-864b-aa29-096d228ff1a8` · `488ddb25-61fa-8527-92a0-6dfa0cb55f19` · `cca37f50-dbb0-808a-92f1-8ad4d9479e0f`
+
+## [[entropy]] — gaps · seals
+
+> account code `config/examples` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.9` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.9` eb |
+
+> net residual `-9.9` eb · seal/gap ratio `5.95` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `config` · sub-root `c9f7efd9-b1c7-84e6-886d-4c6b7e88b2c1`
+- partition `config` · sub-root `0b6985b1-5568-805f-b300-f4c3b8434c44`
 - bond degree `9` · analysis neighbors —
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -87,7 +140,7 @@
 
 ## identity
 
-- uuid `dd3d97ea-e437-8fc4-b509-37a10fcb72f0`
+- uuid `d26be1fc-3ec6-8167-990a-f21cbf9f9723`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -99,4 +152,4 @@
 
 ---
 
-<sub>content-uuid `085f0ac6-1558-8ee8-9058-c2f6c585ee18` · framed by typography partition `config` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bc07d744-8e55-81e8-9a2a-116bf64ae7e7` · framed by typography partition `config` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

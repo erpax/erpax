@@ -25,7 +25,7 @@ import { generateMeta } from '@/generate/meta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
-import { resolvePublicSiteUrl } from '@/rfc/3986'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG

@@ -29,7 +29,7 @@ import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
 } from '@/site/tenant/where'
-import { resolvePublicSiteUrl } from '@/rfc/3986'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 export async function generateStaticParams() {

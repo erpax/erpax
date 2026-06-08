@@ -3,8 +3,8 @@
 
 # dry
 
-path `convention/dry` · uuid `e91f73bb-3172-808a-ba33-bcd0fbd3ab0a` · diamond `27885498-b213-8cc3-aa4e-8b3e37eea214`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `convention/dry` · uuid `d8d7a529-fb32-8f69-bf9c-9ecda7ddc949` · diamond `024ed682-214d-8e2f-9690-086fc09dd375`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/dry·@/uuid/matrix · exports function · escapes —
 links `14/14` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law no duplication — every reference folded to one source; the corpus is DRY i
 
 ---
 
-<sub>content-uuid `7f070cf0-a732-89ad-a456-8a60f6892806` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5b1f40d4-9d75-81dc-87be-86044a361747` · `pnpm readme` · `pnpm computed:check`</sub>

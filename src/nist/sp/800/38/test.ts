@@ -18,7 +18,7 @@ describe('nist/sp/800/38 — AES-256-GCM authenticated field encryption', () => 
     process.env.PAYLOAD_SECRET = 'unit-test-master-secret'
   })
   afterAll(() => {
-    if (prior === undefined) delete process.env.PAYLOAD_SECRET
+    if (prior === undefined) Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     else process.env.PAYLOAD_SECRET = prior
   })
 
@@ -117,7 +117,7 @@ describe('nist/sp/800/38 — AES-256-GCM authenticated field encryption', () => 
   it('decryptField throws when no master secret is available', () => {
     const saved = process.env.PAYLOAD_SECRET
     const ct = encryptField('needs-key') as string
-    delete process.env.PAYLOAD_SECRET
+    Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     try {
       expect(() => decryptField(ct)).toThrow(/PAYLOAD_SECRET/)
     } finally {

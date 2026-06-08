@@ -37,7 +37,7 @@ const documentOwner: RoleDefinition = {
   name: 'owner',
   binding: 'document',
   scopedCollection: null,
-  resource: { relationTo: 'posts', value: 42 },
+  resource: { relationTo: 'posts', value: '42' },
 }
 
 describe('nist/incits/359 — RBAC predicates', () => {

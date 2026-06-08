@@ -134,16 +134,18 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       failed = true
     }
     const rootPath = join(cwd, 'README.md')
-    let actualRoot = ''
-    try {
-      actualRoot = readFileSync(rootPath, 'utf8')
-    } catch {
-      console.error('✖ readme:check — README.md is missing. Run `pnpm readme`.')
-      failed = true
-    }
-    if (!failed && actualRoot !== expectedRoot) {
-      console.error('✖ readme:check — root README drift.')
-      failed = true
+    if (!pathFilter) {
+      let actualRoot = ''
+      try {
+        actualRoot = readFileSync(rootPath, 'utf8')
+      } catch {
+        console.error('✖ readme:check — README.md is missing. Run `pnpm readme`.')
+        failed = true
+      }
+      if (!failed && actualRoot !== expectedRoot) {
+        console.error('✖ readme:check — root README drift.')
+        failed = true
+      }
     }
     const { readme, llm, diamond } = pathFilter
       ? verifyComputedFacesForPaths(pathFilter, cwd)

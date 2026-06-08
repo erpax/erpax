@@ -48,10 +48,12 @@
 import type React from 'react'
 
 import { TrialBalanceWidget, BalanceSheetWidget, IncomeStatementWidget, auditLogWidget } from '@/widget'
-import KPIDashboard from '@/analytics'
-import FinancialRatiosCard from '@/analytics'
-import BudgetVsActualCard from '@/analytics'
-import CostAnalysisCard from '@/analytics'
+import {
+  KPIDashboard,
+  FinancialRatiosCard,
+  BudgetVsActualCard,
+  CostAnalysisCard,
+} from '@/analytics'
 import { trendAnalysisWidget } from '@/analytics'
 
 import {

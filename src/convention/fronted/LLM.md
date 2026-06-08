@@ -3,8 +3,8 @@
 
 # fronted
 
-path `convention/fronted` · uuid `f0d4b2ac-e78c-8153-842b-48887b14eddd` · diamond `8b38f633-8084-8a43-a2fb-f34d61a94a8d`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `convention/fronted` · uuid `1397fef2-ff5a-851a-9158-32ae884391db` · diamond `5f869866-fba2-8925-a6dc-7677b268a5df`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/corpus · exports const·function · escapes —
 links `15/15` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every atom carries valid name + description frontmatter — a SKILL.md missi
 
 ---
 
-<sub>content-uuid `4bb145f1-77a8-85d3-9148-a10b23466fda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e87f082c-f087-877e-8402-0a615db8e436` · `pnpm readme` · `pnpm computed:check`</sub>

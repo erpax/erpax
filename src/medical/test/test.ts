@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { PART, CANONICAL, PARENT, atomPath, reexportFrom } from '@/medical/test'
+import { PART, CANONICAL, PARENT, atomPath, reexportFrom } from './index'
 
 describe('medical/test — vocabulary pivot', () => {
   it('names the medical facet and its canonical atom', () => {

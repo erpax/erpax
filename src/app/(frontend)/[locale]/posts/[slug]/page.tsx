@@ -28,7 +28,7 @@ import PageClient from './page.client'
 import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
 import type { SupportedLocale } from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/rfc/3986'
+import { resolvePublicSiteUrlFromHeaders as resolvePublicSiteUrl } from '@/rfc/3986'
 import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 export async function generateStaticParams() {

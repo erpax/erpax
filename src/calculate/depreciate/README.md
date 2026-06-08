@@ -2,7 +2,7 @@
 
 # depreciate
 
-> atom `calculate/depreciate` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `calculate/depreciate` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,6 +21,28 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `3e9b7296-6955-895e-8ebd-01161ae90250` · `b472d771-a4b2-8c43-9029-3ceab9e4ee67` · `b7d28447-cadc-8836-b5bd-ab16820c5948`
+- content uuids `27f56771-45ae-8fd0-bc06-c213509431a0` · `a9a022ef-71f4-84e0-b144-b039ac9157a6` · `cfd4ff8e-6d13-81fe-b1a5-1df1275c38f8` · `d3e6eebd-99e9-8697-bff3-8023eac3579a`
+
 ## [[entropy]] — gaps · seals
 
 > account code `calculate/depreciate` · currency `eb` (entropy-bit)
@@ -32,7 +54,7 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 | [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
 | [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
@@ -40,15 +62,15 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `3.17` eb | Σ seal `11.385` eb |
+| Σ gap `3.17` eb | Σ seal `10.685` eb |
 
-> net residual `-8.215` eb · seal/gap ratio `3.591` · [[entropy]] · [[seal]]
+> net residual `-7.515` eb · seal/gap ratio `3.371` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `calculate` · sub-root `0426e13a-ff60-8e54-aaf5-24ee96055370`
 - bond degree `13` · analysis neighbors —
-- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -92,19 +114,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·8 | 1 | 100 |
+| ring·1 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `13` · sealed `1` · horo `8`
+- bond degree `13` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `27db78ce-d56b-8fed-81d5-e9a43eb91459`
+- uuid `27f56771-45ae-8fd0-bc06-c213509431a0`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -116,4 +138,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `7f48d138-3534-8b7c-9b83-3a2e7ee9236e` · framed by typography partition `calculate` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86b63c3c-69de-86e4-8055-a5e209060509` · framed by typography partition `calculate` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

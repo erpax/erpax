@@ -13,7 +13,7 @@ describe('nist/sp/800/108 — purpose-bound HMAC-SHA256 key derivation', () => {
     process.env.PAYLOAD_SECRET = 'unit-test-master-secret'
   })
   afterAll(() => {
-    if (prior === undefined) delete process.env.PAYLOAD_SECRET
+    if (prior === undefined) Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     else process.env.PAYLOAD_SECRET = prior
   })
 
@@ -64,7 +64,7 @@ describe('nist/sp/800/108 — purpose-bound HMAC-SHA256 key derivation', () => {
 
   it('returns empty string when no master secret is set (no insecure fallback)', () => {
     const saved = process.env.PAYLOAD_SECRET
-    delete process.env.PAYLOAD_SECRET
+    Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     try {
       expect(deriveSecretFromPayloadSecret('preview')).toBe('')
     } finally {

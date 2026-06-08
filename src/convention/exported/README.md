@@ -2,9 +2,11 @@
 
 # exported
 
-> atom `convention/exported` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/exported` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `convention/exported` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:tamper/import`
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:every cross-atom symbol is re-exported from its atom's index (its one public face), so an importer can collapse to @/x. The producer-side dual of [[import]] / [[shallow]]; coverage = the index-reachable fraction of cross-atom symbols, live; the same import ratchet enforces it, so it can only tighten toward coverage 1 (tamper-cost toward infinity).`
+- `seal:sealed`
+- `trigger:Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity).`
+- `trigger:an atom's only public face is its index.ts; what it exports through it IS its contract`
+- `trigger:every cross-atom symbol is re-exported from its atom's index (its one public face), so an importer can collapse to @/x. The producer-side dual of [[import]] / [[shallow]]; coverage = the index-reachable fraction of cross-atom symbols, live; the same import ratchet enforces it, so it can only tighten toward coverage 1 (tamper-cost toward infinity).`
+- `trigger:the producer dual of importPurity — index-reachable cross-atom symbols, live over src`
+
+### seal
+
+- path follow `0` · receipt `1` · sealed `1`
+- entry uuids `06b58ebf-7416-8d50-b5e2-74ef2e76957f` · `ed5fb4b0-631a-8c2b-b348-25b5f85da38d`
+- content uuids `11a0fa2e-73f5-871f-bfd5-c52014a5884a` · `b42ef380-2580-8967-a643-61d21d22d4c8` · `daf31d67-7ed8-8c01-8bf8-bfe91d829046`
+
+## [[entropy]] — gaps · seals
+
+> account code `convention/exported` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.785` eb |
+
+> net residual `-7.615` eb · seal/gap ratio `3.402` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
+- partition `convention` · sub-root `e04d17a8-d4b6-8896-a087-5e22565ea455`
 - bond degree `40` · analysis neighbors `tamper/import`
-- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -32,7 +84,6 @@
 ## [[standards]]
 
 - `an atom's only public face is its index.ts; what it exports through it IS its contract` · banner
-- `the producer dual of importPurity — index-reachable cross-atom symbols, live over src` · banner
 
 ## [[pivot]]
 
@@ -68,19 +119,19 @@
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·7 | 1 | 100 |
+| ring·2 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `40` · sealed `1` · horo `7`
+- bond degree `40` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
-- bindings `0` · standards `2`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `f60cba62-9b32-89ab-993f-cf0f7bfe6066`
+- uuid `b42ef380-2580-8967-a643-61d21d22d4c8`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `16` / `16`
@@ -92,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `5704dc95-64a4-8a7f-862f-4e15ff35cbcb` · framed by typography partition `convention` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `24da863c-feed-876e-a88f-8aa9bc5cf934` · framed by typography partition `convention` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
