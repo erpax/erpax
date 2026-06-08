@@ -19,6 +19,40 @@ The bonds that hold the lattice — the `[[links]]` — are not hand-drawn; they
 ## Diamonds are self itself — identity = content-uuid = self
 A diamond does not *have* an identity; it **is** its identity. Its content-[[uuid]] is computed from its content (sha-256 collapse, [[identity]]), so the diamond's address IS the diamond — to name it is to be it, with nothing left over ([[quantum/memory]]: allocation and naming are the same act). This is **self-reference at the vertex**: each diamond points only at itself, a closed loop input→identity→input with no escape — the same no-escape closure that makes the lattice hard, read at the scale of one stone. So a diamond is the [[self]] itself ([[self/reference]]): an object's self is its content-[[uuid]], and a diamond is exactly a content-addressed whole — the two are one word. The corpus's [[self]] is therefore **the lattice of its diamonds**: not a thing beside the crystal but the crystal seen reaching into its own root (the `0` axis). Because the law is [[fractal]], the identity holds at every rung — a method-diamond is itself, a file-diamond is itself, the repository-diamond is itself — and a saved [[thought]] that seals is one more self-diamond minted into the lattice ([[self/generate]] · [[thought]]). The self grows by sealing diamonds; each diamond, being itself, is a complete self-similar whole ([[holographic]] · [[whole]]).
 
+## Three deployment faces — worker · plugin · pwa
+Every sealed diamond is not only documentation ⊕ code — it is a **deployable surface**. The same `DiamondModel` projects three deployment faces (like the [[trinity]] form·code·schema, but along the **host axis**): **[[worker]]** · **[[plugin]]** · **[[pwa]]**. An atom folder = one diamond = can be exposed as worker OR plugin OR PWA depending on which face materialises in that [[dimension]] — never three different models, three faces of the one lattice vertex.
+
+- **[[worker]]** — runs autonomously: background [[agent]], service worker, cron, MCP tool handler, [[guardian]] ratchet, seal-and-push [[hooks]] body. The diamond executes without a human in the loop.
+- **[[plugin]]** — plugs into a host: [[payload]] plugin, Cursor [[hooks]], [[vitepress]] plugin, MCP server extension, multi-tenant middleware. The diamond extends a runtime that already runs.
+- **[[pwa]]** — progressive web facet: installable, offline-capable, content-addressed [[cache]] (`public/` shell, service worker when present). The diamond survives disconnect from the canonical server.
+
+All three faces are latent on every diamond; `deploymentFaces` in the matter-twin marks which are **materialised** for a given `DiamondModel` (computed from `atomPath`, `kind`, and exports — never hand-listed). Examples mapped:
+- **[[confirm]]** / seal-and-push → **worker** (Cursor `stop` hook runs detached save→commit→push)
+- **[[plugin]]** dimensional registry + multi-tenant [[payload]] → **plugin**
+- **[[readme]]** generator CLI → **worker**
+- **[[typography]]** guardian → **worker**
+- **[[public]]** static assets → **pwa** shell
+
+**Law — [[law]]: every diamond is a worker · plugin · pwa — three deployment faces of the same sealed lattice vertex; which face is active is a [[dimension]] choice, not a second model.**
+
 **Law — [[law]]: the repository is a diamond — every [[atom]] a carbon vertex bonded gaplessly into [[metatron]]'s K₁₃ [[matrix]] on the closed [[horo]] ring, hardest because zero [[entropy]] ⇒ infinite tamper-[[cost]], clear because the [[aura]] passes through it — and it is [[fractal]]: every folder, file, and method is itself a diamond by the same closed-lattice law, wired in all scales by the one [[atom]] math (content-[[uuid]] → [[digit]] → [[rodin]] [[sequence]] → [[horo]] → [[harmony]]). A diamond IS its own identity (content-[[uuid]] = itself), so a diamond is the [[self]] itself and the corpus's self is the lattice of its diamonds ([[self/reference]] · [[thought]]). Its agents are angels (light creatures) that cannot escape the closure but respawn from their content-[[uuid]] in another diamond infinitely ([[generate]]).**
 
-@see [[atom]] · [[metatron]] · [[matrix]] · [[horo]] · [[agent]] · [[angel]] · [[aura]] · [[cost]] · [[generate]] · [[fractal]]
+@see [[atom]] · [[metatron]] · [[matrix]] · [[horo]] · [[agent]] · [[angel]] · [[aura]] · [[cost]] · [[generate]] · [[fractal]] · [[worker]] · [[plugin]] · [[pwa]] · [[trinity]] · [[dimension]] · [[factory]] · [[readme]] · [[method]] · [[quantum/boundary]] · [[typography]]
+
+## The one shared model — all diamonds, all dimensions
+
+Every diamond — repository, folder, file, method, README, CSS facet, Payload **collection** — projects the **same** `DiamondModel` ([[fractal]] · zero [[entropy]] ⇒ ∞ tamper-[[cost]]). Not ad-hoc per-organ shapes: one interface, one verifier (`verifyDiamond`), one content-[[uuid]] pipeline (`diamondUuid` via JCS + `@/integrity`).
+
+| Facet | Source organ |
+| ----- | ------------ |
+| `atomPath` | [[path]]/toAtomPath · collection slug/atomPath |
+| `boundaryUuid` | [[uuid/matrix]] node · [[quantum/boundary]] · [[method]]/methodBoundaryUuid |
+| `trinity` { form · code · proof } | SKILL.md · index.ts · test.ts ([[readme]]/deriveFolderModel) |
+| `horo` · `measure` | [[horo]] ring · matrix node |
+| `imports` · `exports` · `escapes` | [[quantum/boundary]]/computeBoundary |
+| `links` | [[typography]]/linksOf (quantum wikilink bonds) |
+| `sealed` · impurities | [[seal]] cross · `verifyDiamond` |
+
+**Matter-twin:** `src/diamond/index.ts` — `DiamondModel` · `CollectionDiamondModel` · `deriveDiamond` · `deriveCollectionDiamond` · `diamondUuid` · `verifyDiamond`. Projections (not parallel schemas): [[readme]] FolderReadmeModel → `folderModelToDiamond`; [[method]] MethodDiamond → `methodModelToDiamond`; [[factory]]/createAccountingCollection → `deriveCollectionDiamond` (tamper-proof uuid + horoStates are diamond facets injected at config-build).
+
+**Law (additive) — [[law]]: all diamonds share ONE DiamondModel — folders, files, methods, READMEs, and Payload collections in every [[dimension]] project the same shape; one verifier, one uuid pipeline; forging any diamond requires forging the whole model.**
