@@ -6,6 +6,6 @@
  * The matter side of `./SKILL.md`; clients live in `./api/client`.
  *
  * @see ./api/client (the fetch-only clients + sandbox⊕receipt wrapper)
- * @see @/config/trading-apis (the catalogue / allowlist source)
+ * @see @/trading/api (the catalogue / allowlist source)
  */
 export * from './api/client'

@@ -1,6 +1,6 @@
 /**
  * Trading API Clients — the edge-safe (fetch-only) client layer for the
- * commercial trading-API catalogue in `src/config/trading-apis/index.ts`.
+ * commercial trading-API catalogue in `src/trading/api/index.ts`.
  * The COMMERCIAL sibling of `src/country/api/client/index.ts`: where that file
  * calls the official authorities, this calls the counterparties & intermediaries
  * — payment gateways, marketplaces, shipping carriers, Peppol/EDI access points,
@@ -33,7 +33,7 @@
  * @compliance PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2)
  * @compliance EN-16931 Peppol-BIS-3 e-invoicing access-points (AS4)
  * @audit ISO-19011:2018 audit-trail external-system-evidence (the receipt chain)
- * @see @/config/trading-apis        (the catalogue / metadata registry — the allowlist source)
+ * @see @/trading/api                (the catalogue / metadata registry — the allowlist source)
  * @see @/country/api/client         (the official-authority twin)
  * @see @/sandbox                    (permits · brokerCredential · evaluate)
  * @see @/receipt                    (issueReceipt · verifyReceiptChain — the uuid-chained audit)
@@ -42,7 +42,7 @@
 
 import { evaluate, brokerCredential, type ToolGrant, type ToolAction } from '@/sandbox'
 import { issueReceipt, type Decision, type Receipt } from '@/receipt'
-import { getTradingApis } from '@/config/trading-apis'
+import { getTradingApis } from '@/trading/api'
 
 // ─── The shared result envelope (mirrors src/country/api/client/index.ts) ─────
 

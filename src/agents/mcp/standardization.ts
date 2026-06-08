@@ -59,7 +59,7 @@ export const CANONICAL_AREAS: ReadonlyArray<string> = [
   //   versions — version restore / reify (erpax.versions.restore)
   // Added explicitly per the Law 38 conscious-taxonomy gate.
   'batch', 'versions',
-  // Commercial trading-API registry surface (src/config/trading-apis) — the
+  // Commercial trading-API registry surface (src/trading/api) — the
   // commercial sibling of country-apis: erpax.trading.list lets agents discover
   // which payment/marketplace/shipping/banking/FX integrations a region supports.
   'trading',
@@ -135,7 +135,7 @@ export const MCP_STANDARDS_INDEX: ReadonlyArray<McpStandardEntry> = [
   { id: 'ISO/IEC 25010:2023 §5.3 usability — discoverability', family: 'iso', title: 'Readiness manifest',
     modules: ['platform-readiness/index.ts'] },
   { id: 'ISO/IEC 25010:2023 §5.4 reusability', family: 'iso', title: 'DRY by detection + Trinity',
-    modules: ['agents/mcp/dry-clean.ts', 'architecture-invariants/trinity.ts'], conservationLaws: [50] },
+    modules: ['agents/mcp/dry-clean.ts', 'architecture/invariant/trinity.ts'], conservationLaws: [50] },
   { id: 'ISO/IEC 25010:2023 §5.5 testability', family: 'iso', title: 'Self-test smoke probe',
     modules: ['agents/mcp/self-test.ts'], conservationLaws: [41] },
   { id: 'ISO/IEC 25010:2023 §5.6 security — non-repudiation', family: 'iso', title: 'Signed ballots + content uuids',
@@ -145,7 +145,7 @@ export const MCP_STANDARDS_INDEX: ReadonlyArray<McpStandardEntry> = [
   { id: 'ISO/IEC/IEEE 29119-2', family: 'iso', title: 'Software testing process',
     modules: ['agents/mcp/self-test.ts'], conservationLaws: [41] },
   { id: 'ISO 19011:2018 §6.4.6', family: 'iso', title: 'Audit-evidence + traceability',
-    modules: ['architecture-invariants/checks.ts'], conservationLaws: [38, 44] },
+    modules: ['architecture/invariant/checks.ts'], conservationLaws: [38, 44] },
   { id: 'ISO/IEC 27001 §A.9.4.5', family: 'iso', title: 'Information access restriction (short uuids in UI)',
     modules: ['integrity/uuid-short.ts'], conservationLaws: [46] },
   { id: 'ISO/IEC 27040:2024', family: 'iso', title: 'Storage security',

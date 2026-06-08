@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `post` · sub-root `4b929392-bbf0-8248-b12e-ff86aabc4e28`
-- bond degree `70` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `purity` · `relocate` · `typography` · `unavoidable`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `72` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `maxtampercost` · `purity` · `relocate` · `typography` · `unavoidable`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `a792b19d-e219-875b-976c-bee11b1765e2` · framed by typography partition `post` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0f72f8eb-4ce1-8e8f-a1e5-e2ca5901a052` · framed by typography partition `post` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

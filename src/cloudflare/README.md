@@ -2,7 +2,7 @@
 
 # cloudflare
 
-> atom `cloudflare` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `cloudflare` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -11,29 +11,32 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `20` | [[balance]] `20` |
+| [[balance]] `3` | [[liability]]/[[links]]/dangling `3` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `9` | Σ `9` |
+| [[asset]]/[[cloudflare]]/ai/bindings `9` | [[balance]] `9` |
+| [[asset]]/[[cloudflare]]/wrangler/bindings `27` | [[balance]] `27` |
+| Σ `67` | Σ `67` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `cloudflare` · sub-root `6d217abe-fbe3-8eb7-ba5c-b4f6d6537fdb`
-- bond degree `21` · analysis neighbors `agent` · `ai` · `diamond` · `hallucination` · `innovation` · `purity` · `secret`
-- graph root `23140149-8802-89de-96e4-f51d66b7c67e`
+- bond degree `40` · analysis neighbors `agent` · `ai` · `diamond` · `innovation` · `secret`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `8e6ca479-db8e-895f-8e9d-ac04195ec061`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
-- links `15` / `15`
-- folded `0` · escapes `0`
+- links `20` / `23`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
@@ -41,4 +44,4 @@
 
 ---
 
-<sub>content-uuid `effac258-e437-8be9-9064-8a9b0ea1899a` · framed by typography partition `cloudflare` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `61562731-c1fb-88a2-9e97-4de886686094` · framed by typography partition `cloudflare` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

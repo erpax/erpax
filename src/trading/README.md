@@ -2,7 +2,7 @@
 
 # trading
 
-> atom `trading` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `trading` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -10,7 +10,7 @@
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[trinity]]/proof `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
@@ -23,22 +23,22 @@
 
 ## typography graph
 
-- partition `trading` · sub-root `b0d00b62-7748-8923-8fcf-be00c361b1db`
-- bond degree `43` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- partition `trading` · sub-root `570b9de2-c2b5-8612-bdc5-e2eabc92755f`
+- bond degree `44` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
 - uuid `b0d00b62-7748-8923-8fcf-be00c361b1db`
 - bonds in `13` · out `13`
-- trinity form·code·proof `1`·`1`·`0`
+- trinity form·code·proof `1`·`1`·`1`
 - links `35` / `35`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fa2a44d4-6500-83aa-ba5b-a18cbbb2e405` · framed by typography partition `trading` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `85eb5485-4d04-8d65-be74-2942cfc9db93` · framed by typography partition `trading` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

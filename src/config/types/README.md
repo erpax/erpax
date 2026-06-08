@@ -2,7 +2,7 @@
 
 # types
 
-> atom `config/types` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `config/types` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,21 @@
 ## typography graph
 
 - partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
-- bond degree `49` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `75` · analysis neighbors `agent`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `54e9a6fa-48a6-80c4-aff4-395f79554e49`
-- bonds in `8` · out `6`
+- uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59`
+- bonds in `21` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7b202eea-b78e-8f1a-81f6-73b044bcf280` · framed by typography partition `config` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f93748e9-1367-87f7-bb31-297ea5a394eb` · framed by typography partition `config` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>

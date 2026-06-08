@@ -49,8 +49,8 @@ import {
 } from '@/config/country-specifics'
 import type { CountryApi } from '@/config/country-apis'
 import { COUNTRY_APIS, BANK_APIS, hasEInvoicingPortal } from '@/config/country-apis'
-import type { TradingApi } from '@/config/trading-apis'
-import { getTradingApis } from '@/config/trading-apis'
+import type { TradingApi } from '@/trading/api'
+import { getTradingApis } from '@/trading/api'
 import { extractIbanCountry, isValidIban } from '@/iban'
 
 export interface CountryContext {
@@ -68,7 +68,7 @@ export interface CountryContext {
    * Every commercial trading API in scope for the country (payment gateways,
    * marketplaces, carriers, Peppol/EDI, banking aggregators, FX) — the
    * commercial sibling of `apis`. GLOBAL + (for EU members) EU-wide providers
-   * are unioned in. See `src/config/trading-apis/`.
+   * are unioned in. See `src/trading/api/`.
    */
   readonly tradingApis: ReadonlyArray<TradingApi>
   /** Bound helpers — branch on country without reaching into the registries. */

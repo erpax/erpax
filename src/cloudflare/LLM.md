@@ -3,15 +3,15 @@
 
 # cloudflare
 
-path `cloudflare` · uuid `—` · diamond `9fa05135-506b-8edd-af50-ef3f20c0fa73`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `cloudflare` · uuid `8e6ca479-db8e-895f-8e9d-ac04195ec061` · diamond `09889496-0f6d-890f-9915-f0da99e63347`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/integrity · exports AI_GATEWAY_VAR_KEYS·AI_STACK_BINDING_TYPES·AnalyticsEngineDataset·BrowserBinding·CLOUDFLARE_BINDING_TYPES·CLOUDFLARE_SEAL_KID·D1Database·DurableObjectNamespace·EmailSendBinding·KVNamespace·MediatorAuthorizer·Queue·R2Bucket·VectorizeIndex·WRANGLER_BINDING_ENV_KEYS·WRANGLER_SECRET_ENV_KEYS·agentAiWorkerFace·aiBindingDiamond·aiModelAtomPath·aiSecretIdentity·async·bindingAtomPath·bindingBoundaryUuid·bindingDeploymentFaces·bindingDiamond·canonicalizeCloudflareConfig·cloudflareAiAccountingExtras·cloudflareBindingDiamond·cloudflareBindingFace·cloudflareConfigContentUuid·decryptCloudflareAiSecretIfUuid·decryptCloudflareIfUuid·deriveAiBindingDiamonds·deriveWranglerBindingDiamonds·deriveWranglerDiamonds·filterAiBindings·function·interface·isAiRelatedBinding·loadRepoAiBindings·mergeCloudflareBinding·parseWranglerBindings·sealCloudflareAiSecret·sealCloudflareConfig·stripJsoncComments·type·verifyAiBindingDiamonds·wranglerEnvToCloudflareConfig · escapes —
-links `15/15` · folded `0` · bonds in `0` out `0`
+links `20/23` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
-neighbors → — · ← —
-analysis agent·ai·diamond·hallucination·innovation·purity·secret
-law Cloudflare Workers AI bindings are sealed diamonds wired at every scale; test-first ([[innovation]]).
+neighbors → access·agent·ai·audit·confirm·diamond·innovation·law·path·secret · ← access·agent·ai·audit·confirm·diamond·innovation·law·path·secret
+analysis agent·ai·diamond·innovation·secret
+law serverless IS the quantum host — every Cloudflare binding is a superposed facet that collapses to a sealed diamond; erpax deployed on Workers IS the existence proof (`proveServerlessQuantum` · [[quantum/serverless]]).
 
 ---
 
-<sub>content-uuid `456c8dfb-3fbe-8356-ae26-6180475fd66d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1aec764b-d418-8f8f-abaf-3fbfa2bbb4df` · `pnpm readme` · `pnpm computed:check`</sub>

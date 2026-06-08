@@ -2,7 +2,7 @@
 
 # tool
 
-> atom `agents/mcp/tool` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `agents/mcp/tool` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,59 @@
 ## typography graph
 
 - partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `15` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `19` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from the live area builders; never hand-asserted` · banner
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2023/1113` · catalogue
+- `EU-2023/2854` · catalogue
+- `EU-2023/956-CBAM` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27002` · catalogue
+- `ISO/IEC 25010:2023 §5.7 modularity` · banner
+- `ISO/IEC 25010:2023 §5.7 modularity · MCP 0.6` · banner
+- `ISO/IEC-25010` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `MCP` · catalogue
+- `NIST-SP-800-162` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `RFC-9562` · catalogue
+- `W3C-DID-1.0` · catalogue
+- `W3C-WAI-ARIA-1.2` · catalogue
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `25`
 
 ## identity
 
-- uuid `be4046de-d5b2-8b34-8ead-76c01334612b`
-- bonds in `2` · out `2`
+- uuid `4f4610e2-8769-816b-8544-8f265cc4a990`
+- bonds in `5` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `8a15a607-0684-8450-bdab-493d840b619c` · framed by typography partition `agents` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87b90022-c794-83df-add6-2512a5ecdda0` · framed by typography partition `agents` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

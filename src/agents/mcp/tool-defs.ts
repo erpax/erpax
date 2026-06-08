@@ -51,7 +51,7 @@ import {
 } from '@/spec/generator'
 import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/business/chain'
-import { getTradingApis, getTradingApisByCategory, type TradingApiCategory } from '@/config/trading-apis'
+import { getTradingApis, getTradingApisByCategory, type TradingApiCategory } from '@/trading/api'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/integrity'
 // `@/cloning` is imported for TYPES ONLY at module scope (erased at runtime). Its
 // runtime fns (publishSelf / bootFromFederation) are pulled LAZILY inside the two

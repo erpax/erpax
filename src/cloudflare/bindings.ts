@@ -67,6 +67,11 @@ export type CloudflareBindingFace =
   | 'seal'
   | 'backend'
 
+/** Atoms linked to a binding type (TYPE_LINKS leaf names + single-word paths). */
+export function atomsLinkedByBindingType(type: CloudflareBindingType): readonly string[] {
+  return TYPE_LINKS[type]
+}
+
 const TYPE_LINKS: Readonly<Record<CloudflareBindingType, readonly string[]>> = {
   d1_databases: ['database', 'cloudflare', 'diamond', 'path'],
   r2_buckets: ['storage', 'cloudflare', 'pwa', 'path'],

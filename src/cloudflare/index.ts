@@ -16,6 +16,7 @@ export {
   bindingDiamond,
   cloudflareBindingDiamond,
   bindingAtomPath,
+  atomsLinkedByBindingType,
   bindingBoundaryUuid,
   cloudflareBindingFace,
   bindingDeploymentFaces,

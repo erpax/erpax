@@ -2,7 +2,7 @@
 
 # accounting
 
-> atom `agents/accounting` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `agents/accounting` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,37 @@
 ## typography graph
 
 - partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `735` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `739` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IAS-7` · catalogue
+- `IFRS-15` · catalogue
+- `SOX` · catalogue
+
+## analytics
+
+- bond degree `739` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `ad355258-c719-81be-b94f-269e50dd133a`
-- bonds in `225` · out `221`
+- uuid `fd3e612d-c5be-8dcb-a973-232bb1198fa2`
+- bonds in `228` · out `225`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0fa14637-1198-88bf-b62e-f061a3cd80fe` · framed by typography partition `agents` bonds `735` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `26947ced-a888-8c44-828c-ec10f3ddc856` · framed by typography partition `agents` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>

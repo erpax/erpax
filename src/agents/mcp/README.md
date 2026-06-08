@@ -2,7 +2,7 @@
 
 # mcp
 
-> atom `agents/mcp` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `agents/mcp` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,59 @@
 ## typography graph
 
 - partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `140` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `160` · analysis neighbors `agent`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `ECMA-402` · catalogue
+- `EU-1958` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2023/1113` · catalogue
+- `EU-2023/2854` · catalogue
+- `EU-2023/956-CBAM` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27002` · catalogue
+- `ISO/IEC-25010` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `ISO/IEC-29119` · catalogue
+- `ISO/IEC/IEEE-29119` · catalogue
+- `MCP` · catalogue
+- `MCP 0.6 — Model Context Protocol tools/list + tools/call` · banner
+- `NIST-SP-800-162` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `OWASP-ASVS` · catalogue
+- `re-exports only; the truth lives in ./in-process-client and ./tool-defs` · banner
+- `RFC-7231` · catalogue
+- `RFC-9562` · catalogue
+- `W3C-DID-1.0` · catalogue
+- `W3C-JSON-LD-1.1` · catalogue
+- `W3C-WAI-ARIA-1.2` · catalogue
+
+## analytics
+
+- bond degree `160` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `33`
 
 ## identity
 
-- uuid `be236224-ec0d-8ef8-bcb5-8cbbd642b75b`
-- bonds in `36` · out `44`
+- uuid `5f105b12-20b5-82f1-8c73-516cf2a12909`
+- bonds in `44` · out `52`
 - trinity form·code·proof `1`·`1`·`1`
 - links `39` / `39`
 - folded `1` · escapes `0`
@@ -41,4 +87,4 @@
 
 ---
 
-<sub>content-uuid `4fc22272-e322-8a48-a5de-4e831ad1de03` · framed by typography partition `agents` bonds `140` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8b74d3e0-30c7-87b8-a65b-167f9065aa5b` · framed by typography partition `agents` bonds `160` · `pnpm readme` · `pnpm readme:check`</sub>

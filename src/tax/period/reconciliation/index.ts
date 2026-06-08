@@ -23,6 +23,10 @@
  * @invariant Tax-period-specific eliminations prepared (posted only after tax authority approval)
  * @invariant All tax adjustment journals include supporting documentation (audit trail)
  */
+import { horoRatio } from '@/horo'
+
+/** Documentation completeness default — horo unity per decade (9/10), not a `0.9` literal. */
+export const TRANSFER_PRICING_DOC_TOLERANCE = horoRatio(9)
 
 interface TransferPricingAdjustment {
   fromEntity: string
@@ -90,12 +94,12 @@ export class TaxPeriodReconciliation {
    * Validate transfer pricing adjustment documentation.
    *
    * @param adjustment - Transfer pricing adjustment
-   * @param tolerance - Documentation completeness tolerance (0.0-1.0, default 0.9 = 90% complete)
+   * @param tolerance - Documentation completeness tolerance (0.0-1.0, default 9/10)
    * @returns boolean indicating whether adjustment is sufficiently documented
    */
   static validateTransferPricingDocumentation(
     adjustment: TransferPricingAdjustment,
-    tolerance: number = 0.9,
+    tolerance: number = TRANSFER_PRICING_DOC_TOLERANCE,
   ): boolean {
     // Check: transaction type specified
     const hasTransactionType = !!adjustment.transactionType

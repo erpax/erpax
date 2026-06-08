@@ -2,7 +2,7 @@
 
 # ai
 
-> atom `cloudflare/ai` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `cloudflare/ai` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,34 +11,35 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `9` | Σ `9` |
+| [[asset]]/[[cloudflare]]/ai/bindings `9` | [[balance]] `9` |
+| Σ `18` | Σ `18` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `cloudflare` · sub-root `6d217abe-fbe3-8eb7-ba5c-b4f6d6537fdb`
-- bond degree `27` · analysis neighbors `cloudflare` · `diamond` · `hallucination` · `purity`
-- graph root `23140149-8802-89de-96e4-f51d66b7c67e`
+- bond degree `41` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `d8068dfd-9584-8b92-b5f9-12ae7fc9ed97`
-- bonds in `4` · out `4`
+- uuid `76b57c9d-9ec1-833f-a3eb-6ed37e897098`
+- bonds in `11` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `26b747e3-e68b-8708-ac4a-c65814e1c360` · framed by typography partition `cloudflare` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9dc5a833-7133-87be-af48-a4b582a11fdf` · framed by typography partition `cloudflare` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,5 +1,5 @@
 /**
- * MCP api-key scopes — collapse the materialized capability MATRIX to the cross.
+ * scopes — collapse MCP api-key capability matrix to the cross.
  *
  * `@payloadcms/plugin-mcp` generates one boolean toggle COLUMN per
  * collection×operation on its api-keys collection (`<slug>.{create,find,update,

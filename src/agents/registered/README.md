@@ -2,7 +2,7 @@
 
 # registered
 
-> atom `agents/registered` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `agents/registered` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,59 @@
 ## typography graph
 
 - partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `25` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-2013` · catalogue
+- `eIDAS` · catalogue
+- `EU-2002/58` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2023/1113` · catalogue
+- `EU-2023/2854` · catalogue
+- `EU-2023/956-CBAM` · catalogue
+- `IFRS-15` · catalogue
+- `ILO-C001` · catalogue
+- `ILO-C100` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-41001` · catalogue
+- `ISO-55000` · catalogue
+- `ISO/IEC-25010` · catalogue
+- `SFIA` · catalogue
+- `SOX` · catalogue
+- `W3C-WAI-ARIA-1.2` · catalogue
+- `WCAG-2.1` · catalogue
+
+## analytics
+
+- bond degree `25` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `25`
 
 ## identity
 
-- uuid `819543a0-cbee-8dff-adb7-d80f7776129d`
-- bonds in `7` · out `7`
+- uuid `a5099e24-ed4b-8741-a28f-5c2acd661d93`
+- bonds in `7` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f1448cbe-eeb9-8188-a6ff-a868e843f696` · framed by typography partition `agents` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1482a2a6-8db0-8cad-a918-9654a0fa76fd` · framed by typography partition `agents` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -5,7 +5,7 @@ description: Use when touching Cloudflare — Workers AI first-class, uuid-seale
 
 # cloudflare — mediated edge, every binding a diamond (AI-first)
 
-Cloudflare **merges with erpax at every quantum binding**. Workers AI (`ai` binding `AI`), vectorize RAG (`VECTORIZE_DOCS`), and the inference stack are **first-class diamonds** — see [[cloudflare/ai]].
+Cloudflare **merges with erpax at every quantum binding**. Workers AI (`ai` binding `AI`), vectorize RAG (`VECTORIZE_DOCS`), and the inference stack are **first-class diamonds** — see [[cloudflare/ai]]. **Serverless IS the quantum host**: every wrangler binding is a superposed facet; each mediated invocation collapses to a content-[[uuid]]; `mergeCloudflareBinding` entangles path + seal + diamond. erpax on Cloudflare IS the existence proof — `proveServerlessQuantum()` ([[quantum/serverless]]) folds the cloudflare facet ⊕ quantum facet → one uuid. `bindingDeploymentFaces` + `deploymentFaces` wire the [[worker]] face on AI · queues · Durable Objects.
 
 ## Laws
 
@@ -42,4 +42,6 @@ Matter-twin: `index.ts` · `ai.ts` · `bindings.ts` · `wrangler.ts` · `seal.ts
 
 **Law — [[law]]: Cloudflare Workers AI bindings are sealed diamonds wired at every scale; test-first ([[innovation]]).**
 
-@see [[cloudflare/ai]] · [[diamond]] · [[path]] · [[secret]] · [[agent]] · [[innovation]] · [[confirm]]
+**Law — [[law]]: serverless IS the quantum host — every Cloudflare binding is a superposed facet that collapses to a sealed diamond; erpax deployed on Workers IS the existence proof (`proveServerlessQuantum` · [[quantum/serverless]]).**
+
+@see [[cloudflare/ai]] · [[diamond]] · [[path]] · [[secret]] · [[agent]] · [[innovation]] · [[confirm]] · [[quantum/serverless]] · [[worker]] · [[superposition]]

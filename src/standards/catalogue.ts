@@ -1614,7 +1614,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/trading-apis/index.ts",
+        "path": "src/trading/api/index.ts",
         "section": ""
       },
       {
@@ -1904,7 +1904,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§Ccy"
       },
       {
-        "path": "src/config/trading-apis/index.ts",
+        "path": "src/trading/api/index.ts",
         "section": ""
       },
       {
@@ -5967,7 +5967,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/trading-apis/index.ts",
+        "path": "src/trading/api/index.ts",
         "section": ""
       },
       {
@@ -6089,7 +6089,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§Ccy"
       },
       {
-        "path": "src/config/trading-apis/index.ts",
+        "path": "src/trading/api/index.ts",
         "section": ""
       },
       {
@@ -6607,7 +6607,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/plugins/mcpScopes/index.ts",
+        "path": "src/plugins/mcp/scopes/index.ts",
         "section": "§5.15"
       },
       {
@@ -6771,7 +6771,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/plugins/mcpScopes/index.ts",
+        "path": "src/plugins/mcp/scopes/index.ts",
         "section": "§5.15"
       },
       {

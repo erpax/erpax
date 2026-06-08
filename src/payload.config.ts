@@ -16,7 +16,7 @@ import { r2Storage } from '@payloadcms/storage-r2'
 import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
-import { collapseApiKeyScopes } from '@/plugins/mcpScopes'
+import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { versionsPlugin } from '@/plugins/versions'
 import { skillRouterPlugin } from './skill/router/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
@@ -411,7 +411,7 @@ export default buildConfig({
       },
       // Collapse the 824-column capability matrix (over D1's 100-col cap) to a
       // compact `scopes` field + virtual afterRead capabilities — the same
-      // matrix→cross collapse as access. See src/plugins/mcpScopes.
+      // matrix→cross collapse as access. See src/plugins/mcp/scopes.
       overrideApiKeyCollection: (collection) =>
         collapseApiKeyScopes({
           ...collection,

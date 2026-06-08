@@ -24,13 +24,53 @@
 ## typography graph
 
 - partition `analytics` · sub-root `496bc66f-de12-8dce-94f7-0c34d1d7570b`
-- bond degree `70` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `purity` · `relocate` · `typography` · `unavoidable`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `80` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `maxtampercost` · `purity` · `relocate` · `typography` · `unavoidable`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed on the live uuid-matrix + balance/entropy/standards, never hand-asserted` · banner
+- `ECMA-262` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `ISO-4217` · catalogue
+- `ISO-8601-1` · catalogue
+- `ISO/IEC-25010` · catalogue
+- `ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects` · banner
+- `ISO/IEC-29119` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `W3C-WAI-ARIA-1.2` · catalogue
+
+## analytics
+
+- bond degree `80` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `27`
 
 ## identity
 
 - uuid `1e1d4000-e724-879d-846e-e62b59be6535`
-- bonds in `19` · out `19`
+- bonds in `23` · out `23`
 - trinity form·code·proof `1`·`1`·`1`
 - links `27` / `27`
 - folded `1` · escapes `0`
@@ -41,4 +81,4 @@
 
 ---
 
-<sub>content-uuid `97c01af8-2dde-8bd3-bc7a-25345de1ef3c` · framed by typography partition `analytics` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d17dafd3-b254-8192-9e1f-d5f04dc46065` · framed by typography partition `analytics` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

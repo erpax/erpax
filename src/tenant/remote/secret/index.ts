@@ -79,7 +79,7 @@ export async function resolveStripeSecretForTransaction(
 }
 
 /**
- * Per-tenant credential for a commercial trading API (see `src/config/trading-apis/`).
+ * Per-tenant credential for a commercial trading API (see `src/trading/api/`).
  * Permissive by design — different providers need different fields (key, secret,
  * OAuth client pair, Basic user/pass, a per-merchant base-URL override like Adyen's
  * `{PREFIX}` or a self-hosted store host). All optional; the client reads what its

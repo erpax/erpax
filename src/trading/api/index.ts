@@ -1,6 +1,8 @@
 /**
  * Commercial trading-API registry — the COMMERCIAL sibling of the official
- * per-country authority registry (`src/config/country-apis/index.ts`).
+ * per-country authority registry (`src/config/country-apis/index.ts`). Lives at
+ * `src/trading/api/` — the one-word diamond path for the commercial catalogue
+ * (relocated from the hyphenated `config/trading-apis` violation).
  *
  * **What this is:** a structured catalogue of the third-party commercial
  * services a trading company plugs into — payment gateways, direct-debit &

@@ -2,7 +2,7 @@
 
 # fallback
 
-> atom `country/fallback` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `country/fallback` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -23,22 +23,22 @@
 
 ## typography graph
 
-- partition `country` · sub-root `848e38e2-9727-8485-8282-1c51d8b96a6c`
-- bond degree `28` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
+- bond degree `38` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `42746b65-8828-897b-b149-91b213d85557`
-- bonds in `4` · out `4`
+- uuid `f3f780cd-92f5-8d97-b005-9a31da4f3822`
+- bonds in `11` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `974e80a8-f083-854f-aff8-85ff90a2ce42` · framed by typography partition `country` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `201d0680-abd1-861d-9c96-6b29bf73c4ec` · framed by typography partition `country` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
