@@ -35,7 +35,7 @@
 
 import type { Payload } from 'payload'
 import { computeAgingBuckets, type AgingBucket, type BucketDefinition } from '@/party'
-import { DebitCreditLogic } from './debit-credit'
+import { DebitCreditLogic } from '../debit'
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 

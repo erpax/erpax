@@ -75,6 +75,32 @@ const eslintConfig = defineConfig([
     },
   },
   {
+    files: ['src/**/*.{ts,tsx}'],
+    ignores: ['src/migrations/*_*.ts', '**/*.generated.ts', 'src/payload-types.ts'],
+    rules: {
+      'id-length': [
+        'warn',
+        {
+          min: 2,
+          max: 28,
+          exceptions: ['_', 'i', 'j', 'k', 'x', 'y', 'z', 'id', 'ok', 'eb', 'fn', 'ts', 'ui', 'ms', 'db', 'cp', 'dr', 'cr'],
+          properties: 'never',
+        },
+      ],
+      'no-restricted-syntax': [
+        'warn',
+        {
+          selector: 'LineComment[value=/\\bTODO\\b(?!\\s*\\([A-Z0-9][A-Z0-9_-]*\\))/i]',
+          message: 'TODO requires ticket: TODO(TICKET-123)',
+        },
+        {
+          selector: 'BlockComment[value=/\\bTODO\\b(?!\\s*\\([A-Z0-9][A-Z0-9_-]*\\))/i]',
+          message: 'TODO requires ticket: TODO(TICKET-123)',
+        },
+      ],
+    },
+  },
+  {
     rules: {
       '@typescript-eslint/ban-ts-comment': 'warn',
       '@typescript-eslint/no-empty-object-type': 'warn',

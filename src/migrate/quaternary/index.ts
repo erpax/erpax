@@ -24,8 +24,17 @@ import { readdirSync } from 'node:fs'
 import { join, extname } from 'node:path'
 import { isRealDir } from '@/aura'
 
-/** Canonical word-atom files -- one per role, per folder. */
-export const CANONICAL = ['SKILL.md', 'index.ts', 'test.ts', 'translations.ts', 'seed.ts', 'README.md'] as const
+/** Canonical word-atom files — trinity + computed faces (aligned with diamond/membership). */
+export const CANONICAL = [
+  'SKILL.md',
+  'index.ts',
+  'test.ts',
+  'translations.ts',
+  'seed.ts',
+  'README.md',
+  'LLM.md',
+  'diamond.json',
+] as const
 /** Files the frameworks require (Next.js app router · Payload · admin) -- all allowed. */
 export const FRAMEWORK = new Set<string>([
   'page.tsx', 'layout.tsx', 'loading.tsx', 'not-found.tsx', 'error.tsx', 'global-error.tsx',
@@ -38,8 +47,22 @@ export const FRAMEWORK = new Set<string>([
 export const ASSET_EXT = new Set<string>(['.json', '.jsonld', '.scss', '.css', '.webp', '.png', '.svg', '.ico', '.woff', '.woff2', '.d.ts'])
 const CANON = new Set<string>(CANONICAL)
 
+/** Lawful generated emit — never hand-edited gate inputs (coordinate b2f75a6f). */
+const GENERATED_FACE = /\.generated\.(ts|json)$/i
+/** CLI entry scripts at atom roots (package.json · diamond COLOCATED). */
+const CLI_SCRIPT = /\.mjs$/i
+const MODULE_SCRIPT = /\.mts$/i
+/** UI facet components — admin · marketing (aligned with diamond .tsx allowlist). */
+const UI_FACET = /\.tsx$/i
+
 const isAllowed = (file: string): boolean =>
-  CANON.has(file) || FRAMEWORK.has(file) || ASSET_EXT.has(extname(file))
+  CANON.has(file) ||
+  FRAMEWORK.has(file) ||
+  ASSET_EXT.has(extname(file)) ||
+  GENERATED_FACE.test(file) ||
+  CLI_SCRIPT.test(file) ||
+  MODULE_SCRIPT.test(file) ||
+  UI_FACET.test(file)
 
 export interface Violation {
   readonly folder: string

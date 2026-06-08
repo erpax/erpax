@@ -355,8 +355,8 @@ export function taskInventory(opts: TaskInventoryOpts = {}): TaskInventoryResult
       const parsed = parseTerminalFile(join(terminalsDir, f), nowMs)
       if (!parsed || parsed.done) continue
       if (parsed.cwd && parsed.cwd !== cwd) continue
-      const idleSec = Math.floor((nowMs - parsed.lastActivityMs) / 1000)
-      const status: InventoryStatus = idleSec >= staleAfterSec ? 'stale' : 'active'
+      const status: InventoryStatus =
+        parsed.ageSeconds >= staleAfterSec ? 'stale' : 'active'
       rawRows.push({
         id: parsed.id,
         ageSeconds: parsed.ageSeconds,

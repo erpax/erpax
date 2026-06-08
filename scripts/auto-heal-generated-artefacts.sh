@@ -42,7 +42,7 @@ healed=()
 
 # ── Artefact 1 (docs/STANDARDS_INDEX.md) REMOVED ─────────────────────
 # The loose generated md violated md-purity (only SKILL.md is allowed) and was
-# superseded by the standards catalogue: scripts/standards-catalogue.ts →
+# superseded by the standards catalogue: src/standards/emit.ts →
 # src/standards/catalogue.ts → src/standards/SKILL.md. No artefact to heal here.
 
 # ── Artefact 1.5: consistency-apply (Slice IIIIIIII 2026-05-11) ──────

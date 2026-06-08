@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { priceTokens, tokenEntry, tokenLedger, type TokenSpend } from './token-ledger'
+import { priceTokens, tokenEntry, tokenLedger, type TokenSpend } from './index'
 
 describe('token-ledger — every inter-agent token spend is a balanced entry (the ledger closes)', () => {
   it('prices tokens at the harmonic anchor (value = anchor × tokens, cents)', () => {

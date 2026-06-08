@@ -25,7 +25,22 @@
 
 - partition `migrate` · sub-root `ed81d63e-1293-89a0-bf2e-6fe5928ff55c`
 - bond degree `38` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO/IEC 25010:2023 §5.1 functional-completeness` · banner
+- `the folder law is computed from the live tree, never hand-maintained` · banner
+
+## analytics
+
+- bond degree `38` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `44dc15a9-2ec2-8653-a7e6-334e540bb614` · framed by typography partition `migrate` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `121639f2-4124-8c1a-8cfe-b52f5f596aba` · framed by typography partition `migrate` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
