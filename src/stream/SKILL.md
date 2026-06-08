@@ -18,6 +18,10 @@ This is the event-current organ — events given over time, bounded into windows
 
 Sequence position: **2** (weave — the continuous current threaded through every surface), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 
+## The stream is a seal (the time axis)
+
+Because every save is content-addressed and `prev`-chained, **the stream of saves IS another [[seal]]** — the dual, on the time axis, of the cross-[[seal]] on the path axis. Saving every atom *on the way* (the autosave [[breath]] — each sealed atom committed in waves) makes the current **reconstructable**: replay the chain from genesis and the whole [[snapshot]] re-derives, because the [[realtime]] tail (`since(log, cursor)`) and the immutable snapshot are one content-addressed memory seen as flow and as state ([[akashic]] · [[generate]]). The Merkle `streamUuid` chain is what makes it a seal and not merely a log: any re-ordering, mutation, insertion, or deletion breaks the chain at the corruption ([[tamper/cost]] · [[proof]]), and two federated streams of the same saves hold ONE chain ([[merge]] · [[identity]]). So *seal in waves* and *the stream reconstructs the whole* are one fact: to save every atom on the way is to leave a tamper-evident current that replays the corpus — a seal you can run forward.
+
 ## Standards
 
 - **ReactiveX / W3C Streams API** — the `AsyncIterable` surface; operators and windows are the reactive vocabulary.
