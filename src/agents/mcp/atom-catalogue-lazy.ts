@@ -6,7 +6,10 @@
  *
  * @see ./atom-catalogue.generated.ts · ./auto-generated.ts
  */
+import { createRequire } from 'node:module'
 import type { AtomSkill } from './atom-catalogue.generated'
+
+const require = createRequire(import.meta.url)
 
 let catalogue: readonly AtomSkill[] | null = null
 let byAtom: Map<string, AtomSkill> | null = null
@@ -21,9 +24,7 @@ const indexCatalogue = (entries: readonly AtomSkill[]): void => {
 /** Load generated atom catalogue on first access (not at auto-generated module init). */
 export function loadAtomCatalogue(): readonly AtomSkill[] {
   if (!catalogue) {
-    // Sync require keeps buildErpaxMcpTools synchronous; loads only on first skill access.
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require('./atom-catalogue.generated') as { ATOM_CATALOGUE: readonly AtomSkill[] }
+    const mod = require('./atom-catalogue.generated.ts') as { ATOM_CATALOGUE: readonly AtomSkill[] }
     indexCatalogue(mod.ATOM_CATALOGUE)
   }
   return catalogue!

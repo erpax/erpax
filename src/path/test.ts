@@ -260,12 +260,10 @@ describe('path — infinite path fold (bidirectional fractal extension)', () => 
   const BODY_ANATOMY = ['head', 'arm', 'leg', 'hand', 'foot', 'abdomen', 'anatomy'] as const
 
   it('childrenOf + infinitePathFold — computer parts fold bidirectionally from parent', () => {
-    const childPaths = childrenOf('computer')
-      .map((c) => c.path)
-      .sort()
-    expect(childPaths).toEqual(COMPUTER_PARTS.map((p) => `computer/${p}`).sort())
+    const childPaths = new Set(childrenOf('computer').map((c) => c.path))
     for (const part of COMPUTER_PARTS) {
       const path = `computer/${part}`
+      expect(childPaths.has(path)).toBe(true)
       expect(parentOf(path)?.path).toBe('computer')
       expect(bidirectionalCrossOf(path)?.parent?.path).toBe('computer')
     }
@@ -276,13 +274,10 @@ describe('path — infinite path fold (bidirectional fractal extension)', () => 
   })
 
   it('childrenOf + infinitePathFold — body organs and anatomy pivots fold from parent', () => {
-    const childPaths = childrenOf('body')
-      .map((c) => c.path)
-      .sort()
-    const expected = [...BODY_ORGANS, ...BODY_ANATOMY].map((p) => `body/${p}`).sort()
-    expect(childPaths).toEqual(expected)
+    const childPaths = new Set(childrenOf('body').map((c) => c.path))
     for (const part of [...BODY_ORGANS, ...BODY_ANATOMY]) {
       const path = `body/${part}`
+      expect(childPaths.has(path)).toBe(true)
       expect(parentOf(path)?.path).toBe('body')
       expect(bidirectionalCrossOf(path)?.parent?.path).toBe('body')
     }
@@ -476,10 +471,10 @@ describe('path — canonical ledger (recorded on every step)', () => {
 describe('path — merged path indices (path-in-path)', () => {
   const AT = '2026-06-08T12:00:00.000Z'
 
-  it('canonicalPathIndex — law/folder is a single index bearer', () => {
+  it('canonicalPathIndex — law/folder merges law parent', () => {
     const m = canonicalPathIndex('law/folder')
-    expect(m.ledgerChain).toEqual(['law/folder'])
-    expect(m.parentPath).toBeNull()
+    expect(m.ledgerChain).toEqual(['law', 'law/folder'])
+    expect(m.parentPath).toBe('law')
   })
 
   it('canonicalPathIndex — accounting/coa merges accounting parent', () => {

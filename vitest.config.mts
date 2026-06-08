@@ -17,7 +17,18 @@ export default defineConfig({
   resolve: {
     tsconfigPaths: true,
   },
+  // skills.index.ts is ~80MB of inline JSON — Vite/SWC transform blows up with
+  // "Failed to convert rust String into napi string". Node native ESM import works;
+  // externalize so Vitest loads it without re-parsing the giant literal.
+  ssr: {
+    external: [/[/\\]skills\.index(?:\.ts)?$/],
+  },
   test: {
+    server: {
+      deps: {
+        external: [/[/\\]skills\.index(?:\.ts)?$/],
+      },
+    },
     name: 'payload-integration',
     environment: 'node',
     environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],

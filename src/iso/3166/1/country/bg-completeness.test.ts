@@ -76,7 +76,7 @@ import {
   parseBgDate,
 } from '@/country/clients/bg/bank/parser'
 
-const REPO_ROOT = resolve(__dirname, '..', '..', '..', '..')
+const REPO_ROOT = resolve(__dirname, '..', '..', '..', '..', '..')
 
 describe('BG implementation — pillar #1: country bundle exists in registry', () => {
   it('BG_COUNTRY_BUNDLE registered + identical to COUNTRY_BUNDLES["BG"]', () => {
@@ -188,11 +188,11 @@ describe('BG implementation — extras shipped on top of the checklist', () => {
   it('BNB rate-sync job wired into payload.config.ts jobs.tasks', () => {
     const config = readFileSync(resolve(REPO_ROOT, 'src/payload.config.ts'), 'utf8')
     expect(config).toContain("slug: 'bg-bnb-rates-sync'")
-    expect(config).toContain("import('./jobs/bnbRatesSync')")
+    expect(config).toContain("import('@/jobs/bnbRatesSync')")
   })
 
   it('BNB rate-sync job module exists at the expected path', () => {
-    expect(existsSync(resolve(REPO_ROOT, 'src/jobs/bnbRatesSync.ts'))).toBe(true)
+    expect(existsSync(resolve(REPO_ROOT, 'src/jobs/bnbRatesSync/index.ts'))).toBe(true)
   })
 })
 

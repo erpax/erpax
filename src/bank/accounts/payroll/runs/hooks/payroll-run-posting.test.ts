@@ -20,7 +20,7 @@
  * @see src/bank/accounts/payroll/runs/hooks/payroll-run.ts
  */
 
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { payrollRunPostingHook } from './payroll-run'
 import { journalEntryService } from '@/journal/entry/service'
 
@@ -47,6 +47,71 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
       },
     },
   }) as unknown as never
+
+interface CapturedEntry {
+  tenantId: string
+  description: string
+  lines: Array<{
+    accountId: string
+    debit?: number
+    credit?: number
+    description: string
+    costCenterId?: string
+  }>
+  sourceType: string
+  sourceId: string
+  sourceEvent: string
+  status: 'draft' | 'posted'
+}
+const store = new Map<string, CapturedEntry>()
+let seq = 0
+
+beforeEach(() => {
+  store.clear()
+  seq = 0
+  vi.spyOn(journalEntryService, 'createEntry').mockImplementation(
+    async (tenantId, req) => {
+      const id = `JE-FAKE-${++seq}`
+      store.set(id, {
+        tenantId,
+        description: req.description,
+        lines: req.lines.map((l) => ({ ...l })),
+        sourceType: req.sourceType,
+        sourceId: req.sourceId,
+        sourceEvent: req.sourceEvent,
+        status: 'draft',
+      })
+      return { id, lines: req.lines, status: 'draft' } as unknown as Awaited<
+        ReturnType<typeof journalEntryService.createEntry>
+      >
+    },
+  )
+  vi.spyOn(journalEntryService, 'postEntry').mockImplementation(
+    async (_tenantId, id) => {
+      const e = store.get(id)
+      if (e) e.status = 'posted'
+      return { id, status: 'posted' } as unknown as Awaited<
+        ReturnType<typeof journalEntryService.postEntry>
+      >
+    },
+  )
+  vi.spyOn(journalEntryService, 'getEntry').mockImplementation(
+    async (_tenantId, id) => {
+      const e = store.get(id)
+      if (!e) return null
+      return {
+        id,
+        tenantId: e.tenantId,
+        lines: e.lines,
+        status: e.status,
+        description: e.description,
+        sourceType: e.sourceType,
+        sourceId: e.sourceId,
+        sourceEvent: e.sourceEvent,
+      } as unknown as Awaited<ReturnType<typeof journalEntryService.getEntry>>
+    },
+  )
+})
 
 describe('PayrollRuns posting hook — status → posted', () => {
   it('books a balanced wages JE for a 2-employee monthly run', async () => {

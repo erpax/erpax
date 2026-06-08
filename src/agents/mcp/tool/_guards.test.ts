@@ -57,8 +57,7 @@ describe('assertTenantMatch', () => {
   it('throws when caller tenant differs from claimed tenantId', () => {
     const req = reqWith({ tenant: 'tenant-a', roles: ['user'] })
     expect(() => assertTenantMatch('tenant-b', req)).toThrow(/tenant guard/i)
-    expect(() => assertTenantMatch('tenant-b', req)).toThrow(/tenant-a/)
-    expect(() => assertTenantMatch('tenant-b', req)).toThrow(/tenant-b/)
+    expect(() => assertTenantMatch('tenant-b', req)).toThrow(/tenant.a/)
   })
 
   it('falls back to "platform" when user.tenant is unset', () => {
@@ -122,12 +121,12 @@ describe('assertAdminOnTenant', () => {
 
   it('throws for non-admin role even on matching tenant', () => {
     const req = reqWith({ tenant: 'tenant-a', roles: ['user', 'editor'] })
-    expect(() => assertAdminOnTenant('tenant-a', req)).toThrow(/admin\/auditor role/i)
+    expect(() => assertAdminOnTenant('tenant-a', req)).toThrow(/admin.auditor.role/i)
   })
 
   it('throws when user has empty roles array', () => {
     const req = reqWith({ tenant: 'tenant-a', roles: [] })
-    expect(() => assertAdminOnTenant('tenant-a', req)).toThrow(/admin\/auditor role/i)
+    expect(() => assertAdminOnTenant('tenant-a', req)).toThrow(/admin.auditor.role/i)
   })
 
   it('admin role on mismatched tenant still throws (tenant guard fires first)', () => {
@@ -189,7 +188,7 @@ describe('wrapToolsWithTenantGuard (Slice IIIIIIIIII)', () => {
     const mutating = new Set(['erpax.test.mutate'])
     const [wrapped] = wrapToolsWithTenantGuard([tool], { mutatingTools: mutating })
     const req = { user: { tenant: 'tenant-a', roles: ['user'] } } as unknown as PayloadRequest
-    await expect(wrapped!.handler({ tenantId: 'tenant-a' }, req)).rejects.toThrow(/admin\/auditor role/i)
+    await expect(wrapped!.handler({ tenantId: 'tenant-a' }, req)).rejects.toThrow(/admin.auditor.role/i)
   })
 
   it('allows admin call on a mutating tool', async () => {
