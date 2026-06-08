@@ -9,27 +9,29 @@
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `port` · sub-root `0a8b9cb1-4214-89ab-8387-145a3ed77cef`
-- bond degree `56` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `58` · analysis neighbors `quantum/boundary` · `tamper/import`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
 - uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a`
 - bonds in `5` · out `5`
-- trinity form·code·proof `1`·`0`·`0`
+- trinity form·code·proof `1`·`1`·`1`
 - links `40` / `40`
 - folded `1` · escapes `0`
 
@@ -39,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `533e5623-c340-8d7e-86ea-acaf31472e40` · framed by typography partition `port` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `03af515f-faec-811f-91ce-f7a4f387854a` · framed by typography partition `port` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>
