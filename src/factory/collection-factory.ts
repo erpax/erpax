@@ -34,6 +34,17 @@
  *   - `injectCreatedBy`    — beforeChange autoPopulateCreatedBy (default true)
  *   - `beforeChangeHooks`  — domain-specific extras (existing)
  *
+ * And opt-in harmony injection (Slice horo-cut1 — the flow-state twin of
+ * the content-uuid injection):
+ *
+ *   - `horoStates`         — declare the lifecycle as positions on the closed
+ *                            1·2·4·8·7·5·9 ring. The factory validateHoroStates
+ *                            at build (off-ring ⇒ throw), injects the measure-
+ *                            ordered select (`horoStateName`, default 'state'),
+ *                            and adds horoStateBeforeChange so off-ring writes
+ *                            are rejected at runtime. uuid pins identity; horo
+ *                            pins flow harmony.
+ *
  * Collection files become ~20 lines of pure domain intent:
  *
  *   export default createAccountingCollection({
@@ -75,6 +86,7 @@
  * @see docs/STANDARDS.md §4.2
  * @see src/plugins/auth/access.ts
  * @see src/plugins/accounting/fields/base-accounting-fields.ts
+ * @see src/horo/index.ts (the horoStates harmony ring)
  */
 
 import type {
@@ -105,6 +117,15 @@ import {
 import {
   tamperProofUuidField, tamperProofBeforeChangeHook,
 } from '@/integrity'
+// Slice horo-cut1 (2026-06-08) — harmony twin of the content-uuid
+// injection. When a collection declares `horoStates`, the factory rides
+// its flow-state field on the closed 1·2·4·8·7·5·9 ring: build-time
+// `validateHoroStates` (off-ring/out-of-order/dup ⇒ throw), the measure-
+// ordered `horoStateField` select, and the `horoStateBeforeChange` write
+// validator. content-uuid enforces IDENTITY; horo enforces flow HARMONY.
+import {
+  horoStateField, validateHoroStates, horoStateBeforeChange, type HoroState,
+} from '@/horo'
 
 export interface StatusOption {
   readonly label: string
@@ -195,6 +216,22 @@ export interface AccountingCollectionOptions {
   readonly statusOptions?: ReadonlyArray<StatusOption>
   readonly statusDefault?: string
 
+  /**
+   * Slice horo-cut1 (2026-06-08) — declare the collection's flow lifecycle
+   * as positions on the closed horo ring (`[1,2,4,8,7,5,9]`). When set, the
+   * factory enforces the math three ways: it runs `validateHoroStates` at
+   * config-build (an off-ring, out-of-order, or duplicate ring THROWS, so a
+   * disharmonious collection can never be sanitized into the schema), injects
+   * the measure-ordered `horoStateField` select under `horoStateName`
+   * (default `'state'`), and adds `horoStateBeforeChange` so the
+   * seed/import/programmatic path is rejected off-ring at write. This is the
+   * harmony twin of `injectTamperProofUuid`: one pins identity (content-uuid),
+   * the other pins flow-state harmony (the ring).
+   */
+  readonly horoStates?: ReadonlyArray<HoroState>
+  readonly horoStateName?: string          // default 'state'
+  readonly horoStateDefault?: string
+
   // ─── Hook injection toggles (Slice BBBBB-cut1) ────────────────────
   readonly injectAuditTrail?: boolean      // default true
   readonly injectCreatedBy?: boolean       // default true
@@ -243,6 +280,21 @@ export const createAccountingCollection = (
   // explicit (`injectTamperProofUuid: false`) and discoverable via
   // the new invariant.
   const injectTamperProofUuid = opts.injectTamperProofUuid !== false
+
+  // Slice horo-cut1 — harmony gate at config-build. A declared ring that
+  // is off-ring / out-of-order / duplicated can never reach Payload's
+  // sanitizer: the factory throws here, deterministically, the same way
+  // the import ratchet and folder law fail closed.
+  const hasHoroStates = !!(opts.horoStates && opts.horoStates.length > 0)
+  const horoStateName = opts.horoStateName ?? 'state'
+  if (hasHoroStates) {
+    const verdict = validateHoroStates(opts.horoStates as ReadonlyArray<HoroState>)
+    if (!verdict.ok) {
+      throw new Error(
+        `[createAccountingCollection ${opts.slug}] horoStates disharmony: ${verdict.errors.join('; ')}`,
+      )
+    }
+  }
 
   // Slice BBBBBBBB-fix: prefer `opts.fields` (modern); fall back to
   // the legacy `(opts, fieldsThunk)` 2-arg form. Exactly one must be
@@ -301,6 +353,16 @@ export const createAccountingCollection = (
       opts.statusDefault ?? opts.statusOptions[0]?.value ?? 'draft',
     ))
   }
+  // 3b. Horo state ring (Slice horo-cut1) — the harmony twin of the
+  //     content-uuid field. Already validated above; here we inject the
+  //     measure-ordered select. Dedupe like every other shared field.
+  if (hasHoroStates && !userFieldNames.has(horoStateName)) {
+    fields.push(horoStateField(
+      horoStateName,
+      opts.horoStates as ReadonlyArray<HoroState>,
+      opts.horoStateDefault !== undefined ? { defaultValue: opts.horoStateDefault } : {},
+    ))
+  }
   // 4. Audit fields (createdBy / approvedBy / approvedAt) — only inject
   //    the entries the user didn't already provide. Slice GGGGGGGG.
   if (injectAuditFields) {
@@ -319,6 +381,11 @@ export const createAccountingCollection = (
   const beforeChange = [
     ...(injectCreatedBy ? [autoPopulateCreatedBy] : []),
     ...(opts.beforeChangeHooks ?? []),
+    // Slice horo-cut1 — reject off-ring states BEFORE the uuid recompute,
+    // so a disharmonious write never gets content-addressed.
+    ...(hasHoroStates
+      ? [horoStateBeforeChange(horoStateName, opts.horoStates as ReadonlyArray<HoroState>)]
+      : []),
     // Slice PPPPPPPPP-cut1 — uuid recompute is the LAST beforeChange
     // hook so it sees the merged final state every prior hook (user
     // mutations, autoPopulateCreatedBy, autoPopulateTenant via the

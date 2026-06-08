@@ -9,6 +9,7 @@ import {
   isMergePoint,
   horoStateField,
   validateHoroStates,
+  horoStateBeforeChange,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -101,5 +102,27 @@ describe('horo', () => {
     // @ts-expect-error payload Field union — options exists on select
     const labels = (field.options as Array<{ value: string }>).map((o) => o.value)
     expect(labels).toEqual(HORO_MEASURE.slice())
+  })
+
+  describe('horoStateBeforeChange — harmony enforced at write', () => {
+    const hook = horoStateBeforeChange('state', FULL_RING)
+    const call = (data: unknown) =>
+      // payload's hook arg surface is large; the validator only reads `data`.
+      (hook as (a: { data: unknown }) => unknown)({ data })
+
+    it('passes a value that rides the ring', () => {
+      expect(() => call({ state: 'base' })).not.toThrow()
+      expect(() => call({ state: 'unity' })).not.toThrow()
+    })
+
+    it('throws on an off-ring (escape) value', () => {
+      expect(() => call({ state: 'paid' })).toThrow(/off the 1·2·4·8·7·5·9 ring/)
+    })
+
+    it('lets absent / empty state pass (presence is the field\'s concern)', () => {
+      expect(() => call({})).not.toThrow()
+      expect(() => call({ state: '' })).not.toThrow()
+      expect(() => call({ state: null })).not.toThrow()
+    })
   })
 })

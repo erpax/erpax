@@ -24,7 +24,7 @@
  * @see src/types/sti.ts (`type` = what a thing IS; the horo step = where in the flow)
  */
 
-import type { Field } from 'payload'
+import type { Field, CollectionBeforeChangeHook } from 'payload'
 
 /** The seven horo positions in MEASURE WALK ORDER — reading it IS the dance. */
 export const HORO_DIGITS = [1, 2, 4, 8, 7, 5, 9] as const
@@ -127,4 +127,35 @@ export function validateHoroStates(states: ReadonlyArray<HoroState>): {
     codes.add(s.code)
   }
   return { ok: errors.length === 0, errors }
+}
+
+/**
+ * Collection-level `beforeChange` hook — harmony enforced at the WRITE.
+ *
+ * The `horoStateField` select already constrains the admin form and REST
+ * validation, but the programmatic path (seeds, imports, migrations, direct
+ * `payload.create`) can still slip an off-ring value past the UI. This hook
+ * closes that gap: any write that sets the state field to a code outside the
+ * declared ring throws — the runtime twin of the build-time `validateHoroStates`
+ * gate, exactly as `tamperProofBeforeChangeHook` is the runtime twin of the
+ * content-uuid field. Absent / empty values pass through (presence is the
+ * field's own `required` concern, not harmony's).
+ */
+export function horoStateBeforeChange(
+  fieldName: string,
+  states: ReadonlyArray<HoroState>,
+): CollectionBeforeChangeHook {
+  const codes = new Set(states.map((s) => s.code))
+  return ({ data }) => {
+    const record = data as Record<string, unknown> | undefined
+    const value = record?.[fieldName]
+    if (value === undefined || value === null || value === '') return data
+    if (typeof value !== 'string' || !codes.has(value)) {
+      throw new Error(
+        `horo escape: ${fieldName}='${String(value)}' is off the 1·2·4·8·7·5·9 ring. ` +
+          `Allowed states: ${[...codes].join(', ')}.`,
+      )
+    }
+    return data
+  }
 }

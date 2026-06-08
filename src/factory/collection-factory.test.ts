@@ -19,6 +19,8 @@ import { createAccountingCollection } from '@/factory/collection-factory'
 import {
   notesField, auditFields, statusField, currencyField,
 } from '@/fields'
+import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import type { HoroState } from '@/horo'
 
 /** Tenant is now injected by plugin-multi-tenant; tests inline a literal to exercise dedup. */
 const tenantField: Field = { name: 'tenant', type: 'relationship', relationTo: 'tenants' }
@@ -120,6 +122,62 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
     expect(countByName(cfg.fields, 'approvedAt')).toBe(1)
     expect(countByName(cfg.fields, 'createdBy')).toBe(1)
     expect(countByName(cfg.fields, 'approvedBy')).toBe(1)
+  })
+
+  // ── Slice horo-cut1 — flow-state harmony ride the closed ring ──
+  const FULL_RING: ReadonlyArray<HoroState> = HORO_DIGITS.map((step, i) => ({
+    code: HORO_MEASURE[i],
+    step,
+  }))
+
+  it('horoStates: injects a measure-ordered `state` select + write validator', () => {
+    const cfg = createAccountingCollection({
+      slug: 'horo-modern',
+      labels: { singular: 'X', plural: 'Xs' },
+      useAsTitle: 'name',
+      defaultColumns: ['name'],
+      horoStates: FULL_RING,
+      horoStateDefault: 'base',
+      fields: () => [{ name: 'name', type: 'text' }],
+    })
+    expect(countByName(cfg.fields, 'state')).toBe(1)
+    const stateField = cfg.fields.find(
+      (f): f is Field & { name: string } =>
+        typeof f === 'object' && f !== null && 'name' in f && (f as { name?: unknown }).name === 'state',
+    )
+    expect(stateField?.type).toBe('select')
+    // @ts-expect-error select options
+    expect(stateField.options.map((o: { value: string }) => o.value)).toEqual(HORO_MEASURE.slice())
+    // The write-time harmony validator is wired into beforeChange.
+    expect((cfg.hooks?.beforeChange ?? []).length).toBeGreaterThan(0)
+  })
+
+  it('horoStates: a custom field name is honoured and deduped', () => {
+    const cfg = createAccountingCollection({
+      slug: 'horo-named',
+      labels: { singular: 'X', plural: 'Xs' },
+      useAsTitle: 'name',
+      defaultColumns: ['name'],
+      horoStateName: 'lifecycle',
+      horoStates: FULL_RING,
+      fields: () => [{ name: 'name', type: 'text' }],
+    })
+    expect(countByName(cfg.fields, 'lifecycle')).toBe(1)
+    expect(countByName(cfg.fields, 'state')).toBe(0)
+  })
+
+  it('horoStates: a disharmonious ring THROWS at config-build (fail closed)', () => {
+    expect(() =>
+      createAccountingCollection({
+        slug: 'horo-escape',
+        labels: { singular: 'X', plural: 'Xs' },
+        useAsTitle: 'name',
+        defaultColumns: ['name'],
+        // Only 3 states — off the seven-position ring.
+        horoStates: FULL_RING.slice(0, 3),
+        fields: () => [{ name: 'name', type: 'text' }],
+      }),
+    ).toThrow(/horoStates disharmony/)
   })
 
   it('opt-out: injectAuditFields=false suppresses factory injection entirely', () => {
