@@ -1,11 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import {
   parseTsImports,
-  parseTsExports,
-  parseSkillImports,
   boundaryUuid,
   computeBoundary,
-  scanBoundaries,
   boundaryDigest,
   verifyBoundary,
   planCollapse,
