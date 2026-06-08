@@ -111,6 +111,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     upgrade: { desc: 'Skill upgrade sync', cmd: `${TSX} src/skill/router/upgrade/index.ts --sync` },
     'upgrade-check': { desc: 'Skill upgrade verify', cmd: `${TSX} src/skill/router/upgrade/index.ts --verify` },
     mint: { desc: 'Mint new atoms', cmd: 'node src/generate/mint.mjs' },
+    words: { desc: 'Literary-word audit (top 50 + use-case scores)', cmd: `${TSX} src/corpus/words.ts` },
   },
   aura: {
     default: { desc: 'Aura [[link]] scan', cmd: `node ${AURA_SCAN_PATH}` },

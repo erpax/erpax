@@ -22,6 +22,7 @@ export const AXIS_FIX_HINTS: Record<string, string> = {
   'logic-concentration': 'pnpm erpax apply session',
   'word-matter': 'pnpm erpax rules ratchet',
   'word-without-code': 'pnpm erpax apply session',
+  'word-without-logic': 'pnpm erpax corpus words',
   'word-incomplete-diamond': 'pnpm erpax readme waves',
 }
 

@@ -6,8 +6,10 @@ import { join } from 'node:path'
 import { formatCleanSummary } from '@/apply/clean'
 import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
 import { loadEfficiencyStore } from '@/apply/efficiency'
+import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
 import { computedBaseline } from '@/law/folder/baseline'
-import { strayTsViolations } from '@/rules'
+import { rulesOf, strayTsViolations } from '@/rules'
+import { deriveCorpusAnalytics } from '@/readme'
 import {
   ERPAX_SKILL_ENTRY,
   ERPAX_SKILL_ENTRY_CONTENT_UUID,
@@ -41,6 +43,7 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
   const last = store.passes.length ? store.passes[store.passes.length - 1]! : null
   const wire = wireFromRepoUrl('https://github.com/erpax/erpax')
   const entryPath = wire.ok ? wire.entryPoint : ERPAX_SKILL_ENTRY
+  const snapshot = rulesOf(cwd, { force: true })
   const violationCount = snapshot.axes.reduce((s, a) => s + a.violations, 0)
   const corpus = deriveCorpusAnalytics(cwd)
   const lastMetrics = last?.metrics
@@ -98,6 +101,9 @@ export function formatDoctorReport(report: DoctorReport): string {
   } else {
     lines.push('  clean          no pass yet (run pnpm erpax clean)')
   }
+  lines.push(
+    `  entropy        net ${report.entropy.netEb} eb · F ${report.entropy.freeEnergyBits} bits · ${report.entropy.scaleTowardZeroPct}% toward zero`,
+  )
   lines.push('')
   lines.push('Next: pnpm erpax rules check · pnpm erpax clean · pnpm check')
   return lines.join('\n')
