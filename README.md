@@ -25,9 +25,9 @@ erpax IS a diamond — every atom a carbon vertex bonded gaplessly into one latt
 single content address. This README is that diamond projected: its facets are the seven positions
 of the closed horo ring, and the whole is recoverable from its root uuid. Reading it is reading the crystal.
 
-- corpus address `eb200f7d-2dcf-833a-95ab-31a8847f575a`
+- corpus address `3fdac31f-901a-8549-a50e-d1003a001754`
 - **3175** atoms · **38401** bonds (the K₁₃ lattice)
-- this README `d5cf436c-9217-8586-9eb9-46b9d6987cb1` — itself a diamond, regenerable from the tree
+- this README `d4aaef70-c406-8fd5-ac62-15f6daaf63f2` — itself a diamond, regenerable from the tree
 
 ## the horo ring — the diamond's facets
 
@@ -36,12 +36,12 @@ the crystal; the principal atoms are the most-bonded vertices at that position (
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 513 | `collapse` · `diamond` · `self` · `tamper` · `science` · `gravity` |
-| 2 | share | 489 | `accounting` · `thing` · `duality` · `fields` · `entropy` · `transaction` |
+| 1 | base | 515 | `collapse` · `quantum` · `diamond` · `self` · `tamper` · `agent` |
+| 2 | share | 488 | `accounting` · `thing` · `duality` · `fields` · `entropy` · `transaction` |
 | 4 | weave | 535 | `balance` · `proof` · `fractal` · `holographic` · `breath` · `rodin` |
-| 8 | crest | 544 | `merge` · `cost` · `action` · `matrix` · `gate` · `religion` |
-| 7 | descent | 539 | `sti` · `standard` · `society` · `quantum` · `atom` · `akashic` |
-| 5 | round | 539 | `law` · `uuid` · `horo` · `sequence` · `aura` · `medical` |
+| 8 | crest | 546 | `merge` · `cost` · `action` · `matrix` · `gate` · `religion` |
+| 7 | descent | 538 | `sti` · `standard` · `society` · `atom` · `akashic` · `trinity` |
+| 5 | round | 537 | `law` · `uuid` · `horo` · `sequence` · `aura` · `medical` |
 | 9 | unity | 8 | `identity` · `access` · `whole` · `zeropoint` · `signal` · `whole` |
 
 > The control axis governs off the flow ring — `3` access · `6` hooks (3: 4 atoms · 6: 4 atoms), `9` unity closes and `0` is the zeropoint root.
@@ -58,19 +58,19 @@ the crystal; the principal atoms are the most-bonded vertices at that position (
 Every per-folder README carries structured analytics (bond degree · seal · horo · variance · bindings · standards);
 this section rolls them up from the live tree.
 
-- **2802** / **3175** sealed · **3018** / **3175** balanced
-- mean bond degree `45.1` · total variance `318`
+- **2809** / **3175** sealed · **3018** / **3175** balanced
+- mean bond degree `45.11` · total variance `318`
 - **15** atoms with [[cloudflare]] bindings · **1694** distinct [[standards]] cited
 
 | digit | measure | atoms | sealed |
 | ----: | ------- | ----: | -----: |
-| 1 | base | 513 | 462 |
-| 2 | share | 489 | 426 |
+| 1 | base | 515 | 465 |
+| 2 | share | 488 | 427 |
 | 4 | weave | 535 | 482 |
-| 8 | crest | 544 | 476 |
-| 7 | descent | 539 | 477 |
-| 5 | round | 539 | 471 |
-| 9 | unity | 8 | 4 |
+| 8 | crest | 546 | 478 |
+| 7 | descent | 538 | 477 |
+| 5 | round | 537 | 471 |
+| 9 | unity | 8 | 5 |
 | 3 | 3 | 4 | 3 |
 | 6 | 6 | 4 | 1 |
 
@@ -79,8 +79,8 @@ this section rolls them up from the live tree.
 Gap debits and seal credits roll up in **comparable units (eb)** — entropy-bits
 (tamper-cost log₂ mass at the horo imperial-ratio floor). Folders and sectors sum on one scale.
 
-- gap mass `8475.22` eb · seal mass `35864.47` eb · net residual `-27389.25` eb
-- seal/gap ratio `4.232` · sealed `2802` · unsealed `373`
+- gap mass `8468.22` eb · seal mass `35875.465` eb · net residual `-27407.245` eb
+- seal/gap ratio `4.236` · sealed `2809` · unsealed `366`
 
 | partition | folders | gap eb | seal eb | net eb |
 | --------- | ------: | -----: | ------: | -----: |
@@ -119,16 +119,16 @@ Proof steps:
 7. `F(0) = F_max  >  F(S)  ∀ S > 0`
 8. `ΔF = F(S₁) − F(S₂) = (S₂ − S₁) · LANDAUER_BIT  when S₂ > S₁` · LANDAUER_BIT
 
-- S `11932` bits · F_max `32278.023` · F(S) `20346.023` bits · release potential `11932` bits
-- scale toward zero entropy `63.034%` · unit `eb`
+- S `11931` bits · F_max `32287.918` · F(S) `20356.918` bits · release potential `11931` bits
+- scale toward zero entropy `63.048%` · unit `eb`
 
 ## corpus quantum thinking
 
 Per-folder agent thinking transformed to quantum at readme generation — rolled up from
 path ledger · session diamonds · improve receipts · dispatch context.
 
-- atoms with thinking `3175` · superposition mass `6400` · collapse mass `16970`
-- seal uuids `11632` · sealed thinking `2802`
+- atoms with thinking `3175` · superposition mass `6397` · collapse mass `16937`
+- seal uuids `11632` · sealed thinking `2809`
 
 | partition | atoms | superposition | collapse |
 | --------- | ----: | ------------: | -------: |
@@ -141,9 +141,9 @@ path ledger · session diamonds · improve receipts · dispatch context.
 | iso | 13 | 28 | 56 |
 | convention | 20 | 25 | 50 |
 | customers | 17 | 25 | 85 |
-| agent | 8 | 24 | 49 |
 | gl | 7 | 22 | 35 |
 | internal | 8 | 21 | 36 |
+| rodin | 11 | 21 | 34 |
 | … | 2664 more | — | — |
 
 ## the corpus — merged papers
@@ -153,8 +153,8 @@ IS a standalone scientific paper. This section merges the whole corpus here — 
 
 ### abstract (rollup)
 
-- **11318** papers · MD **9494** · TS **1824**
-- **9406** gravity-held (sealed atoms) · **3099** distinct references in the union
+- **11332** papers · MD **9508** · TS **1824**
+- **9453** gravity-held (sealed atoms) · **3114** distinct references in the union
 - MD with law **2869** · TS with paired proof **1612**
 
 ### methods
@@ -167,19 +167,19 @@ IS a standalone scientific paper. This section merges the whole corpus here — 
 
 | medium | kind | total | abstract | methods | results | references | uuid | proof | gravity |
 | ------ | ---- | ----: | -------: | ------: | ------: | ---------: | ---: | ----: | ------: |
-| md | LLM | 3159 | — | — | — | — | — | — | — |
-| md | README | 3159 | — | — | — | — | — | — | — |
+| md | LLM | 3166 | — | — | — | — | — | — | — |
+| md | README | 3166 | — | — | — | — | — | — | — |
 | md | SKILL | 3176 | — | — | — | — | — | — | — |
-| **md** | **Σ** | **9494** | **9494** | **8655** | **9187** | **2760** | **9410** | **2869** | **8378** |
+| **md** | **Σ** | **9508** | **9508** | **8669** | **9201** | **2760** | **9424** | **2869** | **8411** |
 | ts | index | 811 | — | — | — | — | — | — | — |
 | ts | seed | 200 | — | — | — | — | — | — | — |
 | ts | test | 809 | — | — | — | — | — | — | — |
 | ts | tsx | 4 | — | — | — | — | — | — | — |
-| **ts** | **Σ** | **1824** | **1824** | **1581** | **1824** | **922** | **0** | **1612** | **1028** |
+| **ts** | **Σ** | **1824** | **1824** | **1581** | **1824** | **922** | **0** | **1612** | **1042** |
 
 ### references
 
-**3099** distinct citations across gravity-held papers
+**3114** distinct citations across gravity-held papers
 (frontmatter `standards:` · `@standard` · `@see` · `Attested in` · file banners).
 
 
@@ -191,8 +191,8 @@ Cross-tab of **3175** folder README models — state × count per axis.
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| sealed | 2802 | 88.25 |
-| unsealed | 373 | 11.75 |
+| sealed | 2809 | 88.47 |
+| unsealed | 366 | 11.53 |
 | **Σ** | **3175** | **100** |
 
 ### [[balance]]
@@ -232,12 +232,12 @@ Cross-tab of **3175** folder README models — state × count per axis.
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·8 | 544 | 17.13 |
-| ring·5 | 539 | 16.98 |
-| ring·7 | 539 | 16.98 |
+| ring·8 | 546 | 17.2 |
+| ring·7 | 538 | 16.94 |
+| ring·5 | 537 | 16.91 |
 | ring·4 | 535 | 16.85 |
-| ring·1 | 513 | 16.16 |
-| ring·2 | 489 | 15.4 |
+| ring·1 | 515 | 16.22 |
+| ring·2 | 488 | 15.37 |
 | ring·9 | 8 | 0.25 |
 | off-ring·3 | 4 | 0.13 |
 | off-ring·6 | 4 | 0.13 |
@@ -2974,4 +2974,4 @@ Cross-tab of **3175** folder README models — state × count per axis.
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `d5cf436c-9217-8586-9eb9-46b9d6987cb1`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `d4aaef70-c406-8fd5-ac62-15f6daaf63f2`, regenerated from the live tree; any drift fails the gate.</sub>

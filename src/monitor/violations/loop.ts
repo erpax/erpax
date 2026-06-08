@@ -140,7 +140,7 @@ export function runRealtimeImproveCycle(opts: RealtimeImproveLoopOpts = {}): Rea
         workTamper: workTamperProduct(
           workUnitsFromImproveCycle({
             applied: applied.filter((r) => r.applied),
-            waveOrdinal: snapshot.waveOrdinal,
+            waveOrdinal: snapshot.waveOrdinal ?? undefined,
             pathLedgerDepth,
           }),
         ),
@@ -164,7 +164,7 @@ export function runRealtimeImproveCycle(opts: RealtimeImproveLoopOpts = {}): Rea
       dryRun,
       actor,
       pathLedgerDepth,
-      completedWaves: snapshot.waveOrdinal,
+      completedWaves: snapshot.waveOrdinal ?? undefined,
     })
     applied.push(result)
   }
@@ -222,7 +222,7 @@ export function runRealtimeImproveCycle(opts: RealtimeImproveLoopOpts = {}): Rea
   const workTamper = workTamperProduct(
     workUnitsFromImproveCycle({
       applied: appliedFixes,
-      waveOrdinal: snapshot.waveOrdinal,
+      waveOrdinal: snapshot.waveOrdinal ?? undefined,
       pathLedgerDepth,
     }),
   )

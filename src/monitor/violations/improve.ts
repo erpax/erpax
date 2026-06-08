@@ -19,6 +19,8 @@ import { issueReceipt, type Receipt } from '@/receipt'
 import { maxWorkTamperPolicy, tamperCostForImproveReceipt } from '@/wave'
 import type { ViolationEvent, ViolationSource } from './index'
 
+export type { ViolationEvent } from './index'
+
 export type ImproveClass = 'auto' | 'human-gate' | 'never'
 
 export type ImproveAction =
@@ -55,6 +57,8 @@ const SOURCE_PRIORITY: Readonly<Record<ViolationSource, number>> = {
   'word-without-code': 13,
   'word-without-logic': 14,
   'word-incomplete-diamond': 15,
+  'alphanumeric-name': 16,
+  'seal-debt': 17,
 }
 
 const SEVERITY_RANK = { error: 0, warning: 1, info: 2 } as const

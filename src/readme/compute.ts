@@ -554,7 +554,6 @@ const foldedPathSet = (): Set<string> => {
   const s = new Set<string>()
   for (const n of UUID_MATRIX_NODES) {
     if (n.path) s.add(n.path)
-    if (n.members) for (const m of n.members) s.add(m)
   }
   return s
 }
@@ -1623,8 +1622,18 @@ export function lawLineForAtom(atomPath: string, cwd: string = process.cwd()): s
   }
 }
 
-function folderComputation(atomPath: string, cwd: string) {
-  return computeDiamond({ kind: 'path', path: atomPath, cwd })
+function folderComputation(
+  atomPath: string,
+  cwd: string,
+  graph?: AnalysisTypographyGraph,
+  ctx?: FolderReadmeContext,
+) {
+  return computeDiamond({
+    kind: 'path',
+    path: atomPath,
+    cwd,
+    ...(graph !== undefined && ctx !== undefined ? { graph, ctx } : {}),
+  })
 }
 
 /** Derive the agent deployment brief from folder + diamond models — pure. */
@@ -1716,7 +1725,7 @@ export function materializeComputedFacesForPaths(
   let n = 0
   for (const atomPath of paths) {
     const folder = deriveFolderModel(atomPath, cwd, c, g)
-    const computation = folderComputation(atomPath, cwd)
+    const computation = folderComputation(atomPath, cwd, g, c)
     const diamond = computation.model
     const law = lawLineForAtom(atomPath, cwd)
     const dir = join(cwd, SRC, atomPath)
@@ -1730,17 +1739,16 @@ export function materializeComputedFacesForPaths(
 
 /**
  * Path-batch materialize with frozen typography graph + receipt chain.
- * Re-passes once when graph root shifts after writes so fresh verify ≡ on disk.
+ * Two passes — graph root and receipt chain converge after batch writes.
  */
 export function materializeComputedFacesForPathsStable(
   paths: readonly string[],
   cwd: string = process.cwd(),
 ): number {
-  const frozen = buildReadmeCorpusFrozenInputs(cwd)
-  let n = materializeComputedFacesForPaths(paths, cwd, frozen.graph, frozen.ctx)
-  const next = buildReadmeCorpusFrozenInputs(cwd)
-  if (next.graph.root !== frozen.graph.root) {
-    n += materializeComputedFacesForPaths(paths, cwd, next.graph, next.ctx)
+  let n = 0
+  for (let pass = 0; pass < 2; pass++) {
+    const frozen = buildReadmeCorpusFrozenInputs(cwd)
+    n += materializeComputedFacesForPaths(paths, cwd, frozen.graph, frozen.ctx)
   }
   return n
 }
@@ -1756,7 +1764,7 @@ export function materializeComputedFaces(
   let n = 0
   for (const folder of models) {
     const atomPath = folder.atomPath
-    const computation = folderComputation(atomPath, cwd)
+    const computation = folderComputation(atomPath, cwd, corpus.graph, corpus.ctx)
     const diamond = computation.model
     const law = lawLineForAtom(atomPath, cwd)
     const dir = join(cwd, SRC, atomPath)
@@ -1778,7 +1786,7 @@ export function verifyComputedFaces(
   const llmDrift: string[] = []
   const diamondDrift: string[] = []
   for (const folder of models) {
-    driftCheckOf(folder.atomPath, folder, cwd, readmeDrift, llmDrift, diamondDrift)
+    driftCheckOf(folder.atomPath, folder, cwd, readmeDrift, llmDrift, diamondDrift, corpus.graph, corpus.ctx)
   }
   return {
     readme: { ok: readmeDrift.length === 0, drift: readmeDrift },
@@ -1794,8 +1802,10 @@ const driftCheckOf = (
   readmeDrift: string[],
   llmDrift: string[],
   diamondDrift: string[],
+  graph?: AnalysisTypographyGraph,
+  ctx?: FolderReadmeContext,
 ): void => {
-  const computation = folderComputation(atomPath, cwd)
+  const computation = folderComputation(atomPath, cwd, graph, ctx)
   const diamond = computation.model
   const law = lawLineForAtom(atomPath, cwd)
   const dir = join(cwd, SRC, atomPath)
@@ -1829,7 +1839,7 @@ export function verifyComputedFacesForPaths(
   const diamondDrift: string[] = []
   for (const atomPath of paths) {
     const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
-    driftCheckOf(atomPath, folder, cwd, readmeDrift, llmDrift, diamondDrift)
+    driftCheckOf(atomPath, folder, cwd, readmeDrift, llmDrift, diamondDrift, graph, ctx)
   }
   return {
     readme: { ok: readmeDrift.length === 0, drift: readmeDrift },
@@ -1851,7 +1861,7 @@ export function verifyComputedFacesInWaves(
   for (const wave of corpusPathWaveBatches({}, policy)) {
     for (const atomPath of wave.items) {
       const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
-      driftCheckOf(atomPath, folder, cwd, readmeDrift, llmDrift, diamondDrift)
+      driftCheckOf(atomPath, folder, cwd, readmeDrift, llmDrift, diamondDrift, graph, ctx)
     }
     onWave?.(wave.ordinal, wave.itemCount, readmeDrift.length + llmDrift.length + diamondDrift.length)
   }

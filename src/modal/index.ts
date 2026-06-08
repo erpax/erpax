@@ -1,4 +1,4 @@
 /** modal — quick-action modals barrel. */
-export { CreateInvoiceModal } from './CreateInvoiceModal'
-export { CreateBillModal } from './CreateBillModal'
-export { CreateJournalEntryModal } from './CreateJournalEntryModal'
+export { default as CreateInvoiceModal } from './CreateInvoiceModal'
+export { default as CreateBillModal } from './CreateBillModal'
+export { default as CreateJournalEntryModal } from './CreateJournalEntryModal'
