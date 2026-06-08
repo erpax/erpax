@@ -126,6 +126,10 @@ import {
 import {
   horoStateField, validateHoroStates, horoStateBeforeChange, type HoroState,
 } from '@/horo'
+import { deriveCollectionDiamond, diamondUuid, verifyDiamond } from '@/diamond'
+
+/** Attached by createAccountingCollection — the computed diamond model at config-build. */
+export const COLLECTION_DIAMOND_KEY = '__erpaxCollectionDiamond__' as const
 
 export interface StatusOption {
   readonly label: string
@@ -161,6 +165,12 @@ export interface EmitWiring {
 
 export interface AccountingCollectionOptions {
   readonly slug: string
+  /**
+   * Src-relative atom folder path when it differs from slug (e.g.
+   * `employees/leave/requests` for slug `leave-requests`). Feeds the shared
+   * [[diamond]] model's `atomPath` facet.
+   */
+  readonly atomPath?: string
   readonly labels: { singular: string; plural: string }
   readonly useAsTitle: string
   readonly defaultColumns: string[]
@@ -232,6 +242,13 @@ export interface AccountingCollectionOptions {
   readonly horoStateName?: string          // default 'state'
   readonly horoStateDefault?: string
 
+  /**
+   * When true, config-build throws if the derived [[diamond]] model fails
+   * verifyDiamond (fail-closed completeness gate). Default false so existing
+   * collections are not broken; enable per-collection as trinity closes.
+   */
+  readonly validateDiamondModel?: boolean
+
   // ─── Hook injection toggles (Slice BBBBB-cut1) ────────────────────
   readonly injectAuditTrail?: boolean      // default true
   readonly injectCreatedBy?: boolean       // default true
@@ -292,6 +309,18 @@ export const createAccountingCollection = (
     if (!verdict.ok) {
       throw new Error(
         `[createAccountingCollection ${opts.slug}] horoStates disharmony: ${verdict.errors.join('; ')}`,
+      )
+    }
+  }
+
+  // Shared diamond model — tamperProofUuid + horoStates are facets of DiamondModel.
+  const collectionDiamond = deriveCollectionDiamond(opts)
+  const diamondId = diamondUuid(collectionDiamond)
+  if (opts.validateDiamondModel) {
+    const { sealed, impurities } = verifyDiamond(collectionDiamond)
+    if (!sealed) {
+      throw new Error(
+        `[createAccountingCollection ${opts.slug}] diamond model incomplete: ${impurities.join('; ')}`,
       )
     }
   }
@@ -424,13 +453,18 @@ export const createAccountingCollection = (
     ...(opts.afterChangeHooks ?? []),
   ]
 
-  return {
+  const diamondNote = `diamond-uuid: ${diamondId}`
+  const description = opts.description
+    ? `${opts.description}\n\n— ${diamondNote}`
+    : diamondNote
+
+  const config: CollectionConfig & { readonly [COLLECTION_DIAMOND_KEY]?: typeof collectionDiamond } = {
     slug: opts.slug,
     labels: opts.labels,
     admin: {
       useAsTitle: opts.useAsTitle,
       defaultColumns: opts.defaultColumns,
-      ...(opts.description ? { description: opts.description } : {}),
+      description,
     },
     access: {
       read: scopedAccess(),
@@ -447,7 +481,9 @@ export const createAccountingCollection = (
       afterChange,
     },
     timestamps: true,
+    [COLLECTION_DIAMOND_KEY]: collectionDiamond,
   }
+  return config
 }
 
 // ─── Helpers retained for backwards compat ─────────────────────────
