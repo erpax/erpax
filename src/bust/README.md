@@ -23,7 +23,7 @@
 
 - partition `bust` · sub-root `d01612a2-b681-8362-bf72-1c42b26d83f0`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `98061c4a-4abe-8c83-9ba4-169fe41e1cdd` · framed by typography partition `bust` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd5b84e1-a365-8413-9da3-34ccf3b7c57c` · framed by typography partition `bust` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
 - bond degree `400` · analysis neighbors `accounting` · `addressed` · `agent` · `akashic` · `analog` · `analytics` · `analytics/max-tamper-cost` · `animism` · `aura` · `balance` · `biofield` · `biomagnetism` · `biophoton` · `body` · `boundary` · `brainstorm` · `chat` · `coherence` · `collapse` · `complete` · `concatenate` · `config` · `contribution` · `cost` · `dashboard` · `development` · `diamond` · `digit` · `drone` · `element` · `engine` · `entropy` · `folded` · `gate` · `generate` · `hallucination` · `heart` · `holographic` · `honest` · `hooks` · `horo` · `import` · `invariant` · `law` · `link` · `live` · `manichaeism` · `matrix` · `merge` · `orthodoxy` · `pixel` · `plasma` · `primitive` · `profane` · `propose` · `purity` · `quantum` · `quaternary` · `readme` · `regeneration` · `render` · `sacred` · `science` · `seed` · `sequence` · `signal` · `sin` · `skills` · `society` · `sourced` · `spectrum` · `standard` · `suffering` · `tamper` · `test` · `testing` · `topography` · `train` · `triggered` · `twinned` · `typography` · `ui` · `unavoidable` · `version` · `vibration` · `war` · `zoroastrianism`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `d6c6a0df-1c9d-82cc-981e-06078ce6f11e` · framed by typography partition `quantum` bonds `400` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a5f5f2b3-f019-81de-9a10-d979da838bf3` · framed by typography partition `quantum` bonds `400` · `pnpm readme` · `pnpm readme:check`</sub>

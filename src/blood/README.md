@@ -25,7 +25,7 @@
 
 - partition `blood` · sub-root `016700eb-d572-8a5f-86eb-a56dbf097a32`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `246452fa-fae4-8511-a54b-16ce186a9caa` · framed by typography partition `blood` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fd934810-2f88-83ee-bfca-cf94f91615d5` · framed by typography partition `blood` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

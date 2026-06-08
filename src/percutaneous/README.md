@@ -23,7 +23,7 @@
 
 - partition `percutaneous` · sub-root `2177561a-890c-833b-84e8-935e445f9f97`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `de1d378e-8226-8e0b-ab0c-896abbdec945` · framed by typography partition `percutaneous` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `071f9374-d93e-8e5f-9e32-5a8d6fb24e65` · framed by typography partition `percutaneous` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

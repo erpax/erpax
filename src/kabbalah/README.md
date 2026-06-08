@@ -23,7 +23,7 @@
 
 - partition `kabbalah` · sub-root `01078282-b83e-80a5-8aa9-f9d83f501833`
 - bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ace63abc-6912-8dd3-99f9-72c477ad2eb5` · framed by typography partition `kabbalah` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b24dbfbe-34f1-83b1-bf49-a1b5044d127e` · framed by typography partition `kabbalah` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

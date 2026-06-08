@@ -23,7 +23,7 @@
 
 - partition `water` · sub-root `758772df-1aba-8a1f-ae24-e7d26ff924af`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ef0d2b34-71cb-87a1-b02c-d914a4755c57` · framed by typography partition `water` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e27ee99f-d653-841d-8b3d-dd3f5e70cf26` · framed by typography partition `water` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

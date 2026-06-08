@@ -23,7 +23,7 @@
 
 - partition `shelter` · sub-root `e78dadd1-3c80-8f29-b688-33dccf19b6a1`
 - bond degree `33` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b6c27d23-24b9-84ff-9533-ef5fe034dfaf` · framed by typography partition `shelter` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a0f0512-7119-85d2-b654-7893335f68ba` · framed by typography partition `shelter` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

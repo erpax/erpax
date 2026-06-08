@@ -23,7 +23,7 @@
 
 - partition `github` · sub-root `e2a0a0ed-a638-814e-bcda-e28cb20ece94`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6b08f67f-c5a0-8d25-bfb0-6df2a3b27ed2` · framed by typography partition `github` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d750ee87-1414-8bf2-8961-bfd21d6f3656` · framed by typography partition `github` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

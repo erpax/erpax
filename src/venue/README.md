@@ -23,7 +23,7 @@
 
 - partition `venue` · sub-root `3ed7f35b-1619-8baa-ac6a-82e51b24c31b`
 - bond degree `49` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c6e1ef47-44e8-809e-81b8-727ccc10e683` · framed by typography partition `venue` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8cd946d4-dc59-8b32-b351-9abda52c2506` · framed by typography partition `venue` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `church` · sub-root `46484840-5321-8cba-8c77-778c60438a60`
 - bond degree `7` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6015d882-4298-8df4-b3f5-62c89baf52e8` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c84b0ba5-cd94-82f3-9162-55ca91a8f6ec` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

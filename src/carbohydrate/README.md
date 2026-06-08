@@ -23,7 +23,7 @@
 
 - partition `carbohydrate` · sub-root `639a20eb-afe1-88f3-9759-4582678d9edc`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2a7420c5-2a32-8f30-846a-3bf184147166` · framed by typography partition `carbohydrate` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eeb2693d-89c6-8831-a4e8-87e987714270` · framed by typography partition `carbohydrate` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

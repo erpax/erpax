@@ -23,7 +23,7 @@
 
 - partition `timestamp` · sub-root `1319fa4e-c41c-8ca6-ae39-4795cf0cc5c1`
 - bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `095513a0-f031-8aec-94e3-336353469ceb` · framed by typography partition `timestamp` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c00d0b0-b748-8f03-b88a-2d1a03e7d3f9` · framed by typography partition `timestamp` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

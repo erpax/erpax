@@ -23,7 +23,7 @@
 
 - partition `dateline` · sub-root `1af4581f-9748-85f0-b4d3-c0a0d5d65a11`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `82f0b9d4-44f3-81d6-a90f-b78e803d3e61` · framed by typography partition `dateline` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c1a8f7c3-fe38-8682-a0d2-3e1d6b8cd027` · framed by typography partition `dateline` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

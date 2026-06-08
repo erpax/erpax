@@ -23,7 +23,7 @@
 
 - partition `catholicism` · sub-root `4554f61f-6885-8e3a-a67b-27ce9966278f`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ad31fb96-a7d1-8695-8ee6-9b24d7583dce` · framed by typography partition `catholicism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7fb3a2c4-4ede-8bd8-9c0c-8a762ed9caa0` · framed by typography partition `catholicism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `quiz` · sub-root `4360b29b-869e-8acf-8f87-34069538a331`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `22abc79a-cd94-8073-ac4f-4bc713fc4003` · framed by typography partition `quiz` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a93d9820-f43b-80c7-84aa-eea438b5ba63` · framed by typography partition `quiz` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

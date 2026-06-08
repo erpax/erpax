@@ -23,7 +23,7 @@
 
 - partition `bogomilism` · sub-root `1f9371d1-eec8-8939-a5a9-a165ff702cd0`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d1a79a59-e1b7-8c00-ae15-bf87dfbf0867` · framed by typography partition `bogomilism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd7e1fa2-5c3b-8092-a5e5-1a1b5f2304dd` · framed by typography partition `bogomilism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

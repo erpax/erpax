@@ -23,7 +23,7 @@
 
 - partition `vent` · sub-root `27308a13-3e30-8fce-b313-01a7d45b61f0`
 - bond degree `58` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `78b50fd3-8afa-838b-a399-8ced2595434a` · framed by typography partition `vent` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f873f174-4bb4-8296-a864-b94fff80a663` · framed by typography partition `vent` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>

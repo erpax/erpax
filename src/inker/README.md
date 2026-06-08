@@ -23,7 +23,7 @@
 
 - partition `inker` · sub-root `a698a2ed-fe89-8bd3-9232-775455823f9f`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f6fccc61-1dd8-8ad3-80d0-6ff0b8f68742` · framed by typography partition `inker` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5d0a43d3-f2ad-8f6b-a1b8-53a76b8a90e8` · framed by typography partition `inker` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

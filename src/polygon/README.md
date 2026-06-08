@@ -23,7 +23,7 @@
 
 - partition `polygon` · sub-root `2cdc62b4-8344-8173-898c-75bc3d8da1cb`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d73efc21-8da9-8f50-abae-60815b4eb38e` · framed by typography partition `polygon` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6ac986f8-78a5-8130-a307-a226f8686550` · framed by typography partition `polygon` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

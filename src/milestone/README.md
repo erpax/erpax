@@ -23,7 +23,7 @@
 
 - partition `milestone` · sub-root `198fef17-9338-88e3-b7c3-7affdf4b2ae6`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `db20cfcc-6f16-8a0b-a69d-b7845aabf29c` · framed by typography partition `milestone` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b9a9bd44-11ef-80bd-a287-5a9689e75815` · framed by typography partition `milestone` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

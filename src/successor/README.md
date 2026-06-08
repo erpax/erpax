@@ -23,7 +23,7 @@
 
 - partition `successor` · sub-root `c59a2d71-c683-8210-82aa-a3a5836f801f`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f16a17ef-2cfd-87d6-b37a-58b04a6bf2f4` · framed by typography partition `successor` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `14024650-7e3d-847b-84d5-9da3179f515d` · framed by typography partition `successor` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

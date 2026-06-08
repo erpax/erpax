@@ -25,7 +25,7 @@
 
 - partition `fusion` · sub-root `4f84cf55-4b34-8e43-8e98-0838be298488`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `99d86f7a-c6dd-8792-b2aa-393b0863c2ed` · framed by typography partition `fusion` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `39f23f96-6fa9-8cf2-a297-23791ce21ca8` · framed by typography partition `fusion` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

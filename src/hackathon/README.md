@@ -23,7 +23,7 @@
 
 - partition `hackathon` · sub-root `b8219a82-f06a-8db5-a38f-1cd8279ddf96`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cbae7878-1450-8eb2-82db-9957f98eb0ec` · framed by typography partition `hackathon` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ddb533c0-308e-89e3-8bb6-14f44958eac5` · framed by typography partition `hackathon` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

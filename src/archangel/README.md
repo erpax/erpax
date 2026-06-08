@@ -23,7 +23,7 @@
 
 - partition `archangel` · sub-root `31a26713-d5af-82be-be2d-6d96a1ef635d`
 - bond degree `55` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1ad18600-f22c-8ccd-b84e-40645e37735f` · framed by typography partition `archangel` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eab41c84-07f0-81c2-927b-74e259ac8d8e` · framed by typography partition `archangel` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>

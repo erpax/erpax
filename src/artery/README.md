@@ -25,7 +25,7 @@
 
 - partition `artery` · sub-root `c902da2e-92b5-80f6-bcfd-f5dd676f48f8`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `a755a842-b7ad-877b-b40f-f2ad35ba67ca` · framed by typography partition `artery` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff2b9877-9b89-875d-9c4e-ff47729e2bf5` · framed by typography partition `artery` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

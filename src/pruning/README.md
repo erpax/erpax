@@ -23,7 +23,7 @@
 
 - partition `pruning` · sub-root `d65e60cd-1032-89ae-92e1-a6a0f4624d95`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `46ac5ced-7281-85d1-b606-5b402a8fbf4c` · framed by typography partition `pruning` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8a79570b-abdd-87fd-bccb-0ed22a47affa` · framed by typography partition `pruning` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

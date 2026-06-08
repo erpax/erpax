@@ -23,7 +23,7 @@
 
 - partition `estate` · sub-root `2be84810-00e0-8a2d-a491-a205c9bbcd61`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b12db3cb-db05-8b79-b791-b39914d2246b` · framed by typography partition `estate` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5b34dfe1-1d05-80e3-afaa-a9933869bb2e` · framed by typography partition `estate` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

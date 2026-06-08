@@ -25,7 +25,7 @@
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `cbbdfe1b-a5da-82b3-91b5-736fc2005da1` · framed by typography partition `iso` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2a1530b8-7d16-82fd-9919-27cbd8804daa` · framed by typography partition `iso` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

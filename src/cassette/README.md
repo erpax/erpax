@@ -23,7 +23,7 @@
 
 - partition `cassette` · sub-root `488180ae-2868-83d8-8f0a-c1f097a3c7cf`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `afed89c2-7715-8a5a-af1c-97b2adac21b9` · framed by typography partition `cassette` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `707a12fa-425c-81fa-b00d-ba0794ea8746` · framed by typography partition `cassette` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

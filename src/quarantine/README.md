@@ -23,7 +23,7 @@
 
 - partition `quarantine` · sub-root `45b66192-2445-8e2d-b466-491b74d72709`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6356bdff-5c67-8afe-8f42-0e39b3dfd24c` · framed by typography partition `quarantine` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ea85ebb0-9b93-8a8e-8d62-5a7e64cd6eb9` · framed by typography partition `quarantine` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

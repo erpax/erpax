@@ -23,7 +23,7 @@
 
 - partition `iosplatform` · sub-root `1c3ee1c5-c15e-8c62-af59-15fd52d2214d`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c0dba310-efdc-8743-94fe-3625e0e55846` · framed by typography partition `iosplatform` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9e3809aa-9cd3-82bc-8231-e1197f596c58` · framed by typography partition `iosplatform` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

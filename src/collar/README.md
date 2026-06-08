@@ -23,7 +23,7 @@
 
 - partition `collar` · sub-root `cdd2fc19-d735-8f25-9cbd-4f938e455d99`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `31b5fbf1-044c-81f3-8162-9c17eaeb3ef9` · framed by typography partition `collar` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `26c6ebd8-6b68-8bbb-89d7-5530c66e1f08` · framed by typography partition `collar` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

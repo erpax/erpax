@@ -23,7 +23,7 @@
 
 - partition `touches` · sub-root `cfdc627c-9361-8c73-9516-23f05d6cbc9c`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9b983dea-608d-8a75-932d-f9716555efbb` · framed by typography partition `touches` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2477ac41-82f6-8d32-8493-65a0077fa591` · framed by typography partition `touches` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `locksmith` · sub-root `4fd752ee-5bc2-8639-a6bd-64a14d114b0a`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c7c3643f-059e-88a2-89ab-52aa2d3ec8d0` · framed by typography partition `locksmith` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86a453c6-86bc-865a-aa91-e1fe45be247f` · framed by typography partition `locksmith` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `overflow` · sub-root `62d7ae20-b910-8c4e-bd39-cf78c823408f`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a8ce9ac4-2a35-86c0-9c95-b1ac6304539e` · framed by typography partition `overflow` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `54bb9660-d817-84a6-8dd0-675bd752d214` · framed by typography partition `overflow` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

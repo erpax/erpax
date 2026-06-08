@@ -23,7 +23,7 @@
 
 - partition `animism` · sub-root `2d2cea7d-1084-8a5f-9d73-0f608e322c86`
 - bond degree `29` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `02f50354-be4e-8bdf-b7ba-5616a94d5428` · framed by typography partition `animism` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `00e70f0b-8242-8b4f-82f0-33536be43cec` · framed by typography partition `animism` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `midwifery` · sub-root `6a178cc6-6d3a-8f11-a8c1-ed03729b6e87`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `85ce5e19-cf2d-83fe-8fe6-85af0905c42f` · framed by typography partition `midwifery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c37b79a-c214-865a-907d-4c0882c31130` · framed by typography partition `midwifery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

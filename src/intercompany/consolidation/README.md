@@ -25,7 +25,7 @@
 
 - partition `intercompany` · sub-root `541780b1-65ee-874f-97a2-b3f661767685`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `f2c2b1f8-1ef4-8e8f-b3d2-7e141ac950b2` · framed by typography partition `intercompany` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4dba4ad4-ccf8-898e-bb41-341fbc1074d1` · framed by typography partition `intercompany` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

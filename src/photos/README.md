@@ -23,7 +23,7 @@
 
 - partition `photos` · sub-root `c1312b5b-0e85-8dcd-bb91-ab9ade18429f`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f1c98aa3-1f7e-85c5-be8c-e9930c09f333` · framed by typography partition `photos` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78225c5c-e2e1-8e6f-9a6f-6d08be58add9` · framed by typography partition `photos` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `audio` · sub-root `8c3131f8-b443-8d5b-bf67-472603d4356b`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `11111d74-3889-8087-b9ac-a69a9bceabd9` · framed by typography partition `audio` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `69e928ce-a19d-8e87-9657-c9394237771a` · framed by typography partition `audio` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

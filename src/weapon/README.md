@@ -23,7 +23,7 @@
 
 - partition `weapon` · sub-root `9b44e079-8cdb-8a73-9d27-fc53c3932342`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e629d073-5bb8-8324-ac3f-f70588d27ee3` · framed by typography partition `weapon` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1035611a-88fe-8d4c-ae54-48bb25d8fe77` · framed by typography partition `weapon` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `recording` · sub-root `76262f7e-0742-8039-bf32-edbcd7579fc2`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cf502c5d-987b-83f9-87d5-2ec751a02338` · framed by typography partition `recording` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d67e06d4-7a00-8963-a5a4-a2e52370e8da` · framed by typography partition `recording` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

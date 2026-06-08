@@ -23,7 +23,7 @@
 
 - partition `vedanta` · sub-root `3775fa74-e627-8b75-8038-53f6ca8e8113`
 - bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a4c7642f-9a09-86d4-afcd-c06ac395e995` · framed by typography partition `vedanta` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `490b1d0b-d6b4-8649-a433-293fbf85364c` · framed by typography partition `vedanta` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

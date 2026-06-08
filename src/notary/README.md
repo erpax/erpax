@@ -23,7 +23,7 @@
 
 - partition `notary` · sub-root `3a4bbcd9-a861-89ce-92e6-209aa4b2cd98`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7722db85-3253-8f5d-aa0a-f57de6cc4f80` · framed by typography partition `notary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b0d8194e-2a65-8538-91d1-39e9ec821c4a` · framed by typography partition `notary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

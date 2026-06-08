@@ -23,7 +23,7 @@
 
 - partition `conversion` · sub-root `1a3488d9-0f78-8a53-80a8-e5ec343e424e`
 - bond degree `39` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `615c7709-310c-84d2-9708-3ae0d15fb0b9` · framed by typography partition `conversion` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `21d83fad-68a1-8fa5-a3c0-a3224259d2da` · framed by typography partition `conversion` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

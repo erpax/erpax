@@ -25,7 +25,7 @@
 
 - partition `incoterms` · sub-root `f838d825-c4fd-822e-958f-686d5cb6fe5c`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4d1874e1-4cfe-86ed-9e41-c7a85a0c4889` · framed by typography partition `incoterms` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8dfeeadc-4408-89a6-aede-5d357fbbb434` · framed by typography partition `incoterms` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

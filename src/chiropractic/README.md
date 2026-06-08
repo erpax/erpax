@@ -23,7 +23,7 @@
 
 - partition `chiropractic` · sub-root `ae65ae03-80e2-831e-ab7d-ad49d709b668`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4114d693-218f-83a3-ae48-4e67e6c3eef2` · framed by typography partition `chiropractic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b5603618-40bc-8629-8b48-c94cf2232953` · framed by typography partition `chiropractic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

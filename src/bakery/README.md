@@ -23,7 +23,7 @@
 
 - partition `bakery` · sub-root `6f5746c2-377e-85f3-bd98-d9429de53418`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f7bdf919-687e-8a5b-87bb-3e59d85b47db` · framed by typography partition `bakery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27153a15-fabd-8bbe-9fd2-6931a4d427ca` · framed by typography partition `bakery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `perennial` · sub-root `ae8dedfa-a2a1-8dd4-9b26-09a9ce00ea4d`
 - bond degree `30` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c3a5be3b-cef1-865b-ba10-485e8799af0b` · framed by typography partition `perennial` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f145d61a-1b77-8491-8a65-a735e6c92f95` · framed by typography partition `perennial` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

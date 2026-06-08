@@ -23,7 +23,7 @@
 
 - partition `florist` · sub-root `36f3b70b-5043-866f-b1d8-22d48eaee22e`
 - bond degree `28` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4edc9c3d-ebf0-8dab-b99b-de60db689d54` · framed by typography partition `florist` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0b840ffa-4d2a-8ae3-bd2f-dd4ad1620b79` · framed by typography partition `florist` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

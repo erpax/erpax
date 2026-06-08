@@ -23,7 +23,7 @@
 
 - partition `tv` · sub-root `a5989c63-1488-8735-bb2a-469cabba79a8`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `59dcf9c2-883f-8e42-b69c-f673d0636a1f` · framed by typography partition `tv` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `509a1c73-526b-822f-8b7e-4d285897b6bf` · framed by typography partition `tv` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

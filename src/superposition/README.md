@@ -25,7 +25,7 @@
 
 - partition `superposition` · sub-root `44a1f023-92f5-8bb7-8705-1835897b6bfe`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `55917819-db6c-8b7f-902c-e79da62d8e00` · framed by typography partition `superposition` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `304e2efe-1d92-85ee-b469-dfeca61f873d` · framed by typography partition `superposition` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

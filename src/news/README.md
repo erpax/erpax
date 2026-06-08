@@ -23,7 +23,7 @@
 
 - partition `news` · sub-root `727e546b-6ad3-8437-b140-73511a2fda3b`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `772da670-de8c-8ac7-8037-ad736133e3c9` · framed by typography partition `news` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e32e9f3b-cc2f-817b-85a7-b56844a9908a` · framed by typography partition `news` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

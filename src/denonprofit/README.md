@@ -23,7 +23,7 @@
 
 - partition `denonprofit` · sub-root `d8d19a3f-a909-854a-adb7-9e0094c1ce18`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2c6062ff-e8bb-858a-8c5a-9452176060ce` · framed by typography partition `denonprofit` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `42c80981-1dc5-8d94-9647-6da8d7e31710` · framed by typography partition `denonprofit` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

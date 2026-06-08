@@ -23,7 +23,7 @@
 
 - partition `orphism` · sub-root `92a68e81-32e8-89f0-845c-b51b9839f810`
 - bond degree `23` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a826f359-7038-8fa1-92bf-22039f14cb03` · framed by typography partition `orphism` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9943c544-417b-867d-845d-6ceb1bf70443` · framed by typography partition `orphism` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

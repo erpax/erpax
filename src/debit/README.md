@@ -23,7 +23,7 @@
 
 - partition `debit` · sub-root `ed56e325-5232-89e0-ae73-479ae5c9c636`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `61d815b9-ece0-8457-b3d3-1eebfa252791` · framed by typography partition `debit` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `57568d2e-c16a-821e-86f5-5f10139e0d5c` · framed by typography partition `debit` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

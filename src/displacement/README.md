@@ -23,7 +23,7 @@
 
 - partition `displacement` · sub-root `ed452bfb-a95d-851a-970b-095bcbd0c12b`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `aa78326f-612a-8754-8b00-aa36bc059895` · framed by typography partition `displacement` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `73e84736-264c-8c46-92e3-86291aa763f7` · framed by typography partition `displacement` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

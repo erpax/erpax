@@ -23,7 +23,7 @@
 
 - partition `upsell` · sub-root `aafad036-7c66-8b21-85f6-2a284e39f0c9`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1fc6898f-bc00-8a20-8ba4-100013f82141` · framed by typography partition `upsell` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b860210f-6236-868c-aaeb-556b97b7c199` · framed by typography partition `upsell` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

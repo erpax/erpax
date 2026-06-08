@@ -23,7 +23,7 @@
 
 - partition `lender` · sub-root `a4687099-b1c8-82e8-8a52-ef71bae3bd33`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c4c3f752-70fb-8993-b6e9-f9180f535149` · framed by typography partition `lender` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c2ac8a7-a4c9-89cc-8041-0eace1a5c650` · framed by typography partition `lender` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

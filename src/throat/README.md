@@ -25,7 +25,7 @@
 
 - partition `throat` · sub-root `899ee9ee-069c-8c29-9ea5-3b915fc2ef71`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `b61f4501-6aa5-8121-b93b-8373617b5063` · framed by typography partition `throat` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c22e9974-4a0e-880c-b279-52df55010f89` · framed by typography partition `throat` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

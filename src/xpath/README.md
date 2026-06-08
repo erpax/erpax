@@ -23,7 +23,7 @@
 
 - partition `xpath` · sub-root `77b9a06f-c1f5-8c52-841e-b9ab60e93d5b`
 - bond degree `2` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e935a5b8-b870-872c-8e13-cb230f353d95` · framed by typography partition `xpath` bonds `2` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `16a4d8d1-0955-88e9-87dd-d5991aa8b197` · framed by typography partition `xpath` bonds `2` · `pnpm readme` · `pnpm readme:check`</sub>

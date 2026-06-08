@@ -25,7 +25,7 @@
 
 - partition `regeneration` · sub-root `ceed7be0-a0a6-81e6-9d7c-00112d18f2c1`
 - bond degree `20` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `3e6f2dd5-9a85-8924-81a9-50e552ce5329` · framed by typography partition `regeneration` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f771c918-26e9-89ce-89d4-29a99df689fa` · framed by typography partition `regeneration` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `bitrate` · sub-root `d7afdf63-3f13-8603-a6b4-26f2cfcd31f0`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d92eed8d-cd48-8fe9-9283-3e35e9b4a0f8` · framed by typography partition `bitrate` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a89db93-0d05-888c-93f2-3f6320f6ab26` · framed by typography partition `bitrate` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

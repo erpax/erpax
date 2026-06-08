@@ -23,7 +23,7 @@
 
 - partition `landform` · sub-root `5c73b80c-81da-822d-8eea-c0175f1b6f98`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3f7b0034-3230-89f2-a83c-0d437cde8f99` · framed by typography partition `landform` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c49911e-403f-8a71-b3d0-52a0668e376d` · framed by typography partition `landform` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `waist` · sub-root `297d30b0-b27e-825c-9d01-b0348cecedd6`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a8c2695a-d9fb-8001-b072-b4a6939491f5` · framed by typography partition `waist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bbd1809f-33dd-8b43-9571-283bbab28d9b` · framed by typography partition `waist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

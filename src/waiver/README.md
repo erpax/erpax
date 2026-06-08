@@ -23,7 +23,7 @@
 
 - partition `waiver` · sub-root `39b99982-9836-849d-9b52-92baadd50e28`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8f34dec9-1b00-8f3c-a324-a398e33dd5ec` · framed by typography partition `waiver` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18669403-9b3b-8a1f-aa2c-d1becd2d37cf` · framed by typography partition `waiver` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `sugar` · sub-root `dfed5419-7176-89e0-9c49-41e876eb9089`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a6bdae7a-b80b-889b-8ea1-6d71943822fa` · framed by typography partition `sugar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f31b3e9c-8983-86ca-a4fe-575c73077ee3` · framed by typography partition `sugar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `vitepress` · sub-root `f426f668-922b-8d87-ab22-5134835d9529`
 - bond degree `45` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `277a02b7-a992-8b99-ae26-48b2e287163e` · framed by typography partition `vitepress` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67cf20ff-7a80-81a9-b6c4-2102787d33cb` · framed by typography partition `vitepress` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

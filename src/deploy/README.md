@@ -25,7 +25,7 @@
 
 - partition `deploy` · sub-root `be02e68c-774d-88a2-b917-34ac0505d2db`
 - bond degree `50` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `8075bce4-0f09-8dcb-bf3b-4a0b01ba735a` · framed by typography partition `deploy` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac34e1fc-f02b-86c6-9898-b03cf87b16e1` · framed by typography partition `deploy` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

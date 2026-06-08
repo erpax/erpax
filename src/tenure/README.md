@@ -23,7 +23,7 @@
 
 - partition `tenure` · sub-root `2b7fc9df-c7d8-8166-bc68-036d7b54eb6d`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3e3b1884-d146-8000-9175-fb7443cd0260` · framed by typography partition `tenure` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `30e523e7-1ca2-8d7f-ab00-eb94aed1ca8a` · framed by typography partition `tenure` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

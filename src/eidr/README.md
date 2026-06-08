@@ -23,7 +23,7 @@
 
 - partition `eidr` · sub-root `86b7a736-b212-819d-be4d-a6d907212a2b`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ff1099ba-0c99-8762-b308-2ac681d504b2` · framed by typography partition `eidr` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3a638c86-726e-89f0-b785-1109895d1dcb` · framed by typography partition `eidr` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

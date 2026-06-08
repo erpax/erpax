@@ -23,7 +23,7 @@
 
 - partition `food` · sub-root `ac78eae9-997d-8af7-92ea-3e431fce67b2`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `16bdbe64-0b7e-895a-bf25-a0fa99718214` · framed by typography partition `food` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b48fd8a3-3fbf-89f0-a223-18f370ff35ca` · framed by typography partition `food` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

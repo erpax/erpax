@@ -23,7 +23,7 @@
 
 - partition `graft` · sub-root `087f3103-c86f-8f62-8b81-0d2da42fe9dc`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2f5c0ec3-eb15-89a7-a459-a72331652ba8` · framed by typography partition `graft` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ab9d671-9482-8120-b14b-535644ccbf6a` · framed by typography partition `graft` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

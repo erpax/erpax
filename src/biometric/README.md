@@ -23,7 +23,7 @@
 
 - partition `biometric` · sub-root `4d930689-daf1-8cbd-9be0-638eae66884b`
 - bond degree `43` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f86c7cdc-f4c0-8d46-b650-a0405513c755` · framed by typography partition `biometric` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9ea9dff-4cff-8427-b9dd-766d89977c3b` · framed by typography partition `biometric` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

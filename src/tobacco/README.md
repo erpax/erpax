@@ -23,7 +23,7 @@
 
 - partition `tobacco` · sub-root `c2e30c5d-55e3-8731-9aae-a42545ffb0d8`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `55db2b6c-102a-84ca-b228-30781fc8ef7e` · framed by typography partition `tobacco` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f4fbdcc4-903f-801a-8d61-23646940cb7f` · framed by typography partition `tobacco` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

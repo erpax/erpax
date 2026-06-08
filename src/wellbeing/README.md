@@ -23,7 +23,7 @@
 
 - partition `wellbeing` · sub-root `6a5203ac-c24e-89c3-b4ca-5283a6be8e74`
 - bond degree `57` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `939c474d-c58a-80f2-adf8-0f6859df2931` · framed by typography partition `wellbeing` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e39e919-d6a7-8e5b-bea6-2a1cddc28ff3` · framed by typography partition `wellbeing` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

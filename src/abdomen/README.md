@@ -23,7 +23,7 @@
 
 - partition `abdomen` · sub-root `5d418791-6c98-840f-9780-f36bea5d2678`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8e25107c-3311-8733-87d1-4f249ad67040` · framed by typography partition `abdomen` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cac4dd81-5617-895d-8a22-df9cec162a42` · framed by typography partition `abdomen` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

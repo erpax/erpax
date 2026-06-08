@@ -23,7 +23,7 @@
 
 - partition `attrition` · sub-root `ab1c2865-26cc-811e-92e5-f20abef2a48e`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `72dad129-57b0-880a-a3f0-a41322194dbe` · framed by typography partition `attrition` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7e85c654-02f0-8f58-8e31-012bed58f16b` · framed by typography partition `attrition` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

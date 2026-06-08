@@ -25,7 +25,7 @@
 
 - partition `ingest` · sub-root `6ebd3dcb-1fa7-81e9-9d87-b9fa1de4b0bc`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e01823d2-66a0-89ee-abe9-19e180435444` · framed by typography partition `ingest` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b541b0fc-8c9a-8b73-a72e-efab6982c699` · framed by typography partition `ingest` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

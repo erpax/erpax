@@ -23,7 +23,7 @@
 
 - partition `mail` · sub-root `b94d4ecd-6ad3-8c2e-9b7d-1dc568d607d9`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6adfdf78-3686-8ab4-a3c2-55616a17c90e` · framed by typography partition `mail` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `44f24155-e302-8719-a9a5-0a83080b8c9a` · framed by typography partition `mail` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

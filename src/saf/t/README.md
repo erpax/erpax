@@ -25,7 +25,7 @@
 
 - partition `saf` · sub-root `f7a8cf38-c1e8-8844-ad57-3b74d2d00e26`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `15e9f03c-b681-8e0e-b472-f0500305c441` · framed by typography partition `saf` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9401d35d-3208-8004-9ec9-251491eff405` · framed by typography partition `saf` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

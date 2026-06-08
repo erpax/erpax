@@ -23,7 +23,7 @@
 
 - partition `biomagnetism` · sub-root `9d517f80-7f00-8bb2-afdb-524682db5790`
 - bond degree `53` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `27809480-b0f3-8beb-b3d7-c5b412fa7784` · framed by typography partition `biomagnetism` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e76f0eee-7129-8a07-bd8c-8115e04d5ee0` · framed by typography partition `biomagnetism` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

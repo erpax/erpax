@@ -23,7 +23,7 @@
 
 - partition `restocking` · sub-root `8f8ed18c-7f8c-8b1b-a301-bba159becb89`
 - bond degree `58` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `300f35f6-c569-8e77-bfeb-f958ec5da62b` · framed by typography partition `restocking` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bcdc2426-1f34-8385-b216-f27a7005cb7a` · framed by typography partition `restocking` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `boarding` · sub-root `63e1a71d-c159-83c9-913b-699ca08fe6c0`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e2ecb45b-231a-847c-bc14-280195f6a967` · framed by typography partition `boarding` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2ce40928-cfa2-839a-87c7-f1cd25148b38` · framed by typography partition `boarding` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

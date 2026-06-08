@@ -23,7 +23,7 @@
 
 - partition `ultrasound` · sub-root `450dd900-55dc-8269-957e-2dfd64d9a66d`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cf93e6b1-fdbd-8505-9764-2b682f67a529` · framed by typography partition `ultrasound` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4b0c388b-0c9f-84e0-abf3-06b8e344d7e5` · framed by typography partition `ultrasound` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

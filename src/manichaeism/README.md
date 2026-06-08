@@ -23,7 +23,7 @@
 
 - partition `manichaeism` · sub-root `3d67453e-7371-8806-bb19-686cf683213a`
 - bond degree `26` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b64c4421-8152-8a2e-82ff-a806fb1d04c0` · framed by typography partition `manichaeism` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cacd5745-9930-87be-9a2e-626d0eadd6fe` · framed by typography partition `manichaeism` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

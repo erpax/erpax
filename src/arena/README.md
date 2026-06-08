@@ -23,7 +23,7 @@
 
 - partition `arena` · sub-root `7f82d3a6-2313-8bfe-97f5-70664eeb3ed2`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e30fd8f2-c239-8423-8ae0-3cfdba2ba16c` · framed by typography partition `arena` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `12eecf19-e5e6-82ce-bf13-76ab979ee893` · framed by typography partition `arena` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

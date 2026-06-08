@@ -23,7 +23,7 @@
 
 - partition `radiography` · sub-root `2fdd1ee3-5313-841b-8e6b-40bd7c6cb0bd`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1b3df96a-0ca3-8c46-90a3-d4ed5b11c1ae` · framed by typography partition `radiography` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4aa92289-20a3-8058-a005-0c67078a79d9` · framed by typography partition `radiography` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

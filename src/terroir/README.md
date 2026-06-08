@@ -23,7 +23,7 @@
 
 - partition `terroir` · sub-root `d0cae7dc-50b4-8a2f-9ee1-29753600f424`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `eeaeb803-bc1a-8a8a-9d08-83c2242c5068` · framed by typography partition `terroir` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9db755ed-709e-8b50-bec9-cc424d263a9f` · framed by typography partition `terroir` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

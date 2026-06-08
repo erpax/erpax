@@ -23,7 +23,7 @@
 
 - partition `atlas` · sub-root `341f65a6-2d80-8232-a777-b3a9dda2ea0b`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b6cae0a1-b5d9-8952-be3e-88e69c9bd483` · framed by typography partition `atlas` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `540b7cc8-8272-8259-a255-fa42e1fc7161` · framed by typography partition `atlas` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

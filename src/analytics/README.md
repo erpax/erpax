@@ -25,7 +25,7 @@
 
 - partition `analytics` · sub-root `496bc66f-de12-8dce-94f7-0c34d1d7570b`
 - bond degree `70` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `bindings` · `cost` · `hallucination` · `hooks` · `purity` · `relocate` · `typography` · `unavoidable`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9d824467-ec10-8129-96bd-fda99eb34905` · framed by typography partition `analytics` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97c01af8-2dde-8bd3-bc7a-25345de1ef3c` · framed by typography partition `analytics` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `fodder` · sub-root `d7932f29-d4d5-80f2-b945-bf2b8dca89b7`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fdbcdf89-40b2-8a1a-ad36-90086fb362d3` · framed by typography partition `fodder` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dbc90d70-534d-8d3c-9b8e-024154586573` · framed by typography partition `fodder` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

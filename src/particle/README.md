@@ -25,7 +25,7 @@
 
 - partition `particle` · sub-root `4db7f4e0-2b20-8614-a3f7-57784975cb9f`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `fc42ac8e-bd36-81cb-b3b5-d365bba113bb` · framed by typography partition `particle` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f7c0ae33-dcb8-829d-8a1a-fb9a7f5730d2` · framed by typography partition `particle` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

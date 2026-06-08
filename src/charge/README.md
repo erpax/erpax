@@ -23,7 +23,7 @@
 
 - partition `charge` · sub-root `0135b4d8-b315-8dd7-b352-cae5831fafec`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8aeb6822-dae3-8202-ae10-1a68cfcaa5ae` · framed by typography partition `charge` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a532e38f-a07e-80be-8161-dc408b8ad16f` · framed by typography partition `charge` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

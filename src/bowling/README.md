@@ -23,7 +23,7 @@
 
 - partition `bowling` · sub-root `2a61d26b-0edc-819c-97b7-bb7548334b31`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3a35c410-64b9-8c9d-9c79-5bcb0daf2a4b` · framed by typography partition `bowling` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d476f18e-c1df-8729-bb0c-6d159a5310ca` · framed by typography partition `bowling` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

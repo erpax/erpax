@@ -23,7 +23,7 @@
 
 - partition `dentistry` · sub-root `8db364e1-d679-81f3-9ae3-86bd00b70acd`
 - bond degree `30` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1fdf2280-33fd-8c62-a4aa-1ff0826ab13e` · framed by typography partition `dentistry` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dc1ce330-3354-879d-9594-3811298e3b1e` · framed by typography partition `dentistry` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

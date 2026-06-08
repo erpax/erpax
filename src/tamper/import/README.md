@@ -25,7 +25,7 @@
 
 - partition `tamper` · sub-root `3759fd7e-a41d-8b46-b85f-008b24a237ba`
 - bond degree `118` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity` · `quantum/boundary` · `tamper/import`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `b2ae8d2d-5040-8946-87ab-e725fa528ab4` · framed by typography partition `tamper` bonds `118` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `327afbe7-b17b-8760-b499-4efd22ea9578` · framed by typography partition `tamper` bonds `118` · `pnpm readme` · `pnpm readme:check`</sub>

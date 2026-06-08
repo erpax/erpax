@@ -23,7 +23,7 @@
 
 - partition `opportunity` · sub-root `edebdfda-c15d-840a-870d-3e99c2e75507`
 - bond degree `40` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7fc3e237-ef76-8d4b-bd60-306cb120e5c7` · framed by typography partition `opportunity` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5e48cc4-fe10-8c44-a63b-0d2f8051b383` · framed by typography partition `opportunity` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `police` · sub-root `dd4567b4-ff54-8f34-a888-974e5a53c590`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b70b84d5-faae-808f-ad84-673cfb9599d5` · framed by typography partition `police` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8f8b359f-1934-860c-90d7-36637deaf0c7` · framed by typography partition `police` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `lei` · sub-root `834832ea-510a-8ab2-ba26-afb20e97f548`
 - bond degree `29` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0eb60aef-15cd-82cb-9a8d-b08213f96a98` · framed by typography partition `lei` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a8db5210-4906-810d-a06e-512c346cf656` · framed by typography partition `lei` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

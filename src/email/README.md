@@ -23,7 +23,7 @@
 
 - partition `email` · sub-root `92d28840-d260-8e3b-83f6-7f8b7795e559`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e8220b3b-f478-8902-9054-c637ffd43e89` · framed by typography partition `email` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d39135e3-358a-8ad9-8de3-eedc3163bcbb` · framed by typography partition `email` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

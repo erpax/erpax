@@ -23,7 +23,7 @@
 
 - partition `contingency` · sub-root `215cf9dd-3d8e-8919-a525-8e95249f0941`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9b6f81be-0e0c-8d32-9569-443c2e44bd45` · framed by typography partition `contingency` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `30fe94f6-c6ff-8c0a-b405-4df00dad11bd` · framed by typography partition `contingency` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

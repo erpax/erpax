@@ -23,7 +23,7 @@
 
 - partition `action` · sub-root `c2e9d738-cada-84a9-981d-b5a14f7656d9`
 - bond degree `405` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b6566a62-49c8-87a2-b020-2ca5362bae10` · framed by typography partition `action` bonds `405` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b00ba8df-270e-834c-b49f-40706847cc45` · framed by typography partition `action` bonds `405` · `pnpm readme` · `pnpm readme:check`</sub>

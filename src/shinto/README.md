@@ -23,7 +23,7 @@
 
 - partition `shinto` · sub-root `b2eadaea-345a-8b88-a6ea-e4bf01b43c3f`
 - bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9f2d0edb-18cd-8244-97e9-0b33fa273432` · framed by typography partition `shinto` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c6ea2514-2b07-8b30-94cf-ed5ea0359f4d` · framed by typography partition `shinto` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

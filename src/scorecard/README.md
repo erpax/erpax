@@ -23,7 +23,7 @@
 
 - partition `scorecard` · sub-root `50bf55d0-8367-8c71-a058-a8ae7f658253`
 - bond degree `39` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5c1141b1-2827-812f-a84d-cfb17a4cf94d` · framed by typography partition `scorecard` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6b9f2e21-f291-8805-b97e-ab757ee3ddfe` · framed by typography partition `scorecard` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `toilet` · sub-root `706eb5f0-865a-87dd-9f61-d9cd69996c7f`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `92603f46-6057-803f-8ea6-d5daa61c1b68` · framed by typography partition `toilet` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6c41b2e7-0c58-8532-a877-133664f00f0c` · framed by typography partition `toilet` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

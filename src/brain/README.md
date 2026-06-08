@@ -25,7 +25,7 @@
 
 - partition `brain` · sub-root `702f6ecf-ff93-858c-8bb5-de7778aa50f4`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e9881e48-a5cb-8365-b17c-6a4b8dfba85e` · framed by typography partition `brain` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `038325e4-f610-85f5-aba1-6a5a6f3cd266` · framed by typography partition `brain` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

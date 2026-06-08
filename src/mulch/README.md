@@ -23,7 +23,7 @@
 
 - partition `mulch` · sub-root `62c100e9-edb2-84cb-9a64-ba215f5245a2`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fc88b683-3247-80e9-9ea7-d8909a5b02e3` · framed by typography partition `mulch` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `65ac728f-525d-8b55-8ab9-1d6f39c7ed4d` · framed by typography partition `mulch` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

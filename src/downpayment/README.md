@@ -23,7 +23,7 @@
 
 - partition `downpayment` · sub-root `cb079685-0d0a-8188-8037-431d8cd5d5eb`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7ef0ceff-6d7e-891c-9d12-5397480149d4` · framed by typography partition `downpayment` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `347e6f83-62e9-81a6-8bcc-31b3db8d7afb` · framed by typography partition `downpayment` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

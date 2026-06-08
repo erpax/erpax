@@ -23,7 +23,7 @@
 
 - partition `protestantism` · sub-root `d4e8269a-8af2-87fc-a06a-e2c91409af7e`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b410ec51-b8e5-81bc-85c6-21715c46faea` · framed by typography partition `protestantism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cd20ccc6-9f3a-898a-a55f-507d0acd9500` · framed by typography partition `protestantism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `trading` · sub-root `b0d00b62-7748-8923-8fcf-be00c361b1db`
 - bond degree `43` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `f2fe2601-e98b-8288-b97e-a9f652504acc` · framed by typography partition `trading` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fa2a44d4-6500-83aa-ba5b-a18cbbb2e405` · framed by typography partition `trading` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

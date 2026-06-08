@@ -23,7 +23,7 @@
 
 - partition `plugins` · sub-root `dc340842-c181-89c8-8c96-e4a8f89543b7`
 - bond degree `92` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `06e48635-29a7-8207-9301-b36116bf4ce6` · framed by typography partition `plugins` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8869845-6aea-89ca-b34e-661602a13e1e` · framed by typography partition `plugins` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

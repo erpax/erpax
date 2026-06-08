@@ -25,7 +25,7 @@
 
 - partition `mala` · sub-root `92e72ef7-b20d-84da-a0b5-359ba4299beb`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `ff3150fd-672b-867f-bcd0-4557fad9b2e6` · framed by typography partition `mala` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac45091c-2c92-8839-975b-227d06f7e0c3` · framed by typography partition `mala` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

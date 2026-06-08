@@ -23,7 +23,7 @@
 
 - partition `occupancy` · sub-root `577a2c8b-bf30-8d72-9848-616a7cc74e28`
 - bond degree `32` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d79ed8ad-55b1-8b22-98e7-951b0e19a6d4` · framed by typography partition `occupancy` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `47709067-a066-8aa2-b35b-85015481142e` · framed by typography partition `occupancy` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

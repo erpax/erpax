@@ -23,7 +23,7 @@
 
 - partition `pronoun` · sub-root `14c0fbda-2a3c-8b26-a578-b66178a63692`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e9db2829-db05-89bf-be5f-ed13b09887eb` · framed by typography partition `pronoun` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `617ba19c-b189-87e4-98d3-ac2875cd1b7f` · framed by typography partition `pronoun` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

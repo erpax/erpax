@@ -23,7 +23,7 @@
 
 - partition `fiber` · sub-root `c15c10ef-de6b-85a6-b818-bc46b5294f3a`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c2cbb251-efb9-875e-969d-adb17367b36a` · framed by typography partition `fiber` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8d8622e2-7833-8db6-bd8e-0aeb6a45abad` · framed by typography partition `fiber` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

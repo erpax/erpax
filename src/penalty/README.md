@@ -23,7 +23,7 @@
 
 - partition `penalty` · sub-root `37649311-1996-8fb1-ba13-5ef30e3e2661`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bbe0608e-70be-8144-b371-bd3d17fde07a` · framed by typography partition `penalty` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97b8c897-30a2-864a-86e0-a1251a681def` · framed by typography partition `penalty` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

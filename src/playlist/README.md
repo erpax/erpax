@@ -23,7 +23,7 @@
 
 - partition `playlist` · sub-root `da1fd408-11d4-8a69-828a-d7b50a93410e`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ce288580-dee7-8d9c-bdff-2cacd35de82c` · framed by typography partition `playlist` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `72727581-a40d-8f4b-81d7-e2bd44f1e012` · framed by typography partition `playlist` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

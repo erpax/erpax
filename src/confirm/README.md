@@ -2,7 +2,7 @@
 
 # confirm
 
-> atom `confirm` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `confirm` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -15,7 +15,7 @@
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[boundary]]/escape `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `confirm` · sub-root `079e8289-1a74-8e03-bcc1-94b92adcae4a`
-- bond degree `35` · analysis neighbors `purity` · `quantum/boundary` · `tamper/import`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- bond degree `33` · analysis neighbors `purity`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -33,12 +33,12 @@
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
-- folded `1` · escapes `1`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4201cac6-7e77-84ed-b1f4-1f989f1c6f3d` · framed by typography partition `confirm` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d5662b9b-354b-83ef-b01a-69f7ad109093` · framed by typography partition `confirm` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

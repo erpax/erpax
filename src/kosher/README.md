@@ -23,7 +23,7 @@
 
 - partition `kosher` · sub-root `318bc2df-af50-8210-be18-7d476b61426e`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c8e57308-9edd-81ba-a3dc-ad856c62e8e8` · framed by typography partition `kosher` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1eca5a3d-0ae6-8719-888b-715efa229596` · framed by typography partition `kosher` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

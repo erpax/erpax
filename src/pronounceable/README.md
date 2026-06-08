@@ -23,7 +23,7 @@
 
 - partition `pronounceable` · sub-root `c44ae00d-9a83-807e-b69d-84538ee1246b`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e4efd35c-5b79-80a0-8696-cf4b65436d96` · framed by typography partition `pronounceable` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3fe2153b-a2cb-8a7a-96dc-878a48c9ead3` · framed by typography partition `pronounceable` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

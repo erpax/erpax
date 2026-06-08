@@ -23,7 +23,7 @@
 
 - partition `bans` · sub-root `2d0d37b8-35ba-8539-8cc4-6fbf0e41afa1`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `227216f5-891c-814d-bea2-b10971ac4a5e` · framed by typography partition `bans` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `63a7b28d-fe0f-82c7-9cc0-45c52521c339` · framed by typography partition `bans` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

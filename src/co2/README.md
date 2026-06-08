@@ -23,7 +23,7 @@
 
 - partition `co2` · sub-root `42e64318-8710-834e-9477-84c069c8d7d1`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a974092f-ea76-8da6-926a-281ac2417454` · framed by typography partition `co2` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4f093c4a-4186-8e9d-abf1-46876720a808` · framed by typography partition `co2` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

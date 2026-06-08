@@ -25,7 +25,7 @@
 
 - partition `routing` · sub-root `8b4837de-9a12-859f-b39c-a2b450870db7`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `f376a6c5-6c9c-8e29-9ef1-ab70f72035f4` · framed by typography partition `routing` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `17b956db-95be-8033-ae91-062e74691292` · framed by typography partition `routing` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

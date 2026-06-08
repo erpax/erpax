@@ -23,7 +23,7 @@
 
 - partition `ayurvedic` · sub-root `b38fdd6b-ed53-854d-beb1-cb508208a263`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `61e42b51-4e22-82df-a385-48c67d2cf765` · framed by typography partition `ayurvedic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3e62e915-15e4-8be8-b90d-36d37de0f8de` · framed by typography partition `ayurvedic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

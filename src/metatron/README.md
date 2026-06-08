@@ -25,7 +25,7 @@
 
 - partition `metatron` · sub-root `3cc1c0c2-2085-8b5c-941b-e752bd338f7d`
 - bond degree `32` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `44999959-6f8c-8861-b8f4-11edb4b88edb` · framed by typography partition `metatron` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0489b661-4e02-89da-b208-97bda82ecb45` · framed by typography partition `metatron` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

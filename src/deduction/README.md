@@ -23,7 +23,7 @@
 
 - partition `deduction` · sub-root `a24d33dd-8664-83ae-910f-cefc4cb269b8`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d7643420-9039-8967-b918-4abe596ae32a` · framed by typography partition `deduction` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9ff0b085-4508-8622-982b-af1ef09b65fb` · framed by typography partition `deduction` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

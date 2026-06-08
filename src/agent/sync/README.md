@@ -25,7 +25,7 @@
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
 - bond degree `54` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `b7480c0f-7687-8147-8e44-7b2efd4cf12c` · framed by typography partition `agent` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `142425cf-d491-8f62-b785-9e560390fe9e` · framed by typography partition `agent` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

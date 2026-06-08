@@ -23,7 +23,7 @@
 
 - partition `drug` · sub-root `6e036fb0-6ddc-87d6-ade9-afd1cb981d51`
 - bond degree `44` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `084ef6df-6b58-8601-b181-0b4fceacdbbb` · framed by typography partition `drug` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9ff82bcf-416b-809c-88cc-8b2f2ec58c7e` · framed by typography partition `drug` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

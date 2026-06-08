@@ -23,7 +23,7 @@
 
 - partition `hopats` · sub-root `3e2a6e12-f39a-8094-8afa-b5104ff44ec4`
 - bond degree `28` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6128775d-e91f-8d92-a37d-a9a08209db15` · framed by typography partition `hopats` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ee23c1f-1a3d-8049-b923-21ccd4692c6a` · framed by typography partition `hopats` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

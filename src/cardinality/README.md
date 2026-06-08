@@ -23,7 +23,7 @@
 
 - partition `cardinality` · sub-root `f34c3453-0e82-84d9-b10c-0a5628aaf70e`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8de03bab-b560-87c7-94ea-c9592e060104` · framed by typography partition `cardinality` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `855ab1e3-d012-8ad8-8b84-4bd616db39e8` · framed by typography partition `cardinality` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

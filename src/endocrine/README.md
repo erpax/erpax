@@ -23,7 +23,7 @@
 
 - partition `endocrine` · sub-root `754c79b9-f304-8632-800b-5421cc280807`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bb7d4e72-2436-8e06-ae20-8266600b1851` · framed by typography partition `endocrine` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a7450ac9-04ad-86a8-b1d5-8410630f37a7` · framed by typography partition `endocrine` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

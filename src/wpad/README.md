@@ -23,7 +23,7 @@
 
 - partition `wpad` · sub-root `911bc54c-066e-88aa-b342-d3a849196fd0`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1aea7c00-932c-8e7d-b024-5976aa3f3e3d` · framed by typography partition `wpad` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fb236c30-316f-83c4-a6ea-4756cd50b0e3` · framed by typography partition `wpad` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

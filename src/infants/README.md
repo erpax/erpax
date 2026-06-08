@@ -23,7 +23,7 @@
 
 - partition `infants` · sub-root `be1e381b-372c-8da1-b593-56d64d0c247a`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `453609fd-bb39-828c-9ce3-d814f4cffe88` · framed by typography partition `infants` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e48b1bf8-a671-80b2-9135-e73928cb3734` · framed by typography partition `infants` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

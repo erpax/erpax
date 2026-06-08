@@ -23,7 +23,7 @@
 
 - partition `fractal` · sub-root `9fffbbc0-237b-827c-bec2-18b5a5e0e8db`
 - bond degree `135` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `db4a3fca-46fd-8b63-92c9-8d2c3f35fd94` · framed by typography partition `fractal` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0022cae3-2937-8a77-8241-6c6266f02465` · framed by typography partition `fractal` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>

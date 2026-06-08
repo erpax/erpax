@@ -23,7 +23,7 @@
 
 - partition `hvacbusiness` · sub-root `a092ce02-3b6a-8e8e-bf90-528bfe3937ea`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fa71251e-48d1-837e-b5c6-c0f0ac09f967` · framed by typography partition `hvacbusiness` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fce40863-fcc3-88f4-abad-f141795797b4` · framed by typography partition `hvacbusiness` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

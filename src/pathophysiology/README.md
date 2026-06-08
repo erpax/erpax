@@ -23,7 +23,7 @@
 
 - partition `pathophysiology` · sub-root `ea2854f8-4095-88aa-8310-f7fb0da1c41c`
 - bond degree `52` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `131c9fa1-9490-80a2-bfab-595bd1d75c79` · framed by typography partition `pathophysiology` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5bf04302-b448-84bb-9979-2f18901d525b` · framed by typography partition `pathophysiology` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

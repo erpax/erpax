@@ -23,7 +23,7 @@
 
 - partition `cemetery` · sub-root `56892016-0bbf-87e8-81db-499a09c3451c`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f496a572-cb03-8659-b211-df5625205c45` · framed by typography partition `cemetery` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `713cbd0c-7e98-83e7-8356-cbda59bca257` · framed by typography partition `cemetery` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

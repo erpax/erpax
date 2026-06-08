@@ -23,7 +23,7 @@
 
 - partition `prepaid` · sub-root `6a38c87c-e01e-8c2a-929e-bcd0d6ef5c16`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `15dc65bc-e22f-8add-b63d-5f0569c9450a` · framed by typography partition `prepaid` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f905aacc-678c-86af-b0d4-b3c4ebd76a52` · framed by typography partition `prepaid` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

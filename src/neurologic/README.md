@@ -23,7 +23,7 @@
 
 - partition `neurologic` · sub-root `7dd5903b-3125-8582-9fd5-2a6ce30218ee`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bab453af-5023-8fbc-80bd-e13755d2ed91` · framed by typography partition `neurologic` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `975a09dc-1d1d-8063-93b4-259fcc557d40` · framed by typography partition `neurologic` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

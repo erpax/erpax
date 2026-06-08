@@ -23,7 +23,7 @@
 
 - partition `anaerobic` · sub-root `9333624b-689c-8e61-9cd7-f7db09ed9f33`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5dfafbf1-4718-8213-8407-a8738a996839` · framed by typography partition `anaerobic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9d310c1-c828-8876-a680-88f68d8d6af2` · framed by typography partition `anaerobic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `sin` · sub-root `c1bf42e7-b9bc-8188-87db-481f4daaa22d`
 - bond degree `27` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3121890e-14cf-86c5-92a8-c4be40a13e1b` · framed by typography partition `sin` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a8e0371f-1fe2-8a54-985c-109207bf313c` · framed by typography partition `sin` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

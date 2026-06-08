@@ -23,7 +23,7 @@
 
 - partition `reimbursement` · sub-root `a5919c12-8264-8875-8bc6-c93a5643faa8`
 - bond degree `28` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `89f99fcb-10a4-80e1-bab8-b081c7376bd4` · framed by typography partition `reimbursement` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2f6ce65c-51e2-886f-885e-da657a579321` · framed by typography partition `reimbursement` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `calculator` · sub-root `36c099b1-fc39-8814-93ea-e7a3d3fe1c62`
 - bond degree `28` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7e43fbdd-24a8-82f3-9c5a-0f013a9513d7` · framed by typography partition `calculator` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b66c2303-1509-8ad3-adf9-45c4e7b753b7` · framed by typography partition `calculator` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

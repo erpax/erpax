@@ -23,7 +23,7 @@
 
 - partition `motor` · sub-root `fff76384-733a-8817-be56-ab45adcf4671`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7700b28d-c7d0-8264-bec1-ff11fbc74ef0` · framed by typography partition `motor` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff1a6eee-1760-8d63-80e8-89fa167ec22c` · framed by typography partition `motor` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

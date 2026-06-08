@@ -23,7 +23,7 @@
 
 - partition `confucianism` · sub-root `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3`
 - bond degree `26` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7b5cb29f-5352-8072-99c4-0eb8d79b6772` · framed by typography partition `confucianism` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `da2c56ab-52a7-85cb-bc28-f81d97479aa1` · framed by typography partition `confucianism` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

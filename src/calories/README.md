@@ -23,7 +23,7 @@
 
 - partition `calories` · sub-root `5fe6ffe4-59ea-8d1b-846b-89a040ef0419`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4bb02bd4-9b8f-8edc-99de-afcc6dd8c2e5` · framed by typography partition `calories` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `10625e6a-7d18-8ab3-a56e-7fe4aa5d9eac` · framed by typography partition `calories` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `cable` · sub-root `9eae32db-3705-8f1e-b190-9d8ecb959e25`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6b854824-6dbd-844b-a8b3-2e74d7949497` · framed by typography partition `cable` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `235960a0-f4c5-8be0-bb83-0216e3695ed8` · framed by typography partition `cable` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

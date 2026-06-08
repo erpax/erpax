@@ -23,7 +23,7 @@
 
 - partition `steering` · sub-root `7997291b-de3c-8e20-be00-78bda395974b`
 - bond degree `32` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1d25ea1b-7492-8906-9ba9-2ad1fed661ac` · framed by typography partition `steering` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `163f5ca7-7554-8081-a205-fa01e04bc135` · framed by typography partition `steering` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

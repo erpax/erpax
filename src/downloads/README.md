@@ -23,7 +23,7 @@
 
 - partition `downloads` · sub-root `1a932005-ce68-8e52-9f77-09af8b2fec38`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `472958f6-d12d-8af9-bae4-b3e1629e1ecb` · framed by typography partition `downloads` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `34077c5d-e56c-8df5-bbf8-f511cafaa200` · framed by typography partition `downloads` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

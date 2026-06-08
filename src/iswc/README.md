@@ -23,7 +23,7 @@
 
 - partition `iswc` · sub-root `61c48713-4f83-851a-8a2b-7a59b1ce7bf4`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e7b8a4e2-f488-8f97-873c-ed4c34c290b8` · framed by typography partition `iswc` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6bc59fb2-bde8-8fd1-b499-f4aa9e70836d` · framed by typography partition `iswc` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

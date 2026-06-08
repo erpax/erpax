@@ -23,7 +23,7 @@
 
 - partition `duns` · sub-root `6ae629ec-e5bd-8c89-b613-ff11cf1e759e`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `930597a4-7235-8975-a02b-9ac5a770fd26` · framed by typography partition `duns` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7ab601bb-8c61-843d-b453-57c006b7fab0` · framed by typography partition `duns` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

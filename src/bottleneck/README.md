@@ -23,7 +23,7 @@
 
 - partition `bottleneck` · sub-root `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f`
 - bond degree `35` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b10dfc41-a00c-8cf8-a335-68c42c314446` · framed by typography partition `bottleneck` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `65ab309b-a338-84f7-95a0-818aa8ff56fe` · framed by typography partition `bottleneck` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

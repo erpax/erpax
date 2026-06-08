@@ -23,7 +23,7 @@
 
 - partition `yield` · sub-root `eefa8d1b-c5e6-84ee-9861-2e7f738027e0`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `78e14658-67c6-84ac-b46f-46825696a5bb` · framed by typography partition `yield` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1cf73cfe-cf1c-8bc3-a486-54ccfc7f1d4c` · framed by typography partition `yield` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

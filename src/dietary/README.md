@@ -23,7 +23,7 @@
 
 - partition `dietary` · sub-root `3f80f57a-dff9-8258-8301-212d6e1e7654`
 - bond degree `74` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `51738465-8319-889d-a55a-2d27cc407cfe` · framed by typography partition `dietary` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `04a8b3b6-5a95-8aec-8792-792c9656a149` · framed by typography partition `dietary` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

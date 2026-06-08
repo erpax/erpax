@@ -23,7 +23,7 @@
 
 - partition `gynecologic` · sub-root `ee9742f1-a4d7-8d6e-ba57-2d861b2e9cb4`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3d4a3e97-8644-8a65-9824-18e9bf1dce39` · framed by typography partition `gynecologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `12c709f0-c85b-8014-a3bf-4e02fccd473d` · framed by typography partition `gynecologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

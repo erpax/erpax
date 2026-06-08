@@ -25,7 +25,7 @@
 
 - partition `biological` · sub-root `40a0b53b-7053-8f4a-b5ab-1d7131414b2d`
 - bond degree `81` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e6b090de-badf-8a44-9541-9366f4d97796` · framed by typography partition `biological` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b056dbce-a457-89bf-ad44-2ac5998f9966` · framed by typography partition `biological` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>

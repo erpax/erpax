@@ -25,7 +25,7 @@
 
 - partition `method` · sub-root `0faf1d19-1570-8c19-8b95-672cd61e52f1`
 - bond degree `60` · analysis neighbors `diamond` · `quantum/boundary` · `tamper/import`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `6011a963-60bd-82d8-94bc-bac66655ad8d` · framed by typography partition `method` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cc1308c4-7347-84a4-85a8-8dfb731fb526` · framed by typography partition `method` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

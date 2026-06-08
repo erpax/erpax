@@ -23,7 +23,7 @@
 
 - partition `barcode` · sub-root `efb58195-0ddd-8fcc-a18c-2f7d92ddb663`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `62364453-d56b-8d2e-b48e-5463927cd63a` · framed by typography partition `barcode` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2a038105-215f-8618-a24a-601bfbbf5daf` · framed by typography partition `barcode` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

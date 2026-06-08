@@ -23,7 +23,7 @@
 
 - partition `rental` · sub-root `333c2a76-b209-8555-875c-e4d2d0318856`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `eb9cc323-ba55-8497-9585-f9dcaee967bb` · framed by typography partition `rental` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec90c40b-1197-836e-9144-895012356c3a` · framed by typography partition `rental` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

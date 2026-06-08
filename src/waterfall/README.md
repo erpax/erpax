@@ -23,7 +23,7 @@
 
 - partition `waterfall` · sub-root `0807eb73-37c9-8665-a40e-7fb24740d359`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f4f1b2d4-ad30-8e76-bb05-ad702dc3637d` · framed by typography partition `waterfall` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2044c2ce-fa31-8983-afff-9b4c091c5f21` · framed by typography partition `waterfall` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

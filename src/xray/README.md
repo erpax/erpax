@@ -23,7 +23,7 @@
 
 - partition `xray` · sub-root `674ce88a-61ff-8584-baaa-f447b174d1cd`
 - bond degree `4` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `55416b9e-7e2b-893c-ab18-fdff6534e63e` · framed by typography partition `xray` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `973dab14-1cd0-8e19-a883-343839d88247` · framed by typography partition `xray` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>

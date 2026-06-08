@@ -25,7 +25,7 @@
 
 - partition `duality` · sub-root `32d1b730-f4a8-82a7-9075-0d3c1f5fb9b3`
 - bond degree `136` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `c9fc495e-0b27-8c92-baab-5b6af58cdca1` · framed by typography partition `duality` bonds `136` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7c2919d7-44a8-8e9a-9e05-5feaf811c529` · framed by typography partition `duality` bonds `136` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `segment` · sub-root `f729ad2f-87f2-80ca-88ef-56a50d17d77c`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c3204b5b-647b-8f68-8b06-aa0b834624c5` · framed by typography partition `segment` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59b5359d-baba-8af0-bbb8-5a0e04551e0a` · framed by typography partition `segment` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

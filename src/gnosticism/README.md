@@ -23,7 +23,7 @@
 
 - partition `gnosticism` · sub-root `31b5f225-08f5-8e20-bf1b-2fe376afb5e8`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1a80e70b-85a7-8612-998f-d90f7cf63803` · framed by typography partition `gnosticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `47ac8007-c6ea-8943-8d8d-b21af9e1b6d8` · framed by typography partition `gnosticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

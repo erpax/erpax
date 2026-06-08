@@ -25,7 +25,7 @@
 
 - partition `boltzmann` · sub-root `4618156b-109a-8e4d-bbfc-b8a26cd61225`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `481cbec8-cc37-84bf-889e-e2e57ccf0a8e` · framed by typography partition `boltzmann` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8e0fc4c4-6305-80b9-86cc-304f08b8201f` · framed by typography partition `boltzmann` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

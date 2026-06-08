@@ -23,7 +23,7 @@
 
 - partition `airbags` · sub-root `7097fb80-e9e8-8179-ab54-f63dbc77ed5d`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5bbe3245-c259-8b36-8045-9a2918f7f5f0` · framed by typography partition `airbags` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a6bc696-432a-8d95-baec-08e77afa5f78` · framed by typography partition `airbags` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

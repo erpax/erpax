@@ -23,7 +23,7 @@
 
 - partition `resizable` · sub-root `ab2120e7-6acb-8111-83b4-24f756b872d6`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `47722ff3-ce4e-896c-b699-de0f5c6ee342` · framed by typography partition `resizable` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5255a5cc-efe3-8a61-8a20-a0c0ba377d83` · framed by typography partition `resizable` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

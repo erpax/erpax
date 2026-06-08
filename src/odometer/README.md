@@ -23,7 +23,7 @@
 
 - partition `odometer` · sub-root `973de0a1-0692-86ba-ac94-642c2e4540d1`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0aef9a68-a6e5-8472-80e8-40aaf96f81f7` · framed by typography partition `odometer` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c1dc930-a5da-8834-98fe-7acd4fdbc063` · framed by typography partition `odometer` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

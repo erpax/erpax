@@ -23,7 +23,7 @@
 
 - partition `clip` · sub-root `b9f21fe7-42d9-8095-85c2-55059028dc27`
 - bond degree `84` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4d25c71b-2c05-861b-90d3-95648029a48c` · framed by typography partition `clip` bonds `84` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `497cd4cf-d5ef-8eea-9387-b5dd5d5b3bdf` · framed by typography partition `clip` bonds `84` · `pnpm readme` · `pnpm readme:check`</sub>

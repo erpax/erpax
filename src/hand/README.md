@@ -23,7 +23,7 @@
 
 - partition `hand` · sub-root `460e86cf-627f-8859-9aaf-d0fd3c3d74b9`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `910f6ad3-643a-889b-9cf4-7513b52e1431` · framed by typography partition `hand` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fde1a58b-3988-8582-bdbb-16c879769a41` · framed by typography partition `hand` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

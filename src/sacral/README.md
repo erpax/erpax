@@ -25,7 +25,7 @@
 
 - partition `sacral` · sub-root `3db3512e-aae9-8326-a5e7-32b42989814f`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `064b6a8d-4412-8d4b-8746-c6658b899e55` · framed by typography partition `sacral` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `458052c0-e661-89e1-9c2b-1b2ccb8ebb78` · framed by typography partition `sacral` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `dna` · sub-root `b8a42a0a-29e8-898c-bcb7-e81bfa836033`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `2be6adc9-7603-8925-ad8d-ec4dc3c8900e` · framed by typography partition `dna` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27bcfff1-2b14-84e8-9d86-2e4f500a30b0` · framed by typography partition `dna` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

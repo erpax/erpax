@@ -23,7 +23,7 @@
 
 - partition `drink` · sub-root `ef4b9fc4-d826-8439-b82e-d95f8d0ca74d`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dc6182ed-4248-8802-b2af-d0876cd5bafe` · framed by typography partition `drink` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6af75813-c946-8bb2-ab84-92b4a5554bed` · framed by typography partition `drink` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

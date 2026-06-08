@@ -23,7 +23,7 @@
 
 - partition `goodwill` · sub-root `ae4a3523-7f54-8f54-8a0c-5b2e6e103089`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `62200f67-6b8a-8177-ab89-e37e3c5a9f75` · framed by typography partition `goodwill` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `79bc85e8-5808-819e-beaa-57c232bb500d` · framed by typography partition `goodwill` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

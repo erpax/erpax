@@ -23,7 +23,7 @@
 
 - partition `modulation` · sub-root `4bfbcb00-1dcc-8510-894d-102003c3d9cc`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f0f377e6-ae1d-8e30-a9e7-46f060bb31a8` · framed by typography partition `modulation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c1dcf7e7-1bbd-8d7e-bee2-eedbdbddce88` · framed by typography partition `modulation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

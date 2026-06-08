@@ -23,7 +23,7 @@
 
 - partition `taxon` · sub-root `3ad21f8c-e7ff-86d2-8c41-5aa14151198c`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b636e81b-0f1b-84f3-936c-541fcd1ee224` · framed by typography partition `taxon` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac8f7640-a6f3-827d-950b-e00cfa5879c9` · framed by typography partition `taxon` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

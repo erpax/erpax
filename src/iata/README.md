@@ -23,7 +23,7 @@
 
 - partition `iata` · sub-root `9b314b7a-198c-8d6c-9a3b-2bde25ef17da`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `49176639-10ee-843d-8867-194b98b6abc4` · framed by typography partition `iata` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `14617c7f-afe3-8521-9b9b-6be91984c09c` · framed by typography partition `iata` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

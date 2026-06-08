@@ -25,7 +25,7 @@
 
 - partition `vein` · sub-root `c768a6c9-b7da-8704-b1ff-29bb4b8a39ac`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `5a0192fb-0635-85e6-b48b-f3b2fe7805eb` · framed by typography partition `vein` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e36478a-6acc-8924-b343-56da8cb4d260` · framed by typography partition `vein` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

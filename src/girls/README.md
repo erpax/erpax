@@ -23,7 +23,7 @@
 
 - partition `girls` · sub-root `1f4d157a-de17-846e-b4ab-7be11f8e3a06`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `80cb15b5-f7e5-8d23-9971-96aca030b093` · framed by typography partition `girls` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `defba6f6-60c5-8b08-96ef-95e71cf4538f` · framed by typography partition `girls` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

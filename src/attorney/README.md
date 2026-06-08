@@ -23,7 +23,7 @@
 
 - partition `attorney` · sub-root `397816d1-5115-8802-a9dd-7730ef9c7729`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `51b23b1e-0af9-8747-b983-b3596a6e1e3c` · framed by typography partition `attorney` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e37f6266-9b62-8545-945e-8c6ffbf73d88` · framed by typography partition `attorney` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

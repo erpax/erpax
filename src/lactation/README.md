@@ -23,7 +23,7 @@
 
 - partition `lactation` · sub-root `b590a495-f82a-8c7f-8799-7340721c8693`
 - bond degree `29` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `652835f2-fb75-86dd-b7c7-d515a3f12323` · framed by typography partition `lactation` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b9f82365-67cd-8a5d-9279-417082139c80` · framed by typography partition `lactation` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

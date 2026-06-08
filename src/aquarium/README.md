@@ -23,7 +23,7 @@
 
 - partition `aquarium` · sub-root `e4297e53-a243-8152-a26b-f8929566ef20`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `df0fd3b3-afeb-8021-978b-1f5d67bec1b4` · framed by typography partition `aquarium` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `518123cf-4a3a-8a7e-a9dc-76842e831372` · framed by typography partition `aquarium` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

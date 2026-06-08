@@ -23,7 +23,7 @@
 
 - partition `holographic` · sub-root `5d018913-b3f1-8341-aa70-3213b1beabfb`
 - bond degree `274` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ae18fcd0-da0e-8433-8482-68484fb8b729` · framed by typography partition `holographic` bonds `274` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7b789634-22ec-8b09-8e0e-68678f11dced` · framed by typography partition `holographic` bonds `274` · `pnpm readme` · `pnpm readme:check`</sub>

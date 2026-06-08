@@ -23,7 +23,7 @@
 
 - partition `monoisotopic` · sub-root `35cfe4f1-58d2-8c54-80ee-7d57f5f8deba`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `45a8e88b-03c7-8ad5-9d7f-59eaecbef470` · framed by typography partition `monoisotopic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d26647f1-cb3c-8c56-a121-56f082c018d0` · framed by typography partition `monoisotopic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

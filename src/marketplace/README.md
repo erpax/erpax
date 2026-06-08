@@ -23,7 +23,7 @@
 
 - partition `marketplace` · sub-root `fb022657-cf96-8df7-b38b-97069b5b28e2`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d5149172-3352-8d3d-bbc8-7b623acc12ae` · framed by typography partition `marketplace` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fcc88f71-29ce-8046-a078-dcc62082d220` · framed by typography partition `marketplace` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

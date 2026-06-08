@@ -25,7 +25,7 @@
 
 - partition `carriers` · sub-root `59a910dc-53ff-8dce-9232-fc3accedc757`
 - bond degree `51` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `7666932c-171f-869c-843c-9d2fcb8e431b` · framed by typography partition `carriers` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9ab5c91-c167-8a08-ba8b-d0b1775d1c42` · framed by typography partition `carriers` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

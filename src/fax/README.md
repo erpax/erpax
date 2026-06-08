@@ -23,7 +23,7 @@
 
 - partition `fax` · sub-root `a0702d8b-52b9-852a-8576-606bbcbfcb26`
 - bond degree `61` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dfa6ab19-2f39-894c-a08e-674021517042` · framed by typography partition `fax` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fcef6ddd-9ed2-8eb4-84f2-8fe9b7b8bf8d` · framed by typography partition `fax` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>

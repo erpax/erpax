@@ -23,7 +23,7 @@
 
 - partition `years` · sub-root `4d584d93-9e82-8159-9239-73596ba9b78b`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d42b49a2-f69d-83dd-84d5-cee7d376f440` · framed by typography partition `years` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `516ec34a-c54d-8f1c-b2e2-2ef939aa3413` · framed by typography partition `years` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `repayment` · sub-root `c9f5dee5-2dc2-8fe7-a816-3000596b866d`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b848d59a-a6b3-8175-ab9b-20cdedb8cbd8` · framed by typography partition `repayment` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f75cc3b3-4090-89c8-b8c6-2b95293761b4` · framed by typography partition `repayment` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

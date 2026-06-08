@@ -23,7 +23,7 @@
 
 - partition `postharvest` · sub-root `af6bb63e-f5d5-8e96-b901-14de0dad8ef8`
 - bond degree `29` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `907b5411-cb80-8e08-aecb-7a4a263d7c63` · framed by typography partition `postharvest` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f9b09799-7664-8de7-92c4-7836446ee407` · framed by typography partition `postharvest` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

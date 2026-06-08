@@ -23,7 +23,7 @@
 
 - partition `checkin` · sub-root `48e8b32c-efa0-8c67-a239-7e6b9375844f`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `368f8431-9f73-829e-ad79-dbe41e2f8a1d` · framed by typography partition `checkin` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bbe27e17-d6be-8583-9434-388c3c15d328` · framed by typography partition `checkin` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `anesthesia` · sub-root `4fb2f4b0-47e8-87b6-b0f7-4aa3b49c59ba`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c8e77aa1-fa6c-8e7c-bc68-14c3ed278dfb` · framed by typography partition `anesthesia` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce54e988-f258-8ec6-8655-1ad459862d55` · framed by typography partition `anesthesia` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

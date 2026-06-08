@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `tenant` · sub-root `9c6b3124-60eb-81cd-9fe5-e5b776688568`
-- bond degree `51` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- bond degree `50` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `79b1b3b5-95db-81dd-a602-2c9d6291071d` · framed by typography partition `tenant` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `420a0265-ed18-87da-9c09-e719feac8700` · framed by typography partition `tenant` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

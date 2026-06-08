@@ -23,7 +23,7 @@
 
 - partition `chat` · sub-root `92464f93-1e6c-8031-87da-a8d3661dabed`
 - bond degree `199` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `80bb216b-6a6f-8b65-94b6-f6cc66494ddf` · framed by typography partition `chat` bonds `199` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `41713354-b8d2-863e-abe3-719d763dbdbb` · framed by typography partition `chat` bonds `199` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `quantum` · sub-root `ecd01aba-0f28-897d-86f3-89925a116c39`
 - bond degree `115` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `30d88536-f5f5-8210-a833-4466e1aa5479` · framed by typography partition `quantum` bonds `115` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c1f3b9a-cf2f-8e9e-bff7-d2ed88537a6f` · framed by typography partition `quantum` bonds `115` · `pnpm readme` · `pnpm readme:check`</sub>

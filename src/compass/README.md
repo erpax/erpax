@@ -23,7 +23,7 @@
 
 - partition `compass` · sub-root `1dd09c48-7c78-800c-afd9-704ee2d2be26`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7a57fd8b-fdf2-8cfa-9615-3ff5dc2f8764` · framed by typography partition `compass` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5f14b147-f0bf-8ec7-9c53-80c94a41c93d` · framed by typography partition `compass` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

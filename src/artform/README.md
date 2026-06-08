@@ -23,7 +23,7 @@
 
 - partition `artform` · sub-root `793eb0d2-e690-8c77-874c-49dfc77b5068`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `55689c92-a638-80c0-a896-88253d76e1a3` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `600ebdfa-be4c-841d-9007-d1d3fd26d449` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

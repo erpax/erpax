@@ -23,7 +23,7 @@
 
 - partition `expires` · sub-root `6adfeb48-1358-8ba1-82ac-e6dbd63d1bc3`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6a108088-5e3b-8acd-a25f-7298c151ebae` · framed by typography partition `expires` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8cd3c893-70b4-8716-827f-413b6c2762b1` · framed by typography partition `expires` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

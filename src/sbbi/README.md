@@ -23,7 +23,7 @@
 
 - partition `sbbi` · sub-root `45123754-6ebc-849a-9ec9-618560ff60ff`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bab6895b-f7c0-8b43-86bc-db39bb02bfb4` · framed by typography partition `sbbi` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d87c4085-8374-84ed-ae05-2d795e0318bf` · framed by typography partition `sbbi` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

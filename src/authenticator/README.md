@@ -23,7 +23,7 @@
 
 - partition `authenticator` · sub-root `0de33f7b-b2a5-8ac4-a7ea-9284dce8d862`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `86adea09-9dbb-8345-b9c9-3b2db2e01c1a` · framed by typography partition `authenticator` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `326be196-4e59-8186-a9cf-cd62d1911428` · framed by typography partition `authenticator` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

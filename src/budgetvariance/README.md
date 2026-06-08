@@ -23,7 +23,7 @@
 
 - partition `budgetvariance` · sub-root `3f6c75a0-3cc4-8c7e-8ea9-85e6f355bf1f`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6a65d03f-ee8e-8366-a03b-72ee45ad43b0` · framed by typography partition `budgetvariance` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `edcb864e-8283-8ed9-965b-bc9b6eb3aeb8` · framed by typography partition `budgetvariance` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

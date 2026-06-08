@@ -23,7 +23,7 @@
 
 - partition `ski` · sub-root `8aa63b81-864e-84f9-be87-a50c5060d373`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2aa45b39-19bf-81c8-9c62-05401b865ab5` · framed by typography partition `ski` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06d8b45f-4696-8cb5-9d09-74d07028c946` · framed by typography partition `ski` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

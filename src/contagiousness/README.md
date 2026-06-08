@@ -23,7 +23,7 @@
 
 - partition `contagiousness` · sub-root `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `59315617-e7ab-807a-bd33-2f4175f608ad` · framed by typography partition `contagiousness` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27c3e640-55db-80a2-aca8-e02818f906e2` · framed by typography partition `contagiousness` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

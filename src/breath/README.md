@@ -23,7 +23,7 @@
 
 - partition `breath` · sub-root `d6d4b575-64ec-8252-9a3d-f15fcee6fe95`
 - bond degree `104` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3fb0408b-5e0b-8d1e-81f3-c64b0ac91681` · framed by typography partition `breath` bonds `104` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ff72c8d-cb8a-8939-af8d-e356c26baf12` · framed by typography partition `breath` bonds `104` · `pnpm readme` · `pnpm readme:check`</sub>

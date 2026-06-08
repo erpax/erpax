@@ -25,7 +25,7 @@
 
 - partition `consolidation` · sub-root `4fc2f3ba-94b4-8ed5-9da6-dcdc137a02de`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `d376a316-fa06-8189-8600-6fd89bd91a3c` · framed by typography partition `consolidation` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1a3e81d9-1b5c-8eec-8255-982f88c30884` · framed by typography partition `consolidation` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

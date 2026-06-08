@@ -23,7 +23,7 @@
 
 - partition `wpfooter` · sub-root `2ae71806-2bc3-8249-be1c-c15798755951`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `899ec6b8-a930-85d3-97c0-5b98412ea833` · framed by typography partition `wpfooter` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0d339093-c229-80c2-91bc-fb6fcf785a5b` · framed by typography partition `wpfooter` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

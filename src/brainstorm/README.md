@@ -23,7 +23,7 @@
 
 - partition `brainstorm` · sub-root `b20df82f-692e-8830-baa4-8afaadf1b9e5`
 - bond degree `22` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5817602a-3703-8bdf-8c68-37e0ea1a9b86` · framed by typography partition `brainstorm` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e89cfda5-b7df-8d61-8f9b-858eb5678eb7` · framed by typography partition `brainstorm` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

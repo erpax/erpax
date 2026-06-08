@@ -23,7 +23,7 @@
 
 - partition `trip` · sub-root `28331155-84fc-8484-a336-6838bf8e1bd5`
 - bond degree `25` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b0685f05-2655-8adf-8c7d-70341370fc7a` · framed by typography partition `trip` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f1c9b4a3-6275-8174-9e44-e92b15f78097` · framed by typography partition `trip` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

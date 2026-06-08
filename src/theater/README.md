@@ -23,7 +23,7 @@
 
 - partition `theater` · sub-root `701c2f67-e6b1-88a1-ae91-010499250222`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2f20f3a1-32a2-8cc4-9ec9-b578a8a37add` · framed by typography partition `theater` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff477e70-f359-8dd8-a2d5-81fcdd408523` · framed by typography partition `theater` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

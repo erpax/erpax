@@ -23,7 +23,7 @@
 
 - partition `collateral` · sub-root `d9a82f2d-20f4-8f40-90cd-5623a28a784a`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b222b721-0f3b-8dad-8609-10aa10715a02` · framed by typography partition `collateral` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `40ebe5c2-5d4f-8b6e-85a6-64504b1aa229` · framed by typography partition `collateral` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `tracking` · sub-root `7da8956d-771d-802d-bf12-07504b72e0a0`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c95a757d-ea9a-8678-bc2c-aa7ed946b18c` · framed by typography partition `tracking` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `17c4a769-3922-86e0-9362-93b823457359` · framed by typography partition `tracking` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `shannon` · sub-root `883463dd-6d1a-8d1b-873c-177ef6a6d822`
 - bond degree `62` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `2c98f5fe-3051-876f-ab03-ad130999fe6b` · framed by typography partition `shannon` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d56b7cb5-9bd5-8d35-bb30-250cdf32a9d3` · framed by typography partition `shannon` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>

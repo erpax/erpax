@@ -23,7 +23,7 @@
 
 - partition `speakable` · sub-root `531ff91f-db16-8ced-8011-c63608c4b30f`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `815baf07-ab03-8851-bcd7-5fa8d97a0a30` · framed by typography partition `speakable` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c7e74b9-0649-8fe4-b1f0-b8b188f1494e` · framed by typography partition `speakable` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `enum` · sub-root `a2aa3509-f3a5-8194-8712-78b3d1673dfc`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bd1ca84d-9d66-8ec5-8b0a-843ad2f288f9` · framed by typography partition `enum` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b30c5cb3-60cd-8d6a-8566-49cc020a0887` · framed by typography partition `enum` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

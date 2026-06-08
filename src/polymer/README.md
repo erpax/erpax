@@ -23,7 +23,7 @@
 
 - partition `polymer` · sub-root `213d5187-8e27-89e0-b195-8007107326e7`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fe929578-7fef-80e8-a5db-59f329f70680` · framed by typography partition `polymer` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b1b24632-07e1-8139-ae48-20906fbeb201` · framed by typography partition `polymer` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

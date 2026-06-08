@@ -23,7 +23,7 @@
 
 - partition `allergies` · sub-root `aaf99cc2-548f-870d-bd53-4955fe9c405b`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0e143d3a-f0de-8cd9-b171-4c50df4b072c` · framed by typography partition `allergies` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cccfcd7d-d0fe-87d0-8f26-77bb0866ba37` · framed by typography partition `allergies` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

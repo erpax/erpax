@@ -23,7 +23,7 @@
 
 - partition `rheumatologic` · sub-root `642684eb-7f65-889f-9a4b-468d13b67aa6`
 - bond degree `80` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `13947e7a-4bfe-85c2-aefd-d21eaa570dd3` · framed by typography partition `rheumatologic` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd819bcc-4610-838a-959e-f429459079b9` · framed by typography partition `rheumatologic` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

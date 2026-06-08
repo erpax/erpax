@@ -23,7 +23,7 @@
 
 - partition `saturated` · sub-root `ae8ef0ca-e94e-86f2-9298-b10ce3365e07`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `993ebdfd-2bf9-80e7-99d4-d1718f0b9da9` · framed by typography partition `saturated` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c451f34-815a-8695-9ac1-6574846fe7d7` · framed by typography partition `saturated` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

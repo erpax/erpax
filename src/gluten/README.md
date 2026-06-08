@@ -23,7 +23,7 @@
 
 - partition `gluten` · sub-root `a47df7a9-eae2-8c3f-8474-2e66da643c48`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `975a698b-434b-88cd-babf-0a887329aad9` · framed by typography partition `gluten` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dedcc183-c7cd-8440-a66d-21c2c6e88eba` · framed by typography partition `gluten` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

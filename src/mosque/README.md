@@ -23,7 +23,7 @@
 
 - partition `mosque` · sub-root `3491275b-a911-89fa-a59f-bb928589521d`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `17196580-70a4-81ad-a39a-d1720386a7c6` · framed by typography partition `mosque` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2bddf04b-ddcc-82a4-bc13-8012b451a9cd` · framed by typography partition `mosque` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

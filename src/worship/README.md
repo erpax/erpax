@@ -23,7 +23,7 @@
 
 - partition `worship` · sub-root `1ea0eae4-829c-8dfd-beed-0c185acc9edd`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `93e5b5a4-0f7a-8934-89b3-4b96d0a8e9df` · framed by typography partition `worship` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ecd30643-5e55-88a1-a372-9b2f3f0d0440` · framed by typography partition `worship` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

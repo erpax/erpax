@@ -23,7 +23,7 @@
 
 - partition `tvepisode` · sub-root `dc4e439f-f87a-897e-8113-86c8454a33a3`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c48c0c6c-ef80-8e74-95a5-6164f97adef5` · framed by typography partition `tvepisode` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a38db85-df30-8675-b347-2b3dad919e7f` · framed by typography partition `tvepisode` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

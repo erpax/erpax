@@ -23,7 +23,7 @@
 
 - partition `iptc` · sub-root `f5d6d372-ae7a-8cae-8a30-076a52990322`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0ab6b3a1-9eff-86a0-807e-26542b23d19f` · framed by typography partition `iptc` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7b72092e-c287-8bf6-805e-da5c9be9900b` · framed by typography partition `iptc` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

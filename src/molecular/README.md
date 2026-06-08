@@ -23,7 +23,7 @@
 
 - partition `molecular` · sub-root `8c75afc0-537d-8a09-82fd-da842b78a8e3`
 - bond degree `25` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `857186c0-07ca-8736-808f-105b0ca1e982` · framed by typography partition `molecular` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `469f696c-937e-8be3-ac9e-e95fe4b6c985` · framed by typography partition `molecular` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

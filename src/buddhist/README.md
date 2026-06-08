@@ -23,7 +23,7 @@
 
 - partition `buddhist` · sub-root `405571da-9653-8ad4-a328-726ce611e855`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `476fb03d-29a8-8a4a-840d-e21fc2a58a86` · framed by typography partition `buddhist` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `234c00c3-bae0-81e2-89a0-72761fc465f6` · framed by typography partition `buddhist` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `inseam` · sub-root `96198ea8-3d63-8b89-b769-1bee37d38720`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1a397a02-9aa8-8049-87bd-4718d93198b6` · framed by typography partition `inseam` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `42ec0f6e-0fe0-8a6e-beec-759adfd02f36` · framed by typography partition `inseam` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

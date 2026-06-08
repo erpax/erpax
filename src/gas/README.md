@@ -23,7 +23,7 @@
 
 - partition `gas` · sub-root `9387c1f3-016a-8b68-86d8-91e308266ab8`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5e4268f2-9b8a-8d24-9bba-f2e653236e7a` · framed by typography partition `gas` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `356d3d73-b135-85e0-9651-5a640e42d50e` · framed by typography partition `gas` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

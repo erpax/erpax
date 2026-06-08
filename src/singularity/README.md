@@ -25,7 +25,7 @@
 
 - partition `singularity` · sub-root `501e3aaf-f3d8-80a5-b18c-1716c46b7f50`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `d71f54e4-87b8-82cc-ac0f-6ced2e26c8d4` · framed by typography partition `singularity` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e06c1101-24c5-899e-b4dc-70b2753b062b` · framed by typography partition `singularity` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `staffing` · sub-root `56b80e16-042e-8fab-b1a2-eff16485ae5e`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b39bb1e6-1cba-8f64-af44-8108487fb441` · framed by typography partition `staffing` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `139e6405-c785-8f31-869e-7e43e1b0ad32` · framed by typography partition `staffing` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

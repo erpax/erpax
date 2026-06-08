@@ -23,7 +23,7 @@
 
 - partition `fear` · sub-root `fc8ab069-8153-8831-88c8-2c3b940ccbdd`
 - bond degree `40` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f55de076-b8c7-8a5a-9e7c-4c47bd0c73be` · framed by typography partition `fear` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3f17a7ed-2443-841f-92a8-07c84c434d25` · framed by typography partition `fear` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

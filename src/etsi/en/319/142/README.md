@@ -25,7 +25,7 @@
 
 - partition `etsi` · sub-root `42ad887a-1499-8765-be85-acada751e24f`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `aa62efa9-2a52-8db5-a1d7-0895e4b158a8` · framed by typography partition `etsi` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d0a51e75-68dd-87a2-9cff-b0da6126e7f3` · framed by typography partition `etsi` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `optometric` · sub-root `993258a5-d52d-8b88-89b1-51525018da32`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f83747dd-e1cf-8cf6-a8c8-d5775846ccd3` · framed by typography partition `optometric` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ffb479d5-1f3c-88f0-8843-8d094cab058a` · framed by typography partition `optometric` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

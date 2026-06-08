@@ -23,7 +23,7 @@
 
 - partition `hotel` · sub-root `d554dcb3-b055-8b42-b281-f1a2b763045a`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dbc8f2e7-1278-8838-9287-1595e97861d7` · framed by typography partition `hotel` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60f3cd43-5009-80f4-bf3e-34792e5de76d` · framed by typography partition `hotel` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

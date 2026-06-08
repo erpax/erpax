@@ -25,7 +25,7 @@
 
 - partition `equilibrium` · sub-root `4f244741-bb69-863c-9bb3-155322a46537`
 - bond degree `25` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `34e7d718-0850-8e66-8577-a02af317428d` · framed by typography partition `equilibrium` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a0f992ca-0b8d-82ed-a9c1-bb0fbac025c7` · framed by typography partition `equilibrium` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

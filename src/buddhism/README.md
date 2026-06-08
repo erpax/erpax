@@ -23,7 +23,7 @@
 
 - partition `buddhism` · sub-root `7e6ee2c9-6208-87b3-b7e4-89fee868c32b`
 - bond degree `30` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dfe24677-fddf-88c2-9d5a-3328856cc754` · framed by typography partition `buddhism` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `957e6d09-c0c0-8b03-814a-dd6ed12d6992` · framed by typography partition `buddhism` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

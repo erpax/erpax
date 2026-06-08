@@ -23,7 +23,7 @@
 
 - partition `campaign` · sub-root `9c47542c-311c-8582-8ea9-89b07c5f296a`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b91da53a-315c-872d-b35a-516b14fa1f7d` · framed by typography partition `campaign` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9fc7f4f7-513b-8df0-9dad-bfd003565a46` · framed by typography partition `campaign` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

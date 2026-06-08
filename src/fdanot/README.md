@@ -23,7 +23,7 @@
 
 - partition `fdanot` · sub-root `2267c877-b1e7-8aff-acf6-76194f7cfa58`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a9f273f8-05a8-82ea-a07c-e9642ca99765` · framed by typography partition `fdanot` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e91d4a4e-b7b3-8d57-90a7-a558495b5a46` · framed by typography partition `fdanot` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

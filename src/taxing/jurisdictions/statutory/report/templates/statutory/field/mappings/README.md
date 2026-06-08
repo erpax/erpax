@@ -25,7 +25,7 @@
 
 - partition `taxing` · sub-root `43244244-8232-8564-876d-d1a099bee8db`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `2358a79f-c98c-84bb-afaf-b4f4ac2c0c6a` · framed by typography partition `taxing` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `29f20d34-d0a9-8b91-9f60-d8d1ee7d85ba` · framed by typography partition `taxing` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `beach` · sub-root `9367614f-4c85-80d7-b4fd-aa15b206638e`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8bb581c8-d164-83e5-b9ac-dc1ee547f2e1` · framed by typography partition `beach` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b891c23a-0e67-8136-9902-2e6134f0019f` · framed by typography partition `beach` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

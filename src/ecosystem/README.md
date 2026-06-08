@@ -25,7 +25,7 @@
 
 - partition `ecosystem` · sub-root `bfcbbfb2-e52e-8fca-8465-e51196a6bb11`
 - bond degree `48` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `8b9a01ac-ff48-883b-aeef-0e7272c5aee6` · framed by typography partition `ecosystem` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `84b01561-7c50-8660-a4fe-a8112762541a` · framed by typography partition `ecosystem` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `patent` · sub-root `f03318d0-6a0e-8653-9b2d-d9054c8be18f`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `71a6a405-a06b-88d2-ada0-df5f4c9db8af` · framed by typography partition `patent` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60c02bd9-e0a2-8bca-8b8c-916cc5776fb7` · framed by typography partition `patent` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

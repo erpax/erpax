@@ -23,7 +23,7 @@
 
 - partition `amradio` · sub-root `92e6535b-6a97-890b-b19b-8b44b77bf38a`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `954f06de-beb1-8d83-b80d-a21977eef839` · framed by typography partition `amradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8beb2978-55fe-860e-9098-314bf69502ba` · framed by typography partition `amradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

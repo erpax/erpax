@@ -25,7 +25,7 @@
 
 - partition `bookable` · sub-root `81a5c4cf-d55f-83da-84b6-028a286649f2`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `64611a3b-7ee2-8543-a62d-5427827a4c81` · framed by typography partition `bookable` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `134082db-27ab-8e2c-a87f-33548c11dc38` · framed by typography partition `bookable` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

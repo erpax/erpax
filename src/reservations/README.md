@@ -23,7 +23,7 @@
 
 - partition `reservations` · sub-root `e581fe8f-6e15-82b5-bb95-a9c521eaf1fd`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a561e61b-47d7-8c84-aa1b-777730d0c246` · framed by typography partition `reservations` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a7e7e05-904f-820c-a0ff-c114f55cddfc` · framed by typography partition `reservations` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

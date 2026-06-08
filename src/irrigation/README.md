@@ -23,7 +23,7 @@
 
 - partition `irrigation` · sub-root `d7857ec9-719b-8e71-beb9-6e292cf813d6`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e30252b1-3968-8f99-869c-b052aee5660f` · framed by typography partition `irrigation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2a4275e6-8fe7-8378-81cd-15026a45a83c` · framed by typography partition `irrigation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

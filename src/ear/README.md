@@ -23,7 +23,7 @@
 
 - partition `ear` · sub-root `5d58a60d-e70b-83b0-88ab-d5e3c2e53a85`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f5093db1-2e19-897e-8df6-bca8566526c8` · framed by typography partition `ear` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `39aacc5f-0964-892f-a027-956e033730de` · framed by typography partition `ear` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

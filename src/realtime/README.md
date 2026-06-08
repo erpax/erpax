@@ -25,7 +25,7 @@
 
 - partition `realtime` · sub-root `29bf50c9-ba45-8a3e-8d15-d16a3086d704`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9f9c270a-9ae7-81f9-945f-b4a17b658c05` · framed by typography partition `realtime` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fca0d3e2-147a-820f-a6d9-f7b00d9447fa` · framed by typography partition `realtime` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

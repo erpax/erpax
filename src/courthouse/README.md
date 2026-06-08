@@ -23,7 +23,7 @@
 
 - partition `courthouse` · sub-root `61f27c87-bef7-8628-b651-86b7ce5314a7`
 - bond degree `45` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `702dcd5b-2159-84ee-8ae5-84f97b8243ef` · framed by typography partition `courthouse` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f7895354-93fc-8070-8df5-8cc903f21736` · framed by typography partition `courthouse` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

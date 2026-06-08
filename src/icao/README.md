@@ -23,7 +23,7 @@
 
 - partition `icao` · sub-root `a78d8f46-eca1-8c53-a232-74c96630b549`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `eadb4d0a-b9a5-82e6-8a71-1806cc4b785c` · framed by typography partition `icao` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9c73c495-6af0-89d5-a2a0-f38488941a6c` · framed by typography partition `icao` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

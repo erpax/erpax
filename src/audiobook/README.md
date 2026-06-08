@@ -23,7 +23,7 @@
 
 - partition `audiobook` · sub-root `2c54409f-2555-861c-a697-020eef5a7624`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6411c53e-9e9d-8c84-b97e-10f93c18195b` · framed by typography partition `audiobook` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fdf2b22a-f75c-8012-a40d-91da276e399b` · framed by typography partition `audiobook` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

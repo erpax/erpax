@@ -23,7 +23,7 @@
 
 - partition `podiatric` · sub-root `3b0b412f-0ad6-83ce-920a-4f3345b2abb6`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c7cbd7ce-79d0-8438-a22c-b578dcfe333e` · framed by typography partition `podiatric` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `099c891e-9356-8001-8d1b-9cf3a0367284` · framed by typography partition `podiatric` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

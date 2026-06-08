@@ -23,7 +23,7 @@
 
 - partition `electrician` · sub-root `6a356ec3-7cc2-84cb-b2dd-3daaf878b407`
 - bond degree `50` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6c1a6f07-0ac2-8e73-acd5-b0b487a66278` · framed by typography partition `electrician` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ed25564-f705-8842-9584-934d7ffa0d7e` · framed by typography partition `electrician` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

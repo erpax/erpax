@@ -23,7 +23,7 @@
 
 - partition `landmark` · sub-root `263cd5bd-a45b-89ae-b32d-f2cc07bb68b1`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3b6f98ad-5c2f-8268-a51a-d702e4e0b7ab` · framed by typography partition `landmark` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ee2853f-95a6-8df2-b9ba-595a8e5973c1` · framed by typography partition `landmark` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

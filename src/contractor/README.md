@@ -23,7 +23,7 @@
 
 - partition `contractor` · sub-root `8fa5835b-fdd7-8d32-92bb-b648615048cf`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `52c93d2e-09d4-875e-bdc0-92e42ff74832` · framed by typography partition `contractor` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06be8924-ac3e-8e28-ab6f-82eec58a34c8` · framed by typography partition `contractor` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

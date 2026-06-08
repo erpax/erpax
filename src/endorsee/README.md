@@ -23,7 +23,7 @@
 
 - partition `endorsee` · sub-root `535f1ef9-d12b-8097-b3da-136f90f8a470`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d7fecb1a-3cc3-863a-99e3-8f1b3bcbc4b4` · framed by typography partition `endorsee` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `08fe4d19-94cc-80a3-bd90-1942d76278be` · framed by typography partition `endorsee` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

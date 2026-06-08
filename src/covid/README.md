@@ -23,7 +23,7 @@
 
 - partition `covid` · sub-root `744258de-1ba1-837e-9a14-2efa0cdff635`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `520e7910-e568-8a17-9465-6cdd988464f9` · framed by typography partition `covid` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d70b1ab-0a2e-8410-a52d-c9468a33ccb7` · framed by typography partition `covid` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

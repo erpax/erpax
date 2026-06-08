@@ -23,7 +23,7 @@
 
 - partition `sparsity` · sub-root `bbfe5e5c-06e4-82e6-9686-d1aa9eb593e2`
 - bond degree `38` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6eaf804a-61e1-8096-bf4f-799ca2c293f0` · framed by typography partition `sparsity` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86973d31-9924-8a7e-83d1-91364a4b7ac3` · framed by typography partition `sparsity` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

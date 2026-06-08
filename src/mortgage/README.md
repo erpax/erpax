@@ -23,7 +23,7 @@
 
 - partition `mortgage` · sub-root `b60d3248-f185-8e7a-8a51-d04390421cd7`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2628de56-fe5f-8749-b4f1-2f5e9e7be339` · framed by typography partition `mortgage` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f32349d7-9d8d-80bf-a6e4-ea0d00727031` · framed by typography partition `mortgage` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

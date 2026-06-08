@@ -23,7 +23,7 @@
 
 - partition `dissolution` · sub-root `62168c94-1a8d-89ab-a918-d2d0be8c3181`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5a7d5058-92aa-803f-80ff-129e9d3048dc` · framed by typography partition `dissolution` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2ceb741f-1d96-8a84-a892-ed436df6447f` · framed by typography partition `dissolution` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

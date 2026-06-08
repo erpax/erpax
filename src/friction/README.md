@@ -23,7 +23,7 @@
 
 - partition `friction` · sub-root `2d3fe81b-44be-892c-b585-64385466a1b2`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `61d70de7-2b0e-8ec6-890b-b11d8d358262` · framed by typography partition `friction` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d6380720-ceb6-8f3b-b2f9-90f24d3ae8c9` · framed by typography partition `friction` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `fuel` · sub-root `f61f3886-a0d1-83b0-a86b-2262246d5489`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fbf1ca47-1745-8df6-8d66-5a4fa71adcb1` · framed by typography partition `fuel` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aa348a89-82c1-81c1-8efe-c846111578d8` · framed by typography partition `fuel` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

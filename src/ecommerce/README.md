@@ -23,7 +23,7 @@
 
 - partition `ecommerce` · sub-root `0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ddd9d78a-e3ff-8c06-b042-57e0cfdc3cb4` · framed by typography partition `ecommerce` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4d92863-6dac-81c4-8bbd-e7c717703090` · framed by typography partition `ecommerce` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

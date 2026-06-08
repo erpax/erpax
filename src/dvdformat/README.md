@@ -23,7 +23,7 @@
 
 - partition `dvdformat` · sub-root `765c14d9-9e40-89f3-8403-f072a5b92fd3`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ab894727-3cd3-8530-b8bd-fc49e12c1fe5` · framed by typography partition `dvdformat` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8cee705-df22-89c5-bffc-3369ab832e23` · framed by typography partition `dvdformat` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

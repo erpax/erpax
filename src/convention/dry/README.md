@@ -25,7 +25,7 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `61` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `53303c6b-5ef7-85f7-90a0-8346741b7728` · framed by typography partition `convention` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `329475c3-54f8-8e86-b81d-2f12a293c37d` · framed by typography partition `convention` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `coach` · sub-root `75c376eb-5dc1-8940-8dcb-6b9d820b9ee9`
 - bond degree `69` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c748caf8-e0b4-8d2e-83ce-4b8b3476eb5d` · framed by typography partition `coach` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18931018-dd58-89c5-aa09-911a30aeff47` · framed by typography partition `coach` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>

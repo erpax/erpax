@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `accounting` · sub-root `8b33fe24-86ed-890b-bd50-163f8f64b128`
-- bond degree `734` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- bond degree `735` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9d523fa4-f563-8d5a-9928-ef7b630ac780` · framed by typography partition `accounting` bonds `734` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `45166740-b189-8c33-8093-e2155bbf8f1b` · framed by typography partition `accounting` bonds `735` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `pets` · sub-root `710e8ede-03cf-8b04-ae3d-8cdb15f23503`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5b023b61-5d4d-8b3c-b94d-31ab6d93fdaf` · framed by typography partition `pets` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f9c81d09-15c2-8525-850a-48bd5222bd28` · framed by typography partition `pets` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

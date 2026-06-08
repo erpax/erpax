@@ -23,7 +23,7 @@
 
 - partition `biophoton` · sub-root `72cb2745-dbef-8f4f-9e5e-2117948455d2`
 - bond degree `31` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d48badcb-d596-81da-a117-9a7b77e62ea9` · framed by typography partition `biophoton` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bedaf87e-e7f7-8cd3-aec7-f956afce90af` · framed by typography partition `biophoton` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

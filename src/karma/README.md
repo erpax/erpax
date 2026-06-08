@@ -25,7 +25,7 @@
 
 - partition `karma` · sub-root `2e4bfaa7-93d5-86b0-a554-4d37ec53fb8e`
 - bond degree `51` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e33c894a-e64d-8461-9e30-f3be2ed5924b` · framed by typography partition `karma` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6bbdeda1-1acc-8ddd-9dfc-2f8a0ac0d936` · framed by typography partition `karma` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

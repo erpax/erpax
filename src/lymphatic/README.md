@@ -23,7 +23,7 @@
 
 - partition `lymphatic` · sub-root `b36eed61-4e70-89a6-aff4-9d9991587a8b`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7d484680-bad7-8190-a65e-02b6dbe917c8` · framed by typography partition `lymphatic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `31e246b3-ccf0-8970-816f-dfa0b829cad1` · framed by typography partition `lymphatic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

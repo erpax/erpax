@@ -25,7 +25,7 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `74` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `fdfccd91-36b2-89e7-b142-13f5f771103f` · framed by typography partition `bank` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `98947771-1fc7-8582-b790-7ee92f6833ec` · framed by typography partition `bank` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

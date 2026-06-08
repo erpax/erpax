@@ -23,7 +23,7 @@
 
 - partition `salt` · sub-root `8f62870b-6660-8d96-a34e-d07d1734f556`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c5b119fd-e951-8938-9284-61c0a74377f1` · framed by typography partition `salt` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fcc8d741-6cc1-896c-92e6-a440e3e5af54` · framed by typography partition `salt` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

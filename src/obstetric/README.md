@@ -23,7 +23,7 @@
 
 - partition `obstetric` · sub-root `b7e9cc77-876a-8344-b3a1-740619678e4b`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `219eab9a-3a9c-814c-937e-e36a2c13fcd5` · framed by typography partition `obstetric` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f3071000-dd1f-8f60-a001-f4a8d1e9a204` · framed by typography partition `obstetric` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

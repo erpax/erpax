@@ -23,7 +23,7 @@
 
 - partition `seasonal` · sub-root `33662b29-45c7-852e-8df7-3f1c69ff3794`
 - bond degree `48` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `615d372e-190f-8ad0-8ed3-bbdefc1e25cd` · framed by typography partition `seasonal` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7afc294a-223e-8fcf-ae10-4031b9644937` · framed by typography partition `seasonal` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>

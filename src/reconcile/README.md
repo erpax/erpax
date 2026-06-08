@@ -23,7 +23,7 @@
 
 - partition `reconcile` · sub-root `2aee5d48-7c08-892c-b037-00fdee91a655`
 - bond degree `44` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `54f3841b-47fc-8865-9f42-061d78cd90eb` · framed by typography partition `reconcile` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `51842994-74c1-81ae-a9dc-ca8362b899a0` · framed by typography partition `reconcile` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `skill` · sub-root `2bbdffe5-9fda-874a-ae4c-05894539a20b`
 - bond degree `4` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `362c9c8a-80a7-895b-a9e8-832537a1cb36` · framed by typography partition `skill` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8359130-4458-8658-ba80-e6e65c846a8a` · framed by typography partition `skill` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>

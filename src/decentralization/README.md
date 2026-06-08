@@ -25,7 +25,7 @@
 
 - partition `decentralization` · sub-root `7dd4fb78-345c-8528-9ba4-cd754cb5bf87`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `70d259a5-455a-879f-a3d6-eb2358a08ed0` · framed by typography partition `decentralization` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b3f734c1-6ed6-87e0-a723-5f37b26052a9` · framed by typography partition `decentralization` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

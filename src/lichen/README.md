@@ -23,7 +23,7 @@
 
 - partition `lichen` · sub-root `8c636999-b08a-8c3d-8c34-77eb47ad5f59`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b931e6f-51c9-8e07-a31f-a6010b4c1b35` · framed by typography partition `lichen` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a7ee547f-e780-8f5f-b1cb-e9f4aaa140ac` · framed by typography partition `lichen` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

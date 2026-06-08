@@ -23,7 +23,7 @@
 
 - partition `suffering` · sub-root `0d69b983-11bf-8c6d-815f-03297011afe2`
 - bond degree `28` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f257cd75-6565-8f65-b5f5-d7616eaca8f4` · framed by typography partition `suffering` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4683d5b3-9894-8b5d-9cf1-14710d65795c` · framed by typography partition `suffering` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

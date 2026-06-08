@@ -23,7 +23,7 @@
 
 - partition `travel` · sub-root `fc57884e-5062-8fd4-ae8c-325942679002`
 - bond degree `33` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `69d40ebf-40a8-8324-9499-8d21799364df` · framed by typography partition `travel` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `92ea97ca-ce73-8a3d-9e6f-59cf1879c6c7` · framed by typography partition `travel` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

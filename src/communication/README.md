@@ -25,7 +25,7 @@
 
 - partition `communication` · sub-root `aea7ad79-ea24-8ce2-9e90-a4b0a9ed88ec`
 - bond degree `65` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `69fd5b6f-3cea-82d8-a334-b321e20ca1ae` · framed by typography partition `communication` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f753bf41-3e3d-8c05-a502-813ce9f8100e` · framed by typography partition `communication` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

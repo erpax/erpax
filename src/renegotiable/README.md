@@ -23,7 +23,7 @@
 
 - partition `renegotiable` · sub-root `cc7597d3-953f-8ec8-8248-fa49f79276a1`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `be5301c3-8a85-89dd-bc5e-4719b690e639` · framed by typography partition `renegotiable` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd1310d2-27b6-8907-81c4-4c01fe439d00` · framed by typography partition `renegotiable` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
 - bond degree `30` · analysis neighbors `tamper/import`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2b41d632-d811-8e2a-86d8-748827458a57` · framed by typography partition `convention` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c932f8db-2b10-8d22-bd9a-2d73fd957f36` · framed by typography partition `convention` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `apiculture` · sub-root `db77d786-3cf4-8a05-b0a6-00d9e5a8d5ad`
 - bond degree `45` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `79aaf834-6bcd-897a-b3bc-db3ecd216f47` · framed by typography partition `apiculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3f5d70a9-d8fe-8c54-a9de-7847601f789e` · framed by typography partition `apiculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

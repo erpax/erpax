@@ -23,7 +23,7 @@
 
 - partition `wpside` · sub-root `8e00a6bf-7049-861c-af8f-0e425cad54fc`
 - bond degree `4` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `16cc7573-46f8-88be-b477-540e21c4f677` · framed by typography partition `wpside` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f3fcf193-824e-8515-977b-f10a044044b4` · framed by typography partition `wpside` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `embassy` · sub-root `ddb04503-99a6-809c-9651-03fa495fda7c`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ed928288-c70b-8d0d-8fb2-dcdc7094fb79` · framed by typography partition `embassy` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f537d2b4-3aff-8441-9653-ccb54aecc96e` · framed by typography partition `embassy` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

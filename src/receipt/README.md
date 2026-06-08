@@ -25,7 +25,7 @@
 
 - partition `receipt` · sub-root `28b58bdc-d91c-8477-89cb-fcae1465ae53`
 - bond degree `34` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `ff0611d4-1a45-86e8-a6bb-e2bc25de2bb8` · framed by typography partition `receipt` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `90600009-8ca6-8873-ae27-88aa1cedc74c` · framed by typography partition `receipt` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

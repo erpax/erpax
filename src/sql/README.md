@@ -25,7 +25,7 @@
 
 - partition `sql` · sub-root `cd17e6fe-9ecd-87f6-b2ef-ad4aa087a9eb`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `3d42b042-8077-88ab-baef-07e77d707b7c` · framed by typography partition `sql` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `24cae51c-5249-861f-82a9-1c3141334c0b` · framed by typography partition `sql` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

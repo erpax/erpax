@@ -23,7 +23,7 @@
 
 - partition `taxi` · sub-root `d92d35f8-f8c5-8399-b7be-a6c28a0f17eb`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d460f317-b0d7-8935-b83c-786da42427ea` · framed by typography partition `taxi` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e3e45ca-af1b-8ab2-83a8-18a10e539f95` · framed by typography partition `taxi` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

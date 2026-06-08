@@ -23,7 +23,7 @@
 
 - partition `befriend` · sub-root `796f0521-699a-8aa0-8a1d-8702e4a79e0d`
 - bond degree `74` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f179254f-4e8c-85e8-bd32-d7e7e490134d` · framed by typography partition `befriend` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b98ac824-3c24-8767-ae85-cca1c2260936` · framed by typography partition `befriend` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

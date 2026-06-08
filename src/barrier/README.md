@@ -25,7 +25,7 @@
 
 - partition `barrier` · sub-root `52489704-67d5-86a9-b1ca-5cce213a2287`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `09d91f22-7a49-8654-8ed4-9dfde0ac342c` · framed by typography partition `barrier` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0fdb0183-0c56-8eae-a0aa-2aea13759caa` · framed by typography partition `barrier` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

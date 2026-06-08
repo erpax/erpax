@@ -23,7 +23,7 @@
 
 - partition `tire` · sub-root `1c5beaa4-69b7-862a-b325-6e6d2fec8c42`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e6f80a3b-cf4c-8c97-9b23-381edbd74bc3` · framed by typography partition `tire` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `17832bd9-7494-8ce1-ad14-28633da6eabf` · framed by typography partition `tire` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

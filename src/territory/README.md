@@ -23,7 +23,7 @@
 
 - partition `territory` · sub-root `8db99cfe-dd4b-83f1-9618-e7cdbfaf9e80`
 - bond degree `28` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `694f1d56-be8d-83b8-a433-66b2edf75647` · framed by typography partition `territory` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dcf2e69c-ea23-84b1-bb1b-023a987f15d5` · framed by typography partition `territory` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

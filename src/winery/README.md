@@ -23,7 +23,7 @@
 
 - partition `winery` · sub-root `f3df3d0f-f5a4-8f7e-9ac9-cd4ca6941aa0`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3b140bf9-6009-8977-b372-a128bcf36bfd` · framed by typography partition `winery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c8d16f7-b365-8ad2-96ef-0336e1109176` · framed by typography partition `winery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

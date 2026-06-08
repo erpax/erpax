@@ -23,7 +23,7 @@
 
 - partition `swimming` · sub-root `9e5c2bc5-1643-8ef7-b217-ef7e3a235451`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2520bdb6-63cd-8efa-9418-8f60640b8dbd` · framed by typography partition `swimming` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0f2fce88-52ae-8a7a-b99e-3dda3f82c705` · framed by typography partition `swimming` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

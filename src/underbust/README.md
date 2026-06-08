@@ -23,7 +23,7 @@
 
 - partition `underbust` · sub-root `a2e72ad8-d9d2-89b5-8486-6d013a464720`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1267c8b1-413e-86f6-8683-4c7a92dafb7c` · framed by typography partition `underbust` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ede79f3f-e812-8e3c-bcc7-2549a759c4d2` · framed by typography partition `underbust` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

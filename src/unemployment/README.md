@@ -23,7 +23,7 @@
 
 - partition `unemployment` · sub-root `0df42498-8753-8317-a673-8fb6e564a892`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `21c7d881-518a-851a-9ec2-d76ce48249b4` · framed by typography partition `unemployment` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9cd5592-074d-823b-b6f1-2ac6ed23dccb` · framed by typography partition `unemployment` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `hero` · sub-root `f79bbcb9-85a7-85ae-811f-43088cc46140`
 - bond degree `4` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `1d27eb9b-7961-81fe-9d7d-eb16d26100c1` · framed by typography partition `hero` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d597c7d5-6d69-860c-9e6e-0680c15968fa` · framed by typography partition `hero` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>

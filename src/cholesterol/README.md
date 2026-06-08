@@ -23,7 +23,7 @@
 
 - partition `cholesterol` · sub-root `f530b042-8971-8e12-8874-31984ff719dd`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1146dc82-35a4-83d8-a5b6-3c5d5436cb3a` · framed by typography partition `cholesterol` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e1a64e23-58d2-84a5-a985-bb0f89bc10a8` · framed by typography partition `cholesterol` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

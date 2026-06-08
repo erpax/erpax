@@ -23,7 +23,7 @@
 
 - partition `aquaculture` · sub-root `8cd5f771-0517-87a8-bfa5-08f9243fb1f2`
 - bond degree `60` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8cf94ed8-727d-858f-b8bf-560669869a9a` · framed by typography partition `aquaculture` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `770dbb9d-cc64-8750-b8bc-b22255d93a5a` · framed by typography partition `aquaculture` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `dunning` · sub-root `a92ea2ba-7a34-88c2-903f-578e482723c9`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4a1497a7-3bfc-8671-aeb3-c686240c2bae` · framed by typography partition `dunning` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dfba9477-a141-8b18-9725-09f71943c2ea` · framed by typography partition `dunning` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

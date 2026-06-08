@@ -23,7 +23,7 @@
 
 - partition `accrual` · sub-root `66e37f7c-b9d2-8153-a80d-1f65f135c4f0`
 - bond degree `36` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e9a0aa45-6295-87da-a517-2a704fbf1b5b` · framed by typography partition `accrual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bb1123ce-1e58-86f9-9f1b-08c1617a9c9e` · framed by typography partition `accrual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

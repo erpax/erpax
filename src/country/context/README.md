@@ -25,7 +25,7 @@
 
 - partition `country` · sub-root `848e38e2-9727-8485-8282-1c51d8b96a6c`
 - bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `6f3ad001-01e0-836e-a805-44c74b37e2d2` · framed by typography partition `country` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4fe313cd-427f-84d9-81ca-e53c71c6b0a9` · framed by typography partition `country` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

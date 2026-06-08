@@ -23,7 +23,7 @@
 
 - partition `trailer` · sub-root `90666356-94ac-8a1b-8979-7e85f4881047`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c7b45af0-81b5-8813-b999-28d1f30badff` · framed by typography partition `trailer` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0af61f22-d40a-8294-837d-a9d6b64b64ca` · framed by typography partition `trailer` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `stream` · sub-root `4b9aa452-a0c4-8f4a-ab76-747933032515`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `25c9fa35-631c-8cbd-98a0-5d57ddcb6e69` · framed by typography partition `stream` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e0543f9-5ff5-8677-9245-1b14339e80ba` · framed by typography partition `stream` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

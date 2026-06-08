@@ -23,7 +23,7 @@
 
 - partition `grazing` · sub-root `6115244c-80ae-87e5-b7c8-4d34477889ec`
 - bond degree `33` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `531956b7-7e09-8fce-aaff-68b33dad8941` · framed by typography partition `grazing` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `338351fe-c6be-88b3-b6e9-0605e9594fc0` · framed by typography partition `grazing` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

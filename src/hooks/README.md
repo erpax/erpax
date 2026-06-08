@@ -25,7 +25,7 @@
 
 - partition `hooks` · sub-root `5575c13b-c1e4-879e-a093-d6015976d67c`
 - bond degree `151` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `cc4fc7b9-61e8-8c60-91eb-aa626876136d` · framed by typography partition `hooks` bonds `151` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ebeea501-6659-8b8b-ad23-6c4dd1577c94` · framed by typography partition `hooks` bonds `151` · `pnpm readme` · `pnpm readme:check`</sub>

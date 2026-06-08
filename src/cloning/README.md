@@ -25,7 +25,7 @@
 
 - partition `cloning` · sub-root `4ea131a4-5375-89da-a0b2-61d7c6b569d7`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `8abc3262-fa30-8272-a6d0-0fb0ebdc0695` · framed by typography partition `cloning` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a55222b-4c34-84ce-b499-dd578431bb13` · framed by typography partition `cloning` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

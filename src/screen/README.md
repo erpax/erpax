@@ -23,7 +23,7 @@
 
 - partition `screen` · sub-root `1fb71606-1175-8ec9-9a4d-5d9f62ad3e59`
 - bond degree `74` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9ff3ffe3-a94f-89a1-a2fa-e0a0c40543fc` · framed by typography partition `screen` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `63c94237-bd89-81de-b85c-0cd5aba37853` · framed by typography partition `screen` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

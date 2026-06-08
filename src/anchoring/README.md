@@ -25,7 +25,7 @@
 
 - partition `anchoring` · sub-root `d680be10-fe5c-87ae-b7e2-eb63119945e5`
 - bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `85417275-21ef-8880-a16d-47cbb5f716f2` · framed by typography partition `anchoring` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7b9bec8a-6453-8bbc-a4ef-97080561cda7` · framed by typography partition `anchoring` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

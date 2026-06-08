@@ -23,7 +23,7 @@
 
 - partition `alley` · sub-root `1e4cb938-0c1e-85a5-94cf-455b36f1a8a2`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e6686297-9050-821a-bf94-1665ce4edf06` · framed by typography partition `alley` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b03b1730-2540-8768-a31b-f3388b04a148` · framed by typography partition `alley` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

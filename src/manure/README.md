@@ -23,7 +23,7 @@
 
 - partition `manure` · sub-root `1a0a51ac-9a39-8486-aeeb-32a9a5bbf4c8`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1c011b25-1fe1-8775-b0b9-39975cd09789` · framed by typography partition `manure` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8a6ed8b-d181-8310-b11f-e18c33e63ccd` · framed by typography partition `manure` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

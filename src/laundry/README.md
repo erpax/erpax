@@ -23,7 +23,7 @@
 
 - partition `laundry` · sub-root `bb9a0da1-9d1f-89ad-a770-b4b6bba73811`
 - bond degree `30` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b644b8b-d979-84d2-b29f-0d61947c6e28` · framed by typography partition `laundry` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c98334b-fa80-8846-8df4-055c2dc4b8ed` · framed by typography partition `laundry` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

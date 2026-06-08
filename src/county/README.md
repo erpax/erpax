@@ -23,7 +23,7 @@
 
 - partition `county` · sub-root `d0801e11-ae5c-8a21-a4c3-eba4a6e82bd2`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d77fce45-a4de-8e3f-9dd0-f06020590bbc` · framed by typography partition `county` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `424e1b43-993b-8f80-8723-8b8192544f84` · framed by typography partition `county` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

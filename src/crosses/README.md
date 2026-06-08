@@ -23,7 +23,7 @@
 
 - partition `crosses` · sub-root `fcfa845c-08ff-8ba9-8047-50a61cf95de0`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f8b7da38-8c7e-8e2f-b434-ed5b366d437e` · framed by typography partition `crosses` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d8bd7dd9-66e6-8382-a1a1-9db15cb8f591` · framed by typography partition `crosses` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

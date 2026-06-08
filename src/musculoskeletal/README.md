@@ -23,7 +23,7 @@
 
 - partition `musculoskeletal` · sub-root `7b13c365-2957-8846-aef5-8065d98768aa`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `90c1b34d-f8c2-899d-9d96-6c1c371a6a02` · framed by typography partition `musculoskeletal` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `10b78eb9-65ce-8017-920b-7d8c99993ffb` · framed by typography partition `musculoskeletal` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

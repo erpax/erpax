@@ -23,7 +23,7 @@
 
 - partition `dermatologic` · sub-root `dcb1d452-2a92-89dc-add0-7af73bac9bbb`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b6f7a3f8-f9ef-8ba5-aafb-ac95d8e7b98f` · framed by typography partition `dermatologic` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3b6b2b89-afc1-80ae-883a-fa72f096b7d6` · framed by typography partition `dermatologic` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

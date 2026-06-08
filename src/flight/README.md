@@ -23,7 +23,7 @@
 
 - partition `flight` · sub-root `76b4b0b8-6a23-8d58-a525-b914f84fbf53`
 - bond degree `100` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `63af2132-ad2e-83f9-9ad0-fa6879873790` · framed by typography partition `flight` bonds `100` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3390ae14-7cdb-87fe-9646-f37e49631052` · framed by typography partition `flight` bonds `100` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `bacteria` · sub-root `87b8fa0a-742c-8852-851c-1a47ab18d506`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ea40e518-e5eb-86c2-ac83-b95112a878f6` · framed by typography partition `bacteria` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `23ba0b95-1311-8d41-90b8-49b053f9c669` · framed by typography partition `bacteria` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

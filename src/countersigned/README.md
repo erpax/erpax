@@ -23,7 +23,7 @@
 
 - partition `countersigned` · sub-root `412a514e-dcee-8f76-b7bd-7fe08d71f492`
 - bond degree `25` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `828753c9-f9cc-8bf9-b635-c50b4ea8b41d` · framed by typography partition `countersigned` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0714745c-8aa7-82b6-a9cf-c276b1d92e71` · framed by typography partition `countersigned` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

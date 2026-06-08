@@ -23,7 +23,7 @@
 
 - partition `livestock` · sub-root `e65257f2-eec5-8b15-aeec-66366f6b248d`
 - bond degree `45` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a4ba0177-dd8e-8843-938e-ac14b601b218` · framed by typography partition `livestock` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3650431d-f250-828c-983c-26a8827ebd4a` · framed by typography partition `livestock` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

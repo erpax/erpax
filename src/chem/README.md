@@ -23,7 +23,7 @@
 
 - partition `chem` · sub-root `9fce621d-459f-8248-8464-fc9e9c489672`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6fc85964-05f1-8094-8042-7dc73ac029e4` · framed by typography partition `chem` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `080adb78-ae6e-8569-99e3-cd950941b396` · framed by typography partition `chem` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

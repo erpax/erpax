@@ -23,7 +23,7 @@
 
 - partition `risk` · sub-root `5aef1e55-0d13-809e-9c11-9646c98858dd`
 - bond degree `51` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `151dc56a-d13d-8a7d-b9bb-d907ab8e2296` · framed by typography partition `risk` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5dd8244-6aff-846e-8bc3-bc2a5d0240d0` · framed by typography partition `risk` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

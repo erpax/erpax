@@ -25,7 +25,7 @@
 
 - partition `financial` · sub-root `1a9944f1-a00b-8415-a29e-0b574f211f2d`
 - bond degree `35` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `76c0b014-b4f2-8d7e-953b-2510a9b73f00` · framed by typography partition `financial` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `de063a07-e59e-8d2b-9ca8-de89153736b0` · framed by typography partition `financial` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

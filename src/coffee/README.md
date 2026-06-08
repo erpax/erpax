@@ -23,7 +23,7 @@
 
 - partition `coffee` · sub-root `468116b0-3e33-8e4d-b3f0-7604c5d01958`
 - bond degree `38` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `33d4bb49-aaa6-8194-85b8-ebb2bc0430ac` · framed by typography partition `coffee` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce871901-357b-85a7-bc2b-3c9009fbb65d` · framed by typography partition `coffee` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

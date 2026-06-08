@@ -23,7 +23,7 @@
 
 - partition `office` · sub-root `3ef2df95-7379-86be-b7a1-cc98ba8a2b6d`
 - bond degree `121` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `33d89b44-b554-8848-bcf2-00aa255e6c26` · framed by typography partition `office` bonds `121` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `30e6409f-ca59-8e7c-acb2-212001e0ee5c` · framed by typography partition `office` bonds `121` · `pnpm readme` · `pnpm readme:check`</sub>

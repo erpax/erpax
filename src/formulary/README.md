@@ -23,7 +23,7 @@
 
 - partition `formulary` · sub-root `2e5bd938-0c51-8d69-b052-2b18e6bdffc6`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ca763b04-0748-8f5b-840c-d8fba26524d5` · framed by typography partition `formulary` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `12d5ba8a-5cce-87e4-a7ed-169c27e11cdc` · framed by typography partition `formulary` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

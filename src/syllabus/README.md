@@ -23,7 +23,7 @@
 
 - partition `syllabus` · sub-root `c0e83ce8-b7ee-8ba8-8990-b57b7d6069f4`
 - bond degree `73` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `77e010c2-02cc-8b11-b270-f2e76b454681` · framed by typography partition `syllabus` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `353eea99-89b9-8a55-836a-02f82c70091f` · framed by typography partition `syllabus` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>

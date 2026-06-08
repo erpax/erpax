@@ -23,7 +23,7 @@
 
 - partition `biofield` · sub-root `85bfe319-dff3-88d8-bd31-df58e478c523`
 - bond degree `33` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fd98b813-f0c7-8a6e-963d-05fd5472da3a` · framed by typography partition `biofield` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `844d3cd1-4907-8585-9691-497eff0184f5` · framed by typography partition `biofield` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

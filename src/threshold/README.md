@@ -23,7 +23,7 @@
 
 - partition `threshold` · sub-root `dde1f1f6-8a48-8f0d-870d-f6aaa781d2e9`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d00a5687-ea42-8ba2-8d23-540616cc47e6` · framed by typography partition `threshold` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1e0ff737-3348-86e1-b62e-ff425dd2d356` · framed by typography partition `threshold` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

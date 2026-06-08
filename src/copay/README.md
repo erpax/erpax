@@ -23,7 +23,7 @@
 
 - partition `copay` · sub-root `0587d678-8f5f-8586-b4e6-39010c0b4320`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `828a03d1-457a-891c-9ffc-da1dc59ce9df` · framed by typography partition `copay` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ef127465-82f3-8294-8d43-7ed368effadd` · framed by typography partition `copay` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `breed` · sub-root `8296322c-375a-8413-bf01-7de25fc7bc70`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7e51c21c-b3c3-8099-80c1-87abcf4b403c` · framed by typography partition `breed` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `90daa4f8-4c1a-82d0-986d-60af177a3d6a` · framed by typography partition `breed` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

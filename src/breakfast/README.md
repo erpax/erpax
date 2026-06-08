@@ -23,7 +23,7 @@
 
 - partition `breakfast` · sub-root `18638372-aa81-83d2-ab8f-ec4ff0636473`
 - bond degree `137` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `639a632f-cbd1-8f53-b0d4-34ad4185b366` · framed by typography partition `breakfast` bonds `137` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e964835e-bace-87da-92f2-a5ea21843ff2` · framed by typography partition `breakfast` bonds `137` · `pnpm readme` · `pnpm readme:check`</sub>

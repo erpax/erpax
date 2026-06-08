@@ -23,7 +23,7 @@
 
 - partition `vacation` · sub-root `a51dad4c-ebe7-847f-84ba-f5e3be113d47`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6cf84736-d105-84f1-a833-1e81fefb1df2` · framed by typography partition `vacation` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4f4f5482-0505-8a4c-ab2b-a4755e848a73` · framed by typography partition `vacation` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

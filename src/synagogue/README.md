@@ -23,7 +23,7 @@
 
 - partition `synagogue` · sub-root `79dc06ec-cde9-8fc1-b6e1-a33c5bca048a`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d930d1fe-5b26-82a6-b0b4-441ce2aab09c` · framed by typography partition `synagogue` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e04f902a-8791-8f82-824f-b75331e450cc` · framed by typography partition `synagogue` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

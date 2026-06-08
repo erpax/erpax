@@ -23,7 +23,7 @@
 
 - partition `rxcui` · sub-root `48d39c2d-aa5a-8dde-9a36-c00e4273263e`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `33fcc8ef-b967-860e-8bfc-9f0882a25a13` · framed by typography partition `rxcui` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6a799972-6de9-836b-a88d-9228fe64bc3d` · framed by typography partition `rxcui` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

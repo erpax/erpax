@@ -23,7 +23,7 @@
 
 - partition `discount` · sub-root `403b05da-22b0-80f8-97c2-23b3e38451bb`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a9fdcde9-cc44-8b7f-97c5-dad8d21324e5` · framed by typography partition `discount` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `009b5c7b-6eec-8125-98da-7b6cc76d4ad9` · framed by typography partition `discount` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

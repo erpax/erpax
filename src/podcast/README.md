@@ -23,7 +23,7 @@
 
 - partition `podcast` · sub-root `975b2bcd-74af-8f20-93ea-005f3536e7d5`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `22c95246-9408-8c8b-991d-08b9e6a39569` · framed by typography partition `podcast` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7e854ad1-a7f1-82c8-9309-7bacca6142d4` · framed by typography partition `podcast` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

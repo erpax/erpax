@@ -23,7 +23,7 @@
 
 - partition `antagonist` · sub-root `1612f455-fb92-8a83-8134-7935ba1b6ca9`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dd60560f-ffb1-8f5f-afb6-be74d28faf01` · framed by typography partition `antagonist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `305cc639-6c23-86e8-9d11-a1a3e16d7f34` · framed by typography partition `antagonist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

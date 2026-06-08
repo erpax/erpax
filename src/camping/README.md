@@ -23,7 +23,7 @@
 
 - partition `camping` · sub-root `c9557763-3903-8fd8-8a3d-c196df954673`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5cc6aaf5-af24-8441-8896-0d24413a77c0` · framed by typography partition `camping` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `41e9ce0b-983d-807b-81ff-e3b968fb24a8` · framed by typography partition `camping` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

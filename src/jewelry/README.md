@@ -23,7 +23,7 @@
 
 - partition `jewelry` · sub-root `672118dc-ed58-8858-b93d-3452373dfd9c`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `59d02f94-b4c2-85ad-b424-c8fa7ccc60b4` · framed by typography partition `jewelry` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60990050-c2b3-8f48-b3ad-38f6f4d19d35` · framed by typography partition `jewelry` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

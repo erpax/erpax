@@ -23,7 +23,7 @@
 
 - partition `tour` · sub-root `637b4252-b673-87bb-8f8f-73c9fbba0ed3`
 - bond degree `187` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `20489b6a-5aea-8227-9836-697f443f846d` · framed by typography partition `tour` bonds `187` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78f903eb-df93-8962-922e-d62d50d1a318` · framed by typography partition `tour` bonds `187` · `pnpm readme` · `pnpm readme:check`</sub>

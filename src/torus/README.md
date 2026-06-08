@@ -23,7 +23,7 @@
 
 - partition `torus` · sub-root `5c5ea2cb-6af3-80e3-98d0-4b18dffc8a56`
 - bond degree `103` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `364b5946-3698-80e9-855a-fde113d12257` · framed by typography partition `torus` bonds `103` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18365d79-833e-8a7c-95e2-9d0fcf9ecef8` · framed by typography partition `torus` bonds `103` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `subway` · sub-root `7e5b3a3f-0285-892d-8851-2b0c50be6f90`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0657ab5b-a077-8246-9ae0-da787bd10c5a` · framed by typography partition `subway` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e87e879-d338-8d50-971a-575fb4f82f1e` · framed by typography partition `subway` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

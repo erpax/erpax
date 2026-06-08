@@ -23,7 +23,7 @@
 
 - partition `canal` · sub-root `ea3eb2f7-b5e6-8dcd-9730-f1affc5c26ca`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d45f696e-8391-8bf5-b190-b6e5efd01d98` · framed by typography partition `canal` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cc6525ad-35c4-8300-a6d5-9927fc574862` · framed by typography partition `canal` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

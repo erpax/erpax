@@ -23,7 +23,7 @@
 
 - partition `cdcpmd` · sub-root `a9aae335-464f-800f-ad6d-812bf79b5ad2`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4682a541-caa0-87ec-abf6-6597eef63398` · framed by typography partition `cdcpmd` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2ec37446-7491-84d4-a616-f9bbc743f75f` · framed by typography partition `cdcpmd` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `federation` · sub-root `5ed9f4d6-976d-82de-bc1e-4d29f7f555a0`
 - bond degree `47` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `18801aa2-3519-8b08-80d9-581879458d56` · framed by typography partition `federation` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `32bf43d4-ddea-8aaf-bea2-74f4ca6b0cbb` · framed by typography partition `federation` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `mountain` · sub-root `5d4077c2-575b-8d9c-81d4-ea82077f4520`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `83b5d72e-0fcf-83bb-acb9-7e404715d7cc` · framed by typography partition `mountain` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `48e0958f-9dc1-8a75-a4bc-cb7f5cc2f1fe` · framed by typography partition `mountain` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

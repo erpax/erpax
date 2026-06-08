@@ -23,7 +23,7 @@
 
 - partition `checklist` · sub-root `1e44e6a3-360d-85ad-b19a-d4d334d9c2bd`
 - bond degree `28` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `153ba5a3-9c61-8e0e-a8f0-bfee32720683` · framed by typography partition `checklist` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bc47b6ab-fde4-8865-85e3-712c9b238a46` · framed by typography partition `checklist` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `shareds` · sub-root `2051b678-1443-8456-a58c-845a96631728`
 - bond degree `4` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `92658500-6460-815c-9d51-7d34484de3a2` · framed by typography partition `shareds` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `396a94a1-b9a0-8fed-8726-ea9d125977f5` · framed by typography partition `shareds` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>

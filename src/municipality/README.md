@@ -23,7 +23,7 @@
 
 - partition `municipality` · sub-root `e6271a68-194c-8403-889d-4d145736d648`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3ea1966b-54dc-821b-8f09-5a9ed6c7c653` · framed by typography partition `municipality` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `49881273-ec8e-8da4-9e36-679cde25744c` · framed by typography partition `municipality` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `misconceptions` · sub-root `ff4946a3-c31c-8d53-87a0-fdc97a9d9f1a`
 - bond degree `32` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cba33407-361d-8f25-ac5f-b7e203e6f948` · framed by typography partition `misconceptions` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1b36a956-0268-87c2-8096-0b3586e8408b` · framed by typography partition `misconceptions` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

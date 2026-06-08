@@ -23,7 +23,7 @@
 
 - partition `epidemiology` · sub-root `05343d99-102b-8a74-b11b-177cd966472a`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `82bae083-1cab-836e-8f89-c662e176e345` · framed by typography partition `epidemiology` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4fbfc35-7486-8e6f-bb76-8f2576a1b911` · framed by typography partition `epidemiology` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

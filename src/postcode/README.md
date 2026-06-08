@@ -23,7 +23,7 @@
 
 - partition `postcode` · sub-root `47516369-7adb-8dc5-948c-2f858ed2aeb1`
 - bond degree `40` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a0f41533-3f02-8929-abea-ede86ba2442e` · framed by typography partition `postcode` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `835a5de9-9e7d-8c38-bec6-2be6ddff4ca7` · framed by typography partition `postcode` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

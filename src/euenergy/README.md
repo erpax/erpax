@@ -23,7 +23,7 @@
 
 - partition `euenergy` · sub-root `41fabc0a-e51a-882d-a5a9-957006631e7e`
 - bond degree `108` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c1f4b9fb-d5b0-8dfb-a517-1dd00fbba906` · framed by typography partition `euenergy` bonds `108` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `96a83bdb-9380-84fc-a83e-541bd6475012` · framed by typography partition `euenergy` bonds `108` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `restaurant` · sub-root `1e45cc11-569d-8e6d-957e-8238e4e1b10d`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e442ddfa-3998-8770-a32b-3ff96cb2afad` · framed by typography partition `restaurant` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ece12dd5-c860-87dd-a53f-e343fdde7f13` · framed by typography partition `restaurant` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

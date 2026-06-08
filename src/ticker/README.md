@@ -23,7 +23,7 @@
 
 - partition `ticker` · sub-root `1acdda75-aac5-848e-9a79-d305c8f5e4da`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e9d11dab-27fa-8187-88a4-669fc7262fce` · framed by typography partition `ticker` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ffa5fdba-67d9-8e9d-8e2f-090d94428abd` · framed by typography partition `ticker` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

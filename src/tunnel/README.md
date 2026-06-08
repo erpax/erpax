@@ -23,7 +23,7 @@
 
 - partition `tunnel` · sub-root `7ef5abfe-9d02-82d1-b00d-bc9cf836d274`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `456d2d2c-d1dd-8e7c-9f86-81e81926c3c2` · framed by typography partition `tunnel` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `997790cb-fae8-8641-8d9a-9b053a64fa36` · framed by typography partition `tunnel` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

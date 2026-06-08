@@ -23,7 +23,7 @@
 
 - partition `gears` · sub-root `90f8e21e-4b82-8e6c-8fec-ae9ce0bbf82b`
 - bond degree `117` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e071a1d4-e863-8a20-b930-3b61e4e66c7d` · framed by typography partition `gears` bonds `117` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ecded0b8-f4c7-8911-859d-d1856ecbf3af` · framed by typography partition `gears` bonds `117` · `pnpm readme` · `pnpm readme:check`</sub>

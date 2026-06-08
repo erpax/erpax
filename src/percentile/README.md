@@ -23,7 +23,7 @@
 
 - partition `percentile` · sub-root `84e8aecd-b9c5-8452-b8eb-6b804ec2e03c`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ece5198f-fe91-8354-a399-5a4c51233d73` · framed by typography partition `percentile` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2959c366-afa7-8ae5-80e0-fd9d13a30d03` · framed by typography partition `percentile` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

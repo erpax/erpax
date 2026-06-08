@@ -23,7 +23,7 @@
 
 - partition `repetition` · sub-root `79e9337c-deb0-8dc9-8bdf-3d4215235226`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d19af0d3-b9c5-868f-90b2-f6bdb9feb148` · framed by typography partition `repetition` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dc32f96c-6038-86ec-9b83-d3efa5cc1094` · framed by typography partition `repetition` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `drone` · sub-root `2ed3cbf6-baa6-803c-8ca9-23d8511235bf`
 - bond degree `89` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4eeea1ee-e617-8809-9368-e2e2c55f260f` · framed by typography partition `drone` bonds `89` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `56ebb105-ec0c-8eb2-bb93-9c0682fb05b9` · framed by typography partition `drone` bonds `89` · `pnpm readme` · `pnpm readme:check`</sub>

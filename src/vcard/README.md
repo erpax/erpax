@@ -23,7 +23,7 @@
 
 - partition `vcard` · sub-root `a19138e1-2701-8b4d-90da-3303c21b1f9d`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8ff0f053-f904-8a53-b127-187cf31707fc` · framed by typography partition `vcard` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ce14b96-8200-8501-b597-00f59778302c` · framed by typography partition `vcard` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

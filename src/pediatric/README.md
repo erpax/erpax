@@ -23,7 +23,7 @@
 
 - partition `pediatric` · sub-root `cdb76453-eb36-8f32-aa6d-d1c2a2441188`
 - bond degree `20` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3e360f61-adb7-83f0-b01f-05e87aa2160f` · framed by typography partition `pediatric` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4ab0b31-dbd0-8f41-b9a6-ecb6bc3585b5` · framed by typography partition `pediatric` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

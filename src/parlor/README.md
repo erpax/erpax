@@ -23,7 +23,7 @@
 
 - partition `parlor` · sub-root `653a40f1-13c4-8f47-b1de-ff3ac4d37174`
 - bond degree `36` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `838c281d-e947-8bf1-b892-ef5c97bbad18` · framed by typography partition `parlor` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5cc1e96c-e7bc-8d6e-9a37-bd1975ad98f0` · framed by typography partition `parlor` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

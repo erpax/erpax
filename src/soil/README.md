@@ -23,7 +23,7 @@
 
 - partition `soil` · sub-root `2e5da900-eada-8aff-9235-869d93b5eb1d`
 - bond degree `62` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b080f75b-f53a-8690-a3bb-6de6ea1aad39` · framed by typography partition `soil` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `72ef4328-5b6a-842f-bb72-26a6fed16d2b` · framed by typography partition `soil` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>

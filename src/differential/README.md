@@ -23,7 +23,7 @@
 
 - partition `differential` · sub-root `ea451907-d09f-809b-8aa9-047314c5ccce`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a1e137b9-88b7-8656-9a50-30c073fd9e8a` · framed by typography partition `differential` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b1b49215-8a6c-8bd2-9533-2bb514a936c5` · framed by typography partition `differential` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

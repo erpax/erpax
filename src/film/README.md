@@ -23,7 +23,7 @@
 
 - partition `film` · sub-root `71c042c3-053c-8959-9dbb-7b7df88a619d`
 - bond degree `44` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `eae64a3e-ee7b-8271-b237-394594b04827` · framed by typography partition `film` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1a45022f-710d-83aa-999c-78cbf2cb6986` · framed by typography partition `film` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

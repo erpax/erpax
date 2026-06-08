@@ -23,7 +23,7 @@
 
 - partition `msrp` · sub-root `ff9d7605-d6c6-8787-a32b-19e533b29acb`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b00496a3-2e4c-8a37-8531-882a48248a46` · framed by typography partition `msrp` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `607b14bc-5494-86d6-8456-118244329b87` · framed by typography partition `msrp` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `commerce` · sub-root `f7fcd544-d657-81f0-8cbb-1fdd2ab2f1c3`
 - bond degree `55` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `f36b6589-5c68-8797-bde7-76934126ecb0` · framed by typography partition `commerce` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `abe7559d-f834-81cd-a79c-0d5134af0b1b` · framed by typography partition `commerce` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>

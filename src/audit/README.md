@@ -23,7 +23,7 @@
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
 - bond degree `66` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `89d70dde-9860-808d-822c-10407be24590` · framed by typography partition `audit` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ebaba3e-72cb-8019-89f9-f0be07a77da7` · framed by typography partition `audit` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

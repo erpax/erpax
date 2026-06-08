@@ -25,7 +25,7 @@
 
 - partition `collide` · sub-root `6a912f6c-5e20-8eae-b177-d937fefd259d`
 - bond degree `44` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4541a722-83f3-80e2-9038-c5eb3059decb` · framed by typography partition `collide` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `abcc3263-374d-8144-b021-7071bd4f7fa3` · framed by typography partition `collide` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

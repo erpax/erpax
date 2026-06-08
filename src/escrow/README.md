@@ -23,7 +23,7 @@
 
 - partition `escrow` · sub-root `b2953fea-36a2-89c3-a9a6-ff86a38052c6`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c537e17b-c5b8-870f-81d4-758f59f5797d` · framed by typography partition `escrow` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `57d35c71-4ce5-8dad-8661-b331b2661798` · framed by typography partition `escrow` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

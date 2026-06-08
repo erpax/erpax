@@ -23,7 +23,7 @@
 
 - partition `topography` · sub-root `a03a38f4-d8a6-8612-baed-fad258d8f18a`
 - bond degree `24` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7f5a78d7-0585-850b-adfd-e55fe08273f2` · framed by typography partition `topography` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0f5f06a6-523d-86c8-ae10-8760b558a7df` · framed by typography partition `topography` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

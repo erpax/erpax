@@ -23,7 +23,7 @@
 
 - partition `radiation` · sub-root `0aa3449f-abd6-8caa-979f-854cd0499d71`
 - bond degree `40` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3cef1afb-938d-8139-8948-10cbf871faf5` · framed by typography partition `radiation` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a48fec5-a46b-8e7a-a578-b786e095f85e` · framed by typography partition `radiation` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

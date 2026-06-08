@@ -25,7 +25,7 @@
 
 - partition `fold` · sub-root `ff1ed43c-cea6-8315-83bd-08b6714b4688`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `2229bbb5-f726-8c2a-9ac8-134cd0d8b0ba` · framed by typography partition `fold` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `32e67896-845a-8b98-a4d9-2018e0e9b9a4` · framed by typography partition `fold` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

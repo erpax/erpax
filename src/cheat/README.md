@@ -23,7 +23,7 @@
 
 - partition `cheat` · sub-root `d953bfd3-9b23-8751-895a-9a089dcbc278`
 - bond degree `17` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b7ff4bc1-b4da-83f2-acf4-aa6dc47a13f7` · framed by typography partition `cheat` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `43e563b7-8085-8cd5-897f-9622dcf100f7` · framed by typography partition `cheat` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

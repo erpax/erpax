@@ -23,7 +23,7 @@
 
 - partition `airport` · sub-root `ce862497-e3da-8eb7-a68c-c38471a944b1`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `34e45630-9486-86fe-aa8a-815763229910` · framed by typography partition `airport` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5bc7dfde-3bdf-80ed-a077-e59306f3736d` · framed by typography partition `airport` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

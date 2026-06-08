@@ -23,7 +23,7 @@
 
 - partition `contactless` · sub-root `f00e50a3-97b6-8a42-91b3-d872238cca9d`
 - bond degree `9` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6d7b918c-d834-8a67-8137-81b0a1614db0` · framed by typography partition `contactless` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7498d3a9-ce82-822a-a89e-362c67053b73` · framed by typography partition `contactless` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

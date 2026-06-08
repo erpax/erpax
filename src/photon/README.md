@@ -25,7 +25,7 @@
 
 - partition `photon` · sub-root `34ce9d01-d676-82af-810c-2b377e1e30de`
 - bond degree `34` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e76af6be-2c7e-80f4-9a38-41f9ba43c482` · framed by typography partition `photon` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `29202320-1450-8d70-92b8-517efeb43476` · framed by typography partition `photon` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

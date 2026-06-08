@@ -23,7 +23,7 @@
 
 - partition `husky` · sub-root `38a684a8-a5db-892a-899a-1e1122a0d209`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `eb157731-c50a-83ea-9920-7011143d134d` · framed by typography partition `husky` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1c14ddf1-43d8-8174-9915-cd4847de823e` · framed by typography partition `husky` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

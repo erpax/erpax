@@ -23,7 +23,7 @@
 
 - partition `sd` · sub-root `bce8f3ed-2f10-8a31-96be-00f49b0e07a2`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b69b988-f014-88d1-a3f1-3c3fd4615380` · framed by typography partition `sd` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `de47d3be-4213-8210-82e1-871aab4c5954` · framed by typography partition `sd` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

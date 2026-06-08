@@ -23,7 +23,7 @@
 
 - partition `geo` · sub-root `cbd34de1-5528-89fb-93f0-c8f135b2108d`
 - bond degree `39` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `baa1e8fd-09c2-8757-954d-c8153d00fd3b` · framed by typography partition `geo` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `de08d8b9-7a2e-86ae-a15f-c38e78683a93` · framed by typography partition `geo` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

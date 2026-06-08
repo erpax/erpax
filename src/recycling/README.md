@@ -23,7 +23,7 @@
 
 - partition `recycling` · sub-root `9b02a502-4c03-8f87-8837-dbed9bc68241`
 - bond degree `57` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5f945303-1594-8583-b62f-7f6b80ef724b` · framed by typography partition `recycling` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ae068ab1-dd32-8c83-aa6f-e17781fe1419` · framed by typography partition `recycling` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

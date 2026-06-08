@@ -23,7 +23,7 @@
 
 - partition `react` · sub-root `c6644e8d-14fc-8a5a-8212-6f8121aa24c7`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4f420ad8-f4a3-8775-9fc0-e26f9b11bed0` · framed by typography partition `react` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ece1cbe7-266c-82b3-92db-ed804462651b` · framed by typography partition `react` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

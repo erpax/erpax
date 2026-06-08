@@ -25,7 +25,7 @@
 
 - partition `compost` · sub-root `cda9024a-3a6e-850b-b561-e11c1c1ea90c`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `94c9b1ad-69ea-8379-9fb7-08f67b15d312` · framed by typography partition `compost` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4f591f05-e123-8d53-87c1-2a0efe96f37c` · framed by typography partition `compost` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

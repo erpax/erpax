@@ -23,7 +23,7 @@
 
 - partition `collapse` · sub-root `5c3cb38e-0a65-8fb1-a7a5-158f54af9308`
 - bond degree `1616` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b7f082d-3714-8a97-af62-c6cf5b4c5c1a` · framed by typography partition `collapse` bonds `1616` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `25f0a233-1c6f-8490-9002-a38e6b4dcd27` · framed by typography partition `collapse` bonds `1616` · `pnpm readme` · `pnpm readme:check`</sub>

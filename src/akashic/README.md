@@ -23,7 +23,7 @@
 
 - partition `akashic` · sub-root `b665a26f-9969-8279-9b5e-bd96b51c8cbd`
 - bond degree `255` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ce45e649-cd70-88eb-8cb1-1b5b4dbc214e` · framed by typography partition `akashic` bonds `255` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e08ceebb-ef83-8aa5-b5a0-1fe5db214d74` · framed by typography partition `akashic` bonds `255` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `bike` · sub-root `dcbcff65-9da7-823d-87fa-6902c7e6c0f4`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1891a45b-6507-807a-8d5c-aa6917528230` · framed by typography partition `bike` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e06d1592-f564-8910-9ba7-5621509e8be5` · framed by typography partition `bike` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `torque` · sub-root `9c80d679-a312-8498-836d-d6846c4acf51`
 - bond degree `6` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9b618489-6e1c-8c5c-9ccc-6c1d78fcff39` · framed by typography partition `torque` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ddc2238-f6ef-8b77-8de1-3ffd5ebb1a69` · framed by typography partition `torque` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -24,7 +24,7 @@
 
 - partition `agriculture` · sub-root `d65965f6-9220-88d9-949e-9cb968223e53`
 - bond degree `244` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -40,4 +40,4 @@
 
 ---
 
-<sub>content-uuid `699125cf-68d9-8ce2-ba2e-715f5a3ca29c` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bab2c852-1ab2-8a8e-9304-fa157764e81e` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>

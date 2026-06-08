@@ -23,7 +23,7 @@
 
 - partition `beds` · sub-root `b8cd8793-1dc8-8866-b59c-98cb159f21b9`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `37dc4b2d-59ec-8244-a846-bfe147b21e93` · framed by typography partition `beds` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4d36781e-cbed-8488-b0ac-e601180a3b55` · framed by typography partition `beds` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

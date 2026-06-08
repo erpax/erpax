@@ -25,7 +25,7 @@
 
 - partition `roles` · sub-root `6db0e54a-ab96-8a83-9e81-cb941b238d3d`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `62b41236-edc5-83ef-8fbd-00d63347895c` · framed by typography partition `roles` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9022479c-da2e-8952-a90d-4eb1d27b05d5` · framed by typography partition `roles` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `pharmacy` · sub-root `a6e8cf43-1824-8978-ad94-f6333a07e1ce`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c8034172-dbdc-8fb4-ba58-d6f6ae18a618` · framed by typography partition `pharmacy` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `299309f1-ea82-8d78-a05f-13902fdfa535` · framed by typography partition `pharmacy` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

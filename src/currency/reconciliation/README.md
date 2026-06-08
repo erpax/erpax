@@ -25,7 +25,7 @@
 
 - partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
 - bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `0cd85710-0575-848b-adda-2f63c994887a` · framed by typography partition `currency` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `611ef36f-a4a7-8e5f-801a-48c1f40b2372` · framed by typography partition `currency` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

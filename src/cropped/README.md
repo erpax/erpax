@@ -23,7 +23,7 @@
 
 - partition `cropped` · sub-root `1ff39cf7-25cc-82bd-a7e9-b6c9201f46b0`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `62558557-ed45-889a-b739-129cd162c21f` · framed by typography partition `cropped` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ea446baf-7573-8c2a-821b-94de5f3adcd5` · framed by typography partition `cropped` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

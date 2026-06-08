@@ -23,7 +23,7 @@
 
 - partition `bahai` · sub-root `e3b63286-3fbf-801b-aa1d-374c44cd05a1`
 - bond degree `20` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9719951f-f02e-809e-9ccc-f0b264ed9697` · framed by typography partition `bahai` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `12b69330-445e-8528-89d6-1d15140a331d` · framed by typography partition `bahai` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

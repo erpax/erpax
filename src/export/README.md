@@ -25,7 +25,7 @@
 
 - partition `export` · sub-root `bfaa9f53-f137-8d04-8e11-dc7b06119c1e`
 - bond degree `16` · analysis neighbors `diamond` · `hallucination` · `purity` · `quantum/boundary`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `3c322cdd-ff21-8ecc-baac-60925f065d5e` · framed by typography partition `export` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `70a965c4-b72f-8147-84c4-7648a4686e67` · framed by typography partition `export` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

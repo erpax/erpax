@@ -23,7 +23,7 @@
 
 - partition `casino` · sub-root `6e1f71e3-3b90-8ff6-b21e-8d6c2162b9cf`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f64fdeaf-9748-8f66-8f2e-b07eda46f1a0` · framed by typography partition `casino` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6b22f0d8-30ec-85bf-b66c-2f15949b8388` · framed by typography partition `casino` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

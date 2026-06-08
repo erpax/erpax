@@ -23,7 +23,7 @@
 
 - partition `upvote` · sub-root `42a5d7d9-7e5a-8297-a44a-04c846f4659f`
 - bond degree `12` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `26e55579-68fa-8645-af1a-05387d1feb38` · framed by typography partition `upvote` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `706a7430-0d33-8df0-bee1-6483a0711b00` · framed by typography partition `upvote` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

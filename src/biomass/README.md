@@ -25,7 +25,7 @@
 
 - partition `biomass` · sub-root `a21b1c67-45fa-80e3-989c-5310f4cc1e72`
 - bond degree `33` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `71986124-b50a-8028-b52a-f2d95a96ad0b` · framed by typography partition `biomass` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2add3f31-7611-8b42-b2c3-cf68b4dd520e` · framed by typography partition `biomass` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

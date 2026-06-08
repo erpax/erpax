@@ -23,7 +23,7 @@
 
 - partition `inventory` · sub-root `1a3a0401-bc11-840a-bf54-dda78b5a4a73`
 - bond degree `38` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4ef8340e-9e43-8711-94e1-924108600f1c` · framed by typography partition `inventory` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94c97d2f-a919-804e-a991-7663d66e4a6c` · framed by typography partition `inventory` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `ethics` · sub-root `421ec7a8-f70b-8495-abb6-8ddd6c7abd74`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d9c7b531-0e40-853c-91b2-9120a9c7ad6f` · framed by typography partition `ethics` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `661dd609-068a-84a4-9b72-f0e1b9567d7f` · framed by typography partition `ethics` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

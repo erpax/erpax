@@ -23,7 +23,7 @@
 
 - partition `denominator` · sub-root `b609e8f1-a401-82ba-b5c5-8c145dd18f82`
 - bond degree `10` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3917c062-5a56-8046-a074-52ce037a2cd3` · framed by typography partition `denominator` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ecd469ff-ccca-8a8e-b550-0895414f6820` · framed by typography partition `denominator` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

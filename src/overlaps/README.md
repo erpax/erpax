@@ -23,7 +23,7 @@
 
 - partition `overlaps` · sub-root `d719fb95-cc5c-8376-b65b-d44404ca501b`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8f5a5195-e08e-8484-8728-0f31284cb88a` · framed by typography partition `overlaps` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d51263f8-0f76-86c3-ac1a-0edf850a0627` · framed by typography partition `overlaps` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

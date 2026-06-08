@@ -23,7 +23,7 @@
 
 - partition `shamanism` · sub-root `2cf2e742-da69-8af1-b3f4-7c444f0d3b2e`
 - bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ab6e8527-9805-8240-8871-9ae0ee285e28` · framed by typography partition `shamanism` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0dd73ffe-1724-8dff-9b93-5a3fb0c2ed71` · framed by typography partition `shamanism` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

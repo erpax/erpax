@@ -23,7 +23,7 @@
 
 - partition `tillage` · sub-root `489a12c7-24fc-8f8b-8d49-97dff9996164`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `50d92c44-2b3e-8a91-986b-63346d33ffd0` · framed by typography partition `tillage` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bdf2d8b3-2b44-8d6e-8e68-957c1f51af35` · framed by typography partition `tillage` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

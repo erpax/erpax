@@ -23,7 +23,7 @@
 
 - partition `permaculture` · sub-root `2f784f5e-d5a2-842f-a6c0-e6ae1acab08a`
 - bond degree `45` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ce19227e-ae96-8308-8436-6ffe50ea048a` · framed by typography partition `permaculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8743bdcf-bb0d-8ae8-9559-6c94ea772aa7` · framed by typography partition `permaculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

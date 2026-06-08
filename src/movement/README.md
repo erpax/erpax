@@ -23,7 +23,7 @@
 
 - partition `movement` · sub-root `9dde97fa-3878-8826-b368-742bc8ff58bd`
 - bond degree `11` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `235af8ab-587e-81dc-9fb2-a078bf6d220d` · framed by typography partition `movement` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c93442c8-81fe-8cb9-b196-47a615fa741a` · framed by typography partition `movement` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `competitor` · sub-root `68d99fc3-c85f-8df4-98c2-779ba18cb73e`
 - bond degree `42` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `498fb660-a5b6-8edb-a4f9-8782929bd9f1` · framed by typography partition `competitor` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `83a6f8bf-0dbf-8008-894b-2df03f4ceb6b` · framed by typography partition `competitor` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `evapotranspiration` · sub-root `0d1091aa-c52d-82be-90cf-4b52d1f15d8e`
 - bond degree `25` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `245bc4a7-3704-88c1-a79f-0427c3552098` · framed by typography partition `evapotranspiration` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd8fb8ef-c977-8664-8301-4c675fa2ba7a` · framed by typography partition `evapotranspiration` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

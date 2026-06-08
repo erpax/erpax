@@ -23,7 +23,7 @@
 
 - partition `imperial` · sub-root `f51f6e8c-4981-8d52-b46a-1ecad194f58b`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a219370c-8722-8299-8a62-100a60d5004f` · framed by typography partition `imperial` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `19fc4092-6390-840c-bfac-050ed1004679` · framed by typography partition `imperial` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `physicians` · sub-root `7c61ee8b-744e-8b34-81e0-54c453affe06`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1bad2e14-3a8c-8ea6-8ccb-b1465910e4e9` · framed by typography partition `physicians` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `45fc64eb-033a-83f7-aee8-fc388e7bec4c` · framed by typography partition `physicians` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

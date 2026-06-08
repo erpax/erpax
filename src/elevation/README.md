@@ -23,7 +23,7 @@
 
 - partition `elevation` · sub-root `e3cc3f9c-0972-8d30-8984-31116d4372cd`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6c805194-9ffd-85c7-bd95-8b695f30321c` · framed by typography partition `elevation` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f24edbb9-bb96-81da-b708-ad7d0cb2ee7c` · framed by typography partition `elevation` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `browser` · sub-root `b6dbe14c-b90d-85a0-91c1-dbab826e9d4e`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a71fb336-4f0f-8e68-bf44-240d280cd6d6` · framed by typography partition `browser` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `21fa059c-3787-8d46-9d68-9edb7c77ab12` · framed by typography partition `browser` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

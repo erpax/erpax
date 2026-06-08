@@ -23,7 +23,7 @@
 
 - partition `otolaryngologic` · sub-root `6b96b687-9283-812f-8409-971f685cd801`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d0821638-5064-89b4-abdb-555b8e3b6025` · framed by typography partition `otolaryngologic` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cb7ad942-dbd6-8660-be93-a0d3f709e90f` · framed by typography partition `otolaryngologic` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

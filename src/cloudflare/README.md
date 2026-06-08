@@ -23,16 +23,16 @@
 
 ## typography graph
 
-- partition `cloudflare` · sub-root `2ca69ef1-6390-8940-aa1d-eebeb987caae`
-- bond degree `15` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- partition `cloudflare` · sub-root `1bc0231d-70a9-8b9b-92ba-4c83defcf5b7`
+- bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity` · `quantum/boundary`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
 - uuid `—`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`1`·`1`
-- links `16` / `16`
+- links `46` / `46`
 - folded `0` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `8ae2af9d-9283-869f-ad04-8188e65a7787` · framed by typography partition `cloudflare` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `daf41a33-d260-88de-88de-fd0558a42e93` · framed by typography partition `cloudflare` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

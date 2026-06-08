@@ -23,7 +23,7 @@
 
 - partition `upload` · sub-root `41edca3a-1bcf-87f1-ac86-1ca78543b007`
 - bond degree `19` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8605db59-d75d-8d81-a39e-e60794394b27` · framed by typography partition `upload` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ab7a5f9b-d25d-8959-8baa-2d2b1ea0bfa2` · framed by typography partition `upload` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

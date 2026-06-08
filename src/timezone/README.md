@@ -23,7 +23,7 @@
 
 - partition `timezone` · sub-root `ff8797d6-1c0b-852c-8f5a-7aeac4d6a2f6`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2bfb65ea-9dc8-8e48-b403-e2ace793a8ec` · framed by typography partition `timezone` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `694b880f-bd78-83d4-9ff5-b0c93ff1a972` · framed by typography partition `timezone` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

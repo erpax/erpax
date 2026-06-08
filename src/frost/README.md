@@ -23,7 +23,7 @@
 
 - partition `frost` · sub-root `d8504d0d-e206-88a3-ab5b-5417c274d63e`
 - bond degree `26` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d7cc37e0-0c0a-8011-bca3-1a8154402e30` · framed by typography partition `frost` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `684676b3-b0a0-8601-89ad-4b0cca3b00f5` · framed by typography partition `frost` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

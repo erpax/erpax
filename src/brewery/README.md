@@ -23,7 +23,7 @@
 
 - partition `brewery` · sub-root `f988cf53-357c-8764-b09b-980f697a81e4`
 - bond degree `51` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `252bdfba-4a91-817b-bb55-455662893aea` · framed by typography partition `brewery` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5d57c1e2-7396-8f88-8c30-768b780ef42a` · framed by typography partition `brewery` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

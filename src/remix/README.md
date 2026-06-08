@@ -23,7 +23,7 @@
 
 - partition `remix` · sub-root `337d104b-16a4-81f2-8b22-b3eb48e663f1`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `72b7adaa-be90-81a7-920f-682741cfa23e` · framed by typography partition `remix` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5ad4ccb6-2662-8a2e-ba9e-873be0b4d5cc` · framed by typography partition `remix` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

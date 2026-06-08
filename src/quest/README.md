@@ -23,7 +23,7 @@
 
 - partition `quest` · sub-root `ce519215-7fd8-8ba1-a80e-4afd5b7b0e3e`
 - bond degree `30` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1344028b-6ba2-8e7d-b5d6-0af838ecd4f7` · framed by typography partition `quest` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `05521f71-ca62-8ecc-90d6-4a723a438a2c` · framed by typography partition `quest` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

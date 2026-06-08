@@ -23,7 +23,7 @@
 
 - partition `enrolling` · sub-root `444bd8ad-2809-8c8e-9376-62c5419652ba`
 - bond degree `53` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9fb7bd0e-0e5e-8fa5-b1e3-1f1d50888dd0` · framed by typography partition `enrolling` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8d588eb5-a040-8c2a-9a53-35a468b39b83` · framed by typography partition `enrolling` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

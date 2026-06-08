@@ -23,7 +23,7 @@
 
 - partition `pollination` · sub-root `378f1d8a-fb1c-8f77-bd9c-cddb44faa9d2`
 - bond degree `43` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9eaf76ee-d3a2-8c19-b1bf-34be02918483` · framed by typography partition `pollination` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `560df3c4-2cff-86fa-9e0d-eebd6321f079` · framed by typography partition `pollination` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

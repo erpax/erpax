@@ -25,7 +25,7 @@
 
 - partition `sale` · sub-root `c8de7515-5782-8134-8209-62327d6e0623`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `abfaf502-c0df-8124-a0b7-e84a7d294e10` · framed by typography partition `sale` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fd9d8d0a-2bcf-84c6-beaf-7abf7f410183` · framed by typography partition `sale` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

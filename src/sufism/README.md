@@ -23,7 +23,7 @@
 
 - partition `sufism` · sub-root `bdc01d5f-921d-84ed-ace8-05b686fdefec`
 - bond degree `25` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0de4b62c-1b0c-86c8-a9e6-bed3ba79b607` · framed by typography partition `sufism` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7334d771-036c-8b1a-8ad9-0ecb3381a9e2` · framed by typography partition `sufism` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

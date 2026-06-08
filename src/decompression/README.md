@@ -25,7 +25,7 @@
 
 - partition `decompression` · sub-root `4ea923f2-d487-810b-80e5-3b314ab97aac`
 - bond degree `67` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `c317a1a4-0ff0-8de6-bc9e-6162edfef8d6` · framed by typography partition `decompression` bonds `67` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7658a328-be9d-8018-b2b5-8fb6878724dd` · framed by typography partition `decompression` bonds `67` · `pnpm readme` · `pnpm readme:check`</sub>

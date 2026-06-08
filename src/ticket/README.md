@@ -23,7 +23,7 @@
 
 - partition `ticket` · sub-root `8778d086-1f0c-8563-9f44-62c570baa1c0`
 - bond degree `21` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `60afc261-562f-88d3-991c-36ef31ad6958` · framed by typography partition `ticket` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ccba964-2466-80cc-8404-2d3ca3705233` · framed by typography partition `ticket` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

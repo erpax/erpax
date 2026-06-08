@@ -25,7 +25,7 @@
 
 - partition `collider` · sub-root `e6c1fdc9-b8b5-8ad9-a83a-77cd10dc6bef`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `c1438a17-ec37-859f-8ca4-4fd1ba7fdf01` · framed by typography partition `collider` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `26aa31d0-c50b-8d78-a181-8f11ef2d5b59` · framed by typography partition `collider` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

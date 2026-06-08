@@ -23,7 +23,7 @@
 
 - partition `temple` · sub-root `1ae79732-06f6-8f33-9f59-2cc35fbcd827`
 - bond degree `30` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `45ec4139-0bec-8ace-9139-4c41a1c91a75` · framed by typography partition `temple` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0fd850d5-a872-8211-b491-1c915fb0c9b7` · framed by typography partition `temple` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

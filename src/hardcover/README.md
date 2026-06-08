@@ -23,7 +23,7 @@
 
 - partition `hardcover` · sub-root `03369a1b-559b-81ee-b567-d098ea268b0f`
 - bond degree `72` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7276bf3d-a541-870f-99e0-0dc4527ee96e` · framed by typography partition `hardcover` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1f400ccd-f481-86c3-a50e-3a6531fd1ef6` · framed by typography partition `hardcover` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

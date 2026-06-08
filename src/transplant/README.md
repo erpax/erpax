@@ -23,7 +23,7 @@
 
 - partition `transplant` · sub-root `d8f92cf4-fcf6-860b-b462-009913cabf90`
 - bond degree `22` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8fb92051-6e74-8708-bbd1-db7907f5f080` · framed by typography partition `transplant` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `797652a8-bee2-8be9-ad62-0c391010cd0e` · framed by typography partition `transplant` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

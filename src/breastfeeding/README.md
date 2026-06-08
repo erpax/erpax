@@ -23,7 +23,7 @@
 
 - partition `breastfeeding` · sub-root `3c556d9a-f492-8f4d-bdb5-56c989153bef`
 - bond degree `32` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1e27bf64-de40-8203-ade9-955edb186272` · framed by typography partition `breastfeeding` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bba4385e-14c7-82d0-b7c2-1813870715d8` · framed by typography partition `breastfeeding` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

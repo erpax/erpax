@@ -23,7 +23,7 @@
 
 - partition `defoundation` · sub-root `b1302788-b849-89bb-b613-51835ce5317b`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `68fee2e8-f272-85bd-964b-b38e6a2f36ed` · framed by typography partition `defoundation` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `76e2559d-782f-87b4-a16c-2ac3aaa29dfe` · framed by typography partition `defoundation` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

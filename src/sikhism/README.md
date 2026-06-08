@@ -23,7 +23,7 @@
 
 - partition `sikhism` · sub-root `c075146c-20ae-81f0-b056-96f6b3aca8f5`
 - bond degree `30` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c4aa1db5-4fb6-83c1-b30c-d06947de099c` · framed by typography partition `sikhism` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `93777dff-8462-8b2f-a20d-bcb26459f08b` · framed by typography partition `sikhism` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

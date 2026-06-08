@@ -23,7 +23,7 @@
 
 - partition `prion` · sub-root `4e0d1d80-4778-8981-9b45-636c0cb86dee`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `05e34891-cb63-8041-afc6-c2f3a5a74abe` · framed by typography partition `prion` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bebcd12b-0f19-8ae5-9dc2-d79bc1a37385` · framed by typography partition `prion` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

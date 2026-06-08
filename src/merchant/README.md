@@ -23,7 +23,7 @@
 
 - partition `merchant` · sub-root `17207f83-8399-8324-9231-f2bf628ae04d`
 - bond degree `27` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `68dfaba1-b655-8853-8188-e15e6f9d5d40` · framed by typography partition `merchant` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59d362aa-69ea-8253-a620-28e8c5c8dfec` · framed by typography partition `merchant` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

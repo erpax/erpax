@@ -23,7 +23,7 @@
 
 - partition `game` · sub-root `fdfd5a19-a098-8016-8d6c-8dd6babad4b2`
 - bond degree `144` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `24b2a12b-b2cd-8e6c-9bdb-b40c9929b529` · framed by typography partition `game` bonds `144` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9301b58e-5629-8f9c-b2ba-035e93413b79` · framed by typography partition `game` bonds `144` · `pnpm readme` · `pnpm readme:check`</sub>

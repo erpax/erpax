@@ -23,7 +23,7 @@
 
 - partition `ofmech` · sub-root `c568d7b5-54d8-8b54-9556-f1a897fc9f7c`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `53844c84-b19b-8a44-80ef-7c142965f35a` · framed by typography partition `ofmech` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `275a39dc-3257-89dd-b77f-0ce1dd54b45a` · framed by typography partition `ofmech` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,7 @@
 
 - partition `entanglement` · sub-root `6682e649-5672-8655-b92e-eb470d882c57`
 - bond degree `73` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `67829411-b58b-89cd-a53c-41dc431e772c` · framed by typography partition `entanglement` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb7a59e5-1958-88d9-97d2-e63a1340f14b` · framed by typography partition `entanglement` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>

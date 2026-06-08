@@ -25,7 +25,7 @@
 
 - partition `allocation` · sub-root `c9bf5689-48f9-85ad-99d2-1dce65710963`
 - bond degree `93` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `eb6c90cc-b019-8c30-81de-63f5e1ffe6d0` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1eac839b-16bd-8759-90ac-53ea31c31679` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

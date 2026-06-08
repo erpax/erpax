@@ -25,7 +25,7 @@
 
 - partition `seal` · sub-root `b2f34d53-f985-8a70-95e5-7ffa287bab52`
 - bond degree `36` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9448ba97-50ff-85fe-a0cd-38c83b79ffb6` · framed by typography partition `seal` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4c8754a8-140f-8e4e-a0d5-f6f9d4ea2efe` · framed by typography partition `seal` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `deferredrevenue` · sub-root `d20bce8e-7383-8544-8768-03cb13701d68`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3ad76891-bd54-8a7b-bee5-5726d39a812d` · framed by typography partition `deferredrevenue` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ef23cef0-c323-8317-8570-cb78efd2e56e` · framed by typography partition `deferredrevenue` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

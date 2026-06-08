@@ -25,7 +25,7 @@
 
 - partition `dust` · sub-root `8d98ebcd-aac5-8007-bbdf-dbb1db05cace`
 - bond degree `24` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `3ca5d3c5-6e5c-83a9-ae83-873e1d3d26a3` · framed by typography partition `dust` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fc4c3ade-806f-847d-9a7a-9036efa36d5e` · framed by typography partition `dust` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

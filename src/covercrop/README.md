@@ -23,7 +23,7 @@
 
 - partition `covercrop` · sub-root `4f319e04-27b8-814a-9e97-32096e947ef9`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8cf16326-5faf-8e9d-abbf-aa3e6db02116` · framed by typography partition `covercrop` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `05ce4f4b-4d2a-85eb-a145-dbd16eb41b10` · framed by typography partition `covercrop` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

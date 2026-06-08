@@ -23,7 +23,7 @@
 
 - partition `coinsurance` · sub-root `e8c78058-462b-8165-abbc-9adf516820f7`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `00d0c120-5894-8716-9b28-89f38f670ee0` · framed by typography partition `coinsurance` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `95223d1d-5ec4-8755-bc15-ca068ee03bd9` · framed by typography partition `coinsurance` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

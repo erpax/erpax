@@ -25,7 +25,7 @@
 
 - partition `emergence` · sub-root `a3362ea5-5b84-884b-836d-4f775a7adb16`
 - bond degree `40` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4d074738-b1d9-8e44-acbb-8b3e181e91fa` · framed by typography partition `emergence` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7104fcfd-5bdf-8aee-8e90-8dabb66197bc` · framed by typography partition `emergence` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

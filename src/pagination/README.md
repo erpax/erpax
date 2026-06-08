@@ -25,7 +25,7 @@
 
 - partition `pagination` · sub-root `730a7749-ae8d-8c65-aa66-30d84028c96e`
 - bond degree `17` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `735aa2c9-bb50-879f-944d-6e0cbb25085c` · framed by typography partition `pagination` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `99445d9c-f751-8eed-9221-659f3e14c6ba` · framed by typography partition `pagination` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

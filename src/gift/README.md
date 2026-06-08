@@ -23,7 +23,7 @@
 
 - partition `gift` · sub-root `7a386dfa-1a87-8e48-9e01-dca9297c5530`
 - bond degree `23` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f72be6c9-7b25-856d-a708-1d3f73998b6a` · framed by typography partition `gift` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e6873286-1d00-80d2-b390-beab750194b5` · framed by typography partition `gift` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `covenant` · sub-root `c6b78778-585b-87c2-b434-95135ee56655`
 - bond degree `18` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `95409a67-b621-8349-9694-038fb5dc57ce` · framed by typography partition `covenant` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d273d28e-7aba-8202-8860-f2ffffd832cb` · framed by typography partition `covenant` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

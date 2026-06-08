@@ -22,8 +22,8 @@
 ## typography graph
 
 - partition `worker` · sub-root `a7422363-338f-85ed-8106-cc0f64fef750`
-- bond degree `27` · analysis neighbors `diamond`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- bond degree `28` · analysis neighbors `diamond`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `538c3094-4b71-8d3d-b7ed-e71a4a4aeed8` · framed by typography partition `worker` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9f321c17-2e1c-83f8-963b-fd46782ff831` · framed by typography partition `worker` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

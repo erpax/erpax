@@ -23,7 +23,7 @@
 
 - partition `hinduism` · sub-root `a75f7f0e-b7f1-82c4-be87-cef2b24f564e`
 - bond degree `35` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9a2d0a9e-e61e-8ef6-84ed-68d3bfe75be3` · framed by typography partition `hinduism` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `72d3daa7-057a-8fc6-be7f-f1ddb46a421f` · framed by typography partition `hinduism` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

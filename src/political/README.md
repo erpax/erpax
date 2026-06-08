@@ -23,7 +23,7 @@
 
 - partition `political` · sub-root `3413d025-f7cb-823d-9e8a-ee5592b051bf`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cc6b5ba3-e001-8e7b-8a9c-0f6d1fd1b5f6` · framed by typography partition `political` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `45a32d78-5f81-870d-b988-5f5ef87fd91a` · framed by typography partition `political` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

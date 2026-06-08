@@ -25,7 +25,7 @@
 
 - partition `chakra` · sub-root `0b1b99f8-aafb-8c47-bab7-f0593c4d948e`
 - bond degree `40` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `2d4b11cd-44a4-804b-8eaf-355d15e34e23` · framed by typography partition `chakra` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3bc1ccb8-4284-850b-a6f2-42e62dc3c941` · framed by typography partition `chakra` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

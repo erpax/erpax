@@ -23,7 +23,7 @@
 
 - partition `defect` · sub-root `5651d0b6-581f-814c-9069-3cbcf3177b71`
 - bond degree `31` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `360b956b-c7aa-8633-9369-dc5880c1b0bd` · framed by typography partition `defect` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `be2ca0f5-fc5e-820b-861a-d6e8a3b499ad` · framed by typography partition `defect` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

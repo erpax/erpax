@@ -23,7 +23,7 @@
 
 - partition `alcohol` · sub-root `d5e5f4fc-ede9-8940-81ed-d284bd6c7868`
 - bond degree `16` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `10e251ae-342e-87ba-8d78-35ec4158d51b` · framed by typography partition `alcohol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `212ec828-24f6-8615-b005-c73fdf11a463` · framed by typography partition `alcohol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

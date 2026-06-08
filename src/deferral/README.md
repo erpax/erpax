@@ -23,7 +23,7 @@
 
 - partition `deferral` · sub-root `90903979-bddd-82e0-9cb8-089b06b52377`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f82c9c7e-094a-8566-bcf3-f9d9760cc19c` · framed by typography partition `deferral` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `072a22f3-9f29-88cb-992d-3f8323334b73` · framed by typography partition `deferral` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

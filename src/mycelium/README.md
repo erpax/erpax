@@ -23,7 +23,7 @@
 
 - partition `mycelium` · sub-root `ac80d139-7d3d-81b6-8c95-db75fa987151`
 - bond degree `18` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `55479bc2-7ad7-8788-918f-2373d3eedc0c` · framed by typography partition `mycelium` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `079c1ef4-1d81-836d-a58c-61f404737c79` · framed by typography partition `mycelium` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

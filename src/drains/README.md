@@ -23,7 +23,7 @@
 
 - partition `drains` · sub-root `0ffd05f6-9bc4-847d-9466-dfeb3058dcbf`
 - bond degree `13` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `480b1f7b-24e3-83c1-a3ca-47090127fd54` · framed by typography partition `drains` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `669abed3-ad72-8987-84e5-03ccdf70f5f3` · framed by typography partition `drains` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

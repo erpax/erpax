@@ -23,7 +23,7 @@
 
 - partition `css` · sub-root `8ac7e2ab-b02d-8084-9f94-5da3562b0671`
 - bond degree `35` · analysis neighbors `diamond` · `purity`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6158550a-5b3e-8a18-9285-619ea74a1b1d` · framed by typography partition `css` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7ad0e4e8-ad40-82a7-9a86-55a6353a15dd` · framed by typography partition `css` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `ebook` · sub-root `c2ae8150-f8d7-86cc-9921-ac65f837ec18`
 - bond degree `14` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5d510ed4-0e80-89ee-bba9-53a7f2b93490` · framed by typography partition `ebook` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97aa3a96-38ad-8883-ad43-ee7eb9448c27` · framed by typography partition `ebook` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `acriss` · sub-root `5d4d9e3e-4f18-82e6-a282-b6e72e18064a`
 - bond degree `15` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0e68ae2a-7662-867f-97b6-f73e07fb0677` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `441713d0-8863-8af6-bc55-c3882a6db37f` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

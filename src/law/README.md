@@ -22,8 +22,8 @@
 ## typography graph
 
 - partition `law` · sub-root `0343031a-7a0b-8e24-8f32-d065040b07df`
-- bond degree `2861` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- bond degree `2862` · analysis neighbors `aura`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0d737b81-4710-8b67-bf21-5f03d990396d` · framed by typography partition `law` bonds `2861` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94610811-db31-8048-b64e-2337bfee3324` · framed by typography partition `law` bonds `2862` · `pnpm readme` · `pnpm readme:check`</sub>

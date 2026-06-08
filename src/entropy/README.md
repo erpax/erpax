@@ -25,7 +25,7 @@
 
 - partition `entropy` · sub-root `725ee996-a7ae-8d46-9378-b5e04b6a00ea`
 - bond degree `193` · analysis neighbors `aura`
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `3310e341-1ad5-8fd2-bfe2-70387736d60b` · framed by typography partition `entropy` bonds `193` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `81ac327c-e02b-8d73-bd86-f6bb0051c45e` · framed by typography partition `entropy` bonds `193` · `pnpm readme` · `pnpm readme:check`</sub>

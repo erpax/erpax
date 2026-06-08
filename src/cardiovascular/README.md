@@ -23,7 +23,7 @@
 
 - partition `cardiovascular` · sub-root `62ed5c29-ccaf-85a0-b601-4b8f8462d0c8`
 - bond degree `32` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `71632bcc-f183-8c2d-8fde-3e810f6b5a61` · framed by typography partition `cardiovascular` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `abd4347e-70c1-81cd-b184-ec9f32089b58` · framed by typography partition `cardiovascular` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

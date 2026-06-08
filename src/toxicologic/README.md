@@ -23,7 +23,7 @@
 
 - partition `toxicologic` · sub-root `35ff3237-3a16-8032-9f84-f1df836d44c8`
 - bond degree `8` · analysis neighbors —
-- graph root `d96399ba-f106-87c6-b780-95ac6d270fe0`
+- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0dee3b2d-a5f9-8168-9247-3142be85c8ba` · framed by typography partition `toxicologic` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7d83cfe2-f13b-8cf4-b0eb-995a02a3f204` · framed by typography partition `toxicologic` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
