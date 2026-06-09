@@ -6,6 +6,10 @@ import { spawnSync } from 'node:child_process'
 export const PAYLOAD_NODE_OPTIONS =
   '--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm'
 
+/** migrate:* — load-hook only (tsx/esm breaks node: built-ins e.g. migrate:create) */
+export const PAYLOAD_MIGRATE_NODE_OPTIONS =
+  '--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs'
+
 export type PayloadApprovalStep =
   | 'generate:importmap'
   | 'generate:types'
@@ -29,10 +33,14 @@ function tailError(text: string, max = 4000): string {
   return t.length <= max ? t : `…\n${t.slice(-max)}`
 }
 
-function runPayloadArgs(args: readonly string[], cwd: string): { readonly code: number; readonly output: string } {
+function runPayloadArgs(
+  args: readonly string[],
+  cwd: string,
+  nodeOptions: string = PAYLOAD_NODE_OPTIONS,
+): { readonly code: number; readonly output: string } {
   const r = spawnSync('pnpm', ['exec', 'payload', ...args], {
     cwd,
-    env: { ...process.env, NODE_OPTIONS: PAYLOAD_NODE_OPTIONS },
+    env: { ...process.env, NODE_OPTIONS: nodeOptions },
     encoding: 'utf8',
     maxBuffer: 64 * 1024 * 1024,
   })
@@ -56,7 +64,7 @@ export function payloadApprovalGate(opts?: {
     if (code !== 0) return { approved: false, step, error: tailError(output) }
   }
   if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE) {
-    const migrate = runPayloadArgs(['migrate:status'], cwd)
+    const migrate = runPayloadArgs(['migrate:status'], cwd, PAYLOAD_MIGRATE_NODE_OPTIONS)
     if (migrate.code !== 0) {
       return { approved: false, step: 'migrate:status', error: tailError(migrate.output) }
     }

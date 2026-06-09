@@ -142,7 +142,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   wave: {
     default: { desc: 'Coordinated self-balancing wave (--batch 30 · --apply)', cmd: `${TSX} src/apply/wave.ts run` },
     run: { desc: 'Coordinated self-balancing wave', cmd: `${TSX} src/apply/wave.ts run` },
-    status: { desc: 'Active wave lock + queue debt + stall hints', cmd: `${TSX} src/apply/wave.ts status` },
+    status: { desc: 'Wave lock + stall hints (--full scans axis debt)', cmd: `${TSX} src/apply/wave.ts status` },
     watch: { desc: 'Realtime wave queue reorganizer', cmd: `${TSX} src/apply/wave.ts watch` },
   },
   workflow: {

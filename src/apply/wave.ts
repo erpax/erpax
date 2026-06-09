@@ -194,8 +194,11 @@ export function runWaveCli(argv: string[] = process.argv.slice(2)): number {
     return 0
   }
   if (argv.includes('status') || argv[0] === 'status') {
+    const fullDebt = argv.includes('--full')
     const report = collectWaveStatus(
-      (c) => scanWaveAxisDebt(c).reduce((s, d) => s + d.debt, 0),
+      fullDebt
+        ? (c) => scanWaveAxisDebt(c).reduce((s, d) => s + d.debt, 0)
+        : () => -1,
       cwd,
     )
     console.log(formatWaveStatus(report))

@@ -141,7 +141,11 @@ export function formatWaveStatus(report: WaveStatusReport): string {
   } else {
     lines.push('  lock           none — wave slot free')
   }
-  lines.push(`  queue debt     ${report.queueDebt} axis unit(s)`)
+  lines.push(
+    report.queueDebt < 0
+      ? '  queue debt     (skipped — pnpm erpax wave status --full)'
+      : `  queue debt     ${report.queueDebt} axis unit(s)`,
+  )
   if (report.stalledReason) lines.push(`  stalled        ${report.stalledReason}`)
   if (report.stalled.length) {
     lines.push(`  processes      ${report.stalled.length} long-running erpax job(s)`)
