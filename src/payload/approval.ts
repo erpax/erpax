@@ -9,6 +9,8 @@ export const PAYLOAD_NODE_OPTIONS =
 /** migrate:* — load-hook only (tsx/esm breaks node: built-ins e.g. migrate:create) */
 export const PAYLOAD_MIGRATE_NODE_OPTIONS =
   '--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs'
+export const PAYLOAD_MIGRATE_CREATE_CMD = 'pnpm payload:migrate:create'
+
 
 export type PayloadApprovalStep =
   | 'generate:importmap'
@@ -76,7 +78,8 @@ export function formatPayloadApprovalLine(result: PayloadApprovalResult): string
   if (result.step === 'skipped') {
     return '  payload        skipped (ERPAX_PAYLOAD_APPROVAL_SKIP / PAYLOAD_TEST_SKIP_MIGRATE)'
   }
-  if (result.approved) return '  payload        approved ✓ (importmap · types · migrate:status)'
+  if (result.approved)
+    return '  payload        approved ✓ (importmap · types · migrate:status · migrate:create → pnpm payload:migrate:create)'
   return `  payload        DENIED at ${result.step} — run: pnpm erpax approve`
 }
 
