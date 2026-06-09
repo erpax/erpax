@@ -2205,7 +2205,7 @@ src/query/fingerprint/index.ts:58: * @standard RFC 8785 JSON Canonicalization Sc
 src/query/fingerprint/index.ts:59: * @standard NIST FIPS 180-4 SHA-256
 src/readings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/readme/index.ts:12: * @standard RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)
-src/readme/test.ts:432: * @standard RFC 9562
+src/readme/test.ts:442: * @standard RFC 9562
 src/realtime/index.ts:9: * @standard append-only log + cursor (the pull-based realtime model)
 src/realtime/translator/index.ts:9: * @standard interlingua (language-independent meaning) over the realtime tail
 src/receipt/index.ts:10: * @standard RFC 8785 JSON canonicalization (the content the uuid addresses)
@@ -5882,7 +5882,7 @@ src/multi/search/index.ts:40: * @audit Conservation Law 53 self-referential-clos
 src/name/index.ts:11: * @audit uuidOfName is total — defined for ANY name, so every name folds; the identity is computed
 src/naredba/n/18/unp.ts:20: * @audit ISO-19011:2018 audit-trail (УНП ties order ↔ fiscal-receipt ↔ payment)
 src/navel/index.ts:11: * @audit note·colour·uuid computed from the position math, never hand-asserted
-src/navigation/index.ts:12: * @audit nav · group · route computed from the path only — never assigned
+src/navigation/index.ts:11: * @audit nav · group · route computed from the path only — never assigned
 src/nerve/index.ts:21: * @audit computed from first principles (threshold step · refractory window · saltatory speed)
 src/nist/incits/359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/notification/index.ts:21: * @audit ISO-19011:2018 audit-trail notification-evidence
@@ -5959,7 +5959,6 @@ src/quantum/import/index.ts:9: * @audit re-exports boundary organ; computed live
 src/quantum/index.ts:18: * @audit computed from the live matrix, never hand-asserted
 src/quantum/karma/index.ts:13: * @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 src/quantum/law/index.ts:15: * @audit the law-suffix is read from each SKILL.md ending, never asserted
-src/quantum/linear-gap.ts:4: * @audit computed walk — seal gate measures gaps under baseline ratchet
 src/quantum/literature/index.ts:9: * @audit text uuid from @/integrity; never hand-pinned canon
 src/quantum/log/index.ts:8: * @audit pure functions; never hand-asserted chain cost
 src/quantum/marine/index.ts:21: * @audit zones are computed from distance; general average is proportional to value — never asserted

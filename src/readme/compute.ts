@@ -352,42 +352,33 @@ export function renderReadme(
     ...renderOrientSection(),
     '## the diamond',
     '',
-    'erpax IS a diamond — every atom a carbon vertex bonded gaplessly into one lattice, folded to a',
-    'single content address. This README is that diamond projected: its facets are the seven positions',
-    'of the closed horo ring, and the whole is recoverable from its root uuid. Reading it is reading the crystal.',
+    plainLanguageOf({ section: 'diamond', model, bonds: bondWordsOf('diamond', 6) }),
     '',
     `- corpus address \`${model.corpusRoot}\``,
-    `- **${model.atoms}** atoms · **${model.bonds}** bonds (the K₁₃ lattice)`,
-    `- this README \`${uuid}\` — itself a diamond, regenerable from the tree`,
+    `- **${model.atoms}** atoms · **${model.bonds}** bonds`,
+    `- this README \`${uuid}\``,
     '',
-    '## the horo ring — the diamond\'s facets',
+    '## [[pivot]]',
     '',
-    'The seven positions every flow rides, in measure-walk order `1·2·4·8·7·5·9`. Each row is one facet of',
-    'the crystal; the principal atoms are the most-bonded vertices at that position (computed from the lattice).',
+    renderRootPivotHub(
+      { ring: model.ring, axis: model.axis },
+      trinityCorpusRollup({ atoms: model.atoms, skills: model.skills, index: model.index, tests: model.tests }),
+      plainLanguageOf({
+        section: 'pivot',
+        model,
+        horo: { ring: model.ring, axis: model.axis },
+        trinity: { atoms: model.atoms, skills: model.skills, index: model.index, tests: model.tests },
+      }),
+    ),
+    ...(models && models.length > 0
+      ? ['', '### cross-tab state', '', renderPivotMarkdown(pivotFolderStats(models)), '']
+      : []),
     '',
-    '| digit | measure | atoms | principal facets |',
-    '| ----: | ------- | ----: | ---------------- |',
-  )
-  for (const f of model.ring) {
-    L.push(`| ${f.digit} | ${f.measure} | ${f.atoms} | ${f.facets.map((a) => `\`${a}\``).join(' · ')} |`)
-  }
-  L.push(
-    '',
-    `> The control axis governs off the flow ring — \`3\` access · \`6\` hooks (${model.axis
-      .map((a) => `${a.digit}: ${a.atoms} atoms`)
-      .join(' · ')}), \`9\` unity closes and \`0\` is the zeropoint root.`,
-    '',
-    '## the trinity — every atom told three ways',
-    '',
-    `- **${model.atoms}** atoms — one-word folders, each a sealed vertex`,
-    `- **${model.skills}** \`SKILL.md\` — the form (antimatter)`,
-    `- **${model.index}** \`index.ts\` — the code (matter)`,
-    `- **${model.tests}** \`test.ts\` — the proof`,
+    renderGithubBrowseNote(),
     '',
     '## corpus analytics',
     '',
-    'Every per-folder README carries structured analytics (bond degree · seal · horo · variance · bindings · standards);',
-    'this section rolls them up from the live tree.',
+    plainLanguageOf({ section: 'analytics', model }),
     '',
     `- **${model.analytics.sealed}** / **${model.analytics.folderCount}** sealed · **${model.analytics.balanced}** / **${model.analytics.folderCount}** balanced`,
     `- mean bond degree \`${model.analytics.meanBondDegree}\` · total variance \`${model.analytics.totalVariance}\``,
@@ -500,12 +491,6 @@ export interface FolderReadmeModel {
   readonly statement: FolderAccounting
   readonly entropy: FolderEntropyAccounting
   readonly quantumThinking: QuantumThinkingBlock
-}
-
-const measureOf = (digit: number | null): string | null => {
-  if (digit === null) return null
-  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
-  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
 }
 
 const foldedPathSet = (): Set<string> => {
@@ -806,7 +791,7 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
     })
     .map(([digit, row]) => ({
       digit,
-      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
+      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
       atoms: row.atoms,
       sealed: row.sealed,
     }))
@@ -846,7 +831,7 @@ export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): Co
     })
     .map(([digit, row]) => ({
       digit,
-      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
+      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
       atoms: row.atoms,
       sealed: row.sealed,
     }))

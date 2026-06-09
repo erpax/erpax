@@ -14,19 +14,16 @@ import {
 
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 
-/** Fold a content-uuid to one 64-bit torus half (first 16 hex digits). */
 export function uuidFold64(uuid: string): bigint {
   const h = hexOf(uuid).slice(0, 16)
   return h.length > 0 ? BigInt(`0x${h}`) : 0n
 }
 
-/** WORD half — lexical token content-address on the torus. */
 export function wordFold(atomOrPath: string): bigint {
   const leaf = atomOrPath.split('/').pop() ?? atomOrPath
   return uuidFold64(wordTokenUuid(leaf)) & architectureMask()
 }
 
-/** DIGIT half — matrix content-uuid on the torus. */
 export function digitFold(atomOrPath: string): bigint {
   const leaf = atomOrPath.split('/').pop() ?? atomOrPath
   const node = nodeOf(atomOrPath) ?? nodeOf(leaf)
@@ -43,7 +40,6 @@ export interface QuantumFoldResult {
   readonly superposition: 0 | 1
 }
 
-/** 2D partition facet — debit·credit sheet on the fold plane. */
 export interface Partition2d {
   readonly debitSum: number
   readonly creditSum: number
@@ -55,7 +51,6 @@ const architectureBond = (): string => {
   return w <= d ? merge(w, d) : merge(d, w)
 }
 
-/** Double fold for one atom path — word ⊗ digit. */
 export function doubleFold(atomOrPath: string, sealed = false): QuantumFoldResult {
   const wordHalf = wordFold(atomOrPath)
   const digitHalf = digitFold(atomOrPath)
@@ -77,7 +72,6 @@ export interface QuantumFoldOpts {
   readonly credits?: readonly { readonly account: string; readonly amount: number }[]
 }
 
-/** Folder-aware fold — optional debit/credit partition mixed into word half. */
 export function quantumFoldOf(atomPath: string, opts?: QuantumFoldOpts): QuantumFoldResult {
   const base = doubleFold(atomPath, opts?.sealed ?? false)
   const debitSum = opts?.debits?.reduce((s, l) => s + l.amount, 0) ?? 0
@@ -93,7 +87,6 @@ export function quantumFoldOf(atomPath: string, opts?: QuantumFoldOpts): Quantum
   }
 }
 
-/** Compact hex presentation for UI rows. */
 export function quantumFoldPresentation(fold: QuantumFoldResult): {
   readonly wordFold: string
   readonly digitFold: string

@@ -227,6 +227,22 @@ export function renderPivotComparisonMarkdown(comparison: FolderPivotComparison)
   return L.join('\n')
 }
 
+export {
+  horoPivotTable,
+  trinityCorpusRollup,
+  renderRootPivotHub,
+  trinityFlagsOf,
+  trinityFlagsAtDir,
+  sealedFromReadme,
+} from './horo-table'
+export type {
+  HoroPivotRow,
+  ControlAxisFacet,
+  HoroPivotTable,
+  TrinityCorpusRollup,
+  TrinityFlags,
+} from './horo-table'
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const demo: PivotFolderInput[] = []
   console.log('pivot demo — empty corpus:')
