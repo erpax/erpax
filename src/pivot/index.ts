@@ -10,8 +10,15 @@
  * @audit every count is derived from model fields, never hand-set
  * @see ../readme — ../law/folder — ../horo
  */
-import { HORO_DIGITS, isHoroStep } from '@/horo'
+import { HORO_DIGITS, HORO_MEASURE, isHoroStep } from '@/horo'
 import { ONE_WORD } from '@/law/folder/constants'
+
+/** Horo measure label for a digit — shared with readme computed faces. */
+export function measureOf(digit: number | null): string {
+  if (digit === null) return '—'
+  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
+  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
+}
 
 /** Minimal folder fields required for pivot cross-tabs — avoids readme import cycle. */
 export interface PivotFolderInput {

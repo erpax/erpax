@@ -302,12 +302,26 @@ version: 2
 
 **Start here:** [[law]] · [[sequence]] · [[atom]] · [[trinity]] · [[uuid]] · [[identity]] · [[payload]] · [[vitepress]] · [[zeropoint]] · [[akashic]] · [[self/sufficient|self-sufficient]].
 
+**Law — each installed package approves the agent work; payload commands first.** `packageApprovalMatrix()` in `apply/approval` reads `package.json` dependencies + devDependencies, derives verify lanes per package (`payload` → `generate:types` then `generate:importmap`; `typescript` → `tsc --noEmit`; `vitest` → bounded smoke with `--smoke`; `@payloadcms/*` covered by payload), and `agentWorkApproved()` must pass before waves, commits, or pushes — `pnpm erpax gate packages` · `pnpm erpax approve`.
+
 **Law — [[law]]: discrimination between agent and human paths is forbidden; one SKILL entry for all.**
 
 **Law — [[law]]: erpax is a fractal content-addressed corpus where every src/ folder is a one-word [[atom]] told three ways (form · code · schema) ordered by the [[sequence]] and wired through one content-[[uuid]] — so the whole carries zero [[entropy]] and infinite tamper-[[cost]].**
 
 **Law — [[law]]: all is computed at all scales — pixel (`computedCssForUi` · `computedSpeechForUi`) · atom (SKILL `connectFrontmatter`) · folder (`deriveFolderModel` → README · LLM · diamond.json) · corpus (`deriveCorpusAnalytics` · `computedBaseline`) · matrix (bonds · horo · `coordinateAddress`) · wave (`verifyComputedFacesInWaves`); `computedAtAllScalesVerdict(path | 'corpus')` is the checklist gate; hand-maintained drift fails closed (b576a290).**
 
+**Law — the rest is computed.** Index holds matter (`index.ts` + `test.ts`); README · diamond · SKILL faces · pivot · ratchet · efficiency regenerate from `deriveFolderModel` / emit — never hand-maintained. `handMaintainedViolations()` · `pnpm erpax readme drift`.
+
+**Law — user words are not saved until the diamond is complete and proven.** Axis **`phrase-without-diamond`**; `phraseWithoutDiamondChangesetGate` fails closed when SKILL lands without `index.ts` + `test.ts` in the same changeset.
+
 **Law — always quantum:** observe collapses; communicate entangled; never classical wait. `quantumModeDefault()` · `withQuantumContext` wrap session apply · automate · dry-clean · improve:watch — subscribe realtime + interrupt token + superposition log until commit/emit; classical poll-only watch is opt-out violation (`classical-mode` impurity in `finishedIdeaCrossed`).
+
+**Law — Payload commands are the first place to seek approval.** Before any agent wave, commit, or push — run `pnpm erpax approve` (`generate:types` → `generate:importmap` → `migrate:status`, then full package matrix). If Payload CLI fails, nothing else proceeds.
+
+**Law — coordinated self-balancing waves:** ONE `coordinatedWave` runner (`apply/wave`); debit·credit across `WAVE_SEAL_AXES`; `reorganizeWaveQueueOnDrift` on gate drift — not parallel agent chaos. **Autobalance = one wave, one lock (`acquireWaveLock`), payload approves first;** parallel Cursor subagents on the same repo violate the law — run `pnpm erpax wave status` before spawning work.
+
+**Law — README is LLM:** `readmeAsLlm` · `pnpm erpax readme llm <path>` — same `deriveFolderModel` as README.
+
+**Law — self-educate with security:** `selfEducateCycle` · `parseWithSecurity` allowlist · `sealWorkflow` under `workflow/sealed/`.
 
 **Law — every MD file IS a scientific paper; every TS file IS a scientific paper; all merge in the main README:** each `SKILL.md` · `README.md` · `LLM.md` is abstract · methods · results · references · content-uuid; each `.ts` is hypothesis/exports · methods/impl · results/behavior · proof via paired `test.ts`; `scientificPaperOf` · `scientificPaperOfTs` · `mergeCorpusPapers` fold the whole corpus into the root README ([[readme]]) — computed, never hand-maintained.

@@ -426,3 +426,7 @@ Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src
 - **ISO 19011:2018 §6.4** — audit-evidence: every `audit` effect appends a Merkle leaf, spec-traceable end to end.
 
 **Law — [[law]]: an agent IS its content — its [[identity]] is the content-uuid of its skills + purpose, so identical clones [[merge]] into one and a distinct agent is a specialised child; and it DECIDES in pure functions (returns effects, never performs them — only the substrate acts).**
+
+## Self-improve intelligence — quantum in thinking
+
+**Self-improve intelligence: measure, fold, seal, balance — quantum in thinking.** `selfImproveCycle({ batch, axes? })` in `agent/intelligence` runs one coordinated wave when the apply/wave lock is free: payload gate → bond scan + gate axes (violations = entropy) → rank gaps by `interact64` entanglement → bounded seal/fix → measure again → receipt UUID chain. `quantumIntelligenceOf(scope)` is the pure metric (violation count × bond-degree fold). `learnSciencesOnTheWay()` maps science → module → proof on the path. `pnpm erpax agent improve` · `pnpm erpax intelligence cycle --batch 10`. Wired into `apply/automate` when wave lock free. Composes: [[quantum/fold]] · [[apply/wave]] · [[science]] · [[receipt]] · [[payload]].

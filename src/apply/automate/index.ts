@@ -57,6 +57,9 @@ import {
   type EfficiencySnapshot,
 } from '../efficiency'
 import { emitEfficiency as emitEfficiencyLedger } from '../emit-efficiency'
+import { isWaveRunnerHeld } from '../wave'
+import { selfImproveCycle } from '@/agent/intelligence'
+import { agentWorkApproved } from '../approval'
 
 export { automateDirectionPath } from '@/agent/communication/realtime'
 
@@ -137,6 +140,7 @@ export interface AutomateCycleOpts {
   /** Test / partial override — skip live measure for supplied keys. */
   readonly metrics?: Partial<EfficiencyMetrics>
   readonly skipClean?: boolean
+  readonly skipImprove?: boolean
   /** @internal — set by withQuantumContext wrapper */
   readonly __quantumWrapped?: boolean
 }
@@ -386,6 +390,18 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
   const priorManifest = loadAutomateManifest(cwd)
   let phase = 'inventory'
 
+  if (!opts.force && !agentWorkApproved({ cwd, smoke: false })) {
+    stopHeartbeat()
+    return abortedResult(
+      cwd,
+      taskInventory(cwd),
+      { phase: 'package-approval', reason: 'run pnpm erpax gate packages' },
+      started,
+      dryRun,
+      priorManifest,
+    )
+  }
+
   const inventory = taskInventory(cwd)
   const hintCap = 5
   for (const hint of inventory.duplicateHints.slice(0, hintCap)) {
@@ -401,6 +417,21 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
   if (stale) {
     stopHeartbeat()
     return abortedResult(cwd, inventory, stale, started, dryRun, priorManifest)
+  }
+
+  if (!opts.skipImprove && !isWaveRunnerHeld()) {
+    phase = 'self-improve'
+    const improve = selfImproveCycle({ cwd, batch: 10, dryRun, skipPayload: dryRun })
+    if (!improve.aborted && improve.after.violationCount < improve.before.violationCount) {
+      process.stderr.write(
+        `automate improve: violations ${improve.before.violationCount}→${improve.after.violationCount}\n`,
+      )
+    }
+    stale = abortIfStale(token, phase)
+    if (stale) {
+      stopHeartbeat()
+      return abortedResult(cwd, inventory, stale, started, dryRun, priorManifest)
+    }
   }
 
   if (performance.now() - started > AUTOMATE_CYCLE_BUDGET_MS) {

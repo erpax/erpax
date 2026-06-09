@@ -1,0 +1,18 @@
+---
+description: Coordinator rule — one wave at a time; no overlapping subagents on the same repo
+alwaysApply: true
+---
+
+# erpax waves — coordinator mutex
+
+**Parent agents must NOT launch overlapping subagents on the same repo** for push, seal, wire, readme, rules, or automate work.
+
+Before spawning work:
+
+1. Run `pnpm erpax wave status` — if lock is ACTIVE or duplicate workers appear, **wait or resume** the holder; do not start a parallel wave.
+2. Run `pnpm erpax doctor stalls` — kill zombie duplicates (same kind, older pid).
+3. Ensure `pnpm erpax gate packages` passes (payload importmap + types first).
+
+**Autobalance = one wave, one lock, payload approves first.** Parallel Cursor multitask subagents violate the law — they race on half-written files and stall on typegen.
+
+If a subagent is mid-course, use `publishDirection` / direction bus — do not chain `Task resume` while it is still running.

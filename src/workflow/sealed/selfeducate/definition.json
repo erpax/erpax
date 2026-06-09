@@ -1,0 +1,25 @@
+{
+  "name": "self-educate",
+  "targetCollection": "workflow-instances",
+  "triggerEvent": "manual",
+  "steps": [
+    {
+      "order": 1,
+      "name": "Scan",
+      "kind": "service_task",
+      "serviceHandler": "agent/educate"
+    },
+    {
+      "order": 2,
+      "name": "Wave",
+      "kind": "service_task",
+      "serviceHandler": "apply/wave"
+    },
+    {
+      "order": 3,
+      "name": "Receipt",
+      "kind": "human"
+    }
+  ],
+  "contentUuid": "f092047d-8f90-8caf-aa65-02de9a62f71f"
+}

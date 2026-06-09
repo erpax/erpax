@@ -21,11 +21,12 @@ import { nonIndexImports } from '@/tamper/import'
 import { concentrationViolations } from './concentration'
 import { wordMatterViolations } from './word-matter'
 import { wordWithoutLogicViolations, type WordWithoutLogicAudit } from './word-without-logic'
-import { userWordUnprovenViolations } from '@/law/folder/user-word'
+import { userWordUnprovenViolations } from '@/law/folder'
 import { indexCrossViolationCount } from '@/law/folder/index-cross'
-import { linearLogicCount } from '@/quantum/fold'
+import { findLinearLogic, linearLogicCount } from '@/quantum/fold'
 import { linearGapCount, linearGaps } from '@/quantum'
-import { handMaintainedViolations } from '@/readme/hand-maintained'
+import { handMaintainedViolations } from '@/readme'
+import { computeProseLiterals } from '@/readme/assumption-literals'
 import {
   listAtomPaths,
   diamondMembershipScan,

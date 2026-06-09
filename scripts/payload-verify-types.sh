@@ -48,7 +48,7 @@ for entry in "${TARGETS[@]}"; do
   backup="${tmp}/$(echo "$target" | tr '/' '_').committed"
   cp "$target" "$backup"
 
-  if ! NODE_OPTIONS=--no-deprecation eval "$cmd" > /dev/null 2>&1 ; then
+  if ! NODE_OPTIONS="--no-deprecation --import=tsx/esm --import=./src/css/load-hook.mjs" eval "$cmd" > /dev/null 2>&1 ; then
     cp "$backup" "$target"
     echo "ERROR: ${cmd} failed for ${label}."
     echo "       Run it manually to see the error."

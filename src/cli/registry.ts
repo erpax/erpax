@@ -86,9 +86,23 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       desc: 'Full coordinator inventory report',
       cmd: `${TSX} src/agent/inventory/cli.ts`,
     },
+    improve: {
+      desc: 'Self-improve intelligence cycle (measure · fold · seal · balance)',
+      cmd: `${TSX} src/agent/intelligence/index.ts`,
+    },
     realtime: {
       desc: 'Active realtime channels · subscribers · last event age',
       cmd: `${TSX} src/agent/communication/realtime-cli.ts`,
+    },
+  },
+  intelligence: {
+    default: {
+      desc: 'Self-improve intelligence cycle (measure · fold · seal · balance)',
+      cmd: `${TSX} src/agent/intelligence/index.ts`,
+    },
+    cycle: {
+      desc: 'One intelligence improvement wave (--batch 10 · --apply)',
+      cmd: `${TSX} src/agent/intelligence/index.ts`,
     },
   },
   confirm: {
@@ -128,6 +142,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   wave: {
     default: { desc: 'Coordinated self-balancing wave (--batch 30 · --apply)', cmd: `${TSX} src/apply/wave.ts run` },
     run: { desc: 'Coordinated self-balancing wave', cmd: `${TSX} src/apply/wave.ts run` },
+    status: { desc: 'Active wave lock + queue debt + stall hints', cmd: `${TSX} src/apply/wave.ts status` },
     watch: { desc: 'Realtime wave queue reorganizer', cmd: `${TSX} src/apply/wave.ts watch` },
   },
   workflow: {
@@ -257,7 +272,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   quantum: {
     default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },
     status: { desc: 'Superposition pending paths, last collapse, bond reciprocity', cmd: `${TSX} src/quantum/status.ts` },
-    seal: { desc: 'Seal linear gaps (entanglement priority)', cmd: `${TSX} src/quantum/fold/index.ts --seal` },
+    seal: { desc: 'Seal linear gaps (entanglement priority)', cmd: `${TSX} src/quantum/gap.ts --seal` },
     fold: {
       desc: 'Fold linear segments into quantum surfaces (--linear · --apply)',
       cmd: `${TSX} src/quantum/fold/index.ts --linear`,

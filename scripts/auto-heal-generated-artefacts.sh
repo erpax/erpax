@@ -33,7 +33,7 @@
 set -e
 cd "$(dirname "$0")/.." || exit 1
 export PATH="$PWD/node_modules/.bin:$PATH"
-export NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs"
+export NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs --import=tsx/esm"
 
 DRY_RUN=0
 [ "${1:-}" = "--dry-run" ] && DRY_RUN=1

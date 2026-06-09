@@ -16,10 +16,10 @@ import { wordWithoutLogicViolations } from '@/rules/word-without-logic'
 import { nonIndexImports } from '@/tamper/import'
 import { matrixCrackViolations } from '@/matrix'
 import { wordFolderViolations, wordDiamondViolations } from './word'
-import { userWordUnprovenViolations } from './user-word'
+import { userWordUnprovenViolations } from '@/law/folder'
 import { indexCrossViolationCount } from './index-cross'
-import { linearLogicCount, linearGapCount } from '@/quantum'
-import { handMaintainedViolations } from '@/readme/hand-maintained'
+import { linearGapCount, linearLogicCount } from '@/quantum'
+import { handMaintainedViolations } from '@/readme'
 import type { RatchetAxis } from './baseline-types'
 import { RATCHET_AXES } from './ratchet-math'
 
@@ -77,4 +77,15 @@ export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Recor
     }
   }
   return counts
+}
+
+/** Memory law — single-path runners, bounded batches (no full-corpus OOM). */
+export function memoryFootprintHints(): readonly string[] {
+  return [
+    'readme paths — one atom path per process (never 3166-folder waves in CI)',
+    'MAX_HAND_MAINTAINED_PATHS = 30 — hand-maintained scan cap',
+    'MAX_SEAL_BATCH = 30 — linear-gap seal cap',
+    'deriveFolderModel — lazy per path; no all-models array in one runner',
+    'index cross — priority hubs only; rest computed from index.ts barrel',
+  ]
 }

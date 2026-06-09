@@ -18,7 +18,7 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -56,6 +56,8 @@ import {
   pivotFolderStats,
   pivotSingleFolder,
   renderPivotTable,
+  renderPivotMarkdown,
+  measureOf,
   type HoroPivotRow,
   type ControlAxisFacet,
 } from '@/pivot'
@@ -1346,7 +1348,7 @@ export function deriveFolderModel(
     boundaryUuid: null,
     trinity: { form, code, proof },
     horo,
-    measure: measureOf(horo),
+    measure: horoMeasureOf(horo),
     imports: boundaryImports,
     exports: boundaryExports,
     escapes: boundaryEscapes,
@@ -1394,7 +1396,7 @@ export function deriveFolderModel(
     ...fields,
     atomPath,
     leaf,
-    measure: measureOf(horo),
+    measure: horoMeasureOf(horo),
     bindings,
     standards,
     analytics,

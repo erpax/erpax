@@ -36,6 +36,9 @@ set -e
 # src/app/(payload)/admin/importMap.js.
 bash scripts/auto-heal-generated-artefacts.sh
 
+# ── 1b. Payload approval (canonical gate — before tsc/lint/vitest) ───
+cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx src/cli/index.ts approve
+
 # ── 2. Verify gates (must pass after auto-heal) ─────────────────────
 # Cheapest gate first: malformed @standard / @rfc / @compliance banners.
 bash scripts/standards-citation-index.sh --check

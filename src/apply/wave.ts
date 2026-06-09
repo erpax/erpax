@@ -10,11 +10,22 @@ import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 import { fixAccountingGapsOnP0, waveAccountingGapViolations } from '@/accounting/gaps'
 import { computedBaseline } from '@/law/folder/baseline'
-import { userWordUnprovenViolations } from '@/law/folder/user-word'
+import type { RatchetAxis } from '@/law/folder/baseline-types'
+import { userWordUnprovenViolations } from '@/law/folder'
 import { createWaveSession, completeWaveHop, selfBalancingWaveLoad, waveSessionVerdict, type SelfBalancingWavePlan } from '@/wave'
 import type { Receipt } from '@/receipt'
 import { materializeComputedFacesForPathsStable } from '@/readme/compute'
 import { dryCleanCycle, scanCleanAxes, CLEAN_SCAN_AXES, type CleanScanAxis } from './clean'
+import { payloadApprovalGate } from '@/payload/approval'
+import {
+  acquireWaveLock,
+  releaseWaveLock,
+  collectWaveStatus,
+  formatWaveStatus,
+} from './wave-lock'
+
+export { readWaveLock, acquireWaveLock, releaseWaveLock, formatWaveStatus, collectWaveStatus } from './wave-lock'
+export { isWaveRunnerHeld as isWaveRunnerActive }
 
 export const WAVE_MANIFEST_REL = join('src', 'apply', 'wave.manifest.generated.json')
 export const WAVE_SEAL_AXES = [...CLEAN_SCAN_AXES, 'phrase-without-diamond', 'accounting-wave'] as const
@@ -30,13 +41,29 @@ export interface WaveManifest { readonly _law: string; readonly cycleId: string;
 let waveRunnerActive = false
 export function __resetWaveRunnerForTests(): void { waveRunnerActive = false }
 export function __setWaveRunnerActiveForTests(active: boolean): void { waveRunnerActive = active }
+export function isWaveRunnerHeld(): boolean { return waveRunnerActive }
 
 export function loadWaveManifest(cwd = process.cwd()): WaveManifest | null {
   const p = join(cwd, WAVE_MANIFEST_REL)
   return existsSync(p) ? (JSON.parse(readFileSync(p, 'utf8')) as WaveManifest) : null
 }
 
-const safeBaseline = (axis: WaveSealAxis, cwd: string): number => { try { return computedBaseline(axis, cwd) } catch { return 0 } }
+const WAVE_RATCHET_AXES = new Set<RatchetAxis>([
+  'stray-ts',
+  'logic-concentration',
+  'word-matter',
+  'phrase-without-diamond',
+])
+
+const safeBaseline = (axis: WaveSealAxis, cwd: string): number => {
+  if (axis === 'accounting-wave') return 0
+  if (!WAVE_RATCHET_AXES.has(axis as RatchetAxis)) return 0
+  try {
+    return computedBaseline(axis as RatchetAxis, cwd)
+  } catch {
+    return 0
+  }
+}
 
 export function scanWaveAxisDebt(cwd = process.cwd(), axes: readonly WaveSealAxis[] = WAVE_SEAL_AXES): WaveAxisDebt[] {
   const clean = scanCleanAxes(cwd)
@@ -93,11 +120,36 @@ export function coordinatedWave(opts: CoordinatedWaveOpts = {}): CoordinatedWave
   const batch = Math.max(1, Math.trunc(opts.batch ?? 30))
   const dryRun = opts.dryRun !== false
   const token = opts.token ?? interruptTokenFor(waveDirectionPath(), agentId)
-  if (waveRunnerActive) {
-    return { aborted: true, abortReason: 'single-runner — another coordinated wave in flight', runnerHeld: false, batch, axes: [], debit: 0, credit: 0, balanced: true, actions: [], sealed: [], receipts: [], plan: { waves: [], waveCount: 0, totalUnits: 0, balanceRatio: 1, restingStep: 9 }, sessionBalanced: false, clean: null, durationMs: Math.round(performance.now() - started) }
+  const empty = (aborted: boolean, reason?: string): CoordinatedWaveResult => ({
+    aborted,
+    abortReason: reason,
+    runnerHeld: false,
+    batch,
+    axes: [],
+    debit: 0,
+    credit: 0,
+    balanced: true,
+    actions: [],
+    sealed: [],
+    receipts: [],
+    plan: { waves: [], waveCount: 0, totalUnits: 0, balanceRatio: 1, restingStep: 9 },
+    sessionBalanced: false,
+    clean: null,
+    durationMs: Math.round(performance.now() - started),
+  })
+
+  if (!opts.force) {
+    const payload = payloadApprovalGate({ cwd, skipLive: dryRun })
+    if (!payload.approved) {
+      return empty(true, `payload approval denied at ${payload.step} — run pnpm erpax approve payload`)
+    }
   }
+  if (waveRunnerActive) return empty(true, 'single-runner — another coordinated wave in flight')
+  const lock = acquireWaveLock('wave', agentId, cwd)
+  if (!lock.acquired) return empty(true, lock.reason ?? 'wave lock held')
   waveRunnerActive = true
   try {
+    if (isDirectionStale(token)) return empty(true, 'direction stale')
     const debts = allocateWaveBatch(scanWaveAxisDebt(cwd, opts.axes ?? WAVE_SEAL_AXES), batch)
     const debit = debts.reduce((s, d) => s + d.debt, 0)
     const actions = proposeWaveSealActions(debts, cwd)
@@ -112,7 +164,10 @@ export function coordinatedWave(opts: CoordinatedWaveOpts = {}): CoordinatedWave
     }
     const credit = sealed.length
     return { aborted: false, runnerHeld: true, batch, axes: debts, debit, credit, balanced: credit <= debit || debit === 0, actions, sealed: [...new Set(sealed)], receipts, plan, sessionBalanced: waveSessionVerdict(session).balanced, clean: null, durationMs: Math.round(performance.now() - started) }
-  } finally { waveRunnerActive = false }
+  } finally {
+    waveRunnerActive = false
+    releaseWaveLock(cwd, 'wave')
+  }
 }
 
 export function reorganizeWaveQueueOnDrift(opts: { readonly cwd?: string } = {}): { readonly stop: () => void } {
@@ -132,8 +187,26 @@ export function renderWaveReport(r: CoordinatedWaveResult): string {
 }
 
 export function runWaveCli(argv: string[] = process.argv.slice(2)): number {
-  if (argv.includes('watch')) { reorganizeWaveQueueOnDrift(); process.stderr.write('wave watch\n'); return 0 }
-  const r = coordinatedWave({ batch: Number(argv.find((a) => a.startsWith('--batch='))?.slice(8) ?? 30), dryRun: !argv.includes('--apply') })
+  const cwd = process.cwd()
+  if (argv.includes('watch')) {
+    reorganizeWaveQueueOnDrift({ cwd })
+    process.stderr.write('wave watch — Ctrl+C to stop\n')
+    return 0
+  }
+  if (argv.includes('status') || argv[0] === 'status') {
+    const report = collectWaveStatus(
+      (c) => scanWaveAxisDebt(c).reduce((s, d) => s + d.debt, 0),
+      cwd,
+    )
+    console.log(formatWaveStatus(report))
+    return report.stalledReason && !(report.lock && !report.lockStale) ? 1 : 0
+  }
+  const r = coordinatedWave({
+    cwd,
+    batch: Number(argv.find((a) => a.startsWith('--batch='))?.slice(8) ?? 30),
+    dryRun: !argv.includes('--apply'),
+    force: argv.includes('--force'),
+  })
   console.log(renderWaveReport(r))
   return r.aborted ? 2 : 0
 }

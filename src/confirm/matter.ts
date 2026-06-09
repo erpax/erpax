@@ -12,6 +12,7 @@ import { join, basename, relative } from 'node:path'
 import { execSync } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { GATE_LANES } from '@/cli/gate'
+import { phraseWithoutDiamondChangesetGate } from '@/law/folder/user-word'
 
 const ROOT = process.cwd()
 const SRC = join(ROOT, 'src')
@@ -280,6 +281,7 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     return hook ? 2 : 1
   }
   const skillFiles = files.filter((f) => f.endsWith('SKILL.md'))
+  const phraseGate = phraseWithoutDiamondChangesetGate(files, ROOT)
   const codeChanged = files.some((f) => /\.(ts|tsx|mjs|js)$/.test(f))
   const vp = vitepressConfirm(skillFiles.length ? skillFiles : files, yaml)
   const pay = payloadConfirm(files, codeChanged, hook)
@@ -303,13 +305,17 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     console.log(
       `🟪 folder    ⏏  ${folderWarn.length} non-one-word folder(s) in scope — name every atom ONE generic word (the push gate \`pnpm lint:folders\` + law/folder test FAIL): ${folderWarn.join(', ')}`,
     )
+  if (phraseGate.length) {
+    console.log(`🟥 phrase-without-diamond ✗  ${phraseGate.length} SKILL-only changeset(s) — add index.ts + test.ts in same pass`)
+    for (const v of phraseGate) console.error(`   ${v.atomPath}: ${v.reason}`)
+  }
   console.log(payLine)
   for (const [f, t] of vp.dead) console.error(`   dead link  ${relative(ROOT, f)} → [[${t}]]`)
   for (const [f, m] of vp.bad) console.error(`   frontmatter ${relative(ROOT, f)} → ${m}`)
   for (const f of mdStrays) console.error(`   md stray   ${relative(ROOT, f)} — fold into a SKILL.md atom`)
   if (pay.msg) console.error('   ' + pay.msg)
 
-  const ok = vp.ok && pay.ok && mdStrays.length === 0
+  const ok = vp.ok && pay.ok && mdStrays.length === 0 && phraseGate.length === 0
   console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
   return ok ? 0 : hook ? 2 : 1
 }

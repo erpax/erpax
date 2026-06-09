@@ -1,4 +1,7 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach } from 'vitest'
+import { existsSync, mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { tmpdir } from 'node:os'
 import {
   collapse,
   noCloning,
@@ -18,6 +21,8 @@ import {
   quantumInAllDimensions,
   basis2D,
   cell2DKey,
+  linearGaps,
+  sealLinearGaps,
 } from '@/quantum'
 import { HORO_DIGITS } from '@/horo'
 
@@ -89,6 +94,33 @@ describe('quantum: 2D partition × horo grid — superposition, collapse, seal',
 
   it('quantum2dHolds — the 2D facet closes (Born · collapse · seal)', () => {
     expect(quantum2dHolds()).toBe(true)
+  })
+})
+
+describe('quantum: linear-gap', () => {
+  let cwd: string
+  beforeEach(() => {
+    cwd = mkdtempSync(join(tmpdir(), 'lg-'))
+    mkdirSync(join(cwd, 'src'), { recursive: true })
+  })
+  afterEach(() => rmSync(cwd, { recursive: true, force: true }))
+
+  it('shape — byKind includes all gap kinds', () => {
+    const { byKind } = linearGaps(cwd)
+    expect(byKind).toHaveProperty('harmony-jump')
+    expect(byKind).toHaveProperty('trinity-incomplete')
+    expect(byKind).toHaveProperty('readme-seal-break')
+    expect(byKind).toHaveProperty('orphan-reexport')
+  })
+
+  it('seal — stub-index closes trinity-incomplete gaps', async () => {
+    mkdirSync(join(cwd, 'src/hub/gap'), { recursive: true })
+    writeFileSync(join(cwd, 'src/hub/index.ts'), 'export const x=1\n')
+    writeFileSync(join(cwd, 'src/hub/gap/index.ts'), 'export const y=1\n')
+    const before = linearGaps(cwd).gaps.filter((g) => g.atomPath === 'hub/gap').length
+    await sealLinearGaps(cwd, 5)
+    expect(linearGaps(cwd).gaps.filter((g) => g.atomPath === 'hub/gap').length).toBeLessThan(before)
+    expect(existsSync(join(cwd, 'src/hub/gap/test.ts'))).toBe(true)
   })
 })
 

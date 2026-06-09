@@ -46,7 +46,7 @@ export function readmeAssumptionViolations(readmePath: string, cwd = process.cwd
 }
 
 export function renderReadmeComplete(rendered: string, kind: 'root' | 'folder'): ReadmeCompletenessMatrix {
-  const specs = kind === 'root' ? ROOT_SPECS : ([] as typeof ROOT_SPECS)
+  const specs = kind === 'root' ? ROOT_SPECS : ([] as unknown as typeof ROOT_SPECS)
   const sections = specs.map(([section, marker]) => ({
     section,
     present: rendered.includes(marker),

@@ -108,3 +108,17 @@ export { agentRegistry, agentRuntime } from './bootstrap'
 export { erpaxMcpTools, erpaxMcpResources, erpaxMcpPrompts } from './mcp-surface'
 export { manifestOf, buildBlockCatalog, composeBlocks, validateComposition, chainBlocks, checkRegistryCoupling, chainsAsBlockCompositions } from './blocks'
 export type { AgentBlockManifest } from './blocks'
+
+export {
+  selfImproveCycle,
+  quantumIntelligenceOf,
+  measureIntelligenceAxes,
+  rankGapsByEntanglement,
+  learnSciencesOnTheWay,
+  formatIntelligenceLine,
+  type SelfImproveCycleOpts,
+  type SelfImproveCycleResult,
+  type IntelligenceMeasure,
+  type ScienceStep,
+  type RankedIntelligenceGap,
+} from './intelligence'

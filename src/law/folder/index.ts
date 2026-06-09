@@ -125,6 +125,18 @@ export {
 } from './baseline'
 
 export {
+  userWordUnprovenViolations,
+  proveDiamondOrRevert,
+  proveDiamondOrRevertBatch,
+  phraseWithoutDiamondChangesetGate,
+  AGENT_MINTED_PHRASES,
+  type UserWordUnprovenAudit,
+  type UserWordUnprovenViolation,
+  type PhraseWithoutDiamondGateViolation,
+  type ProveDiamondResult,
+} from './user-word'
+
+export {
   hasWordCode,
   hasWordFolderTrinity,
   wordFolderViolations,

@@ -97,8 +97,42 @@ export {
   quantumFoldOf,
   quantumFoldPresentation,
   uuidFold64,
+  findLinearLogic,
+  foldLinearPair,
+  linearLogicCount,
+  applyLinearFolds,
+  formatLinearFoldReport,
+  runQuantumFoldLinear,
 } from './fold'
-export type { QuantumFoldResult, Partition2d } from './fold'
+export type {
+  QuantumFoldResult,
+  Partition2d,
+  LinearLogicScan,
+  LinearSegment,
+  LinearKind,
+  FoldedLinearPair,
+  ApplyLinearFoldsResult,
+} from './fold'
+
+export {
+  linearGaps,
+  linearGapCount,
+  sealLinearGaps,
+  formatLinearGapReport,
+  runQuantumSeal,
+  entanglementScore,
+  stubSkillMd,
+  stubIndexTs,
+  stubTestTs,
+} from './gap'
+export type {
+  LinearGap,
+  LinearGapKind,
+  LinearGapScan,
+  SealLinearGapsResult,
+  SealHint,
+  SealHintAction,
+} from './gap'
 
 export {
   cell2DKey,
@@ -134,37 +168,6 @@ export {
   type DimensionRealtimeEmitResult,
   type DimensionRealtimeEmitOpts,
 } from './dimension-realtime'
-
-export {
-  linearGaps,
-  linearGapCount,
-  sealLinearGaps,
-  formatLinearGapReport,
-  runQuantumSeal,
-  entanglementScore,
-  stubSkillMd,
-  stubIndexTs,
-  stubTestTs,
-  findLinearLogic,
-  foldLinearPair,
-  linearLogicCount,
-  applyLinearFolds,
-  formatLinearFoldReport,
-  runQuantumFoldLinear,
-} from './fold'
-export type {
-  LinearGap,
-  LinearGapKind,
-  LinearGapScan,
-  SealLinearGapsResult,
-  SealHint,
-  SealHintAction,
-  LinearKind,
-  LinearSegment,
-  FoldedLinearPair,
-  LinearLogicScan,
-  ApplyLinearFoldsResult,
-} from './fold'
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = matrixDigest()

@@ -6,7 +6,7 @@ import {
   bookOfBooksIndexPivotLine,
 } from './index'
 import { formatBookIndexReport, runBookCli } from './cli'
-import { renderBookIndexMarkdown, computeBookIndex } from './compute'
+import { renderBookIndexMarkdown, computeBookIndex } from './compute/index'
 
 describe('book — book-of-books index harmony', () => {
   it('indexVolumes lists top-level volumes excluding vocabulary hub', () => {

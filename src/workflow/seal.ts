@@ -45,7 +45,7 @@ export function sealWorkflow(def: WorkflowSealDefinition, cwd = process.cwd()): 
   const dir = join(cwd, SRC, atomPath)
   const created = !existsSync(dir)
   if (created) mkdirSync(dir, { recursive: true })
-  const contentUuid = computeContentUuid(def, 'workflow/seal')
+  const contentUuid = computeContentUuid(def as unknown as Record<string, unknown>, 'workflow/seal')
   writeFileSync(
     join(dir, 'index.ts'),
     `export const workflowName = ${JSON.stringify(def.name)} as const\nexport const workflowContentUuid = ${JSON.stringify(contentUuid)} as const\nexport const workflowDefinition = ${JSON.stringify(def, null, 2)} as const\n`,

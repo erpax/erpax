@@ -33,6 +33,13 @@ export type HoroStep = (typeof HORO_DIGITS)[number]
 /** Measure names, index-aligned with HORO_DIGITS. */
 export const HORO_MEASURE = ['base', 'share', 'weave', 'crest', 'descent', 'round', 'unity'] as const
 
+/** Horo digit → measure label (null when off-ring). */
+export function horoMeasureOf(digit: number | null): string | null {
+  if (digit === null) return null
+  const i = HORO_DIGITS.indexOf(digit as HoroStep)
+  return i >= 0 ? HORO_MEASURE[i]! : null
+}
+
 const HORO_DIGIT_SET: ReadonlySet<number> = new Set(HORO_DIGITS)
 
 /** Membership check — is `n` a valid horo position (not an off-ring "escape")? */

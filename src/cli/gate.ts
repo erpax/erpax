@@ -3,9 +3,14 @@
  */
 import { spawnSync } from 'node:child_process'
 import { inventoryGateWarnings } from '@/agent/inventory'
+import {
+  formatPackageApprovalMatrix,
+  packageApprovalMatrix,
+  runPackageApprovalCli,
+} from '@/apply/approval'
+import { runPayloadApprovalCli } from '@/payload/approval'
 import { startProgressHeartbeat } from './progress-heartbeat'
 
-/** Label + shell command. Labels are stable for confirm/matter reporting. */
 export const GATE_LANES: readonly (readonly [string, string])[] = [
   ['standards', 'pnpm erpax standards'],
   ['readme:check', 'pnpm erpax readme check'],
@@ -26,10 +31,29 @@ export function runShell(cmd: string, passthrough: readonly string[] = [], heart
   return r.status ?? 1
 }
 
-export function runGate(): number {
-  for (const warn of inventoryGateWarnings()) {
-    console.warn(`⚠ ${warn}`)
+export function runPayloadApproval(): number {
+  return runPayloadApprovalCli()
+}
+
+export function runGatePackages(argv: readonly string[] = process.argv.slice(2)): number {
+  return runPackageApprovalCli(argv)
+}
+
+export { agentWorkApproved, packageApprovalMatrix, formatPackageApprovalMatrix } from '@/apply/approval'
+
+export function runGate(argv: readonly string[] = process.argv.slice(2)): number {
+  if (argv[0] === 'packages') return runGatePackages(argv.slice(1))
+  if (argv[0] === 'payload') return runPayloadApproval()
+
+  console.log('\n▶ gate [0] — package approval matrix (payload commands first)')
+  const packageResult = packageApprovalMatrix({ execute: true, smoke: false })
+  if (!packageResult.approved) {
+    console.error(formatPackageApprovalMatrix(packageResult, 15))
+    return 1
   }
+  console.log('✓ package approval matrix')
+
+  for (const warn of inventoryGateWarnings()) console.warn(`⚠ ${warn}`)
   const total = GATE_LANES.length
   for (let i = 0; i < total; i++) {
     const [label, cmd] = GATE_LANES[i]!
