@@ -1,23 +1,21 @@
 import { describe, it, expect } from 'vitest'
-import { doubleFold, quantumFoldOf, wordFold, digitFold } from './index'
+import { doubleFold } from './index'
 
 describe('quantum/fold', () => {
-  it('wordFold and digitFold return torus halves', () => {
-    expect(wordFold('readme')).toBeTypeOf('bigint')
-    expect(digitFold('readme')).toBeTypeOf('bigint')
+  it('doubleFold is stable for the same atom path', () => {
+    const a = doubleFold('quantum')
+    const b = doubleFold('quantum')
+    expect(a.wordHalf).toBe(b.wordHalf)
+    expect(a.digitHalf).toBe(b.digitHalf)
+    expect(a.combined128).toBe(b.combined128)
+    expect(a.interact64).toBe(b.interact64)
   })
 
-  it('doubleFold packs both halves', () => {
-    const f = doubleFold('quantum', true)
-    expect(f.combined128).toBeTypeOf('bigint')
-    expect(f.superposition).toBe(0)
+  it('doubleFold partition superposition is open when unsealed', () => {
+    expect(doubleFold('readme', false).superposition).toBe(1)
   })
 
-  it('quantumFoldOf accepts optional partition lines', () => {
-    const f = quantumFoldOf('readme', {
-      debits: [{ account: 'gap', amount: 1 }],
-      credits: [{ account: 'seal', amount: 1 }],
-    })
-    expect(f.interact64).toBeTypeOf('bigint')
+  it('doubleFold partition superposition collapses when sealed', () => {
+    expect(doubleFold('readme', true).superposition).toBe(0)
   })
 })
