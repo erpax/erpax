@@ -1,7 +1,7 @@
 /**
  * strict-apply — prove law gates reject violations and allow compliant paths.
  */
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import {
   StrictApplyViolation,
   AGENT_RUNTIME_GRANT,
@@ -24,8 +24,19 @@ import {
   createWaveSession,
   completeWaveHop,
 } from '@/wave'
+import * as skillContextModule from './skill-context'
 
 const TS = '2026-06-08T12:00:00.000Z'
+
+/** Cross-education gate reads rules axes — mock sealed snapshot so effect tests isolate their gate. */
+const SEALED_RULES: skillContextModule.CompactRulesSnapshot = {
+  axes: [],
+  unsealedAxes: 0,
+}
+
+beforeEach(() => {
+  vi.spyOn(skillContextModule, 'compactRulesSnapshot').mockReturnValue(SEALED_RULES)
+})
 
 function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
   return {

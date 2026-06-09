@@ -36,13 +36,9 @@ describe('bootFromFederation (sandbox mode)', () => {
 
   it('refuses to boot when checkCloneIntegrity (Law 24) fails', async () => {
     const pub = publishSelf({ tenantId: 'erpax-self', sourceDid: 'did:erpax:s1', scope: 'genome' })
-    // Tamper the bundle before boot.
-    const tampered = {
-      ...pub,
-      bundle: { ...pub.bundle, agents: [] as typeof pub.bundle.agents },
-    }
     const result = await bootFromFederation({
-      publication: tampered,
+      publication: pub,
+      ingestedBundle: { ...pub.bundle, agents: [] },
       cloneTenantId: 'erpax-self',
       cloneDid: 'did:erpax:clone-2',
       sandbox: true,

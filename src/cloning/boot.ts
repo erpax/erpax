@@ -22,6 +22,7 @@
  */
 
 import { checkCloneIntegrity } from './verify'
+import type { GenomeBundle } from './genome'
 import type { GenomePublication, GenomeScope } from './publish'
 
 export interface BootResult {
@@ -60,6 +61,7 @@ export async function bootFromFederation(args: {
   cloneTenantId: string
   cloneDid: string
   requireScope?: GenomeScope
+  ingestedBundle?: GenomeBundle
   /** Skip the registry mutations — parse + verify only. Used in tests. */
   sandbox?: boolean
   verifySignature?: (pub: GenomePublication) => Promise<boolean>
@@ -86,7 +88,7 @@ export async function bootFromFederation(args: {
   // 3. Conservation Law 24 integrity check
   const integrity = checkCloneIntegrity({
     publication,
-    cloneBundle: publication.bundle,
+    cloneBundle: args.ingestedBundle ?? publication.bundle,
     cloneTenantId,
   })
   if (!integrity.ok) {

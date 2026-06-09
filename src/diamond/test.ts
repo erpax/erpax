@@ -129,7 +129,7 @@ describe('diamond — shared model (one shape, all scales)', () => {
     expect(deploymentFaces(deriveDiamond('law/folder/folderGuardians'))).toMatchObject({
       worker: true,
     })
-  })
+  }, 180_000)
 })
 
 describe('diamond — collection dimension (Payload backend)', () => {

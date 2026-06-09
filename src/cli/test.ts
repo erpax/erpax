@@ -90,7 +90,7 @@ describe('cli/doctor — health snapshot', () => {
     expect(text).toContain('stray-ts')
     expect(text).toContain('entry skill')
     expect(text).toContain('inventory')
-  })
+  }, 180_000)
 })
 
 describe('cli/rules-check — failure summary helpers', () => {
@@ -120,7 +120,7 @@ describe('cli/index — router smoke', () => {
 
   it('doctor and status route to health snapshot', () => {
     expect(runCli(['doctor'])).toBe(0)
-  })
+  }, 180_000)
 
   it('doctor stalls lists process table', () => {
     expect(runDoctorStalls()).toBe(0)

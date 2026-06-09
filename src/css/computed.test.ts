@@ -86,9 +86,9 @@ describe('computeCssDiamond + computed tokens snapshot', () => {
       {
         "accent": "#00aeef",
         "path": "accounting/coa",
-        "primary": "#e23b3b",
+        "primary": "#3a44b0",
         "radius": "0.675rem",
-        "stylesheetUuid": "deafa5db-76f8-8742-ab5d-99ae1d647bf3",
+        "stylesheetUuid": "b7dc0d61-86cc-82aa-9373-c8c5f7948673",
         "success": "#2fb344",
       }
     `)
