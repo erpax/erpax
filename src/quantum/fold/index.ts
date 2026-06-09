@@ -3,7 +3,7 @@
  *
  * Linear logic merged in index — no linear-logic.ts sibling (tamper surface concentrated).
  */
-import { nodeOf, merge, neighborsOf, backlinksOf, UUID_MATRIX_ROOT } from '@/uuid/matrix'
+import { nodeOf, merge } from '@/uuid/matrix'
 import { digitAddress } from '@/digit'
 import { wordTokenUuid } from '@/word'
 import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
@@ -16,11 +16,11 @@ import {
   writeFileSync,
 } from 'node:fs'
 import { join } from 'node:path'
-import { pathToFileURL } from 'node:url'
 import { indexVolumes, sortBookPages } from '@/book'
 import { CODE_MARKERS, TRINITY } from '@/law/folder/constants'
 import { isOrphanReexportOnly, wordWithoutLogicViolations } from '@/rules/word-without-logic'
 import { recordOnPath, recordOnPathMerged } from '@/path'
+import { nodeOf, neighborsOf, backlinksOf, UUID_MATRIX_ROOT } from '@/uuid/matrix'
 
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 
@@ -97,6 +97,25 @@ export function quantumFoldOf(atomPath: string, opts?: QuantumFoldOpts): Quantum
   }
 }
 
+export function quantumFoldPresentation(fold: QuantumFoldResult): {
+  readonly wordFold: string
+  readonly digitFold: string
+  readonly interact64: string
+  readonly combined128: string
+} {
+  const hex = (n: bigint): string => {
+    const v = n & architectureMask()
+    return v === 0n ? '0' : v.toString(16)
+  }
+  return {
+    wordFold: hex(fold.wordHalf),
+    digitFold: hex(fold.digitFold),
+    interact64: hex(fold.interact64),
+    combined128: fold.combined128.toString(16),
+  }
+}
+
+
 export type LinearKind = 'duplicate-helper' | 'hand-array' | 'import-chain' | 'readme-linear'
 
 export interface LinearSegment {
@@ -148,25 +167,6 @@ export function formatLinearFoldReport(scan: LinearLogicScan = findLinearLogic()
 
 export function runQuantumFoldLinear(_cwd = process.cwd()): number {
   return linearLogicCount(_cwd)
-}
-
-export function quantumFoldPresentation(fold: QuantumFoldResult): {
-  readonly wordFold: string
-  readonly digitFold: string
-  readonly interact64: string
-  readonly combined128: string
-} {
-  const hex = (n: bigint): string => {
-    const v = n & architectureMask()
-    return v === 0n ? '0' : v.toString(16)
-  }
-  return {
-    wordFold: hex(fold.wordHalf),
-    digitFold: hex(fold.digitHalf),
-    interact64: hex(fold.interact64),
-    combined128: fold.combined128.toString(16),
-  }
-}
 
 // ── linear gaps (gate axis: linear-gap) ──
 const GAP_SRC = 'src'
@@ -232,7 +232,8 @@ export async function runQuantumSeal(apply = true): Promise<number> {
   return seal.remainder > 0 ? 1 : 0
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]!).href) {
+
+if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
   if (process.argv.includes('--seal')) {
     runQuantumSeal(!process.argv.includes('--dry')).then((c) => process.exit(c))
   } else if (process.argv.includes('--linear')) {

@@ -272,7 +272,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   quantum: {
     default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },
     status: { desc: 'Superposition pending paths, last collapse, bond reciprocity', cmd: `${TSX} src/quantum/status.ts` },
-    seal: { desc: 'Seal linear gaps (entanglement priority)', cmd: `${TSX} src/quantum/gap.ts --seal` },
+    seal: { desc: 'Seal linear gaps (entanglement priority)', cmd: `${TSX} src/quantum/fold/index.ts --seal` },
     fold: {
       desc: 'Fold linear segments into quantum surfaces (--linear · --apply)',
       cmd: `${TSX} src/quantum/fold/index.ts --linear`,

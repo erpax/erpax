@@ -124,7 +124,7 @@ export {
   stubSkillMd,
   stubIndexTs,
   stubTestTs,
-} from './gap'
+} from './fold'
 export type {
   LinearGap,
   LinearGapKind,
@@ -132,7 +132,7 @@ export type {
   SealLinearGapsResult,
   SealHint,
   SealHintAction,
-} from './gap'
+} from './fold'
 
 export {
   cell2DKey,
