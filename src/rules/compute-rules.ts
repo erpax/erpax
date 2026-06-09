@@ -228,6 +228,13 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
       baseline: 0,
       source: '@/readme/assumption-literals',
     },
+    {
+      axis: 'llm-redundancy',
+      violations: llmRedundancyViolations({ cwd }).violationCount,
+      baseline: 0,
+      source: '@/readme/llm',
+      samples: llmRedundancyViolations({ cwd }).violations.slice(0, 5).map((v) => `${v.path} (${v.kind})`),
+    },
   ]
 
   return {
