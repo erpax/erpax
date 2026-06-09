@@ -28,6 +28,11 @@ export const RATCHET_AXES: readonly RatchetAxis[] = [
   'word-without-code',
   'word-without-logic',
   'word-incomplete-diamond',
+  'phrase-without-diamond',
+  'index-cross',
+  'linear-logic',
+  'linear-gap',
+  'hand-maintained',
   'matrix-crack',
 ] as const
 
@@ -47,6 +52,11 @@ export const AXIS_HORO: Readonly<Record<RatchetAxis, HoroStep>> = {
   'word-without-code': 2,
   'word-without-logic': 2,
   'word-incomplete-diamond': 1,
+  'phrase-without-diamond': 1,
+  'index-cross': 2,
+  'linear-logic': 4,
+  'linear-gap': 4,
+  'hand-maintained': 1,
   'matrix-crack': 8,
 }
 

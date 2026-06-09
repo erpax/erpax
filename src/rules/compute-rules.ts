@@ -24,7 +24,7 @@ import { wordWithoutLogicViolations, type WordWithoutLogicAudit } from './word-w
 import { userWordUnprovenViolations } from '@/law/folder/user-word'
 import { indexCrossViolationCount } from '@/law/folder/index-cross'
 import { linearLogicCount } from '@/quantum/fold'
-import { linearGapCount } from '@/quantum'
+import { linearGapCount, linearGaps } from '@/quantum'
 import { handMaintainedViolations } from '@/readme/hand-maintained'
 import {
   listAtomPaths,

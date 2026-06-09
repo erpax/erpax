@@ -16,20 +16,27 @@ import { wordWithoutLogicViolations } from '@/rules/word-without-logic'
 import { nonIndexImports } from '@/tamper/import'
 import { matrixCrackViolations } from '@/matrix'
 import { wordFolderViolations, wordDiamondViolations } from './word'
+import { userWordUnprovenViolations } from './user-word'
+import { indexCrossViolationCount } from './index-cross'
+import { linearLogicCount, linearGapCount } from '@/quantum'
+import { handMaintainedViolations } from '@/readme/hand-maintained'
 import type { RatchetAxis } from './baseline-types'
 import { RATCHET_AXES } from './ratchet-math'
 
-/** Axes wired through leaf scan imports (scan · tightened-scans · tamper/import · word/links). */
 export const PARALLEL_SCAN_AXES = RATCHET_AXES.filter(
   (axis): axis is RatchetAxis =>
     axis !== 'word-matter' &&
     axis !== 'matrix-crack' &&
     axis !== 'logic-concentration' &&
     axis !== 'word-without-code' &&
-    axis !== 'word-without-logic',
+    axis !== 'word-without-logic' &&
+    axis !== 'phrase-without-diamond' &&
+    axis !== 'hand-maintained' &&
+    axis !== 'index-cross' &&
+    axis !== 'linear-logic' &&
+    axis !== 'linear-gap',
 )
 
-/** Scan live corpus — one count per gate axis. */
 export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Record<RatchetAxis, number>> {
   const folder = folderViolations(join(cwd, 'src'))
   const wordFolder = wordFolderViolations(cwd)
@@ -56,6 +63,11 @@ export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Recor
     'word-without-code': wordFolder.violationCount,
     'word-without-logic': wordWithoutLogicViolations(cwd).violationCount,
     'word-incomplete-diamond': wordDiamond.uselessWords,
+    'phrase-without-diamond': userWordUnprovenViolations(cwd).violationCount,
+    'index-cross': indexCrossViolationCount(undefined, cwd),
+    'linear-logic': linearLogicCount(cwd),
+    'linear-gap': linearGapCount(cwd),
+    'hand-maintained': handMaintainedViolations({ cwd }).violationCount,
     'matrix-crack': matrixCrackViolations(cwd).length,
   }
 

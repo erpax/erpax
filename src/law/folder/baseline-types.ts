@@ -14,6 +14,11 @@ export type RatchetAxis =
   | 'word-without-code'
   | 'word-without-logic'
   | 'word-incomplete-diamond'
+  | 'phrase-without-diamond'
+  | 'index-cross'
+  | 'linear-logic'
+  | 'linear-gap'
+  | 'hand-maintained'
   | 'matrix-crack'
 
 /** Legacy ALCAP export name → ratchet axis (for seal-debt audit). */
@@ -31,6 +36,11 @@ export const BASELINE_CONST_TO_AXIS: Readonly<Record<string, RatchetAxis>> = {
   WORD_WITHOUT_CODE_BASELINE: 'word-without-code',
   WORD_WITHOUT_LOGIC_BASELINE: 'word-without-logic',
   WORD_INCOMPLETE_DIAMOND_BASELINE: 'word-incomplete-diamond',
+  PHRASE_WITHOUT_DIAMOND_BASELINE: 'phrase-without-diamond',
+  INDEX_CROSS_BASELINE: 'index-cross',
+  LINEAR_LOGIC_BASELINE: 'linear-logic',
+  LINEAR_GAP_BASELINE: 'linear-gap',
+  HAND_MAINTAINED_BASELINE: 'hand-maintained',
 }
 
 export interface RatchetSnapshot {

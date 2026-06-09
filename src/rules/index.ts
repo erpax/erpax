@@ -17,6 +17,7 @@ import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
 import { matrixCrackViolations } from '@/matrix'
+import { linearGapCount, linearLogicCount } from '@/quantum'
 import { computeRulesOf, type RulesSnapshot } from './compute-rules'
 
 export {
@@ -166,6 +167,18 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   const waveGapSeal = seal([
     guardian({ axis: 'accounting-wave', violations: waveGaps.count, baseline: 0 }),
   ])
+  const provenSeal = seal([
+    guardian({
+      axis: 'linear-gap',
+      violations: linearGapCount(cwd),
+      baseline: computedBaseline('linear-gap', cwd),
+    }),
+    guardian({
+      axis: 'linear-logic',
+      violations: linearLogicCount(cwd),
+      baseline: computedBaseline('linear-logic', cwd),
+    }),
+  ])
   const combined = seal([
     ...folderSeal.guardians,
     ...tightenedSeal.guardians,
@@ -174,6 +187,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     ...crackSeal.guardians,
     ...bypassSeal.guardians,
     ...waveGapSeal.guardians,
+    ...provenSeal.guardians,
   ])
   return { ...combined, snapshot }
 }

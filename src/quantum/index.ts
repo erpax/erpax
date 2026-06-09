@@ -135,14 +135,45 @@ export {
   type DimensionRealtimeEmitOpts,
 } from './dimension-realtime'
 
+export {
+  linearGaps,
+  linearGapCount,
+  sealLinearGaps,
+  formatLinearGapReport,
+  runQuantumSeal,
+  entanglementScore,
+  stubSkillMd,
+  stubIndexTs,
+  stubTestTs,
+  findLinearLogic,
+  foldLinearPair,
+  linearLogicCount,
+  applyLinearFolds,
+  formatLinearFoldReport,
+  runQuantumFoldLinear,
+} from './fold'
+export type {
+  LinearGap,
+  LinearGapKind,
+  LinearGapScan,
+  SealLinearGapsResult,
+  SealHint,
+  SealHintAction,
+  LinearKind,
+  LinearSegment,
+  FoldedLinearPair,
+  LinearLogicScan,
+  ApplyLinearFoldsResult,
+} from './fold'
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = matrixDigest()
   const ent = entanglement()
   const nc = noCloning()
-  const q = quantization()
+  const qt = quantization()
   console.log('quantum (' + d.nodes + ' nodes):')
   console.log('  entanglement: symmetric-binding=' + ent.symmetricBinding + '  reciprocal ' + ent.reciprocal + '/' + ent.edges + ' (' + ((100 * ent.reciprocal) / ent.edges).toFixed(1) + '%)')
-  console.log('  collapse=' + collapse() + '  no-cloning=' + nc.holds + ' (' + nc.unique + '/' + nc.total + ')  quantization=' + q.cells + '/81 cells, off-seq ' + q.offSequence)
+  console.log('  collapse=' + collapse() + '  no-cloning=' + nc.holds + ' (' + nc.unique + '/' + nc.total + ')  quantization=' + qt.cells + '/81 cells, off-seq ' + qt.offSequence)
   console.log('  double-torus: 2×' + TORUS_BITS + 'b=' + DOUBLE_TORUS_BITS + 'b · single floor 2^' + singleTorusFloorLog2().toFixed(1) + ' · no-gap cost ' + (doubleTorusCostLog2(0) === Infinity ? '∞' : doubleTorusCostLog2(0).toFixed(1)))
 }
+

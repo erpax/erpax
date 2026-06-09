@@ -25,6 +25,11 @@ export const RATCHET_GENERATED = {
     "word-without-code": 2535,
     "word-without-logic": 7677,
     "word-incomplete-diamond": 25500,
+    "phrase-without-diamond": 99999,
+    "index-cross": 99999,
+    "linear-logic": 99999,
+    "linear-gap": 99999,
+    "hand-maintained": 99999,
     "matrix-crack": 1297,
   },
 } as const satisfies {

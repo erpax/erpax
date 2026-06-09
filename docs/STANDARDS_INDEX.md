@@ -5959,6 +5959,7 @@ src/quantum/fs/index.ts:9: * @audit content-address from @/integrity; never hand
 src/quantum/generator/index.ts:9: * @audit manifest uuid from live matrix toUuid; never hand-pinned
 src/quantum/gravity/index.ts:19: * @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
 src/quantum/import/index.ts:9: * @audit re-exports boundary organ; computed live, never authored
+src/quantum/index.ts:18: * @audit computed from the live matrix, never hand-asserted
 src/quantum/karma/index.ts:13: * @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 src/quantum/law/index.ts:15: * @audit the law-suffix is read from each SKILL.md ending, never asserted
 src/quantum/literature/index.ts:9: * @audit text uuid from @/integrity; never hand-pinned canon
