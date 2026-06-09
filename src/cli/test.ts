@@ -132,6 +132,11 @@ describe('cli/index — router smoke', () => {
     expect(resolveAction('agent', 'inventory')?.cmd).toMatch(/agent\/inventory\/cli/)
     expect(resolveAction('monitor', 'inventory')?.cmd).toMatch(/agent\/inventory\/monitor/)
   })
+
+  it('corpus book resolves to cli with --index flag support', () => {
+    expect(resolveAction('corpus', 'book')?.cmd).toMatch(/src\/book\/cli\.ts/)
+    expect(resolveAction('corpus', 'book')?.desc).toContain('--index')
+  })
 })
 
 describe('package.json — minimal scripts', () => {

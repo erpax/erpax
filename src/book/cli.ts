@@ -3,7 +3,6 @@
  * `pnpm erpax corpus book --index` — book-of-books index harmony report.
  */
 import { execSync } from 'node:child_process'
-import { formatBookTerminal, bookOf } from './matter'
 import { harmonyOfBookIndex, normalizePath } from './index'
 
 export function formatBookIndexReport(cwd: string = process.cwd()): string {
@@ -40,12 +39,13 @@ function parseArgs(argv: readonly string[]): { path: string; open: boolean; inde
   return { path: normalizePath(positional[0] ?? 'medical/clinic'), open, index }
 }
 
-export function runBookCli(argv: readonly string[] = process.argv.slice(2)): number {
+export async function runBookCli(argv: readonly string[] = process.argv.slice(2)): Promise<number> {
   const { path, open, index } = parseArgs(argv)
   if (index) {
     console.log(formatBookIndexReport())
     return 0
   }
+  const { formatBookTerminal, bookOf } = await import('./matter')
   console.log(formatBookTerminal(path))
   const hub = path.includes('/') ? path.split('/')[0]! : path
   const summary = bookOf(hub)
@@ -62,5 +62,5 @@ export function runBookCli(argv: readonly string[] = process.argv.slice(2)): num
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  process.exit(runBookCli())
+  runBookCli().then((code) => process.exit(code))
 }
