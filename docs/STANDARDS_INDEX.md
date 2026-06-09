@@ -2025,8 +2025,8 @@ src/payable/index.ts:6: * @standard ISO-8601-1:2019 date-time
 src/payable/workflow.service.ts:8: * @standard EN-16931:2017 invoice-lifecycle
 src/payload.config.api.test.ts:10: * @standard OpenAPI 3.1 api-description
 src/payload.config.api.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.multi-tenant-admin.test.ts:10: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
+src/payload.config.multi-tenant-admin.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
+src/payload.config.multi-tenant-admin.test.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -3871,8 +3871,8 @@ src/pages/index.ts:31: * @compliance WCAG-2.1 level-AA accessibility
 src/pagination/index.tsx:9: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/party/workflow.service.ts:9: * @compliance SOX §404 internal-controls
 src/payable/workflow.service.ts:13: * @compliance SOX §404 internal-controls
-src/payload.config.multi-tenant-admin.test.ts:15: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/payload.config.multi-tenant-admin.test.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
+src/payload.config.multi-tenant-admin.test.ts:12: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/payload.config.multi-tenant-admin.test.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
 src/payload.config.tenant.test.ts:7: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/payload.config.tenant.test.ts:8: * @compliance SOC-2 CC6.1 logical-access-controls
 src/payment/methods/hooks/encryptSensitiveFields.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data
@@ -5119,9 +5119,8 @@ src/pages/access/superAdminOrTenantAdmin.ts:8: * @security ISO-27002 §5.15 acce
 src/pages/hooks/beforeChange.ts:9: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/party/workflow.service.ts:8: * @security ISO-27002 §5.4 segregation-of-duties
 src/payable/workflow.service.ts:12: * @security ISO-27002 §5.4 segregation-of-duties three-way-match
-src/payload.config.multi-tenant-admin.test.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/payload.config.multi-tenant-admin.test.ts:13: * @security ISO-27002 §5.15 access-control
-src/payload.config.multi-tenant-admin.test.ts:14: * @security ISO-27002 §8.3 information-access-restriction
+src/payload.config.multi-tenant-admin.test.ts:10: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/payload.config.multi-tenant-admin.test.ts:11: * @security ISO-27002 §5.15 access-control
 src/payload.config.tenant.test.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/payload.config.tenant.test.ts:6: * @security ISO-27002 §5.15 access-control
 src/payload/sdk/index.ts:9: * @security ISO-27002 §8.5 secure-authentication
@@ -5909,7 +5908,7 @@ src/path/index.ts:11: * @audit paths computed deterministically; never hand-mapp
 src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow.service.ts:11: * @audit ISO-19011:2018 audit-trail state-transitions
-src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
+src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:538:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:558:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/payload.config.ts:576:       * @audit ISO-19011:2018 §6.4 audit-evidence
