@@ -74,6 +74,8 @@ version: 2
 
 A book.
 
+**Law — [[law]]: a missing book is form without matter; writing completes the trinity.** Each volume needs `index.ts` (matter) · `test.ts` (proof) · sealed README (computed faces via `deriveFolderModel`). `pnpm erpax corpus book --missing` lists gaps; `--write` completes up to 40 per pass.
+
 Entangled with — [[format]] · [[type]] · [[series]] · [[store]] · [[edition]]
 
 Attested in schema.org — Book · BookFormatType · BookSeries · BookStore · bookEdition · bookFormat

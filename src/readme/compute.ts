@@ -18,7 +18,7 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, horoMeasureOf } from '@/horo'
+import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -56,7 +56,6 @@ import {
   pivotFolderStats,
   pivotSingleFolder,
   renderPivotTable,
-  renderPivotMarkdown,
   type HoroPivotRow,
   type ControlAxisFacet,
 } from '@/pivot'
@@ -375,8 +374,6 @@ export function renderReadme(
       ? ['', '### cross-tab state', '', renderPivotMarkdown(pivotFolderStats(models)), '']
       : []),
     '',
-    renderCorpusBookPivot(model.atoms),
-    '',
     renderGithubBrowseNote(),
     '',
     '## corpus analytics',
@@ -494,12 +491,6 @@ export interface FolderReadmeModel {
   readonly statement: FolderAccounting
   readonly entropy: FolderEntropyAccounting
   readonly quantumThinking: QuantumThinkingBlock
-}
-
-const measureOf = (digit: number | null): string | null => {
-  if (digit === null) return null
-  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
-  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
 }
 
 const foldedPathSet = (): Set<string> => {
@@ -1432,8 +1423,7 @@ export function renderFolderReadme(model: FolderReadmeModel): string {
     '',
     `# ${model.leaf}`,
     '',
-    `> ${pathExplain(model.atomPath).openingLine}`,
-    `> horo \`${model.horo ?? '—'}\` \`${model.measure ?? '—'}\` · [[balance]] \`${statement.balanced ? 1 : 0}\` · [[seal]] \`${model.sealed ? 1 : 0}\``,
+    `> atom \`${model.atomPath}\` · horo \`${model.horo ?? '—'}\` \`${model.measure ?? '—'}\` · [[balance]] \`${statement.balanced ? 1 : 0}\` · [[seal]] \`${model.sealed ? 1 : 0}\``,
     '',
     renderThisPageSection(model),
     '## [[debit]] · [[credit]]',
