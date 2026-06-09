@@ -170,21 +170,17 @@ describe('readme — the README is a diamond', () => {
     expect(cloudflareDeployButtonMarkdown()).toContain(encodeURIComponent(CLOUDFLARE_DEPLOY_REPO_URL))
   })
 
-  it('TYPOGRAPHY = the diamond: horo ring facets live under [[pivot]] in measure-walk order', () => {
+  it('TYPOGRAPHY = the diamond: facets are the closed horo ring in measure-walk order', () => {
     const md = renderReadme(FIXED)
-    const pivot = md.indexOf('## [[pivot]]')
-    expect(pivot).toBeGreaterThan(-1)
-    expect(md).not.toContain('## the horo ring')
-    expect(md).not.toContain('## the trinity')
-    const ringHeader = md.indexOf('| digit | measure | atoms | principal facets |', pivot)
-    expect(ringHeader).toBeGreaterThan(pivot)
+    // Every measure name appears as a facet row, in order, after the ring header.
+    const ringHeader = md.indexOf('| digit | measure | atoms | principal facets |')
+    expect(ringHeader).toBeGreaterThan(-1)
     let cursor = ringHeader
     for (let i = 0; i < HORO_MEASURE.length; i++) {
       const row = md.indexOf(`| ${HORO_DIGITS[i]} | ${HORO_MEASURE[i]} |`, cursor)
       expect(row).toBeGreaterThan(cursor)
       cursor = row
     }
-    expect(md.indexOf('### the trinity — every atom told three ways', pivot)).toBeGreaterThan(pivot)
   })
 
   it('deriveModel reads the LIVE tree: a complete, sane projection', () => {

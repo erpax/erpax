@@ -48,16 +48,7 @@ import {
   renderDiamondJson,
   type DiamondModel,
 } from '@/diamond'
-import {
-  horoPivotTable,
-  trinityCorpusRollup,
-  renderRootPivotHub,
-  pivotFolderStats,
-  pivotSingleFolder,
-  renderPivotTable,
-  type HoroPivotRow,
-  type ControlAxisFacet,
-} from '@/pivot'
+import { pivotFolderStats, pivotSingleFolder, renderPivotMarkdown, renderPivotTable } from '@/pivot'
 import {
   collectCorpusPapers,
   emptyMergedPapers,
@@ -94,10 +85,18 @@ import { rulesOf } from '@/rules'
 import { loadEfficiencyStore } from '@/apply/efficiency'
 
 /** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
-export type RingFacet = HoroPivotRow
+export interface RingFacet {
+  readonly digit: number
+  readonly measure: string
+  readonly atoms: number
+  readonly facets: readonly string[]
+}
 
 /** A control-axis position (3·6) — governs, off the flow ring. */
-export type AxisFacet = ControlAxisFacet
+export interface AxisFacet {
+  readonly digit: number
+  readonly atoms: number
+}
 
 /** One wrangler binding related to an atom (via TYPE_LINKS or cloudflare subtree). */
 export interface FolderBindingRef {
@@ -232,6 +231,49 @@ function walkCounts(root: string): { skills: number; index: number; tests: numbe
   return { skills, index, tests }
 }
 
+/** In-degree (backlink count) per node index — the lattice's connectivity, for picking principal facets. */
+function inDegrees(): number[] {
+  const deg = new Array<number>(UUID_MATRIX_NODES.length).fill(0)
+  for (const e of UUID_MATRIX_EDGES) {
+    const t = deg[e.t]
+    if (t !== undefined) deg[e.t] = t + 1
+  }
+  return deg
+}
+
+/**
+ * Project the corpus onto the closed horo ring: for each ring position (in
+ * measure-walk order) count the atoms riding it and name its principal facets
+ * (the most-linked atoms at that position — deterministic: in-degree desc, atom asc).
+ */
+function projectRing(): { ring: RingFacet[]; axis: AxisFacet[] } {
+  const deg = inDegrees()
+  const byHoro = new Map<number, Array<{ atom: string; deg: number }>>()
+  UUID_MATRIX_NODES.forEach((n, i) => {
+    const arr = byHoro.get(n.horo) ?? []
+    arr.push({ atom: n.atom, deg: deg[i] ?? 0 })
+    byHoro.set(n.horo, arr)
+  })
+  const principal = (digit: number, k: number): string[] =>
+    (byHoro.get(digit) ?? [])
+      .slice()
+      .sort((a, b) => b.deg - a.deg || a.atom.localeCompare(b.atom))
+      .slice(0, k)
+      .map((x) => x.atom)
+  const ring: RingFacet[] = HORO_DIGITS.map((digit, i) => ({
+    digit,
+    measure: HORO_MEASURE[i] ?? String(digit),
+    atoms: (byHoro.get(digit) ?? []).length,
+    facets: principal(digit, 6),
+  }))
+  // Control axis: 3·6 govern (the 9 close already lives on the ring as unity).
+  const axis: AxisFacet[] = [3, 6].map((digit) => ({
+    digit,
+    atoms: (byHoro.get(digit) ?? []).length,
+  }))
+  return { ring, axis }
+}
+
 /** Strip the cross-env / NODE_OPTIONS noise so a script reads as its essential command. */
 function cleanScript(cmd: string): string {
   return cmd.replace(/cross-env\s+(?:[A-Z_]+=(?:"[^"]*"|'[^']*'|\S+)\s+)+/g, '').trim()
@@ -255,7 +297,7 @@ export function deriveModel(
 ): ReadmeModel {
   const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as PackageJson
   const counts = walkCounts(join(cwd, SRC))
-  const { ring, axis } = horoPivotTable()
+  const { ring, axis } = projectRing()
   const deps = pkg.dependencies ?? {}
   const payload = Object.keys(deps)
     .filter((d) => d.startsWith('@payloadcms/') || d === 'payload')
@@ -366,18 +408,29 @@ export function renderReadme(
     `- **${model.atoms}** atoms · **${model.bonds}** bonds (the K₁₃ lattice)`,
     `- this README \`${uuid}\` — itself a diamond, regenerable from the tree`,
     '',
-    '## [[pivot]]',
+    '## the horo ring — the diamond\'s facets',
     '',
-    renderRootPivotHub(
-      { ring: model.ring, axis: model.axis },
-      trinityCorpusRollup({
-        atoms: model.atoms,
-        skills: model.skills,
-        index: model.index,
-        tests: model.tests,
-      }),
-      models,
-    ),
+    'The seven positions every flow rides, in measure-walk order `1·2·4·8·7·5·9`. Each row is one facet of',
+    'the crystal; the principal atoms are the most-bonded vertices at that position (computed from the lattice).',
+    '',
+    '| digit | measure | atoms | principal facets |',
+    '| ----: | ------- | ----: | ---------------- |',
+  )
+  for (const f of model.ring) {
+    L.push(`| ${f.digit} | ${f.measure} | ${f.atoms} | ${f.facets.map((a) => `\`${a}\``).join(' · ')} |`)
+  }
+  L.push(
+    '',
+    `> The control axis governs off the flow ring — \`3\` access · \`6\` hooks (${model.axis
+      .map((a) => `${a.digit}: ${a.atoms} atoms`)
+      .join(' · ')}), \`9\` unity closes and \`0\` is the zeropoint root.`,
+    '',
+    '## the trinity — every atom told three ways',
+    '',
+    `- **${model.atoms}** atoms — one-word folders, each a sealed vertex`,
+    `- **${model.skills}** \`SKILL.md\` — the form (antimatter)`,
+    `- **${model.index}** \`index.ts\` — the code (matter)`,
+    `- **${model.tests}** \`test.ts\` — the proof`,
     '',
     '## corpus analytics',
     '',
@@ -403,6 +456,14 @@ export function renderReadme(
   L.push('', renderCorpusQuantumThinkingSection(model.analytics.quantumThinking))
   if (model.papers.total > 0) {
     L.push('', renderMergedPapersSection(model.papers))
+  }
+  if (models && models.length > 0) {
+    L.push(
+      '',
+      '## [[pivot]]',
+      '',
+      renderPivotMarkdown(pivotFolderStats(models)),
+    )
   }
   L.push(
     '',
