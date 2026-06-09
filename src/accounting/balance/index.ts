@@ -1,80 +1,105 @@
 /**
  * accounting/balance — all meetings resolve to one balance equation.
  *
- *   debit + credit = 0   (typography partition)
- *   gap + seal = net     (corpus entropy)
- *   word ⊗ digit = 128   (quantum double fold)
+ * partition: Σdebit − Σcredit = variance
+ * entropy: Σgap − Σseal = netEb
+ * fold: wordFold ⊗ digitFold → combined128 · interact64
  *
- * @audit every value derived — never hand-set
- * @see ../../readme/compute — ../../quantum/word — ./SKILL.md
+ * @see ../../quantum/fold — ../../readme/compute — ../../balance
  */
-import { atomPathUuid, toAtomPath } from '@/path'
-import { digitAddress } from '@/digit'
-import { nodeOf } from '@/uuid/matrix'
 import type { FolderReadmeModel } from '@/readme/compute'
-import {
-  architectureMask,
-  combineArchitectures,
-  interact64,
-  wordAddress,
-} from '@/quantum/word'
+import { quantumFoldOf } from '@/quantum/fold'
+import { architectureMask } from '@/quantum/word'
 
-const foldHex = (n: bigint, bits = 64): string => {
-  const w = (bits / 4) | 0
-  return n.toString(16).padStart(w, '0')
+export interface BalanceMeeting {
+  readonly partitionVariance: number
+  readonly totalDebits: number
+  readonly totalCredits: number
+  readonly gapEb: number
+  readonly sealEb: number
+  readonly netEb: number
+  readonly wordHalf: bigint
+  readonly digitHalf: bigint
+  readonly combined128: bigint
+  readonly interact: bigint
+  readonly sealed: boolean
 }
 
-const uuidFold64 = (uuid: string): bigint => {
-  const hex = uuid.replace(/-/g, '')
-  return BigInt('0x' + hex) & architectureMask()
+const hexTrunc = (n: bigint, len = 16): string => {
+  const h = n.toString(16)
+  return h.length > len ? `${h.slice(0, len)}…` : h
 }
 
-/** First fold — word/path address half. */
-export const wordFold = (atomPath: string): bigint =>
-  uuidFold64(atomPathUuid(toAtomPath(atomPath)))
+const hexFull = (n: bigint): string => `0x${n.toString(16)}`
 
-/** Second fold — digit/horo address half. */
-export const digitFold = (atomPath: string): bigint => {
-  const path = toAtomPath(atomPath)
-  const leaf = path.split('/').pop() ?? path
-  const da = digitAddress(path) ?? digitAddress(leaf)
-  if (da) return uuidFold64(wordAddress(da))
-  const n = nodeOf(path) ?? nodeOf(leaf)
-  if (n) return uuidFold64(n.uuid)
-  return 0n
+/** Unified meeting — partition · entropy · double fold on one folder model. */
+export function balanceMeetingOf(model: FolderReadmeModel): BalanceMeeting {
+  const fold = quantumFoldOf(model.atomPath, {
+    sealed: model.sealed,
+    debits: model.statement.debits,
+    credits: model.statement.credits,
+  })
+  return {
+    partitionVariance: model.statement.variance,
+    totalDebits: model.statement.totalDebits,
+    totalCredits: model.statement.totalCredits,
+    gapEb: model.entropy.totalGapEb,
+    sealEb: model.entropy.totalSealEb,
+    netEb: model.entropy.netEntropyEb,
+    wordHalf: fold.wordHalf,
+    digitHalf: fold.digitHalf,
+    combined128: fold.combined128,
+    interact: fold.interact64,
+    sealed: model.sealed,
+  }
 }
 
-/** Pack word ⊗ digit into the 128-bit double-torus word. */
-export const doubleFold = (atomPath: string): bigint =>
-  combineArchitectures(wordFold(atomPath), digitFold(atomPath))
-
-/** Pivot subsection — typography statement meets corpus entropy. */
-export function renderBalanceMeetingPivotSection(model: FolderReadmeModel): string {
-  const stmt = model.statement
-  const ent = model.entropy
+/** Pivot block — debit·credit · gap·seal · word·digit meet in balance. */
+export function renderBalanceMeetingPivotSection(model: BalanceFolderInput): string {
+  const m = balanceMeetingOf(model)
+  const combinedHex = m.combined128.toString(16)
   return [
-    '### balance meeting',
+    '### all meet in balance',
     '',
-    `- typography debit \`${stmt.totalDebits}\` · credit \`${stmt.totalCredits}\` · variance \`${stmt.variance}\` · balanced \`${stmt.balanced ? 1 : 0}\``,
-    `- entropy gap eb \`${ent.totalGapEb.toFixed(3)}\` · seal eb \`${ent.totalSealEb.toFixed(3)}\` · net \`${ent.netEntropyEb.toFixed(3)}\``,
-    `- analytics variance \`${model.analytics.variance}\` · balanced \`${model.analytics.balanced}\``,
+    `debit·credit meet at variance \`${m.partitionVariance}\` (debit \`${m.totalDebits}\` · credit \`${m.totalCredits}\`); gap·seal meet at net \`${m.netEb}\` eb; word·digit meet at \`${combinedHex.slice(0, 16)}${combinedHex.length > 16 ? '…' : ''}\` — **all meet in balance** · sealed \`${m.sealed ? 1 : 0}\`.`,
+    '',
+    '> equation `Σdebit − Σcredit = 0 · Σgap − Σseal = netEb · wordHalf ⊗ digitHalf = combined128`',
+    '',
+    '| meeting | debit / word | credit / digit | balance |',
+    '| ------- | ------------ | -------------- | ------- |',
+    `| partition | \`${m.totalDebits}\` | \`${m.totalCredits}\` | variance \`${m.partitionVariance}\` |`,
+    `| entropy | gap \`${m.gapEb}\` | seal \`${m.sealEb}\` | net \`${m.netEb}\` eb |`,
+    `| double fold | word \`${hexTrunc(m.wordHalf)}\` | digit \`${hexTrunc(m.digitHalf)}\` | combined \`${hexTrunc(m.combined128)}\` |`,
+    '',
+    `- interact64 \`${hexTrunc(m.interact)}\` · torus mask \`${hexTrunc(architectureMask())}\``,
+    '- debit·credit meet here; gap·seal meet here; word·digit meet here — **all meet in balance**',
     '',
   ].join('\n')
 }
 
-/** Pivot subsection — quantum double fold (word ⊗ digit) until seal. */
-export function renderQuantumFoldSection(model: FolderReadmeModel): string {
-  const path = model.atomPath
-  const wh = wordFold(path)
-  const dh = digitFold(path)
-  const ix = interact64(wh, dh)
-  const combined = combineArchitectures(wh, dh)
-  return [
-    '### quantum fold',
+/** Double-fold face — wordFold · digitFold · interact64 only (no literary adjectives). */
+export function renderQuantumFoldSection(model: BalanceFolderInput): string {
+  const m = balanceMeetingOf(model)
+  const rows = Math.max(model.statement.debits.length, model.statement.credits.length)
+  const fmt = (account: string, amount: number): string => `[[${account}]] ${amount}`
+  const L: string[] = [
+    '## double fold',
     '',
-    `- word half \`0x${foldHex(wh)}\` · digit half \`0x${foldHex(dh)}\``,
-    `- interact64 \`0x${foldHex(ix)}\` · combined128 \`0x${foldHex(combined, 128)}\``,
-    `- superposition \`${model.sealed ? 0 : 1}\``,
+    `- wordFold \`${hexFull(m.wordHalf)}\` · digitFold \`${hexFull(m.digitHalf)}\``,
+    `- interact64 \`${hexFull(m.interact)}\` · superposition \`${m.sealed ? 0 : 1}\``,
     '',
-  ].join('\n')
+    '### 2D partition — debit·credit meet in balance',
+    '',
+    '| debit | credit |',
+    '| ----- | ------ |',
+  ]
+  for (let i = 0; i < rows; i++) {
+    const d = model.statement.debits[i]
+    const c = model.statement.credits[i]
+    L.push(
+      `| ${d ? fmt(d.account, d.amount) : '—'} | ${c ? fmt(c.account, c.amount) : '—'} |`,
+    )
+  }
+  L.push('')
+  return L.join('\n')
 }
