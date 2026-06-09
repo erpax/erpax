@@ -1,16 +1,10 @@
 /**
  * quantum/fold — word ⊗ digit double fold (64-bit torus halves → 128-bit combined).
- *
- * @see ../word — ../../digit — ./SKILL.md
  */
 import { nodeOf, merge } from '@/uuid/matrix'
 import { digitAddress } from '@/digit'
 import { wordTokenUuid } from '@/word'
-import {
-  interact64,
-  combineArchitectures,
-  architectureMask,
-} from '@/quantum/word'
+import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
 
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 
@@ -38,11 +32,6 @@ export interface QuantumFoldResult {
   readonly digitAddress: string | null
   readonly architectureBond: string
   readonly superposition: 0 | 1
-}
-
-export interface Partition2d {
-  readonly debitSum: number
-  readonly creditSum: number
 }
 
 const architectureBond = (): string => {
