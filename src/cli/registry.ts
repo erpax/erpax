@@ -208,7 +208,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     default: { desc: 'Full CI gate (standards · lint · typecheck · test)', cmd: '__gate__' },
   },
   doctor: {
-    default: { desc: 'Quick health: stray-ts, efficiency, entry skill', cmd: '__doctor__' },
+    default: { desc: 'Quick health: stray-ts, efficiency, corpus entry', cmd: '__doctor__' },
   },
   quantum: {
     default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },

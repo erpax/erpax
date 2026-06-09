@@ -81,14 +81,15 @@ describe('cli/help — grouped help + nearest match', () => {
 })
 
 describe('cli/doctor — health snapshot', () => {
-  it('collects stray-ts, efficiency, and entry skill', () => {
+  it('collects stray-ts, efficiency, and corpus entry', () => {
     const report = collectDoctorReport(ROOT)
     expect(report.strayTs.baseline).toBeGreaterThan(0)
     expect(report.entrySkill.path).toBe('.claude/skills/SKILL.md')
     expect(report.entrySkill.exists).toBe(true)
     const text = formatDoctorReport(report)
     expect(text).toContain('stray-ts')
-    expect(text).toContain('entry skill')
+    expect(text).toContain('corpus entry')
+    expect(text).not.toContain('entry skill')
     expect(text).toContain('inventory')
   }, 180_000)
 })

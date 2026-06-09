@@ -1,12 +1,14 @@
-# erpax — universal agent entry
+# erpax — orient here
 
-**Pasting `https://github.com/erpax/erpax` is sufficient.** Every agent surface in this repository points to one entry file — read it first before any task.
+**Paste `https://github.com/erpax/erpax` or clone — both load [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md) first.**
 
-## Human onboarding (3 steps)
+## Orient to erpax
 
-1. **Clone** — `git clone https://github.com/erpax/erpax && cd erpax`
+1. **Paste or clone** — `git clone https://github.com/erpax/erpax && cd erpax` (URL and repo are the same orientation)
 2. **Install** — `pnpm install`
-3. **Health** — `pnpm erpax doctor` (stray-ts vs baseline, last efficiency pass, entry skill path)
+3. **Health** — `pnpm erpax doctor` (stray-ts vs baseline, last efficiency pass, corpus entry)
+
+No separate agent setup — the URL and the repo are the same orientation.
 
 Then run `pnpm erpax rules check` or `pnpm check` before pushing.
 
@@ -30,10 +32,10 @@ Zero entropy ⇒ infinite tamper-cost. Every folder under `src/` is a one-word a
 
 | Surface | Role |
 | --- | --- |
-| `AGENTS.md` (this file) | Universal agent entry |
+| `AGENTS.md` (this file) | Universal orientation entry |
 | `CLAUDE.md` | Claude Code pointer (symlink) |
 | `.github/copilot-instructions.md` | GitHub Copilot pointer |
-| `README.md` § For AI assistants | Human + agent landing |
+| `README.md` § Orient to erpax | Corpus landing |
 | `.cursor/rules/erpax.mdc` | Cursor auto-load rule |
 | `.well-known/ai-skills.json` | Well-known discovery |
 | `skills.json` | Alternate discovery manifest |

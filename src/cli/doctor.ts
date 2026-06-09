@@ -1,5 +1,5 @@
 /**
- * cli/doctor — quick health: stray-ts vs baseline, efficiency pass, entry skill.
+ * cli/doctor — quick health: stray-ts vs baseline, efficiency pass, corpus entry.
  */
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
@@ -111,7 +111,7 @@ export function formatDoctorReport(report: DoctorReport): string {
   }
   const skillMark = report.entrySkill.exists ? 'present' : 'MISSING'
   lines.push(
-    `  entry skill    ${report.entrySkill.path} (${report.entrySkill.contentUuid.slice(0, 8)}…) — ${skillMark}`,
+    `  corpus entry   ${report.entrySkill.path} (${report.entrySkill.contentUuid.slice(0, 8)}…) — ${skillMark}`,
   )
   if (report.clean) {
     lines.push(`  clean          ${report.clean}`)

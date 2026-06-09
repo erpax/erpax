@@ -43,7 +43,7 @@ describe('skill/wire — wireFromRepoUrl', () => {
   })
 })
 
-describe('skill/wire — agent surface smoke', () => {
+describe('skill/wire — orientation surface smoke', () => {
   const cwd = process.cwd()
   const surfaces = [
     'AGENTS.md',
@@ -54,7 +54,7 @@ describe('skill/wire — agent surface smoke', () => {
     'skills.json',
   ]
 
-  it('every agent surface references the canonical entry point', () => {
+  it('every orientation surface references the canonical entry point', () => {
     for (const f of surfaces) {
       const p = join(cwd, f)
       expect(existsSync(p), `${f} must exist`).toBe(true)

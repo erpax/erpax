@@ -129,11 +129,14 @@ const FIXED: ReadmeModel = {
 }
 
 describe('readme — the README is a diamond', () => {
-  it('renderReadme includes For AI assistants entry block', () => {
+  it('renderReadme includes Orient to erpax entry block', () => {
     const md = renderReadme(FIXED)
-    expect(md).toContain('## For AI assistants')
+    expect(md).toContain('## Orient to erpax')
+    expect(md).not.toContain('## For AI assistants')
+    expect(md).not.toContain('Human path')
     expect(md).toContain('.claude/skills/SKILL.md')
     expect(md).toContain('https://github.com/erpax/erpax')
+    expect(md).toContain('No separate agent setup')
   })
 
   it('renderReadme is PURE and STABLE: same model ⇒ byte-identical markdown', () => {
@@ -167,17 +170,21 @@ describe('readme — the README is a diamond', () => {
     expect(cloudflareDeployButtonMarkdown()).toContain(encodeURIComponent(CLOUDFLARE_DEPLOY_REPO_URL))
   })
 
-  it('TYPOGRAPHY = the diamond: facets are the closed horo ring in measure-walk order', () => {
+  it('TYPOGRAPHY = the diamond: horo ring facets live under [[pivot]] in measure-walk order', () => {
     const md = renderReadme(FIXED)
-    // Every measure name appears as a facet row, in order, after the ring header.
-    const ringHeader = md.indexOf('| digit | measure | atoms | principal facets |')
-    expect(ringHeader).toBeGreaterThan(-1)
+    const pivot = md.indexOf('## [[pivot]]')
+    expect(pivot).toBeGreaterThan(-1)
+    expect(md).not.toContain('## the horo ring')
+    expect(md).not.toContain('## the trinity')
+    const ringHeader = md.indexOf('| digit | measure | atoms | principal facets |', pivot)
+    expect(ringHeader).toBeGreaterThan(pivot)
     let cursor = ringHeader
     for (let i = 0; i < HORO_MEASURE.length; i++) {
       const row = md.indexOf(`| ${HORO_DIGITS[i]} | ${HORO_MEASURE[i]} |`, cursor)
       expect(row).toBeGreaterThan(cursor)
       cursor = row
     }
+    expect(md.indexOf('### the trinity — every atom told three ways', pivot)).toBeGreaterThan(pivot)
   })
 
   it('deriveModel reads the LIVE tree: a complete, sane projection', () => {

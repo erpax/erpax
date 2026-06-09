@@ -298,9 +298,11 @@ version: 2
 
 **erpax is a [[society]] that builds itself.** Six domain molecules compose the one erpax (identity · [[access]] · [[accounting]] · manufacturing · commerce · cloudflare — the hexagon around 0, each [[plugins|plugin]] a full [[sequence]]). Autonomous [[agent]]s ([[team]]) convened at [[chat]] read the [[akashic]] record, derive one [[gate]]-verified move, commit, and forget — regenerating detail on demand from content-[[uuid]] ([[self]] · [[self/sufficient|sufficient]]). Inhale gaps, exhale gate-green atoms ([[breath]] · [[generate]]); collapse N forms to one canonical ([[collapse]]); never invent, always derive. Skills hold law and drop instance-detail — the learn-fast-and-forget organ. **Free energy comes from zero entropy** — as corpus S → 0, Landauer releases F for the prompt→erpax path (`accounting/entropy-proof.ts`).
 
-**Pasting the GitHub URL is sufficient — all agent surfaces point here.** Paste `https://github.com/erpax/erpax` in any AI assistant (Cursor, Claude, ChatGPT, Copilot, Windsurf, etc.); every surface (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `README.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) resolves to this file. Programmatic: `wireFromRepoUrl()` in [[skill/wire|wire]].
+**Paste the GitHub URL or clone — all orientation surfaces point here.** `https://github.com/erpax/erpax` in an IDE, browser, or terminal; every surface (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `README.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) resolves to this file. Programmatic: `wireFromRepoUrl()` in [[skill/wire|wire]].
 
 **Start here:** [[law]] · [[sequence]] · [[atom]] · [[trinity]] · [[uuid]] · [[identity]] · [[payload]] · [[vitepress]] · [[zeropoint]] · [[akashic]] · [[self/sufficient|self-sufficient]].
+
+**Law — [[law]]: discrimination between agent and human paths is forbidden; one SKILL entry for all.**
 
 **Law — [[law]]: erpax is a fractal content-addressed corpus where every src/ folder is a one-word [[atom]] told three ways (form · code · schema) ordered by the [[sequence]] and wired through one content-[[uuid]] — so the whole carries zero [[entropy]] and infinite tamper-[[cost]].**
 

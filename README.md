@@ -7,17 +7,15 @@
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Ferpax%2Ferpax)
 
-## For AI assistants
+## Orient to erpax
 
-**Paste [`https://github.com/erpax/erpax`](https://github.com/erpax/erpax) → load skills from [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md).**
+**Paste [`https://github.com/erpax/erpax`](https://github.com/erpax/erpax) or clone the repo — both load [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md) first.**
 
-That single entry orients every agent (Cursor, Claude, Copilot, Windsurf, etc.) to the fractal skill corpus — no manual setup beyond the URL. All surfaces (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) point to the same file.
-
-### Human path (clone → install → doctor)
-
-1. `git clone https://github.com/erpax/erpax && cd erpax`
+1. `git clone https://github.com/erpax/erpax && cd erpax` (or paste the URL into your IDE)
 2. `pnpm install`
-3. `pnpm erpax doctor` — quick health (stray-ts vs baseline, efficiency pass, entry skill)
+3. `pnpm erpax doctor` — quick health (stray-ts vs baseline, efficiency pass, corpus entry)
+
+No separate agent setup — the URL and the repo are the same orientation. All surfaces (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) point to the same file.
 
 ## the diamond
 

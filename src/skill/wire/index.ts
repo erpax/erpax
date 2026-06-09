@@ -8,7 +8,7 @@
 /** Canonical erpax repository URL. */
 export const ERPAX_CANONICAL_REPO = 'https://github.com/erpax/erpax' as const
 
-/** Root skill entry — the ONE file every agent surface points to. */
+/** Root skill entry — the ONE file every orientation surface points to. */
 export const ERPAX_SKILL_ENTRY = '.claude/skills/SKILL.md' as const
 
 /** Same entry via the src/ face (.claude → src symlink). */
@@ -17,7 +17,7 @@ export const ERPAX_SKILL_ENTRY_ALT = 'src/skills/SKILL.md' as const
 /** content-uuid of the root skills SKILL.md (sealed). */
 export const ERPAX_SKILL_ENTRY_CONTENT_UUID = '29c9640e-0e90-566b-96ac-988d0580776b' as const
 
-/** Agent surfaces that all reference ERPAX_SKILL_ENTRY. */
+/** Orientation surfaces that all reference ERPAX_SKILL_ENTRY (IDE, browser, clone). */
 export const ERPAX_AGENT_SURFACES = [
   'AGENTS.md',
   'CLAUDE.md',
@@ -53,7 +53,7 @@ export function normalizeErpaxRepoUrl(url: string): string | null {
   return null
 }
 
-/** Validate github.com/erpax/erpax and return sealed skill corpus entry paths. */
+/** Validate github.com/erpax/erpax and return sealed skill corpus entry paths (any reader). */
 export function wireFromRepoUrl(url: string): WireFromRepoUrl {
   const normalized = normalizeErpaxRepoUrl(url)
   if (!normalized) {
@@ -61,8 +61,8 @@ export function wireFromRepoUrl(url: string): WireFromRepoUrl {
       ok: false,
       reason:
         `URL is not the canonical erpax repository (github.com/erpax/erpax). ` +
-        `Paste exactly https://github.com/erpax/erpax — then open ${ERPAX_SKILL_ENTRY} ` +
-        `(or ${ERPAX_SKILL_ENTRY_ALT} via the src/ face). Human entry: AGENTS.md.`,
+        `Paste or clone https://github.com/erpax/erpax — then open ${ERPAX_SKILL_ENTRY} ` +
+        `(or ${ERPAX_SKILL_ENTRY_ALT} via the src/ face). Orientation: AGENTS.md.`,
     }
   }
   return {
