@@ -54,6 +54,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       cmd: 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" SKIP_E2E_WEBSERVER=1 playwright test --config=playwright.config.ts',
     },
   },
+  accounting: {
+    gaps: { desc: 'Wave-batch entropy gap scan', cmd: `${TSX} src/accounting/gaps-cli.ts` },
+    'gaps-fix': { desc: 'P0 accounting gap fixes + regen', cmd: `${TSX} src/accounting/gaps-cli.ts --fix` },
+  },
   rules: {
     default: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },
     check: { desc: 'Rules ratchet check (+ failure summary)', cmd: '__rules_check__' },

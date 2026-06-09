@@ -11,6 +11,7 @@
  */
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
+import { waveAccountingGapViolations } from '@/accounting/gaps'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
@@ -161,6 +162,10 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
       baseline: 0,
     }),
   ])
+  const waveGaps = waveAccountingGapViolations(cwd)
+  const waveGapSeal = seal([
+    guardian({ axis: 'accounting-wave', violations: waveGaps.count, baseline: 0 }),
+  ])
   const combined = seal([
     ...folderSeal.guardians,
     ...tightenedSeal.guardians,
@@ -168,6 +173,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     ...importSeal.guardians,
     ...crackSeal.guardians,
     ...bypassSeal.guardians,
+    ...waveGapSeal.guardians,
   ])
   return { ...combined, snapshot }
 }
@@ -256,11 +262,20 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const check = process.argv.includes('--check')
   const emitRatchet = process.argv.includes('--emit-ratchet')
   const accountingOnly = process.argv.includes('--accounting-only')
+  const axisIdx = process.argv.indexOf('--axis')
+  const axisOnly = axisIdx >= 0 ? process.argv[axisIdx + 1] : undefined
   if (emitRatchet) {
     // Delegate to emit-ratchet entry — avoids top-level await in this barrel.
     const extra = process.argv.includes('--bootstrap') ? ' --bootstrap' : ''
     execSync(`pnpm rules:ratchet${extra}`, { stdio: 'inherit', cwd: process.cwd() })
     process.exit(0)
+  }
+  if (axisOnly === 'accounting-wave') {
+    const { count, netEb, verdict } = waveAccountingGapViolations()
+    const ok = count === 0 && netEb === 0
+    console.log(`${ok ? '✓' : '✗'} accounting-wave: ${count} gap path(s) · net ${netEb} eb`)
+    for (const w of verdict.waves) console.log(`  wave ${w.wave}: net ${w.netEb} eb · ${w.paths.length} path(s)`)
+    process.exit(ok ? 0 : 1)
   }
   const stopHeartbeat = check ? startProgressHeartbeat('rules:check') : () => {}
   const snapshot = rulesOf()

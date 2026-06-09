@@ -24,6 +24,7 @@ export const AXIS_FIX_HINTS: Record<string, string> = {
   'word-without-code': 'pnpm erpax apply session',
   'word-without-logic': 'pnpm erpax corpus words',
   'word-incomplete-diamond': 'pnpm erpax readme waves',
+  'accounting-wave': 'pnpm erpax accounting gaps-fix',
 }
 
 export interface FailedAxis {

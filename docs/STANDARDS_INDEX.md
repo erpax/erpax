@@ -5959,6 +5959,7 @@ src/quantum/import/index.ts:9: * @audit re-exports boundary organ; computed live
 src/quantum/index.ts:18: * @audit computed from the live matrix, never hand-asserted
 src/quantum/karma/index.ts:13: * @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix
 src/quantum/law/index.ts:15: * @audit the law-suffix is read from each SKILL.md ending, never asserted
+src/quantum/linear-gap.ts:4: * @audit computed walk — seal gate measures gaps under baseline ratchet
 src/quantum/literature/index.ts:9: * @audit text uuid from @/integrity; never hand-pinned canon
 src/quantum/log/index.ts:8: * @audit pure functions; never hand-asserted chain cost
 src/quantum/marine/index.ts:21: * @audit zones are computed from distance; general average is proportional to value — never asserted

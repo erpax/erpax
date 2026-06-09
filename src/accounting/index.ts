@@ -89,3 +89,21 @@ export {
   UNITY_HORO_STEP,
 } from './entropy-proof'
 export type { FreeEnergyFromEntropyVerdict, FreeEnergyProof, ProofStep } from './entropy-proof'
+export {
+  accountingGapsInWaves,
+  waveAccountingGapViolations,
+  fixAccountingGapsOnP0,
+  formatAccountingGapsReport,
+  p0AccountingStatus,
+  P0_ACCOUNTING_ROOT,
+  P0_ACCOUNTING_LEAVES,
+} from './gaps'
+export type {
+  WaveAccountingImpurity,
+  WaveAccountingImpurityKind,
+  WaveAccountingGapBatch,
+  P0AccountingStatus,
+  AccountingGapsInWavesVerdict,
+  AccountingGapsInWavesOpts,
+  FixAccountingGapsResult,
+} from './gaps'
