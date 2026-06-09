@@ -22,9 +22,6 @@ import { concentrationViolations } from './concentration'
 import { wordMatterViolations } from './word-matter'
 import { wordWithoutLogicViolations, type WordWithoutLogicAudit } from './word-without-logic'
 import { userWordUnprovenViolations } from '@/law/folder'
-import { indexCrossViolationCount } from '@/law/folder/index-cross'
-import { findLinearLogic, linearLogicCount } from '@/quantum/fold'
-import { linearGapCount, linearGaps } from '@/quantum'
 import { handMaintainedViolations } from '@/readme'
 import { computeProseLiterals } from '@/readme/assumption-literals'
 import {
@@ -227,13 +224,6 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
       violations: computeProseLiterals(cwd).length,
       baseline: 0,
       source: '@/readme/assumption-literals',
-    },
-    {
-      axis: 'llm-redundancy',
-      violations: llmRedundancyViolations({ cwd }).violationCount,
-      baseline: 0,
-      source: '@/readme/llm',
-      samples: llmRedundancyViolations({ cwd }).violations.slice(0, 5).map((v) => `${v.path} (${v.kind})`),
     },
   ]
 

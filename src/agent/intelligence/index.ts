@@ -7,8 +7,6 @@
  *   pnpm erpax intelligence cycle [--batch=10] [--apply]
  */
 import { createHash } from 'node:crypto'
-import { mkdirSync, writeFileSync, existsSync } from 'node:fs'
-import { join } from 'node:path'
 import { payloadApprovalGate } from '@/payload/approval'
 import {
   coordinatedWave,
@@ -78,7 +76,7 @@ const SCIENCE_CURRICULUM: readonly ScienceStep[] = [
 /** Maps science atoms touched on the improvement path → module → proof handler. */
 export function learnSciencesOnTheWay(
   axes: readonly string[] = [],
-  cwd = process.cwd(),
+  _cwd = process.cwd(),
 ): ScienceStep[] {
   const touched = new Set(axes)
   for (const n of neighborsOf('science')) {

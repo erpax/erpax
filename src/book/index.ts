@@ -10,7 +10,6 @@
  * @audit every page number derived from matrix bonds + horo sequence
  * @see ../navigation — ../uuid/matrix — ./matter — ./SKILL.md
  */
-import { join } from 'node:path'
 import { adminGroupOf } from '@/navigation'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import {

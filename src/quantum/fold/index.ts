@@ -491,3 +491,24 @@ const __cli = process.argv[1]
 if (__cli && import.meta.url === pathToFileURL(__cli).href && process.argv.includes('--linear')) {
   process.exit(runQuantumFoldLinear(process.argv.includes('--apply')))
 }
+
+/** Gap scan/seal — re-exported from ../gap (HEAD split); barrel satisfies ./fold imports. */
+export {
+  linearGaps,
+  linearGapCount,
+  sealLinearGaps,
+  formatLinearGapReport,
+  runQuantumSeal,
+  entanglementScore,
+  stubSkillMd,
+  stubIndexTs,
+  stubTestTs,
+} from '../gap'
+export type {
+  LinearGap,
+  LinearGapKind,
+  LinearGapScan,
+  SealLinearGapsResult,
+  SealHint,
+  SealHintAction,
+} from '../gap'

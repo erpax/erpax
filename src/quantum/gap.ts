@@ -284,10 +284,8 @@ export const stubSkillMd = (p: string): string => {
   const leaf = p.split('/').pop() ?? p
   return `---\nname: ${leaf}\natomPath: ${p}\n---\n\n# ${p}\n`
 }
-export const stubIndexTs = (p: string): string => {
-  const leaf = p.split('/').pop() ?? p
-  return `import{deriveFolderModel}from'@/readme/compute'\nexport const atomPath='${p}' as const\nexport function spreadOf(path:string=atomPath){const m=deriveFolderModel(path);return{debit:m.statement.totalDebits,credit:m.statement.totalCredits}}\n`
-}
+export const stubIndexTs = (p: string): string =>
+  `import{deriveFolderModel}from'@/readme/compute'\nexport const atomPath='${p}' as const\nexport function spreadOf(path:string=atomPath){const m=deriveFolderModel(path);return{debit:m.statement.totalDebits,credit:m.statement.totalCredits}}\n`
 export const stubTestTs = (p: string): string =>
   `import{describe,it,expect}from'vitest'\nimport{atomPath,spreadOf}from'@/${p}'\ndescribe('${p}',()=>{it('ok',()=>{expect(atomPath).toBe('${p}');expect(spreadOf().debit).toBeGreaterThanOrEqual(0)})})\n`
 

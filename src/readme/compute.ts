@@ -18,7 +18,7 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf } from '@/horo'
+import { HORO_DIGITS, horoMeasureOf } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -57,7 +57,6 @@ import {
   pivotSingleFolder,
   renderPivotTable,
   renderPivotMarkdown,
-  measureOf,
   type HoroPivotRow,
   type ControlAxisFacet,
 } from '@/pivot'
@@ -96,7 +95,7 @@ import { corpusPathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave'
 import { rulesOf } from '@/rules'
 import { loadEfficiencyStore } from '@/apply/efficiency'
-import { renderCorpusBookPivot, renderThisPageSection } from '@/book/render'
+import { renderThisPageSection } from '@/book/render'
 import { quantumModeDefault } from '@/quantum/bindings'
 import {
   renderBalanceMeetingPivotSection,

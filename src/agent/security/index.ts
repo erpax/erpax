@@ -1,7 +1,7 @@
 /**
  * agent/security — parse allowlist + security monitor (fail closed).
  */
-import { publish, subscribe, violationsWatchPath } from '@/agent/communication/realtime'
+import { publish, violationsWatchPath } from '@/agent/communication/realtime'
 import { issueReceipt, type Decision, type Receipt } from '@/receipt'
 
 export const PARSE_SOURCE_ALLOWLIST = [

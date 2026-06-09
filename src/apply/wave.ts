@@ -2,8 +2,8 @@
  * apply/wave — coordinated self-balancing wave runner (ONE runner at a time).
  */
 import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { existsSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { publish, subscribe, violationsWatchPath } from '@/agent/communication/realtime'
 import { interruptTokenFor, isDirectionStale, type InterruptToken } from '@/quantum/entanglement/direction-bus'
 import { quantumModeDefault } from '@/quantum/bindings'
