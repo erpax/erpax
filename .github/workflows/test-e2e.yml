@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Generate skill index
+        run: pnpm erpax corpus skill
+
       - name: Typecheck
         run: pnpm erpax lint typecheck
 

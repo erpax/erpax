@@ -30,11 +30,12 @@ const ROOTS = ['src']
 const OUT = 'src/skill/router/skills.index.ts'
 
 // Frontmatter self-upgrade: verify-first (fast path), sync on drift (one pass).
+// Use node --import tsx/esm (not nested `pnpm exec`) so CI never needs .pnpmfile.mjs.
 try {
-  execSync('pnpm exec tsx src/skill/router/upgrade/index.ts --verify', { stdio: 'pipe' })
+  execSync('node --import tsx/esm src/skill/router/upgrade/index.ts --verify', { stdio: 'pipe' })
 } catch {
   try {
-    execSync('pnpm exec tsx src/skill/router/upgrade/index.ts --sync', { stdio: 'pipe' })
+    execSync('node --import tsx/esm src/skill/router/upgrade/index.ts --sync', { stdio: 'pipe' })
   } catch (e) {
     console.error('skill-index: frontmatter upgrade failed —', e.stderr?.toString?.() || e.message)
     process.exit(1)

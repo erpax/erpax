@@ -45,7 +45,7 @@ export interface ConnectedFrontmatter {
 }
 
 const yamlQuote = (s: string): string => {
-  if (!s.length || /[:#\n"'&*!?|>@[`\-{}\[\],]/.test(s) || s.startsWith(' ') || /^\d/.test(s)) {
+  if (!s.length || /[:#\n"'&*!?|>@[`\-{}\[\],/]/.test(s) || s.startsWith(' ') || /^\d/.test(s)) {
     return `"${s.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`
   }
   return s

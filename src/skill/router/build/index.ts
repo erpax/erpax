@@ -20,9 +20,9 @@ import {
 } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 import { homedir } from 'node:os'
-import { execSync } from 'node:child_process'
 import { isRealDir } from '@/aura'
 import { pathNavMeta } from '@/navigation'
+import { verifySkillFrontmatter, materializeSkillFrontmatter } from '../upgrade'
 import { contentUuidOf } from '../upgrade/seal'
 import type { SkillNode } from '../resolve'
 import type { InstalledSkill } from '../merge'
@@ -120,24 +120,22 @@ function walkSkills(dir: string, root: string, out: SkillNode[] = []): SkillNode
 }
 
 /** Run frontmatter self-upgrade before index emit (verify-first, sync on drift). */
-function ensureFrontmatterGreen(): void {
+function ensureFrontmatterGreen(cwd: string = process.cwd()): void {
   if (process.env.SKIP_SKILL_UPGRADE === '1') return
-  try {
-    execSync('pnpm exec tsx src/skill/router/upgrade/index.ts --verify', { stdio: 'pipe' })
-  } catch {
-    try {
-      execSync('pnpm exec tsx src/skill/router/upgrade/index.ts --sync', { stdio: 'pipe' })
-    } catch (e) {
-      const err = e as { stderr?: { toString?: () => string }; message?: string }
-      console.error('skill-index: frontmatter upgrade failed —', err.stderr?.toString?.() || err.message)
-      process.exit(1)
-    }
+  let { ok, drift } = verifySkillFrontmatter(cwd)
+  if (!ok) {
+    materializeSkillFrontmatter(cwd)
+    ;({ ok, drift } = verifySkillFrontmatter(cwd))
+  }
+  if (!ok) {
+    console.error('skill-index: frontmatter upgrade failed —', drift.slice(0, 20).join(', '))
+    process.exit(1)
   }
 }
 
 /** Emit skills.index.ts — the catch-all router expert pool. */
 export function buildSkillIndex(cwd: string = process.cwd()): { count: number; bytes: number; out: string } {
-  ensureFrontmatterGreen()
+  ensureFrontmatterGreen(cwd)
   const byRoute = new Map<string, SkillNode>()
   for (const root of ROOTS) {
     for (const n of walkSkills(join(cwd, root), root)) {

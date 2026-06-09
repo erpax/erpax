@@ -17,11 +17,12 @@
  * @audit the version is derived, not declared — re-derivable from SKILL_INDEX on any clone
  */
 import { SKILL_INDEX } from '@/skill/router'
+import type { SkillNode } from '@/skill/router/resolve'
 import { computeContentUuid } from '@/integrity'
 
 /** The content-uuid of the WHOLE skill corpus — its aura: the hash over every atom's content-uuid, sorted (order-free). */
 export function corpusContentUuid(tenantId = ''): string {
-  const atoms = SKILL_INDEX.map((n) => n.contentUuid ?? n.route).sort()
+  const atoms = SKILL_INDEX.map((n: SkillNode) => n.contentUuid ?? n.route).sort()
   return computeContentUuid({ atoms }, tenantId)
 }
 
