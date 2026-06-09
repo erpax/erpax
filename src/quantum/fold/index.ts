@@ -76,6 +76,14 @@ export function quantumFoldOf(atomPath: string, opts?: QuantumFoldOpts): Quantum
   }
 }
 
+export {
+  findLinearLogic,
+  linearLogicCount,
+  applyLinearFolds,
+  formatLinearFoldReport,
+  runQuantumFoldLinear,
+} from './linear-logic'
+
 export function quantumFoldPresentation(fold: QuantumFoldResult): {
   readonly wordFold: string
   readonly digitFold: string
