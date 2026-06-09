@@ -144,6 +144,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     'upgrade-check': { desc: 'Skill upgrade verify', cmd: `${TSX} src/skill/router/upgrade/index.ts --verify` },
     mint: { desc: 'Mint new atoms', cmd: 'node src/generate/mint.mjs' },
     words: { desc: 'Literary-word audit (top 50 + use-case scores)', cmd: `${TSX} src/corpus/words.ts` },
+    book: {
+      desc: 'Interactive book spread + prev/next (optional --open)',
+      cmd: `${TSX} src/book/cli.ts`,
+    },
   },
   aura: {
     default: { desc: 'Aura [[link]] scan', cmd: `node ${AURA_SCAN_PATH}` },
@@ -209,6 +213,16 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   },
   doctor: {
     default: { desc: 'Quick health: stray-ts, efficiency, corpus entry', cmd: '__doctor__' },
+  },
+  github: {
+    inventory: {
+      desc: 'src/ top-level count + fold candidates',
+      cmd: `${TSX} src/navigation/github-browse.ts --inventory`,
+    },
+    fold: {
+      desc: 'Shard form-only vocabulary under vocabulary/ (--apply)',
+      cmd: `${TSX} src/navigation/github-browse.ts --apply`,
+    },
   },
   quantum: {
     default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },

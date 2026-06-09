@@ -158,10 +158,6 @@ src/agents/registered/marketing.agent.ts:5: * @standard GDPR consent-tracking @f
 src/agents/registered/ops.agent.ts:5: * @standard ISO 41001 facility-management + ISO 55000 asset-management
 src/agents/registered/product.agent.ts:5: * @standard PMI PMBOK 7th-edition project-management
 src/agents/registered/sales.agent.ts:5: * @standard IFRS IFRS-15 §9 contract-with-customer
-src/agriculture/accountable.ts:21: * @standard IFRS IAS-41 §13 — harvest: biological asset → inventory at fair-value-less-costs-to-sell
-src/agriculture/accountable.ts:22: * @standard IFRS 15 — revenue recognized as the performance obligation is satisfied (prepay → delivered)
-src/agriculture/accountable.ts:23: * @standard IFRS IAS-21 — foreign-exchange differences recognized in P&L on settlement/re-measurement
-src/agriculture/accountable.ts:24: * @standard IFRS/IAS double-entry — every movement is a balanced pair, Σ(credit − debit) = 0
 src/ai/ai-security.ts:153: * @standard NIST FIPS-180-4 sha-256
 src/ai/ai-security.ts:154: * @standard ISO 27037:2012 evidence-preservation
 src/ai/ai-security.ts:17: * @standard NIST FIPS-180-4 sha-256 audit-row-hash
@@ -1843,23 +1839,6 @@ src/maintenance/work/orders/index.ts:14: * @standard ISO-55001:2014 asset-manage
 src/maintenance/work/orders/index.ts:15: * @standard ISO-14224:2016 reliability-and-maintenance-data
 src/maintenance/work/orders/index.ts:16: * @standard EN-13306:2017 maintenance-terminology
 src/maintenance/work/orders/index.ts:17: * @standard ISO-8601-1:2019 date-time scheduled-actual
-src/manufacturing/seed/operations.ts:22: * @standard IEC 62264-1:2013 §B.4 process-segment (each operation is one segment)
-src/manufacturing/seed/operations.ts:23: * @standard ESCO v1.2 / ISCO-08 occupation-unit-group (the per-operation competency)
-src/manufacturing/seed/operations.ts:24: * @standard UN/CEFACT Rec 20 unit-of-measure (UoM-aware quantities)
-src/manufacturing/seed/positions.ts:18: * @standard ISCO-08 (ILO) occupation unit-group — the 4-digit global anchor
-src/manufacturing/seed/positions.ts:19: * @standard Bulgarian НКПД-2011 (national extension of ISCO-08) — the 8-digit code
-src/manufacturing/seed/positions.ts:20: * @standard SFIA 8 responsibility-levels (1..7) — the autonomy axis (positions service)
-src/manufacturing/seed/standards.ts:12: * @standard ISCO-08 · ESCO v1.2 · НКПД-2011 · NACE Rev.2.1 · IEC 62264-1:2013 · UN/CEFACT Rec 20 · EN-16931 · SFIA 8
-src/marketing/CountryShowcase.tsx:7: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/marketing/CountryShowcase.tsx:8: * @standard ISO-4217:2015 currency-codes
-src/marketing/CountryShowcase.tsx:9: * @standard BCP-47 language-tag
-src/marketing/LiveAuditCounter.tsx:9: * @standard schema.org QuantitativeValue
-src/marketing/PricingTable.tsx:10: * @standard schema.org Offer pricing
-src/marketing/PricingTable.tsx:11: * @standard ISO-4217:2015 currency-codes
-src/marketing/StandardsBadges.tsx:10: * @standard W3C HTML5 living-standard
-src/marketing/StandardsBadges.tsx:9: * @standard schema.org Thing badge-credibility
-src/marketing/types.ts:11: * @standard schema.org WebPageElement
-src/marketing/types.ts:12: * @standard W3C HTML5 Living Standard
 src/mcp/tool/metadata/index.ts:29: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/mcp/tool/metadata/index.ts:30: * @standard BCP-47 language tags
 src/mcp/tool/metadata/index.ts:31: * @standard EU 1958/1 official-languages-of-the-european-union
@@ -2169,7 +2148,6 @@ src/properties/spaces/index.ts:10: * @standard ISO-41001:2018 facility-managemen
 src/properties/spaces/index.ts:11: * @standard ISO-41011:2017 §3.3.5 facility-management space-vocabulary
 src/properties/spaces/index.ts:12: * @standard ISO-19650-1:2018 information-management-using-bim
 src/properties/spaces/index.ts:13: * @standard EN-15221-6:2011 facility-management area-and-space-measurement
-src/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/pwa/index.ts:44: * @standard W3C Service Workers (W3C-SW)
 src/pwa/index.ts:45: * @standard W3C Web App Manifest (W3C-WAM)
 src/pwa/index.ts:46: * @standard W3C Push API + W3C Notifications API
@@ -2613,11 +2591,6 @@ src/sustainability/index.ts:16: * @standard Brundtland Report, Our Common Future
 src/sustainability/index.ts:17: * @standard Second Law of Thermodynamics — local order requires entropy export
 src/svg/hero/generator/index.ts:17: * @standard W3C SVG-1.1 scalable-vector-graphics
 src/svg/hero/generator/index.ts:18: * @standard ISO/IEC-29500 office-open-xml media-embedding-target
-src/tag/field.ts:20: * @standard ISO-25964-1:2011 controlled-vocabulary
-src/tag/list.ts:21: * @standard ISO-25964-1:2011 controlled-vocabulary delimited-entry
-src/tag/setTagList.ts:19: * @standard ISO-25964-1:2011 thesaurus assignment
-src/tag/setTagList.ts:20: * @standard RFC-4122 §4.3 uuid content-addressed-dedup
-src/tag/taggedWith.ts:18: * @standard ISO-25964-1:2011 thesauri retrieval
 src/tags/index.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
 src/tags/index.ts:22: * @standard RFC-4122 §4.3 uuid content-addressed-id
 src/tags/taggings/index.ts:30: * @standard ISO-25964-1:2011 thesauri associative-relationships
@@ -2943,30 +2916,6 @@ src/vocabulary/agriculture/accountable.ts:21: * @standard IFRS IAS-41 §13 — h
 src/vocabulary/agriculture/accountable.ts:22: * @standard IFRS 15 — revenue recognized as the performance obligation is satisfied (prepay → delivered)
 src/vocabulary/agriculture/accountable.ts:23: * @standard IFRS IAS-21 — foreign-exchange differences recognized in P&L on settlement/re-measurement
 src/vocabulary/agriculture/accountable.ts:24: * @standard IFRS/IAS double-entry — every movement is a balanced pair, Σ(credit − debit) = 0
-src/vocabulary/api/audit/events/index.ts:22: * @standard ISO-19011:2018 audit-trail external-system-evidence
-src/vocabulary/api/audit/events/index.ts:23: * @standard ISO/IEC-27007:2020 isms-auditing
-src/vocabulary/data/processing/activities/index.ts:8: * @standard ISO-8601-1:2019 date-time review-due-at
-src/vocabulary/data/subject/requests/index.ts:8: * @standard ISO-8601-1:2019 date-time submitted-at completed-at
-src/vocabulary/eu/ai/act/index.ts:10: * @standard EU AI Act 2024 Regulation (EU) 2024/1689
-src/vocabulary/eu/ai/act/index.ts:11: * @standard ISO/IEC 23894:2023 ai-risk-management
-src/vocabulary/eu/ai/act/index.ts:12: * @standard ISO/IEC 42001:2023 ai-management-system
-src/vocabulary/eu/ai/act/index.ts:13: * @standard NIST AI-RMF-1.0 ai-risk-management-framework
-src/vocabulary/eu/csrd/esr/index.ts:10: * @standard EU ESRS 1 General Requirements
-src/vocabulary/eu/csrd/esr/index.ts:11: * @standard EU ESRS 2 General Disclosures
-src/vocabulary/eu/csrd/esr/index.ts:12: * @standard EU ESRS E1 Climate Change (companion to GHG Protocol)
-src/vocabulary/eu/csrd/esr/index.ts:13: * @standard IFRS S1 General Sustainability Disclosures
-src/vocabulary/eu/csrd/esr/index.ts:14: * @standard IFRS S2 Climate-Related Disclosures
-src/vocabulary/eu/csrd/esr/index.ts:15: * @standard EU EFRAG ESRS-XBRL taxonomy
-src/vocabulary/eu/csrd/esr/index.ts:9: * @standard EU CSRD Directive 2022/2464
-src/vocabulary/held/for/sale/classifications/index.ts:12: * @standard IFRS IFRS-5 §6-§9 classification-criteria
-src/vocabulary/held/for/sale/classifications/index.ts:13: * @standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
-src/vocabulary/held/for/sale/classifications/index.ts:14: * @standard IFRS IFRS-5 §25 depreciation-suspended
-src/vocabulary/held/for/sale/classifications/index.ts:15: * @standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation
-src/vocabulary/held/for/sale/classifications/index.ts:16: * @standard IFRS IFRS-13 fair-value-input-hierarchy
-src/vocabulary/held/for/sale/classifications/index.ts:17: * @standard US-GAAP ASC-205-20 discontinued-operations
-src/vocabulary/held/for/sale/classifications/index.ts:18: * @standard US-GAAP ASC-360-10 long-lived-assets-held-for-sale
-src/vocabulary/held/for/sale/classifications/index.ts:19: * @standard ISO-4217:2015 currency-codes
-src/vocabulary/held/for/sale/classifications/index.ts:20: * @standard ISO-8601-1:2019 date-time classification-date
 src/vocabulary/index.ts:13: * @standard ISO 25964 / SKOS — a controlled vocabulary: terms from one shared scheme
 src/vocabulary/manufacturing/seed/operations.ts:22: * @standard IEC 62264-1:2013 §B.4 process-segment (each operation is one segment)
 src/vocabulary/manufacturing/seed/operations.ts:23: * @standard ESCO v1.2 / ISCO-08 occupation-unit-group (the per-operation competency)
@@ -2985,11 +2934,6 @@ src/vocabulary/marketing/StandardsBadges.tsx:10: * @standard W3C HTML5 living-st
 src/vocabulary/marketing/StandardsBadges.tsx:9: * @standard schema.org Thing badge-credibility
 src/vocabulary/marketing/types.ts:11: * @standard schema.org WebPageElement
 src/vocabulary/marketing/types.ts:12: * @standard W3C HTML5 Living Standard
-src/vocabulary/post/close/analytics/service.ts:14: * @standard IAS-34:2023 Interim Financial Reporting
-src/vocabulary/post/close/analytics/service.ts:15: * @standard IFRS-8:2023 Operating Segments
-src/vocabulary/post/close/analytics/service.ts:16: * @standard IAS-1:2023 Presentation of Financial Statements
-src/vocabulary/post/close/analytics/service.ts:17: * @standard COSO Internal Control Framework
-src/vocabulary/post/close/analytics/service.ts:18: * @standard GAAP VRE (Variance Reporting and Explanation) Guidelines
 src/vocabulary/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/vocabulary/tag/field.ts:20: * @standard ISO-25964-1:2011 controlled-vocabulary
 src/vocabulary/tag/list.ts:21: * @standard ISO-25964-1:2011 controlled-vocabulary delimited-entry
@@ -3429,8 +3373,6 @@ src/users/hooks/setCookieBasedOnDomain.ts:22: * @rfc 9110 http-semantics host-he
 src/users/index.ts:52: * @rfc 5322 internet-message-format email
 src/users/index.ts:53: * @rfc 5321 smtp envelope
 src/users/index.ts:54: * @rfc 6532 internationalized-email-addresses
-src/vocabulary/live/preview/listener/index.tsx:6: * @rfc 6455 the-websocket-protocol
-src/vocabulary/live/preview/listener/index.tsx:7: * @rfc 9110 http-semantics
 tests/e2e/admin.e2e.spec.ts:13: * @rfc 6265 cookies session
 tests/e2e/admin.e2e.spec.ts:14: * @rfc 7519 jwt session-token
 tests/e2e/adminPayloadUiEmailLabels.ts:9: * @rfc 5646 tags-for-identifying-languages
@@ -3893,11 +3835,6 @@ src/lot/work/phases/index.ts:28: * @compliance SOX §404 internal-controls produ
 src/lots/index.ts:30: * @compliance SOX §404 internal-controls production-control
 src/maintenance/requests/index.ts:15: * @compliance SOX §404 internal-controls fm-service-delivery
 src/maintenance/work/orders/index.ts:22: * @compliance SOX §404 internal-controls capex-vs-opex-classification
-src/marketing/CountryShowcase.tsx:11: * @compliance WCAG-2.1 §1.3.1 info-and-relationships table-semantics
-src/marketing/LiveAuditCounter.tsx:11: * @compliance SOX §404 internal-controls evidence-preservation
-src/marketing/PricingTable.tsx:14: * @compliance WCAG-2.1 level-AA pricing-table-accessibility
-src/marketing/StandardsBadges.tsx:12: * @compliance WCAG-2.1 §1.1.1 alt-text-on-decorative-icons
-src/marketing/types.ts:13: * @compliance WCAG-2.1 level-AA marketing-component-accessibility
 src/media/Component.tsx:9: * @compliance WCAG-2.1 §1.1.1 non-text-content alt-text
 src/media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) data-minimization
 src/media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
@@ -3957,8 +3894,6 @@ src/posts/index.ts:41: * @compliance WCAG-2.1 level-AA accessibility
 src/properties/index.ts:23: * @compliance SOX §404 internal-controls real-estate-portfolio
 src/properties/investment/properties/index.ts:22: * @compliance SOX §404 internal-controls
 src/properties/spaces/index.ts:15: * @compliance SOX §404 internal-controls space-allocation
-src/provider/index.tsx:4: * @compliance WCAG-2.1 §1.4.3 contrast-minimum
-src/provider/index.tsx:5: * @compliance WCAG-2.1 §1.4.11 non-text-contrast
 src/receivable/allowance.service.ts:9: * @compliance SOX §404 internal-controls
 src/receivable/workflow.service.ts:11: * @compliance SOX §404 internal-controls
 src/regulatory/deferral/accounts/index.ts:16: * @compliance SOX §404 internal-controls
@@ -4066,21 +4001,6 @@ src/vendors/vendor/quotes/index.ts:12: * @compliance OECD BEPS Action 13 transfe
 src/vendors/vendor/quotes/index.ts:13: * @compliance SOX §404 internal-controls vendor-selection
 src/vendors/vendor/scorecards/index.ts:13: * @compliance SOX §404 internal-controls vendor-management
 src/versions/cross/index.ts:25: * @compliance SOX §404 internal-controls record-retention
-src/vocabulary/api/audit/events/index.ts:25: * @compliance SOX §404 internal-controls external-system-traceability
-src/vocabulary/api/audit/events/index.ts:26: * @compliance EU 910/2014 eidas signature-evidence
-src/vocabulary/data/processing/activities/index.ts:10: * @compliance GDPR Art.30(2) records-processor
-src/vocabulary/data/processing/activities/index.ts:11: * @compliance GDPR Art.5(1)(e) storage-limitation
-src/vocabulary/data/processing/activities/index.ts:12: * @compliance ISO-27701:2019 §6.3.1 records-of-processing
-src/vocabulary/data/processing/activities/index.ts:9: * @compliance GDPR Art.30(1) records-controller
-src/vocabulary/data/subject/requests/index.ts:10: * @compliance GDPR Art.16 right-to-rectification
-src/vocabulary/data/subject/requests/index.ts:11: * @compliance GDPR Art.17 right-to-erasure
-src/vocabulary/data/subject/requests/index.ts:12: * @compliance GDPR Art.18 right-to-restriction
-src/vocabulary/data/subject/requests/index.ts:13: * @compliance GDPR Art.20 right-to-data-portability
-src/vocabulary/data/subject/requests/index.ts:14: * @compliance GDPR Art.21 right-to-object
-src/vocabulary/data/subject/requests/index.ts:15: * @compliance GDPR Art.12(3) one-month-response-deadline
-src/vocabulary/data/subject/requests/index.ts:9: * @compliance GDPR Art.15 right-of-access
-src/vocabulary/eu/ai/act/index.ts:14: * @compliance GDPR Art.22 automated-individual-decision-making
-src/vocabulary/held/for/sale/classifications/index.ts:22: * @compliance SOX §404 internal-controls
 src/vocabulary/marketing/CountryShowcase.tsx:11: * @compliance WCAG-2.1 §1.3.1 info-and-relationships table-semantics
 src/vocabulary/marketing/LiveAuditCounter.tsx:11: * @compliance SOX §404 internal-controls evidence-preservation
 src/vocabulary/marketing/PricingTable.tsx:14: * @compliance WCAG-2.1 level-AA pricing-table-accessibility
@@ -4624,9 +4544,6 @@ src/lots/index.ts:27: * @accounting double-entry — the lot total IS the sum of
 src/maintenance/work/orders/index.ts:18: * @accounting IFRS IAS-16 §12 §13 capitalisable-vs-expense routine-maintenance
 src/maintenance/work/orders/index.ts:19: * @accounting IFRS IAS-2 §10 cost-of-purchase materials-issued
 src/maintenance/work/orders/index.ts:20: * @accounting US-GAAP ASC-360 ppe-maintenance
-src/marketing/CountryShowcase.tsx:10: * @accounting IFRS / US-GAAP / FRS / JGAAP / ASBE / INDAS
-src/marketing/PricingTable.tsx:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/marketing/PricingTable.tsx:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/media/sepa/mandates/index.ts:18: * @accounting IFRS IFRS-9 financial-instruments
 src/media/sepa/mandates/index.ts:19: * @accounting US-GAAP ASC-310 receivables
 src/modal/CreateJournalEntryModal.tsx:11: * @accounting IFRS double-entry-bookkeeping
@@ -5360,9 +5277,6 @@ src/validate/address/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-ten
 src/vendors/vendor/quotes/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/vendors/vendor/scorecards/index.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/vendors/vendor/scorecards/index.ts:15: * @security ISO-27001 A.5.19 information-security-supplier-relationships
-src/vocabulary/data/processing/activities/index.ts:14: * @security ISO-27001 A.5.34 privacy-and-pii
-src/vocabulary/data/subject/requests/index.ts:17: * @security ISO-27001 A.5.34 privacy-and-pii
-src/vocabulary/held/for/sale/classifications/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/warehouse/locations/consignment/arrangements/consignment/inventories/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/warehouse/locations/consignment/arrangements/consignment/sales/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/warehouse/locations/consignment/arrangements/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5544,6 +5458,7 @@ src/blockchain/index.ts:13: * @audit computed from the live matrix, never hand-a
 src/blood/index.ts:25: * @audit computed (Hill equation · Little's law · mass balance) from cited constants
 src/body/index.ts:18: * @audit each organ verdict computed live; the harmony folded through @/wave + @/signal
 src/boltzmann/index.ts:15: * @audit S = k·ln W, inverse W = e^(S/k), Gibbs S = −k·Σ pᵢ ln pᵢ -- all computed
+src/book/index.ts:10: * @audit every page number derived from matrix bonds + horo sequence
 src/bookable/resources/bookings/index.ts:21: * @audit ISO-19011:2018 audit-trail booking-lifecycle
 src/bookable/resources/index.ts:17: * @audit ISO-19011:2018 audit-trail resource-master-changes
 src/brain/index.ts:20: * @audit computed (small-world path length log(N)/log(k) · sparsity k/N · scale cross-check)
@@ -5939,14 +5854,6 @@ src/lung/index.ts:24: * @audit computed from first principles (Fick's law · dic
 src/maintenance/requests/index.ts:14: * @audit ISO-19011:2018 audit-trail maintenance-request-evidence
 src/maintenance/work/orders/index.ts:21: * @audit ISO-19011:2018 audit-trail work-order-evidence
 src/mala/index.ts:17: * @audit the 108 identities + digital root are computed; the dualities-on-round read live from @/duality
-src/manufacturing/seed/operations.ts:118: * @audit etrima_production.employee_contracts — BGN, min 90 · median 227 · max 960
-src/manufacturing/seed/operations.ts:25: * @audit derived from etrima_production.work_phases — no value re-typed
-src/manufacturing/seed/operations.ts:96: * @audit etrima_production.work_shifts — median 75%, p99 167%, attractor at 100%
-src/manufacturing/seed/positions.ts:21: * @audit derived from etrima_production.positions — codes + pay not re-typed
-src/manufacturing/seed/standards.ts:13: * @audit catalogue-only clients (clientImplemented:false) — endpoints are real, modules pending
-src/marketing/LiveAuditCounter.tsx:10: * @audit ISO-19011:2018 audit-trail live-evidence
-src/marketing/StandardsBadges.tsx:11: * @audit ISO-19011:2018 audit-trail standards-citation-index
-src/marketing/types.ts:14: * @audit ISO-19011:2018 audit-trail data-driven-marketing
 src/mcp/tool/metadata/index.ts:32: * @audit Conservation Law 38 mcp-tool-standardization (per-tool metadata)
 src/media/audit/evidences/index.ts:6: * @audit ISO-19011:2018 evidence
 src/media/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -6284,10 +6191,6 @@ src/verification/index.ts:14: * @audit the token is the content-uuid; computed, 
 src/version/index.ts:17: * @audit the version is derived, not declared — re-derivable from SKILL_INDEX on any clone
 src/versions/cross/index.ts:24: * @audit ISO 19011:2018 §6.4.6 audit-evidence (the version chain IS the trail)
 src/vitepress/index.ts:13: * @audit route computed from the path (path = address), pixel computed from the uuid — never assigned
-src/vocabulary/api/audit/events/index.ts:24: * @audit ISO-19011:2018 audit-trail
-src/vocabulary/data/processing/activities/index.ts:13: * @audit ISO-19011:2018 audit-trail ropa-evidence
-src/vocabulary/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-evidence
-src/vocabulary/held/for/sale/classifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
 src/vocabulary/index.ts:14: * @audit computed over the live uuid-matrix atoms against ./words.ts; never hand-asserted
 src/vocabulary/manufacturing/seed/operations.ts:118: * @audit etrima_production.employee_contracts — BGN, min 90 · median 227 · max 960
 src/vocabulary/manufacturing/seed/operations.ts:25: * @audit derived from etrima_production.work_phases — no value re-typed

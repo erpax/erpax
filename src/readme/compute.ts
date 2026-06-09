@@ -48,6 +48,7 @@ import {
   renderDiamondJson,
   type DiamondModel,
 } from '@/diamond'
+import { renderGithubBrowseNote } from '@/navigation/github-browse'
 import { pivotFolderStats, pivotSingleFolder, renderPivotMarkdown, renderPivotTable } from '@/pivot'
 import {
   collectCorpusPapers,
@@ -83,6 +84,12 @@ import { corpusPathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave'
 import { rulesOf } from '@/rules'
 import { loadEfficiencyStore } from '@/apply/efficiency'
+import { renderCorpusBookPivot, renderThisPageSection } from '@/book/render'
+import { quantumModeDefault } from '@/quantum/bindings'
+import {
+  renderBalanceMeetingPivotSection,
+  renderQuantumFoldSection,
+} from '@/accounting/balance'
 
 /** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
 export interface RingFacet {
@@ -463,6 +470,9 @@ export function renderReadme(
       '## [[pivot]]',
       '',
       renderPivotMarkdown(pivotFolderStats(models)),
+      '',
+      renderCorpusBookPivot(model.atoms),
+      renderGithubBrowseNote(),
     )
   }
   L.push(
@@ -1496,6 +1506,7 @@ export function renderFolderReadme(model: FolderReadmeModel): string {
     '',
     `> atom \`${model.atomPath}\` · horo \`${model.horo ?? '—'}\` \`${model.measure ?? '—'}\` · [[balance]] \`${statement.balanced ? 1 : 0}\` · [[seal]] \`${model.sealed ? 1 : 0}\``,
     '',
+    renderThisPageSection(model),
     '## [[debit]] · [[credit]]',
     '',
     `> account code \`${model.atomPath}\` · currency \`eb\` (entropy-bit)`,
@@ -1539,6 +1550,8 @@ export function renderFolderReadme(model: FolderReadmeModel): string {
     '',
     '## [[pivot]]',
     '',
+    renderBalanceMeetingPivotSection(model),
+    ...(quantumModeDefault() ? [renderQuantumFoldSection(model), ''] : []),
     ...(() => {
       const axes = ['seal', 'balance', 'gravity', 'trinity', 'horo'] as const
       const pivots = pivotSingleFolder(model)
