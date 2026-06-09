@@ -13,6 +13,7 @@
  * @see ./compute.ts — ./paper.ts — ./entropy.ts — ./quantum-thinking.ts
  */
 export * from './compute'
+export { readmeAsLlm, readmeAsLlmForPath, materializeLlmFace, type ReadmeAsLlmResult } from './llm'
 
 export type {
   ScientificPaper,

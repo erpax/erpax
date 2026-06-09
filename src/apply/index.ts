@@ -43,6 +43,14 @@ export {
   type DryCleanCycleResult,
 } from './clean'
 export {
+  agentWorkApproved,
+  packageApprovalMatrix,
+  formatPackageApprovalMatrix,
+  readInstalledPackages,
+  type PackageApprovalRow,
+  type PackageApprovalResult,
+} from './approval'
+export {
   automateCycle,
   maxEfficiencyLoop,
   taskInventory,
@@ -57,6 +65,17 @@ export {
   type TaskInventory,
   type TamperCostReport,
 } from './automate'
+export {
+  coordinatedWave,
+  scanWaveAxisDebt,
+  allocateWaveBatch,
+  reorganizeWaveQueueOnDrift,
+  loadWaveManifest,
+  waveDirectionPath,
+  WAVE_SEAL_AXES,
+  type CoordinatedWaveResult,
+  type WaveAxisDebt,
+} from './wave'
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const main = async () => {

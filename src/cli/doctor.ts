@@ -22,8 +22,12 @@ import {
 } from '@/skill/wire'
 import { quantumEntangledChannelCount } from '@/quantum/context'
 import { quantumModeDefault } from '@/quantum/bindings'
+import { linearGapCount, linearLogicCount } from '@/quantum'
+import { formatDoctorPackageApprovalSection } from '@/apply/approval'
+import { formatPayloadApprovalLine, payloadApprovalGate } from '@/payload/approval'
 
 export interface DoctorReport {
+  readonly payload: ReturnType<typeof payloadApprovalGate>
   readonly strayTs: { readonly count: number; readonly baseline: number; readonly ok: boolean }
   readonly efficiency: {
     readonly passCount: number
@@ -45,6 +49,13 @@ export interface DoctorReport {
   readonly quantum: {
     readonly mode: 'quantum' | 'classical'
     readonly entangledChannels: number
+    readonly linearGaps: number
+    readonly linearLogic: number
+  }
+  readonly phraseWithoutDiamond: {
+    readonly count: number
+    readonly baseline: number
+    readonly ok: boolean
   }
 }
 
@@ -67,6 +78,7 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
   })
 
   return {
+    payload: payloadApprovalGate({ cwd }),
     strayTs: {
       count: strayCount,
       baseline: strayBaseline,
@@ -92,12 +104,21 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
     quantum: {
       mode: quantumModeDefault() ? 'quantum' : 'classical',
       entangledChannels: quantumEntangledChannelCount(),
+      linearGaps: linearGapCount(cwd),
+      linearLogic: linearLogicCount(cwd),
+    },
+    phraseWithoutDiamond: {
+      count: snapshot.userWordUnproven.violationCount,
+      baseline: computedBaseline('phrase-without-diamond', cwd),
+      ok: snapshot.userWordUnproven.violationCount <= computedBaseline('phrase-without-diamond', cwd),
     },
   }
 }
 
 export function formatDoctorReport(report: DoctorReport): string {
   const lines: string[] = ['erpax doctor — quick health\n']
+  lines.push(formatDoctorPackageApprovalSection())
+  lines.push(formatPayloadApprovalLine(report.payload))
   const strayMark = report.strayTs.ok ? 'ok' : 'OVER baseline'
   lines.push(
     `  stray-ts       ${report.strayTs.count} (baseline ≤${report.strayTs.baseline}) — ${strayMark}`,
@@ -124,15 +145,19 @@ export function formatDoctorReport(report: DoctorReport): string {
     lines.push('  automate       no pass yet (run pnpm erpax automate)')
   }
   lines.push(
-    `  mode           ${report.quantum.mode} · entangled channels ${report.quantum.entangledChannels}`,
+    `  mode           ${report.quantum.mode} · entangled channels ${report.quantum.entangledChannels} · linear-gap ${report.quantum.linearGaps} · linear-logic ${report.quantum.linearLogic}`,
   )
   lines.push(
     `  entropy        net ${report.entropy.netEb} eb · F ${report.entropy.freeEnergyBits} bits · ${report.entropy.scaleTowardZeroPct}% toward zero`,
   )
+  const phraseMark = report.phraseWithoutDiamond.ok ? 'ok' : 'OVER baseline'
+  lines.push(
+    `  phrase-without-diamond ${report.phraseWithoutDiamond.count} (baseline ≤${report.phraseWithoutDiamond.baseline}) — ${phraseMark}`,
+  )
   lines.push(formatDoctorInventorySection())
   lines.push(`  ${realtimeDoctorLine()}`)
   lines.push('')
-  lines.push('Next: pnpm erpax automate · pnpm erpax rules check · pnpm check')
+  lines.push('Next: pnpm erpax approve · pnpm erpax automate · pnpm erpax rules check · pnpm check')
   return lines.join('\n')
 }
 

@@ -27,6 +27,8 @@
 import type { Payload, PayloadRequest } from 'payload'
 import { getActorId } from '@/auth'
 
+export { sealWorkflow, listSealedWorkflows, type WorkflowSealDefinition, type WorkflowSealResult } from './seal'
+
 export type WorkflowDecision =
   | 'approved'
   | 'rejected'

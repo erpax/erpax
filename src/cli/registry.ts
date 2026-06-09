@@ -29,6 +29,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       desc: 'Explicit atom paths only (--paths a,b · also: erpax readme --paths)',
       cmd: `${TSX} src/readme/index.ts --paths`,
     },
+    drift: {
+      desc: 'Hand-maintained drift on session paths (--drift · --fix regen)',
+      cmd: `${TSX} src/readme/index.ts --drift`,
+    },
   },
   lint: {
     default: { desc: 'ESLint whole repo', cmd: `${ESLINT} .` },
@@ -121,6 +125,15 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       cmd: `${TSX} src/apply/automate/index.ts watch`,
     },
   },
+  wave: {
+    default: { desc: 'Coordinated self-balancing wave (--batch 30 · --apply)', cmd: `${TSX} src/apply/wave.ts run` },
+    run: { desc: 'Coordinated self-balancing wave', cmd: `${TSX} src/apply/wave.ts run` },
+    watch: { desc: 'Realtime wave queue reorganizer', cmd: `${TSX} src/apply/wave.ts watch` },
+  },
+  workflow: {
+    default: { desc: 'Seal workflow as trinity atom', cmd: `${TSX} src/workflow/seal.ts seal` },
+    seal: { desc: 'Seal workflow definition', cmd: `${TSX} src/workflow/seal.ts seal` },
+  },
   standards: {
     default: {
       desc: 'Standards banners + catalogue verify',
@@ -212,8 +225,21 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   path: {
     hooks: { desc: 'Emit path hooks registry', cmd: 'node src/path/hooks.registry.mjs --emit' },
   },
+  approve: {
+    default: {
+      desc: 'Agent work approval — full package matrix (payload commands first)',
+      cmd: '__gate_packages__',
+    },
+    payload: { desc: 'Payload approval only (types · importmap · migrate:status)', cmd: '__payload_approve__' },
+    packages: { desc: 'Package approval matrix (--list · --smoke)', cmd: '__gate_packages__' },
+  },
   gate: {
-    default: { desc: 'Full CI gate (standards · lint · typecheck · test)', cmd: '__gate__' },
+    default: { desc: 'Full CI gate (package matrix · standards · lint · test)', cmd: '__gate__' },
+    packages: {
+      desc: 'Package approval matrix (payload first · --list · --smoke)',
+      cmd: '__gate_packages__',
+    },
+    payload: { desc: 'Payload approval only (types · importmap · migrate:status)', cmd: '__payload_approve__' },
   },
   doctor: {
     default: { desc: 'Quick health: stray-ts, efficiency, corpus entry', cmd: '__doctor__' },
@@ -231,6 +257,11 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   quantum: {
     default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },
     status: { desc: 'Superposition pending paths, last collapse, bond reciprocity', cmd: `${TSX} src/quantum/status.ts` },
+    seal: { desc: 'Seal linear gaps (entanglement priority)', cmd: `${TSX} src/quantum/linear-gap-cli.ts` },
+    fold: {
+      desc: 'Fold linear segments into quantum surfaces (--linear · --apply)',
+      cmd: `${TSX} src/quantum/fold/index.ts --linear`,
+    },
   },
 }
 
@@ -243,6 +274,7 @@ export const LEGACY_ALIASES: Record<string, string> = {
   'readme:check:waves': 'erpax readme check',
   'readme:regen': 'erpax readme regen',
   'readme:paths': 'erpax readme paths',
+  'readme:drift': 'erpax readme drift',
   'computed:check': 'erpax readme check-full',
   'lint:src': 'erpax lint src',
   'lint:imports': 'erpax lint imports',
