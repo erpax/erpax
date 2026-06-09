@@ -91,6 +91,16 @@ export {
 } from './word'
 
 export {
+  wordFold,
+  digitFold,
+  doubleFold,
+  quantumFoldOf,
+  quantumFoldPresentation,
+  uuidFold64,
+} from './fold'
+export type { QuantumFoldResult, Partition2d } from './fold'
+
+export {
   cell2DKey,
   basis2D,
   superpose2D,
