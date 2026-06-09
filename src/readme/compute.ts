@@ -495,6 +495,12 @@ export interface FolderReadmeModel {
   readonly quantumThinking: QuantumThinkingBlock
 }
 
+const measureOf = (digit: number | null): string | null => {
+  if (digit === null) return null
+  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
+  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
+}
+
 const foldedPathSet = (): Set<string> => {
   const s = new Set<string>()
   for (const n of UUID_MATRIX_NODES) {

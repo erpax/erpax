@@ -2148,6 +2148,7 @@ src/properties/spaces/index.ts:10: * @standard ISO-41001:2018 facility-managemen
 src/properties/spaces/index.ts:11: * @standard ISO-41011:2017 §3.3.5 facility-management space-vocabulary
 src/properties/spaces/index.ts:12: * @standard ISO-19650-1:2018 information-management-using-bim
 src/properties/spaces/index.ts:13: * @standard EN-15221-6:2011 facility-management area-and-space-measurement
+src/provider/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/pwa/index.ts:44: * @standard W3C Service Workers (W3C-SW)
 src/pwa/index.ts:45: * @standard W3C Web App Manifest (W3C-WAM)
 src/pwa/index.ts:46: * @standard W3C Push API + W3C Notifications API
@@ -3894,6 +3895,8 @@ src/posts/index.ts:41: * @compliance WCAG-2.1 level-AA accessibility
 src/properties/index.ts:23: * @compliance SOX §404 internal-controls real-estate-portfolio
 src/properties/investment/properties/index.ts:22: * @compliance SOX §404 internal-controls
 src/properties/spaces/index.ts:15: * @compliance SOX §404 internal-controls space-allocation
+src/provider/index.tsx:4: * @compliance WCAG-2.1 §1.4.3 contrast-minimum
+src/provider/index.tsx:5: * @compliance WCAG-2.1 §1.4.11 non-text-contrast
 src/receivable/allowance.service.ts:9: * @compliance SOX §404 internal-controls
 src/receivable/workflow.service.ts:11: * @compliance SOX §404 internal-controls
 src/regulatory/deferral/accounts/index.ts:16: * @compliance SOX §404 internal-controls
