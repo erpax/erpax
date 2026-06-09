@@ -18,7 +18,7 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf as measureOf } from '@/horo'
+import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -495,12 +495,6 @@ export interface FolderReadmeModel {
   readonly quantumThinking: QuantumThinkingBlock
 }
 
-const measureOf = (digit: number | null): string | null => {
-  if (digit === null) return null
-  const i = HORO_DIGITS.indexOf(digit as (typeof HORO_DIGITS)[number])
-  return i >= 0 ? HORO_MEASURE[i]! : String(digit)
-}
-
 const foldedPathSet = (): Set<string> => {
   const s = new Set<string>()
   for (const n of UUID_MATRIX_NODES) {
@@ -799,7 +793,7 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
     })
     .map(([digit, row]) => ({
       digit,
-      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
+      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
       atoms: row.atoms,
       sealed: row.sealed,
     }))
@@ -839,7 +833,7 @@ export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): Co
     })
     .map(([digit, row]) => ({
       digit,
-      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
+      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
       atoms: row.atoms,
       sealed: row.sealed,
     }))
@@ -1354,7 +1348,7 @@ export function deriveFolderModel(
     boundaryUuid: null,
     trinity: { form, code, proof },
     horo,
-    measure: horoMeasureOf(horo),
+    measure: measureOf(horo),
     imports: boundaryImports,
     exports: boundaryExports,
     escapes: boundaryEscapes,
@@ -1402,7 +1396,7 @@ export function deriveFolderModel(
     ...fields,
     atomPath,
     leaf,
-    measure: horoMeasureOf(horo),
+    measure: measureOf(horo),
     bindings,
     standards,
     analytics,
