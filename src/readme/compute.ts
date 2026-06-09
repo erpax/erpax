@@ -49,7 +49,17 @@ import {
   type DiamondModel,
 } from '@/diamond'
 import { renderGithubBrowseNote } from '@/navigation/github-browse'
-import { pivotFolderStats, pivotSingleFolder, renderPivotMarkdown, renderPivotTable } from '@/pivot'
+import {
+  horoPivotTable,
+  trinityCorpusRollup,
+  renderRootPivotHub,
+  pivotFolderStats,
+  pivotSingleFolder,
+  renderPivotTable,
+  type HoroPivotRow,
+  type ControlAxisFacet,
+} from '@/pivot'
+import { deriveOrientSection, plainLanguageOf, bondWordsOf } from './derive-prose'
 import {
   collectCorpusPapers,
   emptyMergedPapers,
@@ -91,19 +101,8 @@ import {
   renderQuantumFoldSection,
 } from '@/accounting/balance'
 
-/** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
-export interface RingFacet {
-  readonly digit: number
-  readonly measure: string
-  readonly atoms: number
-  readonly facets: readonly string[]
-}
-
-/** A control-axis position (3·6) — governs, off the flow ring. */
-export interface AxisFacet {
-  readonly digit: number
-  readonly atoms: number
-}
+export type RingFacet = HoroPivotRow
+export type AxisFacet = ControlAxisFacet
 
 /** One wrangler binding related to an atom (via TYPE_LINKS or cloudflare subtree). */
 export interface FolderBindingRef {
@@ -238,49 +237,6 @@ function walkCounts(root: string): { skills: number; index: number; tests: numbe
   return { skills, index, tests }
 }
 
-/** In-degree (backlink count) per node index — the lattice's connectivity, for picking principal facets. */
-function inDegrees(): number[] {
-  const deg = new Array<number>(UUID_MATRIX_NODES.length).fill(0)
-  for (const e of UUID_MATRIX_EDGES) {
-    const t = deg[e.t]
-    if (t !== undefined) deg[e.t] = t + 1
-  }
-  return deg
-}
-
-/**
- * Project the corpus onto the closed horo ring: for each ring position (in
- * measure-walk order) count the atoms riding it and name its principal facets
- * (the most-linked atoms at that position — deterministic: in-degree desc, atom asc).
- */
-function projectRing(): { ring: RingFacet[]; axis: AxisFacet[] } {
-  const deg = inDegrees()
-  const byHoro = new Map<number, Array<{ atom: string; deg: number }>>()
-  UUID_MATRIX_NODES.forEach((n, i) => {
-    const arr = byHoro.get(n.horo) ?? []
-    arr.push({ atom: n.atom, deg: deg[i] ?? 0 })
-    byHoro.set(n.horo, arr)
-  })
-  const principal = (digit: number, k: number): string[] =>
-    (byHoro.get(digit) ?? [])
-      .slice()
-      .sort((a, b) => b.deg - a.deg || a.atom.localeCompare(b.atom))
-      .slice(0, k)
-      .map((x) => x.atom)
-  const ring: RingFacet[] = HORO_DIGITS.map((digit, i) => ({
-    digit,
-    measure: HORO_MEASURE[i] ?? String(digit),
-    atoms: (byHoro.get(digit) ?? []).length,
-    facets: principal(digit, 6),
-  }))
-  // Control axis: 3·6 govern (the 9 close already lives on the ring as unity).
-  const axis: AxisFacet[] = [3, 6].map((digit) => ({
-    digit,
-    atoms: (byHoro.get(digit) ?? []).length,
-  }))
-  return { ring, axis }
-}
-
 /** Strip the cross-env / NODE_OPTIONS noise so a script reads as its essential command. */
 function cleanScript(cmd: string): string {
   return cmd.replace(/cross-env\s+(?:[A-Z_]+=(?:"[^"]*"|'[^']*'|\S+)\s+)+/g, '').trim()
@@ -304,7 +260,7 @@ export function deriveModel(
 ): ReadmeModel {
   const pkg = JSON.parse(readFileSync(join(cwd, 'package.json'), 'utf8')) as PackageJson
   const counts = walkCounts(join(cwd, SRC))
-  const { ring, axis } = projectRing()
+  const { ring, axis } = horoPivotTable()
   const deps = pkg.dependencies ?? {}
   const payload = Object.keys(deps)
     .filter((d) => d.startsWith('@payloadcms/') || d === 'payload')
@@ -368,19 +324,8 @@ export function readmeUuid(model: ReadmeModel): string {
 }
 
 /** Prominent orientation block — every surface points to .claude/skills/SKILL.md. */
-export function renderOrientSection(): readonly string[] {
-  return [
-    '## Orient to erpax',
-    '',
-    '**Paste [`https://github.com/erpax/erpax`](https://github.com/erpax/erpax) or clone the repo — both load [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md) first.**',
-    '',
-    '1. `git clone https://github.com/erpax/erpax && cd erpax` (or paste the URL into your IDE)',
-    '2. `pnpm install`',
-    '3. `pnpm erpax doctor` — quick health (stray-ts vs baseline, efficiency pass, corpus entry)',
-    '',
-    'No separate agent setup — the URL and the repo are the same orientation. All surfaces (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) point to the same file.',
-    '',
-  ]
+export function renderOrientSection(cwd: string = process.cwd()): readonly string[] {
+  return deriveOrientSection(cwd)
 }
 
 /** @deprecated Use renderOrientSection */
@@ -463,17 +408,6 @@ export function renderReadme(
   L.push('', renderCorpusQuantumThinkingSection(model.analytics.quantumThinking))
   if (model.papers.total > 0) {
     L.push('', renderMergedPapersSection(model.papers))
-  }
-  if (models && models.length > 0) {
-    L.push(
-      '',
-      '## [[pivot]]',
-      '',
-      renderPivotMarkdown(pivotFolderStats(models)),
-      '',
-      renderCorpusBookPivot(model.atoms),
-      renderGithubBrowseNote(),
-    )
   }
   L.push(
     '',

@@ -11,6 +11,7 @@
  * @audit paths computed deterministically; never hand-mapped per surface
  * @see ../fs -- ../github -- ../mcp -- ../api -- ../quantum -- ../integrity -- ./SKILL.md
  */
+import { vocabularyFoldAlias } from '@/navigation/github-folded.generated'
 import { uuid, jcsCanonicalize } from '@/integrity'
 import { parentAtomPath } from '@/seal'
 import { recordPathVisit, type PathCanonicalEntry } from './record'
@@ -520,7 +521,7 @@ export function toAtomPath(
   }
   const peeled = peel(input, surface)
   if (!peeled) return ''
-  return canonicalSegments(peeled.split('/')).join('/')
+  return vocabularyFoldAlias(canonicalSegments(peeled.split('/')).join('/'))
 }
 
 /**

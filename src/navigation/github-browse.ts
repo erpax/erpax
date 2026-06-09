@@ -1,0 +1,283 @@
+/**
+ * navigation/github-browse — shard literary vocabulary under vocabulary/ for GitHub legibility.
+ *
+ * GitHub truncates directory listings at 1,000 siblings. Form-only atoms with zero
+ * importers fold to `vocabulary/<word>/`; path fold preserves flat `@/<word>` aliases.
+ *
+ *   tsx src/navigation/github-browse.ts --inventory
+ *   tsx src/navigation/github-browse.ts --apply
+ */
+import {
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  renameSync,
+  rmSync,
+  statSync,
+  writeFileSync,
+} from 'node:fs'
+import { join } from 'node:path'
+import { ROOT_PIVOTS, NAV_HUBS } from './groups'
+import {
+  buildImportIndex,
+  wordWithoutLogicViolations,
+  type WordWithoutLogicViolation,
+} from '@/rules/word-without-logic'
+
+const SRC = 'src'
+export const GITHUB_DIR_LIMIT = 1000
+export const VOCABULARY_HUB = 'vocabulary'
+const FOLD_MANIFEST = join(SRC, 'navigation', 'github-folded.generated.ts')
+const SKIP_TREES = new Set(['app', 'migrations'])
+const PROTECTED = new Set<string>([...ROOT_PIVOTS, ...NAV_HUBS, VOCABULARY_HUB, 'github'])
+
+export interface SrcTopLevelCount {
+  readonly dirs: number
+  readonly files: number
+  readonly total: number
+}
+
+export interface FoldCandidate {
+  readonly word: string
+  readonly from: string
+  readonly to: string
+  readonly violation: WordWithoutLogicViolation
+}
+
+export interface VocabularyFoldPlan {
+  readonly before: SrcTopLevelCount
+  readonly candidates: readonly FoldCandidate[]
+  readonly selected: readonly FoldCandidate[]
+  readonly afterDirs: number
+  readonly targetBelow: number
+}
+
+export interface VocabularyFoldResult {
+  readonly plan: VocabularyFoldPlan
+  readonly moved: readonly string[]
+  readonly skipped: readonly string[]
+  readonly dryRun: boolean
+}
+
+const isDir = (p: string): boolean => {
+  try {
+    return statSync(p).isDirectory()
+  } catch {
+    return false
+  }
+}
+
+const hasNestedIndexTs = (dir: string, depth = 0): boolean => {
+  if (depth > 4) return false
+  let entries: string[]
+  try {
+    entries = readdirSync(dir)
+  } catch {
+    return false
+  }
+  for (const e of entries) {
+    if (e.startsWith('.')) continue
+    const p = join(dir, e)
+    if (!isDir(p)) continue
+    if (existsSync(join(p, 'index.ts'))) return true
+    if (hasNestedIndexTs(p, depth + 1)) return true
+  }
+  return false
+}
+
+const hasNestedImporters = (word: string, importIndex: ReadonlyMap<string, number>): boolean => {
+  for (const [k, v] of importIndex) {
+    if (v > 0 && (k === word || k.startsWith(`${word}/`))) return true
+  }
+  return false
+}
+
+export function countSrcTopLevel(cwd: string = process.cwd()): SrcTopLevelCount {
+  const src = join(cwd, SRC)
+  let dirs = 0
+  let files = 0
+  for (const e of readdirSync(src)) {
+    if (SKIP_TREES.has(e)) continue
+    const p = join(src, e)
+    if (isDir(p)) dirs++
+    else files++
+  }
+  return { dirs, files, total: dirs + files }
+}
+
+export function vocabularyFoldCandidates(cwd: string = process.cwd()): FoldCandidate[] {
+  const audit = wordWithoutLogicViolations(cwd)
+  const importIndex = buildImportIndex(cwd)
+  const out: FoldCandidate[] = []
+  for (const v of audit.violations) {
+    if (v.kind !== 'form-only' || v.importerCount > 0) continue
+    if (v.atomPath.includes('/')) continue
+    if (PROTECTED.has(v.atomPath)) continue
+    const from = join(cwd, SRC, v.atomPath)
+    if (!isDir(from)) continue
+    if (hasNestedIndexTs(from) || hasNestedImporters(v.atomPath, importIndex)) continue
+    out.push({
+      word: v.atomPath,
+      from,
+      to: join(cwd, SRC, VOCABULARY_HUB, v.atomPath),
+      violation: v,
+    })
+  }
+  out.sort(
+    (a, b) =>
+      b.violation.readmeWords - a.violation.readmeWords ||
+      a.word.localeCompare(b.word),
+  )
+  return out
+}
+
+export function planVocabularyFold(
+  opts: { readonly cwd?: string; readonly limit?: number; readonly targetBelow?: number } = {},
+): VocabularyFoldPlan {
+  const cwd = opts.cwd ?? process.cwd()
+  const before = countSrcTopLevel(cwd)
+  const targetBelow = opts.targetBelow ?? GITHUB_DIR_LIMIT
+  const candidates = vocabularyFoldCandidates(cwd)
+  const need = Math.max(0, before.dirs - targetBelow + 1)
+  const cap = opts.limit ?? Math.max(need, 800)
+  const selected = candidates.slice(0, Math.min(cap, need > 0 ? need : cap))
+  return { before, candidates, selected, afterDirs: before.dirs - selected.length, targetBelow }
+}
+
+const patchSkillAtomPath = (dir: string, nested: string): void => {
+  const skill = join(dir, 'SKILL.md')
+  if (!existsSync(skill)) return
+  try {
+    const content = readFileSync(skill, 'utf8')
+    const patched = content.replace(/^atomPath:\s*.+$/m, `atomPath: ${nested}`)
+    if (patched !== content) writeFileSync(skill, patched)
+  } catch {
+    /* best-effort */
+  }
+}
+
+const emitFoldManifest = (words: readonly string[], cwd: string): void => {
+  const sorted = [...words].sort()
+  writeFileSync(
+    join(cwd, FOLD_MANIFEST),
+    `/**
+ * AUTO-GENERATED by src/navigation/github-browse.ts — do not edit.
+ */
+export const VOCABULARY_FOLDED_WORDS: readonly string[] = ${JSON.stringify(sorted, null, 2)} as const
+export const VOCABULARY_FOLD_COUNT = ${sorted.length} as const
+const FOLD_SET = new Set<string>(VOCABULARY_FOLDED_WORDS)
+export const isVocabularyFolded = (word: string): boolean => FOLD_SET.has(word)
+export const vocabularyFoldAlias = (atomPath: string): string => {
+  if (!atomPath || atomPath.includes('/')) return atomPath
+  return FOLD_SET.has(atomPath) ? \`${VOCABULARY_HUB}/\${atomPath}\` : atomPath
+}
+`,
+  )
+}
+
+const loadExistingFolded = (cwd: string): string[] => {
+  const manifest = join(cwd, FOLD_MANIFEST)
+  if (!existsSync(manifest)) return []
+  try {
+    return [...readFileSync(manifest, 'utf8').matchAll(/"([a-z][a-z0-9]*)"/g)]
+      .map((x) => x[1]!)
+      .filter((w, i, a) => a.indexOf(w) === i)
+  } catch {
+    return []
+  }
+}
+
+export function repairWrongVocabularyFolds(cwd: string = process.cwd()): readonly string[] {
+  const importIndex = buildImportIndex(cwd)
+  const repaired: string[] = []
+  const words = loadExistingFolded(cwd)
+  const keep = new Set<string>()
+  for (const word of words) {
+    const top = join(cwd, SRC, word)
+    const vocab = join(cwd, SRC, VOCABULARY_HUB, word)
+    const vocabExists = existsSync(vocab)
+    const nestedCode = vocabExists && hasNestedIndexTs(vocab)
+    const nestedImports = hasNestedImporters(word, importIndex)
+    if (!nestedCode && !nestedImports) {
+      keep.add(word)
+      continue
+    }
+    if (vocabExists && !existsSync(top)) {
+      renameSync(vocab, top)
+      patchSkillAtomPath(top, word)
+    } else if (vocabExists && existsSync(top)) {
+      rmSync(vocab, { recursive: true, force: true })
+    }
+    repaired.push(word)
+  }
+  if (repaired.length > 0) emitFoldManifest([...keep].sort(), cwd)
+  return repaired
+}
+
+export function applyVocabularyFold(
+  opts: {
+    readonly cwd?: string
+    readonly limit?: number
+    readonly targetBelow?: number
+    readonly dryRun?: boolean
+  } = {},
+): VocabularyFoldResult {
+  const cwd = opts.cwd ?? process.cwd()
+  const dryRun = opts.dryRun ?? false
+  const plan = planVocabularyFold(opts)
+  const vocabRoot = join(cwd, SRC, VOCABULARY_HUB)
+  if (!dryRun && !existsSync(vocabRoot)) mkdirSync(vocabRoot, { recursive: true })
+  const moved: string[] = []
+  const skipped: string[] = []
+  const existing = new Set(loadExistingFolded(cwd))
+  for (const c of plan.selected) {
+    const topExists = existsSync(c.from)
+    const vocabExists = existsSync(c.to)
+    if (vocabExists && topExists) {
+      if (!dryRun) rmSync(c.from, { recursive: true, force: true })
+      moved.push(c.word)
+      existing.add(c.word)
+      continue
+    }
+    if (vocabExists) {
+      skipped.push(`${c.word}:dest-exists`)
+      continue
+    }
+    if (!topExists) {
+      skipped.push(`${c.word}:missing`)
+      continue
+    }
+    if (dryRun) {
+      moved.push(c.word)
+      continue
+    }
+    renameSync(c.from, c.to)
+    patchSkillAtomPath(c.to, `${VOCABULARY_HUB}/${c.word}`)
+    moved.push(c.word)
+    existing.add(c.word)
+  }
+  if (!dryRun && moved.length > 0) emitFoldManifest([...existing].sort(), cwd)
+  return { plan, moved, skipped, dryRun }
+}
+
+export function renderGithubBrowseNote(cwd: string = process.cwd()): string {
+  const { dirs, total } = countSrcTopLevel(cwd)
+  const folded = loadExistingFolded(cwd).length
+  if (total > GITHUB_DIR_LIMIT || folded > 0) {
+    return `GitHub truncates \`src/\` listings above **${GITHUB_DIR_LIMIT}** entries (**${total}** now: **${dirs}** dirs). Literary vocabulary shards under [\`${VOCABULARY_HUB}/\`](src/vocabulary/) (**${folded}** folded) — navigate with \`pnpm erpax doctor\`, the uuid-matrix, and \`pnpm erpax corpus words\`, not the GitHub tree.`
+  }
+  return `\`src/\` has **${total}** top-level entries (under GitHub's **${GITHUB_DIR_LIMIT}** limit) — browse via matrix + \`pnpm erpax doctor\`.`
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  if (process.argv.includes('--inventory') || !process.argv.includes('--apply')) {
+    const plan = planVocabularyFold()
+    console.log(`src/ top-level: ${plan.before.total} (${plan.before.dirs} dirs) → would move ${plan.selected.length} → ${plan.afterDirs} dirs`)
+  }
+  if (process.argv.includes('--apply')) {
+    repairWrongVocabularyFolds()
+    const r = applyVocabularyFold()
+    console.log(`moved ${r.moved.length} · dirs now ${countSrcTopLevel().dirs}`)
+  }
+}

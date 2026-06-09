@@ -145,7 +145,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     mint: { desc: 'Mint new atoms', cmd: 'node src/generate/mint.mjs' },
     words: { desc: 'Literary-word audit (top 50 + use-case scores)', cmd: `${TSX} src/corpus/words.ts` },
     book: {
-      desc: 'Interactive book spread + prev/next (optional --open)',
+      desc: 'Interactive book spread (--index harmony · optional --open)',
       cmd: `${TSX} src/book/cli.ts`,
     },
   },
