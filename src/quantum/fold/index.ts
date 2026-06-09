@@ -3,24 +3,13 @@
  *
  * Linear logic merged in index — no linear-logic.ts sibling (tamper surface concentrated).
  */
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { join, relative } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import { nodeOf, merge } from '@/uuid/matrix'
 import { digitAddress } from '@/digit'
 import { wordTokenUuid } from '@/word'
 import { interact64, combineArchitectures, architectureMask } from '@/quantum/word'
-import {
-  existsSync,
-  mkdirSync,
-  readdirSync,
-  readFileSync,
-  statSync,
-  writeFileSync,
-} from 'node:fs'
-import { join } from 'node:path'
-import { indexVolumes, sortBookPages } from '@/book'
-import { CODE_MARKERS, TRINITY } from '@/law/folder/constants'
-import { isOrphanReexportOnly, wordWithoutLogicViolations } from '@/rules/word-without-logic'
-import { recordOnPath, recordOnPathMerged } from '@/path'
-import { nodeOf, neighborsOf, backlinksOf, UUID_MATRIX_ROOT } from '@/uuid/matrix'
 
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 
@@ -109,12 +98,11 @@ export function quantumFoldPresentation(fold: QuantumFoldResult): {
   }
   return {
     wordFold: hex(fold.wordHalf),
-    digitFold: hex(fold.digitFold),
+    digitFold: hex(fold.digitHalf),
     interact64: hex(fold.interact64),
     combined128: fold.combined128.toString(16),
   }
 }
-
 
 export type LinearKind = 'duplicate-helper' | 'hand-array' | 'import-chain' | 'readme-linear'
 
@@ -144,100 +132,362 @@ export interface ApplyLinearFoldsResult {
   readonly scan: LinearLogicScan
 }
 
-export function findLinearLogic(_cwd = process.cwd()): LinearLogicScan {
-  return { segments: [], pairs: [] }
+const LINEAR_SRC = 'src'
+const LINEAR_SKIP_TREES = new Set(['app', 'migrations'])
+const LINEAR_TS_EXT = /\.tsx?$/i
+const LINEAR_SKIP_FILE = /\.(generated|d\.ts|test)$/i
+
+const shapeFold64 = (shape: string): bigint => uuidFold64(shape) & architectureMask()
+const linearBondOf = (a: string, b: string): string =>
+  interact64(wordFold(a), wordFold(b)).toString(16)
+const linearIdOf = (path: string, shape: string): string =>
+  interact64(wordFold(path), shapeFold64(shape)).toString(16).padStart(16, '0').slice(0, 16)
+
+const FOLD_REGISTRY: Readonly<
+  Record<string, { readonly export: string; readonly target: string; readonly runner: string }>
+> = {
+  measureOf: { export: 'horoMeasureOf', target: 'horo/index.ts', runner: '@/horo' },
+  trinityOf: { export: 'trinityFlagsOf', target: 'pivot/horo-table.ts', runner: '@/pivot/compute' },
+  sealedFromReadme: { export: 'sealedFromReadme', target: 'pivot/horo-table.ts', runner: '@/pivot/compute' },
+  horoDigits: { export: 'HORO_DIGITS', target: 'horo/index.ts', runner: '@/horo' },
 }
 
-export function foldLinearPair(_a: LinearSegment, _b: LinearSegment): FoldedLinearPair | null {
-  return null
+const HELPER_PATTERNS: ReadonlyArray<{ readonly name: string; readonly re: RegExp }> = [
+  { name: 'measureOf', re: /(?:const|function)\s+measureOf\s*=?\s*\([^)]*\)[^{]*\{[^}]*HORO_DIGITS\.indexOf/s },
+  { name: 'trinityOf', re: /(?:const|function)\s+trinityOf\s*=?\s*\([^)]*\)[^{]*\{[^}]*SKILL\.md/s },
+  {
+    name: 'sealedFromReadme',
+    re: /(?:const|function)\s+sealedFromReadme\s*=?\s*\([^)]*\)[^{]*\{[^}]*\[\[seal\]\]/s,
+  },
+]
+
+const HORO_ARRAY_RE = /\[1,\s*2,\s*4,\s*8,\s*7,\s*5,\s*9\]/
+
+const linearIsDir = (p: string): boolean => {
+  try {
+    return statSync(p).isDirectory()
+  } catch {
+    return false
+  }
 }
 
-export function linearLogicCount(_cwd = process.cwd()): number {
-  return findLinearLogic(_cwd).segments.length
+const scanDuplicateHelpers = (cwd: string): LinearSegment[] => {
+  const src = join(cwd, LINEAR_SRC)
+  const hits: LinearSegment[] = []
+  const walk = (dir: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir)
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      if (linearIsDir(p)) {
+        walk(p)
+        continue
+      }
+      if (!LINEAR_TS_EXT.test(e) || LINEAR_SKIP_FILE.test(e)) continue
+      let content: string
+      try {
+        content = readFileSync(p, 'utf8')
+      } catch {
+        continue
+      }
+      const rel = relative(src, p).replace(/\\/g, '/')
+      for (const { name, re } of HELPER_PATTERNS) {
+        if (!re.test(content)) continue
+        const fold = FOLD_REGISTRY[name]!
+        if (rel === fold.target) continue
+        hits.push({
+          linearId: linearIdOf(rel, name),
+          path: rel,
+          kind: 'duplicate-helper',
+          shape: name,
+          foldHint: `fold ${name} → ${fold.export} from ${fold.runner}`,
+        })
+      }
+    }
+  }
+  walk(src)
+  return hits
 }
 
-export function applyLinearFolds(_cwd = process.cwd()): ApplyLinearFoldsResult {
-  const scan = findLinearLogic(_cwd)
-  return { applied: 0, scan }
+const scanHandArrays = (cwd: string): LinearSegment[] => {
+  const src = join(cwd, LINEAR_SRC)
+  const hits: LinearSegment[] = []
+  const walk = (dir: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir)
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      if (linearIsDir(p)) {
+        walk(p)
+        continue
+      }
+      if (!LINEAR_TS_EXT.test(e) || LINEAR_SKIP_FILE.test(e)) continue
+      let content: string
+      try {
+        content = readFileSync(p, 'utf8')
+      } catch {
+        continue
+      }
+      const rel = relative(src, p).replace(/\\/g, '/')
+      if (rel === 'horo/index.ts') continue
+      if (!HORO_ARRAY_RE.test(content)) continue
+      hits.push({
+        linearId: linearIdOf(rel, 'horoDigits'),
+        path: rel,
+        kind: 'hand-array',
+        shape: 'horoDigits',
+        foldHint: 'fold horo ring array → HORO_DIGITS from @/horo',
+      })
+    }
+  }
+  walk(src)
+  return hits
+}
+
+const scanImportChains = (cwd: string): LinearSegment[] => {
+  const src = join(cwd, LINEAR_SRC)
+  const graph = new Map<string, Set<string>>()
+  const fileOfAtom = new Map<string, string>()
+  const walk = (dir: string, rel: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir)
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      const childRel = rel ? `${rel}/${e}` : e
+      if (linearIsDir(p)) {
+        if (!rel && LINEAR_SKIP_TREES.has(e)) continue
+        walk(p, childRel)
+        continue
+      }
+      if (!LINEAR_TS_EXT.test(e) || LINEAR_SKIP_FILE.test(e)) continue
+      if (e !== 'index.ts' && !childRel.includes('/')) continue
+      let content: string
+      try {
+        content = readFileSync(p, 'utf8')
+      } catch {
+        continue
+      }
+      const atom = childRel.replace(/\/index\.tsx?$/, '').replace(/\.tsx?$/, '')
+      fileOfAtom.set(atom, childRel)
+      const deps = new Set<string>()
+      for (const m of content.matchAll(/from\s+['"]@\/([^'"]+)['"]/g)) {
+        deps.add((m[1] ?? '').split('/')[0]!)
+      }
+      graph.set(atom, deps)
+    }
+  }
+  walk(src, '')
+  const isFoldBarrel = (atom: string): boolean =>
+    atom === 'quantum/fold' || atom.endsWith('/fold') || atom === 'horo' || atom === 'pivot/compute'
+  const hits: LinearSegment[] = []
+  for (const [start, deps] of graph) {
+    for (const mid of deps) {
+      const midDeps = graph.get(mid)
+      if (!midDeps) continue
+      for (const end of midDeps) {
+        if (start === end || mid === end || isFoldBarrel(mid)) continue
+        hits.push({
+          linearId: linearIdOf(start, `${start}→${mid}→${end}`),
+          path: fileOfAtom.get(start) ?? start,
+          kind: 'import-chain',
+          shape: 'chain',
+          foldHint: `fold chain via @/quantum/fold — ${start}→${mid}→${end}`,
+        })
+      }
+    }
+  }
+  return hits
+}
+
+const scanReadmeLinear = (cwd: string): LinearSegment[] => {
+  const compute = join(cwd, LINEAR_SRC, 'readme/compute.ts')
+  if (!existsSync(compute)) return []
+  const loops = (readFileSync(compute, 'utf8').match(/for\s*\([^)]*HORO_DIGITS/g) ?? []).length
+  if (loops < 2) return []
+  return [
+    {
+      linearId: linearIdOf('readme/compute.ts', 'horo-loop'),
+      path: 'readme/compute.ts',
+      kind: 'readme-linear',
+      shape: 'horo-loop',
+      foldHint: 'fold horo ring walks via horoMeasureOf single pass',
+    },
+  ]
+}
+
+const pairSegments = (segments: readonly LinearSegment[]): LinearSegment[] => {
+  const byShape = new Map<string, LinearSegment[]>()
+  for (const s of segments) {
+    if (s.kind !== 'duplicate-helper' && s.kind !== 'hand-array') continue
+    const list = byShape.get(s.shape) ?? []
+    list.push(s)
+    byShape.set(s.shape, list)
+  }
+  const paired = new Map<string, LinearSegment>()
+  for (const [, list] of byShape) {
+    if (list.length < 2) continue
+    const sorted = [...list].sort((a, b) => a.path.localeCompare(b.path))
+    for (let i = 0; i < sorted.length; i++) {
+      const a = sorted[i]!
+      const b = sorted[(i + 1) % sorted.length]!
+      if (a.path !== b.path) paired.set(a.linearId, { ...a, pairedWith: b.path })
+    }
+  }
+  return segments.map((s) => paired.get(s.linearId) ?? s)
+}
+
+export function foldLinearPair(a: LinearSegment, b: LinearSegment): FoldedLinearPair {
+  const reg = FOLD_REGISTRY[a.shape] ?? FOLD_REGISTRY[b.shape]
+  return {
+    bond: linearBondOf(a.path, b.path),
+    targetPath: reg?.target ?? 'quantum/fold/index.ts',
+    mergedExport: reg?.export ?? 'doubleFold',
+    runner: reg?.runner ?? '@/quantum/fold',
+  }
+}
+
+export function findLinearLogic(cwd: string = process.cwd()): LinearLogicScan {
+  const segments = pairSegments([
+    ...scanDuplicateHelpers(cwd),
+    ...scanHandArrays(cwd),
+    ...scanImportChains(cwd),
+    ...scanReadmeLinear(cwd),
+  ])
+  const pairs: FoldedLinearPair[] = []
+  const seen = new Set<string>()
+  for (const s of segments) {
+    if (!s.pairedWith) continue
+    const key = [s.path, s.pairedWith].sort().join('|')
+    if (seen.has(key)) continue
+    seen.add(key)
+    pairs.push(
+      foldLinearPair(s, {
+        linearId: linearIdOf(s.pairedWith, s.shape),
+        path: s.pairedWith,
+        kind: s.kind,
+        shape: s.shape,
+        foldHint: s.foldHint,
+      }),
+    )
+  }
+  return { segments, pairs: pairs.sort((a, b) => b.bond.localeCompare(a.bond)) }
+}
+
+export function linearLogicCount(cwd: string = process.cwd()): number {
+  return findLinearLogic(cwd).pairs.length
+}
+
+const foldMeasureFile = (cwd: string, rel: string): boolean => {
+  const file = join(cwd, LINEAR_SRC, rel)
+  if (!existsSync(file)) return false
+  let content = readFileSync(file, 'utf8')
+  if (!content.includes('measureOf') || content.includes('horoMeasureOf')) return false
+  if (!content.includes('horoMeasureOf')) {
+    content = content.replace(
+      /import\s*\{([^}]+)\}\s*from\s*'@\/horo'/,
+      (_, names: string) =>
+        `import {${names.includes('horoMeasureOf') ? names : `${names.trim()}, horoMeasureOf`}} from '@/horo'`,
+    )
+    if (!content.includes('horoMeasureOf')) {
+      content = `import { horoMeasureOf } from '@/horo'\n${content}`
+    }
+  }
+  content = content.replace(/\bmeasureOf\b/g, 'horoMeasureOf')
+  content = content.replace(
+    /const horoMeasureOf\s*=\s*\([^)]*\)[^}]*\{[^}]*HORO_DIGITS[^}]*\}\s*\n/s,
+    '',
+  )
+  const prior = readFileSync(file, 'utf8')
+  if (prior === content) return false
+  writeFileSync(file, content)
+  return true
+}
+
+const foldTrinityFile = (cwd: string, rel: string): boolean => {
+  const file = join(cwd, LINEAR_SRC, rel)
+  if (!existsSync(file)) return false
+  let content = readFileSync(file, 'utf8')
+  if (!content.includes('trinityOf') && !content.match(/const sealedFromReadme\s*=/)) return false
+  if (content.includes('trinityFlagsOf') && !content.match(/const sealedFromReadme\s*=/)) return false
+  if (!content.includes("from '@/pivot")) {
+    content = `import { trinityFlagsOf, sealedFromReadme } from '@/pivot/compute'\n${content}`
+  }
+  content = content.replace(/\btrinityOf\b/g, 'trinityFlagsOf')
+  content = content.replace(
+    /const trinityFlagsOf\s*=\s*\([^)]*\)[^}]*\{[^}]*SKILL\.md[^}]*\}\s*\n/s,
+    '',
+  )
+  content = content.replace(
+    /const sealedFromReadme\s*=\s*\([^)]*\)[^}]*\{[^}]*\[\[seal\]\][^}]*\}\s*\n/s,
+    '',
+  )
+  const prior = readFileSync(file, 'utf8')
+  if (prior === content) return false
+  writeFileSync(file, content)
+  return true
+}
+
+export function applyLinearFolds(cwd: string = process.cwd(), max = 15): ApplyLinearFoldsResult {
+  const before = findLinearLogic(cwd)
+  let applied = 0
+  const exports = new Set(before.pairs.slice(0, max).map((p) => p.mergedExport))
+  if (exports.has('horoMeasureOf')) {
+    for (const seg of before.segments.filter((s) => s.shape === 'measureOf')) {
+      if (foldMeasureFile(cwd, seg.path)) applied++
+    }
+  }
+  if (exports.has('trinityFlagsOf') || exports.has('sealedFromReadme')) {
+    for (const seg of before.segments.filter((s) => s.shape === 'trinityOf' || s.shape === 'sealedFromReadme')) {
+      if (foldTrinityFile(cwd, seg.path)) applied++
+    }
+  }
+  return { applied, scan: findLinearLogic(cwd) }
 }
 
 export function formatLinearFoldReport(scan: LinearLogicScan = findLinearLogic()): string {
-  return `linear segments ${scan.segments.length} · folded pairs ${scan.pairs.length}`
-}
-
-export function runQuantumFoldLinear(_cwd = process.cwd()): number {
-  return linearLogicCount(_cwd)
-
-// ── linear gaps (gate axis: linear-gap) ──
-const GAP_SRC = 'src'
-const TS_EXT = /\.tsx?$/i
-const SKIP_FILE = /\.(generated|d\.ts)$/i
-
-export type LinearGapKind = 'harmony-jump' | 'trinity-incomplete' | 'readme-seal-break' | 'orphan-reexport'
-export type SealHintAction = 'stub-index' | 'recordOnPath' | 'readme-paths' | 'reexport-pivot'
-export interface SealHint { readonly action: SealHintAction; readonly atomPath: string; readonly paths?: readonly string[]; readonly detail: string }
-export interface LinearGap { readonly kind: LinearGapKind; readonly atomPath: string; readonly detail: string; readonly entanglement: string; readonly sealHint: SealHint }
-export interface LinearGapScan { readonly gaps: readonly LinearGap[]; readonly byKind: Readonly<Record<LinearGapKind, number>> }
-export interface SealLinearGapsResult { readonly before: number; readonly after: number; readonly sealed: number; readonly remainder: number; readonly paths: readonly string[]; readonly byKind: Readonly<Partial<Record<LinearGapKind, number>>> }
-
-const isDir = (p: string): boolean => { try { return statSync(p).isDirectory() } catch { return false } }
-const isSealedReadme = (cwd: string, atomPath: string): boolean => { const readme = join(cwd, GAP_SRC, atomPath, 'README.md'); return existsSync(readme) && /\[\[seal\]\] `1`/.test(readFileSync(readme, 'utf8')) }
-export function entanglementScore(atomPath: string, other?: string): bigint { const base = interact64(wordFold(atomPath), digitFold(atomPath)); return other ? interact64(base, interact64(wordFold(other), digitFold(other))) : base }
-const entHex = (n: bigint): string => n.toString(16)
-const pop64 = (n: bigint): number => { let c = 0, v = n; while (v > 0n) { c += Number(v & 1n); v >>= 1n }; return c }
-const volLinked = (a: string, b: string): boolean => { const na = nodeOf(a), nb = nodeOf(b); if (!na || !nb) return false; const link = (k: string, tp: string, ta: string) => neighborsOf(k).some((n) => (n.path ?? n.atom) === tp || n.atom === ta) || backlinksOf(k).some((n) => (n.path ?? n.atom) === tp || n.atom === ta); return link(na.atom, b, nb.atom) || link(nb.atom, a, na.atom) }
-const sharedPairs = (cwd: string, vols: ReadonlySet<string>): ReadonlyMap<string, number> => { const m = new Map<string, number>(); const bump = (a: string, b: string) => { const k = a < b ? `${a}|${b}` : `${b}|${a}`; m.set(k, (m.get(k) ?? 0) + 1) }; const walk = (dir: string) => { let entries: string[]; try { entries = readdirSync(dir) } catch { return }; for (const e of entries) { if (e.startsWith('.') || e === 'node_modules') continue; const p = join(dir, e); if (isDir(p)) { walk(p); continue }; if (!TS_EXT.test(e) || SKIP_FILE.test(e)) continue; let content: string; try { content = readFileSync(p, 'utf8') } catch { continue }; const tops = new Set<string>(); for (const mm of content.matchAll(/from\s+['"]@\/([^/'"]+)/g)) { const t = mm[1]!.split('/')[0]!; if (vols.has(t)) tops.add(t) }; const arr = [...tops]; for (let i = 0; i < arr.length; i++) for (let j = i + 1; j < arr.length; j++) bump(arr[i]!, arr[j]!) } }; walk(join(cwd, GAP_SRC)); return m }
-const harmonyJumpGaps = (cwd: string): LinearGap[] => { const vols = [...indexVolumes(cwd)], ord = sortBookPages(vols), shared = sharedPairs(cwd, new Set(vols)), out: LinearGap[] = []; for (let i = 0; i < ord.length - 1; i++) { const a = ord[i]!, b = ord[i + 1]!; if (volLinked(a, b)) continue; const n = shared.get(a < b ? `${a}|${b}` : `${b}|${a}`) ?? 0; if (!n) continue; out.push({ kind: 'harmony-jump', atomPath: a, detail: `bond=0 shared=${n}`, entanglement: entHex(entanglementScore(a, b)), sealHint: { action: 'recordOnPath', atomPath: a, paths: [a, b], detail: 'record' } }) }; return out }
-const trinityIncompleteGaps = (cwd: string): LinearGap[] => { const out: LinearGap[] = [], src = join(cwd, GAP_SRC); const scan = (atomPath: string, dir: string) => { let entries: string[]; try { entries = readdirSync(dir) } catch { return }; const files = new Set(entries.filter((e) => !isDir(join(dir, e)))); if (CODE_MARKERS.some((m) => files.has(m))) { const missing = TRINITY.filter((f) => !files.has(f)); if (missing.length) out.push({ kind: 'trinity-incomplete', atomPath, detail: `missing ${missing.join(',')}`, entanglement: entHex(entanglementScore(atomPath)), sealHint: { action: 'stub-index', atomPath, detail: 'stub' } }) }; if (!files.has('index.ts')) return; for (const e of entries) if (!e.startsWith('.')) { const p = join(dir, e); if (isDir(p)) scan(atomPath ? `${atomPath}/${e}` : e, p) } }; for (const hub of readdirSync(src)) { if (hub.startsWith('.')) continue; const hubDir = join(src, hub); if (!isDir(hubDir) || !existsSync(join(hubDir, 'index.ts'))) continue; for (const child of readdirSync(hubDir)) if (!child.startsWith('.')) { const d = join(hubDir, child); if (isDir(d)) scan(`${hub}/${child}`, d) } }; return out }
-const readmeSealBreakGaps = (cwd: string): LinearGap[] => { const out: LinearGap[] = [], src = join(cwd, GAP_SRC); const walk = (atomPath: string, dir: string) => { let entries: string[]; try { entries = readdirSync(dir) } catch { return }; for (const e of entries) { if (e.startsWith('.')) continue; const p = join(dir, e); if (!isDir(p)) continue; const child = `${atomPath}/${e}`; if ((existsSync(join(p, 'README.md')) || existsSync(join(p, 'index.ts'))) && !isSealedReadme(cwd, child)) out.push({ kind: 'readme-seal-break', atomPath: child, detail: 'seal break', entanglement: entHex(entanglementScore(child, atomPath)), sealHint: { action: 'readme-paths', atomPath: child, paths: [child], detail: 'readme' } }); if (existsSync(join(p, 'index.ts'))) walk(child, p) } }; for (const vol of indexVolumes(cwd)) if (isSealedReadme(cwd, vol)) walk(vol, join(src, vol)); return out }
-const orphanReexportGaps = (cwd: string): LinearGap[] => wordWithoutLogicViolations(cwd).violations.filter((v) => v.kind === 'orphan-export').map((v) => ({ kind: 'orphan-reexport' as const, atomPath: v.atomPath, detail: v.reason, entanglement: entHex(entanglementScore(v.atomPath)), sealHint: { action: 'reexport-pivot' as const, atomPath: v.atomPath, detail: 'pivot' } }))
-const dedupe = (gaps: readonly LinearGap[]): LinearGap[] => { const s = new Set<string>(); return gaps.filter((g) => { const k = `${g.kind}:${g.atomPath}`; if (s.has(k)) return false; s.add(k); return true }) }
-const sortEnt = (gaps: readonly LinearGap[]): LinearGap[] => [...gaps].sort((a, b) => { const sa = BigInt(`0x${a.entanglement || '0'}`), sb = BigInt(`0x${b.entanglement || '0'}`); const pa = pop64(sa), pb = pop64(sb); if (pb !== pa) return pb - pa; if (sb !== sa) return sb > sa ? 1 : -1; return a.atomPath.localeCompare(b.atomPath) })
-export function linearGaps(cwd: string = process.cwd()): LinearGapScan { const gaps = sortEnt(dedupe([...harmonyJumpGaps(cwd), ...trinityIncompleteGaps(cwd), ...readmeSealBreakGaps(cwd), ...orphanReexportGaps(cwd)])); const byKind: Record<LinearGapKind, number> = { 'harmony-jump': 0, 'trinity-incomplete': 0, 'readme-seal-break': 0, 'orphan-reexport': 0 }; for (const g of gaps) byKind[g.kind]++; return { gaps, byKind } }
-export function linearGapCount(cwd: string = process.cwd()): number { return linearGaps(cwd).gaps.length }
-export const stubSkillMd = (p: string): string => { const leaf = p.split('/').pop() ?? p; return `---\nname: ${leaf}\natomPath: ${p}\n---\n\n# ${p}\n` }
-export const stubIndexTs = (p: string): string => { const leaf = p.split('/').pop() ?? p; return `import{deriveFolderModel}from'@/readme/compute'\nexport const atomPath='${p}' as const\nexport function spreadOf(path:string=atomPath){const m=deriveFolderModel(path);return{debit:m.statement.totalDebits,credit:m.statement.totalCredits}}\n` }
-export const stubTestTs = (p: string): string => `import{describe,it,expect}from'vitest'\nimport{atomPath,spreadOf}from'@/${p}'\ndescribe('${p}',()=>{it('ok',()=>{expect(atomPath).toBe('${p}');expect(spreadOf().debit).toBeGreaterThanOrEqual(0)})})\n`
-export async function sealLinearGaps(cwd: string = process.cwd(), max = 30): Promise<SealLinearGapsResult> { const beforeScan = linearGaps(cwd), before = beforeScan.gaps.length; const readmePaths = new Set<string>(), sealedPaths: string[] = [], at = UUID_MATRIX_ROOT; for (const gap of beforeScan.gaps.slice(0, max)) { let acted = false; switch (gap.sealHint.action) { case 'stub-index': { const dir = join(cwd, GAP_SRC, gap.atomPath); mkdirSync(dir, { recursive: true }); if (!existsSync(join(dir, 'index.ts'))) writeFileSync(join(dir, 'index.ts'), stubIndexTs(gap.atomPath)); if (!existsSync(join(dir, 'SKILL.md'))) writeFileSync(join(dir, 'SKILL.md'), stubSkillMd(gap.atomPath)); if (!existsSync(join(dir, 'test.ts'))) writeFileSync(join(dir, 'test.ts'), stubTestTs(gap.atomPath)); acted = true; break }; case 'reexport-pivot': { const ip = join(cwd, GAP_SRC, gap.atomPath, 'index.ts'); if (existsSync(ip) && isOrphanReexportOnly(readFileSync(ip, 'utf8'))) { writeFileSync(ip, stubIndexTs(gap.atomPath)); const tp = join(cwd, GAP_SRC, gap.atomPath, 'test.ts'); if (!existsSync(tp)) writeFileSync(tp, stubTestTs(gap.atomPath)); acted = true }; break }; case 'readme-paths': for (const p of gap.sealHint.paths ?? [gap.atomPath]) readmePaths.add(p); acted = true; break; case 'recordOnPath': recordOnPathMerged(gap.atomPath, { kind: 'linear-gap.seal', gapKind: gap.kind }, at); acted = true; break }; if (acted && gap.sealHint.action !== 'readme-paths') sealedPaths.push(gap.atomPath) }; if (readmePaths.size > 0) { const paths = [...readmePaths].sort(); const { materializeComputedFacesForPathsStable } = await import('@/readme/compute'); materializeComputedFacesForPathsStable(paths, cwd); for (const p of paths) { recordOnPath(p, { kind: 'linear-gap.readme-paths', paths }, at); sealedPaths.push(p) } }; const after = linearGaps(cwd).gaps.length; const byKind: Partial<Record<LinearGapKind, number>> = {}; for (const g of beforeScan.gaps) byKind[g.kind] = (byKind[g.kind] ?? 0) + 1; return { before, after, sealed: Math.max(0, before - after), remainder: after, paths: [...new Set(sealedPaths)].sort(), byKind } }
-
-export function formatLinearGapReport(
-  scan: ReturnType<typeof linearGaps>,
-  seal?: Awaited<ReturnType<typeof sealLinearGaps>>,
-): string {
-  const lines = ['erpax quantum seal — linear gaps\n', `  gaps found     ${scan.gaps.length}`]
-  for (const kind of ['harmony-jump', 'trinity-incomplete', 'readme-seal-break', 'orphan-reexport'] as const) {
-    lines.push(`    ${kind.padEnd(20)} ${scan.byKind[kind]}`)
+  const lines = [
+    'erpax quantum fold — linear logic',
+    `  segments found   ${scan.segments.length}`,
+    `  pairs (unfolded) ${scan.pairs.length}`,
+  ]
+  for (const s of scan.segments.slice(0, 10)) {
+    lines.push(`    ${s.kind} · ${s.path}${s.pairedWith ? ` · pair ${s.pairedWith}` : ''}`)
+    lines.push(`      ${s.foldHint}`)
   }
-  if (seal) {
-    lines.push(
-      `  sealed         ${seal.sealed} (before ${seal.before} → after ${seal.after})`,
-      `  remainder      ${seal.remainder}`,
-    )
-    if (seal.paths.length) lines.push(`  sample paths   ${seal.paths.slice(0, 8).join(' · ')}`)
-  } else {
-    for (const g of scan.gaps.slice(0, 5)) lines.push(`    ${g.kind} · ${g.atomPath} · 0x${g.entanglement}`)
+  for (const p of scan.pairs.slice(0, 5)) {
+    lines.push(`    bond 0x${p.bond} → ${p.runner}.${p.mergedExport}`)
   }
-  lines.push('\nAxis: linear-gap · fix: pnpm erpax quantum seal')
+  lines.push('Axis: linear-logic · fix: pnpm erpax quantum fold --linear --apply')
   return lines.join('\n')
 }
 
-export async function runQuantumSeal(apply = true): Promise<number> {
-  const scan = linearGaps()
+export function runQuantumFoldLinear(apply = false, max = 15): number {
   if (!apply) {
-    console.log(formatLinearGapReport(scan))
-    return scan.gaps.length > 0 ? 1 : 0
+    console.log(formatLinearFoldReport())
+    return linearLogicCount() > 0 ? 1 : 0
   }
-  const seal = await sealLinearGaps()
-  console.log(formatLinearGapReport(scan, seal))
-  return seal.remainder > 0 ? 1 : 0
+  const result = applyLinearFolds(process.cwd(), max)
+  console.log(formatLinearFoldReport(result.scan))
+  console.log(`  applied ${result.applied} fold(s)`)
+  return result.scan.pairs.length > 0 ? 1 : 0
 }
 
-
-if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
-  if (process.argv.includes('--seal')) {
-    runQuantumSeal(!process.argv.includes('--dry')).then((c) => process.exit(c))
-  } else if (process.argv.includes('--linear')) {
-    console.log(formatLinearFoldReport())
-    process.exit(linearLogicCount() > 0 ? 1 : 0)
-  }
+const __cli = process.argv[1]
+if (__cli && import.meta.url === pathToFileURL(__cli).href && process.argv.includes('--linear')) {
+  process.exit(runQuantumFoldLinear(process.argv.includes('--apply')))
 }
