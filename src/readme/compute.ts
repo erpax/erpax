@@ -18,7 +18,7 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
+import { HORO_DIGITS, horoMeasureOf } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -56,6 +56,7 @@ import {
   pivotFolderStats,
   pivotSingleFolder,
   renderPivotTable,
+  renderPivotMarkdown,
   type HoroPivotRow,
   type ControlAxisFacet,
 } from '@/pivot'
@@ -799,7 +800,7 @@ export function aggregateCorpusAnalytics(models: readonly FolderReadmeModel[]): 
     })
     .map(([digit, row]) => ({
       digit,
-      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
+      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
       atoms: row.atoms,
       sealed: row.sealed,
     }))
@@ -839,7 +840,7 @@ export function mergeCorpusAnalytics(a: CorpusAnalytics, b: CorpusAnalytics): Co
     })
     .map(([digit, row]) => ({
       digit,
-      measure: digit === 0 ? 'off-ring' : measureOf(digit) ?? String(digit),
+      measure: digit === 0 ? 'off-ring' : horoMeasureOf(digit) ?? String(digit),
       atoms: row.atoms,
       sealed: row.sealed,
     }))

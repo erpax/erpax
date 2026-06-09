@@ -81,6 +81,9 @@ export {
   renderCorpusQuantumThinkingSection,
 } from './quantum-thinking'
 
+export type { HandMaintainedViolation, HandMaintainedAudit, HandMaintainedFix, HandMaintainedKind, ComputeTheRestResult } from './hand-maintained'
+export { handMaintainedViolations, computeTheRest, boundedSessionPaths, pathsForScope, SESSION_COMPUTE_ROOTS, MAX_HAND_MAINTAINED_PATHS } from './hand-maintained'
+
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
@@ -100,9 +103,11 @@ import {
   verifyComputedFacesForPaths,
   verifyComputedFacesInWaves,
 } from './compute'
+import { computeTheRest, handMaintainedViolations } from './hand-maintained'
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const cwd = process.cwd()
+  const driftOnly = process.argv.includes('--drift')
   const verify = process.argv.includes('--verify')
   const waves = process.argv.includes('--waves')
   const foldersOnly = process.argv.includes('--folders-only')
@@ -111,6 +116,21 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     pathsIdx >= 0 && process.argv[pathsIdx + 1]
       ? process.argv[pathsIdx + 1]!.split(',').map((s) => s.trim()).filter(Boolean)
       : undefined
+  if (driftOnly) {
+    const fix = process.argv.includes('--fix')
+    const audit = handMaintainedViolations({ cwd, paths: pathFilter })
+    if (audit.violationCount === 0) {
+      console.log(`✓ readme:drift — ${audit.pathsScanned.length} path(s) · zero hand-maintained violations`)
+      process.exit(0)
+    }
+    console.error(`✖ readme:drift — ${audit.violationCount} violation(s)`)
+    for (const v of audit.violations.slice(0, 15)) console.error(`  ${v.path} [${v.kind}] → ${v.fix}: ${v.detail}`)
+    if (fix) {
+      const r = computeTheRest(pathFilter?.[0], cwd)
+      console.log(`readme:drift — regen ${r.computed} faces for ${r.paths.join(', ')}`)
+    }
+    process.exit(1)
+  }
   const waveProgress = (ordinal: number, itemCount: number): void => {
     console.log(`readme:waves — horo wave ${ordinal}/7 · ${itemCount} paths`)
   }

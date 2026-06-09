@@ -21,6 +21,11 @@ import { nonIndexImports } from '@/tamper/import'
 import { concentrationViolations } from './concentration'
 import { wordMatterViolations } from './word-matter'
 import { wordWithoutLogicViolations, type WordWithoutLogicAudit } from './word-without-logic'
+import { userWordUnprovenViolations } from '@/law/folder/user-word'
+import { indexCrossViolationCount } from '@/law/folder/index-cross'
+import { linearLogicCount } from '@/quantum/fold'
+import { linearGapCount } from '@/quantum'
+import { handMaintainedViolations } from '@/readme/hand-maintained'
 import {
   listAtomPaths,
   diamondMembershipScan,
@@ -68,6 +73,7 @@ export interface RulesSnapshot {
   readonly concentration: readonly import('./concentration').ConcentrationViolation[]
   readonly wordMatter: readonly import('./word-matter').WordMatterViolation[]
   readonly wordWithoutLogic: WordWithoutLogicAudit
+  readonly userWordUnproven: ReturnType<typeof userWordUnprovenViolations>
   readonly wordFolder: WordFolderAudit
   readonly wordDiamond: WordDiamondAudit
   readonly axes: readonly RuleAxis[]
@@ -86,6 +92,8 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
   const concentration = concentrationViolations(cwd)
   const wordMatter = wordMatterViolations(cwd)
   const wordWithoutLogic = wordWithoutLogicViolations(cwd)
+  const userWordUnproven = userWordUnprovenViolations(cwd)
+  const handMaintained = handMaintainedViolations({ cwd })
   const wordFolder = wordFolderViolations(cwd)
   const wordDiamond = wordDiamondViolations(cwd)
   let deepImports = 0
@@ -195,10 +203,29 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
       samples: wordDiamond.top50.slice(0, 5).map((v) => `${v.word} (${v.kind})`),
     },
     {
+      axis: 'phrase-without-diamond',
+      violations: userWordUnproven.violationCount,
+      baseline: computedBaseline('phrase-without-diamond', cwd),
+      source: '@/law/folder/user-word',
+    },
+    {
+      axis: 'hand-maintained',
+      violations: handMaintained.violationCount,
+      baseline: computedBaseline('hand-maintained', cwd),
+      source: '@/readme/hand-maintained',
+      samples: handMaintained.violations.slice(0, 5).map((v) => `${v.path} (${v.kind})`),
+    },
+    {
       axis: 'matrix-crack',
       violations: 0,
       baseline: computedBaseline('matrix-crack', cwd),
       source: '@/matrix/constants-audit',
+    },
+    {
+      axis: 'readme-assumption',
+      violations: computeProseLiterals(cwd).length,
+      baseline: 0,
+      source: '@/readme/assumption-literals',
     },
   ]
 
@@ -215,6 +242,7 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
     concentration,
     wordMatter,
     wordWithoutLogic,
+    userWordUnproven,
     wordFolder,
     wordDiamond,
     axes,
