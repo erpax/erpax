@@ -145,7 +145,7 @@
     "overrides": {
       "dompurify": "^3.4.2",
       "uuid": "^14.0.0",
-      "esbuild": "^0.28.0",
+      "esbuild": "^0.28.1",
       "ip-address": "^10.2.0",
       "@eslint/plugin-kit": "^0.7.1",
       "postcss": "^8.5.14"
