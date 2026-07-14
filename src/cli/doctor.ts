@@ -198,6 +198,12 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   console.log(
     `  bare ${report.bare.length} · input-heavy hookless ${report.inputHeavyHookless.length} · receipt → ${path}`,
   )
+  console.log(
+    `  rosetta-purge — compression headroom ${audit.compressionHeadroom.toFixed(1)}x · ${audit.collapseClusters.length} collapse cluster(s):`,
+  )
+  for (const c of audit.collapseClusters.slice(0, 5)) {
+    console.log(`    ${c.members.length} × {${c.signature}} — e.g. ${c.members.slice(0, 3).join(', ')}`)
+  }
   return 0
 }
 

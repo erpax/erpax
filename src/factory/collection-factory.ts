@@ -656,17 +656,27 @@ export function shapeRatchetVerdict(
   }
 }
 
+export interface CollapseCluster {
+  readonly signature: string
+  readonly members: readonly string[]
+}
+
 export interface CorpusAudit {
   readonly collections: number
   readonly signatures: number
   readonly speaking: number
   readonly bare: readonly string[]
   readonly inputHeavyHookless: readonly string[]
+  /** Rosetta-purge: signature classes with ≥ threshold members — collapse candidates
+   * (rows pretending to be tables). Largest first. */
+  readonly collapseClusters: readonly CollapseCluster[]
+  /** collections ÷ signatures — the compression headroom toward the basis (1.0 = fully folded). */
+  readonly compressionHeadroom: number
 }
 
-/** The corpus gap audit, pure — shapes · speaking · bare · input-heavy ([[rules]] rosetta).
+/** The corpus gap audit, pure — shapes · speaking · bare · input-heavy · collapse candidates ([[rules]] rosetta).
  * Derived each number once (2026-07-15 session, ~20K transcript tokens); now a read. */
-export function auditCorpus(configs: ReadonlyArray<CollectionConfig>): CorpusAudit {
+export function auditCorpus(configs: ReadonlyArray<CollectionConfig>, collapseThreshold = 10): CorpusAudit {
   const cat = shapeCatalogue(configs as ReadonlyArray<{ slug: string; fields: Field[] }>)
   const bare: string[] = []
   const heavy: string[] = []
@@ -678,11 +688,17 @@ export function auditCorpus(configs: ReadonlyArray<CollectionConfig>): CorpusAud
     if (hooks === 0 && collectionSignature(c as { fields: Field[] }).length === 0) bare.push(c.slug)
     if (hooks === 0 && required >= 5) heavy.push(c.slug)
   }
+  const collapseClusters: CollapseCluster[] = [...cat.signatures.entries()]
+    .filter(([, members]) => members.length >= collapseThreshold)
+    .map(([signature, members]) => ({ signature, members: [...members] }))
+    .sort((a, b) => b.members.length - a.members.length)
   return {
     collections: cat.collections,
     signatures: cat.basisOccupancy,
     speaking,
     bare,
     inputHeavyHookless: heavy,
+    collapseClusters,
+    compressionHeadroom: cat.basisOccupancy > 0 ? cat.collections / cat.basisOccupancy : 0,
   }
 }

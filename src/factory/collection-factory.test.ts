@@ -281,4 +281,12 @@ describe('factory — rosetta shape basis (the 9-axis fold)', () => {
     expect(auditCorpus([folded]).speaking).toBe(1)
     expect(auditCorpus([raw]).speaking).toBe(0)
   })
+
+  it('rosetta-purge — flags collapse clusters and compression headroom', () => {
+    const money = (slug: string) => cfg(slug, [{ name: 'amount', type: 'number' }] as Field[])
+    const audit = auditCorpus([money('a'), money('b'), money('c'), cfg('u', [{ name: 'title', type: 'text' }] as Field[])], 3)
+    expect(audit.compressionHeadroom).toBe(2) // 4 collections ÷ 2 signatures
+    expect(audit.collapseClusters[0]!.members).toEqual(['a', 'b', 'c']) // the money cluster ≥ threshold 3
+    expect(auditCorpus([money('a'), money('b')], 3).collapseClusters).toEqual([]) // below threshold
+  })
 })
