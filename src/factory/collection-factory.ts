@@ -427,6 +427,10 @@ export const createAccountingCollection = (
   // metadata (ConsistencyAgent's hourly sweep keeps a list of Class F
   // offenders for those, so the gap remains visible until the author
   // upgrades to the structured form).
+  // Rosetta auto-emits (2026-07-15) — derive the event stream from the status
+  // lifecycle when the author declared no structured emits: `<slug>:created` +
+  // `<slug>:<status>` per transition. Closes the mute-corpus gap (208/215
+  // collections silent) at the factory, zero per-collection code.
   const structuredEmits: CollectionAfterChangeHook[] = []
   for (const e of opts.emits ?? []) {
     if (typeof e === 'string') continue
@@ -486,8 +490,55 @@ export const createAccountingCollection = (
     },
     timestamps: true,
     [COLLECTION_DIAMOND_KEY]: collectionDiamond,
+    ...(structuredEmits.length > 0 ? { [EMITS_WIRED_KEY]: true } : {}),
   }
   return config
+}
+
+/** Set when a collection already wired explicit structured emits — the spine fold skips it. */
+export const EMITS_WIRED_KEY = '__erpaxEmitsWired__' as const
+
+/**
+ * Spine fold (2026-07-15) — derive the lifecycle event stream for ANY CollectionConfig
+ * from its `status` select: `<slug>:created` + `<slug>:<status>` per transition.
+ * Applied once at registration (the payload.config map), so every collection —
+ * factory-built or raw — speaks with zero per-collection code (the mute-corpus fold).
+ */
+export function deriveLifecycleEmits(slug: string, fields: ReadonlyArray<Field>): ReadonlyArray<EmitWiring> {
+  const status = fields.find(
+    (f): f is Field & { options: ReadonlyArray<string | StatusOption> } =>
+      (f as { name?: string }).name === 'status' &&
+      (f as { type?: string }).type === 'select' &&
+      Array.isArray((f as { options?: unknown[] }).options),
+  )
+  const values = status?.options.map((o) => (typeof o === 'string' ? o : o.value)) ?? []
+  if (values.length === 0) return []
+  const singular = slug.replace(/ies$/, 'y').replace(/s$/, '').replace(/-/g, '_')
+  const aggregate: AggregateType = (
+    ['invoice', 'bill', 'payment', 'inventory_transfer', 'bank_statement', 'subscription', 'order', 'fixed_asset', 'gl_posting'] as const
+  ).includes(singular as never)
+    ? (singular as AggregateType)
+    : 'record'
+  return [
+    { event: `${slug}:created`, aggregate, onCreate: true },
+    ...values.map((value) => ({ event: `${slug}:${value}`, aggregate, onStatus: value })),
+  ]
+}
+
+/** Fold one registered collection — append derived lifecycle producers unless explicitly wired. */
+export function foldCollectionLifecycle<T extends CollectionConfig>(c: T): T {
+  if ((c as Record<string, unknown>)[EMITS_WIRED_KEY] === true) return c
+  const derived = deriveLifecycleEmits(c.slug, c.fields)
+  if (derived.length === 0) return c
+  const producers = derived.map((e) =>
+    e.onCreate === true
+      ? emitOnCreate(e.event, e.aggregate)
+      : emitOnStatusTransition(e.onStatus as string, e.event, e.aggregate),
+  )
+  return {
+    ...c,
+    hooks: { ...c.hooks, afterChange: [...(c.hooks?.afterChange ?? []), ...producers] },
+  }
 }
 
 // ─── Helpers retained for backwards compat ─────────────────────────
@@ -533,5 +584,107 @@ export const createLineItemArray = (
     type: 'array' as const,
     minRows: 1,
     fields: lineItemFields,
+  }
+}
+
+/**
+ * Rosetta shape basis (2026-07-15) — the closed 9-axis space every collection
+ * signature folds onto. Collections are POINTS in this space; a new collection
+ * is only warranted by a NEW signature — otherwise it is a row in an existing
+ * shape ([[rules]] rosetta limitation · [[horo]] 9-digit ring).
+ */
+export const SHAPE_AXES = [
+  'money', 'party', 'item', 'period', 'lifecycle', 'record', 'schedule', 'report', 'standard',
+] as const
+export type ShapeAxis = (typeof SHAPE_AXES)[number]
+
+const AXIS_MARKERS: Readonly<Record<ShapeAxis, ReadonlySet<string>>> = {
+  money: new Set(['amount', 'debit', 'credit', 'currency', 'total', 'netAmount', 'grossAmount', 'unitPrice']),
+  party: new Set(['employee', 'customer', 'supplier', 'party', 'vendor', 'counterparty', 'owner', 'contact', 'email']),
+  item: new Set(['quantity', 'sku', 'unit', 'item', 'product', 'lot', 'batch', 'warehouse']),
+  period: new Set(['periodStart', 'periodEnd', 'fiscalYear', 'period', 'effectiveFrom', 'dueDate', 'startDate', 'endDate']),
+  lifecycle: new Set(['status']),
+  record: new Set(['findings', 'assessment', 'evidence', 'conclusion', 'rationale', 'review', 'opinion', 'severity']),
+  schedule: new Set(['schedule', 'frequency', 'recurrence', 'installment', 'nextRun']),
+  report: new Set(['reportType', 'template', 'format', 'submission', 'filing']),
+  standard: new Set(['standardId', 'standard', 'regulation', 'framework', 'directive']),
+}
+
+const flattenFieldNames = (fields: ReadonlyArray<Field>, out: string[] = []): string[] => {
+  for (const f of fields) {
+    const named = f as { name?: string; fields?: Field[] }
+    if (typeof named.name === 'string') out.push(named.name)
+    if (Array.isArray(named.fields)) flattenFieldNames(named.fields, out)
+  }
+  return out
+}
+
+/** Fold a built CollectionConfig to its rosetta signature — its point in the closed basis. */
+export function collectionSignature(config: { fields: Field[] }): ReadonlyArray<ShapeAxis> {
+  const names = new Set(flattenFieldNames(config.fields))
+  return SHAPE_AXES.filter((axis) => [...AXIS_MARKERS[axis]].some((m) => names.has(m)))
+}
+
+export interface ShapeCatalogue {
+  readonly collections: number
+  readonly signatures: ReadonlyMap<string, readonly string[]>
+  readonly basisOccupancy: number
+}
+
+/** Compute the shape catalogue over built configs — the measured basis, never hand-picked. */
+export function shapeCatalogue(configs: ReadonlyArray<{ slug: string; fields: Field[] }>): ShapeCatalogue {
+  const signatures = new Map<string, string[]>()
+  for (const c of configs) {
+    const key = collectionSignature(c).join('·') || 'plain'
+    const list = signatures.get(key) ?? []
+    list.push(c.slug)
+    signatures.set(key, list)
+  }
+  return { collections: configs.length, signatures, basisOccupancy: signatures.size }
+}
+
+/**
+ * Rosetta ratchet — fails CLOSED when the basis grows: more distinct signatures
+ * or more collections than the sealed baseline means unfolded schema entropy.
+ */
+export function shapeRatchetVerdict(
+  catalogue: ShapeCatalogue,
+  baseline: { readonly collections: number; readonly signatures: number },
+): { readonly ok: boolean; readonly detail: string } {
+  const ok = catalogue.collections <= baseline.collections && catalogue.basisOccupancy <= baseline.signatures
+  return {
+    ok,
+    detail: `collections ${catalogue.collections}/${baseline.collections} · signatures ${catalogue.basisOccupancy}/${baseline.signatures}`,
+  }
+}
+
+export interface CorpusAudit {
+  readonly collections: number
+  readonly signatures: number
+  readonly speaking: number
+  readonly bare: readonly string[]
+  readonly inputHeavyHookless: readonly string[]
+}
+
+/** The corpus gap audit, pure — shapes · speaking · bare · input-heavy ([[rules]] rosetta).
+ * Derived each number once (2026-07-15 session, ~20K transcript tokens); now a read. */
+export function auditCorpus(configs: ReadonlyArray<CollectionConfig>): CorpusAudit {
+  const cat = shapeCatalogue(configs as ReadonlyArray<{ slug: string; fields: Field[] }>)
+  const bare: string[] = []
+  const heavy: string[] = []
+  let speaking = 0
+  for (const c of configs) {
+    const hooks = (c.hooks?.afterChange?.length ?? 0) + (c.hooks?.beforeChange?.length ?? 0)
+    if ((c.hooks?.afterChange?.length ?? 0) > 0) speaking++
+    const required = JSON.stringify(c.fields).split('"required":true').length - 1
+    if (hooks === 0 && collectionSignature(c as { fields: Field[] }).length === 0) bare.push(c.slug)
+    if (hooks === 0 && required >= 5) heavy.push(c.slug)
+  }
+  return {
+    collections: cat.collections,
+    signatures: cat.basisOccupancy,
+    speaking,
+    bare,
+    inputHeavyHookless: heavy,
   }
 }

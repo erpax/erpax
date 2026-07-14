@@ -83,7 +83,7 @@ import {
 } from '@/i18n'
 
 import { adminGroupOf } from '@/navigation'
-import { COLLECTION_DIAMOND_KEY } from '@/factory/collection-factory'
+import { COLLECTION_DIAMOND_KEY, foldCollectionLifecycle } from '@/factory/collection-factory'
 import type { Config } from '@/types'
 
 /** Payload admin.group — first path segment of the collection atom (computed, never hand-set). */
@@ -302,14 +302,19 @@ export default buildConfig({
   // the same derivation the search / import-export / mcp plugins already use, so the
   // barrel is the single registration list (no hand-list to drift). The `.map`
   // disables doc-locking everywhere per the D1 note above.
-  collections: (Object.values(allCollections) as CollectionConfig[]).map((c) => ({
-    ...c,
-    lockDocuments: false as const,
-    admin: {
-      ...c.admin,
-      group: collectionAdminGroup(c),
-    },
-  })),
+  // foldCollectionLifecycle — the spine fold: every collection with a status
+  // select auto-emits `<slug>:created` + `<slug>:<status>` producers (the
+  // mute-corpus fix: 208/215 collections were silent; one map unmutes all).
+  collections: (Object.values(allCollections) as CollectionConfig[]).map((c) =>
+    foldCollectionLifecycle({
+      ...c,
+      lockDocuments: false as const,
+      admin: {
+        ...c.admin,
+        group: collectionAdminGroup(c),
+      },
+    }),
+  ),
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [
