@@ -93,3 +93,38 @@ export function signalForStep(step: HoroStep): Signal {
 
 /** The whole ring as a chord + spectrum, in measure-walk order. */
 export const SIGNAL_RING: ReadonlyArray<Signal> = HORO_DIGITS.map(signalForStep)
+
+// ─── uuid signal — realtime identity from the address itself (ceccec uuidHero twin, 2026-07-15) ───
+//
+// Any uuid → its unique animation state computed from its OWN bytes: hue, spin period,
+// A432-tempered tone. Identity IS appearance — zero design decisions per item, drift is
+// visible (a changed uuid is a changed hue). Realtime rides the CSS-variable bus: JS
+// writes the vars ONCE per event; CSS transitions/animations do the motion — no re-render
+// loop, no runtime tokens (the ceccec hero.svg animates on GitHub with zero JS).
+
+export interface UuidSignal {
+  readonly hue: number
+  readonly spinMs: number
+  readonly frequency: number
+}
+
+/** Any uuid (hex-bearing string) → hue · realtime spin period · A432-tempered tone. */
+export function uuidSignal(uuid: string): UuidSignal {
+  const hex = uuid.replace(/[^0-9a-f]/gi, '').padEnd(20, '0')
+  const at = (start: number, len: number) => Number.parseInt(hex.slice(start, start + len) || '0', 16)
+  return {
+    hue: at(0, 4) % 360,
+    spinMs: 900 + (at(12, 4) % 9000),
+    frequency: Math.round(A432 * 2 ** (((at(16, 4) % 48) - 24) / 12) * 100) / 100,
+  }
+}
+
+/** The CSS-variable bus — one style object scopes a record's identity; the cascade animates. */
+export function uuidSignalCssVars(uuid: string): Record<string, string> {
+  const s = uuidSignal(uuid)
+  return {
+    '--erpax-hue': String(s.hue),
+    '--erpax-spin-ms': `${s.spinMs}ms`,
+    '--erpax-freq': String(s.frequency),
+  }
+}

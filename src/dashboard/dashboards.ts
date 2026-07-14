@@ -424,6 +424,8 @@ export function shapeWidgetSpec(config: CollectionConfig): WidgetSpec<ShapePanel
       kind: 'localApi',
       load: async (ctx): Promise<ShapePanelVM> => {
         const { collectionSignature } = await import('@/factory/collection-factory')
+        const { key } = await import('@/quantum/cache')
+        const { uuidSignalCssVars } = await import('@/signal')
         const signature = collectionSignature(config as { fields: never[] })
         const res = await ctx.payload.find({
           collection: slug as never,
@@ -442,6 +444,7 @@ export function shapeWidgetSpec(config: CollectionConfig): WidgetSpec<ShapePanel
           slug,
           label,
           signature,
+          cssVars: uuidSignalCssVars(key(`collection:${slug}`)),
           count: res.totalDocs,
           statusPivot: [...pivot.entries()].map(([value, count]) => ({ value, count })),
           latest: docs.slice(0, 5).map((d) => ({

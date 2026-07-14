@@ -27,19 +27,24 @@ export interface ShapePanelVM {
   readonly count: number
   readonly statusPivot: ReadonlyArray<{ readonly value: string; readonly count: number }>
   readonly latest: ReadonlyArray<ShapePanelRow>
+  /** The CSS-variable bus ([[signal]] uuidSignalCssVars) — identity IS appearance;
+   * JS writes once per event, the cascade animates (no re-render loop). */
+  readonly cssVars?: Readonly<Record<string, string>>
 }
 
 const box: React.CSSProperties = {
   border: '1px solid var(--theme-elevation-150)',
+  borderLeft: '3px solid hsl(var(--erpax-hue, 210) 70% 50%)',
   borderRadius: 6,
   padding: '0.75rem 1rem',
   background: 'var(--theme-elevation-50)',
+  transition: 'border-color var(--erpax-spin-ms, 900ms) ease',
 }
 
 export const ShapePanel: React.FC<{ data: ShapePanelVM | null }> = ({ data }) => {
   if (!data) return <div style={box}>—</div>
   return (
-    <div style={box}>
+    <div style={{ ...box, ...(data.cssVars as React.CSSProperties) }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
         <strong>{data.label}</strong>
         <span style={{ opacity: 0.7 }}>{data.count}</span>
