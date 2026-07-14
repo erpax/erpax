@@ -81,6 +81,7 @@ describe('rodin: vortex math = (ℤ/9ℤ) group theory, computed', () => {
   })
 })
 
+// Proof face for ./SKILL.md#division-by-zero — the totalization law is exercised, not asserted by prose.
 describe('rodin — total division by zero (totalization by fold)', () => {
   it('units invert, non-units and the void fold to fusion', () => {
     expect([1, 2, 4, 5, 7, 8].map((n) => zeroDivision(n).inverse)).toEqual([1, 5, 7, 2, 4, 8])

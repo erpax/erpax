@@ -372,6 +372,10 @@ The nine digits split **6 : 3**: the six units mod 9 `{1,2,4,8,7,5}` (the doubli
 
 Matter-twin: `src/services/horo` (`digitalRoot`, `composeSteps`, `nextOctave`). Source: `~/github/ceccec/svilena-me/.vitepress/rodin.js`.
 
+## Division by zero — totalization by fold
+
+Conventional arithmetic leaves `n/0` undefined; `zeroDivision(n)` **totalizes** it — every `n` gets a computable, receipted answer, no throw, no NaN. Two honest readings: the **reverse** `n/0\x` is the multiplicative inverse `n⁻¹ mod 9` for the units (pairs `2·5`, `4·7`, self-inverse `1`,`8`), and the **forward** harmonic `n/0 = 9n` roots to `9` always. The non-units `{3,6,9}` and the void `0` have no inverse (gcd≠1) so they route to their **self-fusion address** — the general law of [[balance]]: a partial function's undefined input folds to a distinct content-address that *names* its undefinedness rather than failing. The unbalanced [[entry]], the unanswerable judgment — same treatment: a fusion address in the ledger, not a crash. `zeroDivisionRoutesAgree()` is the proof discipline (brute-force inverse ≡ gcd unit group). **Honest boundary:** a total-extension convention over ℤ/9ℤ (kin to wheel algebras), exact group theory — not a claim about ℝ. Inhaled 2026-07-15 from ceccec `water/digit`.
+
 The anchor renders **three** ways from one position: **colour** ([[cmyk]], A432 ms), **sound** ([[notes]], A432 Hz) and **touch** ([[vibration]], an A432 sub-harmonic) — the [[signal]] sensory [[trinity]] (the colour↔sound [[duality]] completed by the third), oscillating as [[breath]] over [[phase]], lifting by [[octave]] on the [[torus]].
 
 Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · [[fractal]] · [[balance]] · [[duality]] · [[metatron]] · [[chakra]].

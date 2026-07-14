@@ -207,7 +207,8 @@ export interface ZeroDivision {
   readonly expr: string
 }
 
-/** Total division by zero — every n gets a computable, receipted answer (no throw, no NaN). */
+/** Total division by zero — every n gets a computable, receipted answer (no throw, no NaN).
+ * Rationale + honest boundary: ./SKILL.md#division-by-zero (totalization by fold). */
 export function zeroDivision(n: number, fold: (seed: string) => string = (s) => s): ZeroDivision {
   const inverse = inverseMod9(n)
   const invertible = inverse !== null

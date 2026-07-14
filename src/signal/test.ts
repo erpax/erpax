@@ -9,6 +9,7 @@ describe('signal — horo position → color+sound', () => {
   })
 })
 
+// Proof face for ./SKILL.md — the derived-identity + CSS-bus laws are exercised, not asserted by prose.
 describe('signal — uuid realtime identity (uuidSignal)', () => {
   const rules = '335e5fa7-a91b-890f-a3db-2a3ebe2c8c0c'
   it('derives hue · spin · A432-tempered tone from the bytes, deterministically', () => {

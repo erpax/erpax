@@ -108,7 +108,8 @@ export interface UuidSignal {
   readonly frequency: number
 }
 
-/** Any uuid (hex-bearing string) → hue · realtime spin period · A432-tempered tone. */
+/** Any uuid (hex-bearing string) → hue · realtime spin period · A432-tempered tone.
+ * Rationale + the CSS-variable bus: ./SKILL.md (identity IS its render). */
 export function uuidSignal(uuid: string): UuidSignal {
   const hex = uuid.replace(/[^0-9a-f]/gi, '').padEnd(20, '0')
   const at = (start: number, len: number) => Number.parseInt(hex.slice(start, start + len) || '0', 16)
