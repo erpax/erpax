@@ -3,6 +3,7 @@ import {
   doublingGroup, reverseIsInverse, axisOffCircuit, nineIsVoid, octaveFixesDigit,
   cayleyIsCyclic, compositionMatrix, stateUuids, cmykKey, proof,
   orbit, unitsMod9, DOUBLING, AXIS, RODIN_FLOW_RATIO, RODIN_CONTROL_RATIO,
+  zeroDivision, zeroDivisionRoutesAgree,
 } from '@/rodin'
 import { UUID_MATRIX_NODES } from '@/uuid/matrix'
 
@@ -77,5 +78,20 @@ describe('rodin: vortex math = (ℤ/9ℤ) group theory, computed', () => {
 
   it('the whole proof holds (every Rodin arithmetic claim computed true)', () => {
     expect(Object.values(proof()).every(Boolean)).toBe(true)
+  })
+})
+
+describe('rodin — total division by zero (totalization by fold)', () => {
+  it('units invert, non-units and the void fold to fusion', () => {
+    expect([1, 2, 4, 5, 7, 8].map((n) => zeroDivision(n).inverse)).toEqual([1, 5, 7, 2, 4, 8])
+    for (const n of [3, 6, 9, 0]) {
+      const z = zeroDivision(n)
+      expect(z.inverse).toBeNull()
+      expect(z.expr).toContain('fusion')
+    }
+  })
+  it('harmonic reading always roots to 9 and both routes agree', () => {
+    for (const n of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) expect(zeroDivision(n).harmonicRoot).toBe(9)
+    expect(zeroDivisionRoutesAgree()).toBe(true)
   })
 })

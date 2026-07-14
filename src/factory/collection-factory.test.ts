@@ -17,7 +17,11 @@ import { describe, it, expect } from 'vitest'
 import type { CollectionConfig } from 'payload'
 import type { CollectionDiamondModel } from '@/diamond'
 import type { Field } from 'payload'
-import { createAccountingCollection, COLLECTION_DIAMOND_KEY } from './collection-factory'
+import {
+  createAccountingCollection, COLLECTION_DIAMOND_KEY,
+  collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus,
+  deriveLifecycleEmits, foldCollectionLifecycle,
+} from './collection-factory'
 import { verifyDiamond, diamondUuid } from '@/diamond'
 import {
   notesField, auditFields, statusField, currencyField,
@@ -235,5 +239,46 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
     expect(Object.keys((a as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]!).sort()).toEqual(
       Object.keys((b as CollectionConfig & Record<typeof COLLECTION_DIAMOND_KEY, CollectionDiamondModel | undefined>)[COLLECTION_DIAMOND_KEY]!).sort(),
     )
+  })
+})
+
+describe('factory — rosetta shape basis (the 9-axis fold)', () => {
+  const cfg = (slug: string, fields: Field[]): CollectionConfig =>
+    ({ slug, fields } as CollectionConfig)
+
+  it('folds field names onto the closed axis basis', () => {
+    expect(collectionSignature(cfg('x', [{ name: 'amount', type: 'number' }] as Field[]))).toContain('money')
+    expect(collectionSignature(cfg('x', [{ name: 'status', type: 'select' }] as Field[]))).toContain('lifecycle')
+    expect(collectionSignature(cfg('x', [{ name: 'title', type: 'text' }] as Field[]))).toEqual([])
+  })
+
+  it('catalogue clusters shared signatures; ratchet fails closed on growth', () => {
+    const cat = shapeCatalogue([
+      cfg('a', [{ name: 'amount', type: 'number' }] as Field[]),
+      cfg('b', [{ name: 'total', type: 'number' }] as Field[]),
+      cfg('c', [{ name: 'status', type: 'select' }] as Field[]),
+    ])
+    expect(cat.collections).toBe(3)
+    expect(cat.basisOccupancy).toBe(2)
+    expect(shapeRatchetVerdict(cat, { collections: 3, signatures: 2 }).ok).toBe(true)
+    expect(shapeRatchetVerdict(cat, { collections: 3, signatures: 1 }).ok).toBe(false)
+  })
+
+  it('deriveLifecycleEmits computes created + per-status producers from a status select', () => {
+    const emits = deriveLifecycleEmits('widgets', [
+      { name: 'status', type: 'select', options: [{ label: 'A', value: 'active' }, { label: 'D', value: 'done' }] },
+    ] as Field[])
+    expect(emits.map((e) => e.event)).toEqual(['widgets:created', 'widgets:active', 'widgets:done'])
+    expect(emits[0]!.aggregate).toBe('record')
+  })
+
+  it('foldCollectionLifecycle appends producers; auditCorpus counts speakers', () => {
+    const raw = cfg('things', [
+      { name: 'status', type: 'select', options: [{ label: 'A', value: 'active' }] },
+    ] as Field[])
+    const folded = foldCollectionLifecycle(raw)
+    expect((folded.hooks?.afterChange?.length ?? 0)).toBeGreaterThan(0)
+    expect(auditCorpus([folded]).speaking).toBe(1)
+    expect(auditCorpus([raw]).speaking).toBe(0)
   })
 })
