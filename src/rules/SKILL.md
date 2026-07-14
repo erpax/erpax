@@ -106,4 +106,18 @@ Monolithic hub `index.ts` files violate the fractal law — logic must **distrib
 
 **Cross education (e91c6593):** concentration = uncrossed **deployment/partition** axis — `crossConceptForViolation` maps `logic-concentration` → `deployment`; multi-domain imports → `2d-partition`. Monitor source: `logic-concentration` · auto-fix suggestion: split to child atoms + `navigation/distribute.ts` wave.
 
+## Agent laws — the working discipline (loaded as mandatory instructions)
+
+This file is in every agent's system prompt, so these bind the next agent as law, not memory:
+
+- **Reuse the computed answer, never re-derive.** Read the receipt — `erpax verify <atom>` (targeted, skips the DB boot), `erpax doctor corpus` (sealed audit), the LLM.md face — before writing a fresh derivation. A hand-rolled harness or a re-explained realization is the O(n²) medium cost: a word written early is re-billed every turn (measured 2026-07-15: 97% of a session's tokens were context re-sent). Terseness is the fold applied to the dialogue.
+- **Derivable content is not stored.** The computed faces (LLM.md · README.md · diamond.json) are gitignored and regenerated on demand; the [[readme]] `corpusFoldRoot` seal proves regenerability. Storing what the fold computes is entropy — never re-commit them.
+- **The rosetta basis.** A new collection is warranted only by a NEW signature (`collectionSignature` over the closed 9-axis basis); otherwise it is a row, not a table. `erpax doctor corpus` reports collapse clusters + compression headroom. **ENFORCEMENT DEBT:** `shapeRatchetVerdict` must be wired into `rulesOf` as a fail-closed axis — until then it only reports, so the next agent must run it deliberately.
+- **Verify with the tool, not the reflex.** `erpax verify <atom>` for pure atoms; `pnpm check` for integration. Never a full vitest run to self-check.
+- **Single-use code is entropy.** A script or function called once is un-folded — inline it, delete it, or make it a reused command. Never write a throwaway to work around a problem already fixed (the tsx assert-harness was folded into `erpax verify`; a scratchpad regen script is just the existing `erpax readme` command un-reused). Generated content is the same law: a table of count-1 rows (raw scatter, not a basis axis) is useless detail — purge it, do not cap it (capping hides entropy; the rosetta decode says what is signal vs noise).
+
+## Enforcement — why a law here is obeyed
+
+A law is obeyed only when a **gate blocks its violation** ([[confirm]] hook · pre-push · this registry), not when it is written down. The confirm hook proves it: it refused every trinity-incomplete or dead-link edit this session. Behavioral laws that are not yet a blocking axis (above) are ENFORCEMENT DEBT — the horizon is to wire each into `rulesOf` so `pnpm rules:check` fails closed.
+
 Composes: [[law]]/folder · [[diamond]]/membership · [[seal]] · [[path]] · [[accounting]] · [[readme]] · [[confirm]] · [[guardian]] · [[gate]] · [[navigation]]/distribute

@@ -130,3 +130,7 @@ describe('rules — tightened gate registry', () => {
     expect(v.every((row) => row.compliant && !row.compliant.includes('-'))).toBe(true)
   })
 })
+// ./SKILL.md#agent-laws — the enforcement horizon: every behavioral law must become a
+// fail-closed axis wired into rulesOf (not a parallel gate). The existing suite above
+// already exercises rulesOf; no extra full-corpus scan is added here (that would be the
+// useless-detail entropy the laws warn against).

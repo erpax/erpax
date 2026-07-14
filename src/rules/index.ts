@@ -8,6 +8,8 @@
  *   pnpm rules:check
  *
  * @see ./compute-rules.ts — ./bindings.ts — ../law/folder/ratchet.generated
+ * @see ./SKILL.md#agent-laws — the working discipline this registry must fail-close on
+ *   (shapeRatchetVerdict wiring is enforcement debt: reports today, must gate tomorrow).
  */
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
 import { execSync } from 'node:child_process'
