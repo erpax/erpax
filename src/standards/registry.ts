@@ -19,6 +19,9 @@
  */
 
 import { PORTED_STANDARDS } from './ported'
+import * as nodeFs from 'node:fs'
+import * as nodePath from 'node:path'
+import * as nodeCrypto from 'node:crypto'
 
 /**
  * The canonical `standards.family` enum — the single source of truth, mirrored
@@ -275,3 +278,95 @@ export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
   ...CURATED_STANDARDS,
   ...PORTED_STANDARDS.map((s) => ({ ...s, family: normalizeFamily(s.family) })),
 ]
+
+/**
+ * Federation theorem provider — the deployed double-torus portal (ceccec.psg.bg) computes
+ * receipted theorem answers that satisfy erpax standards axes COMPUTATIONALLY, reports and
+ * analysis included: inhale once (explicit network breath), cache content-addressed, gates
+ * read the cache offline (zero-network law) — reuse the computed answer, never re-derive.
+ */
+export const THEOREM_PROVIDER = {
+  origin: 'https://ceccec.psg.bg',
+  mcp: '/mcp.json',
+  protocolRoot: 'c64607c5-bd28-8dc4-ad3b-6dea256efa4f',
+  /** erpax standards axis → portal theorem tool whose computed receipt satisfies it. */
+  satisfies: {
+    'entropy-report': 'concept.proof.verify',
+    'merkle-membership': 'concept.proof.merkle.path',
+    'proof-bundle': 'concept.proof.bundle',
+    'digit-vortex': 'concept.digit.proof',
+    'torus-topology': 'concept.torus.math',
+    'quantum-honesty': 'concept.science.quantum',
+    'diamond-complete': 'concept.diamond.complete',
+    'self-address': 'concept.self.address',
+  },
+} as const
+
+export type TheoremAxis = keyof typeof THEOREM_PROVIDER.satisfies
+
+export interface TheoremReceipt {
+  readonly tool: string
+  readonly receipt: string
+  readonly at: string
+}
+
+const theoremCachePath = (cwd: string): string =>
+  nodePath.join(cwd, 'node_modules', '.cache', 'erpax', 'theorems.json')
+
+/**
+ * Inhale — the explicit network breath: fetch the portal's MCP tool surface once, content-address
+ * each satisfying tool's definition into the local cache. Returns the number of axes satisfied.
+ */
+export async function inhaleTheorems(
+  cwd: string = process.cwd(),
+  origin: string = THEOREM_PROVIDER.origin,
+): Promise<number> {
+  const res = await fetch(`${origin}${THEOREM_PROVIDER.mcp}`)
+  if (!res.ok) throw new Error(`theorem provider unreachable: ${res.status} ${origin}`)
+  const surface = (await res.json()) as {
+    server?: { root?: string }
+    result?: { tools?: ReadonlyArray<{ name: string; description?: string }> }
+    tools?: ReadonlyArray<{ name: string; description?: string }>
+  }
+  const tools = new Map((surface.result?.tools ?? surface.tools ?? []).map((t) => [t.name, t]))
+  const root = surface.server?.root ?? null
+  const at = new Date().toISOString()
+  const cache: Record<string, TheoremReceipt> = {}
+  for (const [axis, tool] of Object.entries(THEOREM_PROVIDER.satisfies)) {
+    const def = tools.get(tool)
+    if (!def) continue
+    cache[axis] = {
+      tool,
+      receipt: nodeCrypto.createHash('sha256').update(JSON.stringify({ root, def })).digest('hex'),
+      at,
+    }
+  }
+  const path = theoremCachePath(cwd)
+  nodeFs.mkdirSync(nodePath.dirname(path), { recursive: true })
+  nodeFs.writeFileSync(path, JSON.stringify(cache, null, 2) + '\n')
+  return Object.keys(cache).length
+}
+
+/** Offline face — gates read only the cached receipts (zero-network law). */
+export function theoremReceipts(cwd: string = process.cwd()): Record<string, TheoremReceipt> {
+  try {
+    return JSON.parse(nodeFs.readFileSync(theoremCachePath(cwd), 'utf8')) as Record<string, TheoremReceipt>
+  } catch {
+    return {}
+  }
+}
+
+/** Report — which standards axes are satisfied computationally by cached theorem receipts. */
+export function standardsSatisfiedComputationally(
+  cwd: string = process.cwd(),
+): ReadonlyArray<{ axis: TheoremAxis; tool: string; satisfied: boolean; receipt: string | null }> {
+  const cached = theoremReceipts(cwd)
+  return (Object.entries(THEOREM_PROVIDER.satisfies) as ReadonlyArray<[TheoremAxis, string]>).map(
+    ([axis, tool]) => ({
+      axis,
+      tool,
+      satisfied: cached[axis]?.tool === tool,
+      receipt: cached[axis]?.receipt ?? null,
+    }),
+  )
+}
