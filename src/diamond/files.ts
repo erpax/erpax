@@ -119,7 +119,8 @@ const expectedFace = (
   const folder = ctx.folderOf(atomPath)
   const diamond = ctx.diamondOf(atomPath)
   if (face === 'README.md') return renderFolderReadme(folder)
-  if (face === 'LLM.md') return renderLLM(deriveLLMBrief(folder, diamond, lawLineForAtom(atomPath, ctx.cwd)))
+  if (face === 'LLM.md')
+    return renderLLM(deriveLLMBrief(folder, diamond, lawLineForAtom(atomPath, ctx.cwd), ctx.cwd))
   return renderDiamondJson(diamond)
 }
 

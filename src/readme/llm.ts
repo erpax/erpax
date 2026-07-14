@@ -33,7 +33,7 @@ export function readmeAsLlm(folderModel: FolderReadmeModel, cwd = process.cwd())
     graph: frozen.graph,
     ctx: frozen.ctx,
   })
-  const model = deriveLLMBrief(folderModel, computation.model, lawLineForAtom(folderModel.atomPath, cwd))
+  const model = deriveLLMBrief(folderModel, computation.model, lawLineForAtom(folderModel.atomPath, cwd), cwd)
   const bytes = renderLLM(model)
   return { model, bytes, contentUuid: llmBriefUuid(model), folder: folderModel }
 }

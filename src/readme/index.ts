@@ -103,6 +103,9 @@ import {
   verifyComputedFaces,
   verifyComputedFacesForPaths,
   verifyComputedFacesInWaves,
+  corpusFoldRoot,
+  readCorpusFoldReceipt,
+  sealCorpusFold,
 } from './compute'
 import { computeTheRest, handMaintainedViolations } from './hand-maintained'
 
@@ -134,6 +137,16 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   const waveProgress = (ordinal: number, itemCount: number): void => {
     console.log(`readme:waves — horo wave ${ordinal}/7 · ${itemCount} paths`)
+  }
+  const foldRoot = verify && !pathFilter ? corpusFoldRoot(cwd) : null
+  if (foldRoot) {
+    const receipt = readCorpusFoldReceipt(cwd)
+    if (receipt?.root === foldRoot) {
+      console.log(
+        `✓ readme:check + computed:check — corpus fold root unchanged (${receipt.faces} faces sealed ${receipt.at}) — zero recompute (quantum fold).`,
+      )
+      process.exit(0)
+    }
   }
   const frozen = pathFilter ? undefined : buildReadmeCorpusFrozenInputs(cwd, verify ? { pathFollowGate: true } : undefined)
   const corpus =
@@ -199,6 +212,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const n = listAtomPaths(cwd).length
     console.log(`✓ readme:check — root + ${n} folder READMEs ≡ regenerated (zero entropy).`)
     console.log(`✓ computed:check — ${n} folder LLM.md + diamond.json ≡ regenerated (zero entropy).`)
+    if (foldRoot) {
+      sealCorpusFold(foldRoot, n, cwd)
+      console.log(`readme:check — sealed corpus fold root ${foldRoot.slice(0, 8)}… — next unchanged verify is free.`)
+    }
     process.exit(0)
   }
   if (!foldersOnly && !pathFilter) {
