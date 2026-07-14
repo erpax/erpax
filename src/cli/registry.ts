@@ -9,6 +9,10 @@ export interface CliAction {
 export type CliDomain = Record<string, CliAction>
 
 const TSX = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx'
+// Corpus-scale tsx — the full-tree regen/verify walks 3168 atoms + the fold-root
+// digest; the default heap OOM-thrashes into GC (observed 2026-07-15, 3GB+ climb),
+// so these carry the same --max-old-space-size=8000 as lint/vitest/build.
+const HEAVY_TSX = 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=tsx/esm" tsx'
 const NODE_TSX = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" node'
 const ESLINT =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" eslint'
@@ -20,10 +24,10 @@ export const AURA_SCAN_PATH = 'src/aura/scan.mjs'
 
 export const CLI_REGISTRY: Record<string, CliDomain> = {
   readme: {
-    default: { desc: 'Regenerate README + computed faces', cmd: `${TSX} src/readme/index.ts` },
-    waves: { desc: 'Regenerate in horo waves (OOM-safe)', cmd: `${TSX} src/readme/index.ts --waves` },
-    check: { desc: 'Verify readme + faces (waves)', cmd: `${TSX} src/readme/index.ts --verify --waves` },
-    'check-full': { desc: 'Verify full corpus readme + faces', cmd: `${TSX} src/readme/index.ts --verify` },
+    default: { desc: 'Regenerate README + computed faces', cmd: `${HEAVY_TSX} src/readme/index.ts` },
+    waves: { desc: 'Regenerate in horo waves (OOM-safe)', cmd: `${HEAVY_TSX} src/readme/index.ts --waves` },
+    check: { desc: 'Verify readme + faces (waves)', cmd: `${HEAVY_TSX} src/readme/index.ts --verify --waves` },
+    'check-full': { desc: 'Verify full corpus readme + faces', cmd: `${HEAVY_TSX} src/readme/index.ts --verify` },
     regen: { desc: 'Focused face regen for atom path(s)', cmd: `${TSX} src/readme/regen.ts` },
     paths: {
       desc: 'Explicit atom paths only (--paths a,b · also: erpax readme --paths)',
