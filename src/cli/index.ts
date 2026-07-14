@@ -7,6 +7,25 @@ import { runGate, runGatePackages, runPayloadApproval, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
 import { CLI_REGISTRY, LEGACY_ALIASES, resolveAction } from './registry'
 
+/**
+ * `erpax verify <atom…>` — the quantum verify lane: run only the named atoms' tests
+ * with PAYLOAD_TEST_SKIP_MIGRATE=1 (skips the ~30s DB boot pure atoms never need).
+ * Replaces the ad-hoc tsx harness rewritten 6× in the 2026-07-15 session — save the
+ * pair once, reuse it. Use for pure atoms (rodin, signal, factory…); integration
+ * atoms still go through `pnpm check`.
+ */
+function runVerify(atoms: readonly string[]): number {
+  if (atoms.length === 0) {
+    console.error('usage: erpax verify <atom> [atom…]   — targeted, skips DB boot (pure atoms)')
+    return 1
+  }
+  const filters = atoms.map((a) => `src/${a.replace(/^src\//, '').replace(/\/$/, '')}`)
+  const cmd =
+    'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" ' +
+    'PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts'
+  return runShell(cmd, filters)
+}
+
 function resolveLegacyColon(domain: string, action?: string): { modern: string; argv: string[] } | undefined {
   const key = action ? `${domain}:${action}` : domain
   const modern = LEGACY_ALIASES[key] ?? (domain.includes(':') ? LEGACY_ALIASES[domain] : undefined)
@@ -33,6 +52,10 @@ export function runCli(argv: readonly string[]): number {
 
   if (rawDomain === 'doctor' || rawDomain === 'status') {
     return runDoctor(process.cwd(), action)
+  }
+
+  if (rawDomain === 'verify') {
+    return runVerify([action, ...rest].filter((a): a is string => Boolean(a)))
   }
 
   if (rawDomain === 'approve') {
