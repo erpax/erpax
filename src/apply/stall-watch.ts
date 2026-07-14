@@ -38,9 +38,13 @@ const KIND_RULES: readonly KindRule[] = [
   { test: /vitest/, kind: 'vitest', slowAfterSec: 300, deadAfterSec: 1800 },
   { test: /confirm\/matter|confirm:uuid|confirm\.mjs/, kind: 'confirm', slowAfterSec: 600, deadAfterSec: 3600 },
   { test: /apply\/clean|erpax clean|improve:watch|violations\/loop/, kind: 'clean', slowAfterSec: 300, deadAfterSec: 900 },
+  // Sibling corpus (ceccec.github.io) — its OWN stall/stop law says >3min = hung; observed
+  // 2026-07-15: seven theoremWavesVerify at up to 2h56m starving the machine (killed by hand
+  // — this rule saves that judgment as the pair: save first, then use).
+  { test: /theoremWaves|pair\/enforcement|thunder\/verify/, kind: 'other', slowAfterSec: 180, deadAfterSec: 360 },
 ]
 
-const ERPAX_MARK = /erpax|src\/(readme|rules|confirm|apply|cli)\//
+const ERPAX_MARK = /erpax|theoremWaves|src\/(readme|rules|confirm|apply|cli|pair\/enforcement|thunder)\//
 
 /** Parse `ps` etime ([[dd-]hh:]mm:ss) to seconds. */
 export function parsePsEtime(raw: string): number {
@@ -150,4 +154,28 @@ export function formatStallTable(rows: readonly StalledProcessRow[]): string {
     lines.push(`  ${pid} ${age}  ${r.status.padEnd(8)} ${r.kind.padEnd(9)} ${r.recommendation}`)
   }
   return `${lines.join('\n')}\n`
+}
+
+/**
+ * The kill face of the stall/stop pair — SIGTERM every dead/zombie row, spare the living.
+ * Detection without execution left the machine carrying 9h of hung minds (2026-07-15);
+ * the saved pair is used via `erpax doctor stalls --kill`. Never touches `slow` rows —
+ * a legitimate long job shows waves in its terminal; death is only for the unaccounted.
+ */
+export function killStalledProcesses(
+  rows: readonly StalledProcessRow[] = detectStalledProcesses(),
+): readonly StalledProcessRow[] {
+  // Zombies must also be OLD — the duplicate heuristic flags second-old siblings
+  // (legitimate concurrent short tasks); death is only for the demonstrably stuck.
+  const doomed = rows.filter(
+    (r) => (r.status === 'dead' || (r.status === 'zombie' && r.ageSeconds >= 120)) && r.pid !== process.pid,
+  )
+  for (const r of doomed) {
+    try {
+      process.kill(r.pid, 'SIGTERM')
+    } catch {
+      /* already gone */
+    }
+  }
+  return doomed
 }

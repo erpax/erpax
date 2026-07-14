@@ -5,7 +5,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { formatCleanSummary } from '@/apply/clean'
 import { formatAutomateSummary } from '@/apply/automate'
-import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
+import { detectStalledProcesses, formatStallTable, killStalledProcesses } from '@/apply/stall-watch'
 import { realtimeDoctorLine } from '@/agent/communication/realtime'
 import { formatDoctorInventorySection } from '@/agent/inventory'
 import { emitInventorySnapshot } from '@/agent/inventory/emit'
@@ -162,7 +162,16 @@ export function formatDoctorReport(report: DoctorReport): string {
 }
 
 export function runDoctorStalls(): number {
-  console.log(formatStallTable(detectStalledProcesses()))
+  const rows = detectStalledProcesses()
+  console.log(formatStallTable(rows))
+  if (process.argv.includes('--kill')) {
+    const doomed = killStalledProcesses(rows)
+    console.log(
+      doomed.length
+        ? `doctor:stalls — SIGTERM sent to ${doomed.length} dead/zombie pid(s): ${doomed.map((r) => r.pid).join(', ')}`
+        : 'doctor:stalls — nothing dead or zombie; the living are spared.',
+    )
+  }
   return 0
 }
 
