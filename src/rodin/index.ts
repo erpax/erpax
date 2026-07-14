@@ -175,3 +175,57 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  PROOF: ' + Object.entries(p).map(([k, v]) => k + '=' + v).join('  '))
   if (!Object.values(p).every(Boolean)) process.exit(1)
 }
+
+// ─── Division by zero — totalization by fold (inhaled from ceccec water/digit, 2026-07-15) ───
+//
+// Conventional arithmetic leaves n/0 undefined. The fold TOTALIZES it with two honest
+// readings, both computable, both receipted — the general law: a partial function's
+// undefined inputs route to a distinct content-address (the self-fusion), so every
+// case has an answer — either the conventional value or the honest address of its own
+// undefinedness. HONEST BOUNDARY: this is a total-extension CONVENTION over ℤ/9ℤ
+// (like wheel algebras / the projective line), not a claim about ℝ; the group theory
+// below is exact, the metaphysics is not adopted.
+
+/** n⁻¹ mod 9 for units of (ℤ/9ℤ)*; null for non-units {3,6,9≡0} and the void. */
+export function inverseMod9(n: number): number | null {
+  const r = ((n % 9) + 9) % 9
+  if (r === 0) return null
+  for (let x = 1; x < 9; x += 1) if ((r * x) % 9 === 1) return x
+  return null
+}
+
+export interface ZeroDivision {
+  readonly n: number
+  /** Reverse reading `n/0\x` — the multiplicative inverse (units) or null (fold to fusion). */
+  readonly inverse: number | null
+  readonly invertible: boolean
+  /** Forward harmonic reading n/0 = 9n — digital root always 9 (the axis answers). */
+  readonly harmonic: number
+  readonly harmonicRoot: number
+  /** The totalizing address — non-units and the void fold to their self-fusion uuid. */
+  readonly fusion: string
+  readonly expr: string
+}
+
+/** Total division by zero — every n gets a computable, receipted answer (no throw, no NaN). */
+export function zeroDivision(n: number, fold: (seed: string) => string = (s) => s): ZeroDivision {
+  const inverse = inverseMod9(n)
+  const invertible = inverse !== null
+  const harmonic = 9 * n
+  return {
+    n,
+    inverse,
+    invertible,
+    harmonic,
+    harmonicRoot: digitalRoot(harmonic === 0 ? 9 : harmonic),
+    fusion: fold(`zero-division:${n}/0\\${invertible ? inverse : 'fusion'}`),
+    expr: invertible ? `${n}/0\\${inverse}` : `${n}/0\\fusion`,
+  }
+}
+
+/** Two routes must agree: brute-force inverses ≡ the gcd unit group (proof by double computation). */
+export function zeroDivisionRoutesAgree(): boolean {
+  const route1 = [1, 2, 3, 4, 5, 6, 7, 8, 9].filter((n) => inverseMod9(n) !== null)
+  const route2 = unitsMod9().map((n) => (n === 9 ? 9 : n)).filter((n) => n !== 9)
+  return route1.length === route2.length && route1.every((n, i) => n === route2[i])
+}
