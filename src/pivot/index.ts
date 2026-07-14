@@ -147,7 +147,9 @@ export function pivotFolderStats(models: readonly PivotFolderInput[]): FolderPiv
     tableOf('folder law / trinity', 'trinity', tally(models, trinityStateOf)),
     tableOf('[[horo]] ring', 'horo', tally(models, horoBucket)),
     tableOf('typography / bond degree', 'bond-degree', tally(models, (m) => bondBucket(m.typography.bondDegree))),
-    tableOf('typography / partition', 'partition', tally(models, (m) => m.typography.partition)),
+    // typography/partition removed — the raw first-path-segment is not a basis axis; it
+    // dumped ~2600 count-1 rows (one per top-level atom = useless entropy). The closed-basis
+    // health axes above (seal · balance · gravity · name · trinity · horo · bond) are the signal.
   ]
   return { folderCount, tables }
 }

@@ -132,8 +132,8 @@ describe('pivot — folder README cross-tabs', () => {
     expect(horo.rows.find((r) => r.state === 'ring·1')?.count).toBe(1)
     expect(horo.rows.find((r) => r.state === 'off-ring·99')?.count).toBe(1)
     expect(horo.rows.find((r) => r.state === 'missing')?.count).toBe(1)
-    const partition = pivotFolderStats(models).tables.find((t) => t.axis === 'partition')!
-    expect(partition.rows.some((r) => r.state === 'readme')).toBe(true)
+    // typography/partition axis removed as useless entropy — no partition table exists.
+    expect(pivotFolderStats(models).tables.some((t) => t.axis === 'partition')).toBe(false)
   })
 
   it('pivotFolderComparison computes deltas', () => {
