@@ -1,8 +1,8 @@
 /**
  * cli/doctor — quick health: stray-ts vs baseline, efficiency pass, corpus entry.
  */
-import { existsSync } from 'node:fs'
-import { join } from 'node:path'
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
+import { join, dirname } from 'node:path'
 import { formatCleanSummary } from '@/apply/clean'
 import { formatAutomateSummary } from '@/apply/automate'
 import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
@@ -166,8 +166,38 @@ export function runDoctorStalls(): number {
   return 0
 }
 
+/** doctor corpus — the sealed corpus gap audit: shapes · speaking · coverage · theorems.
+ * Computes once, seals node_modules/.cache/erpax/audit.json — the matrix is the cache. */
+export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<number> {
+  const all = await import('@/collections')
+  const { auditCorpus, foldCollectionLifecycle } = await import('@/factory/collection-factory')
+  const { theoremReceipts } = await import('@/standards/registry')
+  const configs = Object.values(all)
+    .filter(
+      (c): c is import('payload').CollectionConfig =>
+        !!c && typeof c === 'object' && 'slug' in c && 'fields' in c,
+    )
+    .map((c) => foldCollectionLifecycle(c))
+  const audit = auditCorpus(configs)
+  const report = { ...audit, theoremAxesSatisfied: Object.keys(theoremReceipts(cwd)).length, at: new Date().toISOString() }
+  const path = join(cwd, 'node_modules', '.cache', 'erpax', 'audit.json')
+  mkdirSync(dirname(path), { recursive: true })
+  writeFileSync(path, JSON.stringify(report, null, 2) + '\n')
+  console.log(
+    `doctor:corpus — ${report.collections} collections · ${report.signatures} signatures · speaking ${report.speaking}/${report.collections} · theorem axes ${report.theoremAxesSatisfied}/8`,
+  )
+  console.log(
+    `  bare ${report.bare.length} · input-heavy hookless ${report.inputHeavyHookless.length} · receipt → ${path}`,
+  )
+  return 0
+}
+
 export function runDoctor(cwd: string = process.cwd(), sub?: string): number {
   if (sub === 'stalls') return runDoctorStalls()
+  if (sub === 'corpus') {
+    void runDoctorCorpus(cwd).then((code) => process.exit(code))
+    return 0
+  }
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
   try {
