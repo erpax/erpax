@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { emitOnStatusTransition, emitOnCreate, emitPrSubmitted } from '@/chain/event/emitter'
+import { emitOnStatusTransition, emitOnCreate, emitPrSubmitted, AGGREGATE_TYPES } from '@/chain/event/emitter'
 import { eventEmitter } from '@/event/emitter.service'
 import type { DomainEvent } from '@/types/events'
 
@@ -85,5 +85,13 @@ describe('chain/event/emitter — declared emits become fired events', () => {
 
   it('concrete chain wirings are afterChange hooks', () => {
     expect(typeof emitPrSubmitted).toBe('function')
+  })
+})
+
+describe('AGGREGATE_TYPES — the single source', () => {
+  it('is the runtime list the AggregateType union derives from (no parallel literal)', () => {
+    expect(AGGREGATE_TYPES).toContain('record')
+    expect(AGGREGATE_TYPES).toContain('invoice')
+    expect(AGGREGATE_TYPES.length).toBe(10)
   })
 })

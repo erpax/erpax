@@ -100,7 +100,7 @@ import { adminGroupOf } from '@/navigation'
 // Slice AAAAAAAA (2026-05-11) — factory auto-wires structured `emits:` into
 // afterChange hooks. Single source of truth for the chain-emit producers.
 import {
-  emitOnStatusTransition, emitOnCreate, type AggregateType,
+  emitOnStatusTransition, emitOnCreate, AGGREGATE_TYPES, type AggregateType,
 } from '@/chain/event/emitter'
 // Slice BBBBBBBB (2026-05-11) — pull chain-declared producers from the
 // BUSINESS_CHAINS registry. Any chain step with `producer: { onStatus | onCreate, aggregate }`
@@ -514,9 +514,7 @@ export function deriveLifecycleEmits(slug: string, fields: ReadonlyArray<Field>)
   const values = status?.options.map((o) => (typeof o === 'string' ? o : o.value)) ?? []
   if (values.length === 0) return []
   const singular = slug.replace(/ies$/, 'y').replace(/s$/, '').replace(/-/g, '_')
-  const aggregate: AggregateType = (
-    ['invoice', 'bill', 'payment', 'inventory_transfer', 'bank_statement', 'subscription', 'order', 'fixed_asset', 'gl_posting'] as const
-  ).includes(singular as never)
+  const aggregate: AggregateType = AGGREGATE_TYPES.includes(singular as AggregateType)
     ? (singular as AggregateType)
     : 'record'
   return [

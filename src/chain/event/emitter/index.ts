@@ -22,12 +22,17 @@ import { getActorId } from '@/auth'
 
 type StatusBearing = { status?: string; id: string; uuid?: string; tenant?: string | { id: string } }
 
-/** AggregateType envelope shared by every chain emit. `record` is the generic
- * envelope for factory-derived lifecycle events (rosetta auto-emits). */
-export type AggregateType =
-  | 'invoice' | 'bill' | 'payment' | 'inventory_transfer'
-  | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset' | 'gl_posting'
-  | 'record'
+/** The aggregate envelope values — the ONE source; the type derives from this runtime
+ * list so a caller (e.g. the factory's rosetta auto-aggregate) reuses it, never a
+ * parallel literal that could drift. `record` is the generic lifecycle envelope. */
+export const AGGREGATE_TYPES = [
+  'invoice', 'bill', 'payment', 'inventory_transfer',
+  'bank_statement', 'subscription', 'order', 'fixed_asset', 'gl_posting',
+  'record',
+] as const
+
+/** AggregateType envelope shared by every chain emit — derived from AGGREGATE_TYPES. */
+export type AggregateType = (typeof AGGREGATE_TYPES)[number]
 
 /**
  * Emit a domain event with Payload-native logging (no custom service layer).
