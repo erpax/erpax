@@ -20,3 +20,5 @@ export { default as IncomeStatementWidget } from './IncomeStatementWidget'
 // index (`@/widget`), never the deep `./AuditLogWidget` file.
 export { default as AuditLogWidget, auditLogWidget, auditLogSource } from './AuditLogWidget'
 export type { AuditLogData, AuditLogEntry } from './AuditLogWidget'
+export { default as ShapePanel } from './ShapePanel'
+export type { ShapePanelVM, ShapePanelRow } from './ShapePanel'

@@ -394,3 +394,68 @@ export const DASHBOARD_WIDGETS: readonly AnyWidgetSpec[] = [
   trendAnalysisWidget,
   auditLogWidget,
 ]
+
+// ─── Rosetta corpus projection (2026-07-15) — computed coverage for ALL collections ─
+//
+// One universal component (ShapePanel) + one computed WidgetSpec per registered
+// collection = 100% dashboard coverage (was ~8%: 13 hand-written widgets / 215
+// collections). The spec is DERIVED from the collection config (slug, labels,
+// useAsTitle, shape signature) — never a hand-kept widget list. The load runs in
+// the actor's PayloadRequest (overrideAccess:false) like every other source.
+
+import { ShapePanel, type ShapePanelVM } from '@/widget'
+import type { CollectionConfig } from 'payload'
+
+/** Compute the ONE WidgetSpec for any registered collection — the shape projection.
+ * The signature derives lazily inside load() — a static factory import here would
+ * close an import cycle (factory → fields/auth → … → dashboards, TDZ). */
+export function shapeWidgetSpec(config: CollectionConfig): WidgetSpec<ShapePanelVM> {
+  const slug = config.slug
+  const label =
+    (typeof config.labels?.plural === 'string' ? config.labels.plural : undefined) ?? slug
+  const useAsTitle = config.admin?.useAsTitle ?? 'id'
+  return {
+    id: `shape:${slug}`,
+    Component: ShapePanel,
+    minCapability: 'read',
+    title: label,
+    lane: 'payload-admin',
+    source: {
+      kind: 'localApi',
+      load: async (ctx): Promise<ShapePanelVM> => {
+        const { collectionSignature } = await import('@/factory/collection-factory')
+        const signature = collectionSignature(config as { fields: never[] })
+        const res = await ctx.payload.find({
+          collection: slug as never,
+          limit: 100,
+          sort: '-updatedAt',
+          overrideAccess: false,
+          req: ctx.req,
+        })
+        const docs = res.docs as ReadonlyArray<Record<string, unknown>>
+        const pivot = new Map<string, number>()
+        for (const d of docs) {
+          const s = typeof d.status === 'string' ? d.status : null
+          if (s) pivot.set(s, (pivot.get(s) ?? 0) + 1)
+        }
+        return {
+          slug,
+          label,
+          signature,
+          count: res.totalDocs,
+          statusPivot: [...pivot.entries()].map(([value, count]) => ({ value, count })),
+          latest: docs.slice(0, 5).map((d) => ({
+            title: String(d[useAsTitle] ?? d.id),
+            ...(typeof d.status === 'string' ? { status: d.status } : {}),
+            ...(typeof d.updatedAt === 'string' ? { updatedAt: d.updatedAt } : {}),
+          })),
+        }
+      },
+    },
+  }
+}
+
+/** The computed corpus projection — one spec per collection, coverage 100% by construction. */
+export function corpusShapeWidgets(configs: ReadonlyArray<CollectionConfig>): ReadonlyArray<WidgetSpec<ShapePanelVM>> {
+  return configs.map((c) => shapeWidgetSpec(c))
+}

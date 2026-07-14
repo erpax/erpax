@@ -35,7 +35,9 @@ import type { AccessRole } from '@/uuid/share'
 import { rolesCompatible } from '@/uuid/share'
 import { actorCapabilityResolved } from '@/cross'
 import { getUserContext } from '@/auth'
-import { createInProcessMcpClient } from '@/agents/mcp'
+// Lazy: the in-process MCP client loads only when an 'mcp'-kind source resolves.
+// A static import here closes a module cycle (agents/mcp/tool-defs imports half
+// the corpus, which loops back into this graph — TDZ on direct import).
 import type { McpClient, ErpaxMcpTool } from '@/agents/mcp'
 
 // Re-export the DTO → view-model projection so the atom's INDEX is the single face
@@ -188,14 +190,15 @@ export function widgetVisible(
 async function loadSource<TVM>(
   source: DataSource<TVM>,
   ctx: DashboardContext,
-  mcp: McpClient,
+  mcp: () => Promise<McpClient>,
 ): Promise<TVM> {
   switch (source.kind) {
     case 'localApi':
     case 'service':
       return source.load(ctx)
     case 'mcp': {
-      const text = await mcp.callTool(source.tool, source.args ? source.args(ctx) : { tenantId: ctx.tenantId })
+      const client = await mcp()
+      const text = await client.callTool(source.tool, source.args ? source.args(ctx) : { tenantId: ctx.tenantId })
       // MCP tool handlers return JSON text; parse before projecting. A
       // non-JSON payload is surfaced as the raw string to project().
       let raw: unknown = text
@@ -248,7 +251,14 @@ export async function resolveDashboard(
   )
 
   const visible = spec.widgets.filter((w) => widgetVisible(w.minCapability, actorCapability, holdsAudit))
-  const mcp = createInProcessMcpClient(mcpTools, ctx.req)
+  let client: McpClient | null = null
+  const mcp = async (): Promise<McpClient> => {
+    if (!client) {
+      const { createInProcessMcpClient } = await import('@/agents/mcp')
+      client = createInProcessMcpClient(mcpTools, ctx.req)
+    }
+    return client
+  }
 
   return Promise.all(
     visible.map(async (s): Promise<ResolvedWidget> => {

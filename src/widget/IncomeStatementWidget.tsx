@@ -8,7 +8,7 @@
  * @compliance SOX §404 internal-controls
  */
 import React from 'react';
-import { formatCurrency } from '@/dashboard';
+import { formatCurrency } from '@/format/amount';
 import type { IncomeStatementData } from '@/analytics';
 
 interface IncomeStatementWidgetProps {

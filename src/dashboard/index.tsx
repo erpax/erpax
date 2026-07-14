@@ -277,10 +277,6 @@ const MetricCard: React.FC<MetricCardProps> = ({ title, value, trend }) => {
   )
 }
 
-export function formatCurrency(cents: number): string {
-  return `$${(cents / 100).toFixed(2)}`;
-}
-
 export default Dashboard;
 
 // ── each model's computed dashboard: its related links partitioned into collections (plural) + models (singular) ──

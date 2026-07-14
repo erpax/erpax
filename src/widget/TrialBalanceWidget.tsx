@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { formatCurrency } from '@/dashboard'
+import { formatCurrency } from '@/format/amount'
 import type { TrialBalanceData } from '@/analytics'
 import {
   Badge,
