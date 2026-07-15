@@ -215,6 +215,11 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   console.log(
     `  ✓ rosetta ratchet — within baseline (${audit.collections}/${ROSETTA_BASELINE.collections} collections · ${audit.signatures}/${ROSETTA_BASELINE.signatures} signatures).`,
   )
+  const { atomBasisScan } = await import('@/readme/compute')
+  const b = atomBasisScan(cwd)
+  console.log(
+    `  atom basis — ${b.basis} generators (keep) · ${b.combinations} combinations (${(b.combinationShare * 100).toFixed(0)}% derivable: ${b.vocabOnly} prose · ${b.barrelOnly} barrel · ${b.composeNoLogic} compose) of ${b.atoms} atoms.`,
+  )
   return 0
 }
 

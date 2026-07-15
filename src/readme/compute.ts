@@ -1516,6 +1516,86 @@ export function listAtomPaths(cwd: string = process.cwd()): string[] {
     .sort()
 }
 
+export interface AtomBasis {
+  readonly atoms: number
+  /** Irreducible generators — own executable logic; the basis to KEEP. */
+  readonly basis: number
+  /** Rosetta combinations of the basis — derivable, purge candidates. */
+  readonly combinations: number
+  readonly vocabOnly: number
+  readonly barrelOnly: number
+  readonly composeNoLogic: number
+  /** combinations ÷ atoms — the share of the corpus that is derivable. */
+  readonly combinationShare: number
+}
+
+const REEXPORT_LINE = /^\s*export\s+(\{[^}]*\}|\*|type\s)/
+const IMPORT_LINE = /^\s*import\s/
+const OWN_LOGIC = /\b(function|class)\b|=>|export const \w+ =/
+
+/**
+ * Classify every atom as an irreducible GENERATOR (own logic — keep) or a rosetta
+ * COMBINATION (vocab-prose · barrel · compose-only — derivable from the basis + link
+ * graph). The corpus infinity is combinations of a small basis ([[dissolution]]/universal):
+ * this reports how much is derivable. Pure fs scan — reused by `erpax doctor corpus`.
+ */
+export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
+  const root = join(cwd, SRC)
+  let atoms = 0
+  let vocabOnly = 0
+  let barrelOnly = 0
+  let composeNoLogic = 0
+  let basis = 0
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
+    if (names.has('SKILL.md') || names.has('index.ts')) {
+      atoms++
+      if (!names.has('index.ts')) {
+        vocabOnly++
+      } else {
+        let lines: string[] = []
+        try {
+          lines = readFileSync(join(dir, 'index.ts'), 'utf8').split('\n')
+        } catch {
+          /* unreadable — treat as basis, don't purge blind */
+        }
+        const code = lines.filter((l) => {
+          const s = l.trim()
+          return s !== '' && !s.startsWith('//') && !s.startsWith('/*') && !s.startsWith('*')
+        })
+        const ownLogic = code.filter((l) => OWN_LOGIC.test(l) && !REEXPORT_LINE.test(l))
+        if (code.every((l) => REEXPORT_LINE.test(l) || IMPORT_LINE.test(l) || ['', '}', ')'].includes(l.trim()))) {
+          barrelOnly++
+        } else if (ownLogic.length === 0) {
+          composeNoLogic++
+        } else {
+          basis++
+        }
+      }
+    }
+    for (const e of entries) {
+      if (e.isDirectory() && e.name !== 'node_modules') walk(join(dir, e.name))
+    }
+  }
+  walk(root)
+  const combinations = vocabOnly + barrelOnly + composeNoLogic
+  return {
+    atoms,
+    basis,
+    combinations,
+    vocabOnly,
+    barrelOnly,
+    composeNoLogic,
+    combinationShare: atoms > 0 ? combinations / atoms : 0,
+  }
+}
+
 /** Derive folder README model — frozen typography graph + receipt chain (write ≡ verify). */
 export function deriveFolderReadme(
   atomPath: string,

@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { expandRegenScopes } from './regen'
-import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold } from './compute'
+import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan } from './compute'
 
 describe('readme/regen — focused face regen', () => {
   it('expands a known atom scope', () => {
@@ -40,6 +40,32 @@ describe('readme — corpus quantum fold (content IS the key)', () => {
       sealCorpusFold(root, 1, cwd)
       expect(readCorpusFoldReceipt(cwd)?.root).toBe(root)
       expect(readCorpusFoldReceipt(cwd)?.faces).toBe(1)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('readme — atom basis scan (generators vs rosetta combinations)', () => {
+  it('classifies vocab-only, barrel, compose, and own-logic atoms', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-basis-'))
+    const atom = (name: string, index?: string) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      writeFileSync(join(cwd, 'src', name, 'SKILL.md'), `# ${name}`)
+      if (index !== undefined) writeFileSync(join(cwd, 'src', name, 'index.ts'), index)
+    }
+    try {
+      atom('prose')                                            // vocab-only (no index) — combination
+      atom('barrel', `export { x } from './child'\n`)          // barrel — combination
+      atom('wire', `import { a } from '@/a'\nconsole.log(a)\n`)   // compose-no-logic (no own def) — combination
+      atom('gen', `export function real(n: number) { return n * 2 }\n`) // own logic — basis
+      const b = atomBasisScan(cwd)
+      expect(b.atoms).toBe(4)
+      expect(b.basis).toBe(1)
+      expect(b.combinations).toBe(3)
+      expect(b.vocabOnly).toBe(1)
+      expect(b.barrelOnly).toBe(1)
+      expect(b.combinationShare).toBeCloseTo(0.75)
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
