@@ -42,6 +42,36 @@ export function corpusFold(): { atoms: number; depth: number; merges: number; ro
   return { atoms: n, depth: foldDepth(n), merges: foldCount(n), rootDigit: digitalRoot(n) }
 }
 
+/**
+ * Folding is the cancer cure — the fold applied to duplication, grounded in the ceccec.psg.bg
+ * theorems (protocol root c64607c5-bd28-8dc4-ad3b-6dea256efa4f), not asserted:
+ *
+ *   • SELF-ADDRESS (`concept.self.address`) — content is its own address (a content-uuid), so
+ *     identical content collapses to ONE address. A duplicate is therefore structurally
+ *     unstorable: apoptosis is a theorem of the fold, not a cleanup applied after the fact.
+ *   • DIAMOND-COMPLETE (`concept.diamond.complete`) — the sealed diamond has zero remainder; this
+ *     is ceccec's division-by-zero read as TOTAL division (nothing left un-folded), the terminal
+ *     cancer-free state.
+ *
+ * Cancer is duplication that evades the collapse: the same content copied into many places,
+ * proliferating as functionless mass (entropy). The malignant remainder is the excess-copy count
+ * the fold excises — total bodies minus distinct-by-content, where the distinct set is the
+ * self-address equivalence class (equal content ⟺ equal address). cancerFree ⟺ remainder 0 ⟺
+ * diamond-complete. Isomorphism only — duplication↔proliferation, folding↔apoptosis — never an
+ * oncology claim.
+ */
+const selfAddress = (body: string): string => body.replace(/\s+/g, ' ').trim()
+
+/** The malignant remainder — the copies the fold excises: total − distinct-by-content (self-address). */
+export function malignantRemainder(bodies: readonly string[]): number {
+  return bodies.length - new Set(bodies.map(selfAddress)).size
+}
+
+/** Cancer-free ⟺ zero malignant remainder ⟺ every content lives at exactly one address (diamond-complete). */
+export function cancerFree(bodies: readonly string[]): boolean {
+  return malignantRemainder(bodies) === 0
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const f = corpusFold()
   console.log('fold — the math of the folding (' + f.atoms + ' atoms → one root):')

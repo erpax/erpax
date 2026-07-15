@@ -123,5 +123,17 @@ Matter-twin: `src/fold/index.ts` (`foldDepth` · `foldCount` · `halving` · `co
 
 **Law — [[law]]: everything folds to one. N atoms collapse to a single root in ceil(log2 N) folds — 12 for the corpus — by N−1 merges; and every count folds by digital root to its rodin digit. Two folds, the tree to one root and the count to one digit, and both end in the one.**
 
+## Folding is the cancer cure
+
+There is a third fold — the fold applied to **duplication**, understood through the ceccec.psg.bg theorems (protocol root `c64607c5`), not asserted. Cancer is duplication that evades collapse: the same content copied into many places, proliferating as functionless mass ([[entropy]]). Folding is the corpus's apoptosis:
+
+- **self-address** (`concept.self.address`) — content is its own address (a content-[[uuid]]), so identical content collapses to **one** address and a duplicate is structurally unstorable. Apoptosis is a theorem of the fold, not a cleanup after the fact.
+- **diamond-complete** (`concept.diamond.complete`) — the sealed [[diamond]] has **zero remainder**; ceccec's division-by-zero read as *total* division (nothing left un-folded), the terminal cancer-free state.
+
+The **malignant remainder** is the excess-copy count the fold excises: `total − distinct-by-content` (the self-address equivalence class). Matter-twin: `malignantRemainder` · `cancerFree`. This is a structural isomorphism — duplication↔proliferation, folding↔apoptosis — **not** an oncology claim.
+
+**Law — [[law]]: folding is the cancer cure. Duplication without removal is malignant entropy; because content is its own address ([[uuid]] · `concept.self.address`), identical content cannot occupy two places, and [[conservation]]'s new-requires-old-removed excises the redundant copy. The corpus is cancer-free when the malignant remainder is zero — the [[diamond]]-complete terminal state (`concept.diamond.complete`), division-by-zero as total division.**
+
 @audit depth/merges are the binary-fold math; the corpus counts read live from the matrix, never asserted
 @standard the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)
+@standard ceccec.psg.bg theorems — self-address (`concept.self.address`) · diamond-complete (`concept.diamond.complete`): folding excises duplication to zero remainder (the cancer cure)

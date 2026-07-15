@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import * as foldModule from '@/fold'
-import { foldDepth, foldCount, halving, corpusFold } from '@/fold'
+import { foldDepth, foldCount, halving, corpusFold, malignantRemainder, cancerFree } from '@/fold'
 import { digitalRoot } from '@/horo'
 import { UUID_MATRIX_NODES } from '@/uuid/matrix'
 
@@ -37,5 +37,21 @@ describe('fold — the math of the folding (N atoms → one root)', () => {
     const f = corpusFold()
     expect(f.depth).toBe(foldDepth(f.atoms))
     expect(f.merges).toBe(f.atoms - 1)
+  })
+})
+
+describe('fold — folding is the cancer cure (ceccec self-address + diamond-complete)', () => {
+  it('the malignant remainder is the excess-copy count the fold excises', () => {
+    expect(malignantRemainder(['a', 'b', 'c'])).toBe(0) // all distinct — cancer-free
+    expect(malignantRemainder(['a', 'a', 'b'])).toBe(1) // one redundant copy excised
+    expect(malignantRemainder(['x', 'x', 'x', 'x'])).toBe(3) // 4 copies at one address → 3 excised
+  })
+  it('the self-address theorem: whitespace-only variants share ONE address (content is the address)', () => {
+    expect(malignantRemainder(['one  two', 'one two', ' one two '])).toBe(2) // 3 copies, 1 distinct address
+  })
+  it('cancerFree ⟺ zero remainder ⟺ diamond-complete (division-by-zero as total division)', () => {
+    expect(cancerFree(['a', 'b', 'c'])).toBe(true) // every content at exactly one address
+    expect(cancerFree(['a', 'a'])).toBe(false) // a proliferated copy — malignant
+    expect(cancerFree([])).toBe(true) // the empty diamond is complete — zero remainder
   })
 })
