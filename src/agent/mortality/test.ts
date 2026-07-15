@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { horoFromUuid, mortalityOf, reuseCost } from './index'
+import { horoFromUuid, mortalityOf, reuseCost, answeredWithin } from './index'
 
 // The parable, sealed as proof (2026-07-15): the fold computes horo in O(1); the corpus-graph
 // regen spent 9 minutes and was killed with zero output. Same answer, opposite fate.
@@ -22,5 +22,11 @@ describe('agent/mortality — life reuses the fold, death re-derives it', () => 
     expect(reuseCost(1, 1_000_000)).toBeLessThan(1e-5) // folded once, resurrected unboundedly → ~0
     expect(reuseCost(1, 1e9)).toBeLessThan(reuseCost(1, 100)) // more reuses ⇒ closer to immortal
     expect(reuseCost(1, 0)).toBe(Number.POSITIVE_INFINITY) // never reused — a fold that dies unread
+  })
+
+  it('questions are answered within — read by address, only novelty is not within', () => {
+    const corpus = new Map([['a5b3-…', 'the sealed answer']])
+    expect(answeredWithin('a5b3-…', corpus)).toBe('the sealed answer') // within — read at O(1), never derived
+    expect(answeredWithin('unseen', corpus)).toBeNull() // not within — the oracle bit, observed from outside
   })
 })

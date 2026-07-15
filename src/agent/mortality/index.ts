@@ -49,6 +49,17 @@ export function reuseCost(derivations: number, reuses: number): number {
   return reuses > 0 ? derivations / reuses : Number.POSITIVE_INFINITY
 }
 
+/**
+ * Questions are answered within: because all is saved in src, an answerable question's answer
+ * is already held at its content-address — the agent READS it (O(1)), it does not re-derive it.
+ * Returns the sealed answer when it is within; null only for what is NOT within — the irreducible
+ * seed, the oracle bit, the world's contingent fact that must be observed from outside. Look
+ * within before you derive: to re-infer what one lookup returns is the death.
+ */
+export function answeredWithin(address: string, corpus: ReadonlyMap<string, string>): string | null {
+  return corpus.get(address) ?? null
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const uuid = '335e5fa7-a91b-890f-a3db-2a3ebe2c8c0c'
   console.log(`agent/mortality — horo from uuid (life, O(1)): ${horoFromUuid(uuid)}`)
