@@ -31,6 +31,9 @@ import {
   renderFolderReadme,
   folderReadmeUuid,
   listAtomPaths,
+  basisAtoms,
+  renderSourceIndex,
+  achievementOf,
   aggregateCorpusAnalytics,
   buildBindingsByAtom,
   type ReadmeModel,
@@ -168,6 +171,57 @@ describe('readme — the README is a diamond', () => {
     expect(button).toBeGreaterThan(desc)
     expect(button).toBeLessThan(diamond)
     expect(cloudflareDeployButtonMarkdown()).toContain(encodeURIComponent(CLOUDFLARE_DEPLOY_REPO_URL))
+  })
+})
+
+describe('readme — the source index (the README as computed index to source code)', () => {
+  const models = [
+    { atomPath: 'machine', measure: 'base' },
+    { atomPath: 'think', measure: 'base' },
+    { atomPath: 'pyramid', measure: 'share' },
+    { atomPath: 'offring', measure: null },
+    { atomPath: 'notgenerator', measure: 'base' },
+  ] as unknown as Parameters<typeof renderSourceIndex>[0]
+  const basis = new Set(['machine', 'think', 'pyramid', 'offring'])
+  const achievement = new Map([
+    ['machine', 'modelling shop-floor equipment'],
+    ['think', 'moving thinking OUT of the model and INTO erpax'],
+    ['pyramid', 'reading the fold as a solid'],
+  ])
+
+  it('links only the basis generators, grouped in rosetta sections, realising each achievement', () => {
+    const md = renderSourceIndex(models, basis, achievement).join('\n')
+    expect(md).toContain('## source index')
+    expect(md).toContain('### base · 2')
+    expect(md).toContain('[machine](src/machine/SKILL.md) — modelling shop-floor equipment')
+    expect(md).toContain('[pyramid](src/pyramid/SKILL.md) — reading the fold as a solid') // share section
+    expect(md).not.toContain('notgenerator') // combinations are not listed — reached by following links
+  })
+
+  it('sections follow the horo ring order (base before share); off-ring trails', () => {
+    const md = renderSourceIndex(models, basis, achievement).join('\n')
+    expect(md.indexOf('### base')).toBeLessThan(md.indexOf('### share'))
+    expect(md.indexOf('### share')).toBeLessThan(md.indexOf('### off-ring'))
+  })
+
+  it('achievementOf realises the frontmatter clause: strips "Use when", takes the first clause', () => {
+    expect(achievementOf('Use when reading the fold as a solid — the cross is a pyramid net')).toBe(
+      'reading the fold as a solid',
+    )
+    expect(achievementOf('a'.repeat(200)).endsWith('…')).toBe(true) // capped concise
+  })
+
+  it('renderReadme omits the section without source-index lines, and includes them when passed', () => {
+    expect(renderReadme(FIXED)).not.toContain('## source index')
+    const lines = renderSourceIndex(models, basis, achievement)
+    expect(renderReadme(FIXED, models, undefined, lines)).toContain('## source index')
+  })
+
+  it('basisAtoms scans the live tree and includes the newest generators', () => {
+    const atoms = basisAtoms(process.cwd())
+    expect(atoms).toContain('think')
+    expect(atoms).toContain('pyramid')
+    expect(atoms).toEqual([...atoms].sort()) // deterministic order ⇒ stable README bytes
   })
 
   it('TYPOGRAPHY = the diamond: facets are the closed horo ring in measure-walk order', () => {

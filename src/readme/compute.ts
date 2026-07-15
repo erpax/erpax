@@ -19,7 +19,7 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, horoMeasureOf } from '@/horo'
+import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf } from '@/horo'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -339,6 +339,7 @@ export function renderReadme(
   model: ReadmeModel,
   models?: readonly FolderReadmeModel[],
   entropyRender?: CorpusEntropyRenderOpts,
+  sourceIndex?: readonly string[],
 ): string {
   const uuid = readmeUuid(model)
   const L: string[] = []
@@ -379,6 +380,7 @@ export function renderReadme(
     '',
     renderGithubBrowseNote(),
     '',
+    ...(sourceIndex ?? []),
     '## corpus analytics',
     '',
     plainLanguageOf({ section: 'analytics', model }),
@@ -438,11 +440,21 @@ export function renderReadme(
 /** The full pipeline: live tree → README markdown bytes. */
 export function generateReadme(cwd: string = process.cwd(), corpus?: ReadmeCorpus | CorpusAnalytics): string {
   if (corpus && 'models' in corpus) {
-    return renderReadme(deriveModel(cwd, corpus.analytics, corpus.papers), corpus.models)
+    return renderReadme(
+      deriveModel(cwd, corpus.analytics, corpus.papers),
+      corpus.models,
+      undefined,
+      computeSourceIndex(cwd, corpus.models),
+    )
   }
   const analytics = corpus as CorpusAnalytics | undefined
   const c = analytics ? undefined : buildReadmeCorpus(cwd)
-  return renderReadme(deriveModel(cwd, analytics ?? c?.analytics, c?.papers), c?.models)
+  return renderReadme(
+    deriveModel(cwd, analytics ?? c?.analytics, c?.papers),
+    c?.models,
+    undefined,
+    computeSourceIndex(cwd, c?.models),
+  )
 }
 
 /** One posting on the debit or credit side — account is an atom wikilink path. */
@@ -583,7 +595,7 @@ export function renderRootReadmeInWaves(
   onWave?: (ordinal: number, itemCount: number) => void,
 ): string {
   const { analytics, papers, models } = deriveReadmeRootInputsInWaves(cwd, onWave, frozen)
-  return renderReadme(deriveModel(cwd, analytics, papers), models, frozen.entropyRender)
+  return renderReadme(deriveModel(cwd, analytics, papers), models, frozen.entropyRender, computeSourceIndex(cwd, models))
 }
 
 /** Drift gate — two consecutive wave derives must be byte-identical (frozen quantum inputs). */
@@ -1533,6 +1545,29 @@ const REEXPORT_LINE = /^\s*export\s+(\{[^}]*\}|\*|type\s)/
 const IMPORT_LINE = /^\s*import\s/
 const OWN_LOGIC = /\b(function|class)\b|=>|export const \w+ =/
 
+/** One atom's rosetta class — an irreducible GENERATOR (own logic) or a derivable COMBINATION kind. */
+export type AtomClass = 'basis' | 'vocab' | 'barrel' | 'compose'
+
+/** Classify an atom folder: no index ⇒ vocab; only re-exports/imports ⇒ barrel; no own logic ⇒ compose; else basis. */
+function classifyAtom(dir: string, hasIndex: boolean): AtomClass {
+  if (!hasIndex) return 'vocab'
+  let lines: string[] = []
+  try {
+    lines = readFileSync(join(dir, 'index.ts'), 'utf8').split('\n')
+  } catch {
+    return 'basis' // unreadable — treat as basis, don't purge blind
+  }
+  const code = lines.filter((l) => {
+    const s = l.trim()
+    return s !== '' && !s.startsWith('//') && !s.startsWith('/*') && !s.startsWith('*')
+  })
+  const ownLogic = code.filter((l) => OWN_LOGIC.test(l) && !REEXPORT_LINE.test(l))
+  if (code.every((l) => REEXPORT_LINE.test(l) || IMPORT_LINE.test(l) || ['', '}', ')'].includes(l.trim()))) {
+    return 'barrel'
+  }
+  return ownLogic.length === 0 ? 'compose' : 'basis'
+}
+
 /**
  * Classify every atom as an irreducible GENERATOR (own logic — keep) or a rosetta
  * COMBINATION (vocab-prose · barrel · compose-only — derivable from the basis + link
@@ -1556,27 +1591,19 @@ export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
     const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
     if (names.has('SKILL.md') || names.has('index.ts')) {
       atoms++
-      if (!names.has('index.ts')) {
-        vocabOnly++
-      } else {
-        let lines: string[] = []
-        try {
-          lines = readFileSync(join(dir, 'index.ts'), 'utf8').split('\n')
-        } catch {
-          /* unreadable — treat as basis, don't purge blind */
-        }
-        const code = lines.filter((l) => {
-          const s = l.trim()
-          return s !== '' && !s.startsWith('//') && !s.startsWith('/*') && !s.startsWith('*')
-        })
-        const ownLogic = code.filter((l) => OWN_LOGIC.test(l) && !REEXPORT_LINE.test(l))
-        if (code.every((l) => REEXPORT_LINE.test(l) || IMPORT_LINE.test(l) || ['', '}', ')'].includes(l.trim()))) {
+      switch (classifyAtom(dir, names.has('index.ts'))) {
+        case 'vocab':
+          vocabOnly++
+          break
+        case 'barrel':
           barrelOnly++
-        } else if (ownLogic.length === 0) {
+          break
+        case 'compose':
           composeNoLogic++
-        } else {
+          break
+        case 'basis':
           basis++
-        }
+          break
       }
     }
     for (const e of entries) {
@@ -1594,6 +1621,101 @@ export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
     composeNoLogic,
     combinationShare: atoms > 0 ? combinations / atoms : 0,
   }
+}
+
+/** The irreducible generator atoms (own-logic index.ts) as sorted src-relative paths — the source index set. */
+export function basisAtoms(cwd: string = process.cwd()): string[] {
+  const root = join(cwd, SRC)
+  const out: string[] = []
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
+    if ((names.has('SKILL.md') || names.has('index.ts')) && classifyAtom(dir, names.has('index.ts')) === 'basis') {
+      out.push(relative(root, dir).replace(/\\/g, '/'))
+    }
+    for (const e of entries) {
+      if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees') walk(join(dir, e.name))
+    }
+  }
+  walk(root)
+  return out.sort()
+}
+
+/** The rosetta sections in ring-walk order; off-ring generators trail. */
+const ROSETTA_SECTIONS: readonly string[] = [...HORO_MEASURE, 'off-ring']
+
+/** One atom's realised achievement — its frontmatter "Use when …" clause, concise. */
+export function achievementOf(description: string): string {
+  const s = description.trim().replace(/^use when\s+/i, '')
+  const clause = s.split(/ — |\. |; /)[0] ?? s
+  return clause.length > 100 ? `${clause.slice(0, 99).trimEnd()}…` : clause
+}
+
+/**
+ * The source index — the README as the computed entry into source code, grouped in rosetta sections and
+ * realising each generator's ACHIEVEMENT (its frontmatter clause). The rosetta keeps only the basis, so the
+ * index links the irreducible GENERATORS (own-logic atoms); each `SKILL.md` links onward to its neighbours,
+ * so the derivable combinations are reached by following links, not by listing them. Sections are the horo
+ * measures (base·share·weave·crest·descent·round·unity), in ring-walk order. PURE — models + basis +
+ * achievement map in, markdown out, no I/O (the reads live in `computeSourceIndex`).
+ */
+export function renderSourceIndex(
+  models: readonly FolderReadmeModel[],
+  basis: ReadonlySet<string>,
+  achievement: ReadonlyMap<string, string>,
+): readonly string[] {
+  const bySection = new Map<string, string[]>()
+  for (const m of models) {
+    if (!basis.has(m.atomPath)) continue
+    const section = m.measure && (HORO_MEASURE as readonly string[]).includes(m.measure) ? m.measure : 'off-ring'
+    const arr = bySection.get(section)
+    if (arr) arr.push(m.atomPath)
+    else bySection.set(section, [m.atomPath])
+  }
+  const total = [...bySection.values()].reduce((n, a) => n + a.length, 0)
+  if (total === 0) return []
+  const L: string[] = [
+    '## source index',
+    '',
+    `> the README is the index to source code — the rosetta organises the SKILL frontmatter into its measures and realises each generator's achievement. the rosetta keeps only the basis: **${total}** irreducible generators (own executable logic) below; every \`SKILL.md\` links onward to its neighbours, so the derivable combinations are reached by following the links — computed, never listed.`,
+    '',
+  ]
+  for (const section of ROSETTA_SECTIONS) {
+    const atoms = (bySection.get(section) ?? []).sort()
+    if (atoms.length === 0) continue
+    L.push(`### ${section} · ${atoms.length}`, '')
+    for (const p of atoms) {
+      const a = achievement.get(p)
+      L.push(a ? `- [${p}](src/${p}/SKILL.md) — ${a}` : `- [${p}](src/${p}/SKILL.md)`)
+    }
+    L.push('')
+  }
+  return L
+}
+
+/**
+ * Gather the source index from the live tree — the impure half: scan the basis generators, read each one's
+ * frontmatter achievement ([[skill]] `skillDescriptionOf`), then render (pure) grouped in rosetta sections.
+ * Both root-render paths (`generateReadme` · `renderRootReadmeInWaves`) call this with the same cwd + models,
+ * so the index is byte-identical across them.
+ */
+export function computeSourceIndex(
+  cwd: string,
+  models: readonly FolderReadmeModel[] | undefined,
+): readonly string[] {
+  if (!models || models.length === 0) return []
+  const basis = new Set(basisAtoms(cwd))
+  const achievement = new Map<string, string>()
+  for (const p of basis) {
+    const d = skillDescriptionOf(p, cwd)
+    if (d) achievement.set(p, achievementOf(d))
+  }
+  return renderSourceIndex(models, basis, achievement)
 }
 
 /** nth Catalan number — the count of distinct binary fold-trees over n+1 leaves. */
