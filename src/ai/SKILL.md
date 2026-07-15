@@ -128,6 +128,10 @@ Industry failure modes (hallucination · audit fragmentation · prompt injection
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 42001:2023 ai-management-system`
+
+
 - **ISO/IEC 42001:2023** — ai-management-system. Every `callWorkersAi` invocation produces an audit row.
 - **GDPR Art. 22(3)** — right-to-human-intervention. High-risk AI decisions require a human gate; auto-accept is refused.
 - **EU AI Act 2024** — transparency-and-risk-classification. Each model call carries a risk class that drives the decision path.

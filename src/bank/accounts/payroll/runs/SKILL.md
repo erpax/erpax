@@ -135,6 +135,14 @@ employer accruals → net, then posts the IAS-19 / ASC-710 wages [[transaction]]
 `paymentDate`. Posted runs [[close|period-lock]]; reversals are a separate run.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-20022 pain.001 customer-credit-transfer-initiation`
+- `@standard ISO-13616-1:2020 iban`
+- `@standard ISO-9362:2022 bic`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time period payment-date`
+
 - ISO-20022 pain.001 customer-credit-transfer-initiation
 - ISO-13616-1:2020 iban
 - ISO-9362:2022 bic

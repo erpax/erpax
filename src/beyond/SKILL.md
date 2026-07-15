@@ -186,6 +186,10 @@ The barrel: `services/beyond/index.ts` exports all 11 law-modules (provenance, r
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204`
+
+
 - **W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204** — the governing standard set across all 11 laws: W3C PROV (causal provenance), ESRS E1 (carbon), EU AI Act (explainability + AI-audit), NIST FIPS 203/204 ML-DSA (post-quantum signatures).
 
 ---

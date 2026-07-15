@@ -129,6 +129,15 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 Append-only by design: read is tenant-scoped, create is the canonical hook only, update is forbidden, delete is admin-emergency. The durable, queryable evidence target — every canonical write (orders, invoices, payments, journal entries, subscriptions, fiscal periods, …) lands one row the auditor queries by `(tenant, collection, operation, user, timestamp)` instead of scraping logs.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-19011:2018 §6.4.6 audit-evidence-collection`
+- `@standard ISO-19011:2018 §6.5 audit-conclusions`
+- `@standard ISO/IEC 27037:2012 evidence-preservation`
+- `@standard rfc-9562 uuid event-id`
+- `@standard NIST FIPS-180-4 sha-256`
+- `@standard ISO 27037:2012 evidence-preservation`
+
 - ISO-19011:2018 §6.4.6 audit-evidence-collection
 - ISO-19011:2018 §6.5 audit-conclusions
 - ISO/IEC 27037:2012 evidence-preservation

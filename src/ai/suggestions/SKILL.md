@@ -116,6 +116,14 @@ side; the human adds `humanDecision` + `appliedTo` via the admin UI. High-risk
 class never auto-decides. Inference entry-points: `@see src/services/ai/`.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard rfc-9562 uuid suggestion-id`
+- `@standard ISO-8601-1:2019 date-time inference-time`
+- `@standard ISO/IEC 23894:2023 ai-risk-management`
+- `@standard ISO/IEC 42001:2023 ai-management-system`
+- `@standard NIST AI-RMF-1.0 ai-risk-management-framework`
+
 - rfc-9562 uuid suggestion-id
 - ISO-8601-1:2019 date-time inference-time
 - ISO/IEC 23894:2023 ai-risk-management

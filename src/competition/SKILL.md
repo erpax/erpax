@@ -138,6 +138,10 @@ Matter-twin: `src/services/competition/index.ts` (`Candidate`·`compete`·`takes
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)`
+
+
 - **ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)** — the competition model: the winner is the fastest correct candidate (least cost among gate-verified solutions).
 
 ## Common mistakes

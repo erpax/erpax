@@ -139,6 +139,10 @@ Two societies that serialise the same genome compute the same bundle uuid and ho
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Verifiable Credentials Data Model 2.0`
+
+
 - **W3C Verifiable Credentials Data Model 2.0** — the published genome is a verifiable credential a clone validates before booting.
 - **RFC 9562 §5.8 + RFC 8785** — genome-uuid is content-addressable over a canonical JSON serialisation; the basis of the integrity gate.
 - **W3C PROV** — the genome carries its source-instance lineage; the divergence point is the recorded provenance.

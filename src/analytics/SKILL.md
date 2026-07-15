@@ -206,4 +206,8 @@ The two truths still living outside the matrix stay outside `analyze()`: the [[a
 Matter-twin: `src/analytics/index.ts`. Composes [[matrix]] · [[balance]] · [[entropy]] · [[harmony]] · [[horo]] · [[tamper]] · [[standards]] · [[aura]] · [[trinity]] · [[accounting]] · [[dry]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects`
+
 - ISO/IEC-25010:2023 quality model — a computed read-out across software-quality aspects

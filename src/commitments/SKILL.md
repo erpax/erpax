@@ -108,6 +108,15 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard SOX §302 management-certification internal-controls`
+- `@standard SOX §404 internal-controls spending-authority`
+- `@standard IFRS IFRS-15 §10 contract-with-customer`
+- `@standard IFRS IAS-1 presentation-of-financial-statements`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time authorization-date`
+
 - SOX §302 management-certification internal-controls
 - SOX §404 internal-controls spending-authority
 - COSO Internal-Control-Integrated-Framework 2013 authorization

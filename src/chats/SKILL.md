@@ -79,6 +79,12 @@ Entangled with — [[content]] · [[thing]]
 **Law — [[law]]: chat is the per-tenant content-addressed agent-event bus where each row is an ErpaxEvent envelope keyed by content-[[uuid]] (idempotent, the akashic agent history) — distinct from messages (user mail).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C ActivityPub server-to-server activity-distribution (the model)`
+- `@standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)`
+- `@standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)`
+
 - W3C ActivityPub server-to-server activity-distribution (the model)
 - RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 - ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)

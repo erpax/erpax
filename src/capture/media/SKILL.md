@@ -180,3 +180,11 @@ The test-artifact uploader. It walks a Playwright `test-results` directory, read
 Matter-twin: `src/capture/media/index.ts` (`uploadTestArtifacts` · `buildWebVtt`).
 
 **Law — [[law]]: every recorded test artifact becomes a [[media]] record, and every video carries a WebVTT track built from its step titles — captured evidence is always captioned and provenance-bearing.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C WebVTT video-text-track-format`
+- `@standard ISO/IEC 14496-30 timed-text-formats`
+- `@standard ISO 19011:2018 audit-trail test-evidence`
+- `@standard W3C WebVTT`

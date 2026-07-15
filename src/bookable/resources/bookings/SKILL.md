@@ -116,6 +116,13 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-18513:2021 tourism-services-vocabulary check-in check-out`
+- `@standard ISO-8601-1:2019 date-time start-end-windows`
+- `@standard ISO-4217:2015 currency-codes pricing`
+- `@standard rfc-5545 icalendar-rrule recurring-bookings`
+
 - ISO-18513:2021 tourism-services-vocabulary check-in check-out
 - ISO-8601-1:2019 date-time start-end-windows
 - ISO-4217:2015 currency-codes pricing

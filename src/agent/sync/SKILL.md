@@ -169,6 +169,13 @@ Position **9** — unity. Of the ring `0,3,6,9,1,2,4,8,7,5`, agent-sync sits at 
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C ActivityPub server-to-server activity-distribution (the model)`
+- `@standard RFC-6455 websocket`
+- `@standard RFC-4122 §4.3 content-uuid event-identity (idempotency key)`
+- `@standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)`
+
+
 Applying this skill *implements* these standards; an `@standard` banner must be true to the layer it sits on, not decoration.
 
 - **ActivityPub** — W3C Recommendation, 23 January 2018 (https://www.w3.org/TR/activitypub/). The model: server-to-server activity distribution — publish an activity, peers consume it. erpax implements the broadcast/idempotent-consume pattern over a Durable Object room rather than full inbox/outbox conformance; cite it only on the federation edge that actually emits, never as a decorative banner ([[standard]]).

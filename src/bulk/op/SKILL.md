@@ -92,3 +92,11 @@ One entry-point for every file-format import / export, replacing the per-format 
 Matter-twin: `src/bulk/op/index.ts` (`enqueueBulkOperation` · `processRow` · `BULK_KIND_TO_AUDIT_OPERATION`).
 
 **Law — [[law]]: every bulk import/export flows through one contract — audited up front, idempotent by `operationId`, and per-row fail-closed into `transaction-failures` — so the per-format importers collapse to a single [[op]] ([[dry]]).**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 20022 camt.053 pain.001 pain.008`
+- `@standard EN-16931:2017 (UBL / CII import)`
+- `@standard rfc-4180 csv-format`
+- `@standard ISO/IEC 19503:2005 XMI`

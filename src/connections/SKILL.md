@@ -158,6 +158,13 @@ This is a [[collections|collection]] node ([[fields]] `from`/`to`/`context`/`sta
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)`
+- `@standard W3C ActivityPub server-to-server federation (the cross-platform sync)`
+- `@standard ISO 20022 financial-business-party-relationships`
+- `@standard RFC-4122 §4.3 content-uuid edge-identity`
+
+
 Applying this skill *implements* the federated social-graph standards — shaping an edge as an ActivityStreams activity and delivering it server-to-server is the skill, so the `@standard` banners on `index.ts` must be true to the layer emitting the activity, not decoration ([[standard]]).
 
 - **ActivityStreams 2.0 — Activity Vocabulary** — W3C Recommendation, 23 May 2017. The social-graph verbs `Follow`/`Accept`/`Block`/`Like` and the `actor`/`object` terms the `from`/`to`/`context` fields carry.

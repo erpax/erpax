@@ -118,5 +118,9 @@ This is the foundation [[separation]] applies at the scale of the branches and [
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 37000:2021 governance-of-organizations principle-of-purpose`
+
+
 - **ISO 37000:2021** — governance-of-organizations, principle-of-purpose.
 - **Venice Commission Rule of Law** — entrenched fundamental guarantees beyond the reach of a transient majority.

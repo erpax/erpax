@@ -560,6 +560,12 @@ Matter-twin: `src/cost/index.ts` (`CostKind`·`Output`·`Ledger`·`efficiency`·
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)`
+- `@standard NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2`
+- `@standard RFC 9562 §8 — UUID security considerations`
+
+
 - **ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)** — the efficiency law `output / cost` maps directly to this standard's resource-utilisation quality characteristic.
 
 ## Common mistakes

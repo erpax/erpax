@@ -437,3 +437,9 @@ delete: [superadmin]
 **Author:** Claude (Agent)  
 **Date:** 2026-05-12  
 **Status:** Implementation Complete
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard GDPR Art. 32 Data Protection`
+- `@standard NIST SP 800-92 Computer Security Incident Handling`

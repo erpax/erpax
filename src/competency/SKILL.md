@@ -87,3 +87,8 @@ Attested in schema.org — competencyRequired
 **Law — [[law]]: a competency is the one held-or-required capability word — the same axis a human and an agent are measured on — never split by who holds it.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 30405:2016 essential-vs-desirable (mandatory flag)`

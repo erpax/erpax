@@ -92,3 +92,10 @@ The anchor is the ONE external entropy a zero-entropy [[integrity]] store borrow
 Matter-twin: `src/anchoring/index.ts` — `anchorLeaf` · `anchorRoot` · `verifyAnchor` · `listAnchors` · `isExternalAnchor` · `NOTARY_STUB_BACKEND`; types `ChainKind` · `AnchorReceipt` · `ChainBackend` · `AnchorVerification`. Pins the [[audit]] Merkle root via [[integrity]] `computeContentDigest`; the mandatory external entropy of [[tamper]]-[[cost]].
 
 **Law — [[law]]: a backend that does not pin to entropy no party controls is not tamper-evidence — `verifyAnchor` passes only an external [[anchor]], never a stub, and the leaf commits the full content digest (2^128), never the uuid (2^53).**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Verifiable Credentials Data Model 2.0`
+- `@standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)`
+- `@standard RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors`

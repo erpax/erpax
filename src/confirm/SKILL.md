@@ -195,3 +195,8 @@ Attested in schema.org — ConfirmAction
 
 @standard schema.org — the type vocabulary, collided to single words
 @see [[seal]] · [[integrity]] · [[purity]] · [[quantum/uuid]] · [[payload]] · [[uuid]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable`

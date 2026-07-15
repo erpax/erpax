@@ -14,3 +14,9 @@ Financial analysis engine — balance sheet, income statement, aging reports.
 Matter-twin: `src/accounting/analysis/index.ts`
 
 Composes [[accounting]] · [[path]] · [[debit]] · [[balance]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time as-of-date`

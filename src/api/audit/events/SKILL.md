@@ -116,6 +116,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-19011:2018 audit-trail external-system-evidence`
+- `@standard ISO/IEC-27007:2020 isms-auditing`
+
 - ISO-19011:2018 audit-trail external-system-evidence
 - ISO/IEC-27007:2020 isms-auditing
 - ISO-19011:2018 audit-trail

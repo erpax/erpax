@@ -138,6 +138,10 @@ version: 2
 Biomass is to the [[aquaculture]]/[[forestry]] stock what the counted [[herd]] is to [[livestock]] — the aggregate the [[biological/assets|biological asset]] is carried at, drawn down by [[mortality]] and realized at [[harvest]] (felling, cropping) into [[items|inventory]]. Stocking density is its [[capacity]] ceiling; growth-and-yield models [[forecast]] it.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IAS-41 — biological assets: fair-value-less-costs-to-sell; transformation-vs-price split`
+
 - IFRS IAS-41 (fair-value-less-costs-to-sell on biomass; biological-transformation vs price-change split)
 - FAO (aquaculture/forestry biomass); forest growth-and-yield models (MAI)
 

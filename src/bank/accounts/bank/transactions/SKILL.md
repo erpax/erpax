@@ -134,6 +134,21 @@ Individual ISO 20022 camt.053 [[standard|bank-statement lines]] extracted into f
 Promotes each camt.053 line into a [[transaction]] row so it can be matched ↔ [[accounting|journal entries]] and [[identity|audited]] per line (SOX §404 reconciliation evidence). Relationship: `bankAccount` (rel), `statement` (parent camt.053, if batch-imported), `matchedJournalEntries[]` (with matchScore for fuzzy matching).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-20022 camt.053 bank-to-customer-statement`
+- `@standard ISO-20022 ExternalBankTransactionDomain1Code`
+- `@standard ISO-20022 ExternalBankTransactionFamily1Code`
+- `@standard ISO-20022 ExternalBankTransactionSubFamily1Code`
+- `@standard ISO-20022 EntryStatus2Code`
+- `@standard ISO-20022 CreditDebitCode`
+- `@standard ISO-20022 ChargeBearerType1Code`
+- `@standard ISO-11649:2009 financial-services-creditor-reference`
+- `@standard ISO-13616-1:2020 iban`
+- `@standard ISO-9362:2022 bic`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time value-date booking-date matched-at`
+
 - ISO-20022 camt.053 bank-to-customer-statement
 - ISO-20022 ExternalBankTransactionDomain1Code
 - ISO-20022 ExternalBankTransactionFamily1Code

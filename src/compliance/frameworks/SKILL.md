@@ -62,6 +62,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-37301:2021 compliance-management-systems`
+
 - ISO-37301:2021 compliance-management-systems
 - COSO-2013 internal-control-integrated-framework
 - ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -130,6 +130,15 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-18513:2021 tourism-services-vocabulary (when kind=hotel_room)`
+- `@standard ISO-3166-1:2020 country-codes resource-country`
+- `@standard ISO-4217:2015 currency-codes pricing`
+- `@standard ISO-8601-1:2019 date-time availability-windows`
+- `@standard ISO-55000:2014 asset-management resource-as-asset`
+- `@standard ISO-41001:2018 facility-management bookable-spaces`
+
 - ISO-18513:2021 tourism-services-vocabulary (when kind=hotel_room)
 - ISO-3166-1:2020 country-codes resource-country
 - ISO-4217:2015 currency-codes pricing

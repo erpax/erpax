@@ -113,6 +113,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes geographic-segment-tagging`
+- `@standard ISO-4217:2015 currency-codes`
+
 - ISO-3166-1:2020 country-codes geographic-segment-tagging
 - ISO-4217:2015 currency-codes
 - IFRS IAS-1 §99 statement-of-comprehensive-income

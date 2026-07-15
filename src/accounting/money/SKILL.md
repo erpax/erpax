@@ -14,3 +14,8 @@ Money fields — Payload money type fixes and currency handling.
 Matter-twin: `src/accounting/money/index.ts`
 
 Composes [[accounting]] · [[path]] · [[debit]] · [[balance]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`

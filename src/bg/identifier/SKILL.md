@@ -125,6 +125,10 @@ Both are instances of the ISO-7064 check-character family — the same modulo sk
 A [[fields|field]] `validate` (or onboarding [[hooks|hook]]) calls `validateEgn`/`validateEik` to gate party creation; decoded birth date + sex can populate sibling fields. The БУЛСТАТ-region naming stays out of generic slugs — the regulation reference lives here and in the `@standard` banners, never in a collection slug.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-7064 check-character-systems (the modulo family these implement)`
+
 Applying this skill *is* how the standard is implemented (the answer-path principle, [[standard]]); the `@standard` banners must assert the true regulation, not decorate.
 
 - **ЕГН regulation (Наредба РД-02-20-9/2012 on the population register)** — ЕГН structure + modulo-11 check digit; digits decode birth date and sex.

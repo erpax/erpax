@@ -221,6 +221,18 @@ This is the [[fractal]] same form one scale down from the [[fair/value/measureme
 **Law — [[law]]: a living class is carried at fair-value-less-costs-to-sell (never cost), re-measured each reporting date, with the change split into biological-transformation vs price-change; bearer plants are carved out to IAS-16.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IAS-41 §10 recognition-criteria`
+- `@standard IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell`
+- `@standard IFRS IAS-41 §13 biological-transformation`
+- `@standard IFRS IAS-41 §26 gains-losses-recognised-in-pnl`
+- `@standard IFRS IAS-41 §30 bearer-plants-now-IAS-16-since-2016-amendment`
+- `@standard IFRS IAS-41 §40 disclosure-by-class`
+- `@standard IFRS IFRS-13 fair-value-input-hierarchy`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`
+
 - IFRS IAS-41 §10 recognition-criteria
 - IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell
 - IFRS IAS-41 §13 biological-transformation

@@ -119,6 +119,10 @@ gate + per-tenant featureGuard + audit).
 **Law — [[law]]: the model catalog is one accountable folder with two facets (the admin-editable Payload collection + the DRY `AI_MODELS` registry) the router dispatches over only when the deterministic [[self]] cannot decide; a model swap is one edit, every fallback gated and audited by `callWorkersAi`.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC-4122 §4.3 uuid (content-addressed model identity)`
+
 - EU AI Act 2024 risk-classification + transparency
 - RFC-4122 §4.3 uuid (content-addressed model identity)
 - GDPR data-residency (`euHostable` / Cloudflare EU PoPs for EU tenants)

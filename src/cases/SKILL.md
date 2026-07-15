@@ -176,6 +176,10 @@ Evidence and proceedings are **append-only** ([[identity]] · [[holographic]]): 
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-19011:2018 ISA-500 evidence chain-of-custody append-only`
+
+
 The answer-path principle: modelling a matter on this docket IS placing it under the canonical public-order stack (see [[standard]]).
 
 - **UN COFOG 03** — Public order and safety (03.3 law courts); the societal coordinate every case references.

@@ -273,3 +273,8 @@ The *which* — which slugs exist, which plugin supplies carts/orders/variants �
 Composes: [[items/inventory/movements]] · [[payment/methods]] · [[dunning]] · [[payment]].
 
 **Law — [[law]]: a party plays infinite roles but the document chain is monotonic and status is derived, never stored — value moves only through balanced steps, so the books cannot disagree with their own counters.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)`

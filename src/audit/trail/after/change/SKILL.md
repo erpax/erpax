@@ -73,3 +73,9 @@ A factory that returns a Payload `afterChange` [[hooks]] bound to a collection s
 Matter-twin: `src/audit/trail/after/change/index.ts` (`auditTrailAfterChange`). Composes the [[audit]] entry shape from the standards module.
 
 **Law — [[law]]: every write emits a canonical audit entry on two channels — a streaming log and a Merkle-chained durable row — and the source write is never blocked by an audit failure.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard rfc-9562 uuid event-id`
+- `@standard NIST FIPS-180-4 sha-256`
