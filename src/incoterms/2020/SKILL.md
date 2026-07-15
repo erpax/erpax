@@ -62,3 +62,8 @@ This module exports the canonical 11-code set + the family split (multimodal vs 
 - ICC INCOTERMS 2020 publication 723E
 - WCO HS Convention (companion when crossing customs)
 - EU UCC 952/2013 (companion for EU import/export procedures)
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 6346 freight-container-code (related)`

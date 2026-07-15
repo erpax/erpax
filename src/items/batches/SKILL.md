@@ -94,6 +94,12 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 9001:2015 §8.5.2 identification-and-traceability`
+- `@standard ISO 22005:2007 feed-and-food-chain-traceability`
+- `@standard ISO-8601-1:2019 date-time manufacture-expiry-dates`
+
 - ISO 9001:2015 §8.5.2 identification-and-traceability
 - ISO 22005:2007 feed-and-food-chain-traceability
 - GS1 General Specifications AI(10) batch/lot AI(17) expiry AI(11) production-date

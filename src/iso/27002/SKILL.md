@@ -126,3 +126,9 @@ Add controls (5.X, 6.X, 7.X, 8.X) as they're cited.
 - ISO/IEC 27002:2022 — Information security controls.
 - ISO/IEC 27017:2015 — Code of practice for information security controls based on ISO/IEC 27002 for cloud services.
 - ISO/IEC 27701:2019 — Privacy information management extension.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-27002:2022 information-security-controls`
+- `@standard ISO-27001:2022 isms-annex-a-controls`

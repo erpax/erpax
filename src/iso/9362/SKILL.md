@@ -55,3 +55,8 @@ version: 2
 ## Used by
 
 Bank-routing fields on `BankStatements`, `PaymentMethods`, `Vendors`.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-9362:2022 bic`

@@ -91,6 +91,11 @@ Recurring Journals — automation register for IAS-1 §27 accrual-basis.
 Template definitions for materialised [[journal/entries]] that recur on a schedule (rent, depreciation accrual, amortisation, prepaid release, deferred-revenue release, etc.). Pairs with the Workers `period-close` queue to instantiate scheduled entries at each period rollover.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time recurrence`
+- `@standard rfc-5545 icalendar-rrule recurrence-rule`
+
 - ISO-8601-1:2019 date-time recurrence
 - rfc-5545 icalendar-rrule recurrence-rule
 - IFRS IAS-1 §27 accrual-basis-of-accounting

@@ -100,3 +100,8 @@ log aggregator emits.
 - SOC 2 CC4.1 — monitoring and evaluation.
 
 **Law — [[law]]: the audit-trail shape (`AuditEntry` who/what/when/why) has exactly one canonical home here that the log emitter and the durable `audit-events` collection both import — so drift between what auditors query and what the aggregator emits becomes a compile-time error, not a silent divergence.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-19011:2018 audit-trail`

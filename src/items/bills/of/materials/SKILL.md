@@ -85,6 +85,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time effective-from / to`
+- `@standard ISO 22400:2014 manufacturing-operations-management KPIs`
+
 - ISO-8601-1:2019 date-time effective-from / to
 - ISA-95:2013 enterprise-control-system-integration §B.4
 - ISO 22400:2014 manufacturing-operations-management KPIs

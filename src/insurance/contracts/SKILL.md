@@ -176,6 +176,18 @@ Composes [[accounting]] · [[fair/value/measurements]] for insurance contract gr
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-17 §3 scope`
+- `@standard IFRS IFRS-17 §32 general-measurement-model-building-blocks`
+- `@standard IFRS IFRS-17 §38 contractual-service-margin`
+- `@standard IFRS IFRS-17 §53 premium-allocation-approach-simplified`
+- `@standard IFRS IFRS-17 §B100 variable-fee-approach`
+- `@standard IFRS IFRS-17 §93 disclosure-requirements`
+- `@standard IFRS IFRS-13 fair-value-input-hierarchy`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`
+
+
 - IFRS IFRS-17 §3 scope
 - IFRS IFRS-17 §32 general-measurement-model-building-blocks
 - IFRS IFRS-17 §38 contractual-service-margin

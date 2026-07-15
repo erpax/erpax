@@ -61,3 +61,8 @@ Sub-national tax jurisdictions, region/state fields on addresses, customers,
 vendors, and tax-jurisdiction master records.
 
 **Law — [[law]]: a subdivision code is only valid as `<alpha-2>-<subdivision>` — a region is always named relative to its country, never standalone, so the parent country is inseparable from the subnational jurisdiction.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-2:2020 subdivision-codes`

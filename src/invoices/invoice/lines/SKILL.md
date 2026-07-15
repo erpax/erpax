@@ -109,6 +109,19 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard EN-16931:2017 §BG-25 invoice-line`
+- `@standard EN-16931:2017 §BG-29 price-details`
+- `@standard EN-16931:2017 §BG-30 line-vat-information`
+- `@standard EN-16931:2017 §BG-27 invoice-line-allowances`
+- `@standard EN-16931:2017 §BG-28 invoice-line-charges`
+- `@standard EN-16931:2017 BT-126 invoice-line-identifier`
+- `@standard EN-16931:2017 BT-131 invoice-line-net-amount`
+- `@standard EN-16931:2017 BT-151 vat-category-code`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code`
+
 - EN-16931:2017 §BG-25 invoice-line
 - EN-16931:2017 §BG-29 price-details
 - EN-16931:2017 §BG-30 line-vat-information

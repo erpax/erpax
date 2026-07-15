@@ -153,3 +153,8 @@ Extends the folder law: **every word** in bonds or wikilinks must be a folder wi
 **Law — user words are not saved until the diamond is complete and proven.** Taking conversation phrases without `SKILL.md` + `index.ts` + `test.ts` + sealed README + `recordOnPath` + passing vitest in the **same pass** is axis **`phrase-without-diamond`** — strict violation. `userWordUnprovenViolations()` · `proveDiamondOrRevert(path)` · `phraseWithoutDiamondChangesetGate(files)` fail closed; hyphenated phrase folders are **deleted**.
 
 Sibling laws: [[quaternary]] (file purity — only canonical files), [[convention]] (the import ratchet), [[merge]] · [[collapse]] (how entropy folds away). **Tightened axes** (alphanumeric stems, stray `.ts`, multi-segment filenames, accounting structure, word-without-code) live in [[rules]] — `pnpm rules:check`. Owner of the canonical command set: [[law]] · [[rules]].
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability`

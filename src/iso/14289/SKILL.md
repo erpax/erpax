@@ -77,3 +77,9 @@ When extending:
 1. New PDF/UA profile / level → add to `profile.ts`.
 2. Spec mirror under `tests/standards/iso-14289/`.
 3. `pnpm standards:write-index` to refresh `docs/STANDARDS_INDEX.md`.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-14289-1:2014 pdf-ua-1`
+- `@standard ISO-14289-2:2024 pdf-ua-2`

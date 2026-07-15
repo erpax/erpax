@@ -66,3 +66,8 @@ Bank-account fields on `BankStatements`, `PaymentMethods`, `Payments`,
 `Vendors`, `Tenants`. PCI-DSS scope: not card data; treat as PII (GDPR).
 
 **Law — [[law]]: an IBAN is self-validating — its mod-97 check digits (ISO 7064) make the identifier carry its own integrity proof, so a typo fails the checksum, not the bank.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-13616-1:2020 iban`

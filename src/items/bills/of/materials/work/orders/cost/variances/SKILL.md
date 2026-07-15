@@ -126,6 +126,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time variance-date`
+
+
 The answer-path: `index.ts` implements these standards directly via schema design and hooks.
 
 - ISO-8601-1:2019 date-time variance-date

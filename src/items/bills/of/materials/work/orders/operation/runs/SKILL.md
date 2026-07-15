@@ -91,6 +91,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)`
+- `@standard ISO-8601-1:2019 date-time start-completion`
+
 - ISA-95:2013 / IEC-62264-1 §B.5 production-performance work-response
 - ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)
 - ISO-8601-1:2019 date-time start-completion

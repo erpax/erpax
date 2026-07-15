@@ -217,6 +217,11 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 The catalog also holds **agricultural produce**: each [[crop]] is an items row (its sale unit a [[measure]] — bunch/head/quart — its price a [[currency]] amount), and **[[seed]]** is items too (the propagule as purchasable inventory; the [[cropplan]] seed order = computed need − on-hand). The CSA [[share]] box and its [[packs|packing]] draw from this one inventory. Garments, produce, seed — strip the prefix and they [[merge]] into one catalog/inventory model.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes price-currency`
+- `@standard EN-16931:2017 §BG-31 item-information`
+
 - UN-CEFACT UNSPSC product-classification
 - GS1 GTIN global-trade-item-number
 - ISO-4217:2015 currency-codes price-currency

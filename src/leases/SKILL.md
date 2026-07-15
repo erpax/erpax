@@ -106,6 +106,11 @@ The actual interest-accretion + amortisation journal entry is posted via [[lease
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time commencement-date end-date`
+
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time commencement-date end-date
 - IFRS IFRS-16 leases lessee-recognition

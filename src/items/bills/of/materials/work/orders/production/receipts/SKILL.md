@@ -96,6 +96,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time receipt-date`
+
 - ISO-8601-1:2019 date-time receipt-date
 - ISA-95:2013 §B.5 production-execution
 - IFRS IAS-2 §10 §12 cost-of-conversion

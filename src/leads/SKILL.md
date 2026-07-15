@@ -102,6 +102,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time`
+- `@standard ISO-3166-1:2020 country-codes`
+
 - ISO-8601-1:2019 date-time
 - ISO-3166-1:2020 country-codes
 - GDPR Art.5 data-minimisation

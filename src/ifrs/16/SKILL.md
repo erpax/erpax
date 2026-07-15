@@ -106,3 +106,8 @@ Future consumers (the lease-period-postings collection and a `lease.service.ts` 
 - ASC 842-20-35 — Subsequent measurement (lessee).
 
 **Law — [[law]]: IFRS 16 / ASC 842 owns the canonical lessee types — every lease, bar the two narrow §5 exemptions (short-term, low-value), puts a right-of-use asset AND a lease liability on the balance sheet — the one shape the Leases collection and future amortisation service project onto, so the classification union cannot drift.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`

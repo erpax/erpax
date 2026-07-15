@@ -137,6 +137,16 @@ asset. Standards (IFRS 5, IFRS 13, ASC 205-20 / 360-10) and tenant-isolation pos
 **Law — [[law]]: classifying an asset held-for-sale (IFRS 5 §6, sale highly-probable within 12 months) triggers §15 remeasurement to the lower of carrying amount and FV−CTS, suspends depreciation, and posts a [[journal/entries]] [[entry]] that keeps the [[accounting]] [[balance]] across a [[horo]] disposal ring.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-5 §6-§9 classification-criteria`
+- `@standard IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts`
+- `@standard IFRS IFRS-5 §25 depreciation-suspended`
+- `@standard IFRS IFRS-5 §31-§40 discontinued-operations-presentation`
+- `@standard IFRS IFRS-13 fair-value-input-hierarchy`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time classification-date`
+
 - IFRS IFRS-5 §6-§9 classification-criteria
 - IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
 - IFRS IFRS-5 §25 depreciation-suspended

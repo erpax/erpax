@@ -83,3 +83,10 @@ When extending:
 3. `pnpm standards:write-index` to refresh `docs/STANDARDS_INDEX.md`.
 
 **Law — [[law]]: every PDF the project emits for archival must declare a PDF/A conformance level in its XMP packet — long-term readability is a self-asserted, embedded fact (the 10-year retention mandate), not an external promise.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-19005-1:2005 pdf-a-1`
+- `@standard ISO-19005-2:2011 pdf-a-2`
+- `@standard ISO-19005-3:2012 pdf-a-3`

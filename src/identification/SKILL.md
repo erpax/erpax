@@ -93,3 +93,11 @@ Attested in schema.org — certificationIdentification · vehicleIdentificationN
 **Law — [[law]]: identification is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 uuidv8`
+- `@standard RFC 7515 JWS compact form`
+- `@standard W3C DID Core 1.0 (DID syntax)`
+- `@standard ISO/IEC 25010:2023 §5.3 operability (one input → one resolver)`

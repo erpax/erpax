@@ -69,3 +69,8 @@ Every Payload field named `country` (collections: `Tenants`, `Customers`,
 `Vendors`, `TaxJurisdictions`, address fields under multi-tenant ecommerce).
 
 **Law — [[law]]: a country is identified only by its ISO 3166-1 code (alpha-2 / alpha-3) — every `country` field across the corpus speaks one canonical codeset, so the same place is the same code everywhere, never a free-text name.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes`

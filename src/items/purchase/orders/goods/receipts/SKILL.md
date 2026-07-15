@@ -94,6 +94,11 @@ GR receipt confirms goods arrival and triggers GL accrual posting. Revenue recog
 GL posting (debit inventory, credit accounts-payable) on GR; revenue posting on shipment FOB date. IFRS-15 §31 requires substantiation that GR date ≠ revenue date.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time received-at`
+- `@standard EN-16931:2017 §BG-13 delivery-information`
+
 - ISO-8601-1:2019 date-time received-at
 - EN-16931:2017 §BG-13 delivery-information
 - ISO-19011:2018 audit-trail receipt-evidence

@@ -73,6 +73,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: each GL account carries its validation-metadata — type, normal debit/credit polarity, balance-sheet-vs-P&L category, reconciliation frequency, cash-flow relevance, close flag — that drives double-entry validation ([[accounting]], [[balance]]).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 effective-date`
+
 - IFRS IAS-1 double-entry
 - SOX §404 internal-controls
 - ISO-8601-1:2019 effective-date

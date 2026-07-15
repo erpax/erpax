@@ -109,6 +109,16 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-20022 pain.001 customer-credit-transfer-initiation`
+- `@standard ISO-20022 pain.008 customer-direct-debit-initiation`
+- `@standard ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time payment-date value-date`
+- `@standard ISO-13616-1:2020 iban`
+- `@standard ISO-9362:2022 bic`
+
 - ISO-20022 pain.001 customer-credit-transfer-initiation
 - ISO-20022 pain.008 customer-direct-debit-initiation
 - ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer

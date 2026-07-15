@@ -124,6 +124,14 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-20022 camt.053 bank-to-customer-statement`
+- `@standard ISO-13616-1:2020 iban`
+- `@standard ISO-9362:2022 bic`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time statement-date period-start reconciled-at`
+
 - ISO-20022 camt.053 bank-to-customer-statement
 - ISO-13616-1:2020 iban
 - ISO-9362:2022 bic

@@ -101,6 +101,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 15459-1:2014 unique-identification transport-units`
+- `@standard ISO-8601-1:2019 date-time`
+
 - GS1 General Specifications AI(00) SSCC serial-shipping-container-code
 - ISO/IEC 15459-1:2014 unique-identification transport-units
 - GS1 Logistic Label

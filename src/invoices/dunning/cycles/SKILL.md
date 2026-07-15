@@ -97,6 +97,11 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: each overdue invoice carries one dunning-cycle record advancing reminder→demand→legal-handover→write-off, every stage producing the IFRS-9/CECL expected-credit-loss allowance evidence, write-off gated by segregation of duties.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time stage-due-date`
+- `@standard ISO-4217:2015 currency-codes`
+
 - ISO-8601-1:2019 date-time stage-due-date
 - ISO-4217:2015 currency-codes
 - IFRS IFRS-9 §5.5 expected-credit-loss simplified-approach

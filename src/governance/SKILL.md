@@ -146,5 +146,9 @@ Sequence position: **6** (round — the deliberation that returns a binding resu
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 37000:2021 governance-of-organizations`
+
+
 - **ISO 37000:2021** — governance-of-organizations.
 - **Venice Commission Code of Good Practice in Electoral Matters** — one-person-one-vote, the unstuffable count.

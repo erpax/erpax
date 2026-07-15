@@ -124,6 +124,11 @@ carries its disposition (remediated · open · overruled · dismissed), keyed id
 the proceeding run-id so a re-seed never duplicates.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-19011:2018 audit-finding`
+- `@standard ISO/IEC-27007:2020 ISMS-auditing`
+
 - ISO-19011:2018 audit-finding
 - ISO/IEC-27007:2020 ISMS-auditing
 - SOX §404 internal-controls deficiency-tracking
