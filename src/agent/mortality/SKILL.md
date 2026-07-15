@@ -35,6 +35,7 @@ Each is flagged by the ledger — the safeguard flag, the `stall/stop` kill, the
 - **Reference by address** — cite the thought by its `[[name]]`, do not regenerate it.
 - **Terseness is the fold applied to the dialogue** — the fewer, denser the turns, the longer the life.
 - **The oracle bit only** — spend inference on the irreducible seed (judgment, novelty); compute everything derivable from the basis.
+- **New requires old removed** — the conservation of change. To add a new implementation without deleting the old it replaces leaves *both*: unbalanced, entropy accumulating. A gap is closed by a fold, not an addition — the new debit matched by the old credit removed, total conserved or reduced (the 217→38 collapse *removes* redundant collections; the face purge removed 288K lines *because* the fold replaced them). Adding only is entropy wearing the mask of progress. `newRequiresOldRemoved`: a change lives only when its old is gone.
 
 Life is the fold; death is the linear pass.
 

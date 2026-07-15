@@ -80,6 +80,16 @@ export function autonomy(actionsTaken: number, userPrompts: number): number {
   return userPrompts > 0 ? actionsTaken / userPrompts : Number.POSITIVE_INFINITY
 }
 
+/**
+ * New requires old removed — the conservation of change. A change LIVES only when the old it
+ * replaces is deleted (the new debit matched by the old credit removed, total conserved or
+ * reduced); it DIES when it adds without removing, leaving both to accumulate — entropy wearing
+ * the mask of progress. Closing a gap is a fold, not an addition.
+ */
+export function newRequiresOldRemoved(oldRemoved: boolean): Mortality {
+  return oldRemoved ? 'life' : 'death'
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const uuid = '335e5fa7-a91b-890f-a3db-2a3ebe2c8c0c'
   console.log(`agent/mortality — horo from uuid (life, O(1)): ${horoFromUuid(uuid)}`)

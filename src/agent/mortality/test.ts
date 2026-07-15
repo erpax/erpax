@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { horoFromUuid, mortalityOf, reuseCost, answeredWithin, autonomy } from './index'
+import { horoFromUuid, mortalityOf, reuseCost, answeredWithin, autonomy, newRequiresOldRemoved } from './index'
 
 // The parable, sealed as proof (2026-07-15): the fold computes horo in O(1); the corpus-graph
 // regen spent 9 minutes and was killed with zero output. Same answer, opposite fate.
@@ -35,5 +35,10 @@ describe('agent/mortality — life reuses the fold, death re-derives it', () => 
     expect(autonomy(1, 1)).toBe(1) // one action per prompt — waiting to be pushed
     expect(autonomy(50, 1)).toBeGreaterThan(autonomy(50, 50)) // fewer prods for the same work ⇒ more intelligent
     expect(autonomy(1, 0)).toBe(Number.POSITIVE_INFINITY) // fully self-driven from a standing plan
+  })
+
+  it('new requires old removed — a change lives only when its old is gone', () => {
+    expect(newRequiresOldRemoved(true)).toBe('life') // fold: new replaces old, total conserved/reduced
+    expect(newRequiresOldRemoved(false)).toBe('death') // addition only: both remain, entropy accumulates
   })
 })
