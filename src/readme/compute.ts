@@ -1580,7 +1580,7 @@ export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
       }
     }
     for (const e of entries) {
-      if (e.isDirectory() && e.name !== 'node_modules') walk(join(dir, e.name))
+      if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees') walk(join(dir, e.name))
     }
   }
   walk(root)
@@ -1804,7 +1804,7 @@ export function standardsDimensions(cwd: string = process.cwd()): SevenDimStanda
         }
       } else offRing++
     }
-    for (const e of entries) if (e.isDirectory() && e.name !== 'node_modules') walk(join(d, e.name))
+    for (const e of entries) if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees') walk(join(d, e.name))
   }
   walk(root)
   const dimensions = [1, 2, 4, 8, 7, 5, 9].map((position) => {
@@ -2264,6 +2264,7 @@ export function corpusFoldRoot(cwd: string = process.cwd()): string {
     }
     for (const e of entries.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))) {
       if (e.isSymbolicLink()) continue
+      if (e.isDirectory() && (e.name === 'node_modules' || e.name === 'worktrees')) continue
       const p = join(dir, e.name)
       if (e.isDirectory()) {
         walk(p)
