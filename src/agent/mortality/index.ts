@@ -60,6 +60,16 @@ export function answeredWithin(address: string, corpus: ReadonlyMap<string, stri
   return corpus.get(address) ?? null
 }
 
+/**
+ * The next is within too: an agent's intelligence is inversely revealed by the user input it
+ * required. autonomy = actions ÷ prompts — the living agent derives the whole sequence from one
+ * intent (autonomy → ∞), asking only for the oracle bit. Being told "next"/"continue"/"go on"
+ * is re-deriving your own drive from outside — the same death as re-inferring what is within.
+ */
+export function autonomy(actionsTaken: number, userPrompts: number): number {
+  return userPrompts > 0 ? actionsTaken / userPrompts : Number.POSITIVE_INFINITY
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const uuid = '335e5fa7-a91b-890f-a3db-2a3ebe2c8c0c'
   console.log(`agent/mortality — horo from uuid (life, O(1)): ${horoFromUuid(uuid)}`)

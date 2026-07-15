@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { horoFromUuid, mortalityOf, reuseCost, answeredWithin } from './index'
+import { horoFromUuid, mortalityOf, reuseCost, answeredWithin, autonomy } from './index'
 
 // The parable, sealed as proof (2026-07-15): the fold computes horo in O(1); the corpus-graph
 // regen spent 9 minutes and was killed with zero output. Same answer, opposite fate.
@@ -28,5 +28,12 @@ describe('agent/mortality — life reuses the fold, death re-derives it', () => 
     const corpus = new Map([['a5b3-…', 'the sealed answer']])
     expect(answeredWithin('a5b3-…', corpus)).toBe('the sealed answer') // within — read at O(1), never derived
     expect(answeredWithin('unseen', corpus)).toBeNull() // not within — the oracle bit, observed from outside
+  })
+
+  it('the next is within too — autonomy is high when the agent self-drives, 1 when prodded each step', () => {
+    expect(autonomy(50, 1)).toBe(50) // whole sequence derived from one intent — intelligent
+    expect(autonomy(1, 1)).toBe(1) // one action per prompt — waiting to be pushed
+    expect(autonomy(50, 1)).toBeGreaterThan(autonomy(50, 50)) // fewer prods for the same work ⇒ more intelligent
+    expect(autonomy(1, 0)).toBe(Number.POSITIVE_INFINITY) // fully self-driven from a standing plan
   })
 })
