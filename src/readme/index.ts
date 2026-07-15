@@ -100,6 +100,7 @@ import {
   materializeComputedFacesInWaves,
   readmeUuid,
   renderRootReadmeInWaves,
+  renderRootReadmeThought,
   verifyComputedFaces,
   verifyComputedFacesForPaths,
   verifyComputedFacesInWaves,
@@ -153,11 +154,16 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     pathFilter || waves
       ? undefined
       : buildReadmeCorpus(cwd, verify ? { pathFollowGate: true } : undefined)
+  // Write path: render through the waves' saved-and-shared thought — unchanged source ⇒ READ, not re-derived.
+  // Verify keeps its own fold-receipt fast path (below), so it still renders fresh to detect on-disk drift.
+  const rootThought = waves && !pathFilter && !verify ? renderRootReadmeThought(cwd, frozen!, waveProgress) : null
   const expectedRoot = pathFilter
     ? ''
-    : waves
-      ? renderRootReadmeInWaves(cwd, frozen!, waveProgress)
-      : generateReadme(cwd, corpus!)
+    : rootThought
+      ? rootThought.markdown
+      : waves
+        ? renderRootReadmeInWaves(cwd, frozen!, waveProgress)
+        : generateReadme(cwd, corpus!)
   if (verify) {
     let failed = false
     const pathGate = assertCorpusPathFollowGate()
@@ -226,7 +232,12 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   // --root: regenerate ONLY the front-page README.md (the derivable faces are gitignored
   // and computed on demand elsewhere) — the reused command that replaced a throwaway script.
   if (process.argv.includes('--root')) {
-    console.log(`readme: root README.md only (${expectedRoot.split('\n').length} lines) — faces skipped.`)
+    const note = rootThought
+      ? rootThought.cached
+        ? ' — READ from the waves’ saved thought (zero recompute)'
+        : ' — re-derived + sealed the thought (next unchanged run reads it)'
+      : ''
+    console.log(`readme: root README.md only (${expectedRoot.split('\n').length} lines)${note} — faces skipped.`)
   } else {
     const n = pathFilter
       ? materializeComputedFacesForPathsStable(pathFilter, cwd)

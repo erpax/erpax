@@ -61,6 +61,7 @@ import {
   type HoroPivotRow,
   type ControlAxisFacet,
 } from '@/pivot'
+import { think } from '@/think'
 import { deriveOrientSection, plainLanguageOf, bondWordsOf, skillDescriptionOf } from './derive-prose'
 import { scientificPaperOf } from './paper'
 import {
@@ -2727,7 +2728,10 @@ export function materializeFolderReadmes(cwd: string = process.cwd()): number {
  * ([[quantum]]/cache: content IS the key, a changed input is a different key). A matching root means
  * every face-drift verdict from the sealed run still holds — zero recompute on an unchanged tree.
  */
-export function corpusFoldRoot(cwd: string = process.cwd()): string {
+const GENERATED_FACES: ReadonlySet<string> = new Set(['README.md', 'LLM.md', 'diamond.json'])
+
+export function corpusFoldRoot(cwd: string = process.cwd(), opts?: { sourceOnly?: boolean }): string {
+  const sourceOnly = opts?.sourceOnly === true
   const hash = createHash('sha256')
   const walk = (dir: string): void => {
     let entries: Dirent[]
@@ -2744,12 +2748,14 @@ export function corpusFoldRoot(cwd: string = process.cwd()): string {
         walk(p)
         continue
       }
+      if (sourceOnly && GENERATED_FACES.has(e.name)) continue // the output is not part of its own key
       hash.update(relative(cwd, p))
       hash.update(readFileSync(p))
     }
   }
   walk(join(cwd, SRC))
-  for (const extra of ['package.json', 'wrangler.jsonc', 'README.md']) {
+  const extras = sourceOnly ? ['package.json', 'wrangler.jsonc'] : ['package.json', 'wrangler.jsonc', 'README.md']
+  for (const extra of extras) {
     try {
       hash.update(readFileSync(join(cwd, extra)))
     } catch {
@@ -2757,6 +2763,25 @@ export function corpusFoldRoot(cwd: string = process.cwd()): string {
     }
   }
   return hash.digest('hex')
+}
+
+/**
+ * The waves' saved-and-shared thought. `renderRootReadmeInWaves` re-derives every call (the timeout); here it
+ * is wrapped in `think()` keyed by the SOURCE fold — every `src` input AND the generator code, which also
+ * lives in `src`, but NOT the generated README (the output is not part of its own key). Unchanged source ⇒
+ * the sealed markdown is READ (O(1), the grind gone); any change to an input or the generator ⇒ a different
+ * key ⇒ re-derive and reseal. The waves save their thought to the gitignored store and share it across runs.
+ *
+ * Composes [[think]] · [[merge]].
+ */
+export function renderRootReadmeThought(
+  cwd: string = process.cwd(),
+  frozen?: ReadmeCorpusFrozenInputs,
+  onWave?: (ordinal: number, itemCount: number) => void,
+): { readonly markdown: string; readonly cached: boolean } {
+  const key = `readme-root:${corpusFoldRoot(cwd, { sourceOnly: true })}`
+  const t = think(key, () => renderRootReadmeInWaves(cwd, frozen, onWave), cwd)
+  return { markdown: t.value, cached: t.cached }
 }
 
 export interface CorpusFoldReceipt {
