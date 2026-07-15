@@ -646,7 +646,7 @@ export function shapeCatalogue(configs: ReadonlyArray<{ slug: string; fields: Fi
  * or more collections than the sealed baseline means unfolded schema entropy.
  */
 export function shapeRatchetVerdict(
-  catalogue: ShapeCatalogue,
+  catalogue: Pick<ShapeCatalogue, 'collections' | 'basisOccupancy'>,
   baseline: { readonly collections: number; readonly signatures: number },
 ): { readonly ok: boolean; readonly detail: string } {
   const ok = catalogue.collections <= baseline.collections && catalogue.basisOccupancy <= baseline.signatures

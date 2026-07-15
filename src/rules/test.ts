@@ -120,6 +120,16 @@ describe('rules — tightened gate registry', () => {
     if (!folderSeal.sealed) expect(verdict.sealed).toBe(false)
   })
 
+  it('rosetta ratchet enforcement is PAID — shapeRatchetVerdict gates via the corpus lane', async () => {
+    const { GATE_LANES } = await import('@/cli/gate')
+    const corpusLane = GATE_LANES.find(([label]) => label === 'corpus')
+    expect(corpusLane?.[1]).toContain('doctor corpus')
+    const { shapeRatchetVerdict, ROSETTA_BASELINE } = await import('@/factory/collection-factory')
+    const atLine = { collections: ROSETTA_BASELINE.collections, basisOccupancy: ROSETTA_BASELINE.signatures }
+    expect(shapeRatchetVerdict(atLine, ROSETTA_BASELINE).ok).toBe(true)
+    expect(shapeRatchetVerdict({ ...atLine, collections: atLine.collections + 1 }, ROSETTA_BASELINE).ok).toBe(false)
+  })
+
   it('compliant accounting pattern — one-word children coa · corpus', () => {
     const compliant = ['coa', 'corpus']
     for (const nest of compliant) {
