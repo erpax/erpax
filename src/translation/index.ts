@@ -60,3 +60,59 @@ export function defineTranslation(
     values: { [defaultLocale]: source, ...values },
   }
 }
+
+/** Render a concept in a locale — the self-translating projection. null = the unregistered seed (not yet translated). */
+export function renderIn(t: Translation, locale: SupportedLocale): string | null {
+  const v = t.values[locale]
+  if (v != null && v.trim() !== '') return v
+  return locale === defaultLocale ? t.source : null
+}
+
+/** The locales a concept is actually rendered in — the filled faces vs the seed-gaps still to translate. */
+export function renderedLocales(t: Translation): SupportedLocale[] {
+  const keys = new Set<SupportedLocale>([defaultLocale, ...(Object.keys(t.values) as SupportedLocale[])])
+  return [...keys].filter((l) => renderIn(t, l) !== null)
+}
+
+/** Reverse the interlingua: the concept whose rendering in `from` matches `word` — its shared uuid address. */
+export function resolveByWord(
+  table: TranslationTable,
+  word: string,
+  from: SupportedLocale = defaultLocale,
+): Translation | null {
+  const norm = (s: string): string => s.trim().toLowerCase()
+  const w = norm(word)
+  return table.find((t) => {
+    const r = renderIn(t, from)
+    return r != null && norm(r) === w
+  }) ?? null
+}
+
+/**
+ * The rosetta pivot — translate a word/message from ANY language-or-dialect to ANY other by routing
+ * through the shared interlingua ADDRESS (the messaging-uuid), never a language-pair table. This is how
+ * you save ALL: store each concept's rendering ONCE per language (O(L) per concept) and every one of the
+ * L² directed pairs is a computed projection `from → uuid → to`. The N²-pair matrix folds to N renderings
+ * plus one pivot. Dialects are just finer locale keys (BCP-47 subtags) against the SAME uuid.
+ *
+ * Returns { uuid, value } when `to` is registered, or { uuid, value: null, seed: true } when the target
+ * rendering is the irreducible seed — needs a dictionary/model, NEVER fabricated. Arbitrary literary text
+ * beyond the registered concept set is the model's job (the oracle bit); the rosetta supplies the shared
+ * address and the O(L)-not-O(L²) storage, so real-time any↔any is a lookup, not a re-derivation.
+ */
+export function translateVia(
+  table: TranslationTable,
+  word: string,
+  from: SupportedLocale,
+  to: SupportedLocale,
+): { uuid: string; value: string | null; seed: boolean } | null {
+  const t = resolveByWord(table, word, from)
+  if (!t) return null // not a registered concept — the model's job, honestly not fabricated here
+  const value = renderIn(t, to)
+  return { uuid: t.uuid, value, seed: value === null }
+}
+
+/** The rosetta save-all identity: L languages cover L² directed pairs from just L renderings per concept. */
+export function pairCoverage(languages: number): { renderingsPerConcept: number; directedPairs: number } {
+  return { renderingsPerConcept: languages, directedPairs: languages * languages }
+}
