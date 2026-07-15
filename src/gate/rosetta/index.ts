@@ -36,7 +36,7 @@ import { chainIntact, notarize, protocolRoot, type NotarialAct } from '@/notary'
 export const atomPath = 'gate/rosetta' as const
 
 /** The gitignored gate ledger — under node_modules/.cache so it never enters git ([[seal]] receipt). */
-export const RECEIPT_PATH = join('node_modules', '.cache', 'erpax', 'gate.json') as const
+export const RECEIPT_PATH = join('node_modules', '.cache', 'erpax', 'gate.json')
 
 /** The notary officer that seals each structural gate act. */
 const NOTARY = 'gate:rosetta' as const
