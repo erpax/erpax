@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { expandRegenScopes } from './regen'
-import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan, foldPlan } from './compute'
+import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan, foldPlan, standardsDimensions } from './compute'
 
 describe('readme/regen — focused face regen', () => {
   it('expands a known atom scope', () => {
@@ -95,6 +95,31 @@ describe('readme — fold plan (safe foldable families)', () => {
       expect(rate?.members.length).toBe(3) // rate10, rate25, rate99
       expect(it?.kind).toBe('compound')
       expect([...(it?.members ?? [])].sort()).toEqual(['itsocial', 'itsport'])
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('readme — 7-dimensional standards invariant', () => {
+  it('buckets atoms by horo ray and flags off-ring + the met-in-all invariant', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-7dim-'))
+    const atom = (name: string, horo: number | null, std?: string) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      const fm = horo === null ? '' : `\nhoro: ${horo}`
+      const body = std ? `\n@standard ${std}` : ''
+      writeFileSync(join(cwd, 'src', name, 'SKILL.md'), `---\nname: ${name}${fm}\n---\n# ${name}${body}`)
+    }
+    try {
+      atom('a', 1, 'ISO-9001')      // base, has standard
+      atom('b', 2)                   // share, no standard
+      atom('c', 3)                   // off-ring (axis 3)
+      atom('d', null)                // off-ring (no horo)
+      const sd = standardsDimensions(cwd)
+      expect(sd.offRing).toBe(2)     // c (axis 3 not in ring map) + d (no horo)
+      expect(sd.dimensions.find((x) => x.ray === 'base')?.withStandard).toBe(1)
+      expect(sd.dimensions.find((x) => x.ray === 'share')?.withStandard).toBe(0)
+      expect(sd.metInAll).toBe(false) // only base has a standard
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }

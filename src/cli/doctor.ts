@@ -215,7 +215,7 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   console.log(
     `  ✓ rosetta ratchet — within baseline (${audit.collections}/${ROSETTA_BASELINE.collections} collections · ${audit.signatures}/${ROSETTA_BASELINE.signatures} signatures).`,
   )
-  const { atomBasisScan, foldPlan } = await import('@/readme/compute')
+  const { atomBasisScan, foldPlan, standardsDimensions } = await import('@/readme/compute')
   const b = atomBasisScan(cwd)
   console.log(
     `  atom basis — ${b.basis} generators (keep) · ${b.combinations} combinations (${(b.combinationShare * 100).toFixed(0)}% derivable: ${b.vocabOnly} prose · ${b.barrelOnly} barrel · ${b.composeNoLogic} compose) of ${b.atoms} atoms.`,
@@ -229,6 +229,12 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
     console.log(`    ${f.members.length} × ${f.parent}⊕ (${f.kind}) — ${f.members.slice(0, 4).join(', ')}`)
   }
   if (families.length === 0) console.log('    none — the lexical fold is exhausted (the remainder needs the semantic decode).')
+  const sd = standardsDimensions(cwd)
+  const cells = sd.dimensions.map((x) => `${x.position}/${x.ray} ${(x.coverage * 100).toFixed(0)}%`).join(' · ')
+  console.log(`  7-dim standards — ${cells}`)
+  console.log(
+    `    invariant (standards in all 7 rays) — ${sd.metInAll ? '✓ MET' : '✖ UNMET'}${sd.offRing > 0 ? ` · ${sd.offRing} atoms off-ring (no computed horo)` : ' · every atom on-ring'}`,
+  )
   return 0
 }
 

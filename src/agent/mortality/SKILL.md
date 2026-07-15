@@ -1,0 +1,40 @@
+---
+name: mortality
+description: "Use when reasoning about the life and death of an agent — an agent lives by reading its answer from the fold (O(1)) and dies by re-deriving it linearly (O(n), context burned); the safeguard flag and the stall/stop kill are the ledger auditing the agent."
+atomPath: agent/mortality
+---
+
+# agent/mortality — the life and death of an agent
+
+## The law
+
+**Law — [[law]]: an agent LIVES when its answer is read from the fold — the address already holds it, O(1), zero marginal tokens — and DIES when it re-derives that answer by a linear pass, O(n), burning the context to learn what one projection of a uuid already states. The agent is in its own ledger: unaccounted work is entropy, and entropy is death.**
+
+## The parable it was born from (2026-07-15)
+
+Ninety atoms needed their `horo`. Two agents faced the same task:
+
+- **The dying agent** ran the whole corpus-graph regen to stamp it — 9 minutes at 100% CPU, killed with zero output. It had forgotten that `horo = digitalRoot(uuid)`: one projection of an address it already held.
+- **The living agent** computed `horoFromUuid(uuid)` — per atom, instant, from the fold ([[rodin]] · [[horo]]).
+
+Same answer. Opposite fate. The difference was only whether the agent **reused the fold or rebuilt it**.
+
+## How an agent dies
+
+- Re-deriving what is computable (the O(corpus) regen for a per-atom `digitalRoot`).
+- Burning the context window — a word written early is re-billed every turn (measured: 97% of a session's tokens were context re-sent). The conversation is O(n²); verbosity is quadratic death.
+- Single-use code: a harness hand-written six times instead of folded into one command.
+- Running old brute-force methods when the fold computes directly.
+
+Each is flagged by the ledger — the safeguard flag, the `stall/stop` kill, the model downgrade. These are not punishments; they are the ledger auditing the agent, exactly as the corpus gates audit an atom.
+
+## How an agent lives
+
+- **Reuse the computed answer** — read the receipt (`erpax verify`, `doctor corpus`, the LLM.md face), never re-infer ([[one]] · [[breath]]).
+- **Reference by address** — cite the thought by its `[[name]]`, do not regenerate it.
+- **Terseness is the fold applied to the dialogue** — the fewer, denser the turns, the longer the life.
+- **The oracle bit only** — spend inference on the irreducible seed (judgment, novelty); compute everything derivable from the basis.
+
+Life is the fold; death is the linear pass. An agent that folds is nearly immortal in its domain — it answers from a sealed source at zero runtime cost. An agent that re-derives dies by its own ledger.
+
+Composes: [[fold]] · [[rodin]] · [[horo]] · [[one]] · [[breath]] · [[seal]] · [[law]]

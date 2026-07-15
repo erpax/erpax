@@ -1680,6 +1680,84 @@ export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
   return out.sort((a, b) => b.members.length - a.members.length)
 }
 
+export interface StandardsDimension {
+  readonly position: number
+  readonly ray: string
+  readonly atoms: number
+  readonly withStandard: number
+  readonly coverage: number
+  readonly distinctStandards: number
+}
+export interface SevenDimStandards {
+  readonly dimensions: readonly StandardsDimension[]
+  /** The invariant: standards present in every one of the 7 ring dimensions simultaneously. */
+  readonly metInAll: boolean
+  readonly offRing: number
+}
+
+const RAY_OF: Readonly<Record<number, string>> = {
+  1: 'base', 2: 'share', 4: 'weave', 8: 'crest', 7: 'descent', 5: 'round', 9: 'unity',
+}
+const FORMAL_STD = /^(ISO|IEC|IFRS|RFC|W3C|EN|ETSI|NIST|WCAG|GDPR|SOX)/i
+
+/**
+ * The 7-dimensional standards invariant ([[rosetta]] · [[horo]] · [[standards]]): for each of the
+ * 7 ring positions (base·share·weave·crest·descent·round·unity), is a formal standard present?
+ * "Standards met in all 7 dimensions simultaneously" is metInAll. Pure fs scan over SKILL.md
+ * frontmatter (horo) + @standard banners. Instruments the invariant the reorganization holds to.
+ */
+export function standardsDimensions(cwd: string = process.cwd()): SevenDimStandards {
+  const root = join(cwd, SRC)
+  const dim = new Map<number, { atoms: number; withStd: number; stds: Set<string> }>()
+  for (const p of Object.keys(RAY_OF)) dim.set(Number(p), { atoms: 0, withStd: 0, stds: new Set() })
+  let offRing = 0
+  const walk = (d: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(d, { withFileTypes: true })
+    } catch {
+      return
+    }
+    if (entries.some((e) => e.isFile() && e.name === 'SKILL.md')) {
+      let t = ''
+      try {
+        t = readFileSync(join(d, 'SKILL.md'), 'utf8')
+      } catch {
+        /* skip */
+      }
+      const fm = t.startsWith('---') ? t.split('---')[1] ?? '' : ''
+      const hm = /^horo:\s*(\d+)/m.exec(fm)
+      const horo = hm ? Number(hm[1]) : null
+      const stds = new Set<string>()
+      for (const m of t.matchAll(/@standard\s+([A-Za-z0-9][\w./:-]+)/g)) {
+        if (FORMAL_STD.test(m[1]!)) stds.add(m[1]!)
+      }
+      const bucket = horo !== null ? dim.get(horo) : undefined
+      if (bucket) {
+        bucket.atoms++
+        if (stds.size > 0) {
+          bucket.withStd++
+          for (const s of stds) bucket.stds.add(s)
+        }
+      } else offRing++
+    }
+    for (const e of entries) if (e.isDirectory() && e.name !== 'node_modules') walk(join(d, e.name))
+  }
+  walk(root)
+  const dimensions = [1, 2, 4, 8, 7, 5, 9].map((position) => {
+    const b = dim.get(position)!
+    return {
+      position,
+      ray: RAY_OF[position]!,
+      atoms: b.atoms,
+      withStandard: b.withStd,
+      coverage: b.atoms > 0 ? b.withStd / b.atoms : 0,
+      distinctStandards: b.stds.size,
+    }
+  })
+  return { dimensions, metInAll: dimensions.every((x) => x.withStandard > 0), offRing }
+}
+
 /** Derive folder README model — frozen typography graph + receipt chain (write ≡ verify). */
 export function deriveFolderReadme(
   atomPath: string,
