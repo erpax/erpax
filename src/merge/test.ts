@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { merge, foldToRoot, atomPath } from './index'
+import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof } from './index'
 
 describe('merge — the binary operation of the folded algebra', () => {
   it('same content ⇒ same address (the self-address congruence — dedup by physics, not registry)', () => {
@@ -22,5 +22,35 @@ describe('merge — the binary operation of the folded algebra', () => {
   })
   it('exports the canonical atom path', () => {
     expect(atomPath).toBe('merge')
+  })
+})
+
+describe('merge — the inclusion proof (total membership; the one-way wall resolved)', () => {
+  it('EVERY leaf re-folds to the root via its authentication path — across even AND odd tree sizes', () => {
+    for (const n of [1, 2, 3, 4, 5, 7, 8, 9]) {
+      const leaves = Array.from({ length: n }, (_, i) => `leaf-${i}`)
+      const root = foldToRoot(leaves)
+      for (let i = 0; i < n; i++) {
+        expect(verifyMerkleProof(leaves[i]!, merkleProof(leaves, i), root)).toBe(true)
+      }
+    }
+  })
+  it('is TOTAL — an absent leaf verifies false (⊥), never throws', () => {
+    const leaves = ['a', 'b', 'c', 'd', 'e']
+    const root = foldToRoot(leaves)
+    expect(verifyMerkleProof('z', merkleProof(leaves, 2), root)).toBe(false) // absent content
+    expect(merkleProof(leaves, 99)).toEqual([]) // out-of-range index ⇒ ⊥ (empty path), no throw
+    expect(verifyMerkleProof('a', [], root)).toBe(false) // a leaf alone is not the multi-leaf root
+  })
+  it('a tampered path fails — the proof binds leaf, siblings, AND root (non-invertible ⇒ unforgeable)', () => {
+    const leaves = ['a', 'b', 'c', 'd']
+    const root = foldToRoot(leaves)
+    const proof = merkleProof(leaves, 1)
+    const tampered = proof.map((s, i) => (i === 0 ? { ...s, sibling: merge('x', 'y') } : s))
+    expect(verifyMerkleProof('b', tampered, root)).toBe(false)
+  })
+  it('BOTTOM is the void address — the algebra-s ⊥, deterministic', () => {
+    expect(BOTTOM).toBe(foldToRoot([])) // the empty fold IS the bottom
+    expect(BOTTOM).toHaveLength(36)
   })
 })
