@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import * as foldModule from '@/fold'
-import { foldDepth, foldCount, halving, corpusFold, malignantRemainder, cancerFree } from '@/fold'
+import { foldDepth, foldCount, halving, corpusFold, malignantRemainder, cancerFree, atomDeed, corpusRoot, proveAtom } from '@/fold'
 import { digitalRoot } from '@/horo'
 import { UUID_MATRIX_NODES } from '@/uuid/matrix'
 
@@ -37,6 +37,47 @@ describe('fold — the math of the folding (N atoms → one root)', () => {
     const f = corpusFold()
     expect(f.depth).toBe(foldDepth(f.atoms))
     expect(f.merges).toBe(f.atoms - 1)
+  })
+})
+
+describe('fold — the notary act (elevation required to define a property, on the LIVE corpus)', () => {
+  const node = UUID_MATRIX_NODES.find((n) => n.path === 'fold')!
+  const coords = {
+    path: node.path,
+    horo: node.horo,
+    parent: node.parent,
+    prev: node.prev,
+    next: node.next,
+    cross: node.cross,
+    bind: node.bind,
+    uuid: node.uuid,
+  }
+
+  it('the corpus root is deterministic — the sealed cadastre of all 3178 atom deeds', () => {
+    expect(corpusRoot()).toBe(corpusRoot())
+    expect(corpusRoot()).toHaveLength(36)
+  })
+  it('a real atom is a registered deed — its FULL definition is provable under the corpus root', () => {
+    const p = proveAtom('fold')
+    expect(p.found).toBe(true)
+    expect(p.verified).toBe(true) // the inclusion proof re-folds the deed to the registered root
+  })
+  it('ELEVATION is required — a deed with the wrong horo is a DIFFERENT, unregistered property', () => {
+    const trueDeed = atomDeed(coords)
+    const wrongElevation = atomDeed({ ...coords, horo: node.horo + 1 }) // same bounds + seal, wrong elevation only
+    expect(wrongElevation).not.toBe(trueDeed) // changing only the elevation changes the deed
+    const ds = UUID_MATRIX_NODES.map((n) => atomDeed(n)).sort()
+    expect(ds.includes(trueDeed)).toBe(true) // the true property is registered
+    expect(ds.includes(wrongElevation)).toBe(false) // the wrong-elevation property is not
+  })
+  it('the four bounds bind too — a wrong neighbour is a different parcel (the N/E/S/W limits matter)', () => {
+    expect(atomDeed({ ...coords, prev: 'someone-elses-parcel' })).not.toBe(atomDeed(coords))
+    expect(atomDeed({ ...coords, cross: 'someone-elses-parcel' })).not.toBe(atomDeed(coords))
+  })
+  it('an unregistered atom is not found — total, never throws', () => {
+    const p = proveAtom('no-such-atom-xyz')
+    expect(p.found).toBe(false)
+    expect(p.verified).toBe(false)
   })
 })
 

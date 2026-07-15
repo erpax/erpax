@@ -18,6 +18,8 @@ import { UUID_MATRIX_NODES as N } from '@/uuid/matrix'
 // The digital-root fold (the rodin reduction, count → single digit 1..9) is the
 // canonical integer `digitalRoot` from @/horo — one implementation, not a copy.
 import { digitalRoot } from '@/horo'
+// The operational fold primitives (the doing, vs this atom's counting) — reused, not re-derived.
+import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
 
 /** Fold DEPTH — folds to collapse n leaves to one root (the binary Merkle fold): ceil(log2 n). */
 export const foldDepth = (n: number): number => (n <= 1 ? 0 : Math.ceil(Math.log2(n)))
@@ -72,9 +74,65 @@ export function cancerFree(bodies: readonly string[]): boolean {
   return malignantRemainder(bodies) === 0
 }
 
+/**
+ * The notary act — a property is not defined by its four bounds alone. A cadastral/notary deed fixes
+ * a parcel by its N/E/S/W neighbours AND its elevation, and the seal registers it tamper-proof; four
+ * bounds in a plane are an open cross, not a defined volume. An atom is the same: its horizontal
+ * bounds are its directional neighbours (prev · next · cross · bind), its containing parcel is
+ * `parent`, its ELEVATION is the [[horo]] harmonic height, and the notary seal is the content-`uuid`.
+ * atomDeed binds ALL of them into one leaf — the full definition, not location alone. Change any one
+ * coordinate (even only the elevation) and the deed changes: an atom keyed by uuid alone is a deed
+ * with no elevation, under-defined.
+ */
+export function atomDeed(node: {
+  readonly path: string
+  readonly horo: number
+  readonly parent?: string
+  readonly prev?: string
+  readonly next?: string
+  readonly cross?: string
+  readonly bind?: string
+  readonly uuid: string
+}): string {
+  return foldToRoot([
+    'path:' + node.path, // the legal identifier — WHERE the parcel is
+    'elevation:' + node.horo, // the vertical coordinate — the horo height (required, as in a deed)
+    'north:' + (node.prev ?? ''), // the four bounding neighbours — the N/E/S/W limits
+    'south:' + (node.next ?? ''),
+    'east:' + (node.cross ?? ''),
+    'west:' + (node.bind ?? ''),
+    'over:' + (node.parent ?? ''), // the containing parcel — the vertical up-link
+    'seal:' + node.uuid, // the notary seal — the content-address that registers it
+  ])
+}
+
+/** The canonical registry leaves — every atom's notary deed, sorted (the deterministic corpus order). */
+function deeds(): string[] {
+  return N.map((n) => atomDeed(n)).sort()
+}
+
+/** The corpus root — every atom's FULL deed folded to ONE registered root (the sealed cadastre). */
+export function corpusRoot(): string {
+  return foldToRoot(deeds())
+}
+
+/** The registered deed — the inclusion proof that an atom's full definition is under the corpus root. */
+export function proveAtom(atomPath: string): { found: boolean; verified: boolean; deed: string; root: string } {
+  const ds = deeds()
+  const root = foldToRoot(ds)
+  const node = N.find((n) => n.path === atomPath)
+  if (!node) return { found: false, verified: false, deed: '', root }
+  const deed = atomDeed(node)
+  const index = ds.indexOf(deed)
+  const verified = index >= 0 && verifyMerkleProof(deed, merkleProof(ds, index), root)
+  return { found: true, verified, deed, root }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const f = corpusFold()
   console.log('fold — the math of the folding (' + f.atoms + ' atoms → one root):')
   console.log('  depth ' + f.depth + ' folds · ' + f.merges + ' merges · halving ' + halving(f.atoms).join('→'))
   console.log('  digital-root fold: dr(atoms)=' + digitalRoot(f.atoms) + ' dr(merges)=' + digitalRoot(f.merges) + ' dr(108)=' + digitalRoot(108))
+  const p = proveAtom('fold')
+  console.log('  notary act — corpusRoot=' + p.root.slice(0, 12) + '… · deed(fold) registered & verified=' + p.verified)
 }
