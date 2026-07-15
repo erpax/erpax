@@ -36,9 +36,11 @@ describe('translation/source/verified — the sense-verified Wikidata snapshot (
 
   it('trained the intelligence far above the en-only seed — coverage ≫ 1/30', () => {
     const c = trainingCoverage(VERIFIED_RENDERINGS, supportedLocales)
-    expect(c.ratio).toBeGreaterThan(0.9) // ~0.97: 762 verified renderings vs the 1/30 en-only source
-    expect(c.byLocale.bg).toBe(VERIFIED_RENDERINGS.length) // every concept rendered in Bulgarian
-    expect(c.byLocale.de).toBe(VERIFIED_RENDERINGS.length)
-    expect(c.byLocale.ja).toBe(VERIFIED_RENDERINGS.length)
+    expect(c.ratio).toBeGreaterThan(0.9) // ~0.98: ~1620 verified renderings vs the 1/30 en-only source
+    // Near-complete per locale — real Wikidata coverage has occasional genuine gaps (e.g. cow Q11748378
+    // has no bg label), so this is ≥ length−3, not a fabricated 100%. A real gap beats an invented label.
+    expect(c.byLocale.bg).toBeGreaterThanOrEqual(VERIFIED_RENDERINGS.length - 3)
+    expect(c.byLocale.de).toBeGreaterThanOrEqual(VERIFIED_RENDERINGS.length - 3)
+    expect(c.byLocale.ja).toBeGreaterThanOrEqual(VERIFIED_RENDERINGS.length - 3)
   })
 })
