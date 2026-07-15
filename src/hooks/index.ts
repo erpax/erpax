@@ -33,3 +33,6 @@ export { validateAuditComplianceReporting } from '@/validate/audit/compliance/re
 
 // Post-Close Analytics (Phase B7)
 export { validatePostCloseAnalytics } from '@/validate/post/close/analytics'
+
+// Self-translation — afterRead field hook, projects any locale via the rosetta pivot (translation uuid)
+export { translateField } from '@/translate/field'
