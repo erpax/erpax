@@ -98,3 +98,9 @@ deprecated shim.
 
 - **NIST SP 800-162** — Attribute-Based Access Control (ABAC) — cited where
   predicates accept tenant-attribute or resource-attribute filters.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST INCITS-359-2012 role-based-access-control`
+- `@standard NIST SP-800-162 attribute-based-access-control`

@@ -205,6 +205,10 @@ Sequence position: **4** (crest — the binding decision made law), on the ring 
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 37000:2021 governance-of-organizations (the body of governing rules)`
+
+
 - **ISO 37000:2021** — governance-of-organizations. The body of governing rules the polity ratifies.
 - **Venice Commission Rule of Law** — law public, prospective, stable, equally applied; the foundation entrenched against the majority.
 - **ISO-19011:2018 §6.4** — audit-evidence. Every law content-addressed and citable.

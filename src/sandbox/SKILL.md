@@ -156,6 +156,10 @@ FORM: **an untrusted, agent-built tool runs under a content-addressed GRANT, and
 Matter-twin: `src/services/sandbox/index.ts` (`ToolGrant`·`ToolAction`·`permits`·`brokerCredential`·`evaluate`) over `services/receipt` + `index.test.ts`. Composes: [[receipt]] · [[access]] · [[identity]] · [[uuid]] · [[proof]] · [[peace]] · [[self]] · [[society]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP-800-162 ABAC (capability-scoped authorization)`
+
 - NIST SP-800-162 ABAC (capability-scoped authorization)
 - OWASP-ASVS V5 untrusted-input / least-privilege
 

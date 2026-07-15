@@ -88,6 +88,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: posts are CMS articles with versioned drafts and tenant-scoped read, living as one single-folder collection node (index.ts ⊕ seed.ts ⊕ index.test.ts) so there is no scatter and no drift.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C HTML5 Living Standard`
+
 - schema.org Article
 - schema.org BlogPosting
 - W3C HTML5 Living Standard

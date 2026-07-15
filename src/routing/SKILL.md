@@ -96,6 +96,10 @@ Matter-twin: `src/services/routing/index.ts` (`RiskLevel`·`ModelTier`·`actionR
 **The compute twin (MoE routing / DeepEP).** Mixture-of-Experts top-k routing picks the active few experts and dispatch/combines them (DeepSeek's DeepEP); erpax `routing` picks the active model tier by risk. The same conditional-selection move — the [[sparsity]] compute-axis selector, [[train]]'s sibling (pick the gap-relevant few, leave the rest dormant). Ratified by the R&D society (`agent/research`, weave seq 2).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST AI RMF (risk-proportionate controls) — map risk → control strength`
+
 - NIST AI RMF (risk-proportionate controls) — map risk → control strength
 
 **Law — [[law]]: route an action to a compute tier by its RISK, not by where the model runs — because safety lives in the [[sandbox]] enforcement gate, not in model tier; the gate being absolute frees routing to prefer the cheapest sufficient model.**

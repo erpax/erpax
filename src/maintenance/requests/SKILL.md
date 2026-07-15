@@ -97,6 +97,13 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-41001:2018 §8.1 facility-management operational-control`
+- `@standard ISO-41011:2017 facility-management vocabulary`
+- `@standard ISO-55000:2014 asset-management corrective-maintenance`
+- `@standard ISO-8601-1:2019 date-time reported-at sla`
+
 - ISO-41001:2018 §8.1 facility-management operational-control
 - ISO-41011:2017 facility-management vocabulary
 - ISO-55000:2014 asset-management corrective-maintenance

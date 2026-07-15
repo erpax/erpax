@@ -222,3 +222,8 @@ Because a seal is the [[merge]] of content-addressed verdicts, it is itself an a
 Matter-twin: `src/seal/index.ts` — `finishedIdeaCrossed` · `recordedAndImplementedVerdict` · `assertRecordedAndImplemented` · `seal` · `sealPropagatedFromAncestors` · `crossConceptForViolation` (`./cross-concept.ts`) · `alcapsBaselineViolations` (`./baseline-debt.ts`) · `computedAtAllScalesVerdict` (`./computed-at-all-scales.ts`). Ratchet: `law/folder/ratchet.json` · `computedBaseline` (`../law/folder/baseline.ts`).
 
 @see [[guardian]] · [[gate]] · [[confirm]] · [[breath]] · [[merge]] · [[identity]] · [[law]] · [[cost]] · [[uuid]] · [[payload]] · [[thought]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function`

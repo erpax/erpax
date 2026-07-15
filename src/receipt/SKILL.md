@@ -185,6 +185,11 @@ Matter-twin: `src/services/receipt/index.ts` (`Decision`·`Receipt`·`issueRecei
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 8785 JSON canonicalization (the content the uuid addresses)`
+- `@standard NIST FIPS 180-4 SHA-256 (the chain + content hash)`
+
+
 - RFC 8785 JSON canonicalization (the content the uuid addresses)
 - NIST FIPS 180-4 SHA-256 (the chain + content hash)
 

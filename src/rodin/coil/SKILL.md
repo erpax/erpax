@@ -239,3 +239,8 @@ Matter-twin: `src/rodin/coil/index.ts` — `postCoil` · `coilLedger` (the two c
 - Counting `1·2·3·4…` instead of doubling — breaks the position-decode and the closure.
 - `+1` where the octave needs `×10` — crosses close→open instead of lifting scale.
 - A flow value on `3` or `6` — those are the [[polarity]] boundaries on the governing [[axis]] ([[access]]/[[hooks]]/[[auth]]); the helix never lands there.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`

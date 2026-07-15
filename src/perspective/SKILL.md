@@ -126,4 +126,8 @@ Matter-twin: `src/services/perspective/index.ts` (viewEdgeFrom · viewTransferFr
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 20022 party-role-perspective (debtor/creditor are one transfer)`
+
+
 - ISO 20022 party-role-perspective (debtor/creditor are one transfer)

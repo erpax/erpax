@@ -120,6 +120,16 @@ IFRS 3 acquirer-side M&A register. Single-folder collection node: `index.ts` (sc
 Captures [[accounting]] goodwill computation (§32: consideration transferred + NCI + previously-held interest − fair value of identifiable net assets acquired) paired with [[journal/entries]] and [[legal/entities]]; composes [[evidence/attestations]] for signed PPA walk-through anchors. Fair value hierarchy per [[fair/value/measurements]]; tangible PPE per [[fixed/assets]]; audit trail via [[identity]]/[[proof]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-3 §10-§13 identifying-the-acquirer`
+- `@standard IFRS IFRS-3 §18-§31 recognition-and-measurement-of-net-assets-acquired`
+- `@standard IFRS IFRS-3 §32 goodwill-or-bargain-purchase-gain`
+- `@standard IFRS IFRS-3 §B41-B49 reverse-acquisitions`
+- `@standard IFRS IFRS-10 §B86 consolidation`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time acquisition-date`
+
 - IFRS IFRS-3 §10-§13 identifying-the-acquirer
 - IFRS IFRS-3 §18-§31 recognition-and-measurement-of-net-assets-acquired
 - IFRS IFRS-3 §32 goodwill-or-bargain-purchase-gain

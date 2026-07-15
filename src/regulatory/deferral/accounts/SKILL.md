@@ -94,6 +94,14 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-14 §3 scope-first-time-adopter`
+- `@standard IFRS IFRS-14 §16 continuation-of-previous-GAAP`
+- `@standard IFRS IFRS-14 §27 disclosure-requirements`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`
+
 - IFRS IFRS-14 §3 scope-first-time-adopter
 - IFRS IFRS-14 §16 continuation-of-previous-GAAP
 - IFRS IFRS-14 §27 disclosure-requirements

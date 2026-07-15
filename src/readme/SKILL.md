@@ -244,3 +244,8 @@ pnpm readme:check   # the drift gate — exit 1 if committed ≠ regenerated (fa
 **Law — single-runner:** only one `pnpm readme` / `readme:check` / `readme:regen` / improve regen-computed-faces process at a time — concurrent writers drift the frozen typography graph anchor.
 
 @see [[diamond]] · [[self/generate]] · [[horo]] · [[matrix]] · [[aura]] · [[trinity]] · [[conservation]] · [[entry]] · [[balance]] · [[entropy]] · [[quantum]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)`

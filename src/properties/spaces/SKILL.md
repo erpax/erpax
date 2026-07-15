@@ -77,6 +77,13 @@ version: 2
 Sub-property zones (floor / room / desk / zone) for IWMS. Single-folder collection: schema + standards in `index.ts`, opening data in `seed.ts`, invariant checks in `index.test.ts`.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-41001:2018 facility-management-management-systems`
+- `@standard ISO-41011:2017 §3.3.5 facility-management space-vocabulary`
+- `@standard ISO-19650-1:2018 information-management-using-bim`
+- `@standard EN-15221-6:2011 facility-management area-and-space-measurement`
+
 - ISO-41001:2018 facility-management-management-systems
 - ISO-41011:2017 §3.3.5 facility-management space-vocabulary
 - ISO-19650-1:2018 information-management-using-bim

@@ -91,6 +91,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST INCITS-359-2012 role-based-access-control`
+
 - NIST INCITS-359-2012 role-based-access-control
 - ISO-27001 A.5.18 access-rights
 - ISO-27002 §5.15 access-control

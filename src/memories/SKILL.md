@@ -123,6 +123,11 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Operational memory IS the architecture lattice** ([[memory/architecture]] · [[diamond]] · [[akashic]]) — the diamond graph, matrix bindings, sealed git tree. The `memories` collection is **not** a second truth: it is a Payload substrate where MCP tools and agents spill durable rows that **merge by `contentUuid`** into the same address space as git and chat ([[memory/session]] · [[merge]]). Rows without a sealed lattice facet are working set until sanitized and verified (`operationalMemoryIsArchitecture`).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.7 modifiability — persistent memory layer`
+- `@standard ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)`
+
 - ISO/IEC 25010:2023 §5.7 modifiability — persistent substrate layer
 - ISO 19011:2018 §6.4.6 audit-evidence (row history audit-trailed)
 - Conservation Law 8 content-uuid (per-memory contentUuid)

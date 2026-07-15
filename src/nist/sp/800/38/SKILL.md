@@ -78,3 +78,8 @@ and any other site that needs encrypt-at-rest. Imports through the legacy
 - Key wrapping / KEK rotation strategy (handled at the platform layer).
 - Asymmetric encryption (RSA, ECDH) — add a separate folder when needed.
 - Hardware-attested keys (KMS, HSM) — application-layer code only here.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP-800-38D aes-gcm authenticated-encryption`

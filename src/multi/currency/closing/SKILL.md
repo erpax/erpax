@@ -333,3 +333,12 @@ See `tests/standards/multi-currency-closing/` for:
 - [NIST SP 800-92](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-92.pdf) – Guide to Computer Security Log Management
 
 **Law — [[law]]: closing must balance per currency, not just consolidated — exchange rates pinned to the period-end date make revaluation deterministic, and an immutable chain leaf proves no rate change was hidden.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2023 Currency codes`
+- `@standard IFRS-21:2023 Translation of foreign operations`
+- `@standard IFRS-9:2023 Foreign exchange gains/losses`
+- `@standard GDPR:2016/679 Art. 32 Security of processing`
+- `@standard NIST-SP-800-92 Audit logging`

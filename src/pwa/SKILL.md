@@ -159,6 +159,14 @@ Alongside the uuid-driven offline layer, **pwa** is one of three deployment face
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Service Workers (W3C-SW)`
+- `@standard W3C Web App Manifest (W3C-WAM)`
+- `@standard W3C Push API + W3C Notifications API`
+- `@standard W3C Cache API + W3C IndexedDB 3.0 + W3C OPFS`
+- `@standard RFC 9562 §5.8 + RFC 8785 (uuid composition)`
+
+
 - **W3C Service Workers (W3C-SW)** — cache lifecycle; the content-uuid is the cache key.
 - **W3C Web App Manifest (W3C-WAM)** — `verifyManifest` recomputes the manifest uuid for tamper-detection.
 - **W3C Push API + Notifications API** — `dedupPush` makes redelivery idempotent by content-uuid.

@@ -93,6 +93,13 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601:2019 (calendarDate in RFC 3339, weekNumber per ISO 8601:2019)`
+- `@standard ISO-4217:2023 (currencyCode inherited from FiscalPeriods)`
+- `@standard GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)`
+- `@standard SOX:2402 (audit-trail via chainLeafUuid)`
+
 - IAS-34:2023 (period metadata: quarter, fiscal year, period label)
 - ISO-8601:2019 (calendarDate in RFC 3339, weekNumber per ISO 8601:2019)
 - ISO-4217:2023 (currencyCode inherited from FiscalPeriods)

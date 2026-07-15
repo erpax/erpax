@@ -70,3 +70,9 @@ A schema.org vocabulary word, collided from the schema.org compounds that contai
 **Law — [[law]]: registry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Linked Data + JSON-LD (live standards expressed as LD)`
+- `@standard ISO/IEC 15938-5 (multimedia content description framework)`

@@ -228,6 +228,10 @@ Matter-twin: `src/services/peace/index.ts` (`destructionFutile`·`coercionSupraR
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)`
+
+
 - NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)
 
 ## Common mistakes

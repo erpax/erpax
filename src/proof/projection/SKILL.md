@@ -136,3 +136,9 @@ Composes: [[proof]] · [[anchor]] · [[tamper/cost]] · [[entry]] · [[torus]] �
 - Emitting `Infinity`/`null`-less numbers for the unbounded case. Always carry `unbounded: true` alongside `decryptKeyLog2: null` so the bundle stays JCS-serializable.
 
 **Law — [[law]]: the forward project (content → content-[[uuid]]) is free, deterministic and O(1) — cost 0 — while its inverse (recover the analog negative without the held key) costs EXACTLY the borrowed [[anchor]] ([[tamper/cost]]): 0 with no anchor, 2^128 under rfc3161-ecdsa-p256, unbounded ONLY under blockchain-pow — never unbounded by default; and when it IS ∞ that ∞ is TAGGED (`unbounded: true`), never serialized as a raw number.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 (content-uuid v8, the forward projection) · RFC 8785 (JCS)`
+- `@standard NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)`

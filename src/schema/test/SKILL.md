@@ -171,3 +171,9 @@ Matter-twin: `src/schema/test/index.ts` (`pullEntropy`, `matrixBreaks`, `uncross
 Composes: [[schema]] · [[trinity]] · [[tamper]] · [[aura]] · [[merge]] · [[generate]] · [[seed]] · [[testing]] · [[dry]] · [[types]] · [[confirm]] · [[dimension]].
 
 **Law — [[gate]]** The corpus is pure when `pullEntropy()` is empty: every recorded thing is a balanced, cross-linked, tamper-bound atom. Until then, the difference is the agents' food.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 quality-model (integrity, modularity)`
+- `@standard RFC 9562 §5.8 (uuidv8 content-uuid) — the collision unit`

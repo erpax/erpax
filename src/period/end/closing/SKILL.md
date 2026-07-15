@@ -422,3 +422,10 @@ See `tests/standards/period-end-closing/` for:
 - [SOX Section 404](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=&dateb=&owner=exclude&count=100) – Management assessment of internal controls
 
 **Law — [[law]]: a period closes only when it is eligible (not already closed/locked, correct structure) and balanced (revenues = expenses); closing P&L to retained earnings deterministically generates the reversing entries posted to the next period, through an enforced workflow state machine with an immutable chain-leaf [[accounting]] audit trail.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard GDPR:2016/679 Art. 32 Security of processing`
+- `@standard SOX:2002 Sec. 404 Internal control assessment`
+- `@standard NIST-SP-800-92 Audit logging`

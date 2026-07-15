@@ -128,3 +128,9 @@ Full list: <https://docs.peppol.eu/edelivery/policies/PolicyForUseOfIdentifiers/
 - OpenPeppol Service Metadata Publisher (SMP) — endpoint discovery.
 
 **Law — [[law]]: Peppol BIS Billing 3.0 wraps an EN-16931 semantic invoice (UBL 2.1 syntax) in the network envelope — CustomizationID + ProfileID + ISO-6523 ParticipantIdentifier + EndpointID; a message is Peppol-conformant only when both the semantic model and that envelope are present.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice`
+- `@standard ISO-6523-1:1998 participant-identifier-scheme`

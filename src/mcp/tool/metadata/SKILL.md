@@ -80,6 +80,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)`
+
 - W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 - BCP-47 language tags
 - EU 1958/1 official-languages-of-the-european-union

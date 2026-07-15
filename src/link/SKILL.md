@@ -240,3 +240,10 @@ Attested in schema.org — LinkRole · hasGS1DigitalLink · linkRelationship · 
 **Law — [[law]]: link is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C URL Living Standard`
+- `@standard W3C HTML5 anchor-element`
+- `@standard W3C HTML5 nav-element`

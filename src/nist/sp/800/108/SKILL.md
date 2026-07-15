@@ -80,3 +80,8 @@ deprecated shim.
   rotating without re-keying every consumer at once. New callers should pin
   their version.
 - KMS / HSM-backed master secrets — application-layer code only here.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP-800-108 key-derivation-function`

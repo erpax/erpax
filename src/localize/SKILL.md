@@ -245,6 +245,12 @@ Matter-twin: `localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykCh
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 (uuidv8 structured, name-based)`
+- `@standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)`
+- `@standard NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)`
+
+
 - RFC 9562 §5.8 (uuidv8 structured, name-based)
 - ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)
 - RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)

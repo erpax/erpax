@@ -969,3 +969,8 @@ It is *at all quantum scales* because the address is [[fractal]]: the identical 
 @see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]
 
 <sub>content-uuid `7f8bce95-71f6-5b91-b178-0c851dae77e7` · account `quantum/uuid` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 content-uuid`

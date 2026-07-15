@@ -85,6 +85,11 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 Composes [[accounting]] (ledger patterns, currency fields, audit trails), [[transaction]] (relates to intercompany-transactions), [[identity]] (legal entities), [[proof]] (evidence attestations), and [[standard]] (OECD/EU compliance frameworks).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time`
+- `@standard ISO-4217:2015 currency-codes`
+
 - ISO-8601-1:2019 date-time
 - ISO-4217:2015 currency-codes
 - OECD BEPS Action 13 transfer-pricing-documentation

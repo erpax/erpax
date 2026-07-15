@@ -188,6 +188,13 @@ The one `media` object, expressed as coexisting facets in this single folder:
 One folder per object ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC-23008 high-efficiency-coding`
+- `@standard ISO/IEC-10918 jpeg`
+- `@standard W3C PNG image`
+- `@standard W3C SVG`
+
 - RFC 6838 mime-type media-type
 - ISO/IEC-23008 high-efficiency-coding
 - ISO/IEC-14496 mpeg-4 video

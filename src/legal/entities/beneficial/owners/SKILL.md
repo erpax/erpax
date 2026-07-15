@@ -92,6 +92,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-17442-1:2020 lei`
+
 - ISO-17442-1:2020 lei
 - EU-AMLD-5 Directive-2018/843 ubo-register
 - US-CTA Corporate-Transparency-Act-2021 beneficial-ownership

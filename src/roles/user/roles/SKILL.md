@@ -88,6 +88,10 @@ Enforces single-folder collection pattern: `index.ts` (schema + standards banner
 Access controlled via [[access]] (superadmin only: create/read/update/delete).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST INCITS-359-2012 role-based-access-control role-assignment`
+
 - NIST INCITS-359-2012 role-based-access-control role-assignment
 - ISO-27001 A.5.18 access-rights
 - ISO-27002 §5.15 access-control

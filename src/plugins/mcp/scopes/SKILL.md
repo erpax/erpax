@@ -77,3 +77,9 @@ Matter-twin: `src/plugins/mcp/scopes/index.ts` — `toCamelCase` · `capabilitie
 **Law — [[law]]: scopes is one word on the plugins/mcp diamond path — `plugins/mcp/scopes`, not camelCase `mcpScopes`.**
 
 @see [[mcp]] · [[plugins]] · [[access]] · [[cross]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)`
+- `@standard ISO/IEC 27001 §A.9.4.1 information access restriction`

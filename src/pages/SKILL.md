@@ -96,6 +96,10 @@ This collection composes:
 - [[queries]] — for query presets and default population
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C HTML5 Living Standard`
+
 - schema.org WebPage
 - W3C HTML5 Living Standard
 - BCP-47 language-tag i18n-routing

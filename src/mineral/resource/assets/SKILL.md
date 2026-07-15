@@ -197,6 +197,16 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-6 §3 scope-exploration-and-evaluation`
+- `@standard IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation`
+- `@standard IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles`
+- `@standard IFRS IFRS-6 §18-§22 impairment-of-EE-assets`
+- `@standard IFRS IFRS-6 §23-§25 disclosure`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`
+
 - IFRS IFRS-6 §3 scope-exploration-and-evaluation
 - IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation
 - IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles

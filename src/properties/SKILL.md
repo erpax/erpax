@@ -98,6 +98,17 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-41001:2018 facility-management-management-systems`
+- `@standard ISO-41011:2017 facility-management-vocabulary`
+- `@standard ISO-41013:2017 facility-management-scope`
+- `@standard ISO-55000:2014 asset-management property-as-asset`
+- `@standard ISO-19650-1:2018 information-management-using-bim`
+- `@standard ISO-3166-1:2020 country-codes property-country`
+- `@standard ISO-3166-2:2020 subdivision-codes property-region`
+- `@standard EN-15978:2011 sustainability-of-construction-works (when ESG-tracked)`
+
 - ISO-41001:2018 facility-management-management-systems
 - ISO-41011:2017 facility-management-vocabulary
 - ISO-41013:2017 facility-management-scope

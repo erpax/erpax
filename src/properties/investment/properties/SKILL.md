@@ -87,6 +87,18 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IAS-40 §5 definition-investment-property`
+- `@standard IFRS IAS-40 §30 measurement-model-election`
+- `@standard IFRS IAS-40 §33 fair-value-model`
+- `@standard IFRS IAS-40 §56 cost-model`
+- `@standard IFRS IAS-40 §57-§65 transfers-into-out-of-investment-property`
+- `@standard IFRS IAS-40 §74 disclosure-requirements`
+- `@standard IFRS IFRS-13 fair-value-input-hierarchy`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`
+
 - IFRS IAS-40 §5 definition-investment-property
 - IFRS IAS-40 §30 measurement-model-election
 - IFRS IAS-40 §33 fair-value-model

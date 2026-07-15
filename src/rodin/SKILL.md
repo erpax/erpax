@@ -379,3 +379,8 @@ Conventional arithmetic leaves `n/0` undefined; `zeroDivision(n)` **totalizes** 
 The anchor renders **three** ways from one position: **colour** ([[cmyk]], A432 ms), **sound** ([[notes]], A432 Hz) and **touch** ([[vibration]], an A432 sub-harmonic) — the [[signal]] sensory [[trinity]] (the colour↔sound [[duality]] completed by the third), oscillating as [[breath]] over [[phase]], lifting by [[octave]] on the [[torus]].
 
 Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · [[fractal]] · [[balance]] · [[duality]] · [[metatron]] · [[chakra]].
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)`

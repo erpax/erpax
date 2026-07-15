@@ -147,6 +147,15 @@ The executable side of the FM ticket flow. Promoted from [[maintenance/requests]
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-41001:2018 §8.1 facility-management operational-control`
+- `@standard ISO-55000:2014 asset-management work-management`
+- `@standard ISO-55001:2014 asset-management management-systems`
+- `@standard ISO-14224:2016 reliability-and-maintenance-data`
+- `@standard EN-13306:2017 maintenance-terminology`
+- `@standard ISO-8601-1:2019 date-time scheduled-actual`
+
+
 - ISO-41001:2018 §8.1 facility-management operational-control
 - ISO-55000:2014 asset-management work-management
 - ISO-55001:2014 asset-management management-systems

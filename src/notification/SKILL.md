@@ -107,6 +107,12 @@ This is the outward-speech organ of the [[society]] — the same organ every cul
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard rfc-5321 simple-mail-transfer-protocol`
+- `@standard rfc-5322 internet-message-format`
+- `@standard rfc-2616 §14.10 https-keep-alive`
+
+
 - **RFC 5321 / RFC 5322** — simple-mail-transfer-protocol + internet-message-format. Email channel formatting lives in one place, not per-handler.
 - **GDPR Art.7** — transactional-email-consent. The marketing category is gated on a granted consent record; transactional is not.
 - **ISO-19011:2018 §6.4.6** — audit-evidence. One notification audit row per multi-channel send.

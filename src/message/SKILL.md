@@ -154,5 +154,9 @@ Matter-twin: `message/index.ts` (`decodeMessage`/`horoStepOf`) + `index.test.ts`
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 (the structured uuid carries the message)`
+
+
 - RFC 9562 §5.8 (the structured uuid carries the message)
 - the uuid is self-decoding — every channel is an independent verify level

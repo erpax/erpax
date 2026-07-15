@@ -94,3 +94,8 @@ version: 2
 Composes [[readme]] · [[analytics]] · [[seal]] · [[balance]] · [[gravity]] · [[horo]] · [[law/folder]] · [[typography]].
 
 **Law — [[law]]: corpus state statistics are cross-tabbed, never hand-counted — every cell is derived from folder README models and projected as markdown pivot tables with optional before/after comparison.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.2.8 modularity — pure fns, no I/O`
