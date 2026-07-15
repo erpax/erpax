@@ -1,6 +1,6 @@
 import type { Payload } from 'payload'
 import type { Translation as TranslationDoc } from '@/types'
-import { VERIFIED_RENDERINGS } from '@/translation/source/verified'
+import { verifiedRenderings } from '@/translation/source/verified'
 import { supportedLocales, defaultLocale } from '@/i18n/localization'
 
 /**
@@ -15,7 +15,10 @@ import { supportedLocales, defaultLocale } from '@/i18n/localization'
  * @see ./index.ts (the collection) · ../translation/source/verified (the snapshot)
  */
 export async function seedTranslations(payload: Payload): Promise<void> {
-  for (const t of VERIFIED_RENDERINGS) {
+  // The renderings are COMPUTED from the sense-verified Qid seed (sealed content-addressed cache) —
+  // only the concept→Qid judgment is stored in src; the labels are a projection, never hardcoded.
+  const { table } = await verifiedRenderings()
+  for (const t of table) {
     const key = `concept:${t.key}`
     const translationKey = `other:${key}`
 

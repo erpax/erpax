@@ -1,25 +1,27 @@
 ---
 name: verified
-description: "Use when you need the real, sense-checked multilingual renderings the translation intelligence is trained on — a snapshot of 27 unambiguous concept atoms (anatomy, nature, matter) harvested live from Wikidata (CC0) and admitted only because a candidate's description sense-matched the atom's meaning. Every rendering cites a Qid; nothing is fabricated; the wrong senses and the uncertain ones are left as honest gaps."
+description: "Use when you need the sense-verified translation seed and its computed renderings — only the concept→Qid judgment is stored (58 unambiguous concept atoms, each admitted because a candidate's description sense-matched the atom's meaning); the per-locale labels are a computed projection of each Qid, sealed content-addressed in the gitignored cache. Theorems replace hardcoded values: the seed is data, the renderings are a read. Nothing fabricated; unsure senses stay gaps."
 ---
 
-# verified — the sense-verified Wikidata renderings snapshot
+# verified — the seed is stored, the renderings are computed
 
-The **training set** the translation intelligence learns from — real CC0 labels, sense-checked, never fabricated. Produced by the sense gate in [[source]] (`harvestVerified`) over 27 unambiguous single-word concept atoms and frozen here as a snapshot (like a sealed CC0 dump).
+The training set of the translation intelligence, folded correctly: **store the judgment, compute the projection.**
 
-- **`VERIFIED_RENDERINGS`** — a real `TranslationTable`: `en` is the atom word (the source); every other locale is Wikidata's community label for the **sense-matched** Qid. 762 non-en renderings across 27 concepts, min 28 / max 30 locales each.
-- **`VERIFIED_PROVENANCE`** — the audit trail: for each concept the CC0 Wikidata `qid`, the English `description` it matched, and the `score` it cleared.
+- **`VERIFIED_PROVENANCE`** — the **seed**, the only thing stored: for each of 58 unambiguous single-word concept atoms (anatomy · nature · matter · plants · animals · food · metals), the CC0 Wikidata `qid` its sense-gate run admitted ([[source]] `harvestVerified`, senseScore ≥ 0.14), with the matched `description` and `score`. This is the irreducible human/agent judgment — which sense is *the* sense.
+- **`verifiedRenderings()`** — the **computed face**: the per-locale labels are a projection of each Qid (`fetchEntityLabels`), harvested once and **sealed content-addressed by the seed's fold** (`provenanceKey` = `foldToRoot(qids)`, gitignored cache). Unchanged seed ⇒ a **read**, zero network; changed seed ⇒ re-harvest. `en` is never harvested — the atom word stays the source. An unreachable source with no seal **throws**: a rendering is never fabricated.
 
-**Coverage moved, honestly.** `trainingCoverage(VERIFIED_RENDERINGS, supportedLocales)`: **0.033 → 0.974** — from the en-only seed to 762 verified renderings. Seeded into the `translations` collection by [[translations]]/seed.
+This replaced a hardcoded wall of ~1620 label literals — stored derivable content, the exact entropy the law forbids. Label drift inside a verified Qid is Wikidata improving, not poisoning: the *sense* lives in the Qid, and the Qid is what the seed holds.
 
-**The gate did its job.** It admitted the right senses (`heart→Q1072 organ`, `water→Q283 compound`, `star→Q523 astronomical object`, `blood→Q7873 body fluid` — NOT the family-name the top-1 search returns) and left honest **seed-gaps** where it could not be sure: `brain` and `chest` (no sense-clearing candidate in the search) and `eye` (Q7364, 0.091) · `sugar` (Q11002, 0.100) where the correct Qid scored below threshold. A gap is better than a wrong sense.
+**The gate did its job.** It admitted the right senses (`heart→Q1072` the organ, `water→Q283` the compound, `gold→Q897` the element — not the family names and album titles the top-1 search returns) and left honest **seed-gaps** where it could not be sure (`brain`, `chest`, `eye`, `sugar`; `dog` excluded for binomial-not-vernacular labels; `daughter` excluded as a wrong-sense niece). A gap is better than a wrong sense.
 
-**Law — [[law]]: a registered rendering is real only if it is traceable to a CC0 Qid AND a sense that matches the atom's meaning. The snapshot is frozen, provenanced, and green by construction (every uuid recomputes from source); where the sense was unsure, the gap stands.**
+Consumed by [[translations]]/seed, which registers the computed table into the `translations` collection.
+
+**Law — [[law]]: store the sense-judgment, compute the renderings. A rendering is real only if projected from a CC0 Qid whose sense matched the atom's meaning; the projection is sealed by the seed's fold and read, not re-derived; where the sense was unsure, the gap stands; nothing is fabricated.**
 
 ## Standards
 
-- **Wikidata (CC0)** — the multilingual labels; every rendering cites its `qid`.
-- **BCP-47** — the locale tags of the 30 supported locales.
+- **Wikidata (CC0)** — the multilingual labels; every rendering projects from its `qid`.
+- **BCP-47** — the locale tags of the supported locales.
 - **RFC 9562 §5.8** — the content-uuid each rendering is addressed by.
 
-Composes: [[source]] · [[translation]] · [[translations]] · [[law]].
+Composes: [[source]] · [[translation]] · [[translations]] · [[merge]] · [[law]].

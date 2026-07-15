@@ -1,10 +1,12 @@
 /**
- * translation/source/verified — the sense-VERIFIED harvest SNAPSHOT (Wikidata CC0, 2026-07-15).
+ * translation/source/verified — the sense-verified SEED, and its renderings COMPUTED (Wikidata CC0).
  *
- * REAL multilingual renderings for 58 sense-verified single-word concept atoms (anatomy · nature ·
- * matter · plants · animals · food · metals), each harvested LIVE from Wikidata and admitted ONLY because a candidate concept's English
- * description sense-matched the atom's own meaning (../index#harvestVerified · senseScore ≥ 0.14). Every
- * rendering is traceable to a CC0 Wikidata Qid (see VERIFIED_PROVENANCE) — NEVER fabricated, NEVER guessed.
+ * Only the irreducible judgment is stored: VERIFIED_PROVENANCE, the concept → Qid map for 58 single-word
+ * concept atoms (anatomy · nature · matter · plants · animals · food · metals), each admitted ONLY because
+ * a candidate concept's English description sense-matched the atom's own meaning (../index#harvestVerified
+ * · senseScore ≥ 0.14). The per-locale labels are NOT stored — they are a computed projection of each Qid
+ * (verifiedRenderings), sealed content-addressed in the gitignored cache. Theorems replace hardcoded
+ * values: the seed is data, the renderings are a read.
  *
  * The gate REJECTED the wrong senses the top-1 search would have poisoned us with (2026-07-15 live):
  * `law→family name`, `balance→Van Halen album`, `gold→family name`, `apple→Apple Inc`. It also left
@@ -18,7 +20,12 @@
  * @standard Wikidata (CC0) · Wikimedia MediaWiki API · BCP-47 locale tags · RFC 9562 §5.8 content-uuid
  * @see ../index (harvestVerified · the sense gate) · ../../index (the translation model) · ./SKILL.md
  */
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { join, dirname } from 'node:path'
 import { defineTranslation, type TranslationTable } from '@/translation'
+import { fetchEntityLabels, toValues, type Fetcher } from '../index'
+import { supportedLocales, defaultLocale, type SupportedLocale } from '@/i18n/localization'
+import { foldToRoot } from '@/merge'
 
 /** Provenance for every registered concept — the CC0 Wikidata Qid + gloss + sense-match score it cleared. */
 export interface Provenance {
@@ -90,69 +97,74 @@ export const VERIFIED_PROVENANCE: readonly Provenance[] = [
   { concept: "stone", qid: "Q22731", score: 0.333, description: "rock; building material" },
 ]
 
-/**
- * The verified renderings — a real TranslationTable. `en` is the atom word (the source); the other locales
- * are Wikidata's community labels for the sense-matched Qid. ~1620 non-en renderings across 58 concepts.
- */
-export const VERIFIED_RENDERINGS: TranslationTable = [
-  defineTranslation("heart", "heart", {"bg":"сърце","cs":"srdce","da":"hjerte","de":"Herz","el":"καρδιά","es":"corazón","et":"süda","fi":"sydän","fr":"cœur","ga":"croí","hr":"srce","hu":"szív","is":"hjarta","it":"cuore","ja":"心臓","lt":"širdis","lv":"sirds","mt":"qalb","nb":"hjerte","nl":"hart","pl":"serce","pt":"coração","ro":"inimă","ru":"сердце","sk":"srdce","sl":"srce","sv":"hjärta","uk":"серце","ar":"قلب"}),
-  defineTranslation("lung", "lung", {"bg":"бял дроб","cs":"plíce","da":"lunge","de":"Lunge","el":"πνεύμονας","es":"pulmón","et":"kopsud","fi":"keuhkot","fr":"poumon","ga":"scamhóg","hr":"pluća","hu":"tüdő","is":"lunga","it":"polmone","ja":"肺","lt":"plaučiai","lv":"plaušas","mt":"pulmun","nb":"lunge","nl":"long","pl":"płuco","pt":"pulmão","ro":"plămân","ru":"лёгкие","sk":"pľúca","sl":"pljuča","sv":"lunga","uk":"легені","ar":"رئة"}),
-  defineTranslation("blood", "blood", {"bg":"Кръв","cs":"krev","da":"blod","de":"Blut","el":"αίμα","es":"sangre","et":"veri","fi":"veri","fr":"sang","ga":"fuil","hr":"krv","hu":"vér","is":"blóð","it":"sangue","ja":"血液","lt":"kraujas","lv":"asinis","mt":"demm","nb":"blod","nl":"bloed","pl":"krew","pt":"sangue","ro":"sânge","ru":"кровь","sk":"krv","sl":"kri","sv":"blod","uk":"кров","ar":"دم"}),
-  defineTranslation("skin", "skin", {"bg":"кожа","cs":"kůže","da":"hud","de":"Haut","el":"δέρμα","es":"piel","et":"nahk","fi":"iho","fr":"peau","ga":"craiceann","hr":"koža","hu":"bőr","is":"húð","it":"pelle","ja":"皮膚","lt":"oda","lv":"āda","nb":"hud","nl":"huid","pl":"skóra","pt":"pele","ro":"piele","ru":"кожа","sk":"koža","sl":"koža","sv":"hud","uk":"шкіра","ar":"جلد"}),
-  defineTranslation("bone", "bone", {"bg":"Кост","cs":"kost","da":"knogle","de":"Knochen","el":"οστό","es":"hueso","et":"luu","fi":"luu","fr":"os","ga":"cnámh","hr":"kost","hu":"csont","is":"Bein","it":"osso","ja":"骨","lt":"kaulas","lv":"kauls","nb":"knokkel","nl":"bot","pl":"kość","pt":"osso","ro":"Os","ru":"кость","sk":"kosť","sl":"kost","sv":"ben","uk":"кістка","ar":"عظم"}),
-  defineTranslation("muscle", "muscle", {"bg":"Мускул","cs":"sval","da":"muskel","de":"Muskel","el":"μυς","es":"músculo","et":"Lihas","fi":"lihas","fr":"muscle","ga":"matán","hr":"mišić","hu":"izom","is":"Vöðvi","it":"muscolo","ja":"筋肉","lt":"raumuo","lv":"muskuļi","nb":"muskel","nl":"spier","pl":"mięsień","pt":"músculo","ro":"mușchi","ru":"мышца","sk":"sval","sl":"mišica","sv":"muskel","uk":"м’язи","ar":"عضلة"}),
-  defineTranslation("nerve", "nerve", {"bg":"Нерв","cs":"nerv","da":"nerve","de":"Nerv","el":"Νεύρο","es":"nervio","et":"närv","fi":"hermo","fr":"nerf","ga":"néaróg","hr":"živac","hu":"ideg","is":"Taug","it":"nervo","ja":"神経","lt":"nervas","lv":"Nervs","nb":"nerve","nl":"zenuw","pl":"nerw","pt":"nervo","ro":"nerv","ru":"нерв","sk":"Nerv","sl":"živec","sv":"nerv","uk":"нерв","ar":"عصب"}),
-  defineTranslation("artery", "artery", {"bg":"Артерия","cs":"tepna","da":"arterie","de":"Arterie","el":"αρτηρία","es":"arteria","et":"arter","fi":"valtimo","fr":"artère","ga":"artaire","hr":"arterija","hu":"artéria","is":"slagæð","it":"arteria","ja":"動脈","lt":"arterija","lv":"artērija","nb":"arterie","nl":"slagader","pl":"tętnica","pt":"artéria","ro":"arteră","ru":"артерия","sk":"tepna","sl":"arterija","sv":"artär","uk":"артерія","ar":"شريان"}),
-  defineTranslation("vein", "vein", {"bg":"Вена","cs":"žíla","da":"Vene","de":"Vene","el":"Φλέβα","es":"vena","et":"Veen","fi":"Laskimo","fr":"veine","ga":"féith","hr":"vena","hu":"véna","is":"Bláæð","it":"vena","ja":"静脈","lt":"vena","lv":"vēna","nb":"vene","nl":"ader","pl":"żyła","pt":"veia","ro":"venă","ru":"вена","sk":"Žila","sl":"vena","sv":"ven","uk":"вена","ar":"وريد"}),
-  defineTranslation("foot", "foot", {"bg":"ходило","cs":"noha","da":"fod","de":"Fuß","es":"pie","et":"labajalg","fi":"jalkaterä","fr":"pied","ga":"cos","hr":"stopalo","hu":"lábfej","is":"fótur","it":"piede","ja":"足","lt":"pėda","lv":"pēda","nb":"fot","nl":"voet","pl":"stopa","pt":"pé","ro":"picior","ru":"стопа","sk":"noha","sl":"stopalo","sv":"fot","uk":"стопа","ar":"قدم"}),
-  defineTranslation("hand", "hand", {"bg":"ръка","cs":"ruka","da":"hånd","de":"Hand","el":"χέρι","es":"mano","et":"labakäsi","fi":"käsi","fr":"main","ga":"lámh","hr":"ruka","hu":"kéz","is":"hönd","it":"mano","ja":"手","lt":"ranka","lv":"plauksta","nb":"hånd","nl":"hand","pl":"ręka","pt":"mão","ro":"mână","ru":"кисть","sk":"ruka","sl":"roka","sv":"hand","uk":"кисть","ar":"يد"}),
-  defineTranslation("ear", "ear", {"bg":"ухо","cs":"ucho","da":"øre","de":"Ohr","el":"αφτί","es":"oído","et":"kõrv","fi":"korva","fr":"oreille","ga":"cluas","hr":"uho","hu":"fül","is":"eyra","it":"orecchio","ja":"耳","lt":"ausis","lv":"auss","nb":"øre","nl":"oor","pl":"ucho","pt":"orelha","ro":"ureche","ru":"ухо","sk":"ucho","sl":"uho","sv":"öra","uk":"вухо","ar":"أذن"}),
-  defineTranslation("nose", "nose", {"bg":"нос","cs":"nos","da":"næse","de":"Nase","el":"μύτη","es":"nariz","et":"nina","fi":"nenä","fr":"nez","ga":"srón","hr":"nos","hu":"orr","is":"nef","it":"naso","ja":"鼻","lt":"nosis","lv":"deguns","nb":"nese","nl":"neus","pl":"nos","pt":"nariz","ro":"nas","ru":"нос","sk":"nos","sl":"nos","sv":"nos","uk":"ніс","ar":"أنف"}),
-  defineTranslation("hair", "hair", {"bg":"коса","cs":"chlup","da":"hår","de":"Haar","el":"τρίχα","es":"pelo","et":"karvad","fi":"karva","fr":"poil","ga":"gruaig","hr":"kosa","hu":"haj és szőrzet","is":"hár","it":"pelo","ja":"毛","lt":"plaukas","lv":"mati","nb":"hår","nl":"haar","pl":"włos","pt":"cabelo","ro":"păr","ru":"волосы","sk":"chlp","sl":"las","sv":"hår","uk":"волосся","ar":"شعر"}),
-  defineTranslation("neck", "neck", {"bg":"врат","cs":"krk","da":"nakke","de":"Hals","el":"λαιμός","es":"cuello","et":"kael","fi":"kaula","fr":"cou","ga":"muineál","hr":"vrat","hu":"nyak","is":"háls","it":"collo","ja":"首","lt":"kaklas","lv":"Kakls","nb":"hals","nl":"nek","pl":"szyja","pt":"pescoço","ro":"gât","ru":"шея","sk":"krk","sl":"vrat","sv":"hals","uk":"шия","ar":"رقبة"}),
-  defineTranslation("abdomen", "abdomen", {"bg":"Корем","cs":"břicho","da":"bughule","de":"Abdomen","el":"κοιλιά","es":"abdomen","et":"Kõht","fi":"vatsa","fr":"abdomen","ga":"abdóman","hr":"trbuh","hu":"has","is":"Afturbolur","it":"addome","ja":"腹","lt":"Pilvelis","lv":"vēders","nb":"abdomen","nl":"buik","pl":"brzuch","pt":"abdómen","ro":"abdomen","ru":"живот","sk":"brucho","sl":"trebuh","sv":"buken","uk":"живіт","ar":"بطن"}),
-  defineTranslation("water", "water", {"bg":"вода","cs":"voda","da":"vand","de":"Wasser","el":"νερό","es":"agua","et":"vesi","fi":"vesi","fr":"eau","ga":"uisce","hr":"voda","hu":"víz","is":"vatn","it":"acqua","ja":"水","lt":"vanduo","lv":"ūdens","nb":"vann","nl":"water","pl":"woda","pt":"água","ro":"apă","ru":"вода","sk":"voda","sl":"voda","sv":"vatten","uk":"вода","ar":"ماء"}),
-  defineTranslation("star", "star", {"bg":"звезда","cs":"hvězda","da":"stjerne","de":"Stern","el":"αστέρας","es":"estrella","et":"täht","fi":"tähti","fr":"étoile","ga":"réalta","hr":"zvijezda","hu":"csillag","is":"sólstjarna","it":"stella","ja":"恒星","lt":"žvaigždė","lv":"zvaigzne","mt":"stilla","nb":"stjerne","nl":"ster","pl":"gwiazda","pt":"estrela","ro":"stea","ru":"звезда","sk":"hviezda","sl":"zvezda","sv":"stjärna","uk":"зоря","ar":"نجم"}),
-  defineTranslation("sea", "sea", {"bg":"море","cs":"moře","da":"hav","de":"Meer","el":"θάλασσα","es":"mar","et":"meri","fi":"meri","fr":"mer","ga":"farraige","hr":"more","hu":"tenger","is":"sjór","it":"mare","ja":"海","lt":"jūra","lv":"jūra","mt":"baħar","nb":"hav","nl":"zee","pl":"morze","pt":"mar","ro":"mare","ru":"море","sk":"more","sl":"morje","sv":"hav","uk":"море","ar":"بحر"}),
-  defineTranslation("river", "river", {"bg":"река","cs":"řeka","da":"flod","de":"Fluss","el":"ποταμός","es":"río","et":"jõgi","fi":"joki","fr":"fleuve ou rivière","ga":"abhainn","hr":"rijeka","hu":"folyó","is":"á","it":"fiume","ja":"川","lt":"upė","lv":"upe","nb":"elv","nl":"rivier","pl":"rzeka","pt":"rio","ro":"râu","ru":"река","sk":"rieka","sl":"reka","sv":"flod","uk":"річка","ar":"نهر"}),
-  defineTranslation("lake", "lake", {"bg":"езеро","cs":"jezero","da":"sø","de":"See","el":"λίμνη","es":"lago","et":"järv","fi":"järvi","fr":"lac","ga":"loch","hr":"jezero","hu":"tó","is":"stöðuvatn","it":"lago","ja":"湖","lt":"ežeras","lv":"ezers","mt":"lag","nb":"innsjø","nl":"meer","pl":"jezioro","pt":"lago","ro":"lac","ru":"озеро","sk":"jazero","sl":"jezero","sv":"insjö","uk":"озеро","ar":"بحيرة"}),
-  defineTranslation("ocean", "ocean", {"bg":"океан","cs":"oceán","da":"verdenshav","de":"Ozean","el":"ωκεανός","es":"océano","et":"ookean","fi":"valtameri","fr":"océan","ga":"aigéan","hr":"ocean","hu":"óceán","is":"haf","it":"oceano","ja":"海洋","lt":"vandenynas","lv":"okeāns","nb":"verdenshav","nl":"oceaan","pl":"ocean","pt":"oceano","ro":"ocean","ru":"океан","sk":"oceán","sl":"ocean","sv":"världshav","uk":"океан","ar":"محيط"}),
-  defineTranslation("fire", "fire", {"bg":"Огън","cs":"oheň","da":"ild","de":"Feuer","el":"φωτιά","es":"fuego","et":"Tuli","fi":"tuli","fr":"feu","ga":"tine","hr":"vatra","hu":"tűz","is":"Eldur","it":"fuoco","ja":"火","lt":"ugnis","lv":"uguns","nb":"ild","nl":"vuur","pl":"ogień","pt":"fogo","ro":"foc","ru":"огонь","sk":"oheň","sl":"ogenj","sv":"eld","uk":"вогонь","ar":"نار"}),
-  defineTranslation("ice", "ice", {"bg":"лед","cs":"led","da":"is","de":"Eis","el":"πάγος","es":"hielo","et":"jää","fi":"jää","fr":"glace","ga":"oighear","hr":"led","hu":"jég","is":"Ís","it":"ghiaccio","ja":"氷","lt":"ledas","lv":"ledus","nb":"is","nl":"ijs","pl":"lód","pt":"gelo","ro":"gheață","ru":"лёд","sk":"ľad","sl":"led","sv":"is","uk":"лід","ar":"جليد"}),
-  defineTranslation("mountain", "mountain", {"bg":"планина","cs":"hora","da":"bjerg","de":"Berg","el":"βουνό","es":"montaña","et":"mägi","fi":"vuori","fr":"montagne","ga":"sliabh","hr":"planina","hu":"hegy","is":"fjall","it":"montagna","ja":"山","lt":"kalnas","lv":"kalns","mt":"muntanja","nb":"fjell","nl":"berg","pl":"góra","pt":"montanha","ro":"munte","ru":"гора","sk":"vrch","sl":"gora","sv":"berg","uk":"гора","ar":"جبل"}),
-  defineTranslation("gas", "gas", {"bg":"газ","cs":"plyn","da":"gas","de":"Gas","el":"αέριο","es":"gas","et":"gaas","fi":"kaasu","fr":"gaz","ga":"gás","hr":"plin","hu":"gáz","is":"gas","it":"gas","ja":"気体","lt":"dujos","lv":"gāze","nb":"gass","nl":"gas","pl":"gaz","pt":"gás","ro":"gaz","ru":"газ","sk":"plyn","sl":"plin","sv":"gas","uk":"газ","ar":"غاز"}),
-  defineTranslation("animal", "animal", {"bg":"животни","cs":"živočichové","da":"dyr","de":"Tier","el":"ζώο","et":"loomad","fi":"eläinkunta","fr":"animal","ga":"ainmhí","hr":"životinje","hu":"állat","is":"dýr","it":"animale","ja":"動物","lt":"gyvūnai","lv":"dzīvnieki","mt":"annimal","nb":"dyr","nl":"dier","pl":"zwierzęta","pt":"animalia","ro":"Animalia","ru":"животные","sk":"živočíchy","sl":"živali","sv":"djur","uk":"тварина","ar":"حيوانات"}),
-  defineTranslation("tree", "tree", {"bg":"дърво","cs":"strom","da":"træ","de":"Baum","el":"δέντρο","es":"árbol","et":"puu","fi":"puu","fr":"arbre","ga":"crann","hr":"stablo","hu":"fa","is":"tré","it":"albero","ja":"木","lt":"medis","lv":"koks","mt":"siġra","nb":"tre","nl":"boom","pl":"drzewo","pt":"árvore","ro":"copac","ru":"дерево","sk":"strom","sl":"drevo","sv":"träd","uk":"дерево","ar":"شجرة"}),
-  defineTranslation("leaf", "leaf", {"bg":"лист","cs":"list","da":"blad","de":"Blatt","el":"φύλλο","es":"hoja","et":"leht","fi":"lehti","fr":"feuille","ga":"duilleog","hr":"list","hu":"levél","is":"lauf","it":"foglia","ja":"葉","lt":"lapas","lv":"lapa","nb":"blad","nl":"blad","pl":"liść","pt":"folha","ro":"frunză","ru":"лист","sk":"list","sl":"list","sv":"blad","uk":"листок","ar":"ورقة نبات"}),
-  defineTranslation("seed", "seed", {"bg":"семе","cs":"semeno","da":"frø","de":"Samen","el":"σπόρος","es":"semilla","et":"seeme","fi":"siemen","fr":"graine","ga":"síol","hr":"sjeme","hu":"mag","is":"Fræ","it":"seme","ja":"種子","lt":"sėkla","lv":"sēkla","nb":"frø","nl":"zaad","pl":"nasiono","pt":"semente","ro":"sămânță","ru":"семя","sk":"semeno","sl":"seme","sv":"frö","uk":"насіння","ar":"بذرة"}),
-  defineTranslation("flower", "flower", {"bg":"цвят","cs":"květ","da":"blomst","de":"Blüte","el":"άνθος","es":"flor","et":"õis","fi":"kukka","fr":"fleur","ga":"bláth","hr":"cvijet","hu":"virág","is":"blóm","it":"fiore","ja":"花","lt":"žiedas","lv":"zieds","nb":"blomst","nl":"bloem","pl":"kwiat","pt":"flor","ro":"floare","ru":"цветок","sk":"kvet","sl":"cvet","sv":"blomma","uk":"квітка","ar":"زهرة"}),
-  defineTranslation("moon", "moon", {"bg":"Луна","cs":"Měsíc","da":"Månen","de":"Mond","el":"Σελήνη","es":"Luna","et":"Kuu","fi":"Kuu","fr":"Lune","ga":"an Ghealach","hr":"Mjesec","hu":"Hold","is":"Tunglið","it":"Luna","ja":"月","lt":"Mėnulis","lv":"Mēness","mt":"Qamar","nb":"månen","nl":"Maan","pl":"Księżyc","pt":"Lua","ro":"Luna","ru":"Луна","sk":"Mesiac","sl":"Luna","sv":"månen","uk":"Місяць","ar":"قمر"}),
-  defineTranslation("cloud", "cloud", {"bg":"облак","cs":"oblak","da":"sky","de":"Wolke","el":"νέφος","es":"nube","et":"pilv","fi":"pilvi","fr":"nuage","ga":"scamall","hr":"oblaci","hu":"felhő","is":"ský","it":"nuvola","ja":"雲","lt":"debesis","lv":"mākoņi","nb":"sky","nl":"wolk","pl":"chmura","pt":"nuvem","ro":"nor","ru":"облако","sk":"oblak","sl":"oblak","sv":"moln","uk":"хмара","ar":"سحاب"}),
-  defineTranslation("rain", "rain", {"bg":"Дъжд","cs":"déšť","da":"regn","de":"Regen","el":"βροχή","es":"lluvia","et":"Vihm","fi":"sade","fr":"pluie","ga":"fearthainn","hr":"kiša","hu":"eső","is":"Rigning","it":"pioggia","ja":"雨","lt":"lietus","lv":"lietus","nb":"regn","nl":"regen","pl":"deszcz","pt":"chuva","ro":"ploaie","ru":"дождь","sk":"Dážď","sl":"dež","sv":"regn","uk":"дощ","ar":"مطر"}),
-  defineTranslation("snow", "snow", {"bg":"сняг","cs":"sníh","da":"sne","de":"Schnee","el":"χιόνι","es":"nieve","et":"lumi","fi":"lumi","fr":"neige","ga":"sneachta","hr":"snijeg","hu":"hó","is":"snjór","it":"neve","ja":"雪","lt":"sniegas","lv":"sniegs","nb":"snø","nl":"sneeuw","pl":"śnieg","pt":"neve","ro":"zăpadă","ru":"снег","sk":"sneh","sl":"sneg","sv":"snö","uk":"сніг","ar":"ثلج"}),
-  defineTranslation("wind", "wind", {"bg":"вятър","cs":"vítr","da":"vind","de":"Wind","el":"άνεμος","es":"viento","et":"tuul","fi":"tuuli","fr":"vent","ga":"gaoth","hr":"vjetar","hu":"szél","is":"vindur","it":"vento","ja":"風","lt":"vėjas","lv":"vējš","nb":"vind","nl":"wind","pl":"wiatr","pt":"vento","ro":"vânt","ru":"ветер","sk":"vietor","sl":"veter","sv":"vind","uk":"вітер","ar":"ريح"}),
-  defineTranslation("sand", "sand", {"bg":"пясък","cs":"písek","da":"sand","de":"Sand","el":"άμμος","es":"arena","et":"liiv","fi":"hiekka","fr":"sable","ga":"gaineamh","hr":"pijesak","hu":"homok","is":"sandur","it":"sabbia","ja":"砂","lt":"smėlis","lv":"smiltis","nb":"sand","nl":"zand","pl":"piasek","pt":"areia","ro":"nisip","ru":"песок","sk":"piesok","sl":"pesek","sv":"sand","uk":"пісок","ar":"رمل"}),
-  defineTranslation("wood", "wood", {"bg":"дървесина","cs":"dřevo","da":"træ","de":"Holz","el":"ξύλο","es":"madera","et":"puit","fi":"puuaines","fr":"bois","ga":"adhmad","hr":"drvo","hu":"fa","is":"viður","it":"legno","ja":"木材","lt":"mediena","lv":"koksne","mt":"injam","nb":"treverk","nl":"hout","pl":"drewno","pt":"madeira","ro":"lemn","ru":"древесина","sk":"drevo","sl":"les","sv":"trä","uk":"деревина","ar":"خشب"}),
-  defineTranslation("iron", "iron", {"bg":"желязо","cs":"železo","da":"jern","de":"Eisen","el":"σίδηρος","es":"hierro","et":"raud","fi":"rauta","fr":"fer","ga":"iarann","hr":"željezo","hu":"vas","is":"járn","it":"ferro","ja":"鉄","lt":"geležis","lv":"dzelzs","mt":"ħadid","nb":"jern","nl":"ijzer","pl":"żelazo","pt":"ferro","ro":"fier","ru":"железо","sk":"železo","sl":"železo","sv":"järn","uk":"залізо","ar":"حديد"}),
-  defineTranslation("copper", "copper", {"bg":"мед","cs":"měď","da":"kobber","de":"Kupfer","el":"χαλκός","es":"cobre","et":"vask","fi":"kupari","fr":"cuivre","ga":"copar","hr":"bakar","hu":"réz","is":"kopar","it":"rame","ja":"銅","lt":"varis","lv":"varš","mt":"ram","nb":"kobber","nl":"koper","pl":"miedź","pt":"cobre","ro":"cupru","ru":"медь","sk":"meď","sl":"baker","sv":"koppar","uk":"мідь","ar":"نحاس"}),
-  defineTranslation("silver", "silver", {"bg":"сребро","cs":"stříbro","da":"sølv","de":"Silber","el":"άργυρος","es":"plata","et":"hõbe","fi":"hopea","fr":"argent","ga":"airgead","hr":"srebro","hu":"ezüst","is":"silfur","it":"argento","ja":"銀","lt":"sidabras","lv":"sudrabs","mt":"fidda","nb":"sølv","nl":"zilver","pl":"srebro","pt":"prata","ro":"argint","ru":"серебро","sk":"striebro","sl":"srebro","sv":"silver","uk":"срібло","ar":"فضة"}),
-  defineTranslation("gold", "gold", {"bg":"злато","cs":"zlato","da":"guld","de":"Gold","el":"χρυσός","es":"oro","et":"kuld","fi":"kulta","fr":"or","ga":"ór","hr":"zlato","hu":"arany","is":"gull","it":"oro","ja":"金","lt":"auksas","lv":"zelts","mt":"deheb","nb":"gull","nl":"goud","pl":"złoto","pt":"ouro","ro":"aur","ru":"золото","sk":"zlato","sl":"zlato","sv":"guld","uk":"золото","ar":"ذهب"}),
-  defineTranslation("salt", "salt", {"bg":"готварска сол","cs":"sůl","da":"salt","de":"Speisesalz","el":"αλάτι","es":"sal","et":"söögisool","fi":"ruokasuola","fr":"sel alimentaire","ga":"salann","hr":"kuhinjska sol","hu":"konyhasó","is":"borðsalt","it":"sale da cucina","ja":"食塩","lt":"druska","lv":"sāls","mt":"melħ","nb":"salt","nl":"keukenzout","pl":"sól kuchenna","pt":"sal de cozinha","ro":"sare de masă","ru":"поваренная соль","sk":"soľ","sl":"sol","sv":"salt","uk":"кухонна сіль","ar":"ملح الطعام"}),
-  defineTranslation("milk", "milk", {"bg":"мляко","cs":"mléko","da":"mælk","de":"Milch","el":"γάλα","es":"leche","et":"piim","fi":"maito","fr":"lait","ga":"bainne","hr":"mlijeko","hu":"tej","is":"mjólk","it":"latte","ja":"乳","lt":"pienas","lv":"piens","mt":"ħalib","nb":"melk","nl":"melk","pl":"mleko","pt":"leite","ro":"lapte","ru":"молоко","sk":"mlieko","sl":"mleko","sv":"mjölk","uk":"молоко","ar":"حليب"}),
-  defineTranslation("honey", "honey", {"bg":"пчелен мед","cs":"med","da":"honning","de":"Honig","el":"μέλι","es":"miel","et":"mesi","fi":"hunaja","fr":"miel","ga":"mil","hr":"med","hu":"méz","is":"hunang","it":"miele","ja":"蜂蜜","lt":"medus","lv":"medus","mt":"għasel","nb":"honning","nl":"honing","pl":"miód","pt":"mel","ro":"miere","ru":"мёд","sk":"med","sl":"med","sv":"honung","uk":"мед","ar":"عسل"}),
-  defineTranslation("bread", "bread", {"bg":"хляб","cs":"chléb","da":"brød","de":"Brot","el":"ψωμί","es":"pan","et":"leib","fi":"leipä","fr":"pain","ga":"arán","hr":"kruh","hu":"kenyér","is":"brauð","it":"pane","ja":"パン","lt":"duona","lv":"maize","mt":"ħobż","nb":"brød","nl":"brood","pl":"chleb","pt":"pão","ro":"pâine","ru":"хлеб","sk":"chlieb","sl":"kruh","sv":"bröd","uk":"хліб","ar":"خبز"}),
-  defineTranslation("wine", "wine", {"bg":"вино","cs":"víno","da":"vin","de":"Wein","el":"κρασί","es":"vino","et":"vein","fi":"viini","fr":"vin","ga":"fíon","hr":"vino","hu":"bor","is":"vín","it":"vino","ja":"ワイン","lt":"vynas","lv":"vīns","mt":"nbid","nb":"vin","nl":"wijn","pl":"wino","pt":"vinho","ro":"vin","ru":"вино","sk":"víno","sl":"vino","sv":"vin","uk":"вино","ar":"نبيذ"}),
-  defineTranslation("wheat", "wheat", {"bg":"пшеница","cs":"pšenice","da":"hvede","de":"Weizen","el":"σιτάρι","es":"trigo","et":"nisu","fi":"vehnä","fr":"blé","ga":"cruithneacht","hr":"pšenica","hu":"búza","is":"Hveiti","it":"grano","ja":"小麦","lt":"kvietys","lv":"kvieši","mt":"qamħ","nb":"hvete","nl":"tarwe","pl":"pszenica","pt":"trigo","ro":"grâu","ru":"пшеница","sk":"pšenica","sl":"pšenica","sv":"vete","uk":"пшениця","ar":"قمح"}),
-  defineTranslation("egg", "egg", {"bg":"Яйце","cs":"vejce","da":"æg","de":"Ei","el":"αυγό","es":"huevo","et":"muna","fi":"muna","fr":"œuf","ga":"ubh","hr":"jaje","hu":"tojás","is":"egg","it":"uovo","ja":"卵","lt":"kiaušinis","lv":"ola","mt":"bajda","nb":"egg","nl":"ei","pl":"jajo","pt":"ovo","ro":"ou","ru":"яйцо","sk":"vajce","sl":"jajce","sv":"ägg","uk":"яйце","ar":"بيضة"}),
-  defineTranslation("fish", "fish", {"bg":"риба","cs":"ryby","da":"fisk","de":"Fisch","el":"ψάρι","es":"pez","et":"kala","fi":"kala","fr":"poisson","ga":"iasc","hr":"ribe","hu":"hal","is":"Fiskur","it":"pesce","ja":"魚類","lt":"žuvys","lv":"zivis","mt":"ħuta","nb":"fisk","nl":"vissen","pl":"ryba","pt":"peixe","ro":"pește","ru":"рыбы","sk":"ryby","sl":"riba","sv":"fisk","uk":"риби","ar":"سمك"}),
-  defineTranslation("bird", "bird", {"bg":"птици","cs":"ptáci","da":"fugle","de":"Vögel","el":"πτηνά","es":"aves","et":"linnud","fi":"linnut","fr":"oiseau","ga":"éan","hr":"ptice","hu":"madár","is":"fugl","it":"uccello","ja":"鳥類","lt":"paukščiai","lv":"putni","mt":"għasfur","nb":"fugler","nl":"vogels","pl":"ptaki","pt":"ave","ro":"Aves","ru":"птицы","sk":"vtáky","sl":"ptiči","sv":"fåglar","uk":"птахи","ar":"طيور"}),
-  defineTranslation("cat", "cat", {"bg":"котка","cs":"kočka domácí","da":"kat","de":"Hauskatze","el":"γάτα","es":"gato doméstico","et":"kass","fi":"kissa","fr":"chat domestique","ga":"cat","hr":"domaća mačka","hu":"macska","is":"köttur","it":"gatto domestico","ja":"ネコ","lt":"katė","lv":"kaķis","mt":"qattus","nb":"tamkatt","nl":"huiskat","pl":"kot domowy","pt":"gato","ro":"pisică de casă","ru":"кошка","sk":"mačka domáca","sl":"domača mačka","sv":"katt","uk":"кіт свійський","ar":"قط"}),
-  defineTranslation("horse", "horse", {"bg":"кон","cs":"kůň","da":"hest","de":"Hauspferd","el":"άλογο","es":"caballo","et":"hobune","fi":"hevonen","fr":"cheval","ga":"capall","hr":"Domaći konj","hu":"ló","is":"hestur","it":"Equus ferus caballus","ja":"ウマ","lt":"arklys","lv":"zirgs","mt":"żiemel","nb":"hest","nl":"paard","pl":"koń","pt":"cavalo","ro":"cal","ru":"домашняя лошадь","sk":"kôň","sl":"konj","sv":"häst","uk":"кінь свійський","ar":"فرس"}),
-  defineTranslation("cow", "cow", {"cs":"kráva","da":"ko","de":"Kuh","es":"vaca","et":"lehm","fi":"lehmä","fr":"vache","ga":"bó","hr":"Krava","hu":"tehén","it":"mucca","ja":"雌牛","lt":"karvė","lv":"govs","nb":"ku","nl":"koe","pl":"krowa","pt":"vaca","ru":"корова","sk":"krava","sl":"krava","sv":"ko","uk":"корова","ar":"بقرة"}),
-  defineTranslation("tooth", "tooth", {"bg":"зъб","cs":"zub","da":"tand","de":"Zahn","el":"δόντι","es":"diente","et":"hammas","fi":"hammas","fr":"dent","ga":"fiacail","hr":"zub","hu":"fog","is":"tönn","it":"dente","ja":"歯","lt":"dantis","lv":"zobi","nb":"tann","nl":"tand","pl":"ząb","pt":"dente","ro":"dinte","ru":"зуб","sk":"zub","sl":"zob","sv":"tand","uk":"зуби","ar":"سن"}),
-  defineTranslation("tongue", "tongue", {"bg":"език","cs":"jazyk","da":"tunge","de":"Zunge","el":"Γλώσσα","es":"lengua","et":"keel","fi":"kieli","fr":"langue","ga":"teanga","hr":"jezik","hu":"nyelv","is":"tunga","it":"lingua","ja":"舌","lt":"liežuvis","lv":"mēle","mt":"ilsien","nb":"tunge","nl":"tong","pl":"język","pt":"língua","ro":"limbă","ru":"язык","sk":"jazyk","sl":"jezik","sv":"tunga","uk":"язик","ar":"لسان"}),
-  defineTranslation("stomach", "stomach", {"bg":"стомах","cs":"žaludek","da":"mave","de":"Magen","el":"στόμαχος","es":"estómago","et":"magu","fi":"mahalaukku","fr":"estomac","ga":"goile","hr":"želudac","hu":"gyomor","is":"magi","it":"stomaco","ja":"胃","lt":"skrandis","lv":"kuņģis","nb":"magesekk","nl":"maag","pl":"żołądek","pt":"estômago","ro":"stomac","ru":"желудок человека","sk":"žalúdok","sl":"želodec","sv":"magsäck","uk":"шлунок","ar":"معدة"}),
-  defineTranslation("stone", "stone", {"bg":"камък","cs":"kámen","da":"sten","de":"Stein","el":"πέτρα","es":"piedra","et":"kivi","fi":"kivi","fr":"pierre","ga":"cloch","hr":"kamen","hu":"kő","it":"pietra","ja":"石","lt":"akmuo","lv":"akmens","nb":"stein","nl":"steen","pl":"kamień","pt":"pedra","ro":"piatră","ru":"камень","sk":"kameň","sl":"kamen","sv":"sten","uk":"камінь","ar":"حجر"}),
-]
 
-export default VERIFIED_RENDERINGS
+// ── the computed face: theorems replace hardcoded values ──
+
+/** The harvestable locales — everything but the default; `en` is never harvested, the atom word IS the source. */
+const SEED_LOCALES: readonly SupportedLocale[] = supportedLocales.filter((l) => l !== defaultLocale)
+
+const labelsCachePath = (cwd: string): string => join(cwd, 'node_modules', '.cache', 'erpax', 'translations.json')
+
+interface LabelsCache {
+  readonly key: string
+  readonly at: string
+  readonly values: Record<string, Record<string, string>>
+}
+
+/** The seed's content-address — the fold of the verified Qids. The seal is valid only for this exact seed. */
+export function provenanceKey(): string {
+  return foldToRoot(VERIFIED_PROVENANCE.map((p) => p.qid))
+}
+
+export interface VerifiedRenderings {
+  readonly table: TranslationTable
+  /** true = read from the content-addressed seal (no network); false = freshly harvested + sealed. */
+  readonly cached: boolean
+  readonly key: string
+}
+
+/**
+ * The renderings, COMPUTED from the seed — theorems replace hardcoded values. Only the sense-verified
+ * concept→Qid map is stored (the irreducible judgment); the per-locale labels are a PROJECTION of each
+ * Qid, harvested once and sealed content-addressed by the seed's fold (gitignored cache). Unchanged seed
+ * ⇒ a READ; changed seed ⇒ re-harvest. `en` is never harvested — the atom word stays the source. An
+ * unreachable source with no seal THROWS — a rendering is never fabricated. Label drift inside a verified
+ * Qid is Wikidata improving, not poisoning: the sense lives in the Qid, which is what the seed holds.
+ */
+export async function verifiedRenderings(
+  opts: { fetcher?: Fetcher; cwd?: string } = {},
+): Promise<VerifiedRenderings> {
+  const cwd = opts.cwd ?? process.cwd()
+  const key = provenanceKey()
+  const path = labelsCachePath(cwd)
+  try {
+    const prev = JSON.parse(readFileSync(path, 'utf8')) as LabelsCache
+    if (prev.key === key) {
+      const table = VERIFIED_PROVENANCE.map((p) => defineTranslation(p.concept, p.concept, prev.values[p.concept] ?? {}))
+      return { table, cached: true, key } // answered within — the seal holds it
+    }
+  } catch {
+    /* no seal — harvest */
+  }
+  const values: Record<string, Record<string, string>> = {}
+  for (const p of VERIFIED_PROVENANCE) {
+    const labels = await fetchEntityLabels(p.qid, opts.fetcher)
+    values[p.concept] = toValues({ labels }, SEED_LOCALES)
+  }
+  mkdirSync(dirname(path), { recursive: true })
+  writeFileSync(path, JSON.stringify({ key, at: new Date().toISOString(), values } satisfies LabelsCache, null, 2) + '\n')
+  return {
+    table: VERIFIED_PROVENANCE.map((p) => defineTranslation(p.concept, p.concept, values[p.concept]!)),
+    cached: false,
+    key,
+  }
+}
+
+if (import.meta.url === 'file://' + process.argv[1]) {
+  verifiedRenderings().then((r) => {
+    const filled = r.table.reduce((s, t) => s + Object.keys(t.values).length - 1, 0)
+    console.log(
+      `verified — ${r.table.length} concepts computed from the Qid seed · ${filled} non-en renderings · ${r.cached ? 'READ from the seal' : 'harvested + sealed'} (key ${r.key.slice(0, 8)}…)`,
+    )
+  })
+}
