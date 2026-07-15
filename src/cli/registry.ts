@@ -25,6 +25,7 @@ export const AURA_SCAN_PATH = 'src/aura/scan.mjs'
 export const CLI_REGISTRY: Record<string, CliDomain> = {
   readme: {
     default: { desc: 'Regenerate README + computed faces', cmd: `${HEAVY_TSX} src/readme/index.ts` },
+    root: { desc: 'Regenerate the front-page README.md only (faces are gitignored)', cmd: `${HEAVY_TSX} src/readme/index.ts --root` },
     waves: { desc: 'Regenerate in horo waves (OOM-safe)', cmd: `${HEAVY_TSX} src/readme/index.ts --waves` },
     check: { desc: 'Verify readme + faces (waves)', cmd: `${HEAVY_TSX} src/readme/index.ts --verify --waves` },
     'check-full': { desc: 'Verify full corpus readme + faces', cmd: `${HEAVY_TSX} src/readme/index.ts --verify` },

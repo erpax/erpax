@@ -223,12 +223,18 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const rootInputs = waves ? deriveReadmeRootInputsInWaves(cwd) : { analytics: corpus!.analytics, papers: corpus!.papers }
     console.log(`readme: wrote README.md — content-uuid ${readmeUuid(deriveModel(cwd, rootInputs.analytics, rootInputs.papers))}`)
   }
-  const n = pathFilter
-    ? materializeComputedFacesForPathsStable(pathFilter, cwd)
-    : waves
-      ? materializeComputedFacesInWaves(cwd, (ordinal, itemCount, written) => {
-          console.log(`readme:waves — wave ${ordinal}/7 complete · ${itemCount} paths · ${written} total`)
-        })
-      : materializeComputedFaces(cwd, corpus!)
-  console.log(`readme: wrote ${n} folder computed faces (README.md + LLM.md + diamond.json)`)
+  // --root: regenerate ONLY the front-page README.md (the derivable faces are gitignored
+  // and computed on demand elsewhere) — the reused command that replaced a throwaway script.
+  if (process.argv.includes('--root')) {
+    console.log(`readme: root README.md only (${expectedRoot.split('\n').length} lines) — faces skipped.`)
+  } else {
+    const n = pathFilter
+      ? materializeComputedFacesForPathsStable(pathFilter, cwd)
+      : waves
+        ? materializeComputedFacesInWaves(cwd, (ordinal, itemCount, written) => {
+            console.log(`readme:waves — wave ${ordinal}/7 complete · ${itemCount} paths · ${written} total`)
+          })
+        : materializeComputedFaces(cwd, corpus!)
+    console.log(`readme: wrote ${n} folder computed faces (README.md + LLM.md + diamond.json)`)
+  }
 }
