@@ -1605,14 +1605,70 @@ export interface FoldFamily {
 const REF_RE = /@\/([a-zA-Z0-9/_-]+)/g
 const WIKI_RE = /\[\[([a-zA-Z0-9/_-]+)\]\]/g
 
+/** Never a corpus atom — node_modules and nested git worktrees (untracked duplicate checkouts). */
+const FOLD_SKIP_DIRS = new Set(['node_modules', 'worktrees'])
+
+/**
+ * English affix prefixes — `un⊕X`, `de⊕X`, `re⊕X` … are real words (unemployment, delimited),
+ * NOT namespace compounds. An affix as PARENT is always a false positive: reject the whole family.
+ * Contrast legitimate namespace families (it/wp/tv country-org codes, nonprofit enum) — those parents
+ * are not affixes and survive.
+ */
+const AFFIX_PREFIXES = new Set(['un', 'de', 're', 'pre', 'non', 'over', 'under', 'dis', 'mis'])
+
+let cachedSchemaTerms: Set<string> | null = null
+let cachedSchemaTermsCwd: string | undefined
+
+/**
+ * Every real schema.org term, lowercased + alphanumeric-normalised (dictionary-free real-word guard).
+ * Comprehensive parse of `sti/vocabulary/schemaorg.jsonld`: each `@id` local name, `rdfs:label`,
+ * `skos:prefLabel`, and — because identifier terms end `…Code` (`iso6523Code`, `icaoCode`, `iataCode`) —
+ * the `code`-stripped stem. Captures gtin8 · sha256 · iso6523 · iata · icao as real terms. Absent file
+ * (isolated test cwd) ⇒ empty set (the affix guard still fires). Cached per cwd — parsed once.
+ */
+function schemaOrgTerms(cwd: string): Set<string> {
+  if (cachedSchemaTerms && cachedSchemaTermsCwd === cwd) return cachedSchemaTerms
+  const terms = new Set<string>()
+  const norm = (s: string): string => s.toLowerCase().replace(/[^a-z0-9]/g, '')
+  const add = (v: unknown): void => {
+    if (typeof v === 'string') {
+      const n = norm(v)
+      if (!n) return
+      terms.add(n)
+      if (n.endsWith('code') && n.length > 4) terms.add(n.slice(0, -4))
+    } else if (Array.isArray(v)) {
+      v.forEach(add)
+    } else if (v && typeof v === 'object' && '@value' in (v as Record<string, unknown>)) {
+      add((v as Record<string, unknown>)['@value'])
+    }
+  }
+  try {
+    const raw = readFileSync(join(cwd, SRC, 'sti', 'vocabulary', 'schemaorg.jsonld'), 'utf8')
+    const graph = (JSON.parse(raw) as { '@graph'?: Array<Record<string, unknown>> })['@graph'] ?? []
+    for (const n of graph) {
+      const id = n['@id']
+      if (typeof id === 'string' && id.includes(':')) add(id.slice(id.indexOf(':') + 1))
+      add(n['rdfs:label'])
+      add(n['skos:prefLabel'])
+    }
+  } catch {
+    /* absent in an isolated cwd — affix guard alone carries the test */
+  }
+  cachedSchemaTerms = terms
+  cachedSchemaTermsCwd = cwd
+  return terms
+}
+
 /**
  * Fold plan — the reused fold-manifest computation ([[rules]] rosetta · the fold algebra
  * on names). A safe foldable family is a parent atom with ≥2 orphaned children whose leaf
  * is `parent ⊕ suffix`: an ENUM child (digit-code suffix, e.g. `percentile10`) or a
  * COMPOUND child (suffix is another existing atom, e.g. `itcooperative` = `it⊕cooperative`).
- * The ≥2-member rule + code/atom suffix make it dictionary-free and false-positive-safe
- * (a real word almost never has ≥2 orphaned namespace children). Read-only — deletion stays
- * human-confirmed. This replaces the throwaway research scripts of 2026-07-15.
+ * Dictionary-free real-word guard: a COMPOUND family is rejected when its parent is an English
+ * affix (`un⊕`, `de⊕`, `under⊕` … are real words, not namespaces) or when a member's full leaf is
+ * an actual schema.org term (`amends`). ENUM families (parent+digit) stay always-safe. Members are
+ * deduped by leaf (untracked `worktrees/` checkouts are skipped) so the ≥2 rule counts distinct atoms.
+ * Read-only — deletion stays human-confirmed. Replaces the throwaway research scripts of 2026-07-15.
  */
 export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
   const root = join(cwd, SRC)
@@ -1629,10 +1685,11 @@ export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
       const ap = relative(root, dir).replace(/\\/g, '/')
       leafOf.set(ap, ap.split('/').pop() ?? ap)
     }
-    for (const e of entries) if (e.isDirectory() && e.name !== 'node_modules') walk(join(dir, e.name))
+    for (const e of entries) if (e.isDirectory() && !FOLD_SKIP_DIRS.has(e.name)) walk(join(dir, e.name))
   }
   walk(root)
   const vocab = new Set(leafOf.values())
+  const schemaTerms = schemaOrgTerms(cwd)
   // inbound references — an atom is orphaned when nothing imports its path or links its leaf
   const refs = new Set<string>()
   const links = new Set<string>()
@@ -1645,7 +1702,7 @@ export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
     }
     for (const e of entries) {
       const p = join(dir, e.name)
-      if (e.isDirectory() && e.name !== 'node_modules') scan(p)
+      if (e.isDirectory() && !FOLD_SKIP_DIRS.has(e.name)) scan(p)
       else if (e.isFile() && e.name !== 'skills.index.ts' && /\.(ts|tsx|md)$/.test(e.name)) {
         let t = ''
         try {
@@ -1661,22 +1718,28 @@ export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
   scan(root)
   const orphan = (ap: string, leaf: string): boolean =>
     ![...refs].some((r) => r === ap || r.startsWith(ap + '/')) && !links.has(leaf)
-  const enumF = new Map<string, string[]>()
-  const compF = new Map<string, string[]>()
+  const enumF = new Map<string, Set<string>>()
+  const compF = new Map<string, Set<string>>()
+  const push = (m: Map<string, Set<string>>, parent: string, leaf: string): void => {
+    const s = m.get(parent) ?? new Set<string>()
+    s.add(leaf)
+    m.set(parent, s)
+  }
   for (const [ap, leaf] of leafOf) {
     if (!orphan(ap, leaf)) continue
     for (let i = leaf.length - 1; i >= 2; i--) {
       const parent = leaf.slice(0, i)
       const suf = leaf.slice(i)
       if (!vocab.has(parent) || parent === leaf) continue
-      if (/^\d[a-z0-9]*$/.test(suf)) enumF.set(parent, [...(enumF.get(parent) ?? []), leaf])
-      else if (vocab.has(suf)) compF.set(parent, [...(compF.get(parent) ?? []), leaf])
+      if (/^\d[a-z0-9]*$/.test(suf)) push(enumF, parent, leaf)
+      // COMPOUND: reject affix parents (real words) and members that are real schema.org terms.
+      else if (vocab.has(suf) && !AFFIX_PREFIXES.has(parent) && !schemaTerms.has(leaf)) push(compF, parent, leaf)
       break
     }
   }
   const out: FoldFamily[] = []
-  for (const [parent, members] of enumF) if (members.length >= 2) out.push({ parent, kind: 'enum', members })
-  for (const [parent, members] of compF) if (members.length >= 2) out.push({ parent, kind: 'compound', members })
+  for (const [parent, members] of enumF) if (members.size >= 2) out.push({ parent, kind: 'enum', members: [...members] })
+  for (const [parent, members] of compF) if (members.size >= 2) out.push({ parent, kind: 'compound', members: [...members] })
   return out.sort((a, b) => b.members.length - a.members.length)
 }
 

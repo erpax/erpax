@@ -99,6 +99,26 @@ describe('readme — fold plan (safe foldable families)', () => {
       rmSync(cwd, { recursive: true, force: true })
     }
   })
+
+  it('rejects English-affix compound families — un⊕ is real words, not a namespace', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-fold-affix-'))
+    const atom = (name: string) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      writeFileSync(join(cwd, 'src', name, 'SKILL.md'), `# ${name}`)
+    }
+    try {
+      // affix parent `un` + ≥2 compound members that ARE real words (un⊕employment, un⊕official)
+      atom('un'); atom('employment'); atom('official')
+      atom('unemployment'); atom('unofficial')
+      // contrast: a legitimate namespace family (it⊕ country-org code) must still fold
+      atom('it'); atom('social'); atom('sport'); atom('itsocial'); atom('itsport')
+      const fams = foldPlan(cwd)
+      expect(fams.find((f) => f.parent === 'un')).toBeUndefined()
+      expect(fams.find((f) => f.parent === 'it')?.kind).toBe('compound')
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
 })
 
 describe('readme — 7-dimensional standards invariant', () => {
