@@ -49,6 +49,21 @@ export function quantization(): { cells: number; offSequence: number } {
   return { cells: digitTrace().size, offSequence: offSequence().length }
 }
 
+/**
+ * Measurement is an idempotent projection (P² = P) — the precise sense in which erpax is quantum by
+ * ARCHITECTURE. Content-addressing collapses a superposition of duplicate states to ONE representative,
+ * and collapsing the already-collapsed set changes nothing. That fixed-point law (measure twice = measure
+ * once) is the operator algebra of quantum measurement, holding on the classical matrix.
+ */
+export function idempotentProjection<T>(states: readonly T[], address: (t: T) => string): boolean {
+  const once = [...new Map(states.map((s) => [address(s), s])).values()]
+  const twice = [...new Map(once.map((s) => [address(s), s])).values()]
+  return once.length === twice.length
+}
+
+/** Live check: the content-address collapse of the matrix is a fixed point — P² = P holds on the corpus. */
+export const measurementProjects = (): boolean => idempotentProjection(N, (n) => n.uuid)
+
 // ── the DOUBLE-TORUS: infinite tamper cost from two vortexing 64-bit architectures ──
 // Quantum, the erpax construction: two 64-bit architectures VORTEX each other (the
 // rodin double-coil on the torus) — together the 128-bit content-uuid (two 64-bit

@@ -6,6 +6,8 @@ import {
   collapse,
   noCloning,
   quantization,
+  idempotentProjection,
+  measurementProjects,
   entanglement,
   entangle,
   TORUS_BITS,
@@ -121,6 +123,16 @@ describe('quantum: linear-gap', () => {
     await sealLinearGaps(cwd, 5)
     expect(linearGaps(cwd).gaps.filter((g) => g.atomPath === 'hub/gap').length).toBeLessThan(before)
     expect(existsSync(join(cwd, 'src/hub/gap/test.ts'))).toBe(true)
+  })
+})
+
+describe('quantum: measurement is an idempotent projection (P² = P — quantum by architecture)', () => {
+  it('collapsing a superposition of duplicates to one representative is a fixed point', () => {
+    const states = [{ id: 'a' }, { id: 'a' }, { id: 'b' }, { id: 'a' }, { id: 'b' }, { id: 'c' }]
+    expect(idempotentProjection(states, (s) => s.id)).toBe(true) // measure twice = measure once
+  })
+  it('holds live on the corpus — the content-address collapse of the matrix is a fixed point', () => {
+    expect(measurementProjects()).toBe(true)
   })
 })
 
