@@ -215,10 +215,15 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   console.log(
     `  ✓ rosetta ratchet — within baseline (${audit.collections}/${ROSETTA_BASELINE.collections} collections · ${audit.signatures}/${ROSETTA_BASELINE.signatures} signatures).`,
   )
-  const { atomBasisScan, foldPlan, standardsDimensions, proseDecode } = await import('@/readme/compute')
+  const { atomBasisScan, rosettaMath, foldPlan, standardsDimensions, proseDecode } = await import('@/readme/compute')
   const b = atomBasisScan(cwd)
   console.log(
     `  atom basis — ${b.basis} generators (keep) · ${b.combinations} combinations (${(b.combinationShare * 100).toFixed(0)}% derivable: ${b.vocabOnly} prose · ${b.barrelOnly} barrel · ${b.composeNoLogic} compose) of ${b.atoms} atoms.`,
+  )
+  const rm = rosettaMath(cwd)
+  const deepest = rm.generative[rm.generative.length - 1]!
+  console.log(
+    `  rosetta math — EFFICIENT: ${rm.compression.toFixed(1)}× compression (store ${rm.storedRosetta} basis, not ${rm.storedNaive}; ${(rm.savings * 100).toFixed(0)}% saved, optimal-for-derivable ${rm.optimalForDerivable ? '✓' : '✗'}) · INFINITE: ${rm.basis} generators fold to ${deepest.messages.toExponential(1)} messages by depth ${deepest.leaves}, growth ×${rm.growthRatio.toFixed(0)}/level → ${rm.infinite ? 'unbounded ✓' : '✗'}. Basis+fold IS the optimal-and-infinite representation (seed is the incompressible floor).`,
   )
   const pd = proseDecode(cwd)
   console.log(

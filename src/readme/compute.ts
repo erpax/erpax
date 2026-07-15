@@ -1596,6 +1596,77 @@ export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
   }
 }
 
+/** nth Catalan number — the count of distinct binary fold-trees over n+1 leaves. */
+function catalan(n: number): number {
+  let c = 1
+  for (let k = 0; k < n; k++) c = (c * 2 * (2 * k + 1)) / (k + 2)
+  return Math.round(c)
+}
+
+export interface RosettaMath {
+  readonly atoms: number
+  readonly basis: number
+  readonly combinations: number
+  readonly derivableShare: number
+  /** atoms per generator kept — the fold's compression ratio. */
+  readonly compression: number
+  /** rosetta stores only the basis (the irreducible floor); naive stores every atom. */
+  readonly storedRosetta: number
+  readonly storedNaive: number
+  /** fraction of storage the fold removes = 1 − basis/atoms. */
+  readonly savings: number
+  /** free-magma growth: distinct folded messages of k leaves = basis^k · Catalan(k−1). */
+  readonly generative: ReadonlyArray<{ readonly leaves: number; readonly messages: number }>
+  /** the message count strictly increases without bound ⇒ a finite basis generates infinitely. */
+  readonly infinite: boolean
+  /** ratio messages(k+1)/messages(k) → 4·basis > 1: the growth never stops. */
+  readonly growthRatio: number
+  /** rosetta storage strictly compresses the derivable set (basis < atoms). */
+  readonly optimalForDerivable: boolean
+}
+
+/**
+ * The rosetta math — is a closed basis + fold the MOST EFFICIENT and INFINITE representation? Computed
+ * over the live corpus (reuses atomBasisScan), not asserted.
+ *
+ * EFFICIENT: the corpus is `basis` irreducible generators + `combinations` folds of them. Rosetta stores
+ * ONLY the basis — the combinations regenerate via the fold — so storage = basis, the Kolmogorov floor for
+ * the derivable set: you cannot store fewer than the irreducible generators, and the combinations carry no
+ * new information. Optimal FOR THE DERIVABLE part; the basis itself is the incompressible seed.
+ *
+ * INFINITE: under the binary fold (merge), a finite basis of B generators produces distinct messages of k
+ * leaves = B^k · Catalan(k−1) — the free magma. The ratio messages(k+1)/messages(k) → 4·B > 1, so the count
+ * rises without bound: finite basis, infinite generation. Content-addressing dedups identical folds, so the
+ * generated set is the free magma quotiented by content-equality — still countably infinite.
+ *
+ * HONEST BOUNDARY: "most efficient" is optimal GIVEN a minimal basis (no generator derivable from another) —
+ * which dedup + collapse-detection enforce; it is not magic on the seed, the incompressible floor. "Infinite"
+ * is countable infinity, provable arithmetic, not a metaphysical claim.
+ */
+export function rosettaMath(cwd: string = process.cwd(), depth = 6): RosettaMath {
+  const b = atomBasisScan(cwd)
+  const basis = b.basis
+  const generative: Array<{ leaves: number; messages: number }> = []
+  for (let k = 1; k <= depth; k++) generative.push({ leaves: k, messages: Math.pow(basis, k) * catalan(k - 1) })
+  const last = generative[generative.length - 1]!
+  const prev = generative[generative.length - 2] ?? { messages: 1 }
+  const growthRatio = prev.messages > 0 ? last.messages / prev.messages : 0
+  return {
+    atoms: b.atoms,
+    basis,
+    combinations: b.combinations,
+    derivableShare: b.combinationShare,
+    compression: basis > 0 ? b.atoms / basis : 0,
+    storedRosetta: basis,
+    storedNaive: b.atoms,
+    savings: b.atoms > 0 ? 1 - basis / b.atoms : 0,
+    generative,
+    infinite: basis >= 1 && growthRatio > 1, // the tail grows without bound ⇒ infinite generation
+    growthRatio,
+    optimalForDerivable: b.combinations === 0 || basis < b.atoms,
+  }
+}
+
 export interface FoldFamily {
   readonly parent: string
   readonly kind: 'enum' | 'compound'

@@ -8,6 +8,7 @@ import {
   readCorpusFoldReceipt,
   sealCorpusFold,
   atomBasisScan,
+  rosettaMath,
   foldPlan,
   standardsDimensions,
   proseDecode,
@@ -76,6 +77,53 @@ describe('readme — atom basis scan (generators vs rosetta combinations)', () =
       expect(b.vocabOnly).toBe(1)
       expect(b.barrelOnly).toBe(1)
       expect(b.combinationShare).toBeCloseTo(0.75)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('readme — rosetta math (is basis+fold the most efficient AND infinite representation?)', () => {
+  it('EFFICIENT: stores only the basis; compression = atoms/basis; strictly compresses the derivable', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-rosetta-'))
+    const atom = (name: string, index?: string) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      writeFileSync(join(cwd, 'src', name, 'SKILL.md'), `# ${name}`)
+      if (index !== undefined) writeFileSync(join(cwd, 'src', name, 'index.ts'), index)
+    }
+    try {
+      atom('genA', `export function a(n: number) { return n * 2 }\n`) // basis
+      atom('genB', `export function b(n: number) { return n + 1 }\n`) // basis
+      atom('vocab') // combination (vocab-only)
+      atom('barrel', `export { x } from './child'\n`) // combination (barrel)
+      const r = rosettaMath(cwd)
+      expect(r.atoms).toBe(4)
+      expect(r.basis).toBe(2)
+      expect(r.combinations).toBe(2)
+      expect(r.compression).toBe(2) // 4 atoms / 2 generators
+      expect(r.storedRosetta).toBe(2) // stores only the basis (the floor)
+      expect(r.storedNaive).toBe(4)
+      expect(r.savings).toBeCloseTo(0.5)
+      expect(r.optimalForDerivable).toBe(true) // basis < atoms — real compression
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+
+  it('INFINITE: a finite basis generates unboundedly via the fold — messages = basis^k · Catalan(k−1)', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-rosetta-inf-'))
+    const atom = (name: string) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      writeFileSync(join(cwd, 'src', name, 'index.ts'), `export function ${name}(n: number) { return n }\n`)
+    }
+    try {
+      atom('genA')
+      atom('genB') // basis = 2
+      const r = rosettaMath(cwd, 4)
+      // basis=2: k=1→2·C(0)=2 · k=2→4·C(1)=4 · k=3→8·C(2)=16 · k=4→16·C(3)=80
+      expect(r.generative.map((g) => g.messages)).toEqual([2, 4, 16, 80])
+      expect(r.infinite).toBe(true) // tail grows without bound
+      expect(r.growthRatio).toBeGreaterThan(1) // 80/16 = 5 → the growth never stops
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
