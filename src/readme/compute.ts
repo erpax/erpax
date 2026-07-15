@@ -2664,6 +2664,56 @@ export function sealCorpusFold(root: string, faces: number, cwd: string = proces
   return receipt
 }
 
+/** The DRY-clean health summary — sealed against the corpus fold root so it is READ, not re-derived. */
+export interface CorpusHealth {
+  readonly root: string
+  readonly atoms: number
+  readonly basis: number
+  readonly derivableShare: number
+  readonly compression: number
+  readonly infinite: boolean
+  readonly at: string
+  /** true = returned from the seal (the corpus was unchanged — no re-analysis); false = freshly computed. */
+  readonly cached: boolean
+}
+
+const healthCachePath = (cwd: string): string => join(cwd, 'node_modules', '.cache', 'erpax', 'health.json')
+
+/**
+ * Improve src to speed up: the corpus health/DRY-clean readout as a READ, not a re-scan. Content-addressed
+ * by the fold root — when the corpus is unchanged the sealed summary is returned without re-running the heavy
+ * basis/rosetta analysis (answered within). This is the fold applied to the assessment: compute once, seal,
+ * read; the same move that stops an agent re-deriving what its address already holds.
+ *
+ * Honest cost: computing the fold root is O(corpus) but LIGHT (content hash); the cache skips the HEAVY
+ * re-analysis (atomBasisScan classification) on an unchanged root — not literally O(1), but the re-derivation
+ * is folded away.
+ */
+export function corpusHealth(cwd: string = process.cwd()): CorpusHealth {
+  const root = corpusFoldRoot(cwd)
+  try {
+    const prev = JSON.parse(readFileSync(healthCachePath(cwd), 'utf8')) as CorpusHealth
+    if (prev.root === root) return { ...prev, cached: true } // unchanged — read the seal, skip the analysis
+  } catch {
+    /* cache miss — recompute the delta */
+  }
+  const r = rosettaMath(cwd)
+  const health: CorpusHealth = {
+    root,
+    atoms: r.atoms,
+    basis: r.basis,
+    derivableShare: r.derivableShare,
+    compression: r.compression,
+    infinite: r.infinite,
+    at: new Date().toISOString(),
+    cached: false,
+  }
+  const path = healthCachePath(cwd)
+  mkdirSync(dirname(path), { recursive: true })
+  writeFileSync(path, JSON.stringify(health, null, 2) + '\n')
+  return health
+}
+
 /**
  * Per-atom double-torus ledger — double-entry compute accounting ([[accounting]] · [[quantum]]).
  * Debit lobe `in`: the atom's input closure folded to one digest (files + graph row — the inhale).

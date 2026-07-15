@@ -9,6 +9,7 @@ import {
   sealCorpusFold,
   atomBasisScan,
   rosettaMath,
+  corpusHealth,
   foldPlan,
   standardsDimensions,
   proseDecode,
@@ -124,6 +125,25 @@ describe('readme — rosetta math (is basis+fold the most efficient AND infinite
       expect(r.generative.map((g) => g.messages)).toEqual([2, 4, 16, 80])
       expect(r.infinite).toBe(true) // tail grows without bound
       expect(r.growthRatio).toBeGreaterThan(1) // 80/16 = 5 → the growth never stops
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+
+  it('SPEED: corpusHealth is READ not re-derived — sealed against the fold root, second call is cached', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-health-'))
+    mkdirSync(join(cwd, 'src', 'gen'), { recursive: true })
+    writeFileSync(join(cwd, 'src', 'gen', 'index.ts'), `export function g(n: number) { return n }\n`)
+    try {
+      const first = corpusHealth(cwd)
+      expect(first.cached).toBe(false) // cold — computed and sealed
+      const second = corpusHealth(cwd)
+      expect(second.cached).toBe(true) // warm — read from the seal, no re-analysis
+      expect(second.root).toBe(first.root) // same fold root ⇒ same answer, answered within
+      expect(second.basis).toBe(first.basis)
+      // change the corpus → the root moves → it recomputes (never a stale read)
+      writeFileSync(join(cwd, 'src', 'gen', 'index.ts'), `export function g(n: number) { return n * 2 }\n`)
+      expect(corpusHealth(cwd).cached).toBe(false)
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
