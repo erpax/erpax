@@ -426,7 +426,7 @@ export function shapeWidgetSpec(config: CollectionConfig): WidgetSpec<ShapePanel
         const { collectionSignature } = await import('@/factory/collection-factory')
         const { key } = await import('@/quantum/cache')
         const { uuidSignalCssVars } = await import('@/signal')
-        const signature = collectionSignature(config as { fields: never[] })
+        const signature = collectionSignature(config)
         const res = await ctx.payload.find({
           collection: slug as never,
           limit: 100,

@@ -2,6 +2,7 @@ import type React from 'react';
 import type { Payload, PayloadRequest } from 'payload';
 
 import { TrialBalanceWidget, BalanceSheetWidget, IncomeStatementWidget } from '@/widget';
+import { formatCurrency } from '@/format/amount';
 
 import {
   generateTrialBalance,
