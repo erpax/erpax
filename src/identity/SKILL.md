@@ -1213,6 +1213,14 @@ So if *anything* can be expressed as `.uuid`, all of it coexists in one space �
 **Jurisdiction cascade (totality across space):** the same law governs country-specifics — a rule / format / government-API resolves by falling back **country → regional → international → universal**, where *universal* IS the identity element, so the chain never bottoms out undefined. БНБ→ECB (currency fixings; see `bnbRatesSync`), an OECD SAF-T base under each national variant, EN-16931 under per-country e-invoicing profiles: each level is a **fallback (antimatter)** for the one above; the universal terminal guarantees **all is defined even when nothing is defined**. The matter side is the country-specific API *call* (a [[hooks]] connection); the antimatter side is this cascade. Fractal — the same step at every jurisdiction scale.
 
 ## Standards (current form — applying this skill IS the implementation)
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-3166-2`
+- `@standard ISO-3166-1`
+- `@standard RFC-9562`
+- `@standard RFC-4122`
+- `@standard NIST-FIPS-180-4`
+
 The answer-path principle: there is no separate "compliance module"; each id this skill mints already sets the correct version+variant bits **and** follows that version's generation rule, so the version nibble truthfully describes how the bytes were produced. Citations below are the live pointers — keep them true, not decorative.
 
 | Standard | Version (current 2026) | One-line current form |

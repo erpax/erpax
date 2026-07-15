@@ -132,6 +132,12 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO/IEC-27001:2022`
+- `@standard ISO/IEC-27002:2022`
+- `@standard ISO-19011`
+
 - RFC 5322 internet-message-format email
 - RFC 5321 smtp envelope
 - RFC 6532 internationalized-email-addresses

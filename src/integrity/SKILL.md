@@ -229,6 +229,15 @@ This is the CURRENT-STATE half of trust, [[duality]] to [[proof]] (the O(N) cost
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-19011`
+- `@standard RFC-9562`
+- `@standard RFC-4122`
+- `@standard RFC-8785`
+- `@standard NIST-FIPS-180-4`
+- `@standard NIST-SP-800-38D`
+
+
 - **RFC 9562 §5.8 + RFC 8785 + ISO/IEC 10118 + NIST FIPS 180-4** — the content-uuid: JCS canonicalization, SHA-256 digest, uuidv8 layout. Second-preimage 2^256, collision 2^128.
 - **ISO 19011:2018 §6.4.6 + SOX §404** — audit-evidence and internal-controls; row-level Byzantine tamper detection, every verification audit-trailed.
 - **RFC 8032 EdDSA, RFC 7515 JWS, ETSI EN 319 132/142, eIDAS 910/2014** — the signature attaches to the contentUuid, one signable artefact, one verification path.

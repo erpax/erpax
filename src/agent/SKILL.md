@@ -420,6 +420,12 @@ Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO/IEC-25010`
+- `@standard ISO-19011`
+- `@standard RFC-9562`
+
+
 - **RFC 9562 §5.8 name-based UUIDv8** — tenant-scoped content-addressed agent (and team) identity: identical content ⇒ identical uuid within a tenant (clones merge); distinct tenants get distinct uuids (no cross-tenant collision). `@audit` Conservation Law 8 content-uuid · merge set-union (no coordination).
 - **ISO/IEC 25010:2023 §5.4 modularity / §5.5 testability** — agents are pure (no direct I/O), the substrate owns side effects; the seam is reusable and trivially testable.
 - **ISO/IEC 12207** — software-life-cycle single-source-of-truth: one owning agent per collection, one effect seam, one shared registry/runtime.

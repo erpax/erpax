@@ -249,6 +249,13 @@ Sequence position: **8** (crest — the value transfer between two parties carri
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-8601-1`
+- `@standard ISO/IEC-27002:2022`
+- `@standard ISO-19011`
+- `@standard EN-16931`
+
+
 - **EN-16931:2017** — invoice-and-credit-note; the common party-side document shape (`PartyDocument`).
 - **IFRS-9 / US-GAAP ASC-326** — expected-credit-loss aging-buckets; `computeAgingBuckets` is the executable bucketization.
 - **US-GAAP ASC-310 receivables / ASC-405 liabilities** — the two sides the one algorithm serves.

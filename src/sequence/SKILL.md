@@ -618,6 +618,10 @@ The whole motion is a **horo** — the Bulgarian linked-circle dance: objects jo
 3. Apply in sequence order: settle `config` → access/lifecycle (`access`/`hooks`/`auth`) → data (`fields`/`collections`/`database`) → reads (`queries`/`api`) → surface (`admin`) → features.
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-8601-1`
+
 Each skill is the answer-path holding a standard's form — *applying* the skill implements the standard. The standards this skill (the time-step / ordering of the sequence, see [[versions]]) carries, in their **current** form:
 
 - **ISO 8601 date-time** — version **ISO 8601-1:2019/Amd 1:2022** (Part 1, Basic rules, as technically corrected Oct 2022). Current form: a compliant date-time is the calendar-date-and-time-of-day representation `YYYY-MM-DDThh:mm:ss[.sss]` with an explicit UTC offset (`Z` or `±hh:mm`), most-significant-component-first and zero-padded, so every stored instant is unambiguous and lexicographically sortable; hours run `00–24` (`24:00:00` = end-of-day instant) and seconds `00–60` (`60` only for an inserted leap second). Cite the part-and-amendment, never bare `ISO 8601-1:2019` (predates the amendment, misses the `24:00:00` reintroduction) and never the unqualified slug `ISO-8601`. Do **not** cite the withdrawn `ISO 8601:2004` — it was split in 2019 into Part 1 (Basic rules) and Part 2 (Extensions), so `ISO 8601-1:2019/Amd 1:2022` is the sole current source for basic date-time. Duration/interval/recurrence are a *different* part — `ISO 8601-2:2019/Amd 1:2025` (Extensions) — so `Amd 1:2025` belongs to Part 2, not Part 1; plain date-time stays in Part 1.

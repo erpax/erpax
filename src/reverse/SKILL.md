@@ -157,6 +157,10 @@ A reversal is not a new computation; it is the **mirror of an existing balanced 
 - **Status `draft`.** Generated reversals enter draft; posting follows the normal gate (SoD, period-lock).
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-19011`
+
 @accounting IFRS IAS-1 presentation; IAS-34 §B interim-period reversals · @standard OECD SAF-T §3 reversal-entries (distinct GL + posting date) · @compliance SOX §404 reversal-traceability · @audit ISO-19011 mirror↔origin link.
 
 ## Common mistakes

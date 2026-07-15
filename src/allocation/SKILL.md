@@ -202,6 +202,10 @@ Sequence position: **1·2** (the material build — `reward` is a [[rate]] at po
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-19011`
+
+
 - **SFIA 8 responsibility-levels (1..7)** — job-type categorisation via `competencyWeight`.
 - **ESCO / ISCO-08 competency framework (skill level)** — the shared held/required proficiency scale.
 - **Hamilton (largest-remainder) apportionment — integer fair division** — `apportion`/`distribute` conserve the pot exactly (Σ shares = pot).

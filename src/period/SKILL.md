@@ -130,6 +130,10 @@ Use when a value is tied to a fiscal/calendar period — revenue recognized in p
 Composes: [[date]] · [[fields]] · [[versions]] · [[accounting]] · [[start]].
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-8601-1`
+
 - ISO-8601-1:2019
 
 **Law — [[law]]: a period is a date-range from [[start]] to end (or a fiscal-period code) that fixes the time-based [[accounting]] cutoff — which period a value falls in — and drives [[versions]] over that span.**

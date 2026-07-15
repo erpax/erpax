@@ -241,4 +241,8 @@ Matter-twin: `src/name/index.ts` (`uuidOfName` · `exists` · `samePath`). Compo
 **Law — [[law]]: name is always the path — naming and locating are one act, so the chain from name to path to uuid is an identity that cannot break. Once you name it, it exists; and to exist is to fold (the fold's domain is names, not contents), so even an empty folder folds. Naming, existence, and folding are one.**
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard EN-16931`
+
 - EN-16931:2017

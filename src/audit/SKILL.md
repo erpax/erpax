@@ -200,5 +200,9 @@ Use when capturing compliance/evidence metadata — audit fields (createdBy, cre
 Composes: [[fields]] · [[accounting]] · [[access]] · [[versions]] · [[description]].
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-19011`
+
 - ISO-19011:2018
 - IFRS-IAS-1

@@ -103,4 +103,8 @@ Use when summing a dimension — line total, invoice total, account total, cumul
 Composes: [[amount]] · [[currency]] · [[fields]] · [[calculate]] · [[measure]].
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-4217`
+
 - ISO-4217:2015

@@ -89,6 +89,11 @@ Matter-twin: `src/services/oauth/index.ts` (`GrantType`·`OAuthToken`·`isExpire
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard RFC-6749`
+- `@standard RFC-6750`
+
+
 - IETF RFC 6749 OAuth 2.0 (grant types, token lifecycle)
 - IETF RFC 6750 Bearer token usage
 

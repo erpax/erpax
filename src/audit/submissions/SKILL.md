@@ -96,6 +96,11 @@ This collection uses [[access]] to enforce role-based read/create/update with pe
 A CollectionConfig at `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) with one folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO/IEC-27001:2022`
+- `@standard ISO-19011`
+
 - BG Наредба-Н-18 §Приложение-38 audit-file-submission-log
 - ISO-19011:2018 §6.4 audit-evidence
 - SOX §404 internal-controls

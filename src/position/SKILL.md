@@ -132,6 +132,10 @@ Sequence position: **2** ([[collections]] — positions aggregate the [[allocati
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-19011`
+
+
 - SFIA 8 responsibility-levels (1..7) — the job-type / autonomy axis
 - ESCO / ISCO-08 occupational classification
 - UN COFOG (Classification of the Functions of Government) — the `function` code

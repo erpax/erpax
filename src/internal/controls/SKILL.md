@@ -86,6 +86,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO/IEC-27001:2022`
+
 - COSO-2013 internal-control-integrated-framework
 - SOX §404 internal-controls
 - PCAOB AS 2201 ICFR-audit

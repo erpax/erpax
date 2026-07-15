@@ -173,6 +173,11 @@ Sequence position: **9** (unity / verification / audit — the conservation chec
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO/IEC-27001:2022`
+- `@standard ISO-19011`
+
+
 - **ISO-19011:2018** — audit-trail integrity-verification. `scanTransaction` is the executable audit check.
 - **SOX §404** — segregation-of-duties internal-controls. `detectSodViolation` enforces creator ≠ approver ≠ payer (four-eyes).
 - **ISO-27001 A.8.15 logging A.8.16 monitoring (tamper detection)** — `detectTamper` implements the monitoring obligation.

@@ -105,4 +105,8 @@ Composes: [[shifts]] · [[work/shifts]] · [[employee]] · [[accounting]] · [[e
 **Law — [[law]]: a shift is one `(actor, day)` of presence and the [[accounting]] authority for labour — produced minutes roll UP into it, [[efficiency]] (`⌊produced·100/presence⌋`) and wage read back DOWN, the same direction a ledger account is the authority its postings sum into.**
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-22400-2`
+
 - ISO-22400-2 (manufacturing operations KPIs — efficiency, presence/produced time)

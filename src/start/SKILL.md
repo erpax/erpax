@@ -103,6 +103,10 @@ Use when a date-range or period begins — contract start date, employment start
 Composes: [[date]] · [[period]] · [[fields]] · [[end]].
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-8601-1`
+
 - ISO-8601-1:2019
 
 **Law — [[law]]: start is the ISO-8601 instant a span begins; paired with [[end]] (or a duration) it defines a temporal [[period]].**

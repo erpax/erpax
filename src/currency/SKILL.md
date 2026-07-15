@@ -236,6 +236,14 @@ Composes: [[accounting]] (multi-currency journals), [[commerce]] (totals), [[ide
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-4217`
+- `@standard ISO-3166-1`
+- `@standard ISO-13616-1`
+- `@standard ISO-9362`
+- `@standard ISO-7064`
+
+
 Applying this skill *is* how these standards are implemented — the field-factory is the answer-path; its [[standard]] banners must be true, not decoration.
 
 - **ISO 4217:2015** (third edition, 2015-08; current — NOT superseded, kept live by Maintenance Agency amendments via SIX Financial Information AG, e.g. Amendment No. 177 effective 2024-06-25 adding ZWG). **Form:** every currency is an uppercase three-letter ALPHABETIC code (`EUR`, `USD`, `BGN`, `ZWG`) from the current published list; where numeric/decimal handling is needed, pair it with the matching three-digit NUMERIC code and the published minor-unit/exponent (`JPY`=0, `USD`=2, `BHD`=3) — never assume two decimals. The code list is controlled and amendable: never a baked literal, and withdrawn codes are never reused. Cite as `ISO 4217:2015` (year is correct, edition not superseded); cite the code as the alphabetic (alpha-3) code without a clause number (avoid the brittle "§5").

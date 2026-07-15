@@ -98,6 +98,10 @@ The run is also the verb the corpus turns on itself — [[dev|run/dev]] launches
 Composes: [[batch]] · [[payment]] · [[schedule]] · [[jobs]] · [[entry]] · [[balance]] · [[horo]].
 
 ## Standards
+
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-20022`
+
 - ISO 20022 (pain.001 credit-transfer / pain.008 direct-debit batch initiation)
 
 **Law — [[law]]: one run is one bounded pass of a batch process — gather a set, authorise, execute once, reconcile — moving along a draft → approved → executed → settled lifecycle ([[horo]]).**

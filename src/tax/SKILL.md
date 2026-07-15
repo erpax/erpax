@@ -159,6 +159,11 @@ Composes: [[rate]] (the tax rate), [[currency]] (base + tax amounts), [[accounti
 
 ## Standards
 
+<!-- standards banners (the 7-dim instrument reads SKILL.md; these atoms declare these standards in this section) -->
+- `@standard ISO-20022`
+- `@standard EN-16931`
+
+
 The answer-path principle: applying this skill *implements* the standard — a compliant `tax` skill holds the standard's data model with its invariants enforced, not a free-text banner asserting it. Cite each in its one canonical, part-qualified, version-pinned form (the [[standard]] one-canonical-form law).
 
 - **EN 16931-1:2017+A1:2019** (consolidated, incl. /AC:2020 corrigendum) — the e-invoicing *semantic data model*. **Form:** an invoice/credit-note populates the model's Business Groups (BG-*) and Business Terms (BT-*) and satisfies its business rules — sum of line net amounts = invoice total without VAT, VAT breakdown per category (BG-23) keyed by UN/CEFACT 5305 codes, document totals BT-106/109/110/112/115 reconciling — syntax-bindable to UBL 2.1 / CII. *Citation law:* always part-qualified (`EN 16931-1`, the model is Part 1) and amendment-current (`+A1:2019`); never bare `EN-16931:2017`. *Forward note:* a revised edition (CEN-approved 2025-10-23, publishing ~2026, designated around `EN 16931-1:2025`/`2026`) extends the model B2G→B2B for ViDA / 2030 DRR and will supersede this baseline once published — the `+A1:2019` banners then become the superseded edition.
