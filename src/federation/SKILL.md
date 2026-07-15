@@ -154,6 +154,11 @@ Only then is the content ingested, stamped with `federationProvenance`. Verifica
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Activity Streams 2.0 + ActivityPub + LDN`
+- `@standard W3C Verifiable Credentials Data Model 2.0`
+
+
 Applying this skill *implements* the federation standards — citing them in `@standard` banners must be true to the layer, per [[standard]].
 
 - **ActivityStreams 2.0** (W3C REC, 2017) — the federated content envelope (JSON-LD Activity). The `FederatedRow` is the erpax envelope; cite on `types.ts`.

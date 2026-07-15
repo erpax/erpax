@@ -69,6 +69,14 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IAS-33 §10 basic-eps`
+- `@standard IFRS IAS-33 §30-§63 diluted-eps`
+- `@standard IFRS IAS-33 §66-§70 disclosure`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time period-end`
+
 - IFRS IAS-33 §10 basic-eps
 - IAS-33 §11-§19 weighted-average-number-of-ordinary-shares
 - IFRS IAS-33 §30-§63 diluted-eps

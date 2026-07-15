@@ -133,6 +133,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering`
+- `@standard ISO-4217:2015 currency-code per-fiscal-configuration`
+
 - ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering
 - IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment
 - ISO-4217:2015 currency-code per-fiscal-configuration

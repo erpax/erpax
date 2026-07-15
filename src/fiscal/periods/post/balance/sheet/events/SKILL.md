@@ -110,6 +110,16 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IAS-10 §3 adjusting-vs-non-adjusting-events`
+- `@standard IFRS IAS-10 §8 adjusting-events-recognise`
+- `@standard IFRS IAS-10 §10 non-adjusting-events-disclose`
+- `@standard IFRS IAS-10 §17 going-concern-after-reporting-date`
+- `@standard IFRS IAS-10 §21 disclosure-requirements`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time event-date authorisation-date`
+
 - IFRS IAS-10 §3 adjusting-vs-non-adjusting-events
 - IFRS IAS-10 §8 adjusting-events-recognise
 - IFRS IAS-10 §10 non-adjusting-events-disclose

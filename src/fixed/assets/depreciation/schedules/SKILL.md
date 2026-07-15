@@ -93,6 +93,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time period-end`
+- `@standard ISO-4217:2015 currency-codes`
+
 - ISO-8601-1:2019 date-time period-end
 - ISO-4217:2015 currency-codes
 - IFRS IAS-16 property-plant-and-equipment depreciation

@@ -351,3 +351,12 @@ See `tests/standards/fiscal-period/` for:
 - [SOX Section 404](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=&dateb=&owner=exclude&count=100) – Management assessment of internal controls
 
 **Law — [[law]]: the fiscal calendar is fully reproducible from its configuration plus the immutable snapshot chain — same config yields the same regulatory codes deterministically, and every amendment is captured by a chainLeafUuid so no period change can be hidden.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601:2019 Date/Time representation`
+- `@standard ISO-4217:2023 Currency codes`
+- `@standard GDPR:2016/679 Art. 32 Security of processing`
+- `@standard SOX:2002 Sec. 404 Internal control assessment`
+- `@standard NIST-SP-800-92 Audit logging`

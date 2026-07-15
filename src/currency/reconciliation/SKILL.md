@@ -79,3 +79,10 @@ Matter-twin: `src/currency/reconciliation/index.ts` (`CurrencyReconciliation` st
 
 @standard IAS 21 §38 presentation-currency translation · IFRS 9 FX gains/losses · ISO 4217
 @audit Conservation Law 60 chain-leaf binding; never hand-asserted
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2023 (currency codes, decimal places)`
+- `@standard IFRS-21:2023 (translation of foreign operations)`
+- `@standard IFRS-9:2023 (foreign exchange gains/losses)`

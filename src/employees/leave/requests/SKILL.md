@@ -102,6 +102,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: one row per employee leave request — its approval decrements the entitlement balance and feeds the IAS-19 accrual, checked against multi-jurisdiction minimum-leave rules; a single-folder collection node (no scatter, no drift).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISO-8601-1:2019 date-time
 - IFRS IAS-19 §11 §13 §14 short-term-employee-benefits
 - IFRS IAS-19 §16 accumulating-paid-absences

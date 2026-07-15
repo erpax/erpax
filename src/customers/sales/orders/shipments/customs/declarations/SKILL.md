@@ -92,6 +92,12 @@ Collection shape: `index.ts` (schema + standards banners), `seed.ts` (opening da
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time declaration-date`
+- `@standard ISO-3166-1:2020 country-codes country-of-origin`
+- `@standard ISO-4217:2015 currency-codes valuation-currency`
+
 - ISO-8601-1:2019 date-time declaration-date
 - ISO-3166-1:2020 country-codes country-of-origin
 - ISO-4217:2015 currency-codes valuation-currency

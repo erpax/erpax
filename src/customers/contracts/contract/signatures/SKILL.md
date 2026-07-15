@@ -98,6 +98,13 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-15 §10 contract-with-customer`
+- `@standard IFRS IFRS-15 §23 contract-identification`
+- `@standard SOX §302 management-certification audit-trail`
+- `@standard ISO-8601-1:2019 date-time signature-timestamp`
+
 - IFRS IFRS-15 §10 contract-with-customer
 - IFRS IFRS-15 §23 contract-identification
 - US-GAAP ASC-606-10-25-1 contract-existence

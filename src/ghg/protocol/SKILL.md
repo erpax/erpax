@@ -86,3 +86,9 @@ The 4 + 3 + 15 = 22 sub-categories that make up Scope 1 + Scope 2 + Scope 3, plu
 - IFRS S2 (climate-related disclosures)
 
 **Law — [[law]]: the GHG Protocol fixes the 4 + 3 + 15 = 22 sub-categories of Scope 1 + 2 + 3 plus the activity-vs-spend methodology hierarchy and GWP horizon — the canonical answer-path for per-source carbon posting and the ESRS E1 disclosure roll-up.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 14064-1:2018 organisation-level-ghg-quantification`
+- `@standard IFRS S2 §29-32 climate-related-metrics (companion)`

@@ -165,6 +165,16 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: the employees collection is the GDPR-protected workforce master (admin/payroll-officer access only) — it links the worker to the actor-party [[identity]], holds IAS-19 compensation, and drives the payroll cycle through time-entries and payroll runs; a single-folder collection node (no scatter, no drift).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes citizenship work-country`
+- `@standard ISO-3166-2:2020 subdivision-codes`
+- `@standard ISO-13616-1:2020 iban payroll-bank-account`
+- `@standard ISO-9362:2022 bic payroll-bank-account`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time hire-date termination-date`
+- `@standard ISO-17442-1:2020 lei employer-identifier`
+
 - ISO-3166-1:2020 country-codes citizenship work-country
 - ISO-3166-2:2020 subdivision-codes
 - ISO-13616-1:2020 iban payroll-bank-account

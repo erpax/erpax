@@ -112,6 +112,11 @@ A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder
 Each row is one durable FX conversion / revaluation event (`transactionKind`: spot · period-end revaluation · hedge settlement · consolidation translation) — the audit evidence for the FX gain/loss P&L line. Distinct from [[currency/rates]], the rate-table master: this records the events, that holds the rates a row's `exchangeRate` is sourced from.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes from-to-currency-pair`
+- `@standard ISO-8601-1:2019 date-time transaction-date`
+
 - ISO-4217:2015 currency-codes from-to-currency-pair
 - ISO-8601-1:2019 date-time transaction-date
 - IFRS IAS-21 §21 §23 §28 §29 effects-of-changes-in-foreign-exchange-rates

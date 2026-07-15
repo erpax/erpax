@@ -105,6 +105,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)`
+
 - EU CSRD Directive 2022/2464
 - EU ESRS 1 General Requirements
 - EU ESRS 2 General Disclosures

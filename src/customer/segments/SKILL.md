@@ -103,6 +103,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 Composes: [[collections]] · [[fields]] · [[hooks]] · [[accounting]] · [[standard]] · [[proof]] · [[identity]] · [[customers]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISO-8601-1:2019 date-time
 - IFRS IFRS-15 §4 portfolio-practical-expedient
 - IFRS IFRS-8 §22 disclosure-of-segment-information

@@ -190,6 +190,11 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: one row per day/task of employee work time — its kind drives GL allocation and billable-rate project costing, gated by approval and linked to a payroll run for IAS-19 variable pay; a single-folder collection node (no scatter, no drift).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time work-date`
+- `@standard ISO-4217:2015 currency-codes hourly-rate`
+
 - ISO-8601-1:2019 date-time work-date
 - ISO-4217:2015 currency-codes hourly-rate
 - IFRS IAS-19 employee-benefits short-term

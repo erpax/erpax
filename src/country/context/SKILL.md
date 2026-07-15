@@ -80,3 +80,8 @@ Anywhere the codebase branches on country (tenant default, party, bank account, 
 Matter-twin: `src/country/context/index.ts` — `resolveCountryContext(input)` over `@/config/regional-defaults` · `@/config/country-specifics` · `@/country/api` · `@/trading/api` · `extractIbanCountry`, with helpers bound to the resolved code (`validateTaxId` · `validateIban` · `requiresEInvoicing` · `fiscalYearStartMonth` · `apisOfKind`).
 
 **Law — [[law]]: every country branch resolves through one canonical merge — first-non-null of explicit/IBAN/address/tenant/default, always non-null, with a `source` diagnostic — so the registries are never read directly and the [[country]] decision is one auditable bundle.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key`

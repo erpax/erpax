@@ -176,3 +176,11 @@ Matter-twin: `src/country/api/index.ts` — `COUNTRY_APIS` · `BANK_APIS` · `ge
 **Law — [[law]]: api is one word on the country diamond path — `country/api`, not a hyphenated config folder; the catalogue and its clients share the same atom chain.**
 
 @see [[country]] · [[trading]] · [[law]] · [[standards]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes alpha-2`
+- `@standard ISO-20022 financial-messages cross-references`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`

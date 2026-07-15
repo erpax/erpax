@@ -98,6 +98,11 @@ Composes: [[fiscal/periods]] · [[journal/entries]] · [[accounting]] · [[close
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time adjustment-date post-date`
+
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time adjustment-date post-date
 - IFRS IAS-8 §42-49 errors-of-prior-periods

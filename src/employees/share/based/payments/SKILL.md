@@ -110,6 +110,15 @@ The schema lives in `index.ts` (schema + standards banners), co-located `seed.ts
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-2 §10-§13 equity-settled-share-based-payment`
+- `@standard IFRS IFRS-2 §15-§19 vesting-conditions`
+- `@standard IFRS IFRS-2 §30-§33 cash-settled-share-based-payment`
+- `@standard IFRS IFRS-2 §44 disclosure-requirements`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time grant-vesting-exercise`
+
+
 - IFRS IFRS-2 §10-§13 equity-settled-share-based-payment
 - IFRS IFRS-2 §15-§19 vesting-conditions
 - IFRS IFRS-2 §30-§33 cash-settled-share-based-payment

@@ -81,3 +81,10 @@ This module exports the 4-class risk taxonomy (`minimal`, `limited`, `high`, `pr
 - ISO/IEC 42001:2023 — AI management system
 - NIST AI RMF 1.0
 - GDPR Art.22 (automated individual decision-making — companion regulation)
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 23894:2023 ai-risk-management`
+- `@standard ISO/IEC 42001:2023 ai-management-system`
+- `@standard NIST AI-RMF-1.0 ai-risk-management-framework`

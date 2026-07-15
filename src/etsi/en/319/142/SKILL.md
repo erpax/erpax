@@ -81,3 +81,9 @@ When extending:
    dictionary builder + the country's qualified seal cert config.
 3. Spec mirror under `tests/standards/etsi-en-319-142/`.
 4. `pnpm standards:write-index` to refresh `docs/STANDARDS_INDEX.md`.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile`
+- `@standard ISO-32000-1:2008 §12.8 pdf-signature-dictionary`

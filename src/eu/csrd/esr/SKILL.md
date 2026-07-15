@@ -84,3 +84,9 @@ Topic taxonomy + category taxonomy + double-materiality scale (ESRS 1 §3) + ass
 - EFRAG ESRS-XBRL taxonomy
 - IFRS S1 + S2 (companion standards)
 - ISAE 3000 (assurance methodology for non-financial reports)
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS S1 General Sustainability Disclosures`
+- `@standard IFRS S2 Climate-Related Disclosures`

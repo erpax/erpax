@@ -108,6 +108,15 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-15 §20 contract-modifications`
+- `@standard IFRS IFRS-15 §10 contract-with-customer`
+- `@standard IFRS IAS-8 accounting-policies changes`
+- `@standard IFRS IAS-1 presentation-of-financial-statements`
+- `@standard ISO-8601-1:2019 date-time amendment-effective-date`
+- `@standard ISO-4217:2015 currency-codes`
+
 - IFRS IFRS-15 §20 contract-modifications
 - IFRS IFRS-15 §10 contract-with-customer
 - IFRS IAS-8 accounting-policies changes

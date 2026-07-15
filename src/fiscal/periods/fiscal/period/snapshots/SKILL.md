@@ -93,6 +93,12 @@ Composes: [[standard]] · [[access]] · [[proof]] · [[identity]].
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)`
+- `@standard SOX:2002 (access control audit evidence, change log)`
+- `@standard NIST-SP-800-92 (audit logging, integrity verification)`
+
+
 - GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)
 - eIDAS:2014/910/EU (signature on critical amendments)
 - SOX:2002 (access control audit evidence, change log)

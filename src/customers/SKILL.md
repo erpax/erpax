@@ -170,6 +170,14 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes default-currency`
+- `@standard ISO-3166-1:2020 country-codes via-addresses`
+- `@standard ISO-17442-1:2020 lei`
+- `@standard ISO-13616-1:2020 iban`
+- `@standard EN-16931:2017 §BG-7 buyer`
+
 - ISO-4217:2015 currency-codes default-currency
 - ISO-3166-1:2020 country-codes via-addresses
 - ISO-17442-1:2020 lei

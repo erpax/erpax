@@ -79,3 +79,14 @@ Working integrations with the catalogued official APIs, organised by *auth patte
 Matter-twin: `src/country/api/client/index.ts` — `checkVies` · `lookupCompaniesHouse` · `lookupBrreg` · `lookupBnbExchangeRate` / `lookupEcbExchangeRate` · `lookupEuFallbackRate` · `validateBgVatId` / `validateBgEik` · `discoverBgAspsps` · `listAllCountryApis`, over the `@/country/api` catalogue.
 
 **Law — [[law]]: every official-[[api]] call returns one `{ ok, data?, error?, source }` shape with `source` attributing the answering authority, and the EU fallback chain resolves national→pan-EU to the first success — so the [[country]] caller branches on one shape regardless of publisher or auth pattern.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time`
+- `@standard ISO-3166-1:2020 country-codes alpha-2`
+- `@standard EN-16931:2017 §B2G semantic-model`
+- `@standard ISO-3166-1:2020 BG country-code`
+- `@standard EN-16931:2017 §BT-31 seller-vat-identifier`

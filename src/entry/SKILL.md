@@ -292,6 +292,11 @@ Matter-twin: `src/services/entry/index.ts` (`toDoubleEntry`·`net`·`isBalanced`
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)`
+- `@standard ISO 20022: debtor/creditor are the two signs of ONE transfer`
+
+
 - IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
 - FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation
 - ISO 20022: debtor/creditor are the two signs of ONE transfer

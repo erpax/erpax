@@ -97,6 +97,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: one record per employee performance cycle — self-assessment plus manager review, competency ratings, and merit/promotion recommendations, processed under GDPR; a single-folder collection node (no scatter, no drift).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISO-8601-1:2019 date-time
 - GDPR Art.5 PII processing
 - EU Equal Treatment Directive 2000/78

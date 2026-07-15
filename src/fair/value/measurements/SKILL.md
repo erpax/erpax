@@ -121,6 +121,17 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-13 §9 fair-value-definition`
+- `@standard IFRS IFRS-13 §72 fair-value-hierarchy-three-levels`
+- `@standard IFRS IFRS-13 §76 level-1-quoted-prices`
+- `@standard IFRS IFRS-13 §81 level-2-observable-inputs`
+- `@standard IFRS IFRS-13 §86 level-3-unobservable-inputs`
+- `@standard IFRS IFRS-13 §93 disclosure-requirements`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time measurement-date`
+
 - IFRS IFRS-13 §9 fair-value-definition
 - IFRS IFRS-13 §72 fair-value-hierarchy-three-levels
 - IFRS IFRS-13 §76 level-1-quoted-prices

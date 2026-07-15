@@ -106,6 +106,11 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 14064-1:2018 organisation-level-ghg-quantification`
+- `@standard ISO 14067:2018 carbon-footprint-of-products`
+
 - ISO 14064-1:2018 organisation-level-ghg-quantification
 - ISO 14067:2018 carbon-footprint-of-products
 - GHG Protocol Corporate Standard (revised 2015)

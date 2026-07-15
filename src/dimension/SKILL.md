@@ -351,3 +351,9 @@ Nearing the 0 does **not** blow up. Because emergence *is* compression, dividing
 - A prefixed collection (`bank-transactions`, `supto-sales`) — an un-collapsed dimension; merge to the bare coordinate + a `kind`/tag axis.
 - One concept scattered across N coordinates by a dimension value (customers/vendors) — one coordinate, the value as context.
 - Baking a dimension into a name (`monthlyUSD`) instead of carrying it as a field/tag/type axis.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C Web Components composition pattern`
+- `@standard ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries`

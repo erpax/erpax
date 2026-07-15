@@ -120,6 +120,11 @@ Matter-twin: `src/services/exchange/index.ts` (`Party`·`ExchangeRequest`·`Exch
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)`
+- `@standard GDPR Art.5(1)(c) data-minimisation (release only the granted fields)`
+
+
 - ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)
 - GDPR Art.5(1)(c) data-minimisation (release only the granted fields)
 
