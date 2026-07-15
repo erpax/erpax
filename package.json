@@ -16,7 +16,7 @@
     "prepare": "node scripts/setup-env.mjs --if-needed && husky",
     "setup": "node scripts/setup-env.mjs",
     "check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/cli/index.ts gate",
-    "erpax": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/cli/index.ts",
+    "erpax": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=tsx/esm\" tsx src/cli/index.ts",
     "readme:waves": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts",
     "readme:check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts",
     "rules:check": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/legacy-shim.ts",

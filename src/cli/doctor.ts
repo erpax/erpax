@@ -179,7 +179,7 @@ export function runDoctorStalls(): number {
  * Computes once, seals node_modules/.cache/erpax/audit.json — the matrix is the cache. */
 export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<number> {
   const all = await import('@/collections')
-  const { auditCorpus, foldCollectionLifecycle } = await import('@/factory/collection-factory')
+  const { auditCorpus, foldCollectionLifecycle, ROSETTA_BASELINE } = await import('@/factory/collection-factory')
   const { theoremReceipts } = await import('@/standards/registry')
   const configs = Object.values(all)
     .filter(
@@ -204,15 +204,23 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   for (const c of audit.collapseClusters.slice(0, 5)) {
     console.log(`    ${c.members.length} × {${c.signature}} — e.g. ${c.members.slice(0, 3).join(', ')}`)
   }
+  // Fail-closed ratchet — the enforcement the SKILL named as debt: reports became a GATE.
+  const grew = audit.collections > ROSETTA_BASELINE.collections || audit.signatures > ROSETTA_BASELINE.signatures
+  if (grew) {
+    console.error(
+      `✖ rosetta ratchet — basis GREW past baseline (collections ${audit.collections}/${ROSETTA_BASELINE.collections} · signatures ${audit.signatures}/${ROSETTA_BASELINE.signatures}). A new collection must fold an existing one down, not add scatter.`,
+    )
+    return 1
+  }
+  console.log(
+    `  ✓ rosetta ratchet — within baseline (${audit.collections}/${ROSETTA_BASELINE.collections} collections · ${audit.signatures}/${ROSETTA_BASELINE.signatures} signatures).`,
+  )
   return 0
 }
 
-export function runDoctor(cwd: string = process.cwd(), sub?: string): number {
+export function runDoctor(cwd: string = process.cwd(), sub?: string): number | Promise<number> {
   if (sub === 'stalls') return runDoctorStalls()
-  if (sub === 'corpus') {
-    void runDoctorCorpus(cwd).then((code) => process.exit(code))
-    return 0
-  }
+  if (sub === 'corpus') return runDoctorCorpus(cwd)
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
   try {

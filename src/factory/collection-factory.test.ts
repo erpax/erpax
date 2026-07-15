@@ -19,7 +19,7 @@ import type { CollectionDiamondModel } from '@/diamond'
 import type { Field } from 'payload'
 import {
   createAccountingCollection, COLLECTION_DIAMOND_KEY,
-  collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus,
+  collectionSignature, shapeCatalogue, shapeRatchetVerdict, auditCorpus, ROSETTA_BASELINE,
   deriveLifecycleEmits, foldCollectionLifecycle,
 } from './collection-factory'
 import { verifyDiamond, diamondUuid } from '@/diamond'
@@ -262,6 +262,18 @@ describe('factory — rosetta shape basis (the 9-axis fold)', () => {
     expect(cat.basisOccupancy).toBe(2)
     expect(shapeRatchetVerdict(cat, { collections: 3, signatures: 2 }).ok).toBe(true)
     expect(shapeRatchetVerdict(cat, { collections: 3, signatures: 1 }).ok).toBe(false)
+  })
+
+  it('ROSETTA_BASELINE is the sealed ratchet line doctor corpus fails closed on', () => {
+    expect(ROSETTA_BASELINE.collections).toBeGreaterThan(0)
+    expect(ROSETTA_BASELINE.signatures).toBeGreaterThan(0)
+    // growth past the baseline must fail the ratchet (the gate doctor corpus exits 1 on).
+    const grown = shapeCatalogue(
+      Array.from({ length: ROSETTA_BASELINE.collections + 1 }, (_, i) =>
+        cfg(`c${i}`, [{ name: `f${i}`, type: 'text' }] as Field[]),
+      ),
+    )
+    expect(grown.collections > ROSETTA_BASELINE.collections).toBe(true)
   })
 
   it('deriveLifecycleEmits computes created + per-status producers from a status select', () => {

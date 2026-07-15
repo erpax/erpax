@@ -656,6 +656,14 @@ export function shapeRatchetVerdict(
   }
 }
 
+/**
+ * The sealed rosetta ratchet line (2026-07-15): the corpus must never GROW past this —
+ * a new collection is warranted only by folding an existing one down (the 217→9 telos),
+ * so both ceilings ratchet DOWN over time, never up. `erpax doctor corpus` fails closed
+ * on any growth. Lower these numbers in the same diff that folds a collection away.
+ */
+export const ROSETTA_BASELINE = { collections: 210, signatures: 38 } as const
+
 export interface CollapseCluster {
   readonly signature: string
   readonly members: readonly string[]

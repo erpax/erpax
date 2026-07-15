@@ -34,7 +34,7 @@ function resolveLegacyColon(domain: string, action?: string): { modern: string; 
   return { modern, argv: parts }
 }
 
-export function runCli(argv: readonly string[]): number {
+export function runCli(argv: readonly string[]): number | Promise<number> {
   const wantsHelp = argv.includes('--help') || argv.includes('-h')
   const [rawDomain, action, ...rest] = argv.filter((a) => a !== '--help' && a !== '-h')
 
@@ -96,7 +96,10 @@ export function runCli(argv: readonly string[]): number {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  process.exit(runCli(process.argv.slice(2)))
+  // Await async subcommands (doctor corpus) before exit — a sync process.exit here
+  // would kill the process before the promise resolves (the bug that made doctor
+  // corpus silently no-op: it returned 0 without ever running).
+  void Promise.resolve(runCli(process.argv.slice(2))).then((code) => process.exit(code))
 }
 
 export { GATE_LANES, agentWorkApproved, packageApprovalMatrix } from './gate'
