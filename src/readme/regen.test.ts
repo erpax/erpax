@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { expandRegenScopes } from './regen'
-import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan } from './compute'
+import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan, foldPlan } from './compute'
 
 describe('readme/regen — focused face regen', () => {
   it('expands a known atom scope', () => {
@@ -66,6 +66,35 @@ describe('readme — atom basis scan (generators vs rosetta combinations)', () =
       expect(b.vocabOnly).toBe(1)
       expect(b.barrelOnly).toBe(1)
       expect(b.combinationShare).toBeCloseTo(0.75)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('readme — fold plan (safe foldable families)', () => {
+  it('finds ≥2-member enum and compound families, ignores singletons and referenced', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-fold-'))
+    const atom = (name: string, skill = `# ${name}`) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      writeFileSync(join(cwd, 'src', name, 'SKILL.md'), skill)
+    }
+    try {
+      // parents + components
+      atom('rate'); atom('it'); atom('social'); atom('sport')
+      // enum family: rate10, rate25 (rate ⊕ code)
+      atom('rate10'); atom('rate25')
+      // compound family: itsocial, itsport (it ⊕ atom)
+      atom('itsocial'); atom('itsport')
+      // singleton (only one member) — not a family
+      atom('rate99')  // rate ⊕ 99 but rate already has 10,25 → joins rate enum (3 members)
+      const fams = foldPlan(cwd)
+      const rate = fams.find((f) => f.parent === 'rate')
+      const it = fams.find((f) => f.parent === 'it')
+      expect(rate?.kind).toBe('enum')
+      expect(rate?.members.length).toBe(3) // rate10, rate25, rate99
+      expect(it?.kind).toBe('compound')
+      expect([...(it?.members ?? [])].sort()).toEqual(['itsocial', 'itsport'])
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }

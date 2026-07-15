@@ -1596,6 +1596,90 @@ export function atomBasisScan(cwd: string = process.cwd()): AtomBasis {
   }
 }
 
+export interface FoldFamily {
+  readonly parent: string
+  readonly kind: 'enum' | 'compound'
+  readonly members: readonly string[]
+}
+
+const REF_RE = /@\/([a-zA-Z0-9/_-]+)/g
+const WIKI_RE = /\[\[([a-zA-Z0-9/_-]+)\]\]/g
+
+/**
+ * Fold plan — the reused fold-manifest computation ([[rules]] rosetta · the fold algebra
+ * on names). A safe foldable family is a parent atom with ≥2 orphaned children whose leaf
+ * is `parent ⊕ suffix`: an ENUM child (digit-code suffix, e.g. `percentile10`) or a
+ * COMPOUND child (suffix is another existing atom, e.g. `itcooperative` = `it⊕cooperative`).
+ * The ≥2-member rule + code/atom suffix make it dictionary-free and false-positive-safe
+ * (a real word almost never has ≥2 orphaned namespace children). Read-only — deletion stays
+ * human-confirmed. This replaces the throwaway research scripts of 2026-07-15.
+ */
+export function foldPlan(cwd: string = process.cwd()): readonly FoldFamily[] {
+  const root = join(cwd, SRC)
+  const leafOf = new Map<string, string>() // atomPath -> leaf
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    const names = entries.filter((e) => e.isFile()).map((e) => e.name)
+    if (names.includes('SKILL.md') || names.includes('index.ts')) {
+      const ap = relative(root, dir).replace(/\\/g, '/')
+      leafOf.set(ap, ap.split('/').pop() ?? ap)
+    }
+    for (const e of entries) if (e.isDirectory() && e.name !== 'node_modules') walk(join(dir, e.name))
+  }
+  walk(root)
+  const vocab = new Set(leafOf.values())
+  // inbound references — an atom is orphaned when nothing imports its path or links its leaf
+  const refs = new Set<string>()
+  const links = new Set<string>()
+  const scan = (dir: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      const p = join(dir, e.name)
+      if (e.isDirectory() && e.name !== 'node_modules') scan(p)
+      else if (e.isFile() && e.name !== 'skills.index.ts' && /\.(ts|tsx|md)$/.test(e.name)) {
+        let t = ''
+        try {
+          t = readFileSync(p, 'utf8')
+        } catch {
+          continue
+        }
+        for (const m of t.matchAll(REF_RE)) refs.add(m[1]!)
+        for (const m of t.matchAll(WIKI_RE)) links.add(m[1]!.split('/').pop()!)
+      }
+    }
+  }
+  scan(root)
+  const orphan = (ap: string, leaf: string): boolean =>
+    ![...refs].some((r) => r === ap || r.startsWith(ap + '/')) && !links.has(leaf)
+  const enumF = new Map<string, string[]>()
+  const compF = new Map<string, string[]>()
+  for (const [ap, leaf] of leafOf) {
+    if (!orphan(ap, leaf)) continue
+    for (let i = leaf.length - 1; i >= 2; i--) {
+      const parent = leaf.slice(0, i)
+      const suf = leaf.slice(i)
+      if (!vocab.has(parent) || parent === leaf) continue
+      if (/^\d[a-z0-9]*$/.test(suf)) enumF.set(parent, [...(enumF.get(parent) ?? []), leaf])
+      else if (vocab.has(suf)) compF.set(parent, [...(compF.get(parent) ?? []), leaf])
+      break
+    }
+  }
+  const out: FoldFamily[] = []
+  for (const [parent, members] of enumF) if (members.length >= 2) out.push({ parent, kind: 'enum', members })
+  for (const [parent, members] of compF) if (members.length >= 2) out.push({ parent, kind: 'compound', members })
+  return out.sort((a, b) => b.members.length - a.members.length)
+}
+
 /** Derive folder README model — frozen typography graph + receipt chain (write ≡ verify). */
 export function deriveFolderReadme(
   atomPath: string,
