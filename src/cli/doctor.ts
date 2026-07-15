@@ -215,10 +215,14 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   console.log(
     `  ✓ rosetta ratchet — within baseline (${audit.collections}/${ROSETTA_BASELINE.collections} collections · ${audit.signatures}/${ROSETTA_BASELINE.signatures} signatures).`,
   )
-  const { atomBasisScan, foldPlan, standardsDimensions } = await import('@/readme/compute')
+  const { atomBasisScan, foldPlan, standardsDimensions, proseDecode } = await import('@/readme/compute')
   const b = atomBasisScan(cwd)
   console.log(
     `  atom basis — ${b.basis} generators (keep) · ${b.combinations} combinations (${(b.combinationShare * 100).toFixed(0)}% derivable: ${b.vocabOnly} prose · ${b.barrelOnly} barrel · ${b.composeNoLogic} compose) of ${b.atoms} atoms.`,
+  )
+  const pd = proseDecode(cwd)
+  console.log(
+    `  prose decode — ${pd.boilerplate} boilerplate (foldable) · ${pd.unique} unique (keep) of ${pd.vocabOnly} prose${pd.candidates.length > 0 ? ` — e.g. ${pd.candidates.slice(0, 5).join(', ')}` : ''}`,
   )
   const families = foldPlan(cwd)
   const foldable = families.reduce((s, f) => s + f.members.length, 0)

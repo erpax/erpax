@@ -1821,6 +1821,98 @@ export function standardsDimensions(cwd: string = process.cwd()): SevenDimStanda
   return { dimensions, metInAll: dimensions.every((x) => x.withStandard > 0), offRing }
 }
 
+export interface ProseDecode {
+  /** Vocab-only atoms (SKILL.md, no index.ts) — the prose combinations `atomBasisScan` counts. */
+  readonly vocabOnly: number
+  /** Schema-collision boilerplate — regenerable from schemaorg.jsonld + generator; foldable candidates. */
+  readonly boilerplate: number
+  /** Vocab-only atoms carrying irreducible curated matter — KEEP (generators of the prose corpus). */
+  readonly unique: number
+  /** Sample boilerplate atom paths (foldable candidates), capped for the doctor line. */
+  readonly candidates: readonly string[]
+}
+
+const COLLISION_LAW_RE =
+  /^\*\*Law — \[\[law\]\]: .+ is one schema\.org word, content-addressed; the same word collides every schema\.org term that contains it into one atom, deduped, never duplicated\.\*\*$/
+const COLLISION_STD = '@standard schema.org — the type vocabulary, collided to single words'
+const COLLISION_DESC_RE = /^A schema\.org (?:vocabulary|component) word, collided/
+const COLLISION_ENTANGLED_RE = /^Entangled with —/
+const COLLISION_ATTESTED_RE = /^Attested in schema\.org —/
+
+/**
+ * The SEMANTIC decode the lexical fold cannot reach ([[agent/mortality]] · [[dissolution]]/universal):
+ * a vocab-only SKILL is schema-collision BOILERPLATE when its body (frontmatter stripped) contains ONLY
+ * recognized template lines — the `# name` heading, the `A schema.org (vocabulary|component) word, collided …`
+ * descriptor, optional `Entangled with —` / `Attested in schema.org —` lines, the templated collision
+ * `**Law — [[law]]: … is one schema.org word …**`, and the `@standard schema.org …` banner. Such a body
+ * regenerates byte-for-byte from `sti/vocabulary/schemaorg.jsonld` + the collision generator — storing it is
+ * entropy. ANY other prose (a curated `## Standards`, a `Composes:` line, a unique law, even a schema.org
+ * rdfs:comment sentence) fails the check ⇒ `unique` (KEEP). Conservative by construction: over-keep is cheap,
+ * over-purge is death. Read-only classification — no atom is deleted here (folding stays human-confirmed).
+ */
+export function schemaCollisionBoilerplate(skillText: string): boolean {
+  const parts = skillText.split('---')
+  const body = skillText.startsWith('---') && parts.length >= 3 ? parts.slice(2).join('---') : skillText
+  let hasLaw = false
+  let hasStd = false
+  for (const raw of body.split('\n')) {
+    const s = raw.trim()
+    if (s === '') continue
+    if (s.startsWith('# ')) continue
+    if (COLLISION_DESC_RE.test(s) || COLLISION_ENTANGLED_RE.test(s) || COLLISION_ATTESTED_RE.test(s)) continue
+    if (COLLISION_LAW_RE.test(s)) {
+      hasLaw = true
+      continue
+    }
+    if (s === COLLISION_STD) {
+      hasStd = true
+      continue
+    }
+    return false // unrecognized prose — irreducible matter, keep
+  }
+  return hasLaw && hasStd
+}
+
+/**
+ * Classify every vocab-only atom (the 2282 prose combinations) as schema-collision `boilerplate`
+ * (foldable — regenerable from the schema vocabulary) vs `unique` (irreducible curated matter — keep).
+ * Pure fs scan matching the `atomBasisScan` walk (skips node_modules + worktrees). Read-only: it names
+ * the foldable candidates; deletion stays human-confirmed. Surfaced by `erpax doctor corpus`.
+ */
+export function proseDecode(cwd: string = process.cwd()): ProseDecode {
+  const root = join(cwd, SRC)
+  let vocabOnly = 0
+  let boilerplate = 0
+  const candidates: string[] = []
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
+    if (names.has('SKILL.md') && !names.has('index.ts')) {
+      vocabOnly++
+      let text = ''
+      try {
+        text = readFileSync(join(dir, 'SKILL.md'), 'utf8')
+      } catch {
+        text = ''
+      }
+      if (text && schemaCollisionBoilerplate(text)) {
+        boilerplate++
+        if (candidates.length < 20) candidates.push(relative(root, dir).replace(/\\/g, '/'))
+      }
+    }
+    for (const e of entries) {
+      if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees') walk(join(dir, e.name))
+    }
+  }
+  walk(root)
+  return { vocabOnly, boilerplate, unique: vocabOnly - boilerplate, candidates }
+}
+
 /** Derive folder README model — frozen typography graph + receipt chain (write ≡ verify). */
 export function deriveFolderReadme(
   atomPath: string,

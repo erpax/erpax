@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { expandRegenScopes } from './regen'
-import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan, foldPlan, standardsDimensions } from './compute'
+import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan, foldPlan, standardsDimensions, proseDecode } from './compute'
 
 describe('readme/regen — focused face regen', () => {
   it('expands a known atom scope', () => {
@@ -140,6 +140,47 @@ describe('readme — 7-dimensional standards invariant', () => {
       expect(sd.dimensions.find((x) => x.ray === 'base')?.withStandard).toBe(1)
       expect(sd.dimensions.find((x) => x.ray === 'share')?.withStandard).toBe(0)
       expect(sd.metInAll).toBe(false) // only base has a standard
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+})
+
+describe('readme — prose decode (schema-collision boilerplate vs unique matter)', () => {
+  it('folds pure schema-collision templates, keeps curated matter and rdfs-comment atoms', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-prose-'))
+    const atom = (name: string, body: string) => {
+      mkdirSync(join(cwd, 'src', name), { recursive: true })
+      writeFileSync(join(cwd, 'src', name, 'SKILL.md'), `---\nname: ${name}\n---\n${body}`)
+    }
+    const collisionLaw = (n: string) =>
+      `**Law — [[law]]: ${n} is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**`
+    const stdLine = '@standard schema.org — the type vocabulary, collided to single words'
+    try {
+      // pure schema-collision boilerplate — regenerable, foldable
+      atom(
+        'sea',
+        `# sea\n\nA schema.org component word, collided out of schema.org compounds — fused from SeaBodyOfWater ([[sti]] · [[collapse]] · [[merge]]).\n\nEntangled with — [[body]] · [[water]]\n\nAttested in schema.org — SeaBodyOfWater\n\n${collisionLaw('sea')}\n\n${stdLine}`,
+      )
+      atom(
+        'declined',
+        `# declined\n\nA schema.org vocabulary word, collided from the schema.org compounds that contain it — PaymentDeclined ([[sti]] · [[collapse]] · [[merge]]).\n\n${collisionLaw('declined')}\n\n${stdLine}`,
+      )
+      // unique curated law + ## Standards section — KEEP
+      atom(
+        'tenure',
+        `# tenure\n\nUse when tracking employment duration, anniversaries, or vesting schedules.\n\nComposes: [[employees]] · [[time]].\n\n## Standards\n- IFRS-2 vesting schedules`,
+      )
+      // schema.org rdfs:comment description (templated law+banner but a non-template body line) — conservatively KEPT
+      atom(
+        'rxcui',
+        `# rxcui\n\nThe RxCUI drug identifier from RXNORM.\n\nEntangled with — [[thing]]\n\nAttested in schema.org — rxcui\n\n${collisionLaw('rxcui')}\n\n${stdLine}`,
+      )
+      const pd = proseDecode(cwd)
+      expect(pd.vocabOnly).toBe(4)
+      expect(pd.boilerplate).toBe(2) // sea + declined
+      expect(pd.unique).toBe(2) // tenure (curated) + rxcui (rdfs comment, conservatively kept)
+      expect([...pd.candidates].sort()).toEqual(['declined', 'sea'])
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
