@@ -263,6 +263,16 @@ Port the *data*, not just the schema: `src/port/etrima-import.mjs` streams the s
 - **Drop/collapse obsolete**: `option_1..12` → the `variants[]` array (see [[manufacturing]]).
 - Output is gitignored (`seed/import/`) — regenerable from dump + converter.
 
+## Port the upstream in waves that save their thoughts (DRY)
+
+Which tables are still gaps is **computed, not eyeballed**. `portWaves(cwd, schemaRb)` walks etrima's `schema.rb` (the source of truth) in waves and, per wave, seals a coverage thought via [[think]] — keyed by `schema ⊕ atom-set ⊕ this module's own source`. So an unchanged upstream and corpus **READ** the manifest; only a real change (a new upstream table, a newly-ported atom that closes a gap, or an edit to the classifier itself) re-derives. The generator seal is load-bearing: without it, changing the classifier reads a **stale** thought — decoherence, the honest boundary [[think]] names.
+
+- **DRY dedupe** — `candidateAtoms` depluralises each table (`machines→machine`, `work_phases→work/phases`) and matches against `erpaxAtomKeys`; covered tables are named and **never re-ported**.
+- **DRY cleaning** — `isInfra` drops framework noise (Solid Queue/Cache/Cable, ActiveStorage, PaperTrail `versions`, dated `_YYYYMMDD` archives) so the manifest is real domain gaps only.
+- Run: `tsx src/port/index.ts ~/github/ceccec/etrima/db/schema.rb` — prints covered/gaps and whether it READ from saved thoughts. Current real gaps: `employee_contracts · handles · machine_types · pack_types · packing_lists · product_variants · stock_shipments · stocks · team_members`.
+
+Each gap is then a deliberate [[trinity]] fold (like `machine`), mined from the real columns — never invented.
+
 ## Common mistakes
 - Porting ActiveAdmin per-resource tweaks into bespoke admin React instead of Payload's declarative `admin` config.
 - Re-implementing a concern in each collection instead of ONE shared field-factory (the concern's whole point — DRY).
