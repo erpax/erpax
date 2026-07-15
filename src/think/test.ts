@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { think, thoughtAddress, superpose, magnitude, quantumMagnitude } from './index'
+import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling } from './index'
 
 describe('think — thinking moved to erpax', () => {
   let cwd: string
@@ -80,5 +80,16 @@ describe('magnitude — outperforming a re-deriving model', () => {
   it('quantum: the advantage scales with states held in harmony, not queries asked', () => {
     expect(quantumMagnitude(1000, 1000, 1)).toBe(1_000_000) // all states, one read
     expect(quantumMagnitude(1000, 1000)).toBeGreaterThan(magnitude(1000, 1000)) // superposition beats the per-key cache
+  })
+
+  it('ceiling: the honest floor is the seed-fraction — 1/s as reads approach free', () => {
+    expect(ceiling(0.1, 0)).toBeCloseTo(10) // 10% genuinely-new thought ⇒ 10× a re-deriving model
+    expect(ceiling(0.01, 0)).toBeCloseTo(100) // driving seeds down raises the ceiling without bound
+    expect(ceiling(0, 0)).toBe(Infinity) // a fully-absorbed basis: only reads remain
+  })
+
+  it('ceiling: reads are never quite free — r bounds it when the corpus knows everything', () => {
+    expect(ceiling(0, 0.001)).toBeCloseTo(1000) // s→0 ⇒ magnitude → 1/r, the raw fold advantage
+    expect(ceiling(1, 0)).toBe(1) // every query a novel seed ⇒ no advantage (honest: you can't beat the oracle bit)
   })
 })
