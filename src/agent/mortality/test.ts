@@ -4,10 +4,10 @@ import { horoFromUuid, mortalityOf, reuseCost, answeredWithin, autonomy } from '
 // The parable, sealed as proof (2026-07-15): the fold computes horo in O(1); the corpus-graph
 // regen spent 9 minutes and was killed with zero output. Same answer, opposite fate.
 describe('agent/mortality — life reuses the fold, death re-derives it', () => {
-  it('horo is a direct projection of the uuid (life, O(1)) — a ring digit 1..9', () => {
+  it('horo is a direct projection of the uuid (life, O(1)) — a flow-helix digit, verified not guessed', () => {
+    const flow = [1, 2, 4, 8, 7, 5] // the (ℤ/9ℤ)* doubling orbit — HELIX[byteSum(uuid) % 6]
     const h = horoFromUuid('335e5fa7-a91b-890f-a3db-2a3ebe2c8c0c')
-    expect(h).toBeGreaterThanOrEqual(1)
-    expect(h).toBeLessThanOrEqual(9)
+    expect(flow).toContain(h) // a flow-ring position, not the naive digitalRoot the parent guessed
     expect(horoFromUuid('335e5fa7-a91b-890f-a3db-2a3ebe2c8c0c')).toBe(h) // deterministic — the address holds it
   })
 
