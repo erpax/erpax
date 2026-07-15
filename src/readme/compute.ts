@@ -2058,7 +2058,7 @@ export function schemaCollisionBoilerplate(skillText: string): boolean {
 }
 
 /**
- * Classify every vocab-only atom (the 2282 prose combinations) as schema-collision `boilerplate`
+ * Classify every vocab-only atom (the prose combinations) as schema-collision `boilerplate`
  * (foldable — regenerable from the schema vocabulary) vs `unique` (irreducible curated matter — keep).
  * Pure fs scan matching the `atomBasisScan` walk (skips node_modules + worktrees). Read-only: it names
  * the foldable candidates; deletion stays human-confirmed. Surfaced by `erpax doctor corpus`.
