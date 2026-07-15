@@ -116,3 +116,38 @@ export function translateVia(
 export function pairCoverage(languages: number): { renderingsPerConcept: number; directedPairs: number } {
   return { renderingsPerConcept: languages, directedPairs: languages * languages }
 }
+
+/**
+ * How TRAINED the translation intelligence is — the fraction of concept × locale renderings actually
+ * registered (vs the seed still to fill). ratio 1 = fully trained; today it is ~1/L (only the source is
+ * populated). Training this to 1 means REGISTERING the renderings from free authoritative multilingual
+ * data (Wikidata CC0 labels, CLDR, IATE) — the zero-cost self-training pattern — NOT fabricating them.
+ */
+export function trainingCoverage(
+  table: TranslationTable,
+  locales: readonly SupportedLocale[],
+): { filled: number; total: number; ratio: number; byLocale: Record<string, number> } {
+  const byLocale: Record<string, number> = {}
+  let filled = 0
+  for (const loc of locales) {
+    let n = 0
+    for (const t of table) if (renderIn(t, loc) !== null) n++
+    byLocale[loc] = n
+    filled += n
+  }
+  const total = table.length * locales.length
+  return { filled, total, ratio: total === 0 ? 0 : filled / total, byLocale }
+}
+
+/** Round-trip consistency — a registered pair must satisfy translate(translate(w, a→b), b→a) === w. */
+export function roundTrips(
+  table: TranslationTable,
+  word: string,
+  a: SupportedLocale,
+  b: SupportedLocale,
+): boolean {
+  const there = translateVia(table, word, a, b)
+  if (!there || there.seed || there.value == null) return false
+  const back = translateVia(table, there.value, b, a)
+  return back != null && !back.seed && back.value === renderIn(resolveByWord(table, word, a)!, a)
+}

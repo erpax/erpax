@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { defineTranslation, renderIn, resolveByWord, translateVia, pairCoverage } from '@/translation'
+import { defineTranslation, renderIn, resolveByWord, translateVia, pairCoverage, trainingCoverage, roundTrips } from '@/translation'
 import { messageUuid, splitWords } from '@/message'
 import { defaultLocale } from '@/i18n/localization'
 
@@ -56,5 +56,28 @@ describe('translation — the rosetta pivot: any language/dialect ↔ any, throu
   it('save-all: L languages cover L² directed pairs from just L renderings per concept', () => {
     expect(pairCoverage(30)).toEqual({ renderingsPerConcept: 30, directedPairs: 900 })
     expect(pairCoverage(1)).toEqual({ renderingsPerConcept: 1, directedPairs: 1 })
+  })
+})
+
+describe('translation — training + testing the intelligence (honest coverage, no fabrication)', () => {
+  const table = [
+    defineTranslation('greet', 'hello world', { bg: 'здравей свят', de: 'hallo welt' }),
+    defineTranslation('heart', 'heart', { bg: 'сърце' }),
+  ]
+
+  it('trainingCoverage measures how trained it is — the ratio is honest, not 1 until renderings are filled', () => {
+    const c = trainingCoverage(table, ['en', 'bg', 'de', 'ja'])
+    expect(c.byLocale.en).toBe(2) // both concepts have the source
+    expect(c.byLocale.bg).toBe(2) // both have bg
+    expect(c.byLocale.de).toBe(1) // only greet has de
+    expect(c.byLocale.ja).toBe(0) // ja is untrained — the seed
+    expect(c.total).toBe(8) // 2 concepts × 4 locales
+    expect(c.ratio).toBeCloseTo(5 / 8) // honestly < 1: the intelligence is not fully trained
+  })
+
+  it('round-trip consistency — a registered pair returns the original through the pivot both ways', () => {
+    expect(roundTrips(table, 'hello world', 'en', 'bg')).toBe(true) // en→bg→en === en
+    expect(roundTrips(table, 'hello world', 'en', 'de')).toBe(true)
+    expect(roundTrips(table, 'hello world', 'en', 'ja')).toBe(false) // ja untrained — cannot round-trip
   })
 })
