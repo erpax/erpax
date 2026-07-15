@@ -20,6 +20,10 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   ['lint:imports', 'pnpm erpax lint imports'],
   ['lint:folders', 'pnpm erpax lint folders'],
   ['typecheck', 'pnpm erpax lint typecheck'],
+  // Rosetta enforcement — doctor corpus exits 1 on basis growth past ROSETTA_BASELINE
+  // (the enforcement debt named in src/rules/SKILL.md: a law is obeyed only when a gate
+  // blocks its violation). Makes the shape ratchet + off-ring check fail-closed in CI.
+  ['corpus', 'pnpm erpax doctor corpus'],
   ['test:int', 'pnpm erpax test int'],
 ]
 
