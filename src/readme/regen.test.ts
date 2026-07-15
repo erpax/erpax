@@ -1,9 +1,19 @@
 import { describe, it, expect } from 'vitest'
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync, readFileSync, existsSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { expandRegenScopes } from './regen'
-import { corpusFoldRoot, readCorpusFoldReceipt, sealCorpusFold, atomBasisScan, foldPlan, standardsDimensions, proseDecode } from './compute'
+import {
+  corpusFoldRoot,
+  readCorpusFoldReceipt,
+  sealCorpusFold,
+  atomBasisScan,
+  foldPlan,
+  standardsDimensions,
+  proseDecode,
+  schemaCollision,
+  schemaCollisionRegenerable,
+} from './compute'
 
 describe('readme/regen — focused face regen', () => {
   it('expands a known atom scope', () => {
@@ -157,15 +167,23 @@ describe('readme — prose decode (schema-collision boilerplate vs unique matter
       `**Law — [[law]]: ${n} is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**`
     const stdLine = '@standard schema.org — the type vocabulary, collided to single words'
     try {
-      // pure schema-collision boilerplate — regenerable, foldable
-      atom(
-        'sea',
-        `# sea\n\nA schema.org component word, collided out of schema.org compounds — fused from SeaBodyOfWater ([[sti]] · [[collapse]] · [[merge]]).\n\nEntangled with — [[body]] · [[water]]\n\nAttested in schema.org — SeaBodyOfWater\n\n${collisionLaw('sea')}\n\n${stdLine}`,
+      // a fixture jsonld so the collision generator has a real source to regenerate FROM:
+      // SeaBodyOfWater (a class → `sea` component word) + PaymentDeclined (an enum value → `declined`
+      // vocabulary word). The gate PROVES regenerability; it does not assert it.
+      mkdirSync(join(cwd, 'src', 'sti', 'vocabulary'), { recursive: true })
+      writeFileSync(
+        join(cwd, 'src', 'sti', 'vocabulary', 'schemaorg.jsonld'),
+        JSON.stringify({
+          '@graph': [
+            { '@id': 'schema:SeaBodyOfWater', '@type': 'rdfs:Class' },
+            { '@id': 'schema:PaymentDeclined', '@type': 'schema:PaymentStatusType' },
+          ],
+        }),
       )
-      atom(
-        'declined',
-        `# declined\n\nA schema.org vocabulary word, collided from the schema.org compounds that contain it — PaymentDeclined ([[sti]] · [[collapse]] · [[merge]]).\n\n${collisionLaw('declined')}\n\n${stdLine}`,
-      )
+      // pure schema-collision boilerplate — bodies emitted BY the generator (round-trip proof)
+      const gen = schemaCollision(cwd)
+      atom('sea', gen.bodyOf('sea')!.trimEnd())
+      atom('declined', gen.bodyOf('declined')!.trimEnd())
       // unique curated law + ## Standards section — KEEP
       atom(
         'tenure',
@@ -176,13 +194,33 @@ describe('readme — prose decode (schema-collision boilerplate vs unique matter
         'rxcui',
         `# rxcui\n\nThe RxCUI drug identifier from RXNORM.\n\nEntangled with — [[thing]]\n\nAttested in schema.org — rxcui\n\n${collisionLaw('rxcui')}\n\n${stdLine}`,
       )
+      // the generator reproduces the exact committed shapes
+      expect(gen.bodyOf('sea')).toContain('component word, collided out of schema.org compounds — fused from SeaBodyOfWater')
+      expect(gen.bodyOf('sea')).toContain('Entangled with — [[body]] · [[water]]')
+      expect(gen.bodyOf('declined')).toContain('vocabulary word, collided from the schema.org compounds that contain it — PaymentDeclined')
       const pd = proseDecode(cwd)
       expect(pd.vocabOnly).toBe(4)
       expect(pd.boilerplate).toBe(2) // sea + declined
+      expect(pd.regenerable).toBe(2) // both round-trip byte-for-byte — PROVEN foldable
       expect(pd.unique).toBe(2) // tenure (curated) + rxcui (rdfs comment, conservatively kept)
       expect([...pd.candidates].sort()).toEqual(['declined', 'sea'])
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
+  })
+
+  it('proves ≥10 committed boilerplate atoms regenerate byte-for-byte from the real schema.org source', () => {
+    const cwd = process.cwd()
+    // skip only if the real corpus is absent (isolated CI checkout) — never silently pass on drift
+    if (!existsSync(join(cwd, 'src', 'sti', 'vocabulary', 'schemaorg.jsonld'))) return
+    const sample = [
+      'abdomen', 'right', 'sold', 'studio', 'unlimited', 'western', // enum vocabulary words
+      'acceleration', 'seek', 'footer', 'sd', 'business', 'format', // class/property component words
+    ]
+    const proven = sample.filter((w) => {
+      const p = join(cwd, 'src', w, 'SKILL.md')
+      return existsSync(p) && schemaCollisionRegenerable(w, readFileSync(p, 'utf8'), cwd)
+    })
+    expect(proven.length).toBeGreaterThanOrEqual(10)
   })
 })

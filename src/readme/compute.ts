@@ -1824,8 +1824,10 @@ export function standardsDimensions(cwd: string = process.cwd()): SevenDimStanda
 export interface ProseDecode {
   /** Vocab-only atoms (SKILL.md, no index.ts) — the prose combinations `atomBasisScan` counts. */
   readonly vocabOnly: number
-  /** Schema-collision boilerplate — regenerable from schemaorg.jsonld + generator; foldable candidates. */
+  /** Schema-collision boilerplate — shape-classified candidates (a superset of `regenerable`). */
   readonly boilerplate: number
+  /** Boilerplate atoms PROVEN foldable — the generator emits their body byte-for-byte (earned, not asserted). */
+  readonly regenerable: number
   /** Vocab-only atoms carrying irreducible curated matter — KEEP (generators of the prose corpus). */
   readonly unique: number
   /** Sample boilerplate atom paths (foldable candidates), capped for the doctor line. */
@@ -1838,6 +1840,188 @@ const COLLISION_STD = '@standard schema.org — the type vocabulary, collided to
 const COLLISION_DESC_RE = /^A schema\.org (?:vocabulary|component) word, collided/
 const COLLISION_ENTANGLED_RE = /^Entangled with —/
 const COLLISION_ATTESTED_RE = /^Attested in schema\.org —/
+
+// ── the collision generator, restored (the single source both `--emit` and the gate reuse) ──
+// A schema.org label is split at its word boundaries (camelCase / digit joins) into TRUE single
+// words; the same word across labels MERGES into one atom. Two passes reproduce the committed body
+// byte-for-byte: (1) NARROW terms — rdfs:Class · rdf:Property · schema:DataType — build the
+// `forms`/`co`/`concept` of a "component word"; (2) ENUM values (instances of a schema class) mint a
+// "vocabulary word" atom ONLY for words the narrow pass never covered (e.g. `abdomen` ← `Abdomen`,
+// `sold` ← `SoldOut`). A word carrying a single-word rdfs:comment renders that comment (the `unique`
+// shape, kept — not boilerplate). Drifted at 6e4befbbb; this restores it so "foldable" is EARNED by
+// a byte-for-byte proof (`schemaCollisionRegenerable`), never asserted by a shape classifier alone.
+const COLLISION_STOP = new Set<string>([
+  'the', 'a', 'an', 'of', 'and', 'or', 'to', 'in', 'on', 'for', 'by', 'with', 'from', 'at', 'as', 'is', 'be', 'per', 'via', 'this', 'that',
+])
+const collisionWordsOf = (label: string): string[] =>
+  label
+    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+    .replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2')
+    .replace(/([a-zA-Z])([0-9])/g, '$1 $2')
+    .replace(/([0-9])([a-zA-Z])/g, '$1 $2')
+    .split(/[\s_-]+/)
+    .map((w) => w.toLowerCase())
+    .filter((w) => /^[a-z][a-z0-9]*$/.test(w) && w.length >= 2 && !COLLISION_STOP.has(w))
+const collisionClean = (s: string): string =>
+  s
+    .replace(/\[\[([^[\]]+)\]\]/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+interface CollisionNode {
+  '@id'?: unknown
+  '@type'?: unknown
+  'rdfs:label'?: unknown
+  'rdfs:comment'?: unknown
+}
+const collisionStr = (v: unknown): string => {
+  if (v == null) return ''
+  if (Array.isArray(v)) return collisionStr(v[0])
+  if (typeof v === 'string') return v
+  if (typeof v === 'object' && '@value' in (v as Record<string, unknown>))
+    return String((v as Record<string, unknown>)['@value'] ?? '')
+  return ''
+}
+const collisionHasType = (n: CollisionNode, t: string): boolean => {
+  const x = n['@type']
+  return x === t || (Array.isArray(x) && x.includes(t))
+}
+const collisionClassLike = (n: CollisionNode): boolean =>
+  typeof n['@id'] === 'string' &&
+  (n['@id'] as string).startsWith('schema:') &&
+  (collisionHasType(n, 'rdfs:Class') || collisionHasType(n, 'rdf:Property') || collisionHasType(n, 'schema:DataType'))
+const collisionEnumValue = (n: CollisionNode): boolean => {
+  if (typeof n['@id'] !== 'string' || !(n['@id'] as string).startsWith('schema:')) return false
+  const x = n['@type']
+  const types = Array.isArray(x) ? x : [x]
+  return types.some((t) => typeof t === 'string' && t.startsWith('schema:'))
+}
+const collisionLabelOf = (n: CollisionNode): string =>
+  collisionStr(n['rdfs:label']) || String(n['@id']).replace(/^schema:/, '')
+
+export interface SchemaCollision {
+  /** Canonical SKILL.md body (frontmatter-free) for a collided word, or `undefined` if not minted. */
+  bodyOf(word: string): string | undefined
+  /** Every minted word — narrow component words plus enum-only vocabulary words. */
+  readonly words: ReadonlySet<string>
+}
+
+let cachedCollision: SchemaCollision | null = null
+let cachedCollisionCwd: string | undefined
+
+/**
+ * Build the schema.org collision — the ONE source the emit generator (`sti/vocabulary`) and the
+ * regenerability gate both reuse. Pure over `sti/vocabulary/schemaorg.jsonld`; deterministic (Map/Set
+ * iteration follows graph order, so `forms`/`co`/`Entangled`/`Attested` ordering is stable). Cached per
+ * cwd. Absent file (isolated test cwd) ⇒ empty collision (`bodyOf` returns undefined for every word).
+ */
+export function schemaCollision(cwd: string = process.cwd()): SchemaCollision {
+  if (cachedCollision && cachedCollisionCwd === cwd) return cachedCollision
+  const concept = new Map<string, string>()
+  const co = new Map<string, Set<string>>()
+  const forms = new Map<string, Set<string>>()
+  const narrowWords = new Set<string>()
+  const enumForm = new Map<string, Set<string>>()
+  let graph: CollisionNode[] = []
+  try {
+    graph =
+      (JSON.parse(readFileSync(join(cwd, SRC, 'sti', 'vocabulary', 'schemaorg.jsonld'), 'utf8')) as {
+        '@graph'?: CollisionNode[]
+      })['@graph'] ?? []
+  } catch {
+    graph = []
+  }
+  for (const n of graph) {
+    if (!collisionClassLike(n)) continue
+    const label = collisionLabelOf(n)
+    const words = collisionWordsOf(label)
+    if (!words.length) continue
+    if (words.length === 1) {
+      const c = collisionClean(collisionStr(n['rdfs:comment']))
+      if (c && !concept.has(words[0])) concept.set(words[0], c)
+    }
+    for (const w of words) {
+      narrowWords.add(w)
+      const f = forms.get(w) ?? new Set<string>()
+      f.add(label)
+      forms.set(w, f)
+      const cs = co.get(w) ?? new Set<string>()
+      for (const o of words) if (o !== w) cs.add(o)
+      co.set(w, cs)
+    }
+  }
+  for (const n of graph) {
+    if (collisionClassLike(n) || !collisionEnumValue(n)) continue
+    const words = collisionWordsOf(collisionLabelOf(n))
+    if (!words.length) continue
+    for (const w of words) {
+      if (narrowWords.has(w)) continue // already a component word — enum forms are not merged in
+      const s = enumForm.get(w) ?? new Set<string>()
+      s.add(collisionLabelOf(n))
+      enumForm.set(w, s)
+    }
+  }
+  const words = new Set<string>([...narrowWords, ...enumForm.keys()])
+  const valid = (k: string): boolean => words.has(k)
+  const linksOf = (ws: ReadonlySet<string> | undefined, cap: number): string =>
+    [...(ws ?? new Set<string>())].filter(valid).slice(0, cap).map((k) => `[[${k}]]`).join(' · ')
+  const bodyOf = (w: string): string | undefined => {
+    if (!words.has(w)) return undefined
+    const def = concept.get(w)
+    const enumOnly = enumForm.has(w) && !narrowWords.has(w)
+    const ent = linksOf(co.get(w), 40)
+    const list = [...((enumOnly ? enumForm.get(w) : forms.get(w)) ?? [])]
+    const compounds = list.slice(0, 24).join(' · ')
+    const out: string[] = [`# ${w}`, '']
+    if (def) {
+      out.push(def, '')
+      if (ent) out.push(`Entangled with — ${ent}`, '')
+      if (compounds) out.push(`Attested in schema.org — ${compounds}`, '')
+    } else if (enumOnly) {
+      out.push(
+        `A schema.org vocabulary word, collided from the schema.org compounds that contain it — ${compounds} ([[sti]] · [[collapse]] · [[merge]]).`,
+        '',
+      )
+    } else {
+      out.push(
+        `A schema.org component word, collided out of schema.org compounds — fused from ${compounds || w} ([[sti]] · [[collapse]] · [[merge]]).`,
+        '',
+      )
+      if (ent) out.push(`Entangled with — ${ent}`, '')
+      if (compounds) out.push(`Attested in schema.org — ${compounds}`, '')
+    }
+    out.push(
+      `**Law — [[law]]: ${w} is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**`,
+      '',
+    )
+    out.push(COLLISION_STD, '')
+    return out.join('\n')
+  }
+  cachedCollision = { bodyOf, words }
+  cachedCollisionCwd = cwd
+  return cachedCollision
+}
+
+/** The frontmatter-free body of a SKILL.md, normalised for byte-for-byte comparison. */
+function collisionSkillBody(skillText: string): string {
+  const parts = skillText.split('---')
+  const body = skillText.startsWith('---') && parts.length >= 3 ? parts.slice(2).join('---') : skillText
+  return body.replace(/^\n+/, '').trimEnd() + '\n'
+}
+
+/**
+ * PROVE regenerability, not assert it: a boilerplate atom is `regenerable` only when the restored
+ * collision generator emits its on-disk body byte-for-byte. This is the gate that lets `foldable` be
+ * EARNED — Wave 5b may fold ONLY a word whose `bodyOf(word)` equals `collisionSkillBody(SKILL.md)`.
+ * Over-keep is cheap, over-purge is death: the ~85 words whose deleted-generator branch is irreducible
+ * stay non-regenerable ⇒ KEEP. One word's proof (undefined generator body ⇒ not regenerable).
+ */
+export function schemaCollisionRegenerable(word: string, skillText: string, cwd: string = process.cwd()): boolean {
+  const gen = schemaCollision(cwd).bodyOf(word)
+  return gen !== undefined && gen === collisionSkillBody(skillText)
+}
 
 /**
  * The SEMANTIC decode the lexical fold cannot reach ([[agent/mortality]] · [[dissolution]]/universal):
@@ -1881,8 +2065,10 @@ export function schemaCollisionBoilerplate(skillText: string): boolean {
  */
 export function proseDecode(cwd: string = process.cwd()): ProseDecode {
   const root = join(cwd, SRC)
+  const collision = schemaCollision(cwd)
   let vocabOnly = 0
   let boilerplate = 0
+  let regenerable = 0
   const candidates: string[] = []
   const walk = (dir: string): void => {
     let entries: Dirent[]
@@ -1902,7 +2088,10 @@ export function proseDecode(cwd: string = process.cwd()): ProseDecode {
       }
       if (text && schemaCollisionBoilerplate(text)) {
         boilerplate++
-        if (candidates.length < 20) candidates.push(relative(root, dir).replace(/\\/g, '/'))
+        const word = relative(root, dir).replace(/\\/g, '/')
+        const proven = collision.bodyOf(word) === collisionSkillBody(text)
+        if (proven) regenerable++
+        if (proven && candidates.length < 20) candidates.push(word)
       }
     }
     for (const e of entries) {
@@ -1910,7 +2099,7 @@ export function proseDecode(cwd: string = process.cwd()): ProseDecode {
     }
   }
   walk(root)
-  return { vocabOnly, boilerplate, unique: vocabOnly - boilerplate, candidates }
+  return { vocabOnly, boilerplate, regenerable, unique: vocabOnly - boilerplate, candidates }
 }
 
 /** Derive folder README model — frozen typography graph + receipt chain (write ≡ verify). */

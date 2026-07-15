@@ -222,7 +222,7 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   )
   const pd = proseDecode(cwd)
   console.log(
-    `  prose decode — ${pd.boilerplate} boilerplate-classified (regen UNPROVEN — the collision generator drifted; do not fold until it emits byte-for-byte) · ${pd.unique} unique (keep) of ${pd.vocabOnly} prose${pd.candidates.length > 0 ? ` — e.g. ${pd.candidates.slice(0, 5).join(', ')}` : ''}`,
+    `  prose decode — ${pd.boilerplate} boilerplate-classified · ${pd.regenerable} regen PROVEN byte-for-byte (foldable — the collision generator emits their body exactly; the ${pd.boilerplate - pd.regenerable} unproven stay KEEP) · ${pd.unique} unique (keep) of ${pd.vocabOnly} prose${pd.candidates.length > 0 ? ` — e.g. ${pd.candidates.slice(0, 5).join(', ')}` : ''}`,
   )
   const families = foldPlan(cwd)
   const foldable = families.reduce((s, f) => s + f.members.length, 0)
