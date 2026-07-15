@@ -8,6 +8,7 @@ import {
   packageApprovalMatrix,
   runPackageApprovalCli,
 } from '@/apply/approval'
+import { formatVerdict, rosettaGate } from '@/gate/rosetta'
 import { runPayloadApprovalCli } from '@/payload/approval'
 import { startProgressHeartbeat } from './progress-heartbeat'
 
@@ -56,6 +57,18 @@ export function runGate(argv: readonly string[] = process.argv.slice(2)): number
     return 1
   }
   console.log('✓ package approval matrix')
+
+  // Lane [0] — the rosetta STRUCTURAL gate (fast first lane). corpusRoot() is the cache: an unchanged
+  // corpus root reuses its sealed verdict in O(1); a changed root pays only O(changed). This is fold-first
+  // for STRUCTURE (dedup · tamper-evidence) — it does NOT compile TS or run behaviour, so the semantic
+  // lanes below (typecheck · test:int) remain the required complement and always run after.
+  console.log('\n▶ gate [0] — rosetta structural fold (incremental)')
+  const structural = rosettaGate()
+  console.log(formatVerdict(structural))
+  if (!structural.pass) {
+    console.error('\n✗ gate — rosetta structural gate FAILED (new duplication or broken seal chain)')
+    return 1
+  }
 
   for (const warn of inventoryGateWarnings()) console.warn(`⚠ ${warn}`)
   const total = GATE_LANES.length
