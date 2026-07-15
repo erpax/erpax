@@ -1,6 +1,7 @@
 ---
 name: surgery
 atomPath: medical/surgery
+horo: 1
 description: "Use when reasoning about surgery as a medical facet of [[medical]] — vocabulary pivot to @/surgery; nested not duplicated."
 ---
 

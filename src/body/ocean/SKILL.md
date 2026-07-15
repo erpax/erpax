@@ -1,6 +1,7 @@
 ---
 name: ocean
 atomPath: body/ocean
+horo: 5
 description: "Use when reasoning about ocean as a anatomical part of [[body]] — vocabulary pivot to @/ocean; nested not duplicated."
 ---
 

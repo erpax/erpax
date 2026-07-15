@@ -1,6 +1,7 @@
 ---
 name: stage
 atomPath: medical/stage
+horo: 1
 description: "Use when reasoning about stage as a medical facet of [[medical]] — vocabulary pivot to @/stage; nested not duplicated."
 ---
 

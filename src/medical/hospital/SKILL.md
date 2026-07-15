@@ -1,6 +1,7 @@
 ---
 name: hospital
 atomPath: medical/hospital
+horo: 4
 description: "Use when reasoning about hospital as a medical facet of [[medical]] — vocabulary pivot to @/hospital; nested not duplicated."
 ---
 

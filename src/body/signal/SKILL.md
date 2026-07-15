@@ -1,6 +1,7 @@
 ---
 name: signal
 atomPath: body/signal
+horo: 1
 description: "Use when reasoning about signal as a anatomical part of [[body]] — vocabulary pivot to @/signal; nested not duplicated."
 ---
 

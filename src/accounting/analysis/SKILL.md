@@ -2,6 +2,7 @@
 name: analysis
 description: "Use when reasoning about accounting/analysis — financial analysis engine — balance sheet, income statement, aging reports."
 atomPath: accounting/analysis
+horo: 5
 ---
 
 # accounting/analysis

@@ -2,6 +2,7 @@
 name: corpus
 description: "Use when reasoning about accounting/corpus — corpus self-accounting — eb (entropy-bit) currency and path posting units."
 atomPath: accounting/corpus
+horo: 2
 ---
 
 # accounting/corpus

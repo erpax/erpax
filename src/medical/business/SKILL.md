@@ -1,6 +1,7 @@
 ---
 name: business
 atomPath: medical/business
+horo: 1
 description: "Use when reasoning about business as a medical facet of [[medical]] — vocabulary pivot to @/business; nested not duplicated."
 ---
 

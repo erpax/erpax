@@ -1,6 +1,7 @@
 ---
 name: estimator
 atomPath: medical/estimator
+horo: 8
 description: "Use when reasoning about estimator as a medical facet of [[medical]] — vocabulary pivot to @/estimator; nested not duplicated."
 ---
 

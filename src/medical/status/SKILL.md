@@ -1,6 +1,7 @@
 ---
 name: status
 atomPath: medical/status
+horo: 8
 description: "Use when reasoning about status as a medical facet of [[medical]] — vocabulary pivot to @/status; nested not duplicated."
 ---
 

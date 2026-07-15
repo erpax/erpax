@@ -1,6 +1,7 @@
 ---
 name: indication
 atomPath: medical/indication
+horo: 7
 description: "Use when reasoning about indication as a medical facet of [[medical]] — vocabulary pivot to @/indication; nested not duplicated."
 ---
 

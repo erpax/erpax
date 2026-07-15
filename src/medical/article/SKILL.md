@@ -1,6 +1,7 @@
 ---
 name: article
 atomPath: medical/article
+horo: 1
 description: "Use when reasoning about article as a medical facet of [[medical]] — vocabulary pivot to @/article; nested not duplicated."
 ---
 

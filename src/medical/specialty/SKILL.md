@@ -1,6 +1,7 @@
 ---
 name: specialty
 atomPath: medical/specialty
+horo: 7
 description: "Use when reasoning about specialty as a medical facet of [[medical]] — vocabulary pivot to @/specialty; nested not duplicated."
 ---
 

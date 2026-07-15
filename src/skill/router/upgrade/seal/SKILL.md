@@ -2,6 +2,7 @@
 name: seal
 description: "Use when SKILL.md frontmatter must render deterministically or fold content-uuid — renderFrontmatter, upgradeSkillText, parseSignaturesFromText, and contentUuidOf seal the diamond stage chain into YAML."
 atomPath: skill/router/upgrade/seal
+horo: 2
 version: 1
 ---
 # seal — frontmatter render · content-uuid seal

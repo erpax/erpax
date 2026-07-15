@@ -1,6 +1,7 @@
 ---
 name: score
 atomPath: medical/score
+horo: 8
 description: "Use when reasoning about score as a medical facet of [[medical]] — vocabulary pivot to @/score; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: algorithm
 atomPath: computer/algorithm
+horo: 7
 description: "Use when running search/sort primitives under the machine — executable algorithms nested under [[computer]]."
 ---
 

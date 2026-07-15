@@ -1,6 +1,7 @@
 ---
 name: procedure
 atomPath: medical/procedure
+horo: 7
 description: "Use when reasoning about procedure as a medical facet of [[medical]] — vocabulary pivot to @/procedure; nested not duplicated."
 ---
 

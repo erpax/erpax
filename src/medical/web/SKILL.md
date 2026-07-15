@@ -1,6 +1,7 @@
 ---
 name: web
 atomPath: medical/web
+horo: 8
 description: "Use when reasoning about web as a medical facet of [[medical]] — vocabulary pivot to @/web; nested not duplicated."
 ---
 

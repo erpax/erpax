@@ -1,6 +1,7 @@
 ---
 name: location
 atomPath: body/location
+horo: 4
 description: "Use when reasoning about location as a anatomical part of [[body]] — vocabulary pivot to @/location; nested not duplicated."
 ---
 

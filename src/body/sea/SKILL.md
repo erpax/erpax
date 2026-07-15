@@ -1,6 +1,7 @@
 ---
 name: sea
 atomPath: body/sea
+horo: 8
 description: "Use when reasoning about sea as a anatomical part of [[body]] — vocabulary pivot to @/sea; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: allergies
 atomPath: medical/allergies
+horo: 5
 description: "Use when reasoning about allergies as a medical facet of [[medical]] — vocabulary pivot to @/allergies; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: study
 atomPath: medical/study
+horo: 2
 description: "Use when reasoning about study as a medical facet of [[medical]] — vocabulary pivot to @/study; nested not duplicated."
 ---
 

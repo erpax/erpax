@@ -1,6 +1,7 @@
 ---
 name: symptom
 atomPath: medical/symptom
+horo: 4
 description: "Use when reasoning about symptom as a medical facet of [[medical]] — vocabulary pivot to @/symptom; nested not duplicated."
 ---
 

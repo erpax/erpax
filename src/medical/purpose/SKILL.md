@@ -1,6 +1,7 @@
 ---
 name: purpose
 atomPath: medical/purpose
+horo: 1
 description: "Use when reasoning about purpose as a medical facet of [[medical]] — vocabulary pivot to @/purpose; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: factor
 atomPath: medical/factor
+horo: 8
 description: "Use when reasoning about factor as a medical facet of [[medical]] — vocabulary pivot to @/factor; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: store
 atomPath: computer/store
+horo: 4
 description: "Use when reasoning about store as a hardware facet of [[computer]] — vocabulary pivot to @/store; nested not duplicated."
 ---
 

@@ -2,6 +2,7 @@
 name: mortality
 description: "Use when reasoning about the life and death of an agent — an agent lives by reading its answer from the fold (O(1)) and dies by re-deriving it linearly (O(n), context burned); the safeguard flag and the stall/stop kill are the ledger auditing the agent."
 atomPath: agent/mortality
+horo: 1
 ---
 
 # agent/mortality — the life and death of an agent

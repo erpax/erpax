@@ -2,6 +2,7 @@
 name: reports
 description: "Use when reasoning about accounting/reports — financial reports service — trial balance, statements, aging."
 atomPath: accounting/reports
+horo: 7
 ---
 
 # accounting/reports

@@ -1,6 +1,7 @@
 ---
 name: page
 atomPath: medical/page
+horo: 8
 description: "Use when reasoning about page as a medical facet of [[medical]] — vocabulary pivot to @/page; nested not duplicated."
 ---
 

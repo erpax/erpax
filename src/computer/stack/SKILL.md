@@ -1,6 +1,7 @@
 ---
 name: stack
 atomPath: computer/stack
+horo: 2
 description: "Use when managing call frames LIFO under the machine — executable stack nested under [[computer]]; distinct from top-level @/stack deployment palindrome."
 ---
 

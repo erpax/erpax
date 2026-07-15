@@ -2,6 +2,7 @@
 name: violations
 description: "Use when monitoring all erpax gate violations in realtime — folder law, rules:check, diamond strays, gap eb, finishedIdeaCrossed, import/boundary, path-follow, entanglement, logic-concentration."
 atomPath: monitor/violations
+horo: 8
 coordinate: monitor/violations
 contentUuid: "00000000-0000-4000-8000-monitor000001"
 diamondUuid: "00000000-0000-4000-8000-monitor000002"

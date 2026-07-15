@@ -1,6 +1,7 @@
 ---
 name: level
 atomPath: medical/level
+horo: 1
 description: "Use when reasoning about level as a medical facet of [[medical]] — vocabulary pivot to @/level; nested not duplicated."
 ---
 

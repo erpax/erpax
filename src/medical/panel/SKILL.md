@@ -1,6 +1,7 @@
 ---
 name: panel
 atomPath: medical/panel
+horo: 8
 description: "Use when reasoning about panel as a medical facet of [[medical]] — vocabulary pivot to @/panel; nested not duplicated."
 ---
 

@@ -2,6 +2,7 @@
 name: coa
 description: "Use when reasoning about accounting/coa — chart of accounts — path IS the account code; accountCodeOf folds atom paths to GL codes."
 atomPath: accounting/coa
+horo: 2
 ---
 
 # accounting/coa

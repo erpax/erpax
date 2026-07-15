@@ -1,6 +1,7 @@
 ---
 name: contraindication
 atomPath: medical/contraindication
+horo: 8
 description: "Use when reasoning about contraindication as a medical facet of [[medical]] — vocabulary pivot to @/contraindication; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: drug
 atomPath: medical/drug
+horo: 7
 description: "Use when reasoning about drug as a medical facet of [[medical]] — vocabulary pivot to @/drug; nested not duplicated."
 ---
 

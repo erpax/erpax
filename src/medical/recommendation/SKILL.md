@@ -1,6 +1,7 @@
 ---
 name: recommendation
 atomPath: medical/recommendation
+horo: 1
 description: "Use when reasoning about recommendation as a medical facet of [[medical]] — vocabulary pivot to @/recommendation; nested not duplicated."
 ---
 

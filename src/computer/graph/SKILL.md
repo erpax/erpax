@@ -1,6 +1,7 @@
 ---
 name: graph
 atomPath: computer/graph
+horo: 7
 description: "Use when traversing corpus bonds as a directed graph — matrix adjacency under [[computer]]; executable not glossary."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: measurement
 atomPath: body/measurement
+horo: 2
 description: "Use when reasoning about measurement as a anatomical part of [[body]] — vocabulary pivot to @/measurement; nested not duplicated."
 ---
 

@@ -2,6 +2,7 @@
 name: quantum
 description: "Use when SKILL.md frontmatter in the quantum partition needs parse · generate · upgrade — parseQuantumSkill, generateQuantumSkill, and upgradeQuantumSkillText fold superposition, collapse, seal, and path-account into quantum SKILL.md."
 atomPath: skill/router/upgrade/quantum
+horo: 5
 version: 1
 ---
 # quantum — quantum SKILL.md parse · generate · upgrade

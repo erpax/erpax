@@ -1,6 +1,7 @@
 ---
 name: cause
 atomPath: medical/cause
+horo: 1
 description: "Use when reasoning about cause as a medical facet of [[medical]] — vocabulary pivot to @/cause; nested not duplicated."
 ---
 

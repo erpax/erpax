@@ -1,6 +1,7 @@
 ---
 name: one
 atomPath: body/one
+horo: 7
 description: "Use when reasoning about one as a anatomical part of [[body]] — vocabulary pivot to @/one; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: trial
 atomPath: medical/trial
+horo: 1
 description: "Use when reasoning about trial as a medical facet of [[medical]] — vocabulary pivot to @/trial; nested not duplicated."
 ---
 

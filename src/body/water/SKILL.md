@@ -1,6 +1,7 @@
 ---
 name: water
 atomPath: body/water
+horo: 5
 description: "Use when reasoning about water as a anatomical part of [[body]] — vocabulary pivot to @/water; nested not duplicated."
 ---
 

@@ -2,6 +2,7 @@
 name: signal
 description: "Use when a horo position or any uuid must become perceivable — colour, sound, realtime motion — derived from the address itself with zero per-item design; identity IS its render, drift is visible."
 atomPath: signal
+horo: 4
 ---
 
 # signal — identity rendered as colour · sound · motion

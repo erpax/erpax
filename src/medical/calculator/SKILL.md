@@ -1,6 +1,7 @@
 ---
 name: calculator
 atomPath: medical/calculator
+horo: 4
 description: "Use when reasoning about calculator as a medical facet of [[medical]] — vocabulary pivot to @/calculator; nested not duplicated."
 ---
 

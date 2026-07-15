@@ -2,6 +2,7 @@
 name: money
 description: "Use when reasoning about accounting/money — money fields — Payload money type fixes and currency handling."
 atomPath: accounting/money
+horo: 5
 ---
 
 # accounting/money

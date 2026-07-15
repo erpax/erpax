@@ -2,6 +2,7 @@
 name: ledger
 description: "Use when reasoning about accounting/ledger — token ledger — path-keyed postings and balance by path."
 atomPath: accounting/ledger
+horo: 7
 ---
 
 # accounting/ledger

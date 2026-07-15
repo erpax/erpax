@@ -1,6 +1,7 @@
 ---
 name: intangible
 atomPath: medical/intangible
+horo: 7
 description: "Use when reasoning about intangible as a medical facet of [[medical]] — vocabulary pivot to @/intangible; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: audience
 atomPath: medical/audience
+horo: 1
 description: "Use when reasoning about audience as a medical facet of [[medical]] — vocabulary pivot to @/audience; nested not duplicated."
 ---
 

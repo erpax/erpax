@@ -1,6 +1,7 @@
 ---
 name: entity
 atomPath: medical/entity
+horo: 1
 description: "Use when reasoning about entity as a medical facet of [[medical]] — vocabulary pivot to @/entity; nested not duplicated."
 ---
 

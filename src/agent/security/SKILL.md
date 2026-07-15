@@ -2,6 +2,7 @@
 name: security
 description: Parse allowlist and security monitor for agent inputs (fail closed).
 atomPath: agent/security
+horo: 8
 ---
 # agent/security
 

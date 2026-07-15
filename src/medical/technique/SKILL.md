@@ -1,6 +1,7 @@
 ---
 name: technique
 atomPath: medical/technique
+horo: 5
 description: "Use when reasoning about technique as a medical facet of [[medical]] — vocabulary pivot to @/technique; nested not duplicated."
 ---
 

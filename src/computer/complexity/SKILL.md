@@ -1,6 +1,7 @@
 ---
 name: complexity
 atomPath: computer/complexity
+horo: 2
 description: "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary."
 ---
 

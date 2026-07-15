@@ -1,6 +1,7 @@
 ---
 name: guideline
 atomPath: medical/guideline
+horo: 4
 description: "Use when reasoning about guideline as a medical facet of [[medical]] — vocabulary pivot to @/guideline; nested not duplicated."
 ---
 

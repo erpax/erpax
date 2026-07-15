@@ -2,6 +2,7 @@
 name: debit
 description: "Use when reasoning about accounting/debit — debit/credit logic — double-entry validation and journal lines."
 atomPath: accounting/debit
+horo: 8
 ---
 
 # accounting/debit

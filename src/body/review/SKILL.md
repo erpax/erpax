@@ -1,6 +1,7 @@
 ---
 name: review
 atomPath: body/review
+horo: 2
 description: "Use when reasoning about review as a anatomical part of [[body]] — vocabulary pivot to @/review; nested not duplicated."
 ---
 

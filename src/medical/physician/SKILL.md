@@ -1,6 +1,7 @@
 ---
 name: physician
 atomPath: medical/physician
+horo: 8
 description: "Use when reasoning about physician as a medical facet of [[medical]] — vocabulary pivot to @/physician; nested not duplicated."
 ---
 

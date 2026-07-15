@@ -1,6 +1,7 @@
 ---
 name: therapy
 atomPath: medical/therapy
+horo: 5
 description: "Use when reasoning about therapy as a medical facet of [[medical]] — vocabulary pivot to @/therapy; nested not duplicated."
 ---
 

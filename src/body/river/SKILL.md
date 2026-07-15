@@ -1,6 +1,7 @@
 ---
 name: river
 atomPath: body/river
+horo: 8
 description: "Use when reasoning about river as a anatomical part of [[body]] — vocabulary pivot to @/river; nested not duplicated."
 ---
 

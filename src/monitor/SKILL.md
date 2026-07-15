@@ -2,6 +2,7 @@
 name: monitor
 description: "Use when reasoning about patient monitor — hospital bedside vitals facet; pivot to @/medical/device registry. Also: realtime corpus violation monitor via @/monitor/violations (all gate axes, path-account bonded)."
 atomPath: monitor
+horo: 7
 coordinate: monitor
 contentUuid: "de7a7841-0e45-5c85-aeba-86402f563b95"
 diamondUuid: "9743334a-8c2a-8c24-86a8-dd81bcb1a62c"

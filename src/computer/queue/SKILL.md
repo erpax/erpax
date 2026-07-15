@@ -1,6 +1,7 @@
 ---
 name: queue
 atomPath: computer/queue
+horo: 5
 description: "Use when ordering work FIFO under the machine model — executable queue nested under [[computer]]; distinct from top-level @/queue vocabulary."
 ---
 

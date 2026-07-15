@@ -1,6 +1,7 @@
 ---
 name: auto
 atomPath: body/auto
+horo: 2
 description: "Use when reasoning about auto as a anatomical part of [[body]] — vocabulary pivot to @/auto; nested not duplicated."
 ---
 

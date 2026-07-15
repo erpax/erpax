@@ -1,6 +1,7 @@
 ---
 name: type
 atomPath: medical/type
+horo: 8
 description: "Use when reasoning about type as a medical facet of [[medical]] — vocabulary pivot to @/type; nested not duplicated."
 ---
 

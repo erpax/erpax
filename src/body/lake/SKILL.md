@@ -1,6 +1,7 @@
 ---
 name: lake
 atomPath: body/lake
+horo: 4
 description: "Use when reasoning about lake as a anatomical part of [[body]] — vocabulary pivot to @/lake; nested not duplicated."
 ---
 

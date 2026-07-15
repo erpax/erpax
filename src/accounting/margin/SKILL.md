@@ -2,6 +2,7 @@
 name: margin
 description: "Use when reasoning about accounting/margin — margin analysis — gross margin and contribution calculations."
 atomPath: accounting/margin
+horo: 4
 ---
 
 # accounting/margin

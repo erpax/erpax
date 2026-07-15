@@ -1,6 +1,7 @@
 ---
 name: condition
 atomPath: medical/condition
+horo: 1
 description: "Use when reasoning about condition as a medical facet of [[medical]] — vocabulary pivot to @/condition; nested not duplicated."
 ---
 

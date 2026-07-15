@@ -1,6 +1,7 @@
 ---
 name: diagnosis
 atomPath: medical/diagnosis
+horo: 2
 description: "Use when reasoning about diagnosis as a medical facet of [[medical]] — vocabulary pivot to @/diagnosis; nested not duplicated."
 ---
 

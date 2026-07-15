@@ -1,6 +1,7 @@
 ---
 name: sign
 atomPath: medical/sign
+horo: 1
 description: "Use when reasoning about sign as a medical facet of [[medical]] — vocabulary pivot to @/sign; nested not duplicated."
 ---
 

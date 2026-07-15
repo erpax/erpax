@@ -1,6 +1,7 @@
 ---
 name: finite
 atomPath: computer/finite
+horo: 4
 description: "Use when modeling finite-state machines — seal check FSM linking [[seal]] guardians to automata theory under [[computer]]."
 ---
 

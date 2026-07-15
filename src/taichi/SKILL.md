@@ -2,6 +2,7 @@
 name: taichi
 description: "Use when reasoning about tai chi (太極) internal energy flow — chi (气) stored in the dantian (丹田 cung) and spiralled through counter-rotating double-torus vortices on the horo ring; the martial/wellbeing breath-body twin of rodin/coil and dual/torus/fusion, rendered as analog signal+wave."
 atomPath: taichi
+horo: 8
 coordinate: taichi
 contentUuid: "8fac0e13-3867-55f9-b278-9d3e73aaf299"
 diamondUuid: "b68c5624-4a1d-8ce6-88de-41af1d2b6a03"

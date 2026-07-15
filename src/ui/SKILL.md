@@ -2,6 +2,7 @@
 name: ui
 description: "Use when mounting shadcn/Radix primitives — the component catalog under src/ui/ (Tooltip, Dialog, Tabs, Collapsible, Sonner, etc.) wired to corpus-computed CSS and live quantum dimension surfaces."
 atomPath: ui
+horo: 8
 coordinate: ui · 1/base · catalog
 ---
 

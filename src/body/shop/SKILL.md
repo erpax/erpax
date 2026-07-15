@@ -1,6 +1,7 @@
 ---
 name: shop
 atomPath: body/shop
+horo: 1
 description: "Use when reasoning about shop as a anatomical part of [[body]] — vocabulary pivot to @/shop; nested not duplicated."
 ---
 

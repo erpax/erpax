@@ -1,6 +1,7 @@
 ---
 name: language
 atomPath: computer/language
+horo: 2
 description: "Use when reasoning about language as a hardware facet of [[computer]] — vocabulary pivot to @/language; nested not duplicated."
 ---
 

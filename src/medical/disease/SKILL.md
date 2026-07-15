@@ -1,6 +1,7 @@
 ---
 name: disease
 atomPath: medical/disease
+horo: 1
 description: "Use when reasoning about disease as a medical facet of [[medical]] — vocabulary pivot to @/disease; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: enumeration
 atomPath: medical/enumeration
+horo: 4
 description: "Use when reasoning about enumeration as a medical facet of [[medical]] — vocabulary pivot to @/enumeration; nested not duplicated."
 ---
 

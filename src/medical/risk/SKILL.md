@@ -1,6 +1,7 @@
 ---
 name: risk
 atomPath: medical/risk
+horo: 7
 description: "Use when reasoning about risk as a medical facet of [[medical]] — vocabulary pivot to @/risk; nested not duplicated."
 ---
 

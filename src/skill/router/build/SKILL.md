@@ -2,6 +2,7 @@
 name: build
 description: "Use when the skill router index or installed catalogue must emit — buildSkillIndex and buildInstalledCatalogue compile the corpus for fs-less Workers."
 atomPath: skill/router/build
+horo: 8
 version: 1
 ---
 # build — skill index · installed catalogue emit

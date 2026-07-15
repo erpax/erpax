@@ -2,6 +2,7 @@
 name: wire
 description: "Use when a reader receives the erpax GitHub URL — wireFromRepoUrl validates github.com/erpax/erpax and returns the canonical skill entry paths (content-uuid sealed). All orientation surfaces point to .claude/skills/SKILL.md; paste or clone."
 atomPath: skill/wire
+horo: 7
 version: 1
 ---
 # wire — repo URL → skill entry

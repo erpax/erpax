@@ -2,6 +2,7 @@
 name: inventory
 description: "Use when reasoning about agent/inventory — agent inventory scan, emit, and monitor for stale or duplicate agents."
 atomPath: agent/inventory
+horo: 7
 ---
 
 # agent/inventory

@@ -1,6 +1,7 @@
 ---
 name: prescription
 atomPath: medical/prescription
+horo: 2
 description: "Use when reasoning about prescription as a medical facet of [[medical]] — vocabulary pivot to @/prescription; nested not duplicated."
 ---
 

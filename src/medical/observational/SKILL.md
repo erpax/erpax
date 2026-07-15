@@ -1,6 +1,7 @@
 ---
 name: observational
 atomPath: medical/observational
+horo: 8
 description: "Use when reasoning about observational as a medical facet of [[medical]] — vocabulary pivot to @/observational; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: evidence
 atomPath: medical/evidence
+horo: 8
 description: "Use when reasoning about evidence as a medical facet of [[medical]] — vocabulary pivot to @/evidence; nested not duplicated."
 ---
 

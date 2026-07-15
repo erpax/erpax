@@ -1,6 +1,7 @@
 ---
 name: test
 atomPath: medical/test
+horo: 1
 description: "Use when reasoning about test as a medical facet of [[medical]] — vocabulary pivot to @/test; nested not duplicated."
 ---
 

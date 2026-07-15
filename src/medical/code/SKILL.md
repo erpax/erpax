@@ -1,6 +1,7 @@
 ---
 name: code
 atomPath: medical/code
+horo: 1
 description: "Use when reasoning about code as a medical facet of [[medical]] — vocabulary pivot to @/code; nested not duplicated."
 ---
 

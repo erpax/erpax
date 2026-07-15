@@ -1,6 +1,7 @@
 ---
 name: scholarly
 atomPath: medical/scholarly
+horo: 4
 description: "Use when reasoning about scholarly as a medical facet of [[medical]] — vocabulary pivot to @/scholarly; nested not duplicated."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: organization
 atomPath: medical/organization
+horo: 7
 description: "Use when reasoning about organization as a medical facet of [[medical]] — vocabulary pivot to @/organization; nested not duplicated."
 ---
 
