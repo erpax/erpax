@@ -108,6 +108,13 @@ This is the consent mechanism of the [[society]] — narrower than the polity's 
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C VC Data Model 2.0 (votes/ratings as verifiable claims)`
+- `@standard W3C DID Core v1.0 (voter identity)`
+- `@standard RFC 4122 §4.3 + RFC 8785 (content-derived uuids)`
+- `@standard ISO/IEC 25010:2023 §5.6 security — non-repudiation`
+
+
 - **W3C VC Data Model 2.0 / DID Core v1.0** — votes and ratings as verifiable claims; the voter identified by DID.
 - **RFC 4122 §4.3 + RFC 8785 (JCS)** — content-derived, canonicalised uuids; the recompute is deterministic.
 - **ISO/IEC 25010:2023 §5.6 security — non-repudiation** — the signature covers the uuid, which covers the intent.

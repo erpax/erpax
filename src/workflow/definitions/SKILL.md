@@ -134,6 +134,11 @@ Workflow instances are gated by [[horo]] state machine transitions; audit eviden
 **Law — [[law]]: a workflow-definition is the reusable, data-driven approval TEMPLATE — BPMN-2.0 step kinds, assignee modes, SLA escalation, and JSON-Logic conditions for any collection authored without a code change — inert form until [[workflow|a process]] runs it, its instances gated by [[horo]] state-machine transitions.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 19510:2013 BPMN-2.0`
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISO/IEC 19510:2013 BPMN-2.0
 - ISO-8601-1:2019 date-time
 - SOX §404 internal-controls multi-step-approval

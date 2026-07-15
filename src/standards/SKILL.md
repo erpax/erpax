@@ -141,6 +141,12 @@ co-located `seed.ts` (computed opening data) and `index.test.ts` (invariant chec
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.1 functional-completeness`
+- `@standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)`
+- `@standard W3C JSON-LD 1.1 (citation as live linked-data)`
+
 - ISO/IEC 25010:2023 §5.1 functional-completeness
 - ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
 - W3C JSON-LD 1.1 (citation as live linked-data)

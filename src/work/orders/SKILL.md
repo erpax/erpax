@@ -188,6 +188,10 @@ The **shift axis is the efficiency authority**: a work order does **not** comput
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time started·completed·estimated`
+
+
 Booking production on this leaf IS placing it under the canonical manufacturing-execution stack (see [[standard]]).
 
 - **ISA-95:2013 §B.5** — production-operations-management; the work-order is the execution record between the schedule and the receipt.

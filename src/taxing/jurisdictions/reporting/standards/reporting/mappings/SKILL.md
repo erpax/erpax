@@ -68,6 +68,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: reporting-mappings is the cross-standard element-mapping node — each row binds one source element to its target (account · line-item · disclosure · metric) across reporting frameworks (XBRL-GL · IFRS-Taxonomy · SAF-T).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS-Taxonomy reporting-mapping`
+
 - XBRL-GL global-ledger-taxonomy
 - IFRS-Taxonomy reporting-mapping
 - SAF-T OECD mapping

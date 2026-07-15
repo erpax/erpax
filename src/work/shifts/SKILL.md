@@ -143,6 +143,11 @@ Authority for [[work/orders]] (they inherit `efficiencyPercent`); keyed by [[emp
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-22400-2:2014 manufacturing-operations KPIs (labour efficiency / utilisation)`
+- `@standard ISO-8601-1:2019 date-time shift-start/finish/close`
+
+
 - **ISA-95:2013 / IEC-62264-1 §B.5** — personnel + production-performance.
 - **ISO-22400-2:2014** — manufacturing-operations KPIs (labour efficiency / utilisation).
 - **ISO-8601-1:2019** — date-time shift start/finish/close.

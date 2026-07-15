@@ -115,6 +115,12 @@ Consignment Arrangements — IFRS-15 §B77-B78 / ASC 606-10-55-79 master. When e
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard EN-16931:2017 §BG-15 deliver-to-information`
+- `@standard ISO-3166-1:2020 country-codes`
+- `@standard ISO-4217:2015 currency-codes`
+
+
 - EN-16931:2017 §BG-15 deliver-to-information
 - INCOTERMS 2020 (CPT / CIP / DDP control-transfer points)
 - ISO-3166-1:2020 country-codes

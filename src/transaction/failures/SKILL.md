@@ -103,6 +103,11 @@ Captures every failed [[transaction]] (payment retry, e-invoice submission, bank
 Composes: [[accounting]] (control domain) · [[transaction]] (the failed exchange) · [[hooks]] (lifecycle mutations) · [[access]] (operator RBAC) · [[identity]] (failure reference) · [[proof]] (forensic audit trail) · [[standard]] (SOX/ISO compliance).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time transaction-date`
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time transaction-date
 - RFC 7807 problem-details-for-http-apis status-code

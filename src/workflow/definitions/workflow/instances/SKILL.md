@@ -116,6 +116,11 @@ Composes [[workflow/definitions]] · [[audit/events]] · [[users]] · [[hooks]] 
 **Law — [[law]]: one instance per (definition × document) walks the steps, appending every decision to `stepHistory` and emitting an audit event per transition — the live run is its own tamper-evident evidence trail.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 19510:2013 BPMN-2.0`
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISO/IEC 19510:2013 BPMN-2.0
 - ISO-8601-1:2019 date-time
 - ISO-19011:2018 §6.4.6 audit-evidence-workflow

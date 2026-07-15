@@ -101,6 +101,14 @@ Per-tenant Payload config (scoped via `config.*`) mirrors the deployment-level s
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-17442-1:2020 lei legal-entity-identifier`
+- `@standard ISO-3166-1:2020 country-codes alpha-2`
+- `@standard ISO-4217:2015 currency-codes default-currency`
+- `@standard ISO-3166-1:2020 country-codes alpha-2 identity.country`
+- `@standard ISO-4217:2015 currency-codes alphabetic currency.reportingCurrency`
+
+
 **Identity & localization:**
 - ISO-17442-1:2020 (lei legal-entity-identifier)
 - ISO-3166-1:2020 (country-codes alpha-2, `identity.country`)

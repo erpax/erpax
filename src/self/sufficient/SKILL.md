@@ -148,3 +148,9 @@ Matter-twin: `self/sufficient/index.ts` (`selfSufficiencyVerdict` · `internalis
 ## Common mistakes
 - Asking what's derivable — the record + the address-law already hold it; the question breaks flow and is strictly less efficient.
 - Leaving a blank undefined instead of routing it to its identity element.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)`
+- `@standard NIST SP 800-161r1 (supply-chain / external-dependency risk)`

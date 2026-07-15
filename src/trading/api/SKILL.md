@@ -170,3 +170,11 @@ Matter-twin: `src/trading/api/index.ts` — `TRADING_APIS` · `getTradingApis` �
 **Law — [[law]]: api is one word on the trading diamond path — `trading/api`, not a hyphenated config folder; the catalogue and its clients share the same atom chain.**
 
 @see [[trading]] · [[country]] · [[commerce]] · [[payment]] · [[carriers]] · [[connections]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-3166-1:2020 country-codes alpha-2 region-scope`
+- `@standard ISO-4217:2015 currency-codes fx-feeds`
+- `@standard ISO-20022 financial-messages cross-references`
+- `@standard RFC-9110 http-semantics REST-client`

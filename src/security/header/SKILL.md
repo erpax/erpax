@@ -107,3 +107,9 @@ deployments. Currently called from project middleware where applicable.
 - CSRF tokens — handled by Payload's auth stack and same-origin cookies.
 
 **Law — [[law]]: the security headers are a composite of independent standards (HSTS · CSP · Referrer-Policy · Permissions-Policy · nosniff · frame-options) emitted by pure functions over a config object — defense-in-depth is layered and I/O-free, computed from configuration, never hardcoded per route.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C CSP-3`
+- `@standard W3C Permissions-Policy`

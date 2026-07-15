@@ -203,6 +203,10 @@ Composes: [[workflow/engine]] (the legality gate it drives) · [[flow]] (value/d
 **Law — [[law]]: a process is the execution of an inert definition over people and time — it decides WHEN and TO WHOM a transition is offered (spawn on trigger, advance on each step decision, escalate on SLA lapse, delegate service-tasks), appending every decision IMMUTABLY to stepHistory; it is the orchestration twin of [[workflow/engine]], which decides WHETHER an offered transition is legal.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 19510:2013 BPMN-2.0`
+
 - ISO/IEC 19510:2013 BPMN-2.0
 - Audit: ISO-19011:2018 §6.4.6 audit-evidence-workflow
 - Compliance: SOX §404 internal-controls workflow-execution

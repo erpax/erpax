@@ -61,6 +61,12 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP 800-162 §3 attribute-based-access-control`
+- `@standard ISO/IEC 27001 Annex A.9.2.3 privileged-access-rights`
+- `@standard ISO/IEC 27001 Annex A.9.4.1 information-access-restriction`
+
 - NIST SP 800-162 §3 attribute-based-access-control
 - ISO/IEC 27001 Annex A.9.2.3 privileged-access-rights
 - ISO/IEC 27001 Annex A.9.4.1 information-access-restriction

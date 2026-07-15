@@ -136,6 +136,10 @@ Matter-twin: `src/translate/index.ts` — `humanize` · `computeKeyLabels` · `d
 Composes: [[localize]] · [[translation]] · [[translations]] · [[translator]] · [[message]] · [[word]] · [[model]] · [[collection]] · [[tamper]] · [[cost]] · [[law]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2) · BCP-47 language tags`
+
 - W3C HTTP Content-Language (RFC 7231 §3.1.3.2) · BCP-47 language tags
 
 ## Common mistakes

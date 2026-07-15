@@ -297,3 +297,8 @@ Matter-twin: `src/typography/index.ts` (`featuresUsed` · `coverage` · `formVio
 **Law — [[law]]: coverage is the fraction of the [[vitepress]] typographic feature-set a SKILL.md page actually renders — each feature used is a dimension the [[search]] index entangles and a forger must reproduce ([[tamper]]-cost).**
 
 @standard CommonMark + the vitepress markdown extensions
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.5 testability — the guardian decision is a pure fn`

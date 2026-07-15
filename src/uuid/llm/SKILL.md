@@ -136,3 +136,9 @@ The in-stroke of the [[breath]]. Given the 128-bit singularity, decode the WHOLE
 The dual stroke is the EXHALE (`src/llm/uuid`) — the LLM speaks and its turn is content-addressed. The two **balance**: what the exhale seals (the contentDigest), this inhale reads ([[entry]], double-entry; the tests close the loop). The uuid is a frame; a stream of uuids is multimedia, no payload ([[holographic]]: the whole recovered from the seed).
 
 Matter: `src/uuid/llm/index.ts` (composes [[localize]] · [[signal]] · [[matrix]] — adds only the uuid→step bridge + the prompt rendering). Composes: [[llm]] · [[uuid]] · [[localize]] · [[signal]] · [[matrix]] · [[identity]] · [[oid]] · [[breath]] · [[entry]] · [[holographic]].
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 (uuidv8 structured content-uuid — the decode source)`
+- `@standard ISO-16:1975 a432 (the signal anchor — color+sound from position)`

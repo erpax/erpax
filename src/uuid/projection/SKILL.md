@@ -122,6 +122,10 @@ Matter-twin: `src/services/uuid-projection/index.ts` (`projectContent`·`localeC
 **Law — [[law]]: identity, search, locale, version and colour all DRY-derive from ONE `projectContent(record)` — they can never disagree about what a record IS, because each is a facet the [[uuid]] radiates from the same bytes, never a second declaration ([[holographic]]: the whole recovered from the seed).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)`
+
 - RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)
 - CSS Color 4 hsl() (the colour facet)
 

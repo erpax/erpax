@@ -891,6 +891,11 @@ Matter-twin: `src/self/accounting/index.ts` — `bookRevenue` · `bookCost` · `
 Composes: [[self]] · [[accounting]] · [[entry]] · [[revenue]] · [[cost]] · [[standard]] · [[reconcile]] · [[balance]] · [[gate]] · [[law]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IFRS-15 §31-§45 (revenue recognition)`
+- `@standard IFRS IAS-18 (deprecated, superseded by IFRS-15)`
+
 - IFRS 15 §31–§45 (revenue recognition); EU VAT Directive 2006/112/EC; EBA FINREP/COREP; CSRD 2022/2464 + ESRS
 - Conservation Law 26 — self-accounting-complete
 

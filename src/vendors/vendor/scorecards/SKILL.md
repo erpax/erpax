@@ -94,6 +94,12 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 9001:2015 §8.4 control-of-externally-provided-processes`
+- `@standard ISO 9001:2015 §8.4.1 evaluation-and-re-evaluation`
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISO 9001:2015 §8.4 control-of-externally-provided-processes
 - ISO 9001:2015 §8.4.1 evaluation-and-re-evaluation
 - ISO-8601-1:2019 date-time

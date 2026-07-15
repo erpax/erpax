@@ -195,6 +195,10 @@ Matter-twin: `src/train/index.ts` (pure — held/required/routes passed in; a [[
 **Law — [[law]]: efficiency (the fraction of required competencies met) IS the pay-fraction — training routes each [[competency/gap]] deficit to its gap-closing `skillRoute`, off-gassing the [[decompression]] debt, and the same one number prices the pay.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 30405:2016 essential-vs-optional (mandatory gates the surface)`
+
 - SFIA 8 responsibility-levels-1-7 (the held/required/efficiency scale)
 - ISO 30405:2016 essential-vs-optional (mandatory gates the surface)
 - Audit: ISO 19011 — efficiency, debt and pay are deterministic functions of the gap

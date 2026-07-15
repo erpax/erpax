@@ -205,3 +205,8 @@ Composes: [[accounting]] (chart of accounts, the accountable archetype), [[stand
 - Putting `reportingCurrency` on the country `profile` — it is `profile.currency`; reporting currency is a tenant choice that *defaults to* the country currency, overridable per tenant.
 
 **Law — [[law]]: a seed is the minimal encoded starting state a system grows from, derived never re-typed — the opening books computed from `country-context`, every constant a function of its source (real data or the identity element), so a fresh clone reproduces the same seed; the agronomic seed is the same atom one [[fractal]] scale down ([[holographic]]: the whole recoverable from the part).**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-8601-1:2019 date-time`

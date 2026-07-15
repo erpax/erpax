@@ -65,6 +65,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard EN-16931 e-invoicing-semantic-model`
+
 - SAF-T OECD standard-audit-file-tax
 - XBRL taxonomy-mapping
 - EN-16931 e-invoicing-semantic-model

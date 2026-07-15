@@ -127,6 +127,11 @@ Matter-twin: `shred/index.ts` (`erase`/`canTransition`/`shredPreservesChain`) + 
 **Law — [[law]]: erase the content, never the record — the content-[[uuid]] must be taken over the encrypted envelope (ciphertext + keyId), never the plaintext, so destroying the key makes the data irrecoverable while the row and chain stay verifiable ([[tamper/cost]]).**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)`
+- `@standard NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)`
+
 - GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)
 - NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)
 - Audit: content-uuid over the CipherEnvelope ⇒ shred preserves the chain (Law 8/55/60)

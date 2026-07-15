@@ -95,6 +95,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: operations is the reusable operation-type catalog (Cut · Sew · Mix · Assemble · Inspect · Pack) that routings compose — an ISA-95 operation-type hierarchy with default work-center and KPI anchors, defined independently of any specific product.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-22400-2:2014 manufacturing-operations KPIs`
+
 - ISA-95:2013 / IEC-62264-1 §B.4 operations-definition process-segment
 - ISO-22400-2:2014 manufacturing-operations KPIs
 - ISO-19011:2018 audit-trail operation-definition-changes

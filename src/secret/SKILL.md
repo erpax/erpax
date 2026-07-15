@@ -96,3 +96,9 @@ Bootstrap key material is **`ERPAX_SEAL_KEY`** in env (openssl rand -hex 32) —
 **Law — payload secrets are sealed at rest; decryption requires content-uuid identity proof. Wrong uuid, tampered ciphertext, or missing `ERPAX_SEAL_KEY` ⇒ fail closed.**
 
 @see [[integrity]] · [[seal]] · [[nist/sp/800/38]] · [[config]] · [[deploy]]
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP 800-38D AES-GCM`
+- `@standard RFC 5869 HKDF`

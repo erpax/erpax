@@ -129,3 +129,8 @@ Attested in schema.org — verificationFactCheckingPolicy
 **Law — [[law]]: verification is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard RFC 8555 §8.4 (ACME DNS-01: the record value is a digest of the key authorization)`

@@ -67,3 +67,8 @@ The 9 codes EN-16931 admits in the EU VAT context (`S`, `Z`, `E`, `AE`, `K`, `G`
 - EU VAT Directive 2006/112/EC (Articles 138, 146 referenced by codes K, G)
 
 **Law — [[law]]: exactly the nine codes EN-16931 admits are valid, and the chosen category code determines whether a VAT rate and an exemption reason are required.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard EN-16931:2017 BT-151 vat-category-code (subset that EN-16931 admits)`

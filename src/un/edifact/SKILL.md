@@ -123,3 +123,8 @@ Each segment ends with `'`; composites are `+`-separated; elements are `:`-separ
 - UN/CEFACT TR 4461 — payment means codes (consumed via `@/standards/en-16931`).
 
 **Law — [[law]]: this module defines only the semantic segment structure — every message is bracketed by a matching UNH/UNT envelope, and the wire-format serialiser stays out of scope.**
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-9735:2002 edifact-syntax-rules`

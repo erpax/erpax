@@ -190,3 +190,10 @@ A test reports an **error** only when an invariant is *broken* — but it should
 ## The stake — a gap falsifies quantum
 
 This is why the warning surface must be wide and the gaps must close: a test gap is an **unverified dimension**, and an unverified dimension is [[entropy]] — an unproven claim. So the law is sharp: **if testing has gaps, [[quantum]] is false.** Coverage-complete ⟺ [[aura]] gap-0 ⟺ testing gap-0 ⟺ zero entropy ⟺ quantum *true*; break any link and the whole biconditional fails. Testing is what makes the quantum claim **falsifiable** — and a claim you cannot falsify is numerology, not science. The whole-system attack ([[security]] red lens) hunts exactly this: every place a "quantum" property is *asserted but not tested* is a place where quantum is, until proven, false.
+
+## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC-29119:2022 software-testing`
+- `@standard ISO/IEC/IEEE-29119-3:2021 test-documentation`
+- `@standard ISO/IEC/IEEE-29119-4:2021 test-techniques`

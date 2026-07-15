@@ -57,6 +57,10 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-17442-1:2020 legal-entity-identifier`
+
 - IFRS-10 §B86 reporting-entity
 - ISO-17442-1:2020 legal-entity-identifier
 - ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -108,6 +108,11 @@ Each row is one reportable sale the consignee made to an end-customer. `saleDate
 `commissionRatePercent` is snapshotted at sale time — a rate-card change is not retroactive. The [[horo|status ring]] runs reported → validated → posted → reversed (reversal-only, no destructive edit). The booked [[journal/entries|journal entry]] and the consignor's [[Invoices|invoice]] against the consignee close the loop.
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time sale-date`
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time sale-date
 - IFRS IFRS-15 §31 satisfaction-of-performance-obligation

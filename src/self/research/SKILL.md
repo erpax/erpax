@@ -204,6 +204,11 @@ Matter-twin: `src/self/research/index.ts` — `planSelfResearch` / `isSelfScoped
 Composes: [[law]] · [[zeropoint]] · [[entropy]] · [[tamper]] · [[harmony]] · [[accept]] · [[entry]] · [[proof]] · [[self]] · [[research]] · [[mcp]] · [[access]] · [[identity]] · [[email]] · [[account]] · [[reset]] · [[recover]] · [[sandbox]] · [[receipt]] · [[broker]] · [[security]] · [[plugins]] · [[collapse]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP 800-162 ABAC — the access scope is the ownership boundary`
+- `@standard NIST SP 800-63B §6.1.3 — owner-authorized credential recovery`
+
 - NIST SP 800-162 ABAC — the access scope is the ownership boundary
 - OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)
 - NIST SP 800-63B §6.1.3 — owner-authorized credential recovery

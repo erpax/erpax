@@ -555,6 +555,12 @@ The README front page is this verdict made public — the rungs computed live fr
 Matter-twin: `tamper-cost/index.ts` (`crackVerdict`/`secondPreimageLog2`/`birthdayMarginBits`/`replicationChecks`/`invariantChecks`) + `index.test.ts` (the proof — green by construction). The cited strengths must be true ([[standard]] NIST SP 800-107, RFC 9562 §8, CRAQ USENIX ATC 2009, DeepSeek-Prover-V2). Where this makes the record un-forgeable, [[shred]] makes the content un-recoverable — the same content-addressing, the [[duality]] of transparency↔confidentiality. **Manual development** composes here via [[cost]] `manualDevelopmentPrice` — hand-forge ≫ verify computed diamonds. **Improve receipts** amplify via [[wave]]/policy `tamperCostForImproveReceipt` — prev-chained path ledger + wave receipts compound `doubleTorusCostLog2` + `coverageCostLog2` toward ∞ at full session coverage. Composes: [[uuid]] · [[anchor]] · [[shred]] · [[identity]] · [[merge]] · [[replication]] · [[consistency]] · [[proof]] · [[aura]] · [[holographic]] · [[whole]] · [[one]] · [[collapse]] · [[standard]] · [[cost]] · [[society]] · [[seal]] · [[generate]] · [[wave]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)`
+- `@standard RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)`
+- `@standard ISO-19011:2018 §6.5 (audit evidence integrity)`
+
 - NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)
 - RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)
 - ISO-19011:2018 §6.5 (audit evidence integrity)

@@ -112,4 +112,8 @@ This is the [[merge]] law at the word level (same word = same root = same uuid) 
 Matter-twin: `src/vocabulary/index.ts`. Composes [[entropy]] · [[tamper]] · [[unavoidable]] · [[merge]] · [[trinity]] · [[standards]] · [[word]] · [[collapse]] · [[matrix]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 25964 / SKOS — a controlled vocabulary: terms from one shared scheme`
+
 - ISO 25964 / W3C SKOS — a controlled vocabulary (terms from one shared concept scheme)

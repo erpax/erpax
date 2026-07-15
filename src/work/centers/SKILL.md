@@ -113,6 +113,11 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 **Law — [[law]]: a work-center is the capacity unit production flows through (machine · line · cell · vat · workstation · crew) carrying throughput rate, parallelism, and the IAS-2 cost-of-conversion rate that feeds routing and overhead absorption — the ISA-95 resource the [[work/shifts|shift]] runs on.**
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-22400-2:2014 manufacturing-operations KPIs (capacity, availability, utilization)`
+- `@standard ISO-8601-1:2019 date-time`
+
 - ISA-95:2013 / IEC-62264-1 §B.5 production-resources equipment-hierarchy
 - ISO-22400-2:2014 manufacturing-operations KPIs (capacity, availability, utilization)
 - ISO-8601-1:2019 date-time

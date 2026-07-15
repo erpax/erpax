@@ -119,6 +119,11 @@ The consignor (tenant) keeps the rows on its **own** balance sheet under IAS-2 �
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time as-of-date`
+
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time as-of-date
 - IFRS IAS-2 §6 inventories-held-at-other-location

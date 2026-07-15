@@ -101,6 +101,11 @@ Matter-twin: `src/self/closure/index.ts` (+ `types.ts`, `provider/`) — `withIn
 Composes: [[self]] · [[merge]] · [[provider]] · [[society]] · [[safety]] · [[audit]] · [[gate]] · [[law]] · [[proof]].
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO 22301 business-continuity (BC-V tier — self-hosted continuity)`
+- `@standard ISO/IEC 25010:2023 §5.6.2 fault tolerance`
+
 - ISO 22301 business-continuity (self-hosted continuity); ISO/IEC 25010:2023 §5.6.2 fault tolerance
 - Conservation Law 53 — self-referential-closure
 

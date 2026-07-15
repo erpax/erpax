@@ -208,6 +208,10 @@ Because the `streamUuid` chain links each event to its parent by hash and addres
 
 ## Standards
 
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard ISO/IEC 25010:2023 §5.2 performance — throughput`
+
+
 - **ReactiveX / W3C Streams API** — the `AsyncIterable` surface; operators and windows are the reactive vocabulary.
 - **ISO/IEC 25010:2023 §5.2** — performance / throughput; the stream view is the high-throughput dual.
 - **Lamport 1978** — distributed-system causal ordering; the Lamport clock and Law 33 coherence check.

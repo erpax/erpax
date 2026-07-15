@@ -190,6 +190,16 @@ version: 2
 Slice BBBBB-prep (2026-05-11): the `kind` discriminator carries the IAS-12 classification (deductible vs taxable; current vs non-current). Pairs with [[tax]] jurisdiction (rate source) and [[transaction]] journal-entries (booking).
 
 ## Standards
+
+<!-- standards banners (mirrors index.ts @standard — the instrument reads SKILL.md) -->
+- `@standard IFRS IAS-12 §15-§68 income-taxes`
+- `@standard IFRS IAS-12 §29 deductible-temporary-differences`
+- `@standard IFRS IAS-12 §34 deferred-tax-asset-recognition`
+- `@standard IFRS IAS-12 §47 measurement-using-substantively-enacted-rate`
+- `@standard IFRS IAS-12 §74 offsetting-deferred-tax-assets-and-liabilities`
+- `@standard ISO-4217:2015 currency-codes`
+- `@standard ISO-8601-1:2019 date-time origination-reversal`
+
 - IFRS IAS-12 §15-§68 income-taxes
 - IFRS IAS-12 §29 deductible-temporary-differences
 - IFRS IAS-12 §34 deferred-tax-asset-recognition
