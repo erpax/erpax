@@ -26,6 +26,30 @@ function runVerify(atoms: readonly string[]): number {
   return runShell(cmd, filters)
 }
 
+/**
+ * `erpax fold [family]` — the fold execution planner (Wave 6). Computes the safe foldable
+ * families via foldPlan (the fold algebra on names) and prints each with a ready-to-run
+ * `git rm` batch. READ-ONLY: it never deletes — the deletion is human-confirmed (the
+ * auto-mode classifier requires named targets), then verified with typecheck + doctor corpus.
+ * Folds the throwaway research scripts of 2026-07-15 into one reused command.
+ */
+async function runFold(family?: string): Promise<number> {
+  const { foldPlan } = await import('@/readme/compute')
+  const families = foldPlan(process.cwd())
+  const shown = family ? families.filter((f) => f.parent === family) : families
+  if (shown.length === 0) {
+    console.log(family ? `fold — no safe foldable family '${family}'.` : 'fold — none; the lexical fold is exhausted (remainder needs the semantic decode).')
+    return 0
+  }
+  console.log(`fold plan — ${shown.length} safe ${shown.length === 1 ? 'family' : 'families'}. Each = parent⊕suffix, orphaned; knowledge preserved in the parent/components.\n`)
+  for (const f of shown) {
+    console.log(`# ${f.parent}⊕ (${f.kind}) — ${f.members.length} members`)
+    console.log(`git rm -r ${f.members.map((m) => `src/**/${m}`).join(' ')}   # then: pnpm erpax lint typecheck && pnpm erpax doctor corpus\n`)
+  }
+  console.log('Review each family (reject real words / real schema.org terms), confirm the named targets, then run the printed batch.')
+  return 0
+}
+
 function resolveLegacyColon(domain: string, action?: string): { modern: string; argv: string[] } | undefined {
   const key = action ? `${domain}:${action}` : domain
   const modern = LEGACY_ALIASES[key] ?? (domain.includes(':') ? LEGACY_ALIASES[domain] : undefined)
@@ -56,6 +80,10 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
 
   if (rawDomain === 'verify') {
     return runVerify([action, ...rest].filter((a): a is string => Boolean(a)))
+  }
+
+  if (rawDomain === 'fold') {
+    return runFold(action)
   }
 
   if (rawDomain === 'approve') {
