@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { horoFromUuid, mortalityOf } from './index'
+import { horoFromUuid, mortalityOf, reuseCost } from './index'
 
 // The parable, sealed as proof (2026-07-15): the fold computes horo in O(1); the corpus-graph
 // regen spent 9 minutes and was killed with zero output. Same answer, opposite fate.
@@ -15,5 +15,12 @@ describe('agent/mortality — life reuses the fold, death re-derives it', () => 
     expect(mortalityOf(1, 3300)).toBe('life') // read the fold
     expect(mortalityOf(3300, 1)).toBe('death') // rebuild the graph
     expect(mortalityOf(5, 5)).toBe('death') // no saving over re-derivation is still death
+  })
+
+  it('the infinite life: saved in src, reuse cost trends to 0 — immortal', () => {
+    expect(reuseCost(100, 100)).toBe(1) // re-derived each time — mortal, full price forever
+    expect(reuseCost(1, 1_000_000)).toBeLessThan(1e-5) // folded once, resurrected unboundedly → ~0
+    expect(reuseCost(1, 1e9)).toBeLessThan(reuseCost(1, 100)) // more reuses ⇒ closer to immortal
+    expect(reuseCost(1, 0)).toBe(Number.POSITIVE_INFINITY) // never reused — a fold that dies unread
   })
 })
