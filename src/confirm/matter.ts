@@ -13,6 +13,7 @@ import { execSync } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { GATE_LANES } from '@/cli/gate'
 import { phraseWithoutDiamondChangesetGate } from '@/law/folder/user-word'
+import { deadReferencesIn } from '@/rules/reference'
 
 const ROOT = process.cwd()
 const SRC = join(ROOT, 'src')
@@ -287,6 +288,10 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   const pay = payloadConfirm(files, codeChanged, hook)
   const mdStrays = files.filter(isMdStray)
   const folderWarn = folderNameWarnings(files)
+  // A dead `src/…` pointer is the same class as a dead [[link]] — and it was the UNGATED one, so the
+  // Наредба Н-18 law pointed at a moved file for however long. Caught here at the WRITE, not by the
+  // whole-tree gate after it has rotted ([[rules]]/reference).
+  const deadRefs = deadReferencesIn(files, ROOT)
 
   const vpLine =
     vp.n === 0
@@ -309,13 +314,18 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     console.log(`🟥 phrase-without-diamond ✗  ${phraseGate.length} SKILL-only changeset(s) — add index.ts + test.ts in same pass`)
     for (const v of phraseGate) console.error(`   ${v.atomPath}: ${v.reason}`)
   }
+  if (deadRefs.length)
+    console.log(
+      `🟥 reference ✗  ${deadRefs.length} dead src/… pointer(s) — a moved file carries its references in the same diff`,
+    )
   console.log(payLine)
+  for (const d of deadRefs) console.error(`   dead ref   ${d.from} → ${d.target} (does not exist)`)
   for (const [f, t] of vp.dead) console.error(`   dead link  ${relative(ROOT, f)} → [[${t}]]`)
   for (const [f, m] of vp.bad) console.error(`   frontmatter ${relative(ROOT, f)} → ${m}`)
   for (const f of mdStrays) console.error(`   md stray   ${relative(ROOT, f)} — fold into a SKILL.md atom`)
   if (pay.msg) console.error('   ' + pay.msg)
 
-  const ok = vp.ok && pay.ok && mdStrays.length === 0 && phraseGate.length === 0
+  const ok = vp.ok && pay.ok && mdStrays.length === 0 && phraseGate.length === 0 && deadRefs.length === 0
   console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
   return ok ? 0 : hook ? 2 : 1
 }
