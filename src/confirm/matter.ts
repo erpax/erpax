@@ -8,13 +8,14 @@
  * Uuid-pure stack lives in ./index.ts (`pnpm confirm:uuid`).
  */
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
-import { join, basename, relative } from 'node:path'
+import { join, basename, relative, resolve } from 'node:path'
 import { execSync } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { GATE_LANES } from '@/cli/gate'
 import { phraseWithoutDiamondChangesetGate } from '@/law/folder/user-word'
 import { deadReferencesIn } from '@/rules/reference'
 import { deadSymbolsIn } from '@/rules/prose'
+import { verifyStandardsCatalogue } from '@/standards/emit'
 
 const ROOT = process.cwd()
 const SRC = join(ROOT, 'src')
@@ -100,6 +101,34 @@ function walkMdStrays(dir: string, acc: string[] = []): string[] {
 const FOLDER_ONE_WORD = /^[a-z][a-z0-9]*$/
 const isFolderFrameworkSeg = (n: string): boolean =>
   /^\([^)]*\)$/.test(n) || /^\[.*\]$/.test(n) || n.startsWith('@') || /^[0-9]+$/.test(n)
+
+/**
+ * Does this changeset touch a standard banner? That is the ONLY way the catalogue goes stale, so it is the
+ * only time the freshness check is worth its 1.1s at the write.
+ *
+ * KNOWN FLAW in the scanner this guards ([[standards]]/emit): it is an `rg` regex over raw text, so it
+ * cannot tell a banner from a STRING that looks like one. A banner sigil followed by a space and any words
+ * is recorded as a citation wherever it appears — including inside a string literal, and including prose
+ * ABOUT the mechanism. This gate's first refusal message named the two sigils; emit filed this file as
+ * implementing an "RFC" whose title was the rest of my sentence. It caught itself immediately: the message
+ * made the catalogue stale, and this hook refused the write that added it.
+ *
+ * That is the lesson [[rules]]/reference already paid for — a string literal is DATA, not a citation — and
+ * emit has not learned it. The literals live in that atom's test on fixtures; writing one HERE would file a
+ * fresh false citation, exactly as it should. The message is worded around the scanner; the honest repair
+ * is to teach emit to read comments only, which is not an `rg` one-liner.
+ */
+export function touchesStandardBanner(files: readonly string[], root: string): boolean {
+  for (const f of files) {
+    if (!/\.(ts|tsx)$/.test(f) || /catalogue\.ts$|registry\.ts$/.test(f)) continue
+    try {
+      if (/@(standard|rfc)\s/.test(readFileSync(resolve(root, f), 'utf8'))) return true
+    } catch {
+      // deleted in this changeset — it cannot still be citing a banner
+    }
+  }
+  return false
+}
 
 export function folderNameWarnings(files: readonly string[]): string[] {
   const bad = new Set<string>()
@@ -297,6 +326,13 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // defines is a citation leading nowhere, and it is WORSE than a dead path because it reads as true. Only
   // SKILLs beside an index.ts are judged; a lexicon atom is prose by design ([[rules]]/prose).
   const deadCites = files.some((f) => f.endsWith('SKILL.md')) ? deadSymbolsIn(files, ROOT) : []
+  // The catalogue — the ONE index of which code implements which standard — rotted to 28 dead statutory
+  // pointers and ~50% drift, while `erpax standards` (GATE_LANES[0]) sat there working perfectly. It never
+  // ran: every push is --no-verify, because the whole gate exceeds the 3-minute cap and is skipped as one
+  // unit. A gate too slow to run is prose. This hook fires at the WRITE and cannot be --no-verify'd, and
+  // the check costs 1.1s — so it lives here, scoped to edits that actually touch a banner (the only way
+  // the catalogue can go stale).
+  const staleCatalogue = touchesStandardBanner(files, ROOT) && !verifyStandardsCatalogue(ROOT)
 
   const vpLine =
     vp.n === 0
@@ -327,6 +363,10 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     console.log(
       `🟥 prose     ✗  ${deadCites.length} cited symbol(s) do not exist — write the code, or stop claiming it`,
     )
+  if (staleCatalogue)
+    console.log(
+      '🟥 standards ✗  a standard banner moved and the catalogue did not follow — run `pnpm erpax standards catalogue`',
+    )
   console.log(payLine)
   for (const d of deadCites) console.error(`   dead cite  ${d.from} → \`${d.symbol}\` (nothing defines it)`)
   for (const d of deadRefs) console.error(`   dead ref   ${d.from} → ${d.target} (does not exist)`)
@@ -341,7 +381,8 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     mdStrays.length === 0 &&
     phraseGate.length === 0 &&
     deadRefs.length === 0 &&
-    deadCites.length === 0
+    deadCites.length === 0 &&
+    !staleCatalogue
   console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
   return ok ? 0 : hook ? 2 : 1
 }
