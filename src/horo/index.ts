@@ -110,6 +110,29 @@ export function throughVoid(step: number): number {
 /** The mirror's pivot: the only step that reflects to itself — 5, the generator's inverse (2·5 ≡ 1). */
 export const VOID_PIVOT = 5
 
+/**
+ * THE RING AND THE VOID GENERATE EVERYTHING — `⟨x↦2x, x↦1−x⟩ = AGL(1, ℤ/9)`, order **54**.
+ *
+ * The two moves of the sequence are not decoration; together they are the COMPLETE affine symmetry of the
+ * nine residues (every `x ↦ ax+b` with `a` a unit). Neither reaches it alone:
+ *
+ *  - doubling alone — order 6, and **trapped in the units**: it alternates `≡1 ↔ ≡2 (mod 3)` and can never
+ *    reach the axis `{3,6,9}`, because those are exactly the non-units.
+ *  - the mirror alone — order 2, an involution. But it **swaps `≡0 ↔ ≡1`**, so it is the ONLY bridge to the
+ *    axis. The ring cannot escape itself; the void is the door.
+ *  - commuted, they make the unit translation: `D∘M∘D⁻¹∘M = x ↦ x+1` (proven in this atom's test, not
+ *    asserted). Translation by 1 generates all 9 shifts; 6 units × 9 shifts = 54.
+ *
+ * So `1\2\4\8/7/5 · 3\6\9 · 0\1` is not a mnemonic — it is a generating set. Nothing is missing from it and
+ * nothing more is needed.
+ */
+export const AFFINE_ORDER = 54
+
+/** One affine step of the ring's own group: `x ↦ a·x + b` over the nine residues (digital-root spelling). */
+export function affineStep(x: number, a: number, b: number): number {
+  return (((Number(a) * Number(x) + Number(b)) % 9) + 9) % 9 || 9
+}
+
 /** A (stepA, stepB) cell is a merge point — a gateway between rings — when the composed step is 1 or 9. */
 export function isMergePoint(a: number, b: number): boolean {
   const c = composeSteps(a, b)

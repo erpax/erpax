@@ -10,6 +10,8 @@ import {
   nextOctave,
   throughVoid,
   VOID_PIVOT,
+  AFFINE_ORDER,
+  affineStep,
   isMergePoint,
   horoStateField,
   validateHoroStates,
@@ -97,6 +99,55 @@ describe('horo', () => {
 
   it('10 − n and 1 − n are ONE map — because 10 ≡ 1 (mod 9), which is why casting out nines works', () => {
     for (const n of [1, 2, 3, 4, 6, 7, 8, 9]) expect(throughVoid(n)).toBe(10 - n)
+  })
+
+  it('doubling is TRAPPED in the units — it alternates ≡1↔≡2 (mod 3) and never reaches the axis', () => {
+    const cls = (n: number) => n % 3
+    for (const n of [1, 2, 4, 8, 7, 5]) {
+      const next = (n * 2) % 9 || 9
+      expect(cls(next)).not.toBe(0) // never lands on the axis {3,6,9}
+      expect(cls(next)).not.toBe(cls(n)) // and always swaps ≡1 ↔ ≡2
+    }
+  })
+
+  it('the VOID is the only bridge to the axis — the mirror swaps ≡0 ↔ ≡1', () => {
+    for (const n of [1, 4, 7]) expect(throughVoid(n) % 3).toBe(0) // units → axis
+    for (const n of [3, 6, 9]) expect(throughVoid(n) % 3).toBe(1) // axis → units
+    for (const n of [2, 5, 8]) expect(throughVoid(n) % 3).toBe(2) // ≡2 is fixed setwise
+  })
+
+  it('ring ∘ void COMMUTED make the unit translation: D∘M∘D⁻¹∘M = x ↦ x+1', () => {
+    const dr = (n: number) => ((n % 9) + 9) % 9
+    const D = (x: number) => dr(2 * x)
+    const Di = (x: number) => dr(5 * x) // 2·5 ≡ 1
+    const M = (x: number) => dr(1 - x)
+    for (let x = 0; x < 9; x++) expect(D(M(Di(M(x))))).toBe(dr(x + 1))
+  })
+
+  it('⟨doubling, mirror⟩ IS the full affine group AGL(1,Z/9) — order 54, nothing missing', () => {
+    // computed closure, not asserted: neither move reaches it alone (orders 6 and 2)
+    const dr = (n: number) => ((n % 9) + 9) % 9
+    const comp = (g: number[], h: number[]) => [dr(g[0]! * h[0]!), dr(g[0]! * h[1]! + g[1]!)]
+    const seen = new Map<string, number[]>([['1,0', [1, 0]]])
+    for (let grew = true; grew; ) {
+      grew = false
+      for (const g of [...seen.values()]) {
+        for (const h of [
+          [2, 0], // doubling  x ↦ 2x
+          [8, 1], // mirror    x ↦ 1−x  (−1 ≡ 8)
+        ]) {
+          const p = comp(h, g)
+          const k = `${p[0]},${p[1]}`
+          if (!seen.has(k)) {
+            seen.set(k, p)
+            grew = true
+          }
+        }
+      }
+    }
+    expect(seen.size).toBe(AFFINE_ORDER) // 54 = 6 units × 9 shifts
+    expect(AFFINE_ORDER).toBe(6 * 9) // derived, not remembered
+    expect(affineStep(4, 2, 1)).toBe(dr(2 * 4 + 1) || 9)
   })
 
   it('nextOctave: 9 → 1 (seal reopens); all other steps pass through', () => {
