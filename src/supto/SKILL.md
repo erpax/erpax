@@ -157,7 +157,7 @@ The УНП and the structured **uuidv8** are the *same idea*: a fixed-layout, **
 
 ## Built (the matter that realises this skill)
 Core entities use generic concatenated data-type names — the Н-18 reference lives in the `naredba-n-18` standard + this skill, never in a slug (`sales`, not `supto-sales`).
-- **УНП format** — `src/standards/naredba-n-18/unp.ts` (format/parse/validate/increment; `parseUnp` = the reverse/decode).
+- **УНП format** — `src/naredba/n/18/unp.ts` (format/parse/validate/increment; `parseUnp` = the reverse/decode).
 - **Per-ФУ sequence hook** — `src/services/sales/unp-sequence.ts` (`assignSaleUnpHook`: gapless max+1, frozen on update). The operator code (УНП segment ZZZZ) is derived from the linked `operators` register on create (`operator-code.ts`), not hand-typed.
 - **Fiscalization scope** (`naredba-n-18/scope.ts`, чл. 3 ал. 1) — cash/card/voucher sales are IN scope (must carry a касов бон); bank transfer / direct debit / PSP / **postal money transfer (наложен платеж)** are LAWFULLY OUTSIDE СУПТО (no касов бон — an invoice/document is issued instead). The *legal* way to not use СУПТО is being out of scope, never circumventing it.
 - **No СУПТО bypass** (the core invariant) — an *in-scope* sale cannot be *closed* without a fiscal device → УНП (`assignSaleUnpHook` rejects closing a device-less cash/card/voucher sale), and the revenue membrane throws (never silently skips) for an in-regime, in-scope source with no registered ФУ. Exempt sales close without a УНП (out of scope); an unknown/blank payment type defaults to in-scope (no silent bypass by omission). No in-scope paid sale escapes the register unnumbered.

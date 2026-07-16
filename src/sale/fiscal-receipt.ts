@@ -13,7 +13,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
  * @audit ISO-19011:2018 audit-trail
- * @see .claude/skills/supto/SKILL.md · src/standards/naredba-n-18/unp.ts
+ * @see .claude/skills/supto/SKILL.md · src/naredba/n/18/unp.ts
  */
 
 import { isValidUnp } from '@/naredba/n/18'

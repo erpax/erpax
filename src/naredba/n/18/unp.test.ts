@@ -4,7 +4,7 @@
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §СУПТО УНП unique-sales-number
  * @see .claude/skills/supto/SKILL.md
- * @see src/standards/naredba-n-18/unp.ts
+ * @see src/naredba/n/18/unp.ts
  */
 
 import { describe, it, expect } from 'vitest'

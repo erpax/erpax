@@ -3,7 +3,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §Приложение-1 fiscal-device-tax-groups
- * @see src/standards/naredba-n-18/vat-groups.ts
+ * @see src/naredba/n/18/vat-groups.ts
  */
 
 import { describe, it, expect } from 'vitest'

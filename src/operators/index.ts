@@ -13,7 +13,7 @@ import { statusField, auditFields } from '@/fields'
  * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
  * @audit ISO-19011:2018 audit-trail
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/standards/naredba-n-18/unp.ts
+ * @see src/naredba/n/18/unp.ts
  */
 const Operators: CollectionConfig = {
   slug: 'operators',

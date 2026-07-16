@@ -5,7 +5,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §чл.3-ал.1
- * @see src/standards/naredba-n-18/scope.ts
+ * @see src/naredba/n/18/scope.ts
  */
 
 import { describe, it, expect } from 'vitest'
