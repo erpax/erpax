@@ -34,6 +34,7 @@
 import { readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { toUuid } from '@/uuid/matrix'
+import { foldToRoot } from '@/merge'
 
 /** Canonical atom path. */
 export const atomPath = 'anchor' as const
@@ -72,6 +73,47 @@ export function verifyAnchor(a: Anchor, cwd: string = process.cwd()): AnchorVerd
   const full = join(cwd, a.path)
   if (!existsSync(full)) return { path: a.path, state: 'gone', was: a.uuid }
   const now = toUuid(readFileSync(full))
+  return { path: a.path, state: now === a.uuid ? 'fresh' : 'moved', was: a.uuid, now }
+}
+
+/** The trinity — an atom is not a file. Form · code · proof, and its address is the fold of the three. */
+const TRINITY = ['SKILL.md', 'index.ts', 'test.ts'] as const
+
+/**
+ * The address of an ATOM: `foldToRoot` over its trinity — form · code · proof.
+ *
+ * `anchorOf` hashes a FILE, and a file is not the unit. An atom is three faces, and its identity is what the
+ * corpus already says it is: the fold. Anchoring one leg means a memory pointing at a law goes stale when its
+ * TEST changes — which is not noise. **The test changing IS the law changing**, because a law with no proof
+ * beside it forbids nothing ([[rules]]/refutable). The trinity moves together or it is not a trinity.
+ *
+ * This is the inversion made concrete: to anyone without the corpus the fold is a cipher — 36 opaque hex
+ * digits. To anyone WITH it, the same digits resolve to exactly one atom, in one state. **The one-way
+ * function hides going out and shows going in**, and that is what links inside to outside both ways.
+ *
+ * @invariant a missing leg is absent, not zero — an incomplete trinity folds to a DIFFERENT root than a
+ *   complete one, so a half-built atom can never wear a finished atom's address
+ */
+export function atomAnchor(atomPath: string, cwd: string = process.cwd()): Anchor {
+  const legs = TRINITY.map((leg) => join(cwd, atomPath, leg))
+    .filter(existsSync)
+    .map((p) => toUuid(readFileSync(p)))
+  if (legs.length === 0) throw new Error(`anchor — ${atomPath} has no trinity leg to address`)
+  return { path: atomPath, uuid: foldToRoot(legs) }
+}
+
+/**
+ * Does the atom still say what a memory remembers? Same verdicts, folded over the trinity.
+ *
+ * `gone` means the atom lost every leg — not that one face was edited. A rotted path is not a changed truth.
+ */
+export function verifyAtomAnchor(a: Anchor, cwd: string = process.cwd()): AnchorVerdict {
+  let now: string
+  try {
+    now = atomAnchor(a.path, cwd).uuid
+  } catch {
+    return { path: a.path, state: 'gone', was: a.uuid }
+  }
   return { path: a.path, state: now === a.uuid ? 'fresh' : 'moved', was: a.uuid, now }
 }
 

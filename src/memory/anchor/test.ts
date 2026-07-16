@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, writeFileSync, rmSync, mkdirSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { anchorOf, verifyAnchor, anchorsIn, atomPath } from './index'
+import { anchorOf, verifyAnchor, anchorsIn, atomPath, atomAnchor, verifyAtomAnchor } from './index'
 
 const fixture = (body: string): { cwd: string; path: string } => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-anchor-'))
@@ -61,5 +61,46 @@ describe('anchor — the content-address links inside and outside, both ways', (
 
   it('a memory with no anchor claims nothing — silence is not a stale claim', () => {
     expect(anchorsIn('just prose about the corpus')).toEqual([])
+  })
+})
+
+describe('atomAnchor — an atom is a TRINITY, not a file', () => {
+  const atom = (legs: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-trinity-'))
+    mkdirSync(join(cwd, 'src/law'), { recursive: true })
+    for (const [n, b] of Object.entries(legs)) writeFileSync(join(cwd, 'src/law', n), b)
+    return cwd
+  }
+
+  it('folds form · code · proof to ONE address', () => {
+    const cwd = atom({ 'SKILL.md': 'the law', 'index.ts': 'export const x = 1', 'test.ts': 'it("holds")' })
+    const a = atomAnchor('src/law', cwd)
+    expect(a.uuid).toHaveLength(36)
+    expect(verifyAtomAnchor(a, cwd).state).toBe('fresh')
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // The test changing IS the law changing: a law with no proof beside it forbids nothing (rules/refutable).
+  // The trinity moves together or it is not a trinity.
+  it('a changed PROOF moves the atom — the law did not survive its test changing', () => {
+    const cwd = atom({ 'SKILL.md': 'the law', 'index.ts': 'export const x = 1', 'test.ts': 'it("holds")' })
+    const before = atomAnchor('src/law', cwd)
+    writeFileSync(join(cwd, 'src/law/test.ts'), 'it("holds differently")')
+    expect(verifyAtomAnchor(before, cwd).state).toBe('moved')
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('an INCOMPLETE trinity cannot wear a complete one\'s address', () => {
+    const full = atom({ 'SKILL.md': 'the law', 'index.ts': 'export const x = 1', 'test.ts': 'it("holds")' })
+    const partial = atom({ 'SKILL.md': 'the law', 'index.ts': 'export const x = 1' }) // no proof
+    expect(atomAnchor('src/law', partial).uuid).not.toBe(atomAnchor('src/law', full).uuid)
+    rmSync(full, { recursive: true, force: true })
+    rmSync(partial, { recursive: true, force: true })
+  })
+
+  it('an atom with no leg at all is GONE, not zero', () => {
+    const cwd = atom({})
+    expect(verifyAtomAnchor({ path: 'src/law', uuid: 'x' }, cwd).state).toBe('gone')
+    rmSync(cwd, { recursive: true, force: true })
   })
 })
