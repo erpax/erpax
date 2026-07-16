@@ -18,13 +18,24 @@ ReferenceError: Cannot access 'createAccountingCollection' before initialization
     at src/fixed/assets/index.ts:34
 ```
 
-**erpax's `payload.config` does not load — in any loader:**
+**erpax's `payload.config` does not load — and a verdict names WHERE it was taken:**
 
-| loader | outcome |
+| coordinate | outcome |
 | --- | --- |
-| `tsx` / node ESM | **TDZ** — `fixed/assets:34` |
-| `vitest` / Vite | **TDZ** — same line |
-| `next dev` / turbopack | **compile error** — a different defect entirely (see below) |
+| `esm` (tsx/node) | **TDZ** — `fixed/assets:34` |
+| `vite` (vitest) | **TDZ** — the same line |
+| `turbopack` (next dev) | **compile error** — a different defect first (`src/pages`, below) |
+| `workers` (Cloudflare/OpenNext) | **UNTRIED** — absent, not passing |
+
+## A verdict is a function of (source, observer)
+
+`bootVerdict` returned a bare `loads: boolean` — a claim from **nowhere**, which is the same error this atom exists to catch. The corpus loads or does not **per entry point**, and at each one the answer is *exact*:
+
+> `confirm/matter.test.ts` passed 9 tests, then could not collect — **at the same commit.** The live confirm hook blocked writes all day, then crashed at `diamond/index.ts:293`. Both verified pre-existing by restoring HEAD's own files.
+
+I called that **non-determinism**. It is not. **Initialisation order is a function of the entry point**, so the state is determined once the coordinate is fixed; I was comparing two coordinates without naming either, and averaging them into "it fails" / "it works" about unchanged source. `currentLoader()` is **detected**, never passed — a caller that names its own coordinate can be wrong, and a wrong coordinate makes a correct verdict a lie.
+
+This is [[rules]]/audience's law applied to machines instead of people: the fabricated cash flow is false **only from the director's seat**; the TDZ fires **only from certain entry points**. A claim has no truth value until you name the observer. Each is its own rosetta — same corpus, different projection, both exact.
 
 `fixed/assets` calls `createAccountingCollection(...)` at **module top level**, inside the 225-file tangle ([[rules]]/cycle) — the single fatal site `fatalCycleUses` named out of 248 entangled files. It was found there by reading, before this test existed. Now it is the thing that stops the app.
 
