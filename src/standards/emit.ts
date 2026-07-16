@@ -2,7 +2,7 @@
  * standards/emit — the ONE shared, uuid-native index where the dissolved
  * standards vocabulary meets.
  *
- *   pnpm standards:catalogue          ·          verify: pnpm standards (--verify)
+ *   pnpm erpax standards catalogue     ·     verify: pnpm erpax standards
  *
  * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers, one uuid)
  * @standard ISO-19011:2018 §6.4 audit-evidence (citations are the audit trail)
@@ -115,7 +115,7 @@ export function emitCatalogueTs(entries: CatalogueEntry[], cwd: string = process
  * dissolved across src/, each standard projected to its content-uuid + colour.
  * Consumed by BOTH frontends — the payload seed (src/standards/seed.ts) and the
  * vitepress page (src/standards/SKILL.md). Logic meets here. Regenerate:
- *   pnpm standards:catalogue     ·     verify: pnpm standards
+ *   pnpm erpax standards catalogue     ·     verify: pnpm erpax standards
  *
  * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
  * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
@@ -232,7 +232,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
   if (process.argv.includes('--verify')) {
     if (!verifyStandardsCatalogue(cwd)) {
-      console.error('ERROR: src/standards/catalogue.ts is stale. Run: pnpm standards:catalogue')
+      console.error('ERROR: src/standards/catalogue.ts is stale. Run: pnpm erpax standards catalogue')
       process.exit(1)
     }
     console.log(`OK — catalogue fresh (${cited.length} cited standards, uuid-native).`)
