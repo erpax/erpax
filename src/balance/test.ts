@@ -134,7 +134,12 @@ describe('balance: the live aura measurement', () => {
   // as orphans are reconciled (mint the singular model, or classify NON_PLURAL / PLURAL_ONLY). It is
   // NOT always-pass — adding one orphan breaks it. Run `npx tsx src/balance/index.ts` to list them.
   it('coverageRatchetFloor derives from orphan baseline — not a magic decimal', () => {
-    expect(coverageRatchetFloor({ collections: 100 })).toBeCloseTo(0.78, 10) // (100−22)/100
+    // DERIVED, so the ratchet can move without rotting this test. It previously hardcoded 0.78 — which was
+    // (100−22)/100, i.e. the baseline itself, frozen as a literal in the test that forbids magic decimals.
+    expect(coverageRatchetFloor({ collections: 100 })).toBeCloseTo(
+      (100 - ORPHAN_COLLECTION_BASELINE) / 100,
+      10,
+    )
     expect(coverageRatchetFloor({ collections: 0 })).toBe(1)
     const d = classify(['item', 'items', 'widgets', 'gadgets']) // 2 collections, 2 orphans
     expect(coverageRatchetFloor(d, 2)).toBeCloseTo(coverage(d), 10)

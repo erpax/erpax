@@ -78,9 +78,27 @@ export const PLURAL_ONLY: ReadonlySet<string> = new Set([
   'airbags', 'axles', 'bathrooms', 'bedrooms', 'calories', 'gears', 'guests', 'pats',
 ])
 
-/** A word is a plural COLLECTION form: ends in -s (not -ss), length > 2, not a known non-plural. */
+/**
+ * The LEXICON — every schema.org component word collided into `vocabulary/`. A lexicon entry is a WORD, not
+ * a store: `dangerous` is an adjective, `exemplifies`/`refers`/`means` are verbs, `fungus` is a Latin
+ * singular, `percutaneous` is not a plural of anything. Asking such a word for its "singular model" is a
+ * category error that reads as disbalance.
+ *
+ * Computed from the matrix, so the code names itself — a hand-written list is a human doing the lexicon's
+ * job and missing words (`NON_PLURAL` did exactly that: 133 entries, 54 of them already lexicon words, and
+ * it still missed `dangerous` · `fungus` · `exemplifies`). `NON_PLURAL` stays for real English morphology
+ * the lexicon does not carry (Latin/Greek singulars, -ics mass nouns); the lexicon carries the rest.
+ */
+const LEXICON: ReadonlySet<string> = new Set(
+  N.filter((n) => n.path?.startsWith('vocabulary/')).map((n) => n.atom),
+)
+
+/** True when the word is a schema.org component word — vocabulary, never a collection. */
+export const isLexiconWord = (w: string): boolean => LEXICON.has(w)
+
+/** A word is a plural COLLECTION form: ends in -s (not -ss), length > 2, not a known non-plural, not a lexicon word. */
 export const isPluralForm = (w: string): boolean =>
-  w.length > 2 && w.endsWith('s') && !w.endsWith('ss') && !NON_PLURAL.has(w)
+  w.length > 2 && w.endsWith('s') && !w.endsWith('ss') && !NON_PLURAL.has(w) && !LEXICON.has(w)
 
 /** Singularise a plural to the form its MODEL would take: categories→category, boxes→box, items→item. */
 export const singularize = (w: string): string => {
@@ -168,7 +186,15 @@ export const tamperCostLog2 = (d: Distribution, checks = 1): number =>
  * A plural store with no singular model; reconciled by minting the model or
  * classifying NON_PLURAL / PLURAL_ONLY.
  */
-export const ORPHAN_COLLECTION_BASELINE = 22
+/**
+ * Stores with no model. Ratcheted **22 → 4** when the lexicon started naming: 19 of the 23 were never
+ * collections at all — `dangerous` (adjective), `refers`/`means`/`exemplifies` (verbs), `fungus` (Latin
+ * singular), `percutaneous`. A hand list had been asked to know what the lexicon already knew.
+ *
+ * The genuine four — `comms` · `readings` · `sanctions` · `violations` — are real stores with no singular
+ * model. Ratchet DOWN as each gets its model or folds away; never up.
+ */
+export const ORPHAN_COLLECTION_BASELINE = 4
 
 /**
  * Coverage floor derived from the orphan baseline and live collection count —
