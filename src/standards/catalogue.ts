@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 133,
+    "count": 130,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -1653,7 +1653,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2017/1132 relating to certain aspects of company law (codification)",
     "uuid": "11f95f98-2f21-8aba-ba32-3c9408e5d1ef",
     "color": "hsl(281 80% 46%)",
-    "count": 146,
+    "count": 144,
     "modules": [
       {
         "path": "src/address/validation/SKILL.md",
@@ -1759,7 +1759,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2017/828 (SRD II) amending Directive 2007/36/EC as regards the encouragement of long-term shareholder engagement",
     "uuid": "78becb9c-64ae-8a87-89c0-4614e0a5068e",
     "color": "hsl(310 83% 50%)",
-    "count": 146,
+    "count": 144,
     "modules": [
       {
         "path": "src/address/validation/SKILL.md",
@@ -1971,7 +1971,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/1925 — Digital Markets Act (DMA)",
     "uuid": "99abd903-2be6-85f9-ba7b-6ae2e9e4a3b9",
     "color": "hsl(99 62% 41%)",
-    "count": 126,
+    "count": 125,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2077,7 +2077,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/2065 — Digital Services Act (DSA)",
     "uuid": "f1fce4ae-fc69-8307-9f3a-3528a8373ca4",
     "color": "hsl(28 73% 44%)",
-    "count": 126,
+    "count": 125,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2183,7 +2183,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/2554 (DORA) on digital operational resilience for the financial sector",
     "uuid": "1f2ce151-0159-8fc6-8984-d4cdf7dc0f8c",
     "color": "hsl(60 70% 47%)",
-    "count": 126,
+    "count": 125,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2289,7 +2289,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2022/2555 (NIS2) — measures for a high common level of cybersecurity across the Union",
     "uuid": "672f0cf3-96e4-83fe-803d-a8e87a383299",
     "color": "hsl(135 67% 41%)",
-    "count": 126,
+    "count": 125,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2395,7 +2395,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/868 — Data Governance Act (DGA), on European data governance and amending Regulation (EU) 2018/1724",
     "uuid": "a4c1f12f-ca9c-8b7a-bada-c3f01ef0d7d3",
     "color": "hsl(57 86% 61%)",
-    "count": 126,
+    "count": 125,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2501,7 +2501,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2018/1673 (6th Anti-Money-Laundering Directive, AMLD6) on combating money laundering by criminal law",
     "uuid": "5d0d3b82-8a4b-8802-84c0-f6e6c2a6255d",
     "color": "hsl(61 79% 48%)",
-    "count": 97,
+    "count": 96,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2607,7 +2607,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Geo-blocking Regulation (Regulation (EU) 2018/302)",
     "uuid": "5fec2727-8ed5-88a4-b744-53f0dc4f2f32",
     "color": "hsl(76 59% 53%)",
-    "count": 97,
+    "count": 96,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2713,7 +2713,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 — regulatory technical standards for strong customer authentication and common and secure open standards of communication (SCA-RTS)",
     "uuid": "b6bd7981-4978-88fe-aab0-db169e2f11b9",
     "color": "hsl(341 71% 47%)",
-    "count": 97,
+    "count": 96,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2819,7 +2819,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2018/843 (5th Anti-Money-Laundering Directive, AMLD5) amending Directive (EU) 2015/849",
     "uuid": "236c9091-ba23-8612-b31a-7ed41603a127",
     "color": "hsl(68 59% 39%)",
-    "count": 97,
+    "count": 96,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2925,7 +2925,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Revised Posting of Workers Directive — Directive (EU) 2018/957 amending Directive 96/71/EC",
     "uuid": "50aa60a9-70e7-8a4e-ad5a-78f845f7dba2",
     "color": "hsl(130 81% 39%)",
-    "count": 97,
+    "count": 96,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -4782,7 +4782,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2018/1725 — protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data",
     "uuid": "0d44a96c-9a80-8cc8-bd9d-5a1319876b04",
     "color": "hsl(156 84% 50%)",
-    "count": 97,
+    "count": 96,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -5109,7 +5109,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 44,
+    "count": 43,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -5160,10 +5160,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§1"
-      },
-      {
         "path": "src/money/test.ts",
         "section": ""
       },
@@ -5205,6 +5201,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/testing/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/testing/config/discovery/index.ts",
         "section": ""
       }
     ]
@@ -5535,7 +5535,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Presentation of Financial Statements",
     "uuid": "f0bae7c9-3fa5-8ce5-b51b-b8e884e6c122",
     "color": "hsl(66 76% 47%)",
-    "count": 16,
+    "count": 15,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -5584,10 +5584,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/double/entry/validator/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§404"
       },
       {
         "path": "src/post/close/analytics/service.ts",
@@ -5794,48 +5790,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "IFRS-9",
-    "family": "ifrs",
-    "title": "Financial Instruments",
-    "uuid": "b3a9bba5-709b-86ba-9810-38952cce37a5",
-    "color": "hsl(273 67% 59%)",
-    "count": 9,
-    "modules": [
-      {
-        "path": "src/config/iso/4217/special/index.ts",
-        "section": "§3.2"
-      },
-      {
-        "path": "src/currency/reconciliation/SKILL.md",
-        "section": "§38"
-      },
-      {
-        "path": "src/currency/reconciliation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§BG-3"
-      },
-      {
-        "path": "src/multi/currency/closing/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/multi/currency/closing/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenant/roles/profile/bank.profile.ts",
-        "section": ""
-      },
-      {
-        "path": "src/validate/multi/currency/closing/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "IFRS-2",
     "family": "ifrs",
     "title": "Share-based Payment",
@@ -5868,6 +5822,44 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/held/for/sale/classifications/index.ts",
         "section": "§6-§9"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-9",
+    "family": "ifrs",
+    "title": "Financial Instruments",
+    "uuid": "b3a9bba5-709b-86ba-9810-38952cce37a5",
+    "color": "hsl(273 67% 59%)",
+    "count": 8,
+    "modules": [
+      {
+        "path": "src/config/iso/4217/special/index.ts",
+        "section": "§3.2"
+      },
+      {
+        "path": "src/currency/reconciliation/SKILL.md",
+        "section": "§38"
+      },
+      {
+        "path": "src/currency/reconciliation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/multi/currency/closing/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/multi/currency/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenant/roles/profile/bank.profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/validate/multi/currency/closing/index.ts",
+        "section": ""
       }
     ]
   },
@@ -5972,7 +5964,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Date and time representation",
     "uuid": "dcc7dde3-fa6b-8409-9382-89554e4c4d2b",
     "color": "hsl(359 66% 49%)",
-    "count": 341,
+    "count": 340,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -6396,7 +6388,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 88,
+    "count": 86,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -8111,7 +8103,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG fiscal-device & SUPTO ordinance",
     "uuid": "6a08f86f-afe0-8049-a445-c03e255093d7",
     "color": "hsl(144 58% 53%)",
-    "count": 35,
+    "count": 32,
     "modules": [
       {
         "path": "src/audit/submissions/index.ts",
@@ -8170,10 +8162,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§СУПТО"
       },
       {
-        "path": "src/rules/reference/test.ts",
-        "section": "§СУПТО"
-      },
-      {
         "path": "src/sale/audit-file.ts",
         "section": "§Приложение-38"
       },
@@ -8208,6 +8196,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/sale/reverse-sale.ts",
         "section": "§СУПТО"
+      },
+      {
+        "path": "src/sale/sale-event.ts",
+        "section": "§СУПТО"
       }
     ]
   },
@@ -8217,7 +8209,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG Value Added Tax Act",
     "uuid": "83644ba0-d61a-840d-9821-ea275af4340f",
     "color": "hsl(156 60% 54%)",
-    "count": 4,
+    "count": 3,
     "modules": [
       {
         "path": "src/naredba/n/18/index.ts",
@@ -8229,10 +8221,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/rules/reference/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/rules/reference/index.ts",
         "section": ""
       }
     ]
@@ -8252,7 +8240,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 90,
+    "count": 88,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -8260,10 +8248,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/agent/strict-apply.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
         "section": ""
       },
       {
@@ -8349,6 +8333,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/error/uuid/index.ts",
         "section": "§3.4"
+      },
+      {
+        "path": "src/fiscal/period/SKILL.md",
+        "section": ""
       }
     ]
   },
@@ -8570,7 +8558,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Attribute-Based Access Control",
     "uuid": "6610734e-3592-8047-9ea5-ce820cc75918",
     "color": "hsl(208 65% 44%)",
-    "count": 18,
+    "count": 16,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -8578,10 +8566,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/agent/strict-apply.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
         "section": ""
       },
       {
@@ -8780,14 +8764,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Application Security Verification Standard",
     "uuid": "b55af77e-a755-8046-a653-0472364e07e3",
     "color": "hsl(346 57% 44%)",
-    "count": 15,
+    "count": 14,
     "modules": [
       {
         "path": "src/agent/strict-apply.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
         "section": ""
       },
       {
@@ -9190,7 +9170,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Enterprise Risk Management — Integrating with Strategy and Performance (2017)",
     "uuid": "4ff3ea84-eb9f-80d5-bc11-1a3996d0b20a",
     "color": "hsl(307 79% 50%)",
-    "count": 146,
+    "count": 144,
     "modules": [
       {
         "path": "src/address/validation/SKILL.md",
@@ -10023,24 +10003,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ILO-C105",
-    "family": "other",
-    "title": "Abolition of Forced Labour Convention, 1957 (No. 105)",
-    "uuid": "55bb2040-cb6a-8f12-8b34-f87d488b197f",
-    "color": "hsl(347 87% 54%)",
-    "count": 2,
-    "modules": [
-      {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/media/audit/evidences/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "RFC-6750",
     "family": "other",
     "title": "The OAuth 2.0 Authorization Framework: Bearer Token Usage",
@@ -10054,6 +10016,20 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/oauth/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C105",
+    "family": "other",
+    "title": "Abolition of Forced Labour Convention, 1957 (No. 105)",
+    "uuid": "55bb2040-cb6a-8f12-8b34-f87d488b197f",
+    "color": "hsl(347 87% 54%)",
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/media/audit/evidences/index.ts",
         "section": ""
       }
     ]
@@ -10411,7 +10387,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 157,
+    "count": 156,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -10933,7 +10909,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 23,
+    "count": 22,
     "modules": [
       {
         "path": "src/agents/accounting/finance.agent.ts",
@@ -10978,10 +10954,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§404"
       },
       {
         "path": "src/legal/entities/fiscal/calendars/SKILL.md",
@@ -11642,7 +11614,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "FASB Accounting Standards Codification",
     "uuid": "2f956ac0-320d-88bf-be9b-d3759aeccb6d",
     "color": "hsl(301 56% 38%)",
-    "count": 19,
+    "count": 17,
     "modules": [
       {
         "path": "src/customers/contracts/contract/amendments/index.ts",
@@ -11675,10 +11647,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/held/for/sale/classifications/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§404"
       },
       {
         "path": "src/invoices/invoice/lines/hooks/recomputeItemInventory.ts",
@@ -11765,7 +11733,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1988,
+    "count": 1985,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
@@ -11977,7 +11945,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Provenance Ontology",
     "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
     "color": "hsl(142 89% 52%)",
-    "count": 26,
+    "count": 25,
     "modules": [
       {
         "path": "src/beyond/SKILL.md",
@@ -12030,10 +11998,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/gl/accounts/account/reconciliations/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/internal/controls/audit/findings/court-docket.ts",
-        "section": "§1"
       },
       {
         "path": "src/journal/entries/SKILL.md",

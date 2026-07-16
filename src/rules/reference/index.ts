@@ -47,11 +47,20 @@ const GENERATED =
 const REF_RE = /src\/[A-Za-z0-9_./-]*[A-Za-z0-9_/-]/g
 
 /**
- * Where a reference can live. In prose (`.md`) every path is a pointer. In CODE only a **comment** is a
- * pointer — a path in a string literal is DATA: a hermetic test fixture key, a glob, a config value. Scanning
- * code literals flags a test's own fixtures as dead pointers, which is how a gate earns being ignored.
+ * The surface of a file where PROSE lives: its comments, or — for markdown — the whole document.
+ *
+ * A string literal is DATA, not prose: a path inside one is a fixture key, a glob or a config value, and it
+ * states nothing about the corpus. Counting them flagged live code as rotten — this atom reported 97
+ * statutory / 754 tree-wide dead pointers until strings were excluded; the honest numbers were 48 / 504.
+ * (An example path cannot be written even here: this comment IS the scanned surface, so illustrating a dead
+ * pointer would BE one. The literals live in this atom's test, on fixtures.) [[standards]]/emit had not
+ * learned it and
+ * filed a citation for any banner sigil in raw text — including inside a string, and including prose ABOUT
+ * banners; measured across the live tree, 24 of its 5,881 hits were not prose at all. It is exported rather
+ * than restated there, because the same lie written in two places is fixed in neither ([[merge]]/chainLeaf,
+ * where one audit-leaf stub was hand-rolled eight times).
  */
-const referenceText = (file: string, text: string): string =>
+export const proseOf = (file: string, text: string): string =>
   /\.(md|mdx)$/.test(file) ? text : (text.match(/\/\/[^\n]*|\/\*[\s\S]*?\*\//g) ?? []).join('\n')
 
 /**
@@ -84,7 +93,7 @@ export function deadReferencesIn(files: readonly string[], cwd: string = process
     } catch {
       continue
     }
-    for (const target of new Set(referenceText(p, text).match(REF_RE) ?? [])) {
+    for (const target of new Set(proseOf(p, text).match(REF_RE) ?? [])) {
       if (!resolves(cwd, target)) {
         dead.push({ from: relative(cwd, p).replace(/\\/g, '/'), target })
       }

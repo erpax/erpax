@@ -11,6 +11,7 @@
 import { execSync } from 'node:child_process'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
+import { proseOf } from '@/rules/reference'
 import { STANDARDS_REGISTRY, type RegisteredStandard } from '@/standards/registry'
 import { uuid } from '@/integrity/content-uuid'
 import { uuidColor } from '@/uuid/projection'
@@ -49,7 +50,24 @@ function scan(cwd: string): { path: string; value: string }[] {
     const m = line.match(/^(.+?):\d+:@(?:standard|rfc)\s+(.+)$/)
     if (m) hits.push({ path: m[1]!, value: m[2]!.trim() })
   }
-  return hits
+
+  // rg reads RAW TEXT, so a banner sigil counts wherever it appears — including inside a string literal, and
+  // including prose ABOUT banners. It filed this file as citing its own SKILL-template string, and it filed
+  // [[confirm]]/matter as implementing an "RFC" whose title was the rest of a refusal message. A string is
+  // DATA, not a citation — the lesson [[rules]]/reference already paid for, reused here rather than
+  // restated (the same law written twice is fixed in neither). rg still chooses the FILES: it honours
+  // .gitignore, so the generated faces that restate every banner stay out.
+  const prose = new Map<string, string>()
+  return hits.filter((h) => {
+    if (!prose.has(h.path)) {
+      try {
+        prose.set(h.path, proseOf(h.path, readFileSync(join(cwd, h.path), 'utf8')))
+      } catch {
+        prose.set(h.path, '')
+      }
+    }
+    return prose.get(h.path)!.includes(h.value)
+  })
 }
 
 function sectionOf(value: string): string {
