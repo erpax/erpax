@@ -12,6 +12,7 @@ import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
+import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { r2Storage } from '@payloadcms/storage-r2'
 import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
@@ -324,6 +325,25 @@ export default buildConfig({
     }),
     createEcommercePlugin(),
     formBuilderPlugin({}),
+    // The self-referential TREES get the canonical nested-docs plugin — COMPUTED, never a hand list:
+    // a collection that declares `parent → its own slug` IS a tree, so a new one registers itself and a
+    // deleted one deregisters. erpax hand-rolled this tree 9 times while the plugin sat installed.
+    //
+    // The plugin does not duplicate the existing `parent` — it ENHANCES it with `filterOptions` that forbid
+    // self-parenting (the acyclic `@invariant` on work/phases that nothing enforced before) — and adds
+    // `breadcrumbs`, the materialized path. That path IS etrima's `ancestry` column, which the port dropped
+    // and which the canonical package gives back. Labels come from each collection's `useAsTitle`
+    // (verified present on all 9), so no `title` field is required.
+    nestedDocsPlugin({
+      collections: (Object.values(allCollections) as CollectionConfig[])
+        .filter((c) =>
+          c.fields.some(
+            (f) =>
+              'name' in f && f.name === 'parent' && 'relationTo' in f && f.relationTo === c.slug,
+          ),
+        )
+        .map((c) => c.slug),
+    }),
     // Official content-surface plugins (see the `redirects` + `search` skills).
     // Registering them is what makes `'redirects'`/`'search'` real CollectionSlugs.
     redirectsPlugin({
