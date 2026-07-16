@@ -22,6 +22,8 @@
  * @invariant Management reporting includes KPI metrics with threshold alerts and trend analysis
  */
 
+import { chainLeaf } from '@/merge'
+
 interface VarianceAnalysisItem {
   lineItem: string
   budgetedAmount: number
@@ -660,9 +662,6 @@ export class PostCloseAnalytics {
     analyticsData: Record<string, unknown>,
     priorChainLeaf: string = '',
   ): string {
-    // Simplified: sha256 of JCS-canonical data + prior leaf
-    const payload = JSON.stringify(analyticsData)
-    const combined = payload + (priorChainLeaf || '')
-    return Buffer.from(combined).toString('base64').substring(0, 32)
+    return chainLeaf(analyticsData, priorChainLeaf)
   }
 }

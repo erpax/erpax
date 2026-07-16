@@ -24,6 +24,8 @@
  * @invariant Elimination accounts prepared but not auto-posted (requires approval)
  */
 
+import { chainLeaf } from '@/merge'
+
 interface IntercompanyBalance {
   fromEntity: string
   toEntity: string
@@ -282,10 +284,6 @@ export class IntercompanyReconciliation {
     reconciliationData: Record<string, unknown>,
     priorChainLeaf: string = '',
   ): string {
-    // Simplified: sha256 of JCS-canonical data + prior leaf
-    // In production, use crypto.subtle.digest('SHA-256', ...) for NIST FIPS 180-4
-    const payload = JSON.stringify(reconciliationData)
-    const combined = payload + (priorChainLeaf || '')
-    return Buffer.from(combined).toString('base64').substring(0, 32)
+    return chainLeaf(reconciliationData, priorChainLeaf)
   }
 }

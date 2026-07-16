@@ -31,6 +31,33 @@ export function merge(a: string, b: string): string {
 }
 
 /**
+ * The audit chain leaf — the fold's binary step over a record and the leaf before it.
+ *
+ * This is not a new primitive; it is `merge` with the record serialised, and it exists because the corpus
+ * hand-rolled it SEVEN times instead ([[fiscal]]/period/resolver · post/close/analytics ·
+ * intercompany/reconciliation · tax/period/reconciliation · audit/compliance/reporting ·
+ * currency/reconciliation · closing/period/checker). Every copy was byte-identical:
+ *
+ *   `Buffer.from(payload + prior).toString('base64').substring(0, 32)`
+ *
+ * — base64, a reversible encoding, truncated to the first 24 bytes of input, under a banner claiming
+ * tamper detection. A field could be rewritten past byte 24 without moving the leaf, and `prior` was
+ * appended past the window, so the chain never chained. Seven statutory closing surfaces, zero tamper-cost.
+ *
+ * A law restated seven times is seven places for one lie to sit, and no fix ever reaches the others. It is
+ * stated here once.
+ *
+ * HONEST BOUNDARY: `JSON.stringify` is NOT JCS (RFC 8785), which the old copies' comments claimed to be —
+ * key order is insertion order, so the same record built in a different order addresses differently. Callers
+ * that build their payload in one place are fine; a chain assembled from two call sites is not, and the
+ * canonicalisation those comments promised is still unwritten. This makes tampering DETECTABLE, never
+ * impossible, and only for whoever recomputes the leaf.
+ */
+export function chainLeaf(data: Record<string, unknown>, priorLeaf: string = ''): string {
+  return merge(JSON.stringify(data), priorLeaf)
+}
+
+/**
  * The fold: pair-merge a row of elements up to the ONE root — the actual Merkle root that [[fold]]
  * only COUNTS (depth ⌈log2 N⌉, N−1 merges). An odd element carries up unchanged; a single element is
  * already its own root; the empty row folds to the void's address (the identity of the closed set).

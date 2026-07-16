@@ -19,6 +19,8 @@
  * @invariant Closing state: in-progress → pending-approval → approved → posted → finalized
  */
 
+import { chainLeaf } from '@/merge'
+
 interface ClosingValidation {
   isEligible: boolean
   errors: string[]
@@ -281,10 +283,6 @@ export class ClosingPeriodChecker {
    * @returns Chain leaf UUID
    */
   static computeChainLeaf(closingData: Record<string, unknown>, priorChainLeaf: string = ''): string {
-    // Simplified: sha256 of JCS-canonical data + prior leaf
-    // In production, use crypto.subtle.digest('SHA-256', ...) for NIST FIPS 180-4
-    const payload = JSON.stringify(closingData)
-    const combined = payload + (priorChainLeaf || '')
-    return Buffer.from(combined).toString('base64').substring(0, 32)
+    return chainLeaf(closingData, priorChainLeaf)
   }
 }

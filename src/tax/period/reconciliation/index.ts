@@ -23,6 +23,8 @@
  * @invariant Tax-period-specific eliminations prepared (posted only after tax authority approval)
  * @invariant All tax adjustment journals include supporting documentation (audit trail)
  */
+
+import { chainLeaf } from '@/merge'
 import { horoRatio } from '@/horo'
 
 /** Documentation completeness default — horo unity per decade (9/10), not a `0.9` literal. */
@@ -334,10 +336,6 @@ export class TaxPeriodReconciliation {
     reconciliationData: Record<string, unknown>,
     priorChainLeaf: string = '',
   ): string {
-    // Simplified: sha256 of JCS-canonical data + prior leaf
-    // In production, use crypto.subtle.digest('SHA-256', ...) for NIST FIPS 180-4
-    const payload = JSON.stringify(reconciliationData)
-    const combined = payload + (priorChainLeaf || '')
-    return Buffer.from(combined).toString('base64').substring(0, 32)
+    return chainLeaf(reconciliationData, priorChainLeaf)
   }
 }

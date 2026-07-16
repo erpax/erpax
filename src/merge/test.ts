@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof } from './index'
+import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof, chainLeaf } from './index'
 
 describe('merge — the binary operation of the folded algebra', () => {
   it('same content ⇒ same address (the self-address congruence — dedup by physics, not registry)', () => {
@@ -52,5 +52,44 @@ describe('merge — the inclusion proof (total membership; the one-way wall reso
   it('BOTTOM is the void address — the algebra-s ⊥, deterministic', () => {
     expect(BOTTOM).toBe(foldToRoot([])) // the empty fold IS the bottom
     expect(BOTTOM).toHaveLength(36)
+  })
+
+  // chainLeaf — the fold over a record + the leaf before it. Hand-rolled seven times as base64 truncated to
+  // the first 24 bytes of input, under a banner claiming tamper detection. These are the properties every
+  // one of those copies failed; they are asserted here once, where the law now lives.
+  describe('chainLeaf — the audit leaf, stated once', () => {
+    it('is the fold, not a private hash', () => {
+      expect(chainLeaf({ a: 1 }, 'prior')).toBe(merge(JSON.stringify({ a: 1 }), 'prior'))
+      expect(chainLeaf({ a: 1 })).toHaveLength(36)
+    })
+
+    it('covers the WHOLE record — the old leaf saw only the first 24 bytes', () => {
+      const long = { padding: 'x'.repeat(64), fiscalYear: 2026 }
+      const tampered = { padding: 'x'.repeat(64), fiscalYear: 9999 }
+      const old = (d: unknown) => Buffer.from(JSON.stringify(d)).toString('base64').substring(0, 32)
+      expect(old(long)).toBe(old(tampered)) // the defect: rewritten past the window, unnoticed
+      expect(chainLeaf(long)).not.toBe(chainLeaf(tampered))
+    })
+
+    it('CHAINS — the prior leaf is an input, not decoration', () => {
+      expect(chainLeaf({ a: 1 }, 'A')).not.toBe(chainLeaf({ a: 1 }, 'B'))
+      expect(chainLeaf({ a: 1 }, 'A')).not.toBe(chainLeaf({ a: 1 }))
+    })
+
+    it('is one-way — the old leaf decoded back to plaintext', () => {
+      const secret = { salary: 999 }
+      expect(Buffer.from(Buffer.from(JSON.stringify(secret)).toString('base64'), 'base64').toString()).toContain('999')
+      expect(chainLeaf(secret)).not.toContain('999')
+    })
+
+    it('same content, same address — the fold law, and the reason dedup works', () => {
+      expect(chainLeaf({ a: 1, b: 2 })).toBe(chainLeaf({ a: 1, b: 2 }))
+    })
+
+    // The honest boundary, asserted rather than promised: JSON.stringify is NOT JCS (RFC 8785). The same
+    // record built key-order-differently addresses differently. The old copies' comments claimed JCS.
+    it('is NOT canonical — key order changes the address, as the old comments denied', () => {
+      expect(chainLeaf({ a: 1, b: 2 })).not.toBe(chainLeaf({ b: 2, a: 1 }))
+    })
   })
 })

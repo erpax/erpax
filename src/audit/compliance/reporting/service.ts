@@ -23,6 +23,8 @@
  * @invariant Cross-jurisdiction optimizations flagged for compliance review (not auto-implemented)
  */
 
+import { chainLeaf, merge } from '@/merge'
+
 interface AuditFileMetadata {
   auditFileVersion: string
   auditingStandard: string
@@ -419,11 +421,17 @@ export class AuditComplianceReporting {
   }
 
   /**
-   * Private helper: Compute file checksum for audit integrity.
+   * The audit file's content-address — `merge(content, '')`, the fold ([[merge]]).
+   *
+   * It was `Buffer.from(content).toString('base64').substring(0, 32)`, called "Simplified checksum", over
+   * `JSON.stringify(auditFileStructure)` — the WHOLE statutory audit file. base64 maps 3 bytes to 4 chars,
+   * so those 32 chars covered the file's first 24 BYTES: the opening of its JSON header, and nothing else.
+   *
+   * Every transaction, every tax amount in a submitted audit file could be rewritten without moving the
+   * checksum, which was also reversible. That is the integrity check on a statutory submission.
    */
   private static computeChecksum(content: string): string {
-    // Simplified checksum (in production, use SHA-256)
-    return Buffer.from(content).toString('base64').substring(0, 32)
+    return merge(content, '')
   }
 
   /**
@@ -449,9 +457,6 @@ export class AuditComplianceReporting {
     auditData: Record<string, unknown>,
     priorChainLeaf: string = '',
   ): string {
-    // Simplified: sha256 of JCS-canonical data + prior leaf
-    const payload = JSON.stringify(auditData)
-    const combined = payload + (priorChainLeaf || '')
-    return Buffer.from(combined).toString('base64').substring(0, 32)
+    return chainLeaf(auditData, priorChainLeaf)
   }
 }
