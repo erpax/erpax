@@ -53,6 +53,8 @@ The canonical home for every **live-tree law** the corpus enforces. Ratchet gate
 | `logic-concentration` | [[rules]]/concentration | hub `index.ts` re-exports only — matter in child atoms; score ≥ 1.0 or ≥500 lines |
 | `word-matter` | [[rules]]/word-matter | every identifier and comment earns its place — no verbose names, comment bloat, duplicate get/getX, helper/util filenames |
 | `word-without-logic` | [[rules]]/word-without-logic | literary atoms — prose without executable matter or use case; `pnpm erpax corpus words` |
+| `canonical` | [[rules]]/canonical | installed package never called — use its API or drop it; `tsx src/rules/canonical/index.ts` |
+| `reference` | [[rules]]/reference | dead `src/…` pointer — the statute→code trace must resolve (statutory ceiling **0**); `tsx src/rules/reference/index.ts` |
 
 Run: `pnpm rules:check` · `tsx src/rules/index.ts --accounting-only`
 
@@ -115,8 +117,7 @@ This file is in every agent's system prompt, so these bind the next agent as law
 - **The rosetta basis.** A new collection is warranted only by a NEW signature (`collectionSignature` over the closed 9-axis basis); otherwise it is a row, not a table. `erpax doctor corpus` reports collapse clusters + compression headroom. **Enforcement PAID:** `shapeRatchetVerdict` fails closed against `ROSETTA_BASELINE` inside `erpax doctor corpus`, which is the `corpus` lane of `cli/gate.ts` — CI/pre-push blocks basis growth; both ceilings ratchet DOWN in the same diff that folds a collection away.
 - **Verify with the tool, not the reflex.** `erpax verify <atom>` for pure atoms; `pnpm check` for integration. Never a full vitest run to self-check.
 - **Single-use code is entropy.** A script or function called once is un-folded — inline it, delete it, or make it a reused command. Never write a throwaway to work around a problem already fixed (the tsx assert-harness was folded into `erpax verify`; a scratchpad regen script is just the existing `erpax readme` command un-reused). Generated content is the same law: a table of count-1 rows (raw scatter, not a basis axis) is useless detail — purge it, do not cap it (capping hides entropy; the rosetta decode says what is signal vs noise).
-- **Use packages canonically** — the API, never the binary or a re-implementation; read `node_modules` before building. Payload IS quantum: blocks = superposition · nested-docs = tree · multi-tenant = scope · import-export = port · mcp = gateway; a collection shares a **schema**, not a word. Receipts: [[port]] · [[variant]].
-- **Research the real app AND data — never port blindly.** A summary is not the source; `rows > 0` ≠ used (0 is non-NULL, so a law can pass **vacuously**). Prefer a fold you cancel over one you invent. Receipts: [[port]] · [[work]]/shifts.
+- **A law here is a command, not prose.** Prose is read and maybe obeyed; a gate is executed and cannot be violated. Two laws proved it: "use packages canonically" is now `tsx src/rules/canonical/index.ts` ([[rules]]/canonical — 3 real hand-rolls beside installed packages), and "research the real app+data" is now `tsx src/port/index.ts <schema.rb> <db>` ([[port]] — running it IS the research). Prose that could be a command is entropy billed on every turn of every session.
 
 ## Enforcement — why a law here is obeyed
 
