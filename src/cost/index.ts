@@ -78,13 +78,41 @@ export function costEntry(l: Ledger): Entry {
 // @audit Conservation Law 62 (coverage) — the all-directions cascade
 // ─────────────────────────────────────────────────────────────────────────────
 
-/** erpax v8 content-digest width (uuid-format: 48 + 12 + 46 bits of SHA-256). */
-export const ERPAX_DIGEST_BITS = 106
+/** A uuid is 16 bytes. RFC 9562 §5.8 · §4.1 stamp two fields that carry NO content. */
+const UUID_BITS = 128
+/** §5.8 — the version nibble, high 4 bits of byte 6: `b[6] = (b[6] & 0x0f) | 0x80`. */
+const UUID_VERSION_BITS = 4
+/** §4.1 — the variant, high 2 bits of byte 8: `b[8] = (b[8] & 0x3f) | 0x80`. */
+const UUID_VARIANT_BITS = 2
+
+/**
+ * erpax v8 content-digest width — DERIVED, because it was typed and it was wrong.
+ *
+ * It read `106`, with its own arithmetic in the comment: *"uuid-format: 48 + 12 + 46 bits of SHA-256"*.
+ * The sum is self-consistent, which is why it survived — but v8's layout is 48 + 4 (version) + 12 + 2
+ * (variant) + **62**, not 46. Someone typed one field 16 bits short, and the number became a security
+ * constant for four consumers ([[tamper]]/cost · [[power]] · [[proof]]/projection) and the premise of the
+ * sentence "the truncated uuid's collision floor is only 2^53".
+ *
+ * The honest floor is **2^61**. The error was CONSERVATIVE — it under-claimed erpax's own integrity — which
+ * is exactly why nothing contradicted it: a pessimistic lie still prescribes the right fix (anchor the FULL
+ * digest, `CONTENT_DIGEST_BITS`), so it led somewhere sensible while being false.
+ *
+ * Now it is the arithmetic itself, and `test.ts` proves it against the live primitive by MEASURING which
+ * bits are constant across 20k samples — the tool that found the defect, kept as the proof that it stays
+ * fixed. A number you cannot re-derive is a number you cannot trust.
+ *
+ * @invariant ERPAX_DIGEST_BITS === the count of non-constant bits in a real content-uuid (122)
+ * @standard RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
+ */
+export const ERPAX_DIGEST_BITS = UUID_BITS - UUID_VERSION_BITS - UUID_VARIANT_BITS
 
 /**
  * Full SHA-256 content-digest width — what an anchor / Merkle leaf SHOULD commit.
- * Committing the full digest puts the chosen-content collision floor at 2^128,
- * above the 2^106 uuid second-preimage; committing only the 106-bit uuid → 2^53.
+ * Committing the full digest puts the chosen-content collision floor at 2^128, above the 2^122 uuid
+ * second-preimage; committing only the truncated uuid → 2^61 (was stated as 2^53 on the typed 106).
+ * The prescription was right on the wrong number: truncation costs erpax 134 bits so the fold's address
+ * can LOOK like a UUID.
  */
 export const CONTENT_DIGEST_BITS = 256
 

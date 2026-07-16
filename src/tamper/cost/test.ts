@@ -20,11 +20,11 @@ import {
 import { crackVerdict } from '@/tamper/cost'
 
 describe('tamper-cost: NIST SP 800-107 hash strengths', () => {
-  it('second-preimage of the erpax digest is 2^106', () => {
-    expect(secondPreimageLog2(ERPAX_DIGEST_BITS)).toBe(106)
+  it('second-preimage of the erpax digest is the FULL width — NIST SP 800-107 §5.1', () => {
+    expect(secondPreimageLog2(ERPAX_DIGEST_BITS)).toBe(ERPAX_DIGEST_BITS)
   })
-  it('birthday-collision resistance is half the digest (2^53)', () => {
-    expect(birthdayLog2(ERPAX_DIGEST_BITS)).toBe(53)
+  it('birthday-collision resistance is HALF the digest — the relation, not a literal', () => {
+    expect(birthdayLog2(ERPAX_DIGEST_BITS)).toBe(ERPAX_DIGEST_BITS / 2)
   })
 })
 
@@ -38,10 +38,10 @@ describe('tamper-cost: forging one record is infeasible', () => {
 })
 
 describe('tamper-cost: the birthday caveat the audit flagged', () => {
-  it('106 bits is SAFE at realistic scale (1e9 uuids/namespace)', () => {
+  it('the digest width is SAFE at realistic scale (1e9 uuids/namespace)', () => {
     expect(birthdayMarginBits(ERPAX_DIGEST_BITS, 1e9)).toBeGreaterThan(0)
   })
-  it('106 bits is PAST the birthday bound at the comment\'s claimed 1e25 scale', () => {
+  it('the digest width is PAST the birthday bound at the comment\'s claimed 1e25 scale', () => {
     // 1e25 ≈ 2^83 ≫ 2^53 ⇒ negative margin. The "1e25 ≪ 2^53" comment is wrong.
     expect(birthdayMarginBits(ERPAX_DIGEST_BITS, 1e25)).toBeLessThan(0)
   })
@@ -54,11 +54,11 @@ describe('tamper-cost: the anchor is what makes a zero-entropy store tamper-proo
     expect(v.binding).toBe('free-rewrite')
     expect(v.crackCostLog2).toBe(0)
   })
-  it('anchored + strong anchor: bound by the digest second-preimage (2^106)', () => {
+  it('anchored + strong anchor: bound by the digest second-preimage', () => {
     const v = crackVerdict({ anchored: true, anchorStrengthBits: 128 })
     expect(v.tamperEvident).toBe(true)
     expect(v.binding).toBe('second-preimage')
-    expect(v.crackCostLog2).toBe(106)
+    expect(v.crackCostLog2).toBe(ERPAX_DIGEST_BITS)
   })
   it('weak anchor is the weak link — flagged, not the digest', () => {
     const v = crackVerdict({ anchored: true, anchorStrengthBits: 64 })
@@ -106,21 +106,30 @@ describe('tamper-cost: coverage increases the cost exponentially (Law 62)', () =
 })
 
 describe('tamper-cost: the headline answer', () => {
-  it('default erpax verdict — infeasible to crack, digest-bound', () => {
+  // Was 'digest-bound', asserting crackCostLog2 === ERPAX_DIGEST_BITS. That held only while the digest
+  // width was TYPED as 106 — below the 112-bit RFC-3161 RSA-2048 anchor. Derived, the digest is 122, and the
+  // floor moves to the ANCHOR. The fiction hid which attack path is actually cheapest: erpax's tamper-cost
+  // is bound by its timestamp authority, not by its content-address. Assert the LAW — the floor is the
+  // minimum over the paths — so the test survives either constant moving.
+  it('default erpax verdict — infeasible to crack, bound by the WEAKEST path', () => {
     const v = crackVerdict({ rows: 1e9 })
+    const ANCHOR_FLOOR = 112 // RFC 3161 RSA-2048 TSA
     expect(v.tamperEvident).toBe(true)
-    expect(v.crackCostLog2).toBe(106)
+    expect(v.crackCostLog2).toBe(Math.min(ERPAX_DIGEST_BITS, ANCHOR_FLOOR))
+    expect(v.binding).toBe('anchor') // NOT the digest — the correction moved the bottleneck
     expect(2 ** v.bruteYearsLog2).toBeGreaterThan(1000) // millennia of global hashpower
   })
 })
 
 describe('tamper-cost: the two layers are honestly distinct — cryptographic floor + structural amplifier', () => {
-  it('no coverage ⇒ the verdict IS the cryptographic floor (the digest bits), standing ALONE', () => {
+  it('no coverage ⇒ the verdict IS the cryptographic floor — the WEAKEST path, standing ALONE', () => {
     // The SKILL.md relabel made true-by-test: with coverage===undefined the
     // coverage term is 0, so crackCostLog2 collapses to the NIST-grounded floor,
     // and the binding is always a real cryptographic/anchor path — never coverage.
     const v = crackVerdict({})
-    expect(v.crackCostLog2).toBe(ERPAX_DIGEST_BITS)
+    // the floor is the MIN over paths — at the derived 122-bit digest the default RFC-3161 anchor (112) is
+    // the weakest, which the typed 106 hid by sitting below it.
+    expect(v.crackCostLog2).toBe(Math.min(ERPAX_DIGEST_BITS, 112))
     expect(['second-preimage', 'anchor', 'collision']).toContain(v.binding)
   })
   it('coverage is ADDED on top of the floor (structural amplifier), not folded into the min', () => {
@@ -139,21 +148,22 @@ describe('tamper-cost: the chosen-content collision path — the commitment must
   it('out of scope by default — no attacker-authored pre-commit content modelled (chosenCollision = ∞)', () => {
     const v = crackVerdict({ anchored: true, anchorStrengthBits: 128 })
     expect(v.chosenCollisionLog2).toBe(Number.POSITIVE_INFINITY)
+    // anchorStrengthBits: 128 > the 122-bit digest, so here the digest IS the weakest path
     expect(v.binding).toBe('second-preimage')
-    expect(v.crackCostLog2).toBe(106)
+    expect(v.crackCostLog2).toBe(ERPAX_DIGEST_BITS)
   })
-  it('committing only the 106-bit uuid exposes a 2^53 collision floor — THE GAP', () => {
+  it('committing only the TRUNCATED uuid exposes a birthday floor at half its width — THE GAP', () => {
     const v = crackVerdict({ anchorCommitmentBits: ERPAX_DIGEST_BITS })
-    expect(v.chosenCollisionLog2).toBe(53)
+    expect(v.chosenCollisionLog2).toBe(ERPAX_DIGEST_BITS / 2)
     expect(v.binding).toBe('collision')
-    expect(v.crackCostLog2).toBe(53)
+    expect(v.crackCostLog2).toBe(ERPAX_DIGEST_BITS / 2)
     expect(v.note).toMatch(/full 256-bit content digest/)
   })
-  it('committing the FULL 256-bit content digest CLOSES it — collision 2^128 ≥ the 2^106 second-preimage', () => {
-    const v = crackVerdict({ anchorCommitmentBits: CONTENT_DIGEST_BITS })
-    expect(v.chosenCollisionLog2).toBe(128)
-    expect(v.binding).toBe('second-preimage')
-    expect(v.crackCostLog2).toBe(106)
+  it('committing the FULL 256-bit content digest CLOSES the collision path — 2^128 ≥ every other path', () => {
+    const v = crackVerdict({ anchorCommitmentBits: CONTENT_DIGEST_BITS, anchorStrengthBits: 128 })
+    expect(v.chosenCollisionLog2).toBe(128) // birthday on the full digest
+    expect(v.binding).toBe('second-preimage') // with a 128-bit anchor, the 122-bit digest is weakest
+    expect(v.crackCostLog2).toBe(ERPAX_DIGEST_BITS)
   })
   it('the collision path composes with the coverage law (still ∞ at 100% coverage)', () => {
     const v = crackVerdict({ anchorCommitmentBits: ERPAX_DIGEST_BITS, coverage: 1 })

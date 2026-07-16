@@ -45,11 +45,13 @@ describe('power: usage = entropy = power (more clients/events/features ⇒ more 
     expect(p.maximum.inverse.decryptKeyLog2).toBeNull()
   })
 
-  it('a finite anchor (ecdsa-p256) makes the key-recovery max finite (128); the per-record floor stays 106', () => {
+  it('a finite anchor (ecdsa-p256) makes the key-recovery max finite (128); the per-record floor is the MIN', () => {
     const e = accumulatePower({ ...BASE, anchor: 'rfc3161-ecdsa-p256' })
     expect(e.maximum.inverse.decryptKeyLog2).toBe(128)
     expect(e.maximum.inverse.unbounded).toBe(false)
-    expect(e.floorLog2).toBe(106) // min(106, 128) = min(106, ∞) = 106
+    expect(e.floorLog2).toBe(Math.min(ERPAX_DIGEST_BITS, 128)) // the relation the comment always stated; the
+    // literal froze it at the TYPED 106, which sat below every anchor. Derived (122), the min still lands
+    // on the digest here — but only because p256 is 128. It is a law now, not a snapshot.
   })
 
   it('usageChecks composes invariantChecks ∘ replicationChecks (the real amplifiers, not reinvented)', () => {
@@ -58,7 +60,7 @@ describe('power: usage = entropy = power (more clients/events/features ⇒ more 
 
   it('zero usage ⇒ the bare digest floor (no accumulated power without usage)', () => {
     const idle = accumulatePower({ clients: 0, events: 0, features: 0, streams: 0, dimensions: 0 })
-    expect(idle.powerLog2).toBe(ERPAX_DIGEST_BITS) // 106
+    expect(idle.powerLog2).toBe(ERPAX_DIGEST_BITS)
   })
 
   it('is deterministic and never leaks a non-finite number (JCS-safe for the bundle)', () => {
