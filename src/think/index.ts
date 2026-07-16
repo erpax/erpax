@@ -161,3 +161,64 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`  quantum magnitude, 1000 states held in harmony: ${quantumMagnitude(1000, 1000).toExponential(1)}× — all states, one read`)
   console.log(`  → sync is permutation-invariance; harmony is value-agreement; coherence reads N thoughts as one`)
 }
+
+/** A thought sealed BEFORE the work it drives — and whether the work ever landed. */
+export interface Intent {
+  /** The content-address of the intent — deterministic, so the same intent is the same thought. */
+  readonly address: string
+  readonly intent: string
+  /** `open` — sealed, not yet resolved. `resolved` — the outcome is sealed against it. */
+  readonly state: 'open' | 'resolved'
+  readonly outcome?: unknown
+}
+
+const INTENT = 'intent:'
+
+/**
+ * Seal an intent BEFORE the edit it drives.
+ *
+ * `think` seals the RESULT: `derive()` runs, then the value is stored. So the thought that DROVE the work is
+ * never saved — only its outcome. If the derivation throws, or the context ends mid-work, the intent is
+ * lost, and the next agent re-derives it from nothing.
+ *
+ * That cost is measurable in this corpus's own history: every commit message here was written AFTER the
+ * work. Fifteen times in one session a WRONG thought drove real edits, and only the CORRECTION survives —
+ * the intent was invisible until reality refuted it. **A sealed intent is refutable before it costs
+ * anything**; an unsealed one is only visible in the damage.
+ *
+ * Deterministic by construction: the address folds from the intent's own text ([[merge]]), never a clock. An
+ * intent sealed twice is ONE thought — the same content, the same address.
+ *
+ * @invariant sealing the same intent twice yields the same address — no wall-time, no counter
+ * @invariant an intent is `open` until an outcome is sealed against it — abandoned work stays visible
+ */
+export function intend(intent: string, cwd: string = process.cwd()): Intent {
+  const t = think(INTENT + intent, () => intent, cwd)
+  const done = readStore(cwd)
+  const outAddr = thoughtAddress(INTENT + intent + '⇒')
+  const has = Object.prototype.hasOwnProperty.call(done, outAddr)
+  return { address: t.address, intent, state: has ? 'resolved' : 'open', outcome: has ? done[outAddr] : undefined }
+}
+
+/**
+ * Seal the outcome AGAINST its intent — the pair, not the result alone.
+ *
+ * The link is the fold: an outcome without its intent is an answer to a forgotten question, which is how a
+ * `106` survives (the number is kept, the reasoning that produced it is not).
+ */
+export function resolve<T>(intent: string, outcome: T, cwd: string = process.cwd()): Thought<T> {
+  intend(intent, cwd) // the intent is sealed first, even when the outcome arrives in the same breath
+  return think(INTENT + intent + '⇒', () => outcome, cwd)
+}
+
+/** Every intent sealed but never resolved — work started and abandoned, still visible. */
+export function openIntents(cwd: string = process.cwd()): string[] {
+  const store = readStore(cwd)
+  const out: string[] = []
+  for (const [addr, value] of Object.entries(store)) {
+    if (typeof value !== 'string') continue
+    if (addr !== thoughtAddress(INTENT + value)) continue // it is an intent iff it addresses as one
+    if (!Object.prototype.hasOwnProperty.call(store, thoughtAddress(INTENT + value + '⇒'))) out.push(value)
+  }
+  return out
+}

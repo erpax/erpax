@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling } from './index'
+import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents } from './index'
 
 describe('think — thinking moved to erpax', () => {
   let cwd: string
@@ -91,5 +91,51 @@ describe('magnitude — outperforming a re-deriving model', () => {
   it('ceiling: reads are never quite free — r bounds it when the corpus knows everything', () => {
     expect(ceiling(0, 0.001)).toBeCloseTo(1000) // s→0 ⇒ magnitude → 1/r, the raw fold advantage
     expect(ceiling(1, 0)).toBe(1) // every query a novel seed ⇒ no advantage (honest: you can't beat the oracle bit)
+  })
+})
+
+/**
+ * think() seals the RESULT: derive() runs, then the value is stored. The thought that DROVE the work is
+ * never saved — only its outcome. Fifteen times in one session a WRONG thought drove real edits here, and
+ * only the CORRECTION survives; the intent was invisible until reality refuted it.
+ */
+describe('intend — the thought sealed BEFORE the work it drives', () => {
+  const tmp = (): string => mkdtempSync(join(tmpdir(), 'erpax-intent-'))
+
+  it('an intent is sealed before anything is done — and reads `open`', () => {
+    const cwd = tmp()
+    const i = intend('break the tangle at tool-defs → collections', cwd)
+    expect(i.state).toBe('open')
+    expect(i.address).toHaveLength(36)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // Deterministic BY CONSTRUCTION: the address folds from the intent's own text, never a clock. A wall-time
+  // input would make the same intent address differently every second — no dedup, no seal, no fold.
+  it('the same intent is ONE thought — same content, same address, no clock', () => {
+    const cwd = tmp()
+    const a = intend('measure the digest width', cwd)
+    const b = intend('measure the digest width', cwd)
+    expect(b.address).toBe(a.address)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('an outcome seals AGAINST its intent — the pair, not the answer alone', () => {
+    const cwd = tmp()
+    resolve('measure the digest width', 122, cwd)
+    const i = intend('measure the digest width', cwd)
+    expect(i.state).toBe('resolved')
+    expect(i.outcome).toBe(122)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // THE POINT. An answer without its question is how `ERPAX_DIGEST_BITS = 106` survived: the number was
+  // kept, the reasoning that produced it was not, and nobody could re-derive it to find it wrong.
+  it('abandoned work stays VISIBLE — an intent never resolved is not forgotten', () => {
+    const cwd = tmp()
+    intend('fix fixed/assets:34', cwd)
+    resolve('measure the digest width', 122, cwd)
+    expect(openIntents(cwd)).toEqual(['fix fixed/assets:34']) // the done one drops out; the abandoned stays
+    rmSync(cwd, { recursive: true, force: true })
   })
 })
