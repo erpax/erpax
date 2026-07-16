@@ -14,6 +14,7 @@ import { createRequire } from 'node:module'
 import { GATE_LANES } from '@/cli/gate'
 import { phraseWithoutDiamondChangesetGate } from '@/law/folder/user-word'
 import { deadReferencesIn } from '@/rules/reference'
+import { deadSymbolsIn } from '@/rules/prose'
 
 const ROOT = process.cwd()
 const SRC = join(ROOT, 'src')
@@ -292,6 +293,10 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   // Наредба Н-18 law pointed at a moved file for however long. Caught here at the WRITE, not by the
   // whole-tree gate after it has rotted ([[rules]]/reference).
   const deadRefs = deadReferencesIn(files, ROOT)
+  // Prose unrelated to code is measurable — and refusable. A SKILL citing `generateFoo()` that nothing
+  // defines is a citation leading nowhere, and it is WORSE than a dead path because it reads as true. Only
+  // SKILLs beside an index.ts are judged; a lexicon atom is prose by design ([[rules]]/prose).
+  const deadCites = files.some((f) => f.endsWith('SKILL.md')) ? deadSymbolsIn(files, ROOT) : []
 
   const vpLine =
     vp.n === 0
@@ -318,14 +323,25 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     console.log(
       `🟥 reference ✗  ${deadRefs.length} dead src/… pointer(s) — a moved file carries its references in the same diff`,
     )
+  if (deadCites.length)
+    console.log(
+      `🟥 prose     ✗  ${deadCites.length} cited symbol(s) do not exist — write the code, or stop claiming it`,
+    )
   console.log(payLine)
+  for (const d of deadCites) console.error(`   dead cite  ${d.from} → \`${d.symbol}\` (nothing defines it)`)
   for (const d of deadRefs) console.error(`   dead ref   ${d.from} → ${d.target} (does not exist)`)
   for (const [f, t] of vp.dead) console.error(`   dead link  ${relative(ROOT, f)} → [[${t}]]`)
   for (const [f, m] of vp.bad) console.error(`   frontmatter ${relative(ROOT, f)} → ${m}`)
   for (const f of mdStrays) console.error(`   md stray   ${relative(ROOT, f)} — fold into a SKILL.md atom`)
   if (pay.msg) console.error('   ' + pay.msg)
 
-  const ok = vp.ok && pay.ok && mdStrays.length === 0 && phraseGate.length === 0 && deadRefs.length === 0
+  const ok =
+    vp.ok &&
+    pay.ok &&
+    mdStrays.length === 0 &&
+    phraseGate.length === 0 &&
+    deadRefs.length === 0 &&
+    deadCites.length === 0
   console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
   return ok ? 0 : hook ? 2 : 1
 }
