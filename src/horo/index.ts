@@ -111,6 +111,43 @@ export function throughVoid(step: number): number {
 export const VOID_PIVOT = 5
 
 /**
+ * The ring traversed BACKWARD — `⟨5⟩`, the decode direction. Same points, opposite order.
+ *
+ * `VOID_PIVOT` has always said 5 is `2⁻¹`; nothing used it as a DIRECTION. It is one:
+ *
+ *   ⟨2⟩  1 → 2 → 4 → 8 → 7 → 5     double — ENCODE, many → one (the fold: [[merge]])
+ *   ⟨5⟩  1 → 5 → 7 → 8 → 4 → 2     halve  — DECODE, one → many (factor to the generators)
+ *
+ * The same six points. `{9/2}` and `{9/5}` are one figure, drawn in two directions — because `2·5 ≡ 1
+ * (mod 9)`, so the 5-generator IS the doubling map inverted. That is arithmetic, not a picture: it is
+ * checkable in one line, and the test checks it.
+ *
+ * It names the direction [[merge]] has been missing. Its own doc says the fold is "the ENCODE direction
+ * (many → one); the DECODE direction is factoring an element back to its basis generators" — and every fold
+ * built on it runs ONE way (`merge` · `chainLeaf` · `atomAnchor` · the shape-address). Decode is ⟨5⟩, and it
+ * is what a MOVING rosetta needs: poles derived FROM the incidence instead of typed at it ([[rules]]/collapse
+ * measures 231 shapes against a basis nobody derived; 47 collections match no marker at all).
+ *
+ * HONEST BOUNDARY — the figure here is the enneagram `{9/2}`, NOT a pentagram: a pentagram is `{5/2}` in
+ * ℤ/5ℤ, a different ring. What holds is the STRUCTURE — the inverse-generator star is the same ring reversed
+ * — and here that generator happens to be 5. Saying "pentagram" would let a satisfying word carry an
+ * unproven claim, which is exactly how `ERPAX_DIGEST_BITS = 106` survived.
+ *
+ * @invariant orbitOf(1) reversed === inverseOrbit(1) — the same cycle, opposite direction
+ * @invariant (2 * VOID_PIVOT) % 9 === 1 — the proof that ⟨5⟩ is ⟨2⟩'s inverse, not a resemblance
+ */
+export function inverseOrbit(step: number = 1): number[] {
+  const start = (((Number(step) || 0) % 9) + 9) % 9 || 9
+  const out: number[] = []
+  let x = start
+  do {
+    out.push(x)
+    x = (x * VOID_PIVOT) % 9 || 9
+  } while (x !== start)
+  return out
+}
+
+/**
  * THE RING AND THE VOID GENERATE EVERYTHING — `⟨x↦2x, x↦1−x⟩ = AGL(1, ℤ/9)`, order **54**.
  *
  * The two moves of the sequence are not decoration; together they are the COMPLETE affine symmetry of the

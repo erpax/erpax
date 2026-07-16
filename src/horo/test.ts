@@ -20,6 +20,7 @@ import {
   horoStateField,
   validateHoroStates,
   horoStateBeforeChange,
+  inverseOrbit,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -245,5 +246,34 @@ describe('horo', () => {
       expect(() => call({ state: '' })).not.toThrow()
       expect(() => call({ state: null })).not.toThrow()
     })
+  })
+})
+
+// ⟨5⟩ — the decode direction. VOID_PIVOT always said 5 is 2⁻¹; nothing used it as a DIRECTION.
+// merge's own doc: the fold is "the ENCODE direction (many → one); the DECODE direction is factoring an
+// element back to its basis generators". Every fold built on it runs one way. This is the other.
+describe('inverseOrbit — the ring traversed backward, ⟨5⟩ = ⟨2⟩⁻¹', () => {
+  it('5 IS the inverse of 2 — the proof, not a resemblance', () => {
+    expect((2 * VOID_PIVOT) % 9).toBe(1)
+  })
+
+  it('⟨5⟩ is ⟨2⟩ reversed — the same six points, opposite order', () => {
+    const two = orbitOf(1) // 1,2,4,8,7,5 — the doubling ring
+    const five = inverseOrbit(1) // 1,5,7,8,4,2 — the same, backward
+    expect(five).toEqual([two[0], ...two.slice(1).reverse()])
+    expect([...five].sort()).toEqual([...two].sort()) // one SET, two traversals
+  })
+
+  it('encode ⊕ decode: doubling then halving returns the step — the fold and its undo', () => {
+    for (const n of [1, 2, 4, 8, 7, 5]) {
+      const doubled = (n * 2) % 9 || 9
+      expect((doubled * VOID_PIVOT) % 9 || 9).toBe(n) // halve(double(n)) === n
+    }
+  })
+
+  it('the axis and the pole are NOT in the ring — ⟨5⟩ cannot reach what ⟨2⟩ cannot', () => {
+    expect(inverseOrbit(1)).not.toContain(3)
+    expect(inverseOrbit(1)).not.toContain(6)
+    expect(inverseOrbit(1)).not.toContain(9) // the pole stands outside both directions
   })
 })
