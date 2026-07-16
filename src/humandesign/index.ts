@@ -25,10 +25,14 @@
  */
 import { TORUS_BITS } from '@/quantum'
 
-/** 64 gates = 64 I Ching hexagrams = 2^6. */
-export const GATES = 64
-/** 6 lines per gate — the six binary lines of a hexagram. */
+/** 6 lines per gate — the six binary lines of a hexagram. The one irreducible fact; everything else folds. */
 export const LINES = 6
+/**
+ * The gates ARE the complete 6-bit space — `2 ** LINES` = 64, computed, never memorised. 64 is not a number
+ * to remember: it is what six binary lines exhaust. Change LINES and the gate-space follows, because it was
+ * never independent of it.
+ */
+export const GATES = 2 ** LINES
 /** The rodin doubling circuit (length 6 = LINES) — the lines indexed onto the vortex. */
 export const RODIN_CIRCUIT = [1, 2, 4, 8, 7, 5] as const
 
@@ -41,7 +45,10 @@ export function hexagram(gate: number): number[] {
 /** 384 = 64 gates × 6 lines — the full line-space. */
 export const totalLines = (): number => GATES * LINES
 
-/** Real check: the gate-space is EXACTLY the 6-bit space (2^6 === 64). */
+/**
+ * @deprecated Tautological since `GATES = 2 ** LINES` — it now asserts a theorem against itself and is
+ * always true. It existed only because 64 was memorised; the theorem is the check. Kept briefly for callers.
+ */
 export const isHexagramSpaceComplete = (): boolean => (1 << LINES) === GATES
 
 /** Convention: the 64 gates equal one 64-bit torus's bit-width (TORUS_BITS) — both the number 64. */

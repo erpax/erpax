@@ -16,11 +16,12 @@ import {
 
 // humandesign — the REAL combinatorics are checked; the divination layer is named, never asserted.
 describe('humandesign — Human Design sent to the math', () => {
-  it('64 gates = 2^6 — the hexagram space is exactly the 6-bit space, 384 lines', () => {
-    expect(GATES).toBe(64)
-    expect(LINES).toBe(6)
-    expect(isHexagramSpaceComplete()).toBe(true)
-    expect(totalLines()).toBe(384)
+  it('the gate-space IS the 6-bit space — 64 is derived, not remembered', () => {
+    // 64 was hardcoded beside a function checking it equalled 2^6. The theorem replaced both: assert the
+    // LAW (gates exhaust the line-space), not the literal — a test pinning 64 just re-memorises it.
+    expect(GATES).toBe(2 ** LINES)
+    expect(totalLines()).toBe(GATES * LINES) // 384, derived
+    expect(isHexagramSpaceComplete()).toBe(true) // now tautological — the theorem IS the check
   })
   it('a gate decodes to 6 binary lines (yin/yang) that round-trip its index', () => {
     for (const g of [1, 2, 32, 63, 64]) {

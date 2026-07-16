@@ -36,15 +36,33 @@ export const barrier = (): boolean =>
 
 // ── 2. REGENERATES — continuous renewal from seed ────────────────────────
 
-/** Epidermal turnover: the surface fully renews in ~28 days. */
+/**
+ * MEASURED, therefore uncertain — and a measurement is not a theorem. Epidermal turnover is quoted at ~28
+ * days in older texts; modern estimates run longer (~40–56). Carried as the classic figure WITH its range,
+ * because a bare number hides that it is one decade's instrument reading.
+ */
 export const RENEWAL_DAYS = 28
-/** The stratum corneum is ~10–30 thin layers of shedding corneocytes. */
-export const STRATUM_LAYERS = 28
-/** Layers shed (and replaced from basal stem cells) per day at steady state. */
-export const sheddingPerDay = (): number => STRATUM_LAYERS / RENEWAL_DAYS // ≈1 layer/day
+export const RENEWAL_DAYS_RANGE = [28, 56] as const
 
+/**
+ * Stratum corneum thickness — measured at **10–30** layers. It was previously pinned at `28`: not a
+ * measurement, but the value that makes `28/28 = 1` so the "≈1 layer/day" check passed. The datum had been
+ * bent to fit the conclusion — at the honest low of its own range (10) that check FAILS. Corrected to the
+ * range's midpoint, and the law below no longer asserts a number the range cannot support.
+ */
+export const STRATUM_LAYERS = 20
+export const STRATUM_LAYERS_RANGE = [10, 30] as const
+
+/** Layers shed (and replaced from basal stem cells) per day — a RATE, derived, not a target. */
+export const sheddingPerDay = (): number => STRATUM_LAYERS / RENEWAL_DAYS
+
+/**
+ * The honest law: the surface renews CONTINUOUSLY from a basal seed — shedding is strictly positive and the
+ * corneum fully turns over within its renewal window. It no longer asserts "≈1 layer/day", which held only
+ * at the cherry-picked top of the range.
+ */
 export const regenerates = (): boolean =>
-  RENEWAL_DAYS > 0 && Math.abs(sheddingPerDay() - 1) < 0.5 // ~1 layer/day, replaced — heals from seed
+  RENEWAL_DAYS > 0 && sheddingPerDay() > 0 && STRATUM_LAYERS <= RENEWAL_DAYS
 
 // ── 3. HOMEOSTASIS — negative feedback to a setpoint ─────────────────────
 

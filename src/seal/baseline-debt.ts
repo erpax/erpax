@@ -11,7 +11,17 @@ import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { BASELINE_CONST_TO_AXIS } from '@/law/folder/baseline'
 
-const SCAN_ROOTS = ['src/rules', 'src/law/folder', 'src/seal'] as const
+/**
+ * The WHOLE tree. It scanned only `rules · law/folder · seal` and reported 0 while
+ * `balance/ORPHAN_COLLECTION_BASELINE` sat hand-written outside its reach — a gate that looks in three
+ * places certifies three places, not the law. A ratchet ceiling is a `*_BASELINE`, and it can be written
+ * anywhere, so it must be looked for everywhere.
+ *
+ * The `*_BASELINE` suffix is what keeps this precise: an empirical fact (`SETPOINT_C = 37`, `SPIKE_MV = 40`,
+ * `ALVEOLI = 480_000_000`) is a measured constant of the world and no theorem replaces it. A BASELINE is a
+ * ceiling the tree itself computes — hand-writing one freezes a measurement that should ratchet.
+ */
+const SCAN_ROOTS = ['src'] as const
 
 /** Migrated axes — ceiling lives only in ratchet.generated emit. */
 const MIGRATED_CONSTS = new Set([
