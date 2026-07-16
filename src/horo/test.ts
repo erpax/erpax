@@ -8,6 +8,8 @@ import {
   imperialRatio,
   composeSteps,
   nextOctave,
+  throughVoid,
+  VOID_PIVOT,
   isMergePoint,
   horoStateField,
   validateHoroStates,
@@ -77,8 +79,29 @@ describe('horo', () => {
     expect(composeSteps(4, 0)).toBe(9)
   })
 
+  it('throughVoid: the void is a MIRROR — 9 emerges as 1, 8 as 2 (n ↦ 1−n mod 9)', () => {
+    expect(throughVoid(9)).toBe(1) // the sequence 9/0\1
+    expect(throughVoid(8)).toBe(2) // the sequence 8/0\2
+    expect(throughVoid(7)).toBe(3)
+    // NOT division: 8/0 has NO solution (no x with 0·x ≡ 8), and 9/0 is 0/0 — ALL nine, not one.
+    // A quotient that is either empty or total cannot name this map. Subtraction names it exactly.
+    for (let x = 0; x < 9; x++) expect((0 * x) % 9).not.toBe(8 % 9) // 8/0 is empty
+    expect(Array.from({ length: 9 }, (_, x) => (0 * x) % 9 === 9 % 9).every(Boolean)).toBe(true) // 9/0 is total
+  })
+
+  it('throughVoid is an INVOLUTION pivoting on 5 — the generator’s inverse', () => {
+    for (const d of HORO_DIGITS) expect(throughVoid(throughVoid(d))).toBe(d) // through twice returns
+    expect(throughVoid(VOID_PIVOT)).toBe(VOID_PIVOT) // 5 reflects to itself
+    expect((2 * VOID_PIVOT) % 9).toBe(1) // and 5 = 2⁻¹ — the mirror turns on what undoes the doubling
+  })
+
+  it('10 − n and 1 − n are ONE map — because 10 ≡ 1 (mod 9), which is why casting out nines works', () => {
+    for (const n of [1, 2, 3, 4, 6, 7, 8, 9]) expect(throughVoid(n)).toBe(10 - n)
+  })
+
   it('nextOctave: 9 → 1 (seal reopens); all other steps pass through', () => {
     expect(nextOctave(9)).toBe(1)
+    expect(nextOctave(9)).toBe(throughVoid(9)) // nextOctave IS this mirror's 9→1 case
     for (const d of HORO_DIGITS.filter((x) => x !== 9)) expect(nextOctave(d)).toBe(d)
   })
 

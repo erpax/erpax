@@ -21,7 +21,7 @@
  * @quality ISO-25010 maintainability bounded-stable-state-space
  * @see ~/github/ceccec/svilena-me/.vitepress/horo-band.js (the source twin)
  * @see ~/github/ceccec/svilena-me/.claude/skills/HORO.md
- * @see src/types/sti.ts (`type` = what a thing IS; the horo step = where in the flow)
+ * @see src/sti/index.ts (`type` = what a thing IS; the horo step = where in the flow)
  */
 
 import type { Field, CollectionBeforeChangeHook } from 'payload'
@@ -85,6 +85,30 @@ export function composeSteps(a: number, b: number): HoroStep {
 export function nextOctave(step: number): number {
   return Number(step) === 9 ? 1 : Number(step) || 0
 }
+
+/**
+ * THE VOID IS A MIRROR — passing through 0 reflects: `n ↦ 1 − n (mod 9)`. 9 emerges as 1, 8 as 2, 7 as 3.
+ *
+ * It is NOT division by zero. `8/0` has no solution at all (no x satisfies `0·x ≡ 8`), and `9/0` is secretly
+ * `0/0` — which has ALL nine solutions, not one. A quotient that is either empty or total cannot name this
+ * map; subtraction can, exactly, for every element.
+ *
+ * Why the decimal intuition `10 − n` is right: **10 ≡ 1 (mod 9)**, so `10 − n` and `1 − n` are one map in
+ * two spellings — the same congruence that makes casting out nines work.
+ *
+ * Real structure, not a fitted pattern: it is an INVOLUTION (through twice returns), it pairs
+ * `(1,9) (2,8) (3,7) (4,6)`, and its FIXED POINT is 5 — which is exactly `2⁻¹ mod 9`. The mirror pivots on
+ * the element that undoes the doubling that built the ring.
+ *
+ * `nextOctave` above is this map's 9→1 case; here it is for every step.
+ */
+export function throughVoid(step: number): number {
+  const n = Number(step) || 0
+  return (((1 - n) % 9) + 9) % 9 || 9
+}
+
+/** The mirror's pivot: the only step that reflects to itself — 5, the generator's inverse (2·5 ≡ 1). */
+export const VOID_PIVOT = 5
 
 /** A (stepA, stepB) cell is a merge point — a gateway between rings — when the composed step is 1 or 9. */
 export function isMergePoint(a: number, b: number): boolean {
