@@ -31,6 +31,37 @@ export function merge(a: string, b: string): string {
 }
 
 /**
+ * Canonical bytes for a value — key-ORDER-independent, so the same content addresses the same, whatever
+ * order it was built in.
+ *
+ * This existed already, and that is the finding: it was written TWICE, privately, in [[readme]]/compute and
+ * [[readme]]/paper — while `chainLeaf` below serialised with plain `JSON.stringify`, whose key order is
+ * INSERTION order. Ten hand-rolled audit leaves all carried a comment claiming "JCS-canonical", and the
+ * corpus's own canonicaliser sat two atoms away, duplicated, unreachable from here. Duplication is
+ * camouflage: while the function lived in two private corners, nothing showed that the fold was missing it.
+ * Stated once, the hole is obvious.
+ *
+ * HONEST BOUNDARY — this is key-order canonical, NOT RFC 8785 JCS. Those ten comments overclaimed and this
+ * one will not: JCS also fixes number serialisation, string escaping and UTF-8 form, and this defers all
+ * three to `JSON.stringify`. For the payloads erpax addresses (plain records of strings, finite numbers,
+ * booleans, null) the two agree; on a NaN, an Infinity, a lone surrogate, or -0 they need not. Key order was
+ * the property the fold actually needed, and it is the one this guarantees.
+ */
+export function canonical(value: unknown): string {
+  if (value === null || typeof value !== 'object') return JSON.stringify(value)
+  if (Array.isArray(value)) return '[' + value.map(canonical).join(',') + ']'
+  const obj = value as Record<string, unknown>
+  return (
+    '{' +
+    Object.keys(obj)
+      .sort()
+      .map((k) => JSON.stringify(k) + ':' + canonical(obj[k]))
+      .join(',') +
+    '}'
+  )
+}
+
+/**
  * The audit chain leaf — the fold's binary step over a record and the leaf before it.
  *
  * This is not a new primitive; it is `merge` with the record serialised, and it exists because the corpus
@@ -47,14 +78,17 @@ export function merge(a: string, b: string): string {
  * A law restated seven times is seven places for one lie to sit, and no fix ever reaches the others. It is
  * stated here once.
  *
- * HONEST BOUNDARY: `JSON.stringify` is NOT JCS (RFC 8785), which the old copies' comments claimed to be —
- * key order is insertion order, so the same record built in a different order addresses differently. Callers
- * that build their payload in one place are fine; a chain assembled from two call sites is not, and the
- * canonicalisation those comments promised is still unwritten. This makes tampering DETECTABLE, never
- * impossible, and only for whoever recomputes the leaf.
+ * It serialises through `canonical` above, so key order cannot change a leaf. That was written as an honest
+ * boundary here — "the canonicalisation those comments promised is still unwritten" — and it was WRONG: the
+ * canonicaliser existed, twice, privately, in [[readme]]/compute and [[readme]]/paper. Finding it took
+ * DRY-cleaning by content-address, which is the argument for the fold rather than the sentence: while one
+ * law is stated in two private corners, nothing can show you that a third place is missing it.
+ *
+ * HONEST BOUNDARY: this makes tampering DETECTABLE, never impossible, and only for whoever recomputes the
+ * leaf. Canonical here means key-order canonical, NOT full RFC 8785 (see `canonical`).
  */
 export function chainLeaf(data: Record<string, unknown>, priorLeaf: string = ''): string {
-  return merge(JSON.stringify(data), priorLeaf)
+  return merge(canonical(data), priorLeaf)
 }
 
 /**

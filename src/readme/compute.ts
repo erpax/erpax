@@ -7,6 +7,7 @@
  * @see ../index.ts — ./paper — ./entropy — ./quantum-thinking
  */
 import { readFileSync, writeFileSync, readdirSync, lstatSync, existsSync, mkdirSync, type Dirent } from 'node:fs'
+import { canonical as stableStringify } from '@/merge'
 import { join, dirname, relative } from 'node:path'
 import { createHash } from 'node:crypto'
 import {
@@ -309,13 +310,6 @@ export function deriveModel(
 }
 
 /** Deterministic JSON of the model (sorted keys, no whitespace) — the bytes the content-uuid hashes. */
-function stableStringify(value: unknown): string {
-  if (value === null || typeof value !== 'object') return JSON.stringify(value)
-  if (Array.isArray(value)) return '[' + value.map(stableStringify).join(',') + ']'
-  const obj = value as Record<string, unknown>
-  const keys = Object.keys(obj).sort()
-  return '{' + keys.map((k) => JSON.stringify(k) + ':' + stableStringify(obj[k])).join(',') + '}'
-}
 
 /**
  * The README's own content-uuid — a v8 content-uuid (the matrix coil, `toUuid`)

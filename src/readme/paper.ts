@@ -7,6 +7,7 @@
  * contribute references to the union).
  */
 import { readFileSync, existsSync } from 'node:fs'
+import { canonical as stableStringify } from '@/merge'
 import { join, basename } from 'node:path'
 import { toUuid } from '@/uuid/matrix'
 import { parseTsImports } from '@/quantum/boundary'
@@ -129,13 +130,6 @@ const mdKindOf = (relPath: string): MdPaperKind => {
   return 'README'
 }
 
-const stableStringify = (value: unknown): string => {
-  if (value === null || typeof value !== 'object') return JSON.stringify(value)
-  if (Array.isArray(value)) return '[' + value.map(stableStringify).join(',') + ']'
-  const obj = value as Record<string, unknown>
-  const keys = Object.keys(obj).sort()
-  return '{' + keys.map((k) => JSON.stringify(k) + ':' + stableStringify(obj[k])).join(',') + '}'
-}
 
 /** Content-uuid of canonical paper bytes — same extraction ⇒ same address. */
 export function paperUuid(paper: ScientificPaper): string {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof, chainLeaf } from './index'
+import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof, chainLeaf, canonical } from './index'
 
 describe('merge — the binary operation of the folded algebra', () => {
   it('same content ⇒ same address (the self-address congruence — dedup by physics, not registry)', () => {
@@ -58,8 +58,10 @@ describe('merge — the inclusion proof (total membership; the one-way wall reso
   // the first 24 bytes of input, under a banner claiming tamper detection. These are the properties every
   // one of those copies failed; they are asserted here once, where the law now lives.
   describe('chainLeaf — the audit leaf, stated once', () => {
-    it('is the fold, not a private hash', () => {
-      expect(chainLeaf({ a: 1 }, 'prior')).toBe(merge(JSON.stringify({ a: 1 }), 'prior'))
+    it('is the fold over CANONICAL bytes, not a private hash', () => {
+      // was asserted against JSON.stringify — which passes only because a one-key object serialises the
+      // same either way. It described the old implementation, not the law.
+      expect(chainLeaf({ b: 2, a: 1 }, 'prior')).toBe(merge(canonical({ a: 1, b: 2 }), 'prior'))
       expect(chainLeaf({ a: 1 })).toHaveLength(36)
     })
 
@@ -86,10 +88,26 @@ describe('merge — the inclusion proof (total membership; the one-way wall reso
       expect(chainLeaf({ a: 1, b: 2 })).toBe(chainLeaf({ a: 1, b: 2 }))
     })
 
-    // The honest boundary, asserted rather than promised: JSON.stringify is NOT JCS (RFC 8785). The same
-    // record built key-order-differently addresses differently. The old copies' comments claimed JCS.
-    it('is NOT canonical — key order changes the address, as the old comments denied', () => {
-      expect(chainLeaf({ a: 1, b: 2 })).not.toBe(chainLeaf({ b: 2, a: 1 }))
+    // This test used to assert the OPPOSITE — "is NOT canonical, key order changes the address" — pinning
+    // as permanent a gap I had declared unwritten. DRY-cleaning by content-address refuted me: the
+    // canonicaliser existed, twice, privately, in readme/compute and readme/paper, while ten hand-rolled
+    // leaves all carried a comment claiming JCS. Duplication is camouflage.
+    it('key order does NOT change the address — the same record, however it was built', () => {
+      expect(chainLeaf({ a: 1, b: 2 })).toBe(chainLeaf({ b: 2, a: 1 }))
+      expect(chainLeaf({ a: { x: 1, y: 2 } })).toBe(chainLeaf({ a: { y: 2, x: 1 } })) // nested too
+    })
+
+    it('canonical is key-order only — NOT full RFC 8785, and this one will not overclaim', () => {
+      expect(canonical({ b: 2, a: 1 })).toBe('{"a":1,"b":2}')
+      expect(canonical([3, { b: 1, a: 2 }])).toBe('[3,{"a":2,"b":1}]') // arrays keep ORDER, objects sort
+      // deferred to JSON.stringify, where JCS would not: these are the honest edges
+      expect(canonical(NaN)).toBe('null')
+      expect(canonical(-0)).toBe('0')
+    })
+
+    it('content still decides — a different value is a different address', () => {
+      expect(chainLeaf({ a: 1 })).not.toBe(chainLeaf({ a: 2 }))
+      expect(chainLeaf({ a: 1 })).not.toBe(chainLeaf({ b: 1 }))
     })
   })
 })
