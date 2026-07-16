@@ -58,6 +58,7 @@ import {
   journalEntryService,
   type JournalEntryLine,
 } from '@/journal/entry/service'
+import { idOf } from '@/relation'
 
 // Canonical GL accounts for the payroll JE. Mirrors the gl-posting
 // service's GL_ACCOUNTS constants — kept inline here so this hook
@@ -102,15 +103,6 @@ type RunDoc = Record<string, unknown> & {
   periodEnd?: string | Date
   lines?: PayrollLine[]
   journalEntry?: string | { id?: string } | null
-}
-
-const idOf = (v: unknown): string | undefined => {
-  if (typeof v === 'string' || typeof v === 'number') return String(v)
-  if (typeof v === 'object' && v !== null && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (id !== undefined) return String(id)
-  }
-  return undefined
 }
 
 const isStatusTransitionToPosted = (

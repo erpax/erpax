@@ -38,6 +38,7 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 import { journalEntryService, type JournalEntryLine } from '@/journal/entry/service'
+import { idOf } from '@/relation'
 
 type AdjustmentDoc = Record<string, unknown> & {
   id: string | number
@@ -51,15 +52,6 @@ type AdjustmentDoc = Record<string, unknown> & {
   creditAccount?: string | { id?: string }
   journalEntry?: string | { id?: string } | null
   period?: string | Date
-}
-
-const idOf = (v: unknown): string | undefined => {
-  if (typeof v === 'string' || typeof v === 'number') return String(v)
-  if (typeof v === 'object' && v !== null && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (id !== undefined) return String(id)
-  }
-  return undefined
 }
 
 const isStatusTransitionToPosted = (

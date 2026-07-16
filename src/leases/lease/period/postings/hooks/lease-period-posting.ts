@@ -46,6 +46,7 @@ import {
   resolveGlAccount,
   type GlAccountRole,
 } from '@/gl/account/resolver'
+import { idOf } from '@/relation'
 
 // Canonical roles this hook posts to — resolveGlAccount maps each to
 // the tenant's actual gl-accounts row id at run time (per the project's
@@ -75,15 +76,6 @@ type PostingDoc = Record<string, unknown> & {
   cashAccount?: string | { id?: string }
   costCenter?: string | { id?: string }
   journalEntry?: string | { id?: string } | null
-}
-
-const idOf = (v: unknown): string | undefined => {
-  if (typeof v === 'string' || typeof v === 'number') return String(v)
-  if (typeof v === 'object' && v !== null && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (id !== undefined) return String(id)
-  }
-  return undefined
 }
 
 const isStatusTransitionToPosted = (

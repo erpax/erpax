@@ -27,6 +27,7 @@ import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/event/emitter/service'
 import type { InventoryAdjustedEvent } from '@/types/events'
+import { idOf } from '@/relation'
 
 type AdjustedKind = InventoryAdjustedEvent['payload']['kind']
 
@@ -52,15 +53,6 @@ type MovementDoc = Record<string, unknown> & {
   movementAt?: string | Date
   currency?: string
   journalEntry?: string | { id?: string } | null
-}
-
-const idOf = (v: unknown): string | undefined => {
-  if (typeof v === 'string' || typeof v === 'number') return String(v)
-  if (typeof v === 'object' && v !== null && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (id !== undefined) return String(id)
-  }
-  return undefined
 }
 
 const isStatusTransitionToPosted = (

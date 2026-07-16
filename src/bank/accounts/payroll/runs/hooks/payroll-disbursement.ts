@@ -39,6 +39,7 @@
 
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
+import { idOf } from '@/relation'
 
 interface PayrollLine {
   netPay?: number
@@ -55,15 +56,6 @@ type RunDoc = Record<string, unknown> & {
   sourceBankAccount?: string | { id?: string }
   lines?: PayrollLine[]
   paymentRun?: string | { id?: string } | null
-}
-
-const idOf = (v: unknown): string | undefined => {
-  if (typeof v === 'string' || typeof v === 'number') return String(v)
-  if (typeof v === 'object' && v !== null && 'id' in v) {
-    const id = (v as { id?: unknown }).id
-    if (id !== undefined) return String(id)
-  }
-  return undefined
 }
 
 const isStatusTransitionToDisbursed = (
