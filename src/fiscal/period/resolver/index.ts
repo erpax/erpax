@@ -12,13 +12,27 @@
  * @standard ISO-8601:2019 (week numbering, date arithmetic, leap year)
  * @standard ISO-4217:2023 (currency context)
  * @standard SAF-T:3.0.2 (regulatory period coding)
- * @invariant All methods are pure (no mutation, no side effects)
- * @invariant All dates RFC 3339 (ISO 8601:2019)
- * @invariant All returns include chainLeafUuid for tamper detection
+ * These claims carried no proof, and three of the six were false about this code ([[rules]]/refutable).
+ * They are restated to what runs; test.ts is the proof beside them.
+ *
+ * @invariant All methods are pure — deterministic, no mutation of inputs, no clock, no randomness
  * @invariant Period numbering is 1-indexed (P1, P2, ..., not P0, P1, ...)
- * @invariant Fiscal year is integer; fiscal period is integer
- * @invariant regulatoryCode is deterministic from (periodType, fiscalYear, fiscalPeriod)
+ * @invariant chainLeafUuid = merge(payload, priorLeaf) — the fold, sha256 over the WHOLE input
+ * @invariant regulatoryCode is deterministic from (regulatoryFramework, periodType, fiscalYear, fiscalPeriod)
+ *
+ * WAS FALSE, corrected above:
+ *   - "All returns include chainLeafUuid for tamper detection" — validatePeriodBoundary and
+ *     validateConfiguration return no leaf at all, and the leaf that existed detected NOTHING: base64
+ *     truncated to the first 24 bytes, so the fiscal year was rewritable without moving it.
+ *   - "regulatoryCode is deterministic from (periodType, fiscalYear, fiscalPeriod)" — it switches on
+ *     regulatoryFramework, which the claim omitted. Two configs agreeing on every named input produce
+ *     DIFFERENT codes: cache or dedupe on those three, as the invariant invited, and saf-t and xbrl
+ *     silently collide on a statutory surface.
+ *   - "All dates RFC 3339" — dropped, not restated: it quantified over a surface this atom does not
+ *     control (a caller passes calendarDate in), so it was never this file's claim to make.
  */
+
+import { merge } from '@/merge'
 
 export interface FiscalPeriodConfig {
   fiscalYearStartMonth: number
@@ -675,11 +689,26 @@ export class FiscalPeriodResolver {
     }
   }
 
+  /**
+   * The chain leaf IS the fold — `merge(a,b) = toUuid(a ‖ b)`, the corpus's one algebra ([[merge]]).
+   *
+   * It was hand-rolled here as `Buffer.from(payload + priorLeaf).toString('base64').substring(0, 32)`,
+   * described as a "hash placeholder" and shipped into live audit paths. It was not a hash at all, and the
+   * defect was total — base64 maps 3 bytes to 4 chars, so 32 chars covered only the FIRST 24 BYTES of input:
+   *
+   *   payload  {"calendarDate":"2026-05-12","fiscalYear":2026,"fiscalPeriod":5,"regulatoryCode":"P05_2026"}
+   *   covered  {"calendarDate":"2026-05
+   *
+   * Everything after the month was invisible. 2026-05-12 and 2026-05-31 produced the SAME leaf; fiscalYear
+   * could be rewritten 2026 → 9999 without moving it; priorLeaf, appended past the window, was ignored
+   * ENTIRELY — so the chain never chained. And base64 is reversible, so the leaf decoded back to plaintext.
+   * Tamper-cost was zero under a banner claiming tamper detection, in the exact inverse of [[law]].
+   *
+   * Nothing needed inventing: a leaf over (payload, prior) is the fold's binary step, sha256 over the whole
+   * input with a ∥ delimiter that keeps merge('a','bc') ≠ merge('ab','c'). See test.ts — each sentence above
+   * is a passing assertion, so this can never quietly read as true again.
+   */
   private static computeChainLeaf(payload: string, priorLeaf: string): string {
-    // Simplified: sha256 of JCS-canonical payload + prior leaf
-    // In production, use crypto.subtle.digest('SHA-256', ...) for NIST FIPS 180-4
-    // For now, return a deterministic hash placeholder
-    const combined = payload + (priorLeaf || '')
-    return Buffer.from(combined).toString('base64').substring(0, 32)
+    return merge(payload, priorLeaf)
   }
 }
