@@ -133,6 +133,51 @@ export function affineStep(x: number, a: number, b: number): number {
   return (((Number(a) * Number(x) + Number(b)) % 9) + 9) % 9 || 9
 }
 
+/**
+ * THE ORBITS OF DOUBLING — the closed circuits the flow cannot leave. **Computed, never listed.**
+ *
+ * Doubling partitions the nine residues into THREE circuits, and no amount of doubling crosses between them
+ * (only [[horo]] `throughVoid` does). This is latitude: you travel a circle forever and never change which
+ * circle you are on.
+ *
+ *   {9}            fixed  — the POLE. Doubling does nothing here (9 ≡ 0, and 0·2 = 0).
+ *   {3, 6}         2-cycle — an INNER circuit (3·2=6, 6·2=12≡3).
+ *   {1,2,4,8,7,5}  6-cycle — the outer RING, the unit group ⟨2⟩.
+ *
+ * **This splits the flat "3·6·9 axis".** The axis was named as one thing; it is TWO orbits. `9` does not
+ * rotate at all — it is the fixed point, where rotation has no direction (all directions are south from the
+ * pole). `3` and `6` DO rotate, into each other. Calling them one triple hides a structural difference
+ * behind a pleasing shape. (`cross`'s `AXIS = [3,6,9]` stays as it is — there it labels RBAC tiers, not
+ * geometry.)
+ */
+export function doublingOrbits(): number[][] {
+  const seen = new Set<number>()
+  const orbits: number[][] = []
+  for (let s = 1; s <= 9; s++) {
+    if (seen.has(s)) continue
+    const orbit: number[] = []
+    let x = s
+    do {
+      orbit.push(x)
+      seen.add(x)
+      x = (x * 2) % 9 || 9
+    } while (x !== s)
+    orbits.push(orbit)
+  }
+  return orbits.sort((a, b) => a.length - b.length)
+}
+
+/** Which circuit a step sits on — the flow can never take it off this one. */
+export function orbitOf(step: number): number[] {
+  const n = (((Number(step) % 9) + 9) % 9) || 9
+  return doublingOrbits().find((o) => o.includes(n)) ?? []
+}
+
+/** The pole: fixed under doubling (9 ≡ 0). Rotation does nothing here — the axis's true singular point. */
+export const POLE = 9
+/** The inner circuit — 3 and 6 rotate into each other. NOT the same kind of thing as the pole. */
+export const INNER_CIRCUIT = [3, 6] as const
+
 /** A (stepA, stepB) cell is a merge point — a gateway between rings — when the composed step is 1 or 9. */
 export function isMergePoint(a: number, b: number): boolean {
   const c = composeSteps(a, b)

@@ -12,6 +12,10 @@ import {
   VOID_PIVOT,
   AFFINE_ORDER,
   affineStep,
+  doublingOrbits,
+  orbitOf,
+  POLE,
+  INNER_CIRCUIT,
   isMergePoint,
   horoStateField,
   validateHoroStates,
@@ -148,6 +152,30 @@ describe('horo', () => {
     expect(seen.size).toBe(AFFINE_ORDER) // 54 = 6 units × 9 shifts
     expect(AFFINE_ORDER).toBe(6 * 9) // derived, not remembered
     expect(affineStep(4, 2, 1)).toBe(dr(2 * 4 + 1) || 9)
+  })
+
+  it('doubling has THREE closed orbits — the flow cannot leave its circuit (latitude)', () => {
+    expect(doublingOrbits()).toEqual([[9], [3, 6], [1, 2, 4, 8, 7, 5]])
+    // every double stays on its own orbit — that IS what "trapped" means
+    for (const orbit of doublingOrbits()) {
+      for (const n of orbit) expect(orbit).toContain((n * 2) % 9 || 9)
+    }
+  })
+
+  it('the flat "3·6·9 axis" is TWO orbits — 9 is the pole, {3,6} rotate into each other', () => {
+    expect(orbitOf(POLE)).toEqual([9]) // fixed: doubling does NOTHING here
+    expect((POLE * 2) % 9 || 9).toBe(POLE)
+    expect(orbitOf(3)).toEqual([...INNER_CIRCUIT]) // 3 and 6 DO rotate
+    expect(orbitOf(6)).toEqual([...INNER_CIRCUIT])
+    expect(orbitOf(3)).not.toEqual(orbitOf(POLE)) // ⇒ 9 is not the same kind of thing as 3 and 6
+  })
+
+  it('only the VOID crosses orbits — doubling never does', () => {
+    const sameOrbit = (a: number, b: number) => orbitOf(a).includes(b)
+    for (const n of HORO_DIGITS) expect(sameOrbit(n, (n * 2) % 9 || 9)).toBe(true) // flow stays
+    expect(sameOrbit(1, throughVoid(1))).toBe(false) // 1 → 9: outer ring → the POLE
+    expect(sameOrbit(4, throughVoid(4))).toBe(false) // 4 → 6: outer ring → inner circuit
+    expect(sameOrbit(2, throughVoid(2))).toBe(true) // 2 → 8: stays on the ring
   })
 
   it('nextOctave: 9 → 1 (seal reopens); all other steps pass through', () => {
