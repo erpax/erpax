@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { importCycles, importsOf, assertNoNewCycles } from './index'
+import { importCycles, importsOf, assertNoNewCycles, fatalCycleUses } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-cycle-'))
@@ -90,6 +90,51 @@ describe('rules/cycle — an import loop decides initialisation order', () => {
     expect(es).toHaveLength(1) // @/b only: the type import is erased, node:fs is not ours
     expect(es[0]).toContain('src/b/index.ts')
     rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // Entangled is not fatal. ES modules tolerate a loop unless someone USES a binding while the graph is
+  // still initialising — so the interesting question is not "who is in a ring" (174 files) but "who runs a
+  // ring-mate at load time" (20).
+  describe('topLevelUses — where a cycle stops being latent', () => {
+    it('flags a top-level CALL to a binding from the same tangle', () => {
+      const cwd = corpus({
+        'src/a/index.ts': "import { make } from '@/b'\nexport const built = make()",
+        'src/b/index.ts': "import { built } from '@/a'\nexport const make = () => built",
+      })
+      const uses = fatalCycleUses(cwd)
+      expect(uses).toHaveLength(1)
+      expect(uses[0]).toMatchObject({ file: 'src/a/index.ts', binding: 'make' })
+      rmSync(cwd, { recursive: true, force: true })
+    })
+
+    it('does NOT flag a function that calls the same import — it runs long after init', () => {
+      const cwd = corpus({
+        'src/a/index.ts': "import { make } from '@/b'\nexport const build = () => make()",
+        'src/b/index.ts': "import { build } from '@/a'\nexport const make = () => build",
+      })
+      expect(fatalCycleUses(cwd)).toHaveLength(0) // entangled, but nothing runs at load time
+      rmSync(cwd, { recursive: true, force: true })
+    })
+
+    // The scan reported 49 uses until this check existed; ~44 were `join`, `existsSync`, `createRequire` —
+    // node builtins, fully initialised before our graph starts and incapable of the failure being hunted.
+    it('does NOT flag a builtin called at top level — node:path cannot be in a dead zone', () => {
+      const cwd = corpus({
+        'src/a/index.ts': "import { join } from 'node:path'\nimport { m } from '@/b'\nexport const p = join('x', 'y')\nexport const a = () => m",
+        'src/b/index.ts': "import { a } from '@/a'\nexport const m = () => a()",
+      })
+      expect(fatalCycleUses(cwd)).toHaveLength(0)
+      rmSync(cwd, { recursive: true, force: true })
+    })
+
+    it('judges nothing outside a tangle — a top-level call is normal when nothing points back', () => {
+      const cwd = corpus({
+        'src/a/index.ts': "import { make } from '@/b'\nexport const built = make()",
+        'src/b/index.ts': 'export const make = () => 1',
+      })
+      expect(fatalCycleUses(cwd)).toHaveLength(0) // acyclic: no dead zone to fall into
+      rmSync(cwd, { recursive: true, force: true })
+    })
   })
 
   it('the gate ratchets — fails only on getting worse', () => {

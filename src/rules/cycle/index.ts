@@ -173,6 +173,115 @@ export function importCycles(cwd: string = process.cwd()): Cycle[] {
   return out.sort((a, b) => b.length - a.length)
 }
 
+/** A file in a tangle that RUNS an imported binding at import time — where a loop stops being latent. */
+export interface TopLevelUse {
+  readonly file: string
+  /** The imported binding it calls before the graph has finished initialising. */
+  readonly binding: string
+  readonly line: number
+}
+
+/**
+ * The runtime bindings a file imports, mapped to the module each came FROM.
+ *
+ * The source is the whole point. `const p = join(a, b)` at top level is harmless — `node:path` is fully
+ * initialised before our graph starts, so `join` can never be in its dead zone. Only a binding imported
+ * from a file INSIDE the same tangle can be undefined at load time. Written without this, the scan reported
+ * 49 top-level uses of which ~44 were `join`, `existsSync`, `createRequire` — node builtins, incapable of
+ * the failure being hunted.
+ */
+const importedBindings = (code: string): Map<string, string> => {
+  const out = new Map<string, string>()
+  for (const m of code.matchAll(/(?:^|\n)\s*import(?!\s+type\b)\s+([\s\S]*?)\s+from\s+'([^']+)'/g)) {
+    const clause = m[1]!
+    const spec = m[2]!
+    const braced = clause.match(/\{([\s\S]*?)\}/)
+    if (braced) {
+      for (const part of braced[1]!.split(',')) {
+        const t = part.trim()
+        if (!t || /^type\s/.test(t)) continue // `{ type X }` is erased too
+        out.set((t.split(/\s+as\s+/).pop() ?? t).trim(), spec)
+      }
+    }
+    const bare = clause.replace(/\{[\s\S]*?\}/, '').replace(/,/g, '').trim()
+    if (bare && !/^\*/.test(bare)) out.set(bare, spec)
+  }
+  return out
+}
+
+/**
+ * Where a cycle stops being latent: a MODULE-LEVEL call to an imported binding.
+ *
+ * ES modules tolerate a loop as long as nobody USES a binding while the graph is still initialising. So an
+ * entangled file is not yet a bug — an entangled file that runs an import at load time is:
+ *
+ *   `const _baseFixedAssets = createAccountingCollection(...)`   ← fixed/assets/index.ts:34
+ *
+ * A function that calls the same import is FINE: by the time anyone calls it, initialisation is done. So a
+ * declaration whose value is a function (`= () =>`, `= async (`, `= function`) is deferred, not run — and
+ * skipping it is the difference between naming 5 real defects and 152 innocent files.
+ */
+export function topLevelUses(file: string, cwd: string = process.cwd(), within?: ReadonlySet<string>): TopLevelUse[] {
+  let text: string
+  try {
+    text = readFileSync(file, 'utf8')
+  } catch {
+    return []
+  }
+  const code = text.replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' ')).replace(/^\s*\/\/.*$/gm, '')
+  const bindings = importedBindings(code)
+  // Only a binding from a module in the SAME tangle can be in its dead zone. Given no tangle, judge nothing:
+  // a top-level call is perfectly normal when nothing points back at you.
+  const names = new Set(
+    [...bindings]
+      .filter(([, spec]) => {
+        const target = resolveSpec(cwd, file, spec)
+        return target ? (within ? within.has(relative(cwd, target).replace(/\\/g, '/')) : true) : false
+      })
+      .map(([name]) => name),
+  )
+  if (names.size === 0) return []
+
+  const out: TopLevelUse[] = []
+  const lines = code.split('\n')
+  let depth = 0
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!
+    if (depth === 0) {
+      const decl = line.match(/^\s*(?:export\s+)?(?:const|let|var)\s+[\w$]+(?:\s*:[^=]+)?\s*=\s*(.*)$/)
+      const init = decl?.[1] ?? (/^\s*[\w$]+\s*\(/.test(line) ? line : undefined) // bare call statement
+      // a value that IS a function is deferred — it runs long after initialisation
+      if (init !== undefined && !/^(?:async\s*)?(?:\(|function\b|[\w$]+\s*=>)/.test(init.trim())) {
+        for (const m of init.matchAll(/([\w$]+)\s*\(/g)) {
+          if (names.has(m[1]!)) out.push({ file: relative(cwd, file).replace(/\\/g, '/'), binding: m[1]!, line: i + 1 })
+        }
+      }
+    }
+    for (const ch of line) {
+      if (ch === '{' || ch === '(' || ch === '[') depth++
+      else if (ch === '}' || ch === ')' || ch === ']') depth = Math.max(0, depth - 1)
+    }
+  }
+  return out
+}
+
+/**
+ * The tangled files that actually RUN an import at load time — the fix list, not the map.
+ *
+ * This is the line between "152 files are entangled" (true, and latent) and "this throws a ReferenceError"
+ * (true, and live). Only files inside a real tangle are judged: a top-level call is perfectly normal when
+ * nothing points back at you.
+ */
+export function fatalCycleUses(cwd: string = process.cwd()): TopLevelUse[] {
+  const out: TopLevelUse[] = []
+  // Judge each tangle against ITSELF: a binding is only dangerous if it comes from this same component.
+  for (const tangle of importCycles(cwd)) {
+    const within = new Set(tangle)
+    for (const rel of tangle) out.push(...topLevelUses(join(cwd, rel), cwd, within))
+  }
+  return out.sort((a, b) => (a.file + a.binding < b.file + b.binding ? -1 : 1))
+}
+
 /**
  * Gate: ratchets. A cycle decides initialisation order, so it fails CLOSED on getting worse — the ceiling
  * drops as each ring is broken.

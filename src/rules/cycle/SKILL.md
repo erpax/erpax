@@ -49,7 +49,23 @@ It was first written as a depth-first walk that marked nodes `done` and reported
 
 An **SCC is the honest unit**: enumerating every distinct ring is exponential in a dense tangle, while the component answers the question that matters — *which files are mutually entangled* — in linear time.
 
-**Honest boundary.** This proves files are **entangled**, never that a given loop **bites**. ES modules tolerate a cycle as long as no one *uses* an imported binding during initialisation — most of the 2-hop barrel↔child rings are harmless. The fatal ones are those with **top-level execution**, and this gate does not yet separate them; `fixed/assets` was found by reading. A 152-file component means initialisation order is decided by accident, which is a latent version of the same failure.
+## Entangled is not fatal — `fatalCycleUses`
+
+ES modules tolerate a loop as long as nobody **uses** a binding while the graph is still initialising. So the question worth asking is not *who is in a ring* — it is *who runs a ring-mate at load time*:
+
+| | count (2026-07-16) |
+| --- | ---: |
+| files in a tangle | **174** |
+| that CALL a binding from their own tangle at load time | **20** |
+
+A fix list, not a map — and it independently finds `fixed/assets:34 → createAccountingCollection()`, the one that was found by reading.
+
+Two things it must NOT flag, and both were learned the hard way:
+
+- **A function is deferred.** `const build = () => make()` runs long after initialisation. Only an initialiser that *is not* a function body is evaluated at load time.
+- **A builtin cannot be in a dead zone.** The scan reported **49** uses until the source check existed; ~44 were `join`, `existsSync`, `createRequire` — node builtins, fully initialised before our graph starts, structurally incapable of the failure being hunted. Only a binding imported **from a file in the same tangle** can be undefined.
+
+**Honest boundary.** This proves a binding is **run during initialisation**, never that the run **throws** — whether a given loop bites depends on the order the graph is entered, which is why `readme/test.ts` dies and a full Payload boot may not. It reads top-level **calls**; a bare dereference (`const x = importedObj.field`) is evaluated too and is not yet caught. And the 154 entangled files that run nothing are not innocent — their initialisation order is decided by accident, which is the latent form of the same failure.
 
 **Law — [[law]]: a module may not depend on itself, however far around. An import loop makes initialisation order an accident, and a top-level call inside one reads a binding that does not exist yet.**
 
