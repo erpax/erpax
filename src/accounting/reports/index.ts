@@ -36,6 +36,7 @@
 import type { Payload } from 'payload'
 import { computeAgingBuckets, type AgingBucket, type BucketDefinition } from '@/party'
 import { DebitCreditLogic } from '../debit'
+import { BALANCE_TOLERANCE } from '@/double/entry/validator'
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -134,6 +135,34 @@ function lineAccountId(line: JournalLine): string | number | undefined {
 }
 
 /** Sum debits/credits per account from a list of posted journal entries. */
+/**
+ * Read EVERY row, not the first page.
+ *
+ * `payload.find` caps at `limit`, and a report that takes the cap and sums it is a report about a SUBSET
+ * wearing the name of the whole. Nothing here checked `totalDocs`; the caps (10 000 accounts, 100 000
+ * entries) were a silent ceiling on the fundamental report. Walks pages until the corpus is exhausted, and
+ * THROWS if the page count runs away rather than returning a partial answer — a loud failure beats a wrong
+ * trial balance that says it balances.
+ *
+ * @invariant returns every matching row, or throws — never a silent subset
+ */
+async function findAll(
+  payload: Payload,
+  collection: string,
+  where: Record<string, unknown>,
+  pageSize = 1000,
+): Promise<{ docs: unknown[] }> {
+  const docs: unknown[] = []
+  let page = 1
+  for (;;) {
+    const r = await payload.find({ collection: collection as never, where: where as never, limit: pageSize, page, depth: 0 })
+    docs.push(...r.docs)
+    if (!r.hasNextPage) return { docs }
+    page++
+    if (page > 10_000) throw new Error(`${collection}: refusing a partial report — over ${10_000 * pageSize} rows`)
+  }
+}
+
 function aggregateActivity(
   entries: JournalEntry[],
 ): Map<string | number, { debits: number; credits: number }> {
@@ -179,24 +208,20 @@ export async function generateTrialBalance(
   asOfDate: Date,
   currency = 'EUR',
 ): Promise<TrialBalanceDTO> {
+  // A CAP THAT DROPS ROWS IS NOT A CAP — it is a wrong trial balance that says it balances.
+  // These read `limit: 10000` and `limit: 100000` with nothing checking totalDocs or hasNextPage. At
+  // 100 001 posted entries the rest were silently discarded, the remainder summed, and `isBalanced: true`
+  // returned — because the OMITTED entries were themselves balanced. The report every other report projects
+  // from (balance sheet · income statement · the statutory SAF-T export) was quietly reporting a subset.
+  // A trial balance is a statement about ALL postings or it is not a trial balance.
   const [accounts, entries] = await Promise.all([
-    payload.find({
-      collection: 'gl-accounts',
-      where: { and: [{ tenant: { equals: tenantId } }] },
-      limit: 10000,
-      depth: 0,
-    }),
-    payload.find({
-      collection: 'journal-entries',
-      where: {
-        and: [
-          { tenant: { equals: tenantId } },
-          { status: { equals: 'posted' } },
-          { entryDate: { less_than_equal: asOfDate.toISOString() } },
-        ],
-      },
-      limit: 100000,
-      depth: 0,
+    findAll(payload, 'gl-accounts', { and: [{ tenant: { equals: tenantId } }] }),
+    findAll(payload, 'journal-entries', {
+      and: [
+        { tenant: { equals: tenantId } },
+        { status: { equals: 'posted' } },
+        { entryDate: { less_than_equal: asOfDate.toISOString() } },
+      ],
     }),
   ])
 
@@ -225,7 +250,12 @@ export async function generateTrialBalance(
     rows: rows.sort((a, b) => a.accountNumber.localeCompare(b.accountNumber)),
     totalDebits,
     totalCredits,
-    isBalanced: Math.abs(totalDebits - totalCredits) < 0.01,
+    // The ONE balance law — imported, not restated. It read `< 0.01` here while double/entry/validator
+    // refuses on `> BALANCE_TOLERANCE`: the same law in two places, already disagreeing at exactly one cent,
+    // where one said balanced and the other did not. (That bound names a cent and does not mean one — it is
+    // an absolute epsilon over floats, so the same 1-cent gap is refused at 100 and admitted at 50. See the
+    // validator: the disease is money in floats, pinned there, not re-litigated here.)
+    isBalanced: Math.abs(totalDebits - totalCredits) <= BALANCE_TOLERANCE,
     currency,
     generatedAt: new Date().toISOString(),
   }
