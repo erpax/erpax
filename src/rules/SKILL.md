@@ -55,6 +55,8 @@ The canonical home for every **live-tree law** the corpus enforces. Ratchet gate
 | `word-without-logic` | [[rules]]/word-without-logic | literary atoms — prose without executable matter or use case; `pnpm erpax corpus words` |
 | `canonical` | [[rules]]/canonical | installed package never called — use its API or drop it; `tsx src/rules/canonical/index.ts` |
 | `reference` | [[rules]]/reference | dead `src/…` pointer — the statute→code trace must resolve (statutory ceiling **0**); `tsx src/rules/reference/index.ts` |
+| `unfolded` | [[rules]]/unfolded | export with ≤1 call site — inline it, delete it, or reuse it; `tsx src/rules/unfolded/index.ts` |
+| `ask` | [[rules]]/ask | required field with nothing computed — if law/tenant/sequence/clock determines it, the user CONFIRMS; `tsx src/rules/ask/index.ts` |
 
 Run: `pnpm rules:check` · `tsx src/rules/index.ts --accounting-only`
 

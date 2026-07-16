@@ -35,10 +35,24 @@ export interface DeadReference {
 
 /** Files whose references are scanned — prose and code comments alike. */
 const SCANNED = /\.(ts|tsx|md|mdx)$/
-/** Generated faces + bundles regenerate from the tree; their references are not hand-maintained. */
-const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$|LLM\.md$|README\.md$|diamond\.json$/
+/**
+ * Not the audit surface. Generated faces regenerate from the tree (their refs are not hand-maintained), and a
+ * TEST names paths that do not exist BY NATURE — hermetic fixture keys, and the comments explaining them.
+ * Flagging a test's own fixtures is how a gate earns being switched off. An auditor reads the SKILL and the
+ * code; a stale pointer in a test comment is the accepted cost of a gate that survives.
+ */
+const GENERATED =
+  /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$|(?:^|[/.])test\.tsx?$|LLM\.md$|README\.md$|diamond\.json$/
 /** A `src/...` path reference: stops at whitespace, quote, backtick, paren, or a trailing sentence dot. */
 const REF_RE = /src\/[A-Za-z0-9_./-]*[A-Za-z0-9_/-]/g
+
+/**
+ * Where a reference can live. In prose (`.md`) every path is a pointer. In CODE only a **comment** is a
+ * pointer — a path in a string literal is DATA: a hermetic test fixture key, a glob, a config value. Scanning
+ * code literals flags a test's own fixtures as dead pointers, which is how a gate earns being ignored.
+ */
+const referenceText = (file: string, text: string): string =>
+  /\.(md|mdx)$/.test(file) ? text : (text.match(/\/\/[^\n]*|\/\*[\s\S]*?\*\//g) ?? []).join('\n')
 
 /**
  * Resolve a reference the way a reader would: the literal path, or the module/face spellings a bare name
@@ -70,7 +84,7 @@ export function deadReferencesIn(files: readonly string[], cwd: string = process
     } catch {
       continue
     }
-    for (const target of new Set(text.match(REF_RE) ?? [])) {
+    for (const target of new Set(referenceText(p, text).match(REF_RE) ?? [])) {
       if (!resolves(cwd, target)) {
         dead.push({ from: relative(cwd, p).replace(/\\/g, '/'), target })
       }

@@ -39,11 +39,22 @@ describe('rules/reference — the statute→code trace must resolve', () => {
 
   it('resolves bare module spellings — a folder or an implied extension is not dead', () => {
     const cwd = corpus({
-      'src/a/index.ts': 'see src/oid and src/b/Widget',
+      'src/a/index.ts': '// see src/oid and src/b/Widget',
       'src/oid/index.ts': 'export const x = 1',
       'src/b/Widget.tsx': 'export const W = 1',
     })
     expect(deadReferences(cwd)).toHaveLength(0) // src/oid → folder; Widget → .tsx
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('in CODE only a comment is a pointer — a string literal is DATA, never a dead reference', () => {
+    // a hermetic test fixture names paths that do not exist; flagging them is how a gate earns being ignored
+    const cwd = corpus({
+      'src/a/index.ts': "const fixture = { 'src/gone/nowhere.ts': 'x' }\nconst glob = 'src/**/*.ts'",
+      'src/b/index.ts': '// @see src/gone/pointer.ts',
+    })
+    const dead = deadReferences(cwd)
+    expect(dead.map((d) => d.target)).toEqual(['src/gone/pointer.ts']) // the comment only
     rmSync(cwd, { recursive: true, force: true })
   })
 
@@ -56,7 +67,7 @@ describe('rules/reference — the statute→code trace must resolve', () => {
   it('separates the STATUTORY surface — only files citing Bulgarian statute count for the legal gate', () => {
     const cwd = corpus({
       'src/supto/SKILL.md': '@standard BG Наредба-Н-18 §СУПТО — see src/gone/unp.ts',
-      'src/other/index.ts': 'see src/gone/other.ts', // not statutory
+      'src/other/index.ts': '// see src/gone/other.ts', // not statutory
     })
     expect(deadReferences(cwd)).toHaveLength(2)
     expect(deadStatutoryReferences(cwd)).toHaveLength(1) // only the Наредба citer
@@ -72,7 +83,7 @@ describe('rules/reference — the statute→code trace must resolve', () => {
   })
 
   it('the whole-tree ratchet fails only on getting WORSE than its ceiling', () => {
-    const cwd = corpus({ 'src/a/index.ts': 'see src/gone/x.ts and src/gone/y.ts' })
+    const cwd = corpus({ 'src/a/index.ts': '// see src/gone/x.ts and src/gone/y.ts' })
     expect(() => assertReferencesResolve(cwd, 2)).not.toThrow()
     expect(() => assertReferencesResolve(cwd, 1)).toThrow(/exceeds the ratchet ceiling/)
     rmSync(cwd, { recursive: true, force: true })
