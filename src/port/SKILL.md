@@ -271,6 +271,7 @@ Which tables are still gaps is **computed, not eyeballed**. `portWaves(cwd, sche
 - **DRY cleaning** — `isInfra` drops framework noise (Solid Queue/Cache/Cable, ActiveStorage, PaperTrail `versions`, dated `_YYYYMMDD` archives) so the manifest is real domain gaps only.
 - **Word vs matter** — a match only counts as ported when the atom carries executable matter (`index.ts`). An atom with a SKILL and no matter is a **word without logic** ([[rules]]) — the vocabulary exists, the port does not.
 - **Real usage decides** — `upstreamRowCounts(db, tables)` reads the live source DB. A table with **0 rows** was defined and never used in 20 years: it is **not a gap**, and porting it would invent a domain the source never had. Without a DB, usage is **unknown** and nothing is assumed.
+- **Rows > 0 is necessary, NOT sufficient** — a table can be full of rows and empty of information. `count(col)` counts non-NULL, and **0 is non-NULL**: `packing_lists` has 727 rows where `net_weight`/`gross_weight`/`volume`/`pallets_count`/`items_count` are all `min=max=sum=0` and `number`/`status` are 100% empty. Its "mass balance" law held **727/727 vacuously — because both sides were zero**. Before folding, check the columns carry *information* (`min`/`max`/`sum`, non-empty text), not merely presence. The tool does not do this yet — **it is the human's check**, and it is the difference between a port and 727 rows of encoded zeros.
 - Run: `tsx src/port/index.ts ~/github/ceccec/etrima/db/schema.rb etrima_production` — the DB arg is what makes the manifest true.
 
 **The finding (computed, 2026-07-16): 23/35 ported · 23 infra · 8 defined-but-never-used · 6 REAL gaps.**
@@ -282,8 +283,8 @@ The 6 real gaps, and what each actually is:
 | table | rows | verdict |
 | --- | --: | --- |
 | `product_variants` | 42 979 | **ported as generator** — [[variant]] holds the expansion algebra; the rows are its output, never copied |
-| `employee_contracts` | 919 | **real gap** — `vocabulary/contract` is the word; fold the matter there |
-| `packing_lists` | 727 | **real gap** — `vocabulary/list` is the word; fold the matter there |
+| `employee_contracts` | 919 | **FOLDED** → [[employees]]/contracts. NOT `vocabulary/contract` — that is the *customer* contract's model (IFRS-15). A **homonym**: the tool's head-noun match was wrong, and folding there would have hit the wrong concept. |
+| `packing_lists` | 727 | **NOT a gap — degenerate.** 727 rows, but `net_weight`·`gross_weight`·`volume`·`pallets_count`·`items_count` are all `min=max=sum=0`; `number`·`status` 100% empty. Only `packs_count` is real — and it sums to **118 716**, exactly the rows [[packs]] already evolved from. Folding it would encode zeros. |
 | `machine_types` | 172 | already inside [[machine]] (`MachineType`); the head-noun hit on a generic `type` atom is noise |
 | `pack_types` | 11 | same generic-`type` noise; trivial |
 | `uploads` | 7 | trivial; [[upload]] is the word |
