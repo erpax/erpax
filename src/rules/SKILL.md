@@ -59,6 +59,7 @@ The canonical home for every **live-tree law** the corpus enforces. Ratchet gate
 | `ask` | [[rules]]/ask | required field with nothing computed — if law/tenant/sequence/clock determines it, the user CONFIRMS; `tsx src/rules/ask/index.ts` |
 | `invisible` | [[rules]]/invisible | matter at an unaddressable path — no lawful path ⇒ no uuid ⇒ no dedup ⇒ silent duplication; `tsx src/rules/invisible/index.ts` |
 | `prose` | [[rules]]/prose | a SKILL citing code nothing defines — write the code or stop claiming it; refused at the write by [[confirm]]; `tsx src/rules/prose/index.ts` |
+| `refutable` | [[rules]]/refutable | an `@invariant` with no proof beside it — unfalsifiable, so it forbids nothing; `tsx src/rules/refutable/index.ts` |
 
 Run: `pnpm rules:check` · `tsx src/rules/index.ts --accounting-only`
 
