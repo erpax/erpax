@@ -1229,7 +1229,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds / crypto Travel Rule)",
     "uuid": "21f55193-2265-8002-9a8c-70a9b8300433",
     "color": "hsl(53 66% 41%)",
-    "count": 242,
+    "count": 241,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1335,7 +1335,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2023/2854 — Data Act, on harmonised rules on fair access to and use of data",
     "uuid": "1b87a397-6113-8257-9b81-fb82841c78c9",
     "color": "hsl(207 78% 45%)",
-    "count": 242,
+    "count": 241,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1441,7 +1441,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Carbon Border Adjustment Mechanism — Regulation (EU) 2023/956",
     "uuid": "b4f6dd26-c4bf-8dd0-8cc4-5f5db71660b8",
     "color": "hsl(246 66% 52%)",
-    "count": 242,
+    "count": 241,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1547,7 +1547,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation)",
     "uuid": "a7d2e799-e418-83ca-add4-039a74d0af59",
     "color": "hsl(122 76% 47%)",
-    "count": 207,
+    "count": 206,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -1971,7 +1971,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/1925 — Digital Markets Act (DMA)",
     "uuid": "99abd903-2be6-85f9-ba7b-6ae2e9e4a3b9",
     "color": "hsl(99 62% 41%)",
-    "count": 125,
+    "count": 123,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2077,7 +2077,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/2065 — Digital Services Act (DSA)",
     "uuid": "f1fce4ae-fc69-8307-9f3a-3528a8373ca4",
     "color": "hsl(28 73% 44%)",
-    "count": 125,
+    "count": 123,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2183,7 +2183,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/2554 (DORA) on digital operational resilience for the financial sector",
     "uuid": "1f2ce151-0159-8fc6-8984-d4cdf7dc0f8c",
     "color": "hsl(60 70% 47%)",
-    "count": 125,
+    "count": 123,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2289,7 +2289,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2022/2555 (NIS2) — measures for a high common level of cybersecurity across the Union",
     "uuid": "672f0cf3-96e4-83fe-803d-a8e87a383299",
     "color": "hsl(135 67% 41%)",
-    "count": 125,
+    "count": 123,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2395,7 +2395,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2022/868 — Data Governance Act (DGA), on European data governance and amending Regulation (EU) 2018/1724",
     "uuid": "a4c1f12f-ca9c-8b7a-bada-c3f01ef0d7d3",
     "color": "hsl(57 86% 61%)",
-    "count": 125,
+    "count": 123,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -2501,7 +2501,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2018/1673 (6th Anti-Money-Laundering Directive, AMLD6) on combating money laundering by criminal law",
     "uuid": "5d0d3b82-8a4b-8802-84c0-f6e6c2a6255d",
     "color": "hsl(61 79% 48%)",
-    "count": 96,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2607,7 +2607,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Geo-blocking Regulation (Regulation (EU) 2018/302)",
     "uuid": "5fec2727-8ed5-88a4-b744-53f0dc4f2f32",
     "color": "hsl(76 59% 53%)",
-    "count": 96,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2713,7 +2713,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 — regulatory technical standards for strong customer authentication and common and secure open standards of communication (SCA-RTS)",
     "uuid": "b6bd7981-4978-88fe-aab0-db169e2f11b9",
     "color": "hsl(341 71% 47%)",
-    "count": 96,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2819,7 +2819,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Directive (EU) 2018/843 (5th Anti-Money-Laundering Directive, AMLD5) amending Directive (EU) 2015/849",
     "uuid": "236c9091-ba23-8612-b31a-7ed41603a127",
     "color": "hsl(68 59% 39%)",
-    "count": 96,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -2925,7 +2925,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Revised Posting of Workers Directive — Directive (EU) 2018/957 amending Directive 96/71/EC",
     "uuid": "50aa60a9-70e7-8a4e-ad5a-78f845f7dba2",
     "color": "hsl(130 81% 39%)",
-    "count": 96,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -4782,7 +4782,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2018/1725 — protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data",
     "uuid": "0d44a96c-9a80-8cc8-bd9d-5a1319876b04",
     "color": "hsl(156 84% 50%)",
-    "count": 96,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -5003,7 +5003,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 169,
+    "count": 168,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -5109,7 +5109,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 43,
+    "count": 41,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -5145,10 +5145,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/config/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/consistency/apply/index.ts",
         "section": ""
       },
       {
@@ -5205,6 +5201,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/testing/config/discovery/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/index.ts",
         "section": ""
       }
     ]
@@ -6388,7 +6388,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 86,
+    "count": 84,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -8247,7 +8247,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/agent/strict-apply.ts",
+        "path": "src/agent/index.ts",
         "section": ""
       },
       {
@@ -8565,7 +8565,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/agent/strict-apply.ts",
+        "path": "src/agent/index.ts",
         "section": ""
       },
       {
@@ -8767,7 +8767,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 14,
     "modules": [
       {
-        "path": "src/agent/strict-apply.ts",
+        "path": "src/agent/index.ts",
         "section": ""
       },
       {
@@ -9382,7 +9382,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 29,
+    "count": 28,
     "modules": [
       {
         "path": "src/agent/access/SKILL.md",
@@ -9473,11 +9473,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/atom/catalogue.mjs",
+        "path": "src/dashboard/spec/index.ts",
         "section": ""
       },
       {
-        "path": "src/dashboard/spec/index.ts",
+        "path": "src/multi/search/index.ts",
         "section": ""
       }
     ]
@@ -10387,7 +10387,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 156,
+    "count": 153,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -11839,7 +11839,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ECMAScript language specification",
     "uuid": "dbd1c6da-73fe-836a-bfb1-1566b9b00b48",
     "color": "hsl(113 78% 40%)",
-    "count": 33,
+    "count": 34,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -11922,6 +11922,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/syntax/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/types/sti/index.ts",
         "section": ""
       },
@@ -11931,10 +11935,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/widget/AuditLogWidget.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/widget/BalanceSheetWidget.tsx",
         "section": ""
       }
     ]
@@ -12399,14 +12399,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Schema",
     "uuid": "85ef557a-6762-8ad1-8694-d7c85e6bd90b",
     "color": "hsl(87 70% 40%)",
-    "count": 3,
+    "count": 2,
     "modules": [
       {
         "path": "src/testing/config/discovery/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/testing/config/discovery/types/index.ts",
         "section": ""
       },
       {
@@ -12421,7 +12417,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 62,
+    "count": 61,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
@@ -12527,7 +12523,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Web Content Accessibility Guidelines",
     "uuid": "852e7032-f08c-8685-802a-ea7d1e0db109",
     "color": "hsl(254 62% 40%)",
-    "count": 30,
+    "count": 29,
     "modules": [
       {
         "path": "src/agents/registered/design.agent.ts",
@@ -12622,7 +12618,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/consistency/apply/index.ts",
+        "path": "src/iso/14289/profile.ts",
         "section": ""
       }
     ]

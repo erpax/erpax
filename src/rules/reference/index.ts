@@ -23,6 +23,7 @@
  * Composes [[rules]] · [[confirm]] · [[law]].
  */
 import { readFileSync, existsSync, readdirSync, type Dirent } from 'node:fs'
+import { commentsOf } from '@/syntax'
 import { join, relative } from 'node:path'
 
 /** A `src/…` path written in prose/comments that does not exist on disk. */
@@ -61,7 +62,7 @@ const REF_RE = /src\/[A-Za-z0-9_./-]*[A-Za-z0-9_/-]/g
  * where one audit-leaf stub was hand-rolled eight times).
  */
 export const proseOf = (file: string, text: string): string =>
-  /\.(md|mdx)$/.test(file) ? text : (text.match(/\/\/[^\n]*|\/\*[\s\S]*?\*\//g) ?? []).join('\n')
+  /\.(md|mdx)$/.test(file) ? text : commentsOf(file, text).join('\n')
 
 /**
  * Resolve a reference the way a reader would: the literal path, or the module/face spellings a bare name
