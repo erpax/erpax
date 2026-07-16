@@ -1,8 +1,10 @@
 import { CollectionConfig } from 'payload'
-// Slice PPP: arAgingHook + cogsHook removed — they delegated to services
-// that don't exist in `src/services/` (silent no-ops). Aging is now a
-// service-generated DTO via `financialReportingService`; COGS will fold
-// into `gl-posting.service.ts`'s invoice handler when built.
+// Slice PPP: arAgingHook + cogsHook removed — they delegated to services that
+// did not exist (silent no-ops). This note then reassigned aging to
+// `financialReportingService`, which never contained a line of aging code and
+// was never called by anything — a second dead pointer replacing the first.
+// Aging is generateARAgingReport / generateAPAgingReport in @/accounting/reports.
+// COGS remains unbuilt: it is a gap, not a delegation.
 import { deriveInvoiceNumber, invoiceAccountingHook } from '@/invoices/hooks'
 import { validateNotLocked } from '@/utility'
 import { adminOnly, multiTenantRead } from '@/auth'
@@ -24,7 +26,7 @@ import { isIso4217 } from '@/iso/4217'
  * seed-vs-schema invariant. `typeStatus.invoiceType + .invoiceTypeCode +
  * .confirmed` remain inside the canonical group.
  *
- * The canonical types live in `@/standards/en-16931`:
+ * The canonical types live in `@/en/16931`:
  *   InvoiceHeader (BG-1 subset)  — invoice envelope
  *   DocumentTotals (BG-22)       — BT-106..BT-115 totals chain
  *   VatBreakdown   (BG-23)       — per-category × rate VAT detail
@@ -62,8 +64,7 @@ import { isIso4217 } from '@/iso/4217'
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @compliance SOX §404 internal-controls
  * @audit ISO-19011:2018 audit-trail
- * @see src/standards/en-16931/types.ts
- * @see docs/STANDARDS.md §3
+ * @see src/en/16931/types.ts
  */
 export const Invoices: CollectionConfig = {
   slug: 'invoices',
@@ -477,7 +478,7 @@ export const Invoices: CollectionConfig = {
       },
       fields: [
         {
-          // Canonical 9-code list lives in `src/standards/un-cefact-5305/`.
+          // Canonical 9-code list lives in `src/un/cefact/5305/`.
           name: 'categoryCode',
           type: 'select',
           required: true,

@@ -9860,10 +9860,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/financial/reporting/service/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/financial/statements/index.ts",
         "section": ""
       },
