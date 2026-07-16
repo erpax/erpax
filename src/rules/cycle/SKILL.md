@@ -65,7 +65,9 @@ Two things it must NOT flag, and both were learned the hard way:
 - **A function is deferred.** `const build = () => make()` runs long after initialisation. Only an initialiser that *is not* a function body is evaluated at load time.
 - **A builtin cannot be in a dead zone.** The scan reported **49** uses until the source check existed; ~44 were `join`, `existsSync`, `createRequire` — node builtins, fully initialised before our graph starts, structurally incapable of the failure being hunted. Only a binding imported **from a file in the same tangle** can be undefined.
 
-**Honest boundary.** This proves a binding is **run during initialisation**, never that the run **throws** — whether a given loop bites depends on the order the graph is entered, which is why `readme/test.ts` dies and a full Payload boot may not. It reads top-level **calls**; a bare dereference (`const x = importedObj.field`) is evaluated too and is not yet caught. And the 154 entangled files that run nothing are not innocent — their initialisation order is decided by accident, which is the latent form of the same failure.
+**Honest boundary.** An import whose specifiers are ALL inline  is erased too — the same class as `import type`, in different syntax. Counting it invents an edge, and an invented edge in a cycle gate is an invented cycle; it is 5 of 3,995 braced imports here, and correcting it moved neither the 152 nor the 20. The tangle is not an artifact of the scan.
+
+This proves a binding is **run during initialisation**, never that the run **throws** — whether a given loop bites depends on the order the graph is entered, which is why `readme/test.ts` dies and a full Payload boot may not. It reads top-level **calls**; a bare dereference (`const x = importedObj.field`) is evaluated too and is not yet caught. And the 154 entangled files that run nothing are not innocent — their initialisation order is decided by accident, which is the latent form of the same failure.
 
 **Law — [[law]]: a module may not depend on itself, however far around. An import loop makes initialisation order an accident, and a top-level call inside one reads a binding that does not exist yet.**
 

@@ -39,8 +39,24 @@ import { join, dirname, resolve, relative } from 'node:path'
 const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$|catalogue\.ts$/
 const IS_TEST = /(?:^|[/.])test\.tsx?$|\.test\.tsx?$/
 
-/** A runtime import edge: `import type` is erased, so it is not one. */
-const RUNTIME_IMPORT = /(?:^|\n)\s*(?:import|export)(?!\s+type\b)[\s\S]*?from\s+'([^']+)'/g
+/** A candidate import edge — `import type … from` is erased outright, so it is never one. */
+const RUNTIME_IMPORT = /(?:^|\n)\s*(?:import|export)(?!\s+type\b)([\s\S]*?)from\s+'([^']+)'/g
+
+/**
+ * Is this statement erased before runtime?
+ *
+ * `import type { X } from 'y'` is obvious. `import { type X, type Y } from 'y'` is NOT — and TypeScript
+ * elides it just the same when EVERY specifier is type-only. Counting it invents an edge that does not exist
+ * at runtime, and an invented edge in a cycle gate is an invented cycle. Measured: 5 of 3,995 braced `@/`
+ * imports in the tree. Small, and still 5 lies — the same class as `import type`, wearing different syntax.
+ */
+const isErased = (clause: string): boolean => {
+  const braced = clause.match(/\{([\s\S]*?)\}/)
+  if (!braced) return false // a default/namespace import is a value
+  if (clause.replace(/\{[\s\S]*?\}/, '').replace(/[,\s]/g, '')) return false // `X, { type Y }` — X is a value
+  const parts = braced[1]!.split(',').map((s) => s.trim()).filter(Boolean)
+  return parts.length > 0 && parts.every((s) => /^type\s/.test(s))
+}
 
 const resolveSpec = (cwd: string, from: string, spec: string): string | null => {
   let base: string
@@ -64,7 +80,8 @@ export function importsOf(file: string, cwd: string = process.cwd()): string[] {
   const code = text.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '')
   const out: string[] = []
   for (const m of code.matchAll(RUNTIME_IMPORT)) {
-    const r = resolveSpec(cwd, file, m[1]!)
+    if (isErased(m[1]!)) continue
+    const r = resolveSpec(cwd, file, m[2]!)
     if (r && !GENERATED.test(r)) out.push(r)
   }
   return out

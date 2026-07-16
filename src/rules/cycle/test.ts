@@ -80,6 +80,27 @@ describe('rules/cycle — an import loop decides initialisation order', () => {
     rmSync(cwd, { recursive: true, force: true })
   })
 
+  // `import type {…}` is obvious; `import { type X, type Y }` is the same erasure in different syntax, and
+  // TypeScript elides it just as completely. Counting it invents an edge — and an invented edge in a cycle
+  // gate is an invented cycle. Measured: 5 of 3,995 braced @/ imports. Small, and still 5 lies.
+  it('an import whose specifiers are ALL inline type is erased — not an edge', () => {
+    const cwd = corpus({
+      'src/a/index.ts': "import { type B, type C } from '@/b'\nexport const a = (x: B, y: C) => [x, y]",
+      'src/b/index.ts': "import { a } from '@/a'\nexport type B = number\nexport type C = string\nexport const b = () => a(1, 'x')",
+    })
+    expect(importCycles(cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('but ONE value specifier makes the whole statement an edge', () => {
+    const cwd = corpus({
+      'src/a/index.ts': "import { real, type B } from '@/b'\nexport const a = (x: B) => real(x)",
+      'src/b/index.ts': "import { a } from '@/a'\nexport type B = number\nexport const real = (n: number) => n\nexport const b = () => a(1)",
+    })
+    expect(importCycles(cwd)).toHaveLength(1) // `real` is a value — the edge is genuine
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
   it('importsOf reads runtime edges only', () => {
     const cwd = corpus({
       'src/a/index.ts': "import { b } from '@/b'\nimport type { T } from '@/c'\nimport fs from 'node:fs'",
