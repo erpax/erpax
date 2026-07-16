@@ -26,7 +26,7 @@ import {
   TenantFilterOptions,
   BatchTenantActionRequest,
 } from '@/types/tenant';
-import { tenantService } from '@/tenant.service';
+import { tenantService } from '@/tenant/service';
 import HostTable from './TenantTable';
 import HostFilters from './TenantFilters';
 import HostDialog from './TenantDialog';

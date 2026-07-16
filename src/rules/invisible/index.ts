@@ -9,14 +9,17 @@
  * This is NOT the [[law]]/folder `alphanumeric-name` axis restated. That axis counts NAMES (ceiling 433) and
  * reads as cosmetic — tidy it eventually. This names the CONSEQUENCE, which is structural:
  *
- *   `src/financial/reporting.service/` — no SKILL, no uuid, no matrix node — holds a SECOND
- *   `generateTrialBalance`, private, beside the exported one in `accounting/reports`. The trial balance is
- *   what every financial report projects from. Two of them means the statutory SAF-T export and the balance
- *   sheet can disagree, each internally consistent, with no gate between them. The duplication is not the
- *   disease — it is the symptom of a path that could not be addressed.
+ *   The financial reporting service lived under a DOTTED folder — no SKILL, no uuid, no matrix node — and it
+ *   holds a SECOND `generateTrialBalance`, private, beside the exported one in `accounting/reports`. The
+ *   trial balance is what every financial report projects from. Two of them means the statutory SAF-T export
+ *   and the balance sheet can disagree, each internally consistent, with no gate between them. The
+ *   duplication is not the disease — it is the symptom of a path that could not be addressed.
  *
- * Measured: **41** folders carry `index.ts` at an unlawful path, and **all 41 have no SKILL** — no form, no
- * name, no identity. Including `saf/t/export.service` (the statutory export) and `camt053/import.service`.
+ * Measured 41 → **0**: every piece of matter in `src` is now addressable. **The path is the message — no
+ * payload.** A path carries what a thing IS, never what you DO to it (`configure`/`create`/`sync` are verbs
+ * ⇒ functions) nor how it behaves (`tenant`/`aware` are adjectives). A REPEATED segment is the tell: a name
+ * restating its own location is unfolded linear logic. And the separators were slashes in disguise — the dot
+ * IS a slash, so no word is dropped. Ceiling 0: matter may not become invisible again.
  *
  * HONEST BOUNDARY: this proves matter is UNADDRESSABLE, never that it is duplicated — finding the duplicate
  * took reading. It measures the gap where duplication can hide unseen, which is why the count matters more

@@ -16,7 +16,7 @@
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
-import { eventEmitter } from '@/event/emitter.service'
+import { eventEmitter } from '@/event/emitter/service'
 import type { DomainEvent } from '@/types/events'
 import { getActorId } from '@/auth'
 

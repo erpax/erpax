@@ -28,7 +28,7 @@ export {
   registerSeedCategory,
   getSeedCategoryRegistry,
   getSeedsByCategory,
-} from '@/testing/test-seed-factory'
+} from '@/testing/test/seed/factory'
 
 export {
   IsolatedTestEnvironment,
@@ -36,7 +36,7 @@ export {
   SeedSnapshot,
   setupTestEnvironment,
   setupVitestEnvironment,
-} from '@/testing/test-setup'
+} from '@/testing/test/setup'
 
 export {
   PayloadConfigDiscovery,
@@ -63,4 +63,4 @@ export {
   type FieldTypeValidator,
   type AccessConfig,
   type RelationshipInfo,
-} from '@/testing/config-discovery'
+} from '@/testing/config/discovery'

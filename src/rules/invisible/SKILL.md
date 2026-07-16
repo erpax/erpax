@@ -11,18 +11,26 @@ The path **is** the account code ([[path]]), and the content-uuid folds from it.
 
 [[law]]/folder's `alphanumeric-name` counts NAMES (ceiling **433**) and reads as cosmetic — tidy it eventually. This counts **matter the fold cannot see**, and the consequence is structural:
 
-> `src/financial/reporting.service/` — no SKILL, no uuid, no matrix node — holds a **second `generateTrialBalance`**, private, beside the exported one in [[accounting]]/reports. The trial balance is what every financial report projects from. Two of them means the statutory SAF-T export and the balance sheet **can disagree** — each internally consistent, with no gate between them.
+> The financial reporting service used to live under a **dotted** folder — no SKILL, no uuid, no matrix node — and it holds a **second `generateTrialBalance`**, private, beside the exported one in [[accounting]]/reports. The trial balance is what every financial report projects from. Two of them means the statutory SAF-T export and the balance sheet **can disagree** — each internally consistent, with no gate between them. (The literal dotted paths live in this atom's TEST on hermetic fixtures; quoting one here would fail this gate, exactly as it should.)
 
 **The duplication is not the disease. It is the symptom of a path that could not be addressed.**
 
-## The measurement (2026-07-16)
+## The measurement (2026-07-16) — 41 → **0**
 
-| | count |
-| --- | ---: |
-| folders carrying `index.ts` at an unlawful path | **41** |
-| of those, with **no SKILL** (no form, no name, no identity) | **41** |
+Every piece of matter in `src` is now addressable. The batch closed all 41 in one pass:
 
-Including `saf/t/export.service` (the **statutory** export), `camt053/import.service` (a banking standard), `bank/reconciliation.service`, `depreciation.service`. Each is a place where a duplicate can grow and nothing will notice.
+**The path is the message. No payload.** A path carries what a thing **IS** — never what you *do* to it, nor how it behaves. `configure` · `create` · `sync` are verbs (functions, not folders); `tenant` · `aware` are adjectives. And a repeated segment is the tell: `ecommerce/configure/ecommerce/plugin` restates its own location — **unfolded linear logic**, the name saying what the path already said.
+
+| was | payload stripped | IS |
+| --- | --- | --- |
+| `ecommerce/configureEcommercePlugin` | configure · ecommerce | `ecommerce/plugin` |
+| `ecommerce/createTenantStripePaymentMethod` | create · tenant · method | `ecommerce/stripe/payment` |
+| `email/tenantAwareResendEmailAdapter` | tenant · aware · email | `email/resend/adapter` |
+| `jobs/salesAuditFileJob` | sales · file · job | `jobs/audit` |
+
+The other 37 were separators in disguise — the dot **is** a slash, the hyphen **is** a slash, and no word is dropped: `gl/account.service` → `gl/account/service`, `saf/t/export.service` → `saf/t/export/service` (the statutory export, now addressable), `types/gl-account` → `types/gl/account`.
+
+Ceiling **0**: matter may not become invisible again.
 
 **Honest boundary.** This proves matter is **unaddressable**, never that it **is** duplicated — finding the second trial balance took reading, not this gate. It measures the *gap where duplication hides unseen*, which is why the count matters more than any single instance. Renaming into the fold is per-case: the path is the account code, so moving one re-addresses it, and its consumers must follow in the same diff ([[rules]]/reference).
 

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { resolveCountryContext } from '@/country/context'
-import { DEFAULT_COUNTRY, COUNTRY_PROFILES } from '@/config/regional-defaults'
+import { DEFAULT_COUNTRY, COUNTRY_PROFILES } from '@/config/regional/defaults'
 
 // The single canonical merge (./index.ts): every country branch resolves here
 // rather than reading COUNTRY_PROFILES / COUNTRY_SPECIFICS / COUNTRY_APIS

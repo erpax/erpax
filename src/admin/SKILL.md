@@ -119,7 +119,7 @@ Reference by **string path** (not import) in config; Payload resolves via the im
 ## Per-field/collection admin
 `admin.hidden`, `readOnly`, `position: 'sidebar'`, `description`, `condition`, `components`, `disableListColumn`, `useAsTitle`, `defaultColumns`, `group` (nav grouping), `listSearchableFields`.
 
-## erpax admin-ui plugin (`src/plugins/admin-ui`)
+## erpax admin-ui plugin (`src/plugins/admin/ui`)
 
 Registered last in `payload.config.ts` so it sees the full assembled config.
 

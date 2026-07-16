@@ -29,7 +29,7 @@
 import { Payload, PayloadRequest } from 'payload'
 import type { Subscription } from '@/types'
 import Stripe from 'stripe'
-import { emitEvent } from '@/event/emitter.service'
+import { emitEvent } from '@/event/emitter/service'
 
 /**
  * Context object threaded through every webhook handler.

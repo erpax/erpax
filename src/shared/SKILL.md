@@ -103,7 +103,7 @@ field shapes.
 
 The cascade for locale / currency / country / accountingStandard is always
 `resolveRequestConfig(req)` — see `@/utilities/tenant-context`. Canonical
-regional defaults & `SUPPORTED_CURRENCIES` live in `@/config/regional-defaults`
+regional defaults & `SUPPORTED_CURRENCIES` live in `@/config/regional/defaults`
 (re-exported from the field facet so collection-side imports keep working while
 the canonical module remains the single source of truth).
 
@@ -136,7 +136,7 @@ the canonical module remains the single source of truth).
 ## See also
 
 - `docs/STANDARDS.md` §3 §4.2 §4.4
-- `@/config/regional-defaults`
-- `@/config/address-formats`
+- `@/config/regional/defaults`
+- `@/config/address/formats`
 - `@/address/validation`
 - `@/utilities/tenant-context`

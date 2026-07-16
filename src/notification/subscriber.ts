@@ -18,7 +18,7 @@
 
 import type { Payload, PayloadRequest } from 'payload'
 import type { DomainEvent } from '@/types/events'
-import { eventEmitter, type EventEmitterService } from '@/event/emitter.service'
+import { eventEmitter, type EventEmitterService } from '@/event/emitter/service'
 import { sendNotification, type NotificationCategory, type NotificationChannel } from '@/notification'
 
 interface NotificationTemplate {

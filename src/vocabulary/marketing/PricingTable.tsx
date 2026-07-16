@@ -19,7 +19,7 @@ import React from 'react'
 import { getPayload } from 'payload'
 import type { Where } from 'payload'
 import configPromise from '@payload-config'
-import { DEFAULT_CURRENCY, type Currency } from '@/config/regional-defaults'
+import { DEFAULT_CURRENCY, type Currency } from '@/config/regional/defaults'
 
 interface PricingTableProps {
   tenantId?: string | number

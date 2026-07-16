@@ -13,8 +13,8 @@ import {
   AccountType,
   AnalyticType,
   GL_ACCOUNT_RULES,
-} from '@/types/gl-account'
-import { glAccountService } from '@/gl/account.service'
+} from '@/types/gl/account'
+import { glAccountService } from '@/gl/account/service'
 import {
   Alert,
   AlertDescription,

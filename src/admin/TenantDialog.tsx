@@ -15,7 +15,7 @@ import {
   COUNTRY_TO_LOCALE,
   FiscalYearEnd,
 } from '@/types/tenant';
-import { tenantService } from '@/tenant.service';
+import { tenantService } from '@/tenant/service';
 import {
   Alert,
   AlertDescription,

@@ -15,7 +15,7 @@
  * @see src/components/marketing/
  */
 
-import type { Currency } from '@/config/regional-defaults'
+import type { Currency } from '@/config/regional/defaults'
 
 /**
  * The 14 canonical marketing components — each implementation file in

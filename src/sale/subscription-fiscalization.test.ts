@@ -10,7 +10,7 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import type { Payload } from 'payload'
-import type { EventEmitterService } from '@/event/emitter.service'
+import type { EventEmitterService } from '@/event/emitter/service'
 import {
   subscriptionToRevenueInput,
   fiscalizeSubscriptionCharge,

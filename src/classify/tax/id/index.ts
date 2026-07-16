@@ -15,7 +15,7 @@
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'
-import { classifyTaxId as classify } from '@/config/country-specifics'
+import { classifyTaxId as classify } from '@/config/country/specifics'
 
 function readPath(obj: Record<string, unknown>, path: string): unknown {
   let cur: unknown = obj

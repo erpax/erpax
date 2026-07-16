@@ -9,7 +9,7 @@
 
 import { describe, it, expect } from 'vitest'
 
-import { APP_COLLECTION_SLUGS } from '@/config/appCollections'
+import { APP_COLLECTION_SLUGS } from '@/config/app/collections'
 import { Categories } from '@/categories'
 import { Media } from '@/media'
 import { Pages } from '@/pages'

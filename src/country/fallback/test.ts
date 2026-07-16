@@ -11,7 +11,7 @@ import {
   getCountryNumericFromAlpha,
   computeCountryUuid,
 } from '@/country/fallback'
-import { DEFAULT_COUNTRY } from '@/config/regional-defaults'
+import { DEFAULT_COUNTRY } from '@/config/regional/defaults'
 
 // CLDR ZZ is the country identity element (Conservation Law 54): it resolves
 // any blank input to a non-null code and is compatible with every real

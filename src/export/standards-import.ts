@@ -32,8 +32,8 @@
 import {
   parseCamt053,
   parseCamt053Multi,
-} from '@/camt053/import.service'
-import { parsePeppolInvoice } from '@/peppol/import.service'
+} from '@/camt053/import/service'
+import { parsePeppolInvoice } from '@/peppol/import/service'
 import type { Camt053Statement } from '@/iso/20022'
 import type { PeppolBillingMessage } from '@/peppol/bis/3'
 

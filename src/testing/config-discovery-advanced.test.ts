@@ -18,7 +18,7 @@ import {
   type FieldTypeValidator,
   type FieldType,
   type Payload as DiscoveryPayload,
-} from '@/testing/config-discovery'
+} from '@/testing/config/discovery'
 
 // =============================================================================
 // Test Payload Factory

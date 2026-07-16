@@ -2,7 +2,7 @@
  * Canonical address validator — country-aware required fields and
  * postal-code format checks.
  *
- * Reads the per-country format from `@/config/address-formats`:
+ * Reads the per-country format from `@/config/address/formats`:
  *   - **Required components** vary by country (US/CA require state,
  *     BG/DE/FR don't; HK has no postal code at all).
  *   - **Postal-code pattern** varies (US `\d{5}(-\d{4})?`, GB
@@ -18,14 +18,14 @@
  * @standard ISO-3166-1:2020 country-codes alpha-2
  * @compliance GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires
  * @audit ISO-19011:2018 audit-trail address-validation
- * @see src/config/address-formats.ts
+ * @see src/config/address/formats.ts
  */
 
 import {
   type AddressComponent,
   getAddressFormat,
   isValidPostalCode,
-} from '@/config/address-formats'
+} from '@/config/address/formats'
 
 /**
  * Bare-minimum address shape — every renderer / validator works against

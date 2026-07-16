@@ -58,14 +58,14 @@
  * @standard IFRS 1 §IG7 non-monetary items presentation
  * @audit Conservation Law 53 self-referential-closure (currency identity element)
  * @feature currency_fallback
- * @see /src/config/regional-defaults.ts SUPPORTED_CURRENCIES (XXX appended)
- * @see /src/config/country-specifics.ts CURRENCY_DECIMALS (XXX: 0)
+ * @see /src/config/regional/defaults.ts SUPPORTED_CURRENCIES (XXX appended)
+ * @see /src/config/country/specifics.ts CURRENCY_DECIMALS (XXX: 0)
  * @see /src/plugins/accounting/fields/base-accounting-fields.ts currencyField
  */
 
-import { SUPPORTED_CURRENCIES } from '@/config/regional-defaults'
-import type { Currency } from '@/config/regional-defaults'
-import { CURRENCY_DECIMALS } from '@/config/country-specifics'
+import { SUPPORTED_CURRENCIES } from '@/config/regional/defaults'
+import type { Currency } from '@/config/regional/defaults'
+import { CURRENCY_DECIMALS } from '@/config/country/specifics'
 import { requireSafetyMode } from '@/safety/mode'
 
 /** The canonical "blank currency" — ISO 4217 §6.5 No currency. */

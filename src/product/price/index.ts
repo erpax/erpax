@@ -20,7 +20,7 @@
  * @standard ISO-4217:2015 currency-codes
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  * @accounting US-GAAP ASC-830 foreign-currency-matters
- * @see src/config/regional-defaults.ts
+ * @see src/config/regional/defaults.ts
  */
 
 import {
@@ -28,7 +28,7 @@ import {
   DEFAULT_CURRENCY,
   isSupportedCurrency,
   SUPPORTED_CURRENCIES,
-} from '@/config/regional-defaults'
+} from '@/config/regional/defaults'
 
 /**
  * Bare-minimum shape required for price extraction. Compatible with

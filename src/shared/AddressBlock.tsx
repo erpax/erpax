@@ -1,7 +1,7 @@
 /**
  * AddressBlock — canonical address renderer.
  *
- * Reads the per-country format from `@/config/address-formats` and lays
+ * Reads the per-country format from `@/config/address/formats` and lays
  * out the address according to the destination country's convention
  * (US: `street/city/state ZIP`; JP: `postal/prefecture/city/street`;
  * DE: `street/PLZ/city`; HK: no postal code at all). The same
@@ -17,13 +17,13 @@
  * @standard W3C HTML5 address-element
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships
  * @audit ISO-19011:2018 audit-trail consistent-rendering
- * @see src/config/address-formats.ts
+ * @see src/config/address/formats.ts
  * @see src/utilities/address-validation.ts
  */
 
 import React from 'react'
 import { type AddressLike } from '@/address/validation'
-import { type AddressComponent, getAddressFormat } from '@/config/address-formats'
+import { type AddressComponent, getAddressFormat } from '@/config/address/formats'
 
 interface AddressBlockProps {
   address: AddressLike

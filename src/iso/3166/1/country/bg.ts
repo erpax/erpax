@@ -1,6 +1,6 @@
 /**
  * Bulgaria (BG) — canonical country bundle. Default country (per
- * `DEFAULT_COUNTRY` in `src/config/regional-defaults.ts`) and the worked
+ * `DEFAULT_COUNTRY` in `src/config/regional/defaults.ts`) and the worked
  * example for the per-country merge pattern documented in `./types.ts`.
  *
  * Composed of (a) `COUNTRY_PROFILES.BG`, (b) `COUNTRY_SPECIFICS.BG`,
@@ -31,8 +31,8 @@
  * @see src/services/country-context.ts
  */
 
-import { COUNTRY_PROFILES } from '@/config/regional-defaults';
-import { COUNTRY_SPECIFICS } from '@/config/country-specifics';
+import { COUNTRY_PROFILES } from '@/config/regional/defaults';
+import { COUNTRY_SPECIFICS } from '@/config/country/specifics';
 import { COUNTRY_APIS, BANK_APIS } from '@/country/api';
 import type { CountryBundle } from './types';
 

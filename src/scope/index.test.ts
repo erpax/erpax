@@ -10,7 +10,7 @@
 
 import { describe, it, expect } from 'vitest'
 
-import { APP_COLLECTION_SLUGS } from '@/config/appCollections'
+import { APP_COLLECTION_SLUGS } from '@/config/app/collections'
 import { VersionStatus, VERSION_STATUS_FIELD, TENANT_FIELD } from './constants'
 import { SCOPE_BY_COLLECTION } from './collectionScopes'
 import { wherePublished, wherePublishedAnd } from './filters'

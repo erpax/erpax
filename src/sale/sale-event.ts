@@ -12,7 +12,7 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 import { v4 as uuid } from 'uuid'
-import { eventEmitter } from '@/event/emitter.service'
+import { eventEmitter } from '@/event/emitter/service'
 
 interface SaleDoc {
   id?: unknown

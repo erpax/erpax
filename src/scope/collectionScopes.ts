@@ -10,7 +10,7 @@
  * @see ./filters.ts
  */
 
-import type { AppCollectionSlug } from '@/config/appCollections'
+import type { AppCollectionSlug } from '@/config/app/collections'
 
 import type { CollectionScope } from './types'
 

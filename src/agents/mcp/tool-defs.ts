@@ -211,7 +211,7 @@ import { corpusStrength } from '@/strength'
 import { emergenceCoverage } from '@/emergence'
 // Multi-currency GL (FX gain/loss + IAS-21/ASC-830 revaluation) and bulk
 // import/export + Playwright test-artifact uploader — wired to real consumers.
-import { multiCurrencyService } from '@/multi/currency.service'
+import { multiCurrencyService } from '@/multi/currency/service'
 import { enqueueBulkOperation, type BulkFormat, type BulkOperationKind } from '@/bulk/op'
 import { uploadTestArtifacts } from '@/capture/media'
 import * as allCollections from '@/collections'

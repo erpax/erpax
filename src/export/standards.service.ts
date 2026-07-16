@@ -36,17 +36,17 @@ import {
   buildAuditFile,
   renderSafTXml,
   type SafTExportOptions,
-} from '@/saf/t/export.service'
+} from '@/saf/t/export/service'
 import {
   renderPeppolInvoice,
-} from '@/peppol/export.service'
+} from '@/peppol/export/service'
 import {
   serializeInterchangeAsString,
-} from '@/edifact/export.service'
+} from '@/edifact/export/service'
 import {
   renderPain001,
   renderPain008,
-} from '@/iso20022/export.service'
+} from '@/iso20022/export/service'
 import type { PeppolBillingMessage } from '@/peppol/bis/3'
 import type { EdifactInterchange } from '@/un/edifact'
 import type {

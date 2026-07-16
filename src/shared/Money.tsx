@@ -18,11 +18,11 @@
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @audit ISO-19011:2018 audit-trail consistent-formatting
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships tabular-num
- * @see src/config/regional-defaults.ts
+ * @see src/config/regional/defaults.ts
  */
 
 import React from 'react'
-import { DEFAULT_CURRENCY, DEFAULT_LOCALE, type Currency } from '@/config/regional-defaults'
+import { DEFAULT_CURRENCY, DEFAULT_LOCALE, type Currency } from '@/config/regional/defaults'
 
 interface MoneyProps {
   /** Amount in integer cents (the only acceptable storage form). */

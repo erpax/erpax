@@ -34,11 +34,11 @@ export const glAccountField = (required = false): Field[] => [
 ];
 
 // Canonical regional defaults & SUPPORTED_CURRENCIES live in
-// `@/config/regional-defaults`. Re-exported here so existing collection-side
+// `@/config/regional/defaults`. Re-exported here so existing collection-side
 // imports keep working while the canonical module remains the single source
 // of truth (Slice WW: regional-defaults consolidation).
-export { SUPPORTED_CURRENCIES, currencyOptions, DEFAULT_CURRENCY } from '@/config/regional-defaults';
-import { DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY, isIso4217Currency } from '@/config/regional-defaults';
+export { SUPPORTED_CURRENCIES, currencyOptions, DEFAULT_CURRENCY } from '@/config/regional/defaults';
+import { DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY, isIso4217Currency } from '@/config/regional/defaults';
 
 /**
  * Currency select field. Pass a custom `name` for FX-pair fields like

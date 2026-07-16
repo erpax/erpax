@@ -6,7 +6,7 @@
 'use client'
 
 import React from 'react'
-import { GLAccount } from '@/types/gl-account'
+import { GLAccount } from '@/types/gl/account'
 import { Edit2 } from 'lucide-react'
 import {
   Badge,

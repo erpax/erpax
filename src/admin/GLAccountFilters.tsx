@@ -6,7 +6,7 @@
 'use client'
 
 import React from 'react'
-import { AccountScope } from '@/types/gl-account'
+import { AccountScope } from '@/types/gl/account'
 import { Search } from 'lucide-react'
 import { Button, Card, CardContent, Input } from '@/ui'
 

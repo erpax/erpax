@@ -19,7 +19,7 @@ import React from 'react'
 
 import type { Product } from '@/types'
 import { buildPublishedProductsWhere } from '@/site/tenant/where'
-import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
+import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional/defaults'
 import { getProductPrice, formatProductPrice } from '@/product/price'
 
 export const metadata: Metadata = {

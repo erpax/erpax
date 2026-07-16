@@ -49,7 +49,7 @@
  */
 
 import { supportedLocales, type SupportedLocale } from '@/i18n/localization'
-import { DEFAULT_LOCALE } from '@/config/regional-defaults'
+import { DEFAULT_LOCALE } from '@/config/regional/defaults'
 import { computeContentUuid } from '@/integrity'
 import type { ContentUuid } from '@/integrity'
 import {

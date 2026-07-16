@@ -20,7 +20,7 @@ import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { versionsPlugin } from '@/plugins/versions'
 import { skillRouterPlugin } from './skill/router/plugin'
-import { adminUiPlugin } from '@/plugins/admin-ui'
+import { adminUiPlugin } from '@/plugins/admin/ui'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -65,7 +65,7 @@ import { Header } from './header/config'
 import { beforeSyncWithSearch } from '@/search'
 import { searchDocField, searchFields } from '@/search'
 import { defaultLexical } from '@/default/lexical'
-import { createEcommercePlugin } from '@/ecommerce/configureEcommercePlugin'
+import { createEcommercePlugin } from '@/ecommerce/plugin'
 import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
@@ -73,7 +73,7 @@ import {
 import { resolvePayloadSecret } from '@/secret'
 import { getServerSideURL } from '@/rfc/3986'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
-import { tenantAwareResendEmailAdapter } from '@/email/tenantAwareResendEmailAdapter'
+import { tenantAwareResendEmailAdapter } from '@/email/resend/adapter'
 import localization from '@/i18n/localization'
 import {
   defaultLocale,
@@ -548,7 +548,7 @@ export default buildConfig({
     tasks: [
       /**
        * Dunning cycle — past-due → suspend → cancel cascade for subscriptions.
-       * Implementation at `src/jobs/dunningJob.ts`. Wired here per Slice ZZ
+       * Implementation at `src/jobs/dunning/job.ts`. Wired here per Slice ZZ
        * (was orphaned before — see CHANGELOG `[Unreleased]` Slice YY).
        *
        * Reachable via:
@@ -565,7 +565,7 @@ export default buildConfig({
       {
         slug: 'dunning-cycle',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processDunningCycle } = await import('@/jobs/dunningJob')
+          const { processDunningCycle } = await import('@/jobs/dunning/job')
           await processDunningCycle(req.payload)
           return { output: { status: 'completed' } }
         },
@@ -573,7 +573,7 @@ export default buildConfig({
       /**
        * BG BNB rates sync — pulls БНБ daily fixing for every BG-resident
        * tenant's reporting-currency pairs and upserts into `currency-rates`.
-       * Implementation at `src/jobs/bnbRatesSync.ts`. Cadence: nightly via
+       * Implementation at `src/jobs/bnb/rates/sync.ts`. Cadence: nightly via
        * cron (`0 1 * * *` recommended — БНБ publishes the day's fixing
        * around 16:00 EET, so a 1am UTC run captures the prior business day).
        *
@@ -585,7 +585,7 @@ export default buildConfig({
       {
         slug: 'bg-bnb-rates-sync',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processBnbRatesSync } = await import('@/jobs/bnbRatesSync')
+          const { processBnbRatesSync } = await import('@/jobs/bnb/rates/sync')
           const result = await processBnbRatesSync(req.payload)
           return { output: { status: 'completed', ...result } }
         },
@@ -603,7 +603,7 @@ export default buildConfig({
       {
         slug: 'sales-audit-file',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processSalesAuditFiles } = await import('@/jobs/salesAuditFileJob')
+          const { processSalesAuditFiles } = await import('@/jobs/audit')
           const result = await processSalesAuditFiles(req.payload)
           return { output: { status: 'completed', ...result } }
         },

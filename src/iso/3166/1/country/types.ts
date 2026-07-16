@@ -23,8 +23,8 @@
  * @see ../../../services/country-context.ts
  */
 
-import type { CountryProfile } from '@/config/regional-defaults';
-import type { CountrySpecifics } from '@/config/country-specifics';
+import type { CountryProfile } from '@/config/regional/defaults';
+import type { CountrySpecifics } from '@/config/country/specifics';
 import type { CountryApi } from '@/country/api';
 
 /**

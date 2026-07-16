@@ -25,7 +25,7 @@
  * @standard ISO-20022 financial-messages cross-references
  * @compliance EU 2014/55 b2g-e-invoicing portals
  * @compliance AMLD-5 ubo-registry-access
- * @see ./country-specifics.ts for the per-country regulatory context
+ * @see ./specifics.ts for the per-country regulatory context
  * @see src/services/country-api-clients/ for the working client modules
  */
 

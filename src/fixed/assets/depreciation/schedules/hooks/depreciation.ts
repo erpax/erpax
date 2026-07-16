@@ -31,7 +31,7 @@ import {
   depreciationService,
   type DepreciationMethod,
   type FixedAssetForDepreciation,
-} from '@/depreciation.service';
+} from '@/depreciation/service';
 
 type ScheduleDoc = Record<string, unknown> & {
   id: string | number;

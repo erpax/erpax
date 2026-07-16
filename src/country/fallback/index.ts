@@ -54,11 +54,11 @@
  * @feature country_fallback
  * @see ../currency-fallback/index.ts — XXX as currency identity
  * @see ../locale-fallback/index.ts — und as locale identity (sister module)
- * @see /src/config/regional-defaults.ts — DEFAULT_COUNTRY
+ * @see /src/config/regional/defaults.ts — DEFAULT_COUNTRY
  * @see /src/services/country-context.ts — country-aware logic entry point
  */
 
-import { DEFAULT_COUNTRY } from '@/config/regional-defaults'
+import { DEFAULT_COUNTRY } from '@/config/regional/defaults'
 import { computeContentUuid } from '@/integrity'
 import type { ContentUuid } from '@/integrity'
 

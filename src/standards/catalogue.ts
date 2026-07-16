@@ -60,11 +60,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": "§BG-1"
       },
       {
-        "path": "src/config/iso-4217-numeric/index.ts",
+        "path": "src/config/iso/4217/numeric/index.ts",
         "section": "§BG-4"
       },
       {
@@ -322,11 +322,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -428,11 +428,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -534,11 +534,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -640,11 +640,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -746,11 +746,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -852,11 +852,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -958,11 +958,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -1060,11 +1060,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -1166,11 +1166,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -1562,11 +1562,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -1582,7 +1582,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -1594,7 +1594,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
@@ -1602,7 +1602,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": ""
       },
       {
@@ -1610,7 +1610,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/regional-defaults/index.ts",
+        "path": "src/config/regional/defaults/index.ts",
         "section": ""
       },
       {
@@ -1656,11 +1656,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": "§BG-1"
       },
       {
@@ -1762,11 +1762,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": "§BG-1"
       },
       {
@@ -1876,11 +1876,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -1888,7 +1888,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -1896,11 +1896,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/iso-4217-numeric/index.ts",
+        "path": "src/config/iso/4217/numeric/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/iso-4217-special/index.ts",
+        "path": "src/config/iso/4217/special/index.ts",
         "section": "§Ccy"
       },
       {
@@ -1924,7 +1924,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§Ccy"
       },
       {
-        "path": "src/edifact/export.service/index.ts",
+        "path": "src/edifact/export/service/index.ts",
         "section": ""
       },
       {
@@ -1994,11 +1994,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -2014,7 +2014,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -2042,7 +2042,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/event/emitter.service/index.ts",
+        "path": "src/event/emitter/service/index.ts",
         "section": ""
       }
     ]
@@ -2100,11 +2100,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -2120,7 +2120,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -2148,7 +2148,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/event/emitter.service/index.ts",
+        "path": "src/event/emitter/service/index.ts",
         "section": ""
       }
     ]
@@ -2206,11 +2206,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -2226,7 +2226,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -2254,7 +2254,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/event/emitter.service/index.ts",
+        "path": "src/event/emitter/service/index.ts",
         "section": ""
       }
     ]
@@ -2312,11 +2312,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -2332,7 +2332,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -2360,7 +2360,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/event/emitter.service/index.ts",
+        "path": "src/event/emitter/service/index.ts",
         "section": ""
       }
     ]
@@ -2418,11 +2418,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -2438,7 +2438,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -2466,7 +2466,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/event/emitter.service/index.ts",
+        "path": "src/event/emitter/service/index.ts",
         "section": ""
       }
     ]
@@ -3800,11 +3800,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/peppol/export.service/index.ts",
+        "path": "src/peppol/export/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/peppol/import.service/index.ts",
+        "path": "src/peppol/import/service/index.ts",
         "section": ""
       }
     ]
@@ -4356,7 +4356,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 6,
     "modules": [
       {
-        "path": "src/config/iso-4217-numeric/index.ts",
+        "path": "src/config/iso/4217/numeric/index.ts",
         "section": "§AccountReference"
       },
       {
@@ -5020,7 +5020,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/event/emitter.service/index.ts",
+        "path": "src/event/emitter/service/index.ts",
         "section": ""
       },
       {
@@ -5068,11 +5068,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/testing/config-discovery-types/index.ts",
+        "path": "src/testing/config/discovery-types/index.ts",
         "section": ""
       },
       {
-        "path": "src/testing/config-discovery/index.ts",
+        "path": "src/testing/config/discovery/index.ts",
         "section": ""
       },
       {
@@ -5080,11 +5080,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/testing/test-seed-factory/index.ts",
+        "path": "src/testing/test/seed/factory/index.ts",
         "section": ""
       },
       {
-        "path": "src/testing/test-setup/index.ts",
+        "path": "src/testing/test/setup/index.ts",
         "section": ""
       },
       {
@@ -5526,7 +5526,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 6,
     "modules": [
       {
-        "path": "src/config/iso-4217-special/index.ts",
+        "path": "src/config/iso/4217/special/index.ts",
         "section": "§3.2"
       },
       {
@@ -5775,11 +5775,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -5881,11 +5881,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -5947,7 +5947,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
@@ -5955,7 +5955,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": ""
       },
       {
@@ -5963,7 +5963,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/regional-defaults/index.ts",
+        "path": "src/config/regional/defaults/index.ts",
         "section": ""
       },
       {
@@ -6061,11 +6061,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
@@ -6073,7 +6073,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -6081,11 +6081,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/iso-4217-numeric/index.ts",
+        "path": "src/config/iso/4217/numeric/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/iso-4217-special/index.ts",
+        "path": "src/config/iso/4217/special/index.ts",
         "section": "§Ccy"
       },
       {
@@ -6473,19 +6473,19 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": ""
       },
       {
@@ -6653,15 +6653,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/bank/reconciliation.service/index.ts",
+        "path": "src/bank/reconciliation/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/camt053/import.service/index.ts",
+        "path": "src/camt053/import/service/index.ts",
         "section": ""
       },
       {
@@ -6693,7 +6693,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/iso20022/export.service/index.ts",
+        "path": "src/iso20022/export/service/index.ts",
         "section": ""
       },
       {
@@ -6705,7 +6705,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/types/bank-reconciliation/index.ts",
+        "path": "src/types/bank/reconciliation/index.ts",
         "section": ""
       },
       {
@@ -6893,7 +6893,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 11,
     "modules": [
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
@@ -6921,7 +6921,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/tax/automation.service/index.ts",
+        "path": "src/tax/automation/service/index.ts",
         "section": ""
       },
       {
@@ -7141,7 +7141,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
@@ -7273,11 +7273,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/testing/test-seed-factory/index.ts",
+        "path": "src/testing/test/seed/factory/index.ts",
         "section": ""
       },
       {
-        "path": "src/testing/test-setup/index.ts",
+        "path": "src/testing/test/setup/index.ts",
         "section": ""
       }
     ]
@@ -7363,7 +7363,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/peppol/import.service/index.ts",
+        "path": "src/peppol/import/service/index.ts",
         "section": ""
       }
     ]
@@ -8356,7 +8356,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§3"
       },
       {
-        "path": "src/saf/t/export.service/index.ts",
+        "path": "src/saf/t/export/service/index.ts",
         "section": ""
       },
       {
@@ -8529,11 +8529,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/country-specifics/index.ts",
+        "path": "src/config/country/specifics/index.ts",
         "section": "§BG-1"
       },
       {
@@ -9125,7 +9125,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/lease.service/index.ts",
+        "path": "src/lease/service/index.ts",
         "section": ""
       },
       {
@@ -9219,11 +9219,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 4,
     "modules": [
       {
-        "path": "src/bank/statement/import.service/index.ts",
+        "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
       {
-        "path": "src/config/iso-4217-numeric/index.ts",
+        "path": "src/config/iso/4217/numeric/index.ts",
         "section": "§59"
       },
       {
@@ -9836,7 +9836,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
@@ -9844,7 +9844,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/regional-defaults/index.ts",
+        "path": "src/config/regional/defaults/index.ts",
         "section": ""
       },
       {
@@ -9860,7 +9860,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/financial/reporting.service/index.ts",
+        "path": "src/financial/reporting/service/index.ts",
         "section": ""
       },
       {
@@ -10292,7 +10292,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/edifact/export.service/index.ts",
+        "path": "src/edifact/export/service/index.ts",
         "section": ""
       },
       {
@@ -10534,7 +10534,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/ecommerce/productValidation/index.ts",
+        "path": "src/ecommerce/product/validation/index.ts",
         "section": ""
       },
       {
@@ -10661,7 +10661,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/config/address-formats/index.ts",
+        "path": "src/config/address/formats/index.ts",
         "section": ""
       },
       {
@@ -10755,11 +10755,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/testing/test-seed-factory/index.ts",
+        "path": "src/testing/test/seed/factory/index.ts",
         "section": ""
       },
       {
-        "path": "src/testing/test-setup/index.ts",
+        "path": "src/testing/test/setup/index.ts",
         "section": ""
       },
       {
@@ -11490,11 +11490,11 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 3,
     "modules": [
       {
-        "path": "src/testing/config-discovery-types/index.ts",
+        "path": "src/testing/config/discovery-types/index.ts",
         "section": ""
       },
       {
-        "path": "src/testing/config-discovery/index.ts",
+        "path": "src/testing/config/discovery/index.ts",
         "section": ""
       },
       {

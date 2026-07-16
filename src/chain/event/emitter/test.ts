@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import { emitOnStatusTransition, emitOnCreate, emitPrSubmitted, AGGREGATE_TYPES } from '@/chain/event/emitter'
-import { eventEmitter } from '@/event/emitter.service'
+import { eventEmitter } from '@/event/emitter/service'
 import type { DomainEvent } from '@/types/events'
 
 // chain/event/emitter (./index.ts): the wiring layer that turns a status

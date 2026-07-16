@@ -1,7 +1,7 @@
 /**
  * Address-validation Payload hook factory — drop-in `beforeValidate` that
  * enforces the country-specific address format declared in
- * `@/config/address-formats`.
+ * `@/config/address/formats`.
  *
  * **International-first resolution order** (most-specific wins):
  *   1. `data.country` on the address document itself
@@ -27,7 +27,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see src/utilities/address-validation.ts
  * @see src/utilities/tenant-context.ts
- * @see src/config/address-formats.ts
+ * @see src/config/address/formats.ts
  */
 
 import type { CollectionBeforeValidateHook } from 'payload'

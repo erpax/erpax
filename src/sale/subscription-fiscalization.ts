@@ -18,7 +18,7 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
-import { eventEmitter, type EventEmitterService } from '@/event/emitter.service'
+import { eventEmitter, type EventEmitterService } from '@/event/emitter/service'
 import { fiscalizeRevenue, type RevenueInput } from './fiscalize-revenue'
 import { resolveFiscalContext } from './fiscal-context'
 

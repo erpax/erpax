@@ -20,12 +20,12 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО fiscal-device-regime
  * @standard ISO-3166-1:2020 country-codes (jurisdiction) · ISO-4217:2015 currency
- * @see src/utilities/tenant-context.ts · src/config/country-specifics.ts · src/collections/FiscalDevices/index.ts
+ * @see src/utilities/tenant-context.ts · src/config/country/specifics.ts · src/collections/FiscalDevices/index.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'
-import { COUNTRY_SPECIFICS } from '@/config/country-specifics'
-import { getTenantDefaults } from '@/config/regional-defaults'
+import { COUNTRY_SPECIFICS } from '@/config/country/specifics'
+import { getTenantDefaults } from '@/config/regional/defaults'
 
 export interface FiscalContext {
   /** Does the tenant's jurisdiction mandate a fiscal-device regime? */

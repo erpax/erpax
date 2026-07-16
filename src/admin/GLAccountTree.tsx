@@ -6,7 +6,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { GLAccountNode, GLAccount } from '@/types/gl-account';
+import { GLAccountNode, GLAccount } from '@/types/gl/account';
 import { ChevronDown, ChevronRight, Plus, Edit2, Lock, Unlock, Trash2 } from 'lucide-react';
 
 interface GLAccountTreeProps {

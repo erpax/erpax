@@ -25,7 +25,7 @@
 
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
-import { eventEmitter } from '@/event/emitter.service'
+import { eventEmitter } from '@/event/emitter/service'
 import type { InventoryAdjustedEvent } from '@/types/events'
 
 type AdjustedKind = InventoryAdjustedEvent['payload']['kind']

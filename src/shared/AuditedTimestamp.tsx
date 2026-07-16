@@ -16,12 +16,12 @@
  * @standard BCP-47 language-tag locale-formatting
  * @audit ISO-19011:2018 audit-trail consistent-timestamps
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships time-semantics
- * @see src/config/regional-defaults.ts
+ * @see src/config/regional/defaults.ts
  * @see src/utilities/tenant-context.ts
  */
 
 import React from 'react'
-import { DEFAULT_LOCALE } from '@/config/regional-defaults'
+import { DEFAULT_LOCALE } from '@/config/regional/defaults'
 
 interface AuditedTimestampProps {
   /** ISO 8601 string or Date. */

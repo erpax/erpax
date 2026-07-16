@@ -35,7 +35,7 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 import type { Subscription } from '@/types'
-import { emitEvent } from '@/event/emitter.service'
+import { emitEvent } from '@/event/emitter/service'
 
 const ACTIVE_STATUSES = new Set(['active', 'past_due', 'grace_period'])
 

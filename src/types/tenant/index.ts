@@ -189,18 +189,18 @@ export const TENANT_STATUS_COLORS: Record<TenantStatus, string> = {
 
 /**
  * Country / Currency / Locale tables — derived from the canonical
- * `COUNTRY_PROFILES` in `@/config/regional-defaults`.
+ * `COUNTRY_PROFILES` in `@/config/regional/defaults`.
  *
  * These thin projections preserve the legacy `COUNTRY_TO_*` API for
  * existing callers while collapsing the source of truth into one file.
  * For new code, import `getTenantDefaults`, `getCountryCurrency`, or
- * `getCountryLocale` directly from `@/config/regional-defaults`.
+ * `getCountryLocale` directly from `@/config/regional/defaults`.
  *
  * Pre-Slice-WW: BG was missing from `COUNTRY_TO_LOCALE` (defaulted to
  * undefined → string runtime errors); now `bg-BG` is present here as
  * the house default per the canonical profile.
  */
-import { COUNTRY_PROFILES } from '@/config/regional-defaults';
+import { COUNTRY_PROFILES } from '@/config/regional/defaults';
 
 export const COUNTRY_TO_STANDARD: Record<string, AccountingStandard> = Object.fromEntries(
   Object.entries(COUNTRY_PROFILES).map(([country, p]) => [country, p.accountingStandard]),

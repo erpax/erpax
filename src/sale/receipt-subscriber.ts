@@ -12,7 +12,7 @@
 
 import type { Payload, PayloadRequest } from 'payload'
 import { v4 as uuid } from 'uuid'
-import { eventEmitter, type EventEmitterService } from '@/event/emitter.service'
+import { eventEmitter, type EventEmitterService } from '@/event/emitter/service'
 import { buildFiscalReceipt, type FiscalSaleInput } from './fiscal-receipt'
 import { buildReceiptQrData } from './virtual-device'
 

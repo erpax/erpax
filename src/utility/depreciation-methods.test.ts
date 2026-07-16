@@ -31,8 +31,8 @@ import {
 import {
   initializeDepreciation,
   type FixedAssetForDepreciation,
-} from '@/depreciation.service'
-import { EventEmitterService } from '@/event/emitter.service'
+} from '@/depreciation/service'
+import { EventEmitterService } from '@/event/emitter/service'
 import type { DepreciationPostedEvent } from '@/types/events'
 
 describe('Depreciation — canonical math (IAS-16 / ASC-360)', () => {

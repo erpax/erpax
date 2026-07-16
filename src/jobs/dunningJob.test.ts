@@ -18,7 +18,7 @@ import {
   processDunningCycle,
   reinstateSubscription,
   suspendSubscription,
-} from '@/jobs/dunningJob'
+} from '@/jobs/dunning/job'
 import type { Payload } from 'payload'
 
 /** Pass the minimal mock where the dunning job expects a real Payload instance. */

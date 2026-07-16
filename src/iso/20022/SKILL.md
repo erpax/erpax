@@ -82,7 +82,7 @@ Files:
 
 Per the project's standards convention (`docs/STANDARDS.md` §3), every governing standard cited via `@standard ISO-20022` should grep to a single home that owns the types. Before this module, four places defined overlapping shapes:
 
-- `src/types/bank-reconciliation.ts` — `BankStatement` / `BankTransaction`
+- `src/types/bank/reconciliation.ts` — `BankStatement` / `BankTransaction`
 - `src/types/events.ts` — `BankStatementImportedEvent.payload.transactions`
 - `src/services/bank-statement-import.service.ts` — CSV / OFX intermediate
 - `src/plugins/accounting/collections/BankStatements.ts` — Payload field config
@@ -102,7 +102,7 @@ Now they all reference the canonical `Camt053Statement` / `Camt053Transaction` t
 
 ## Used by
 
-- `src/types/bank-reconciliation.ts` — the project's bank-rec wire types
+- `src/types/bank/reconciliation.ts` — the project's bank-rec wire types
   re-export / extend the canonical `Camt053Statement`.
 - `src/types/events.ts` — `BankStatementImportedEvent` payload references
   canonical types.

@@ -23,7 +23,7 @@ import React, { cache } from 'react'
 import { routing } from '@/i18n/routing'
 import type { Product } from '@/types'
 import { generateMeta } from '@/generate/meta'
-import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
+import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional/defaults'
 import { getProductPrice, formatProductPrice } from '@/product/price'
 import {
   buildProductDetailWhere,

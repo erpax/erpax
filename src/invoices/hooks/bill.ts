@@ -26,7 +26,7 @@
 
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
-import { eventEmitter } from '@/event/emitter.service'
+import { eventEmitter } from '@/event/emitter/service'
 import { emitDomainEvent } from '@/emit/domain/event'
 import type {
   BillActivatedEvent,

@@ -276,7 +276,7 @@ describe('aggregateBalancesAcrossCurrencies — multi-currency portfolio', () =>
 
 describe('ISO 4217 special-currency family', () => {
   it('exposes the canonical kind for each X-code + crypto code', async () => {
-    const { getSpecialCurrencyKind, isSpecialCurrency } = await import('@/config/iso-4217-special')
+    const { getSpecialCurrencyKind, isSpecialCurrency } = await import('@/config/iso/4217/special')
     expect(getSpecialCurrencyKind('XXX')).toBe('blank')
     expect(getSpecialCurrencyKind('XTS')).toBe('test')
     expect(getSpecialCurrencyKind('XAU')).toBe('precious-metal')
@@ -293,7 +293,7 @@ describe('ISO 4217 special-currency family', () => {
 
 describe('ISO 4217 numeric-code mapping', () => {
   it('round-trips alpha ↔ numeric for the curated set', async () => {
-    const { getCurrencyNumericCode, getCurrencyAlphaCode, toIso20022Ccy } = await import('@/config/iso-4217-numeric')
+    const { getCurrencyNumericCode, getCurrencyAlphaCode, toIso20022Ccy } = await import('@/config/iso/4217/numeric')
     expect(getCurrencyNumericCode('EUR')).toBe(978)
     expect(getCurrencyNumericCode('JPY')).toBe(392)
     expect(getCurrencyNumericCode('XXX')).toBe(999)

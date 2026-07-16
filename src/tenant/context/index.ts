@@ -43,7 +43,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-config
  * @compliance GDPR Art.12 transparent-information user-language-of-choice
  * @audit ISO-19011:2018 audit-trail config-cascade-resolution
- * @see src/config/regional-defaults.ts
+ * @see src/config/regional/defaults.ts
  * @see src/collections/Tenants/index.ts (config group)
  * @see src/collections/Users/index.ts (config group)
  */
@@ -55,7 +55,7 @@ import {
   isIso4217Currency,
   type Currency,
   type RegionalDefaults,
-} from '@/config/regional-defaults'
+} from '@/config/regional/defaults'
 import { resolveCountryContext, type CountryContext } from '@/country/context'
 
 // ─── 1. Per-tenant / per-user config shapes ────────────────────────────────

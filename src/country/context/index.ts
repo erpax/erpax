@@ -34,19 +34,19 @@
  * @see ./country-api-clients.ts
  */
 
-import type { CountryProfile } from '@/config/regional-defaults'
+import type { CountryProfile } from '@/config/regional/defaults'
 import {
   COUNTRY_PROFILES,
   DEFAULT_COUNTRY,
   getTenantDefaults,
-} from '@/config/regional-defaults'
-import type { CountrySpecifics } from '@/config/country-specifics'
+} from '@/config/regional/defaults'
+import type { CountrySpecifics } from '@/config/country/specifics'
 import {
   COUNTRY_SPECIFICS,
   classifyTaxId,
   getFiscalYearStartMonth,
   getCurrencyDecimals,
-} from '@/config/country-specifics'
+} from '@/config/country/specifics'
 import type { CountryApi } from '@/country/api'
 import { COUNTRY_APIS, BANK_APIS, hasEInvoicingPortal } from '@/country/api'
 import type { TradingApi } from '@/trading/api'

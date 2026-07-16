@@ -12,8 +12,8 @@ import {
   GLAccountNode,
   AccountScope,
   GLAccountStatistics,
-} from '@/types/gl-account';
-import { glAccountService } from '@/gl/account.service';
+} from '@/types/gl/account';
+import { glAccountService } from '@/gl/account/service';
 import { Plus, Edit2, Lock, Unlock, Trash2 } from 'lucide-react';
 import GLAccountTree from './GLAccountTree';
 import GLAccountDialog from './GLAccountDialog';

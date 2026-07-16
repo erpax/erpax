@@ -1,6 +1,6 @@
 /**
  * CountryShowcase — renders the per-country adapter map from
- * `@/config/regional-defaults` so prospects see exactly which jurisdictions
+ * `@/config/regional/defaults` so prospects see exactly which jurisdictions
  * are wired (currency / locale / accounting framework) and where the
  * gaps are.
  *
@@ -9,11 +9,11 @@
  * @standard BCP-47 language-tag
  * @accounting IFRS / US-GAAP / FRS / JGAAP / ASBE / INDAS
  * @compliance WCAG-2.1 §1.3.1 info-and-relationships table-semantics
- * @see src/config/regional-defaults.ts
+ * @see src/config/regional/defaults.ts
  */
 
 import React from 'react'
-import { COUNTRY_PROFILES } from '@/config/regional-defaults'
+import { COUNTRY_PROFILES } from '@/config/regional/defaults'
 
 interface CountryShowcaseProps {
   highlightCountries?: string[]

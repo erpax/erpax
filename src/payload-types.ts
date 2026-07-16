@@ -3761,6 +3761,14 @@ export interface LegalEntity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | LegalEntity;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6722,6 +6730,14 @@ export interface CostCenter {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | CostCenter;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6783,6 +6799,14 @@ export interface WorkCenter {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | WorkCenter;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14129,6 +14153,14 @@ export interface WorkPhase {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | WorkPhase;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14816,7 +14848,7 @@ export interface McpToolMetadatum {
 /**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
  *
- * — diamond-uuid: 498194b9-925e-8b77-b9f3-48680b6f4445
+ * — diamond-uuid: 0161c335-577e-8383-8dee-ec35d9459c08
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "memories".
@@ -15243,6 +15275,14 @@ export interface Operation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | Operation;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17419,6 +17459,14 @@ export interface Sector {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  breadcrumbs?:
+    | {
+        doc?: (string | null) | Sector;
+        url?: string | null;
+        label?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17817,7 +17865,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: f1e28d17-3dbf-8003-8410-0e50ef8d7842
+ * — diamond-uuid: 1f8b387e-6a95-8291-bfd6-bca8d8d3cf86
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
@@ -18713,7 +18761,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: a321ca46-3ae8-85c8-85ba-51a43a103512
+ * — diamond-uuid: fa20cb1b-05f9-8fd2-8007-e882e8c4396d
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".
@@ -21720,6 +21768,14 @@ export interface CostCentersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23929,6 +23985,14 @@ export interface LegalEntitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24503,6 +24567,14 @@ export interface OperationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -26318,6 +26390,14 @@ export interface SectorsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27578,6 +27658,14 @@ export interface WorkCentersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27649,6 +27737,14 @@ export interface WorkPhasesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  breadcrumbs?:
+    | T
+    | {
+        doc?: T;
+        url?: T;
+        label?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
