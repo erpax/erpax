@@ -14,6 +14,7 @@ import { join, relative } from 'node:path'
 import { createHash } from 'node:crypto'
 import { Client, escapeIdentifier } from 'pg'
 import { uuid, jcsCanonicalize } from '@/integrity'
+import { candidateSingulars } from '@/balance'
 import { think } from '@/think'
 import { stageUuid, computationUuid, type DiamondComputationStage } from '@/diamond'
 
@@ -124,19 +125,45 @@ export function upstreamTables(schemaRb: string): UpstreamTable[] {
   return out.sort((a, b) => (a.table < b.table ? -1 : a.table > b.table ? 1 : 0))
 }
 
-/** Depluralise a Rails table word to the erpax atom form: phases→phase, categories→category, machines→machine. */
-const singular = (w: string): string =>
-  w.endsWith('ies') ? `${w.slice(0, -3)}y` : w.endsWith('s') ? w.slice(0, -1) : w
-
-/** The erpax atom keys a Rails table could already be ported as — raw · path · singular whole · singular path. */
-export function candidateAtoms(table: string): string[] {
-  const path = table.replace(/_/g, '/')
-  const singPath = table.split('_').map(singular).join('/')
-  return [...new Set([table, path, singular(table), singPath])]
+/**
+ * The erpax COLLECTION (the plural store) a Rails table maps to. A Rails table name is ALREADY plural, so it
+ * is the collection side of the [[balance]] — never singularised here.
+ */
+export function candidateCollections(table: string): string[] {
+  const segs = table.split('_')
+  const head = segs[segs.length - 1]!
+  const qualifiers = segs.slice(0, -1)
+  const out = [table, table.replace(/_/g, '/')]
+  // A compound table qualifies its head with a PARENT, and a parent is itself a collection — so it is
+  // plural in erpax: `employee_contracts` → `employees/contracts`, never `employee/contracts`.
+  if (qualifiers.length > 0) {
+    out.push([...qualifiers.map((q) => (q.endsWith('s') ? q : `${q}s`)), head].join('/'))
+  }
+  // NO bare-head fallback: a leaf cannot tell homonyms apart (`contracts` is BOTH the IFRS-15 customer
+  // contract and the labour contract; `variants` is both the product catalog and a lot's variant line), and
+  // a wrong match reads as "balanced" — worse than an honest gap. Only a real path counts.
+  return [...new Set(out)]
 }
 
-/** The head noun of a compound Rails table — `product_variants`→`variant`: the one-word atom erpax would name it. */
-export const headNoun = (table: string): string => singular(table.split('_').pop() ?? table)
+/**
+ * The erpax MODEL (singular — the law of ONE row) of a Rails table. Uses the corpus's canonical
+ * `candidateSingulars` ([[balance]]), never a hand-rolled `-s` strip: English plural→singular is ambiguous
+ * (`leases`→`lease` not `leas`; `boxes`→`box` not `boxe`) and `NON_PLURAL`/`-ss` protect `status`, `address`.
+ */
+export function candidateModels(table: string): string[] {
+  const segs = table.split('_')
+  const head = segs[segs.length - 1]!
+  const out = new Set<string>()
+  for (const s of candidateSingulars(head)) {
+    out.add(s) // variant
+    if (segs.length > 1) out.add([...segs.slice(0, -1), s].join('/')) // product/variant
+  }
+  return [...out]
+}
+
+/** @deprecated The head noun's canonical singular — kept for callers; prefer `candidateModels`. */
+export const headNoun = (table: string): string =>
+  candidateSingulars(table.split('_').pop() ?? table)[0] ?? table
 
 /** An erpax atom: its path, and whether it carries executable MATTER (index.ts) or is vocabulary only. */
 export interface AtomEntry {
@@ -225,21 +252,109 @@ export async function upstreamRowCounts(
   return counts
 }
 
+/** One column's LIFE — does it carry information, or only presence? */
+export interface ColumnLife {
+  readonly column: string
+  readonly type: string
+  /** rows where the column is non-NULL — presence only. `count()` counts non-NULL, and **0 is non-NULL**. */
+  readonly present: number
+  /** rows where it carries INFORMATION — non-zero for numbers, non-empty for text. */
+  readonly informative: number
+  /** present everywhere yet informative nowhere: the column is DEAD, and any law over it holds vacuously. */
+  readonly degenerate: boolean
+}
+
+/**
+ * Does a column carry INFORMATION, or merely presence? `rows > 0` is necessary and NOT sufficient — this is
+ * the check that was left to a human, and it is the one that matters most.
+ *
+ * `packing_lists` has 727 rows whose `net_weight` · `gross_weight` · `volume` · `items_count` are all
+ * `min = max = sum = 0`, and whose `number` · `status` are 100% empty. Its mass-balance law (`gross >= net`)
+ * held **727/727 with zero violations — because both sides were zero**. A green check over dead data is
+ * indistinguishable from a green check over real data; only `min`/`max`/`sum` tells them apart.
+ *
+ * Reads through the canonical `pg` client. Unreachable ⇒ empty, never guessed.
+ */
+export async function upstreamColumnLife(connection: string, table: string): Promise<ColumnLife[]> {
+  if (!/^[a-z0-9_]+$/.test(table)) return []
+  const client = new Client(
+    /^\w+:\/\//.test(connection) ? { connectionString: connection } : { database: connection },
+  )
+  try {
+    await client.connect()
+  } catch {
+    return [] // unreachable — every column's life stays UNKNOWN
+  }
+  try {
+    const cols = await client.query<{ column_name: string; data_type: string }>(
+      `select column_name, data_type from information_schema.columns where table_name = $1 order by ordinal_position`,
+      [table],
+    )
+    const out: ColumnLife[] = []
+    for (const { column_name: col, data_type: type } of cols.rows) {
+      if (!/^[a-z0-9_]+$/.test(col)) continue
+      const id = escapeIdentifier(col)
+      // numbers: 0 is present but says nothing. text: '' is present but says nothing.
+      const informativeExpr = /int|numeric|double|real|decimal/.test(type)
+        ? `${id} is not null and ${id} <> 0`
+        : /char|text/.test(type)
+          ? `${id} is not null and ${id} <> ''`
+          : `${id} is not null`
+      try {
+        const { rows } = await client.query<{ present: string; informative: string }>(
+          `select count(${id})::text as present,
+                  count(*) filter (where ${informativeExpr})::text as informative
+             from ${escapeIdentifier(table)}`,
+        )
+        const present = Number(rows[0]?.present ?? 0)
+        const informative = Number(rows[0]?.informative ?? 0)
+        out.push({ column: col, type, present, informative, degenerate: present > 0 && informative === 0 })
+      } catch {
+        /* unreadable column — left out rather than guessed */
+      }
+    }
+    return out
+  } finally {
+    await client.end()
+  }
+}
+
 /** One table's port thought — which erpax atom holds it (if any), how it matched, its matter, and real usage. */
+/** One side of the [[balance]] — the atom that holds it, and whether it carries matter. */
+export interface BalanceSide {
+  readonly atom: string
+  readonly implemented: boolean
+}
+
+/**
+ * One table's port thought, read through the [[balance]] law — **every collection has its model**. A Rails
+ * table is a plural STORE, so a real port needs BOTH sides: the COLLECTION (plural — where rows live) and the
+ * MODEL (singular — the law of one row). Conflating them is what made `employee_contracts` match
+ * `vocabulary/contract` (the *customer* contract's MODEL) and read as "fold the matter here".
+ */
 export interface PortThought {
   readonly table: string
   readonly columns: number
-  readonly atom: string | null
-  /** `exact` = the table's own name/path; `head` = the compound's head noun (a related one-word atom). */
-  readonly match: 'exact' | 'head' | null
-  /** the matched atom carries executable matter (index.ts), not prose alone. */
-  readonly implemented: boolean
+  /** The plural store — where the rows live. */
+  readonly collection: BalanceSide | null
+  /** The singular model — the law of one row. */
+  readonly model: BalanceSide | null
   /** rows upstream: 0 = defined but never used; null = usage unknown (no DB). */
   readonly rows: number | null
   /** the upstream defined it and never used it — not a gap; porting it would invent. */
   readonly unused: boolean
-  /** ported = an exact atom that actually has matter. A word without logic is NOT ported. */
-  readonly covered: boolean
+  /** BALANCED = both sides exist. Every collection has its model; every model has its collection. */
+  readonly balanced: boolean
+  /** Which side is missing — the gap IS the disbalance. */
+  readonly disbalance: 'model-without-collection' | 'collection-without-model' | 'neither-side' | null
+}
+
+const find = (keys: readonly string[], index: ReadonlyMap<string, AtomEntry>): BalanceSide | null => {
+  for (const k of keys) {
+    const e = index.get(k)
+    if (e) return { atom: e.path, implemented: e.implemented }
+  }
+  return null
 }
 
 const classifyTable = (
@@ -248,32 +363,39 @@ const classifyTable = (
   rows: ReadonlyMap<string, number>,
 ): PortThought => {
   const n = rows.has(t.table) ? rows.get(t.table)! : null
-  const base = { table: t.table, columns: t.columns, rows: n, unused: n === 0 }
-  for (const c of candidateAtoms(t.table)) {
-    const e = index.get(c)
-    if (e)
-      return {
-        ...base,
-        atom: e.path,
-        match: 'exact',
-        implemented: e.implemented,
-        covered: e.implemented,
-      }
+  const collection = find(candidateCollections(t.table), index)
+  const model = find(candidateModels(t.table), index)
+  const balanced = collection !== null && model !== null
+  return {
+    table: t.table,
+    columns: t.columns,
+    collection,
+    model,
+    rows: n,
+    unused: n === 0,
+    balanced,
+    // The gap IS the disbalance — a store with no type, or a type with nowhere to live.
+    disbalance: balanced
+      ? null
+      : model !== null
+        ? 'model-without-collection'
+        : collection !== null
+          ? 'collection-without-model'
+          : 'neither-side',
   }
-  const h = index.get(headNoun(t.table))
-  // a head-noun hit is the WORD, not the port — fold the matter into that atom rather than minting a new one
-  if (h) return { ...base, atom: h.path, match: 'head', implemented: h.implemented, covered: false }
-  return { ...base, atom: null, match: null, implemented: false, covered: false }
 }
 
 export interface PortManifest {
   readonly waves: number
   readonly tables: number
-  readonly covered: number
-  /** Not ported: `atom` names the word that already exists (fold matter there), or null = nothing at all. */
+  /** Tables whose BOTH sides exist — the collection and its model ([[balance]]). */
+  readonly balanced: number
+  /** The disbalanced tables — the gap IS the missing side. */
   readonly gaps: readonly PortThought[]
-  /** Gaps where erpax already holds the WORD but not the matter — never mint a new word for these. */
-  readonly wordsWithoutMatter: number
+  /** Gaps holding a MODEL (the law of one row) with no COLLECTION to store it. */
+  readonly modelsWithoutCollection: number
+  /** Gaps holding a COLLECTION (a store) with no MODEL — a store with no type. */
+  readonly collectionsWithoutModel: number
   /** Tables the upstream defined and never used (0 rows) — excluded from gaps; porting them would invent. */
   readonly unused: number
   readonly skipped: number
@@ -336,13 +458,14 @@ export function portWaves(
     opts?.onWave?.(ordinal, batch.length)
   }
   // A table the upstream never used is NOT a gap — porting it would invent a domain the source never had.
-  const gaps = thoughts.filter((th) => !th.covered && !th.unused)
+  const gaps = thoughts.filter((th) => !th.balanced && !th.unused)
   return {
     waves: ordinal,
     tables: tables.length,
-    covered: thoughts.filter((th) => th.covered).length,
+    balanced: thoughts.filter((th) => th.balanced).length,
     gaps,
-    wordsWithoutMatter: gaps.filter((g) => g.atom !== null).length,
+    modelsWithoutCollection: gaps.filter((g) => g.disbalance === 'model-without-collection').length,
+    collectionsWithoutModel: gaps.filter((g) => g.disbalance === 'collection-without-model').length,
     unused: thoughts.filter((th) => th.unused).length,
     skipped: all.length - tables.length,
     cached: allCached,
@@ -368,13 +491,16 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         onWave: (o, n) => console.log(`port wave ${o} · ${n} tables`),
       })
       console.log(
-        `port — ${m.covered}/${m.tables} ported · ${m.skipped} infra · ${m.unused} defined-but-never-used · ${m.gaps.length} REAL gaps (${m.wordsWithoutMatter} words without matter)${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
+        `port — ${m.balanced}/${m.tables} balanced · ${m.skipped} infra · ${m.unused} never-used · ${m.gaps.length} disbalanced (${m.modelsWithoutCollection} model-without-collection · ${m.collectionsWithoutModel} collection-without-model)${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
       )
       for (const g of m.gaps) {
-        const where = g.atom
-          ? ` — the word exists: [[${g.atom}]]${g.implemented ? ' (implemented, but not this table)' : ' (vocabulary only — fold the matter here, do not mint a new word)'}`
-          : ' — no atom at all'
-        console.log(`  gap: ${g.table} (${g.columns} cols, ${g.rows ?? '?'} rows)${where}`)
+        const has =
+          g.disbalance === 'model-without-collection'
+            ? `model [[${g.model!.atom}]] has no collection — the law of one row exists, nowhere to store rows`
+            : g.disbalance === 'collection-without-model'
+              ? `collection [[${g.collection!.atom}]] has no model — a store with no type`
+              : 'neither model nor collection'
+        console.log(`  gap: ${g.table} (${g.columns} cols, ${g.rows ?? '?'} rows) — ${has}`)
       }
     } else {
       const [source = 'rails', target = 'payload', atom = 'invoices'] = process.argv.slice(2)
