@@ -89,8 +89,26 @@ const num = (v: unknown): number => {
  *
  *   • minutesBackordered = max(0, minutesOrdered − minutesProduced)   (ordered = produced + backordered)
  *   • efficiencyPercent  = ⌊minutesProduced·100 / presenceMinutes⌋    (INTEGER truncation, the verified 99.35% match)
- *                          falls back to 100 when presence or produced is 0 (the production pile-up at 100)
+ *                          otherwise the RECORDED value stands (see the fallback below)
  *   • wage               = max(timePay = payPerHour·shiftMinutes/60, orderWage rollup)  (the greater pole)
+ *
+ * THE FALLBACK — corrected against the real app + data (2026-07-16). This previously read "falls back to 100
+ * (the production pile-up at 100)" and unconditionally assigned 100. Both the Rails source and 20 years of
+ * data refute that:
+ *
+ *   Rails `work_shift.rb:84` — `self.efficiency_percent ||= default_efficiency_percent`
+ *   Rails `work_shift.rb:44` — `default_efficiency_percent = employee.try(:work_efficiency) || 100`
+ *
+ * `||=` PRESERVES a recorded value (and in Ruby **0 is truthy**, so a recorded 0 stands); the default is the
+ * EMPLOYEE'S OWN baseline, with 100 only the last resort. The data agrees: of 32 039 fallback rows
+ * (presence=0 or produced=0) etrima recorded **0 in 69%**, 1 in 27%, and **100 in just 4%** — mirroring the
+ * employee baselines themselves (`employees.work_efficiency`: 0 ×453 · 1 ×293 · null ×151). Assigning 100
+ * would have flipped ~30 000 shifts with NO production into "100% efficient".
+ *
+ * HONEST BOUNDARY: erpax does not yet model the employee `workEfficiency` baseline, so tier 2 is missing —
+ * a recorded value is preserved (tier 1) and 100 is the last resort (tier 3). Porting that baseline onto
+ * [[employees]] is the remaining fold; until then a first-ever fallback row defaults high rather than to the
+ * employee's real baseline.
  *
  * @invariant minutesBackordered === max(0, minutesOrdered − minutesProduced)
  * @invariant presenceMinutes>0 && minutesProduced>0 ⇒ efficiencyPercent === ⌊minutesProduced·100 / presenceMinutes⌋
@@ -108,9 +126,17 @@ export const computeShiftAuthority: CollectionBeforeChangeHook = ({ data }) => {
   d.minutesBackordered = Math.max(0, ordered - produced)
 
   // efficiency = ⌊produced·100 / presence⌋ — INTEGER truncation (data-verified, not rounding).
-  // Default to 100 when there is nothing to measure (the production fallback / pile-up at 100).
+  // Otherwise PRESERVE what was recorded — the Rails `||=` (a recorded 0 stands; 0 is truthy in Ruby).
+  // Only a never-recorded row takes the default; upstream that is the employee's own work_efficiency
+  // baseline, with 100 the last resort. Assigning 100 unconditionally would call ~30 000 no-production
+  // shifts "100% efficient" — refuted by the source and by 32 039 real fallback rows (69% recorded 0).
+  const recorded = d.efficiencyPercent
   d.efficiencyPercent =
-    presence > 0 && produced > 0 ? Math.trunc((produced * 100) / presence) : 100
+    presence > 0 && produced > 0
+      ? Math.trunc((produced * 100) / presence)
+      : typeof recorded === 'number'
+        ? recorded
+        : 100
 
   // wage = MAX(time-clock pay, order-rollup wage), rounded to 2dp (the greater pole wins).
   const timePay = (num(d.payPerHour) * shift) / 60

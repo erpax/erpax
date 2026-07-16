@@ -27,6 +27,24 @@ describe('computeShiftAuthority — minutesBackordered = max(0, ordered − prod
   })
 })
 
+describe('computeShiftAuthority — the fallback PRESERVES what was recorded (Rails `||=`)', () => {
+  // Refuted the old "pile-up at 100": of 32,039 real fallback rows etrima recorded 0 in 69%, 1 in 27%,
+  // 100 in only 4% — mirroring employees.work_efficiency (0 ×453 · 1 ×293 · null ×151).
+  it('a recorded 0 stands when nothing was produced — never flipped to 100', () => {
+    // 0 is truthy in Ruby, so `efficiency_percent ||= default` keeps it. ~30,000 rows depend on this.
+    expect(compute({ presenceMinutes: 450, minutesProduced: 0, efficiencyPercent: 0 }).efficiencyPercent).toBe(0)
+  })
+  it('a recorded 1 stands when presence is 0 (the employee baseline that was written)', () => {
+    expect(compute({ presenceMinutes: 0, minutesProduced: 0, efficiencyPercent: 1 }).efficiencyPercent).toBe(1)
+  })
+  it('only a NEVER-recorded fallback row takes the last-resort default', () => {
+    expect(compute({ presenceMinutes: 0, minutesProduced: 0 }).efficiencyPercent).toBe(100)
+  })
+  it('a real measurement still overrides any recorded value (the formula wins when measurable)', () => {
+    expect(compute({ presenceMinutes: 480, minutesProduced: 355, efficiencyPercent: 0 }).efficiencyPercent).toBe(73)
+  })
+})
+
 describe('computeShiftAuthority — efficiency = ⌊produced·100 / presence⌋ (INTEGER truncation)', () => {
   it('truncates, never rounds (the data-verified 99.35% rule)', () => {
     // 355·100/480 = 73.95… → 73 (truncated, not 74)
