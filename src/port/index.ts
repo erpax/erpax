@@ -10,16 +10,12 @@
  * @see ./SKILL.md — ../diamond/projection — ../quantum/port
  */
 import { readFileSync, readdirSync, type Dirent } from 'node:fs'
-import { execFileSync } from 'node:child_process'
 import { join, relative } from 'node:path'
 import { createHash } from 'node:crypto'
+import { Client, escapeIdentifier } from 'pg'
 import { uuid, jcsCanonicalize } from '@/integrity'
 import { think } from '@/think'
-import {
-  stageUuid,
-  computationUuid,
-  type DiamondComputationStage,
-} from '@/diamond'
+import { stageUuid, computationUuid, type DiamondComputationStage } from '@/diamond'
 
 export interface PortDiamondResult {
   readonly sourceLang: string
@@ -96,11 +92,18 @@ const UPSTREAM_INFRA: ReadonlySet<string> = new Set([
 ])
 
 /** Framework table prefixes — Rails engines (Solid Queue/Cache/Cable, ActiveStorage) that carry no domain. */
-const INFRA_PREFIXES: readonly string[] = ['solid_queue_', 'solid_cache_', 'solid_cable_', 'active_storage_']
+const INFRA_PREFIXES: readonly string[] = [
+  'solid_queue_',
+  'solid_cache_',
+  'solid_cable_',
+  'active_storage_',
+]
 
 /** DRY cleaning — a table is framework noise (skip) not a domain gap: named infra, an engine prefix, or a dated archive. */
 const isInfra = (table: string): boolean =>
-  UPSTREAM_INFRA.has(table) || INFRA_PREFIXES.some((p) => table.startsWith(p)) || /_\d{6,8}$/.test(table)
+  UPSTREAM_INFRA.has(table) ||
+  INFRA_PREFIXES.some((p) => table.startsWith(p)) ||
+  /_\d{6,8}$/.test(table)
 
 /** An upstream table from etrima's schema.rb — the port unit (name + column count). */
 export interface UpstreamTable {
@@ -169,7 +172,8 @@ export function erpaxAtomIndex(cwd: string = process.cwd()): Map<string, AtomEnt
       add(rel.split('/').pop()!)
     }
     for (const e of entries) {
-      if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees') walk(join(dir, e.name))
+      if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees')
+        walk(join(dir, e.name))
     }
   }
   walk(root)
@@ -177,24 +181,46 @@ export function erpaxAtomIndex(cwd: string = process.cwd()): Map<string, AtomEnt
 }
 
 /**
- * Real upstream USAGE — table → row count, read from the live source DB. The decisive signal a schema read
- * cannot give: a table with **0 rows** was defined and never used, so porting it would invent a domain the
- * source never had. Unreachable tables are left unknown (absent), never guessed.
+ * Real upstream USAGE — table → row count, read from the live source DB through the CANONICAL client
+ * (`pg`, node-postgres), not a shell-out to the `psql` binary: one connection, `pg_class.reltuples` where
+ * exact counts are not needed, and a guaranteed `end()`. Driving the CLI would depend on `psql` being on
+ * PATH and reparse its text output — a package is used through its API, never through its binary.
+ *
+ * The decisive signal a schema read cannot give: a table with **0 rows** was defined and never used, so
+ * porting it would invent a domain the source never had. Unreachable tables are left unknown (absent),
+ * never guessed.
+ *
+ * Identifiers are quoted via `pg`'s own escaping (`format('%I')` semantics applied by `escapeIdentifier`),
+ * and only names this module parsed out of the schema itself are ever passed.
  */
-export function upstreamRowCounts(database: string, tables: readonly string[]): Map<string, number> {
+export async function upstreamRowCounts(
+  connection: string,
+  tables: readonly string[],
+): Promise<Map<string, number>> {
   const counts = new Map<string, number>()
-  for (const t of tables) {
-    if (!/^[a-z0-9_]+$/.test(t)) continue // only identifiers we parsed ourselves reach the DB
-    try {
-      const out = execFileSync('psql', [database, '-tAc', `select count(*) from ${t}`], {
-        encoding: 'utf8',
-        stdio: ['ignore', 'pipe', 'ignore'],
-      })
-      const n = Number(out.trim())
-      if (Number.isFinite(n)) counts.set(t, n)
-    } catch {
-      /* table or DB unreachable — usage stays UNKNOWN, never assumed */
+  const client = new Client(
+    /^\w+:\/\//.test(connection) ? { connectionString: connection } : { database: connection },
+  )
+  try {
+    await client.connect()
+  } catch {
+    return counts // DB unreachable — every table's usage stays UNKNOWN, never assumed
+  }
+  try {
+    for (const t of tables) {
+      if (!/^[a-z0-9_]+$/.test(t)) continue // only identifiers parsed out of the schema reach the DB
+      try {
+        const { rows } = await client.query<{ n: string }>(
+          `select count(*)::text as n from ${escapeIdentifier(t)}`,
+        )
+        const n = Number(rows[0]?.n)
+        if (Number.isFinite(n)) counts.set(t, n)
+      } catch {
+        /* table absent/unreadable — usage stays UNKNOWN for this table only */
+      }
     }
+  } finally {
+    await client.end()
   }
   return counts
 }
@@ -225,7 +251,14 @@ const classifyTable = (
   const base = { table: t.table, columns: t.columns, rows: n, unused: n === 0 }
   for (const c of candidateAtoms(t.table)) {
     const e = index.get(c)
-    if (e) return { ...base, atom: e.path, match: 'exact', implemented: e.implemented, covered: e.implemented }
+    if (e)
+      return {
+        ...base,
+        atom: e.path,
+        match: 'exact',
+        implemented: e.implemented,
+        covered: e.implemented,
+      }
   }
   const h = index.get(headNoun(t.table))
   // a head-noun hit is the WORD, not the port — fold the matter into that atom rather than minting a new one
@@ -271,9 +304,17 @@ export function portWaves(
   const rows = opts?.rows ?? new Map<string, number>()
   const seal = (s: string): string => createHash('sha256').update(s).digest('hex').slice(0, 16)
   const atomSeal = seal(
-    [...atoms.entries()].sort().map(([k, v]) => `${k}:${v.implemented ? 1 : 0}`).join('\n'),
+    [...atoms.entries()]
+      .sort()
+      .map(([k, v]) => `${k}:${v.implemented ? 1 : 0}`)
+      .join('\n'),
   )
-  const rowSeal = seal([...rows.entries()].sort().map(([k, v]) => `${k}:${v}`).join('\n'))
+  const rowSeal = seal(
+    [...rows.entries()]
+      .sort()
+      .map(([k, v]) => `${k}:${v}`)
+      .join('\n'),
+  )
   const schemaSeal = seal(schemaRb)
   // The generator seal — this module's own source. Without it a classifier change reads a stale thought
   // (decoherence): the key must capture the code the thought depends on, not just its inputs.
@@ -309,32 +350,38 @@ export function portWaves(
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const first = process.argv[2]
-  if (first && first.endsWith('.rb')) {
-    const schemaRb = readFileSync(first, 'utf8')
-    // Optional 2nd arg = the live source DB; without it usage is unknown and nothing is assumed unused.
-    const database = process.argv[3]
-    const rows = database
-      ? upstreamRowCounts(database, upstreamTables(schemaRb).map((t) => t.table))
-      : undefined
-    const m = portWaves(process.cwd(), schemaRb, {
-      rows,
-      onWave: (o, n) => console.log(`port wave ${o} · ${n} tables`),
-    })
-    console.log(
-      `port — ${m.covered}/${m.tables} ported · ${m.skipped} infra · ${m.unused} defined-but-never-used · ${m.gaps.length} REAL gaps (${m.wordsWithoutMatter} words without matter)${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
-    )
-    for (const g of m.gaps) {
-      const where = g.atom
-        ? ` — the word exists: [[${g.atom}]]${g.implemented ? ' (implemented, but not this table)' : ' (vocabulary only — fold the matter here, do not mint a new word)'}`
-        : ' — no atom at all'
-      console.log(`  gap: ${g.table} (${g.columns} cols, ${g.rows ?? '?'} rows)${where}`)
+  void (async () => {
+    const first = process.argv[2]
+    if (first && first.endsWith('.rb')) {
+      const schemaRb = readFileSync(first, 'utf8')
+      // Optional 2nd arg = the live source DB (name or connection string); without it usage is unknown and
+      // nothing is assumed unused.
+      const database = process.argv[3]
+      const rows = database
+        ? await upstreamRowCounts(
+            database,
+            upstreamTables(schemaRb).map((t) => t.table),
+          )
+        : undefined
+      const m = portWaves(process.cwd(), schemaRb, {
+        rows,
+        onWave: (o, n) => console.log(`port wave ${o} · ${n} tables`),
+      })
+      console.log(
+        `port — ${m.covered}/${m.tables} ported · ${m.skipped} infra · ${m.unused} defined-but-never-used · ${m.gaps.length} REAL gaps (${m.wordsWithoutMatter} words without matter)${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
+      )
+      for (const g of m.gaps) {
+        const where = g.atom
+          ? ` — the word exists: [[${g.atom}]]${g.implemented ? ' (implemented, but not this table)' : ' (vocabulary only — fold the matter here, do not mint a new word)'}`
+          : ' — no atom at all'
+        console.log(`  gap: ${g.table} (${g.columns} cols, ${g.rows ?? '?'} rows)${where}`)
+      }
+    } else {
+      const [source = 'rails', target = 'payload', atom = 'invoices'] = process.argv.slice(2)
+      const result = portDiamond(source, target, atom)
+      console.log(`port — ${result.sourceLang}→${result.targetLang} @ ${result.atomPath}`)
+      console.log(`  mappingUuid: ${result.mappingUuid}`)
+      console.log(`  computation: ${result.computationUuid} (${result.stages.length} stages)`)
     }
-  } else {
-    const [source = 'rails', target = 'payload', atom = 'invoices'] = process.argv.slice(2)
-    const result = portDiamond(source, target, atom)
-    console.log(`port — ${result.sourceLang}→${result.targetLang} @ ${result.atomPath}`)
-    console.log(`  mappingUuid: ${result.mappingUuid}`)
-    console.log(`  computation: ${result.computationUuid} (${result.stages.length} stages)`)
-  }
+  })()
 }
