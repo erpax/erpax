@@ -101,6 +101,28 @@ describe('rules/cycle — an import loop decides initialisation order', () => {
     rmSync(cwd, { recursive: true, force: true })
   })
 
+  // The edges come from ts.createSourceFile, not from a pattern. Against 6,203 files the regex it replaced
+  // was wrong in 115: it INVENTED 4 edges and MISSED 211. These two classes are why — a pattern that
+  // "usually matches" a language is a heuristic wearing a theorem's clothes, and it under-reports as readily
+  // as it over-reports. Both tests below found NOTHING under the regex.
+  it('a side-effect import IS an edge — it has no `from`, so the pattern never saw it', () => {
+    const cwd = corpus({
+      'src/a/index.ts': "import '@/b'\nexport const a = 1",
+      'src/b/index.ts': "import { a } from '@/a'\nexport const b = () => a",
+    })
+    expect(importCycles(cwd)).toHaveLength(1) // the module is loaded and its top level runs: a real loop
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a dynamic import IS an edge — the pattern had no way to express it', () => {
+    const cwd = corpus({
+      'src/a/index.ts': "export const a = async () => (await import('@/b')).b",
+      'src/b/index.ts': "import { a } from '@/a'\nexport const b = () => a()",
+    })
+    expect(importCycles(cwd)).toHaveLength(1)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
   it('importsOf reads runtime edges only', () => {
     const cwd = corpus({
       'src/a/index.ts': "import { b } from '@/b'\nimport type { T } from '@/c'\nimport fs from 'node:fs'",

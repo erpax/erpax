@@ -17,11 +17,13 @@ That is live in erpax, and it was found **by accident, twice**, because the fail
 
 | | count (2026-07-16) |
 | --- | ---: |
-| import tangles (SCC, size > 1) | **7** |
-| the largest | **152 files, all mutually reachable** |
-| the rest | 11 · 3 · 2 · 2 · 2 · 2 |
+| import tangles (SCC, size > 1) | **6** |
+| the largest | **225 files, all mutually reachable** |
+| the rest | 11 · 6 · 2 · 2 · 2 |
 
-**152 files that can all reach each other.** Not a knot at the edge — the corpus's core: `factory/collection-factory`, `collections`, `fixed/assets`, `agents/mcp/tool-defs`, `readme/compute`, `diamond` are all in the same component.
+Measured by **parsing**, not by pattern. The regex this gate shipped with said 152 and 174 — it was wrong in 115 of 6,203 files, inventing 4 edges and **missing 211**.
+
+**225 files that can all reach each other.** Not a knot at the edge — the corpus's core: `factory/collection-factory`, `collections`, `fixed/assets`, `agents/mcp/tool-defs`, `readme/compute`, `diamond` are all in the same component.
 
 One ring through it, traced end to end:
 
@@ -55,8 +57,8 @@ ES modules tolerate a loop as long as nobody **uses** a binding while the graph 
 
 | | count (2026-07-16) |
 | --- | ---: |
-| files in a tangle | **174** |
-| that CALL a binding from their own tangle at load time | **20** |
+| files in a tangle | **248** |
+| that CALL a binding from their own tangle at load time | **36** |
 
 A fix list, not a map — and it independently finds `fixed/assets:34 → createAccountingCollection()`, the one that was found by reading.
 
@@ -65,9 +67,20 @@ Two things it must NOT flag, and both were learned the hard way:
 - **A function is deferred.** `const build = () => make()` runs long after initialisation. Only an initialiser that *is not* a function body is evaluated at load time.
 - **A builtin cannot be in a dead zone.** The scan reported **49** uses until the source check existed; ~44 were `join`, `existsSync`, `createRequire` — node builtins, fully initialised before our graph starts, structurally incapable of the failure being hunted. Only a binding imported **from a file in the same tangle** can be undefined.
 
-**Honest boundary.** An import whose specifiers are ALL inline `type` is erased too — the same class as `import type`, in different syntax. Counting it invents an edge, and an invented edge in a cycle gate is an invented cycle; it is 5 of 3,995 braced imports here, and correcting it moved **neither the 152 nor the 20**. The tangle is not an artifact of the scan — the first finding today to survive its own instrument being wrong.
+## You cannot trust something that is not a theorem
 
-This proves a binding is **run during initialisation**, never that the run **throws** — whether a given loop bites depends on the order the graph is entered, which is why `readme/test.ts` dies and a full Payload boot may not. It reads top-level **calls**; a bare dereference (`const x = importedObj.field`) is evaluated too and is not yet caught. And the 154 entangled files that run nothing are not innocent — their initialisation order is decided by accident, which is the latent form of the same failure.
+This gate was built on a regex, and **a regex over TypeScript is a guess**: the language has a grammar, and a pattern that "usually matches" it is a heuristic wearing a theorem's clothes. Measured against `ts.createSourceFile` across 6,203 files, it was wrong in **115**:
+
+| what the pattern did | why |
+| --- | --- |
+| **missed 211 edges** | `import './x.scss'` has no `from` — a side-effect import loads the module and runs its top level. `await import('@/x')` it had no way to express. |
+| **invented 4 edges** | `import { type A, type B }` is erased by the compiler. |
+
+I then claimed, from the regex, that *"correcting the inline-type class moved neither the 152 nor the 20 — the tangle is not an artifact of the scan."* **That was false.** It survived a 5-edge patch; against the actual grammar the tangle grew **152 → 225** files and the fatal list **20 → 36**. A heuristic under-reports as readily as it over-reports, **and cannot tell you which** — so a "robustness check" run on a guess proves nothing at all.
+
+Every false measurement this corpus has paid for came from pattern-matching a language instead of parsing it: [[rules]]/prose counted keywords (1,261 → 15), [[rules]]/reference counted string literals (97 → 48), [[standards]]/emit counted prose about banners, this gate's own DFS missed the loop it was written for. **The parser IS the language definition.** The two measurements today that never lied were the two that were theorems: content-addressing (same hash ⇒ same content) and Tarjan (proven complete). The tests carry the law, so swapping the guess for the grammar did not move a single one of them.
+
+**Honest boundary.** This proves a binding is **run during initialisation**, never that the run **throws** — whether a given loop bites depends on the order the graph is entered, which is why `readme/test.ts` dies and a full Payload boot may not. It reads top-level **calls**; a bare dereference (`const x = importedObj.field`) is evaluated too and is not yet caught. And the 212 entangled files that run nothing are not innocent — their initialisation order is decided by accident, which is the latent form of the same failure.
 
 **Law — [[law]]: a module may not depend on itself, however far around. An import loop makes initialisation order an accident, and a top-level call inside one reads a binding that does not exist yet.**
 

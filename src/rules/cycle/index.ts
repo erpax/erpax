@@ -33,29 +33,57 @@
  *
  * Composes [[rules]] · [[law]].
  */
+import ts from 'typescript'
 import { readFileSync, existsSync, readdirSync, type Dirent } from 'node:fs'
 import { join, dirname, resolve, relative } from 'node:path'
 
 const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$|catalogue\.ts$/
 const IS_TEST = /(?:^|[/.])test\.tsx?$|\.test\.tsx?$/
 
-/** A candidate import edge — `import type … from` is erased outright, so it is never one. */
-const RUNTIME_IMPORT = /(?:^|\n)\s*(?:import|export)(?!\s+type\b)([\s\S]*?)from\s+'([^']+)'/g
-
 /**
- * Is this statement erased before runtime?
+ * THE EDGES COME FROM THE COMPILER, NOT FROM A PATTERN.
  *
- * `import type { X } from 'y'` is obvious. `import { type X, type Y } from 'y'` is NOT — and TypeScript
- * elides it just the same when EVERY specifier is type-only. Counting it invents an edge that does not exist
- * at runtime, and an invented edge in a cycle gate is an invented cycle. Measured: 5 of 3,995 braced `@/`
- * imports in the tree. Small, and still 5 lies — the same class as `import type`, wearing different syntax.
+ * This was a regex, and a regex over TypeScript is a guess: the language has a grammar, and a pattern that
+ * "usually matches" it is a heuristic wearing a theorem's clothes. Measured against `ts.createSourceFile`
+ * over 6,203 files, the regex was wrong in 115 of them — it INVENTED 4 edges and MISSED 211:
+ *
+ *   - `import './x.scss'` — a side-effect import has no `from`, so the pattern never saw it. It is a real
+ *     edge: the module is loaded, and its top-level code runs.
+ *   - `await import('@/x')` — a dynamic import is an edge the pattern had no way to express.
+ *   - `import { type A, type B } from 'y'` — erased by the compiler, invented by the pattern.
+ *
+ * A gate built on a guess under-reports as readily as it over-reports, and cannot tell you which. Every
+ * false measurement this corpus has paid for came from pattern-matching a language instead of parsing it
+ * ([[rules]]/prose counted keywords; [[rules]]/reference counted string literals; [[standards]]/emit counted
+ * prose about banners). The parser IS the language definition — the answer stops being a guess.
  */
-const isErased = (clause: string): boolean => {
-  const braced = clause.match(/\{([\s\S]*?)\}/)
-  if (!braced) return false // a default/namespace import is a value
-  if (clause.replace(/\{[\s\S]*?\}/, '').replace(/[,\s]/g, '')) return false // `X, { type Y }` — X is a value
-  const parts = braced[1]!.split(',').map((s) => s.trim()).filter(Boolean)
-  return parts.length > 0 && parts.every((s) => /^type\s/.test(s))
+const edgeSpecifiers = (file: string, text: string): string[] => {
+  const src = ts.createSourceFile(file, text, ts.ScriptTarget.ESNext, true)
+  const out: string[] = []
+  const visit = (n: ts.Node): void => {
+    if (ts.isImportDeclaration(n)) {
+      // `import type … from` is erased; so is a clause whose every specifier is inline `type`.
+      const clause = n.importClause
+      const named = clause?.namedBindings
+      const allInlineType =
+        !!named &&
+        ts.isNamedImports(named) &&
+        named.elements.length > 0 &&
+        named.elements.every((e) => e.isTypeOnly) &&
+        !clause?.name
+      if (!clause?.isTypeOnly && !allInlineType && ts.isStringLiteral(n.moduleSpecifier)) {
+        out.push(n.moduleSpecifier.text) // a clause-less `import 'x'` lands here: a real side-effect edge
+      }
+    } else if (ts.isExportDeclaration(n) && n.moduleSpecifier && !n.isTypeOnly) {
+      if (ts.isStringLiteral(n.moduleSpecifier)) out.push(n.moduleSpecifier.text)
+    } else if (ts.isCallExpression(n) && n.expression.kind === ts.SyntaxKind.ImportKeyword) {
+      const arg = n.arguments[0]
+      if (arg && ts.isStringLiteral(arg)) out.push(arg.text)
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+  return out
 }
 
 const resolveSpec = (cwd: string, from: string, spec: string): string | null => {
@@ -77,14 +105,12 @@ export function importsOf(file: string, cwd: string = process.cwd()): string[] {
   } catch {
     return []
   }
-  const code = text.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '')
   const out: string[] = []
-  for (const m of code.matchAll(RUNTIME_IMPORT)) {
-    if (isErased(m[1]!)) continue
-    const r = resolveSpec(cwd, file, m[2]!)
+  for (const spec of edgeSpecifiers(file, text)) {
+    const r = resolveSpec(cwd, file, spec)
     if (r && !GENERATED.test(r)) out.push(r)
   }
-  return out
+  return [...new Set(out)]
 }
 
 const sources = (root: string): string[] => {
