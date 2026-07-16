@@ -267,11 +267,14 @@ Port the *data*, not just the schema: `src/port/etrima-import.mjs` streams the s
 
 Which tables are still gaps is **computed, not eyeballed**. `portWaves(cwd, schemaRb)` walks etrima's `schema.rb` (the source of truth) in waves and, per wave, seals a coverage thought via [[think]] — keyed by `schema ⊕ atom-set ⊕ this module's own source`. So an unchanged upstream and corpus **READ** the manifest; only a real change (a new upstream table, a newly-ported atom that closes a gap, or an edit to the classifier itself) re-derives. The generator seal is load-bearing: without it, changing the classifier reads a **stale** thought — decoherence, the honest boundary [[think]] names.
 
-- **DRY dedupe** — `candidateAtoms` depluralises each table (`machines→machine`, `work_phases→work/phases`) and matches against `erpaxAtomKeys`; covered tables are named and **never re-ported**.
+- **DRY dedupe** — `candidateAtoms` depluralises each table (`machines→machine`, `work_phases→work/phases`) and matches `erpaxAtomIndex`; ported tables are named and **never re-ported**.
 - **DRY cleaning** — `isInfra` drops framework noise (Solid Queue/Cache/Cable, ActiveStorage, PaperTrail `versions`, dated `_YYYYMMDD` archives) so the manifest is real domain gaps only.
-- Run: `tsx src/port/index.ts ~/github/ceccec/etrima/db/schema.rb` — prints covered/gaps and whether it READ from saved thoughts. Current real gaps: `employee_contracts · handles · machine_types · pack_types · packing_lists · product_variants · stock_shipments · stocks · team_members`.
+- **Word vs matter** — a match only counts as ported when the atom carries executable matter (`index.ts`). An atom with a SKILL and no matter is a **word without logic** ([[rules]]) — the vocabulary exists, the port does not.
+- Run: `tsx src/port/index.ts ~/github/ceccec/etrima/db/schema.rb` — prints ported/gaps and whether it READ from saved thoughts.
 
-Each gap is then a deliberate [[trinity]] fold (like `machine`), mined from the real columns — never invented.
+**The finding (computed, 2026-07-16): 23/35 ported · 12 gaps — and 10 of the 12 are words without matter.** erpax already holds [[variant]] · [[shipment]] · [[upload]] · `vocabulary/brand` · `vocabulary/contract` · `vocabulary/list` · `vocabulary/member` as **prose naming real upstream tables that were never implemented**. Only `handles` and `stocks` have no atom at all.
+
+So the upstream gap is **not missing words — it is words that never got their matter**. The fold for each is to give the existing atom its `index.ts` (mined from the real columns, like `machine`), completing its [[trinity]] — **never mint a duplicate word**. That is the DRY cleaning: the vocabulary is already there, waiting.
 
 ## Common mistakes
 - Porting ActiveAdmin per-resource tweaks into bespoke admin React instead of Payload's declarative `admin` config.

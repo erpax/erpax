@@ -4,7 +4,7 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect } from 'vitest'
-import { portDiamond, portMappingUuid, upstreamTables, candidateAtoms, erpaxAtomKeys, portWaves } from '@/port'
+import { portDiamond, portMappingUuid, upstreamTables, candidateAtoms, headNoun, erpaxAtomIndex, portWaves } from '@/port'
 
 describe('port — Rosetta diamond', () => {
   it('portMappingUuid is deterministic', () => {
@@ -58,15 +58,34 @@ end
     expect(candidateAtoms('work_phases')).toContain('work/phase')
   })
 
-  it('erpaxAtomKeys scans the live tree (port itself is an atom key)', () => {
-    expect(erpaxAtomKeys(process.cwd()).has('port')).toBe(true)
+  it('headNoun reduces a compound Rails table to the one-word atom erpax would name it', () => {
+    expect(headNoun('product_variants')).toBe('variant')
+    expect(headNoun('stocks')).toBe('stock')
   })
 
-  it('DRY cleaning: skips framework infra, covers machines via the machine atom, flags stocks as a gap', () => {
+  it('erpaxAtomIndex scans the live tree and marks matter: port has an index.ts, product is vocabulary only', () => {
+    const index = erpaxAtomIndex(process.cwd())
+    expect(index.get('port')?.implemented).toBe(true)
+    expect(index.get('product')?.implemented).toBe(false) // the word exists, the matter does not
+  })
+
+  it('DRY cleaning: skips framework infra, ports machines via the machine atom, flags stocks as a gap', () => {
     const m = portWaves(process.cwd(), schema, { waves: 2 })
     expect(m.skipped).toBe(2) // schema_migrations + solid_queue_jobs
     expect(m.gaps.map((g) => g.table)).toContain('stocks')
-    expect(m.gaps.map((g) => g.table)).not.toContain('machines') // covered — never re-ported
+    expect(m.gaps.map((g) => g.table)).not.toContain('machines') // ported — never re-ported
+  })
+
+  it('a word without matter is NOT ported — it names where to fold, not a new word to mint', () => {
+    const m = portWaves(process.cwd(), `\ncreate_table "product_variants", force: :cascade do |t|\n  t.string "code"\nend\n`, {
+      waves: 1,
+    })
+    const g = m.gaps.find((x) => x.table === 'product_variants')
+    expect(g?.covered).toBe(false) // vocabulary alone is not a port
+    expect(g?.atom).toBe('variant') // the word already exists — fold the matter there
+    expect(g?.match).toBe('head')
+    expect(g?.implemented).toBe(false)
+    expect(m.wordsWithoutMatter).toBe(1)
   })
 
   it('the waves save and share their thought: a second run READS it', () => {

@@ -131,10 +131,23 @@ export function candidateAtoms(table: string): string[] {
   return [...new Set([table, path, singular(table), singPath])]
 }
 
-/** Every erpax atom's path + each path segment — the set a candidate is matched against (DRY dedupe). */
-export function erpaxAtomKeys(cwd: string = process.cwd()): Set<string> {
+/** The head noun of a compound Rails table — `product_variants`→`variant`: the one-word atom erpax would name it. */
+export const headNoun = (table: string): string => singular(table.split('_').pop() ?? table)
+
+/** An erpax atom: its path, and whether it carries executable MATTER (index.ts) or is vocabulary only. */
+export interface AtomEntry {
+  readonly path: string
+  readonly implemented: boolean
+}
+
+/**
+ * Index every erpax atom by its full path AND its leaf (head noun) → whether it has matter. The rosetta
+ * distinction is what makes the port honest: an atom with a SKILL but no `index.ts` is a WORD WITHOUT LOGIC
+ * ([[rules]]/word-without-logic) — the vocabulary exists, the matter does not, so the table is not ported.
+ */
+export function erpaxAtomIndex(cwd: string = process.cwd()): Map<string, AtomEntry> {
   const root = join(cwd, 'src')
-  const keys = new Set<string>()
+  const index = new Map<string, AtomEntry>()
   const walk = (dir: string): void => {
     let entries: Dirent[]
     try {
@@ -145,35 +158,56 @@ export function erpaxAtomKeys(cwd: string = process.cwd()): Set<string> {
     const names = new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
     if (names.has('SKILL.md') || names.has('index.ts')) {
       const rel = relative(root, dir).replace(/\\/g, '/')
-      keys.add(rel)
-      for (const seg of rel.split('/')) keys.add(seg)
+      const entry: AtomEntry = { path: rel, implemented: names.has('index.ts') }
+      // an implemented atom wins the key over a vocabulary-only homonym
+      const add = (k: string): void => {
+        const prev = index.get(k)
+        if (!prev || (!prev.implemented && entry.implemented)) index.set(k, entry)
+      }
+      add(rel)
+      add(rel.split('/').pop()!)
     }
     for (const e of entries) {
       if (e.isDirectory() && e.name !== 'node_modules' && e.name !== 'worktrees') walk(join(dir, e.name))
     }
   }
   walk(root)
-  return keys
+  return index
 }
 
-/** One table's port thought — already an erpax atom (DRY), and if so which. */
+/** One table's port thought — which erpax atom holds it (if any), how it matched, and whether it has matter. */
 export interface PortThought {
   readonly table: string
   readonly columns: number
   readonly atom: string | null
+  /** `exact` = the table's own name/path; `head` = the compound's head noun (a related one-word atom). */
+  readonly match: 'exact' | 'head' | null
+  /** the matched atom carries executable matter (index.ts), not prose alone. */
+  readonly implemented: boolean
+  /** ported = an exact atom that actually has matter. A word without logic is NOT ported. */
   readonly covered: boolean
 }
 
-const classifyTable = (t: UpstreamTable, atoms: Set<string>): PortThought => {
-  const atom = candidateAtoms(t.table).find((c) => atoms.has(c)) ?? null
-  return { table: t.table, columns: t.columns, atom, covered: atom !== null }
+const classifyTable = (t: UpstreamTable, index: ReadonlyMap<string, AtomEntry>): PortThought => {
+  const base = { table: t.table, columns: t.columns }
+  for (const c of candidateAtoms(t.table)) {
+    const e = index.get(c)
+    if (e) return { ...base, atom: e.path, match: 'exact', implemented: e.implemented, covered: e.implemented }
+  }
+  const h = index.get(headNoun(t.table))
+  // a head-noun hit is the WORD, not the port — fold the matter into that atom rather than minting a new one
+  if (h) return { ...base, atom: h.path, match: 'head', implemented: h.implemented, covered: false }
+  return { ...base, atom: null, match: null, implemented: false, covered: false }
 }
 
 export interface PortManifest {
   readonly waves: number
   readonly tables: number
   readonly covered: number
+  /** Not ported: `atom` names the word that already exists (fold matter there), or null = nothing at all. */
   readonly gaps: readonly PortThought[]
+  /** Gaps where erpax already holds the WORD but not the matter — never mint a new word for these. */
+  readonly wordsWithoutMatter: number
   readonly skipped: number
   /** true when every wave was READ from its saved thought (unchanged upstream ⊕ corpus). */
   readonly cached: boolean
@@ -193,9 +227,11 @@ export function portWaves(
 ): PortManifest {
   const all = upstreamTables(schemaRb)
   const tables = all.filter((t) => !isInfra(t.table))
-  const atoms = erpaxAtomKeys(cwd)
+  const atoms = erpaxAtomIndex(cwd)
   const seal = (s: string): string => createHash('sha256').update(s).digest('hex').slice(0, 16)
-  const atomSeal = seal([...atoms].sort().join('\n'))
+  const atomSeal = seal(
+    [...atoms.entries()].sort().map(([k, v]) => `${k}:${v.implemented ? 1 : 0}`).join('\n'),
+  )
   const schemaSeal = seal(schemaRb)
   // The generator seal — this module's own source. Without it a classifier change reads a stale thought
   // (decoherence): the key must capture the code the thought depends on, not just its inputs.
@@ -218,6 +254,7 @@ export function portWaves(
     tables: tables.length,
     covered: thoughts.length - gaps.length,
     gaps,
+    wordsWithoutMatter: gaps.filter((g) => g.atom !== null).length,
     skipped: all.length - tables.length,
     cached: allCached,
   }
@@ -230,9 +267,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       onWave: (o, n) => console.log(`port wave ${o} · ${n} tables`),
     })
     console.log(
-      `port — ${m.covered}/${m.tables} covered (${m.skipped} infra skipped) · ${m.gaps.length} gaps${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
+      `port — ${m.covered}/${m.tables} ported (${m.skipped} infra skipped) · ${m.gaps.length} gaps, of which ${m.wordsWithoutMatter} are words without matter${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
     )
-    for (const g of m.gaps) console.log(`  gap: ${g.table} (${g.columns} cols)`)
+    for (const g of m.gaps) {
+      const where = g.atom
+        ? ` — the word exists: [[${g.atom}]]${g.implemented ? ' (implemented, but not this table)' : ' (vocabulary only — fold the matter here, do not mint a new word)'}`
+        : ' — no atom at all'
+      console.log(`  gap: ${g.table} (${g.columns} cols)${where}`)
+    }
   } else {
     const [source = 'rails', target = 'payload', atom = 'invoices'] = process.argv.slice(2)
     const result = portDiamond(source, target, atom)
