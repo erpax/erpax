@@ -56,7 +56,7 @@ describe('scopes', () => {
 
     it('marks permission-role collections', () => {
       expect(SCOPE_BY_COLLECTION.roles.permissions).toBe('definitions')
-      expect(SCOPE_BY_COLLECTION.user_roles.permissions).toBe('assignments')
+      expect(SCOPE_BY_COLLECTION['user-roles']!.permissions).toBe('assignments') // the SLUG, not the SQL table
     })
   })
 })

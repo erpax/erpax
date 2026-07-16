@@ -54,7 +54,11 @@ export const SCOPE_BY_COLLECTION = {
     schedulePublish: false,
     permissions: 'definitions',
   },
-  user_roles: {
+  // The KEY is the payload SLUG, and the slug is hyphenated. It read `user_roles` — which is the SQL TABLE
+  // Payload derives from it (hyphen → underscore). Table-name where a slug belongs: the scope for this
+  // collection was keyed to a name the config never uses. It matched APP_COLLECTION_SLUGS only because that
+  // list carried the SAME typo — two wrongs agreeing, so the test between them passed.
+  'user-roles': {
     lifecycle: 'none',
     tenancy: false,
     schedulePublish: false,
