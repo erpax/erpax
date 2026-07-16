@@ -24,9 +24,7 @@ A tenant's fiscal year may start in any month, and its `periodType` may be month
 
 ## The SOX control was an empty try
 
-```
-@standard SOX:2002 (period-lock enforcement, access control)
-```
+The banner claimed SOX:2002 — *period-lock enforcement, access control*. (It is not quoted in sigil form here: this file is scanned for banners, so restating one would file this SKILL as an implementation of SOX. It caught exactly that on the first draft.)
 
 The `period-locks` query was also a comment — inside an **empty `try`**, under a `catch` re-throwing `archived` and `locked` errors that nothing could raise. A reviewer sees *"Validate against PeriodLocks"* and a try/catch and reads enforcement. **No period was ever locked against a posting**, which is the control SOX §404 exists for.
 
