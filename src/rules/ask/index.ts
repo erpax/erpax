@@ -91,7 +91,10 @@ export function bareAsks(cwd: string = process.cwd()): AskReport {
       const decl = m[0]
       if (!/required: true/.test(decl)) continue
       required++
-      if (/defaultValue|readOnly: true/.test(decl)) {
+      // Not asked of a human when: predefined (`defaultValue`), computed and shown (`readOnly: true`), or
+      // computed and hidden (`disabled: true` — the admin never renders it, a hook stamps it). Missing the
+      // last one over-reported: `financial-statements.generatedAt` is auto-stamped and read as a bare ask.
+      if (/defaultValue|readOnly: true|disabled: true/.test(decl)) {
         answered++
         continue
       }

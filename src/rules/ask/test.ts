@@ -35,6 +35,14 @@ describe('rules/ask — a question the law already answers is not a question', (
     rmSync(cwd, { recursive: true, force: true })
   })
 
+  it('nor is a HIDDEN computed value — `disabled: true` is stamped by a hook, never typed', () => {
+    // financial-statements.generatedAt is auto-stamped and disabled; the scan read it as a bare ask
+    const cwd = collection("    { name: 'generatedAt', type: 'date', required: true, admin: { disabled: true } },")
+    expect(bareAsks(cwd).bare).toHaveLength(0)
+    expect(bareAsks(cwd).answered).toBe(1)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
   it('an OPTIONAL field is not an ask — nothing is demanded', () => {
     const cwd = collection("    { name: 'note', type: 'textarea' },")
     const r = bareAsks(cwd)
