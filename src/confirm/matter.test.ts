@@ -49,8 +49,12 @@ describe('confirm/matter — scoped + full gate', () => {
     }
   })
 
-  it('the fast lane runs FIRST — standards is 1.1s and used to sit behind minutes of lint+tests', () => {
-    expect(BUILD_GATE_CHECKS[0]![0]).toBe('standards')
+  // Was 'standards' — the fast lane. `load` now precedes it: does the app BOOT? Every lane after it is a
+  // statement about code that runs, and the corpus currently does NOT load (TDZ at fixed/assets:34). A gate
+  // that checks banners before it checks that the app exists reports green over nothing.
+  it('LANE ZERO asks whether the app loads — every lane after it presumes an answer', () => {
+    expect(BUILD_GATE_CHECKS[0]![0]).toBe('load')
+    expect(BUILD_GATE_CHECKS[1]![0]).toBe('standards') // then the 1.1s check, still ahead of lint+tests
   })
 
   it('folderNameWarnings flags non-one-word segments', () => {

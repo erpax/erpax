@@ -13,6 +13,12 @@ import { runPayloadApprovalCli } from '@/payload/approval'
 import { startProgressHeartbeat } from './progress-heartbeat'
 
 export const GATE_LANES: readonly (readonly [string, string])[] = [
+  // LANE ZERO — does the app LOAD? Every lane below is a statement about code that runs; if it does not,
+  // they are statements about nothing. It currently FAILS (TDZ at fixed/assets:34, [[run]]/load), which is
+  // why it must be first: the twelve gates behind it all report green over a corpus that cannot boot, and
+  // the vitest setup SWALLOWS the boot failure so `test:int` cannot say so either. Automation on an
+  // unloadable corpus produces green lies at machine speed — this lane is the precondition that stops it.
+  ['load', 'pnpm erpax load'],
   ['standards', 'pnpm erpax standards'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],

@@ -154,6 +154,12 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     default: { desc: 'Seal workflow as trinity atom', cmd: `${TSX} src/workflow/seal.ts seal` },
     seal: { desc: 'Seal workflow definition', cmd: `${TSX} src/workflow/seal.ts seal` },
   },
+  load: {
+    default: {
+      desc: 'Does the app BOOT? payload.config loads, every collection registers',
+      cmd: `${TSX} src/run/load/index.ts`,
+    },
+  },
   standards: {
     default: {
       desc: 'Standards banners + catalogue verify',

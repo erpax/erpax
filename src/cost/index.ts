@@ -212,8 +212,19 @@ export const invariantChecks = (checks: number, invariants: number): number =>
 // @audit Conservation Law 62 (coverage) — manual bypass ⇒ ∞ forge path
 // ─────────────────────────────────────────────────────────────────────────────
 
-/** Independent gate axes unsealed manual work must evade to persist (uuid-pure stack). */
-export const CONFIRM_GATE_CHECKS = 8
+/**
+ * Independent gate axes unsealed manual work must evade to persist (uuid-pure stack).
+ *
+ * It read **8**. The gate ran **6**, then **7** once `standards` was added — it was never 8, and it prices
+ * a forge, so the error was a wrong security claim. The law now lives where the gate is
+ * (`[[confirm]]/matter` → `CONFIRM_CHECK_AXES`), whose `.length` is not a number anyone types; this mirrors
+ * it because importing confirm here would add an edge to the 225-file tangle ([[rules]]/cycle). The mirror
+ * is PINNED by `src/cost/bits.test.ts` — it fails the moment an axis is added and this is not updated, which
+ * is exactly how `ERPAX_DIGEST_BITS = 106` survived: nothing contradicted it.
+ *
+ * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length
+ */
+export const CONFIRM_GATE_CHECKS = 7
 
 export interface ManualDevelopmentContext {
   /** Joint corpus coverage ∈ [0,1] — collider product or schema coverage. */

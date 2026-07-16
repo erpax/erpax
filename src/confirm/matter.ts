@@ -130,6 +130,24 @@ export function touchesStandardBanner(files: readonly string[], root: string): b
   return false
 }
 
+/**
+ * The independent axes a write must pass to persist — the LAW, and the only place the count exists.
+ *
+ * [[cost]] prices an unsealed forge by how many gates it must evade together, and that number was TYPED
+ * (`CONFIRM_GATE_CHECKS = 8`) while this gate ran 6 — then 7, the moment `standards` was added. It was never
+ * 8. A count typed beside the thing it counts is the same defect as `ERPAX_DIGEST_BITS = 106`: nobody can
+ * re-derive it, so nothing contradicts it. `CONFIRM_CHECK_AXES.length` is not a number anyone types.
+ */
+export const CONFIRM_CHECK_AXES = [
+  'vitepress',
+  'payload',
+  'md-stray',
+  'phrase-without-diamond',
+  'reference',
+  'prose',
+  'standards',
+] as const
+
 export function folderNameWarnings(files: readonly string[]): string[] {
   const bad = new Set<string>()
   for (const f of files) {
@@ -375,14 +393,21 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
   for (const f of mdStrays) console.error(`   md stray   ${relative(ROOT, f)} — fold into a SKILL.md atom`)
   if (pay.msg) console.error('   ' + pay.msg)
 
-  const ok =
-    vp.ok &&
-    pay.ok &&
-    mdStrays.length === 0 &&
-    phraseGate.length === 0 &&
-    deadRefs.length === 0 &&
-    deadCites.length === 0 &&
-    !staleCatalogue
+  // The axes a write must pass. A LIST, not a boolean chain, because [[cost]] prices a forge by how many
+  // independent gates it must evade — and that number was TYPED (`CONFIRM_GATE_CHECKS = 8`) while the gate
+  // ran 6, then 7 once `standards` was added. A count typed beside the thing it counts drifts the moment
+  // anyone edits the thing: the same defect as ERPAX_DIGEST_BITS. `CONFIRM_CHECK_AXES.length` cannot.
+  // The Record is exhaustive by TYPE, so adding an axis here without a verdict is a compile error.
+  const verdicts: Record<(typeof CONFIRM_CHECK_AXES)[number], boolean> = {
+    vitepress: vp.ok,
+    payload: pay.ok,
+    'md-stray': mdStrays.length === 0,
+    'phrase-without-diamond': phraseGate.length === 0,
+    reference: deadRefs.length === 0,
+    prose: deadCites.length === 0,
+    standards: !staleCatalogue,
+  }
+  const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
   console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
   return ok ? 0 : hook ? 2 : 1
 }
