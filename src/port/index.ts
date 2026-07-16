@@ -10,6 +10,7 @@
  * @see ./SKILL.md — ../diamond/projection — ../quantum/port
  */
 import { readFileSync, readdirSync, type Dirent } from 'node:fs'
+import { execFileSync } from 'node:child_process'
 import { join, relative } from 'node:path'
 import { createHash } from 'node:crypto'
 import { uuid, jcsCanonicalize } from '@/integrity'
@@ -175,7 +176,30 @@ export function erpaxAtomIndex(cwd: string = process.cwd()): Map<string, AtomEnt
   return index
 }
 
-/** One table's port thought — which erpax atom holds it (if any), how it matched, and whether it has matter. */
+/**
+ * Real upstream USAGE — table → row count, read from the live source DB. The decisive signal a schema read
+ * cannot give: a table with **0 rows** was defined and never used, so porting it would invent a domain the
+ * source never had. Unreachable tables are left unknown (absent), never guessed.
+ */
+export function upstreamRowCounts(database: string, tables: readonly string[]): Map<string, number> {
+  const counts = new Map<string, number>()
+  for (const t of tables) {
+    if (!/^[a-z0-9_]+$/.test(t)) continue // only identifiers we parsed ourselves reach the DB
+    try {
+      const out = execFileSync('psql', [database, '-tAc', `select count(*) from ${t}`], {
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'ignore'],
+      })
+      const n = Number(out.trim())
+      if (Number.isFinite(n)) counts.set(t, n)
+    } catch {
+      /* table or DB unreachable — usage stays UNKNOWN, never assumed */
+    }
+  }
+  return counts
+}
+
+/** One table's port thought — which erpax atom holds it (if any), how it matched, its matter, and real usage. */
 export interface PortThought {
   readonly table: string
   readonly columns: number
@@ -184,12 +208,21 @@ export interface PortThought {
   readonly match: 'exact' | 'head' | null
   /** the matched atom carries executable matter (index.ts), not prose alone. */
   readonly implemented: boolean
+  /** rows upstream: 0 = defined but never used; null = usage unknown (no DB). */
+  readonly rows: number | null
+  /** the upstream defined it and never used it — not a gap; porting it would invent. */
+  readonly unused: boolean
   /** ported = an exact atom that actually has matter. A word without logic is NOT ported. */
   readonly covered: boolean
 }
 
-const classifyTable = (t: UpstreamTable, index: ReadonlyMap<string, AtomEntry>): PortThought => {
-  const base = { table: t.table, columns: t.columns }
+const classifyTable = (
+  t: UpstreamTable,
+  index: ReadonlyMap<string, AtomEntry>,
+  rows: ReadonlyMap<string, number>,
+): PortThought => {
+  const n = rows.has(t.table) ? rows.get(t.table)! : null
+  const base = { table: t.table, columns: t.columns, rows: n, unused: n === 0 }
   for (const c of candidateAtoms(t.table)) {
     const e = index.get(c)
     if (e) return { ...base, atom: e.path, match: 'exact', implemented: e.implemented, covered: e.implemented }
@@ -208,6 +241,8 @@ export interface PortManifest {
   readonly gaps: readonly PortThought[]
   /** Gaps where erpax already holds the WORD but not the matter — never mint a new word for these. */
   readonly wordsWithoutMatter: number
+  /** Tables the upstream defined and never used (0 rows) — excluded from gaps; porting them would invent. */
+  readonly unused: number
   readonly skipped: number
   /** true when every wave was READ from its saved thought (unchanged upstream ⊕ corpus). */
   readonly cached: boolean
@@ -223,15 +258,22 @@ export interface PortManifest {
 export function portWaves(
   cwd: string,
   schemaRb: string,
-  opts?: { waves?: number; onWave?: (ordinal: number, itemCount: number) => void },
+  opts?: {
+    waves?: number
+    onWave?: (ordinal: number, itemCount: number) => void
+    /** Real upstream usage (table → rows) from `upstreamRowCounts`. Absent ⇒ usage unknown, nothing assumed. */
+    rows?: ReadonlyMap<string, number>
+  },
 ): PortManifest {
   const all = upstreamTables(schemaRb)
   const tables = all.filter((t) => !isInfra(t.table))
   const atoms = erpaxAtomIndex(cwd)
+  const rows = opts?.rows ?? new Map<string, number>()
   const seal = (s: string): string => createHash('sha256').update(s).digest('hex').slice(0, 16)
   const atomSeal = seal(
     [...atoms.entries()].sort().map(([k, v]) => `${k}:${v.implemented ? 1 : 0}`).join('\n'),
   )
+  const rowSeal = seal([...rows.entries()].sort().map(([k, v]) => `${k}:${v}`).join('\n'))
   const schemaSeal = seal(schemaRb)
   // The generator seal — this module's own source. Without it a classifier change reads a stale thought
   // (decoherence): the key must capture the code the thought depends on, not just its inputs.
@@ -243,18 +285,24 @@ export function portWaves(
   for (let i = 0; i < tables.length; i += size) {
     ordinal++
     const batch = tables.slice(i, i + size)
-    const t = think(`port-wave:${schemaSeal}:${atomSeal}:${genSeal}:${ordinal}`, () => batch.map((tb) => classifyTable(tb, atoms)), cwd)
+    const t = think(
+      `port-wave:${schemaSeal}:${atomSeal}:${rowSeal}:${genSeal}:${ordinal}`,
+      () => batch.map((tb) => classifyTable(tb, atoms, rows)),
+      cwd,
+    )
     if (!t.cached) allCached = false
     thoughts.push(...(t.value as PortThought[]))
     opts?.onWave?.(ordinal, batch.length)
   }
-  const gaps = thoughts.filter((th) => !th.covered)
+  // A table the upstream never used is NOT a gap — porting it would invent a domain the source never had.
+  const gaps = thoughts.filter((th) => !th.covered && !th.unused)
   return {
     waves: ordinal,
     tables: tables.length,
-    covered: thoughts.length - gaps.length,
+    covered: thoughts.filter((th) => th.covered).length,
     gaps,
     wordsWithoutMatter: gaps.filter((g) => g.atom !== null).length,
+    unused: thoughts.filter((th) => th.unused).length,
     skipped: all.length - tables.length,
     cached: allCached,
   }
@@ -263,17 +311,24 @@ export function portWaves(
 if (import.meta.url === `file://${process.argv[1]}`) {
   const first = process.argv[2]
   if (first && first.endsWith('.rb')) {
-    const m = portWaves(process.cwd(), readFileSync(first, 'utf8'), {
+    const schemaRb = readFileSync(first, 'utf8')
+    // Optional 2nd arg = the live source DB; without it usage is unknown and nothing is assumed unused.
+    const database = process.argv[3]
+    const rows = database
+      ? upstreamRowCounts(database, upstreamTables(schemaRb).map((t) => t.table))
+      : undefined
+    const m = portWaves(process.cwd(), schemaRb, {
+      rows,
       onWave: (o, n) => console.log(`port wave ${o} · ${n} tables`),
     })
     console.log(
-      `port — ${m.covered}/${m.tables} ported (${m.skipped} infra skipped) · ${m.gaps.length} gaps, of which ${m.wordsWithoutMatter} are words without matter${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
+      `port — ${m.covered}/${m.tables} ported · ${m.skipped} infra · ${m.unused} defined-but-never-used · ${m.gaps.length} REAL gaps (${m.wordsWithoutMatter} words without matter)${m.cached ? ' · READ from saved thoughts' : ' · derived + sealed'}`,
     )
     for (const g of m.gaps) {
       const where = g.atom
         ? ` — the word exists: [[${g.atom}]]${g.implemented ? ' (implemented, but not this table)' : ' (vocabulary only — fold the matter here, do not mint a new word)'}`
         : ' — no atom at all'
-      console.log(`  gap: ${g.table} (${g.columns} cols)${where}`)
+      console.log(`  gap: ${g.table} (${g.columns} cols, ${g.rows ?? '?'} rows)${where}`)
     }
   } else {
     const [source = 'rails', target = 'payload', atom = 'invoices'] = process.argv.slice(2)

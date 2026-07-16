@@ -270,11 +270,25 @@ Which tables are still gaps is **computed, not eyeballed**. `portWaves(cwd, sche
 - **DRY dedupe** — `candidateAtoms` depluralises each table (`machines→machine`, `work_phases→work/phases`) and matches `erpaxAtomIndex`; ported tables are named and **never re-ported**.
 - **DRY cleaning** — `isInfra` drops framework noise (Solid Queue/Cache/Cable, ActiveStorage, PaperTrail `versions`, dated `_YYYYMMDD` archives) so the manifest is real domain gaps only.
 - **Word vs matter** — a match only counts as ported when the atom carries executable matter (`index.ts`). An atom with a SKILL and no matter is a **word without logic** ([[rules]]) — the vocabulary exists, the port does not.
-- Run: `tsx src/port/index.ts ~/github/ceccec/etrima/db/schema.rb` — prints ported/gaps and whether it READ from saved thoughts.
+- **Real usage decides** — `upstreamRowCounts(db, tables)` reads the live source DB. A table with **0 rows** was defined and never used in 20 years: it is **not a gap**, and porting it would invent a domain the source never had. Without a DB, usage is **unknown** and nothing is assumed.
+- Run: `tsx src/port/index.ts ~/github/ceccec/etrima/db/schema.rb etrima_production` — the DB arg is what makes the manifest true.
 
-**The finding (computed, 2026-07-16): 23/35 ported · 12 gaps — and 10 of the 12 are words without matter.** erpax already holds [[variant]] · [[shipment]] · [[upload]] · `vocabulary/brand` · `vocabulary/contract` · `vocabulary/list` · `vocabulary/member` as **prose naming real upstream tables that were never implemented**. Only `handles` and `stocks` have no atom at all.
+**The finding (computed, 2026-07-16): 23/35 ported · 23 infra · 8 defined-but-never-used · 6 REAL gaps.**
 
-So the upstream gap is **not missing words — it is words that never got their matter**. The fold for each is to give the existing atom its `index.ts` (mined from the real columns, like `machine`), completing its [[trinity]] — **never mint a duplicate word**. That is the DRY cleaning: the vocabulary is already there, waiting.
+Schema alone said 12 gaps; real usage halved it. `brands` · `consumptions` · `handles` · `stock_shipments` · `stocks` · `team_members` are all **0 rows** — the upstream never used them, so `vocabulary/brand` · `vocabulary/member` and friends are words for a domain that never existed. Don't fold matter into them.
+
+The 6 real gaps, and what each actually is:
+
+| table | rows | verdict |
+| --- | --: | --- |
+| `product_variants` | 42 979 | **ported as generator** — [[variant]] holds the expansion algebra; the rows are its output, never copied |
+| `employee_contracts` | 919 | **real gap** — `vocabulary/contract` is the word; fold the matter there |
+| `packing_lists` | 727 | **real gap** — `vocabulary/list` is the word; fold the matter there |
+| `machine_types` | 172 | already inside [[machine]] (`MachineType`); the head-noun hit on a generic `type` atom is noise |
+| `pack_types` | 11 | same generic-`type` noise; trivial |
+| `uploads` | 7 | trivial; [[upload]] is the word |
+
+So the upstream gap is **not missing words — it is words that never got their matter**, and only where the upstream actually has data. The fold is to give the existing atom its `index.ts` mined from real columns (like [[machine]], like [[variant]]), completing its [[trinity]] — **never mint a duplicate word, never port an empty table**.
 
 ## Common mistakes
 - Porting ActiveAdmin per-resource tweaks into bespoke admin React instead of Payload's declarative `admin` config.
