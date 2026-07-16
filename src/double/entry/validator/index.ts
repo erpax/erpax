@@ -1,14 +1,48 @@
 /**
- * DoubleEntryValidator
+ * DoubleEntryValidator — the law an ERP exists to guarantee.
  *
- * Validates double-entry bookkeeping principles:
- * - Debits must equal credits
- * - Account types must be valid for debit/credit direction
- * - All accounts must exist and be active
+ * Validates double-entry bookkeeping: every entry has two sides, and the sides agree.
  *
- * @invariant debits.sum() === credits.sum()
- * @invariant account-type matches debit/credit polarity
+ * The two claims below were once written as `debits.sum() === credits.sum()` and "account-type matches
+ * debit/credit polarity" — with no test beside them ([[rules]]/refutable found this atom holding the
+ * fundamental law of accounting with nothing able to contradict it). Both were false about this code:
+ *
+ * - Equality is not what runs, and it CANNOT be: these are IEEE-754 floats, where 0.1+0.2 ≠ 0.3. The code
+ *   admits a 1-cent tolerance, and that tolerance IS the law. Stating `===` described an implementation
+ *   nobody wrote and hid the real question — what gap posts.
+ * - Polarity is a WARNING, never a refusal: `valid` stays true when a debit-normal account is credited. As
+ *   an "@invariant" it forbade nothing. It is a heuristic, and a real one — a contra-account (see
+ *   ACCOUNT_POLARITY) legitimately inverts, so wrong-looking polarity is a signal, not an error.
+ *
+ * @invariant |Σdebits − Σcredits| ≤ BALANCE_TOLERANCE ⇒ valid (a tolerance over floats, never equality)
+ * @invariant a posting carries exactly one side, non-negative — direction is the column, never the sign
+ * @invariant polarity mismatch ⇒ warning, never error — advisory, because contra-accounts invert
+ *
+ * @standard IAS 1 — an entry balances
+ * @see src/double/entry/validator/test.ts — the proof that refutes each claim above
  */
+
+/**
+ * The gap a posting may carry and still balance. This is the shipped value, preserved deliberately.
+ *
+ * Two reasons a tolerance could exist, and only one of them is true here:
+ *
+ * - FLOAT DRIFT is real but tiny: 0.1+0.2 = 0.30000000000000004, so exact equality over summed float
+ *   amounts is unimplementable. The error is ~ε·Σ|amounts| ≈ 1e-13 for realistic ledgers — TEN ORDERS OF
+ *   MAGNITUDE below a cent. Float drift alone would justify ~1e-9, not 1e-2.
+ * - So the cent is an ACCOUNTING choice, not a numerics one: it absorbs a genuine 1-cent imbalance, of the
+ *   kind that arrives from tax or allocation rounding upstream.
+ *
+ * OPEN — and deliberately not decided here: at MINOR_UNIT the ledger admits an entry that really does not
+ * balance, by one cent, per entry. Whether that is right is an accounting judgement (it hides upstream
+ * rounding bugs; it also unblocks legitimate allocation remainders) and it changes what posts, so it is not
+ * a thing to tighten while adding a test. The value is named so the question can be asked; it is unchanged
+ * so no entry's fate changes in the diff that gave this atom its proof.
+ *
+ * @invariant BALANCE_TOLERANCE ≫ float drift — this bound is an accounting policy, never a numerics fix
+ */
+export const MINOR_UNIT = 0.01
+export const BALANCE_TOLERANCE = MINOR_UNIT
 
 export interface GLPostingLine {
   accountId: string | { id: string }
@@ -108,9 +142,8 @@ export class DoubleEntryValidator {
       totalCredits += credit
     }
 
-    // Check if debits equal credits (within 0.01 cent rounding tolerance)
     const difference = Math.abs(totalDebits - totalCredits)
-    if (difference > 0.01) {
+    if (difference > BALANCE_TOLERANCE) {
       errors.push(
         `Debits ($${totalDebits.toFixed(2)}) do not equal credits ($${totalCredits.toFixed(2)}). Difference: $${difference.toFixed(2)}`
       )
@@ -156,7 +189,11 @@ export class DoubleEntryValidator {
   }
 
   /**
-   * Quick validation: just check debits === credits
+   * Quick balance check — the sides only, skipping polarity and per-line refusals.
+   *
+   * It once read `< 0.01` while validate() refuses on `> 0.01`: the same law stated twice, and already
+   * disagreeing at exactly one cent, where this said unbalanced and validate() posted it. Nothing had ever
+   * contradicted either. Both now read the one bound.
    */
   static validateBalance(postings: GLPostingLine[]): boolean {
     let totalDebits = 0
@@ -167,6 +204,6 @@ export class DoubleEntryValidator {
       totalCredits += posting.creditAmount || 0
     }
 
-    return Math.abs(totalDebits - totalCredits) < 0.01
+    return Math.abs(totalDebits - totalCredits) <= BALANCE_TOLERANCE
   }
 }
