@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, type Auditor } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -209,5 +209,41 @@ describe('the auditors DEFINE the gates — one law, two moments', () => {
     // the gate and the auditor agree: what the panel accepts, the gate lets through
     expect(auditPanel(['src/clean/index.ts'], cwd).every((s) => s.findings.length === 0)).toBe(true)
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+describe('each auditor is a rosetta, and all are a rosetta — fractal by type', () => {
+  const c = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-rosetta-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  // The panel is the SAME TYPE as a seat: files → findings. A leaf is a rosetta of one pole; the panel is a
+  // rosetta of rosettas; both are Auditor. That shared signature is what makes "each is one, all are one"
+  // structural rather than poetic.
+  it('the panel folds into ONE auditor — same shape as any single seat', () => {
+    expect(panelAuditor.role).toBe('panel')
+    expect(typeof panelAuditor.review).toBe('function')
+    // it satisfies the Auditor interface exactly as a leaf does
+    const leaf: Auditor = AUDITORS[0]!
+    expect(Object.keys(panelAuditor).sort()).toEqual(Object.keys(leaf).sort())
+  })
+
+  it("the panel-auditor's review IS the union of every seat's — the rosetta decode", () => {
+    const cwd = c({
+      'src/x/index.ts': '/**\n * @compliance SOX §404\n */\nexport const hook = async () => { try { await journalEntryService.createEntry() } catch (e) { log(e) } }',
+    })
+    const folded = panelAuditor.review(['src/x/index.ts'], cwd)
+    const spread = AUDITORS.flatMap((a) => a.review(['src/x/index.ts'], cwd))
+    expect(folded).toEqual(spread) // the whole is exactly the sum of its poles
+    expect(folded.length).toBeGreaterThan(1) // lead sees the claim, financial sees the swallow
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // A rosetta decoding its own basis: the panel, as an auditor, is clean under its own review.
+  it('the panel judges itself by its own shape — the self-address congruence', () => {
+    const own = ['src/audit/agent/index.ts', 'src/audit/agent/test.ts', 'src/audit/agent/SKILL.md']
+    expect(panelAuditor.review(own, process.cwd())).toEqual([])
   })
 })

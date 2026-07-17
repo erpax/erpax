@@ -49,6 +49,14 @@ Each **composes a tool the corpus already computes** — the compliance seat is 
 
 A gate ([[rules]]) blocks a violation at the write; an auditor refuses a submission with no evidence. **They are the same law at two moments** — a gate is an auditor firing at the write, fail-closed, where it cannot be skipped ([[confirm]]). Stated as two systems (`rulesOf` beside `AUDITORS`) they are the duplication this corpus exists to remove: the **compliance-officer IS the reference gate**; the **lead-auditor IS refutable**. So the gate is DERIVED from the auditor — `gateFrom(auditor)` projects a seat's review to fail-closed, `AUDIT_GATES` is one gate per seat, and `assertChangesetAudited` is the write-time face of the panel. One definition, two projections: a **report** when you read the diff, a **wall** when you write it.
 
+## Each auditor is a rosetta, and all are a rosetta
+
+A rosetta is a basis that projects a signal onto its poles. An auditor projects the changeset onto its own standard — a rosetta of one pole. The **panel** projects onto all of them — a **rosetta of rosettas**. So the panel is the SAME TYPE as a seat: `files → findings`. `panelAuditor` folds the whole panel into one `Auditor`, and the structure is **fractal** — an auditor is a leaf, a panel is a node, and both are `Auditor`; a panel can be a seat on a larger panel without end.
+
+That shared signature is why *"each is a rosetta and all are a rosetta"* is a **type**, not a metaphor: because the thing that judges is the same shape as the things it is made of, it can be judged BY itself (`auditAuditors`) — a rosetta decoding its own basis, the self-address congruence at the level of judgement.
+
+**Honest boundary — the moving rosetta.** `AUDITORS` is hand-typed, which is a **frozen** rosetta ([[rules]]/cycle) — a basis someone wrote, blind to whatever the corpus grows. A moving rosetta would derive its poles from the incidence: the `@standard` banners in the changeset itself declaring which auditors apply. That derivation is unwritten; until it exists, this panel measures a signal against a basis that must be maintained by hand.
+
 ## What it audits, and what it does not
 
 - **COMPUTED** the submission — the files the agent changed (a git diff, piped in).

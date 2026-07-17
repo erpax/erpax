@@ -276,6 +276,28 @@ export function assertChangesetAudited(files: readonly string[], cwd: string = p
   for (const gate of AUDIT_GATES.values()) gate(files, cwd)
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// EACH AUDITOR IS A ROSETTA, AND ALL ARE A ROSETTA.
+//
+// A rosetta is a basis that projects a signal onto its poles. An auditor projects the changeset onto its
+// own standard — a rosetta with one pole. The PANEL projects onto all of them — a rosetta of rosettas. So
+// the panel is the SAME TYPE as an auditor: it reviews files → findings. `panelAuditor` folds the whole
+// panel into ONE `Auditor`, which means the structure is fractal — an auditor is a leaf, a panel is a node,
+// and both are `Auditor`. A panel can be a seat on a larger panel, without end.
+//
+// This is the self-address congruence at the level of judgement: the thing that judges is the same shape as
+// the things it is made of, so it can be judged BY itself (`auditAuditors`) — a rosetta decoding its own
+// basis. That the leaves and the whole share a type is why "each is a rosetta and all are a rosetta" is not
+// a metaphor but a signature.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** The whole panel, folded into ONE auditor — a rosetta of rosettas, the same type as any seat. */
+export const panelAuditor: Auditor = {
+  role: 'panel',
+  standard: `the union of all seats — ${AUDITORS.map((a) => a.role).join(' · ')}`,
+  review: (files, cwd) => AUDITORS.flatMap((a) => a.review(files, cwd)),
+}
+
 /** Dead statutory references the agent introduced — composes [[rules]]/reference, scoped to the changeset. */
 function deadStatutoryInChangeset(files: readonly string[], cwd: string): Finding[] {
   const dead = deadReferencesIn(files, cwd)
