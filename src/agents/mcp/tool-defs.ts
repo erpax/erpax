@@ -214,7 +214,6 @@ import { emergenceCoverage } from '@/emergence'
 import { multiCurrencyService } from '@/multi/currency/service'
 import { enqueueBulkOperation, type BulkFormat, type BulkOperationKind } from '@/bulk/op'
 import { uploadTestArtifacts } from '@/capture/media'
-import * as allCollections from '@/collections'
 import {
   LAW_CATALOG, buildAgentLawProfile, buildAllAgentLawProfiles, checkAgentLawCoverage,
 } from '@/architecture/invariant'
@@ -286,22 +285,24 @@ function resolveCorpusSelfProof(): CorpusSelfProof | undefined {
 }
 
 /**
- * The known Payload collection slugs, computed from the collections module
- * (the SAME `Object.values(allCollections)` the config registers). The bulk
- * tool validates `targetCollection` against this set so an arbitrary slug can
- * never reach `payload.create` (fail-closed; tenant-isolation guard).
+ * The known Payload collection slugs — read from the RUNNING instance, not a static import.
+ *
+ * This was `Object.values(allCollections)` over `import * as allCollections from '@/collections'` — and that
+ * static import was the choke point that stopped erpax booting ([[run]]/load, [[rules]]/cycle): a collection
+ * FACTORY reaching the agent's MCP tool-defs, which imported EVERY collection, which imported the factory,
+ * so `fixed/assets:34` called `createAccountingCollection(...)` at module top level while the factory was
+ * still initialising — TDZ, in every loader. Both routes through the 225-file tangle converged on THIS edge.
+ *
+ * The prior code already knew half of it — "Lazy: tool-defs and @/collections share an import cycle" — and
+ * deferred the USAGE while leaving the static IMPORT, so the edge survived. The fix is to source the slugs
+ * from `req.payload` at call time: the booted config's own collection list is MORE authoritative than a
+ * static import (it is what actually registered), and it removes the edge entirely. The fail-closed
+ * tenant-isolation guard is unchanged — an unknown slug still never reaches `payload.create`; it is only
+ * validated against the running registry instead of a compile-time copy of it.
  */
-let knownCollectionSlugsCache: ReadonlySet<string> | undefined
-/** Lazy — `tool-defs` and `@/collections` share an import cycle; top-level `Object.values` ran before every re-export finished. */
-function knownCollectionSlugs(): ReadonlySet<string> {
-  if (!knownCollectionSlugsCache) {
-    knownCollectionSlugsCache = new Set(
-      (Object.values(allCollections) as Array<{ slug?: unknown }>)
-        .map((c) => c.slug)
-        .filter((s): s is string => typeof s === 'string'),
-    )
-  }
-  return knownCollectionSlugsCache
+function knownCollectionSlugs(req: { payload?: { config?: { collections?: ReadonlyArray<{ slug?: unknown }> } } }): ReadonlySet<string> {
+  const collections = req.payload?.config?.collections ?? []
+  return new Set(collections.map((c) => c.slug).filter((s): s is string => typeof s === 'string'))
 }
 
 /**
@@ -1046,7 +1047,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         // FAIL-CLOSED: never let an arbitrary slug reach payload.create — validate
         // against the computed known-collection set before enqueue (tenant guard).
         const targetCollection = args.targetCollection as string
-        if (!knownCollectionSlugs().has(targetCollection)) {
+        if (!knownCollectionSlugs(req).has(targetCollection)) {
           return json({ ok: false, reason: `unknown targetCollection '${targetCollection}'` })
         }
         const result = await enqueueBulkOperation(
