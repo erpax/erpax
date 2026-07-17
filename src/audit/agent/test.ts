@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -171,5 +171,43 @@ describe('code quality + the panel auditing ITSELF', () => {
   it('every auditor seat has a role and a named standard', () => {
     expect(AUDITORS.map((a) => a.role)).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor'])
     expect(AUDITORS.every((a) => a.standard.length > 20)).toBe(true)
+  })
+})
+
+describe('the auditors DEFINE the gates — one law, two moments', () => {
+  const c = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-gate-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  it('every auditor seat defines exactly one gate', () => {
+    expect([...AUDIT_GATES.keys()]).toEqual(AUDITORS.map((a) => a.role))
+  })
+
+  // A gate throws IFF its auditor finds something — the finding, made blocking. Same standard, at the write.
+  it("the lead-auditor's gate THROWS on a claim with no proof leg", () => {
+    const cwd = c({ 'src/x/index.ts': '/**\n * @compliance SOX §404\n */\nexport const x = 1' })
+    expect(() => AUDIT_GATES.get('lead-auditor')!(['src/x/index.ts'], cwd)).toThrow(/lead-auditor/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('assertChangesetAudited fails closed over EVERY seat', () => {
+    const cwd = c({
+      'src/post/index.ts': '/**\n * @compliance SOX §404\n */\nexport const hook = async () => { try { await journalEntryService.createEntry() } catch (e) { log(e) } }',
+    })
+    expect(() => assertChangesetAudited(['src/post/index.ts'], cwd)).toThrow() // lead OR financial fires
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a clean submission passes the gate the same auditor accepts — one law, two moments', () => {
+    const cwd = c({
+      'src/clean/index.ts': '/**\n * @invariant x > 0\n */\nexport const x = 1',
+      'src/clean/test.ts': 'it("x", () => {})',
+    })
+    expect(() => assertChangesetAudited(['src/clean/index.ts'], cwd)).not.toThrow()
+    // the gate and the auditor agree: what the panel accepts, the gate lets through
+    expect(auditPanel(['src/clean/index.ts'], cwd).every((s) => s.findings.length === 0)).toBe(true)
+    rmSync(cwd, { recursive: true, force: true })
   })
 })

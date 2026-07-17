@@ -45,6 +45,10 @@ Each **composes a tool the corpus already computes** — the compliance seat is 
 
 `auditPanel(changeset)` convenes them all: the same file draws a finding from the lead auditor (an unproven `@compliance SOX §404`) **and** the financial auditor (a swallowed entry) — different findings from different seats, exactly as a real panel reviews one submission.
 
+## The auditors define the gates
+
+A gate ([[rules]]) blocks a violation at the write; an auditor refuses a submission with no evidence. **They are the same law at two moments** — a gate is an auditor firing at the write, fail-closed, where it cannot be skipped ([[confirm]]). Stated as two systems (`rulesOf` beside `AUDITORS`) they are the duplication this corpus exists to remove: the **compliance-officer IS the reference gate**; the **lead-auditor IS refutable**. So the gate is DERIVED from the auditor — `gateFrom(auditor)` projects a seat's review to fail-closed, `AUDIT_GATES` is one gate per seat, and `assertChangesetAudited` is the write-time face of the panel. One definition, two projections: a **report** when you read the diff, a **wall** when you write it.
+
 ## What it audits, and what it does not
 
 - **COMPUTED** the submission — the files the agent changed (a git diff, piped in).

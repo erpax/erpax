@@ -236,6 +236,46 @@ export function auditAuditors(cwd: string = process.cwd()): Finding[] {
   return AUDITORS.flatMap((a) => a.review(own, cwd))
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// THE AUDITORS DEFINE THE GATES.
+//
+// A gate ([[rules]]) blocks a violation at the write; an auditor ([[audit]]/agent) refuses a submission that
+// lacks evidence. They are the SAME LAW at two moments — the gate is the auditor firing at the write, fail-
+// closed, where it cannot be skipped ([[confirm]]). Stated as two systems (rulesOf beside AUDITORS) it is
+// the duplication this whole corpus exists to remove: a compliance-officer IS the reference gate; a lead-
+// auditor IS refutable. So the gate is DERIVED from the auditor, never written beside it — one definition,
+// two projections (a report when you read the diff, a wall when you write it).
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** A gate: the auditor's review, projected to FAIL CLOSED. It throws the auditor's own findings. */
+export type Gate = (files: readonly string[], cwd?: string) => void
+
+/**
+ * The gate an auditor defines — the same standard, at the write instead of the read.
+ *
+ * @invariant a gate throws IFF its auditor finds something — the enforcement is the finding, made blocking
+ */
+export function gateFrom(auditor: Auditor): Gate {
+  return (files, cwd = process.cwd()) => {
+    const findings = auditor.review(files, cwd)
+    if (findings.length === 0) return
+    throw new Error(
+      `✖ ${auditor.role} — ${findings.length} finding(s) · ${auditor.standard}\n${findings
+        .slice(0, 8)
+        .map((f) => `  ${f.file}: ${f.claim}`)
+        .join('\n')}`,
+    )
+  }
+}
+
+/** The gate registry, DEFINED BY the panel — one gate per auditor seat. `rulesOf` is this, made blocking. */
+export const AUDIT_GATES: ReadonlyMap<string, Gate> = new Map(AUDITORS.map((a) => [a.role, gateFrom(a)]))
+
+/** Fail-closed over a changeset: run every gate the auditors define. The write-time face of the panel. */
+export function assertChangesetAudited(files: readonly string[], cwd: string = process.cwd()): void {
+  for (const gate of AUDIT_GATES.values()) gate(files, cwd)
+}
+
 /** Dead statutory references the agent introduced — composes [[rules]]/reference, scoped to the changeset. */
 function deadStatutoryInChangeset(files: readonly string[], cwd: string): Finding[] {
   const dead = deadReferencesIn(files, cwd)
