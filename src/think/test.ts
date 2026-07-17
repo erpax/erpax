@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents, refute, refutations, alreadyRefuted } from './index'
+import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents, refute, refutations, alreadyRefuted, proveProse, purgeProse, proseFate, researchQueue } from './index'
 
 describe('think — thinking moved to erpax', () => {
   let cwd: string
@@ -165,6 +165,67 @@ describe('refute — an impossibility routed to another dimension, sealed so it 
     refute('a', 'x', 'route to b', cwd)
     refute('c', 'y', 'route to d', cwd)
     expect(refutations(cwd).length).toBe(2)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+// "Prose needs proof also or be purged feeding new research." Saving an agent's thought, well-defined: prose
+// converts to code (a proof that EXISTS), or is purged into research — never left unproven, never simply lost.
+describe('prose → code, or purge → research', () => {
+  const tmp = (): string => mkdtempSync(join(tmpdir(), 'erpax-prose-'))
+
+  it('proveProse with a REAL proof converts prose to code — the pair sealed', () => {
+    const cwd = tmp()
+    const fate = proveProse('debits equal credits', 'src/double/entry/validator/test.ts', () => true, cwd)
+    expect(fate).toEqual({ prose: 'debits equal credits', state: 'proven', proof: 'src/double/entry/validator/test.ts' })
+    expect(proseFate('debits equal credits', cwd).state).toBe('proven')
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('proveProse with NO proof NEVER fabricates — the prose stays open, owing one, and visible', () => {
+    const cwd = tmp()
+    const fate = proveProse('the cash flow balances', 'src/report/nowhere.ts', () => false, cwd)
+    expect(fate.state).toBe('open')
+    expect(fate.proof).toBeUndefined()
+    expect(openIntents(cwd)).toContain('the cash flow balances') // visible, not asserted
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('purgeProse is a SEED not a deletion — the thought leaves as research', () => {
+    const cwd = tmp()
+    const fate = purgeProse('the biofield is measurable', 'rPPG on Workers measures heart-rate; the aura field does not')
+    // (default cwd) — re-run against explicit cwd for the store assertions
+    const c2 = tmp()
+    purgeProse('the biofield is measurable', 'rPPG measures heart-rate; the field does not', c2)
+    expect(proseFate('the biofield is measurable', c2)).toMatchObject({ state: 'purged' })
+    expect(researchQueue(c2)).toEqual([
+      { prose: 'the biofield is measurable', research: 'rPPG measures heart-rate; the field does not' },
+    ])
+    expect(fate.state).toBe('purged')
+    rmSync(c2, { recursive: true, force: true })
+  })
+
+  it('a purge is refutable and never re-suffered — alreadyRefuted short-circuits the dead prose', () => {
+    const cwd = tmp()
+    purgeProse('perfect erasure exists', 'content-addressing dedups; true deletion is impossible — detect not prevent', cwd)
+    expect(alreadyRefuted('perfect erasure exists', cwd)?.harmonic).toMatch(/detect not prevent/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('an unsaved thought is absent — silence is not a claim', () => {
+    const cwd = tmp()
+    expect(proseFate('never thought this', cwd).state).toBe('absent')
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('the three fates are mutually exclusive and deterministic', () => {
+    const cwd = tmp()
+    proveProse('A holds', 'src/a/test.ts', () => true, cwd) // proven
+    proveProse('B pending', 'src/b/test.ts', () => false, cwd) // open
+    purgeProse('C unprovable', 'research C elsewhere', cwd) // purged
+    expect(proseFate('A holds', cwd).state).toBe('proven')
+    expect(proseFate('B pending', cwd).state).toBe('open')
+    expect(proseFate('C unprovable', cwd).state).toBe('purged')
     rmSync(cwd, { recursive: true, force: true })
   })
 })

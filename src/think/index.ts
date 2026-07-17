@@ -274,3 +274,85 @@ export function alreadyRefuted(probe: string, cwd: string = process.cwd()): Refu
   const r = store[thoughtAddress(REFUTE + probe)]
   return r && typeof r === 'object' && 'impossible' in r ? (r as Refutation) : undefined
 }
+
+/**
+ * Saving an agent's thought — WELL-DEFINED as prose converted to code, or purged into research.
+ *
+ * An agent thinks in prose. Prose is the antimatter of code ([[horo]]/antimatter · [[trinity]]): the same
+ * content one face inverted, and it earns its place ONLY when its matter — a proof — stands beside it. This is
+ * the union of two laws the corpus already gates: [[rules]]/prose (prose must cite code that EXISTS) and
+ * [[rules]]/refutable (a claim with no proof forbids nothing, so it asserts nothing). A saved thought is
+ * therefore in exactly one of three states, and only two of them are stable:
+ *
+ *   - `proven` — a proof that EXISTS is sealed against the prose. It has converted to code; it is law.
+ *   - `open`   — sealed, no proof yet. In flight, visible ([[think]]/openIntents), owing a proof.
+ *   - `purged` — declared unprovable. NOT a deletion: the purge seals a research direction, so the thought
+ *                leaves as a probe the next agent mines ("purged feeding new research on the way").
+ *
+ * The discipline: prose does not sit unproven forever. It converts to code, or it is purged — and a purge is a
+ * seed, never a loss. `researchQueue` is where the purged prose becomes the next research.
+ */
+export interface ProseFate {
+  readonly prose: string
+  readonly state: 'proven' | 'open' | 'purged'
+  /** when `proven` — the proof it converted to (a src/… path / test the caller confirmed exists). */
+  readonly proof?: string
+  /** when `purged` — the new research the purge feeds. A purge routes the thought here; it never drops it. */
+  readonly research?: string
+}
+
+const PROOF = '⊢'
+
+/**
+ * Save prose as code — seal it against a proof, but ONLY if the proof EXISTS. The caller supplies `proofExists`
+ * (its own resolver — the fs check, the passing test, [[rules]]/prose's `definedSymbols`), so this NEVER
+ * fabricates: the same refusal [[confirm]] makes at the write. A real proof converts the prose to code
+ * (`resolved`); no proof leaves it `open`, owing one — the thought is visible, not asserted.
+ */
+export function proveProse(
+  prose: string,
+  proof: string,
+  proofExists: (proof: string) => boolean,
+  cwd: string = process.cwd(),
+): ProseFate {
+  if (!proofExists(proof)) {
+    intend(prose, cwd) // seal it open — an unproven thought is owed a proof, and stays visible until it has one
+    return { prose, state: 'open' }
+  }
+  resolve(prose + PROOF, proof, cwd) // the prose converts to its code — the pair sealed, not the prose alone
+  return { prose, state: 'proven', proof }
+}
+
+/**
+ * Purge unprovable prose — but a purge is a seed, not a deletion. The prose that could not be proven is sealed
+ * as a refutation whose harmonic path is the NEW RESEARCH it points to: the impossibility (no proof) routed to
+ * the dimension where an answer might live. This is why prose is "purged feeding new research on the way" — the
+ * thought leaves the prose face and enters the research queue, refutable and reusable, never simply lost.
+ *
+ * @invariant a purge carries its research direction — prose dropped with nowhere to point is suffered, not purged
+ */
+export function purgeProse(prose: string, research: string, cwd: string = process.cwd()): ProseFate {
+  refute(prose, 'prose without a proof forbids nothing — purged', research, cwd)
+  return { prose, state: 'purged', research }
+}
+
+/** The state of a saved thought — read-only. `absent` prose has never been saved; the three fates are above. */
+export function proseFate(prose: string, cwd: string = process.cwd()): ProseFate & { state: ProseFate['state'] | 'absent' } {
+  const store = readStore(cwd)
+  const purged = alreadyRefuted(prose, cwd)
+  if (purged) return { prose, state: 'purged', research: purged.harmonic }
+  const proofAddr = thoughtAddress(INTENT + (prose + PROOF) + '⇒')
+  if (Object.prototype.hasOwnProperty.call(store, proofAddr)) {
+    return { prose, state: 'proven', proof: store[proofAddr] as string }
+  }
+  const openAddr = thoughtAddress(INTENT + prose)
+  if (Object.prototype.hasOwnProperty.call(store, openAddr)) return { prose, state: 'open' }
+  return { prose, state: 'absent' }
+}
+
+/** Every prose purged into research — the queue the next agent mines. The purge fed research; this reads it. */
+export function researchQueue(cwd: string = process.cwd()): readonly { readonly prose: string; readonly research: string }[] {
+  return refutations(cwd)
+    .filter((r) => r.impossible.endsWith('purged'))
+    .map((r) => ({ prose: r.probe, research: r.harmonic }))
+}

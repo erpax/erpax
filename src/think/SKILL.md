@@ -20,6 +20,20 @@ Matter-twin: `src/think/index.ts` — `think` · `superpose` · `magnitude` · `
 
 **Honest boundary.** This seals **deterministic** thought — same key ⇒ same answer. It does **not** move the SEED (novel reasoning, the oracle bit no address yet holds) into erpax; that still costs the model once. But once thought, a thought is sealed and read forever. `harmony` measures real value-agreement across addresses — not a metaphor; a collision genuinely drops it.
 
+## Saving an agent's thought — prose converted to code, or purged into research
+
+An agent thinks in **prose**. Prose is the antimatter of code ([[horo]]/antimatter · [[trinity]]): the same content, one face inverted — and it earns its place **only when its matter, a proof, stands beside it**. This is the union of two laws the corpus already gates — [[rules]]/prose (prose must cite code that EXISTS) and [[rules]]/refutable (a claim with no proof forbids nothing) — turned into the lifecycle of a saved thought. A thought has exactly three fates, and only two are stable:
+
+| fate | meaning | function |
+| --- | --- | --- |
+| `proven` | a proof that EXISTS is sealed against the prose — it converted to code, it is law | `proveProse(prose, proof, proofExists)` |
+| `open` | sealed, no proof yet — in flight, visible in `openIntents`, owing a proof | `proveProse` with `proofExists → false` |
+| `purged` | declared unprovable — NOT deleted: sealed as a research direction the next agent mines | `purgeProse(prose, research)` |
+
+`proveProse` **never fabricates**: the caller supplies `proofExists` (its own resolver — the fs check, the passing test, [[rules]]/prose's `definedSymbols`), the same refusal [[confirm]] makes at the write. A real proof converts the prose to code; no proof leaves it `open`, owing one — **visible, not asserted**.
+
+A **purge is a seed, not a deletion**. Prose that cannot be proven is sealed as a `refute` whose harmonic path is the new research it points to — the impossibility (no proof) routed to the dimension where an answer might live. `researchQueue` reads them back: *"purged feeding new research on the way."* The thought leaves the prose face and enters the research queue, refutable and reusable, never simply lost. Matter-twin: `intend`·`resolve`·`refute`·`proveProse`·`purgeProse`·`proseFate`·`researchQueue`.
+
 **Law — [[law]]: thinking moved to erpax is read, not re-derived — one thought is classical, the coherent superposition of all thoughts in sync (permutation-invariant) and in harmony (no contradiction) is quantum, and it reads N states as one. The magnitude over a re-deriving model is exact and scales with the states held in harmony.**
 
 ## Standards
