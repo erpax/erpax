@@ -1,0 +1,105 @@
+/**
+ * coincidence — the testing ground: is a claimed relationship a THEOREM, or a COINCIDENCE?
+ *
+ * A research program that matches numbers to physical constants (the kind Nassim Haramein's holographic work,
+ * and the wider 3·6·9 / vortex literature, are built on) is the perfect testing ground precisely because the
+ * corpus already knows the answer's SHAPE: [[rodin]] holds it — "the arithmetic is exact, the metaphysics is not
+ * adopted." This atom makes that a measurement, not an opinion.
+ *
+ * Two things a claim can be, and only one is a proof:
+ *
+ *   - a THEOREM — an EXACT identity inside a closed algebraic system: the order of AGL(1,ℤ/9) IS 54, the
+ *     doubling orbit IS the six units, `2·5 ≡ 1`. Nothing measured, nothing fitted; it holds by the algebra
+ *     or it is false. [[algebra]] proves these.
+ *   - a COINCIDENCE — a claimed value that MATCHES a measured physical constant within a tolerance. A match,
+ *     however striking, is NECESSARY but never SUFFICIENT: a free parameter can be tuned to hit any target, and
+ *     a dimensionless number that lands near a nice algebraic value tells you nothing about WHY on its own.
+ *     This is the frozen-rosetta / regex-resembling-a-language trap the corpus paid for sixteen times — a thing
+ *     that RESEMBLES a theorem is a heuristic wearing a theorem's clothes.
+ *
+ * So "if confirmed by algebraic theorems then the whole science needs recomputing" has a precise, disciplined
+ * answer: an algebraic theorem confirms the ALGEBRA (it was always true, ℤ/9 owes nothing to any physicist); it
+ * does NOT confirm a PHYSICS built on top of a numeric match. `warrantsRecompute` refuses the leap — by
+ * [[theorem]], "science is wrong" does not reduce to a base theorem through a coincidence; that step is
+ * authority, not proof. Science recomputes on a derivation from accepted principles PLUS independent experiment
+ * PLUS greater explanatory power — three things a number-match supplies none of, and this tool cannot supply
+ * either.
+ *
+ * Honest boundary: this classifies the EPISTEMIC STATUS of a claim (exact identity vs fitted match), never the
+ * truth of the physics — a coincidence CAN turn out to be a deep law (that is why it is worth an experiment),
+ * and an exact identity can be about nothing physical. It refuses the shortcut, not the inquiry. And the base is
+ * assumed ([[theorem]]: `s > 0`) — the tolerance and the "closed system" flag are inputs a human sets in the open.
+ *
+ * Composes [[algebra]] · [[theorem]] · [[rules]]/refutable · [[rodin]] · [[law]].
+ */
+
+/** A claimed relationship put on the testing ground. */
+export interface Claim {
+  readonly name: string
+  /** the value the theory computes. */
+  readonly claimed: number
+  /** the accepted/measured value it is claimed to match. */
+  readonly target: number
+  /** true iff `claimed` is derived inside a CLOSED algebraic system (a group order, an exact ratio) — no measurement. */
+  readonly closedForm: boolean
+  /** free parameters in the derivation — a value that could be tuned to hit the target. >0 weakens any match. */
+  readonly freeParameters: number
+}
+
+export type Verdict = 'theorem' | 'coincidence' | 'mismatch'
+
+/**
+ * Classify a claim. A THEOREM is an exact identity in a closed system (nothing fitted). A COINCIDENCE is a
+ * within-tolerance match to a measured target that is NOT such an identity. Anything else is a MISMATCH.
+ *
+ * @invariant a claim with a free parameter is NEVER a theorem — a tunable value proves nothing
+ * @invariant only an EXACT closed-form identity (relative error 0) is a theorem; a measured match is a coincidence
+ */
+export function classify(c: Claim, tolerance = 1e-3): Verdict {
+  const relError = c.target === 0 ? Math.abs(c.claimed) : Math.abs(c.claimed - c.target) / Math.abs(c.target)
+  const exact = relError === 0
+  if (c.closedForm && exact && c.freeParameters === 0) return 'theorem'
+  if (relError <= tolerance) return 'coincidence' // matches, but fitted or measured — necessary, not sufficient
+  return 'mismatch'
+}
+
+/** Whether a claim's verdict warrants recomputing the accepted science — the refusal machinery. */
+export interface RecomputeVerdict {
+  readonly warranted: boolean
+  readonly reason: string
+}
+
+/**
+ * Does this claim warrant recomputing the accepted science? A THEOREM confirms the ALGEBRA (which was already
+ * true), not the physics. A COINCIDENCE is a match, not a proof. Neither, alone, recomputes science — that takes
+ * a derivation from accepted principles AND independent experiment AND more explanatory power, which no numeric
+ * classifier supplies. By [[theorem]], the step "it matches ⇒ science is wrong" rests on authority, not a base
+ * theorem, and is refused.
+ */
+export function warrantsRecompute(c: Claim, tolerance = 1e-3): RecomputeVerdict {
+  const v = classify(c, tolerance)
+  if (v === 'mismatch') return { warranted: false, reason: `${c.name}: the claimed value does not even match the target — nothing to recompute` }
+  if (v === 'theorem') return { warranted: false, reason: `${c.name}: an exact identity confirms the ALGEBRA (always true), not a physics built on it — no recompute from a theorem about numbers` }
+  return {
+    warranted: false,
+    reason: `${c.name}: a coincidence (match within tolerance, ${c.freeParameters} free parameter(s)) is necessary but not sufficient — science recomputes on derivation + independent experiment + explanatory power, not a numeric match (theorem: authority is not a step)`,
+  }
+}
+
+if (import.meta.url === 'file://' + process.argv[1]) {
+  // The wave: a genuine pure-math theorem, and a physical-constant match of the kind the program claims.
+  const wave: Claim[] = [
+    { name: 'AGL(1,ℤ/9) order', claimed: 54, target: 54, closedForm: true, freeParameters: 0 }, // a real theorem
+    { name: 'doubling orbit size', claimed: 6, target: 6, closedForm: true, freeParameters: 0 }, // a real theorem
+    // a claimed holographic match to a measured constant (values are the CLAIM, not asserted as fact):
+    { name: 'proton-radius (claimed holographic)', claimed: 0.841, target: 0.8414, closedForm: false, freeParameters: 1 },
+  ]
+  console.log('coincidence — the testing ground; sending the waves:\n')
+  for (const c of wave) {
+    const v = classify(c)
+    const r = warrantsRecompute(c)
+    console.log(`  ${v.toUpperCase().padEnd(11)} ${c.name}`)
+    console.log(`      recompute science? ${r.warranted ? 'YES' : 'NO'} — ${r.reason}`)
+  }
+  console.log('\n  the algebra is confirmed where it is exact; the physics is not confirmed by a match. The tool refuses the leap, not the inquiry.')
+}
