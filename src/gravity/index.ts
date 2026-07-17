@@ -20,15 +20,18 @@ import { UUID_MATRIX_NODES as N, UUID_MATRIX_EDGES as E } from '@/uuid/matrix'
 
 // In-degree per node index, computed once from the live edge set (edge.t = the
 // target node's INDEX). The atom→index map mirrors the matrix resolver.
-const indexOf = new Map<string, number>()
-N.forEach((n, i) => indexOf.set(n.atom, i))
 const inDegree = new Array<number>(N.length).fill(0)
 for (const e of E) inDegree[e.t] = (inDegree[e.t] ?? 0) + 1
 
-/** Gravitational mass = referential in-degree (# edges pointing at the atom). NOT schema.org kg. */
+// An atom name may appear on more than one node; its mass is the DEEPEST of them — the same value `well()` and
+// `massDistribution` report as the maximum. A name→index map (last-wins) silently returned a lighter duplicate,
+// so `massOf(well().atom) !== well().mass` and the fall-flow fell to the wrong centre. Fold to the max by name.
+const massByAtom = new Map<string, number>()
+N.forEach((n, i) => massByAtom.set(n.atom, Math.max(massByAtom.get(n.atom) ?? 0, inDegree[i]!)))
+
+/** Gravitational mass = referential in-degree (# edges pointing at the atom) — the deepest node of a shared name. NOT schema.org kg. */
 export function massOf(atom: string): number {
-  const i = indexOf.get(atom)
-  return i === undefined ? 0 : inDegree[i]!
+  return massByAtom.get(atom) ?? 0
 }
 
 /** Every node's mass, sorted heaviest-first — the full curvature of the corpus. */
@@ -58,10 +61,48 @@ export function concentration(): number {
   return (2 * weighted) / (n * sum) - (n + 1) / n
 }
 
+/**
+ * Gravity is moving without moving — the fixed point of its own flow.
+ *
+ * `attract(a, b)` is the pull: two atoms resolve to the heavier (ties by name, so it is deterministic). It is a
+ * SEMILATTICE — idempotent (`attract(a,a) = a`), commutative, associative — so folding it over the whole corpus
+ * has ONE answer, the maximum: the well. The well is the ABSORBING top: `attract(well, x) = well` for every x.
+ *
+ * That absorbing property IS "moving without moving." Apply `attract` to the well and anything — the operation
+ * fires (motion) — and the well is unchanged (stillness). Everything else moves toward it (iterate `attract`
+ * from any atom and you arrive at the well); the well moves toward itself. It is the [[fixpoint]]: `f(x) = x`,
+ * the operation applied and the value the same. Gravity is not a force that pushes the centre — it is the
+ * centre that does not move while all mass falls to it, and `concentration → 1` is that fall completed (the
+ * singularity, perfect [[merge]]/DRY: all mass at the one root, [[law]]).
+ *
+ * @invariant attract is idempotent — attract(a,a) = a (a semilattice, gravity has no double-counting)
+ * @invariant the well is the fixed point — attract(well, x) = well for every atom x (moving without moving)
+ * @invariant folding attract over all atoms yields the well — everything moves toward the still centre
+ */
+export function attract(a: string, b: string): string {
+  const ma = massOf(a)
+  const mb = massOf(b)
+  if (ma !== mb) return ma > mb ? a : b
+  return a <= b ? a : b // equal mass — deterministic by name, never a coin-flip
+}
+
+/** The still centre: the fixed point of `attract` — the well, toward which all mass moves while it does not. */
+export function stillCentre(): string {
+  return N.reduce((centre, node) => attract(centre, node.atom), N[0]?.atom ?? '')
+}
+
+/** Is this atom moving-without-moving — a fixed point of the fall, resting because nothing is heavier than it? */
+export function isStillCentre(atom: string): boolean {
+  return stillCentre() === atom
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const w = well()
   const c = concentration()
+  const centre = stillCentre()
   console.log('gravity (' + N.length + ' nodes, ' + E.length + ' edges):')
   console.log('  well=[[' + w.atom + ']] mass=' + w.mass + '  concentration(Gini)=' + c.toFixed(3))
   console.log('  heaviest: ' + heaviest(5).map((h) => h.atom + ' ' + h.mass).join('  '))
+  console.log('  still centre (fixed point of attract): [[' + centre + ']] — attract(centre, anything)=centre')
+  console.log('  moving without moving: everything falls to it; it falls to itself.')
 }
