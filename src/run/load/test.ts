@@ -29,8 +29,9 @@ describe('run/load — the app under full load', () => {
    * because it meets a different defect first (src/pages). "Decided by accident" was my phrase for having
    * compared coordinates without naming them; the state is exact at each.
    */
-  it('fixed/assets — the one fatal top-level call — fails HERE too, at the same line as esm', async () => {
-    await expect(import('@/fixed/assets')).rejects.toThrow(/createAccountingCollection/)
+  it('fixed/assets — the once-fatal top-level call — now imports cleanly', async () => {
+    const mod = await import('@/fixed/assets')
+    expect(mod).toBeDefined() // was rejects.toThrow(/createAccountingCollection/) — the edge is cut
   }, 60_000)
 })
 
@@ -59,10 +60,13 @@ describe('the verdict carries its coordinate — a claim from nowhere is not a c
     expect(currentLoader()).toBe('vite')
   })
 
-  // The same source, two coordinates, two exact answers — measured, not argued.
-  it('esm and vite disagree about nothing: both fail at fixed/assets:34, each exactly', async () => {
+  // Was red-on-purpose all session, asserting BOTH coordinates fail at fixed/assets:34. They no longer
+  // fail: the tool-defs → collections edge was cut, the init order changed, and the config loads. The test
+  // that pinned the failure is inverted to pin the FIX — the same source, and now it loads from here too.
+  it('the config LOADS — the fixed/assets:34 TDZ is gone, from every coordinate', async () => {
     const v = await bootVerdict()
-    expect(v.loads).toBe(false)
-    expect(v.error).toMatch(/createAccountingCollection/) // identical to `tsx src/run/load/index.ts`
+    expect(v.loads).toBe(true)
+    expect(v.collections).toBeGreaterThan(200)
+    expect(v.error).toBeUndefined()
   }, 120_000)
 })

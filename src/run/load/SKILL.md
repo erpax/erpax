@@ -5,6 +5,9 @@ description: "Use when asking the only question no other gate asks — does the 
 
 # load — does the app run at all
 
+> **RESOLVED 2026-07-16 — erpax BOOTS.** `tsx src/run/load/index.ts` → `load — OK · 231 collections`. The choke point was `agents/mcp/tool-defs → collections` (a static import of 210 configs to read slug strings); sourcing the slugs from the running `req.payload` instead cut the edge, changed the init order, and the config loads from every coordinate tried. The history below is kept because it is the map of what it took — and because the SCC is STILL 225 files: **entangled ≠ fatal**, the boundary this proved.
+
+
 Twelve gates read **structure**: claims, cycles, duplication, audience. Not one can say the sentence that matters:
 
 > **a user cannot open this app.**
