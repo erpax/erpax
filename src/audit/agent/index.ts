@@ -244,6 +244,43 @@ export function truncatedInReport(files: readonly string[], cwd: string = proces
   return out
 }
 
+/**
+ * An UNACKNOWLEDGED proof — the peer-reviewer's finding: a proven control (an atom with a claim AND a test)
+ * that cites NOTHING. A proof in scientific format acknowledges its foundations — the standards it satisfies
+ * (`@standard`/`@rfc`) and the atoms it builds on (`Composes [[…]]`) — the way a paper's references
+ * acknowledge prior work. A theorem with a method and no citations is unsourced: it may be correct, but it
+ * cannot be traced to what it rests on, and an auditor cannot accept a result that acknowledges no method.
+ *
+ * This is the complement of [[conditional]]: that discloses what a proof ASSUMES (its hypotheses); this
+ * demands what a proof BUILDS ON (its acknowledgments). Together they are full scientific honesty — cite
+ * your foundations, disclose your assumptions. The format itself already exists ([[readme]]'s ScientificPaper
+ * — title · abstract · methods · results · references · uuid); this seat enforces that the `references` are
+ * not empty for a proof that makes a claim.
+ */
+export function unacknowledgedProof(files: readonly string[], cwd: string = process.cwd()): Finding[] {
+  const out: Finding[] = []
+  for (const rel of files) {
+    if (!isCode(rel)) continue
+    const abs = join(cwd, rel)
+    let text: string
+    try {
+      text = readFileSync(abs, 'utf8')
+    } catch {
+      continue
+    }
+    if (!proofBeside(abs)) continue // only a PROVEN control is held to acknowledgment — a proof, not a draft
+    const prose = commentsOf(abs, text).join('\n')
+    const claims = prose.match(CLAIM)
+    if (!claims) continue // no theorem to source
+    // acknowledgment = it cites a standard, an RFC, or the atoms it composes — its references
+    const acknowledged = /@standard\s|@rfc\s|@see\s|Composes\s+\[\[/.test(prose)
+    if (!acknowledged) {
+      out.push({ file: rel.replace(/\\/g, '/'), claim: `a proven control makes a claim but acknowledges nothing — no @standard, no Composes; an unsourced theorem`, concern: 'claim-unrefutable' })
+    }
+  }
+  return out
+}
+
 /** The panel — every auditor seat. Add a seat by adding a standard, never by re-scanning the corpus. */
 export const AUDITORS: readonly Auditor[] = [
   {
@@ -270,6 +307,11 @@ export const AUDITORS: readonly Auditor[] = [
     role: 'integrity-auditor',
     standard: 'IAS 1 completeness — a report sums ALL rows; a silent cap is a subset wearing the name of the whole',
     review: (files, cwd) => truncatedInReport(files, cwd),
+  },
+  {
+    role: 'peer-reviewer',
+    standard: 'scientific method — a proof acknowledges its foundations: a proven claim cites its @standard and Composes',
+    review: (files, cwd) => unacknowledgedProof(files, cwd),
   },
 ]
 

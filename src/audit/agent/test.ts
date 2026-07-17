@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, truncatedInReport, type Auditor } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, truncatedInReport, unacknowledgedProof, type Auditor } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -118,7 +118,7 @@ describe('the PANEL — all kinds of auditors, each from their own seat', () => 
     })
     const panel = auditPanel(['src/post/index.ts'], cwd)
     const roles = panel.map((s) => s.role)
-    expect(roles).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor'])
+    expect(roles).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor', 'peer-reviewer'])
     // the lead auditor sees the unproven SOX claim; the financial auditor sees the swallowed JE — DIFFERENT
     // findings on the SAME file, each only from its own seat.
     expect(panel.find((s) => s.role === 'lead-auditor')!.findings.length).toBeGreaterThan(0)
@@ -128,7 +128,7 @@ describe('the PANEL — all kinds of auditors, each from their own seat', () => 
 
   it('a clean submission is accepted by the whole panel', () => {
     const cwd = corpus2({
-      'src/clean/index.ts': '/**\n * @invariant x > 0\n */\nexport const x = 1',
+      'src/clean/index.ts': '/**\n * @invariant x > 0\n *\n * Composes [[law]].\n */\nexport const x = 1',
       'src/clean/test.ts': 'it("x", () => {})',
     })
     const panel = auditPanel(['src/clean/index.ts'], cwd)
@@ -169,7 +169,7 @@ describe('code quality + the panel auditing ITSELF', () => {
   })
 
   it('every auditor seat has a role and a named standard', () => {
-    expect(AUDITORS.map((a) => a.role)).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor'])
+    expect(AUDITORS.map((a) => a.role)).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor', 'peer-reviewer'])
     expect(AUDITORS.every((a) => a.standard.length > 20)).toBe(true)
   })
 })
@@ -202,7 +202,7 @@ describe('the auditors DEFINE the gates — one law, two moments', () => {
 
   it('a clean submission passes the gate the same auditor accepts — one law, two moments', () => {
     const cwd = c({
-      'src/clean/index.ts': '/**\n * @invariant x > 0\n */\nexport const x = 1',
+      'src/clean/index.ts': '/**\n * @invariant x > 0\n *\n * Composes [[law]].\n */\nexport const x = 1',
       'src/clean/test.ts': 'it("x", () => {})',
     })
     expect(() => assertChangesetAudited(['src/clean/index.ts'], cwd)).not.toThrow()
@@ -308,10 +308,59 @@ describe('integrity-auditor — the silent-truncation detector, saved from a thr
     rmSync(cwd, { recursive: true, force: true })
   })
 
-  it('the panel now has FIVE seats, and still audits itself clean', () => {
+  it('the integrity-auditor is a seat, and the panel still audits itself clean', () => {
+    expect(AUDITORS.map((a) => a.role)).toContain('integrity-auditor')
+    expect(auditAuditors()).toEqual([]) // no seat is a hypocrite
+  })
+})
+
+describe('peer-reviewer — every proof must acknowledge its foundations', () => {
+  const c = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-peer-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  // A proven control that claims a theorem but cites NOTHING is unsourced — a result acknowledging no method.
+  it('refuses a proven claim that acknowledges nothing', () => {
+    const cwd = c({
+      'src/x/index.ts': '/**\n * @invariant the ledger balances\n */\nexport const x = 1',
+      'src/x/test.ts': 'it("x", () => {})',
+    })
+    const f = unacknowledgedProof(['src/x/index.ts'], cwd)
+    expect(f).toHaveLength(1)
+    expect(f[0]!.claim).toMatch(/unsourced theorem/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('ACCEPTS a proof that cites a standard — the reference is the acknowledgment', () => {
+    const cwd = c({
+      'src/x/index.ts': '/**\n * @invariant the ledger balances\n * @standard IAS 1\n */\nexport const x = 1',
+      'src/x/test.ts': 'it("x", () => {})',
+    })
+    expect(unacknowledgedProof(['src/x/index.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('ACCEPTS a proof that Composes the atoms it builds on', () => {
+    const cwd = c({
+      'src/x/index.ts': '/**\n * @invariant it holds\n *\n * Composes [[merge]] · [[law]].\n */\nexport const x = 1',
+      'src/x/test.ts': 'it("x", () => {})',
+    })
+    expect(unacknowledgedProof(['src/x/index.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a DRAFT (claim, no test) is not held to acknowledgment — only a proof is peer-reviewed', () => {
+    const cwd = c({ 'src/x/index.ts': '/**\n * @invariant it holds\n */\nexport const x = 1' })
+    expect(unacknowledgedProof(['src/x/index.ts'], cwd)).toHaveLength(0) // no test = not yet a proof
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('SIX seats now, and the panel still audits itself clean', () => {
     expect(AUDITORS.map((a) => a.role)).toEqual([
-      'lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor',
+      'lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor', 'peer-reviewer',
     ])
-    expect(auditAuditors()).toEqual([]) // the fifth seat is no hypocrite either
+    expect(auditAuditors()).toEqual([]) // this atom acknowledges its own foundations
   })
 })
