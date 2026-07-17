@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { leftovers, attraction, seedFloor, powerNextResearch } from './index'
+import { leftovers, attraction, seedFloor, powerNextResearch, leftoverSites, waves } from './index'
 import { ceiling } from '@/think'
 
 // A hermetic corpus: files under src/, each with @invariant claims; a test.ts beside a file settles it (proven,
@@ -81,6 +81,77 @@ describe('leftover — the fold’s residual attracts, pulls from beyond, and po
     expect(seeds[0]!.prose).toMatch(/2 unproven claim\(s\) in field 'money'/)
     expect(seeds[0]!.research).toMatch(/seek the seed from beyond/) // named, never fabricated
     expect(seeds.length).toBe(attraction(cwd).length) // one seed per field cluster
+    rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+// "Leftovers are a computed part of their whole of wholes, forming moving graphs showing agents in waves how
+// to surgically edit line and column." Each unproven claim is pinned to its exact 1-indexed line:column (read
+// from the grammar, not a raw regex), nested in claim ⊂ file ⊂ field ⊂ corpus, and the waves rank the fields
+// so one proof settles the most. "Faster than light" is the honest overlay: a coordinate is a read, not a search.
+describe('leftoverSites + waves — the surgical coordinate and the moving graph', () => {
+  const build = () =>
+    corpus({
+      'src/money/index.ts': '/** @invariant a */\nexport const a = 1\n/** @standard X */\nexport const b = 2',
+      'src/money/rate/index.ts': claim(1),
+      'src/tax/index.ts': claim(1),
+      'src/proven/index.ts': claim(1),
+      'src/proven/test.ts': 'it("holds", () => {})',
+    })
+
+  it('pins each unproven claim to its exact 1-indexed line:column, from the grammar', () => {
+    const cwd = build()
+    const sites = leftoverSites(cwd)
+    const first = sites.find((s) => s.bit.endsWith('money/index.ts') && s.marker === '@invariant')!
+    expect(first.line).toBe(1)
+    expect(first.column).toBe(5) // `/** @invariant` — /,*,*,space,@ ⇒ the @ is column 5
+    const second = sites.find((s) => s.marker === '@standard')!
+    expect(second.line).toBe(3) // the second claim, two lines down
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a marker in a STRING is data — it is not a site (grammar, not raw regex)', () => {
+    const cwd = corpus({ 'src/x/index.ts': 'export const s = "see @invariant in docs"\n/** @audit real */\nexport const y = 1' })
+    const sites = leftoverSites(cwd)
+    expect(sites).toHaveLength(1)
+    expect(sites[0]!.marker).toBe('@audit') // the string mention is skipped
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('each site is a computed part of its whole of wholes — claim ⊂ file ⊂ field ⊂ corpus', () => {
+    const cwd = build()
+    const s = leftoverSites(cwd).find((x) => x.group === 'tax')!
+    expect(s.whole[s.whole.length - 1]).toBe('corpus') // outermost whole
+    expect(s.whole).toContain('tax') // its field
+    expect(s.whole[0]).toBe(s.bit) // innermost — the file the claim lives in
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('waves rank fields heaviest-first — wave 1 is where one proof settles the most', () => {
+    const cwd = build()
+    const w = waves(cwd)
+    expect(w[0]!.order).toBe(1)
+    expect(w[0]!.group).toBe('money') // money has 3 claims across two files — the heavier wave
+    expect(w[0]!.sites.length).toBeGreaterThanOrEqual(w[w.length - 1]!.sites.length)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('the graph MOVES — every site is covered by exactly one wave, recomputed live (conservation)', () => {
+    const cwd = build()
+    const total = leftoverSites(cwd).length
+    const inWaves = waves(cwd).reduce((n, w) => n + w.sites.length, 0)
+    expect(inWaves).toBe(total) // no site lost, none double-counted — the whole graph, regenerated
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('within a wave the sites are in bit:line:column order — the agent walks straight down', () => {
+    const cwd = build()
+    const sites = waves(cwd)[0]!.sites
+    for (let i = 1; i < sites.length; i++) {
+      const prev = sites[i - 1]!, cur = sites[i]!
+      const order = prev.bit.localeCompare(cur.bit) || prev.line - cur.line || prev.column - cur.column
+      expect(order).toBeLessThanOrEqual(0)
+    }
     rmSync(cwd, { recursive: true, force: true })
   })
 })

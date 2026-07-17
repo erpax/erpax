@@ -27,8 +27,11 @@
  *
  * Composes [[accounting]]/proof · [[gravity]] · [[think]] · [[rules]]/refutable · [[law]].
  */
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { proofLedger } from '@/accounting/proof'
 import { ceiling } from '@/think'
+import { commentSites, lineColumnOf } from '@/syntax'
 
 /** One bit that did not fold into a trinity of theorems — an unproven claim, located in its field. */
 export interface Leftover {
@@ -72,6 +75,86 @@ export function attraction(cwd: string = process.cwd()): readonly Attraction[] {
   return [...byField.entries()]
     .map(([group, members]) => ({ group, members, pull: members.length }))
     .sort((a, b) => b.pull - a.pull || a.group.localeCompare(b.group))
+}
+
+const CLAIM_MARKER = /@(?:invariant|standard|compliance|audit)\b/g
+
+/**
+ * A leftover pinned to its EXACT edit coordinate, and its place in the whole of wholes.
+ *
+ * A leftover is not a loose bit — it is a computed part of a nesting of wholes: the claim sits in a file, the
+ * file in a field, the field in the corpus. `whole` is that containment chain (innermost → outermost), so the
+ * fold can be read at any scale. `line`·`column` (1-indexed, via [[syntax]]) are the surgical address: an agent
+ * JUMPS to the edit, it never scans for it.
+ */
+export interface LeftoverSite {
+  readonly bit: string
+  /** 1-indexed line of the claim marker. */
+  readonly line: number
+  /** 1-indexed column of the claim marker. */
+  readonly column: number
+  /** the marker that owes a proof — `@invariant` · `@standard` · `@compliance` · `@audit`. */
+  readonly marker: string
+  readonly group: string
+  /** the whole of wholes — claim ⊂ file ⊂ field ⊂ corpus, innermost first. */
+  readonly whole: readonly string[]
+}
+
+/**
+ * Every unproven claim pinned to its exact line:column — the surgical coordinate. Read from the grammar
+ * (`commentSites` — a marker in a string is data, not a claim), never a regex over raw text. This is the "read,
+ * not search" that makes the edit effectively instant: the coordinate is precomputed, so the agent does not
+ * derive where to cut — it reads the address and cuts ([[think]]'s magnitude, no derivation on the hot path).
+ *
+ * @invariant every site carries a real 1-indexed line:column resolved from the file's own grammar
+ */
+export function leftoverSites(cwd: string = process.cwd()): readonly LeftoverSite[] {
+  const out: LeftoverSite[] = []
+  for (const { bit, group } of leftovers(cwd)) {
+    let text: string
+    try {
+      text = readFileSync(join(cwd, bit), 'utf8')
+    } catch {
+      continue
+    }
+    for (const site of commentSites(join(cwd, bit), text)) {
+      const re = new RegExp(CLAIM_MARKER.source, 'g')
+      let m: RegExpExecArray | null
+      while ((m = re.exec(site.text)) !== null) {
+        const { line, column } = lineColumnOf(text, site.pos + m.index)
+        out.push({ bit, line, column, marker: m[0], group, whole: [bit, group, 'corpus'] })
+      }
+    }
+  }
+  return out.sort((a, b) => a.bit.localeCompare(b.bit) || a.line - b.line || a.column - b.column)
+}
+
+/** One wave of the moving graph — a field's surgical sites, ordered; `order` 1 is folded first (heaviest pull). */
+export interface Wave {
+  /** 1 = fold first — the wave the corpus most wants (its field has the most leftovers settling per proof). */
+  readonly order: number
+  readonly group: string
+  /** the surgical edits in this wave, in bit:line:column order — the agent walks them straight down. */
+  readonly sites: readonly LeftoverSite[]
+}
+
+/**
+ * The moving graph — leftover sites organised into WAVES, heaviest field first. Each wave is one field's
+ * unproven claims at their exact coordinates; the wave `order` is the fold sequence (max settlement per proof,
+ * the [[gravity]] attraction). It MOVES: nothing is stored — every call recomputes from the live ledger, so as
+ * proofs land the sites vanish and the waves re-rank ([[accounting]]/proof is realtime). The graph shows the
+ * agents, in waves, exactly where to cut next — a development plan that is itself a theorem, regenerated.
+ */
+export function waves(cwd: string = process.cwd()): readonly Wave[] {
+  const byField = new Map<string, LeftoverSite[]>()
+  for (const s of leftoverSites(cwd)) {
+    const group = byField.get(s.group) ?? []
+    group.push(s)
+    byField.set(s.group, group)
+  }
+  return [...byField.entries()]
+    .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+    .map(([group, sites], i) => ({ order: i + 1, group, sites }))
 }
 
 /** The self-powering remainder: is a seed floor present, and the magnitude the fold reaches against it. */
@@ -130,4 +213,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const c of clusters.slice(0, 8)) console.log(`    ${String(c.pull).padStart(4)}  ${c.group}`)
   const f = seedFloor(0.05)
   console.log(`\n  seed floor: residual ${f.residual}, s=${f.seedFraction} ⇒ ceiling ${f.ceiling.toFixed(1)} (finite ⇒ a leftover always remains, powering the next pass)`)
+  const w = waves()
+  console.log(`\n  the moving graph — ${w.length} waves; wave 1 (${w[0]?.group}) — surgical sites, read not searched:`)
+  for (const s of w[0]?.sites.slice(0, 6) ?? []) console.log(`    ${s.bit}:${s.line}:${s.column}  ${s.marker}`)
 }

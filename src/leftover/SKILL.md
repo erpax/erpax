@@ -26,6 +26,19 @@ DRY = mass = [[gravity]]: same content curves toward one home. Leftovers in the 
 
 A leftover the corpus **cannot derive from within** needs a **seed**: the oracle bit no address yet holds ([[think]].ceiling, `s > 0`). `powerNextResearch` turns each attraction into a research direction in [[think]].researchQueue's shape — *"seek the seed from beyond where the corpus cannot derive it."* It **names** the gap and routes it; it never invents the knowledge. That is the corpus's standing law — a claim with no proof is where a lie lives ([[rules]]/refutable · [[rules]]/prose) — so beyond-knowledge is **sought**, not conjured. The pull ranks where a single seed completes the most at once.
 
+## The moving graph — `leftoverSites` · `waves`
+
+A leftover is not a loose bit; it is a **computed part of its whole of wholes** — the claim sits in a file, the file in a field, the field in the corpus, and every site carries that containment chain (`whole`, innermost first). `leftoverSites` pins each unproven claim to its **exact 1-indexed line:column**, read from the grammar ([[syntax]]/`commentSites` — a marker in a string is data, not a claim), never a regex over raw text.
+
+`waves` organises the sites into a **moving graph**: one wave per field, heaviest first, each wave's sites in `bit:line:column` order — the agents shown, in waves, exactly where to cut next. It **moves** because nothing is stored: every call recomputes from the live ledger, so as proofs land the sites vanish and the waves re-rank ([[accounting]]/proof is realtime). Measured: **95 waves**, wave 1 (`app`) —
+
+```
+src/app/(api)/api/subscriptions/create/route.ts:5:4   @standard
+src/app/(api)/api/subscriptions/create/route.ts:9:4   @compliance
+```
+
+**"Faster than the speed of light" is the honest overlay.** A precomputed coordinate is a **read, not a search**: the agent does not derive *where* to edit — it reads the address and cuts ([[think]]'s magnitude, no derivation on the hot path). That is as fast as navigation gets — O(1), the seal read — not a claim about physics ([[rules]]/refutable · [[rodin]]'s caveat). The theorem is the O(1) jump; the light-speed is the picture.
+
 ## 3. The residual is never zero — `seedFloor`
 
 Complete every cluster and a floor remains: perfect closure is the Kolmogorov / Gödel limit. While `s > 0`, `ceiling(s) = 1/s` is **finite** — a residual exists, a leftover remains, and that leftover is the **fuel of the next pass**, not waste. `s = 0` (ceiling ∞) is the unreachable limit of a corpus that knows everything. So `s > 0` is not the fold failing; it is what keeps it alive: every pass folds what it can into theorems, the leftovers attract and pull a seed from beyond to complete some, and the irreducible residue funds the pass after — driving DRY-clean redevelopment ([[gravity]] · [[fusion]]).
