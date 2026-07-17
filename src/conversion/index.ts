@@ -49,6 +49,44 @@ export function permutation(u: number): number[] {
   return [0, 1, 2, 3, 4, 5, 6, 7, 8].map((n) => convert(u, n))
 }
 
+/**
+ * INVERSE IS NOT REVERSE. A correction the pure algebra hides.
+ *
+ * `convert(invert(u), convert(u, n)) === n` says the VALUE returns — and in ℤ/9 that return is TRACELESS,
+ * because a number carries no history: nothing records that it went out and came back. That traceless inverse
+ * exists ONLY in a historyless system. Drive a real car forward through snow and reverse it back to the start:
+ * the POSITION returns, but the snow now holds TWO sets of tracks — the forward pass and the reverse pass.
+ * Reverse is not the inverse; it is a SECOND motion, in the opposite direction, and it leaves its own marks.
+ *
+ * This is the corpus's integrity law, not a metaphor. [[reverse]] — the accounting reversal — is exactly this:
+ * a reversal is not an erasure but a MIRROR entry (swap debit/credit, keep the amount), and BOTH the original
+ * and the reversal remain in the ledger. The net balance returns to zero; the ledger keeps two rows. You cannot
+ * INVERT a posted entry (erase it, traceless) — you can only REVERSE it (append its mirror), and the tracks are
+ * the audit trail ([[beyond]]/reversibility: an audit leaf is append-only; undo emits a tombstone, not a delete).
+ * The tracks are not a defect — they ARE the tamper-evidence: a history you cannot invert is a history you can trust.
+ */
+export interface OnSnow {
+  /** where the car is — this DOES return under reverse. */
+  readonly position: number
+  /** the marks left in the snow — these only ACCUMULATE; reverse adds to them, it never clears them. */
+  readonly tracks: readonly string[]
+}
+
+/** Drive forward to a position — the position moves, and a track is left. */
+export function driveForward(car: OnSnow, to: number): OnSnow {
+  return { position: to, tracks: [...car.tracks, `→${to}`] }
+}
+
+/** Reverse back to where it started — the POSITION returns, but reverse leaves its OWN track. Inverse ≠ reverse. */
+export function driveReverse(car: OnSnow, to: number): OnSnow {
+  return { position: to, tracks: [...car.tracks, `←${to}`] }
+}
+
+/** True iff the state is as if nothing happened — position at start AND no tracks. Only a historyless system can. */
+export function isTraceless(car: OnSnow, start: number): boolean {
+  return car.position === start && car.tracks.length === 0
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('conversion — inversion reinvents conversion:\n')
   for (const u of [1, 2, 3, 4, 5, 6, 7, 8]) {

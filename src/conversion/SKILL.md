@@ -26,7 +26,19 @@ This holds **only** for the reversible conversions — the units. The non-units 
 - `invert(u)` — the reinvented inverse conversion, or `null` where it collapses.
 - **tested**: `convert(invert(u), convert(u, n)) === n` for every conversion — inversion undoes conversion.
 
-**Law — [[law]]: a conversion is a bijection (multiplication by a unit), and inversion reinvents conversion — the inverse of a conversion is a conversion, from the unit group closed under inverse. It holds exactly for the reversible; a lossy conversion (the axis {3,6,9}, the one-way fold) collapses information and has no inverse to reinvent — which is why irreversibility is the corpus's tamper-cost, not a defect.**
+## Inverse is not reverse — reverse leaves tracks (the car on snow)
+
+A correction the pure algebra hides. `convert(invert(u), convert(u, n)) === n` says the **value** returns — and in ℤ/9 that return is **traceless**, because a number carries no history. That traceless inverse exists **only** in a historyless system.
+
+Drive a real car forward through snow and reverse it back to the start: the **position** returns, but the snow now holds **two** sets of tracks — the forward pass and the reverse pass. **Reverse is not the inverse**; it is a *second* motion, in the opposite direction, and it leaves its own marks. `driveForward` then `driveReverse` returns the position and leaves `['→5','←0']` — never `[]`.
+
+This is the corpus's integrity law, not a metaphor:
+
+- [[reverse]] — the accounting reversal — is exactly this: a reversal is not an erasure but a **mirror entry** (swap debit/credit, keep the amount), and **both** the original and the reversal stay in the ledger. The net balance returns; the ledger keeps two rows.
+- You cannot **invert** a posted entry (erase it, traceless) — you can only **reverse** it (append its mirror). [[beyond]]/reversibility makes this explicit: an audit leaf is append-only, undo emits a **tombstone**, not a delete.
+- The tracks are **not a defect — they ARE the tamper-evidence**: a history you cannot invert is a history you can trust (the corpus's design limit: no true erasure).
+
+**Law — [[law]]: a conversion is a bijection (multiplication by a unit), and inversion reinvents conversion — the inverse of a conversion is a conversion, from the unit group closed under inverse. But INVERSE IS NOT REVERSE: the traceless inverse exists only in historyless ℤ/9; in any system with a record, you can only REVERSE (a mirror entry), which returns the value and leaves its own tracks. A lossy conversion (the axis {3,6,9}, the one-way fold) has no inverse to reinvent — and that irreversibility, and the tracks a reversal leaves, are the corpus's tamper-cost, not a defect.**
 
 ## Standards
 
