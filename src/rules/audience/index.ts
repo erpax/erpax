@@ -60,6 +60,11 @@ export const ROLE_CONCERN: Readonly<Record<string, readonly string[]>> = {
   finance: ['IAS-7', 'IAS 7', 'ASC-230', 'ISO-4217'],
   'payroll-officer': ['IAS 19', 'IAS-19', 'ASC-710', 'Кодекс на труда'],
   hr: ['Кодекс на труда', 'ILO-', 'ISO-30414'],
+  // super-admin holds the security posture — the latest ISO/IEC 27000 family. Mapped here (it was the
+  // unmapped role the audience boundary named) so [[coverage]] computes which controls are PROVEN and which
+  // are the security tools still to build. 27001/27002 are heavily cited (182× A.5.23 tenant-isolation);
+  // 27017 · 27018 · 27701 are declared and UNCITED — the computed gap, not an imagined roadmap.
+  'super-admin': ['ISO-27001', 'ISO-27002', 'ISO/IEC-27017', 'ISO/IEC-27018', 'ISO/IEC-27701', 'GDPR', 'ISO-27005'],
 } as const
 
 /** A claim standing on a reader's surface with nothing able to contradict it. */

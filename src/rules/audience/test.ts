@@ -87,3 +87,14 @@ describe('audience — a claim is addressed to someone', () => {
     rmSync(cwd, { recursive: true, force: true })
   })
 })
+
+// super-admin holds the ISO 27000 security posture — mapped so coverage COMPUTES the security-tool gap
+// (27017 cloud · 27018 PII · 27701 privacy · 27005 risk are declared and unimplemented) rather than
+// leaving it an invisible hole (the audience boundary: the map covered only 8 of 14 roles).
+describe('the security posture is disclosed — super-admin holds the ISO 27000 family', () => {
+  it('maps super-admin to the latest ISO security standards', () => {
+    expect(ROLE_CONCERN['super-admin']).toContain('ISO-27001')
+    expect(ROLE_CONCERN['super-admin']).toContain('ISO/IEC-27017') // cloud — the corpus runs on Workers
+    expect(ROLE_CONCERN['super-admin']).toContain('ISO/IEC-27701') // privacy information management
+  })
+})
