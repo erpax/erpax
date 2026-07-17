@@ -20,6 +20,7 @@ Note the last row. The others **over**-reported; the cycle pattern **under**-rep
 
 - **`commentsOf`** — a comment is where prose lives; everything else is **data**. A `//` inside a string literal is not a comment, a `/*` inside a regex literal is not a comment, a URL's `//` in a template literal is not a comment. The scanner knows, because it is the thing that tokenises them. Measured against the regex it replaces, across 6,208 files: that pattern **invented 70** `src/…` citations the compiler says are not in comments at all — a path inside a CLI command string, an asset path in code.
 - **`boundNames`** — every declaration form at once. This is the question [[rules]]/prose answered with `/export (function|const)/`, calling `class`, `interface`, `type` and every local declaration fabricated: **1,261 false positives, 40% of the corpus**. Each patch removed one class and left the next.
+- **`commentSites`** — the same grammar as `commentsOf`, but keeping each comment's **byte offset**. Paired with **`lineColumnOf`** (a pure, exact newline count → 1-indexed line/column), it resolves the exact **line:column** of a claim marker inside a comment. A coordinate is a *read*, not a search — an agent jumps to the surgical edit, never scans for it ([[leftover]]'s waves).
 
 ## Why one atom
 

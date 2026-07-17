@@ -42,6 +42,20 @@ const sourceOf = (file: string, text: string): ts.SourceFile =>
  * @invariant every real comment is returned exactly once, in source order
  */
 export function commentsOf(file: string, text: string): string[] {
+  return commentSites(file, text).map((c) => c.text)
+}
+
+/** A comment WITH its byte offset — the raw material for an exact line/column ([[leftover]] surgical sites). */
+export interface CommentSite {
+  readonly pos: number
+  readonly text: string
+}
+
+/**
+ * Every real comment WITH its start offset, in source order. Same grammatical fact as `commentsOf` — a `//`
+ * inside a string is data, not a comment — but it keeps the `pos` so a caller can resolve an exact line:column.
+ */
+export function commentSites(file: string, text: string): readonly CommentSite[] {
   const src = sourceOf(file, text)
   const out: { pos: number; text: string }[] = []
   const seen = new Set<number>()
@@ -58,7 +72,29 @@ export function commentsOf(file: string, text: string): string[] {
     ts.forEachChild(n, visit)
   }
   visit(src)
-  return out.sort((a, b) => a.pos - b.pos).map((c) => c.text)
+  return out.sort((a, b) => a.pos - b.pos)
+}
+
+/**
+ * The 1-indexed line and column of a byte offset — editor coordinates. Pure newline count, exact: line and
+ * column both start at 1, a `\n` opens the next line. The surgical address an agent jumps to, never searches for.
+ *
+ * @invariant line and column are 1-indexed — offset 0 is line 1, column 1
+ * @invariant a newline increments the line and resets the column to 1
+ */
+export function lineColumnOf(text: string, offset: number): { readonly line: number; readonly column: number } {
+  let line = 1
+  let column = 1
+  const end = Math.max(0, Math.min(offset, text.length))
+  for (let i = 0; i < end; i += 1) {
+    if (text[i] === '\n') {
+      line += 1
+      column = 1
+    } else {
+      column += 1
+    }
+  }
+  return { line, column }
 }
 
 /**

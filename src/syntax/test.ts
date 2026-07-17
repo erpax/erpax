@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { commentsOf, boundNames, atomPath } from './index'
+import { commentsOf, commentSites, lineColumnOf, boundNames, atomPath } from './index'
 
 const f = 'x.ts'
 
@@ -72,5 +72,43 @@ describe('syntax — what the grammar says, not what a pattern guesses', () => {
       const names = boundNames(f, "import { imported } from '@/x'\nclass K { m() {} p = 1 }")
       for (const n of ['imported', 'K', 'm', 'p']) expect(names).toContain(n)
     })
+  })
+})
+
+// commentSites keeps the byte offset commentsOf discards — the raw material for an exact line:column, so an
+// agent jumps to the surgical edit instead of searching for it (the leftover atom's waves).
+describe('commentSites + lineColumnOf — the exact address of prose', () => {
+  it('commentSites returns each comment with its byte offset, in source order', () => {
+    const text = 'const a = 1\n/** @invariant x */\nexport const b = 2'
+    const sites = commentSites('f.ts', text)
+    expect(sites).toHaveLength(1)
+    expect(sites[0]!.text).toContain('@invariant')
+    expect(sites[0]!.pos).toBe(text.indexOf('/**')) // the real offset, not a guess
+  })
+
+  it('a // inside a string is data — commentSites does not return it (same grammar as commentsOf)', () => {
+    const text = 'const s = "http://not-a-comment"\n// real one'
+    const sites = commentSites('f.ts', text)
+    expect(sites).toHaveLength(1)
+    expect(sites[0]!.text).toBe('// real one')
+    expect(commentSites('f.ts', text).map((c) => c.text)).toEqual(commentsOf('f.ts', text)) // one grammar
+  })
+
+  it('lineColumnOf is 1-indexed — offset 0 is line 1, column 1', () => {
+    expect(lineColumnOf('abc', 0)).toEqual({ line: 1, column: 1 })
+    expect(lineColumnOf('abc', 2)).toEqual({ line: 1, column: 3 })
+  })
+
+  it('a newline opens the next line and resets the column', () => {
+    const text = 'line1\nline2\n  line3'
+    expect(lineColumnOf(text, text.indexOf('line2'))).toEqual({ line: 2, column: 1 })
+    expect(lineColumnOf(text, text.indexOf('line3'))).toEqual({ line: 3, column: 3 }) // two-space indent
+  })
+
+  it('composes — the exact line:column of a claim marker inside a comment', () => {
+    const text = 'export const a = 1\n\n/**\n * @invariant debits === credits\n */\nexport const b = 2'
+    const site = commentSites('f.ts', text)[0]!
+    const markerOffset = site.pos + site.text.indexOf('@invariant')
+    expect(lineColumnOf(text, markerOffset)).toEqual({ line: 4, column: 4 }) // ` * @invariant` — col 4
   })
 })
