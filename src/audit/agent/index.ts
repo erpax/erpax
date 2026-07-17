@@ -31,6 +31,7 @@
  * Composes [[rules]]/refutable · [[syntax]] · [[audit]] · [[law]].
  */
 import ts from 'typescript'
+import { createHash } from 'node:crypto'
 import { readFileSync, existsSync } from 'node:fs'
 import { join, dirname, relative } from 'node:path'
 import { commentsOf } from '@/syntax'
@@ -151,6 +152,50 @@ export function swallowedInMutation(files: readonly string[], cwd: string = proc
   return out
 }
 
+/**
+ * A function body that appears IDENTICALLY in two changed files — the quality auditor's finding, and a
+ * theorem not a heuristic: same content ⇒ same address ([[merge]]), so a collision is copy, not resemblance.
+ * This was the `dupscan` throwaway that found the ten-fold audit leaf and the `relation` merge; saved here,
+ * because a quality auditor composing a deleted script is the evidence-with-no-control this atom refuses.
+ */
+export function duplicateBodies(files: readonly string[], cwd: string = process.cwd()): Finding[] {
+  const bodies = new Map<string, { file: string; name: string }[]>()
+  for (const rel of files) {
+    if (!isCode(rel)) continue
+    let text: string
+    try {
+      text = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue
+    }
+    const src = ts.createSourceFile(rel, text, ts.ScriptTarget.ESNext, true)
+    const walk = (n: ts.Node): void => {
+      const body =
+        (ts.isFunctionDeclaration(n) || ts.isMethodDeclaration(n) || ts.isArrowFunction(n) || ts.isFunctionExpression(n)) && n.body
+          ? n.body.getText()
+          : undefined
+      if (body) {
+        const norm = body.replace(/\s+/g, ' ').trim()
+        if (norm.length >= 120) {
+          const name = 'name' in n && n.name ? n.name.getText() : '(anon)'
+          const addr = createHash('sha256').update(norm).digest('hex').slice(0, 16)
+          bodies.set(addr, [...(bodies.get(addr) ?? []), { file: rel.replace(/\\/g, '/'), name }])
+        }
+      }
+      ts.forEachChild(n, walk)
+    }
+    walk(src)
+  }
+  const out: Finding[] = []
+  for (const group of bodies.values()) {
+    if (new Set(group.map((g) => g.file)).size > 1) {
+      const where = group.map((g) => `${g.file}:${g.name}`).join(' = ')
+      for (const g of group) out.push({ file: g.file, claim: `identical body duplicated: ${where}`, concern: 'claim-unrefutable' })
+    }
+  }
+  return out
+}
+
 /** The panel — every auditor seat. Add a seat by adding a standard, never by re-scanning the corpus. */
 export const AUDITORS: readonly Auditor[] = [
   {
@@ -168,7 +213,28 @@ export const AUDITORS: readonly Auditor[] = [
     standard: 'ISO-19011:2018 §6.4 — a statutory citation must lead to its implementation',
     review: (files, cwd) => deadStatutoryInChangeset(files, cwd),
   },
+  {
+    role: 'quality-auditor',
+    standard: 'ISO/IEC 25010 §5.6 maintainability — DRY: a body copied is a law stated twice, free to drift',
+    review: (files, cwd) => duplicateBodies(files, cwd),
+  },
 ]
+
+/**
+ * THE PANEL AUDITS ITSELF — an auditor that fails its own standard is not credible.
+ *
+ * `rules/prose` blocked its own SKILL; `rules/cycle`'s first version missed the cycle it was written for.
+ * A panel is only trustworthy if it survives its own review: every auditor's atom must pass every SEAT — a
+ * proof leg beside its claims, no swallowed error, no dead statute, no duplicated body. This convenes the
+ * panel on the auditors' OWN source and returns anything a seat catches in a fellow seat (or itself). Empty
+ * is the invariant; non-empty names a hypocrite.
+ *
+ * @invariant no auditor enforces a standard its own code violates
+ */
+export function auditAuditors(cwd: string = process.cwd()): Finding[] {
+  const own = ['src/audit/agent/index.ts', 'src/audit/agent/test.ts', 'src/audit/agent/SKILL.md']
+  return AUDITORS.flatMap((a) => a.review(own, cwd))
+}
 
 /** Dead statutory references the agent introduced — composes [[rules]]/reference, scoped to the changeset. */
 function deadStatutoryInChangeset(files: readonly string[], cwd: string): Finding[] {

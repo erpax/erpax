@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -118,7 +118,7 @@ describe('the PANEL — all kinds of auditors, each from their own seat', () => 
     })
     const panel = auditPanel(['src/post/index.ts'], cwd)
     const roles = panel.map((s) => s.role)
-    expect(roles).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer'])
+    expect(roles).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor'])
     // the lead auditor sees the unproven SOX claim; the financial auditor sees the swallowed JE — DIFFERENT
     // findings on the SAME file, each only from its own seat.
     expect(panel.find((s) => s.role === 'lead-auditor')!.findings.length).toBeGreaterThan(0)
@@ -134,5 +134,42 @@ describe('the PANEL — all kinds of auditors, each from their own seat', () => 
     const panel = auditPanel(['src/clean/index.ts'], cwd)
     expect(panel.every((s) => s.findings.length === 0)).toBe(true)
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+describe('code quality + the panel auditing ITSELF', () => {
+  const c = (files) => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-quality-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  // The QUALITY auditor: a body copied verbatim into two files is a law stated twice, free to drift — the
+  // ten-fold audit leaf, the customers/vendors merge. A theorem (same hash ⇒ same body), not resemblance.
+  it('the quality auditor refuses an identical body in two files', () => {
+    const body =
+      'export function f() {\n  const a = 1; const b = 2; const c = a + b; const d = c * 100; const e = d - a + b * c\n  return e + a - b + c * a + d - e + a * b * c * d + e\n}'
+    const cwd = c({ 'src/a/index.ts': body, 'src/b/index.ts': body.replace('function f', 'function g') })
+    const dup = duplicateBodies(['src/a/index.ts', 'src/b/index.ts'], cwd)
+    expect(dup.length).toBeGreaterThan(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a unique body draws no quality finding', () => {
+    const cwd = c({ 'src/a/index.ts': 'export function f() {\n  return 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1\n}' })
+    expect(duplicateBodies(['src/a/index.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // THE RECURSION. An auditor that fails its own standard is not credible. rules/prose blocked its own
+  // SKILL; rules/cycle missed the cycle it was written for. The panel must survive its own review — every
+  // seat run against the auditors' OWN source, and clean.
+  it('the panel is not a hypocrite — it passes every one of its own seats', () => {
+    expect(auditAuditors()).toEqual([]) // against the LIVE auditor source, in the real repo
+  })
+
+  it('every auditor seat has a role and a named standard', () => {
+    expect(AUDITORS.map((a) => a.role)).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor'])
+    expect(AUDITORS.every((a) => a.standard.length > 20)).toBe(true)
   })
 })

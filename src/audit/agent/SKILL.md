@@ -35,6 +35,11 @@ The lead auditor demands evidence. A real audit is a **panel**, and each seat fi
 | **lead-auditor** | ISO-19011 §6.4 | a claim with no proof leg beside it |
 | **financial-auditor** | IAS 1 | a posting that books a journal entry and **swallows** the failure — recorded as done while the entry silently did not |
 | **compliance-officer** | ISO-19011 §6.4 | a statutory citation the agent introduced that leads nowhere |
+| **quality-auditor** | ISO/IEC 25010 §5.6 | a function body copied verbatim into two files — a law stated twice, free to drift |
+
+## The panel audits itself — no auditor is a hypocrite
+
+An auditor that fails its own standard is not credible. [[rules]]/prose blocked its own SKILL; [[rules]]/cycle's first version missed the cycle it was written for. `auditAuditors()` convenes every seat on the auditors' **own** source and asserts it is clean — a proof leg beside every claim, no swallowed error, no dead statute, no duplicated body. It is empty against the live panel, which is the only thing that makes the panel's refusals credible: it holds itself to what it holds the agent to.
 
 Each **composes a tool the corpus already computes** — the compliance seat is [[rules]]/reference scoped to the changeset; the financial seat is the swallowed-JE detector that **found the posting-hook batch as a throwaway probe and is now saved**, because an auditor that composes a deleted script is itself a control with no evidence. A new seat is a new standard, never a new scan.
 
