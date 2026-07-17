@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, truncatedInReport, unacknowledgedProof, type Auditor } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, truncatedInReport, unacknowledgedProof, hollowProof, type Auditor } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -362,5 +362,48 @@ describe('peer-reviewer — every proof must acknowledge its foundations', () =>
       'lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor', 'peer-reviewer',
     ])
     expect(auditAuditors()).toEqual([]) // this atom acknowledges its own foundations
+  })
+})
+
+describe('hollowProof — crossing the "form not truth" boundary', () => {
+  const c = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-hollow-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  // The trial-balance case: a test that only asserts the thing is a function.
+  it('flags a test that only checks existence — a credit with no behaviour', () => {
+    const cwd = c({ 'src/a/test.ts': 'it("x", () => { expect(typeof generateTrialBalance).toBe("function") })' })
+    const f = hollowProof(['src/a/test.ts'], cwd)
+    expect(f).toHaveLength(1)
+    expect(f[0]!.claim).toMatch(/proves no behaviour/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('ACCEPTS a behavioural test — toEqual exercises the result', () => {
+    const cwd = c({ 'src/a/test.ts': 'it("x", () => { expect(sum([1,2])).toEqual(3) })' })
+    expect(hollowProof(['src/a/test.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // THE FALSE POSITIVE THAT CAUGHT ME. toHaveBeenCalledWith IS behavioural — it verifies an interaction. My
+  // first detector missed it and flagged dunningJob (13 such assertions). The 16th self-refutation, pinned.
+  it('does NOT flag toHaveBeenCalledWith — an interaction assertion is behavioural', () => {
+    const cwd = c({ 'src/a/test.ts': 'it("x", () => { expect(mock.update).toHaveBeenCalledWith({ id: 1 }) })' })
+    expect(hollowProof(['src/a/test.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('does NOT flag rejects.toThrow — an async behavioural assertion', () => {
+    const cwd = c({ 'src/a/test.ts': 'it("x", async () => { await expect(fn()).rejects.toThrow(/nope/) })' })
+    expect(hollowProof(['src/a/test.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a non-test file is never a hollow proof', () => {
+    const cwd = c({ 'src/a/index.ts': 'export const x = 1' })
+    expect(hollowProof(['src/a/index.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
   })
 })

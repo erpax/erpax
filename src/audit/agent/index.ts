@@ -281,6 +281,38 @@ export function unacknowledgedProof(files: readonly string[], cwd: string = proc
   return out
 }
 
+/**
+ * A HOLLOW proof — a test whose assertions are ALL existence-checks (`toBeDefined`, `typeof`, `toBe(
+ * 'function')`) with no behavioural assertion. It credits the ledger and proves nothing — the trial balance
+ * had exactly one (`expect(typeof generateTrialBalance).toBe('function')`).
+ *
+ * This crosses the boundary every other seat stops at — "a proof EXISTS, not that it is correct". It does
+ * not close it: it proves the test asserts BEHAVIOUR, never that the behaviour is the CLAIMED one (a test can
+ * exercise the wrong thing). That next edge is named, not hidden — it is the honest target, not a disguise.
+ *
+ * The detector caught its AUTHOR first: the initial pattern missed `toHaveBeenCalledWith`, so it flagged a
+ * genuine behavioural test (jobs/dunningJob, 13 interaction assertions) as hollow. The measurement lied
+ * before the tree did — the corpus is ~99.9% behavioural (2 of 1398, one a type atom). Distrust the
+ * measurement before the tree, even here.
+ */
+const BEHAVIOURAL = /\.toBe\((?!\s*['"]function['"])|toEqual\(|toMatch\(|toThrow\(|toHaveLength\(|toContain\(|toBeGreaterThan|toBeLessThan|toBeCloseTo|toMatchObject|toHaveBeenCalled|toHaveProperty|rejects\.|resolves\./
+export function hollowProof(files: readonly string[], cwd: string = process.cwd()): Finding[] {
+  const out: Finding[] = []
+  for (const rel of files) {
+    if (!/(?:^|[/.])test\.tsx?$/.test(rel)) continue // only a TEST can be a hollow proof
+    let text: string
+    try {
+      text = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue
+    }
+    if ([...text.matchAll(/expect\(/g)].length === 0) continue // no assertions is not this finding
+    if (BEHAVIOURAL.test(text)) continue // it exercises behaviour — a real credit
+    out.push({ file: rel.replace(/\\/g, '/'), claim: `a test with only existence-checks (typeof/toBeDefined) — it credits the ledger and proves no behaviour`, concern: 'claim-unrefutable' })
+  }
+  return out
+}
+
 /** The panel — every auditor seat. Add a seat by adding a standard, never by re-scanning the corpus. */
 export const AUDITORS: readonly Auditor[] = [
   {
