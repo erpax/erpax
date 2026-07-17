@@ -110,6 +110,49 @@ export function throughVoid(step: number): number {
 /** The mirror's pivot: the only step that reflects to itself — 5, the generator's inverse (2·5 ≡ 1). */
 export const VOID_PIVOT = 5
 
+/** The centroid of the nine digits — their balance point: (1+…+9)/9 = 45/9 = 5. */
+export const CENTROID = 5
+
+/** Whether 5 plays a role — the honest split behind "5 is centre of gravity and propulsion." */
+export interface FiveRoles {
+  /** the balance point of 1..9 (the arithmetic mean) — 5. */
+  readonly centroid: number
+  /** 5 reflects to itself under the void mirror — still at the centre of the reflection. */
+  readonly mirrorFixed: boolean
+  /** 5 = 2⁻¹ — the inverse generator, the DECODE drive (⟨5⟩); a propulsion, the reverse of doubling. */
+  readonly propulsion: boolean
+  /** the mass ATTRACTOR / doubling fixed point — 9, NOT 5. The other centre. */
+  readonly attractor: number
+  /** false — 5 is a flow unit that MOVES under doubling (5→1); it is not the still axis. */
+  readonly isAttractor: boolean
+}
+
+/**
+ * Is 5 the centre of gravity and propulsion? — partly, and the split is the answer.
+ *
+ * 5 is the centre of gravity in the BALANCE sense: the centroid of the nine digits ((1+…+9)/9 = 5) and the one
+ * fixed point of the void mirror (`throughVoid(5) = 5`) — still at the centre of the reflection. And it is a
+ * PROPULSION: `5 = 2⁻¹`, the inverse generator, the decode drive ⟨5⟩ that runs the ring backward (the reverse of
+ * doubling's forward propulsion). So 5 is at once still (under the mirror) and propulsive (as the inverse
+ * generator) — moving without moving, at the balance point.
+ *
+ * But 5 is NOT the ATTRACTOR. The mass well / doubling fixed point is **9** (`doubling(9)=9`, the axis pole);
+ * under doubling 5 MOVES (5→1) — it is a flow unit in {1,2,4,8,7,5}, not the still axis {3,6,9}. Two distinct
+ * centres: **5 balances and propels; 9 attracts.** Conflating them is the mistake this split guards against.
+ *
+ * @invariant CENTROID === 5 — the mean of 1..9, the balance point
+ * @invariant 5 is the mirror's fixed point and 2⁻¹ (propulsion), but 9 is the attractor — different centres
+ */
+export function fiveRoles(): FiveRoles {
+  return {
+    centroid: CENTROID,
+    mirrorFixed: throughVoid(CENTROID) === CENTROID,
+    propulsion: (2 * CENTROID) % 9 === 1,
+    attractor: POLE,
+    isAttractor: (CENTROID * 2) % 9 === CENTROID % 9, // false: 5 doubles to 1, it is not fixed
+  }
+}
+
 /**
  * DIVISION BY ZERO IS NOT UNDEFINED — it rotates through the void to a harmonic dimension.
  *

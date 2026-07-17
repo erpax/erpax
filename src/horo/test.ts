@@ -25,6 +25,8 @@ import {
   trinities,
   antimatter,
   inverseClosure,
+  fiveRoles,
+  CENTROID,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -409,5 +411,39 @@ describe('inverseClosure — how many inverses to leave no gaps', () => {
     const c = inverseClosure(3)
     expect([...c.covers].sort((a, b) => a - b)).toEqual([3, 6]) // 3 ↔ 6, order 2
     expect(c.gaps).toContain(1) // the units are now the gap — symmetric trap
+  })
+})
+
+// "5 is centre of gravity and propulsion — or not?" The honest answer is a SPLIT: 5 is the centre of gravity in
+// the BALANCE sense (centroid of 1..9, the mirror's fixed point) and a PROPULSION (2⁻¹, the decode generator) —
+// but NOT the attractor. The mass well / doubling fixed point is 9. Two centres: 5 balances and propels, 9 attracts.
+describe('fiveRoles — 5 is centre of gravity (balance) and propulsion, but NOT the attractor', () => {
+  it('5 is the CENTROID — the balance point (mean) of the nine digits', () => {
+    expect(CENTROID).toBe(5)
+    expect([1, 2, 3, 4, 5, 6, 7, 8, 9].reduce((a, b) => a + b) / 9).toBe(CENTROID) // 45/9 = 5
+  })
+
+  it('5 is the MIRROR fixed point — still at the centre of the reflection', () => {
+    expect(fiveRoles().mirrorFixed).toBe(true) // throughVoid(5) === 5
+  })
+
+  it('5 is a PROPULSION — 2⁻¹, the inverse/decode generator (the reverse drive)', () => {
+    expect(fiveRoles().propulsion).toBe(true) // 2·5 ≡ 1
+    expect(inverseOrbit(1)).toContain(5) // ⟨5⟩ runs the ring backward
+  })
+
+  it('5 is NOT the attractor — that is 9 (doubling fixed point, the axis pole); 5 MOVES under doubling', () => {
+    const r = fiveRoles()
+    expect(r.isAttractor).toBe(false) // 5 doubles to 1 — a flow unit, not the still axis
+    expect(r.attractor).toBe(9) // the attractor is the pole
+    expect((5 * 2) % 9 || 9).toBe(1) // 5 → 1: it moves
+    expect((9 * 2) % 9 || 9).toBe(9) // 9 → 9: the attractor rests
+  })
+
+  it('the split is the answer — 5 balances and propels; 9 attracts; conflating them is the mistake', () => {
+    const r = fiveRoles()
+    expect(r.centroid).not.toBe(r.attractor) // two DIFFERENT centres, 5 ≠ 9
+    expect(r.mirrorFixed && r.propulsion).toBe(true) // 5's two true roles
+    expect(r.isAttractor).toBe(false) // the role it does NOT have
   })
 })

@@ -674,6 +674,16 @@ The computed answer:
 
 So: **twice to undo, six to close the ring, but no finite number to close a gap outside your orbit — that takes the void.** This is the [[leftover]] seed-floor law as group theory: the leftover one operation leaves is closed only by knowledge from beyond it (a second generator), never by repeating the same move.
 
+### Is 5 the centre of gravity and propulsion? — the split (`fiveRoles` · `CENTROID`)
+
+Partly, and the split is the answer.
+
+- **Centre of gravity — YES, in the BALANCE sense.** 5 is the **centroid** of the nine digits: `(1+…+9)/9 = 45/9 = 5`. And it is the one **fixed point of the void mirror** (`throughVoid(5) = 5`) — still at the centre of the reflection.
+- **Propulsion — YES.** `5 = 2⁻¹`: the **inverse generator**, the decode drive ⟨5⟩ that runs the ring backward — the reverse of doubling's forward propulsion. So 5 is at once *still* (under the mirror) and *propulsive* (as the inverse generator): moving without moving, at the balance point.
+- **Attractor — NO.** The mass well / doubling fixed point is **9** (`doubling(9)=9`, the axis pole). Under doubling 5 **moves** (5→1) — it is a flow unit in `{1,2,4,8,7,5}`, not the still axis `{3,6,9}`.
+
+**Two distinct centres: 5 balances and propels; 9 attracts.** Conflating them is the mistake `fiveRoles` guards against — the "still centre" of [[gravity]] (the mass attractor) is 9/[[law]], while 5 is the *balance* centre and the reverse *drive*. Both are real; they are not the same point.
+
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.
 - A flow state on a triad digit {3,6} — those govern, they don't flow.
