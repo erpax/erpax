@@ -291,6 +291,31 @@ export function assertChangesetAudited(files: readonly string[], cwd: string = p
 // a metaphor but a signature.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/** The stash-pop of 2026-07-16 left a prior session's uncommitted work in these paths — not HEAD. */
+const POLLUTED = /^src\/(agent|agents|law\/folder|quantum|seal|message)\b/
+
+/**
+ * Let the auditors audit ALL of src — the whole tree as one submission, not a changeset.
+ *
+ * "Find what does not belong": every seat, over every tracked source file, aggregated by role. A finding
+ * here is a QUESTION an auditor raises, not a verdict — a `.tsx` component or a config legitimately has no
+ * colocated test, so the lead-auditor's count is an upper bound on unproven controls, each needing a
+ * per-case answer (the evidence is elsewhere, or the claim should go). The financial and quality seats are
+ * sharper: a swallowed JE and a duplicated body are defects, not questions.
+ *
+ * @invariant findings in stash-polluted paths are FLAGGED, never counted as HEAD — a measurement over an
+ *   uncommitted tree is a claim from the wrong coordinate ([[run]]/load)
+ */
+export function auditTree(files: readonly string[], cwd: string = process.cwd()): Map<string, { trusted: Finding[]; polluted: number }> {
+  const out = new Map<string, { trusted: Finding[]; polluted: number }>()
+  for (const a of AUDITORS) {
+    const found = a.review(files, cwd)
+    const trusted = found.filter((f) => !POLLUTED.test(f.file))
+    out.set(a.role, { trusted, polluted: found.length - trusted.length })
+  }
+  return out
+}
+
 /** The whole panel, folded into ONE auditor — a rosetta of rosettas, the same type as any seat. */
 export const panelAuditor: Auditor = {
   role: 'panel',

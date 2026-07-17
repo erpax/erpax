@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, type Auditor } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, type Auditor } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -245,5 +245,31 @@ describe('each auditor is a rosetta, and all are a rosetta — fractal by type',
   it('the panel judges itself by its own shape — the self-address congruence', () => {
     const own = ['src/audit/agent/index.ts', 'src/audit/agent/test.ts', 'src/audit/agent/SKILL.md']
     expect(panelAuditor.review(own, process.cwd())).toEqual([])
+  })
+})
+
+describe('auditTree — let the auditors audit ALL of src', () => {
+  const c = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-tree-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  it('aggregates every seat over the whole file set', () => {
+    const cwd = c({ 'src/x/index.ts': '/**\n * @compliance SOX §404\n */\nexport const x = 1' })
+    const tree = auditTree(['src/x/index.ts'], cwd)
+    expect([...tree.keys()]).toEqual(AUDITORS.map((a) => a.role))
+    expect(tree.get('lead-auditor')!.trusted.length).toBeGreaterThan(0) // an unproven control
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  // A measurement over an uncommitted tree is a claim from the wrong coordinate — findings in the
+  // stash-polluted paths are flagged, never counted as HEAD.
+  it('flags findings in stash-polluted paths instead of counting them', () => {
+    const cwd = c({ 'src/agent/index.ts': '/**\n * @invariant x\n */\nexport const x = 1' })
+    const tree = auditTree(['src/agent/index.ts'], cwd)
+    expect(tree.get('lead-auditor')!.trusted).toHaveLength(0) // src/agent is polluted
+    expect(tree.get('lead-auditor')!.polluted).toBeGreaterThan(0)
+    rmSync(cwd, { recursive: true, force: true })
   })
 })
