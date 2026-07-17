@@ -22,6 +22,7 @@ import {
   horoStateBeforeChange,
   inverseOrbit,
   divThroughVoid,
+  trinities,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -294,5 +295,44 @@ describe('divThroughVoid — an impossibility with a harmonic path', () => {
   })
   it('it IS the void rotation — same operation, named for what it inverts', () => {
     for (const n of [1, 2, 4, 8, 7, 5]) expect(divThroughVoid(n)).toBe(throughVoid(n))
+  })
+})
+
+// "The rosetta is the moving double torus as east west north south trinities." The provable core: the three
+// trinities are the mod-3 residue classes, and doubling (east, ⟨2⟩) swaps the two flow trinities and fixes
+// the axis — E↔W moves, N-S holds. The torus geometry is a faithful overlay; the group action is the theorem.
+describe('trinities — east/west flow swaps, north/south axis holds', () => {
+  const { flowEast, flowWest, axis } = trinities()
+
+  it('the three trinities are the mod-3 residue classes of 1..9', () => {
+    expect([...flowEast].sort((a, b) => a - b)).toEqual([1, 4, 7])
+    expect([...flowWest].sort((a, b) => a - b)).toEqual([2, 5, 8])
+    expect([...axis].sort((a, b) => a - b)).toEqual([3, 6, 9])
+  })
+
+  it('they PARTITION 1..9 — every step is in exactly one trinity', () => {
+    const all = [...flowEast, ...flowWest, ...axis].sort((a, b) => a - b)
+    expect(all).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9])
+  })
+
+  const dbl = (s: number[]) => s.map((x) => (x * 2) % 9 || 9).sort((a, b) => a - b)
+  const set = (s: number[]) => JSON.stringify([...s].sort((a, b) => a - b))
+
+  // THE THEOREM: doubling swaps the two flow trinities and fixes the axis.
+  it('doubling (east ⟨2⟩) SWAPS the flow trinities — E ↔ W moves', () => {
+    expect(set(dbl(flowEast))).toBe(set(flowWest)) // 2·{1,4,7} = {2,5,8}
+    expect(set(dbl(flowWest))).toBe(set(flowEast)) // 2·{2,5,8} = {1,4,7}
+  })
+
+  it('doubling FIXES the axis — N-S holds', () => {
+    expect(set(dbl(axis))).toBe(set(axis)) // 2·{3,6,9} = {3,6,9}
+  })
+
+  // The "moving double torus": two counter-rotating loops. ⟨2⟩ east and ⟨5⟩ west traverse the flow in
+  // opposite directions (proven by inverseOrbit), about the fixed axis — encode/decode around a still spine.
+  it('the two directions are counter-rotating — ⟨5⟩ west reverses ⟨2⟩ east', () => {
+    const east = orbitOf(1) // 1,2,4,8,7,5
+    const west = inverseOrbit(1) // 1,5,7,8,4,2
+    expect(west).toEqual([east[0], ...east.slice(1).reverse()])
   })
 })

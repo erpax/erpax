@@ -229,6 +229,31 @@ export function doublingOrbits(): number[][] {
   return orbits.sort((a, b) => a.length - b.length)
 }
 
+/**
+ * The THREE TRINITIES — the residue classes of ℤ/9ℤ mod 3, a partition and a theorem:
+ *
+ *   {1,4,7}  ·  {2,5,8}   the two FLOW trinities (the doubling ring, split)
+ *   {3,6,9}               the AXIS trinity (the still spine, 3·6·9)
+ *
+ * This is what "east · west · north · south trinities" names, and it is provable: doubling (⟨2⟩, EAST) SWAPS
+ * the two flow trinities and FIXES the axis —
+ *
+ *   2·{1,4,7} = {2,5,8}   2·{2,5,8} = {1,4,7}   2·{3,6,9} = {3,6,9}
+ *
+ * So the flow oscillates E↔W under the map while the axis holds N-S — the "moving double torus" is two
+ * counter-rotating loops (⟨2⟩ east / ⟨5⟩ west, [[merge]]'s encode/decode) about a fixed spine. The GROUP
+ * STRUCTURE here is the theorem (the mod-3 classes, the doubling permutation, tested); the TORUS geometry and
+ * the compass reading are a faithful overlay onto it, named as convention — never asserted as fact, the
+ * numerology law this corpus already carries ([[rules]]/refutable · rodin's caveat).
+ *
+ * @invariant the three trinities partition 1..9 — every step is in exactly one
+ * @invariant doubling swaps the two flow trinities and fixes the axis — E↔W moves, N-S holds
+ */
+export function trinities(): { readonly flowEast: number[]; readonly flowWest: number[]; readonly axis: number[] } {
+  const cls = (r: number): number[] => [r, r + 3, r + 6].map((x) => (x % 9) || 9)
+  return { flowEast: cls(1), flowWest: cls(2), axis: cls(0) }
+}
+
 /** Which circuit a step sits on — the flow can never take it off this one. */
 export function orbitOf(step: number): number[] {
   const n = (((Number(step) % 9) + 9) % 9) || 9

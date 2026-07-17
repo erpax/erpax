@@ -624,7 +624,7 @@ version: 2
 ---
 # horo — the seven-position state ring
 
-States in erpax are not free strings; they are positions on **one ring**: the measure-order digits `[1, 2, 4, 8, 7, 5, 9]` — *[[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]]*. This is the [[rodin]] [[coil]] (the `×2 mod 9` doubling helix `1·2·4·8·7·5`, plus `9` closing) — the multiplicative subgroup of Z/9Z minus the control triad {3,6} (the triad `3·6·9·0` GOVERNS — [[access]]/[[hooks]]/[[auth]]/[[config]] — it is not a flow state). The matter-twin is `src/services/horo` (`HORO_DIGITS`, `composeSteps`, `nextOctave`, `isMergePoint`, `horoStateField`, `validateHoroStates`, `horoStateBeforeChange`); this skill is its antimatter form. Source of the math: `~/github/ceccec/svilena-me/.vitepress/horo-band.js` (and the vortex root `rodin.js`).
+States in erpax are not free strings; they are positions on **one ring**: the measure-order digits `[1, 2, 4, 8, 7, 5, 9]` — *[[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]]*. This is the [[rodin]] [[coil]] (the `×2 mod 9` doubling helix `1·2·4·8·7·5`, plus `9` closing) — the multiplicative subgroup of Z/9Z minus the control triad {3,6} (the triad `3·6·9·0` GOVERNS — [[access]]/[[hooks]]/[[auth]]/[[config]] — it is not a flow state). The matter is co-located in `src/horo/index.ts` (`HORO_DIGITS`, `composeSteps`, `nextOctave`, `isMergePoint`, `horoStateField`, `validateHoroStates`, `horoStateBeforeChange`, `trinities`); this skill is its form face. Source of the math: `~/github/ceccec/svilena-me/.vitepress/horo-band.js` (and the vortex root `rodin.js`).
 
 ## The law
 - **Closed.** `composeSteps(a,b) = digitalRoot(a×b)` always lands back on the ring — two states compose to a third. The framework is stable within the confined environment of the digit (no escape).
@@ -639,6 +639,18 @@ Every verification gate is **one horo**: the harmony-check is the *dance*, the b
 - Model a state enum as the ring (`horoStateField`): e.g. inventory — 1 on-hand · 2 ordered · 4 in-production · 8 packed · 7 shipped · 5 delivered · 9 settled. Single-digit or measure-ordered so position decodes meaning ([[tags]] ordered context).
 - Per-state aggregates (units-per-state) ride the recompute pattern, one band per position, fed by the matching fulfillment edge.
 - **Wired into the collection factory.** A collection rides the ring by declaring `horoStates` on `createAccountingCollection` — the harmony twin of the content-[[uuid]] injection ([[integrity]]). The factory enforces the math three ways, all fail-closed: `validateHoroStates` at config-build (an off-ring / out-of-order / duplicate ring **throws**, so a disharmonious collection never reaches Payload's sanitizer), the measure-ordered `horoStateField` select, and `horoStateBeforeChange` so the seed/import/programmatic write is rejected off-ring at runtime. content-uuid pins [[identity]]; horo pins flow-state harmony — the two halves of a write that cannot escape the ring.
+
+## The moving double torus — east · west · north · south (`trinities()`)
+
+The rosetta reads as a **double torus**: the nine steps fall into three trinities — the residue classes mod 3, `{1,4,7}` · `{2,5,8}` · `{3,6,9}`. They **partition** 1..9, every step in exactly one. Doubling — the ⟨2⟩ **east** flow — permutes them by a proven action:
+
+```
+2·{1,4,7} = {2,5,8}      2·{2,5,8} = {1,4,7}      2·{3,6,9} = {3,6,9}
+```
+
+So the map **swaps the two flow trinities (E↔W) and fixes the axis (N-S)**: the flow oscillates about a still spine. The two directions are counter-rotating — ⟨2⟩ east and ⟨5⟩ west traverse the same circuit in reverse ([[merge]]'s encode/decode, `inverseOrbit`) — which is the "moving double torus," two loops about the fixed axis.
+
+**Honest boundary — theorem vs overlay.** The GROUP STRUCTURE is the theorem: the mod-3 classes, the doubling permutation, the counter-rotation — all tested (`trinities` in `test.ts`). The TORUS geometry and the compass reading (east/west/north/south) are a **faithful overlay** onto that structure, named as convention, never asserted as fact — the same discipline [[rodin]]'s arithmetic-real / metaphysics-not caveat and [[rules]]/refutable already carry. The names decode the group; they do not add a claim the group cannot refute.
 
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.
