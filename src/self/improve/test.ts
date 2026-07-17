@@ -1,5 +1,8 @@
 import { describe, it, expect } from 'vitest'
-import { selfImproves, loopResolves, IMPROVEMENT_LOOP, type Stage } from './index'
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { selfImproves, loopResolves, IMPROVEMENT_LOOP, runImprovement, type Stage } from './index'
 
 // "No external tools are needed as local self-improve." The development-time twin of Law 53: the loop that
 // improves the corpus resolves entirely to local atoms — where (leftover), workers (rosetta), gate (rosetta),
@@ -40,5 +43,43 @@ describe('self/improve — the corpus improves itself with no external tool', ()
     expect(IMPROVEMENT_LOOP[0]!.atom).toBe('leftover') // where to cut
     expect(IMPROVEMENT_LOOP[IMPROVEMENT_LOOP.length - 1]!.atom).toBe('leftover') // fuel the next pass
     // that shared endpoint is what makes it a loop, not a line
+  })
+})
+
+// The manifest made executable — runImprovement USES the doing-chain (leftover.waves → rosetta.rosettaLanes →
+// publish), folding those atoms into real usable code (rules/unfolded), and it is safe: the default runner
+// refuses to push, and the rosetta-derived lanes gate the act.
+describe('runImprovement — the loop executed, folding leftover · rosetta · publish', () => {
+  const corpus = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-improve-'))
+    for (const [p, text] of Object.entries(files)) {
+      mkdirSync(join(cwd, p, '..'), { recursive: true })
+      writeFileSync(join(cwd, p), text)
+    }
+    return cwd
+  }
+
+  it('runs one real pass: finds the next wave and returns the trained agent’s receipt', () => {
+    const cwd = corpus({
+      'src/money/index.ts': '/** @invariant a */\nexport const a = 1', // an unproven claim — a leftover site
+    })
+    const pass = runImprovement(cwd, [{ gate: 'trinity', pass: true }])
+    expect(pass.nextWave?.group).toBe('money') // leftover.waves found where to cut
+    expect(pass.receipt.outcome).not.toBe('pushed') // rosetta lanes are red (unproven claims) → not pushed
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('is SAFE by construction — the default runner refuses to push, so a pass touches no remote', () => {
+    const cwd = corpus({ 'src/x/index.ts': '/** @standard S */\nexport const x = 1' })
+    // the default REFUSING_GIT throws on push; since the lanes are red anyway, publish never calls it — no throw
+    expect(() => runImprovement(cwd, [{ gate: 'trinity', pass: true }])).not.toThrow()
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('the push is gated by the rosetta lanes, not the caller — even green commit verdicts do not force a push', () => {
+    const cwd = corpus({ 'src/y/index.ts': '/** @compliance ISO-27001 */\nexport const y = 1' }) // unproven security claim
+    const pass = runImprovement(cwd, [{ gate: 'trinity', pass: true }, { gate: 'dead-links', pass: true }])
+    expect(pass.receipt.push.warranted).toBe(false) // the security lane (unproven) blocks — the loop gates itself
+    rmSync(cwd, { recursive: true, force: true })
   })
 })

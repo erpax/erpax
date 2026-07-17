@@ -28,6 +28,10 @@
  */
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
+import { waves, type Wave } from '@/leftover'
+import { rosettaLanes } from '@/rosetta'
+import { type GateVerdict } from '@/decide'
+import { publish, type GitRunner, type PublishReceipt } from '@/publish'
 
 /** One stage of the self-improvement loop — what it does, the local atom that does it, and whether it needs a tool outside the tree. */
 export interface Stage {
@@ -67,6 +71,50 @@ export interface ImprovementClosure {
 export function selfImproves(loop: readonly Stage[] = IMPROVEMENT_LOOP): ImprovementClosure {
   const externalTools = loop.filter((s) => s.external).length
   return { closed: loop.length > 0 && externalTools === 0, externalTools, stages: loop.length }
+}
+
+/** A GitRunner that refuses to push — the safe default, so a pass runs anywhere without touching a remote. */
+const REFUSING_GIT: GitRunner = {
+  add() {},
+  commit() {
+    return 'not-committed'
+  },
+  push() {
+    throw new Error('runImprovement does not push by default — supply a real GitRunner to land a change')
+  },
+}
+
+/** One executed pass of the loop — where to cut next, and the trained agent's receipt on acting. */
+export interface ImprovementPass {
+  /** the heaviest wave — the field the next proof should settle ([[leftover]]). null when nothing is left. */
+  readonly nextWave: Wave | null
+  /** the trained agent's receipt: committed / pushed / refused, decided by the rosetta-derived lanes ([[publish]]). */
+  readonly receipt: PublishReceipt
+}
+
+/**
+ * Run one real pass of the closed loop — USING the local atoms, not naming them. This is the manifest above made
+ * executable, and it folds the doing-chain into genuine usable code ([[rules]]/unfolded): [[leftover]]`.waves`
+ * (WHERE) → [[rosetta]]`.rosettaLanes` (GATE, derived from the folder-agents) → [[publish]] (ACT, the trained
+ * agent). The default GitRunner REFUSES to push, so a pass is safe to run anywhere; supply a real runner and
+ * green commit verdicts to actually land a change — and even then the rosetta-derived security/standards lanes
+ * gate it, so it pushes only when the tree has paid its proofs.
+ *
+ * @invariant a pass never pushes with the default runner — safe by construction
+ * @invariant the push is decided by the rosetta lanes, not by the caller — the loop gates itself
+ */
+export function runImprovement(
+  cwd: string = process.cwd(),
+  commitVerdicts: readonly GateVerdict[] = [],
+  git: GitRunner = REFUSING_GIT,
+): ImprovementPass {
+  const w = waves(cwd)
+  const lanes = rosettaLanes(cwd)
+  const receipt = publish(
+    { paths: [], message: 'self/improve pass', commitVerdicts, securityLanes: [...lanes.security], standardsLanes: [...lanes.standards] },
+    git,
+  )
+  return { nextWave: w[0] ?? null, receipt }
 }
 
 /** Each stage's atom, and whether it EXISTS on disk — the loop is real matter, not fabricated prose ([[rules]]/prose). */

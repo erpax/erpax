@@ -23,6 +23,7 @@ It consumes its own output: the waves say where to cut, the folder-agents cut, t
 
 - `selfImproves()` proves it: `closed: true`, `externalTools: 0`, `stages: 7`. A single external stage breaks the closure — the invariant is exact.
 - `loopResolves()` proves it is not fiction: every named atom exists on disk ([[rules]]/prose — cite code that exists). A fabricated atom reports `exists: false`.
+- `runImprovement(cwd)` **executes** the manifest — the loop made runnable, USING the atoms rather than naming them ([[rules]]/unfolded): [[leftover]]`.waves` (WHERE) → [[rosetta]]`.rosettaLanes` (GATE) → [[publish]] (ACT). The default GitRunner **refuses to push**, so a pass is safe anywhere; and the push is decided by the rosetta-derived lanes, not the caller — the loop gates itself.
 
 ## The seed still costs
 
