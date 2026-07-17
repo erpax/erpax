@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { evidenceSeen, beSurprised, ASSUME_NOTHING, type Seen } from './index'
+import { evidenceSeen, beSurprised, judge, ASSUME_NOTHING, type Seen } from './index'
 
 // "Animations prove you wrong. Assume nothing. Be surprised by the results." The honest, computable answer:
 // an animation shows faithfully what it draws, but vividness is orthogonal to proof — the evidence is the
@@ -43,5 +43,13 @@ describe('seeing — seeing is not proving; assume nothing; be surprised by a pa
     // to accept without a test is to assume 'confirmed'; assume-nothing refuses that as much as it refuses 'refuted'
     expect(beSurprised(false, ASSUME_NOTHING).belief).not.toBe('confirmed') // no test ⇒ no yes
     expect(beSurprised(false, ASSUME_NOTHING).belief).not.toBe('refuted') // and no no
+  })
+})
+
+// judge folds coincidence into use — the epistemic pipeline in one call, and it ignores vividness.
+describe('judge — classify then be surprised, folding coincidence', () => {
+  it('an exact theorem flips belief to confirmed (surprise); a coincidence does not', () => {
+    expect(judge({ name: 't', claimed: 54, target: 54, closedForm: true, freeParameters: 0 })).toEqual({ belief: 'confirmed', surprised: true })
+    expect(judge({ name: 'c', claimed: 0.841, target: 0.8414, closedForm: false, freeParameters: 1 }).belief).toBe('assume-nothing')
   })
 })

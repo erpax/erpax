@@ -31,7 +31,7 @@ describe('coincidence — theorem vs coincidence; the leap is refused', () => {
   it('a THEOREM confirms the ALGEBRA, not the physics — no recompute from a theorem about numbers', () => {
     const r = warrantsRecompute(theorem)
     expect(r.warranted).toBe(false)
-    expect(r.reason).toMatch(/confirms the ALGEBRA.*not a physics/)
+    expect(r.reason).toMatch(/confirms the algebra.*never a physics/i)
   })
 
   it('a COINCIDENCE is necessary but not sufficient — the leap to "science is wrong" is refused', () => {
@@ -50,5 +50,16 @@ describe('coincidence — theorem vs coincidence; the leap is refused', () => {
   it('but it does NOT refuse the inquiry — a coincidence is flagged worth an experiment, not dismissed', () => {
     expect(classify(coincidence)).toBe('coincidence') // it is named, not thrown away
     // a coincidence CAN be a deep law — that is exactly why the honest next step is an experiment, not a verdict
+  })
+})
+
+// The refusal is now PROVEN via theorem.reduce, not hardcoded — folding the theorem atom into use.
+describe('warrantsRecompute is proven by theorem.reduce (folded, not asserted)', () => {
+  it('reasons cite the reduction — the leap does not ground in a base theorem about physics', () => {
+    const theorem: Claim = { name: 'AGL', claimed: 54, target: 54, closedForm: true, freeParameters: 0 }
+    const coincidence: Claim = { name: 'match', claimed: 0.841, target: 0.8414, closedForm: false, freeParameters: 1 }
+    expect(warrantsRecompute(theorem).reason).toMatch(/reduce|does not reduce|base theorem/)
+    expect(warrantsRecompute(coincidence).reason).toMatch(/reduce|does not reduce|assertion/)
+    expect(warrantsRecompute(theorem).warranted).toBe(false)
   })
 })

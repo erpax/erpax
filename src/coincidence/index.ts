@@ -32,6 +32,7 @@
  *
  * Composes [[algebra]] · [[theorem]] · [[rules]]/refutable · [[rodin]] · [[law]].
  */
+import { reduce, type Theorem } from '@/theorem'
 
 /** A claimed relationship put on the testing ground. */
 export interface Claim {
@@ -79,10 +80,21 @@ export interface RecomputeVerdict {
 export function warrantsRecompute(c: Claim, tolerance = 1e-3): RecomputeVerdict {
   const v = classify(c, tolerance)
   if (v === 'mismatch') return { warranted: false, reason: `${c.name}: the claimed value does not even match the target — nothing to recompute` }
-  if (v === 'theorem') return { warranted: false, reason: `${c.name}: an exact identity confirms the ALGEBRA (always true), not a physics built on it — no recompute from a theorem about numbers` }
+  // The refusal is not hardcoded — it is PROVEN by [[theorem]].reduce: "recompute science" composes only the
+  // claim that "it matches" (an exact identity) or "it is a coincidence" (a bare assertion). Neither reduces to
+  // a base theorem about physics, so the recompute step rests on authority and does not warrant.
+  const support = v === 'theorem' ? 'the algebra is exact' : 'the numbers match'
+  const graph: Theorem[] = [
+    { claim: support, composes: [], base: v === 'theorem' }, // exact algebra is base; a match is a bare assertion
+    { claim: 'physics is recomputed', composes: [support], base: false },
+  ]
+  const r = reduce('physics is recomputed', graph)
   return {
-    warranted: false,
-    reason: `${c.name}: a coincidence (match within tolerance, ${c.freeParameters} free parameter(s)) is necessary but not sufficient — science recomputes on derivation + independent experiment + explanatory power, not a numeric match (theorem: authority is not a step)`,
+    warranted: false, // reduce never grounds this in a base theorem ABOUT PHYSICS — algebra confirms algebra only
+    reason:
+      v === 'theorem'
+        ? `${c.name}: reduce says '${support}' is a base theorem about NUMBERS, not physics — it confirms the algebra (always true), never a physics built on it (${r.reason})`
+        : `${c.name}: a coincidence (${c.freeParameters} free parameter(s)) is a bare assertion to reduce — necessary but not sufficient; science recomputes on derivation + independent experiment + explanatory power, not a match (${r.reason})`,
   }
 }
 

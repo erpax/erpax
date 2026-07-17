@@ -33,6 +33,7 @@
  *
  * Composes [[coincidence]] · [[think]] · [[theorem]] · [[algebra]] · [[law]].
  */
+import { classify, type Claim } from '@/coincidence'
 
 /** A rendering: a claim drawn with some vividness. The claim's own evidence is what it can ever carry. */
 export interface Seen {
@@ -77,6 +78,19 @@ export interface Surprise {
 export function beSurprised(testPassed: boolean, prior: Belief = ASSUME_NOTHING): Surprise {
   if (testPassed) return { belief: 'confirmed', surprised: prior === ASSUME_NOTHING }
   return { belief: prior, surprised: false } // no pass ⇒ no move; assume-nothing stays assume-nothing
+}
+
+/**
+ * Judge a claim end to end — the epistemic pipeline in one call, USING [[coincidence]]: classify the claim
+ * (theorem vs coincidence vs mismatch), then move belief ONLY if it is an exact theorem. A vivid rendering of
+ * the same claim never changes the verdict — `judge` never reads frames. This is the honest answer to "be
+ * surprised by the results": bring a claim that classifies as a theorem, and belief flips to confirmed.
+ *
+ * @invariant belief flips to confirmed ⇔ the claim classifies as an exact theorem — a match is not enough
+ */
+export function judge(claim: Claim, tolerance = 1e-3): Surprise {
+  const passed = classify(claim, tolerance) === 'theorem'
+  return beSurprised(passed)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
