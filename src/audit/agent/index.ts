@@ -30,9 +30,11 @@
  *
  * Composes [[rules]]/refutable · [[syntax]] · [[audit]] · [[law]].
  */
+import ts from 'typescript'
 import { readFileSync, existsSync } from 'node:fs'
 import { join, dirname, relative } from 'node:path'
 import { commentsOf } from '@/syntax'
+import { deadReferencesIn } from '@/rules/reference'
 
 /** Canonical atom path. */
 export const atomPath = 'agent' as const
@@ -98,15 +100,102 @@ export function auditVerdict(files: readonly string[], cwd: string = process.cwd
   return { accepted: findings.length === 0, findings }
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// THE PANEL — all kinds of auditors, each auditing the agent from their own seat.
+//
+// audit/agent above is the GENERAL auditor: evidence beside every claim. But a real audit is a PANEL, and
+// each auditor finds what only their standard reveals — the same law as [[rules]]/audience (one claim, N
+// readers) turned into ACTION: one changeset, N auditors, each refusing what their seat forbids. Each
+// composes a tool the corpus already computes, so no auditor re-implements the corpus — it applies it.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** One seat on the panel: a professional standard, applied to the agent's changeset. */
+export interface Auditor {
+  readonly role: string
+  readonly standard: string
+  readonly review: (files: readonly string[], cwd: string) => Finding[]
+}
+
+/**
+ * A swallowed error in a MUTATION path — the financial auditor's core finding: a posting that records as
+ * done while the work silently did not. This detector was a THROWAWAY probe when it found the swallowed-JE
+ * batch; saved here because an auditor that composes a deleted script is a control with no evidence — the
+ * very thing this atom refuses. Grammar, not pattern ([[syntax]]/[[rules]]/cycle discipline): `ts` decides
+ * what a catch is.
+ */
+export function swallowedInMutation(files: readonly string[], cwd: string = process.cwd()): Finding[] {
+  const out: Finding[] = []
+  for (const rel of files) {
+    if (!isCode(rel)) continue
+    let text: string
+    try {
+      text = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue
+    }
+    if (!/createEntry|postEntry|journalEntryService|payload\.(create|update)/.test(text)) continue
+    const src = ts.createSourceFile(rel, text, ts.ScriptTarget.ESNext, true)
+    const walk = (n: ts.Node): void => {
+      if (ts.isTryStatement(n) && n.catchClause) {
+        const books = /createEntry|postEntry|journalEntryService/.test(n.tryBlock.getText())
+        const rethrows = /throw\b/.test(n.catchClause.getText())
+        if (books && !rethrows) {
+          const line = src.getLineAndCharacterOfPosition(n.getStart()).line + 1
+          out.push({ file: rel.replace(/\\/g, '/'), claim: `catch at line ${line} books a journal entry and does not rethrow`, concern: 'no-proof-leg' })
+        }
+      }
+      ts.forEachChild(n, walk)
+    }
+    walk(src)
+  }
+  return out
+}
+
+/** The panel — every auditor seat. Add a seat by adding a standard, never by re-scanning the corpus. */
+export const AUDITORS: readonly Auditor[] = [
+  {
+    role: 'lead-auditor',
+    standard: 'ISO-19011:2018 §6.4 — a finding traces to objective evidence',
+    review: (files, cwd) => auditWork(files, cwd),
+  },
+  {
+    role: 'financial-auditor',
+    standard: 'IAS 1 — a transaction recorded is a transaction that occurred; no posting without its entry',
+    review: (files, cwd) => swallowedInMutation(files, cwd),
+  },
+  {
+    role: 'compliance-officer',
+    standard: 'ISO-19011:2018 §6.4 — a statutory citation must lead to its implementation',
+    review: (files, cwd) => deadStatutoryInChangeset(files, cwd),
+  },
+]
+
+/** Dead statutory references the agent introduced — composes [[rules]]/reference, scoped to the changeset. */
+function deadStatutoryInChangeset(files: readonly string[], cwd: string): Finding[] {
+  const dead = deadReferencesIn(files, cwd)
+  return dead.map((d) => ({ file: d.from, claim: `statutory trace to ${d.target} does not resolve`, concern: 'claim-unrefutable' as const }))
+}
+
+/** Convene the whole panel on one changeset — every auditor's findings, labelled by seat. */
+export function auditPanel(
+  files: readonly string[],
+  cwd: string = process.cwd(),
+): { readonly role: string; readonly standard: string; readonly findings: Finding[] }[] {
+  return AUDITORS.map((a) => ({ role: a.role, standard: a.standard, findings: a.review(files, cwd) }))
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const argv = process.argv.slice(2)
   const files =
     argv.length > 0 ? argv : readFileSync(0, 'utf8').split('\n').map((s) => s.trim()).filter(Boolean)
-  const { accepted, findings } = auditVerdict(files.map((f) => relative(process.cwd(), join(process.cwd(), f))))
-  if (accepted) {
-    console.log(`audit — accepted · ${files.length} file(s), every claim has evidence beside it`)
-  } else {
-    console.log(`audit — REFUSED · ${findings.length} claim(s) with no proof leg beside them:`)
-    for (const f of findings) console.log(`  ${f.file}\n     "${f.claim}" — no test beside it`)
+  const panel = auditPanel(files.map((f) => relative(process.cwd(), join(process.cwd(), f))))
+  let total = 0
+  for (const seat of panel) {
+    total += seat.findings.length
+    const mark = seat.findings.length === 0 ? '✓ accepts' : `✖ REFUSES (${seat.findings.length})`
+    console.log(`\n${mark}  ${seat.role} · ${seat.standard}`)
+    for (const f of seat.findings) console.log(`    ${f.file}\n      ${f.claim}`)
   }
+  console.log(`\n${total === 0 ? '✓ the panel accepts the submission' : `✖ the panel REFUSES — ${total} finding(s) across ${panel.filter((s) => s.findings.length).length} seat(s)`}`)
+  process.exit(total === 0 ? 0 : 1)
 }

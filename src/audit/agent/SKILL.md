@@ -26,6 +26,20 @@ The fix was real (the swallow became a surfaced throw, proven live). But the pro
 
 And it points at the boot blocker: those hooks cannot be unit-tested today because they TDZ on import ([[run]]/load, `fixed/assets:34`). **The reason the evidence cannot sit beside the claim is the 225-file tangle** — so the auditor's refusal is downstream of the one defect that voids all others.
 
+## The panel — all kinds of auditors, one changeset
+
+The lead auditor demands evidence. A real audit is a **panel**, and each seat finds what only its standard reveals — [[rules]]/audience's law (one claim, N readers) turned into **action**: one changeset, N auditors, each refusing what their seat forbids.
+
+| seat | standard | what it refuses |
+| --- | --- | --- |
+| **lead-auditor** | ISO-19011 §6.4 | a claim with no proof leg beside it |
+| **financial-auditor** | IAS 1 | a posting that books a journal entry and **swallows** the failure — recorded as done while the entry silently did not |
+| **compliance-officer** | ISO-19011 §6.4 | a statutory citation the agent introduced that leads nowhere |
+
+Each **composes a tool the corpus already computes** — the compliance seat is [[rules]]/reference scoped to the changeset; the financial seat is the swallowed-JE detector that **found the posting-hook batch as a throwaway probe and is now saved**, because an auditor that composes a deleted script is itself a control with no evidence. A new seat is a new standard, never a new scan.
+
+`auditPanel(changeset)` convenes them all: the same file draws a finding from the lead auditor (an unproven `@compliance SOX §404`) **and** the financial auditor (a swallowed entry) — different findings from different seats, exactly as a real panel reviews one submission.
+
 ## What it audits, and what it does not
 
 - **COMPUTED** the submission — the files the agent changed (a git diff, piped in).
