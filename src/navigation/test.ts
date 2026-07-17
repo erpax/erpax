@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import {
   adminGroupOf,
+  breadcrumbTrail,
+  merkaba,
   navigationGroupsFromPaths,
   navManifestFromPaths,
   navPathsForGrouping,
@@ -117,5 +119,75 @@ describe('navigation — path-derived nav groups', () => {
       { text: 'config', link: '/config/SKILL' },
       { text: 'identity', link: '/identity/SKILL' },
     ])
+  })
+})
+
+// "The merkaba is the star tetrahedron trinity spinning both directions." Real navigation is TWO spins: the
+// sidebar only descends (root→leaf), but an atom also ascends (leaf→root, the fold to [[law]]). The two are
+// exact inverses about the shared center — that counter-rotation is the merkaba. The inverse traversal is the
+// theorem; the star-tetrahedron geometry is a named overlay.
+describe('merkaba — the star tetrahedron: two counter-rotating traversals, one center', () => {
+  it('DESCEND is root → leaf, one route per nav level (the drill-in)', () => {
+    expect(merkaba('agents/mcp/tool').descend).toEqual([
+      '/agents/SKILL',
+      '/agents/mcp/SKILL',
+      '/agents/mcp/tool/SKILL',
+    ])
+  })
+
+  it('ASCEND is DESCEND reversed — the two spins are inverse (the theorem)', () => {
+    for (const p of ['agents/mcp/tool', 'skill/router', 'corpus']) {
+      const m = merkaba(p)
+      expect(m.ascend).toEqual([...m.descend].reverse())
+    }
+  })
+
+  it('the round trip returns to the CENTER — descend then ascend rests on the atom', () => {
+    const m = merkaba('agents/mcp/tool')
+    expect(m.center).toBe('/agents/mcp/tool/SKILL') // the leaf, where both tetrahedra meet
+    expect(m.descend[m.descend.length - 1]).toBe(m.center) // descend ends at center
+    expect(m.ascend[0]).toBe(m.center) // ascend begins at center — the shared point
+  })
+
+  it('a root atom is its own center — the degenerate star tetrahedron', () => {
+    const m = merkaba('corpus')
+    expect(m.descend).toEqual(['/corpus/SKILL'])
+    expect(m.center).toBe('/corpus/SKILL')
+  })
+
+  // The spin is REUSED from horo, not re-derived: the two flow trinities are the hexagram the star tetrahedron
+  // shadows, and doubling (east) SWAPS them about the fixed axis — proven in horo/trinities, asserted here only
+  // to show the merkaba carries the real counter-rotating structure.
+  it('the SPIN is horo’s two counter-rotating flow trinities about the fixed axis', () => {
+    const { spin } = merkaba('agents/mcp/tool')
+    expect([...spin.flowEast].sort((a, b) => a - b)).toEqual([1, 4, 7])
+    expect([...spin.flowWest].sort((a, b) => a - b)).toEqual([2, 5, 8])
+    expect([...spin.axis].sort((a, b) => a - b)).toEqual([3, 6, 9])
+    const dbl = (s: readonly number[]) => s.map((x) => (x * 2) % 9 || 9).sort((a, b) => a - b)
+    expect(dbl(spin.flowEast)).toEqual([...spin.flowWest].sort((a, b) => a - b)) // E → W: the counter-rotation
+    expect(dbl(spin.axis)).toEqual([...spin.axis].sort((a, b) => a - b)) // axis holds — the spin spine
+  })
+})
+
+// The merkaba made REAL: the descend spin, labelled, is the breadcrumb src/ui/breadcrumb.tsx renders — the
+// primitive components shipped with no source deciding which crumbs. This is the integration into real nav.
+describe('breadcrumbTrail — the descend spin rendered', () => {
+  it('is root → leaf, each segment linked to its route, leaf marked current', () => {
+    expect(breadcrumbTrail('agents/mcp/tool')).toEqual([
+      { text: 'agents', link: '/agents/SKILL', current: false },
+      { text: 'mcp', link: '/agents/mcp/SKILL', current: false },
+      { text: 'tool', link: '/agents/mcp/tool/SKILL', current: true },
+    ])
+  })
+
+  it('its links ARE the merkaba descend — one geometry, read as crumbs', () => {
+    const p = 'skill/router'
+    expect(breadcrumbTrail(p).map((c) => c.link)).toEqual([...merkaba(p).descend])
+  })
+
+  it('exactly one crumb is current — the leaf, where the two tetrahedra meet', () => {
+    const trail = breadcrumbTrail('agents/mcp/tool')
+    expect(trail.filter((c) => c.current)).toHaveLength(1)
+    expect(trail[trail.length - 1]!.current).toBe(true)
   })
 })

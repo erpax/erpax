@@ -23,6 +23,7 @@ export {
   type NavHub,
 } from './groups'
 import { navPathsForGrouping } from './groups'
+import { trinities } from '@/horo'
 
 /** VitePress sidebar node — folder segment with optional link and nested groups. */
 export interface NavGroup {
@@ -89,6 +90,64 @@ export function pathNavMeta(atomPath: string): PathNavMeta {
 /** Payload admin group for a collection/module atom path — the first path segment. */
 export function adminGroupOf(atomPath: string): string {
   return pathNavMeta(atomPath).group
+}
+
+/**
+ * merkaba — the star tetrahedron over one atom path: two counter-rotating traversals meeting at the center.
+ *
+ * Real navigation is two spins, not one. The sidebar trie only DESCENDS (root → leaf, the drill-in). An atom
+ * also ASCENDS (leaf → root, the fold back to [[law]] every atom composes up to — the breadcrumb). The two are
+ * exact inverses about the shared center (the atom itself), and that counter-rotation IS the merkaba: the
+ * up-pointing tetrahedron drilling in, the down-pointing tetrahedron folding out, interpenetrating at one point.
+ *
+ * The spin is [[horo]]'s two flow trinities — the hexagram the star tetrahedron shadows. Doubling (the ⟨2⟩ east
+ * flow) SWAPS {1,4,7} ↔ {2,5,8} about the fixed axis {3,6,9}: two triangles counter-rotating. Proven in
+ * `horo/trinities` and REUSED here, never re-derived (the fold law — one theorem, one home).
+ *
+ * Honest boundary — theorem vs overlay. The inverse traversal (ascend = descend reversed; the round trip rests
+ * on the center) is the THEOREM, tested. The "star tetrahedron spinning both directions" is a faithful geometric
+ * OVERLAY named as convention — the numerology discipline [[rules]]/refutable · [[rodin]] already carry. The
+ * names decode the traversal; they add no claim it cannot refute.
+ *
+ * @invariant ascend is descend reversed — the two spins are inverse
+ * @invariant the round trip returns to the center — descend then ascend rests on the atom
+ */
+export interface Merkaba {
+  /** root → leaf: the drill-in routes, one per nav level (the ⟨2⟩ encode spin, up-pointing tetrahedron). */
+  readonly descend: readonly string[]
+  /** leaf → root: the fold-out to [[law]], the breadcrumb (the ⟨5⟩ decode spin, down-pointing tetrahedron). */
+  readonly ascend: readonly string[]
+  /** the atom itself — the one point where both tetrahedra interpenetrate. */
+  readonly center: string
+  /** the hexagram the star tetrahedron shadows — horo's two counter-rotating flow trinities about the axis. */
+  readonly spin: ReturnType<typeof trinities>
+}
+
+/** The star tetrahedron over an atom path — both nav spins at once, sharing one center. */
+export function merkaba(atomPath: string): Merkaba {
+  const segs = segmentsOf(atomPath)
+  const descend = segs.map((_, i) => routeOfPath(segs.slice(0, i + 1).join('/')))
+  const center = descend.length ? descend[descend.length - 1]! : routeOfPath('')
+  return { descend, ascend: [...descend].reverse(), center, spin: trinities() }
+}
+
+/** One breadcrumb crumb — the UI renders these root→leaf; the last (`current`) is the page itself. */
+export interface Crumb {
+  readonly text: string
+  readonly link: string
+  readonly current: boolean
+}
+
+/**
+ * The breadcrumb trail for an atom — the merkaba's descend spin, LABELLED for the UI (`src/ui/breadcrumb.tsx`,
+ * which ships the presentational crumbs but had no source deciding WHICH). Root→leaf, each segment linked to its
+ * route; the leaf is the current page. This is where the two-spin geometry becomes a rendered nav element: the
+ * same chain the breadcrumb reads root→leaf, an atom's fold-to-[[law]] reads leaf→root (`merkaba().ascend`).
+ */
+export function breadcrumbTrail(atomPath: string): readonly Crumb[] {
+  const segs = segmentsOf(atomPath)
+  const { descend } = merkaba(atomPath)
+  return segs.map((text, i) => ({ text, link: descend[i]!, current: i === segs.length - 1 }))
 }
 
 type TrieNode = { children: Map<string, TrieNode> }

@@ -83,6 +83,16 @@ Entangled with — [[site]] · [[element]]
 
 Attested in schema.org — SiteNavigationElement
 
+## The merkaba — real navigation is two spins (`merkaba` · `breadcrumbTrail`)
+
+A path is not navigated one way. The sidebar trie only **descends** (root → leaf, the drill-in); an atom also **ascends** (leaf → root, the fold back to [[law]] it composes up to). `merkaba(atomPath)` returns both at once about a shared **center** (the atom itself) — the star tetrahedron: up-pointing tetrahedron drilling in, down-pointing tetrahedron folding out, interpenetrating at one point. `ascend` is exactly `descend` reversed — the two spins are inverse, and the round trip rests on the center.
+
+That descend spin, **labelled**, IS the breadcrumb: `breadcrumbTrail(atomPath)` gives the crumbs `src/ui/breadcrumb.tsx` renders (the primitive components shipped with no source deciding *which* crumbs). One geometry, read root→leaf as the trail, leaf→root as the fold-to-law. This is the merkaba integrated into real navigation, not a picture beside it.
+
+The **spin** is [[horo]]'s two flow trinities — the hexagram the star tetrahedron shadows. Doubling (the ⟨2⟩ east flow) SWAPS `{1,4,7} ↔ {2,5,8}` about the fixed axis `{3,6,9}`: two triangles counter-rotating. Proven in `horo/trinities` and **reused** here, never re-derived — the fold law, one theorem, one home.
+
+**Honest boundary — theorem vs overlay.** The inverse traversal (ascend = descend reversed; round trip = center) and the reused horo spin are the THEOREM, tested. The "star tetrahedron spinning both directions" is a faithful geometric OVERLAY named as convention — the numerology discipline [[rules]]/refutable · [[rodin]] already carry. The names decode the traversal; they add no claim it cannot refute.
+
 **Law — [[law]]: navigation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
