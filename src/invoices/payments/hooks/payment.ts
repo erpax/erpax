@@ -72,22 +72,18 @@ async function sumPaymentsAgainst(
   tenantId: string,
   invoiceId: string,
 ): Promise<number> {
-  const { docs } = await req.payload.find({
-    collection: 'payments',
-    limit: 10000,
-    depth: 0,
-    overrideAccess: true,
-    where: {
-      and: [
-        { tenant: { equals: tenantId } },
-        { invoice: { equals: invoiceId } },
-      ],
-    },
-  })
-  return (docs as Array<{ amounts?: { amount?: number } }>).reduce(
-    (sum, p) => sum + Number(p.amounts?.amount ?? 0),
-    0,
-  )
+  // Sum EVERY payment, not the first 10 000. Undercounting the sum-paid OVERSTATES the amount due, so a
+  // fully-paid invoice can read as underpaid and the payer be billed again. A cap on a sum is a wrong sum.
+  const where = { and: [{ tenant: { equals: tenantId } }, { invoice: { equals: invoiceId } }] }
+  let total = 0
+  let page = 1
+  for (;;) {
+    const r = await req.payload.find({ collection: 'payments', limit: 1000, page, depth: 0, overrideAccess: true, where })
+    for (const p of r.docs as Array<{ amounts?: { amount?: number } }>) total += Number(p.amounts?.amount ?? 0)
+    if (!r.hasNextPage) return total
+    page++
+    if (page > 10_000) throw new Error(`payments for ${invoiceId}: refusing a partial sum — over 1e7 rows`)
+  }
 }
 
 export const paymentAccountingHook: CollectionAfterChangeHook = async ({

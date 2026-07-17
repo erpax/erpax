@@ -301,30 +301,18 @@ export async function generateIncomeStatement(
   periodEnd: Date,
   currency = 'EUR',
 ): Promise<IncomeStatementDTO> {
+  // Every page — same silent-truncation class as the trial balance ([[findAll]]).
   const [accounts, entries] = await Promise.all([
-    payload.find({
-      collection: 'gl-accounts',
-      where: {
-        and: [
-          { tenant: { equals: tenantId } },
-          { accountType: { in: ['revenue', 'expense', 'gain_loss'] } },
-        ],
-      },
-      limit: 10000,
-      depth: 0,
+    findAll(payload, 'gl-accounts', {
+      and: [{ tenant: { equals: tenantId } }, { accountType: { in: ['revenue', 'expense', 'gain_loss'] } }],
     }),
-    payload.find({
-      collection: 'journal-entries',
-      where: {
-        and: [
-          { tenant: { equals: tenantId } },
-          { status: { equals: 'posted' } },
-          { entryDate: { greater_than_equal: periodStart.toISOString() } },
-          { entryDate: { less_than_equal: periodEnd.toISOString() } },
-        ],
-      },
-      limit: 100000,
-      depth: 0,
+    findAll(payload, 'journal-entries', {
+      and: [
+        { tenant: { equals: tenantId } },
+        { status: { equals: 'posted' } },
+        { entryDate: { greater_than_equal: periodStart.toISOString() } },
+        { entryDate: { less_than_equal: periodEnd.toISOString() } },
+      ],
     }),
   ])
 
@@ -376,16 +364,12 @@ export async function generateARAgingReport(
   asOfDate: Date,
   buckets?: BucketDefinition[],
 ): Promise<AgingReportDTO> {
-  const open = await payload.find({
-    collection: 'invoices',
-    where: {
-      and: [
-        { tenant: { equals: tenantId } },
-        { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
-      ],
-    },
-    limit: 100000,
-    depth: 0,
+  // Every open invoice — an aging report that drops rows understates what is owed ([[findAll]]).
+  const open = await findAll(payload, 'invoices', {
+    and: [
+      { tenant: { equals: tenantId } },
+      { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
+    ],
   })
   const docs = (open.docs as unknown as Array<{
     id: string
@@ -421,18 +405,13 @@ export async function generateAPAgingReport(
   asOfDate: Date,
   buckets?: BucketDefinition[],
 ): Promise<AgingReportDTO> {
-  const open = await payload.find({
-    collection: 'invoices',
-    where: {
+  const open = await findAll(payload, 'invoices', {
       and: [
         { tenant: { equals: tenantId } },
         { invoiceType: { equals: 'bill' } },
         { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
       ],
-    },
-    limit: 100000,
-    depth: 0,
-  })
+    })
   const docs = (open.docs as unknown as Array<{
     id: string
     dueAt?: string

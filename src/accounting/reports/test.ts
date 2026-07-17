@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { DoubleEntryValidator } from '@/double/entry/validator'
-import { generateTrialBalance } from './index'
+import { generateTrialBalance, generateIncomeStatement, generateARAgingReport } from './index'
 
 /**
  * The trial balance is what every other statement projects from — the balance sheet, the income statement,
@@ -106,5 +106,29 @@ describe('accounting/reports — the trial balance', () => {
       ])
       expect(tb.isBalanced, `report and validator disagree on ${d} vs ${c}`).toBe(validator)
     }
+  })
+
+  // THE BATCH. The same silent-cap lived in the income statement (limit 100000 on entries) and both aging
+  // reports (limit 100000 on invoices). A tool found the class; these prove each site now pages.
+  it('income statement reads EVERY page of entries', async () => {
+    const accounts = [acct('rev', '4000', 'revenue', 'credit'), acct('exp', '5000', 'expense', 'debit')]
+    const entries = [
+      entry('rev', 0, 300), entry('exp', 100, 0),
+      entry('rev', 0, 200), entry('exp', 50, 0),
+      entry('rev', 0, 100), entry('exp', 25, 0),
+    ]
+    const is = await generateIncomeStatement(stub(accounts, entries, 2) as never, 't1', new Date('2026-01-01'), new Date('2026-12-31'))
+    expect(is.totalRevenue).toBe(600) // page 1 alone would see 300
+    expect(is.totalExpenses).toBe(175)
+    expect(is.netIncome).toBe(425)
+  })
+
+  it('AR aging reads every open invoice across pages', async () => {
+    const invoices = Array.from({ length: 5 }, (_, i) => ({
+      id: `inv-${i}`, status: 'open', totalDue: 100, dueAt: '2026-01-01T00:00:00.000Z', invoiceType: 'invoice',
+    }))
+    const ar = await generateARAgingReport(stub([], invoices, 2) as never, 't1', new Date('2026-06-01'))
+    expect(ar.documentCount).toBe(5) // pages of 2 — a cap at page 1 would report 2
+    expect(ar.totalOutstanding).toBe(500)
   })
 })
