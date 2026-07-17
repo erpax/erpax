@@ -254,6 +254,35 @@ export function trinities(): { readonly flowEast: number[]; readonly flowWest: n
   return { flowEast: cls(1), flowWest: cls(2), axis: cls(0) }
 }
 
+/**
+ * antimatter — inverted matter. Antimatter is not a separate substance; it is a step NEGATED (`−n mod 9`, the
+ * additive inverse, the void `9 ≡ 0`). Two exact laws make it the antimatter of matter, not merely another map:
+ *
+ *   - INVOLUTION: `antimatter(antimatter(n)) = n` — the antimatter of antimatter is matter.
+ *   - ANNIHILATION: `n + antimatter(n) ≡ 0 (mod 9)` — matter meeting antimatter returns to the VOID, always.
+ *
+ * It reflects the two flow trinities into each other POINT-FOR-POINT — `{1,4,7} ↦ {8,5,2}` — so the [[merkaba]]'s
+ * two counter-rotating tetrahedra ([[navigation]]) are matter and antimatter: each step paired with its inverse
+ * across the two triangles, the pair annihilating at the shared center. The void `9` is its OWN antimatter (its
+ * fixed point), the only step that is its own inverse under negation.
+ *
+ * This names the corpus's matter-twin ([[trinity]]: `index.ts` matter · `SKILL.md` antimatter): the form is not
+ * independent content beside the code — it is the code inverted, one content folded to one uuid, the two faces
+ * annihilating into the single content-address. It is a DIFFERENT reflection from `throughVoid` (`1−n`, the
+ * multiplicative-inverse mirror, pivot 5): antimatter's pivot is the void itself.
+ *
+ * Honest boundary: the ℤ/9ℤ negation is EXACT (involution + annihilation, tested); "matter/antimatter" as the
+ * physics of annihilation is the corpus's named analogy ([[rules]]/refutable · [[rodin]]'s caveat), not adopted
+ * as a claim about particles.
+ *
+ * @invariant antimatter is an involution — antimatter(antimatter(n)) = n
+ * @invariant matter and its antimatter annihilate to the void — n + antimatter(n) ≡ 0 (mod 9)
+ */
+export function antimatter(step: number): number {
+  const r = ((Number(step) % 9) + 9) % 9
+  return ((9 - r) % 9) || 9
+}
+
 /** Which circuit a step sits on — the flow can never take it off this one. */
 export function orbitOf(step: number): number[] {
   const n = (((Number(step) % 9) + 9) % 9) || 9

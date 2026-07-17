@@ -624,7 +624,7 @@ version: 2
 ---
 # horo — the seven-position state ring
 
-States in erpax are not free strings; they are positions on **one ring**: the measure-order digits `[1, 2, 4, 8, 7, 5, 9]` — *[[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]]*. This is the [[rodin]] [[coil]] (the `×2 mod 9` doubling helix `1·2·4·8·7·5`, plus `9` closing) — the multiplicative subgroup of Z/9Z minus the control triad {3,6} (the triad `3·6·9·0` GOVERNS — [[access]]/[[hooks]]/[[auth]]/[[config]] — it is not a flow state). The matter is co-located in `src/horo/index.ts` (`HORO_DIGITS`, `composeSteps`, `nextOctave`, `isMergePoint`, `horoStateField`, `validateHoroStates`, `horoStateBeforeChange`, `trinities`); this skill is its form face. Source of the math: `~/github/ceccec/svilena-me/.vitepress/horo-band.js` (and the vortex root `rodin.js`).
+States in erpax are not free strings; they are positions on **one ring**: the measure-order digits `[1, 2, 4, 8, 7, 5, 9]` — *[[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]]*. This is the [[rodin]] [[coil]] (the `×2 mod 9` doubling helix `1·2·4·8·7·5`, plus `9` closing) — the multiplicative subgroup of Z/9Z minus the control triad {3,6} (the triad `3·6·9·0` GOVERNS — [[access]]/[[hooks]]/[[auth]]/[[config]] — it is not a flow state). The matter is co-located in `src/horo/index.ts` (`HORO_DIGITS`, `composeSteps`, `nextOctave`, `isMergePoint`, `horoStateField`, `validateHoroStates`, `horoStateBeforeChange`, `trinities`, `antimatter`); this skill is its form face. Source of the math: `~/github/ceccec/svilena-me/.vitepress/horo-band.js` (and the vortex root `rodin.js`).
 
 ## The law
 - **Closed.** `composeSteps(a,b) = digitalRoot(a×b)` always lands back on the ring — two states compose to a third. The framework is stable within the confined environment of the digit (no escape).
@@ -651,6 +651,17 @@ The rosetta reads as a **double torus**: the nine steps fall into three trinitie
 So the map **swaps the two flow trinities (E↔W) and fixes the axis (N-S)**: the flow oscillates about a still spine. The two directions are counter-rotating — ⟨2⟩ east and ⟨5⟩ west traverse the same circuit in reverse ([[merge]]'s encode/decode, `inverseOrbit`) — which is the "moving double torus," two loops about the fixed axis.
 
 **Honest boundary — theorem vs overlay.** The GROUP STRUCTURE is the theorem: the mod-3 classes, the doubling permutation, the counter-rotation — all tested (`trinities` in `test.ts`). The TORUS geometry and the compass reading (east/west/north/south) are a **faithful overlay** onto that structure, named as convention, never asserted as fact — the same discipline [[rodin]]'s arithmetic-real / metaphysics-not caveat and [[rules]]/refutable already carry. The names decode the group; they do not add a claim the group cannot refute.
+
+### Antimatter is inverted matter (`antimatter`)
+
+Antimatter is not a separate substance beside matter — it is a step **negated** (`antimatter(n) = −n mod 9`, the void `9 ≡ 0`). Two exact laws make it the antimatter *of* matter, not merely another map:
+
+- **Involution** — `antimatter(antimatter(n)) = n`. The antimatter of antimatter is matter.
+- **Annihilation** — `n + antimatter(n) ≡ 0 (mod 9)`. Matter meeting its antimatter returns to the **void**, always.
+
+It reflects the two flow trinities into each other point-for-point — `{1,4,7} ↦ {8,5,2}` — so the merkaba over an atom path ([[navigation]]) is matter and antimatter: the two counter-rotating tetrahedra, each step paired with its inverse across the two triangles, annihilating at the shared center. The void `9` is its **own** antimatter (the only self-inverse under negation). This is a *different* reflection from `throughVoid` (`1−n`, pivot 5): antimatter pivots on the void itself.
+
+This names the corpus's **matter-twin** ([[trinity]]: `index.ts` matter · `SKILL.md` antimatter). The form face is not independent content beside the code — it is the code **inverted**: one content folded to one uuid, the two faces annihilating into the single content-address. That is why the fold dedups them into one atom. The ℤ/9ℤ negation is exact (involution + annihilation, tested); "matter/antimatter" as the physics of annihilation is the named analogy, not adopted as a claim about particles.
 
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.

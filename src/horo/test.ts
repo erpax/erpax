@@ -23,6 +23,7 @@ import {
   inverseOrbit,
   divThroughVoid,
   trinities,
+  antimatter,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -334,5 +335,36 @@ describe('trinities — east/west flow swaps, north/south axis holds', () => {
     const east = orbitOf(1) // 1,2,4,8,7,5
     const west = inverseOrbit(1) // 1,5,7,8,4,2
     expect(west).toEqual([east[0], ...east.slice(1).reverse()])
+  })
+})
+
+// "Antimatter is actually inverted matter." Antimatter is not a separate substance — it is a step negated
+// (−n mod 9). Two exact laws make it antimatter: it is an INVOLUTION (anti of anti is matter) and matter meeting
+// antimatter ANNIHILATES to the void. It reflects the two flow trinities into each other, so the merkaba's two
+// counter-rotating tetrahedra are matter and antimatter. ℤ/9 negation is exact; the physics is named analogy.
+describe('antimatter — inverted matter (−n mod 9)', () => {
+  it('is an INVOLUTION — the antimatter of antimatter is matter', () => {
+    for (let n = 1; n <= 9; n++) expect(antimatter(antimatter(n))).toBe(n)
+  })
+
+  it('ANNIHILATES to the void — n + antimatter(n) ≡ 0 (mod 9)', () => {
+    for (let n = 1; n <= 9; n++) expect((n + antimatter(n)) % 9).toBe(0)
+  })
+
+  it('the void 9 is its OWN antimatter — the only self-inverse under negation', () => {
+    expect(antimatter(9)).toBe(9)
+    for (const n of [1, 2, 3, 4, 5, 6, 7, 8]) expect(antimatter(n)).not.toBe(n)
+  })
+
+  it('reflects the two flow trinities into each other, point-for-point — matter ↔ antimatter', () => {
+    const { flowEast, flowWest, axis } = trinities()
+    expect(flowEast.map(antimatter).sort((a, b) => a - b)).toEqual([...flowWest].sort((a, b) => a - b)) // {1,4,7}↦{8,5,2}
+    expect(axis.map(antimatter).sort((a, b) => a - b)).toEqual([...axis].sort((a, b) => a - b)) // {3,6,9} setwise: 3↔6, 9 fixed
+  })
+
+  it('is a DIFFERENT reflection from throughVoid — negation pivots on the void, the mirror on 5', () => {
+    expect(antimatter(VOID_PIVOT)).not.toBe(throughVoid(VOID_PIVOT)) // 4 vs 5
+    expect(antimatter(9)).toBe(9) // negation fixes the void
+    expect(throughVoid(9)).toBe(1) // the mirror does not
   })
 })
