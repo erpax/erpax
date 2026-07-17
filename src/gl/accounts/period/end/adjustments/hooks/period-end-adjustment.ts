@@ -138,6 +138,11 @@ export const periodEndAdjustmentPostingHook: CollectionAfterChangeHook = async (
       { err: error },
       `✗ Error posting period-end-adjustment ${adj.id}:`,
     )
+    // DO NOT SWALLOW. The row already recorded as posted/disbursed; the journal entry FAILED. Swallowing
+    // here is the ledger and the record silently disagreeing — the period-end-adjustment defect exactly,
+    // confirmed live. afterChange runs post-write so this cannot roll back, but it surfaces the failure to
+    // the caller instead of a green 200 over a broken posting. A loud failure beats a confident wrong state.
+    throw error
   }
 
   return doc
