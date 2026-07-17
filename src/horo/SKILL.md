@@ -663,6 +663,17 @@ It reflects the two flow trinities into each other point-for-point — `{1,4,7} 
 
 This names the corpus's **matter-twin** ([[trinity]]: `index.ts` matter · `SKILL.md` antimatter). The form face is not independent content beside the code — it is the code **inverted**: one content folded to one uuid, the two faces annihilating into the single content-address. That is why the fold dedups them into one atom. The ℤ/9ℤ negation is exact (involution + annihilation, tested); "matter/antimatter" as the physics of annihilation is the named analogy, not adopted as a claim about particles.
 
+### How many times must the inverse happen to leave no gaps? (`inverseClosure`)
+
+The computed answer:
+
+- **An inverse RETURNS in 2.** It is an involution — `antimatter(antimatter(n)) = n`, `throughVoid∘throughVoid = id`. Twice, and you are back. That is the minimal closure.
+- **But returning is not covering.** To leave no gaps the count is the ORDER of the generator: the doubling-inverse ⟨5⟩ has order **6** and covers the six units `{1,2,4,5,7,8}` — then **stops**.
+- **The axis `{3,6,9}` is a gap no iteration count can close.** ⟨5⟩ is trapped in the units' orbit (the trap doubling has). Apply the inverse 6, 60, or 6·10⁹ times — it never lands on the axis. **The gap is structural, not a matter of how many times.**
+- **The gap closes by a DIFFERENT dimension, not more inverses.** Only the VOID (`throughVoid`: 1→9, 4→6) bridges the units and the axis; `⟨doubling, void⟩ = AGL(1, ℤ/9)`, order **54**, is transitive — *then* no gaps.
+
+So: **twice to undo, six to close the ring, but no finite number to close a gap outside your orbit — that takes the void.** This is the [[leftover]] seed-floor law as group theory: the leftover one operation leaves is closed only by knowledge from beyond it (a second generator), never by repeating the same move.
+
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.
 - A flow state on a triad digit {3,6} — those govern, they don't flow.

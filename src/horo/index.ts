@@ -172,6 +172,47 @@ export function inverseOrbit(step: number = 1): number[] {
   return out
 }
 
+/** How many times the inverse must apply to close, what it covers, and the gap it can NEVER reach by iterating. */
+export interface InverseClosure {
+  /** applications of the inverse before it RETURNS to the start — the element's order. */
+  readonly order: number
+  /** the orbit the inverse covers — every step it reaches. */
+  readonly covers: readonly number[]
+  /** steps in 1..9 the inverse can NEVER reach, however many times it applies — a structural gap, not a count. */
+  readonly gaps: readonly number[]
+  /** whether the VOID bridge (`throughVoid`) reaches every gap — the gap closes by another dimension, not more inverses. */
+  readonly voidCloses: boolean
+}
+
+/**
+ * How many times must the inverse happen to leave no gaps? — the computed answer.
+ *
+ * An inverse is an INVOLUTION: `antimatter(antimatter(n)) = n`, `throughVoid∘throughVoid = id` — it RETURNS in
+ * **2**. But returning is not covering. To leave no gaps the count is the ORDER of the generator: the doubling-
+ * inverse ⟨5⟩ has order **6** and covers the six units {1,2,4,5,7,8} — and then STOPS. The axis {3,6,9} is a
+ * gap it can never reach, because ⟨5⟩ is trapped in the units' orbit (the same trap doubling has). No number of
+ * inverses — 6, 60, 6·10⁹ — closes that gap: iterating one operation cannot escape its own orbit.
+ *
+ * The gap closes not by MORE inverses but by a DIFFERENT dimension — the VOID (`throughVoid`: 1→9, 4→6) is the
+ * only bridge between the units and the axis, and ⟨doubling, void⟩ = AGL(1, ℤ/9), order 54, transitive: no gaps.
+ * This is the [[leftover]] seed-floor law as group theory: the leftover a single operation leaves is closed only
+ * by knowledge from beyond it (a second generator), never by repeating the same move.
+ *
+ * @invariant an involution returns in 2 — the minimal closure
+ * @invariant the doubling-inverse leaves the axis {3,6,9} a gap no iteration count can close — only the void does
+ */
+export function inverseClosure(seed: number = 1): InverseClosure {
+  const covers = inverseOrbit(seed)
+  const covered = new Set(covers)
+  const gaps = [1, 2, 3, 4, 5, 6, 7, 8, 9].filter((n) => !covered.has(n))
+  // the void bridges when throughVoid of some covered step lands in each gap's own doubling-orbit
+  const voidCloses = gaps.every((g) => {
+    const gOrbit = new Set(orbitOf(g))
+    return covers.some((c) => gOrbit.has(throughVoid(c) || 9))
+  })
+  return { order: covers.length, covers, gaps, voidCloses }
+}
+
 /**
  * THE RING AND THE VOID GENERATE EVERYTHING — `⟨x↦2x, x↦1−x⟩ = AGL(1, ℤ/9)`, order **54**.
  *

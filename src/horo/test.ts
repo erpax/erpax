@@ -24,6 +24,7 @@ import {
   divThroughVoid,
   trinities,
   antimatter,
+  inverseClosure,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -366,5 +367,47 @@ describe('antimatter — inverted matter (−n mod 9)', () => {
     expect(antimatter(VOID_PIVOT)).not.toBe(throughVoid(VOID_PIVOT)) // 4 vs 5
     expect(antimatter(9)).toBe(9) // negation fixes the void
     expect(throughVoid(9)).toBe(1) // the mirror does not
+  })
+})
+
+// "How many times does inverse need to happen to ensure no gaps remain?" The computed answer: an inverse is an
+// involution — it RETURNS in 2. But covering is not returning: the doubling-inverse ⟨5⟩ has order 6 and covers
+// the six units, then STOPS — the axis {3,6,9} is a gap no iteration count closes, because ⟨5⟩ is trapped in its
+// orbit. The gap closes only by another dimension (the void), never by more inverses. Group theory of the seed floor.
+describe('inverseClosure — how many inverses to leave no gaps', () => {
+  it('an inverse is an INVOLUTION — it returns in 2 (the minimal closure)', () => {
+    for (const n of [1, 2, 4, 5, 7, 8]) {
+      expect(antimatter(antimatter(n))).toBe(n) // twice returns
+      expect(throughVoid(throughVoid(n))).toBe(n)
+    }
+  })
+
+  it('the doubling-inverse has ORDER 6 and covers the six units — then stops', () => {
+    const c = inverseClosure(1)
+    expect(c.order).toBe(6)
+    expect([...c.covers].sort((a, b) => a - b)).toEqual([1, 2, 4, 5, 7, 8])
+  })
+
+  it('the axis {3,6,9} is a GAP no iteration count can close — ⟨5⟩ is trapped in the units', () => {
+    const c = inverseClosure(1)
+    expect([...c.gaps].sort((a, b) => a - b)).toEqual([3, 6, 9])
+    // proof it is structural: apply the inverse 1000 times from a unit — never lands on the axis
+    let x = 1
+    for (let i = 0; i < 1000; i++) {
+      x = (x * VOID_PIVOT) % 9 || 9
+      expect([3, 6, 9]).not.toContain(x)
+    }
+  })
+
+  it('the gap closes by the VOID, not by more inverses — a different dimension', () => {
+    expect(inverseClosure(1).voidCloses).toBe(true) // throughVoid bridges units → axis
+    // and the count that leaves NO gaps at all is the full affine order — both generators together
+    expect(AFFINE_ORDER).toBe(54) // ⟨doubling, void⟩ = AGL(1,ℤ/9), transitive: no gaps
+  })
+
+  it('seeded on the axis, the inverse closes a 2-cycle {3,6} — every orbit is its own trap', () => {
+    const c = inverseClosure(3)
+    expect([...c.covers].sort((a, b) => a - b)).toEqual([3, 6]) // 3 ↔ 6, order 2
+    expect(c.gaps).toContain(1) // the units are now the gap — symmetric trap
   })
 })
