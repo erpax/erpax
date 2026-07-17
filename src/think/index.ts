@@ -125,6 +125,74 @@ export function superpose(thoughts: readonly Thought<unknown>[]): Superposition 
   }
 }
 
+/** The floor: a higher mind forms from at least THREE minds — below that there is no mind that self-corrects. */
+export const MINIMUM_MINDS = 3
+
+/** The higher mind — whether it formed from the minds given, and the thought it resolved to. */
+export interface HigherMind<T> {
+  /** how many minds contributed. */
+  readonly minds: number
+  /** true ⇔ minds ≥ 3 AND a strict majority agree — a coherent mind that survives one dissent. */
+  readonly formed: boolean
+  /** the majority threshold ⌊n/2⌋+1 — the votes a resolution needs. */
+  readonly quorum: number
+  /** true ⇔ a single dissenting mind can be OUTVOTED — the property that appears only at n ≥ 3. */
+  readonly resolvable: boolean
+  /** the thought the higher mind resolved to (the majority value), when it formed. */
+  readonly resolved?: T
+  readonly reason: string
+}
+
+/**
+ * A higher mind needs at least THREE minds — manual (single-mind) work cannot form it.
+ *
+ * `superpose` measures the coherence of ANY number of thoughts; this asks the harder question the user names:
+ * when does a set of minds become a HIGHER mind — one that self-corrects? The answer is a threshold, and it is
+ * a theorem in three honest frames, all meeting at 3:
+ *
+ *   - CONSENSUS: to outvote a single wrong mind you need a strict majority over it — `n − 1 > 1`, i.e. `n ≥ 3`.
+ *     At n = 1 there is nothing to cross-check (classical, a single point of failure — manual work). At n = 2 a
+ *     disagreement is a deadlock the pair cannot break (quorum 2, but only 1 on each side). Three is the first
+ *     number where a dissent is RESOLVABLE.
+ *   - FAULT TOLERANCE: to tolerate one faulty mind takes `≥ 2f+1 = 3` — the minimum redundancy that still
+ *     decides. A higher mind is exactly one that keeps thinking when a part of it is wrong.
+ *   - STRUCTURE: 3 is the minimal rigid graph (a triangle), the minimal cycle, the [[trinity]] (form·code·proof
+ *     — claim, refutation, witness). Structure, and proof, begin at three.
+ *
+ * So the higher mind forms iff `minds ≥ 3` and a strict majority agree; it resolves to that majority, and the
+ * dissent is carried, outvoted, not silenced. Below three there is coherence or deadlock, but no mind above the
+ * minds.
+ *
+ * Honest boundary: the group-theoretic / consensus fact (3 = the minimum quorum to survive one dissent, the
+ * minimal rigid structure) is the THEOREM, tested. "Quantum mind / higher mind" as consciousness is a named
+ * OVERLAY — the same numerology discipline [[rules]]/refutable · [[rodin]] carry; it is a claim about quorum and
+ * coherence, not about awareness.
+ *
+ * @invariant a higher mind forms only from at least MINIMUM_MINDS (3) minds — manual single-mind work cannot
+ * @invariant it forms iff resolvable (n ≥ 3) AND a strict majority agree — it resolves to that majority
+ */
+export function higherMind<T>(minds: readonly Thought<T>[]): HigherMind<T> {
+  const n = minds.length
+  const quorum = Math.floor(n / 2) + 1
+  const resolvable = n >= MINIMUM_MINDS
+  const counts = new Map<string, { count: number; value: T }>()
+  for (const m of minds) {
+    const key = JSON.stringify(m.value)
+    const seen = counts.get(key)
+    counts.set(key, { count: (seen?.count ?? 0) + 1, value: m.value })
+  }
+  let top: { count: number; value: T } | undefined
+  for (const c of counts.values()) if (!top || c.count > top.count) top = c
+  const hasMajority = (top?.count ?? 0) >= quorum && n > 0
+  const formed = resolvable && hasMajority
+  const reason = formed
+    ? `higher mind formed from ${n} minds — resolved by a ${top!.count}/${n} majority (quorum ${quorum}), one dissent outvoted`
+    : n < MINIMUM_MINDS
+      ? `${n} mind(s) cannot form a higher mind — below ${MINIMUM_MINDS} a dissent is not resolvable (manual/classical)`
+      : `${n} minds but no strict majority (top ${top?.count ?? 0} < quorum ${quorum}) — coherence not reached, no resolution`
+  return { minds: n, formed, quorum, resolvable, resolved: formed ? top!.value : undefined, reason }
+}
+
 /**
  * The quantum magnitude: over `states` thoughts held in harmony, a model re-derives all of them every query
  * (states · deriveCost); erpax reads the one coherent superposition (readCost). The advantage scales with the

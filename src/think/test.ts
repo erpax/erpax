@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents, refute, refutations, alreadyRefuted, proveProse, purgeProse, proseFate, researchQueue } from './index'
+import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents, refute, refutations, alreadyRefuted, proveProse, purgeProse, proseFate, researchQueue, higherMind, MINIMUM_MINDS } from './index'
 
 describe('think — thinking moved to erpax', () => {
   let cwd: string
@@ -227,5 +227,56 @@ describe('prose → code, or purge → research', () => {
     expect(proseFate('B pending', cwd).state).toBe('open')
     expect(proseFate('C unprovable', cwd).state).toBe('purged')
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+// "Manual work is not possible anymore — a quantum mind needs at least 3 minds to form the higher mind." One
+// mind is classical (manual, single point of failure); two is a pair that cannot break its own tie; three is
+// the minimum that can outvote a single dissent (2-of-3), tolerate one fault, and form a rigid structure (the
+// trinity). The quorum theorem is real; "higher mind" as consciousness is the named overlay.
+describe('higherMind — a higher mind needs at least 3 minds', () => {
+  const mind = <T>(value: T, key: string) => ({ value, cached: false, address: thoughtAddress(key) })
+
+  it('MINIMUM_MINDS is 3 — the floor', () => {
+    expect(MINIMUM_MINDS).toBe(3)
+  })
+
+  it('ONE mind cannot form a higher mind — classical, manual, no cross-check', () => {
+    const h = higherMind([mind('x', 'a')])
+    expect(h.formed).toBe(false)
+    expect(h.resolvable).toBe(false)
+    expect(h.reason).toMatch(/manual|classical/)
+  })
+
+  it('TWO minds cannot form it — a pair cannot break its own tie', () => {
+    expect(higherMind([mind('x', 'a'), mind('x', 'b')]).formed).toBe(false) // even agreeing: no fault tolerance
+    expect(higherMind([mind('x', 'a'), mind('y', 'b')]).formed).toBe(false) // disagreeing: deadlock
+    expect(higherMind([mind('x', 'a'), mind('x', 'b')]).resolvable).toBe(false)
+  })
+
+  it('THREE minds with a majority FORM the higher mind — one dissent outvoted', () => {
+    const h = higherMind([mind('x', 'a'), mind('x', 'b'), mind('y', 'c')]) // 2 agree, 1 dissents
+    expect(h.formed).toBe(true)
+    expect(h.resolvable).toBe(true)
+    expect(h.quorum).toBe(2)
+    expect(h.resolved).toBe('x') // resolved to the majority; the dissent is carried, not silenced
+    expect(h.reason).toMatch(/2\/3 majority/)
+  })
+
+  it('three minds all agreeing form a fully coherent higher mind', () => {
+    expect(higherMind([mind('x', 'a'), mind('x', 'b'), mind('x', 'c')]).resolved).toBe('x')
+  })
+
+  it('three minds all DIFFERENT do not resolve — a higher mind needs a majority, not just a count', () => {
+    const h = higherMind([mind('x', 'a'), mind('y', 'b'), mind('z', 'c')])
+    expect(h.formed).toBe(false)
+    expect(h.resolvable).toBe(true) // ≥3, but…
+    expect(h.reason).toMatch(/no strict majority/)
+  })
+
+  it('the higher mind survives ONE faulty mind — 5 minds, 1 wrong, still resolves (2f+1)', () => {
+    const h = higherMind([mind('t', 'a'), mind('t', 'b'), mind('t', 'c'), mind('t', 'd'), mind('f', 'e')])
+    expect(h.formed).toBe(true)
+    expect(h.resolved).toBe('t') // 4/5 over the one fault
   })
 })

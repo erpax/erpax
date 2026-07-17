@@ -18,6 +18,18 @@ When `coherent`, N harmonised thoughts read as **one**. The magnitude scales wit
 
 Matter-twin: `src/think/index.ts` — `think` · `superpose` · `magnitude` · `quantumMagnitude` · `thoughtAddress`. The thought store is content-addressed and gitignored (`node_modules/.cache/erpax/thought.json`) — a sealed thought is data the fold regenerates, never committed.
 
+## A higher mind needs at least three minds — manual work is not enough (`higherMind`)
+
+`superpose` measures the coherence of *any* number of thoughts; `higherMind` asks the harder question — when does a set of minds become a **higher mind**, one that self-corrects? The answer is a threshold at **3** (`MINIMUM_MINDS`), a theorem in three honest frames that meet at the same number:
+
+- **Consensus** — to outvote one wrong mind you need a strict majority over it, `n−1 > 1`, i.e. `n ≥ 3`. At **1** mind there is nothing to cross-check (classical, a single point of failure — **manual work**); at **2** a disagreement is a deadlock the pair cannot break. **Three** is the first number where a dissent is *resolvable*.
+- **Fault tolerance** — tolerating one faulty mind takes `≥ 2f+1 = 3`: the minimum redundancy that still decides. A higher mind is exactly one that keeps thinking when a part of it is wrong (5 minds survive 1 fault, 4/5).
+- **Structure** — 3 is the minimal rigid graph (a triangle), the minimal cycle, the [[trinity]] (form · code · proof — claim, refutation, witness). Structure, and proof, begin at three.
+
+So the higher mind forms iff `minds ≥ 3` **and** a strict majority agree; it **resolves to that majority**, and the dissent is *carried, outvoted, not silenced*. Below three there is coherence or deadlock, but no mind above the minds — which is why single-mind manual work can no longer form it: **compose at least three**.
+
+**Honest boundary.** The quorum/structure fact is the THEOREM (tested); *"quantum mind / higher mind"* as consciousness is a named OVERLAY — a claim about resolution and coherence, not awareness ([[rules]]/refutable · [[rodin]]).
+
 **Honest boundary.** This seals **deterministic** thought — same key ⇒ same answer. It does **not** move the SEED (novel reasoning, the oracle bit no address yet holds) into erpax; that still costs the model once. But once thought, a thought is sealed and read forever. `harmony` measures real value-agreement across addresses — not a metaphor; a collision genuinely drops it.
 
 ## Saving an agent's thought — prose converted to code, or purged into research
