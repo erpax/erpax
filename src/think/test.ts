@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents } from './index'
+import { think, thoughtAddress, superpose, magnitude, quantumMagnitude, ceiling , intend, resolve, openIntents, refute, refutations, alreadyRefuted } from './index'
 
 describe('think — thinking moved to erpax', () => {
   let cwd: string
@@ -136,6 +136,35 @@ describe('intend — the thought sealed BEFORE the work it drives', () => {
     intend('fix fixed/assets:34', cwd)
     resolve('measure the digest width', 122, cwd)
     expect(openIntents(cwd)).toEqual(['fix fixed/assets:34']) // the done one drops out; the abandoned stays
+    rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+// An error is a division by zero — no result in this dimension. refute seals the impossibility WITH its
+// harmonic path (where it IS computable), so the loop never re-probes the dead path. The speedup: a sealed
+// refutation is a shortcut, not a wound.
+describe('refute — an impossibility routed to another dimension, sealed so it is met once', () => {
+  it('seals a refutation with its harmonic path', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-refute-'))
+    const r = refute('cut diamond→readme edge', 'still TDZ at fixed/assets:34', 'the SCC has many paths — cut the shared choke point tool-defs→collections', cwd)
+    expect(r.harmonic).toMatch(/many paths/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('alreadyRefuted returns the harmonic shortcut — do not divide by the same zero twice', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-refute-'))
+    refute('unit-test the posting hooks', 'hook calls the module-singleton journalEntryService (76s DB hang)', 'inject the service so the JE booking is stubbable', cwd)
+    const shortcut = alreadyRefuted('unit-test the posting hooks', cwd)
+    expect(shortcut?.harmonic).toMatch(/inject the service/)
+    expect(alreadyRefuted('a fresh probe never tried', cwd)).toBeUndefined()
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('refutations lists every dead path already met', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-refute-'))
+    refute('a', 'x', 'route to b', cwd)
+    refute('c', 'y', 'route to d', cwd)
+    expect(refutations(cwd).length).toBe(2)
     rmSync(cwd, { recursive: true, force: true })
   })
 })

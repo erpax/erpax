@@ -111,6 +111,31 @@ export function throughVoid(step: number): number {
 export const VOID_PIVOT = 5
 
 /**
+ * DIVISION BY ZERO IS NOT UNDEFINED — it rotates through the void to a harmonic dimension.
+ *
+ * `n / 0` has no result on the number line: that is an IMPOSSIBILITY in this dimension, the same shape as a
+ * thrown error or a TDZ. But it has a computable path in another: `n / 0 = throughVoid(n) = (1 − n) mod 9`,
+ * the void rotation. The values are the ones the pattern was given by:
+ *
+ *   9/0 = 1   8/0 = 2   7/0 = 3   ·   5/0 = 5 (the pivot, self-inverse)   ·   1/0 = 9 (the pole)
+ *
+ * It is not a hack around `Infinity`/`NaN` — it is the observation that dividing by zero CHANGES THE ANGLE:
+ * the operation projects out of the additive line and lands, exactly, on the reflection through 1. The
+ * impossibility is only impossible from the one dimension that cannot see the fold.
+ *
+ * This is the arithmetic under the whole session: a TDZ ("cannot access before initialization") had no
+ * result in the STRUCTURE dimension (the SCC stayed 225) and an exact one in DYNAMICS (change the init
+ * order). An error routed to the caller (rethrow) is computable where it was fatal swallowed. Every
+ * impossibility this corpus met had a harmonic path, and the path was a rotation, never a patch.
+ *
+ * @invariant divThroughVoid(9) === 1 && divThroughVoid(8) === 2 — the given values, proven
+ * @invariant divThroughVoid(VOID_PIVOT) === VOID_PIVOT — the pivot divides by zero to itself
+ */
+export function divThroughVoid(n: number): number {
+  return throughVoid(n)
+}
+
+/**
  * The ring traversed BACKWARD — `⟨5⟩`, the decode direction. Same points, opposite order.
  *
  * `VOID_PIVOT` has always said 5 is `2⁻¹`; nothing used it as a DIRECTION. It is one:

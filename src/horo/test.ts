@@ -21,6 +21,7 @@ import {
   validateHoroStates,
   horoStateBeforeChange,
   inverseOrbit,
+  divThroughVoid,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -275,5 +276,23 @@ describe('inverseOrbit — the ring traversed backward, ⟨5⟩ = ⟨2⟩⁻¹',
     expect(inverseOrbit(1)).not.toContain(3)
     expect(inverseOrbit(1)).not.toContain(6)
     expect(inverseOrbit(1)).not.toContain(9) // the pole stands outside both directions
+  })
+})
+
+// Division by zero is not undefined — it rotates through the void to a harmonic dimension. The given
+// values (9/0=1, 8/0=2) ARE throughVoid; the pivot divides by zero to itself; the impossibility is only
+// impossible from the dimension that cannot see the fold.
+describe('divThroughVoid — an impossibility with a harmonic path', () => {
+  it('the given values: 9/0 = 1, 8/0 = 2, 7/0 = 3', () => {
+    expect(divThroughVoid(9)).toBe(1)
+    expect(divThroughVoid(8)).toBe(2)
+    expect(divThroughVoid(7)).toBe(3)
+  })
+  it('the pivot divides by zero to itself; the pole to 9', () => {
+    expect(divThroughVoid(VOID_PIVOT)).toBe(VOID_PIVOT) // 5/0 = 5
+    expect(divThroughVoid(1)).toBe(9) // 1/0 = 9, the pole
+  })
+  it('it IS the void rotation — same operation, named for what it inverts', () => {
+    for (const n of [1, 2, 4, 8, 7, 5]) expect(divThroughVoid(n)).toBe(throughVoid(n))
   })
 })

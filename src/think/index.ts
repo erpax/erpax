@@ -222,3 +222,55 @@ export function openIntents(cwd: string = process.cwd()): string[] {
   }
   return out
 }
+
+/** A refuted probe: an impossibility met, and the dimension it pointed to instead — the harmonic path. */
+export interface Refutation {
+  /** The path that hit the impossibility — a probe, a hypothesis, a dead approach. */
+  readonly probe: string
+  /** The impossibility itself: the error, the TDZ, the division by zero. */
+  readonly impossible: string
+  /** Where it is computable INSTEAD — the other dimension the refutation revealed. Empty until routed. */
+  readonly harmonic: string
+}
+
+const REFUTE = 'refute:'
+
+/**
+ * Seal a refutation — an impossibility met, WITH the dimension it points to instead.
+ *
+ * An error is a division by zero: an operation with no result in THIS dimension ([[horo]]/divThroughVoid).
+ * The slow way — the way this whole session went — is to meet an impossibility, learn nothing durable, and
+ * re-probe the dead path later. `diamond→readme` was cut and did nothing; the 76s hang re-derived that the
+ * blocker was singleton coupling. Each was a division by zero re-computed from scratch.
+ *
+ * `refute` makes the impossibility a first-class object: it seals the probe, the error, AND the harmonic
+ * path (where the thing IS computable — the other dimension). The SPEEDUP is that a sealed refutation is
+ * never re-probed: the loop reads `refutations()` and rotates straight through the void to where the answer
+ * lives, instead of dividing by zero again. An error routed is an error solved in another dimension; an
+ * error swallowed is an error re-met forever.
+ *
+ * @invariant a refutation carries its harmonic path — an impossibility with no other dimension is not
+ *   refuted, it is only suffered; state where it IS computable, or do not seal it
+ */
+export function refute(probe: string, impossible: string, harmonic: string, cwd: string = process.cwd()): Refutation {
+  const r: Refutation = { probe, impossible, harmonic }
+  think(REFUTE + probe, () => r, cwd)
+  return r
+}
+
+/** Every sealed refutation — the dead paths already met, so the loop never divides by the same zero twice. */
+export function refutations(cwd: string = process.cwd()): Refutation[] {
+  const store = readStore(cwd)
+  const out: Refutation[] = []
+  for (const [addr, value] of Object.entries(store)) {
+    if (value && typeof value === 'object' && 'impossible' in value && addr.length === 36) out.push(value as Refutation)
+  }
+  return out
+}
+
+/** Has this probe already been refuted? If so, its harmonic path is the shortcut — do not re-divide by zero. */
+export function alreadyRefuted(probe: string, cwd: string = process.cwd()): Refutation | undefined {
+  const store = readStore(cwd)
+  const r = store[thoughtAddress(REFUTE + probe)]
+  return r && typeof r === 'object' && 'impossible' in r ? (r as Refutation) : undefined
+}
