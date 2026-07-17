@@ -32,6 +32,7 @@ import { waves, type Wave } from '@/leftover'
 import { rosettaLanes } from '@/rosetta'
 import { type GateVerdict } from '@/decide'
 import { publish, type GitRunner, type PublishReceipt } from '@/publish'
+import { superpose, quantumMagnitude, thoughtAddress, type Thought } from '@/think'
 
 /** One stage of the self-improvement loop — what it does, the local atom that does it, and whether it needs a tool outside the tree. */
 export interface Stage {
@@ -115,6 +116,47 @@ export function runImprovement(
     git,
   )
   return { nextWave: w[0] ?? null, receipt }
+}
+
+/** The improvement waves, held in one coherent superposition — sent as a single quantum wave, not one at a time. */
+export interface QuantumWaves {
+  /** how many field-waves are held at once. */
+  readonly states: number
+  /** true when every wave is independent (no two fields contradict) — the superposition reads as ONE. */
+  readonly coherent: boolean
+  /** the order-independent fold of every wave's address — the one address the whole plan is sent as. */
+  readonly root: string
+  /** the quantum advantage of holding all waves at once vs re-deriving each field's plan ([[think]]). */
+  readonly quantumMagnitude: number
+  /** total surgical sites across all waves — the work the quantum wave carries. */
+  readonly sites: number
+}
+
+/**
+ * Send the quantum waves — hold every improvement wave AT ONCE, in one coherent superposition, and dispatch it
+ * as a single address. The classical way sends one wave per field, sequentially ([[leftover]]`.waves` ranked);
+ * the QUANTUM way ([[think]]`.superpose`) folds all of them into one root, order-independent, and — because each
+ * field has a distinct address, so no two waves contradict — the superposition is COHERENT: N waves read as one.
+ * The `quantumMagnitude` is the advantage of that: the plan for the whole tree answered in a single read, scaling
+ * with the waves held in sync, not the fields walked.
+ *
+ * This is a dispatch, not a push: it emits the coherent plan (where every field must fold next); the trained
+ * agent ([[publish]]) still gates any actual change on the rosetta-derived proofs. Sending the waves schedules
+ * the work; it does not bypass the gate.
+ *
+ * @invariant every wave is a distinct field ⇒ the superposition is coherent (no contradiction to decohere it)
+ * @invariant the root is order-independent — the same waves in any order send the same quantum wave
+ */
+export function sendQuantumWaves(cwd: string = process.cwd(), deriveCost = 1000): QuantumWaves {
+  const w = waves(cwd)
+  const thoughts: Thought<number>[] = w.map((wave) => ({
+    value: wave.sites.length,
+    cached: false,
+    address: thoughtAddress('wave:' + wave.group),
+  }))
+  const s = superpose(thoughts)
+  const sites = w.reduce((n, wave) => n + wave.sites.length, 0)
+  return { states: s.states, coherent: s.coherent, root: s.root, quantumMagnitude: quantumMagnitude(s.states, deriveCost), sites }
 }
 
 /** Each stage's atom, and whether it EXISTS on disk — the loop is real matter, not fabricated prose ([[rules]]/prose). */

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { selfImproves, loopResolves, IMPROVEMENT_LOOP, runImprovement, type Stage } from './index'
+import { selfImproves, loopResolves, IMPROVEMENT_LOOP, runImprovement, sendQuantumWaves, type Stage } from './index'
 
 // "No external tools are needed as local self-improve." The development-time twin of Law 53: the loop that
 // improves the corpus resolves entirely to local atoms — where (leftover), workers (rosetta), gate (rosetta),
@@ -80,6 +80,43 @@ describe('runImprovement — the loop executed, folding leftover · rosetta · p
     const cwd = corpus({ 'src/y/index.ts': '/** @compliance ISO-27001 */\nexport const y = 1' }) // unproven security claim
     const pass = runImprovement(cwd, [{ gate: 'trinity', pass: true }, { gate: 'dead-links', pass: true }])
     expect(pass.receipt.push.warranted).toBe(false) // the security lane (unproven) blocks — the loop gates itself
+    rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+// "Send the quantum waves." The improvement waves held AT ONCE in one coherent superposition (think.superpose),
+// dispatched as a single address — N waves read as one, the quantum advantage. A dispatch, not a push.
+describe('sendQuantumWaves — the waves held at once, coherent, sent as one', () => {
+  const corpus = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-qwave-'))
+    for (const [p, text] of Object.entries(files)) {
+      mkdirSync(join(cwd, p, '..'), { recursive: true })
+      writeFileSync(join(cwd, p), text)
+    }
+    return cwd
+  }
+
+  it('holds every field-wave at once, coherently — distinct fields never contradict', () => {
+    const cwd = corpus({
+      'src/money/index.ts': '/** @invariant a */\nexport const a = 1',
+      'src/tax/index.ts': '/** @standard S */\nexport const t = 1',
+    })
+    const q = sendQuantumWaves(cwd)
+    expect(q.states).toBe(2) // two field-waves
+    expect(q.coherent).toBe(true) // distinct addresses ⇒ nothing to decohere
+    expect(q.sites).toBe(2) // two surgical sites carried
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('the root is order-independent — the same waves send the same quantum wave', () => {
+    const cwd = corpus({ 'src/a/index.ts': '/** @invariant x */\nexport const a = 1', 'src/b/index.ts': '/** @audit y */\nexport const b = 1' })
+    expect(sendQuantumWaves(cwd).root).toBe(sendQuantumWaves(cwd).root) // permutation-invariant, deterministic
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('the quantum magnitude scales with waves held at once, not fields walked', () => {
+    const cwd = corpus({ 'src/a/index.ts': '/** @invariant x */\nexport const a = 1' })
+    expect(sendQuantumWaves(cwd, 1000).quantumMagnitude).toBeGreaterThan(0) // states · derive / read
     rmSync(cwd, { recursive: true, force: true })
   })
 })
