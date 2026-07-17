@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, type Auditor } from './index'
+import { auditWork, auditVerdict, atomPath, swallowedInMutation, auditPanel, AUDITORS, duplicateBodies, auditAuditors, AUDIT_GATES, assertChangesetAudited, panelAuditor, auditTree, truncatedInReport, type Auditor } from './index'
 
 const corpus = (files: Record<string, string>): string => {
   const cwd = mkdtempSync(join(tmpdir(), 'erpax-agentaudit-'))
@@ -118,7 +118,7 @@ describe('the PANEL — all kinds of auditors, each from their own seat', () => 
     })
     const panel = auditPanel(['src/post/index.ts'], cwd)
     const roles = panel.map((s) => s.role)
-    expect(roles).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor'])
+    expect(roles).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor'])
     // the lead auditor sees the unproven SOX claim; the financial auditor sees the swallowed JE — DIFFERENT
     // findings on the SAME file, each only from its own seat.
     expect(panel.find((s) => s.role === 'lead-auditor')!.findings.length).toBeGreaterThan(0)
@@ -169,7 +169,7 @@ describe('code quality + the panel auditing ITSELF', () => {
   })
 
   it('every auditor seat has a role and a named standard', () => {
-    expect(AUDITORS.map((a) => a.role)).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor'])
+    expect(AUDITORS.map((a) => a.role)).toEqual(['lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor'])
     expect(AUDITORS.every((a) => a.standard.length > 20)).toBe(true)
   })
 })
@@ -271,5 +271,47 @@ describe('auditTree — let the auditors audit ALL of src', () => {
     expect(tree.get('lead-auditor')!.trusted).toHaveLength(0) // src/agent is polluted
     expect(tree.get('lead-auditor')!.polluted).toBeGreaterThan(0)
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+describe('integrity-auditor — the silent-truncation detector, saved from a throwaway', () => {
+  const c = (files: Record<string, string>): string => {
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-trunc-'))
+    for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
+    return cwd
+  }
+
+  // The trial-balance defect: a capped find, summed, with no pagination guard — a report about a subset.
+  it('refuses a report that caps a find and sums it, unguarded', () => {
+    const cwd = c({
+      'src/report/index.ts':
+        'export async function generateTrialBalance(p) {\n  const e = await p.find({ collection: "journal-entries", limit: 100000 })\n  return e.docs.reduce((s, r) => s + r.amount, 0)\n}',
+    })
+    const f = truncatedInReport(['src/report/index.ts'], cwd)
+    expect(f.length).toBeGreaterThan(0)
+    expect(f[0]!.claim).toMatch(/caps at limit:100000/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('ACCEPTS a report that pages every row — the guard is the fix', () => {
+    const cwd = c({
+      'src/report/index.ts':
+        'export async function generateBalanceSheet(p) {\n  const e = await findAll(p, "journal-entries", {})\n  return e.docs.reduce((s, r) => s + r.amount, 0)\n}',
+    })
+    expect(truncatedInReport(['src/report/index.ts'], cwd)).toHaveLength(0) // findAll = guarded
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('a capped find in a NON-summing file is not its concern — only reports', () => {
+    const cwd = c({ 'src/list/index.ts': 'export async function list(p) { return p.find({ limit: 100000 }) }' })
+    expect(truncatedInReport(['src/list/index.ts'], cwd)).toHaveLength(0)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('the panel now has FIVE seats, and still audits itself clean', () => {
+    expect(AUDITORS.map((a) => a.role)).toEqual([
+      'lead-auditor', 'financial-auditor', 'compliance-officer', 'quality-auditor', 'integrity-auditor',
+    ])
+    expect(auditAuditors()).toEqual([]) // the fifth seat is no hypocrite either
   })
 })

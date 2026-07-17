@@ -196,6 +196,54 @@ export function duplicateBodies(files: readonly string[], cwd: string = process.
   return out
 }
 
+/**
+ * A report that reads a CAPPED page and sums it — the integrity auditor's finding: a `payload.find({ limit })`
+ * with a hardcoded ceiling, in a summing/report file, with no `hasNextPage`/`findAll`/`totalDocs` guard. A cap
+ * that drops rows is a report about a SUBSET wearing the name of the whole — the trial-balance defect that fed
+ * the balance sheet and the SAF-T export while reporting `isBalanced: true`.
+ *
+ * This was a THROWAWAY probe when it found five live sites; saved here because an auditor that composes a
+ * deleted script is a control with no evidence — the exact thing this atom refuses. It is the fifth seat, and
+ * the reason the class cannot silently return.
+ */
+export function truncatedInReport(files: readonly string[], cwd: string = process.cwd()): Finding[] {
+  const out: Finding[] = []
+  for (const rel of files) {
+    if (!isCode(rel)) continue
+    let text: string
+    try {
+      text = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue
+    }
+    // only a SUMMING file is at risk — a report, a balance, an aggregate
+    const sums = /\.reduce\(|aggregate|generate\w*(Balance|Statement|Report|Trial|Sheet|Aging)/i.test(text)
+    if (!sums) continue
+    const guarded = /hasNextPage|totalDocs|findAll\(|\.totalPages/.test(text)
+    if (guarded) continue
+    const src = ts.createSourceFile(rel, text, ts.ScriptTarget.ESNext, true)
+    const walk = (n: ts.Node): void => {
+      if (
+        ts.isCallExpression(n) &&
+        ts.isPropertyAccessExpression(n.expression) &&
+        n.expression.name.text === 'find' &&
+        n.arguments[0] &&
+        ts.isObjectLiteralExpression(n.arguments[0])
+      ) {
+        for (const p of n.arguments[0].properties) {
+          if (ts.isPropertyAssignment(p) && p.name.getText() === 'limit' && ts.isNumericLiteral(p.initializer) && Number(p.initializer.text) >= 1000) {
+            const line = src.getLineAndCharacterOfPosition(n.getStart()).line + 1
+            out.push({ file: rel.replace(/\\/g, '/'), claim: `find at line ${line} caps at limit:${p.initializer.text} and sums it, unguarded — a report about a subset`, concern: 'claim-unrefutable' })
+          }
+        }
+      }
+      ts.forEachChild(n, walk)
+    }
+    walk(src)
+  }
+  return out
+}
+
 /** The panel — every auditor seat. Add a seat by adding a standard, never by re-scanning the corpus. */
 export const AUDITORS: readonly Auditor[] = [
   {
@@ -217,6 +265,11 @@ export const AUDITORS: readonly Auditor[] = [
     role: 'quality-auditor',
     standard: 'ISO/IEC 25010 §5.6 maintainability — DRY: a body copied is a law stated twice, free to drift',
     review: (files, cwd) => duplicateBodies(files, cwd),
+  },
+  {
+    role: 'integrity-auditor',
+    standard: 'IAS 1 completeness — a report sums ALL rows; a silent cap is a subset wearing the name of the whole',
+    review: (files, cwd) => truncatedInReport(files, cwd),
   },
 ]
 
