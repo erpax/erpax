@@ -7,6 +7,8 @@ import { describe, it, expect } from 'vitest'
 import { computeContentUuid } from '@/integrity'
 import { formTeam, shareSkills, teamSkills, teamUuid } from '@/team'
 import { enforceTeamCommsEmit } from '@/team'
+import { LEAD_TEAM_MEMBERS, leadTeam, memberGroups, leadHierarchy } from '@/team'
+import { MINIMUM_MINDS } from '@/think'
 
 const TENANT = 'tenant-a'
 
@@ -41,5 +43,41 @@ describe('team — hub re-exports comms gate', () => {
         emit: { tenantId, event, eventUuid, agent: 'agent-1', payload, depth: 0 },
       }).ok,
     ).toBe(false)
+  })
+})
+
+// "Any team size may be of 2 or 3 member teams and one leader." The leader is not rank — a 2-member team
+// DEADLOCKS (n=2), and the leader is the structural third that makes the pair resolvable: 2 members + 1 leader
+// = 3 = MINIMUM_MINDS, a higher mind. So every lead-team is ≥3, never a solo, and the leaders recurse to one apex.
+describe('lead-team — 2 or 3 members + one leader, ≥3, fractal to one apex', () => {
+  it('a lead-team is 2 or 3 members + exactly one leader — size 3 or 4', () => {
+    expect(leadTeam(2)).toEqual({ members: 2, leader: 1, size: 3 })
+    expect(leadTeam(3)).toEqual({ members: 3, leader: 1, size: 4 })
+    expect(LEAD_TEAM_MEMBERS).toEqual([2, 3]) // never 1 — a solo cannot self-correct
+  })
+
+  it('every lead-team is ≥ MINIMUM_MINDS — the leader is the third that resolves the pair deadlock', () => {
+    for (const m of LEAD_TEAM_MEMBERS) expect(leadTeam(m).size).toBeGreaterThanOrEqual(MINIMUM_MINDS)
+    expect(leadTeam(2).size).toBe(MINIMUM_MINDS) // 2 members + 1 leader = exactly 3, the minimum higher mind
+  })
+
+  it('a headcount splits into member-groups of 2 or 3 — never a solo left behind', () => {
+    for (let n = 2; n <= 60; n++) {
+      const g = memberGroups(n)
+      expect(g.reduce((a, b) => a + b, 0)).toBe(n) // covers everyone
+      expect(g.every((x) => x === 2 || x === 3)).toBe(true) // no 1
+    }
+    expect(memberGroups(4)).toEqual([2, 2]) // 4 → 2+2, never 3+1
+    expect(memberGroups(1)).toEqual([]) // a solo is no team
+  })
+
+  it('the leaders recurse into higher lead-teams, closing to one apex', () => {
+    const h = leadHierarchy(10)
+    expect(h.levels[h.levels.length - 1]).toBe(1) // one apex leader
+    expect(h.depth).toBe(h.levels.length)
+    expect(h.teams).toBe(h.levels.reduce((a, b) => a + b, 0))
+    // a 100-person org is only 5 leadership tiers deep — the small span keeps it shallow (Graicunas)
+    expect(leadHierarchy(100).depth).toBe(5)
+    expect(leadHierarchy(2).depth).toBe(1) // the smallest team is already whole
   })
 })

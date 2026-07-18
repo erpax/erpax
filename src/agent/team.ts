@@ -132,3 +132,74 @@ export function basicTeams(size: number): BasicTeamSize[] {
 
 /** This team's grouping into basic teams (over its distinct members). */
 export const teamGrouping = (team: Team): BasicTeamSize[] => basicTeams(team.members.length)
+
+// ── The lead-team refinement ──────────────────────────────────────────────
+// A basic team's SIZE has a basis; a working team also has a LEADER. The law:
+// any headcount organises as teams of 2 or 3 MEMBERS + one LEADER — total 3 or 4,
+// never a solo. This is not rank for its own sake. A 2-member team DEADLOCKS (n=2,
+// no majority — the deadlock [[think]].higherMind names), and the leader is the
+// structural THIRD that makes the pair RESOLVABLE (2 members + 1 leader = 3 =
+// MINIMUM_MINDS). So every lead-team is ≥3 and can form a higher mind; the leader
+// is the tie-breaker, not a rank. And it is FRACTAL: the leaders recurse — 2-3
+// leaders + a higher leader — the same unit at every scale, to one apex.
+
+/** A lead-team's member count, excluding the leader: 2 or 3 — never 1, a solo cannot self-correct. */
+export const LEAD_TEAM_MEMBERS = [2, 3] as const
+export type LeadTeamMembers = (typeof LEAD_TEAM_MEMBERS)[number]
+
+/** One lead-team: 2 or 3 members + exactly one leader. `size = members + 1 ∈ {3,4}`, always ≥ MINIMUM_MINDS. */
+export interface LeadTeam {
+  readonly members: LeadTeamMembers
+  readonly leader: 1
+  /** members + leader — 3 or 4; the leader is the third that resolves the pair's deadlock ([[think]].higherMind). */
+  readonly size: number
+}
+
+export function leadTeam(members: LeadTeamMembers): LeadTeam {
+  return { members, leader: 1, size: members + 1 }
+}
+
+/** Split a headcount into member-groups of 3 (trinity-dense) then 2 — never 1 (a solo is no team). N ≥ 2. */
+export function memberGroups(headcount: number): LeadTeamMembers[] {
+  if (!Number.isInteger(headcount) || headcount < 2) return []
+  const out: LeadTeamMembers[] = []
+  let n = headcount
+  while (n > 0) {
+    if (n === 2) { out.push(2); break }
+    if (n === 4) { out.push(2, 2); break } // 4 → 2+2, never 3+1 (no solo left behind)
+    out.push(3)
+    n -= 3
+  }
+  return out
+}
+
+/** The recursive lead hierarchy: members form lead-teams, whose LEADERS form higher lead-teams, to one apex. */
+export interface LeadHierarchy {
+  readonly headcount: number
+  /** lead-team count per level, bottom-up; the last level is 1 — the apex leader. */
+  readonly levels: readonly number[]
+  /** leadership tiers — ⌈log~3.5(headcount)⌉. */
+  readonly depth: number
+  /** total lead-teams across every level. */
+  readonly teams: number
+}
+
+/**
+ * Organise any headcount as lead-teams of 2-3 members + one leader, whose leaders recurse the same way — the
+ * fractal [[think]].higherMind, one unit at every scale, all the way to a single apex leader.
+ *
+ * @invariant every lead-team is 2 or 3 members + 1 leader — size ∈ {3,4}, never a solo, always ≥ MINIMUM_MINDS
+ * @invariant the leaders of one level are the members of the next — the structure closes to one apex
+ */
+export function leadHierarchy(headcount: number): LeadHierarchy {
+  if (!Number.isInteger(headcount) || headcount < 2) return { headcount, levels: [], depth: 0, teams: 0 }
+  const levels: number[] = []
+  let n = headcount
+  while (n >= 2) {
+    const groups = memberGroups(n).length // this level's lead-teams; each elects one leader
+    levels.push(groups)
+    if (groups === 1) break // a single team ⇒ its leader is the apex
+    n = groups // the leaders become the next level's members
+  }
+  return { headcount, levels, depth: levels.length, teams: levels.reduce((a, b) => a + b, 0) }
+}

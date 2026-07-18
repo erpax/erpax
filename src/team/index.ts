@@ -10,10 +10,14 @@
  */
 export {
   BASIC_TEAM_SIZES,
+  LEAD_TEAM_MEMBERS,
   TEAM_DISCIPLINE,
   basicTeams,
   formTeam,
   isBasicTeam,
+  leadHierarchy,
+  leadTeam,
+  memberGroups,
   mergeTeams,
   shareSkills,
   spawnTeam,
@@ -22,6 +26,9 @@ export {
   teamSkills,
   teamUuid,
   type BasicTeamSize,
+  type LeadHierarchy,
+  type LeadTeam,
+  type LeadTeamMembers,
   type Team,
   type TeamCoverage,
 } from '@/agent/team'
