@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { evolve, type Belief } from './index'
+import { evolve, beliefFrom, type Belief } from './index'
 
 // "Any time you try to evolve, what you are sure about pulls you down to 0 to invert your mind to survive." The
 // paradox is real (you can't doubt everything at once — Neurath, Gödel). The resolution: invert the FRAGILE
@@ -46,5 +46,21 @@ describe('evolve — invert the fragile, stand on the invariant; survives iff a 
     const e = evolve(mostlyFragile)
     expect(e.survives).toBe(true) // the one invariant (belief 4) is the keel
     expect(e.inverted).toHaveLength(8) // the other eight go through the void
+  })
+})
+
+// The gap the wave found: a keel is not a label — it is having survived inversion. beliefFrom DERIVES invariance
+// from coincidence.invarianceVerdict, folding it into use (the belief is a keel iff it survived every inversion).
+describe('beliefFrom — the keel is decided by the inversion test, not asserted', () => {
+  it('a belief that survived every inversion is a keel (invariant)', () => {
+    expect(beliefFrom('the method', 9, 9, 0.1).invariant).toBe(true) // 0.1^9 ≤ threshold ⇒ invariant
+  })
+  it('a belief that broke under inversion is fragile — it goes through the void', () => {
+    expect(beliefFrom('an overclaim', 3, 9, 0.1).invariant).toBe(false) // broke ⇒ fragile
+  })
+  it('evolve on derived beliefs survives iff at least one survived every inversion', () => {
+    const mind = [beliefFrom('fragile A', 2, 9), beliefFrom('keel B', 12, 12), beliefFrom('fragile C', 1, 5)]
+    expect(evolve(mind).survives).toBe(true) // the one that survived all inversions is the keel
+    expect(evolve(mind).keel).toEqual(['keel B'])
   })
 })

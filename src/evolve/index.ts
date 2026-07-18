@@ -37,6 +37,7 @@
  *
  * Composes [[horo]] · [[coincidence]] · [[conformal]] · [[theorem]] · [[seeing]] · [[law]].
  */
+import { invarianceVerdict } from '@/coincidence'
 
 /** One thing held to be so — invariant (survives inversion, a theorem/keel) or fragile (authority/coincidence). */
 export interface Belief {
@@ -75,6 +76,16 @@ export function evolve(beliefs: readonly Belief[]): Evolution {
       ? `survives — inverted ${inverted.length} fragile belief(s) through the void, stood on ${keel.length} invariant keel(s); evolved and reopened (9→1)`
       : `annihilated — every belief was fragile, so inversion pulled all to 0; nothing invariant to be the self that evolved`,
   }
+}
+
+/**
+ * Build a belief whose keel-status is DECIDED by the inversion test, not asserted — a belief is invariant (a
+ * keel) iff it survived every inversion tried ([[coincidence]].invarianceVerdict). This closes the gap the bare
+ * `invariant: boolean` left: what makes a certainty a keel is not a label you attach, it is having survived
+ * being inverted. `survived < tried` ⇒ fragile ⇒ goes through the void.
+ */
+export function beliefFrom(name: string, survived: number, tried: number, perInversionChance = 0.1): Belief {
+  return { name, invariant: invarianceVerdict(survived, tried, perInversionChance).verdict === 'invariant' }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
