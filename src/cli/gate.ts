@@ -2,6 +2,7 @@
  * cli/gate — authoritative CI/pre-push gate lanes (confirm:full ⊇ gate).
  */
 import { spawnSync } from 'node:child_process'
+import { timeoutOf } from '@/timeout'
 import { inventoryGateWarnings } from '@/agent/inventory'
 import {
   formatPackageApprovalMatrix,
@@ -34,11 +35,18 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   ['test:int', 'pnpm erpax test int'],
 ]
 
-export function runShell(cmd: string, passthrough: readonly string[] = [], heartbeatLabel?: string): number {
+export function runShell(cmd: string, passthrough: readonly string[] = [], heartbeatLabel?: string, samplesMs: readonly number[] = []): number {
   const full = passthrough.length ? `${cmd} ${passthrough.map((a) => JSON.stringify(a)).join(' ')}` : cmd
   const stop = heartbeatLabel ? startProgressHeartbeat(heartbeatLabel) : () => {}
-  const r = spawnSync(full, { shell: true, stdio: 'inherit', cwd: process.cwd() })
+  // The reasonable timeout is COMPUTED (@/timeout): rung of the 1·2·3·5-minute ladder from measured
+  // samples; no samples ⇒ heaviest lanes get the 5-minute ceiling. Past it the LANE is the defect.
+  const bound = samplesMs.length ? timeoutOf(samplesMs) : { ms: 300_000, minutes: 5 as const, exceeds: false }
+  const r = spawnSync(full, { shell: true, stdio: 'inherit', cwd: process.cwd(), timeout: bound.ms, killSignal: 'SIGKILL' })
   stop()
+  if (r.signal) {
+    console.error(`\n✗ timed out at ${bound.minutes}min (computed rung) — a command past the ladder is split, never the ceiling raised`)
+    return 1
+  }
   return r.status ?? 1
 }
 

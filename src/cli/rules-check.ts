@@ -3,6 +3,7 @@
  */
 import { spawnSync } from 'node:child_process'
 import { assertRulesHold } from '@/rules'
+import { timeoutOf } from '@/timeout'
 
 const TSX = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" tsx'
 
@@ -67,6 +68,9 @@ export function runRulesCheck(cwd: string = process.cwd()): number {
     shell: true,
     stdio: 'inherit',
     cwd,
+    // no samples yet ⇒ the standing rung-3 cap (@/timeout); a slower ratchet earns its rung from evidence
+    timeout: timeoutOf().ms,
+    killSignal: 'SIGKILL',
   })
   const code = r.status ?? 1
   if (code !== 0) {
