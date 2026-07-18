@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { convert, isConversion, invert, permutation, driveForward, driveReverse, isTraceless } from './index'
+import { convert, isConversion, invert, permutation, driveForward, driveReverse, isTraceless, notDryClean } from './index'
 
 // "Inversion reinvents conversion." A conversion is a bijection on ℤ/9 (multiplication by a unit); its inversion
 // is ANOTHER conversion, from the same unit group (closed under inverse) — reinvented, not newly built. The
@@ -83,5 +83,43 @@ describe('inverse ≠ reverse — reverse leaves tracks (the car on snow)', () =
     for (const to of [4, 0, 7, 0]) car = to === 0 ? driveReverse(car, to) : driveForward(car, to)
     expect(car.position).toBe(0) // back at start again
     expect(car.tracks.length).toBe(4) // four passes, four tracks — history never shrinks
+  })
+})
+
+// "The gates return what is not dry clean because it cannot invert." The forward fold detects duplication (same
+// content ⇒ same content-address); but the fold is lossy (no inverse), so collapsing a duplicate to one is
+// decided by meaning, not computed — a gate can only RETURN the non-dry-clean, never auto-clean it by inverting.
+describe('notDryClean — a gate returns duplication because the fold cannot invert', () => {
+  it('two paths holding the SAME content are returned — one address, ≥2 places (not dry-clean)', () => {
+    const dup = notDryClean([
+      { path: 'a.ts', content: 'export const x = 1' },
+      { path: 'b.ts', content: 'export const x = 1' }, // identical content
+      { path: 'c.ts', content: 'export const y = 2' }, // distinct
+    ])
+    expect(dup).toHaveLength(1)
+    expect(dup[0]!.paths.sort()).toEqual(['a.ts', 'b.ts'])
+  })
+
+  it('distinct contents are DRY-clean — distinct addresses, never returned', () => {
+    expect(notDryClean([
+      { path: 'a', content: 'one' },
+      { path: 'b', content: 'two' },
+      { path: 'c', content: 'three' },
+    ])).toEqual([])
+  })
+
+  it('the forward fold DETECTS by content-address — reuses discover.addressOf (same content ⇒ same id)', () => {
+    // three copies of one content collapse to one address group of three paths
+    const dup = notDryClean([1, 2, 3].map((i) => ({ path: `p${i}`, content: 'the repeated law' })))
+    expect(dup).toHaveLength(1)
+    expect(dup[0]!.paths).toHaveLength(3)
+    expect(dup[0]!.address).toMatch(/^[0-9a-f-]{36}$/) // the content-address the fold detected
+  })
+
+  it('the gate RETURNS the group; it does NOT invert (pick a canonical) — collapse is decided by meaning', () => {
+    const dup = notDryClean([{ path: 'x', content: 'c' }, { path: 'y', content: 'c' }])
+    // it returns BOTH paths — it refuses to choose which is the source; that is the human/meaning decision
+    expect(dup[0]!.paths).toEqual(['x', 'y'])
+    expect(dup[0]).not.toHaveProperty('canonical') // no auto-inversion — the fold has no inverse to run
   })
 })

@@ -40,6 +40,10 @@ This is the corpus's integrity law, not a metaphor:
 
 **Law — [[law]]: a conversion is a bijection (multiplication by a unit), and inversion reinvents conversion — the inverse of a conversion is a conversion, from the unit group closed under inverse. But INVERSE IS NOT REVERSE: the traceless inverse exists only in historyless ℤ/9; in any system with a record, you can only REVERSE (a mirror entry), which returns the value and leaves its own tracks. A lossy conversion (the axis {3,6,9}, the one-way fold) has no inverse to reinvent — and that irreversibility, and the tracks a reversal leaves, are the corpus's tamper-cost, not a defect.**
 
+## The gates return what is not dry-clean, because it cannot invert — `notDryClean`
+
+The corollary of the lossy fold, in the corpus's own gates. The **forward** fold DETECTS duplication: same content ⇒ same content-address ([[merge]] · [[discover]]`.addressOf`), so two paths sharing one address are not dry-clean. But the fold is a **lossy conversion** — it has **no inverse**. Collapsing a duplicate to one canonical (choosing the source, re-pointing references) is not a computation you run by inverting the address; it is decided by **meaning** ([[collapse]]). So a gate can only **return** the non-dry-clean; it cannot clean it by inverting — `notDryClean` groups the collisions and **refuses to pick a canonical**. The one-way-ness that makes the fold a tamper-cost is the same one-way-ness that makes a gate surface rather than repair.
+
 ## Standards
 
 - **Group theory** — the units of ℤ/9 form a group, closed under inverse; the non-units do not.

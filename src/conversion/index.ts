@@ -23,6 +23,7 @@
  * Composes [[rodin]] · [[horo]] · [[merge]] · [[law]].
  */
 import { inverseMod9 } from '@/rodin'
+import { addressOf } from '@/discover'
 
 const dr9 = (n: number): number => (((n % 9) + 9) % 9)
 
@@ -85,6 +86,47 @@ export function driveReverse(car: OnSnow, to: number): OnSnow {
 /** True iff the state is as if nothing happened — position at start AND no tracks. Only a historyless system can. */
 export function isTraceless(car: OnSnow, start: number): boolean {
   return car.position === start && car.tracks.length === 0
+}
+
+/** An item under DRY inspection — where it lives and what it holds. */
+export interface Item {
+  readonly path: string
+  readonly content: string
+}
+
+/** A non-dry-clean group — one content-address held at MORE THAN ONE path (duplication the forward fold detects). */
+export interface Duplication {
+  readonly address: string
+  readonly paths: readonly string[]
+}
+
+/**
+ * The gates return what is not DRY-clean, because it cannot invert.
+ *
+ * The FORWARD fold DETECTS duplication: same content ⇒ same content-address ([[merge]] · [[discover]].addressOf),
+ * so two paths sharing one address are a duplicate — not dry-clean. That detection is cheap and mechanical. But
+ * the fold is a LOSSY conversion (above): it has NO inverse. Collapsing a duplicate to ONE canonical — choosing
+ * which path is the source, re-pointing every reference — is not a computation you can run by inverting the
+ * address; it is decided by MEANING ([[collapse]]: content-addressing finds the candidates, a human decides the
+ * merge). So a gate can only RETURN the non-dry-clean; it cannot clean it by inverting. The one-way-ness that
+ * makes the fold a tamper-cost is the very same one-way-ness that makes a gate surface rather than repair.
+ *
+ * @invariant a content held at ≥2 paths is returned — the not-dry-clean the forward fold detects
+ * @invariant distinct contents (distinct addresses) are never returned — they are dry-clean
+ * @invariant the gate RETURNS the group; it does not pick a canonical — the inverse (collapse) is not mechanical
+ */
+export function notDryClean(items: readonly Item[]): readonly Duplication[] {
+  const byAddress = new Map<string, string[]>()
+  for (const { path, content } of items) {
+    const address = addressOf(content) // the forward fold — same content ⇒ same address
+    const paths = byAddress.get(address) ?? []
+    paths.push(path)
+    byAddress.set(address, paths)
+  }
+  return [...byAddress.entries()]
+    .filter(([, paths]) => paths.length > 1) // ≥2 paths at one address = duplication, not dry-clean
+    .map(([address, paths]) => ({ address, paths }))
+    .sort((a, b) => b.paths.length - a.paths.length)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
