@@ -47,7 +47,20 @@ That delta is also [[rules]]/canonical paying off: ecommerce, forms, search, red
 
 `collectionSignature` scores a collection against a hand-picked marker list (`money: ['amount','debit',…]`). It clusters 231 → **30** signatures — an alluring *87% compression* — and **47 collections match no marker at all**. A basis typed once is a **frozen rosetta**: it reports what its author remembered, not what the corpus has. A moving rosetta derives its poles from the incidence itself (the concept lattice); until that exists, this measures the **shapes**, which need no basis.
 
-**Honest boundary.** Proves shapes are **distinct**, never that they *should* be. It reads `payload-types`, so a collection absent from the generated types is invisible; and it compares **field names + types**, so two tables meaning the same thing under different names are invisible to it — which is exactly the `customers`/`vendors` case, caught only because they already agree on 12 field names.
+## The inverse-polarity lens — a conjecture, measured
+
+Held as a conjecture (*"the collections fold in inverted pairs — one concept at opposite polarity, foldable to one atom + a counterparty sign through [[party]]/[[perspective]]"*), then answered by the config. `inversePairs()` takes a **declared** map of antonym pairs — a human MEANING judgement written in the open so it can be argued with, never inferred (the same split [[rules]]/audience makes) — and computes each pair's real shape overlap:
+
+| declared pair | jaccard | verdict |
+| --- | ---: | --- |
+| `customers ↔ vendors` | 0.92 | **theorem** — the shapes collapse |
+| `quotes ↔ vendor-quotes` | 0.33 | meaning — a re-modelling a human decides |
+| `payments ↔ receipts` | 0.04 | distinct — two tables that only rhyme |
+| `sales ↔ returns` | 0.12 | distinct |
+
+**The theorem refutes the eye, not only the dream.** A conjecture named the fold a *"cube of 21 crosses"*; reality says **6 declared pairs, exactly 1 shape-provable** — the same `customers ↔ vendors`. And the antonyms I was *sure* were inverse pairs (`payments`/`receipts`, `sales`/`returns`) share almost no fields — naming a pair by meaning is the harmonic over-reach, and the shapes say no. The dream made contact and was answered: a handful, one real, far from 21 — a conjecture that pointed *approximately*, credited with nothing.
+
+**Honest boundary.** Proves shapes are **distinct**, never that they *should* be. It reads `payload-types`, so a collection absent from the generated types is invisible; and it compares **field names + types**, so two tables meaning the same thing under different names are invisible to it — which is exactly the `customers`/`vendors` case, caught only because they already agree on 12 field names. The polarity map is **declared**, so it proves shape overlap for the pairs a human named — never that the named pairs are the only ones, nor that a `theorem` verdict *should* be merged.
 
 **Law — [[law]]: a merge is proven by shape and decided by meaning. Content-addressing finds the candidates; nothing but a human decides that a customer and a vendor are one party.**
 

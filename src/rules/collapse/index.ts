@@ -131,6 +131,59 @@ export function subsets(cwd: string = process.cwd()): Subset[] {
   return out.sort((x, y) => x.extra.length - y.extra.length)
 }
 
+/**
+ * DECLARED, not measured: collection pairs that are ONE concept at opposite polarity — foldable to one atom + a
+ * counterparty sign through [[party]]/[[perspective]] (seller↔buyer, out↔in, sale↔reversal). This is a human
+ * MEANING judgement, written in the open so it can be argued with — never inferred, so it can never be a frozen
+ * rosetta pretending to be a measurement ([[rules]]/audience made the same split). Add or contest a row here;
+ * the SHAPE verdict beside it is the theorem the config decides.
+ */
+export const POLARITY_CANDIDATES: readonly (readonly [string, string, string])[] = [
+  ['customers', 'vendors', 'party: seller ↔ buyer'],
+  ['sales-orders', 'purchase-orders', 'order: sell ↔ buy'],
+  ['quotes', 'vendor-quotes', 'quote: outbound ↔ inbound'],
+  ['shipments', 'goods-receipts', 'goods: out ↔ in'],
+  ['sales', 'returns', 'flow: sale ↔ reversal'],
+  ['payments', 'receipts', 'money: paid ↔ received'],
+]
+
+/** A DECLARED polarity pair with its COMPUTED shape verdict — meaning proposes, the config's shapes decide. */
+export interface InversePair {
+  readonly a: string
+  readonly b: string
+  readonly why: string
+  /** field-name overlap of the two real booted shapes — 1 = same fields, 0 = disjoint. */
+  readonly jaccard: number
+  readonly shared: number
+  /** theorem: shapes collapse (≥0.6) · meaning: a re-modelling a human decides (≥0.3) · distinct: two tables that only rhyme · absent: one has no shape. */
+  readonly verdict: 'theorem' | 'meaning' | 'distinct' | 'absent'
+}
+
+/**
+ * The inverse-polarity lens: for each DECLARED antonym pair, how close are the two collections' real shapes?
+ *
+ * The honest split this makes visible — proven over the live config: of the declared pairs, only `customers ↔
+ * vendors` is a THEOREM collapse (jaccard 0.92); the rest are conceptual antonyms whose shapes barely overlap
+ * (`payments ↔ receipts` 0.04) — two tables that rhyme, not one table seen twice. The theorem refutes the eye:
+ * naming a pair by meaning does NOT make it a merge; the shapes say which reads are real.
+ *
+ * @invariant `customers ↔ vendors` is the only declared pair whose shapes collapse (verdict 'theorem')
+ * @invariant a declared pair is never asserted a merge — the verdict is computed from shape, never from the name
+ */
+export function inversePairs(cwd: string = process.cwd()): InversePair[] {
+  const shapes = new Map(shapesOf(cwd).map((s) => [s.slug, s.fields]))
+  return POLARITY_CANDIDATES.map(([a, b, why]) => {
+    const fa = shapes.get(a)
+    const fb = shapes.get(b)
+    if (!fa || !fb) return { a, b, why, jaccard: 0, shared: 0, verdict: 'absent' as const }
+    const shared = [...fa].filter((f) => fb.has(f)).length
+    const union = new Set([...fa, ...fb]).size
+    const jaccard = union === 0 ? 0 : Math.round((shared / union) * 100) / 100
+    const verdict = jaccard >= 0.6 ? 'theorem' : jaccard >= 0.3 ? 'meaning' : 'distinct'
+    return { a, b, why, jaccard, shared, verdict: verdict as InversePair['verdict'] }
+  })
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const shapes = shapesOf()
   const ident = identicalShapes()
@@ -141,6 +194,13 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   for (const s of subs) {
     console.log(`  ${s.slug} ⊂ ${s.host}  — differs by ${s.extra.length}: ${s.extra.join(', ') || '(nothing)'}`)
   }
+  const pairs = inversePairs()
+  const theorem = pairs.filter((p) => p.verdict === 'theorem').length
+  console.log(`\n  inverse-polarity pairs declared (by meaning): ${pairs.length} · shape-provable (theorem): ${theorem}`)
+  for (const p of pairs) {
+    console.log(`  ${p.verdict.padEnd(8)} ${p.a} ↔ ${p.b}  jaccard=${p.jaccard}  — ${p.why}`)
+  }
   console.log('\n  fitting is NOT sameness — a 2-field table fits inside almost anything.')
+  console.log('  naming a pair by meaning is NOT a merge — the shapes decide; the theorem refutes the eye.')
   console.log('  A collection erpax does not own (payload-*, plugin tables) is not erpax\'s to collapse.')
 }
