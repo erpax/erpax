@@ -33,6 +33,24 @@ function runVerify(atoms: readonly string[]): number {
  * auto-mode classifier requires named targets), then verified with typecheck + doctor corpus.
  * Folds the throwaway research scripts of 2026-07-15 into one reused command.
  */
+/**
+ * `erpax gaps` — run the always-present gap scanner, instead of re-deriving it in a throwaway. The scanner is
+ * self/improve.sendQuantumWaves + leftover.attraction, which have lived in the tree unused; this is their
+ * standing caller, so the gap-finder is present AND used (and its own unfolded status is thereby closed).
+ */
+async function runGaps(): Promise<number> {
+  const { sendQuantumWaves } = await import('@/self/improve')
+  const { attraction } = await import('@/leftover')
+  const cwd = process.cwd()
+  const q = sendQuantumWaves(cwd)
+  console.log('gaps — the always-present scanner, run (not re-derived):\n')
+  console.log(`  ${q.sites} surgical sites across ${q.states} fields, held as one coherent wave`)
+  console.log(`  root ${q.root}\n  heaviest fields (one proof settles the most):`)
+  for (const c of attraction(cwd).slice(0, 8)) console.log(`    ${String(c.pull).padStart(4)}  ${c.group}`)
+  console.log('\n  the scanner is present AND used — `pnpm erpax gaps`; do not re-derive it in a throwaway.')
+  return 0
+}
+
 async function runFold(family?: string): Promise<number> {
   const { foldPlan } = await import('@/readme/compute')
   const families = foldPlan(process.cwd())
@@ -84,6 +102,10 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
 
   if (rawDomain === 'fold') {
     return runFold(action)
+  }
+
+  if (rawDomain === 'gaps') {
+    return runGaps()
   }
 
   if (rawDomain === 'approve') {
