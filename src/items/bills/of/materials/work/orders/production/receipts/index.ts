@@ -47,7 +47,8 @@ const ProductionReceipts: CollectionConfig = {
       admin: { description: 'Production lot number — required for traceability per FDA / EU food / pharma.' } },
     { name: 'serialNumbers', type: 'json',
       admin: { description: 'JSON array of serial numbers for serialised items.' } },
-    { name: 'receiptDate', type: 'date', required: true, index: true },
+    { name: 'receiptDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     currencyField(),
     {
       name: 'cost',

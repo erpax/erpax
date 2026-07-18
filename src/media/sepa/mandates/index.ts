@@ -114,6 +114,7 @@ const SepaMandates: CollectionConfig = {
       name: 'signatureDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Date the debtor signed the mandate.' },
     },
     {

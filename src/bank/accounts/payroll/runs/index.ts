@@ -108,6 +108,7 @@ const PayrollRuns: CollectionConfig = {
       name: 'paymentDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: {
         description:
           'Date the bank releases the funds. Used as pain.001 ReqdExctnDt.',

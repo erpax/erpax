@@ -180,6 +180,7 @@ const Commitments: CollectionConfig = {
       name: 'authorizationDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: {
         description: 'Date authorization was granted (must be <= today). SOX §302.',
       },

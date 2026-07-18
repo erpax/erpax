@@ -58,7 +58,8 @@ const Activities: CollectionConfig = {
         { label: 'Internal', value: 'internal' },
       ],
     },
-    { name: 'activityDate', type: 'date', required: true, index: true },
+    { name: 'activityDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     { name: 'durationMinutes', type: 'number', min: 0 },
     { name: 'assignedTo', type: 'relationship', relationTo: 'users', required: true },
     {

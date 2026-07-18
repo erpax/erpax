@@ -52,7 +52,8 @@ const IntercompanyTransactions: CollectionConfig = {
       admin: { description: 'IFRS-10 §B86 reporting entity for the debit leg (single-tenant multi-entity hierarchy).' } },
     { name: 'toLegalEntity', type: 'relationship', relationTo: 'legal-entities', index: true,
       admin: { description: 'IFRS-10 §B86 reporting entity for the credit leg (single-tenant multi-entity hierarchy).' } },
-    { name: 'transactionDate', type: 'date', required: true, index: true,
+    { name: 'transactionDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — transaction effective date.' } },
     { name: 'pairKind', type: 'select', defaultValue: 'transfer', options: [
       { label: 'Cash Transfer', value: 'transfer' },

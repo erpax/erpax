@@ -43,7 +43,8 @@ const BankReconciliations: CollectionConfig = {
   fields: [
     referenceField({ description: 'Sequential reconciliation reference (e.g. `REC-2026-04-EUR-MAIN`).' }),
     { name: 'bankAccount', type: 'relationship', relationTo: 'bank-accounts', required: true, index: true },
-    { name: 'reconciliationDate', type: 'date', required: true, index: true,
+    { name: 'reconciliationDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — the as-of date the reconciliation proves.' } },
     { name: 'periodStart', type: 'date',
       admin: { description: 'Statement period the reconciliation covers — start.' } },

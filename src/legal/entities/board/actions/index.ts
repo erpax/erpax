@@ -53,6 +53,7 @@ export const BoardActions: CollectionConfig = {
       name: 'meetingDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'actionDate',

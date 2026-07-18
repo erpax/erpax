@@ -36,7 +36,8 @@ const CostVariances: CollectionConfig = {
   fields: [
     referenceField({ description: 'Variance reference (e.g. `VAR-2026-04-0001`).' }),
     { name: 'workOrder', type: 'relationship', relationTo: 'work-orders', required: true, index: true },
-    { name: 'varianceDate', type: 'date', required: true, index: true,
+    { name: 'varianceDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — date the variance was computed (typically WO close).' } },
     currencyField(),
     {

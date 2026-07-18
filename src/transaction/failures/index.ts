@@ -36,7 +36,8 @@ const TransactionFailures: CollectionConfig = {
   access: accountingCollectionAccess(),
   fields: [
     referenceField({ description: 'Failure reference (e.g. `FAIL-2026-04-001`).' }),
-    { name: 'transactionDate', type: 'date', required: true, index: true,
+    { name: 'transactionDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — original transaction date that failed (NOT the failure-recording date).' } },
     {
       name: 'sourceType',

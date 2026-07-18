@@ -67,6 +67,7 @@ export const Consolidations: CollectionConfig = {
       name: 'periodClosingDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Period-end date for all entities in consolidation' },
     },
     {

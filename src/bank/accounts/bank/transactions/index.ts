@@ -97,7 +97,8 @@ const BankTransactions: CollectionConfig = {
     },
     { name: 'bankAccount', type: 'relationship', relationTo: 'bank-accounts', required: true, index: true },
     { name: 'statement', type: 'relationship', relationTo: 'bank-statements', admin: { description: 'Parent camt.053 statement, if imported as part of a batch.' } },
-    { name: 'valueDate', type: 'date', required: true, index: true, admin: { description: 'When the funds become available. Maps to canonical Camt053Transaction.valueDate.' } },
+    { name: 'valueDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true, admin: { description: 'When the funds become available. Maps to canonical Camt053Transaction.valueDate.' } },
     { name: 'bookingDate', type: 'date', admin: { description: 'When the entry hit the ledger. Maps to canonical Camt053Transaction.bookingDate.' } },
     {
       name: 'amount',

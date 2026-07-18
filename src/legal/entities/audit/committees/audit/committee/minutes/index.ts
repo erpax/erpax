@@ -43,6 +43,7 @@ export const AuditCommitteeMinutes: CollectionConfig = {
       name: 'meetingDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'meetingTime',

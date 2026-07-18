@@ -40,7 +40,8 @@ const FxTransactions: CollectionConfig = {
   fields: [
     { name: 'reference', type: 'text', required: false, index: true,
       admin: { description: 'Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.' } },
-    { name: 'transactionDate', type: 'date', required: true, index: true,
+    { name: 'transactionDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — date the FX rate applied (transaction date OR period-end revaluation date).' } },
     {
       name: 'transactionKind',

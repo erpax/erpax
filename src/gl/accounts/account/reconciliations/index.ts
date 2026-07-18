@@ -112,6 +112,7 @@ const AccountReconciliations: CollectionConfig = {
       name: 'asOfDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       index: true,
       admin: { description: 'Reconciliation point in time (period-end).' },
     },

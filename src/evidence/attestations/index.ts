@@ -68,6 +68,7 @@ const EvidenceAttestations: CollectionConfig = {
       name: 'capturedAt',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       index: true,
       admin: { description: 'ISO-8601 timestamp the walk-through completed.' },
     },

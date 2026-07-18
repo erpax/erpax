@@ -96,6 +96,7 @@ export const FiscalPeriodSnapshots: CollectionConfig = {
       name: 'triggeredAt',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Timestamp of event' },
     },
     {

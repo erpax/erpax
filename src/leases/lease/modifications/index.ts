@@ -49,6 +49,7 @@ const LeaseModifications: CollectionConfig = {
     referenceField(),
     { name: 'lease', type: 'relationship', relationTo: 'leases', required: true, index: true },
     { name: 'modificationDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Effective date of the modification — drives the remeasurement reference rate.' } },
     { name: 'agreementSignedDate', type: 'date',
       admin: { description: 'Date both parties signed the modification agreement (may differ from effective date).' } },

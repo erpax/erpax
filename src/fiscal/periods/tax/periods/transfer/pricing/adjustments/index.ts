@@ -148,6 +148,7 @@ export const TransferPricingAdjustments: CollectionConfig = {
       name: 'adjustmentDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Date of transfer pricing adjustment (typically period-end date)' },
     },
     {

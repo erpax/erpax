@@ -40,6 +40,7 @@ export const PolicyVersions: CollectionConfig = {
       name: 'releaseDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'changes',

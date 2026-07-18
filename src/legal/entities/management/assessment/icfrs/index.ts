@@ -37,6 +37,7 @@ export const ManagementAssessmentICFR: CollectionConfig = {
       name: 'assessmentDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Date of management assessment conclusion (SOX 302/906 certification date).' },
     },
     {

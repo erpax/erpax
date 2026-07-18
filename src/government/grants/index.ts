@@ -89,6 +89,7 @@ const GovernmentGrants: CollectionConfig = {
       ],
     },
     { name: 'awardDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Date of formal award letter / contract.' } },
     { name: 'effectiveStartDate', type: 'date' },
     { name: 'effectiveEndDate', type: 'date' },

@@ -40,6 +40,7 @@ export const ManagementCertifications: CollectionConfig = {
       name: 'certificationDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'certificationType',

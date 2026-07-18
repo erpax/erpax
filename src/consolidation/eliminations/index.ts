@@ -38,7 +38,8 @@ const ConsolidationEliminations: CollectionConfig = {
   access: tenantAdminWriteAccess(), // Slice VVV: gated by feature 'consolidation' (see featureGuard wiring TBA)
   fields: [
     referenceField({ description: 'Sequential elimination reference (e.g. `ELIM-2026-Q1-001`).' }),
-    { name: 'consolidationDate', type: 'date', required: true, index: true,
+    { name: 'consolidationDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — consolidation-period as-of date the elimination applies to.' } },
     {
       name: 'eliminationType',

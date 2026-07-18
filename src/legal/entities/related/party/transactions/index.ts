@@ -59,6 +59,7 @@ export const RelatedPartyTransactions: CollectionConfig = {
       name: 'transactionDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'transactionDescription',

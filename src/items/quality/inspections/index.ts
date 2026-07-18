@@ -60,7 +60,8 @@ const QualityInspections: CollectionConfig = {
       admin: { description: 'For incoming inspection — the GRN this inspection covers.' } },
     { name: 'shipment', type: 'relationship', relationTo: 'shipments',
       admin: { description: 'For final inspection — the shipment this inspection releases.' } },
-    { name: 'inspectionDate', type: 'date', required: true, index: true },
+    { name: 'inspectionDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     { name: 'inspector', type: 'relationship', relationTo: 'users',
       admin: { description: 'Inspector who performed the check.' } },
     {

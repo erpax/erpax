@@ -41,7 +41,8 @@ const RecruitingPipeline: CollectionConfig = {
     { name: 'position', type: 'relationship', relationTo: 'job-positions', required: true, index: true },
     { name: 'recruiter', type: 'relationship', relationTo: 'users' },
     { name: 'hiringManager', type: 'relationship', relationTo: 'users' },
-    { name: 'applicationDate', type: 'date', required: true, index: true },
+    { name: 'applicationDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     {
       name: 'source',
       type: 'select',

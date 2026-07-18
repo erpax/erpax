@@ -70,7 +70,8 @@ const TimeEntries: CollectionConfig = {
       required: true,
       index: true,
     },
-    { name: 'workDate', type: 'date', required: true, index: true },
+    { name: 'workDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     {
       name: 'minutes',
       type: 'number',

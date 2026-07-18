@@ -44,6 +44,7 @@ export const PolicyAcknowledgments: CollectionConfig = {
       name: 'acknowledgedDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'acknowledgedBy',

@@ -197,6 +197,7 @@ export const WorkShifts: CollectionConfig = {
       name: 'date',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       index: true,
       admin: { description: 'The calendar day this aggregate is for (ISO 8601). One row per (actor, date).' },
     },

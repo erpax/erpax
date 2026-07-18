@@ -37,9 +37,11 @@ const PriorPeriodAdjustments: CollectionConfig = {
   access: tenantAdminWriteAccess(), // Slice VVV: gated by feature 'period_end_closing' (see featureGuard wiring TBA)
   fields: [
     referenceField({ description: 'PPA reference (e.g. `PPA-2026-001`).' }),
-    { name: 'adjustmentDate', type: 'date', required: true, index: true,
+    { name: 'adjustmentDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — original date of the misstatement (the prior-period transaction date).' } },
-    { name: 'postDate', type: 'date', required: true, index: true,
+    { name: 'postDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — current-period date the restatement entry is booked. Per IAS-8 §42, restatement adjusts opening balances of the earliest period presented.' } },
     { name: 'priorPeriod', type: 'relationship', relationTo: 'fiscal-periods',
       admin: { description: 'The closed fiscal period being restated.' } },

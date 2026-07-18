@@ -37,7 +37,8 @@ const PostBalanceSheetEvents: CollectionConfig = {
   fields: [
     referenceField({ description: 'Sequential reference (e.g. PBE-2026-Q1-001).' }),
     { name: 'period', type: 'relationship', relationTo: 'fiscal-periods', required: true, index: true },
-    { name: 'eventDate', type: 'date', required: true, index: true },
+    { name: 'eventDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     { name: 'description', type: 'textarea', localized: true, required: true },
     {
       name: 'classification',

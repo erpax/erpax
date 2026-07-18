@@ -86,6 +86,7 @@ export const DebtSchedule: CollectionConfig = {
       name: 'issuanceDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'maturityDate',

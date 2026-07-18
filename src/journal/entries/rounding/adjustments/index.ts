@@ -34,7 +34,8 @@ const RoundingAdjustments: CollectionConfig = {
   access: tenantAdminWriteAccess(), // Slice VVV: gated by feature 'period_end_closing' (see featureGuard wiring TBA)
   fields: [
     referenceField({ description: 'Sequential rounding-adjustment reference (e.g. `RND-2026-04-001`).' }),
-    { name: 'adjustmentDate', type: 'date', required: true, index: true,
+    { name: 'adjustmentDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true,
       admin: { description: 'ISO 8601 — the date the rounding plug applies to.' } },
     {
       name: 'fromCurrency',

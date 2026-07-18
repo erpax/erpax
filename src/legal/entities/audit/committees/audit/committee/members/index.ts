@@ -50,6 +50,7 @@ export const AuditCommitteeMembers: CollectionConfig = {
       name: 'appointedDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'termEndDate',

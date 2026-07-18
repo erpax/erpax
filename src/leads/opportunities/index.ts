@@ -61,7 +61,8 @@ const Opportunities: CollectionConfig = {
       admin: { description: 'Annual contract value (ARR for SaaS) or one-time TCV (cents).' } },
     { name: 'weightedAmount', type: 'number',
       admin: { readOnly: true, description: 'amount × probability/100. Aggregated for the pipeline forecast.' } },
-    { name: 'expectedCloseDate', type: 'date', required: true, index: true },
+    { name: 'expectedCloseDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     { name: 'actualCloseDate', type: 'date' },
     { name: 'closeReason', type: 'select', options: [
       { label: 'Price', value: 'price' },

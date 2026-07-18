@@ -193,11 +193,13 @@ export const RiskRegister: CollectionConfig = {
       name: 'lastAssessmentDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'nextAssessmentDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'riskStatus',

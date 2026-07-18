@@ -89,7 +89,8 @@ const InventoryMovements: CollectionConfig = {
     currencyField(),
     { name: 'fromLocation', type: 'relationship', relationTo: 'warehouse-locations' },
     { name: 'toLocation', type: 'relationship', relationTo: 'warehouse-locations' },
-    { name: 'movementAt', type: 'date', required: true, index: true },
+    { name: 'movementAt', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(), index: true },
     {
       name: 'sourceDocumentType',
       type: 'select',

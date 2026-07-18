@@ -41,6 +41,7 @@ export const AuditCommittees: CollectionConfig = {
       name: 'establishedDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'meetingFrequency',

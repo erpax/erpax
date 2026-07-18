@@ -155,6 +155,7 @@ const Leases: CollectionConfig = {
       name: 'commencementDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: {
         description:
           'Date the lessor makes the underlying asset available — IFRS 16 §22.',

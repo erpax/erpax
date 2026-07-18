@@ -130,6 +130,7 @@ export default createAccountingCollection({
 
     // Temporal
     { name: 'recordedAt', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'ISO 8601-1:2019 timestamp the memory was first written.' } },
     { name: 'expiresAt', type: 'date',
       admin: { description: 'Optional TTL — when set, scheduled job transitions status → expired.' } },

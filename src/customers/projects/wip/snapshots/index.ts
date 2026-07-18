@@ -46,6 +46,7 @@ const WipSnapshots: CollectionConfig = {
     { name: 'project', type: 'relationship', relationTo: 'projects', required: true, index: true },
     { name: 'period', type: 'relationship', relationTo: 'fiscal-periods', required: true, index: true },
     { name: 'snapshotDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'ISO 8601 — period-end date the snapshot freezes.' } },
     {
       name: 'recognitionMethod',

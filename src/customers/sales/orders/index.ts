@@ -101,6 +101,7 @@ export default createAccountingCollection({
 
     // Dates
     { name: 'orderDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Buyer submission / acceptance date. Drives revenue-period determination.' } },
     { name: 'requestedDeliveryDate', type: 'date',
       admin: { description: 'Buyer-requested delivery date (single shipment) or first window. EN-16931 §BT-72.' } },

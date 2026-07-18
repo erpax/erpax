@@ -24,7 +24,7 @@
  *
  * Composes [[rules]] · [[law]].
  */
-import { readFileSync, readdirSync, type Dirent } from 'node:fs'
+import { readFileSync, readdirSync, writeFileSync, type Dirent } from 'node:fs'
 import { join, relative } from 'node:path'
 
 /** A required field with nothing computed for it — the human-typing cost. */
@@ -116,14 +116,76 @@ export function assertAsksBounded(cwd: string = process.cwd(), ceiling: number):
   )
 }
 
+/**
+ * The CLOCK class, DECLARED in the open so it can be argued with: a required `type: 'date'` field
+ * whose name is a RECORD-KEEPING timestamp — the clock answers it and the user confirms. A date
+ * carrying future INTENT (due, deadline, expiry, validity, period bounds) is the user's to state
+ * and is never touched. This is the per-case judgement of [[rules]]/ask made a reviewable pattern,
+ * not a blind sweep.
+ */
+export const CLOCK_SAFE = /(date|at)$/i
+export const CLOCK_INTENT = /due|deadline|expir|valid|until|end|start|from|to$|birth|hire|effective|maturity|schedul|plann|requested|target|forecast|promis/i
+
+export interface ClockFix {
+  readonly collection: string
+  readonly field: string
+  readonly file: string
+}
+
+/**
+ * Close every safe CLOCK ask with `defaultValue: () => new Date().toISOString()` — the question the
+ * clock already answers becomes a confirmation. Dry-run by default; `apply` writes the configs.
+ */
+export function fixClockAsks(cwd: string = process.cwd(), opts?: { readonly apply?: boolean }): ClockFix[] {
+  const fixes: ClockFix[] = []
+  const r = bareAsks(cwd)
+  const byFile = new Map<string, BareAsk[]>()
+  for (const b of r.bare) {
+    if (!CLOCK_SAFE.test(b.field) || CLOCK_INTENT.test(b.field)) continue
+    const list = byFile.get(b.file) ?? []
+    list.push(b)
+    byFile.set(b.file, list)
+  }
+  for (const [file, asks] of byFile) {
+    const abs = join(cwd, file)
+    let text: string
+    try {
+      text = readFileSync(abs, 'utf8')
+    } catch {
+      continue
+    }
+    let changed = false
+    for (const ask of asks) {
+      // only a date-typed declaration — the field's own slice must say type: 'date'
+      const decl = new RegExp(`(name: '${ask.field}',[\\s\\S]{0,240}?)(?=name: '|\\n {2}\\],|\\n\\})`).exec(text)
+      if (!decl || !/type: 'date'/.test(decl[0]) || /defaultValue/.test(decl[0])) continue
+      const patched = decl[0].replace(/required: true,/, "required: true,\n      defaultValue: () => new Date().toISOString(),")
+      if (patched === decl[0]) continue
+      text = text.slice(0, decl.index) + patched + text.slice(decl.index + decl[0].length)
+      fixes.push(ask)
+      changed = true
+    }
+    if (changed && opts?.apply) writeFileSync(abs, text)
+  }
+  return fixes
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
-  const r = bareAsks()
-  console.log(
-    `ask — ${r.collections} collections · ${r.required} required · ${r.answered} predefined/computed · ${r.bare.length} BARE ASKS (the human-typing cost)`,
-  )
-  const byCollection = new Map<string, number>()
-  for (const b of r.bare) byCollection.set(b.collection, (byCollection.get(b.collection) ?? 0) + 1)
-  for (const [c, n] of [...byCollection.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8)) {
-    console.log(`  ${String(n).padStart(3)} asks  ${c}`)
+  if (process.argv.includes('--fix-clock')) {
+    const apply = process.argv.includes('--apply')
+    const fixes = fixClockAsks(process.cwd(), { apply })
+    console.log(`ask — clock class: ${fixes.length} ask(s) the clock answers${apply ? ' — APPLIED' : ' (dry-run; add --apply)'}`)
+    for (const f of fixes.slice(0, 12)) console.log(`  ${f.collection}.${f.field}`)
+    if (fixes.length > 12) console.log(`  … +${fixes.length - 12} more`)
+  } else {
+    const r = bareAsks()
+    console.log(
+      `ask — ${r.collections} collections · ${r.required} required · ${r.answered} predefined/computed · ${r.bare.length} BARE ASKS (the human-typing cost)`,
+    )
+    const byCollection = new Map<string, number>()
+    for (const b of r.bare) byCollection.set(b.collection, (byCollection.get(b.collection) ?? 0) + 1)
+    for (const [c, n] of [...byCollection.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8)) {
+      console.log(`  ${String(n).padStart(3)} asks  ${c}`)
+    }
   }
 }

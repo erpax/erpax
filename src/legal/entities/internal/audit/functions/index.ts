@@ -49,6 +49,7 @@ export const InternalAuditFunction: CollectionConfig = {
       name: 'charterApprovedDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
     },
     {
       name: 'reportingLine',

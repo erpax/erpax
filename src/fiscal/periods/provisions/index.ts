@@ -63,6 +63,7 @@ const Provisions: CollectionConfig = {
     },
     legalEntityField({ description: 'Reporting entity that recognises this provision.' }),
     { name: 'recognitionDate', type: 'date', required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Date the obligation was first recognised on the balance sheet.' } },
     { name: 'period', type: 'relationship', relationTo: 'fiscal-periods', required: true },
     currencyField(),

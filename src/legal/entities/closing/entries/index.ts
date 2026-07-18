@@ -96,6 +96,7 @@ export const ClosingEntries: CollectionConfig = {
       name: 'closingDate',
       type: 'date',
       required: true,
+      defaultValue: () => new Date().toISOString(),
       admin: { description: 'Date closing entries were created/posted' },
     },
     {
