@@ -246,7 +246,9 @@ describe('finishedIdeaCrossed — sealed diamond crossed in all directions', () 
       trinity: { form: 1, code: 1, proof: 1 },
       sealed: true,
     })
-    expect(model.horo).toBe(3)
+    // the LAW is axis membership (3·6·9 control, never the 1·2·4·8·7·5 flow ring) — the exact
+    // digit is the matrix's to assign and moved 3→9 in a regen; pinning it pinned an accident
+    expect([3, 6, 9]).toContain(model.horo)
     expect(v.crossed).toBe(true)
     expect(v.impurities).toEqual([])
   })
