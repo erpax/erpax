@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, waveShape, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -202,6 +202,16 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
         const t = DECODED.find((x) => x.claim === claim)!
         expect(t.composes).toHaveLength(0) // a source: nothing to wait on
       }
+    })
+
+    it('wavesOf levels ANY DAG in bulk — a chain is deep, a diamond keeps its parallel antichain', () => {
+      const chain = wavesOf(new Map([['a', []], ['b', ['a']], ['c', ['b']]]))
+      expect(chain).toHaveLength(3) // a→b→c: longest chain 3
+      expect(chain[0]).toEqual(['a'])
+      expect(chain[2]).toEqual(['c'])
+      const diamond = wavesOf(new Map([['a', []], ['b', ['a']], ['c', ['a']], ['d', ['b', 'c']]]))
+      expect(diamond).toHaveLength(3)
+      expect(diamond[1]).toEqual(['b', 'c']) // b and c are independent — one parallel wave
     })
 
     it('the reasoning DAG is shallow and wide — depth 2, parallelism 13 (grounded leads compute in one wave)', () => {

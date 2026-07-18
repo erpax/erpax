@@ -268,27 +268,37 @@ export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly
  * @invariant every level is an antichain — no claim composes another at the same level
  * @invariant waves.length equals the longest dependency chain (Mirsky)
  */
-export function waves(graph: readonly Theorem[] = DECODED): readonly (readonly string[])[] {
-  const byClaim = new Map(graph.map((t) => [t.claim, t]))
+/**
+ * Level ANY dependency DAG into antichain waves — the generic scheduler behind `waves`, so it runs in bulk over
+ * the whole corpus module graph, not only the 27-node reasoning DAG. `deps`: node → its dependencies. Level 0 is
+ * the sources; each level is an antichain (Mirsky); a cyclic node levels to 0 (guarded — condense SCCs first for
+ * a true DAG). Same theorem at every scale: wave count = longest chain, widest wave = parallelism.
+ */
+export function wavesOf(deps: ReadonlyMap<string, readonly string[]>): readonly (readonly string[])[] {
   const level = new Map<string, number>()
-  const lvl = (claim: string, seen: ReadonlySet<string> = new Set()): number => {
-    const cached = level.get(claim)
+  const lvl = (n: string, seen: ReadonlySet<string> = new Set()): number => {
+    const cached = level.get(n)
     if (cached !== undefined) return cached
-    if (seen.has(claim)) return 0 // cycle guard — a cyclic node cannot be levelled honestly
-    const t = byClaim.get(claim)
-    if (!t || t.composes.length === 0) {
-      level.set(claim, 0)
+    if (seen.has(n)) return 0 // cycle guard — a cyclic node cannot be levelled honestly
+    const d = deps.get(n)
+    if (!d || d.length === 0) {
+      level.set(n, 0)
       return 0
     }
-    const s = new Set([...seen, claim])
-    const l = 1 + Math.max(...t.composes.map((c) => lvl(c, s)))
-    level.set(claim, l)
+    const s = new Set([...seen, n])
+    const l = 1 + Math.max(...d.map((x) => lvl(x, s)))
+    level.set(n, l)
     return l
   }
-  const maxLevel = Math.max(0, ...graph.map((t) => lvl(t.claim)))
+  const nodes = [...deps.keys()]
+  const maxLevel = Math.max(0, ...nodes.map((n) => lvl(n)))
   const out: string[][] = Array.from({ length: maxLevel + 1 }, () => [])
-  for (const t of graph) out[lvl(t.claim)]!.push(t.claim)
+  for (const n of nodes) out[lvl(n)]!.push(n)
   return out.map((w) => [...w].sort())
+}
+
+export function waves(graph: readonly Theorem[] = DECODED): readonly (readonly string[])[] {
+  return wavesOf(new Map(graph.map((t) => [t.claim, t.composes])))
 }
 
 /** Depth (wave count = longest chain) and parallelism (widest wave) of the reasoning DAG. */
