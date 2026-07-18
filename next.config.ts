@@ -46,6 +46,11 @@ const nextConfig = {
   // Windows Turbopack + Payload UI SCSS (see Next.js issue #86431)
   sassOptions: {
     loadPaths: ['./node_modules/@payloadcms/ui/dist/scss/'],
+    // Aligned to payloadcms/website: `@use '@scss/common.scss'` resolves to the ported css/ system. Staged
+    // migration from Tailwind — the two coexist until every component is on SCSS modules.
+    resolveAlias: {
+      '@scss': path.resolve(projectRoot, 'src/app/(frontend)/css/'),
+    },
   },
   turbopack: {
     root: projectRoot,

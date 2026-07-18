@@ -23,6 +23,7 @@ import { InitTheme } from '@/providers/theme/init/theme'
 import { mergeOpenGraph } from '@/merge/open/graph'
 
 import './globals.css'
+import './css/app.scss'
 import { getServerSideURL } from '@/rfc/3986'
 import { headers } from 'next/headers'
 

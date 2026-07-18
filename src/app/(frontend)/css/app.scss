@@ -1,0 +1,25 @@
+// erpax global stylesheet — aligned to payloadcms/website's SCSS-module system (staged migration from Tailwind).
+// Ported css/ partials: vars · queries · type · colors · theme · grid · common. github/docsearch/toasts omitted.
+@use 'grid.scss' as *;
+@use 'vars.scss' as *;
+@use 'queries.scss' as *;
+@use 'type.scss' as *;
+@use 'colors.scss';
+@use 'theme.scss';
+
+:root {
+  font-size: 20px;
+  --base: 20px;
+  --header-height: 90px;
+  --top-bar-height: 3rem;
+  --gutter-h: calc(50vw - 40rem);
+  --block-spacing: 7rem;
+  --new-block-spacing: 8rem;
+  --default-border-width: 2px;
+  --trans-default: 150ms;
+  --grid-line-dark: rgba(255, 255, 255, 0.125);
+  --grid-line-light: rgba(0, 0, 0, 0.125);
+
+  @include extra-large-break { --gutter-h: 8rem; }
+  @include large-break { font-size: 16px; --base: 16px; }
+}
