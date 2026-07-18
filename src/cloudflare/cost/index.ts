@@ -198,7 +198,90 @@ export const LEVERS: readonly { readonly lever: string; readonly dimension: stri
   },
 ]
 
+/**
+ * The THEORETICAL floor — the economic cost to SERVE one unit, in the same per-unit as the price. A price is
+ * `floor × margin`, so `price / floor` reveals the backend: ≈1 is served at cost (commoditised), ≫1 is CF's
+ * markup (where YOUR savings live — you pay the margin), ≪1 is a subsidy (exploit it). These are ESTIMATES from
+ * public infra economics (commodity SSD $/GB, transit $/GB, amortised core-time, GPU-time), refutable by CF's
+ * real undisclosed costs — a lens on the divergence, NEVER a claim to know the backend. The absolute floor is
+ * Landauer (`kT ln2` ≈ 2.9e-21 J/bit at 300K): every dimension sits ~10⁹× above it, which proves cost > 0 (it is
+ * entropy, [[cost]]'s 'entropy' kind) yet says nothing about price — the ECONOMIC floor is what some prices near.
+ */
+export interface CostFloor {
+  readonly usdPerUnit: number
+  readonly basis: string
+}
+
+export const THEORETICAL_FLOOR: Record<string, CostFloor> = {
+  'workers.requests': { usdPerUnit: 0.02, basis: 'edge dispatch is near-zero marginal; the price recovers fixed cost + margin' },
+  'workers.cpuMs': { usdPerUnit: 0.006, basis: 'amortised server core-time × PUE — a core-hour ≈ $0.02 ⇒ ~$0.0056/M CPU-ms' },
+  'd1.rowsRead': { usdPerUnit: 0.0003, basis: 'buffer-cache hit + sub-µs CPU per row' },
+  'd1.rowsWritten': { usdPerUnit: 0.2, basis: 'durable fsync + replication per write' },
+  'd1.storageGb': { usdPerUnit: 0.1, basis: 'replicated, queryable SSD' },
+  'r2.storageGb': { usdPerUnit: 0.008, basis: 'erasure-coded commodity disk' },
+  'r2.classA': { usdPerUnit: 1.0, basis: 'write-path metadata ops' },
+  'r2.classB': { usdPerUnit: 0.1, basis: 'read-path metadata ops' },
+  'r2.egressGb': { usdPerUnit: 0.008, basis: 'transit/peering ~$0.005–0.02/GB at scale — priced $0 is a deliberate subsidy vs hyperscaler ~$0.09/GB' },
+  'kv.reads': { usdPerUnit: 0.05, basis: 'edge-cached read' },
+  'kv.writes': { usdPerUnit: 0.5, basis: 'global replication of the write' },
+  'vectorize.queriedDims': { usdPerUnit: 0.002, basis: 'ANN index lookup' },
+  'ai.neurons': { usdPerUnit: 0.004, basis: 'amortised GPU-time per neuron-unit' },
+  'queues.ops': { usdPerUnit: 0.05, basis: 'durable enqueue/dequeue' },
+  'durableObjects.gbSeconds': { usdPerUnit: 5.0, basis: 'pinned memory + single-threaded isolate' },
+  'analyticsEngine.dataPoints': { usdPerUnit: 0.02, basis: 'columnar append' },
+}
+
+export interface Divergence {
+  readonly dimension: string
+  readonly priceUsdPerUnit: number
+  readonly floorUsdPerUnit: number
+  /** price / floor — 0 is a subsidy, ~1 served at cost, ≫1 is CF margin (your savings). */
+  readonly ratio: number
+  readonly verdict: 'subsidy' | 'commoditised' | 'margin'
+  readonly basis: string
+}
+
+/** Map each dimension's price rate to its theoretical floor. */
+const PRICE_RATE: Record<string, number> = {
+  'workers.requests': DEFAULT_CF_PRICING.workersRequests.rate,
+  'workers.cpuMs': DEFAULT_CF_PRICING.workersCpuMs.rate,
+  'd1.rowsRead': DEFAULT_CF_PRICING.d1RowsRead.rate,
+  'd1.rowsWritten': DEFAULT_CF_PRICING.d1RowsWritten.rate,
+  'd1.storageGb': DEFAULT_CF_PRICING.d1StorageGb.rate,
+  'r2.storageGb': DEFAULT_CF_PRICING.r2StorageGb.rate,
+  'r2.classA': DEFAULT_CF_PRICING.r2ClassA.rate,
+  'r2.classB': DEFAULT_CF_PRICING.r2ClassB.rate,
+  'r2.egressGb': DEFAULT_CF_PRICING.r2EgressGb.rate,
+  'kv.reads': DEFAULT_CF_PRICING.kvReads.rate,
+  'kv.writes': DEFAULT_CF_PRICING.kvWrites.rate,
+  'vectorize.queriedDims': DEFAULT_CF_PRICING.vectorizeQueriedDims.rate,
+  'ai.neurons': DEFAULT_CF_PRICING.aiNeurons.rate,
+  'queues.ops': DEFAULT_CF_PRICING.queueOps.rate,
+  'durableObjects.gbSeconds': DEFAULT_CF_PRICING.doGbSeconds.rate,
+  'analyticsEngine.dataPoints': DEFAULT_CF_PRICING.analyticsDataPoints.rate,
+}
+
+/**
+ * Replace prices with theorems: per dimension, `price / economic-floor`. The reveal is NOT that they match — it
+ * is where they DON'T. A subsidy (egress, ratio→0) is exploited; a margin (ratio≫1) is where CF's markup is, so
+ * cutting that dimension saves the most per unit; a commoditised dimension (ratio≈1) is served at cost and not
+ * worth fighting. Combine ratio (markup) with volume (telemetry) for true $ leverage.
+ */
+export function revealBackend(): Divergence[] {
+  return Object.entries(THEORETICAL_FLOOR).map(([dimension, floor]) => {
+    const price = PRICE_RATE[dimension] ?? 0
+    const ratio = floor.usdPerUnit === 0 ? Infinity : Math.round((price / floor.usdPerUnit) * 100) / 100
+    const verdict = ratio < 0.8 ? 'subsidy' : ratio <= 3 ? 'commoditised' : 'margin'
+    return { dimension, priceUsdPerUnit: price, floorUsdPerUnit: floor.usdPerUnit, ratio, verdict, basis: floor.basis }
+  }).sort((a, b) => a.ratio - b.ratio)
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
+  const reveal = revealBackend()
+  console.log('cloudflare/cost — prices replaced with theorems (price / economic floor):\n')
+  for (const d of reveal) console.log(`  ${d.verdict.padEnd(12)} ${d.dimension.padEnd(26)} ×${String(d.ratio).padStart(6)}   ${d.basis}`)
+  console.log('\n  they do NOT almost-match — and the divergence IS the reveal: subsidy (exploit) · margin (your savings) · commoditised (served at cost).\n')
+
   // A SAMPLE profile — placeholder magnitudes, NOT erpax's real spend. Replace with wrangler analytics.
   const sample: CfProfile = {
     workersRequests: 50_000_000,

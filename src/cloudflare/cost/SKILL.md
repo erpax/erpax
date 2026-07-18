@@ -27,7 +27,19 @@ Each lever aims at a real billable dimension and cites an in-repo fact (never a 
 | 5 | cut **D1 rows-READ** (narrow SELECT + indexes) | `d1.rowsRead` | D1 bills rows read, the dimension that scales with traffic; `SELECT *` reads far more than needed |
 | 6 | **hibernate idle Durable Objects** | `durableObjects.gbSeconds` | a DO accrues GB-seconds even idle; hibernation drops it to 0 until the next event |
 
-**Honest boundary.** This proves the arithmetic and the levers' *direction*, never their *magnitude* — that requires the dashboard. And "cheaper" is only real if output holds: `moreEfficient` compares a tuning against the current bill *at equal output*, so a cut that breaks a feature is not efficiency, it is loss.
+## Replace prices with theorems — the reveal
+
+A price is `cost-to-serve × margin`. `revealBackend()` replaces each published price with a **theoretical floor** (the economic cost to serve one unit — commodity SSD, transit, amortised core-time, GPU-time; ultimately Landauer's `kT ln2`/bit, which every dimension sits ~10⁹× above, proving cost is entropy yet far below price). The ratio `price / floor` was conjectured to *"almost perfectly match."* It does **not** — and the divergence is the better answer:
+
+| verdict | dimensions | `price/floor` | what to do |
+| --- | --- | --- | --- |
+| **subsidy** | `r2.egressGb` | ×0 | **exploit** — CF prices egress below its transit floor as a loss-leader vs hyperscaler ~$0.09/GB |
+| **commoditised** | `r2.storageGb` · `ai.neurons` · `durableObjects` | ×1.9–2.8 | served near cost — not worth fighting |
+| **margin** | `workers.requests` (×15) · `kv` (×10) · `d1.storage` (×7.5) · `d1.writes` · `cpuMs` … | ×3.3–15 | **your savings live here** — you pay CF's markup; cutting these returns the most per unit |
+
+So the reveal **re-ranks the levers by markup**: `workers.requests` carries the heaviest margin (~15× the floor), which promotes **prerender/ISR** — per unit avoided, it saves CF's fattest markup. True $ leverage = markup (this table) × volume (telemetry). The floors are **estimates from public infra economics, refutable by CF's real undisclosed costs** — a lens on the divergence, never a claim to *know* the backend.
+
+**Honest boundary.** This proves the arithmetic and the levers' *direction*, never their *magnitude* — that requires the dashboard. The theoretical floors are estimates: the ratio tells you *subsidy vs margin*, not CF's true cost. And "cheaper" is only real if output holds: `moreEfficient` compares a tuning against the current bill *at equal output*, so a cut that breaks a feature is not efficiency, it is loss.
 
 **Law — [[law]]: Cloudflare spend is one cost kind among many — priced per binding, measured as output-per-dollar against the one law, and fine-tuned by levers that each name a real dimension. The prices are a verifiable input and the bill is the truth; a cost this model states without telemetry is arithmetic, not a claim.**
 

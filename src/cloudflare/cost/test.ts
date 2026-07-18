@@ -2,7 +2,9 @@ import { describe, it, expect } from 'vitest'
 import {
   cloudflareCost,
   cloudEfficiency,
+  revealBackend,
   DEFAULT_CF_PRICING,
+  THEORETICAL_FLOOR,
   LEVERS,
   type CfProfile,
 } from './index'
@@ -54,5 +56,36 @@ describe('cloudflare/cost — the billable surface, priced honestly', () => {
     expect(dims.has('ai.neurons')).toBe(true) // AI_CACHE hit-rate
     expect(dims.has('r2.egressGb')).toBe(true) // free egress
     for (const l of LEVERS) expect(l.evidence.length).toBeGreaterThan(0) // every lever cites an in-repo fact
+  })
+
+  // PRICES REPLACED WITH THEOREMS. The conjecture was "they almost perfectly match, revealing the backend."
+  // Half true: the DIVERGENCE reveals the backend — but they do NOT almost-match, and that is the better answer.
+  describe('reveal backend — price / economic floor', () => {
+    it('they do NOT almost-perfectly match — the ratios span subsidy to heavy margin', () => {
+      const r = revealBackend()
+      const verdicts = new Set(r.map((d) => d.verdict))
+      expect(verdicts.has('subsidy')).toBe(true) // egress, priced below floor
+      expect(verdicts.has('margin')).toBe(true) // requests etc., priced well above floor
+      const ratios = r.map((d) => d.ratio).filter((x) => Number.isFinite(x))
+      expect(Math.max(...ratios) / Math.min(...ratios.filter((x) => x > 0))).toBeGreaterThan(5) // spread, not a match
+    })
+
+    it('R2 egress is the SUBSIDY — priced below its transit floor, the dimension to exploit', () => {
+      const egress = revealBackend().find((d) => d.dimension === 'r2.egressGb')!
+      expect(egress.verdict).toBe('subsidy')
+      expect(egress.priceUsdPerUnit).toBe(0) // $0 egress vs a real ~$0.008/GB floor
+    })
+
+    it('workers.requests carries the heaviest margin — where CF markup, and your savings, concentrate', () => {
+      const reveal = revealBackend()
+      const margins = reveal.filter((d) => d.verdict === 'margin').sort((a, b) => b.ratio - a.ratio)
+      expect(margins[0]!.dimension).toBe('workers.requests') // ~15× the floor — prerender hits the fattest markup
+    })
+
+    it('every divergence names its economic basis — a lens on the gap, never a claim to know CF costs', () => {
+      const r = revealBackend()
+      expect(r.length).toBe(Object.keys(THEORETICAL_FLOOR).length)
+      for (const d of r) expect(d.basis.length).toBeGreaterThan(0) // the floor is an estimate, and it says why
+    })
   })
 })
