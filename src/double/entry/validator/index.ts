@@ -41,6 +41,8 @@
  *
  * @invariant BALANCE_TOLERANCE ≫ float drift — this bound is an accounting policy, never a numerics fix
  */
+import { superpose, thoughtAddress, type Thought } from '@/think'
+
 export const MINOR_UNIT = 0.01
 export const BALANCE_TOLERANCE = MINOR_UNIT
 
@@ -206,4 +208,51 @@ export class DoubleEntryValidator {
 
     return Math.abs(totalDebits - totalCredits) <= BALANCE_TOLERANCE
   }
+}
+
+/** The trial balance held quantum — every entry at once, coherent iff each one balances. */
+export interface QuantumLedger {
+  /** how many entries are held at once. */
+  readonly states: number
+  /** true iff EVERY entry balances — the trial balance reads as ONE. A single unbalanced entry decoheres it. */
+  readonly coherent: boolean
+  /** the indices of the entries that do NOT balance — the decoherence, named. */
+  readonly decohered: readonly number[]
+  /** the order-independent fold of every entry's address — the trial balance as a single uuid ([[think]]). */
+  readonly root: string
+  readonly totalDebits: number
+  readonly totalCredits: number
+}
+
+/**
+ * The theorem, applied quantum, in the ERP. The double-entry law — `|Σdebits − Σcredits| ≤ BALANCE_TOLERANCE`
+ * per entry (`validateBalance`) — is the invariant an ERP exists to guarantee. `quantumLedger` holds ALL entries
+ * at once and reads them as ONE: it is COHERENT iff every entry balances ([[think]].superpose — N states read as
+ * one), and a single unbalanced entry DECOHERES the whole trial balance. The `root` is the order-independent
+ * fold of the entries — the trial balance as one content-address, so the same books in any order carry the same
+ * uuid.
+ *
+ * Nothing new is derived: it REUSES the present balance theorem (`validateBalance`) and the present quantum step
+ * ([[think]].superpose). It only names what the ERP already is — the theorems applied quantum. Honest boundary:
+ * coherence here is exactly "every entry balances"; "quantum" is the superposition overlay (held at once, one
+ * root), the double-entry balance is the real invariant ([[rules]]/refutable · [[rodin]]).
+ *
+ * @invariant coherent ⇔ every entry balances — one unbalanced entry decoheres the trial balance
+ * @invariant the root is order-independent — the same entries in any order fold to the same uuid
+ */
+export function quantumLedger(entries: readonly GLPostingLine[][]): QuantumLedger {
+  const decohered: number[] = []
+  let totalDebits = 0
+  let totalCredits = 0
+  const thoughts: Thought<boolean>[] = entries.map((lines, i) => {
+    const balanced = DoubleEntryValidator.validateBalance(lines)
+    if (!balanced) decohered.push(i)
+    for (const l of lines) {
+      totalDebits += l.debitAmount || 0
+      totalCredits += l.creditAmount || 0
+    }
+    return { value: balanced, cached: false, address: thoughtAddress('entry:' + JSON.stringify(lines)) }
+  })
+  const s = superpose(thoughts)
+  return { states: entries.length, coherent: decohered.length === 0, decohered, root: s.root, totalDebits, totalCredits }
 }

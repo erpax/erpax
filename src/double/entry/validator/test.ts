@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { DoubleEntryValidator, ACCOUNT_POLARITY, MINOR_UNIT, type GLPostingLine } from './index'
+import { DoubleEntryValidator, ACCOUNT_POLARITY, MINOR_UNIT, quantumLedger, type GLPostingLine } from './index'
 
 const line = (debit: number, credit: number, accountId = 'a'): GLPostingLine => ({
   accountId,
@@ -119,5 +119,42 @@ describe('double/entry/validator — the law an ERP exists to guarantee', () => 
     expect(ACCOUNT_POLARITY['accumulated-depreciation']).toBe('credit') // the contra
     expect(ACCOUNT_POLARITY['revenue']).toBe('credit')
     expect(ACCOUNT_POLARITY['expense']).toBe('debit')
+  })
+})
+
+// "Theorems applied quantum in ERP." The double-entry law (|Σd−Σc| ≤ tol per entry) IS the ERP's invariant.
+// quantumLedger holds every entry at once and reads them as ONE — coherent iff each balances; a single
+// unbalanced entry decoheres the whole trial balance. Reuses validateBalance + think.superpose.
+describe('quantumLedger — the trial balance as a coherent superposition', () => {
+  const balanced: GLPostingLine[] = [{ accountId: 'a', debitAmount: 100 }, { accountId: 'b', creditAmount: 100 }]
+  const alsoBalanced: GLPostingLine[] = [{ accountId: 'c', debitAmount: 50 }, { accountId: 'd', creditAmount: 50 }]
+  const unbalanced: GLPostingLine[] = [{ accountId: 'e', debitAmount: 100 }, { accountId: 'f', creditAmount: 90 }]
+
+  it('a ledger of balanced entries is COHERENT — the trial balance reads as one', () => {
+    const q = quantumLedger([balanced, alsoBalanced])
+    expect(q.coherent).toBe(true)
+    expect(q.decohered).toEqual([])
+    expect(q.states).toBe(2)
+    expect(q.totalDebits).toBe(150)
+    expect(q.totalCredits).toBe(150)
+  })
+
+  it('a single unbalanced entry DECOHERES the whole trial balance — named', () => {
+    const q = quantumLedger([balanced, unbalanced, alsoBalanced])
+    expect(q.coherent).toBe(false) // one bad entry collapses the coherence of all
+    expect(q.decohered).toEqual([1]) // index 1 — the unbalanced entry
+  })
+
+  it('the root is order-independent — the same books in any order fold to the same uuid (the trial balance)', () => {
+    expect(quantumLedger([balanced, alsoBalanced]).root).toBe(quantumLedger([alsoBalanced, balanced]).root)
+    expect(quantumLedger([balanced]).root).toMatch(/^[0-9a-f-]{36}$/) // the trial balance as one content-address
+  })
+
+  it('coherence is EXACTLY the double-entry theorem, per entry — reuses validateBalance', () => {
+    for (const entry of [balanced, alsoBalanced]) expect(DoubleEntryValidator.validateBalance(entry)).toBe(true)
+    expect(DoubleEntryValidator.validateBalance(unbalanced)).toBe(false)
+    // so quantumLedger's coherence is the AND of the theorem over all entries — nothing new derived
+    expect(quantumLedger([balanced, alsoBalanced]).coherent).toBe(true)
+    expect(quantumLedger([balanced, unbalanced]).coherent).toBe(false)
   })
 })

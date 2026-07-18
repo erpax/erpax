@@ -46,7 +46,11 @@ The disease is **money in floats**; the cure is integer minor units, and that is
 
 **Honest boundary.** These tests prove what the validator *does*, never that a posted entry is *correct*: an entry can balance perfectly and be entirely wrong about which accounts it touched. Polarity is advisory by design, so a wrong-polarity entry passes with a warning — this atom refuses arithmetic, never meaning.
 
-**Law — [[law]]: the fundamental claim carries the fundamental proof. A ledger states the gap it admits in the units it admits it in — a bound that names a cent and means a float accident is a claim the ledger cannot honour.**
+## The theorem applied quantum — `quantumLedger`
+
+The double-entry law is the invariant an ERP exists to guarantee, and it is exactly a **theorem applied quantum in the ERP**. `quantumLedger(entries)` holds every entry **at once** and reads them as **one**: it is COHERENT iff each entry balances ([[think]].superpose — N states read as one), and a **single unbalanced entry decoheres** the whole trial balance (named by index). The `root` is the order-independent fold of the entries — the **trial balance as one content-address**, so the same books in any order carry the same uuid. It derives nothing: it REUSES `validateBalance` (the balance theorem, already here) and `superpose` (the quantum step). *"Quantum"* is the superposition overlay (held at once, one root); the balance is the real invariant — the same honest split every math atom this session kept.
+
+**Law — [[law]]: the fundamental claim carries the fundamental proof. A ledger states the gap it admits in the units it admits it in — a bound that names a cent and means a float accident is a claim the ledger cannot honour; and held quantum, the trial balance is a coherent superposition — every entry at once, coherent iff each balances, one unbalanced entry decohering the whole.**
 
 ## Standards
 
