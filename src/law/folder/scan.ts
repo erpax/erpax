@@ -192,7 +192,12 @@ export interface TsOnlyViolation {
   readonly reason: string
 }
 
-/** Every non-.ts programming-language file under src/ (full tree). */
+/**
+ * Every non-.ts programming-language file under src/ — except the framework's namespace.
+ * Next.js REQUIRES page.tsx/layout.tsx under `app/` ([[rules]]/echo learned this: a gate
+ * that flags a framework convention demands a refactoring the framework forbids), so the
+ * `app/` and `migrations/` trees are outside this axis, exactly as strayTsViolations skips them.
+ */
 export function nonTsLanguageViolations(cwd: string = process.cwd()): TsOnlyViolation[] {
   const root = join(cwd, 'src')
   const out: TsOnlyViolation[] = []
@@ -208,6 +213,7 @@ export function nonTsLanguageViolations(cwd: string = process.cwd()): TsOnlyViol
       const p = join(dir, e)
       const childRel = rel ? `${rel}/${e}` : e
       if (isDir(p)) {
+        if (!rel && SKIP_TREES.has(e)) continue
         walk(p, childRel)
         continue
       }

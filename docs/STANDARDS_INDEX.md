@@ -256,6 +256,7 @@ src/app/(frontend)/[locale]/posts/page.tsx:4: * @standard schema.org Blog
 src/app/(frontend)/[locale]/posts/page.tsx:5: * @standard schema.org CollectionPage
 src/app/(frontend)/[locale]/posts/page.tsx:6: * @standard schema.org ItemList
 src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx:4: * @standard schema.org CollectionPage
+src/app/(frontend)/[locale]/pricing/page.tsx:8: * @standard schema.org Offer pricing
 src/app/(frontend)/[locale]/products/[slug]/page.tsx:4: * @standard schema.org Product
 src/app/(frontend)/[locale]/products/[slug]/page.tsx:5: * @standard schema.org Offer
 src/app/(frontend)/[locale]/products/[slug]/page.tsx:6: * @standard ISO-4217:2015 currency-codes

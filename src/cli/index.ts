@@ -2,6 +2,7 @@
  * cli — minimal operational surface: `pnpm erpax <domain> [action] [args…]`
  */
 import { runDoctor } from './doctor'
+import { runLocal } from './local'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
 import { runGate, runGatePackages, runPayloadApproval, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
@@ -106,6 +107,10 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
 
   if (rawDomain === 'gaps') {
     return runGaps()
+  }
+
+  if (rawDomain === 'local') {
+    return runLocal()
   }
 
   if (rawDomain === 'approve') {
