@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
-import {
-  validateDoubleEntry,
-  enforcePostingImmutability,
-  generateReversingEntries,
-} from '@/hooks'
+// Each hook imported from its ATOM face, not the @/hooks aggregation barrel: under vitest's
+// transform the barrel's static namespace snapshots mid-cycle and came back partial
+// (validateDoubleEntry undefined — 12/12 red on the double-entry law's own proof).
+import { validateDoubleEntry } from '@/validate/double/entry'
+import { enforcePostingImmutability } from '@/enforce/posting/immutability'
+import { generateReversingEntries } from '@/generate/reversing/entry'
 
 // Hooks (position 6, the control triad) are the seam where mutations pass the
 // SKILL trinity at runtime. The barrel re-exports real Payload lifecycle hooks;
