@@ -54,7 +54,7 @@ export const CLEAN_MANIFEST_REL = join('src', 'apply', 'clean.manifest.generated
 
 /** Scan axes — extracted to the `./axes` leaf so no tangle importer reads them in a dead zone ([[rules]]/cycle). */
 export { CLEAN_SCAN_AXES, type CleanScanAxis } from './axes'
-import { CLEAN_SCAN_AXES } from './axes'
+import { CLEAN_SCAN_AXES, type CleanScanAxis } from './axes'
 
 /** cc3c5cb1 taxonomy — A emit · B nest · C delete · D rule-fix. */
 export type CleanTaxonomy = 'A-emit' | 'B-nest' | 'C-delete' | 'D-rule-fix'
