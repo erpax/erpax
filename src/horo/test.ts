@@ -27,6 +27,7 @@ import {
   inverseClosure,
   fiveRoles,
   CENTROID,
+  fullBreath,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -445,5 +446,31 @@ describe('fiveRoles — 5 is centre of gravity (balance) and propulsion, but NOT
     expect(r.centroid).not.toBe(r.attractor) // two DIFFERENT centres, 5 ≠ 9
     expect(r.mirrorFixed && r.propulsion).toBe(true) // 5's two true roles
     expect(r.isAttractor).toBe(false) // the role it does NOT have
+  })
+})
+
+// "0\1\2\4\8/7/5/3\6\9/0\1" — the full breath through all of ℤ/9: the void, the three doubling orbits (flow →
+// inner → pole), back through the void, reopening. Assembled from the parts already here (doublingOrbits), not
+// re-derived; the \ and / are the slope (up when larger, down when smaller) that draw the wave.
+describe('fullBreath — 0\\1\\2\\4\\8/7/5/3\\6\\9/0\\1, the complete ℤ/9 walk', () => {
+  it('the digits are exactly the sent sequence — void · flow · inner · pole · void · reopen', () => {
+    expect(fullBreath().map((b) => b.step)).toEqual([0, 1, 2, 4, 8, 7, 5, 3, 6, 9, 0, 1])
+  })
+
+  it('the slopes are the wave the \\ and / draw — up when the next digit is larger', () => {
+    // \ \ \ \ / / / \ \ / \  (up up up up down down down up up down up)
+    expect(fullBreath().map((b) => b.slope)).toEqual(
+      ['up', 'up', 'up', 'up', 'up', 'down', 'down', 'down', 'up', 'up', 'down', 'up'],
+    )
+  })
+
+  it('it threads in exactly the residues the 7-ring omits — 0, 3, 6', () => {
+    const walk = new Set(fullBreath().map((b) => b.step))
+    for (const omitted of [0, 3, 6]) expect(walk.has(omitted)).toBe(true) // HORO_DIGITS lacks these
+    // and it is a closed loop: starts at the void, returns to it, reopens at 1
+    const steps = fullBreath().map((b) => b.step)
+    expect(steps[0]).toBe(0)
+    expect(steps[steps.length - 2]).toBe(0)
+    expect(steps[steps.length - 1]).toBe(1)
   })
 })

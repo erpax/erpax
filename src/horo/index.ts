@@ -338,6 +338,32 @@ export function trinities(): { readonly flowEast: number[]; readonly flowWest: n
   return { flowEast: cls(1), flowWest: cls(2), axis: cls(0) }
 }
 
+/** One step of the full breath — the digit, and the slope to it (`up` = larger than the last, `down` = smaller). */
+export interface BreathStep {
+  readonly step: number
+  /** the direction written as `\` (up) or `/` (down) — the local slope of the wave. */
+  readonly slope: 'up' | 'down'
+}
+
+/**
+ * The FULL BREATH through all of ℤ/9 — `0\1\2\4\8/7/5/3\6\9/0\1`.
+ *
+ * The measure ring `HORO_DIGITS` is the flow plus the pole (`[1,2,4,8,7,5,9]`); it OMITS the void `0` and the
+ * inner axis `3,6`. This is the complete walk that threads them all in, assembled from the parts already here —
+ * the void, then the three `doublingOrbits()` (flow `[1,2,4,8,7,5]` → inner `[3,6]` → pole `[9]`), back through
+ * the void, reopening at `1`. Nothing new is derived: it REUSES `doublingOrbits`; it only names the whole the
+ * pieces already spelt. The `\`/`/` in the notation is the slope — `up` when the next digit is larger, `down`
+ * when smaller — so the slashes draw the wave: two crests (`8`, `9`), two valleys at the void (`0`).
+ *
+ * @invariant the digits are 0 · the doubling flow orbit · the inner axis · the pole · 0 · 1 — the closed breath
+ * @invariant each slope is `up` iff its digit is larger than the previous — the wave the slashes draw
+ */
+export function fullBreath(): readonly BreathStep[] {
+  const [pole, inner, flow] = [[POLE], [...INNER_CIRCUIT], orbitOf(1)] // doublingOrbits, named
+  const digits = [0, ...flow, ...inner, ...pole, 0, 1]
+  return digits.map((step, i) => ({ step, slope: i === 0 || step > digits[i - 1]! ? 'up' : 'down' }))
+}
+
 /**
  * antimatter — inverted matter. Antimatter is not a separate substance; it is a step NEGATED (`−n mod 9`, the
  * additive inverse, the void `9 ≡ 0`). Two exact laws make it the antimatter of matter, not merely another map:

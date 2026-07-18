@@ -684,6 +684,10 @@ Partly, and the split is the answer.
 
 **Two distinct centres: 5 balances and propels; 9 attracts.** Conflating them is the mistake `fiveRoles` guards against — the "still centre" of [[gravity]] (the mass attractor) is 9/[[law]], while 5 is the *balance* centre and the reverse *drive*. Both are real; they are not the same point.
 
+### The full breath — `0\1\2\4\8/7/5/3\6\9/0\1` (`fullBreath`)
+
+The measure ring `HORO_DIGITS` is the flow plus the pole (`[1,2,4,8,7,5,9]`); it **omits** the void `0` and the inner axis `3,6`. `fullBreath()` is the complete walk that threads them all in — the void, then the three `doublingOrbits()` (flow `[1,2,4,8,7,5]` → inner `[3,6]` → pole `[9]`), back through the void, reopening at `1`. It **reuses** `doublingOrbits`; it derives nothing new, it names the whole the pieces already spelt. The `\`/`/` is the **slope** — `\` where the next digit is larger, `/` where smaller — so the slashes draw the wave: two crests (`8`, `9`), the valleys at the void. Read local first: the present `horo` already decodes the sequence; the only seed was assembling it.
+
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.
 - A flow state on a triad digit {3,6} — those govern, they don't flow.
