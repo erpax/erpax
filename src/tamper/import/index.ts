@@ -18,6 +18,7 @@
  */
 import { readdirSync, statSync, readFileSync, existsSync } from 'node:fs'
 import { coverageCostLog2 } from '@/cost'
+import { importSpecifiersOf } from '@/syntax'
 
 const SRC = 'src'
 
@@ -54,11 +55,16 @@ export function resolveBarrel(spec: string, root = SRC): string | null {
   return null
 }
 
-/** Scan the source: total `@/` imports + the non-index violations (the raises). */
+/**
+ * Scan the source: total `@/` imports + the non-index violations (the raises).
+ *
+ * PARSED, not matched ([[syntax]]): the regex this shipped with counted import-shaped STRINGS —
+ * a template writing `from '@/…'` into generated code, a test fixture naming one — as imports,
+ * and reported 38 phantoms over a sealed baseline of 0. Only a grammatical import couples.
+ */
 export function scanImports(root = SRC): { total: number; violations: ImportViolation[] } {
   const violations: ImportViolation[] = []
   let total = 0
-  const re = /(?:from|import)\s+['"](@\/[^'"]+)['"]/g
   const walk = (dir: string): void => {
     for (const e of readdirSync(dir)) {
       const p = dir + '/' + e
@@ -74,9 +80,9 @@ export function scanImports(root = SRC): { total: number; violations: ImportViol
       }
       if (!/\.(ts|tsx)$/.test(e) || /\.d\.ts$/.test(e)) continue
       const body = readFileSync(p, 'utf8')
-      for (let m; (m = re.exec(body)); ) {
+      for (const spec of importSpecifiersOf(p, body)) {
+        if (!spec.startsWith('@/')) continue
         total++
-        const spec = m[1]!
         if (!resolveBarrel(spec) && !isIndexImport(spec)) {
           violations.push({ file: p.slice(root.length + 1), spec })
         }

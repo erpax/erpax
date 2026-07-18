@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { commentsOf, commentSites, lineColumnOf, boundNames, atomPath } from './index'
+import { commentsOf, commentSites, lineColumnOf, boundNames, importSpecifiersOf, atomPath } from './index'
 
 const f = 'x.ts'
 
@@ -110,5 +110,24 @@ describe('commentSites + lineColumnOf — the exact address of prose', () => {
     const site = commentSites('f.ts', text)[0]!
     const markerOffset = site.pos + site.text.indexOf('@invariant')
     expect(lineColumnOf(text, markerOffset)).toEqual({ line: 4, column: 4 }) // ` * @invariant` — col 4
+  })
+
+  describe('importSpecifiersOf — an import is a grammatical fact; a string is data', () => {
+    it('reads import-from, export-from and dynamic import specifiers', () => {
+      const text = "import { a } from '@/a'\nexport * from '@/b'\nconst p = import('@/c')"
+      expect(importSpecifiersOf(f, text)).toEqual(['@/a', '@/b', '@/c'])
+    })
+
+    it('a specifier written INSIDE a string or template is never an import — the phantom class', () => {
+      // The tamper/import regex counted these as imports and reported 38 phantoms over a sealed
+      // baseline of 0: a codegen template writing `from '@/…'`, a fixture naming one.
+      const text = 'const tpl = `export * from \'@/${pair}\'`\nconst fixture = "import { x } from \'@/a\'"\n// from \'@/comment\'\n'
+      expect(importSpecifiersOf(f, text)).toEqual([])
+    })
+
+    it('type-only imports ARE returned — erased at runtime, they still couple source to a path', () => {
+      const text = "import type { T } from '@/deep/file'\nimport { type U } from '@/other'"
+      expect(importSpecifiersOf(f, text)).toEqual(['@/deep/file', '@/other'])
+    })
   })
 })

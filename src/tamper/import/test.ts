@@ -19,8 +19,10 @@ describe('tamper/import — import purity as a tamper-cost dimension', () => {
     expect(p).toBeGreaterThanOrEqual(0)
     expect(p).toBeLessThanOrEqual(1)
   })
-  it('import tamper-cost is finite while a gap is open (and would seal to ∞ at full purity)', () => {
-    expect(importCostLog2()).toBeGreaterThanOrEqual(0)
-    expect(Number.isFinite(importCostLog2())).toBe(true) // a gap is currently open
+  it('the import graph is SEALED — purity 1, tamper-cost ∞ (parsed, not matched: a string is not an import)', () => {
+    // The regex this atom shipped with reported 38 phantom violations over a sealed baseline of 0 —
+    // import-shaped strings in templates and fixtures. The grammar read says purity is total.
+    expect(importPurity()).toBe(1)
+    expect(importCostLog2()).toBe(Infinity)
   })
 })

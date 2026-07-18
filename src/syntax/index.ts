@@ -131,3 +131,27 @@ export function boundNames(file: string, text: string): string[] {
   visit(src)
   return [...out]
 }
+
+/**
+ * Every module specifier a file IMPORTS by grammar — `import … from`, `export … from`, `import('x')`.
+ * Type-only imports are INCLUDED: erased at runtime, they still couple source to a path (this is the
+ * source-coupling read; [[rules]]/cycle keeps its own runtime-edge read that excludes them).
+ *
+ * @invariant a specifier inside a string/template literal or a comment is never returned — data is not an import
+ */
+export function importSpecifiersOf(file: string, text: string): string[] {
+  const src = sourceOf(file, text)
+  const out: string[] = []
+  const visit = (n: ts.Node): void => {
+    if (ts.isImportDeclaration(n) && ts.isStringLiteral(n.moduleSpecifier)) out.push(n.moduleSpecifier.text)
+    else if (ts.isExportDeclaration(n) && n.moduleSpecifier && ts.isStringLiteral(n.moduleSpecifier))
+      out.push(n.moduleSpecifier.text)
+    else if (ts.isCallExpression(n) && n.expression.kind === ts.SyntaxKind.ImportKeyword) {
+      const arg = n.arguments[0]
+      if (arg && ts.isStringLiteral(arg)) out.push(arg.text)
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+  return out
+}
