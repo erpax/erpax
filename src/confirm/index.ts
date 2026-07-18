@@ -20,6 +20,7 @@ import { execSync } from 'node:child_process'
 import { join } from 'node:path'
 import { guardian, type GuardianVerdict } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
+import { recordSampleMs } from '@/timeout'
 import { folderViolations, folderGuardians } from '@/law/folder'
 import { nonIndexImports } from '@/tamper/import'
 import { boundaryDigest } from '@/quantum/boundary'
@@ -286,7 +287,10 @@ export function uuidGates(cwd: string = process.cwd()): readonly UuidGateResult[
   return lanes.map((fn) => {
     const t = Date.now()
     const r = fn()
-    return { ...r, ms: Date.now() - t }
+    const ms = Date.now() - t
+    // a green lane's wall time feeds the ladder (@/timeout) — each lane earns its rung from history
+    if (r.ok) recordSampleMs(`confirm:${r.axis}`, ms, cwd)
+    return { ...r, ms }
   })
 }
 
