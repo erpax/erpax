@@ -67,7 +67,17 @@ const sourceFiles = (root: string): string[] => {
 }
 
 /** Every exported symbol with ≤1 reference — the un-folded set. One pass, frequency-counted. */
-export function unfoldedExports(cwd: string = process.cwd()): UnfoldedReport {
+/** One export with its real call-site count AND the atom (folder) it lives in — the shared scan. */
+export interface ScannedExport {
+  readonly name: string
+  readonly file: string
+  /** the atom the export lives in — path relative to src minus the filename, e.g. 'rules/collapse'. */
+  readonly atom: string
+  readonly sites: number
+}
+
+/** Every src export with its call-site count and atom — the ONE scan `unfoldedExports` + `deadAtoms` share (DRY). */
+export function scanExports(cwd: string = process.cwd()): ScannedExport[] {
   const files = sourceFiles(join(cwd, 'src'))
   const freq = new Map<string, number>()
   const defs = new Map<string, string>()
@@ -88,15 +98,51 @@ export function unfoldedExports(cwd: string = process.cwd()): UnfoldedReport {
       .replace(/export\s*\{[^}]*\}\s*from\s+['"][^'"]+['"];?/gs, '')
     for (const m of used.matchAll(/\b[A-Za-z_$][\w$]*\b/g)) freq.set(m[0]!, (freq.get(m[0]!) ?? 0) + 1)
   }
-  const dead: UnfoldedExport[] = []
-  const single: UnfoldedExport[] = []
+  const out: ScannedExport[] = []
   for (const [name, file] of defs) {
-    const sites = (freq.get(name) ?? 1) - 1 // minus the definition itself
-    if (sites === 0) dead.push({ name, file, sites })
-    else if (sites === 1) single.push({ name, file, sites })
+    const rel = file.replace(/^src\//, '')
+    const atom = rel.includes('/') ? rel.slice(0, rel.lastIndexOf('/')) : rel.replace(/\.[^.]+$/, '')
+    out.push({ name, file, atom, sites: (freq.get(name) ?? 1) - 1 })
   }
+  return out
+}
+
+export function unfoldedExports(cwd: string = process.cwd()): UnfoldedReport {
+  const all = scanExports(cwd)
+  const dead = all.filter((e) => e.sites === 0).map(({ name, file, sites }) => ({ name, file, sites }))
+  const single = all.filter((e) => e.sites === 1).map(({ name, file, sites }) => ({ name, file, sites }))
   const byName = (a: UnfoldedExport, b: UnfoldedExport): number => (a.name < b.name ? -1 : 1)
-  return { files: files.length, exports: defs.size, dead: dead.sort(byName), single: single.sort(byName) }
+  return {
+    files: sourceFiles(join(cwd, 'src')).length,
+    exports: all.length,
+    dead: dead.sort(byName),
+    single: single.sort(byName),
+  }
+}
+
+/** An atom where EVERY export is unreferenced — a folder that is dead WHOLE. */
+export interface DeadAtom {
+  readonly atom: string
+  readonly exports: number
+}
+
+/**
+ * Fold the scattered dead exports into the ACTIONABLE unit: atoms where every export is unreferenced — the
+ * 'folders to go' shortlist. CANDIDATES, never a purge list ([[rules]]/unfolded's own law): an `@erpax/*` public
+ * face has no in-repo caller BY DESIGN, and a dynamically-reached symbol is invisible to this lexical scan — so
+ * each still needs a human's eye. But this turns 444 scattered exports into the handful of whole-dead atoms.
+ */
+export function deadAtoms(cwd: string = process.cwd()): DeadAtom[] {
+  const byAtom = new Map<string, ScannedExport[]>()
+  for (const e of scanExports(cwd)) {
+    if (e.atom.startsWith('app/')) continue // the app tree is framework-owned, not a corpus atom
+    byAtom.set(e.atom, [...(byAtom.get(e.atom) ?? []), e])
+  }
+  const out: DeadAtom[] = []
+  for (const [atom, exps] of byAtom) {
+    if (exps.length > 0 && exps.every((e) => e.sites === 0)) out.push({ atom, exports: exps.length })
+  }
+  return out.sort((a, b) => b.exports - a.exports || (a.atom < b.atom ? -1 : 1))
 }
 
 /**
