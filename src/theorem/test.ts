@@ -23,7 +23,7 @@ describe('theorem — all is theorem of theorems; authority is never a step', ()
   it('a theorem of theorems reduces — grounds in base theorems through composition', () => {
     const r = reduce('A-and-B', graph)
     expect(r.reduces).toBe(true)
-    expect(r.grounds.sort()).toEqual(['base-A', 'base-B'])
+    expect([...r.grounds].sort()).toEqual(['base-A', 'base-B'])
     expect(r.assertions).toEqual([])
   })
 

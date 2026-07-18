@@ -271,7 +271,7 @@ export function revealBackend(): Divergence[] {
   return Object.entries(THEORETICAL_FLOOR).map(([dimension, floor]) => {
     const price = PRICE_RATE[dimension] ?? 0
     const ratio = floor.usdPerUnit === 0 ? Infinity : Math.round((price / floor.usdPerUnit) * 100) / 100
-    const verdict = ratio < 0.8 ? 'subsidy' : ratio <= 3 ? 'commoditised' : 'margin'
+    const verdict: Divergence['verdict'] = ratio < 0.8 ? 'subsidy' : ratio <= 3 ? 'commoditised' : 'margin'
     return { dimension, priceUsdPerUnit: price, floorUsdPerUnit: floor.usdPerUnit, ratio, verdict, basis: floor.basis }
   }).sort((a, b) => a.ratio - b.ratio)
 }
