@@ -43,6 +43,8 @@ export interface UuidGateResult {
   readonly axis: string
   readonly ok: boolean
   readonly reason: string
+  /** wall time this lane took, ms — so the seal MEASURES its own bottleneck (a reusable tool, not a throwaway). */
+  readonly ms?: number
 }
 
 export interface UuidConfirmResult {
@@ -268,19 +270,24 @@ export function gateCloudflareAi(cwd: string = process.cwd()): UuidGateResult {
   }
 }
 
-/** Run every uuid-pure gate; default order is cheapest-first where practical. */
+/** Run every uuid-pure gate, TIMING each lane; default order is cheapest-first where practical. */
 export function uuidGates(cwd: string = process.cwd()): readonly UuidGateResult[] {
-  return [
-    gateAura(cwd),
-    gateFolders(),
-    gateImports(),
-    gateTypecheck(cwd),
-    gateReadme(cwd),
-    gateBoundary(),
-    gateDiamond(cwd),
-    gateCloudflareAi(cwd),
-    gateTypography(cwd),
+  const lanes: Array<() => UuidGateResult> = [
+    () => gateAura(cwd),
+    () => gateFolders(),
+    () => gateImports(),
+    () => gateTypecheck(cwd),
+    () => gateReadme(cwd),
+    () => gateBoundary(),
+    () => gateDiamond(cwd),
+    () => gateCloudflareAi(cwd),
+    () => gateTypography(cwd),
   ]
+  return lanes.map((fn) => {
+    const t = Date.now()
+    const r = fn()
+    return { ...r, ms: Date.now() - t }
+  })
 }
 
 /** Cross uuid gates into one seal verdict — fail-closed on empty. */
@@ -304,12 +311,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log('confirm:uuid — substrate-independent seal (no Payload typegen)\n')
   for (const g of gates) {
     const mark = g.ok ? '✓' : '✗'
-    console.log(`  ${mark} ${g.axis.padEnd(14)} ${g.reason}`)
+    console.log(`  ${mark} ${String(g.ms ?? 0).padStart(6)}ms  ${g.axis.padEnd(14)} ${g.reason}`)
   }
+  const total = gates.reduce((s, g) => s + (g.ms ?? 0), 0)
+  const slowest = [...gates].sort((a, b) => (b.ms ?? 0) - (a.ms ?? 0))[0]
+  console.log(`\n  total ${total}ms · slowest lane: ${slowest?.axis} (${slowest?.ms}ms = ${Math.round(((slowest?.ms ?? 0) / total) * 100)}%)`)
   console.log(
     sealed
-      ? '\n✓ confirmed:uuid — all gates green (content-uuid layer; Payload optional)'
-      : '\n✗ NOT confirmed:uuid — fix the failing gate(s) above',
+      ? '✓ confirmed:uuid — all gates green (content-uuid layer; Payload optional)'
+      : '✗ NOT confirmed:uuid — fix the failing gate(s) above',
   )
   process.exit(sealed ? 0 : 1)
 }
