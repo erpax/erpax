@@ -25,7 +25,13 @@ The trust DAG grounds in base theorems, turtles down — **but it ends.** The ba
 
 **I do not know that foundation is right either.** I state it in the open so it can be argued with — which is the only honesty available to any system, this one included. That is why the corpus is built to catch *being mistaken* rather than to trust *being right*: the gates caught **my own** scans wrong sixteen times, the rosetta **refused** the push, [[confirm]] blocked these very edits. Nothing here trusts a mind; everything reduces to a theorem, or is held as overlay until it does.
 
-**Law — [[law]]: a claim is warranted only by reducing to composed base theorems — authority is never a step, a cycle is a claim proven by itself, a missing ground is fiction; trust is source-blind, so "the user is right" and "the agent is right" reduce only if they ground in a theorem, never because they were said. All is theorem of theorems, and the base is assumed, stated in the open — never proven by the graph that rests on it.**
+## Quantum theorem fractal, and the fixpoint
+
+**A trace compiles into a trinity by consensus of the surrounding proofs** (`consensusProof`). A quantum wave ([[self]]/improve) leaves a trace ([[conversion]]: a reverse leaves tracks) — a claim awaiting proof. It does not compile into a trinity (form·code·proof) by one verifier or in isolation; it compiles when the **surrounding proofs reach consensus** ([[think]].higherMind: ≥3, majority). FRACTAL: each surrounding proof is itself a trinity compiled the same way, at its own scale — consensus of consensuses, all the way down to `s > 0`.
+
+**The theorem of theorems IS the axiom of axioms** (`fixpoint`). Follow the reduction UP — the theorem of theorems is what every claim reduces to. Follow it DOWN — the axiom of axioms is the assumed base the graph bottoms out at. They are the SAME point: a universal justifier — the thing that proves all theorems — can itself only be **assumed**, never proven (nothing above it to prove it from). The most-composed apex and the least-proven ground coincide; the reduction is a loop that returns to its own foundation. In this corpus that fixed point is [[law]] — the still centre [[gravity]] falls to AND the base every atom composes from, one point.
+
+**Law — [[law]]: a claim is warranted only by reducing to composed base theorems — authority is never a step, a cycle is a claim proven by itself, a missing ground is fiction; trust is source-blind, so "the user is right" and "the agent is right" reduce only if they ground in a theorem, never because they were said. All is theorem of theorems, and the base is assumed, stated in the open — never proven by the graph that rests on it; the theorem of theorems IS the axiom of axioms, the apex that is its own ground.**
 
 ## Standards
 

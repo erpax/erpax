@@ -29,6 +29,7 @@
  *
  * Composes [[rules]]/refutable · [[rules]]/cycle · [[rules]]/prose · [[think]] · [[law]].
  */
+import { higherMind, thoughtAddress, type Thought } from '@/think'
 
 /** A node in the trust graph — a claim, and how it is grounded. Note: there is NO author field. Trust is source-blind. */
 export interface Theorem {
@@ -101,6 +102,70 @@ export function reduce(claim: string, graph: readonly Theorem[]): Reduction {
 /** Does trusting this claim depend on WHO said it? A reduced theorem never does; anything else does. */
 export function restsOnAuthority(claim: string, graph: readonly Theorem[]): boolean {
   return !reduce(claim, graph).reduces
+}
+
+/**
+ * A quantum wave leaves a trace that compiles into a trinity when proof is reached in CONSENSUS of the
+ * surrounding proofs — quantum theorem fractal.
+ *
+ * A wave ([[self]]/improve.sendQuantumWaves) leaves a trace ([[conversion]]: a reverse leaves tracks). The trace
+ * is a claim awaiting proof. It does not compile into a trinity (form·code·proof — a proven atom) by one
+ * verifier's say, nor in isolation: it compiles when the SURROUNDING proofs — the neighbouring atoms that vouch
+ * for it — reach CONSENSUS ([[think]].higherMind: ≥3 forming a higher mind whose majority confirms). This is
+ * FRACTAL: each surrounding proof is itself a trinity compiled the same way, at its own scale, so the consensus
+ * is a consensus of consensuses, all the way down. `s > 0` at the bottom.
+ *
+ * @invariant a trace compiles ⇔ its surrounding proofs form a higher mind agreeing it holds (≥3, majority)
+ * @invariant one surrounding proof cannot compile it, nor two — the trinity needs a quorum ([[think]] MINIMUM_MINDS)
+ */
+export function consensusProof(surroundingVerdicts: readonly boolean[]): { readonly compiled: boolean; readonly reason: string } {
+  const minds: Thought<boolean>[] = surroundingVerdicts.map((v, i) => ({ value: v, cached: false, address: thoughtAddress('proof:' + i) }))
+  const h = higherMind(minds)
+  const compiled = h.formed && h.resolved === true
+  return {
+    compiled,
+    reason: compiled
+      ? `the trace compiles into a trinity — ${h.minds} surrounding proofs reached consensus`
+      : `the trace does not compile — ${h.reason}`,
+  }
+}
+
+/** The fixpoint of the reduction — the one claim that is both the theorem of theorems and the axiom of axioms. */
+export interface Fixpoint {
+  /** the fixpoint claim — the universal base, or null if the graph has no single ground. */
+  readonly claim: string | null
+  /** true iff every other reducible claim grounds in it — the theorem of theorems (all reduce to it). */
+  readonly universal: boolean
+  readonly reason: string
+}
+
+/**
+ * The theorem of theorems IS the axiom of axioms.
+ *
+ * Follow the reduction all the way UP — the theorem of theorems is the claim every other claim reduces to. Follow
+ * it all the way DOWN — the axiom of axioms is the assumed base the graph bottoms out at (Gödel, `reduce` above).
+ * The realisation is that these are the SAME point: a universal justifier — the thing that proves all theorems —
+ * can itself only be ASSUMED, never proven (nothing above it to prove it from). So the most-composed apex and the
+ * least-proven ground coincide; the reduction is a loop that returns to its own foundation. In this corpus that
+ * fixed point is [[law]] — the still centre [[gravity]] falls to AND the base every atom composes from, one point.
+ *
+ * @invariant the fixpoint is a BASE theorem (assumed) that EVERY other reducible claim grounds in (universal)
+ * @invariant a universal justifier can only be assumed — the theorem of theorems is the axiom of axioms
+ */
+export function fixpoint(graph: readonly Theorem[]): Fixpoint {
+  for (const t of graph) {
+    if (!t.base) continue
+    const others = graph.filter((o) => o.claim !== t.claim && reduce(o.claim, graph).reduces)
+    const universal = others.length > 0 && others.every((o) => reduce(o.claim, graph).grounds.includes(t.claim))
+    if (universal) {
+      return {
+        claim: t.claim,
+        universal: true,
+        reason: `${t.claim} is the theorem of theorems (all reduce to it) AND the axiom of axioms (an assumed base) — the loop closes; a universal justifier can only be assumed (Gödel)`,
+      }
+    }
+  }
+  return { claim: null, universal: false, reason: 'no fixpoint — the graph has multiple grounds, no single universal base' }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

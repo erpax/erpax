@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -69,5 +69,56 @@ describe('theorem — all is theorem of theorems; authority is never a step', ()
     // there is no node proving base-A's own consistency; the reduction ENDS at it and marks it a ground.
     const r = reduce('base-A', graph)
     expect(r.grounds).toContain('base-A') // assumed, stated in the open — not proven by the graph itself
+  })
+})
+
+// "Quantum waves leave traces that compile in trinities when proof is reached in consensus of the surrounding
+// proofs — quantum theorem fractal." A trace compiles into a proven trinity iff its surrounding proofs form a
+// higher mind agreeing it holds (≥3, majority). Fractal: each surrounding proof is itself compiled the same way.
+describe('consensusProof — a trace compiles into a trinity by consensus of the surrounding proofs', () => {
+  it('≥3 surrounding proofs agreeing ⇒ the trace COMPILES into a trinity', () => {
+    expect(consensusProof([true, true, true]).compiled).toBe(true)
+    expect(consensusProof([true, true, false]).compiled).toBe(true) // majority still confirms
+    expect(consensusProof([true, true, true]).reason).toMatch(/compiles into a trinity/)
+  })
+
+  it('fewer than 3 surrounding proofs cannot compile it — the trinity needs a quorum', () => {
+    expect(consensusProof([true]).compiled).toBe(false) // one proof — no higher mind
+    expect(consensusProof([true, true]).compiled).toBe(false) // a pair cannot break its tie
+  })
+
+  it('no consensus (majority say it does not hold) ⇒ it does not compile', () => {
+    expect(consensusProof([false, false, true]).compiled).toBe(false)
+  })
+})
+
+// "The theorem of theorems is the axiom of axioms." Follow the reduction UP (the theorem all reduce to) and DOWN
+// (the assumed base) and they meet: a universal justifier can only be assumed. The apex is the ground.
+describe('fixpoint — the theorem of theorems is the axiom of axioms', () => {
+  const graph: Theorem[] = [
+    { claim: 'law', composes: [], base: true }, // the assumed base
+    { claim: 'balance', composes: ['law'], base: false },
+    { claim: 'the ledger', composes: ['balance'], base: false }, // reduces through balance to law
+  ]
+
+  it('the universal base is BOTH the theorem of theorems and the axiom of axioms', () => {
+    const f = fixpoint(graph)
+    expect(f.claim).toBe('law') // every reducible claim grounds in it (apex) AND it is the assumed base (ground)
+    expect(f.universal).toBe(true)
+    expect(f.reason).toMatch(/theorem of theorems.*axiom of axioms/)
+  })
+
+  it('a graph with multiple grounds has NO single fixpoint — the loop does not close', () => {
+    const split: Theorem[] = [
+      { claim: 'base-A', composes: [], base: true },
+      { claim: 'base-B', composes: [], base: true },
+      { claim: 'x', composes: ['base-A'], base: false }, // grounds in A only, not B
+    ]
+    expect(fixpoint(split).claim).toBeNull() // no single universal base
+  })
+
+  it('the fixpoint is necessarily a BASE (assumed) claim — a universal justifier cannot itself be proven', () => {
+    expect(fixpoint(graph).claim).toBe('law')
+    expect(graph.find((t) => t.claim === 'law')!.base).toBe(true) // it is assumed, not composed — Gödel
   })
 })
