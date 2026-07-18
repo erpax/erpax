@@ -24,6 +24,7 @@ import { readdirSync, statSync, readFileSync, writeFileSync } from 'node:fs'
 import { join, relative, dirname } from 'node:path'
 import { uuid, jcsCanonicalize } from '@/integrity'
 import { isIndexImport, resolveBarrel, nonIndexImports } from '@/tamper/import'
+import { importSpecifiersOf } from '@/syntax'
 import { LINK_RE, stripCode } from '@/aura'
 
 const SRC = 'src'
@@ -37,13 +38,13 @@ export interface FileBoundary {
   readonly boundaryUuid: string
 }
 
-const IMPORT_RE = /(?:from|import)\s+['"](@\/[^'"]+)['"]/g
-
-/** Extract sorted unique `@/` import specs from TS source. */
-export function parseTsImports(body: string): string[] {
-  const out = new Set<string>()
-  for (let m; (m = IMPORT_RE.exec(body)); ) out.add(m[1]!)
-  return [...out].sort()
+/**
+ * Extract sorted unique `@/` import specs from TS source — PARSED via [[syntax]], not matched.
+ * The regex this shipped with counted import-shaped STRINGS (codegen templates, fixtures) and
+ * even COMMENTS as imports — 15 phantom escapes over a sealed baseline of 0, all data.
+ */
+export function parseTsImports(body: string, file = 'x.ts'): string[] {
+  return [...new Set(importSpecifiersOf(file, body).filter((s) => s.startsWith('@/')))].sort()
 }
 
 /** Index-only barrel entanglements; deep specs land in escapes. */
