@@ -23,6 +23,8 @@
 import { readFileSync, readdirSync, type Dirent } from 'node:fs'
 import { join, relative } from 'node:path'
 
+import { shapesOf } from '@/rules/collapse'
+
 /** Generated bundles restate every symbol — they are not evidence of use. */
 const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$/
 const SOURCE = /\.tsx?$/
@@ -133,6 +135,17 @@ export interface DeadAtom {
  * each still needs a human's eye. But this turns 444 scattered exports into the handful of whole-dead atoms.
  */
 export function deadAtoms(cwd: string = process.cwd()): DeadAtom[] {
+  // A Payload collection atom is registered DYNAMICALLY through the barrel (Object.values), invisible to a
+  // lexical scan — so its lone export reads as dead when the table is live. Exclude any atom whose path maps to
+  // a booted collection slug (shapesOf is the config's own answer — coordinated DRY, the collapse tool reused).
+  const slugs = new Set(shapesOf(cwd).map((s) => s.slug))
+  const isCollection = (atom: string): boolean => {
+    // a slug is the atom's TRAILING segments joined with '-' (bank/accounts/bank/reconciliations →
+    // bank-reconciliations), so test every suffix, not just the leaf.
+    const segs = atom.split('/')
+    for (let i = 0; i < segs.length; i++) if (slugs.has(segs.slice(i).join('-'))) return true
+    return false
+  }
   const byAtom = new Map<string, ScannedExport[]>()
   for (const e of scanExports(cwd)) {
     if (e.atom.startsWith('app/')) continue // the app tree is framework-owned, not a corpus atom
@@ -140,6 +153,7 @@ export function deadAtoms(cwd: string = process.cwd()): DeadAtom[] {
   }
   const out: DeadAtom[] = []
   for (const [atom, exps] of byAtom) {
+    if (isCollection(atom)) continue // live via dynamic registration, not dead
     if (exps.length > 0 && exps.every((e) => e.sites === 0)) out.push({ atom, exports: exps.length })
   }
   return out.sort((a, b) => b.exports - a.exports || (a.atom < b.atom ? -1 : 1))
