@@ -27,7 +27,7 @@
  */
 
 import type { AgentContext, AgentEffect } from './types'
-import { assertStrictEffect } from './strict-apply'
+import { assertStrictEffect } from './index'
 
 /** Mustache-style placeholder substitution. */
 function compose(template: string, vars: Record<string, unknown>): string {

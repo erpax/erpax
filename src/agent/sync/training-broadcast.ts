@@ -25,7 +25,7 @@ import type { AgentContext, DomainEvent } from '../types'
 import type { HeldLine, RequiredLine } from '@/competency/gap'
 import { processEffects } from '../effect-processor'
 import { createAgentContext } from '../context'
-import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '../strict-apply'
+import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '@/agent'
 import { TRAINING_TRIGGER } from '@/agents/registered'
 import { chatEmit, type ChatClient } from './payload-chat'
 

@@ -172,3 +172,93 @@ export function alphanumericNameViolations(cwd: string = process.cwd()): Alphanu
   walk(root, '')
   return out
 }
+
+const PERMITTED_TS = new Set(['index.ts', 'test.ts'])
+const GENERATED_TS = /\.generated\.ts$/i
+const NON_TS_PROGRAMMING_EXT = /\.(js|mjs|cjs|jsx|tsx|vue|py|sh|rs|mts)$/i
+
+export interface StrayTsViolation {
+  readonly atomPath: string
+  readonly file: string
+  readonly law: 'stray-ts'
+  readonly reason: string
+}
+
+export interface TsOnlyViolation {
+  readonly relPath: string
+  readonly file: string
+  readonly ext: string
+  readonly law: 'ts-only'
+  readonly reason: string
+}
+
+/** Every non-.ts programming-language file under src/ (full tree). */
+export function nonTsLanguageViolations(cwd: string = process.cwd()): TsOnlyViolation[] {
+  const root = join(cwd, 'src')
+  const out: TsOnlyViolation[] = []
+  const walk = (dir: string, rel: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir).sort()
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      const childRel = rel ? `${rel}/${e}` : e
+      if (isDir(p)) {
+        walk(p, childRel)
+        continue
+      }
+      const m = e.match(NON_TS_PROGRAMMING_EXT)
+      if (!m) continue
+      out.push({
+        relPath: childRel,
+        file: e,
+        ext: m[1]!.toLowerCase(),
+        law: 'ts-only',
+        reason: `non-TypeScript source ${e} — corpus allows only .ts named index.ts or test.ts`,
+      })
+    }
+  }
+  walk(root, '')
+  return out
+}
+
+/**
+ * Every non-permitted `.ts` sibling under `src/` — full tree walk.
+ * Framework trees `app/` · `migrations/` skipped. Emit `*.generated.ts` exempt.
+ */
+export function strayTsViolations(cwd: string = process.cwd()): StrayTsViolation[] {
+  const root = join(cwd, 'src')
+  const out: StrayTsViolation[] = []
+  const walk = (dir: string, rel: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir).sort()
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      if (isDir(p)) {
+        if (!rel && SKIP_TREES.has(e)) continue
+        walk(p, rel ? `${rel}/${e}` : e)
+        continue
+      }
+      if (!e.endsWith('.ts')) continue
+      if (PERMITTED_TS.has(e)) continue
+      if (GENERATED_TS.test(e)) continue
+      out.push({
+        atomPath: rel || '.',
+        file: e,
+        law: 'stray-ts',
+        reason: 'stray .ts sibling — only index.ts and test.ts permitted; nest child atom or fold into index.ts',
+      })
+    }
+  }
+  walk(root, '')
+  return out
+}

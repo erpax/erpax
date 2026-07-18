@@ -18,7 +18,7 @@ import {
 } from '@/apply/wave'
 import { userWordUnprovenViolations, proveDiamondOrRevertBatch } from '@/law/folder/user-word'
 import { findLinearLogic, applyLinearFolds, doubleFold } from '@/quantum/fold'
-import { linearGaps, entanglementScore } from '@/quantum/gap'
+import { linearGaps, entanglementScore } from '@/quantum'
 import { parseWithSecurity } from '@/agent/security'
 import { issueReceipt, type Receipt } from '@/receipt'
 import { neighborsOf } from '@/uuid/matrix'

@@ -2,9 +2,8 @@
  * live-counts — live violation counts per ratchet axis (corpus scan).
  */
 import { join } from 'node:path'
-import { folderViolations, alphanumericNameViolations } from './scan'
+import { folderViolations, alphanumericNameViolations, strayTsViolations, nonTsLanguageViolations } from './scan'
 import {
-  strayTsViolations,
   multiSegmentFileViolations,
   accountingStructureViolations,
   forbiddenIntermediateViolations,
@@ -53,6 +52,7 @@ export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Recor
     'folder-trinity': folder.trinity.length,
     'alphanumeric-name': alphanumericNameViolations(cwd).length,
     'stray-ts': strayTsViolations(cwd).length,
+    'ts-only': nonTsLanguageViolations(cwd).length,
     'multi-segment-file': multiSegmentFileViolations(cwd).length,
     'accounting-structure': accountingStructureViolations(cwd).length,
     'forbidden-intermediate': forbiddenIntermediateViolations(cwd).length,

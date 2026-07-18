@@ -11,6 +11,7 @@ import {
   TRINITY_FORM,
   type DiamondMembershipViolation,
 } from '@/diamond/membership'
+import { strayTsViolations } from '@/law/folder/scan'
 import {
   ACCOUNTING_NEST_MAP,
   FORBIDDEN_INTERMEDIATE_SEGMENTS,
@@ -96,31 +97,12 @@ export function isMultiSegmentFilename(name: string): boolean {
   return MULTI_SEGMENT_STEM.test(stem)
 }
 
-export function strayTsViolations(cwd: string = process.cwd()): TightenedViolation[] {
-  const out: TightenedViolation[] = []
-  for (const atomPath of listAtomPaths(cwd)) {
-    const dir = join(cwd, SRC, atomPath)
-    const entries = fileNames(dir)
-    const hasCode = entries.some((e) => e === 'index.ts' || e === 'index.tsx' || e === 'test.ts')
-    if (!hasCode) continue
-    for (const e of entries) {
-      if (isDir(join(dir, e))) continue
-      if (!/\.tsx?$/i.test(e)) continue
-      if (ROOT_TS_ALLOWED.has(e)) continue
-      if (COLOCATED_TEST.test(e)) continue
-      if (COMPUTED_FACES.has(e)) continue
-      if (GENERATED_TS.test(e)) continue
-      if (UI_FACET_TSX.test(e)) continue
-      out.push({
-        atomPath,
-        file: e,
-        law: 'stray-ts',
-        reason: 'barrel sibling .ts at atom root — nest as child atom or fold into index.ts',
-      })
-    }
-  }
-  return out
-}
+export {
+  strayTsViolations,
+  nonTsLanguageViolations,
+  type StrayTsViolation,
+  type TsOnlyViolation,
+} from '@/law/folder/scan'
 
 export function multiSegmentFileViolations(cwd: string = process.cwd()): TightenedViolation[] {
   const out: TightenedViolation[] = []

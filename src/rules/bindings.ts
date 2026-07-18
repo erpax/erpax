@@ -1,10 +1,5 @@
-/** Trinity + co-located slots — the only `.ts` stems allowed at a code atom root (tightened). */
-export const ROOT_TS_ALLOWED = new Set([
-  'index.ts',
-  'test.ts',
-  'translations.ts',
-  'seed.ts',
-])
+/** The only `.ts` basenames permitted per folder (user law). */
+export const ROOT_TS_ALLOWED = new Set(['index.ts', 'test.ts'])
 
 const LEGACY_COA_STEM = ['path', 'coa'].join('-')
 const LEGACY_CORPUS_STEM = ['self', 'corpus'].join('-')

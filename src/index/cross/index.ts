@@ -18,7 +18,6 @@ import {
   writeFileSync,
 } from 'node:fs'
 import { join } from 'node:path'
-import { recordOnPath } from '@/path'
 
 export const atomPath = 'index/cross' as const
 const SRC = 'src'
@@ -226,7 +225,6 @@ export function migrateAtomStrays(
 const unlinkSafe = (p: string): void => {
   try {
     if (existsSync(p)) {
-      const { unlinkSync } = require('node:fs') as typeof import('node:fs')
       unlinkSync(p)
     }
   } catch {

@@ -1,10 +1,7 @@
 /**
- * compute-rules — live-tree gate scans derived from sealed ratchet + folder law.
+ * compute-rules — live-tree gate scans (inlined into rules/index.ts barrel).
  *
- * All baselines read via `computedBaseline(axis)` from law/folder/ratchet.generated —
- * no hand ALCAPS. Bindings wire points live in ./bindings.ts.
- *
- * @see ./index.ts — ../law/folder/baseline
+ * @see ./index.ts — ../law/folder/scan — ../law/folder/ratchet.generated
  */
 import { join } from 'node:path'
 import { folderViolations, alphanumericNameViolations } from '@/law/folder/scan'
@@ -29,19 +26,22 @@ import {
   diamondMembershipScan,
   isMultiSegmentFilename,
   strayTsViolations,
+  nonTsLanguageViolations,
   multiSegmentFileViolations,
   forbiddenIntermediateViolations,
   accountingStructureViolations,
   tightenedFolderLaw,
   type TightenedViolation,
+  type TsOnlyViolation,
 } from './tightened-scans'
 
-export type { TightenedViolation }
+export type { TightenedViolation, TsOnlyViolation }
 export {
   listAtomPaths,
   diamondMembershipScan,
   isMultiSegmentFilename,
   strayTsViolations,
+  nonTsLanguageViolations,
   multiSegmentFileViolations,
   forbiddenIntermediateViolations,
   accountingStructureViolations,
@@ -63,6 +63,7 @@ export interface RulesSnapshot {
   readonly alphanumeric: readonly AlphanumericNameViolation[]
   readonly tightened: readonly TightenedViolation[]
   readonly strayTs: readonly TightenedViolation[]
+  readonly tsOnly: readonly TsOnlyViolation[]
   readonly multiSegment: readonly TightenedViolation[]
   readonly accountingStructure: readonly TightenedViolation[]
   readonly forbiddenIntermediate: readonly TightenedViolation[]
@@ -82,6 +83,7 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
   const folder = folderViolations(join(cwd, SRC))
   const alphanumeric = alphanumericNameViolations(cwd)
   const strayTs = strayTsViolations(cwd)
+  const tsOnly = nonTsLanguageViolations(cwd)
   const multiSegment = multiSegmentFileViolations(cwd)
   const accountingStructure = accountingStructureViolations(cwd)
   const forbiddenIntermediate = forbiddenIntermediateViolations(cwd)
@@ -127,8 +129,15 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
       axis: 'stray-ts',
       violations: strayTs.length,
       baseline: computedBaseline('stray-ts', cwd),
-      source: '@/law/folder/ratchet.generated',
+      source: '@/law/folder/scan',
       samples: strayTs.slice(0, 5).map((v) => `${v.atomPath}/${v.file}`),
+    },
+    {
+      axis: 'ts-only',
+      violations: tsOnly.length,
+      baseline: computedBaseline('ts-only', cwd),
+      source: '@/law/folder/scan',
+      samples: tsOnly.slice(0, 5).map((v) => v.relPath),
     },
     {
       axis: 'multi-segment-file',
@@ -232,6 +241,7 @@ export function computeRulesOf(cwd: string = process.cwd()): RulesSnapshot {
     alphanumeric,
     tightened,
     strayTs,
+    tsOnly,
     multiSegment,
     accountingStructure,
     forbiddenIntermediate,

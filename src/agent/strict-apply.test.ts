@@ -14,7 +14,7 @@ import {
   strictApplyMcpCall,
   assertStrictDispatch,
   assertStrictEffect,
-} from './strict-apply'
+} from '@/agent'
 import type { AgentContext, AgentEffect } from './types'
 import { MAX_BROADCAST_DEPTH } from './sync'
 import { followEveryPathAll, recordOnPath } from '@/path'

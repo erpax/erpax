@@ -27,7 +27,7 @@ import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '../ty
 import { cascadeDepthVerdict } from '@/ai/industry'
 import { processEffects } from '../effect-processor'
 import { createAgentContext } from '../context'
-import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '../strict-apply'
+import { AGENT_RUNTIME_GRANT, defaultAgentLawState } from '@/agent'
 import { chatEmit, type ChatClient } from './payload-chat'
 
 /** Past this many cascade hops the broadcast stops re-dispatching — runaway guard. */

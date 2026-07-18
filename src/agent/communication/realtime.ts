@@ -104,7 +104,7 @@ export const sessionApplyPath = (): string =>
   toAtomPath('src/apply/index.ts', 'fs') || 'apply'
 
 export const strictApplyPath = (): string =>
-  toAtomPath('src/agent/strict-apply.ts', 'fs') || 'agent/strict-apply'
+  toAtomPath('src/agent/index.ts', 'fs') || 'agent'
 
 export { improveDirectionPath, cleanDirectionPath, automateDirectionPath }
 

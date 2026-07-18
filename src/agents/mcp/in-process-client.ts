@@ -13,7 +13,7 @@
 
 import type { PayloadRequest } from 'payload'
 import type { AgentLawState } from '@/agent/types'
-import { assertStrictMcpCall, defaultAgentLawState } from '@/agent/strict-apply'
+import { assertStrictMcpCall, defaultAgentLawState } from '@/agent'
 import { actorFromRequest } from '@/access'
 import type { ErpaxMcpTool } from './tool-defs'
 

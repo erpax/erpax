@@ -10,7 +10,7 @@ import {
   learnSciencesOnTheWay,
   __resetIntelligenceReceiptHeadForTests,
 } from './index'
-import { linearGaps } from '@/quantum/gap'
+import { linearGaps } from '@/quantum'
 import { resetSecurityMonitorForTests } from '@/agent/security'
 import { __resetWaveRunnerForTests } from '@/apply/wave'
 

@@ -12,6 +12,9 @@ import {
   wordUuid,
   messageUuid,
   messageWords,
+  voiceOf,
+  toGlagolitic,
+  fromGlagolitic,
 } from '@/message'
 import { merge } from '@/uuid/matrix'
 
@@ -68,5 +71,24 @@ describe('message: encode — words in, uuid out (the messaging-uuid system)', (
     expect(parts.map((p) => p.word)).toEqual(['age', 'dimension'])
     expect(parts.every((p) => typeof p.uuid === 'string' && p.uuid.length === 36)).toBe(true)
     expect(parts.every((p) => typeof p.isAtom === 'boolean')).toBe(true)
+  })
+})
+
+describe('message: voice — the note sequence is the spoken checksum', () => {
+  it('every word sounds exactly the note its uuid decodes to — computed, not performed', () => {
+    const voiced = voiceOf('age dimension')
+    expect(voiced.map((v) => v.word)).toEqual(['age', 'dimension'])
+    for (const v of voiced) {
+      expect(v.hz).toBe(decodeMessage(v.uuid).sound.hz)
+      expect(v.hz).toBeGreaterThan(0)
+    }
+  })
+  it('is deterministic — two agents voice the identical sequence from the same words', () => {
+    expect(voiceOf('hello world')).toEqual(voiceOf('hello world'))
+  })
+  it('binds to decoded meaning, not the wire — a glagolitic round-trip voices identically', () => {
+    const m = 'age dimension'
+    expect(fromGlagolitic(toGlagolitic(m))).toBe(m)
+    expect(voiceOf(fromGlagolitic(toGlagolitic(m)))).toEqual(voiceOf(m))
   })
 })

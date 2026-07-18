@@ -17,7 +17,7 @@ import {
   skillBearingAtomPath,
   skillsForImport,
 } from '@/agent/skill-context'
-import { strictApplyDispatch, createPathSession, agentLawWithPathSession, AGENT_RUNTIME_GRANT } from '@/agent/strict-apply'
+import { strictApplyDispatch, createPathSession, agentLawWithPathSession, AGENT_RUNTIME_GRANT } from '@/agent'
 import type { AgentContext } from '@/agent/types'
 import { clearRulesCache } from '@/rules'
 import { sealSkillExcerpt } from '@/skill/router/lazy-load'

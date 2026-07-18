@@ -14,7 +14,7 @@ import type {
 } from './types'
 import type { SpecChainStep } from '@/spec/generator'
 import { processEffects } from './effect-processor'
-import { assertStrictDispatch } from './strict-apply'
+import { assertStrictDispatch } from './index'
 
 /**
  * Run one agent's `onEvent` and process its effects — the single per-agent body

@@ -4,6 +4,7 @@ export type RatchetAxis =
   | 'folder-trinity'
   | 'alphanumeric-name'
   | 'stray-ts'
+  | 'ts-only'
   | 'multi-segment-file'
   | 'accounting-structure'
   | 'forbidden-intermediate'
@@ -28,6 +29,7 @@ export const BASELINE_CONST_TO_AXIS: Readonly<Record<string, RatchetAxis>> = {
   FOLDER_LAW_BASELINE: 'folder-trinity',
   ALPHANUMERIC_NAME_BASELINE: 'alphanumeric-name',
   STRAY_TS_BASELINE: 'stray-ts',
+  TS_ONLY_BASELINE: 'ts-only',
   MULTI_SEGMENT_BASELINE: 'multi-segment-file',
   DIAMOND_FILES_BASELINE: 'diamond-membership',
   IMPORT_PURITY_BASELINE: 'import-purity',

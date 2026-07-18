@@ -12,6 +12,7 @@
  * @audit the uuid is self-decoding — every channel is an independent verify level
  * @see ../localize (decodeIdentity) · ../signal (NOTES, A432) · ../harmony (consonance)
  */
+export * from './local'
 import { decodeIdentity, type DecodedIdentity } from '@/localize'
 import { NOTES } from '@/signal'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
@@ -70,4 +71,25 @@ export function messageUuid(message: string): string {
 /** A message decomposed to its words, each word's uuid + atom-membership — feed for analysis. */
 export function messageWords(message: string): { word: string; uuid: string; isAtom: boolean }[] {
   return splitWords(message).map((word) => ({ word, uuid: wordUuid(word), isAtom: isAtomWord(word) }))
+}
+
+// ── voice: the message rendered as its note sequence (the spoken checksum) ──
+// Language/dialect is TTS styling ON TOP of this face; the note ladder underneath is DERIVED
+// from the word-uuids (A432 just intonation), so two agents voice the identical sequence from
+// the same words — a note that mismatches its word's uuid is tamper/corruption, heard.
+
+export interface VoicedWord {
+  word: string
+  uuid: string
+  note: string
+  solfege: string
+  hz: number
+}
+
+/** The voice face: each word sounds the note its uuid decodes to — intonation computed, not performed. */
+export function voiceOf(message: string): VoicedWord[] {
+  return messageWords(message).map(({ word, uuid }) => {
+    const { sound } = decodeMessage(uuid)
+    return { word, uuid, note: sound.note, solfege: sound.solfege, hz: sound.hz }
+  })
 }

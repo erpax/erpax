@@ -3,7 +3,7 @@
  *
  * @see ./SKILL.md — ../../path/merge — ../../tamper/import — ../../quantum/fold
  */
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { recordOnPathMerged } from '@/path'
 import { nonIndexImports, resolveBarrel, type ImportViolation } from '@/tamper/import'
@@ -31,6 +31,8 @@ export type IndexCrossViolationKind =
   | 'missing-foldback'
   | 'deep-import'
   | 'one-way-bond'
+  | 'one-way-path'
+  | 'depth-exceeds-wire'
   | 'linear-bypass'
   | 'unwired-cross'
 
@@ -166,9 +168,154 @@ const emptyByKind = (): Record<IndexCrossViolationKind, number> => ({
   'missing-foldback': 0,
   'deep-import': 0,
   'one-way-bond': 0,
+  'one-way-path': 0,
+  'depth-exceeds-wire': 0,
   'linear-bypass': 0,
   'unwired-cross': 0,
 })
+
+/** Atom folder — form or matter present (defines the path lattice). */
+const isAtomDir = (dir: string): boolean => {
+  if (!isDir(dir)) return false
+  let entries: string[]
+  try {
+    entries = readdirSync(dir)
+  } catch {
+    return false
+  }
+  return (
+    entries.includes('SKILL.md') ||
+    entries.includes('index.ts') ||
+    entries.includes('index.tsx')
+  )
+}
+
+/** Every atom path under src/ (SKILL.md or index cross). */
+export function listAtomPathsOnDisk(cwd: string = process.cwd()): string[] {
+  const root = join(cwd, SRC)
+  const out: string[] = []
+  const walk = (dir: string, rel: string): void => {
+    let entries: string[]
+    try {
+      entries = readdirSync(dir)
+    } catch {
+      return
+    }
+    if (isAtomDir(dir)) out.push(rel || '.')
+    for (const e of entries) {
+      if (e.startsWith('.') || e === 'node_modules') continue
+      const p = join(dir, e)
+      if (!isDir(p)) continue
+      const seg = rel ? `${rel}/${e}` : e
+      if (!rel && SKIP_TREES.has(seg)) continue
+      walk(p, seg)
+    }
+  }
+  walk(root, '')
+  return out.sort()
+}
+
+const reciprocalPath = (atomPath: string): string | null => {
+  const parts = normalize(atomPath).split('/').filter(Boolean)
+  if (parts.length !== 2) return null
+  return `${parts[1]}/${parts[0]}`
+}
+
+/**
+ * Path double-wire — subfolders exist only as reciprocal pairs (law/order ↔ order/law).
+ * Depth > 2 is entropy; depth 2 without reverse path is a one-way bond.
+ */
+export function pathDoubleWireViolations(cwd: string = process.cwd()): IndexCrossViolation[] {
+  const atoms = new Set(listAtomPathsOnDisk(cwd).filter((p) => p !== '.'))
+  const violations: IndexCrossViolation[] = []
+  for (const atomPath of atoms) {
+    const parts = atomPath.split('/').filter(Boolean)
+    if (parts.length <= 1) continue
+    if (parts.length > 2) {
+      violations.push({
+        atomPath,
+        kind: 'depth-exceeds-wire',
+        detail: `path depth ${parts.length} — only A/B ↔ B/A double-wire subfolders permitted`,
+        interact64: bondHex(atomPath),
+      })
+      continue
+    }
+    const rev = reciprocalPath(atomPath)!
+    if (!atoms.has(rev)) {
+      violations.push({
+        atomPath,
+        kind: 'one-way-path',
+        detail: `missing reciprocal path ${rev}`,
+        paths: [atomPath, rev],
+        interact64: bondHex(atomPath, rev),
+      })
+    }
+  }
+  return violations
+}
+
+export function pathDoubleWireHolds(atomPath: string, cwd: string = process.cwd()): boolean {
+  return pathDoubleWireImpurities(atomPath, cwd).length === 0
+}
+
+/** Seal path-axis impurities for finishedIdeaCrossed. */
+export function pathDoubleWireImpurities(atomPath: string, cwd: string = process.cwd()): string[] {
+  const path = normalize(atomPath)
+  if (!path || path === '.') return []
+  const parts = path.split('/').filter(Boolean)
+  if (parts.length <= 1) return []
+  if (parts.length > 2) {
+    return [`path: depth ${parts.length} exceeds double-wire (only A/B ↔ B/A subfolders)`]
+  }
+  const rev = reciprocalPath(path)!
+  const revDir = join(cwd, SRC, rev)
+  if (!isAtomDir(revDir)) {
+    return [`path: ${path} lacks reciprocal atom ${rev}`]
+  }
+  return []
+}
+
+export interface SealPathDoubleWireResult {
+  readonly before: number
+  readonly after: number
+  readonly sealed: number
+  readonly paths: readonly string[]
+}
+
+const stubSkill = (p: string, pair: string): string =>
+  `---\nname: ${p.split('/').pop()}\natomPath: ${p}\n---\n\n# ${p}\n\nReciprocal cross of \`${pair}\` — path double-wire seal.\n`
+
+const stubIndex = (p: string, pair: string): string =>
+  `import { recordOnPath } from '@/path'\nexport const atomPath = '${p}' as const\nexport * from '@/${pair}'\nrecordOnPath(atomPath, { kind: 'path-double-wire', pair: '${pair}' })\n`
+
+const stubTest = (p: string): string =>
+  `import { describe, it, expect } from 'vitest'\nimport { atomPath } from './index'\ndescribe('${p}', () => { it('names path', () => { expect(atomPath).toBe('${p}') }) })\n`
+
+/** Autoclean — materialise missing B/A for each one-way A/B (bounded batch). */
+export function sealPathDoubleWire(cwd: string = process.cwd(), max = 30): SealPathDoubleWireResult {
+  const before = pathDoubleWireViolations(cwd).filter((v) => v.kind === 'one-way-path').length
+  const paths: string[] = []
+  const seen = new Set<string>()
+  for (const v of pathDoubleWireViolations(cwd)) {
+    if (v.kind !== 'one-way-path' || !v.paths?.[1]) continue
+    const pair = v.paths[0]!
+    const rev = v.paths[1]!
+    if (seen.has(rev)) continue
+    seen.add(rev)
+    const dir = join(cwd, SRC, rev)
+    mkdirSync(dir, { recursive: true })
+    const skill = join(dir, 'SKILL.md')
+    const index = join(dir, 'index.ts')
+    const test = join(dir, 'test.ts')
+    if (!existsSync(skill)) writeFileSync(skill, stubSkill(rev, pair))
+    if (!existsSync(index)) writeFileSync(index, stubIndex(rev, pair))
+    if (!existsSync(test)) writeFileSync(test, stubTest(rev))
+    paths.push(rev)
+    if (paths.length >= max) break
+  }
+  const after = pathDoubleWireViolations(cwd).filter((x) => x.kind === 'one-way-path').length
+  return { before, after, sealed: Math.max(0, before - after), paths }
+}
 
 const auditFolder = (atomPath: string, cwd: string): IndexCrossViolation[] => {
   const violations: IndexCrossViolation[] = []
@@ -269,6 +416,7 @@ export function indexCrossAudit(path?: string, cwd: string = process.cwd()): Ind
   }
 
   for (const folder of folders) violations.push(...auditFolder(folder, cwd))
+  violations.push(...pathDoubleWireViolations(cwd))
 
   const byKind = emptyByKind()
   for (const v of violations) byKind[v.kind]++
@@ -479,6 +627,8 @@ export function formatIndexCrossReport(audit: IndexCrossAudit, wire?: WireIndexC
     'missing-reexport',
     'missing-foldback',
     'one-way-bond',
+    'one-way-path',
+    'depth-exceeds-wire',
     'deep-import',
     'linear-bypass',
     'unwired-cross',

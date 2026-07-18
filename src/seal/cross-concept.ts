@@ -5,7 +5,7 @@
  * path · time/matrix · trinity · horo · deployment · 2D partition · gap/seal eb).
  * Not punishment — must realise skills + cross law before retry.
  *
- * @see ./index.ts — finishedIdeaCrossed · ../rules — ../agent/strict-apply
+ * @see ./index.ts — finishedIdeaCrossed · ../rules — ../agent/index.ts (runtime gates)
  */
 import { jcsCanonicalize, uuid } from '@/integrity'
 import { issueReceipt, type Decision, type Receipt } from '@/receipt'

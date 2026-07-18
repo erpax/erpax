@@ -34,6 +34,7 @@ export {
   diamondMembershipScan,
   isMultiSegmentFilename,
   strayTsViolations,
+  nonTsLanguageViolations,
   multiSegmentFileViolations,
   forbiddenIntermediateViolations,
   accountingStructureViolations,
@@ -108,6 +109,11 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
       axis: 'stray-ts',
       violations: snapshot.strayTs.length,
       baseline: computedBaseline('stray-ts', cwd),
+    }),
+    guardian({
+      axis: 'ts-only',
+      violations: snapshot.tsOnly.length,
+      baseline: computedBaseline('ts-only', cwd),
     }),
     guardian({
       axis: 'multi-segment-file',

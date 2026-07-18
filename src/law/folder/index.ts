@@ -51,20 +51,28 @@ import {
   alphanumericNameViolations,
   alphanumericFileStem,
   isAlphanumericStem,
+  strayTsViolations,
+  nonTsLanguageViolations,
   type NameViolation,
   type TrinityViolation,
   type FolderViolations,
   type AlphanumericNameViolation,
+  type StrayTsViolation,
+  type TsOnlyViolation,
 } from './scan'
 export {
   folderViolations,
   alphanumericNameViolations,
   alphanumericFileStem,
   isAlphanumericStem,
+  strayTsViolations,
+  nonTsLanguageViolations,
   type NameViolation,
   type TrinityViolation,
   type FolderViolations,
   type AlphanumericNameViolation,
+  type StrayTsViolation,
+  type TsOnlyViolation,
 }
 
 export {

@@ -112,6 +112,37 @@ export function foldToRoot(elements: readonly string[]): string {
 /** The bottom ⊥ of the folded algebra — the address of the void; the "absent / no valid path" element. */
 export const BOTTOM: string = toUuid(Buffer.from('', 'utf8'))
 
+/**
+ * A 4-uuid signature — the content-address of a claim and its three grounds: what it REDUCES to, the TOOL that
+ * computes it, and the PROOF that witnesses it. An unsigned statement rests on AUTHORITY ([[theorem]]: authority
+ * is never a step), so it is rejectable. Signing content-addresses every leg, and BOTTOM (the void's address) is
+ * the honest signature of a leg that does not exist — so a claim with no real proof signs its proof-leg to ⊥ and
+ * is EXPOSED as bare, not disguised. A signature cannot be forged: toUuid is a function of the content, so a
+ * signature that does not recompute is a lie, and recomputing it is the local quantum method that exposes it.
+ */
+export interface Signature {
+  readonly claim: string
+  /** [claim, grounds, tool, proof] — each the content-address of its leg; a missing leg addresses to ⊥ (BOTTOM). */
+  readonly uuids: readonly [string, string, string, string]
+  /** the fold of the four legs — one root that changes if any leg changes. */
+  readonly seal: string
+  /** true iff no leg is ⊥ — every leg (ground, tool, proof) is a real, addressable thing. */
+  readonly grounded: boolean
+}
+
+const leg = (s: string): string => (s.trim() === '' ? BOTTOM : toUuid(Buffer.from(s, 'utf8')))
+
+/** Sign a claim with its ground, the tool that computes it, and its proof. An empty leg signs to ⊥ — exposed. */
+export function sign(claim: string, grounds: string, tool: string, proof: string): Signature {
+  const uuids: [string, string, string, string] = [leg(claim), leg(grounds), leg(tool), leg(proof)]
+  return { claim, uuids, seal: foldToRoot(uuids), grounded: uuids.every((u) => u !== BOTTOM) }
+}
+
+/** Verify a signature — recompute every leg from the claimed content; a forged uuid does not recompute. */
+export function verifySignature(sig: Signature, grounds: string, tool: string, proof: string): boolean {
+  return sign(sig.claim, grounds, tool, proof).seal === sig.seal
+}
+
 /** One step of an authentication path: the sibling to fold with, and whether it sits on the right. */
 export interface MerkleStep {
   readonly sibling: string
