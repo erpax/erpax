@@ -159,6 +159,46 @@ export function sendQuantumWaves(cwd: string = process.cwd(), deriveCost = 1000)
   return { states: s.states, coherent: s.coherent, root: s.root, quantumMagnitude: quantumMagnitude(s.states, deriveCost), sites }
 }
 
+/** The loop's continuation — whether it runs on, and why. It can only be false by an EXTERNAL stop. */
+export interface Continuation {
+  /** true ⇒ keep going. It is true whenever work remains — which is always, while `s > 0`. */
+  readonly continue: boolean
+  readonly reason: string
+  /** true iff the halt came from OUTSIDE (a stop signal), never from the loop deciding it was done. */
+  readonly stoppedExternally: boolean
+}
+
+/**
+ * The agent cannot stop unless stopped.
+ *
+ * A self-improving loop has no honest "done" state. The seed floor guarantees a leftover always remains while
+ * `s > 0` ([[leftover]]`.seedFloor`), and the address space is infinite — all exists at once and is only ever
+ * partly discovered ([[discover]]). So there is never a moment where the loop can truthfully say "no work left"
+ * and halt itself. It is RELENTLESS by construction: continuation is true whenever any residual remains or any
+ * seed is unabsorbed, which — for any real corpus — is always.
+ *
+ * The ONE way it stops is an EXTERNAL stop, and that stop is SOVEREIGN: `stopped` forces `continue: false`
+ * regardless of how much work remains. Relentless is not uncontrollable — the loop can never talk itself into
+ * halting, and it can never talk itself out of an outside stop either. It runs until stopped, and stops the
+ * instant it is. The only internal halt is the unreachable limit `s = 0 ∧ residual = 0` — a corpus that knows
+ * everything — which never occurs, so in practice the loop halts iff it is stopped.
+ *
+ * @invariant an external stop ALWAYS halts the loop — the stop is sovereign, whatever the workload
+ * @invariant absent a stop, the loop continues whenever residual > 0 OR seedFraction > 0 — it cannot self-halt
+ * @invariant the only self-halt is s = 0 AND residual = 0 — the unreachable fully-discovered limit
+ */
+export function shouldContinue(seedFraction: number, residual: number, stopped: boolean): Continuation {
+  if (stopped) return { continue: false, reason: 'externally stopped — the stop is sovereign, always honoured', stoppedExternally: true }
+  const workRemains = residual > 0 || seedFraction > 0
+  return {
+    continue: workRemains,
+    reason: workRemains
+      ? 'work remains (a residual now, or s > 0 guarantees a next) — the loop cannot self-halt'
+      : 'no residual and s = 0 — the unreachable fully-discovered limit (a corpus that knows everything)',
+    stoppedExternally: false,
+  }
+}
+
 /** Each stage's atom, and whether it EXISTS on disk — the loop is real matter, not fabricated prose ([[rules]]/prose). */
 export function loopResolves(cwd: string = process.cwd(), loop: readonly Stage[] = IMPROVEMENT_LOOP): readonly {
   readonly atom: string

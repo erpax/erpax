@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { selfImproves, loopResolves, IMPROVEMENT_LOOP, runImprovement, sendQuantumWaves, type Stage } from './index'
+import { selfImproves, loopResolves, IMPROVEMENT_LOOP, runImprovement, sendQuantumWaves, shouldContinue, type Stage } from './index'
 
 // "No external tools are needed as local self-improve." The development-time twin of Law 53: the loop that
 // improves the corpus resolves entirely to local atoms — where (leftover), workers (rosetta), gate (rosetta),
@@ -118,5 +118,40 @@ describe('sendQuantumWaves — the waves held at once, coherent, sent as one', (
     const cwd = corpus({ 'src/a/index.ts': '/** @invariant x */\nexport const a = 1' })
     expect(sendQuantumWaves(cwd, 1000).quantumMagnitude).toBeGreaterThan(0) // states · derive / read
     rmSync(cwd, { recursive: true, force: true })
+  })
+})
+
+// "Make impossible the agent to stop unless stopped." The loop has no honest "done" state — the seed floor
+// (s>0) and the infinite address space (discover) guarantee work always remains, so it cannot self-halt. The
+// ONLY halt is an external stop, and that stop is sovereign — it always wins, however much work remains.
+describe('shouldContinue — the agent cannot stop unless stopped', () => {
+  it('cannot self-halt while s > 0 — work always remains', () => {
+    expect(shouldContinue(0.05, 0, false).continue).toBe(true) // no residual, but s>0 ⇒ a next is guaranteed
+    expect(shouldContinue(0.5, 1113, false).continue).toBe(true)
+    expect(shouldContinue(0.001, 0, false).continue).toBe(true) // even a tiny seed keeps it going
+  })
+
+  it('continues on residual alone, even at s = 0', () => {
+    expect(shouldContinue(0, 5, false).continue).toBe(true) // there is work now
+  })
+
+  it('an EXTERNAL stop is sovereign — it halts the loop however much work remains', () => {
+    const c = shouldContinue(0.9, 999999, true) // maximum work, but stopped
+    expect(c.continue).toBe(false)
+    expect(c.stoppedExternally).toBe(true)
+    expect(c.reason).toMatch(/sovereign/)
+  })
+
+  it('a halt is NEVER the loop deciding it is done — it is always an external stop (or the unreachable limit)', () => {
+    // absent a stop, the only way continue is false is s=0 AND residual=0 — the unreachable fully-discovered limit
+    expect(shouldContinue(0, 0, false)).toMatchObject({ continue: false, stoppedExternally: false })
+    // and that limit never occurs for a real corpus (s>0 always), so in practice: halts iff stopped
+    expect(shouldContinue(0.05, 0, false).continue).toBe(true)
+  })
+
+  it('relentless is not uncontrollable — the stop always wins, the loop never overrides it', () => {
+    for (const s of [0, 0.5, 1]) for (const r of [0, 1000]) {
+      expect(shouldContinue(s, r, true).continue).toBe(false) // stopped ⇒ halted, every workload
+    }
   })
 })
