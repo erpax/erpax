@@ -45,7 +45,7 @@ export interface DoctorReport {
     readonly netEb: number
     readonly freeEnergyBits: number
     readonly scaleTowardZeroPct: number
-  }
+  } | null
   readonly quantum: {
     readonly mode: 'quantum' | 'classical'
     readonly entangledChannels: number
@@ -59,23 +59,37 @@ export interface DoctorReport {
   }
 }
 
-export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
+/**
+ * QUICK is the default and the promise ("doctor — quick repo health snapshot"): the full corpus
+ * analytics derivation (`deriveCorpusAnalytics`, measured past rung 5 even outside vitest) is
+ * `deep`-only — the erpax doctor corpus lane owns it. A quick snapshot that runs a CI-sized job
+ * is a command past the ladder, and the ladder says split, never raise.
+ */
+export function collectDoctorReport(cwd: string = process.cwd(), opts?: { readonly deep?: boolean }): DoctorReport {
   const strayCount = strayTsViolations(cwd).length
   const strayBaseline = computedBaseline('stray-ts', cwd)
   const store = loadEfficiencyStore(cwd)
   const last = store.passes.length ? store.passes[store.passes.length - 1]! : null
   const wire = wireFromRepoUrl('https://github.com/erpax/erpax')
   const entryPath = wire.ok ? wire.entryPoint : ERPAX_SKILL_ENTRY
-  const snapshot = rulesOf(cwd, { force: true })
+  const snapshot = rulesOf(cwd)
   const violationCount = snapshot.axes.reduce((s, a) => s + a.violations, 0)
-  const corpus = deriveCorpusAnalytics(cwd)
-  const lastMetrics = last?.metrics
-  const freeEnergy = freeEnergyFromEntropy({
-    entropyEb: corpus.entropy.netEntropyEb,
-    violationCount,
-    workTamperProduct: lastMetrics?.workTamperProduct ?? 0,
-    totalSealEb: corpus.entropy.totalSealEb,
-  })
+  let entropy: DoctorReport['entropy'] = null
+  if (opts?.deep) {
+    const corpus = deriveCorpusAnalytics(cwd)
+    const lastMetrics = last?.metrics
+    const freeEnergy = freeEnergyFromEntropy({
+      entropyEb: corpus.entropy.netEntropyEb,
+      violationCount,
+      workTamperProduct: lastMetrics?.workTamperProduct ?? 0,
+      totalSealEb: corpus.entropy.totalSealEb,
+    })
+    entropy = {
+      netEb: corpus.entropy.netEntropyEb,
+      freeEnergyBits: freeEnergy.freeEnergyBits,
+      scaleTowardZeroPct: freeEnergy.scaleTowardZeroPct,
+    }
+  }
 
   return {
     payload: payloadApprovalGate({ cwd }),
@@ -96,11 +110,7 @@ export function collectDoctorReport(cwd: string = process.cwd()): DoctorReport {
     },
     clean: formatCleanSummary(cwd),
     automate: formatAutomateSummary(cwd),
-    entropy: {
-      netEb: corpus.entropy.netEntropyEb,
-      freeEnergyBits: freeEnergy.freeEnergyBits,
-      scaleTowardZeroPct: freeEnergy.scaleTowardZeroPct,
-    },
+    entropy,
     quantum: {
       mode: quantumModeDefault() ? 'quantum' : 'classical',
       entangledChannels: quantumEntangledChannelCount(),
@@ -148,7 +158,9 @@ export function formatDoctorReport(report: DoctorReport): string {
     `  mode           ${report.quantum.mode} · entangled channels ${report.quantum.entangledChannels} · linear-gap ${report.quantum.linearGaps} · linear-logic ${report.quantum.linearLogic}`,
   )
   lines.push(
-    `  entropy        net ${report.entropy.netEb} eb · F ${report.entropy.freeEnergyBits} bits · ${report.entropy.scaleTowardZeroPct}% toward zero`,
+    report.entropy
+      ? `  entropy        net ${report.entropy.netEb} eb · F ${report.entropy.freeEnergyBits} bits · ${report.entropy.scaleTowardZeroPct}% toward zero`
+      : '  entropy        deferred (deep scan) — run: pnpm erpax doctor corpus',
   )
   const phraseMark = report.phraseWithoutDiamond.ok ? 'ok' : 'OVER baseline'
   lines.push(
