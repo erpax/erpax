@@ -242,7 +242,7 @@ export default buildConfig({
   // Runs the 5-axis self-check (standards / expansion / compression /
   // entropy; fallback axis is advisory + skipped at boot). Default is
   // warn-only; set `STRICT_INVARIANTS=1` to refuse boot on failure.
-  // @see src/services/architecture-invariants/onInit.ts
+  // @see src/architecture/invariant/onInit.ts
   onInit: async (payload) => {
     try {
       const { runInvariantsAtBoot } = await import('@/architecture/invariant/onInit')
@@ -342,7 +342,7 @@ export default buildConfig({
               'name' in f && f.name === 'parent' && 'relationTo' in f && f.relationTo === c.slug,
           ),
         )
-        .map((c) => c.slug),
+        .map((c) => c.slug as CollectionSlug),
     }),
     // Official content-surface plugins (see the `redirects` + `search` skills).
     // Registering them is what makes `'redirects'`/`'search'` real CollectionSlugs.
@@ -488,7 +488,7 @@ export default buildConfig({
     uuidNamesPlugin(),
     // The ONE catch-all — registered LAST so its endpoint is appended last:
     // the fallback of all. A routeless /api path resolves against the skill
-    // corpus + serves the requested format. See src/services/skill-router.
+    // corpus + serves the requested format. See src/skill/router.
     skillRouterPlugin(),
     // Payload admin UI — corpus cells, entropy dashboard, computed nav (last: sees full config).
     adminUiPlugin(),
@@ -548,7 +548,7 @@ export default buildConfig({
     tasks: [
       /**
        * Dunning cycle — past-due → suspend → cancel cascade for subscriptions.
-       * Implementation at `src/jobs/dunning/job.ts`. Wired here per Slice ZZ
+       * Implementation at `src/jobs/dunning/job`. Wired here per Slice ZZ
        * (was orphaned before — see CHANGELOG `[Unreleased]` Slice YY).
        *
        * Reachable via:
@@ -573,7 +573,7 @@ export default buildConfig({
       /**
        * BG BNB rates sync — pulls БНБ daily fixing for every BG-resident
        * tenant's reporting-currency pairs and upserts into `currency-rates`.
-       * Implementation at `src/jobs/bnb/rates/sync.ts`. Cadence: nightly via
+       * Implementation at `src/jobs/bnb/rates/sync`. Cadence: nightly via
        * cron (`0 1 * * *` recommended — БНБ publishes the day's fixing
        * around 16:00 EET, so a 1am UTC run captures the prior business day).
        *
