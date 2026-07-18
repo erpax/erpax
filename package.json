@@ -25,8 +25,7 @@
     "docs:dev": "vitepress dev",
     "docs:build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=16000\" vitepress build",
     "docs:preview": "vitepress preview",
-    "payload:migrate:create": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" payload migrate:create",
-    "payload:migrate:status": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" payload migrate:status"
+    "payload:migrate:create": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs\" payload migrate:create"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

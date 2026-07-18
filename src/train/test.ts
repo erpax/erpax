@@ -6,6 +6,8 @@ import {
   nextStep,
   efficiencyRate,
   isProficient,
+  trainingWaves,
+  trainingWaveShape,
 } from '@/train'
 import type { HeldLine, RequiredLine } from '@/competency/gap'
 import { ANCHOR } from '@/allocation'
@@ -82,5 +84,50 @@ describe('train — auto-train the actor to best efficiency, off-gassing the com
     expect(capped).toBeLessThan(efficiencyRate(surfaced, REQUIRED, 4)) // throttled below the uncapped ceiling
     expect(isProficient([], REQUIRED)).toBe(false) // open mandatory gaps ⇒ cannot staff the role
     expect(isProficient(surfaced, REQUIRED)).toBe(true) // every mandatory met ⇒ surfaced
+  })
+})
+
+describe('train — quantum research waves (the plan levelled by wavesOf)', () => {
+  // charting presupposes triage; bedside-manner presupposes charting — a 3-chain
+  const PREREQ: Record<string, string[]> = {
+    charting: ['triage'],
+    'bedside-manner': ['charting'],
+  }
+  const prereqOf = (c: string | number): string[] => PREREQ[String(c)] ?? []
+
+  it('no prerequisites ⇒ one wave, all steps in superposition (max parallelism)', () => {
+    const waves = trainingWaves([], REQUIRED, routeOf)
+    expect(waves.length).toBe(1)
+    expect(waves[0]!.steps.length).toBe(3)
+    expect(trainingWaveShape(waves)).toEqual({ depth: 1, parallelism: 3 })
+  })
+
+  it('a prerequisite chain levels into sequential waves — Mirsky: depth = longest chain', () => {
+    const waves = trainingWaves([], REQUIRED, routeOf, prereqOf)
+    expect(waves.map((w) => w.steps.map((s) => s.competency))).toEqual([
+      ['triage'],
+      ['charting'],
+      ['bedside-manner'],
+    ])
+    expect(trainingWaveShape(waves)).toEqual({ depth: 3, parallelism: 1 })
+  })
+
+  it('a prerequisite already HELD is satisfied — certification collapses the wave and opens the next', () => {
+    const heldTriage: HeldLine[] = [{ competency: 'triage', proficiency: 4 }]
+    const waves = trainingWaves(heldTriage, REQUIRED, routeOf, prereqOf)
+    expect(waves.map((w) => w.steps.map((s) => s.competency))).toEqual([['charting'], ['bedside-manner']])
+    expect(trainingWaveShape(waves).depth).toBe(2) // one round collapsed
+  })
+
+  it('every step keeps its route and mandatory-first order inside a wave', () => {
+    const waves = trainingWaves([], REQUIRED, routeOf)
+    const first = waves[0]!.steps[0]!
+    expect(first.mandatory).toBe(true)
+    expect(first.skillRoute).toContain('/SKILL')
+  })
+
+  it('the surfaced actor has zero waves — nothing left in superposition', () => {
+    const surfaced: HeldLine[] = REQUIRED.map((r) => ({ competency: r.competency, proficiency: r.minProficiency }))
+    expect(trainingWaves(surfaced, REQUIRED, routeOf, prereqOf)).toEqual([])
   })
 })

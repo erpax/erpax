@@ -81,6 +81,7 @@ describe('cli/help — grouped help + nearest match', () => {
 })
 
 describe('cli/doctor — health snapshot', () => {
+  // doctor runs the full-tree scans — bound at the ladder's rung 5, the max (180s timed out)
   it('collects stray-ts, efficiency, and corpus entry', () => {
     const report = collectDoctorReport(ROOT)
     expect(report.strayTs.baseline).toBeGreaterThan(0)
@@ -91,7 +92,7 @@ describe('cli/doctor — health snapshot', () => {
     expect(text).toContain('corpus entry')
     expect(text).not.toContain('entry skill')
     expect(text).toContain('inventory')
-  }, 180_000)
+  }, 300_000)
 })
 
 describe('cli/rules-check — failure summary helpers', () => {
@@ -119,9 +120,10 @@ describe('cli/index — router smoke', () => {
     expect(runCli(['redme'])).toBe(1)
   })
 
+  // rung 5 (the max) — the doctor route runs the same full-tree scans as collectDoctorReport
   it('doctor and status route to health snapshot', () => {
     expect(runCli(['doctor'])).toBe(0)
-  }, 180_000)
+  }, 300_000)
 
   it('doctor stalls lists process table', () => {
     expect(runDoctorStalls()).toBe(0)

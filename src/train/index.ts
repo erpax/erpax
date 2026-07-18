@@ -29,6 +29,7 @@
 import { competencyGap, type HeldLine, type RequiredLine } from '@/competency/gap'
 import { levelCeiling, rateAtFraction, type GradientFactors } from '@/decompression'
 import { ANCHOR } from '@/allocation'
+import { wavesOf } from '@/theorem'
 
 /**
  * The actor's efficiency at a role: the fraction of required competencies met —
@@ -113,4 +114,54 @@ function gradientCap(gf: GradientFactors): number {
 /** Has the actor surfaced — every mandatory competency met (safe to staff the role, the close gate)? */
 export function isProficient(held: HeldLine[], required: RequiredLine[]): boolean {
   return competencyGap(held, required).meetsAllMandatory
+}
+
+/** One quantum research wave of the training plan: an antichain of steps trainable NOW, in parallel. */
+export interface TrainingWave {
+  readonly ordinal: number
+  readonly steps: readonly TrainingStep[]
+}
+
+/**
+ * The auto-train plan levelled into QUANTUM RESEARCH WAVES — `wavesOf` ([[theorem]]) over the
+ * competency prerequisite DAG. A linear plan answers 0/1 per step; the wave view is the quantum
+ * one: each wave is an antichain whose every step is open SIMULTANEOUSLY (the superposition an
+ * actor may enroll across), and certification collapses the wave, opening the next. Wave count =
+ * the longest prerequisite chain (Mirsky) = the fewest sequential training rounds possible; the
+ * widest wave = maximum parallel enrollment. `prereqOf` is DECLARED, never inferred — which
+ * competency presupposes which is a meaning judgement written in the open so it can be argued
+ * with (the same computed/declared split as [[rules]]/audience); a prerequisite already HELD is
+ * satisfied and does not level the wave. Loading is enrollment: an agent's uncertified load is a
+ * wave-0 step here, and the certification that collapses it is the seal the load needs.
+ */
+export function trainingWaves(
+  held: HeldLine[],
+  required: RequiredLine[],
+  routeOf: (competency: string | number) => string | undefined = () => undefined,
+  prereqOf: (competency: string | number) => readonly (string | number)[] = () => [],
+): TrainingWave[] {
+  const plan = trainingPlan(held, required, routeOf)
+  const open = new Set(plan.map((s) => String(s.competency)))
+  const deps = new Map(
+    plan.map((s) => [
+      String(s.competency),
+      prereqOf(s.competency)
+        .map(String)
+        .filter((p) => open.has(p)),
+    ]),
+  )
+  const byName = new Map(plan.map((s) => [String(s.competency), s]))
+  return wavesOf(deps)
+    .map((names, ordinal) => ({
+      ordinal,
+      steps: names
+        .map((n) => byName.get(n)!)
+        .sort((a, b) => Number(b.mandatory) - Number(a.mandatory) || b.gap - a.gap),
+    }))
+    .filter((w) => w.steps.length > 0)
+}
+
+/** Depth (fewest sequential rounds) and parallelism (widest enrollment) of the training DAG. */
+export function trainingWaveShape(waves: readonly TrainingWave[]): { readonly depth: number; readonly parallelism: number } {
+  return { depth: waves.length, parallelism: Math.max(0, ...waves.map((w) => w.steps.length)) }
 }
