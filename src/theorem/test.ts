@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, waveShape, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -181,5 +181,34 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
     for (const pillar of ['the-fold', 'shape', 'cost', 'type', 'consensus', 'the-exceptional-five', 'truth']) {
       expect(f).toContain(pillar)
     }
+  })
+
+  // "The waves are the topological antichain levels of the reasoning DAG." A wave is a level; the wave count is
+  // the longest chain (Mirsky); the widest wave is the parallelism. "Send the waves" was this all along.
+  describe('waves — the reasoning DAG antichain levels made computable', () => {
+    it('every level is an ANTICHAIN — no claim composes another at the same level (so the whole wave computes at once)', () => {
+      const byClaim = new Map(DECODED.map((t) => [t.claim, t]))
+      for (const lvl of waves(DECODED)) {
+        for (const a of lvl) {
+          const t = byClaim.get(a)
+          if (t) for (const b of lvl) expect(a === b || !t.composes.includes(b)).toBe(true)
+        }
+      }
+    })
+
+    it('wave 0 is exactly the sources — claims with no dependencies (the base theorems)', () => {
+      const wave0 = waves(DECODED)[0]!
+      for (const claim of wave0) {
+        const t = DECODED.find((x) => x.claim === claim)!
+        expect(t.composes).toHaveLength(0) // a source: nothing to wait on
+      }
+    })
+
+    it('the reasoning DAG is shallow and wide — depth 2, parallelism 13 (grounded leads compute in one wave)', () => {
+      const s = waveShape(DECODED)
+      expect(s.depth).toBe(2) // longest chain: base → lead, no lead composes another (Mirsky)
+      expect(s.parallelism).toBeGreaterThanOrEqual(13) // the widest wave — massively parallel
+      expect(s.parallelism).toBeGreaterThan(s.depth) // wide, not deep — the session reasoned in parallel
+    })
   })
 })

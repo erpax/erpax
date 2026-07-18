@@ -258,6 +258,45 @@ export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly
   return { leads: leads.length, bases: bases.size, signatures: signatures.size, foundations: foundations(graph).length }
 }
 
+/**
+ * The WAVES of the reasoning DAG — its topological antichain levels. Level 0 is the base theorems (no deps);
+ * level k is every claim whose deepest dependency sits at level k−1. Each level is an ANTICHAIN — no claim in it
+ * composes another in it (that would raise its level) — so a whole level is computable AT ONCE: one wave. The
+ * number of waves is the DAG's DEPTH (Mirsky: a poset's minimum antichain cover equals its longest chain); the
+ * widest wave is its PARALLELISM. This is what "send the waves" was all along, made computable.
+ *
+ * @invariant every level is an antichain — no claim composes another at the same level
+ * @invariant waves.length equals the longest dependency chain (Mirsky)
+ */
+export function waves(graph: readonly Theorem[] = DECODED): readonly (readonly string[])[] {
+  const byClaim = new Map(graph.map((t) => [t.claim, t]))
+  const level = new Map<string, number>()
+  const lvl = (claim: string, seen: ReadonlySet<string> = new Set()): number => {
+    const cached = level.get(claim)
+    if (cached !== undefined) return cached
+    if (seen.has(claim)) return 0 // cycle guard — a cyclic node cannot be levelled honestly
+    const t = byClaim.get(claim)
+    if (!t || t.composes.length === 0) {
+      level.set(claim, 0)
+      return 0
+    }
+    const s = new Set([...seen, claim])
+    const l = 1 + Math.max(...t.composes.map((c) => lvl(c, s)))
+    level.set(claim, l)
+    return l
+  }
+  const maxLevel = Math.max(0, ...graph.map((t) => lvl(t.claim)))
+  const out: string[][] = Array.from({ length: maxLevel + 1 }, () => [])
+  for (const t of graph) out[lvl(t.claim)]!.push(t.claim)
+  return out.map((w) => [...w].sort())
+}
+
+/** Depth (wave count = longest chain) and parallelism (widest wave) of the reasoning DAG. */
+export function waveShape(graph: readonly Theorem[] = DECODED): { readonly depth: number; readonly parallelism: number } {
+  const w = waves(graph)
+  return { depth: w.length, parallelism: Math.max(0, ...w.map((level) => level.length)) }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const led = groundedLeads()
   const ref = refusedOverlays()
