@@ -177,7 +177,7 @@ export function duplicateBodies(files: readonly string[], cwd: string = process.
       if (body) {
         const norm = body.replace(/\s+/g, ' ').trim()
         if (norm.length >= 120) {
-          const name = 'name' in n && n.name ? n.name.getText() : '(anon)'
+          const name = 'name' in n && n.name ? (n.name as ts.Node).getText() : '(anon)'
           const addr = createHash('sha256').update(norm).digest('hex').slice(0, 16)
           bodies.set(addr, [...(bodies.get(addr) ?? []), { file: rel.replace(/\\/g, '/'), name }])
         }

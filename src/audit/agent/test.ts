@@ -138,7 +138,7 @@ describe('the PANEL — all kinds of auditors, each from their own seat', () => 
 })
 
 describe('code quality + the panel auditing ITSELF', () => {
-  const c = (files) => {
+  const c = (files: Record<string, string>) => {
     const cwd = mkdtempSync(join(tmpdir(), 'erpax-quality-'))
     for (const [p, t] of Object.entries(files)) { mkdirSync(join(cwd, p, '..'), { recursive: true }); writeFileSync(join(cwd, p), t) }
     return cwd

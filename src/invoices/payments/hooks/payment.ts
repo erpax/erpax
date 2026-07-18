@@ -41,7 +41,7 @@
  */
 
 import { v4 as uuid } from 'uuid'
-import type { CollectionAfterChangeHook, PayloadRequest } from 'payload'
+import type { CollectionAfterChangeHook, PayloadRequest, Where } from 'payload'
 import { eventEmitter } from '@/event/emitter/service'
 import { emitDomainEvent } from '@/emit/domain/event'
 import type {
@@ -74,7 +74,7 @@ async function sumPaymentsAgainst(
 ): Promise<number> {
   // Sum EVERY payment, not the first 10 000. Undercounting the sum-paid OVERSTATES the amount due, so a
   // fully-paid invoice can read as underpaid and the payer be billed again. A cap on a sum is a wrong sum.
-  const where = { and: [{ tenant: { equals: tenantId } }, { invoice: { equals: invoiceId } }] }
+  const where: Where = { and: [{ tenant: { equals: tenantId } }, { invoice: { equals: invoiceId } }] }
   let total = 0
   let page = 1
   for (;;) {
