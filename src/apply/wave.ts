@@ -15,7 +15,8 @@ import { userWordUnprovenViolations } from '@/law/folder'
 import { createWaveSession, completeWaveHop, selfBalancingWaveLoad, waveSessionVerdict, type SelfBalancingWavePlan } from '@/wave'
 import type { Receipt } from '@/receipt'
 import { materializeComputedFacesForPathsStable } from '@/readme/compute'
-import { dryCleanCycle, scanCleanAxes, CLEAN_SCAN_AXES, type CleanScanAxis } from './clean'
+import { dryCleanCycle, scanCleanAxes } from './clean'
+import { CLEAN_SCAN_AXES, type CleanScanAxis } from './axes' // from the leaf — always initialised before the tangle ([[rules]]/cycle)
 import { payloadApprovalGate } from '@/payload/approval'
 import {
   acquireWaveLock,

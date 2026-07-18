@@ -52,16 +52,9 @@ import { emitEfficiency } from './emit-efficiency'
 
 export const CLEAN_MANIFEST_REL = join('src', 'apply', 'clean.manifest.generated.json')
 
-/** Scan axes — coordinated with rules ratchet + doctor stray-ts line. */
-export const CLEAN_SCAN_AXES = [
-  'stray-ts',
-  'not-allowed',
-  'bypass-math',
-  'word-matter',
-  'logic-concentration',
-] as const
-
-export type CleanScanAxis = (typeof CLEAN_SCAN_AXES)[number]
+/** Scan axes — extracted to the `./axes` leaf so no tangle importer reads them in a dead zone ([[rules]]/cycle). */
+export { CLEAN_SCAN_AXES, type CleanScanAxis } from './axes'
+import { CLEAN_SCAN_AXES } from './axes'
 
 /** cc3c5cb1 taxonomy — A emit · B nest · C delete · D rule-fix. */
 export type CleanTaxonomy = 'A-emit' | 'B-nest' | 'C-delete' | 'D-rule-fix'
