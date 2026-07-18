@@ -9,6 +9,14 @@
  * @accounting OECD SAF-T §2 general-ledger-accounts
  * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.2
+ *
+ * A pure-type atom is proven by TSC; these runtime constants carry refutable invariants, proven in test.ts
+ * ([[rules]]/refutable: an @invariant earns its place only with a proof beside it).
+ *
+ * @invariant every AccountType maps to a non-empty single-digit GL prefix in ACCOUNT_TYPE_TO_PREFIX
+ * @invariant GL_ACCOUNT_RULES.codePattern accepts the codes GLAccount.code promises (1000, 1010.01) and rejects letters
+ * @invariant the length + depth bounds are ordered — no min exceeds its max, depth is positive
+ * @invariant every STANDARD_ACCOUNT_CODES template agrees on the 1·2·3 asset/liability/equity spine
  */
 
 export type AccountType =
