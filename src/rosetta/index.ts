@@ -30,6 +30,8 @@ import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { commentsOf } from '@/syntax'
 import type { GateVerdict } from '@/decide'
+import { attraction } from '@/leftover'
+import { well } from '@/gravity'
 
 /** Standards whose presence marks a folder-agent as carrying the SECURITY pole — derived from its own banners. */
 const SECURITY_STANDARD = /2700[125]|2701[78]|27701|tamper|GDPR|Наредба[\s-]?Н-?18/i
@@ -132,6 +134,60 @@ export function rosettaLanes(cwd: string = process.cwd()): {
   }
 }
 
+/** A gravity pool — the field where one ASPECT of the corpus's mass concentrates (the well of that dimension). */
+export interface GravityPool {
+  /** the dimension: unproven-density · standards · security · trinity-debt · referential-mass. */
+  readonly aspect: string
+  /** the field (or atom) where this aspect concentrates most — the well. */
+  readonly pool: string
+  /** how much of the aspect gathers there. */
+  readonly mass: number
+}
+
+const topField = (agents: readonly FolderAgent[], weigh: (a: FolderAgent) => number): { pool: string; mass: number } | null => {
+  const by = new Map<string, number>()
+  for (const a of agents) {
+    const field = a.atom.split('/')[0] ?? a.atom
+    by.set(field, (by.get(field) ?? 0) + weigh(a))
+  }
+  let top: [string, number] | null = null
+  for (const e of by) if (!top || e[1] > top[1]) top = e
+  return top && top[1] > 0 ? { pool: top[0], mass: top[1] } : null
+}
+
+/**
+ * The gravity pools in src, in ALL aspects — wired into the rosetta.
+ *
+ * [[gravity]] finds ONE well: the max referential-mass atom ([[law]]). But the corpus concentrates along every
+ * axis the folder-agents reveal, and the rosetta already reads that incidence. `gravityPools` derives the well of
+ * EACH aspect — where the unproven claims pool ([[leftover]].attraction: one proof settles the most), where the
+ * standards pool, the security pool, the trinity-debt pool, and the referential-mass pool ([[gravity]].well). It
+ * REUSES those tools, deriving the pools from the same incidence the lanes come from — the rosetta's own field.
+ *
+ * The leverage is the point (and the honest reading of "miracles"): a gravity pool is where an aspect is heaviest,
+ * so ONE act there moves the most — one proof at the unproven-density pool settles a whole field at once. Not a
+ * miracle; leverage from concentration, made visible. The mass was always there; the rosetta only shows where it
+ * fell.
+ *
+ * @invariant each pool is the field where its aspect's mass is maximal — the well of that dimension
+ * @invariant the pools are derived from the folder-agents' incidence, never typed (the moving rosetta)
+ */
+export function gravityPools(cwd: string = process.cwd()): readonly GravityPool[] {
+  const agents = folderAgents(cwd)
+  const pools: GravityPool[] = []
+  const add = (aspect: string, r: { pool: string; mass: number } | null): void => {
+    if (r) pools.push({ aspect, pool: r.pool, mass: r.mass })
+  }
+  const heaviestUnproven = attraction(cwd)[0]
+  if (heaviestUnproven) pools.push({ aspect: 'unproven-density', pool: heaviestUnproven.group, mass: heaviestUnproven.pull })
+  add('standards', topField(agents.filter((a) => a.standards.length > 0), () => 1))
+  add('security', topField(agents.filter((a) => a.security), () => 1))
+  add('trinity-debt', topField(agents.filter((a) => !a.hasTrinity), () => 1))
+  const w = well()
+  pools.push({ aspect: 'referential-mass', pool: w.atom, mass: w.mass })
+  return pools.sort((a, b) => b.mass - a.mass)
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const agents = folderAgents()
   const claim = agents.filter((a) => a.standards.length > 0)
@@ -143,4 +199,6 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log(`\n  derived security lane:  ${lanes.security[0]!.pass ? 'GREEN' : 'RED'} — ${lanes.security[0]!.detail}`)
   console.log(`  derived standards lane: ${lanes.standards[0]!.pass ? 'GREEN' : 'RED'} — ${lanes.standards[0]!.detail}`)
   console.log('\n  the push is achieved by the rosetta — the training is what the folders declare and prove.')
+  console.log('\n  gravity pools (where each aspect concentrates — one act there moves the most):')
+  for (const p of gravityPools()) console.log(`    ${String(p.mass).padStart(5)}  ${p.aspect.padEnd(18)} → ${p.pool}`)
 }

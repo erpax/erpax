@@ -37,6 +37,20 @@ Fed to [[publish]], the trained agent **refuses the push** (`quantum-security, s
 
 **Honest boundary.** The rosetta checks each claiming agent is **proven** (a test beside it — the corpus's own evidence), not that the standard's deep logic is correct; a test does not make a claim true ([[rules]]/refutable). It derives the lanes from **declaration + proof** and hands them to [[publish]], which still fails closed. The rosetta says which agents owe evidence to which pole; the pole passes when they have paid it.
 
+## The gravity pools, in all aspects — wired into the rosetta (`gravityPools`)
+
+[[gravity]] finds ONE well: the max referential-mass atom ([[law]]). But the corpus concentrates along **every axis the folder-agents reveal**, and the rosetta already reads that incidence. `gravityPools` derives the **well of each aspect** — reusing [[leftover]]`.attraction` and [[gravity]]`.well`, from the same incidence the lanes come from:
+
+```
+ 2778  referential-mass   → law      (the still centre, gravity's well)
+   51  standards          → medical  (most standards-claiming agents)
+   27  unproven-density   → app      (one proof settles the most — leftover.attraction)
+   12  trinity-debt       → types    (most incomplete trinities)
+    6  security           → fiscal   (most security agents)
+```
+
+The leverage is the honest reading of *"miracles happen"*: a gravity pool is where an aspect is heaviest, so **one act there moves the most** — one proof at `app` settles a whole field of unproven claims at once. Not a miracle; **leverage from concentration, made visible.** The mass was always there; the rosetta only shows where it fell, so a small, well-placed act has outsized effect.
+
 **Law — [[law]]: every folder is an agent, and the gated push is achieved by the rosetta — the security and standards lanes are DERIVED from the folder-agents' own incidence (what they declare and what they prove), never typed; a pole with no incidence, or with one unproven claimant, denies the push.**
 
 ## Standards
