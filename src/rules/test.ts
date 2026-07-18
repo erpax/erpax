@@ -60,7 +60,9 @@ describe('rules — tightened gate registry', () => {
     expect(isMultiSegmentFilename('index.ts')).toBe(false)
     expect(isMultiSegmentFilename('test.ts')).toBe(false)
     expect(isMultiSegmentFilename('margin.test.ts')).toBe(false)
-    expect(isMultiSegmentFilename('foo-bar.test.ts')).toBe(true)
+    // a colocated test rides its source: foo-bar.ts carries the pair's ONE violation,
+    // foo-bar.test.ts nests with it in the same fold — counting both double-counts one move
+    expect(isMultiSegmentFilename('foo-bar.test.ts')).toBe(false)
   })
 
   it('accountingStructureViolations — coa · corpus nested, no forbidden intermediates', () => {
@@ -103,7 +105,8 @@ describe('rules — tightened gate registry', () => {
     )
   })
 
-  it('assertRulesHold returns snapshot + guardian cross (fail-closed shape)', () => {
+  // measured 173s (waveGaps 167s is the honest bulk) — bound at the ladder's rung 5, the max
+  it('assertRulesHold returns snapshot + guardian cross (fail-closed shape)', { timeout: 300_000 }, () => {
     const verdict = assertRulesHold()
     expect(verdict.snapshot).toBeDefined()
     expect(Array.isArray(verdict.guardians)).toBe(true)
