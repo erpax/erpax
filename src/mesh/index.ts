@@ -143,6 +143,95 @@ export function meshShape(mesh: Mesh): { readonly depth: number; readonly parall
   return { depth: w.length, parallelism: Math.max(0, ...w.map((x) => x.length)) }
 }
 
+/** Everything an atom depends on, transitively — the space its failure may be CAUSED from. */
+export function upstreamOf(mesh: Mesh, atom: string): ReadonlySet<string> {
+  const out = new Set<string>()
+  const next = new Map<string, string[]>()
+  for (const e of mesh.edges) {
+    const l = next.get(e.from) ?? []
+    l.push(e.to)
+    next.set(e.from, l)
+  }
+  const stack = [atom]
+  while (stack.length) {
+    const n = stack.pop()!
+    for (const d of next.get(n) ?? []) {
+      if (out.has(d)) continue
+      out.add(d)
+      stack.push(d)
+    }
+  }
+  return out
+}
+
+export interface FailureRoot {
+  readonly root: string
+  /** the failing atoms this root can explain (it sits upstream of each, or is one of them) */
+  readonly explains: readonly string[]
+  /** how many atoms depend on this root at all — the denominator of specificity */
+  readonly blast: number
+  /** explains/blast ∈ (0,1] — 1 means the root touches ONLY failures (sharp cause); ubiquitous roots score low */
+  readonly lift: number
+}
+
+/**
+ * FAILURES ARE LINEAR TO BE CONVERTED QUANTUM: a failure list reads 0/1 per suite and invites a
+ * sequential grind; projected onto the mesh, N failures usually share a few upstream atoms — fix
+ * the shared root and its whole wave collapses at once. Roots rank by how many failures they can
+ * explain (then deeper first — closer to the ground state). This NAMES candidates by dependency
+ * reachability; it never proves causation — the fix is still a per-case judgement.
+ */
+export function failureRoots(mesh: Mesh, failed: readonly string[]): FailureRoot[] {
+  const explains = new Map<string, Set<string>>()
+  for (const f of failed) {
+    const space = new Set(upstreamOf(mesh, f))
+    space.add(f)
+    for (const cause of space) {
+      const s = explains.get(cause) ?? new Set<string>()
+      s.add(f)
+      explains.set(cause, s)
+    }
+  }
+  // blast radius per candidate: how many atoms reach this root at all (reverse reachability)
+  const rev = new Map<string, string[]>()
+  for (const e of mesh.edges) {
+    const l = rev.get(e.to) ?? []
+    l.push(e.from)
+    rev.set(e.to, l)
+  }
+  const blastOf = (root: string): number => {
+    const seen = new Set<string>([root])
+    const stack = [root]
+    while (stack.length) {
+      const n = stack.pop()!
+      for (const d of rev.get(n) ?? []) {
+        if (seen.has(d)) continue
+        seen.add(d)
+        stack.push(d)
+      }
+    }
+    return seen.size
+  }
+  return [...explains.entries()]
+    .map(([root, s]) => {
+      const blast = blastOf(root)
+      return { root, explains: [...s].sort(), blast, lift: s.size / blast }
+    })
+    .filter((r) => r.explains.length > 1 || failed.includes(r.root))
+    .sort((a, b) => b.lift - a.lift || b.explains.length - a.explains.length || a.root.localeCompare(b.root))
+}
+
+/**
+ * WHEN NO ROOT DISCRIMINATES the cause is not in the mesh: if the best lift is low (every candidate
+ * explains everything because everything depends on it), the failures did not propagate through
+ * dependencies — suspect the HARNESS or environment (a killed worker, a locked DB, a sleep), not
+ * the tree. push7 proved it live: 10 "failing" atoms, uniform explanation, one killed fork.
+ */
+export const failuresLookExternal = (roots: readonly FailureRoot[], threshold = 0.2): boolean => {
+  const multi = roots.filter((r) => r.explains.length > 1)
+  return multi.length === 0 || multi[0]!.lift < threshold
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const mesh = meshOf()
   const shape = meshShape(mesh)

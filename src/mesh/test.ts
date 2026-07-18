@@ -2,7 +2,7 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
-import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile } from '@/mesh'
+import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots } from '@/mesh'
 
 // Hermetic fixture corpus: three atoms in a chain a→b→c, one standard banner, one
 // import-shaped STRING that must never become an edge (the phantom class every
@@ -55,5 +55,23 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
     expect(w[0]).toContain('c')
     expect(w[2]).toContain('a')
     expect(meshShape(mesh)).toEqual({ depth: 3, parallelism: 1 })
+  })
+
+  it('upstreamOf is the causal space — a depends transitively on b and c', () => {
+    expect([...upstreamOf(mesh, 'a')].sort()).toEqual(['b', 'c'])
+    expect([...upstreamOf(mesh, 'c')]).toEqual([])
+  })
+
+  it('failures are linear, converted quantum — two failures collapse onto their sharpest root', () => {
+    // suites for a AND b both red: linear reads two grinds; the mesh says one root. b explains both
+    // AND its whole blast radius failed (lift 1.0) — the sharpest cause ranks first; c also explains
+    // both but its blast includes the innocent c itself, so it ranks second. Fix b, the wave collapses.
+    const roots = failureRoots(mesh, ['a', 'b'])
+    expect(roots[0]!.root).toBe('b')
+    expect(roots[0]!.explains).toEqual(['a', 'b'])
+    expect(roots[0]!.lift).toBe(1)
+    const c = roots.find((r) => r.root === 'c')!
+    expect(c.explains).toEqual(['a', 'b'])
+    expect(c.lift).toBeLessThan(1)
   })
 })
