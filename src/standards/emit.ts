@@ -15,6 +15,7 @@ import { proseOf } from '@/rules/reference'
 import { STANDARDS_REGISTRY, type RegisteredStandard } from '@/standards/registry'
 import { uuid } from '@/integrity/content-uuid'
 import { uuidColor } from '@/uuid/projection'
+import { commentsOf } from '@/syntax'
 
 const _CATALOGUE_TS = join(process.cwd(), 'src/standards/catalogue.ts')
 const _SKILL_MD = join(process.cwd(), 'src/standards/SKILL.md')
@@ -82,6 +83,72 @@ function matcherFor(std: RegisteredStandard): RegExp {
   const big = (std.id.match(/\d{3,}/g) ?? []).sort((a, b) => b.length - a.length)[0]
   if (big) return new RegExp(big, 'i')
   return new RegExp('\\b' + std.id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i')
+}
+
+const CITE_RE = /@(?:standard|rfc)\s+([A-Za-z0-9][^*\n]+)/g
+
+/**
+ * The PARSER mind — a second, independent way to read the same source. A `@standard` banner is a citation ONLY
+ * where it lives in a real COMMENT; the same sigil inside a string literal is DATA, not a claim (the weakness
+ * `scan()` confesses in its own comment). `commentsOf` ([[syntax]]) parses the file and returns only comment
+ * text, so a banner in a string cannot masquerade as a citation. The regex mind cannot make this distinction —
+ * which is exactly why a single mind breaks, and why the two are crossed here ([[think]].higherMind).
+ */
+export function citationsInComments(file: string, text: string): string[] {
+  const out: string[] = []
+  // A .md/.mdx file is ENTIRELY prose — the whole text is the citation source. Only in CODE can a string literal
+  // masquerade as a banner, so only there does the parser narrow to comment nodes ([[syntax]].commentsOf). Reading
+  // markdown as "no comment" was this second mind's OWN blind spot — a mind is still a mind, and it broke too.
+  const isCode = /\.(ts|tsx|js|mjs|cjs)$/.test(file)
+  const sources = isCode ? commentsOf(file, text) : [text]
+  for (const c of sources) for (const m of c.matchAll(CITE_RE)) out.push(m[1]!.trim())
+  return out
+}
+
+/** Every citation the parser mind finds across the tree — rg narrows to candidate files fast, the parser confirms. */
+export function parsedCitations(cwd: string = process.cwd()): { path: string; value: string }[] {
+  let files: string[] = []
+  try {
+    files = execSync(String.raw`rg -l '@(standard|rfc)\s' src -g '!*.test.ts' -g '!**/catalogue.ts' -g '!**/registry.ts'`, {
+      cwd,
+      encoding: 'utf8',
+      maxBuffer: 64 * 1024 * 1024,
+    })
+      .split('\n')
+      .filter(Boolean)
+  } catch (e) {
+    if ((e as { status?: number }).status === 1) return []
+    throw e
+  }
+  const out: { path: string; value: string }[] = []
+  for (const rel of files) {
+    let text: string
+    try {
+      text = readFileSync(join(cwd, rel), 'utf8')
+    } catch {
+      continue
+    }
+    for (const v of citationsInComments(rel, text)) out.push({ path: rel, value: v })
+  }
+  return out
+}
+
+/**
+ * Where the two minds DECOHERE — the regex mind (`scan`, raw text) vs the parser mind (`parsedCitations`,
+ * comments only). `onlyRegex` is a banner the regex counted that no comment holds: a string-literal or prose
+ * false citation, the exact class a single mind cannot see. The decoherence IS the single-mind error, measured.
+ *
+ * @invariant a banner that lives only in a string literal appears in `onlyRegex`, never in the agreed set
+ */
+export function citationDecoherence(cwd: string = process.cwd()): {
+  onlyRegex: { path: string; value: string }[]
+  agreed: number
+} {
+  const key = (h: { path: string; value: string }): string => h.path + '|' + h.value
+  const parsed = new Set(parsedCitations(cwd).map(key))
+  const regex = scan(cwd)
+  const onlyRegex = regex.filter((h) => !parsed.has(key(h)))
+  return { onlyRegex, agreed: regex.length - onlyRegex.length }
 }
 
 export function buildStandardsCatalogue(cwd: string = process.cwd()): {

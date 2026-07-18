@@ -5,7 +5,31 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { buildStandardsCatalogue, verifyStandardsCatalogue } from './emit'
+import { buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
+
+// The parser mind — a second, independent reading of the same source, crossed with the regex `scan` because a
+// single mind breaks. A `@standard` banner is a citation only in a real COMMENT; the same sigil in a string
+// literal is DATA. The regex cannot tell them apart (it counted 5 such false citations, agreeing on 5862/5867);
+// the parser can. And the parser has its OWN blind spot — markdown is not TS comments — caught and fixed here.
+describe('emit — the parser mind refutes a banner that only masquerades in a string', () => {
+  const code = [
+    '/**',
+    ' * @standard ISO-4217:2015 currency-codes', // a REAL citation, in a comment
+    ' */',
+    "export const msg = '@standard FAKE-9999 not-a-citation'", // a string literal — DATA, not a claim
+  ].join('\n')
+
+  it('counts a banner in a COMMENT, refuses one in a STRING LITERAL (.ts)', () => {
+    const found = citationsInComments('a.ts', code)
+    expect(found.some((v) => /ISO-4217/.test(v))).toBe(true) // the comment banner is a citation
+    expect(found.some((v) => /FAKE-9999/.test(v))).toBe(false) // the string-literal banner is not
+  })
+
+  it('a .md file is entirely prose — the whole text is the citation source (the parser mind’s own blind spot, fixed)', () => {
+    const md = '# doc\n\n@standard ISO-27001 information-security\n'
+    expect(citationsInComments('a.md', md).some((v) => /ISO-27001/.test(v))).toBe(true) // markdown is prose, not code
+  })
+})
 
 describe('standards/emit — catalogue generator', () => {
   it('builds entries aligned with registry', () => {
