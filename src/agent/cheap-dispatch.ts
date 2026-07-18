@@ -57,10 +57,12 @@ export function cheapAgentDispatch(opts: CheapAgentDispatchOpts): CheapAgentDisp
 
   const skill = loadSealedSkill(opts.atomPath, opts)
   const relatedCap = Math.max(0, policy.maxContextAtoms - (skill ? 1 : 0))
+  // load → filter → cap: the cap bounds LOADED context atoms; a path that fails to load
+  // must not consume a slot (it did — 8 requested with 2 unloadable returned 5, not 6)
   const related = (opts.relatedAtomPaths ?? [])
-    .slice(0, relatedCap)
     .map((p) => loadSealedSkill(p, opts))
     .filter((s): s is SealedSkillExcerpt => s !== null)
+    .slice(0, relatedCap)
 
   return {
     atomPath: opts.atomPath,

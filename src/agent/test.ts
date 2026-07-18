@@ -150,7 +150,8 @@ describe('agent', () => {
 
   it('emit effect calls ctx.emit with the event', async () => {
     const emit = vi.fn()
-    const ctx = { emit, audit: vi.fn(), capture: vi.fn(), call: vi.fn() } as never
+    // the strict gate routes emits by actor tenant scope — an unscoped ctx is lawfully refused
+    const ctx = { emit, audit: vi.fn(), capture: vi.fn(), call: vi.fn(), tenantId: tenant } as never
     const event = { id: 'invoice:created', tenantId: tenant, payload: {}, emittedAt: new Date().toISOString() }
     await processEffect({ kind: 'emit', event }, ctx)
     expect(emit).toHaveBeenCalledWith(event)
@@ -171,6 +172,7 @@ describe('agent', () => {
       audit: vi.fn(() => calls.push('audit')),
       capture: vi.fn(),
       call: vi.fn(),
+      tenantId: tenant,
     } as never
     const event = { id: 'e', tenantId: tenant, payload: {}, emittedAt: new Date().toISOString() }
     const leaf = { tenantId: tenant, subjectCollection: 'c', subjectId: '2', action: 'update' }

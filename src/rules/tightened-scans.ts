@@ -85,10 +85,11 @@ export function diamondMembershipScan(cwd: string = process.cwd()): DiamondMembe
 
 export function isMultiSegmentFilename(name: string): boolean {
   if (!/\.tsx?$/i.test(name)) return false
-  if (COLOCATED_TEST.test(name)) {
-    const stem = name.replace(/\.test\.(ts|tsx)$/i, '')
-    return MULTI_SEGMENT_STEM.test(stem)
-  }
+  // A colocated `x-y.test.ts` rides its `x-y.ts` source — the SOURCE carries the violation and
+  // the pair nests together in one fold. Counting both sides double-counts one move, and the
+  // tightening that did so shipped +15 over a ceiling sealed against the single-count instrument
+  // (an un-migratable red that blocked every push). One pair, one count.
+  if (COLOCATED_TEST.test(name)) return false
   const stem = name.replace(/\.tsx?$/i, '')
   if (ROOT_TS_ALLOWED.has(name)) return false
   return MULTI_SEGMENT_STEM.test(stem)
