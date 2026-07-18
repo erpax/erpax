@@ -36,7 +36,24 @@ export const PARALLEL_SCAN_AXES = RATCHET_AXES.filter(
     axis !== 'linear-gap',
 )
 
+const LIVE_COUNTS_TTL_MS = 60_000
+let liveCountsCache: { cwd: string; expiresAt: number; counts: Readonly<Record<RatchetAxis, number>> } | null = null
+
+/**
+ * Live counts with a short same-process cache — the same reuse law as rulesOf's rulesCache.
+ * assertRulesHold runs computeRulesOf then bypassMathViolations; before this cache the second
+ * call re-ran every scan (measured 47.5s of pure duplication inside one gate run).
+ */
 export function liveViolationCounts(cwd: string = process.cwd()): Readonly<Record<RatchetAxis, number>> {
+  if (liveCountsCache && liveCountsCache.cwd === cwd && Date.now() < liveCountsCache.expiresAt) {
+    return liveCountsCache.counts
+  }
+  const counts = computeLiveViolationCounts(cwd)
+  liveCountsCache = { cwd, expiresAt: Date.now() + LIVE_COUNTS_TTL_MS, counts }
+  return counts
+}
+
+function computeLiveViolationCounts(cwd: string): Readonly<Record<RatchetAxis, number>> {
   const folder = folderViolations(join(cwd, 'src'))
   const wordFolder = wordFolderViolations(cwd)
   const wordDiamond = wordDiamondViolations(cwd)

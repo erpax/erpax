@@ -97,7 +97,9 @@ export interface RulesHoldVerdict extends SealVerdict {
 /** Fail-closed cross of folder · tightened · diamond · import · matrix-crack guardians. */
 export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   const snapshot = rulesOf(cwd)
-  const cracks = matrixCrackViolations(cwd)
+  // matrix-crack is already computed inside rulesOf (the snapshot's patched axis) — reuse, never re-derive
+  const crackCount =
+    snapshot.axes.find((a) => a.axis === 'matrix-crack')?.violations ?? matrixCrackViolations(cwd).length
   const folderSeal = folderGuardians(snapshot.folder)
   const tightenedSeal = seal([
     guardian({
@@ -159,7 +161,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   const crackSeal = seal([
     guardian({
       axis: 'matrix-crack',
-      violations: cracks.length,
+      violations: crackCount,
       baseline: computedBaseline('matrix-crack', cwd),
     }),
   ])
