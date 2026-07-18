@@ -97,7 +97,7 @@ describe('notDryClean — a gate returns duplication because the fold cannot inv
       { path: 'c.ts', content: 'export const y = 2' }, // distinct
     ])
     expect(dup).toHaveLength(1)
-    expect(dup[0]!.paths.sort()).toEqual(['a.ts', 'b.ts'])
+    expect([...dup[0]!.paths].sort()).toEqual(['a.ts', 'b.ts'])
   })
 
   it('distinct contents are DRY-clean — distinct addresses, never returned', () => {
