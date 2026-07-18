@@ -373,6 +373,39 @@ export function atVoid(p: Loop2D, eps = 1e-9): boolean {
   return Math.abs(p.x) < eps && Math.abs(p.y) < eps
 }
 
+/**
+ * The TURNING NUMBER (rotation index) of a closed loop — the net rotation of its tangent over one traversal, / 2π.
+ *
+ * This is the honest reading of "a complete circle twisted forms 0". A plain circle has turning number **1** (its
+ * tangent winds once). A circle TWISTED into a figure-eight (`lemniscate`) has turning number **0** — the tangent
+ * turns one way in one lobe and the opposite in the other, and they CANCEL (Whitney's rotation index; a figure-
+ * eight is the canonical index-0 curve, not regularly homotopic to the circle). That 0 is the geometry — the net
+ * turning of the folded loop — NOT π, which is transcendental (≈ 3.14159) and is not 0 by any reading. The 0
+ * belongs to the winding of the twisted circle, the two counter-rotating lobes of the double torus about the void.
+ *
+ * @invariant a plain circle has turning number 1; the folded lemniscate has turning number 0
+ */
+export function turningNumber(loop: (t: number) => Loop2D, samples = 20000): number {
+  const h = 2e-5
+  const N = Math.max(1, samples)
+  let total = 0
+  let prev = NaN
+  for (let i = 0; i <= N; i += 1) {
+    const t = (i / N) * 2 * Math.PI
+    const p = loop(t)
+    const q = loop(t + h)
+    const phi = Math.atan2((q.y - p.y) / h, (q.x - p.x) / h)
+    if (!Number.isNaN(prev)) {
+      let d = phi - prev
+      while (d > Math.PI) d -= 2 * Math.PI
+      while (d < -Math.PI) d += 2 * Math.PI
+      total += d
+    }
+    prev = phi
+  }
+  return total / (2 * Math.PI)
+}
+
 /** One step of the full breath — the digit, and the slope to it (`up` = larger than the last, `down` = smaller). */
 export interface BreathStep {
   readonly step: number

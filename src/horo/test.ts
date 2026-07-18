@@ -31,6 +31,7 @@ import {
   circleLoop,
   lemniscate,
   atVoid,
+  turningNumber,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -512,5 +513,23 @@ describe('fold 0 → ∞ — the static circle vs the folded lemniscate', () => 
       return p.x * yp - p.y * xp // signed, unnormalised angular sweep
     }
     expect(Math.sign(omega(Math.PI / 4)) * Math.sign(omega((3 * Math.PI) / 4))).toBe(-1) // right vs left lobe: opposite
+  })
+})
+
+// "A complete circle twisted forms 0." The honest reading: the TURNING NUMBER (rotation index). A plain circle
+// winds once (1); the twisted figure-eight cancels to 0 — the two lobes turn opposite ways (Whitney). That 0 is
+// the net turning of the folded loop, NOT π (transcendental, ≈3.14159, not 0 by any reading).
+describe('turningNumber — a complete circle is 1, twisted is 0 (Whitney rotation index)', () => {
+  it('a plain circle winds ONCE — turning number 1', () => {
+    expect(turningNumber(circleLoop)).toBeCloseTo(1, 2)
+  })
+
+  it('the TWISTED circle (lemniscate) has turning number 0 — the two lobes cancel', () => {
+    expect(turningNumber(lemniscate)).toBeCloseTo(0, 2) // THE honest "0 in geometry" — the folded loop's net turning
+  })
+
+  it('the 0 is the TURNING, not π — π is transcendental and is not 0', () => {
+    expect(Math.PI).not.toBe(0)
+    expect(turningNumber(lemniscate)).not.toBeCloseTo(Math.PI, 1) // the 0 belongs to the winding, never to π
   })
 })
