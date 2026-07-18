@@ -2,6 +2,7 @@
  * payload/approval — canonical gate before waves, commits, or push.
  */
 import { spawnSync } from 'node:child_process'
+import { timeoutForLabel } from '@/timeout'
 
 export const PAYLOAD_NODE_OPTIONS =
   '--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm'
@@ -40,12 +41,21 @@ function runPayloadArgs(
   cwd: string,
   nodeOptions: string = PAYLOAD_NODE_OPTIONS,
 ): { readonly code: number; readonly output: string } {
+  // Bounded by the computed ladder (@/timeout): unbounded, this spawn waited FOREVER on a
+  // D1 lock when a test host held the database — doctor hung at 0% CPU past every rung.
+  const bound = timeoutForLabel(`payload:${args[0] ?? 'cmd'}`)
   const r = spawnSync('pnpm', ['exec', 'payload', ...args], {
     cwd,
     env: { ...process.env, NODE_OPTIONS: nodeOptions },
     encoding: 'utf8',
     maxBuffer: 64 * 1024 * 1024,
+    stdio: ['ignore', 'pipe', 'pipe'],
+    timeout: bound.ms,
+    killSignal: 'SIGKILL',
   })
+  if (r.signal) {
+    return { code: 1, output: `payload ${args.join(' ')} timed out at ${bound.minutes}min (computed rung) — likely a held database lock` }
+  }
   return { code: r.status ?? 1, output: `${r.stdout ?? ''}${r.stderr ?? ''}` }
 }
 
