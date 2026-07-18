@@ -64,6 +64,74 @@ export function classify(c: Claim, tolerance = 1e-3): Verdict {
   return 'mismatch'
 }
 
+/**
+ * The possibility a coincidence is STILL a coincidence after surviving `inversions` independent inversions.
+ *
+ * "Inverted coincidence is not coincidence anymore if it computes." A true coincidence is FRAGILE — it holds in
+ * one representation and breaks under transformation. An INVARIANT holds under every inversion — that is what
+ * makes it a law ([[conformal]]: the angle survives rotate, scale, invert; a length does not). So test a claimed
+ * relationship by inverting it and asking whether it still computes.
+ *
+ * `perInversionChance` is the probability the COINCIDENCE null assigns to surviving one independent inversion by
+ * luck (≈ the match tolerance — how likely a random value lands in range). Under that null, surviving `k`
+ * independent inversions has probability `perInversionChance^k` — this is the p-value, the "possibility it is
+ * still just a coincidence," and it decays geometrically toward 0. A genuine invariant survives with certainty,
+ * so observing many survivals is vanishingly unlikely under the coincidence null — and the null is rejected.
+ *
+ * The inversions are Tesla's real principles turned into transformations: ALTERNATION (AC — the current reverses
+ * each half-cycle, an inversion), the ROTATING FIELD (a rotation), and POLYPHASE (the conjugate pairs, ⟨2⟩/⟨5⟩,
+ * [[conversion]]). Apply each; a relationship that survives all of them is invariant. (The 3·6·9 / quantum-
+ * invention mysticism is NOT adopted — the arithmetic of rotation and alternation is real, the metaphysics is
+ * not, [[rodin]] · [[rules]]/refutable.)
+ *
+ * @invariant survival probability is perInversionChance^inversions — geometric decay under the coincidence null
+ * @invariant a per-inversion chance of 1 never decays — that is the signature of an invariant, not a coincidence
+ */
+export function coincidenceAfterInversions(perInversionChance: number, inversions: number): number {
+  const p = Math.min(1, Math.max(0, perInversionChance))
+  return Math.pow(p, Math.max(0, Math.floor(inversions)))
+}
+
+/** The verdict of the inversion test — did it survive every inversion, and is it now invariant or still fragile? */
+export interface InvarianceVerdict {
+  /** true iff the relationship still computed after every inversion tried. */
+  readonly survivedAll: boolean
+  /** the possibility it is still a coincidence — perInversionChance^survived under the null. */
+  readonly coincidenceProbability: number
+  readonly verdict: 'invariant' | 'fragile' | 'undetermined'
+  readonly reason: string
+}
+
+/**
+ * Test a relationship by inversion: it survived `survived` of `tried` independent inversions. If it broke under
+ * any, it is FRAGILE — a coincidence tied to one representation. If it survived them all and the possibility of
+ * chance (`perInversionChance^survived`) falls below `threshold`, it is INVARIANT — inverted and still computes,
+ * so not a coincidence anymore. Between: undetermined — invert it more.
+ *
+ * @invariant breaking under any inversion ⇒ fragile ⇒ coincidence confirmed (representation-dependent)
+ * @invariant surviving all with coincidence-probability ≤ threshold ⇒ invariant (theorem-like)
+ */
+export function invarianceVerdict(
+  survived: number,
+  tried: number,
+  perInversionChance: number,
+  threshold = 1e-3,
+): InvarianceVerdict {
+  if (survived < tried) {
+    return { survivedAll: false, coincidenceProbability: 1, verdict: 'fragile', reason: `broke under inversion — survived only ${survived}/${tried}, representation-dependent, a coincidence` }
+  }
+  const cp = coincidenceAfterInversions(perInversionChance, survived)
+  const invariant = cp <= threshold && tried > 0
+  return {
+    survivedAll: true,
+    coincidenceProbability: cp,
+    verdict: invariant ? 'invariant' : 'undetermined',
+    reason: invariant
+      ? `survived all ${tried} inversions; possibility of chance ${cp.toExponential(1)} ≤ ${threshold} — inverted and still computes, not a coincidence`
+      : `survived all ${tried}, but possibility of chance ${cp.toExponential(1)} > ${threshold} — invert it more before calling it invariant`,
+  }
+}
+
 /** Whether a claim's verdict warrants recomputing the accepted science — the refusal machinery. */
 export interface RecomputeVerdict {
   readonly warranted: boolean

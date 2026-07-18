@@ -14,6 +14,23 @@ A research program built on matching numbers to physical constants is the **perf
 
 `classify` returns `theorem` only for an exact closed-form identity with **zero free parameters**; a tunable value, even an exact hit, is a coincidence.
 
+## Inverted coincidence is not coincidence anymore if it computes
+
+A coincidence is **fragile** — it holds in one representation and breaks under transformation. An **invariant** holds under *every* inversion — that is what makes it a law ([[conformal]]: the angle survives rotate·scale·invert; a length does not). So test a relationship by inverting it and asking whether it still computes.
+
+Under the **coincidence null**, surviving one independent inversion by luck has probability `p` (≈ the match tolerance). Surviving `k` inversions has probability `p^k` — the *possibility it is still just a coincidence* — and it decays geometrically:
+
+```
+Tesla-pair inversions (alternation · rotation · polyphase), p = 0.1:
+  after  3 inversions:  p^k = 1e-3
+  after  6 inversions:  p^k = 1e-6
+  after  9 inversions:  p^k = 1e-9
+```
+
+`invarianceVerdict(survived, tried, p)`: break under any ⇒ **fragile** (a coincidence, representation-dependent); survive all with `p^survived ≤ threshold` ⇒ **invariant** (inverted and still computes — not a coincidence). The **Tesla** connection is his *real* principles turned into transformations — **AC alternation** (the current inverts each half-cycle), the **rotating field** (a rotation), **polyphase** (the conjugate pairs, ⟨2⟩/⟨5⟩, [[conversion]]). The 3·6·9 / quantum-invention mysticism is **not** adopted — the arithmetic of rotation and alternation is real, the metaphysics is not ([[rodin]]).
+
+**Honest boundary.** `p^k → 0` **lowers** the probability of chance; it never reaches 0 (finite inversions) and it does not supply a **derivation** — surviving inversions makes a coincidence look invariant, but a physical law still needs a derivation from principles and an experiment. It distinguishes *fragile* from *invariant*; it does not turn either into truth. **HARMONY ≠ TRUTH.**
+
 ## The answer to "if confirmed, recompute all science"
 
 It has a precise, disciplined answer, and the tool computes it: **`warrantsRecompute` returns NO for every verdict.**

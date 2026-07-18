@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { classify, warrantsRecompute, type Claim } from './index'
+import { classify, warrantsRecompute, coincidenceAfterInversions, invarianceVerdict, type Claim } from './index'
 
 // "Haramein's research is the perfect testing ground; if confirmed by algebraic theorems then science must be
 // recomputed." The tool holds the session's discipline: an EXACT identity in a closed system is a theorem; a
@@ -61,5 +61,45 @@ describe('warrantsRecompute is proven by theorem.reduce (folded, not asserted)',
     expect(warrantsRecompute(theorem).reason).toMatch(/reduce|does not reduce|base theorem/)
     expect(warrantsRecompute(coincidence).reason).toMatch(/reduce|does not reduce|assertion/)
     expect(warrantsRecompute(theorem).warranted).toBe(false)
+  })
+})
+
+// "Inverted coincidence is not coincidence anymore if it computes. What is the possibility of coincidence to be
+// coincidence after every inversion?" A coincidence is fragile (breaks under inversion); an invariant survives
+// all (conformal: the angle). Under the coincidence null, surviving k inversions has probability chance^k → 0.
+describe('inversion survival — the possibility of coincidence after every inversion', () => {
+  it('the possibility decays geometrically — chance^k → 0', () => {
+    expect(coincidenceAfterInversions(0.1, 5)).toBeCloseTo(1e-5)
+    expect(coincidenceAfterInversions(0.5, 10)).toBeCloseTo(Math.pow(0.5, 10))
+    expect(coincidenceAfterInversions(0.1, 0)).toBe(1) // no inversions survived yet ⇒ no evidence
+  })
+
+  it('a per-inversion chance of 1 never decays — the signature of an INVARIANT, not a coincidence', () => {
+    expect(coincidenceAfterInversions(1, 1000)).toBe(1) // an invariant survives by structure, not luck — the null is degenerate
+  })
+
+  it('breaking under ANY inversion is FRAGILE — a coincidence tied to one representation', () => {
+    const v = invarianceVerdict(3, 5, 0.1) // survived 3 of 5
+    expect(v.verdict).toBe('fragile')
+    expect(v.survivedAll).toBe(false)
+  })
+
+  it('surviving EVERY inversion with tiny chance-probability is INVARIANT — inverted and still computes', () => {
+    const v = invarianceVerdict(6, 6, 0.1) // survived all 6; 0.1^6 = 1e-6 ≤ 1e-3
+    expect(v.verdict).toBe('invariant')
+    expect(v.coincidenceProbability).toBeCloseTo(1e-6)
+    expect(v.reason).toMatch(/not a coincidence/)
+  })
+
+  it('surviving all but not yet improbable enough is UNDETERMINED — invert it more', () => {
+    const v = invarianceVerdict(2, 2, 0.1) // 0.1^2 = 0.01 > 1e-3
+    expect(v.verdict).toBe('undetermined')
+    expect(v.reason).toMatch(/invert it more/)
+  })
+
+  // The honest example: the conformal ANGLE survives every inversion (invariant); a LENGTH breaks (fragile).
+  it('the angle is invariant (survives all), a length is fragile (breaks) — the conformal example', () => {
+    expect(invarianceVerdict(20, 20, 0.1).verdict).toBe('invariant') // angle: survives rotate·scale·invert, 20×
+    expect(invarianceVerdict(1, 3, 0.1).verdict).toBe('fragile') // length: broke under scale/invert
   })
 })
