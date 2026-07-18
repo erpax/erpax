@@ -123,7 +123,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       : undefined
   if (driftOnly) {
     const fix = process.argv.includes('--fix')
-    const audit = handMaintainedViolations({ cwd, paths: pathFilter })
+    const audit = handMaintainedViolations({ cwd, paths: pathFilter, faces: true })
     if (audit.violationCount === 0) {
       console.log(`✓ readme:drift — ${audit.pathsScanned.length} path(s) · zero hand-maintained violations`)
       process.exit(0)

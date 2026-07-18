@@ -136,7 +136,15 @@ export function boundedSessionPaths(
     .slice(0, max)
 }
 
-export function handMaintainedViolations(opts: { paths?: readonly string[]; cwd?: string } = {}): HandMaintainedAudit {
+/**
+ * Hand-maintained audit. `faces: true` additionally verifies computed-face + frontmatter drift —
+ * that path builds the FULL corpus context (`buildReadmeCorpusFrozenInputs`, the CI-sized readme
+ * derivation) and costs tens of minutes; it belongs to the readme:check lane. The default is the
+ * cheap fs-level audit, so callers like the rules gate stay bounded — the gate ran this heavy
+ * path synchronously and looked HUNG (frozen heartbeat, 40+ min, occasional loader stack
+ * overflow) until the two modes were split.
+ */
+export function handMaintainedViolations(opts: { paths?: readonly string[]; cwd?: string; faces?: boolean } = {}): HandMaintainedAudit {
   const cwd = opts.cwd ?? process.cwd()
   const paths = (opts.paths?.length ? [...opts.paths] : boundedSessionPaths(cwd)).slice(
     0,
@@ -150,7 +158,7 @@ export function handMaintainedViolations(opts: { paths?: readonly string[]; cwd?
   violations.push(...handJsonViolations(cwd))
   violations.push(...handGeneratedViolations(cwd))
 
-  if (paths.length) {
+  if (paths.length && opts.faces) {
     const d = verifyComputedFacesForPaths(paths, cwd)
     for (const p of d.readme.drift) {
       violations.push({ path: p, kind: 'readme-drift', fix: 'readme paths', detail: 'README' })
@@ -167,6 +175,9 @@ export function handMaintainedViolations(opts: { paths?: readonly string[]; cwd?
         violations.push({ path: p, kind: 'skill-prose-without-index', fix: 'readme paths', detail: 'SKILL frontmatter' })
       }
     }
+  }
+
+  if (paths.length) {
     violations.push(...duplicateListViolations(cwd, paths))
     for (const atom of paths) {
       const skill = join(cwd, SRC, atom, 'SKILL.md')
