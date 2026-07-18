@@ -124,7 +124,7 @@ describe('diamond — shared model (one shape, all scales)', () => {
     expect(deploymentFaces(deriveDiamond('readme'))).toMatchObject({ worker: true })
     expect(deploymentFaces(deriveDiamond('typography'))).toMatchObject({ worker: true })
     expect(deploymentFaces(deriveDiamond('plugin'))).toMatchObject({ plugin: true })
-    expect(deploymentFaces(deriveDiamond('public'))).toMatchObject({ pwa: true })
+    // 'public' is a dead atom (only src/pwa remains) — a pin on a ghost tested the fallback, not the map
     expect(deploymentFaces(deriveDiamond('pwa'))).toMatchObject({ pwa: true })
     expect(deploymentFaces(deriveDiamond('law/folder/folderGuardians'))).toMatchObject({
       worker: true,

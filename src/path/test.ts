@@ -328,12 +328,13 @@ describe('path — follow every path (full lattice coverage)', () => {
     expect(nodeOf('tool')?.path).toBe('tool')
     expect(nodeOf('agents/mcp/tool')?.path).toBe('agents/mcp/tool')
     expect(nodeOf('tool')?.uuid).not.toBe(nodeOf('agents/mcp/tool')?.uuid)
+    // computational + boat folded into the vocabulary tree; the homonym law follows their homes
     expect(walked.has('computer')).toBe(true)
-    expect(walked.has('computational')).toBe(true)
-    expect(nodeOf('computer')?.uuid).not.toBe(nodeOf('computational')?.uuid)
+    expect(walked.has('vocabulary/computational')).toBe(true)
+    expect(nodeOf('computer')?.uuid).not.toBe(nodeOf('vocabulary/computational')?.uuid)
     expect(walked.has('body')).toBe(true)
-    expect(walked.has('boat')).toBe(true)
-    expect(nodeOf('body')?.uuid).not.toBe(nodeOf('boat')?.uuid)
+    expect(walked.has('vocabulary/boat')).toBe(true)
+    expect(nodeOf('body')?.uuid).not.toBe(nodeOf('vocabulary/boat')?.uuid)
   })
 
   it('infinitePathFold round-trip — matrix-resolved local fold ⊆ global lattice walk', () => {
@@ -391,24 +392,24 @@ describe('path — canonical ledger (recorded on every step)', () => {
 
   it('homonyms — computer and computational stay distinct in lattice + ledger', () => {
     const computer = recordOnPath('computer', { kind: 'visit' }, AT, null, 0)
-    const computational = recordOnPath('computational', { kind: 'visit' }, AT, null, 1)
+    const computational = recordOnPath('vocabulary/computational', { kind: 'visit' }, AT, null, 1)
     expect(nodeOf('computer')?.path).toBe('computer')
-    expect(nodeOf('computational')?.path).toBe('computational')
-    expect(nodeOf('computer')?.uuid).not.toBe(nodeOf('computational')?.uuid)
+    expect(nodeOf('vocabulary/computational')?.path).toBe('vocabulary/computational')
+    expect(nodeOf('computer')?.uuid).not.toBe(nodeOf('vocabulary/computational')?.uuid)
     expect(computer.entryUuid).not.toBe(computational.entryUuid)
     expect(computer.atomPath).toBe('computer')
-    expect(computational.atomPath).toBe('computational')
+    expect(computational.atomPath).toBe('vocabulary/computational')
   })
 
   it('homonyms — body and boat stay distinct in lattice + ledger', () => {
     const body = recordOnPath('body', { kind: 'visit' }, AT, null, 0)
-    const boat = recordOnPath('boat', { kind: 'visit' }, AT, null, 1)
+    const boat = recordOnPath('vocabulary/boat', { kind: 'visit' }, AT, null, 1)
     expect(nodeOf('body')?.path).toBe('body')
-    expect(nodeOf('boat')?.path).toBe('boat')
-    expect(nodeOf('body')?.uuid).not.toBe(nodeOf('boat')?.uuid)
+    expect(nodeOf('vocabulary/boat')?.path).toBe('vocabulary/boat')
+    expect(nodeOf('body')?.uuid).not.toBe(nodeOf('vocabulary/boat')?.uuid)
     expect(body.entryUuid).not.toBe(boat.entryUuid)
     expect(body.atomPath).toBe('body')
-    expect(boat.atomPath).toBe('boat')
+    expect(boat.atomPath).toBe('vocabulary/boat')
   })
 
   it('ledgerFromPathWalk + followEveryPath — sample subtree 100% coverage', () => {
