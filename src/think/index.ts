@@ -405,7 +405,7 @@ export function purgeProse(prose: string, research: string, cwd: string = proces
 }
 
 /** The state of a saved thought — read-only. `absent` prose has never been saved; the three fates are above. */
-export function proseFate(prose: string, cwd: string = process.cwd()): ProseFate & { state: ProseFate['state'] | 'absent' } {
+export function proseFate(prose: string, cwd: string = process.cwd()): Omit<ProseFate, 'state'> & { readonly state: ProseFate['state'] | 'absent' } {
   const store = readStore(cwd)
   const purged = alreadyRefuted(prose, cwd)
   if (purged) return { prose, state: 'purged', research: purged.harmonic }
