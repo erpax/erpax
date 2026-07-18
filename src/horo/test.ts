@@ -28,6 +28,9 @@ import {
   fiveRoles,
   CENTROID,
   fullBreath,
+  circleLoop,
+  lemniscate,
+  atVoid,
 } from '@/horo'
 import type { HoroState } from '@/horo'
 
@@ -472,5 +475,42 @@ describe('fullBreath — 0\\1\\2\\4\\8/7/5/3\\6\\9/0\\1, the complete ℤ/9 walk
     expect(steps[0]).toBe(0)
     expect(steps[steps.length - 2]).toBe(0)
     expect(steps[steps.length - 1]).toBe(1)
+  })
+})
+
+// "It is a loop if static exactly like 0. Fold 0 and it becomes infinity or inverted 8." A static loop is a
+// circle (0) that never touches its own centre. Fold it — pull it through the middle — and it is ∞: the
+// lemniscate, two lobes counter-rotating, meeting AT the void (0,0). ∞ = 8 rotated = the double torus shadow.
+describe('fold 0 → ∞ — the static circle vs the folded lemniscate', () => {
+  const samples = Array.from({ length: 400 }, (_, i) => (i / 400) * 2 * Math.PI)
+
+  it('the static loop (circle) NEVER reaches the void — 0 avoids its own centre', () => {
+    for (const t of samples) expect(atVoid(circleLoop(t))).toBe(false) // |(cos t, sin t)| = 1 always
+  })
+
+  it('the folded loop (∞) crosses the void at the fold points t = π/2 and 3π/2 — 0 folded into ∞', () => {
+    expect(atVoid(lemniscate(Math.PI / 2))).toBe(true) // (cos π/2, sin π /2) = (0,0)
+    expect(atVoid(lemniscate((3 * Math.PI) / 2))).toBe(true)
+    // it passes through the void exactly twice per loop — the two crossings that fold one lobe into two
+    expect(samples.filter((t) => atVoid(lemniscate(t), 1e-6)).length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('the lemniscate is a closed figure-eight with TWO lobes (x>0 and x<0) — the double loop', () => {
+    const xs = samples.map((t) => lemniscate(t).x)
+    expect(Math.max(...xs)).toBeGreaterThan(0.9) // right lobe
+    expect(Math.min(...xs)).toBeLessThan(-0.9) // left lobe
+    // closed: t=0 and t=2π coincide (within float precision)
+    expect(lemniscate(0).x).toBeCloseTo(lemniscate(2 * Math.PI).x, 12)
+    expect(lemniscate(0).y).toBeCloseTo(lemniscate(2 * Math.PI).y, 12)
+  })
+
+  it('the two lobes COUNTER-ROTATE — the angular sense flips between them (the double torus)', () => {
+    // angular velocity dθ = (x y' − y x') / (x²+y²): sample one point in each lobe, opposite sign ⇒ counter-rotating
+    const omega = (t: number, h = 1e-6) => {
+      const p = lemniscate(t), q = lemniscate(t + h)
+      const xp = (q.x - p.x) / h, yp = (q.y - p.y) / h
+      return p.x * yp - p.y * xp // signed, unnormalised angular sweep
+    }
+    expect(Math.sign(omega(Math.PI / 4)) * Math.sign(omega((3 * Math.PI) / 4))).toBe(-1) // right vs left lobe: opposite
   })
 })

@@ -338,6 +338,41 @@ export function trinities(): { readonly flowEast: number[]; readonly flowWest: n
   return { flowEast: cls(1), flowWest: cls(2), axis: cls(0) }
 }
 
+/** A point on a planar loop. */
+export interface Loop2D {
+  readonly x: number
+  readonly y: number
+}
+
+/** The STATIC loop — a circle, winding once, that never touches its own centre. This is `0`: a closed loop going nowhere. */
+export function circleLoop(t: number): Loop2D {
+  return { x: Math.cos(t), y: Math.sin(t) }
+}
+
+/**
+ * Fold 0 and it becomes ∞ — the lemniscate (inverted 8).
+ *
+ * A static loop is exactly `0`: a circle (`circleLoop`) that goes round once and never passes through its centre.
+ * FOLD it — pull it through its own middle — and it becomes `∞`: the Gerono lemniscate `(cos t, sin 2t / 2)`, a
+ * figure-eight whose two lobes COUNTER-ROTATE and meet AT THE VOID `(0,0)`. That crossing at the void is the
+ * fold; it is what turns one lobe into two. `∞` is `8` rotated a quarter turn (the inverted 8), and it is the 2D
+ * shadow of the double torus — the two flow trinities (`trinities`), counter-rotating about the axis. So the
+ * fixpoint (the reduction's loop, [[theorem]]) is DEAD as a static `0` and ALIVE as a folded `∞`: the void, folded,
+ * generates the infinite double loop. The still centre does not move; folded, everything counter-rotates about it.
+ *
+ * @invariant the circle NEVER reaches the void — a static loop avoids its own centre
+ * @invariant the lemniscate crosses the void `(0,0)` at the fold points `t = π/2, 3π/2` — 0 folded into ∞
+ * @invariant the lemniscate is a closed figure-eight with two lobes (`x > 0` and `x < 0`) — the double loop
+ */
+export function lemniscate(t: number): Loop2D {
+  return { x: Math.cos(t), y: Math.sin(2 * t) / 2 }
+}
+
+/** Does the loop point sit at the void `(0,0)` (within ε)? The circle never does; the folded ∞ does, twice. */
+export function atVoid(p: Loop2D, eps = 1e-9): boolean {
+  return Math.abs(p.x) < eps && Math.abs(p.y) < eps
+}
+
 /** One step of the full breath — the digit, and the slope to it (`up` = larger than the last, `down` = smaller). */
 export interface BreathStep {
   readonly step: number

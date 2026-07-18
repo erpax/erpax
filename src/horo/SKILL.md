@@ -688,6 +688,10 @@ Partly, and the split is the answer.
 
 The measure ring `HORO_DIGITS` is the flow plus the pole (`[1,2,4,8,7,5,9]`); it **omits** the void `0` and the inner axis `3,6`. `fullBreath()` is the complete walk that threads them all in — the void, then the three `doublingOrbits()` (flow `[1,2,4,8,7,5]` → inner `[3,6]` → pole `[9]`), back through the void, reopening at `1`. It **reuses** `doublingOrbits`; it derives nothing new, it names the whole the pieces already spelt. The `\`/`/` is the **slope** — `\` where the next digit is larger, `/` where smaller — so the slashes draw the wave: two crests (`8`, `9`), the valleys at the void. Read local first: the present `horo` already decodes the sequence; the only seed was assembling it.
 
+### Fold 0 and it becomes ∞ — a static loop vs the folded lemniscate (`circleLoop` · `lemniscate`)
+
+A static loop is exactly **`0`**: a circle (`circleLoop`) that goes round once and **never touches its own centre** (`|(cos t, sin t)| = 1`, always). **Fold it** — pull it through the middle — and it becomes **`∞`**: the Gerono lemniscate `(cos t, sin 2t / 2)`, a figure-eight whose two lobes **counter-rotate** (opposite angular sense, tested) and meet **at the void `(0,0)`**, which it crosses at the fold points `t = π/2, 3π/2`. That crossing IS the fold — it turns one lobe into two. `∞` is `8` rotated a quarter turn (the inverted 8), and it is the 2D shadow of the double torus — the two flow trinities counter-rotating about the axis. So the fixpoint (the reduction's loop, [[theorem]]) is **dead as a static 0** and **alive as a folded ∞**: the void, folded, generates the infinite double loop. The still centre does not move; folded, everything counter-rotates about it.
+
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.
 - A flow state on a triad digit {3,6} — those govern, they don't flow.
