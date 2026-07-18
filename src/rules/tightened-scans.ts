@@ -21,9 +21,6 @@ import {
 const SRC = 'src'
 
 const COLOCATED_TEST = /\.test\.(ts|tsx)$/i
-const COMPUTED_FACES = new Set(['README.md', 'LLM.md', 'diamond.json'])
-const GENERATED_TS = /\.generated\.ts$/i
-const UI_FACET_TSX = /\.tsx$/i
 const MULTI_SEGMENT_STEM = /[-.]/
 
 const ACCOUNTING_FORBIDDEN_COMPLIANT: Readonly<Record<string, string>> = {
