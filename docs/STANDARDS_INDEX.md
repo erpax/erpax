@@ -1886,6 +1886,7 @@ src/memory/architecture/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testabil
 src/memory/session/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/merge/open/graph/index.ts:4: * @standard OGP open-graph-protocol-1.0
 src/merge/open/graph/index.ts:5: * @standard W3C-HTML5 §4.2.5 meta-element
+src/mesh/index.ts:17: * @standard ISO/IEC 25010:2023 §5.6.2 modularity — the whole is one addressable graph
 src/message/index.ts:11: * @standard RFC 9562 §5.8 (the structured uuid carries the message)
 src/messages/index.ts:11: * @standard ISO-8601-1:2019 date-time sent-read-timestamps
 src/messages/index.ts:12: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5918,6 +5919,7 @@ src/memories/index.ts:32: * @audit Conservation Law 8 content-uuid (per-memory c
 src/memories/index.ts:33: * @audit Conservation Law 10 referential-harmony (relatedTo graph)
 src/memory/architecture/index.ts:14: * @audit pure projection; horo/measure from matrix, never hand decimals
 src/memory/session/index.ts:13: * @audit pure lattice ops; isSealedDiamond reads live tree via @/diamond
+src/mesh/index.ts:18: * @audit edges parsed from source; standards read from the files' own banners — never transcribed
 src/message/index.ts:12: * @audit the uuid is self-decoding — every channel is an independent verify level
 src/messages/index.ts:13: * @audit ISO-19011:2018 audit-trail message-provenance
 src/meta/automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
