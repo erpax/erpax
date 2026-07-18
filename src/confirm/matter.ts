@@ -408,7 +408,16 @@ export function runScopedConfirm(args: readonly string[], hook: boolean, yaml: {
     standards: !staleCatalogue,
   }
   const ok = CONFIRM_CHECK_AXES.every((axis) => verdicts[axis])
-  console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
+  if (ok) {
+    console.log('✓ confirmed — payload ⊕ vitepress')
+  } else {
+    // A blocking gate must never be SILENT. The failing-axis lines above mix stdout/stderr, and the harness
+    // surfaces only stderr — so a stdout-only reason reads as "No stderr output", a wall that will not say why.
+    // Name the failing axes on stderr so every block states its cause ([[rules]]: a gate that cannot be read
+    // is prose; improve it, do not --no-verify around it).
+    const failed = CONFIRM_CHECK_AXES.filter((axis) => !verdicts[axis])
+    console.error(`✗ NOT confirmed — failing axis(es): ${failed.join(', ')}`)
+  }
   return ok ? 0 : hook ? 2 : 1
 }
 
