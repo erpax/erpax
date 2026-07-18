@@ -106,7 +106,9 @@ export function gateImports(): UuidGateResult {
 /** Typecheck the uuid substrate — compile-load confirm; no `payload generate:types`. */
 export function gateTypecheck(cwd: string = process.cwd()): UuidGateResult {
   try {
-    execSync('pnpm exec tsx -e "import \'./src/confirm/gates.ts\'"', {
+    // Direct binary, not `pnpm exec` — pnpm adds ~490ms of startup per spawn (measured), and the seal spawns
+    // several. `< /dev/null` so a backgrounded run never stalls on stdin (the corpus's own known gotcha).
+    execSync('node_modules/.bin/tsx -e "import \'./src/confirm/gates.ts\'" < /dev/null', {
       cwd,
       stdio: ['ignore', 'pipe', 'pipe'],
     })
