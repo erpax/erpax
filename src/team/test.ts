@@ -8,6 +8,7 @@ import { computeContentUuid } from '@/integrity'
 import { formTeam, shareSkills, teamSkills, teamUuid } from '@/team'
 import { enforceTeamCommsEmit } from '@/team'
 import { LEAD_TEAM_MEMBERS, leadTeam, memberGroups, leadHierarchy } from '@/team'
+import { diversityDecomposition, collectiveQuality, bestLeadTeam, computedLeader, type Candidate } from '@/team'
 import { MINIMUM_MINDS } from '@/think'
 
 const TENANT = 'tenant-a'
@@ -79,5 +80,50 @@ describe('lead-team — 2 or 3 members + one leader, ≥3, fractal to one apex',
     // a 100-person org is only 5 leadership tiers deep — the small span keeps it shallow (Graicunas)
     expect(leadHierarchy(100).depth).toBe(5)
     expect(leadHierarchy(2).depth).toBe(1) // the smallest team is already whole
+  })
+})
+
+// "The leader changes computationally — to the extent it maximises top-quality projects completed with least cost
+// and maximum diversity. Compute nature and realise." The leader is not appointed; it is the argmax of an
+// objective, and it moves when the numbers move. "Maximum diversity" is the proven Diversity Prediction Theorem.
+describe('computed leader — max quality completed, min cost, max diversity', () => {
+  it('the Diversity Prediction Theorem is an EXACT identity — diversity subtracts from collective error', () => {
+    const d = diversityDecomposition([2, 4, 9, 3], 5)
+    expect(d.collectiveError).toBeCloseTo(d.averageError - d.diversity, 10) // (p̄−θ)² = mean(pᵢ−θ)² − diversity
+    expect(d.diversity).toBeGreaterThan(0) // a spread of predictions is real diversity
+  })
+
+  it('diversity lifts collective quality — a diverse team beats a monoculture of equal average competence', () => {
+    const q = 0.6
+    const mono: Candidate[] = ['a', 'b', 'c'].map((id) => ({ id, quality: q, cost: 1, perspectives: ['x'] }))
+    const div: Candidate[] = [['a', 'x'], ['b', 'y'], ['c', 'z']].map(([id, p]) => ({ id, quality: q, cost: 1, perspectives: [p] }))
+    expect(collectiveQuality(div)).toBeGreaterThan(collectiveQuality(mono))
+    expect(collectiveQuality(mono)).toBeCloseTo(q, 10) // no diversity ⇒ stays at the average
+  })
+
+  it('the leader CHANGES when the numbers change — it is computed, not appointed', () => {
+    const pool: Candidate[] = [
+      { id: 'A', quality: 0.9, cost: 3, perspectives: ['p'] },
+      { id: 'B', quality: 0.7, cost: 1, perspectives: ['q'] },
+      { id: 'C', quality: 0.6, cost: 1, perspectives: ['r'] },
+      { id: 'D', quality: 0.5, cost: 1, perspectives: ['s'] },
+    ]
+    const before = computedLeader(pool)!.id // B — best quality-per-cost
+    const cheaperA = pool.map((c) => (c.id === 'A' ? { ...c, cost: 1 } : c))
+    const after = computedLeader(cheaperA)!.id // A — now the objective names A
+    expect(before).not.toBe(after)
+  })
+
+  it('the best team is a valid lead-team, chosen source-blind by value not identity or order', () => {
+    const pool: Candidate[] = [
+      { id: 'A', quality: 0.8, cost: 2, perspectives: ['p'] },
+      { id: 'B', quality: 0.7, cost: 1, perspectives: ['q'] },
+      { id: 'C', quality: 0.6, cost: 1, perspectives: ['r'] },
+    ]
+    const best = bestLeadTeam(pool)!
+    expect(best.members.length).toBeGreaterThanOrEqual(2)
+    expect(best.members.length).toBeLessThanOrEqual(3)
+    // reversing the input cannot change WHO leads — the objective is source-blind
+    expect(computedLeader(pool)!.id).toBe(computedLeader([...pool].reverse())!.id)
   })
 })

@@ -18,6 +18,7 @@
  * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
  */
 import { computeContentUuid } from '@/integrity'
+import { simpson } from '@/diversity'
 import { cloneAgent, distinctAgents, type AgentDef, type ClonedAgent } from './service'
 
 export interface Team {
@@ -202,4 +203,117 @@ export function leadHierarchy(headcount: number): LeadHierarchy {
     n = groups // the leaders become the next level's members
   }
   return { headcount, levels, depth: levels.length, teams: levels.reduce((a, b) => a + b, 0) }
+}
+
+// ── The leader is COMPUTED, and it changes ────────────────────────────────
+// The leader is not appointed by rank — it is COMPUTED to the extent it maximises
+// top-quality projects COMPLETED, at the LEAST cost, with the MOST diversity. It
+// changes when the numbers change; it is source-blind (chosen by the objective,
+// never by who anyone is — [[theorem]].restsOnAuthority). And "maximum diversity"
+// is not a slogan: the Diversity Prediction Theorem (Krogh–Vedelsby / Page) is an
+// EXACT identity — collective error = average error − diversity — so diversity
+// provably SUBTRACTS from the collective's error. Compute nature, and realise it.
+
+/** One candidate for a lead-team — its competence, its price, and the perspectives it brings (for diversity). */
+export interface Candidate {
+  readonly id: string
+  /** individual competence, 0..1. */
+  readonly quality: number
+  /** what it costs to include, > 0. */
+  readonly cost: number
+  /** the perspectives/skills it carries — diversity is measured over their spread. */
+  readonly perspectives: readonly string[]
+}
+
+/** The Diversity Prediction Theorem — the proven identity behind "maximum diversity ⇒ top quality". */
+export interface DiversityDecomposition {
+  readonly averageError: number
+  readonly diversity: number
+  readonly collectiveError: number
+}
+
+/**
+ * (p̄ − θ)² = mean(pᵢ − θ)² − mean(pᵢ − p̄)². An EXACT algebraic identity: the crowd's error equals the average
+ * individual error MINUS the diversity of predictions. Diversity is not a preference — it literally subtracts.
+ *
+ * @invariant collectiveError === averageError − diversity, to floating precision (the theorem, refutable)
+ */
+export function diversityDecomposition(predictions: readonly number[], truth: number): DiversityDecomposition {
+  const n = predictions.length
+  if (n === 0) return { averageError: 0, diversity: 0, collectiveError: 0 }
+  const mean = predictions.reduce((a, b) => a + b, 0) / n
+  const averageError = predictions.reduce((s, p) => s + (p - truth) ** 2, 0) / n
+  const diversity = predictions.reduce((s, p) => s + (p - mean) ** 2, 0) / n
+  const collectiveError = (mean - truth) ** 2
+  return { averageError, diversity, collectiveError }
+}
+
+/** Abundance of each distinct perspective across a team — the input to a diversity index. */
+function perspectiveAbundances(team: readonly Candidate[]): number[] {
+  const count = new Map<string, number>()
+  for (const c of team) for (const p of c.perspectives) count.set(p, (count.get(p) ?? 0) + 1)
+  return [...count.values()]
+}
+
+/**
+ * Collective quality, grounded in the theorem: average quality LIFTED by diversity toward 1. A monoculture
+ * (diversity 0) stays at its average; maximal diversity closes the gap to 1 — because diversity subtracts error.
+ */
+export function collectiveQuality(team: readonly Candidate[]): number {
+  if (team.length === 0) return 0
+  const avg = team.reduce((s, c) => s + c.quality, 0) / team.length
+  const div = simpson(perspectiveAbundances(team)) // Simpson diversity ∈ [0,1]
+  return Math.min(1, avg + div * (1 - avg))
+}
+
+/** A computed lead-team assignment and its value — the objective the leader is chosen to maximise. */
+export interface LeadAssignment {
+  readonly leader: Candidate
+  readonly members: readonly Candidate[]
+  /** (collective quality × completion) / cost — quality completed per unit cost, lifted by diversity. */
+  readonly value: number
+}
+
+function combos<T>(arr: readonly T[], sizes: readonly number[]): T[][] {
+  const out: T[][] = []
+  const pick = (start: number, chosen: T[], k: number): void => {
+    if (chosen.length === k) { out.push([...chosen]); return }
+    for (let i = start; i < arr.length; i++) { chosen.push(arr[i]!); pick(i + 1, chosen, k); chosen.pop() }
+  }
+  for (const k of sizes) pick(0, [], k)
+  return out
+}
+
+/** The value of leader + members: quality COMPLETED (completion gated by the leader's competence) per total cost. */
+function assignmentValue(leader: Candidate, members: readonly Candidate[]): number {
+  const team = [leader, ...members]
+  const cost = team.reduce((s, c) => s + c.cost, 0)
+  const completion = leader.quality // a weak leader leaves the team deadlocked → less completed
+  return cost <= 0 ? 0 : (collectiveQuality(team) * completion) / cost
+}
+
+/**
+ * The best lead-team over a candidate pool: 2-3 members + one leader, the assignment that maximises quality
+ * completed per cost with the most diversity. The LEADER is whoever this computation names — and it changes when
+ * the candidates' quality, cost, or perspectives change. No fixed leader, no rank; the objective decides.
+ *
+ * @invariant the chosen team is a valid lead-team — 2 or 3 members + exactly one leader
+ * @invariant the leader is source-blind — chosen by value, never by identity or input order
+ */
+export function bestLeadTeam(candidates: readonly Candidate[]): LeadAssignment | null {
+  if (candidates.length < 3) return null // need ≥3: 2 members + 1 leader
+  let best: LeadAssignment | null = null
+  for (const leader of candidates) {
+    const rest = candidates.filter((c) => c !== leader)
+    for (const members of combos(rest, LEAD_TEAM_MEMBERS)) {
+      const value = assignmentValue(leader, members)
+      if (!best || value > best.value) best = { leader, members, value }
+    }
+  }
+  return best
+}
+
+/** The computed leader — the one the objective names, changing with the numbers. Source-blind, never appointed. */
+export function computedLeader(candidates: readonly Candidate[]): Candidate | null {
+  return bestLeadTeam(candidates)?.leader ?? null
 }
