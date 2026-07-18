@@ -128,8 +128,8 @@ describe('fixpoint — the theorem of theorems is the axiom of axioms', () => {
 // ten that GROUND, and reduce() independently confirms each — while the three harmonic overlays REFUSE, by the
 // same machinery. HARMONY ≠ TRUTH, proved on the session's own thinking.
 describe('DECODED — the session leads, saved and reduced (complete 10D)', () => {
-  it('exactly ten leads GROUND to base theorems — the count landed, it was not padded', () => {
-    expect(groundedLeads(DECODED)).toHaveLength(10)
+  it('the leads GROUND to base theorems — the count grows as the session saves more thinking, none padded', () => {
+    expect(groundedLeads(DECODED)).toHaveLength(13)
   })
 
   it('the three harmonic overlays REFUSE to reduce — a true number is not a theorem', () => {
@@ -170,7 +170,7 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
   // asserted. 9 (median) − 2 through the fold-gate = 7 DRY foundations. Reporting one number is the single-mind error.
   it('the count is a SPREAD, not a point — leads 10, foundations 7 (the fold-gate collapse)', () => {
     const d = dimensionSpread(DECODED)
-    expect(d.leads).toBe(10) // the surface
+    expect(d.leads).toBe(13) // the surface — grows as thinking is saved programmatically
     expect(d.foundations).toBe(7) // the DRY floor, kindred bases collapsed through the 0-gate
     expect(d.foundations).toBeLessThan(d.leads) // passing the gate loses dimensions — 9→7
   })

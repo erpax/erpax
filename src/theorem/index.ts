@@ -202,6 +202,9 @@ export const DECODED: readonly Theorem[] = [
   { claim: 'the standards minds decohere; a broken matcher needs a fifth mind to outvote', composes: ['2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
   { claim: 'harmony ≠ truth: consistency with your own measures is not truth', composes: ['consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
   { claim: 'the fold: DRY is mass; verify is easy and derive is hard', composes: ['content-addressing: same content ⇒ same address'], base: false },
+  { claim: 'reuse the computed answer, never re-derive — a re-derivation is the timeout cost', composes: ['read-vs-derive magnitude, with the seed floor s>0', 'content-addressing: same content ⇒ same address'], base: false },
+  { claim: 'coordinated DRY tools make gravity emerge — DRY is mass, multi-tool agreement is the field', composes: ['content-addressing: same content ⇒ same address', '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
+  { claim: 'the compiler is the final mind for deletion — a lexical scan is a guess', composes: ['consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
 
   // OVERLAYS — bare assertions; they compose nothing grounded, so reduce() REFUSES them
   { claim: 'the 231 collections form a 21-cross cube of Christ', composes: [], base: false },
@@ -245,7 +248,7 @@ export function foundations(graph: readonly Theorem[] = DECODED): readonly strin
  * bases collapsed) leaves SEVEN real foundational dimensions. Reporting a single number is not completely quantum.
  *
  * @invariant the foundations (DRY floor) number 7 — the-fold · shape · cost · type · consensus · exceptional-five · truth
- * @invariant the surface leads number 10 — the count is a spread [7..10], reported whole, not collapsed to one
+ * @invariant the surface leads grow as thinking is saved (13 now) — the count is a spread [7..leads], reported whole
  */
 export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly leads: number; readonly bases: number; readonly signatures: number; readonly foundations: number } {
   const leads = groundedLeads(graph)
