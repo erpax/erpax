@@ -5477,6 +5477,7 @@ src/audit/trail/write-audit-event.test.ts:17: * @audit Conservation Law 8 conten
 src/audit/trail/write-audit-event.test.ts:18: * @audit Conservation Law 53 self-referential-closure (pending reconciliation)
 src/audit/trail/write-audit-event.ts:50: * @audit Conservation Law 8 content-addressable integrity
 src/audit/trail/write-audit-event.ts:51: * @audit Conservation Law 53 self-referential-closure (pending-leaf reconciliation)
+src/audit/wave/index.ts:13: * @audit counts measured by the gates' own scans — never transcribed; history is a cache of
 src/aura/find-gaps.ts:26: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/aura/index.ts:112: * @audit derived from fs — the SAME walk as the link/coverage gates (walkSkills)
 src/aura/index.ts:12: * @audit one resolver imported everywhere -- zero duplicated walk/norm/isRealDir
