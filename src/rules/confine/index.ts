@@ -26,7 +26,7 @@
  * Composes [[rules]]/cycle · [[syntax]] · [[law]].
  */
 import ts from 'typescript'
-import { readdirSync, readFileSync } from 'node:fs'
+import { readdirSync, readFileSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
 
 /** Canonical atom path. */
@@ -46,7 +46,7 @@ export interface PlasmaTouch {
 export function plasmaTouches(cwd: string = process.cwd()): PlasmaTouch[] {
   const out: PlasmaTouch[] = []
   const walk = (dir: string): void => {
-    let entries: ReturnType<typeof readdirSync>
+    let entries: Dirent[]
     try {
       entries = readdirSync(dir, { withFileTypes: true })
     } catch {

@@ -20,7 +20,7 @@
  *
  * Composes [[path]] · [[rules]] · [[law]].
  */
-import { readdirSync } from 'node:fs'
+import { readdirSync, type Dirent } from 'node:fs'
 import { join } from 'node:path'
 
 /** Canonical atom path. */
@@ -59,7 +59,7 @@ export interface Echo {
 export function echoes(cwd: string = process.cwd()): Echo[] {
   const out: Echo[] = []
   const walk = (dir: string): void => {
-    let entries: ReturnType<typeof readdirSync>
+    let entries: Dirent[]
     try {
       entries = readdirSync(dir, { withFileTypes: true })
     } catch {
