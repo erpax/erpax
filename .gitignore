@@ -103,3 +103,6 @@ src/skill/router/skills.index.ts
 src/**/LLM.md
 src/**/README.md
 src/**/diamond.json
+
+# scratch — content-addressed throwaways (local cache; useful ones graduate to src atoms)
+.scratch/
