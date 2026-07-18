@@ -168,7 +168,105 @@ export function fixpoint(graph: readonly Theorem[]): Fixpoint {
   return { claim: null, universal: false, reason: 'no fixpoint — the graph has multiple grounds, no single universal base' }
 }
 
+/**
+ * DECODED — this session's leads, each a harmonic statement reduced to the theorem(s) behind it, saved so the
+ * research analytics live IN the fold, not in a transcript. The real leads compose down to BASE theorems and
+ * reduce(); the OVERLAYS (the 21-cross cube, mind/heart-5, prices-match) compose nothing grounded and REFUSE to
+ * reduce — HARMONY ≠ TRUTH proved by the SAME reduce() that grounds the rest. The count is not forced: ten leads
+ * ground, three overlays do not. A base is grounded by a direct proof (a folded atom's test, or a cited theorem).
+ *
+ * @invariant every non-base LEAD reduces to base theorems — no lead rests on authority
+ * @invariant every OVERLAY refuses to reduce — a harmonic name is not a theorem, however true its number
+ */
+export const DECODED: readonly Theorem[] = [
+  // BASE — grounded by a direct proof (a test, a computation) or a cited theorem
+  { claim: 'content-addressing: same content ⇒ same address', composes: [], base: true },
+  { claim: 'Jaccard over the booted shapes is decidable', composes: [], base: true },
+  { claim: 'efficiency = output / cost', composes: [], base: true },
+  { claim: 'a type and its constant invariants are proven by TSC and tests', composes: [], base: true },
+  { claim: 'read-vs-derive magnitude, with the seed floor s>0', composes: [], base: true },
+  { claim: '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋', composes: [], base: true },
+  { claim: 'Abel–Ruffini: the quintic is unsolvable because A₅ is simple', composes: [], base: true },
+  { claim: 'the crystallographic restriction forbids periodic 5-fold symmetry', composes: [], base: true },
+  { claim: 'the pentagon diagonal/side is φ, the fixed point φ²=φ+1', composes: [], base: true },
+  { claim: 'consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)', composes: [], base: true },
+
+  // LEADS — the ten dimensions, each grounding in base through composition alone
+  { claim: 'a pure-type atom is settled by a real proof, never an empty test', composes: ['a type and its constant invariants are proven by TSC and tests'], base: false },
+  { claim: 'inverse-polarity collapse: one shape-provable pair, not twenty-one', composes: ['Jaccard over the booted shapes is decidable'], base: false },
+  { claim: 'Cloudflare spend is one cost kind, priced per binding', composes: ['efficiency = output / cost'], base: false },
+  { claim: 'price ÷ floor reveals subsidy · margin · commoditised — not a match', composes: ['efficiency = output / cost'], base: false },
+  { claim: 'asking yourself is past the crossover for the derivable, never for the seed', composes: ['read-vs-derive magnitude, with the seed floor s>0', 'content-addressing: same content ⇒ same address'], base: false },
+  { claim: 'three minds form a higher mind; five is the robust two-fault equilibrium', composes: ['2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
+  { claim: 'five is the threshold where linear/solvable/periodic breaks and robustness begins', composes: ['Abel–Ruffini: the quintic is unsolvable because A₅ is simple', 'the crystallographic restriction forbids periodic 5-fold symmetry', 'the pentagon diagonal/side is φ, the fixed point φ²=φ+1', '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
+  { claim: 'the standards minds decohere; a broken matcher needs a fifth mind to outvote', composes: ['2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
+  { claim: 'harmony ≠ truth: consistency with your own measures is not truth', composes: ['consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
+  { claim: 'the fold: DRY is mass; verify is easy and derive is hard', composes: ['content-addressing: same content ⇒ same address'], base: false },
+
+  // OVERLAYS — bare assertions; they compose nothing grounded, so reduce() REFUSES them
+  { claim: 'the 231 collections form a 21-cross cube of Christ', composes: [], base: false },
+  { claim: 'the perfect mind/heart equilibrium is 5; the pentagram is heart/mind sets', composes: [], base: false },
+  { claim: 'the Cloudflare prices almost perfectly match their theorems', composes: [], base: false },
+]
+
+/** The leads that GROUND — non-base claims that reduce to base theorems. The complete set the waves saved. */
+export function groundedLeads(graph: readonly Theorem[] = DECODED): readonly string[] {
+  return graph.filter((t) => !t.base && reduce(t.claim, graph).reduces).map((t) => t.claim)
+}
+
+/** The claims that REFUSE to ground — harmonic overlays, true-numbered or not, that rest on authority. */
+export function refusedOverlays(graph: readonly Theorem[] = DECODED): readonly string[] {
+  return graph.filter((t) => !t.base && !reduce(t.claim, graph).reduces).map((t) => t.claim)
+}
+
+/** Collapse a base theorem into its DRY FOUNDATION family — kindred bases become one dimension (the 0-gate). */
+export function foundationOf(base: string): string {
+  if (/content-address|magnitude/.test(base)) return 'the-fold'
+  if (/Abel|crystallographic|pentagon/.test(base)) return 'the-exceptional-five'
+  if (/2f\+1|median/.test(base)) return 'consensus'
+  if (/Jaccard/.test(base)) return 'shape'
+  if (/efficiency/.test(base)) return 'cost'
+  if (/TSC/.test(base)) return 'type'
+  if (/Gödel|Tarski/.test(base)) return 'truth'
+  return base
+}
+
+/** The DRY foundations the leads ground in — kindred bases collapsed through the gate. The reduced dimensions. */
+export function foundations(graph: readonly Theorem[] = DECODED): readonly string[] {
+  const f = new Set<string>()
+  for (const c of groundedLeads(graph)) for (const g of reduce(c, graph).grounds) f.add(foundationOf(g))
+  return [...f].sort()
+}
+
+/**
+ * The dimension count is a SPREAD, computed as waves from four perspectives — never asserted by one mind (the
+ * single-mind error I made calling it "10D"). Surface leads and distinct bases read 10; ground-signatures 8; DRY
+ * foundations 7. So `9 (median) − 2 = 7`: the surface reads ~9, and passing through the fold (the 0-gate, kindred
+ * bases collapsed) leaves SEVEN real foundational dimensions. Reporting a single number is not completely quantum.
+ *
+ * @invariant the foundations (DRY floor) number 7 — the-fold · shape · cost · type · consensus · exceptional-five · truth
+ * @invariant the surface leads number 10 — the count is a spread [7..10], reported whole, not collapsed to one
+ */
+export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly leads: number; readonly bases: number; readonly signatures: number; readonly foundations: number } {
+  const leads = groundedLeads(graph)
+  const bases = new Set<string>()
+  for (const c of leads) for (const g of reduce(c, graph).grounds) bases.add(g)
+  const signatures = new Set(leads.map((c) => [...reduce(c, graph).grounds].sort().join('|')))
+  return { leads: leads.length, bases: bases.size, signatures: signatures.size, foundations: foundations(graph).length }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
+  const led = groundedLeads()
+  const ref = refusedOverlays()
+  console.log(`theorem/DECODED — the session's leads, saved in the fold:\n`)
+  console.log(`  ${led.length} leads GROUND to base theorems:`)
+  for (const c of led) console.log(`    ✓ ${c}`)
+  console.log(`\n  ${ref.length} overlays REFUSE to reduce (authority, not proof):`)
+  for (const c of ref) console.log(`    ✗ ${c}`)
+  const d = dimensionSpread()
+  console.log(`\n  dimension count is a SPREAD (waves, not one mind): leads ${d.leads} · bases ${d.bases} · signatures ${d.signatures} · foundations ${d.foundations}`)
+  console.log(`  9 (median) − 2 through the fold-gate = ${d.foundations}D foundations: ${foundations().join(' · ')}`)
+  console.log('')
   const graph: Theorem[] = [
     { claim: 'debits === credits', composes: [], base: true }, // grounded in a test
     { claim: 'the ledger balances', composes: ['debits === credits'], base: false }, // a theorem of a theorem

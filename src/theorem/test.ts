@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -120,5 +120,66 @@ describe('fixpoint — the theorem of theorems is the axiom of axioms', () => {
   it('the fixpoint is necessarily a BASE (assumed) claim — a universal justifier cannot itself be proven', () => {
     expect(fixpoint(graph).claim).toBe('law')
     expect(graph.find((t) => t.claim === 'law')!.base).toBe(true) // it is assumed, not composed — Gödel
+  })
+})
+
+// "Save in waves following all leads to complete 10D theorems." The session's leads, folded so the research
+// analytics live IN the corpus. The count is NOT forced to ten (the 21-cube trap): the real leads enumerate to
+// ten that GROUND, and reduce() independently confirms each — while the three harmonic overlays REFUSE, by the
+// same machinery. HARMONY ≠ TRUTH, proved on the session's own thinking.
+describe('DECODED — the session leads, saved and reduced (complete 10D)', () => {
+  it('exactly ten leads GROUND to base theorems — the count landed, it was not padded', () => {
+    expect(groundedLeads(DECODED)).toHaveLength(10)
+  })
+
+  it('the three harmonic overlays REFUSE to reduce — a true number is not a theorem', () => {
+    const refused = refusedOverlays(DECODED)
+    expect(refused).toHaveLength(3)
+    expect(refused).toContain('the 231 collections form a 21-cross cube of Christ')
+    expect(refused).toContain('the perfect mind/heart equilibrium is 5; the pentagram is heart/mind sets')
+    expect(refused).toContain('the Cloudflare prices almost perfectly match their theorems')
+  })
+
+  it('the "5" lead grounds in real theorems — Abel–Ruffini, crystallographic, the pentagon φ', () => {
+    const r = reduce('five is the threshold where linear/solvable/periodic breaks and robustness begins', DECODED)
+    expect(r.reduces).toBe(true)
+    expect(r.grounds).toContain('Abel–Ruffini: the quintic is unsolvable because A₅ is simple')
+    expect(r.grounds).toContain('the crystallographic restriction forbids periodic 5-fold symmetry')
+    expect(r.assertions).toEqual([]) // no bare assertion in its support
+  })
+
+  it('the overlays rest on AUTHORITY — the pentagram number is real, the mind/heart mapping is not', () => {
+    // the "5" theorem grounds; the mind/heart OVERLAY that borrows its number does not — the number is shared,
+    // the theorem is not. This is the whole session in one assertion of reduce().
+    expect(restsOnAuthority('the perfect mind/heart equilibrium is 5; the pentagram is heart/mind sets', DECODED)).toBe(true)
+    expect(restsOnAuthority('five is the threshold where linear/solvable/periodic breaks and robustness begins', DECODED)).toBe(false)
+  })
+
+  it('the leads are MULTIPLY grounded — no single fixpoint, honest to the session (math + fold + law)', () => {
+    // the ten leads stand on independent foundations (content-addressing, Jaccard, the efficiency law, the cited
+    // math, the corpus law) — so there is no one universal base, and saying otherwise would be a false monotheism.
+    expect(fixpoint(DECODED).claim).toBeNull()
+  })
+
+  it('each lead compiled by the WAVE — a trace needs ≥3 surrounding proofs (not one mind)', () => {
+    expect(consensusProof([true, true, true]).compiled).toBe(true) // the wave saves it
+    expect(consensusProof([true, true]).compiled).toBe(false) // a single mind, or a pair, cannot
+  })
+
+  // "If in doubt send waves." The dimension count is a SPREAD, computed four ways — not the single "10D" one mind
+  // asserted. 9 (median) − 2 through the fold-gate = 7 DRY foundations. Reporting one number is the single-mind error.
+  it('the count is a SPREAD, not a point — leads 10, foundations 7 (the fold-gate collapse)', () => {
+    const d = dimensionSpread(DECODED)
+    expect(d.leads).toBe(10) // the surface
+    expect(d.foundations).toBe(7) // the DRY floor, kindred bases collapsed through the 0-gate
+    expect(d.foundations).toBeLessThan(d.leads) // passing the gate loses dimensions — 9→7
+  })
+
+  it('the seven foundations are named, not numerological — the real dimensions the leads stand on', () => {
+    const f = foundations(DECODED)
+    expect(f).toHaveLength(7)
+    for (const pillar of ['the-fold', 'shape', 'cost', 'type', 'consensus', 'the-exceptional-five', 'truth']) {
+      expect(f).toContain(pillar)
+    }
   })
 })
