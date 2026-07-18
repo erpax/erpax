@@ -232,6 +232,37 @@ export const failuresLookExternal = (roots: readonly FailureRoot[], threshold = 
   return multi.length === 0 || multi[0]!.lift < threshold
 }
 
+export interface CostRoot {
+  readonly root: string
+  /** total measured cost (ms) of the atoms this root sits under */
+  readonly costMs: number
+  readonly explains: readonly string[]
+}
+
+/**
+ * SELF-OPTIMISATION AUTOMATES ITSELF: the same collapse, weighted by MEASURED cost — project each
+ * atom's measured ms onto its upstream roots; the root carrying the most cost is the optimisation
+ * target, and one fix there collapses every dependent's bill at once. Proven live: the vitest
+ * shared setup carried 10–30s × every suite; one sentinel collapsed a suite from 30.5s to 0.46s
+ * (66×). Costs are measurements ([[timeout]]'s samples, suite durations) — never estimates.
+ */
+export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): CostRoot[] {
+  const acc = new Map<string, { cost: number; atoms: Set<string> }>()
+  for (const [atom, ms] of costMs) {
+    const space = new Set(upstreamOf(mesh, atom))
+    space.add(atom)
+    for (const root of space) {
+      const a = acc.get(root) ?? { cost: 0, atoms: new Set<string>() }
+      a.cost += ms
+      a.atoms.add(atom)
+      acc.set(root, a)
+    }
+  }
+  return [...acc.entries()]
+    .map(([root, a]) => ({ root, costMs: Math.round(a.cost), explains: [...a.atoms].sort() }))
+    .sort((a, b) => b.costMs - a.costMs || a.root.localeCompare(b.root))
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const mesh = meshOf()
   const shape = meshShape(mesh)

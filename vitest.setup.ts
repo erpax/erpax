@@ -12,6 +12,8 @@ import '@testing-library/jest-dom/vitest'
 import { cleanup } from '@testing-library/react'
 import { afterEach } from 'vitest'
 import { spawnSync } from 'node:child_process'
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
 
 afterEach(() => {
   cleanup()
@@ -38,9 +40,32 @@ if (!process.env.PAYLOAD_ENABLE_GRAPHQL) {
 // D1 has tables. The migrate CLI sets PAYLOAD_MIGRATING before connect, so Drizzle does
 // not run the interactive dev push. Skip with PAYLOAD_TEST_SKIP_MIGRATE=1.
 //
-// NOTE: For local development, migrations often fail due to D1 locks or existing schema.
-// Use PAYLOAD_TEST_SKIP_MIGRATE=1 after initial setup for faster test runs.
-if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE) {
+// THE SHARED COST ROOT, collapsed: every test process paid this spawn (10–30s × every suite —
+// the corpus's single largest test bill) for a schema that only changes when src/migrations
+// changes. A sentinel keyed on the migrations' own newest mtime lets the FIRST process pay and
+// every sibling skip; touching a migration invalidates the key and the next run re-pays once.
+const migrateSentinel = join(process.cwd(), 'node_modules', '.cache', 'erpax', 'migrate.sentinel')
+const migrationsKey = (): string => {
+  try {
+    const dir = join(process.cwd(), 'src', 'migrations')
+    let newest = 0
+    for (const f of readdirSync(dir)) {
+      const t = statSync(join(dir, f)).mtimeMs
+      if (t > newest) newest = t
+    }
+    return String(newest)
+  } catch {
+    return 'no-migrations'
+  }
+}
+const migrateSettled = (): boolean => {
+  try {
+    return existsSync(migrateSentinel) && readFileSync(migrateSentinel, 'utf8') === migrationsKey()
+  } catch {
+    return false
+  }
+}
+if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE && !migrateSettled()) {
   const result = spawnSync('pnpm', ['exec', 'payload', 'migrate'], {
     env: process.env,
     encoding: 'utf8',
@@ -68,5 +93,13 @@ if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE) {
       )
       // Don't exit - let tests try to run
     }
+  }
+  // schema settled (applied, already-present, or lock-skipped — every branch above continues):
+  // stamp the sentinel so sibling processes skip the spawn entirely
+  try {
+    mkdirSync(dirname(migrateSentinel), { recursive: true })
+    writeFileSync(migrateSentinel, migrationsKey())
+  } catch {
+    /* a lost stamp only means the next process re-pays once */
   }
 }

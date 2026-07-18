@@ -2,7 +2,7 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
-import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots } from '@/mesh'
+import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots } from '@/mesh'
 
 // Hermetic fixture corpus: three atoms in a chain a→b→c, one standard banner, one
 // import-shaped STRING that must never become an edge (the phantom class every
@@ -73,5 +73,15 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
     const c = roots.find((r) => r.root === 'c')!
     expect(c.explains).toEqual(['a', 'b'])
     expect(c.lift).toBeLessThan(1)
+  })
+
+  it('cost collapses onto the shared root — the optimisation target is computed, not guessed', () => {
+    // a costs 30s, b costs 20s: c sits under BOTH (50s total) — the deepest shared root carries
+    // the whole bill; fixing c collapses both. Self-optimisation reads the ranking, not taste.
+    const roots = costRoots(mesh, new Map([['a', 30_000], ['b', 20_000]]))
+    const c = roots.find((r) => r.root === 'c')!
+    expect(c.costMs).toBe(50_000)
+    expect(c.explains).toEqual(['a', 'b'])
+    expect(roots[0]!.costMs).toBe(50_000)
   })
 })
