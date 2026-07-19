@@ -111,5 +111,16 @@ export const x = measureOf(4)
       expect(linearGaps(gapCwd).gaps.filter((g) => g.atomPath === 'hub/gap').length).toBeLessThan(before)
       expect(existsSync(join(gapCwd, 'src/hub/gap/test.ts'))).toBe(true)
     })
+
+    it('REFUSES to overwrite a real barrel — a re-export from a live sibling is matter, not an orphan (the pagination bug)', async () => {
+      mkdirSync(join(gapCwd, 'src/pager'), { recursive: true })
+      // the exact shape that was destroyed: index re-exports a real sibling component
+      writeFileSync(join(gapCwd, 'src/pager/index.ts'), "export { Pager } from './index.tsx'\n")
+      writeFileSync(join(gapCwd, 'src/pager/index.tsx'), 'export const Pager = () => null\n')
+      await sealLinearGaps(gapCwd, 20)
+      // the barrel is UNTOUCHED — its public face survives
+      expect(readFileSync(join(gapCwd, 'src/pager/index.ts'), 'utf8')).toContain("export { Pager } from './index.tsx'")
+      expect(readFileSync(join(gapCwd, 'src/pager/index.ts'), 'utf8')).not.toContain('spreadOf')
+    })
   })
 })

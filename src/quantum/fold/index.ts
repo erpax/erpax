@@ -790,7 +790,17 @@ export async function sealLinearGaps(
       }
       case 'reexport-pivot': {
         const ip = join(cwd, GAP_SRC, gap.atomPath, 'index.ts')
-        if (existsSync(ip) && isOrphanReexportOnly(readFileSync(ip, 'utf8'))) {
+        // the scalpel law: never replace matter that EXISTS. A re-export `from './x'` whose
+        // target is a real sibling file (index.tsx, a component, a submodule) is a live barrel,
+        // not an orphan — overwriting it deletes the atom's public face. It overwrote
+        // pagination's `export { Pagination } from './index.tsx'` (two live consumers) exactly here.
+        const body = existsSync(ip) ? readFileSync(ip, 'utf8') : ''
+        const reexportTargetsRealSibling = [...body.matchAll(/from\s*['"]\.\/([\w.-]+)['"]/g)].some((m) => {
+          const t = m[1]!
+          const dir = join(cwd, GAP_SRC, gap.atomPath)
+          return ['', '.ts', '.tsx', '.mts', '.js'].some((ext) => existsSync(join(dir, t + ext)))
+        })
+        if (existsSync(ip) && !reexportTargetsRealSibling && isOrphanReexportOnly(body)) {
           writeFileSync(ip, stubIndexTs(gap.atomPath))
           const tp = join(cwd, GAP_SRC, gap.atomPath, 'test.ts')
           if (!existsSync(tp)) writeFileSync(tp, stubTestTs(gap.atomPath))
