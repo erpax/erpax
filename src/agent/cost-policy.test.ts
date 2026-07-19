@@ -12,7 +12,10 @@ describe('agentCostPolicy — derive-path vs manual-forge', () => {
   })
 
   it('promptOnly when manual forge is impossible', () => {
-    const p = agentCostPolicy({ corpusCoverage: 0.999, nodes: 2200 })
+    // 0.9999 is the impossible boundary with the CORRECTED constants (digest 122 not 106,
+    // gate-checks 7 not 8 — the fixpoint corrections this session); at 0.999 the forge is now
+    // finite (9.15× verify), which is more accurate, so the impossible case needs one more nine
+    const p = agentCostPolicy({ corpusCoverage: 0.9999, nodes: 2200 })
     expect(p.promptOnly).toBe(true)
     expect(p.verdict.viablePath).toBe('prompt-erpax')
   })

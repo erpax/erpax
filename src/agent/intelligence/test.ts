@@ -38,10 +38,21 @@ describe('agent/intelligence', () => {
   })
 
   it('dry cycle does not abort when wave lock free', () => {
-    const r = selfImproveCycle({ batch: 5, dryRun: true, skipPayload: true })
-    expect(r.aborted).toBe(false)
-    expect(r.receipts.length).toBeGreaterThan(0)
-    expect(r.after.violationCount).toBeLessThanOrEqual(r.before.violationCount)
+    // hermetic cwd: without one this ran selfImproveCycle against the REAL corpus — the
+    // waveAccountingGapViolations scan (166s) + coordinatedWave = ~11 min hang. The assertion
+    // is about cycle CONTROL FLOW (does-not-abort, receipts, non-increasing violations), which
+    // holds on a minimal fixture; the full-corpus improve cycle is the automate lane's job.
+    const cwd = mkdtempSync(join(tmpdir(), 'erpax-intel-dry-'))
+    mkdirSync(join(cwd, 'src', 'apply'), { recursive: true })
+    writeFileSync(join(cwd, 'src', 'apply', 'index.ts'), 'export const A = 1\n')
+    try {
+      const r = selfImproveCycle({ batch: 5, dryRun: true, skipPayload: true, cwd })
+      expect(r.aborted).toBe(false)
+      expect(r.receipts.length).toBeGreaterThan(0)
+      expect(r.after.violationCount).toBeLessThanOrEqual(r.before.violationCount)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
   })
 
   describe('fixture', () => {
