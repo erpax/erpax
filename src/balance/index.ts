@@ -38,7 +38,7 @@ export const NON_PLURAL: ReadonlySet<string> = new Set([
   // Latin/Greek -is / -us / -as / -os singulars
   'analysis', 'crisis', 'axis', 'basis', 'diagnosis', 'prognosis', 'thesis', 'synopsis',
   'genesis', 'oasis', 'ellipsis', 'hypothesis', 'emphasis', 'parenthesis', 'metamorphosis',
-  'symbiosis', 'mitosis', 'osmosis', 'prophylaxis', 'symphysis',
+  'symbiosis', 'mitosis', 'osmosis', 'prophylaxis', 'symphysis', 'catharsis',
   'status', 'census', 'consensus', 'corpus', 'genus', 'virus', 'focus', 'nucleus',
   'apparatus', 'surplus', 'syllabus', 'stimulus', 'radius', 'bonus', 'campus', 'abacus',
   'atlas', 'canvas', 'bias', 'gas', 'ethos', 'chaos', 'pathos', 'cosmos', 'lens', 'bus',

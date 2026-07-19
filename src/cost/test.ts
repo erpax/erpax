@@ -11,6 +11,7 @@ import {
   promptOnlyOptionVerdict,
   MANUAL_IMPOSSIBLE_RATIO,
   ERPAX_DIGEST_BITS,
+  CONFIRM_GATE_CHECKS,
 } from '@/cost'
 import { RODIN_FLOW_RATIO } from '@/rodin'
 import { isBalanced, net } from '@/entry'
@@ -105,7 +106,9 @@ describe('cost — manual development price (forge ≫ verify)', () => {
   it('society rodin split — computed verify uses 2/3 flow discount', () => {
     const computed = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: false })
     const manual = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: true })
-    expect(computed.verifyCost).toBeCloseTo((Math.log2(100) + 8) * RODIN_FLOW_RATIO, 10)
+    // pin the SYMBOL, not the literal: the hardcoded `+ 8` was the stale mirror of a gate count
+    // that was never 8 (the fixpoint commit corrected it to CONFIRM_GATE_CHECKS = 7)
+    expect(computed.verifyCost).toBeCloseTo((Math.log2(100) + CONFIRM_GATE_CHECKS) * RODIN_FLOW_RATIO, 10)
     expect(manual.forgeCost).toBeGreaterThan(secondPreimageLog2(ERPAX_DIGEST_BITS) / 3)
   })
 

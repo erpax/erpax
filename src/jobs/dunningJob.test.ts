@@ -48,12 +48,17 @@ const createMockPayload = (overrides: Partial<MockPayload> = {}): MockPayload =>
   ...overrides,
 })
 
+// The current schema (the YYYY promotion the job reads): dates.* is canonical, the
+// subscription FK lives under recurring.subscription — the old flat mock made every
+// invoice short-circuit at "no subscription" and the four tests asserted on 0 calls.
 const createMockInvoice = (overrides: Record<string, unknown> = {}) => ({
   id: 'invoice-123',
   status: 'open',
-  dueAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000), // 5 days ago
-  pastDueSinceAt: null as Date | null,
-  subscription: 'subscription-123',
+  dates: {
+    dueAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(), // 5 days ago
+    pastDueSinceAt: null as string | null,
+  },
+  recurring: { subscription: 'subscription-123' },
   ...overrides,
 })
 
@@ -83,14 +88,16 @@ describe('dunningJob', () => {
 
       await processDunningCycle(p(mockPayload))
 
-      // Should update invoice with pastDueSinceAt
+      // Should stamp the canonical dates group with ISO strings (the schema the job writes)
       expect(mockPayload.update).toHaveBeenCalledWith({
         collection: 'invoices',
         id: 'invoice-123',
         data: expect.objectContaining({
-          pastDueSinceAt: expect.any(Date),
-          gracePeriodEndsAt: expect.any(Date),
-          suspensionScheduledFor: expect.any(Date),
+          dates: expect.objectContaining({
+            pastDueSinceAt: expect.any(String),
+            gracePeriodEndsAt: expect.any(String),
+            suspensionScheduledFor: expect.any(String),
+          }),
         }),
       })
 
@@ -105,9 +112,9 @@ describe('dunningJob', () => {
     })
 
     it('should transition to grace_period after 3 days', async () => {
-      const pastDueSinceAt = new Date(Date.now() - 3 * 24 * 60 * 60 * 1000)
+      const pastDueSinceAt = new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString()
       const invoice = createMockInvoice({
-        pastDueSinceAt,
+        dates: { dueAt: pastDueSinceAt, pastDueSinceAt },
       })
       const subscription = createMockSubscription({ status: 'past_due' })
 
@@ -131,9 +138,9 @@ describe('dunningJob', () => {
     })
 
     it('should transition to suspended after 7 days', async () => {
-      const pastDueSinceAt = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
+      const pastDueSinceAt = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
       const invoice = createMockInvoice({
-        pastDueSinceAt,
+        dates: { dueAt: pastDueSinceAt, pastDueSinceAt },
       })
       const subscription = createMockSubscription({ status: 'grace_period' })
 

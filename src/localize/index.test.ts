@@ -91,13 +91,16 @@ describe('localize: the fusion — forge↑ and proof O(N)', () => {
     expect(f.tamper.note).toMatch(/100% coverage/)
   })
 
-  it('fail-closed: with NO coverage supplied the fusion degrades to the finite 2^106 floor — never an assumed ∞', () => {
+  it('fail-closed: with NO coverage supplied the fusion degrades to the finite weakest-link floor — never an assumed ∞', () => {
     // ground-don't-assert: the optimistic `coverage ?? 1` default is gone, so a
-    // MISSING coverage must report the conservative digest floor, not unbounded.
+    // MISSING coverage must report the conservative floor, not unbounded.
+    // The floor is the WEAKEST LINK: the digest was corrected 106→122 non-constant bits
+    // (the fixpoint commit — 106 was a lie nothing contradicted), so the binding
+    // constraint is now the RSA-2048 TSA anchor strength ≈ 112 (crackVerdict's default).
     const f = localizationFusion({ elements: 1000 })
     expect(Number.isFinite(f.forgeBits)).toBe(true)
     expect(f.forgeBits).not.toBe(Number.POSITIVE_INFINITY)
-    expect(f.forgeBits).toBe(106) // the bare 2^106 second-preimage floor (crackVerdict, coverage=undefined)
+    expect(f.forgeBits).toBe(112) // min(digest 122, anchor 112) — the anchor binds
     expect(f.tamper.note).not.toMatch(/100% coverage/)
   })
 
