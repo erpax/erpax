@@ -263,7 +263,56 @@ export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): Cost
     .sort((a, b) => b.costMs - a.costMs || a.root.localeCompare(b.root))
 }
 
+// ── the strategy as a TOOL: vitest report → clustered roots, one call ────────
+
+export interface RedCluster {
+  readonly root: string
+  readonly explains: readonly string[]
+  readonly lift: number
+  readonly external: boolean
+}
+
+/** The failing suite FILES in a vitest JSON report (`--reporter=json`). */
+export function failedFilesFromVitestJson(report: unknown): string[] {
+  const r = report as { testResults?: { name?: string; status?: string }[] } | null
+  if (!r?.testResults) return []
+  const out: string[] = []
+  for (const t of r.testResults) {
+    if (t.status === 'failed' && typeof t.name === 'string') out.push(t.name)
+  }
+  return out
+}
+
+/**
+ * LEAD 23 AS ONE CALL: a vitest JSON report → the shared-cause clusters to fix, ranked by lift,
+ * with the external verdict attached (when nothing discriminates, the cause is the harness, not
+ * the tree). This is the manual glue of every red-clustering this session, made a tool — the
+ * strategy improves itself by becoming executable.
+ */
+export function clusterVitestReport(report: unknown, cwd: string = process.cwd()): {
+  readonly clusters: readonly RedCluster[]
+  readonly external: boolean
+  readonly failedAtoms: readonly string[]
+} {
+  const files = failedFilesFromVitestJson(report)
+  const atoms = [...new Set(files.map((f) => atomOfFile(f.startsWith('/') ? relative(cwd, f) : f, cwd)))]
+  if (atoms.length === 0) return { clusters: [], external: false, failedAtoms: [] }
+  const mesh = meshOf(cwd)
+  const roots = failureRoots(mesh, atoms)
+  const external = failuresLookExternal(roots)
+  const clusters = roots.map((r) => ({ root: r.root, explains: r.explains, lift: r.lift, external }))
+  return { clusters, external, failedAtoms: atoms }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
+  const jsonArg = process.argv.indexOf('--cluster')
+  if (jsonArg >= 0 && process.argv[jsonArg + 1]) {
+    const report: unknown = JSON.parse(readFileSync(process.argv[jsonArg + 1]!, 'utf8'))
+    const { clusters, external, failedAtoms } = clusterVitestReport(report)
+    console.log(`mesh cluster — ${failedAtoms.length} failed atom(s)${external ? ' · EXTERNAL: no root discriminates (suspect the harness, not the tree)' : ''}`)
+    for (const c of clusters.slice(0, 12)) console.log(`  lift ${c.lift.toFixed(2)} · root ${c.root} explains ${c.explains.length}: ${c.explains.slice(0, 6).join(', ')}`)
+    process.exit(0)
+  }
   const mesh = meshOf()
   const shape = meshShape(mesh)
   const tags = new Map<string, number>()
