@@ -21,6 +21,7 @@ import { bareAsks } from '@/rules/ask'
 import { multiSegmentFileViolations, strayTsViolations } from '@/rules/tightened-scans'
 import { nonTsLanguageViolations } from '@/law/folder/scan'
 import { nonIndexImports } from '@/tamper/import'
+import { openIntents } from '@/think'
 
 export type AuditTrend = 'regression' | 'stuck' | 'improving' | 'new'
 
@@ -81,6 +82,11 @@ export function measureAuditDimensions(cwd: string = process.cwd()): ReadonlyMap
     ['stray-ts', strayTsViolations(cwd).length],
     ['multi-segment', multiSegmentFileViolations(cwd).length],
     ['ts-only', nonTsLanguageViolations(cwd).length],
+    // THE COST OF THINKING, measured: every open intent is a thought the next session
+    // re-derives from nothing until someone resolves it — thinking debt, trended like
+    // any other axis. Resolving intents through the think store (reuse, never re-derive)
+    // is the cheapest computation the corpus owns; letting them linger is the dearest.
+    ['intents', openIntents(cwd).length],
   ])
 }
 
