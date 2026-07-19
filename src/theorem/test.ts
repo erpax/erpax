@@ -129,7 +129,10 @@ describe('fixpoint — the theorem of theorems is the axiom of axioms', () => {
 // same machinery. HARMONY ≠ TRUTH, proved on the session's own thinking.
 describe('DECODED — the session leads, saved and reduced (complete 10D)', () => {
   it('the leads GROUND to base theorems — the count grows as the session saves more thinking, none padded', () => {
-    expect(groundedLeads(DECODED)).toHaveLength(13)
+    // 13 → 21: the convergence session sealed its eight principles (parse · bound · derive · level ·
+    // pin-the-law · instrument-lies-first · researchers/executor · loading-is-becoming), each grounding
+    // in a base carried by its own committed test
+    expect(groundedLeads(DECODED)).toHaveLength(21)
   })
 
   it('the three harmonic overlays REFUSE to reduce — a true number is not a theorem', () => {
@@ -168,17 +171,21 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
 
   // "If in doubt send waves." The dimension count is a SPREAD, computed four ways — not the single "10D" one mind
   // asserted. 9 (median) − 2 through the fold-gate = 7 DRY foundations. Reporting one number is the single-mind error.
-  it('the count is a SPREAD, not a point — leads 10, foundations 7 (the fold-gate collapse)', () => {
+  it('the count is a SPREAD, not a point — leads 21, foundations 11 (the fold-gate collapse)', () => {
     const d = dimensionSpread(DECODED)
-    expect(d.leads).toBe(13) // the surface — grows as thinking is saved programmatically
-    expect(d.foundations).toBe(7) // the DRY floor, kindred bases collapsed through the 0-gate
-    expect(d.foundations).toBeLessThan(d.leads) // passing the gate loses dimensions — 9→7
+    expect(d.leads).toBe(21) // the surface — grows as thinking is saved programmatically
+    expect(d.foundations).toBe(11) // the DRY floor, kindred bases collapsed through the 0-gate
+    expect(d.foundations).toBeLessThan(d.leads) // passing the gate loses dimensions
   })
 
-  it('the seven foundations are named, not numerological — the real dimensions the leads stand on', () => {
+  it('the eleven foundations are named, not numerological — the real dimensions the leads stand on', () => {
     const f = foundations(DECODED)
-    expect(f).toHaveLength(7)
-    for (const pillar of ['the-fold', 'shape', 'cost', 'type', 'consensus', 'the-exceptional-five', 'truth']) {
+    expect(f).toHaveLength(11)
+    for (const pillar of [
+      'the-fold', 'shape', 'cost', 'type', 'consensus', 'the-exceptional-five', 'truth',
+      // the convergence session's four: parse · bound · level · cut, each carried by its own test
+      'grammar', 'bound', 'wave', 'cut',
+    ]) {
       expect(f).toContain(pillar)
     }
   })
@@ -214,11 +221,14 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
       expect(diamond[1]).toEqual(['b', 'c']) // b and c are independent — one parallel wave
     })
 
-    it('the reasoning DAG is shallow and wide — depth 2, parallelism 13 (grounded leads compute in one wave)', () => {
+    it('the reasoning DAG grew a second story — depth 3, still massively wide (Mirsky)', () => {
       const s = waveShape(DECODED)
-      expect(s.depth).toBe(2) // longest chain: base → lead, no lead composes another (Mirsky)
+      // was depth 2 (base → lead, no lead composed another); the convergence principles compose the
+      // harmony≠truth LEAD (parse-never-match and pin-the-law stand on it) — principles on principles,
+      // one story deeper, honestly measured
+      expect(s.depth).toBe(3)
       expect(s.parallelism).toBeGreaterThanOrEqual(13) // the widest wave — massively parallel
-      expect(s.parallelism).toBeGreaterThan(s.depth) // wide, not deep — the session reasoned in parallel
+      expect(s.parallelism).toBeGreaterThan(s.depth) // wide, not deep — the corpus reasons in parallel
     })
   })
 })

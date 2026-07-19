@@ -206,6 +206,22 @@ export const DECODED: readonly Theorem[] = [
   { claim: 'coordinated DRY tools make gravity emerge — DRY is mass, multi-tool agreement is the field', composes: ['content-addressing: same content ⇒ same address', '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
   { claim: 'the compiler is the final mind for deletion — a lexical scan is a guess', composes: ['consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
 
+  // BASE — the convergence session's instruments, each grounded by its own committed test
+  { claim: 'the grammar decides an edge — an import-shaped string or comment is data (syntax/test pins the phantom class)', composes: [], base: true },
+  { claim: 'a spawn is bounded by the rung of its own measured history (timeout/test pins the ladder and the sleep fence)', composes: [], base: true },
+  { claim: 'Mirsky: antichain levels are computable for any DAG — wave count is the longest chain (theorem + mesh + train tests)', composes: [], base: true },
+  { claim: 'exactly-once match is decidable per file — zero and two-plus refuse (scalpel/test pins the refusals)', composes: [], base: true },
+
+  // LEADS — the sequence's principles, each composing down to base through the session's own proofs
+  { claim: 'parse, never match: a pattern over a language lies in the unchecked direction', composes: ['the grammar decides an edge — an import-shaped string or comment is data (syntax/test pins the phantom class)', 'harmony ≠ truth: consistency with your own measures is not truth'], base: false },
+  { claim: 'bound, never hang: past the top rung the command is the defect — split it, never raise the ceiling', composes: ['a spawn is bounded by the rung of its own measured history (timeout/test pins the ladder and the sleep fence)', 'efficiency = output / cost'], base: false },
+  { claim: 'derive, never ask: what the clock, tenant or law determines the system computes and the human CONFIRMS — intent is the s>0 floor', composes: ['read-vs-derive magnitude, with the seed floor s>0'], base: false },
+  { claim: 'level, never list: failures and costs collapse onto shared roots — one cut, N greens', composes: ['Mirsky: antichain levels are computable for any DAG — wave count is the longest chain (theorem + mesh + train tests)', 'content-addressing: same content ⇒ same address'], base: false },
+  { claim: 'pin the law, never the accident: assert the axis, not the digit the matrix happened to assign', composes: ['harmony ≠ truth: consistency with your own measures is not truth', 'a type and its constant invariants are proven by TSC and tests'], base: false },
+  { claim: 'the instrument lies first: distrust the measurement before the tree — a gate is certified only by the next gate', composes: ['consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
+  { claim: 'many read-only researchers, one executor: fabrication refused structurally, exactly-once or not at all', composes: ['exactly-once match is decidable per file — zero and two-plus refuse (scalpel/test pins the refusals)', '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
+  { claim: 'loading is becoming: capacity is certified at the load, as the auditor at the signature', composes: ['Mirsky: antichain levels are computable for any DAG — wave count is the longest chain (theorem + mesh + train tests)', 'consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
+
   // OVERLAYS — bare assertions; they compose nothing grounded, so reduce() REFUSES them
   { claim: 'the 231 collections form a 21-cross cube of Christ', composes: [], base: false },
   { claim: 'the perfect mind/heart equilibrium is 5; the pentagram is heart/mind sets', composes: [], base: false },
@@ -231,6 +247,10 @@ export function foundationOf(base: string): string {
   if (/efficiency/.test(base)) return 'cost'
   if (/TSC/.test(base)) return 'type'
   if (/Gödel|Tarski/.test(base)) return 'truth'
+  if (/grammar decides/.test(base)) return 'grammar'
+  if (/rung of its own measured history/.test(base)) return 'bound'
+  if (/Mirsky/.test(base)) return 'wave'
+  if (/exactly-once/.test(base)) return 'cut'
   return base
 }
 
@@ -247,8 +267,8 @@ export function foundations(graph: readonly Theorem[] = DECODED): readonly strin
  * foundations 7. So `9 (median) − 2 = 7`: the surface reads ~9, and passing through the fold (the 0-gate, kindred
  * bases collapsed) leaves SEVEN real foundational dimensions. Reporting a single number is not completely quantum.
  *
- * @invariant the foundations (DRY floor) number 7 — the-fold · shape · cost · type · consensus · exceptional-five · truth
- * @invariant the surface leads grow as thinking is saved (13 now) — the count is a spread [7..leads], reported whole
+ * @invariant the foundations (DRY floor) number 11 — the-fold · shape · cost · type · consensus · exceptional-five · truth · grammar · bound · wave · cut (the convergence session added four)
+ * @invariant the surface leads grow as thinking is saved (21 now) — the count is a spread [11..leads], reported whole
  */
 export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly leads: number; readonly bases: number; readonly signatures: number; readonly foundations: number } {
   const leads = groundedLeads(graph)
