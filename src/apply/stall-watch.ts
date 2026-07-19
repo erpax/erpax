@@ -1,5 +1,12 @@
 /**
  * apply/stall-watch — detect long-running erpax processes and recommend action.
+ *
+ * AGE IS NOT DEATH (measured 2026-07-19): the age-only classifier called a LIVE vitest
+ * fork worker (100% CPU, mid-gate) "dead" and its parent a "zombie duplicate" — the kill
+ * it recommended poisoned a push verdict. Three truths joined the classifier:
+ *   · a process actively burning CPU is SLOW, never dead — %CPU reads from the same ps
+ *   · a pid whose ancestor chain holds a live `git push`/pre-push is THE GATE — untouchable
+ *   · fork children of a live vitest are its limbs, not duplicates
  */
 import { execSync } from 'node:child_process'
 
@@ -78,14 +85,26 @@ const classifyKind = (command: string): KindRule | null => {
     : null
 }
 
-const statusFor = (ageSec: number, rule: KindRule, duplicate: boolean): StallStatus => {
+/**
+ * AGE IS NOT DEATH: activity and ancestry outrank the clock. Exported pure so the
+ * three truths are regression-locked without a live process table.
+ */
+export const statusFor = (
+  ageSec: number,
+  rule: KindRule,
+  duplicate: boolean,
+  opts: { readonly cpuPct?: number; readonly gateAncestor?: boolean } = {},
+): StallStatus => {
+  if (opts.gateAncestor) return 'slow' // the live gate's tree is never a kill candidate
+  if ((opts.cpuPct ?? 0) >= 5) return 'slow' // actively computing — long, not dead
   if (duplicate) return 'zombie'
   if (ageSec >= rule.deadAfterSec) return 'dead'
   if (ageSec >= rule.slowAfterSec) return 'slow'
   return 'slow'
 }
 
-const recommend = (row: Omit<StalledProcessRow, 'recommendation'>): string => {
+const recommend = (row: Omit<StalledProcessRow, 'recommendation'>, gateAncestor: boolean): string => {
+  if (gateAncestor) return 'THE GATE — a live git push/pre-push tree; never kill'
   if (row.status === 'zombie') return 'kill duplicate (keep newest pid for this kind)'
   if (row.status === 'dead') {
     if (row.kind === 'readme') return 'SIGTERM — likely OOM thrash; run one `pnpm erpax readme check`'
@@ -95,11 +114,29 @@ const recommend = (row: Omit<StalledProcessRow, 'recommendation'>): string => {
   return 'monitor — legitimate long job if terminal shows waves/phases'
 }
 
+/** pids whose ancestor chain holds a live `git push` or pre-push hook — the gate's tree. */
+export function gateAncestryPids(psLines: readonly { pid: number; ppid: number; command: string }[]): ReadonlySet<number> {
+  const gateRoots = new Set(psLines.filter((p) => /git push|pre-push/.test(p.command)).map((p) => p.pid))
+  const byPid = new Map(psLines.map((p) => [p.pid, p]))
+  const inGate = new Set<number>()
+  for (const p of psLines) {
+    let cur: { pid: number; ppid: number } | undefined = p
+    for (let hops = 0; cur && hops < 32; hops++) {
+      if (gateRoots.has(cur.pid)) {
+        inGate.add(p.pid)
+        break
+      }
+      cur = byPid.get(cur.ppid)
+    }
+  }
+  return inGate
+}
+
 /** List erpax-related processes with stall classification (conservative kill hints). */
 export function detectStalledProcesses(): StalledProcessRow[] {
   let raw = ''
   try {
-    raw = execSync('ps -eo pid=,etime=,command=', {
+    raw = execSync('ps -eo pid=,ppid=,pcpu=,etime=,command=', {
       encoding: 'utf8',
       maxBuffer: 8 * 1024 * 1024,
     })
@@ -107,18 +144,21 @@ export function detectStalledProcesses(): StalledProcessRow[] {
     return []
   }
 
-  const candidates: Omit<StalledProcessRow, 'status' | 'recommendation'>[] = []
+  const table: { pid: number; ppid: number; cpuPct: number; etime: string; command: string }[] = []
   for (const line of raw.split('\n')) {
     const trimmed = line.trim()
     if (!trimmed) continue
-    const m = trimmed.match(/^(\d+)\s+(\S+)\s+(.*)$/)
+    const m = trimmed.match(/^(\d+)\s+(\d+)\s+(\d+[.,]?\d*)\s+(\S+)\s+(.*)$/)
     if (!m) continue
-    const pid = Number(m[1])
-    const command = m[3] ?? ''
-    const rule = classifyKind(command)
+    table.push({ pid: Number(m[1]), ppid: Number(m[2]), cpuPct: Number(String(m[3]).replace(',', '.')), etime: m[4]!, command: m[5] ?? '' })
+  }
+  const inGate = gateAncestryPids(table)
+
+  const candidates: (Omit<StalledProcessRow, 'status' | 'recommendation'> & { cpuPct: number; gate: boolean })[] = []
+  for (const p of table) {
+    const rule = classifyKind(p.command)
     if (!rule) continue
-    const ageSeconds = parsePsEtime(m[2] ?? '')
-    candidates.push({ pid, command, ageSeconds, kind: rule.kind })
+    candidates.push({ pid: p.pid, command: p.command, ageSeconds: parsePsEtime(p.etime), kind: rule.kind, cpuPct: p.cpuPct, gate: inGate.has(p.pid) })
   }
 
   const byKind = new Map<StallKind, number>()
@@ -136,9 +176,9 @@ export function detectStalledProcesses(): StalledProcessRow[] {
     .map((c) => {
       const rule = KIND_RULES.find((r) => r.kind === c.kind) ?? KIND_RULES[0]!
       const dup = (byKind.get(c.kind) ?? 0) > 1 && newestByKind.get(c.kind) !== c.pid
-      const status = statusFor(c.ageSeconds, rule, dup)
-      const base = { ...c, status }
-      return { ...base, recommendation: recommend(base) }
+      const status = statusFor(c.ageSeconds, rule, dup, { cpuPct: c.cpuPct, gateAncestor: c.gate })
+      const base = { pid: c.pid, command: c.command, ageSeconds: c.ageSeconds, kind: c.kind, status }
+      return { ...base, recommendation: recommend(base, c.gate) }
     })
     .sort((a, b) => b.ageSeconds - a.ageSeconds)
 }
