@@ -132,7 +132,7 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
     // 13 → 21: the convergence session sealed its eight principles (parse · bound · derive · level ·
     // pin-the-law · instrument-lies-first · researchers/executor · loading-is-becoming), each grounding
     // in a base carried by its own committed test
-    expect(groundedLeads(DECODED)).toHaveLength(21)
+    expect(groundedLeads(DECODED)).toHaveLength(22)
   })
 
   it('the three harmonic overlays REFUSE to reduce — a true number is not a theorem', () => {
@@ -171,9 +171,9 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
 
   // "If in doubt send waves." The dimension count is a SPREAD, computed four ways — not the single "10D" one mind
   // asserted. 9 (median) − 2 through the fold-gate = 7 DRY foundations. Reporting one number is the single-mind error.
-  it('the count is a SPREAD, not a point — leads 21, foundations 11 (the fold-gate collapse)', () => {
+  it('the count is a SPREAD, not a point — leads 22, foundations 11 (the fold-gate collapse)', () => {
     const d = dimensionSpread(DECODED)
-    expect(d.leads).toBe(21) // the surface — grows as thinking is saved programmatically
+    expect(d.leads).toBe(22) // the surface — grows as thinking is saved programmatically
     expect(d.foundations).toBe(11) // the DRY floor, kindred bases collapsed through the 0-gate
     expect(d.foundations).toBeLessThan(d.leads) // passing the gate loses dimensions
   })

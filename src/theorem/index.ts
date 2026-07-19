@@ -221,6 +221,7 @@ export const DECODED: readonly Theorem[] = [
   { claim: 'the instrument lies first: distrust the measurement before the tree — a gate is certified only by the next gate', composes: ['consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
   { claim: 'many read-only researchers, one executor: fabrication refused structurally, exactly-once or not at all', composes: ['exactly-once match is decidable per file — zero and two-plus refuse (scalpel/test pins the refusals)', '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'], base: false },
   { claim: 'loading is becoming: capacity is certified at the load, as the auditor at the signature', composes: ['Mirsky: antichain levels are computable for any DAG — wave count is the longest chain (theorem + mesh + train tests)', 'consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'], base: false },
+  { claim: 'magnitude comes with precision in clusters: scale is exact cuts in leveled batches — never one sweep, never one-at-a-time', composes: ['exactly-once match is decidable per file — zero and two-plus refuse (scalpel/test pins the refusals)', 'Mirsky: antichain levels are computable for any DAG — wave count is the longest chain (theorem + mesh + train tests)'], base: false },
 
   // OVERLAYS — bare assertions; they compose nothing grounded, so reduce() REFUSES them
   { claim: 'the 231 collections form a 21-cross cube of Christ', composes: [], base: false },
@@ -268,7 +269,7 @@ export function foundations(graph: readonly Theorem[] = DECODED): readonly strin
  * bases collapsed) leaves SEVEN real foundational dimensions. Reporting a single number is not completely quantum.
  *
  * @invariant the foundations (DRY floor) number 11 — the-fold · shape · cost · type · consensus · exceptional-five · truth · grammar · bound · wave · cut (the convergence session added four)
- * @invariant the surface leads grow as thinking is saved (21 now) — the count is a spread [11..leads], reported whole
+ * @invariant the surface leads grow as thinking is saved (22 now) — the count is a spread [11..leads], reported whole
  */
 export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly leads: number; readonly bases: number; readonly signatures: number; readonly foundations: number } {
   const leads = groundedLeads(graph)
