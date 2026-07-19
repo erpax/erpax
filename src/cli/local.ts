@@ -15,8 +15,9 @@
  * (gate/confirm own them), anything that builds the full readme context.
  */
 import { execSync, spawnSync } from 'node:child_process'
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
+import { planSuites, sealSuiteReceipt, suiteClosureHash } from '@/gate/receipt'
 import { pathWireViolations } from '@/index/cross'
 import { boundaryDigest } from '@/quantum/boundary'
 import { nonIndexImports } from '@/tamper/import'
@@ -94,6 +95,69 @@ const shellLane = (label: string, cmd: string): { ok: boolean; note: string } =>
   const ok = r.status === 0
   const err = (r.stderr?.toString() ?? '') + (r.stdout?.toString() ?? '')
   return { ok, note: ok ? 'green' : err.trim().split('\n').slice(-3).join(' · ').slice(0, 200) }
+}
+
+// ── the waved test gate — the push monolith split at its core ────────────────
+
+const SUITE_GLOB = /(^|\/)test\.tsx?$|\.test\.tsx?$/
+
+const discoverSuites = (cwd: string = process.cwd()): string[] => {
+  const out: string[] = []
+  const walk = (dir: string, rel: string): void => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || e.name === 'node_modules' || e.name === 'skills' || e.name === 'worktrees') continue
+      const p = join(dir, e.name)
+      const r = rel ? `${rel}/${e.name}` : e.name
+      if (e.isDirectory()) walk(p, r)
+      else if (SUITE_GLOB.test(e.name)) out.push(`src/${r}`)
+    }
+  }
+  walk(join(cwd, 'src'), '')
+  return out.sort()
+}
+
+/**
+ * `erpax test waves` — the vitest roster split by content-addressed receipts (gate/receipt):
+ * suites whose closure stands are CITED; only changed suites run, in ≤25-suite batches, each
+ * bounded by its own ladder rung; a green batch seals its receipts; a red batch names itself
+ * and stops — the failure costs one batch, never the hour. `--all` voids the receipts.
+ */
+export function runTestWaves(args: readonly string[] = []): number {
+  const cwd = process.cwd()
+  const all = discoverSuites(cwd)
+  const force = args.includes('--all')
+  const plan = force ? { changed: all, covered: [] as string[] } : planSuites(all, cwd)
+  console.log(`test waves — roster ${all.length} · covered by receipts ${plan.covered.length} · to run ${plan.changed.length}${force ? ' (--all)' : ''}`)
+  const BATCH = 25
+  for (let b = 0; b * BATCH < plan.changed.length; b++) {
+    const batch = plan.changed.slice(b * BATCH, (b + 1) * BATCH)
+    const label = 'test:wave'
+    const bound = timeoutForLabel(label)
+    const started = Date.now()
+    const r = spawnSync(
+      `./node_modules/.bin/vitest run --config ./vitest.config.mts ${batch.map((f) => JSON.stringify(f)).join(' ')}`,
+      { shell: true, stdio: 'inherit', cwd, timeout: bound.ms, killSignal: 'SIGKILL', env: { ...process.env, PAYLOAD_TEST_SKIP_MIGRATE: process.env.PAYLOAD_TEST_SKIP_MIGRATE ?? '' } },
+    )
+    if (r.signal) {
+      console.error(`✗ test waves — batch ${b} timed out at ${bound.minutes}min (computed rung); suites: ${batch.join(' ')}`)
+      return 1
+    }
+    if ((r.status ?? 1) !== 0) {
+      console.error(`✗ test waves — batch ${b} RED (${batch.length} suite(s)); receipts for green batches stand, this batch names itself:\n  ${batch.join('\n  ')}`)
+      return r.status ?? 1
+    }
+    recordSampleMs(label, Date.now() - started)
+    for (const s of batch) sealSuiteReceipt(s, suiteClosureHash(s, cwd), cwd)
+    console.log(`✓ batch ${b} — ${batch.length} suite(s) green, receipts sealed`)
+  }
+  console.log(`✓ test waves — ${plan.changed.length} ran · ${plan.covered.length} cited`)
+  return 0
 }
 
 export function runLocal(): number {
