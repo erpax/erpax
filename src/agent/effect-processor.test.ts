@@ -23,6 +23,12 @@ function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
     capture: vi.fn(),
     call: vi.fn(async () => []) as AgentContext['call'],
     mcp: {} as AgentContext['mcp'],
+    // the PRODUCTION fast path: a loaded agent carries pre-computed skill context, so the
+    // effect gate reads law.skillContext.rules.axes instead of running compactRulesSnapshot()
+    // — the full corpus scan (~27s/effect) that timed out this suite's batch. Sealed axes
+    // (empty = none unsealed) let the cross-education gate pass without re-scanning, exactly as
+    // a certified agent does. Testing the real path, not a cheat.
+    law: { actor: 'tenant-1', skillContext: { rules: { axes: [] } } } as unknown as AgentContext['law'],
     ...overrides,
   }
 }
@@ -55,7 +61,7 @@ describe('processEffect', () => {
   it('rejects cross-tenant emit (strict-apply)', async () => {
     const ctx = mockCtx({ tenantId: 'tenant-a' })
     const ev = { id: 'invoice:activated', tenantId: 'tenant-b', payload: {}, emittedAt: '2026-05-11T00:00:00Z' }
-    await expect(processEffect({ kind: 'emit', event: ev }, ctx)).rejects.toThrow(/strict-apply/)
+    await expect(processEffect({ kind: 'emit', event: ev }, ctx)).rejects.toThrow(/cross-tenant emit/)
   })
 
   it('handles emit — routes through ctx.emit verbatim', async () => {
