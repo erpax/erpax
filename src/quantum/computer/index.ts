@@ -56,6 +56,64 @@ export function quantumComputerCensus(cwd: string = process.cwd()): QuantumCompu
   }
 }
 
+// ── designing through the lens — certify BEFORE building ────────────────────
+
+import { reduce, DECODED, wavesOf as waveLevels, type Theorem } from '@/theorem'
+import { upstreamOf, type Mesh } from '@/mesh'
+import { resolve as sealOutcome } from '@/think'
+
+export interface Design {
+  readonly intent: string
+  /** the claims the design rests on — each must ground via reduce() or the design REFUSES */
+  readonly claims: readonly string[]
+  /** part → prerequisite parts: the build DAG the scheduler levels */
+  readonly parts: ReadonlyMap<string, readonly string[]>
+  /** atoms the design will touch — priced by dependent blast in the mesh */
+  readonly touches: readonly string[]
+}
+
+export interface DesignVerdict {
+  readonly certified: boolean
+  readonly grounded: readonly string[]
+  /** claims resting on authority — building on them is the pre-refuted edit `intend` warns about */
+  readonly refused: readonly string[]
+  /** fewest sequential build rounds (Mirsky); each wave is buildable in parallel */
+  readonly buildWaves: readonly (readonly string[])[]
+  /** atoms that depend on the touched set — the same-diff followers a landing must carry */
+  readonly blast: number
+}
+
+/**
+ * DESIGN THROUGH THE LENS: a design is a sealed intent whose claims certify BEFORE any matter
+ * moves. reduce() grounds or refuses each claim (a design on an ungrounded claim is the wrong
+ * thought `intend` exists to catch pre-damage); wavesOf levels the parts into the fewest build
+ * rounds; the mesh prices the blast (the followers rules/reference demands in the same diff).
+ * The verdict SEALS itself against the intent (`resolve`) — the design and its certification
+ * are one addressed pair, refutable before they cost anything.
+ */
+export function designVerdict(
+  d: Design,
+  opts: { readonly mesh?: Mesh; readonly graph?: readonly Theorem[]; readonly cwd?: string } = {},
+): DesignVerdict {
+  const graph = opts.graph ?? DECODED
+  const grounded: string[] = []
+  const refused: string[] = []
+  for (const c of d.claims) (reduce(c, graph).reduces ? grounded : refused).push(c)
+  const buildWaves = waveLevels(new Map(d.parts))
+  let blast = 0
+  if (opts.mesh) {
+    const dependents = new Set<string>()
+    for (const atom of opts.mesh.atoms) {
+      const up = upstreamOf(opts.mesh, atom)
+      if (d.touches.some((t) => up.has(t))) dependents.add(atom)
+    }
+    blast = dependents.size
+  }
+  const verdict: DesignVerdict = { certified: refused.length === 0, grounded, refused, buildWaves, blast }
+  sealOutcome(d.intent, { certified: verdict.certified, refused, waves: buildWaves.length, blast }, opts.cwd)
+  return verdict
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const c = quantumComputerCensus()
   console.log('quantum/computer — the machine, on')
