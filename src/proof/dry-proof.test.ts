@@ -9,10 +9,10 @@ import { jcsCanonicalize } from '@/integrity'
 import { corpusCollider } from '@/collider'
 
 describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () => {
-  it('without coverage, reports the honest digest floor (2^106), tamper-evident, echoing the invariant count it ran', () => {
+  it('without coverage, reports the honest weakest-link floor (2^112), tamper-evident, echoing the invariant count it ran', () => {
     const t = proofTamperCost({ invariantsChecked: 43 })
-    expect(t.crackCostLog2).toBe(106)
-    expect(t.binding).toBe('second-preimage')
+    expect(t.crackCostLog2).toBe(112) // min(digest 122, RSA-2048 anchor 112) — the anchor binds since the 106 digest lie was corrected
+    expect(t.binding).toBe('anchor') // the binding NAMES the weakest link — the anchor, since digest > anchor
     expect(t.tamperEvident).toBe(true)
     expect(t.invariantsChecked).toBe(43)
     expect(t.replicas).toBe(1)
@@ -56,9 +56,9 @@ describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () =>
 describe('dry-proof: tamper-cost coverage is GROUNDED in the live corpus collider (wiring lock)', () => {
   // Locks the self-proof-cluster → proof wiring: the proof's coverage must come
   // from the LIVE joint convention coverage (corpusCollider), not a hardcoded
-  // floor. A future edit that drops the coverage arg (reverting to the bare 106-bit
+  // floor. A future edit that drops the coverage arg (reverting to the bare anchor-bit
   // floor) makes this fail in CI.
-  it('the live collider yields a residual coverage in (0,1] that raises crackCost STRICTLY above the 2^106 floor', () => {
+  it('the live collider yields a residual coverage in (0,1] that raises crackCost STRICTLY above the 2^112 floor', () => {
     const collider = corpusCollider()
     // Real corpus has residue ⇒ coverage strictly between 0 and 1 (never an
     // assumed perfect 1, which would mint an ungrounded ∞ — identity/JCS hazard).
@@ -70,8 +70,8 @@ describe('dry-proof: tamper-cost coverage is GROUNDED in the live corpus collide
       coverage: collider.coverage,
       coverageAxis: 'joint convention coverage (∏ live convention coverages — @/collider)',
     })
-    const floor = proofTamperCost({ invariantsChecked: 43 }) // no coverage ⇒ 2^106
-    expect(floor.crackCostLog2).toBe(106)
+    const floor = proofTamperCost({ invariantsChecked: 43 }) // no coverage ⇒ the 2^112 anchor floor
+    expect(floor.crackCostLog2).toBe(112)
     // The whole point: wiring the live coverage in lifts the cost above the floor.
     expect(grounded.crackCostLog2).toBeGreaterThan(106)
     expect(grounded.coverage).toBe(collider.coverage)

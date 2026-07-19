@@ -80,7 +80,9 @@ const Chat: CollectionConfig = {
     },
     {
       name: 'emittedAt',
-      type: 'text',
+      // the ISO string IS the canonical byte content the envelope eventUuid was derived over —
+      // a date type would normalize the representation and break uuid re-verification at write time
+      type: 'text', // text-ok
       admin: {
         description:
           'ISO-8601 emit time stamped when the envelope uuid was derived — used by team/comms to re-verify eventUuid at write time.',

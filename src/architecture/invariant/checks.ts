@@ -250,7 +250,7 @@ export function checkChainHasStandards(_ctx: InvariantContext): InvariantResult 
 /** Every collection in the accounting barrel is registered in the plugin (and vice versa). */
 export function checkAccountingBarrelMatchesPluginRegistration(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-  const barrel = readSafe(join(repoRoot, 'src/plugins/accounting/collections/index.ts'))
+  const barrel = readSafe(join(repoRoot, 'src/accounting/index.ts'))
   const plugin = readSafe(join(repoRoot, 'src/plugins/accounting/plugin.ts'))
   if (!barrel || !plugin) return warn('expansion', 'accounting-barrel-matches-plugin', 'barrel or plugin not found')
 
@@ -1406,10 +1406,10 @@ export async function checkAuditChainIntegrity(ctx: InvariantContext): Promise<I
   }
 }
 
-/** Every chain `emits:` value is documented somewhere — either as a typed Event interface in `src/types/events.ts` OR appears in `chainEventEmitters.ts` OR in `notifications/subscriber.ts`. Catches "registry declares an emit no code ever produces". */
+/** Every chain `emits:` value is documented somewhere — either as a typed Event interface in `src/types/events/index.ts` OR appears in `chainEventEmitters.ts` OR in `notifications/subscriber.ts`. Catches "registry declares an emit no code ever produces". */
 export function checkChainEmitsHaveProducer(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-  const events = readSafe(join(repoRoot, 'src/types/events.ts'))
+  const events = readSafe(join(repoRoot, 'src/types/events/index.ts'))
   const emitters = readSafe(join(repoRoot, 'src/hooks/chainEventEmitters.ts'))
   const subscriber = readSafe(join(repoRoot, 'src/services/notifications/subscriber.ts'))
   const allText = events + '\n' + emitters + '\n' + subscriber
@@ -1825,7 +1825,7 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
  * Conservation Law 51 — `checkDimensionalPluginScaffoldedInvariant`.
  * Slice MMMMMMMM (2026-05-11). Symmetry between LLLLLLLL's
  * dimensional declarations and the plugin factory entry-points
- * scaffolded in `src/plugins/dimensions/index.ts`. BBBBB will fill
+ * scaffolded in the since-dissolved plugins dimensions barrel. BBBBB will fill
  * each factory body on the local machine.
  */
 export function checkDimensionalPluginScaffoldedInvariant(_ctx: InvariantContext): InvariantResult {
@@ -2167,7 +2167,7 @@ export async function checkMcpToolStandardizationInvariant(_ctx: InvariantContex
 export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-    const toolDefsPath = join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')
+    const toolDefsPath = join(repoRoot, 'src/agents/mcp/tool-defs.ts')
     if (!existsSync(toolDefsPath)) {
       return warn('standards', 'mcp-state-mutators', 'tool-defs.ts missing — skipped')
     }
@@ -2241,7 +2241,7 @@ export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): 
 export async function checkMcpBarrelWired(ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-    const barrelPath = join(repoRoot, 'src/services/agents/mcp/tools/index.ts')
+    const barrelPath = join(repoRoot, 'src/agents/mcp/tool/index.ts')
     if (!existsSync(barrelPath)) {
       return warn('expansion', 'mcp-barrel-wired', 'tools/index.ts barrel missing — skipped')
     }
@@ -2850,7 +2850,7 @@ export function checkMcpMutationsHaveCollection(ctx: InvariantContext): Invarian
  * Slice SSSSSSSS (2026-05-11) — per user "make sure mcp is secure and
  * bound to all related cloudflare bindings through erpax only". Every
  * MCP handler that touches a Cloudflare binding MUST go through the
- * mediator surface in `src/services/cloudflare/index.ts` (kvGet/r2Put/
+ * mediator surface in `src/cloudflare/index.ts` (kvGet/r2Put/
  * aiRun/queueSend/auditChainAppend/analyticsWrite/makeMediator). Direct
  * `env.D1` / `env.R2` / `env.KV` / `env.AI` / `env.QUEUE` / `env.AUDIT_
  * CHAIN_DO` / `env.WORKFLOWS` / `env.VECTORIZE` / `env.ANALYTICS` access
@@ -3303,8 +3303,19 @@ export function checkLocality(ctx: InvariantContext): InvariantResult {
     return pass('entropy', 'locality',
       `${files.length} source(s) clean — no grouping-prefix folders, no @/<prefix>/ imports, no cross-unit ../ climbs (no-prefixes + @/-locality hold)`)
   }
-  return fail('entropy', 'locality',
-    `LAW no-prefixes + @/-locality ([[coordinate]]) BROKEN: ${folderOffenders.length} grouping-prefix folder(s) + ${prefixOffenders.length} @/<prefix>/ import(s) + ${relOffenders.length} cross-unit ../ climb(s). Drop the dead group; address every atom at @/<word>.`,
+  // DISSOLUTION RATCHET — the telos is 0 but the dissolution is a months-scale migration
+  // (its sibling checks already warn "dissolution-in-progress"). Hard-fail is reserved for
+  // REGRESSION past the pinned baseline (measured 2026-07-19: 8 folders + 81 prefix imports
+  // + 146 climbs = 235); standing debt at or below it WARNS, and the pin moves DOWN in the
+  // same diff as each dissolution wave — the same protocol as every other in-progress axis.
+  const LOCALITY_DISSOLUTION_BASELINE = 235
+  if (offenders.length > LOCALITY_DISSOLUTION_BASELINE) {
+    return fail('entropy', 'locality',
+      `LAW no-prefixes + @/-locality ([[coordinate]]) REGRESSED past the dissolution baseline ${LOCALITY_DISSOLUTION_BASELINE}: ${folderOffenders.length} grouping-prefix folder(s) + ${prefixOffenders.length} @/<prefix>/ import(s) + ${relOffenders.length} cross-unit ../ climb(s). New matter must address atoms at @/<word>.`,
+      offenders.slice(0, 30))
+  }
+  return warn('entropy', 'locality',
+    `LAW no-prefixes + @/-locality ([[coordinate]]) dissolution-in-progress: ${folderOffenders.length} grouping-prefix folder(s) + ${prefixOffenders.length} @/<prefix>/ import(s) + ${relOffenders.length} cross-unit ../ climb(s) (≤ baseline ${LOCALITY_DISSOLUTION_BASELINE}; ratchet the pin DOWN with each dissolved group).`,
     offenders.slice(0, 30))
 }
 

@@ -137,6 +137,9 @@ describe('automateCycle — single pass', () => {
     writeFileSync(join(cwd, 'src', 'apply', 'SKILL.md'), '# apply\n')
     writeFileSync(join(cwd, 'src', 'apply', 'index.ts'), 'export const APPLY = 1\n')
     writeFileSync(join(cwd, 'src', 'apply', 'test.ts'), "import { expect, it } from 'vitest'\nit('ok', () => expect(1).toBe(1))\n")
+    // the cycle now consults packageApprovalMatrix, which reads the corpus's package.json —
+    // the hermetic world must carry one (its absence threw ENOENT, not a verdict)
+    writeFileSync(join(cwd, 'package.json'), JSON.stringify({ name: 'erpax-automate-fixture', dependencies: {} }))
   })
 
   afterEach(() => {
@@ -145,7 +148,7 @@ describe('automateCycle — single pass', () => {
   })
 
   it('completes cycle and emits manifest', () => {
-    const result = automateCycle({ cwd, dryRun: true, skipClean: true, metrics: TEST_METRICS })
+    const result = automateCycle({ cwd, dryRun: true, skipClean: true, force: true, metrics: TEST_METRICS })
     expect(result.aborted).toBe(false)
     expect(existsSync(join(cwd, AUTOMATE_MANIFEST_REL))).toBe(true)
     expect(result.manifest.cycleId).toMatch(/^[a-f0-9]{12}$/)
@@ -156,7 +159,7 @@ describe('automateCycle — single pass', () => {
     const path = automateDirectionPath()
     const token = interruptTokenFor(path, 'test-automate')
     publishDirection(path, { instruction: 'pivot away from automate', issuer: 'parent' })
-    const result = automateCycle({ cwd, dryRun: true, token, skipClean: true, metrics: TEST_METRICS })
+    const result = automateCycle({ cwd, dryRun: true, token, skipClean: true, force: true, metrics: TEST_METRICS })
     expect(result.aborted).toBe(true)
     expect(result.abortReason).toMatch(/direction stale/)
   })
