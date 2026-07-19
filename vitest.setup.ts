@@ -84,14 +84,13 @@ if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE && !migrateSettled()) {
         '[vitest] payload migrate timed out or database locked. Skipping - schema likely already applied.\n',
       )
     } else {
+      // BOOT-SWALLOW CLOSED (the open intent the lens surfaced): a REAL migrate failure —
+      // not already-exists, not a held lock — used to "continue anyway" locally, so every
+      // suite could report green over a broken schema (green lies at machine speed). The
+      // two benign branches above still continue; the unknown failure fails EVERYWHERE.
       process.stderr.write(errText)
-      if (process.env.CI === 'true') {
-        process.exit(result.status ?? 1)
-      }
-      process.stderr.write(
-        '\n[vitest] payload migrate failed. Continuing anyway - tests may work if schema is already up to date.\n',
-      )
-      // Don't exit - let tests try to run
+      process.stderr.write('\n[vitest] payload migrate FAILED — refusing to run suites over an unverified schema.\n')
+      process.exit(result.status ?? 1)
     }
   }
   // schema settled (applied, already-present, or lock-skipped — every branch above continues):
