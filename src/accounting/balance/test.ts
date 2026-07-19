@@ -23,7 +23,12 @@ describe('accounting/balance', () => {
   })
 
   it("allMeetsInBalance('corpus') returns structured meeting", () => {
-    const models = listAtomPaths().map((p) => deriveFolderModel(p))
+    // BOUNDED SAMPLE, not the whole corpus: this asserts the SHAPE of the aggregation (scope,
+    // equation, fold128 format, internal consistency corpusNetEb === corpus.netEb) — none of which
+    // depends on all ~3000 atoms. Deriving every folder model here ran 8.4 min (167ms × 3000, the
+    // CI-sized-job-in-a-unit-test class already fixed for doctor and rules). corpusBalanceFromModels
+    // is exercised on a representative sample; the full-corpus balance is the doctor/audit lane's job.
+    const models = listAtomPaths().slice(0, 12).map((p) => deriveFolderModel(p))
     const corpus = corpusBalanceFromModels(models)
     const m = allMeetsInBalance('corpus', { corpus, atomPath: 'corpus' })
     expect(m.scope).toBe('corpus')
