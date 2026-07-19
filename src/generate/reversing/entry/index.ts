@@ -138,8 +138,13 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
       }
     }
   } catch (err) {
-    console.warn('[generateReversingEntries] Failed to validate next period lock status:', err)
-    // Continue anyway; next period lock will be checked at posting time
+    // FAIL-CLOSED (SOX §404 — you cannot post to a period you cannot verify): a lock check that
+    // THROWS is not an open period, it is an unverified one. The old branch warned and continued —
+    // the empty-try period-lock class this corpus named as its own catastrophe shape. An absent
+    // lock DOC above stays open-by-design (no lock exists); a failed QUERY refuses the post.
+    throw new Error(
+      `[generateReversingEntries] period-lock check failed for FY${nextFiscalYear}-P${nextPeriodNumber} — refusing to generate reversals into an unverifiable period: ${String(err)}`,
+    )
   }
 
   // Generate reversal entries from closing entries
