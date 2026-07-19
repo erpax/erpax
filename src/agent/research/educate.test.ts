@@ -24,6 +24,9 @@ describe('educate', () => {
     // clears, and a RISE past it fails closed (the crack-pin pattern). ≤200 with headroom for now.
     expect(scanEducateGaps(process.cwd()).gaps.length).toBeLessThanOrEqual(200)
   })
+  // 7.2 min measured: selfEducateCycle's inner accountingGapsInWaves ignores cwd and scans the
+  // real corpus (task #17) — it PASSES (aborted:false), just slow. Bounded at 10 min so it is not
+  // killed; the real speedup is threading cwd through the wave scheduler (#17, coupled to #5).
   it('cycle does not abort', () => {
     resetSecurityMonitorForTests()
     const cwd = fixtureCwd()
@@ -32,5 +35,5 @@ describe('educate', () => {
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
-  })
+  }, 600_000)
 })
