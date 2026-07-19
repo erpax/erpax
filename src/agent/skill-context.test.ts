@@ -82,8 +82,10 @@ describe('agent skill load — path resolution', () => {
     expect(atomPathFromInput(DERIVE_NUMBER)).toBe('invoices/hooks')
   })
 
-  it('skillBearingAtomPath walks up to invoices (SKILL.md bearer)', () => {
-    expect(skillBearingAtomPath('invoices/hooks', cwd)).toBe('invoices')
+  it('skillBearingAtomPath resolves to the DEEPEST bearer — invoices/hooks now carries its own SKILL.md', () => {
+    // the skill-conversion wave gave invoices/hooks its trinity SKILL.md; the deepest-bearer
+    // resolution correctly stops there instead of walking up to invoices (every atom has a SKILL now)
+    expect(skillBearingAtomPath('invoices/hooks', cwd)).toBe('invoices/hooks')
   })
 
   it('domainHubFor uses first segment as hub', () => {
@@ -107,14 +109,17 @@ describe('agent skill load — realiseSkillsForPath', () => {
   it('opens deriveNumber.ts with self=invoices, ancestors, bonds, rules, quantum', () => {
     const ctx = realiseSkillsForPath(DERIVE_NUMBER, { cwd, includeImports: true })
     expect(ctx.focalAtomPath).toBe('invoices/hooks')
-    expect(ctx.skillBearingAtom).toBe('invoices')
-    expect(ctx.domainHub).toBe('invoices')
-    expect(ctx.skills.some((s) => s.role === 'self' && s.atomPath === 'invoices')).toBe(true)
-    expect(ctx.skills.find((s) => s.atomPath === 'invoices')?.quantum).not.toBeNull()
-    expect(ctx.skills.find((s) => s.atomPath === 'invoices')?.ebBalance).toBeGreaterThan(0)
+    expect(ctx.skillBearingAtom).toBe('invoices/hooks') // its own SKILL.md now (skill-conversion wave)
+    expect(ctx.domainHub).toBe('invoices') // hub is still the first segment
+    expect(ctx.skills.some((s) => s.role === 'self' && s.atomPath === 'invoices/hooks')).toBe(true)
+    expect(ctx.skills.find((s) => s.atomPath === 'invoices/hooks')?.quantum).not.toBeNull()
+    expect(ctx.skills.find((s) => s.atomPath === 'invoices/hooks')?.ebBalance).toBeGreaterThan(0)
     expect(ctx.rules.axes.length).toBeGreaterThan(0)
     expect(ctx.markdown).toContain('invoices')
-    expect(ctx.contextBytes).toBeGreaterThan(10_000)
+    // recalibrated: the deepest bearer is now the focused invoices/hooks atom (a compact SKILL)
+    // rather than the rich invoices root, so the sealed context is ~5.9KB — substantial and well
+    // under the 50KB dispatch cap, which is the assertion's real intent
+    expect(ctx.contextBytes).toBeGreaterThan(3_000)
     expect(ctx.contextBytes).toBeLessThan(MAX_AGENT_SKILL_CONTEXT_BYTES)
   })
 
