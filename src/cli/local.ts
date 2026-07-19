@@ -21,7 +21,7 @@ import { planSuites, sealSuiteReceipt, suiteClosureHash } from '@/gate/receipt'
 import { pathWireViolations } from '@/index/cross'
 import { boundaryDigest } from '@/quantum/boundary'
 import { nonIndexImports } from '@/tamper/import'
-import { recordSampleMs, timeoutForLabel } from '@/timeout'
+import { recordSampleMs, samplesMsOf, timeoutForLabel, timeoutOf } from '@/timeout'
 
 interface LocalLane {
   readonly horo: number
@@ -138,14 +138,21 @@ export function runTestWaves(args: readonly string[] = []): number {
   for (let b = 0; b * BATCH < plan.changed.length; b++) {
     const batch = plan.changed.slice(b * BATCH, (b + 1) * BATCH)
     const label = 'test:wave'
-    const bound = timeoutForLabel(label)
+    // a BATCH is up to 25 commands sharing one spawn — the single-command ladder does not bound it.
+    // Its bound is batch-history through the same ladder math scaled to the batch (min 15 min on a
+    // fresh seed: the known heavy suites alone run 3–5 min each; a first batch must not die to an
+    // unmeasured rung). Green batches record real samples and the bound tightens from evidence.
+    const history = samplesMsOf(label)
+    const bound = history.length
+      ? { ms: Math.max(timeoutOf(history).ms * 3, 900_000), minutes: Math.max(timeoutOf(history).minutes * 3, 15) }
+      : { ms: 900_000, minutes: 15 }
     const started = Date.now()
     const r = spawnSync(
       `./node_modules/.bin/vitest run --config ./vitest.config.mts ${batch.map((f) => JSON.stringify(f)).join(' ')}`,
       { shell: true, stdio: 'inherit', cwd, timeout: bound.ms, killSignal: 'SIGKILL', env: { ...process.env, PAYLOAD_TEST_SKIP_MIGRATE: process.env.PAYLOAD_TEST_SKIP_MIGRATE ?? '' } },
     )
     if (r.signal) {
-      console.error(`✗ test waves — batch ${b} timed out at ${bound.minutes}min (computed rung); suites: ${batch.join(' ')}`)
+      console.error(`✗ test waves — batch ${b} timed out at ${bound.minutes}min (batch bound); suites: ${batch.join(' ')}`)
       return 1
     }
     if ((r.status ?? 1) !== 0) {
