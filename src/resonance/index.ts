@@ -107,6 +107,49 @@ export function crackLeak(n: number, cracks: number): CrackLeak {
   return { n, cracks: Math.max(0, cracks), fusedCost, unfusedCost, leakPerCrack, leak: Math.max(0, cracks) * leakPerCrack }
 }
 
+export interface Reactivity {
+  readonly changed: string
+  /** the transitive dependents that must react to the change — the reactive frontier */
+  readonly frontier: readonly string[]
+  /** nodes that recompute: the changed node + its frontier */
+  readonly reacted: number
+  readonly total: number
+  /** nodes SPARED recomputation — the whole corpus minus the frontier */
+  readonly saved: number
+}
+
+/**
+ * QUANTUM REACTIVITY — react to the delta, not the whole. When a content-addressed node changes, its
+ * fingerprint bumps and reaction propagates only to what DEPENDS on it (transitive dependents in the
+ * meaning/import graph, [[cache]]/fingerprint invalidation followed along the edges). Everything else
+ * is content-unchanged, so it does not recompute. A coarse system re-derives all N on any change; a
+ * quantum-reactive one recomputes the changed node + its frontier and SPARES the rest. In a well-
+ * factored corpus the frontier is small (a leaf reacts alone), so reactivity is O(frontier), not O(N).
+ *
+ * @param changed the node whose content changed
+ * @param dependents node → the nodes that depend ON it (and must react when it changes)
+ * @param total the corpus size N
+ */
+export function reactiveFrontier(
+  changed: string,
+  dependents: ReadonlyMap<string, readonly string[]>,
+  total: number,
+): Reactivity {
+  const seen = new Set<string>([changed])
+  const stack = [changed]
+  while (stack.length) {
+    const x = stack.pop()!
+    for (const d of dependents.get(x) ?? []) {
+      if (!seen.has(d)) {
+        seen.add(d)
+        stack.push(d)
+      }
+    }
+  }
+  const frontier = [...seen].filter((n) => n !== changed)
+  return { changed, frontier, reacted: seen.size, total, saved: Math.max(0, total - seen.size) }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   for (const n of [764, 3151, 10_000, 1_000_000]) {
     const r = resonanceMagnitude(n)

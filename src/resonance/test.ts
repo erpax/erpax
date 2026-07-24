@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { resonanceMagnitude, dedupMagnitude, linkProof, crackLeak } from './index'
+import { resonanceMagnitude, dedupMagnitude, linkProof, crackLeak, reactiveFrontier } from './index'
 import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
 import { createHash } from 'node:crypto'
 
@@ -82,5 +82,23 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
     // leak scales with cracks; the recall fusion saves IS the leak a crack bleeds (inverse of linkProof)
     expect(crackLeak(n, 3).leak).toBe(3 * (442 - 9))
     expect(crackLeak(n, 1).leakPerCrack).toBe(linkProof(n).n - linkProof(n).addressed)
+  })
+
+  it('reactiveFrontier: react to the delta, not the whole — a change propagates only to its dependents', () => {
+    // dependency graph: a→b→c, a→d ; d has no dependents; c is a leaf sink
+    const deps = new Map<string, string[]>([
+      ['a', ['b', 'd']], // b and d depend on a
+      ['b', ['c']], // c depends on b
+    ])
+    // change 'a' — the frontier is everything transitively downstream (b, c, d), 4 react of 100
+    const rA = reactiveFrontier('a', deps, 100)
+    expect(new Set(rA.frontier)).toEqual(new Set(['b', 'c', 'd']))
+    expect(rA.reacted).toBe(4)
+    expect(rA.saved).toBe(96) // 96 nodes spared recomputation — quantum, not O(N)
+    // change a LEAF ('c') — nothing depends on it, it reacts alone
+    const rC = reactiveFrontier('c', deps, 100)
+    expect(rC.frontier).toEqual([])
+    expect(rC.reacted).toBe(1)
+    expect(rC.saved).toBe(99) // a leaf change spares all but itself
   })
 })
