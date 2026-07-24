@@ -47,6 +47,8 @@ export interface MeshCollection {
   readonly slug: string
   readonly atom: string
   readonly operations: readonly ('find' | 'create' | 'update' | 'delete')[]
+  /** the access factory/inline classifier declared in the collection's file — evidence for the tier ([[access]]/standard) */
+  readonly declaredAccess: string
 }
 
 export interface Mesh {
@@ -137,7 +139,10 @@ export function meshOf(cwd: string = process.cwd()): Mesh {
     const slug = /CollectionConfig/.test(text) ? text.match(/slug:\s*'([a-z][a-z0-9-]*)'/)?.[1] : undefined
     if (slug && !seenSlug.has(slug)) {
       seenSlug.add(slug)
-      collections.push({ slug, atom: from, operations: [...MCP_OPERATIONS] })
+      // the declared access: a factory call `access: foo(` or 'inline' for an object, else 'NONE'
+      const accessMatch = text.match(/\n\s{2,}access:\s*(\{|[a-zA-Z][\w]*\()/)
+      const declaredAccess = !accessMatch ? 'NONE' : accessMatch[1] === '{' ? (/roleScopedAccess|tenantAdmin|superAdmin|accountingCollectionAccess/.test(text) ? 'accountingCollectionAccess' : 'inline') : (text.match(/\n\s{2,}access:\s*([a-zA-Z][\w]*)\(/)?.[1] ?? 'factory')
+      collections.push({ slug, atom: from, operations: [...MCP_OPERATIONS], declaredAccess })
     }
   }
   for (const e of edges) atoms.add(e.to)

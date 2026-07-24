@@ -18,6 +18,7 @@
  *   tsx src/quantum/computer/index.ts   # census — is the machine on, and what does it read
  */
 export { meshOf, meshWaves, meshShape, standardsOf, atomsOf, failureRoots, costRoots, failuresLookExternal, upstreamOf, standardApiCross, apiStandardsCross, apiOf } from '@/mesh'
+export { requiredAccessTier, accessComplianceGaps, accessComplianceOverMesh } from '@/access/standard'
 export { wavesOf, waves, waveShape, reduce, groundedLeads, proofClassOf, proofClassCensus, DECODED } from '@/theorem'
 export { timeoutOf, timeoutForLabel, recordSampleMs, samplesMsOf, TIMEOUT_LADDER_MINUTES } from '@/timeout'
 export { planScalpel, applyScalpel, mergeManifests, SCALPEL_BATCH } from '@/scalpel'

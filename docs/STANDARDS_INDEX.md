@@ -15,6 +15,9 @@ Binary file src/regeneration/index.ts matches
 Binary file src/voting/index.ts matches
 src/access/index.ts:19: * @standard NIST SP 800-162 ABAC
 src/access/index.ts:20: * @standard ISO 27001 A.5.10 access-control-policy
+src/access/standard/index.ts:17: * @standard SOX:2002 §404 internal-controls — you cannot post to a closed period
+src/access/standard/index.ts:18: * @standard BG Наредба Н-18 §СУПТО — fiscal writes are inspector-auditable, no delete on posted
+src/access/standard/index.ts:20: * @standard ISO/IEC 27001 A.5.15 access-control — role-required, tenant-isolated
 src/accounting/analysis/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/accounting/analysis/index.ts:9: * @standard ISO-8601-1:2019 date-time as-of-date
 src/accounting/money/index.ts:10: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
@@ -3454,6 +3457,7 @@ tests/helpers/seedUser.ts:5: * @rfc 5322 internet-message-format email-fixture
 
 ```text
 Binary file src/anti/corruption/cross-entity.ts matches
+src/access/standard/index.ts:19: * @compliance GDPR §17 right-to-erasure · §15 right-of-access — data-subject controls
 src/accounting/debit/index.ts:15: * @compliance SOX §404 internal-controls
 src/accounting/reports/index.ts:27: * @compliance SOX §302 disclosure-controls
 src/activities/index.ts:10: * @compliance GDPR Art.5(1)(c) data-minimisation
@@ -5363,6 +5367,7 @@ tests/helpers/seedUser.ts:6: * @security ISO-27001 A.5.16 identity-management
 ```text
 Binary file src/regeneration/index.ts matches
 Binary file src/voting/index.ts matches
+src/access/standard/index.ts:21: * @audit ISO-19011:2018 §6.4 — the access an operation carries is read by the reader who signs it
 src/accounting/analysis/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/accounting/debit/index.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/accounting/index.ts:13: * @audit re-exports only; the truth lives in nested leaf atoms (debit / reports / analysis / margin)

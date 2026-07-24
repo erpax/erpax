@@ -88,7 +88,7 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
 
   describe('the navigational cross — standard ↔ collection ↔ Payload API (quantum ERP)', () => {
     it('a collection atom is detected with its slug and the plugin-mcp operations', () => {
-      expect(mesh.collections).toEqual([{ slug: 'accounts', atom: 'a', operations: ['find', 'create', 'update', 'delete'] }])
+      expect(mesh.collections).toEqual([{ slug: 'accounts', atom: 'a', operations: ['find', 'create', 'update', 'delete'], declaredAccess: 'NONE' }])
     })
 
     it('standardApiCross reaches the API — a standard → collections → find/create/update/delete endpoints', () => {
