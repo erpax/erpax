@@ -42,6 +42,7 @@ describe('designVerdict — design through the lens, certified BEFORE building',
       { from: 'b', to: 'c', kind: 'import' as const },
     ],
     standards: [],
+    collections: [],
   }
 
   it('a grounded design certifies: claims reduce, parts wave, blast prices the followers', () => {

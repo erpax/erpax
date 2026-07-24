@@ -2,7 +2,7 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
-import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson } from '@/mesh'
+import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf } from '@/mesh'
 
 // Hermetic fixture corpus: three atoms in a chain a→b→c, one standard banner, one
 // import-shaped STRING that must never become an edge (the phantom class every
@@ -12,9 +12,10 @@ const src = join(tmp, 'src')
 
 const seed = (): void => {
   for (const atom of ['a', 'b', 'c']) mkdirSync(join(src, atom), { recursive: true })
+  // atom 'a' is a Payload COLLECTION (has a slug) citing a standard — the cross's anchor
   writeFileSync(
     join(src, 'a', 'index.ts'),
-    "/**\n * @standard ISO-4217:2015 currency-codes\n */\nimport { b } from '../b'\nexport const a = b + 1\n",
+    "/**\n * @standard ISO-4217:2015 currency-codes\n */\nimport { b } from '../b'\nconst Accounts: CollectionConfig = { slug: 'accounts', fields: [] }\nexport const a = Accounts\n",
   )
   writeFileSync(
     join(src, 'b', 'index.ts'),
@@ -83,6 +84,30 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
     expect(c.costMs).toBe(50_000)
     expect(c.explains).toEqual(['a', 'b'])
     expect(roots[0]!.costMs).toBe(50_000)
+  })
+
+  describe('the navigational cross — standard ↔ collection ↔ Payload API (quantum ERP)', () => {
+    it('a collection atom is detected with its slug and the plugin-mcp operations', () => {
+      expect(mesh.collections).toEqual([{ slug: 'accounts', atom: 'a', operations: ['find', 'create', 'update', 'delete'] }])
+    })
+
+    it('standardApiCross reaches the API — a standard → collections → find/create/update/delete endpoints', () => {
+      const cross = standardApiCross(mesh, 'ISO-4217')
+      expect(cross.collections.map((c) => c.slug)).toEqual(['accounts'])
+      expect(cross.endpoints.map((e) => e.tool)).toEqual(['find-accounts', 'create-accounts', 'update-accounts', 'delete-accounts'])
+    })
+
+    it('apiStandardsCross is the inverse — a collection knows its own governing standards', () => {
+      const cross = apiStandardsCross(mesh, 'accounts')
+      expect(cross.atom).toBe('a')
+      expect(cross.standards.some((s) => s.id.includes('ISO-4217:2015'))).toBe(true)
+      expect(apiStandardsCross(mesh, 'nonexistent').standards).toEqual([])
+    })
+
+    it('apiOf lists a collection\'s endpoints; an unknown slug is empty', () => {
+      expect(apiOf(mesh, 'accounts')).toHaveLength(4)
+      expect(apiOf(mesh, 'ghost')).toEqual([])
+    })
   })
 
   it('the strategy is a TOOL — failedFilesFromVitestJson reads a vitest report, only the failures', () => {

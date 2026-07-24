@@ -39,11 +39,24 @@ export interface MeshStandard {
   readonly id: string
 }
 
+/**
+ * A Payload collection at the API surface: its slug, the atom that defines it, and the operations
+ * @payloadcms/plugin-mcp exposes at /api/mcp (every enabled collection ⇒ find/create/update/delete).
+ */
+export interface MeshCollection {
+  readonly slug: string
+  readonly atom: string
+  readonly operations: readonly ('find' | 'create' | 'update' | 'delete')[]
+}
+
 export interface Mesh {
   readonly atoms: readonly string[]
   readonly edges: readonly MeshEdge[]
   readonly standards: readonly MeshStandard[]
+  readonly collections: readonly MeshCollection[]
 }
+
+const MCP_OPERATIONS = ['find', 'create', 'update', 'delete'] as const
 
 const BANNER = /@(standard|rfc|accounting|compliance|security|audit|quality)\s+([^\s*][^\n*]*)/g
 
@@ -87,6 +100,8 @@ export function meshOf(cwd: string = process.cwd()): Mesh {
   const edges: MeshEdge[] = []
   const standards: MeshStandard[] = []
   const seenStd = new Set<string>()
+  const collections: MeshCollection[] = []
+  const seenSlug = new Set<string>()
 
   for (const f of files) {
     const from = atomOfFile(f, cwd)
@@ -116,9 +131,17 @@ export function meshOf(cwd: string = process.cwd()): Mesh {
       seenStd.add(key)
       standards.push({ atom: from, tag, id })
     }
+
+    // A Payload collection is an atom whose file declares a CollectionConfig slug. Every enabled
+    // collection becomes find/create/update/delete tools at /api/mcp (@payloadcms/plugin-mcp).
+    const slug = /CollectionConfig/.test(text) ? text.match(/slug:\s*'([a-z][a-z0-9-]*)'/)?.[1] : undefined
+    if (slug && !seenSlug.has(slug)) {
+      seenSlug.add(slug)
+      collections.push({ slug, atom: from, operations: [...MCP_OPERATIONS] })
+    }
   }
   for (const e of edges) atoms.add(e.to)
-  return { atoms: [...atoms].sort(), edges, standards }
+  return { atoms: [...atoms].sort(), edges, standards, collections: [...collections].sort((a, b) => a.slug.localeCompare(b.slug)) }
 }
 
 /** The atom's legal surface: every standard its files cite. */
@@ -128,6 +151,55 @@ export const standardsOf = (mesh: Mesh, atom: string): readonly MeshStandard[] =
 /** The clause→code trace: every atom citing this standard id (substring match on the id). */
 export const atomsOf = (mesh: Mesh, standardId: string): readonly string[] =>
   [...new Set(mesh.standards.filter((s) => s.id.includes(standardId)).map((s) => s.atom))].sort()
+
+// ── the navigational cross: standard ↔ collection ↔ Payload API ──────────────
+
+export interface ApiEndpoint {
+  readonly slug: string
+  readonly atom: string
+  readonly operation: 'find' | 'create' | 'update' | 'delete'
+  /** the /api/mcp tool name the plugin exposes for this operation */
+  readonly tool: string
+}
+
+/** Every API endpoint a collection exposes — the plugin-mcp tool surface, computed not typed. */
+export const apiOf = (mesh: Mesh, slug: string): readonly ApiEndpoint[] => {
+  const coll = mesh.collections.find((c) => c.slug === slug)
+  if (!coll) return []
+  return coll.operations.map((op) => ({ slug, atom: coll.atom, operation: op, tool: `${op}-${slug}` }))
+}
+
+/**
+ * QUANTUM ERP — the navigational cross across standards and the Payload API. Given a STANDARD, the
+ * collections that implement it (their atoms cite it) and every API endpoint those collections
+ * expose: the clause→code→endpoint trace an auditor walks all the way to the operation. The dual
+ * of atomsOf — that stops at the atom; this reaches the running API.
+ */
+export function standardApiCross(mesh: Mesh, standardId: string): {
+  readonly standard: string
+  readonly collections: readonly MeshCollection[]
+  readonly endpoints: readonly ApiEndpoint[]
+} {
+  const atoms = new Set(atomsOf(mesh, standardId))
+  const collections = mesh.collections.filter((c) => atoms.has(c.atom))
+  const endpoints = collections.flatMap((c) => apiOf(mesh, c.slug))
+  return { standard: standardId, collections, endpoints }
+}
+
+/**
+ * The inverse cross: given a COLLECTION (or one of its API endpoints), the standards it must
+ * satisfy — the legal surface of an operation. A create-invoices call is governed by every
+ * standard the invoices atom cites; this names them, so the API knows its own law.
+ */
+export function apiStandardsCross(mesh: Mesh, slug: string): {
+  readonly slug: string
+  readonly atom: string | null
+  readonly standards: readonly MeshStandard[]
+} {
+  const coll = mesh.collections.find((c) => c.slug === slug)
+  if (!coll) return { slug, atom: null, standards: [] }
+  return { slug, atom: coll.atom, standards: standardsOf(mesh, coll.atom) }
+}
 
 /** Level the atom graph into waves — the entangled core levels to wave 0 (the ground state). */
 export function meshWaves(mesh: Mesh): readonly (readonly string[])[] {

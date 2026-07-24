@@ -7,7 +7,7 @@
  * single address an agent loads to QUERY instead of re-derive (97% of a session's
  * tokens were measured as re-sent context; a query here is the fold applied to the bill).
  *
- *   state      meshOf · standardsOf · atomsOf        (what is, and its legal surface)
+ *   state      meshOf · standardsOf · atomsOf · standardApiCross · apiStandardsCross  (what is · its legal surface · the navigational cross standard↔collection↔Payload API)
  *   scheduler  wavesOf · meshWaves · trainingWaves   (what can happen in parallel, and in how few rounds)
  *   certifier  reduce · groundedLeads · proofClassOf  (does a claim ground · by WHICH strategy: finite-complete · bounded-witness · self-contained · cited-frame · composed)
  *   bounds     timeoutOf · timeoutForLabel           (every spawn's rung from its own history)
@@ -17,7 +17,7 @@
  *
  *   tsx src/quantum/computer/index.ts   # census — is the machine on, and what does it read
  */
-export { meshOf, meshWaves, meshShape, standardsOf, atomsOf, failureRoots, costRoots, failuresLookExternal, upstreamOf } from '@/mesh'
+export { meshOf, meshWaves, meshShape, standardsOf, atomsOf, failureRoots, costRoots, failuresLookExternal, upstreamOf, standardApiCross, apiStandardsCross, apiOf } from '@/mesh'
 export { wavesOf, waves, waveShape, reduce, groundedLeads, proofClassOf, proofClassCensus, DECODED } from '@/theorem'
 export { timeoutOf, timeoutForLabel, recordSampleMs, samplesMsOf, TIMEOUT_LADDER_MINUTES } from '@/timeout'
 export { planScalpel, applyScalpel, mergeManifests, SCALPEL_BATCH } from '@/scalpel'
