@@ -367,6 +367,7 @@ src/audit/compliance/reporting/standard.ts:9: * @standard BEPS Action 13:2021 Tr
 src/audit/events/index.ts:41: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
 src/audit/events/index.ts:42: * @standard ISO-19011:2018 §6.5 audit-conclusions
 src/audit/events/index.ts:43: * @standard ISO/IEC 27037:2012 evidence-preservation
+src/audit/speed/index.ts:18: * @standard BG Наредба Н-18 §СУПТО — the audit trail must be inspectable (a 97.5%-orphaned trail is a finding)
 src/audit/submissions/index.ts:14: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission-log
 src/audit/trail/after/change/index.ts:21: * @standard rfc-9562 uuid event-id
 src/audit/trail/after/change/index.ts:39: * @standard NIST FIPS-180-4 sha-256
@@ -5479,6 +5480,7 @@ src/architecture/invariant/trinity.ts:53: * @audit ISO 19011:2018 §6.4.6 (Trini
 src/architecture/invariant/types.ts:28: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/artery/index.ts:21: * @audit computed (a two-element Windkessel: compliant reservoir + peripheral resistance)
 src/audit/events/index.ts:51: * @audit ISO-19011:2018 audit-trail
+src/audit/speed/index.ts:17: * @audit ISO-19011:2018 §6.4 — an audit finding is evidence a reader can recompute
 src/audit/submissions/index.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/audit/trail/after/change/index.ts:22: * @audit ISO-19011:2018 §6.4.6 audit-evidence-collection
 src/audit/trail/write-audit-event.test.ts:17: * @audit Conservation Law 8 content-addressable integrity (chainLeafUuid)
