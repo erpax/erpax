@@ -8,28 +8,29 @@ atomPath: engineering
 
 The corpus **cites** ISO/IEC 25010:2023 (the product-quality model) **207×** — but a citation is prose, and prose is read and maybe obeyed ([[rules]]: a law is obeyed only when a gate blocks its violation). This atom is the engineering-quality twin of [[access]]/standard (which did it for the legal surface): it maps each 25010 quality **concern** to the erpax gate that already enforces it, computes what is enforced vs merely cited, and names the unenforced concerns as the **solutions to reverse-engineer**.
 
-## The mapping — a standard, reverse-engineered into a gate
+## The trinities — the engineer types, three told as three
 
-| 25010 concern | clause | enforcing gate |
-| --- | --- | --- |
-| modularity | §5.6.2 | [[rules]]/cycle · [[rules]]/confine |
-| testability | §5.5 | [[rules]]/refutable |
-| analysability | §5.6 | [[rules]]/reference |
-| understandability | §5.6 | [[rules]]/echo |
-| reusability | §5.6 | [[rules]]/unfolded |
-| naming | §5.6 | [[law]]/folder |
-| functional-completeness | §5.1 | [[law]]/folder (the trinity) |
-| time-behaviour | §5.2 | [[timeout]] |
-| interaction-capability | §5.4 | [[rules]]/ask — a required field with nothing computed is poor user-error-protection |
-| **compatibility** | §5.3 | **— no gate: reverse-engineer next** |
+The nine ISO/IEC 25010 characteristics are organised in **three trinities** on the corpus's own **form · code · proof** axes — the same law that makes every atom one thing told three ways. A trinity is **sealed** when all three of its characteristics are gate-enforced; an unsealed trinity names the gate still to design (`sealEngineeringTrinities`).
 
-"Improve the standard" = move a concern from cited to gate-enforced. "Reverse-engineer into a new solution" = a concern cited with no gate is a gate waiting to be written — `engineeringConformance` computes the citation coverage and `assertEngineeringEnforced` ratchets the ungated count DOWN.
+| trinity | characteristic | clause | enforcing gate |
+| --- | --- | --- | --- |
+| **form** — what the system presents | functional-suitability | §5.1 | [[law]]/folder (the trinity) |
+| | interaction-capability | §5.4 | [[rules]]/ask |
+| | **compatibility** | §5.3 | **— no gate: the design task that unseals form** |
+| **code** — how the system runs | performance-efficiency | §5.2 | [[timeout]] |
+| | reliability | §5.5 | [[rules]]/refutable |
+| | security | §5.6 | [[access]]/standard |
+| **proof** — how the system endures | maintainability | §5.7 | [[rules]]/cycle (· echo · unfolded · reference · confine) |
+| | flexibility | §5.8 | [[rules]]/canonical |
+| | safety | §5.9 | [[accounting]] (the double-entry balance invariant) |
+
+**code and proof are sealed; form is open** on compatibility. `engineeringDesignBacklog` lets the engineers design the rest needed to complete the quantum ERP — the ungated characteristics across every unsealed trinity, in seal order — and when it empties, every standard-trinity is sealed and the engineering surface is complete. "Improve the standard" = move a characteristic from cited to gate-enforced; `assertEngineeringEnforced` ratchets the ungated count DOWN.
 
 ## Computed vs declared — the honest split
 
 The **citations** are COMPUTED (every `25010 §5.x` in the corpus → its atom, via a source scan). The concern→gate **map is DECLARED**, keyed by concern NAME rather than §-number — because the corpus's own §-citations are inconsistent (the same clause is cited for different concerns), so the concern is the only honest key. The map is arguable in the open (the [[rules]]/audience split), never inferred.
 
-**Honest boundary.** This proves a concern is **gate-enforced somewhere**, not that every atom citing it is individually gated — a per-site enforcement check is finer than this atom claims. And the map covers the quality concerns erpax has gates for; a 25010 characteristic outside the map (safety, security-in-depth) is a gap in the map, not proof of conformance.
+**Honest boundary.** This proves a characteristic is **gate-enforced somewhere**, not that every atom citing it is individually gated — a per-site enforcement check is finer than this atom claims. And a mapped gate enforces a **proxy** of its characteristic (rules/ask covers user-error-protection, not all of interaction-capability), so a sealed trinity means its concerns are each gated, never that the ISO characteristic is exhaustively met.
 
 **Law — [[law]]: an engineering standard is enforced or it is decoration. Every cited ISO/IEC 25010 quality concern maps to a gate that blocks its violation, or it is a solution still to reverse-engineer — the ungated count ratchets to zero.**
 

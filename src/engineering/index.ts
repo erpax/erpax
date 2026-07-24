@@ -25,24 +25,56 @@ import { join } from 'node:path'
  * Arguable in the open: extend it, never infer it. A concern with `gate: null` is UNENFORCED — the
  * reverse-engineered solution to build.
  */
-export const QUALITY_ENFORCEMENT: ReadonlyArray<{
+export interface QualityConcern {
   readonly concern: string
   readonly clause: string
   readonly gate: string | null
   readonly why: string
+}
+
+/**
+ * The engineer types organised in TRINITIES — the corpus's own law (an atom is one thing told three
+ * ways) applied to ISO/IEC 25010's quality characteristics. Three trinities of three, on the form ·
+ * code · proof axes: FORM is what the system presents to the world, CODE is how it runs, PROOF is how
+ * it endures. A trinity is SEALED when all three of its characteristics are gate-enforced; an unsealed
+ * trinity's ungated characteristic is a design task — the rest needed to complete the quantum ERP.
+ */
+export const ENGINEERING_TRINITIES: ReadonlyArray<{
+  readonly axis: 'form' | 'code' | 'proof'
+  readonly of: string
+  readonly concerns: readonly [QualityConcern, QualityConcern, QualityConcern]
 }> = [
-  { concern: 'modularity', clause: '§5.6.2', gate: 'rules/cycle', why: 'an import loop breaks modularity — the SCC gate proves the graph is untangled' },
-  { concern: 'modularity-registry', clause: '§5.6.2', gate: 'rules/confine', why: 'the whole registry may not be materialised by hand — the field confines it' },
-  { concern: 'testability', clause: '§5.5', gate: 'rules/refutable', why: 'an unfalsifiable @invariant is untestable — the gate demands a proof leg' },
-  { concern: 'analysability', clause: '§5.6', gate: 'rules/reference', why: 'a dead src pointer cannot be analysed — the trace must resolve' },
-  { concern: 'understandability', clause: '§5.6', gate: 'rules/echo', why: 'a path that restates itself conveys no new meaning — the echo gate flags it' },
-  { concern: 'reusability', clause: '§5.6', gate: 'rules/unfolded', why: 'a single-use export is not reused — inline, delete, or reuse it' },
-  { concern: 'naming', clause: '§5.6', gate: 'law/folder', why: 'one generic lowercase word per atom — the folder-law gate' },
-  { concern: 'time-behaviour', clause: '§5.2', gate: 'timeout', why: 'the measured timeout ladder bounds every lane' },
-  { concern: 'functional-completeness', clause: '§5.1', gate: 'law/folder', why: 'the SKILL·index·test trinity is the completeness gate' },
-  { concern: 'interaction-capability', clause: '§5.4', gate: 'rules/ask', why: 'user-error-protection + operability: a required field with nothing computed makes the user type a derivable value — rules/ask computes it so they only confirm' },
-  { concern: 'compatibility', clause: '§5.3', gate: null, why: 'API/plugin co-existence + interoperability is cited but not yet gated — a solution to reverse-engineer' },
+  {
+    axis: 'form',
+    of: 'what the system presents to the world',
+    concerns: [
+      { concern: 'functional-suitability', clause: '§5.1', gate: 'law/folder', why: 'the SKILL·index·test trinity is the completeness gate' },
+      { concern: 'interaction-capability', clause: '§5.4', gate: 'rules/ask', why: 'user-error-protection + operability: rules/ask computes a derivable field so the user only confirms' },
+      { concern: 'compatibility', clause: '§5.3', gate: null, why: 'API/plugin co-existence + interoperability is cited but not yet gated — the design task that unseals FORM' },
+    ],
+  },
+  {
+    axis: 'code',
+    of: 'how the system runs',
+    concerns: [
+      { concern: 'performance-efficiency', clause: '§5.2', gate: 'timeout', why: 'the measured timeout ladder bounds every lane' },
+      { concern: 'reliability', clause: '§5.5', gate: 'rules/refutable', why: 'an unfalsifiable @invariant is untestable — the gate demands a proof leg' },
+      { concern: 'security', clause: '§5.6', gate: 'access/standard', why: 'the legal surface governs the API access tier — write floors, delete on posted matter' },
+    ],
+  },
+  {
+    axis: 'proof',
+    of: 'how the system endures',
+    concerns: [
+      { concern: 'maintainability', clause: '§5.7', gate: 'rules/cycle', why: 'the SCC gate proves the graph untangled (with rules/echo · unfolded · reference · confine)' },
+      { concern: 'flexibility', clause: '§5.8', gate: 'rules/canonical', why: 'adaptability through a package API, not a re-implementation of what it ships' },
+      { concern: 'safety', clause: '§5.9', gate: 'accounting', why: 'the double-entry balance invariant — no unsafe financial state may be posted' },
+    ],
+  },
 ]
+
+/** The flat concern→gate map, DERIVED from the trinities (one source, no duplication). */
+export const QUALITY_ENFORCEMENT: ReadonlyArray<QualityConcern> = ENGINEERING_TRINITIES.flatMap((t) => t.concerns)
 
 export interface EngineeringCitation {
   readonly atom: string
@@ -127,10 +159,50 @@ export function assertEngineeringEnforced(cwd: string = process.cwd(), ceiling: 
   )
 }
 
+export interface TrinitySeal {
+  readonly axis: 'form' | 'code' | 'proof'
+  readonly of: string
+  /** SEALED iff all three characteristics on this axis are gate-enforced */
+  readonly sealed: boolean
+  /** the ungated characteristics — the design tasks that would seal this trinity */
+  readonly design: ReadonlyArray<{ readonly concern: string; readonly clause: string; readonly why: string }>
+}
+
+/**
+ * Seal each engineering trinity: a trinity is sealed when all three of its ISO/IEC 25010 characteristics
+ * are gate-enforced. Pure (over the declared map) — no scan, no @/seal import (engineering stays fs-only
+ * and cycle-safe, since it is imported by the rules hub). This is "sealing the standards": each of the
+ * three form·code·proof trinities either holds or names the characteristic that keeps it open.
+ */
+export function sealEngineeringTrinities(): TrinitySeal[] {
+  return ENGINEERING_TRINITIES.map((t) => {
+    const design = t.concerns.filter((c) => c.gate === null).map((c) => ({ concern: c.concern, clause: c.clause, why: c.why }))
+    return { axis: t.axis, of: t.of, sealed: design.length === 0, design }
+  })
+}
+
+/**
+ * Let the engineers design the rest needed to complete the quantum ERP: the ungated characteristics
+ * across every unsealed trinity, in seal order (form first — the surface the user meets). Each entry is
+ * a gate still to build; when the list is empty every standard-trinity is sealed and the quantum ERP's
+ * engineering surface is complete. This is nextMoveByLeverage's law on the standards: the design is computed.
+ */
+export function engineeringDesignBacklog(): ReadonlyArray<{ readonly axis: string; readonly concern: string; readonly clause: string; readonly why: string }> {
+  return sealEngineeringTrinities().flatMap((t) => t.design.map((d) => ({ axis: t.axis, ...d })))
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const c = engineeringConformance()
+  const seals = sealEngineeringTrinities()
   console.log(`engineering — ISO/IEC 25010 quality concerns: ${c.enforced}/${c.concerns} gate-enforced`)
   console.log(`  citations: ${c.enforcedCitations}/${c.citations} sit under an enforcing gate`)
-  console.log(`  reverse-engineer next (cited, no gate):`)
-  for (const r of c.reverseEngineer) console.log(`    ✗ ${r.concern} (${r.clause}) — ${r.why}`)
+  console.log(`  standard-trinities (${seals.filter((s) => s.sealed).length}/3 sealed):`)
+  for (const s of seals) console.log(`    ${s.sealed ? '✓ sealed' : '✗ open  '} ${s.axis.padEnd(6)} — ${s.of}`)
+  const backlog = engineeringDesignBacklog()
+  if (backlog.length) {
+    console.log(`  the rest to complete the quantum ERP (${backlog.length} gate(s) to design):`)
+    for (const d of backlog) console.log(`    ✗ ${d.axis}/${d.concern} (${d.clause}) — ${d.why}`)
+  } else {
+    console.log('  every standard-trinity sealed — the engineering surface is complete')
+  }
 }

@@ -4,9 +4,12 @@ import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import {
   QUALITY_ENFORCEMENT,
+  ENGINEERING_TRINITIES,
   engineeringCitations,
   engineeringConformance,
   assertEngineeringEnforced,
+  sealEngineeringTrinities,
+  engineeringDesignBacklog,
 } from './index'
 
 // Reverse-engineer the engineering standards into gates. The citation scan runs on a hermetic fixture
@@ -17,8 +20,8 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
     const dir = mkdtempSync(join(tmpdir(), 'eng-'))
     const a = join(dir, 'src', 'alpha')
     mkdirSync(a, { recursive: true })
-    // an atom citing an ENFORCED concern (§5.6.2 modularity → rules/cycle)
-    writeFileSync(join(a, 'index.ts'), '/** @standard ISO/IEC 25010:2023 §5.6.2 modularity */\nexport const a = 1\n')
+    // an atom citing an ENFORCED concern (§5.7 maintainability → rules/cycle)
+    writeFileSync(join(a, 'index.ts'), '/** @standard ISO/IEC 25010:2023 §5.7 maintainability */\nexport const a = 1\n')
     const b = join(dir, 'src', 'beta')
     mkdirSync(b, { recursive: true })
     // an atom citing an UNENFORCED concern (§5.3 compatibility → no gate yet)
@@ -26,24 +29,45 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
     return dir
   }
 
-  it('the concern→gate map declares an enforcing gate for the maintainability concerns', () => {
-    const modularity = QUALITY_ENFORCEMENT.find((q) => q.concern === 'modularity')
-    expect(modularity?.gate).toBe('rules/cycle')
-    expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'testability')?.gate).toBe('rules/refutable')
-    // interaction-capability was reverse-engineered into rules/ask this wave
+  it('the concern→gate map declares a gate per characteristic — derived from the trinities', () => {
+    expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'maintainability')?.gate).toBe('rules/cycle')
+    expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'reliability')?.gate).toBe('rules/refutable')
+    // interaction-capability was reverse-engineered into rules/ask
     expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'interaction-capability')?.gate).toBe('rules/ask')
     // compatibility is the one remaining reverse-engineering target
     const ungated = QUALITY_ENFORCEMENT.filter((q) => q.gate === null).map((q) => q.concern)
     expect(ungated).toEqual(['compatibility'])
   })
 
+  it('the engineer types are organised in THREE trinities of three — form · code · proof', () => {
+    expect(ENGINEERING_TRINITIES).toHaveLength(3)
+    expect(ENGINEERING_TRINITIES.map((t) => t.axis)).toEqual(['form', 'code', 'proof'])
+    for (const t of ENGINEERING_TRINITIES) expect(t.concerns).toHaveLength(3) // a trinity is exactly three
+    // QUALITY_ENFORCEMENT is DERIVED from the trinities (one source, no duplication)
+    expect(QUALITY_ENFORCEMENT).toHaveLength(9)
+  })
+
+  it('sealEngineeringTrinities seals the complete ones; the design backlog is the rest to build', () => {
+    const seals = sealEngineeringTrinities()
+    const form = seals.find((s) => s.axis === 'form')!
+    const code = seals.find((s) => s.axis === 'code')!
+    expect(code.sealed).toBe(true) // performance · reliability · security all gated
+    expect(form.sealed).toBe(false) // compatibility keeps FORM open
+    expect(form.design.map((d) => d.concern)).toEqual(['compatibility'])
+    // the design backlog is exactly the ungated characteristics — the rest to complete the quantum ERP
+    const backlog = engineeringDesignBacklog()
+    expect(backlog).toHaveLength(1)
+    expect(backlog[0]!.concern).toBe('compatibility')
+    expect(backlog[0]!.axis).toBe('form')
+  })
+
   it('citations are COMPUTED from source and marked enforced iff their clause has a gate', () => {
     cwd = setup()
     try {
       const cites = engineeringCitations(cwd)
-      const modul = cites.find((c) => c.clause === '§5.6.2')
+      const maint = cites.find((c) => c.clause === '§5.7')
       const compat = cites.find((c) => c.clause === '§5.3')
-      expect(modul?.enforced).toBe(true) // §5.6.2 is gate-enforced
+      expect(maint?.enforced).toBe(true) // §5.7 maintainability is gate-enforced
       expect(compat?.enforced).toBe(false) // §5.3 compatibility is cited but ungated
     } finally {
       rmSync(cwd, { recursive: true, force: true })
