@@ -4,8 +4,10 @@ import {
   tierOfAccessFactory,
   tierRank,
   accessComplianceGaps,
+  assertAccessCompliant,
   type CollectionAccessInput,
 } from '@/access/standard'
+import type { Mesh } from '@/mesh'
 
 describe('access/standard — the API access derived from and gated by its legal surface', () => {
   it('the required tier is the STRICTEST across a collection\'s standards (the superposition collapse)', () => {
@@ -47,5 +49,17 @@ describe('access/standard — the API access derived from and gated by its legal
     // tenant-isolated meets the relaxed read floor (role-scoped? no — read floor is role-scoped, tenant<role) ⇒ flagged on all four
     expect(gaps.length).toBeGreaterThan(0)
     expect(gaps.every((g) => g.declared === 'tenant-isolated')).toBe(true)
+  })
+
+  it('assertAccessCompliant is the GATE — fails closed when gaps exceed the ceiling, passes at/below', () => {
+    // a hermetic mesh with one SOX collection that has NO access → 4 gaps
+    const mesh = {
+      atoms: ['ledger'],
+      edges: [],
+      standards: [{ atom: 'ledger', tag: 'standard', id: 'SOX:2002 §404' }],
+      collections: [{ slug: 'ledger', atom: 'ledger', operations: ['find', 'create', 'update', 'delete'], declaredAccess: 'NONE' }],
+    } as unknown as Mesh
+    expect(() => assertAccessCompliant(process.cwd(), 0, mesh)).toThrow(/below their legal floor/)
+    expect(() => assertAccessCompliant(process.cwd(), 4, mesh)).not.toThrow() // at ceiling ⇒ passes (ratchet)
   })
 })

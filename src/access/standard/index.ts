@@ -130,6 +130,26 @@ export function accessComplianceGaps(collections: readonly CollectionAccessInput
   return gaps
 }
 
+/**
+ * THE GATE — the standards→access automation made fail-closed. The compliance gap may not GROW: a
+ * new API endpoint below its legal floor fails CI, and the ceiling ratchets DOWN as gaps close
+ * (each collection given access matching its standards). This is the last edge of the quantum ERP —
+ * the legal surface does not merely DESCRIBE the API's access, it GOVERNS it, enforced at the push.
+ *
+ * The current ceiling is the LEXICAL over-count (factory-injected access reads as a gap until the
+ * boot-resolved read lands — the honest boundary); it ratchets toward the true floor as #19/#22 land.
+ */
+export function assertAccessCompliant(cwd: string = process.cwd(), ceiling: number, mesh?: import('@/mesh').Mesh): void {
+  const gaps = accessComplianceOverMesh(cwd, mesh)
+  if (gaps.length <= ceiling) return
+  const auditor = gaps.filter((g) => g.required === 'auditor-grade')
+  throw new Error(
+    `✖ access/standard — ${gaps.length} endpoint(s) below their legal floor exceeds the ceiling ${ceiling} ` +
+      `(${auditor.length} auditor-grade). A new under-governed API landed — give it access matching its standards, ` +
+      `or it violates the law it cites. First: ${auditor.slice(0, 3).map((g) => `${g.slug}.${g.operation}<${g.required}`).join(' ')}`,
+  )
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const gaps = accessComplianceOverMesh()
   const byTier = new Map<string, number>()
