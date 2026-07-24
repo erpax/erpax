@@ -8,11 +8,12 @@ import { atomPathHasLedgerHook } from '@/path'
 import {
   buildReadmeCorpusFrozenInputs,
   deriveFolderModel,
+  listAtomPaths,
   materializeComputedFacesForPathsStable,
   type FolderReadmeModel,
 } from '@/readme/compute'
 import { aggregateCorpusEntropy, mergeCorpusEntropy } from '@/readme/entropy'
-import { corpusPathWaveBatches } from '@/wave/scheduler'
+import { corpusPathWaveBatches, pathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave/policy'
 
 const SRC = 'src'
@@ -137,7 +138,11 @@ export function accountingGapsInWaves(cwd = process.cwd(), opts: AccountingGapsI
   let rollup: ReturnType<typeof aggregateCorpusEntropy> | null = null
   let gapPathCount = 0
   let n = 0
-  for (const batch of corpusPathWaveBatches({}, policy)) {
+  // #17 fix: the real corpus walks the generated matrix (fast); a FIXTURE cwd must schedule its OWN
+  // filesystem paths, or it re-measures the real corpus. The real-corpus count is unchanged.
+  const batches =
+    cwd === process.cwd() ? corpusPathWaveBatches({}, policy) : pathWaveBatches(listAtomPaths(cwd), policy)
+  for (const batch of batches) {
     if (n >= maxWaves) break
     n++
     let gapEb = 0, sealEb = 0, netEb = 0

@@ -95,6 +95,23 @@ export function* corpusPathWaveBatches(
 }
 
 /**
+ * Wave batches over EXPLICIT paths — the cwd-aware source. `corpusPathWaveBatches` walks the generated
+ * UUID_MATRIX (the real corpus, fast), so a caller measuring a FIXTURE tree must pass that fixture's own
+ * paths here instead, or it re-measures the real corpus (the #17 test-isolation bug). Same self-balancing
+ * schedule, just seeded from the given paths rather than the matrix walk.
+ */
+export function* pathWaveBatches(
+  paths: readonly string[],
+  policy?: MaxWorkTamperPolicy,
+): Generator<WaveBatch<string>> {
+  const plan = selfBalancingWaveLoad([...paths], {
+    weightOf: pathComparableUnits,
+    maxUnitsPerWave: policy?.maxUnitsPerWave,
+  })
+  for (const wave of plan.waves) yield wave
+}
+
+/**
  * Process wave batches in policy-sized parallel chunks (disjoint paths — safe).
  * Sync runner: each chunk processes up to `batchConcurrency` waves before yielding.
  */
