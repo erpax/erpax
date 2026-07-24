@@ -7,7 +7,7 @@
  *
  * @see ./cheap-dispatch · ./strict-apply · ../skill/router/lazy-load · ./SKILL.md
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, type Dirent } from 'node:fs'
+import { existsSync, readFileSync, statSync } from 'node:fs'
 import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { join } from 'node:path'
 import { accountCodeOf } from '@/accounting'
