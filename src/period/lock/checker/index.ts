@@ -1,6 +1,9 @@
 /**
  * PeriodLockChecker
  *
+ * The "closed periods refuse new postings (except reversals/PPA)" @invariant is now PROVEN beside this
+ * code (test.ts) — including the fail-closed leg on an unparseable date (the §404 bypass this fixed).
+ *
  * Determines if a posting date falls within a locked period.
  * Manages period closing and prevents posting to closed periods
  * unless explicitly overridden by admin.
