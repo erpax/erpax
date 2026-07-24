@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { collapseReport, buildableReports, reportSuperpositionSize, FORMAT_LAW, type ReportFormat } from './index'
+import { collapseReport, buildableReports, reportSuperpositionSize, reportConserves, FORMAT_LAW, type ReportFormat } from './index'
 import type { Mesh } from '@/mesh'
 
 // A report is a superposition (standards × format × data × reader) collapsed on request — computed,
@@ -65,5 +65,20 @@ describe('report — the document is a collapsed superposition, not a template',
     expect(mag.standards).toBe(3) // three distinct ids in the fixture
     expect(mag.pairwiseStandards).toBe(9) // S²
     expect(mag.fullSuperposition).toBe(3 * 4 * 4 * 14) // standards × collections × 4 ops × 14 readers
+  })
+
+  it('reportConserves: the conservation kernel guards the ERP output — a report must net to zero (Σassets=Σliab+equity)', () => {
+    // a balanced balance sheet: assets +100 = liabilities +60 + equity +40 (signed: assets +, claims −)
+    expect(reportConserves('balance-sheet', [+100, -60, -40]).conserves).toBe(true)
+    expect(reportConserves('balance-sheet', [+100, -60, -40]).net).toBe(0)
+    // an UNBALANCED sheet is refused — the same law as an unbalanced journal entry
+    const bad = reportConserves('balance-sheet', [+100, -60, -30])
+    expect(bad.conserves).toBe(false)
+    expect(bad.net).toBeCloseTo(10)
+    // trial balance: Σdebit = Σcredit
+    expect(reportConserves('trial-balance', [+250, +150, -400]).conserves).toBe(true)
+    // tolerance, never float equality — a sub-cent rounding difference still conserves
+    expect(reportConserves('cash-flow', [+1000.002, -1000.0]).conserves).toBe(true)
+    expect(reportConserves('cash-flow', [+1000.02, -1000.0]).conserves).toBe(false) // beyond tolerance
   })
 })

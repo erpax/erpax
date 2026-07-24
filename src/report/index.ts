@@ -23,6 +23,7 @@
  * @audit ISO-19011:2018 §6.4 — a report is read by the reader who signs it
  */
 import { meshOf, standardApiCross, type Mesh, type MeshCollection, type ApiEndpoint } from '@/mesh'
+import { netFlow } from '@/conservation'
 import { requiredAccessTier, tierRank, type AccessTier } from '@/access/standard'
 
 /** The document formats a request may ask for — each a projection the corpus can build from atoms. */
@@ -93,6 +94,30 @@ export function collapseReport(mesh: Mesh, request: ReportRequest): ReportSpec &
 }
 
 /** Which of the 8 formats are fully self-buildable from standing atoms today, and which are blocked by a gap. */
+export interface ReportBalanceCheck {
+  readonly format: ReportFormat
+  /** Σ of the report's signed figures — 0 (within tolerance) iff the report conserves */
+  readonly net: number
+  readonly conserves: boolean
+}
+
+/**
+ * The conservation kernel wired into the ERP's output: a financial report MUST conserve. A trial
+ * balance's Σdebit = Σcredit, a balance sheet's Σassets = Σ(liabilities + equity), a cash-flow's Σin =
+ * Σout — all the SAME netFlow = 0 as double-entry ([[conservation]]), now guarding the document the
+ * reader signs. Figures are signed flows (+ debit/asset/inflow, − credit/liability/outflow); a report
+ * whose figures do not net to zero is refused, exactly as an unbalanced journal entry is. Tolerance,
+ * never float equality (the honest boundary — rounding is not a failure).
+ */
+export function reportConserves(
+  format: ReportFormat,
+  signedFigures: readonly number[],
+  tolerance = 0.005,
+): ReportBalanceCheck {
+  const net = netFlow([...signedFigures])
+  return { format, net, conserves: Math.abs(net) <= tolerance }
+}
+
 export function buildableReports(cwd: string = process.cwd(), mesh?: Mesh): {
   readonly buildable: readonly ReportFormat[]
   readonly blocked: ReadonlyArray<{ readonly format: ReportFormat; readonly missing: readonly string[] }>
