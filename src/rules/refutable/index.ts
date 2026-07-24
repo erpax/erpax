@@ -35,8 +35,15 @@ import { join, dirname, relative } from 'node:path'
 
 const GENERATED = /skills\.index\.ts$|payload-types\.ts$|\.generated\.ts$/
 const IS_TEST = /(?:^|[/.])test\.tsx?$/
-/** A proposition the corpus asserts about its own matter. */
-const CLAIM_RE = /@invariant\s+([^\n*]+)/g
+/**
+ * A proposition the corpus asserts about its own matter — an `@invariant` BANNER, at the start of a
+ * doc-comment line (`* @invariant <predicate>`), never `@invariant` appearing mid-sentence in prose.
+ * The old pattern matched the word anywhere, so a tool DESCRIBING invariant-processing ("maps the repo's
+ * @invariant banners", "@invariant predicates the translator can't render" in [[spec]]/generator) counted
+ * as claims it does not make — the parse-don't-match defect this corpus keeps paying for. A banner is a
+ * position, not a word; anchoring to the line start (with the `m` flag) counts claims, not mentions.
+ */
+const CLAIM_RE = /^[ \t]*(?:\/\*\*?|\*+|\/\/)?[ \t]*@invariant[ \t]+([^\n*]+)/gm
 
 /** A claim with nothing beside it that could say no. */
 export interface UnrefutableClaim {
