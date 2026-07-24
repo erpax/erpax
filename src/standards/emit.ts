@@ -239,6 +239,34 @@ export function standardImplementation(cwd: string = process.cwd()): StandardImp
     .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id))
 }
 
+/**
+ * DECLARED: the families a signer/auditor/regulator RELIES ON as a wall — they must be fail-closed
+ * gated, not merely coded. Arguable in the open (the [[rules]]/audience split): no theorem says SOX must
+ * block; it is written here once so it can be contested. Enforcement-mandatory ⇒ `coded` is not enough.
+ */
+export const MUST_GATE = /SOX|§404|§302|GDPR|Наредба|СУПТО|ЗДДС|ЗСч|PCI-?DSS|ISO.?27001|NIST-SP-800|AMLD|EU-2015\/849/i
+
+/** Enforcement-mandatory standards that are CITED but not GATED — the missing walls. */
+export function ungatedMandatory(cwd: string = process.cwd()): StandardImplementation[] {
+  return standardImplementation(cwd).filter((s) => MUST_GATE.test(s.id) && s.citations > 0 && s.depth !== 'gated')
+}
+
+/**
+ * THE GATE — the standards-enforcement ratchet, turning standardImplementation from a measure into a
+ * wall. An enforcement-mandatory standard (SOX, GDPR, fiscal, security) that is CITED but only `coded`
+ * (runs, but does not fail-closed) is a missing wall: the signer relies on a block that is not there.
+ * The count may not GROW; it ratchets DOWN as each is wired to a rules/law/access gate — driving the
+ * corpus from "documents standards" toward "enforces them", the 9→255 horizon standardImplementation named.
+ */
+export function assertStandardsGated(cwd: string = process.cwd(), ceiling: number): void {
+  const ungated = ungatedMandatory(cwd)
+  if (ungated.length <= ceiling) return
+  throw new Error(
+    `✖ standards — ${ungated.length} enforcement-mandatory standard(s) cited but NOT gated (fail-closed) exceeds ceiling ${ceiling}: ` +
+      `${ungated.map((s) => `${s.id}(${s.depth})`).slice(0, 6).join(' ')} — wire each to a rules/law/access gate, or the wall a signer relies on is missing.`,
+  )
+}
+
 export function emitCatalogueTs(entries: CatalogueEntry[], cwd: string = process.cwd()): void {
   const out = join(cwd, 'src/standards/catalogue.ts')
   const body = `/**
@@ -370,6 +398,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       process.exit(1)
     }
     console.log(`OK — catalogue fresh (${cited.length} cited standards, uuid-native).`)
+    // ENFORCEMENT ratchet: an enforcement-mandatory standard cited but not fail-closed gated is a
+    // missing wall. Ceiling ratchets DOWN as each is wired to a rules/law/access gate (9→255 horizon).
+    try {
+      assertStandardsGated(cwd, 6)
+      console.log('OK — every enforcement-mandatory standard within the gating ratchet.')
+    } catch (e) {
+      console.error((e as Error).message)
+      process.exit(1)
+    }
   } else {
     emitStandardsCatalogue(cwd)
     console.log('Wrote catalogue.ts + SKILL.md index (uuid-native).')

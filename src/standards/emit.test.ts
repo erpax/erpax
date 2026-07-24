@@ -102,5 +102,19 @@ describe('standards/emit — catalogue generator', () => {
       const uncited = s.find((x) => x.depth === 'uncited')
       if (gated && uncited) expect(gated.score).toBeGreaterThan(uncited.score)
     })
+
+    it('assertStandardsGated is the ENFORCEMENT ratchet — a mandatory standard cited-but-ungated fails closed', async () => {
+      const { ungatedMandatory, assertStandardsGated, MUST_GATE } = await import('@/standards/emit')
+      const u = ungatedMandatory()
+      // every flagged standard is enforcement-mandatory, cited, and NOT gated
+      for (const x of u) {
+        expect(MUST_GATE.test(x.id)).toBe(true)
+        expect(x.citations).toBeGreaterThan(0)
+        expect(x.depth).not.toBe('gated')
+      }
+      // the ratchet: at/above the live count passes; below it (demanding fewer walls missing) fails closed
+      expect(() => assertStandardsGated(process.cwd(), u.length)).not.toThrow()
+      expect(() => assertStandardsGated(process.cwd(), u.length - 1)).toThrow(/NOT gated \(fail-closed\)/)
+    })
   })
 })
