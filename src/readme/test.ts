@@ -21,6 +21,7 @@ import {
   deriveModel,
   renderReadme,
   readmeUuid,
+  licenseNote,
   cloudflareDeployButtonMarkdown,
   CLOUDFLARE_DEPLOY_REPO_URL,
   deriveFolderModel,
@@ -144,6 +145,15 @@ describe('readme — the README is a diamond', () => {
 
   it('renderReadme is PURE and STABLE: same model ⇒ byte-identical markdown', () => {
     expect(renderReadme(FIXED)).toBe(renderReadme(FIXED))
+  })
+
+  it('licenseNote is GENERATED from the SPDX id — copyleft emits the commercial dual-license, permissive emits nothing', () => {
+    const agpl = licenseNote('AGPL-3.0-or-later')
+    expect(agpl.join('\n')).toMatch(/commercial license/i)
+    expect(agpl.join('\n')).toMatch(/ceci@psg\.bg/)
+    expect(licenseNote('GPL-3.0').length).toBeGreaterThan(0) // any copyleft
+    expect(licenseNote('MIT')).toEqual([]) // permissive ⇒ no dual-license note
+    expect(licenseNote('Apache-2.0')).toEqual([])
   })
 
   it('readmeUuid is a conformant v8 content-uuid, stable under recomputation', () => {

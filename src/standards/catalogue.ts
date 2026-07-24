@@ -1229,7 +1229,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds / crypto Travel Rule)",
     "uuid": "21f55193-2265-8002-9a8c-70a9b8300433",
     "color": "hsl(53 66% 41%)",
-    "count": 243,
+    "count": 245,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1335,7 +1335,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2023/2854 — Data Act, on harmonised rules on fair access to and use of data",
     "uuid": "1b87a397-6113-8257-9b81-fb82841c78c9",
     "color": "hsl(207 78% 45%)",
-    "count": 243,
+    "count": 245,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1441,7 +1441,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Carbon Border Adjustment Mechanism — Regulation (EU) 2023/956",
     "uuid": "b4f6dd26-c4bf-8dd0-8cc4-5f5db71660b8",
     "color": "hsl(246 66% 52%)",
-    "count": 243,
+    "count": 245,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1865,8 +1865,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ePrivacy Directive (Directive 2002/58/EC) — privacy and electronic communications (as amended by Directive 2009/136/EC)",
     "uuid": "1fdea4fd-ddf2-8a5d-8efc-0f182d2749c2",
     "color": "hsl(238 79% 51%)",
-    "count": 130,
+    "count": 131,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": "§404"
+      },
       {
         "path": "src/agents/registered/data.agent.ts",
         "section": ""
@@ -1957,10 +1961,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/country/api/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/country/api/index.ts",
         "section": ""
       }
     ]
@@ -5003,7 +5003,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 170,
+    "count": 172,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -6498,10 +6498,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 58,
+    "count": 59,
     "modules": [
       {
         "path": "src/access/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/access/standard/index.ts",
         "section": ""
       },
       {
@@ -6591,10 +6595,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/fiscal/devices/sales/SKILL.md",
         "section": ""
-      },
-      {
-        "path": "src/integrity/envelope.ts",
-        "section": "Annex A"
       }
     ]
   },
@@ -6604,10 +6604,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
     "uuid": "1f8df678-adff-8feb-9e78-aaa58e7b0fb4",
     "color": "hsl(157 56% 38%)",
-    "count": 58,
+    "count": 59,
     "modules": [
       {
         "path": "src/access/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/access/standard/index.ts",
         "section": ""
       },
       {
@@ -6697,10 +6701,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/fiscal/devices/sales/SKILL.md",
         "section": ""
-      },
-      {
-        "path": "src/integrity/envelope.ts",
-        "section": "Annex A"
       }
     ]
   },
@@ -8107,8 +8107,16 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG fiscal-device & SUPTO ordinance",
     "uuid": "6a08f86f-afe0-8049-a445-c03e255093d7",
     "color": "hsl(144 58% 53%)",
-    "count": 32,
+    "count": 35,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": "§СУПТО"
+      },
+      {
+        "path": "src/audit/speed/index.ts",
+        "section": "§СУПТО"
+      },
       {
         "path": "src/audit/submissions/index.ts",
         "section": "§Приложение-38"
@@ -8158,6 +8166,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§СУПТО"
       },
       {
+        "path": "src/report/index.ts",
+        "section": "§СУПТО"
+      },
+      {
         "path": "src/rules/reference/SKILL.md",
         "section": ""
       },
@@ -8191,18 +8203,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/sale/order-fiscalization.ts",
-        "section": "§СУПТО"
-      },
-      {
-        "path": "src/sale/receipt-subscriber.ts",
-        "section": "§СУПТО"
-      },
-      {
-        "path": "src/sale/reverse-sale.ts",
-        "section": "§СУПТО"
-      },
-      {
-        "path": "src/sale/sale-event.ts",
         "section": "§СУПТО"
       }
     ]
@@ -8953,7 +8953,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 61,
+    "count": 62,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -9028,6 +9028,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/report/index.ts",
+        "section": "§СУПТО"
+      },
+      {
         "path": "src/reverse/SKILL.md",
         "section": "§3"
       },
@@ -9045,10 +9049,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/saf/t/validate.ts",
-        "section": ""
-      },
-      {
-        "path": "src/sale/audit-file.ts",
         "section": ""
       }
     ]
@@ -9280,10 +9280,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Hours of Work (Industry) Convention, 1919 (No. 1)",
     "uuid": "c4a2d197-a686-84ef-875d-dacd7e8aaaa3",
     "color": "hsl(298 89% 45%)",
-    "count": 119,
+    "count": 120,
     "modules": [
       {
         "path": "src/access/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/access/standard/index.ts",
         "section": ""
       },
       {
@@ -9372,10 +9376,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
         "section": ""
       }
     ]
@@ -10913,8 +10913,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 24,
+    "count": 25,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": "§404"
+      },
       {
         "path": "src/agents/accounting/finance.agent.ts",
         "section": "§404"
@@ -11745,7 +11749,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1985,
+    "count": 1986,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",
@@ -11824,6 +11828,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/app/(frontend)/[locale]/pricing/page.tsx",
+        "section": ""
+      },
+      {
         "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
         "section": ""
       },
@@ -11837,10 +11845,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/app/(frontend)/layout.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/not-found.tsx",
         "section": ""
       }
     ]
