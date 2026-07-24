@@ -8,8 +8,10 @@ import {
   quantumIntelligenceOf,
   rankGapsByEntanglement,
   nextMoveByLeverage,
+  improveByExperience,
   learnSciencesOnTheWay,
   __resetIntelligenceReceiptHeadForTests,
+  type LeveragedNext,
 } from './index'
 import { linearGaps } from '@/quantum'
 import { resetSecurityMonitorForTests } from '@/agent/security'
@@ -36,6 +38,22 @@ describe('agent/intelligence', () => {
     const steps = learnSciencesOnTheWay(['fold', 'entropy'])
     expect(steps.some((s) => s.science === 'fold')).toBe(true)
     expect(steps[0]?.module).toMatch(/^@\//)
+  })
+
+  it('improveByExperience reweights the next move by history — a dead root sinks, a proven folder rises', () => {
+    const mk = (root: string, leverage: number): LeveragedNext => ({ root, gapCount: 1, leverage, axes: ['linear-gap'], gaps: [] })
+    // structurally, 'stuck' looks highest-leverage; 'proven' lower
+    const moves = [mk('stuck', 100), mk('proven', 60), mk('fresh', 50)]
+    const experience = [
+      { root: 'stuck', attempts: 8, improved: 0 }, // tried 8×, never folded → foldRate → 1/10
+      { root: 'proven', attempts: 8, improved: 8 }, // always folds → foldRate → 9/10
+    ]
+    const ranked = improveByExperience(moves, experience)
+    // proven (60 × 0.9 = 54) now outranks stuck (100 × 0.1 = 10) — experience beats raw structure
+    expect(ranked[0]!.root).toBe('proven')
+    expect(ranked.find((r) => r.root === 'stuck')!.weighted).toBeLessThan(ranked.find((r) => r.root === 'fresh')!.weighted)
+    // an UNSEEN root is neutral (0.5), never punished for lack of history
+    expect(ranked.find((r) => r.root === 'fresh')!.foldRate).toBe(0.5)
   })
 
   it('dry cycle does not abort when wave lock free', () => {

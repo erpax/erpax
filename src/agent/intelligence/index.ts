@@ -207,6 +207,40 @@ export function nextMoveByLeverage(cwd = process.cwd(), batch = 50, ranked?: rea
   return rows.sort((a, b) => (b.leverage - a.leverage) || a.root.localeCompare(b.root))
 }
 
+/** One root's accumulated experience: how often attempting it actually reduced the violation count. */
+export interface RootExperience {
+  readonly root: string
+  readonly attempts: number
+  readonly improved: number
+}
+
+/**
+ * IMPROVE BY EXPERIENCE — reweight the next move by the agent's own history. `nextMoveByLeverage`
+ * ranks by structure alone (fuse × entanglement), so it will re-pick a root that looks high-leverage
+ * yet has been attempted before and never folded — repeating a dead move. This multiplies each root's
+ * leverage by its experienced fold-rate (Laplace-smoothed (improved+1)/(attempts+1)), so a root that
+ * reliably shrinks the count rises and one that was tried and stuck sinks. It is the ladder law
+ * ([[quantum]]/computer): every move bounded by its own history. Pure — the history is passed in, so a
+ * caller reads it from the receipt chain (issueReceipt outcomes) and the ranking stays testable.
+ *
+ * @param moves the structural ranking from nextMoveByLeverage
+ * @param experience per-root attempt/improve counts, from past cycles' receipts
+ */
+export function improveByExperience(
+  moves: readonly LeveragedNext[],
+  experience: readonly RootExperience[],
+): Array<LeveragedNext & { readonly foldRate: number; readonly weighted: number }> {
+  const byRoot = new Map(experience.map((e) => [e.root, e]))
+  return moves
+    .map((m) => {
+      const e = byRoot.get(m.root)
+      // Laplace smoothing: an unseen root starts at 0.5 (neutral), proven folders → 1, dead roots → 0
+      const foldRate = e ? (e.improved + 1) / (e.attempts + 2) : 0.5
+      return { ...m, foldRate, weighted: m.leverage * foldRate }
+    })
+    .sort((a, b) => (b.weighted - a.weighted) || a.root.localeCompare(b.root))
+}
+
 /** Pure metric: scoped violation count × bond-degree fold (interact64); no literary labels. */
 export function quantumIntelligenceOf(scope: string, cwd = process.cwd()): number {
   const fold = doubleFold(scope)
