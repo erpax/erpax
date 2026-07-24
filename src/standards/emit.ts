@@ -190,6 +190,55 @@ export function buildStandardsCatalogue(cwd: string = process.cwd()): {
   return { entries, totalHits: hits.length, matched }
 }
 
+export type ImplementationDepth = 'uncited' | 'prose' | 'coded' | 'gated'
+
+export interface StandardImplementation {
+  readonly id: string
+  readonly citations: number
+  /** how deep the standard reaches: uncited → prose (docs only) → coded (in a .ts) → gated (fail-closed) */
+  readonly depth: ImplementationDepth
+  /** how many OTHER standards co-occur in its files — its fusion into the rest of the corpus */
+  readonly fusionDegree: number
+  /** depthRank × (1 + log₂(1+fusion)): well-implemented-AND-fused iff ENFORCED and SHARING its files */
+  readonly score: number
+}
+
+const DEPTH_RANK: Readonly<Record<ImplementationDepth, number>> = { uncited: 0, prose: 1, coded: 2, gated: 3 }
+
+/**
+ * How well is each standard computationally IMPLEMENTED and FUSED with the others in the quantum ERP?
+ * The catalogue knows WHICH atoms cite each standard; this scores HOW. DEPTH is a ladder: uncited (no
+ * citation) → prose (only in a .md face) → coded (cited inside a .ts, so it runs) → gated (cited in a
+ * rules/law/access GATE — enforced, fail-closed, the deepest). FUSION is the co-citation degree: how many
+ * OTHER standards share a file with it — a standard fused with many is load-bearing across the corpus, one
+ * that stands alone is isolated. The score rewards both: a standard is well-implemented-and-fused only if
+ * it is ENFORCED and SHARES its matter with many others — enforced-and-alone or fused-but-prose both lose.
+ *
+ * Honest boundary: depth reads the citing file's KIND, not that the code correctly implements the standard
+ * (that is [[rules]]/audience's question); and fusion samples the top-24 citing files per standard (the
+ * catalogue's cap), so a very widely-cited standard's fusion is a lower bound.
+ */
+export function standardImplementation(cwd: string = process.cwd()): StandardImplementation[] {
+  const { entries } = buildStandardsCatalogue(cwd)
+  const byFile = new Map<string, Set<string>>()
+  for (const e of entries) for (const m of e.modules) {
+    const s = byFile.get(m.path) ?? new Set<string>()
+    s.add(e.id)
+    byFile.set(m.path, s)
+  }
+  return entries
+    .map((e) => {
+      let depth: ImplementationDepth = e.count === 0 ? 'uncited' : 'prose'
+      if (e.modules.some((m) => /\.tsx?$/.test(m.path))) depth = 'coded'
+      if (e.modules.some((m) => /^src\/(rules|law|access)\//.test(m.path))) depth = 'gated'
+      const fused = new Set<string>()
+      for (const m of e.modules) for (const other of byFile.get(m.path) ?? []) if (other !== e.id) fused.add(other)
+      const score = DEPTH_RANK[depth] * (1 + Math.log2(1 + fused.size))
+      return { id: e.id, citations: e.count, depth, fusionDegree: fused.size, score }
+    })
+    .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id))
+}
+
 export function emitCatalogueTs(entries: CatalogueEntry[], cwd: string = process.cwd()): void {
   const out = join(cwd, 'src/standards/catalogue.ts')
   const body = `/**

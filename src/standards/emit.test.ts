@@ -82,4 +82,25 @@ describe('standards/emit — catalogue generator', () => {
       rmSync(d, { recursive: true, force: true })
     })
   })
+
+  describe('standardImplementation — how well each standard is implemented + fused (bounded witness on the live corpus)', () => {
+    it('scores every registered standard on the depth ladder and co-citation fusion, ranked by score', async () => {
+      const { standardImplementation } = await import('@/standards/emit')
+      const s = standardImplementation()
+      expect(s.length).toBeGreaterThan(50)
+      // sorted descending by score
+      for (let i = 1; i < s.length; i++) expect(s[i - 1]!.score).toBeGreaterThanOrEqual(s[i]!.score)
+      // every entry is well-formed
+      for (const x of s) {
+        expect(['uncited', 'prose', 'coded', 'gated']).toContain(x.depth)
+        expect(x.fusionDegree).toBeGreaterThanOrEqual(0)
+        if (x.depth === 'uncited') expect(x.citations).toBe(0)
+        if (x.depth === 'uncited') expect(x.score).toBe(0)
+      }
+      // a GATED standard (enforced in rules/law/access) is the deepest and outscores an uncited one
+      const gated = s.find((x) => x.depth === 'gated')
+      const uncited = s.find((x) => x.depth === 'uncited')
+      if (gated && uncited) expect(gated.score).toBeGreaterThan(uncited.score)
+    })
+  })
 })
