@@ -2271,6 +2271,8 @@ src/relocate/index.ts:12: * @standard gravity — mass curves placement (the DRY
 src/remote/media/import/index.ts:8: * @standard ISO/IEC-23008 mpeg-image
 src/remote/media/import/index.ts:9: * @standard ISO/IEC-10918 jpeg
 src/render/index.ts:16: * @standard the analog aura — colour/sound/vibration as projections of one content-uuid (A432)
+src/report/index.ts:21: * @standard IFRS-Taxonomy — a financial statement is a projection over the ledger, not stored
+src/report/index.ts:22: * @standard BG Наредба Н-18 §СУПТО — the SAF-T export is a mandated document format
 src/rfc/3986/generate-preview-path.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/rfc/3986/generate-preview-path.test.ts:6: * @standard W3C URL Living Standard
 src/rfc/3986/generate-preview-path.test.ts:7: * @standard BCP-47 language-tag
@@ -6061,6 +6063,7 @@ src/regulatory/deferral/accounts/index.ts:15: * @audit ISO 19011:2018 §6.4.6 au
 src/relocate/index.ts:13: * @audit computed over the live uuid-matrix mass ([[gravity]]); never hand-asserted
 src/remote/media/import/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/render/index.ts:15: * @audit colour/sound/vibration all computed from the uuid's digit (pixel · signal · rodin), never painted on
+src/report/index.ts:23: * @audit ISO-19011:2018 §6.4 — a report is read by the reader who signs it
 src/research/development/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
 src/reveal/index.ts:17: * @audit emergent triads are computed from the live matrix edges, never asserted
 src/rodin/coil/index.ts:22: * @audit every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted
