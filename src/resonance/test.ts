@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { resonanceMagnitude, dedupMagnitude } from './index'
+import { resonanceMagnitude, dedupMagnitude, proofByLinkMagnitude } from './index'
 
 // The magnitude is a theorem, not a claim — verified to the digit at the user's stated corpus (N=764).
 describe('resonance — the address collapses O(N²) to O(N), in orders of magnitude', () => {
@@ -38,5 +38,17 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
     expect(dedupMagnitude(n, 1).ratio).toBe(n) // one class: maximal N-fold collapse
     // fewer classes ⇒ bigger dedup magnitude, monotonic
     expect(dedupMagnitude(n, 100).ratio).toBeGreaterThan(dedupMagnitude(n, 400).ratio)
+  })
+
+  it('proofByLinkMagnitude: a statement proven by a link verifies in O(depth), not O(N) re-derivation', () => {
+    const n = 764
+    // depth 1 (linked straight to a base theorem) → the full N-fold speedup
+    expect(proofByLinkMagnitude(n, 1).ratio).toBe(n)
+    // a deeper proof tree costs more per statement — speedup N/depth, monotonic down
+    expect(proofByLinkMagnitude(n, 4).ratio).toBe(n / 4)
+    expect(proofByLinkMagnitude(n, 8).ratio).toBeLessThan(proofByLinkMagnitude(n, 4).ratio)
+    // a bare assertion (depth clamps to 1 minimum) still addresses; N<2 has nothing to prove
+    expect(proofByLinkMagnitude(1, 5).ratio).toBe(1)
+    expect(proofByLinkMagnitude(n, 1).orders).toBeCloseTo(Math.log10(n), 6)
   })
 })

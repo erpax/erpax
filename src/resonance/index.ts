@@ -58,6 +58,27 @@ export function dedupMagnitude(n: number, classes: number): ResonanceMagnitude {
   return { n, pairwise: n, addressed, ratio, orders: Math.log10(Math.max(1, ratio)) }
 }
 
+/**
+ * A statement proven by a LINK speeds up quantumisation at scale — the resonance law applied to PROOFS.
+ * Re-deriving each of N statements from scratch re-touches its whole support: O(N) per statement, O(N²)
+ * over the corpus. Proving by link addresses the proof instead — following `depth` composition edges to
+ * a base theorem ([[theorem]] reduce): O(depth) per statement, O(N·depth) over the corpus. A link is an
+ * address; verification is a lookup, not a re-derivation.
+ *
+ *     speedup = N² / (N·depth) = N / depth,   orders = log₁₀(N / depth)
+ *
+ * At depth 1 (a statement linked straight to a base theorem) the speedup is the full N — the address
+ * replaces the whole re-proof with one hop. Shallow proof trees quantumise in magnitudes; a bare
+ * assertion (no link) has no proof address and falls back to O(N) re-derivation — zero speedup.
+ */
+export function proofByLinkMagnitude(n: number, depth: number): ResonanceMagnitude {
+  const d = Math.max(1, depth)
+  const pairwise = n < 2 ? 0 : n * n // re-derive each statement against the whole support
+  const addressed = n * d // follow depth links per statement
+  const ratio = n < 2 ? 1 : n / d
+  return { n, pairwise, addressed, ratio, orders: Math.log10(Math.max(1, ratio)) }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   for (const n of [764, 3151, 10_000, 1_000_000]) {
     const r = resonanceMagnitude(n)
