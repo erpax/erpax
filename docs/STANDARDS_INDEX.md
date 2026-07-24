@@ -1430,12 +1430,12 @@ src/integrity/uuid-stream.ts:52: * @standard RFC 9562 §5.8 + RFC 8785 (uuid com
 src/integrity/uuid-stream.ts:53: * @standard W3C VC Data Model 2.0 (verifiable replicas)
 src/integrity/uuid-stream.ts:54: * @standard Topology — torus + Hilbert-space replicas (Hatcher 2002)
 src/integrity/uuid-stream.ts:55: * @standard ISO/IEC 25010:2023 §5.2 performance + §5.7 modularity
-src/intercompany/reconciliation/index.ts:15: * @standard IAS-27:2023 (consolidated and separate financial statements)
-src/intercompany/reconciliation/index.ts:16: * @standard IAS-28:2023 (associates and joint ventures)
-src/intercompany/reconciliation/index.ts:17: * @standard IFRS-3:2023 (business combinations)
-src/intercompany/reconciliation/index.ts:18: * @standard IFRS-10:2023 (consolidated financial statements)
-src/intercompany/reconciliation/index.ts:19: * @standard IFRS-11:2023 (joint arrangements)
-src/intercompany/reconciliation/index.ts:20: * @standard SAF-T:3.0.2 (multi-entity audit trail)
+src/intercompany/reconciliation/index.ts:18: * @standard IAS-27:2023 (consolidated and separate financial statements)
+src/intercompany/reconciliation/index.ts:19: * @standard IAS-28:2023 (associates and joint ventures)
+src/intercompany/reconciliation/index.ts:20: * @standard IFRS-3:2023 (business combinations)
+src/intercompany/reconciliation/index.ts:21: * @standard IFRS-10:2023 (consolidated financial statements)
+src/intercompany/reconciliation/index.ts:22: * @standard IFRS-11:2023 (joint arrangements)
+src/intercompany/reconciliation/index.ts:23: * @standard SAF-T:3.0.2 (multi-entity audit trail)
 src/internal/controls/audit/findings/court-docket.ts:11: * @standard ISO-19011:2018 audit-finding
 src/internal/controls/audit/findings/index.ts:7: * @standard ISO-19011:2018 audit-finding
 src/internal/controls/audit/findings/index.ts:8: * @standard ISO/IEC-27007:2020 ISMS-auditing

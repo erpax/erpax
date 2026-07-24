@@ -1,6 +1,9 @@
 /**
  * IntercompanyReconciliation Service
  *
+ * The `payable = receivable, net` @invariant is now PROVEN beside this code (test.ts) — it is the
+ * conservation algebra (netFlow = 0) at entity scale, verified at 0 and at scale, refutable on any break.
+ *
  * Validates intercompany period closing: balance verification across entities,
  * intercompany payable/receivable matching, elimination account preparation,
  * and consolidation readiness assessment.
