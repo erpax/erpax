@@ -106,3 +106,6 @@ src/**/diamond.json
 
 # scratch — content-addressed throwaways (local cache; useful ones graduate to src atoms)
 .scratch/
+
+# erpax runtime state — wave locks, receipts (never corpus)
+.erpax/
