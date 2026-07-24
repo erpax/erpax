@@ -9,67 +9,928 @@
 
 ## Orient to erpax
 
-**Paste [`https://github.com/erpax/erpax`](https://github.com/erpax/erpax) or clone the repo — both load [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md) first.**
+**Paste [`https://github.com/erpax/erpax`](https://github.com/erpax/erpax) or clone — both load [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md) first.**
 
-1. `git clone https://github.com/erpax/erpax && cd erpax` (or paste the URL into your IDE)
+1. `git clone https://github.com/erpax/erpax && cd erpax`
 2. `pnpm install`
-3. `pnpm erpax doctor` — quick health (stray-ts vs baseline, efficiency pass, corpus entry)
+3. `pnpm erpax doctor`
+4. `pnpm erpax automate`
 
-No separate agent setup — the URL and the repo are the same orientation. All surfaces (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`) point to the same file.
+6 surfaces point to one skill entry. Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content…
+
+Surfaces: `AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `.cursor/rules/erpax.mdc`, `.well-known/ai-skills.json`, `skills.json` → [`.claude/skills/SKILL.md`](.claude/skills/SKILL.md).
 
 ## the diamond
 
-erpax IS a diamond — every atom a carbon vertex bonded gaplessly into one lattice, folded to a
-single content address. This README is that diamond projected: its facets are the seven positions
-of the closed horo ring, and the whole is recoverable from its root uuid. Reading it is reading the crystal.
+**3105** atoms · **38323** bonds at `d2c2b0be-2598-8df0-b012-798101464e39` — principal bonds [[atom]] · [[metatron]] · [[matrix]] · [[horo]] · [[entropy]] · [[cost]]. Every count is re-derived from the sealed matrix and live tree scan.
 
-- corpus address `3fdac31f-901a-8549-a50e-d1003a001754`
-- **3175** atoms · **38401** bonds (the K₁₃ lattice)
-- this README `d4aaef70-c406-8fd5-ac62-15f6daaf63f2` — itself a diamond, regenerable from the tree
+- corpus address `d2c2b0be-2598-8df0-b012-798101464e39`
+- **3105** atoms · **38323** bonds
+- this README `d10e6697-36e8-84de-a7ea-67e65d2a627e`
 
-## the horo ring — the diamond's facets
+## [[pivot]]
 
-The seven positions every flow rides, in measure-walk order `1·2·4·8·7·5·9`. Each row is one facet of
-the crystal; the principal atoms are the most-bonded vertices at that position (computed from the lattice).
+7 horo facets · 3105 atoms · form **3155** · code **1137** · proof **973** — all counts from matrix + fs scan. GitHub truncates `src/` listings above **1000** entries (**961** now: **949** dirs). Literary vocabulary shards under [`vocabulary/`](src/vocabulary/) (**1714** folded) — navigate with `pnpm erpax doctor`, the uuid-matrix, and `pnpm erpax corpus words`, not the GitHub tree.
+
+### the horo ring — the diamond's facets
+
+Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3097** ring atoms — principal facets ranked by bond in-degree.
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 515 | `collapse` · `quantum` · `diamond` · `self` · `tamper` · `agent` |
-| 2 | share | 488 | `accounting` · `thing` · `duality` · `fields` · `entropy` · `transaction` |
-| 4 | weave | 535 | `balance` · `proof` · `fractal` · `holographic` · `breath` · `rodin` |
-| 8 | crest | 546 | `merge` · `cost` · `action` · `matrix` · `gate` · `religion` |
-| 7 | descent | 538 | `sti` · `standard` · `society` · `atom` · `akashic` · `trinity` |
-| 5 | round | 537 | `law` · `uuid` · `horo` · `sequence` · `aura` · `medical` |
-| 9 | unity | 8 | `identity` · `access` · `whole` · `zeropoint` · `signal` · `whole` |
+| 1 | base | 489 | `collapse` · `accounting` · `horo` · `quantum` · `self` · `tamper` |
+| 2 | share | 540 | `thing` · `cost` · `duality` · `fields` · `entropy` · `transaction` |
+| 4 | weave | 526 | `balance` · `proof` · `diamond` · `rodin` · `harmony` · `body` |
+| 8 | crest | 512 | `merge` · `sequence` · `action` · `matrix` · `breath` · `agriculture` |
+| 7 | descent | 529 | `sti` · `standard` · `society` · `atom` · `akashic` · `trinity` |
+| 5 | round | 492 | `law` · `uuid` · `fractal` · `aura` · `medical` · `type` |
+| 9 | unity | 9 | `identity` · `access` · `whole` · `zeropoint` · `signal` · `whole` |
 
 > The control axis governs off the flow ring — `3` access · `6` hooks (3: 4 atoms · 6: 4 atoms), `9` unity closes and `0` is the zeropoint root.
 
-## the trinity — every atom told three ways
+### the trinity — every atom told three ways
 
-- **3175** atoms — one-word folders, each a sealed vertex
-- **3175** `SKILL.md` — the form (antimatter)
-- **1016** `index.ts` — the code (matter)
-- **813** `test.ts` — the proof
+Trinity legs **5265** files across **3105** atoms — form·code·proof from live scan.
+
+- **3105** atoms — one-word folders
+- **3155** `SKILL.md` — the form (antimatter)
+- **1137** `index.ts` — the code (matter)
+- **973** `test.ts` — the proof
+
+
+### cross-tab state
+
+Cross-tab of **3156** folder README models — state × count per axis.
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 2107 | 66.76 |
+| sealed | 1049 | 33.24 |
+| **Σ** | **3156** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 2946 | 93.35 |
+| unbalanced | 210 | 6.65 |
+| **Σ** | **3156** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 2992 | 94.8 |
+| not-held | 164 | 5.2 |
+| **Σ** | **3156** | **100** |
+
+### folder law / name
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| valid | 3150 | 99.81 |
+| invalid | 6 | 0.19 |
+| **Σ** | **3156** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 2180 | 69.07 |
+| code-complete | 968 | 30.67 |
+| incomplete | 8 | 0.25 |
+| **Σ** | **3156** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 549 | 17.4 |
+| ring·7 | 533 | 16.89 |
+| ring·4 | 528 | 16.73 |
+| ring·8 | 516 | 16.35 |
+| ring·5 | 498 | 15.78 |
+| ring·1 | 491 | 15.56 |
+| off-ring·3 | 15 | 0.48 |
+| ring·9 | 13 | 0.41 |
+| missing | 9 | 0.29 |
+| off-ring·6 | 4 | 0.13 |
+| **Σ** | **3156** | **100** |
+
+### typography / bond degree
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| 11+ | 2593 | 82.16 |
+| 6–10 | 367 | 11.63 |
+| 0 | 164 | 5.2 |
+| 1–5 | 32 | 1.01 |
+| **Σ** | **3156** | **100** |
+
+
+
+GitHub truncates `src/` listings above **1000** entries (**961** now: **949** dirs). Literary vocabulary shards under [`vocabulary/`](src/vocabulary/) (**1714** folded) — navigate with `pnpm erpax doctor`, the uuid-matrix, and `pnpm erpax corpus words`, not the GitHub tree.
+
+## source index
+
+> the README is the index to source code — the rosetta organises the SKILL frontmatter into its measures and realises each generator's achievement. the rosetta keeps only the basis: **751** irreducible generators (own executable logic) below; every `SKILL.md` links onward to its neighbours, so the derivable combinations are reached by following the links — computed, never listed.
+
+### base · 114
+
+- [accept](src/accept/SKILL.md) — reasoning about accept as a schema.org vocabulary word
+- [accounting/corpus](src/accounting/corpus/SKILL.md) — reasoning about accounting/corpus
+- [agent/ui](src/agent/ui/SKILL.md) — reasoning about the trained UI agent
+- [algebra](src/algebra/SKILL.md) — reducing the corpus's theorems to their only substance
+- [argument](src/argument/SKILL.md) — measuring an argument's quality
+- [authenticated](src/authenticated/SKILL.md) — gating a Payload collection or field on a logged-in session
+- [average/calculator](src/average/calculator/SKILL.md) — taking the arithmetic mean of a number array anywhere in the corpus
+- [bank/accounts/bank/transactions](src/bank/accounts/bank/transactions/SKILL.md) — matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines
+- [blockchain](src/blockchain/SKILL.md) — reasoning about erpax AS a blockchain
+- [body/abdomen](src/body/abdomen/SKILL.md) — reasoning about abdomen as an anatomical part of [[body]]
+- [body/foot](src/body/foot/SKILL.md) — reasoning about foot as an anatomical part of [[body]]
+- [body/location](src/body/location/SKILL.md) — reasoning about location as a anatomical part of [[body]]
+- [body/water](src/body/water/SKILL.md) — reasoning about water as a anatomical part of [[body]]
+- [bookable/resources](src/bookable/resources/SKILL.md) — cataloguing or querying reservable assets
+- [cache](src/cache/SKILL.md) — optimizing repeated access
+- [classify/tax/id](src/classify/tax/id/SKILL.md) — a tax-ID needs a normalised type-label stamped onto the document
+- [cli](src/cli/SKILL.md) — invoking operational gates from package.json
+- [collapse](src/collapse/SKILL.md) — reducing collection/table sprawl to its canonical minimum
+- [collide](src/collide/SKILL.md) — folding two atoms into one
+- [collider](src/collider/SKILL.md) — collapsing the corpus's conventions into one tamper-cost verdict
+- [color](src/color/SKILL.md) — reasoning about color
+- [communication](src/communication/SKILL.md) — conveying a message from a sender to a receiver
+- [competition](src/competition/SKILL.md) — reasoning about how erpax skills EVOLVE
+- [computer](src/computer/SKILL.md) — reasoning about computer as a schema.org vocabulary word
+- [computer/algorithm](src/computer/algorithm/SKILL.md) — running search/sort primitives under the machine
+- [computer/quantum](src/computer/quantum/SKILL.md) — reaching the quantum machine from the computer atom
+- [computer/screen](src/computer/screen/SKILL.md) — reasoning about screen as a part of [[computer]]
+- [computer/software](src/computer/software/SKILL.md) — reasoning about software as a part of [[computer]]
+- [computer/stack](src/computer/stack/SKILL.md) — managing call frames LIFO under the machine
+- [conformal](src/conformal/SKILL.md) — reasoning about changing perspective
+- [conservation](src/conservation/SKILL.md) — reasoning about what is conserved across a flow
+- [db](src/db/SKILL.md) — reasoning about the store
+- [dead](src/dead/SKILL.md) — checking the corpus for dead weight without re-deriving it by hand
+- [decentralization](src/decentralization/SKILL.md) — order must arise with NO central controller
+- [decompression](src/decompression/SKILL.md) — reasoning about the dive/decompression metaphor for erpax math
+- [derive](src/derive/SKILL.md) — skills come from USER CONTENT
+- [dimension](src/dimension/SKILL.md) — one concept is split across many prefixed collections/fields that should coexist at one coordinate
+- [drone](src/drone/SKILL.md) — the society sends scouts to fly the content-uuid matrix in coordinated self-learning
+- [employees](src/employees/SKILL.md) — managing workforce records
+- [entanglement](src/entanglement/SKILL.md) — reasoning about the link field that couples atoms
+- [evidence/attestations](src/evidence/attestations/SKILL.md) — assembling SOX §404 audit-pack evidence
+- [expense](src/expense/SKILL.md) — reasoning about expense
+- [fiscal/devices/sales](src/fiscal/devices/sales/SKILL.md) — fiscalizing revenue under Наредба Н-18 СУПТО
+- [fiscal/period/resolver](src/fiscal/period/resolver/SKILL.md) — resolving a calendar date to a fiscal year/period, generating a fiscal calendar, or amending a peri…
+- [fusion](src/fusion/SKILL.md) — reasoning about the reactor that builds erpax
+- [gl/accounts/account/reconciliations](src/gl/accounts/account/reconciliations/SKILL.md) — capturing or reviewing period-end reconciliation sign-off evidence
+- [gl/accounts/bank/statements](src/gl/accounts/bank/statements/SKILL.md) — importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation
+- [gl/accounts/period/end/adjustments](src/gl/accounts/period/end/adjustments/SKILL.md) — posting or reviewing period-end adjusting entries
+- [government/grants](src/government/grants/SKILL.md) — recording or reporting public-sector grants, EU funds, or national subsidies
+- [graph](src/graph/SKILL.md) — modeling a directed graph of nodes and edges
+- [heart/color](src/heart/color/SKILL.md) — reading the heart chakra's colour
+- [horo](src/horo/SKILL.md) — reasoning about horo
+- [identification](src/identification/SKILL.md) — reasoning about identification as a schema.org vocabulary word
+- [image](src/image/SKILL.md) — a content-uuid needs a visual
+- [incoterms/2020](src/incoterms/2020/SKILL.md) — implementing or referencing INCOTERMS 2020.
+- [items/bills/of/materials/work/orders/production/receipts](src/items/bills/of/materials/work/orders/production/receipts/SKILL.md) — receiving finished goods from an internal manufacturing work order into inventory
+- [items/quality/inspections](src/items/quality/inspections/SKILL.md) — recording incoming, in-process, or final-inspection outcomes
+- [journal/entries](src/journal/entries/SKILL.md) — creating or auditing double-entry accounting records
+- [journal/entries/gl/postings](src/journal/entries/gl/postings/SKILL.md) — writing or querying individual debit/credit lines against a journal entry
+- [legal/entities/audit/committees](src/legal/entities/audit/committees/SKILL.md) — managing the audit committee for a legal entity
+- [maintenance/work/orders](src/maintenance/work/orders/SKILL.md) — executing FM work
+- [medical/contraindication](src/medical/contraindication/SKILL.md) — reasoning about contraindication as a medical facet of [[medical]]
+- [medical/hospital](src/medical/hospital/SKILL.md) — reasoning about hospital as a medical facet of [[medical]]
+- [medical/intangible](src/medical/intangible/SKILL.md) — reasoning about intangible as a medical facet of [[medical]]
+- [medical/procedure](src/medical/procedure/SKILL.md) — reasoning about procedure as a medical facet of [[medical]]
+- [medical/specialty](src/medical/specialty/SKILL.md) — reasoning about specialty as a medical facet of [[medical]]
+- [medical/status](src/medical/status/SKILL.md) — reasoning about status as a medical facet of [[medical]]
+- [medical/web](src/medical/web/SKILL.md) — reasoning about web as a medical facet of [[medical]]
+- [mirror](src/mirror/SKILL.md) — reasoning about a path read both ways
+- [notary/check/sanctions](src/notary/check/sanctions/SKILL.md) — screening a party against the EU consolidated financial sanctions list
+- [particle](src/particle/SKILL.md) — reading an atom as a particle in the matrix field
+- [payload/command](src/payload/command/SKILL.md) — reasoning about the Payload CLI command set folded into the corpus
+- [photon](src/photon/SKILL.md) — reasoning about the photon
+- [quantum](src/quantum/SKILL.md) — checking the quantum-physics laws on the uuid-matrix
+- [quantum/calculator](src/quantum/calculator/SKILL.md) — computing in the digital-root substrate
+- [quantum/computer](src/quantum/computer/SKILL.md) — querying instead of re-deriving
+- [quantum/export](src/quantum/export/SKILL.md) — reasoning about quantum computed export
+- [quantum/gaps](src/quantum/gaps/SKILL.md) — asked to fill the gaps in quantum mechanics
+- [quantum/import](src/quantum/import/SKILL.md) — reasoning about quantum computed import
+- [quantum/literature](src/quantum/literature/SKILL.md) — reasoning about the body of written work quantumly
+- [quantum/matrix](src/quantum/matrix/SKILL.md) — reading the matrix as the cross-product / entanglement adjacency
+- [quantum/port](src/quantum/port/SKILL.md) — re-porting upstreams safely
+- [quantum/query](src/quantum/query/SKILL.md) — caching or deduping queries by identity
+- [readme](src/readme/SKILL.md) — the repository README is generated, verified, or reasoned about
+- [realtime/translator](src/realtime/translator/SKILL.md) — translating a live event tail as it arrives
+- [registry](src/registry/SKILL.md) — reasoning about registry as a schema.org vocabulary word
+- [root](src/root/SKILL.md) — reasoning about the root center
+- [rules/echo](src/rules/echo/SKILL.md) — a path restates itself
+- [rules/invisible](src/rules/invisible/SKILL.md) — matter lives at a path that cannot be addressed
+- [sandbox](src/sandbox/SKILL.md) — running an UNTRUSTED, agent-built tool safely
+- [scratch](src/scratch/SKILL.md) — an ad-hoc measurement or throwaway tsx -e script would otherwise be run inline and discarded
+- [seeing](src/seeing/SKILL.md) — a vivid demonstration (an animation, a movie) is offered as proof
+- [self](src/self/SKILL.md) — reasoning about an object's or the agent's reach back into its own root
+- [self/accounting](src/self/accounting/SKILL.md) — erpax runs its OWN books
+- [self/closure](src/self/closure/SKILL.md) — an external dependency must fall back to erpax ITSELF
+- [self/similar](src/self/similar/SKILL.md) — reasoning about why the same form holds at every scale of erpax
+- [shred](src/shred/SKILL.md) — reconciling GDPR erasure with content-addressing
+- [signal](src/signal/SKILL.md) — a horo position or any uuid must become perceivable
+- [singularity](src/singularity/SKILL.md) — reasoning about the gravity well where the corpus collapses to one center
+- [skill/router/build](src/skill/router/build/SKILL.md) — the skill router index or installed catalogue must emit
+- [skill/router/upgrade/seal](src/skill/router/upgrade/seal/SKILL.md) — SKILL.md frontmatter must render deterministically or fold content-uuid
+- [sql](src/sql/SKILL.md) — modelling a SQL query as pure data
+- [taichi](src/taichi/SKILL.md) — reasoning about tai chi (太極) internal energy flow
+- [tamper](src/tamper/SKILL.md) — reasoning about integrity attacks on the content-uuid store
+- [tax/jurisdictions/tax/returns](src/tax/jurisdictions/tax/returns/SKILL.md) — filing or tracking tax returns
+- [theorem](src/theorem/SKILL.md) — the question is whether to trust a claim
+- [trading/api](src/trading/api/SKILL.md) — reasoning about the commercial trading-API catalogue
+- [transaction/failures](src/transaction/failures/SKILL.md) — capturing, retrying, or auditing failed transactions
+- [uuid/llm](src/uuid/llm/SKILL.md) — a uuid must expand back into an LLM prompt
+- [uuid/projection](src/uuid/projection/SKILL.md) — content, search, locale, version, or CSS colour must agree about what a record IS
+- [vital](src/vital/SKILL.md) — reasoning about vital as a schema.org vocabulary word
+- [warehouse/locations/consignment/arrangements/consignment/sales](src/warehouse/locations/consignment/arrangements/consignment/sales/SKILL.md) — recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer
+- [workflow/concatenate](src/workflow/concatenate/SKILL.md) — building a completely autonomous workflow from command·question·answer atoms
+- [writing](src/writing/SKILL.md) — writing must be computed from sealed coordinates
+
+### share · 139
+
+- [acceleration](src/acceleration/SKILL.md) — reasoning about acceleration as a schema.org vocabulary word
+- [acceptance](src/acceptance/SKILL.md) — reasoning about acceptance as a schema.org vocabulary word
+- [agent/mortality](src/agent/mortality/SKILL.md) — reasoning about the life and death of an agent
+- [agent/security](src/agent/security/SKILL.md) — Parse allowlist and security monitor for agent inputs (fail closed).
+- [agent/skill](src/agent/skill/SKILL.md) — an agent loads a capability
+- [anchor](src/anchor/SKILL.md) — reasoning about the external anchor
+- [anti/corruption](src/anti/corruption/SKILL.md) — detecting internal-control invariants
+- [anyone](src/anyone/SKILL.md) — granting deliberate public/unauthenticated read on a Payload collection or field
+- [apply](src/apply/SKILL.md) — reasoning about apply
+- [artery](src/artery/SKILL.md) — reasoning about erpax's outbound vessel
+- [audit/agent](src/audit/agent/SKILL.md) — Use to audit an agent's own changeset the way a real auditor audits a human's submission
+- [audit/events](src/audit/events/SKILL.md) — persisting or querying the durable ISO 19011 / SOX §404 evidence trail
+- [auto/populate/tenant](src/auto/populate/tenant/SKILL.md) — auto-populating the multi-tenant tenant field from the request user before validation
+- [auto/resolve](src/auto/resolve/SKILL.md) — deciding which folder-shape gaps an archangel can auto-resolve
+- [award](src/award/SKILL.md) — reasoning about award
+- [bank/accounts/bank/reconciliations](src/bank/accounts/bank/reconciliations/SKILL.md) — performing or auditing the period-end bank-balance proof
+- [beyond/explainability](src/beyond/explainability/SKILL.md) — a business outcome must ship its own natural-language explanation citing standards, sources and cha…
+- [beyond/provenance](src/beyond/provenance/SKILL.md) — a value's history of CAUSE must be recoverable, not just its history of CHANGE
+- [blood](src/blood/SKILL.md) — reasoning about erpax's carrier
+- [body/anatomy](src/body/anatomy/SKILL.md) — reasoning about anatomy as an anatomical part of [[body]]
+- [body/measurement](src/body/measurement/SKILL.md) — reasoning about measurement as a anatomical part of [[body]]
+- [body/ocean](src/body/ocean/SKILL.md) — reasoning about ocean as a anatomical part of [[body]]
+- [body/river](src/body/river/SKILL.md) — reasoning about river as a anatomical part of [[body]]
+- [cases](src/cases/SKILL.md) — modelling a legal matter as a docket
+- [closing/period/checker](src/closing/period/checker/SKILL.md) — validating whether a fiscal period may be closed
+- [cloudflare/cost](src/cloudflare/cost/SKILL.md) — computing or fine-tuning Cloudflare spend
+- [command](src/command/SKILL.md) — classifying or executing the imperative-verb role of an autonomous workflow
+- [commerce](src/commerce/SKILL.md) — designing or porting the erpax commerce/trade domain to Payload
+- [computer/language](src/computer/language/SKILL.md) — reasoning about language as a hardware facet of [[computer]]
+- [computer/memory](src/computer/memory/SKILL.md) — reasoning about memory as a part of [[computer]]
+- [computer/processor](src/computer/processor/SKILL.md) — reasoning about processor as a part of [[computer]]
+- [computer/queue](src/computer/queue/SKILL.md) — ordering work FIFO under the machine model
+- [confirm](src/confirm/SKILL.md) — reasoning about confirm as a schema.org vocabulary word
+- [consciousness](src/consciousness/SKILL.md) — reasoning about the system's integrated self-model
+- [consistency/apply](src/consistency/apply/SKILL.md) — running the deterministic, idempotent consistency transforms that close code-consistency gaps (chai…
+- [convention/folded](src/convention/folded/SKILL.md) — checking whether every atom folds into the matrix
+- [convention/fresh](src/convention/fresh/SKILL.md) — reasoning about stale references as entropy
+- [convention/import](src/convention/import/SKILL.md) — reasoning about the import convention
+- [cost](src/cost/SKILL.md) — optimising ANY cost in the society against output
+- [cost/centers](src/cost/centers/SKILL.md) — tagging JE lines with a secondary analytical dimension for segment/departmental P&L
+- [credit](src/credit/SKILL.md) — reasoning about credit
+- [currency](src/currency/SKILL.md) — a value carries money
+- [currency/fallback](src/currency/fallback/SKILL.md) — a currency value is missing, blank, or unknown
+- [currency/reconciliation](src/currency/reconciliation/SKILL.md) — closing a multi-currency period
+- [customers/contracts/performance/obligations](src/customers/contracts/performance/obligations/SKILL.md) — decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation
+- [customers/kyc/checks](src/customers/kyc/checks/SKILL.md) — performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory
+- [customers/sales/orders/shipments](src/customers/sales/orders/shipments/SKILL.md) — dispatching goods against a sales order
+- [data/subject/requests](src/data/subject/requests/SKILL.md) — handling a data subject's GDPR rights request
+- [decide](src/decide/SKILL.md) — the society must pick a winner among candidate solutions
+- [deploy](src/deploy/SKILL.md) — deploying a Payload app to production or fixing build/migration/env issues
+- [development](src/development/SKILL.md) — planning what to build next
+- [dual/torus/fusion](src/dual/torus/fusion/SKILL.md) — reasoning about the fusion of a dual torus
+- [duality](src/duality/SKILL.md) — reasoning about erpax's pervasive two-fold law
+- [dust](src/dust/SKILL.md) — reasoning about the corpus as forged matter
+- [enforce/posting/immutability](src/enforce/posting/immutability/SKILL.md) — reasoning about whether a posted GL posting can be altered
+- [entropy](src/entropy/SKILL.md) — reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances
+- [equilibrium](src/equilibrium/SKILL.md) — reasoning about equilibrium as detailed balance
+- [financial/statements](src/financial/statements/SKILL.md) — generating, certifying, and publishing financial statements
+- [fiscal/periods/provisions](src/fiscal/periods/provisions/SKILL.md) — recognising or measuring uncertain liabilities
+- [forge](src/forge/SKILL.md) — reasoning about WHERE atoms are made one
+- [gate](src/gate/SKILL.md) — reasoning about verification
+- [guardian](src/guardian/SKILL.md) — reasoning about a single immune-cell of the corpus
+- [held/for/sale/classifications](src/held/for/sale/classifications/SKILL.md) — classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under I…
+- [i18n/harvest](src/i18n/harvest/SKILL.md)
+- [intercompany/reconciliation](src/intercompany/reconciliation/SKILL.md) — reconciling intercompany payable/receivable balances for multi-entity period close
+- [invoices/credit/memos](src/invoices/credit/memos/SKILL.md) — issuing or applying a credit against an invoice
+- [items/purchase/orders](src/items/purchase/orders/SKILL.md) — raising or reviewing a vendor purchase commitment
+- [leap](src/leap/SKILL.md) — reasoning about the quantum leap
+- [legal/entities](src/legal/entities/SKILL.md) — registering subsidiaries, associates, joint ventures or the group head for consolidation
+- [legal/entities/beneficial/owners](src/legal/entities/beneficial/owners/SKILL.md) — registering ultimate beneficial owners of a legal entity
+- [legal/entities/consolidations](src/legal/entities/consolidations/SKILL.md) — running or auditing a multi-entity group consolidation
+- [legal/entities/internal/audit/functions](src/legal/entities/internal/audit/functions/SKILL.md) — establishing or governing an internal audit department
+- [legal/entities/related/party/transactions](src/legal/entities/related/party/transactions/SKILL.md) — recording or disclosing transactions between a legal entity and its key management, directors, shar…
+- [localize](src/localize/SKILL.md) — ANY aspect must speak a locale AND stay tamper-evident
+- [machine](src/machine/SKILL.md) — modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment…
+- [media](src/media/SKILL.md) — uploading or retrieving files
+- [medical/audience](src/medical/audience/SKILL.md) — reasoning about audience as a medical facet of [[medical]]
+- [medical/cause](src/medical/cause/SKILL.md) — reasoning about cause as a medical facet of [[medical]]
+- [medical/device](src/medical/device/SKILL.md) — reasoning about clinical hardware
+- [medical/entity](src/medical/entity/SKILL.md) — reasoning about entity as a medical facet of [[medical]]
+- [medical/indication](src/medical/indication/SKILL.md) — reasoning about indication as a medical facet of [[medical]]
+- [medical/level](src/medical/level/SKILL.md) — reasoning about level as a medical facet of [[medical]]
+- [medical/observational](src/medical/observational/SKILL.md) — reasoning about observational as a medical facet of [[medical]]
+- [medical/recommendation](src/medical/recommendation/SKILL.md) — reasoning about recommendation as a medical facet of [[medical]]
+- [medical/surgery](src/medical/surgery/SKILL.md) — reasoning about surgery as a medical facet of [[medical]]
+- [message/local](src/message/local/SKILL.md) — reasoning about which safeguards a local-only message fabric can and cannot avoid
+- [metatron](src/metatron/SKILL.md) — reasoning about why erpax's uuid-matrix is Metatron's Cube
+- [name](src/name/SKILL.md) — identifying an entity with a human-readable label
+- [nerve](src/nerve/SKILL.md) — reasoning about erpax's signal pathway
+- [notary/check/qtsp](src/notary/check/qtsp/SKILL.md) — a notary check needs a qualified electronic signature or a qualified timestamp
+- [oauth](src/oauth/SKILL.md) — acquiring or refreshing an external OAuth 2.0 token
+- [patent](src/patent/SKILL.md) — challenging an over-broad or illegally granted patent
+- [payment/methods](src/payment/methods/SKILL.md) — storing or querying billing instruments
+- [period/lock/checker](src/period/lock/checker/SKILL.md) — deciding whether a posting date falls in a locked fiscal period
+- [plugins/mcp/scopes](src/plugins/mcp/scopes/SKILL.md) — collapsing MCP api-key capability columns to a compact deny-list
+- [position](src/position/SKILL.md) — defining job positions, the rate ladder, or government/society role structure
+- [quantum/accounting](src/quantum/accounting/SKILL.md) — reasoning about accounting on the quantum level
+- [quantum/app](src/quantum/app/SKILL.md) — reasoning about erpax as a device of apps
+- [quantum/boundary](src/quantum/boundary/SKILL.md) — computing per-file quantum import/export boundaries
+- [quantum/chat](src/quantum/chat/SKILL.md) — reasoning about a chat thread as a merkle chain
+- [quantum/communication/superdense](src/quantum/communication/superdense/SKILL.md) — reasoning about superdense coding on the matrix
+- [quantum/digit](src/quantum/digit/SKILL.md) — storing numeric or realtime data the way words are stored
+- [quantum/emr](src/quantum/emr/SKILL.md) — reasoning about the electronic medical record as a quantum snapshot chain
+- [quantum/fs](src/quantum/fs/SKILL.md) — reasoning about the content-addressed filesystem
+- [quantum/schema](src/quantum/schema/SKILL.md) — reasoning about schema identity and drift on the matrix
+- [quantum/security](src/quantum/security/SKILL.md) — auditing or hardening erpax
+- [quantum/society](src/quantum/society/SKILL.md) — reasoning about erpax as a social-engineering platform in the civic sense
+- [quantum/type](src/quantum/type/SKILL.md) — reasoning about type identity on the matrix
+- [quantum/uuid](src/quantum/uuid/SKILL.md) — reasoning about the content-uuid in the quantum frame
+- [quantum/word](src/quantum/word/SKILL.md) — reasoning about the WORD half of the double-torus
+- [receipt/gate](src/receipt/gate/SKILL.md) — reaching the content-addressed test gate from the receipt atom
+- [regeneration](src/regeneration/SKILL.md) — reasoning about erpax as a living, self-repairing system
+- [relation](src/relation/SKILL.md) — reading the id a Payload relationship points at
+- [rules/unfolded](src/rules/unfolded/SKILL.md) — checking that an export earns its place
+- [run/load](src/run/load/SKILL.md) — asking the only question no other gate asks
+- [sacred](src/sacred/SKILL.md) — auditing anything before acting on it
+- [sectors](src/sectors/SKILL.md) — taxonomising any part of society
+- [seed](src/seed/SKILL.md) — seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) templ…
+- [self/research](src/self/research/SKILL.md) — an actor must find where its own identity (an email) is used across the corpus and secure those acc…
+- [skill/wire](src/skill/wire/SKILL.md) — a reader receives the erpax GitHub URL
+- [standards](src/standards/SKILL.md) — registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Direct…
+- [sti/vocabulary](src/sti/vocabulary/SKILL.md)
+- [stream](src/stream/SKILL.md) — events must move as one continuous tamper-proof current rather than discrete steps
+- [strength](src/strength/SKILL.md) — reasoning about the corpus's strength
+- [tamper/import](src/tamper/import/SKILL.md) — reasoning about import discipline as a security property
+- [tax/period/reconciliation](src/tax/period/reconciliation/SKILL.md) — closing tax periods against fiscal periods
+- [thing](src/thing/SKILL.md) — reasoning about thing
+- [timeout](src/timeout/SKILL.md) — bounding any command's wall time
+- [trading/quantum](src/trading/quantum/SKILL.md) — wiring quantum realtime trading
+- [transaction](src/transaction/SKILL.md) — reasoning about transaction
+- [translation/source](src/translation/source/SKILL.md) — the translation intelligence must be trained with REAL renderings, not fabricated ones
+- [types/events](src/types/events/SKILL.md)
+- [update/fiscal/calendar/on/period/change](src/update/fiscal/calendar/on/period/change/SKILL.md) — a fiscal period config is amended
+- [validate/fiscal/period/posting](src/validate/fiscal/period/posting/SKILL.md) — a GL posting needs its fiscal period
+- [vocabulary](src/vocabulary/SKILL.md) — checking that every word in the corpus comes from the shared standards-grounded vocabulary
+- [wallet](src/wallet/SKILL.md) — holding value
+- [wco/hs](src/wco/hs/SKILL.md) — implementing or referencing WCO Harmonised System.
+- [witness/testing](src/witness/testing/SKILL.md) — reaching the bounded-witness helper from the witness side
+- [workflow/sealed/selfeducate](src/workflow/sealed/selfeducate/SKILL.md) — Sealed self-educate workflow definition (scan, wave, seal).
+
+### weave · 119
+
+- [abdomen](src/abdomen/SKILL.md) — reasoning about abdomen as a schema.org vocabulary word
+- [abstract](src/abstract/SKILL.md) — reasoning about abstract
+- [accommodation](src/accommodation/SKILL.md) — reasoning about accommodation
+- [accounting/proof](src/accounting/proof/SKILL.md) — Use to see the corpus accounting itself in realtime
+- [accounting/reports](src/accounting/reports/SKILL.md) — reasoning about accounting/reports
+- [agent/intelligence](src/agent/intelligence/SKILL.md) — Self-improving agent intelligence via measure, fold, seal, and balance cycles.
+- [agent/sync](src/agent/sync/SKILL.md) — synchronizing real-time events across agents in a tenant
+- [anchoring](src/anchoring/SKILL.md) — periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_…
+- [aura/propose](src/aura/propose/SKILL.md) — computing weave proposals deterministically
+- [balance](src/balance/SKILL.md) — reasoning about equilibrium in erpax
+- [bank/accounts/payment/runs](src/bank/accounts/payment/runs/SKILL.md) — assembling, authorising, exporting, or reconciling an ISO 20022 batch payment
+- [beyond/replay](src/beyond/replay/SKILL.md) — an auditor demands \\\"show me how this number was computed and reproduce it\\\"
+- [body](src/body/SKILL.md) — reasoning about erpax as ONE organism
+- [body/auto](src/body/auto/SKILL.md) — reasoning about auto as a anatomical part of [[body]]
+- [body/head](src/body/head/SKILL.md) — reasoning about head as an anatomical part of [[body]]
+- [body/leg](src/body/leg/SKILL.md) — reasoning about leg as an anatomical part of [[body]]
+- [body/sea](src/body/sea/SKILL.md) — reasoning about sea as a anatomical part of [[body]]
+- [body/signal](src/body/signal/SKILL.md) — reasoning about signal as a anatomical part of [[body]]
+- [boltzmann](src/boltzmann/SKILL.md) — reasoning about entropy as microstate-counting
+- [capture/media](src/capture/media/SKILL.md) — turning Playwright test artifacts into Media records
+- [categories](src/categories/SKILL.md) — building or browsing hierarchical content or product taxonomies
+- [catharsis](src/catharsis/SKILL.md) — reasoning about the biggest gap in how an agent works
+- [chakra](src/chakra/SKILL.md) — mapping the seven chakras onto erpax
+- [chart](src/chart/SKILL.md) — specifying a chart as pure data
+- [coherence](src/coherence/SKILL.md) — reasoning about wholeness as a MEASURABLE quantity
+- [computer/network](src/computer/network/SKILL.md) — reasoning about network as a part of [[computer]]
+- [consent/records](src/consent/records/SKILL.md) — recording or auditing data-subject consent events
+- [convention/addressed](src/convention/addressed/SKILL.md) — an atom needs an identity
+- [convention/dry](src/convention/dry/SKILL.md) — checking whether the corpus stays DRY
+- [convention/reciprocal](src/convention/reciprocal/SKILL.md) — checking whether the corpus stays symmetrically entangled
+- [convention/sealed](src/convention/sealed/SKILL.md) — reasoning about error handling as an entropy leak
+- [convention/triggered](src/convention/triggered/SKILL.md) — checking whether every skill leads with its Use-when trigger
+- [convention/twinned](src/convention/twinned/SKILL.md) — checking whether every antimatter names its matter
+- [country/api](src/country/api/SKILL.md) — reasoning about the official per-country authority API catalogue
+- [cross](src/cross/SKILL.md) — authorising \\\"who can do what\\\"
+- [customers/projects/wip/snapshots](src/customers/projects/wip/snapshots/SKILL.md) — closing a fiscal period
+- [customers/quotes](src/customers/quotes/SKILL.md) — creating or approving pre-contract proposals
+- [customers/sales/orders](src/customers/sales/orders/SKILL.md) — recording or progressing a customer order
+- [customers/sales/orders/shipments/customs/declarations](src/customers/sales/orders/shipments/customs/declarations/SKILL.md) — filing export or import customs declarations for a cross-border shipment
+- [diamond](src/diamond/SKILL.md) — naming the whole repository as one crystal
+- [discover](src/discover/SKILL.md) — reasoning about discovery vs creation
+- [dna](src/dna/SKILL.md) — reasoning about inheritance in erpax
+- [ecosystem](src/ecosystem/SKILL.md) — sustainability and decentralisation must be seen as ONE
+- [engineering](src/engineering/SKILL.md) — an engineering standard (ISO/IEC 25010 quality model) must move from cited to enforced
+- [eu/ai/act](src/eu/ai/act/SKILL.md) — implementing or referencing EU AI Act 2024.
+- [evolve](src/evolve/SKILL.md) — the paradox bites
+- [exchange](src/exchange/SKILL.md) — reasoning about exchange
+- [fiscal/periods/post/balance/sheet/events](src/fiscal/periods/post/balance/sheet/events/SKILL.md) — capturing events between the reporting date and FS-authorisation date
+- [fiscal/periods/prior/period/adjustments](src/fiscal/periods/prior/period/adjustments/SKILL.md) — restating a prior closed period for material errors
+- [fixed/assets](src/fixed/assets/SKILL.md) — managing capitalized PP&E
+- [fixpoint](src/fixpoint/SKILL.md) — the measurer is inside the system it measures
+- [gate/receipt](src/gate/receipt/SKILL.md) — the push gate must not be an hour-long monolith
+- [gl/accounts/tax/calculations](src/gl/accounts/tax/calculations/SKILL.md) — computing or reviewing tax-liability snapshots per period and jurisdiction
+- [globe](src/globe/SKILL.md) — the corpus must be read as a sphere, not a flat wheel
+- [hamiltonian](src/hamiltonian/SKILL.md) — reasoning about the Hamiltonian
+- [harmony](src/harmony/SKILL.md) — checking whether an interval
+- [humandesign](src/humandesign/SKILL.md) — mapping Human Design onto erpax
+- [imaging](src/imaging/SKILL.md) — reasoning about imaging as a schema.org vocabulary word
+- [interactive](src/interactive/SKILL.md) — reasoning about the collapse of collections into interactive trinities
+- [invoices](src/invoices/SKILL.md) — issuing, receiving or auditing AR/AP invoices
+- [invoices/payments/payment/allocations](src/invoices/payments/payment/allocations/SKILL.md) — allocating a single payment across one or more invoices, bills or credit memos
+- [items/bills/of/materials/work/orders/cost/variances](src/items/bills/of/materials/work/orders/cost/variances/SKILL.md) — closing a work order and reconciling standard vs actual manufacturing costs
+- [journal/entries/rounding/adjustments](src/journal/entries/rounding/adjustments/SKILL.md) — recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-r…
+- [karma](src/karma/SKILL.md) — scoring moral weight as entropy
+- [law/folder](src/law/folder/SKILL.md) — reasoning about folder
+- [leads/opportunities](src/leads/opportunities/SKILL.md) — tracking deals through the sales pipeline
+- [leases/lease/modifications](src/leases/lease/modifications/SKILL.md) — recording a lease modification
+- [legal/entities/board/actions](src/legal/entities/board/actions/SKILL.md) — recording formal board-level decisions for a legal entity
+- [legislation](src/legislation/SKILL.md) — the society makes its own law
+- [logic](src/logic/SKILL.md) — reasoning about correctness/consistency in the horo society
+- [maintenance/requests](src/maintenance/requests/SKILL.md) — an occupant, operator, or sensor raises an FM service ticket
+- [mala](src/mala/SKILL.md) — reasoning about the 108-step round
+- [mcp/tool/metadata](src/mcp/tool/metadata/SKILL.md) — managing localized or tenant-overridden descriptions for erpax.* MCP tools
+- [medical/clinic](src/medical/clinic/SKILL.md) — reasoning about clinic as a medical facet of [[medical]]
+- [medical/condition](src/medical/condition/SKILL.md) — reasoning about condition as a medical facet of [[medical]]
+- [medical/purpose](src/medical/purpose/SKILL.md) — reasoning about purpose as a medical facet of [[medical]]
+- [medical/scholarly](src/medical/scholarly/SKILL.md) — reasoning about scholarly as a medical facet of [[medical]]
+- [medical/sign](src/medical/sign/SKILL.md) — reasoning about sign as a medical facet of [[medical]]
+- [memory/architecture](src/memory/architecture/SKILL.md) — operational memory must be understood as the architecture lattice itself
+- [migrate/names](src/migrate/names/SKILL.md) — collapsing each atom's test file to the canonical test.ts
+- [notary](src/notary/SKILL.md) — a fact must be given public faith
+- [notification](src/notification/SKILL.md) — the society speaks outward
+- [observe](src/observe/SKILL.md) — reasoning about the LLM agent's law
+- [pack/items](src/pack/items/SKILL.md) — modeling a pack line
+- [perspective](src/perspective/SKILL.md) — the SAME content-uuid node must read differently per party
+- [plasma](src/plasma/SKILL.md) — reasoning about the fully-fused corpus
+- [platonic](src/platonic/SKILL.md) — the sphere must be understood as swept, not given
+- [port](src/port/SKILL.md) — porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next
+- [posts](src/posts/SKILL.md) — publishing or querying CMS articles
+- [prime](src/prime/SKILL.md) — Use for the multiplicative basis
+- [pyramid](src/pyramid/SKILL.md) — reading the fold as a solid
+- [quantum/chart](src/quantum/chart/SKILL.md) — rendering a chart through the analog aura
+- [quantum/communication](src/quantum/communication/SKILL.md) — reasoning about communication on the quantum level
+- [quantum/consulting](src/quantum/consulting/SKILL.md) — reasoning about the economics of serving the corpus's knowledge
+- [quantum/log](src/quantum/log/SKILL.md) — reasoning about the agent audit trail
+- [quantum/mcp](src/quantum/mcp/SKILL.md) — reasoning about the MCP gateway in the quantum frame
+- [quantum/sanitization](src/quantum/sanitization/SKILL.md) — cleaning data at a boundary
+- [quantum/serverless](src/quantum/serverless/SKILL.md) — proving that serverless infrastructure (Cloudflare Workers + wrangler bindings) provides quantum se…
+- [quantum/translator](src/quantum/translator/SKILL.md) — reading erpax as a quantum translator
+- [reality](src/reality/SKILL.md) — reasoning about the live shipped state versus the model
+- [receipt](src/receipt/SKILL.md) — a governance decision needs a tamper-evident audit receipt
+- [relocate](src/relocate/SKILL.md) — deciding WHERE logic belongs
+- [rodin](src/rodin/SKILL.md) — reasoning about the number substrate under erpax's state/sequence math
+- [rosetta](src/rosetta/SKILL.md) — the gated commit/push must be achieved BY THE ROSETTA
+- [rules/reference](src/rules/reference/SKILL.md) — the statute→code trace must resolve
+- [rules/refutable](src/rules/refutable/SKILL.md) — checking that the corpus's claims can be contradicted
+- [self/reference](src/self/reference/SKILL.md) — verifying erpax observes ITSELF
+- [session](src/session/SKILL.md) — measuring a development session
+- [spectrum](src/spectrum/SKILL.md) — reasoning about the spectrum
+- [speech](src/speech/SKILL.md) — speech must be computed from sealed coordinates
+- [sustainability](src/sustainability/SKILL.md) — asking whether a system can ENDURE
+- [tags](src/tags/SKILL.md) — defining or querying reusable labels applied across any collection
+- [tamper/cost](src/tamper/cost/SKILL.md) — reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store
+- [temperature](src/temperature/SKILL.md) — reasoning about temperature as the exchange rate between energy and order (1/T = ∂S/∂E)
+- [translation/source/verified](src/translation/source/verified/SKILL.md) — you need the sense-verified translation seed and its computed renderings
+- [translator](src/translator/SKILL.md) — reasoning about translator
+- [types/gl/account](src/types/gl/account/SKILL.md) — the chart-of-accounts type contract is needed
+- [typography](src/typography/SKILL.md) — measuring or rendering the vitepress typographic feature-set of a SKILL.md page
+- [work/shifts](src/work/shifts/SKILL.md) — modelling the per-actor-day labour aggregate
+
+### crest · 119
+
+- [accounting/analysis](src/accounting/analysis/SKILL.md) — reasoning about accounting/analysis
+- [accounting/coa](src/accounting/coa/SKILL.md) — reasoning about accounting/coa
+- [accounting/margin](src/accounting/margin/SKILL.md) — reasoning about accounting/margin
+- [action](src/action/SKILL.md) — reasoning about action
+- [address/validation](src/address/validation/SKILL.md) — checking that a postal address is complete and well-formed for its declared country
+- [agent/communication](src/agent/communication/SKILL.md) — agents transfer messages
+- [angle](src/angle/SKILL.md) — the fold must be read as a rotation
+- [aura/live](src/aura/live/SKILL.md) — reasoning about the aura as a live animation
+- [authenticated/or/published](src/authenticated/or/published/SKILL.md) — a Payload collection should show drafts to logged-in users but only published versions to anonymous…
+- [auto/set/timestamp](src/auto/set/timestamp/SKILL.md) — stamping a status-transition timestamp (postedAt, approvedAt, reconciledAt, authorizedAt) onto a co…
+- [beyond/cost](src/beyond/cost/SKILL.md) — accounting the micro-USD price of a chain step against a tenant budget
+- [biomass](src/biomass/SKILL.md) — a living stock is valued by its total mass, not per-individual
+- [bookable/resources/bookings](src/bookable/resources/bookings/SKILL.md) — recording or querying reservation events
+- [budget/plannings](src/budget/plannings/SKILL.md) — creating or approving period-budgets by department or cost-center
+- [coincidence](src/coincidence/SKILL.md) — a research program claims its numbers match physical constants (Haramein's holographic work, the 3·…
+- [component](src/component/SKILL.md) — defining a reusable UI building block
+- [compost](src/compost/SKILL.md) — organic residues are decomposed into a soil amendment
+- [computer/finite](src/computer/finite/SKILL.md) — modeling finite-state machines
+- [computer/hardware](src/computer/hardware/SKILL.md) — reasoning about hardware as a part of [[computer]]
+- [computer/store](src/computer/store/SKILL.md) — reasoning about store as a hardware facet of [[computer]]
+- [convention/honest](src/convention/honest/SKILL.md) — a SKILL.md reaches for a metaphysical figure of speech
+- [convention/link](src/convention/link/SKILL.md) — one atom references another in prose
+- [convention/shallow](src/convention/shallow/SKILL.md) — reasoning about import discipline
+- [cost/centers/job/positions/recruiting/pipelines](src/cost/centers/job/positions/recruiting/pipelines/SKILL.md) — tracking candidate applications, interview stages, offers, and hiring decisions per position
+- [cover](src/cover/SKILL.md) — reasoning about cover as a schema.org vocabulary word
+- [coverage](src/coverage/SKILL.md) — Use to see the development plan as a computed matrix
+- [crown](src/crown/SKILL.md) — reasoning about the crown center (Sahasrara)
+- [customers/contracts](src/customers/contracts/SKILL.md) — recording, approving, or recognizing revenue from customer contracts
+- [customers/sales/orders/returns](src/customers/sales/orders/returns/SKILL.md) — authorising, tracking, and closing a customer return (RMA)
+- [decoherence](src/decoherence/SKILL.md) — reasoning about decoherence
+- [deep/merge](src/deep/merge/SKILL.md) — overlaying one plain object onto another without mutation
+- [domain/verification](src/domain/verification/SKILL.md) — proving control of a domain by content-uuid
+- [employees/leave/requests](src/employees/leave/requests/SKILL.md) — managing employee leave
+- [employees/time/entries](src/employees/time/entries/SKILL.md) — logging daily employee work time
+- [eu](src/eu/SKILL.md) — reasoning about eu as a schema.org vocabulary word
+- [expand](src/expand/SKILL.md) — reasoning about the development EXHALE
+- [fiscal/periods](src/fiscal/periods/SKILL.md) — managing the accounting calendar
+- [fusion/reactor](src/fusion/reactor/SKILL.md) — reading the fusion reactor
+- [gl/accounts](src/gl/accounts/SKILL.md) — maintaining the Chart of Accounts
+- [health](src/health/SKILL.md) — managing healthcare operations
+- [i18n/request](src/i18n/request/SKILL.md)
+- [internal/policies/policy/acknowledgments](src/internal/policies/policy/acknowledgments/SKILL.md) — recording or tracking employee acknowledgement of a policy version
+- [internal/policies/policy/versions](src/internal/policies/policy/versions/SKILL.md) — managing the version history of an internal policy
+- [items/purchase/orders/goods/receipts](src/items/purchase/orders/goods/receipts/SKILL.md) — confirming vendor goods arrival
+- [leases](src/leases/SKILL.md) — recognising and tracking IFRS 16 / ASC 842 lessee leases
+- [leases/lease/period/postings](src/leases/lease/period/postings/SKILL.md) — posting period-end lease amortisation
+- [legal/entities/business/combinations](src/legal/entities/business/combinations/SKILL.md) — recording an acquisition
+- [legal/entities/risk/registers](src/legal/entities/risk/registers/SKILL.md) — cataloguing enterprise risks per legal entity
+- [lots](src/lots/SKILL.md) — modeling a production order (a lot)
+- [medical/allergies](src/medical/allergies/SKILL.md) — reasoning about allergies as a medical facet of [[medical]]
+- [medical/article](src/medical/article/SKILL.md) — reasoning about article as a medical facet of [[medical]]
+- [medical/calculator](src/medical/calculator/SKILL.md) — reasoning about calculator as a medical facet of [[medical]]
+- [medical/diagnosis](src/medical/diagnosis/SKILL.md) — reasoning about diagnosis as a medical facet of [[medical]]
+- [medical/enumeration](src/medical/enumeration/SKILL.md) — reasoning about enumeration as a medical facet of [[medical]]
+- [medical/estimator](src/medical/estimator/SKILL.md) — reasoning about estimator as a medical facet of [[medical]]
+- [medical/factor](src/medical/factor/SKILL.md) — reasoning about factor as a medical facet of [[medical]]
+- [medical/guideline](src/medical/guideline/SKILL.md) — reasoning about guideline as a medical facet of [[medical]]
+- [medical/panel](src/medical/panel/SKILL.md) — reasoning about panel as a medical facet of [[medical]]
+- [medical/prescription](src/medical/prescription/SKILL.md) — reasoning about prescription as a medical facet of [[medical]]
+- [medical/risk](src/medical/risk/SKILL.md) — reasoning about risk as a medical facet of [[medical]]
+- [medical/study](src/medical/study/SKILL.md) — reasoning about study as a medical facet of [[medical]]
+- [medical/technique](src/medical/technique/SKILL.md) — reasoning about technique as a medical facet of [[medical]]
+- [medical/test](src/medical/test/SKILL.md) — reasoning about test as a medical facet of [[medical]]
+- [memory/session](src/memory/session/SKILL.md) — reasoning about session/chat memory
+- [merge](src/merge/SKILL.md) — reasoning about convergence/federation in erpax
+- [navel](src/navel/SKILL.md) — reasoning about the solar plexus center (Manipura)
+- [notary/check](src/notary/check/SKILL.md) — a notary must verify an instrument before sealing it
+- [notary/check/cadastre](src/notary/check/cadastre/SKILL.md) — a notary check must confirm a real-property parcel exists and resolve its cadastral identity
+- [oecd/tpg](src/oecd/tpg/SKILL.md) — implementing or referencing OECD Transfer Pricing Guidelines.
+- [phi](src/phi/SKILL.md) — φ must be read as the self-address constant
+- [power](src/power/SKILL.md) — reasoning about how the LIVE network makes erpax harder to forge
+- [proof/projection](src/proof/projection/SKILL.md) — proving the projection leg
+- [quantum/cache](src/quantum/cache/SKILL.md) — caching by content
+- [quantum/device](src/quantum/device/SKILL.md) — reasoning about a device as a measurement instrument
+- [quantum/entanglement](src/quantum/entanglement/SKILL.md) — grounding the corpus link-field in the physics of quantum entanglement
+- [quantum/generator](src/quantum/generator/SKILL.md) — reasoning about generation in the quantum frame
+- [quantum/graph](src/quantum/graph/SKILL.md) — reading a graph as entanglement
+- [quantum/karma](src/quantum/karma/SKILL.md) — reasoning about karma on the quantum level
+- [quantum/marine](src/quantum/marine/SKILL.md) — reasoning about the law of the sea on the quantum scale
+- [quantum/pi](src/quantum/pi/SKILL.md) — reasoning about exiting the 128-bit uuid limit
+- [quantum/pwa](src/quantum/pwa/SKILL.md) — reasoning about erpax as a PWA of quantum apps
+- [quantum/reality](src/quantum/reality/SKILL.md) — relating reality to the quantum substrate
+- [quantum/request](src/quantum/request/SKILL.md) — an agent calls an external system
+- [quantum/research](src/quantum/research/SKILL.md) — pricing research on the quantum scale
+- [quantum/train](src/quantum/train/SKILL.md) — reasoning about training at the quantum scale
+- [quantum/typography](src/quantum/typography/SKILL.md) — treating typographic richness as tamper-cost
+- [readings](src/readings/SKILL.md) — reasoning about clinical and biometric readings
+- [receipts](src/receipts/SKILL.md) — issuing, querying, or auditing Наредба Н-18 fiscal receipts
+- [recycle](src/recycle/SKILL.md) — reasoning about the corpus's digital waste
+- [routing](src/routing/SKILL.md) — choosing which model/compute tier handles an agent action
+- [rules/audience](src/rules/audience/SKILL.md) — asking what each USER is being told that nothing can contradict
+- [rules/confine](src/rules/confine/SKILL.md) — Use to keep the boot from collapsing again
+- [sacral](src/sacral/SKILL.md) — reasoning about the sacral center (Svadhisthana)
+- [search/engine](src/search/engine/SKILL.md) — querying the corpus
+- [self/improve](src/self/improve/SKILL.md) — reasoning about the corpus improving itself with NO external tool
+- [self/sufficient](src/self/sufficient/SKILL.md) — deciding whether to act from internal knowledge vs
+- [separation](src/separation/SKILL.md) — checking the separation of powers
+- [sequence](src/sequence/SKILL.md) — navigating or composing the erpax Payload single-word skill library
+- [shannon](src/shannon/SKILL.md) — reasoning about information entropy
+- [skill/router/upgrade](src/skill/router/upgrade/SKILL.md) — SKILL.md frontmatter must self-upgrade from live corpus state
+- [skill/router/upgrade/quantum](src/skill/router/upgrade/quantum/SKILL.md) — SKILL.md frontmatter in the quantum partition needs parse · generate · upgrade
+- [skills](src/skills/SKILL.md) — orienting to erpax as a whole
+- [skin](src/skin/SKILL.md) — reasoning about erpax's boundary
+- [superposition](src/superposition/SKILL.md) — reasoning about superposition
+- [team/comms](src/team/comms/SKILL.md) — enforcing secure realtime communication between teams
+- [text](src/text/SKILL.md) — parsing or persisting prose
+- [throat](src/throat/SKILL.md) — projecting the throat center (Vishuddha)
+- [train](src/train/SKILL.md) — auto-training an actor (user, employee, or agent) toward best efficiency in the app
+- [translate](src/translate/SKILL.md) — computing i18n keys and humanizing them into default labels for the translations dropdown
+- [translations/collect](src/translations/collect/SKILL.md) — porting every atom's SKILL.md into code
+- [users](src/users/SKILL.md) — managing authenticated actors
+- [uuid/format](src/uuid/format/SKILL.md)
+- [uuid/share](src/uuid/share/SKILL.md)
+- [vein](src/vein/SKILL.md) — reasoning about erpax's return vessel
+- [version](src/version/SKILL.md) — reasoning about erpax's version
+- [vocabulary/agriculture](src/vocabulary/agriculture/SKILL.md) — reasoning about growing living produce to a market
+- [voting](src/voting/SKILL.md) — the society casts and tallies collective choice
+- [warehouse/locations/consignment/arrangements/consignment/inventories](src/warehouse/locations/consignment/arrangements/consignment/inventories/SKILL.md) — tracking per-SKU on-hand inventory balance at a consignee location
+- [website](src/website/SKILL.md) — the society must be SEEN, heard, and felt
+
+### descent · 126
+
+- [access/standard](src/access/standard/SKILL.md) — the Payload API's access must derive from and be gated by its legal surface
+- [accounting/debit](src/accounting/debit/SKILL.md) — reasoning about accounting/debit
+- [accounting/money](src/accounting/money/SKILL.md) — reasoning about accounting/money
+- [agent/chat](src/agent/chat/SKILL.md) — agents converse
+- [ai/models](src/ai/models/SKILL.md) — registering, routing, or auditing the AI model fallback catalog
+- [ai/suggestions](src/ai/suggestions/SKILL.md) — recording, querying, or auditing an AI inference
+- [akashic](src/akashic/SKILL.md) — reasoning about erpax's total queryable record
+- [allow/public/read/tenant](src/allow/public/read/tenant/SKILL.md) — resolving which tenants expose published content to anonymous callers
+- [apply/automate](src/apply/automate/SKILL.md) — orchestrating erpax efficiency loops
+- [architecture/invariant](src/architecture/invariant/SKILL.md) — enforcing the architecture laws in code
+- [archival](src/archival/SKILL.md) — pinning tenant content to long-term decentralized storage (IPFS, Arweave, Filecoin, R2-glacier) for…
+- [atom](src/atom/SKILL.md) — reasoning about erpax's irreducible unit
+- [audit/speed](src/audit/speed/SKILL.md) — auditing must prove it is fast
+- [audit/submissions](src/audit/submissions/SKILL.md) — building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit fil…
+- [audit/trail/after/change](src/audit/trail/after/change/SKILL.md) — emitting an audit event after a Payload write
+- [audit/wave](src/audit/wave/SKILL.md) — auditing everything at once
+- [beyond/pqc](src/beyond/pqc/SKILL.md) — an audit-chain leaf signature must survive a quantum adversary
+- [beyond/reversibility](src/beyond/reversibility/SKILL.md) — a state transition needs a typed undo
+- [bg/identifier](src/bg/identifier/SKILL.md) — validating Bulgarian identity numbers
+- [body/arm](src/body/arm/SKILL.md) — reasoning about arm as an anatomical part of [[body]]
+- [body/one](src/body/one/SKILL.md) — reasoning about one as a anatomical part of [[body]]
+- [body/review](src/body/review/SKILL.md) — reasoning about review as a anatomical part of [[body]]
+- [brow](src/brow/SKILL.md) — reasoning about the sixth center
+- [bulk/op](src/bulk/op/SKILL.md) — enqueueing or processing a bulk import or export (CSV, Excel, JSON/JSONL, UBL/CII XML, camt.053/054…
+- [chain/event/emitter](src/chain/event/emitter/SKILL.md) — an afterChange transition must fire a business-chain domain event
+- [commitments](src/commitments/SKILL.md) — authorizing and tracking pre-contract spending commitments
+- [competency/gap](src/competency/gap/SKILL.md) — computing held-vs-required skill gaps
+- [computer/complexity](src/computer/complexity/SKILL.md) — classifying algorithmic cost
+- [computer/storage](src/computer/storage/SKILL.md) — reasoning about storage as a part of [[computer]]
+- [consolidation/eliminations](src/consolidation/eliminations/SKILL.md) — posting or replaying group-level elimination JEs at consolidation close
+- [constitution](src/constitution/SKILL.md) — reasoning about the entrenched foundation
+- [convention](src/convention/SKILL.md) — reasoning about the corpus's conventions as a layer
+- [convention/complete](src/convention/complete/SKILL.md) — checking whether the corpus stays whole
+- [convention/fronted](src/convention/fronted/SKILL.md) — checking whether every atom has a front door
+- [country/api/client](src/country/api/client/SKILL.md) — calling the public, no-auth and key-based official country APIs (VIES, Companies House, KvK, Brønnø…
+- [country/fallback](src/country/fallback/SKILL.md) — a country slot is blank or unknown
+- [css](src/css/SKILL.md) — a stylesheet is imported, stubbed, or reasoned about in build or typegen
+- [currency/rates](src/currency/rates/SKILL.md) — storing or querying FX exchange rates for multi-currency translation
+- [development/research](src/development/research/SKILL.md) — reasoning about R&D from the development side
+- [digit](src/digit/SKILL.md) — addressing an atom in digit-space
+- [diversity](src/diversity/SKILL.md) — reasoning about diversity as a schema.org vocabulary word
+- [double/entry/validator](src/double/entry/validator/SKILL.md) — posting or reviewing a journal entry
+- [emergence](src/emergence/SKILL.md) — a two-fold pair completes to a third in the forge
+- [entry](src/entry/SKILL.md) — reasoning about the universal double-entry in erpax
+- [eu/csrd/esr](src/eu/csrd/esr/SKILL.md) — implementing or referencing EU CSRD / ESRS.
+- [fair/value/measurements](src/fair/value/measurements/SKILL.md) — measuring or disclosing fair value of assets and liabilities
+- [fiscal/periods/fiscal/period/snapshots](src/fiscal/periods/fiscal/period/snapshots/SKILL.md) — capturing or replaying immutable point-in-time snapshots of a fiscal period
+- [fiscal/periods/tax/periods/transfer/pricing/adjustments](src/fiscal/periods/tax/periods/transfer/pricing/adjustments/SKILL.md) — documenting intercompany transfer-pricing adjustments
+- [fixed/assets/depreciation/schedules](src/fixed/assets/depreciation/schedules/SKILL.md) — recording or reviewing the depreciation charge for each period
+- [fold](src/fold/SKILL.md) — counting the folding
+- [gate/rosetta](src/gate/rosetta/SKILL.md) — the structural gate is too slow to run every push
+- [generate](src/generate/SKILL.md) — the skill corpus should grow itself
+- [ghg/protocol](src/ghg/protocol/SKILL.md) — implementing or referencing GHG Protocol.
+- [heart](src/heart/SKILL.md) — reasoning about the centre
+- [insurance/contracts](src/insurance/contracts/SKILL.md) — recognising or measuring insurance contract groups under IFRS 17
+- [interference](src/interference/SKILL.md) — reasoning about interference
+- [invoices/dunning/cycles](src/invoices/dunning/cycles/SKILL.md) — tracking or auditing the collections process for an overdue invoice
+- [legal/entities/audit/committees/audit/committee/members](src/legal/entities/audit/committees/audit/committee/members/SKILL.md) — recording individual members of an audit committee
+- [legal/entities/audit/committees/audit/committee/minutes](src/legal/entities/audit/committees/audit/committee/minutes/SKILL.md) — capturing formal audit committee meeting records
+- [legal/entities/debt/schedules](src/legal/entities/debt/schedules/SKILL.md) — managing or reporting a legal entity's debt instruments
+- [legal/entities/management/certifications](src/legal/entities/management/certifications/SKILL.md) — recording or auditing officer certifications
+- [llm/uuid](src/llm/uuid/SKILL.md) — an LLM completion must become a verifiable address
+- [lot/variants](src/lot/variants/SKILL.md) — modeling a lot's per-variant line
+- [lung](src/lung/SKILL.md) — reasoning about erpax's gas-exchange surface
+- [mcp](src/mcp/SKILL.md) — configuring the erpax agent gateway
+- [media/sepa/mandates](src/media/sepa/mandates/SKILL.md) — managing SEPA Direct Debit mandates (pain.008)
+- [medical/business](src/medical/business/SKILL.md) — reasoning about business as a medical facet of [[medical]]
+- [medical/code](src/medical/code/SKILL.md) — reasoning about code as a medical facet of [[medical]]
+- [medical/disease](src/medical/disease/SKILL.md) — reasoning about disease as a medical facet of [[medical]]
+- [medical/patient](src/medical/patient/SKILL.md) — reasoning about patient as a medical facet of [[medical]]
+- [medical/physician](src/medical/physician/SKILL.md) — reasoning about physician as a medical facet of [[medical]]
+- [medical/stage](src/medical/stage/SKILL.md) — reasoning about stage as a medical facet of [[medical]]
+- [medical/therapy](src/medical/therapy/SKILL.md) — reasoning about therapy as a medical facet of [[medical]]
+- [memories](src/memories/SKILL.md) — persisting MCP tool results or agent state across restarts
+- [memory/anchor](src/memory/anchor/SKILL.md) — a memory, note or doc OUTSIDE the corpus points at something inside it
+- [metric](src/metric/SKILL.md) — the metrics need to be quantum too
+- [migrate/quaternary](src/migrate/quaternary/SKILL.md) — enforcing the four-file folder law
+- [monitor](src/monitor/SKILL.md) — reasoning about patient monitor
+- [monitor/violations](src/monitor/violations/SKILL.md) — monitoring all erpax gate violations in realtime
+- [nace/rev2](src/nace/rev2/SKILL.md) — implementing or referencing NACE Rev
+- [notary/check/registry](src/notary/check/registry/SKILL.md) — a notary check must confirm a company exists and resolve its registered name/address
+- [pages](src/pages/SKILL.md) — creating or managing CMS pages
+- [peace](src/peace/SKILL.md) — reasoning about why the erpax uuid model makes war useless
+- [pi](src/pi/SKILL.md) — π must be read as a theorem, not a hardcoded constant
+- [pivot](src/pivot/SKILL.md) — folder README models need cross-tab state statistics
+- [pixel](src/pixel/SKILL.md) — reasoning about rendering
+- [publish](src/publish/SKILL.md) — automating commit and push
+- [pwa](src/pwa/SKILL.md) — the offline web surface must stay trustworthy
+- [quantum/bindings](src/quantum/bindings/SKILL.md) — attaching every Cloudflare binding to the edge Worker
+- [quantum/communication/teleportation](src/quantum/communication/teleportation/SKILL.md) — reasoning about quantum teleportation on the matrix
+- [quantum/consultant](src/quantum/consultant/SKILL.md) — reasoning about the trained quantum consultant
+- [quantum/fold](src/quantum/fold/SKILL.md) — Double fold is mandatory for quantum mentality: word ⊗ digit
+- [quantum/math](src/quantum/math/SKILL.md) — computing mathematics on the uuid/matrix substrate
+- [quantum/particle](src/quantum/particle/SKILL.md) — reading a content-uuid as wave-particle duality
+- [quantum/sql](src/quantum/sql/SKILL.md) — caching or deduping SQL queries by identity
+- [quantum/vocabulary](src/quantum/vocabulary/SKILL.md) — reasoning about the vocabulary as the meaning singularity
+- [quantum/wallet](src/quantum/wallet/SKILL.md) — putting a wallet on the quantum substrate
+- [render](src/render/SKILL.md) — you need the full sensory face of an atom
+- [research/development](src/research/development/SKILL.md) — reasoning about development from the research side
+- [rules/ask](src/rules/ask/SKILL.md) — measuring or reducing the human-typing cost
+- [rules/canonical](src/rules/canonical/SKILL.md) — checking that an installed package is actually used through its own API
+- [rules/collapse](src/rules/collapse/SKILL.md) — asking which collections can honestly become one
+- [search/engine/optimization](src/search/engine/optimization/SKILL.md) — making erpax discoverable
+- [secret](src/secret/SKILL.md) — sealing Payload CMS secrets at rest or unsealing them at boot
+- [seo](src/seo/SKILL.md) — ensuring every atom carries comprehensive marketing and SEO
+- [society](src/society/SKILL.md) — reasoning about erpax building itself
+- [stack](src/stack/SKILL.md) — reasoning about the full stack as one content-uuid-wired round-trip
+- [standard](src/standard/SKILL.md) — implementing or auditing a compliance standard in erpax
+- [standard/truth](src/standard/truth/SKILL.md) — enforcing that @standard / @compliance banners are true rather than decoration
+- [sti](src/sti/SKILL.md) — reasoning about sti
+- [surprisal](src/surprisal/SKILL.md) — reasoning about the information of one event
+- [syntax](src/syntax/SKILL.md) — a gate needs a grammatical fact about source
+- [tax/jurisdictions/deferred/tax/items](src/tax/jurisdictions/deferred/tax/items/SKILL.md) — originating or reversing IAS-12 deferred-tax positions
+- [tax/jurisdictions/tax/codes](src/tax/jurisdictions/tax/codes/SKILL.md) — defining or resolving tax rates
+- [torus](src/torus/SKILL.md) — reasoning about the two-directional collapse that closes into a donut
+- [trading/api/client](src/trading/api/client/SKILL.md)
+- [translation](src/translation/SKILL.md) — porting a translatable message into code
+- [translations](src/translations/SKILL.md) — overriding platform localizations per tenant
+- [trinity](src/trinity/SKILL.md) — reasoning about how one node is told three times and rendered once
+- [ui/agent](src/ui/agent/SKILL.md) — reasoning about the other side of agent/ui
+- [variant](src/variant/SKILL.md) — modeling product options, SKU expansion, or feature flags
+- [verification](src/verification/SKILL.md) — proving a claim by content-uuid
+- [wave](src/wave/SKILL.md) — describing a batch of features added in one development breath before they are collided
+- [work/orders](src/work/orders/SKILL.md) — booking shop-floor production
+- [workflow](src/workflow/SKILL.md) — spawning, advancing, or escalating a workflow instance bound to a document
+- [workflow/engine](src/workflow/engine/SKILL.md) — executing or validating finite-state machines
+
+### round · 111
+
+- [accounting/balance](src/accounting/balance/SKILL.md) — Debit and credit meet in balance
+- [accounting/ledger](src/accounting/ledger/SKILL.md) — reasoning about accounting/ledger
+- [activities](src/activities/SKILL.md) — logging or analysing CRM touch-points
+- [agent](src/agent/SKILL.md) — reasoning about an agent
+- [agent/inventory](src/agent/inventory/SKILL.md) — reasoning about agent/inventory
+- [agent/research](src/agent/research/SKILL.md) — registering an agent R&D society as tenant users with assigned roles, coordinating findings over th…
+- [ai/industry](src/ai/industry/SKILL.md) — mapping AI industry failure modes to erpax diamond remedies
+- [allocation](src/allocation/SKILL.md) — defining how value/pay is distributed among contributors
+- [analytics](src/analytics/SKILL.md) — you need one computed read-out of the whole erpax corpus across every aspect
+- [api/audit/events](src/api/audit/events/SKILL.md) — recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screenin…
+- [aura](src/aura/SKILL.md) — reasoning about a folder/path's collective identity in erpax
+- [auto/populate/created/by](src/auto/populate/created/by/SKILL.md) — stamping the authoring user onto a row on first save without trusting client input
+- [bank/accounts](src/bank/accounts/SKILL.md) — managing bank account master data
+- [bank/accounts/payroll/runs](src/bank/accounts/payroll/runs/SKILL.md) — processing, auditing, or posting a periodic payroll batch
+- [barrier](src/barrier/SKILL.md) — reasoning about quantum tunnelling
+- [base/accounting/field](src/base/accounting/field/SKILL.md) — a Payload collection needs a shared accounting field
+- [beyond/bitemporal](src/beyond/bitemporal/SKILL.md) — querying a row AS OF two clocks at once
+- [beyond/carbon](src/beyond/carbon/SKILL.md) — accounting the gCO2e of a chain step for ESRS E1 / CSRD reporting
+- [body/hand](src/body/hand/SKILL.md) — reasoning about hand as an anatomical part of [[body]]
+- [body/lake](src/body/lake/SKILL.md) — reasoning about lake as a anatomical part of [[body]]
+- [body/shop](src/body/shop/SKILL.md) — reasoning about shop as a anatomical part of [[body]]
+- [book](src/book/SKILL.md) — reasoning about book
+- [brain](src/brain/SKILL.md) — reasoning about erpax's matrix as the connectome organ
+- [claim](src/claim/SKILL.md) — staking and settling claims
+- [cloudflare](src/cloudflare/SKILL.md) — touching Cloudflare
+- [competency](src/competency/SKILL.md) — reasoning about competency
+- [computer/graph](src/computer/graph/SKILL.md) — traversing corpus bonds as a directed graph
+- [conditional](src/conditional/SKILL.md) — a claim holds only under an unproven hypothesis
+- [convene](src/convene/SKILL.md) — any AI model
+- [convention/lawful](src/convention/lawful/SKILL.md) — checking whether every atom is accountable
+- [convention/named](src/convention/named/SKILL.md) — reasoning about how an atom is addressed
+- [convention/sourced](src/convention/sourced/SKILL.md) — an atom is written or reviewed
+- [conversion](src/conversion/SKILL.md) — reasoning about reversible representation change
+- [country/context](src/country/context/SKILL.md) — any code needs to branch on country
+- [cross/index](src/cross/index/SKILL.md) — Reciprocal cross of index/cross
+- [data/processing/activities](src/data/processing/activities/SKILL.md) — maintaining the GDPR Art.30 Records of Processing Activities (RoPA)
+- [default](src/default/SKILL.md) — reasoning about defaults
+- [design](src/design/SKILL.md) — defining the visual and interaction form of an experience
+- [dry](src/dry/SKILL.md) — migrating logic to maximum tampering cost
+- [duel](src/duel/SKILL.md) — testing through pairs of inverted development teams
+- [e](src/e/SKILL.md) — e must be read as the growth constant that is its own driver
+- [element](src/element/SKILL.md) — reasoning about composition and stability through the chemical-elements matrix
+- [emission](src/emission/SKILL.md) — quantifying the greenhouse-gas mass a cycle releases
+- [employees/share/based/payments](src/employees/share/based/payments/SKILL.md) — recording employee equity grants
+- [event](src/event/SKILL.md) — reasoning about event
+- [fiscal/devices](src/fiscal/devices/SKILL.md) — registering or managing СУПТО fiscal hardware
+- [fx/transactions](src/fx/transactions/SKILL.md) — logging or auditing IAS-21 FX events
+- [gl/accounts/recurring/journals](src/gl/accounts/recurring/journals/SKILL.md) — defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferre…
+- [governance](src/governance/SKILL.md) — the polity decides
+- [gravity](src/gravity/SKILL.md) — reasoning about why the corpus collapses toward one
+- [identity/element](src/identity/element/SKILL.md)
+- [ingest](src/ingest/SKILL.md) — pulling external records into the mesh idempotently
+- [invoices/credit/memos/refunds](src/invoices/credit/memos/refunds/SKILL.md) — tracking the actual cash payment back to a customer for a credit memo
+- [items/inventory/movements](src/items/inventory/movements/SKILL.md) — tracking any stock quantity change
+- [law](src/law/SKILL.md) — reasoning about law
+- [leftover](src/leftover/SKILL.md) — reasoning about the fold's residual
+- [legal/entities/closing/entries](src/legal/entities/closing/entries/SKILL.md) — executing or auditing period-end close
+- [legal/entities/intercompany/transactions](src/legal/entities/intercompany/transactions/SKILL.md) — recording or reconciling paired source-document transactions between two group tenants or legal ent…
+- [legal/entities/management/assessment/icfrs](src/legal/entities/management/assessment/icfrs/SKILL.md) — performing or documenting management's SOX §404(a) assessment of internal controls over financial r…
+- [link/group](src/link/group/SKILL.md)
+- [lot/work/phases](src/lot/work/phases/SKILL.md) — modeling a routing step
+- [medical](src/medical/SKILL.md) — reasoning about medical as a schema.org vocabulary word
+- [medical/drug](src/medical/drug/SKILL.md) — reasoning about drug as a medical facet of [[medical]]
+- [medical/evidence](src/medical/evidence/SKILL.md) — reasoning about evidence as a medical facet of [[medical]]
+- [medical/organization](src/medical/organization/SKILL.md) — reasoning about organization as a medical facet of [[medical]]
+- [medical/page](src/medical/page/SKILL.md) — reasoning about page as a medical facet of [[medical]]
+- [medical/score](src/medical/score/SKILL.md) — reasoning about score as a medical facet of [[medical]]
+- [medical/symptom](src/medical/symptom/SKILL.md) — reasoning about symptom as a medical facet of [[medical]]
+- [medical/treatment](src/medical/treatment/SKILL.md) — reasoning about treatment as a medical facet of [[medical]]
+- [medical/trial](src/medical/trial/SKILL.md) — reasoning about trial as a medical facet of [[medical]]
+- [medical/type](src/medical/type/SKILL.md) — reasoning about type as a medical facet of [[medical]]
+- [message](src/message/SKILL.md) — reasoning about the uuid AS the message
+- [method](src/method/SKILL.md) — reasoning about exported symbols as method-diamonds
+- [millennium](src/millennium/SKILL.md) — the Clay Millennium Problems are offered as a testing ground
+- [navigation](src/navigation/SKILL.md) — reasoning about navigation as a schema.org vocabulary word
+- [operators](src/operators/SKILL.md) — managing СУПТО operators
+- [packs](src/packs/SKILL.md) — modeling a shipping carton
+- [pagination](src/pagination/SKILL.md) — reasoning about pagination
+- [path](src/path/SKILL.md) — normalizing addresses across every surface
+- [quantum/aura](src/quantum/aura/SKILL.md) — reading the aura as quantum coherence
+- [quantum/communication/key](src/quantum/communication/key/SKILL.md) — reasoning about quantum key distribution (BB84 / E91) on the matrix
+- [quantum/deploy](src/quantum/deploy/SKILL.md) — shipping erpax to the edge
+- [quantum/development](src/quantum/development/SKILL.md) — choosing the next quantum capability to build
+- [quantum/gravity](src/quantum/gravity/SKILL.md) — relating an atom's gravitational mass to its quantum entanglement
+- [quantum/law](src/quantum/law/SKILL.md) — checking that an atom is grounded
+- [quantum/memory](src/quantum/memory/SKILL.md) — reasoning about memory in the quantum frame
+- [quantum/number](src/quantum/number/SKILL.md) — reasoning about a number as a stream rather than a magnitude
+- [quantum/snapshot](src/quantum/snapshot/SKILL.md) — finding and developing digital quantum snapshots
+- [realtime](src/realtime/SKILL.md) — modeling live delivery of events
+- [redundancy](src/redundancy/SKILL.md) — reasoning about redundancy
+- [report](src/report/SKILL.md) — a document (balance sheet, SAF-T, VAT return, audit file) must be produced
+- [research](src/research/SKILL.md) — bringing outside knowledge into erpax
+- [reveal](src/reveal/SKILL.md) — looking for structure the corpus grew on its own
+- [rodin/coil](src/rodin/coil/SKILL.md) — reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis
+- [roles](src/roles/SKILL.md) — defining RBAC roles
+- [rules](src/rules/SKILL.md) — tightening or auditing erpax gates
+- [rules/cycle](src/rules/cycle/SKILL.md) — a module reads a binding that does not exist yet
+- [rules/prose](src/rules/prose/SKILL.md) — checking that technical prose cites real code
+- [schema/test](src/schema/test/SKILL.md) — proving or tightening the unbreakable-matrix gate
+- [seal](src/seal/SKILL.md) — reasoning about the whole-corpus green verdict
+- [team](src/team/SKILL.md) — the society spawns multiple agents that share skills
+- [tenant/context](src/tenant/context/SKILL.md)
+- [think](src/think/SKILL.md) — moving thinking OUT of the model and INTO erpax
+- [translate/field](src/translate/field/SKILL.md) — Payload should self-translate a field on read
+- [un/cefact/5305](src/un/cefact/5305/SKILL.md) — implementing or referencing UN/CEFACT 5305
+- [uncertainty](src/uncertainty/SKILL.md) — reasoning about the Heisenberg uncertainty floor
+- [uuid](src/uuid/SKILL.md) — choosing which RFC 9562 UUID version fits a case
+- [uuid/governance](src/uuid/governance/SKILL.md)
+- [vitepress](src/vitepress/SKILL.md) — reasoning about the form coil
+- [wave/audit](src/wave/audit/SKILL.md) — reaching the audit dimension from the wave machinery
+- [word](src/word/SKILL.md) — addressing a lexical prose token
+
+### unity · 8
+
+- [access](src/access/SKILL.md) — defining or debugging Payload access control
+- [agent/access](src/agent/access/SKILL.md) — reasoning about how an agent acts
+- [config/examples](src/config/examples/SKILL.md) — seeding or referencing a self-contained tenant template
+- [identity](src/identity/SKILL.md) — working with erpax object identity or content-addressed UUIDs
+- [party/identity](src/party/identity/SKILL.md) — deciding whether two party records are the same legal person
+- [standard/access](src/standard/access/SKILL.md) — reaching access enforcement from the standard side
+- [whole](src/whole/SKILL.md) — reasoning about composition in erpax
+- [zeropoint](src/zeropoint/SKILL.md) — reasoning about the criterion that decides what is canonical
+
+### off-ring · 15
+
+- [audit/trail/access](src/audit/trail/access/SKILL.md) — gating reads, creates and mutations of the audit trail
+- [auth](src/auth/SKILL.md) — enabling or configuring Payload authentication on a collection
+- [cache/fingerprint](src/cache/fingerprint/SKILL.md) — a whole-corpus derivation (rules snapshot, readme graph, corpus context) is computed by many callers
+- [config](src/config/SKILL.md) — authoring or modifying the root Payload config (payload.config.ts / buildConfig)
+- [harmony/divisor](src/harmony/divisor/SKILL.md) — the 432 anchor's structure must be exact
+- [input](src/input/SKILL.md) — the user types anything the system can parse, analyse, or derive
+- [mesh](src/mesh/SKILL.md) — querying the whole ERP as one graph
+- [resonance](src/resonance/SKILL.md) — quantifying why content-addressing improves quantum speed in magnitudes
+- [rules/compatibility](src/rules/compatibility/SKILL.md) — a corpus atom's name might collide with the framework
+- [sandbox/experiment](src/sandbox/experiment/SKILL.md) — an agent needs to try an idea without risking the corpus
+- [scalpel](src/scalpel/SKILL.md) — many agents must edit in thousands without fabricating
+- [security/remote/access](src/security/remote/access/SKILL.md) — proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives
+- [test/hooks](src/test/hooks/SKILL.md) — tests consume the aura projection to render a colour
+- [testing/witness](src/testing/witness/SKILL.md) — a test derives over the whole corpus and hangs
+- [types/auth](src/types/auth/SKILL.md)
 
 ## corpus analytics
 
-Every per-folder README carries structured analytics (bond degree · seal · horo · variance · bindings · standards);
-this section rolls them up from the live tree.
+**1049** / **3156** sealed · **2946** balanced; mean bond degree `52.22` · **11** [[cloudflare]] bindings · **2399** [[standards]].
 
-- **2809** / **3175** sealed · **3018** / **3175** balanced
-- mean bond degree `45.11` · total variance `318`
-- **15** atoms with [[cloudflare]] bindings · **1694** distinct [[standards]] cited
+- **1049** / **3156** sealed · **2946** / **3156** balanced
+- mean bond degree `52.22` · total variance `387`
+- **11** atoms with [[cloudflare]] bindings · **2399** distinct [[standards]] cited
 
 | digit | measure | atoms | sealed |
 | ----: | ------- | ----: | -----: |
-| 1 | base | 515 | 465 |
-| 2 | share | 488 | 427 |
-| 4 | weave | 535 | 482 |
-| 8 | crest | 546 | 478 |
-| 7 | descent | 538 | 477 |
-| 5 | round | 537 | 471 |
-| 9 | unity | 8 | 5 |
-| 3 | 3 | 4 | 3 |
+| 1 | base | 491 | 173 |
+| 2 | share | 549 | 174 |
+| 4 | weave | 528 | 185 |
+| 8 | crest | 516 | 168 |
+| 7 | descent | 533 | 175 |
+| 5 | round | 498 | 164 |
+| 9 | unity | 13 | 7 |
+| 0 | off-ring | 9 | 0 |
+| 3 | 3 | 15 | 2 |
 | 6 | 6 | 4 | 1 |
 
 ## corpus entropy
@@ -77,24 +938,24 @@ this section rolls them up from the live tree.
 Gap debits and seal credits roll up in **comparable units (eb)** — entropy-bits
 (tamper-cost log₂ mass at the horo imperial-ratio floor). Folders and sectors sum on one scale.
 
-- gap mass `8468.22` eb · seal mass `35875.465` eb · net residual `-27407.245` eb
-- seal/gap ratio `4.236` · sealed `2809` · unsealed `366`
+- gap mass `9785.28` eb · seal mass `33277.365` eb · net residual `-23492.085` eb
+- seal/gap ratio `3.401` · sealed `1049` · unsealed `2107`
 
 | partition | folders | gap eb | seal eb | net eb |
 | --------- | ------: | -----: | ------: | -----: |
-| legal | 26 | 74.17 | 281.985 | -207.815 |
-| fiscal | 12 | 32 | 127.3 | -95.3 |
-| self | 13 | 30.19 | 150.32 | -120.13 |
-| iso | 13 | 29.755 | 138.8 | -109.045 |
-| rodin | 11 | 28.53 | 125.735 | -97.205 |
-| customers | 17 | 25 | 181.7 | -156.7 |
-| horo | 8 | 22.19 | 89.98 | -67.79 |
-| gl | 7 | 21 | 70.7 | -49.7 |
-| internal | 8 | 21 | 79.7 | -58.7 |
-| bank | 6 | 20.17 | 58.9 | -38.73 |
-| items | 12 | 20 | 127 | -107 |
-| tax | 6 | 18.17 | 59.7 | -41.53 |
-| … | 2664 more sectors | — | — | — |
+| vocabulary | 1678 | 7025.335 | 15941.3 | -8915.965 |
+| legal | 26 | 74.17 | 283.885 | -209.715 |
+| fiscal | 13 | 33 | 143.2 | -110.2 |
+| iso | 13 | 29.755 | 137.6 | -107.845 |
+| rodin | 11 | 28.53 | 125.835 | -97.305 |
+| customers | 17 | 25 | 183.2 | -158.2 |
+| audit | 10 | 23.17 | 103.4 | -80.23 |
+| horo | 8 | 22.19 | 89.58 | -67.39 |
+| tax | 7 | 22.17 | 69.4 | -47.23 |
+| items | 13 | 22 | 135 | -113 |
+| self | 14 | 21.02 | 164.905 | -143.885 |
+| gl | 7 | 21 | 70.5 | -49.5 |
+| … | 889 more sectors | — | — | — |
 
 ### free energy (Landauer)
 
@@ -117,32 +978,32 @@ Proof steps:
 7. `F(0) = F_max  >  F(S)  ∀ S > 0`
 8. `ΔF = F(S₁) − F(S₂) = (S₂ − S₁) · LANDAUER_BIT  when S₂ > S₁` · LANDAUER_BIT
 
-- S `11931` bits · F_max `32287.918` · F(S) `20356.918` bits · release potential `11931` bits
-- scale toward zero entropy `63.048%` · unit `eb`
+- S `15844` bits · F_max `29949.629` · F(S) `14105.629` bits · release potential `15844` bits
+- scale toward zero entropy `47.098%` · unit `eb`
 
 ## corpus quantum thinking
 
 Per-folder agent thinking transformed to quantum at readme generation — rolled up from
 path ledger · session diamonds · improve receipts · dispatch context.
 
-- atoms with thinking `3175` · superposition mass `6397` · collapse mass `16937`
-- seal uuids `11632` · sealed thinking `2809`
+- atoms with thinking `3156` · superposition mass `8257` · collapse mass `16392`
+- seal uuids `9567` · sealed thinking `1049`
 
 | partition | atoms | superposition | collapse |
 | --------- | ----: | ------------: | -------: |
-| quantum | 62 | 84 | 492 |
+| vocabulary | 1678 | 5186 | 9763 |
+| quantum | 65 | 111 | 507 |
 | legal | 26 | 66 | 99 |
-| medical | 52 | 52 | 104 |
-| fiscal | 12 | 32 | 60 |
-| self | 13 | 29 | 52 |
+| medical | 52 | 55 | 104 |
+| audit | 10 | 41 | 44 |
+| fiscal | 13 | 36 | 65 |
+| agent | 12 | 32 | 73 |
+| computer | 18 | 30 | 37 |
 | body | 28 | 28 | 56 |
+| customers | 17 | 28 | 85 |
 | iso | 13 | 28 | 56 |
-| convention | 20 | 25 | 50 |
-| customers | 17 | 25 | 85 |
-| gl | 7 | 22 | 35 |
-| internal | 8 | 21 | 36 |
-| rodin | 11 | 21 | 34 |
-| … | 2664 more | — | — |
+| invoices | 9 | 26 | 37 |
+| … | 889 more | — | — |
 
 ## the corpus — merged papers
 
@@ -151,9 +1012,9 @@ IS a standalone scientific paper. This section merges the whole corpus here — 
 
 ### abstract (rollup)
 
-- **11332** papers · MD **9508** · TS **1824**
-- **9453** gravity-held (sealed atoms) · **3114** distinct references in the union
-- MD with law **2869** · TS with paired proof **1612**
+- **11324** papers · MD **9178** · TS **2146**
+- **4206** gravity-held (sealed atoms) · **2279** distinct references in the union
+- MD with law **2812** · TS with paired proof **1937**
 
 ### methods
 
@@ -165,2773 +1026,20 @@ IS a standalone scientific paper. This section merges the whole corpus here — 
 
 | medium | kind | total | abstract | methods | results | references | uuid | proof | gravity |
 | ------ | ---- | ----: | -------: | ------: | ------: | ---------: | ---: | ----: | ------: |
-| md | LLM | 3166 | — | — | — | — | — | — | — |
-| md | README | 3166 | — | — | — | — | — | — | — |
-| md | SKILL | 3176 | — | — | — | — | — | — | — |
-| **md** | **Σ** | **9508** | **9508** | **8669** | **9201** | **2760** | **9424** | **2869** | **8411** |
-| ts | index | 811 | — | — | — | — | — | — | — |
+| md | LLM | 3011 | — | — | — | — | — | — | — |
+| md | README | 3011 | — | — | — | — | — | — | — |
+| md | SKILL | 3156 | — | — | — | — | — | — | — |
+| **md** | **Σ** | **9178** | **9151** | **8509** | **8832** | **2620** | **8958** | **2812** | **2989** |
+| ts | index | 972 | — | — | — | — | — | — | — |
 | ts | seed | 200 | — | — | — | — | — | — | — |
-| ts | test | 809 | — | — | — | — | — | — | — |
-| ts | tsx | 4 | — | — | — | — | — | — | — |
-| **ts** | **Σ** | **1824** | **1824** | **1581** | **1824** | **922** | **0** | **1612** | **1042** |
+| ts | test | 969 | — | — | — | — | — | — | — |
+| ts | tsx | 5 | — | — | — | — | — | — | — |
+| **ts** | **Σ** | **2146** | **2146** | **1810** | **2146** | **1028** | **0** | **1937** | **1217** |
 
 ### references
 
-**3114** distinct citations across gravity-held papers
+**2279** distinct citations across gravity-held papers
 (frontmatter `standards:` · `@standard` · `@see` · `Attested in` · file banners).
-
-
-## [[pivot]]
-
-Cross-tab of **3175** folder README models — state × count per axis.
-
-### [[seal]]
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| sealed | 2809 | 88.47 |
-| unsealed | 366 | 11.53 |
-| **Σ** | **3175** | **100** |
-
-### [[balance]]
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| balanced | 3018 | 95.06 |
-| unbalanced | 157 | 4.94 |
-| **Σ** | **3175** | **100** |
-
-### [[gravity]]
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| held | 3010 | 94.8 |
-| not-held | 165 | 5.2 |
-| **Σ** | **3175** | **100** |
-
-### folder law / name
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| valid | 3169 | 99.81 |
-| invalid | 6 | 0.19 |
-| **Σ** | **3175** | **100** |
-
-### folder law / trinity
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| vocabulary | 2362 | 74.39 |
-| code-complete | 805 | 25.35 |
-| incomplete | 8 | 0.25 |
-| **Σ** | **3175** | **100** |
-
-### [[horo]] ring
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| ring·8 | 546 | 17.2 |
-| ring·7 | 538 | 16.94 |
-| ring·5 | 537 | 16.91 |
-| ring·4 | 535 | 16.85 |
-| ring·1 | 515 | 16.22 |
-| ring·2 | 488 | 15.37 |
-| ring·9 | 8 | 0.25 |
-| off-ring·3 | 4 | 0.13 |
-| off-ring·6 | 4 | 0.13 |
-| **Σ** | **3175** | **100** |
-
-### typography / bond degree
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| 11+ | 2625 | 82.68 |
-| 6–10 | 353 | 11.12 |
-| 0 | 165 | 5.2 |
-| 1–5 | 32 | 1.01 |
-| **Σ** | **3175** | **100** |
-
-### typography / partition
-
-| state | count | share % |
-| ----- | ----: | ------: |
-| quantum | 62 | 1.95 |
-| medical | 52 | 1.64 |
-| body | 28 | 0.88 |
-| legal | 26 | 0.82 |
-| convention | 20 | 0.63 |
-| computer | 17 | 0.54 |
-| customers | 17 | 0.54 |
-| iso | 13 | 0.41 |
-| self | 13 | 0.41 |
-| fiscal | 12 | 0.38 |
-| items | 12 | 0.38 |
-| rodin | 11 | 0.35 |
-| beyond | 10 | 0.31 |
-| accounting | 9 | 0.28 |
-| agent | 8 | 0.25 |
-| horo | 8 | 0.25 |
-| internal | 8 | 0.25 |
-| audit | 7 | 0.22 |
-| employees | 7 | 0.22 |
-| gl | 7 | 0.22 |
-| invoices | 7 | 0.22 |
-| bank | 6 | 0.19 |
-| country | 6 | 0.19 |
-| skill | 6 | 0.19 |
-| tax | 6 | 0.19 |
-| taxing | 6 | 0.19 |
-| work | 6 | 0.19 |
-| auto | 5 | 0.16 |
-| cost | 5 | 0.16 |
-| workflow | 5 | 0.16 |
-| agents | 4 | 0.13 |
-| ai | 4 | 0.13 |
-| calculate | 4 | 0.13 |
-| currency | 4 | 0.13 |
-| journal | 4 | 0.13 |
-| memory | 4 | 0.13 |
-| subscription | 4 | 0.13 |
-| warehouse | 4 | 0.13 |
-| aura | 3 | 0.09 |
-| compliance | 3 | 0.09 |
-| config | 3 | 0.09 |
-| data | 3 | 0.09 |
-| eu | 3 | 0.09 |
-| leases | 3 | 0.09 |
-| lot | 3 | 0.09 |
-| media | 3 | 0.09 |
-| migrate | 3 | 0.09 |
-| nist | 3 | 0.09 |
-| period | 3 | 0.09 |
-| properties | 3 | 0.09 |
-| refactor | 3 | 0.09 |
-| rfc | 3 | 0.09 |
-| search | 3 | 0.09 |
-| security | 3 | 0.09 |
-| tamper | 3 | 0.09 |
-| trading | 3 | 0.09 |
-| translations | 3 | 0.09 |
-| un | 3 | 0.09 |
-| uuid | 3 | 0.09 |
-| vendors | 3 | 0.09 |
-| address | 2 | 0.06 |
-| api | 2 | 0.06 |
-| apply | 2 | 0.06 |
-| authenticated | 2 | 0.06 |
-| biological | 2 | 0.06 |
-| bookable | 2 | 0.06 |
-| business | 2 | 0.06 |
-| capture | 2 | 0.06 |
-| categories | 2 | 0.06 |
-| cloudflare | 2 | 0.06 |
-| commitments | 2 | 0.06 |
-| competency | 2 | 0.06 |
-| consent | 2 | 0.06 |
-| consistency | 2 | 0.06 |
-| consolidation | 2 | 0.06 |
-| customer | 2 | 0.06 |
-| development | 2 | 0.06 |
-| domain | 2 | 0.06 |
-| entity | 2 | 0.06 |
-| evidence | 2 | 0.06 |
-| fear | 2 | 0.06 |
-| financial | 2 | 0.06 |
-| fixed | 2 | 0.06 |
-| fusion | 2 | 0.06 |
-| government | 2 | 0.06 |
-| heart | 2 | 0.06 |
-| held | 2 | 0.06 |
-| identity | 2 | 0.06 |
-| ifrs | 2 | 0.06 |
-| insurance | 2 | 0.06 |
-| law | 2 | 0.06 |
-| leads | 2 | 0.06 |
-| llm | 2 | 0.06 |
-| love | 2 | 0.06 |
-| maintenance | 2 | 0.06 |
-| mcp | 2 | 0.06 |
-| monitor | 2 | 0.06 |
-| multi | 2 | 0.06 |
-| pack | 2 | 0.06 |
-| payload | 2 | 0.06 |
-| payment | 2 | 0.06 |
-| plugins | 2 | 0.06 |
-| post | 2 | 0.06 |
-| proof | 2 | 0.06 |
-| realtime | 2 | 0.06 |
-| research | 2 | 0.06 |
-| reverse | 2 | 0.06 |
-| roles | 2 | 0.06 |
-| run | 2 | 0.06 |
-| schema | 2 | 0.06 |
-| standard | 2 | 0.06 |
-| tags | 2 | 0.06 |
-| team | 2 | 0.06 |
-| test | 2 | 0.06 |
-| transaction | 2 | 0.06 |
-| ui | 2 | 0.06 |
-| abdomen | 1 | 0.03 |
-| about | 1 | 0.03 |
-| abridged | 1 | 0.03 |
-| abstract | 1 | 0.03 |
-| acceleration | 1 | 0.03 |
-| accept | 1 | 0.03 |
-| acceptance | 1 | 0.03 |
-| accepted | 1 | 0.03 |
-| accepting | 1 | 0.03 |
-| accepts | 1 | 0.03 |
-| access | 1 | 0.03 |
-| accessibility | 1 | 0.03 |
-| accessible | 1 | 0.03 |
-| accessory | 1 | 0.03 |
-| accommodation | 1 | 0.03 |
-| account | 1 | 0.03 |
-| accountable | 1 | 0.03 |
-| accrual | 1 | 0.03 |
-| achieve | 1 | 0.03 |
-| acknowledgment | 1 | 0.03 |
-| acquire | 1 | 0.03 |
-| acquired | 1 | 0.03 |
-| acriss | 1 | 0.03 |
-| action | 1 | 0.03 |
-| actionable | 1 | 0.03 |
-| activate | 1 | 0.03 |
-| activation | 1 | 0.03 |
-| active | 1 | 0.03 |
-| activities | 1 | 0.03 |
-| activity | 1 | 0.03 |
-| actor | 1 | 0.03 |
-| actors | 1 | 0.03 |
-| ad | 1 | 0.03 |
-| add | 1 | 0.03 |
-| added | 1 | 0.03 |
-| additional | 1 | 0.03 |
-| adjustment | 1 | 0.03 |
-| admin | 1 | 0.03 |
-| administration | 1 | 0.03 |
-| administrative | 1 | 0.03 |
-| adult | 1 | 0.03 |
-| adults | 1 | 0.03 |
-| advance | 1 | 0.03 |
-| adverse | 1 | 0.03 |
-| advertised | 1 | 0.03 |
-| advertiser | 1 | 0.03 |
-| aerobic | 1 | 0.03 |
-| affected | 1 | 0.03 |
-| affiliate | 1 | 0.03 |
-| affiliation | 1 | 0.03 |
-| after | 1 | 0.03 |
-| age | 1 | 0.03 |
-| agency | 1 | 0.03 |
-| aggregate | 1 | 0.03 |
-| aggregation | 1 | 0.03 |
-| agree | 1 | 0.03 |
-| agreement | 1 | 0.03 |
-| agriculture | 1 | 0.03 |
-| aid | 1 | 0.03 |
-| airbags | 1 | 0.03 |
-| aircraft | 1 | 0.03 |
-| airline | 1 | 0.03 |
-| airport | 1 | 0.03 |
-| akashic | 1 | 0.03 |
-| album | 1 | 0.03 |
-| albums | 1 | 0.03 |
-| alcohol | 1 | 0.03 |
-| algorithm | 1 | 0.03 |
-| algorithmic | 1 | 0.03 |
-| algorithmically | 1 | 0.03 |
-| alignment | 1 | 0.03 |
-| all | 1 | 0.03 |
-| allergies | 1 | 0.03 |
-| alley | 1 | 0.03 |
-| allocate | 1 | 0.03 |
-| allocation | 1 | 0.03 |
-| allow | 1 | 0.03 |
-| allowed | 1 | 0.03 |
-| alternate | 1 | 0.03 |
-| alternative | 1 | 0.03 |
-| alumni | 1 | 0.03 |
-| am | 1 | 0.03 |
-| amendment | 1 | 0.03 |
-| amends | 1 | 0.03 |
-| amenity | 1 | 0.03 |
-| amount | 1 | 0.03 |
-| amp | 1 | 0.03 |
-| amradio | 1 | 0.03 |
-| amusement | 1 | 0.03 |
-| anaerobic | 1 | 0.03 |
-| analog | 1 | 0.03 |
-| analysis | 1 | 0.03 |
-| analytics | 1 | 0.03 |
-| anatomical | 1 | 0.03 |
-| anatomy | 1 | 0.03 |
-| anbi | 1 | 0.03 |
-| anchor | 1 | 0.03 |
-| anchoring | 1 | 0.03 |
-| android | 1 | 0.03 |
-| anesthesia | 1 | 0.03 |
-| angel | 1 | 0.03 |
-| animal | 1 | 0.03 |
-| animism | 1 | 0.03 |
-| announcement | 1 | 0.03 |
-| annual | 1 | 0.03 |
-| answer | 1 | 0.03 |
-| antagonist | 1 | 0.03 |
-| anti | 1 | 0.03 |
-| anyone | 1 | 0.03 |
-| apartment | 1 | 0.03 |
-| apiculture | 1 | 0.03 |
-| apireference | 1 | 0.03 |
-| appearance | 1 | 0.03 |
-| append | 1 | 0.03 |
-| applicability | 1 | 0.03 |
-| applicable | 1 | 0.03 |
-| applicant | 1 | 0.03 |
-| application | 1 | 0.03 |
-| applied | 1 | 0.03 |
-| applies | 1 | 0.03 |
-| approved | 1 | 0.03 |
-| aquaculture | 1 | 0.03 |
-| aquarium | 1 | 0.03 |
-| archangel | 1 | 0.03 |
-| architect | 1 | 0.03 |
-| architecture | 1 | 0.03 |
-| archival | 1 | 0.03 |
-| archive | 1 | 0.03 |
-| archived | 1 | 0.03 |
-| area | 1 | 0.03 |
-| arena | 1 | 0.03 |
-| arm | 1 | 0.03 |
-| arrangement | 1 | 0.03 |
-| arrival | 1 | 0.03 |
-| arrive | 1 | 0.03 |
-| art | 1 | 0.03 |
-| arterial | 1 | 0.03 |
-| artery | 1 | 0.03 |
-| artform | 1 | 0.03 |
-| article | 1 | 0.03 |
-| artist | 1 | 0.03 |
-| arts | 1 | 0.03 |
-| artwork | 1 | 0.03 |
-| ascending | 1 | 0.03 |
-| asin | 1 | 0.03 |
-| ask | 1 | 0.03 |
-| aspect | 1 | 0.03 |
-| assembly | 1 | 0.03 |
-| assess | 1 | 0.03 |
-| assesses | 1 | 0.03 |
-| asset | 1 | 0.03 |
-| assign | 1 | 0.03 |
-| assigned | 1 | 0.03 |
-| assignment | 1 | 0.03 |
-| associated | 1 | 0.03 |
-| association | 1 | 0.03 |
-| athlete | 1 | 0.03 |
-| atlas | 1 | 0.03 |
-| atom | 1 | 0.03 |
-| attachment | 1 | 0.03 |
-| attendance | 1 | 0.03 |
-| attendee | 1 | 0.03 |
-| attendees | 1 | 0.03 |
-| attestation | 1 | 0.03 |
-| attorney | 1 | 0.03 |
-| attraction | 1 | 0.03 |
-| attribute | 1 | 0.03 |
-| attribution | 1 | 0.03 |
-| attrition | 1 | 0.03 |
-| audience | 1 | 0.03 |
-| audio | 1 | 0.03 |
-| audiobook | 1 | 0.03 |
-| audit-right | 1 | 0.03 |
-| auth | 1 | 0.03 |
-| authenticate | 1 | 0.03 |
-| authenticator | 1 | 0.03 |
-| authenticity | 1 | 0.03 |
-| author | 1 | 0.03 |
-| authoritative | 1 | 0.03 |
-| authority | 1 | 0.03 |
-| authorize | 1 | 0.03 |
-| automated | 1 | 0.03 |
-| automatically | 1 | 0.03 |
-| automotive | 1 | 0.03 |
-| availability | 1 | 0.03 |
-| available | 1 | 0.03 |
-| average | 1 | 0.03 |
-| award | 1 | 0.03 |
-| awarded | 1 | 0.03 |
-| awards | 1 | 0.03 |
-| awareness | 1 | 0.03 |
-| away | 1 | 0.03 |
-| axles | 1 | 0.03 |
-| ayurvedic | 1 | 0.03 |
-| back | 1 | 0.03 |
-| background | 1 | 0.03 |
-| backlog | 1 | 0.03 |
-| backstory | 1 | 0.03 |
-| backup | 1 | 0.03 |
-| bacteria | 1 | 0.03 |
-| bahai | 1 | 0.03 |
-| bakery | 1 | 0.03 |
-| balance | 1 | 0.03 |
-| bans | 1 | 0.03 |
-| bar | 1 | 0.03 |
-| barcode | 1 | 0.03 |
-| barrier | 1 | 0.03 |
-| base | 1 | 0.03 |
-| based | 1 | 0.03 |
-| baseline | 1 | 0.03 |
-| basic | 1 | 0.03 |
-| batch | 1 | 0.03 |
-| bathrooms | 1 | 0.03 |
-| bcc | 1 | 0.03 |
-| bcp | 1 | 0.03 |
-| beach | 1 | 0.03 |
-| beauty | 1 | 0.03 |
-| bed | 1 | 0.03 |
-| bedrooms | 1 | 0.03 |
-| beds | 1 | 0.03 |
-| before | 1 | 0.03 |
-| befriend | 1 | 0.03 |
-| begin | 1 | 0.03 |
-| beneficiary | 1 | 0.03 |
-| benefit | 1 | 0.03 |
-| benefits | 1 | 0.03 |
-| best | 1 | 0.03 |
-| bg | 1 | 0.03 |
-| bicycle | 1 | 0.03 |
-| big | 1 | 0.03 |
-| bike | 1 | 0.03 |
-| bill | 1 | 0.03 |
-| billing | 1 | 0.03 |
-| binding | 1 | 0.03 |
-| bindings | 1 | 0.03 |
-| bio | 1 | 0.03 |
-| biofield | 1 | 0.03 |
-| biomagnetism | 1 | 0.03 |
-| biomass | 1 | 0.03 |
-| biomechnical | 1 | 0.03 |
-| biometric | 1 | 0.03 |
-| biophoton | 1 | 0.03 |
-| birth | 1 | 0.03 |
-| bitrate | 1 | 0.03 |
-| blinded | 1 | 0.03 |
-| block | 1 | 0.03 |
-| blockchain | 1 | 0.03 |
-| blocks | 1 | 0.03 |
-| blog | 1 | 0.03 |
-| blood | 1 | 0.03 |
-| boarding | 1 | 0.03 |
-| boat | 1 | 0.03 |
-| bogomilism | 1 | 0.03 |
-| boltzmann | 1 | 0.03 |
-| bone | 1 | 0.03 |
-| book | 1 | 0.03 |
-| booking | 1 | 0.03 |
-| bookmark | 1 | 0.03 |
-| boolean | 1 | 0.03 |
-| borrow | 1 | 0.03 |
-| borrower | 1 | 0.03 |
-| bottleneck | 1 | 0.03 |
-| bound | 1 | 0.03 |
-| bowling | 1 | 0.03 |
-| box | 1 | 0.03 |
-| boys | 1 | 0.03 |
-| brain | 1 | 0.03 |
-| brainstorm | 1 | 0.03 |
-| branch | 1 | 0.03 |
-| brand | 1 | 0.03 |
-| breadcrumb | 1 | 0.03 |
-| breakfast | 1 | 0.03 |
-| breastfeeding | 1 | 0.03 |
-| breath | 1 | 0.03 |
-| breed | 1 | 0.03 |
-| brewery | 1 | 0.03 |
-| bridge | 1 | 0.03 |
-| broadcast | 1 | 0.03 |
-| broadcaster | 1 | 0.03 |
-| broader | 1 | 0.03 |
-| broker | 1 | 0.03 |
-| brokerage | 1 | 0.03 |
-| brow | 1 | 0.03 |
-| browser | 1 | 0.03 |
-| buddhism | 1 | 0.03 |
-| buddhist | 1 | 0.03 |
-| budget | 1 | 0.03 |
-| budgetvariance | 1 | 0.03 |
-| building | 1 | 0.03 |
-| buildings | 1 | 0.03 |
-| built | 1 | 0.03 |
-| bulk | 1 | 0.03 |
-| bundle | 1 | 0.03 |
-| bus | 1 | 0.03 |
-| bust | 1 | 0.03 |
-| buy | 1 | 0.03 |
-| buyer | 1 | 0.03 |
-| byline | 1 | 0.03 |
-| bylines | 1 | 0.03 |
-| c19 | 1 | 0.03 |
-| cable | 1 | 0.03 |
-| cache | 1 | 0.03 |
-| cafe | 1 | 0.03 |
-| calculation | 1 | 0.03 |
-| calculator | 1 | 0.03 |
-| calendar | 1 | 0.03 |
-| call | 1 | 0.03 |
-| calorie | 1 | 0.03 |
-| calories | 1 | 0.03 |
-| campaign | 1 | 0.03 |
-| campground | 1 | 0.03 |
-| camping | 1 | 0.03 |
-| can | 1 | 0.03 |
-| canal | 1 | 0.03 |
-| cancel | 1 | 0.03 |
-| cancelled | 1 | 0.03 |
-| candidate | 1 | 0.03 |
-| cap | 1 | 0.03 |
-| capacity | 1 | 0.03 |
-| caption | 1 | 0.03 |
-| car | 1 | 0.03 |
-| carbohydrate | 1 | 0.03 |
-| card | 1 | 0.03 |
-| cardinality | 1 | 0.03 |
-| cardiovascular | 1 | 0.03 |
-| care | 1 | 0.03 |
-| career | 1 | 0.03 |
-| cargo | 1 | 0.03 |
-| carrier | 1 | 0.03 |
-| carriers | 1 | 0.03 |
-| case | 1 | 0.03 |
-| cases | 1 | 0.03 |
-| cash | 1 | 0.03 |
-| casino | 1 | 0.03 |
-| cassette | 1 | 0.03 |
-| catalog | 1 | 0.03 |
-| category | 1 | 0.03 |
-| catholic | 1 | 0.03 |
-| catholicism | 1 | 0.03 |
-| cause | 1 | 0.03 |
-| causes | 1 | 0.03 |
-| cc | 1 | 0.03 |
-| cdcpmd | 1 | 0.03 |
-| cdcpmdrecord | 1 | 0.03 |
-| cdformat | 1 | 0.03 |
-| cemetery | 1 | 0.03 |
-| center | 1 | 0.03 |
-| certificate | 1 | 0.03 |
-| certification | 1 | 0.03 |
-| certified | 1 | 0.03 |
-| ch | 1 | 0.03 |
-| chain | 1 | 0.03 |
-| chakra | 1 | 0.03 |
-| change | 1 | 0.03 |
-| changes | 1 | 0.03 |
-| channel | 1 | 0.03 |
-| chapter | 1 | 0.03 |
-| character | 1 | 0.03 |
-| charge | 1 | 0.03 |
-| charitable | 1 | 0.03 |
-| charity | 1 | 0.03 |
-| chart | 1 | 0.03 |
-| chat | 1 | 0.03 |
-| chats | 1 | 0.03 |
-| cheat | 1 | 0.03 |
-| check | 1 | 0.03 |
-| checkin | 1 | 0.03 |
-| checking | 1 | 0.03 |
-| checkins | 1 | 0.03 |
-| checklist | 1 | 0.03 |
-| checkout | 1 | 0.03 |
-| chem | 1 | 0.03 |
-| chemical | 1 | 0.03 |
-| chest | 1 | 0.03 |
-| child | 1 | 0.03 |
-| children | 1 | 0.03 |
-| childrens | 1 | 0.03 |
-| chinese | 1 | 0.03 |
-| chiropractic | 1 | 0.03 |
-| choice | 1 | 0.03 |
-| cholesterol | 1 | 0.03 |
-| choose | 1 | 0.03 |
-| christianity | 1 | 0.03 |
-| church | 1 | 0.03 |
-| churn | 1 | 0.03 |
-| circle | 1 | 0.03 |
-| citation | 1 | 0.03 |
-| city | 1 | 0.03 |
-| civic | 1 | 0.03 |
-| civilization | 1 | 0.03 |
-| claim | 1 | 0.03 |
-| class | 1 | 0.03 |
-| classification | 1 | 0.03 |
-| classified | 1 | 0.03 |
-| classifier | 1 | 0.03 |
-| classify | 1 | 0.03 |
-| classroom | 1 | 0.03 |
-| clause | 1 | 0.03 |
-| cleaning | 1 | 0.03 |
-| clearance | 1 | 0.03 |
-| cli | 1 | 0.03 |
-| clincal | 1 | 0.03 |
-| clinic | 1 | 0.03 |
-| clinical | 1 | 0.03 |
-| clinician | 1 | 0.03 |
-| clip | 1 | 0.03 |
-| cloning | 1 | 0.03 |
-| close | 1 | 0.03 |
-| closes | 1 | 0.03 |
-| closing | 1 | 0.03 |
-| closures | 1 | 0.03 |
-| clothing | 1 | 0.03 |
-| club | 1 | 0.03 |
-| co | 1 | 0.03 |
-| co2 | 1 | 0.03 |
-| coach | 1 | 0.03 |
-| cod | 1 | 0.03 |
-| code | 1 | 0.03 |
-| coding | 1 | 0.03 |
-| coffee | 1 | 0.03 |
-| coherence | 1 | 0.03 |
-| cohort | 1 | 0.03 |
-| coinsurance | 1 | 0.03 |
-| collapse | 1 | 0.03 |
-| collar | 1 | 0.03 |
-| collateral | 1 | 0.03 |
-| colleague | 1 | 0.03 |
-| colleagues | 1 | 0.03 |
-| collection | 1 | 0.03 |
-| collections | 1 | 0.03 |
-| college | 1 | 0.03 |
-| collide | 1 | 0.03 |
-| collider | 1 | 0.03 |
-| color | 1 | 0.03 |
-| colorist | 1 | 0.03 |
-| colour | 1 | 0.03 |
-| column | 1 | 0.03 |
-| combination | 1 | 0.03 |
-| comedy | 1 | 0.03 |
-| comic | 1 | 0.03 |
-| command | 1 | 0.03 |
-| commences | 1 | 0.03 |
-| comment | 1 | 0.03 |
-| comments | 1 | 0.03 |
-| commerce | 1 | 0.03 |
-| commission | 1 | 0.03 |
-| commitment | 1 | 0.03 |
-| committee | 1 | 0.03 |
-| communicate | 1 | 0.03 |
-| communication | 1 | 0.03 |
-| community | 1 | 0.03 |
-| company | 1 | 0.03 |
-| compass | 1 | 0.03 |
-| compensation | 1 | 0.03 |
-| competencies | 1 | 0.03 |
-| competition | 1 | 0.03 |
-| competitor | 1 | 0.03 |
-| compilation | 1 | 0.03 |
-| complete | 1 | 0.03 |
-| completed | 1 | 0.03 |
-| completion | 1 | 0.03 |
-| complex | 1 | 0.03 |
-| complication | 1 | 0.03 |
-| complications | 1 | 0.03 |
-| component | 1 | 0.03 |
-| components | 1 | 0.03 |
-| composer | 1 | 0.03 |
-| composite | 1 | 0.03 |
-| composition | 1 | 0.03 |
-| compost | 1 | 0.03 |
-| compound | 1 | 0.03 |
-| comprised | 1 | 0.03 |
-| computational | 1 | 0.03 |
-| condition | 1 | 0.03 |
-| conditions | 1 | 0.03 |
-| conference | 1 | 0.03 |
-| confidentiality | 1 | 0.03 |
-| configuration | 1 | 0.03 |
-| confirm | 1 | 0.03 |
-| confirmation | 1 | 0.03 |
-| confirmed | 1 | 0.03 |
-| conflict | 1 | 0.03 |
-| confucianism | 1 | 0.03 |
-| connected | 1 | 0.03 |
-| connection | 1 | 0.03 |
-| connections | 1 | 0.03 |
-| consciousness | 1 | 0.03 |
-| conservation | 1 | 0.03 |
-| consideration | 1 | 0.03 |
-| considerations | 1 | 0.03 |
-| consignment | 1 | 0.03 |
-| consolidates | 1 | 0.03 |
-| consortium | 1 | 0.03 |
-| constitution | 1 | 0.03 |
-| constraint | 1 | 0.03 |
-| constraints | 1 | 0.03 |
-| construction | 1 | 0.03 |
-| consumable | 1 | 0.03 |
-| consume | 1 | 0.03 |
-| consumption | 1 | 0.03 |
-| contact | 1 | 0.03 |
-| contactless | 1 | 0.03 |
-| contagiousness | 1 | 0.03 |
-| contained | 1 | 0.03 |
-| contains | 1 | 0.03 |
-| content | 1 | 0.03 |
-| context | 1 | 0.03 |
-| continent | 1 | 0.03 |
-| continental | 1 | 0.03 |
-| contingency | 1 | 0.03 |
-| continuation | 1 | 0.03 |
-| contract | 1 | 0.03 |
-| contractor | 1 | 0.03 |
-| contractual | 1 | 0.03 |
-| contraindication | 1 | 0.03 |
-| contribution | 1 | 0.03 |
-| contributor | 1 | 0.03 |
-| control | 1 | 0.03 |
-| controlled | 1 | 0.03 |
-| convenience | 1 | 0.03 |
-| conventional | 1 | 0.03 |
-| conversation | 1 | 0.03 |
-| conversion | 1 | 0.03 |
-| cook | 1 | 0.03 |
-| cooking | 1 | 0.03 |
-| cooperative | 1 | 0.03 |
-| coordinate | 1 | 0.03 |
-| coordinates | 1 | 0.03 |
-| copay | 1 | 0.03 |
-| copyright | 1 | 0.03 |
-| corporation | 1 | 0.03 |
-| corpus | 1 | 0.03 |
-| correction | 1 | 0.03 |
-| corrections | 1 | 0.03 |
-| corrects | 1 | 0.03 |
-| correlation | 1 | 0.03 |
-| count | 1 | 0.03 |
-| counter | 1 | 0.03 |
-| countersigned | 1 | 0.03 |
-| countries | 1 | 0.03 |
-| county | 1 | 0.03 |
-| course | 1 | 0.03 |
-| courthouse | 1 | 0.03 |
-| covenant | 1 | 0.03 |
-| cover | 1 | 0.03 |
-| coverage | 1 | 0.03 |
-| covercrop | 1 | 0.03 |
-| covered | 1 | 0.03 |
-| covers | 1 | 0.03 |
-| covid | 1 | 0.03 |
-| cream | 1 | 0.03 |
-| create | 1 | 0.03 |
-| created | 1 | 0.03 |
-| creative | 1 | 0.03 |
-| creator | 1 | 0.03 |
-| credential | 1 | 0.03 |
-| credit | 1 | 0.03 |
-| credited | 1 | 0.03 |
-| credits | 1 | 0.03 |
-| crematorium | 1 | 0.03 |
-| crisis | 1 | 0.03 |
-| critic | 1 | 0.03 |
-| crop | 1 | 0.03 |
-| cropped | 1 | 0.03 |
-| cropplan | 1 | 0.03 |
-| cross | 1 | 0.03 |
-| crosses | 1 | 0.03 |
-| crown | 1 | 0.03 |
-| csrd | 1 | 0.03 |
-| css | 1 | 0.03 |
-| cuisine | 1 | 0.03 |
-| cultivation | 1 | 0.03 |
-| cup | 1 | 0.03 |
-| currencies | 1 | 0.03 |
-| current | 1 | 0.03 |
-| cutoff | 1 | 0.03 |
-| cvd | 1 | 0.03 |
-| cycle | 1 | 0.03 |
-| damaged | 1 | 0.03 |
-| damages | 1 | 0.03 |
-| dance | 1 | 0.03 |
-| dangerous | 1 | 0.03 |
-| dashboard | 1 | 0.03 |
-| data-protection | 1 | 0.03 |
-| database | 1 | 0.03 |
-| dataset | 1 | 0.03 |
-| date | 1 | 0.03 |
-| dated | 1 | 0.03 |
-| dateline | 1 | 0.03 |
-| day | 1 | 0.03 |
-| days | 1 | 0.03 |
-| db | 1 | 0.03 |
-| ddx | 1 | 0.03 |
-| de | 1 | 0.03 |
-| deactivate | 1 | 0.03 |
-| deadline | 1 | 0.03 |
-| dealer | 1 | 0.03 |
-| death | 1 | 0.03 |
-| debit | 1 | 0.03 |
-| decentralization | 1 | 0.03 |
-| decide | 1 | 0.03 |
-| declaration | 1 | 0.03 |
-| declined | 1 | 0.03 |
-| decoherence | 1 | 0.03 |
-| decompression | 1 | 0.03 |
-| decontextualized | 1 | 0.03 |
-| decooperative | 1 | 0.03 |
-| deduction | 1 | 0.03 |
-| deduplication | 1 | 0.03 |
-| deep | 1 | 0.03 |
-| default | 1 | 0.03 |
-| defect | 1 | 0.03 |
-| defence | 1 | 0.03 |
-| deferral | 1 | 0.03 |
-| deferredrevenue | 1 | 0.03 |
-| defined | 1 | 0.03 |
-| definition | 1 | 0.03 |
-| definitive | 1 | 0.03 |
-| defoundation | 1 | 0.03 |
-| degreeday | 1 | 0.03 |
-| dejoint | 1 | 0.03 |
-| delete | 1 | 0.03 |
-| deleted | 1 | 0.03 |
-| delimited | 1 | 0.03 |
-| delivered | 1 | 0.03 |
-| delivery | 1 | 0.03 |
-| demand | 1 | 0.03 |
-| demo | 1 | 0.03 |
-| denominator | 1 | 0.03 |
-| denonprofit | 1 | 0.03 |
-| denot | 1 | 0.03 |
-| dentist | 1 | 0.03 |
-| dentistry | 1 | 0.03 |
-| depart | 1 | 0.03 |
-| department | 1 | 0.03 |
-| departure | 1 | 0.03 |
-| dependencies | 1 | 0.03 |
-| dependency | 1 | 0.03 |
-| deploy | 1 | 0.03 |
-| deposit | 1 | 0.03 |
-| depth | 1 | 0.03 |
-| depublic | 1 | 0.03 |
-| deregistered | 1 | 0.03 |
-| derive | 1 | 0.03 |
-| dermatologic | 1 | 0.03 |
-| dermatology | 1 | 0.03 |
-| descending | 1 | 0.03 |
-| description | 1 | 0.03 |
-| design | 1 | 0.03 |
-| designation | 1 | 0.03 |
-| desire | 1 | 0.03 |
-| desktop | 1 | 0.03 |
-| despatch | 1 | 0.03 |
-| destination | 1 | 0.03 |
-| details | 1 | 0.03 |
-| detected | 1 | 0.03 |
-| device | 1 | 0.03 |
-| diabetic | 1 | 0.03 |
-| diagnose | 1 | 0.03 |
-| diagnosis | 1 | 0.03 |
-| diagnostic | 1 | 0.03 |
-| diagram | 1 | 0.03 |
-| diamond | 1 | 0.03 |
-| died | 1 | 0.03 |
-| diet | 1 | 0.03 |
-| dietary | 1 | 0.03 |
-| differential | 1 | 0.03 |
-| diffusion | 1 | 0.03 |
-| digit | 1 | 0.03 |
-| digital | 1 | 0.03 |
-| dimension | 1 | 0.03 |
-| direct | 1 | 0.03 |
-| direction | 1 | 0.03 |
-| director | 1 | 0.03 |
-| directors | 1 | 0.03 |
-| disability | 1 | 0.03 |
-| disagree | 1 | 0.03 |
-| disambiguating | 1 | 0.03 |
-| disc | 1 | 0.03 |
-| disclosure | 1 | 0.03 |
-| discontinued | 1 | 0.03 |
-| discount | 1 | 0.03 |
-| discover | 1 | 0.03 |
-| discusses | 1 | 0.03 |
-| discussion | 1 | 0.03 |
-| disease | 1 | 0.03 |
-| disjoint | 1 | 0.03 |
-| dislike | 1 | 0.03 |
-| displacement | 1 | 0.03 |
-| display | 1 | 0.03 |
-| dispute-resolution | 1 | 0.03 |
-| dissolution | 1 | 0.03 |
-| distance | 1 | 0.03 |
-| distillery | 1 | 0.03 |
-| distinguishing | 1 | 0.03 |
-| distribution | 1 | 0.03 |
-| district | 1 | 0.03 |
-| diversity | 1 | 0.03 |
-| djmix | 1 | 0.03 |
-| dna | 1 | 0.03 |
-| doctor | 1 | 0.03 |
-| document | 1 | 0.03 |
-| documentation | 1 | 0.03 |
-| does | 1 | 0.03 |
-| domiciled | 1 | 0.03 |
-| donate | 1 | 0.03 |
-| door | 1 | 0.03 |
-| doors | 1 | 0.03 |
-| dormancy | 1 | 0.03 |
-| dosage | 1 | 0.03 |
-| dose | 1 | 0.03 |
-| double | 1 | 0.03 |
-| down | 1 | 0.03 |
-| download | 1 | 0.03 |
-| downloads | 1 | 0.03 |
-| downpayment | 1 | 0.03 |
-| downvote | 1 | 0.03 |
-| drain | 1 | 0.03 |
-| drained | 1 | 0.03 |
-| drains | 1 | 0.03 |
-| draw | 1 | 0.03 |
-| drawing | 1 | 0.03 |
-| drink | 1 | 0.03 |
-| drive | 1 | 0.03 |
-| driven | 1 | 0.03 |
-| driving | 1 | 0.03 |
-| drone | 1 | 0.03 |
-| dropoff | 1 | 0.03 |
-| drug | 1 | 0.03 |
-| dry | 1 | 0.03 |
-| dual | 1 | 0.03 |
-| duality | 1 | 0.03 |
-| due | 1 | 0.03 |
-| dunning | 1 | 0.03 |
-| duns | 1 | 0.03 |
-| duplicate | 1 | 0.03 |
-| duration | 1 | 0.03 |
-| during | 1 | 0.03 |
-| dust | 1 | 0.03 |
-| dvdformat | 1 | 0.03 |
-| dx | 1 | 0.03 |
-| ear | 1 | 0.03 |
-| early | 1 | 0.03 |
-| earned | 1 | 0.03 |
-| eat | 1 | 0.03 |
-| ebook | 1 | 0.03 |
-| ecommerce | 1 | 0.03 |
-| ecosystem | 1 | 0.03 |
-| edit | 1 | 0.03 |
-| edited | 1 | 0.03 |
-| edition | 1 | 0.03 |
-| editor | 1 | 0.03 |
-| edits | 1 | 0.03 |
-| edu | 1 | 0.03 |
-| education | 1 | 0.03 |
-| educational | 1 | 0.03 |
-| effective | 1 | 0.03 |
-| effectiveness | 1 | 0.03 |
-| effects | 1 | 0.03 |
-| efficiency | 1 | 0.03 |
-| eidr | 1 | 0.03 |
-| electrician | 1 | 0.03 |
-| electronic | 1 | 0.03 |
-| electronics | 1 | 0.03 |
-| element | 1 | 0.03 |
-| elementary | 1 | 0.03 |
-| elevation | 1 | 0.03 |
-| eligibility | 1 | 0.03 |
-| eligible | 1 | 0.03 |
-| elimination | 1 | 0.03 |
-| email | 1 | 0.03 |
-| embassy | 1 | 0.03 |
-| embed | 1 | 0.03 |
-| embedded | 1 | 0.03 |
-| emergence | 1 | 0.03 |
-| emergency | 1 | 0.03 |
-| emission | 1 | 0.03 |
-| empirical | 1 | 0.03 |
-| employee | 1 | 0.03 |
-| employer | 1 | 0.03 |
-| employment | 1 | 0.03 |
-| en | 1 | 0.03 |
-| en13402 | 1 | 0.03 |
-| encoded | 1 | 0.03 |
-| encodes | 1 | 0.03 |
-| encoding | 1 | 0.03 |
-| encodings | 1 | 0.03 |
-| end | 1 | 0.03 |
-| endocrine | 1 | 0.03 |
-| endorse | 1 | 0.03 |
-| endorsee | 1 | 0.03 |
-| endorsement | 1 | 0.03 |
-| endorser | 1 | 0.03 |
-| endorsers | 1 | 0.03 |
-| endpoint | 1 | 0.03 |
-| endpoints | 1 | 0.03 |
-| ends | 1 | 0.03 |
-| energy | 1 | 0.03 |
-| engagement | 1 | 0.03 |
-| enhanced | 1 | 0.03 |
-| enrolling | 1 | 0.03 |
-| enrollment | 1 | 0.03 |
-| ensures | 1 | 0.03 |
-| entanglement | 1 | 0.03 |
-| enterprisebudget | 1 | 0.03 |
-| entertainment | 1 | 0.03 |
-| entropy | 1 | 0.03 |
-| entry | 1 | 0.03 |
-| enum | 1 | 0.03 |
-| enumeration | 1 | 0.03 |
-| epidemiology | 1 | 0.03 |
-| episode | 1 | 0.03 |
-| episodes | 1 | 0.03 |
-| eprelease | 1 | 0.03 |
-| equal | 1 | 0.03 |
-| equals | 1 | 0.03 |
-| equilibrium | 1 | 0.03 |
-| equipment | 1 | 0.03 |
-| equity | 1 | 0.03 |
-| error | 1 | 0.03 |
-| escalation | 1 | 0.03 |
-| escrow | 1 | 0.03 |
-| establishment | 1 | 0.03 |
-| estate | 1 | 0.03 |
-| estimate | 1 | 0.03 |
-| estimated | 1 | 0.03 |
-| estimates | 1 | 0.03 |
-| estimator | 1 | 0.03 |
-| ethics | 1 | 0.03 |
-| etsi | 1 | 0.03 |
-| euenergy | 1 | 0.03 |
-| europe | 1 | 0.03 |
-| evaluated | 1 | 0.03 |
-| evapotranspiration | 1 | 0.03 |
-| event | 1 | 0.03 |
-| exam | 1 | 0.03 |
-| example | 1 | 0.03 |
-| except | 1 | 0.03 |
-| exchange | 1 | 0.03 |
-| executable | 1 | 0.03 |
-| exemplifies | 1 | 0.03 |
-| exercise | 1 | 0.03 |
-| exhibition | 1 | 0.03 |
-| exif | 1 | 0.03 |
-| expand | 1 | 0.03 |
-| expected | 1 | 0.03 |
-| expects | 1 | 0.03 |
-| expense | 1 | 0.03 |
-| experience | 1 | 0.03 |
-| expert | 1 | 0.03 |
-| expires | 1 | 0.03 |
-| explanation | 1 | 0.03 |
-| export | 1 | 0.03 |
-| expressed | 1 | 0.03 |
-| expression | 1 | 0.03 |
-| extended | 1 | 0.03 |
-| extent | 1 | 0.03 |
-| extra | 1 | 0.03 |
-| eye | 1 | 0.03 |
-| facility | 1 | 0.03 |
-| fact | 1 | 0.03 |
-| factor | 1 | 0.03 |
-| factory | 1 | 0.03 |
-| failed | 1 | 0.03 |
-| failure | 1 | 0.03 |
-| fair | 1 | 0.03 |
-| faith | 1 | 0.03 |
-| fallback | 1 | 0.03 |
-| false | 1 | 0.03 |
-| family | 1 | 0.03 |
-| faq | 1 | 0.03 |
-| faqpage | 1 | 0.03 |
-| fast | 1 | 0.03 |
-| fat | 1 | 0.03 |
-| fax | 1 | 0.03 |
-| fdacategory | 1 | 0.03 |
-| fdanot | 1 | 0.03 |
-| feature | 1 | 0.03 |
-| featured | 1 | 0.03 |
-| features | 1 | 0.03 |
-| federation | 1 | 0.03 |
-| fee | 1 | 0.03 |
-| feed | 1 | 0.03 |
-| feedback | 1 | 0.03 |
-| fees | 1 | 0.03 |
-| female | 1 | 0.03 |
-| fertility | 1 | 0.03 |
-| festival | 1 | 0.03 |
-| fiber | 1 | 0.03 |
-| field | 1 | 0.03 |
-| fields | 1 | 0.03 |
-| file | 1 | 0.03 |
-| film | 1 | 0.03 |
-| final | 1 | 0.03 |
-| finality | 1 | 0.03 |
-| find | 1 | 0.03 |
-| finding | 1 | 0.03 |
-| finite | 1 | 0.03 |
-| fire | 1 | 0.03 |
-| first | 1 | 0.03 |
-| flexibility | 1 | 0.03 |
-| flight | 1 | 0.03 |
-| float | 1 | 0.03 |
-| floor | 1 | 0.03 |
-| florist | 1 | 0.03 |
-| flow | 1 | 0.03 |
-| fm | 1 | 0.03 |
-| fmradio | 1 | 0.03 |
-| fodder | 1 | 0.03 |
-| fold | 1 | 0.03 |
-| follow | 1 | 0.03 |
-| followee | 1 | 0.03 |
-| follows | 1 | 0.03 |
-| followup | 1 | 0.03 |
-| food | 1 | 0.03 |
-| foot | 1 | 0.03 |
-| footer | 1 | 0.03 |
-| force | 1 | 0.03 |
-| force-majeure | 1 | 0.03 |
-| forecast | 1 | 0.03 |
-| forestry | 1 | 0.03 |
-| forge | 1 | 0.03 |
-| form | 1 | 0.03 |
-| format | 1 | 0.03 |
-| formation | 1 | 0.03 |
-| formula | 1 | 0.03 |
-| formulary | 1 | 0.03 |
-| forum | 1 | 0.03 |
-| forward | 1 | 0.03 |
-| founder | 1 | 0.03 |
-| founders | 1 | 0.03 |
-| founding | 1 | 0.03 |
-| four | 1 | 0.03 |
-| fractal | 1 | 0.03 |
-| frame | 1 | 0.03 |
-| framework | 1 | 0.03 |
-| free | 1 | 0.03 |
-| frequency | 1 | 0.03 |
-| friction | 1 | 0.03 |
-| friday | 1 | 0.03 |
-| friendly | 1 | 0.03 |
-| front | 1 | 0.03 |
-| frost | 1 | 0.03 |
-| fs | 1 | 0.03 |
-| fuel | 1 | 0.03 |
-| fulfillment | 1 | 0.03 |
-| full | 1 | 0.03 |
-| function | 1 | 0.03 |
-| functional | 1 | 0.03 |
-| fund | 1 | 0.03 |
-| funded | 1 | 0.03 |
-| funder | 1 | 0.03 |
-| funding | 1 | 0.03 |
-| fungus | 1 | 0.03 |
-| funnel | 1 | 0.03 |
-| furniture | 1 | 0.03 |
-| fx | 1 | 0.03 |
-| gallery | 1 | 0.03 |
-| game | 1 | 0.03 |
-| garden | 1 | 0.03 |
-| gas | 1 | 0.03 |
-| gastroenterologic | 1 | 0.03 |
-| gate | 1 | 0.03 |
-| gated | 1 | 0.03 |
-| gears | 1 | 0.03 |
-| gender | 1 | 0.03 |
-| gene | 1 | 0.03 |
-| general | 1 | 0.03 |
-| generate | 1 | 0.03 |
-| generic | 1 | 0.03 |
-| generically | 1 | 0.03 |
-| genetic | 1 | 0.03 |
-| genitourinary | 1 | 0.03 |
-| genre | 1 | 0.03 |
-| geo | 1 | 0.03 |
-| geographic | 1 | 0.03 |
-| geographical | 1 | 0.03 |
-| geometry | 1 | 0.03 |
-| geopolitical | 1 | 0.03 |
-| geospatial | 1 | 0.03 |
-| geriatric | 1 | 0.03 |
-| getting | 1 | 0.03 |
-| ghg | 1 | 0.03 |
-| gift | 1 | 0.03 |
-| girls | 1 | 0.03 |
-| github | 1 | 0.03 |
-| give | 1 | 0.03 |
-| given | 1 | 0.03 |
-| global | 1 | 0.03 |
-| gluten | 1 | 0.03 |
-| gnosticism | 1 | 0.03 |
-| golf | 1 | 0.03 |
-| good | 1 | 0.03 |
-| goods | 1 | 0.03 |
-| goodwill | 1 | 0.03 |
-| google | 1 | 0.03 |
-| governance | 1 | 0.03 |
-| governing-law | 1 | 0.03 |
-| governmental | 1 | 0.03 |
-| grace | 1 | 0.03 |
-| grade | 1 | 0.03 |
-| graft | 1 | 0.03 |
-| grant | 1 | 0.03 |
-| grantee | 1 | 0.03 |
-| graph | 1 | 0.03 |
-| graphic | 1 | 0.03 |
-| gravity | 1 | 0.03 |
-| grazing | 1 | 0.03 |
-| greater | 1 | 0.03 |
-| grocery | 1 | 0.03 |
-| group | 1 | 0.03 |
-| gs | 1 | 0.03 |
-| gs1 | 1 | 0.03 |
-| gtin | 1 | 0.03 |
-| gtin12 | 1 | 0.03 |
-| gtin13 | 1 | 0.03 |
-| gtin14 | 1 | 0.03 |
-| gtin8 | 1 | 0.03 |
-| guarantee | 1 | 0.03 |
-| guardian | 1 | 0.03 |
-| guests | 1 | 0.03 |
-| guide | 1 | 0.03 |
-| guideline | 1 | 0.03 |
-| guidelines | 1 | 0.03 |
-| gym | 1 | 0.03 |
-| gynecologic | 1 | 0.03 |
-| habit | 1 | 0.03 |
-| hackathon | 1 | 0.03 |
-| hair | 1 | 0.03 |
-| halal | 1 | 0.03 |
-| hall | 1 | 0.03 |
-| hallucination | 1 | 0.03 |
-| hamiltonian | 1 | 0.03 |
-| hand | 1 | 0.03 |
-| handling | 1 | 0.03 |
-| hardcover | 1 | 0.03 |
-| harden | 1 | 0.03 |
-| hardiness | 1 | 0.03 |
-| hardware | 1 | 0.03 |
-| harmony | 1 | 0.03 |
-| harvest | 1 | 0.03 |
-| has | 1 | 0.03 |
-| hazard | 1 | 0.03 |
-| head | 1 | 0.03 |
-| header | 1 | 0.03 |
-| headline | 1 | 0.03 |
-| health | 1 | 0.03 |
-| healthcare | 1 | 0.03 |
-| hearing | 1 | 0.03 |
-| hedge | 1 | 0.03 |
-| height | 1 | 0.03 |
-| help | 1 | 0.03 |
-| hematologic | 1 | 0.03 |
-| herd | 1 | 0.03 |
-| hermeticism | 1 | 0.03 |
-| hero | 1 | 0.03 |
-| high | 1 | 0.03 |
-| hindu | 1 | 0.03 |
-| hinduism | 1 | 0.03 |
-| hips | 1 | 0.03 |
-| hiring | 1 | 0.03 |
-| historical | 1 | 0.03 |
-| history | 1 | 0.03 |
-| ho | 1 | 0.03 |
-| hobby | 1 | 0.03 |
-| hold | 1 | 0.03 |
-| holder | 1 | 0.03 |
-| holding | 1 | 0.03 |
-| holidays | 1 | 0.03 |
-| holographic | 1 | 0.03 |
-| home | 1 | 0.03 |
-| homeopathic | 1 | 0.03 |
-| honorific | 1 | 0.03 |
-| hook | 1 | 0.03 |
-| hooks | 1 | 0.03 |
-| hopats | 1 | 0.03 |
-| hosp | 1 | 0.03 |
-| hospital | 1 | 0.03 |
-| hostel | 1 | 0.03 |
-| hosting | 1 | 0.03 |
-| hotel | 1 | 0.03 |
-| hours | 1 | 0.03 |
-| house | 1 | 0.03 |
-| how | 1 | 0.03 |
-| http | 1 | 0.03 |
-| human | 1 | 0.03 |
-| humandesign | 1 | 0.03 |
-| husky | 1 | 0.03 |
-| hvac | 1 | 0.03 |
-| hvacbusiness | 1 | 0.03 |
-| hyper | 1 | 0.03 |
-| iata | 1 | 0.03 |
-| icao | 1 | 0.03 |
-| ice | 1 | 0.03 |
-| icu | 1 | 0.03 |
-| icubeds | 1 | 0.03 |
-| id | 1 | 0.03 |
-| idempotency | 1 | 0.03 |
-| identification | 1 | 0.03 |
-| identified | 1 | 0.03 |
-| identifying | 1 | 0.03 |
-| ignore | 1 | 0.03 |
-| ikey | 1 | 0.03 |
-| illustrator | 1 | 0.03 |
-| image | 1 | 0.03 |
-| imaging | 1 | 0.03 |
-| immediate | 1 | 0.03 |
-| impaired | 1 | 0.03 |
-| impairment | 1 | 0.03 |
-| imperial | 1 | 0.03 |
-| implementation | 1 | 0.03 |
-| implements | 1 | 0.03 |
-| imprint | 1 | 0.03 |
-| inactive | 1 | 0.03 |
-| incentive | 1 | 0.03 |
-| incentives | 1 | 0.03 |
-| incentivized | 1 | 0.03 |
-| incident | 1 | 0.03 |
-| included | 1 | 0.03 |
-| includes | 1 | 0.03 |
-| income | 1 | 0.03 |
-| incorporated | 1 | 0.03 |
-| incoterms | 1 | 0.03 |
-| increases | 1 | 0.03 |
-| increment | 1 | 0.03 |
-| indemnity | 1 | 0.03 |
-| indication | 1 | 0.03 |
-| individual | 1 | 0.03 |
-| industry | 1 | 0.03 |
-| ineligible | 1 | 0.03 |
-| infants | 1 | 0.03 |
-| infectious | 1 | 0.03 |
-| inflow | 1 | 0.03 |
-| info | 1 | 0.03 |
-| inform | 1 | 0.03 |
-| information | 1 | 0.03 |
-| ingest | 1 | 0.03 |
-| ingredient | 1 | 0.03 |
-| ingredients | 1 | 0.03 |
-| inker | 1 | 0.03 |
-| innovation | 1 | 0.03 |
-| inseam | 1 | 0.03 |
-| insert | 1 | 0.03 |
-| insertion | 1 | 0.03 |
-| inside | 1 | 0.03 |
-| inspection | 1 | 0.03 |
-| install | 1 | 0.03 |
-| installment | 1 | 0.03 |
-| instance | 1 | 0.03 |
-| instantaneous | 1 | 0.03 |
-| instruction | 1 | 0.03 |
-| instructions | 1 | 0.03 |
-| instructor | 1 | 0.03 |
-| instrument | 1 | 0.03 |
-| intake | 1 | 0.03 |
-| intangible | 1 | 0.03 |
-| integer | 1 | 0.03 |
-| integrity | 1 | 0.03 |
-| intensity | 1 | 0.03 |
-| interact | 1 | 0.03 |
-| interacting | 1 | 0.03 |
-| interaction | 1 | 0.03 |
-| interactive | 1 | 0.03 |
-| interactivity | 1 | 0.03 |
-| intercompany | 1 | 0.03 |
-| interest | 1 | 0.03 |
-| interference | 1 | 0.03 |
-| interior | 1 | 0.03 |
-| international | 1 | 0.03 |
-| internet | 1 | 0.03 |
-| interpreted | 1 | 0.03 |
-| interpreter | 1 | 0.03 |
-| intersects | 1 | 0.03 |
-| interval | 1 | 0.03 |
-| interview | 1 | 0.03 |
-| inventory | 1 | 0.03 |
-| inverse | 1 | 0.03 |
-| investment | 1 | 0.03 |
-| invitation | 1 | 0.03 |
-| invite | 1 | 0.03 |
-| invoice | 1 | 0.03 |
-| involved | 1 | 0.03 |
-| iosplatform | 1 | 0.03 |
-| iptc | 1 | 0.03 |
-| iptcdigital | 1 | 0.03 |
-| irrigation | 1 | 0.03 |
-| isbn | 1 | 0.03 |
-| isic | 1 | 0.03 |
-| islam | 1 | 0.03 |
-| iso6523 | 1 | 0.03 |
-| isrc | 1 | 0.03 |
-| issn | 1 | 0.03 |
-| issue | 1 | 0.03 |
-| issued | 1 | 0.03 |
-| iswc | 1 | 0.03 |
-| it | 1 | 0.03 |
-| itcooperative | 1 | 0.03 |
-| item | 1 | 0.03 |
-| itinerary | 1 | 0.03 |
-| itmutual | 1 | 0.03 |
-| itnonprofit | 1 | 0.03 |
-| itsocial | 1 | 0.03 |
-| itsport | 1 | 0.03 |
-| itvolunteer | 1 | 0.03 |
-| iupac | 1 | 0.03 |
-| jainism | 1 | 0.03 |
-| jewelry | 1 | 0.03 |
-| job | 1 | 0.03 |
-| jobs | 1 | 0.03 |
-| join | 1 | 0.03 |
-| joint | 1 | 0.03 |
-| judaism | 1 | 0.03 |
-| juniors | 1 | 0.03 |
-| jurisdiction | 1 | 0.03 |
-| justice | 1 | 0.03 |
-| kabbalah | 1 | 0.03 |
-| karma | 1 | 0.03 |
-| keep | 1 | 0.03 |
-| key | 1 | 0.03 |
-| keyword | 1 | 0.03 |
-| keywords | 1 | 0.03 |
-| kiosk | 1 | 0.03 |
-| known | 1 | 0.03 |
-| knows | 1 | 0.03 |
-| kosher | 1 | 0.03 |
-| kpi | 1 | 0.03 |
-| lab | 1 | 0.03 |
-| label | 1 | 0.03 |
-| laboratory | 1 | 0.03 |
-| lactation | 1 | 0.03 |
-| lactose | 1 | 0.03 |
-| lake | 1 | 0.03 |
-| landform | 1 | 0.03 |
-| landlord | 1 | 0.03 |
-| landmark | 1 | 0.03 |
-| landmarks | 1 | 0.03 |
-| language | 1 | 0.03 |
-| laser | 1 | 0.03 |
-| last | 1 | 0.03 |
-| latitude | 1 | 0.03 |
-| laundry | 1 | 0.03 |
-| layout | 1 | 0.03 |
-| lead | 1 | 0.03 |
-| lead-score | 1 | 0.03 |
-| leap | 1 | 0.03 |
-| learning | 1 | 0.03 |
-| lease | 1 | 0.03 |
-| leave | 1 | 0.03 |
-| left | 1 | 0.03 |
-| leg | 1 | 0.03 |
-| legislation | 1 | 0.03 |
-| legislative | 1 | 0.03 |
-| lei | 1 | 0.03 |
-| leisure | 1 | 0.03 |
-| lend | 1 | 0.03 |
-| lender | 1 | 0.03 |
-| length | 1 | 0.03 |
-| lesser | 1 | 0.03 |
-| letterer | 1 | 0.03 |
-| level | 1 | 0.03 |
-| lexical | 1 | 0.03 |
-| liability | 1 | 0.03 |
-| library | 1 | 0.03 |
-| license | 1 | 0.03 |
-| lichen | 1 | 0.03 |
-| life | 1 | 0.03 |
-| lifestyle | 1 | 0.03 |
-| ligament | 1 | 0.03 |
-| like | 1 | 0.03 |
-| likes | 1 | 0.03 |
-| limit | 1 | 0.03 |
-| limited | 1 | 0.03 |
-| line | 1 | 0.03 |
-| lineage | 1 | 0.03 |
-| linearity | 1 | 0.03 |
-| lineup | 1 | 0.03 |
-| link | 1 | 0.03 |
-| links | 1 | 0.03 |
-| liquor | 1 | 0.03 |
-| list | 1 | 0.03 |
-| listen | 1 | 0.03 |
-| listing | 1 | 0.03 |
-| literary | 1 | 0.03 |
-| live | 1 | 0.03 |
-| livestock | 1 | 0.03 |
-| living | 1 | 0.03 |
-| lnid | 1 | 0.03 |
-| load | 1 | 0.03 |
-| loan | 1 | 0.03 |
-| local | 1 | 0.03 |
-| locale | 1 | 0.03 |
-| locality | 1 | 0.03 |
-| localize | 1 | 0.03 |
-| located | 1 | 0.03 |
-| location | 1 | 0.03 |
-| lock | 1 | 0.03 |
-| locker | 1 | 0.03 |
-| locksmith | 1 | 0.03 |
-| lodging | 1 | 0.03 |
-| logic | 1 | 0.03 |
-| login | 1 | 0.03 |
-| logo | 1 | 0.03 |
-| longitude | 1 | 0.03 |
-| longitudinal | 1 | 0.03 |
-| lose | 1 | 0.03 |
-| loser | 1 | 0.03 |
-| lots | 1 | 0.03 |
-| low | 1 | 0.03 |
-| lower | 1 | 0.03 |
-| loyalty | 1 | 0.03 |
-| lung | 1 | 0.03 |
-| lymphatic | 1 | 0.03 |
-| lyricist | 1 | 0.03 |
-| lyrics | 1 | 0.03 |
-| made | 1 | 0.03 |
-| mail | 1 | 0.03 |
-| main | 1 | 0.03 |
-| maintainer | 1 | 0.03 |
-| makes | 1 | 0.03 |
-| mala | 1 | 0.03 |
-| male | 1 | 0.03 |
-| mandate | 1 | 0.03 |
-| manichaeism | 1 | 0.03 |
-| manipulation | 1 | 0.03 |
-| manufacturer | 1 | 0.03 |
-| manufacturing | 1 | 0.03 |
-| manure | 1 | 0.03 |
-| manuscript | 1 | 0.03 |
-| map | 1 | 0.03 |
-| mapping | 1 | 0.03 |
-| maps | 1 | 0.03 |
-| margin | 1 | 0.03 |
-| market | 1 | 0.03 |
-| marketing | 1 | 0.03 |
-| marketplace | 1 | 0.03 |
-| markup | 1 | 0.03 |
-| marry | 1 | 0.03 |
-| mass | 1 | 0.03 |
-| masthead | 1 | 0.03 |
-| material | 1 | 0.03 |
-| materiality | 1 | 0.03 |
-| maternity | 1 | 0.03 |
-| math | 1 | 0.03 |
-| matrix | 1 | 0.03 |
-| matter | 1 | 0.03 |
-| maturity | 1 | 0.03 |
-| max | 1 | 0.03 |
-| maximum | 1 | 0.03 |
-| maxtampercost | 1 | 0.03 |
-| may | 1 | 0.03 |
-| maybe | 1 | 0.03 |
-| meal | 1 | 0.03 |
-| means | 1 | 0.03 |
-| measure | 1 | 0.03 |
-| measured | 1 | 0.03 |
-| measurement | 1 | 0.03 |
-| mech | 1 | 0.03 |
-| mechanism | 1 | 0.03 |
-| median | 1 | 0.03 |
-| medicine | 1 | 0.03 |
-| medium | 1 | 0.03 |
-| meeting | 1 | 0.03 |
-| meets | 1 | 0.03 |
-| member | 1 | 0.03 |
-| membership | 1 | 0.03 |
-| memo | 1 | 0.03 |
-| memories | 1 | 0.03 |
-| mens | 1 | 0.03 |
-| mention | 1 | 0.03 |
-| mentions | 1 | 0.03 |
-| menu | 1 | 0.03 |
-| merchant | 1 | 0.03 |
-| mercy | 1 | 0.03 |
-| merge | 1 | 0.03 |
-| message | 1 | 0.03 |
-| messages | 1 | 0.03 |
-| metadata | 1 | 0.03 |
-| metatron | 1 | 0.03 |
-| method | 1 | 0.03 |
-| metric | 1 | 0.03 |
-| middle | 1 | 0.03 |
-| midpoint | 1 | 0.03 |
-| midwifery | 1 | 0.03 |
-| mileage | 1 | 0.03 |
-| milestone | 1 | 0.03 |
-| min | 1 | 0.03 |
-| mineral | 1 | 0.03 |
-| minimum | 1 | 0.03 |
-| minor | 1 | 0.03 |
-| mirror | 1 | 0.03 |
-| misconceptions | 1 | 0.03 |
-| misses | 1 | 0.03 |
-| mission | 1 | 0.03 |
-| mixed | 1 | 0.03 |
-| mixtape | 1 | 0.03 |
-| mobile | 1 | 0.03 |
-| mobility | 1 | 0.03 |
-| modal | 1 | 0.03 |
-| mode | 1 | 0.03 |
-| model | 1 | 0.03 |
-| modification | 1 | 0.03 |
-| modified | 1 | 0.03 |
-| modulation | 1 | 0.03 |
-| moisture | 1 | 0.03 |
-| molecular | 1 | 0.03 |
-| monday | 1 | 0.03 |
-| monetary | 1 | 0.03 |
-| money | 1 | 0.03 |
-| monoisotopic | 1 | 0.03 |
-| month | 1 | 0.03 |
-| monthly | 1 | 0.03 |
-| months | 1 | 0.03 |
-| mortality | 1 | 0.03 |
-| mortgage | 1 | 0.03 |
-| mosque | 1 | 0.03 |
-| motel | 1 | 0.03 |
-| motor | 1 | 0.03 |
-| motorcycle | 1 | 0.03 |
-| motorized | 1 | 0.03 |
-| mountain | 1 | 0.03 |
-| move | 1 | 0.03 |
-| moved | 1 | 0.03 |
-| movement | 1 | 0.03 |
-| movie | 1 | 0.03 |
-| moving | 1 | 0.03 |
-| mpn | 1 | 0.03 |
-| mri | 1 | 0.03 |
-| msrp | 1 | 0.03 |
-| mulch | 1 | 0.03 |
-| multicellular | 1 | 0.03 |
-| multiple | 1 | 0.03 |
-| municipality | 1 | 0.03 |
-| muscle | 1 | 0.03 |
-| musculoskeletal | 1 | 0.03 |
-| museum | 1 | 0.03 |
-| music | 1 | 0.03 |
-| musical | 1 | 0.03 |
-| mutual | 1 | 0.03 |
-| mycelium | 1 | 0.03 |
-| mycorrhizae | 1 | 0.03 |
-| nace | 1 | 0.03 |
-| naics | 1 | 0.03 |
-| nail | 1 | 0.03 |
-| name | 1 | 0.03 |
-| named | 1 | 0.03 |
-| narcotic | 1 | 0.03 |
-| nationality | 1 | 0.03 |
-| natural | 1 | 0.03 |
-| navel | 1 | 0.03 |
-| navigation | 1 | 0.03 |
-| neck | 1 | 0.03 |
-| negative | 1 | 0.03 |
-| nerve | 1 | 0.03 |
-| net | 1 | 0.03 |
-| network | 1 | 0.03 |
-| neuro | 1 | 0.03 |
-| neurologic | 1 | 0.03 |
-| new | 1 | 0.03 |
-| news | 1 | 0.03 |
-| newspaper | 1 | 0.03 |
-| next | 1 | 0.03 |
-| ngo | 1 | 0.03 |
-| nicotine | 1 | 0.03 |
-| night | 1 | 0.03 |
-| nl | 1 | 0.03 |
-| nlnonprofit | 1 | 0.03 |
-| no | 1 | 0.03 |
-| node | 1 | 0.03 |
-| non | 1 | 0.03 |
-| noninvasive | 1 | 0.03 |
-| nonprofit | 1 | 0.03 |
-| nonprofit501a | 1 | 0.03 |
-| nonprofit501c1 | 1 | 0.03 |
-| nonprofit501c10 | 1 | 0.03 |
-| nonprofit501c11 | 1 | 0.03 |
-| nonprofit501c12 | 1 | 0.03 |
-| nonprofit501c13 | 1 | 0.03 |
-| nonprofit501c14 | 1 | 0.03 |
-| nonprofit501c15 | 1 | 0.03 |
-| nonprofit501c16 | 1 | 0.03 |
-| nonprofit501c17 | 1 | 0.03 |
-| nonprofit501c18 | 1 | 0.03 |
-| nonprofit501c19 | 1 | 0.03 |
-| nonprofit501c2 | 1 | 0.03 |
-| nonprofit501c20 | 1 | 0.03 |
-| nonprofit501c21 | 1 | 0.03 |
-| nonprofit501c22 | 1 | 0.03 |
-| nonprofit501c23 | 1 | 0.03 |
-| nonprofit501c24 | 1 | 0.03 |
-| nonprofit501c25 | 1 | 0.03 |
-| nonprofit501c26 | 1 | 0.03 |
-| nonprofit501c27 | 1 | 0.03 |
-| nonprofit501c28 | 1 | 0.03 |
-| nonprofit501c3 | 1 | 0.03 |
-| nonprofit501c4 | 1 | 0.03 |
-| nonprofit501c5 | 1 | 0.03 |
-| nonprofit501c6 | 1 | 0.03 |
-| nonprofit501c7 | 1 | 0.03 |
-| nonprofit501c8 | 1 | 0.03 |
-| nonprofit501c9 | 1 | 0.03 |
-| nonprofit501d | 1 | 0.03 |
-| nonprofit501e | 1 | 0.03 |
-| nonprofit501f | 1 | 0.03 |
-| nonprofit501k | 1 | 0.03 |
-| nonprofit501n | 1 | 0.03 |
-| nonprofit501q | 1 | 0.03 |
-| nonprofit527 | 1 | 0.03 |
-| normal | 1 | 0.03 |
-| nose | 1 | 0.03 |
-| not | 1 | 0.03 |
-| notary | 1 | 0.03 |
-| note | 1 | 0.03 |
-| notice | 1 | 0.03 |
-| notification | 1 | 0.03 |
-| novel | 1 | 0.03 |
-| npi | 1 | 0.03 |
-| nsn | 1 | 0.03 |
-| nullability | 1 | 0.03 |
-| num | 1 | 0.03 |
-| number | 1 | 0.03 |
-| numbered | 1 | 0.03 |
-| numeric | 1 | 0.03 |
-| nursing | 1 | 0.03 |
-| nutrition | 1 | 0.03 |
-| oauth | 1 | 0.03 |
-| object | 1 | 0.03 |
-| obligation | 1 | 0.03 |
-| observability | 1 | 0.03 |
-| observation | 1 | 0.03 |
-| observational | 1 | 0.03 |
-| observe | 1 | 0.03 |
-| obstetric | 1 | 0.03 |
-| occ | 1 | 0.03 |
-| occupancy | 1 | 0.03 |
-| occupation | 1 | 0.03 |
-| occupational | 1 | 0.03 |
-| occurrence | 1 | 0.03 |
-| ocean | 1 | 0.03 |
-| odometer | 1 | 0.03 |
-| oecd | 1 | 0.03 |
-| offer | 1 | 0.03 |
-| offered | 1 | 0.03 |
-| offers | 1 | 0.03 |
-| office | 1 | 0.03 |
-| official | 1 | 0.03 |
-| offline | 1 | 0.03 |
-| offset | 1 | 0.03 |
-| ofmech | 1 | 0.03 |
-| oid | 1 | 0.03 |
-| oncologic | 1 | 0.03 |
-| one | 1 | 0.03 |
-| ones | 1 | 0.03 |
-| online | 1 | 0.03 |
-| only | 1 | 0.03 |
-| op | 1 | 0.03 |
-| open | 1 | 0.03 |
-| opening | 1 | 0.03 |
-| openings | 1 | 0.03 |
-| opens | 1 | 0.03 |
-| operating | 1 | 0.03 |
-| operation | 1 | 0.03 |
-| operator | 1 | 0.03 |
-| operators | 1 | 0.03 |
-| opinion | 1 | 0.03 |
-| opponent | 1 | 0.03 |
-| opportunity | 1 | 0.03 |
-| optician | 1 | 0.03 |
-| optimize | 1 | 0.03 |
-| option | 1 | 0.03 |
-| optometric | 1 | 0.03 |
-| order | 1 | 0.03 |
-| ordered | 1 | 0.03 |
-| organic | 1 | 0.03 |
-| organization | 1 | 0.03 |
-| organize | 1 | 0.03 |
-| organizer | 1 | 0.03 |
-| oriented | 1 | 0.03 |
-| origin | 1 | 0.03 |
-| original | 1 | 0.03 |
-| originates | 1 | 0.03 |
-| orphism | 1 | 0.03 |
-| orthodoxy | 1 | 0.03 |
-| osteopathic | 1 | 0.03 |
-| otc | 1 | 0.03 |
-| otolaryngologic | 1 | 0.03 |
-| out | 1 | 0.03 |
-| outcome | 1 | 0.03 |
-| outlet | 1 | 0.03 |
-| outlier | 1 | 0.03 |
-| output | 1 | 0.03 |
-| outside | 1 | 0.03 |
-| overdosage | 1 | 0.03 |
-| overdraft | 1 | 0.03 |
-| overflow | 1 | 0.03 |
-| overlaps | 1 | 0.03 |
-| override | 1 | 0.03 |
-| overview | 1 | 0.03 |
-| owned | 1 | 0.03 |
-| owner | 1 | 0.03 |
-| ownership | 1 | 0.03 |
-| owns | 1 | 0.03 |
-| package | 1 | 0.03 |
-| packs | 1 | 0.03 |
-| paganism | 1 | 0.03 |
-| page | 1 | 0.03 |
-| pages | 1 | 0.03 |
-| pagination | 1 | 0.03 |
-| paid | 1 | 0.03 |
-| paint | 1 | 0.03 |
-| painter | 1 | 0.03 |
-| painting | 1 | 0.03 |
-| palliative | 1 | 0.03 |
-| pamphlet | 1 | 0.03 |
-| panel | 1 | 0.03 |
-| paperback | 1 | 0.03 |
-| parasite | 1 | 0.03 |
-| parcel | 1 | 0.03 |
-| parent | 1 | 0.03 |
-| parental | 1 | 0.03 |
-| parents | 1 | 0.03 |
-| park | 1 | 0.03 |
-| parking | 1 | 0.03 |
-| parlor | 1 | 0.03 |
-| parody | 1 | 0.03 |
-| part | 1 | 0.03 |
-| partial | 1 | 0.03 |
-| partially | 1 | 0.03 |
-| participant | 1 | 0.03 |
-| participation | 1 | 0.03 |
-| particle | 1 | 0.03 |
-| partition | 1 | 0.03 |
-| parts | 1 | 0.03 |
-| party | 1 | 0.03 |
-| passed | 1 | 0.03 |
-| passenger | 1 | 0.03 |
-| password | 1 | 0.03 |
-| past | 1 | 0.03 |
-| pasture | 1 | 0.03 |
-| patent | 1 | 0.03 |
-| path | 1 | 0.03 |
-| pathology | 1 | 0.03 |
-| pathophysiology | 1 | 0.03 |
-| patient | 1 | 0.03 |
-| patients | 1 | 0.03 |
-| pats | 1 | 0.03 |
-| pattern | 1 | 0.03 |
-| pawn | 1 | 0.03 |
-| pay | 1 | 0.03 |
-| peace | 1 | 0.03 |
-| pediatric | 1 | 0.03 |
-| penalty | 1 | 0.03 |
-| penciler | 1 | 0.03 |
-| pending | 1 | 0.03 |
-| people | 1 | 0.03 |
-| peppol | 1 | 0.03 |
-| per | 1 | 0.03 |
-| percentage | 1 | 0.03 |
-| percentile | 1 | 0.03 |
-| percentile10 | 1 | 0.03 |
-| percentile25 | 1 | 0.03 |
-| percentile75 | 1 | 0.03 |
-| percentile90 | 1 | 0.03 |
-| percutaneous | 1 | 0.03 |
-| perennial | 1 | 0.03 |
-| perform | 1 | 0.03 |
-| performance | 1 | 0.03 |
-| performed | 1 | 0.03 |
-| performer | 1 | 0.03 |
-| performers | 1 | 0.03 |
-| performing | 1 | 0.03 |
-| periodical | 1 | 0.03 |
-| permaculture | 1 | 0.03 |
-| permanently | 1 | 0.03 |
-| permission | 1 | 0.03 |
-| permissions | 1 | 0.03 |
-| permit | 1 | 0.03 |
-| permitted | 1 | 0.03 |
-| person | 1 | 0.03 |
-| perspective | 1 | 0.03 |
-| pet | 1 | 0.03 |
-| petite | 1 | 0.03 |
-| pets | 1 | 0.03 |
-| pharmacology | 1 | 0.03 |
-| pharmacy | 1 | 0.03 |
-| phone | 1 | 0.03 |
-| phonetic | 1 | 0.03 |
-| photo | 1 | 0.03 |
-| photograph | 1 | 0.03 |
-| photon | 1 | 0.03 |
-| photos | 1 | 0.03 |
-| physical | 1 | 0.03 |
-| physician | 1 | 0.03 |
-| physicians | 1 | 0.03 |
-| physiological | 1 | 0.03 |
-| physiotherapy | 1 | 0.03 |
-| pickup | 1 | 0.03 |
-| pipeline | 1 | 0.03 |
-| pitch | 1 | 0.03 |
-| pivot | 1 | 0.03 |
-| pixel | 1 | 0.03 |
-| place | 1 | 0.03 |
-| placebo | 1 | 0.03 |
-| plan | 1 | 0.03 |
-| planning | 1 | 0.03 |
-| planting | 1 | 0.03 |
-| plasma | 1 | 0.03 |
-| plastic | 1 | 0.03 |
-| platform | 1 | 0.03 |
-| play | 1 | 0.03 |
-| player | 1 | 0.03 |
-| players | 1 | 0.03 |
-| playground | 1 | 0.03 |
-| playlist | 1 | 0.03 |
-| plays | 1 | 0.03 |
-| plugin | 1 | 0.03 |
-| plumber | 1 | 0.03 |
-| plus | 1 | 0.03 |
-| podcast | 1 | 0.03 |
-| podiatric | 1 | 0.03 |
-| point | 1 | 0.03 |
-| points | 1 | 0.03 |
-| police | 1 | 0.03 |
-| policy | 1 | 0.03 |
-| political | 1 | 0.03 |
-| pollination | 1 | 0.03 |
-| polygon | 1 | 0.03 |
-| polymer | 1 | 0.03 |
-| pond | 1 | 0.03 |
-| pool | 1 | 0.03 |
-| population | 1 | 0.03 |
-| port | 1 | 0.03 |
-| pos | 1 | 0.03 |
-| position | 1 | 0.03 |
-| positive | 1 | 0.03 |
-| possible | 1 | 0.03 |
-| postal | 1 | 0.03 |
-| postcode | 1 | 0.03 |
-| posted | 1 | 0.03 |
-| poster | 1 | 0.03 |
-| postharvest | 1 | 0.03 |
-| posting | 1 | 0.03 |
-| postponed | 1 | 0.03 |
-| posts | 1 | 0.03 |
-| potential | 1 | 0.03 |
-| power | 1 | 0.03 |
-| practice | 1 | 0.03 |
-| practices | 1 | 0.03 |
-| prayer | 1 | 0.03 |
-| pre | 1 | 0.03 |
-| predecessor | 1 | 0.03 |
-| prefix | 1 | 0.03 |
-| pregnancy | 1 | 0.03 |
-| prep | 1 | 0.03 |
-| prepaid | 1 | 0.03 |
-| preparation | 1 | 0.03 |
-| prepay | 1 | 0.03 |
-| prepayment | 1 | 0.03 |
-| prepend | 1 | 0.03 |
-| prerequisite | 1 | 0.03 |
-| prerequisites | 1 | 0.03 |
-| preschool | 1 | 0.03 |
-| prescribing | 1 | 0.03 |
-| prescription | 1 | 0.03 |
-| presentation | 1 | 0.03 |
-| presented | 1 | 0.03 |
-| prevention | 1 | 0.03 |
-| previous | 1 | 0.03 |
-| price | 1 | 0.03 |
-| primary | 1 | 0.03 |
-| primitive | 1 | 0.03 |
-| principle | 1 | 0.03 |
-| principles | 1 | 0.03 |
-| print | 1 | 0.03 |
-| prion | 1 | 0.03 |
-| priorities | 1 | 0.03 |
-| priority | 1 | 0.03 |
-| privilege | 1 | 0.03 |
-| problem | 1 | 0.03 |
-| procedure | 1 | 0.03 |
-| process | 1 | 0.03 |
-| processing | 1 | 0.03 |
-| processor | 1 | 0.03 |
-| producer | 1 | 0.03 |
-| produces | 1 | 0.03 |
-| product | 1 | 0.03 |
-| production | 1 | 0.03 |
-| products | 1 | 0.03 |
-| profane | 1 | 0.03 |
-| professional | 1 | 0.03 |
-| proficiency | 1 | 0.03 |
-| profile | 1 | 0.03 |
-| prognosis | 1 | 0.03 |
-| program | 1 | 0.03 |
-| programming | 1 | 0.03 |
-| progression | 1 | 0.03 |
-| project | 1 | 0.03 |
-| promise | 1 | 0.03 |
-| promotion | 1 | 0.03 |
-| promotional | 1 | 0.03 |
-| pronoun | 1 | 0.03 |
-| pronounceable | 1 | 0.03 |
-| pronouns | 1 | 0.03 |
-| propagation | 1 | 0.03 |
-| property | 1 | 0.03 |
-| proprietary | 1 | 0.03 |
-| prospect | 1 | 0.03 |
-| protein | 1 | 0.03 |
-| protestantism | 1 | 0.03 |
-| protozoa | 1 | 0.03 |
-| provider | 1 | 0.03 |
-| provides | 1 | 0.03 |
-| provision | 1 | 0.03 |
-| provisioned | 1 | 0.03 |
-| pruning | 1 | 0.03 |
-| psychiatric | 1 | 0.03 |
-| psychological | 1 | 0.03 |
-| pub | 1 | 0.03 |
-| public | 1 | 0.03 |
-| publication | 1 | 0.03 |
-| published | 1 | 0.03 |
-| publisher | 1 | 0.03 |
-| publishing | 1 | 0.03 |
-| pulmonary | 1 | 0.03 |
-| purchase | 1 | 0.03 |
-| purity | 1 | 0.03 |
-| purpose | 1 | 0.03 |
-| pwa | 1 | 0.03 |
-| qa | 1 | 0.03 |
-| qapage | 1 | 0.03 |
-| qualification | 1 | 0.03 |
-| qualifications | 1 | 0.03 |
-| qualified | 1 | 0.03 |
-| qualifier | 1 | 0.03 |
-| qualitative | 1 | 0.03 |
-| quality | 1 | 0.03 |
-| quantitative | 1 | 0.03 |
-| quantity | 1 | 0.03 |
-| quarantine | 1 | 0.03 |
-| queries | 1 | 0.03 |
-| query | 1 | 0.03 |
-| quest | 1 | 0.03 |
-| question | 1 | 0.03 |
-| queue | 1 | 0.03 |
-| quiz | 1 | 0.03 |
-| quota | 1 | 0.03 |
-| quotation | 1 | 0.03 |
-| quote | 1 | 0.03 |
-| radiation | 1 | 0.03 |
-| radio | 1 | 0.03 |
-| radiography | 1 | 0.03 |
-| radius | 1 | 0.03 |
-| randomized | 1 | 0.03 |
-| range | 1 | 0.03 |
-| rank | 1 | 0.03 |
-| rate | 1 | 0.03 |
-| rating | 1 | 0.03 |
-| react | 1 | 0.03 |
-| read | 1 | 0.03 |
-| readings | 1 | 0.03 |
-| readme | 1 | 0.03 |
-| readonly | 1 | 0.03 |
-| real | 1 | 0.03 |
-| reality | 1 | 0.03 |
-| rear | 1 | 0.03 |
-| reason | 1 | 0.03 |
-| rebate | 1 | 0.03 |
-| receipt | 1 | 0.03 |
-| receipts | 1 | 0.03 |
-| receive | 1 | 0.03 |
-| received | 1 | 0.03 |
-| recipe | 1 | 0.03 |
-| recipient | 1 | 0.03 |
-| recognition | 1 | 0.03 |
-| recognized | 1 | 0.03 |
-| recognizing | 1 | 0.03 |
-| recommendation | 1 | 0.03 |
-| recommended | 1 | 0.03 |
-| reconcile | 1 | 0.03 |
-| reconciliation | 1 | 0.03 |
-| record | 1 | 0.03 |
-| recorded | 1 | 0.03 |
-| recording | 1 | 0.03 |
-| recourse | 1 | 0.03 |
-| recover | 1 | 0.03 |
-| recruiting | 1 | 0.03 |
-| recycle | 1 | 0.03 |
-| recycling | 1 | 0.03 |
-| redirect | 1 | 0.03 |
-| redirects | 1 | 0.03 |
-| reduced | 1 | 0.03 |
-| redundancy | 1 | 0.03 |
-| referee | 1 | 0.03 |
-| reference | 1 | 0.03 |
-| referenced | 1 | 0.03 |
-| references | 1 | 0.03 |
-| refers | 1 | 0.03 |
-| refund | 1 | 0.03 |
-| refurbished | 1 | 0.03 |
-| regeneration | 1 | 0.03 |
-| region | 1 | 0.03 |
-| regions | 1 | 0.03 |
-| register | 1 | 0.03 |
-| registered | 1 | 0.03 |
-| registration | 1 | 0.03 |
-| registry | 1 | 0.03 |
-| regular | 1 | 0.03 |
-| regulatory | 1 | 0.03 |
-| reimbursement | 1 | 0.03 |
-| reject | 1 | 0.03 |
-| related | 1 | 0.03 |
-| relatedparty | 1 | 0.03 |
-| relationship | 1 | 0.03 |
-| release | 1 | 0.03 |
-| released | 1 | 0.03 |
-| relevance | 1 | 0.03 |
-| relevant | 1 | 0.03 |
-| religion | 1 | 0.03 |
-| relocate | 1 | 0.03 |
-| remaining | 1 | 0.03 |
-| remediation | 1 | 0.03 |
-| remix | 1 | 0.03 |
-| remorse | 1 | 0.03 |
-| renal | 1 | 0.03 |
-| render | 1 | 0.03 |
-| renegotiable | 1 | 0.03 |
-| rent | 1 | 0.03 |
-| rental | 1 | 0.03 |
-| repair | 1 | 0.03 |
-| repayment | 1 | 0.03 |
-| repeals | 1 | 0.03 |
-| repeat | 1 | 0.03 |
-| repetition | 1 | 0.03 |
-| repetitions | 1 | 0.03 |
-| replace | 1 | 0.03 |
-| replacee | 1 | 0.03 |
-| replacer | 1 | 0.03 |
-| replication | 1 | 0.03 |
-| reply | 1 | 0.03 |
-| report | 1 | 0.03 |
-| reportage | 1 | 0.03 |
-| reported | 1 | 0.03 |
-| reporting | 1 | 0.03 |
-| repository | 1 | 0.03 |
-| representation | 1 | 0.03 |
-| representative | 1 | 0.03 |
-| request | 1 | 0.03 |
-| required | 1 | 0.03 |
-| requirement | 1 | 0.03 |
-| requires | 1 | 0.03 |
-| requisition | 1 | 0.03 |
-| rescheduled | 1 | 0.03 |
-| rescue | 1 | 0.03 |
-| researcher | 1 | 0.03 |
-| reservation | 1 | 0.03 |
-| reservations | 1 | 0.03 |
-| reserve | 1 | 0.03 |
-| reserved | 1 | 0.03 |
-| reservoir | 1 | 0.03 |
-| reset | 1 | 0.03 |
-| residence | 1 | 0.03 |
-| resizable | 1 | 0.03 |
-| resolution | 1 | 0.03 |
-| resort | 1 | 0.03 |
-| resource | 1 | 0.03 |
-| respiratory | 1 | 0.03 |
-| response | 1 | 0.03 |
-| responsibilities | 1 | 0.03 |
-| responsibility | 1 | 0.03 |
-| responsible | 1 | 0.03 |
-| rest | 1 | 0.03 |
-| restaurant | 1 | 0.03 |
-| restocking | 1 | 0.03 |
-| restricted | 1 | 0.03 |
-| restriction | 1 | 0.03 |
-| result | 1 | 0.03 |
-| results | 1 | 0.03 |
-| resume | 1 | 0.03 |
-| retail | 1 | 0.03 |
-| retention | 1 | 0.03 |
-| retired | 1 | 0.03 |
-| return | 1 | 0.03 |
-| returned | 1 | 0.03 |
-| reveal | 1 | 0.03 |
-| revenue | 1 | 0.03 |
-| review | 1 | 0.03 |
-| reviewed | 1 | 0.03 |
-| rheumatologic | 1 | 0.03 |
-| right | 1 | 0.03 |
-| risk | 1 | 0.03 |
-| risks | 1 | 0.03 |
-| ritual | 1 | 0.03 |
-| river | 1 | 0.03 |
-| roadmap | 1 | 0.03 |
-| role | 1 | 0.03 |
-| roof | 1 | 0.03 |
-| roofing | 1 | 0.03 |
-| room | 1 | 0.03 |
-| rooms | 1 | 0.03 |
-| root | 1 | 0.03 |
-| rootstock | 1 | 0.03 |
-| rotation | 1 | 0.03 |
-| route | 1 | 0.03 |
-| routing | 1 | 0.03 |
-| row | 1 | 0.03 |
-| rsvp | 1 | 0.03 |
-| rule | 1 | 0.03 |
-| rules | 1 | 0.03 |
-| runbook | 1 | 0.03 |
-| runtime | 1 | 0.03 |
-| rv | 1 | 0.03 |
-| rvpark | 1 | 0.03 |
-| rxcui | 1 | 0.03 |
-| sacral | 1 | 0.03 |
-| sacred | 1 | 0.03 |
-| saf | 1 | 0.03 |
-| safety | 1 | 0.03 |
-| salary | 1 | 0.03 |
-| sale | 1 | 0.03 |
-| salinity | 1 | 0.03 |
-| salon | 1 | 0.03 |
-| salt | 1 | 0.03 |
-| same | 1 | 0.03 |
-| sample | 1 | 0.03 |
-| sampling | 1 | 0.03 |
-| sandbox | 1 | 0.03 |
-| satellite | 1 | 0.03 |
-| satire | 1 | 0.03 |
-| satirical | 1 | 0.03 |
-| satisfaction | 1 | 0.03 |
-| saturated | 1 | 0.03 |
-| saturday | 1 | 0.03 |
-| sbbi | 1 | 0.03 |
-| scale | 1 | 0.03 |
-| schedule | 1 | 0.03 |
-| scheduled | 1 | 0.03 |
-| scheme | 1 | 0.03 |
-| scholarly | 1 | 0.03 |
-| school | 1 | 0.03 |
-| science | 1 | 0.03 |
-| scion | 1 | 0.03 |
-| scope | 1 | 0.03 |
-| score | 1 | 0.03 |
-| scorecard | 1 | 0.03 |
-| scouting | 1 | 0.03 |
-| screen | 1 | 0.03 |
-| screening | 1 | 0.03 |
-| screenshot | 1 | 0.03 |
-| sculpture | 1 | 0.03 |
-| sd | 1 | 0.03 |
-| sea | 1 | 0.03 |
-| seal | 1 | 0.03 |
-| season | 1 | 0.03 |
-| seasonal | 1 | 0.03 |
-| seasons | 1 | 0.03 |
-| seat | 1 | 0.03 |
-| seating | 1 | 0.03 |
-| secondary | 1 | 0.03 |
-| secret | 1 | 0.03 |
-| section | 1 | 0.03 |
-| sectional | 1 | 0.03 |
-| sections | 1 | 0.03 |
-| sector | 1 | 0.03 |
-| sectors | 1 | 0.03 |
-| see | 1 | 0.03 |
-| seed | 1 | 0.03 |
-| seek | 1 | 0.03 |
-| seeks | 1 | 0.03 |
-| segment | 1 | 0.03 |
-| selector | 1 | 0.03 |
-| sell | 1 | 0.03 |
-| seller | 1 | 0.03 |
-| send | 1 | 0.03 |
-| sender | 1 | 0.03 |
-| sensory | 1 | 0.03 |
-| sent | 1 | 0.03 |
-| sentiment | 1 | 0.03 |
-| seo | 1 | 0.03 |
-| separation | 1 | 0.03 |
-| sequence | 1 | 0.03 |
-| sequential | 1 | 0.03 |
-| serial | 1 | 0.03 |
-| series | 1 | 0.03 |
-| serious | 1 | 0.03 |
-| served | 1 | 0.03 |
-| server | 1 | 0.03 |
-| serves | 1 | 0.03 |
-| service | 1 | 0.03 |
-| services | 1 | 0.03 |
-| serving | 1 | 0.03 |
-| set | 1 | 0.03 |
-| settings | 1 | 0.03 |
-| sexual | 1 | 0.03 |
-| sha | 1 | 0.03 |
-| sha256 | 1 | 0.03 |
-| shamanism | 1 | 0.03 |
-| shannon | 1 | 0.03 |
-| shape | 1 | 0.03 |
-| shared | 1 | 0.03 |
-| shareds | 1 | 0.03 |
-| shares | 1 | 0.03 |
-| sharing | 1 | 0.03 |
-| sheet | 1 | 0.03 |
-| shelter | 1 | 0.03 |
-| shia | 1 | 0.03 |
-| shift | 1 | 0.03 |
-| shinto | 1 | 0.03 |
-| ship | 1 | 0.03 |
-| shipment | 1 | 0.03 |
-| shipped | 1 | 0.03 |
-| shipping | 1 | 0.03 |
-| shoe | 1 | 0.03 |
-| shop | 1 | 0.03 |
-| shopping | 1 | 0.03 |
-| short | 1 | 0.03 |
-| shred | 1 | 0.03 |
-| sibling | 1 | 0.03 |
-| siblings | 1 | 0.03 |
-| side | 1 | 0.03 |
-| sign | 1 | 0.03 |
-| signature | 1 | 0.03 |
-| significance | 1 | 0.03 |
-| significant | 1 | 0.03 |
-| sikhism | 1 | 0.03 |
-| similar | 1 | 0.03 |
-| similarity | 1 | 0.03 |
-| sin | 1 | 0.03 |
-| single | 1 | 0.03 |
-| singularity | 1 | 0.03 |
-| site | 1 | 0.03 |
-| size | 1 | 0.03 |
-| ski | 1 | 0.03 |
-| skills | 1 | 0.03 |
-| skin | 1 | 0.03 |
-| sku | 1 | 0.03 |
-| sla | 1 | 0.03 |
-| sleeve | 1 | 0.03 |
-| slogan | 1 | 0.03 |
-| smiles | 1 | 0.03 |
-| smoking | 1 | 0.03 |
-| sms | 1 | 0.03 |
-| snapshot | 1 | 0.03 |
-| snid | 1 | 0.03 |
-| social | 1 | 0.03 |
-| society | 1 | 0.03 |
-| sodium | 1 | 0.03 |
-| software | 1 | 0.03 |
-| soil | 1 | 0.03 |
-| sold | 1 | 0.03 |
-| solve | 1 | 0.03 |
-| solver | 1 | 0.03 |
-| some | 1 | 0.03 |
-| soundtrack | 1 | 0.03 |
-| source | 1 | 0.03 |
-| sourced | 1 | 0.03 |
-| sources | 1 | 0.03 |
-| spa | 1 | 0.03 |
-| space | 1 | 0.03 |
-| spacing | 1 | 0.03 |
-| spare | 1 | 0.03 |
-| sparsity | 1 | 0.03 |
-| spatial | 1 | 0.03 |
-| speakable | 1 | 0.03 |
-| spec | 1 | 0.03 |
-| special | 1 | 0.03 |
-| specialty | 1 | 0.03 |
-| specification | 1 | 0.03 |
-| specified | 1 | 0.03 |
-| spectrum | 1 | 0.03 |
-| speech | 1 | 0.03 |
-| speed | 1 | 0.03 |
-| spoken | 1 | 0.03 |
-| sponsor | 1 | 0.03 |
-| sponsorship | 1 | 0.03 |
-| sport | 1 | 0.03 |
-| sporting | 1 | 0.03 |
-| sports | 1 | 0.03 |
-| spouse | 1 | 0.03 |
-| spread | 1 | 0.03 |
-| spreadsheet | 1 | 0.03 |
-| sql | 1 | 0.03 |
-| srp | 1 | 0.03 |
-| stack | 1 | 0.03 |
-| stadium | 1 | 0.03 |
-| staffing | 1 | 0.03 |
-| stage | 1 | 0.03 |
-| staged | 1 | 0.03 |
-| stages | 1 | 0.03 |
-| stand | 1 | 0.03 |
-| standards | 1 | 0.03 |
-| star | 1 | 0.03 |
-| start | 1 | 0.03 |
-| starts | 1 | 0.03 |
-| stat | 1 | 0.03 |
-| state | 1 | 0.03 |
-| statement | 1 | 0.03 |
-| station | 1 | 0.03 |
-| statistic | 1 | 0.03 |
-| statistical | 1 | 0.03 |
-| statistics | 1 | 0.03 |
-| status | 1 | 0.03 |
-| steering | 1 | 0.03 |
-| step | 1 | 0.03 |
-| steps | 1 | 0.03 |
-| sti | 1 | 0.03 |
-| stock | 1 | 0.03 |
-| stop | 1 | 0.03 |
-| storage | 1 | 0.03 |
-| store | 1 | 0.03 |
-| story | 1 | 0.03 |
-| stream | 1 | 0.03 |
-| street | 1 | 0.03 |
-| strength | 1 | 0.03 |
-| strikethrough | 1 | 0.03 |
-| structural | 1 | 0.03 |
-| structure | 1 | 0.03 |
-| structured | 1 | 0.03 |
-| studio | 1 | 0.03 |
-| study | 1 | 0.03 |
-| stupid | 1 | 0.03 |
-| sub | 1 | 0.03 |
-| subcellular | 1 | 0.03 |
-| subdivision | 1 | 0.03 |
-| subject | 1 | 0.03 |
-| submission | 1 | 0.03 |
-| subscribe | 1 | 0.03 |
-| subsidiary | 1 | 0.03 |
-| subsidy | 1 | 0.03 |
-| substance | 1 | 0.03 |
-| substitute | 1 | 0.03 |
-| subtitle | 1 | 0.03 |
-| subway | 1 | 0.03 |
-| successor | 1 | 0.03 |
-| suffering | 1 | 0.03 |
-| suffix | 1 | 0.03 |
-| sufism | 1 | 0.03 |
-| sugar | 1 | 0.03 |
-| suggested | 1 | 0.03 |
-| suggestion | 1 | 0.03 |
-| suitable | 1 | 0.03 |
-| suite | 1 | 0.03 |
-| summary | 1 | 0.03 |
-| sunday | 1 | 0.03 |
-| sunni | 1 | 0.03 |
-| superficial | 1 | 0.03 |
-| superposition | 1 | 0.03 |
-| superseded | 1 | 0.03 |
-| supplement | 1 | 0.03 |
-| supplier | 1 | 0.03 |
-| supply | 1 | 0.03 |
-| support | 1 | 0.03 |
-| supported | 1 | 0.03 |
-| supporting | 1 | 0.03 |
-| supto | 1 | 0.03 |
-| surface | 1 | 0.03 |
-| surgery | 1 | 0.03 |
-| surgical | 1 | 0.03 |
-| surprisal | 1 | 0.03 |
-| suspend | 1 | 0.03 |
-| suspended | 1 | 0.03 |
-| sustainability | 1 | 0.03 |
-| swatch | 1 | 0.03 |
-| swimming | 1 | 0.03 |
-| syllabus | 1 | 0.03 |
-| symbiosis | 1 | 0.03 |
-| symbol | 1 | 0.03 |
-| symptom | 1 | 0.03 |
-| symptoms | 1 | 0.03 |
-| synagogue | 1 | 0.03 |
-| sync | 1 | 0.03 |
-| synthetic | 1 | 0.03 |
-| system | 1 | 0.03 |
-| table | 1 | 0.03 |
-| tag | 1 | 0.03 |
-| tagging | 1 | 0.03 |
-| taichi | 1 | 0.03 |
-| take | 1 | 0.03 |
-| tall | 1 | 0.03 |
-| taoism | 1 | 0.03 |
-| tape | 1 | 0.03 |
-| target | 1 | 0.03 |
-| task | 1 | 0.03 |
-| tattoo | 1 | 0.03 |
-| taxexempt | 1 | 0.03 |
-| taxi | 1 | 0.03 |
-| taxon | 1 | 0.03 |
-| taxonomic | 1 | 0.03 |
-| taxonomy | 1 | 0.03 |
-| teaches | 1 | 0.03 |
-| tech | 1 | 0.03 |
-| technique | 1 | 0.03 |
-| telephone | 1 | 0.03 |
-| television | 1 | 0.03 |
-| teller | 1 | 0.03 |
-| temperature | 1 | 0.03 |
-| template | 1 | 0.03 |
-| temple | 1 | 0.03 |
-| temporal | 1 | 0.03 |
-| temporarily | 1 | 0.03 |
-| tenant | 1 | 0.03 |
-| tenants | 1 | 0.03 |
-| tennis | 1 | 0.03 |
-| tenure | 1 | 0.03 |
-| term | 1 | 0.03 |
-| terminal | 1 | 0.03 |
-| terminals | 1 | 0.03 |
-| terminated | 1 | 0.03 |
-| termination | 1 | 0.03 |
-| terms | 1 | 0.03 |
-| territory | 1 | 0.03 |
-| terroir | 1 | 0.03 |
-| tested | 1 | 0.03 |
-| testing | 1 | 0.03 |
-| text | 1 | 0.03 |
-| theater | 1 | 0.03 |
-| theme | 1 | 0.03 |
-| therapeutic | 1 | 0.03 |
-| therapy | 1 | 0.03 |
-| thesis | 1 | 0.03 |
-| thing | 1 | 0.03 |
-| thought | 1 | 0.03 |
-| threshold | 1 | 0.03 |
-| throat | 1 | 0.03 |
-| through | 1 | 0.03 |
-| throughput | 1 | 0.03 |
-| thumbnail | 1 | 0.03 |
-| thursday | 1 | 0.03 |
-| ticker | 1 | 0.03 |
-| ticket | 1 | 0.03 |
-| ticketed | 1 | 0.03 |
-| tie | 1 | 0.03 |
-| tier | 1 | 0.03 |
-| tiers | 1 | 0.03 |
-| tillage | 1 | 0.03 |
-| time | 1 | 0.03 |
-| timestamp | 1 | 0.03 |
-| timezone | 1 | 0.03 |
-| tinid | 1 | 0.03 |
-| tip | 1 | 0.03 |
-| tire | 1 | 0.03 |
-| tissue | 1 | 0.03 |
-| title | 1 | 0.03 |
-| tobacco | 1 | 0.03 |
-| toc | 1 | 0.03 |
-| toilet | 1 | 0.03 |
-| token | 1 | 0.03 |
-| toll | 1 | 0.03 |
-| tongue | 1 | 0.03 |
-| tool | 1 | 0.03 |
-| topic | 1 | 0.03 |
-| topics | 1 | 0.03 |
-| topography | 1 | 0.03 |
-| topology | 1 | 0.03 |
-| torque | 1 | 0.03 |
-| torus | 1 | 0.03 |
-| tot | 1 | 0.03 |
-| total | 1 | 0.03 |
-| touches | 1 | 0.03 |
-| tour | 1 | 0.03 |
-| tourist | 1 | 0.03 |
-| toxicologic | 1 | 0.03 |
-| toy | 1 | 0.03 |
-| track | 1 | 0.03 |
-| tracking | 1 | 0.03 |
-| tracks | 1 | 0.03 |
-| trade | 1 | 0.03 |
-| traditional | 1 | 0.03 |
-| trailer | 1 | 0.03 |
-| train | 1 | 0.03 |
-| trained | 1 | 0.03 |
-| training | 1 | 0.03 |
-| trans | 1 | 0.03 |
-| transcript | 1 | 0.03 |
-| transfer | 1 | 0.03 |
-| transformed | 1 | 0.03 |
-| transit | 1 | 0.03 |
-| translate | 1 | 0.03 |
-| translation | 1 | 0.03 |
-| translator | 1 | 0.03 |
-| transmission | 1 | 0.03 |
-| transplant | 1 | 0.03 |
-| transport | 1 | 0.03 |
-| transposes | 1 | 0.03 |
-| travel | 1 | 0.03 |
-| treat | 1 | 0.03 |
-| treatment | 1 | 0.03 |
-| treatments | 1 | 0.03 |
-| trellis | 1 | 0.03 |
-| trend | 1 | 0.03 |
-| trial | 1 | 0.03 |
-| tributary | 1 | 0.03 |
-| trinity | 1 | 0.03 |
-| trip | 1 | 0.03 |
-| triple | 1 | 0.03 |
-| true | 1 | 0.03 |
-| trust | 1 | 0.03 |
-| tuesday | 1 | 0.03 |
-| tunnel | 1 | 0.03 |
-| tv | 1 | 0.03 |
-| tvclip | 1 | 0.03 |
-| tvepisode | 1 | 0.03 |
-| tvseason | 1 | 0.03 |
-| tvseries | 1 | 0.03 |
-| tweet | 1 | 0.03 |
-| tweets | 1 | 0.03 |
-| type | 1 | 0.03 |
-| types | 1 | 0.03 |
-| typical | 1 | 0.03 |
-| typography | 1 | 0.03 |
-| uk | 1 | 0.03 |
-| uknonprofit | 1 | 0.03 |
-| uktrust | 1 | 0.03 |
-| ultrasound | 1 | 0.03 |
-| unavoidable | 1 | 0.03 |
-| uncertainty | 1 | 0.03 |
-| unclassified | 1 | 0.03 |
-| under | 1 | 0.03 |
-| underbust | 1 | 0.03 |
-| unemployment | 1 | 0.03 |
-| unincorporated | 1 | 0.03 |
-| union | 1 | 0.03 |
-| unit | 1 | 0.03 |
-| units | 1 | 0.03 |
-| university | 1 | 0.03 |
-| unlabelled | 1 | 0.03 |
-| unlimited | 1 | 0.03 |
-| unnamed | 1 | 0.03 |
-| unofficial | 1 | 0.03 |
-| unordered | 1 | 0.03 |
-| unsaturated | 1 | 0.03 |
-| unsid | 1 | 0.03 |
-| unspecified | 1 | 0.03 |
-| until | 1 | 0.03 |
-| update | 1 | 0.03 |
-| updates | 1 | 0.03 |
-| upload | 1 | 0.03 |
-| upon | 1 | 0.03 |
-| upper | 1 | 0.03 |
-| upsell | 1 | 0.03 |
-| upvote | 1 | 0.03 |
-| url | 1 | 0.03 |
-| urltemplate | 1 | 0.03 |
-| urologic | 1 | 0.03 |
-| us | 1 | 0.03 |
-| usage | 1 | 0.03 |
-| use | 1 | 0.03 |
-| used | 1 | 0.03 |
-| user | 1 | 0.03 |
-| users | 1 | 0.03 |
-| uses | 1 | 0.03 |
-| usnonprofit | 1 | 0.03 |
-| utilities | 1 | 0.03 |
-| utility | 1 | 0.03 |
-| utterance | 1 | 0.03 |
-| utterances | 1 | 0.03 |
-| vacation | 1 | 0.03 |
-| valid | 1 | 0.03 |
-| value | 1 | 0.03 |
-| values | 1 | 0.03 |
-| variable | 1 | 0.03 |
-| variables | 1 | 0.03 |
-| variance | 1 | 0.03 |
-| variant | 1 | 0.03 |
-| varies | 1 | 0.03 |
-| vat | 1 | 0.03 |
-| vcard | 1 | 0.03 |
-| vedanta | 1 | 0.03 |
-| vegan | 1 | 0.03 |
-| vegetarian | 1 | 0.03 |
-| vehicle | 1 | 0.03 |
-| vein | 1 | 0.03 |
-| vendor | 1 | 0.03 |
-| vent | 1 | 0.03 |
-| venue | 1 | 0.03 |
-| verification | 1 | 0.03 |
-| version | 1 | 0.03 |
-| versions | 1 | 0.03 |
-| vessel | 1 | 0.03 |
-| veterinary | 1 | 0.03 |
-| video | 1 | 0.03 |
-| view | 1 | 0.03 |
-| vinyl | 1 | 0.03 |
-| violence | 1 | 0.03 |
-| virtual | 1 | 0.03 |
-| virus | 1 | 0.03 |
-| visit | 1 | 0.03 |
-| visits | 1 | 0.03 |
-| visual | 1 | 0.03 |
-| vital | 1 | 0.03 |
-| vitepress | 1 | 0.03 |
-| vocabulary | 1 | 0.03 |
-| void | 1 | 0.03 |
-| volcano | 1 | 0.03 |
-| volume | 1 | 0.03 |
-| vote | 1 | 0.03 |
-| voting | 1 | 0.03 |
-| waist | 1 | 0.03 |
-| waiver | 1 | 0.03 |
-| wallet | 1 | 0.03 |
-| want | 1 | 0.03 |
-| war | 1 | 0.03 |
-| warning | 1 | 0.03 |
-| warranty | 1 | 0.03 |
-| wash | 1 | 0.03 |
-| watch | 1 | 0.03 |
-| water | 1 | 0.03 |
-| waterfall | 1 | 0.03 |
-| wave | 1 | 0.03 |
-| wco | 1 | 0.03 |
-| weapon | 1 | 0.03 |
-| wear | 1 | 0.03 |
-| wearable | 1 | 0.03 |
-| web | 1 | 0.03 |
-| website | 1 | 0.03 |
-| wednesday | 1 | 0.03 |
-| week | 1 | 0.03 |
-| weight | 1 | 0.03 |
-| wellbeing | 1 | 0.03 |
-| western | 1 | 0.03 |
-| wheel | 1 | 0.03 |
-| wheelbase | 1 | 0.03 |
-| where | 1 | 0.03 |
-| whole | 1 | 0.03 |
-| wholesale | 1 | 0.03 |
-| width | 1 | 0.03 |
-| win | 1 | 0.03 |
-| window | 1 | 0.03 |
-| winery | 1 | 0.03 |
-| winner | 1 | 0.03 |
-| wisdom | 1 | 0.03 |
-| withdrawal | 1 | 0.03 |
-| withdrawn | 1 | 0.03 |
-| within | 1 | 0.03 |
-| womens | 1 | 0.03 |
-| word | 1 | 0.03 |
-| worker | 1 | 0.03 |
-| workers | 1 | 0.03 |
-| workload | 1 | 0.03 |
-| works | 1 | 0.03 |
-| worship | 1 | 0.03 |
-| worst | 1 | 0.03 |
-| worth | 1 | 0.03 |
-| wp | 1 | 0.03 |
-| wpad | 1 | 0.03 |
-| wpfooter | 1 | 0.03 |
-| wpheader | 1 | 0.03 |
-| wpside | 1 | 0.03 |
-| write | 1 | 0.03 |
-| writing | 1 | 0.03 |
-| xpath | 1 | 0.03 |
-| xray | 1 | 0.03 |
-| year | 1 | 0.03 |
-| yearly | 1 | 0.03 |
-| years | 1 | 0.03 |
-| yes | 1 | 0.03 |
-| yet | 1 | 0.03 |
-| yield | 1 | 0.03 |
-| zeropoint | 1 | 0.03 |
-| zone | 1 | 0.03 |
-| zoo | 1 | 0.03 |
-| zoroastrianism | 1 | 0.03 |
-| **Σ** | **3175** | **100** |
 
 
 ## scripts
@@ -2947,6 +1055,7 @@ Cross-tab of **3175** folder README models — state × count per axis.
 - `pnpm docs:preview` — `vitepress preview`
 - `pnpm erpax` — `tsx src/cli/index.ts`
 - `pnpm payload` — `payload`
+- `pnpm payload:migrate:create` — `payload migrate:create`
 - `pnpm postbuild` — `next-sitemap --config next-sitemap.config.cjs`
 - `pnpm prepare` — `node scripts/setup-env.mjs --if-needed && husky`
 - `pnpm preview` — `opennextjs-cloudflare build --env=$CLOUDFLARE_ENV && opennextjs-cloudflare preview --env=$CLOUDFLARE_ENV`
@@ -2968,8 +1077,15 @@ Cross-tab of **3175** folder README models — state × count per axis.
 
 ## license
 
-`1.0.0` · `MIT`
+`1.0.0` · `AGPL-3.0-or-later`
+
+Dual-licensed **open core**: [AGPL-3.0-or-later](LICENSE) for the community — §13 requires a modified
+network deployment to publish its source, which keeps every deployment inspectable and improvements
+flowing back. Uses that cannot accept the copyleft — closed SaaS, proprietary embedding, or a warranty
+/indemnity/SLA — need a **commercial license**: contact `ceci@psg.bg`. External contributions are
+accepted under a CLA granting the maintainer the right to relicense commercially (the parallel grant
+that keeps the commercial option viable).
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `d4aaef70-c406-8fd5-ac62-15f6daaf63f2`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `d10e6697-36e8-84de-a7ea-67e65d2a627e`, regenerated from the live tree; any drift fails the gate.</sub>
