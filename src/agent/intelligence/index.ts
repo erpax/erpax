@@ -163,6 +163,50 @@ export function rankGapsByEntanglement(
     .slice(0, Math.max(1, batch))
 }
 
+export interface LeveragedNext {
+  /** the shared root the gaps collapse onto — the atom whose fix resolves them all */
+  readonly root: string
+  /** how many ranked gaps share this root (the fuse count — 1 fix, N corrections) */
+  readonly gapCount: number
+  /** leverage = fuse count × the root's entanglement; the highest-leverage move ranks first */
+  readonly leverage: number
+  readonly axes: readonly string[]
+  readonly gaps: readonly RankedIntelligenceGap[]
+}
+
+/**
+ * The move the system makes INSTEAD of asking. `rankGapsByEntanglement` scores each gap in isolation,
+ * so it cannot tell that fixing one atom resolves five gaps — and a decision it cannot compute is one it
+ * defers to the user, which is the highest cost there is ([[rules]]/ask). This groups the ranked gaps by
+ * their shared ROOT (the atom the fix lands in) and scores each root by leverage = fuse-count × the
+ * root's entanglement. The top row is "next": the fix that collapses the most gaps, derived, never asked.
+ *
+ * It is failureRoots/costRoots ([[quantum]]/computer) turned on the intelligence's own backlog — the same
+ * law that says a red list collapses onto shared causes, applied so the agent self-determines its next move.
+ */
+export function nextMoveByLeverage(cwd = process.cwd(), batch = 50): LeveragedNext[] {
+  const ranked = rankGapsByEntanglement(cwd, batch)
+  const byRoot = new Map<string, RankedIntelligenceGap[]>()
+  for (const g of ranked) {
+    const root = g.path.split('/')[0] ?? g.path // the atom the fix lands in — the shared cause
+    const bucket = byRoot.get(root) ?? []
+    bucket.push(g)
+    byRoot.set(root, bucket)
+  }
+  const rows: LeveragedNext[] = []
+  for (const [root, gaps] of byRoot) {
+    const rootEntanglement = Number(entanglementScore(root) & 0xffffn) + 1
+    rows.push({
+      root,
+      gapCount: gaps.length,
+      leverage: gaps.length * rootEntanglement,
+      axes: [...new Set(gaps.map((g) => g.axis))],
+      gaps,
+    })
+  }
+  return rows.sort((a, b) => (b.leverage - a.leverage) || a.root.localeCompare(b.root))
+}
+
 /** Pure metric: scoped violation count × bond-degree fold (interact64); no literary labels. */
 export function quantumIntelligenceOf(scope: string, cwd = process.cwd()): number {
   const fold = doubleFold(scope)
@@ -319,6 +363,18 @@ export function formatIntelligenceLine(r: SelfImproveCycleResult): string {
 
 export function runIntelligenceCli(argv: string[] = process.argv.slice(2)): number {
   const batch = Number(argv.find((a) => a.startsWith('--batch='))?.slice(8) ?? 10)
+  // --next: compute the highest-leverage move (the decision the agent makes instead of asking)
+  if (argv.includes('--next')) {
+    const moves = nextMoveByLeverage(process.cwd(), Math.max(batch, 50))
+    if (moves.length === 0) {
+      console.log('intelligence next: no gaps — nothing to decide')
+      return 0
+    }
+    const top = moves[0]!
+    console.log(`intelligence next: fix [[${top.root}]] — leverage ${top.leverage} (${top.gapCount} gap(s) collapse here: ${top.axes.join(' · ')})`)
+    for (const m of moves.slice(1, 5)) console.log(`  then ${m.root} — leverage ${m.leverage} (${m.gapCount})`)
+    return 0
+  }
   const apply = argv.includes('--apply')
   const r = selfImproveCycle({ batch, dryRun: !apply, skipPayload: argv.includes('--skip-payload') })
   console.log(formatIntelligenceLine(r))

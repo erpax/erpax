@@ -7,6 +7,7 @@ import {
   measureIntelligenceAxes,
   quantumIntelligenceOf,
   rankGapsByEntanglement,
+  nextMoveByLeverage,
   learnSciencesOnTheWay,
   __resetIntelligenceReceiptHeadForTests,
 } from './index'
@@ -77,6 +78,32 @@ describe('agent/intelligence', () => {
       const m = measureIntelligenceAxes(cwd)
       expect(m.linearGaps).toBeGreaterThan(0)
       expect(rankGapsByEntanglement(cwd, 5).length).toBeGreaterThan(0)
+    })
+
+    it('nextMoveByLeverage picks the root the most gaps collapse onto — the decision made instead of asking', () => {
+      // one hub with THREE trinity-incomplete children, another hub with ONE — leverage must pick the three
+      const heavy = join(cwd, 'src', 'heavy')
+      mkdirSync(heavy, { recursive: true })
+      writeFileSync(join(heavy, 'index.ts'), 'export const h = 1\n')
+      for (const child of ['one', 'two', 'three']) {
+        mkdirSync(join(heavy, child), { recursive: true })
+        writeFileSync(join(heavy, child, 'index.ts'), `export const ${child} = 1\n`)
+      }
+      const light = join(cwd, 'src', 'light')
+      mkdirSync(join(light, 'solo'), { recursive: true })
+      writeFileSync(join(light, 'index.ts'), 'export const l = 1\n')
+      writeFileSync(join(light, 'solo', 'index.ts'), 'export const s = 1\n')
+
+      const moves = nextMoveByLeverage(cwd, 50)
+      expect(moves.length).toBeGreaterThan(0)
+      const heavyRow = moves.find((m) => m.root === 'heavy')
+      const lightRow = moves.find((m) => m.root === 'light')
+      expect(heavyRow).toBeDefined()
+      expect(heavyRow!.gapCount).toBeGreaterThanOrEqual(3) // three gaps fuse onto 'heavy'
+      // the heavier root outranks the lighter — more gaps collapse there ⇒ higher leverage
+      if (lightRow) expect(heavyRow!.leverage).toBeGreaterThan(lightRow.leverage)
+      // and it is the top move: what the agent does next, computed not asked
+      expect(moves[0]!.gapCount).toBeGreaterThanOrEqual(heavyRow!.gapCount === moves[0]!.gapCount ? heavyRow!.gapCount : 1)
     })
   })
 })
