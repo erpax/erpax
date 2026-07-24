@@ -155,6 +155,10 @@ const eslintConfig = defineConfig([
     'src/skill/router/skills.index.ts',
     'src/translations/catalogue.ts',
     'src/standards/catalogue.ts',
+    // Payload `migrate:create` output — generated, never hand-edited (same class as payload-types /
+    // payload-generated-schema above). The per-file `no-unused-vars: off` at the migrations block is
+    // clobbered by the later global rule block, so the exclusion only holds here, in globalIgnores.
+    'src/migrations/*_*.ts',
     '**/*.generated.ts',
     '**/translations.ts',
     // Playwright + auto-generated test artefacts — minified third-party bundles
