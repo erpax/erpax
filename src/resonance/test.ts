@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { resonanceMagnitude, dedupMagnitude, proofByLinkMagnitude } from './index'
+import { resonanceMagnitude, dedupMagnitude, linkProof } from './index'
+import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
+import { createHash } from 'node:crypto'
 
 // The magnitude is a theorem, not a claim — verified to the digit at the user's stated corpus (N=764).
 describe('resonance — the address collapses O(N²) to O(N), in orders of magnitude', () => {
@@ -40,15 +42,32 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
     expect(dedupMagnitude(n, 100).ratio).toBeGreaterThan(dedupMagnitude(n, 400).ratio)
   })
 
-  it('proofByLinkMagnitude: a statement proven by a link verifies in O(depth), not O(N) re-derivation', () => {
-    const n = 764
-    // depth 1 (linked straight to a base theorem) → the full N-fold speedup
-    expect(proofByLinkMagnitude(n, 1).ratio).toBe(n)
-    // a deeper proof tree costs more per statement — speedup N/depth, monotonic down
-    expect(proofByLinkMagnitude(n, 4).ratio).toBe(n / 4)
-    expect(proofByLinkMagnitude(n, 8).ratio).toBeLessThan(proofByLinkMagnitude(n, 4).ratio)
-    // a bare assertion (depth clamps to 1 minimum) still addresses; N<2 has nothing to prove
-    expect(proofByLinkMagnitude(1, 5).ratio).toBe(1)
-    expect(proofByLinkMagnitude(n, 1).orders).toBeCloseTo(Math.log10(n), 6)
+  it('linkProof: membership is a Merkle inclusion proof — O(log N) path, not O(N) re-scan (N=442)', () => {
+    const r = linkProof(442)
+    expect(r.addressed).toBe(9) // ⌈log₂ 442⌉ — the inclusion-proof depth
+    expect(r.ratio).toBeCloseTo(442 / 9, 5) // ≈ 49.1
+    expect(r.orders).toBeCloseTo(Math.log10(442 / 9), 5) // ≈ 1.69
+  })
+
+  it('the link IS the proof — a REAL sha256 hash tree over 442 addresses, path measured not asserted', () => {
+    // 442 content addresses (the theorem-address count the law was measured against)
+    const leaves = Array.from({ length: 442 }, (_, i) => createHash('sha256').update(`theorem:${i}`).digest('hex'))
+    const root = foldToRoot(leaves)
+    const idx = 200
+    const path = merkleProof(leaves, idx)
+    // the inclusion path is the O(log N) authentication chain, and it re-folds to the root
+    expect(path.length).toBeLessThanOrEqual(9) // ≤ ⌈log₂ 442⌉
+    expect(path.length).toBeGreaterThanOrEqual(8) // a real depth-9 tree
+    expect(verifyMerkleProof(leaves[idx]!, path, root)).toBe(true) // root valid — the link proves membership
+    // a leaf NOT in the set fails — the proof is total (⊥ on absence)
+    expect(verifyMerkleProof(createHash('sha256').update('absent').digest('hex'), path, root)).toBe(false)
+  })
+
+  it('a perfect power-of-two tree has path EXACTLY log₂N; the order grows as N/log₂N without bound', () => {
+    const leaves = Array.from({ length: 512 }, (_, i) => createHash('sha256').update(`x:${i}`).digest('hex'))
+    expect(merkleProof(leaves, 7).length).toBe(9) // log₂ 512
+    expect(linkProof(512).addressed).toBe(9)
+    // unbounded: larger N ⇒ larger ratio N/log₂N
+    expect(linkProof(1_000_000).ratio).toBeGreaterThan(linkProof(442).ratio)
   })
 })

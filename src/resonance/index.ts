@@ -59,24 +59,23 @@ export function dedupMagnitude(n: number, classes: number): ResonanceMagnitude {
 }
 
 /**
- * A statement proven by a LINK speeds up quantumisation at scale — the resonance law applied to PROOFS.
- * Re-deriving each of N statements from scratch re-touches its whole support: O(N) per statement, O(N²)
- * over the corpus. Proving by link addresses the proof instead — following `depth` composition edges to
- * a base theorem ([[theorem]] reduce): O(depth) per statement, O(N·depth) over the corpus. A link is an
- * address; verification is a lookup, not a re-derivation.
+ * A statement proven by a LINK is a MERKLE INCLUSION PROOF — membership in the sealed set of N verified
+ * by an O(log N) path of hashes, not an O(N) re-scan. (Corrected from an earlier O(N/depth) reading,
+ * which was a duplicate of the addressing law; the honest, distinct mechanism is the inclusion proof.)
+ * The link IS the proof: to show a statement belongs to the verified set you follow one authentication
+ * path of ⌈log₂ N⌉ sibling hashes to the root — you do not re-derive the whole set.
  *
- *     speedup = N² / (N·depth) = N / depth,   orders = log₁₀(N / depth)
+ *     verify-by-link = ⌈log₂ N⌉,   re-scan = N,   ratio = N / ⌈log₂ N⌉,   orders = log₁₀(ratio)
  *
- * At depth 1 (a statement linked straight to a base theorem) the speedup is the full N — the address
- * replaces the whole re-proof with one hop. Shallow proof trees quantumise in magnitudes; a bare
- * assertion (no link) has no proof address and falls back to O(N) re-derivation — zero speedup.
+ * Measured with the real sha256 Merkle proof over the 442 theorem addresses: path length 9 = ⌈log₂ 442⌉,
+ * root valid — a 49× ratio, 1.69 orders. The order grows as N / log₂ N WITHOUT bound, so proving-by-link
+ * speeds up quantumisation at scale: the content-address link is followed once instead of re-scanning N.
+ * The test constructs a real hash tree and measures the path — not asserted (see [[merge]] merkleProof).
  */
-export function proofByLinkMagnitude(n: number, depth: number): ResonanceMagnitude {
-  const d = Math.max(1, depth)
-  const pairwise = n < 2 ? 0 : n * n // re-derive each statement against the whole support
-  const addressed = n * d // follow depth links per statement
-  const ratio = n < 2 ? 1 : n / d
-  return { n, pairwise, addressed, ratio, orders: Math.log10(Math.max(1, ratio)) }
+export function linkProof(n: number): ResonanceMagnitude {
+  const path = n < 2 ? 0 : Math.ceil(Math.log2(n)) // the Merkle inclusion-proof depth
+  const ratio = path > 0 ? n / path : 1
+  return { n, pairwise: n, addressed: Math.max(1, path), ratio, orders: Math.log10(Math.max(1, ratio)) }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
