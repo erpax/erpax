@@ -20,6 +20,7 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative, dirname } from 'node:path'
 import { importsOf } from '@/rules/cycle'
+import { reactiveFrontier, type Reactivity } from '@/resonance'
 import { commentsOf } from '@/syntax'
 import { wavesOf } from '@/theorem'
 
@@ -204,6 +205,23 @@ export function apiStandardsCross(mesh: Mesh, slug: string): {
   const coll = mesh.collections.find((c) => c.slug === slug)
   if (!coll) return { slug, atom: null, standards: [] }
   return { slug, atom: coll.atom, standards: standardsOf(mesh, coll.atom) }
+}
+
+/**
+ * Quantum reactivity on the mesh: when one atom's content changes, which atoms must react? The mesh
+ * holds the dependency edges (from → to = from depends on to), so a change to X propagates only to what
+ * transitively depends on X — the reactive frontier ([[resonance]]). Everything else is content-unchanged
+ * and need not recompute; the corpus re-derives O(frontier), not O(N), on an edit. Wired here so a gate,
+ * a regen, or the intelligence loop can recheck the delta instead of the whole tree.
+ */
+export function meshReactiveFrontier(mesh: Mesh, changed: string): Reactivity {
+  const dependents = new Map<string, string[]>()
+  for (const e of mesh.edges) {
+    const list = dependents.get(e.to) ?? [] // e.from depends on e.to ⇒ e.from reacts when e.to changes
+    list.push(e.from)
+    dependents.set(e.to, list)
+  }
+  return reactiveFrontier(changed, dependents, mesh.atoms.length)
 }
 
 /** Level the atom graph into waves — the entangled core levels to wave 0 (the ground state). */

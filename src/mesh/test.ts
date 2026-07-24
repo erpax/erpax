@@ -2,7 +2,8 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, it, expect, afterAll } from 'vitest'
-import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf } from '@/mesh'
+import { meshOf, meshWaves, meshShape, standardsOf, atomsOf, atomOfFile, upstreamOf, failureRoots, costRoots, failedFilesFromVitestJson, standardApiCross, apiStandardsCross, apiOf, meshReactiveFrontier } from '@/mesh'
+import type { Mesh } from '@/mesh'
 
 // Hermetic fixture corpus: three atoms in a chain a→b→c, one standard banner, one
 // import-shaped STRING that must never become an edge (the phantom class every
@@ -120,5 +121,21 @@ describe('mesh — one quantum mesh: atoms ⊕ imports ⊕ standards', () => {
     }
     expect(failedFilesFromVitestJson(report)).toEqual(['/repo/src/a/test.ts', '/repo/src/c/test.ts'])
     expect(failedFilesFromVitestJson(null)).toEqual([])
+  })
+
+  it('meshReactiveFrontier: a change reacts only to its dependents — O(frontier), not O(N)', () => {
+    // a depends on b, c depends on b, d depends on a  (from → to = from depends on to)
+    const mesh = {
+      atoms: ['a', 'b', 'c', 'd', 'x', 'y'],
+      edges: [{ from: 'a', to: 'b' }, { from: 'c', to: 'b' }, { from: 'd', to: 'a' }],
+      standards: [],
+      collections: [],
+    } as unknown as Mesh
+    // change 'b' → everything transitively depending on it reacts: a, c, and d (via a)
+    const rb = meshReactiveFrontier(mesh, 'b')
+    expect(new Set(rb.frontier)).toEqual(new Set(['a', 'c', 'd']))
+    expect(rb.saved).toBe(2) // x, y spared — content-unchanged
+    // change a leaf 'x' (nothing depends on it) → reacts alone
+    expect(meshReactiveFrontier(mesh, 'x').frontier).toEqual([])
   })
 })
