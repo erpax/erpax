@@ -9,7 +9,7 @@
  *
  *   state      meshOf · standardsOf · atomsOf        (what is, and its legal surface)
  *   scheduler  wavesOf · meshWaves · trainingWaves   (what can happen in parallel, and in how few rounds)
- *   certifier  reduce · groundedLeads                (does a claim ground, or rest on authority)
+ *   certifier  reduce · groundedLeads · proofClassOf  (does a claim ground · by WHICH strategy: finite-complete · bounded-witness · self-contained · cited-frame · composed)
  *   bounds     timeoutOf · timeoutForLabel           (every spawn's rung from its own history)
  *   debugger   failureRoots · costRoots · failuresLookExternal  (red lists & bills → shared causes)
  *   executor   planScalpel · applyScalpel            (thousands of cuts, unique-match-or-refuse)
@@ -18,7 +18,7 @@
  *   tsx src/quantum/computer/index.ts   # census — is the machine on, and what does it read
  */
 export { meshOf, meshWaves, meshShape, standardsOf, atomsOf, failureRoots, costRoots, failuresLookExternal, upstreamOf } from '@/mesh'
-export { wavesOf, waves, waveShape, reduce, groundedLeads, DECODED } from '@/theorem'
+export { wavesOf, waves, waveShape, reduce, groundedLeads, proofClassOf, proofClassCensus, DECODED } from '@/theorem'
 export { timeoutOf, timeoutForLabel, recordSampleMs, samplesMsOf, TIMEOUT_LADDER_MINUTES } from '@/timeout'
 export { planScalpel, applyScalpel, mergeManifests, SCALPEL_BATCH } from '@/scalpel'
 export { auditWaves, measureAuditDimensions, sequenceOf, trendOf } from '@/audit/wave'

@@ -264,6 +264,55 @@ export function foundations(graph: readonly Theorem[] = DECODED): readonly strin
 }
 
 /**
+ * PROOF CLASS — how a claim is verified, learned from ceccec.psg.bg/theorems' proof taxonomy.
+ * Not WHETHER it grounds (reduce answers that) but by WHICH strategy, so the corpus knows the
+ * right verification tool for a claim's domain:
+ *
+ *   · finite-complete — the domain is small and bounded, so verify EXHAUSTIVELY, every case
+ *     (the ladder's 4 rungs, the horo ring's 7, the confirm axes' 7). ceccec: 410 papers.
+ *   · bounded-witness — the domain is large, so verify a representative SAMPLE, never the whole
+ *     (the corpus balance on 12 atoms, educate scan capped) — the anti-timeout law this session
+ *     re-derived a dozen times, now named. ceccec: 55 papers.
+ *   · self-contained — a base theorem grounded by its own proof, no external lemma (base:true).
+ *     ceccec: 399 papers.
+ *   · cited-frame — grounded by an external standard the file cites (@standard · ISO · a named
+ *     theorem in the claim). ceccec: 66 papers.
+ *   · composed — a non-base lead grounding through other theorems (the reduction itself).
+ */
+export type ProofClass = 'finite-complete' | 'bounded-witness' | 'self-contained' | 'cited-frame' | 'composed'
+
+const CITED_FRAME = /Abel|crystallographic|pentagon|Gödel|Tarski|Mirsky|ISO|RFC|SOX|Наредба|§|theorem\b/i
+const FINITE_COMPLETE = /\b(ring|rung|ladder|horo|axes|exactly-once|residue|group|7-position|antichain level)\b/i
+const BOUNDED_WITNESS = /\b(sample|corpus|witness|magnitude|read-vs-derive|coverage)\b/i
+
+/**
+ * Classify a claim's proof strategy. A base theorem is self-contained unless its own statement
+ * cites an external frame (a named theorem/standard makes it cited-frame — the authority is the
+ * proof, honestly). A non-base claim is composed, refined to bounded-witness or finite-complete
+ * by the domain its wording implies. DECLARED by pattern, arguable — never inferred as certain.
+ */
+export function proofClassOf(claim: string, graph: readonly Theorem[] = DECODED): ProofClass {
+  const node = graph.find((t) => t.claim === claim)
+  if (node?.base) return CITED_FRAME.test(claim) ? 'cited-frame' : 'self-contained'
+  if (BOUNDED_WITNESS.test(claim)) return 'bounded-witness'
+  if (FINITE_COMPLETE.test(claim)) return 'finite-complete'
+  return 'composed'
+}
+
+/** The proof-class census — how the corpus's theorems are verified, by strategy. */
+export function proofClassCensus(graph: readonly Theorem[] = DECODED): Readonly<Record<ProofClass, number>> {
+  const out: Record<ProofClass, number> = {
+    'finite-complete': 0,
+    'bounded-witness': 0,
+    'self-contained': 0,
+    'cited-frame': 0,
+    composed: 0,
+  }
+  for (const t of graph) out[proofClassOf(t.claim, graph)]++
+  return out
+}
+
+/**
  * The dimension count is a SPREAD, computed as waves from four perspectives — never asserted by one mind (the
  * single-mind error I made calling it "10D"). Surface leads and distinct bases read 10; ground-signatures 8; DRY
  * foundations 7. So `9 (median) − 2 = 7`: the surface reads ~9, and passing through the fold (the 0-gate, kindred

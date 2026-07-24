@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -229,6 +229,42 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
       expect(s.depth).toBe(3)
       expect(s.parallelism).toBeGreaterThanOrEqual(13) // the widest wave — massively parallel
       expect(s.parallelism).toBeGreaterThan(s.depth) // wide, not deep — the corpus reasons in parallel
+    })
+  })
+
+  // Learned from ceccec.psg.bg/theorems: HOW a claim is verified, not whether. The proof-class
+  // taxonomy names the anti-timeout distinction this session re-derived a dozen times.
+  describe('proofClassOf — the verification strategy, named (ceccec proof taxonomy)', () => {
+    const g: Theorem[] = [
+      { claim: 'content-addressing: same content ⇒ same address', composes: [], base: true },
+      { claim: 'Gödel: no system proves its own consistency', composes: [], base: true },
+      { claim: 'the ladder has exactly four rungs — verify every one', composes: [], base: false },
+      { claim: 'the corpus balance holds on a representative sample', composes: [], base: false },
+      { claim: 'a lead grounding through other theorems', composes: ['content-addressing: same content ⇒ same address'], base: false },
+    ]
+
+    it('a base with no external frame is self-contained; one citing a theorem is cited-frame', () => {
+      expect(proofClassOf('content-addressing: same content ⇒ same address', g)).toBe('self-contained')
+      expect(proofClassOf('Gödel: no system proves its own consistency', g)).toBe('cited-frame')
+    })
+
+    it('a bounded domain is finite-complete (verify all); a large one is bounded-witness (sample)', () => {
+      expect(proofClassOf('the ladder has exactly four rungs — verify every one', g)).toBe('finite-complete')
+      expect(proofClassOf('the corpus balance holds on a representative sample', g)).toBe('bounded-witness')
+    })
+
+    it('an ordinary reduction is composed; the census sums to the graph size', () => {
+      expect(proofClassOf('a lead grounding through other theorems', g)).toBe('composed')
+      const census = proofClassCensus(g)
+      const total = Object.values(census).reduce((s, n) => s + n, 0)
+      expect(total).toBe(g.length)
+    })
+
+    it('the real DECODED corpus classifies every theorem — no strategy is empty of examples where it applies', () => {
+      const census = proofClassCensus(DECODED)
+      expect(Object.values(census).reduce((s, n) => s + n, 0)).toBe(DECODED.length)
+      expect(census['self-contained'] + census['cited-frame']).toBeGreaterThan(0) // the bases
+      expect(census['bounded-witness'] + census['finite-complete'] + census.composed).toBeGreaterThan(0) // the leads
     })
   })
 })
