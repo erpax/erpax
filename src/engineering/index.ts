@@ -40,8 +40,8 @@ export const QUALITY_ENFORCEMENT: ReadonlyArray<{
   { concern: 'naming', clause: '§5.6', gate: 'law/folder', why: 'one generic lowercase word per atom — the folder-law gate' },
   { concern: 'time-behaviour', clause: '§5.2', gate: 'timeout', why: 'the measured timeout ladder bounds every lane' },
   { concern: 'functional-completeness', clause: '§5.1', gate: 'law/folder', why: 'the SKILL·index·test trinity is the completeness gate' },
-  { concern: 'interaction-capability', clause: '§5.4', gate: null, why: 'admin/UX conformance is cited but not yet gated — a solution to reverse-engineer' },
-  { concern: 'compatibility', clause: '§5.3', gate: null, why: 'API/plugin interop is cited but not yet gated — a solution to reverse-engineer' },
+  { concern: 'interaction-capability', clause: '§5.4', gate: 'rules/ask', why: 'user-error-protection + operability: a required field with nothing computed makes the user type a derivable value — rules/ask computes it so they only confirm' },
+  { concern: 'compatibility', clause: '§5.3', gate: null, why: 'API/plugin co-existence + interoperability is cited but not yet gated — a solution to reverse-engineer' },
 ]
 
 export interface EngineeringCitation {

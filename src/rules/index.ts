@@ -183,7 +183,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   // reverse-engineered into a gate, and fails closed if a new ungated concern is added.
   const engGaps = engineeringConformance(cwd).reverseEngineer.length
   const engineeringSeal = seal([
-    guardian({ axis: 'engineering', violations: engGaps, baseline: 2 }),
+    guardian({ axis: 'engineering', violations: engGaps, baseline: 1 }),
   ])
   const provenSeal = seal([
     guardian({

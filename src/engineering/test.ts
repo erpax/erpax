@@ -21,8 +21,8 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
     writeFileSync(join(a, 'index.ts'), '/** @standard ISO/IEC 25010:2023 §5.6.2 modularity */\nexport const a = 1\n')
     const b = join(dir, 'src', 'beta')
     mkdirSync(b, { recursive: true })
-    // an atom citing an UNENFORCED concern (§5.4 interaction-capability → no gate)
-    writeFileSync(join(b, 'index.ts'), '/** @standard ISO/IEC 25010:2023 §5.4 interaction */\nexport const b = 1\n')
+    // an atom citing an UNENFORCED concern (§5.3 compatibility → no gate yet)
+    writeFileSync(join(b, 'index.ts'), '/** @standard ISO/IEC 25010:2023 §5.3 compatibility */\nexport const b = 1\n')
     return dir
   }
 
@@ -30,10 +30,11 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
     const modularity = QUALITY_ENFORCEMENT.find((q) => q.concern === 'modularity')
     expect(modularity?.gate).toBe('rules/cycle')
     expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'testability')?.gate).toBe('rules/refutable')
-    // the reverse-engineer list is exactly the null-gate concerns
+    // interaction-capability was reverse-engineered into rules/ask this wave
+    expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'interaction-capability')?.gate).toBe('rules/ask')
+    // compatibility is the one remaining reverse-engineering target
     const ungated = QUALITY_ENFORCEMENT.filter((q) => q.gate === null).map((q) => q.concern)
-    expect(ungated).toContain('interaction-capability')
-    expect(ungated).toContain('compatibility')
+    expect(ungated).toEqual(['compatibility'])
   })
 
   it('citations are COMPUTED from source and marked enforced iff their clause has a gate', () => {
@@ -41,9 +42,9 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
     try {
       const cites = engineeringCitations(cwd)
       const modul = cites.find((c) => c.clause === '§5.6.2')
-      const inter = cites.find((c) => c.clause === '§5.4')
+      const compat = cites.find((c) => c.clause === '§5.3')
       expect(modul?.enforced).toBe(true) // §5.6.2 is gate-enforced
-      expect(inter?.enforced).toBe(false) // §5.4 is cited but ungated
+      expect(compat?.enforced).toBe(false) // §5.3 compatibility is cited but ungated
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
@@ -55,7 +56,7 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
       const c = engineeringConformance(cwd)
       expect(c.enforced).toBeLessThan(c.concerns) // not everything is gated yet
       expect(c.reverseEngineer.length).toBe(QUALITY_ENFORCEMENT.filter((q) => q.gate === null).length)
-      expect(c.reverseEngineer.some((r) => r.concern === 'interaction-capability')).toBe(true)
+      expect(c.reverseEngineer.some((r) => r.concern === 'compatibility')).toBe(true)
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }

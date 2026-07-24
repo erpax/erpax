@@ -20,7 +20,7 @@ The corpus **cites** ISO/IEC 25010:2023 (the product-quality model) **207×** �
 | naming | §5.6 | [[law]]/folder |
 | functional-completeness | §5.1 | [[law]]/folder (the trinity) |
 | time-behaviour | §5.2 | [[timeout]] |
-| **interaction-capability** | §5.4 | **— no gate: reverse-engineer next** |
+| interaction-capability | §5.4 | [[rules]]/ask — a required field with nothing computed is poor user-error-protection |
 | **compatibility** | §5.3 | **— no gate: reverse-engineer next** |
 
 "Improve the standard" = move a concern from cited to gate-enforced. "Reverse-engineer into a new solution" = a concern cited with no gate is a gate waiting to be written — `engineeringConformance` computes the citation coverage and `assertEngineeringEnforced` ratchets the ungated count DOWN.
