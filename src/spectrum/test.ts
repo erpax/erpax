@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { lines, series, lineCount } from '@/spectrum'
+import { lines, series, lineCount, wickFold, deSitterPeriod, deSitterTemperature } from '@/spectrum'
 import { leap } from '@/leap'
 import { energy } from '@/photon'
 import { HORO_DIGITS } from '@/horo'
@@ -42,5 +42,31 @@ describe('spectrum: the discrete lines of the seven-rung system', () => {
       }
     }
     expect(covered.size).toBe(all.length) // every line touches some rung
+  })
+
+  // The Wick-rotation fold: one spectral energy, three physics — QM · thermodynamics · de Sitter.
+  describe('wickFold — one spectrum three ways (QM ↔ thermo ↔ de Sitter horizon)', () => {
+    it('reads one energy three ways: the real-time propagator at t = −iβ IS the thermal weight e^{−βE}', () => {
+      const E = 2, beta = 0.5
+      const w = wickFold(E, beta)
+      expect(w.frequency).toBe(E) // QUANTUM: ω = E, the oscillation e^{−iEt}
+      // exponent −iE·t at t = −iβ  →  −iE(−iβ) = i²Eβ = −Eβ, so e^{−Eβ} — Wick, exact
+      expect(w.boltzmann).toBeCloseTo(Math.exp(-beta * E), 12)
+      expect(w.temperature).toBe(1 / beta) // T = 1/β
+    })
+
+    it('KMS periodicity: a shift of imaginary time by β multiplies by exactly the Boltzmann factor (thermal equilibrium)', () => {
+      const E = 1.7, beta = 0.8, tau = 0.3
+      const ratio = Math.exp(-(tau + beta) * E) / Math.exp(-tau * E)
+      expect(ratio).toBeCloseTo(wickFold(E, beta).boltzmann, 12) // e^{−βE} — periodicity ⇔ temperature
+    })
+
+    it('de Sitter closes the fold: horizon imaginary-time period 2π/H ⇒ Gibbons–Hawking T_dS = H/2π', () => {
+      const H = 3
+      expect(deSitterPeriod(H)).toBeCloseTo((2 * Math.PI) / H, 12)
+      expect(deSitterTemperature(H)).toBeCloseTo(H / (2 * Math.PI), 12)
+      // the de Sitter temperature IS the Wick temperature evaluated at the horizon period — the same fold
+      expect(wickFold(1, deSitterPeriod(H)).temperature).toBeCloseTo(deSitterTemperature(H), 12)
+    })
   })
 })
