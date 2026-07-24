@@ -9,6 +9,8 @@ import {
   rankGapsByEntanglement,
   nextMoveByLeverage,
   improveByExperience,
+  verificationValue,
+  rankVerifications,
   learnSciencesOnTheWay,
   __resetIntelligenceReceiptHeadForTests,
   type LeveragedNext,
@@ -38,6 +40,22 @@ describe('agent/intelligence', () => {
     const steps = learnSciencesOnTheWay(['fold', 'entropy'])
     expect(steps.some((s) => s.science === 'fold')).toBe(true)
     expect(steps[0]?.module).toMatch(/^@\//)
+  })
+
+  it('verificationValue: a cheap check of a widely-relied premise is the highest-ROI move (the discovery pattern)', () => {
+    // this session's real example: "run the gate" (60 moves rest on it, 5-min check) vs "build an atom" (nothing rests on it)
+    const runGate = verificationValue('push blocked by accounting-wave', 60, 5)
+    const buildAtom = verificationValue('another theorem helps', 0, 30)
+    expect(runGate.value).toBeGreaterThan(buildAtom.value) // measure the premise beats building on it
+    // ranking: the widely-relied, cheap-to-check premise comes first
+    const ranked = rankVerifications([
+      { premise: 'narrow-and-costly', reliance: 3, checkCost: 40 },
+      { premise: 'wide-and-cheap', reliance: 60, checkCost: 1 },
+      { premise: 'wide-but-costly', reliance: 60, checkCost: 30 },
+    ])
+    expect(ranked[0]!.premise).toBe('wide-and-cheap')
+    // a free-ish check of a huge-reliance premise dwarfs a fix — that is why running the gate beat 30 atoms
+    expect(ranked[0]!.value).toBeGreaterThan(ranked[1]!.value)
   })
 
   it('improveByExperience reweights the next move by history — a dead root sinks, a proven folder rises', () => {

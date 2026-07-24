@@ -241,6 +241,40 @@ export function improveByExperience(
     .sort((a, b) => (b.weighted - a.weighted) || a.root.localeCompare(b.root))
 }
 
+export interface VerificationMove {
+  /** the load-bearing assumption to check */
+  readonly premise: string
+  /** how many moves/atoms rest on it — the blast radius if it is false */
+  readonly reliance: number
+  /** cost of the CHEAPEST measurement that could disconfirm it (> 0) */
+  readonly checkCost: number
+  /** expected ROI of checking = reliance / checkCost — cheap check of a widely-relied premise ranks highest */
+  readonly value: number
+}
+
+/**
+ * IMPROVE INTELLIGENCE — a new term in the leverage function, learned from how this corpus's biggest
+ * discoveries were made. Every one was a DISCONFIRMATION of a held premise, found by a cheap measurement
+ * (running the gate, listing the process table, grouping the data) — not by building. nextMoveByLeverage
+ * ranks by gaps COLLAPSED, so it never proposes the highest-ROI move there is: a cheap check of an
+ * assumption the whole plan rests on, which either confirms for nearly free or disconfirms hugely. A false
+ * premise is a crack ([[resonance]] crackLeak) that bleeds every move built on it — so verifying it is
+ * worth reliance × (1/cost). When that value beats the top fix, MEASURE THE PREMISE before building on it.
+ */
+export function verificationValue(premise: string, reliance: number, checkCost: number): VerificationMove {
+  const cost = Math.max(1e-9, checkCost)
+  return { premise, reliance, checkCost: cost, value: reliance / cost }
+}
+
+/** Rank premises to check: the widely-relied, cheap-to-measure one is the next move, ahead of any fix. */
+export function rankVerifications(
+  moves: readonly { readonly premise: string; readonly reliance: number; readonly checkCost: number }[],
+): VerificationMove[] {
+  return moves
+    .map((m) => verificationValue(m.premise, m.reliance, m.checkCost))
+    .sort((a, b) => b.value - a.value || a.premise.localeCompare(b.premise))
+}
+
 /** Pure metric: scoped violation count × bond-degree fold (interact64); no literary labels. */
 export function quantumIntelligenceOf(scope: string, cwd = process.cwd()): number {
   const fold = doubleFold(scope)
