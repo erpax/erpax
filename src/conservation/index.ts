@@ -68,6 +68,36 @@ export const NOETHER: Readonly<Record<string, string>> = Object.freeze({
   'phase': 'charge',
 })
 
+export interface PyramidLevel {
+  readonly level: 'biology' | 'chemistry' | 'physics' | 'accounting'
+  /** what is conserved at this scale */
+  readonly quantity: string
+  /** signed flows across the boundary — inputs +, outputs −; conserved ⇔ they sum to 0 */
+  readonly flows: readonly number[]
+}
+
+/**
+ * The algebra-based trinity pyramid: biology decoded to its boundary conditions inverts DOWN to
+ * chemistry and physics, and every level is the SAME algebra — netFlow = 0, Σin = Σout. Not metaphor;
+ * each row is a real balance. Biology (metabolic mass balance) rests on chemistry (atom balance in a
+ * reaction) rests on physics (energy conservation, Noether) — and all of it IS erpax's double-entry
+ * (Σdebit = Σcredit). The pyramid's apex and base meet: the ledger is the universal conservation law.
+ */
+export const CONSERVATION_PYRAMID: readonly PyramidLevel[] = [
+  { level: 'biology', quantity: 'mass (g/mol) — C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O', flows: [+180, +192, -264, -108] },
+  { level: 'chemistry', quantity: 'H atoms — 2H₂ + O₂ → 2H₂O', flows: [+4, -4] },
+  { level: 'physics', quantity: 'energy (J) — elastic collision', flows: [+10, -10] },
+  { level: 'accounting', quantity: 'value — Σdebit = Σcredit', flows: [+100, -100] },
+]
+
+/** Every level of the pyramid conserves by the SAME algebra (netFlow = 0) — biology to accounting. */
+export function pyramidConserves(): Array<{ readonly level: string; readonly net: number; readonly conserves: boolean }> {
+  return CONSERVATION_PYRAMID.map((l) => {
+    const net = netFlow([...l.flows])
+    return { level: l.level, net, conserves: net === 0 }
+  })
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const ledger: Entry[] = [
     { debit: 100, credit: 60 },

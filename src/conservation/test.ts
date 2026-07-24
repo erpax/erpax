@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { trialBalance, conserves, netFlow, boundaryConserves, NOETHER } from '@/conservation'
+import { trialBalance, conserves, netFlow, boundaryConserves, NOETHER, CONSERVATION_PYRAMID, pyramidConserves } from '@/conservation'
 import type { Entry } from '@/conservation'
 
 // conservation computed as pure math — asserts RELATIONS and IDENTITIES.
@@ -71,5 +71,25 @@ describe('conservation: double-entry = physical conservation (Pacioli 1494 / Noe
     const original = NOETHER[key]
     try { (NOETHER as Record<string, string>)[key] = 'mutated' } catch { /* frozen */ }
     expect(NOETHER[key]).toBe(original)
+  })
+
+  // the algebra-based trinity pyramid: biology → chemistry → physics, one conservation algebra
+  it('every scale of the pyramid conserves by the SAME algebra — netFlow = 0, biology to accounting', () => {
+    const rows = pyramidConserves()
+    expect(rows.map((r) => r.level)).toEqual(['biology', 'chemistry', 'physics', 'accounting'])
+    // each level balances: Σin = Σout, net 0 — proven, not asserted
+    for (const r of rows) expect(r.net).toBe(0)
+    expect(rows.every((r) => r.conserves)).toBe(true)
+  })
+
+  it('the pyramid rows are REAL balances, not metaphor — the same netFlow that checks the ledger', () => {
+    const bio = CONSERVATION_PYRAMID.find((l) => l.level === 'biology')!
+    // C₆H₁₂O₆(180) + 6O₂(192) → 6CO₂(264) + 6H₂O(108): 372 in, 372 out
+    expect(netFlow([...bio.flows])).toBe(0)
+    const chem = CONSERVATION_PYRAMID.find((l) => l.level === 'chemistry')!
+    expect(netFlow([...chem.flows])).toBe(0) // 4 H in, 4 H out
+    // the accounting row IS double-entry — the same conserves() that gates the ledger
+    const acct = CONSERVATION_PYRAMID.find((l) => l.level === 'accounting')!
+    expect(conserves(acct.flows.map((f) => (f >= 0 ? { debit: f, credit: 0 } : { debit: 0, credit: -f })))).toBe(true)
   })
 })
