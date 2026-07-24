@@ -2684,12 +2684,12 @@ src/tax/jurisdictions/tax/codes/index.ts:18: * @standard ISO-8601-1:2019 date-ti
 src/tax/jurisdictions/tax/returns/index.ts:4: * @standard ISO-8601-1:2019 date-time period filed-at
 src/tax/jurisdictions/tax/returns/index.ts:5: * @standard ISO-3166-1:2020 country-codes jurisdiction
 src/tax/jurisdictions/tax/returns/index.ts:6: * @standard EN-16931:2017 §BG-23 vat-breakdown
-src/tax/period/reconciliation/index.ts:15: * @standard IAS-12:2023 (income taxes)
-src/tax/period/reconciliation/index.ts:16: * @standard IFRS-16:2023 (leases — tax implications)
-src/tax/period/reconciliation/index.ts:17: * @standard OECD Transfer Pricing Guidelines:2022
-src/tax/period/reconciliation/index.ts:18: * @standard BEPS Action 13:2021 (transfer pricing documentation)
-src/tax/period/reconciliation/index.ts:19: * @standard OECD Pillar Two:2023 (global minimum tax)
-src/tax/period/reconciliation/index.ts:20: * @standard SAF-T:3.0.2 (multi-entity, multi-jurisdiction audit trail)
+src/tax/period/reconciliation/index.ts:18: * @standard IAS-12:2023 (income taxes)
+src/tax/period/reconciliation/index.ts:19: * @standard IFRS-16:2023 (leases — tax implications)
+src/tax/period/reconciliation/index.ts:20: * @standard OECD Transfer Pricing Guidelines:2022
+src/tax/period/reconciliation/index.ts:21: * @standard BEPS Action 13:2021 (transfer pricing documentation)
+src/tax/period/reconciliation/index.ts:22: * @standard OECD Pillar Two:2023 (global minimum tax)
+src/tax/period/reconciliation/index.ts:23: * @standard SAF-T:3.0.2 (multi-entity, multi-jurisdiction audit trail)
 src/taxing/jurisdictions/entity/legal/structures/index.ts:5: * @standard ISO-17442-1:2020 legal-entity-identifier
 src/taxing/jurisdictions/index.ts:4: * @standard ISO-3166-1:2020 country-codes
 src/taxing/jurisdictions/index.ts:5: * @standard OECD tax-jurisdiction

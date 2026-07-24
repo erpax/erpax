@@ -1,6 +1,9 @@
 /**
  * TaxPeriodReconciliation Service
  *
+ * The tax↔fiscal alignment and transfer-pricing documentation @invariants are now PROVEN beside this
+ * code (test.ts) — each refutable with a real tolerance, not a bare assertion (rules/refutable).
+ *
  * Validates tax period closing: alignment of tax periods with fiscal periods,
  * transfer pricing adjustments across jurisdictions, tax authority compliance,
  * and tax-specific elimination entry preparation.
