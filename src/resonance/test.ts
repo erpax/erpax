@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { resonanceMagnitude, dedupMagnitude, linkProof } from './index'
+import { resonanceMagnitude, dedupMagnitude, linkProof, crackLeak } from './index'
 import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
 import { createHash } from 'node:crypto'
 
@@ -69,5 +69,18 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
     expect(linkProof(512).addressed).toBe(9)
     // unbounded: larger N ⇒ larger ratio N/log₂N
     expect(linkProof(1_000_000).ratio).toBeGreaterThan(linkProof(442).ratio)
+  })
+
+  it('crackLeak: complete fusion leaks zero; every unfused crack bleeds N − ⌈log₂N⌉', () => {
+    const n = 442
+    // complete fusion — no cracks, no leak
+    expect(crackLeak(n, 0).leak).toBe(0)
+    // one crack re-derives (442) instead of following the link (9) — leaks the difference
+    expect(crackLeak(n, 1).leakPerCrack).toBe(442 - 9)
+    expect(crackLeak(n, 1).fusedCost).toBe(9) // ⌈log₂442⌉ — the link-proof cost
+    expect(crackLeak(n, 1).unfusedCost).toBe(442) // the re-derivation cost
+    // leak scales with cracks; the recall fusion saves IS the leak a crack bleeds (inverse of linkProof)
+    expect(crackLeak(n, 3).leak).toBe(3 * (442 - 9))
+    expect(crackLeak(n, 1).leakPerCrack).toBe(linkProof(n).n - linkProof(n).addressed)
   })
 })

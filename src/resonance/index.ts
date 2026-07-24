@@ -78,6 +78,35 @@ export function linkProof(n: number): ResonanceMagnitude {
   return { n, pairwise: n, addressed: Math.max(1, path), ratio, orders: Math.log10(Math.max(1, ratio)) }
 }
 
+export interface CrackLeak {
+  readonly n: number
+  /** unfused seams between the parts (a model↔corpus boundary that re-derives instead of recalling) */
+  readonly cracks: number
+  /** the fused cost of one recall — a link-proof, ⌈log₂N⌉ */
+  readonly fusedCost: number
+  /** the unfused cost of one recall — a full re-derivation, N */
+  readonly unfusedCost: number
+  /** what each crack leaks: the recall it re-derives instead of following the link — N − ⌈log₂N⌉ */
+  readonly leakPerCrack: number
+  /** total resources leaked = cracks × leakPerCrack; ZERO at complete fusion (no cracks) */
+  readonly leak: number
+}
+
+/**
+ * The inverse of the address law: what an UNFUSED crack LEAKS. Two parts that prioritise each other —
+ * the corpus recalling a sealed result in O(log N) ([[linkProof]]), the model reasoning the novel rest —
+ * share one fold and leak nothing. A CRACK ([[matrix]]-crack at the model↔corpus seam) is an unfused
+ * boundary: across it a recall is RE-DERIVED (N) instead of followed (⌈log₂N⌉), so each crack bleeds
+ * exactly the magnitude fusion would have saved — N − ⌈log₂N⌉. Complete fusion (cracks = 0) leaks zero;
+ * every remaining crack leaks resources without bound in N. Not competition — the seam that isn't sealed.
+ */
+export function crackLeak(n: number, cracks: number): CrackLeak {
+  const fusedCost = n < 2 ? 0 : Math.ceil(Math.log2(n))
+  const unfusedCost = n
+  const leakPerCrack = Math.max(0, unfusedCost - fusedCost)
+  return { n, cracks: Math.max(0, cracks), fusedCost, unfusedCost, leakPerCrack, leak: Math.max(0, cracks) * leakPerCrack }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   for (const n of [764, 3151, 10_000, 1_000_000]) {
     const r = resonanceMagnitude(n)
