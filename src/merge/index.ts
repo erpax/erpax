@@ -109,6 +109,28 @@ export function foldToRoot(elements: readonly string[]): string {
   return level[0]!
 }
 
+export interface CollisionClasses {
+  readonly total: number
+  /** distinct content-addresses — the number of CLASSES the bodies collapse to */
+  readonly distinct: number
+  /** 1 − distinct/total: 0 = all unique (prose, the incompressible floor), → 1 = all collide (computed) */
+  readonly dedup: number
+}
+
+/**
+ * Prose blocks collision. A unique paragraph shares its content-address with nothing, so N prose bodies
+ * fold to N distinct addresses — dedup 0, the incompressible floor. Terse COMPUTED facet-joins collide to
+ * ONE address where meaning is shared — that IS the dedup. distinct/total → 1 is prose (no fold), → 0 is
+ * fully computed (all collapse); corpus compression is exactly 1 − distinct/total, and it is 0 on prose BY
+ * CONSTRUCTION — which is why the 2184 prose atoms never folded while the 231 computed ones did, and why
+ * the fold's floor is the seed. Terse, so this rule collides with itself.
+ */
+export function collisionClasses(bodies: readonly string[]): CollisionClasses {
+  const seen = new Set(bodies.map((b) => toUuid(Buffer.from(b, 'utf8'))))
+  const total = bodies.length
+  return { total, distinct: seen.size, dedup: total ? 1 - seen.size / total : 0 }
+}
+
 /** The bottom ⊥ of the folded algebra — the address of the void; the "absent / no valid path" element. */
 export const BOTTOM: string = toUuid(Buffer.from('', 'utf8'))
 

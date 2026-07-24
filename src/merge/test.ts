@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof, chainLeaf, canonical } from './index'
+import { merge, foldToRoot, atomPath, BOTTOM, merkleProof, verifyMerkleProof, chainLeaf, canonical, collisionClasses } from './index'
 
 describe('merge — the binary operation of the folded algebra', () => {
   it('same content ⇒ same address (the self-address congruence — dedup by physics, not registry)', () => {
@@ -108,6 +108,29 @@ describe('merge — the inclusion proof (total membership; the one-way wall reso
     it('content still decides — a different value is a different address', () => {
       expect(chainLeaf({ a: 1 })).not.toBe(chainLeaf({ a: 2 }))
       expect(chainLeaf({ a: 1 })).not.toBe(chainLeaf({ b: 1 }))
+    })
+  })
+
+  // Prose blocks collision; terse computed facet-joins collide — the fold's floor, encoded.
+  describe('collisionClasses — prose never dedups (floor), computed collapses (dedup)', () => {
+    it('unique prose folds to N distinct addresses — dedup 0, the incompressible floor', () => {
+      const prose = ['The invoice was posted on Tuesday.', 'A vendor bank account changed.', 'The audit found nothing.']
+      const c = collisionClasses(prose)
+      expect(c.distinct).toBe(3) // every unique paragraph is its own address
+      expect(c.dedup).toBe(0) // prose blocks the collision — nothing folds
+    })
+
+    it('terse computed facet-joins collide where meaning is shared — dedup > 0', () => {
+      // same computed body ⇒ same content-address ⇒ one class (the collision that IS the fold)
+      const computed = ['path=a uuid=1', 'path=a uuid=1', 'path=b uuid=2']
+      const c = collisionClasses(computed)
+      expect(c.distinct).toBe(2) // two classes for three bodies
+      expect(c.dedup).toBeCloseTo(1 / 3) // a third collapses
+    })
+
+    it('all-identical computed output collapses to one — dedup → 1; empty is 0', () => {
+      expect(collisionClasses(['x', 'x', 'x', 'x']).dedup).toBe(0.75) // 1 of 4 classes
+      expect(collisionClasses([]).dedup).toBe(0)
     })
   })
 })
