@@ -20,6 +20,7 @@ import { folderGuardians, computedBaseline } from '@/law/folder'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
 import { matrixCrackViolations } from '@/matrix'
 import { linearGapCount, linearLogicCount } from '@/quantum'
+import { engineeringConformance } from '@/engineering'
 import { computeRulesOf, type RulesSnapshot } from './compute-rules'
 
 export {
@@ -177,6 +178,13 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   const waveGapSeal = seal([
     guardian({ axis: 'accounting-wave', violations: waveGaps.count, baseline: 0 }),
   ])
+  // engineering — ISO/IEC 25010 quality concerns cited with NO enforcing gate ([[engineering]]). The
+  // ungated count is declared (O(1)), so it is safe in the hot path; it ratchets DOWN as each concern is
+  // reverse-engineered into a gate, and fails closed if a new ungated concern is added.
+  const engGaps = engineeringConformance(cwd).reverseEngineer.length
+  const engineeringSeal = seal([
+    guardian({ axis: 'engineering', violations: engGaps, baseline: 2 }),
+  ])
   const provenSeal = seal([
     guardian({
       axis: 'linear-gap',
@@ -197,6 +205,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     ...crackSeal.guardians,
     ...bypassSeal.guardians,
     ...waveGapSeal.guardians,
+    ...engineeringSeal.guardians,
     ...provenSeal.guardians,
   ])
   return { ...combined, snapshot }

@@ -62,6 +62,7 @@ The canonical home for every **live-tree law** the corpus enforces. Ratchet gate
 | `refutable` | [[rules]]/refutable | an `@invariant` with no proof beside it — unfalsifiable, so it forbids nothing; `tsx src/rules/refutable/index.ts` |
 | `cycle` | [[rules]]/cycle | an import loop decides init order — 6 tangles, largest **225 files**, 36 fatal top-level uses; edges PARSED not matched; `tsx src/rules/cycle/index.ts` |
 | `audience` | [[rules]]/audience | an unproven claim facing the reader who SIGNS it (director · auditor · compliance-officer …) — **224 across 7 readers**; `tsx src/rules/audience/index.ts` |
+| `engineering` | [[engineering]] | ISO/IEC 25010 quality concern cited with NO enforcing gate — reverse-engineer each into a gate; the ungated count ratchets to zero (wired into `assertRulesHold`, baseline 2); `tsx src/engineering/index.ts` |
 | `load` | [[run]]/load | **does the app boot at all** — it NOW DOES (`load — OK · 231 collections`); the `tool-defs → collections` edge was cut, init order changed, SCC still 225 (entangled ≠ fatal); `tsx src/run/load/index.ts` |
 
 Run: `pnpm rules:check` · `tsx src/rules/index.ts --accounting-only`
