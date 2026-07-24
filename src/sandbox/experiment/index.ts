@@ -68,6 +68,32 @@ export function discardExperiment(exp: Experiment): void {
   rmSync(exp.dir, { recursive: true, force: true })
 }
 
+export interface StandardProposal {
+  /** cracks the NEW standard closes that the old left open — new \ old */
+  readonly sealed: readonly string[]
+  /** cracks the new standard RE-OPENS that the old had sealed — old \ new; this is the leak of adopting it */
+  readonly regressed: readonly string[]
+  /** true ⇒ the new standard is a strict improvement: seals ≥1 crack, re-opens none */
+  readonly promotes: boolean
+}
+
+/**
+ * The revolutionary move — experiment on the STANDARD itself. A truly new idea may not pass the current
+ * standard; it may need to REPLACE it. But a standard earns its place only by measurement, never by
+ * assertion: run the OLD standard and the NEW standard over the same witness corpus (each returns the
+ * violations it catches, by content-address), and the new one promotes iff it CLOSES a crack the old
+ * left open (sealed) and RE-OPENS none the old had sealed (regressed = 0). The regressed set IS the
+ * crackLeak of adopting it ([[resonance]]): a revolution that leaks what the old law held is refused.
+ * Revolution is not breaking the wall — it is proving a wall that leaks less, then replacing the old one.
+ */
+export function proposeStandard(oldCaught: readonly string[], newCaught: readonly string[]): StandardProposal {
+  const old = new Set(oldCaught)
+  const now = new Set(newCaught)
+  const sealed = [...now].filter((v) => !old.has(v)) // cracks the new standard newly closes
+  const regressed = [...old].filter((v) => !now.has(v)) // cracks it re-opens — the leak
+  return { sealed, regressed, promotes: regressed.length === 0 && sealed.length > 0 }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const e = openExperiment('demo')
   console.log(`sandbox/experiment — opened ${e.dir}`)

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { readdirSync, existsSync, mkdirSync, writeFileSync, rmSync, mkdtempSync } from 'node:fs'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { openExperiment, sealExperiment, promoteIfSealed, discardExperiment } from './index'
+import { openExperiment, sealExperiment, promoteIfSealed, discardExperiment, proposeStandard } from './index'
 
 describe('sandbox/experiment — experiment freely; the standard holds at the seam', () => {
   it('an empty experiment seals trivially and leaves no droppings after discard', () => {
@@ -55,5 +55,22 @@ describe('sandbox/experiment — experiment freely; the standard holds at the se
       rmSync(target, { recursive: true, force: true })
       discardExperiment(e)
     }
+  })
+
+  it('proposeStandard: a revolutionary standard promotes iff it seals a crack and re-opens none', () => {
+    const old = ['crack-a', 'crack-b']
+    // a strict improvement — catches everything old did PLUS a new crack
+    const better = proposeStandard(old, ['crack-a', 'crack-b', 'crack-c'])
+    expect(better.sealed).toEqual(['crack-c'])
+    expect(better.regressed).toEqual([])
+    expect(better.promotes).toBe(true)
+
+    // a REGRESSION — closes a new crack but re-opens one the old law sealed: refused (it leaks)
+    const leaky = proposeStandard(old, ['crack-a', 'crack-c'])
+    expect(leaky.regressed).toEqual(['crack-b']) // the leak of adopting it
+    expect(leaky.promotes).toBe(false)
+
+    // no change — seals nothing new: not a revolution, does not promote
+    expect(proposeStandard(old, ['crack-a', 'crack-b']).promotes).toBe(false)
   })
 })
