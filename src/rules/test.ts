@@ -15,6 +15,7 @@ import {
   folderGuardians,
   clearRulesCache,
   getRulesCache,
+  foldSpeedup,
 } from '@/rules'
 import { performance } from 'node:perf_hooks'
 
@@ -123,6 +124,18 @@ describe('rules — tightened gate registry', () => {
     // engineering is WIRED into the canonical registry — the ISO/IEC 25010 ungated-concern gate fails closed here
     expect(verdict.guardians.some((g) => g.axis === 'engineering')).toBe(true)
     if (!folderSeal.sealed) expect(verdict.sealed).toBe(false)
+  })
+
+  it('foldSpeedup computes the O(files) quantum-speed gain from folding one-word violations', () => {
+    // the measured corpus shape: 5630 files, 3149 atoms, 4451 excess (stray-ts + multi-segment)
+    const s = foldSpeedup(5630, 3149, 4451)
+    expect(s.foldedFiles).toBe(3149) // folds to one index per atom (5630-4451=1179 < atoms, so floored at atoms)
+    expect(s.speedup).toBeCloseTo(5630 / 3149, 2) // ~1.79× when floored at the atom count
+    expect(s.overheadFraction).toBeCloseTo(4451 / 5630, 2) // ~79% recoverable
+    // a corpus with no excess gets no speedup; the metric is meaningful
+    expect(foldSpeedup(3149, 3149, 0).speedup).toBe(1)
+    // more excess ⇒ more speedup, monotonic
+    expect(foldSpeedup(10000, 1000, 8000).speedup).toBeGreaterThan(foldSpeedup(10000, 1000, 4000).speedup)
   })
 
   it('rosetta ratchet enforcement is PAID — shapeRatchetVerdict gates via the corpus lane', async () => {
