@@ -1159,9 +1159,48 @@ export function collectImpuritySignals(
 }
 
 /** Build the unified typography graph once per readme materialize pass. */
+/**
+ * Cheap corpus fingerprint for the corpus-context memos: atom count + newest src mtime. An unchanged
+ * tree fingerprints identically (cache hit); any edit bumps the mtime and re-derives. Same law as
+ * skill-context.compactRulesSnapshot — REUSE the whole-corpus scan, never re-run it per caller.
+ */
+function corpusScanFingerprint(cwd: string): string {
+  let newest = 0
+  let count = 0
+  const walk = (dir: string): void => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || e.name === 'node_modules' || e.name === 'skills') continue
+      const p = join(dir, e.name)
+      if (e.isDirectory()) walk(p)
+      else if (/\.(ts|tsx|md)$/.test(e.name)) {
+        count++
+        const m = lstatSync(p).mtimeMs
+        if (m > newest) newest = m
+      }
+    }
+  }
+  walk(join(cwd, SRC))
+  return `${count}:${Math.round(newest)}`
+}
+
+let typographyGraphMemo: { cwd: string; fp: string; graph: AnalysisTypographyGraph } | null = null
+
+/** The whole-corpus typography graph — memoised by fingerprint, so N callers pay ONE scan, not N. */
 export function buildReadmeTypographyGraph(cwd: string = process.cwd()): AnalysisTypographyGraph {
+  const fp = corpusScanFingerprint(cwd)
+  if (typographyGraphMemo && typographyGraphMemo.cwd === cwd && typographyGraphMemo.fp === fp) {
+    return typographyGraphMemo.graph
+  }
   const ctx = buildFolderReadmeContext(join(cwd, SRC))
-  return buildAnalysisTypographyGraph(loadSkillPages(cwd), collectImpuritySignals(cwd, ctx))
+  const graph = buildAnalysisTypographyGraph(loadSkillPages(cwd), collectImpuritySignals(cwd, ctx))
+  typographyGraphMemo = { cwd, fp, graph }
+  return graph
 }
 
 /** Build link resolver + fold ledger once per corpus scan. */
@@ -1181,9 +1220,28 @@ export function buildFolderReadmeContext(srcRoot: string): FolderReadmeContext {
   return { resolver, folded: foldedPathSet() }
 }
 
-/** Folder context + wrangler bindings + standards index (one corpus scan). */
+let corpusContextMemo: { cwd: string; fp: string; ctx: FolderReadmeContext } | null = null
+
+/** Folder context + wrangler bindings + standards index (one corpus scan). Memoised by fingerprint
+ * when called with default opts — the common path 8 corpus-proof suites share; explicit opts bypass. */
 export function buildReadmeCorpusContext(
   cwd: string = process.cwd(),
+  opts?: ReadmeCorpusContextOpts,
+): FolderReadmeContext {
+  if (!opts) {
+    const fp = corpusScanFingerprint(cwd)
+    if (corpusContextMemo && corpusContextMemo.cwd === cwd && corpusContextMemo.fp === fp) {
+      return corpusContextMemo.ctx
+    }
+    const ctx = buildReadmeCorpusContextUncached(cwd)
+    corpusContextMemo = { cwd, fp, ctx }
+    return ctx
+  }
+  return buildReadmeCorpusContextUncached(cwd, opts)
+}
+
+function buildReadmeCorpusContextUncached(
+  cwd: string,
   opts?: ReadmeCorpusContextOpts,
 ): FolderReadmeContext {
   const srcRoot = join(cwd, SRC)
