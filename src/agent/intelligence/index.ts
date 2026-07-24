@@ -290,7 +290,15 @@ export function selfImproveCycle(opts: SelfImproveCycleOpts = {}): SelfImproveCy
   }
 
   const before = measureIntelligenceAxes(cwd, axes)
-  const rankedRaw = rankGapsByEntanglement(cwd, batch)
+  // Spend the batch on the FUSE, not on scatter: order gaps by their root's leverage (the root the
+  // most gaps collapse onto) so a bounded wave fixes the highest-leverage cause first — the cycle now
+  // ACTS on what nextMoveByLeverage computes, instead of deferring the "which first?" to a human.
+  const leverageRank = new Map<string, number>()
+  for (const m of nextMoveByLeverage(cwd, Math.max(batch * 4, 50))) leverageRank.set(m.root, m.leverage)
+  const rootOf = (p: string): string => p.split('/')[0] ?? p
+  const rankedRaw = rankGapsByEntanglement(cwd, batch * 4)
+    .sort((a, b) => (leverageRank.get(rootOf(b.path)) ?? 0) - (leverageRank.get(rootOf(a.path)) ?? 0))
+    .slice(0, batch)
   const secured = parseWithSecurity(JSON.stringify(rankedRaw), 'corpus:local', (r) =>
     JSON.parse(r) as RankedIntelligenceGap[],
   )
