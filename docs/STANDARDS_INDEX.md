@@ -2761,6 +2761,7 @@ src/testing/test/seed/factory/index.ts:56: * @standard ISO/IEC-29119:2022 softwa
 src/testing/test/seed/factory/index.ts:723:   * @standard ISO/IEC-29119:2022 software-testing test-fixture
 src/testing/test/setup/index.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/test/setup/index.ts:6: * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation
+src/testing/witness/index.ts:12: * @standard ISO/IEC 25010:2023 §5.5 testability — a bounded witness is exhaustively checkable
 src/text/index.ts:13: * @standard RFC 8785 JCS + RFC 9562 §5.8 content-uuid
 src/think/index.ts:26: * @standard content-addressed memoization — the thought's address is the fold of its key ([[merge]])
 src/topology/torus.ts:49: * @standard Topology — torus / closed manifold (Hatcher 2002)
@@ -6188,6 +6189,7 @@ src/testing/test/seed/factory/index.ts:18: * @audit ISO-19011:2018 audit-trail s
 src/testing/test/seed/factory/index.ts:38: * @audit ISO-19011:2018 audit-trail seed-validation
 src/testing/test/seed/factory/index.ts:57: * @audit ISO-19011:2018 audit-trail seed-evidence-traceability
 src/testing/test/setup/index.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
+src/testing/witness/index.ts:13: * @audit ceccec.psg.bg/theorems — bounded-witness (55 papers) · finite-complete (410 papers)
 src/throat/index.ts:14: * @audit note·colour·uuid computed from the position math, never hand-asserted
 src/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
 src/trading/api/client/index.ts:35: * @audit ISO-19011:2018 audit-trail external-system-evidence (the receipt chain)

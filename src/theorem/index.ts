@@ -313,6 +313,31 @@ export function proofClassCensus(graph: readonly Theorem[] = DECODED): Readonly<
 }
 
 /**
+ * The verification class of a TEST file — the ceccec-parity classification erpax lacked (ceccec
+ * classifies all 465 theorems; erpax classified only its 40 DECODED). Read HOW a test verifies:
+ *
+ *   · unbounded-corpus — maps a corpus-scale derivation over the WHOLE corpus with no bound
+ *     (listAtomPaths().map(deriveFolderModel), a default-cwd rulesOf, waveAccountingGapViolations,
+ *     compactRulesSnapshot) and NO boundedWitness/fixture-cwd nearby. THE RED — the ~8 hangs this
+ *     session; the fix is [[testing]]/witness.
+ *   · bounded-witness — a corpus-scale call that IS bounded (boundedWitness · .slice · a fixture cwd).
+ *   · finite-complete — exhausts a small domain (a loop over a rung/axis/ring, no corpus scan).
+ *   · unit — a plain unit test touching no corpus-scale derivation.
+ */
+export type TestProofClass = 'unbounded-corpus' | 'bounded-witness' | 'finite-complete' | 'unit'
+
+const CORPUS_SCALE = /listAtomPaths\(\)|deriveFolderModel|waveAccountingGapViolations|compactRulesSnapshot|rulesOf\(\)|scanEducateGaps|deriveCorpusAnalytics/
+const IS_BOUNDED = /boundedWitness|spreadWitness|\.slice\(0,|mkdtempSync|fixtureCwd|cwd:\s*(tmp|fixture|gapCwd)/
+const IS_FINITE_COMPLETE = /for\s*\(.*(RUNG|AXES|HORO|LADDER|rungs|positions)\)|\bforEach\b.*(ladder|ring|axes)/i
+
+export function proofClassOfTest(source: string): TestProofClass {
+  if (!CORPUS_SCALE.test(source)) {
+    return IS_FINITE_COMPLETE.test(source) ? 'finite-complete' : 'unit'
+  }
+  return IS_BOUNDED.test(source) ? 'bounded-witness' : 'unbounded-corpus'
+}
+
+/**
  * The dimension count is a SPREAD, computed as waves from four perspectives — never asserted by one mind (the
  * single-mind error I made calling it "10D"). Surface leads and distinct bases read 10; ground-signatures 8; DRY
  * foundations 7. So `9 (median) − 2 = 7`: the surface reads ~9, and passing through the fold (the 0-gate, kindred

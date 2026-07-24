@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -265,6 +265,15 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
       expect(Object.values(census).reduce((s, n) => s + n, 0)).toBe(DECODED.length)
       expect(census['self-contained'] + census['cited-frame']).toBeGreaterThan(0) // the bases
       expect(census['bounded-witness'] + census['finite-complete'] + census.composed).toBeGreaterThan(0) // the leads
+    })
+
+    // ceccec-parity: classify TESTS, not just theorems (the measured efficiency gap)
+    it('proofClassOfTest reads HOW a test verifies — the class ceccec has over its 465, erpax over its suite', () => {
+      expect(proofClassOfTest('const m = listAtomPaths().map(deriveFolderModel)')).toBe('unbounded-corpus') // the RED
+      expect(proofClassOfTest('const m = listAtomPaths().slice(0, 12).map(deriveFolderModel)')).toBe('bounded-witness')
+      expect(proofClassOfTest('const cwd = mkdtempSync(t); scanEducateGaps(cwd)')).toBe('bounded-witness') // fixture-bounded
+      expect(proofClassOfTest('for (const r of RUNG) expect(timeoutOf([r]))')).toBe('finite-complete')
+      expect(proofClassOfTest('expect(1 + 1).toBe(2)')).toBe('unit')
     })
   })
 })
