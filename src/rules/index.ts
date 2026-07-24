@@ -21,6 +21,7 @@ import { bypassMathViolations } from '@/law/folder/ratchet-compute'
 import { matrixCrackViolations } from '@/matrix'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { engineeringConformance } from '@/engineering'
+import { frameworkCollisions } from './compatibility'
 import { computeRulesOf, type RulesSnapshot } from './compute-rules'
 
 export {
@@ -178,12 +179,18 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
   const waveGapSeal = seal([
     guardian({ axis: 'accounting-wave', violations: waveGaps.count, baseline: 0 }),
   ])
-  // engineering — ISO/IEC 25010 quality concerns cited with NO enforcing gate ([[engineering]]). The
-  // ungated count is declared (O(1)), so it is safe in the hot path; it ratchets DOWN as each concern is
-  // reverse-engineered into a gate, and fails closed if a new ungated concern is added.
+  // engineering — ISO/IEC 25010 quality concerns cited with NO enforcing gate ([[engineering]]). Every
+  // characteristic is now reverse-engineered into a gate, so the baseline is 0 — a THEOREM (the standard
+  // is fully enforced), not a ratchet number: any ungated concern added later is a regression that fails.
   const engGaps = engineeringConformance(cwd).reverseEngineer.length
   const engineeringSeal = seal([
-    guardian({ axis: 'engineering', violations: engGaps, baseline: 1 }),
+    guardian({ axis: 'engineering', violations: engGaps, baseline: 0 }),
+  ])
+  // compatibility — an atom colliding with a framework router namespace ([[rules]]/compatibility, §5.3).
+  // Baseline 0 is the THEOREM (no atom may collide); currently RED at 1 (pages↔Next.js Pages Router), the
+  // real #13 co-existence break now ENFORCED as a gate, ratcheting to 0 when pages is renamed to a data slug.
+  const compatibilitySeal = seal([
+    guardian({ axis: 'compatibility', violations: frameworkCollisions(cwd).length, baseline: 0 }),
   ])
   const provenSeal = seal([
     guardian({
@@ -206,6 +213,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     ...bypassSeal.guardians,
     ...waveGapSeal.guardians,
     ...engineeringSeal.guardians,
+    ...compatibilitySeal.guardians,
     ...provenSeal.guardians,
   ])
   return { ...combined, snapshot }

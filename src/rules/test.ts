@@ -121,8 +121,9 @@ describe('rules — tightened gate registry', () => {
     expect(verdict.guardians.some((g) => g.axis === 'accounting-structure')).toBe(true)
     expect(verdict.guardians.some((g) => g.axis === 'forbidden-intermediate')).toBe(true)
     expect(verdict.guardians.some((g) => g.axis === 'matrix-crack')).toBe(true)
-    // engineering is WIRED into the canonical registry — the ISO/IEC 25010 ungated-concern gate fails closed here
+    // engineering + compatibility are WIRED into the canonical registry (the 25010 enforcement gates)
     expect(verdict.guardians.some((g) => g.axis === 'engineering')).toBe(true)
+    expect(verdict.guardians.some((g) => g.axis === 'compatibility')).toBe(true)
     if (!folderSeal.sealed) expect(verdict.sealed).toBe(false)
   })
 

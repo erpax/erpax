@@ -50,7 +50,7 @@ export const ENGINEERING_TRINITIES: ReadonlyArray<{
     concerns: [
       { concern: 'functional-suitability', clause: '§5.1', gate: 'law/folder', why: 'the SKILL·index·test trinity is the completeness gate' },
       { concern: 'interaction-capability', clause: '§5.4', gate: 'rules/ask', why: 'user-error-protection + operability: rules/ask computes a derivable field so the user only confirms' },
-      { concern: 'compatibility', clause: '§5.3', gate: null, why: 'API/plugin co-existence + interoperability is cited but not yet gated — the design task that unseals FORM' },
+      { concern: 'compatibility', clause: '§5.3', gate: 'rules/compatibility', why: 'co-existence: an atom colliding with a framework router namespace (pages↔Next.js) breaks the build — rules/compatibility gates it' },
     ],
   },
   {

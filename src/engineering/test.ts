@@ -32,11 +32,12 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
   it('the concern→gate map declares a gate per characteristic — derived from the trinities', () => {
     expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'maintainability')?.gate).toBe('rules/cycle')
     expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'reliability')?.gate).toBe('rules/refutable')
-    // interaction-capability was reverse-engineered into rules/ask
+    // interaction-capability → rules/ask; compatibility → rules/compatibility (§5.3 sealed this wave)
     expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'interaction-capability')?.gate).toBe('rules/ask')
-    // compatibility is the one remaining reverse-engineering target
+    expect(QUALITY_ENFORCEMENT.find((q) => q.concern === 'compatibility')?.gate).toBe('rules/compatibility')
+    // every characteristic is now gate-enforced — no ungated concern remains
     const ungated = QUALITY_ENFORCEMENT.filter((q) => q.gate === null).map((q) => q.concern)
-    expect(ungated).toEqual(['compatibility'])
+    expect(ungated).toEqual([])
   })
 
   it('the engineer types are organised in THREE trinities of three — form · code · proof', () => {
@@ -47,18 +48,12 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
     expect(QUALITY_ENFORCEMENT).toHaveLength(9)
   })
 
-  it('sealEngineeringTrinities seals the complete ones; the design backlog is the rest to build', () => {
+  it('sealEngineeringTrinities: all three trinities sealed once §5.3 is gated — the surface is complete', () => {
     const seals = sealEngineeringTrinities()
-    const form = seals.find((s) => s.axis === 'form')!
-    const code = seals.find((s) => s.axis === 'code')!
-    expect(code.sealed).toBe(true) // performance · reliability · security all gated
-    expect(form.sealed).toBe(false) // compatibility keeps FORM open
-    expect(form.design.map((d) => d.concern)).toEqual(['compatibility'])
-    // the design backlog is exactly the ungated characteristics — the rest to complete the quantum ERP
-    const backlog = engineeringDesignBacklog()
-    expect(backlog).toHaveLength(1)
-    expect(backlog[0]!.concern).toBe('compatibility')
-    expect(backlog[0]!.axis).toBe('form')
+    expect(seals.every((s) => s.sealed)).toBe(true) // form · code · proof all sealed
+    expect(seals.find((s) => s.axis === 'form')!.design).toEqual([]) // compatibility now gated
+    // the design backlog is empty — every standard-trinity sealed, the engineering surface complete
+    expect(engineeringDesignBacklog()).toEqual([])
   })
 
   it('citations are COMPUTED from source and marked enforced iff their clause has a gate', () => {
@@ -68,19 +63,18 @@ describe('engineering — the standards, reverse-engineered into enforcing gates
       const maint = cites.find((c) => c.clause === '§5.7')
       const compat = cites.find((c) => c.clause === '§5.3')
       expect(maint?.enforced).toBe(true) // §5.7 maintainability is gate-enforced
-      expect(compat?.enforced).toBe(false) // §5.3 compatibility is cited but ungated
+      expect(compat?.enforced).toBe(true) // §5.3 compatibility is now gated by rules/compatibility
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
   })
 
-  it('conformance names the ungated concerns as the reverse-engineer list', () => {
+  it('conformance: every characteristic is now gate-enforced — the reverse-engineer list is empty', () => {
     cwd = setup()
     try {
       const c = engineeringConformance(cwd)
-      expect(c.enforced).toBeLessThan(c.concerns) // not everything is gated yet
-      expect(c.reverseEngineer.length).toBe(QUALITY_ENFORCEMENT.filter((q) => q.gate === null).length)
-      expect(c.reverseEngineer.some((r) => r.concern === 'compatibility')).toBe(true)
+      expect(c.enforced).toBe(c.concerns) // all 9 gated
+      expect(c.reverseEngineer).toEqual([])
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }

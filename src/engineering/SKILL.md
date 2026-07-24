@@ -16,7 +16,7 @@ The nine ISO/IEC 25010 characteristics are organised in **three trinities** on t
 | --- | --- | --- | --- |
 | **form** — what the system presents | functional-suitability | §5.1 | [[law]]/folder (the trinity) |
 | | interaction-capability | §5.4 | [[rules]]/ask |
-| | **compatibility** | §5.3 | **— no gate: the design task that unseals form** |
+| | compatibility | §5.3 | [[rules]]/compatibility — an atom colliding with a framework namespace |
 | **code** — how the system runs | performance-efficiency | §5.2 | [[timeout]] |
 | | reliability | §5.5 | [[rules]]/refutable |
 | | security | §5.6 | [[access]]/standard |
@@ -24,7 +24,7 @@ The nine ISO/IEC 25010 characteristics are organised in **three trinities** on t
 | | flexibility | §5.8 | [[rules]]/canonical |
 | | safety | §5.9 | [[accounting]] (the double-entry balance invariant) |
 
-**code and proof are sealed; form is open** on compatibility. `engineeringDesignBacklog` lets the engineers design the rest needed to complete the quantum ERP — the ungated characteristics across every unsealed trinity, in seal order — and when it empties, every standard-trinity is sealed and the engineering surface is complete. "Improve the standard" = move a characteristic from cited to gate-enforced; `assertEngineeringEnforced` ratchets the ungated count DOWN.
+**all three trinities are sealed** — every one of the nine characteristics carries a gate, so `engineeringDesignBacklog` is EMPTY: the engineering surface of the quantum ERP is complete. The last to seal was FORM, via [[rules]]/compatibility (§5.3). "Improve the standard" = move a characteristic from cited to gate-enforced; `assertEngineeringEnforced` holds the ungated count at 0 — a THEOREM (full enforcement), so any ungated concern added later is a regression that fails closed.
 
 ## Computed vs declared — the honest split
 

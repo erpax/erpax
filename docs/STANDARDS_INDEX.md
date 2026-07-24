@@ -2318,6 +2318,7 @@ src/rules/ask/index.ts:23: * @standard ISO 9241-110:2020 §6.2 — self-descript
 src/rules/audience/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence — a citation is read by a person
 src/rules/canonical/index.ts:17: * @standard ISO/IEC 25010:2023 §5.5 reusability — use the dependency or drop it
 src/rules/collapse/index.ts:31: * @standard RFC 9562 §5.8 — content-address (same content, same address)
+src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compatibility — co-existence with the framework namespace
 src/rules/confine/index.ts:24: * @standard ISO/IEC 25010:2023 §5.6.2 — modularity: the whole is confined, not held
 src/rules/cycle/index.ts:32: * @standard ISO/IEC 25010:2023 §5.6.2 modularity
 src/rules/echo/index.ts:19: * @standard ISO/IEC 25010:2023 §5.6 — modularity/understandability: a name conveys its meaning
