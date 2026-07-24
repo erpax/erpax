@@ -184,10 +184,10 @@ export interface LeveragedNext {
  * It is failureRoots/costRoots ([[quantum]]/computer) turned on the intelligence's own backlog — the same
  * law that says a red list collapses onto shared causes, applied so the agent self-determines its next move.
  */
-export function nextMoveByLeverage(cwd = process.cwd(), batch = 50): LeveragedNext[] {
-  const ranked = rankGapsByEntanglement(cwd, batch)
+export function nextMoveByLeverage(cwd = process.cwd(), batch = 50, ranked?: readonly RankedIntelligenceGap[]): LeveragedNext[] {
+  const rows0 = ranked ?? rankGapsByEntanglement(cwd, batch) // REUSE a pre-computed ranking, never re-scan
   const byRoot = new Map<string, RankedIntelligenceGap[]>()
-  for (const g of ranked) {
+  for (const g of rows0) {
     const root = g.path.split('/')[0] ?? g.path // the atom the fix lands in — the shared cause
     const bucket = byRoot.get(root) ?? []
     bucket.push(g)
@@ -293,10 +293,12 @@ export function selfImproveCycle(opts: SelfImproveCycleOpts = {}): SelfImproveCy
   // Spend the batch on the FUSE, not on scatter: order gaps by their root's leverage (the root the
   // most gaps collapse onto) so a bounded wave fixes the highest-leverage cause first — the cycle now
   // ACTS on what nextMoveByLeverage computes, instead of deferring the "which first?" to a human.
+  // The ranking is scanned ONCE and reused for both leverage and the seal (never re-derived).
+  const pool = rankGapsByEntanglement(cwd, batch * 4)
   const leverageRank = new Map<string, number>()
-  for (const m of nextMoveByLeverage(cwd, Math.max(batch * 4, 50))) leverageRank.set(m.root, m.leverage)
+  for (const m of nextMoveByLeverage(cwd, batch * 4, pool)) leverageRank.set(m.root, m.leverage)
   const rootOf = (p: string): string => p.split('/')[0] ?? p
-  const rankedRaw = rankGapsByEntanglement(cwd, batch * 4)
+  const rankedRaw = [...pool]
     .sort((a, b) => (leverageRank.get(rootOf(b.path)) ?? 0) - (leverageRank.get(rootOf(a.path)) ?? 0))
     .slice(0, batch)
   const secured = parseWithSecurity(JSON.stringify(rankedRaw), 'corpus:local', (r) =>
