@@ -15,8 +15,8 @@
  *
  * @see ../index — the base keyed store this specialises
  */
-import { readdirSync, lstatSync } from 'node:fs'
-import { join } from 'node:path'
+import { readdirSync, lstatSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { join, dirname } from 'node:path'
 
 /**
  * Cheap corpus fingerprint: file count + newest src mtime. An unchanged tree fingerprints identically
@@ -66,6 +66,44 @@ export function memoByFingerprint<T>(name: string, cwd: string, compute: () => T
   if (hit && hit.fp === fp) return hit.value as T
   const value = compute()
   memos.set(key, { fp, value })
+  return value
+}
+
+/**
+ * The DISK tier — the cross-process resonance the in-process memo cannot reach. Separate workers
+ * (vitest runs each test file in its own process) each re-derive the same 8–27s scan; here the FIRST
+ * worker computes and writes it under node_modules/.cache keyed by the fingerprint, and every sibling
+ * PROCESS reads it in ms. This is the class-2 magnitude from the resonance research — N independent
+ * scans collapse to one shared class — and the buildable AI-bill lever (#23): the machine computes
+ * once, the agent and every worker cite it.
+ *
+ * Serializable results ONLY (the value round-trips through JSON) — a resolver closure or a graph stays
+ * in-process (memoByFingerprint). Same freshness theorem: the file is keyed by the fingerprint, so a
+ * changed tree misses the cache and re-derives; a stale file can never be read as current.
+ */
+export function memoByFingerprintOnDisk<T>(name: string, cwd: string, compute: () => T): T {
+  const fp = corpusFingerprint(cwd)
+  const key = `${name} ${cwd}`
+  const hit = memos.get(key)
+  if (hit && hit.fp === fp) return hit.value as T
+  const file = join(cwd, 'node_modules', '.cache', 'erpax', `${name}.json`)
+  try {
+    const disk = JSON.parse(readFileSync(file, 'utf8')) as { fp: string; value: T }
+    if (disk.fp === fp) {
+      memos.set(key, { fp, value: disk.value })
+      return disk.value
+    }
+  } catch {
+    /* no cache file or unparseable — compute below */
+  }
+  const value = compute()
+  memos.set(key, { fp, value })
+  try {
+    mkdirSync(dirname(file), { recursive: true })
+    writeFileSync(file, JSON.stringify({ fp, value }))
+  } catch {
+    /* cache write is best-effort — a read-only fs still returns the computed value */
+  }
   return value
 }
 

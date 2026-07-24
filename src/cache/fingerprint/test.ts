@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync, utimesSync } from 'node:fs'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { corpusFingerprint, memoByFingerprint, clearFingerprintMemos } from './index'
+import { corpusFingerprint, memoByFingerprint, memoByFingerprintOnDisk, clearFingerprintMemos } from './index'
 
 // The fingerprint memo — verified on a hermetic fixture tree (never the real corpus).
 describe('cache/fingerprint — reuse the whole-corpus scan, never re-derive', () => {
@@ -48,6 +48,23 @@ describe('cache/fingerprint — reuse the whole-corpus scan, never re-derive', (
       utimesSync(join(cwd, 'src', 'alpha', 'index.ts'), new Date(), new Date(Date.now() + 10_000))
       expect(call()).toBe(2) // re-derived
       expect(ran).toBe(2)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
+  })
+
+  it('memoByFingerprintOnDisk shares across processes — a fresh memo reads the written file', () => {
+    const cwd = fixture()
+    mkdirSync(join(cwd, 'node_modules'), { recursive: true })
+    clearFingerprintMemos()
+    try {
+      let ran = 0
+      // first "process" computes and writes the disk cache
+      expect(memoByFingerprintOnDisk('serial', cwd, () => ({ n: ++ran }))).toEqual({ n: 1 })
+      // simulate a SEPARATE process: no in-process memo, but the disk file resonates ⇒ no recompute
+      clearFingerprintMemos()
+      expect(memoByFingerprintOnDisk('serial', cwd, () => ({ n: ++ran }))).toEqual({ n: 1 })
+      expect(ran).toBe(1) // compute ran once across both "processes"
     } finally {
       rmSync(cwd, { recursive: true, force: true })
     }
