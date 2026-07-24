@@ -29,6 +29,8 @@
  *
  * Composes [[rules]]/refutable · [[rules]]/cycle · [[rules]]/prose · [[think]] · [[law]].
  */
+import { readdirSync as fsReaddir, readFileSync as fsRead } from 'node:fs'
+import { join as fsJoin } from 'node:path'
 import { higherMind, thoughtAddress, type Thought } from '@/think'
 
 /** A node in the trust graph — a claim, and how it is grounded. Note: there is NO author field. Trust is source-blind. */
@@ -335,6 +337,48 @@ export function proofClassOfTest(source: string): TestProofClass {
     return IS_FINITE_COMPLETE.test(source) ? 'finite-complete' : 'unit'
   }
   return IS_BOUNDED.test(source) ? 'bounded-witness' : 'unbounded-corpus'
+}
+
+/** Every test file under src (the whole suite the gate classifies). */
+export function testFilesUnder(cwd: string = process.cwd()): string[] {
+  const out: string[] = []
+  const walk = (dir: string): void => {
+    let entries: import('node:fs').Dirent[]
+    try {
+      entries = fsReaddir(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e.name.startsWith('.') || e.name === 'node_modules' || e.name === 'skills') continue
+      const p = fsJoin(dir, e.name)
+      if (e.isDirectory()) walk(p)
+      else if (/(^|\/)test\.tsx?$|\.test\.tsx?$/.test(e.name)) out.push(p)
+    }
+  }
+  walk(fsJoin(cwd, 'src'))
+  return out
+}
+
+/** The unbounded-corpus test files — the hang-candidates the session fixed ~8× ([[testing]]/witness is the fix). */
+export function unboundedCorpusTests(cwd: string = process.cwd()): string[] {
+  return testFilesUnder(cwd).filter((f) => proofClassOfTest(fsRead(f, 'utf8')) === 'unbounded-corpus')
+}
+
+/**
+ * THE GATE — the session's experience made LOGIC (the assumption "don't scan the corpus in a unit
+ * test" converted to an enforced law). The unbounded-corpus count may not GROW: a new test that maps
+ * a corpus-scale derivation over the whole corpus without a bounded witness fails CI, and the ceiling
+ * ratchets DOWN as the remaining 12 are given a boundedWitness or a fixture cwd. A seed becomes a theorem.
+ */
+export function assertTestsBounded(cwd: string = process.cwd(), ceiling: number): void {
+  const reds = unboundedCorpusTests(cwd)
+  if (reds.length <= ceiling) return
+  throw new Error(
+    `✖ theorem — ${reds.length} unbounded-corpus test(s) exceeds the ceiling ${ceiling}: a new test scans the WHOLE ` +
+      `corpus without a bounded witness (it will hang the suite). Use @/testing/witness (boundedWitness) or a fixture cwd. ` +
+      `New: ${reds.slice(0, 3).map((f) => f.replace(/.*\/src\//, 'src/')).join(' ')}`,
+  )
 }
 
 /**

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, unboundedCorpusTests, assertTestsBounded, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -274,6 +274,14 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
       expect(proofClassOfTest('const cwd = mkdtempSync(t); scanEducateGaps(cwd)')).toBe('bounded-witness') // fixture-bounded
       expect(proofClassOfTest('for (const r of RUNG) expect(timeoutOf([r]))')).toBe('finite-complete')
       expect(proofClassOfTest('expect(1 + 1).toBe(2)')).toBe('unit')
+    })
+
+    it('assertTestsBounded is the GATE — the experience made law (assumption → enforced logic)', () => {
+      const live = unboundedCorpusTests()
+      expect(Array.isArray(live)).toBe(true)
+      // ratchet: at/above the live count passes; below it (demanding fewer than exist) fails closed
+      expect(() => assertTestsBounded(process.cwd(), live.length)).not.toThrow()
+      expect(() => assertTestsBounded(process.cwd(), live.length - 1)).toThrow(/unbounded-corpus/)
     })
   })
 })
