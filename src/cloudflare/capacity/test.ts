@@ -5,7 +5,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { CLOUDFLARE_LIMITS, productionCapacity, workerImportsSkillIndex, assertFitsProduction } from './index'
+import { CLOUDFLARE_LIMITS, productionCapacity, workerImportsSkillIndex, assertFitsProduction, widestD1Table } from './index'
 
 // A hermetic edge: a worker entry, and an 80MB-shaped skill index. The one decidable production
 // failure is whether the entry IMPORTS the index — if it does, the bundle blows the 3MB limit.
@@ -57,6 +57,20 @@ describe('cloudflare/capacity — erpax vs the production hardware', () => {
     const tables = productionCapacity(d).find((f) => f.resource === 'd1-tables')!
     expect(tables.demand).toBeGreaterThan(0) // the 'accounts' slug is found
     expect(tables.hard).toBe(false)
+    rmSync(d, { recursive: true, force: true })
+  })
+
+  // The theorem, not the eye: an interface's field count over-counts D1 columns (arrays LOOK like
+  // fields but become their own tables). The committed drizzle snapshot is the actual schema — read it.
+  it('the widest real D1 table is read from the committed snapshot and sits under the 100-col cap', () => {
+    const live = widestD1Table(process.cwd())
+    if (live) {
+      expect(live.columns).toBeLessThanOrEqual(100) // erpax fits the D1 column cap with headroom
+      expect(live.name.length).toBeGreaterThan(0)
+    }
+    // a fixture with no migration snapshot degrades gracefully to null
+    const d = seed(false)
+    expect(widestD1Table(d)).toBeNull()
     rmSync(d, { recursive: true, force: true })
   })
 })

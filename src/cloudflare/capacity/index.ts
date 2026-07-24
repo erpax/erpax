@@ -16,6 +16,11 @@
 import { statSync, existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
+export interface D1Table {
+  readonly name: string
+  readonly columns: number
+}
+
 export interface CloudflareLimit {
   readonly resource: string
   readonly limit: number
@@ -79,7 +84,44 @@ export function productionCapacity(cwd: string = process.cwd()): CapacityFinding
   const collections = countCollections(cwd)
   out.push({ resource: 'd1-tables', demand: collections, limit: 0, unit: 'count', hard: false, fits: true, headroom: 0, note: `${collections} collections → D1 tables (D1 has no small table cap; the 100-col-per-table cap is the real one)` })
 
+  // D1 columns per table: the SECOND hard D1 cap (100), the one that forced search_rels into a
+  // content-uuid group. Measured from the committed drizzle snapshot — the ACTUAL generated schema,
+  // where arrays/relations are already their own tables (so an interface's field count over-counts).
+  const widest = widestD1Table(cwd)
+  if (widest) push('d1-columns-per-table', widest.columns, `widest D1 table '${widest.name}' has ${widest.columns} cols`)
+
   return out
+}
+
+/**
+ * The widest real D1 table, read from the committed drizzle snapshot (the actual generated schema —
+ * arrays/relations are already split into their own tables, so this is the true per-table column count,
+ * not the payload-types interface field count which over-counts). Null when no snapshot is present.
+ */
+export function widestD1Table(cwd: string = process.cwd()): D1Table | null {
+  const dir = join(cwd, 'src/migrations')
+  let snap: string | undefined
+  try {
+    snap = readdirSync(dir)
+      .filter((f) => /^\d{8}_\d{6}\.json$/.test(f))
+      .sort()
+      .at(-1)
+  } catch {
+    return null
+  }
+  if (!snap) return null
+  let tables: Record<string, { columns?: Record<string, unknown> }>
+  try {
+    tables = (JSON.parse(readFileSync(join(dir, snap), 'utf8')).tables as typeof tables) ?? {}
+  } catch {
+    return null
+  }
+  let widest: D1Table | null = null
+  for (const [name, t] of Object.entries(tables)) {
+    const columns = Object.keys(t.columns ?? {}).length
+    if (!widest || columns > widest.columns) widest = { name, columns }
+  }
+  return widest
 }
 
 /** Does the worker entry (the shipped path) import the 80MB skill index? If so, the bundle exceeds the limit. */

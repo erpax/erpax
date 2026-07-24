@@ -21,7 +21,13 @@ The corpus skill index is **80 MB**. A Worker script may be **3 MB compressed**.
 
 `CLOUDFLARE_LIMITS` is the production ceiling written once, in the open, each with its source: Worker 3 MB script / 128 MB memory / 30 s CPU; D1 10 GB per database, **100 columns per table** (the cap that forced `search_rels` into a content-uuid group); Durable Object 128 MB; KV 25 MB value; R2 unbounded. `productionCapacity(cwd)` computes erpax's demand against each and reports headroom.
 
-**Honest boundary.** This proves the shipped bundle **excludes the one file that would blow it**, and models the ceilings — it does not measure the *actual* built `.open-next` artifact (that needs a build), nor the per-table column count of every collection (D1's real second cap). It closes the failure that is decidable from the source — the import — and names the limits the rest must be measured against at build time. A soft limit (D1 size, CPU ms) is a scaling concern, not a deploy blocker, and is reported but not gated.
+## The second D1 cap — measured, and it fits
+
+D1's other hard limit is **100 columns per table**, the one that forced `search_rels` into a content-uuid group. `widestD1Table` reads the committed drizzle snapshot — the *actual* generated schema — and finds the widest: **`_invoices_v` at 86 / 100.** Zero of 988 tables exceed the cap.
+
+This is the corpus's own *trust the theorem, not the eye* law paid again. The `payload-types` interface field-count *looks* alarming — `InternalAuditFunction` has 139 fields, `AuditCommitteeMinute` 121 — but that is a heuristic that **over-counts**: an array or relation looks like a field yet becomes its **own** D1 table. The snapshot is the theorem; it says erpax fits with 14 columns of headroom, and `assertFitsProduction` now gates it.
+
+**Honest boundary.** This proves the shipped bundle **excludes the one file that would blow it** and reads the **real per-table column count** from the committed snapshot — it does not measure the *actual* built `.open-next` bundle (that needs a build) nor the D1 database *size* in GB (that needs live data). It closes the two failures decidable from the source — the import and the schema — and names the rest as build-time measurements. A soft limit (D1 size, CPU ms) is a scaling concern, not a deploy blocker, reported but not gated.
 
 **Law — [[law]]: the hardware is finite and its limits are known. erpax fits the Cloudflare edge because it never ships the 80 MB index — and that is now computed at the entry points, not trusted to discipline.**
 
