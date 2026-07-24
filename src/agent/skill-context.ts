@@ -8,6 +8,7 @@
  * @see ./cheap-dispatch · ./strict-apply · ../skill/router/lazy-load · ./SKILL.md
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, type Dirent } from 'node:fs'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { join } from 'node:path'
 import { accountCodeOf } from '@/accounting'
 import { adminGroupOf } from '@/navigation'
@@ -214,68 +215,18 @@ const compactRules = (snapshot: RulesSnapshot): CompactRulesSnapshot => {
   return { axes, unsealedAxes }
 }
 
-/**
- * Cheap corpus fingerprint: atom count + newest src mtime. Two runs over an unchanged tree
- * fingerprint identically, so the cached snapshot is reused; any edit bumps the mtime and re-derives.
- */
-const corpusFingerprint = (cwd: string): string => {
-  let newest = 0
-  let count = 0
-  const walk = (dir: string): void => {
-    let entries: Dirent[]
-    try {
-      entries = readdirSync(dir, { withFileTypes: true })
-    } catch {
-      return
-    }
-    for (const e of entries) {
-      if (e.name.startsWith('.') || e.name === 'node_modules' || e.name === 'skills') continue
-      const p = join(dir, e.name)
-      if (e.isDirectory()) walk(p)
-      else if (/\.(ts|tsx|md)$/.test(e.name)) {
-        count++
-        const m = statSync(p).mtimeMs
-        if (m > newest) newest = m
-      }
-    }
-  }
-  walk(join(cwd, 'src'))
-  return `${count}:${Math.round(newest)}`
-}
-
-const RULES_CACHE_FILE = 'node_modules/.cache/erpax/compact-rules.json'
-let rulesMemo: { fp: string; snap: CompactRulesSnapshot } | null = null
+// corpus fingerprint + disk memo now live in the shared primitive ([[cache]]/fingerprint) — folded away.
 
 /**
- * Compact rules snapshot — REUSE, never re-derive (the 27s corpus scan). Memoized in-process AND
- * on disk keyed by a corpus fingerprint: the FIRST caller across the whole test run computes it,
- * every sibling worker reads the cached result in ms. This is the receipt pattern applied to the
- * rules scan — it collapsed the entire agent test cluster (25 suites × 27s each) at its root.
- * A non-default cwd or explicit opts bypasses the cache (the gate's own rules tests stay exact).
+ * Compact rules snapshot — REUSE, never re-derive (the 27s corpus scan). Memoized in-process AND on
+ * disk by the shared fingerprint primitive ([[cache]]/fingerprint): the FIRST caller across the whole
+ * test run computes it, every sibling worker reads the cached result in ms. This collapsed the entire
+ * agent test cluster (25 suites × 27s each) at its root. A non-default cwd or explicit opts bypasses
+ * the cache (the gate's own rules tests stay exact). Hand-rolled fingerprint+disk-cache folded away.
  */
 export function compactRulesSnapshot(cwd = process.cwd(), opts?: RulesOfOpts): CompactRulesSnapshot {
   if (cwd !== process.cwd() || opts) return compactRules(rulesOf(cwd, opts))
-  const fp = corpusFingerprint(cwd)
-  if (rulesMemo?.fp === fp) return rulesMemo.snap
-  const cacheFile = join(cwd, RULES_CACHE_FILE)
-  try {
-    const disk = JSON.parse(readFileSync(cacheFile, 'utf8')) as { fp: string; snap: CompactRulesSnapshot }
-    if (disk.fp === fp) {
-      rulesMemo = disk
-      return disk.snap
-    }
-  } catch {
-    /* cold cache — compute below */
-  }
-  const snap = compactRules(rulesOf(cwd, opts))
-  rulesMemo = { fp, snap }
-  try {
-    mkdirSync(join(cwd, 'node_modules/.cache/erpax'), { recursive: true })
-    writeFileSync(cacheFile, JSON.stringify({ fp, snap }))
-  } catch {
-    /* a lost cache only means the next worker re-derives once */
-  }
-  return snap
+  return memoByFingerprintOnDisk('compact-rules', cwd, () => compactRules(rulesOf(cwd, opts)))
 }
 
 const readSkillRaw = (atomPath: string, cwd: string): string | null => {
