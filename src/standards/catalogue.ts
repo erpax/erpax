@@ -1229,7 +1229,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds / crypto Travel Rule)",
     "uuid": "21f55193-2265-8002-9a8c-70a9b8300433",
     "color": "hsl(53 66% 41%)",
-    "count": 247,
+    "count": 248,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1335,7 +1335,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2023/2854 — Data Act, on harmonised rules on fair access to and use of data",
     "uuid": "1b87a397-6113-8257-9b81-fb82841c78c9",
     "color": "hsl(207 78% 45%)",
-    "count": 247,
+    "count": 248,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -1441,7 +1441,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Carbon Border Adjustment Mechanism — Regulation (EU) 2023/956",
     "uuid": "b4f6dd26-c4bf-8dd0-8cc4-5f5db71660b8",
     "color": "hsl(246 66% 52%)",
-    "count": 247,
+    "count": 248,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -5003,7 +5003,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 174,
+    "count": 175,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
