@@ -1086,6 +1086,7 @@ src/en/16931/validate.ts:6: * @standard EN-16931:2017+A1:2019 semantic-model-ele
 src/en/16931/validate.ts:7: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/en/16931/validate.ts:8: * @standard UN-CEFACT 1001 document-name-code
 src/en/16931/validate.ts:9: * @standard UN-CEFACT 4461 payment-means
+src/engineering/index.ts:16: * @standard ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)
 src/entanglement/index.ts:22: * @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 src/entity/types/index.ts:11: * @standard COSO-2013 entity-classification
 src/entry/index.ts:24: * @standard IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
@@ -5699,6 +5700,7 @@ src/en/16931/collection-alignment.test.ts:11: * @audit ISO-19011:2018 audit-trai
 src/en/16931/types.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/enforce/document/tenant/for/user/index.ts:20: * @audit ISO-19011:2018 audit-trail
 src/enforce/segregation/of/duty/index.ts:12: * @audit ISO-19011:2018 audit-trail
+src/engineering/index.ts:17: * @audit ISO-19011:2018 §6.4 — a cited standard is evidence only if it leads to its enforcement
 src/ensure/unique/slug/within/tenant/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/entanglement/index.ts:23: * @audit computed from the live matrix edges + uuids; never hand-asserted
 src/entropy/index.ts:19: * @audit computed from the live matrix, never hand-asserted
