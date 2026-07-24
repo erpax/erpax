@@ -4,6 +4,7 @@ import {
   tierOfAccessFactory,
   tierRank,
   accessComplianceGaps,
+  accessComplianceLeak,
   assertAccessCompliant,
   type CollectionAccessInput,
 } from '@/access/standard'
@@ -61,5 +62,15 @@ describe('access/standard — the API access derived from and gated by its legal
     } as unknown as Mesh
     expect(() => assertAccessCompliant(process.cwd(), 0, mesh)).toThrow(/below their legal floor/)
     expect(() => assertAccessCompliant(process.cwd(), 4, mesh)).not.toThrow() // at ceiling ⇒ passes (ratchet)
+  })
+
+  it('accessComplianceLeak prices the gaps as security crackLeak — zero gaps leak nothing, each seam bleeds', () => {
+    const weak: CollectionAccessInput = { slug: 'ledger', atom: 'ledger', standardIds: ['SOX:2002 §404'], declaredFactory: 'NONE' }
+    const gaps = accessComplianceGaps([weak])
+    const leak = accessComplianceLeak(gaps, 512)
+    expect(leak.cracks).toBe(gaps.length) // each ungated endpoint is a crack
+    expect(leak.leak).toBeGreaterThan(0) // an under-governed API bleeds
+    // fully fused access ⇒ zero leak
+    expect(accessComplianceLeak([], 512).leak).toBe(0)
   })
 })

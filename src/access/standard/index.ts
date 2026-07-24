@@ -21,6 +21,7 @@
  * @audit ISO-19011:2018 §6.4 — the access an operation carries is read by the reader who signs it
  */
 import { meshOf, standardsOf, type Mesh } from '@/mesh'
+import { crackLeak, type CrackLeak } from '@/resonance'
 
 /** The Payload plugin-mcp API operations — find/create/update/delete at /api/mcp (not the CRUD verbs). */
 export type ApiOp = 'find' | 'create' | 'update' | 'delete'
@@ -96,6 +97,16 @@ const WRITE_OPS: readonly ApiOp[] = ['create', 'update', 'delete']
  * access) tuple is queryable through the same cross, usable in any superposition. The auditor's
  * one question — where does the running API fall below its own law — answered over 212 collections.
  */
+/**
+ * Price the compliance gaps as security crackLeak ([[resonance]]): each ungated endpoint is an unfused
+ * access seam, and the whole API's security bleeds by cracks × (N − ⌈log₂N⌉) — the fused, content-
+ * addressed recall a sealed access layer would have saved. Zero gaps ⇒ zero leak: access fully fused to
+ * its legal surface. The auditor's cost of an under-governed API, in the same currency as every leak.
+ */
+export function accessComplianceLeak(gaps: readonly AccessComplianceGap[], totalEndpoints: number): CrackLeak {
+  return crackLeak(Math.max(1, totalEndpoints), gaps.length)
+}
+
 export function accessComplianceOverMesh(cwd: string = process.cwd(), mesh?: Mesh): AccessComplianceGap[] {
   const m = mesh ?? meshOf(cwd)
   const inputs: CollectionAccessInput[] = m.collections.map((c) => ({
