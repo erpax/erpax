@@ -186,6 +186,74 @@ export async function chatInvoke(
   return { result, ...improve(messageUuids, `${toolName}: ${result}`) }
 }
 
+// ── deep research — parallel & branching, not linear-manual ───────────────────
+// Linear manual research asks one question, waits, reads, asks the next. Deep
+// research fans a frontier of sub-questions out CONCURRENTLY (Promise.all — the
+// anti-linear step), folds every finding into the tamper-evident thread (ask→
+// improve), and expands the frontier with the follow-ups each finding raises,
+// to a bounded DEPTH. The gatherer is injected (`Researcher` — corpus tools via
+// chatInvoke, a web API, a DB), so the loop stays a pure, testable orchestrator.
+
+/** One answered sub-question and its evidence — a leaf the thread folds. */
+export interface Finding {
+  readonly question: string
+  readonly evidence: string
+}
+
+/** Gathers evidence for one sub-question and may raise follow-ups (breadth×depth). Injected. */
+export type Researcher = (question: string) => Promise<{ evidence: string; followUps?: readonly string[] }>
+
+export interface DeepResearchResult {
+  readonly findings: readonly Finding[]
+  /** Content-uuid folding every finding — the tamper-evident, citable research trace. */
+  readonly thread: string
+  readonly messageUuids: readonly string[]
+  /** Frontier levels actually explored (≤ depth budget). */
+  readonly depthReached: number
+  /** Fraction of the ORIGINAL questions answered. */
+  readonly coverage: number
+}
+
+/**
+ * Research a frontier of questions in parallel, folding findings into the thread and
+ * expanding follow-ups to a bounded depth. Concurrent per level (breadth), recursive
+ * across levels (depth) — the opposite of linear one-at-a-time.
+ *
+ * HONEST BOUNDARY: the loop ORCHESTRATES (fan-out · fold · expand · bound); the actual
+ * gathering is the injected `researcher`. It folds evidence, it does not judge its truth
+ * (that is [[rules]]/refutable's concern) — and depth is bounded, never infinite.
+ */
+export async function deepResearch(
+  seed: readonly string[],
+  questions: readonly string[],
+  researcher: Researcher,
+  opts?: { depth?: number },
+): Promise<DeepResearchResult> {
+  const depth = Math.max(1, opts?.depth ?? 3)
+  let messageUuids = [...seed]
+  const findings: Finding[] = []
+  const asked = new Set<string>()
+  let frontier = questions.filter((q) => (asked.has(q) ? false : (asked.add(q), true)))
+  let depthReached = 0
+
+  for (let d = 0; d < depth && frontier.length > 0; d++) {
+    depthReached = d + 1
+    const results = await Promise.all(frontier.map((q) => researcher(q))) // FAN OUT — parallel
+    const next: string[] = []
+    frontier.forEach((q, i) => {
+      const { evidence, followUps } = results[i]!
+      findings.push({ question: q, evidence })
+      messageUuids = improve(messageUuids, `${q} → ${evidence}`).messageUuids
+      for (const f of followUps ?? []) if (!asked.has(f)) { asked.add(f); next.push(f) }
+    })
+    frontier = next
+  }
+
+  const answered = new Set(findings.map((f) => f.question))
+  const coverageOfOriginal = questions.length === 0 ? 1 : questions.filter((q) => answered.has(q)).length / questions.length
+  return { findings, thread: threadUuid(messageUuids), messageUuids, depthReached, coverage: coverageOfOriginal }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chat — thread = merkle chain of message-uuids:')
   console.log('  thread([a,b]) = ' + threadUuid(['a', 'b']).slice(0, 8) + '… · appended changes it = ' + appended(['a', 'b'], 'c'))

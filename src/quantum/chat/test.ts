@@ -5,7 +5,9 @@ import {
   mediaMessage, foldMediaMessage, chatFromMedia, mediaBlobUuid,
   sealChatMessage, openChatMessage,
   chatToolNames, chatInvoke,
+  deepResearch,
   type Transcriber,
+  type Researcher,
 } from '@/quantum/chat'
 
 // message-uuids ARE content-uuids (hex uuid format), as merge requires.
@@ -103,5 +105,35 @@ describe('quantum/chat — all quantum reachable by REACH, not copy (the tool br
     expect(r.result).toBe('ran erpax.invoices.create({"total":100})')
     expect(r.improved).toBe(true) // the tool result entered the thread
     expect(isNovel(r.messageUuids, 'erpax.invoices.create: ran erpax.invoices.create({"total":100})')).toBe(false)
+  })
+})
+
+describe('quantum/chat — deepResearch (parallel & branching, not linear-manual)', () => {
+  it('fans a frontier out concurrently and folds every finding into the thread', async () => {
+    const researcher: Researcher = async (q) => ({ evidence: `ans:${q}` })
+    const r = await deepResearch([], ['a', 'b', 'c'], researcher, { depth: 1 })
+    expect(r.findings.map((f) => f.question).sort()).toEqual(['a', 'b', 'c'])
+    expect(r.coverage).toBe(1)
+    expect(r.depthReached).toBe(1)
+    expect(r.thread).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
+  })
+
+  it('expands follow-ups to the depth budget (breadth × depth)', async () => {
+    const researcher: Researcher = async (q) =>
+      q === 'root' ? { evidence: 'e', followUps: ['child1', 'child2'] } : { evidence: 'leaf' }
+    const r = await deepResearch([], ['root'], researcher, { depth: 2 })
+    expect(r.findings.map((f) => f.question).sort()).toEqual(['child1', 'child2', 'root'])
+    expect(r.depthReached).toBe(2)
+  })
+
+  it('is concurrent: a slow sub-question does not block a fast sibling (Promise.all fan-out)', async () => {
+    const order: string[] = []
+    const researcher: Researcher = async (q) => {
+      await new Promise((res) => setTimeout(res, q === 'slow' ? 25 : 1))
+      order.push(q)
+      return { evidence: q }
+    }
+    await deepResearch([], ['slow', 'fast'], researcher, { depth: 1 })
+    expect(order[0]).toBe('fast') // finished first despite being asked second — genuinely parallel
   })
 })
