@@ -15,7 +15,7 @@
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.2
- * @see src/services/gl-account-resolver.ts
+ * @see src/gl/account/resolver
  */
 
 import type { CollectionConfig } from 'payload'
@@ -42,6 +42,14 @@ const GLAccounts: CollectionConfig = {
     delete: tenantAdmin,
   },
   fields: [
+    {
+      // Standards-computed identity: an account's natural key is its CODE (IAS-1 chart-of-accounts,
+      // OECD SAF-T §3), not a surrogate uuid. A text id lets the GL posting path store the account
+      // code as the relationship value AND round-trip it — codes resolve, validate, and stay stable.
+      name: 'id',
+      type: 'text',
+      required: true,
+    },
     {
       name: 'accountNumber',
       type: 'text',

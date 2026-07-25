@@ -16,7 +16,7 @@
  * @see src/gl/accounts/period/end/adjustments/hooks/period-end-adjustment.ts
  */
 
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, beforeAll } from 'vitest'
 import { periodEndAdjustmentPostingHook } from './period-end-adjustment'
 import { journalEntryService } from '@/journal/entry/service'
 
@@ -24,8 +24,41 @@ import { journalEntryService } from '@/journal/entry/service'
 type HookArgs = Parameters<typeof periodEndAdjustmentPostingHook>[0]
 const runHook = (args: Partial<HookArgs>) => periodEndAdjustmentPostingHook(args as HookArgs)
 
-const tenant = 'tenant-pe'
-const user = 'user-pe'
+// Greenfield: the test owns ALL its referenced entities (tenant · user · accounts). Accounts are
+// keyed by their CODE (the standards-computed natural key — gl-accounts uses a text id), so the caller
+// code round-trips as a valid relationship; createdBy resolves to a real user (FK to users).
+let tenant: string
+let user: string
+
+beforeAll(async () => {
+  const { getPayload } = await import('payload')
+  const config = (await import('@payload-config')).default
+  const payload = await getPayload({ config })
+  const t = await payload.create({
+    collection: 'tenants',
+    data: { name: 'Period-End Test', slug: `tenant-pe-${Date.now()}` } as never,
+  })
+  tenant = String((t as { id: unknown }).id)
+  const u = await payload.create({
+    collection: 'users',
+    data: { email: `pe-${Date.now()}@test.local`, password: 'test-pass-1234', roles: ['admin'] } as never,
+  })
+  user = String((u as { id: unknown }).id)
+  const accounts: ReadonlyArray<[string, 'asset' | 'liability' | 'expense', 'debit' | 'credit', string]> = [
+    ['depreciation_expense', 'expense', 'debit', '6100'],
+    ['accumulated_depreciation', 'asset', 'credit', '1590'],
+    ['interest_expense', 'expense', 'debit', '7100'],
+    ['accrued_interest_payable', 'liability', 'credit', '2150'],
+    ['inventory_variance', 'expense', 'debit', '5150'],
+    ['inventory', 'asset', 'debit', '1300'],
+  ]
+  for (const [id, accountType, normalBalance, accountNumber] of accounts) {
+    await payload.create({
+      collection: 'gl-accounts',
+      data: { id, tenant, accountType, normalBalance, accountNumber, accountName: id } as never,
+    })
+  }
+}, 120_000)
 
 const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
   ({
