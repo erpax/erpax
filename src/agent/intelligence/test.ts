@@ -12,8 +12,11 @@ import {
   verificationValue,
   rankVerifications,
   learnSciencesOnTheWay,
+  hebbianUpdate,
+  recall,
   __resetIntelligenceReceiptHeadForTests,
   type LeveragedNext,
+  type Synapses,
 } from './index'
 import { linearGaps } from '@/quantum'
 import { resetSecurityMonitorForTests } from '@/agent/security'
@@ -141,5 +144,41 @@ describe('agent/intelligence', () => {
       // and it is the top move: what the agent does next, computed not asked
       expect(moves[0]!.gapCount).toBeGreaterThanOrEqual(heavyRow!.gapCount === moves[0]!.gapCount ? heavyRow!.gapCount : 1)
     })
+  })
+})
+
+describe('agent/intelligence — quantum neural intelligence: Hebbian fold over the mesh', () => {
+  const A = '11111111-1111-8111-8111-111111111111'
+  const B = '22222222-2222-8222-8222-222222222222'
+  const C = '33333333-3333-8333-8333-333333333333'
+  const D = '44444444-4444-8444-8444-444444444444'
+
+  it('fire together, wire together — co-activation strengthens the bond; repetition accumulates', () => {
+    const syn: Synapses = new Map()
+    hebbianUpdate(syn, [A, B, C]) // one co-activation
+    const before = new Map(syn)
+    hebbianUpdate(syn, [A, B]) // A–B fire together again
+    // every A–B–C pair has a bond; the repeated A–B pair is now strongest
+    expect(syn.size).toBe(3) // AB, AC, BC
+    for (const [, w] of before) expect(w).toBe(1)
+    const abStronger = [...syn.values()].filter((w) => w === 2).length
+    expect(abStronger).toBe(1) // exactly the A–B bond accumulated
+  })
+
+  it('recall returns the strongest association to a cue (the net predicts)', () => {
+    const syn: Synapses = new Map()
+    hebbianUpdate(syn, [A, B]) // A learned with B, twice
+    hebbianUpdate(syn, [A, B])
+    hebbianUpdate(syn, [A, C]) // A with C, once
+    const pred = recall(syn, [A], [B, C, D])
+    expect(pred[0]!.atom).toBe(B) // B most strongly bonded to A
+    expect(pred[0]!.weight).toBe(2)
+    expect(pred.map((p) => p.atom)).not.toContain(D) // D never co-fired — no association
+  })
+
+  it('is order-independent (the bond is unordered) and self-trained (unsupervised)', () => {
+    const s1: Synapses = new Map(); hebbianUpdate(s1, [A, B])
+    const s2: Synapses = new Map(); hebbianUpdate(s2, [B, A])
+    expect([...s1.keys()]).toEqual([...s2.keys()]) // merge(min,max) — order does not matter
   })
 })

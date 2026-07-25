@@ -22,6 +22,7 @@ import { linearGaps, entanglementScore } from '@/quantum'
 import { parseWithSecurity } from '@/agent/security'
 import { issueReceipt, type Receipt } from '@/receipt'
 import { neighborsOf } from '@/uuid/matrix'
+import { merge } from '@/merge'
 
 export interface ScienceStep {
   readonly science: string
@@ -458,6 +459,47 @@ export function runIntelligenceCli(argv: string[] = process.argv.slice(2)): numb
   console.log(formatIntelligenceLine(r))
   if (r.aborted) return 2
   return r.after.violationCount <= r.before.violationCount ? 0 : 1
+}
+
+// ── quantum neural intelligence — a Hebbian fold over the content-addressed mesh ──
+// The corpus already IS the network (mesh = neurons+edges, merge = activation, train =
+// learning). Quantum neural intelligence is the missing LEARNING leg, and it does itself:
+// atoms that fire together wire together. Each co-activation strengthens the bond
+// (merge(a,b) — the content-addressed edge) by `rate`; recall sums bonds to a cue and
+// returns the strongest association — the net's prediction. A FOLD, not a gradient:
+// unsupervised, self-training, content-addressed. This is the intelligence improving
+// itself from its own activations — "how to do yourself", quantum.
+
+/** A Hebbian synapse map: content-addressed edge (fold of the two atom uuids) → weight. */
+export type Synapses = Map<string, number>
+
+/** The unordered content-addressed bond between two atoms (order-independent). */
+const bond = (a: string, b: string): string => (a <= b ? merge(a, b) : merge(b, a))
+
+/** Fire-together-wire-together: strengthen every pair's bond in a co-activation by `rate`. */
+export function hebbianUpdate(synapses: Synapses, coactivated: readonly string[], rate = 1): Synapses {
+  for (let i = 0; i < coactivated.length; i++) {
+    for (let j = i + 1; j < coactivated.length; j++) {
+      const k = bond(coactivated[i]!, coactivated[j]!)
+      synapses.set(k, (synapses.get(k) ?? 0) + rate)
+    }
+  }
+  return synapses
+}
+
+/** Associative recall: the candidates most strongly bonded to the cue — the net's prediction. */
+export function recall(
+  synapses: Synapses,
+  cue: readonly string[],
+  candidates: readonly string[],
+  top = 3,
+): { readonly atom: string; readonly weight: number }[] {
+  return candidates
+    .filter((c) => !cue.includes(c))
+    .map((c) => ({ atom: c, weight: cue.reduce((w, q) => w + (synapses.get(bond(q, c)) ?? 0), 0) }))
+    .filter((x) => x.weight > 0)
+    .sort((a, b) => b.weight - a.weight)
+    .slice(0, top)
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) process.exit(runIntelligenceCli())
