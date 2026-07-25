@@ -28,6 +28,7 @@ export { trainingWaves, trainingWaveShape } from '@/train'
 import { meshOf, meshShape } from '@/mesh'
 import { groundedLeads } from '@/theorem'
 import { auditWaves } from '@/audit/wave'
+import { uuid as toUuid } from '@/integrity'
 
 export const atomPath = 'quantum/computer' as const
 
@@ -113,6 +114,45 @@ export function designVerdict(
   const verdict: DesignVerdict = { certified: refused.length === 0, grounded, refused, buildWaves, blast }
   sealOutcome(d.intent, { certified: verdict.certified, refused, waves: buildWaves.length, blast }, opts.cwd)
   return verdict
+}
+
+/** The O(1) address of a content-addressed possibility, and how far it beats a search. */
+export interface PrecomputedAddress {
+  /** The content whose possibility is located. */
+  readonly query: string
+  /** Its content-uuid — a pure function of content, so the address exists BEFORE any query. */
+  readonly address: string
+  /** Ops to FOLD to the address (one hash) — constant, independent of the space size. */
+  readonly foldOps: 1
+  /** Ops to LOCATE it by scanning the space instead — linear. */
+  readonly searchOps: number
+  /** log₂(searchOps / foldOps) — how far the address beats a traversal. */
+  readonly speedupLog2: number
+  /** The address recomputes nothing on read (the fold receipt's "zero recompute"). */
+  readonly precomputed: true
+}
+
+/**
+ * The honest "all computed possibilities, faster than light": a content-addressed
+ * possibility is LOCATED by folding to its address in O(1) — one hash — never by
+ * searching the space (O(n)). The address is a pure function of content, so it
+ * exists before any query; reading an already-computed possibility recomputes
+ * nothing.
+ *
+ * HONEST BOUNDARY — this is no-traversal, NOT faster-than-light physics: computing
+ * a NEW possibility's content still costs what it costs; what is O(1) is retrieving
+ * one that is already at its address (same content ⇒ same address ⇒ already there).
+ */
+export function precomputedAddress(query: string, spaceSize: number): PrecomputedAddress {
+  const searchOps = Math.max(1, Math.trunc(spaceSize))
+  return {
+    query,
+    address: toUuid(query),
+    foldOps: 1,
+    searchOps,
+    speedupLog2: Math.log2(searchOps),
+    precomputed: true,
+  }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

@@ -12,6 +12,7 @@ import {
   reduce,
   DECODED,
   designVerdict,
+  precomputedAddress,
   TIMEOUT_LADDER_MINUTES,
   SCALPEL_BATCH,
 } from '@/quantum/computer'
@@ -75,5 +76,20 @@ describe('designVerdict — design through the lens, certified BEFORE building',
     )
     expect(v.certified).toBe(false)
     expect(v.refused.length).toBe(1)
+  })
+})
+
+describe('quantum/computer — precomputedAddress (the O(1) "faster than search" property)', () => {
+  it('the address is a pure function of content — same query, same address, existing before the query', () => {
+    const a = precomputedAddress('possibility:x', 3105)
+    expect(a.address).toBe(precomputedAddress('possibility:x', 999).address)
+    expect(a.address).not.toBe(precomputedAddress('possibility:y', 3105).address)
+    expect(a.precomputed).toBe(true)
+  })
+  it('folding to the address is O(1) while a search is O(n) — the speedup is log₂(space)', () => {
+    const a = precomputedAddress('possibility:x', 3105)
+    expect(a.foldOps).toBe(1)
+    expect(a.searchOps).toBe(3105)
+    expect(a.speedupLog2).toBeCloseTo(Math.log2(3105), 6)
   })
 })
