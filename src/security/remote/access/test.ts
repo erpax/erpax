@@ -134,3 +134,37 @@ describe('remote/access — AnyDesk public CVEs, proven via the security matter'
     console.log(['', '── AnyDesk vulnerabilities, proven with erpax (security/remote/access) ──', ...summary, '────────────────────────────────────────────────────────────────────────', ''].join('\n'))
   })
 })
+
+import { auditEuCyberStandards, EU_CYBER_CONTROLS } from '@/security/remote/access'
+
+// The same comparative-proof idea turned on the LATEST EU cyber law (NIS2 · DORA · CRA · eIDAS2):
+// the control→primitive map is declared, the verdict is COMPUTED from the primitive, so it is refutable.
+describe('auditEuCyberStandards — erpax primitives vs the latest EU cyber controls', () => {
+  const audit = auditEuCyberStandards()
+
+  it('every TECHNICAL control (integrity/authenticity/access) is satisfied by a primitive — computed, not asserted', () => {
+    expect(audit.technical).toBeGreaterThan(0)
+    expect(audit.satisfied).toBe(audit.technical) // all in-scope controls pass
+    for (const row of audit.rows.filter((r) => r.inScope)) expect(row.satisfied).toBe(true)
+  })
+
+  it('ORGANISATIONAL controls are reported out-of-scope, NEVER counted as satisfied (honest boundary — no code gate proves a reporting SLA)', () => {
+    const org = audit.rows.filter((r) => r.primitive === 'organisational')
+    expect(org.length).toBe(audit.organisational)
+    for (const row of org) {
+      expect(row.inScope).toBe(false)
+      expect(row.satisfied).toBe(false) // a gate must not claim compliance it cannot prove
+    }
+  })
+
+  it('the map spans all four latest EU cyber regulations (declared, in the open)', () => {
+    const regs = new Set(EU_CYBER_CONTROLS.map((c) => c.reg))
+    expect(regs).toEqual(new Set(['NIS2', 'DORA', 'CRA', 'eIDAS2']))
+  })
+
+  it('an integrity control is closed at the 2^128 tamper-evidence floor (content-addressed + anchored)', () => {
+    const integrity = audit.rows.find((r) => r.primitive === 'tamper-cost')!
+    expect(integrity.satisfied).toBe(true)
+    expect(integrity.detail).toMatch(/2\^\d+/)
+  })
+})

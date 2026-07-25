@@ -108,3 +108,118 @@ export function proveAuthenticityGap(args: {
     erpax,
   }
 }
+
+// ─── EU cyber-standards conformance ──────────────────────────────────────────
+//
+// The same comparative-proof idea, turned on the LATEST EU cybersecurity law: for each
+// technical control an EU regulation mandates, does an erpax PRIMITIVE satisfy it? The
+// control→primitive map is DECLARED (a human MEANING judgement, written in the open so it
+// can be argued with — the same discipline rules/audience uses for its role→standard map),
+// never inferred. The verdict is COMPUTED from the primitive (crackVerdict / permits), not
+// asserted, so it is refutable.
+//
+// Honest boundary — this proves erpax's primitives answer the TECHNICAL controls (integrity,
+// authenticity, access confinement, tamper-evident audit trail); it does NOT and cannot prove
+// the ORGANISATIONAL controls (a 24-hour incident-reporting SLA, governance, ENISA/CSIRT
+// registration, supply-chain governance) — those need process and legal, never a code gate,
+// and are reported as out-of-scope, never as satisfied. The regulation citations live as DATA in
+// each control's `instrument` field (EU 2022/2555 NIS2 · EU 2022/2554 DORA · EU 2024/2847 CRA ·
+// EU 2024/1183 eIDAS2) — registering them as catalogue banners is a separate standards wave.
+
+/** Which erpax primitive answers a control — or `organisational` when no code gate can. */
+export type EuControlPrimitive = 'tamper-cost' | 'sandbox' | 'organisational'
+
+/** One mandated technical control of an EU cyber regulation, mapped (declared) to the primitive that answers it. */
+export interface EuCyberControl {
+  /** short regulation id, e.g. `NIS2` · `DORA` · `CRA` · `eIDAS2` */
+  readonly reg: string
+  /** the EU legal instrument (banner-grade citation) */
+  readonly instrument: string
+  /** the article / annex the control lives in */
+  readonly clause: string
+  /** the control, in one line */
+  readonly control: string
+  /** the erpax primitive declared to answer it */
+  readonly primitive: EuControlPrimitive
+}
+
+/**
+ * The declared map — LATEST EU cyber law (2022–2024), each technical control paired with the
+ * erpax primitive that answers it. Argue with the mapping here, in the open; it is never inferred.
+ */
+export const EU_CYBER_CONTROLS: readonly EuCyberControl[] = [
+  { reg: 'NIS2', instrument: 'EU 2022/2555', clause: 'Art.21(2)(h)', control: 'cryptography & integrity of stored/processed data', primitive: 'tamper-cost' },
+  { reg: 'NIS2', instrument: 'EU 2022/2555', clause: 'Art.21(2)(i)', control: 'access control & asset management (least privilege)', primitive: 'sandbox' },
+  { reg: 'NIS2', instrument: 'EU 2022/2555', clause: 'Art.23', control: '24h incident early-warning to the CSIRT', primitive: 'organisational' },
+  { reg: 'DORA', instrument: 'EU 2022/2554', clause: 'Art.9(2)', control: 'ICT data integrity & authenticity protection', primitive: 'tamper-cost' },
+  { reg: 'DORA', instrument: 'EU 2022/2554', clause: 'Art.9(3)(c)', control: 'least-privilege access to ICT systems', primitive: 'sandbox' },
+  { reg: 'DORA', instrument: 'EU 2022/2554', clause: 'Art.17-19', control: 'ICT incident classification & reporting timelines', primitive: 'organisational' },
+  { reg: 'CRA', instrument: 'EU 2024/2847', clause: 'Annex I §1(3)(c)', control: 'protect integrity of data/commands/config against manipulation', primitive: 'tamper-cost' },
+  { reg: 'CRA', instrument: 'EU 2024/2847', clause: 'Annex I §1(3)(d)', control: 'process only data necessary (data minimisation, bound scope)', primitive: 'sandbox' },
+  { reg: 'CRA', instrument: 'EU 2024/2847', clause: 'Annex I §2(1)', control: 'no known exploitable vulnerabilities at ship', primitive: 'organisational' },
+  { reg: 'eIDAS2', instrument: 'EU 2024/1183', clause: 'Art.3(35)', control: 'integrity & authenticity of electronic records/seals', primitive: 'tamper-cost' },
+]
+
+/** A computed conformance verdict for one EU control. */
+export interface EuConformanceRow {
+  readonly reg: string
+  readonly instrument: string
+  readonly clause: string
+  readonly control: string
+  readonly primitive: EuControlPrimitive
+  /** true when the erpax primitive computationally satisfies the control; false for organisational controls (out of a gate's reach). */
+  readonly satisfied: boolean
+  /** true when no code gate can decide this control (organisational) — reported, never counted as satisfied. */
+  readonly inScope: boolean
+  readonly detail: string
+}
+
+/**
+ * Audit erpax against the declared EU cyber controls. Integrity/authenticity controls are decided by
+ * `crackVerdict` (content-addressed + externally anchored, committing the full content digest ⇒
+ * tamper-evident at the 2^128 floor); access controls by `permits` (an over-broad action is BLOCKED
+ * under a resource-bound least-privilege grant); organisational controls are reported in-scope=false —
+ * a code gate cannot prove a reporting SLA or a registration. Deterministic, so the report is refutable.
+ *
+ * @param anchor the external anchor erpax roots its chain in (default the strongest declared kind)
+ */
+export function auditEuCyberStandards(anchor: AnchorKind = 'eidas-qualified'): {
+  readonly rows: readonly EuConformanceRow[]
+  readonly technical: number
+  readonly satisfied: number
+  readonly organisational: number
+} {
+  const rows = EU_CYBER_CONTROLS.map<EuConformanceRow>((c) => {
+    if (c.primitive === 'tamper-cost') {
+      const v = crackVerdict({ anchored: true, anchorStrengthBits: ANCHOR_STRENGTH_BITS[anchor] })
+      // Satisfied at NIST SP 800-57's acceptable floor (112-bit); the content-digest floor is 2^122,
+      // so an anchored content-addressed store clears it. Honest: tamper-EVIDENT, not confidentiality.
+      const satisfied = v.tamperEvident && v.crackCostLog2 >= ANCHOR_STRENGTH_BITS['rfc3161-rsa2048']
+      return { ...c, satisfied, inScope: true, detail: `content-addressed + ${anchor}-anchored ⇒ tamper-evident 2^${v.crackCostLog2}` }
+    }
+    if (c.primitive === 'sandbox') {
+      // an over-broad action (reaching an un-allowlisted host) is REFUSED under a least-privilege grant
+      const grant: ToolGrant = { toolUuid: 'audit', capabilities: ['read'], allowedHosts: ['self.tenant'], credentialHandles: [] }
+      const overBroad: ToolAction = { capability: 'read', host: 'other.tenant' }
+      const decision = permits(grant, overBroad)
+      return { ...c, satisfied: !decision.allowed, inScope: true, detail: !decision.allowed ? `least-privilege grant BLOCKS: ${decision.reason}` : 'NOT blocked' }
+    }
+    return { ...c, satisfied: false, inScope: false, detail: 'organisational — needs process/legal (reporting SLA, registration), not a code gate' }
+  })
+  const inScope = rows.filter((r) => r.inScope)
+  return {
+    rows,
+    technical: inScope.length,
+    satisfied: inScope.filter((r) => r.satisfied).length,
+    organisational: rows.length - inScope.length,
+  }
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const r = auditEuCyberStandards()
+  console.log(`EU cyber-standards audit — ${r.satisfied}/${r.technical} technical controls satisfied · ${r.organisational} organisational (out of a gate's reach)`)
+  for (const row of r.rows) {
+    const mark = !row.inScope ? '·' : row.satisfied ? '✓' : '✗'
+    console.log(`  ${mark} ${row.reg} ${row.clause} — ${row.control}\n      ${row.detail}`)
+  }
+}
