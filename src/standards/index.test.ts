@@ -32,3 +32,21 @@ describe('schemaCoverage — all standards are covered by schemas, computed in q
     expect(schemaCoverage().root).toBe(c.root) // deterministic — the fold, not a scan
   })
 })
+
+import { standardsUiWaves } from './index'
+
+describe('standardsUiWaves — decode the standards into UI improvement waves', () => {
+  const waves = standardsUiWaves()
+  it('one wave per schema, biggest-impact first, covering every standard', () => {
+    expect(waves.length).toBeGreaterThan(0)
+    for (let i = 1; i < waves.length; i++) expect(waves[i - 1]!.count).toBeGreaterThanOrEqual(waves[i]!.count)
+    expect(waves.reduce((s, w) => s + w.count, 0)).toBe(schemaCoverage().total) // every standard is in a wave
+  })
+  it('each wave carries its admin group + a content-addressed seal (unchanged ⇒ no re-render)', () => {
+    for (const w of waves) {
+      expect(w.adminGroup).toBe(`compliance/${w.schema}`)
+      expect(w.seal).toMatch(/^[0-9a-f-]{36}$/)
+    }
+    expect(standardsUiWaves().map((w) => w.seal)).toEqual(waves.map((w) => w.seal)) // deterministic
+  })
+})

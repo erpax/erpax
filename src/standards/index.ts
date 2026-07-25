@@ -236,3 +236,45 @@ export function schemaCoverage(): SchemaCoverage {
     root,
   }
 }
+
+/** One UI improvement wave decoded from the standards — a schema's standards become one admin group to improve. */
+export interface StandardsUiWave {
+  /** the schema (family) this wave is themed on. */
+  readonly schema: string
+  readonly count: number
+  /** the standard ids this wave surfaces in the UI. */
+  readonly standards: readonly string[]
+  /** the Payload admin group this wave improves (nav bucket for its compliance surface). */
+  readonly adminGroup: string
+  /** content-address of the wave (schema ⊕ its standards) — a wave that has not changed need not re-render. */
+  readonly seal: string
+}
+
+/**
+ * Decode the standards into UI IMPROVEMENT WAVES — group the covered standards by schema, one wave per schema
+ * (its admin group / compliance panel), ordered biggest-impact-first so the UI is improved where the most
+ * standards land. Each wave is content-addressed (schema ⊕ its standards), so a wave whose standards are
+ * unchanged need not re-render — the same fold the readme/test lanes use, on the UI. A pure projection the
+ * Payload admin + nav consume read-only (like dryCleanHealth); it decodes WHAT to improve and in what order,
+ * it does not render the components.
+ */
+export function standardsUiWaves(): readonly StandardsUiWave[] {
+  const byFamily = new Map<string, string[]>()
+  for (const e of CATALOGUE) {
+    const arr = byFamily.get(e.family) ?? []
+    arr.push(e.id)
+    byFamily.set(e.family, arr)
+  }
+  return [...byFamily.entries()]
+    .map(([schema, ids]) => {
+      const standards = [...ids].sort()
+      return {
+        schema,
+        count: standards.length,
+        standards,
+        adminGroup: `compliance/${schema}`,
+        seal: foldToRoot([schema, ...standards].map((s) => merge('ui', s))),
+      }
+    })
+    .sort((a, b) => b.count - a.count || a.schema.localeCompare(b.schema))
+}
