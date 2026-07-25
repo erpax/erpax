@@ -14,6 +14,7 @@ import { HORO_DIGITS, type HoroStep } from '@/horo'
 import { intervalRatio, tenneyHeight } from '@/harmony'
 import { bind4 } from '@/merge'
 import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'
+import { consensusProof } from '@/theorem'
 import {
   sealSecret,
   decryptIfUuid,
@@ -193,6 +194,27 @@ export const sessionAppend = (s: ChatSession, message: string): ChatSession => {
 
 /** Seal the session — its thread-uuid is the tamper-evident record persisted to Payload. */
 export const sealSession = (s: ChatSession): ChatSession => ({ ...s, sealed: true })
+
+/**
+ * Let all develop itself through the chat in COLLABORATIVE TEAMS: a proposal folds into the
+ * session only when a 2f+1 quorum of the team agrees (theorem.consensusProof — "three minds form
+ * a higher mind"). No single agent, and no operator, decides alone; the session records only what
+ * the team compiled. Self-development gated by consensus.
+ */
+export function collaborate(
+  session: ChatSession,
+  proposal: string,
+  verdicts: readonly boolean[],
+): { readonly session: ChatSession; readonly accepted: boolean; readonly reason: string } {
+  const { compiled, reason } = consensusProof(verdicts)
+  if (!compiled) return { session, accepted: false, reason }
+  const agree = verdicts.filter(Boolean).length
+  return {
+    session: sessionAppend(session, `team consensus (${agree}/${verdicts.length}): ${proposal}`),
+    accepted: true,
+    reason,
+  }
+}
 
 // ── voice & video in chat — one modality-tagged path ─────────────────────────
 // A voice or video message is MEDIA that carries a TRANSCRIPT (speech-to-text) or

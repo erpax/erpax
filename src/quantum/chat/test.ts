@@ -8,7 +8,7 @@ import {
   deepResearch,
   accessibleByStandard, chatInvokeByStandard, assertDefaultsToChat, DefaultToChatViolation,
   crackTheorem, improveClaim, chatMcpFold,
-  startSession, sessionAppend, sealSession,
+  startSession, sessionAppend, sealSession, collaborate,
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
   compose, superpose,
   type Transcriber,
@@ -78,6 +78,15 @@ describe('quantum/chat — chat sessions: the bounded sealed unit that improves 
     s = sealSession(s)
     expect(s.sealed).toBe(true)
     expect(s.messageUuids.length).toBe(2) // seed + the one improvement
+  })
+  it('collaborative teams: a proposal folds only on 2f+1 consensus (no single decider)', () => {
+    const s = startSession('develop-products')
+    const quorum = collaborate(s, 'add product X', [true, true, true]) // 3/3 agree
+    expect(quorum.accepted).toBe(true)
+    expect(quorum.session.messageUuids.length).toBe(2) // folded into the session
+    const split = collaborate(s, 'risky change', [true, false, false]) // no quorum
+    expect(split.accepted).toBe(false)
+    expect(split.session.messageUuids.length).toBe(1) // NOT folded — the team refused
   })
 })
 
