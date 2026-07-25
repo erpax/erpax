@@ -342,6 +342,10 @@ const pairSegments = (segments: readonly LinearSegment[]): LinearSegment[] => {
     list.push(s)
     byShape.set(s.shape, list)
   }
+  // Key by the EXACT path+shape, never linearId: linearId folds the path through a 64-bit hash, and two
+  // distinct files can collide there — which made both paired segments resolve to the SAME entry, so only
+  // one of a duplicate pair was ever folded (the other kept its copy). The exact string cannot collide.
+  const keyOf = (s: LinearSegment): string => `${s.path} ${s.shape}`
   const paired = new Map<string, LinearSegment>()
   for (const [, list] of byShape) {
     if (list.length < 2) continue
@@ -349,10 +353,10 @@ const pairSegments = (segments: readonly LinearSegment[]): LinearSegment[] => {
     for (let i = 0; i < sorted.length; i++) {
       const a = sorted[i]!
       const b = sorted[(i + 1) % sorted.length]!
-      if (a.path !== b.path) paired.set(a.linearId, { ...a, pairedWith: b.path })
+      if (a.path !== b.path) paired.set(keyOf(a), { ...a, pairedWith: b.path })
     }
   }
-  return segments.map((s) => paired.get(s.linearId) ?? s)
+  return segments.map((s) => paired.get(keyOf(s)) ?? s)
 }
 
 export function foldLinearPair(a: LinearSegment, b: LinearSegment): FoldedLinearPair {

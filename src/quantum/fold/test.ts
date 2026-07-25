@@ -82,12 +82,15 @@ export const x = measureOf(4)
     expect(readFileSync(join(cwd, 'src/one/index.ts'), 'utf8')).toContain('horoMeasureOf')
   })
 
-  it('foldLinearPair stub returns null until pairs are wired', () => {
+  it('foldLinearPair returns the fold plan — the merged export, target and runner from the registry', () => {
     const folded = foldLinearPair(
       { linearId: 'a', path: 'a.ts', kind: 'duplicate-helper', shape: 'measureOf', foldHint: 'fold' },
       { linearId: 'b', path: 'b.ts', kind: 'duplicate-helper', shape: 'measureOf', foldHint: 'fold' },
     )
-    expect(folded).toBeNull()
+    // no longer a null stub — a measureOf pair folds to horoMeasureOf from @/horo
+    expect(folded.mergedExport).toBe('horoMeasureOf')
+    expect(folded.runner).toBe('@/horo')
+    expect(folded.bond).toMatch(/^[0-9a-f]+$/)
   })
 
   describe('linear gaps', () => {
