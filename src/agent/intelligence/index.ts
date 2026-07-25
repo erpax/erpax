@@ -64,7 +64,7 @@ export interface SelfImproveCycleResult {
 }
 
 const SCIENCE_CURRICULUM: readonly ScienceStep[] = [
-  { science: 'entropy', module: '@/accounting/entropy-proof', proof: 'freeEnergyFromEntropy' },
+  { science: 'entropy', module: '@/entropy', proof: 'freeEnergyFromEntropy' },
   { science: 'entanglement', module: '@/quantum/word', proof: 'interact64' },
   { science: 'fold', module: '@/quantum/fold', proof: 'doubleFold' },
   { science: 'holographic', module: '@/readme/compute', proof: 'deriveFolderModel' },

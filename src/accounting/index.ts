@@ -79,17 +79,6 @@ export {
 } from './corpus'
 export type { CorpusJournalEntryDocument, CorpusJournalLine } from './corpus'
 export {
-  freeEnergyFromEntropy,
-  proveFreeEnergyFromZeroEntropy,
-  entropyProofMarkdown,
-  corpusEntropyBits,
-  fMaxFromBindings,
-  freeEnergyBitsAt,
-  freeEnergySampleTable,
-  UNITY_HORO_STEP,
-} from './entropy-proof'
-export type { FreeEnergyFromEntropyVerdict, FreeEnergyProof, ProofStep } from './entropy-proof'
-export {
   accountingGapsInWaves,
   waveAccountingGapViolations,
   fixAccountingGapsOnP0,

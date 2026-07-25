@@ -27,7 +27,7 @@ import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 import { HORO_DIGITS, composeSteps, horoRatio } from '@/horo'
 import { deriveCorpusAnalytics, type CorpusAnalytics } from '@/readme'
-import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
+import { freeEnergyFromEntropy } from '@/entropy'
 import {
   maxWorkTamperPolicy,
   tamperCostLog2ForCoverage,

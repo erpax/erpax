@@ -24,7 +24,7 @@ import { verifySkillFrontmatter } from '@/skill/router/upgrade'
 import { alcapsBaselineViolations } from './baseline-debt'
 import { deriveCorpusAnalytics } from '@/readme/compute'
 import { rulesOf } from '@/rules'
-import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
+import { freeEnergyFromEntropy } from '@/entropy'
 import { loadEfficiencyStore } from '@/apply/efficiency'
 
 /** ALCAPS seal-debt coordinate — ratchet.generated.ts emit via computedBaseline. */

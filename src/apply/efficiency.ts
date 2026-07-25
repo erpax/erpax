@@ -15,7 +15,7 @@ import { clearRulesCache, rulesOf } from '@/rules'
 import { topConcentrations } from '@/rules/concentration'
 import { scanViolationsRealtime } from '@/monitor/violations'
 import { deriveCorpusAnalytics } from '@/readme/compute'
-import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
+import { freeEnergyFromEntropy } from '@/entropy'
 
 /** Canonical dispatch probe — stable hub atom for skill-context bytes. */
 export const EFFICIENCY_SKILL_PROBE = 'src/rules/index.ts'

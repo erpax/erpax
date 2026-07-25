@@ -14,7 +14,7 @@
  * @see ../seal — ../horo — ../entropy — ./SKILL.md
  */
 import { horoRatio, isHoroStep, type HoroStep } from '@/horo'
-import { entropyProofMarkdown } from '@/accounting/entropy-proof'
+import { entropyProofMarkdown } from '@/entropy'
 import { folderNameValid, trinityStateOf, type PivotFolderInput } from '@/pivot'
 import type { DiamondMembershipViolation } from '@/diamond/membership'
 import { COMPARABLE_UNIT, LANDAUER_BIT } from './entropy-unit'
