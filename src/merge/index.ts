@@ -225,6 +225,37 @@ export function objectLeaves(obj: ErpaxObject): string[] {
   return obj.kind === 'leaf' ? [obj.content] : obj.parts.flatMap(objectLeaves)
 }
 
+/**
+ * The SIGNIFICANCE of an object — the matter it is composed of (its leaf count): a leaf is 1, a combination the
+ * sum of its parts'. It is what the world must ALLOCATE to hold the object — an organism of more cells demands more.
+ */
+export function significance(obj: ErpaxObject): number {
+  return obj.kind === 'leaf' ? 1 : obj.parts.reduce((sum, p) => sum + significance(p), 0)
+}
+
+/** One object's place in the resource map — its address, its significance, and its SHARE of the world's total. */
+export interface ResourceShare {
+  readonly address: string
+  readonly significance: number
+  /** significance / total — a relative share in [0,1], so it is remade whenever the set of objects changes. */
+  readonly share: number
+}
+
+/**
+ * The RESOURCE MAP of a world of objects — each object's share of total significance. Significance is RELATIVE:
+ * a share is against the whole, so with each discovery the map changes — adding an object dilutes every existing
+ * share and gives the newcomer its own. That is the law "with each discovery the resource map changes as
+ * significance": nothing has an absolute weight, only a weight relative to everything else discovered so far, so
+ * the act of discovery redistributes the whole map. Shares sum to 1 (or the map is empty).
+ *
+ * @invariant shares sum to 1 over a non-empty map · adding an object changes every prior share (significance is relative)
+ */
+export function resourceMap(objects: readonly ErpaxObject[]): ResourceShare[] {
+  const sig = objects.map((o) => ({ address: objectAddress(o), significance: significance(o) }))
+  const total = sig.reduce((s, x) => s + x.significance, 0)
+  return sig.map((x) => ({ ...x, share: total ? x.significance / total : 0 }))
+}
+
 /** One step of an authentication path: the sibling to fold with, and whether it sits on the right. */
 export interface MerkleStep {
   readonly sibling: string

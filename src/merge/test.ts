@@ -196,3 +196,32 @@ describe('object fold — an object may be a combination of objects (content-add
     expect(objectAddress(combineObjects(cell))).toBe(objectAddress(cell))
   })
 })
+
+import { significance, resourceMap } from '@/merge'
+
+describe('resource map — with each discovery the map changes as significance (relative, not absolute)', () => {
+  const cellA = combineObjects(leafObject('h2o'), leafObject('atp'))
+  const cellB = combineObjects(leafObject('dna'), leafObject('rna'), leafObject('protein'))
+  it('significance is the matter (leaf count): a leaf is 1, a combination the sum of parts', () => {
+    expect(significance(leafObject('x'))).toBe(1)
+    expect(significance(cellA)).toBe(2)
+    expect(significance(cellB)).toBe(3)
+  })
+  it('shares sum to 1 over a non-empty map', () => {
+    const map = resourceMap([cellA, cellB])
+    expect(map.reduce((s, r) => s + r.share, 0)).toBeCloseTo(1)
+    expect(map[0]!.share).toBeCloseTo(2 / 5)
+    expect(map[1]!.share).toBeCloseTo(3 / 5)
+  })
+  it('a NEW discovery changes every prior share — the map is remade (significance is relative)', () => {
+    const before = resourceMap([cellA, cellB])
+    const newcomer = combineObjects(leafObject('a'), leafObject('b'), leafObject('c'), leafObject('d'), leafObject('e'))
+    const after = resourceMap([cellA, cellB, newcomer])
+    expect(after[0]!.share).toBeLessThan(before[0]!.share) // cellA diluted by the discovery
+    expect(after[1]!.share).toBeLessThan(before[1]!.share) // cellB diluted too
+    expect(after[2]!.share).toBeCloseTo(5 / 10) // the newcomer's own weight
+  })
+  it('an empty world has an empty map (no significance to allocate)', () => {
+    expect(resourceMap([])).toEqual([])
+  })
+})
