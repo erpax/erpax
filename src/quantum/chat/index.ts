@@ -346,6 +346,55 @@ export async function crackTheorem(
   }
 }
 
+// ── improve a claim for all — the refutable law as a chat action ──────────────
+// A bare assertion is not a claim; a REFUTABLE one is ([[rules]]/refutable: a claim
+// with no proof beside it forbids nothing). improveClaim runs the claim through the
+// cracker: a crack REFUTES it (refutability proven — the claim is false, and the
+// crack is its correction), no crack leaves it unrefuted-but-UNPROVEN — which by the
+// refutable law is decoration until a proof is attached. Either way the assertion is
+// improved into a refutable claim, folded into the thread for everyone.
+
+export type ClaimStatus = 'refuted' | 'unrefuted-unproven'
+
+export interface ClaimVerdict {
+  readonly claim: string
+  readonly status: ClaimStatus
+  /** the crack that refuted it, when refuted. */
+  readonly refutation?: string
+  /** what turns this into a better (refutable) claim, for all. */
+  readonly improvement: string
+  readonly thread: string
+  readonly messageUuids: readonly string[]
+}
+
+/** Improve a claim for all: crack it across a domain, then state its refutability + how to raise it. */
+export async function improveClaim(
+  seed: readonly string[],
+  probe: (x: string) => Promise<{ cracked: boolean; why: string }> | { cracked: boolean; why: string },
+  claim: string,
+  probes: readonly string[],
+): Promise<ClaimVerdict> {
+  const cracked = await crackTheorem(seed, probe, probes)
+  if (cracked.cracks.length > 0) {
+    return {
+      claim,
+      status: 'refuted',
+      refutation: cracked.cracks[0]!.why,
+      improvement: 'refuted — replace the assertion with the corrected claim the crack reveals',
+      thread: cracked.thread,
+      messageUuids: cracked.messageUuids,
+    }
+  }
+  const folded = improve(cracked.messageUuids, `claim holds over ${probes.length} probe(s): ${claim} — attach a proof to make it a law`)
+  return {
+    claim,
+    status: 'unrefuted-unproven',
+    improvement: 'unrefuted over the probed domain — by rules/refutable it is decoration until a proof (test) is attached',
+    thread: folded.thread,
+    messageUuids: folded.messageUuids,
+  }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chat — thread = merkle chain of message-uuids:')
   console.log('  thread([a,b]) = ' + threadUuid(['a', 'b']).slice(0, 8) + '… · appended changes it = ' + appended(['a', 'b'], 'c'))

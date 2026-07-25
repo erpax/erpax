@@ -7,7 +7,7 @@ import {
   chatToolNames, chatInvoke,
   deepResearch,
   accessibleByStandard, chatInvokeByStandard,
-  crackTheorem,
+  crackTheorem, improveClaim,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
@@ -198,5 +198,23 @@ describe('quantum/chat — crackTheorem: invention by falsification (the crack i
     }
     await crackTheorem([], probe, ['slow', 'fast'])
     expect(order[0]).toBe('fast') // parallel
+  })
+})
+
+describe('quantum/chat — improveClaim: turn an assertion into a refutable claim, for all', () => {
+  it('a crack refutes the claim and names the correction', async () => {
+    const probe = (x: string) => ({ cracked: x === 'counterexample', why: `${x} refutes it` })
+    const v = await improveClaim([], probe, 'all X are Y', ['a', 'counterexample', 'b'])
+    expect(v.status).toBe('refuted')
+    expect(v.refutation).toMatch(/counterexample refutes it/)
+    expect(v.improvement).toMatch(/corrected claim/)
+  })
+
+  it('an unrefuted claim is not yet a law — refutable demands a proof', async () => {
+    const probe = () => ({ cracked: false, why: 'passes' })
+    const v = await improveClaim([], probe, 'debits equal credits', ['je-1', 'je-2'])
+    expect(v.status).toBe('unrefuted-unproven')
+    expect(v.improvement).toMatch(/refutable|proof/)
+    expect(v.thread).toMatch(/^[0-9a-f]{8}-/) // folded for all (tamper-evident)
   })
 })
