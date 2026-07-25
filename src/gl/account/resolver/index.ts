@@ -27,8 +27,8 @@
  * @audit ISO-19011:2018 audit-trail account-resolution
  * @compliance SOX §404 internal-controls per-tenant-coa
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/services/gl-posting.service.ts
- * @see src/services/gl-account.service.ts
+ * @see src/journal/entry/service (the GL posting path that resolves codes here)
+ * @see src/gl/posting/rules
  */
 
 import type { Payload } from 'payload'
@@ -64,7 +64,7 @@ export type GlAccountRole =
  * when a tenant's chart of accounts mutates (afterChange hook on
  * `gl-accounts` should call it).
  */
-const cache = new Map<string, Map<GlAccountRole, string | number>>()
+const cache = new Map<string, Map<string, string | number>>()
 
 /**
  * Resolve a {@link GlAccountRole} to the tenant's actual `gl-accounts` id.
@@ -76,12 +76,15 @@ const cache = new Map<string, Map<GlAccountRole, string | number>>()
 export async function resolveGlAccount(
   payload: Payload,
   tenantId: string | number,
-  role: GlAccountRole,
+  // The canonical roles keep autocomplete, but ANY account code resolves — the GL posting path passes
+  // caller codes (e.g. 'depreciation_expense') that are `role` values on the tenant's chart of accounts,
+  // not members of the fixed enum. Widen to string so one resolver routes every code → the account uuid.
+  role: GlAccountRole | (string & {}),
 ): Promise<string | number> {
   const cacheKey = String(tenantId)
   let tenantCache = cache.get(cacheKey)
   if (!tenantCache) {
-    tenantCache = new Map<GlAccountRole, string | number>()
+    tenantCache = new Map<string, string | number>()
     cache.set(cacheKey, tenantCache)
   }
   const cached = tenantCache.get(role)

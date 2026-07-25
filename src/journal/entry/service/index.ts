@@ -17,11 +17,12 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
  * @security ISO-27002 §5.4 segregation-of-duties
- * @see docs/STANDARDS.md §4.2 ; src/collections/JournalEntries.ts (the enforcing hooks)
+ * @see docs/STANDARDS.md §4.2 ; src/journal/entries (the enforcing hooks)
  */
 
 import type { Payload, RequiredDataFromCollectionSlug } from 'payload';
 import { getPayload } from 'payload';
+import { resolveGlAccount } from '@/gl/account/resolver';
 
 export interface JournalEntryLine {
   id?: string;
@@ -165,6 +166,14 @@ class JournalEntryService {
   async createEntry(tenantId: string, request: CreateJournalEntryRequest): Promise<JournalEntry> {
     const payload = await this.db();
     const entryNumber = await this.generateEntryNumber(payload, tenantId);
+    // Resolve each caller accountId (a canonical role or account code) to the tenant's actual
+    // gl-accounts uuid — the schema's glAccount is a relationship, so a bare code never validates.
+    const resolvedLines = await Promise.all(
+      request.lines.map(async (l, i) => ({
+        ...toLine(l, i),
+        glAccount: String(await resolveGlAccount(payload, tenantId, l.accountId)),
+      })),
+    );
     const doc = (await payload.create({
       collection: 'journal-entries',
       overrideAccess: true,
@@ -175,7 +184,7 @@ class JournalEntryService {
           request.entryDate instanceof Date ? request.entryDate.toISOString() : request.entryDate,
         description: request.description,
         status: 'draft',
-        lines: request.lines.map(toLine),
+        lines: resolvedLines,
         sourceType: request.sourceType,
         sourceId: request.sourceId,
         sourceEvent: request.sourceEvent,

@@ -4541,8 +4541,8 @@ src/journal/entries/rounding/adjustments/index.ts:14: * @accounting US-GAAP ASC-
 src/journal/entry/service/index.ts:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/journal/entry/service/index.ts:15: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/journal/entry/service/index.ts:16: * @accounting OECD SAF-T §3 journal-entries
-src/journal/entry/service/index.ts:35:   * @accounting IFRS IFRS-8 operating-segments
-src/journal/entry/service/index.ts:36:   * @accounting US-GAAP ASC-280 segment-reporting
+src/journal/entry/service/index.ts:36:   * @accounting IFRS IFRS-8 operating-segments
+src/journal/entry/service/index.ts:37:   * @accounting US-GAAP ASC-280 segment-reporting
 src/leads/opportunities/index.ts:11: * @accounting IFRS IFRS-15 §9 contract-existence-criteria
 src/lease/service/index.ts:104: * @accounting IFRS IFRS-16 §26 present-value-of-payments
 src/lease/service/index.ts:158: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
