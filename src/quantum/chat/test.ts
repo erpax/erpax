@@ -7,6 +7,7 @@ import {
   chatToolNames, chatInvoke,
   deepResearch,
   accessibleByStandard, chatInvokeByStandard,
+  crackTheorem,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
@@ -166,5 +167,36 @@ describe('quantum/chat — fuse all accessible BY STANDARD (the legal-surface ga
     expect(no.refused).toBe(true)
     expect(no.result).toBeUndefined()
     expect(no.thread).not.toBe(ok.thread) // the refusal is folded into the thread (auditable)
+  })
+})
+
+describe('quantum/chat — crackTheorem: invention by falsification (the crack is the lead)', () => {
+  it('a probe that fails is a crack, and the crack becomes an invention lead', async () => {
+    // theorem: "every value is even" — cracks on the odd probe
+    const probe = (x: string) => ({ cracked: x.startsWith('odd'), why: `${x} refutes evenness` })
+    const r = await crackTheorem([], probe, ['even-2', 'odd-3', 'even-4'])
+    expect(r.holds).toBe(false)
+    expect(r.cracks.map((c) => c.probe)).toEqual(['odd-3'])
+    expect(r.inventions[0]).toMatch(/close the boundary: odd-3/)
+    expect(r.thread).toMatch(/^[0-9a-f]{8}-/)
+  })
+
+  it('a claim that cracks nowhere in the probed domain HOLDS — over that domain only (bounded witness)', async () => {
+    const probe = (x: string) => ({ cracked: false, why: `${x} passes` })
+    const r = await crackTheorem([], probe, ['a', 'b', 'c'])
+    expect(r.holds).toBe(true)
+    expect(r.cracks).toEqual([])
+    expect(r.inventions).toEqual([])
+  })
+
+  it('probes crack concurrently (async falsification fans out)', async () => {
+    const order: string[] = []
+    const probe = async (x: string) => {
+      await new Promise((res) => setTimeout(res, x === 'slow' ? 25 : 1))
+      order.push(x)
+      return { cracked: true, why: x }
+    }
+    await crackTheorem([], probe, ['slow', 'fast'])
+    expect(order[0]).toBe('fast') // parallel
   })
 })

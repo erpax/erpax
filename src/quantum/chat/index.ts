@@ -297,6 +297,55 @@ export async function deepResearch(
   return { findings, thread: threadUuid(messageUuids), messageUuids, depthReached, coverage: coverageOfOriginal }
 }
 
+// ── invention by cracking theorems ───────────────────────────────────────────
+// Every theorem this corpus kept was found by CRACKING the last one: a gate caught
+// its own author, a claim met a counterexample, and the crack pointed straight at the
+// next theorem. Invention is not addition — it is falsification that lands somewhere.
+// crackTheorem probes a claim across a domain IN PARALLEL; each probe that fails is a
+// crack, folded into the thread as an INVENTION LEAD (the boundary the next theorem must
+// close). A claim that cracks nowhere in the probed domain holds OVER THAT DOMAIN — the
+// honest limit is the domain (bounded witness), never a proof of universality.
+
+export interface TheoremCrack {
+  readonly probe: string
+  readonly cracked: boolean
+  readonly why: string
+}
+
+/**
+ * Crack a theorem through the chat: probe its claim in parallel; the cracks ARE the
+ * invention frontier. `probe` returns whether the claim fails at that point and why —
+ * a counterexample is a crack, and the crack is the lead the next theorem closes.
+ */
+export async function crackTheorem(
+  seed: readonly string[],
+  probe: (x: string) => Promise<{ cracked: boolean; why: string }> | { cracked: boolean; why: string },
+  probes: readonly string[],
+): Promise<{
+  readonly cracks: readonly TheoremCrack[]
+  readonly inventions: readonly string[]
+  readonly holds: boolean
+  readonly thread: string
+  readonly messageUuids: readonly string[]
+}> {
+  const results = await Promise.all(probes.map(async (p) => ({ probe: p, ...(await probe(p)) })))
+  let messageUuids = [...seed]
+  const cracks: TheoremCrack[] = []
+  for (const r of results) {
+    if (r.cracked) {
+      cracks.push(r)
+      messageUuids = improve(messageUuids, `crack @ ${r.probe}: ${r.why} — invention lead`).messageUuids
+    }
+  }
+  return {
+    cracks,
+    inventions: cracks.map((c) => `close the boundary: ${c.probe} — ${c.why}`),
+    holds: cracks.length === 0, // over the probed domain only (bounded witness)
+    thread: threadUuid(messageUuids),
+    messageUuids,
+  }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chat — thread = merkle chain of message-uuids:')
   console.log('  thread([a,b]) = ' + threadUuid(['a', 'b']).slice(0, 8) + '… · appended changes it = ' + appended(['a', 'b'], 'c'))
