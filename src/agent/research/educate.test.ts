@@ -18,11 +18,17 @@ const fixtureCwd = (): string => {
 
 describe('educate', () => {
   it('scan returns a bounded gap list', () => {
-    // scanEducateGaps's inner violation scanners ignore the passed cwd (tasked), so this reads the
-    // REAL corpus: ~160 gaps, capped at 50 phrase + 20/wave accounting + 20 linear-gap. The ceiling
-    // tracks live telos debt — mostly the accounting-wave 2609 (task #5); it ratchets DOWN as that
-    // clears, and a RISE past it fails closed (the crack-pin pattern). ≤200 with headroom for now.
-    expect(scanEducateGaps(process.cwd()).gaps.length).toBeLessThanOrEqual(200)
+    // HERMETIC (bounded-witness law): scan a FIXTURE cwd, not the real corpus. Task #17's mechanism is
+    // in place — accountingGapsInWaves schedules a fixture cwd via pathWaveBatches over ITS OWN atoms
+    // (gaps.ts:144), so a minimal fixture yields a small, deterministic gap list. This asserts the SHAPE
+    // (scan is bounded + deterministic), not a live-corpus count; the real-corpus educate scan is the
+    // audit/automate lane's job (it grows with every atom added — a unit test must not depend on it).
+    const cwd = fixtureCwd()
+    try {
+      expect(scanEducateGaps(cwd).gaps.length).toBeLessThanOrEqual(200)
+    } finally {
+      rmSync(cwd, { recursive: true, force: true })
+    }
   })
   // 7.2 min measured: selfEducateCycle's inner accountingGapsInWaves ignores cwd and scans the
   // real corpus (task #17) — it PASSES (aborted:false), just slow. Bounded at 10 min so it is not
