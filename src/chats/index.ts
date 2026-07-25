@@ -98,4 +98,5 @@ const Chat: CollectionConfig = {
   timestamps: true,
 }
 
+export { Chat as ChatComponent } from './Component'
 export default Chat
