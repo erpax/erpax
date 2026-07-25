@@ -152,6 +152,8 @@ export function deriveOrientSection(cwd: string = process.cwd()): readonly strin
     '3. `pnpm erpax doctor`',
     '4. `pnpm erpax automate`',
     '',
+    'No separate agent setup — the URL and the repo are the same orientation.',
+    '',
     plainLanguageOf({ section: 'orient', excerpt, surfaces: wire.surfaces }),
     '',
     `Surfaces: ${surfaceList} → [\`${wire.entryPoint}\`](${wire.entryPoint}).`,
