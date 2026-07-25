@@ -43,8 +43,12 @@ export const STANDARD_TIER: ReadonlyArray<{ readonly re: RegExp; readonly tier: 
   { re: /SOX|§404|§302|SOC-2|internal-control|ICFR/i, tier: 'auditor-grade', why: 'a signer certifies these — delete restricted, adminOverride+reason on posted matter' },
   { re: /Наредба|СУПТО|Н-18|ЗДДС|fiscal/i, tier: 'auditor-grade', why: 'НАП-inspectable fiscal writes — no delete on a posted/fiscalised record' },
   { re: /GDPR|right-to-erasure|data-subject|§17|§15/i, tier: 'role-scoped', why: 'data-subject rights — read-own, erasure gated to the controller role' },
-  { re: /ISO.?27001|ISO.?27002|A\.5\.15|access-control/i, tier: 'tenant-isolated', why: 'role-required, strictly tenant-scoped' },
+  { re: /2700[12]|A\.5\.15|access-control/i, tier: 'tenant-isolated', why: 'role-required, strictly tenant-scoped' }, // ISO/IEC 27001·27002 (matches the number so ISO/IEC, ISO-, ISO all hit)
   { re: /IFRS|US-GAAP|ISA-95|EN-16931|accounting/i, tier: 'role-scoped', why: 'accounting matter is role-scoped (accountant/admin write)' },
+  // National & international SECURITY / trust regimes — incident-reportable, signer-certified.
+  { re: /NIS2|NIS-2|2022\/2555|DORA|2022\/2554|eIDAS|910\/2014|PCI.?DSS|cardholder/i, tier: 'auditor-grade', why: 'EU/international security & trust regimes — incident-reportable, signer-certified controls' },
+  // Product / cloud security hardening — role-scoped controls, access logging.
+  { re: /CRA|Cyber.?Resilience|2024\/2847|NIST|SP.?800|CSF|2701[78]|SOC.?1/i, tier: 'role-scoped', why: 'product/cloud security controls — role-scoped hardening & audit logging' }, // ISO/IEC 27017·27018 by number
 ]
 
 /** The strictest tier a set of standard ids demands — the collapse of the operation's superposition. */

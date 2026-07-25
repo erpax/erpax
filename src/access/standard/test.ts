@@ -74,3 +74,24 @@ describe('access/standard — the API access derived from and gated by its legal
     expect(accessComplianceLeak([], 512).leak).toBe(0)
   })
 })
+
+describe('access/standard — national & international SECURITY regimes are tiered', () => {
+  it('EU/international security & trust regimes floor at auditor-grade', () => {
+    for (const s of ['NIS2', 'EU 2022/2555', 'DORA', 'eIDAS 910/2014', 'PCI-DSS']) {
+      expect(requiredAccessTier([s]).tier).toBe('auditor-grade')
+    }
+  })
+  it('product/cloud security hardening standards floor at role-scoped', () => {
+    for (const s of ['CRA Cyber Resilience Act', 'NIST SP 800-53', 'NIST CSF', 'ISO 27017']) {
+      expect(tierRank(requiredAccessTier([s]).tier)).toBeGreaterThanOrEqual(tierRank('role-scoped'))
+    }
+  })
+  it('the strictest of a mixed set wins (superposition collapse)', () => {
+    expect(requiredAccessTier(['NIST', 'DORA', 'IFRS']).tier).toBe('auditor-grade') // DORA dominates
+  })
+  it('matches ISO by NUMBER, so ISO/IEC 27001 tiers correctly (regex-gap regression)', () => {
+    expect(requiredAccessTier(['ISO/IEC 27001']).tier).toBe('tenant-isolated')
+    expect(requiredAccessTier(['ISO 27001']).tier).toBe('tenant-isolated')
+    expect(requiredAccessTier(['ISO/IEC 27017']).tier).toBe('role-scoped')
+  })
+})
