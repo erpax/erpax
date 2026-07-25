@@ -153,6 +153,39 @@ export const openChatMessage = (
   opts?: { sealKey?: Buffer; tenantId?: string },
 ): string => decryptIfUuid(blob, identityUuidForContent(room, opts?.tenantId), room, opts)
 
+// ── all quantum in chat — by REACH, not by copy ──────────────────────────────
+// Every atom already exposes tools through the MCP surface (erpaxMcpTools →
+// createInProcessMcpClient). The chat REACHES all of them through one bridge that
+// invokes a tool and folds its result into the thread (ask→improve). `invoke` is
+// the in-process client's callTool, supplied by the runtime (dependency injection),
+// so the chat never IMPORTS the collection graph — no re-entangling, no duplication.
+// This is what makes "all quantum usable in chat" DRY: one router, not N per-domain copies.
+
+/** A tool the chat can reach — name only; the handler lives in its owning atom. */
+export interface ChatToolRef {
+  readonly name: string
+  readonly description: string
+}
+
+/** The names of tools the chat may invoke (for nextAsk-style discovery over the tool space). */
+export const chatToolNames = (tools: readonly ChatToolRef[]): string[] => tools.map((t) => t.name)
+
+/**
+ * Invoke any quantum tool from the chat and fold its result into the thread. The
+ * result becomes a normal message, so tool outputs join the ask→improve loop like
+ * any other. `invoke` is the runtime-supplied MCP callTool (createInProcessMcpClient),
+ * keeping this a pure, cycle-free bridge.
+ */
+export async function chatInvoke(
+  messageUuids: readonly string[],
+  invoke: (name: string, args: Record<string, unknown>) => Promise<string>,
+  toolName: string,
+  args: Record<string, unknown> = {},
+): Promise<{ readonly result: string; readonly thread: string; readonly messageUuids: readonly string[]; readonly improved: boolean }> {
+  const result = await invoke(toolName, args)
+  return { result, ...improve(messageUuids, `${toolName}: ${result}`) }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chat — thread = merkle chain of message-uuids:')
   console.log('  thread([a,b]) = ' + threadUuid(['a', 'b']).slice(0, 8) + '… · appended changes it = ' + appended(['a', 'b'], 'c'))

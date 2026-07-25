@@ -4,6 +4,7 @@ import {
   threadUuid, appended, messageUuid, isNovel, nextAsk, improve, coverage,
   mediaMessage, foldMediaMessage, chatFromMedia, mediaBlobUuid,
   sealChatMessage, openChatMessage,
+  chatToolNames, chatInvoke,
   type Transcriber,
 } from '@/quantum/chat'
 
@@ -85,5 +86,22 @@ describe('quantum/chat — crypto: room-keyed confidentiality (reuses secret v2)
   it('a wrong room fails closed (no decrypt)', () => {
     const blob = sealChatMessage('secret message', room, { sealKey })
     expect(() => openChatMessage(blob, { room: 'tenant-b', kind: 'chat' }, { sealKey })).toThrow()
+  })
+})
+
+describe('quantum/chat — all quantum reachable by REACH, not copy (the tool bridge)', () => {
+  const tools = [
+    { name: 'erpax.invoices.create', description: 'create an invoice' },
+    { name: 'erpax.entropy.freeEnergy', description: 'compute free energy' },
+  ]
+  it('chatToolNames lists the reachable tool space (for nextAsk discovery)', () => {
+    expect(chatToolNames(tools)).toEqual(['erpax.invoices.create', 'erpax.entropy.freeEnergy'])
+  })
+  it('chatInvoke runs a tool via the injected client and folds its result into the thread', async () => {
+    const invoke = async (name: string, args: Record<string, unknown>) => `ran ${name}(${JSON.stringify(args)})`
+    const r = await chatInvoke([], invoke, 'erpax.invoices.create', { total: 100 })
+    expect(r.result).toBe('ran erpax.invoices.create({"total":100})')
+    expect(r.improved).toBe(true) // the tool result entered the thread
+    expect(isNovel(r.messageUuids, 'erpax.invoices.create: ran erpax.invoices.create({"total":100})')).toBe(false)
   })
 })
