@@ -8,8 +8,10 @@ import {
   selfSufficiencyVerdict,
   internalise,
   selfSufficientCrackVerdict,
+  nextDirection,
   type ExternalDependency,
 } from '@/self/sufficient'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 
 const DEPS: ReadonlyArray<ExternalDependency> = [
   { id: 'anthropic-api', kind: 'ai-model', compromiseBits: 40, internalisable: true },
@@ -20,7 +22,7 @@ describe('self/sufficient: the weakest external link binds', () => {
   it('no liabilities ⇒ the digest/anchor floor binds, fully self-sufficient', () => {
     const v = selfSufficiencyVerdict({})
     expect(v.binding).not.toBe('dependency')
-    expect(v.effectiveCostBits).toBe(106)
+    expect(v.effectiveCostBits).toBe(ERPAX_DIGEST_BITS)
     expect(v.selfSufficiency).toBe(1)
     expect(v.weakestLink).toBeNull()
   })
@@ -30,7 +32,7 @@ describe('self/sufficient: the weakest external link binds', () => {
     expect(v.effectiveCostBits).toBe(40) // the AI-model API, not the 2^106 digest
     expect(v.weakestLink).toBe('anthropic-api')
     expect(v.dependenceCount).toBe(2)
-    expect(v.selfSufficiency).toBeCloseTo(40 / 106, 6)
+    expect(v.selfSufficiency).toBeCloseTo(40 / ERPAX_DIGEST_BITS, 6)
   })
 })
 
@@ -42,7 +44,7 @@ describe('self/sufficient: decrease dependence ⇒ increase tampering cost', () 
     expect(after.weakestLink).toBe('plaid')
     const { verdict: full } = internalise(afterDeps, 'plaid')
     expect(full.binding).not.toBe('dependency')
-    expect(full.effectiveCostBits).toBe(106) // the digest floor — fully self-sufficient
+    expect(full.effectiveCostBits).toBe(ERPAX_DIGEST_BITS) // the digest floor — fully self-sufficient
     expect(full.selfSufficiency).toBe(1)
   })
   it('internalisation is monotonic — removing a dep never lowers the cost', () => {
@@ -67,5 +69,33 @@ describe('self/sufficient: the bridge to tamper-cost', () => {
     const v = selfSufficientCrackVerdict({ liabilities: [], coverage: 1 })
     expect(v.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
     expect(v.note).toMatch(/100% coverage/)
+  })
+})
+
+describe('self/sufficient — nextDirection: derive the next move from within (ask the machine)', () => {
+  it('ranks the corpus frontier by the standing queue (regression first, cosmetic last)', () => {
+    const intents = [
+      'rename the widget for tidiness',
+      'the accounting posting hook is broken and does not boot',
+      'close the audit gap the director signs under SOX §404',
+      'the pre-push gate is red and blocks deploy',
+      'fold the dead stray helper (debt)',
+    ]
+    const ranked = nextDirection(intents)
+    expect(ranked[0]!.intent).toMatch(/broken and does not boot/) // regression, rank 5
+    expect(ranked[0]!.rank).toBe(5)
+    expect(ranked[ranked.length - 1]!.intent).toMatch(/tidiness/) // cosmetic, rank 1
+    // strictly non-increasing rank — a real ordering
+    for (let i = 1; i < ranked.length; i++) expect(ranked[i]!.rank).toBeLessThanOrEqual(ranked[i - 1]!.rank)
+  })
+
+  it('is self-sufficient: an empty frontier yields no direction (nothing to ask the operator either)', () => {
+    expect(nextDirection([])).toEqual([])
+  })
+
+  it('auditor/signer-facing outranks blocks-everything outranks debt', () => {
+    const [a, b, c] = nextDirection(['a dead-code debt gap', 'the build gate', 'the auditor SOX control'])
+    expect(a!.rank).toBeGreaterThan(b!.rank) // auditor (4) > build (3)
+    expect(b!.rank).toBeGreaterThan(c!.rank) // build (3) > debt (2)
   })
 })

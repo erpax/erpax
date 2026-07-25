@@ -143,3 +143,41 @@ export function selfSufficientCrackVerdict(opts: {
     checks: opts.checks,
   })
 }
+
+// ── derive the next direction from WITHIN — ask the machine, not the operator ──
+// The atom's operating heuristic ("derive from within, don't ask") applied to
+// WORKFLOW: the corpus's own open intents (think.openIntents — its akashic frontier)
+// ARE the direction. Ranking them by the standing priority queue turns "what next?"
+// from a question to the operator into a computed answer — the self-sufficient move.
+// Pure/DI: the caller passes the intents (openIntents(cwd)), so this stays cycle-free.
+
+export interface Direction {
+  readonly intent: string
+  /** priority rank — higher runs first (the standing queue). */
+  readonly rank: number
+  readonly why: string
+}
+
+/** The standing queue: regression > auditor/signer-facing > blocks-everything > debt > cosmetic. */
+const PRIORITY: readonly (readonly [RegExp, number, string])[] = [
+  [/regress|broke|broken|red\b|fail|does not (boot|load|build)|TDZ/i, 5, 'regression — a broken thing blocks everything'],
+  [/audit|signer|director|compliance|SOX|§404|§302|fiscal|НАП|auditor/i, 4, 'auditor/signer-facing — invisible from every seat but theirs'],
+  [/gate|pre-push|\bbuild\b|deploy|\bboot\b|\bload\b|green/i, 3, 'blocks-everything — boot · build · push · deploy'],
+  [/debt|\bgap\b|unfold|dead|stray|dissolve|duplicat/i, 2, 'largest debt'],
+  [/rename|cosmetic|tidy|comment|typo|whitespace/i, 1, 'cosmetic — last'],
+]
+
+/**
+ * Rank the corpus's open intents into a direction — the highest-priority next move first.
+ * The self-sufficient answer to "what next?": derived from the corpus's declared frontier
+ * and the standing queue, not asked. Pass `openIntents(cwd)` (@/think) as `intents`.
+ */
+export function nextDirection(intents: readonly string[]): Direction[] {
+  return intents
+    .map((intent) => {
+      let best = { rank: 0, why: 'unranked — no queue keyword matched' }
+      for (const [re, rank, why] of PRIORITY) if (re.test(intent) && rank > best.rank) best = { rank, why }
+      return { intent, rank: best.rank, why: best.why }
+    })
+    .sort((a, b) => b.rank - a.rank)
+}
