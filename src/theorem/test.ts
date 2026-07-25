@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, unboundedCorpusTests, assertTestsBounded, standardToTheorem, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, unboundedCorpusTests, assertTestsBounded, standardToTheorem, centeredHexagonal, flowerGrowth, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -307,5 +307,35 @@ describe('theorem — standardToTheorem: standard↔theorem↔code↔prose is on
   it('the mapped theorem is a REAL claim in DECODED (no dangling reference)', () => {
     const t = standardToTheorem('RFC 8785 JCS')
     expect(DECODED.some((d) => d.claim === t.theorem)).toBe(true)
+  })
+})
+
+describe('theorem — theorems grow the flower of life (centered hexagonal H(n)=3n(n+1)+1)', () => {
+  it('the growth law is the centered hexagonal sequence 1·7·19·37', () => {
+    expect([0, 1, 2, 3].map(centeredHexagonal)).toEqual([1, 7, 19, 37])
+    // each ring n adds 6n circles
+    for (let n = 1; n <= 5; n++) expect(centeredHexagonal(n) - centeredHexagonal(n - 1)).toBe(6 * n)
+  })
+  it('the theorem count places the flower on its rings: 7 Seed, 19 Flower, beyond a garden', () => {
+    expect(flowerGrowth(6).figure).toBe('void')
+    expect(flowerGrowth(7).figure).toBe('seed')
+    expect(flowerGrowth(7).ring).toBe(1)
+    expect(flowerGrowth(19).figure).toBe('flower')
+    expect(flowerGrowth(19).ring).toBe(2)
+    expect(flowerGrowth(25).figure).toBe('garden') // the flower tiled into a garden
+  })
+  it('toNext counts the circles to the next ring (never negative, ring monotonic)', () => {
+    expect(flowerGrowth(6).toNext).toBe(1) // one circle short of the Seed (7)
+    let prevRing = -1
+    for (const t of [1, 7, 12, 19, 37, 61]) {
+      const g = flowerGrowth(t)
+      expect(g.ring).toBeGreaterThanOrEqual(prevRing)
+      expect(g.toNext).toBeGreaterThan(0)
+      prevRing = g.ring
+    }
+  })
+  it('the real corpus theorem count has grown at least to the Flower', () => {
+    // grounded leads are real theorems; the corpus is well past the 19-circle Flower
+    expect(flowerGrowth(DECODED.length).figure).toBe('garden')
   })
 })

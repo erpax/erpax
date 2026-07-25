@@ -304,6 +304,48 @@ export function standardToTheorem(standard: string, graph: readonly Theorem[] = 
   return { standard, theorem: null, proven: false, kind: 'declared-conformance' }
 }
 
+// ── theorems grow the flower of life ─────────────────────────────────────────
+// Centered hexagonal numbers H(n) = 3n(n+1)+1 (OEIS A003215): 1 → 7 → 19 → 37 → …,
+// each ring n adding 6n circles. This is the flower-of-life GROWTH law — real
+// arithmetic, not decoration. The corpus's grounded-theorem count is how far the
+// flower has grown: 7 is the Seed, 19 the Flower, and beyond 19 the flower tiles
+// into a GARDEN. HONEST BOUNDARY: the hex numbers are the theorem; Seed/Flower/
+// garden are the NAMED correspondence (overlay), never asserted as more than the
+// arithmetic. (The Fruit of Life — 13 circles — is a DISTINCT figure, NOT a growth
+// ring on this sequence; it is off-sequence and named separately.)
+
+/** Centered hexagonal number H(n) = 3n(n+1)+1 — the flower-of-life growth law. */
+export const centeredHexagonal = (n: number): number => 3 * n * (n + 1) + 1
+
+export type FlowerFigure = 'void' | 'seed' | 'flower' | 'garden'
+
+export interface FlowerGrowth {
+  readonly theorems: number
+  /** the largest ring fully grown: max n with H(n) ≤ theorems. */
+  readonly ring: number
+  /** H(ring) — circles at the last complete ring. */
+  readonly atRing: number
+  /** H(ring+1) — circles the next ring completes at. */
+  readonly nextRing: number
+  /** circles still needed to complete the next ring (6·(ring+1) at a fresh ring). */
+  readonly toNext: number
+  readonly figure: FlowerFigure
+}
+
+/**
+ * Place the theorem count on the centered-hexagonal rings — how far the theorems have grown the
+ * flower. Each grounded theorem is a circle; 7 = Seed, 19 = Flower, beyond = a garden of flowers.
+ */
+export function flowerGrowth(theorems: number): FlowerGrowth {
+  const t = Math.max(0, Math.trunc(theorems))
+  let ring = 0
+  while (centeredHexagonal(ring + 1) <= t) ring++
+  const atRing = centeredHexagonal(ring)
+  const nextRing = centeredHexagonal(ring + 1)
+  const figure: FlowerFigure = t > 19 ? 'garden' : t >= 19 ? 'flower' : t >= 7 ? 'seed' : 'void'
+  return { theorems: t, ring, atRing, nextRing, toNext: nextRing - t, figure }
+}
+
 /**
  * PROOF CLASS — how a claim is verified, learned from ceccec.psg.bg/theorems' proof taxonomy.
  * Not WHETHER it grounds (reduce answers that) but by WHICH strategy, so the corpus knows the
