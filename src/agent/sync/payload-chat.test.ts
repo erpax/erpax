@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest'
 import {
   CHAT_COLLECTION,
   chatContext,
+  chatSeal,
   eventToChatMessage,
   chatMessageToEvent,
   publishToChat,
@@ -31,6 +32,21 @@ describe('chatContext — a chat reply is the (referrer × current) event superp
     expect(c.group).toBe('invoice')
     expect(c.referrer).toBe('payment') // atom extracted from atom:verb
     expect(c.current).toBe('invoice')
+  })
+})
+
+describe('chatSeal — the chat is a 4-key tamper-evident chain (referrer ⊕ id ⊕ prev ⊕ next)', () => {
+  const seal = chatSeal('ref', 'id', 'prev', 'next')
+
+  it('folds the 4 navigation-cross keys to one content-uuid (the matrix bind, on the chat)', () => {
+    expect(seal).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
+  })
+
+  it('ALL 4 keys are needed to decode — flipping any one breaks the seal (tamper-evident chain)', () => {
+    expect(chatSeal('X', 'id', 'prev', 'next')).not.toBe(seal) // referrer
+    expect(chatSeal('ref', 'X', 'prev', 'next')).not.toBe(seal) // id
+    expect(chatSeal('ref', 'id', 'X', 'next')).not.toBe(seal) // prev
+    expect(chatSeal('ref', 'id', 'prev', 'X')).not.toBe(seal) // next
   })
 })
 

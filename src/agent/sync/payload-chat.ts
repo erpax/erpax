@@ -23,6 +23,7 @@
 
 import type { ErpaxEvent } from '@/agent/sync'
 import { navPyramid, type NavPyramid } from '@/navigation'
+import { merge } from '@/merge'
 import { domainToErpaxEvent } from './society'
 import type { DomainEvent } from '../types'
 import { enforceTeamCommsEmit } from '@/team/comms'
@@ -67,6 +68,23 @@ export function chatMessageToEvent(row: ChatMessage & { createdAt?: string }): E
 export function chatContext(referrerEvent: string, currentEvent: string): NavPyramid {
   const atomOf = (ev: string): string => (ev.split(':')[0] ?? '').replace(/\./g, '/')
   return navPyramid(atomOf(referrerEvent), atomOf(currentEvent))
+}
+
+/**
+ * Seal a chat message with its 4-key navigation cross — the SAME bind the matrix uses:
+ *   bind = merge(id, merge(merge(referrer, prev), next))  =  id ⊕ referrer ⊕ prev ⊕ next
+ * The referrer (where the reply came from), the message id, and the prev/next thread pair fold to one
+ * content-uuid, so a thread is a 4-connected tamper-evident chain: flip ANY of the four and the seal
+ * breaks (proven for the matrix bind). As the room's coverage → 1 (every message wired), the forge cost
+ * → ∞ (tamper/cost Law 62) — "infinite cryptography" in the corpus's HONEST sense.
+ *
+ * Honest boundary (the one tamper/cost + ceccec carry): this is tamper-EVIDENT, not tamper-PROOF or
+ * confidentiality. The fold is SHA-256 (2^128 collision), so "infinite" is the coverage LIMIT at a
+ * measured 1, not a literal — Grover halves the hash; unconditional secrecy needs a cipher (AES-GCM), not
+ * this. It detects any change to the thread; it does not hide the thread.
+ */
+export function chatSeal(referrer: string, id: string, prev: string, next: string): string {
+  return merge(id, merge(merge(referrer, prev), next))
 }
 
 /** The slice of Payload's Local API the chat transport needs (structural — mockable). */
