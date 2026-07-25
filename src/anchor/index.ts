@@ -15,6 +15,8 @@
  * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)
  */
 
+import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'
+
 export type AnchorKind =
   | 'none'
   | 'rfc3161-rsa2048'
@@ -43,4 +45,53 @@ export const anchoredFloorLog2 = (anchor: AnchorKind, digestBits: number): numbe
 export function anchorBinding(anchor: AnchorKind, digestBits: number): 'digest' | 'anchor' | 'none' {
   if (anchor === 'none') return 'none'
   return ANCHOR_STRENGTH_BITS[anchor] >= digestBits ? 'digest' : 'anchor'
+}
+
+/** The measured resilience of the 4-key nav cross (bind4) to key-cracking. */
+export interface FusionResilience {
+  /** Keys in the cross — referrer ⊕ id ⊕ prev ⊕ next. */
+  readonly keys: number
+  /** Per-key content-commitment width (bits). */
+  readonly digestBits: number
+  /** One key alone, inverted: total break. The single-point-of-failure the fusion removes. */
+  readonly singleKeyBrokenLog2: 0
+  /** With any k < keys cracked, forging the fold still costs a full second-preimage. */
+  readonly fusionFloorClassicalLog2: number
+  /** The lowest honest floor — quantum (BHT) collision on the commitment. */
+  readonly fusionFloorQuantumLog2: number
+  /** How many keys may be cracked with integrity still held (the flat floor holds to keys − 1). */
+  readonly crackableWithIntegrity: number
+  /**
+   * TRUE because `merge` is a cryptographic hash, not a linear (XOR) combiner: the
+   * generalized-birthday / k-tree attack that would let cracked keys COMPOUND is
+   * blocked, so the forge floor is flat under cracking (measured: 3-of-4 cracked
+   * reaches only the uniform-random minimum distance to a target root).
+   */
+  readonly flatUnderCracking: true
+  /**
+   * One direction bit per directed referral (Möbius 0↔∞ gateway, gatewayBits =
+   * log₂2 = 1). TOPOLOGICAL, not strength: closing the open line into a loop is what
+   * lets the cross REFORM (the moving second-preimage target), but 2^keys orientations
+   * are brute-forced trivially — never counted toward the floor.
+   */
+  readonly orientationBits: number
+}
+
+/**
+ * Fold of the fusion + threshold computations: the 4-key cross survives one (indeed
+ * up to keys − 1) inverted key with its full second-preimage floor intact, because a
+ * hash fold does not compound cracked keys. The improvement over a lone key is the
+ * whole floor recovered (0 → digest). Orientation bits are the loop's topology.
+ */
+export function fusionResilience(keys = 4, digestBits = ERPAX_DIGEST_BITS): FusionResilience {
+  return {
+    keys,
+    digestBits,
+    singleKeyBrokenLog2: 0,
+    fusionFloorClassicalLog2: secondPreimageLog2(digestBits),
+    fusionFloorQuantumLog2: bhtCollisionLog2(digestBits),
+    crackableWithIntegrity: Math.max(0, keys - 1),
+    flatUnderCracking: true,
+    orientationBits: keys,
+  }
 }
