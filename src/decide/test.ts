@@ -92,3 +92,16 @@ describe('decide — who decides commit and push is computable', () => {
     expect(verdictOf({ ok: false, axis: 'name', violations: 6, baseline: 5, reason: 'rose' }).pass).toBe(false)
   })
 })
+
+describe('decide — the trinity proof leg: a proven decision beats an asserted one', () => {
+  it('prefers a PROVEN candidate over an unproven one, even when the unproven is more efficient', () => {
+    const proven = cand({ solutionUuid: 'proven', harmonic: true, proven: true, ledger: { kind: 'ai', output: { productivity: 5, creativity: 0 }, cost: 1 } })
+    const richerButUnproven = cand({ solutionUuid: 'rich', harmonic: true, proven: false, ledger: { kind: 'ai', output: { productivity: 100, creativity: 0 }, cost: 1 } })
+    expect(decide([richerButUnproven, proven])?.solutionUuid).toBe('proven')
+  })
+  it('falls back gracefully: if NONE are proven, the efficient one still wins (preference never empties the pool)', () => {
+    const a = cand({ solutionUuid: 'a', harmonic: true, ledger: { kind: 'ai', output: { productivity: 100, creativity: 0 }, cost: 1 } })
+    const b = cand({ solutionUuid: 'b', harmonic: true, ledger: { kind: 'ai', output: { productivity: 5, creativity: 0 }, cost: 1 } })
+    expect(decide([b, a])?.solutionUuid).toBe('a') // no proven ⇒ prior behavior
+  })
+})

@@ -9,24 +9,31 @@ import type { Candidate } from '@/competition'
 import { efficiency, type Ledger } from '@/cost'
 import type { GuardianVerdict } from '@/guardian'
 
-/** A society candidate — a competition Candidate plus its harmony (logic) and its cost ledger (cost). */
+/** A society candidate — a competition Candidate plus its harmony (logic), its cost ledger (cost), and its proof. */
 export interface SocietyCandidate extends Candidate {
   /** logic: self-consistent ⇒ resolves first (preferred). */
   readonly harmonic: boolean
   /** cost: its output and spend, for the efficiency selection. */
   readonly ledger: Ledger
+  /** trinity/proof: the candidate carries a proof leg (refutable) — a proven decision beats an asserted one. */
+  readonly proven?: boolean
 }
 
 /**
- * The society's choice: keep the correct candidates; prefer the harmonic ones (fall back to all
- * correct if none are harmonic); among those, take the most efficient, ties broken by lowest cost
- * then content-uuid. Returns null when nothing is correct.
+ * The society's choice, collapsing the quantum trinity: keep the correct candidates (competition); prefer the
+ * harmonic ones (logic); among those prefer the PROVEN ones (the trinity's proof leg — a decision backed by a
+ * proof beats one merely asserted, [[rules]]/refutable turned on the choice); among those take the most efficient
+ * (cost), ties broken by lowest cost then content-uuid. Each preference falls back if it would empty the pool, so
+ * the collapse never loses a correct candidate. Returns null when nothing is correct.
  */
 export function decide(candidates: readonly SocietyCandidate[]): SocietyCandidate | null {
   const correct = candidates.filter((c) => c.correct)
   if (correct.length === 0) return null
-  const harmonic = correct.filter((c) => c.harmonic)
-  const pool = harmonic.length > 0 ? harmonic : correct
+  const narrow = (pool: readonly SocietyCandidate[], pred: (c: SocietyCandidate) => boolean): readonly SocietyCandidate[] => {
+    const kept = pool.filter(pred)
+    return kept.length > 0 ? kept : pool // a preference never empties the pool (fall back)
+  }
+  const pool = narrow(narrow(correct, (c) => c.harmonic), (c) => c.proven === true)
   return [...pool].sort(
     (a, b) =>
       efficiency(b.ledger) - efficiency(a.ledger) ||
