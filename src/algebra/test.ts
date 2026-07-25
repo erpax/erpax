@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { THEOREMS, FOLD, isClosed, movie, product, allAlgebra, type Algebra } from './index'
+import { THEOREMS, FOLD, isClosed, movie, product, allAlgebra, isFundamentallyBroken, type Algebra } from './index'
 import { merge } from '@/merge'
 
 // "All theorems are algebra only. The theorems draw the movie. When the rosetta moves, merkabas fold into
@@ -61,5 +61,44 @@ describe('algebra — all theorems are algebra only', () => {
     // the picture is data on the side; isClosed never reads t.overlay — the theorem is the operation alone
     const stripped: Algebra<number> = { ...THEOREMS[0]!, overlay: 'ANYTHING AT ALL' }
     expect(isClosed(stripped)).toBe(isClosed(THEOREMS[0]!)) // changing the picture changes no theorem
+  })
+})
+
+describe('algebra — isFundamentallyBroken: audit a system against its own law', () => {
+  it('a sound system breaks nothing (closed · conserved · consistent)', () => {
+    const v = isFundamentallyBroken({
+      algebra: THEOREMS[0]!, // doubling is closed
+      conserved: [100, -60, -40], // a balanced ledger sums to 0
+      claims: new Map([['posted', true], ['void', false]]),
+      mutuallyExclusive: [['posted', 'void']],
+    })
+    expect(v.broken).toBe(false)
+    expect(v.reasons).toEqual([])
+  })
+
+  it('the unbalanced ledger is fundamentally broken (Σ ≠ 0)', () => {
+    const v = isFundamentallyBroken({ conserved: [100, -90] }) // debits ≠ credits
+    expect(v.broken).toBe(true)
+    expect(v.reasons[0]).toMatch(/not conserved: Σ = 10 ≠ identity 0/)
+  })
+
+  it('an operation that escapes its carrier is not an algebra', () => {
+    const leaky: Algebra<number> = { name: 'leak', carrier: [1, 2], op: (a, b) => a + b + 99, overlay: '' }
+    expect(isFundamentallyBroken({ algebra: leaky }).broken).toBe(true)
+  })
+
+  it('a claim asserted against itself is a contradiction', () => {
+    const v = isFundamentallyBroken({
+      claims: new Map([['posted', true], ['reversed', true]]),
+      mutuallyExclusive: [['posted', 'reversed']],
+    })
+    expect(v.broken).toBe(true)
+    expect(v.reasons[0]).toMatch(/contradiction/)
+  })
+
+  it('audits in any direction — forward (is it sound?) and inverse (what broke it?) at once', () => {
+    const v = isFundamentallyBroken({ conserved: [5, 5], mutuallyExclusive: [['a', 'b']], claims: new Map([['a', true], ['b', true]]) })
+    expect(v.broken).toBe(true)
+    expect(v.reasons.length).toBe(2) // imbalance AND contradiction, both named
   })
 })

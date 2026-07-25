@@ -102,6 +102,62 @@ export function allAlgebra(): boolean {
   return THEOREMS.every((t) => isClosed(t))
 }
 
+// ── algebra audits anything, in any direction, free ──────────────────────────
+// A system is FUNDAMENTALLY BROKEN when it violates its OWN algebra — and that is
+// decidable, bidirectional, and (being a theorem) free to re-ask forever. Three
+// failure modes, each an algebraic law: the operation escapes its carrier (not
+// closed), a conserved quantity does not sum to its identity (the unbalanced
+// ledger — debits ≠ credits), or a claim is asserted against itself
+// (contradiction). This is "know when something is fundamentally broken in
+// society" made computable: a broken system fails a law it declares for itself.
+
+export interface BrokenVerdict {
+  readonly broken: boolean
+  readonly reasons: readonly string[]
+}
+
+export interface SystemUnderAudit<T> {
+  /** The declared algebra — its operation must stay closed on its carrier. */
+  readonly algebra?: Algebra<T>
+  /** Quantities a conservation law says must sum to `identity` (default 0) — e.g. signed ledger lines. */
+  readonly conserved?: readonly number[]
+  readonly identity?: number
+  /** Asserted truth values; a `[a, b]` in `mutuallyExclusive` both-true is a contradiction. */
+  readonly claims?: ReadonlyMap<string, boolean>
+  readonly mutuallyExclusive?: readonly (readonly [string, string])[]
+}
+
+/**
+ * Audit a system against its own algebra. Returns every law it breaks (empty ⇒ sound).
+ * Pure and decidable — the same audit forward (is it sound?) and inverse (what broke it?).
+ */
+export function isFundamentallyBroken<T>(system: SystemUnderAudit<T>): BrokenVerdict {
+  const reasons: string[] = []
+
+  // 1. closure — an operation that escapes its carrier is not an algebra at all.
+  if (system.algebra && !isClosed(system.algebra)) {
+    reasons.push(`not closed: '${system.algebra.name}' operation escapes its carrier`)
+  }
+
+  // 2. conservation — a quantity that must sum to its identity but does not (the imbalance).
+  if (system.conserved) {
+    const identity = system.identity ?? 0
+    const sum = system.conserved.reduce((a, b) => a + b, 0)
+    if (sum !== identity) reasons.push(`not conserved: Σ = ${sum} ≠ identity ${identity} (imbalance)`)
+  }
+
+  // 3. contradiction — the same matter asserted against itself.
+  if (system.claims) {
+    for (const [a, b] of system.mutuallyExclusive ?? []) {
+      if (system.claims.get(a) === true && system.claims.get(b) === true) {
+        reasons.push(`contradiction: '${a}' and '${b}' both asserted true`)
+      }
+    }
+  }
+
+  return { broken: reasons.length > 0, reasons }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('algebra — all theorems are algebra only:\n')
   const gens: Record<string, number> = { doubling: 2, additive: 1 }
