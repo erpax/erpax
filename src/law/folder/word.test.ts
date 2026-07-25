@@ -45,7 +45,9 @@ describe('law/folder/word — every word is a folder with code', () => {
     const root = join(process.cwd(), 'src', 'law', 'folder')
     expect(hasWordCode(root)).toBe(true)
     expect(hasWordFolderTrinity(root)).toBe(true)
-    const vocabOnly = join(process.cwd(), 'src', 'merge')
+    // a genuinely SKILL-only literary atom: vocabulary/coordinate carries SKILL.md but no index/test
+    // ('merge' is NOT such an atom — it ships real code, so it was the wrong negative fixture).
+    const vocabOnly = join(process.cwd(), 'src', 'vocabulary', 'coordinate')
     if (existsSync(vocabOnly) && readdirSync(vocabOnly).includes('SKILL.md')) {
       expect(hasWordCode(vocabOnly)).toBe(false)
     }

@@ -31,10 +31,14 @@ describe('quantum/boundary — computed import/export (derived, never authored)'
     expect(specs).toEqual(['@/horo', '@/uuid'])
   })
 
-  it('classifyImports separates barrels from deep escapes', () => {
-    const { barrels, escapes } = classifyImports(['@/digit', '@/integrity/content-uuid'])
+  it('classifyImports collapses a deep import to its atom barrel; a non-atom path is an escape', () => {
+    // The deep-import ratchet (lint:imports → 0) collapses a deep spec to its deepest existing atom
+    // barrel: @/integrity/content-uuid resolves to the real @/integrity atom. A genuine escape is a spec
+    // resolving to NO atom root at all.
+    const { barrels, escapes } = classifyImports(['@/digit', '@/integrity/content-uuid', '@/nonexistent-root/x'])
     expect(barrels).toContain('@/digit')
-    expect(escapes).toContain('@/integrity/content-uuid')
+    expect(barrels).toContain('@/integrity')
+    expect(escapes).toContain('@/nonexistent-root/x')
   })
 
   it('computeBoundary on digit/index.ts matches verifyBoundary (zero drift)', () => {

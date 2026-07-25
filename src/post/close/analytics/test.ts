@@ -139,7 +139,10 @@ describe('PostCloseAnalytics — chain leaf (Law 60)', () => {
     expect(a).not.toBe(PostCloseAnalytics.computeChainLeaf({ x: 1 }, 'other'))
   })
 
-  it('emits at most a 32-char leaf', () => {
-    expect(PostCloseAnalytics.computeChainLeaf({ a: 'x'.repeat(1000) }).length).toBeLessThanOrEqual(32)
+  it('emits a canonical content-uuid leaf (the audit fold — merge/toUuid, not a raw hash)', () => {
+    // chainLeaf folded into merge() → the leaf is now a content-uuid (36 chars, addressable), not the
+    // pre-fold 32-hex hash. Any input size collapses to the fixed content-address.
+    const leaf = PostCloseAnalytics.computeChainLeaf({ a: 'x'.repeat(1000) })
+    expect(leaf).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
   })
 })
