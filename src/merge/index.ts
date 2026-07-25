@@ -280,6 +280,28 @@ export function billAtScale(obj: ErpaxObject, units: number): Map<string, number
   return scaled
 }
 
+/**
+ * DISSECT — break an object into its immediate parts. Dead code is not waste: a combination that is no longer
+ * called can be opened, and its parts (each a live object in its own right) recovered for reuse. A leaf is atomic
+ * and dissects to nothing; a combination yields its constituents.
+ */
+export function dissect(obj: ErpaxObject): readonly ErpaxObject[] {
+  return obj.kind === 'leaf' ? [] : obj.parts
+}
+
+/**
+ * BIRTH — recombine parts into a new object. Dead code can be dissected and new code may be born: the parts of a
+ * dead whole live on in a new whole. `birth(dissect(x))` reconstitutes x exactly (dissection is reversible — same
+ * composition, same address), while recombining the same parts in a NEW arrangement, or with new parts, is
+ * genuinely new (a different address). What is born is new iff its composition is new; a recombination that
+ * reproduces an existing object collides to that object (dedup by physics — nothing is born twice).
+ *
+ * @invariant birth(dissect(combination)) content-addresses the same as the combination (dissection is reversible)
+ */
+export function birth(parts: readonly ErpaxObject[]): ErpaxObject {
+  return combineObjects(...parts)
+}
+
 /** One step of an authentication path: the sibling to fold with, and whether it sits on the right. */
 export interface MerkleStep {
   readonly sibling: string

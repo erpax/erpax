@@ -248,3 +248,24 @@ describe('bill of resources — a discovery requires specific resources to be ma
     expect(scaled.get('copper')).toBe(1000)
   })
 })
+
+import { dissect, birth } from '@/merge'
+
+describe('dissect / birth — dead code can be dissected and new code may be born (object fold inverse)', () => {
+  const parts = [leafObject('h2o'), leafObject('atp'), leafObject('dna')]
+  const cell = combineObjects(...parts)
+  it('dissect opens a combination into its parts; a leaf is atomic (dissects to nothing)', () => {
+    expect(dissect(cell)).toEqual(parts)
+    expect(dissect(leafObject('x'))).toEqual([])
+  })
+  it('birth(dissect(x)) reconstitutes x exactly — dissection is reversible (same address)', () => {
+    expect(objectAddress(birth(dissect(cell)))).toBe(objectAddress(cell))
+  })
+  it('recombining the parts in a NEW arrangement is genuinely new (a different address)', () => {
+    const reborn = birth([...dissect(cell)].reverse())
+    expect(objectAddress(reborn)).not.toBe(objectAddress(cell)) // order is part of the element
+  })
+  it('a recombination that reproduces an existing object collides to it — nothing is born twice (dedup)', () => {
+    expect(objectAddress(birth(parts))).toBe(objectAddress(cell)) // same composition ⇒ same object
+  })
+})
