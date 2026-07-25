@@ -43,3 +43,48 @@ export function versionMatchesCorpus(version: string): boolean {
   const suffix = version.split('+')[1]
   return typeof suffix === 'string' && suffix.length > 0 && corpusContentUuid().startsWith(suffix)
 }
+
+/**
+ * The full stability chain — a release is stable only when EVERY stage passes. Gates green is necessary, not
+ * sufficient: code that passes the gate but fails to build or deploy is NOT a stable release (it ships nothing).
+ */
+export interface ReleaseChecks {
+  /** the gate lanes passed green for this corpus. */
+  readonly gatesGreen: boolean
+  /** the production build succeeded. */
+  readonly buildOk: boolean
+  /** the deploy succeeded (the release actually reached production). */
+  readonly deployOk: boolean
+}
+
+/** A computationally-tagged release — content-addressed version, stable iff the WHOLE chain passed. */
+export interface ReleaseTag {
+  /** `semver+<corpus-uuid8>` — same corpus ⇒ same tag, on every clone. */
+  readonly version: string
+  /** stable iff gates AND build AND deploy all passed — a release that ships nothing is not stable. */
+  readonly stable: boolean
+  /** the whole-corpus content-uuid this tag pins. */
+  readonly corpusUuid: string
+  /** which stages failed (empty ⇒ stable) — names exactly why a tag is not stable. */
+  readonly failed: readonly string[]
+}
+
+/**
+ * Computationally tag a stable release. The version is DERIVED from the corpus state (corpusVersion — content-
+ * addressed, reproducible on any clone). It is marked `stable` only when the ENTIRE chain passed: gates green,
+ * build ok, AND deploy ok. Gates green is necessary but NOT sufficient — a release that fails to build or deploy
+ * ships nothing, so it is not stable, no matter how green the tests were. A stable tag is a theorem over the full
+ * pipeline, not an assertion: nothing can mint one over a failed deploy; `failed` names exactly which stage broke.
+ */
+export function stableReleaseTag(semver: string, checks: ReleaseChecks): ReleaseTag {
+  const failed: string[] = []
+  if (!checks.gatesGreen) failed.push('gates')
+  if (!checks.buildOk) failed.push('build')
+  if (!checks.deployOk) failed.push('deploy')
+  return { version: corpusVersion(semver), stable: failed.length === 0, corpusUuid: corpusContentUuid(), failed }
+}
+
+/** Verify a claimed stable tag against the live corpus: it must be marked stable AND still match the corpus. */
+export function isStableTag(tag: ReleaseTag): boolean {
+  return tag.stable && versionMatchesCorpus(tag.version)
+}

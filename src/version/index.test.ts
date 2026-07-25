@@ -21,3 +21,25 @@ describe('version — the corpus-derived, content-addressed version (skill-based
     expect(versionMatchesCorpus('1.0.0')).toBe(false) // no build metadata ⇒ not corpus-pinned
   })
 })
+
+import { stableReleaseTag, isStableTag } from './index'
+
+describe('stableReleaseTag — stable requires the WHOLE chain (gates ∧ build ∧ deploy)', () => {
+  const ok = { gatesGreen: true, buildOk: true, deployOk: true }
+  it('the full chain green ⇒ a stable, content-addressed tag', () => {
+    const t = stableReleaseTag('1.2.3', ok)
+    expect(t.version).toMatch(/^1\.2\.3\+[0-9a-f]{8}$/)
+    expect(t.stable).toBe(true)
+    expect(t.failed).toEqual([])
+    expect(isStableTag(t)).toBe(true)
+  })
+  it('gates green but deploy FAILS ⇒ NOT stable (a release that ships nothing is not stable)', () => {
+    const t = stableReleaseTag('1.2.3', { ...ok, deployOk: false })
+    expect(t.stable).toBe(false)
+    expect(t.failed).toEqual(['deploy'])
+    expect(isStableTag(t)).toBe(false)
+  })
+  it('names every failed stage', () => {
+    expect(stableReleaseTag('1.2.3', { gatesGreen: false, buildOk: false, deployOk: false }).failed).toEqual(['gates', 'build', 'deploy'])
+  })
+})
