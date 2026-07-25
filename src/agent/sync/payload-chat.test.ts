@@ -108,6 +108,20 @@ describe('payload-chat: the room is a Payload collection (no Durable Object)', (
     expect(CHAT_COLLECTION).toBe('chat')
   })
 
+  it('every published row is stamped with the 4-KEY seal (aggregateId ⊕ uuid ⊕ agent ⊕ event), not the content-uuid alone', async () => {
+    const client = mockChat()
+    const e = ev()
+    await publishToChat(client, e, TENANT)
+    const seal = client.rows[0]!.seal as string
+    expect(seal).toBe(chatSeal(e.aggregateId, e.uuid, e.agent, e.event)) // the row folds all 4 of its own cross
+    expect(seal).not.toBe(e.uuid) // NOT the content-uuid alone (that would be a linear 1-key seam)
+    // flip any one of the 4 keys → the seal breaks (the tamper-evident chain, wired into the write path)
+    expect(chatSeal('x', e.uuid, e.agent, e.event)).not.toBe(seal)
+    expect(chatSeal(e.aggregateId, 'x', e.agent, e.event)).not.toBe(seal)
+    expect(chatSeal(e.aggregateId, e.uuid, 'x', e.event)).not.toBe(seal)
+    expect(chatSeal(e.aggregateId, e.uuid, e.agent, 'x')).not.toBe(seal)
+  })
+
   it('publishEmit puts an agent-emitted DomainEvent on the bus, depth-stamped', async () => {
     const client = mockChat()
     await publishEmit(client, { id: 'invoice:activated', tenantId: TENANT, payload: { n: 1 }, emittedAt: TS }, 3, 'agent-a')

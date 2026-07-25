@@ -36,16 +36,35 @@ export interface ChatMessage {
   readonly event: string
   readonly aggregateId: string
   readonly agent: string
+  /** the message's 4-key seal — chatSeal over its own navigation cross (see eventToChatMessage). */
+  readonly seal: string
   readonly payload?: unknown
 }
 
-/** Project an ErpaxEvent envelope onto a chat-collection row. */
+/**
+ * Project an ErpaxEvent envelope onto a chat-collection row — sealed with ALL 4 keys of the
+ * message's own navigation cross, never the content-uuid alone (1 key = a linear seam). The four
+ * coordinates a message carries are: `aggregateId` (the referrer — the thing it concerns),
+ * `uuid` (its id), `agent` (prev — who authored it), `event` (next — the intent it advances). A
+ * row stamped with only its content-uuid is a linear seal a single inversion breaks; folding all
+ * four makes it the 4-connected tamper-evident node the matrix bind is (flip any key, seal breaks).
+ */
 export function eventToChatMessage(e: ErpaxEvent): ChatMessage {
-  return { eventUuid: e.uuid, event: e.event, aggregateId: e.aggregateId, agent: e.agent, payload: e.payload }
+  return {
+    eventUuid: e.uuid,
+    event: e.event,
+    aggregateId: e.aggregateId,
+    agent: e.agent,
+    seal: chatSeal(e.aggregateId, e.uuid, e.agent, e.event),
+    payload: e.payload,
+  }
 }
 
-/** Recover an ErpaxEvent from a chat row (the row's `createdAt` is the envelope ts). */
-export function chatMessageToEvent(row: ChatMessage & { createdAt?: string }): ErpaxEvent {
+/** Recover an ErpaxEvent from a chat row (the row's `createdAt` is the envelope ts). The seal is a
+ * derived tamper token, not needed to reconstruct the event, so it is not required to read a row. */
+export function chatMessageToEvent(
+  row: Pick<ChatMessage, 'eventUuid' | 'event' | 'aggregateId' | 'agent' | 'payload'> & { createdAt?: string },
+): ErpaxEvent {
   return {
     v: 1,
     uuid: row.eventUuid,
