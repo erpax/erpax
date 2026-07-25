@@ -152,3 +152,47 @@ describe('bind4 — the canonical 4-key navigation-cross fold (one formula, reus
     expect(bind4Fn('referrer', 'id', 'prev', 'X')).not.toBe(s)
   })
 })
+
+import {
+  leafObject,
+  combineObjects,
+  objectAddress,
+  sameObject,
+  objectDepth,
+  objectLeaves,
+} from '@/merge'
+
+describe('object fold — an object may be a combination of objects (content-addressed recursion, like biology)', () => {
+  const molecule = (c: string) => leafObject(c)
+  const cell = combineObjects(molecule('h2o'), molecule('atp'), molecule('dna'))
+  const organ = combineObjects(cell, cell)
+  const organism = combineObjects(organ, organ)
+
+  it('a leaf addresses its content; same content ⇒ same address', () => {
+    expect(objectAddress(leafObject('dna'))).toBe(objectAddress(leafObject('dna')))
+    expect(objectAddress(leafObject('dna'))).not.toBe(objectAddress(leafObject('rna')))
+  })
+  it('same composition ⇒ same address at every level (content-addressed recursion)', () => {
+    const cell2 = combineObjects(molecule('h2o'), molecule('atp'), molecule('dna'))
+    expect(sameObject(cell, cell2)).toBe(true)
+    expect(sameObject(organism, combineObjects(combineObjects(cell2, cell2), combineObjects(cell2, cell2)))).toBe(true)
+  })
+  it('is CLOSED — a combination of objects is an object, foldable again (mixing levels is fine)', () => {
+    const tissue = combineObjects(cell, organ, organism)
+    expect(typeof objectAddress(tissue)).toBe('string')
+    expect(objectDepth(tissue)).toBe(1 + objectDepth(organism))
+  })
+  it('changing one leaf changes the whole address (compositional tamper-cost)', () => {
+    const mutated = combineObjects(combineObjects(molecule('h2o'), molecule('atp'), molecule('MUTANT')), cell)
+    expect(objectAddress(mutated)).not.toBe(objectAddress(organ))
+  })
+  it('depth + leaves count the recursion', () => {
+    expect(objectDepth(molecule('dna'))).toBe(0)
+    expect(objectDepth(organism)).toBe(3)
+    expect(objectLeaves(cell)).toEqual(['h2o', 'atp', 'dna'])
+    expect(objectLeaves(organism)).toHaveLength(12)
+  })
+  it('a combination of one object folds to that object (a bag of one thing is that thing)', () => {
+    expect(objectAddress(combineObjects(cell))).toBe(objectAddress(cell))
+  })
+})

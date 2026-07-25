@@ -183,6 +183,48 @@ export function verifySignature(sig: Signature, grounds: string, tool: string, p
   return sign(sig.claim, grounds, tool, proof).seal === sig.seal
 }
 
+/**
+ * An OBJECT of the folded algebra — a leaf (atomic content) OR a combination of objects, closed under recursive
+ * composition. This is the metrics fold ([[metric]] foldMetrics) generalised: where a metric is the fold of its
+ * readings, an object is the fold of its PARTS, each itself an object, all the way down. Like biology — an
+ * organism is a combination of organs, each of cells, each of molecules — and identity is compositional and
+ * content-addressed at every level: the same composition folds to the same address, so structure dedups by physics.
+ *
+ * @invariant same composition ⇒ same address (content-addressed, at every level of the recursion)
+ * @invariant a combination of one object folds to that object's address (a bag of one thing is that thing)
+ */
+export type ErpaxObject =
+  | { readonly kind: 'leaf'; readonly content: string }
+  | { readonly kind: 'combination'; readonly parts: readonly ErpaxObject[] }
+
+/** Build a leaf object from atomic content. */
+export const leafObject = (content: string): ErpaxObject => ({ kind: 'leaf', content })
+
+/** Combine objects into one — the combination of objects is itself an object (the set is closed). */
+export const combineObjects = (...parts: readonly ErpaxObject[]): ErpaxObject => ({ kind: 'combination', parts })
+
+/**
+ * The content-address of an object — the recursion made real: a leaf folds its content to a uuid; a combination
+ * folds its parts' addresses to one root (foldToRoot). Change one leaf and the address changes up the whole tree,
+ * so the tamper-cost of a composed thing is the fold of the tamper-cost of its parts (biology's own integrity).
+ */
+export function objectAddress(obj: ErpaxObject): string {
+  return obj.kind === 'leaf' ? toUuid(Buffer.from(obj.content, 'utf8')) : foldToRoot(obj.parts.map(objectAddress))
+}
+
+/** Two objects are the same iff they content-address the same — composition, not reference, decides identity. */
+export const sameObject = (a: ErpaxObject, b: ErpaxObject): boolean => objectAddress(a) === objectAddress(b)
+
+/** The recursion depth — a leaf is 0; a combination is 1 + its deepest part. */
+export function objectDepth(obj: ErpaxObject): number {
+  return obj.kind === 'leaf' ? 0 : 1 + obj.parts.reduce((max, p) => Math.max(max, objectDepth(p)), 0)
+}
+
+/** Every leaf content in composition order — the atomic matter the whole is built from. */
+export function objectLeaves(obj: ErpaxObject): string[] {
+  return obj.kind === 'leaf' ? [obj.content] : obj.parts.flatMap(objectLeaves)
+}
+
 /** One step of an authentication path: the sibling to fold with, and whether it sits on the right. */
 export interface MerkleStep {
   readonly sibling: string
