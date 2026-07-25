@@ -58,6 +58,49 @@ export const render = (step: HoroStep): Signal => signalForStep(step)
 export const VISIBLE_MIN_NM = 380
 export const VISIBLE_MAX_NM = 750
 
+// ── energy budget: E = P × t (macroscopic, distinct from the quantum E = hν above) ──────────────
+// The other energy law the photon atom is the home for: where E = hν is one quantum's energy, E = P × t
+// is a system's energy BUDGET over time. HONEST BOUNDARY: this is the macroscopic power-integral, not
+// quantum energy — same word, different scale; it shares this atom because "energy" is one concept here.
+
+/** A running engine: its instantaneous power draw and how long it runs. */
+export interface EnergyStrategy {
+  readonly watts: number
+  readonly seconds: number
+}
+
+/** Energy = power × time — the identity everything else derives from (joules). */
+export const energyJoules = (watts: number, seconds: number): number => watts * seconds
+
+/** Total energy over a fixed window: the active work, plus idle at `idleWatts` for the remaining time. */
+export function windowEnergy(active: EnergyStrategy, windowSeconds: number, idleWatts: number): number {
+  const idle = Math.max(0, windowSeconds - active.seconds)
+  return energyJoules(active.watts, active.seconds) + energyJoules(idleWatts, idle)
+}
+
+/**
+ * RACE TO IDLE — the counterintuitive theorem: a higher-power engine can spend LESS total energy if it finishes
+ * the work sooner and the system idles the rest of the window (battery energy is the integral P·t, not peak P).
+ * Returns which strategy wins and both energies. A GPU beats a CPU here exactly when its shorter time outweighs
+ * its higher watts over the window.
+ */
+export function raceToIdle(
+  a: EnergyStrategy,
+  b: EnergyStrategy,
+  windowSeconds: number,
+  idleWatts: number,
+): { readonly winner: 'a' | 'b' | 'tie'; readonly energyA: number; readonly energyB: number } {
+  const energyA = windowEnergy(a, windowSeconds, idleWatts)
+  const energyB = windowEnergy(b, windowSeconds, idleWatts)
+  return { winner: energyA < energyB ? 'a' : energyB < energyA ? 'b' : 'tie', energyA, energyB }
+}
+
+/** Fixed-function efficiency: a dedicated block (video decode, ISP) does the same work at 1/factor the energy. */
+export const fixedFunctionEnergy = (softwareJoules: number, factor: number): number => softwareJoules / factor
+
+/** The honest caveat as code: an engine that never idles (uncapped/always-on) cannot race to idle — it only drains. */
+export const drainsBattery = (active: EnergyStrategy, windowSeconds: number): boolean => active.seconds >= windowSeconds
+
 /** A uuid refracted into visible light: its hue + the physical photon at that wavelength. */
 export interface RefractedPhoton extends Photon {
   readonly hue: number

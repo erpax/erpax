@@ -86,3 +86,28 @@ describe('disperse — the diamond splits a uuid into its spectrum (reuses refra
     expect(first).toContain(refract(u).wavelengthNm)
   })
 })
+
+import { energyJoules, windowEnergy, raceToIdle, fixedFunctionEnergy, drainsBattery } from '@/photon'
+
+describe('energy budget — E = P × t, race to idle (macroscopic, distinct from E = hν)', () => {
+  it('energy is power × time (joules)', () => {
+    expect(energyJoules(10, 5)).toBe(50)
+  })
+  it('RACE TO IDLE: a higher-power engine that finishes sooner uses LESS total energy over the window', () => {
+    const gpu = { watts: 12, seconds: 2 } // fast, hot
+    const cpu = { watts: 4, seconds: 10 } // slow, cool
+    const r = raceToIdle(gpu, cpu, 10, 0.5) // 10s window, 0.5W idle
+    // gpu: 12*2 + 0.5*8 = 28 ; cpu: 4*10 + 0.5*0 = 40 → gpu wins despite 3× the peak watts
+    expect(r.energyA).toBe(28)
+    expect(r.energyB).toBe(40)
+    expect(r.winner).toBe('a')
+  })
+  it('fixed-function block does the same work at 1/factor the energy', () => {
+    expect(fixedFunctionEnergy(1200, 100)).toBe(12) // 100× more efficient decode
+  })
+  it('the honest caveat: an engine that never idles cannot race to idle — it only drains', () => {
+    expect(drainsBattery({ watts: 12, seconds: 10 }, 10)).toBe(true)
+    expect(drainsBattery({ watts: 12, seconds: 2 }, 10)).toBe(false)
+    expect(windowEnergy({ watts: 12, seconds: 2 }, 10, 0.5)).toBe(28)
+  })
+})
