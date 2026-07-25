@@ -134,3 +134,21 @@ describe('merge — the inclusion proof (total membership; the one-way wall reso
     })
   })
 })
+
+import { bind4 as bind4Fn, merge as mergeFn } from '@/merge'
+
+describe('bind4 — the canonical 4-key navigation-cross fold (one formula, reused by chat + matrix bind)', () => {
+  const s = bind4Fn('referrer', 'id', 'prev', 'next')
+  it('is the matrix-bind shape: merge(id, merge(merge(referrer, prev), next))', () => {
+    expect(s).toBe(mergeFn('id', mergeFn(mergeFn('referrer', 'prev'), 'next')))
+  })
+  it('folds to a content-uuid', () => {
+    expect(s).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
+  })
+  it('ALL 4 keys are load-bearing — flipping any one breaks the seal (tamper-evident, not linear)', () => {
+    expect(bind4Fn('X', 'id', 'prev', 'next')).not.toBe(s)
+    expect(bind4Fn('referrer', 'X', 'prev', 'next')).not.toBe(s)
+    expect(bind4Fn('referrer', 'id', 'X', 'next')).not.toBe(s)
+    expect(bind4Fn('referrer', 'id', 'prev', 'X')).not.toBe(s)
+  })
+})

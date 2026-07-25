@@ -9,6 +9,7 @@
  * @see ../receipt (the uuid-chained audit) · ./SKILL.md
  */
 import { issueReceipt, type Decision, type Receipt } from '@/receipt'
+import { bind4 } from '@/merge'
 
 /** What an untrusted tool is permitted to do — the content-addressed grant. */
 export interface ToolGrant {
@@ -98,4 +99,70 @@ export function evaluate(args: {
   }
   const receipt = issueReceipt({ decision, head: args.head, timestampIso: args.timestampIso })
   return { allowed: verdict.allowed, ...(verdict.reason ? { reason: verdict.reason } : {}), decision, receipt }
+}
+
+/** An outbound HTTP(S) request the sandboxed tool wants to make — the body is named by its content-uuid, never carried. */
+export interface EgressRequest {
+  readonly url: string
+  readonly method: string
+  /** content-uuid of the request body (its id) — the payload is addressed, never held in the grant. */
+  readonly bodyUuid: string
+  /** the credential handle the request authenticates with, if any (checked against the grant). */
+  readonly credentialHandle?: string
+}
+
+/** The verdict on an egress attempt: allowed + a 4-key tamper-evident seal of the request cross + its receipt. */
+export interface EgressVerdict {
+  readonly allowed: boolean
+  readonly reason?: string
+  /** the 4-key seal — bind4(host ⊕ bodyUuid ⊕ method ⊕ credentialHandle); flip any and it breaks. Present even when blocked (the attempt is sealed). */
+  readonly seal: string
+  readonly receipt: Receipt
+}
+
+/**
+ * secureEgress — the ONE guarded door for any outbound HTTP(S) the sandboxed tool makes. Egress is where a
+ * compromised tool exfiltrates, so it is refused unless it clears three gates AT ONCE:
+ *   1. TRANSPORT — the URL must be `https:` (plaintext egress is refused; encryption in transit is not optional).
+ *   2. ALLOWLIST — the host must be in the grant's `allowedHosts` (reuses `permits`, capability `egress`), and the
+ *      credential handle must be granted — a leak cannot exceed the grant.
+ *   3. SEAL — the request cross (host ⊕ bodyUuid ⊕ method ⊕ credentialHandle) folds to a 4-key `bind4` seal, so
+ *      the exact request that left is tamper-evident: flip the host, the body, the method, or the credential and
+ *      the seal breaks. The attempt is ALWAYS sealed + receipted, allowed or blocked — a refused exfiltration is
+ *      itself auditable.
+ *
+ * This is the "quantum encryption over any http(s)" door: the 4-key seal is the same fold the chat and the matrix
+ * bind use, now on the wire. HONEST BOUNDARY — it proves the request is allowlisted + tamper-EVIDENT, it does not
+ * itself encrypt the body (TLS does that; the seal detects tampering, it does not provide confidentiality).
+ */
+export function secureEgress(args: {
+  grant: ToolGrant
+  request: EgressRequest
+  actor: string
+  head: { leafUuid: string; seq: number } | null
+  timestampIso: string
+}): EgressVerdict {
+  const { request: r } = args
+  let host = ''
+  let httpsOk = false
+  try {
+    const u = new URL(r.url)
+    host = u.host
+    httpsOk = u.protocol === 'https:'
+  } catch {
+    /* malformed URL ⇒ host '' ⇒ blocked below */
+  }
+  const seal = bind4(host, r.bodyUuid, r.method, r.credentialHandle ?? '')
+  const verdict: Permission = !httpsOk
+    ? { allowed: false, reason: host === '' ? 'malformed egress URL' : 'egress must be HTTPS (encryption in transit)' }
+    : permits(args.grant, { capability: 'egress', host, ...(r.credentialHandle ? { credentialHandle: r.credentialHandle } : {}) })
+  const decision: Decision = {
+    action: `egress ${r.method} ${host || r.url}`,
+    actor: args.actor,
+    outcome: verdict.allowed ? 'allow' : 'block',
+    tier: 'sandbox',
+    capabilities: args.grant.capabilities,
+  }
+  const receipt = issueReceipt({ decision, head: args.head, timestampIso: args.timestampIso })
+  return { allowed: verdict.allowed, ...(verdict.reason ? { reason: verdict.reason } : {}), seal, receipt }
 }

@@ -23,7 +23,7 @@
 
 import type { ErpaxEvent } from '@/agent/sync'
 import { navPyramid, type NavPyramid } from '@/navigation'
-import { merge } from '@/merge'
+import { bind4 } from '@/merge'
 import { domainToErpaxEvent } from './society'
 import type { DomainEvent } from '../types'
 import { enforceTeamCommsEmit } from '@/team/comms'
@@ -103,7 +103,7 @@ export function chatContext(referrerEvent: string, currentEvent: string): NavPyr
  * this. It detects any change to the thread; it does not hide the thread.
  */
 export function chatSeal(referrer: string, id: string, prev: string, next: string): string {
-  return merge(id, merge(merge(referrer, prev), next))
+  return bind4(referrer, id, prev, next) // the canonical navigation-cross fold (one formula, @/merge)
 }
 
 /** The slice of Payload's Local API the chat transport needs (structural — mockable). */

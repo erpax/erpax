@@ -42,3 +42,39 @@ describe('sandbox — untrusted tool execution, encoded natively (independent)',
     expect(blocked.receipt.prevLeafUuid).toBe(ok.receipt.leafUuid)
   })
 })
+
+import { secureEgress as secureEgressFn, type ToolGrant as TG } from '@/sandbox'
+
+describe('secureEgress — the one guarded door for outbound HTTP(S): HTTPS + allowlist + 4-key seal', () => {
+  const grant: TG = { toolUuid: 't', capabilities: ['egress'], allowedHosts: ['api.search.example'], credentialHandles: ['search-key'] }
+  const base = { actor: 'tool', head: null, timestampIso: '2026-07-25T00:00:00.000Z' }
+
+  it('REFUSES plaintext http (encryption in transit is not optional) — but still seals + receipts the attempt', () => {
+    const v = secureEgressFn({ grant, request: { url: 'http://api.search.example/q', method: 'GET', bodyUuid: 'b' }, ...base })
+    expect(v.allowed).toBe(false)
+    expect(v.reason).toMatch(/HTTPS/)
+    expect(v.seal).toMatch(/^[0-9a-f-]{36}$/) // a refused exfiltration is itself sealed + auditable
+    expect(v.receipt).toBeTruthy()
+  })
+
+  it('BLOCKS a host not on the allowlist (no exfiltration to an unapproved endpoint)', () => {
+    const v = secureEgressFn({ grant, request: { url: 'https://evil.exfil.example/steal', method: 'POST', bodyUuid: 'b' }, ...base })
+    expect(v.allowed).toBe(false)
+    expect(v.reason).toMatch(/not allowlisted/)
+  })
+
+  it('ALLOWS https + allowlisted host + granted credential, sealing the exact request cross', () => {
+    const req = { url: 'https://api.search.example/q', method: 'GET', bodyUuid: 'body-uuid', credentialHandle: 'search-key' }
+    const v = secureEgressFn({ grant, request: req, ...base })
+    expect(v.allowed).toBe(true)
+    // flip any of the 4 keys → a different seal (the exact request that left is tamper-evident)
+    const other = secureEgressFn({ grant, request: { ...req, bodyUuid: 'tampered' }, ...base })
+    expect(other.seal).not.toBe(v.seal)
+  })
+
+  it('BLOCKS an un-granted credential handle (a leak cannot exceed the grant)', () => {
+    const v = secureEgressFn({ grant, request: { url: 'https://api.search.example/q', method: 'GET', bodyUuid: 'b', credentialHandle: 'admin-key' }, ...base })
+    expect(v.allowed).toBe(false)
+    expect(v.reason).toMatch(/credential/)
+  })
+})

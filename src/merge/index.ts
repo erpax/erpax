@@ -135,6 +135,24 @@ export function collisionClasses(bodies: readonly string[]): CollisionClasses {
 export const BOTTOM: string = toUuid(Buffer.from('', 'utf8'))
 
 /**
+ * bind4 — the canonical 4-KEY navigation-cross fold: `merge(id, merge(merge(referrer, prev), next))`.
+ *
+ * This is the exact shape the [[matrix]] `bind` folds a node's identity with its three neighbours
+ * (uuid ⊕ parent ⊕ prev ⊕ next), and it was written THREE times — the matrix bind, `chatSeal`, and
+ * (nearly) the egress seal — each a private copy of one formula. Stated once here: the four keys of the
+ * cross fold to one content-uuid, and flipping ANY of the four changes it, so the result is a 4-connected
+ * tamper-evident seal a single linear inversion cannot forge (all four must be inverted at once). Distinct
+ * from `foldToRoot` (a balanced Merkle tree over N leaves) — this is the ORDERED cross fold, where the id is
+ * the outer key and referrer/prev/next nest inside, matching the matrix's coordinate structure exactly.
+ *
+ * HONEST BOUNDARY — tamper-EVIDENT, not confidentiality: it detects any change to the four keys, it does
+ * not hide them; SHA-256 is 2^128 (Grover halves it), so "unforgeable" is the coverage limit, not literal.
+ */
+export function bind4(referrer: string, id: string, prev: string, next: string): string {
+  return merge(id, merge(merge(referrer, prev), next))
+}
+
+/**
  * A 4-uuid signature — the content-address of a claim and its three grounds: what it REDUCES to, the TOOL that
  * computes it, and the PROOF that witnesses it. An unsigned statement rests on AUTHORITY ([[theorem]]: authority
  * is never a step), so it is rejectable. Signing content-addresses every leg, and BOTTOM (the void's address) is
