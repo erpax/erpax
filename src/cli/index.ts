@@ -132,7 +132,7 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
     if (resolved.cmd === '__gate_packages__') return runGatePackages([...acts.slice(1), ...rest])
     if (resolved.cmd === '__payload_approve__') return runPayloadApproval()
     if (resolved.cmd === '__rules_check__') return runRulesCheck()
-    return runShell(resolved.cmd, [...acts.slice(1), ...rest])
+    return runShell(resolved.cmd, [...acts.slice(1), ...rest], `erpax ${domain}${acts[0] ? ' ' + acts[0] : ''}`)
   }
 
   const resolved = resolveAction(rawDomain, action)
@@ -151,7 +151,12 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
   if (resolved.cmd === '__gate_packages__') return runGatePackages(rest)
   if (resolved.cmd === '__payload_approve__') return runPayloadApproval()
   if (resolved.cmd === '__rules_check__') return runRulesCheck()
-  return runShell(resolved.cmd, rest)
+  // Every command carries a stable label so it earns its computed rung from its OWN history
+  // (samplesMsOf → timeoutOf) and shows a progress heartbeat — the same self-pacing the gate
+  // lanes use. A heavy command (readme/corpus regen) with no label was pinned to the flat 5-min
+  // default forever, could never record a success sample, and so could never grow past it: the
+  // command that cannot complete is the leak that forces a human to hand-run and babysit it.
+  return runShell(resolved.cmd, rest, `erpax ${rawDomain}${action ? ' ' + action : ''}`)
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
