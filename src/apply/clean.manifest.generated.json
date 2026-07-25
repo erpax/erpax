@@ -1,0 +1,66 @@
+{
+  "_law": "emit-only — dry-clean manifest; never hand-edit; re-run pnpm erpax clean to refresh",
+  "cycleId": "211d8e3a831c",
+  "completedAt": "2026-07-25T08:40:15.895Z",
+  "dryRun": false,
+  "fingerprint": "e25eabc0ae42f6dd",
+  "axes": {
+    "stray-ts": {
+      "count": 4014,
+      "baseline": 4168,
+      "overBaseline": 0
+    },
+    "not-allowed": {
+      "count": 5,
+      "baseline": 0,
+      "overBaseline": 5
+    },
+    "bypass-math": {
+      "count": 7,
+      "baseline": 0,
+      "overBaseline": 7
+    },
+    "word-matter": {
+      "count": 1694,
+      "baseline": 1521,
+      "overBaseline": 173
+    },
+    "logic-concentration": {
+      "count": 29,
+      "baseline": 23,
+      "overBaseline": 6
+    }
+  },
+  "taxonomy": {
+    "A-emit": 0,
+    "B-nest": 20,
+    "C-delete": 0,
+    "D-rule-fix": 22
+  },
+  "applied": [],
+  "efficiency": {
+    "before": {
+      "skillContextBytes": 34864,
+      "rulesOfMs": 29352.3,
+      "readmeWaveDurationMs": 0,
+      "violationCount": 15846,
+      "concentrationTopScore": 1.589,
+      "constantsCount": 3,
+      "workTamperProduct": 0,
+      "entropyEb": -23818.195,
+      "freeEnergyBits": 14254.028
+    },
+    "after": {
+      "skillContextBytes": 34864,
+      "rulesOfMs": 27261.5,
+      "readmeWaveDurationMs": 0,
+      "violationCount": 15846,
+      "concentrationTopScore": 1.589,
+      "constantsCount": 3,
+      "workTamperProduct": 0,
+      "entropyEb": -23818.195,
+      "freeEnergyBits": 14254.028
+    },
+    "ratchetOk": true
+  }
+}
