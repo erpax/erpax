@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest'
 import {
   CHAT_COLLECTION,
+  chatContext,
   eventToChatMessage,
   chatMessageToEvent,
   publishToChat,
@@ -15,6 +16,23 @@ import {
 } from './payload-chat'
 import { domainToErpaxEvent } from './society'
 import type { ErpaxEvent } from '@/agent/sync'
+
+describe('chatContext — a chat reply is the (referrer × current) event superposition', () => {
+  it('a same-atom thread collapses to that atom (full merkaba, one topic)', () => {
+    const c = chatContext('invoice:activated', 'invoice:paid')
+    expect(c.context).toBe('invoice')
+    expect(c.group).toBe('invoice')
+    expect(c.breadcrumb).toEqual(c.descend) // one topic ⇒ the whole spin
+  })
+
+  it('a cross-atom reply has no shared context ⇒ the current event own group (reuses navPyramid, no thread store)', () => {
+    const c = chatContext('payment:received', 'invoice:activated')
+    expect(c.context).toBe('')
+    expect(c.group).toBe('invoice')
+    expect(c.referrer).toBe('payment') // atom extracted from atom:verb
+    expect(c.current).toBe('invoice')
+  })
+})
 
 const TENANT = 'tenant-chat'
 const TS = '2026-06-01T00:00:00.000Z'

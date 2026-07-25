@@ -22,6 +22,7 @@
  */
 
 import type { ErpaxEvent } from '@/agent/sync'
+import { navPyramid, type NavPyramid } from '@/navigation'
 import { domainToErpaxEvent } from './society'
 import type { DomainEvent } from '../types'
 import { enforceTeamCommsEmit } from '@/team/comms'
@@ -53,6 +54,19 @@ export function chatMessageToEvent(row: ChatMessage & { createdAt?: string }): E
     ts: row.createdAt ?? '',
     payload: row.payload,
   }
+}
+
+/**
+ * The QUANTUM context of a chat exchange — the (referrer × current) superposition over the two events'
+ * atoms, computed via the navigational pyramid. A reply to `invoice:activated` from `payment:received`
+ * collapses to the shared context the referrer arrived through, so a thread is navigable (referrer-relative
+ * breadcrumb, shared group) with ZERO stored thread structure — the same fold that scales the nav base.
+ * The chat improves the chat: it reuses navPyramid (the corpus's own nav theorem) instead of a bespoke
+ * thread model. An event `atom:verb` maps to its atom path (`atom`, dots → slashes).
+ */
+export function chatContext(referrerEvent: string, currentEvent: string): NavPyramid {
+  const atomOf = (ev: string): string => (ev.split(':')[0] ?? '').replace(/\./g, '/')
+  return navPyramid(atomOf(referrerEvent), atomOf(currentEvent))
 }
 
 /** The slice of Payload's Local API the chat transport needs (structural — mockable). */
