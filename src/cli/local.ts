@@ -134,11 +134,12 @@ export function runTestWaves(args: readonly string[] = []): number {
   const force = args.includes('--all')
   const plan = force ? { changed: all, covered: [] as string[] } : planSuites(all, cwd)
   console.log(`test waves — roster ${all.length} · covered by receipts ${plan.covered.length} · to run ${plan.changed.length}${force ? ' (--all)' : ''}`)
-  // 12, not 25: heavy payload-booting suites (config/* · confirm/*) run 30–40s each under
-  // isolate:true, so a 25-suite batch of them exceeds the 15-min batch bound and times out
-  // (blocking the grind). Half-size batches keep the heaviest under the bound; light batches
-  // just seal in two passes instead of one — same total, but every batch completes.
-  const BATCH = 12
+  // 6: under isolate:false (shared module registry — the ~6× speedup) a payload-DENSE batch
+  // (config/* · confirm/* · consistency/* · consent/* — all boot payload AND write D1) lets D1
+  // state accumulate across files with no per-file teardown, so late suites scan more rows and
+  // the batch crawls past the 15-min bound. Smaller batches cap the accumulation; light batches
+  // just seal in more passes — same total, every batch completes.
+  const BATCH = 6
   for (let b = 0; b * BATCH < plan.changed.length; b++) {
     const batch = plan.changed.slice(b * BATCH, (b + 1) * BATCH)
     const label = 'test:wave'
