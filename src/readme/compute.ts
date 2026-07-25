@@ -7,7 +7,7 @@
  * @see ../index.ts — ./paper — ./entropy — ./quantum-thinking
  */
 import { readFileSync, writeFileSync, readdirSync, lstatSync, existsSync, mkdirSync, type Dirent } from 'node:fs'
-import { memoByFingerprint } from '@/cache/fingerprint'
+import { memoByFingerprint, memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { canonical as stableStringify } from '@/merge'
 import { join, dirname, relative } from 'node:path'
 import { createHash } from 'node:crypto'
@@ -1160,9 +1160,15 @@ export function collectImpuritySignals(
 }
 
 /** Build the unified typography graph once per readme materialize pass. */
-/** The whole-corpus typography graph — memoised by fingerprint ([[cache]]/fingerprint), so N callers pay ONE scan. */
+/**
+ * The whole-corpus typography graph — memoised by fingerprint ([[cache]]/fingerprint) ON DISK, so it is paid
+ * ONCE per corpus state across EVERY process, not once per process. The ~8s graph scan is the fixed cost every
+ * readme process (regen wave, verify, readme:check) used to re-pay from cold; disk-caching it means a resumed
+ * regen and the gate lane read it instantly (JSON round-trip is lossless — vertices/edges/index/partitions/organs
+ * are all plain data). The in-memory memo still short-circuits repeat calls within one process.
+ */
 export function buildReadmeTypographyGraph(cwd: string = process.cwd()): AnalysisTypographyGraph {
-  return memoByFingerprint('readme-typography-graph', cwd, () => {
+  return memoByFingerprintOnDisk('readme-typography-graph', cwd, () => {
     const ctx = buildFolderReadmeContext(join(cwd, SRC))
     return buildAnalysisTypographyGraph(loadSkillPages(cwd), collectImpuritySignals(cwd, ctx))
   })
