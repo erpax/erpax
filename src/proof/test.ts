@@ -8,10 +8,13 @@ import { proofTamperCost, empiricalProofs } from './dry-proof'
 import { jcsCanonicalize } from '@/integrity'
 
 describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () => {
-  it('without coverage, reports the honest digest floor (2^106), tamper-evident, echoing the invariant count it ran', () => {
+  it('without coverage, reports the honest forge floor (2^112, the anchor path — cheaper than the digest since it rose to 122), tamper-evident', () => {
     const t = proofTamperCost({ invariantsChecked: 43 })
-    expect(t.crackCostLog2).toBe(106)
-    expect(t.binding).toBe('second-preimage')
+    // crackVerdict surfaces min(collision, second-preimage, anchor). The digest second-preimage rose
+    // 106→122 with the fixpoint correction (ERPAX_DIGEST_BITS = 122), so the anchor path (112) is now the
+    // cheapest honest floor and the binding follows it. Not a regression — the proof re-picked the min.
+    expect(t.crackCostLog2).toBe(112)
+    expect(t.binding).toBe('anchor')
     expect(t.tamperEvident).toBe(true)
     expect(t.invariantsChecked).toBe(43)
     expect(t.replicas).toBe(1)

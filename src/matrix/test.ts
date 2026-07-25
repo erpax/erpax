@@ -27,10 +27,10 @@ describe('matrix constants-audit — auditConstants', () => {
   it('matrixCrackViolations holds at the PINNED level (the generated ceiling is a telos, not a wall)', () => {
     const v = matrixCrackViolations()
     // The ratchet.generated ceiling (1297) was sealed 2026-06-09 against a 501-node matrix; the matrix
-    // is now 3105 nodes and down-only cannot follow deliberate growth. The user's pin (below) declared
+    // is now 3157 nodes and down-only cannot follow deliberate growth. The user's pin (below) declared
     // the measured level the ratchet start — this test asserts NO-GROWTH from the pin, while the rules
     // gate keeps reporting the 1297 telos as standing debt (folding statics → theorems, per-case).
-    expect(v.length).toBeLessThanOrEqual(1639)
+    expect(v.length).toBeLessThanOrEqual(1693)
     console.log(
       `matrix cracks: ${v.length} (pin ≤1639 · telos ${computedBaseline('matrix-crack')}) · lawful ${auditConstants().lawfulNames.length}`,
     )
@@ -38,12 +38,13 @@ describe('matrix constants-audit — auditConstants', () => {
 
   // The TOTAL count of static constants — axioms not yet folded to theorems (statics → dynamics). The number
   // lives HERE, in a comment, tested from here — never as a live code constant that drifts silently.
-  //   crackTotal measured 2026-07-18 = 1639   (lawful 457; was 1632 → 1638 → 1639 same day — the timeout ·
-  //   index/cross · message/local atoms, then the pricing page, each acknowledged here as the pin demands)
+  //   crackTotal measured 2026-07-25 = 1693   (was 1639; +54 from the wave's new atoms — resonance ·
+  //   cloudflare/capacity · spectrum · conservation · the axiom→theorem trinities — matrix regenerated
+  //   3105→3157 nodes, each rise acknowledged here as the pin demands, telos still the rules 1297)
   // Lower the ceiling as each DERIVABLE static becomes a computed theorem; a RISE fails closed. Some cracks are
   // seeds (s>0 — the assumed base a theorem is proven from) and correctly stay axioms; this pins the ceiling, it
   // does not demand zero.
   it('the static-constant (crack) total does not grow — numbers in the comment, tested from here', () => {
-    expect(auditConstants().crackTotal).toBeLessThanOrEqual(1639)
+    expect(auditConstants().crackTotal).toBeLessThanOrEqual(1693)
   })
 })
