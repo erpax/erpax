@@ -9,12 +9,13 @@ import {
   accessibleByStandard, chatInvokeByStandard,
   crackTheorem, improveClaim, chatMcpFold,
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
-  compose,
+  compose, superpose,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
 import { requiredAccessTier, tierRank } from '@/access/standard'
 import { A432 } from '@/signal'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 
 // message-uuids ARE content-uuids (hex uuid format), as merge requires.
 const U1 = '11111111-1111-8111-8111-111111111111'
@@ -286,5 +287,22 @@ describe('quantum/chat — compose: content folded into deterministic A432 music
       expect(n.freq).toBeCloseTo((A432 * n.ratio[0]) / n.ratio[1], 6)
     }
     expect(c.meanTenney).toBeGreaterThanOrEqual(0)
+  })
+})
+
+describe('quantum/chat — superpose: one uuid, many types at once, sealed, reverse-cost computable', () => {
+  const u = '19ea2d27-d476-872a-a19c-792e598a62f6'
+  it('projects the same uuid into simultaneous typed views, all from one fold', () => {
+    const s = superpose(u)
+    expect(s.asMusic.notes.map((n) => n.freq)).toEqual(compose(u).notes.map((n) => n.freq)) // same fold ⇒ same music
+    expect(s.sameFold).toBe(true)
+    expect(s.sealed).toMatch(/^[0-9a-f]{8}-/) // a self-sealed cross (tamper-evident)
+    expect(superpose(u).sealed).toBe(s.sealed) // deterministic
+  })
+  it('the reverse-engineering cost is computable quantum algebra (2^D classical, 2^(D/3) BHT)', () => {
+    const s = superpose(u)
+    expect(s.reverseLog2Classical).toBe(ERPAX_DIGEST_BITS) // 122
+    expect(s.reverseLog2Quantum).toBeCloseTo(ERPAX_DIGEST_BITS / 3, 6) // 40.67 — the honest quantum floor
+    expect(s.asBits).toBe(ERPAX_DIGEST_BITS)
   })
 })

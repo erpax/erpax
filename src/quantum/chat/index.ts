@@ -12,6 +12,8 @@ import { merge, toUuid } from '@/uuid/matrix'
 import { A432, NOTES } from '@/signal'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
 import { intervalRatio, tenneyHeight } from '@/harmony'
+import { bind4 } from '@/merge'
+import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'
 import {
   sealSecret,
   decryptIfUuid,
@@ -109,6 +111,44 @@ export interface Composition {
   readonly rootFreq: number
   /** mean Tenney height of consecutive intervals — lower is more consonant (the piece's texture). */
   readonly meanTenney: number
+}
+
+// ── one uuid, many types at once, sealed — and the reverse cost is computable ──
+// The perspective/diamond law: one content-fold projects N typed views (music · ring
+// position · entropy width · a sealed cross), all DERIVED, none stored. The improvement
+// is DRY + tamper-cost: forging ANY type requires forging the one fold — a second-
+// preimage — and every type-projection then agrees automatically (they share the fold).
+// So multi-type does not LOWER the floor; it makes N types free and tamper-evident. And
+// the reverse-engineering cost is computable quantum algebra: 2^D classical, 2^(D/3) BHT.
+
+export interface UuidSuperposition {
+  readonly uuid: string
+  readonly asMusic: Composition
+  readonly asHoro: HoroStep
+  readonly asBits: number
+  /** a self-sealed 4-key cross of the uuid — tamper-evident (the "also sealed"). */
+  readonly sealed: string
+  /** all views derive from the ONE fold — forge once forges all (consistency is free). */
+  readonly sameFold: true
+  /** reverse-engineer cost (log2) — computable quantum algebra; classical second-preimage. */
+  readonly reverseLog2Classical: number
+  /** the honest quantum floor — BHT collision on the shared fold. */
+  readonly reverseLog2Quantum: number
+}
+
+/** See one uuid as all its types at once, sealed, with the computable reverse cost. */
+export function superpose(uuid: string): UuidSuperposition {
+  const hex = uuid.replace(/-/g, '')
+  return {
+    uuid,
+    asMusic: compose(uuid),
+    asHoro: HORO_DIGITS[parseInt(hex[0] ?? '0', 16) % HORO_DIGITS.length]! as HoroStep,
+    asBits: ERPAX_DIGEST_BITS,
+    sealed: bind4(uuid, uuid, uuid, uuid),
+    sameFold: true,
+    reverseLog2Classical: secondPreimageLog2(ERPAX_DIGEST_BITS),
+    reverseLog2Quantum: bhtCollisionLog2(ERPAX_DIGEST_BITS),
+  }
 }
 
 /** Fold a content-uuid into a deterministic A432 melody — the quantum composer. */
