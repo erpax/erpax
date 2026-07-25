@@ -76,3 +76,29 @@ describe('foldMetrics — a metric may be a combination of metrics (closed under
     expect(whole.decohered).toContain('gravity.mass')
   })
 })
+
+import { accuracy } from './index'
+
+describe('accuracy — a metric measured against the reference (the complement of coherence)', () => {
+  const m = quantomize([
+    { name: 'vat.rate', value: 20 },
+    { name: 'pi', value: 3.14 },
+    { name: 'unreferenced', value: 99 },
+  ])
+  it('an exact reading scores accuracy 1; readings without a reference are not counted', () => {
+    const a = accuracy(m, { 'vat.rate': 20, pi: 3.14159 })
+    expect(a.referenced).toBe(2) // unreferenced excluded
+    const vat = a.errors.find((e) => e.name === 'vat.rate')!
+    expect(vat.relError).toBe(0) // exact
+  })
+  it('aggregate accuracy is the mean of (1 − relError), scale-free', () => {
+    const a = accuracy(m, { 'vat.rate': 20, pi: 3.14 }) // both exact
+    expect(a.accuracy).toBe(1)
+    const b = accuracy(m, { 'vat.rate': 25 }) // 20 vs 25 → relError 0.2 → acc 0.8
+    expect(b.accuracy).toBeCloseTo(0.8)
+  })
+  it('coherence ≠ accuracy: a coherent metric can be inaccurate against a reference (the two failures separate)', () => {
+    expect(m.coherent).toBe(true) // instruments agree with each other
+    expect(accuracy(m, { 'vat.rate': 9 }).accuracy).toBeLessThan(1) // but disagree with the standard
+  })
+})

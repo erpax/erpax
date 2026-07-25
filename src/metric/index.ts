@@ -81,6 +81,51 @@ export function foldMetrics(metrics: readonly QuantumMetric[]): QuantumMetric {
   return quantomize(metrics.flatMap((m) => m.readings))
 }
 
+/** One reading measured against its reference — the relative error, and the accuracy 1−error (floored at 0). */
+export interface AccuracyError {
+  readonly name: string
+  readonly value: number
+  readonly expected: number
+  /** |value − expected| / max(|expected|, 1) — scale-free so a big number and a small one compare fairly. */
+  readonly relError: number
+}
+
+/** Quantum ACCURACY — a metric measured against a reference (the standard), the complement of coherence. */
+export interface Accuracy {
+  /** how many readings had a reference to compare against. */
+  readonly referenced: number
+  /** aggregate accuracy in [0,1] — mean of (1 − relError) over referenced readings; 1 = every one exact. */
+  readonly accuracy: number
+  readonly errors: readonly AccuracyError[]
+}
+
+/**
+ * Quantum accuracy — coherence is agreement among instruments; ACCURACY is agreement with the STANDARD. A
+ * coherent metric is not a true one ([[rules]]/refutable, this atom's law: coherence ≠ truth), so accuracy asks
+ * the other question: given a REFERENCE (known expected values), how close is each reading? Per-reading relative
+ * error (scale-free), and an aggregate in [0,1]. Together they separate the two failures a measurement can have:
+ * decoherence (instruments disagree with each other — quantomize) and inaccuracy (they agree, but with the wrong
+ * value — here).
+ *
+ * HONEST BOUNDARY: accuracy is against the PROVIDED reference, never absolute truth — the corpus has no oracle,
+ * and a reference can itself be wrong. This reports closeness-to-reference; a perfectly accurate reading against a
+ * wrong reference is still wrong. Coherent + accurate is the most a measurement earns here; true is not on offer.
+ *
+ * @invariant a reading exactly equal to its reference contributes accuracy 1; a reading with no reference is not counted
+ */
+export function accuracy(metric: QuantumMetric, reference: Readonly<Record<string, number>>): Accuracy {
+  const errors: AccuracyError[] = metric.readings
+    .filter((r) => Object.prototype.hasOwnProperty.call(reference, r.name))
+    .map((r) => {
+      const expected = reference[r.name]!
+      const relError = Math.abs(r.value - expected) / (Math.abs(expected) || 1)
+      return { name: r.name, value: r.value, expected, relError }
+    })
+  const referenced = errors.length
+  const acc = referenced === 0 ? 0 : errors.reduce((sum, e) => sum + Math.max(0, 1 - e.relError), 0) / referenced
+  return { referenced, accuracy: acc, errors }
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const { concentration, well } = await import('@/gravity')
   const { proofLedger } = await import('@/accounting/proof')
