@@ -1245,6 +1245,13 @@ const frameOf = (
 }
 
 /** Derive the per-folder completeness model — impure (reads fs + matrix). */
+/**
+ * Shared ancestor-sealed cache, scoped to the frozen ctx of one derivation pass. Keying by ctx identity means it
+ * is shared across every recursive deriveFolderModel call in a regen (so ancestor `sealed` is computed once, not
+ * exponentially) and auto-discarded when a fresh ctx is built (next regen / a test's fixture ctx) — no manual reset.
+ */
+const SEALED_BY_CTX: WeakMap<FolderReadmeContext, Map<string, boolean>> = new WeakMap()
+
 export function deriveFolderModel(
   atomPath: string,
   cwd: string = process.cwd(),
@@ -1360,13 +1367,23 @@ export function deriveFolderModel(
       escapes === 0 &&
       statement.balanced,
   )
-  const ancestorCache = new Map<string, boolean>()
+  // ancestorSealed recurses into deriveFolderModel for each path prefix. The cache MUST be shared across the
+  // whole recursion (not local per call) or a deep atom re-derives its ancestors exponentially — a depth-9 atom
+  // (legal/…/reports) blew this up into a multi-minute hang that OS-killed the regen. Scoping the cache to `ctx`
+  // (one frozen ctx per regen) shares it across every recursive call and auto-invalidates on a fresh ctx. The
+  // in-progress marker (set false BEFORE recursing) also breaks any composes-link cycle: a re-entrant visit sees
+  // the conservative `false` (not-yet-sealed) instead of looping forever.
+  let sealedCache = SEALED_BY_CTX.get(ctx)
+  if (!sealedCache) {
+    sealedCache = new Map<string, boolean>()
+    SEALED_BY_CTX.set(ctx, sealedCache)
+  }
   const ancestorSealed = (prefix: string): boolean => {
-    let v = ancestorCache.get(prefix)
-    if (v === undefined) {
-      v = deriveFolderModel(prefix, cwd, ctx, graph).sealed
-      ancestorCache.set(prefix, v)
-    }
+    const hit = sealedCache!.get(prefix)
+    if (hit !== undefined) return hit
+    sealedCache!.set(prefix, false) // in-progress guard: breaks cycles + stops exponential re-derivation
+    const v = deriveFolderModel(prefix, cwd, ctx, graph).sealed
+    sealedCache!.set(prefix, v)
     return v
   }
   const sealed = sealPropagatedFromAncestors(
