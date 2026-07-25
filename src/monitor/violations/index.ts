@@ -15,6 +15,7 @@ import { accountCodeOf } from '@/accounting'
 import { deriveDiamond } from '@/diamond'
 import { jcsCanonicalize, uuid } from '@/integrity'
 import { folderViolations, alphanumericNameViolations } from '@/law/folder'
+import { memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import {
   assertPathFollowed,
   alcapsBaselineViolations,
@@ -332,7 +333,9 @@ export function scanViolationsRealtime(opts: ScanViolationsOpts = {}): Violation
   const scannedAt = new Date().toISOString()
   const events: ViolationEvent[] = []
 
-  const folder = folderViolations(join(cwd, SRC))
+  // Reuse the computed answer: the folder-law scan is a full corpus walk, pure per corpus fingerprint —
+  // memoize it so a second scanViolationsRealtime call (the wave-rotation test) is a cache hit, not a re-walk.
+  const folder = memoByFingerprintOnDisk('monitor-folder', cwd, () => folderViolations(join(cwd, SRC)))
   for (const v of folder.name) {
     events.push(makeEvent('folder-law', v.folder, `one-word law: ${v.folder}`, 'warning', scannedAt))
   }
@@ -348,7 +351,7 @@ export function scanViolationsRealtime(opts: ScanViolationsOpts = {}): Violation
     )
   }
 
-  for (const v of alphanumericNameViolations(cwd)) {
+  for (const v of memoByFingerprintOnDisk('monitor-alnum', cwd, () => alphanumericNameViolations(cwd))) {
     const atomPath =
       v.kind === 'folder'
         ? v.path
