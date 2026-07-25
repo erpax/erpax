@@ -8,6 +8,11 @@
  */
 
 import 'dotenv/config'
+// Register the CSS diamond hook in the test worker: @payloadcms/ui components are
+// node-loaded (externalized, bypassing vite), so their `.css` imports throw
+// ERR_UNKNOWN_FILE_EXTENSION. The hook (already used by payload/build scripts)
+// stubs .css/.scss to an empty module so the import graph closes without pixels.
+import './src/css/load-hook.mjs'
 import '@testing-library/jest-dom/vitest'
 import { cleanup } from '@testing-library/react'
 import { afterEach } from 'vitest'
