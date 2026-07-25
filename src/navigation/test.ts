@@ -3,6 +3,7 @@ import {
   adminGroupOf,
   breadcrumbTrail,
   merkaba,
+  navPyramid,
   navigationGroupsFromPaths,
   navManifestFromPaths,
   navPathsForGrouping,
@@ -19,6 +20,28 @@ const SAMPLE_PATHS = [
   'corpus',
   'skill/router',
 ] as const
+
+describe('navPyramid — nav from the (referrer × current) superposition', () => {
+  it('empty referrer ⇒ full merkaba (base case, context = root)', () => {
+    const p = navPyramid('', 'gl/accounts/period')
+    expect(p.context).toBe('')
+    expect(p.breadcrumb).toEqual(p.descend) // no context ⇒ breadcrumb is the whole descend
+    expect(p.descend.length).toBe(3)
+  })
+
+  it('a deeper shared context collapses the breadcrumb referrer-relative (not stored, computed)', () => {
+    const p = navPyramid('invoices/payments/refunds', 'invoices/payments/methods')
+    expect(p.context).toBe('invoices/payments') // deepest shared prefix = the collapse point
+    expect(p.breadcrumb.length).toBeLessThan(p.descend.length) // referrer-relative, shorter than root-relative
+    expect(p.group).toBe('invoices')
+  })
+
+  it('an out-of-tree referrer falls back to the current atom own group', () => {
+    const p = navPyramid('marketing/site', 'gl/accounts')
+    expect(p.context).toBe('')
+    expect(p.group).toBe('gl') // no shared context ⇒ pathNavMeta group
+  })
+})
 
 describe('navigation — path-derived nav groups', () => {
   it('segmentsOf normalizes src/-relative paths', () => {

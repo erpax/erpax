@@ -131,6 +131,43 @@ export function merkaba(atomPath: string): Merkaba {
   return { descend, ascend: [...descend].reverse(), center, spin: trinities() }
 }
 
+/**
+ * The navigational pyramid — nav COMPUTED from the superposition (referrer × current), never stored.
+ *
+ * A 3157-atom base cannot store a nav per page. It doesn't need to: every page IS a superposition of its
+ * referrer and its own path, and the pyramid collapses that pair to the nav at request time. The deepest
+ * shared prefix of (referrer, current) is the collapse point — the `context` the referrer arrived through —
+ * so the breadcrumb is referrer-relative (starts at the shared course, not always root) and the group is the
+ * entry context, not a hardcoded label. Reuses `merkaba` (the two spins) and `pathNavMeta`; adds no store.
+ *
+ * @invariant same current, empty referrer ⇒ the full merkaba (context = root) — the base case with no context.
+ */
+export interface NavPyramid {
+  readonly referrer: string
+  readonly current: string
+  /** deepest shared ancestor of referrer and current — where the superposition collapses. */
+  readonly context: string
+  /** nav group from the superposition: the shared-context root when the referrer is in-tree, else current's own. */
+  readonly group: string
+  /** breadcrumb from the collapse context down to current (referrer-relative, not always from root). */
+  readonly breadcrumb: readonly string[]
+  /** the current atom's merkaba spins. */
+  readonly descend: readonly string[]
+  readonly ascend: readonly string[]
+}
+
+export function navPyramid(referrer: string, current: string): NavPyramid {
+  const cur = segmentsOf(current)
+  const ref = segmentsOf(referrer)
+  let i = 0
+  while (i < cur.length && i < ref.length && cur[i] === ref[i]) i += 1
+  const context = i > 0 ? cur.slice(0, i).join('/') : ''
+  const m = merkaba(current)
+  const breadcrumb = i > 1 ? m.descend.slice(i - 1) : m.descend
+  const group = i > 0 ? cur[0]! : pathNavMeta(current).group
+  return { referrer, current, context, group, breadcrumb, descend: m.descend, ascend: m.ascend }
+}
+
 /** One breadcrumb crumb — the UI renders these root→leaf; the last (`current`) is the page itself. */
 export interface Crumb {
   readonly text: string
