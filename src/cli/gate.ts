@@ -12,6 +12,7 @@ import {
 import { formatVerdict, rosettaGate } from '@/gate/rosetta'
 import { runPayloadApprovalCli } from '@/payload/approval'
 import { startProgressHeartbeat } from './progress-heartbeat'
+import { runTestWaves } from './local'
 
 export const GATE_LANES: readonly (readonly [string, string])[] = [
   // LANE ZERO — does the app LOAD? Every lane below is a statement about code that runs; if it does not,
@@ -37,7 +38,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // (the enforcement debt named in src/rules/SKILL.md: a law is obeyed only when a gate
   // blocks its violation). Makes the shape ratchet + off-ring check fail-closed in CI.
   ['corpus', 'pnpm erpax doctor corpus'],
-  ['test:int', 'pnpm erpax test int'],
+  // test:int runs as receipt-split WAVES (quantum-efficient): only suites whose content changed since their
+  // last green receipt re-run, self-bounded per batch — never the monolithic boot-everything run that could
+  // not fit the 5-min lane. Special-cased in runGate to call runTestWaves directly (its own batch bounds),
+  // bypassing the single-command 5-min ladder. The cmd here is the equivalent CLI for hand runs.
+  ['test:int', 'pnpm erpax test waves'],
 ]
 
 export function runShell(cmd: string, passthrough: readonly string[] = [], heartbeatLabel?: string, samplesMs?: readonly number[]): number {
@@ -99,7 +104,8 @@ export function runGate(argv: readonly string[] = process.argv.slice(2)): number
   for (let i = 0; i < total; i++) {
     const [label, cmd] = GATE_LANES[i]!
     console.log(`\n▶ gate [${i + 1}/${total}] — ${label}`)
-    const code = runShell(cmd, [], `gate — ${label}`)
+    // test:int is receipt-split waves, self-bounded per batch — run it directly, not under the 5-min lane cap.
+    const code = label === 'test:int' ? runTestWaves([]) : runShell(cmd, [], `gate — ${label}`)
     if (code !== 0) {
       console.error(`\n✗ gate — failed at lane ${i + 1}/${total}: ${label}`)
       return code
