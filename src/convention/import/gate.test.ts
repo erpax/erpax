@@ -17,7 +17,11 @@ describe('convention/import — the import-purity RATCHET (the wire made a gate)
   })
 
   it('PASSES below the baseline and asks to ratchet the literal down', () => {
-    const v = importRatchet({ violations: IMPORT_PURITY_BASELINE - 1, baseline: IMPORT_PURITY_BASELINE })
+    // IMPORT_PURITY_BASELINE has reached 0 (purity is 100% live), so `BASELINE - 1`
+    // underflows to -1, which the fail-closed rule correctly DENIES. The below-baseline
+    // ratchet-down branch is pure logic worth locking regardless, so test it with concrete
+    // valid counts (a hypothetical non-zero baseline being ratcheted toward).
+    const v = importRatchet({ violations: 5, baseline: 10 })
     expect(v.ok).toBe(true)
     expect(v.reason).toMatch(/lower IMPORT_PURITY_BASELINE/)
   })
