@@ -50,12 +50,12 @@ describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', (
     expect(byPath).toBeDefined()
     expect(byPath?.path).toBe('architecture/invariant')
     expect(byPath?.uuid).toBe(byLeaf?.uuid)
-    expect(byPath?.horo).toBe(2)
+    expect(byPath?.horo).toBe(7) // page-position derived — 7/descent after the vocabulary shard grew the sequence
   })
 
   it('coordinateAddress folds path · horo/measure · uuid (digit-computed, not hand labels)', () => {
     const addr = coordinateAddress('architecture/invariant')
-    expect(addr).toMatch(/^architecture\/invariant · 2\/share · [0-9a-f]{8}$/)
+    expect(addr).toMatch(/^architecture\/invariant · 7\/descent · [0-9a-f]{8}$/)
   })
 
   it('the band assignment landed: a control atom → control, a noble-0 atom → source', () => {
@@ -155,13 +155,15 @@ describe('uuid-matrix coordinate: the 3-connected [[coordinate]] cross verifies'
   })
 
   it('parentOf/prevOf/nextOf resolve the stored neighbour uuids back to nodes', () => {
-    const c = coordinateOf('coordinate')
+    // 'merge' is a single-word root atom (the vocabulary shard moved 'coordinate' to
+    // vocabulary/coordinate, so it is no longer a root — 'merge' is the stable root anchor).
+    const c = coordinateOf('merge')
     expect(c).toBeDefined()
     if (!c) return
-    // parent is NIL (coordinate is a root atom) → no node resolves it
-    expect(parentOf('coordinate')).toBeUndefined()
-    expect(prevOf('coordinate')?.uuid).toBe(c.prev)
-    expect(nextOf('coordinate')?.uuid).toBe(c.next)
+    // parent is NIL (merge is a root atom) → no node resolves it
+    expect(parentOf('merge')).toBeUndefined()
+    expect(prevOf('merge')?.uuid).toBe(c.prev)
+    expect(nextOf('merge')?.uuid).toBe(c.next)
   })
 
   it('the whole corpus is untampered: tamperedAtoms() is empty', () => {
