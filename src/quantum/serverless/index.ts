@@ -247,8 +247,10 @@ export function proveServerlessQuantum(cwd = process.cwd()): ServerlessQuantumPr
     finalizeStage('serverless-bindings', bindBase, bindExtra, props.bindingsSealed),
   )
 
-  // 2 — worker deployment face (AI binding ⊕ worker atom)
-  const workerBase = computeDiamond({ kind: 'path', path: 'worker', cwd })
+  // 2 — worker deployment face (AI binding ⊕ the cloudflare deployment atom). The bare 'worker' leaf is
+  // a form-only concept node (no code ⇒ no seal ⇒ no "light"); the real Cloudflare-Worker deployment is
+  // the sealed `cloudflare` atom (full trinity), so the diamond has light to compute and predict.
+  const workerBase = computeDiamond({ kind: 'path', path: 'cloudflare', cwd })
   const aiModel = deriveWranglerBindingDiamonds([aiEntry])[0]!
   const workerExtra: DiamondComputationStage[] = []
   pushStage(workerExtra, 'deployment-faces', { atomPath: bindBase.model.atomPath }, {
