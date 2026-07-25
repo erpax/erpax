@@ -81,6 +81,16 @@ describe('quantum/chat — voice & video fold into the thread as one path', () =
     expect(r.message.transcript).toBe('transcribed words')
     expect(r.improved).toBe(true)
   })
+  it('analyses a screenshot / screen recording via the same fold (OCR/caption engine, pluggable)', async () => {
+    const vision: Transcriber = { transcribe: async (_m, modality) => `analysed ${modality}: 3 regions, "Invoices" heading` }
+    const shot = await chatFromMedia([], blob, 'screenshot', vision, 0)
+    expect(shot.message.modality).toBe('screenshot')
+    expect(shot.message.mediaUuid).toBe(mediaBlobUuid(blob)) // content-addressed (local, deterministic)
+    expect(shot.message.transcript).toMatch(/analysed screenshot/)
+    const rec = await chatFromMedia(shot.messageUuids, blob, 'screen', vision, 4000)
+    expect(rec.message.modality).toBe('screen')
+    expect(rec.improved).toBe(true) // folded into the same thread
+  })
 })
 
 describe('quantum/chat — crypto: room-keyed confidentiality (reuses secret v2)', () => {

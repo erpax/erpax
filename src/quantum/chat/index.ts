@@ -133,19 +133,24 @@ export function compose(uuid: string): Composition {
 // (Cloudflare Workers AI), never implemented in the fold — it is supplied as
 // `Transcriber`/`Speaker`, so the atom stays a pure, testable envelope + fold.
 
-export type MediaModality = 'voice' | 'video'
+// modalities: voice (STT) · video/screen recording (caption) · screenshot (OCR/vision).
+// The captured blob is content-addressed (local, deterministic — the "quantum tool"); capture
+// is edge-safe hardware (browser MediaRecorder / getDisplayMedia). The ANALYSIS engine
+// (STT · caption · OCR · vision) is a pluggable Transcriber binding (Cloudflare Workers AI or a
+// local model) — NOT a manufactured local vision model; the fold stays a pure envelope.
+export type MediaModality = 'voice' | 'video' | 'screen' | 'screenshot'
 
-/** A voice/video message: the captured blob's uuid + its transcript/caption. */
+/** A media message: the captured blob's uuid + its analysis (transcript/caption/OCR text). */
 export interface MediaMessage {
   readonly modality: MediaModality
-  /** content-uuid of the captured media blob (tamper-evident; the thread folds the transcript). */
+  /** content-uuid of the captured media blob (tamper-evident; the thread folds the analysis text). */
   readonly mediaUuid: string
-  /** speech-to-text transcript (voice) or caption (video) — what enters the thread. */
+  /** the engine's analysis — STT (voice), caption (video/screen), OCR/description (screenshot). */
   readonly transcript: string
   readonly durationMs: number
 }
 
-/** Pluggable STT/caption engine — a Cloudflare Workers AI binding at runtime, not in the fold. */
+/** Pluggable analysis engine — STT/caption/OCR/vision; a runtime binding, not in the fold. */
 export interface Transcriber {
   transcribe(media: Uint8Array, modality: MediaModality): Promise<string>
 }
