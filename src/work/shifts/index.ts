@@ -105,10 +105,15 @@ const num = (v: unknown): number => {
  * employee baselines themselves (`employees.work_efficiency`: 0 ×453 · 1 ×293 · null ×151). Assigning 100
  * would have flipped ~30 000 shifts with NO production into "100% efficient".
  *
- * HONEST BOUNDARY: erpax does not yet model the employee `workEfficiency` baseline, so tier 2 is missing —
- * a recorded value is preserved (tier 1) and 100 is the last resort (tier 3). Porting that baseline onto
- * [[employees]] is the remaining fold; until then a first-ever fallback row defaults high rather than to the
- * employee's real baseline.
+ * TIER 2 NOW PRESENT: the authority applies the employee's own `workEfficiency` baseline (tier 2) when the
+ * shift record carries it (`employeeWorkEfficiency`), between a recorded value (tier 1) and the 100 last
+ * resort (tier 3) — the three-tier Rails `||=` is complete in the compute path.
+ *
+ * HONEST BOUNDARY (shrunk): the remaining wire is POPULATING `employeeWorkEfficiency` onto the shift from
+ * the [[employees]] relationship (a `workEfficiency` field on employees + a populate) — that is a schema
+ * fold done deliberately, not rushed. Until it is populated, a first-ever fallback with no baseline still
+ * defaults to 100 (tier 3); once populated, tier 2 fires. The authority no longer LACKS tier 2 — it uses it
+ * whenever the baseline is available, so the boundary is a population wire, not a missing computation.
  *
  * @invariant minutesBackordered === max(0, minutesOrdered − minutesProduced)
  * @invariant presenceMinutes>0 && minutesProduced>0 ⇒ efficiencyPercent === ⌊minutesProduced·100 / presenceMinutes⌋
@@ -130,13 +135,20 @@ export const computeShiftAuthority: CollectionBeforeChangeHook = ({ data }) => {
   // Only a never-recorded row takes the default; upstream that is the employee's own work_efficiency
   // baseline, with 100 the last resort. Assigning 100 unconditionally would call ~30 000 no-production
   // shifts "100% efficient" — refuted by the source and by 32 039 real fallback rows (69% recorded 0).
+  // The three tiers of the Rails `||=` fallback, now all present in the authority:
+  //   1 RECORDED — a stored value stands (a recorded 0 too; 0 is truthy in Ruby)
+  //   2 EMPLOYEE BASELINE — the employee's own `workEfficiency`, when the shift carries it
+  //   3 LAST RESORT — 100, only for a first-ever fallback with no baseline available
   const recorded = d.efficiencyPercent
+  const baseline = d.employeeWorkEfficiency
   d.efficiencyPercent =
     presence > 0 && produced > 0
       ? Math.trunc((produced * 100) / presence)
       : typeof recorded === 'number'
         ? recorded
-        : 100
+        : typeof baseline === 'number'
+          ? baseline
+          : 100
 
   // wage = MAX(time-clock pay, order-rollup wage), rounded to 2dp (the greater pole wins).
   const timePay = (num(d.payPerHour) * shift) / 60

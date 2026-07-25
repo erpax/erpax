@@ -43,6 +43,15 @@ describe('computeShiftAuthority — the fallback PRESERVES what was recorded (Ra
   it('a real measurement still overrides any recorded value (the formula wins when measurable)', () => {
     expect(compute({ presenceMinutes: 480, minutesProduced: 355, efficiencyPercent: 0 }).efficiencyPercent).toBe(73)
   })
+  // TIER 2 (closes the honest boundary): an unrecorded fallback takes the employee's own baseline, not 100.
+  it('an unrecorded fallback takes the EMPLOYEE BASELINE (tier 2) when the shift carries it', () => {
+    expect(compute({ presenceMinutes: 0, minutesProduced: 0, employeeWorkEfficiency: 1 }).efficiencyPercent).toBe(1)
+    expect(compute({ presenceMinutes: 0, minutesProduced: 0, employeeWorkEfficiency: 0 }).efficiencyPercent).toBe(0) // a 0 baseline stands
+  })
+  it('tier 1 (recorded) still wins over the baseline; tier 3 (100) only with neither', () => {
+    expect(compute({ presenceMinutes: 0, minutesProduced: 0, efficiencyPercent: 85, employeeWorkEfficiency: 1 }).efficiencyPercent).toBe(85)
+    expect(compute({ presenceMinutes: 0, minutesProduced: 0 }).efficiencyPercent).toBe(100)
+  })
 })
 
 describe('computeShiftAuthority — efficiency = ⌊produced·100 / presence⌋ (INTEGER truncation)', () => {
