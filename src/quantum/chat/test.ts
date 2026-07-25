@@ -6,9 +6,11 @@ import {
   sealChatMessage, openChatMessage,
   chatToolNames, chatInvoke,
   deepResearch,
+  accessibleByStandard, chatInvokeByStandard,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
+import { requiredAccessTier, tierRank } from '@/access/standard'
 
 // message-uuids ARE content-uuids (hex uuid format), as merge requires.
 const U1 = '11111111-1111-8111-8111-111111111111'
@@ -135,5 +137,34 @@ describe('quantum/chat — deepResearch (parallel & branching, not linear-manual
     }
     await deepResearch([], ['slow', 'fast'], researcher, { depth: 1 })
     expect(order[0]).toBe('fast') // finished first despite being asked second — genuinely parallel
+  })
+})
+
+describe('quantum/chat — fuse all accessible BY STANDARD (the legal-surface gate)', () => {
+  // The gate is the REAL @/access/standard: standards derive the required tier.
+  const requiredRank = (s: readonly string[]) => tierRank(requiredAccessTier(s).tier)
+  const tools = [
+    { name: 'erpax.public.read', description: 'public', standards: [] as string[] }, // open
+    { name: 'erpax.ledger.post', description: 'post', standards: ['IFRS'] }, // role-scoped
+    { name: 'erpax.fiscal.void', description: 'void', standards: ['Наредба Н-18 СУПТО'] }, // auditor-grade
+  ]
+
+  it('accessibleByStandard reveals only what the party tier + standards permit', () => {
+    const reachable = accessibleByStandard(tools, tierRank('authenticated'), requiredRank).map((t) => t.name)
+    expect(reachable).toContain('erpax.public.read') // open ≤ authenticated
+    expect(reachable).not.toContain('erpax.ledger.post') // role-scoped > authenticated
+    expect(reachable).not.toContain('erpax.fiscal.void') // auditor-grade > authenticated
+  })
+
+  it('chatInvokeByStandard runs an in-tier tool and folds an auditable refusal for an over-tier one', async () => {
+    const invoke = async (n: string) => `ran ${n}`
+    const access = { partyRank: tierRank('role-scoped'), requiredRank }
+    const ok = await chatInvokeByStandard([], invoke, tools[1]!, {}, access) // IFRS role-scoped ≤ role-scoped
+    expect(ok.refused).toBe(false)
+    expect(ok.result).toBe('ran erpax.ledger.post')
+    const no = await chatInvokeByStandard(ok.messageUuids, invoke, tools[2]!, {}, access) // auditor-grade > role-scoped
+    expect(no.refused).toBe(true)
+    expect(no.result).toBeUndefined()
+    expect(no.thread).not.toBe(ok.thread) // the refusal is folded into the thread (auditable)
   })
 })

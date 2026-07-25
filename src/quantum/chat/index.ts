@@ -161,14 +161,57 @@ export const openChatMessage = (
 // so the chat never IMPORTS the collection graph — no re-entangling, no duplication.
 // This is what makes "all quantum usable in chat" DRY: one router, not N per-domain copies.
 
-/** A tool the chat can reach — name only; the handler lives in its owning atom. */
+/** A tool the chat can reach — name + the standards it answers to (its legal surface). */
 export interface ChatToolRef {
   readonly name: string
   readonly description: string
+  /** The standards this tool cites — they DERIVE the access tier it requires (@/access/standard). */
+  readonly standards?: readonly string[]
 }
 
 /** The names of tools the chat may invoke (for nextAsk-style discovery over the tool space). */
 export const chatToolNames = (tools: readonly ChatToolRef[]): string[] => tools.map((t) => t.name)
+
+// ── fuse all accessible BY STANDARD ──────────────────────────────────────────
+// The chat may reach only what the applicable STANDARDS permit: each tool's cited
+// standards derive a required access tier (@/access/standard requiredAccessTier),
+// and a party reaches a tool only when its tier ≥ that requirement. `requiredRank`
+// is injected (requiredAccessTier∘tierRank) so quantum/chat stays pure — the legal
+// surface gates the chat's reach without pulling the mesh-coupled access graph in.
+
+/** The tools a party at `partyRank` may reach — filtered by each tool's standards-required tier. */
+export const accessibleByStandard = (
+  tools: readonly ChatToolRef[],
+  partyRank: number,
+  requiredRank: (standards: readonly string[]) => number,
+): ChatToolRef[] => tools.filter((t) => requiredRank(t.standards ?? []) <= partyRank)
+
+export interface StandardAccess {
+  readonly partyRank: number
+  readonly requiredRank: (standards: readonly string[]) => number
+}
+
+/**
+ * Invoke a tool ONLY when the party's tier clears the tool's standards-required tier;
+ * otherwise fold an auditable refusal into the thread (no invoke). This is the legal
+ * surface gating the chat's reach — the same law [[rules]]/audience names: an operation's
+ * access is read by the reader who signs it.
+ */
+export async function chatInvokeByStandard(
+  messageUuids: readonly string[],
+  invoke: (name: string, args: Record<string, unknown>) => Promise<string>,
+  tool: ChatToolRef,
+  args: Record<string, unknown>,
+  access: StandardAccess,
+): Promise<{ readonly refused: boolean; readonly result?: string; readonly thread: string; readonly messageUuids: readonly string[]; readonly improved: boolean }> {
+  const need = access.requiredRank(tool.standards ?? [])
+  if (need > access.partyRank) {
+    const folded = improve(messageUuids, `refused ${tool.name}: standards require tier ${need} > party ${access.partyRank}`)
+    return { refused: true, ...folded }
+  }
+  const result = await invoke(tool.name, args)
+  return { refused: false, result, ...improve(messageUuids, `${tool.name}: ${result}`) }
+}
 
 /**
  * Invoke any quantum tool from the chat and fold its result into the thread. The
