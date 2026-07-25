@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest'
-import { threadUuid, appended, messageUuid, isNovel, nextAsk, improve, coverage } from '@/quantum/chat'
+import crypto from 'node:crypto'
+import {
+  threadUuid, appended, messageUuid, isNovel, nextAsk, improve, coverage,
+  mediaMessage, foldMediaMessage, chatFromMedia, mediaBlobUuid,
+  sealChatMessage, openChatMessage,
+  type Transcriber,
+} from '@/quantum/chat'
 
 // message-uuids ARE content-uuids (hex uuid format), as merge requires.
 const U1 = '11111111-1111-8111-8111-111111111111'
@@ -43,5 +49,41 @@ describe('quantum/chat — ask and improve (the elicitation loop)', () => {
     const covered = questions.map(messageUuid)
     expect(coverage(covered, questions)).toBe(1)
     expect(coverage([messageUuid('what?')], questions)).toBeCloseTo(1 / 3, 6)
+  })
+})
+
+describe('quantum/chat — voice & video fold into the thread as one path', () => {
+  const blob = new Uint8Array([1, 2, 3, 4])
+  it('a media message content-addresses the blob and carries its transcript', () => {
+    const m = mediaMessage('voice', blob, 'hello there', 1200)
+    expect(m.modality).toBe('voice')
+    expect(m.mediaUuid).toBe(mediaBlobUuid(blob)) // tamper-evident blob address
+    expect(m.transcript).toBe('hello there')
+  })
+  it('folding a media message enters its transcript into the thread (novel ⇒ improved)', () => {
+    const m = mediaMessage('video', blob, 'the caption', 3000)
+    const r = foldMediaMessage([], m)
+    expect(r.improved).toBe(true)
+    expect(isNovel(r.messageUuids, 'the caption')).toBe(false) // now covered
+  })
+  it('chatFromMedia runs capture→transcribe→fold with a pluggable engine', async () => {
+    const engine: Transcriber = { transcribe: async () => 'transcribed words' }
+    const r = await chatFromMedia([], blob, 'voice', engine, 500)
+    expect(r.message.transcript).toBe('transcribed words')
+    expect(r.improved).toBe(true)
+  })
+})
+
+describe('quantum/chat — crypto: room-keyed confidentiality (reuses secret v2)', () => {
+  const sealKey = crypto.randomBytes(32)
+  const room = { room: 'tenant-a', kind: 'chat' }
+  it('a message round-trips only for a party that proves the room descriptor', () => {
+    const blob = sealChatMessage('secret message', room, { sealKey })
+    expect(blob.v).toBe(2) // full-256-digest bound
+    expect(openChatMessage(blob, room, { sealKey })).toBe('secret message')
+  })
+  it('a wrong room fails closed (no decrypt)', () => {
+    const blob = sealChatMessage('secret message', room, { sealKey })
+    expect(() => openChatMessage(blob, { room: 'tenant-b', kind: 'chat' }, { sealKey })).toThrow()
   })
 })
