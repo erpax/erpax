@@ -64,6 +64,23 @@ export function quantomize(readings: readonly Reading[]): QuantumMetric {
   return { count: readings.length, coherent: s.coherent && decohered.length === 0, root: s.root, decohered, readings }
 }
 
+/**
+ * The METRICS FOLD — a metric may be a combination of metrics. Fold sub-metrics into one composite by taking
+ * the union of their readings and re-quantomizing, so the result is CLOSED under composition: a fold of metrics
+ * is itself a QuantumMetric, foldable again (a dashboard is the fold of its panels, each the fold of its readings).
+ * The composite decoheres iff any instrument disagrees ACROSS the parts — assembling a whole from parts that
+ * measure the same name two ways is incoherent, caught exactly as within one metric. The root is order- and
+ * grouping-independent (quantomize folds by content), so ((a⊕b)⊕c) and (a⊕(b⊕c)) fold to the same address.
+ *
+ * This is the same content-addressed recursive composition the [[object]] fold generalizes: a metric is to its
+ * readings as an object is to its parts — combinations of combinations, addressed by content, like biology.
+ *
+ * @invariant folding metrics is order- and grouping-independent — the composite root depends only on the readings
+ */
+export function foldMetrics(metrics: readonly QuantumMetric[]): QuantumMetric {
+  return quantomize(metrics.flatMap((m) => m.readings))
+}
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const { concentration, well } = await import('@/gravity')
   const { proofLedger } = await import('@/accounting/proof')

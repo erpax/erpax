@@ -48,3 +48,31 @@ describe('metric — quantomize: readings held at once, coherent iff none contra
     expect(quantomize([]).coherent).toBe(true)
   })
 })
+
+import { foldMetrics } from './index'
+
+describe('foldMetrics — a metric may be a combination of metrics (closed under composition)', () => {
+  const a = quantomize([{ name: 'gravity.mass', value: 3 }])
+  const b = quantomize([{ name: 'proof.residual', value: 0 }])
+  const c = quantomize([{ name: 'pool.money', value: 7 }])
+  it('folds sub-metrics into one composite whose readings are the union', () => {
+    const whole = foldMetrics([a, b, c])
+    expect(whole.count).toBe(3)
+    expect(whole.coherent).toBe(true)
+    expect(whole.readings.map((r) => r.name).sort()).toEqual(['gravity.mass', 'pool.money', 'proof.residual'])
+  })
+  it('is closed: a fold of metrics is itself a metric, foldable again — same root', () => {
+    const nested = foldMetrics([foldMetrics([a, b]), c])
+    const flat = foldMetrics([a, b, c])
+    expect(nested.root).toBe(flat.root) // grouping-independent (recursive composition)
+  })
+  it('order-independent — the composite root depends only on the readings', () => {
+    expect(foldMetrics([a, b, c]).root).toBe(foldMetrics([c, a, b]).root)
+  })
+  it('DECOHERES when a part disagrees with another on the same instrument', () => {
+    const three = quantomize([{ name: 'gravity.mass', value: 5 }]) // same name, different value than a
+    const whole = foldMetrics([a, three])
+    expect(whole.coherent).toBe(false)
+    expect(whole.decohered).toContain('gravity.mass')
+  })
+})
