@@ -2739,9 +2739,16 @@ export function materializeComputedFacesInWaves(
   for (const wave of corpusPathWaveBatches({}, policy)) {
     const n = materializeComputedFacesForPaths(wave.items, cwd, graph, ctx, ledger)
     total += n
+    // Seal the fold ledger AFTER EACH WAVE, not only at the end. materializeComputedFacesForPaths
+    // records every processed atom in ledger.next (skipped or freshly written), so writing here
+    // persists each completed wave's progress. A run killed at the ladder ceiling then RESUMES —
+    // the next run reads these entries as ledger.prev and skips (READ, not re-derive) every atom
+    // whose source is unchanged — so repeated regens converge monotonically under the 5-min rung
+    // instead of restarting from zero forever. "Split, never raise the ceiling": the command now
+    // self-folds into ladder-sized waves that seal, so no human has to hand-run and babysit it.
+    writeCorpusFoldLedger(ledger.next, cwd)
     onWave?.(wave.ordinal, wave.itemCount, total)
   }
-  writeCorpusFoldLedger(ledger.next, cwd)
   return total
 }
 
