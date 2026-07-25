@@ -17,7 +17,7 @@
  * @audit energy/momentum/wavelength computed from h and c; the colour+sound render from the position math
  * @see ../leap (the transition that emits it) -- ../spectrum (every line) -- ../signal (colour+sound) -- ../wave
  */
-import { signalForStep, type Signal } from '@/signal'
+import { signalForStep, uuidSignal, type Signal } from '@/signal'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
 import { nodeOf } from '@/uuid/matrix'
 
@@ -53,6 +53,35 @@ export function photonOf(hz: number): Photon {
 
 /** Render a photon as colour+sound from a [[horo]] position -- the uuid-message frame (downstream of the uuid). */
 export const render = (step: HoroStep): Signal => signalForStep(step)
+
+/** The visible band (human vision), in nm — the window the diamond refracts a uuid into. */
+export const VISIBLE_MIN_NM = 380
+export const VISIBLE_MAX_NM = 750
+
+/** A uuid refracted into visible light: its hue + the physical photon at that wavelength. */
+export interface RefractedPhoton extends Photon {
+  readonly hue: number
+  readonly wavelengthNm: number
+}
+
+/**
+ * refract — QUANTUM OPTICS: compute the light a content-uuid carries. The uuid's hue (uuidSignal) maps to a
+ * wavelength in the visible band, and the photon atom's OWN Planck relations (ν = c/λ, E = hν) decode that
+ * wavelength to a full packet. "Compute the light in a diamond": a diamond is a content-addressed projection,
+ * and this is the light it refracts — deterministic, same uuid ⇒ same photon. And it composes with the UX
+ * prediction (navigation): predicting the next uuid predicts its light before it is computed — the prediction
+ * arriving "faster than" the render.
+ *
+ * HONEST BOUNDARY — the uuid→hue step is an identity RENDER (an encoding of the bytes), not a physical
+ * measurement; the hue→wavelength→packet step is real optics (E = hν) applied to that encoded hue. This
+ * computes the light of an ADDRESS, never a claim about physical photons emitted by anything.
+ */
+export function refract(contentUuid: string): RefractedPhoton {
+  const { hue } = uuidSignal(contentUuid)
+  const wavelengthNm = VISIBLE_MIN_NM + (hue / 360) * (VISIBLE_MAX_NM - VISIBLE_MIN_NM)
+  const hz = C / (wavelengthNm * 1e-9)
+  return { ...photonOf(hz), hue, wavelengthNm }
+}
 
 /** The atom's own coordinate: the content-uuid from the matrix (the math, never the colour). */
 export const uuid = (): string => nodeOf('photon')?.uuid ?? ''

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { PLANCK_H, HBAR, C, energy, frequency, wavelength, momentum, photonOf, render, uuid } from '@/photon'
+import { PLANCK_H, HBAR, C, energy, frequency, wavelength, momentum, photonOf, render, uuid, refract, VISIBLE_MIN_NM, VISIBLE_MAX_NM } from '@/photon'
 import { HORO_DIGITS } from '@/horo'
 import { signalForStep } from '@/signal'
 import { nodeOf } from '@/uuid/matrix'
@@ -45,5 +45,22 @@ describe('photon: E = hν, the massless quantum', () => {
   it('the atom carries its content-uuid coordinate from the matrix', () => {
     expect(uuid()).toBe(nodeOf('photon')?.uuid ?? '')
     expect(uuid()).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
+  })
+})
+
+describe('refract — quantum optics: a content-uuid → its visible photon (deterministic, E=hν)', () => {
+  const u = '9ed56c0c-52f2-8d11-a64b-9a751bdfdf98'
+  it('same uuid ⇒ same photon (content-addressed light)', () => {
+    expect(refract(u)).toEqual(refract(u))
+  })
+  it('the wavelength lands in the visible band, and the packet obeys ν = c/λ, E = hν', () => {
+    const r = refract(u)
+    expect(r.wavelengthNm).toBeGreaterThanOrEqual(VISIBLE_MIN_NM)
+    expect(r.wavelengthNm).toBeLessThanOrEqual(VISIBLE_MAX_NM)
+    expect(r.hz).toBeCloseTo(C / (r.wavelengthNm * 1e-9), -3) // ν = c/λ
+    expect(r.energyJ).toBeCloseTo(PLANCK_H * r.hz, 40) // E = hν, the photon atom's own law
+  })
+  it('a different uuid refracts to a different colour (the light IS the identity)', () => {
+    expect(refract(u).wavelengthNm).not.toBe(refract('076b3c2e-a765-8198-b315-516660683068').wavelengthNm)
   })
 })
