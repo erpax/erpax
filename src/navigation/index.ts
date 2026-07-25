@@ -168,6 +168,88 @@ export function navPyramid(referrer: string, current: string): NavPyramid {
   return { referrer, current, context, group, breadcrumb, descend: m.descend, ascend: m.ascend }
 }
 
+/**
+ * QUANTUM-PREDICTED UX — predict → measure → account → optimise, all computed from the (referrer × current)
+ * superposition, never from stored usage data. A visitor at `current` who arrived from `referrer` carries a
+ * TRAJECTORY, and the next page they want is the continuation of it: the pyramid already collapses the pair,
+ * so the prediction is a pure function of the two paths + the candidate atoms — zero tracking, zero PII.
+ *
+ * @invariant a predicted page that is the actual next page saves its breadcrumb depth in navigation cost (eb).
+ */
+export interface UxPrediction {
+  readonly current: string
+  /** the trajectory the arrival implies: descend (drilled in from an ancestor), sequence (sibling ring), or ascend. */
+  readonly trajectory: 'descend' | 'sequence' | 'ascend'
+  /** ranked predicted next atom paths (most likely first) — the optimisation: shallowest expected cost first. */
+  readonly predicted: readonly string[]
+  /** confidence in [0,1] — how committed the superposition is (1 = a single obvious continuation). */
+  readonly confidence: number
+}
+
+/**
+ * Predict the next atoms a visitor wants, from the superposition + the candidate atom set (pure, no store).
+ * DESCEND (referrer is an ancestor of current ⇒ drilling in) ⇒ predict current's children. SEQUENCE (referrer
+ * and current are siblings) ⇒ predict the other siblings. Else ASCEND ⇒ predict the parent. Reuses segmentsOf.
+ */
+export function predictNext(referrer: string, current: string, candidates: readonly string[]): UxPrediction {
+  const cur = segmentsOf(current)
+  const ref = segmentsOf(referrer)
+  const curKey = cur.join('/')
+  const childrenOf = (p: readonly string[]): string[] =>
+    candidates.filter((c) => {
+      const s = segmentsOf(c)
+      return s.length === p.length + 1 && p.every((seg, i) => s[i] === seg)
+    })
+  const refIsAncestor = ref.length > 0 && ref.length < cur.length && ref.every((seg, i) => seg === cur[i])
+  const shareParent = cur.length > 1 && ref.length === cur.length && cur.slice(0, -1).every((seg, i) => seg === ref[i]) && curKey !== ref.join('/')
+  let trajectory: UxPrediction['trajectory']
+  let predicted: string[]
+  if (refIsAncestor || ref.length === 0) {
+    trajectory = 'descend'
+    predicted = childrenOf(cur) // drilling in ⇒ the next level down
+  } else if (shareParent) {
+    trajectory = 'sequence'
+    predicted = childrenOf(cur.slice(0, -1)).filter((c) => c !== curKey) // the other siblings on the ring
+  } else {
+    trajectory = 'ascend'
+    predicted = cur.length > 1 ? [cur.slice(0, -1).join('/')] : [] // fold out to the parent
+  }
+  // optimise: shallowest first (least expected navigation cost), then lexical for determinism
+  predicted = [...predicted].sort((a, b) => segmentsOf(a).length - segmentsOf(b).length || a.localeCompare(b))
+  const confidence = predicted.length === 0 ? 0 : 1 / predicted.length
+  return { current: curKey, trajectory, predicted, confidence }
+}
+
+/** The measured + accounted economy of a run of predictions — statistics + eb saved (the optimisation target). */
+export interface UxEconomy {
+  readonly hits: number
+  readonly total: number
+  /** statistical: correct predictions / total. */
+  readonly hitRate: number
+  /** accounted in eb: each hit saves the user the depth they would have navigated to reach `actual`. */
+  readonly ebSaved: number
+}
+
+/**
+ * Measure + account a run of predictions against what actually happened. A HIT (the actual next page was in the
+ * predicted set) saves that page's breadcrumb depth in navigation cost — accounted in eb, the corpus currency.
+ * The statistic (hitRate) and the account (ebSaved) are the optimisation target: a better predictor saves more eb.
+ */
+export function predictionEconomy(
+  outcomes: readonly { readonly predicted: readonly string[]; readonly actual: string }[],
+): UxEconomy {
+  let hits = 0
+  let ebSaved = 0
+  for (const o of outcomes) {
+    if (o.predicted.includes(o.actual)) {
+      hits += 1
+      ebSaved += segmentsOf(o.actual).length // the depth the hit saved navigating
+    }
+  }
+  const total = outcomes.length
+  return { hits, total, hitRate: total ? hits / total : 0, ebSaved }
+}
+
 /** One breadcrumb crumb — the UI renders these root→leaf; the last (`current`) is the page itself. */
 export interface Crumb {
   readonly text: string

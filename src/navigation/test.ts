@@ -11,6 +11,8 @@ import {
   routeOfPath,
   segmentsOf,
   topNavAnchorsFromSequence,
+  predictNext,
+  predictionEconomy,
 } from '@/navigation'
 
 const SAMPLE_PATHS = [
@@ -40,6 +42,43 @@ describe('navPyramid — nav from the (referrer × current) superposition', () =
     const p = navPyramid('marketing/site', 'gl/accounts')
     expect(p.context).toBe('')
     expect(p.group).toBe('gl') // no shared context ⇒ pathNavMeta group
+  })
+})
+
+describe('predictNext / predictionEconomy — quantum-predicted UX (predict · measure · account · optimise)', () => {
+  const candidates = [
+    'invoices',
+    'invoices/payments',
+    'invoices/payments/refunds',
+    'invoices/payments/methods',
+    'invoices/drafts',
+    'gl/accounts',
+  ]
+  it('DESCEND: arriving from an ancestor ⇒ predict the children, shallowest-first (optimised)', () => {
+    const p = predictNext('invoices', 'invoices/payments', candidates)
+    expect(p.trajectory).toBe('descend')
+    expect(p.predicted).toEqual(['invoices/payments/methods', 'invoices/payments/refunds']) // children, sorted
+    expect(p.confidence).toBeCloseTo(0.5)
+  })
+  it('SEQUENCE: arriving from a sibling ⇒ predict the OTHER siblings on the ring', () => {
+    const p = predictNext('invoices/payments', 'invoices/drafts', candidates)
+    expect(p.trajectory).toBe('sequence')
+    expect(p.predicted).toEqual(['invoices/payments']) // the sibling, not self
+  })
+  it('ASCEND: an out-of-tree referrer ⇒ fold out to the parent', () => {
+    const p = predictNext('gl/accounts', 'invoices/drafts', candidates)
+    expect(p.trajectory).toBe('ascend')
+    expect(p.predicted).toEqual(['invoices'])
+  })
+  it('economy: a HIT is measured, and accounts the saved depth in eb; a miss saves nothing', () => {
+    const e = predictionEconomy([
+      { predicted: ['invoices/payments/methods', 'invoices/payments/refunds'], actual: 'invoices/payments/refunds' }, // hit, depth 3
+      { predicted: ['invoices/payments'], actual: 'gl/accounts' }, // miss
+    ])
+    expect(e.hits).toBe(1)
+    expect(e.total).toBe(2)
+    expect(e.hitRate).toBe(0.5)
+    expect(e.ebSaved).toBe(3) // the depth of the hit page — nav cost saved
   })
 })
 
