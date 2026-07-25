@@ -17,7 +17,7 @@
 import crypto from 'node:crypto'
 import fs from 'node:fs'
 
-import { computeContentUuid, uuid } from '@/integrity'
+import { computeContentUuid, computeContentDigest, uuid, nameDigest, ERPAX_NAMESPACE_ROOT } from '@/integrity'
 
 const ALGORITHM = 'aes-256-gcm'
 const IV_LENGTH = 12
@@ -25,13 +25,25 @@ const HKDF_INFO = Buffer.from('erpax:secret-seal:v1', 'utf8')
 
 /** Wire shape for a sealed secret — ciphertext only, never plaintext. */
 export interface SealedBlob {
-  readonly v: 1
+  /** v1 = uuid-only binding; v2 = additionally binds the full 256-bit content digest. */
+  readonly v: 1 | 2
   readonly alg: 'AES-256-GCM'
-  /** Content-identity uuid bound into AAD and HKDF salt. */
+  /** Content-identity uuid bound into AAD and HKDF salt (122-bit addressing key). */
   readonly contextUuid: string
+  /**
+   * v2 hardening: the FULL 256-bit content digest, bound as AAD. A forger must now
+   * collide the 256-bit digest — quantum (BHT) floor 2^85.3 — instead of the bare
+   * 122-bit uuid (2^40.67). Absent ⇒ a v1 blob, still decryptable.
+   */
+  readonly contextDigest?: string
   readonly iv: string
   readonly authTag: string
   readonly ciphertext: string
+}
+
+/** AAD binds the addressing uuid and — for v2 — the full 256-bit content digest. */
+function aadFor(contextUuid: string, contextDigest?: string): Buffer {
+  return Buffer.from(contextDigest ? `${contextUuid}:${contextDigest}` : contextUuid, 'utf8')
 }
 
 export type SecretIdentityContent = Record<string, unknown> | string
@@ -52,6 +64,18 @@ export function identityUuidForContent(
 ): string {
   if (typeof content === 'string') return uuid(content)
   return computeContentUuid(content, tenantId)
+}
+
+/**
+ * The FULL 256-bit content digest that hardens `decryptIfUuid` beyond the 122-bit
+ * uuid — the v2 identity commitment (quantum BHT collision floor 2^85.3 vs 2^40.67).
+ */
+export function identityDigestForContent(
+  content: SecretIdentityContent,
+  tenantId: string = PLATFORM_TENANT_ID,
+): string {
+  if (typeof content === 'string') return nameDigest(ERPAX_NAMESPACE_ROOT, content)
+  return computeContentDigest(content, tenantId)
 }
 
 /** Resolve bootstrap seal key from options or `ERPAX_SEAL_KEY` env (hex or base64). */
@@ -77,17 +101,22 @@ function deriveSealKey(contextUuid: string, masterKey: Buffer): Buffer {
 export function sealSecret(
   plaintext: string,
   contextUuid: string,
-  options?: { sealKey?: Buffer },
+  options?: { sealKey?: Buffer; contextDigest?: string },
 ): SealedBlob {
   const key = deriveSealKey(contextUuid, resolveSealMasterKey(options))
   const iv = crypto.randomBytes(IV_LENGTH)
   const cipher = crypto.createCipheriv(ALGORITHM, key, iv, { authTagLength: 16 })
-  cipher.setAAD(Buffer.from(contextUuid, 'utf8'))
+  // v2 hardening: bind the FULL 256-bit content digest into the AAD when supplied,
+  // so forgery costs a 256-bit collision (quantum BHT 2^85.3) not the bare uuid's
+  // 2^40.67. Absent ⇒ v1 (uuid-only AAD), still round-trips.
+  const digest = options?.contextDigest
+  cipher.setAAD(aadFor(contextUuid, digest))
   const ciphertext = Buffer.concat([cipher.update(plaintext, 'utf8'), cipher.final()])
   return {
-    v: 1,
+    v: digest ? 2 : 1,
     alg: 'AES-256-GCM',
     contextUuid,
+    ...(digest ? { contextDigest: digest } : {}),
     iv: iv.toString('hex'),
     authTag: cipher.getAuthTag().toString('hex'),
     ciphertext: ciphertext.toString('hex'),
@@ -117,6 +146,16 @@ export function decryptIfUuid(
       'decryptIfUuid: sealed contextUuid does not match presented identity uuid (fail-closed)',
     )
   }
+  // v2 hardening: the blob commits the full 256-bit content digest; require it to
+  // match the expected content's digest (fail-closed) — the 2^85.3 quantum floor.
+  if (sealed.v === 2 || sealed.contextDigest !== undefined) {
+    const expectedDigest = identityDigestForContent(expectedContent, tenantId)
+    if (sealed.contextDigest !== expectedDigest) {
+      throw new Error(
+        'decryptIfUuid: sealed contextDigest does not match expected content digest (fail-closed)',
+      )
+    }
+  }
 
   const key = deriveSealKey(sealed.contextUuid, resolveSealMasterKey(options))
   const decipher = crypto.createDecipheriv(
@@ -125,7 +164,7 @@ export function decryptIfUuid(
     Buffer.from(sealed.iv, 'hex'),
     { authTagLength: 16 },
   )
-  decipher.setAAD(Buffer.from(sealed.contextUuid, 'utf8'))
+  decipher.setAAD(aadFor(sealed.contextUuid, sealed.contextDigest))
   decipher.setAuthTag(Buffer.from(sealed.authTag, 'hex'))
   try {
     return Buffer.concat([
@@ -141,7 +180,11 @@ export function decryptIfUuid(
 
 export function parseSealedBlob(raw: string): SealedBlob {
   const parsed = JSON.parse(raw) as SealedBlob
-  if (parsed?.v !== 1 || parsed?.alg !== 'AES-256-GCM' || typeof parsed.contextUuid !== 'string') {
+  if (
+    (parsed?.v !== 1 && parsed?.v !== 2) ||
+    parsed?.alg !== 'AES-256-GCM' ||
+    typeof parsed.contextUuid !== 'string'
+  ) {
     throw new Error('parseSealedBlob: invalid SealedBlob wire shape')
   }
   return parsed

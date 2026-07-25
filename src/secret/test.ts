@@ -5,6 +5,7 @@ import {
   PAYLOAD_SECRET_IDENTITY,
   PLATFORM_TENANT_ID,
   decryptIfUuid,
+  identityDigestForContent,
   identityUuidForContent,
   resolvePayloadSecret,
   resolveSealMasterKey,
@@ -69,6 +70,34 @@ describe('secret — seal at rest, decrypt iff uuid', () => {
     expect(() =>
       decryptIfUuid(tampered, contextUuid, PAYLOAD_SECRET_IDENTITY, opts),
     ).toThrow(/AES-GCM authentication failed/)
+  })
+
+  it('v2: round-trips when the full 256-bit content digest is bound', () => {
+    const contextUuid = identityUuidForContent(PAYLOAD_SECRET_IDENTITY, PLATFORM_TENANT_ID)
+    const contextDigest = identityDigestForContent(PAYLOAD_SECRET_IDENTITY, PLATFORM_TENANT_ID)
+    const sealed = sealSecret('vitest-only-secret-not-for-production', contextUuid, { ...opts, contextDigest })
+    expect(sealed.v).toBe(2)
+    expect(sealed.contextDigest).toBe(contextDigest)
+    expect(sealed.contextDigest!.length).toBe(64) // full 256-bit digest, not the 122-bit uuid
+    const plain = decryptIfUuid(sealed, contextUuid, PAYLOAD_SECRET_IDENTITY, opts)
+    expect(plain).toBe('vitest-only-secret-not-for-production')
+  })
+
+  it('v2: fails closed when the sealed contextDigest is tampered', () => {
+    const contextUuid = identityUuidForContent(PAYLOAD_SECRET_IDENTITY, PLATFORM_TENANT_ID)
+    const contextDigest = identityDigestForContent(PAYLOAD_SECRET_IDENTITY, PLATFORM_TENANT_ID)
+    const sealed = sealSecret('vitest-only-secret-not-for-production', contextUuid, { ...opts, contextDigest })
+    const tampered = { ...sealed, contextDigest: `0${sealed.contextDigest!.slice(1)}` }
+    expect(() =>
+      decryptIfUuid(tampered, contextUuid, PAYLOAD_SECRET_IDENTITY, opts),
+    ).toThrow(/contextDigest does not match expected content digest/)
+  })
+
+  it('identityDigestForContent is the full 256-bit digest, wider than the uuid', () => {
+    const d = identityDigestForContent('fixture-string', PLATFORM_TENANT_ID)
+    expect(d).toBe(identityDigestForContent('fixture-string', PLATFORM_TENANT_ID))
+    expect(d.length).toBe(64)
+    expect(d).not.toBe(identityDigestForContent('other-string', PLATFORM_TENANT_ID))
   })
 
   it('resolveSealMasterKey requires ERPAX_SEAL_KEY when no test override', () => {

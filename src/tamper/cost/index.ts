@@ -2,7 +2,7 @@
  * Tamper-cost — the security math of a zero-entropy app, made computational.
  *
  * erpax stores no secret: every id is a v8 content-uuid derived deterministically
- * from content (SHA-256, 106 binding bits — see uuid-format). So the security
+ * from content (SHA-256, 122 binding bits — see uuid-format). So the security
  * property is INTEGRITY, not confidentiality: there is no key to steal, and the
  * only attack is to out-compute the whole. This module quantifies "how much".
  *
@@ -16,7 +16,7 @@
  *      apart). Cost is a birthday collision: ~2^(commitmentBits/2). This is why
  *      the Merkle leaf / anchor must commit to the FULL 256-bit content digest
  *      (services/integrity/content-uuid `computeContentDigest`, collision 2^128),
- *      NOT the truncated 106-bit uuid — whose collision floor is only 2^53. In
+ *      NOT the truncated 122-bit uuid — whose collision floor is only 2^61. In
  *      scope only when the attacker authors content before it is committed.
  *   3. GLOBAL REWRITE — recompute instead of collide. Cheap per node, BUT every
  *      relation is a content-uuid wired in all directions, so one change cascades
@@ -91,7 +91,7 @@ export type CrackVerdict = {
 
 /**
  * The verdict for a content-addressed, all-directions-wired store.
- * @param digestBits content-uuid digest width (default erpax's 106)
+ * @param digestBits content-uuid digest width (default erpax's 122)
  * @param rows lifetime uuids in one namespace (for the birthday check)
  * @param anchored is the chain root externally anchored (TSA/blockchain)?
  * @param anchorStrengthBits security strength of that anchor (RSA-2048 TSA ≈ 112; PoW ≈ Infinity)
@@ -122,7 +122,7 @@ export function crackVerdict(opts: {
    * Width (bits) the external commitment (Merkle leaf / anchor) binds. Presence
    * models the chosen-content collision path (birthday = bits/2): set to
    * CONTENT_DIGEST_BITS (256) when the leaf commits the FULL content digest;
-   * the bare 106-bit uuid yields a 2^53 floor. Absent ⇒ post-hoc threat only.
+   * the bare 122-bit uuid yields a 2^61 floor. Absent ⇒ post-hoc threat only.
    */
   anchorCommitmentBits?: number
 }): CrackVerdict {
@@ -142,7 +142,7 @@ export function crackVerdict(opts: {
   const sp = secondPreimageLog2(digestBits)
   // Chosen-content collision: in scope only when the commitment width is given
   // (the attacker authors content before it is committed). Birthday on that
-  // width — 2^53 for the bare 106-bit uuid, 2^128 for the full 256-bit digest.
+  // width — 2^61 for the bare 122-bit uuid, 2^128 for the full 256-bit digest.
   const chosenCollisionLog2 =
     opts.anchorCommitmentBits === undefined
       ? Number.POSITIVE_INFINITY

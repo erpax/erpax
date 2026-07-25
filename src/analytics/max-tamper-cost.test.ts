@@ -1,12 +1,15 @@
 /**
  * analytics/max-tamper-cost — computed tests. Verifies the MIN law (the weakest
- * link caps the whole) and the commitment-width trap (bare 106-bit uuid is a
- * cheaper forgery than the full 256-bit digest), recomputed from the live tree.
+ * link caps the whole) and the commitment-width trap (bare ERPAX_DIGEST_BITS-wide
+ * uuid is a cheaper forgery than the full 256-bit digest), recomputed from the live tree.
  *
  * @standard ISO/IEC-29119:2022 software testing (computed invariant)
  */
 import { describe, it, expect } from 'vitest'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 import { maxTamperCost } from './max-tamper-cost'
+
+const BARE_LEVER = `chosen-content vs bare ${ERPAX_DIGEST_BITS}-bit uuid`
 
 describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', () => {
   const r = maxTamperCost()
@@ -24,17 +27,17 @@ describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', 
   })
 
   it('the classical bare-uuid commitment is cheaper than the full digest (the 2^53 trap)', () => {
-    const bare = r.levers.find((l) => l.lever === 'chosen-content vs bare 106-bit uuid')
+    const bare = r.levers.find((l) => l.lever === BARE_LEVER)
     const full = r.levers.find((l) => l.lever === 'chosen-content vs full 256-bit digest')
     expect(bare!.bindingLog2).toBeLessThan(full!.bindingLog2)
     expect(bare!.binding).toBe('collision')
   })
 
   it('the harmonic floors descend D > D/2 > D/3 — the quantum (BHT) collision is the lowest floor (3rd harmonic)', () => {
-    const classicalBare = r.levers.find((l) => l.lever === 'chosen-content vs bare 106-bit uuid')!.bindingLog2 // 106/2 = 53
-    const quantumBare = r.levers.find((l) => l.lever.startsWith('quantum') && l.lever.includes('bare'))!.bindingLog2 // 106/3 ≈ 35.3
+    const classicalBare = r.levers.find((l) => l.lever === BARE_LEVER)!.bindingLog2 // D/2
+    const quantumBare = r.levers.find((l) => l.lever.startsWith('quantum') && l.lever.includes('bare'))!.bindingLog2 // D/3 (BHT)
     expect(quantumBare).toBeLessThan(classicalBare) // D/3 < D/2
-    expect(quantumBare).toBeCloseTo(106 / 3, 6)
+    expect(quantumBare).toBeCloseTo(ERPAX_DIGEST_BITS / 3, 6)
     expect(r.weakest.lever.startsWith('quantum')).toBe(true) // the missing cross IS the weakest
   })
 

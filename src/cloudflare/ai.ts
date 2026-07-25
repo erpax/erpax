@@ -21,6 +21,7 @@ import { toAtomPath } from '@/path'
 import {
   decryptIfUuid,
   identityUuidForContent,
+  identityDigestForContent,
   sealSecret,
   type SealedBlob,
 } from '@/secret'
@@ -66,7 +67,8 @@ export function sealCloudflareAiSecret(
 ): { readonly sealed: SealedBlob; readonly contextUuid: string } {
   const identity = aiSecretIdentity(bindingName, modelId)
   const contextUuid = identityUuidForContent(identity)
-  return { sealed: sealSecret(plaintext, contextUuid, options), contextUuid }
+  const contextDigest = identityDigestForContent(identity)
+  return { sealed: sealSecret(plaintext, contextUuid, { ...options, contextDigest }), contextUuid }
 }
 
 export function decryptCloudflareAiSecretIfUuid(

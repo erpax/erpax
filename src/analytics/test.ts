@@ -8,6 +8,7 @@
  * @audit the report is recomputed from the live matrix, never a fixture
  */
 import { describe, it, expect } from 'vitest'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 import {
   analyze,
   structure,
@@ -59,9 +60,9 @@ describe('analytics — the all-aspects analyzer (computed, composed)', () => {
     expect(r.harmony.worstTenney).toBeGreaterThanOrEqual(0)
   })
 
-  it('trust: content floor 256-bit, erpax floor 106-bit; work finite below full coverage', () => {
+  it('trust: content floor 256-bit, erpax floor ERPAX_DIGEST_BITS; work finite below full coverage', () => {
     expect(r.trust.contentPreimageBits).toBe(256)
-    expect(r.trust.erpaxFloorBits).toBe(106)
+    expect(r.trust.erpaxFloorBits).toBe(ERPAX_DIGEST_BITS)
     if (r.trust.coverage < 1) expect(Number.isFinite(r.trust.tamperWorkLog2)).toBe(true)
     else expect(r.trust.tamperWorkLog2).toBe(Infinity)
   })

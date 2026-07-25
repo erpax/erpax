@@ -16,8 +16,11 @@ describe('anchor: real strengths per kind (NIST SP 800-57)', () => {
 })
 
 describe('anchor: it must be ≥ the digest, or it is the weak link', () => {
-  it('RSA-2048 (112) binds the 106-bit erpax digest; none does not', () => {
-    expect(anchorBinds('rfc3161-rsa2048', ERPAX_DIGEST_BITS)).toBe(true)
+  it('the digest outgrew RSA: P-256 (128) binds the erpax digest, RSA-2048 (112) is now the weak link', () => {
+    // ERPAX_DIGEST_BITS is 122 (128 − version − variant), so 112 < 122 — RSA-2048 no longer binds.
+    expect(anchorBinds('rfc3161-ecdsa-p256', ERPAX_DIGEST_BITS)).toBe(true)
+    expect(anchorBinds('rfc3161-rsa2048', ERPAX_DIGEST_BITS)).toBe(false)
+    expect(anchorBinding('rfc3161-rsa2048', ERPAX_DIGEST_BITS)).toBe('anchor')
     expect(anchorBinds('none', ERPAX_DIGEST_BITS)).toBe(false)
   })
   it('against a wider 128-bit digest, RSA-2048 (112) is the weak link', () => {

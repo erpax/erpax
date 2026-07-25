@@ -12,8 +12,8 @@
  * every dimension rather than 0 somewhere — the cost is maximal everywhere at once
  * (see @/purity, @/hallucination). A single impurity is the weakest link.
  *
- * The binding lever is not coverage — it is COMMITMENT WIDTH. The bare 106-bit
- * uuid yields a 2^53 chosen-content collision; the full 256-bit content digest
+ * The binding lever is not coverage — it is COMMITMENT WIDTH. The bare 122-bit
+ * uuid yields a 2^61 chosen-content collision; the full 256-bit content digest
  * yields 2^128. Coverage is an amplifier that reaches ∞ only at 1.0. This
  * capability surfaces both, names the weakest link, and the (free) fix.
  *
@@ -70,12 +70,12 @@ export const maxTamperCost = ({ unsealedCrosses = 0, impurities = 0 }: { unseale
   // amplifier is reported separately (gapToInfinity).
   const levers: TamperLever[] = [
     lever('post-hoc (chosen-content out of scope)', crackVerdict({ checks: 1 })),
-    lever('chosen-content vs bare 106-bit uuid', crackVerdict({ checks: 1, anchorCommitmentBits: ERPAX_DIGEST_BITS })),
+    lever(`chosen-content vs bare ${ERPAX_DIGEST_BITS}-bit uuid`, crackVerdict({ checks: 1, anchorCommitmentBits: ERPAX_DIGEST_BITS })),
     lever('chosen-content vs full 256-bit digest', crackVerdict({ checks: 1, anchorCommitmentBits: CONTENT_DIGEST_BITS })),
     // the missing cross — the quantum (BHT) collision, the 3rd harmonic D/3, the
     // lowest floor. A quantum adversary with quantum memory pays this; it also
     // breaks an RSA/ECC anchor (Shor), so the per-record floor IS the binding one.
-    { lever: 'quantum (BHT) collision vs bare 106-bit uuid', bindingLog2: bhtCollisionLog2(ERPAX_DIGEST_BITS), binding: 'collision' },
+    { lever: `quantum (BHT) collision vs bare ${ERPAX_DIGEST_BITS}-bit uuid`, bindingLog2: bhtCollisionLog2(ERPAX_DIGEST_BITS), binding: 'collision' },
     { lever: 'quantum (BHT) collision vs full 256-bit digest', bindingLog2: bhtCollisionLog2(CONTENT_DIGEST_BITS), binding: 'collision' },
   ]
   // The cross lever — duplication breaks the content-uuid binding. An UNSEALED cross
