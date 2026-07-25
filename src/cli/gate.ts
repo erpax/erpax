@@ -21,6 +21,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // unloadable corpus produces green lies at machine speed — this lane is the precondition that stops it.
   ['load', 'pnpm erpax load'],
   ['standards', 'pnpm erpax standards'],
+  // The 4-SEAL GATE — computationally impossible for unsigned code to pass: every atom's 4-key bind
+  // (uuid⊕parent⊕prev⊕next) must recompute AND the whole matrix must fold to UUID_MATRIX_ROOT, or the
+  // gate fails closed. Pure matrix recomputation (fast, no boot); forging past it means inverting the
+  // 4-key fold (the 2^128 wall). Was proven only in a vitest test — now a lane that cannot be skipped.
+  ['seal', 'pnpm erpax seal'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],

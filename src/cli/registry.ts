@@ -23,6 +23,9 @@ const VITEST =
 export const AURA_SCAN_PATH = 'src/aura/scan.mjs'
 
 export const CLI_REGISTRY: Record<string, CliDomain> = {
+  seal: {
+    default: { desc: 'The 4-seal gate — fail closed unless every atom is signed by its 4-key bind', cmd: `${TSX} src/uuid/matrix/index.ts` },
+  },
   readme: {
     default: { desc: 'Regenerate README + computed faces', cmd: `${HEAVY_TSX} src/readme/index.ts` },
     root: { desc: 'Regenerate the front-page README.md only (faces are gitignored)', cmd: `${HEAVY_TSX} src/readme/index.ts --root` },

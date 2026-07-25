@@ -295,3 +295,44 @@ export const verifyRoot = (): { ok: boolean; root: string } => {
 /** Every atom whose verifyBind is false — the tampered (or unbound) nodes. */
 export const tamperedAtoms = (): string[] =>
   UUID_MATRIX_NODES.filter((n) => !verifyBind(n.atom)).map((n) => n.atom)
+
+/**
+ * The 4-SEAL GATE — fail closed unless EVERY atom is signed by its 4-key navigation-cross bind.
+ *
+ * "It should be computationally impossible for unsigned code to pass the gates." Each atom's bind is
+ * merge(uuid, merge(merge(parent, prev), next)) — the 4 keys uuid ⊕ parent ⊕ prev ⊕ next. This recomputes
+ * that bind for every node (verifyBind) AND re-folds all binds to the one root (verifyRoot), throwing if
+ * any atom is unsigned/tampered or the holographic collapse is broken. Passing requires all four keys of
+ * every atom to recompute their sealed bind; forging a single atom past this means finding a preimage that
+ * satisfies its bind AND keeps the whole Merkle fold landing on UUID_MATRIX_ROOT — inverting the 4-key fold,
+ * which is the 2^128 wall (Grover-halved), i.e. computationally infeasible. Pure matrix recomputation, no
+ * Payload boot — it belongs at the gate, not only in a test that can be skipped.
+ *
+ * HONEST BOUNDARY — this proves every atom IN THE MATRIX is signed and untampered; an atom absent from the
+ * generated matrix is caught by the diamond-membership / readme lane (unfolded matter), not here. Tamper-
+ * EVIDENT at the 2^128 coverage limit, never literally impossible (see @/merge bind4).
+ */
+export function assertMatrixSigned(): { signed: number } {
+  const tampered = tamperedAtoms()
+  if (tampered.length > 0) {
+    throw new Error(
+      `✗ 4-seal gate: ${tampered.length} UNSIGNED/tampered atom(s) — the 4-key bind (uuid⊕parent⊕prev⊕next) does not recompute: ${tampered.slice(0, 10).join(', ')}${tampered.length > 10 ? '…' : ''}`,
+    )
+  }
+  const { ok, root } = verifyRoot()
+  if (!ok) {
+    throw new Error(`✗ 4-seal gate: matrix root does not fold to UUID_MATRIX_ROOT (got ${root.slice(0, 16)}…) — the holographic collapse is broken`)
+  }
+  return { signed: UUID_MATRIX_NODES.length }
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  // The 4-seal gate lane — fail closed (exit 1) unless every atom is signed by its 4-key bind.
+  try {
+    const { signed } = assertMatrixSigned()
+    console.log(`✓ 4-seal gate — ${signed} atoms signed (uuid⊕parent⊕prev⊕next binds recompute · root folds to UUID_MATRIX_ROOT)`)
+  } catch (e) {
+    console.error((e as Error).message)
+    process.exit(1)
+  }
+}

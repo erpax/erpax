@@ -14,7 +14,7 @@ import { describe, it, expect } from 'vitest'
 import {
   nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest,
   parentOf, prevOf, nextOf, childrenOf, bidirectionalCrossOf,
-  coordinateOf, coordinateAddress, verifyBind, verifyRoot, tamperedAtoms,
+  coordinateOf, coordinateAddress, verifyBind, verifyRoot, tamperedAtoms, assertMatrixSigned,
   toUuid, merge,
   UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT,
 } from '@/uuid/matrix'
@@ -152,6 +152,12 @@ describe('uuid-matrix coordinate: the 3-connected [[coordinate]] cross verifies'
 
   it("verifyBind('coordinate') is true on the real generated matrix", () => {
     expect(verifyBind('coordinate')).toBe(true)
+  })
+
+  it('assertMatrixSigned passes on the clean matrix — every atom signed by its 4-key bind (the gate lane)', () => {
+    const r = assertMatrixSigned()
+    expect(r.signed).toBe(UUID_MATRIX_NODES.length)
+    expect(tamperedAtoms()).toEqual([]) // nothing unsigned ⇒ the gate is green
   })
 
   it('parentOf/prevOf/nextOf resolve the stored neighbour uuids back to nodes', () => {
