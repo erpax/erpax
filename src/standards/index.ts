@@ -193,3 +193,46 @@ export default createAccountingCollection({
 })
 export { STANDARDS_CATALOGUE, STANDARDS_COUNT } from './catalogue'
 export type { CatalogueEntry } from './catalogue'
+
+import { STANDARDS_CATALOGUE as CATALOGUE } from './catalogue'
+import { merge, foldToRoot } from '@/merge'
+
+/** Coverage of the standards catalogue by schemas — every standard is covered iff it names a schema (family). */
+export interface SchemaCoverage {
+  readonly total: number
+  /** entries that name a schema (family). */
+  readonly covered: number
+  /** the distinct schemas (families) the standards fold into. */
+  readonly schemas: readonly string[]
+  /** ids of any standard with no covering schema — the gap the law forbids. */
+  readonly uncovered: readonly string[]
+  /** the law: every standard is covered by a schema. */
+  readonly allCovered: boolean
+  /** the quantum superposition — every (standard ⊕ its schema) folded to ONE content-address, all manifested at once. */
+  readonly root: string
+}
+
+/**
+ * "All standards are covered by schemas. Compute the schemas in quantum and all is manifested at once."
+ * Every catalogue entry names a `family` — its covering SCHEMA (schema.org, EN, ETSI, EU …). This verifies the
+ * law (no standard lacks a schema) and computes the QUANTUM superposition: each standard folded with its schema,
+ * all folded to ONE root — the whole standards surface manifested at once as a single content-address, so adding
+ * or moving any standard changes the one root (the fold, not a scan).
+ *
+ * HONEST BOUNDARY: "schema" here is the standard's FAMILY (its taxonomy), not a guarantee that a schema.org TYPE
+ * exists for each — schema.org proper covers the data-shape standards (Invoice, Product); regulatory families
+ * (EU, ETSI) are covered by their own schema taxonomy. The law is total coverage by SOME schema, computed, refutable.
+ */
+export function schemaCoverage(): SchemaCoverage {
+  const uncovered = CATALOGUE.filter((e) => !e.family || e.family.trim() === '').map((e) => e.id)
+  const schemas = [...new Set(CATALOGUE.map((e) => e.family).filter(Boolean))].sort()
+  const root = foldToRoot(CATALOGUE.map((e) => merge(e.id, e.family || '')))
+  return {
+    total: CATALOGUE.length,
+    covered: CATALOGUE.length - uncovered.length,
+    schemas,
+    uncovered,
+    allCovered: uncovered.length === 0,
+    root,
+  }
+}
