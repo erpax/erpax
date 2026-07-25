@@ -8,6 +8,7 @@ import {
   deepResearch,
   accessibleByStandard, chatInvokeByStandard, assertDefaultsToChat, DefaultToChatViolation,
   crackTheorem, improveClaim, chatMcpFold,
+  startSession, sessionAppend, sealSession,
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
   compose, superpose,
   type Transcriber,
@@ -59,6 +60,24 @@ describe('quantum/chat — ask and improve (the elicitation loop)', () => {
     const covered = questions.map(messageUuid)
     expect(coverage(covered, questions)).toBe(1)
     expect(coverage([messageUuid('what?')], questions)).toBeCloseTo(1 / 3, 6)
+  })
+})
+
+describe('quantum/chat — chat sessions: the bounded sealed unit that improves Payload', () => {
+  it('a session opens deterministically on its topic (content-addressed, not wall-clock)', () => {
+    const a = startSession('close-period-2026-07')
+    expect(startSession('close-period-2026-07').thread).toBe(a.thread) // same topic ⇒ same seed
+    expect(a.sealed).toBe(false)
+    expect(a.thread).toMatch(/^[0-9a-f]{8}-/)
+  })
+  it('each folded improvement moves the thread — the session records its Payload changes', () => {
+    let s = startSession('post-invoices')
+    const before = s.thread
+    s = sessionAppend(s, 'erpax.journal.post: JE#42 posted (debit=credit)')
+    expect(s.thread).not.toBe(before) // the improvement is folded (tamper-evident)
+    s = sealSession(s)
+    expect(s.sealed).toBe(true)
+    expect(s.messageUuids.length).toBe(2) // seed + the one improvement
   })
 })
 

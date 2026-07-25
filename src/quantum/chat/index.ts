@@ -164,6 +164,36 @@ export function compose(uuid: string): Composition {
   return { notes, rootFreq: A432, meanTenney: notes.length > 1 ? t / (notes.length - 1) : 0 }
 }
 
+// ── chat sessions — the bounded, sealed unit that improves Payload ────────────
+// A session is a bounded conversation whose folded messages ARE its record: each tool
+// invoke (chatInvoke → erpaxMcpTools, a Payload CRUD, gated by-standard) folds into the
+// session thread, so the session's tamper-evident thread-uuid IS the audit of the Payload
+// improvements it made. Deterministic seed (same topic ⇒ same start) — content-addressed,
+// not wall-clock. Sealed sessions persist to the Payload `chat` collection.
+
+export interface ChatSession {
+  readonly topic: string
+  readonly messageUuids: readonly string[]
+  /** current tamper-evident thread-uuid — the session's record of every folded change. */
+  readonly thread: string
+  readonly sealed: boolean
+}
+
+/** Open a session on a topic — the seed folds the topic (deterministic). */
+export const startSession = (topic: string): ChatSession => {
+  const seed = [messageUuid(`session:${topic}`)]
+  return { topic, messageUuids: seed, thread: threadUuid(seed), sealed: false }
+}
+
+/** Fold a message (an improvement, a tool result) into the session. */
+export const sessionAppend = (s: ChatSession, message: string): ChatSession => {
+  const r = improve(s.messageUuids, message)
+  return { ...s, messageUuids: r.messageUuids, thread: r.thread }
+}
+
+/** Seal the session — its thread-uuid is the tamper-evident record persisted to Payload. */
+export const sealSession = (s: ChatSession): ChatSession => ({ ...s, sealed: true })
+
 // ── voice & video in chat — one modality-tagged path ─────────────────────────
 // A voice or video message is MEDIA that carries a TRANSCRIPT (speech-to-text) or
 // CAPTION. erpax content-addresses the captured blob (tamper-evident) AND folds its
