@@ -65,7 +65,9 @@ const migrateSettled = (): boolean => {
     return false
   }
 }
-if (!process.env.PAYLOAD_TEST_SKIP_MIGRATE && !migrateSettled()) {
+// Greenfield (PAYLOAD_DEV_PUSH=true): no migrations — the schema is PUSHED from config at first boot
+// against a fresh D1. Skip the migrate spawn entirely; Drizzle creates every table on connect.
+if (process.env.PAYLOAD_DEV_PUSH !== 'true' && !process.env.PAYLOAD_TEST_SKIP_MIGRATE && !migrateSettled()) {
   const result = spawnSync('pnpm', ['exec', 'payload', 'migrate'], {
     env: process.env,
     encoding: 'utf8',

@@ -1,9 +1,3 @@
-import * as migration_20260604_223629 from './20260604_223629';
-
-export const migrations = [
-  {
-    up: migration_20260604_223629.up,
-    down: migration_20260604_223629.down,
-    name: '20260604_223629',
-  },
-];
+// Greenfield: migrations are regenerated from the live config only at deploy time (no backward
+// compatibility). In dev/test the schema is PUSHED from config against a fresh D1. See payload.config.ts.
+export const migrations: { up: (a: unknown) => Promise<void>; down: (a: unknown) => Promise<void>; name: string }[] = []

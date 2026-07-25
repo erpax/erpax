@@ -33,6 +33,7 @@ export default defineConfig({
     environment: 'node',
     environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],
     setupFiles: ['./vitest.setup.ts'],
+    globalSetup: ['./vitest.globalsetup.ts'],
     include: [
       // CCCCC-prep (2026-05-11): every spec is now co-located next to
       // its source file as `<Name>.test.ts`. The legacy `tests/int/**`

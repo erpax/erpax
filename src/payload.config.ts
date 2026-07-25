@@ -289,10 +289,14 @@ export default buildConfig({
     // (d1-sqlite arg `idType: 'uuid'` → payloadIDType 'text' → string ids +
     // the DB generates a uuid per row. `'text'` maps to number — use 'uuid'.)
     idType: 'uuid',
-    // NODE_ENV=test + non-TTY: Drizzle dev push can hang on interactive column prompts.
-    // Vitest runs migrate in vitest.setup.ts; Playwright seeds set PAYLOAD_DEV_PUSH=false.
+    // NODE_ENV=test + non-TTY: Drizzle dev push can hang on interactive column prompts (schema DRIFT).
+    // Greenfield (no backward compat): PAYLOAD_DEV_PUSH=true pushes the schema from config against a fresh
+    // D1 (all-creates, no prompt) — but only ONCE. vitest globalSetup does the single push and drops a
+    // sentinel; every worker then boots with push OFF (the 988-table diff is ~58s, far too slow per-boot),
+    // reusing the warm schema. Migrations are regenerated only at deploy time.
     push:
-      process.env.NODE_ENV !== 'test' && process.env.PAYLOAD_DEV_PUSH !== 'false',
+      (process.env.PAYLOAD_DEV_PUSH === 'true' && !fs.existsSync(path.join(process.cwd(), 'node_modules/.cache/erpax/schema.pushed'))) ||
+      (process.env.NODE_ENV !== 'test' && process.env.PAYLOAD_DEV_PUSH !== 'false'),
   }),
   // D1 caps tables at 100 columns. Payload's admin document-locking adds a
   // `payload_locked_documents_rels` polymorphic across every lockable collection
