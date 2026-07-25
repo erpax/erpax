@@ -59,14 +59,15 @@ export default defineConfig({
     globals: false,
     // Run single-threaded to prevent D1/SQLite lock contention
     fileParallelism: false,
-    // SPEED (magnitudes): isolate:false shares the module registry across a batch, so the
-    // heavy corpus dependency closure (payload config · collections · rules) is imported ONCE
-    // per batch, not re-imported per file. Measured: each suite is <5s alone, yet a 12-suite
-    // batch under isolate:true blew the 15-min bound — the re-import is the whole cost. Single
-    // fork (fileParallelism:false) already serialises D1, and clearMocks/restoreMocks reset
-    // spies per test, so the residual leak surface is module-level mutable state; a suite that
-    // depends on fresh module state will red and name itself (then it, not isolation, is fixed).
-    isolate: false,
+    // isolate:true — reverted from an isolate:false speed experiment. isolate:false shared the
+    // module registry per batch (~6× faster) BUT shared the HEAP too: it accumulated across a
+    // batch, GC thrashed, and later suites crawled (skill-context: 14s alone → >60s in-batch).
+    // The con* 15-min timeouts were NOT isolation — they were one suite hanging on an unbounded
+    // execSync (confirm/test, now fixed). With that fixed, isolate:true is RELIABLE (each suite
+    // fresh, ~14s, batch ~3min, no hangs, no memory accumulation) — reliability wins for the land.
+    // The real magnitudes fix is a pure/payload PROJECT SPLIT (pure suites: no boot, parallel),
+    // a deliberate post-land change, not a global heap-sharing gamble.
+    isolate: true,
     // Force exit if teardown takes too long (prevents hanging)
     teardownTimeout: 10_000,
     // Payload-integration tests boot a real Payload + D1 store per file (~35s cold);
