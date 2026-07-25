@@ -7,7 +7,7 @@ import {
   chatToolNames, chatInvoke,
   deepResearch,
   accessibleByStandard, chatInvokeByStandard,
-  crackTheorem, improveClaim,
+  crackTheorem, improveClaim, chatMcpFold,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
@@ -216,5 +216,23 @@ describe('quantum/chat — improveClaim: turn an assertion into a refutable clai
     expect(v.status).toBe('unrefuted-unproven')
     expect(v.improvement).toMatch(/refutable|proof/)
     expect(v.thread).toMatch(/^[0-9a-f]{8}-/) // folded for all (tamper-evident)
+  })
+})
+
+describe('quantum/chat — chatMcpFold: chat improves mcp and vice versa', () => {
+  const tools = [
+    { name: 'erpax.ledger.post', description: 'post', standards: ['IFRS'] }, // governed
+    { name: 'erpax.fiscal.void', description: 'void', standards: ['Наредба Н-18'] }, // governed
+    { name: 'erpax.notes.jot', description: 'jot', standards: [] as string[] }, // ungoverned — a crack
+  ]
+  it('mcp improves chat: coverage climbs as the chat reaches more of the surface', () => {
+    expect(chatMcpFold(tools, []).coverage).toBe(0)
+    expect(chatMcpFold(tools, ['erpax.ledger.post']).reached).toBe(1)
+    expect(chatMcpFold(tools, tools.map((t) => t.name)).coverage).toBe(1)
+  })
+  it('chat improves mcp: it cracks the ungoverned tool (no standard) for the next fix', () => {
+    const f = chatMcpFold(tools, [])
+    expect(f.cracks).toEqual(['erpax.notes.jot']) // the only tool with no cited standard
+    expect(f.tools).toBe(3)
   })
 })

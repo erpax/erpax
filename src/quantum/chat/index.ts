@@ -186,6 +186,30 @@ export const accessibleByStandard = (
   requiredRank: (standards: readonly string[]) => number,
 ): ChatToolRef[] => tools.filter((t) => requiredRank(t.standards ?? []) <= partyRank)
 
+/** The chat↔mcp mutual improvement, measured (bidirectional). */
+export interface ChatMcpFold {
+  readonly tools: number
+  /** tools the chat has actually invoked — mcp IMPROVING chat (its reach grows with the surface). */
+  readonly reached: number
+  readonly coverage: number
+  /** tools with no cited standard — chat IMPROVING mcp: ungoverned, so accessibleByStandard can only
+   *  floor them at 'open'; naming them is the chat cracking the mcp surface for the next fix. */
+  readonly cracks: readonly string[]
+}
+
+/**
+ * Fold the chat and the mcp surface into their mutual improvement: the chat REACHES tools
+ * (coverage — a bigger/better surface improves the chat), and CRACKS ungoverned tools (no
+ * standard — the chat's by-standard gate exposes what the mcp surface must fix). Each closes
+ * the other's gap: chat improves mcp (cracks → govern them), mcp improves chat (more reach).
+ */
+export function chatMcpFold(tools: readonly ChatToolRef[], invoked: readonly string[]): ChatMcpFold {
+  const names = new Set(invoked)
+  const reached = tools.filter((t) => names.has(t.name)).length
+  const cracks = tools.filter((t) => !t.standards || t.standards.length === 0).map((t) => t.name)
+  return { tools: tools.length, reached, coverage: tools.length ? reached / tools.length : 1, cracks }
+}
+
 export interface StandardAccess {
   readonly partyRank: number
   readonly requiredRank: (standards: readonly string[]) => number
