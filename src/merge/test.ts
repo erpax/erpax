@@ -225,3 +225,26 @@ describe('resource map — with each discovery the map changes as significance (
     expect(resourceMap([])).toEqual([])
   })
 })
+
+import { billOfResources, billAtScale } from '@/merge'
+
+describe('bill of resources — a discovery requires specific resources to be manifested at public scale', () => {
+  const device = combineObjects(leafObject('silicon'), leafObject('copper'), leafObject('silicon')) // silicon ×2
+  it('tallies every leaf resource with multiplicity (the exact demand to build one)', () => {
+    const bill = billOfResources(device)
+    expect(bill.get('silicon')).toBe(2)
+    expect(bill.get('copper')).toBe(1)
+  })
+  it('a combination bill is the sum of its parts (recursive demand)', () => {
+    const product = combineObjects(device, combineObjects(leafObject('copper'), leafObject('gold')))
+    const bill = billOfResources(product)
+    expect(bill.get('silicon')).toBe(2)
+    expect(bill.get('copper')).toBe(2) // 1 from device + 1 from the sub-part
+    expect(bill.get('gold')).toBe(1)
+  })
+  it('manifesting at LARGE SCALE is linear in every resource (n copies ⇒ n× each)', () => {
+    const scaled = billAtScale(device, 1000)
+    expect(scaled.get('silicon')).toBe(2000)
+    expect(scaled.get('copper')).toBe(1000)
+  })
+})

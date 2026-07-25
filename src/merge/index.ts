@@ -256,6 +256,30 @@ export function resourceMap(objects: readonly ErpaxObject[]): ResourceShare[] {
   return sig.map((x) => ({ ...x, share: total ? x.significance / total : 0 }))
 }
 
+/**
+ * The BILL OF RESOURCES to MANIFEST an object — every leaf is an atomic resource, tallied with multiplicity (a
+ * resource the composition uses twice must be sourced twice). A discovery is not manifested until its specific
+ * resources are: to build the whole you must source every leaf of the recursion, and the bill is the exact demand.
+ */
+export function billOfResources(obj: ErpaxObject): Map<string, number> {
+  const bill = new Map<string, number>()
+  for (const resource of objectLeaves(obj)) bill.set(resource, (bill.get(resource) ?? 0) + 1)
+  return bill
+}
+
+/**
+ * The bill to manifest an object AT SCALE — `units` copies for public, large-scale access need `units×` of each
+ * resource. This is what turns a discovery into a mechanic the public can reach: the invention's bill of specific
+ * resources, multiplied by the scale it must serve. Manifesting large-scale is a linear demand on every leaf.
+ *
+ * @invariant billAtScale(obj, n)[r] === n × billOfResources(obj)[r] — scale is linear in every resource
+ */
+export function billAtScale(obj: ErpaxObject, units: number): Map<string, number> {
+  const scaled = new Map<string, number>()
+  for (const [resource, count] of billOfResources(obj)) scaled.set(resource, count * units)
+  return scaled
+}
+
 /** One step of an authentication path: the sibling to fold with, and whether it sits on the right. */
 export interface MerkleStep {
   readonly sibling: string
