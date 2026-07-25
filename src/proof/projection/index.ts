@@ -19,7 +19,7 @@
  * pays it. The proof's `note` always names the ACTUAL `anchorKind` so a finite
  * anchor never inherits the unbounded wording (ground-don't-assert).
  *
- * The 106-bit content-digest second-preimage (services/tamper-cost ERPAX_DIGEST_BITS)
+ * The 122-bit content-digest second-preimage (services/tamper-cost ERPAX_DIGEST_BITS)
  * is the CHEAPER hash-collision path — the honest overall forge floor — but it is
  * NOT the maximum. The maximum is the anchor: decrypt the private key, or forge the
  * chain. Pure + deterministic, and JCS-serializable (no Infinity leaks — the
@@ -105,6 +105,6 @@ export function projectionProof(anchorKind: AnchorKind = 'blockchain-pow'): Proj
     reverseEntropy:
       'Forward projection mints an atom (content → uuid) for one hash — reverse entropy bought cheaply through the trapdoor (the held key/content). Recovering the analog negative WITHOUT the key costs the anchor, and ONLY blockchain-pow makes it unbounded; a finite anchor (e.g. rfc3161-ecdsa-p256 ⇒ 2^128) caps it, and no anchor (none ⇒ 0) leaves no cost at all. Order created vs entropy spent, balanced double-entry.',
     note:
-      `Forward (project) is free + deterministic; the inverse (decrypt the private key / forge the anchor — the analog negative) costs ${inverseCost} under the supplied ${anchorKind} anchor. The honest overall forge floor is min(106-bit digest, anchor) = 2^${anchoredFloorLog2(anchorKind, ERPAX_DIGEST_BITS)}. The 106-bit digest second-preimage is the cheaper hash-collision path${unbounded ? ' — and only this cumulative-proof-of-work anchor makes the inverse the unbounded maximum' : '; this finite anchor is the maximum, NOT a default-infinity'}.`,
+      `Forward (project) is free + deterministic; the inverse (decrypt the private key / forge the anchor — the analog negative) costs ${inverseCost} under the supplied ${anchorKind} anchor. The honest overall forge floor is min(122-bit digest, anchor) = 2^${anchoredFloorLog2(anchorKind, ERPAX_DIGEST_BITS)}. The 122-bit digest second-preimage is the cheaper hash-collision path${unbounded ? ' — and only this cumulative-proof-of-work anchor makes the inverse the unbounded maximum' : '; this finite anchor is the maximum, NOT a default-infinity'}.`,
   }
 }

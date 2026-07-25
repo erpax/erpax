@@ -8,7 +8,7 @@
  * from the positive — reverse entropy, order from a maximal-entropy projection,
  * costing the anchor (services/anchor): rfc3161-ecdsa-p256 ⇒ 128, blockchain-pow ⇒
  * unbounded. The biggest blockchain's unclaimed bounty is the live proof nobody
- * pays it. The 106-bit digest floor is the cheaper hash-collision path, NOT the
+ * pays it. The 122-bit digest floor is the cheaper hash-collision path, NOT the
  * maximum. @see ../../dry-proof.ts ../../bitcoin/genesis
  */
 import { describe, it, expect } from 'vitest'
@@ -29,8 +29,8 @@ describe('projection: the analog negative (private key) is the maximum tamper co
     expect(p.inverse.anchorKind).toBe('blockchain-pow')
     expect(p.inverse.decryptKeyLog2).toBeNull() // ∞ — recovering the analog negative is unbounded
     expect(p.inverse.unbounded).toBe(true)
-    expect(p.inverse.digestFloorLog2).toBe(106) // the cheaper hash-collision path, NOT the maximum
-    expect(p.inverse.cheapestForgeLog2).toBe(106) // honest overall floor = min(digest, anchor)
+    expect(p.inverse.digestFloorLog2).toBe(122) // the cheaper hash-collision path, NOT the maximum
+    expect(p.inverse.cheapestForgeLog2).toBe(122) // honest overall floor = min(digest, anchor)
     expect(p.inverse.binding).toBe('digest')
   })
 
