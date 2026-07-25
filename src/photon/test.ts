@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { PLANCK_H, HBAR, C, energy, frequency, wavelength, momentum, photonOf, render, uuid, refract, VISIBLE_MIN_NM, VISIBLE_MAX_NM } from '@/photon'
+import { PLANCK_H, HBAR, C, energy, frequency, wavelength, momentum, photonOf, render, uuid, refract, disperse, VISIBLE_MIN_NM, VISIBLE_MAX_NM } from '@/photon'
 import { HORO_DIGITS } from '@/horo'
 import { signalForStep } from '@/signal'
 import { nodeOf } from '@/uuid/matrix'
@@ -62,5 +62,27 @@ describe('refract — quantum optics: a content-uuid → its visible photon (det
   })
   it('a different uuid refracts to a different colour (the light IS the identity)', () => {
     expect(refract(u).wavelengthNm).not.toBe(refract('076b3c2e-a765-8198-b315-516660683068').wavelengthNm)
+  })
+})
+
+describe('disperse — the diamond splits a uuid into its spectrum (reuses refract transform)', () => {
+  const u = '9ed56c0c-52f2-8d11-a64b-9a751bdfdf98'
+  it('yields one visible line per band, short→long wavelength (a readable spectrum)', () => {
+    const s = disperse(u, 7)
+    expect(s).toHaveLength(7)
+    for (const p of s) {
+      expect(p.wavelengthNm).toBeGreaterThanOrEqual(VISIBLE_MIN_NM)
+      expect(p.wavelengthNm).toBeLessThanOrEqual(VISIBLE_MAX_NM)
+    }
+    const sorted = [...s].sort((a, b) => a.wavelengthNm - b.wavelengthNm)
+    expect(s.map((p) => p.wavelengthNm)).toEqual(sorted.map((p) => p.wavelengthNm)) // already ordered
+  })
+  it('same uuid ⇒ same spectrum (content-addressed)', () => {
+    expect(disperse(u)).toEqual(disperse(u))
+  })
+  it("the first band's line is refract's single colour (refract ⊂ disperse — one transform)", () => {
+    // refract reads hue from bytes 0-4; disperse band 0 is the same window, so its line is present in the spectrum
+    const first = disperse(u, 7).map((p) => p.wavelengthNm)
+    expect(first).toContain(refract(u).wavelengthNm)
   })
 })

@@ -77,10 +77,33 @@ export interface RefractedPhoton extends Photon {
  * computes the light of an ADDRESS, never a claim about physical photons emitted by anything.
  */
 export function refract(contentUuid: string): RefractedPhoton {
-  const { hue } = uuidSignal(contentUuid)
-  const wavelengthNm = VISIBLE_MIN_NM + (hue / 360) * (VISIBLE_MAX_NM - VISIBLE_MIN_NM)
+  return photonOfHue(uuidSignal(contentUuid).hue)
+}
+
+/** The shared hue → visible-optics step both refract and disperse fold through (one transform, no duplication). */
+function photonOfHue(hue: number): RefractedPhoton {
+  const h = ((hue % 360) + 360) % 360
+  const wavelengthNm = VISIBLE_MIN_NM + (h / 360) * (VISIBLE_MAX_NM - VISIBLE_MIN_NM)
   const hz = C / (wavelengthNm * 1e-9)
-  return { ...photonOf(hz), hue, wavelengthNm }
+  return { ...photonOf(hz), hue: h, wavelengthNm }
+}
+
+/**
+ * disperse — the diamond splitting a uuid's white light into its SPECTRUM: `bands` photons, one per 4-hex
+ * window of the uuid, each refracted to its own visible line (short-to-long wavelength, so it reads as a real
+ * spectrum). Where refract gives the atom's single dominant colour, disperse gives the full spectral signature
+ * — the same content-addressed transform (photonOfHue), N times across the uuid's own bytes. Deterministic:
+ * same uuid ⇒ same spectrum. HONEST BOUNDARY, as refract: the byte→hue step is an identity encoding, the
+ * hue→line step is real optics; this is the spectrum of an ADDRESS, not a measured emission.
+ */
+export function disperse(contentUuid: string, bands = 7): RefractedPhoton[] {
+  const hex = contentUuid.replace(/[^0-9a-f]/gi, '').padEnd(bands * 4, '0')
+  const out: RefractedPhoton[] = []
+  for (let i = 0; i < bands; i++) {
+    const hue = Number.parseInt(hex.slice(i * 4, i * 4 + 4) || '0', 16) % 360
+    out.push(photonOfHue(hue))
+  }
+  return out.sort((a, b) => a.wavelengthNm - b.wavelengthNm) // short → long, a readable spectrum
 }
 
 /** The atom's own coordinate: the content-uuid from the matrix (the math, never the colour). */
