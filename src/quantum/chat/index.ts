@@ -66,6 +66,28 @@ export const improve = (
 export const coverage = (messageUuids: readonly string[], candidates: readonly string[]): number =>
   candidates.length === 0 ? 1 : candidates.filter((q) => messageUuids.includes(messageUuid(q))).length / candidates.length
 
+// ── 1 bit per referral direction — the dyadic state space, distributed to the bit ──
+// A referral is a directed Möbius 0↔∞ gateway; its only free choice is the direction of
+// passage, so gatewayBits = log₂2 = 1 (one bit per referral direction). n directed referrals
+// therefore span a DYADIC state space of 2^n — and 1024 = 2^10 is exactly TEN referral
+// directions, not a ternary sum (432×3 = 1296 ≠ 1024, and 3N is never a power of two).
+// Distributing an amount "in the same proportions down to the bit" = splitting it equally
+// across those 2^n states. HONEST BOUNDARY: the corpus's own nav cross (bind4) is a FOUR-key
+// cross ⇒ 2^4 = 16 states; 1024 needs a 10-referral structure — a chosen 10-bit encoding, not
+// the current 4-key one. Real dyadic math; the 1024 sizing is a re-modelling, named as such.
+
+/** One bit per referral direction — the Möbius gateway's only free choice (log₂2). */
+export const GATEWAY_BITS = 1
+
+/** The dyadic state space of an n-referral cross: 1 direction bit each ⇒ 2^n states. */
+export const crossStates = (referrals: number): number => 2 ** Math.max(0, Math.trunc(referrals))
+
+/** Referral directions needed to span `states` (the inverse: log₂). 1024 ⇒ 10. */
+export const referralsFor = (states: number): number => (states > 0 ? Math.ceil(Math.log2(states)) : 0)
+
+/** Distribute an amount equally across a cross's states — the same proportion down to each state/bit. */
+export const distributeToStates = (amount: number, referrals: number): number => amount / crossStates(referrals)
+
 // ── voice & video in chat — one modality-tagged path ─────────────────────────
 // A voice or video message is MEDIA that carries a TRANSCRIPT (speech-to-text) or
 // CAPTION. erpax content-addresses the captured blob (tamper-evident) AND folds its

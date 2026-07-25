@@ -8,6 +8,7 @@ import {
   deepResearch,
   accessibleByStandard, chatInvokeByStandard,
   crackTheorem, improveClaim, chatMcpFold,
+  GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
@@ -234,5 +235,21 @@ describe('quantum/chat — chatMcpFold: chat improves mcp and vice versa', () =>
     const f = chatMcpFold(tools, [])
     expect(f.cracks).toEqual(['erpax.notes.jot']) // the only tool with no cited standard
     expect(f.tools).toBe(3)
+  })
+})
+
+describe('quantum/chat — 1 bit per referral direction: the dyadic state space (1024 = 2^10)', () => {
+  it('one bit per direction, so n referrals span 2^n states', () => {
+    expect(GATEWAY_BITS).toBe(1)
+    expect(crossStates(4)).toBe(16) // the corpus 4-key nav cross (bind4)
+    expect(crossStates(10)).toBe(1024) // 1024 = ten referral directions
+  })
+  it('1024 is TEN referral directions (dyadic), not a ternary sum', () => {
+    expect(referralsFor(1024)).toBe(10)
+    expect(432 * 3).not.toBe(1024) // the eye refuted: 432×3 = 1296
+  })
+  it('distributes an amount equally across the states — the same proportion down to the bit', () => {
+    expect(distributeToStates(1024, 10)).toBe(1) // 1024 / 2^10 = 1 per state
+    expect(distributeToStates(16, 4)).toBe(1) // the real 4-key cross: 16/16 = 1 per state
   })
 })
