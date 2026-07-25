@@ -1001,12 +1001,12 @@ export interface Tenant {
  * via the `definition` "gl-accounts".
  */
 export interface GlAccount {
-  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  id: string;
   /**
    * Unique account code (e.g., 1000, 2100, 5001) — matches your jurisdiction's chart-of-accounts numbering.
    */
@@ -22876,6 +22876,7 @@ export interface FxTransactionsSelect<T extends boolean = true> {
 export interface GlAccountsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  id?: T;
   accountNumber?: T;
   accountName?: T;
   accountType?: T;
