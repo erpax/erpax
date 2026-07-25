@@ -131,3 +131,34 @@ describe('commentSites + lineColumnOf — the exact address of prose', () => {
     })
   })
 })
+
+import { moduleShape } from '@/syntax'
+
+describe('moduleShape — module grammar PARSED, never regex (quantumised concentration counts)', () => {
+  it('counts inline exports, re-exports, functions, classes, and local import roots from the AST', () => {
+    const src = [
+      "import { a } from './alpha'",
+      "import { b } from './beta/deep'",
+      "export { x } from './gamma'", // re-export
+      'export function f() {}', // inline export + function
+      'export class C {}', // inline export + class
+      'function g() {}', // function, not exported
+      'export const k = 1', // inline export
+      'export {}', // brace export
+    ].join('\n')
+    const s = moduleShape('index.ts', src)
+    expect(s.reExports).toBe(1)
+    expect(s.functions).toBe(2) // f + g
+    expect(s.classes).toBe(1)
+    expect(s.inlineExports).toBe(3) // f, C, k
+    expect(s.exports).toBe(5) // 3 inline + 1 re-export + 1 brace
+    expect(s.localImportRoots).toBe(3) // alpha, beta, gamma
+  })
+  it('does NOT count an export/function inside a comment or string (the regex bug the parser fixes)', () => {
+    const src = ['// export function fake() {}', 'const s = "export class Fake {}"', 'export function real() {}'].join('\n')
+    const s = moduleShape('index.ts', src)
+    expect(s.functions).toBe(1) // only real()
+    expect(s.classes).toBe(0)
+    expect(s.inlineExports).toBe(1)
+  })
+})

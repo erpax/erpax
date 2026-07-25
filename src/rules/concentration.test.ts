@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import {
   analyzeIndexConcentration,
+  childAtomDirs,
   concentrationFixSuggestion,
   concentrationViolations,
   CONCENTRATION_LINE_THRESHOLD,
@@ -65,10 +68,17 @@ describe('rules/concentration — live corpus scan', () => {
     )
   })
 
-  it('readme/index.ts ranks among top concentrations', () => {
-    const top = topConcentrations(undefined, 10)
-    const readme = top.find((t) => t.atomPath === 'readme')
-    expect(readme).toBeTruthy()
-    expect(readme!.metrics.lineCount).toBeGreaterThan(CONCENTRATION_LINE_THRESHOLD)
+  // Parsed truth (AST, not regex): readme/index.ts is a clean BARREL — its big `export {…} from './compute'`
+  // block is RE-EXPORTS, the hub pattern the concentration law WANTS, not inlined matter. The former regex
+  // mis-counted those multi-line re-exports as inline exports and falsely ranked readme a top concentration;
+  // moduleShape classifies them correctly, so readme is (rightly) not concentrated. A fast targeted check
+  // (one file), not a whole-corpus scan — the bounded-witness law.
+  it('readme/index.ts is a clean barrel — re-exports from ./compute, NOT a concentration (the parser corrects the regex)', () => {
+    const c = readFileSync(join(process.cwd(), 'src/readme/index.ts'), 'utf8')
+    const m = analyzeIndexConcentration(c, childAtomDirs('readme').length)
+    expect(m.inlineExportCount).toBe(0) // no matter inlined — it re-exports
+    expect(m.reExportCount).toBeGreaterThan(0) // it IS a barrel
+    expect(m.concentrationScore).toBeLessThan(CONCENTRATION_SCORE_THRESHOLD)
+    expect(isConcentrationViolation(m)).toBe(false) // a well-folded hub is not concentrated
   })
 })

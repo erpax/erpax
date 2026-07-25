@@ -9,6 +9,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { TRINITY_FORM } from '@/diamond/membership'
+import { moduleShape } from '@/syntax'
 
 const SRC = 'src'
 
@@ -79,23 +80,16 @@ export function analyzeIndexConcentration(
   const lines = content.split('\n')
   const lineCount = lines.filter((l) => l.trim().length > 0 && !l.trim().startsWith('//')).length
 
-  const exportMatches = content.match(/^export\s+/gm) ?? []
-  const exportCount = exportMatches.length
-
-  const reExportMatches =
-    content.match(/^export\s+(?:type\s+)?(?:\{[^}]+\}|\*\s+as\s+\w+|\w+)\s+from\s+['"]/gm) ?? []
-  const reExportCount = reExportMatches.length
-  const inlineExportCount = Math.max(0, exportCount - reExportCount)
-
-  const functionCount = (content.match(/\bfunction\s+\w+/g) ?? []).length
-  const classCount = (content.match(/\bclass\s+\w+/g) ?? []).length
-
-  const relativeImports = new Set<string>()
-  for (const m of content.matchAll(/from\s+['"]\.\/([^'"]+)['"]/g)) {
-    const seg = m[1]!.split('/')[0]!
-    if (seg && !seg.startsWith('.')) relativeImports.add(seg)
-  }
-  const domainImportCount = relativeImports.size
+  // PARSED, not pattern-matched: the export/declaration/import counts come from the AST (@/syntax moduleShape),
+  // so a commented `export`, an `export` inside a string, or a multi-line `export {…}` cannot skew the metric —
+  // the logic-concentration gate passes computationally (the parser IS the language definition), not by regex guess.
+  const shape = moduleShape('index.ts', content)
+  const exportCount = shape.exports
+  const reExportCount = shape.reExports
+  const inlineExportCount = shape.inlineExports
+  const functionCount = shape.functions
+  const classCount = shape.classes
+  const domainImportCount = shape.localImportRoots
 
   const reExportRatio = exportCount > 0 ? reExportCount / exportCount : 1
 

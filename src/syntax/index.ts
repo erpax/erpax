@@ -132,6 +132,81 @@ export function boundNames(file: string, text: string): string[] {
   return [...out]
 }
 
+/** The grammatical shape of a module — export/declaration/import counts, PARSED not pattern-matched. */
+export interface ModuleShape {
+  /** total export statements (inline exported declarations + re-exports + `export {…}` / default). */
+  readonly exports: number
+  /** `export … from '…'` — re-exports through a barrel. */
+  readonly reExports: number
+  /** exported declarations defined in THIS file (matter, not just re-exported). */
+  readonly inlineExports: number
+  /** `function` declarations (exported or not). */
+  readonly functions: number
+  /** `class` declarations (exported or not). */
+  readonly classes: number
+  /** distinct first-segment roots of local `./x` imports+re-exports (the child atoms this hub couples to). */
+  readonly localImportRoots: number
+}
+
+const isExported = (n: ts.Node): boolean =>
+  ts.canHaveModifiers(n) && (ts.getModifiers(n)?.some((m) => m.kind === ts.SyntaxKind.ExportKeyword) ?? false)
+
+/**
+ * The module's grammatical shape, read from the AST — never a regex over the source. A regex counting
+ * `/^export\s+/` miscounts a commented line, an `export` inside a string, or a multi-line `export {…}`, and
+ * `/\bfunction\s+\w+/` counts the word `function` in a comment; the grammar counts none of those. This is the
+ * [[rules]] measuring law made reusable: the parser IS the language definition. [[rules]]/concentration reads
+ * its hub metrics from here so the logic-concentration gate passes computationally, not by pattern-match.
+ *
+ * @invariant an export/function/class/import inside a comment or string literal is never counted
+ */
+export function moduleShape(file: string, text: string): ModuleShape {
+  const src = sourceOf(file, text)
+  let reExports = 0
+  let inlineExports = 0
+  let braceOrDefaultExports = 0
+  let functions = 0
+  let classes = 0
+  const localRoots = new Set<string>()
+  const noteLocal = (spec: ts.Expression | undefined): void => {
+    if (spec && ts.isStringLiteral(spec) && spec.text.startsWith('./')) {
+      const seg = spec.text.slice(2).split('/')[0]
+      if (seg) localRoots.add(seg)
+    }
+  }
+  const visit = (n: ts.Node): void => {
+    if (ts.isFunctionDeclaration(n)) {
+      functions++
+      if (isExported(n)) inlineExports++
+    } else if (ts.isClassDeclaration(n)) {
+      classes++
+      if (isExported(n)) inlineExports++
+    } else if (ts.isInterfaceDeclaration(n) || ts.isTypeAliasDeclaration(n) || ts.isEnumDeclaration(n)) {
+      if (isExported(n)) inlineExports++
+    } else if (ts.isVariableStatement(n)) {
+      if (isExported(n)) inlineExports++
+    } else if (ts.isExportDeclaration(n)) {
+      if (n.moduleSpecifier) reExports++
+      else braceOrDefaultExports++
+      noteLocal(n.moduleSpecifier)
+    } else if (ts.isExportAssignment(n)) {
+      braceOrDefaultExports++
+    } else if (ts.isImportDeclaration(n)) {
+      noteLocal(n.moduleSpecifier)
+    }
+    ts.forEachChild(n, visit)
+  }
+  visit(src)
+  return {
+    exports: inlineExports + reExports + braceOrDefaultExports,
+    reExports,
+    inlineExports,
+    functions,
+    classes,
+    localImportRoots: localRoots.size,
+  }
+}
+
 /**
  * Every module specifier a file IMPORTS by grammar — `import … from`, `export … from`, `import('x')`.
  * Type-only imports are INCLUDED: erased at runtime, they still couple source to a path (this is the
