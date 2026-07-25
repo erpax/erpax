@@ -39,9 +39,12 @@ describe('permission predicates', () => {
     name: 'owner',
     binding: 'document',
     scopedCollection: null,
+    // Payload stores the polymorphic relationship id as the DB scalar; D1/SQLite hand it back as a
+    // string. The assertions below query document id 42, so the stored id IS 42 (as its string form) —
+    // an opaque 'post-42' could never equal numeric 42, and matching it would be an RBAC over-grant.
     resource: {
       relationTo: 'posts',
-      value: 'post-42',
+      value: '42',
     },
   }
 

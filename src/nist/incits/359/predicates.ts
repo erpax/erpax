@@ -19,13 +19,11 @@ function tupleFromDocument(resource: RoleDefinition['resource']): {
 } | null {
   if (!resource || typeof resource !== 'object' || !('relationTo' in resource)) return null
   const r = resource as { relationTo: string; value: unknown }
-  const v = r.value
-  const id =
-    typeof v === 'number'
-      ? v
-      : v && typeof v === 'object' && 'id' in v && typeof (v as { id: unknown }).id === 'number'
-        ? (v as { id: number }).id
-        : null
+  // Payload polymorphic relationship value: a scalar id (number OR string, per the DB's id type) or
+  // a populated doc `{ id }`. Coerce a numeric string — D1/SQLite hand back string ids — so a document
+  // binding stored as `value: '42'` still matches a query for id 42.
+  const raw = r.value && typeof r.value === 'object' && 'id' in r.value ? (r.value as { id: unknown }).id : r.value
+  const id = typeof raw === 'number' ? raw : typeof raw === 'string' && raw.trim() !== '' ? Number(raw) : null
   if (id == null || !Number.isFinite(id)) return null
   return { collection: r.relationTo as ScopeResourceCollection, id }
 }
