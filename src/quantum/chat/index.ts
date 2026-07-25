@@ -9,6 +9,9 @@
  * @see ../../chat -- ../../uuid/matrix (merge) -- ../communication -- ./SKILL.md
  */
 import { merge, toUuid } from '@/uuid/matrix'
+import { A432, NOTES } from '@/signal'
+import { HORO_DIGITS, type HoroStep } from '@/horo'
+import { intervalRatio, tenneyHeight } from '@/harmony'
 import {
   sealSecret,
   decryptIfUuid,
@@ -87,6 +90,39 @@ export const referralsFor = (states: number): number => (states > 0 ? Math.ceil(
 
 /** Distribute an amount equally across a cross's states — the same proportion down to each state/bit. */
 export const distributeToStates = (amount: number, referrals: number): number => amount / crossStates(referrals)
+
+// ── the quantum composer: content folded into music ──────────────────────────
+// A content-uuid is a fixed byte-string; the corpus already tunes to A432 with 5-limit
+// horo-ring degrees. So a composition is DETERMINISTIC sonification: each hex nibble picks
+// a horo degree, pitched A432 × its ratio — same content ⇒ same melody (content-addressed
+// music). HONEST BOUNDARY: a mapping content→pitch via A432/horo, NOT a claim of aesthetic
+// composition; "quantum" = content-addressed + deterministic, not spacetime physics.
+
+export interface Note {
+  readonly horo: HoroStep
+  readonly freq: number
+  readonly ratio: readonly [number, number]
+}
+
+export interface Composition {
+  readonly notes: readonly Note[]
+  readonly rootFreq: number
+  /** mean Tenney height of consecutive intervals — lower is more consonant (the piece's texture). */
+  readonly meanTenney: number
+}
+
+/** Fold a content-uuid into a deterministic A432 melody — the quantum composer. */
+export function compose(uuid: string): Composition {
+  const hex = uuid.replace(/-/g, '')
+  const notes: Note[] = [...hex].map((ch) => {
+    const horo = HORO_DIGITS[parseInt(ch, 16) % HORO_DIGITS.length]! as HoroStep
+    const [n, d] = NOTES[horo].ratio
+    return { horo, freq: (A432 * n) / d, ratio: [n, d] as const }
+  })
+  let t = 0
+  for (let i = 1; i < notes.length; i++) t += tenneyHeight(intervalRatio(notes[i - 1]!.horo, notes[i]!.horo))
+  return { notes, rootFreq: A432, meanTenney: notes.length > 1 ? t / (notes.length - 1) : 0 }
+}
 
 // ── voice & video in chat — one modality-tagged path ─────────────────────────
 // A voice or video message is MEDIA that carries a TRANSCRIPT (speech-to-text) or

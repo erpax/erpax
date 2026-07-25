@@ -9,10 +9,12 @@ import {
   accessibleByStandard, chatInvokeByStandard,
   crackTheorem, improveClaim, chatMcpFold,
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
+  compose,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
 import { requiredAccessTier, tierRank } from '@/access/standard'
+import { A432 } from '@/signal'
 
 // message-uuids ARE content-uuids (hex uuid format), as merge requires.
 const U1 = '11111111-1111-8111-8111-111111111111'
@@ -251,5 +253,28 @@ describe('quantum/chat — 1 bit per referral direction: the dyadic state space 
   it('distributes an amount equally across the states — the same proportion down to the bit', () => {
     expect(distributeToStates(1024, 10)).toBe(1) // 1024 / 2^10 = 1 per state
     expect(distributeToStates(16, 4)).toBe(1) // the real 4-key cross: 16/16 = 1 per state
+  })
+})
+
+describe('quantum/chat — compose: content folded into deterministic A432 music', () => {
+  const u = '19ea2d27-d476-872a-a19c-792e598a62f6'
+  it('same content ⇒ same composition (content-addressed music)', () => {
+    const a = compose(u)
+    expect(compose(u).notes.map((n) => n.freq)).toEqual(a.notes.map((n) => n.freq))
+    expect(a.rootFreq).toBe(A432)
+    expect(a.notes.length).toBe(32) // one note per hex nibble of the uuid
+  })
+  it('different content ⇒ different melody', () => {
+    const a = compose(u).notes.map((n) => n.horo).join(',')
+    const b = compose('00000000-0000-8000-8000-000000000000').notes.map((n) => n.horo).join(',')
+    expect(a).not.toBe(b)
+  })
+  it('every note is A432 × a 5-limit ratio, positive; texture is measured (mean Tenney ≥ 0)', () => {
+    const c = compose(u)
+    for (const n of c.notes) {
+      expect(n.freq).toBeGreaterThan(0)
+      expect(n.freq).toBeCloseTo((A432 * n.ratio[0]) / n.ratio[1], 6)
+    }
+    expect(c.meanTenney).toBeGreaterThanOrEqual(0)
   })
 })
