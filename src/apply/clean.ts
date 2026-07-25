@@ -391,6 +391,56 @@ export function loadCleanManifest(cwd: string = process.cwd()): CleanManifest | 
   return JSON.parse(readFileSync(path, 'utf8')) as CleanManifest
 }
 
+/** One axis of corpus cleanliness, projected for the Payload admin. */
+export interface DryCleanHealthAxis {
+  readonly axis: string
+  readonly count: number
+  readonly baseline: number
+  readonly overBaseline: number
+  readonly clean: boolean
+}
+
+/** The corpus's own cleanliness, projected for Payload — served read-only, no schema, no migration. */
+export interface DryCleanHealth {
+  readonly cycleId: string
+  readonly completedAt: string
+  readonly fingerprint: string
+  readonly ratchetOk: boolean
+  readonly totalOverBaseline: number
+  readonly clean: boolean
+  readonly axes: readonly DryCleanHealthAxis[]
+}
+
+/**
+ * Wire dry-clean INTO Payload the gate-safe way: a pure projection of the sealed manifest that a Payload
+ * global/custom-endpoint serves READ-ONLY, so the ERP admin shows the corpus's own health (per-axis debt vs
+ * baseline, ratchet status) without a schema collection or a greenfield migration. The manifest is emit-only
+ * (recomputed by `pnpm erpax clean`), so this reads quantum memory and never re-scans — the corpus reporting
+ * on itself inside its own admin. The full "all means" version (a collection + a refresh job + admin cells) is
+ * a deliberate schema fold; this is the projection every one of those means renders.
+ */
+export function dryCleanHealth(cwd: string = process.cwd()): DryCleanHealth | null {
+  const m = loadCleanManifest(cwd)
+  if (!m) return null
+  const axes: DryCleanHealthAxis[] = Object.entries(m.axes).map(([axis, a]) => ({
+    axis,
+    count: a.count,
+    baseline: a.baseline,
+    overBaseline: a.overBaseline,
+    clean: a.overBaseline === 0,
+  }))
+  const totalOverBaseline = axes.reduce((sum, a) => sum + a.overBaseline, 0)
+  return {
+    cycleId: m.cycleId,
+    completedAt: m.completedAt,
+    fingerprint: m.fingerprint,
+    ratchetOk: m.efficiency?.ratchetOk ?? true,
+    totalOverBaseline,
+    clean: totalOverBaseline === 0,
+    axes,
+  }
+}
+
 export function persistCleanManifest(manifest: CleanManifest, cwd: string = process.cwd()): void {
   const path = cleanManifestPath(cwd)
   const dir = dirname(path)

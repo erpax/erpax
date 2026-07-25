@@ -128,3 +128,24 @@ describe('efficiency ratchet — mock improvement after clean', () => {
     expect(v.improvements.some((i) => i.metric === 'violationCount')).toBe(true)
   })
 })
+
+import { dryCleanHealth } from './clean'
+
+describe('dryCleanHealth — the corpus health projected for Payload (read-only, no schema)', () => {
+  it('projects the committed manifest into per-axis health with totals + ratchet status', () => {
+    const h = dryCleanHealth(process.cwd())
+    expect(h).not.toBeNull()
+    if (!h) return
+    expect(h.cycleId).toMatch(/^[0-9a-f]+$/)
+    expect(h.axes.length).toBeGreaterThan(0)
+    for (const a of h.axes) {
+      expect(typeof a.count).toBe('number')
+      expect(a.clean).toBe(a.overBaseline === 0) // clean iff at/under baseline
+    }
+    expect(h.totalOverBaseline).toBe(h.axes.reduce((s, a) => s + a.overBaseline, 0))
+    expect(h.clean).toBe(h.totalOverBaseline === 0)
+  })
+  it('returns null when there is no manifest (nothing to render — honest empty)', () => {
+    expect(dryCleanHealth(mkdtempSync(join(tmpdir(), 'erpax-nohealth-')))).toBeNull()
+  })
+})
