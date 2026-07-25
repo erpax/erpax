@@ -265,6 +265,45 @@ export function foundations(graph: readonly Theorem[] = DECODED): readonly strin
   return [...f].sort()
 }
 
+// ── map a standard to the theorem it rests on ────────────────────────────────
+// A standard cited in prose and a theorem proven in code are the SAME matter seen
+// two ways (the form·code·proof trinity). Some standards rest on a DECODED base
+// theorem; the rest are enforced by a GATE (declared conformance), not a base
+// theorem. Mapping them makes a standard addressable as CODE (its theorem/gate)
+// AND as PROSE (its SKILL) — so code↔prose is bidirectional over the standards too.
+// DECLARED (the arguable seam, in the open — extend it, never infer it).
+const STANDARD_THEOREM: readonly (readonly [RegExp, string])[] = [
+  [/RFC.?9562|content.?uuid|content.?address|RFC.?8785|JCS/i, 'content-addressing: same content ⇒ same address'],
+  [/testability|refutab|Popper|25010.*5\.5|ISO.?19011/i, 'consistency ≠ soundness: a system cannot certify its own truth (Gödel/Tarski)'],
+  [/consensus|quorum|BFT|fault.?toleran|2f\+1/i, '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'],
+  [/efficiency|performance|25010.*5\.4/i, 'efficiency = output / cost'],
+  [/robust|five|quintic|resilien/i, 'five is the threshold where linear/solvable/periodic breaks and robustness begins'],
+]
+
+export interface StandardTheorem {
+  readonly standard: string
+  /** the base theorem it rests on, or null when it is gate-enforced conformance (no base theorem). */
+  readonly theorem: string | null
+  /** true iff the mapped theorem is present in the graph (a real base theorem, not a dangling name). */
+  readonly proven: boolean
+  readonly kind: 'theorem' | 'declared-conformance'
+}
+
+/**
+ * Map a standard to the theorem it rests on — the bridge that makes standard↔code↔prose one fold.
+ * A hit lands on a DECODED base theorem (proven in code); a miss is declared conformance a GATE
+ * enforces, not a base theorem. HONEST BOUNDARY: the map is DECLARED (arguable), and most ISO
+ * quality standards are gate-enforced, not reducible to a single base theorem.
+ */
+export function standardToTheorem(standard: string, graph: readonly Theorem[] = DECODED): StandardTheorem {
+  for (const [re, claim] of STANDARD_THEOREM) {
+    if (re.test(standard)) {
+      return { standard, theorem: claim, proven: graph.some((t) => t.claim === claim), kind: 'theorem' }
+    }
+  }
+  return { standard, theorem: null, proven: false, kind: 'declared-conformance' }
+}
+
 /**
  * PROOF CLASS — how a claim is verified, learned from ceccec.psg.bg/theorems' proof taxonomy.
  * Not WHETHER it grounds (reduce answers that) but by WHICH strategy, so the corpus knows the

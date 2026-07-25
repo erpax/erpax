@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, unboundedCorpusTests, assertTestsBounded, DECODED, type Theorem } from './index'
+import { reduce, restsOnAuthority, consensusProof, fixpoint, groundedLeads, refusedOverlays, foundations, dimensionSpread, waves, wavesOf, waveShape, proofClassOf, proofClassCensus, proofClassOfTest, unboundedCorpusTests, assertTestsBounded, standardToTheorem, DECODED, type Theorem } from './index'
 
 // "How do you know I am right — maybe I am mistaken. All is theorem of theorems." A claim is trusted only by
 // reducing to composed base theorems; authority (who said it) is never a step. A bare assertion, a cycle, or a
@@ -283,5 +283,29 @@ describe('DECODED — the session leads, saved and reduced (complete 10D)', () =
       expect(() => assertTestsBounded(process.cwd(), live.length)).not.toThrow()
       expect(() => assertTestsBounded(process.cwd(), live.length - 1)).toThrow(/unbounded-corpus/)
     })
+  })
+})
+
+describe('theorem — standardToTheorem: standard↔theorem↔code↔prose is one fold', () => {
+  it('a standard that rests on a base theorem maps to it and is proven in the graph', () => {
+    const rfc = standardToTheorem('RFC 9562 §5.8 content-uuid')
+    expect(rfc.theorem).toMatch(/content-addressing/)
+    expect(rfc.proven).toBe(true) // the base theorem is present in DECODED
+    expect(rfc.kind).toBe('theorem')
+
+    expect(standardToTheorem('ISO/IEC 25010 §5.5 testability').theorem).toMatch(/Gödel\/Tarski/)
+    expect(standardToTheorem('BFT consensus quorum').theorem).toMatch(/2f\+1/)
+  })
+
+  it('a gate-enforced standard is DECLARED conformance — honestly not a base theorem', () => {
+    const compat = standardToTheorem('ISO/IEC 25010 §5.3 compatibility')
+    expect(compat.theorem).toBeNull()
+    expect(compat.proven).toBe(false)
+    expect(compat.kind).toBe('declared-conformance')
+  })
+
+  it('the mapped theorem is a REAL claim in DECODED (no dangling reference)', () => {
+    const t = standardToTheorem('RFC 8785 JCS')
+    expect(DECODED.some((d) => d.claim === t.theorem)).toBe(true)
   })
 })
