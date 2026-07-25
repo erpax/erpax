@@ -318,6 +318,34 @@ export interface StandardAccess {
   readonly requiredRank: (standards: readonly string[]) => number
 }
 
+/** Raised when an agent reaches a tool OUTSIDE the standards-gated chat surface. */
+export class DefaultToChatViolation extends Error {
+  constructor(reason: string) {
+    super(`default-to-chat: ${reason}`)
+    this.name = 'DefaultToChatViolation'
+  }
+}
+
+/**
+ * ENFORCE default-to-chat for ANY agent / AI model: a law is obeyed only when a gate blocks its
+ * violation. A tool may be reached ONLY through the standards-gated chat surface
+ * (accessibleByStandard) — a raw reach (a tool absent from the gated set, or above the party's
+ * tier) throws. This turns the standing "default is in chat" directive from prose into a GATE:
+ * an agent cannot bypass the chat to touch a tool.
+ */
+export function assertDefaultsToChat(
+  requestedTool: string,
+  tools: readonly ChatToolRef[],
+  access: StandardAccess,
+): void {
+  const gated = accessibleByStandard(tools, access.partyRank, access.requiredRank).map((t) => t.name)
+  if (!gated.includes(requestedTool)) {
+    throw new DefaultToChatViolation(
+      `'${requestedTool}' reached outside the standards-gated chat surface — route it through chatInvokeByStandard`,
+    )
+  }
+}
+
 /**
  * Invoke a tool ONLY when the party's tier clears the tool's standards-required tier;
  * otherwise fold an auditable refusal into the thread (no invoke). This is the legal

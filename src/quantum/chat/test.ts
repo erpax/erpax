@@ -6,7 +6,7 @@ import {
   sealChatMessage, openChatMessage,
   chatToolNames, chatInvoke,
   deepResearch,
-  accessibleByStandard, chatInvokeByStandard,
+  accessibleByStandard, chatInvokeByStandard, assertDefaultsToChat, DefaultToChatViolation,
   crackTheorem, improveClaim, chatMcpFold,
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
   compose, superpose,
@@ -181,6 +181,16 @@ describe('quantum/chat — fuse all accessible BY STANDARD (the legal-surface ga
     expect(no.refused).toBe(true)
     expect(no.result).toBeUndefined()
     expect(no.thread).not.toBe(ok.thread) // the refusal is folded into the thread (auditable)
+  })
+
+  it('ENFORCED: default-to-chat blocks reaching a tool outside the gated surface (law, not prose)', () => {
+    const access = { partyRank: tierRank('role-scoped'), requiredRank }
+    // erpax.ledger.post (IFRS role-scoped) is in the gated set at role-scoped — allowed
+    expect(() => assertDefaultsToChat('erpax.ledger.post', tools, access)).not.toThrow()
+    // erpax.fiscal.void (auditor-grade) is ABOVE tier — reaching it raw is a violation
+    expect(() => assertDefaultsToChat('erpax.fiscal.void', tools, access)).toThrow(DefaultToChatViolation)
+    // a tool not on the surface at all — also blocked
+    expect(() => assertDefaultsToChat('erpax.secret.exfiltrate', tools, access)).toThrow(/outside the standards-gated chat surface/)
   })
 })
 
