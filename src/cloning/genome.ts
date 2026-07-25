@@ -117,7 +117,7 @@ export function collectGenome(opts: CollectGenomeOptions): GenomeBundle {
       requiredChainsCount: r.requiredChains.length,
       invariant: r.invariant,
     })),
-    mcpTools: erpaxMcpTools.map((t) => ({
+    mcpTools: erpaxMcpTools().map((t) => ({
       name: t.name,
       description: t.description,
     })),
