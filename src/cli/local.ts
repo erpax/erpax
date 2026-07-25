@@ -134,12 +134,12 @@ export function runTestWaves(args: readonly string[] = []): number {
   const force = args.includes('--all')
   const plan = force ? { changed: all, covered: [] as string[] } : planSuites(all, cwd)
   console.log(`test waves — roster ${all.length} · covered by receipts ${plan.covered.length} · to run ${plan.changed.length}${force ? ' (--all)' : ''}`)
-  // 6: under isolate:false (shared module registry — the ~6× speedup) a payload-DENSE batch
-  // (config/* · confirm/* · consistency/* · consent/* — all boot payload AND write D1) lets D1
-  // state accumulate across files with no per-file teardown, so late suites scan more rows and
-  // the batch crawls past the 15-min bound. Smaller batches cap the accumulation; light batches
-  // just seal in more passes — same total, every batch completes.
-  const BATCH = 6
+  // 12 under isolate:false (shared module registry — the ~6× speedup). The con* region's
+  // 15-min timeouts were NEVER batch size or D1 accumulation (both refuted by bisection) —
+  // they were ONE suite hanging on an unbounded execSync (confirm/test), now fixed. A hang
+  // times out any batch size; batch size only caps aggregate load, and 12 sealed green under
+  // isolate:false before the hang. Kept at 12 as honest headroom (fewer passes, same total).
+  const BATCH = 12
   for (let b = 0; b * BATCH < plan.changed.length; b++) {
     const batch = plan.changed.slice(b * BATCH, (b + 1) * BATCH)
     const label = 'test:wave'
