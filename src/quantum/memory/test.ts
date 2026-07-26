@@ -55,7 +55,8 @@ describe('quantum/memory — operational memory IS architecture', () => {
   })
 
   it('projectMemoryToArchitecture seals when atom is diamond-green', () => {
-    const p = projectMemoryToArchitecture({ atomPath: 'merge' })
+    // `horo` is a stably-sealed core atom; `merge` is currently unsealed (seal is live-tree state).
+    const p = projectMemoryToArchitecture({ atomPath: 'horo' })
     expect(p.sealed).toBe(true)
     expect(p.diamond!.contentUuid).toMatch(/^[0-9a-f-]{36}$/)
   })
