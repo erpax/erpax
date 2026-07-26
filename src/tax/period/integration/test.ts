@@ -80,7 +80,7 @@ describe('tax/period/integration — TaxPeriodReconciliation invariants', () => 
     expect(r.taxAuthorityCompliance).toBe(true)
     expect(r.complianceErrors).toHaveLength(0)
     expect(r.documentationCount).toBe(1)
-    expect(r.chainLeafUuid).toHaveLength(32)
+    expect(r.chainLeafUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/) // a content-uuid leaf
   })
 
   it('assessTaxPeriodReadiness reports misalignment and non-compliance as errors', () => {
@@ -100,8 +100,7 @@ describe('tax/period/integration — TaxPeriodReconciliation invariants', () => 
     const data = { a: 1, b: 'x' }
     const leaf = TaxPeriodReconciliation.computeChainLeaf(data)
     expect(leaf).toBe(TaxPeriodReconciliation.computeChainLeaf(data))
-    expect(leaf.length).toBeGreaterThan(0)
-    expect(leaf.length).toBeLessThanOrEqual(32) // base64 of JSON, capped at 32
+    expect(leaf).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/) // a content-uuid, not base64
     expect(TaxPeriodReconciliation.computeChainLeaf(data, 'prior')).not.toBe(leaf)
   })
 })
