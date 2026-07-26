@@ -697,7 +697,7 @@ class BankReconciliationService {
       entryDate: new Date(),
       description: `Bank adjustment (${kind}): ${description}`,
       lines,
-      sourceType: 'bank_adjustment',
+      sourceType: 'bank_reconciliation',
       sourceId: sourceBankTransactionId ?? uuid(),
       sourceEvent: 'bank:adjustment:posted',
       userId,

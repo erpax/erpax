@@ -28,7 +28,7 @@
  * @see src/services/bank-reconciliation.service.ts
  */
 
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 import { bankReconciliationService } from '@/bank/reconciliation/service'
 import { journalEntryService } from '@/journal/entry/service'
 import {
@@ -57,7 +57,34 @@ describe('Bank reconciliation — canonical IAS-7 surface', () => {
   })
 
   describe('postBankAdjustment — Category-2 JE shapes', () => {
-    it('bank_fee posts Dr Bank Fee Expense / Cr Cash', async () => {
+    // The JE the service CONSTRUCTS is the unit under test — not the collection's relationship
+    // validation. glAccount is a required relationship (a bare role never validates without a seeded
+    // chart of accounts), so we mock the JE service and assert on the captured request, the proven
+    // pattern in multi/currency/service. accountId round-trips as the caller role (pre-resolution).
+    let captured: Map<string, { id: string; status: string; sourceType?: string; lines: Array<{ accountId: string; debit: number; credit: number; description?: string }> }>
+    beforeEach(() => {
+      captured = new Map()
+      vi.spyOn(journalEntryService, 'createEntry').mockImplementation(async (_t, req) => {
+        const id = `je-${captured.size + 1}`
+        const entry = {
+          id,
+          status: 'draft',
+          sourceType: req.sourceType,
+          lines: req.lines.map((l) => ({ accountId: l.accountId, debit: l.debit ?? 0, credit: l.credit ?? 0, description: l.description })),
+        }
+        captured.set(id, entry)
+        return entry as never
+      })
+      vi.spyOn(journalEntryService, 'postEntry').mockImplementation(async (_t, id) => {
+        const e = captured.get(id)
+        if (e) e.status = 'posted'
+        return e as never
+      })
+      vi.spyOn(journalEntryService, 'getEntry').mockImplementation(async (_t, id) => (captured.get(id) ?? null) as never)
+    })
+    afterEach(() => vi.restoreAllMocks())
+
+    it('bank_fee posts Dr Bank Fee Expense / Cr Cash (sourceType bank_reconciliation)', async () => {
       const { journalEntryId } = await bankReconciliationService.postBankAdjustment(
         tenant,
         user,
@@ -65,6 +92,7 @@ describe('Bank reconciliation — canonical IAS-7 surface', () => {
       )
       const entry = await journalEntryService.getEntry(tenant, journalEntryId)
       expect(entry).toBeDefined()
+      expect(entry?.sourceType).toBe('bank_reconciliation') // valid JE enum, not the invalid 'bank_adjustment'
       expect(entry?.lines).toHaveLength(2)
       const expense = entry?.lines.find((l) => l.accountId === 'bank_fee_expense')
       const cash = entry?.lines.find((l) => l.accountId === 'cash')
