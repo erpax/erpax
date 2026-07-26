@@ -1,87 +1,113 @@
 import { defineConfig, configDefaults } from 'vitest/config'
 import react from '@vitejs/plugin-react'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { join, relative, sep } from 'node:path'
 
 /**
- * Vitest Configuration - Strict Payload Compliance
+ * Vitest Configuration — pure/payload PROJECT SPLIT.
  *
- * Configuration follows Payload CMS testing best practices:
- * - Single-threaded execution for SQLite/D1 consistency
- * - Proper test isolation with globals: false
- * - Explicit teardown timeout to prevent hanging
- * - Node environment for backend integration tests
+ * WHY the split (the magnitudes fix the single-project config's own comment named): only ~80 of the
+ * ~1478 co-located suites actually boot Payload (a collection, a service, `req.payload`, getPayload).
+ * The other ~1400 are PURE atom tests — content-uuid math, folds, ratchet counts, string ops — that
+ * need no DB. Running all 1478 under one `payload-integration` project with `isolate:true` +
+ * `fileParallelism:false` made every pure test pay the isolation/boot overhead, the heap accumulated
+ * across the roster, the grind thrashed / OOMed, and a stray integration watcher could hang the batch.
  *
- * @see https://payloadcms.com/docs/test/overview
+ * The split routes each suite by CONTENT (computed at load, never a hand-list): a suite that references
+ * the Payload runtime runs in `payload-integration` (globalSetup boots once, isolate:true, serial for
+ * D1 safety); everything else runs in `unit` (no boot, no setup, isolate:false, parallel — fast).
+ *
+ * The vitest config is NOT part of a suite's receipt closure (gate/receipt hashes file + imports +
+ * schema, not this file), so this split does not invalidate a single sealed receipt.
+ *
+ * @see https://payloadcms.com/docs/test/overview · src/gate/receipt (the closure hash)
  */
+
+// ── Classify suites by whether they touch the Payload runtime ────────────────
+const ROOT = process.cwd()
+const TEST_RE = /(^|[/\\])(test|.*\.test)\.tsx?$/
+/** A suite needs the Payload boot if it references the runtime (broad — err toward integration so a
+ *  real integration suite is never starved of its DB; a pure suite mis-flagged only runs slower). */
+const NEEDS_PAYLOAD =
+  /getPayload|req\.payload|from ['"]payload['"]|@\/payload\b|createLocalReq|loginAsTestUser|@\/collections\b|initTestPayload|initPayload|\.db\(\)|payloadInstance|getTestPayload|bootTestPayload/
+const walk = (dir: string, acc: string[] = []): string[] => {
+  let entries: string[]
+  try {
+    entries = readdirSync(dir)
+  } catch {
+    return acc
+  }
+  for (const e of entries) {
+    if (e === 'node_modules' || e === 'skills' || e.startsWith('.')) continue
+    const p = join(dir, e)
+    if (statSync(p).isDirectory()) walk(p, acc)
+    else if (TEST_RE.test(e)) acc.push(relative(ROOT, p).split(sep).join('/'))
+  }
+  return acc
+}
+const allSuites = walk(join(ROOT, 'src'))
+const integration: string[] = []
+const unit: string[] = []
+for (const s of allSuites) {
+  try {
+    ;(NEEDS_PAYLOAD.test(readFileSync(join(ROOT, s), 'utf8')) ? integration : unit).push(s)
+  } catch {
+    integration.push(s) // unreadable → run in the safe (booted) project
+  }
+}
+
+const shared = {
+  environment: 'node' as const,
+  globals: false,
+  clearMocks: true,
+  restoreMocks: true,
+  server: { deps: { external: [/[/\\]skills\.index(?:\.ts)?$/] } },
+  exclude: [...configDefaults.exclude, 'src/skills/**'],
+}
+
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    tsconfigPaths: true,
-  },
-  // skills.index.ts is ~80MB of inline JSON — Vite/SWC transform blows up with
-  // "Failed to convert rust String into napi string". Node native ESM import works;
-  // externalize so Vitest loads it without re-parsing the giant literal.
-  ssr: {
-    external: [/[/\\]skills\.index(?:\.ts)?$/],
-  },
+  resolve: { tsconfigPaths: true },
+  // skills.index.ts is ~80MB of inline JSON — Vite/SWC transform blows up; load it via native ESM.
+  ssr: { external: [/[/\\]skills\.index(?:\.ts)?$/] },
   test: {
-    server: {
-      deps: {
-        external: [/[/\\]skills\.index(?:\.ts)?$/],
+    projects: [
+      {
+        plugins: [react()],
+        resolve: { tsconfigPaths: true },
+        test: {
+          ...shared,
+          name: 'unit',
+          include: unit.length ? unit : ['src/**/__no_pure_suites__.test.ts'],
+          environmentMatchGlobs: [['**/*.test.tsx', 'jsdom']],
+          // Pure atoms: no Payload boot, no setup. Isolation is unnecessary (no shared DB/heap
+          // state) so run parallel and non-isolated — the ~1400 pure suites finish in seconds.
+          isolate: false,
+          fileParallelism: true,
+          testTimeout: 30_000,
+          hookTimeout: 30_000,
+        },
       },
-    },
-    name: 'payload-integration',
-    environment: 'node',
-    environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],
-    setupFiles: ['./vitest.setup.ts'],
-    globalSetup: ['./vitest.globalsetup.ts'],
-    include: [
-      // CCCCC-prep (2026-05-11): every spec is now co-located next to
-      // its source file as `<Name>.test.ts`. The legacy `tests/int/**`
-      // + `tests/standards/**` globs have been retired — those trees
-      // are empty (moved to tests/_attic/ for the local deletion pass).
-      // Playwright `*.e2e.spec.ts` lives in tests/e2e/ and runs through
-      // playwright.config, NOT vitest.
-      // The architecture's test slot: one `test.ts` per folder (a bare `test.ts`
-      // is NOT matched by `*.test.ts`, so it needs its own glob). The `*.test.ts`
-      // globs stay for folders not yet merged-by-extension to `test.ts`.
-      'src/**/test.ts',
-      'src/**/test.tsx',
-      'src/**/*.test.ts',
-      'src/**/*.test.tsx',
+      {
+        plugins: [react()],
+        resolve: { tsconfigPaths: true },
+        test: {
+          ...shared,
+          name: 'payload-integration',
+          include: integration.length ? integration : ['src/**/__no_integration_suites__.test.ts'],
+          environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],
+          setupFiles: ['./vitest.setup.ts'],
+          globalSetup: ['./vitest.globalsetup.ts'],
+          // A real Payload + D1 store: serial (D1 lock safety), isolated (no cross-suite state bleed),
+          // long timeouts for the cold boot (~35s) and the 120s beforeAll graph builds.
+          isolate: true,
+          fileParallelism: false,
+          maxConcurrency: 1,
+          teardownTimeout: 10_000,
+          testTimeout: 60_000,
+          hookTimeout: 120_000,
+        },
+      },
     ],
-    // The `src/skills` self-symlink (the .claude→src merge: src/skills → .) aliases
-    // the WHOLE tree, so every test is discovered twice — once via src/skills/… —
-    // and the duplicate payload-integration run collides on the shared D1 store
-    // (e.g. "books a balanced JE" finds the prior run's JE → fails). Exclude the
-    // alias so each test runs exactly once. Keep vitest's own defaults.
-    exclude: [...configDefaults.exclude, 'src/skills/**'],
-    // Disable globals to enforce explicit imports (stricter, clearer tests)
-    globals: false,
-    // Run single-threaded to prevent D1/SQLite lock contention
-    fileParallelism: false,
-    // isolate:true — reverted from an isolate:false speed experiment. isolate:false shared the
-    // module registry per batch (~6× faster) BUT shared the HEAP too: it accumulated across a
-    // batch, GC thrashed, and later suites crawled (skill-context: 14s alone → >60s in-batch).
-    // The con* 15-min timeouts were NOT isolation — they were one suite hanging on an unbounded
-    // execSync (confirm/test, now fixed). With that fixed, isolate:true is RELIABLE (each suite
-    // fresh, ~14s, batch ~3min, no hangs, no memory accumulation) — reliability wins for the land.
-    // The real magnitudes fix is a pure/payload PROJECT SPLIT (pure suites: no boot, parallel),
-    // a deliberate post-land change, not a global heap-sharing gamble.
-    isolate: true,
-    // Force exit if teardown takes too long (prevents hanging)
-    teardownTimeout: 10_000,
-    // Payload-integration tests boot a real Payload + D1 store per file (~35s cold);
-    // the 5s/10s defaults time out before boot completes. Raise both so a genuine
-    // integration test has room to run (a real hang still fails, just later).
-    // skill/router/upgrade caches buildUpgradeContext in beforeAll(120s); connectFrontmatter
-    // tests inherit 120s per-test overrides — hookTimeout must cover the cold graph build.
-    testTimeout: 60_000,
-    hookTimeout: 120_000,
-    // Fail tests that retry too many times (strict mode)
-    maxConcurrency: 1,
-    // Clear mocks between tests
-    clearMocks: true,
-    // Restore mocks after each test
-    restoreMocks: true,
   },
 })
