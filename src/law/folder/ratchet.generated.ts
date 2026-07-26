@@ -22,7 +22,7 @@ export const RATCHET_GENERATED = {
     "diamond-membership": 375,
     "import-purity": 0,
     "logic-concentration": 23,
-    "word-matter": 1521,
+    "word-matter": 1707,
     "word-without-code": 2535,
     "word-without-logic": 465,
     "word-incomplete-diamond": 25420,
