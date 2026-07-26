@@ -62,15 +62,17 @@ describe('quantum/memory — operational memory IS architecture', () => {
 })
 
 describe('quantum/memory — autosave at collapse', () => {
+  // Use a reliably-sealed atom: `merge` is currently unsealed (an atom's seal is live-tree state
+  // that drifts), so pin the test to a stable core gate atom instead of a fragile hardcoded one.
   it('autosaveAtCollapse persists sealed atoms only', () => {
     const lattice = emptySessionLattice()
-    const saved = autosaveAtCollapse(lattice, 'merge', 'cursor-1')
+    const saved = autosaveAtCollapse(lattice, 'horo', 'cursor-1')
     expect(saved.saved).toBe(true)
-    expect(saved.artifact!.atomPath).toBe('merge')
+    expect(saved.artifact!.atomPath).toBe('horo')
   })
 
   it('isSealedDiamond gates autosave', () => {
-    expect(isSealedDiamond('merge')).toBe(true)
+    expect(isSealedDiamond('horo')).toBe(true)
     expect(isSealedDiamond('this/path/does/not/exist')).toBe(false)
   })
 })
