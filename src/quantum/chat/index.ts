@@ -480,7 +480,7 @@ export async function deepResearch(
   opts?: { depth?: number },
 ): Promise<DeepResearchResult> {
   const depth = Math.max(1, opts?.depth ?? 3)
-  let messageUuids = [...seed]
+  let messageUuids: readonly string[] = [...seed]
   const findings: Finding[] = []
   const asked = new Set<string>()
   let frontier = questions.filter((q) => (asked.has(q) ? false : (asked.add(q), true)))
@@ -536,7 +536,7 @@ export async function crackTheorem(
   readonly messageUuids: readonly string[]
 }> {
   const results = await Promise.all(probes.map(async (p) => ({ probe: p, ...(await probe(p)) })))
-  let messageUuids = [...seed]
+  let messageUuids: readonly string[] = [...seed]
   const cracks: TheoremCrack[] = []
   for (const r of results) {
     if (r.cracked) {
