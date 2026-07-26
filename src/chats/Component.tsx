@@ -34,13 +34,14 @@ export interface ChatProps {
 }
 
 export function Chat(props: ChatProps): React.JSX.Element {
+  const { subscribe } = props // destructure so the effect depends on the specific prop, not all of props
   const [live, setLive] = useState<readonly ChatUiMessage[]>(props.messages)
   const [draft, setDraft] = useState('')
 
   useEffect(() => {
-    if (!props.subscribe) return
-    return props.subscribe((m) => setLive((prev) => [...prev, m])) // realtime fuse
-  }, [props.subscribe])
+    if (!subscribe) return
+    return subscribe((m) => setLive((prev) => [...prev, m])) // realtime fuse
+  }, [subscribe])
 
   return (
     <div className="erpax-chat">
