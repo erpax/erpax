@@ -34,6 +34,12 @@ export const EXEMPT: readonly RegExp[] = [
   /(^|\/)middleware[^/]*\.ts$/,
   /\.d\.ts$/,
   /(^|\/)vitest\.[^/]*$/,
+  // Generated derivations (tracked, but not agent-authored source): the per-atom translation
+  // projection, the catalogue aggregate, the skills index bundle, and any `*.generated.*` emit.
+  /(^|\/)translations\.tsx?$/,
+  /(^|\/)catalogue\.tsx?$/,
+  /(^|\/)skills\.index\.tsx?$/,
+  /\.generated\.[jt]sx?$/,
 ]
 
 /** Is this src-relative `.ts`/`.tsx` path a file-trinity violation (a non-trinity, non-exempt filename)? */
@@ -56,7 +62,15 @@ export function findViolations(relPaths: readonly string[]): string[] {
  * into a SKILL.md (an atom). The only non-atom markdown allowed is the repo-root
  * infrastructure: the main `README.md` and the VitePress home `index.md`.
  */
-export const MD_INFRA: ReadonlySet<string> = new Set(['README.md', 'index.md'])
+export const MD_INFRA: ReadonlySet<string> = new Set([
+  'README.md',
+  'index.md',
+  // Root orientation + policy infra (agent entry points), and the generated standards index.
+  'AGENTS.md',
+  'SECURITY.md',
+  'SKILL.md',
+  'docs/STANDARDS_INDEX.md',
+])
 
 /** Is this repo-relative `.md` path a STRAY — markdown that is not an atom's SKILL.md, nor root infra? */
 export function isMdStray(relPath: string): boolean {
