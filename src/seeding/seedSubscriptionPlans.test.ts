@@ -133,7 +133,9 @@ describe('seedSubscriptionPlans', () => {
   it('should create plans with all config properties', async () => {
     const config = createMockConfig()
     mockPayload.find.mockResolvedValue({ docs: [] })
-    mockPayload.create.mockResolvedValueOnce({ id: 'plan-pro', slug: 'pro' })
+    // config has multiple plans; seedSubscriptionPlans reads plan.id for EVERY created doc, so mock a
+    // return for all create calls (not just the first) — mockResolvedValue, not mockResolvedValueOnce.
+    mockPayload.create.mockResolvedValue({ id: 'plan-pro', slug: 'pro' })
 
     await seedSubscriptionPlans(p(mockPayload), config)
 
