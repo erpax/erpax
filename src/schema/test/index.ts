@@ -197,7 +197,9 @@ export const societyConvened = (root: string = process.cwd()): Entropy[] => {
       redirect: 'wire chatBroadcastAfterChange() into the chat collection afterChange — the cross-session agent bus (the breath)',
     })
   }
-  const registered = (readText(join(root, 'src', 'agent', 'bootstrap.ts')).match(/@\/agents\/registered\//g) ?? []).length
+  // Count agents registered via the @/agents/registered BARREL (the import-purity-compliant form the
+  // convention/import ratchet mandates) — not the deep `@/agents/registered/x` path, which purity forbids.
+  const registered = (readText(join(root, 'src', 'agent', 'bootstrap.ts')).match(/@\/agents\/registered\b/g) ?? []).length
   if (registered < 10) {
     out.push({
       kind: 'society-unconvened',
