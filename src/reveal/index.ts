@@ -21,6 +21,8 @@ import {
   UUID_MATRIX_NODES as N,
   UUID_MATRIX_EDGES as E,
   type MatrixNode,
+  neighborsOf,
+  backlinksOf,
 } from '@/uuid/matrix'
 import { merge } from '@/uuid/matrix'
 import { entropy } from '@/entropy'
@@ -103,7 +105,32 @@ export function reveal(): Triad[] {
       }
     }
   }
-  return out.sort((x, y) => (x.key < y.key ? -1 : x.key > y.key ? 1 : 0))
+  // Homonym atoms (366 carry method sub-nodes) split their edges across array positions, and the
+  // triangle enumeration above runs on raw node indices — so a triad can ride a NON-canonical
+  // position whose reciprocity is invisible to the atom-name-keyed public API (neighborsOf keys on
+  // nodeIndexOf, the canonical position). Keep only triads that are mutually bound via that same
+  // public API, so every surfaced triad is a REAL atom-level triangle. Cache per distinct atom.
+  const fwd = new Map<string, Set<string>>()
+  const back = new Map<string, Set<string>>()
+  const nborsOf = (a: string): Set<string> => {
+    let s = fwd.get(a)
+    if (!s) { s = new Set(neighborsOf(a).map((n) => n.atom)); fwd.set(a, s) }
+    return s
+  }
+  const backsOf = (a: string): Set<string> => {
+    let s = back.get(a)
+    if (!s) { s = new Set(backlinksOf(a).map((n) => n.atom)); back.set(a, s) }
+    return s
+  }
+  const mutuallyBound = (a: string, b: string): boolean => nborsOf(a).has(b) && backsOf(a).has(b)
+  const real = out.filter((t) => {
+    const [a, b, c] = t.atoms
+    // distinct atom NAMES: a homonym triangle has three distinct node indices but duplicate names,
+    // which is not a three-atom triangle at the atom level.
+    if (a === b || b === c || a === c) return false
+    return mutuallyBound(a, b) && mutuallyBound(b, c) && mutuallyBound(a, c)
+  })
+  return real.sort((x, y) => (x.key < y.key ? -1 : x.key > y.key ? 1 : 0))
 }
 
 /** How many triads the forge currently reveals. */
