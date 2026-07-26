@@ -281,14 +281,16 @@ describe('readme — prose decode (schema-collision boilerplate vs unique matter
     const cwd = process.cwd()
     // skip only if the real corpus is absent (isolated CI checkout) — never silently pass on drift
     if (!existsSync(join(cwd, 'src', 'sti', 'vocabulary', 'schemaorg.jsonld'))) return
-    const sample = [
-      'abdomen', 'right', 'sold', 'studio', 'unlimited', 'western', // enum vocabulary words
-      'acceleration', 'seek', 'footer', 'sd', 'business', 'format', // class/property component words
-    ]
-    const proven = sample.filter((w) => {
+    // Scan the collision vocabulary (315 boilerplate atoms regenerate corpus-wide) instead of a
+    // fragile hardcoded sample: individual atoms drift to `unique` as they gain curated prose
+    // (correctly KEEP, not regenerable), so a fixed list rots. Early-exit once the ≥10 claim holds.
+    let proven = 0
+    for (const w of [...schemaCollision(cwd).words]) {
       const p = join(cwd, 'src', w, 'SKILL.md')
-      return existsSync(p) && schemaCollisionRegenerable(w, readFileSync(p, 'utf8'), cwd)
-    })
-    expect(proven.length).toBeGreaterThanOrEqual(10)
+      if (existsSync(p) && schemaCollisionRegenerable(w, readFileSync(p, 'utf8'), cwd)) {
+        if (++proven >= 12) break
+      }
+    }
+    expect(proven).toBeGreaterThanOrEqual(10)
   })
 })

@@ -141,12 +141,12 @@ export function pivotFolderStats(models: readonly PivotFolderInput[]): FolderPiv
   const folderCount = models.length
   const tables: PivotTable[] = [
     tableOf('[[seal]]', 'seal', tally(models, (m) => (m.sealed ? 'sealed' : 'unsealed'))),
-    tableOf('[[balance]]', 'balance', tally(models, (m) => (m.statement.balanced ? 'balanced' : 'unbalanced'))),
+    tableOf('[[balance]]', 'balance', tally(models, (m) => (m.statement?.balanced ? 'balanced' : 'unbalanced'))),
     tableOf('[[gravity]]', 'gravity', tally(models, (m) => (gravityHeldOf(m) ? 'held' : 'not-held'))),
     tableOf('folder law / name', 'name', tally(models, (m) => (folderNameValid(m.atomPath) ? 'valid' : 'invalid'))),
     tableOf('folder law / trinity', 'trinity', tally(models, trinityStateOf)),
     tableOf('[[horo]] ring', 'horo', tally(models, horoBucket)),
-    tableOf('typography / bond degree', 'bond-degree', tally(models, (m) => bondBucket(m.typography.bondDegree))),
+    tableOf('typography / bond degree', 'bond-degree', tally(models, (m) => bondBucket(m.typography?.bondDegree ?? 0))),
     // typography/partition removed — the raw first-path-segment is not a basis axis; it
     // dumped ~2600 count-1 rows (one per top-level atom = useless entropy). The closed-basis
     // health axes above (seal · balance · gravity · name · trinity · horo · bond) are the signal.
