@@ -60,7 +60,9 @@ describe('currency/reconciliation — multi-currency period closing', () => {
     // netAmount 200 @ 1.2 with historical = period-end → unrealized 0, but the line exists.
     expect(result.totalUnrealizedGainLoss).toBe(0)
     expect(result.chainLeafUuid).toBeTruthy()
-    expect(result.chainLeafUuid.length).toBeLessThanOrEqual(32)
+    // chainLeaf → merge(...) is a standard dashed v8 content-uuid (36 chars), the corpus-wide
+    // format for the Law 60 audit chain. (The old `≤32` assumed an undashed hex leaf.)
+    expect(result.chainLeafUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
   })
 
   it('records (not throws) a missing exchange rate and surfaces unbalanced currencies', () => {
