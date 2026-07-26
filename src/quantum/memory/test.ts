@@ -37,7 +37,8 @@ describe('quantum/memory — dedup = free (no-cloning)', () => {
 
 describe('quantum/memory — operational memory IS architecture', () => {
   it('operationalMemoryFacet walks a sealed atom', () => {
-    const facet = operationalMemoryFacet('merge')
+    // `horo` is stably sealed; `merge` is currently unsealed (seal is live-tree state).
+    const facet = operationalMemoryFacet('horo')
     expect(facet).not.toBeNull()
     expect(facet!.sealed).toBe(true)
     expect(facet!.horo).toBeGreaterThan(0)
