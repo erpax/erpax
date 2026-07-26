@@ -49,8 +49,12 @@ export function flyMatrix(start: string, maxHops = 2): string[] {
 export function squadron(n: number): string[][] {
   const count = Math.max(1, Math.floor(n))
   const sectors: string[][] = Array.from({ length: count }, () => [])
-  UUID_MATRIX_NODES.forEach((node, i) => {
-    sectors[i % count]!.push(node.atom)
+  // The drone flies ATOMS (flyMatrix/neighborsOf are atom-keyed), and 366 atoms carry
+  // multiple matrix nodes (method/dimension sub-nodes). A clean partition — "every atom
+  // in exactly one sector" — is over DISTINCT atoms, so two drones never recon the same one.
+  const atoms = [...new Set(UUID_MATRIX_NODES.map((node) => node.atom))]
+  atoms.forEach((atom, i) => {
+    sectors[i % count]!.push(atom)
   })
   return sectors
 }

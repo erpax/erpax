@@ -27,17 +27,21 @@ describe('drone flies the matrix — reconnaissance for peace', () => {
   })
 
   it('a squadron partitions the whole matrix — every atom in exactly one sector', () => {
+    // The drone flies ATOMS; 366 atoms carry multiple matrix nodes, so the partition is over
+    // DISTINCT atoms (pin the law, not the node count the matrix happened to have).
+    const distinctAtoms = new Set(UUID_MATRIX_NODES.map((n) => n.atom)).size
     const sectors = squadron(8)
     expect(sectors).toHaveLength(8)
     const covered = sectors.flat()
-    expect(covered).toHaveLength(UUID_MATRIX_NODES.length) // no atom dropped, none doubled
-    expect(new Set(covered).size).toBe(UUID_MATRIX_NODES.length)
+    expect(covered).toHaveLength(distinctAtoms) // no atom dropped, none doubled
+    expect(new Set(covered).size).toBe(distinctAtoms)
   })
 
   it('squadron(0) degenerates to a single drone covering the whole matrix', () => {
+    const distinctAtoms = new Set(UUID_MATRIX_NODES.map((n) => n.atom)).size
     const sectors = squadron(0)
     expect(sectors).toHaveLength(1)
-    expect(sectors[0]).toHaveLength(UUID_MATRIX_NODES.length)
+    expect(sectors[0]).toHaveLength(distinctAtoms)
   })
 
   it('scout reports a sector size and its orphan gaps (the food for the agents)', () => {

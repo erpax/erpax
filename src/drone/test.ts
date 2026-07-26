@@ -23,18 +23,21 @@ describe('drone — reconnaissance over the matrix, never tampering', () => {
   })
 
   it('squadron partitions every matrix atom into n disjoint sectors (parallel coverage)', () => {
+    // Over DISTINCT atoms: 366 atoms carry multiple nodes, and the drone flies atoms.
+    const distinctAtoms = new Set(UUID_MATRIX_NODES.map((n) => n.atom)).size
     const sectors = squadron(4)
     expect(sectors).toHaveLength(4)
     const all = sectors.flat()
     // a clean partition: total count conserved, no atom in two sectors.
-    expect(all).toHaveLength(UUID_MATRIX_NODES.length)
-    expect(new Set(all).size).toBe(UUID_MATRIX_NODES.length)
+    expect(all).toHaveLength(distinctAtoms)
+    expect(new Set(all).size).toBe(distinctAtoms)
   })
 
   it('squadron(n < 1) collapses to a single sector holding the whole matrix', () => {
+    const distinctAtoms = new Set(UUID_MATRIX_NODES.map((n) => n.atom)).size
     const sectors = squadron(0)
     expect(sectors).toHaveLength(1)
-    expect(sectors[0]).toHaveLength(UUID_MATRIX_NODES.length)
+    expect(sectors[0]).toHaveLength(distinctAtoms)
   })
 
   it('scout reports the orphans of a sector — atoms with no backlink (the gaps)', () => {
