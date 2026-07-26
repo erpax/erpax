@@ -77,6 +77,11 @@ const shared = {
   globals: false,
   clearMocks: true,
   restoreMocks: true,
+  // Realtime OFF by default in tests: an enabled watch opens persistent subscribe() connections that
+  // keep Node's event loop alive, so a suite that starts one (e.g. the monitor/violations loop) hangs
+  // vitest teardown ("something prevents the main process from exiting"). Poll-only fallback is unref'd.
+  // A test that needs the enabled path sets process.env.ERPAX_REALTIME in-test.
+  env: { ERPAX_REALTIME: 'off' },
   server: { deps: { external: [/[/\\]skills\.index(?:\.ts)?$/] } },
   exclude: [...configDefaults.exclude, 'src/skills/**'],
 }
