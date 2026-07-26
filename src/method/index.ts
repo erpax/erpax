@@ -17,7 +17,7 @@
  * @see ../diamond — ../atom — ../quantum/boundary — ../convention/exported — ./SKILL.md
  */
 import { readdirSync, statSync, readFileSync } from 'node:fs'
-import { join, relative } from 'node:path'
+import { join, relative, dirname } from 'node:path'
 import { uuid, jcsCanonicalize } from '@/integrity'
 
 const SRC = join(process.cwd(), 'src')
@@ -98,6 +98,19 @@ const isDir = (p: string): boolean => {
   }
 }
 
+/** Resolve a relative module specifier to a concrete file (`.ts` · `.tsx` · `/index.ts`). */
+function resolveModuleFile(fromDir: string, rel: string): string | null {
+  const base = join(fromDir, rel)
+  for (const cand of [base, `${base}.ts`, `${base}.tsx`, join(base, 'index.ts')]) {
+    try {
+      if (statSync(cand).isFile()) return cand
+    } catch {
+      /* try the next spelling */
+    }
+  }
+  return null
+}
+
 /** Walk every `index.ts` barrel under src; derive each exported symbol's diamond path. */
 export function scanMethodPaths(root: string = SRC): MethodDiamond[] {
   const out: MethodDiamond[] = []
@@ -123,11 +136,35 @@ export function scanMethodPaths(root: string = SRC): MethodDiamond[] {
       return
     }
     const relFile = relative(root, barrel).replace(/\\/g, '/')
-    const body = readFileSync(barrel, 'utf8')
-    for (const symbol of parseMethodExports(body)) {
-      if (symbol.startsWith('*:') || symbol === 'default') continue
-      out.push(methodPath(relFile, symbol))
+    // Every export the atom's public face surfaces has an address — including the ones a barrel
+    // re-exports via `export * from './x'`. Follow relative intra-atom stars (bounded, cycle-guarded)
+    // and address their symbols under THIS atom (readme/renderReadme, not readme/compute/renderReadme).
+    const pushed = new Set<string>()
+    const seenFiles = new Set<string>()
+    const collect = (fileBody: string, fromDir: string, depth: number): void => {
+      for (const symbol of parseMethodExports(fileBody)) {
+        if (symbol === 'default') continue
+        if (symbol.startsWith('*:')) {
+          const spec = symbol.slice(2)
+          if (depth >= 6 || !spec.startsWith('.')) continue // relative stars only; never chase a cycle
+          const target = resolveModuleFile(fromDir, spec)
+          if (!target || seenFiles.has(target)) continue
+          seenFiles.add(target)
+          let targetBody: string
+          try {
+            targetBody = readFileSync(target, 'utf8')
+          } catch {
+            continue
+          }
+          collect(targetBody, dirname(target), depth + 1)
+          continue
+        }
+        if (pushed.has(symbol)) continue
+        pushed.add(symbol)
+        out.push(methodPath(relFile, symbol))
+      }
     }
+    collect(readFileSync(barrel, 'utf8'), dir, 0)
   }
   walk(root, '')
   return out.sort((a, b) => a.address.localeCompare(b.address))
