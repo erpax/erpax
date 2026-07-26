@@ -248,7 +248,10 @@ export function caseOf(
   const loc = hasIndex ? countLinesOfCode(indexPath) : 0
   const readmeWords = countReadmeWords(dir)
   const hasTests = existsSync(join(dir, 'test.ts'))
-  const vocabularyException = hasVocabularyException(dir)
+  // An atom under the `vocabulary/` namespace IS the corpus's declared vocabulary — prose by design
+  // (the same class rules/prose exempts as a lexicon). It need not repeat `vocabularyException: true`
+  // in every SKILL when its home already declares it structurally.
+  const vocabularyException = hasVocabularyException(dir) || atomPath.startsWith('vocabulary/')
 
   let hasLogic = false
   let trivialStub = false
