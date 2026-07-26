@@ -119,7 +119,7 @@ export const trinityStateOf = (m: PivotFolderInput): string => {
 
 /** Gravity held ⇔ matter complete and bond degree not zeroed by the gravity gate. */
 export const gravityHeldOf = (m: PivotFolderInput): boolean => {
-  if (m.typography.graphRoot) return m.typography.bondDegree > 0
+  if (m.typography?.graphRoot) return (m.typography.bondDegree ?? 0) > 0
   if (m.code === 0) return m.form === 1
   return m.form === 1 && m.proof === 1
 }
