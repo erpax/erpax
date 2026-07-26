@@ -174,7 +174,11 @@ export function alphanumericNameViolations(cwd: string = process.cwd()): Alphanu
 }
 
 const PERMITTED_TS = new Set(['index.ts', 'test.ts'])
-const GENERATED_TS = /\.generated\.ts$/i
+// Generated derivations (AUTO-GENERATED, regenerated on demand) — never agent-authored strays:
+// `*.generated.ts`, the per-atom translations projection, the translations catalogue aggregate,
+// and the skills index bundle. They are one-per-atom by construction, so counting them as strays
+// makes the down-only ratchet grow with the corpus — the opposite of its intent.
+const GENERATED_TS = /^(translations|catalogue|skills\.index)\.ts$|\.generated\.ts$/i
 const NON_TS_PROGRAMMING_EXT = /\.(js|mjs|cjs|jsx|tsx|vue|py|sh|rs|mts)$/i
 
 export interface StrayTsViolation {
