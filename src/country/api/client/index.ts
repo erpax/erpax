@@ -1,6 +1,6 @@
 /**
  * Country API Clients — working integrations with the public, no-auth and
- * api-key official APIs catalogued in `src/country/api.ts`.
+ * api-key official APIs catalogued in `src/country/api/index.ts`.
  *
  * One file per *auth pattern*, not per country: the catalogue is broad,
  * but the realised auth surface is narrow (no-auth JSON, key-in-query,
@@ -14,7 +14,7 @@
  *
  * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
  * @audit ISO-19011:2018 audit-trail external-system-evidence
- * @see ../country/api.ts
+ * @see ../index.ts
  */
 
 import { COUNTRY_APIS, BANK_APIS } from '@/country/api'
@@ -240,10 +240,10 @@ export async function fetchEuSanctionsXml(): Promise<ApiResult<string>> {
     const r = await fetch(
       'https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content',
     )
-    if (!r.ok) return err('EU Sanctions', `HTTP ${r.status}`)
-    return ok('EU Sanctions', await r.text())
+    if (!r.ok) return err('EU CFSP', `HTTP ${r.status}`)
+    return ok('EU CFSP', await r.text())
   } catch (e) {
-    return err('EU Sanctions', String(e))
+    return err('EU CFSP', String(e))
   }
 }
 
