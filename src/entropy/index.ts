@@ -19,7 +19,7 @@
  * @audit computed from the live matrix, never hand-asserted
  * @see ../uuid/matrix -- ../quantum (same reciprocal count, two views) -- ../digit -- ../harmony (A432)
  */
-import { UUID_MATRIX_NODES as N, UUID_MATRIX_EDGES as E } from '@/uuid/matrix'
+import { UUID_MATRIX_NODES as N, UUID_MATRIX_EDGES as E, nodeIndexOf } from '@/uuid/matrix'
 import { auraBalance, coverage, disbalance } from '@/balance'
 import { HORO_DIGITS, horoRatio, type HoroStep } from '@/horo'
 import { COMPARABLE_UNIT, LANDAUER_BIT } from '@/readme/entropy-unit'
@@ -42,7 +42,19 @@ export function orphans(): string[] {
     bound.add(e.f)
     bound.add(e.t)
   }
-  return N.filter((_, i) => !bound.has(i)).map((n) => n.atom)
+  // Edges reference the CANONICAL index per atom name (nodeIndexOf, which prefers the root when an
+  // atom is a homonym — 366 atoms carry method sub-nodes). Checking the raw array position instead
+  // flagged every non-preferred homonym position as a false orphan. Judge each DISTINCT atom by its
+  // canonical index against the edge set.
+  const seen = new Set<string>()
+  const out: string[] = []
+  for (const n of N) {
+    if (seen.has(n.atom)) continue
+    seen.add(n.atom)
+    const i = nodeIndexOf(n.atom)
+    if (i === undefined || !bound.has(i)) out.push(n.atom)
+  }
+  return out
 }
 
 // ── Landauer free energy from zero entropy (theorem + metric) ────────────────

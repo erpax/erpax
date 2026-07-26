@@ -73,7 +73,7 @@ UUID_MATRIX_NODES.forEach((n, i) => {
 const NIL_PARENT = '00000000-0000-8000-8000-000000000000'
 
 /** Resolve a node index: full path → atom key (prefer root when homonym). */
-const nodeIndexOf = (key: string): number | undefined => {
+export const nodeIndexOf = (key: string): number | undefined => {
   const pathKey = key.replace(/\\/g, '/')
   if (pathKey.includes('/')) {
     const pi = byPath.get(pathKey)
