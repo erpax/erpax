@@ -88,7 +88,9 @@ describe('nextBgBusinessDay', () => {
   })
 
   it('skips multi-day Christmas cluster', () => {
-    // 2026-12-24 / 25 / 26 are holidays; 27 is a Sunday → next biz day = Mon 28.
-    expect(nextBgBusinessDay('2026-12-24')).toBe('2026-12-28')
+    // 2026-12-24/25 are holidays; 26 falls on Saturday, so Кодекс на труда чл.154 substitutes
+    // its day-off to the next working day — Mon 28 (27 is Sunday). So the cluster is
+    // 24·25·26·(27 wknd)·28-substitute, and the next business day is Tue 29.
+    expect(nextBgBusinessDay('2026-12-24')).toBe('2026-12-29')
   })
 })

@@ -26,7 +26,7 @@
  * @compliance EU 2014/55 b2g-e-invoicing portals
  * @compliance AMLD-5 ubo-registry-access
  * @see ./specifics.ts for the per-country regulatory context
- * @see src/services/country-api-clients/ for the working client modules
+ * @see src/country/api/client/ for the working client modules
  */
 
 export type CountryApiKind =
@@ -64,7 +64,7 @@ export interface CountryApi {
   /** Brief one-line summary of what the API does. */
   readonly description: string
   /**
-   * Marks the registry entries for which `src/services/country-api-clients/`
+   * Marks the registry entries for which `src/country/api/client/`
    * ships a working module. `false` = catalogue-only (still useful for the
    * admin UI / docs).
    */
@@ -199,7 +199,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       format: 'xml',
       documentation: 'https://nra.bg/wps/portal/nra/uslugi-eus',
       description: 'VAT returns, VIES filings, intrastat — qualified e-signature mTLS.',
-      // Generic mTLS dispatcher in `src/services/country-clients/bg-nap-mtls.ts`
+      // Generic mTLS dispatcher in `src/country/client/bg-nap-mtls.ts`
       // services every НАП endpoint (per-tenant qualified seal cert required).
       clientImplemented: true,
     },
@@ -212,14 +212,14 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       format: 'xml',
       documentation: 'https://nra.bg/saf-t',
       description: 'OECD SAF-T 2.0 submission for BG (audit-file format BG-SAF-T).',
-      // `submitBgSaft()` in `src/services/country-clients/bg-nap-mtls.ts`.
+      // `submitBgSaft()` in `src/country/client/bg-nap-mtls.ts`.
       clientImplemented: true,
     },
     {
       // `statistics` kind covers central-bank FX rate publishers per the
       // CountryApiKind comment ("sometimes used for FX"). BNB's daily
       // fixing is the BG anchor for IAS-21 revaluation + invoice fx.
-      // Client lives in `src/services/country-api-clients.ts` (`lookupBnbExchangeRate`).
+      // Client lives in `src/country/api/client/index.ts` (`lookupBnbExchangeRate`).
       kind: 'statistics',
       name: 'БНБ — Daily Exchange Rates',
       authority: 'Българска народна банка',
@@ -594,6 +594,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'Krajowy System e-Faktur — mandatory B2B from 2026-02-01.',
       clientImplemented: false,
     },
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   PT: [
     {

@@ -165,7 +165,7 @@ export async function signBgPadesPdf(
 
   const signedPdf = new Uint8Array(pdfBytes.length)
   signedPdf.set(before, 0)
-  signedPdf.set(textEncoder.encode('<' + paddedHex.slice(1, -1) + '>'), placeholderIndex)
+  signedPdf.set(textEncoder.encode('<' + paddedHex + '>'), placeholderIndex)
   signedPdf.set(after, placeholderIndex + placeholderBytes.length)
 
   // Slice OOO: build the audit envelope the EvidenceAttestations row needs
