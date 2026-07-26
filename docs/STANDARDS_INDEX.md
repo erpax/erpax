@@ -325,9 +325,9 @@ src/architecture/invariant/checks.ts:2928: * @standard ISO 27002 §5.4 segregati
 src/architecture/invariant/checks.ts:3033: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/architecture/invariant/checks.ts:3034: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
 src/architecture/invariant/checks.ts:3250: * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
-src/architecture/invariant/checks.ts:3334: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity (one word)
-src/architecture/invariant/checks.ts:3402: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
-src/architecture/invariant/checks.ts:3447: * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
+src/architecture/invariant/checks.ts:3342: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity (one word)
+src/architecture/invariant/checks.ts:3410: * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
+src/architecture/invariant/checks.ts:3455: * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
 src/architecture/invariant/checks.ts:737: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
 src/architecture/invariant/checks.ts:754: * @standard ISO 27002:2022 §5.4 segregation-of-duties
 src/architecture/invariant/checks.ts:755: * @standard COBIT 5 PO4.11
@@ -5472,9 +5472,9 @@ src/architecture/invariant/checks.ts:2866: * @audit Conservation Law 38 mcp-tool
 src/architecture/invariant/checks.ts:2929: * @audit Conservation Law 38 mcp-tool-standardization
 src/architecture/invariant/checks.ts:3035: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
 src/architecture/invariant/checks.ts:3251: * @audit Law 10 referential-harmony
-src/architecture/invariant/checks.ts:3335: * @audit generic-naming-law — one concatenated word per atom
-src/architecture/invariant/checks.ts:3403: * @audit [[config]] — collections are plural, models/pages singular
-src/architecture/invariant/checks.ts:3448: * @audit double-entry of structure ([[balance]])
+src/architecture/invariant/checks.ts:3343: * @audit generic-naming-law — one concatenated word per atom
+src/architecture/invariant/checks.ts:3411: * @audit [[config]] — collections are plural, models/pages singular
+src/architecture/invariant/checks.ts:3456: * @audit double-entry of structure ([[balance]])
 src/architecture/invariant/checks.ts:816: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/architecture/invariant/checks.ts:910: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/architecture/invariant/checks.ts:9: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants

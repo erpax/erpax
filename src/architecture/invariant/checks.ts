@@ -819,7 +819,7 @@ export function checkCollectionsAreUniformlyDRY(ctx: InvariantContext): Invarian
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
   // Derive the collection set live from the dissolved tree (every collection
   // is a single-word folder's `index.ts` declaring a slug + fields) — NOT the
-  // gone `src/plugins/accounting/collections` prefix.
+  // gone accounting-collections grouping prefix.
   const files = listCollectionFiles(repoRoot)
   if (files.length === 0) {
     return warn('entropy', 'collections-uniformly-dry', 'no collection sources discovered in the tree')
@@ -983,7 +983,7 @@ const ACTIVE_IFRS_STANDARDS: ReadonlyArray<string> = [
 export function checkIfrsCoverage100Percent(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
   // Scan the WHOLE dissolved tree. The old narrow targets (src/collections,
-  // src/services, src/plugins/accounting/collections …) predate the dissolution,
+  // src/services, the old accounting-collections prefix …) predate the dissolution,
   // which moved every collection to its own single-word folder (src/invoices,
   // src/items …) — so the citations (IFRS 15 ×128, IFRS 16 ×95 …) live OUTSIDE
   // those stale paths and the check false-reported them uncited.
@@ -2790,7 +2790,7 @@ export function checkNoPluginOwnedSlugCollision(ctx: InvariantContext): Invarian
  * collection". MCP handlers that mutate state (push to module-scope
  * arrays, increment counters, write to globalThis) without going
  * through a Payload collection lose their data on restart and can't
- * be federated. This invariant scans `src/services/agents/mcp/` for
+ * be federated. This invariant scans `src/agents/mcp/` for
  * handler functions whose body mutates module-scope state without a
  * `req.payload.create / update / delete` call.
  *
@@ -2810,8 +2810,8 @@ export function checkMcpMutationsHaveCollection(ctx: InvariantContext): Invarian
   // Tier A — files we audit. Limited to MCP handler surface + meta-automation.
   const auditedFiles: string[] = []
   for (const sub of [
-    'src/services/agents/mcp',
-    'src/services/meta-automation',
+    'src/agents/mcp',
+    'src/meta/automation',
   ]) {
     const d = join(repoRoot, sub)
     if (!existsSync(d)) continue
@@ -2870,11 +2870,11 @@ export function checkMcpBindingsAreMediated(ctx: InvariantContext): InvariantRes
   const offenders: string[] = []
   // Slice DDDDDDDDD-cont (2026-05-11) — per user "all plugins use only
   // erpax bindings". Extend the audit surface to every src/plugins/*
-  // directory + services/meta-automation. Direct env.<BINDING> access
+  // directory + meta/automation. Direct env.<BINDING> access
   // outside the mediator module is forbidden.
   const dirs = [
-    join(repoRoot, 'src/services/agents/mcp'),
-    join(repoRoot, 'src/services/meta-automation'),
+    join(repoRoot, 'src/agents/mcp'),
+    join(repoRoot, 'src/meta/automation'),
     join(repoRoot, 'src/plugins'),
   ]
   const auditedFiles: string[] = []
@@ -3279,6 +3279,14 @@ export function checkLocality(ctx: InvariantContext): InvariantResult {
     const text = readSafe(f)
     const rel = f.slice(repoRoot.length + 1)
     for (const line of text.split('\n')) {
+      // A `from '@/…'` counts ONLY in a real module statement — never inside a string literal or
+      // comment. The confine atom's SKILL text QUOTES `import * as … from '@/collections'` as the
+      // anti-pattern it forbids; regenerated into its translation projection, that data line matched
+      // the naive text regex and falsely regressed the count ([[syntax]]: parse the statement, don't
+      // grep the text). A module line starts with import / export, a `from` continuation, or `} from`.
+      const head = line.trimStart()
+      const isModuleLine = /^(import|export)\b/.test(head) || /^from\s+['"]/.test(head) || /^\}\s*from\s+['"]/.test(head)
+      if (!isModuleLine) continue
       if (prefixRe.test(line)) {
         const m = line.match(/@\/([\w-]+)(?:\/([\w-]+))?/)
         const grp = m?.[1] ?? '?'
