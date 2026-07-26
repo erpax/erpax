@@ -10,6 +10,7 @@ import {
   selfSufficientCrackVerdict,
   type ExternalDependency,
 } from '@/self/sufficient'
+import { ERPAX_DIGEST_BITS } from '@/cost' // the digest floor is COMPUTED (122), never hardcoded 106
 
 const DEPS: ReadonlyArray<ExternalDependency> = [
   { id: 'anthropic-api', kind: 'ai-model', compromiseBits: 40, internalisable: true },
@@ -20,17 +21,17 @@ describe('self/sufficient: the weakest external link binds', () => {
   it('no liabilities ⇒ the digest/anchor floor binds, fully self-sufficient', () => {
     const v = selfSufficiencyVerdict({})
     expect(v.binding).not.toBe('dependency')
-    expect(v.effectiveCostBits).toBe(106)
+    expect(v.effectiveCostBits).toBe(ERPAX_DIGEST_BITS)
     expect(v.selfSufficiency).toBe(1)
     expect(v.weakestLink).toBeNull()
   })
   it('a cheap external dependency caps the effective cost at its compromise bits', () => {
     const v = selfSufficiencyVerdict({ liabilities: DEPS })
     expect(v.binding).toBe('dependency')
-    expect(v.effectiveCostBits).toBe(40) // the AI-model API, not the 2^106 digest
+    expect(v.effectiveCostBits).toBe(40) // the AI-model API, not the 2^122 digest
     expect(v.weakestLink).toBe('anthropic-api')
     expect(v.dependenceCount).toBe(2)
-    expect(v.selfSufficiency).toBeCloseTo(40 / 106, 6)
+    expect(v.selfSufficiency).toBeCloseTo(40 / ERPAX_DIGEST_BITS, 6)
   })
 })
 
@@ -42,7 +43,7 @@ describe('self/sufficient: decrease dependence ⇒ increase tampering cost', () 
     expect(after.weakestLink).toBe('plaid')
     const { verdict: full } = internalise(afterDeps, 'plaid')
     expect(full.binding).not.toBe('dependency')
-    expect(full.effectiveCostBits).toBe(106) // the digest floor — fully self-sufficient
+    expect(full.effectiveCostBits).toBe(ERPAX_DIGEST_BITS) // the digest floor — fully self-sufficient
     expect(full.selfSufficiency).toBe(1)
   })
   it('internalisation is monotonic — removing a dep never lowers the cost', () => {
