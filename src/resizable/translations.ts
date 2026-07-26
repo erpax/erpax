@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resizable",
-    "uuid": "ab2120e7-6acb-8111-83b4-24f756b872d6",
+    "uuid": "1c9071a9-d9eb-80e3-b029-523bda9b683f",
     "words": [
       "resizable"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
-    "uuid": "659eb011-a724-8be3-a425-ad21a6e286d7",
+    "source": "Use when reasoning about resizable — Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
+    "uuid": "5317bd7d-9b62-8c5f-ba2c-1488b911cd26",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "resizable",
       "whether",
       "the",
       "dmodel",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "reality"
     ],
     "values": {
-      "en": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality."
+      "en": "Use when reasoning about resizable — Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality."
     }
   }
 ]

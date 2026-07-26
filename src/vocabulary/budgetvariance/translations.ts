@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "budgetvariance",
-    "uuid": "3f6c75a0-3cc4-8c7e-8ea9-85e6f355bf1f",
+    "uuid": "69f6690e-32a6-8245-bb2e-172b9c7563d8",
     "words": [
       "budgetvariance"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-    "uuid": "452abd14-8338-8cdc-b9b2-980a69f10125",
+    "source": "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
+    "uuid": "5fac9c7d-d858-8e04-aa81-95aaef17e5e6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "budgetvariance",
       "use",
       "for",
       "analyzing",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "plan"
     ],
     "values": {
-      "en": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan"
+      "en": "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan"
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sponsor",
-    "uuid": "174b1dc7-3db4-8bd2-930a-f910d018af4c",
+    "uuid": "7bd530e8-fc61-8668-88b8-f8ffd657fc8f",
     "words": [
       "sponsor"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
-    "uuid": "b613c8a2-d0cf-8f36-a327-1c829f9a8176",
+    "source": "Use when reasoning about sponsor — A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+    "uuid": "d941e667-9637-8498-8301-f56f491767fe",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sponsor",
       "a",
       "person",
       "or",
@@ -52,7 +57,7 @@ export const translations: readonly Translation[] = [
       "event"
     ],
     "values": {
-      "en": "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event."
+      "en": "Use when reasoning about sponsor — A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event."
     }
   }
 ]

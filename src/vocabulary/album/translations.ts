@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "album",
-    "uuid": "0f765228-39d7-80b2-a6b5-2f9a86b9fdb6",
+    "uuid": "30f569f8-f4c5-820b-8333-2c2fa5eb09c4",
     "words": [
       "album"
     ],
@@ -17,15 +17,20 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A music album.",
-    "uuid": "33d0d529-6fcd-809d-9877-53d1c15b7bc1",
+    "source": "Use when reasoning about album — A music album.",
+    "uuid": "d0681262-97fb-85ab-86bb-5287ce53d94e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "album",
       "a",
       "music",
       "album"
     ],
     "values": {
-      "en": "A music album."
+      "en": "Use when reasoning about album — A music album."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "candidate",
-    "uuid": "2a161a7c-c20c-87ec-8052-59643770ffea",
+    "uuid": "7aa4b92e-7a0b-88c7-88d3-ed349206e29d",
     "words": [
       "candidate"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A sub property of object. The candidate subject of this action.",
-    "uuid": "ad1ffff8-ecbe-8e0f-8286-52f4e9a09777",
+    "source": "Use when reasoning about candidate — A sub property of object. The candidate subject of this action.",
+    "uuid": "bbd312bc-1b52-8f72-9684-f2191175ed13",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "candidate",
       "a",
       "sub",
       "property",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "action"
     ],
     "values": {
-      "en": "A sub property of object. The candidate subject of this action."
+      "en": "Use when reasoning about candidate — A sub property of object. The candidate subject of this action."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "courthouse",
-    "uuid": "61f27c87-bef7-8628-b651-86b7ce5314a7",
+    "uuid": "5891bac1-07c6-8564-a61e-cc99a4ec7056",
     "words": [
       "courthouse"
     ],
@@ -17,14 +17,19 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A courthouse.",
-    "uuid": "5b2059f9-0776-8702-8e68-89deaa90af8c",
+    "source": "Use when reasoning about courthouse — A courthouse.",
+    "uuid": "f4131fd7-59a2-8b5b-baa8-63fec672980b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "courthouse",
       "a",
       "courthouse"
     ],
     "values": {
-      "en": "A courthouse."
+      "en": "Use when reasoning about courthouse — A courthouse."
     }
   }
 ]

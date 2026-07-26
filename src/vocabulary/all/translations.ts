@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "all",
-    "uuid": "6da5eb4f-4567-8e2d-93f2-9bc4236e4d96",
+    "uuid": "58b18e64-d7c4-806d-9b14-9d53cffdffa9",
     "words": [
       "all"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
-    "uuid": "03c58916-e7c1-85d6-964a-5fa7f80fc0e0",
+    "source": "Use when reasoning about totality or universality in erpax — \\\\\\\"anything is X\\\\\\\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
+    "uuid": "f6fca430-4707-8f0b-b39e-2c7bffa332a0",
     "words": [
       "use",
       "when",
@@ -52,7 +52,7 @@ export const translations: readonly Translation[] = [
       "totality"
     ],
     "values": {
-      "en": "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
+      "en": "Use when reasoning about totality or universality in erpax — \\\\\\\"anything is X\\\\\\\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality."
     }
   }
 ]

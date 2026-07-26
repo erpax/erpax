@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ecommerce",
-    "uuid": "0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4",
+    "uuid": "40a254d8-d58f-8212-875b-1e0eea600502",
     "words": [
       "ecommerce"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\"data is money\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
-    "uuid": "5bf0601c-8801-8cf0-869b-4e55367ff7eb",
+    "source": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\\\\\\\\\\\\\"data is money\\\\\\\\\\\\\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
+    "uuid": "07fa7622-115c-880b-b19e-95a912fbf1f3",
     "words": [
       "use",
       "when",
@@ -61,7 +61,7 @@ export const translations: readonly Translation[] = [
       "ecommerce"
     ],
     "values": {
-      "en": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\"data is money\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
+      "en": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\\\\\\\\\\\\\"data is money\\\\\\\\\\\\\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
     }
   }
 ]

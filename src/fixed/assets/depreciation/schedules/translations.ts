@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "depreciation-schedules",
-    "uuid": "3e2ea11d-efb3-82a5-862d-e3bffad06c69",
+    "source": "schedules",
+    "uuid": "7ecb5631-33b7-82a3-941e-5a85f0439d3e",
     "words": [
-      "depreciation",
       "schedules"
     ],
     "values": {
-      "en": "depreciation-schedules"
+      "en": "schedules"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.",
-    "uuid": "25fe73d9-5403-8a2f-931a-1cad5673ce00",
+    "uuid": "a9f1c921-7247-892c-acd4-06b92c4ad77b",
     "words": [
       "use",
       "when",

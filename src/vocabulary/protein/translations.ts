@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "protein",
-    "uuid": "eb1799e0-3ce5-8cb5-bd09-c45d4191fb0f",
+    "uuid": "c7de762d-914c-8dcb-bb3c-0deff2312d72",
     "words": [
       "protein"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single mol",
-    "uuid": "1799ae24-5c29-8b71-be19-9fb2ac76ffae",
+    "source": "Use when reasoning about protein — Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group)",
+    "uuid": "66b4279c-4b94-8f22-82c5-d69716c30d52",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "protein",
       "protein",
       "is",
       "here",
@@ -48,15 +53,10 @@ export const translations: readonly Translation[] = [
       "g",
       "an",
       "orthodb",
-      "group",
-      "or",
-      "even",
-      "a",
-      "single",
-      "mol"
+      "group"
     ],
     "values": {
-      "en": "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single mol"
+      "en": "Use when reasoning about protein — Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group)"
     }
   }
 ]

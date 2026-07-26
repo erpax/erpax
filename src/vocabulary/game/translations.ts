@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "game",
-    "uuid": "fdfd5a19-a098-8016-8d6c-8dd6babad4b2",
+    "uuid": "eea3da2d-0d90-880b-8a31-91591748544a",
     "words": [
       "game"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional settin",
-    "uuid": "5ff76c8c-5ec8-852b-a30c-db69e6014749",
+    "source": "Use when reasoning about game — The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters i",
+    "uuid": "437de66b-eafe-8d8e-b7a7-1d3283e14976",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "game",
       "the",
       "game",
       "type",
@@ -48,13 +53,10 @@ export const translations: readonly Translation[] = [
       "role",
       "of",
       "characters",
-      "in",
-      "a",
-      "fictional",
-      "settin"
+      "i"
     ],
     "values": {
-      "en": "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional settin"
+      "en": "Use when reasoning about game — The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters i"
     }
   }
 ]

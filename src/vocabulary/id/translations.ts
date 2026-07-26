@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "id",
-    "uuid": "da0fb900-e749-867f-aa45-fb0303213436",
+    "uuid": "aa4e1f75-aaa0-8358-94a3-56eba65dc610",
     "words": [
       "id"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges.",
-    "uuid": "cd2bc071-cbfc-8f6e-8a74-8678373d5862",
+    "uuid": "acf5b709-ecc2-8133-8675-bb9821ec7589",
     "words": [
       "use",
       "when",

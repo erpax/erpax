@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "sales-orders",
-    "uuid": "86f9f316-3f04-8d9f-8439-64b59e399f7d",
+    "source": "orders",
+    "uuid": "82f9e9bb-9d7f-8a5c-bc92-ed038b8916f9",
     "words": [
-      "sales",
       "orders"
     ],
     "values": {
-      "en": "sales-orders"
+      "en": "orders"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
-    "uuid": "f9a9501e-b10a-8b39-bd9b-5a178175a541",
+    "uuid": "98e2269d-b213-8e3e-9d0b-05e0ab454739",
     "words": [
       "use",
       "when",

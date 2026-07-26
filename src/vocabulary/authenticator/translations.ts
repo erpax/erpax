@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "authenticator",
-    "uuid": "0de33f7b-b2a5-8ac4-a7ea-9284dce8d862",
+    "uuid": "d1d6f1b7-5747-8e6a-b0cd-80597fb6fcf6",
     "words": [
       "authenticator"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media.",
-    "uuid": "1da18cf9-0197-8a52-ab3a-da351c08ab98",
+    "source": "Use when reasoning about authenticator — The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before pl",
+    "uuid": "b5d8abee-ca91-8e0c-a6a4-9ccd894132c1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "authenticator",
       "the",
       "organization",
       "responsible",
@@ -44,11 +49,10 @@ export const translations: readonly Translation[] = [
       "your",
       "subscription",
       "before",
-      "playing",
-      "media"
+      "pl"
     ],
     "values": {
-      "en": "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media."
+      "en": "Use when reasoning about authenticator — The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before pl"
     }
   }
 ]

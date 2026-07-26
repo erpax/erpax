@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "usage-records",
-    "uuid": "fb2ebeb1-d07a-890c-afa8-92f27d0a86da",
+    "source": "records",
+    "uuid": "08a47d3f-7c69-8042-a1b0-8bc130eac509",
     "words": [
-      "usage",
       "records"
     ],
     "values": {
-      "en": "usage-records"
+      "en": "records"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
-    "uuid": "4188dd8c-0cd1-8634-8f34-b1405f0bdaf0",
+    "uuid": "9753da92-0138-8678-9295-c2fc9122b206",
     "words": [
       "use",
       "when",

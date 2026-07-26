@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worker",
-    "uuid": "428a4c23-72fd-8b99-9dbd-8433f23ae48b",
+    "uuid": "44cc6357-b244-8962-ba80-24cc4ba4cab5",
     "words": [
       "worker"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization.",
-    "uuid": "65698902-8498-884a-8e4c-649a7dbbe594",
+    "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
+    "uuid": "b65e67f8-62a5-82b4-bfc4-0ab1396e506b",
     "words": [
       "use",
       "when",
@@ -42,10 +42,35 @@ export const translations: readonly Translation[] = [
       "labor",
       "for",
       "the",
-      "organization"
+      "organization",
+      "and",
+      "when",
+      "naming",
+      "the",
+      "autonomous",
+      "deployment",
+      "face",
+      "of",
+      "a",
+      "diamond",
+      "hook",
+      "bodies",
+      "clis",
+      "guardians",
+      "agents",
+      "mcp",
+      "handlers",
+      "that",
+      "run",
+      "without",
+      "a",
+      "human",
+      "in",
+      "the",
+      "loop"
     ],
     "values": {
-      "en": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization."
+      "en": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop."
     }
   }
 ]

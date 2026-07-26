@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "gl-posting-rules",
-    "uuid": "0d6b50de-24ef-8b7b-aa19-7f655d157130",
+    "source": "rules",
+    "uuid": "145bc658-a129-8616-89d5-868057966a7c",
     "words": [
-      "gl",
-      "posting",
       "rules"
     ],
     "values": {
-      "en": "gl-posting-rules"
+      "en": "rules"
     }
   },
   {
     "key": "description",
     "source": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-    "uuid": "f22189da-b69c-85d1-82c0-ca1ee0abb258",
+    "uuid": "374149eb-3dbb-81db-a9f9-67a11902cd68",
     "words": [
       "use",
       "when",

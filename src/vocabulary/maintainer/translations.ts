@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "maintainer",
-    "uuid": "a8118cc4-8e4b-846e-95e7-72db18b49445",
+    "uuid": "e6e14049-5a24-87ac-8c29-a20a252d6400",
     "words": [
       "maintainer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically comp",
-    "uuid": "fad67f7b-2a06-824a-b05f-0953310ef645",
+    "source": "Use when reasoning about maintainer — A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of,",
+    "uuid": "f8efa198-deaa-8a70-bd71-29c925435fb1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "maintainer",
       "a",
       "maintainer",
       "of",
@@ -45,13 +50,10 @@ export const translations: readonly Translation[] = [
       "and",
       "or",
       "publication",
-      "of",
-      "some",
-      "typically",
-      "comp"
+      "of"
     ],
     "values": {
-      "en": "A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically comp"
+      "en": "Use when reasoning about maintainer — A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of,"
     }
   }
 ]

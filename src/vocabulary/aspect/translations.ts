@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aspect",
-    "uuid": "507bfc11-c719-8eda-8850-2ced87d8ba1f",
+    "uuid": "d9c02a57-0890-8c6a-80eb-4021828a4929",
     "words": [
       "aspect"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
-    "uuid": "4e83567a-9a49-8f77-912a-9a9bfb4cd653",
+    "source": "Use when reasoning about aspect — An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
+    "uuid": "6d74563f-655b-8015-9d69-0ce88979b603",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "aspect",
       "an",
       "aspect",
       "of",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "etc"
     ],
     "values": {
-      "en": "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc."
+      "en": "Use when reasoning about aspect — An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc."
     }
   }
 ]

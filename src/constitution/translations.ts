@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constitution",
-    "uuid": "dd6e74f8-f181-8d94-8dc1-a3e42437dfcf",
+    "uuid": "3b715152-ffd2-8055-8862-6d11dacefc61",
     "words": [
       "constitution"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the entrenched foundation — the seven supreme articles, what a majority may amend versus what is perpetual, and why the polity cannot vote away identity, integrity, conservation, or the one-person-one-vote.",
-    "uuid": "6d208cf8-97a6-8748-bb00-3b7cc41da887",
+    "uuid": "a79cceab-c2ae-8fd7-a604-3660894bceef",
     "words": [
       "use",
       "when",

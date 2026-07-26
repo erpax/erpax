@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "energy",
-    "uuid": "05543c23-fea4-8b09-800f-00b02fca5d15",
+    "uuid": "ff177de8-8e14-8fd3-b273-059a5df348f6",
     "words": [
       "energy"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
-    "uuid": "bca7fab2-ae6e-828f-b882-11c77dddafe6",
+    "source": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
+    "uuid": "5cd047c6-944b-8699-a677-c61c4db7effa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "energy",
       "properties",
       "that",
       "take",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "gt"
     ],
     "values": {
-      "en": "Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
+      "en": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
     }
   }
 ]

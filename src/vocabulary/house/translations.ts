@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "house",
-    "uuid": "ae01bd64-9958-8022-9519-9bf99aecc9e1",
+    "uuid": "3a9ada9c-12b3-8eee-b55d-5e8acb755995",
     "words": [
       "house"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/House).",
-    "uuid": "64c7a167-0658-85f9-8ee7-e2a2d5871b3b",
+    "source": "Use when reasoning about house — A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedi",
+    "uuid": "f2e17858-a3e8-81e5-8432-2f111b14ccb9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "house",
       "a",
       "house",
       "is",
@@ -49,13 +54,10 @@ export const translations: readonly Translation[] = [
       "see",
       "http",
       "en",
-      "wikipedia",
-      "org",
-      "wiki",
-      "house"
+      "wikipedi"
     ],
     "values": {
-      "en": "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/House)."
+      "en": "Use when reasoning about house — A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedi"
     }
   }
 ]

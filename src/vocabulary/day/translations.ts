@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "day",
-    "uuid": "5594014d-1fd1-8bb6-8279-3ae69256afba",
+    "uuid": "6feb944f-c953-88f6-aca9-8fe2a0abb971",
     "words": [
       "day"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurrence rules.",
-    "uuid": "3eebe577-3e69-80bd-8255-322e01e55fa2",
+    "source": "Use when reasoning about day — Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurren",
+    "uuid": "1c220be9-b770-85ac-ab3f-6b64114b4e4e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "day",
       "defines",
       "the",
       "day",
@@ -50,11 +55,10 @@ export const translations: readonly Translation[] = [
       "syntax",
       "for",
       "byday",
-      "recurrence",
-      "rules"
+      "recurren"
     ],
     "values": {
-      "en": "Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurrence rules."
+      "en": "Use when reasoning about day — Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurren"
     }
   }
 ]

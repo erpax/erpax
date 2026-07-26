@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translator",
-    "uuid": "a6355c66-c01c-8acd-bd25-55d134af0fb2",
+    "uuid": "9d160e18-7d7c-8e59-8bc8-383c98332487",
     "words": [
       "translator"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
-    "uuid": "8e9638a1-5c23-8358-a19b-a71e3806e879",
+    "source": "Use when reasoning about translator — Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
+    "uuid": "b992f932-ecf1-8abc-a2b2-859ae6891830",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "translator",
       "organization",
       "or",
       "person",
@@ -48,7 +53,7 @@ export const translations: readonly Translation[] = [
       "event"
     ],
     "values": {
-      "en": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event."
+      "en": "Use when reasoning about translator — Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event."
     }
   }
 ]

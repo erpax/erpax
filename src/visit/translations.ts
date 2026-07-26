@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "visit",
-    "uuid": "36a1c7dc-a2c6-8aa7-bc50-90289b3aeb6a",
+    "uuid": "db5098e1-2cbc-8f95-a6b5-7f57be71ff6d",
     "words": [
       "visit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one visit — the singular model of the visits collection (the plural store); one recorded instance of an actor attending a place or service.",
-    "uuid": "65b2ddbe-f4b6-8cb2-82dc-175e689ab770",
+    "uuid": "0149ed56-d72a-8438-a12b-71b7c864df48",
     "words": [
       "use",
       "when",

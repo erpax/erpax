@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "encoding",
-    "uuid": "67e38870-07dc-8f2b-ba40-4b08705019b6",
+    "uuid": "6b85a7d2-5c35-8fd6-97c7-1f59bb6eb7fc",
     "words": [
       "encoding"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
-    "uuid": "fd6dc55a-0954-871c-a03c-8fbad60ee863",
+    "source": "Use when reasoning about encoding — A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
+    "uuid": "e926adf2-cbb1-8ccc-8582-5a0658ced8f4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "encoding",
       "a",
       "media",
       "object",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "associatedmedia"
     ],
     "values": {
-      "en": "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia."
+      "en": "Use when reasoning about encoding — A media object that encodes this CreativeWork. This property is a synonym for associatedMedia."
     }
   }
 ]

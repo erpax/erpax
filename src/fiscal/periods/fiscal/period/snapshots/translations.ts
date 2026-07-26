@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fiscal-period-snapshots",
-    "uuid": "f825dac5-e594-8521-bdea-7a6243a3c387",
+    "source": "snapshots",
+    "uuid": "99dfa755-cae6-8825-bdd4-9805be9a3bd0",
     "words": [
-      "fiscal",
-      "period",
       "snapshots"
     ],
     "values": {
-      "en": "fiscal-period-snapshots"
+      "en": "snapshots"
     }
   },
   {
     "key": "description",
     "source": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-    "uuid": "762e3683-dd61-8ab8-8d00-44fb10120611",
+    "uuid": "5274fe8a-dc74-85e1-a221-c706583b87a4",
     "words": [
       "use",
       "when",

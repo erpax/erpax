@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "evidence-attestations",
-    "uuid": "c9293446-e98c-84cb-9d11-661f18844599",
+    "source": "attestations",
+    "uuid": "4ee293ef-39de-87cc-be1f-e467e7953ec2",
     "words": [
-      "evidence",
       "attestations"
     ],
     "values": {
-      "en": "evidence-attestations"
+      "en": "attestations"
     }
   },
   {
     "key": "description",
     "source": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
-    "uuid": "653f4531-f6e8-8536-83c2-fb6756334ec8",
+    "uuid": "f44fdcef-dc2a-8ce5-977a-f4cd9c8af6aa",
     "words": [
       "use",
       "when",

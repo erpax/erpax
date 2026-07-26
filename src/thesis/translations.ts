@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "thesis",
-    "uuid": "8b1b33d6-d5ec-893f-a06f-36abbaa34dda",
+    "uuid": "fd58a5d5-3e0d-890c-a04d-97a79f6501bf",
     "words": [
       "thesis"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
-    "uuid": "bb15f9e5-d9c2-8694-afa6-5257aad41573",
+    "source": "Use when reasoning about thesis — A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
+    "uuid": "a18b43ca-fe57-8dbb-a5e9-27cf62b5e311",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "thesis",
       "a",
       "thesis",
       "or",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "qualification"
     ],
     "values": {
-      "en": "A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification."
+      "en": "Use when reasoning about thesis — A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification."
     }
   }
 ]

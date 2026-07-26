@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "policy-versions",
-    "uuid": "cf708de5-b423-8dd3-a457-be88e796891b",
+    "source": "versions",
+    "uuid": "e3348ad3-c5fd-8798-8f70-0a0e98c1e4bb",
     "words": [
-      "policy",
       "versions"
     ],
     "values": {
-      "en": "policy-versions"
+      "en": "versions"
     }
   },
   {
     "key": "description",
     "source": "Use when managing the version history of an internal policy — release date, version number, change log, document upload, lifecycle draft→final→superseded; ISO 9001 documented-information control per policy. The policy-versions collection.",
-    "uuid": "9dd982c6-297d-8dbe-b86b-451ace8da3a3",
+    "uuid": "96dfdc01-c0cf-87d1-8602-f8db95e36279",
     "words": [
       "use",
       "when",

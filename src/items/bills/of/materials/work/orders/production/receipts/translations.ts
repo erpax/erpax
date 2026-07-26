@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "production-receipts",
-    "uuid": "7caa1684-aafc-888e-a357-36fe96fd6db7",
+    "source": "receipts",
+    "uuid": "e46105e5-981d-8f20-bd9e-15c33ddde827",
     "words": [
-      "production",
       "receipts"
     ],
     "values": {
-      "en": "production-receipts"
+      "en": "receipts"
     }
   },
   {
     "key": "description",
     "source": "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts.",
-    "uuid": "f0403365-6af1-8468-9f51-35d05effbd6f",
+    "uuid": "c2aecd7f-a87c-849d-a299-82ea4020c574",
     "words": [
       "use",
       "when",

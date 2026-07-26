@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tweet",
-    "uuid": "4564dc67-9f87-87b3-a105-947a94861003",
+    "uuid": "e1ba41c6-46d7-89f4-ab5f-8e25ab88bac9",
     "words": [
       "tweet"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one tweet — the singular model of the tweets collection (the plural store); one short public post on a microblogging feed.",
-    "uuid": "b8dd56d2-18e0-89be-ad5e-1e033bc428ef",
+    "uuid": "27889957-163e-8f79-a3ae-50cd2daf917b",
     "words": [
       "use",
       "when",

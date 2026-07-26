@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "recruiting-pipelines",
-    "uuid": "00d392c2-6c7e-8da8-8813-e69a16ee297b",
+    "source": "pipelines",
+    "uuid": "f5c2252e-f502-85df-9a54-81ae3f6390c5",
     "words": [
-      "recruiting",
       "pipelines"
     ],
     "values": {
-      "en": "recruiting-pipelines"
+      "en": "pipelines"
     }
   },
   {
     "key": "description",
     "source": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
-    "uuid": "f8c0d977-7e67-8a1b-9729-986e01cf78f0",
+    "uuid": "54a9c769-1fa5-89c6-8fb3-c66b647ef3d3",
     "words": [
       "use",
       "when",

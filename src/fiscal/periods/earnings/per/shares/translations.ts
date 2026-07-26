@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "earnings-per-share",
-    "uuid": "a561d21e-79b0-8eaf-82d6-73a1bd42b70e",
+    "source": "shares",
+    "uuid": "eac6113c-2e7f-878f-825a-cf0916e39938",
     "words": [
-      "earnings",
-      "per",
-      "share"
+      "shares"
     ],
     "values": {
-      "en": "earnings-per-share"
+      "en": "shares"
     }
   },
   {
     "key": "description",
     "source": "Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node.",
-    "uuid": "bc90c36f-8965-8786-b78d-47483ccaad8b",
+    "uuid": "72136d3b-6b9a-8035-9020-3c206221b4c1",
     "words": [
       "use",
       "when",

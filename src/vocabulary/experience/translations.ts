@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "experience",
-    "uuid": "b45bea6c-a172-8286-8ad6-8aa1e3318aec",
+    "uuid": "7f41279b-d88c-890f-a902-7a21e993e692",
     "words": [
       "experience"
     ],
@@ -17,24 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "experience: a schema.org component word, fused from OccupationalExperienceRequirements, experienceInPlaceOfEducation, experienceRequirements, monthsOfExperience",
-    "uuid": "44b45dc7-9f6b-8ae4-af1b-fcf527aa3f58",
+    "source": "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf",
+    "uuid": "b5e1ad72-0a32-8fc2-bd68-b82d38fb7620",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "experience",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "occupationalexperiencerequirements",
       "experienceinplaceofeducation",
       "experiencerequirements",
-      "monthsofexperience"
+      "monthsof"
     ],
     "values": {
-      "en": "experience: a schema.org component word, fused from OccupationalExperienceRequirements, experienceInPlaceOfEducation, experienceRequirements, monthsOfExperience"
+      "en": "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf"
     }
   }
 ]

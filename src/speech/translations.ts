@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speech",
-    "uuid": "505c2ca3-1e6d-8d10-8fc8-af9722a4e9a0",
+    "uuid": "2a7d313e-3c5d-8f88-9777-615011e4ce26",
     "words": [
       "speech"
     ],
@@ -17,40 +17,38 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about speech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "4be3f235-01be-8af3-82bb-5bbfaf6b143b",
+    "source": "Use when speech must be computed from sealed coordinates — pitch · phonemes · duration derived from content-uuid · horo · path; never hand-authored audio text. User alias: speach.",
+    "uuid": "38083826-ad32-866d-a109-79b10b04800f",
     "words": [
       "use",
       "when",
-      "reasoning",
-      "about",
       "speech",
-      "as",
-      "a",
-      "schema",
-      "org",
-      "vocabulary",
-      "word",
-      "the",
-      "single",
-      "word",
-      "collided",
+      "must",
+      "be",
+      "computed",
       "from",
-      "the",
-      "schema",
-      "org",
-      "terms",
-      "that",
-      "contain",
-      "it",
+      "sealed",
+      "coordinates",
+      "pitch",
+      "phonemes",
+      "duration",
+      "derived",
+      "from",
       "content",
-      "addressed",
-      "into",
-      "the",
-      "corpus"
+      "uuid",
+      "horo",
+      "path",
+      "never",
+      "hand",
+      "authored",
+      "audio",
+      "text",
+      "user",
+      "alias",
+      "speach"
     ],
     "values": {
-      "en": "Use when reasoning about speech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+      "en": "Use when speech must be computed from sealed coordinates — pitch · phonemes · duration derived from content-uuid · horo · path; never hand-authored audio text. User alias: speach."
     }
   }
 ]

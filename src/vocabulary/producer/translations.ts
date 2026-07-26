@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "producer",
-    "uuid": "f315dce0-4dad-8c8e-b77f-9b1c6d6a1abe",
+    "uuid": "dca31cb7-2bb2-8c95-aa90-20b95bd1d3d3",
     "words": [
       "producer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
-    "uuid": "615f7811-b123-8ad0-ab7b-7649ff6a6ff2",
+    "source": "Use when reasoning about producer — The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
+    "uuid": "23fce658-ce03-811d-8db3-cb8be550dfc2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "producer",
       "the",
       "person",
       "or",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "etc"
     ],
     "values": {
-      "en": "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.)."
+      "en": "Use when reasoning about producer — The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.)."
     }
   }
 ]

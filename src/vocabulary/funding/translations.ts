@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "funding",
-    "uuid": "78ba185c-e14d-85b6-b8cb-68b0749df44e",
+    "uuid": "62460a10-4d30-84e7-971d-5e434b5dc89e",
     "words": [
       "funding"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.",
-    "uuid": "60331acb-12ed-8657-81a6-a51a861b3a20",
+    "source": "Use when reasoning about funding — A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.",
+    "uuid": "4150617b-9f4c-85cd-ba88-cc682f925ca6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "funding",
       "a",
       "grant",
       "that",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "ownershipfundinginfo"
     ],
     "values": {
-      "en": "A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo."
+      "en": "Use when reasoning about funding — A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo."
     }
   }
 ]

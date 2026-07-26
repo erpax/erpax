@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vendor",
-    "uuid": "71404be7-4351-80e5-8dfe-0d4fb7a417e7",
+    "uuid": "c76d86bc-1256-8127-bd37-3f7b5e2561f2",
     "words": [
       "vendor"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "'vendor' is an earlier term for 'seller'.",
-    "uuid": "2e635e07-5fd8-811b-8880-e17175ac12b0",
+    "source": "Use when reasoning about vendor — 'vendor' is an earlier term for 'seller'.",
+    "uuid": "2d5c2473-0fd1-8d6e-ac91-b4baaef3a588",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "vendor",
       "vendor",
       "is",
       "an",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "seller"
     ],
     "values": {
-      "en": "'vendor' is an earlier term for 'seller'."
+      "en": "Use when reasoning about vendor — 'vendor' is an earlier term for 'seller'."
     }
   }
 ]

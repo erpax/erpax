@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "api-audit-events",
-    "uuid": "834d0710-ec31-83a7-8351-e4f54071770c",
+    "source": "events",
+    "uuid": "2422410a-cedf-8a22-9e38-88ee0b886a16",
     "words": [
-      "api",
-      "audit",
       "events"
     ],
     "values": {
-      "en": "api-audit-events"
+      "en": "events"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection.",
-    "uuid": "5544e418-ed91-8a37-8302-11d11462cf15",
+    "uuid": "ed597eff-a2b6-891c-a020-e48676f5d64d",
     "words": [
       "use",
       "when",

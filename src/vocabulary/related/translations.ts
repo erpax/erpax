@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "related",
-    "uuid": "f33464b3-2f13-80db-b684-47c70760803e",
+    "uuid": "e565c5a9-31ce-8c47-b3d2-133010796764",
     "words": [
       "related"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A pointer to another, somehow related product (or multiple products).",
-    "uuid": "157f52fb-48b0-8a38-9286-845decf13453",
+    "source": "Use when reasoning about related — A pointer to another, somehow related product (or multiple products).",
+    "uuid": "51bcd5fb-0247-8cd5-b434-9899610d512b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "related",
       "a",
       "pointer",
       "to",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "products"
     ],
     "values": {
-      "en": "A pointer to another, somehow related product (or multiple products)."
+      "en": "Use when reasoning about related — A pointer to another, somehow related product (or multiple products)."
     }
   }
 ]

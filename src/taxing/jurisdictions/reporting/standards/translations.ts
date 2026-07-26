@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "reporting-standards",
-    "uuid": "12c31d47-7766-8854-913e-0308c33ba9d6",
+    "source": "standards",
+    "uuid": "a05098f4-f3f1-8367-816f-95b6977916a5",
     "words": [
-      "reporting",
       "standards"
     ],
     "values": {
-      "en": "reporting-standards"
+      "en": "standards"
     }
   },
   {
     "key": "description",
     "source": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
-    "uuid": "fb7a615b-18c0-8fc5-b47b-80c324caa5a9",
+    "uuid": "912b06fd-d682-8ee8-a4e3-49efb8c03944",
     "words": [
       "use",
       "when",

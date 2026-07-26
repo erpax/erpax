@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aircraft",
-    "uuid": "458aa72f-43cc-8633-b2e5-5c9ba8ea2a0a",
+    "uuid": "f0b0272c-df56-894a-814f-c1037206a073",
     "words": [
       "aircraft"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The kind of aircraft (e.g., \\\"Boeing 747\\\").",
-    "uuid": "749beaa5-9204-8e1e-8e16-3446b711261a",
+    "source": "Use when reasoning about aircraft — The kind of aircraft (e.g., \\\\\\\"Boeing 747\\\\\\\").",
+    "uuid": "064ff57b-ffbd-840a-9e80-5698209ce5b7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "aircraft",
       "the",
       "kind",
       "of",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "boeing"
     ],
     "values": {
-      "en": "The kind of aircraft (e.g., \\\"Boeing 747\\\")."
+      "en": "Use when reasoning about aircraft — The kind of aircraft (e.g., \\\\\\\"Boeing 747\\\\\\\")."
     }
   }
 ]

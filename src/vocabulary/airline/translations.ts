@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "airline",
-    "uuid": "cc64a7ed-b834-82b1-a7bc-598ef8363e99",
+    "uuid": "05fa8f02-dd41-8ca8-921e-17167a12b348",
     "words": [
       "airline"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An organization that provides flights for passengers.",
-    "uuid": "9c253d7a-7879-87cd-b5d1-b78bf928e603",
+    "source": "Use when reasoning about airline — An organization that provides flights for passengers.",
+    "uuid": "feda8ff8-8311-86c7-82f8-841afe8857c2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "airline",
       "an",
       "organization",
       "that",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "passengers"
     ],
     "values": {
-      "en": "An organization that provides flights for passengers."
+      "en": "Use when reasoning about airline — An organization that provides flights for passengers."
     }
   }
 ]

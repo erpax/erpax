@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fair-value-measurements",
-    "uuid": "b5a51128-9a54-8fe6-885e-7479511b72b7",
+    "source": "measurements",
+    "uuid": "ca5c5f59-559b-8a45-8487-3426197b9b2d",
     "words": [
-      "fair",
-      "value",
       "measurements"
     ],
     "values": {
-      "en": "fair-value-measurements"
+      "en": "measurements"
     }
   },
   {
     "key": "description",
     "source": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
-    "uuid": "c74f5cf6-f2e2-807f-a5a4-46bb083dafea",
+    "uuid": "ba1fb26f-90d6-8b53-9e06-6b7db50cd420",
     "words": [
       "use",
       "when",

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bank-transactions",
-    "uuid": "86ca434e-5895-81b7-820f-e906186737d6",
+    "source": "transactions",
+    "uuid": "847cc3cc-6919-8652-9f9f-da0055019d0d",
     "words": [
-      "bank",
       "transactions"
     ],
     "values": {
-      "en": "bank-transactions"
+      "en": "transactions"
     }
   },
   {
     "key": "description",
     "source": "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection.",
-    "uuid": "d90ce23e-3f52-882a-96db-2f97525c4fd3",
+    "uuid": "8bab1428-e1d3-813e-b6a8-fcca76f714dc",
     "words": [
       "use",
       "when",

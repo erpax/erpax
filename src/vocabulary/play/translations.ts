@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "play",
-    "uuid": "676f32d1-8059-8cc0-bcd2-e37b0f77e7d8",
+    "uuid": "695858ff-01ad-893d-9988-6fbdccd54d37",
     "words": [
       "play"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would be a TheaterEvent o",
-    "uuid": "bc1de64d-8a3d-8e8c-9547-2a9ae0ba14be",
+    "source": "Use when reasoning about play — A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would",
+    "uuid": "5dfd5e88-c339-8dfb-80d7-6ad6acc1e6bb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "play",
       "a",
       "play",
       "is",
@@ -47,14 +52,10 @@ export const translations: readonly Translation[] = [
       "of",
       "a",
       "play",
-      "would",
-      "be",
-      "a",
-      "theaterevent",
-      "o"
+      "would"
     ],
     "values": {
-      "en": "A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would be a TheaterEvent o"
+      "en": "Use when reasoning about play — A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would"
     }
   }
 ]

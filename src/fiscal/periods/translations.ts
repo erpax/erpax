@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fiscal-periods",
-    "uuid": "b618be6c-d561-8559-a124-007e8ad11463",
+    "source": "periods",
+    "uuid": "6f44a5f3-54cd-8b1e-a1c8-2a84df1677ff",
     "words": [
-      "fiscal",
       "periods"
     ],
     "values": {
-      "en": "fiscal-periods"
+      "en": "periods"
     }
   },
   {
     "key": "description",
     "source": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-    "uuid": "8b814268-7f94-8e4f-9682-8beeb7aadec0",
+    "uuid": "d8b73e6c-aa6a-85a3-ace3-a613e0aa39f4",
     "words": [
       "use",
       "when",

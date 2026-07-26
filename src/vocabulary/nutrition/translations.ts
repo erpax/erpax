@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nutrition",
-    "uuid": "3d9bd9b7-d557-8b28-aac5-d7ff48091464",
+    "uuid": "1dcdae57-2612-8419-abcb-f31dbff0c687",
     "words": [
       "nutrition"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Nutrition information about the recipe or menu item.",
-    "uuid": "af640f20-96b9-819c-9cd0-0e5cac97abb0",
+    "source": "Use when reasoning about nutrition — Nutrition information about the recipe or menu item.",
+    "uuid": "69a34890-bf45-8a9b-a654-16039220e9ef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "nutrition",
       "nutrition",
       "information",
       "about",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "item"
     ],
     "values": {
-      "en": "Nutrition information about the recipe or menu item."
+      "en": "Use when reasoning about nutrition — Nutrition information about the recipe or menu item."
     }
   }
 ]

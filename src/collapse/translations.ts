@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collapse",
-    "uuid": "5c3cb38e-0a65-8fb1-a7a5-158f54af9308",
+    "uuid": "36860d60-f6c7-870b-8fc4-52001a179d03",
     "words": [
       "collapse"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards.",
-    "uuid": "716f3a31-9a53-80a9-8797-dac5890fe807",
+    "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\\\\\"collapse all to Payload\\\\\\\" law; one name across every dimension, drawn from the standards.",
+    "uuid": "92af5b92-7a47-8328-a5a4-19b173a9b56a",
     "words": [
       "use",
       "when",
@@ -77,7 +77,7 @@ export const translations: readonly Translation[] = [
       "standards"
     ],
     "values": {
-      "en": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards."
+      "en": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\\\\\"collapse all to Payload\\\\\\\" law; one name across every dimension, drawn from the standards."
     }
   }
 ]

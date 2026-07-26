@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "compliance-gaps",
-    "uuid": "1d5daa01-2124-84db-b3d3-e0978bdd0613",
+    "source": "gaps",
+    "uuid": "6b79c612-3af5-8b09-bace-e8d96ebe194b",
     "words": [
-      "compliance",
       "gaps"
     ],
     "values": {
-      "en": "compliance-gaps"
+      "en": "gaps"
     }
   },
   {
     "key": "description",
     "source": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-    "uuid": "7ebb5e71-9e3a-8bb2-b564-31cf88e5bf9d",
+    "uuid": "573436e5-6432-8d22-bc42-ef22b009f598",
     "words": [
       "use",
       "when",

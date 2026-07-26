@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "musical",
-    "uuid": "22965a8d-c861-874a-8bb5-26b8a1d03a92",
+    "uuid": "b7f8cbdd-3569-83b3-b422-c1ec7bd5a224",
     "words": [
       "musical"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "musical: a schema.org component word, fused from musicalKey",
-    "uuid": "81958561-86fa-8943-81b6-f5d053ceb19a",
+    "source": "Use when reasoning about musical — A schema.org component word, collided out of schema.org compounds — fused from musicalKey (sti · collapse · merge).",
+    "uuid": "f52a81ac-dea3-817a-91a8-f34e7d2bddfd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "musical",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "musicalkey"
+      "musicalkey",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "musical: a schema.org component word, fused from musicalKey"
+      "en": "Use when reasoning about musical — A schema.org component word, collided out of schema.org compounds — fused from musicalKey (sti · collapse · merge)."
     }
   }
 ]

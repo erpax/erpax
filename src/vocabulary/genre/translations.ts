@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "genre",
-    "uuid": "635f2c96-5266-82d5-b399-924eb16b8367",
+    "uuid": "1c1ec44d-593e-81ff-86e3-8d35c45b1c1a",
     "words": [
       "genre"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Genre of the creative work, broadcast channel or group.",
-    "uuid": "7ef9a0ab-06a8-89a5-9f4e-fb6c3fc6b68e",
+    "source": "Use when reasoning about genre — Genre of the creative work, broadcast channel or group.",
+    "uuid": "1da2ea24-31a8-8d92-9797-c0121034b443",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "genre",
       "genre",
       "of",
       "the",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "group"
     ],
     "values": {
-      "en": "Genre of the creative work, broadcast channel or group."
+      "en": "Use when reasoning about genre — Genre of the creative work, broadcast channel or group."
     }
   }
 ]

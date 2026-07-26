@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "compliance-frameworks",
-    "uuid": "7fc54d8c-1de2-80d8-bbdc-625e516a3850",
+    "source": "frameworks",
+    "uuid": "959d28b0-0957-8b44-9c77-5abaa2325880",
     "words": [
-      "compliance",
       "frameworks"
     ],
     "values": {
-      "en": "compliance-frameworks"
+      "en": "frameworks"
     }
   },
   {
     "key": "description",
     "source": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
-    "uuid": "8dac8f09-91eb-8f90-bb46-0b39152ea699",
+    "uuid": "02cd8b9b-c69e-828a-82c3-ed70f1ad1076",
     "words": [
       "use",
       "when",

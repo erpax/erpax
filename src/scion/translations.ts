@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scion",
-    "uuid": "87f43e2f-7357-8905-85ce-2f0a81632b60",
+    "uuid": "dec8e90b-f29f-8239-bfcb-85984a34b090",
     "words": [
       "scion"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the fruiting cultivar grafted onto a rootstock — the scion determines the variety/clone (the produce identity, a taxonomy rank). The aerial half of the grafted perennial plant, paired with the rootstock via a graft.",
-    "uuid": "8917ce3e-923a-8fc4-8bf7-a49f792977c5",
+    "uuid": "46496948-f280-8108-82ac-44a478abe7fb",
     "words": [
       "use",
       "when",

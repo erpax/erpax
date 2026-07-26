@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "result",
-    "uuid": "0c96d818-d948-8c26-8e3f-e0e8144ba3a3",
+    "uuid": "99b7f9e3-8932-80cf-b0c8-975b527d321b",
     "words": [
       "result"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The result produced in the action. E.g. John wrote *a book*.",
-    "uuid": "f5076e82-ade4-86ab-a1b5-b718b72586f3",
+    "source": "Use when reasoning about result — The result produced in the action. E.g. John wrote *a book*.",
+    "uuid": "2970c9b2-a39a-8715-8197-10fbdf1a152c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "result",
       "the",
       "result",
       "produced",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "book"
     ],
     "values": {
-      "en": "The result produced in the action. E.g. John wrote *a book*."
+      "en": "Use when reasoning about result — The result produced in the action. E.g. John wrote *a book*."
     }
   }
 ]

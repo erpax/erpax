@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "same",
-    "uuid": "20775feb-ceae-868d-9b78-5d86682c1a3f",
+    "uuid": "42456548-5985-8d05-a982-8bd4e80aa31a",
     "words": [
       "same"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
-    "uuid": "8466263e-ab41-8e94-97b7-0eb4d5ea7fe1",
+    "source": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+    "uuid": "765d13d2-de3f-818e-b7cf-115993ee832a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "same",
       "url",
       "of",
       "a",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "website"
     ],
     "values": {
-      "en": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
+      "en": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
     }
   }
 ]

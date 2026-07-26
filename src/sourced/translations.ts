@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sourced",
-    "uuid": "e76eeca7-aa28-874f-974c-d15ee8114bf3",
+    "uuid": "629064dd-6b8f-8334-b38a-f944c0af4a24",
     "words": [
       "sourced"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The neurological pathway that originates the neurons.",
-    "uuid": "6c04ea62-9e7c-8102-a32d-c9df7523d067",
+    "source": "Use when reasoning about sourced — The neurological pathway that originates the neurons.",
+    "uuid": "272e9806-3aeb-8fe8-80d8-69715673998e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sourced",
       "the",
       "neurological",
       "pathway",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "neurons"
     ],
     "values": {
-      "en": "The neurological pathway that originates the neurons."
+      "en": "Use when reasoning about sourced — The neurological pathway that originates the neurons."
     }
   }
 ]

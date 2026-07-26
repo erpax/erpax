@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "period-locks",
-    "uuid": "a1b058dc-5f1d-855b-8857-2432aea8f493",
+    "source": "locks",
+    "uuid": "597ecbb7-7bf4-83f5-b4f9-46ae44d18874",
     "words": [
-      "period",
       "locks"
     ],
     "values": {
-      "en": "period-locks"
+      "en": "locks"
     }
   },
   {
     "key": "description",
     "source": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-    "uuid": "5347824c-eadf-8700-8b30-a91900dd2e08",
+    "uuid": "7aeb06a6-54b0-8990-91c9-cb735ca36335",
     "words": [
       "use",
       "when",

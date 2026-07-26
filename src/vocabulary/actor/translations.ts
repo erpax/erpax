@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "actor",
-    "uuid": "9d6716fd-f205-8c1d-ba71-0a0d71f6bfea",
+    "uuid": "0b78dcbb-3f4d-87ed-9112-71ee466b919f",
     "words": [
       "actor"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
-    "uuid": "0c10a138-4625-8162-a0e7-3a7ea0ea9cec",
+    "source": "Use when reasoning about actor — An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+    "uuid": "96587d86-c0d7-8d8f-b332-5189b98fbf87",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "actor",
       "an",
       "actor",
       "individual",
@@ -54,7 +59,7 @@ export const translations: readonly Translation[] = [
       "clip"
     ],
     "values": {
-      "en": "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip."
+      "en": "Use when reasoning about actor — An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip."
     }
   }
 ]

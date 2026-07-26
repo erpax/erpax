@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "carrier",
-    "uuid": "91f74222-a844-82c2-816c-a9e458310b04",
+    "uuid": "c4eb8b9f-73ae-8f73-b07f-3a8cd812ea19",
     "words": [
       "carrier"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
-    "uuid": "2571bef0-ec27-8823-a8b6-244256e6a5dd",
+    "source": "Use when reasoning about carrier — 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
+    "uuid": "e0eea3d4-05fb-8d1a-a617-be38fb3dc82b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "carrier",
       "carrier",
       "is",
       "an",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "flights"
     ],
     "values": {
-      "en": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights."
+      "en": "Use when reasoning about carrier — 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights."
     }
   }
 ]

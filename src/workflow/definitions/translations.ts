@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "workflow-definitions",
-    "uuid": "3b0de299-50dd-8677-a99d-ea41ff3cdbcd",
+    "source": "definitions",
+    "uuid": "2fbc367f-9d98-8c02-9961-fe22a4f69a4e",
     "words": [
-      "workflow",
       "definitions"
     ],
     "values": {
-      "en": "workflow-definitions"
+      "en": "definitions"
     }
   },
   {
     "key": "description",
     "source": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
-    "uuid": "147e2305-20ce-8023-8e35-c390589ff650",
+    "uuid": "ed1d976e-6f70-889b-9d35-85aa31ae29ab",
     "words": [
       "use",
       "when",

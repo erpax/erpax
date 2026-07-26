@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "utterances",
-    "uuid": "2baf5bb1-5f58-8470-8759-b67aa1baa086",
+    "uuid": "81d36ac7-4362-8297-bc14-8c24ade0f2f6",
     "words": [
       "utterances"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
-    "uuid": "9abd81b2-e8bb-8e3b-803e-1c8efaadcc91",
+    "source": "Use when reasoning about utterances — Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
+    "uuid": "f1f31c59-2821-8f3e-9563-6b9ba07f9e6b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "utterances",
       "text",
       "of",
       "an",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "hypertocentry"
     ],
     "values": {
-      "en": "Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry."
+      "en": "Use when reasoning about utterances — Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry."
     }
   }
 ]

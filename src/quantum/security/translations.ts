@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-security",
-    "uuid": "b41e6d0d-0e67-8d5b-8f9c-4488a421970d",
+    "source": "security",
+    "uuid": "9137e0ee-3e0b-87b4-b3eb-90d4f80a4e2b",
     "words": [
-      "quantum",
       "security"
     ],
     "values": {
-      "en": "quantum-security"
+      "en": "security"
     }
   },
   {
     "key": "description",
     "source": "Use when auditing or hardening erpax — security is bidirectional, the love and fear duality on the trust layer; the quantum twin runs both lenses at once (blue verifies the control holds, red prices forging past it) so a finding is a balanced attack-and-defense pair and audit coverage is the metric.",
-    "uuid": "1a9bee7f-181a-809a-9aa0-cc0d4df61640",
+    "uuid": "f6d091ca-c5ef-8d73-b8a4-20963f2acc12",
     "words": [
       "use",
       "when",

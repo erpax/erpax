@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "octave",
-    "uuid": "b57df10a-3973-8dc5-901b-4dd0964af038",
+    "uuid": "9fb82d10-a930-8ca6-ac91-db7de61b6563",
     "words": [
       "octave"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-    "uuid": "fe39f7a4-3aa1-857c-9997-2bacddd8ca67",
+    "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\\\\\"next octave\\\\\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
+    "uuid": "fc9db6a9-9e94-82bc-b858-70eb0d06c999",
     "words": [
       "use",
       "when",
@@ -63,7 +63,7 @@ export const translations: readonly Translation[] = [
       "rodin"
     ],
     "values": {
-      "en": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
+      "en": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\\\\\"next octave\\\\\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "colleagues",
-    "uuid": "e9df598e-ce2a-87aa-9074-00e8ae6c51b7",
+    "uuid": "6acc6ba4-e002-8c7e-80e0-0c3dc48dd983",
     "words": [
       "colleagues"
     ],
@@ -17,20 +17,43 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The person's colleagues — the plural of colleague.",
-    "uuid": "ebbc0afe-0f42-80d5-a63c-c321074ed384",
+    "source": "Use when reasoning about colleagues — The person's colleagues — see colleague (the singular). A dimension of one relation: colleagues is the collection, colleague the unit; the text lives once, in colleague.",
+    "uuid": "27c0428f-1cd5-852e-b4f6-206cbcd76718",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "colleagues",
       "the",
       "person",
       "s",
       "colleagues",
+      "see",
+      "colleague",
       "the",
-      "plural",
+      "singular",
+      "a",
+      "dimension",
       "of",
+      "one",
+      "relation",
+      "colleagues",
+      "is",
+      "the",
+      "collection",
+      "colleague",
+      "the",
+      "unit",
+      "the",
+      "text",
+      "lives",
+      "once",
+      "in",
       "colleague"
     ],
     "values": {
-      "en": "The person's colleagues — the plural of colleague."
+      "en": "Use when reasoning about colleagues — The person's colleagues — see colleague (the singular). A dimension of one relation: colleagues is the collection, colleague the unit; the text lives once, in colleague."
     }
   }
 ]

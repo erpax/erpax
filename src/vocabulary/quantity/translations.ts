@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantity",
-    "uuid": "97c879bd-2202-80af-9a94-93da6b762c00",
+    "uuid": "48351f66-2e64-82c7-b111-c63bb27829cd",
     "words": [
       "quantity"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'.",
-    "uuid": "4dd26f92-f0d0-8265-91e8-90acb6a123cc",
+    "source": "Use when reasoning about quantity — Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'.",
+    "uuid": "63ef0e40-96e0-8712-b424-3ffc5cbff9db",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "quantity",
       "quantities",
       "such",
       "as",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "milligrams"
     ],
     "values": {
-      "en": "Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'."
+      "en": "Use when reasoning about quantity — Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'."
     }
   }
 ]

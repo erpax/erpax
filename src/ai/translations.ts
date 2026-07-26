@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ai",
-    "uuid": "d8068dfd-9584-8b92-b5f9-12ae7fc9ed97",
+    "uuid": "385e3d9b-b930-8c08-acc1-76f9a7df1cf5",
     "words": [
       "ai"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-    "uuid": "ca7deb9f-f215-8828-9fd5-5b202b762a9f",
+    "uuid": "24d7d7a9-3d51-865e-a13b-4e06f348d974",
     "words": [
       "use",
       "when",

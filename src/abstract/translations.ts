@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "abstract",
-    "uuid": "d385c183-750c-826b-8a58-3d2d7fc242dc",
+    "uuid": "ba44d764-0e4c-8841-bef4-ceca1058952d",
     "words": [
       "abstract"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An abstract is a short description that summarizes a CreativeWork.",
-    "uuid": "a3143c6d-a452-8378-909f-55c900103094",
+    "source": "Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.",
+    "uuid": "dc28661e-fa1f-81d2-a505-910c1b9c7453",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "abstract",
       "an",
       "abstract",
       "is",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "creativework"
     ],
     "values": {
-      "en": "An abstract is a short description that summarizes a CreativeWork."
+      "en": "Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork."
     }
   }
 ]

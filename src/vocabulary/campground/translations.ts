@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "campground",
-    "uuid": "74ada8cd-faeb-8e28-be29-0c818ec21a07",
+    "uuid": "fbd56c56-0f1d-858a-819f-d6fdfe76ea7e",
     "words": [
       "campground"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is an area, usually di",
-    "uuid": "d29b33ff-fa79-8c39-ba1b-5c699aafeade",
+    "source": "Use when reasoning about campground — A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is",
+    "uuid": "58678ed8-10c0-8e75-a930-931618256d1e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "campground",
       "a",
       "camping",
       "site",
@@ -46,14 +51,10 @@ export const translations: readonly Translation[] = [
       "english",
       "a",
       "campsite",
-      "is",
-      "an",
-      "area",
-      "usually",
-      "di"
+      "is"
     ],
     "values": {
-      "en": "A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is an area, usually di"
+      "en": "Use when reasoning about campground — A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is"
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "reverse-engineering",
-    "uuid": "6533b449-cf51-81ab-8b9a-96bd7b4e8f20",
+    "source": "engineering",
+    "uuid": "602b26f2-2336-81d9-855b-d6166e1086c7",
     "words": [
-      "reverse",
       "engineering"
     ],
     "values": {
-      "en": "reverse-engineering"
+      "en": "engineering"
     }
   },
   {
     "key": "description",
     "source": "Use when recovering a system's design from its artifact — the reverse pull of gravity (the binary back to the root words), the inhale of the breath; how erpax absorbs an external system by deriving its structure into content-addressed atoms, for migration, interoperability, defensive audit, and learning.",
-    "uuid": "e15d7b0a-1e6b-866a-9f53-38c864919421",
+    "uuid": "b45a76a3-e829-84f2-ba6d-25420cdcef69",
     "words": [
       "use",
       "when",

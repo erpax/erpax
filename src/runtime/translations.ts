@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "runtime",
-    "uuid": "5aa0e5f3-2454-8aa0-b11e-03cb7b079d70",
+    "uuid": "39256976-82ae-8e3c-8c0d-1e778167e945",
     "words": [
       "runtime"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
-    "uuid": "9ac1b53d-6136-8865-9b7a-17c83bcc95e9",
+    "source": "Use when reasoning about runtime — Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
+    "uuid": "b8db4ce2-a711-87f9-ab6e-be8b179ad3cd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "runtime",
       "runtime",
       "platform",
       "or",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "framework"
     ],
     "values": {
-      "en": "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0)."
+      "en": "Use when reasoning about runtime — Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0)."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "material",
-    "uuid": "3fd0bf13-a354-847e-b47c-ad497b54451c",
+    "uuid": "06aac4f7-361d-89d5-8e0c-e2b78e7df679",
     "words": [
       "material"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A material that something is made from, e.g. leather, wool, cotton, paper.",
-    "uuid": "cea39f4a-71dc-8101-bab2-bf4574d9b8a2",
+    "source": "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper.",
+    "uuid": "e6b52b83-6781-85c6-a417-1ea210af4680",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "material",
       "a",
       "material",
       "that",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "paper"
     ],
     "values": {
-      "en": "A material that something is made from, e.g. leather, wool, cotton, paper."
+      "en": "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper."
     }
   }
 ]

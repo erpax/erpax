@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "project-milestones",
-    "uuid": "79ba0028-1a11-852e-800d-57d8b66078ae",
+    "source": "milestones",
+    "uuid": "18ac4fc9-ad30-8419-942d-c621e1169c0f",
     "words": [
-      "project",
       "milestones"
     ],
     "values": {
-      "en": "project-milestones"
+      "en": "milestones"
     }
   },
   {
     "key": "description",
     "source": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
-    "uuid": "e67d6a00-676d-886a-9cd2-c638bbac3b64",
+    "uuid": "486c69fb-eb42-8450-9dd1-84df91566b66",
     "words": [
       "use",
       "when",

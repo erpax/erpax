@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "tax-returns",
-    "uuid": "95f13aba-2e90-8cf9-8d3b-fa4943cd9518",
+    "source": "returns",
+    "uuid": "a767eceb-f762-8f4c-b3a1-e31285cd3ce5",
     "words": [
-      "tax",
       "returns"
     ],
     "values": {
-      "en": "tax-returns"
+      "en": "returns"
     }
   },
   {
     "key": "description",
     "source": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
-    "uuid": "98d7e101-8e6d-8ae8-b95a-c6fc2286878e",
+    "uuid": "053664aa-d903-84ac-904c-d12726058eb6",
     "words": [
       "use",
       "when",

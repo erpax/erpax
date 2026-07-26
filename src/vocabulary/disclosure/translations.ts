@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disclosure",
-    "uuid": "e97c4f1f-d540-8948-97da-b046dc2b108a",
+    "uuid": "2d82e67a-cd30-82f7-94ab-bede5bbd0365",
     "words": [
       "disclosure"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope",
-    "uuid": "d4ca635a-eee7-8e0e-b55a-339760ddb2fd",
+    "uuid": "6420172a-ed6f-8ccf-923a-e627f654cf15",
     "words": [
       "use",
       "when",

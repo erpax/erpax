@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "compliance-notifications",
-    "uuid": "3e109aaa-e23b-8985-a0fe-c39caf553efa",
+    "source": "notifications",
+    "uuid": "b12a5c1f-f42a-8f12-a50d-389d2be3128f",
     "words": [
-      "compliance",
       "notifications"
     ],
     "values": {
-      "en": "compliance-notifications"
+      "en": "notifications"
     }
   },
   {
     "key": "description",
     "source": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
-    "uuid": "d9732145-565a-85bf-8023-6293f8839223",
+    "uuid": "b9771f6a-29e5-8474-9d57-30ad7f815a37",
     "words": [
       "use",
       "when",

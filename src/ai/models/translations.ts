@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "ai-models",
-    "uuid": "25093f72-4e6c-848c-9e71-fb5628e7fd3a",
+    "source": "models",
+    "uuid": "6b507ae3-9f9b-8eb8-a017-f6355492c2e8",
     "words": [
-      "ai",
       "models"
     ],
     "values": {
-      "en": "ai-models"
+      "en": "models"
     }
   },
   {
     "key": "description",
     "source": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
-    "uuid": "c8c76057-673b-8cda-b087-15a26371a463",
+    "uuid": "c726baca-ac07-83d5-a23f-75a0d19650eb",
     "words": [
       "use",
       "when",

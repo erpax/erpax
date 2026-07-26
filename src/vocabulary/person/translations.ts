@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "person",
-    "uuid": "d63eec22-64c9-8ba8-a9e9-090dceba2765",
+    "uuid": "5b029180-7cc8-8e42-9072-53e818182427",
     "words": [
       "person"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A person (alive, dead, undead, or fictional).",
-    "uuid": "edca8954-0927-8bf4-9dff-5e2211991908",
+    "source": "Use when reasoning about person — A person (alive, dead, undead, or fictional).",
+    "uuid": "09e8528e-f4a3-8cae-a29f-97c5998a9e22",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "person",
       "a",
       "person",
       "alive",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "fictional"
     ],
     "values": {
-      "en": "A person (alive, dead, undead, or fictional)."
+      "en": "Use when reasoning about person — A person (alive, dead, undead, or fictional)."
     }
   }
 ]

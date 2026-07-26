@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "entity-types",
-    "uuid": "1bd8ddd1-1745-8be7-85b0-dbd729774540",
+    "source": "types",
+    "uuid": "437d61a0-1223-8c37-ad25-b5586f019497",
     "words": [
-      "entity",
       "types"
     ],
     "values": {
-      "en": "entity-types"
+      "en": "types"
     }
   },
   {
     "key": "description",
     "source": "Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table.",
-    "uuid": "659caa77-7c6c-8877-87ed-d19aa69983c6",
+    "uuid": "5983597b-ec2e-82fd-ad73-1c9cc132ebf5",
     "words": [
       "use",
       "when",

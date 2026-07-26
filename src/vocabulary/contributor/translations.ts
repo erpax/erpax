@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contributor",
-    "uuid": "170c514a-3e4d-86c8-a4c6-4207ad352cac",
+    "uuid": "e20c56dc-bd27-868c-9b45-ea877fdaca6c",
     "words": [
       "contributor"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A secondary contributor to the CreativeWork or Event.",
-    "uuid": "b6fb1916-3c81-81cb-9b32-c9167fd73212",
+    "source": "Use when reasoning about contributor — A secondary contributor to the CreativeWork or Event.",
+    "uuid": "e91a2280-0e3c-8d7a-aa54-3b4a0bfa033d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "contributor",
       "a",
       "secondary",
       "contributor",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "event"
     ],
     "values": {
-      "en": "A secondary contributor to the CreativeWork or Event."
+      "en": "Use when reasoning about contributor — A secondary contributor to the CreativeWork or Event."
     }
   }
 ]

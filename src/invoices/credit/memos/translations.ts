@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "credit-memos",
-    "uuid": "4d45c36d-19c2-8fd3-84e9-62a4ee0135cd",
+    "source": "memos",
+    "uuid": "f488b273-fba8-8c63-977a-21c6c235907f",
     "words": [
-      "credit",
       "memos"
     ],
     "values": {
-      "en": "credit-memos"
+      "en": "memos"
     }
   },
   {
     "key": "description",
     "source": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
-    "uuid": "5d69b07d-5b1a-8991-9008-5afc4c10cc8b",
+    "uuid": "0591431c-1a66-870e-849e-a0a6cb3ec8bd",
     "words": [
       "use",
       "when",

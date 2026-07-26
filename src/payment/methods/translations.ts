@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "payment-methods",
-    "uuid": "6459422c-d311-8fb6-945e-ff2c7c066e5f",
+    "source": "methods",
+    "uuid": "bfe5703a-8d9e-841c-a92c-f56d0e20c9ee",
     "words": [
-      "payment",
       "methods"
     ],
     "values": {
-      "en": "payment-methods"
+      "en": "methods"
     }
   },
   {
     "key": "description",
     "source": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
-    "uuid": "ae628824-6566-8e12-a675-39d6bb0b1a1e",
+    "uuid": "9df9420e-6559-871e-808c-c825a7ab2b62",
     "words": [
       "use",
       "when",

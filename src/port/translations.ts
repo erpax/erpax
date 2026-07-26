@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "port",
-    "uuid": "b0215b4d-6fc3-8ccd-9b93-67f551dcea9a",
+    "uuid": "86b03c2d-65ba-8acd-8c36-de9e5d79ce87",
     "words": [
       "port"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone.",
-    "uuid": "f6fabbc7-c3d4-8597-a204-e77b0ea156cf",
+    "uuid": "0eefb359-33b1-83c0-894c-9cec1affd90c",
     "words": [
       "use",
       "when",

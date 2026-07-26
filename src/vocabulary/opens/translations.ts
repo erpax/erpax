@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "opens",
-    "uuid": "681519de-9f96-8785-8fdc-461151b253fa",
+    "uuid": "3d570e8b-d88b-8d54-8eb9-d4e3980981b5",
     "words": [
       "opens"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The opening hour of the place or service on the given day(s) of the week.",
-    "uuid": "860c8ec5-8f69-89bf-8ea2-b987f496d4ad",
+    "source": "Use when reasoning about opens — The opening hour of the place or service on the given day(s) of the week.",
+    "uuid": "af3b3cfd-d074-8f97-88bf-61cda7be1b3f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "opens",
       "the",
       "opening",
       "hour",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "week"
     ],
     "values": {
-      "en": "The opening hour of the place or service on the given day(s) of the week."
+      "en": "Use when reasoning about opens — The opening hour of the place or service on the given day(s) of the week."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suite",
-    "uuid": "a84007bb-bfcb-8ccf-993a-cc4b328fb740",
+    "uuid": "57324c58-51f3-8399-8a9f-e0f6254d2da6",
     "words": [
       "suite"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see http://en.wikipedi",
-    "uuid": "57216828-b2c6-896b-b248-0b7b47bb3056",
+    "source": "Use when reasoning about suite — A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, se",
+    "uuid": "8018298b-b3d2-8b88-8b59-d7a8dc31e1fa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "suite",
       "a",
       "suite",
       "in",
@@ -48,13 +53,10 @@ export const translations: readonly Translation[] = [
       "the",
       "free",
       "encyclopedia",
-      "see",
-      "http",
-      "en",
-      "wikipedi"
+      "se"
     ],
     "values": {
-      "en": "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see http://en.wikipedi"
+      "en": "Use when reasoning about suite — A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, se"
     }
   }
 ]

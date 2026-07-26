@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hostel",
-    "uuid": "b6d9d19e-4834-8fab-9538-66f81fa4698e",
+    "uuid": "d5316d1b-93b1-830a-ac22-a3a048ee4166",
     "words": [
       "hostel"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-    "uuid": "3ea28eee-1dde-8b16-91c1-d41dd9c52768",
+    "source": "Use when reasoning about hostel — A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
+    "uuid": "98674d72-7b85-80f9-8acb-971b4f6061ef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hostel",
       "a",
       "hostel",
       "cheap",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "accommodations"
     ],
     "values": {
-      "en": "A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations."
+      "en": "Use when reasoning about hostel — A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations."
     }
   }
 ]

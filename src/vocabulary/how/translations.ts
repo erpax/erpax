@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "how",
-    "uuid": "1c46a400-4063-8087-ba9f-54933c53617b",
+    "uuid": "c3b4a079-b29e-88c2-b700-0eeaf8021907",
     "words": [
       "how"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Instructions that explain how to achieve a result by performing a sequence of steps.",
-    "uuid": "dbbe8e1b-a2ed-809d-b3a1-c153084400e6",
+    "source": "Use when reasoning about how — Instructions that explain how to achieve a result by performing a sequence of steps.",
+    "uuid": "c69fa8da-5b54-86ec-9736-015fafe63199",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "how",
       "instructions",
       "that",
       "explain",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "steps"
     ],
     "values": {
-      "en": "Instructions that explain how to achieve a result by performing a sequence of steps."
+      "en": "Use when reasoning about how — Instructions that explain how to achieve a result by performing a sequence of steps."
     }
   }
 ]

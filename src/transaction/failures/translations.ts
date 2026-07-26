@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "transaction-failures",
-    "uuid": "1f7ca54b-501d-827a-8c35-6b6d97607133",
+    "source": "failures",
+    "uuid": "cbbb9f15-8c0d-8916-99d4-5fa5b52a6292",
     "words": [
-      "transaction",
       "failures"
     ],
     "values": {
-      "en": "transaction-failures"
+      "en": "failures"
     }
   },
   {
     "key": "description",
     "source": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
-    "uuid": "6df07a6e-b93c-823a-91ca-ce12bc6314fa",
+    "uuid": "9a5e4887-491b-8547-ae58-8cda7bfdef42",
     "words": [
       "use",
       "when",

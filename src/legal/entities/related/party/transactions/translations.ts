@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "related-party-transactions",
-    "uuid": "b9919207-d957-8b44-a2b2-c2a7f65d04d6",
+    "source": "transactions",
+    "uuid": "847cc3cc-6919-8652-9f9f-da0055019d0d",
     "words": [
-      "related",
-      "party",
       "transactions"
     ],
     "values": {
-      "en": "related-party-transactions"
+      "en": "transactions"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-    "uuid": "eab28bab-4aa7-81c4-ba79-42a2d3dfe9a0",
+    "uuid": "95624e13-2bc6-817d-8944-bb13d50e0420",
     "words": [
       "use",
       "when",

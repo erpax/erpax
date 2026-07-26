@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "observability",
-    "uuid": "eacd2673-aaee-8d28-a244-6b09de873db9",
+    "uuid": "686d7076-559d-844f-b560-350d42ac19d8",
     "words": [
       "observability"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when making systems instrumentable — metrics (gauge/counter/histogram/summary), distributed tracing, structured logging, cardinality explosion in high-dimensional metrics, sampling strategies for observability.",
-    "uuid": "53f5a910-f7b9-8a2e-bd98-8c393ed19bd5",
+    "uuid": "a62b0b9a-3434-8c04-bbcb-36728db73d37",
     "words": [
       "use",
       "when",

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "payroll-runs",
-    "uuid": "e4178de4-cf0e-8093-9724-e3ab3c875a3a",
+    "source": "runs",
+    "uuid": "d10d1c24-4f84-8225-bb35-45c41d610e25",
     "words": [
-      "payroll",
       "runs"
     ],
     "values": {
-      "en": "payroll-runs"
+      "en": "runs"
     }
   },
   {
     "key": "description",
     "source": "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.",
-    "uuid": "0f48b1ae-d891-8ee3-8e09-7b603916dd87",
+    "uuid": "99da8252-872a-8127-ad24-361718aeb3ac",
     "words": [
       "use",
       "when",

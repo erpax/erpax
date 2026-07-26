@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dataset",
-    "uuid": "9f996d3c-f979-8499-9c9f-54ea7290d872",
+    "uuid": "deba5c7e-6616-8f03-8872-cfef7b8b44be",
     "words": [
       "dataset"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A body of structured information describing some topic(s) of interest.",
-    "uuid": "c0e05fd5-82a6-880f-81c7-1d5e42429c78",
+    "source": "Use when reasoning about dataset — A body of structured information describing some topic(s) of interest.",
+    "uuid": "8fae3d6f-bd25-8ca4-99b8-e52b56ccd86e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "dataset",
       "a",
       "body",
       "of",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "interest"
     ],
     "values": {
-      "en": "A body of structured information describing some topic(s) of interest."
+      "en": "Use when reasoning about dataset — A body of structured information describing some topic(s) of interest."
     }
   }
 ]

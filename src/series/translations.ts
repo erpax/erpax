@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "series",
-    "uuid": "86db35cb-8780-8ae7-908b-3ccd3d12c8d2",
+    "uuid": "d4919251-0099-8630-b51a-6fff02f6e8e3",
     "words": [
       "series"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
-    "uuid": "281aebc1-69ec-85e2-9cdd-7f4f1ac390da",
+    "source": "Use when reasoning about series — A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
+    "uuid": "13c23cd6-f627-85d5-b51c-cbbe92372ee6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "series",
       "a",
       "series",
       "in",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "eventseries"
     ],
     "values": {
-      "en": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries."
+      "en": "Use when reasoning about series — A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries."
     }
   }
 ]

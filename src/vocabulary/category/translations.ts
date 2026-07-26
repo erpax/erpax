@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "category",
-    "uuid": "cc2d9416-050f-8af1-bc44-68c872a2a79f",
+    "uuid": "1a62554d-1b05-8f5c-b762-227bb29cb611",
     "words": [
       "category"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
-    "uuid": "79349425-db60-866d-b36a-d0c76d3d57ca",
+    "source": "Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+    "uuid": "7cf3a1e2-0e93-8824-9b71-0b1e6063f3dd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "category",
       "a",
       "category",
       "for",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "hierarchy"
     ],
     "values": {
-      "en": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy."
+      "en": "Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy."
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "consignment-sales",
-    "uuid": "7f9699c6-cf4a-827f-b25c-2728bf5d5af3",
+    "source": "sales",
+    "uuid": "f59c09e3-7b7f-8150-95ac-e6d259b79106",
     "words": [
-      "consignment",
       "sales"
     ],
     "values": {
-      "en": "consignment-sales"
+      "en": "sales"
     }
   },
   {
     "key": "description",
     "source": "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.",
-    "uuid": "528a4bf2-7f6b-81aa-903f-a52bfce5d17b",
+    "uuid": "375cd714-c2ae-8b8a-8469-6732789e8bbe",
     "words": [
       "use",
       "when",

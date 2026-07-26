@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bed",
-    "uuid": "d3a58574-c089-8f9f-bcb2-eda49dc915f2",
+    "uuid": "5689f27e-c6e3-8714-91c3-f834362c47d4",
     "words": [
       "bed"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity of a certain kind o",
-    "uuid": "cfdcd52a-196c-8a4f-ae72-6506f9c4e78f",
+    "source": "Use when reasoning about bed — The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity",
+    "uuid": "e82827e1-8688-8cb3-8ba2-a282b1485563",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "bed",
       "the",
       "type",
       "of",
@@ -55,15 +60,10 @@ export const translations: readonly Translation[] = [
       "to",
       "indicate",
       "the",
-      "quantity",
-      "of",
-      "a",
-      "certain",
-      "kind",
-      "o"
+      "quantity"
     ],
     "values": {
-      "en": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity of a certain kind o"
+      "en": "Use when reasoning about bed — The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity"
     }
   }
 ]

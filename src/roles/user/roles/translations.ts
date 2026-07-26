@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "user-roles",
-    "uuid": "fa25ad9f-e2b7-865c-b826-5afff346cc15",
+    "source": "roles",
+    "uuid": "9fd4f61f-0033-8b9e-80bc-d43e189a06ad",
     "words": [
-      "user",
       "roles"
     ],
     "values": {
-      "en": "user-roles"
+      "en": "roles"
     }
   },
   {
     "key": "description",
     "source": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
-    "uuid": "5718437c-21ca-880b-832c-d2499b5ef3c5",
+    "uuid": "895a1430-48ab-862b-92c1-6a9e11a614a6",
     "words": [
       "use",
       "when",

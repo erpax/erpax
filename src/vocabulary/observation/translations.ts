@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "observation",
-    "uuid": "224fe76a-10f9-8a64-a865-43f1a89ce242",
+    "uuid": "09726a44-62c3-8ad8-8e6f-879370655cfb",
     "words": [
       "observation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredProperty, statType, [",
-    "uuid": "f26eb56a-1e6c-844f-a097-5ba5405864e2",
+    "source": "Use when reasoning about observation — Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredP",
+    "uuid": "55ba75e3-2586-8dcc-a301-8485c3df4e0c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "observation",
       "instances",
       "of",
       "the",
@@ -45,11 +50,10 @@ export const translations: readonly Translation[] = [
       "observation",
       "are",
       "observationabout",
-      "measuredproperty",
-      "stattype"
+      "measuredp"
     ],
     "values": {
-      "en": "Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredProperty, statType, ["
+      "en": "Use when reasoning about observation — Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredP"
     }
   }
 ]

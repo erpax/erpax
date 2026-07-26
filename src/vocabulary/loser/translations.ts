@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "loser",
-    "uuid": "0ec432ec-57a4-84a6-b187-b009b8e558d9",
+    "uuid": "0a548b45-57dc-85d1-aa6a-1aa48a9d1bd0",
     "words": [
       "loser"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A sub property of participant. The loser of the action.",
-    "uuid": "cf584645-be1c-859c-8985-890ac4862a5b",
+    "source": "Use when reasoning about loser — A sub property of participant. The loser of the action.",
+    "uuid": "4e49eec7-7b19-898b-9188-ebade84c43e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "loser",
       "a",
       "sub",
       "property",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "action"
     ],
     "values": {
-      "en": "A sub property of participant. The loser of the action."
+      "en": "Use when reasoning about loser — A sub property of participant. The loser of the action."
     }
   }
 ]

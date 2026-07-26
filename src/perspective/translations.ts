@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "perspective",
-    "uuid": "8aac93fc-1543-8e80-aee7-90837f86e0ef",
+    "uuid": "66720159-f69b-8da2-857a-9f99dab2b08b",
     "words": [
       "perspective"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
-    "uuid": "afdd3e8d-7ffa-8c08-b338-9b0b6bd897d1",
+    "source": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\\\\\"my customer\\\\\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
+    "uuid": "fce391f6-f1c5-87ee-9caf-da7eb9edfd0a",
     "words": [
       "use",
       "when",
@@ -73,7 +73,7 @@ export const translations: readonly Translation[] = [
       "projection"
     ],
     "values": {
-      "en": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
+      "en": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\\\\\"my customer\\\\\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spatial",
-    "uuid": "3cc88950-1b62-8921-99e3-a5a383ad3a37",
+    "uuid": "8e3fec56-ae0f-8665-9650-386f5a6039f5",
     "words": [
       "spatial"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The \\\"spatial\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate.",
-    "uuid": "a8e3073e-b411-8163-a5dd-005b1a1de205",
+    "source": "Use when reasoning about spatial — The \\\\\\\"spatial\\\\\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate.",
+    "uuid": "d5c211e6-c81f-8859-a901-6c6e54610cf9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "spatial",
       "the",
       "spatial",
       "property",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "appropriate"
     ],
     "values": {
-      "en": "The \\\"spatial\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate."
+      "en": "Use when reasoning about spatial — The \\\\\\\"spatial\\\\\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate."
     }
   }
 ]

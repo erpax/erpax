@@ -6,22 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "post-balance-sheet-events",
-    "uuid": "89e2a277-e3ed-87ba-baa1-ccea581a6fa7",
+    "source": "events",
+    "uuid": "2422410a-cedf-8a22-9e38-88ee0b886a16",
     "words": [
-      "post",
-      "balance",
-      "sheet",
       "events"
     ],
     "values": {
-      "en": "post-balance-sheet-events"
+      "en": "events"
     }
   },
   {
     "key": "description",
     "source": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-    "uuid": "6d64bcc4-a6e4-8df9-9f41-c92464c5db86",
+    "uuid": "3d6c9fbc-eaaa-8e01-ab2f-4da45e484d36",
     "words": [
       "use",
       "when",

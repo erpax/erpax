@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "action",
-    "uuid": "c2e9d738-cada-84a9-981d-b5a14f7656d9",
+    "uuid": "888a20a5-bbbc-8f75-98ea-7dbbeca70c9a",
     "words": [
       "action"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce",
-    "uuid": "cb0c9f7b-b51e-8b84-b28e-7acf49730b0a",
+    "source": "Use when reasoning about action — An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of th",
+    "uuid": "440d4d24-6f67-8f96-b11a-973f4dd20516",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "action",
       "an",
       "action",
       "performed",
@@ -49,13 +54,10 @@ export const translations: readonly Translation[] = [
       "the",
       "execution",
       "of",
-      "the",
-      "action",
-      "may",
-      "produce"
+      "th"
     ],
     "values": {
-      "en": "An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce"
+      "en": "Use when reasoning about action — An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of th"
     }
   }
 ]

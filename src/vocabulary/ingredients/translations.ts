@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ingredients",
-    "uuid": "17e23d6b-d77f-8cb7-8959-653beb4d0294",
+    "uuid": "e983b12f-4937-89f0-a371-404eb1a0e8dc",
     "words": [
       "ingredients"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
-    "uuid": "2e2ec3f3-91ea-85a1-bba9-2d9501754161",
+    "source": "Use when reasoning about ingredients — A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
+    "uuid": "cbbeaf1c-348b-81d0-80df-05fb856b6f12",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "ingredients",
       "a",
       "single",
       "ingredient",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "garlic"
     ],
     "values": {
-      "en": "A single ingredient used in the recipe, e.g. sugar, flour or garlic."
+      "en": "Use when reasoning about ingredients — A single ingredient used in the recipe, e.g. sugar, flour or garlic."
     }
   }
 ]

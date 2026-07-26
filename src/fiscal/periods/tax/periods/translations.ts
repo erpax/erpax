@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "tax-periods",
-    "uuid": "5b4882bf-6233-83b3-b54b-26454af674d7",
+    "source": "periods",
+    "uuid": "6f44a5f3-54cd-8b1e-a1c8-2a84df1677ff",
     "words": [
-      "tax",
       "periods"
     ],
     "values": {
-      "en": "tax-periods"
+      "en": "periods"
     }
   },
   {
     "key": "description",
     "source": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-    "uuid": "6b040960-69d1-83e9-b462-51b6adc80da9",
+    "uuid": "e1e62fc5-471f-8896-93bc-7f022d7d24f5",
     "words": [
       "use",
       "when",

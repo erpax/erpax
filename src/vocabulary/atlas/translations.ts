@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "atlas",
-    "uuid": "341f65a6-2d80-8232-a777-b3a9dda2ea0b",
+    "uuid": "43d940fe-3da1-805f-8b41-3b93a39ec688",
     "words": [
       "atlas"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.",
-    "uuid": "9698ccac-4fb0-8da7-bd92-0e45feefc1a9",
+    "source": "Use when reasoning about atlas — A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.",
+    "uuid": "dab74490-d344-884c-a3aa-d0df75e3a292",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "atlas",
       "a",
       "collection",
       "or",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "subject"
     ],
     "values": {
-      "en": "A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject."
+      "en": "Use when reasoning about atlas — A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject."
     }
   }
 ]

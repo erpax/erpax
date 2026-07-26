@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inform",
-    "uuid": "7fd6485d-acb4-806c-a010-b30b414b760c",
+    "uuid": "9d1b7c8c-f8e4-83a7-bd8c-6d04ba50b88c",
     "words": [
       "inform"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "inform: a schema.org component word, fused from InformAction",
-    "uuid": "9cce5cb5-ba91-8124-9c6f-da6043027a19",
+    "source": "Use when reasoning about inform — A schema.org component word, collided out of schema.org compounds — fused from InformAction (sti · collapse · merge).",
+    "uuid": "bc3c9d42-276a-8b54-a212-8a67ba7c1f18",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "inform",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "informaction"
+      "informaction",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "inform: a schema.org component word, fused from InformAction"
+      "en": "Use when reasoning about inform — A schema.org component word, collided out of schema.org compounds — fused from InformAction (sti · collapse · merge)."
     }
   }
 ]

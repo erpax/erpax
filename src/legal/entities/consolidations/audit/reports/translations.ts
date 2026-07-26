@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-reports",
-    "uuid": "4f7e1586-f0f8-8f91-b81f-8f99e45bfe59",
+    "source": "reports",
+    "uuid": "9f131474-631b-87ab-8044-fe8ebb5cf572",
     "words": [
-      "audit",
       "reports"
     ],
     "values": {
-      "en": "audit-reports"
+      "en": "reports"
     }
   },
   {
     "key": "description",
     "source": "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.",
-    "uuid": "ee7624b1-8014-8cdc-b8e6-f05003e931d0",
+    "uuid": "c04d4f8d-87a8-8c1e-ada5-6cd6627d27ac",
     "words": [
       "use",
       "when",

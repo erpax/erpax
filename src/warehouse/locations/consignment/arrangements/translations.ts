@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "consignment-arrangements",
-    "uuid": "9a071cc8-aa20-8aca-bd6d-c4d1d283b0e0",
+    "source": "arrangements",
+    "uuid": "a88c0b22-55d1-8b27-ae8a-37a4c36d7a51",
     "words": [
-      "consignment",
       "arrangements"
     ],
     "values": {
-      "en": "consignment-arrangements"
+      "en": "arrangements"
     }
   },
   {
     "key": "description",
     "source": "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection.",
-    "uuid": "5c623cf9-7354-84b3-bceb-ad91594af8e2",
+    "uuid": "74c031df-8ffe-8723-8cad-87fc500b0cd0",
     "words": [
       "use",
       "when",

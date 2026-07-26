@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "offers",
-    "uuid": "e11a648b-36f1-8fed-9952-f064560449fe",
+    "uuid": "a65d023d-0321-8539-9c0a-a126ecf5a185",
     "words": [
       "offers"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to indicate the kind of",
-    "uuid": "0013bff5-ee16-8b04-8abd-bb9094c95151",
+    "source": "Use when reasoning about offers — An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to",
+    "uuid": "3c0e0f45-cfa3-8f62-843c-48c6f32aaa82",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "offers",
       "an",
       "offer",
       "to",
@@ -53,14 +58,10 @@ export const translations: readonly Translation[] = [
       "event",
       "use",
       "businessfunction",
-      "to",
-      "indicate",
-      "the",
-      "kind",
-      "of"
+      "to"
     ],
     "values": {
-      "en": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to indicate the kind of"
+      "en": "Use when reasoning about offers — An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to"
     }
   }
 ]

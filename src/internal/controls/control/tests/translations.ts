@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "control-tests",
-    "uuid": "0c04d7f1-4313-8ab4-a118-fe0c50464f70",
+    "source": "tests",
+    "uuid": "a67ea8ff-57cf-8168-94d8-33c0d2edfaee",
     "words": [
-      "control",
       "tests"
     ],
     "values": {
-      "en": "control-tests"
+      "en": "tests"
     }
   },
   {
     "key": "description",
     "source": "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.",
-    "uuid": "27e93867-1440-87f4-9439-7c9e9e82e298",
+    "uuid": "a17a74de-2bfc-8e54-a94a-326839d66d14",
     "words": [
       "use",
       "when",

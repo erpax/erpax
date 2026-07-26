@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "study",
-    "uuid": "047e7d75-aa2e-896b-8ff0-3218bf41cab0",
+    "uuid": "8760e7d1-8d14-8ea7-aaef-d6bfe9596803",
     "words": [
       "study"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A medical study or trial related to this entity.",
-    "uuid": "6a9ca9c3-9036-849b-b1ab-1d66461de0ea",
+    "source": "Use when reasoning about study — A medical study or trial related to this entity.",
+    "uuid": "68087508-56e9-808b-9a69-e7221cdac349",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "study",
       "a",
       "medical",
       "study",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "entity"
     ],
     "values": {
-      "en": "A medical study or trial related to this entity."
+      "en": "Use when reasoning about study — A medical study or trial related to this entity."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "industry",
-    "uuid": "a713f0f5-7d70-8a2a-8295-05c926a85b63",
+    "uuid": "ae7b2cab-a2fe-84b8-99c5-51c139c28c50",
     "words": [
       "industry"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The industry associated with the job position.",
-    "uuid": "64b51365-58d7-8fb8-b4bf-4a8b199e954c",
+    "source": "Use when reasoning about industry — The industry associated with the job position.",
+    "uuid": "1c860243-072f-83e0-8168-7eeef007c0e8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "industry",
       "the",
       "industry",
       "associated",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "position"
     ],
     "values": {
-      "en": "The industry associated with the job position."
+      "en": "Use when reasoning about industry — The industry associated with the job position."
     }
   }
 ]

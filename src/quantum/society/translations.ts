@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-society",
-    "uuid": "e2376702-d5c8-8a32-b44b-0a476131fa82",
+    "source": "society",
+    "uuid": "c7eaec01-c930-84c5-95dc-8b2314e3877b",
     "words": [
-      "quantum",
       "society"
     ],
     "values": {
-      "en": "quantum-society"
+      "en": "society"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about erpax as a social-engineering platform in the civic sense — society run on the quantum substrate (content-uuid, double-entry, tamper-evident) so coordination is legible and accountable, not covert; the quantum twin of society.",
-    "uuid": "3572ecc6-d7ab-8bf0-9a95-31dbcc3c7240",
+    "uuid": "73b26a31-c1dd-8469-9b0d-bc92e575106f",
     "words": [
       "use",
       "when",

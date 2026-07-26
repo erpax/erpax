@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "substance",
-    "uuid": "9460a006-aad7-8772-a07c-4a0bb57d77c3",
+    "uuid": "586b9852-2131-8b16-9dc1-52451ad7b033",
     "words": [
       "substance"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.",
-    "uuid": "e64f1fa2-b388-827c-93a3-65ac3b55bebd",
+    "source": "Use when reasoning about substance — Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.",
+    "uuid": "f3cdca81-c0ce-8ec8-b616-aadb3db2999f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "substance",
       "any",
       "matter",
       "of",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "chemical"
     ],
     "values": {
-      "en": "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."
+      "en": "Use when reasoning about substance — Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."
     }
   }
 ]

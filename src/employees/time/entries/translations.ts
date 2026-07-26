@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "time-entries",
-    "uuid": "dc19220a-3f56-847b-a0d6-5eea77b4becb",
+    "source": "entries",
+    "uuid": "448b4c9d-bf3f-810d-96d7-41f90b39ee1b",
     "words": [
-      "time",
       "entries"
     ],
     "values": {
-      "en": "time-entries"
+      "en": "entries"
     }
   },
   {
     "key": "description",
     "source": "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.",
-    "uuid": "f4d2441c-31ff-8c93-a1d9-b851f110e989",
+    "uuid": "df93df3d-4620-80f9-b354-b8f3006e48de",
     "words": [
       "use",
       "when",

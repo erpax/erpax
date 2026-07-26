@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-committee-members",
-    "uuid": "3cd9c0cd-06ec-899f-aeb2-04779981d52b",
+    "source": "members",
+    "uuid": "6668c189-7935-817d-ac18-f95abc8f5a22",
     "words": [
-      "audit",
-      "committee",
       "members"
     ],
     "values": {
-      "en": "audit-committee-members"
+      "en": "members"
     }
   },
   {
     "key": "description",
     "source": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
-    "uuid": "e5184d8b-f0e1-8ac1-ab3b-e8cf7c197f84",
+    "uuid": "63087f5b-6b83-82f6-86e5-6aa4c504650d",
     "words": [
       "use",
       "when",

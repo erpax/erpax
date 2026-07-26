@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "anti-corruption",
-    "uuid": "a45f8ed7-ebee-86e7-8ff3-25312a336d2e",
+    "source": "corruption",
+    "uuid": "ce5400d5-ba2b-81a0-a944-c1b9adce2d23",
     "words": [
-      "anti",
       "corruption"
     ],
     "values": {
-      "en": "anti-corruption"
+      "en": "corruption"
     }
   },
   {
     "key": "description",
     "source": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
-    "uuid": "b6d2ef84-0b79-8af7-a4e8-9587702a4c5a",
+    "uuid": "d6b176e8-a326-8fff-8b77-ca171420c914",
     "words": [
       "use",
       "when",

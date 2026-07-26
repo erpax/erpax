@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diet",
-    "uuid": "052faa5a-2aad-8127-a192-95790fdd36d4",
+    "uuid": "e3ed0420-88e4-84d8-a288-368a070f2a8a",
     "words": [
       "diet"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
-    "uuid": "7a1ad228-06f5-839c-ac5b-703f80df5482",
+    "source": "Use when reasoning about diet — A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
+    "uuid": "c624e978-aed5-89d4-804d-dc92db6295cd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "diet",
       "a",
       "strategy",
       "of",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "goal"
     ],
     "values": {
-      "en": "A strategy of regulating the intake of food to achieve or maintain a specific health-related goal."
+      "en": "Use when reasoning about diet — A strategy of regulating the intake of food to achieve or maintain a specific health-related goal."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wave",
-    "uuid": "9c5202aa-94bb-8a77-ae7b-250f6a111791",
+    "uuid": "debefc5a-ef19-8e2e-8a75-3c7e9982c0a2",
     "words": [
       "wave"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when describing a batch of features added in one development breath before they are collided — a wave rides the horo sequence, raising entropy first so the later collide can DRY it back to the dense core.",
-    "uuid": "b33520b3-3d34-81d5-867b-3a82636c475e",
+    "uuid": "4634dced-322a-80a2-87aa-86f107c24251",
     "words": [
       "use",
       "when",

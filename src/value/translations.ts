@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "value",
-    "uuid": "dcd5fd62-10a0-8e7e-b369-f95dfc0c4cde",
+    "uuid": "a09e7f02-8e1c-8123-bc39-fd3fddebc38f",
     "words": [
       "value"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate.",
-    "uuid": "ebb3dc35-74d5-8194-84e2-3a86f9d2ce52",
+    "uuid": "b54a6945-dd81-8432-b330-0e3800719767",
     "words": [
       "use",
       "when",

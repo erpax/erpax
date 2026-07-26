@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "answer",
-    "uuid": "29b8168e-3e31-8543-9643-1a797d97cd9e",
+    "uuid": "f4d84aca-7b6e-8207-a5b0-722721829514",
     "words": [
       "answer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
-    "uuid": "489f8ef4-762a-86f2-a81b-2dbad5b4af12",
+    "source": "Use when reasoning about answer — An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
+    "uuid": "3eecef84-7b35-80c9-b6bb-e167420b0afa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "answer",
       "an",
       "answer",
       "offered",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "wrong"
     ],
     "values": {
-      "en": "An answer offered to a question; perhaps correct, perhaps opinionated or wrong."
+      "en": "Use when reasoning about answer — An answer offered to a question; perhaps correct, perhaps opinionated or wrong."
     }
   }
 ]

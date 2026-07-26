@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "priority",
-    "uuid": "619f71b7-9df5-8588-8f72-e0a3fe38700e",
+    "uuid": "e26b6a3f-b7cc-822e-83f9-78070e9bbbd4",
     "words": [
       "priority"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field.",
-    "uuid": "89f435df-f3ea-8dba-8b3f-3bd23dbea8c2",
+    "uuid": "19c3843a-ad63-8727-9c11-39ae8c6051ef",
     "words": [
       "use",
       "when",

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "performance-reviews",
-    "uuid": "978e908c-7d73-88a5-8bc0-4927085d6cd5",
+    "source": "reviews",
+    "uuid": "2fc3d532-afdc-86bc-ac80-2725eaf7701e",
     "words": [
-      "performance",
       "reviews"
     ],
     "values": {
-      "en": "performance-reviews"
+      "en": "reviews"
     }
   },
   {
     "key": "description",
     "source": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
-    "uuid": "c15f2006-d0a8-8ce4-9615-81f041852bdb",
+    "uuid": "718fa5f3-2767-8ada-964a-2e6866209197",
     "words": [
       "use",
       "when",

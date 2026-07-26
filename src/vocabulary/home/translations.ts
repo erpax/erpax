@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "home",
-    "uuid": "a3cdd3c7-2f06-8817-8774-67f8fc446a83",
+    "uuid": "99b38ee3-03a9-84ba-b2ff-7887ca84aa49",
     "words": [
       "home"
     ],
@@ -17,24 +17,37 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "home: a schema.org component word, fused from HomeAndConstructionBusiness, HomeGoodsStore, homeLocation, homeTeam",
-    "uuid": "d8c9dd12-635f-818f-a7be-e763608ee21d",
+    "source": "Use when reasoning about home — A schema.org component word, collided out of schema.org compounds — fused from HomeAndConstructionBusiness · HomeGoodsStore · homeLocation · homeTeam (sti · collapse · merge).",
+    "uuid": "ffcabeb5-9807-85c1-8dbc-48cce6b40ecf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "home",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "homeandconstructionbusiness",
       "homegoodsstore",
       "homelocation",
-      "hometeam"
+      "hometeam",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "home: a schema.org component word, fused from HomeAndConstructionBusiness, HomeGoodsStore, homeLocation, homeTeam"
+      "en": "Use when reasoning about home — A schema.org component word, collided out of schema.org compounds — fused from HomeAndConstructionBusiness · HomeGoodsStore · homeLocation · homeTeam (sti · collapse · merge)."
     }
   }
 ]

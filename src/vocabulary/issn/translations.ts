@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "issn",
-    "uuid": "12f521fc-f064-80ed-9838-8070c85dd78d",
+    "uuid": "2a69074f-0a95-889f-9bf7-98cde64e656e",
     "words": [
       "issn"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial pu",
-    "uuid": "40081305-e1d0-8870-b1cf-5c06a965cea1",
+    "source": "Use when reasoning about issn — The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)",
+    "uuid": "c9730d25-29e7-8227-ba48-3a7ce5a2c29e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "issn",
       "the",
       "international",
       "standard",
@@ -46,14 +51,10 @@ export const translations: readonly Translation[] = [
       "linking",
       "issn",
       "issn",
-      "l",
-      "for",
-      "this",
-      "serial",
-      "pu"
+      "l"
     ],
     "values": {
-      "en": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial pu"
+      "en": "Use when reasoning about issn — The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)"
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ch",
-    "uuid": "859bb8f2-8a7f-8e74-aa21-5ea72ee424be",
+    "uuid": "2a110618-a2ba-8ee4-9e62-979a0416d19b",
     "words": [
       "ch"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
-    "uuid": "1f93d97d-e1c2-8a34-bd8a-26844db0e5d5",
+    "source": "Use when reasoning about ch — Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
+    "uuid": "110dd7e6-ec72-8e79-8103-ddd64e15c789",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "ch",
       "non",
       "proprietary",
       "identifier",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "compilations"
     ],
     "values": {
-      "en": "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations."
+      "en": "Use when reasoning about ch — Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations."
     }
   }
 ]

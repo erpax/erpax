@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "round",
-    "uuid": "58f20aea-8928-8dda-b983-159d82de930a",
+    "uuid": "388239b8-5b5c-8f20-bfe0-8dba0d2e2042",
     "words": [
       "round"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the sixth position of the horo state ring — digit 5, \"the ring breathes\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo.",
-    "uuid": "ed9f2e91-106b-83c1-8412-e4146aa99393",
+    "source": "Use when reasoning about the sixth position of the horo state ring — digit 5, \\\\\\\"the ring breathes\\\\\\\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo.",
+    "uuid": "aa9e0082-3cb3-8025-973f-e27b159b61c3",
     "words": [
       "use",
       "when",
@@ -57,7 +57,7 @@ export const translations: readonly Translation[] = [
       "horo"
     ],
     "values": {
-      "en": "Use when reasoning about the sixth position of the horo state ring — digit 5, \"the ring breathes\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo."
+      "en": "Use when reasoning about the sixth position of the horo state ring — digit 5, \\\\\\\"the ring breathes\\\\\\\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo."
     }
   }
 ]

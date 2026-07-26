@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expires",
-    "uuid": "6adfeb48-1358-8ba1-82ac-e6dbd63d1bc3",
+    "uuid": "b5eb4586-8c6a-8bd3-acad-ce5feb9bc1a2",
     "words": [
       "expires"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check whose publisher wants ",
-    "uuid": "653dd44f-12b1-8dbf-af8d-fc572b4c257c",
+    "source": "Use when reasoning about expires — Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check wh",
+    "uuid": "a5050dc9-c438-805c-97ac-14b03ede2fe2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "expires",
       "date",
       "the",
       "content",
@@ -48,12 +53,10 @@ export const translations: readonly Translation[] = [
       "claimreview",
       "fact",
       "check",
-      "whose",
-      "publisher",
-      "wants"
+      "wh"
     ],
     "values": {
-      "en": "Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check whose publisher wants "
+      "en": "Use when reasoning about expires — Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check wh"
     }
   }
 ]

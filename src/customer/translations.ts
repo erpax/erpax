@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "customer",
-    "uuid": "e0dbd1c3-3c3d-8ad3-9bed-a6d548231fe7",
+    "uuid": "e9da67e5-2d6a-8561-9376-011cfbb8a0c4",
     "words": [
       "customer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Party placing the order or paying the invoice.",
-    "uuid": "530febaf-4310-8b49-bb99-c11a5eb19bb0",
+    "source": "Use when reasoning about customer — Party placing the order or paying the invoice.",
+    "uuid": "d0a879d9-84bb-83cb-9200-c440a4ec77ab",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "customer",
       "party",
       "placing",
       "the",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "invoice"
     ],
     "values": {
-      "en": "Party placing the order or paying the invoice."
+      "en": "Use when reasoning about customer — Party placing the order or paying the invoice."
     }
   }
 ]

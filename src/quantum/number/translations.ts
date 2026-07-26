@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-number",
-    "uuid": "acc4c9ac-6d16-85b9-b168-4eed6211e6bf",
+    "source": "number",
+    "uuid": "80f32373-1ea3-831e-b091-7ddda7a51ce3",
     "words": [
-      "quantum",
       "number"
     ],
     "values": {
-      "en": "quantum-number"
+      "en": "number"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line.",
-    "uuid": "fe8bc136-af2b-834d-aed1-9b59a2b31c75",
+    "uuid": "a378b6c9-41ce-81ef-a80b-4e894d13695b",
     "words": [
       "use",
       "when",

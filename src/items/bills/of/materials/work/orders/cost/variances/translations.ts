@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "cost-variances",
-    "uuid": "81085dc6-3798-8971-9106-a78fb054901b",
+    "source": "variances",
+    "uuid": "8482d7d3-e5fa-8c8b-9cc9-063d91936573",
     "words": [
-      "cost",
       "variances"
     ],
     "values": {
-      "en": "cost-variances"
+      "en": "variances"
     }
   },
   {
     "key": "description",
     "source": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
-    "uuid": "4188e549-0d1a-81f9-8743-b04c09315bfa",
+    "uuid": "9d11e2e5-427a-8ea0-8005-a1030e2d81e1",
     "words": [
       "use",
       "when",

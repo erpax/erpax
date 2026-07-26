@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gender",
-    "uuid": "57357b7f-485d-824b-8114-16570e98c90a",
+    "uuid": "74501157-2871-86c0-994c-0466b03a8d71",
     "words": [
       "gender"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable",
-    "uuid": "7d6ccbfa-4041-8229-a848-4aa05e0e625e",
+    "source": "Use when reasoning about gender — Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings",
+    "uuid": "7642e6af-5a10-8eca-a267-a828426fb87b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "gender",
       "gender",
       "of",
       "something",
@@ -47,13 +52,10 @@ export const translations: readonly Translation[] = [
       "be",
       "used",
       "text",
-      "strings",
-      "are",
-      "also",
-      "acceptable"
+      "strings"
     ],
     "values": {
-      "en": "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable"
+      "en": "Use when reasoning about gender — Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings"
     }
   }
 ]

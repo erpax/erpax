@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "recurring-journals",
-    "uuid": "185eda08-9a44-8bed-99aa-94c3c07a67a4",
+    "source": "journals",
+    "uuid": "d48d409e-77b7-8540-947d-8bca218cde10",
     "words": [
-      "recurring",
       "journals"
     ],
     "values": {
-      "en": "recurring-journals"
+      "en": "journals"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-    "uuid": "2a5aca68-2e2a-8e73-8102-448c5bba533f",
+    "uuid": "c2fbf318-b41e-8873-8b41-c06c2685e2cb",
     "words": [
       "use",
       "when",

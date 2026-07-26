@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "payment-runs",
-    "uuid": "64ab36cb-08f3-894d-b1c5-5d371fb673bc",
+    "source": "runs",
+    "uuid": "d10d1c24-4f84-8225-bb35-45c41d610e25",
     "words": [
-      "payment",
       "runs"
     ],
     "values": {
-      "en": "payment-runs"
+      "en": "runs"
     }
   },
   {
     "key": "description",
     "source": "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection.",
-    "uuid": "c6d9c198-2493-8f4e-8cfc-c6f8b551ee6a",
+    "uuid": "393d5cac-2ff1-8575-843f-dc9338c5ce06",
     "words": [
       "use",
       "when",

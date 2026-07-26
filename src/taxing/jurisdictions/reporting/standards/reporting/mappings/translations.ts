@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "reporting-mappings",
-    "uuid": "115ea194-c528-8a66-8f86-d629290e3278",
+    "source": "mappings",
+    "uuid": "94499806-5665-8040-900d-dddbe4a62816",
     "words": [
-      "reporting",
       "mappings"
     ],
     "values": {
-      "en": "reporting-mappings"
+      "en": "mappings"
     }
   },
   {
     "key": "description",
     "source": "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node.",
-    "uuid": "7848fcd9-27d7-833c-a20b-fac0102d096d",
+    "uuid": "c3a2e4f9-ac1d-85f8-9535-0eba2cbf829d",
     "words": [
       "use",
       "when",

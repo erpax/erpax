@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pitch",
-    "uuid": "1e02bf68-ff7d-81a3-b353-2184ece9d749",
+    "uuid": "66386598-ff7e-8c40-86bc-edd570451f09",
     "words": [
       "pitch"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pitch: a schema.org component word, fused from CampingPitch",
-    "uuid": "0796305a-6f63-882d-866e-7ab3191e13ba",
+    "source": "Use when reasoning about pitch — A schema.org component word, collided out of schema.org compounds — fused from CampingPitch (sti · collapse · merge).",
+    "uuid": "ebf0900b-981b-87d2-b9c5-b49bfe0560aa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pitch",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "campingpitch"
+      "campingpitch",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "pitch: a schema.org component word, fused from CampingPitch"
+      "en": "Use when reasoning about pitch — A schema.org component word, collided out of schema.org compounds — fused from CampingPitch (sti · collapse · merge)."
     }
   }
 ]

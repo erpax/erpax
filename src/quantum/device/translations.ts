@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-device",
-    "uuid": "f3bf4a76-2ec9-8fcb-8bec-df05397600d7",
+    "source": "device",
+    "uuid": "7a09f80a-ffef-874f-be37-6fbaef82d500",
     "words": [
-      "quantum",
       "device"
     ],
     "values": {
-      "en": "quantum-device"
+      "en": "device"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain.",
-    "uuid": "269e36bf-a860-898b-856e-4cb57b2bf93d",
+    "uuid": "b1fff728-51d1-856f-ad29-97e61d1bebd8",
     "words": [
       "use",
       "when",

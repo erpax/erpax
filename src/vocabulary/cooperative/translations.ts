@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cooperative",
-    "uuid": "902543fb-400c-8a98-8a09-fc7503079b1c",
+    "uuid": "c51e9432-d42b-863f-8aff-78a7a02a76fd",
     "words": [
       "cooperative"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An organization that is a joint project of multiple organizations or persons.",
-    "uuid": "3c1303cb-db0b-8a50-a4bb-bdba72b6efc4",
+    "source": "Use when reasoning about cooperative — An organization that is a joint project of multiple organizations or persons.",
+    "uuid": "e324efad-efc9-8d40-99ea-5fee0dafc7f8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "cooperative",
       "an",
       "organization",
       "that",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "persons"
     ],
     "values": {
-      "en": "An organization that is a joint project of multiple organizations or persons."
+      "en": "Use when reasoning about cooperative — An organization that is a joint project of multiple organizations or persons."
     }
   }
 ]

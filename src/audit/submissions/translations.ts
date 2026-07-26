@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-submissions",
-    "uuid": "dbd8c410-da74-8704-a867-4f705aabc7a4",
+    "source": "submissions",
+    "uuid": "949b782a-36d1-8b75-b390-ba7922d9c392",
     "words": [
-      "audit",
       "submissions"
     ],
     "values": {
-      "en": "audit-submissions"
+      "en": "submissions"
     }
   },
   {
     "key": "description",
     "source": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
-    "uuid": "388c70cf-738e-882f-8b7f-ae4be624955f",
+    "uuid": "b97cc350-538d-8692-9947-98b7e754c9c7",
     "words": [
       "use",
       "when",

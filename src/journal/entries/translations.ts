@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "journal-entries",
-    "uuid": "45098299-10c7-8d92-a145-169508c1b694",
+    "source": "entries",
+    "uuid": "448b4c9d-bf3f-810d-96d7-41f90b39ee1b",
     "words": [
-      "journal",
       "entries"
     ],
     "values": {
-      "en": "journal-entries"
+      "en": "entries"
     }
   },
   {
     "key": "description",
     "source": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-    "uuid": "947e2552-dd0b-8f49-87c9-a271f5a8c0f1",
+    "uuid": "be9f2ea8-67b8-8450-b38c-a7c609cbf2b2",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hackathon",
-    "uuid": "b8219a82-f06a-8db5-a38f-1cd8279ddf96",
+    "uuid": "87d96c13-aef3-84b0-90e6-ce3b83137562",
     "words": [
       "hackathon"
     ],
@@ -17,15 +17,20 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A hackathon event.",
-    "uuid": "7402600b-6a41-8a1e-9654-38da373d6c31",
+    "source": "Use when reasoning about hackathon — A hackathon event.",
+    "uuid": "aa03c031-73d4-89c8-b36d-96c4ee0a43d5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hackathon",
       "a",
       "hackathon",
       "event"
     ],
     "values": {
-      "en": "A hackathon event."
+      "en": "Use when reasoning about hackathon — A hackathon event."
     }
   }
 ]

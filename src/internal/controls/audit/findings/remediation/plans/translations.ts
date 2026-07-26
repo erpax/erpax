@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "remediation-plans",
-    "uuid": "3d757aaf-0536-88ba-bb46-3bfe27946519",
+    "source": "plans",
+    "uuid": "d7c317a1-e592-82c0-8cfa-64abb7ded06c",
     "words": [
-      "remediation",
       "plans"
     ],
     "values": {
-      "en": "remediation-plans"
+      "en": "plans"
     }
   },
   {
     "key": "description",
     "source": "Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection.",
-    "uuid": "10e97ac2-de18-8490-a742-1fc407b978d7",
+    "uuid": "151c6dc1-3504-8ec2-929a-b8c1eefd9ede",
     "words": [
       "use",
       "when",

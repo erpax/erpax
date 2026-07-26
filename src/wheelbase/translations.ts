@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wheelbase",
-    "uuid": "27801b12-c3b1-8ee1-a23c-dec08a1e741c",
+    "uuid": "2880119e-45a5-8c89-a5d9-9d682102760a",
     "words": [
       "wheelbase"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
-    "uuid": "9636befe-8f88-8b3d-88ff-45f85674e264",
+    "source": "Use when reasoning about wheelbase — The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
+    "uuid": "97b54399-268a-8c49-b6c0-ec2cf9a211b6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "wheelbase",
       "the",
       "distance",
       "between",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "feet"
     ],
     "values": {
-      "en": "The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet."
+      "en": "Use when reasoning about wheelbase — The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet."
     }
   }
 ]

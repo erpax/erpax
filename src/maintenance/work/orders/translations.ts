@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "maintenance-work-orders",
-    "uuid": "4c1536fa-8500-8cff-8356-b05a6eca6e2a",
+    "source": "orders",
+    "uuid": "82f9e9bb-9d7f-8a5c-bc92-ed038b8916f9",
     "words": [
-      "maintenance",
-      "work",
       "orders"
     ],
     "values": {
-      "en": "maintenance-work-orders"
+      "en": "orders"
     }
   },
   {
     "key": "description",
     "source": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-    "uuid": "b538796f-1da1-8333-9c19-72aaad960d8e",
+    "uuid": "97cb942e-148e-87ca-8428-6ba507f1f418",
     "words": [
       "use",
       "when",

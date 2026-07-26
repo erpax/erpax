@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shared",
-    "uuid": "ad504558-985a-846a-b3bc-2ba4eeef4e19",
+    "uuid": "da52f349-bd07-81dd-ada5-e7c5f4c02b26",
     "words": [
       "shared"
     ],
@@ -17,30 +17,43 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
-    "uuid": "6787a83a-6e4e-8d42-9b22-348f09ff3327",
+    "source": "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe",
+    "uuid": "f6d17314-b8ca-81d9-acf0-a83801ede652",
     "words": [
-      "canonical",
-      "standards",
-      "merged",
-      "atoms",
-      "render",
-      "components",
-      "money",
-      "auditedtimestamp",
-      "addressblock",
-      "and",
-      "reusable",
-      "payload",
-      "field",
-      "factories",
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shared",
-      "across",
+      "one",
+      "accountable",
+      "object",
+      "two",
+      "coexisting",
+      "facets",
       "every",
-      "domain"
+      "standards",
+      "rule",
+      "the",
+      "codebase",
+      "declares",
+      "about",
+      "money",
+      "dates",
+      "addresses",
+      "common",
+      "columns",
+      "lives",
+      "in",
+      "one",
+      "of",
+      "these",
+      "shared",
+      "atoms",
+      "highe"
     ],
     "values": {
-      "en": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain"
+      "en": "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe"
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-committees",
-    "uuid": "cef6bd1d-0625-83d3-925b-e024eae74613",
+    "source": "committees",
+    "uuid": "32360af2-8409-8121-8b3b-70e43657ef4f",
     "words": [
-      "audit",
       "committees"
     ],
     "values": {
-      "en": "audit-committees"
+      "en": "committees"
     }
   },
   {
     "key": "description",
     "source": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
-    "uuid": "adca8596-f522-8bec-a36d-34cd1a9363eb",
+    "uuid": "bd2106d8-3223-8dd1-8a7f-bdf49149c217",
     "words": [
       "use",
       "when",

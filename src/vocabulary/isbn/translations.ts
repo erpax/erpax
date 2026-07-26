@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "isbn",
-    "uuid": "e66072d3-d141-86b9-83b9-8383272ef58e",
+    "uuid": "9cbf7fee-ff16-88b4-9a67-adc6550e580e",
     "words": [
       "isbn"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The ISBN of the book.",
-    "uuid": "f07e399d-efda-8ebe-ae48-6d747b3e2087",
+    "source": "Use when reasoning about isbn — The ISBN of the book.",
+    "uuid": "7547946c-1de6-8b61-bf79-6cd2d8192c55",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "isbn",
       "the",
       "isbn",
       "of",
@@ -27,7 +32,7 @@ export const translations: readonly Translation[] = [
       "book"
     ],
     "values": {
-      "en": "The ISBN of the book."
+      "en": "Use when reasoning about isbn — The ISBN of the book."
     }
   }
 ]

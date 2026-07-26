@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "member",
-    "uuid": "880dcb05-b1ba-86cb-bd88-c69f43a6b13e",
+    "uuid": "969ca10f-6ca0-806a-a38e-87384ed2b81c",
     "words": [
       "member"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
-    "uuid": "a89aa121-4351-86fd-ae51-33b97dbbb3e2",
+    "source": "Use when reasoning about member — A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
+    "uuid": "ac4b6be2-44b9-8883-8bd6-f3706333f95f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "member",
       "a",
       "member",
       "of",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "individuals"
     ],
     "values": {
-      "en": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals."
+      "en": "Use when reasoning about member — A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals."
     }
   }
 ]

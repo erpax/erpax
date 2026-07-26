@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consortium",
-    "uuid": "6c8cfd46-7c7d-8ce2-8c03-fb248c2acf39",
+    "uuid": "95307431-fb1b-85d0-a2c6-ededf61bee27",
     "words": [
       "consortium"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A Consortium is a membership Organization whose members are typically Organizations.",
-    "uuid": "40d0400f-d3d3-84e4-9047-e2892fa4cad0",
+    "source": "Use when reasoning about consortium — A Consortium is a membership Organization whose members are typically Organizations.",
+    "uuid": "6ec393f1-3ff4-87ad-ac2c-429ba32e0e38",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "consortium",
       "a",
       "consortium",
       "is",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "organizations"
     ],
     "values": {
-      "en": "A Consortium is a membership Organization whose members are typically Organizations."
+      "en": "Use when reasoning about consortium — A Consortium is a membership Organization whose members are typically Organizations."
     }
   }
 ]

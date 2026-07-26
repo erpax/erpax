@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "wip-snapshots",
-    "uuid": "641c8a9e-815f-8f5b-9073-0b0de6edc4f9",
+    "source": "snapshots",
+    "uuid": "99dfa755-cae6-8825-bdd4-9805be9a3bd0",
     "words": [
-      "wip",
       "snapshots"
     ],
     "values": {
-      "en": "wip-snapshots"
+      "en": "snapshots"
     }
   },
   {
     "key": "description",
     "source": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-    "uuid": "f85ecfff-67ee-89d2-b811-14573796d62b",
+    "uuid": "62369050-cb3d-8738-8cae-0dcb92ecc739",
     "words": [
       "use",
       "when",

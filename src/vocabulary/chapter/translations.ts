@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chapter",
-    "uuid": "810e624b-fa0c-887e-b3f7-b6165c11936a",
+    "uuid": "ba801cae-6285-8951-8eb9-e0072af34780",
     "words": [
       "chapter"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "One of the sections into which a book is divided. A chapter usually has a section number or a name.",
-    "uuid": "735f013f-0fac-8966-b76e-47e652f3fd3b",
+    "source": "Use when reasoning about chapter — One of the sections into which a book is divided. A chapter usually has a section number or a name.",
+    "uuid": "04e276d7-e636-8724-a269-f996f1d475de",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "chapter",
       "one",
       "of",
       "the",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "name"
     ],
     "values": {
-      "en": "One of the sections into which a book is divided. A chapter usually has a section number or a name."
+      "en": "Use when reasoning about chapter — One of the sections into which a book is divided. A chapter usually has a section number or a name."
     }
   }
 ]

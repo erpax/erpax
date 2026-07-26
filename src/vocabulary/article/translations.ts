@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "article",
-    "uuid": "28ccbbb8-1f8f-87af-b87d-475c109eb0de",
+    "uuid": "f74ce5f3-6b09-8b28-8e9e-654a5cf8bbbf",
     "words": [
       "article"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also blog post.",
-    "uuid": "38153ec7-8c02-80f9-a605-ed6f5be49551",
+    "source": "Use when reasoning about article — An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also",
+    "uuid": "996106f7-77ae-8c9d-80f2-e2366da0c3fd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "article",
       "an",
       "article",
       "such",
@@ -50,12 +55,10 @@ export const translations: readonly Translation[] = [
       "them",
       "all",
       "see",
-      "also",
-      "blog",
-      "post"
+      "also"
     ],
     "values": {
-      "en": "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also blog post."
+      "en": "Use when reasoning about article — An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also"
     }
   }
 ]

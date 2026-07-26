@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accounting",
-    "uuid": "ad355258-c719-81be-b94f-269e50dd133a",
+    "uuid": "dac31933-a5e9-8f15-93b5-d34e482c5fa1",
     "words": [
       "accounting"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-    "uuid": "d2f103e3-f605-8fb9-8342-57e4b6342c3e",
+    "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\\\\\"accountable\\\\\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
+    "uuid": "aa17aee8-62b6-894d-9436-b975f4f93c82",
     "words": [
       "use",
       "when",
@@ -63,7 +63,7 @@ export const translations: readonly Translation[] = [
       "archetype"
     ],
     "values": {
-      "en": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
+      "en": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\\\\\"accountable\\\\\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
     }
   }
 ]

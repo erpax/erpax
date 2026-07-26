@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculate",
-    "uuid": "1329395a-1c61-869f-a01b-cbe619ab591f",
+    "uuid": "44069227-c392-857a-9e20-fc3d698a84b8",
     "words": [
       "calculate"
     ],
@@ -17,48 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda).",
-    "uuid": "34a2b734-4417-8691-8290-abd85c831598",
+    "source": "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**.",
+    "uuid": "c749c9be-381c-8884-87af-31516c569b76",
     "words": [
       "use",
-      "for",
-      "pure",
-      "financial",
-      "computation",
-      "break",
-      "even",
-      "ebitda",
-      "eoq",
-      "present",
-      "value",
-      "depreciation",
-      "ratios",
-      "standard",
-      "costing",
-      "variances",
+      "when",
+      "reasoning",
+      "about",
+      "calculate",
+      "is",
       "the",
-      "calculators",
+      "computation",
+      "atom",
+      "ceccec",
+      "erpax",
+      "s",
+      "are",
       "form",
       "objects",
+      "activemodel",
       "validate",
       "inputs",
       "compute",
+      "a",
       "standards",
       "cited",
       "formula",
       "format",
       "no",
       "persistence",
-      "composes",
-      "nested",
-      "leaves",
-      "calculate",
-      "depreciate",
-      "amortize",
-      "ebitda"
+      "no",
+      "collection"
     ],
     "values": {
-      "en": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda)."
+      "en": "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**."
     }
   }
 ]

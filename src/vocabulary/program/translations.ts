@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "program",
-    "uuid": "fa7659cc-85d9-8b01-8028-f81bce674146",
+    "uuid": "330e7c1b-1375-89cb-8a21-682bc2a1f803",
     "words": [
       "program"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The MemberProgram associated with a ProgramMembership.",
-    "uuid": "0392401b-47fd-8105-8094-1040bdf79235",
+    "source": "Use when reasoning about program — The MemberProgram associated with a ProgramMembership.",
+    "uuid": "af8be83b-0e7c-84aa-b63d-fa8b945272af",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "program",
       "the",
       "memberprogram",
       "associated",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "programmembership"
     ],
     "values": {
-      "en": "The MemberProgram associated with a ProgramMembership."
+      "en": "Use when reasoning about program — The MemberProgram associated with a ProgramMembership."
     }
   }
 ]

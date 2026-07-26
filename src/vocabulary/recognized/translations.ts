@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recognized",
-    "uuid": "f825e4cf-4b45-8259-aeba-2aef16ddadc7",
+    "uuid": "5f440ff8-3190-84f9-84b2-9c3ad6f0655f",
     "words": [
       "recognized"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
-    "uuid": "005693a4-f996-8255-b28f-0b608a85eff7",
+    "source": "Use when reasoning about recognized — An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
+    "uuid": "b8fe929b-fffb-8dbf-8caa-519825957e36",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "recognized",
       "an",
       "organization",
       "that",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "accreditation"
     ],
     "values": {
-      "en": "An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation."
+      "en": "Use when reasoning about recognized — An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation."
     }
   }
 ]

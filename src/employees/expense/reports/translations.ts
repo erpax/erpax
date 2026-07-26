@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "expense-reports",
-    "uuid": "d9fcffa4-d839-8ab5-97dc-8b7581407d86",
+    "source": "reports",
+    "uuid": "9f131474-631b-87ab-8044-fe8ebb5cf572",
     "words": [
-      "expense",
       "reports"
     ],
     "values": {
-      "en": "expense-reports"
+      "en": "reports"
     }
   },
   {
     "key": "description",
     "source": "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection.",
-    "uuid": "288ba2a3-dc8e-82d0-940d-ca29990ba3ee",
+    "uuid": "e996cb52-37d8-8b94-aac2-f1ac89297119",
     "words": [
       "use",
       "when",

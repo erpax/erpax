@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "statutory-report-templates",
-    "uuid": "cd7b9446-c2cf-8201-8e6f-c6711ed96958",
+    "source": "templates",
+    "uuid": "722eabcd-a85e-84f5-8b5d-20024e918ece",
     "words": [
-      "statutory",
-      "report",
       "templates"
     ],
     "values": {
-      "en": "statutory-report-templates"
+      "en": "templates"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or retrieving jurisdiction-scoped statutory filing templates — annual reports, tax returns, regulatory filings, financial statements, audit reports — with section sequences and effective dates. The per-jurisdiction statutory filing template node.",
-    "uuid": "7790762a-2aa0-8c1d-b097-3e65e224a39e",
+    "uuid": "cf94eed4-87b7-83f2-abd6-a3e26a2f48d9",
     "words": [
       "use",
       "when",

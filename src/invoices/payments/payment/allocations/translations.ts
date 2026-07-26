@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "payment-allocations",
-    "uuid": "34af0d04-1184-82d2-8637-29360e066138",
+    "source": "allocations",
+    "uuid": "edc267cc-2da7-811d-9061-0499831f1e80",
     "words": [
-      "payment",
       "allocations"
     ],
     "values": {
-      "en": "payment-allocations"
+      "en": "allocations"
     }
   },
   {
     "key": "description",
     "source": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
-    "uuid": "d1aabdae-fa98-84a1-b6c6-ca4aa3e6944c",
+    "uuid": "f4063c55-4ca9-8061-8aee-de408cdee9e7",
     "words": [
       "use",
       "when",

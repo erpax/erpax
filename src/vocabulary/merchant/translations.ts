@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "merchant",
-    "uuid": "17207f83-8399-8324-9231-f2bf628ae04d",
+    "uuid": "095e710d-c410-8fa7-b8a4-bfd1ae9ae99a",
     "words": [
       "merchant"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "'merchant' is an out-dated term for 'seller'.",
-    "uuid": "074f9642-b3ff-87a1-9b41-74f815b93fdb",
+    "source": "Use when reasoning about merchant — 'merchant' is an out-dated term for 'seller'.",
+    "uuid": "facef84c-d75a-8639-8673-ed9f5cdf72e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "merchant",
       "merchant",
       "is",
       "an",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "seller"
     ],
     "values": {
-      "en": "'merchant' is an out-dated term for 'seller'."
+      "en": "Use when reasoning about merchant — 'merchant' is an out-dated term for 'seller'."
     }
   }
 ]

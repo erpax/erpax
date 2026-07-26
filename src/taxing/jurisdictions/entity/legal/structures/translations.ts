@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "entity-legal-structures",
-    "uuid": "a980e4d1-147d-81b3-bd3f-defb8e8f22ea",
+    "source": "structures",
+    "uuid": "ad2c9745-e8b6-850f-9034-b3d8e268bb6c",
     "words": [
-      "entity",
-      "legal",
       "structures"
     ],
     "values": {
-      "en": "entity-legal-structures"
+      "en": "structures"
     }
   },
   {
     "key": "description",
     "source": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
-    "uuid": "7f6d9a53-4886-8c60-84f7-545d3dd913a5",
+    "uuid": "167fc9bf-b0ef-8d28-b9c3-2f91300266a1",
     "words": [
       "use",
       "when",

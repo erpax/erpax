@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credit",
-    "uuid": "bd2a38fc-ac8d-8111-b6e2-a09458afb81d",
+    "uuid": "f41ca40a-dba0-824a-b357-c6e87df65e31",
     "words": [
       "credit"
     ],
@@ -17,24 +17,37 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText",
-    "uuid": "2349cf12-2e43-8d89-9947-02f200cfbd2c",
+    "source": "Use when reasoning about credit — A schema.org component word, collided out of schema.org compounds — fused from BankOrCreditUnion · CreditCard · LoanOrCredit · creditText (sti · collapse · merge).",
+    "uuid": "db9d65eb-10eb-8752-823c-6aeed2d7c31a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "credit",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "bankorcreditunion",
       "creditcard",
       "loanorcredit",
-      "credittext"
+      "credittext",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText"
+      "en": "Use when reasoning about credit — A schema.org component word, collided out of schema.org compounds — fused from BankOrCreditUnion · CreditCard · LoanOrCredit · creditText (sti · collapse · merge)."
     }
   }
 ]

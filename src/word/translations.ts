@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "word",
-    "uuid": "52c9d674-4898-8ff6-a8f1-ff06af31f1f5",
+    "uuid": "a8e74b31-c8c9-822e-ba61-44667fa9db01",
     "words": [
       "word"
     ],
@@ -17,40 +17,43 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about word as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "e17d9e38-0e1a-87e6-bae8-60440a1ad833",
+    "source": "Use when addressing a lexical prose token — one vocabulary diamond content-addressed as uuid(jcs({ kind:'word', value })); saved in the text token index, not as a per-word src/ folder.",
+    "uuid": "9dcb88cb-1eb7-84e3-9897-1b4aa6c298eb",
     "words": [
       "use",
       "when",
-      "reasoning",
-      "about",
-      "word",
-      "as",
+      "addressing",
       "a",
-      "schema",
-      "org",
+      "lexical",
+      "prose",
+      "token",
+      "one",
       "vocabulary",
-      "word",
-      "the",
-      "single",
-      "word",
-      "collided",
-      "from",
-      "the",
-      "schema",
-      "org",
-      "terms",
-      "that",
-      "contain",
-      "it",
+      "diamond",
       "content",
       "addressed",
-      "into",
+      "as",
+      "uuid",
+      "jcs",
+      "kind",
+      "word",
+      "value",
+      "saved",
+      "in",
       "the",
-      "corpus"
+      "text",
+      "token",
+      "index",
+      "not",
+      "as",
+      "a",
+      "per",
+      "word",
+      "src",
+      "folder"
     ],
     "values": {
-      "en": "Use when reasoning about word as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+      "en": "Use when addressing a lexical prose token — one vocabulary diamond content-addressed as uuid(jcs({ kind:'word', value })); saved in the text token index, not as a per-word src/ folder."
     }
   }
 ]

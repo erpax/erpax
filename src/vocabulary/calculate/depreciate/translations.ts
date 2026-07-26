@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "depreciate",
-    "uuid": "83f14f3f-f19a-8a94-89f1-9de6e166b0d2",
+    "uuid": "27f56771-45ae-8fd0-bc06-c213509431a0",
     "words": [
       "depreciate"
     ],
@@ -17,40 +17,43 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate.",
-    "uuid": "a51b3312-6d32-8ca6-9ed7-d1542bedf3c0",
+    "source": "Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method",
+    "uuid": "67923659-ffe5-85f5-9a5f-f564b6577310",
     "words": [
       "use",
-      "to",
-      "compute",
+      "when",
+      "reasoning",
+      "about",
+      "depreciate",
+      "ports",
+      "the",
+      "etrima",
+      "erpax",
       "depreciation",
-      "straight",
-      "line",
-      "declining",
-      "balance",
-      "ddb",
-      "sum",
-      "of",
-      "years",
-      "digits",
+      "calculators",
+      "verbatim",
+      "calculate",
+      "port",
+      "given",
+      "cost",
+      "salvage",
+      "useful",
+      "life",
+      "and",
       "units",
-      "of",
+      "for",
       "activity",
-      "pure",
+      "based",
       "compute",
-      "no",
-      "persistence",
-      "cites",
-      "ias",
-      "us",
-      "gaap",
-      "asc",
-      "nested",
-      "under",
-      "calculate"
+      "the",
+      "per",
+      "period",
+      "charge",
+      "by",
+      "method"
     ],
     "values": {
-      "en": "Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate."
+      "en": "Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method"
     }
   }
 ]

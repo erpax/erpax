@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "question",
-    "uuid": "7f655628-13fc-8298-a49e-a2a17b89892a",
+    "uuid": "2e342baf-dbb3-85c9-80d8-feaf35a9b3dc",
     "words": [
       "question"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
-    "uuid": "c66265a2-ea33-8bd8-a2b4-774d4e49947f",
+    "source": "Use when reasoning about question — A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
+    "uuid": "6c8ad9e2-3345-8061-b4b5-f90c2378a1d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "question",
       "a",
       "specific",
       "question",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "document"
     ],
     "values": {
-      "en": "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document."
+      "en": "Use when reasoning about question — A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assesses",
-    "uuid": "996b09a9-0e04-8fdb-8fa2-572638845594",
+    "uuid": "ebe27271-5499-859b-9b63-b2c43425e010",
     "words": [
       "assesses"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
-    "uuid": "c1ec23d6-0bf6-8408-84c6-caf9661c4a9e",
+    "source": "Use when reasoning about assesses — The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
+    "uuid": "f00eac04-59a5-87a2-8dde-0edc05f86718",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "assesses",
       "the",
       "item",
       "being",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "term"
     ],
     "values": {
-      "en": "The item being described is intended to assess the competency or learning outcome defined by the referenced term."
+      "en": "Use when reasoning about assesses — The item being described is intended to assess the competency or learning outcome defined by the referenced term."
     }
   }
 ]

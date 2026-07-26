@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "internal-policies",
-    "uuid": "bf8dff73-342d-8128-8ce0-1d222cd5e85f",
+    "source": "policies",
+    "uuid": "a6483ca8-d8ea-8982-befb-0fd9abec43ca",
     "words": [
-      "internal",
       "policies"
     ],
     "values": {
-      "en": "internal-policies"
+      "en": "policies"
     }
   },
   {
     "key": "description",
     "source": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-    "uuid": "e6b6c84c-5905-80d0-b768-4d5a987d1ce0",
+    "uuid": "71f51560-b828-83e0-9d1a-0389f510041d",
     "words": [
       "use",
       "when",

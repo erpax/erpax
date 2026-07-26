@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "agent-sync",
-    "uuid": "4c840e0b-4962-856a-8b27-e01dca77a237",
+    "source": "sync",
+    "uuid": "a69c30da-87d4-8594-903a-6d85c2b16887",
     "words": [
-      "agent",
       "sync"
     ],
     "values": {
-      "en": "agent-sync"
+      "en": "sync"
     }
   },
   {
     "key": "description",
     "source": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-    "uuid": "85b03d52-34a2-82dc-a781-48bd69608e12",
+    "uuid": "e8f4875e-98bd-848e-b703-11a7bf3a69cb",
     "words": [
       "use",
       "when",

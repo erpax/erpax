@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "joint",
-    "uuid": "d4c9d168-8935-8ff4-bcb4-19372d6c2a0b",
+    "uuid": "5f83c732-17fc-806a-8a90-fbe802868978",
     "words": [
       "joint"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The anatomical location at which two or more bones make contact.",
-    "uuid": "c4871ed9-e322-8dd8-9b46-0af056325e01",
+    "source": "Use when reasoning about joint — The anatomical location at which two or more bones make contact.",
+    "uuid": "2c24a778-e0e5-8394-94cf-2398ff20d1bd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "joint",
       "the",
       "anatomical",
       "location",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "contact"
     ],
     "values": {
-      "en": "The anatomical location at which two or more bones make contact."
+      "en": "Use when reasoning about joint — The anatomical location at which two or more bones make contact."
     }
   }
 ]

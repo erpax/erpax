@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closes",
-    "uuid": "baa6d40a-32a7-8e97-bddc-1de5e27b43f2",
+    "uuid": "11a03afd-18a2-8b7b-9b5b-856309ca72ed",
     "words": [
       "closes"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The closing hour of the place or service on the given day(s) of the week.",
-    "uuid": "fd81c6eb-a9ae-8e10-a200-daa5d2ce92cc",
+    "source": "Use when reasoning about closes — The closing hour of the place or service on the given day(s) of the week.",
+    "uuid": "2a86021a-e9c2-8810-ac5e-e4323280796c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "closes",
       "the",
       "closing",
       "hour",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "week"
     ],
     "values": {
-      "en": "The closing hour of the place or service on the given day(s) of the week."
+      "en": "Use when reasoning about closes — The closing hour of the place or service on the given day(s) of the week."
     }
   }
 ]

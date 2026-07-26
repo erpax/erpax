@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "operation-runs",
-    "uuid": "6c82e909-e8b9-8159-93bc-9baa4832349a",
+    "source": "runs",
+    "uuid": "d10d1c24-4f84-8225-bb35-45c41d610e25",
     "words": [
-      "operation",
       "runs"
     ],
     "values": {
-      "en": "operation-runs"
+      "en": "runs"
     }
   },
   {
     "key": "description",
     "source": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
-    "uuid": "2d4e3f84-72dc-83ed-93fd-b058e0acc021",
+    "uuid": "5636e50f-31b8-8b18-b032-8f5a8c0f8e20",
     "words": [
       "use",
       "when",

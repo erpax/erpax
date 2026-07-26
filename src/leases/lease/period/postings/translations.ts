@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "lease-period-postings",
-    "uuid": "e77479e8-8f39-835b-ad1e-4101ddc255f9",
+    "source": "postings",
+    "uuid": "18c183a2-b0a0-829a-b874-328af03f7754",
     "words": [
-      "lease",
-      "period",
       "postings"
     ],
     "values": {
-      "en": "lease-period-postings"
+      "en": "postings"
     }
   },
   {
     "key": "description",
     "source": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
-    "uuid": "76082dc4-f6a4-897b-ac59-fe658cc6dbd8",
+    "uuid": "b0b3d11b-0917-8ea9-b34e-5ed4ec70c4e6",
     "words": [
       "use",
       "when",

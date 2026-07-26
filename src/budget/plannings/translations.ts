@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "budget-plannings",
-    "uuid": "957857dd-4472-81e9-877c-26da84128d81",
+    "source": "plannings",
+    "uuid": "a171bec2-f87f-80d0-bdfc-579c0e271c83",
     "words": [
-      "budget",
       "plannings"
     ],
     "values": {
-      "en": "budget-plannings"
+      "en": "plannings"
     }
   },
   {
     "key": "description",
     "source": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-    "uuid": "4eb45a8b-cd53-8409-8d1a-b7e019a6d9a2",
+    "uuid": "809d3d8c-05c1-8dd1-bb74-3d5afdd6283a",
     "words": [
       "use",
       "when",

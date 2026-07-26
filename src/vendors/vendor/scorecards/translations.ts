@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "vendor-scorecards",
-    "uuid": "19f4445f-29f7-86d2-a700-466ab289e795",
+    "source": "scorecards",
+    "uuid": "9123dca4-35a4-8676-b7af-f6fd090a31dd",
     "words": [
-      "vendor",
       "scorecards"
     ],
     "values": {
-      "en": "vendor-scorecards"
+      "en": "scorecards"
     }
   },
   {
     "key": "description",
     "source": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
-    "uuid": "ed3edb48-d17d-8124-aad4-64be3ce2eba5",
+    "uuid": "454ed466-640d-8900-9395-b54ced48c7b8",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pack",
-    "uuid": "0e330fdc-a353-864f-9d82-3bf65782f94e",
+    "uuid": "bf69d808-cc99-82ec-bfa2-94fe4c03852a",
     "words": [
       "pack"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one pack — the singular model of the packs collection (the plural store); a bundled unit of items handled as one.",
-    "uuid": "861ab62e-9858-8cbb-9927-1051c2f73d5f",
+    "uuid": "7edfbc46-93c9-8363-87ee-b8f89d3dc914",
     "words": [
       "use",
       "when",

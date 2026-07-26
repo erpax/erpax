@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "available",
-    "uuid": "05e25912-3ef8-8ec4-87ec-29d6ce8ff91f",
+    "uuid": "06dc1e73-d7b2-81e1-9c7a-62c1ced9b8ec",
     "words": [
       "available"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The place(s) from which the offer can be obtained (e.g. store locations).",
-    "uuid": "d13fda18-0215-864a-b559-7d8f7b7649ad",
+    "source": "Use when reasoning about available — The place(s) from which the offer can be obtained (e.g. store locations).",
+    "uuid": "d3a93977-b975-8cc4-98ba-3e04e35c7a05",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "available",
       "the",
       "place",
       "s",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "locations"
     ],
     "values": {
-      "en": "The place(s) from which the offer can be obtained (e.g. store locations)."
+      "en": "Use when reasoning about available — The place(s) from which the offer can be obtained (e.g. store locations)."
     }
   }
 ]

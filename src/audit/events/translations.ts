@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-events",
-    "uuid": "3ff9b995-1cf9-8af9-8eb3-9787675245e9",
+    "source": "events",
+    "uuid": "2422410a-cedf-8a22-9e38-88ee0b886a16",
     "words": [
-      "audit",
       "events"
     ],
     "values": {
-      "en": "audit-events"
+      "en": "events"
     }
   },
   {
     "key": "description",
     "source": "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.",
-    "uuid": "4317203e-12f4-8b10-aeab-c5503c23ecd3",
+    "uuid": "0764d006-5e20-8eb8-b341-a79a3940d864",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "product",
-    "uuid": "e46ea64b-3378-83ac-873f-b0a85a8fb3a2",
+    "uuid": "e693444a-08f6-84b2-bb2b-2cbe496f74f0",
     "words": [
       "product"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
-    "uuid": "46e4de5c-47fc-8c87-97bd-b5ed25e44603",
+    "source": "Use when reasoning about product — Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
+    "uuid": "f3ee885c-bfe9-83af-b771-ae44867ba3cb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "product",
       "any",
       "offered",
       "product",
@@ -52,7 +57,7 @@ export const translations: readonly Translation[] = [
       "online"
     ],
     "values": {
-      "en": "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online."
+      "en": "Use when reasoning about product — Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online."
     }
   }
 ]

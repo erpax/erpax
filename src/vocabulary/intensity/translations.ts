@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intensity",
-    "uuid": "59fa82a7-443b-8bbb-86c5-b0dcb67b3ef0",
+    "uuid": "b7b85e31-8b5d-8c26-8d06-976ffb470bc5",
     "words": [
       "intensity"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
-    "uuid": "21e1739c-4797-8289-95d3-8a1c27966e4f",
+    "source": "Use when reasoning about intensity — Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
+    "uuid": "a3c8ad5b-61c5-8f35-8d7c-e4e99f4f8587",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "intensity",
       "quantitative",
       "measure",
       "gauging",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "movement"
     ],
     "values": {
-      "en": "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement."
+      "en": "Use when reasoning about intensity — Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement."
     }
   }
 ]

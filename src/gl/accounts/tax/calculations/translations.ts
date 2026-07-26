@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "tax-calculations",
-    "uuid": "a6cde181-d3ad-82f8-9ec6-e0339c09b157",
+    "source": "calculations",
+    "uuid": "6f640afe-97f1-88b8-8088-ca4b120b98d9",
     "words": [
-      "tax",
       "calculations"
     ],
     "values": {
-      "en": "tax-calculations"
+      "en": "calculations"
     }
   },
   {
     "key": "description",
     "source": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
-    "uuid": "d4be97cd-4f2f-865b-a48a-dcdfc11a76dc",
+    "uuid": "ff46ae2a-0b9c-8376-aff3-20e38d332be6",
     "words": [
       "use",
       "when",

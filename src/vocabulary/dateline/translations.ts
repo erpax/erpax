@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dateline",
-    "uuid": "1af4581f-9748-85f0-b4d3-c0a0d5d65a11",
+    "uuid": "b62bd0cb-cc23-896d-b8db-8acf35bd8fe1",
     "words": [
       "dateline"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided. Str",
-    "uuid": "c207e4bb-a15c-8da5-ac22-b22f9b6e6691",
+    "source": "Use when reasoning about dateline — A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placen",
+    "uuid": "152e2474-8156-8f33-b4aa-0d0150f18829",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "dateline",
       "a",
       "dateline",
       "is",
@@ -52,13 +57,10 @@ export const translations: readonly Translation[] = [
       "sometimes",
       "only",
       "a",
-      "placename",
-      "is",
-      "provided",
-      "str"
+      "placen"
     ],
     "values": {
-      "en": "A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided. Str"
+      "en": "Use when reasoning about dateline — A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placen"
     }
   }
 ]

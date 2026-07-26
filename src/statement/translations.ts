@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statement",
-    "uuid": "bfb9935b-75da-8d02-b20d-0cab10f7ca7f",
+    "uuid": "e791fa46-469e-81d5-ac9c-6393c40bada1",
     "words": [
       "statement"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking),",
-    "uuid": "38aa4bc8-b393-8910-9e23-a0a91de16884",
+    "source": "Use when reasoning about statement — A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g",
+    "uuid": "7ba4e6e9-8804-83ee-b742-70b26a5e22c1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "statement",
       "a",
       "statement",
       "about",
@@ -50,13 +55,10 @@ export const translations: readonly Translation[] = [
       "formal",
       "claims",
       "e",
-      "g",
-      "in",
-      "fact",
-      "checking"
+      "g"
     ],
     "values": {
-      "en": "A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking),"
+      "en": "Use when reasoning about statement — A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g"
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "line",
-    "uuid": "4c825cf7-8d88-88a0-b25d-154320cfe7c6",
+    "uuid": "42f0d94f-2690-84cb-aa54-204a4d5e4af2",
     "words": [
       "line"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
-    "uuid": "513c8b96-7b57-8560-8970-b433b505aa93",
+    "source": "Use when reasoning about line — A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
+    "uuid": "cdf76945-16e6-82db-b949-16d7fe1ce477",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "line",
       "a",
       "line",
       "is",
@@ -52,7 +57,7 @@ export const translations: readonly Translation[] = [
       "space"
     ],
     "values": {
-      "en": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."
+      "en": "Use when reasoning about line — A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."
     }
   }
 ]

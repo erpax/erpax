@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "transfer-pricing-adjustments",
-    "uuid": "3db978f5-aae8-88fe-ac2f-13c705da0176",
+    "source": "adjustments",
+    "uuid": "2b47dc13-c5f4-8bcf-9882-22a8da3977c6",
     "words": [
-      "transfer",
-      "pricing",
       "adjustments"
     ],
     "values": {
-      "en": "transfer-pricing-adjustments"
+      "en": "adjustments"
     }
   },
   {
     "key": "description",
     "source": "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node.",
-    "uuid": "e9cc1883-b442-86f2-a68c-868505e1c70b",
+    "uuid": "cfdfc7d8-79f3-8f79-b75c-697c483a5156",
     "words": [
       "use",
       "when",

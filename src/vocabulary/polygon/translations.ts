@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "polygon",
-    "uuid": "2cdc62b4-8344-8173-898c-75bc3d8da1cb",
+    "uuid": "cc7528f1-82bd-872f-85c9-62a3074a2b52",
     "words": [
       "polygon"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first",
-    "uuid": "ce4afae6-131d-8e7a-8eb0-f8c96e8048a4",
+    "source": "Use when reasoning about polygon — A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited po",
+    "uuid": "124a241c-c872-81a4-a50e-7af34aebac65",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "polygon",
       "a",
       "polygon",
       "is",
@@ -55,13 +60,10 @@ export const translations: readonly Translation[] = [
       "more",
       "space",
       "delimited",
-      "points",
-      "where",
-      "the",
-      "first"
+      "po"
     ],
     "values": {
-      "en": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first"
+      "en": "Use when reasoning about polygon — A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited po"
     }
   }
 ]

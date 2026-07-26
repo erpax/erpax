@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "broker",
-    "uuid": "b3896987-ea01-8aad-a352-42347fefad33",
+    "uuid": "c2013090-d770-80b5-ab1f-67b4f8cdf57d",
     "words": [
       "broker"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. If it is not clear wh",
-    "uuid": "f014cd19-88ed-834e-8783-5c2c3417ccb0",
+    "source": "Use when reasoning about broker — An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. I",
+    "uuid": "58b62aff-c455-8939-a881-cfdd8b43e9e7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "broker",
       "an",
       "entity",
       "that",
@@ -52,15 +57,10 @@ export const translations: readonly Translation[] = [
       "in",
       "an",
       "exchange",
-      "if",
-      "it",
-      "is",
-      "not",
-      "clear",
-      "wh"
+      "i"
     ],
     "values": {
-      "en": "An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. If it is not clear wh"
+      "en": "Use when reasoning about broker — An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. I"
     }
   }
 ]

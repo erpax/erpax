@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vessel",
-    "uuid": "8ca283aa-5efd-87a0-b347-d4b06e50c449",
+    "uuid": "c20d4df0-c239-808d-b34e-f6f4e240467a",
     "words": [
       "vessel"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
-    "uuid": "34b25278-32ad-80b2-95c7-a1430c713c29",
+    "source": "Use when reasoning about vessel — A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
+    "uuid": "a06d7785-5609-8f7e-8be9-11b58eec2132",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "vessel",
       "a",
       "component",
       "of",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "body"
     ],
     "values": {
-      "en": "A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body."
+      "en": "Use when reasoning about vessel — A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body."
     }
   }
 ]

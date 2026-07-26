@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tool",
-    "uuid": "be4046de-d5b2-8b34-8ead-76c01334612b",
+    "uuid": "0a757dc1-5bdb-83a0-8f96-9abf775b795e",
     "words": [
       "tool"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
-    "uuid": "2711da94-dc2a-87b4-8f8f-fe591692b9fe",
+    "source": "Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
+    "uuid": "e0394a55-4234-8dfb-a905-93aa75021a50",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "tool",
       "a",
       "sub",
       "property",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "direction"
     ],
     "values": {
-      "en": "A sub property of instrument. An object used (but not consumed) when performing instructions or a direction."
+      "en": "Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction."
     }
   }
 ]

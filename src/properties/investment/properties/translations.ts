@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "investment-properties",
-    "uuid": "2298303f-10bd-8d56-abaa-4bd70a7d4f56",
+    "source": "properties",
+    "uuid": "6ab78b41-630b-8175-89e7-e5c5a33649f4",
     "words": [
-      "investment",
       "properties"
     ],
     "values": {
-      "en": "investment-properties"
+      "en": "properties"
     }
   },
   {
     "key": "description",
     "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-    "uuid": "cee423a8-9295-8cd4-97e0-0d05d85b65de",
+    "uuid": "96abee4c-724f-8fb3-a171-382b346d1fc0",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "base",
-    "uuid": "5834a8e0-3e06-8ed5-add4-0365f0cac976",
+    "uuid": "bb9aaa35-c55b-8872-91f1-fab11d58f557",
     "words": [
       "base"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
-    "uuid": "bafea6be-0192-8d9d-9823-6a43ea5061a7",
+    "source": "Use when reasoning about the entry position of the horo state ring — digit 1, \\\\\\\"entering the ring\\\\\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
+    "uuid": "909c4334-306f-8a90-a600-4eb530f5e893",
     "words": [
       "use",
       "when",
@@ -57,7 +57,7 @@ export const translations: readonly Translation[] = [
       "horo"
     ],
     "values": {
-      "en": "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
+      "en": "Use when reasoning about the entry position of the horo state ring — digit 1, \\\\\\\"entering the ring\\\\\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo."
     }
   }
 ]

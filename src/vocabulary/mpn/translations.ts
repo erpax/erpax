@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mpn",
-    "uuid": "73733113-e733-8ca9-86cb-516306a3ddcd",
+    "uuid": "34113620-b046-8a1c-a3c0-ea8c3d81d5d2",
     "words": [
       "mpn"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
-    "uuid": "b0d86b5d-f133-8e91-b77c-c8189120109a",
+    "source": "Use when reasoning about mpn — The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+    "uuid": "10fc2392-f00b-8f5b-a119-79d1aff07fc1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "mpn",
       "the",
       "manufacturer",
       "part",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "refers"
     ],
     "values": {
-      "en": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers."
+      "en": "Use when reasoning about mpn — The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers."
     }
   }
 ]

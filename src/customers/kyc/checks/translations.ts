@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "kyc-checks",
-    "uuid": "b5c896aa-0b8e-82d2-af37-f684b1325ba7",
+    "source": "checks",
+    "uuid": "22be3af2-3af7-8647-92d8-6f10dd8474c7",
     "words": [
-      "kyc",
       "checks"
     ],
     "values": {
-      "en": "kyc-checks"
+      "en": "checks"
     }
   },
   {
     "key": "description",
     "source": "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.",
-    "uuid": "e6d24cbd-1683-8f87-ab73-31044408cbd2",
+    "uuid": "2371aceb-02cb-8095-93cd-af2e7bf50cf7",
     "words": [
       "use",
       "when",

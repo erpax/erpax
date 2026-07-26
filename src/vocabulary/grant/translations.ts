@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grant",
-    "uuid": "7cd3ad66-e123-8182-aac9-1db64a735c6a",
+    "uuid": "86c02adc-1696-82f7-a55c-39c6ac40476d",
     "words": [
       "grant"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a dedicated or long-li",
-    "uuid": "9def21fb-026d-8312-9a87-734c07dae3d1",
+    "source": "Use when reasoning about grant — A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a",
+    "uuid": "76088278-cdcc-8de4-8305-3a0fa9595f80",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "grant",
       "a",
       "grant",
       "typically",
@@ -44,14 +49,10 @@ export const translations: readonly Translation[] = [
       "not",
       "necessarily",
       "via",
-      "a",
-      "dedicated",
-      "or",
-      "long",
-      "li"
+      "a"
     ],
     "values": {
-      "en": "A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a dedicated or long-li"
+      "en": "Use when reasoning about grant — A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a"
     }
   }
 ]

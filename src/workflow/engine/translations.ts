@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "workflow-engine",
-    "uuid": "1d70bd15-1381-8803-a0c2-d269fec611ee",
+    "source": "engine",
+    "uuid": "f5f5baab-dcaa-84e9-a4eb-fc9000c3d5b4",
     "words": [
-      "workflow",
       "engine"
     ],
     "values": {
-      "en": "workflow-engine"
+      "en": "engine"
     }
   },
   {
     "key": "description",
     "source": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
-    "uuid": "706a04e3-4718-8ef0-b5a5-0b6f2dcb6995",
+    "uuid": "a08c8f47-7a5f-81de-a875-19799e24b89a",
     "words": [
       "use",
       "when",

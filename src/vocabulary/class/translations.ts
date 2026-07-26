@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "class",
-    "uuid": "1debef4f-1c02-8493-a0dc-a5843ff8f8c3",
+    "uuid": "f89eb60b-aa51-8a84-8f3b-0f5b6820d9d8",
     "words": [
       "class"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A class, also often called a 'Type'; equivalent to rdfs:Class.",
-    "uuid": "c5efa57b-9336-8551-a079-94ced19a1a34",
+    "source": "Use when reasoning about class — A class, also often called a 'Type'; equivalent to rdfs:Class.",
+    "uuid": "64d92804-25c7-810d-84dd-8ba1d51dd13a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "class",
       "a",
       "class",
       "also",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "class"
     ],
     "values": {
-      "en": "A class, also often called a 'Type'; equivalent to rdfs:Class."
+      "en": "Use when reasoning about class — A class, also often called a 'Type'; equivalent to rdfs:Class."
     }
   }
 ]

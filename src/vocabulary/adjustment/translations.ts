@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adjustment",
-    "uuid": "5c943e2c-4f20-8d26-b13e-6a14d8f2ff30",
+    "uuid": "8ce454a1-4f4b-8be9-b3fb-16d2518fcd44",
     "words": [
       "adjustment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance.",
-    "uuid": "081d1e99-3a5b-8c4f-8cdb-594b82ed9d99",
+    "uuid": "2f864f68-4e0b-8390-9273-62588a0e5fc5",
     "words": [
       "use",
       "when",

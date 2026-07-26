@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "project-tasks",
-    "uuid": "c4c628cf-0eb8-894a-ad5b-c69da01f11b8",
+    "source": "tasks",
+    "uuid": "9251ae05-400a-84ed-a4c9-32cef076ec56",
     "words": [
-      "project",
       "tasks"
     ],
     "values": {
-      "en": "project-tasks"
+      "en": "tasks"
     }
   },
   {
     "key": "description",
     "source": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
-    "uuid": "2a040bfe-ccf3-86dd-b0ab-fc7ce8fb98e9",
+    "uuid": "4b755197-1ab5-8955-985d-0a871dd7f06c",
     "words": [
       "use",
       "when",

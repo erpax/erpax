@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "antagonist",
-    "uuid": "1612f455-fb92-8a83-8134-7935ba1b6ca9",
+    "uuid": "103823ba-b4d6-8985-aeea-e3c44c8ed883",
     "words": [
       "antagonist"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The muscle whose action counteracts the specified muscle.",
-    "uuid": "dc89edd4-fe07-8af7-b79a-782f5dd07709",
+    "source": "Use when reasoning about antagonist — The muscle whose action counteracts the specified muscle.",
+    "uuid": "81c98a06-2696-8ca9-b0d8-465d67e88a6d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "antagonist",
       "the",
       "muscle",
       "whose",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "muscle"
     ],
     "values": {
-      "en": "The muscle whose action counteracts the specified muscle."
+      "en": "Use when reasoning about antagonist — The muscle whose action counteracts the specified muscle."
     }
   }
 ]

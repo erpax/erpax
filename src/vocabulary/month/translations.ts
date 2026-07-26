@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "month",
-    "uuid": "511e9f38-4c00-8d6b-ae36-3d72012dff2e",
+    "uuid": "b264c46c-856d-8982-b44c-9b1984b027d9",
     "words": [
       "month"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1.",
-    "uuid": "56a27518-6677-8ab8-9173-29671bf2bfae",
+    "source": "Use when reasoning about month — Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1.",
+    "uuid": "b8c25a35-feca-8625-9050-1707b14ff2d6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "month",
       "defines",
       "the",
       "month",
@@ -43,7 +48,7 @@ export const translations: readonly Translation[] = [
       "is"
     ],
     "values": {
-      "en": "Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1."
+      "en": "Use when reasoning about month — Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1."
     }
   }
 ]

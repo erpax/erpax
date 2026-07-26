@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "executable",
-    "uuid": "569194a7-8963-87d5-aaef-c8b66ab0aab6",
+    "uuid": "ae21d099-ca37-88cd-9ac8-3d59926bdef5",
     "words": [
       "executable"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "executable: a schema.org component word, fused from executableLibraryName",
-    "uuid": "9d397a60-e075-8a02-a329-c77f6999a226",
+    "source": "Use when reasoning about executable — A schema.org component word, collided out of schema.org compounds — fused from executableLibraryName (sti · collapse · merge).",
+    "uuid": "238f8ba9-2901-8a38-9b11-75b4c707ec49",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "executable",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "executablelibraryname"
+      "executablelibraryname",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "executable: a schema.org component word, fused from executableLibraryName"
+      "en": "Use when reasoning about executable — A schema.org component word, collided out of schema.org compounds — fused from executableLibraryName (sti · collapse · merge)."
     }
   }
 ]

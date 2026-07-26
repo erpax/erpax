@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "caption",
-    "uuid": "cfc5ba9b-92d9-8e56-883d-324270e61f23",
+    "uuid": "e7f435ca-ac15-8750-a1f5-5aaf97f9ba20",
     "words": [
       "caption"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat.",
-    "uuid": "912cc271-541c-81ec-af82-5d97599b075a",
+    "source": "Use when reasoning about caption — The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat.",
+    "uuid": "12e2b380-d5d9-8dcd-9b36-b043b3d5ca8f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "caption",
       "the",
       "caption",
       "for",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "encodingformat"
     ],
     "values": {
-      "en": "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat."
+      "en": "Use when reasoning about caption — The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat."
     }
   }
 ]

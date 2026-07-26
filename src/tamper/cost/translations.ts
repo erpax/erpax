@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "tamper-cost",
-    "uuid": "5c9e8197-5a76-8014-b620-b04cb2fc65f2",
+    "source": "cost",
+    "uuid": "fe09eac7-0e88-89b4-9214-8fca12711b47",
     "words": [
-      "tamper",
       "cost"
     ],
     "values": {
-      "en": "tamper-cost"
+      "en": "cost"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-    "uuid": "5e8ba8cb-94c5-8e26-a665-87a65ac9cfa6",
+    "uuid": "0c3c144c-7b0b-8213-ae6c-44cec2df88cd",
     "words": [
       "use",
       "when",

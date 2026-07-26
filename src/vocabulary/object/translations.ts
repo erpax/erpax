@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "object",
-    "uuid": "8574b6a3-3907-8d74-a704-0022a94800fd",
+    "uuid": "d6102836-e0f1-8aae-b6d6-9bda56e6435e",
     "words": [
       "object"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn",
-    "uuid": "92c9daa8-d3cf-8a2e-a294-85ddf13ef6a8",
+    "source": "Use when reasoning about object — The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) o",
+    "uuid": "4e87a3a5-881a-89e0-94f4-13ab4f6538fd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "object",
       "the",
       "object",
       "upon",
@@ -50,13 +55,10 @@ export const translations: readonly Translation[] = [
       "change",
       "their",
       "state",
-      "or",
-      "theme",
-      "which",
-      "doesn"
+      "o"
     ],
     "values": {
-      "en": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn"
+      "en": "Use when reasoning about object — The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) o"
     }
   }
 ]

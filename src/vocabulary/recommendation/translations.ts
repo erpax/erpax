@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recommendation",
-    "uuid": "bc47aeaf-221f-8f79-b5ae-da7fa8a788e5",
+    "uuid": "6209f0e0-7090-88a5-915b-f3ee082221df",
     "words": [
       "recommendation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the",
-    "uuid": "828bfaa8-6e2d-876b-9810-0803d920ce66",
+    "source": "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre",
+    "uuid": "ee494349-2174-83ce-b3ae-f14d5ac73856",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "recommendation",
       "recommendation",
       "is",
       "a",
@@ -49,14 +54,10 @@ export const translations: readonly Translation[] = [
       "services",
       "or",
       "other",
-      "concrete",
-      "things",
-      "as",
-      "in",
-      "the"
+      "concre"
     ],
     "values": {
-      "en": "Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the"
+      "en": "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre"
     }
   }
 ]

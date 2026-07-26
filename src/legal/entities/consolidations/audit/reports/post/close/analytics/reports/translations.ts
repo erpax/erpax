@@ -6,22 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "post-close-analytics-reports",
-    "uuid": "a12c52f7-4c23-8000-b431-639d61653406",
+    "source": "reports",
+    "uuid": "9f131474-631b-87ab-8044-fe8ebb5cf572",
     "words": [
-      "post",
-      "close",
-      "analytics",
       "reports"
     ],
     "values": {
-      "en": "post-close-analytics-reports"
+      "en": "reports"
     }
   },
   {
     "key": "description",
     "source": "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection.",
-    "uuid": "72ad40f3-931c-813f-bec9-63f142b3403b",
+    "uuid": "d65d6c60-890b-87ea-9457-6235fa9717ab",
     "words": [
       "use",
       "when",

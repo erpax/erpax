@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "motel",
-    "uuid": "37633cd0-5fb1-8a08-9c72-bf902d9c6617",
+    "uuid": "77540adb-71bd-8c5a-9865-a341cb8e277b",
     "words": [
       "motel"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-    "uuid": "1dac537c-85bd-857d-9471-fa6998991fde",
+    "source": "Use when reasoning about motel — A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
+    "uuid": "5c1d05af-fe6c-8a68-94f9-a14ff3394dbb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "motel",
       "a",
       "motel",
       "see",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "accommodations"
     ],
     "values": {
-      "en": "A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations."
+      "en": "Use when reasoning about motel — A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations."
     }
   }
 ]

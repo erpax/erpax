@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mass",
-    "uuid": "d2d09e77-da3d-8c62-9d5f-6e748afab1d1",
+    "uuid": "dc1ea043-4982-8e47-a3e9-e8e96e9ffabf",
     "words": [
       "mass"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.",
-    "uuid": "b18b7f7f-8aa0-86f9-a40b-e581578d66f9",
+    "source": "Use when reasoning about mass — Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.",
+    "uuid": "db01a85a-f2f9-8d52-88f7-3754c6849f3a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "mass",
       "properties",
       "that",
       "take",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "kg"
     ],
     "values": {
-      "en": "Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'."
+      "en": "Use when reasoning about mass — Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'."
     }
   }
 ]

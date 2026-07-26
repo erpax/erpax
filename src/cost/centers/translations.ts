@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "cost-centers",
-    "uuid": "5d854fd9-2090-834f-8e96-7eda23e24103",
+    "source": "centers",
+    "uuid": "388e1279-998a-8c56-97fe-43240fcc604c",
     "words": [
-      "cost",
       "centers"
     ],
     "values": {
-      "en": "cost-centers"
+      "en": "centers"
     }
   },
   {
     "key": "description",
     "source": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-    "uuid": "3ed9f1a0-bfa9-86df-9a7e-572affeb42cf",
+    "uuid": "7bcbd3a1-8730-810a-9753-0f6a42f8b635",
     "words": [
       "use",
       "when",

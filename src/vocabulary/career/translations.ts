@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "career",
-    "uuid": "b3c32b22-999c-8354-9604-623582f52a4a",
+    "uuid": "01032c1b-7385-8166-a329-989aff1f843c",
     "words": [
       "career"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it.",
-    "uuid": "59d68fa8-4141-84a8-b87c-b1cf75ebf770",
+    "uuid": "4d073d5e-f82a-897a-b9ed-7c8c2fffcebd",
     "words": [
       "use",
       "when",

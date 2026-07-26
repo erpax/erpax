@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taxi",
-    "uuid": "d92d35f8-f8c5-8399-b7be-a6c28a0f17eb",
+    "uuid": "20534669-b112-8b94-8055-e2492850620d",
     "words": [
       "taxi"
     ],
@@ -17,14 +17,19 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A taxi.",
-    "uuid": "cda3ba5f-ebdb-8b43-ad95-1175ccebf34d",
+    "source": "Use when reasoning about taxi — A taxi.",
+    "uuid": "a064c661-b97b-808d-82c5-e3f9ea0c855e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "taxi",
       "a",
       "taxi"
     ],
     "values": {
-      "en": "A taxi."
+      "en": "Use when reasoning about taxi — A taxi."
     }
   }
 ]

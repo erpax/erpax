@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drawing",
-    "uuid": "50178fcf-8d51-81c1-a967-7654879fc069",
+    "uuid": "42fc10f4-f44d-823c-bb2d-bd0d0f095e6a",
     "words": [
       "drawing"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A picture or diagram made with a pencil, pen, or crayon rather than paint.",
-    "uuid": "f912b767-40e6-856a-9024-d37d28ce2795",
+    "source": "Use when reasoning about drawing — A picture or diagram made with a pencil, pen, or crayon rather than paint.",
+    "uuid": "6411d277-0fc8-8d20-b317-d45ced25cdc0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "drawing",
       "a",
       "picture",
       "or",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "paint"
     ],
     "values": {
-      "en": "A picture or diagram made with a pencil, pen, or crayon rather than paint."
+      "en": "Use when reasoning about drawing — A picture or diagram made with a pencil, pen, or crayon rather than paint."
     }
   }
 ]

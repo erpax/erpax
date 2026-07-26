@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "business-combinations",
-    "uuid": "1b842ad7-7fb4-8da9-b671-5b1b33f6c9d0",
+    "source": "combinations",
+    "uuid": "ccbabe7e-359d-8975-829a-555976736b87",
     "words": [
-      "business",
       "combinations"
     ],
     "values": {
-      "en": "business-combinations"
+      "en": "combinations"
     }
   },
   {
     "key": "description",
     "source": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-    "uuid": "6886eac0-cb88-8ca5-a7ec-0bea583b3591",
+    "uuid": "ea1c8328-86bb-8565-9d59-32af7672e341",
     "words": [
       "use",
       "when",

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fx-transactions",
-    "uuid": "09103e95-7726-8bf7-888f-e2a4b0c1b38d",
+    "source": "transactions",
+    "uuid": "847cc3cc-6919-8652-9f9f-da0055019d0d",
     "words": [
-      "fx",
       "transactions"
     ],
     "values": {
-      "en": "fx-transactions"
+      "en": "transactions"
     }
   },
   {
     "key": "description",
     "source": "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.",
-    "uuid": "9608c964-61b5-8d27-b5ae-70d2aa83170d",
+    "uuid": "e62f3f25-7526-8790-8a07-f7a212a68789",
     "words": [
       "use",
       "when",

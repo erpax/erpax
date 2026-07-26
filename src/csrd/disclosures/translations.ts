@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "csrd-disclosures",
-    "uuid": "d286fa8f-535c-8105-a378-059a4b4d5b3c",
+    "source": "disclosures",
+    "uuid": "88c4ec64-62a8-8403-8657-35148595ce88",
     "words": [
-      "csrd",
       "disclosures"
     ],
     "values": {
-      "en": "csrd-disclosures"
+      "en": "disclosures"
     }
   },
   {
     "key": "description",
     "source": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-    "uuid": "bc0e611c-06c0-8ed4-9292-6394fec29d46",
+    "uuid": "77c29142-4b45-803f-8c76-b85ca211cd59",
     "words": [
       "use",
       "when",

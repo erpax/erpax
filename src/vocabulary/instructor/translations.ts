@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instructor",
-    "uuid": "4bbc7642-2c7a-861e-9755-72f85fe8c14d",
+    "uuid": "94142923-773c-8ce4-ae86-07eb17d815f5",
     "words": [
       "instructor"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A person assigned to instruct or provide instructional assistance for the CourseInstance.",
-    "uuid": "82c353a2-10ab-89d3-9ae5-df1decbb85c2",
+    "source": "Use when reasoning about instructor — A person assigned to instruct or provide instructional assistance for the CourseInstance.",
+    "uuid": "9ad7d1c3-3ab2-8905-883e-f4cc1970e662",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "instructor",
       "a",
       "person",
       "assigned",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "courseinstance"
     ],
     "values": {
-      "en": "A person assigned to instruct or provide instructional assistance for the CourseInstance."
+      "en": "Use when reasoning about instructor — A person assigned to instruct or provide instructional assistance for the CourseInstance."
     }
   }
 ]

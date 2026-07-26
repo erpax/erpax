@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pronouns",
-    "uuid": "a49a1889-eaa6-8126-9562-64c65628ec0f",
+    "uuid": "67444eb6-d8aa-8927-aed4-740419e581eb",
     "words": [
       "pronouns"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and con",
-    "uuid": "a89d40f7-29c1-81d0-8497-59d080d62a3d",
+    "source": "Use when reasoning about pronouns — A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression",
+    "uuid": "c92cfcc6-64bd-83f0-ba4b-0c5a36f01b16",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "pronouns",
       "a",
       "short",
       "string",
@@ -48,13 +53,10 @@ export const translations: readonly Translation[] = [
       "personal",
       "identity",
       "and",
-      "expression",
-      "publishers",
-      "and",
-      "con"
+      "expression"
     ],
     "values": {
-      "en": "A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and con"
+      "en": "Use when reasoning about pronouns — A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression"
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "demand",
-    "uuid": "50c0d35b-ca6c-8a20-8900-22b687a2c224",
+    "uuid": "5ff27ed6-6c9f-8de6-8b2f-ee75461ff32a",
     "words": [
       "demand"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand ",
-    "uuid": "b12bd188-573d-8a6f-8553-36907840c57d",
+    "source": "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo",
+    "uuid": "fb5353df-3421-8a07-88cd-01bc5ad72c1c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "demand",
       "a",
       "demand",
       "entity",
@@ -47,12 +52,10 @@ export const translations: readonly Translation[] = [
       "goods",
       "or",
       "services",
-      "for",
-      "describing",
-      "demand"
+      "fo"
     ],
     "values": {
-      "en": "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand "
+      "en": "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo"
     }
   }
 ]

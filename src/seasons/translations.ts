@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seasons",
-    "uuid": "ca7c2133-4bf7-8b32-8f18-f6c31a5697dc",
+    "uuid": "2aa45a59-3d76-82f2-ac43-bf3645d54229",
     "words": [
       "seasons"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A season in a media series.",
-    "uuid": "03a0f5a5-7a9c-83fb-9c7c-265df734602e",
+    "source": "Use when reasoning about seasons — A season in a media series.",
+    "uuid": "da849e56-4352-82b5-ab76-86cee18f8e49",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "seasons",
       "a",
       "season",
       "in",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "series"
     ],
     "values": {
-      "en": "A season in a media series."
+      "en": "Use when reasoning about seasons — A season in a media series."
     }
   }
 ]

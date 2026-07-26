@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "device",
-    "uuid": "d018e48b-9af3-8f0e-bee8-8d228a17d7a0",
+    "uuid": "7a09f80a-ffef-874f-be37-6fbaef82d500",
     "words": [
       "device"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Device required to run the application. Used in cases where a specific make/model is required to run the application.",
-    "uuid": "0fdbb464-dce3-8c6c-9cda-40542a00b1c9",
+    "source": "Use when reasoning about device — Device required to run the application. Used in cases where a specific make/model is required to run the application.",
+    "uuid": "56bf5ae7-de10-8e82-8e39-e7e5ef9cc327",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "device",
       "device",
       "required",
       "to",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "application"
     ],
     "values": {
-      "en": "Device required to run the application. Used in cases where a specific make/model is required to run the application."
+      "en": "Use when reasoning about device — Device required to run the application. Used in cases where a specific make/model is required to run the application."
     }
   }
 ]

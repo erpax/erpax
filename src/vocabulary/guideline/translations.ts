@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "guideline",
-    "uuid": "b6a8951a-afd5-84bb-9317-a7822a01a13a",
+    "uuid": "596b7833-6019-8dea-8eb3-aa2da0a0244e",
     "words": [
       "guideline"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A medical guideline related to this entity.",
-    "uuid": "70d080b8-4d36-88e9-b18d-1396a80ba01a",
+    "source": "Use when reasoning about guideline — A medical guideline related to this entity.",
+    "uuid": "2ff56087-b2e9-8c06-9e7e-bb9f44aea1b9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "guideline",
       "a",
       "medical",
       "guideline",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "entity"
     ],
     "values": {
-      "en": "A medical guideline related to this entity."
+      "en": "Use when reasoning about guideline — A medical guideline related to this entity."
     }
   }
 ]

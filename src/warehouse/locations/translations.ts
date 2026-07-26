@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "warehouse-locations",
-    "uuid": "5b2cb502-d9c7-8e55-9683-d179162a3b8e",
+    "source": "locations",
+    "uuid": "15d182d9-a5b2-8a9a-b6ac-cb4111132a63",
     "words": [
-      "warehouse",
       "locations"
     ],
     "values": {
-      "en": "warehouse-locations"
+      "en": "locations"
     }
   },
   {
     "key": "description",
     "source": "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.",
-    "uuid": "3a9729fd-6061-851f-a63a-d90c6120b293",
+    "uuid": "936b78e5-e33f-8af0-aab2-a9668e44732f",
     "words": [
       "use",
       "when",

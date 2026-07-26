@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "beneficial-owners",
-    "uuid": "13db7f71-dec8-80f4-a42d-01f4a05bad38",
+    "source": "owners",
+    "uuid": "6dfabcb6-128a-81b2-8c49-f1a99371f842",
     "words": [
-      "beneficial",
       "owners"
     ],
     "values": {
-      "en": "beneficial-owners"
+      "en": "owners"
     }
   },
   {
     "key": "description",
     "source": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-    "uuid": "9f05ff39-ea10-8e5f-bd95-2c73f54b6a7f",
+    "uuid": "61752391-98c8-8dab-b24e-555c9a7c4d63",
     "words": [
       "use",
       "when",

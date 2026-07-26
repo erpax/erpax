@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clip",
-    "uuid": "b9f21fe7-42d9-8095-85c2-55059028dc27",
+    "uuid": "01f9dd3f-03e9-8247-8d02-76bfb0f41aba",
     "words": [
       "clip"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A short TV or radio program or a segment/part of a program.",
-    "uuid": "2904781c-e4cd-8d8d-822a-3403603c2d38",
+    "source": "Use when reasoning about clip — A short TV or radio program or a segment/part of a program.",
+    "uuid": "2ede7a34-f79c-8075-bf52-42cf255e164b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "clip",
       "a",
       "short",
       "tv",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "program"
     ],
     "values": {
-      "en": "A short TV or radio program or a segment/part of a program."
+      "en": "Use when reasoning about clip — A short TV or radio program or a segment/part of a program."
     }
   }
 ]

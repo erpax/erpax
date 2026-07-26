@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "address",
-    "uuid": "e1e1efe0-acef-8e3c-8ed6-a0b751257128",
+    "uuid": "69f97fc1-a8df-8ece-a70e-f81a4bc457c5",
     "words": [
       "address"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Physical address of the item.",
-    "uuid": "f57bc383-a745-8fa3-a5da-a57cf56b2e8f",
+    "source": "Use when reasoning about address — Physical address of the item.",
+    "uuid": "62502bd4-67d8-815f-96c6-8920489ef703",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "address",
       "physical",
       "address",
       "of",
@@ -27,7 +32,7 @@ export const translations: readonly Translation[] = [
       "item"
     ],
     "values": {
-      "en": "Physical address of the item."
+      "en": "Use when reasoning about address — Physical address of the item."
     }
   }
 ]

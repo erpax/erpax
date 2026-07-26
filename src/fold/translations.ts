@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fold",
-    "uuid": "ff1ed43c-cea6-8315-83bd-08b6714b4688",
+    "uuid": "ce5a9b31-6d1a-8c67-9eaf-ebde520f9b8e",
     "words": [
       "fold"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit.",
-    "uuid": "f110bbc8-ae78-837a-a2d7-d79aed8be1d4",
+    "uuid": "4555cce2-697d-8e57-ab3e-72205062dfeb",
     "words": [
       "use",
       "when",

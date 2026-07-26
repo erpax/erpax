@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "course",
-    "uuid": "674c780a-25b3-8ec0-802e-dfd8cc116964",
+    "uuid": "31d76f3e-e9a5-8693-87d3-3e777c004b6e",
     "words": [
       "course"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or mod",
-    "uuid": "8fded498-a6e1-8dd2-9209-b39ef3ee8ea4",
+    "source": "Use when reasoning about course — A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through di",
+    "uuid": "cd718d9b-056a-8d81-bdd4-2c755ba2ec3e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "course",
       "a",
       "description",
       "of",
@@ -49,13 +54,10 @@ export const translations: readonly Translation[] = [
       "be",
       "offered",
       "through",
-      "different",
-      "media",
-      "or",
-      "mod"
+      "di"
     ],
     "values": {
-      "en": "A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or mod"
+      "en": "Use when reasoning about course — A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through di"
     }
   }
 ]

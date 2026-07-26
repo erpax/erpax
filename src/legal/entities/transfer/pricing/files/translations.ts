@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "transfer-pricing-files",
-    "uuid": "61e44815-5b8f-84a3-bd71-deac02d04242",
+    "source": "files",
+    "uuid": "a6c87b4d-15f2-8fe0-883f-13c77168f31f",
     "words": [
-      "transfer",
-      "pricing",
       "files"
     ],
     "values": {
-      "en": "transfer-pricing-files"
+      "en": "files"
     }
   },
   {
     "key": "description",
     "source": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
-    "uuid": "a73c32bc-c3a1-8363-aad0-5917bddeb0a1",
+    "uuid": "9d27e502-aa31-8c9f-86a4-e907b4a5acd6",
     "words": [
       "use",
       "when",

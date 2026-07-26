@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "order",
-    "uuid": "bfccce0e-f2ce-8033-91a0-b4b4a234ca85",
+    "uuid": "6af7a811-cdc2-8cae-8d2a-874f84b848ac",
     "words": [
       "order"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
-    "uuid": "78f71a76-795c-8674-9a25-7fbb1663f3de",
+    "source": "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
+    "uuid": "1e321384-950c-8054-958e-90a6472d29ed",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "order",
       "an",
       "order",
       "is",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "customer"
     ],
     "values": {
-      "en": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer."
+      "en": "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "painter",
-    "uuid": "c9071879-50a2-891a-920f-76b0062f00a7",
+    "uuid": "2c0ac76a-689d-8f16-b0ff-b981052c3e83",
     "words": [
       "painter"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "painter: a schema.org component word, fused from HousePainter",
-    "uuid": "792d7c18-81ca-8ad4-9efc-dbfc50152deb",
+    "source": "Use when reasoning about painter — A schema.org component word, collided out of schema.org compounds — fused from HousePainter (sti · collapse · merge).",
+    "uuid": "662c73e4-c8ef-800e-95f9-8205eccab300",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "painter",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "housepainter"
+      "housepainter",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "painter: a schema.org component word, fused from HousePainter"
+      "en": "Use when reasoning about painter — A schema.org component word, collided out of schema.org compounds — fused from HousePainter (sti · collapse · merge)."
     }
   }
 ]

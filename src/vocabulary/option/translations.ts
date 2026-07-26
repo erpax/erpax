@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "option",
-    "uuid": "5cc1752d-d59e-8a54-ad0a-011f90005d96",
+    "uuid": "01dfb1b6-8752-898e-9c89-90417b14f7b0",
     "words": [
       "option"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A sub property of object. The options subject to this action.",
-    "uuid": "f0696f81-a28e-8244-9455-5a4c273221e7",
+    "source": "Use when reasoning about option — A sub property of object. The options subject to this action.",
+    "uuid": "ee4f228a-a4da-83a0-9434-feea8afeb6af",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "option",
       "a",
       "sub",
       "property",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "action"
     ],
     "values": {
-      "en": "A sub property of object. The options subject to this action."
+      "en": "Use when reasoning about option — A sub property of object. The options subject to this action."
     }
   }
 ]

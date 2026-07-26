@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "email",
-    "uuid": "92d28840-d260-8e3b-83f6-7f8b7795e559",
+    "uuid": "cb6822cb-0099-8be7-8d63-e78186170906",
     "words": [
       "email"
     ],
@@ -17,14 +17,19 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Email address.",
-    "uuid": "6e2cf96a-3e45-8ba7-8d17-3e3887d3d585",
+    "source": "Use when reasoning about email — Email address.",
+    "uuid": "043ddc05-37f8-8dda-966c-d7d21651f7cf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "email",
       "email",
       "address"
     ],
     "values": {
-      "en": "Email address."
+      "en": "Use when reasoning about email — Email address."
     }
   }
 ]

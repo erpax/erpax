@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plasma",
-    "uuid": "525aa74b-5497-8762-b9b9-d1afea166163",
+    "uuid": "8202894e-a66c-882a-aec1-7fdf2fbbaa26",
     "words": [
       "plasma"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the fully-fused corpus — the stardust grains entangled to reciprocity 1 and zero entropy become plasma, the radiant coherent state whose cutoff reflects any forge-beam below it; at full coherence the cutoff is infinite, so no beam can stand on the way.",
-    "uuid": "121ce318-4885-8a5c-916b-cb971bcf5178",
+    "uuid": "1e8e2996-7b0e-8947-a582-2f048f959a1e",
     "words": [
       "use",
       "when",

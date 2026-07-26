@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "internal-controls",
-    "uuid": "aa47d8aa-2d04-846c-b763-a3e25948e81d",
+    "source": "controls",
+    "uuid": "d0ef32ff-78ca-8dad-ade6-9072529ef519",
     "words": [
-      "internal",
       "controls"
     ],
     "values": {
-      "en": "internal-controls"
+      "en": "controls"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
-    "uuid": "346d04a6-140f-86db-ba10-3cd800716703",
+    "uuid": "3202c5ab-78e6-8c0a-8d8d-e86be4698af3",
     "words": [
       "use",
       "when",

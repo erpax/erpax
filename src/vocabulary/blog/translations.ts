@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "blog",
-    "uuid": "e553a5c5-5541-8f6e-b0d1-9ce78a529b24",
+    "uuid": "50d0823d-6b21-8747-aa0a-4b1523f5f7d9",
     "words": [
       "blog"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A blog, sometimes known as a \\\"weblog\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.",
-    "uuid": "af26441f-bb17-846b-889c-dcb9cc1f3643",
+    "source": "Use when reasoning about blog — A blog, sometimes known as a \\\\\\\"weblog\\\\\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.",
+    "uuid": "4308316c-2f16-838e-b41b-d8ab91f0e041",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "blog",
       "a",
       "blog",
       "sometimes",
@@ -47,7 +52,7 @@ export const translations: readonly Translation[] = [
       "term"
     ],
     "values": {
-      "en": "A blog, sometimes known as a \\\"weblog\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term."
+      "en": "Use when reasoning about blog — A blog, sometimes known as a \\\\\\\"weblog\\\\\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term."
     }
   }
 ]

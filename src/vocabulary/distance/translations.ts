@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "distance",
-    "uuid": "67ba8e26-30a8-8d93-94d1-4393632053e0",
+    "uuid": "25c6e714-76a3-8272-b3d4-4888c0d20a5c",
     "words": [
       "distance"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.",
-    "uuid": "c6a0aaee-307a-8ad0-8a89-68973946c6fe",
+    "source": "Use when reasoning about distance — Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.",
+    "uuid": "8ea84959-d5d2-895b-86ce-462572ea91a1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "distance",
       "properties",
       "that",
       "take",
@@ -44,7 +49,7 @@ export const translations: readonly Translation[] = [
       "ft"
     ],
     "values": {
-      "en": "Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'."
+      "en": "Use when reasoning about distance — Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'."
     }
   }
 ]

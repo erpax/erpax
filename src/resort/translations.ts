@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resort",
-    "uuid": "858ec556-81c2-86cb-a965-327dc90da37d",
+    "uuid": "ad551ba3-72f6-8c63-a013-731b85fc2fa4",
     "words": [
       "resort"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a single company (sou",
-    "uuid": "107060fd-1048-8023-86d5-2b8717076b41",
+    "source": "Use when reasoning about resort — A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a",
+    "uuid": "3873605a-aac9-8c16-a2c1-9b832ffbcf35",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "resort",
       "a",
       "resort",
       "is",
@@ -46,13 +51,10 @@ export const translations: readonly Translation[] = [
       "establishments",
       "operated",
       "by",
-      "a",
-      "single",
-      "company",
-      "sou"
+      "a"
     ],
     "values": {
-      "en": "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a single company (sou"
+      "en": "Use when reasoning about resort — A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a"
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "tracking-events",
-    "uuid": "de7a9d70-1ef5-8f1d-9e79-efdc2761503a",
+    "source": "events",
+    "uuid": "2422410a-cedf-8a22-9e38-88ee0b886a16",
     "words": [
-      "tracking",
       "events"
     ],
     "values": {
-      "en": "tracking-events"
+      "en": "events"
     }
   },
   {
     "key": "description",
     "source": "Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log.",
-    "uuid": "1f232634-452a-815b-bd17-b82d9b027df0",
+    "uuid": "f9450fb8-a9a5-85ab-8e94-d9353bac2a7b",
     "words": [
       "use",
       "when",

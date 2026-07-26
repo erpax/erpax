@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hotel",
-    "uuid": "d554dcb3-b055-8b42-b281-f1a2b763045a",
+    "uuid": "354f5fea-7d64-8f3b-8b52-16442826604d",
     "words": [
       "hotel"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedicated document on the ",
-    "uuid": "6d81281e-c95a-840f-9892-b505347260c9",
+    "source": "Use when reasoning about hotel — A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedica",
+    "uuid": "a47d804c-b900-8cdf-a4fd-aed2b7a80be7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "hotel",
       "a",
       "hotel",
       "is",
@@ -49,13 +54,10 @@ export const translations: readonly Translation[] = [
       "see",
       "also",
       "the",
-      "dedicated",
-      "document",
-      "on",
-      "the"
+      "dedica"
     ],
     "values": {
-      "en": "A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedicated document on the "
+      "en": "Use when reasoning about hotel — A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedica"
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "remote-access",
-    "uuid": "3e12537b-fb5f-87ab-9852-6909e2d5a2d3",
+    "source": "access",
+    "uuid": "7888364d-5925-813e-9be2-41fee4b48d65",
     "words": [
-      "remote",
       "access"
     ],
     "values": {
-      "en": "remote-access"
+      "en": "access"
     }
   },
   {
     "key": "description",
     "source": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
-    "uuid": "34b6ce65-2bb4-84e6-ae27-f035923f6df1",
+    "uuid": "f200fd12-83a5-89cd-b36e-4857454d85f6",
     "words": [
       "use",
       "when",

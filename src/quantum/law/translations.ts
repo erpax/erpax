@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "law",
-    "uuid": "3d2a41d9-e923-86f6-a6fe-dcc122bf252d",
+    "uuid": "482ca0b4-caf4-838c-8650-65e56cccdf51",
     "words": [
       "law"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking that an atom is grounded — law is the suffix, the invariant each SKILL.md must close with; this quantum twin scans the quantum atoms and finds the lawless ones (state without invariant), the way recycle finds orphans.",
-    "uuid": "5bd007a0-fea2-8e3a-a1c8-9fb5636f55b5",
+    "uuid": "4f117102-67b7-8e86-bb57-eb9b31fd2dea",
     "words": [
       "use",
       "when",

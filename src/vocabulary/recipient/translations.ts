@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recipient",
-    "uuid": "e06821a7-13ed-8804-bf2e-9b5021cfe144",
+    "uuid": "8c497ef9-fb50-8c3d-9d8a-19fb3a2d28c3",
     "words": [
       "recipient"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A sub property of participant. The participant who is at the receiving end of the action.",
-    "uuid": "a5e34f55-3c49-824f-a9cb-ea4c9b393c76",
+    "source": "Use when reasoning about recipient — A sub property of participant. The participant who is at the receiving end of the action.",
+    "uuid": "7916117f-2e99-87f0-bc4d-f8bf6e4250ed",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "recipient",
       "a",
       "sub",
       "property",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "action"
     ],
     "values": {
-      "en": "A sub property of participant. The participant who is at the receiving end of the action."
+      "en": "Use when reasoning about recipient — A sub property of participant. The participant who is at the receiving end of the action."
     }
   }
 ]

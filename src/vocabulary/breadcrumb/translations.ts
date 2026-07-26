@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breadcrumb",
-    "uuid": "89b3968d-4e2e-8d2f-932d-20f140f69bd3",
+    "uuid": "bc2cf8b4-98ce-8042-ac56-190553502a48",
     "words": [
       "breadcrumb"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A set of links that can help a user understand and navigate a website hierarchy.",
-    "uuid": "1310bdd5-61c3-81c7-b142-847fbeddcc95",
+    "source": "Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.",
+    "uuid": "84e3652f-8436-8d38-b882-fb6a73bfc6de",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "breadcrumb",
       "a",
       "set",
       "of",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "hierarchy"
     ],
     "values": {
-      "en": "A set of links that can help a user understand and navigate a website hierarchy."
+      "en": "Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy."
     }
   }
 ]

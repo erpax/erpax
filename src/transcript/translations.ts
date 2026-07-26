@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transcript",
-    "uuid": "a3bf64f4-bbca-8ae0-b088-6aa7ee9087a8",
+    "uuid": "d01382bd-54ca-8054-b35e-4333f281f41f",
     "words": [
       "transcript"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
-    "uuid": "77a94a66-9227-8cab-aa24-1f90c3bace49",
+    "source": "Use when reasoning about transcript — If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
+    "uuid": "427fa439-9f86-8df3-a24d-9b8eb5b9c9e6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "transcript",
       "if",
       "this",
       "mediaobject",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "object"
     ],
     "values": {
-      "en": "If this MediaObject is an AudioObject or VideoObject, the transcript of that object."
+      "en": "Use when reasoning about transcript — If this MediaObject is an AudioObject or VideoObject, the transcript of that object."
     }
   }
 ]

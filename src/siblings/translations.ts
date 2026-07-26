@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "siblings",
-    "uuid": "ca56c1ad-429a-877d-88f1-a75acab721bb",
+    "uuid": "c34f1376-0d39-8909-b6df-49c92d3c692c",
     "words": [
       "siblings"
     ],
@@ -17,20 +17,43 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The person's siblings — the plural of sibling.",
-    "uuid": "06c9f660-d28f-80f2-bfb5-d5f3d2787797",
+    "source": "Use when reasoning about siblings — The person's siblings — see sibling (the singular). A dimension of one relation: siblings is the collection, sibling the unit; the text lives once, in sibling.",
+    "uuid": "09a55140-be21-86af-a38c-484847b59bdb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "siblings",
       "the",
       "person",
       "s",
       "siblings",
+      "see",
+      "sibling",
       "the",
-      "plural",
+      "singular",
+      "a",
+      "dimension",
       "of",
+      "one",
+      "relation",
+      "siblings",
+      "is",
+      "the",
+      "collection",
+      "sibling",
+      "the",
+      "unit",
+      "the",
+      "text",
+      "lives",
+      "once",
+      "in",
       "sibling"
     ],
     "values": {
-      "en": "The person's siblings — the plural of sibling."
+      "en": "Use when reasoning about siblings — The person's siblings — see sibling (the singular). A dimension of one relation: siblings is the collection, sibling the unit; the text lives once, in sibling."
     }
   }
 ]

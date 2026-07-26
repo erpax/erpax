@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "performance-obligations",
-    "uuid": "0c7f0dc7-ba66-8d68-a11f-c3b105e8df69",
+    "source": "obligations",
+    "uuid": "b7d22288-d2d3-8275-b6e6-1a98a1a98b45",
     "words": [
-      "performance",
       "obligations"
     ],
     "values": {
-      "en": "performance-obligations"
+      "en": "obligations"
     }
   },
   {
     "key": "description",
     "source": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
-    "uuid": "9d0d2ef0-2ae9-8c38-aea5-f7cc86b3371b",
+    "uuid": "0afc4c9c-46a2-8735-ae48-8c09650cbbe1",
     "words": [
       "use",
       "when",

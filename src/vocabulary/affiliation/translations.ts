@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "affiliation",
-    "uuid": "84860322-f304-81ab-96ea-9a2af2a92d43",
+    "uuid": "5c85b773-e2f5-8efc-bd62-916607d250ad",
     "words": [
       "affiliation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
-    "uuid": "2a30e1f8-67bd-8d0e-a0e6-00c6c7bf983d",
+    "source": "Use when reasoning about affiliation — An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
+    "uuid": "cf92a5a1-d817-8b2b-b48b-4e319094666b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "affiliation",
       "an",
       "organization",
       "that",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "team"
     ],
     "values": {
-      "en": "An organization that this person is affiliated with. For example, a school/university, a club, or a team."
+      "en": "Use when reasoning about affiliation — An organization that this person is affiliated with. For example, a school/university, a club, or a team."
     }
   }
 ]

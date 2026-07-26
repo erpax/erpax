@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "renegotiable",
-    "uuid": "cc7597d3-953f-8ec8-8248-fa49f79276a1",
+    "uuid": "bd831c21-37b1-8a6b-8310-f51547c3771e",
     "words": [
       "renegotiable"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "a6824765-903a-8866-8059-89cfee1eb236",
+    "uuid": "444d62a4-b87f-8921-b9e1-fb828c98aa84",
     "words": [
       "use",
       "when",

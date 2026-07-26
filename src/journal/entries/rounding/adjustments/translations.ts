@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "rounding-adjustments",
-    "uuid": "b242b141-a0ad-8e08-baf5-3915c933ad1c",
+    "source": "adjustments",
+    "uuid": "2b47dc13-c5f4-8bcf-9882-22a8da3977c6",
     "words": [
-      "rounding",
       "adjustments"
     ],
     "values": {
-      "en": "rounding-adjustments"
+      "en": "adjustments"
     }
   },
   {
     "key": "description",
     "source": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
-    "uuid": "ddd052de-85b7-8cd4-b624-242b3fb53152",
+    "uuid": "fc635d98-45de-82dc-8f54-dafe76b623ef",
     "words": [
       "use",
       "when",

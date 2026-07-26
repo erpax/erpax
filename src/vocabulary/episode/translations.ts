@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "episode",
-    "uuid": "de1fe89e-b362-8715-a120-016b2f2ed4b7",
+    "uuid": "b3510bc9-bea8-8857-83fe-a841e2dca46a",
     "words": [
       "episode"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A media episode (e.g. TV, radio, video game) which can be part of a series or season.",
-    "uuid": "4181c540-2162-8020-a567-b5998e1ad4b7",
+    "source": "Use when reasoning about episode — A media episode (e.g. TV, radio, video game) which can be part of a series or season.",
+    "uuid": "f230db26-50ae-8f63-8245-8e89cb2e29af",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "episode",
       "a",
       "media",
       "episode",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "season"
     ],
     "values": {
-      "en": "A media episode (e.g. TV, radio, video game) which can be part of a series or season."
+      "en": "Use when reasoning about episode — A media episode (e.g. TV, radio, video game) which can be part of a series or season."
     }
   }
 ]

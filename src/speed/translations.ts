@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speed",
-    "uuid": "b57c2655-41d2-849b-970e-259bddd96739",
+    "uuid": "ba96b95c-2b54-83da-a99e-06430d1f0358",
     "words": [
       "speed"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regular conditions. Typi",
-    "uuid": "f5224bb4-ff02-830a-a90a-ea151b9025e5",
+    "source": "Use when reasoning about speed — The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regu",
+    "uuid": "3a6fffbe-2db4-8577-b16d-af0c22440dd8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "speed",
       "the",
       "speed",
       "range",
@@ -51,12 +56,10 @@ export const translations: readonly Translation[] = [
       "speed",
       "achievable",
       "under",
-      "regular",
-      "conditions",
-      "typi"
+      "regu"
     ],
     "values": {
-      "en": "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regular conditions. Typi"
+      "en": "Use when reasoning about speed — The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regu"
     }
   }
 ]

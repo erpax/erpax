@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reciprocal",
-    "uuid": "cf0008d8-8d37-8751-8cf8-97265f27c43c",
+    "uuid": "e292a473-56d8-8608-a43a-ad11731b7bb4",
     "words": [
       "reciprocal"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix.",
-    "uuid": "79715146-a93e-850a-bc40-20dd5b87c2e4",
+    "uuid": "387e405a-07aa-8c17-8a9a-9eed3c1c6a6a",
     "words": [
       "use",
       "when",

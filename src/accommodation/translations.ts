@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accommodation",
-    "uuid": "9a378d18-5c1d-8779-9158-fe529599a743",
+    "uuid": "a209d30f-efbb-8998-8d0e-a3b49c158b20",
     "words": [
       "accommodation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requireme",
-    "uuid": "bc722607-404c-88fb-8bc3-e0ecc5ca27ff",
+    "source": "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a",
+    "uuid": "a4d363cc-5087-8077-af13-ad7c4f055fae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "accommodation",
       "an",
       "accommodation",
       "is",
@@ -52,12 +57,10 @@ export const translations: readonly Translation[] = [
       "this",
       "is",
       "not",
-      "a",
-      "mandatory",
-      "requireme"
+      "a"
     ],
     "values": {
-      "en": "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requireme"
+      "en": "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a"
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "un",
-    "uuid": "70c7aba9-a797-8bf7-84e1-4304d9dfb4ae",
+    "uuid": "dfde48f6-cfce-8c33-aab0-3eb32f343341",
     "words": [
       "un"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "un: a schema.org component word, fused from UnRegisterAction",
-    "uuid": "538d7a98-f8b6-863f-af19-605876a0e8ba",
+    "source": "Use when reasoning about un — A schema.org component word, collided out of schema.org compounds — fused from UnRegisterAction (sti · collapse · merge).",
+    "uuid": "1e37f5a2-1852-8fb3-93d1-c868af9c66c7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "un",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "unregisteraction"
+      "unregisteraction",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "un: a schema.org component word, fused from UnRegisterAction"
+      "en": "Use when reasoning about un — A schema.org component word, collided out of schema.org compounds — fused from UnRegisterAction (sti · collapse · merge)."
     }
   }
 ]

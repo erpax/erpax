@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "tax-codes",
-    "uuid": "b1ec1dfc-b75e-854e-a68c-fbd1b0bdd434",
+    "source": "codes",
+    "uuid": "279caf15-52d9-83ae-b4e6-42494fca4e51",
     "words": [
-      "tax",
       "codes"
     ],
     "values": {
-      "en": "tax-codes"
+      "en": "codes"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection.",
-    "uuid": "b69ea8ec-0aec-8a8a-9513-60d05530e279",
+    "uuid": "42ad57c3-acac-8d12-9f07-7ab969c89e6d",
     "words": [
       "use",
       "when",

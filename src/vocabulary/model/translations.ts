@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "model",
-    "uuid": "a63d5c10-2ca7-848a-acdb-585de23db45a",
+    "uuid": "f9fc3b4d-ec53-8f47-bf9e-8b8ca56623bd",
     "words": [
       "model"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats can be represented us",
-    "uuid": "1e74caa8-c712-8754-8e04-6e9e5fac84cc",
+    "source": "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c",
+    "uuid": "ba34731f-358d-8afc-b896-15dbffde87a1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "model",
       "a",
       "d",
       "model",
@@ -50,13 +55,10 @@ export const translations: readonly Translation[] = [
       "specific",
       "encoding",
       "formats",
-      "can",
-      "be",
-      "represented",
-      "us"
+      "c"
     ],
     "values": {
-      "en": "A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats can be represented us"
+      "en": "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c"
     }
   }
 ]

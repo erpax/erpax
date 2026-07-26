@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variance",
-    "uuid": "b3d3d58c-26c5-84ed-a27c-2d648ffbc912",
+    "uuid": "5815e565-2f70-8a7c-a862-fa8560ae4023",
     "words": [
       "variance"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined performance measures",
-    "uuid": "8aaa6d0a-3ba3-8b9a-9103-6340122a7baa",
+    "source": "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor",
+    "uuid": "897ae348-adcb-8508-ac5a-f3910ba6a164",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "variance",
       "use",
       "for",
       "analyzing",
@@ -43,11 +48,10 @@ export const translations: readonly Translation[] = [
       "and",
       "management",
       "defined",
-      "performance",
-      "measures"
+      "perfor"
     ],
     "values": {
-      "en": "Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined performance measures"
+      "en": "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor"
     }
   }
 ]

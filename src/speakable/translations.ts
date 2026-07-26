@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speakable",
-    "uuid": "531ff91f-db16-8ced-8011-c63608c4b30f",
+    "uuid": "d399e230-d22d-8e63-9f3f-671f4299d767",
     "words": [
       "speakable"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be",
-    "uuid": "5dce05e4-fa5b-8cf1-841f-cce993189341",
+    "source": "Use when reasoning about speakable — Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections o",
+    "uuid": "e2a86d9f-5310-8a3f-8aa9-9813953465d3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "speakable",
       "indicates",
       "sections",
       "of",
@@ -47,15 +52,10 @@ export const translations: readonly Translation[] = [
       "conversion",
       "other",
       "sections",
-      "of",
-      "a",
-      "page",
-      "may",
-      "also",
-      "be"
+      "o"
     ],
     "values": {
-      "en": "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be"
+      "en": "Use when reasoning about speakable — Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections o"
     }
   }
 ]

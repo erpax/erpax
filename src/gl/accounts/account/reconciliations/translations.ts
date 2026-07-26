@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "account-reconciliations",
-    "uuid": "ddb9cdbc-0c79-8cee-9047-4ec302e588b3",
+    "source": "reconciliations",
+    "uuid": "6c941d4f-9f29-8393-a796-15d20094dac9",
     "words": [
-      "account",
       "reconciliations"
     ],
     "values": {
-      "en": "account-reconciliations"
+      "en": "reconciliations"
     }
   },
   {
     "key": "description",
     "source": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
-    "uuid": "f088227d-0e32-8108-b43b-97656f5cb27a",
+    "uuid": "8da73420-16e1-86b5-92a1-a419aa6fda76",
     "words": [
       "use",
       "when",

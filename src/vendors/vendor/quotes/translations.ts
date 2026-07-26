@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "vendor-quotes",
-    "uuid": "11442010-83f5-81a6-ade0-2adda3d1d3e9",
+    "source": "quotes",
+    "uuid": "6290381c-4db3-8249-be52-e7875549e807",
     "words": [
-      "vendor",
       "quotes"
     ],
     "values": {
-      "en": "vendor-quotes"
+      "en": "quotes"
     }
   },
   {
     "key": "description",
     "source": "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.",
-    "uuid": "b4c4b4d2-f6f5-8a4b-8e71-c40ff23c1691",
+    "uuid": "0b2a98b2-e0d5-8dc4-aaf2-e3b15f4912f4",
     "words": [
       "use",
       "when",

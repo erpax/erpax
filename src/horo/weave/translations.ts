@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "weave",
-    "uuid": "bb237327-acdc-8170-91c5-02f037e3477b",
+    "uuid": "5a6041ea-3b2a-85be-ae41-57ca3710b3dd",
     "words": [
       "weave"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
-    "uuid": "56fde8d6-933d-84bb-b348-3008e7bb0a36",
+    "source": "Use when reasoning about the third position of the horo state ring — digit 4, \\\\\\\"four hands meeting\\\\\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
+    "uuid": "e0e14028-53b7-891e-8c80-aa4a30ae98a1",
     "words": [
       "use",
       "when",
@@ -58,7 +58,7 @@ export const translations: readonly Translation[] = [
       "horo"
     ],
     "values": {
-      "en": "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
+      "en": "Use when reasoning about the third position of the horo state ring — digit 4, \\\\\\\"four hands meeting\\\\\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discusses",
-    "uuid": "b6489424-e30d-85a7-a12d-882c81d5efd7",
+    "uuid": "7086ea2d-e258-8986-a41d-15042539c75b",
     "words": [
       "discusses"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Specifies the CreativeWork associated with the UserComment.",
-    "uuid": "972a3b16-c758-8ca2-b532-d7b83650ea39",
+    "source": "Use when reasoning about discusses — Specifies the CreativeWork associated with the UserComment.",
+    "uuid": "8c35c1f0-67db-8b0b-ae62-286edfb597bb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "discusses",
       "specifies",
       "the",
       "creativework",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "usercomment"
     ],
     "values": {
-      "en": "Specifies the CreativeWork associated with the UserComment."
+      "en": "Use when reasoning about discusses — Specifies the CreativeWork associated with the UserComment."
     }
   }
 ]

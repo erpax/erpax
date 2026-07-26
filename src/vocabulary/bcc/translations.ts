@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bcc",
-    "uuid": "08dffde5-594e-81cc-8328-4f0d980cb95f",
+    "uuid": "01b98091-17a4-8285-a29b-daaefb903c57",
     "words": [
       "bcc"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about bcc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "8b435b0d-ccbf-87fb-a287-c7bea7236ed0",
+    "uuid": "35f26442-a304-816f-9821-841a88a01fda",
     "words": [
       "use",
       "when",

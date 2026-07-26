@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "organization",
-    "uuid": "4d06b647-680b-8d31-9e7a-369c0fbf83d9",
+    "uuid": "35a07798-27d0-8831-81ae-a8f0f15c62c5",
     "words": [
       "organization"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An organization such as a school, NGO, corporation, club, etc.",
-    "uuid": "a67138ec-2eaa-8083-b22d-59772bf3206c",
+    "source": "Use when reasoning about organization — An organization such as a school, NGO, corporation, club, etc.",
+    "uuid": "76bf2acc-1d15-8d7a-bc57-5ed66edd597d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "organization",
       "an",
       "organization",
       "such",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "etc"
     ],
     "values": {
-      "en": "An organization such as a school, NGO, corporation, club, etc."
+      "en": "Use when reasoning about organization — An organization such as a school, NGO, corporation, club, etc."
     }
   }
 ]

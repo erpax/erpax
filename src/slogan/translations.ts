@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "slogan",
-    "uuid": "b9975c82-20e7-8fdf-bc40-300682330631",
+    "uuid": "7cfb589b-772c-86b2-8728-c8efc4b3e3c4",
     "words": [
       "slogan"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A slogan or motto associated with the item.",
-    "uuid": "194d0979-c36d-8947-967d-0cc933ece65d",
+    "source": "Use when reasoning about slogan — A slogan or motto associated with the item.",
+    "uuid": "6f6caa29-0ed4-8802-b670-216ca6a68bb6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "slogan",
       "a",
       "slogan",
       "or",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "item"
     ],
     "values": {
-      "en": "A slogan or motto associated with the item."
+      "en": "Use when reasoning about slogan — A slogan or motto associated with the item."
     }
   }
 ]

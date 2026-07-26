@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "query",
-    "uuid": "87937cb3-5bb6-8fd6-acff-6fa8dabaed6c",
+    "uuid": "deba839b-8b2b-87c5-9130-73d553e6724c",
     "words": [
       "query"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A sub property of instrument. The query used on this action.",
-    "uuid": "bd954961-d73e-86c9-8acb-7fb9de5398b5",
+    "source": "Use when reasoning about query — A sub property of instrument. The query used on this action.",
+    "uuid": "17a3878f-9019-83d6-939a-82cc6abcd1c5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "query",
       "a",
       "sub",
       "property",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "action"
     ],
     "values": {
-      "en": "A sub property of instrument. The query used on this action."
+      "en": "Use when reasoning about query — A sub property of instrument. The query used on this action."
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "sales-commissions",
-    "uuid": "068e10c0-a989-8070-adfd-1a01b562ec7b",
+    "source": "commissions",
+    "uuid": "118b0647-8142-8c55-89fc-f070f3bca883",
     "words": [
-      "sales",
       "commissions"
     ],
     "values": {
-      "en": "sales-commissions"
+      "en": "commissions"
     }
   },
   {
     "key": "description",
     "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-    "uuid": "01c1968f-38bb-8ead-bd8d-5ebe54741b62",
+    "uuid": "3f5c96ba-fea3-835d-84f6-fe8cea42ca76",
     "words": [
       "use",
       "when",

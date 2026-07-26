@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "optician",
-    "uuid": "d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14",
+    "uuid": "0c2d444a-fb53-8dd7-a6c8-9b816d4c9c01",
     "words": [
       "optician"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A store that sells reading glasses and similar devices for improving vision.",
-    "uuid": "2f6326c2-ccb3-8d28-a9b6-c151be4b2bbb",
+    "source": "Use when reasoning about optician — A store that sells reading glasses and similar devices for improving vision.",
+    "uuid": "41797ae0-5f00-8ac3-ac31-ef9ce0b493ee",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "optician",
       "a",
       "store",
       "that",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "vision"
     ],
     "values": {
-      "en": "A store that sells reading glasses and similar devices for improving vision."
+      "en": "Use when reasoning about optician — A store that sells reading glasses and similar devices for improving vision."
     }
   }
 ]

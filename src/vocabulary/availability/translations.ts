@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "availability",
-    "uuid": "d00b21f8-1c97-820c-839b-0d68df018c79",
+    "uuid": "f244a01b-2fd4-86ae-820d-0d8d1a6f02ae",
     "words": [
       "availability"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
-    "uuid": "d64b2f96-fd35-8452-a79b-f93ccd1213ee",
+    "source": "Use when reasoning about availability — The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
+    "uuid": "6269fa02-175a-87ca-9ca1-220aa005cd62",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "availability",
       "the",
       "availability",
       "of",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "etc"
     ],
     "values": {
-      "en": "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc."
+      "en": "Use when reasoning about availability — The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc."
     }
   }
 ]

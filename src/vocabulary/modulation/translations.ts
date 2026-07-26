@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "modulation",
-    "uuid": "4bfbcb00-1dcc-8510-894d-102003c3d9cc",
+    "uuid": "5ab81e92-eb70-87fb-8d9f-61da7b7ec351",
     "words": [
       "modulation"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "modulation: a schema.org component word, fused from broadcastSignalModulation",
-    "uuid": "94871b5c-258d-8ce0-8471-f22f8e9595a0",
+    "source": "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge).",
+    "uuid": "a62e7613-79ce-83d5-9acb-fd434357b8c9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "modulation",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "broadcastsignalmodulation"
+      "broadcastsignalmodulation",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "modulation: a schema.org component word, fused from broadcastSignalModulation"
+      "en": "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge)."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "knows",
-    "uuid": "4583cbdc-72a0-8b8f-a7f1-9c56c27d4f73",
+    "uuid": "1dd2331b-939d-831f-9ed9-23d6b2535713",
     "words": [
       "knows"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The most generic bi-directional social/work relation.",
-    "uuid": "cc66a537-0b8e-8fc6-aab3-ec7234ddc3ce",
+    "source": "Use when reasoning about knows — The most generic bi-directional social/work relation.",
+    "uuid": "51c0ff1d-bcd5-81be-b23c-954b93d45be7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "knows",
       "the",
       "most",
       "generic",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "relation"
     ],
     "values": {
-      "en": "The most generic bi-directional social/work relation."
+      "en": "Use when reasoning about knows — The most generic bi-directional social/work relation."
     }
   }
 ]

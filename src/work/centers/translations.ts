@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "work-centers",
-    "uuid": "81ceb7bb-c090-851b-9a06-c8004d6fef7d",
+    "source": "centers",
+    "uuid": "388e1279-998a-8c56-97fe-43240fcc604c",
     "words": [
-      "work",
       "centers"
     ],
     "values": {
-      "en": "work-centers"
+      "en": "centers"
     }
   },
   {
     "key": "description",
     "source": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
-    "uuid": "8b041222-351e-8b45-8033-6f608367bbb5",
+    "uuid": "6f326e2f-3a66-8fec-ba74-fd3eae0cf9f7",
     "words": [
       "use",
       "when",

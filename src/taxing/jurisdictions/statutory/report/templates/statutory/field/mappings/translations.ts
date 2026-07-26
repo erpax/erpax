@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "statutory-field-mappings",
-    "uuid": "ef60547d-28b2-8658-bd66-6b4a34d6422f",
+    "source": "mappings",
+    "uuid": "94499806-5665-8040-900d-dddbe4a62816",
     "words": [
-      "statutory",
-      "field",
       "mappings"
     ],
     "values": {
-      "en": "statutory-field-mappings"
+      "en": "mappings"
     }
   },
   {
     "key": "description",
     "source": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
-    "uuid": "f6f6d217-3da4-8140-a3e7-3aa272d2d6e2",
+    "uuid": "a1c07a5d-f47a-8b5d-88a8-b7a161529789",
     "words": [
       "use",
       "when",

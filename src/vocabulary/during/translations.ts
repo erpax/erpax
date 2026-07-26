@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "during",
-    "uuid": "35002e61-c318-8aa6-85c9-c2df9b84483a",
+    "uuid": "6849c92c-f728-8671-a106-3fa51671642a",
     "words": [
       "during"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "during: a schema.org component word, fused from duringMedia",
-    "uuid": "f176c795-d844-87f0-a6a7-7fe6648cdc65",
+    "source": "Use when reasoning about during — A schema.org component word, collided out of schema.org compounds — fused from duringMedia (sti · collapse · merge).",
+    "uuid": "79c325c2-2e53-8080-bd4c-55098af34d5e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "during",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "duringmedia"
+      "duringmedia",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "during: a schema.org component word, fused from duringMedia"
+      "en": "Use when reasoning about during — A schema.org component word, collided out of schema.org compounds — fused from duringMedia (sti · collapse · merge)."
     }
   }
 ]

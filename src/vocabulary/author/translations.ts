@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "author",
-    "uuid": "73a5661f-9aa2-8550-9a59-d14bed3b651f",
+    "uuid": "7cdbc7c4-9fab-8c82-a19c-2b1c26fe210b",
     "words": [
       "author"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be us",
-    "uuid": "eb9d63eb-e43a-8812-b3fd-8493862b6c26",
+    "source": "Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t",
+    "uuid": "fda843e3-36a6-8ee9-a691-4f501997f87f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "author",
       "the",
       "author",
       "of",
@@ -50,15 +55,10 @@ export const translations: readonly Translation[] = [
       "that",
       "is",
       "equivalent",
-      "to",
-      "this",
-      "and",
-      "may",
-      "be",
-      "us"
+      "t"
     ],
     "values": {
-      "en": "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be us"
+      "en": "Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t"
     }
   }
 ]

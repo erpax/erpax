@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-fs",
-    "uuid": "0b4f821e-052a-88c3-b5ca-88dcb1f92da2",
+    "source": "fs",
+    "uuid": "0c11da1e-e962-88ac-8b8d-a5504ecda7fc",
     "words": [
-      "quantum",
       "fs"
     ],
     "values": {
-      "en": "quantum-fs"
+      "en": "fs"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-    "uuid": "68b200a4-92ee-844c-86f0-e52ba770eca3",
+    "uuid": "febff9ce-2958-8e13-b336-d67658492f24",
     "words": [
       "use",
       "when",

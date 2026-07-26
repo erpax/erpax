@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sport",
-    "uuid": "7e570871-4d85-89aa-8ff4-b27fe0cb9ad9",
+    "uuid": "98ff98a0-86fa-8a14-9d9b-be8791171cf5",
     "words": [
       "sport"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A type of sport (e.g. Baseball).",
-    "uuid": "2fe13183-4de7-84bd-bc2f-6eb5315645e6",
+    "source": "Use when reasoning about sport — A type of sport (e.g. Baseball).",
+    "uuid": "fd353f95-fd61-8e75-8cfd-88f7f842da01",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sport",
       "a",
       "type",
       "of",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "baseball"
     ],
     "values": {
-      "en": "A type of sport (e.g. Baseball)."
+      "en": "Use when reasoning about sport — A type of sport (e.g. Baseball)."
     }
   }
 ]

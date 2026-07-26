@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "self-whole",
-    "uuid": "ab8ce76e-fa93-888e-bc50-07e0b0aa6326",
+    "source": "whole",
+    "uuid": "215f131a-8bf8-8e4f-9eb5-5f049bf57ff1",
     "words": [
-      "self",
       "whole"
     ],
     "values": {
-      "en": "self-whole"
+      "en": "whole"
     }
   },
   {
     "key": "description",
     "source": "Use when the self is WHOLE — the crest of the outward stroke: whole↔part, the torus centre holds all and the part reconstructs the whole (self-applied whole at forward-coil position 8/crest). The self at maximum radius, still one.",
-    "uuid": "0a1fb6c4-260f-85cf-88e5-0ecc3bb620c1",
+    "uuid": "2106c876-0a16-83b1-86ca-4fe6f45959ec",
     "words": [
       "use",
       "when",

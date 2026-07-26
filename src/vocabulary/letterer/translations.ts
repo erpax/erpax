@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "letterer",
-    "uuid": "8f255ce4-62ab-8711-a245-858acb6d89fa",
+    "uuid": "0bb3fa76-9672-8ce3-aabb-21e73b039c74",
     "words": [
       "letterer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
-    "uuid": "913248d9-a03b-807b-96d8-07c3e49ab3c2",
+    "source": "Use when reasoning about letterer — The individual who adds lettering, including speech balloons and sound effects, to artwork.",
+    "uuid": "ef1726f4-ec63-8631-83e8-9aa1535f9b4f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "letterer",
       "the",
       "individual",
       "who",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "artwork"
     ],
     "values": {
-      "en": "The individual who adds lettering, including speech balloons and sound effects, to artwork."
+      "en": "Use when reasoning about letterer — The individual who adds lettering, including speech balloons and sound effects, to artwork."
     }
   }
 ]

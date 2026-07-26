@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ebitda",
-    "uuid": "2629469a-fd40-849c-ad92-f723337b4965",
+    "uuid": "31a7818f-fa15-8e1d-8cca-348bd484dbde",
     "words": [
       "ebitda"
     ],
@@ -17,40 +17,39 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-    "uuid": "36b5b08b-0310-824a-83d5-14e06631560b",
+    "source": "Use when reasoning about ebitda — ports the EBITDA calculator verbatim (calculate, port): EBITDA = operating profit + depreciation + amortization (equivalently net income + interest + tax + D&A). Pure function over",
+    "uuid": "c8ed9c59-5c80-80b6-af82-c9e520d45a4a",
     "words": [
       "use",
-      "to",
-      "compute",
+      "when",
+      "reasoning",
+      "about",
       "ebitda",
-      "ebit",
-      "and",
-      "related",
-      "profitability",
-      "metrics",
-      "from",
-      "p",
-      "l",
-      "figures",
-      "pure",
-      "compute",
-      "no",
-      "persistence",
+      "ports",
+      "the",
+      "ebitda",
+      "calculator",
+      "verbatim",
+      "calculate",
+      "port",
+      "ebitda",
+      "operating",
+      "profit",
+      "depreciation",
+      "amortization",
+      "equivalently",
+      "net",
+      "income",
+      "interest",
+      "tax",
+      "d",
       "a",
-      "non",
-      "gaap",
-      "measure",
-      "derived",
-      "from",
-      "accounting",
-      "data",
-      "nested",
-      "under",
-      "calculate"
+      "pure",
+      "function",
+      "over"
     ],
     "values": {
-      "en": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate."
+      "en": "Use when reasoning about ebitda — ports the EBITDA calculator verbatim (calculate, port): EBITDA = operating profit + depreciation + amortization (equivalently net income + interest + tax + D&A). Pure function over"
     }
   }
 ]

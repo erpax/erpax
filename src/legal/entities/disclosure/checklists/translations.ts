@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "disclosure-checklists",
-    "uuid": "a919e522-310b-8656-86e1-3af45eb8ca96",
+    "source": "checklists",
+    "uuid": "d028bc7d-185e-8b6c-909c-7f13cfa185de",
     "words": [
-      "disclosure",
       "checklists"
     ],
     "values": {
-      "en": "disclosure-checklists"
+      "en": "checklists"
     }
   },
   {
     "key": "description",
     "source": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
-    "uuid": "9af3d4e2-0fca-8333-9670-a1a6279898a0",
+    "uuid": "22e8297c-3c1e-87e5-9656-5c72ee05142c",
     "words": [
       "use",
       "when",

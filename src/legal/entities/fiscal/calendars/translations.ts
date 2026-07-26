@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fiscal-calendars",
-    "uuid": "e25abaec-4031-8d9e-be11-6febad43805a",
+    "source": "calendars",
+    "uuid": "3c00aadf-2aad-8060-b4e3-ba59e433d730",
     "words": [
-      "fiscal",
       "calendars"
     ],
     "values": {
-      "en": "fiscal-calendars"
+      "en": "calendars"
     }
   },
   {
     "key": "description",
     "source": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
-    "uuid": "e27dc1bd-c33b-8998-b97d-9b4c9223da70",
+    "uuid": "3affa002-5665-8b2b-a75e-b959e8bb4ca2",
     "words": [
       "use",
       "when",

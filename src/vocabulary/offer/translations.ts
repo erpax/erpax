@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "offer",
-    "uuid": "60c0ded3-a6d3-841f-a928-e0eb0a9d58a5",
+    "uuid": "fbe37314-6e2a-8964-9412-0396ef2512b9",
     "words": [
       "offer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a ",
-    "uuid": "4f8a3eba-2fd7-8adb-b05a-b0e71cec951e",
+    "source": "Use when reasoning about offer — An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the in",
+    "uuid": "b14db4b1-d80a-8a75-aa66-3ac65371820d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "offer",
       "an",
       "offer",
       "to",
@@ -58,13 +63,10 @@ export const translations: readonly Translation[] = [
       "show",
       "over",
       "the",
-      "internet",
-      "to",
-      "repair",
-      "a"
+      "in"
     ],
     "values": {
-      "en": "An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a "
+      "en": "Use when reasoning about offer — An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the in"
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "support",
-    "uuid": "3a63751d-da6a-831c-86d9-1182525393f3",
+    "uuid": "0b3ef877-583e-887b-90c5-dfa14220abb2",
     "words": [
       "support"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Qualification, candidature, degree, application that Thesis supports.",
-    "uuid": "52232dd8-6b2b-8904-b41f-64639a3bd301",
+    "source": "Use when reasoning about support — Qualification, candidature, degree, application that Thesis supports.",
+    "uuid": "d1c22f63-e4d1-8448-a0d8-c85c67c8b9ae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "support",
       "qualification",
       "candidature",
       "degree",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "supports"
     ],
     "values": {
-      "en": "Qualification, candidature, degree, application that Thesis supports."
+      "en": "Use when reasoning about support — Qualification, candidature, degree, application that Thesis supports."
     }
   }
 ]

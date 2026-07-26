@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "prior-period-adjustments",
-    "uuid": "e7955ec4-e9f9-8691-988c-e9d066412b70",
+    "source": "adjustments",
+    "uuid": "2b47dc13-c5f4-8bcf-9882-22a8da3977c6",
     "words": [
-      "prior",
-      "period",
       "adjustments"
     ],
     "values": {
-      "en": "prior-period-adjustments"
+      "en": "adjustments"
     }
   },
   {
     "key": "description",
     "source": "Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node.",
-    "uuid": "28cd18f6-56f1-804f-9821-b0f50f92f880",
+    "uuid": "4f0ba250-40a6-80b5-ac1c-c14f66ab708e",
     "words": [
       "use",
       "when",

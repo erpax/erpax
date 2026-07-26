@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "self-reference",
-    "uuid": "3043a2ed-9405-8abf-a9ad-9324e99fa5d3",
+    "source": "reference",
+    "uuid": "6d2e66f1-2d6a-8f23-9a00-607dc77de367",
     "words": [
-      "self",
       "reference"
     ],
     "values": {
-      "en": "self-reference"
+      "en": "reference"
     }
   },
   {
     "key": "description",
     "source": "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit.",
-    "uuid": "7f8d4511-97f9-8132-8f61-3d65a2cd20e4",
+    "uuid": "17178f92-d9de-8633-beee-6ee9fa007f48",
     "words": [
       "use",
       "when",

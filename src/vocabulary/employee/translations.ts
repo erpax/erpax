@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "employee",
-    "uuid": "ee64d14a-1879-8249-a355-619d0181572a",
+    "uuid": "7048b465-f70d-897c-9b08-1ce4df5294de",
     "words": [
       "employee"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Someone working for this organization.",
-    "uuid": "2ad8d28c-9251-8998-b313-35a756e12518",
+    "source": "Use when reasoning about employee — Someone working for this organization.",
+    "uuid": "abfa7b99-a7bc-8dd3-aa8c-bba2f6f140e8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "employee",
       "someone",
       "working",
       "for",
@@ -27,7 +32,7 @@ export const translations: readonly Translation[] = [
       "organization"
     ],
     "values": {
-      "en": "Someone working for this organization."
+      "en": "Use when reasoning about employee — Someone working for this organization."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "surface",
-    "uuid": "8d36cf54-e134-87c3-95bf-dc8940a68ca5",
+    "uuid": "f926323a-e36c-8cb0-a215-e9daef8170e4",
     "words": [
       "surface"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
-    "uuid": "e2c9b4c3-9c0e-8721-9e4d-dda173919fb0",
+    "source": "Use when reasoning about surface — A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
+    "uuid": "a1780923-ea72-8e30-bdbc-5452f9b55b38",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "surface",
       "a",
       "material",
       "used",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "etc"
     ],
     "values": {
-      "en": "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc."
+      "en": "Use when reasoning about surface — A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc."
     }
   }
 ]

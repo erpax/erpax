@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assembly",
-    "uuid": "aa3dab24-5486-8501-a0d5-bf7a25846b5f",
+    "uuid": "604e499f-6b48-875f-96b8-322f7876a7ea",
     "words": [
       "assembly"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Library file name, e.g., mscorlib.dll, system.web.dll.",
-    "uuid": "e318a9d7-3ffb-87ca-9f04-55df0a16f26e",
+    "source": "Use when reasoning about assembly — Library file name, e.g., mscorlib.dll, system.web.dll.",
+    "uuid": "a98c56ed-1db3-8671-8301-b21a64d1973a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "assembly",
       "library",
       "file",
       "name",
@@ -32,7 +37,7 @@ export const translations: readonly Translation[] = [
       "dll"
     ],
     "values": {
-      "en": "Library file name, e.g., mscorlib.dll, system.web.dll."
+      "en": "Use when reasoning about assembly — Library file name, e.g., mscorlib.dll, system.web.dll."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diagram",
-    "uuid": "1df4a16d-c96c-8df2-a741-6aec3076e6f3",
+    "uuid": "70b9f9ca-c7b9-86d8-80a5-763d75fcda38",
     "words": [
       "diagram"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
-    "uuid": "813d2e8f-e9e6-8152-b4fd-4a05cffa9c9f",
+    "source": "Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
+    "uuid": "ec939d79-bec6-8f03-8f05-5e05006433ff",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "diagram",
       "an",
       "image",
       "containing",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "structures"
     ],
     "values": {
-      "en": "An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures."
+      "en": "Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures."
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-findings",
-    "uuid": "fa5335e7-8025-88c3-9b7b-30dae715e537",
+    "source": "findings",
+    "uuid": "c6127697-9a5e-8b5a-aab7-f9e074d6f00f",
     "words": [
-      "audit",
       "findings"
     ],
     "values": {
-      "en": "audit-findings"
+      "en": "findings"
     }
   },
   {
     "key": "description",
     "source": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
-    "uuid": "17fa0b93-b71a-80c0-b559-9d63b65cd8c6",
+    "uuid": "e6701ced-0caa-8ff6-8ea7-2aa7f279d869",
     "words": [
       "use",
       "when",

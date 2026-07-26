@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ligament",
-    "uuid": "4903c30f-4ffa-8e8d-b4c2-3d3ec9367fa9",
+    "uuid": "89112263-2411-828e-bb08-c4e85746395e",
     "words": [
       "ligament"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.",
-    "uuid": "34286f4c-d703-8b58-8b3e-e48919ca18f7",
+    "source": "Use when reasoning about ligament — A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.",
+    "uuid": "59d98b8a-f288-8783-b088-16929679e740",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "ligament",
       "a",
       "short",
       "band",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "joints"
     ],
     "values": {
-      "en": "A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints."
+      "en": "Use when reasoning about ligament — A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints."
     }
   }
 ]

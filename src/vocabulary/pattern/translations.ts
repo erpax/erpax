@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pattern",
-    "uuid": "8c290a1c-301e-82d0-9d5b-7e298cb106a2",
+    "uuid": "88ed768a-fa8b-8b80-b5ce-4fed71b691da",
     "words": [
       "pattern"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also supported.",
-    "uuid": "727f8a44-1150-8c59-bb6b-5e41c365d8ff",
+    "source": "Use when reasoning about pattern — A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also suppo",
+    "uuid": "143755d3-244a-8267-a3c3-b68e9e061eae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "pattern",
       "a",
       "pattern",
       "that",
@@ -46,10 +51,10 @@ export const translations: readonly Translation[] = [
       "schemes",
       "are",
       "also",
-      "supported"
+      "suppo"
     ],
     "values": {
-      "en": "A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also supported."
+      "en": "Use when reasoning about pattern — A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also suppo"
     }
   }
 ]

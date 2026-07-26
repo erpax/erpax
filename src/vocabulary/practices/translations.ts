@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "practices",
-    "uuid": "f43db4f2-36a8-88fc-8fb7-77cfeb581c35",
+    "uuid": "c7fb9e1d-4812-8037-bf3c-cb39dc07621b",
     "words": [
       "practices"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A MedicalOrganization where the IndividualPhysician practices.",
-    "uuid": "39d3b5bb-5a47-84a9-aff0-25f4d807f2d2",
+    "source": "Use when reasoning about practices — A MedicalOrganization where the IndividualPhysician practices.",
+    "uuid": "f72382ab-4c05-89a9-857d-790c7bbf60ad",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "practices",
       "a",
       "medicalorganization",
       "where",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "practices"
     ],
     "values": {
-      "en": "A MedicalOrganization where the IndividualPhysician practices."
+      "en": "Use when reasoning about practices — A MedicalOrganization where the IndividualPhysician practices."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tenant",
-    "uuid": "9c6b3124-60eb-81cd-9fe5-e5b776688568",
+    "uuid": "ecd4b8b7-e437-85ac-bff0-d0d311dbb6d2",
     "words": [
       "tenant"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform.",
-    "uuid": "faa46964-5822-875c-a6b3-9bdc4ea956b9",
+    "uuid": "fa7562a0-304a-8dc6-98c6-6968e7c3209f",
     "words": [
       "use",
       "when",

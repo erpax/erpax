@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "warning",
-    "uuid": "3e84781b-c35d-8aba-b3e8-f5739437e91a",
+    "uuid": "4d53604a-9f41-892d-98b4-28d818575bfe",
     "words": [
       "warning"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Any FDA or other warnings about the drug (text or URL).",
-    "uuid": "efcd9ec4-92f7-859e-95f3-5e3a3ba35ace",
+    "source": "Use when reasoning about warning — Any FDA or other warnings about the drug (text or URL).",
+    "uuid": "4c7e5549-c221-8500-9e69-0f8de0a4e3b9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "warning",
       "any",
       "fda",
       "or",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "url"
     ],
     "values": {
-      "en": "Any FDA or other warnings about the drug (text or URL)."
+      "en": "Use when reasoning about warning — Any FDA or other warnings about the drug (text or URL)."
     }
   }
 ]

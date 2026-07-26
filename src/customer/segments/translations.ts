@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "customer-segments",
-    "uuid": "a6bd808e-61f6-8dd8-a014-cf844906d798",
+    "source": "segments",
+    "uuid": "aa504b3f-64ce-8df1-baac-2d1a96918926",
     "words": [
-      "customer",
       "segments"
     ],
     "values": {
-      "en": "customer-segments"
+      "en": "segments"
     }
   },
   {
     "key": "description",
     "source": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
-    "uuid": "083a3fab-031f-88f1-8510-7f8c7e1df189",
+    "uuid": "8448f46b-d4f2-862d-9d11-efe5b7a03316",
     "words": [
       "use",
       "when",

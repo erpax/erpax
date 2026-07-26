@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crest",
-    "uuid": "6f95de25-0cf6-8b51-b2fd-725190a99721",
+    "uuid": "29d057ad-03f7-837c-91d7-384aa54f059a",
     "words": [
       "crest"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
-    "uuid": "fb84957c-6f07-80d3-887a-df56c62ca992",
+    "source": "Use when reasoning about the peak position of the horo state ring — digit 8, \\\\\\\"the ascent peaks\\\\\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
+    "uuid": "96055311-1920-81d6-8b28-b303b8aa045d",
     "words": [
       "use",
       "when",
@@ -61,7 +61,7 @@ export const translations: readonly Translation[] = [
       "horo"
     ],
     "values": {
-      "en": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
+      "en": "Use when reasoning about the peak position of the horo state ring — digit 8, \\\\\\\"the ascent peaks\\\\\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "airport",
-    "uuid": "ce862497-e3da-8eb7-a68c-c38471a944b1",
+    "uuid": "577e063d-9bbd-8fe4-8c17-1a80f2556e6a",
     "words": [
       "airport"
     ],
@@ -17,14 +17,19 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An airport.",
-    "uuid": "fb1da695-45f9-83c9-b6aa-2a646edbb415",
+    "source": "Use when reasoning about airport — An airport.",
+    "uuid": "94fbce7d-3b80-8f5f-a666-3943ca8f1a53",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "airport",
       "an",
       "airport"
     ],
     "values": {
-      "en": "An airport."
+      "en": "Use when reasoning about airport — An airport."
     }
   }
 ]

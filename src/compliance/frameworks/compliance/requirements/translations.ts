@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "compliance-requirements",
-    "uuid": "2f282dfd-07cd-8f94-8e20-58b90dd67588",
+    "source": "requirements",
+    "uuid": "de18b883-4b75-8e77-ae4b-9570ec01ef39",
     "words": [
-      "compliance",
       "requirements"
     ],
     "values": {
-      "en": "compliance-requirements"
+      "en": "requirements"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
-    "uuid": "a939b9ef-51c5-8afc-a624-c37d49fe89e4",
+    "uuid": "d985ee97-b8ca-82dc-b169-dd15544e19e0",
     "words": [
       "use",
       "when",

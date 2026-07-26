@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "box",
-    "uuid": "1bb05e9f-0688-80f1-a239-df93ace1019b",
+    "uuid": "1dac67b9-c03a-86bd-98ac-6b1c7769ef12",
     "words": [
       "box"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space chara",
-    "uuid": "9d2f9adb-d9ac-8b03-81f0-7474a4496d28",
+    "source": "Use when reasoning about box — A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separa",
+    "uuid": "4e7af342-98ef-8027-aed8-67636facf1ab",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "box",
       "a",
       "box",
       "is",
@@ -54,14 +59,10 @@ export const translations: readonly Translation[] = [
       "as",
       "two",
       "points",
-      "separated",
-      "by",
-      "a",
-      "space",
-      "chara"
+      "separa"
     ],
     "values": {
-      "en": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space chara"
+      "en": "Use when reasoning about box — A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separa"
     }
   }
 ]

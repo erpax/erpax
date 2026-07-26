@@ -16,7 +16,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation.",
-    "uuid": "b9675d8f-e00e-8f7b-97ba-00b4bf983a06",
+    "uuid": "10514e4a-7d99-8fac-aea4-7ca3057e293d",
     "words": [
       "use",
       "when",

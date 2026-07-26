@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bank-accounts",
-    "uuid": "1a4d852f-5545-81cc-b65c-5eca79e8d8e1",
+    "source": "accounts",
+    "uuid": "7beae73a-feba-86d3-ba72-d9d8ff3d9c99",
     "words": [
-      "bank",
       "accounts"
     ],
     "values": {
-      "en": "bank-accounts"
+      "en": "accounts"
     }
   },
   {
     "key": "description",
     "source": "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection.",
-    "uuid": "90aaa596-6c34-8c1a-a89e-bf98218b3c53",
+    "uuid": "a96a46ab-5dfc-8da8-9201-08fcc9ce1f07",
     "words": [
       "use",
       "when",

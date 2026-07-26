@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "karma",
-    "uuid": "e70d8816-0afe-80d9-8354-fe381dc4e796",
+    "uuid": "36dedc85-9131-86f7-9ab0-a95c81e170cf",
     "words": [
       "karma"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed.",
-    "uuid": "ea99b23b-1248-8dd6-b733-f45a17c24b74",
+    "uuid": "c607fcc0-c8b6-8550-b17b-b394ac6498e7",
     "words": [
       "use",
       "when",

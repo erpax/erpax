@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "greater",
-    "uuid": "7b21cb9b-f451-8fe2-8eaa-d921de25df34",
+    "uuid": "a5edc7ff-7d7b-8aae-8bb2-877d863bf49f",
     "words": [
       "greater"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "This ordering relation for qualitative values indicates that the subject is greater than the object.",
-    "uuid": "6d921e08-62c5-8066-9927-13efb0bd6125",
+    "source": "Use when reasoning about greater — This ordering relation for qualitative values indicates that the subject is greater than the object.",
+    "uuid": "95942269-2666-8a2b-8576-8ba7aba0f712",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "greater",
       "this",
       "ordering",
       "relation",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "object"
     ],
     "values": {
-      "en": "This ordering relation for qualitative values indicates that the subject is greater than the object."
+      "en": "Use when reasoning about greater — This ordering relation for qualitative values indicates that the subject is greater than the object."
     }
   }
 ]

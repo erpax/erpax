@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "workflow-instances",
-    "uuid": "1eaef808-d801-8395-bb8a-b5189cceb52e",
+    "source": "instances",
+    "uuid": "f363f662-ffb3-84e3-bc14-a336e9d0e088",
     "words": [
-      "workflow",
       "instances"
     ],
     "values": {
-      "en": "workflow-instances"
+      "en": "instances"
     }
   },
   {
     "key": "description",
     "source": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
-    "uuid": "c2d2633b-9098-8806-80d8-c4b65f906b32",
+    "uuid": "82ac1cb2-9c5e-8559-a630-1e8cb890ce93",
     "words": [
       "use",
       "when",

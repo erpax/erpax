@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "smiles",
-    "uuid": "1b5fc7b4-5502-8c60-a9e0-5f1cc431de59",
+    "uuid": "d49bebe2-545b-88a5-b513-f81003edd308",
     "words": [
       "smiles"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\\\ indicators may need to be escaped in the string in",
-    "uuid": "8df59d65-c273-8106-9ff4-31449c3f55ef",
+    "source": "Use when reasoning about smiles — A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\ indicators may need to be escap",
+    "uuid": "2cb9b18a-d39a-8631-866f-3d98bf186c4f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "smiles",
       "a",
       "specification",
       "in",
@@ -47,14 +52,10 @@ export const translations: readonly Translation[] = [
       "need",
       "to",
       "be",
-      "escaped",
-      "in",
-      "the",
-      "string",
-      "in"
+      "escap"
     ],
     "values": {
-      "en": "A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\\\ indicators may need to be escaped in the string in"
+      "en": "Use when reasoning about smiles — A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\ indicators may need to be escap"
     }
   }
 ]

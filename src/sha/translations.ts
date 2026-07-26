@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sha",
-    "uuid": "adb9f0d8-c45b-84af-93ac-bd0b4d731942",
+    "uuid": "455f816f-73e8-8399-bd31-116cab618a09",
     "words": [
       "sha"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
-    "uuid": "863b0f16-95b1-8d10-b4dc-d2f490220261",
+    "source": "Use when reasoning about sha — The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
+    "uuid": "62b22843-17d8-8ede-9b6b-c4ee0ff831bd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sha",
       "the",
       "sha",
       "sha256",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     ],
     "values": {
-      "en": "The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'."
+      "en": "Use when reasoning about sha — The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'."
     }
   }
 ]

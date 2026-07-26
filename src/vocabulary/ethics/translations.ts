@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ethics",
-    "uuid": "421ec7a8-f70b-8495-abb6-8ddd6c7abd74",
+    "uuid": "ddfdd272-f0ac-886a-8e4e-fdf14ff56f53",
     "words": [
       "ethics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about ethics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "9c42fd52-878c-88f0-a32e-319320c24b95",
+    "uuid": "d0ca094d-bf9f-83a3-836d-bbfc2ac05c1d",
     "words": [
       "use",
       "when",

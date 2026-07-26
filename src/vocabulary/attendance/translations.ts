@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attendance",
-    "uuid": "11f9fbfe-bb0c-8f75-b68e-165054ece615",
+    "uuid": "60507556-42dc-8ee8-8176-08fc6fad6ccb",
     "words": [
       "attendance"
     ],
@@ -17,22 +17,35 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "attendance: a schema.org component word, fused from EventAttendanceModeEnumeration, eventAttendanceMode",
-    "uuid": "64b97652-b563-818c-b65c-51ca0cbc9ce7",
+    "source": "Use when reasoning about attendance — A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · eventAttendanceMode (sti · collapse · merge).",
+    "uuid": "33636a07-4f5c-8804-b88f-9c14eb3a1264",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "attendance",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "eventattendancemodeenumeration",
-      "eventattendancemode"
+      "eventattendancemode",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "attendance: a schema.org component word, fused from EventAttendanceModeEnumeration, eventAttendanceMode"
+      "en": "Use when reasoning about attendance — A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · eventAttendanceMode (sti · collapse · merge)."
     }
   }
 ]

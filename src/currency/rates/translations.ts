@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "currency-rates",
-    "uuid": "284447b7-2d34-8e15-b61e-e01fd3222b36",
+    "source": "rates",
+    "uuid": "c298025d-be5b-841b-b248-43864185e971",
     "words": [
-      "currency",
       "rates"
     ],
     "values": {
-      "en": "currency-rates"
+      "en": "rates"
     }
   },
   {
     "key": "description",
     "source": "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.",
-    "uuid": "248e0f62-3767-8646-a842-757af2e5fe9d",
+    "uuid": "64e90cb1-ca21-886c-9871-256174c6f5b4",
     "words": [
       "use",
       "when",

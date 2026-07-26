@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "job-positions",
-    "uuid": "6fb511a9-c3b5-83fe-b170-9b14061c2f4c",
+    "source": "positions",
+    "uuid": "5e952a9c-f6ee-85ad-a761-a26b420f372c",
     "words": [
-      "job",
       "positions"
     ],
     "values": {
-      "en": "job-positions"
+      "en": "positions"
     }
   },
   {
     "key": "description",
     "source": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-    "uuid": "4b9961b5-54bc-8df2-a8bb-830b3794d8b2",
+    "uuid": "7b9022e0-afb0-839b-b3d8-7756ac6423f8",
     "words": [
       "use",
       "when",

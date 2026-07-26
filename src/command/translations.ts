@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "command",
-    "uuid": "5b279972-c7eb-8269-b0fa-f56ea10676c0",
+    "uuid": "5b28fc6f-b832-8f1f-ab72-fedc19fbd955",
     "words": [
       "command"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs.",
-    "uuid": "d8067d6d-0933-8ae5-a5ef-0d37069f021f",
+    "uuid": "040254d5-dbc8-8bcf-927b-65dfa07db4d5",
     "words": [
       "use",
       "when",

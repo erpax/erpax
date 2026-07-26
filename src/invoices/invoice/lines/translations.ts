@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "invoice-lines",
-    "uuid": "293a58bd-4fc7-8716-aa3f-966987ab895e",
+    "source": "lines",
+    "uuid": "4c8c354d-baa5-8cbd-a8e5-8d022428fd75",
     "words": [
-      "invoice",
       "lines"
     ],
     "values": {
-      "en": "invoice-lines"
+      "en": "lines"
     }
   },
   {
     "key": "description",
     "source": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
-    "uuid": "32ab6b87-2387-82e3-9604-3f130da0633e",
+    "uuid": "c2d034e8-01bb-80f4-87ff-515271c2daf6",
     "words": [
       "use",
       "when",

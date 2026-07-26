@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "language",
-    "uuid": "daeffa42-d802-8c84-a8b3-2f4e8c4290a8",
+    "uuid": "e005ea65-0248-83a1-8129-0bed17b584e1",
     "words": [
       "language"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previously also covered progr",
-    "uuid": "f6ef73fd-211a-8ca7-a8d6-2fcd980c5f2d",
+    "source": "Use when reasoning about language — Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previousl",
+    "uuid": "5692c174-3bba-8798-890b-482088235eb5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "language",
       "natural",
       "languages",
       "such",
@@ -46,13 +51,10 @@ export const translations: readonly Translation[] = [
       "the",
       "language",
       "type",
-      "previously",
-      "also",
-      "covered",
-      "progr"
+      "previousl"
     ],
     "values": {
-      "en": "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previously also covered progr"
+      "en": "Use when reasoning about language — Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previousl"
     }
   }
 ]

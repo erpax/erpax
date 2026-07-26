@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "periodical",
-    "uuid": "6b3ab881-3686-8aa2-b1b4-b22fcc5ab5f2",
+    "uuid": "d0d400be-842c-865c-b1d3-f591eb38e5c0",
     "words": [
       "periodical"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper. See a",
-    "uuid": "34476f62-848b-85e5-a18d-689d047062de",
+    "source": "Use when reasoning about periodical — A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal,",
+    "uuid": "15bb520c-5579-8c53-a442-46c9a2bde80b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "periodical",
       "a",
       "publication",
       "in",
@@ -44,14 +49,10 @@ export const translations: readonly Translation[] = [
       "a",
       "magazine",
       "scholarly",
-      "journal",
-      "or",
-      "newspaper",
-      "see",
-      "a"
+      "journal"
     ],
     "values": {
-      "en": "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper. See a"
+      "en": "Use when reasoning about periodical — A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal,"
     }
   }
 ]

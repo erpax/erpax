@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-bindings",
-    "uuid": "0834fd69-88e6-8c2d-bb42-0a61b767b725",
+    "source": "bindings",
+    "uuid": "9eee0b75-9852-85b6-99d7-3246ada8aa20",
     "words": [
-      "quantum",
       "bindings"
     ],
     "values": {
-      "en": "quantum-bindings"
+      "en": "bindings"
     }
   },
   {
     "key": "description",
     "source": "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt.",
-    "uuid": "052a3c06-7128-85e0-bcbc-12bba7c29c22",
+    "uuid": "b81920f8-a075-877b-978b-e72c07bd0f05",
     "words": [
       "use",
       "when",

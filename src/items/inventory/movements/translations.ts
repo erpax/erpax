@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "inventory-movements",
-    "uuid": "7be644d8-99b8-83f8-877e-d43a9499e73e",
+    "source": "movements",
+    "uuid": "4c4e64f7-585b-87c2-81c7-62f2cb890f85",
     "words": [
-      "inventory",
       "movements"
     ],
     "values": {
-      "en": "inventory-movements"
+      "en": "movements"
     }
   },
   {
     "key": "description",
     "source": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
-    "uuid": "1dfacdc8-193b-885f-b306-debcfd84d0a7",
+    "uuid": "526217ea-ee1b-8208-a483-16830cf3537d",
     "words": [
       "use",
       "when",

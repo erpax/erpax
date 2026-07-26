@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "appearance",
-    "uuid": "39acc287-af1f-876e-a03e-4fa1d3871b26",
+    "uuid": "dbc8301f-65fe-8de6-b0d1-68ef1743d49d",
     "words": [
       "appearance"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Indicates an occurrence of a Claim in some CreativeWork.",
-    "uuid": "bb7c53ff-360e-83bc-ad0c-b265005ae1bf",
+    "source": "Use when reasoning about appearance — Indicates an occurrence of a Claim in some CreativeWork.",
+    "uuid": "84346161-29ad-8923-8f90-f64a28ebfb71",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "appearance",
       "indicates",
       "an",
       "occurrence",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "creativework"
     ],
     "values": {
-      "en": "Indicates an occurrence of a Claim in some CreativeWork."
+      "en": "Use when reasoning about appearance — Indicates an occurrence of a Claim in some CreativeWork."
     }
   }
 ]

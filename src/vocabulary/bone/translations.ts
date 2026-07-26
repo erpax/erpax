@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bone",
-    "uuid": "d3281fe2-5135-86f9-a299-adbba3361968",
+    "uuid": "3af43a8c-c46f-8dfe-9af3-3b53c49018a1",
     "words": [
       "bone"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Rigid connective tissue that comprises up the skeletal structure of the human body.",
-    "uuid": "90c6d41d-06ad-80ca-bc69-0ed9aae230a9",
+    "source": "Use when reasoning about bone — Rigid connective tissue that comprises up the skeletal structure of the human body.",
+    "uuid": "47eca899-004e-8356-b9e7-c32060ac35d2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "bone",
       "rigid",
       "connective",
       "tissue",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "body"
     ],
     "values": {
-      "en": "Rigid connective tissue that comprises up the skeletal structure of the human body."
+      "en": "Use when reasoning about bone — Rigid connective tissue that comprises up the skeletal structure of the human body."
     }
   }
 ]

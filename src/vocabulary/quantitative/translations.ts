@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantitative",
-    "uuid": "6d82e628-e638-8343-9710-b8578ab7385d",
+    "uuid": "b04504fe-df53-88e8-83d3-69b83ce51253",
     "words": [
       "quantitative"
     ],
@@ -17,22 +17,35 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution",
-    "uuid": "6fb59634-26a0-8021-9b24-82c903f1d090",
+    "source": "Use when reasoning about quantitative — A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution (sti · collapse · merge).",
+    "uuid": "d87ea271-7526-8945-9355-f3feda35dad9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "quantitative",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "quantitativevalue",
-      "quantitativevaluedistribution"
+      "quantitativevaluedistribution",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution"
+      "en": "Use when reasoning about quantitative — A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution (sti · collapse · merge)."
     }
   }
 ]

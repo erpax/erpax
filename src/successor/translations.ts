@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "successor",
-    "uuid": "c59a2d71-c683-8210-82aa-a3a5836f801f",
+    "uuid": "2f518f57-cf54-85ae-b0e7-4a296b742d48",
     "words": [
       "successor"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A pointer from a newer variant of a product to its previous, often discontinued predecessor.",
-    "uuid": "04a6cac8-6b1a-89fc-bb39-f25c43a970fd",
+    "source": "Use when reasoning about successor — A pointer from a newer variant of a product to its previous, often discontinued predecessor.",
+    "uuid": "832f3027-2b39-81b0-93f3-5aff2c976e92",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "successor",
       "a",
       "pointer",
       "from",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "predecessor"
     ],
     "values": {
-      "en": "A pointer from a newer variant of a product to its previous, often discontinued predecessor."
+      "en": "Use when reasoning about successor — A pointer from a newer variant of a product to its previous, often discontinued predecessor."
     }
   }
 ]

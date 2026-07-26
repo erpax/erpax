@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-literature",
-    "uuid": "4afc87bb-00d3-8cce-8952-57afae861a8b",
+    "source": "literature",
+    "uuid": "227a39ea-2cb3-8cce-8f89-771a166abe77",
     "words": [
-      "quantum",
       "literature"
     ],
     "values": {
-      "en": "quantum-literature"
+      "en": "literature"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings.",
-    "uuid": "e6691712-d2d9-83ab-870a-4a3d48241d60",
+    "uuid": "2b79d88f-2bee-83ea-90fa-ec962cd181a1",
     "words": [
       "use",
       "when",

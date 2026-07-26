@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sku",
-    "uuid": "1579ac26-9d60-8c79-973e-542c1d0cd9d0",
+    "uuid": "5932d7a7-92c2-8cd1-a1f5-5a1ebfa1e62f",
     "words": [
       "sku"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
-    "uuid": "952d8d20-e363-871c-9fb7-67c0f3de2603",
+    "source": "Use when reasoning about sku — The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+    "uuid": "a659beee-40e4-843c-958d-cbec9484135f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "sku",
       "the",
       "stock",
       "keeping",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "refers"
     ],
     "values": {
-      "en": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers."
+      "en": "Use when reasoning about sku — The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers."
     }
   }
 ]

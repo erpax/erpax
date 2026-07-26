@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "consent-records",
-    "uuid": "1f88e050-348f-80a8-bf49-39e46bbcca5c",
+    "source": "records",
+    "uuid": "08a47d3f-7c69-8042-a1b0-8bc130eac509",
     "words": [
-      "consent",
       "records"
     ],
     "values": {
-      "en": "consent-records"
+      "en": "records"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger.",
-    "uuid": "2182c8e7-5897-8f09-a4a9-2a66872fb82e",
+    "uuid": "4ea2fec3-6812-8649-81c5-8e94bf6c01b5",
     "words": [
       "use",
       "when",

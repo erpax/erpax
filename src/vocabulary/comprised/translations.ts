@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comprised",
-    "uuid": "5748c4d7-c45e-8161-aecf-974f0854190b",
+    "uuid": "a33af51a-6759-8aa5-8b23-4d203a394c6a",
     "words": [
       "comprised"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
-    "uuid": "3a67de78-869d-878e-a423-84d8e606c06a",
+    "source": "Use when reasoning about comprised — Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
+    "uuid": "bd57f093-ee36-874a-81ed-edd63eb3fd91",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "comprised",
       "specifying",
       "something",
       "physically",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "system"
     ],
     "values": {
-      "en": "Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system."
+      "en": "Use when reasoning about comprised — Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system."
     }
   }
 ]

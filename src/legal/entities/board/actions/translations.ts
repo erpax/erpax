@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "board-actions",
-    "uuid": "069ef786-a414-86dd-9f75-494df63c31b9",
+    "source": "actions",
+    "uuid": "742e9edd-6883-827f-bfba-23346c2bb3d1",
     "words": [
-      "board",
       "actions"
     ],
     "values": {
-      "en": "board-actions"
+      "en": "actions"
     }
   },
   {
     "key": "description",
     "source": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
-    "uuid": "62406116-db7e-88d2-a640-6ac462d3ee09",
+    "uuid": "086755b5-88bf-8550-b374-774400753ae5",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "given",
-    "uuid": "5ff53694-3e55-8a0e-9ff4-f0469443c3b5",
+    "uuid": "2e8fbf02-3ff1-8b5a-ad9f-3545c0e82941",
     "words": [
       "given"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "given: a schema.org component word, fused from givenName",
-    "uuid": "2a4e8248-dbe7-8362-bd5b-8c580a9d2ed4",
+    "source": "Use when reasoning about given — A schema.org component word, collided out of schema.org compounds — fused from givenName (sti · collapse · merge).",
+    "uuid": "9af5d4f3-eb7b-8781-8d2d-fd1709ed3c53",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "given",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "givenname"
+      "givenname",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "given: a schema.org component word, fused from givenName"
+      "en": "Use when reasoning about given — A schema.org component word, collided out of schema.org compounds — fused from givenName (sti · collapse · merge)."
     }
   }
 ]

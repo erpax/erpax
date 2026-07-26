@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "isic",
-    "uuid": "9b8f4f55-666d-89f0-a608-808b90fff7c7",
+    "uuid": "71f5204c-5c0d-8629-a0b6-ff7da1c39697",
     "words": [
       "isic"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
-    "uuid": "f8659a04-e9fd-86b9-9767-4af1c346ef3c",
+    "source": "Use when reasoning about isic — The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+    "uuid": "70af9224-f01a-8430-ae81-4d5c82e8aa3f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "isic",
       "the",
       "international",
       "standard",
@@ -43,7 +48,7 @@ export const translations: readonly Translation[] = [
       "place"
     ],
     "values": {
-      "en": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place."
+      "en": "Use when reasoning about isic — The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place."
     }
   }
 ]

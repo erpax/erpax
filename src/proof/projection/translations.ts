@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "proof-projection",
-    "uuid": "9c8fc16e-f138-8160-a060-4458658bbb4d",
+    "source": "projection",
+    "uuid": "7b1b4b47-85ce-87d7-bdd2-8a7277eda21c",
     "words": [
-      "proof",
       "projection"
     ],
     "values": {
-      "en": "proof-projection"
+      "en": "projection"
     }
   },
   {
     "key": "description",
     "source": "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle.",
-    "uuid": "0085917d-fdc4-8838-949e-1eb0a831e878",
+    "uuid": "e01b9ff0-0459-89a0-aee4-3f0d6f21d343",
     "words": [
       "use",
       "when",

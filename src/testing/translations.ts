@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "testing",
-    "uuid": "ec8e323e-8a3e-89d3-8944-99bac5fce70f",
+    "uuid": "634c6a0c-3b0e-8f6e-a891-a0f141be735c",
     "words": [
       "testing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-    "uuid": "7cf1641e-484b-8145-ac15-8f8d7229c6d0",
+    "uuid": "4e03676d-20c0-8a91-850d-f05348fe7b7a",
     "words": [
       "use",
       "when",

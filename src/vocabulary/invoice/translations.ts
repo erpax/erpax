@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "invoice",
-    "uuid": "aab0223e-3d3e-87a2-b1d4-408034984a7c",
+    "uuid": "a7f4b705-2cf0-81f6-8d48-06e6bf799c8d",
     "words": [
       "invoice"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A statement of the money due for goods or services; a bill.",
-    "uuid": "64c6aa2b-3272-85b9-9685-7e1768e125f3",
+    "source": "Use when reasoning about invoice — A statement of the money due for goods or services; a bill.",
+    "uuid": "79c95e4b-d615-860b-8338-641f78551b2c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "invoice",
       "a",
       "statement",
       "of",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "bill"
     ],
     "values": {
-      "en": "A statement of the money due for goods or services; a bill."
+      "en": "Use when reasoning about invoice — A statement of the money due for goods or services; a bill."
     }
   }
 ]

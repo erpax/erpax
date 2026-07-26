@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "denominator",
-    "uuid": "b609e8f1-a401-82ba-b5c5-8c145dd18f82",
+    "uuid": "ff48061f-7610-864f-bfac-2b2c1c240942",
     "words": [
       "denominator"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "denominator: a schema.org component word, fused from measurementDenominator",
-    "uuid": "c05a0dc0-d1a3-87aa-9556-77f5c6ce9433",
+    "source": "Use when reasoning about denominator — A schema.org component word, collided out of schema.org compounds — fused from measurementDenominator (sti · collapse · merge).",
+    "uuid": "120f1a56-99a7-8a8a-81c5-13392135a458",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "denominator",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "measurementdenominator"
+      "measurementdenominator",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "denominator: a schema.org component word, fused from measurementDenominator"
+      "en": "Use when reasoning about denominator — A schema.org component word, collided out of schema.org compounds — fused from measurementDenominator (sti · collapse · merge)."
     }
   }
 ]

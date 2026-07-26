@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "asin",
-    "uuid": "3e3e3d3d-a471-871f-a97e-a542538c4edd",
+    "uuid": "809ca55e-ec35-8a59-abed-b6c31bf0fc08",
     "words": [
       "asin"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summ",
-    "uuid": "add9415b-e5c2-8f63-9cc4-ef95ae8cdd6b",
+    "source": "Use when reasoning about asin — An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazo",
+    "uuid": "a1a04fb7-5efd-8125-ac59-fd6e43eae7c2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "asin",
       "an",
       "amazon",
       "standard",
@@ -44,12 +49,10 @@ export const translations: readonly Translation[] = [
       "identification",
       "within",
       "the",
-      "amazon",
-      "organization",
-      "summ"
+      "amazo"
     ],
     "values": {
-      "en": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summ"
+      "en": "Use when reasoning about asin — An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazo"
     }
   }
 ]

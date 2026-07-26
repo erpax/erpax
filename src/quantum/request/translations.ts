@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-request",
-    "uuid": "b9bd6c05-3eb7-8552-8239-959dda3b7ab4",
+    "source": "request",
+    "uuid": "4b7ecd25-d5e6-886c-848c-cecd1a28244e",
     "words": [
-      "quantum",
       "request"
     ],
     "values": {
-      "en": "quantum-request"
+      "en": "request"
     }
   },
   {
     "key": "description",
     "source": "Use when an agent calls an external system — quantum-compress the request to its most compact and cheapest form; content-address it so the uuid is the idempotency key, dedup against the cache, batch, and send the hash not the payload when the other side has seen it; squeeze the request to a point and the external cost drops toward zero.",
-    "uuid": "6d6e7b84-8695-8572-8501-8cf531ce5371",
+    "uuid": "6521c0ca-c888-8850-91f4-6d74435ccfaf",
     "words": [
       "use",
       "when",

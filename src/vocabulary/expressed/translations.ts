@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expressed",
-    "uuid": "2d685081-959f-8fdf-9a8c-642c513121aa",
+    "uuid": "d76f1bbd-930f-8fe6-8894-0f292ddd6439",
     "words": [
       "expressed"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
-    "uuid": "75b83d7a-5646-8aab-8ee4-6dfad5f4ce2d",
+    "source": "Use when reasoning about expressed — Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
+    "uuid": "0323a524-b549-850c-9774-1c3cc21b2c52",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "expressed",
       "tissue",
       "organ",
       "biological",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "system"
     ],
     "values": {
-      "en": "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system."
+      "en": "Use when reasoning about expressed — Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system."
     }
   }
 ]

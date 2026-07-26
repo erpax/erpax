@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "archived",
-    "uuid": "44e074ef-d3ad-85c7-9762-d97e8fc245c8",
+    "uuid": "1733011e-1942-809b-a16c-b121ef5e8d67",
     "words": [
       "archived"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalist",
-    "uuid": "e77aca50-fc0b-85b3-a017-6f698d21eafa",
+    "source": "Use when reasoning about archived — Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by",
+    "uuid": "27ab4f69-649e-8c2d-9029-80266a01ea12",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "archived",
       "indicates",
       "a",
       "page",
@@ -49,12 +54,10 @@ export const translations: readonly Translation[] = [
       "but",
       "be",
       "archived",
-      "by",
-      "archival",
-      "journalist"
+      "by"
     ],
     "values": {
-      "en": "Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalist"
+      "en": "Use when reasoning about archived — Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by"
     }
   }
 ]

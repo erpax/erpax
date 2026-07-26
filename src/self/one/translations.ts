@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "self-one",
-    "uuid": "a6c8ce2c-635b-8bbe-9c22-1f57725d70e5",
+    "source": "one",
+    "uuid": "7882679c-fd65-83b8-9cd2-2a536e3e4166",
     "words": [
-      "self",
       "one"
     ],
     "values": {
-      "en": "self-one"
+      "en": "one"
     }
   },
   {
     "key": "description",
     "source": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge.",
-    "uuid": "f785df46-1102-881e-8812-3afefc798d57",
+    "uuid": "b3dcf0dd-c041-8f8a-9db6-1d79619a1dfd",
     "words": [
       "use",
       "when",

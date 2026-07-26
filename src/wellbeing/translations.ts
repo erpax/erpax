@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wellbeing",
-    "uuid": "6a5203ac-c24e-89c3-b4ca-5283a6be8e74",
+    "uuid": "f0bc647c-b864-86f2-b6c1-c1324360d2b0",
     "words": [
       "wellbeing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
-    "uuid": "2613826b-b6d0-813a-a2b0-064aa69018b8",
+    "uuid": "fb949d8c-62db-8280-94a0-06c3d1b6b28c",
     "words": [
       "use",
       "when",

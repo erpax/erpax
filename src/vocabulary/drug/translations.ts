@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drug",
-    "uuid": "6e036fb0-6ddc-87d6-ade9-afd1cb981d51",
+    "uuid": "6a9edae6-ba5a-8cd5-ba24-fe48c6e67414",
     "words": [
       "drug"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowled",
-    "uuid": "9c9fc18d-f7fd-8f56-a511-f375d7b8c35e",
+    "source": "Use when reasoning about drug — A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine altho",
+    "uuid": "4ace3108-7edd-8b70-8d44-17de879c4831",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "drug",
       "a",
       "chemical",
       "or",
@@ -49,12 +54,10 @@ export const translations: readonly Translation[] = [
       "the",
       "term",
       "medicine",
-      "although",
-      "clinical",
-      "knowled"
+      "altho"
     ],
     "values": {
-      "en": "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowled"
+      "en": "Use when reasoning about drug — A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine altho"
     }
   }
 ]

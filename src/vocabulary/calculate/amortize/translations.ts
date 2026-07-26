@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amortize",
-    "uuid": "ca383dea-b170-86ac-a056-1fd9f548edd9",
+    "uuid": "96d5476e-d022-8d50-bc58-32d5e054ebe3",
     "words": [
       "amortize"
     ],
@@ -17,36 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate.",
-    "uuid": "c879fc88-e8c9-8ef8-9b5a-6bcb558dd0f1",
+    "source": "Use when reasoning about amortize — ports the bond discount/premium amortization calculators verbatim (calculate, port): **effective-interest** (or straight-line where permitted) amortization of a discount/premium ov",
+    "uuid": "031bcd16-4d0e-8dde-9a9f-4dd66fc6173c",
     "words": [
       "use",
-      "to",
-      "compute",
-      "amortization",
+      "when",
+      "reasoning",
+      "about",
+      "amortize",
+      "ports",
+      "the",
       "bond",
       "discount",
       "premium",
+      "amortization",
+      "calculators",
+      "verbatim",
+      "calculate",
+      "port",
       "effective",
       "interest",
-      "intangible",
-      "loan",
+      "or",
+      "straight",
+      "line",
+      "where",
+      "permitted",
       "amortization",
-      "schedules",
-      "pure",
-      "compute",
-      "no",
-      "persistence",
-      "cites",
-      "ifrs",
-      "us",
-      "gaap",
-      "nested",
-      "under",
-      "calculate"
+      "of",
+      "a",
+      "discount",
+      "premium",
+      "ov"
     ],
     "values": {
-      "en": "Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate."
+      "en": "Use when reasoning about amortize — ports the bond discount/premium amortization calculators verbatim (calculate, port): **effective-interest** (or straight-line where permitted) amortization of a discount/premium ov"
     }
   }
 ]

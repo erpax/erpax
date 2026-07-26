@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "salinity",
-    "uuid": "0fd8688a-2722-8d83-8aba-f10b140a1b3d",
+    "uuid": "3cdd164b-2d8b-832a-a820-5ab53ac15d0f",
     "words": [
       "salinity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling soluble-salt buildup that degrades soil and stresses crops — salinity as electrical conductivity (ECe, dS/m) of the saturated-paste extract, with sodicity (ESP/SAR, excess sodium destroying structure) as its companion axis. A soil-degradation dimension orthogonal to N-P-K fertility; reclaimed by leaching and, for sodicity, gypsum.",
-    "uuid": "7967c7ad-cddf-8058-8f91-dda225431646",
+    "uuid": "a2a506d4-e9d7-85a9-a8ca-08d5ba228e98",
     "words": [
       "use",
       "when",

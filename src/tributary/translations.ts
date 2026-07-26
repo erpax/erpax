@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tributary",
-    "uuid": "dfd3df72-0e51-81f1-a657-b1f9b550fcd3",
+    "uuid": "ba87e347-e8f3-845b-8ffd-690f280a7b99",
     "words": [
       "tributary"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
-    "uuid": "473fa390-f37c-8f4b-aafd-f2b795b62131",
+    "source": "Use when reasoning about tributary — The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
+    "uuid": "821b7a36-e84c-8c1f-8db0-6f716fa35ec3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "tributary",
       "the",
       "anatomical",
       "or",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "to"
     ],
     "values": {
-      "en": "The anatomical or organ system that the vein flows into; a larger structure that the vein connects to."
+      "en": "Use when reasoning about tributary — The anatomical or organ system that the vein flows into; a larger structure that the vein connects to."
     }
   }
 ]

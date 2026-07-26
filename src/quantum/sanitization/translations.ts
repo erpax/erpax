@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-sanitization",
-    "uuid": "12060b65-9031-87ca-ba1c-902ee1c16de6",
+    "source": "sanitization",
+    "uuid": "5dd0d5e2-922d-8cd5-a463-f1eed29849d3",
     "words": [
-      "quantum",
       "sanitization"
     ],
     "values": {
-      "en": "quantum-sanitization"
+      "en": "sanitization"
     }
   },
   {
     "key": "description",
     "source": "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void.",
-    "uuid": "59fe422a-763c-87d8-ad54-d525285fac29",
+    "uuid": "f347ed95-c9c0-839b-9180-69a1ab0f9e75",
     "words": [
       "use",
       "when",

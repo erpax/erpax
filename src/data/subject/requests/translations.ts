@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "data-subject-requests",
-    "uuid": "3501dbe5-98a8-8dee-914a-a603b6b366f2",
+    "source": "requests",
+    "uuid": "676af693-8ff8-89fc-86f7-b7691cbb54b8",
     "words": [
-      "data",
-      "subject",
       "requests"
     ],
     "values": {
-      "en": "data-subject-requests"
+      "en": "requests"
     }
   },
   {
     "key": "description",
     "source": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-    "uuid": "2f14f58a-ea3f-8b04-bb52-8ff9832dc0bb",
+    "uuid": "30472336-adb5-89d7-881b-7a27c8114c7b",
     "words": [
       "use",
       "when",

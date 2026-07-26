@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tracks",
-    "uuid": "ae936702-0308-8ce0-8857-edc31eefbafd",
+    "uuid": "85e1ecfe-733c-8ba7-9402-1b38a70bfb0c",
     "words": [
       "tracks"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A music recording (track)&#x2014;usually a single song.",
-    "uuid": "49822ae7-cb22-832d-a3cf-283fd214245f",
+    "source": "Use when reasoning about tracks — A music recording (track)&#x2014;usually a single song.",
+    "uuid": "57a4eff6-ccd0-85b7-9d18-6b412f3f5059",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "tracks",
       "a",
       "music",
       "recording",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "song"
     ],
     "values": {
-      "en": "A music recording (track)&#x2014;usually a single song."
+      "en": "Use when reasoning about tracks — A music recording (track)&#x2014;usually a single song."
     }
   }
 ]

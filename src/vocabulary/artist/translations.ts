@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "artist",
-    "uuid": "b5b0f654-e61e-8d5d-b9c6-9f84d3831f76",
+    "uuid": "d507e5f2-92ee-8ecb-9dbf-146e96f59d0f",
     "words": [
       "artist"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.",
-    "uuid": "c93f6452-33b5-85ba-999a-24ec12745a5b",
+    "source": "Use when reasoning about artist — The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.",
+    "uuid": "b443626a-8fab-8799-9a26-9ea12286cf1c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "artist",
       "the",
       "primary",
       "artist",
@@ -51,7 +56,7 @@ export const translations: readonly Translation[] = [
       "paints"
     ],
     "values": {
-      "en": "The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints."
+      "en": "Use when reasoning about artist — The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints."
     }
   }
 ]

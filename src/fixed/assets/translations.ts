@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fixed-assets",
-    "uuid": "cc2b3534-39da-8dc5-9266-a36d456e9bcf",
+    "source": "assets",
+    "uuid": "d3f903d3-ce3e-8bf5-aa6f-d9adbbe2fc63",
     "words": [
-      "fixed",
       "assets"
     ],
     "values": {
-      "en": "fixed-assets"
+      "en": "assets"
     }
   },
   {
     "key": "description",
     "source": "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.",
-    "uuid": "7ad9546d-983d-8f8c-9615-8d4056d7d9e3",
+    "uuid": "7ef02ff9-8cfb-876d-984d-4cd071d898aa",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "physician",
-    "uuid": "edd34940-e494-8dda-9853-c1c6d6d84d58",
+    "uuid": "8084e5cb-1a99-8651-be28-7900575d716e",
     "words": [
       "physician"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An individual physician or a physician's office considered as a MedicalOrganization.",
-    "uuid": "68f97766-860c-8314-9bf4-18ff24984d0e",
+    "source": "Use when reasoning about physician — An individual physician or a physician's office considered as a MedicalOrganization.",
+    "uuid": "3943a857-4805-8754-95fe-b6f8330d6c72",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "physician",
       "an",
       "individual",
       "physician",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "medicalorganization"
     ],
     "values": {
-      "en": "An individual physician or a physician's office considered as a MedicalOrganization."
+      "en": "Use when reasoning about physician — An individual physician or a physician's office considered as a MedicalOrganization."
     }
   }
 ]

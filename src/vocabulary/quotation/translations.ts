@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quotation",
-    "uuid": "853a5f77-a305-8823-ac79-f905ec3fe612",
+    "uuid": "16f5fa29-d46b-880b-8461-6616050f90b7",
     "words": [
       "quotation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isBasedOn to link to so",
-    "uuid": "74649319-ff4c-8e35-b12f-b50aa9fae404",
+    "source": "Use when reasoning about quotation — A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isB",
+    "uuid": "14ae432b-fedd-8b5d-a300-5113145562fc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "quotation",
       "a",
       "quotation",
       "often",
@@ -48,14 +53,10 @@ export const translations: readonly Translation[] = [
       "fictional",
       "person",
       "use",
-      "isbasedon",
-      "to",
-      "link",
-      "to",
-      "so"
+      "isb"
     ],
     "values": {
-      "en": "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isBasedOn to link to so"
+      "en": "Use when reasoning about quotation — A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isB"
     }
   }
 ]

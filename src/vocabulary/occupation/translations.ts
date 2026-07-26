@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "occupation",
-    "uuid": "9e3c780e-deee-85aa-ba85-f6df312681a6",
+    "uuid": "7c35a3e6-411b-82d2-9dea-3614368d3099",
     "words": [
       "occupation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A profession, may involve prolonged training and/or a formal qualification.",
-    "uuid": "047e0c20-505f-894e-87a7-0cadc7f2c864",
+    "source": "Use when reasoning about occupation — A profession, may involve prolonged training and/or a formal qualification.",
+    "uuid": "cce38869-b7ff-87ef-b94f-86321387c48a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "occupation",
       "a",
       "profession",
       "may",
@@ -33,7 +38,7 @@ export const translations: readonly Translation[] = [
       "qualification"
     ],
     "values": {
-      "en": "A profession, may involve prolonged training and/or a formal qualification."
+      "en": "Use when reasoning about occupation — A profession, may involve prolonged training and/or a formal qualification."
     }
   }
 ]

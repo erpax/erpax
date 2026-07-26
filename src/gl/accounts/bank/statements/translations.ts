@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bank-statements",
-    "uuid": "b92d4e42-4db3-8a63-ab8c-cd597891cac3",
+    "source": "statements",
+    "uuid": "6f29b818-0fed-89d6-9437-58b8d48c9e75",
     "words": [
-      "bank",
       "statements"
     ],
     "values": {
-      "en": "bank-statements"
+      "en": "statements"
     }
   },
   {
     "key": "description",
     "source": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-    "uuid": "2e2aea68-bc24-82a4-9181-8fd17763c138",
+    "uuid": "968bbde5-9ab9-85b8-a2c2-e3004ff71c64",
     "words": [
       "use",
       "when",

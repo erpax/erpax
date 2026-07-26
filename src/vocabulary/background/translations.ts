@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "background",
-    "uuid": "cff59dd1-2c2b-87af-b70a-a37e2a66e8a1",
+    "uuid": "a0be5ccd-8c06-839f-b2f8-e9adcaa3d38f",
     "words": [
       "background"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "background: a schema.org component word, fused from BackgroundNewsArticle",
-    "uuid": "80100eef-8e22-81d7-86a8-ec2b19676ac6",
+    "source": "Use when reasoning about background — A schema.org component word, collided out of schema.org compounds — fused from BackgroundNewsArticle (sti · collapse · merge).",
+    "uuid": "ecc6ec91-40a9-8651-bb78-829a1fcd07f9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "background",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "backgroundnewsarticle"
+      "backgroundnewsarticle",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "background: a schema.org component word, fused from BackgroundNewsArticle"
+      "en": "Use when reasoning about background — A schema.org component word, collided out of schema.org compounds — fused from BackgroundNewsArticle (sti · collapse · merge)."
     }
   }
 ]

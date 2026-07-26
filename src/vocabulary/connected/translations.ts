@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "connected",
-    "uuid": "92caa619-f301-80b2-bf05-d3e2018f9deb",
+    "uuid": "21f9b27b-b134-8ec0-b85a-ebcafb823d41",
     "words": [
       "connected"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Other anatomical structures to which this structure is connected.",
-    "uuid": "5bb40fe3-b0c5-843f-8e94-4c16e6673cb1",
+    "source": "Use when reasoning about connected — Other anatomical structures to which this structure is connected.",
+    "uuid": "84249680-a62a-800e-8b0f-794da5f20f40",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "connected",
       "other",
       "anatomical",
       "structures",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "connected"
     ],
     "values": {
-      "en": "Other anatomical structures to which this structure is connected."
+      "en": "Use when reasoning about connected — Other anatomical structures to which this structure is connected."
     }
   }
 ]

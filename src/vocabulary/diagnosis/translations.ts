@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diagnosis",
-    "uuid": "baeb194e-02f1-8464-82ba-efc3024d907c",
+    "uuid": "4b6e8a81-c7c3-8d2b-b076-90550f03d117",
     "words": [
       "diagnosis"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
-    "uuid": "55889260-4dd2-82d0-9237-73bc1130d0a1",
+    "source": "Use when reasoning about diagnosis — One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+    "uuid": "32e11cd5-5257-8905-a781-fed9b0187b20",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "diagnosis",
       "one",
       "or",
       "more",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "process"
     ],
     "values": {
-      "en": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process."
+      "en": "Use when reasoning about diagnosis — One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process."
     }
   }
 ]

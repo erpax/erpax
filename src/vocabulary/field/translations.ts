@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "field",
-    "uuid": "481fcd9a-fa27-8eed-873b-952007ae1a97",
+    "uuid": "c814b397-82d1-830d-98d0-a017a6c9ace6",
     "words": [
       "field"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.",
-    "uuid": "e1698285-1eaf-8416-9062-ff3df8bd85bf",
+    "uuid": "86341ce1-8da7-87eb-94a3-41cba83b98fc",
     "words": [
       "use",
       "when",

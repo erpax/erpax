@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "mcp-tool-metadata",
-    "uuid": "fa371d5d-d9fe-8766-899f-a0f014fd0d5c",
+    "source": "metadata",
+    "uuid": "58aba42e-2db4-8dfd-b940-e31d2593e3cc",
     "words": [
-      "mcp",
-      "tool",
       "metadata"
     ],
     "values": {
-      "en": "mcp-tool-metadata"
+      "en": "metadata"
     }
   },
   {
     "key": "description",
     "source": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-    "uuid": "e8bdec2b-16ee-839e-a227-c99e862c03df",
+    "uuid": "79ce6cad-60b4-86a7-bead-c6da47f6fef1",
     "words": [
       "use",
       "when",

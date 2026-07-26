@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "room",
-    "uuid": "ef946d96-9558-802f-b643-b1bcb1a09754",
+    "uuid": "1d5a8ff6-c15a-8827-a200-d43e7c9bfa2b",
     "words": [
       "room"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Room). See also ",
-    "uuid": "315e7041-b2e3-898c-bd28-c99437225891",
+    "source": "Use when reasoning about room — A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/w",
+    "uuid": "2afd49cc-0b99-8ac8-b679-d0dcb9833a17",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "room",
       "a",
       "room",
       "is",
@@ -47,13 +52,10 @@ export const translations: readonly Translation[] = [
       "en",
       "wikipedia",
       "org",
-      "wiki",
-      "room",
-      "see",
-      "also"
+      "w"
     ],
     "values": {
-      "en": "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Room). See also "
+      "en": "Use when reasoning about room — A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/w"
     }
   }
 ]

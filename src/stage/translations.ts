@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stage",
-    "uuid": "1aa66d7b-d2d0-88eb-b16f-4b17aef20d2a",
+    "uuid": "0b16c9b6-74ac-840b-87e3-e75bf1f4d2de",
     "words": [
       "stage"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The stage of the condition, if applicable.",
-    "uuid": "76b65829-c79b-82a3-9a6b-b1f5dfbe773e",
+    "source": "Use when reasoning about stage — The stage of the condition, if applicable.",
+    "uuid": "0ec7ce87-b161-8ce5-b4d6-f9fa914f9232",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "stage",
       "the",
       "stage",
       "of",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "applicable"
     ],
     "values": {
-      "en": "The stage of the condition, if applicable."
+      "en": "Use when reasoning about stage — The stage of the condition, if applicable."
     }
   }
 ]

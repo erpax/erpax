@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "legal-entities",
-    "uuid": "c0384da0-4283-83e5-ae93-e09facfadf0e",
+    "source": "entities",
+    "uuid": "fb62fec5-a7f1-8b4c-8358-010770f05da8",
     "words": [
-      "legal",
       "entities"
     ],
     "values": {
-      "en": "legal-entities"
+      "en": "entities"
     }
   },
   {
     "key": "description",
     "source": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
-    "uuid": "77250203-4fa1-8709-88b5-76cd82223b9c",
+    "uuid": "16652886-b37f-8031-bca5-306ee87044aa",
     "words": [
       "use",
       "when",

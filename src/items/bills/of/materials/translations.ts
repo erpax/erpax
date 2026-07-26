@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bills-of-materials",
-    "uuid": "fd7cda21-c348-8589-a2f3-dcb0115d968b",
+    "source": "materials",
+    "uuid": "f0643201-d48d-82aa-a3db-449296eb4a34",
     "words": [
-      "bills",
-      "of",
       "materials"
     ],
     "values": {
-      "en": "bills-of-materials"
+      "en": "materials"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-    "uuid": "a0f7de9f-3447-875c-b6d6-c3ba5e79465b",
+    "uuid": "4423b1cb-3628-8c5d-8c4d-757d16902bcb",
     "words": [
       "use",
       "when",

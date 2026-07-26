@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "motorcycle",
-    "uuid": "0617262f-902a-83b6-a1d6-eca8b3eb36d1",
+    "uuid": "ef68c499-93e9-8db5-948f-e69633932d25",
     "words": [
       "motorcycle"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
-    "uuid": "91b6d4b2-6b20-827a-b3df-f7d2db0eaf5a",
+    "source": "Use when reasoning about motorcycle — A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
+    "uuid": "27c2858c-6fbb-8a0b-92ce-28c9cb856cd0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "motorcycle",
       "a",
       "motorcycle",
       "or",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "vehicle"
     ],
     "values": {
-      "en": "A motorcycle or motorbike is a single-track, two-wheeled motor vehicle."
+      "en": "Use when reasoning about motorcycle — A motorcycle or motorbike is a single-track, two-wheeled motor vehicle."
     }
   }
 ]

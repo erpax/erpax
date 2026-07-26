@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "participant",
-    "uuid": "cf4d7c17-923f-899d-8557-96d4d26ba05c",
+    "uuid": "0d82336a-cc80-8dfb-a3fb-1e03aca9cae7",
     "words": [
       "participant"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
-    "uuid": "a58ff304-9afa-82f2-9218-9f7f51e06ae0",
+    "source": "Use when reasoning about participant — Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
+    "uuid": "43e2c93c-5295-887f-8d76-8d7c687af84a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "participant",
       "other",
       "co",
       "agents",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "steve"
     ],
     "values": {
-      "en": "Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*."
+      "en": "Use when reasoning about participant — Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*."
     }
   }
 ]

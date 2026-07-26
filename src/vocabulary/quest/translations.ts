@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quest",
-    "uuid": "ce519215-7fd8-8ba1-a80e-4afd5b7b0e3e",
+    "uuid": "a916a195-c5c6-820f-8cbe-ed89388e5c24",
     "words": [
       "quest"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
-    "uuid": "1aa4c58d-7a7d-8305-86b7-8dc8596ce6bb",
+    "source": "Use when reasoning about quest — The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
+    "uuid": "a3c8575f-2198-8834-b2ce-f84d75580d8c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "quest",
       "the",
       "task",
       "that",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "reward"
     ],
     "values": {
-      "en": "The task that a player-controlled character, or group of characters may complete in order to gain a reward."
+      "en": "Use when reasoning about quest — The task that a player-controlled character, or group of characters may complete in order to gain a reward."
     }
   }
 ]

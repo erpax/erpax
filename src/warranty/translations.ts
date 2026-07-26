@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "warranty",
-    "uuid": "6520bd0a-0fde-8246-86bb-ddc7a60d8815",
+    "uuid": "64dd8bcf-5b76-8dc5-b4aa-a848b29a4959",
     "words": [
       "warranty"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a party makes a binding representation or guarantee about a fact/condition — express (stated) vs. implied (statutory), scope, duration, remedy (repair/replace/indemnify), breach consequences.",
-    "uuid": "2bdb2693-92eb-8241-8025-12f14afbdc04",
+    "uuid": "61f45ae5-43a6-84aa-b3c2-ab8804761b1a",
     "words": [
       "use",
       "when",

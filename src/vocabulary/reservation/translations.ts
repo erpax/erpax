@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reservation",
-    "uuid": "1770cdc0-85f1-869e-8440-a1f999745d8b",
+    "uuid": "27cc741b-e8d6-8f71-9071-cb6d2a01f398",
     "words": [
       "reservation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with ",
-    "uuid": "d2f0d3e9-934b-864c-9f89-75baf82041c4",
+    "source": "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails",
+    "uuid": "6faeeb81-1347-84c5-af56-48ee901d5064",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "reservation",
       "describes",
       "a",
       "reservation",
@@ -46,14 +51,10 @@ export const translations: readonly Translation[] = [
       "g",
       "in",
       "confirmation",
-      "emails",
-      "or",
-      "html",
-      "pages",
-      "with"
+      "emails"
     ],
     "values": {
-      "en": "Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with "
+      "en": "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails"
     }
   }
 ]

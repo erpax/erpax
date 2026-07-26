@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "subscription-plans",
-    "uuid": "f4ed523d-5b1b-849f-8209-4ef416c755e7",
+    "source": "plans",
+    "uuid": "d7c317a1-e592-82c0-8cfa-64abb7ded06c",
     "words": [
-      "subscription",
       "plans"
     ],
     "values": {
-      "en": "subscription-plans"
+      "en": "plans"
     }
   },
   {
     "key": "description",
     "source": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
-    "uuid": "73e9a039-c372-817d-a632-f5aa6ed48540",
+    "uuid": "02383de7-7469-8e60-8eb8-977cf01b3a7a",
     "words": [
       "use",
       "when",

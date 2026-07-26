@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "self-merge",
-    "uuid": "7adb0dd8-f396-877b-a548-031263195f04",
+    "source": "merge",
+    "uuid": "7e40bf96-d40d-83f9-b83a-1d2333d9b3b8",
     "words": [
-      "self",
       "merge"
     ],
     "values": {
-      "en": "self-merge"
+      "en": "merge"
     }
   },
   {
     "key": "description",
     "source": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one.",
-    "uuid": "044f125e-ee46-831e-8d54-7d6b9aa09a34",
+    "uuid": "c5f6cf93-434f-8593-a91e-c5f6590b7220",
     "words": [
       "use",
       "when",

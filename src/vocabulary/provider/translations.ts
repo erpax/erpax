@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provider",
-    "uuid": "2d15584f-f27c-8c0c-a571-81962162154d",
+    "uuid": "ff017cd1-5cd4-8a0b-83d7-8b47e1fe30ca",
     "words": [
       "provider"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the",
-    "uuid": "2538f911-8307-8e3a-b8fa-9951667179cc",
+    "source": "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m",
+    "uuid": "f624ad64-1589-81bc-94cd-53e442e08a7b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "provider",
       "the",
       "service",
       "provider",
@@ -48,14 +53,10 @@ export const translations: readonly Translation[] = [
       "provider",
       "a",
       "provider",
-      "may",
-      "also",
-      "serve",
-      "as",
-      "the"
+      "m"
     ],
     "values": {
-      "en": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the"
+      "en": "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m"
     }
   }
 ]

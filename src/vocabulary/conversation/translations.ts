@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conversation",
-    "uuid": "774cac65-1033-8513-af1b-dbcc79963fce",
+    "uuid": "a491452c-f5a3-8e3d-b2d9-573af077d153",
     "words": [
       "conversation"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
-    "uuid": "2bb6f1a0-ebed-8544-a1c7-5363c9ca4cb7",
+    "source": "Use when reasoning about conversation — One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
+    "uuid": "e92d0297-0f51-8c28-99e0-4dbebe6a10f0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "conversation",
       "one",
       "or",
       "more",
@@ -47,7 +52,7 @@ export const translations: readonly Translation[] = [
       "properties"
     ],
     "values": {
-      "en": "One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties."
+      "en": "Use when reasoning about conversation — One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties."
     }
   }
 ]

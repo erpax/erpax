@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consumable",
-    "uuid": "7b9476d9-0f60-856d-a66f-d14262841c96",
+    "uuid": "92ba7f85-469b-8f34-960a-e9a6d5ea282e",
     "words": [
       "consumable"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A pointer to another product (or multiple products) for which this product is a consumable.",
-    "uuid": "37b69c5f-d331-8268-bdd0-23bd4d258c76",
+    "source": "Use when reasoning about consumable — A pointer to another product (or multiple products) for which this product is a consumable.",
+    "uuid": "907886cb-bea0-8913-9b6f-31a459eaf713",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "consumable",
       "a",
       "pointer",
       "to",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "consumable"
     ],
     "values": {
-      "en": "A pointer to another product (or multiple products) for which this product is a consumable."
+      "en": "Use when reasoning about consumable — A pointer to another product (or multiple products) for which this product is a consumable."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "triggered",
-    "uuid": "8bcf5e04-3f10-8b44-92fd-eaaa81e3289f",
+    "uuid": "db5864c2-d519-8809-85d9-6ce5a6996022",
     "words": [
       "triggered"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \"Use when\", measured live as coverage = triggered / total over the real tree.",
-    "uuid": "6580f35a-c6c5-807c-84d2-a0fdaa24ad03",
+    "source": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\\\\\"Use when\\\\\\\", measured live as coverage = triggered / total over the real tree.",
+    "uuid": "5bdf4bcb-769d-848b-a102-ef34ca9db6d8",
     "words": [
       "use",
       "when",
@@ -57,7 +57,7 @@ export const translations: readonly Translation[] = [
       "tree"
     ],
     "values": {
-      "en": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \"Use when\", measured live as coverage = triggered / total over the real tree."
+      "en": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\\\\\"Use when\\\\\\\", measured live as coverage = triggered / total over the real tree."
     }
   }
 ]

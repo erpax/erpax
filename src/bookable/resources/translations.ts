@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bookable-resources",
-    "uuid": "9539e8f3-001c-8238-b46c-1e9464b62a76",
+    "source": "resources",
+    "uuid": "ce5385c5-344a-8e2b-b215-829c9de369ac",
     "words": [
-      "bookable",
       "resources"
     ],
     "values": {
-      "en": "bookable-resources"
+      "en": "resources"
     }
   },
   {
     "key": "description",
     "source": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
-    "uuid": "c64ad1d7-7ce2-8839-943e-2f814117ef45",
+    "uuid": "d567cb5d-2629-873c-86bd-eb6af9145eb1",
     "words": [
       "use",
       "when",

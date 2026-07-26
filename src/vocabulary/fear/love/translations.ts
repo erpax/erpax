@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "fear-love",
-    "uuid": "78e78361-f396-87fa-8c5c-03c65a7e20cb",
+    "source": "love",
+    "uuid": "344eae4a-fece-8c3f-b38b-73e41a8183a9",
     "words": [
-      "fear",
       "love"
     ],
     "values": {
-      "en": "fear-love"
+      "en": "love"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear.",
-    "uuid": "db4acf21-3b5d-88a6-b0ca-bd730f868b2d",
+    "uuid": "84c05729-4864-8f8f-b7c5-1ea9ae69830b",
     "words": [
       "use",
       "when",

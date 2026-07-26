@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-committee-minutes",
-    "uuid": "fcff90e4-903e-8eaa-a5cf-67613730481f",
+    "source": "minutes",
+    "uuid": "b18af5dd-b643-8c1b-92c2-d9fba8b11989",
     "words": [
-      "audit",
-      "committee",
       "minutes"
     ],
     "values": {
-      "en": "audit-committee-minutes"
+      "en": "minutes"
     }
   },
   {
     "key": "description",
     "source": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
-    "uuid": "64e86726-247d-83ea-967c-8e17a5720053",
+    "uuid": "c2f790af-c894-8194-adce-4c19f749ef3c",
     "words": [
       "use",
       "when",

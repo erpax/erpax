@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "place",
-    "uuid": "03d8a8ec-f309-89b5-bc81-fd75c7147e89",
+    "uuid": "0bae8849-d959-8178-88f1-699ae5f2d802",
     "words": [
       "place"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Entities that have a somewhat fixed, physical extension.",
-    "uuid": "631f7f1e-b0c8-848b-bc82-e554ac48f34f",
+    "source": "Use when reasoning about place — Entities that have a somewhat fixed, physical extension.",
+    "uuid": "70ffe2b8-9426-8e09-9eb3-81ad200eff92",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "place",
       "entities",
       "that",
       "have",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "extension"
     ],
     "values": {
-      "en": "Entities that have a somewhat fixed, physical extension."
+      "en": "Use when reasoning about place — Entities that have a somewhat fixed, physical extension."
     }
   }
 ]

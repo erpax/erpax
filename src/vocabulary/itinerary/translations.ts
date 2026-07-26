@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "itinerary",
-    "uuid": "3c61495e-f5f5-8296-b1e0-9a1bb5643f02",
+    "uuid": "4c850ed6-2ae4-897f-8220-1ce07f6301b0",
     "words": [
       "itinerary"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).",
-    "uuid": "c2ff2094-7e1a-8930-97a3-8e1a07e70c26",
+    "source": "Use when reasoning about itinerary — Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).",
+    "uuid": "6c5768fc-e8a5-8efc-a1bb-c558dc1a7c68",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "itinerary",
       "destination",
       "s",
       "place",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "examples"
     ],
     "values": {
-      "en": "Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples)."
+      "en": "Use when reasoning about itinerary — Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples)."
     }
   }
 ]

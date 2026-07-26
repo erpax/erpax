@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "longitude",
-    "uuid": "759527a7-78f7-83fd-97bb-93b38a80eb0b",
+    "uuid": "fb5a186d-0873-8ef7-8341-2805f2e2c0b2",
     "words": [
       "longitude"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The longitude of a location. For example ```-122.08585``` (WGS 84).",
-    "uuid": "82fbe03b-4a0d-8f7d-b797-53fa53919eec",
+    "source": "Use when reasoning about longitude — The longitude of a location. For example (WGS 84).",
+    "uuid": "c72c73d0-ddec-8d73-9b68-1d9625500088",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "longitude",
       "the",
       "longitude",
       "of",
@@ -30,7 +35,7 @@ export const translations: readonly Translation[] = [
       "wgs"
     ],
     "values": {
-      "en": "The longitude of a location. For example ```-122.08585``` (WGS 84)."
+      "en": "Use when reasoning about longitude — The longitude of a location. For example (WGS 84)."
     }
   }
 ]

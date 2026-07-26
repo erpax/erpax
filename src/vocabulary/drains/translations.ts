@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drains",
-    "uuid": "0ffd05f6-9bc4-847d-9466-dfeb3058dcbf",
+    "uuid": "c67dc585-3e65-8f5e-9c46-7e067cb25525",
     "words": [
       "drains"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The vasculature that the vein drains into.",
-    "uuid": "f794bb76-2814-82aa-bdb9-e7bff2eb26f8",
+    "source": "Use when reasoning about drains — The vasculature that the vein drains into.",
+    "uuid": "02e360b7-2b11-8972-9c0e-8bb3b7069cec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "drains",
       "the",
       "vasculature",
       "that",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "into"
     ],
     "values": {
-      "en": "The vasculature that the vein drains into."
+      "en": "Use when reasoning about drains — The vasculature that the vein drains into."
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-samples",
-    "uuid": "d157bae8-4cd9-84b3-bc55-033f142b773b",
+    "source": "samples",
+    "uuid": "42bc5864-9226-80d4-9867-39237f354175",
     "words": [
-      "audit",
       "samples"
     ],
     "values": {
-      "en": "audit-samples"
+      "en": "samples"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
-    "uuid": "35c9cb58-fba6-8ff3-a7cd-be8f1c841caa",
+    "uuid": "a03e098b-d568-8df9-bdcc-8b2110f32d65",
     "words": [
       "use",
       "when",

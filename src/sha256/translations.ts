@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sha256",
-    "uuid": "d3fb7754-5b83-8bed-b086-4c6df9f215f7",
+    "uuid": "45624da1-3b34-87fc-bafa-65dde625eeae",
     "words": [
       "sha256"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about sha256 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "202506fa-b3d8-8ea1-8136-baae87d35dcd",
+    "uuid": "8f679f6c-9126-8915-8c8a-e1efb7a12660",
     "words": [
       "use",
       "when",

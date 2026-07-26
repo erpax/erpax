@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attorney",
-    "uuid": "397816d1-5115-8802-a9dd-7730ef9c7729",
+    "uuid": "574da223-8475-8602-bdce-1f151c381cb7",
     "words": [
       "attorney"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
-    "uuid": "06158d83-602b-8c6a-9f5d-131483acdddd",
+    "source": "Use when reasoning about attorney — Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
+    "uuid": "23577840-0785-8b23-b991-05c88825aedc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "attorney",
       "professional",
       "service",
       "attorney",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "ambiguous"
     ],
     "values": {
-      "en": "Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous."
+      "en": "Use when reasoning about attorney — Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous."
     }
   }
 ]

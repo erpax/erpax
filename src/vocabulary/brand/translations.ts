@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brand",
-    "uuid": "3853dc62-e7c2-84bb-997d-ad223475747b",
+    "uuid": "c631f9bb-f7ac-80f4-b7e4-2fe8115b3b85",
     "words": [
       "brand"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
-    "uuid": "3dd06407-dd06-8923-80b1-14b6912cf708",
+    "source": "Use when reasoning about brand — A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
+    "uuid": "430d2a3c-a6ed-89fb-bd1d-b39470366245",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "brand",
       "a",
       "brand",
       "is",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "similar"
     ],
     "values": {
-      "en": "A brand is a name used by an organization or business person for labeling a product, product group, or similar."
+      "en": "Use when reasoning about brand — A brand is a name used by an organization or business person for labeling a product, product group, or similar."
     }
   }
 ]

@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "share-based-payments",
-    "uuid": "c14d64af-ec13-86ed-82a6-644f75ab9599",
+    "source": "payments",
+    "uuid": "d4a8195d-6673-8dea-82c4-3de785f8b46b",
     "words": [
-      "share",
-      "based",
       "payments"
     ],
     "values": {
-      "en": "share-based-payments"
+      "en": "payments"
     }
   },
   {
     "key": "description",
     "source": "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register.",
-    "uuid": "6e046d31-ff8e-819a-bcbb-623d438a9dba",
+    "uuid": "55c35e59-42d1-85cf-9e40-b1e7a6b0ad53",
     "words": [
       "use",
       "when",

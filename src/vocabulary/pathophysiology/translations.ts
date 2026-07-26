@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pathophysiology",
-    "uuid": "ea2854f8-4095-88aa-8310-f7fb0da1c41c",
+    "uuid": "e8acd1c0-2c3f-8e8d-8274-c80ac359a563",
     "words": [
       "pathophysiology"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
-    "uuid": "1faa6173-68c2-87c8-b1ab-8c8824e7e9a8",
+    "source": "Use when reasoning about pathophysiology — Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
+    "uuid": "dc1a6a61-96e3-83ea-abbc-609f1f017392",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "pathophysiology",
       "changes",
       "in",
       "the",
@@ -39,7 +44,7 @@ export const translations: readonly Translation[] = [
       "condition"
     ],
     "values": {
-      "en": "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition."
+      "en": "Use when reasoning about pathophysiology — Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition."
     }
   }
 ]

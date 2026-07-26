@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consulting",
-    "uuid": "392e30c6-0df2-8a60-abb9-ebbcf541ecdb",
+    "uuid": "eabc3f65-c073-8002-8169-bafef898269f",
     "words": [
       "consulting"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the economics of serving the corpus's knowledge — research pays the cost once, then a content-addressed answer is a cache hit served at zero marginal cost and reused without bound, so consulting ROI tends to infinity.",
-    "uuid": "7baf1ac3-4791-85f7-bf30-a47a5efb3f23",
+    "uuid": "d6c80213-f2cb-8a42-bd50-5b0a743fa2db",
     "words": [
       "use",
       "when",

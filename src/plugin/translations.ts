@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugin",
-    "uuid": "b2fb9284-ac96-8df7-8c9b-fcc82baad032",
+    "uuid": "4a0f52d1-c16c-8f3f-8c57-ceb4ca777baa",
     "words": [
       "plugin"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform.",
-    "uuid": "22388e93-420f-875b-95d5-6dad3549f3aa",
+    "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a [[diamond]] — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions.",
+    "uuid": "db61f677-3414-8544-a785-ded3f7a0f59c",
     "words": [
       "use",
       "when",
@@ -42,10 +42,29 @@ export const translations: readonly Translation[] = [
       "that",
       "extends",
       "the",
-      "platform"
+      "platform",
+      "and",
+      "when",
+      "naming",
+      "the",
+      "host",
+      "extension",
+      "deployment",
+      "face",
+      "of",
+      "a",
+      "diamond",
+      "payload",
+      "plugins",
+      "cursor",
+      "hooks",
+      "vitepress",
+      "plugins",
+      "mcp",
+      "extensions"
     ],
     "values": {
-      "en": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform."
+      "en": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform. AND when naming the host-extension deployment face of a [[diamond]] — Payload plugins, Cursor hooks, VitePress plugins, MCP extensions."
     }
   }
 ]

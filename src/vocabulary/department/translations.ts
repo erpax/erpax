@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "department",
-    "uuid": "6407f944-7d8c-8112-b90c-8049158d855e",
+    "uuid": "6cb30a91-2bb3-8a34-92a1-13c7ef6bd679",
     "words": [
       "department"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, o",
-    "uuid": "66ad73a0-532c-86b6-b7c1-3d26c8a4d243",
+    "source": "Use when reasoning about department — A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a stor",
+    "uuid": "659b59e8-29ff-83b7-9c3b-f035215edde5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "department",
       "a",
       "relationship",
       "between",
@@ -45,14 +50,10 @@ export const translations: readonly Translation[] = [
       "for",
       "example",
       "a",
-      "store",
-      "with",
-      "a",
-      "pharmacy",
-      "o"
+      "stor"
     ],
     "values": {
-      "en": "A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, o"
+      "en": "Use when reasoning about department — A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a stor"
     }
   }
 ]

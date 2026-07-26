@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instructions",
-    "uuid": "6c6a7c60-e71e-8c44-b29e-6941e73c4090",
+    "uuid": "f87a0f2c-e3c1-8256-93ed-3b26a6f310bf",
     "words": [
       "instructions"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "instructions: a schema.org component word, fused from recipeInstructions",
-    "uuid": "2d98fde5-42ca-8968-9abb-65e2ba3e7eaa",
+    "source": "Use when reasoning about instructions — A schema.org component word, collided out of schema.org compounds — fused from recipeInstructions (sti · collapse · merge).",
+    "uuid": "9ece65bb-d1a1-8025-b1e4-e04d2c3e87d6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "instructions",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "recipeinstructions"
+      "recipeinstructions",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "instructions: a schema.org component word, fused from recipeInstructions"
+      "en": "Use when reasoning about instructions — A schema.org component word, collided out of schema.org compounds — fused from recipeInstructions (sti · collapse · merge)."
     }
   }
 ]

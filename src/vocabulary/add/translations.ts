@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "add",
-    "uuid": "13a8bad4-28d9-813e-8bfd-d43365d4818b",
+    "uuid": "fe36269a-7237-8f7c-b139-73fe2dc65297",
     "words": [
       "add"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
-    "uuid": "d8872b05-fa21-84a0-bf1c-b86a4576c3ff",
+    "source": "Use when reasoning about add — An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+    "uuid": "55ebae42-cb4b-86c7-9e1b-4836188a3128",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "add",
       "an",
       "additional",
       "offer",
@@ -48,7 +53,7 @@ export const translations: readonly Translation[] = [
       "surcharge"
     ],
     "values": {
-      "en": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge)."
+      "en": "Use when reasoning about add — An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge)."
     }
   }
 ]

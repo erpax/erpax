@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "actors",
-    "uuid": "d8c00500-9669-8896-a0d6-13dbb3e69e65",
+    "uuid": "a06857c2-7de6-8ef6-befb-fe10a3111d8c",
     "words": [
       "actors"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
-    "uuid": "80ead2a9-e29d-8bde-a1d5-13c3620aa296",
+    "source": "Use when reasoning about actors — An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
+    "uuid": "e49e0100-6ddf-808a-a3e8-53d40849a6e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "actors",
       "an",
       "actor",
       "e",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "clip"
     ],
     "values": {
-      "en": "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip."
+      "en": "Use when reasoning about actors — An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip."
     }
   }
 ]

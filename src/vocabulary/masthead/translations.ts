@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "masthead",
-    "uuid": "31e9c6ac-0c91-80db-83e8-a522f779ad95",
+    "uuid": "0ead6545-e252-840e-b7f0-a9391e7a8810",
     "words": [
       "masthead"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
-    "uuid": "122e482f-698e-8920-8e91-f46f2d57ec5f",
+    "source": "Use when reasoning about masthead — For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
+    "uuid": "f9b4cfc4-745c-80a5-b3e6-ef7f2936eef3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "masthead",
       "for",
       "a",
       "newsmediaorganization",
@@ -38,7 +43,7 @@ export const translations: readonly Translation[] = [
       "management"
     ],
     "values": {
-      "en": "For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management."
+      "en": "Use when reasoning about masthead — For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management."
     }
   }
 ]

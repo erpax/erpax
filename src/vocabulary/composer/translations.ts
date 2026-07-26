@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "composer",
-    "uuid": "c6c97edd-f34f-816b-b4af-f03f71db6c9c",
+    "uuid": "ba30e7b8-570d-8a6e-82de-e53d18d1bbac",
     "words": [
       "composer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
-    "uuid": "fbb29007-77ff-8a13-974e-9a5245932f35",
+    "source": "Use when reasoning about composer — The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
+    "uuid": "9cad921d-d74a-87c4-9fd7-aa4e72d2b60c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "composer",
       "the",
       "person",
       "or",
@@ -42,7 +47,7 @@ export const translations: readonly Translation[] = [
       "event"
     ],
     "values": {
-      "en": "The person or organization who wrote a composition, or who is the composer of a work performed at some event."
+      "en": "Use when reasoning about composer — The person or organization who wrote a composition, or who is the composer of a work performed at some event."
     }
   }
 ]

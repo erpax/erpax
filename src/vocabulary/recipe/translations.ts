@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recipe",
-    "uuid": "83312512-fd4c-8831-b471-cd76bfadd4d0",
+    "uuid": "d882dd6c-d461-8eba-a242-a49db72c4fe9",
     "words": [
       "recipe"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.",
-    "uuid": "31ae90d5-06f7-862d-8c05-87847dd0df4c",
+    "source": "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.",
+    "uuid": "53f9d457-1a4b-8d75-a9c7-0ccde45b560a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "recipe",
       "a",
       "recipe",
       "for",
@@ -50,7 +55,7 @@ export const translations: readonly Translation[] = [
       "detail"
     ],
     "values": {
-      "en": "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail."
+      "en": "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail."
     }
   }
 ]

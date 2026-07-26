@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scheme",
-    "uuid": "f7bb3a89-e0ba-835e-8bab-ae17162f9210",
+    "uuid": "14b20da2-a7a2-8353-baaa-47f13c93d401",
     "words": [
       "scheme"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "scheme: a schema.org component word, fused from FundingScheme",
-    "uuid": "b6fb0cbe-feea-8225-95ae-cc863a54a853",
+    "source": "Use when reasoning about scheme — A schema.org component word, collided out of schema.org compounds — fused from FundingScheme (sti · collapse · merge).",
+    "uuid": "8240fc99-bfc8-869d-93ee-8278a7ef3b0d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "scheme",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "fundingscheme"
+      "fundingscheme",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "scheme: a schema.org component word, fused from FundingScheme"
+      "en": "Use when reasoning about scheme — A schema.org component word, collided out of schema.org compounds — fused from FundingScheme (sti · collapse · merge)."
     }
   }
 ]

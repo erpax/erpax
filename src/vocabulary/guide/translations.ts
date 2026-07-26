@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "guide",
-    "uuid": "bac555ea-01a7-8e87-9dd5-0c491a1ad405",
+    "uuid": "f8ef7858-4e95-820f-b396-04bb180699b6",
     "words": [
       "guide"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of products or services ",
-    "uuid": "4e944721-c92b-8a0a-b33d-4f1589dcef8d",
+    "source": "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p",
+    "uuid": "ce75c98a-a46c-86a0-8ff5-b39efade928e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "guide",
       "guide",
       "is",
       "a",
@@ -53,12 +58,10 @@ export const translations: readonly Translation[] = [
       "detail",
       "aspects",
       "of",
-      "products",
-      "or",
-      "services"
+      "p"
     ],
     "values": {
-      "en": "Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of products or services "
+      "en": "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p"
     }
   }
 ]

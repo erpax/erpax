@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "athlete",
-    "uuid": "050c9482-8073-8274-902b-1bc606cab378",
+    "uuid": "adc17f4a-8b7e-8ac6-9452-733c051ee99a",
     "words": [
       "athlete"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A person that acts as performing member of a sports team; a player as opposed to a coach.",
-    "uuid": "c093c9ce-34c2-8b95-b548-8e59f9c2a7c8",
+    "source": "Use when reasoning about athlete — A person that acts as performing member of a sports team; a player as opposed to a coach.",
+    "uuid": "7b16dafd-1c11-88d2-be5c-84c0b8cd797e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "athlete",
       "a",
       "person",
       "that",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "coach"
     ],
     "values": {
-      "en": "A person that acts as performing member of a sports team; a player as opposed to a coach."
+      "en": "Use when reasoning about athlete — A person that acts as performing member of a sports team; a player as opposed to a coach."
     }
   }
 ]

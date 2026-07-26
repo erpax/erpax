@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "replication",
-    "uuid": "4074498d-f505-8b9a-8b72-9d953579cf74",
+    "uuid": "23a4b5a9-2e01-8b85-86df-e83cd2872697",
     "words": [
       "replication"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics.",
-    "uuid": "2b9d9573-9e75-8cfa-8000-1be59673b996",
+    "uuid": "a5828ced-f1fc-807e-bddf-4276001ec218",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "release",
-    "uuid": "152e00c6-f24f-842b-a8da-1903b5e2e466",
+    "uuid": "bf117c09-63f3-8be3-9a7d-8b57b1c775d8",
     "words": [
       "release"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The album this is a release of.",
-    "uuid": "a00569a5-bf27-8100-beeb-aef6b2572ced",
+    "source": "Use when reasoning about release — The album this is a release of.",
+    "uuid": "c49a668e-1f46-8267-b370-87e805d5586e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "release",
       "the",
       "album",
       "this",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "of"
     ],
     "values": {
-      "en": "The album this is a release of."
+      "en": "Use when reasoning about release — The album this is a release of."
     }
   }
 ]

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "competency-gap",
-    "uuid": "a2a3c944-1e0a-85df-b7e5-ad20e04c0835",
+    "source": "gap",
+    "uuid": "641c869a-fe23-823c-a03c-f01d1c3c0ede",
     "words": [
-      "competency",
       "gap"
     ],
     "values": {
-      "en": "competency-gap"
+      "en": "gap"
     }
   },
   {
     "key": "description",
     "source": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-    "uuid": "06e97a2a-bd57-8bf3-a9be-79a928fbb961",
+    "uuid": "36110568-63e8-8c3a-a359-5907b6bde95c",
     "words": [
       "use",
       "when",

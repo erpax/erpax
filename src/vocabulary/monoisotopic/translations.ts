@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "monoisotopic",
-    "uuid": "35cfe4f1-58d2-8c54-80ee-7d57f5f8deba",
+    "uuid": "a13e4519-84bb-8adc-8d6d-a12ed4739b51",
     "words": [
       "monoisotopic"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "monoisotopic: a schema.org component word, fused from monoisotopicMolecularWeight",
-    "uuid": "6be2930f-31ce-828e-9766-797580f62e60",
+    "source": "Use when reasoning about monoisotopic — A schema.org component word, collided out of schema.org compounds — fused from monoisotopicMolecularWeight (sti · collapse · merge).",
+    "uuid": "d6e72f9a-7fe1-8c14-b685-7a3f293f3166",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "monoisotopic",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "monoisotopicmolecularweight"
+      "monoisotopicmolecularweight",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "monoisotopic: a schema.org component word, fused from monoisotopicMolecularWeight"
+      "en": "Use when reasoning about monoisotopic — A schema.org component word, collided out of schema.org compounds — fused from monoisotopicMolecularWeight (sti · collapse · merge)."
     }
   }
 ]

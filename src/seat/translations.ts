@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seat",
-    "uuid": "cb6f0c45-3b34-8336-8a9a-65775d5c02eb",
+    "uuid": "1dabdc32-e648-8e66-850c-ae918f011a19",
     "words": [
       "seat"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Used to describe a seat, such as a reserved seat in an event reservation.",
-    "uuid": "376fc7dd-4949-8aa0-8179-86b2706f8a97",
+    "source": "Use when reasoning about seat — Used to describe a seat, such as a reserved seat in an event reservation.",
+    "uuid": "ccbfe974-7181-827e-95b8-16abd7347e72",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "seat",
       "used",
       "to",
       "describe",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "reservation"
     ],
     "values": {
-      "en": "Used to describe a seat, such as a reserved seat in an event reservation."
+      "en": "Use when reasoning about seat — Used to describe a seat, such as a reserved seat in an event reservation."
     }
   }
 ]

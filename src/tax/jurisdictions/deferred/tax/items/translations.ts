@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "deferred-tax-items",
-    "uuid": "5ac661c9-b909-808a-9e08-623f0d46ef28",
+    "source": "items",
+    "uuid": "17839cef-7e07-8956-b1c2-ebc3141f8f80",
     "words": [
-      "deferred",
-      "tax",
       "items"
     ],
     "values": {
-      "en": "deferred-tax-items"
+      "en": "items"
     }
   },
   {
     "key": "description",
     "source": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
-    "uuid": "d17f9d01-80e8-8d30-8b6b-92ca304a1263",
+    "uuid": "d3a2b043-b9bc-88f7-9327-c66395f4dae0",
     "words": [
       "use",
       "when",

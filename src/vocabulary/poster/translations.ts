@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "poster",
-    "uuid": "cfbdf078-7ddf-8ed2-8b8c-c5143ba4110c",
+    "uuid": "eff1888a-aee2-82f4-bfa5-ca932f38cb03",
     "words": [
       "poster"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.",
-    "uuid": "1873a2df-42e3-8e1f-a88a-ec5af45998a0",
+    "source": "Use when reasoning about poster — A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.",
+    "uuid": "9fc8d14e-b57b-86b8-9940-962a6ff12746",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "poster",
       "a",
       "large",
       "usually",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "something"
     ],
     "values": {
-      "en": "A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something."
+      "en": "Use when reasoning about poster — A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something."
     }
   }
 ]

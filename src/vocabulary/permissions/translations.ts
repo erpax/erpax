@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permissions",
-    "uuid": "56e58b77-0ad4-8508-9d21-610b2b201e98",
+    "uuid": "9914adc9-4ac8-8b81-810c-b5de1a8b61fa",
     "words": [
       "permissions"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
-    "uuid": "bd62e879-f847-87fd-8e30-eea1073452cb",
+    "source": "Use when reasoning about permissions — Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
+    "uuid": "0bed5f97-0950-8a4b-a964-56b3330de888",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "permissions",
       "permission",
       "s",
       "required",
@@ -45,7 +50,7 @@ export const translations: readonly Translation[] = [
       "wifi"
     ],
     "values": {
-      "en": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)."
+      "en": "Use when reasoning about permissions — Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)."
     }
   }
 ]

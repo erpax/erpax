@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "mineral-resource-assets",
-    "uuid": "217e1276-31f4-84e9-a8e9-95141bb1fb7d",
+    "source": "assets",
+    "uuid": "d3f903d3-ce3e-8bf5-aa6f-d9adbbe2fc63",
     "words": [
-      "mineral",
-      "resource",
       "assets"
     ],
     "values": {
-      "en": "mineral-resource-assets"
+      "en": "assets"
     }
   },
   {
     "key": "description",
     "source": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-    "uuid": "3b740936-f43f-8f6b-84b7-3f6e578f4c8b",
+    "uuid": "9b49e6cd-6429-82d4-b175-8901c1f4dd1f",
     "words": [
       "use",
       "when",

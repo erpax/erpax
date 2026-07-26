@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seller",
-    "uuid": "09c92fa6-891f-8565-9140-818f0f2919d3",
+    "uuid": "a2b5eb98-b6fe-81e0-b03c-e9142c6024d7",
     "words": [
       "seller"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
-    "uuid": "9d236ff6-198f-89cb-b8b7-b52dbaae3149",
+    "source": "Use when reasoning about seller — An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
+    "uuid": "7c1c3016-b774-821a-9412-bb8bf48b9053",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "seller",
       "an",
       "entity",
       "which",
@@ -40,7 +45,7 @@ export const translations: readonly Translation[] = [
       "provider"
     ],
     "values": {
-      "en": "An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider."
+      "en": "Use when reasoning about seller — An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "branch",
-    "uuid": "c79cd065-bc05-893c-9ea7-10663b5a7649",
+    "uuid": "cfe86a6e-179c-80c0-813e-5785204b7e0c",
     "words": [
       "branch"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The branches that delineate from the nerve bundle. Not to be confused with branchOf.",
-    "uuid": "211119a9-7f01-8205-b80c-80037800899a",
+    "source": "Use when reasoning about branch — The branches that delineate from the nerve bundle. Not to be confused with branchOf.",
+    "uuid": "0ae4fd1f-cdf1-838f-be29-3e5255b04f53",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "branch",
       "the",
       "branches",
       "that",
@@ -36,7 +41,7 @@ export const translations: readonly Translation[] = [
       "branchof"
     ],
     "values": {
-      "en": "The branches that delineate from the nerve bundle. Not to be confused with branchOf."
+      "en": "Use when reasoning about branch — The branches that delineate from the nerve bundle. Not to be confused with branchOf."
     }
   }
 ]

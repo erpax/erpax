@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-mcp",
-    "uuid": "85c2b0a5-6b72-85f6-978c-caa158322cdc",
+    "source": "mcp",
+    "uuid": "423f6d3f-1d2c-83d3-a61f-cd275f2dd794",
     "words": [
-      "quantum",
       "mcp"
     ],
     "values": {
-      "en": "quantum-mcp"
+      "en": "mcp"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside.",
-    "uuid": "297c01a1-39a5-8dd5-93d0-a7559964ef44",
+    "uuid": "3c87b6a5-c0eb-8aab-a092-56ad09ea2ce7",
     "words": [
       "use",
       "when",

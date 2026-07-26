@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expense",
-    "uuid": "b6333b28-3786-8d82-9b05-a928162473f5",
+    "uuid": "2c5b5bf5-19dc-8c74-9555-dce993f97752",
     "words": [
       "expense"
     ],
@@ -17,22 +17,35 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "expense: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
-    "uuid": "7715eea5-7a18-88f3-91ee-fb2fd35835f6",
+    "source": "Use when reasoning about expense — A schema.org component word, collided out of schema.org compounds — fused from IncentiveQualifiedExpenseType · qualifiedExpense (sti · collapse · merge).",
+    "uuid": "c0242399-85f1-8ad3-9740-33040a551973",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "expense",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "incentivequalifiedexpensetype",
-      "qualifiedexpense"
+      "qualifiedexpense",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "expense: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense"
+      "en": "Use when reasoning about expense — A schema.org component word, collided out of schema.org compounds — fused from IncentiveQualifiedExpenseType · qualifiedExpense (sti · collapse · merge)."
     }
   }
 ]

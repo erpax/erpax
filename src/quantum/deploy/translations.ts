@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-deploy",
-    "uuid": "2b97c2bf-fb42-805b-84a7-affbd4fffe03",
+    "source": "deploy",
+    "uuid": "4013aba2-4d84-8354-901c-0f1fdaede553",
     "words": [
-      "quantum",
       "deploy"
     ],
     "values": {
-      "en": "quantum-deploy"
+      "en": "deploy"
     }
   },
   {
     "key": "description",
     "source": "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot.",
-    "uuid": "33c06e3d-9472-855d-9a9e-424ae9747a1b",
+    "uuid": "da682ab7-ab81-8576-bb0d-1d7b14c30f52",
     "words": [
       "use",
       "when",

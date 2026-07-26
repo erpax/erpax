@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "ai-suggestions",
-    "uuid": "3077f5d3-34d5-8f73-8541-53ac11012ac5",
+    "source": "suggestions",
+    "uuid": "0c42a2a1-7839-863b-8529-ed1e4b8caf0a",
     "words": [
-      "ai",
       "suggestions"
     ],
     "values": {
-      "en": "ai-suggestions"
+      "en": "suggestions"
     }
   },
   {
     "key": "description",
     "source": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
-    "uuid": "bb719afe-b06a-8137-8a30-0f602c89ba17",
+    "uuid": "e4680553-451f-8f4e-abdf-c2a0120f0582",
     "words": [
       "use",
       "when",

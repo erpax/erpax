@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "commitments-and-contingencies",
-    "uuid": "735b5473-cbe2-8566-b0a9-41423e253606",
+    "source": "contingencies",
+    "uuid": "d3124f3c-7f4e-8f4d-b19b-b8f0e6d1938c",
     "words": [
-      "commitments",
-      "and",
       "contingencies"
     ],
     "values": {
-      "en": "commitments-and-contingencies"
+      "en": "contingencies"
     }
   },
   {
     "key": "description",
     "source": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-    "uuid": "def733d8-15d7-80d7-9b91-1593c6df1c6c",
+    "uuid": "e071cd2e-7235-8a84-86ec-51d501a185ca",
     "words": [
       "use",
       "when",

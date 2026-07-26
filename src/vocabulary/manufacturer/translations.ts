@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manufacturer",
-    "uuid": "e01c571a-bf56-8cea-9d42-f6f6f997c5af",
+    "uuid": "9f20d098-a568-8d56-970b-575f4fa14375",
     "words": [
       "manufacturer"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The manufacturer of the product.",
-    "uuid": "a57cc403-b85e-8dd1-8986-9c2e5937e4a8",
+    "source": "Use when reasoning about manufacturer — The manufacturer of the product.",
+    "uuid": "8a76a25d-809b-8a08-9676-cd8757ea641c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "manufacturer",
       "the",
       "manufacturer",
       "of",
@@ -27,7 +32,7 @@ export const translations: readonly Translation[] = [
       "product"
     ],
     "values": {
-      "en": "The manufacturer of the product."
+      "en": "Use when reasoning about manufacturer — The manufacturer of the product."
     }
   }
 ]

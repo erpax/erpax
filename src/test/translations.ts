@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "test",
-    "uuid": "3a9fe10c-4e80-833d-b0fb-4556bcc12a2e",
+    "uuid": "1eae2732-c4e5-8708-9634-4ef3b67c4abd",
     "words": [
       "test"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise).",
-    "uuid": "d7f2f1d0-acd2-8e6a-b3e5-b017373dd747",
+    "source": "Use when reasoning about test — A single-word atom — collided out of schema.org compounds (no multiword disguise; sti · collapse · merge).",
+    "uuid": "3bbd8c79-05df-85f5-a43a-66b0b7fd78b1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "test",
       "a",
       "single",
       "word",
@@ -30,13 +35,15 @@ export const translations: readonly Translation[] = [
       "schema",
       "org",
       "compounds",
-      "entangled",
       "no",
       "multiword",
-      "disguise"
+      "disguise",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+      "en": "Use when reasoning about test — A single-word atom — collided out of schema.org compounds (no multiword disguise; sti · collapse · merge)."
     }
   }
 ]

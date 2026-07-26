@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "project",
-    "uuid": "0837057b-5912-8421-a0ec-7b7401cb6834",
+    "uuid": "180a5cc4-f985-8239-a66c-42477f5091dd",
     "words": [
       "project"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to indicate project sub-st",
-    "uuid": "13ab4416-907d-8051-9439-98ad65732ff6",
+    "source": "Use when reasoning about project — An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to ind",
+    "uuid": "7474fba8-844a-8425-bb56-a60ac083299f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "project",
       "an",
       "enterprise",
       "potentially",
@@ -40,13 +45,10 @@ export const translations: readonly Translation[] = [
       "suborganization",
       "parentorganization",
       "to",
-      "indicate",
-      "project",
-      "sub",
-      "st"
+      "ind"
     ],
     "values": {
-      "en": "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to indicate project sub-st"
+      "en": "Use when reasoning about project — An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to ind"
     }
   }
 ]

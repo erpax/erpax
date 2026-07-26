@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discontinued",
-    "uuid": "267e5057-a818-8b93-89d0-4883e0aa852d",
+    "uuid": "2bc2677e-9b5c-828d-9270-f1e4c547d05e",
     "words": [
       "discontinued"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about discontinued as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "53202d27-2884-8a6b-9833-60dbc8c8d867",
+    "uuid": "0671c2b0-2abb-8140-9c5f-8c5d1ae0d769",
     "words": [
       "use",
       "when",

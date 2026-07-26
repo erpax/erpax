@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "specialty",
-    "uuid": "4c7cc16a-27c5-8908-b130-1f5a6d9ee2dd",
+    "uuid": "ded24b55-60f8-8ca5-846b-8639521c59ff",
     "words": [
       "specialty"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
-    "uuid": "099e3963-bd8c-86c1-a9e8-0fe99d35844a",
+    "source": "Use when reasoning about specialty — Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
+    "uuid": "701c39a0-cddd-8c06-946a-c6db3f7e6666",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "specialty",
       "any",
       "branch",
       "of",
@@ -41,7 +46,7 @@ export const translations: readonly Translation[] = [
       "effort"
     ],
     "values": {
-      "en": "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort."
+      "en": "Use when reasoning about specialty — Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort."
     }
   }
 ]

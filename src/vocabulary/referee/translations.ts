@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "referee",
-    "uuid": "19bdc4f4-d8f9-8209-a9c1-0f7361ac6a5f",
+    "uuid": "06d2443d-1e6b-857f-8ab7-a60ce4dc2c78",
     "words": [
       "referee"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective function can vary acc",
-    "uuid": "1991f7e2-fad4-825d-b9a5-296c5de3e6c5",
+    "source": "Use when reasoning about referee — An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective f",
+    "uuid": "b7eac3ab-bbc2-85af-b153-0ba479442e05",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "referee",
       "an",
       "official",
       "who",
@@ -52,13 +57,10 @@ export const translations: readonly Translation[] = [
       "of",
       "the",
       "effective",
-      "function",
-      "can",
-      "vary",
-      "acc"
+      "f"
     ],
     "values": {
-      "en": "An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective function can vary acc"
+      "en": "Use when reasoning about referee — An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective f"
     }
   }
 ]

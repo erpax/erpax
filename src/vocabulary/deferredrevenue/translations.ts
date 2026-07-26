@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deferredrevenue",
-    "uuid": "d20bce8e-7383-8544-8768-03cb13701d68",
+    "uuid": "0428d9df-7853-8b2d-a99e-a7b1575e709a",
     "words": [
       "deferredrevenue"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
-    "uuid": "b9ae8e14-3c56-8286-9175-80ec35c0ecf6",
+    "source": "Use when reasoning about deferredrevenue — Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
+    "uuid": "663e9bf3-565d-8878-820f-ca1129283a3d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "deferredrevenue",
       "use",
       "for",
       "customer",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "position"
     ],
     "values": {
-      "en": "Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position"
+      "en": "Use when reasoning about deferredrevenue — Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position"
     }
   }
 ]

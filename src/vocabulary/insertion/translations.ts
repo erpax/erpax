@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "insertion",
-    "uuid": "78d769fd-7be2-849c-adcf-b27a9c48a081",
+    "uuid": "fabc6255-b705-8250-98ec-a048eecc5c4f",
     "words": [
       "insertion"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The place of attachment of a muscle, or what the muscle moves.",
-    "uuid": "b52bb195-bf98-886f-9a00-ce288fe50ad9",
+    "source": "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves.",
+    "uuid": "005b4e3d-a310-8841-b9cf-809707e41242",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "insertion",
       "the",
       "place",
       "of",
@@ -34,7 +39,7 @@ export const translations: readonly Translation[] = [
       "moves"
     ],
     "values": {
-      "en": "The place of attachment of a muscle, or what the muscle moves."
+      "en": "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves."
     }
   }
 ]

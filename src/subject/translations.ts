@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subject",
-    "uuid": "99359d99-1f30-88a8-b090-da2a94214702",
+    "uuid": "8c138c66-5423-815b-a720-ef4018801efe",
     "words": [
       "subject"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A CreativeWork or Event about this Thing.",
-    "uuid": "1e6c42b0-2a1d-8742-958e-c7a1fe71c8c4",
+    "source": "Use when reasoning about subject — A CreativeWork or Event about this Thing.",
+    "uuid": "ed9ae17c-3fd5-809b-af08-f31a93369a09",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "subject",
       "a",
       "creativework",
       "or",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "thing"
     ],
     "values": {
-      "en": "A CreativeWork or Event about this Thing."
+      "en": "Use when reasoning about subject — A CreativeWork or Event about this Thing."
     }
   }
 ]

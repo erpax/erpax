@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recycling",
-    "uuid": "9b02a502-4c03-8f87-8837-dbed9bc68241",
+    "uuid": "34d9579b-fd48-8b05-ace3-e2efe5696075",
     "words": [
       "recycling"
     ],
@@ -17,21 +17,34 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "recycling: a schema.org component word, fused from RecyclingCenter",
-    "uuid": "216cf913-604a-8e71-a153-f8faa82655ea",
+    "source": "Use when reasoning about recycling — A schema.org component word, collided out of schema.org compounds — fused from RecyclingCenter (sti · collapse · merge).",
+    "uuid": "78e5b034-31a7-85ec-8868-b387f50193fc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "recycling",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
-      "recyclingcenter"
+      "recyclingcenter",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "recycling: a schema.org component word, fused from RecyclingCenter"
+      "en": "Use when reasoning about recycling — A schema.org component word, collided out of schema.org compounds — fused from RecyclingCenter (sti · collapse · merge)."
     }
   }
 ]

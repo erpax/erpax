@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "soil",
-    "uuid": "2e5da900-eada-8aff-9235-869d93b5eb1d",
+    "uuid": "160a1d0b-8f90-8665-b4de-7924506f3896",
     "words": [
       "soil"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt.",
-    "uuid": "7799c54c-2339-8abd-990c-eb8f65fbc3ed",
+    "uuid": "0f9878e5-79d5-8043-85b2-00fdb42096c9",
     "words": [
       "use",
       "when",

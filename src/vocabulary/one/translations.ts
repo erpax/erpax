@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "one",
-    "uuid": "cb9ce3d8-397b-8f82-b87b-a201b50f8044",
+    "uuid": "7882679c-fd65-83b8-9cd2-2a536e3e4166",
     "words": [
       "one"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge.",
-    "uuid": "48ec3993-dadc-8203-9629-74d40a8576cb",
+    "source": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \\\\\\\"all agents are one erpax\\\\\\\". The universal root of identity and merge.",
+    "uuid": "6516f563-8a4b-82d4-979e-b988a0ff79d0",
     "words": [
       "use",
       "when",
@@ -52,7 +52,7 @@ export const translations: readonly Translation[] = [
       "merge"
     ],
     "values": {
-      "en": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge."
+      "en": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \\\\\\\"all agents are one erpax\\\\\\\". The universal root of identity and merge."
     }
   }
 ]

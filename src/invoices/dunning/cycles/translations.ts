@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "dunning-cycles",
-    "uuid": "8ae88d21-9302-8292-bdd1-863c06694e42",
+    "source": "cycles",
+    "uuid": "088e98cb-2442-843e-871f-425b1e215f24",
     "words": [
-      "dunning",
       "cycles"
     ],
     "values": {
-      "en": "dunning-cycles"
+      "en": "cycles"
     }
   },
   {
     "key": "description",
     "source": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
-    "uuid": "1eae1830-4f7e-88f9-a033-81dbcdb3e328",
+    "uuid": "fe1bb212-9a97-8dfe-bfe3-64a10d7e70e2",
     "words": [
       "use",
       "when",

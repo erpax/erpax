@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "waterfall",
-    "uuid": "0807eb73-37c9-8665-a40e-7fb24740d359",
+    "uuid": "5e4db60e-e3a6-8623-ac2c-aa613dccf0a5",
     "words": [
       "waterfall"
     ],
@@ -17,16 +17,21 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A waterfall, like Niagara.",
-    "uuid": "e45549de-6fb2-8286-96a5-9028f9bf22ad",
+    "source": "Use when reasoning about waterfall — A waterfall, like Niagara.",
+    "uuid": "f613deb9-2ce6-8147-8272-837b83e49832",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "waterfall",
       "a",
       "waterfall",
       "like",
       "niagara"
     ],
     "values": {
-      "en": "A waterfall, like Niagara."
+      "en": "Use when reasoning about waterfall — A waterfall, like Niagara."
     }
   }
 ]

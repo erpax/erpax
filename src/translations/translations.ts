@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translations",
-    "uuid": "0d10920d-f80c-8c26-a2bd-dc7a11a253be",
+    "uuid": "08b24ce9-dbe8-8211-9f90-cd5e7f2e9149",
     "words": [
       "translations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when overriding platform localizations per tenant — MCP tool descriptions, UI labels, event labels, notification templates, standard citations, chain-step names — with per-locale values (BCP-47), activation windows, and provenance back to the overridden row. The tenant translation override layer above the platform default.",
-    "uuid": "23f8df2d-09d5-88ee-8a4f-20f545bbda83",
+    "uuid": "3197888a-3afe-8daa-987e-f5a6b6827b2e",
     "words": [
       "use",
       "when",

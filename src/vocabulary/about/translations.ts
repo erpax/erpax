@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "about",
-    "uuid": "bcce305e-e515-8cae-bfa2-5baeda4c3f31",
+    "uuid": "b367c2cf-a57e-828d-a838-f8334f402e9b",
     "words": [
       "about"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The subject matter of an object.",
-    "uuid": "20bc7ac4-4bd3-8b22-ab37-21c77a84fad3",
+    "source": "Use when reasoning about about — The subject matter of an object.",
+    "uuid": "caab08f0-87de-81d1-92dc-4e93d1ae1a06",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "about",
       "the",
       "subject",
       "matter",
@@ -28,7 +33,7 @@ export const translations: readonly Translation[] = [
       "object"
     ],
     "values": {
-      "en": "The subject matter of an object."
+      "en": "Use when reasoning about about — The subject matter of an object."
     }
   }
 ]

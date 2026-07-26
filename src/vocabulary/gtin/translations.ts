@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gtin",
-    "uuid": "49fb356c-7a55-8e73-b916-f0468c072b7f",
+    "uuid": "f82d7588-da46-8369-9bdf-aac9a7f299a6",
     "words": [
       "gtin"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, which means that it sho",
-    "uuid": "17d8c714-184b-8372-bb5c-b709947bf54e",
+    "source": "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi",
+    "uuid": "c0c8fb09-5762-88a7-9499-fdbcc801f413",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "gtin",
       "a",
       "global",
       "trade",
@@ -47,14 +52,10 @@ export const translations: readonly Translation[] = [
       "a",
       "valid",
       "gtin",
-      "which",
-      "means",
-      "that",
-      "it",
-      "sho"
+      "whi"
     ],
     "values": {
-      "en": "A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, which means that it sho"
+      "en": "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi"
     }
   }
 ]

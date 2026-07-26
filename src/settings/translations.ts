@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "settings",
-    "uuid": "043cf820-5454-8cef-bf5e-90599298e20f",
+    "uuid": "2cb5256e-4fe7-8ab1-ad1e-98a1bb405a5a",
     "words": [
       "settings"
     ],
@@ -17,23 +17,36 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "settings: a schema.org component word, fused from DeliveryTimeSettings, ShippingRateSettings, shippingSettingsLink",
-    "uuid": "7ca253aa-2c61-8d2a-87a2-3d9d872889a2",
+    "source": "Use when reasoning about settings — A schema.org component word, collided out of schema.org compounds — fused from DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink (sti · collapse · merge).",
+    "uuid": "5c7e73b8-198b-86d6-bfd8-2fafa421ecb3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "settings",
       "a",
       "schema",
       "org",
       "component",
       "word",
+      "collided",
+      "out",
+      "of",
+      "schema",
+      "org",
+      "compounds",
       "fused",
       "from",
       "deliverytimesettings",
       "shippingratesettings",
-      "shippingsettingslink"
+      "shippingsettingslink",
+      "sti",
+      "collapse",
+      "merge"
     ],
     "values": {
-      "en": "settings: a schema.org component word, fused from DeliveryTimeSettings, ShippingRateSettings, shippingSettingsLink"
+      "en": "Use when reasoning about settings — A schema.org component word, collided out of schema.org compounds — fused from DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink (sti · collapse · merge)."
     }
   }
 ]

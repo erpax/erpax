@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manuscript",
-    "uuid": "5738bc47-e5bc-8ffc-a383-3959ec106b2a",
+    "uuid": "13f875b5-aad6-8e41-b75c-e336d92e45f8",
     "words": [
       "manuscript"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A book, document, or piece of music written by hand rather than typed or printed.",
-    "uuid": "53157614-09a1-8ac9-8522-71e577204cb4",
+    "source": "Use when reasoning about manuscript — A book, document, or piece of music written by hand rather than typed or printed.",
+    "uuid": "778b549d-ec50-85f7-84cb-b068f13df605",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "manuscript",
       "a",
       "book",
       "document",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "printed"
     ],
     "values": {
-      "en": "A book, document, or piece of music written by hand rather than typed or printed."
+      "en": "Use when reasoning about manuscript — A book, document, or piece of music written by hand rather than typed or printed."
     }
   }
 ]

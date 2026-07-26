@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "teaches",
-    "uuid": "c412cfba-5b71-8d47-9c6f-c6a85b96bbcd",
+    "uuid": "df0758d8-dfde-83e7-b568-f494b362c390",
     "words": [
       "teaches"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
-    "uuid": "e1cdde58-1097-8562-aea3-f9a03c46ce30",
+    "source": "Use when reasoning about teaches — The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
+    "uuid": "7a5007de-b2eb-8d09-a063-ed1844aad4a9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "teaches",
       "the",
       "item",
       "being",
@@ -43,7 +48,7 @@ export const translations: readonly Translation[] = [
       "term"
     ],
     "values": {
-      "en": "The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term."
+      "en": "Use when reasoning about teaches — The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term."
     }
   }
 ]

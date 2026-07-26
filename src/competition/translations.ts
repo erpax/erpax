@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "competition",
-    "uuid": "fd4da768-c567-8844-93ef-8efee42195ab",
+    "uuid": "179092e2-4991-8360-a50d-93873122206d",
     "words": [
       "competition"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-    "uuid": "3390334c-8f1d-8463-a130-9183bed76d09",
+    "uuid": "d9f7dfa6-ecc7-873e-9bb5-d81fb0dc3be0",
     "words": [
       "use",
       "when",

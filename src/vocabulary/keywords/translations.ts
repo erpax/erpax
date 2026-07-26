@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "keywords",
-    "uuid": "8128c75c-cd39-8c37-a106-c0f141433027",
+    "uuid": "3eb1bec3-1baa-8f5f-997d-b38bd992e086",
     "words": [
       "keywords"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
-    "uuid": "5338db49-2dfe-8389-935a-779395e0ff84",
+    "source": "Use when reasoning about keywords — Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+    "uuid": "590076fe-db15-8314-baec-c11205adb04d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "keywords",
       "keywords",
       "or",
       "tags",
@@ -47,7 +52,7 @@ export const translations: readonly Translation[] = [
       "property"
     ],
     "values": {
-      "en": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
+      "en": "Use when reasoning about keywords — Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
     }
   }
 ]

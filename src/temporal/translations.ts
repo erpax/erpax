@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "temporal",
-    "uuid": "52b5277e-4c12-874c-9b07-8326ac8e88e2",
+    "uuid": "91f5aca3-1d3b-8026-866c-e31afb1b9abe",
     "words": [
       "temporal"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The \\\"temporal\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
-    "uuid": "a8881966-673a-892e-aed3-9980cbb0f95e",
+    "source": "Use when reasoning about temporal — The \\\\\\\"temporal\\\\\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
+    "uuid": "b8b035ab-96d8-8968-95aa-df64d1fa14bf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "temporal",
       "the",
       "temporal",
       "property",
@@ -46,7 +51,7 @@ export const translations: readonly Translation[] = [
       "appropriate"
     ],
     "values": {
-      "en": "The \\\"temporal\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
+      "en": "Use when reasoning about temporal — The \\\\\\\"temporal\\\\\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate."
     }
   }
 ]

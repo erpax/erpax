@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-digit",
-    "uuid": "4714fbd6-68d6-8967-b362-c69640bbf954",
+    "source": "digit",
+    "uuid": "6e770a04-ddfa-851d-9a57-b56803c40263",
     "words": [
-      "quantum",
       "digit"
     ],
     "values": {
-      "en": "quantum-digit"
+      "en": "digit"
     }
   },
   {
     "key": "description",
     "source": "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position.",
-    "uuid": "df8ed478-9ee8-8219-aec5-790306cc143f",
+    "uuid": "8eb83602-9ac9-8387-804a-eb208c1ac63e",
     "words": [
       "use",
       "when",

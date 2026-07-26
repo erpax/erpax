@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "headline",
-    "uuid": "5e155505-44ec-813c-b21b-8256c82c3a4b",
+    "uuid": "1b6cd3ed-2d6f-8f53-ae42-80e3504d21e4",
     "words": [
       "headline"
     ],
@@ -17,16 +17,21 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Headline of the article.",
-    "uuid": "ac55d895-f92c-85ee-91a2-b0417d24bab4",
+    "source": "Use when reasoning about headline — Headline of the article.",
+    "uuid": "63bac9d8-7daa-811d-b1b6-657f9b237b03",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "headline",
       "headline",
       "of",
       "the",
       "article"
     ],
     "values": {
-      "en": "Headline of the article."
+      "en": "Use when reasoning about headline — Headline of the article."
     }
   }
 ]

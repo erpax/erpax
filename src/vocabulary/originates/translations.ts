@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "originates",
-    "uuid": "ccea1ddf-9e1c-87f4-8370-5b007d973ca5",
+    "uuid": "fea9d231-9d39-86c2-a265-1a41eb2caafe",
     "words": [
       "originates"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The vasculature the lymphatic structure originates, or afferents, from.",
-    "uuid": "c579f8dc-f454-8528-be4c-635bf9f7283e",
+    "source": "Use when reasoning about originates — The vasculature the lymphatic structure originates, or afferents, from.",
+    "uuid": "5606ca46-4c1c-8d26-a542-51db18d150f5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "originates",
       "the",
       "vasculature",
       "the",
@@ -31,7 +36,7 @@ export const translations: readonly Translation[] = [
       "from"
     ],
     "values": {
-      "en": "The vasculature the lymphatic structure originates, or afferents, from."
+      "en": "Use when reasoning about originates — The vasculature the lymphatic structure originates, or afferents, from."
     }
   }
 ]

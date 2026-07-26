@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inverse",
-    "uuid": "ac513ebc-d4cf-8932-9eb2-d63aa8ecead8",
+    "uuid": "f57bd4fc-2c9f-8c67-9ca5-aa0b33fc0372",
     "words": [
       "inverse"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties ar",
-    "uuid": "e618ca60-924c-8ed0-812b-402f6e91a4dd",
+    "source": "Use when reasoning about inverse — Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alu",
+    "uuid": "3d17d867-327e-8114-8d3c-2c8e9423c146",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "inverse",
       "relates",
       "a",
       "property",
@@ -50,12 +55,10 @@ export const translations: readonly Translation[] = [
       "the",
       "alumni",
       "and",
-      "alumniof",
-      "properties",
-      "ar"
+      "alu"
     ],
     "values": {
-      "en": "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties ar"
+      "en": "Use when reasoning about inverse — Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alu"
     }
   }
 ]

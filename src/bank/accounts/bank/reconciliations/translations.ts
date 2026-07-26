@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bank-reconciliations",
-    "uuid": "8cfcc86a-da4e-8b42-97b2-431d5046b2bb",
+    "source": "reconciliations",
+    "uuid": "6c941d4f-9f29-8393-a796-15d20094dac9",
     "words": [
-      "bank",
       "reconciliations"
     ],
     "values": {
-      "en": "bank-reconciliations"
+      "en": "reconciliations"
     }
   },
   {
     "key": "description",
     "source": "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.",
-    "uuid": "2b6868eb-19dc-87f3-8b13-22cfae429c74",
+    "uuid": "75a38106-2da3-8ab6-b9de-57c1e54bf9da",
     "words": [
       "use",
       "when",

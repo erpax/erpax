@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "contract-amendments",
-    "uuid": "b763f7c9-4cc9-8e6f-a16f-c7a24b056e91",
+    "source": "amendments",
+    "uuid": "3e25ff90-8d33-8bf6-9a80-26b2a284d49e",
     "words": [
-      "contract",
       "amendments"
     ],
     "values": {
-      "en": "contract-amendments"
+      "en": "amendments"
     }
   },
   {
     "key": "description",
     "source": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
-    "uuid": "1ba834d3-4bd5-8b1a-a257-9dcb4b249b7e",
+    "uuid": "836caad4-bcae-86f8-a165-001e4b819887",
     "words": [
       "use",
       "when",

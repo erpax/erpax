@@ -6,21 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "period-end-adjustments",
-    "uuid": "ca8b4dfd-37f3-81f2-931c-acad937ab20e",
+    "source": "adjustments",
+    "uuid": "2b47dc13-c5f4-8bcf-9882-22a8da3977c6",
     "words": [
-      "period",
-      "end",
       "adjustments"
     ],
     "values": {
-      "en": "period-end-adjustments"
+      "en": "adjustments"
     }
   },
   {
     "key": "description",
     "source": "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.",
-    "uuid": "fed53512-1704-82a8-a580-2a391116233c",
+    "uuid": "51b9d358-3da5-8a52-8b76-5927821bd569",
     "words": [
       "use",
       "when",

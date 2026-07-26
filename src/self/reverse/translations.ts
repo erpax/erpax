@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "self-reverse",
-    "uuid": "4717980c-5029-8f48-a04a-065445a47e81",
+    "source": "reverse",
+    "uuid": "381f55f3-2d03-8e74-8bc5-8fceffb23aab",
     "words": [
-      "self",
       "reverse"
     ],
     "values": {
-      "en": "self-reverse"
+      "en": "reverse"
     }
   },
   {
     "key": "description",
     "source": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return.",
-    "uuid": "a7aad265-23a5-8d17-b465-e434dfca92ff",
+    "uuid": "d526ecb1-7449-819e-abe2-2d71be191dcc",
     "words": [
       "use",
       "when",

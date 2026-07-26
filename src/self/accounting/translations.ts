@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "self-accounting",
-    "uuid": "8baf2cd9-6576-8de3-8237-8ea57755265e",
+    "source": "accounting",
+    "uuid": "dac31933-a5e9-8f15-93b5-d34e482c5fa1",
     "words": [
-      "self",
       "accounting"
     ],
     "values": {
-      "en": "self-accounting"
+      "en": "accounting"
     }
   },
   {
     "key": "description",
     "source": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof.",
-    "uuid": "86b7378d-a625-8db9-83a7-5b8063060b68",
+    "uuid": "9bd72ae4-db2b-86c0-8cae-615295c5fe68",
     "words": [
       "use",
       "when",

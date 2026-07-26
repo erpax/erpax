@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "taxing-jurisdictions",
-    "uuid": "dd219543-21fc-8133-8da2-ff8c73e6c907",
+    "source": "jurisdictions",
+    "uuid": "cf5e5de9-5226-80bb-b286-965db82ce8e8",
     "words": [
-      "taxing",
       "jurisdictions"
     ],
     "values": {
-      "en": "taxing-jurisdictions"
+      "en": "jurisdictions"
     }
   },
   {
     "key": "description",
     "source": "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.",
-    "uuid": "432b25c0-f79c-8367-a253-e718470c4eca",
+    "uuid": "2a8786be-ccb2-88e2-a576-0025b02bea8e",
     "words": [
       "use",
       "when",

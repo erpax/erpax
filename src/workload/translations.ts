@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workload",
-    "uuid": "4984ffd9-ac9e-8c85-a533-6fe37cbee763",
+    "uuid": "ef43641f-b9a7-8296-9947-92e16b32dfab",
     "words": [
       "workload"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
-    "uuid": "a61c6a7e-dacc-83e5-b465-7967bf6df946",
+    "source": "Use when reasoning about workload — Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
+    "uuid": "172e42f9-ce67-8922-85e2-01995b622b66",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "workload",
       "quantitative",
       "measure",
       "of",
@@ -37,7 +42,7 @@ export const translations: readonly Translation[] = [
       "expenditure"
     ],
     "values": {
-      "en": "Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure."
+      "en": "Use when reasoning about workload — Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure."
     }
   }
 ]

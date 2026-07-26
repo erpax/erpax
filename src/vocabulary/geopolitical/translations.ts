@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "geopolitical",
-    "uuid": "a9c04eb3-61eb-85c4-930b-e16734f4359b",
+    "uuid": "0f0d7a04-6905-83e0-a632-66174c8d247d",
     "words": [
       "geopolitical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about geopolitical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "38d34332-33ee-836e-9eb0-7c003460fe7a",
+    "uuid": "d369995f-324e-858d-b10f-78e2c94a03fd",
     "words": [
       "use",
       "when",

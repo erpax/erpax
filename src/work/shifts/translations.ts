@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shifts",
-    "uuid": "816af96f-181a-896c-ac6f-9ade38c52b5d",
+    "uuid": "d72e7bbf-dc51-8f5d-93de-e9b09aa8d66c",
     "words": [
       "shifts"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
-    "uuid": "b3a9fe76-f12c-89f1-a252-0bb5b506b77d",
+    "uuid": "9396213d-9b59-8331-b318-d042952bf3a4",
     "words": [
       "use",
       "when",

@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "carbon-emissions",
-    "uuid": "0f1c71ab-55bf-807a-af45-e4a1a9b2a90e",
+    "source": "emissions",
+    "uuid": "e35f41e8-0bdd-8a25-9ad8-b44e01a06828",
     "words": [
-      "carbon",
       "emissions"
     ],
     "values": {
-      "en": "carbon-emissions"
+      "en": "emissions"
     }
   },
   {
     "key": "description",
     "source": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-    "uuid": "62387fec-6663-8866-be75-4dfc5858cb9e",
+    "uuid": "dae535d6-47f9-8302-9c81-a987d424af47",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "backstory",
-    "uuid": "de655087-5aed-8344-a63d-65106fbc37f9",
+    "uuid": "fb63d3bf-f127-8c12-bd1f-a2b3a7029d28",
     "words": [
       "backstory"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could includ",
-    "uuid": "76175220-c3f8-800a-ba2c-b07ad51df581",
+    "source": "Use when reasoning about backstory — For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setti",
+    "uuid": "d830541f-dbd2-813e-9384-69a6760e772a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "backstory",
       "for",
       "an",
       "article",
@@ -48,13 +53,10 @@ export const translations: readonly Translation[] = [
       "in",
       "a",
       "journalistic",
-      "setting",
-      "this",
-      "could",
-      "includ"
+      "setti"
     ],
     "values": {
-      "en": "For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could includ"
+      "en": "Use when reasoning about backstory — For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setti"
     }
   }
 ]

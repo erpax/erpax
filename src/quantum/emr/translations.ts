@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quantum-emr",
-    "uuid": "c1f8bdc8-3f0f-8fdc-afef-1e91bb06c8d6",
+    "source": "emr",
+    "uuid": "fdea25ac-fc3e-8f8c-9bc6-ea33c2aa989e",
     "words": [
-      "quantum",
       "emr"
     ],
     "values": {
-      "en": "quantum-emr"
+      "en": "emr"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about the electronic medical record as a quantum snapshot chain — a patient's health state captured as content-addressed, immutable, append-only encounters and observations, nesting layer after layer, never erased so the full history stays reversible and tamper-evident.",
-    "uuid": "ac2af426-77dc-8abb-948f-b5631e649267",
+    "uuid": "b3a5dbe7-26c2-80ca-b817-4c5a582cd123",
     "words": [
       "use",
       "when",

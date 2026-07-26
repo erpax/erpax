@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "number",
-    "uuid": "cc2f97b8-6ba0-894c-abaa-4a322ab998b3",
+    "uuid": "80f32373-1ea3-831e-b091-7ddda7a51ce3",
     "words": [
       "number"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity.",
-    "uuid": "d53d4ba5-6d13-8059-8ad4-58ebf3c8cec4",
+    "uuid": "48d2bc44-7e0e-8696-afc1-6f1d4d7da7db",
     "words": [
       "use",
       "when",

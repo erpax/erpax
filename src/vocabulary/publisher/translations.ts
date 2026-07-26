@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "publisher",
-    "uuid": "4c4e7d16-aa77-8a18-aa76-42ebd08a7e87",
+    "uuid": "2c47b217-8ae7-82c5-b03b-2aed075303fe",
     "words": [
       "publisher"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "The publisher of the article in question.",
-    "uuid": "a54e851b-ca01-8480-8ff0-af567d76fb30",
+    "source": "Use when reasoning about publisher — The publisher of the article in question.",
+    "uuid": "807903d1-82fa-8e5f-ba7f-74172cee8c4e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "publisher",
       "the",
       "publisher",
       "of",
@@ -29,7 +34,7 @@ export const translations: readonly Translation[] = [
       "question"
     ],
     "values": {
-      "en": "The publisher of the article in question."
+      "en": "Use when reasoning about publisher — The publisher of the article in question."
     }
   }
 ]

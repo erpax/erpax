@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conservation",
-    "uuid": "64a4f4c7-7be3-8423-b46e-32f965b45152",
+    "uuid": "c28de118-f211-8cec-b97c-26e293a62c4d",
     "words": [
       "conservation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor).",
-    "uuid": "1f86102d-6de0-80b9-948a-98b7e2b46095",
+    "uuid": "7a70ca45-3b40-8341-b368-bb6e1228ae11",
     "words": [
       "use",
       "when",

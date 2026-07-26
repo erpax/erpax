@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "claim",
-    "uuid": "8899a65f-662d-8349-8cb5-995f89cfd557",
+    "uuid": "111f272f-cda7-8b05-96e8-bfa365362874",
     "words": [
       "claim"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text property. Variations on we",
-    "uuid": "44a0bb1e-76a3-8800-a1c7-7bf0e7cb5738",
+    "source": "Use when reasoning about claim — A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text proper",
+    "uuid": "d377706c-ab9b-8362-ad51-20bc328f572b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "claim",
       "a",
       "claim",
       "in",
@@ -50,13 +55,10 @@ export const translations: readonly Translation[] = [
       "with",
       "the",
       "text",
-      "property",
-      "variations",
-      "on",
-      "we"
+      "proper"
     ],
     "values": {
-      "en": "A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text property. Variations on we"
+      "en": "Use when reasoning about claim — A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text proper"
     }
   }
 ]

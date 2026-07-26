@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enumeration",
-    "uuid": "4f261a01-cc1b-88e7-9042-a622ee6c0606",
+    "uuid": "1a7879c4-a02a-8e2b-954b-43c6be2a6808",
     "words": [
       "enumeration"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Lists or enumerations—for example, a list of cuisines or music genres, etc.",
-    "uuid": "d2c0a0f6-271e-8b03-b9ac-428f98e48625",
+    "source": "Use when reasoning about enumeration — Lists or enumerations—for example, a list of cuisines or music genres, etc.",
+    "uuid": "88e91219-11fa-82f3-82a5-5f54ac585129",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "enumeration",
       "lists",
       "or",
       "enumerations",
@@ -35,7 +40,7 @@ export const translations: readonly Translation[] = [
       "etc"
     ],
     "values": {
-      "en": "Lists or enumerations—for example, a list of cuisines or music genres, etc."
+      "en": "Use when reasoning about enumeration — Lists or enumerations—for example, a list of cuisines or music genres, etc."
     }
   }
 ]

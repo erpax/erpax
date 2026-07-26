@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taggings",
-    "uuid": "f779a0b2-9ef8-884b-906d-6458bc61b5b9",
+    "uuid": "5db73d10-e4da-83ed-b615-02027a9a193a",
     "words": [
       "taggings"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.",
-    "uuid": "a0489721-714e-8914-b4fd-7cb6a960ac27",
+    "uuid": "87b20850-85b4-830c-a75e-ef122f2f322b",
     "words": [
       "use",
       "when",

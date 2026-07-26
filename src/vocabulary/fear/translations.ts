@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fear",
-    "uuid": "49972782-70e1-8b34-a295-be69628acf5d",
+    "uuid": "395f6b59-8803-8791-ac75-92a8d1bef184",
     "words": [
       "fear"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed.",
-    "uuid": "709cc693-a586-8aa8-8209-ca5bc6488287",
+    "uuid": "b74a50dd-ff6d-8a87-a0b6-25261672e24c",
     "words": [
       "use",
       "when",

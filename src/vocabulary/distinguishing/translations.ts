@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "distinguishing",
-    "uuid": "9264ddc2-6d8f-8d3f-93b0-195a15e53d4e",
+    "uuid": "ede44de8-e19e-80ab-ac28-89b81fd40796",
     "words": [
       "distinguishing"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about distinguishing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "uuid": "fa20fb9f-52b1-8b6d-9b75-28f89ebb5de6",
+    "uuid": "05e85e6a-795f-8534-a9d9-c59d5781af5f",
     "words": [
       "use",
       "when",

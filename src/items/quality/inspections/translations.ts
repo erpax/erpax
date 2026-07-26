@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "quality-inspections",
-    "uuid": "d133597e-638f-8a78-9fd6-d4aabb61ccb3",
+    "source": "inspections",
+    "uuid": "b5a6afa1-756d-8072-86f8-0f75253d0241",
     "words": [
-      "quality",
       "inspections"
     ],
     "values": {
-      "en": "quality-inspections"
+      "en": "inspections"
     }
   },
   {
     "key": "description",
     "source": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
-    "uuid": "3b50f9d6-0b55-8129-82f5-0fe18cec331f",
+    "uuid": "f78d32dd-00a9-8a85-a059-4e00dca61e37",
     "words": [
       "use",
       "when",

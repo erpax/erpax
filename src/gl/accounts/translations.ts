@@ -6,20 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "gl-accounts",
-    "uuid": "7536c0d0-3f40-8df6-8158-871dadf076ec",
+    "source": "accounts",
+    "uuid": "7beae73a-feba-86d3-ba72-d9d8ff3d9c99",
     "words": [
-      "gl",
       "accounts"
     ],
     "values": {
-      "en": "gl-accounts"
+      "en": "accounts"
     }
   },
   {
     "key": "description",
     "source": "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.",
-    "uuid": "9c73cb06-1e9f-8446-8e96-a975476374e3",
+    "uuid": "467a517a-11c4-83e1-aa8b-27effa9b5b8b",
     "words": [
       "use",
       "when",

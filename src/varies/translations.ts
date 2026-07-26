@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "varies",
-    "uuid": "582ba01a-9156-8326-804a-0eb6eaa00550",
+    "uuid": "4f0890a2-168c-8e99-9b43-ca4c73b01102",
     "words": [
       "varies"
     ],
@@ -17,9 +17,14 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"color\\\"; terms defined",
-    "uuid": "7483845d-0959-88c3-8788-afd0127c4709",
+    "source": "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\\\\\"col",
+    "uuid": "81079825-7757-8c84-b9cf-7c6bba8d428b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "varies",
       "indicates",
       "the",
       "property",
@@ -51,12 +56,10 @@ export const translations: readonly Translation[] = [
       "name",
       "e",
       "g",
-      "color",
-      "terms",
-      "defined"
+      "col"
     ],
     "values": {
-      "en": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"color\\\"; terms defined"
+      "en": "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\\\\\"col"
     }
   }
 ]
