@@ -10,7 +10,9 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { getCachedGlobal } from './get-globals'
 
 // Mock the payloadCache module
-vi.mock('@/utilities/payloadCache', () => ({
+// get-globals imports from ./cache (moved from @/utilities/payloadCache); the mock specifier must
+// match the code-under-test's import or vi.mock never intercepts.
+vi.mock('./cache', () => ({
   getCachedPayloadGlobal: vi.fn((slug, depth) => {
     return async () => ({
       id: '1',

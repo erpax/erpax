@@ -11,7 +11,9 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { getCachedDocument } from './get-document'
 
 // Mock the payloadCache module
-vi.mock('@/utilities/payloadCache', () => ({
+// get-document imports from ./cache (moved from @/utilities/payloadCache); the mock specifier must
+// match the code-under-test's import or vi.mock never intercepts.
+vi.mock('./cache', () => ({
   getCachedPayloadDocument: vi.fn((collection, slug) => {
     return async () => ({
       id: '1',
