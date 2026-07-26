@@ -5,15 +5,15 @@
  *   tsx src/schema/test/index.ts --seed
  */
 export const SCHEMA_TEST_SEED = {
-  "atoms": 2103,
-  "matrixRoot": "b5e58918-9508-8b68-9750-9b737248e66e",
-  "entropyTotal": 553,
+  "atoms": 3157,
+  "matrixRoot": "22dfa090-82f3-889f-a33f-f81f115e9bbe",
+  "entropyTotal": 35,
   "byKind": {
-    "uncrosslinked": 482,
+    "society-unconvened": 1,
+    "uncrosslinked": 20,
     "folder-outside-src": 4,
-    "dotted-folder-bypass": 18,
-    "doc-not-skill": 46,
-    "uncollidable-data": 1,
-    "recorded-junk": 2
+    "uncollidable-data": 7,
+    "recorded-junk": 2,
+    "duplicate-text": 1
   }
 } as const
