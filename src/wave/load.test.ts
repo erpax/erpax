@@ -25,13 +25,13 @@ describe('selfBalancingWaveLoad — horo-phase partition', () => {
     expect(plan.balanceRatio).toBe(1)
   })
 
-  it('distributes 3087 paths into 7 balanced horo waves (441 each)', () => {
+  it('distributes 3157 paths into 7 balanced horo waves (451 each)', () => {
     const paths = followEveryPathAll()
-    expect(paths.length).toBe(3087)
+    expect(paths.length).toBe(3157)
 
     const plan = selfBalancingWaveLoad(paths, { weightOf: pathComparableUnits })
     expect(plan.waveCount).toBe(7)
-    expect(plan.waves.every((w) => w.itemCount === 441)).toBe(true)
+    expect(plan.waves.every((w) => w.itemCount === 451)).toBe(true)
 
     const steps = plan.waves.map((w) => w.step)
     expect(steps).toEqual([
