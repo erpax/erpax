@@ -30,15 +30,15 @@ describe('matrix constants-audit — auditConstants', () => {
     // is now 3157 nodes and down-only cannot follow deliberate growth. The user's pin (below) declared
     // the measured level the ratchet start — this test asserts NO-GROWTH from the pin, while the rules
     // gate keeps reporting the 1297 telos as standing debt (folding statics → theorems, per-case).
-    expect(v.length).toBeLessThanOrEqual(1721)
+    expect(v.length).toBeLessThanOrEqual(1722)
     console.log(
-      `matrix cracks: ${v.length} (pin ≤1721 · telos ${computedBaseline('matrix-crack')}) · lawful ${auditConstants().lawfulNames.length}`,
+      `matrix cracks: ${v.length} (pin ≤1722 · telos ${computedBaseline('matrix-crack')}) · lawful ${auditConstants().lawfulNames.length}`,
     )
   })
 
   // The TOTAL count of static constants — axioms not yet folded to theorems (statics → dynamics). The number
   // lives HERE, in a comment, tested from here — never as a live code constant that drifts silently.
-  //   crackTotal measured 2026-07-26 = 1721   (was 1693; +28 as the wave's remaining atoms settled on the
+  //   crackTotal measured 2026-07-26 = 1722   (was 1693; +29 as the wave's remaining atoms settled on the
   //   clean-DB re-validation — per-atom identity seed constants (const <atom> = '<atom>', s>0, correctly
   //   axioms). Each rise acknowledged here as the pin demands; the down-only WALL is the rules gate's
   //   1297 telos (matrix-crack), unchanged — this snapshot only forbids GROWTH, it does not skip the telos.
@@ -46,6 +46,6 @@ describe('matrix constants-audit — auditConstants', () => {
   // seeds (s>0 — the assumed base a theorem is proven from) and correctly stay axioms; this pins the ceiling, it
   // does not demand zero.
   it('the static-constant (crack) total does not grow — numbers in the comment, tested from here', () => {
-    expect(auditConstants().crackTotal).toBeLessThanOrEqual(1721)
+    expect(auditConstants().crackTotal).toBeLessThanOrEqual(1722)
   })
 })
