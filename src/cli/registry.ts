@@ -19,7 +19,7 @@ const ESLINT =
 /** Type-aware ESLint on the full src tree recurses deep Payload types — needs a larger V8 stack
  * (NODE_OPTIONS forbids --stack-size, so invoke node directly). */
 const ESLINT_SRC =
-  'node --stack-size=16384 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
+  'node --stack-size=65536 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
 const VITEST =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" vitest run --config ./vitest.config.mts'
 
@@ -55,8 +55,14 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     imports: { desc: 'Import-convention ratchet gate', cmd: `${NODE_TSX} src/convention/import/gate.mjs` },
     folders: { desc: 'Folder-shape law gate', cmd: 'cross-env NODE_OPTIONS="--no-deprecation" tsx src/law/folder/index.ts --check' },
     fix: { desc: 'ESLint --fix whole repo', cmd: `${ESLINT} . --fix` },
-    typecheck: { desc: 'tsc --noEmit (typecheck project)', cmd: 'tsc --noEmit -p tsconfig.typecheck.json' },
-    'typecheck-all': { desc: 'tsc --noEmit (full project)', cmd: 'tsc --noEmit -p tsconfig.json' },
+    typecheck: {
+      desc: 'tsc --noEmit (typecheck project)',
+      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" tsc --noEmit -p tsconfig.typecheck.json',
+    },
+    'typecheck-all': {
+      desc: 'tsc --noEmit (full project)',
+      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" tsc --noEmit -p tsconfig.json',
+    },
   },
   test: {
     default: { desc: 'Vitest integration suite', cmd: VITEST },
