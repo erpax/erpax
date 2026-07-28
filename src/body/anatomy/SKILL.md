@@ -1,12 +1,12 @@
 ---
 name: anatomy
 description: "Use when reasoning about anatomy as an anatomical part of [[body]] — vocabulary pivot to @/anatomy; nested not duplicated."
-atomPath: body/anatomy
-coordinate: body/anatomy · 5/round · 6d667293
-contentUuid: "82ba8121-e66b-5354-8421-6fe096d5d0c6"
-diamondUuid: "30487d1a-06cc-8bdc-8f61-1ceb5a140c4d"
-uuid: "6d667293-53ed-8c9b-b80e-1b2a5e289170"
-horo: 5
+atomPath: "body/anatomy"
+coordinate: "body/anatomy · 2/share · 31b3ffb9"
+contentUuid: "1a8466df-d56c-5ac3-8181-bf1775105033"
+diamondUuid: "5ac5ab43-1427-87d6-bea6-af72ec9a1d3a"
+uuid: "31b3ffb9-d682-81e1-ba03-48a522b0c1fe"
+horo: 2
 bonds:
   in:
     - abdomen
@@ -14,7 +14,6 @@ bonds:
     - arm
     - associated
     - body
-    - collapse
     - foot
     - hand
     - head
@@ -22,14 +21,13 @@ bonds:
     - leg
     - merge
     - related
-    - sti
     - superficial
   out:
     - abdomen
     - anatomy
     - arm
     - associated
-    - collapse
+    - body
     - foot
     - hand
     - head
@@ -37,11 +35,10 @@ bonds:
     - leg
     - merge
     - related
-    - sti
     - superficial
 typography:
   partition: body
-  bondDegree: 50
+  bondDegree: 48
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -57,7 +54,7 @@ neighbors:
     - anatomy
     - arm
     - associated
-    - collapse
+    - body
     - foot
     - hand
     - head
@@ -65,14 +62,13 @@ neighbors:
     - leg
     - merge
     - related
-    - sti
     - superficial
   backlinks:
     - abdomen
     - anatomy
     - arm
     - associated
-    - collapse
+    - body
     - foot
     - hand
     - head
@@ -80,10 +76,9 @@ neighbors:
     - leg
     - merge
     - related
-    - sti
     - superficial
 signatures:
-  computationUuid: "45ce1941-74ea-8ebf-8f15-787fff01d1af"
+  computationUuid: "b99aa780-2beb-880f-a898-9af944528b39"
   stages:
     - stage: path
       stageUuid: "f3b8795f-cddf-8a3e-848c-a08f5719d5d4"
@@ -94,11 +89,11 @@ signatures:
     - stage: links
       stageUuid: "f3ebc296-54f8-846e-8491-01f2097c2e37"
     - stage: horo
-      stageUuid: "29b6611b-696b-8c40-9f16-38a0c1efa925"
+      stageUuid: "67139921-2852-8fa2-9f27-1e6567164795"
     - stage: seal
-      stageUuid: "b41ca437-cf66-8455-be00-f1a434ed58fb"
+      stageUuid: "1779a5ab-59e9-870b-86ba-adfbabf82b0b"
     - stage: uuid
-      stageUuid: "b476ece8-14f6-8609-9aac-b3b852ec86f3"
+      stageUuid: "e25b5f49-a63a-8086-80bb-485c3c472805"
 version: 2
 ---
 # body/anatomy — anatomical part

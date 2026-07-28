@@ -1,44 +1,38 @@
 ---
 name: fallback
-description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \\\"No currency\\\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
-atomPath: currency/fallback
-coordinate: currency/fallback · 4/weave · fc53af55
-contentUuid: "d0217f8b-44e8-5c94-b827-01d4e6035a46"
-diamondUuid: "ae8d804e-21b7-8acd-bf6c-d17d1e27afe4"
-uuid: "fc53af55-fea5-828a-b5ab-4f1c6819df8d"
-horo: 4
+description: "Use when a currency value is missing, blank, or unknown — the blank currency XXX (ISO 4217 §6.5 \\\\\\\"No currency\\\\\\\") is the identity element of the currency category, so every row, hook, formatter, and conversion resolves cleanly to it instead of crashing."
+atomPath: "currency/fallback"
+coordinate: "currency/fallback · 2/share · 8c68fea2"
+contentUuid: "e87b07a6-128b-56e1-9ffa-ee34c0bdb74f"
+diamondUuid: "b44f48e8-f7fe-8aab-a36b-b05304c09938"
+uuid: "8c68fea2-b365-85d2-bc16-936e3aa27e5f"
+horo: 2
 bonds:
   in:
-    - collapse
+    - country
     - currency
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
   out:
-    - collapse
+    - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
 typography:
   partition: currency
-  bondDegree: 26
+  bondDegree: 24
   neighbors: []
 standards:
-  - "Conservation Law 53 self-referential-closure (currency identity element)"
-  - "Conservation Law 53 self-referential-closure (currency identity element); never hand-asserted"
   - "EN 16931 §BG-7 currency-code element (XXX accepted)"
   - "EN-16931"
-  - "EU-2002/58"
   - "IAS 21 §38 presentation-currency translation"
   - "IFRS 1 §IG7 non-monetary items presentation"
   - "IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)"
   - ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)
   - "ISO 4217 §6.5 \"No currency\" — code XXX, numeric 999"
-  - "ISO-20022"
   - "RFC-8785"
 bindings: []
 neighbors:
@@ -48,36 +42,34 @@ neighbors:
     - law
     - uuid
   matrix:
-    - collapse
+    - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
   backlinks:
-    - collapse
+    - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
 signatures:
-  computationUuid: "aed5f0af-f48a-892b-935a-f38b5ef1083a"
+  computationUuid: "d5ff3ba0-a0e9-81fc-a419-0e83e9c68ec2"
   stages:
     - stage: path
       stageUuid: "d7b844f9-d0e5-8dc9-bc13-82697a218af1"
     - stage: trinity
       stageUuid: "55ab54a0-4883-80c6-8760-1902ca5b8270"
     - stage: boundary
-      stageUuid: "8ba1e105-1098-8c57-a2d5-0bc0ae80490b"
+      stageUuid: "7f5b72ca-6417-837d-a22c-af21485d9eae"
     - stage: links
       stageUuid: "fd20a679-3f0d-87a8-9573-8b08bef6207d"
     - stage: horo
-      stageUuid: "14a58a13-b88f-883d-9bca-8bfda68c879c"
+      stageUuid: "624639e8-ed24-8d3c-a7dd-5f42b5bf9459"
     - stage: seal
-      stageUuid: "63f7b931-ade8-8883-abd1-1925380669ed"
+      stageUuid: "71165a1d-9b0b-819b-8287-0db243548164"
     - stage: uuid
-      stageUuid: "47b2756f-1bb1-8eb2-85ec-ed9c6c242932"
+      stageUuid: "cec984c3-df5f-8770-8218-e0bcaddbe080"
 version: 2
 ---
 # currency/fallback — the blank currency as identity element

@@ -1,8 +1,133 @@
 ---
 name: coverage
-description: "Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts"
+description: "Use when reasoning about coverage — Use to see the development plan as a computed matrix — participants (14 roles) × standards (their concerns), each cell a theorem, each uncovered cell a wave. A cell is covered iff a control cites its standard WITH a test beside it. 100% = every standard, faced by every participant it concerns, is proven. Run: tsx src/coverage/index.ts"
+atomPath: coverage
+coordinate: "coverage · 8/crest · 8058dd7a"
+contentUuid: "6c574e38-a116-5b57-a25c-38d73211218e"
+diamondUuid: "b440cf70-7f5b-8885-9141-aafbf9a2b28c"
+uuid: "8058dd7a-585c-819b-be01-61293d162909"
+horo: 8
+bonds:
+  in:
+    - audit
+    - aura
+    - balance
+    - blockchain
+    - blood
+    - cost
+    - gate
+    - heart
+    - law
+    - mission
+    - policy
+    - priorities
+    - proof
+    - redundancy
+    - rules
+    - spatial
+    - syntax
+    - tamper
+    - temporal
+    - testing
+    - vibration
+  out:
+    - audit
+    - aura
+    - balance
+    - blockchain
+    - blood
+    - cost
+    - gate
+    - heart
+    - law
+    - mission
+    - policy
+    - priorities
+    - proof
+    - redundancy
+    - rules
+    - spatial
+    - syntax
+    - tamper
+    - temporal
+    - testing
+    - vibration
+typography:
+  partition: coverage
+  bondDegree: 76
+  neighbors: []
+standards:
+  - "ISO-19011:2018 §6.4 — audit evidence: coverage is traceable, cell by cell"
+bindings: []
+neighbors:
+  wikilink:
+    - audit
+    - law
+    - rules
+    - syntax
+  matrix:
+    - audit
+    - aura
+    - balance
+    - blockchain
+    - blood
+    - cost
+    - gate
+    - heart
+    - law
+    - mission
+    - policy
+    - priorities
+    - proof
+    - redundancy
+    - rules
+    - spatial
+    - syntax
+    - tamper
+    - temporal
+    - testing
+    - vibration
+  backlinks:
+    - audit
+    - aura
+    - balance
+    - blockchain
+    - blood
+    - cost
+    - gate
+    - heart
+    - law
+    - mission
+    - policy
+    - priorities
+    - proof
+    - redundancy
+    - rules
+    - spatial
+    - syntax
+    - tamper
+    - temporal
+    - testing
+    - vibration
+signatures:
+  computationUuid: "74423e91-ab87-8151-9aba-47915fb1f4b6"
+  stages:
+    - stage: path
+      stageUuid: "1c6707ed-6029-8932-8157-b1288b84e7c9"
+    - stage: trinity
+      stageUuid: "21e87c4c-fc01-8d91-87ad-004358c05a18"
+    - stage: boundary
+      stageUuid: "c896a96f-9f0e-8995-95c5-f20c32af9c61"
+    - stage: links
+      stageUuid: "d64789f2-fbe3-8a5a-b03a-1b838279294c"
+    - stage: horo
+      stageUuid: "b930a51e-0475-8bbf-be95-1dc729d7f0e8"
+    - stage: seal
+      stageUuid: "75b5e9ed-2848-8199-8d8c-4ef1baab8134"
+    - stage: uuid
+      stageUuid: "0f597429-a7f6-8c78-b850-4493e126b8d5"
+version: 2
 ---
-
 # coverage — the development waves ARE theorems, and this computes which remain
 
 The whole session converges here. [[rules]]/audience projects a claim onto the reader it is addressed to; [[audit]]/agent turns each reader into an auditor; the auditors **define the gates**. The last step is the **plan** — and a plan of prose is what this corpus exists to refuse.

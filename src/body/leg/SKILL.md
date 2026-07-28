@@ -1,26 +1,25 @@
 ---
 name: leg
 description: "Use when reasoning about leg as an anatomical part of [[body]] — vocabulary pivot to @/leg; nested not duplicated."
-atomPath: body/leg
-coordinate: body/leg · 7/descent · 70cf9462
-contentUuid: "cf1ae1e4-4e43-527e-9d2c-d7efe39236e1"
-diamondUuid: "76f22074-511c-844c-b96a-911cc1f28911"
-uuid: "70cf9462-bde3-879b-9e4e-9c6c58cdd747"
-horo: 7
+atomPath: "body/leg"
+coordinate: "body/leg · 4/weave · a33d04f5"
+contentUuid: "6df6312e-375f-5549-9dc9-02cb9287568a"
+diamondUuid: "9af4aeed-7147-8402-beda-673548843b18"
+uuid: "a33d04f5-787f-8bdc-925f-69684c1af708"
+horo: 4
 bonds:
   in:
+    - anatomy
     - body
-    - collapse
     - law
     - leg
     - merge
-    - sti
   out:
-    - collapse
+    - anatomy
+    - body
     - law
     - leg
     - merge
-    - sti
 typography:
   partition: body
   bondDegree: 21
@@ -36,19 +35,19 @@ neighbors:
     - leg
     - merge
   matrix:
-    - collapse
+    - anatomy
+    - body
     - law
     - leg
     - merge
-    - sti
   backlinks:
-    - collapse
+    - anatomy
+    - body
     - law
     - leg
     - merge
-    - sti
 signatures:
-  computationUuid: "55c04cdc-2582-8588-af0f-e2992054cea4"
+  computationUuid: "4144efee-f0e5-88c3-a126-9ceea51eb5d1"
   stages:
     - stage: path
       stageUuid: "2b184cd4-4586-863a-aa68-0cad8983e1f9"
@@ -59,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "90e0cca6-3e0d-8817-825e-c50deb6efb38"
     - stage: horo
-      stageUuid: "27851214-64c6-89bb-a791-dae3f86f7305"
+      stageUuid: "44335f9d-a87d-8f65-aac4-c795ada111c2"
     - stage: seal
-      stageUuid: "9564f091-7e61-8af1-b95a-fa099da66069"
+      stageUuid: "c73c4280-1e59-8565-8037-6e0e57c0424d"
     - stage: uuid
-      stageUuid: "7949a089-1f3d-8c3b-aa62-013e12a85c08"
+      stageUuid: "abaf08d3-ffb2-83c3-8211-f47732ddae6d"
 version: 2
 ---
 # body/leg — anatomical part

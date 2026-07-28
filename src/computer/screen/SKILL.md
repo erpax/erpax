@@ -1,12 +1,12 @@
 ---
 name: screen
 description: "Use when reasoning about screen as a part of [[computer]] — vocabulary pivot to @/screen; nested not duplicated."
-atomPath: computer/screen
-coordinate: computer/screen · 2/share · 42f04673
-contentUuid: "28b96cd1-a308-58c1-a2ab-753fb5e2822e"
-diamondUuid: "1b005ad6-23aa-8cf4-baf0-ce3bcbae0614"
-uuid: "42f04673-8eef-8f9e-9228-e19f7c900e8e"
-horo: 2
+atomPath: "computer/screen"
+coordinate: "computer/screen · 1/base · 5717ead4"
+contentUuid: "588af23f-459b-519f-97b3-c73c5311f92a"
+diamondUuid: "74bf050b-e04b-8411-9df0-815357eea03c"
+uuid: "5717ead4-af15-86da-a488-27c0a389e21d"
+horo: 1
 bonds:
   in:
     - collapse
@@ -53,7 +53,7 @@ neighbors:
     - screen
     - sti
 signatures:
-  computationUuid: "a8a2cfb0-b468-8198-b563-910b879de359"
+  computationUuid: "9e76d9cf-d407-8af4-bcc6-ebaef58407bb"
   stages:
     - stage: path
       stageUuid: "523e9070-98fa-8929-8dbd-b24c4a23411d"
@@ -64,11 +64,11 @@ signatures:
     - stage: links
       stageUuid: "2bab9033-a808-8981-b3b4-b68db3b98c87"
     - stage: horo
-      stageUuid: "89f3fb93-3226-83a2-8ae4-6a615c7ed2ea"
+      stageUuid: "7ec75722-16b2-82e4-b91c-7257da5e8659"
     - stage: seal
-      stageUuid: "7b7cd391-8447-8a3d-a94d-802634190520"
+      stageUuid: "773331e5-6907-8663-86f8-f71991286740"
     - stage: uuid
-      stageUuid: "bd582f8d-3ffe-833e-aebd-e7d484a2d4ff"
+      stageUuid: "5724119f-704b-85c5-b784-03e4fad9e27e"
 version: 2
 ---
 # computer/screen — renders output

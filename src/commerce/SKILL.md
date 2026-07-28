@@ -2,11 +2,11 @@
 name: commerce
 description: "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8)."
 atomPath: commerce
-coordinate: commerce · 5/round · 1b8ad812
-contentUuid: "29a7ae90-c364-5cc6-a556-676fbc7f1237"
-diamondUuid: "543ddec0-1f0b-8483-ace2-7f6f1ea61d23"
-uuid: "1b8ad812-51af-8771-880d-6dfc1e21d0f1"
-horo: 5
+coordinate: "commerce · 2/share · 2fe6d5cf"
+contentUuid: "1f3b9dc2-6fea-5a9f-a766-885b0edc5d1c"
+diamondUuid: "769cb1c2-e046-8ba0-8bf9-c823ee403da6"
+uuid: "2fe6d5cf-1e92-8cb7-8ae8-ab0d17a3f756"
+horo: 2
 bonds:
   in:
     - accounting
@@ -110,7 +110,9 @@ standards:
   - "EU-CSDDD-2024/1760"
   - "Stripe API v2024-10-28-acacia"
   - W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
+  - "W3C Verifiable Credentials Data Model 2.0 (subscription receipts)`"
   - "W3C-VC-2.0"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -223,7 +225,7 @@ neighbors:
     - trading
     - variant
 signatures:
-  computationUuid: "6a0110fe-4b03-855a-9aa2-49a0d9397778"
+  computationUuid: "98cd044e-d6b4-89d7-b120-3a29cd91b00a"
   stages:
     - stage: path
       stageUuid: "eefc9b09-1e71-8151-a18f-4a4dd3a90971"
@@ -234,11 +236,11 @@ signatures:
     - stage: links
       stageUuid: "0d7d9807-5562-81e6-bf28-25342dec37a5"
     - stage: horo
-      stageUuid: "82e85e2f-24fe-840c-8347-9ec73a29539d"
+      stageUuid: "c62cc74f-630c-87a1-bb54-1d6cb8026cfb"
     - stage: seal
-      stageUuid: "3237e960-7e1b-88d1-9faa-fbfdfeb7c744"
+      stageUuid: "08b5e11f-2892-8355-a41e-c87291686fa2"
     - stage: uuid
-      stageUuid: "b0693675-99bb-8348-a300-893e26b18392"
+      stageUuid: "ba3bf572-a5e4-8580-b0f4-d4bff3598640"
 version: 2
 ---
 # commerce — the transactional-flow plugin (one party, infinite roles)

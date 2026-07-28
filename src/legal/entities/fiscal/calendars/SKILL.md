@@ -1,12 +1,12 @@
 ---
 name: calendars
 description: "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection."
-atomPath: legal/entities/fiscal/calendars
-coordinate: legal/entities/fiscal/calendars · 2/share · 4d2f311b
-contentUuid: "f443ed7a-7933-5b0c-b7d0-17757da0deef"
-diamondUuid: "8e00e5f3-2237-8286-9774-e179ea82fb0f"
-uuid: "4d2f311b-53b4-876e-9d24-5922969e54c1"
-horo: 2
+atomPath: "legal/entities/fiscal/calendars"
+coordinate: "legal/entities/fiscal/calendars · 7/descent · 3c00aadf"
+contentUuid: "9ff58ed4-9218-50a5-9783-8f7141a25d57"
+diamondUuid: "180ff335-7e04-8084-bee2-2bb79e9786dd"
+uuid: "3c00aadf-2aad-8060-b4e3-ba59e433d730"
+horo: 7
 bonds:
   in:
     - accounting
@@ -31,16 +31,21 @@ typography:
 standards:
   - "EU-2016/679"
   - "GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)"
+  - "GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)`"
   - "IAS-34"
   - "IAS-34:2023 (period metadata: quarter, fiscal year, period label)"
   - "ISO-4217:2023 (currencyCode inherited from FiscalPeriods)"
+  - "ISO-4217:2023 (currencyCode inherited from FiscalPeriods)`"
   - "ISO-8601:2019 (calendarDate in RFC 3339, weekNumber per ISO 8601:2019)"
+  - "ISO-8601:2019 (calendarDate in RFC 3339, weekNumber per ISO 8601:2019)`"
   - "SAF-T"
   - "SAF-T:3.0.2 (regulatoryCode for audit file period coding, e.g., P01_2026)"
   - SOX
   - "SOX:2402 (audit-trail via chainLeafUuid)"
+  - "SOX:2402 (audit-trail via chainLeafUuid)`"
   - XBRL
   - XBRL (period context for financial statement generation)
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -66,7 +71,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "83ca2ca0-4cd5-82de-be91-354354095309"
+  computationUuid: "55c7e351-978b-8cf7-ab6c-41e5c0033655"
   stages:
     - stage: path
       stageUuid: "194b72e6-3476-805f-acaf-92825fc69768"
@@ -77,11 +82,11 @@ signatures:
     - stage: links
       stageUuid: "e30f10c4-368f-84eb-8d94-1ae7e6fed2ce"
     - stage: horo
-      stageUuid: "a28ed58f-4151-84f9-9472-3d93d5c42836"
+      stageUuid: "f9449a26-4b73-82b6-b178-70cb0c484d4e"
     - stage: seal
       stageUuid: "f25c31be-dd7e-8191-8dbc-24766d6c0875"
     - stage: uuid
-      stageUuid: "cd257012-1edc-86d3-908c-55d53366f638"
+      stageUuid: "b8a3ec0d-abd8-8cc8-858c-4b7de4886bfe"
 version: 2
 ---
 # fiscal-calendars

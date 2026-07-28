@@ -1,12 +1,12 @@
 ---
 name: rev2
 description: Use when implementing or referencing NACE Rev. 2.
-atomPath: nace/rev2
-coordinate: nace/rev2 · 2/share · bb605663
-contentUuid: "d06a707e-3e71-54d7-ad0b-15b6628e3624"
-diamondUuid: "30893156-57b2-8da7-8616-ba646670585d"
-uuid: "bb605663-7914-89de-96a9-f65ce23b8e43"
-horo: 2
+atomPath: "nace/rev2"
+coordinate: "nace/rev2 · 7/descent · e05c10fd"
+contentUuid: "39b84f77-eb52-5800-9481-fb6e60626e02"
+diamondUuid: "0ff4e1f4-5258-8c71-8f92-4af765e70c85"
+uuid: "e05c10fd-a1ce-8276-b765-4bf98512f346"
+horo: 7
 bonds:
   in:
     - law
@@ -18,10 +18,10 @@ typography:
   neighbors: []
 standards:
   - "EU CSRD ESRS 2 §80(b) sector-classification"
-  - EU Regulation (EC) No 1893/2006 NACE Rev.2
+  - "EU Regulation (EC) No 1893/2006 NACE Rev.2"
   - "EU-2006/43"
   - NACE
-  - NAICS 2022 (US/CA/MX companion)
+  - "NAICS 2022 (US/CA/MX companion)"
   - UN ISIC Rev.4 (companion)
 bindings: []
 neighbors:
@@ -32,7 +32,7 @@ neighbors:
   backlinks:
     - law
 signatures:
-  computationUuid: "ded5dc7e-0455-8225-8a03-43a8f4b9fbe9"
+  computationUuid: "2a99b457-7e0f-8863-9362-87088186fd47"
   stages:
     - stage: path
       stageUuid: "01a4cab2-4276-8308-8d09-5b0d1a3ec733"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "dac0f865-0bb2-82db-be5c-65ca3ceff7e1"
     - stage: horo
-      stageUuid: "25baf458-4325-830e-8e05-40fa85600dd5"
+      stageUuid: "c31020d5-c894-8e41-8901-62b64eea35a8"
     - stage: seal
       stageUuid: "1ea3438d-a34f-8350-9227-dd7d3e54e014"
     - stage: uuid
-      stageUuid: "06d7025c-969b-8e4e-a24f-abf8de3e4fff"
+      stageUuid: "ea8b2513-fa5c-886c-8249-d1291bbeb20f"
 version: 2
 ---
 # NACE Rev. 2

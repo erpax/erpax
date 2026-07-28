@@ -1,12 +1,12 @@
 ---
 name: exported
 description: "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity)."
-atomPath: convention/exported
-coordinate: convention/exported · 7/descent · f60cba62
-contentUuid: "e74e2cb4-5baa-5331-b92e-9166c8603e29"
-diamondUuid: "eed5478d-39ed-8f11-8687-033c0d1f9ceb"
-uuid: "f60cba62-9b32-89ab-993f-cf0f7bfe6066"
-horo: 7
+atomPath: "convention/exported"
+coordinate: "convention/exported · 2/share · b42ef380"
+contentUuid: "e8e1b873-7cc3-534e-8b7a-dbdb2ea15f80"
+diamondUuid: "8ecf23e2-fb62-8036-b0b2-16748cce199d"
+uuid: "b42ef380-2580-8967-a643-61d21d22d4c8"
+horo: 2
 bonds:
   in:
     - boundary
@@ -39,10 +39,10 @@ typography:
   partition: convention
   bondDegree: 40
   neighbors:
-    - tamper/import
+    - "tamper/import"
 standards:
+  - "UBL-2.1"
   - "an atom's only public face is its index.ts; what it exports through it IS its contract"
-  - "the producer dual of importPurity — index-reachable cross-atom symbols, live over src"
 bindings: []
 neighbors:
   wikilink:
@@ -82,7 +82,7 @@ neighbors:
     - shallow
     - tamper
 signatures:
-  computationUuid: "15e72ea4-0eb0-835f-913c-1b7cd11482ba"
+  computationUuid: "d1285db0-4e33-869f-b125-7942bfbeaaed"
   stages:
     - stage: path
       stageUuid: "77c95ee2-19bc-82fc-9940-94c9abac2904"
@@ -93,11 +93,11 @@ signatures:
     - stage: links
       stageUuid: "7cec3dda-27e0-8298-a864-05352078c31d"
     - stage: horo
-      stageUuid: "882bfd1b-57de-86c3-850d-9c392dd212ce"
+      stageUuid: "4d195579-059a-89db-b428-e93e8054b2a2"
     - stage: seal
-      stageUuid: "08528bc8-ad2b-8b42-949a-57ebd3f34b0b"
+      stageUuid: "be8dcfa7-1828-8a43-afbd-57bb03195779"
     - stage: uuid
-      stageUuid: "ce772d08-06af-8fd2-b660-224cd5ac508d"
+      stageUuid: "e035e83e-398d-8bb5-8f3a-bdea1f5a956b"
 version: 2
 ---
 # convention/exported — every cross-atom symbol is re-exported from the atom's index

@@ -1,12 +1,12 @@
 ---
 name: addressed
 description: "Use when an atom needs an identity — the convention is that identity is content-addressed as a v8 uuid derived from what the atom IS, never an arbitrary external name; this atom measures the corpus's live content-address coverage = addressed / total over the real tree."
-atomPath: convention/addressed
-coordinate: convention/addressed · 1/base · 297fe354
-contentUuid: "55e5fb72-a606-5130-9081-dfc111dc9547"
-diamondUuid: "0abbec90-bdaf-83b7-b747-0ae1f66af341"
-uuid: "297fe354-dfc7-8be4-9b05-3dc5dab3e4a1"
-horo: 1
+atomPath: "convention/addressed"
+coordinate: "convention/addressed · 4/weave · 61dde71e"
+contentUuid: "e0c9dfc2-8428-5d85-8765-ea3805595799"
+diamondUuid: "f4efaa41-fa4e-893e-9e22-d2f7d70afeee"
+uuid: "61dde71e-9578-8a59-a843-3b4759d954f2"
+horo: 4
 bonds:
   in:
     - aura
@@ -30,7 +30,6 @@ typography:
     - aura
 standards:
   - "RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content"
-  - "RFC-9562"
 bindings: []
 neighbors:
   wikilink:
@@ -55,7 +54,7 @@ neighbors:
     - matrix
     - uuid
 signatures:
-  computationUuid: "622ac559-5b0b-8894-ae2d-0288f9f1bd5e"
+  computationUuid: "7baa0526-8d25-8ac5-9e17-35e5fb5e79f9"
   stages:
     - stage: path
       stageUuid: "2c2e94b8-4910-8b63-ac31-bf17ec470b74"
@@ -66,11 +65,11 @@ signatures:
     - stage: links
       stageUuid: "e3fd5d2f-5918-80e5-9146-00a8de0e9f99"
     - stage: horo
-      stageUuid: "0eb6b5fa-ab5a-80db-a66d-63dd855aa663"
+      stageUuid: "f84f2207-45f3-838d-bd36-b896811af08f"
     - stage: seal
-      stageUuid: "0ddeaa88-c3c4-83e1-a5f3-b8d898e6bec0"
+      stageUuid: "affb6269-4041-83b2-9353-70fccb86d0af"
     - stage: uuid
-      stageUuid: "e3cca1dd-a740-836d-8e2f-6e487a25a744"
+      stageUuid: "a4df3a5c-4a78-8372-9c90-9393c276101b"
 version: 2
 ---
 # convention/addressed — identity is content-addressed (a uuid)

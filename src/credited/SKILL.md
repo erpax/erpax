@@ -1,12 +1,12 @@
 ---
 name: credited
-description: "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\"Stefani Germanotta Band\\\", but by Lady Gaga."
+description: "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\\\\\"Stefani Germanotta Band\\\\\\\", but by Lady Gaga."
 atomPath: credited
-coordinate: credited · 1/base · 971c5ceb
-contentUuid: "3c89465e-3ddd-5629-bfa3-04dfe3d8adfc"
-diamondUuid: "331771f8-8528-850f-91e0-14b25d8c738b"
-uuid: "971c5ceb-9155-8554-8bba-1d5894b4efba"
-horo: 1
+coordinate: "credited · 7/descent · e337fa15"
+contentUuid: "695ed80c-1459-5cb7-8ea9-67095ef03ec9"
+diamondUuid: "31c6f9b8-bb01-8118-b1b6-80af8adc0929"
+uuid: "e337fa15-b01a-8bc1-90ce-65f034894b68"
+horo: 7
 bonds:
   in:
     - law
@@ -32,22 +32,22 @@ neighbors:
     - law
     - music
 signatures:
-  computationUuid: "5a0b1491-4f96-8d82-a4a7-1ef762528e97"
+  computationUuid: "9184b9ac-1ed3-811c-983e-8ca5c98357ca"
   stages:
     - stage: path
       stageUuid: "b4a7e4e8-b2cf-8f3f-8eb2-8260b0d8efbd"
     - stage: trinity
-      stageUuid: "462bfaed-89ce-8504-b29a-08f3e343289f"
+      stageUuid: "01f91431-6af0-84c4-9443-90ad6d598fec"
     - stage: boundary
-      stageUuid: "5cb77341-79d8-864d-98e2-17e39a4595fc"
+      stageUuid: "a819bc1e-26ac-8470-93a1-32516270ef60"
     - stage: links
       stageUuid: "69c6052c-b407-8f70-bc05-4f34e3f9c1ca"
     - stage: horo
-      stageUuid: "3b4d263b-3fa5-80f9-9e86-d9b99e2b1f55"
+      stageUuid: "0a485897-637f-8ab6-9820-7b81a40f6ce5"
     - stage: seal
-      stageUuid: "2a576f9b-bda2-8f8a-a058-747bbf624417"
+      stageUuid: "7155bd29-1cea-8b40-8bfd-21a0013099fa"
     - stage: uuid
-      stageUuid: "14380f48-056c-85f6-8329-2c661284b525"
+      stageUuid: "8afa707d-37c8-8042-a556-457ed4b5f3c2"
 version: 2
 ---
 # credited

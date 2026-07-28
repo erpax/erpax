@@ -155,3 +155,41 @@ describe('leftoverSites + waves — the surgical coordinate and the moving graph
     rmSync(cwd, { recursive: true, force: true })
   })
 })
+
+describe('chatHealLeftoverWave — settle a field without hand-written tests', () => {
+  it('deriveLeftoverProof writes a refutable sibling credit for a pure GET route', async () => {
+    const { deriveLeftoverProof, chatHealLeftoverWave } = await import('./index')
+    const { readFileSync: read, existsSync: exists } = await import('node:fs')
+    const cwd = corpus({
+      'src/app/health/route.ts':
+        '/**\n * @standard draft-health\n */\nexport async function GET() { return Response.json({ ok: true }) }\n',
+    })
+    const op = deriveLeftoverProof('src/app/health/route.ts', cwd)
+    expect(op?.file).toBe('src/app/health/test.ts')
+    expect(op?.contents).toMatch(/GET returns a Response|leftover wave proof/)
+    const heal = chatHealLeftoverWave({ group: 'app', cwd, apply: true })
+    expect(heal.tokens).toBe(0)
+    expect(heal.applied).toBe(1)
+    expect(exists(join(cwd, 'src/app/health/test.ts'))).toBe(true)
+    expect(read(join(cwd, 'src/app/health/test.ts'), 'utf8')).toMatch(/leftover wave proof/)
+    expect(attraction(cwd).some((a) => a.group === 'app')).toBe(false)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+
+  it('deriveLeftoverProof credits claim-bearing define* side-effect modules (no export)', async () => {
+    const { deriveLeftoverProof, chatHealLeftoverWave } = await import('./index')
+    const { existsSync: exists, readFileSync: read } = await import('node:fs')
+    const cwd = corpus({
+      'src/tenant/roles/profile/bank.profile.ts':
+        '/**\n * @standard Basel III\n */\nimport { defineTenantRole } from "@/tenant/role"\ndefineTenantRole({ id: "bank" })\n',
+    })
+    const op = deriveLeftoverProof('src/tenant/roles/profile/bank.profile.ts', cwd)
+    expect(op?.file).toBe('src/tenant/roles/profile/test.ts')
+    expect(op?.contents).toMatch(/define\[A-Z\]/)
+    const heal = chatHealLeftoverWave({ group: 'tenant', cwd, apply: true })
+    expect(heal.applied).toBe(1)
+    expect(exists(join(cwd, 'src/tenant/roles/profile/test.ts'))).toBe(true)
+    expect(read(join(cwd, 'src/tenant/roles/profile/test.ts'), 'utf8')).toMatch(/leftover wave proof/)
+    rmSync(cwd, { recursive: true, force: true })
+  })
+})

@@ -1,12 +1,12 @@
 ---
 name: contracts
 description: "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection."
-atomPath: customers/contracts
-coordinate: customers/contracts · 7/descent · 466abf44
-contentUuid: "73c76bc3-a858-5096-9676-8284ffede492"
-diamondUuid: "038ec629-2d43-879b-a036-7ed688c79530"
-uuid: "466abf44-407e-8a6b-baa6-a9be8d04b628"
-horo: 7
+atomPath: "customers/contracts"
+coordinate: "customers/contracts · 8/crest · 573c7328"
+contentUuid: "a5bf735a-07d3-51ca-b37a-79000d929ced"
+diamondUuid: "673f16f8-d081-82c3-aedf-89cfa563a9cf"
+uuid: "573c7328-58ac-8c03-ac66-1db3c415b049"
+horo: 8
 bonds:
   in:
     - amendment
@@ -78,16 +78,24 @@ standards:
   - "IAS-1"
   - "IAS-8"
   - "IFRS IAS-1 presentation-of-financial-statements"
+  - "IFRS IAS-1 presentation-of-financial-statements`"
   - "IFRS IFRS-15 §10 contract-with-customer"
+  - "IFRS IFRS-15 §10 contract-with-customer`"
   - "IFRS IFRS-15 §17 contract-combination"
+  - "IFRS IFRS-15 §17 contract-combination`"
   - "IFRS IFRS-15 §22 performance-obligations"
+  - "IFRS IFRS-15 §22 performance-obligations`"
   - "IFRS IFRS-15 §47 transaction-price decomposition"
+  - "IFRS IFRS-15 §47 transaction-price decomposition`"
   - "IFRS IFRS-15 §50-59 variable-consideration"
+  - "IFRS IFRS-15 §50-59 variable-consideration`"
   - "IFRS IFRS-15 §60-65 financing-component"
+  - "IFRS IFRS-15 §60-65 financing-component`"
   - "IFRS-15"
-  - "ISO-19011:2018 audit-trail contract-lifecycle"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time effective-from effective-to"
+  - "ISO-8601-1:2019 date-time effective-from effective-to`"
   - SOX
   - "SOX §404 internal-controls contract-approval"
   - "US-GAAP"
@@ -95,6 +103,7 @@ standards:
   - "US-GAAP ASC-606-10-25-13 contract-modifications"
   - "US-GAAP ASC-606-10-25-9 contract-combination"
   - eIDAS
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -160,7 +169,7 @@ neighbors:
     - termination
     - warranty
 signatures:
-  computationUuid: "bf2590ff-af45-8990-8433-f0d53dfe68b9"
+  computationUuid: "72933b1b-ead4-8c5f-aff3-4e6b1c8891ba"
   stages:
     - stage: path
       stageUuid: "18721974-e2b6-8318-9112-35ae1d2a4a37"
@@ -171,11 +180,11 @@ signatures:
     - stage: links
       stageUuid: "632e0ccd-8050-8be6-b8dd-5f0e7f19abeb"
     - stage: horo
-      stageUuid: "48f065cc-c38f-813e-9a35-fc58996d41c2"
+      stageUuid: "1fbf8600-7b88-816e-a44b-58594f1865bb"
     - stage: seal
       stageUuid: "69f1a37a-6261-8ed9-9de0-183821889f48"
     - stage: uuid
-      stageUuid: "ad401e74-d288-8dc1-ae43-6f11894ee70b"
+      stageUuid: "81427eb1-d1f6-8b55-b6b1-a7c44f231226"
 version: 2
 ---
 # contracts

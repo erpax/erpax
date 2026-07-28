@@ -1,26 +1,25 @@
 ---
 name: head
 description: "Use when reasoning about head as an anatomical part of [[body]] — vocabulary pivot to @/head; nested not duplicated."
-atomPath: body/head
-coordinate: body/head · 5/round · b5053389
-contentUuid: "23a76994-eacd-5a1d-9f4e-da6dcb179af2"
-diamondUuid: "581924a9-35bf-8398-b31e-94b637149bfe"
-uuid: "b5053389-3c52-813a-aab4-8d5b25143619"
-horo: 5
+atomPath: "body/head"
+coordinate: "body/head · 4/weave · 17ddb8b9"
+contentUuid: "2ca7339b-f42f-5c76-8eda-5d929f453a7c"
+diamondUuid: "ea795203-9b7c-8be9-afe6-465458cb2cb0"
+uuid: "17ddb8b9-8785-8173-9153-7d6d56027aa7"
+horo: 4
 bonds:
   in:
+    - anatomy
     - body
-    - collapse
     - head
     - law
     - merge
-    - sti
   out:
-    - collapse
+    - anatomy
+    - body
     - head
     - law
     - merge
-    - sti
 typography:
   partition: body
   bondDegree: 21
@@ -36,19 +35,19 @@ neighbors:
     - law
     - merge
   matrix:
-    - collapse
+    - anatomy
+    - body
     - head
     - law
     - merge
-    - sti
   backlinks:
-    - collapse
+    - anatomy
+    - body
     - head
     - law
     - merge
-    - sti
 signatures:
-  computationUuid: "d0430a34-9385-89b7-a8ed-5495a50bddca"
+  computationUuid: "9f0ac915-6870-8232-b126-2fb5789ba181"
   stages:
     - stage: path
       stageUuid: "c1455f50-708d-8c58-b07b-d3b3265e32f8"
@@ -59,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "888b1aed-487e-8b64-8588-508fe85ef198"
     - stage: horo
-      stageUuid: "6d4ae86c-4403-89fb-9c8f-af41c82f3735"
+      stageUuid: "a1ae4c93-4061-86d6-8f53-ae35cb6eb887"
     - stage: seal
-      stageUuid: "0885feef-c05f-82d3-8428-17c7999d9443"
+      stageUuid: "41b9085c-cf58-887e-8e7d-25076c15af01"
     - stage: uuid
-      stageUuid: "405738aa-4ffa-8955-b661-f293432e2bb1"
+      stageUuid: "c04f9872-cd1c-8af3-a2cb-a335ad71a4b6"
 version: 2
 ---
 # body/head — anatomical part

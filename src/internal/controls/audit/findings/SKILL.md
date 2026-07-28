@@ -1,11 +1,11 @@
 ---
 name: findings
 description: "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection."
-atomPath: internal/controls/audit/findings
-coordinate: internal/controls/audit/findings · 8/crest · f136fef9
-contentUuid: "e7e768e5-f19b-5dd8-94e5-a282c737fc97"
-diamondUuid: "c5c2fc74-032f-8636-b97a-bdeed4f8342e"
-uuid: "f136fef9-7ef3-88b3-b4e9-1e6d1bd2cb67"
+atomPath: "internal/controls/audit/findings"
+coordinate: "internal/controls/audit/findings · 8/crest · c6127697"
+contentUuid: "17a3e96f-511c-51ea-b626-67e06dcd0cfb"
+diamondUuid: "547d6c2b-2895-87ce-97ed-f62f5bf3be3d"
+uuid: "c6127697-9a5e-8b5a-aab7-f9e074d6f00f"
 horo: 8
 bonds:
   in:
@@ -37,28 +37,12 @@ typography:
   neighbors: []
 standards:
   - "COSO-2013"
-  - "COSO-ERM-2017"
-  - "EN-16931"
-  - "EU-2017/1132"
-  - "EU-2017/828"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "IAS-1"
-  - "IFRS-9"
-  - "ILO-C105"
-  - "ISO-19011"
   - "ISO-19011:2018 audit-finding"
-  - "ISO-19011:2018 audit-trail"
+  - "ISO-19011:2018 audit-finding`"
   - "ISO/IEC-27007:2020 ISMS-auditing"
-  - "ISO/IEC-29119"
-  - SOX
+  - "ISO/IEC-27007:2020 ISMS-auditing`"
   - "SOX §404 internal-controls deficiency-tracking"
-  - "US-GAAP"
-  - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -91,7 +75,7 @@ neighbors:
     - proof
     - provisions
 signatures:
-  computationUuid: "26fdcee2-bbab-86b8-b04d-a28d321a76d7"
+  computationUuid: "fe262fde-691a-8916-bb9e-a2a49141e0b5"
   stages:
     - stage: path
       stageUuid: "793ca585-325a-8e30-96f9-74a39aff22b7"
@@ -102,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "6ed701a1-e071-890a-bc8e-ea3d8b841f5e"
     - stage: horo
-      stageUuid: "1ed49580-b280-8f40-9b4d-e6792114d919"
+      stageUuid: "95e95277-bf55-8a9f-b9ae-6d79c6e4b110"
     - stage: seal
       stageUuid: "95e175e4-276a-82e7-a54c-a0a432dfff48"
     - stage: uuid
-      stageUuid: "d363eab9-d3ea-8982-b49e-d9586df9abf2"
+      stageUuid: "9a14bcd4-4080-803b-b0d0-7bef3d21938c"
 version: 2
 ---
 # audit-findings

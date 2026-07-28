@@ -1,72 +1,48 @@
 ---
 name: network
 description: "Use when reasoning about network as a part of [[computer]] — vocabulary pivot to @/network; nested not duplicated."
-atomPath: computer/network
-coordinate: computer/network · 5/round · cb0c0385
-contentUuid: "05fecfa6-1621-563c-bbb9-1f9e3417c589"
-diamondUuid: "fd2b5a91-2bd8-86a0-84e0-b9b245bbdcb7"
-uuid: "cb0c0385-8361-84da-8726-021c701c6fc2"
-horo: 5
+atomPath: "computer/network"
+coordinate: "computer/network · 4/weave · 7ced6630"
+contentUuid: "4b43e23c-c7bd-51a4-bd01-66a4756b4fe1"
+diamondUuid: "7668236a-1a1d-8b63-b148-2194d61908aa"
+uuid: "7ced6630-2661-890e-9159-39e9ab37ff30"
+horo: 4
 bonds:
   in:
-    - bottleneck
     - brain
-    - breath
-    - cohort
     - collapse
-    - competition
     - computer
     - connection
-    - connections
     - decentralization
-    - desire
     - diffusion
     - ecosystem
-    - engagement
-    - habit
     - includes
     - law
-    - links
     - market
-    - mass
-    - merge
     - mycelium
     - network
     - plan
-    - power
     - science
     - tier
   out:
-    - bottleneck
     - brain
-    - breath
-    - cohort
     - collapse
-    - competition
     - computer
     - connection
-    - connections
     - decentralization
-    - desire
     - diffusion
     - ecosystem
-    - engagement
-    - habit
     - includes
     - law
-    - links
     - market
-    - mass
-    - merge
     - mycelium
     - network
     - plan
-    - power
     - science
     - tier
 typography:
   partition: computer
-  bondDegree: 92
+  bondDegree: 69
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -77,63 +53,39 @@ neighbors:
     - law
     - network
   matrix:
-    - bottleneck
     - brain
-    - breath
-    - cohort
     - collapse
-    - competition
     - computer
     - connection
-    - connections
     - decentralization
-    - desire
     - diffusion
     - ecosystem
-    - engagement
-    - habit
     - includes
     - law
-    - links
     - market
-    - mass
-    - merge
     - mycelium
     - network
     - plan
-    - power
     - science
     - tier
   backlinks:
-    - bottleneck
     - brain
-    - breath
-    - cohort
     - collapse
-    - competition
     - computer
     - connection
-    - connections
     - decentralization
-    - desire
     - diffusion
     - ecosystem
-    - engagement
-    - habit
     - includes
     - law
-    - links
     - market
-    - mass
-    - merge
     - mycelium
     - network
     - plan
-    - power
     - science
     - tier
 signatures:
-  computationUuid: "8a189b6b-2fcd-8049-b475-3383b1900311"
+  computationUuid: "1599b03e-1332-8e50-8980-45b50f17089f"
   stages:
     - stage: path
       stageUuid: "fcdf2894-16ae-81e6-a88a-a81e434e5745"
@@ -144,11 +96,11 @@ signatures:
     - stage: links
       stageUuid: "23255e00-f85b-8670-a1b2-e3974f8b46bd"
     - stage: horo
-      stageUuid: "5073b218-9036-8bb1-9b31-3f72f55613ae"
+      stageUuid: "4a476aad-c0aa-82b4-9cde-1a098825cd3a"
     - stage: seal
-      stageUuid: "7c480858-f31e-81d4-899d-8f4b2555472b"
+      stageUuid: "fcb962e8-cbae-87c3-86f4-f064ac194101"
     - stage: uuid
-      stageUuid: "d6e0fe81-802a-8a9d-a093-c8669138bcb9"
+      stageUuid: "44a1937c-7eb4-8573-bfb6-bb49a4d3a2db"
 version: 2
 ---
 # computer/network — connects externally

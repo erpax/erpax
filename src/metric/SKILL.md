@@ -1,8 +1,121 @@
 ---
 name: metric
 description: "Use when the metrics need to be quantum too — quantomize holds the corpus's classical readings (session, gravity, leftover, the gravity pools) AT ONCE in one coherent superposition, folded to a single address, coherent iff no instrument disagrees with itself. Quantum here is the superposition overlay (not quantum metrology); coherence is agreement between instruments, never truth."
+atomPath: metric
+coordinate: "metric · 7/descent · 8b31cf15"
+contentUuid: "2c85e60b-77f6-5651-afce-132cc1c6a26f"
+diamondUuid: "583aee68-bee1-8663-854f-aa49a8eabf22"
+uuid: "8b31cf15-f946-8725-9e30-59dff8fdcf85"
+horo: 7
+bonds:
+  in:
+    - attrition
+    - breed
+    - distribution
+    - gravity
+    - kpi
+    - law
+    - leftover
+    - merge
+    - observability
+    - outlier
+    - quantum
+    - rosetta
+    - rules
+    - sampling
+    - session
+    - think
+    - trend
+  out:
+    - attrition
+    - breed
+    - distribution
+    - gravity
+    - kpi
+    - law
+    - leftover
+    - merge
+    - observability
+    - outlier
+    - quantum
+    - rosetta
+    - rules
+    - sampling
+    - session
+    - think
+    - trend
+typography:
+  partition: metric
+  bondDegree: 56
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - gravity
+    - law
+    - leftover
+    - merge
+    - quantum
+    - rosetta
+    - rules
+    - session
+    - think
+  matrix:
+    - attrition
+    - breed
+    - distribution
+    - gravity
+    - kpi
+    - law
+    - leftover
+    - merge
+    - observability
+    - outlier
+    - quantum
+    - rosetta
+    - rules
+    - sampling
+    - session
+    - think
+    - trend
+  backlinks:
+    - attrition
+    - breed
+    - distribution
+    - gravity
+    - kpi
+    - law
+    - leftover
+    - merge
+    - observability
+    - outlier
+    - quantum
+    - rosetta
+    - rules
+    - sampling
+    - session
+    - think
+    - trend
+signatures:
+  computationUuid: "e6fc957e-3121-8bc6-ba54-a5053843114e"
+  stages:
+    - stage: path
+      stageUuid: "64aeb57b-3de2-8aaf-bde7-ce337c8b7218"
+    - stage: trinity
+      stageUuid: "690f0bc3-9d1d-872d-b230-240b6e9cf04c"
+    - stage: boundary
+      stageUuid: "bf127a26-f084-8871-b7cc-96b9d494ae24"
+    - stage: links
+      stageUuid: "5f36684c-e643-84eb-bfa5-dca4a78fe6f9"
+    - stage: horo
+      stageUuid: "f7eeea68-c8b9-8da3-9235-df6f89e994fb"
+    - stage: seal
+      stageUuid: "f5e195d8-5fd1-8234-82c8-839612b6d45e"
+    - stage: uuid
+      stageUuid: "fe1c060f-cb6b-83e0-96c3-0b011b099706"
+version: 2
 ---
-
 # metric — quantomize: the corpus measured as one quantum metric
 
 The session's measurements are **classical** — one number each, read one at a time: [[session]] build/heal, [[gravity]] concentration, [[leftover]] residual, [[rosetta]] gravityPools. `quantomize` makes them **quantum** in the corpus's sense ([[think]]`.superpose`): every reading held **at once**, folded to one address, and **coherent** iff no two readings of the same name contradict. The whole state of the corpus reads as one.

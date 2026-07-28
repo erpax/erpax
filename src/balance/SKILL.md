@@ -2,10 +2,10 @@
 name: balance
 description: "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium."
 atomPath: balance
-coordinate: balance · 4/weave · 300e9664
-contentUuid: "a762c7e5-29ac-5ff2-9248-e3ed8382aa40"
-diamondUuid: "df199a59-2005-8f60-999a-88ab71bdadb6"
-uuid: "300e9664-f5db-845f-ad87-f0fba1d2a3d8"
+coordinate: "balance · 4/weave · 23e2effd"
+contentUuid: "89fa12e7-e4aa-5ee0-8901-feb2eea01657"
+diamondUuid: "abfd4991-d625-8835-92db-0b8e871f9ed7"
+uuid: "23e2effd-849e-8073-b491-07294dbe07b5"
 horo: 4
 bonds:
   in:
@@ -17,6 +17,7 @@ bonds:
     - agent
     - agriculture
     - allocation
+    - analysis
     - analytics
     - angel
     - animism
@@ -42,6 +43,7 @@ bonds:
     - classification
     - classifications
     - cmyk
+    - coa
     - coherence
     - coil
     - collection
@@ -60,6 +62,7 @@ bonds:
     - contract
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - covenant
@@ -68,6 +71,7 @@ bonds:
     - crisis
     - crop
     - cycle
+    - debit
     - declaration
     - decompression
     - definition
@@ -118,6 +122,7 @@ bonds:
     - keyword
     - landmark
     - law
+    - ledger
     - limit
     - link
     - lock
@@ -127,6 +132,7 @@ bonds:
     - manufacturing
     - manure
     - mapping
+    - margin
     - marine
     - matter
     - memo
@@ -135,6 +141,7 @@ bonds:
     - milestone
     - model
     - moisture
+    - money
     - movement
     - movements
     - notes
@@ -167,6 +174,7 @@ bonds:
     - redirect
     - relocate
     - repetition
+    - reports
     - request
     - requisition
     - research
@@ -235,6 +243,7 @@ bonds:
     - agent
     - agriculture
     - allocation
+    - analysis
     - analytics
     - angel
     - animism
@@ -260,6 +269,7 @@ bonds:
     - classification
     - classifications
     - cmyk
+    - coa
     - coherence
     - coil
     - collection
@@ -278,6 +288,7 @@ bonds:
     - contract
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - covenant
@@ -286,6 +297,7 @@ bonds:
     - crisis
     - crop
     - cycle
+    - debit
     - declaration
     - decompression
     - definition
@@ -336,6 +348,7 @@ bonds:
     - keyword
     - landmark
     - law
+    - ledger
     - limit
     - link
     - lock
@@ -345,6 +358,7 @@ bonds:
     - manufacturing
     - manure
     - mapping
+    - margin
     - marine
     - matter
     - memo
@@ -353,6 +367,7 @@ bonds:
     - milestone
     - model
     - moisture
+    - money
     - movement
     - movements
     - notes
@@ -385,6 +400,7 @@ bonds:
     - redirect
     - relocate
     - repetition
+    - reports
     - request
     - requisition
     - research
@@ -446,12 +462,11 @@ bonds:
     - zoroastrianism
 typography:
   partition: balance
-  bondDegree: 671
+  bondDegree: 696
   neighbors:
     - aura
 standards:
   - "UBL-2.1"
-  - "computed on the live uuid-matrix atom names, never hand-asserted"
   - "double-entry bookkeeping (Pacioli, 1494) — every credit a debit; imbalance is the bug"
 bindings: []
 neighbors:
@@ -479,6 +494,7 @@ neighbors:
     - agent
     - agriculture
     - allocation
+    - analysis
     - analytics
     - angel
     - animism
@@ -504,6 +520,7 @@ neighbors:
     - classification
     - classifications
     - cmyk
+    - coa
     - coherence
     - coil
     - collection
@@ -522,6 +539,7 @@ neighbors:
     - contract
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - covenant
@@ -530,6 +548,7 @@ neighbors:
     - crisis
     - crop
     - cycle
+    - debit
     - declaration
     - decompression
     - definition
@@ -580,6 +599,7 @@ neighbors:
     - keyword
     - landmark
     - law
+    - ledger
     - limit
     - link
     - lock
@@ -589,6 +609,7 @@ neighbors:
     - manufacturing
     - manure
     - mapping
+    - margin
     - marine
     - matter
     - memo
@@ -597,6 +618,7 @@ neighbors:
     - milestone
     - model
     - moisture
+    - money
     - movement
     - movements
     - notes
@@ -629,6 +651,7 @@ neighbors:
     - redirect
     - relocate
     - repetition
+    - reports
     - request
     - requisition
     - research
@@ -697,6 +720,7 @@ neighbors:
     - agent
     - agriculture
     - allocation
+    - analysis
     - analytics
     - angel
     - animism
@@ -722,6 +746,7 @@ neighbors:
     - classification
     - classifications
     - cmyk
+    - coa
     - coherence
     - coil
     - collection
@@ -740,6 +765,7 @@ neighbors:
     - contract
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - covenant
@@ -748,6 +774,7 @@ neighbors:
     - crisis
     - crop
     - cycle
+    - debit
     - declaration
     - decompression
     - definition
@@ -798,6 +825,7 @@ neighbors:
     - keyword
     - landmark
     - law
+    - ledger
     - limit
     - link
     - lock
@@ -807,6 +835,7 @@ neighbors:
     - manufacturing
     - manure
     - mapping
+    - margin
     - marine
     - matter
     - memo
@@ -815,6 +844,7 @@ neighbors:
     - milestone
     - model
     - moisture
+    - money
     - movement
     - movements
     - notes
@@ -847,6 +877,7 @@ neighbors:
     - redirect
     - relocate
     - repetition
+    - reports
     - request
     - requisition
     - research
@@ -907,7 +938,7 @@ neighbors:
     - writing
     - zoroastrianism
 signatures:
-  computationUuid: "5b7d878c-b801-81db-9bfa-f33199557f22"
+  computationUuid: "df74eeb4-405a-8a87-be03-2f72424c3d34"
   stages:
     - stage: path
       stageUuid: "87f9fcfc-48e8-8e07-90df-18e3ac4b227c"
@@ -918,11 +949,11 @@ signatures:
     - stage: links
       stageUuid: "40bdd9d5-ba31-8a90-bd84-c758c71ebc57"
     - stage: horo
-      stageUuid: "cc7d8478-a848-861c-86f8-ce0646a48f25"
+      stageUuid: "3452a9e7-7773-82db-8433-7a54b404feac"
     - stage: seal
-      stageUuid: "9e10d43d-b9ff-8f39-a450-7c11aff7e03f"
+      stageUuid: "269de699-9292-8123-b199-ce7ec3f88192"
     - stage: uuid
-      stageUuid: "ca1ebcf8-6237-8c24-af6b-4dc5e1b4569b"
+      stageUuid: "af60fd6f-2619-8f21-9bc1-96c406ea78d5"
 version: 2
 ---
 # balance

@@ -1,12 +1,12 @@
 ---
 name: phases
 description: "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state."
-atomPath: lot/work/phases
-coordinate: lot/work/phases · 4/weave · 3b89cf16
-contentUuid: "4a074620-fed6-5381-8db2-dafe85ab2c63"
-diamondUuid: "fbfa8cfa-6af1-8894-9a86-afd2701ca071"
-uuid: "3b89cf16-da9c-86b6-912b-fc2543d4decf"
-horo: 4
+atomPath: "lot/work/phases"
+coordinate: "lot/work/phases · 5/round · d30bea4e"
+contentUuid: "e8e90d3b-b61e-5934-8c6f-1b8ec2160e8b"
+diamondUuid: "19b31fcf-b2d9-8897-ad6b-afe200249ddc"
+uuid: "d30bea4e-c1c8-8eb8-b84b-8da0b2459801"
+horo: 5
 bonds:
   in:
     - accounting
@@ -32,15 +32,13 @@ typography:
   bondDegree: 36
   neighbors: []
 standards:
-  - "EU-2014/55"
-  - "EU-537/2014"
-  - "EU-910/2014"
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing-step"
-  - "ISO-19011:2018 audit-trail routing-step-changes"
   - "ISO-22400-2"
   - "ISO-22400-2:2014 manufacturing-operations efficiency throughput"
+  - "ISO-22400-2:2014 manufacturing-operations efficiency throughput`"
   - "SOX §404 internal-controls production-control"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -71,7 +69,7 @@ neighbors:
     - operations
     - phases
 signatures:
-  computationUuid: "e5b2b227-a53f-8483-b158-bb2f593b5be4"
+  computationUuid: "45d4f0e3-1711-8e6f-97b9-325bcf78b02d"
   stages:
     - stage: path
       stageUuid: "f0779abd-e603-888b-a27c-9443eb0e36cf"
@@ -82,11 +80,11 @@ signatures:
     - stage: links
       stageUuid: "c65f1ddb-f47e-85d4-b387-294137df57b2"
     - stage: horo
-      stageUuid: "ceabb485-ab0e-876c-876c-823e1cc7bc9c"
+      stageUuid: "4da8db19-80f6-8063-bc95-5d2f765e6aee"
     - stage: seal
       stageUuid: "7664e4d8-0478-8685-b4d9-a5e2e1471643"
     - stage: uuid
-      stageUuid: "c3065548-256c-80a0-8102-d73dafb6403d"
+      stageUuid: "d483dc4f-0c97-8ec7-aeb2-4babb6169af9"
 version: 2
 ---
 # lot/work/phases — the routing step (the sort-ordered cross to the catalog)

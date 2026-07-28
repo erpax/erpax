@@ -2,16 +2,17 @@
 name: business
 description: "Use when reasoning about business as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: business
-coordinate: business · 5/round · 50fe359c
-contentUuid: "9d8adfe1-75b9-598a-8032-af67c4965a38"
-diamondUuid: "50fd9ac2-4d7d-8ae1-a6e5-4ef67dd0fd88"
-uuid: "50fe359c-0894-8f5d-a1cf-8ae6845b62cb"
-horo: 5
+coordinate: "business · 2/share · 0cc122e0"
+contentUuid: "4e844002-8841-5f3b-be11-3aae0fc70aef"
+diamondUuid: "21ca40fb-7a39-8b24-9875-6f719ad4e5ff"
+uuid: "0cc122e0-d4f5-8e79-9e48-79b7a29f3633"
+horo: 2
 bonds:
   in:
     - audience
     - automotive
     - beauty
+    - business
     - chain
     - collapse
     - construction
@@ -35,6 +36,7 @@ bonds:
     - audience
     - automotive
     - beauty
+    - business
     - chain
     - collapse
     - construction
@@ -56,7 +58,7 @@ bonds:
     - type
 typography:
   partition: business
-  bondDegree: 80
+  bondDegree: 91
   neighbors: []
 standards:
   - "EU-Taxonomy-2020/852"
@@ -90,6 +92,7 @@ neighbors:
     - audience
     - automotive
     - beauty
+    - business
     - chain
     - collapse
     - construction
@@ -113,6 +116,7 @@ neighbors:
     - audience
     - automotive
     - beauty
+    - business
     - chain
     - collapse
     - construction
@@ -133,7 +137,7 @@ neighbors:
     - sti
     - type
 signatures:
-  computationUuid: "a66be523-7399-8ff9-b1c8-f9598b617645"
+  computationUuid: "22f365d8-d1ea-8ada-9ef9-c42d851ce177"
   stages:
     - stage: path
       stageUuid: "e068e9e6-5ad2-8891-bc0e-117d3a7eabd3"
@@ -144,11 +148,11 @@ signatures:
     - stage: links
       stageUuid: "266b391e-0116-890b-8513-4faf7a575a75"
     - stage: horo
-      stageUuid: "f7a0eec1-4bd9-8379-affe-46646976d5a8"
+      stageUuid: "f3a961ea-6f18-8ec8-aba5-80baa932626e"
     - stage: seal
-      stageUuid: "1a79542e-05ae-8bb4-81e7-342d0347bc49"
+      stageUuid: "787ad0b4-e7ba-801e-ac6e-ae252e242b05"
     - stage: uuid
-      stageUuid: "cd9988e9-01f4-8455-87c5-fa5b9f884457"
+      stageUuid: "b51c7833-114d-839e-b424-6d7e5a488699"
 version: 2
 ---
 # business

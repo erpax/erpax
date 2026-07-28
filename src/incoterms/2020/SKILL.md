@@ -1,12 +1,12 @@
 ---
 name: "2020"
 description: Use when implementing or referencing INCOTERMS 2020.
-atomPath: incoterms/2020
-coordinate: incoterms/2020 · 4/weave · 187a3260
-contentUuid: "fcb95def-06af-50e9-9172-719da813fc5a"
-diamondUuid: "1eec18be-2de6-8d6a-bda3-bab00d52e87e"
-uuid: "187a3260-d56e-8600-8b37-0e36b5826e76"
-horo: 4
+atomPath: "incoterms/2020"
+coordinate: "incoterms/2020 · 1/base · 6d549bc4"
+contentUuid: "f574d780-5c25-5056-a319-4c4ddaadeca0"
+diamondUuid: "716fec05-011b-8433-b455-9bf3e755dfa9"
+uuid: "6d549bc4-cb52-81b1-9eb7-451f9e2c20da"
+horo: 1
 bonds:
   in:
     - readme
@@ -19,14 +19,16 @@ standards:
   - "ICC INCOTERMS 2020 publication-no-723E"
   - "INCOTERMS-2020"
   - "ISO 6346 freight-container-code (related)"
+  - "ISO 6346 freight-container-code (related)`"
   - "UBL-2.1"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
   matrix: []
   backlinks: []
 signatures:
-  computationUuid: "56bb09ac-1685-8f7d-afcd-b725445b11b3"
+  computationUuid: "5f2ee053-8d25-82e1-8255-c4651d53d1b9"
   stages:
     - stage: path
       stageUuid: "df4f13a5-87ea-850c-b3f9-b4a9aeaa2eaa"
@@ -37,11 +39,11 @@ signatures:
     - stage: links
       stageUuid: "cdd4c7e4-a4a4-8c77-84b2-1021963d0419"
     - stage: horo
-      stageUuid: "22e9111a-7457-8ed8-a02f-4b1d3fee994b"
+      stageUuid: "93d85885-672b-8bc5-93aa-afb8f6449e63"
     - stage: seal
       stageUuid: "bc5c7bce-a07b-891e-96de-7b7acde63fc6"
     - stage: uuid
-      stageUuid: "925fc7c1-3aee-8658-84f8-dc01e2c051f2"
+      stageUuid: "4aef4489-7682-8d1b-a826-5401c29f6965"
 version: 2
 ---
 # INCOTERMS 2020

@@ -2,10 +2,10 @@
 name: currency
 description: "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name."
 atomPath: currency
-coordinate: currency · 2/share · ce402df1
-contentUuid: "c3930399-7360-5ba0-8956-a689e2dbe2f4"
-diamondUuid: "344b4e0e-b3f4-8ad8-85e6-42fb95d30f3c"
-uuid: "ce402df1-cf04-8421-8ec1-e328d6a0dd50"
+coordinate: "currency · 2/share · f15e0b64"
+contentUuid: "0722723c-7066-567c-897d-3b8cb36f6950"
+diamondUuid: "2bc3ce10-059d-892c-bbd6-f3b8c04b12d3"
+uuid: "f15e0b64-f539-8e50-920c-41cff1ab7a1d"
 horo: 2
 bonds:
   in:
@@ -102,9 +102,15 @@ typography:
   neighbors: []
 standards:
   - "EN-16931"
-  - "EU-2002/58"
   - "IFRS-9"
-  - "ISO-20022"
+  - "ISO-13616-1"
+  - "ISO-13616-1`"
+  - "ISO-3166-1`"
+  - "ISO-4217`"
+  - "ISO-7064"
+  - "ISO-7064`"
+  - "ISO-9362"
+  - "ISO-9362`"
   - "RFC-8785"
   - "SAF-T"
 bindings: []
@@ -210,22 +216,22 @@ neighbors:
     - value
     - versions
 signatures:
-  computationUuid: "ef6077a3-3de3-84e5-94ca-22f57bb6e00f"
+  computationUuid: "078e6f51-5988-8eee-a87d-853544bf3624"
   stages:
     - stage: path
       stageUuid: "88086f14-e2e7-866a-8bde-e04e3b3e732a"
     - stage: trinity
-      stageUuid: "2392e736-398a-8ac9-b0d9-7669673fdf06"
+      stageUuid: "62def698-4f7c-85a9-a029-c66373135fa8"
     - stage: boundary
-      stageUuid: "4438f7ac-302c-8321-ade3-15388c1aba5f"
+      stageUuid: "22a53d4c-2fd3-817b-954a-d1bf89445b2a"
     - stage: links
       stageUuid: "1209b5a2-8624-8f15-9ca4-feb601967f49"
     - stage: horo
-      stageUuid: "c5402808-fd77-8025-b27b-76280e36e205"
+      stageUuid: "004affa1-e80f-8e65-ac63-b4672f69fa91"
     - stage: seal
-      stageUuid: "f18417ad-573d-8090-b6e5-11c973200416"
+      stageUuid: "b3024b56-3245-8e63-8c3d-aa51dde15274"
     - stage: uuid
-      stageUuid: "eb296d6b-66a3-89f4-8b32-920d8c62e6d6"
+      stageUuid: "b9542633-0e9f-8928-adc9-a879b5c60107"
 version: 2
 ---
 # currency — money is amount + ISO-4217 code (never baked into the name)

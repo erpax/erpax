@@ -2,11 +2,11 @@
 name: coherence
 description: "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence."
 atomPath: coherence
-coordinate: coherence · 5/round · d4f5c0ff
-contentUuid: "e91230c9-d27c-5acc-bfed-afc7f44b2f75"
-diamondUuid: "c3fadb34-36bc-806e-9a7e-10a7438d850f"
-uuid: "d4f5c0ff-26bf-85b6-892b-cc726978aef6"
-horo: 5
+coordinate: "coherence · 4/weave · 885294cc"
+contentUuid: "7c71c47f-6aa7-5d03-ba08-af55ccc6b73a"
+diamondUuid: "c412fe2f-2f62-86df-a564-a44424b84bb7"
+uuid: "885294cc-abd1-813b-955d-9294389b6d60"
+horo: 4
 bonds:
   in:
     - analog
@@ -59,7 +59,6 @@ typography:
     - aura
 standards:
   - "DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band"
-  - "computed from the input trace, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -119,7 +118,7 @@ neighbors:
     - whole
     - writing
 signatures:
-  computationUuid: "6427f43d-40a0-81c3-b7ba-c764364f1361"
+  computationUuid: "81d173ff-3438-884b-ad75-6d6657b0b91e"
   stages:
     - stage: path
       stageUuid: "4731d009-169d-8f89-80e6-2503486a019e"
@@ -130,11 +129,11 @@ signatures:
     - stage: links
       stageUuid: "9c6f5216-2e31-8ec9-8aff-75d5ad7acaa7"
     - stage: horo
-      stageUuid: "9fb6a3f3-4f1b-8feb-8728-93aad2dc5af5"
+      stageUuid: "45263263-26cc-80b0-95fe-cf2fb55d27cc"
     - stage: seal
-      stageUuid: "4e8178e2-14fd-8cd2-b872-9d0ccad30716"
+      stageUuid: "dbd2006f-384b-89f2-bfa7-43993c2cb851"
     - stage: uuid
-      stageUuid: "bd687a25-b83b-86c6-a076-ab6ae264df50"
+      stageUuid: "3795c7d5-6d6e-8cd2-98f2-829200937b19"
 version: 2
 ---
 # coherence — the measurable form of wholeness (harmony, as a quantity)

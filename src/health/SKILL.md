@@ -2,11 +2,11 @@
 name: health
 description: "Use when managing healthcare operations — patient records, medical encounters, clinical protocols, health outcomes, treatment plans, medication management, or healthcare provider coordination in government/nonprofit health systems (COFOG 07)."
 atomPath: health
-coordinate: health · 7/descent · 9fbc3faa
-contentUuid: "422aa98e-5fad-54ca-8dc8-4ed29a6aa2a5"
-diamondUuid: "72375f17-13a7-8a79-bb86-9fac6af2b048"
-uuid: "9fbc3faa-8494-89e4-ae3c-02d8c8bb7c6c"
-horo: 7
+coordinate: "health · 8/crest · 9b196171"
+contentUuid: "79e14f3e-2c05-5fa3-b3a7-ff2bcf4e2a8a"
+diamondUuid: "4b8de69f-bf33-85e1-b649-84cbc30e0937"
+uuid: "9b196171-6968-8704-8aa5-5a6f98a5cc22"
+horo: 8
 bonds:
   in:
     - access
@@ -29,6 +29,7 @@ bonds:
     - condition
     - content
     - copay
+    - device
     - drug
     - duality
     - emr
@@ -48,6 +49,7 @@ bonds:
     - marketing
     - merge
     - mortality
+    - observation
     - option
     - pharmacy
     - plan
@@ -60,6 +62,7 @@ bonds:
     - topic
     - url
     - uses
+    - vital
     - wellbeing
     - withdrawal
   out:
@@ -83,6 +86,7 @@ bonds:
     - condition
     - content
     - copay
+    - device
     - drug
     - duality
     - emr
@@ -102,6 +106,7 @@ bonds:
     - marketing
     - merge
     - mortality
+    - observation
     - option
     - pharmacy
     - plan
@@ -114,11 +119,12 @@ bonds:
     - topic
     - url
     - uses
+    - vital
     - wellbeing
     - withdrawal
 typography:
   partition: health
-  bondDegree: 159
+  bondDegree: 170
   neighbors: []
 standards: []
 bindings: []
@@ -162,6 +168,7 @@ neighbors:
     - condition
     - content
     - copay
+    - device
     - drug
     - duality
     - emr
@@ -181,6 +188,7 @@ neighbors:
     - marketing
     - merge
     - mortality
+    - observation
     - option
     - pharmacy
     - plan
@@ -193,6 +201,7 @@ neighbors:
     - topic
     - url
     - uses
+    - vital
     - wellbeing
     - withdrawal
   backlinks:
@@ -216,6 +225,7 @@ neighbors:
     - condition
     - content
     - copay
+    - device
     - drug
     - duality
     - emr
@@ -235,6 +245,7 @@ neighbors:
     - marketing
     - merge
     - mortality
+    - observation
     - option
     - pharmacy
     - plan
@@ -247,25 +258,26 @@ neighbors:
     - topic
     - url
     - uses
+    - vital
     - wellbeing
     - withdrawal
 signatures:
-  computationUuid: "a5975005-19dc-8e8b-9459-17a1af177a38"
+  computationUuid: "3141996c-c326-810f-ab9b-97b75bfcb21c"
   stages:
     - stage: path
       stageUuid: "b6c24178-4dcd-8825-a14d-f2609f727d6f"
     - stage: trinity
-      stageUuid: "07bc87fb-b750-8fe6-9d58-c9ec7495fc9a"
+      stageUuid: "0d63c819-aa89-80bc-9782-ee4fdf53a6c5"
     - stage: boundary
-      stageUuid: "286849ec-df0b-8602-9bd0-90431da19b3d"
+      stageUuid: "be408048-651e-8d64-925a-a3241f57b3b3"
     - stage: links
       stageUuid: "8e9d1629-03bd-8881-96c0-28faa678cf96"
     - stage: horo
-      stageUuid: "4a36af14-1019-8385-8bea-16b5ccc976f5"
+      stageUuid: "69720c89-d439-8d0f-b225-d55de9452721"
     - stage: seal
-      stageUuid: "ea8b2c3e-924e-88ad-97e4-985b70a62727"
+      stageUuid: "62a07bc4-4caf-8c32-8c54-403912dd8115"
     - stage: uuid
-      stageUuid: "c9371722-99c5-89b3-b4cc-6c5f96e0d8a8"
+      stageUuid: "b9e58f5a-35a9-8fb2-ac46-53be65897930"
 version: 2
 ---
 # health — the care-flow domain (one party, the encounter chain)

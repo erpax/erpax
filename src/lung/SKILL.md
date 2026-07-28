@@ -2,11 +2,11 @@
 name: lung
 description: "Use when reasoning about erpax's gas-exchange surface — the respiratory organ where it BREATHES. The breath atom names it: 'the chat is the lung-tissue where agents coordinate.' The society inhales gaps and exhales gate-green atoms across a vast, thin, fractal surface; three properties of the living lung (Fick's-law gas exchange · 23-generation fractal surface · the closed tidal cycle) are computed and mapped — a structural isomorphism — onto erpax's breath/wave loop."
 atomPath: lung
-coordinate: lung · 5/round · c613914d
-contentUuid: "ecc021c9-2ae5-5fa3-abca-f5887e91c7d8"
-diamondUuid: "ce5e300a-7bd1-8f61-bfec-8b6a14bcdd58"
-uuid: "c613914d-f709-8fab-b4ea-e69d2ae81a1f"
-horo: 5
+coordinate: "lung · 7/descent · d6ca1dd3"
+contentUuid: "0b0dbcbf-dfb3-5c5e-8ccb-85193f7be508"
+diamondUuid: "80678d3e-476c-81d2-969b-cfd82b063230"
+uuid: "d6ca1dd3-2f1c-8dae-809f-4ac14f960512"
+horo: 7
 bonds:
   in:
     - blood
@@ -39,7 +39,6 @@ typography:
 standards:
   - "West,"
   - "West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree"
-  - "computed from first principles (Fick's law · dichotomous branching · conservation)"
 bindings: []
 neighbors:
   wikilink:
@@ -76,7 +75,7 @@ neighbors:
     - society
     - wave
 signatures:
-  computationUuid: "47df6091-3bdb-803e-9fb4-32aa6b13d8c3"
+  computationUuid: "e59d7144-5ec3-8c86-a3b9-c53fa136ac89"
   stages:
     - stage: path
       stageUuid: "6bbe47c9-0ddf-84bd-80f9-13783cb2528e"
@@ -87,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "924a6b55-51ca-8d78-93af-ef33f11327fa"
     - stage: horo
-      stageUuid: "36019193-3680-8461-97fc-4bbed74b0b4d"
+      stageUuid: "31f3c562-7640-8cb6-a738-5a2bfe8223d4"
     - stage: seal
-      stageUuid: "093ae4ac-8280-8e86-96a0-fb670949ad1b"
+      stageUuid: "acf93ef4-1ec0-86b2-b769-439cd20626ce"
     - stage: uuid
-      stageUuid: "03020f8b-b8f0-8ad4-bc46-9c2d55c39ce2"
+      stageUuid: "ba19f158-b0a7-8a17-9411-2649d079c5f7"
 version: 2
 ---
 # lung — the gas-exchange surface (the breath organ)

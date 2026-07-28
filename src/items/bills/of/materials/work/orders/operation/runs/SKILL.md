@@ -1,12 +1,12 @@
 ---
 name: runs
 description: "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order."
-atomPath: items/bills/of/materials/work/orders/operation/runs
-coordinate: items/bills/of/materials/work/orders/operation/runs · 5/round · 5ea83e66
-contentUuid: "abd3ff90-b43c-5019-8357-e7d56ce7cd13"
-diamondUuid: "467a3b07-4be9-86a0-91a1-5e3952813c25"
-uuid: "5ea83e66-8e06-8cfc-b697-3a9b057dd1e6"
-horo: 5
+atomPath: "items/bills/of/materials/work/orders/operation/runs"
+coordinate: "items/bills/of/materials/work/orders/operation/runs · 1/base · a310c745"
+contentUuid: "b52067f8-64f3-569e-8d58-68f35a63c5a2"
+diamondUuid: "90e61f0a-4e64-8bf9-9da9-058e07f13911"
+uuid: "a310c745-7ecc-8a03-b4d5-9630733bebaa"
+horo: 1
 bonds:
   in:
     - accounting
@@ -36,12 +36,14 @@ standards:
   - "IFRS IAS-2 §12 cost-of-conversion"
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.5 production-performance work-response"
-  - "ISO-19011:2018 audit-trail production-execution"
   - "ISO-22400-2"
   - "ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)"
+  - "ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)`"
   - "ISO-8601-1:2019 date-time start-completion"
+  - "ISO-8601-1:2019 date-time start-completion`"
   - "SOX §404 internal-controls production-control"
   - "US-GAAP ASC-330-10-30 inventory-cost"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -64,7 +66,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "4e3860e8-ee81-8e64-8f8f-87b2924bd346"
+  computationUuid: "f914c77e-1ad0-8b93-9537-1f7efbf58e65"
   stages:
     - stage: path
       stageUuid: "dfc7a5d2-4c1b-872f-9ee1-6b0b2e4412bd"
@@ -75,11 +77,11 @@ signatures:
     - stage: links
       stageUuid: "3ac9e96c-737f-8e83-8a37-6dfaec0bd75f"
     - stage: horo
-      stageUuid: "ae66da13-c21f-8ca7-b9d4-5dcc83cdb388"
+      stageUuid: "e1d3ea9c-5c3c-8e66-821d-f72baf149a73"
     - stage: seal
       stageUuid: "c52a0589-2148-8dff-a5d1-141f46c5aaea"
     - stage: uuid
-      stageUuid: "fefb0f2d-20fe-8962-8ee5-98082a9ab007"
+      stageUuid: "9629024a-b3f2-87bf-9c95-e67c5ce60134"
 version: 2
 ---
 # operation-runs

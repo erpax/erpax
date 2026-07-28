@@ -9,9 +9,8 @@
 
 import type { CollectionAfterChangeHook } from 'payload'
 
-import { revalidateTag } from 'next/cache'
-
-export const revalidateRedirects: CollectionAfterChangeHook = ({ doc, req: { payload } }) => {
+export const revalidateRedirects: CollectionAfterChangeHook = async ({ doc, req: { payload } }) => {
+  const { revalidateTag } = await import('next/cache')
   payload.logger.info(`Revalidating redirects`)
 
   revalidateTag('redirects', 'max')

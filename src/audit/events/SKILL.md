@@ -1,12 +1,12 @@
 ---
 name: events
 description: "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection."
-atomPath: audit/events
-coordinate: audit/events · 8/crest · cedd07f4
-contentUuid: "692b9140-491a-512f-981c-a7f6fcf2e4fb"
-diamondUuid: "d5eba42c-8ae1-8698-9790-f408930773f9"
-uuid: "cedd07f4-fd1e-81d6-a879-2e1c8c6e875d"
-horo: 8
+atomPath: "audit/events"
+coordinate: "audit/events · 2/share · 2422410a"
+contentUuid: "5685b2b2-f063-5f2e-928b-556eb6d74b3a"
+diamondUuid: "d34e057c-bcc7-8134-9b9b-74d5e08bfc81"
+uuid: "2422410a-cedf-8a22-9e38-88ee0b886a16"
+horo: 2
 bonds:
   in:
     - audit
@@ -49,15 +49,17 @@ standards:
   - "EU-2018/957"
   - "GDPR Art.30 records-of-processing-activities"
   - "ISO 27037:2012 evidence-preservation"
+  - "ISO 27037:2012 evidence-preservation`"
   - "ISO-19011"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-19011:2018 §6.4.6 audit-evidence-collection"
-  - "ISO-19011:2018 §6.4.6 audit-evidence-collection unique-event-identifier"
-  - "ISO-19011:2018 §6.4.6 audit-evidence-immutability"
+  - "ISO-19011:2018 §6.4.6 audit-evidence-collection`"
   - "ISO-19011:2018 §6.5 audit-conclusions"
+  - "ISO-19011:2018 §6.5 audit-conclusions`"
   - "ISO-27037"
   - "ISO/IEC 27037:2012 evidence-preservation"
+  - "ISO/IEC 27037:2012 evidence-preservation`"
   - "NIST FIPS-180-4 sha-256"
+  - "NIST FIPS-180-4 sha-256`"
   - "NIST-FIPS-180-4"
   - "RFC-9562"
   - "SOC-2 CC4.1 monitoring-and-evaluation"
@@ -65,6 +67,8 @@ standards:
   - "SOX §404 internal-controls audit-tamper-evidence"
   - "SOX §404 internal-controls evidence-preservation"
   - "rfc-9562 uuid event-id"
+  - "rfc-9562 uuid event-id`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -100,7 +104,7 @@ neighbors:
     - standard
     - sub
 signatures:
-  computationUuid: "bb3bffb9-9468-8d7e-8e78-b19cf1fdcb6a"
+  computationUuid: "dbac5c9f-6663-8c32-a883-879953349de6"
   stages:
     - stage: path
       stageUuid: "f934e69e-3f08-8563-bbd9-ba5342f878ad"
@@ -111,11 +115,11 @@ signatures:
     - stage: links
       stageUuid: "76a23ae0-664d-8828-99a0-f95e91e22b86"
     - stage: horo
-      stageUuid: "e6aea350-fb6e-89ec-a28f-7b7af597c2b4"
+      stageUuid: "ac2497bb-ad7b-8d57-8781-cff2310b7af2"
     - stage: seal
       stageUuid: "d2c77aca-e4b6-8acf-987b-b12b3b7acfb8"
     - stage: uuid
-      stageUuid: "45761baf-bc03-8d41-a7d3-04300b22d944"
+      stageUuid: "45e6db55-ec14-89ac-9b1e-2b61da5e7882"
 version: 2
 ---
 # audit-events

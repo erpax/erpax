@@ -2,11 +2,11 @@
 name: memories
 description: "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice ([[memory/architecture]]); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key)."
 atomPath: memories
-coordinate: memories · 2/share · cc93254f
-contentUuid: "7966fd5f-d250-5e7e-82e3-1299f72be303"
-diamondUuid: "6f6d229d-d74f-879e-a3c7-957e8867b867"
-uuid: "cc93254f-87b1-8e69-b924-d49108e86188"
-horo: 2
+coordinate: "memories · 7/descent · a995f451"
+contentUuid: "b954ebf7-06d1-5df6-9f4d-93a66a38a4b0"
+diamondUuid: "8d8d0f09-1206-8473-88b7-f48b889d9a64"
+uuid: "a995f451-e3f0-8c02-a718-56642569c6bd"
+horo: 7
 bonds:
   in:
     - accounting
@@ -42,14 +42,15 @@ typography:
   neighbors:
     - diamond
 standards:
-  - "Conservation Law 10 referential-harmony (relatedTo graph)"
-  - "Conservation Law 8 content-uuid (per-memory contentUuid)"
   - "ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)"
+  - "ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)`"
   - "ISO-19011:2018"
   - "ISO/IEC 25010:2023 §5.7 modifiability — persistent memory layer"
+  - "ISO/IEC 25010:2023 §5.7 modifiability — persistent memory layer`"
   - "ISO/IEC-25010:2023"
   - "RFC-4122"
   - "W3C-JSON-LD-1.1"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -94,7 +95,7 @@ neighbors:
     - transaction
     - uuid
 signatures:
-  computationUuid: "6c0b735d-d844-80a9-8a48-f8d02f9b4076"
+  computationUuid: "5b8abe14-3580-8c6d-8e11-b86f283350c2"
   stages:
     - stage: path
       stageUuid: "3b11dd23-97ee-8f8a-8b73-84908b45483f"
@@ -105,11 +106,11 @@ signatures:
     - stage: links
       stageUuid: "1a06d511-99a4-8314-bb6b-3e4c50b2a7a6"
     - stage: horo
-      stageUuid: "48c637fe-f2c2-8fe0-98ef-f031b07b4677"
+      stageUuid: "612d61c5-9bbc-891c-8e9f-fea1c67d3295"
     - stage: seal
-      stageUuid: "92a8fec1-b465-8bf7-aa44-83178e15c45a"
+      stageUuid: "9ec5b0d7-ac80-8380-a02d-223420724341"
     - stage: uuid
-      stageUuid: "58361058-f46e-899e-96f0-5d4d253cc102"
+      stageUuid: "8f64a805-aa6b-8d80-bf0c-463d6cae5348"
 version: 2
 ---
 # memories

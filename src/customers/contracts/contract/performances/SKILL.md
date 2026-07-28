@@ -1,12 +1,12 @@
 ---
 name: performances
 description: "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection."
-atomPath: customers/contracts/contract/performances
-coordinate: customers/contracts/contract/performances · 1/base · 7d9efd28
-contentUuid: "df692517-bd42-5fa4-bf59-251acda3d3cf"
-diamondUuid: "a81d606b-892a-89f2-9c00-4d04368edcc9"
-uuid: "7d9efd28-4695-8a84-a401-206a9c278a93"
-horo: 1
+atomPath: "customers/contracts/contract/performances"
+coordinate: "customers/contracts/contract/performances · 2/share · d3b2c789"
+contentUuid: "40d903e4-2758-579b-93bf-9908a444d32f"
+diamondUuid: "b7f0781f-538f-840c-94b9-4f21efba3e6a"
+uuid: "d3b2c789-64c6-8017-afac-2dc94b553d7d"
+horo: 2
 bonds:
   in:
     - accounting
@@ -41,17 +41,23 @@ standards:
   - "ASC-606"
   - "IAS-1"
   - "IFRS IAS-1 presentation-of-financial-statements"
+  - "IFRS IAS-1 presentation-of-financial-statements`"
   - "IFRS IFRS-15 §22 performance-obligations"
+  - "IFRS IFRS-15 §22 performance-obligations`"
   - "IFRS IFRS-15 §31-35 control-transfer point-in-time-recognition"
+  - "IFRS IFRS-15 §31-35 control-transfer point-in-time-recognition`"
   - "IFRS IFRS-15 §35 over-time-recognition"
+  - "IFRS IFRS-15 §35 over-time-recognition`"
   - "IFRS-15"
-  - "ISO-19011:2018 audit-trail performance-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time completion-dates"
+  - "ISO-8601-1:2019 date-time completion-dates`"
   - "SOX §404 internal-controls revenue-completeness TOM-AR-04"
   - "US-GAAP"
   - "US-GAAP ASC-606-10-25-25 performance-obligations"
   - "US-GAAP ASC-606-10-25-27 transfer-of-control"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -87,7 +93,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "9c0c4b69-cd41-895b-b74c-3db5ff5098aa"
+  computationUuid: "bfc45118-2380-81d6-bf31-047917159718"
   stages:
     - stage: path
       stageUuid: "cb42c745-6dbc-87f3-aac0-82979dadd14c"
@@ -98,11 +104,11 @@ signatures:
     - stage: links
       stageUuid: "e3fa67ff-7cce-8031-a1a9-5f62cab2ed35"
     - stage: horo
-      stageUuid: "1dc9156d-3373-85cc-bbf6-38a3640f12c6"
+      stageUuid: "d7c5740d-12e1-8585-8118-d4d14e85c18a"
     - stage: seal
       stageUuid: "0f31a180-1b87-878a-b48c-0d791e459c3d"
     - stage: uuid
-      stageUuid: "1734c341-40d5-8a62-88c3-fddab50de38e"
+      stageUuid: "ad236f61-3c84-8f05-8ed8-a816acade4b3"
 version: 2
 ---
 # contract-performance

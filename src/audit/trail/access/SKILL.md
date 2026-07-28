@@ -1,12 +1,12 @@
 ---
 name: access
 description: "Use when gating reads, creates and mutations of the audit trail — authenticated users see only their own tenant's events, super-admins see all, and update/delete is denied outright so the trail stays append-only tamper-evident."
-atomPath: audit/trail/access
-coordinate: audit/trail/access · 3/3 · b516f6c9
-contentUuid: "ca90cffd-c8b4-5e3a-a778-8c6dd495ae75"
-diamondUuid: "63be93b7-556d-88c4-a3e8-d893bcb6921f"
-uuid: "b516f6c9-1c55-847c-8e54-7ffba3108815"
-horo: 3
+atomPath: "audit/trail/access"
+coordinate: "audit/trail/access · 6/6 · c8a8cb83"
+contentUuid: "cd4f1f4f-9768-529d-ae35-7782d547da66"
+diamondUuid: "ad7ffd0a-3ff2-8c02-b220-99772175b2cf"
+uuid: "c8a8cb83-d7da-80c9-9a98-f72dc17706d2"
+horo: 6
 bonds:
   in:
     - access
@@ -51,6 +51,7 @@ bonds:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -93,6 +94,7 @@ bonds:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -111,6 +113,7 @@ bonds:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -172,6 +175,7 @@ bonds:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -214,6 +218,7 @@ bonds:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -232,6 +237,7 @@ bonds:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -251,11 +257,8 @@ bonds:
     - workflow
 typography:
   partition: audit
-  bondDegree: 415
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 422
+  neighbors: []
 standards: []
 bindings: []
 neighbors:
@@ -307,6 +310,7 @@ neighbors:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -349,6 +353,7 @@ neighbors:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -367,6 +372,7 @@ neighbors:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -427,6 +433,7 @@ neighbors:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -469,6 +476,7 @@ neighbors:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -487,6 +495,7 @@ neighbors:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -505,7 +514,7 @@ neighbors:
     - versions
     - workflow
 signatures:
-  computationUuid: "423d243a-8c5a-85e4-bee3-9d6304379eec"
+  computationUuid: "1bdc5dfc-6ce7-8ef4-aede-5c5a82475127"
   stages:
     - stage: path
       stageUuid: "ea69bffd-2f68-8074-8e10-720ffa07d9e6"
@@ -516,11 +525,11 @@ signatures:
     - stage: links
       stageUuid: "4e61fa24-30fe-893d-bc11-85bbd43aa8bf"
     - stage: horo
-      stageUuid: "f5457bed-83af-832d-b8fa-e0917be3ee7e"
+      stageUuid: "04362296-f07a-8056-b562-9f976354bad0"
     - stage: seal
-      stageUuid: "de6be53f-41ef-8cad-8be0-893da5df8e7b"
+      stageUuid: "d79da033-4c24-8277-9963-9da249441c08"
     - stage: uuid
-      stageUuid: "9e349581-6d5c-8fbe-922f-c8fcb86db8e2"
+      stageUuid: "19a5ae7b-65ff-8e3d-b592-40d19f849147"
 version: 2
 ---
 # audit/trail/access — who may touch the [[audit]] trail

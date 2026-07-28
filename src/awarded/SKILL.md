@@ -2,11 +2,11 @@
 name: awarded
 description: "Use when reasoning about awarded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: awarded
-coordinate: awarded · 4/weave · 5115259a
-contentUuid: "efa0c710-f15c-55e4-bb41-7cab3f07748d"
-diamondUuid: "400ae972-86ca-82f5-a4b2-f606a716cf1c"
-uuid: "5115259a-1248-88d4-b514-0fdfe90b1beb"
-horo: 4
+coordinate: "awarded · 1/base · 3fc49b96"
+contentUuid: "7e239df7-8a45-5459-b00f-0ceb63f938a7"
+diamondUuid: "58c8a25f-fe7f-8e54-a46b-b29533af453d"
+uuid: "3fc49b96-d114-8bf3-ba8e-10e46bc9b44b"
+horo: 1
 bonds:
   in:
     - collapse
@@ -57,22 +57,22 @@ neighbors:
     - occupational
     - sti
 signatures:
-  computationUuid: "182ffe1e-9a2b-8c88-85e3-6403953a16dd"
+  computationUuid: "e37857b0-56bf-844d-aaee-3af21db862e2"
   stages:
     - stage: path
       stageUuid: "c54c72cc-ee68-894b-82ad-9a2f09961b3f"
     - stage: trinity
-      stageUuid: "eae8c5e5-1c9b-8c28-b2e9-695c73cf88bd"
+      stageUuid: "cdca05d8-4a4f-8e74-9e2a-8bd7485071fc"
     - stage: boundary
-      stageUuid: "a1508033-769c-8382-87d2-65ed3a464201"
+      stageUuid: "25ce6f85-9c0d-8628-baa7-357f77a3b9ac"
     - stage: links
       stageUuid: "74995f4b-990d-8b62-8535-4d67767fb71d"
     - stage: horo
-      stageUuid: "faf73dd3-9a47-854f-bf30-fd8255ccdfac"
+      stageUuid: "1e52bf19-9e09-8cf8-8603-849bf2d1bdd0"
     - stage: seal
-      stageUuid: "c27f9b19-1f06-89b5-a9b6-b4230eb37866"
+      stageUuid: "d26b4f22-7f5a-86ed-92ee-23b727759197"
     - stage: uuid
-      stageUuid: "45e71379-0b67-8678-8356-03b9b1dbd23f"
+      stageUuid: "4b756f79-5ef9-84fc-9f7a-7f1d87abd92a"
 version: 2
 ---
 # awarded

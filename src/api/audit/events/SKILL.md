@@ -1,12 +1,12 @@
 ---
 name: events
 description: "Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection."
-atomPath: api/audit/events
-coordinate: api/audit/events · 8/crest · 3520c4f5
-contentUuid: "e84cbaf1-b847-52d4-93f6-78b095f85e73"
-diamondUuid: "0c8a4cb3-7d97-8bff-baa5-39453273888e"
-uuid: "3520c4f5-7100-8e55-aaf6-9b2fea442e9d"
-horo: 8
+atomPath: "api/audit/events"
+coordinate: "api/audit/events · 5/round · 69c5e90e"
+contentUuid: "bf91a5db-3a16-5877-b7a0-0a33a029a69f"
+diamondUuid: "7ac5aba3-cf32-885b-88b9-7bc2a782075e"
+uuid: "69c5e90e-0cec-83bd-be57-6da57daaa1a7"
+horo: 5
 bonds:
   in:
     - audit
@@ -49,10 +49,12 @@ standards:
   - "EU-2018/957"
   - "EU-Taxonomy-2020/852"
   - "ISO-19011"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-19011:2018 audit-trail external-system-evidence"
+  - "ISO-19011:2018 audit-trail external-system-evidence`"
   - "ISO/IEC-27007:2020 isms-auditing"
+  - "ISO/IEC-27007:2020 isms-auditing`"
   - "SOX §404 internal-controls external-system-traceability"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -89,7 +91,7 @@ neighbors:
     - standard
     - sub
 signatures:
-  computationUuid: "7ad5930a-af98-88b5-8266-d45e051f8efa"
+  computationUuid: "14449d7f-1be8-8cb1-a7cb-6b1f166258fc"
   stages:
     - stage: path
       stageUuid: "bf738222-5914-8955-a76b-9db80f3809f4"
@@ -100,11 +102,11 @@ signatures:
     - stage: links
       stageUuid: "ac3ad4ea-0836-82dd-b5b4-4df24b8b6ddf"
     - stage: horo
-      stageUuid: "ee690eb9-1b9e-8bca-b55d-041f04adab53"
+      stageUuid: "013c012c-16b2-8d0b-ba15-8f51cd40767a"
     - stage: seal
       stageUuid: "8b1abacb-6f15-8b8c-81c3-84b4a999eab6"
     - stage: uuid
-      stageUuid: "1a155637-613c-853a-a281-00aa1c8edf5e"
+      stageUuid: "6d6b340d-4470-8bae-a11a-c03164a5f775"
 version: 2
 ---
 # api-audit-events

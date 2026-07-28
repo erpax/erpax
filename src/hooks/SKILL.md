@@ -1,11 +1,11 @@
 ---
 name: hooks
-description: "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\"my hook didn't run / ran at the wrong time\\\"."
+description: "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \\\\\\\"my hook didn't run / ran at the wrong time\\\\\\\"."
 atomPath: hooks
-coordinate: hooks · 3/3 · a5029809
-contentUuid: "eccded93-27b1-5aed-b92a-b9b53859e114"
-diamondUuid: "ba5f46b3-cc29-8e84-8b0b-fdbe91f155a0"
-uuid: "a5029809-08bf-8591-a4db-6de680d92d09"
+coordinate: "hooks · 3/3 · 5d426d62"
+contentUuid: "4939799a-deda-5e74-a7d6-f0ffdfb3bb8e"
+diamondUuid: "c065344e-9d95-86dd-84e6-eff7fd01b342"
+uuid: "5d426d62-4dbd-82be-a2ab-9e58cbd4913f"
 horo: 3
 bonds:
   in:
@@ -52,6 +52,7 @@ bonds:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -60,6 +61,7 @@ bonds:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -156,6 +158,7 @@ bonds:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -164,6 +167,7 @@ bonds:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -222,9 +226,6 @@ typography:
   neighbors:
     - analytics
     - aura
-    - diamond
-    - hallucination
-    - purity
 standards: []
 bindings: []
 neighbors:
@@ -278,6 +279,7 @@ neighbors:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -286,6 +288,7 @@ neighbors:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -382,6 +385,7 @@ neighbors:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -390,6 +394,7 @@ neighbors:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -443,22 +448,22 @@ neighbors:
     - worker
     - workflow
 signatures:
-  computationUuid: "5f879968-e047-893a-873b-fd0d38a9b105"
+  computationUuid: "f47d04c9-9aae-829a-b15a-12064cfaddb9"
   stages:
     - stage: path
       stageUuid: "f43cfff2-b630-83f3-b35e-a37d64a3262d"
     - stage: trinity
       stageUuid: "5a3b3d74-f718-8c4c-9807-fb7eebe0647d"
     - stage: boundary
-      stageUuid: "8ffd9a82-caeb-8009-abb3-9fe0e52c0813"
+      stageUuid: "f9c1567e-3ecb-836e-b61a-7c355835282d"
     - stage: links
       stageUuid: "552bfb18-9c5b-82c0-baf2-86ba8e34f4f7"
     - stage: horo
-      stageUuid: "0937fcb9-e5f2-89e8-b624-bd2afc824660"
+      stageUuid: "8b118453-7e33-891d-acc6-8682061921c3"
     - stage: seal
-      stageUuid: "60069129-3e0e-8eee-b4d0-1648c2879da6"
+      stageUuid: "93e763fe-898c-8d89-9ae3-818c3b4b8d91"
     - stage: uuid
-      stageUuid: "f5860eca-5572-8a7d-9460-1fd2f7019f8b"
+      stageUuid: "62637418-4ef7-834f-8f47-63dde026c9a3"
 version: 2
 ---
 # hooks — Payload lifecycle hooks (position 6, the control triad)

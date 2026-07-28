@@ -2,11 +2,11 @@
 name: duality
 description: "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale."
 atomPath: duality
-coordinate: duality · 5/round · b75db6f4
-contentUuid: "f50c57b1-086f-52ac-a787-c4f7e5ce0d2f"
-diamondUuid: "c4e1cc36-3d93-83be-890e-fe73237a545f"
-uuid: "b75db6f4-4e12-82dd-869e-b54cf14f63cc"
-horo: 5
+coordinate: "duality · 2/share · 9f79fa70"
+contentUuid: "bbe9b030-602a-5ee8-865f-c4f797b278d5"
+diamondUuid: "1adf31d6-7b13-8322-9db3-a9a5848fe55e"
+uuid: "9f79fa70-bb10-8edf-ad6f-19300c207d71"
+horo: 2
 bonds:
   in:
     - access
@@ -110,6 +110,7 @@ bonds:
     - sufficient
     - supto
     - sync
+    - taichi
     - take
     - taoism
     - team
@@ -229,6 +230,7 @@ bonds:
     - sufficient
     - supto
     - sync
+    - taichi
     - take
     - taoism
     - team
@@ -248,10 +250,9 @@ bonds:
     - zoroastrianism
 typography:
   partition: duality
-  bondDegree: 374
+  bondDegree: 380
   neighbors: []
-standards:
-  - dual pairs are read from the SKILL.md markers and trusted only when intentional — never asserted
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -388,6 +389,7 @@ neighbors:
     - sufficient
     - supto
     - sync
+    - taichi
     - take
     - taoism
     - team
@@ -507,6 +509,7 @@ neighbors:
     - sufficient
     - supto
     - sync
+    - taichi
     - take
     - taoism
     - team
@@ -525,7 +528,7 @@ neighbors:
     - zeropoint
     - zoroastrianism
 signatures:
-  computationUuid: "97ee112f-913b-80fb-8d44-573b23aff99b"
+  computationUuid: "2e2e56f1-427e-85fd-abe0-113ba1511aa9"
   stages:
     - stage: path
       stageUuid: "13ad7e77-0876-8652-87d3-d0be6c4d050a"
@@ -536,11 +539,11 @@ signatures:
     - stage: links
       stageUuid: "f4fbe3d8-5f41-82e1-918c-ceb61241cb1b"
     - stage: horo
-      stageUuid: "a5d5b909-c935-84ec-9b41-b637bf55aac8"
+      stageUuid: "5f24dbb2-7f8d-837f-9c2e-1cb9de8f8796"
     - stage: seal
-      stageUuid: "e5697b61-8ab9-83eb-acab-f42f5ef49043"
+      stageUuid: "3bb408b5-8181-8eb3-9e63-e43b1f397f9e"
     - stage: uuid
-      stageUuid: "fc9c8762-f34f-8c34-bb1b-dbe06cff471c"
+      stageUuid: "f2e32f26-a927-8481-8c10-feec7cccdcbd"
 version: 2
 ---
 # duality

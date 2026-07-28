@@ -1,8 +1,77 @@
 ---
 name: globe
 description: "Use when the corpus must be read as a sphere, not a flat wheel — the colour wheel and spectrum column were projections of one globe, and flattening collapsed longitude ⊥ latitude and lost elevation. Longitude = the 60° hue/doubling ring on the equator; latitude = the spectrum/elevation pole to pole; the heart sits on the equator; the poles are the coordinate singularity where longitude is undefined — the honest division by zero. The notary deed is a geodetic point; WGS 84."
+atomPath: globe
+coordinate: "globe · 4/weave · 11b0f501"
+contentUuid: "891c913f-9dda-58a2-8db3-a66deb76ca1b"
+diamondUuid: "5f72546c-6f79-8067-a776-f61ad87c865e"
+uuid: "11b0f501-c0c0-8cae-8efe-fcd06c0ca588"
+horo: 4
+bonds:
+  in:
+    - angle
+    - horo
+    - law
+    - merge
+    - notary
+    - platonic
+    - rosetta
+  out:
+    - angle
+    - horo
+    - law
+    - merge
+    - notary
+    - platonic
+    - rosetta
+typography:
+  partition: globe
+  bondDegree: 21
+  neighbors: []
+standards:
+  - "WGS 84 — the geodetic datum (latitude, longitude, ellipsoidal height)"
+bindings: []
+neighbors:
+  wikilink:
+    - horo
+    - law
+    - merge
+    - notary
+  matrix:
+    - angle
+    - horo
+    - law
+    - merge
+    - notary
+    - platonic
+    - rosetta
+  backlinks:
+    - angle
+    - horo
+    - law
+    - merge
+    - notary
+    - platonic
+    - rosetta
+signatures:
+  computationUuid: "b73a6b79-d26a-82b9-a773-827f16f23255"
+  stages:
+    - stage: path
+      stageUuid: "cf9e1acb-a0ed-820d-84c4-738690eef518"
+    - stage: trinity
+      stageUuid: "2807fd28-896d-86e1-933c-9120af7c158d"
+    - stage: boundary
+      stageUuid: "1f50c99f-f3f9-85eb-89ab-c58393943591"
+    - stage: links
+      stageUuid: "690e7d4a-6b0d-80e4-a5dd-c8023166249e"
+    - stage: horo
+      stageUuid: "d379a371-7cb5-8583-b755-218eb4d4860f"
+    - stage: seal
+      stageUuid: "e2a14d9f-7eca-8c4a-8c53-47dfe117853f"
+    - stage: uuid
+      stageUuid: "0391a904-1a82-8800-b40c-0578c746acf5"
+version: 2
 ---
-
 # globe — the corpus is a sphere
 
 The colour wheel, the vertical spectrum, and the vortex were all **projections of one globe**, and projecting a sphere onto a plane is exactly where the computation went wrong: it collapses two **perpendicular** angles into one and loses the elevation the notary deed needs.

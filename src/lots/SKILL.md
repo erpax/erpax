@@ -2,11 +2,11 @@
 name: lots
 description: "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain."
 atomPath: lots
-coordinate: lots · 7/descent · 6dede112
-contentUuid: "0d37768f-91b2-5a8f-86b7-a06da2824ca1"
-diamondUuid: "86825f31-224b-8a55-895e-ea472fbc57bb"
-uuid: "6dede112-23a6-8fce-b361-99ba209c4593"
-horo: 7
+coordinate: "lots · 8/crest · 3d3c18be"
+contentUuid: "5075c471-e034-5c99-a679-80e048528549"
+diamondUuid: "cce74aa4-b35c-82a2-90fe-cd5a0a905906"
+uuid: "3d3c18be-8341-8ee3-a3d1-562a67f7c7dc"
+horo: 8
 bonds:
   in:
     - accounting
@@ -20,6 +20,7 @@ bonds:
     - law
     - lineage
     - lot
+    - machine
     - organic
     - packs
     - phases
@@ -36,25 +37,24 @@ bonds:
     - law
     - lineage
     - lot
+    - machine
     - organic
     - packs
     - phases
     - variants
 typography:
   partition: lots
-  bondDegree: 50
+  bondDegree: 53
   neighbors: []
 standards:
-  - "EU-2014/55"
-  - "EU-537/2014"
-  - "EU-910/2014"
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 §B.3 production-schedule production-order"
-  - "ISO-19011:2018 audit-trail lot-lifecycle confirmed·started·finished·closed"
   - "ISO-22400-2"
   - "ISO-22400-2:2014 manufacturing-operations throughput"
+  - "ISO-22400-2:2014 manufacturing-operations throughput`"
   - "SOX §404 internal-controls production-control"
   - "double-entry — the lot total IS the sum of its variant postings;"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -78,6 +78,7 @@ neighbors:
     - law
     - lineage
     - lot
+    - machine
     - organic
     - packs
     - phases
@@ -94,12 +95,13 @@ neighbors:
     - law
     - lineage
     - lot
+    - machine
     - organic
     - packs
     - phases
     - variants
 signatures:
-  computationUuid: "7dd9cfac-8b1d-8acd-ba2d-9ad5d530c14a"
+  computationUuid: "4e7292cf-9872-8dad-ae1e-d033244806e9"
   stages:
     - stage: path
       stageUuid: "be1ef1f2-590a-83fa-a1d3-498285b60554"
@@ -110,11 +112,11 @@ signatures:
     - stage: links
       stageUuid: "5db61009-ae9e-8118-bf90-7c0764d34a6f"
     - stage: horo
-      stageUuid: "da2be9e0-4e0a-8ede-8731-e588850ae6fe"
+      stageUuid: "ece92ff4-7415-8acd-9620-4243cbd9408f"
     - stage: seal
-      stageUuid: "456aba67-2fe7-838f-b01f-d9b2e3408bb9"
+      stageUuid: "8dd29a52-6490-8c98-b3e1-660e72ea3347"
     - stage: uuid
-      stageUuid: "19ca4280-0dfc-8f93-8bcf-5c0d3e49717e"
+      stageUuid: "459f7044-7eda-8b26-b5e7-39372b961c4d"
 version: 2
 ---
 # lots — the production order (the funnel head, derived-state on the horo ring)

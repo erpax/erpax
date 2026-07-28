@@ -1,12 +1,12 @@
 ---
 name: disclosures
 description: "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register."
-atomPath: csrd/disclosures
-coordinate: csrd/disclosures · 8/crest · c2cd60d3
-contentUuid: "6ca36138-43c6-5f41-8f76-c25adebf8a2e"
-diamondUuid: "01251052-4450-820a-805e-0a3921e35c29"
-uuid: "c2cd60d3-840b-81e4-aea8-98953dcfd8ee"
-horo: 8
+atomPath: "csrd/disclosures"
+coordinate: "csrd/disclosures · 2/share · 88c4ec64"
+contentUuid: "6e7b83e5-2075-5567-9994-df8036279ebe"
+diamondUuid: "604f18f8-ef7a-8086-b504-a9ba0ecfbcf6"
+uuid: "88c4ec64-62a8-8403-8657-35148595ce88"
+horo: 2
 bonds:
   in:
     - accounting
@@ -27,33 +27,23 @@ typography:
   bondDegree: 19
   neighbors: []
 standards:
-  - EU CSRD Directive 2022/2464
+  - "EU CSRD Directive 2022/2464"
   - "EU EFRAG ESRS-XBRL taxonomy"
   - EU ESRS 1 General Requirements
   - EU ESRS 2 General Disclosures
   - "EU SFDR 2019/2088 sustainable-finance"
-  - EU Taxonomy Regulation 2020/852
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
+  - "EU Taxonomy Regulation 2020/852"
   - "EU-CSRD"
   - "EU-ESRS"
   - "GHG-Protocol"
   - "IFRS S1 general-sustainability-disclosure"
   - "IFRS S2 climate-disclosures"
-  - "ISAE 3000 limited-assurance (rises to reasonable-assurance under CSRD by 2028)"
   - "ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)"
+  - "ISO 14064-1:2018 ghg-quantification (basis for ESRS E1)`"
   - "ISO-14064-1"
   - OECD GRI Standards
   - XBRL
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -78,7 +68,7 @@ neighbors:
     - law
     - standard
 signatures:
-  computationUuid: "573a5653-a3bc-8e68-86bd-e8da67669296"
+  computationUuid: "97d96923-a198-8d76-a80e-7c976e6ff401"
   stages:
     - stage: path
       stageUuid: "42d87685-4469-8d8d-ad0f-b3fec575bd74"
@@ -89,11 +79,11 @@ signatures:
     - stage: links
       stageUuid: "e92cf626-78bc-8be8-8a55-e521345e3b26"
     - stage: horo
-      stageUuid: "2d65dc79-c473-857b-a762-498478b437e8"
+      stageUuid: "5763c6a7-cce2-8249-9446-26baf919c83e"
     - stage: seal
       stageUuid: "ab8206c5-d899-82d6-a4d0-72b32ebbef7e"
     - stage: uuid
-      stageUuid: "966aa526-270c-8ffc-84e3-7e25e6f17244"
+      stageUuid: "d8ae3e22-6f39-88af-ac1d-28f9c6899379"
 version: 2
 ---
 # csrd-disclosures

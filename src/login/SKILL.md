@@ -2,11 +2,11 @@
 name: login
 description: "Use when reasoning about login as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: login
-coordinate: login · 1/base · 31bfcdcb
-contentUuid: "0b898ed1-4f35-5679-aa00-39b0dee4defe"
-diamondUuid: "b1731f18-015c-8e42-8b71-46c5943a3e94"
-uuid: "31bfcdcb-7896-8faa-a6a8-cdccc63c7224"
-horo: 1
+coordinate: "login · 7/descent · 07d75120"
+contentUuid: "446041aa-2b97-5234-960f-96c5f8155e0a"
+diamondUuid: "17a96243-d892-862a-999d-f1e00c0d4361"
+uuid: "07d75120-d670-84a7-8c68-518b4fd7d703"
+horo: 7
 bonds:
   in:
     - action
@@ -22,7 +22,7 @@ bonds:
     - sti
 typography:
   partition: login
-  bondDegree: 0
+  bondDegree: 15
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -47,7 +47,7 @@ neighbors:
     - merge
     - sti
 signatures:
-  computationUuid: "4f22cb42-c13f-80df-bfba-a296fe65dbd2"
+  computationUuid: "74bb2e23-d77b-873a-9b73-aca130de7ab3"
   stages:
     - stage: path
       stageUuid: "e584d88f-c803-8af7-8b42-e1f3c921e843"
@@ -58,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "6e281c66-ef01-8784-b557-003715ea9ca0"
     - stage: horo
-      stageUuid: "6c031133-0bf1-8b9c-a0e5-f15ff52baedb"
+      stageUuid: "69e4139e-b277-886f-9866-affd0e519561"
     - stage: seal
-      stageUuid: "b02a4d5d-917c-8540-935e-49df6ce067cf"
+      stageUuid: "f6ac3f0d-3a65-8ccc-9394-65b4587bce12"
     - stage: uuid
-      stageUuid: "a9f52323-ff90-848d-b761-a121f0243b82"
+      stageUuid: "2af356b4-847f-8db3-bc14-9130ff709e47"
 version: 2
 ---
 # login

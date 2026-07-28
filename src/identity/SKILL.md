@@ -1,11 +1,11 @@
 ---
 name: identity
-description: "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]]."
+description: "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\\\\\"dry\\\\\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]]."
 atomPath: identity
-coordinate: identity · 9/unity · 4f659bcf
-contentUuid: "33545d51-8590-51ac-b7b3-b0c0ca5e0a25"
-diamondUuid: "eee83cd6-5ae4-85cf-bee4-bf67fdbcafac"
-uuid: "4f659bcf-1c7d-8fd0-970c-c2bcc33ba48e"
+coordinate: "identity · 9/unity · 1d5be064"
+contentUuid: "58c75472-baf5-50af-879a-c12a45315a01"
+diamondUuid: "973442f9-7583-858d-8750-92a8782d565a"
+uuid: "1d5be064-b7f9-8a9b-9eae-58515bed0b26"
 horo: 9
 bonds:
   in:
@@ -578,10 +578,17 @@ bonds:
     - zoroastrianism
 typography:
   partition: identity
-  bondDegree: 0
+  bondDegree: 918
   neighbors: []
 standards:
+  - "ISO-3166-1`"
+  - "ISO-3166-2"
+  - "ISO-3166-2`"
   - "NIST-FIPS-180-4"
+  - "NIST-FIPS-180-4`"
+  - "RFC-4122"
+  - "RFC-4122`"
+  - "RFC-9562`"
 bindings: []
 neighbors:
   wikilink:
@@ -1176,22 +1183,22 @@ neighbors:
     - zeropoint
     - zoroastrianism
 signatures:
-  computationUuid: "42ecda02-10c8-881b-8b31-302ec6b75845"
+  computationUuid: "1a1d4e60-07cd-8205-b882-cb51ab1e8963"
   stages:
     - stage: path
       stageUuid: "b7748f0d-c736-8f14-995c-ebed12717689"
     - stage: trinity
-      stageUuid: "45c68d10-8c40-8413-b914-7bcd26367526"
+      stageUuid: "c5b1b863-be6d-8cdc-a126-2f78b041cfb7"
     - stage: boundary
-      stageUuid: "6dcb08bc-1bcf-8677-b7ac-5d56ef3c0bce"
+      stageUuid: "30599018-9c48-849e-b391-1ff0fc1dcb66"
     - stage: links
       stageUuid: "c1beb149-d2ad-852a-9528-dd70920402f0"
     - stage: horo
-      stageUuid: "807f3306-7c3b-8f37-9b4d-d50740eaef55"
+      stageUuid: "5213f6eb-3c3c-82e4-af52-5ac094dd8c77"
     - stage: seal
-      stageUuid: "b6e3c286-c18b-81b2-96b7-45a9436658d6"
+      stageUuid: "ad8c2b54-34a1-82b4-9d35-118d4e0be4c0"
     - stage: uuid
-      stageUuid: "05641448-fa26-8ee1-a1b3-821c02e695f3"
+      stageUuid: "b6bd42ce-f11e-89c5-8f7a-d30fbf27f89b"
 version: 2
 ---
 # identity — content-addressed UUIDs (same content ⇒ same id ⇒ seamless merge)

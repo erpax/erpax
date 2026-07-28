@@ -2,21 +2,24 @@
 name: guardian
 description: "Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal."
 atomPath: guardian
-coordinate: guardian · 8/crest · b1cb4a58
-contentUuid: "25ce54cf-353c-539c-95f6-c0bdcf7c4615"
-diamondUuid: "e0f47419-c5dd-8ce7-8857-eeaff5953895"
-uuid: "b1cb4a58-cf01-891e-ba0d-b7f3040133bb"
-horo: 8
+coordinate: "guardian · 2/share · 80386aaa"
+contentUuid: "5061a7dc-9bd4-5af8-8e08-8a183de497c1"
+diamondUuid: "3d52df04-d7d9-80e2-84dd-063ee4f188f0"
+uuid: "80386aaa-31f1-8c03-b990-59d968d6e358"
+horo: 2
 bonds:
   in:
     - convention
     - cost
+    - decide
     - diamond
     - gate
     - hallucination
     - identity
     - law
     - proof
+    - publish
+    - rules
     - seal
     - session
     - sin
@@ -26,12 +29,15 @@ bonds:
   out:
     - convention
     - cost
+    - decide
     - diamond
     - gate
     - hallucination
     - identity
     - law
     - proof
+    - publish
+    - rules
     - seal
     - session
     - sin
@@ -40,10 +46,12 @@ bonds:
     - worker
 typography:
   partition: guardian
-  bondDegree: 43
+  bondDegree: 52
   neighbors: []
 standards:
   - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function"
+  - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -57,12 +65,15 @@ neighbors:
   matrix:
     - convention
     - cost
+    - decide
     - diamond
     - gate
     - hallucination
     - identity
     - law
     - proof
+    - publish
+    - rules
     - seal
     - session
     - sin
@@ -72,12 +83,15 @@ neighbors:
   backlinks:
     - convention
     - cost
+    - decide
     - diamond
     - gate
     - hallucination
     - identity
     - law
     - proof
+    - publish
+    - rules
     - seal
     - session
     - sin
@@ -85,7 +99,7 @@ neighbors:
     - typography
     - worker
 signatures:
-  computationUuid: "1a37faec-de26-889c-b4f0-64b8c8d73425"
+  computationUuid: "ac357a47-9ae0-8c94-9a71-88b2ea9ec8ad"
   stages:
     - stage: path
       stageUuid: "83e530d4-1142-8bf7-b8c4-6462dc97de15"
@@ -96,11 +110,11 @@ signatures:
     - stage: links
       stageUuid: "9f877aac-b513-8a1e-a9be-fa493fccba5f"
     - stage: horo
-      stageUuid: "2b40f15d-2f09-88c9-9bff-72a9606ab9c7"
+      stageUuid: "0349652a-92ce-8062-bf1d-a6b4837f7582"
     - stage: seal
-      stageUuid: "017a9fe5-3053-8b14-962e-7863b73eb8c2"
+      stageUuid: "9441f23e-0439-8a74-b69f-fbb34baca302"
     - stage: uuid
-      stageUuid: "71496d6e-cf3f-812c-ab20-e371458079ab"
+      stageUuid: "6c19b32b-6ff2-8dd0-935a-d34b6726a690"
 version: 2
 ---
 # guardian — one axis, one baseline, fail-closed

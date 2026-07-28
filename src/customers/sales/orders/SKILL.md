@@ -1,12 +1,12 @@
 ---
 name: orders
 description: "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P)."
-atomPath: customers/sales/orders
-coordinate: customers/sales/orders · 2/share · 52ced0bf
-contentUuid: "c45bdf7c-6177-5a9f-b77c-38308f1c0c61"
-diamondUuid: "8e172c0e-2a6d-8755-8260-dfd3cf1f3e5a"
-uuid: "52ced0bf-a62d-8a42-b754-a5998e9ec5e5"
-horo: 2
+atomPath: "customers/sales/orders"
+coordinate: "customers/sales/orders · 4/weave · 81278673"
+contentUuid: "9ae93ec1-926e-5129-96a7-13f5ccf9b13c"
+diamondUuid: "ff78f7b5-f625-8456-8891-b6cf51315262"
+uuid: "81278673-d93f-8fe8-a7af-7255edf44c2e"
+horo: 4
 bonds:
   in:
     - accounting
@@ -59,6 +59,7 @@ standards:
   - "EN-16931"
   - "EN-16931:2017"
   - "EN-16931:2017 §BG-13 delivery-information (downstream of the order)"
+  - "EN-16931:2017 §BG-13 delivery-information (downstream of the order)`"
   - "EU-2017/1132"
   - "EU-2017/828"
   - "EU-Directive-2006/112/EC"
@@ -69,7 +70,6 @@ standards:
   - "IFRS IFRS-15 §31 transfer-of-control"
   - "IFRS-15"
   - "INCOTERMS-2020"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-9735"
   - "Peppol-BIS-3.0"
   - "Peppol-BIS-3.0 Order ordering-process"
@@ -80,6 +80,7 @@ standards:
   - "UN-EDIFACT-ORDERS-d96a"
   - "US-GAAP ASC-606 revenue-from-contracts"
   - "WCO-HS"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -129,7 +130,7 @@ neighbors:
     - utility
     - variances
 signatures:
-  computationUuid: "eca1e5c7-032d-8b06-8835-52c52e46f13f"
+  computationUuid: "7970fb2c-a1c9-8966-a7e9-f7789974ca4d"
   stages:
     - stage: path
       stageUuid: "5c34a03f-a43b-89db-9e2d-711268cc5a2b"
@@ -140,11 +141,11 @@ signatures:
     - stage: links
       stageUuid: "31265c36-810c-88c8-8c26-becd09f1595f"
     - stage: horo
-      stageUuid: "4b0e0d38-5dce-8345-82e4-142d8246e3fb"
+      stageUuid: "87541750-7d63-89cb-a47a-cfabc985f426"
     - stage: seal
       stageUuid: "d26ecb74-da97-8151-b843-1839acad68d9"
     - stage: uuid
-      stageUuid: "03ed2af2-2034-896f-b28f-e4418a21d18c"
+      stageUuid: "538e242a-bdbf-855c-b51e-3ae5b57bb529"
 version: 2
 ---
 # sales-orders

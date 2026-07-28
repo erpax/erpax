@@ -1,11 +1,11 @@
 ---
 name: rates
 description: "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection."
-atomPath: currency/rates
-coordinate: currency/rates · 7/descent · f791e26a
-contentUuid: "b617a9dc-999a-5a36-a517-f99e22e59b24"
-diamondUuid: "cc952657-72cb-8b25-910c-ba3c16a36707"
-uuid: "f791e26a-03f6-8d69-bccb-d9504c7c6c99"
+atomPath: "currency/rates"
+coordinate: "currency/rates · 7/descent · c298025d"
+contentUuid: "63a84f9f-6691-555b-9813-0b1a1f1e71b2"
+diamondUuid: "29ad9d46-5049-8f75-a3d1-1f09d0e23e1b"
+uuid: "c298025d-be5b-841b-b248-43864185e971"
 horo: 7
 bonds:
   in:
@@ -32,10 +32,12 @@ typography:
   neighbors: []
 standards:
   - "IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates"
-  - "ISO-19011:2018 audit-trail rate-update"
   - "ISO-4217:2015 currency-codes from-currency to-currency"
+  - "ISO-4217:2015 currency-codes from-currency to-currency`"
   - "ISO-8601-1:2019 date-time rate-date"
+  - "ISO-8601-1:2019 date-time rate-date`"
   - "US-GAAP ASC-830 foreign-currency-matters"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -64,7 +66,7 @@ neighbors:
     - rate
     - transactions
 signatures:
-  computationUuid: "d489c2c6-2439-87a9-b4c2-a8cd8f5469f1"
+  computationUuid: "f0c969fe-dcb1-8713-b052-3ab4025ba9d4"
   stages:
     - stage: path
       stageUuid: "f97d9c10-aa76-8e9a-9bce-62c8c2102e5f"
@@ -75,11 +77,11 @@ signatures:
     - stage: links
       stageUuid: "8595e6b0-a854-8768-93d9-af803d7607df"
     - stage: horo
-      stageUuid: "e4008214-f3ad-86dc-92be-e45aa7203038"
+      stageUuid: "ef5accb9-a647-80fe-8ebc-273e214cd243"
     - stage: seal
-      stageUuid: "360c85c2-c9cd-82fb-8406-5f77b1219e37"
+      stageUuid: "376cb7a6-1e50-82a0-9ced-531168a3e0b0"
     - stage: uuid
-      stageUuid: "2810fe8e-d967-8e84-8b8e-2996778247f4"
+      stageUuid: "8ae01676-2b29-8be4-ac0d-c320dabd2767"
 version: 2
 ---
 # currency-rates

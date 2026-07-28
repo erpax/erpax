@@ -2,11 +2,11 @@
 name: ecosystem
 description: "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law."
 atomPath: ecosystem
-coordinate: ecosystem · 5/round · 4f5ba0f9
-contentUuid: "5966fc15-d82e-5d0e-aa21-b56db323f89f"
-diamondUuid: "979d0b32-5ea0-8cc7-b66b-62184f9db106"
-uuid: "4f5ba0f9-0f3f-81fa-a30d-0a0042cf63a9"
-horo: 5
+coordinate: "ecosystem · 4/weave · e0ca1c1a"
+contentUuid: "2ba78e30-4180-5098-b9c1-7e3417cf6294"
+diamondUuid: "e9ee24f8-c7a5-8fd7-b957-bd19aa3f352a"
+uuid: "e0ca1c1a-6245-8c00-88f7-127fbc67b5db"
+horo: 4
 bonds:
   in:
     - agent
@@ -60,7 +60,7 @@ bonds:
     - whole
 typography:
   partition: ecosystem
-  bondDegree: 81
+  bondDegree: 83
   neighbors:
     - agent
 standards:
@@ -68,7 +68,6 @@ standards:
   - "Elton (1958) vs May, Will a Large Complex System be Stable? (1972) — diversity–stability debate"
   - "Lindeman, The Trophic-Dynamic Aspect of Ecology (1942) — ~10% energy per level"
   - "Tansley (1935) — coined \"ecosystem\": organisms plus environment as one system"
-  - "computed, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -142,7 +141,7 @@ neighbors:
     - symbiosis
     - whole
 signatures:
-  computationUuid: "b933459e-5626-8aa1-9408-e38efbf9be26"
+  computationUuid: "94031a83-232e-851c-853b-0de057672939"
   stages:
     - stage: path
       stageUuid: "a45bd5cc-b586-84b5-9859-e0f78950a89c"
@@ -153,11 +152,11 @@ signatures:
     - stage: links
       stageUuid: "0e692a18-8740-86e7-94a2-9616ed3d40c2"
     - stage: horo
-      stageUuid: "51993fe1-4eb6-836e-9b82-b2060cf04596"
+      stageUuid: "82edb353-3ad3-8c40-aead-2fd4004ef91f"
     - stage: seal
-      stageUuid: "aad7fd2c-ebfc-8145-9a41-4ff6f6559703"
+      stageUuid: "fea007df-fa7d-8066-880a-129771a399a6"
     - stage: uuid
-      stageUuid: "9d63b9e0-75bd-87fc-a365-f167c58be669"
+      stageUuid: "9c0f6379-bca0-8b4e-9d16-2ae73b018de8"
 version: 2
 ---
 # ecosystem — where decentralization and sustainability are one phenomenon

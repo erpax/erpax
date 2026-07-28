@@ -2,11 +2,11 @@
 name: dimension
 description: "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity."
 atomPath: dimension
-coordinate: dimension · 4/weave · 72eebc1c
-contentUuid: "b9dfea44-72f9-52ca-93a6-6539730997c0"
-diamondUuid: "cb76f0c7-a330-8d6d-ba94-dbdf28e4cee2"
-uuid: "72eebc1c-ee7d-81f9-be90-a7b9163d17c1"
-horo: 4
+coordinate: "dimension · 1/base · b211e0a4"
+contentUuid: "1b184b3a-a73a-539f-8724-1de8f4aa41db"
+diamondUuid: "f3f7ca98-d80e-8e5e-b390-ef2f8c664bfc"
+uuid: "b211e0a4-9be3-8d31-b898-17c6ea4ea21c"
+horo: 1
 bonds:
   in:
     - age
@@ -64,6 +64,7 @@ bonds:
     - torus
     - transaction
     - trinity
+    - ui
     - utility
     - uuid
     - versions
@@ -126,6 +127,7 @@ bonds:
     - torus
     - transaction
     - trinity
+    - ui
     - utility
     - uuid
     - versions
@@ -134,13 +136,15 @@ bonds:
     - zeropoint
 typography:
   partition: dimension
-  bondDegree: 192
+  bondDegree: 195
   neighbors:
     - diamond
 standards:
-  - "ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)"
   - "ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries"
+  - "ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries`"
   - W3C Web Components composition pattern
+  - "W3C Web Components composition pattern`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -234,6 +238,7 @@ neighbors:
     - torus
     - transaction
     - trinity
+    - ui
     - utility
     - uuid
     - versions
@@ -296,6 +301,7 @@ neighbors:
     - torus
     - transaction
     - trinity
+    - ui
     - utility
     - uuid
     - versions
@@ -303,7 +309,7 @@ neighbors:
     - whole
     - zeropoint
 signatures:
-  computationUuid: "cb496f53-cbd4-809b-a32c-715d93093055"
+  computationUuid: "4e651710-b78b-89fb-b5af-d3f90ce778f6"
   stages:
     - stage: path
       stageUuid: "92fc2a3b-9d95-8c5e-b3e1-db1b571310fe"
@@ -314,11 +320,11 @@ signatures:
     - stage: links
       stageUuid: "e4a004dd-20e0-8c3b-970d-b5e4cf59bbcc"
     - stage: horo
-      stageUuid: "cfcef128-607d-8bb1-9249-4381c8019df8"
+      stageUuid: "d26e9bd9-3c05-87eb-98be-f99508524cc6"
     - stage: seal
-      stageUuid: "d501864c-4f69-8199-8b4b-7e8652fb4ec1"
+      stageUuid: "37ba233e-727e-87d6-9763-c5748e33db94"
     - stage: uuid
-      stageUuid: "90c9a8ab-5a8d-8bee-8547-e9c8ec50ee50"
+      stageUuid: "939247d0-c4cc-8c7e-adc0-bd00e9525de9"
 version: 2
 ---
 # dimension — the axis along which entities coexist at one coordinate

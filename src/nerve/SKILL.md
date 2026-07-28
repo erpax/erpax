@@ -2,11 +2,11 @@
 name: nerve
 description: "Use when reasoning about erpax's signal pathway — the nervous organ that fires ALL-OR-NOTHING. The action potential is the gate in flesh: a threshold crossed or not, never partial; idempotent within its refractory window; and leaping node-to-node by saltatory conduction. Three properties of the living nerve are computed and mapped — a structural isomorphism — onto erpax's gate and signal."
 atomPath: nerve
-coordinate: nerve · 7/descent · 2bbb4738
-contentUuid: "fdc79083-cd94-52ef-ba9a-a3614044fbd1"
-diamondUuid: "0e0366af-a95d-8f5b-ac61-c42975dce564"
-uuid: "2bbb4738-2212-8280-ba8b-a85fa20e2863"
-horo: 7
+coordinate: "nerve · 2/share · c06621a1"
+contentUuid: "149d3c53-5277-55b6-98a6-93bdc60ad7fc"
+diamondUuid: "1ed3f56c-9c2d-832b-a01b-00e311609f1f"
+uuid: "c06621a1-0261-83f8-b20d-a770e4763d6c"
+horo: 2
 bonds:
   in:
     - body
@@ -31,7 +31,6 @@ typography:
 standards:
   - "Hodgkin–Huxley action potential · resting ≈−70 mV, threshold ≈−55 mV, spike ≈+40 mV"
   - "Hodgkin–Huxley action potential · resting ≈−70 mV, threshold ≈−55 mV, spike ≈+40 mV, refractory ~2 ms, saltatory up to ≈120 m/s"
-  - computed from first principles (threshold step · refractory window · saltatory speed)
 bindings: []
 neighbors:
   wikilink:
@@ -57,7 +56,7 @@ neighbors:
     - nerve
     - signal
 signatures:
-  computationUuid: "fa7dcd75-5f58-8efa-b5b7-f081d93f34fb"
+  computationUuid: "3a416c32-ac72-8732-b1e5-07998c0330b3"
   stages:
     - stage: path
       stageUuid: "a95ca7a3-ff2f-84e8-8ad9-b0120e5233c5"
@@ -68,11 +67,11 @@ signatures:
     - stage: links
       stageUuid: "94746510-e24f-81d0-8340-d53f02466756"
     - stage: horo
-      stageUuid: "968e2255-8108-8497-9316-22db8b72f95e"
+      stageUuid: "71f98d85-bedb-8ef8-859b-6646dea4f63d"
     - stage: seal
-      stageUuid: "ebef7f38-8c82-8b79-8c02-f317a72d8dd6"
+      stageUuid: "c12c8ff0-61dc-8f9c-964c-f0151d594f37"
     - stage: uuid
-      stageUuid: "c53bb6e8-5d9e-855a-b01f-eaf36f96cb73"
+      stageUuid: "9af36279-80f3-86b3-9683-92ac353dd7b4"
 version: 2
 ---
 # nerve — the all-or-nothing signal (the gate)

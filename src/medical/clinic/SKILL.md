@@ -1,30 +1,26 @@
 ---
 name: clinic
 description: "Use when reasoning about clinic as a medical facet of [[medical]] — vocabulary pivot to @/clinic; nested not duplicated."
-atomPath: medical/clinic
-coordinate: medical/clinic · 4/weave · 64d74f5a
-contentUuid: "3299caf7-91e2-5a79-9ff7-37579e991d33"
-diamondUuid: "2e44edb4-22a1-8a22-864d-0fecb458b5ae"
-uuid: "64d74f5a-8d77-8ab3-91f9-be1c4c38e736"
+atomPath: "medical/clinic"
+coordinate: "medical/clinic · 4/weave · 73151d1a"
+contentUuid: "158704ac-1903-5d5a-ac0b-98858846e052"
+diamondUuid: "9049c1ee-2571-8e1e-b543-e63ee028d20b"
+uuid: "73151d1a-c507-8a94-9204-9f693b948c00"
 horo: 4
 bonds:
   in:
     - clinic
-    - collapse
     - law
     - medical
     - merge
-    - sti
   out:
     - clinic
-    - collapse
     - law
     - medical
     - merge
-    - sti
 typography:
   partition: medical
-  bondDegree: 23
+  bondDegree: 19
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -37,20 +33,16 @@ neighbors:
     - merge
   matrix:
     - clinic
-    - collapse
     - law
     - medical
     - merge
-    - sti
   backlinks:
     - clinic
-    - collapse
     - law
     - medical
     - merge
-    - sti
 signatures:
-  computationUuid: "a9b9a59a-e3a5-8c90-80fd-6a60b44dcc6e"
+  computationUuid: "b3b4fe5a-4d4b-8f2b-adad-452bee762979"
   stages:
     - stage: path
       stageUuid: "5ac82f98-70ce-8875-a963-2ace5effc55a"
@@ -61,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "0c6f081f-0549-8948-8ea1-f42b465d3628"
     - stage: horo
-      stageUuid: "cda23701-0467-8fc9-9634-3981edf769b0"
+      stageUuid: "0696760b-8d50-80dd-ac7f-809107a49f35"
     - stage: seal
       stageUuid: "051cb2da-b7e6-8cdb-973e-169f27be32a8"
     - stage: uuid
-      stageUuid: "3d1c90c5-c678-87e0-ad9d-ffff42e3fc85"
+      stageUuid: "69e4ec82-f39f-81c8-a3b6-193b6a28a201"
 version: 2
 ---
 # medical/clinic — medical facet

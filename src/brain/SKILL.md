@@ -2,11 +2,11 @@
 name: brain
 description: "Use when reasoning about erpax's matrix as the connectome organ — a small-world network where any node reaches any other in a handful of hops, wired sparsely yet integrated. ~86 billion neurons, ~150 trillion synapses; high clustering, short path length. Three properties (small-world path length · sparse efficient wiring · connectome-scale cross-check) are computed and mapped — a structural isomorphism — onto erpax's link graph and integrated self-model."
 atomPath: brain
-coordinate: brain · 2/share · 736759f0
-contentUuid: "c12b3dce-8e1c-5676-89c1-3f7ee5633842"
-diamondUuid: "14bcce18-8ece-8ad8-b039-0592fb42e346"
-uuid: "736759f0-cb8c-8daa-9486-543bf419f8f0"
-horo: 2
+coordinate: "brain · 5/round · 21090bea"
+contentUuid: "4af4a62b-c717-5fe6-af51-7685eef07239"
+diamondUuid: "85eae472-fb6e-8981-951e-33ff2e37caff"
+uuid: "21090bea-1fc6-8feb-b6d7-2ce11840bc05"
+horo: 5
 bonds:
   in:
     - body
@@ -35,7 +35,6 @@ typography:
   bondDegree: 34
   neighbors: []
 standards:
-  - "computed (small-world path length log(N)/log(k) · sparsity k/N · scale cross-check)"
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett & Bullmore, 2006)"
   - "≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett, Bullmore)"
 bindings: []
@@ -71,7 +70,7 @@ neighbors:
     - structure
     - uuid
 signatures:
-  computationUuid: "f3a1141d-7da0-8d07-931a-c5406bca0edd"
+  computationUuid: "e34a98ce-be64-8c5a-86aa-1e423bf028cd"
   stages:
     - stage: path
       stageUuid: "1ce92240-d9ae-8c67-8d43-fe65e783d44d"
@@ -82,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "ca9365b0-b01d-8d08-a696-be1ef56449fb"
     - stage: horo
-      stageUuid: "9678022b-b4ce-84dd-8ac6-c62097f0d508"
+      stageUuid: "e94cddf4-46ad-8944-99b3-b2b67cb93816"
     - stage: seal
-      stageUuid: "b06531b8-48e4-8b4a-a9b7-750be128ce65"
+      stageUuid: "2fc162b7-51ab-826d-804c-38140fd92f53"
     - stage: uuid
-      stageUuid: "298ee253-7cba-8f29-a3bb-41a9afa59b64"
+      stageUuid: "10fbec69-688e-8cee-bdb0-75ee5e20f50d"
 version: 2
 ---
 # brain — the small-world connectome (the matrix)

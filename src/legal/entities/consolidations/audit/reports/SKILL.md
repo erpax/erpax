@@ -1,39 +1,32 @@
 ---
 name: reports
 description: "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection."
-atomPath: legal/entities/consolidations/audit/reports
-coordinate: legal/entities/consolidations/audit/reports · 4/weave · 9eb8e064
-contentUuid: "39ecbd89-8dbe-5fdd-ab73-ebe9a6354b5d"
-diamondUuid: "d16ed004-4465-8d09-ba96-5f4d8f9670cc"
-uuid: "9eb8e064-0a3a-8cd4-bbfc-cbd8cf30a3a0"
-horo: 4
+atomPath: "legal/entities/consolidations/audit/reports"
+coordinate: "legal/entities/consolidations/audit/reports · 5/round · 73204c74"
+contentUuid: "7157efb7-5eb2-511a-b007-9e502835a3cc"
+diamondUuid: "84d2b4e0-91be-8a70-a4d4-446859213b70"
+uuid: "73204c74-db78-8044-bc05-43a9ee2e6713"
+horo: 5
 bonds:
   in:
     - accounting
     - audit
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   out:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 typography:
   partition: legal
   bondDegree: 0
   neighbors: []
 standards:
   - "ISA-700 auditor-report"
-  - "ISO-19011:2018 reporting"
   - "SOX §404 internal-controls"
 bindings: []
 neighbors:
@@ -41,24 +34,18 @@ neighbors:
     - reports
   matrix:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   backlinks:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 signatures:
-  computationUuid: "45b85e11-86f1-8327-9d12-79064f532c5a"
+  computationUuid: "ed8dee24-e32d-8b9b-a8be-8bc6fe15bdf6"
   stages:
     - stage: path
       stageUuid: "f737bd84-3a71-8275-ba40-d77605bda028"
@@ -69,11 +56,11 @@ signatures:
     - stage: links
       stageUuid: "fd1ba99b-81d1-8376-a1e3-4c76dfe97fa5"
     - stage: horo
-      stageUuid: "b6596cab-df4f-85ea-b9a9-be9e60710aa2"
+      stageUuid: "0c2b3f5c-7aa2-856f-a7d5-e56d61d955e4"
     - stage: seal
       stageUuid: "95207687-9e45-8668-a4ea-e1bacb94eb6e"
     - stage: uuid
-      stageUuid: "ed4de121-b2b6-8a5f-a444-1b487a6d7b14"
+      stageUuid: "05531ada-9db8-8b6c-80d1-05b4202fbcd7"
 version: 2
 ---
 # audit-reports

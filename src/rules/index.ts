@@ -18,6 +18,7 @@ import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
+import { hostMathViolations } from '@/algebra'
 import { matrixCrackViolations } from '@/matrix'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { engineeringConformance } from '@/engineering'
@@ -175,6 +176,16 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
       baseline: 0,
     }),
   ])
+  // host-math — Math.* in algebra atoms (qubit · algebra · pi · e · phi · rodin · coincidence).
+  // Baseline 0 is the THEOREM: all theorems are algebra ([[algebra]]/host).
+  const hostMath = hostMathViolations(cwd)
+  const hostMathSeal = seal([
+    guardian({
+      axis: 'host-math',
+      violations: hostMath.length,
+      baseline: 0,
+    }),
+  ])
   const waveGaps = waveAccountingGapViolations(cwd)
   const waveGapSeal = seal([
     guardian({ axis: 'accounting-wave', violations: waveGaps.count, baseline: 0 }),
@@ -211,6 +222,7 @@ export function assertRulesHold(cwd: string = process.cwd()): RulesHoldVerdict {
     ...importSeal.guardians,
     ...crackSeal.guardians,
     ...bypassSeal.guardians,
+    ...hostMathSeal.guardians,
     ...waveGapSeal.guardians,
     ...engineeringSeal.guardians,
     ...compatibilitySeal.guardians,

@@ -1,12 +1,12 @@
 ---
 name: measurements
 description: "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register."
-atomPath: fair/value/measurements
-coordinate: fair/value/measurements · 5/round · 0ac2fc80
-contentUuid: "6d4ce0c4-619b-579c-bd4f-471c9e7a02d4"
-diamondUuid: "e253a418-7b76-8009-b8bf-078c06e3a915"
-uuid: "0ac2fc80-78e6-89da-865e-8f15510a01f2"
-horo: 5
+atomPath: "fair/value/measurements"
+coordinate: "fair/value/measurements · 7/descent · ca5c5f59"
+contentUuid: "b659ecc5-1bde-5bb2-9a18-93f59d4a14b5"
+diamondUuid: "00a12ad0-9156-8839-9748-671512acc988"
+uuid: "ca5c5f59-559b-8a45-8487-3426197b9b2d"
+horo: 7
 bonds:
   in:
     - accounting
@@ -43,18 +43,26 @@ typography:
   neighbors: []
 standards:
   - "IFRS IFRS-13 §72 fair-value-hierarchy-three-levels"
+  - "IFRS IFRS-13 §72 fair-value-hierarchy-three-levels`"
   - "IFRS IFRS-13 §76 level-1-quoted-prices"
+  - "IFRS IFRS-13 §76 level-1-quoted-prices`"
   - "IFRS IFRS-13 §81 level-2-observable-inputs"
+  - "IFRS IFRS-13 §81 level-2-observable-inputs`"
   - "IFRS IFRS-13 §86 level-3-unobservable-inputs"
+  - "IFRS IFRS-13 §86 level-3-unobservable-inputs`"
   - "IFRS IFRS-13 §9 fair-value-definition"
+  - "IFRS IFRS-13 §9 fair-value-definition`"
   - "IFRS IFRS-13 §93 disclosure-requirements"
+  - "IFRS IFRS-13 §93 disclosure-requirements`"
   - "IFRS-13"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-fair-value"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time measurement-date"
+  - "ISO-8601-1:2019 date-time measurement-date`"
   - "SOX §404 internal-controls TOM-FV-01 valuation-process"
   - "US-GAAP"
   - "US-GAAP ASC-820 fair-value-measurement"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -94,7 +102,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "ecec54ec-d965-835e-b90c-3081509c7cea"
+  computationUuid: "2a26e33a-c4a5-8ab6-88b9-27fce54441e2"
   stages:
     - stage: path
       stageUuid: "a61e8171-9ef5-85ac-96cd-0eae28125f3a"
@@ -105,11 +113,11 @@ signatures:
     - stage: links
       stageUuid: "60f2264b-4461-87a7-bd1c-8eee5d5a2c55"
     - stage: horo
-      stageUuid: "16d3887a-bfca-8bd9-9747-09874ea33233"
+      stageUuid: "c5fe52ae-6cff-8761-a5f0-6bee247a65cd"
     - stage: seal
       stageUuid: "e9b257be-591b-8407-ab7e-ea551aeebbce"
     - stage: uuid
-      stageUuid: "a440909c-b7e2-86f5-84a0-b98188f65573"
+      stageUuid: "f9c29eeb-8de5-8a72-91e4-8c44aec2bb95"
 version: 2
 ---
 # fair-value-measurements

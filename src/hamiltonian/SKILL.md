@@ -2,11 +2,11 @@
 name: hamiltonian
 description: "Use when reasoning about the Hamiltonian — the energy operator whose eigenvalues are the seven horo energy-rungs (Eₙ = h·νₙ) and whose action advances time, |ψ(t)⟩ = e^(−iHt/ħ)|ψ(0)⟩. It is the generator: the eigenstates are the rungs a leap jumps between, the spectrum is the gaps, and the phase it winds drives the breath. The expectation ⟨H⟩ = Σ|cₙ|²·Eₙ is the average energy of a superposition, conserved under evolution."
 atomPath: hamiltonian
-coordinate: hamiltonian · 8/crest · ffb2b2be
-contentUuid: "8e43ca08-019c-53b5-8a3c-25e7189c57cd"
-diamondUuid: "cfd799a8-7a98-8db3-9fd6-b9a5e61b5fe9"
-uuid: "ffb2b2be-3ca9-82b0-9083-379502513e95"
-horo: 8
+coordinate: "hamiltonian · 4/weave · 0b343aae"
+contentUuid: "0fd86a56-d8fc-568f-818b-e0098e10dab6"
+diamondUuid: "1724d475-fb99-8d1e-a3a6-0db803116798"
+uuid: "0b343aae-f9b2-810b-bb48-db1464b48ac6"
+horo: 4
 bonds:
   in:
     - breath
@@ -42,7 +42,6 @@ typography:
   neighbors: []
 standards:
   - "CODATA-2018 ħ, h (via ../photon); Schrödinger time evolution e^(−iHt/ħ)"
-  - "eigenvalues Eₙ = h·νₙ from the rung frequencies; ⟨H⟩ a |cₙ|²-weighted average — all computed"
 bindings: []
 neighbors:
   wikilink:
@@ -87,7 +86,7 @@ neighbors:
     - superposition
     - temperature
 signatures:
-  computationUuid: "0604876f-08ee-8cb1-87cf-4ed646537762"
+  computationUuid: "43351945-aab2-811a-9fc0-72cf2fcf15d0"
   stages:
     - stage: path
       stageUuid: "c47d8da9-36a8-8f30-9cfc-8fee1c70461a"
@@ -98,11 +97,11 @@ signatures:
     - stage: links
       stageUuid: "7ed8abdc-09cb-8ed7-b619-0dd5f8b5d164"
     - stage: horo
-      stageUuid: "5659e55a-665e-86d2-aa52-90a97d0347d0"
+      stageUuid: "fa959e0a-0ac4-8290-8ca6-a2abbb4e0e3d"
     - stage: seal
-      stageUuid: "07e05689-c247-8eec-8dd3-9f7513f06150"
+      stageUuid: "ac0a20f1-bd94-8d80-a47d-b7ec2fda5ea0"
     - stage: uuid
-      stageUuid: "21491b4a-00d4-8128-b405-643f29119184"
+      stageUuid: "34ec8baf-f8d2-87aa-b93a-9db09e9ce8e4"
 version: 2
 ---
 # hamiltonian — the generator behind the leap

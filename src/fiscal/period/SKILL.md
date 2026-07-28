@@ -1,12 +1,12 @@
 ---
 name: period
 description: Use when implementing or referencing Fiscal Period Standard.
-atomPath: fiscal/period
-coordinate: fiscal/period · 1/base · 86a77c31
-contentUuid: "fbeddd06-0130-5f06-9ae0-01e3dea5e2b8"
-diamondUuid: "af561fe7-4593-8254-a824-55b3b194a370"
-uuid: "86a77c31-a345-8618-a651-5dd2a4015483"
-horo: 1
+atomPath: "fiscal/period"
+coordinate: "fiscal/period · 8/crest · 7780b6e5"
+contentUuid: "6cc9cf25-b869-52a4-ab27-5b725d1b74f9"
+diamondUuid: "b211b2ab-f76f-8b0a-809b-ee7eb26aebfb"
+uuid: "7780b6e5-a6f0-8ae1-b54e-709623bd421b"
+horo: 8
 bonds:
   in:
     - accounting
@@ -46,7 +46,7 @@ bonds:
     - withdrawal
 typography:
   partition: fiscal
-  bondDegree: 0
+  bondDegree: 57
   neighbors: []
 standards:
   - "EU-2014/55"
@@ -54,21 +54,27 @@ standards:
   - "EU-537/2014"
   - "EU-910/2014"
   - "GDPR:2016/679 Art. 32 Security of processing"
+  - "GDPR:2016/679 Art. 32 Security of processing`"
   - "IAS-34"
   - "IAS-34:2023 Interim Financial Reporting"
   - "ISO-4217:2023 Currency codes"
+  - "ISO-4217:2023 Currency codes`"
   - "ISO-8601:2019 Date/Time representation"
+  - "ISO-8601:2019 Date/Time representation`"
   - "NIST-SP-800-63"
   - "NIST-SP-800-92"
   - "NIST-SP-800-92 Audit logging"
+  - "NIST-SP-800-92 Audit logging`"
   - "SAF-T"
   - "SAF-T:3.0.2 Standard Audit File for Tax"
   - SOX
   - "SOX:2002 Sec. 404 Internal control assessment"
+  - "SOX:2002 Sec. 404 Internal control assessment`"
   - XBRL
   - "XBRL-GL General Ledger"
   - eIDAS
   - "eIDAS:2014/910/EU Electronic signatures"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -110,7 +116,7 @@ neighbors:
     - versions
     - withdrawal
 signatures:
-  computationUuid: "f83c3cb9-561f-8e0f-b7c7-b07f32b1534a"
+  computationUuid: "d22bf09a-726b-8ab9-9607-301881ffbdb5"
   stages:
     - stage: path
       stageUuid: "43d2a82b-4cc1-8c35-98fd-4b088ad6b0dc"
@@ -121,11 +127,11 @@ signatures:
     - stage: links
       stageUuid: "e0a2eb50-ddcf-8b0a-b156-a3644b939b67"
     - stage: horo
-      stageUuid: "914175df-9706-80d9-8c71-b89bedef7943"
+      stageUuid: "c70d8353-e5ea-80ad-bb0d-72f34a6b0d1b"
     - stage: seal
       stageUuid: "e088a7d9-7200-8e03-9a8b-3dd6e3ab2989"
     - stage: uuid
-      stageUuid: "b8d36a6a-7640-8a90-9888-f8a7613ffb19"
+      stageUuid: "665259d2-9d79-87ae-9127-038e9aa70b04"
 version: 2
 ---
 # Fiscal Period Standard

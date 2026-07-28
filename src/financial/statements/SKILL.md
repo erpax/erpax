@@ -1,12 +1,12 @@
 ---
 name: statements
 description: "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection."
-atomPath: financial/statements
-coordinate: financial/statements · 8/crest · 54e1f66b
-contentUuid: "0b0de5fc-6886-5557-a15e-62eba6386558"
-diamondUuid: "1c4bc41e-8460-8448-9689-2d53428c2d44"
-uuid: "54e1f66b-50e3-8965-a57c-f36fac71e9bf"
-horo: 8
+atomPath: "financial/statements"
+coordinate: "financial/statements · 2/share · 6f29b818"
+contentUuid: "b1ddc9e6-5cde-56d3-8142-7c0d3e962c61"
+diamondUuid: "8b9dbef6-a76c-81d3-ac91-412edc701f47"
+uuid: "6f29b818-0fed-89d6-9437-58b8d48c9e75"
+horo: 2
 bonds:
   in:
     - accounting
@@ -50,14 +50,16 @@ standards:
   - "IFRS IAS-34 §8 §10 interim-financial-reporting (when statementType ∈ Q1/Q2/Q3 the §10 condensed format applies)"
   - "IFRS IFRS-18 §9 §10 §40 presentation-and-disclosure (effective 2027-01 — replaces IAS-1 with structured operating/investing/financing categories)"
   - "IFRS IFRS-7 §31-§42 financial-instruments-disclosures (statement notes consume IFRS-7 risk-management disclosures)"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time fiscal-period-end generated-at issued-at approved-at"
+  - "ISO-8601-1:2019 date-time fiscal-period-end generated-at issued-at approved-at`"
   - "SOX §302 disclosure-controls"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-205 presentation-of-financial-statements"
   - "US-GAAP ASC-270 interim-reporting"
   - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -100,7 +102,7 @@ neighbors:
     - transaction
     - variance
 signatures:
-  computationUuid: "e1d9eb7e-3dad-8cbf-9941-164a9a7fb123"
+  computationUuid: "ba1717c4-2c43-89c8-9bd6-56a2051ce078"
   stages:
     - stage: path
       stageUuid: "a34a2754-da29-8f74-ad0e-2df260a2a760"
@@ -111,11 +113,11 @@ signatures:
     - stage: links
       stageUuid: "6925f5ca-c1df-8a3b-b16b-3d8abdd46759"
     - stage: horo
-      stageUuid: "e7eb2e92-15bd-8ea8-9657-215d3d218190"
+      stageUuid: "298f80d8-53bd-8f22-903c-4b5b66c8d1f7"
     - stage: seal
-      stageUuid: "faa38e09-69c9-8502-a9bc-5d008e19dab1"
+      stageUuid: "bcf9a2d7-1ece-8100-bb56-4eacf0ef45b6"
     - stage: uuid
-      stageUuid: "fdc392a1-3def-8cfd-8054-9ab80587de46"
+      stageUuid: "3feff1a4-3e90-8fed-9430-11bab33c5043"
 version: 2
 ---
 # financial-statements

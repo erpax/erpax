@@ -20,6 +20,7 @@ import {
   type Pain001Initiation,
   type Pain008Initiation,
   type Pacs004Return,
+  type Pacs008CreditTransfer,
   type BankTransactionCode,
 } from '@/iso/20022'
 
@@ -215,5 +216,32 @@ describe('ISO 20022 — pacs.004 payment return', () => {
     }
     expect(ret.returns[0].originalEndToEndId).toBe('E2E-DD-A')
     expect(ret.returns[0].reasonCode).toBe('AM04')
+  })
+})
+
+describe('ISO 20022 — pacs.008 FI credit transfer (invert of pain.001)', () => {
+  it('shapes an FI-to-FI credit transfer twin of pain.001', () => {
+    const msg: Pacs008CreditTransfer = {
+      messageId: 'PACS8-001',
+      creationDateTime: new Date('2026-05-01T12:00:00Z'),
+      numberOfTransactions: 1,
+      controlSum: 100_00,
+      settlementMethod: 'CLRG',
+      creditTransfers: [
+        {
+          endToEndId: 'E2E-FI-1',
+          amount: 100_00,
+          currency: 'EUR',
+          debtor: { name: 'Acme' },
+          debtorAccount: { iban: 'BG80BNBG96611020345678' },
+          creditor: { name: 'Vendor' },
+          creditorAccount: { iban: 'DE89370400440532013000' },
+          debtorAgentBic: 'BNBGBGSF',
+          creditorAgentBic: 'COBADEFF',
+        },
+      ],
+    }
+    expect(msg.creditTransfers[0]!.endToEndId).toBe('E2E-FI-1')
+    expect(msg.settlementMethod).toBe('CLRG')
   })
 })

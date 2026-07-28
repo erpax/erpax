@@ -1,12 +1,12 @@
 ---
 name: color
 description: "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum."
-atomPath: heart/color
-coordinate: heart/color · 5/round · b1b607e9
-contentUuid: "d06ea392-c7f2-5426-a828-121fb685682a"
+atomPath: "heart/color"
+coordinate: "heart/color · 1/base · 258b602c"
+contentUuid: "3a20e52e-8af6-5133-a098-cecb338e7eae"
 diamondUuid: "4721c2ce-6da1-8e62-85a9-d2d60578ed9a"
-uuid: "b1b607e9-1ba5-8cf5-a779-7e0ab37ab1e7"
-horo: 5
+uuid: "258b602c-7fb4-8657-bea2-35e0d59d1c1f"
+horo: 1
 bonds:
   in:
     - chart
@@ -14,6 +14,7 @@ bonds:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -27,6 +28,7 @@ bonds:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -36,7 +38,7 @@ bonds:
     - vehicle
 typography:
   partition: heart
-  bondDegree: 48
+  bondDegree: 51
   neighbors: []
 standards:
   - A432 tuning; Anahata (4th chakra) = green
@@ -55,6 +57,7 @@ neighbors:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -68,6 +71,7 @@ neighbors:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon

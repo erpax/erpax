@@ -1,12 +1,12 @@
 ---
 name: replay
-description: "Use when an auditor demands \\\"show me how this number was computed and reproduce it\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
-atomPath: beyond/replay
-coordinate: beyond/replay · 2/share · 639ac650
-contentUuid: "800f7e44-6dd8-5218-9525-1eb668f69920"
-diamondUuid: "00a00d3c-9663-8368-a507-a54a741f57c1"
-uuid: "639ac650-edb5-8f63-b068-9ef15dda177d"
-horo: 2
+description: "Use when an auditor demands \\\\\\\"show me how this number was computed and reproduce it\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash."
+atomPath: "beyond/replay"
+coordinate: "beyond/replay · 4/weave · b812a842"
+contentUuid: "5d0f6012-730f-5a8d-bfd9-577168adf4fb"
+diamondUuid: "f57f066b-de4a-88c3-a366-304705f2f92d"
+uuid: "b812a842-15be-857d-a43e-d67958208b65"
+horo: 4
 bonds:
   in:
     - audit
@@ -49,7 +49,7 @@ neighbors:
     - law
     - trinity
 signatures:
-  computationUuid: "61b82564-2af8-8ce1-8c19-fc54b2234f7c"
+  computationUuid: "e24ef319-e29a-8cab-b6e0-c1cd07fc49e5"
   stages:
     - stage: path
       stageUuid: "0e8f4b83-e98b-86c0-9791-fd654ffb1f6a"
@@ -60,11 +60,11 @@ signatures:
     - stage: links
       stageUuid: "9c02f772-ec16-8c68-9ebe-a5864966711a"
     - stage: horo
-      stageUuid: "f804c58b-2668-8f93-8325-579e3307c591"
+      stageUuid: "c45b26ac-b7d8-8411-bc24-acb09ccb5381"
     - stage: seal
       stageUuid: "ffcd2413-5fcd-866f-a960-b3d70a9c7114"
     - stage: uuid
-      stageUuid: "dc207c14-dd18-8899-9dad-5ef39a6cfe8f"
+      stageUuid: "bc302880-da3c-8134-85ca-dd4906582663"
 version: 2
 ---
 # beyond/replay — deterministic replay (byte-identical re-computation)

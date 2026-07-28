@@ -1,12 +1,12 @@
 ---
 name: "7064"
 description: "Use when implementing or referencing `src/standards/iso-7064/`."
-atomPath: iso/7064
-coordinate: iso/7064 · 8/crest · 9980ad77
-contentUuid: "89818832-c93f-5642-9b4c-ee3c451df915"
-diamondUuid: "e8eba428-2ea8-8ef0-9b27-2c5c437cabde"
-uuid: "9980ad77-aa79-871a-80b2-797d6da7f38b"
-horo: 8
+atomPath: "iso/7064"
+coordinate: "iso/7064 · 5/round · f6660833"
+contentUuid: "d3e94a2a-67c2-5519-8ace-306cb8712de4"
+diamondUuid: "e44f6b42-2909-8836-bf34-9319ded83027"
+uuid: "f6660833-a165-8467-9534-c08d2f7f414a"
+horo: 5
 bonds:
   in:
     - iso
@@ -31,7 +31,7 @@ neighbors:
   backlinks:
     - law
 signatures:
-  computationUuid: "e6671d98-da46-80bd-8c64-442d215d8019"
+  computationUuid: "38505c4c-7864-8104-a90e-79fae6cf022c"
   stages:
     - stage: path
       stageUuid: "501672c3-f75c-8837-8892-9949b8f11c91"
@@ -42,11 +42,11 @@ signatures:
     - stage: links
       stageUuid: "6ee5b31f-955e-83b3-97fa-3e49ef86b45f"
     - stage: horo
-      stageUuid: "efe63f75-a6d1-8353-9ee0-6028387072e6"
+      stageUuid: "4b2433be-cca2-8921-b9bb-c01f1c6b7ea8"
     - stage: seal
       stageUuid: "6fc9804e-988f-895d-a058-e21e43f85e3a"
     - stage: uuid
-      stageUuid: "0538948c-6997-89d4-940d-6d8dc29670a6"
+      stageUuid: "0abf63b3-2788-877a-a6e3-ba2ecf38274a"
 version: 2
 ---
 # `src/standards/iso-7064/`

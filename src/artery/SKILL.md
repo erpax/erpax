@@ -2,11 +2,11 @@
 name: artery
 description: "Use when reasoning about erpax's outbound vessel — the Windkessel organ. The artery carries value away from the heart, its elastic wall storing systolic volume and recoiling in diastole to smooth pulsatile output into steady peripheral flow: the cache/buffer in flesh. Three properties (Windkessel smoothing · elastic recoil · conserved mass balance) are computed and mapped — a structural isomorphism — onto erpax."
 atomPath: artery
-coordinate: artery · 7/descent · 5bb32f58
-contentUuid: "7868a1c6-1a8d-57a1-a536-8cfe7d73e28c"
-diamondUuid: "7a5989df-196e-80bf-b909-1321c1ea3be3"
-uuid: "5bb32f58-1ceb-82ed-b4e7-388c5531e086"
-horo: 7
+coordinate: "artery · 2/share · 58b421bd"
+contentUuid: "1eeec51f-40f4-5a60-8386-4ac3d96a2d56"
+diamondUuid: "a0e7f5b7-872c-88f5-a555-179b34eace84"
+uuid: "58b421bd-ff72-8be2-91ae-1ebbdd878118"
+horo: 2
 bonds:
   in:
     - artery
@@ -31,7 +31,6 @@ typography:
 standards:
   - "Frank's Windkessel model — aortic elastic storage smooths cardiac output; arterial pressure ≈120/80 mmHg"
   - "Frank's Windkessel model; aortic elastic storage smooths cardiac output"
-  - "computed (a two-element Windkessel: compliant reservoir + peripheral resistance)"
 bindings: []
 neighbors:
   wikilink:
@@ -57,7 +56,7 @@ neighbors:
     - law
     - vein
 signatures:
-  computationUuid: "0f288c0d-54c9-8919-a771-43bcd9da4afd"
+  computationUuid: "79795bd1-1ff0-8484-9c3c-9073ed444eaa"
   stages:
     - stage: path
       stageUuid: "bb25bd6b-a438-873d-8574-72e2b8171b2e"
@@ -68,11 +67,11 @@ signatures:
     - stage: links
       stageUuid: "a6225074-0316-8293-bb5f-7dff3a4d819e"
     - stage: horo
-      stageUuid: "87df5fe1-b348-804b-a793-fcf4ff47bc99"
+      stageUuid: "d2ff95e1-62c1-8245-ac3e-2b0944acef5d"
     - stage: seal
-      stageUuid: "f12b6c7a-37d4-8461-a586-8625581d8a98"
+      stageUuid: "7218e814-3113-8169-b0c2-4308cb893515"
     - stage: uuid
-      stageUuid: "869e8d2b-103f-8fbe-8839-bc65ac4351bf"
+      stageUuid: "69f0e715-d83f-8bb4-b713-5529a71e216d"
 version: 2
 ---
 # artery — the Windkessel (the elastic buffer)

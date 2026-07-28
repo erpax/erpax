@@ -2,11 +2,11 @@
 name: entity
 description: "Use when reasoning about entity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: entity
-coordinate: entity · 7/descent · a6296090
-contentUuid: "ba80e60b-05e8-502e-b876-48add2e7634a"
-diamondUuid: "9f06c1e4-29f3-848c-9c29-c8a9201aee58"
-uuid: "a6296090-b035-8bc0-a802-ea9882fb1804"
-horo: 7
+coordinate: "entity · 2/share · 86e0a0fb"
+contentUuid: "ec9a5ad7-f20b-5b7d-a117-80ecdf60dc6d"
+diamondUuid: "a940e621-11e5-8e5e-95f2-9847ffacb6a6"
+uuid: "86e0a0fb-2a57-8e61-8b58-09a26a911b9c"
+horo: 2
 bonds:
   in:
     - bio
@@ -15,6 +15,7 @@ bonds:
     - collapse
     - encoded
     - encodes
+    - entity
     - has
     - law
     - main
@@ -32,6 +33,7 @@ bonds:
     - collapse
     - encoded
     - encodes
+    - entity
     - has
     - law
     - main
@@ -44,7 +46,7 @@ bonds:
     - type
 typography:
   partition: entity
-  bondDegree: 58
+  bondDegree: 65
   neighbors: []
 standards:
   - "COSO-2013"
@@ -75,6 +77,7 @@ neighbors:
     - collapse
     - encoded
     - encodes
+    - entity
     - has
     - law
     - main
@@ -92,6 +95,7 @@ neighbors:
     - collapse
     - encoded
     - encodes
+    - entity
     - has
     - law
     - main
@@ -103,7 +107,7 @@ neighbors:
     - sti
     - type
 signatures:
-  computationUuid: "c06c326f-01fa-8a34-893e-5c0ab67c2cab"
+  computationUuid: "efd59026-19b5-8334-bfe1-dbf2afe4240b"
   stages:
     - stage: path
       stageUuid: "da38b77f-624a-8103-8473-29bcd4f7c451"
@@ -114,11 +118,11 @@ signatures:
     - stage: links
       stageUuid: "604b93a6-e42a-809e-ae05-a0a76e750ac2"
     - stage: horo
-      stageUuid: "ddaf36af-8356-8588-b563-90fecf5a4df6"
+      stageUuid: "13e6b2ea-daf9-878d-8f5b-3cc52d6b5910"
     - stage: seal
-      stageUuid: "6ce566c9-c609-8dc7-ab49-954921a02e99"
+      stageUuid: "73137cbd-3deb-894d-b26e-4945510e9a0d"
     - stage: uuid
-      stageUuid: "2adc1923-3486-835b-af64-d89c991ab13d"
+      stageUuid: "cbe4a4fc-9889-888e-b2d6-d152a0a5c083"
 version: 2
 ---
 # entity

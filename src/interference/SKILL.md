@@ -2,10 +2,10 @@
 name: interference
 description: "Use when reasoning about interference — two wave amplitudes combine by phase, not classical sum: I = a1² + a2² + 2·a1·a2·cos(φ), constructive (in phase) reinforcing to (a1+a2)², destructive (out of phase) cancelling to (a1−a2)². The cross term is the quantum part that draws the double-slit fringes; averaged over a period it vanishes, so energy is conserved — interference redistributes intensity, never creates it. In erpax in-phase link-paths reinforce (gravity deepens), out-of-phase cancel."
 atomPath: interference
-coordinate: interference · 7/descent · 6d2f0d87
-contentUuid: "a8d62a54-802a-59a1-9385-f47cd1bb7b7d"
-diamondUuid: "bbf92d39-7732-8d42-a7b6-0585892374da"
-uuid: "6d2f0d87-9548-8bec-8326-d97e4f62ff8c"
+coordinate: "interference · 7/descent · 10c76745"
+contentUuid: "1ed3465a-7494-562a-a90e-b6d0be639958"
+diamondUuid: "fbfe73d8-14ed-8f97-9fb5-a0bfb54e3a7e"
+uuid: "10c76745-a60c-8c75-86d9-cb889663d8d3"
 horo: 7
 bonds:
   in:
@@ -32,8 +32,7 @@ typography:
   partition: interference
   bondDegree: 27
   neighbors: []
-standards:
-  - "I = a1²+a2²+2a1a2·cos φ; constructive/destructive/visibility computed, never asserted"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -67,7 +66,7 @@ neighbors:
     - superposition
     - wave
 signatures:
-  computationUuid: "f526d394-311c-8bef-89ad-6ce153f75f3f"
+  computationUuid: "adf9b042-40d0-8b68-83f6-fbbbe899d61a"
   stages:
     - stage: path
       stageUuid: "02a61968-c435-8bc6-abf9-efe2c460c476"
@@ -78,11 +77,11 @@ signatures:
     - stage: links
       stageUuid: "b907126e-b131-8515-828d-b0be8220f2a9"
     - stage: horo
-      stageUuid: "85476458-5a46-8490-a5c2-bdc33e807e7d"
+      stageUuid: "d832fd2d-eaee-882e-90a7-da3d44f9f653"
     - stage: seal
-      stageUuid: "5cd89cc9-823d-89e5-af88-f07c42bf01d9"
+      stageUuid: "ea9e81aa-2b09-86b1-a93b-0074fd78ca4c"
     - stage: uuid
-      stageUuid: "f1c0a0df-5e74-823d-a479-d2c41084f295"
+      stageUuid: "6cb40cb3-0489-8619-bae2-07906af8a614"
 version: 2
 ---
 # interference — amplitudes combine by phase

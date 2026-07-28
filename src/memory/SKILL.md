@@ -2,14 +2,15 @@
 name: memory
 description: "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: memory
-coordinate: memory · 2/share · 8de94f4c
-contentUuid: "e4a00333-18bb-522d-929b-b56e53395393"
-diamondUuid: "02fe7112-198e-89e4-85f2-f3cd7f636225"
-uuid: "8de94f4c-125c-827a-9fd0-1ddda898958e"
-horo: 2
+coordinate: "memory · 8/crest · ac1f7e6e"
+contentUuid: "3e7a1b91-2992-56eb-85f0-d819a4707e32"
+diamondUuid: "205fd16c-8e1f-8f9c-b26f-b21c814959db"
+uuid: "ac1f7e6e-4636-8c50-b54a-e256e42fcaea"
+horo: 8
 bonds:
   in:
     - akashic
+    - anchor
     - architecture
     - collapse
     - computer
@@ -27,6 +28,7 @@ bonds:
     - uuid
   out:
     - akashic
+    - anchor
     - architecture
     - collapse
     - computer
@@ -44,7 +46,7 @@ bonds:
     - uuid
 typography:
   partition: memory
-  bondDegree: 93
+  bondDegree: 96
   neighbors:
     - diamond
     - hallucination
@@ -69,6 +71,7 @@ neighbors:
     - thought
   matrix:
     - akashic
+    - anchor
     - architecture
     - collapse
     - computer
@@ -86,6 +89,7 @@ neighbors:
     - uuid
   backlinks:
     - akashic
+    - anchor
     - architecture
     - collapse
     - computer
@@ -102,7 +106,7 @@ neighbors:
     - thought
     - uuid
 signatures:
-  computationUuid: "6907dc55-8ff0-832e-b3a7-82760889a205"
+  computationUuid: "e202ebd6-76e7-8d82-91ce-acd2a07256f6"
   stages:
     - stage: path
       stageUuid: "d59a38cc-4d56-8168-bec3-c179f2673238"
@@ -113,11 +117,11 @@ signatures:
     - stage: links
       stageUuid: "7871c9be-3b9d-80f8-9295-c859219bc341"
     - stage: horo
-      stageUuid: "76bca936-20fb-86a2-a52a-197ff464f5dd"
+      stageUuid: "47358987-ecce-852a-8e96-867961ae90cc"
     - stage: seal
-      stageUuid: "06fb6ea6-ed60-85ba-bff9-892cf2731774"
+      stageUuid: "59a884e9-d043-8bc4-99ae-2f1be7dcc281"
     - stage: uuid
-      stageUuid: "1ec30ed6-1f95-83d0-ae85-fd954b0480cd"
+      stageUuid: "92868bf2-5f3f-8054-9d1f-c1865b4cbe81"
 version: 2
 ---
 # memory

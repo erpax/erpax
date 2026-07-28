@@ -1,31 +1,68 @@
 ---
 name: industry
 description: "Use when mapping AI industry failure modes to erpax diamond remedies — hallucination, memory loss, multi-agent collision, prompt injection, audit fragmentation, cost runaway, model drift, PII leakage, human-in-the-loop, vendor lock-in. Pure fns in index.ts bind each problem to existing atoms (thought, diamond, sandbox, receipt, memory, confirm) and extend gaps: workflow correlation receipts, grounded tool calls, cascade depth guard."
-atomPath: ai/industry
-coordinate: ai/industry · 2/share · 64870a03
-contentUuid: "079302b1-a381-5ac5-86b3-d0ab6b6a8fb1"
-diamondUuid: "12af494e-40b8-8900-985c-3a14e879422c"
-uuid: "64870a03-5a7f-8b88-b57e-f15c9faaec42"
-horo: 2
+atomPath: "ai/industry"
+coordinate: "ai/industry · 5/round · ae7b2cab"
+contentUuid: "1c86583f-177c-58fb-8e53-0579d2b9b1c3"
+diamondUuid: "c5f05a46-5d59-875b-a7b8-ceab6b04a650"
+uuid: "ae7b2cab-a2fe-84b8-99c5-51c139c28c50"
+horo: 5
 bonds:
   in:
     - ai
+    - architecture
+    - chat
+    - confirm
+    - diamond
+    - horo
+    - identity
     - law
+    - mcp
+    - merge
+    - receipt
+    - sandbox
+    - seal
     - sector
-    - thing
+    - self
+    - session
+    - suggestions
+    - thought
+    - uuid
   out:
+    - ai
+    - architecture
+    - chat
+    - confirm
+    - diamond
+    - horo
+    - identity
     - law
+    - mcp
+    - merge
+    - receipt
+    - sandbox
+    - seal
     - sector
-    - thing
+    - self
+    - session
+    - suggestions
+    - thought
+    - uuid
 typography:
   partition: ai
-  bondDegree: 29
+  bondDegree: 61
   neighbors:
     - diamond
 standards:
   - "GDPR Art.22(3) right-to-human-intervention"
+  - "ILO-C001"
   - "ISO/IEC 42001:2023 ai-management-system"
+  - "ISO/IEC 42001:2023 ai-management-system`"
+  - "ISO/IEC-25010"
+  - "ISO/IEC-42001"
+  - "OWASP-ASVS"
   - "OWASP-LLM-Top-10:2025 LLM01 prompt-injection"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -48,15 +85,47 @@ neighbors:
     - thought
     - uuid
   matrix:
+    - ai
+    - architecture
+    - chat
+    - confirm
+    - diamond
+    - horo
+    - identity
     - law
+    - mcp
+    - merge
+    - receipt
+    - sandbox
+    - seal
     - sector
-    - thing
+    - self
+    - session
+    - suggestions
+    - thought
+    - uuid
   backlinks:
+    - ai
+    - architecture
+    - chat
+    - confirm
+    - diamond
+    - horo
+    - identity
     - law
+    - mcp
+    - merge
+    - receipt
+    - sandbox
+    - seal
     - sector
-    - thing
+    - self
+    - session
+    - suggestions
+    - thought
+    - uuid
 signatures:
-  computationUuid: "4cda11f9-5d14-8305-aff6-23483c9d0d00"
+  computationUuid: "7a3339d7-ed5c-8f06-962a-85dbc2a307ea"
   stages:
     - stage: path
       stageUuid: "bf8c81db-dabb-81a4-9ea7-d9b8b7a0a33b"
@@ -67,11 +136,11 @@ signatures:
     - stage: links
       stageUuid: "b67af4e5-f8b5-8d87-a510-8cce184250ee"
     - stage: horo
-      stageUuid: "fec05add-0bcb-85fc-924b-890ba9111ed4"
+      stageUuid: "2bd9bddd-7201-8cbf-a609-0b534fb8c4ca"
     - stage: seal
-      stageUuid: "7519b0c5-6c0b-8f42-8084-e941549fa24c"
+      stageUuid: "59a3b14f-c480-8bdc-a793-86411c4bae5e"
     - stage: uuid
-      stageUuid: "55cf05fa-8621-8bc3-ad54-de580ca794cb"
+      stageUuid: "338a5e52-d5ce-83eb-85e1-962b51d19e94"
 version: 2
 ---
 # ai/industry — AI industry problems → erpax diamond remedies

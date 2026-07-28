@@ -1,12 +1,12 @@
 ---
 name: calculations
 description: "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection."
-atomPath: gl/accounts/tax/calculations
-coordinate: gl/accounts/tax/calculations · 8/crest · ea9be5f6
-contentUuid: "7c755356-275a-5cef-8185-29f57d2f805f"
-diamondUuid: "2559f315-74be-807b-ac65-cf8667fd6f18"
-uuid: "ea9be5f6-017c-8191-8c4a-6855f6625946"
-horo: 8
+atomPath: "gl/accounts/tax/calculations"
+coordinate: "gl/accounts/tax/calculations · 4/weave · 6f640afe"
+contentUuid: "18f13c65-74ae-5065-84fb-b9d83ab76bdc"
+diamondUuid: "98705b79-ea93-85da-8b2a-23dd4035fc03"
+uuid: "6f640afe-97f1-88b8-8088-ca4b120b98d9"
+horo: 4
 bonds:
   in:
     - accounting
@@ -37,19 +37,20 @@ typography:
   bondDegree: 34
   neighbors: []
 standards:
-  - "COSO-ERM-2017"
-  - "EN-16931"
   - "EN-16931:2017 §BG-23 vat-breakdown"
-  - "EU-2017/1132"
-  - "EU-2017/828"
-  - "ISO-19011:2018 audit-trail"
+  - "EN-16931:2017 §BG-23 vat-breakdown`"
   - "ISO-3166-1:2020 country-codes jurisdiction"
+  - "ISO-3166-1:2020 country-codes jurisdiction`"
   - "ISO-3166-2"
   - "ISO-3166-2:2020 subdivision-codes jurisdiction"
+  - "ISO-3166-2:2020 subdivision-codes jurisdiction`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time period posted-at filed-at paid-at"
+  - "ISO-8601-1:2019 date-time period posted-at filed-at paid-at`"
   - "OECD SAF-T tax-table"
   - "SOX §404 internal-controls tax-position"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -86,7 +87,7 @@ neighbors:
     - tax
     - taxexempt
 signatures:
-  computationUuid: "1ac99ead-311d-8169-9683-04c2f8d9de03"
+  computationUuid: "4554b453-ad6f-81d4-acd0-a81f4baadc60"
   stages:
     - stage: path
       stageUuid: "a21c4d46-dfb9-8827-8d5d-ef79247677a5"
@@ -97,11 +98,11 @@ signatures:
     - stage: links
       stageUuid: "8ea662ea-5321-83e2-a608-92cabfadaa94"
     - stage: horo
-      stageUuid: "4cc803eb-aa63-8917-8acc-90d6aee36dfc"
+      stageUuid: "0f2f22c9-0a4c-84bb-88c2-3298fe1c8248"
     - stage: seal
       stageUuid: "b7722fdd-120b-851d-9fc0-2b05bb0200b2"
     - stage: uuid
-      stageUuid: "d729be4b-a12f-8302-ae41-48bde7d5a785"
+      stageUuid: "93ba2164-f153-8aed-a512-615ba57684e7"
 version: 2
 ---
 # tax-calculations

@@ -2,11 +2,11 @@
 name: matrix
 description: "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding."
 atomPath: matrix
-coordinate: matrix · 1/base · 97618666
-contentUuid: "18d5d51b-1ee4-559d-adf3-3e8cae6bb01d"
-diamondUuid: "3fd42308-dbaf-8979-bc04-64aeae008d60"
-uuid: "97618666-b824-8c1c-94c4-3cf67f55c3b7"
-horo: 1
+coordinate: "matrix · 8/crest · dd6235fc"
+contentUuid: "5b96c796-c0c3-5745-b609-25a0480cdcf3"
+diamondUuid: "ddf42e73-a3af-8d41-ade5-e3fb2adc6c32"
+uuid: "dd6235fc-2e2d-8452-b984-07f8d5e15b3d"
+horo: 8
 bonds:
   in:
     - addressed
@@ -49,6 +49,7 @@ bonds:
     - hallucination
     - harmony
     - holographic
+    - invisible
     - kabbalah
     - law
     - linearity
@@ -79,6 +80,7 @@ bonds:
     - singularity
     - skills
     - society
+    - taichi
     - topography
     - torus
     - transaction
@@ -91,6 +93,7 @@ bonds:
     - war
     - wave
     - whole
+    - word
   out:
     - addressed
     - akashic
@@ -132,6 +135,7 @@ bonds:
     - hallucination
     - harmony
     - holographic
+    - invisible
     - kabbalah
     - law
     - linearity
@@ -162,6 +166,7 @@ bonds:
     - singularity
     - skills
     - society
+    - taichi
     - topography
     - torus
     - transaction
@@ -174,9 +179,10 @@ bonds:
     - war
     - wave
     - whole
+    - word
 typography:
   partition: matrix
-  bondDegree: 285
+  bondDegree: 294
   neighbors:
     - aura
 standards: []
@@ -241,6 +247,7 @@ neighbors:
     - hallucination
     - harmony
     - holographic
+    - invisible
     - kabbalah
     - law
     - linearity
@@ -271,6 +278,7 @@ neighbors:
     - singularity
     - skills
     - society
+    - taichi
     - topography
     - torus
     - transaction
@@ -283,6 +291,7 @@ neighbors:
     - war
     - wave
     - whole
+    - word
   backlinks:
     - addressed
     - akashic
@@ -324,6 +333,7 @@ neighbors:
     - hallucination
     - harmony
     - holographic
+    - invisible
     - kabbalah
     - law
     - linearity
@@ -354,6 +364,7 @@ neighbors:
     - singularity
     - skills
     - society
+    - taichi
     - topography
     - torus
     - transaction
@@ -366,23 +377,24 @@ neighbors:
     - war
     - wave
     - whole
+    - word
 signatures:
-  computationUuid: "e6fdf8f7-0bec-8a71-b22a-fd1d3c2ddfc7"
+  computationUuid: "319af242-66fb-8163-b888-bda740e980e6"
   stages:
     - stage: path
       stageUuid: "c75f18c2-e07b-844d-a3c4-da5b5c02bd8b"
     - stage: trinity
-      stageUuid: "ec3031d6-aefd-81c5-90d9-7a0184036b95"
+      stageUuid: "b9a78c5d-971b-88d7-83ba-fdb64eb397f9"
     - stage: boundary
-      stageUuid: "9594d325-54b0-8256-8869-d4c0c8af9f78"
+      stageUuid: "ff5d84a5-dc98-8d07-8696-9687e456bf3b"
     - stage: links
       stageUuid: "82deeabf-37f8-8879-b914-d45f534e4496"
     - stage: horo
-      stageUuid: "45cd2ea6-aeca-8cd0-95de-b6f589d2d213"
+      stageUuid: "ced0a06c-27b6-88ad-852a-da564485947d"
     - stage: seal
-      stageUuid: "52e4e3d0-c926-870b-a948-9ea09817bb6d"
+      stageUuid: "4fc73ba2-4a70-83de-85e4-a56e4b1fa7e6"
     - stage: uuid
-      stageUuid: "c881a8f3-93ba-8d58-aeb2-d66e1b756751"
+      stageUuid: "50940e6c-08bc-8e80-96ec-e74aa5c3ab72"
 version: 2
 ---
 # matrix — the construct, pointed the other way

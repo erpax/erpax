@@ -1,12 +1,12 @@
 ---
 name: receipts
 description: "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition."
-atomPath: items/purchase/orders/goods/receipts
-coordinate: items/purchase/orders/goods/receipts · 5/round · fd43bc25
-contentUuid: "16090355-8d3c-5dda-9522-795aa6e15d7a"
-diamondUuid: "1c189b56-5dbe-849a-bec0-f2b42925aecc"
-uuid: "fd43bc25-e3ce-8854-8069-36fbc5b13b14"
-horo: 5
+atomPath: "items/purchase/orders/goods/receipts"
+coordinate: "items/purchase/orders/goods/receipts · 8/crest · 4690034c"
+contentUuid: "43250960-891e-581b-9314-f6cd163c9263"
+diamondUuid: "d092b40e-8c22-811e-8a08-7435095517df"
+uuid: "4690034c-ff8b-8b22-bd2f-5a7dc038d153"
+horo: 8
 bonds:
   in:
     - accounting
@@ -33,13 +33,14 @@ typography:
   neighbors: []
 standards:
   - "EN-16931:2017 §BG-13 delivery-information"
+  - "EN-16931:2017 §BG-13 delivery-information`"
   - "IFRS IAS-2 inventories goods-in-transit"
-  - "IFRS-15 §31 revenue-substantiation shipment-FOB-date"
   - "IFRS-15 §38-42 revenue-recognition FOB-point-timing"
-  - "ISO-19011:2018 audit-trail receipt-evidence"
   - "ISO-8601-1:2019 date-time received-at"
+  - "ISO-8601-1:2019 date-time received-at`"
   - "SOX §404 internal-controls three-way-match"
   - "US-GAAP ASC-330 inventory at-cost"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -63,7 +64,7 @@ neighbors:
     - supto
     - versions
 signatures:
-  computationUuid: "4e65cd95-7beb-8ae3-8288-6a203dc4a837"
+  computationUuid: "de907b03-3a9d-85f4-b617-fe8c46924f0d"
   stages:
     - stage: path
       stageUuid: "0dab4d6c-f8c4-8dd3-873e-4fa630c0ad97"
@@ -74,11 +75,11 @@ signatures:
     - stage: links
       stageUuid: "77d4caf5-883c-891a-abdb-8f533d764c5f"
     - stage: horo
-      stageUuid: "f7dc06ab-30d1-8586-83c1-fe6a4932a21a"
+      stageUuid: "058603d9-1fb0-8fa0-8f3f-c6f263e29bf6"
     - stage: seal
       stageUuid: "ba660399-fbfd-8d9d-bbe8-2f44cff5e4be"
     - stage: uuid
-      stageUuid: "880ca0d8-9e41-8b52-8977-fbf8a5cd0a4c"
+      stageUuid: "6983e527-b101-84df-bfc9-77678f13b42e"
 version: 2
 ---
 # goods-receipts

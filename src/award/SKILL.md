@@ -2,11 +2,11 @@
 name: award
 description: Use when reasoning about award — An award won by or for this item.
 atomPath: award
-coordinate: award · 8/crest · 0a6b62f2
-contentUuid: "ebac1cf6-e2e3-58c3-85f9-d76beb5bb380"
-diamondUuid: "d96154b3-2458-81ed-910e-c0e10a867f7f"
-uuid: "0a6b62f2-4593-8f50-a2ec-fca105129c49"
-horo: 8
+coordinate: "award · 2/share · 6d3cab10"
+contentUuid: "80598c28-7876-567a-aae8-30937488811b"
+diamondUuid: "2d7757ae-d594-8907-8001-8c4156af2fe8"
+uuid: "6d3cab10-314c-8c42-ab61-dc9f5a73a159"
+horo: 2
 bonds:
   in:
     - law
@@ -32,22 +32,22 @@ neighbors:
     - law
     - thing
 signatures:
-  computationUuid: "840e7baa-0cd1-8e6b-932a-7b0d8b13a0b2"
+  computationUuid: "6f357f3f-61c4-8cfe-b014-d6c734af389f"
   stages:
     - stage: path
       stageUuid: "bb78049e-e281-82fb-985c-2aaecbd2c7dd"
     - stage: trinity
-      stageUuid: "179597aa-d977-80ea-8519-7a61484922c1"
+      stageUuid: "51c0655e-6206-858f-80a2-e67a66ea358d"
     - stage: boundary
-      stageUuid: "83db15ef-45ba-8782-9aff-b2ffd104d29a"
+      stageUuid: "261ee5b7-c6b5-80c1-a28b-846c46669638"
     - stage: links
       stageUuid: "58ba36e5-e6b4-8893-b4f4-f17b884cf7c1"
     - stage: horo
-      stageUuid: "27025cd4-4a5a-84b0-b1c2-8ff402eadf8b"
+      stageUuid: "c213ddbb-396a-80de-87fc-3c56b5de2f97"
     - stage: seal
-      stageUuid: "55b5cec7-3e8d-852a-9909-8db99e330a69"
+      stageUuid: "76fee2b0-ce33-8a9e-a794-525d2be01770"
     - stage: uuid
-      stageUuid: "ebee5a6a-d5e3-8abe-ba72-cdf0c249b3be"
+      stageUuid: "06d637ec-c0c8-8c8b-81bf-43b52431e328"
 version: 2
 ---
 # award

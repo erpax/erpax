@@ -1,11 +1,11 @@
 ---
 name: entry
-description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\"all accounted in all directions ⇒ the wiring is complete\\\"."
+description: "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\\\\\"all accounted in all directions ⇒ the wiring is complete\\\\\\\"."
 atomPath: entry
-coordinate: entry · 7/descent · 6f3a18df
-contentUuid: "90cdd1e9-95e9-59ca-b9b6-d19bfe7440bc"
-diamondUuid: "90d868dc-b5f5-803a-a8ef-f09fbebc264d"
-uuid: "6f3a18df-42fd-84c3-9701-f7e470653e32"
+coordinate: "entry · 7/descent · 0b2dad63"
+contentUuid: "fc178fdf-c288-5fef-8719-b3b8ac3d575b"
+diamondUuid: "0a075a6b-9535-83e8-8568-8ce3bb53ee7f"
+uuid: "0b2dad63-1ef5-8671-aab5-4c0f51ad6b1f"
 horo: 7
 bonds:
   in:
@@ -45,6 +45,7 @@ bonds:
     - readme
     - research
     - reverse
+    - rodin
     - run
     - runs
     - sales
@@ -101,6 +102,7 @@ bonds:
     - readme
     - research
     - reverse
+    - rodin
     - run
     - runs
     - sales
@@ -122,15 +124,16 @@ bonds:
     - workspace
 typography:
   partition: entry
-  bondDegree: 182
+  bondDegree: 185
   neighbors: []
 standards:
-  - "EU-2002/58"
   - "FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation"
   - "IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)"
+  - "IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)`"
   - "ISO 20022: debtor/creditor are the two signs of ONE transfer"
-  - "ISO-20022"
+  - "ISO 20022: debtor/creditor are the two signs of ONE transfer`"
   - "UBL-2.1"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -182,6 +185,7 @@ neighbors:
     - readme
     - research
     - reverse
+    - rodin
     - run
     - runs
     - sales
@@ -238,6 +242,7 @@ neighbors:
     - readme
     - research
     - reverse
+    - rodin
     - run
     - runs
     - sales
@@ -258,7 +263,7 @@ neighbors:
     - whole
     - workspace
 signatures:
-  computationUuid: "8e92117e-b2af-83de-88db-5f7d861c2102"
+  computationUuid: "dc2e97e3-1e6c-875f-b35d-4d19f7ab097f"
   stages:
     - stage: path
       stageUuid: "68fb5705-4683-8f65-8d52-83706909b8c7"
@@ -269,11 +274,11 @@ signatures:
     - stage: links
       stageUuid: "3bed8497-c085-893a-84bc-bb3bc3902bac"
     - stage: horo
-      stageUuid: "cd3611d8-1f54-8939-8a9c-513dacf92e8b"
+      stageUuid: "2b6f04ba-25f6-86af-a3fa-d075d653a6c7"
     - stage: seal
-      stageUuid: "952e99a5-b2e6-8349-a573-c6a9188f77a8"
+      stageUuid: "f0a543a8-0236-8428-ac2d-f94a5c49e51f"
     - stage: uuid
-      stageUuid: "7be26d36-7a27-856d-a362-21c5b97dc413"
+      stageUuid: "2ca3bb7a-cf18-80c1-95ce-088768cf59ea"
 version: 2
 ---
 # entry — the universal double-entry (all based on debit/credit)

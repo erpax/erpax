@@ -1,12 +1,12 @@
 ---
 name: link
 description: "Use when one atom references another in prose — every wikilink must resolve to a real atom, no dead wires; coverage = resolving / total over the live corpus map."
-atomPath: convention/link
-coordinate: convention/link · 2/share · f9f30763
-contentUuid: "3bba74a0-a081-5505-a79a-b2ab3fc38c44"
-diamondUuid: "1b433223-1ac2-8733-a268-2fafd742935f"
-uuid: "f9f30763-26c7-8226-9c63-c0fc17bed200"
-horo: 2
+atomPath: "convention/link"
+coordinate: "convention/link · 8/crest · 016c8124"
+contentUuid: "25c3426e-9c85-5913-9a5c-faf91e949686"
+diamondUuid: "16512ade-fd8f-8ceb-835d-d09309629a8b"
+uuid: "016c8124-b604-8307-99ce-9b37f41a840c"
+horo: 8
 bonds:
   in:
     - analog
@@ -101,7 +101,6 @@ standards:
   - "CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word"
   - "CommonMark / Obsidian double-bracket wikilink syntax — resolved by normalized leaf word against the shared corpus map"
   - "UBL-2.1"
-  - "coverage read LIVE from the corpus wikiMap (`walk(SKILLS_DIR)`); never asserted, never defaulted — total > 0 by architecture"
 bindings: []
 neighbors:
   wikilink:
@@ -200,7 +199,7 @@ neighbors:
     - triggered
     - typography
 signatures:
-  computationUuid: "27b88f96-29ff-8f3a-9521-e1204433bf9b"
+  computationUuid: "38d26c0f-706c-8276-964b-6bf670593140"
   stages:
     - stage: path
       stageUuid: "4f12721d-341e-8779-9d0a-cf8212509727"
@@ -211,11 +210,11 @@ signatures:
     - stage: links
       stageUuid: "c4664dd3-6406-81a3-8588-f559e923e520"
     - stage: horo
-      stageUuid: "ae5eb3a6-1bbe-818b-8470-7f2e1a26b357"
+      stageUuid: "3298e13f-f0c3-83ab-a6ac-d9ca7b14cd81"
     - stage: seal
-      stageUuid: "c8e5ed7c-0ba8-8978-b2e4-77dd74f203d7"
+      stageUuid: "7cf09e63-2371-8497-97e1-66a2be400971"
     - stage: uuid
-      stageUuid: "3cdaf292-79a6-8e62-b6ed-c79c59c0fc59"
+      stageUuid: "ef7e562f-faf9-8d0a-b1c4-c896aec44022"
 version: 2
 ---
 # convention/link — every [[link]] resolves

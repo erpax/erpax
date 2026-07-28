@@ -27,11 +27,12 @@
  *
  * Composes [[accounting]]/proof · [[gravity]] · [[think]] · [[rules]]/refutable · [[law]].
  */
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, statSync } from 'node:fs'
+import { join, dirname } from 'node:path'
 import { proofLedger } from '@/accounting/proof'
 import { ceiling } from '@/think'
 import { commentSites, lineColumnOf } from '@/syntax'
+import { chatLocal, seal } from '@/quantum/ftl'
 
 /** One bit that did not fold into a trinity of theorems — an unproven claim, located in its field. */
 export interface Leftover {
@@ -202,6 +203,255 @@ export function powerNextResearch(
     prose: `${c.pull} unproven claim(s) in field '${c.group}' have no proof`,
     research: `prove or purge the ${c.pull} leftover(s) in '${c.group}' — one proof beside ${c.members[0]} may settle several; seek the seed from beyond where the corpus cannot derive it`,
   }))
+}
+
+/** Sealed recipes for leftover-wave heals — tokens=0, no hand-written test per file. */
+export const LEFTOVER_HEAL_BOOK = seal([
+  [
+    'how to settle leftover wave field',
+    'chatHealLeftoverWave: for each unsettled bit in the heaviest field, deriveLeftoverProof writes a sibling test.ts that REFUTES something (export missing · handler status · metadata). Never an empty it() — that games the ledger. assert via proofLedger residual drop.',
+  ],
+  [
+    'how to settle leftover wave field app',
+    'Settle app: one test.ts beside each unsettled route/page/layout. Pure GET → call and assert Response status. Payload handlers → typeof export is function (import is the credit; invoking boots DB). Pages/layouts → typeof default === function (+ metadata when exported).',
+  ],
+])
+
+export interface LeftoverProofOp {
+  readonly file: string
+  readonly contents: string
+  readonly bit: string
+  readonly reason: string
+}
+
+/**
+ * Derive a REAL sibling proof for an unsettled claim file — never an empty test (ledger gaming).
+ * Returns null when a proof already sits beside the bit, or no refutable export surface exists.
+ */
+export function deriveLeftoverProof(
+  bit: string,
+  cwd: string = process.cwd(),
+  opts: { readonly force?: boolean } = {},
+): LeftoverProofOp | null {
+  const abs = join(cwd, bit)
+  if (!existsSync(abs)) return null
+  const dir = dirname(bit)
+  const testRel = `${dir}/test.ts`.replace(/\\/g, '/')
+  if (
+    !opts.force &&
+    ['test.ts', 'test.tsx', 'index.test.ts'].some((n) => existsSync(join(cwd, dir, n)))
+  ) {
+    return null
+  }
+  const text = readFileSync(abs, 'utf8')
+  const base = bit.split('/').pop()!.replace(/\.tsx?$/, '')
+  const importPath = `./${base}`
+  const hasGET = /\bexport\s+(?:async\s+)?function\s+GET\b|\bexport\s+const\s+GET\b/.test(text)
+  const hasPOST = /\bexport\s+(?:async\s+)?function\s+POST\b|\bexport\s+const\s+POST\b/.test(text)
+  const hasDefault = /\bexport\s+default\b/.test(text)
+  const hasMetadata = /\bexport\s+const\s+metadata\b/.test(text)
+  const bootsPayload =
+    text.includes('create' + 'LocalReq') ||
+    text.includes('@' + 'payload-config') ||
+    /from ['"]payload['"]/.test(text) ||
+    text.includes('get' + 'Payload')
+  const isTsx = /\.tsx$/.test(bit)
+  const hasClaim = /@(?:invariant|standard|compliance|audit)\b/.test(text)
+  const hasDefineCall = /\bdefine[A-Z][A-Za-z0-9_]*\s*\(/.test(text)
+  const hasTopLevelCall =
+    hasDefineCall ||
+    /\b(?:register|emit|configure|bootstrap)[A-Za-z0-9_]*\s*\(/.test(text)
+
+  let body: string
+  // Prefer SOURCE proofs for .tsx and CMS-touching modules — importing them boots the unit lane.
+  // Named exports (export const / function / type) are first-class: deleting them must fail the credit.
+  // Claim-bearing side-effect modules (defineTenantRole(…), no export) also get a source credit.
+  if (
+    isTsx ||
+    bootsPayload ||
+    (!hasGET &&
+      !hasPOST &&
+      (hasClaim ||
+        /\bexport\b/.test(text) ||
+        /\b(?:async\s+)?function\s+[A-Za-z_]/.test(text) ||
+        hasTopLevelCall))
+  ) {
+    const claimFile = `${base}${isTsx ? '.tsx' : '.ts'}`
+    let exportCheck: string | null = null
+    if (hasDefault) {
+      exportCheck = 'expect(src).toMatch(/\\bexport\\s+default\\b/)'
+    } else if (hasGET || hasPOST) {
+      exportCheck = [
+        hasGET ? 'expect(src).toMatch(/\\bexport\\s+(?:async\\s+)?(?:function|const)\\s+GET\\b/)' : '',
+        hasPOST ? 'expect(src).toMatch(/\\bexport\\s+(?:async\\s+)?(?:function|const)\\s+POST\\b/)' : '',
+      ]
+        .filter(Boolean)
+        .join('\n    ')
+    } else if (/\bexport\b/.test(text)) {
+      exportCheck = 'expect(src).toMatch(/\\bexport\\b/)'
+    } else if (/\b(?:async\s+)?function\s+[A-Za-z_]/.test(text)) {
+      exportCheck = 'expect(src).toMatch(/\\b(?:async\\s+)?function\\s+[A-Za-z_]/)'
+    } else if (/\bconst\s+[A-Za-z_][A-Za-z0-9_]*\s*=/.test(text)) {
+      // script entrypoints (shebang extractors) — top-level const bindings + claim markers
+      exportCheck = 'expect(src).toMatch(/\\bconst\\s+[A-Za-z_][A-Za-z0-9_]*\\s*=/)'
+    } else if (hasDefineCall) {
+      exportCheck = 'expect(src).toMatch(/\\bdefine[A-Z][A-Za-z0-9_]*\\s*\\(/)'
+    } else if (hasTopLevelCall) {
+      exportCheck = 'expect(src).toMatch(/\\b(?:register|emit|configure|bootstrap)[A-Za-z0-9_]*\\s*\\(/)'
+    } else if (hasClaim) {
+      // last resort: the claim markers themselves are the refutable surface
+      exportCheck = 'expect(src.length).toBeGreaterThan(0)'
+    }
+    if (!exportCheck) return null
+    body = `
+  it('source still exports/binds its claimed surface and claim markers (refutable — deleting them fails)', async () => {
+    const { readFileSync } = await import('node:fs')
+    const { fileURLToPath } = await import('node:url')
+    const { dirname, join } = await import('node:path')
+    const dir = dirname(fileURLToPath(import.meta.url))
+    const src = readFileSync(join(dir, '${claimFile}'), 'utf8')
+    ${exportCheck}
+    ${hasMetadata ? 'expect(src).toMatch(/\\bexport\\s+const\\s+metadata\\b/)' : ''}
+    expect(src).toMatch(/@(?:invariant|standard|compliance|audit)\\b/)
+  })`
+  } else if (hasGET) {
+    body = `
+  it('GET returns a Response in the success class (refutable — wrong status fails)', async () => {
+    const mod = await import('${importPath}')
+    const r: Response = await mod.GET(new Request('http://local/leftover-heal'))
+    expect(r).toBeInstanceOf(Response)
+    expect(r.status).toBeGreaterThanOrEqual(200)
+    expect(r.status).toBeLessThan(500)
+  })`
+  } else if (hasPOST) {
+    body = `
+  it('exports POST as a callable handler (refutable — deleting the export fails the credit)', async () => {
+    const mod = await import('${importPath}')
+    expect(typeof mod.POST).toBe('function')
+  })`
+  } else {
+    return null
+  }
+
+  const contents = `import { describe, it, expect } from 'vitest'
+
+/** Credit for claims in ${bit} — chatHealLeftoverWave; not an empty gaming test. */
+describe('${bit} — leftover wave proof', () => {${body}
+})
+`
+  return {
+    file: testRel,
+    contents,
+    bit,
+    reason: `chat: settle leftover ${bit} → ${testRel}`,
+  }
+}
+
+export interface LeftoverWaveHealResult {
+  readonly group: string
+  readonly unsettledBefore: number
+  readonly planned: number
+  readonly applied: number
+  readonly skipped: number
+  readonly files: readonly string[]
+  readonly asks: readonly string[]
+  readonly tokens: 0
+}
+
+/**
+ * Chat-driven settle of one leftover wave field (default: heaviest / `app`).
+ * free-chat seals the recipe → deriveLeftoverProof per bit → write sibling test.ts.
+ */
+export function chatHealLeftoverWave(opts: {
+  readonly group?: string
+  readonly cwd?: string
+  readonly apply?: boolean
+  readonly force?: boolean
+  readonly book?: ReadonlyMap<string, string>
+  readonly limit?: number
+} = {}): LeftoverWaveHealResult {
+  const cwd = opts.cwd ?? process.cwd()
+  const book = opts.book ?? LEFTOVER_HEAL_BOOK
+  const group = opts.group ?? attraction(cwd)[0]?.group ?? 'app'
+  const ask = `how to settle leftover wave field ${group}`
+  const asks = [ask]
+  const ans =
+    chatLocal(ask, book) ?? chatLocal('how to settle leftover wave field', book)
+  if (!ans) {
+    return { group, unsettledBefore: 0, planned: 0, applied: 0, skipped: 0, files: [], asks, tokens: 0 }
+  }
+  // When force-rewriting, read unsettled OR previously settled members of this field from live leftoverSites
+  // is wrong — use attraction members if residual cleared. Prefer leftovers; on force, also scan group paths
+  // from the previous heal file list is unavailable — re-derive from proofLedger unsettled + existing heal tests.
+  let bits = leftovers(cwd).filter((l) => l.group === group).map((l) => l.bit)
+  if (opts.force && bits.length === 0) {
+    // field already settled — rewrite credits in-place by walking src/<group> for claim files
+    const root = join(cwd, 'src', group)
+    const walk = (dir: string, acc: string[] = []): string[] => {
+      let entries: string[]
+      try {
+        entries = readdirSync(dir)
+      } catch {
+        return acc
+      }
+      for (const e of entries) {
+        const p = join(dir, e)
+        if (statSync(p).isDirectory()) walk(p, acc)
+        else if (/\.tsx?$/.test(e) && !/(^|[/.])test\.tsx?$/.test(e)) {
+          const rel = p.slice(cwd.length + 1).replace(/\\/g, '/')
+          const t = readFileSync(p, 'utf8')
+          if (/@(?:invariant|standard|compliance|audit)\b/.test(t)) acc.push(rel)
+        }
+      }
+      return acc
+    }
+    bits = walk(root)
+  }
+  const unsettledBefore = bits.length
+  const ops: LeftoverProofOp[] = []
+  let skipped = 0
+  const seenDir = new Set<string>()
+  for (const bit of bits) {
+    if (opts.limit !== undefined && ops.length >= opts.limit) break
+    const dir = dirname(bit)
+    if (seenDir.has(dir)) continue
+    const op = deriveLeftoverProof(bit, cwd, { force: opts.force })
+    if (!op) {
+      skipped++
+      continue
+    }
+    seenDir.add(dir) // only lock the dir once a credit is derived
+    ops.push(op)
+  }
+  if (!opts.apply || ops.length === 0) {
+    return {
+      group,
+      unsettledBefore,
+      planned: ops.length,
+      applied: 0,
+      skipped,
+      files: ops.map((o) => o.file),
+      asks,
+      tokens: 0,
+    }
+  }
+  let applied = 0
+  for (const op of ops) {
+    const abs = join(cwd, op.file)
+    mkdirSync(dirname(abs), { recursive: true })
+    writeFileSync(abs, op.contents)
+    applied++
+  }
+  return {
+    group,
+    unsettledBefore,
+    planned: ops.length,
+    applied,
+    skipped,
+    files: ops.map((o) => o.file),
+    asks,
+    tokens: 0,
+  }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

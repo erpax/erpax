@@ -2,11 +2,11 @@
 name: body
 description: "Use when reasoning about erpax as ONE organism — the eight organs harmonized into a body. Each organ is sent through the wave mechanism; its horo position sounds a note and a colour (A432); composed, the organs span the full diatonic spectrum and rest at unity (the closing wave). The body harmonizes ⟺ every organ healthy ⊕ full-spectrum chord ⊕ folds to unity — wholeness renders as harmony, a failing organ as dissonance."
 atomPath: body
-coordinate: body · 2/share · e0ec532a
-contentUuid: "7c088feb-affd-5b2a-a226-1e41c99c36e3"
-diamondUuid: "c775cd47-61fc-8b0a-8f07-93b0084eafc4"
-uuid: "e0ec532a-d9df-81fa-ac09-92cc2d316993"
-horo: 2
+coordinate: "body · 4/weave · f5cd43a1"
+contentUuid: "286b5cb2-92b6-5e1e-835a-4488c78aa0b1"
+diamondUuid: "729b16b0-1056-838e-96bb-cb59d0dc500a"
+uuid: "f5cd43a1-af3a-81c6-8f22-40859a7455c3"
+horo: 4
 bonds:
   in:
     - abdomen
@@ -20,6 +20,7 @@ bonds:
     - brain
     - coherence
     - enumeration
+    - folder
     - foot
     - hand
     - harmony
@@ -43,6 +44,7 @@ bonds:
     - shop
     - signal
     - skin
+    - taichi
     - vein
     - water
     - wave
@@ -58,6 +60,7 @@ bonds:
     - brain
     - coherence
     - enumeration
+    - folder
     - foot
     - hand
     - harmony
@@ -81,16 +84,16 @@ bonds:
     - shop
     - signal
     - skin
+    - taichi
     - vein
     - water
     - wave
 typography:
   partition: body
-  bondDegree: 143
+  bondDegree: 183
   neighbors:
     - aura
 standards:
-  - "each organ verdict computed live; the harmony folded through @/wave + @/signal"
   - "the A432 just-intonation diatonic ring (the seven horo positions)"
   - "the A432 just-intonation diatonic ring — the seven horo positions as the seven notes"
 bindings: []
@@ -133,6 +136,7 @@ neighbors:
     - brain
     - coherence
     - enumeration
+    - folder
     - foot
     - hand
     - harmony
@@ -156,6 +160,7 @@ neighbors:
     - shop
     - signal
     - skin
+    - taichi
     - vein
     - water
     - wave
@@ -171,6 +176,7 @@ neighbors:
     - brain
     - coherence
     - enumeration
+    - folder
     - foot
     - hand
     - harmony
@@ -194,26 +200,27 @@ neighbors:
     - shop
     - signal
     - skin
+    - taichi
     - vein
     - water
     - wave
 signatures:
-  computationUuid: "08bf34e3-b256-8ffe-9555-aa1bdcb7160b"
+  computationUuid: "6b423883-4e09-88c9-9ce3-eceac3fbbcd3"
   stages:
     - stage: path
       stageUuid: "25cbb789-1b68-87df-9521-3a78713c0542"
     - stage: trinity
       stageUuid: "3422e7e5-be41-8df3-9b14-442c72215e1a"
     - stage: boundary
-      stageUuid: "f644daeb-a1d3-8f6c-acb3-1a672dcf58b1"
+      stageUuid: "45c1023d-619b-8f7f-9ddd-b626ad426a10"
     - stage: links
       stageUuid: "8154f2a0-0d15-8789-95f3-37e177188a33"
     - stage: horo
-      stageUuid: "c6f28361-230c-8ceb-872d-79f52335f696"
+      stageUuid: "6c2a7146-b700-8e16-a1a9-6407208d09da"
     - stage: seal
-      stageUuid: "cb2cea56-e941-8ece-b50e-98d11785d805"
+      stageUuid: "80789d40-7b03-8f3a-a949-059c907b7ee2"
     - stage: uuid
-      stageUuid: "37a76a98-c8e6-803f-b39c-072621d4b5ec"
+      stageUuid: "858cde87-8f0d-8895-8d19-ab4afec9ca31"
 version: 2
 ---
 # body — the organs harmonized (one organism)

@@ -2,11 +2,11 @@
 name: governance
 description: "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society."
 atomPath: governance
-coordinate: governance · 7/descent · a9fe48b6
-contentUuid: "4b999649-17cd-5c4d-b3f7-fcf2dd2be306"
-diamondUuid: "24604ecc-28e4-8400-9f9c-b022dc7155e1"
-uuid: "a9fe48b6-4e72-864e-88f1-986daeeff67a"
-horo: 7
+coordinate: "governance · 5/round · 4a14bc37"
+contentUuid: "855f591e-06fa-531a-ba25-93ae14c8cbee"
+diamondUuid: "a7c56828-08a7-876c-ab99-6c1b1d7b5d57"
+uuid: "4a14bc37-1603-8ff3-b0ba-9361c52723cc"
+horo: 5
 bonds:
   in:
     - balance
@@ -52,9 +52,11 @@ typography:
   neighbors: []
 standards:
   - "ISO 37000:2021 governance-of-organizations"
+  - "ISO 37000:2021 governance-of-organizations`"
   - "ISO-37000"
   - "US-CTA-2021"
   - "one-person-one-vote (Venice Commission Code of Good Practice in Electoral Matters)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -108,7 +110,7 @@ neighbors:
     - society
     - voting
 signatures:
-  computationUuid: "75ebf19d-06d0-8c39-96aa-193df9c23fad"
+  computationUuid: "668e1c50-bcc6-8be2-b857-fa4baf856b2b"
   stages:
     - stage: path
       stageUuid: "3444f1ec-f1af-8162-bb01-239926cf030a"
@@ -119,11 +121,11 @@ signatures:
     - stage: links
       stageUuid: "9cdd0828-d945-8e55-bf7b-0016695adfa8"
     - stage: horo
-      stageUuid: "3b3c44b2-f304-852a-bdb3-cfbf935143a7"
+      stageUuid: "af8d7105-c12c-8218-a1d9-4b3322af79fd"
     - stage: seal
-      stageUuid: "41a1a279-220b-86a2-b4ce-24e1d291cf00"
+      stageUuid: "36139b2e-f84f-8ad7-983e-7116defc7efe"
     - stage: uuid
-      stageUuid: "223af183-c1e9-880a-809d-edf3e52979dd"
+      stageUuid: "49ad0ff1-a9d5-8851-973a-f872e301ecb8"
 version: 2
 ---
 # governance — the society manages erpax, the half that closes the circle

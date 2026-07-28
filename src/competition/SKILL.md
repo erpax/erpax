@@ -2,13 +2,14 @@
 name: competition
 description: "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security."
 atomPath: competition
-coordinate: competition · 2/share · bb22262d
-contentUuid: "5f252b32-b9e5-596f-828e-ea31b55aa853"
-diamondUuid: "66c59467-d303-87fe-81c5-101b328c2611"
-uuid: "bb22262d-24f7-8dbc-a009-2161ae25e8d7"
-horo: 2
+coordinate: "competition · 1/base · 179092e2"
+contentUuid: "e0298faf-1767-59cb-8dd3-703f1c447a56"
+diamondUuid: "2202f918-8469-81ae-8595-5c6e370ad436"
+uuid: "179092e2-4991-8360-a50d-93873122206d"
+horo: 1
 bonds:
   in:
+    - claim
     - classroom
     - contribution
     - cost
@@ -29,6 +30,7 @@ bonds:
     - society
     - zeropoint
   out:
+    - claim
     - classroom
     - contribution
     - cost
@@ -50,10 +52,12 @@ bonds:
     - zeropoint
 typography:
   partition: competition
-  bondDegree: 57
+  bondDegree: 60
   neighbors: []
 standards:
   - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)"
+  - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -68,6 +72,7 @@ neighbors:
     - self
     - society
   matrix:
+    - claim
     - classroom
     - contribution
     - cost
@@ -88,6 +93,7 @@ neighbors:
     - society
     - zeropoint
   backlinks:
+    - claim
     - classroom
     - contribution
     - cost
@@ -108,7 +114,7 @@ neighbors:
     - society
     - zeropoint
 signatures:
-  computationUuid: "f558156f-06bc-836f-8692-16a05d0ec571"
+  computationUuid: "adee84c7-9536-8592-8878-5616b3355e1f"
   stages:
     - stage: path
       stageUuid: "fa6c9ca3-e81f-8762-85d6-675365bb307e"
@@ -119,11 +125,11 @@ signatures:
     - stage: links
       stageUuid: "e27e41bb-1005-8c37-bc27-dea38ef3aa46"
     - stage: horo
-      stageUuid: "27736562-24c1-801a-ba85-abe00d0cd82a"
+      stageUuid: "39dc385d-36bf-842a-815d-03802e368517"
     - stage: seal
-      stageUuid: "c25262c4-3d12-828d-84be-eda6bc32be9f"
+      stageUuid: "21331975-8dfb-8b5d-afaf-048593c7812b"
     - stage: uuid
-      stageUuid: "734f13a9-64e9-8738-bafa-6f0d81718442"
+      stageUuid: "bcebcaea-577e-8e80-bb39-6b37860a8b80"
 version: 2
 ---
 # competition — skills evolve by competing (fastest correct wins, optimise to ∞)

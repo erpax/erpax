@@ -1,8 +1,68 @@
 ---
 name: registry
 description: "Use when a notary check must confirm a company exists and resolve its registered name/address — the REAL wired provider for registryAgency (Агенция по вписванията). Validates an EIK/ЕИК as a BG VAT number against the EU VIES service, which answers over the national Commercial Register in real time; no credential. Honest boundary — VIES gives existence + name + address; representatives/capital and the Property Register (title/encumbrance) need credentialed RegiX / data-sharing access, refused honestly."
+atomPath: "notary/check/registry"
+coordinate: "notary/check/registry · 7/descent · 1a141c76"
+contentUuid: "c55de6f8-8ccd-51d9-9d69-80ce7bdaaefd"
+diamondUuid: "830e870a-5df1-89be-bccb-9175da5b43f0"
+uuid: "1a141c76-ba20-830c-9ca4-e075069c928a"
+horo: 7
+bonds:
+  in:
+    - check
+    - collapse
+    - law
+    - merge
+    - sti
+  out:
+    - collapse
+    - law
+    - merge
+    - sti
+typography:
+  partition: notary
+  bondDegree: 15
+  neighbors: []
+standards:
+  - "Bulgarian Commercial Register (Търговски регистър) — EIK/ЕИК company identity"
+  - "Council Directive 2006/112/EC (VAT) · VIES — cross-border registered-taxpayer validation"
+  - "EU-2006/43"
+  - "EU-VAT-Directive"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+    - notary
+    - standards
+  matrix:
+    - collapse
+    - law
+    - merge
+    - sti
+  backlinks:
+    - collapse
+    - law
+    - merge
+    - sti
+signatures:
+  computationUuid: "f90b9d16-e02a-8166-82af-1c1eb3512978"
+  stages:
+    - stage: path
+      stageUuid: "62be28ea-e63e-8245-b065-c99bc8028413"
+    - stage: trinity
+      stageUuid: "5c5c35ba-b64d-8ffc-a53e-fb5ede9c8405"
+    - stage: boundary
+      stageUuid: "3c79e0de-10b9-8d05-8f0e-f632248c744b"
+    - stage: links
+      stageUuid: "ed52fded-1c62-8d52-aa51-9215cd618bd9"
+    - stage: horo
+      stageUuid: "5b489ba5-1fc0-8c5e-9f71-bbdbbd5e5dcd"
+    - stage: seal
+      stageUuid: "77f1d446-dde5-8b26-93b5-9744382e2004"
+    - stage: uuid
+      stageUuid: "e60bb381-f334-8260-8bd1-ba4b2ac83fc5"
+version: 2
 ---
-
 # registry — real company verification via VIES
 
 The `company` check wired to live data. Before a notary seals an incorporation or a company-party act, it confirms the company **exists** and pulls its **registered identity**. This atom does it for real, credential-free:

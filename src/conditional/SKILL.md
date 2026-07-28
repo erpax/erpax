@@ -1,8 +1,65 @@
 ---
 name: conditional
 description: "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts"
+atomPath: conditional
+coordinate: "conditional · 5/round · 55aec386"
+contentUuid: "c064c9a8-5461-5f59-99aa-ac8bd302dc50"
+diamondUuid: "2acf2ffd-ec99-8921-bdc2-fae5f552d1f7"
+uuid: "55aec386-917f-8634-ad0e-0853b2f45d9e"
+horo: 5
+bonds:
+  in:
+    - law
+    - merge
+    - rules
+    - tamper
+  out:
+    - law
+    - merge
+    - rules
+    - tamper
+typography:
+  partition: conditional
+  bondDegree: 12
+  neighbors: []
+standards:
+  - "ISO-19011:2018 §6.4 — evidence: a conditional finding names its condition"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+    - merge
+    - rules
+    - tamper
+  matrix:
+    - law
+    - merge
+    - rules
+    - tamper
+  backlinks:
+    - law
+    - merge
+    - rules
+    - tamper
+signatures:
+  computationUuid: "f80e4568-0b8b-81d7-9cc1-6de0932e810a"
+  stages:
+    - stage: path
+      stageUuid: "8b7b8198-9ca7-89dd-815d-59b01c507829"
+    - stage: trinity
+      stageUuid: "385553d8-446a-85af-a960-e9e0144b1697"
+    - stage: boundary
+      stageUuid: "32ac5589-9dcf-8dd1-b94b-a8961b38749f"
+    - stage: links
+      stageUuid: "c8476fbb-3d6e-8b73-b8d5-5ede48bc1df7"
+    - stage: horo
+      stageUuid: "af0b113b-ead8-822b-9695-fde6965e0d41"
+    - stage: seal
+      stageUuid: "64df3fbc-d675-83ff-a1f4-48f9a6ba764f"
+    - stage: uuid
+      stageUuid: "1e968b1c-7ed6-8bc7-b21d-12b4e6dc0e79"
+version: 2
 ---
-
 # conditional — anything unprovable, folded, may prove another thing
 
 [[rules]]/refutable catches the **lie**: an unfalsifiable *assertion*, stated as fact, forbidding nothing. This atom is its honest complement — the unprovable used **honestly**. An unprovable *hypothesis* H, folded into an implication, yields a **proven** theorem `H ⇒ Y`: the implication is provable even when H is not. That is not a lie; it is a **reduction**, and it is the structure of all of cryptography.

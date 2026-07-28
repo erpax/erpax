@@ -2,11 +2,11 @@
 name: decompression
 description: "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity)."
 atomPath: decompression
-coordinate: decompression · 4/weave · 51d09de6
-contentUuid: "c856cb69-1738-5746-9083-98ca3d3928b1"
-diamondUuid: "358411c7-34c9-881e-a08b-513da0329324"
-uuid: "51d09de6-25c4-8a67-a9f1-7f04ef95f1b2"
-horo: 4
+coordinate: "decompression · 1/base · b4c87200"
+contentUuid: "335607ba-7ea7-59e5-b28b-d83fb8b8e4be"
+diamondUuid: "78d18290-edc0-8562-ad2b-b21b11f38b30"
+uuid: "b4c87200-d996-8425-8b45-c5f144bb1d5c"
+horo: 1
 bonds:
   in:
     - accounting
@@ -109,7 +109,6 @@ typography:
 standards:
   - "Bühlmann ZH-L16 — 16 compartments, gradient-factor / M-value theory"
   - "Haldane half-time model (idealised compartments double 5·10·20·40)"
-  - "ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)"
   - SFIA
   - "SFIA 8 responsibility-levels (1..7) — the M-value depth axis"
   - "UBL-2.1"
@@ -248,22 +247,22 @@ neighbors:
     - whole
     - zeropoint
 signatures:
-  computationUuid: "4e3f5ad5-1e52-88dc-9f63-580632ac63fd"
+  computationUuid: "93841934-f080-8f4a-8e69-413a57b49c76"
   stages:
     - stage: path
       stageUuid: "3f4cb9b3-3893-8d1c-9684-0dedc4988a2e"
     - stage: trinity
       stageUuid: "e74e1d0e-9531-8d4d-a31e-722270f7e177"
     - stage: boundary
-      stageUuid: "0694796d-5c41-8e13-aa71-9be4011c2bfd"
+      stageUuid: "5b5abb00-b72d-8bf5-a1e4-dcdd98ddca44"
     - stage: links
       stageUuid: "2b114773-9a04-8872-ba87-e7d4b3b3daef"
     - stage: horo
-      stageUuid: "ae8cf2e5-ab10-8bc9-a5ab-ffce8cacfd16"
+      stageUuid: "0a1c5c0c-fe74-879d-97f5-76383bd2b4e8"
     - stage: seal
-      stageUuid: "fb99c81f-ac41-8073-b077-8ab09b88f3cd"
+      stageUuid: "061b3594-ad8f-8e62-9b87-1c3fd1720310"
     - stage: uuid
-      stageUuid: "561118ff-06c6-8218-8660-760639069f92"
+      stageUuid: "cab01675-3c36-8cb7-8695-0f3f550f496a"
 version: 2
 ---
 # decompression — the dive IS the erpax ledger (one extreme sport, three aspects)

@@ -2,11 +2,11 @@
 name: before
 description: "Use when reasoning about before as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: before
-coordinate: before · 1/base · 27939428
-contentUuid: "5b513a41-7edf-5436-8554-094ac6ed6d43"
-diamondUuid: "7617e09e-cb50-884d-9e18-b06f0f148ce2"
-uuid: "27939428-de79-8ffc-b895-b3cb5372953b"
-horo: 1
+coordinate: "before · 8/crest · 1cff94fc"
+contentUuid: "eec4d9f4-a254-53e2-aedd-d865c041b8c6"
+diamondUuid: "4a8db1ca-eb1f-8c94-aff5-bc1fea660aea"
+uuid: "1cff94fc-2d41-8f44-b272-518ed84d1b24"
+horo: 8
 bonds:
   in:
     - collapse
@@ -53,7 +53,7 @@ neighbors:
     - merge
     - sti
 signatures:
-  computationUuid: "3af7b9b6-f855-8647-8dde-c87514fa4ffb"
+  computationUuid: "f458e87b-ba91-83ac-8014-157c03f54618"
   stages:
     - stage: path
       stageUuid: "506d94c7-ab90-8750-bd88-d433f816b2cd"
@@ -64,11 +64,11 @@ signatures:
     - stage: links
       stageUuid: "ba689575-44df-8246-b119-effe3399b9c5"
     - stage: horo
-      stageUuid: "96028f27-7fbb-8f97-89ae-185c07b36bd3"
+      stageUuid: "737ceae7-3604-8742-8617-2ae4bbab1224"
     - stage: seal
       stageUuid: "ca331c1c-43af-8e4d-94cc-ee27b015fbd8"
     - stage: uuid
-      stageUuid: "1cd25e00-9703-885d-a31a-dfcf96904bab"
+      stageUuid: "adea8f98-315b-81f2-87f8-5df602e75f1f"
 version: 2
 ---
 # before

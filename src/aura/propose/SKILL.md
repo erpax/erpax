@@ -1,12 +1,12 @@
 ---
 name: propose
 description: "Use when computing weave proposals deterministically — for each orphan atom, the highest-mass atom whose text mentions it (a true co-occurrence, never invented), feeding the weave with no trained agent."
-atomPath: aura/propose
-coordinate: aura/propose · 8/crest · c65a1b6b
-contentUuid: "b28365c2-40ac-59a9-ac6d-2b00727eb454"
-diamondUuid: "11e33748-54c8-8c58-a65e-5efd859c3afc"
-uuid: "c65a1b6b-fae5-8f8b-8f9f-77af168042d8"
-horo: 8
+atomPath: "aura/propose"
+coordinate: "aura/propose · 4/weave · 2a9907aa"
+contentUuid: "0b9da411-9249-50ad-a032-4ec8fc718f2b"
+diamondUuid: "d03335af-2307-855e-a957-92b4037a059c"
+uuid: "2a9907aa-a851-8577-af38-2c883e098049"
+horo: 4
 bonds:
   in:
     - aura
@@ -28,9 +28,7 @@ typography:
   partition: aura
   bondDegree: 0
   neighbors: []
-standards:
-  - "no link invented -- every proposal is a co-occurrence the tree witnesses"
-  - "no link invented — every proposal is a co-occurrence the live tree witnesses"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -57,22 +55,22 @@ neighbors:
     - regeneration
     - weave
 signatures:
-  computationUuid: "755fe00f-7425-8066-b009-6ddae9a83955"
+  computationUuid: "52d80b0a-568a-8260-bfa6-0a560a388772"
   stages:
     - stage: path
       stageUuid: "4c46d1e0-95c8-836b-9de8-c7e4a9864988"
     - stage: trinity
-      stageUuid: "3b586fec-73bf-80a4-beac-6d01ee67e240"
+      stageUuid: "6d6d8871-cb27-80df-b13a-8da43773bd5d"
     - stage: boundary
       stageUuid: "94a93521-9e70-8026-ab0b-59f036437427"
     - stage: links
       stageUuid: "793f4f14-df7a-805b-9ba9-d18df7a85797"
     - stage: horo
-      stageUuid: "a1c70cf5-78db-860a-8701-01b642b6772e"
+      stageUuid: "522a8510-d705-8c47-bd4a-739f06e6459d"
     - stage: seal
-      stageUuid: "d630e8d5-c6de-854a-982c-02a0e60691a3"
+      stageUuid: "56c9720b-760c-82af-b9be-dbcb8188b705"
     - stage: uuid
-      stageUuid: "4e03d8c9-5f6a-8802-8261-aa663937723e"
+      stageUuid: "5d258014-0d17-8b95-834a-1c9ecdd91788"
 version: 2
 ---
 # propose

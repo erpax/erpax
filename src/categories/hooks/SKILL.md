@@ -1,11 +1,11 @@
 ---
 name: hooks
 description: "Use when wiring the Categories collection's lifecycle — the beforeChange barrel that pins every category row to the active tenant so multi-tenant isolation holds at the collection boundary."
-atomPath: categories/hooks
-coordinate: categories/hooks · 6/6 · 404e657d
-contentUuid: "7147890c-49c4-5ec0-a4f6-892ab8f5eec9"
-diamondUuid: "e15c52d1-245f-85f3-9a5c-346e871396cb"
-uuid: "404e657d-1644-8b22-bbac-e50f247a5389"
+atomPath: "categories/hooks"
+coordinate: "categories/hooks · 6/6 · 76a1d22a"
+contentUuid: "a5eea3f7-db68-5d24-84ae-3d0517990f11"
+diamondUuid: "2bba415c-c98c-8fb6-903b-8a0728024a5e"
+uuid: "76a1d22a-dad8-8cba-8835-70a747d05a7b"
 horo: 6
 bonds:
   in:
@@ -53,6 +53,7 @@ bonds:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -61,6 +62,7 @@ bonds:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -157,6 +159,7 @@ bonds:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -165,6 +168,7 @@ bonds:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -223,11 +227,7 @@ typography:
   neighbors:
     - analytics
     - aura
-    - diamond
-    - hallucination
-    - purity
-standards:
-  - "ISO-19011:2018 audit-trail collection-module-boundary"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -277,6 +277,7 @@ neighbors:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -285,6 +286,7 @@ neighbors:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -381,6 +383,7 @@ neighbors:
     - factory
     - failures
     - federation
+    - field
     - fields
     - findings
     - health
@@ -389,6 +392,7 @@ neighbors:
     - horo
     - identifier
     - identity
+    - immutability
     - instances
     - integrity
     - jobs
@@ -442,7 +446,7 @@ neighbors:
     - worker
     - workflow
 signatures:
-  computationUuid: "2daf3c05-2513-8b41-b39a-5344f914ed3f"
+  computationUuid: "e3c9bbf8-1071-857e-afdb-5d6ff50eb081"
   stages:
     - stage: path
       stageUuid: "1f271df0-1d7e-8f9e-be37-3ea495462722"
@@ -453,11 +457,11 @@ signatures:
     - stage: links
       stageUuid: "71e08471-92a0-85b4-b926-d21affcbf63f"
     - stage: horo
-      stageUuid: "8054d75d-62ad-81a5-9998-c050e44ec6c5"
+      stageUuid: "0852041d-68d4-8417-b50e-126cf7ef9919"
     - stage: seal
-      stageUuid: "bf0f1575-d090-8786-9c9e-cd8e531a21c5"
+      stageUuid: "ce80498c-9c3c-8914-905b-b6e0708955ca"
     - stage: uuid
-      stageUuid: "154a09dd-48ae-8fb5-9574-ef49e78b41e0"
+      stageUuid: "61d52de1-3bb1-8e49-8008-6766929e04c9"
 version: 2
 ---
 # categories/hooks — the category collection-module boundary

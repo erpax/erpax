@@ -2,11 +2,11 @@
 name: competency
 description: "Use when reasoning about competency — A schema.org component word, collided out of schema.org compounds — fused from competencyRequired (sti · collapse · merge)."
 atomPath: competency
-coordinate: competency · 4/weave · 58d5d8fd
-contentUuid: "5b5ed872-9597-5c89-9fe6-3d6d1dcab3dc"
-diamondUuid: "b0f46587-9e58-85c7-a281-0d75d4083b46"
-uuid: "58d5d8fd-b51c-8e59-b8cb-46b2fec641fa"
-horo: 4
+coordinate: "competency · 5/round · aa1c21aa"
+contentUuid: "78db6f03-53bf-5612-a3d1-3e77d5f64ee0"
+diamondUuid: "c93e327a-cf53-884e-8b3f-a4299b4c62c1"
+uuid: "aa1c21aa-8080-8f20-886a-573d7fe2e5e5"
+horo: 5
 bonds:
   in:
     - collapse
@@ -30,9 +30,11 @@ typography:
   neighbors: []
 standards:
   - "ISO 30405:2016 essential-vs-desirable (mandatory flag)"
+  - "ISO 30405:2016 essential-vs-desirable (mandatory flag)`"
   - SFIA
   - "SFIA 8 proficiency-levels"
   - "schema.org — the type vocabulary, collided to single words"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -58,7 +60,7 @@ neighbors:
     - sti
     - training
 signatures:
-  computationUuid: "f9728a02-5ef4-8398-8108-e35b0202063f"
+  computationUuid: "47f23041-bf65-8601-ace2-3bff1fc91620"
   stages:
     - stage: path
       stageUuid: "e133079a-340d-8e9c-8d6b-ba05f371b8b3"
@@ -69,11 +71,11 @@ signatures:
     - stage: links
       stageUuid: "379c84ec-d7fb-826b-b198-b3659d2a6908"
     - stage: horo
-      stageUuid: "e1ae5ffe-4c1d-8246-b134-2aa99096b1c4"
+      stageUuid: "c0caf1a4-85ab-8dff-941a-65dae6cff73d"
     - stage: seal
-      stageUuid: "1a57614f-6385-8de0-82f7-6b3694bebe9e"
+      stageUuid: "27082d0e-250a-82ee-906a-fcfc34303d7f"
     - stage: uuid
-      stageUuid: "45907ae2-ac82-8008-9d1d-68a8643cf134"
+      stageUuid: "b204c9eb-e867-86f6-960e-4ae30d86a225"
 version: 2
 ---
 # competency

@@ -2,11 +2,11 @@
 name: commitments
 description: "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection."
 atomPath: commitments
-coordinate: commitments · 5/round · 3e7e0f94
-contentUuid: "bde2164b-787f-5888-b028-4f2572d42cc3"
-diamondUuid: "7309fce2-d8cb-8942-9a51-0853b50003cd"
-uuid: "3e7e0f94-6ed4-875d-9a0f-8423de66613f"
-horo: 5
+coordinate: "commitments · 7/descent · 3d81535e"
+contentUuid: "f5d89470-6422-5c05-8cf2-aa67a81eac70"
+diamondUuid: "ff735476-34ea-8c06-8a48-897f97c0f07a"
+uuid: "3d81535e-a718-8295-b02d-e315f207dd76"
+horo: 7
 bonds:
   in:
     - accounting
@@ -39,14 +39,20 @@ standards:
   - "GDPR Art.6(1)(b) lawful-basis-contract-processing"
   - "IAS-1"
   - "IFRS IAS-1 presentation-of-financial-statements"
+  - "IFRS IAS-1 presentation-of-financial-statements`"
   - "IFRS IFRS-15 §10 contract-with-customer"
+  - "IFRS IFRS-15 §10 contract-with-customer`"
   - "IFRS-15"
-  - "ISO-19011:2018 audit-trail authorization-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time authorization-date"
+  - "ISO-8601-1:2019 date-time authorization-date`"
   - SOX
   - "SOX §302 management-certification internal-controls"
+  - "SOX §302 management-certification internal-controls`"
   - "SOX §404 internal-controls spending-authority"
+  - "SOX §404 internal-controls spending-authority`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -81,7 +87,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "ec881d95-10d2-8d05-9411-d4b3a7f1d284"
+  computationUuid: "fc5d9d81-ae49-87ba-91ba-c02c27434fd8"
   stages:
     - stage: path
       stageUuid: "6b454458-5665-8fda-a6ae-b53b3ef171db"
@@ -92,11 +98,11 @@ signatures:
     - stage: links
       stageUuid: "2c6db537-bfc3-814b-8a5a-88a457198bdc"
     - stage: horo
-      stageUuid: "cc11d676-d945-8723-8b1d-c023ede32eaf"
+      stageUuid: "010de89d-a714-8c64-b071-9b13ac258b3d"
     - stage: seal
       stageUuid: "402aecac-2306-82ae-b9b3-e1acec77cd17"
     - stage: uuid
-      stageUuid: "57fac17b-f5c3-83f1-b235-e0bfb0966271"
+      stageUuid: "5f3c3f60-4010-8312-a70b-71f9526f8aa9"
 version: 2
 ---
 # commitments

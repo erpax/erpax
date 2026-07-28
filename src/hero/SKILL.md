@@ -2,10 +2,10 @@
 name: hero
 description: "Use when reasoning about hero — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
 atomPath: hero
-coordinate: hero · 1/base · 1aa570fd
-contentUuid: "8e879fef-4e4e-5458-975f-f31f741d699d"
-diamondUuid: "33265d49-6b8d-8dfa-b415-cb584ef499f6"
-uuid: "1aa570fd-4971-8640-8fd5-746d61b55c41"
+coordinate: "hero · 1/base · 904de990"
+contentUuid: "cf8f9796-d47d-59ba-9124-972013085d33"
+diamondUuid: "d1aead3b-d570-8fc0-a393-3defc7c96891"
+uuid: "904de990-9d76-85ff-8af3-8844adaf41db"
 horo: 1
 bonds:
   in:
@@ -26,7 +26,7 @@ neighbors:
   backlinks:
     - law
 signatures:
-  computationUuid: "a6ce8206-1eba-88e9-ac54-93ebee1c4d5c"
+  computationUuid: "23de2a6c-7378-890c-a026-29e9ced95da9"
   stages:
     - stage: path
       stageUuid: "14665abf-022b-8877-8e75-c32a19a9b96f"
@@ -37,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "22f9351f-2078-8193-90d4-0b1b56852230"
     - stage: horo
-      stageUuid: "ec66c564-4b25-8723-8f17-31a2b5295293"
+      stageUuid: "60b69ef2-5767-8462-8a38-db08bef17e7f"
     - stage: seal
       stageUuid: "69ce68c2-d63d-8898-9ac9-23afc7e46171"
     - stage: uuid
-      stageUuid: "78a4c261-cc53-8606-a408-db12d78d78c3"
+      stageUuid: "3539b38e-ab08-8088-9d21-c0bb066c070e"
 version: 2
 ---
 # hero

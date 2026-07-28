@@ -1,136 +1,76 @@
 ---
 name: chat
 description: "Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain."
-atomPath: agent/chat
-coordinate: agent/chat · 4/weave · 714f462d
-contentUuid: "1ccde06f-0baf-5de2-9b8a-2175fd3fcfb6"
-diamondUuid: "ef3c979e-d87d-84fd-a362-a3f8184c5687"
-uuid: "714f462d-5d9a-8c45-b8c1-a1cd65fc8994"
-horo: 4
+atomPath: "agent/chat"
+coordinate: "agent/chat · 7/descent · da1fa7d2"
+contentUuid: "eae737c3-7f29-5447-8236-caab83b35e6e"
+diamondUuid: "9240beda-7d7d-86b5-b7fe-11cc88181374"
+uuid: "da1fa7d2-b40c-8e5e-af54-2aeca7d6b616"
+horo: 7
 bonds:
   in:
-    - accounting
     - agent
     - akashic
-    - all
     - architecture
-    - aura
-    - balance
     - breath
     - chat
-    - civilization
     - classroom
-    - collections
     - comms
     - communication
-    - config
     - contribution
     - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
     - history
-    - hooks
-    - identity
     - industry
     - law
-    - lexical
     - llm
     - matrix
     - mcp
     - merge
     - message
-    - one
-    - part
-    - plugins
-    - port
+    - quantum
     - realtime
-    - recover
-    - rodin
     - science
-    - self
-    - sequence
     - session
     - skills
     - society
-    - spec
-    - standard
-    - take
     - team
     - torus
-    - transaction
     - trinity
-    - types
     - uuid
     - wave
-    - whole
   out:
-    - accounting
     - agent
     - akashic
-    - all
     - architecture
-    - aura
-    - balance
     - breath
     - chat
-    - civilization
     - classroom
-    - collections
     - comms
     - communication
-    - config
     - contribution
     - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
     - history
-    - hooks
-    - identity
     - industry
     - law
-    - lexical
     - llm
     - matrix
     - mcp
     - merge
     - message
-    - one
-    - part
-    - plugins
-    - port
+    - quantum
     - realtime
-    - recover
-    - rodin
     - science
-    - self
-    - sequence
     - session
     - skills
     - society
-    - spec
-    - standard
-    - take
     - team
     - torus
-    - transaction
     - trinity
-    - types
     - uuid
     - wave
-    - whole
 typography:
   partition: agent
-  bondDegree: 213
+  bondDegree: 151
   neighbors:
     - agent
     - aura
@@ -146,127 +86,67 @@ neighbors:
     - quantum
     - uuid
   matrix:
-    - accounting
     - agent
     - akashic
-    - all
     - architecture
-    - aura
-    - balance
     - breath
     - chat
-    - civilization
     - classroom
-    - collections
     - comms
     - communication
-    - config
     - contribution
     - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
     - history
-    - hooks
-    - identity
     - industry
     - law
-    - lexical
     - llm
     - matrix
     - mcp
     - merge
     - message
-    - one
-    - part
-    - plugins
-    - port
+    - quantum
     - realtime
-    - recover
-    - rodin
     - science
-    - self
-    - sequence
     - session
     - skills
     - society
-    - spec
-    - standard
-    - take
     - team
     - torus
-    - transaction
     - trinity
-    - types
     - uuid
     - wave
-    - whole
   backlinks:
-    - accounting
     - agent
     - akashic
-    - all
     - architecture
-    - aura
-    - balance
     - breath
     - chat
-    - civilization
     - classroom
-    - collections
     - comms
     - communication
-    - config
     - contribution
     - cost
-    - database
-    - duality
-    - fields
-    - flow
-    - fractal
-    - generate
-    - give
     - history
-    - hooks
-    - identity
     - industry
     - law
-    - lexical
     - llm
     - matrix
     - mcp
     - merge
     - message
-    - one
-    - part
-    - plugins
-    - port
+    - quantum
     - realtime
-    - recover
-    - rodin
     - science
-    - self
-    - sequence
     - session
     - skills
     - society
-    - spec
-    - standard
-    - take
     - team
     - torus
-    - transaction
     - trinity
-    - types
     - uuid
     - wave
-    - whole
 signatures:
-  computationUuid: "dc342b95-0b9f-8f79-a90c-7cedf9639992"
+  computationUuid: "fb8251b5-72ee-86df-b690-d041adf714ce"
   stages:
     - stage: path
       stageUuid: "98aef98a-97ad-869d-bca5-aaf4c28400e3"
@@ -277,11 +157,11 @@ signatures:
     - stage: links
       stageUuid: "5fe11ab5-ca41-8ea2-84e8-558410fba0bd"
     - stage: horo
-      stageUuid: "afbc9f32-1f6b-8dd8-813a-850a42e2c809"
+      stageUuid: "cc14bdb2-baf4-801e-a9f5-356f79a6638b"
     - stage: seal
       stageUuid: "3bc287af-a0bb-8498-bab8-35d97e08171a"
     - stage: uuid
-      stageUuid: "ebbdb88e-db86-8b57-a9c5-4979a4ca64b7"
+      stageUuid: "4842b0ba-7aa0-8f64-9555-1338586cba4b"
 version: 2
 ---
 # agent/chat — agents conversing

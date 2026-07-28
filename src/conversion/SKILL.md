@@ -1,8 +1,136 @@
 ---
 name: conversion
 description: "Use when reasoning about reversible representation change — a conversion is a bijection on ℤ/9 (multiplication by a unit), and inversion REINVENTS conversion: the inverse of a conversion is another conversion, from the same unit group closed under inverse. Holds only for the reversible units {1,2,4,5,7,8}; the axis {3,6,9} collapses — a lossy conversion (like the one-way fold) has no inverse to reinvent."
+atomPath: conversion
+coordinate: "conversion · 5/round · 867d0b0a"
+contentUuid: "b5148662-e464-5891-b01c-2da4fbd01255"
+diamondUuid: "6605c621-6a09-8c77-ab7d-76c868dcbde9"
+uuid: "867d0b0a-b8b4-8e9c-a41d-cc34c9b453ca"
+horo: 5
+bonds:
+  in:
+    - agriculture
+    - aquaculture
+    - attribution
+    - beyond
+    - coincidence
+    - collapse
+    - crop
+    - discover
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - horo
+    - law
+    - merge
+    - organic
+    - reverse
+    - rodin
+    - service
+    - theorem
+    - yield
+  out:
+    - agriculture
+    - aquaculture
+    - attribution
+    - beyond
+    - coincidence
+    - collapse
+    - crop
+    - discover
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - horo
+    - law
+    - merge
+    - organic
+    - reverse
+    - rodin
+    - service
+    - theorem
+    - yield
+typography:
+  partition: conversion
+  bondDegree: 81
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - beyond
+    - collapse
+    - discover
+    - horo
+    - law
+    - merge
+    - reverse
+    - rodin
+  matrix:
+    - agriculture
+    - aquaculture
+    - attribution
+    - beyond
+    - coincidence
+    - collapse
+    - crop
+    - discover
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - horo
+    - law
+    - merge
+    - organic
+    - reverse
+    - rodin
+    - service
+    - theorem
+    - yield
+  backlinks:
+    - agriculture
+    - aquaculture
+    - attribution
+    - beyond
+    - coincidence
+    - collapse
+    - crop
+    - discover
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - horo
+    - law
+    - merge
+    - organic
+    - reverse
+    - rodin
+    - service
+    - theorem
+    - yield
+signatures:
+  computationUuid: "2cda7733-747a-8add-b74a-f23267a659a0"
+  stages:
+    - stage: path
+      stageUuid: "a9279dc4-0b16-81f3-a8f3-ef3b149504af"
+    - stage: trinity
+      stageUuid: "28018b41-67df-8965-8a85-0cf463fd2e92"
+    - stage: boundary
+      stageUuid: "afd45b98-3fd4-8fa9-84bd-9df8efa4234b"
+    - stage: links
+      stageUuid: "ab280a77-ec3b-8077-8eb9-a37ef301ba79"
+    - stage: horo
+      stageUuid: "bea8ec9a-1630-88a1-8f36-08113c428b7c"
+    - stage: seal
+      stageUuid: "af1a30e1-89c5-873b-ac3f-a106b3a94109"
+    - stage: uuid
+      stageUuid: "278de78a-03e1-8ae8-b9a1-5e2abfa3bd44"
+version: 2
 ---
-
 # conversion — inversion reinvents conversion
 
 A **conversion** is a reversible change of representation: a bijection on ℤ/9, which is exactly multiplication by a **unit** `u ∈ {1,2,4,5,7,8}` — the map `n ↦ u·n` permutes all nine residues, losing nothing. An **inversion** reverses it. The realization — a theorem, not a pun — is that you do **not** build new machinery to convert back:

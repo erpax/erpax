@@ -1,11 +1,11 @@
 ---
 name: schedules
 description: "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node."
-atomPath: fixed/assets/depreciation/schedules
-coordinate: fixed/assets/depreciation/schedules · 7/descent · dab1b731
-contentUuid: "44fcf070-bf40-5de9-89fd-77937efccb6a"
-diamondUuid: "2b770529-64bc-8b19-92e3-99bfac04dd56"
-uuid: "dab1b731-0ea9-8759-ba04-97bb568437b9"
+atomPath: "fixed/assets/depreciation/schedules"
+coordinate: "fixed/assets/depreciation/schedules · 7/descent · 7ecb5631"
+contentUuid: "fc1da108-afe9-5640-aa5f-2c9fcb1b95ea"
+diamondUuid: "b1c9f66b-9887-87f2-8743-b5553a1bbe34"
+uuid: "7ecb5631-33b7-82a3-941e-5a85f0439d3e"
 horo: 7
 bonds:
   in:
@@ -33,11 +33,13 @@ typography:
 standards:
   - "IFRS IAS-16 property-plant-and-equipment depreciation"
   - "IFRS IAS-36 impairment-of-assets"
-  - "ISO-19011:2018 audit-trail depreciation-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time period-end"
+  - "ISO-8601-1:2019 date-time period-end`"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-360 property-plant-and-equipment"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -66,7 +68,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "96f334ab-c042-8173-8250-10e828f25283"
+  computationUuid: "036526c8-1b8d-89d6-9196-1e35d25e89fd"
   stages:
     - stage: path
       stageUuid: "dc1ae3b7-dc2e-8a8d-940b-9e57c4f92d39"
@@ -77,11 +79,11 @@ signatures:
     - stage: links
       stageUuid: "a99ce833-ba58-88d1-b01c-b67a89d68f3a"
     - stage: horo
-      stageUuid: "54b32344-cb42-88db-9e50-e4b518be854c"
+      stageUuid: "e1f7875a-901d-82c5-bec7-b659015a39af"
     - stage: seal
       stageUuid: "6dd2f3d3-a5af-80e6-8e22-11503fae091b"
     - stage: uuid
-      stageUuid: "c1833970-1186-832d-845c-0d50d9c130ad"
+      stageUuid: "91f844f6-2733-8b55-8371-a9e0a8a08835"
 version: 2
 ---
 # depreciation-schedules

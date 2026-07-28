@@ -2,11 +2,11 @@
 name: action
 description: Use when reasoning about action — An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of th
 atomPath: action
-coordinate: action · 4/weave · 06f359f7
-contentUuid: "61574fb5-fd6d-52a2-bfa7-eee61c7cb701"
-diamondUuid: "34d6d2ee-e119-8c82-a55b-f9a2f5e0c7f3"
-uuid: "06f359f7-261e-8d6b-9849-d7c30a1e5761"
-horo: 4
+coordinate: "action · 8/crest · 888a20a5"
+contentUuid: "31ec676c-5df5-5198-b19e-0814f0ef40a9"
+diamondUuid: "0616c625-ff5c-8441-8074-a166c5feefbc"
+uuid: "888a20a5-bbbc-8f75-98ea-7dbbeca70c9a"
+horo: 8
 bonds:
   in:
     - accept
@@ -103,34 +103,23 @@ bonds:
     - requirement
     - reserve
     - reset
-    - resume
     - return
     - review
     - rsvp
-    - seek
-    - sell
     - send
     - solve
     - specification
     - status
-    - subscribe
-    - suspend
-    - tie
     - tip
     - track
-    - trade
     - transfer
     - travel
     - type
     - un
     - update
     - use
-    - view
     - vote
-    - want
     - watch
-    - wear
-    - win
     - write
   out:
     - accept
@@ -227,38 +216,27 @@ bonds:
     - requirement
     - reserve
     - reset
-    - resume
     - return
     - review
     - rsvp
-    - seek
-    - sell
     - send
     - solve
     - specification
     - status
-    - subscribe
-    - suspend
-    - tie
     - tip
     - track
-    - trade
     - transfer
     - travel
     - type
     - un
     - update
     - use
-    - view
     - vote
-    - want
     - watch
-    - wear
-    - win
     - write
 typography:
   partition: action
-  bondDegree: 405
+  bondDegree: 378
   neighbors: []
 standards:
   - schema.org
@@ -402,34 +380,23 @@ neighbors:
     - requirement
     - reserve
     - reset
-    - resume
     - return
     - review
     - rsvp
-    - seek
-    - sell
     - send
     - solve
     - specification
     - status
-    - subscribe
-    - suspend
-    - tie
     - tip
     - track
-    - trade
     - transfer
     - travel
     - type
     - un
     - update
     - use
-    - view
     - vote
-    - want
     - watch
-    - wear
-    - win
     - write
   backlinks:
     - accept
@@ -526,52 +493,41 @@ neighbors:
     - requirement
     - reserve
     - reset
-    - resume
     - return
     - review
     - rsvp
-    - seek
-    - sell
     - send
     - solve
     - specification
     - status
-    - subscribe
-    - suspend
-    - tie
     - tip
     - track
-    - trade
     - transfer
     - travel
     - type
     - un
     - update
     - use
-    - view
     - vote
-    - want
     - watch
-    - wear
-    - win
     - write
 signatures:
-  computationUuid: "57f807a4-54ed-80bf-abf2-8bf3d45b7cf2"
+  computationUuid: "2c7db4a1-1885-81d8-9cba-de3d9abc6456"
   stages:
     - stage: path
       stageUuid: "caf3a11c-acd8-86eb-9005-03eea17fd592"
     - stage: trinity
-      stageUuid: "23de7568-f1d4-88ba-94ef-6f9df4dd0624"
+      stageUuid: "e22a9b71-f839-833c-943f-9515cbdfcebf"
     - stage: boundary
-      stageUuid: "eab06599-8058-8723-a360-0ce3d9f2dd13"
+      stageUuid: "4e69ac4f-3d58-8404-a054-a36a19e84a39"
     - stage: links
       stageUuid: "5351623d-b4b3-8b8f-8ab0-c22690b6d130"
     - stage: horo
-      stageUuid: "91200727-3c10-8c25-a867-0bca68301d5e"
+      stageUuid: "6818aacc-867f-8d55-b61b-2c1db35ec24c"
     - stage: seal
-      stageUuid: "be53d6f8-fe4c-81ba-954a-90757b7ee828"
+      stageUuid: "040bdf68-a1b1-8669-9054-d863bcec2b0d"
     - stage: uuid
-      stageUuid: "7ecf9138-1ed9-8be9-84f0-26741d97c253"
+      stageUuid: "7379abaa-eac5-8471-b0a9-000836964d1a"
 version: 2
 ---
 # action

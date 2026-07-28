@@ -2,52 +2,75 @@
 name: fold
 description: "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit."
 atomPath: fold
-coordinate: fold · 8/crest · 1e7ff9dc
-contentUuid: "43e22a63-ca25-5bc4-b105-d317cdf79c53"
-diamondUuid: "6eb58bc4-c40a-89cb-98ba-cd8d0feb944c"
-uuid: "1e7ff9dc-0da4-8861-b564-16a8f1fd8b41"
-horo: 8
+coordinate: "fold · 7/descent · ce5a9b31"
+contentUuid: "00312dbf-17cf-5089-9e98-694a122c3457"
+diamondUuid: "c0f64429-7c26-8a3c-bcfc-1227abfee385"
+uuid: "ce5a9b31-6d1a-8c67-9eaf-ebde520f9b8e"
+horo: 7
 bonds:
   in:
     - agent
+    - angle
     - collapse
+    - conservation
     - db
+    - diamond
+    - e
+    - entropy
     - horo
     - law
     - mala
     - matrix
     - merge
+    - mortality
     - name
+    - notary
     - one
+    - phi
+    - pi
     - rodin
+    - rosetta
     - stack
     - uuid
   out:
     - agent
+    - angle
     - collapse
+    - conservation
     - db
+    - diamond
+    - e
+    - entropy
     - horo
     - law
     - mala
     - matrix
     - merge
+    - mortality
     - name
+    - notary
     - one
+    - phi
+    - pi
     - rodin
+    - rosetta
     - stack
     - uuid
 typography:
   partition: fold
-  bondDegree: 39
-  neighbors: []
+  bondDegree: 72
+  neighbors:
+    - diamond
 standards:
-  - "depth/merges are the binary-fold math; the corpus counts are read live from the matrix"
-  - "depth/merges are the binary-fold math; the corpus counts read live from the matrix, never asserted"
+  - "ceccec.psg.bg theorems — self-address (`concept.self.address`) · diamond-complete (`concept.diamond.complete`): folding excises duplication to zero remainder (the cancer cure)"
   - "the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)"
 bindings: []
 neighbors:
   wikilink:
     - collapse
+    - conservation
+    - diamond
+    - entropy
     - horo
     - law
     - mala
@@ -58,49 +81,69 @@ neighbors:
     - uuid
   matrix:
     - agent
+    - angle
     - collapse
+    - conservation
     - db
+    - diamond
+    - e
+    - entropy
     - horo
     - law
     - mala
     - matrix
     - merge
+    - mortality
     - name
+    - notary
     - one
+    - phi
+    - pi
     - rodin
+    - rosetta
     - stack
     - uuid
   backlinks:
     - agent
+    - angle
     - collapse
+    - conservation
     - db
+    - diamond
+    - e
+    - entropy
     - horo
     - law
     - mala
     - matrix
     - merge
+    - mortality
     - name
+    - notary
     - one
+    - phi
+    - pi
     - rodin
+    - rosetta
     - stack
     - uuid
 signatures:
-  computationUuid: "f4c6bfd5-3f4e-8746-9cd0-8d1d48821d30"
+  computationUuid: "96e024ed-bb08-8640-8629-4152edef0a87"
   stages:
     - stage: path
       stageUuid: "37834c64-da0b-8010-85d6-f62831a39992"
     - stage: trinity
       stageUuid: "41f55f96-dd84-81a1-bbe3-52509b1b5da8"
     - stage: boundary
-      stageUuid: "21b5528a-4471-8658-8d46-ecd481d45f0e"
+      stageUuid: "502655f6-c0f2-8093-97a1-38a382299256"
     - stage: links
-      stageUuid: "52a5296d-f8a1-898d-b519-29da34bd7522"
+      stageUuid: "07ebed05-1d09-8888-b658-756a2c994136"
     - stage: horo
-      stageUuid: "402757ba-d539-83ab-ab8d-b529aaac6e53"
+      stageUuid: "67bdd4d7-792e-8f1b-89b2-6cb359198186"
     - stage: seal
-      stageUuid: "c0acc967-7792-8949-93e8-5b31b39aa7aa"
+      stageUuid: "432ca860-c728-8001-a70b-ce3e78142f27"
     - stage: uuid
-      stageUuid: "05914da6-340e-8753-97d6-44361aecd434"
+      stageUuid: "9c52d944-f90b-8b35-83b3-bed6532a6271"
 version: 2
 ---
 # fold — the math of the folding

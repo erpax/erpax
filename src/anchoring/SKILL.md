@@ -2,11 +2,11 @@
 name: anchoring
 description: "Use when periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_RETURN, an L2, Cardano metadata, AT-proto, or a real TSA) so a regulator can verify ERPax integrity without trusting ERPax — and when you must refuse a non-external stub as tamper-evidence."
 atomPath: anchoring
-coordinate: anchoring · 8/crest · 297e937e
-contentUuid: "a9b2dce8-c90c-5050-97c2-ba2463692cab"
-diamondUuid: "295512d8-ddd9-8fbc-949e-01093fd743a6"
-uuid: "297e937e-6c67-883b-8501-816d66c34d19"
-horo: 8
+coordinate: "anchoring · 4/weave · 1cc71b6d"
+contentUuid: "e4d81f6d-9ce3-537a-af57-0bbb6a8ca20e"
+diamondUuid: "1dbe3c77-929f-8631-9db5-105e7c2b97ad"
+uuid: "1cc71b6d-8b65-8afe-a505-77ae80634605"
+horo: 4
 bonds:
   in:
     - anchor
@@ -27,7 +27,6 @@ typography:
   bondDegree: 18
   neighbors: []
 standards:
-  - Conservation Law 55/62 (tamper cost; the anchor is mandatory external entropy)
   - "EU-2014/55"
   - "EU-2018/1673"
   - "EU-2018/1725"
@@ -38,11 +37,15 @@ standards:
   - "EU-537/2014"
   - "EU-910/2014"
   - "ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)"
+  - "ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)`"
   - "ISO-19011"
-  - RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors
+  - "RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors"
+  - "RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors`"
   - W3C Verifiable Credentials Data Model 2.0
+  - "W3C Verifiable Credentials Data Model 2.0`"
   - "W3C-VC-2.0"
   - eIDAS
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -67,7 +70,7 @@ neighbors:
     - law
     - tamper
 signatures:
-  computationUuid: "48ec7037-04d6-8e92-89d6-7aa73c97da16"
+  computationUuid: "26dae7b5-9790-89b6-87de-0455be334efc"
   stages:
     - stage: path
       stageUuid: "63f36273-5705-8ddc-b213-153a26f34905"
@@ -78,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "b6682a0d-d0cb-8ffc-876e-288513b51ea8"
     - stage: horo
-      stageUuid: "7ae8ce10-15b7-8b21-a36a-658b6532550c"
+      stageUuid: "db4f5866-7875-8657-a0a5-51181f968603"
     - stage: seal
-      stageUuid: "2918d93f-570a-883d-9e6b-fc9632f50a3b"
+      stageUuid: "49ef4046-6840-83bc-8a17-047c570945d8"
     - stage: uuid
-      stageUuid: "4d886cba-73d5-8a75-a6c4-54a84d88eab6"
+      stageUuid: "ec3ad496-84d2-896e-b7f2-2aef17557d62"
 version: 2
 ---
 # anchoring — blockchain/TSA anchoring (the one borrowed external entropy)

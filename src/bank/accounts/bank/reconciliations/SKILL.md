@@ -1,12 +1,12 @@
 ---
 name: reconciliations
 description: "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection."
-atomPath: bank/accounts/bank/reconciliations
-coordinate: bank/accounts/bank/reconciliations · 4/weave · a0373898
-contentUuid: "5cb882c3-b812-5055-bd95-f0d24463e2d0"
-diamondUuid: "e10289d6-53ed-8a6b-8ae8-a49edb3a2299"
-uuid: "a0373898-725b-89d7-b6c5-2ae8f10c5f37"
-horo: 4
+atomPath: "bank/accounts/bank/reconciliations"
+coordinate: "bank/accounts/bank/reconciliations · 2/share · 6c941d4f"
+contentUuid: "46106645-a5d4-5b9d-854e-10a00cf4d718"
+diamondUuid: "78205831-d9b4-8ebe-8a8d-1eb7aa28c079"
+uuid: "6c941d4f-9f29-8393-a796-15d20094dac9"
+horo: 2
 bonds:
   in:
     - accounting
@@ -39,15 +39,18 @@ standards:
   - "EU-2019/771"
   - "EU-Intrastat-Reg-2019/2152"
   - "IFRS IAS-7 §6 §44 cash-flow-reconciliation"
-  - "ISO-19011:2018 §6.4.6 audit-evidence-bank-reconciliation"
   - "ISO-20022"
   - "ISO-20022 camt.053 bank-to-customer-statement (input)"
+  - "ISO-20022 camt.053 bank-to-customer-statement (input)`"
   - "ISO-4217"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time reconciliation-date"
+  - "ISO-8601-1:2019 date-time reconciliation-date`"
   - "SOX §404 internal-controls TOM-CSH-01 cash-balance-proof"
   - "US-GAAP ASC-230 statement-of-cash-flows"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -71,7 +74,7 @@ neighbors:
     - statements
     - transaction
 signatures:
-  computationUuid: "8da07600-1341-8e9e-a528-fbd6b02eb6c0"
+  computationUuid: "a165114a-6996-8c70-ba9e-c298b5ce6ef8"
   stages:
     - stage: path
       stageUuid: "f0214203-4284-876e-aecf-8ccfee1cdcbb"
@@ -82,11 +85,11 @@ signatures:
     - stage: links
       stageUuid: "201bee56-8968-8237-87d3-1762516e142f"
     - stage: horo
-      stageUuid: "fde3a89a-6eb8-8744-92a7-dfa066575bdb"
+      stageUuid: "b24c1e08-ebdd-8687-ab0a-6935a6f46590"
     - stage: seal
       stageUuid: "283527df-8d07-87e6-9bdd-3cddc021cd9f"
     - stage: uuid
-      stageUuid: "b574c6de-e261-8d1c-9261-54bd38be8d3d"
+      stageUuid: "502c3ef1-e53e-8b19-ba16-19a95bd3e6cb"
 version: 2
 ---
 # bank-reconciliations

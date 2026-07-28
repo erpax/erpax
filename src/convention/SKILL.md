@@ -2,11 +2,11 @@
 name: convention
 description: "Use when reasoning about the corpus's conventions as a layer — each convention is a check-atom with a live coverage(); the collider composes them into one tamper-cost, infinite only when every convention is computed clean (zero entropy)."
 atomPath: convention
-coordinate: convention · 8/crest · a0a94343
-contentUuid: "a68d2fc1-0b41-5138-8d74-7288cd49b919"
-diamondUuid: "4e4d1575-7df3-80a8-a58d-ef6e27d86f21"
-uuid: "a0a94343-8762-84ac-8669-4221b6ac06e1"
-horo: 8
+coordinate: "convention · 7/descent · e21e67d2"
+contentUuid: "2144ba05-2ccf-5f3d-8771-27fb5fda9a36"
+diamondUuid: "ea15c9c7-f971-82b1-a382-07b6acc91497"
+uuid: "e21e67d2-6a22-8dad-9ee2-36340ad31aec"
+horo: 7
 bonds:
   in:
     - boundary
@@ -21,6 +21,7 @@ bonds:
     - link
     - named
     - purity
+    - rules
     - sealed
     - tamper
   out:
@@ -36,18 +37,16 @@ bonds:
     - link
     - named
     - purity
+    - rules
     - sealed
     - tamper
 typography:
   partition: convention
-  bondDegree: 42
+  bondDegree: 45
   neighbors: []
 standards:
-  - "RFC-9562"
   - "UBL-2.1"
-  - "conventionChecks runs every convention's live coverage; the registry only collects, no logic"
   - "each convention is computed-not-hardcoded; the collider product (zero entropy ⟺ ∞)"
-  - "each coverage is a live computation in its atom; this file only collects them, no logic"
 bindings: []
 neighbors:
   wikilink:
@@ -72,6 +71,7 @@ neighbors:
     - link
     - named
     - purity
+    - rules
     - sealed
     - tamper
   backlinks:
@@ -87,10 +87,11 @@ neighbors:
     - link
     - named
     - purity
+    - rules
     - sealed
     - tamper
 signatures:
-  computationUuid: "98801b44-ad46-8942-b094-14151bb45d49"
+  computationUuid: "234c947d-3a24-85a1-b54f-66eaacacd092"
   stages:
     - stage: path
       stageUuid: "48c3e91b-9781-81dc-93c6-1ecf52313477"
@@ -101,11 +102,11 @@ signatures:
     - stage: links
       stageUuid: "39d9560a-b0ce-84e0-a848-acb969ff494b"
     - stage: horo
-      stageUuid: "99571804-a10a-86ba-91eb-a1208aa445a3"
+      stageUuid: "a504a548-dd05-80e1-a292-1dfac5c6cf75"
     - stage: seal
-      stageUuid: "90e91365-d5a7-8b1f-8183-5bee0079b969"
+      stageUuid: "94d8b8e7-8102-8814-a492-29667c6caaaa"
     - stage: uuid
-      stageUuid: "cd00fe91-2c71-8fb0-bb90-cd4f2ce71c34"
+      stageUuid: "d0a8c92c-2b9e-8e51-9964-96ba6e354af6"
 version: 2
 ---
 # convention — the corpus's laws, each a measured check

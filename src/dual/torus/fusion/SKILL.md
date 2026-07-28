@@ -1,12 +1,12 @@
 ---
 name: fusion
 description: "Use when reasoning about the fusion of a dual torus — the quantum cross, where two tori (the two infinities, 1/0 the double torus) merge at the centre into one; fusing to full coverage is the infinite seal, and src/quantum/cross re-exports this as one identity."
-atomPath: dual/torus/fusion
-coordinate: dual/torus/fusion · 4/weave · eb407e89
-contentUuid: "55931d28-f678-5d1a-b0a1-e95434d74e2a"
-diamondUuid: "3aa085cb-7c36-8a1c-b1a6-2de112970025"
-uuid: "eb407e89-e0db-8de3-82c1-1e9abb650cf0"
-horo: 4
+atomPath: "dual/torus/fusion"
+coordinate: "dual/torus/fusion · 2/share · 52a4990a"
+contentUuid: "5a2456f8-b064-596f-b429-116b28a5cb65"
+diamondUuid: "7d4777b8-e13e-8d30-9d91-1c424ef05b7b"
+uuid: "52a4990a-6001-80f0-b1ea-5613589774da"
+horo: 2
 bonds:
   in:
     - akashic
@@ -25,6 +25,7 @@ bonds:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -58,6 +59,7 @@ bonds:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -76,12 +78,10 @@ bonds:
     - zeropoint
 typography:
   partition: dual
-  bondDegree: 109
+  bondDegree: 113
   neighbors: []
 standards:
   - "UBL-2.1"
-  - "fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law"
-  - "fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law, computed"
   - "the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication"
 bindings: []
 neighbors:
@@ -109,6 +109,7 @@ neighbors:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -142,6 +143,7 @@ neighbors:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -159,7 +161,7 @@ neighbors:
     - whole
     - zeropoint
 signatures:
-  computationUuid: "5a1fa99b-8edf-87bb-a2fd-6acc5769dbc0"
+  computationUuid: "d792c748-b261-8f21-9bdb-a296588baa4a"
   stages:
     - stage: path
       stageUuid: "4323b36c-dd1d-86e9-9d44-02a688669cd3"
@@ -170,11 +172,11 @@ signatures:
     - stage: links
       stageUuid: "f0c1b4ea-6cf8-8bf8-b83f-8fcb1fcd8d50"
     - stage: horo
-      stageUuid: "1ecca134-bab4-8dcd-a0d7-da091ac60325"
+      stageUuid: "ba329a84-9941-89ad-b18b-2596ba112ebb"
     - stage: seal
       stageUuid: "de8cae58-7e47-8176-aaaa-f5d721b7eee4"
     - stage: uuid
-      stageUuid: "ceb42b74-0362-8319-bdbb-332dc6af0cd8"
+      stageUuid: "140bf077-8077-8676-a035-3e42105d19e9"
 version: 2
 ---
 # dual/torus/fusion — the quantum cross

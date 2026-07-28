@@ -1,12 +1,12 @@
 ---
 name: api
 description: "Use when reasoning about the official per-country authority API catalogue — tax authorities, business registries, e-invoicing portals, VAT/VIES, payroll, sanctions, and central-bank FX; public metadata only, credentials in tenant sandbox."
-atomPath: country/api
-coordinate: country/api · 5/round · be8f7e2f
-contentUuid: "79f2f8a4-99fc-5875-ad19-b56506571a21"
-diamondUuid: "818d61ff-093d-8b99-89ad-d299bf07cc83"
-uuid: "be8f7e2f-4d27-8164-a4a1-d08c0d412c75"
-horo: 5
+atomPath: "country/api"
+coordinate: "country/api · 4/weave · 44e20053"
+contentUuid: "317887af-bb55-5bcb-91c8-128d39636d11"
+diamondUuid: "514bc5fc-549d-8f1b-9f5e-ee35a7ac1005"
+uuid: "44e20053-9d2a-8209-9e1a-66aab9b4eaf8"
+horo: 4
 bonds:
   in:
     - access
@@ -65,7 +65,7 @@ bonds:
     - workspace
 typography:
   partition: country
-  bondDegree: 94
+  bondDegree: 96
   neighbors: []
 standards:
   - "AMLD-5 ubo-registry-access"
@@ -76,17 +76,21 @@ standards:
   - "EU-2002/58"
   - "EU-2017/1132"
   - "EU-2017/828"
-  - "EU-Taxonomy-2020/852"
   - "IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates"
   - "ISO-20022"
   - "ISO-20022 financial-messages cross-references"
+  - "ISO-20022 financial-messages cross-references`"
   - "ISO-3166-1"
   - "ISO-3166-1:2020 country-codes alpha-2"
+  - "ISO-3166-1:2020 country-codes alpha-2`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - PSD2
   - "Peppol-BIS-3.0"
   - "SDMX 2.1 statistical-data-and-metadata-exchange"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -149,7 +153,7 @@ neighbors:
     - web
     - workspace
 signatures:
-  computationUuid: "88fd0c30-a71e-81c6-8b04-aa6a280ee0d4"
+  computationUuid: "bf89304b-51e5-8528-a9ef-29515186cd6d"
   stages:
     - stage: path
       stageUuid: "5bfb2135-1d9c-822f-bc66-b6156d6dee52"
@@ -160,11 +164,11 @@ signatures:
     - stage: links
       stageUuid: "5766e3e9-cb79-865e-a452-7711d00d2d8d"
     - stage: horo
-      stageUuid: "32cf7be8-4f10-8188-9383-4f54ba4a6526"
+      stageUuid: "25b631bb-abfd-8c7c-a5c2-617fb3c1ebf8"
     - stage: seal
       stageUuid: "5c6e5472-2cca-81fd-9793-580c3254f166"
     - stage: uuid
-      stageUuid: "12991772-a750-8934-878b-c4800d834467"
+      stageUuid: "37ebd0c7-cb9c-841b-806a-b42476b48f95"
 version: 2
 ---
 # api — official per-country authority API catalogue

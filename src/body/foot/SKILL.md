@@ -1,26 +1,25 @@
 ---
 name: foot
 description: "Use when reasoning about foot as an anatomical part of [[body]] — vocabulary pivot to @/foot; nested not duplicated."
-atomPath: body/foot
-coordinate: body/foot · 8/crest · a4ad6260
-contentUuid: "8dfd06b7-7902-5599-b44e-31820d4be13a"
-diamondUuid: "cb3cfac3-2ab3-8019-a591-6f42e02e8595"
-uuid: "a4ad6260-0517-8021-9676-aaddef201071"
-horo: 8
+atomPath: "body/foot"
+coordinate: "body/foot · 1/base · c619e1bf"
+contentUuid: "ecd9cc24-84a2-51e1-b0f7-4591db84b255"
+diamondUuid: "dd44bf50-9fdd-8ec6-82b4-680d9fb3830e"
+uuid: "c619e1bf-b159-8ba9-af80-166f1ef0f790"
+horo: 1
 bonds:
   in:
+    - anatomy
     - body
-    - collapse
     - foot
     - law
     - merge
-    - sti
   out:
-    - collapse
+    - anatomy
+    - body
     - foot
     - law
     - merge
-    - sti
 typography:
   partition: body
   bondDegree: 21
@@ -36,19 +35,19 @@ neighbors:
     - law
     - merge
   matrix:
-    - collapse
+    - anatomy
+    - body
     - foot
     - law
     - merge
-    - sti
   backlinks:
-    - collapse
+    - anatomy
+    - body
     - foot
     - law
     - merge
-    - sti
 signatures:
-  computationUuid: "96bc7e22-2914-8d01-9de6-d6840463155c"
+  computationUuid: "f94f130c-7140-8772-9fae-9d051576919c"
   stages:
     - stage: path
       stageUuid: "e1754f70-826e-88d3-b314-aeab2ac9966f"
@@ -59,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "087fc543-46a9-8427-a2a7-136d12254902"
     - stage: horo
-      stageUuid: "4c77c477-d77d-87dd-b32c-53ffc4b70667"
+      stageUuid: "c93b89c4-3949-8b8b-98cf-8017afdc4aab"
     - stage: seal
-      stageUuid: "74237dde-ad07-8c95-8db7-0834aaf8b54d"
+      stageUuid: "470078fc-cd18-899e-8124-c54e9ff1b789"
     - stage: uuid
-      stageUuid: "ff256d50-501a-8f7c-9538-57e225ea6103"
+      stageUuid: "549b4f1b-0f4d-8053-9f23-66b0440cbc4b"
 version: 2
 ---
 # body/foot — anatomical part

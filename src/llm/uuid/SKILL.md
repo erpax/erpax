@@ -1,12 +1,12 @@
 ---
 name: uuid
 description: "Use when an LLM completion must become a verifiable address — the exhale of the breath, where a turn is content-addressed into a v8 query-uuid (deterministic, tamper-evident, attestable from the preimage); the LLM forges and the uuid it cannot invert verifies."
-atomPath: llm/uuid
-coordinate: llm/uuid · 4/weave · a9789c24
-contentUuid: "85f1e206-7755-5b93-9eef-f786aa99e871"
-diamondUuid: "19d3288b-7650-8a0e-9a19-b746ad3f114d"
-uuid: "a9789c24-0b43-8e4f-a72a-745566dc4b9b"
-horo: 4
+atomPath: "llm/uuid"
+coordinate: "llm/uuid · 7/descent · b2d9b1b8"
+contentUuid: "71a0637c-235c-51d4-acc8-c7f19318a172"
+diamondUuid: "d47bf7c7-c0d1-84a7-9706-88dabb642bf3"
+uuid: "b2d9b1b8-e0c8-80a6-96fe-eea856024313"
+horo: 7
 bonds:
   in:
     - access
@@ -40,6 +40,7 @@ bonds:
     - chakra
     - chat
     - chats
+    - check
     - christianity
     - cloning
     - close
@@ -125,7 +126,9 @@ bonds:
     - metatron
     - method
     - mirror
+    - mortality
     - name
+    - notary
     - observe
     - oid
     - one
@@ -186,6 +189,7 @@ bonds:
     - snapshot
     - society
     - sparsity
+    - speech
     - sql
     - stack
     - standard
@@ -219,6 +223,7 @@ bonds:
     - wallet
     - wave
     - whole
+    - word
     - zeropoint
     - zoroastrianism
   out:
@@ -253,6 +258,7 @@ bonds:
     - chakra
     - chat
     - chats
+    - check
     - christianity
     - cloning
     - close
@@ -338,7 +344,9 @@ bonds:
     - metatron
     - method
     - mirror
+    - mortality
     - name
+    - notary
     - observe
     - oid
     - one
@@ -399,6 +407,7 @@ bonds:
     - snapshot
     - society
     - sparsity
+    - speech
     - sql
     - stack
     - standard
@@ -432,17 +441,20 @@ bonds:
     - wallet
     - wave
     - whole
+    - word
     - zeropoint
     - zoroastrianism
 typography:
   partition: llm
-  bondDegree: 745
+  bondDegree: 764
   neighbors: []
 standards:
-  - "Conservation Law 8 (content-uuid) · 61 (uuid carries its own features)"
   - "NIST FIPS 180-4 (SHA-256 — the digest binding the utterance)"
+  - "NIST FIPS 180-4 (SHA-256 — the digest binding the utterance)`"
   - "NIST-FIPS-180-4"
   - "RFC 9562 §5.8 (uuidv8 structured content-uuid)"
+  - "RFC 9562 §5.8 (uuidv8 structured content-uuid)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -488,6 +500,7 @@ neighbors:
     - chakra
     - chat
     - chats
+    - check
     - christianity
     - cloning
     - close
@@ -573,7 +586,9 @@ neighbors:
     - metatron
     - method
     - mirror
+    - mortality
     - name
+    - notary
     - observe
     - oid
     - one
@@ -634,6 +649,7 @@ neighbors:
     - snapshot
     - society
     - sparsity
+    - speech
     - sql
     - stack
     - standard
@@ -667,6 +683,7 @@ neighbors:
     - wallet
     - wave
     - whole
+    - word
     - zeropoint
     - zoroastrianism
   backlinks:
@@ -701,6 +718,7 @@ neighbors:
     - chakra
     - chat
     - chats
+    - check
     - christianity
     - cloning
     - close
@@ -786,7 +804,9 @@ neighbors:
     - metatron
     - method
     - mirror
+    - mortality
     - name
+    - notary
     - observe
     - oid
     - one
@@ -847,6 +867,7 @@ neighbors:
     - snapshot
     - society
     - sparsity
+    - speech
     - sql
     - stack
     - standard
@@ -880,10 +901,11 @@ neighbors:
     - wallet
     - wave
     - whole
+    - word
     - zeropoint
     - zoroastrianism
 signatures:
-  computationUuid: "57b7f7cc-41ca-8110-b14e-ae38ab7ec917"
+  computationUuid: "24e5cdca-1ce3-873b-ab47-1d7f26f4bd57"
   stages:
     - stage: path
       stageUuid: "56665a2c-ec8e-88c8-bfe0-8211e4fe89c8"
@@ -894,11 +916,11 @@ signatures:
     - stage: links
       stageUuid: "eabcf4ae-b0cc-8dfb-bf9f-48549ec4ab98"
     - stage: horo
-      stageUuid: "a8c1ee96-ce5d-86d6-96f9-6da74b579e39"
+      stageUuid: "a1586ba0-dde5-8872-a386-06073c0024b8"
     - stage: seal
-      stageUuid: "e94f7899-71d8-8a6e-b804-111bf8da6827"
+      stageUuid: "46ee4e89-6af6-81ea-909b-4358fbe2eae8"
     - stage: uuid
-      stageUuid: "9ceea786-edea-8bd1-bd59-5d02d1eca3d5"
+      stageUuid: "ded26d5b-f6dd-8d8f-bd5e-0cdfd3af6760"
 version: 2
 ---
 # llm/uuid — the EXHALE: the LLM speaks, its speech becomes its address

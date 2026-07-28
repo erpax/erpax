@@ -2,11 +2,11 @@
 name: method
 description: "Use when reasoning about exported symbols as method-diamonds — every method name has a path of diamonds (the atom chain from corpus root to its index.ts barrel, plus the symbol at the leaf); compute methodPath/scanMethodPaths for addresses and boundary uuids; schema.org 'method' vocabulary is the collided homonym."
 atomPath: method
-coordinate: method · 7/descent · ac66b9bd
-contentUuid: "8ff86543-a1c9-5557-8ede-1733a66bdd67"
-diamondUuid: "b39303cd-8e40-8465-a040-4c5cb0580c6b"
-uuid: "ac66b9bd-4678-8e5c-8c50-3b54592d436c"
-horo: 7
+coordinate: "method · 5/round · 9fa14842"
+contentUuid: "82928f85-86d6-55d5-9a5c-939ceb828e02"
+diamondUuid: "019c370a-3e52-87cc-97e8-02e4866a929c"
+uuid: "9fa14842-1e1a-87f2-8cee-75dcb074b7b4"
+horo: 5
 bonds:
   in:
     - accepted
@@ -77,11 +77,9 @@ typography:
   bondDegree: 98
   neighbors:
     - diamond
-    - quantum/boundary
-    - tamper/import
+    - "quantum/boundary"
+    - "tamper/import"
 standards:
-  - paths computed from live index.ts exports via parseMethodExports
-  - "paths computed from live index.ts exports; never hand-listed"
   - "schema.org — method vocabulary (collided homonym); ISO/IEC 25010:2023 §5.5 testability — pure path functions regression-locked"
 bindings: []
 neighbors:
@@ -170,22 +168,22 @@ neighbors:
     - transmission
     - uuid
 signatures:
-  computationUuid: "e019a999-9404-8c93-850a-79714d05b163"
+  computationUuid: "b7bf60a8-0091-8493-859a-06a795923913"
   stages:
     - stage: path
       stageUuid: "5283a66e-0757-869d-a9c8-238cd5dae366"
     - stage: trinity
       stageUuid: "99680b0b-7528-8c3c-93e4-0c0ded27ad05"
     - stage: boundary
-      stageUuid: "f1c2b0d6-697e-88ee-92a9-b76a1e0adc45"
+      stageUuid: "45b4a30d-7940-89e5-bcc7-1ff73aab2697"
     - stage: links
       stageUuid: "d11f530e-be04-8b88-a5ad-4f5371ed8c7e"
     - stage: horo
-      stageUuid: "fd854475-fcba-8896-84ea-34dedc6663fd"
+      stageUuid: "361aeb56-d33c-8392-afd4-1ed4fc44b354"
     - stage: seal
-      stageUuid: "03b6ac52-5da4-87a2-bb42-f08d8e6d80bc"
+      stageUuid: "8232d1bf-73a8-86a2-8585-2b94a20cbd71"
     - stage: uuid
-      stageUuid: "d4bb1b73-e45a-8682-a23a-8ffd687bf70e"
+      stageUuid: "8856e3fc-c049-8795-974d-a806af268bc6"
 version: 2
 ---
 # method — every method name has a path of diamonds

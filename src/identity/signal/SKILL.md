@@ -1,21 +1,18 @@
 ---
 name: signal
 description: "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity."
-atomPath: identity/signal
-coordinate: identity/signal · 9/unity · b7f29a21
-contentUuid: "56cc9d68-76ab-5ce8-9e97-b17fa2918918"
-diamondUuid: "96504324-21ea-8986-b3e5-a60177a08f9b"
-uuid: "b7f29a21-a77c-8ee1-a2e9-5a60bcf4f7ff"
+atomPath: "identity/signal"
+coordinate: "identity/signal · 9/unity · e7677a65"
+contentUuid: "0ca99800-da6f-59b1-b6c6-eed3fba8ed7b"
+diamondUuid: "8aaf6f51-7850-8e0f-9d6f-1dd20f21adb1"
+uuid: "e7677a65-0bf0-8f1d-adf2-88b088df024b"
 horo: 9
 bonds:
   in:
-    - all
     - analog
     - animism
     - aura
     - awareness
-    - axis
-    - bindings
     - biomagnetism
     - biophoton
     - body
@@ -24,22 +21,22 @@ bonds:
     - chart
     - cmyk
     - coherence
-    - coil
+    - css
     - diamond
     - diffusion
     - duality
-    - flow
+    - factory
     - gnosticism
     - hamiltonian
     - harmony
     - horo
     - identity
+    - image
     - law
     - leap
     - live
     - llm
     - market
-    - merge
     - message
     - modulation
     - nerve
@@ -48,27 +45,22 @@ bonds:
     - phase
     - photon
     - pixel
-    - polarity
     - render
     - rodin
-    - round
     - science
-    - sensory
+    - signal
+    - speech
     - suffering
+    - taichi
     - tamper
     - trinity
-    - unity
     - uuid
-    - versions
     - vibration
   out:
-    - all
     - analog
     - animism
     - aura
     - awareness
-    - axis
-    - bindings
     - biomagnetism
     - biophoton
     - body
@@ -77,22 +69,22 @@ bonds:
     - chart
     - cmyk
     - coherence
-    - coil
+    - css
     - diamond
     - diffusion
     - duality
-    - flow
+    - factory
     - gnosticism
     - hamiltonian
     - harmony
     - horo
     - identity
+    - image
     - law
     - leap
     - live
     - llm
     - market
-    - merge
     - message
     - modulation
     - nerve
@@ -101,22 +93,20 @@ bonds:
     - phase
     - photon
     - pixel
-    - polarity
     - render
     - rodin
-    - round
     - science
-    - sensory
+    - signal
+    - speech
     - suffering
+    - taichi
     - tamper
     - trinity
-    - unity
     - uuid
-    - versions
     - vibration
 typography:
   partition: identity
-  bondDegree: 173
+  bondDegree: 184
   neighbors:
     - aura
 standards: []
@@ -149,13 +139,10 @@ neighbors:
     - versions
     - vibration
   matrix:
-    - all
     - analog
     - animism
     - aura
     - awareness
-    - axis
-    - bindings
     - biomagnetism
     - biophoton
     - body
@@ -164,22 +151,22 @@ neighbors:
     - chart
     - cmyk
     - coherence
-    - coil
+    - css
     - diamond
     - diffusion
     - duality
-    - flow
+    - factory
     - gnosticism
     - hamiltonian
     - harmony
     - horo
     - identity
+    - image
     - law
     - leap
     - live
     - llm
     - market
-    - merge
     - message
     - modulation
     - nerve
@@ -188,27 +175,22 @@ neighbors:
     - phase
     - photon
     - pixel
-    - polarity
     - render
     - rodin
-    - round
     - science
-    - sensory
+    - signal
+    - speech
     - suffering
+    - taichi
     - tamper
     - trinity
-    - unity
     - uuid
-    - versions
     - vibration
   backlinks:
-    - all
     - analog
     - animism
     - aura
     - awareness
-    - axis
-    - bindings
     - biomagnetism
     - biophoton
     - body
@@ -217,22 +199,22 @@ neighbors:
     - chart
     - cmyk
     - coherence
-    - coil
+    - css
     - diamond
     - diffusion
     - duality
-    - flow
+    - factory
     - gnosticism
     - hamiltonian
     - harmony
     - horo
     - identity
+    - image
     - law
     - leap
     - live
     - llm
     - market
-    - merge
     - message
     - modulation
     - nerve
@@ -241,21 +223,19 @@ neighbors:
     - phase
     - photon
     - pixel
-    - polarity
     - render
     - rodin
-    - round
     - science
-    - sensory
+    - signal
+    - speech
     - suffering
+    - taichi
     - tamper
     - trinity
-    - unity
     - uuid
-    - versions
     - vibration
 signatures:
-  computationUuid: "19308ece-836d-8748-a935-9d824b2bb1b7"
+  computationUuid: "fe38fabb-d5f3-89fd-84f1-c85cdc4f9782"
   stages:
     - stage: path
       stageUuid: "0215c3d3-bd72-8bee-86d8-f230bff5b25e"
@@ -266,11 +246,11 @@ signatures:
     - stage: links
       stageUuid: "43a38d0a-05db-80ee-a0a2-8f33d65d26ac"
     - stage: horo
-      stageUuid: "01aec767-6be8-8009-bd7c-ed9b70970214"
+      stageUuid: "042562f5-3644-8969-8ce3-87f6397632eb"
     - stage: seal
-      stageUuid: "cd94b1ee-02f0-8825-a47b-4afefbdd1913"
+      stageUuid: "01c281a6-d458-8659-a814-1bd7f76ab208"
     - stage: uuid
-      stageUuid: "ff034961-ee1f-831f-a881-e448537afde0"
+      stageUuid: "332012a7-620b-8e1a-a1f0-1e9ba3abc58d"
 version: 2
 ---
 # signal — a uuid renders as color + sound (a stream is multimedia)

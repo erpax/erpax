@@ -1,12 +1,12 @@
 ---
 name: architecture
 description: "Use when operational memory must be understood as the architecture lattice itself — NOT a side store. The diamond graph, uuid/matrix bindings, typography partitions, folder SKILL statements, architecture-invariants, and sealed git tree ARE what the system remembers; session blobs sanitize to architecture content and verify against the live-tree facet."
-atomPath: memory/architecture
-coordinate: memory/architecture · 1/base · ef313357
-contentUuid: "9f10cd39-09ae-5495-9ae0-2bea75f1400b"
-diamondUuid: "2eb63e22-2e1c-84e3-aeae-1256267a18e9"
-uuid: "ef313357-2dbe-87c8-8941-23a4e930c749"
-horo: 1
+atomPath: "memory/architecture"
+coordinate: "memory/architecture · 4/weave · bfda7d5f"
+contentUuid: "25e7f49f-8d0f-5594-992d-69fedb59377b"
+diamondUuid: "c9418075-1848-8837-8c37-dd33271af3a3"
+uuid: "bfda7d5f-65b0-89f6-be29-af3fc7af6ebe"
+horo: 4
 bonds:
   in:
     - akashic
@@ -14,6 +14,7 @@ bonds:
     - diamond
     - horo
     - industry
+    - input
     - integrity
     - invariant
     - law
@@ -32,6 +33,7 @@ bonds:
     - diamond
     - horo
     - industry
+    - input
     - integrity
     - invariant
     - law
@@ -46,11 +48,10 @@ bonds:
     - typography
 typography:
   partition: memory
-  bondDegree: 62
+  bondDegree: 65
   neighbors:
     - diamond
-standards:
-  - "pure projection; horo/measure from matrix, never hand decimals"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -76,6 +77,7 @@ neighbors:
     - diamond
     - horo
     - industry
+    - input
     - integrity
     - invariant
     - law
@@ -94,6 +96,7 @@ neighbors:
     - diamond
     - horo
     - industry
+    - input
     - integrity
     - invariant
     - law
@@ -107,7 +110,7 @@ neighbors:
     - thought
     - typography
 signatures:
-  computationUuid: "bb361d53-8683-816a-936c-379564c35673"
+  computationUuid: "fa9117ae-a964-890e-9e6e-3cbe2aa1e2e1"
   stages:
     - stage: path
       stageUuid: "8f069e56-fb54-8a40-a584-9f30450616f7"
@@ -118,11 +121,11 @@ signatures:
     - stage: links
       stageUuid: "cf7b6fb4-d006-8ba2-8b81-341646b1629a"
     - stage: horo
-      stageUuid: "a8fc30aa-c385-85d8-973d-fb627412bd3d"
+      stageUuid: "b9e43103-04d0-8a71-9c85-7cfe89442225"
     - stage: seal
-      stageUuid: "3cb95b8a-e236-8643-b7f5-3964cd094253"
+      stageUuid: "7ae51871-f487-88a2-aeef-aeb807f81130"
     - stage: uuid
-      stageUuid: "bcd59862-d9cb-865b-8aeb-1e9f0a23f343"
+      stageUuid: "b22dbbc3-9527-8953-888a-7d9c840488a8"
 version: 2
 ---
 # memory/architecture — operational memory IS the lattice

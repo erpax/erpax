@@ -2,11 +2,11 @@
 name: country
 description: Use when reasoning about country — A country.
 atomPath: country
-coordinate: country · 1/base · 611252a6
-contentUuid: "d7e0b97b-98e5-55a5-8281-ee03cdd5e489"
-diamondUuid: "d9684fad-49a2-816c-b58c-99a2e76af311"
-uuid: "611252a6-7a64-8bf2-8282-26fe595a603d"
-horo: 1
+coordinate: "country · 2/share · 405835ec"
+contentUuid: "7d42557d-0b8a-510e-8547-baa5819bc634"
+diamondUuid: "d206475a-44b8-8440-a726-8451cf584530"
+uuid: "405835ec-da99-845e-bf78-952c13125286"
+horo: 2
 bonds:
   in:
     - address
@@ -56,7 +56,6 @@ standards:
   - "EU-2017/1132"
   - "EU-2017/828"
   - "EU-765/2008"
-  - "EU-Taxonomy-2020/852"
   - "ISO-13616-1"
   - "ISO-19005"
   - "ISO-20022"
@@ -122,7 +121,7 @@ neighbors:
     - trading
     - validation
 signatures:
-  computationUuid: "eb655084-b743-8983-91fd-5728169fe05c"
+  computationUuid: "fea8f873-069a-8015-9a1e-ac5108448874"
   stages:
     - stage: path
       stageUuid: "a7018df6-c9bd-8f1f-bc1b-8e9d799f2238"
@@ -133,11 +132,11 @@ signatures:
     - stage: links
       stageUuid: "ae78dd80-73dc-8a2d-8aea-b90057d44a3d"
     - stage: horo
-      stageUuid: "ffe35fff-c37e-8a9b-9bd0-e5f23f7edb2a"
+      stageUuid: "df3aec78-3e80-8ee5-a1f6-7cdb95ea387b"
     - stage: seal
       stageUuid: "42342991-1b44-862a-8e91-a4c968f0dc7e"
     - stage: uuid
-      stageUuid: "33f76fac-76fc-8e8c-9663-061987151662"
+      stageUuid: "27f92745-dfbc-84f3-b197-4cc6d6a01ee4"
 version: 2
 ---
 # country

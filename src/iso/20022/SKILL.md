@@ -1,12 +1,12 @@
 ---
 name: "20022"
 description: Use when implementing or referencing ISO 20022 — Universal financial industry message scheme.
-atomPath: iso/20022
-coordinate: iso/20022 · 7/descent · 9e018710
-contentUuid: "a444c99d-c483-54fd-a802-2a39ec57ec5c"
-diamondUuid: "1816fef4-e56b-8f36-b708-f1f5a51d803a"
-uuid: "9e018710-3c8f-8d5f-81c9-4f54da89aafd"
-horo: 7
+atomPath: "iso/20022"
+coordinate: "iso/20022 · 8/crest · b872025e"
+contentUuid: "cc4ffd7d-a1cc-5657-b4e3-306f3bd3dc9b"
+diamondUuid: "e8710c83-a04c-8ef8-9f5d-e4a63cd54bca"
+uuid: "b872025e-63ed-863e-8457-4669e1dbcc75"
+horo: 8
 bonds:
   in:
     - iso
@@ -16,7 +16,6 @@ typography:
   bondDegree: 0
   neighbors: []
 standards:
-  - "ISO-13616-1"
   - "ISO-17442-1"
   - "ISO-20022:2022 universal-financial-industry-message-scheme"
   - "ISO-20022` should grep to a single home that owns the types. Before this module, four places defined overlapping shapes:"
@@ -27,7 +26,7 @@ neighbors:
   matrix: []
   backlinks: []
 signatures:
-  computationUuid: "aba9a0c3-a64b-8b8a-a467-00b79601c112"
+  computationUuid: "6117bdce-d42e-85ed-a84f-592190acd867"
   stages:
     - stage: path
       stageUuid: "27e61418-1c77-8dd0-847c-cca5bd6854d4"
@@ -38,11 +37,11 @@ signatures:
     - stage: links
       stageUuid: "00f02ed2-3107-8d7f-ad55-93f364f7dcea"
     - stage: horo
-      stageUuid: "704c5d42-264c-83fc-bf36-0b1880293748"
+      stageUuid: "73dfd885-bb57-8d85-924b-dc7bcd7c5201"
     - stage: seal
       stageUuid: "46f60061-4f30-87ed-ba43-05afb05c188d"
     - stage: uuid
-      stageUuid: "dbcecdd9-bbaf-8e99-a344-9b19e130718a"
+      stageUuid: "abb4d688-8915-89de-8ff2-d776d61f1699"
 version: 2
 ---
 # ISO 20022 — Universal financial industry message scheme

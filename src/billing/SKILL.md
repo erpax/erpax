@@ -2,11 +2,11 @@
 name: billing
 description: "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: billing
-coordinate: billing · 8/crest · 12a2b7b1
-contentUuid: "021a2fbf-f06a-53b8-b34b-deed580c1665"
-diamondUuid: "e0940190-3f17-89f2-92ea-2321e1b4874b"
-uuid: "12a2b7b1-66a4-8f16-a465-131c9f6aec79"
-horo: 8
+coordinate: "billing · 5/round · 6196f874"
+contentUuid: "7a9a8dd2-2779-5d9a-8e30-ce81ee312da1"
+diamondUuid: "f2a50c86-4f0b-8861-a1f3-5e0cdd928cc0"
+uuid: "6196f874-4aa8-8cba-8639-e1cde60b9763"
+horo: 5
 bonds:
   in:
     - address
@@ -33,22 +33,6 @@ typography:
   bondDegree: 30
   neighbors: []
 standards:
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "EU-Intrastat-Reg-2019/2152"
-  - "ISO-4217"
-  - "ISO-8601-1"
   - "ISO/IEC-29119"
   - "PCI-DSS"
   - "schema.org — the type vocabulary, collided to single words"
@@ -85,7 +69,7 @@ neighbors:
     - start
     - sti
 signatures:
-  computationUuid: "5a16541b-f127-88cc-b962-e7c4a3a36adb"
+  computationUuid: "57b8f5ee-d663-8be7-898e-ac5f2041b81f"
   stages:
     - stage: path
       stageUuid: "8052b17b-559b-88a1-bf7f-0acf523781ef"
@@ -96,11 +80,11 @@ signatures:
     - stage: links
       stageUuid: "0f3a34c3-2e00-8d4b-a6b0-ae27f4848591"
     - stage: horo
-      stageUuid: "f14792fa-0447-8ff6-a9d5-d819a5b86a82"
+      stageUuid: "40b301e0-3eb8-8f4e-a62e-ff3c158fa739"
     - stage: seal
-      stageUuid: "185b7952-e9c2-83cf-9b05-aa5dda89ebac"
+      stageUuid: "0b571f3e-80f6-8ee6-aa17-91fb516af0f5"
     - stage: uuid
-      stageUuid: "effa9382-7ee7-8d72-a946-707855e450c5"
+      stageUuid: "5c288b1b-4d4b-8346-89ef-bb8bdffc5189"
 version: 2
 ---
 # billing

@@ -2,11 +2,11 @@
 name: error
 description: Use when reasoning about error — Representation of an Error.
 atomPath: error
-coordinate: error · 7/descent · db542812
-contentUuid: "806810c5-342e-5016-bf5a-0ecbd0a1ec16"
-diamondUuid: "2230b300-35f4-8b96-a67f-23410a5ff277"
-uuid: "db542812-4d68-8018-b139-515a2a2e87ec"
-horo: 7
+coordinate: "error · 1/base · b5fc5f86"
+contentUuid: "186ea35b-9b4d-59ff-98ed-5604b94339f7"
+diamondUuid: "d252cf07-7230-8286-bbea-4698a7169774"
+uuid: "b5fc5f86-3129-8a71-9d66-9de824d72ad2"
+horo: 1
 bonds:
   in:
     - code
@@ -24,14 +24,6 @@ standards:
   - "7807 problem-details-for-http-apis"
   - "9110 §10.3 error-responses"
   - "9110 §15 status-codes"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "ISO-19011"
-  - "ISO-19011:2018 audit-trail error-tracing"
   - "NIST-SP-800-63"
   - "NIST-SP-800-92"
   - "OWASP-ASVS"
@@ -53,7 +45,7 @@ neighbors:
     - law
     - margin
 signatures:
-  computationUuid: "b5e8f144-a4c5-83b3-a35c-53c945c0e40e"
+  computationUuid: "8c53cc53-5357-83a7-a85d-39f9c9819ba2"
   stages:
     - stage: path
       stageUuid: "059b2d4e-0017-857e-9938-cc8fe5dd15b0"
@@ -64,11 +56,11 @@ signatures:
     - stage: links
       stageUuid: "8fd5bc9e-5d1e-8e2e-85db-6016aa13106c"
     - stage: horo
-      stageUuid: "d0fa5d50-8f07-8414-a7d9-944df6c29e5a"
+      stageUuid: "c4239e9a-767d-80eb-be99-81b0c6c84b40"
     - stage: seal
       stageUuid: "6d9e5b91-c526-8116-8dd6-ecdc8e862773"
     - stage: uuid
-      stageUuid: "c7521923-f778-8b99-9a0a-a9577f3a2f06"
+      stageUuid: "c4dd9df1-44ca-88b4-ab15-0fbb9752a978"
 version: 2
 ---
 # error

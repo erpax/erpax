@@ -1,12 +1,12 @@
 ---
 name: media
 description: "Use when turning Playwright test artifacts into Media records — screenshots and videos are uploaded to the Media collection and each video gets a WebVTT subtitle track built from its test step titles, so marketing pages can embed live, captioned evidence of documented capabilities."
-atomPath: capture/media
-coordinate: capture/media · 5/round · f992f1b1
-contentUuid: "b993623b-f131-5c09-b708-fab89cbaa37f"
-diamondUuid: "32cee6b0-997c-8c1c-8f2a-3b125ce81fcc"
-uuid: "f992f1b1-f565-8a98-913b-8d0055f057f7"
-horo: 5
+atomPath: "capture/media"
+coordinate: "capture/media · 4/weave · 5e60252d"
+contentUuid: "10a5370c-093f-5e55-83f7-16737d7311eb"
+diamondUuid: "710fede2-2cf1-817d-9ced-9f5dc1fe068b"
+uuid: "5e60252d-004f-8e94-943a-149887872c91"
+horo: 4
 bonds:
   in:
     - access
@@ -81,13 +81,16 @@ standards:
   - "EU-2018/843"
   - "EU-2018/957"
   - "ISO 19011:2018 audit-trail test-evidence"
-  - "ISO-19011"
-  - "ISO-19011:2018 audit-trail test-recording-provenance"
+  - "ISO 19011:2018 audit-trail test-evidence`"
   - "ISO/IEC 14496-30 timed-text-formats"
+  - "ISO/IEC 14496-30 timed-text-formats`"
   - W3C WebVTT
   - "W3C WebVTT video-text-track-format"
+  - "W3C WebVTT video-text-track-format`"
+  - "W3C WebVTT`"
   - "WCAG-2.1 §1.2.2 captions-prerecorded"
   - "WCAG-2.1 §1.2.5 audio-description-prerecorded"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -155,7 +158,7 @@ neighbors:
     - subscription
     - upload
 signatures:
-  computationUuid: "19036ec8-fa2f-8c4a-9620-2368a39e0c33"
+  computationUuid: "e2ed81fa-3e09-8158-9ba7-5312a353d017"
   stages:
     - stage: path
       stageUuid: "265f8640-7dbd-8b19-836b-fdeee6b00254"
@@ -166,11 +169,11 @@ signatures:
     - stage: links
       stageUuid: "f09f9534-5e38-81b6-823c-769935bf9c7e"
     - stage: horo
-      stageUuid: "ae0caea3-926a-8de3-9b49-3655ab58a822"
+      stageUuid: "7b186a02-fbac-8d7f-91d8-9f53a9463bf7"
     - stage: seal
-      stageUuid: "b7bc2d43-ca92-8b40-9868-12545ae8e6be"
+      stageUuid: "092177d6-3cf9-83a8-ac08-d5489e56d441"
     - stage: uuid
-      stageUuid: "d566a5d6-d96e-8d74-92e6-34c6e09d560e"
+      stageUuid: "c9001c32-a16d-8f91-b6d8-a1356029fde8"
 version: 2
 ---
 # capture/media — test artifacts into [[media]]

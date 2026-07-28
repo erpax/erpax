@@ -2,11 +2,11 @@
 name: exchange
 description: "Use when reasoning about exchange — FORM: **a cross-domain exchange is gated, sanitized, and receipted — the requester gets the data AND the proof of how it was obtained.** Party (one domain, its own identity) asks p"
 atomPath: exchange
-coordinate: exchange · 5/round · 8568054d
-contentUuid: "f67c30b8-1388-560c-b064-f08853f7a0ee"
-diamondUuid: "1f4fe6ad-459d-855c-b463-df476a1b6cc4"
-uuid: "8568054d-fd5f-8fe4-a773-15ee65c17b5b"
-horo: 5
+coordinate: "exchange · 4/weave · 34765d11"
+contentUuid: "21db8691-eca6-5dc2-a919-942bc0c85142"
+diamondUuid: "971a587b-f204-8925-83ac-843e3393ee09"
+uuid: "34765d11-34f4-8ae7-8958-2faac80a9fca"
+horo: 4
 bonds:
   in:
     - connections
@@ -45,9 +45,12 @@ typography:
 standards:
   - "EU-2016/679"
   - "GDPR Art.5(1)(c) data-minimisation (release only the granted fields)"
+  - "GDPR Art.5(1)(c) data-minimisation (release only the granted fields)`"
   - "ISO-27001"
   - "ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)"
+  - "ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)`"
   - "ISO/IEC-27001:2022"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -92,7 +95,7 @@ neighbors:
     - symbiosis
     - take
 signatures:
-  computationUuid: "a9ab34ab-1bc3-87fe-88bf-b83f16b1edca"
+  computationUuid: "ae1ff276-a9f0-8ca0-b029-bfb2bff44c48"
   stages:
     - stage: path
       stageUuid: "991b5f8f-298a-8f09-8315-f7dfb61efe52"
@@ -103,11 +106,11 @@ signatures:
     - stage: links
       stageUuid: "7ee5a9a7-e172-840f-8783-4dd0724a9c93"
     - stage: horo
-      stageUuid: "e6276bc4-e831-8dbe-aadc-90e0c97071b6"
+      stageUuid: "2380b8bb-bd49-838f-a1ee-78f055fcc8dd"
     - stage: seal
-      stageUuid: "213af59e-b91a-818a-adaa-898617247bab"
+      stageUuid: "6c9ba44c-525d-852c-bc20-becc2a651f3d"
     - stage: uuid
-      stageUuid: "5cf299b5-0f14-8857-b034-16078e243a87"
+      stageUuid: "4ef823c8-5b3d-8102-8c01-65d3fd19d3be"
 version: 2
 ---
 # exchange — governed cross-domain data exchange with provenance

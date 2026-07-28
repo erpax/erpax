@@ -2,11 +2,11 @@
 name: allocation
 description: "Use when defining how value/pay is distributed among contributors — reward for work, splitting a fixed pot, mechanism design. Reward is a pure function of verified time leveraged; the rate scale is harmonic; the pot is conserved."
 atomPath: allocation
-coordinate: allocation · 8/crest · 2174b923
-contentUuid: "f8a86a7a-7bc0-5510-96c9-2e6c8d8af01f"
-diamondUuid: "e4e49336-67da-8d33-a889-9e7dd45ef798"
-uuid: "2174b923-0ac9-8c41-8fbf-541e24c274c8"
-horo: 8
+coordinate: "allocation · 5/round · 65195748"
+contentUuid: "da33755b-bfab-5856-b364-899b4fcb73a7"
+diamondUuid: "c24d7646-23ba-881a-b6cf-2ec1f17ec355"
+uuid: "65195748-d98e-8b94-b136-e705ea2c49bc"
+horo: 5
 bonds:
   in:
     - age
@@ -16,6 +16,7 @@ bonds:
     - bottleneck
     - career
     - compensation
+    - contracts
     - cropplan
     - decompression
     - duality
@@ -48,6 +49,7 @@ bonds:
     - bottleneck
     - career
     - compensation
+    - contracts
     - cropplan
     - decompression
     - duality
@@ -74,13 +76,14 @@ bonds:
     - wellbeing
 typography:
   partition: allocation
-  bondDegree: 93
+  bondDegree: 96
   neighbors: []
 standards:
   - ESCO
   - "ESCO / ISCO-08 competency framework (skill level)"
   - "Hamilton (largest-remainder) apportionment — integer fair division"
-  - "ISO 19011 — reward is a deterministic, auditable function (no discretion)"
+  - "ISO-19011"
+  - "ISO-19011`"
   - SFIA
   - "SFIA 8 responsibility-levels (1..7) — job-type categorisation"
 bindings: []
@@ -107,6 +110,7 @@ neighbors:
     - bottleneck
     - career
     - compensation
+    - contracts
     - cropplan
     - decompression
     - duality
@@ -139,6 +143,7 @@ neighbors:
     - bottleneck
     - career
     - compensation
+    - contracts
     - cropplan
     - decompression
     - duality
@@ -164,7 +169,7 @@ neighbors:
     - utility
     - wellbeing
 signatures:
-  computationUuid: "fe37f7a4-ff35-81bc-a1dd-6ecafdeed78d"
+  computationUuid: "7b1d57df-2421-8542-b74e-d3d05781fd4d"
   stages:
     - stage: path
       stageUuid: "a8d4fa01-9e09-8419-9189-556f00da4903"
@@ -175,11 +180,11 @@ signatures:
     - stage: links
       stageUuid: "682c70e8-eb00-863c-bfae-b57b8acce8c5"
     - stage: horo
-      stageUuid: "0010357d-db84-89e1-bb86-a45c15dc133f"
+      stageUuid: "4a255499-0a7c-8360-bfde-f6a884bbd3e3"
     - stage: seal
-      stageUuid: "6d29e404-e19b-88df-9dfa-26b2e4afc61c"
+      stageUuid: "5eb8fbae-151e-81e9-89a8-9ce6cce8ccb5"
     - stage: uuid
-      stageUuid: "eb1d0c3a-38cb-8e74-b97e-ff7db2ebc5b0"
+      stageUuid: "aee9f700-456b-87f2-8ccd-adc4d55252ea"
 version: 2
 ---
 # allocation — who gets what, for what, as math

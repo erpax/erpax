@@ -1,11 +1,11 @@
 ---
 name: accounting
-description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\"accountable\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
+description: "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \\\\\\\"accountable\\\\\\\" polymorphically. The self-sufficient `@erpax/accounting` archetype."
 atomPath: accounting
-coordinate: accounting · 1/base · 11311689
-contentUuid: "233f7782-5dea-5ff7-b64d-08f2e37b434f"
-diamondUuid: "82c9cae1-8460-80df-859d-864d92d7746f"
-uuid: "11311689-8005-896a-9188-8b6f51ce313e"
+coordinate: "accounting · 1/base · dac31933"
+contentUuid: "3854a701-c439-5dae-a3de-086891dd59b0"
+diamondUuid: "01596fad-ab59-822b-b0af-5bacb9c5e2ad"
+uuid: "dac31933-a5e9-8f15-93b5-d34e482c5fa1"
 horo: 1
 bonds:
   in:
@@ -14,6 +14,7 @@ bonds:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -21,6 +22,7 @@ bonds:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -46,6 +48,7 @@ bonds:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -63,11 +66,13 @@ bonds:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -81,6 +86,7 @@ bonds:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -105,6 +111,7 @@ bonds:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -113,12 +120,16 @@ bonds:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -127,7 +138,10 @@ bonds:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -139,6 +153,7 @@ bonds:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -152,6 +167,7 @@ bonds:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -173,6 +189,7 @@ bonds:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -185,6 +202,7 @@ bonds:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -220,6 +238,7 @@ bonds:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -227,6 +246,7 @@ bonds:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -252,6 +272,7 @@ bonds:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -269,11 +290,13 @@ bonds:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -287,6 +310,7 @@ bonds:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -311,6 +335,7 @@ bonds:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -319,12 +344,16 @@ bonds:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -333,7 +362,10 @@ bonds:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -345,6 +377,7 @@ bonds:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -358,6 +391,7 @@ bonds:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -379,6 +413,7 @@ bonds:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -391,6 +426,7 @@ bonds:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -422,12 +458,18 @@ bonds:
     - workspace
 typography:
   partition: accounting
-  bondDegree: 743
+  bondDegree: 809
   neighbors:
     - aura
 standards:
   - "EU-2015/847"
   - "EU-2015/849"
+  - "EU-2018/1673"
+  - "EU-2018/1725"
+  - "EU-2018/302"
+  - "EU-2018/389-SCA-RTS"
+  - "EU-2018/843"
+  - "EU-2018/957"
   - "EU-2019/1150"
   - "EU-2019/1152"
   - "EU-2019/1937"
@@ -435,10 +477,11 @@ standards:
   - "EU-2019/770"
   - "EU-2019/771"
   - "EU-Intrastat-Reg-2019/2152"
+  - "IAS-1"
   - "IEEE-754"
+  - "ISO-19011"
   - "ISO-4217"
   - "ISO-8601-1"
-  - "re-exports only; the truth lives in the leaf modules (debit-credit / reports.service / financial-analysis / margin)"
 bindings: []
 neighbors:
   wikilink:
@@ -505,6 +548,7 @@ neighbors:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -512,6 +556,7 @@ neighbors:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -537,6 +582,7 @@ neighbors:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -554,11 +600,13 @@ neighbors:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -572,6 +620,7 @@ neighbors:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -596,6 +645,7 @@ neighbors:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -604,12 +654,16 @@ neighbors:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -618,7 +672,10 @@ neighbors:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -630,6 +687,7 @@ neighbors:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -643,6 +701,7 @@ neighbors:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -664,6 +723,7 @@ neighbors:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -676,6 +736,7 @@ neighbors:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -711,6 +772,7 @@ neighbors:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -718,6 +780,7 @@ neighbors:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -743,6 +806,7 @@ neighbors:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -760,11 +824,13 @@ neighbors:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -778,6 +844,7 @@ neighbors:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -802,6 +869,7 @@ neighbors:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -810,12 +878,16 @@ neighbors:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -824,7 +896,10 @@ neighbors:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -836,6 +911,7 @@ neighbors:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -849,6 +925,7 @@ neighbors:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -870,6 +947,7 @@ neighbors:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -882,6 +960,7 @@ neighbors:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -912,22 +991,22 @@ neighbors:
     - whole
     - workspace
 signatures:
-  computationUuid: "72c3d6e3-222e-8619-a178-ed834c57ce1d"
+  computationUuid: "6ea45960-3a4f-88e4-a138-c2074af1b897"
   stages:
     - stage: path
       stageUuid: "23dc1848-55e7-8512-9c47-52c510777a82"
     - stage: trinity
       stageUuid: "451c7c9c-5b66-8807-91a9-193374a4c2a2"
     - stage: boundary
-      stageUuid: "00d1e814-a6cc-8f77-b4cc-c408d5872591"
+      stageUuid: "e1f14f39-9ebe-8631-a1c7-afbd9f62bf0d"
     - stage: links
-      stageUuid: "39dbcea4-1abc-8e72-8c85-80204ef4c2c0"
+      stageUuid: "c4af7173-d662-864b-8998-474458a0a7e6"
     - stage: horo
-      stageUuid: "f4bc2358-e4c5-8c89-b5d8-1a7b1b1c81d9"
+      stageUuid: "c54d11cb-275c-8930-bfe5-e2776f0e2959"
     - stage: seal
-      stageUuid: "e359f5dc-3554-8d54-913b-4c0e30751a07"
+      stageUuid: "c3103fdd-ed65-8eb6-89d0-e6cb44152940"
     - stage: uuid
-      stageUuid: "fda06354-8430-8f4b-85e9-132dda48ef87"
+      stageUuid: "c9d0b20c-c23d-8791-9666-d50e89fb2981"
 version: 2
 ---
 # accounting — the universal ledger plugin (anything is accountable)

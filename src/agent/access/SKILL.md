@@ -1,11 +1,11 @@
 ---
 name: access
 description: "Use when reasoning about how an agent acts — it does everything both through the MCP gateway (trust-native, sandboxed and receipted) and through the filesystem (direct), the two equivalent because content-addressed, the modality the choice of trust not of truth."
-atomPath: agent/access
-coordinate: agent/access · 9/unity · 4f0081eb
-contentUuid: "6aa4a461-cdaa-5156-bd1b-2030a4a7a837"
-diamondUuid: "bacbcc42-908b-8562-a4bf-9bb3e83798a2"
-uuid: "4f0081eb-b3eb-8f2d-be3c-de9b4325e3f3"
+atomPath: "agent/access"
+coordinate: "agent/access · 9/unity · dc3b9293"
+contentUuid: "0cbee73f-0625-57d7-98d6-001f508078c1"
+diamondUuid: "4adc0af7-8ddb-8241-9eab-3b3cdcfe24ef"
+uuid: "dc3b9293-137f-839b-a7a7-1aba6aff4937"
 horo: 9
 bonds:
   in:
@@ -51,6 +51,7 @@ bonds:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -93,6 +94,7 @@ bonds:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -111,6 +113,7 @@ bonds:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -171,6 +174,7 @@ bonds:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -213,6 +217,7 @@ bonds:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -231,6 +236,7 @@ bonds:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -250,17 +256,12 @@ bonds:
     - workflow
 typography:
   partition: agent
-  bondDegree: 415
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 422
+  neighbors: []
 standards:
   - MCP
   - "RFC-9562"
-  - "reachVia is content-addressed (modality-free); trustNative marks the MCP door (sandbox + receipt) only"
   - "the official @payloadcms/plugin-mcp gateway · content-addressed identity (RFC 9562) · trust-native sandbox+receipt"
-  - "the reached uuid is content-addressed (modality-free); trustNative marks the MCP door only"
 bindings: []
 neighbors:
   wikilink:
@@ -312,6 +313,7 @@ neighbors:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -354,6 +356,7 @@ neighbors:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -372,6 +375,7 @@ neighbors:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -432,6 +436,7 @@ neighbors:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -474,6 +479,7 @@ neighbors:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -492,6 +498,7 @@ neighbors:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -510,7 +517,7 @@ neighbors:
     - versions
     - workflow
 signatures:
-  computationUuid: "b829666a-c932-85b8-8599-3bcce38a2c02"
+  computationUuid: "47fd952b-af39-8c2f-b711-06f76a388516"
   stages:
     - stage: path
       stageUuid: "3fb4d3c2-4714-8964-bbe5-4467000d9a59"
@@ -521,11 +528,11 @@ signatures:
     - stage: links
       stageUuid: "0b08e120-ebe7-838c-b72f-8da20dd1f389"
     - stage: horo
-      stageUuid: "a0caba15-00a8-8c7b-b752-d2d36a37f180"
+      stageUuid: "8f83d8ab-4bc8-88d5-906c-cb46e7ffca6b"
     - stage: seal
       stageUuid: "a197a5f0-a5ed-86b9-a109-afc0a208e7ad"
     - stage: uuid
-      stageUuid: "f4db5b61-3fa1-8b33-8c40-795511b40347"
+      stageUuid: "18662a4d-c2f1-8b58-b49c-e234c0d07160"
 version: 2
 ---
 # agent/access — both doors: MCP and fs

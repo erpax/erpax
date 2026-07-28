@@ -1,35 +1,29 @@
 ---
 name: reports
 description: "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection."
-atomPath: legal/entities/consolidations/audit/reports/post/close/analytics/reports
-coordinate: legal/entities/consolidations/audit/reports/post/close/analytics/reports · 5/round · 6697b2e9
-contentUuid: "116c2732-a592-5df6-9007-cb05867f8b87"
-diamondUuid: "bb7aa894-6eee-883c-bfa4-7998fda87cc3"
-uuid: "6697b2e9-a102-81b8-aa3c-c33969f192e1"
-horo: 5
+atomPath: "legal/entities/consolidations/audit/reports/post/close/analytics/reports"
+coordinate: "legal/entities/consolidations/audit/reports/post/close/analytics/reports · 1/base · 432c75cc"
+contentUuid: "e6d1c57a-b635-51c7-8427-8efb91101aa4"
+diamondUuid: "d58bdb7a-e756-8762-8946-ecb706815a5c"
+uuid: "432c75cc-a375-8423-bffe-0cd493b2d631"
+horo: 1
 bonds:
   in:
     - accounting
     - analytics
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   out:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 typography:
   partition: legal
-  bondDegree: 29
+  bondDegree: 28
   neighbors: []
 standards:
   - "IFRS IAS-1 financial-statement-analysis"
@@ -40,24 +34,18 @@ neighbors:
     - reports
   matrix:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   backlinks:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 signatures:
-  computationUuid: "59924d65-6f82-83a4-937a-f64259d23376"
+  computationUuid: "795efe15-bfe2-8837-a7a7-ce599b9e0812"
   stages:
     - stage: path
       stageUuid: "5f617b0f-c167-8b80-81fe-ec0de8724eea"
@@ -68,11 +56,11 @@ signatures:
     - stage: links
       stageUuid: "72a7c3b9-b682-8af9-88af-d6f79a2fe7c6"
     - stage: horo
-      stageUuid: "6ab19940-d2e1-8e10-a9fc-83942c0e5816"
+      stageUuid: "ba95d626-b71e-811a-abe2-2ce1a88ae02e"
     - stage: seal
       stageUuid: "7b3634e1-d9cd-80b9-943e-cd778fbff54e"
     - stage: uuid
-      stageUuid: "75807939-7033-838b-aff9-01c50ee8aa79"
+      stageUuid: "0b9387d6-16a6-838a-8560-45c8b735e7ef"
 version: 2
 ---
 # post-close-analytics-reports

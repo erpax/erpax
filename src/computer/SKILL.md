@@ -2,15 +2,20 @@
 name: computer
 description: "Use when reasoning about computer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: computer
-coordinate: computer · 7/descent · d6568967
-contentUuid: "edd4ffb7-a896-5f3e-ac89-07fd5c50bfa1"
-diamondUuid: "0d889510-fd53-812c-9a52-d3779acd28f8"
-uuid: "d6568967-b16b-8c02-9349-d91ac5416095"
-horo: 7
+coordinate: "computer · 1/base · 84e44c87"
+contentUuid: "5a930dfc-f238-5602-81c0-8a5ef309723c"
+diamondUuid: "0a2b7c03-aafd-8e59-92de-12f5235ad74f"
+uuid: "84e44c87-5d68-8a8c-9b2f-c25c6c002b9d"
+horo: 1
 bonds:
   in:
+    - algorithm
     - collapse
+    - complexity
     - component
+    - finite
+    - folder
+    - graph
     - hardware
     - language
     - law
@@ -18,14 +23,22 @@ bonds:
     - merge
     - network
     - processor
+    - quantum
+    - queue
     - screen
     - software
+    - stack
     - sti
     - storage
     - store
   out:
+    - algorithm
     - collapse
+    - complexity
     - component
+    - finite
+    - folder
+    - graph
     - hardware
     - language
     - law
@@ -33,17 +46,19 @@ bonds:
     - merge
     - network
     - processor
+    - quantum
+    - queue
     - screen
     - software
+    - stack
     - sti
     - storage
     - store
 typography:
   partition: computer
-  bondDegree: 68
+  bondDegree: 98
   neighbors: []
 standards:
-  - "each part verdict computed live from its canonical matter-twin"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 neighbors:
@@ -63,8 +78,13 @@ neighbors:
     - storage
     - store
   matrix:
+    - algorithm
     - collapse
+    - complexity
     - component
+    - finite
+    - folder
+    - graph
     - hardware
     - language
     - law
@@ -72,14 +92,22 @@ neighbors:
     - merge
     - network
     - processor
+    - quantum
+    - queue
     - screen
     - software
+    - stack
     - sti
     - storage
     - store
   backlinks:
+    - algorithm
     - collapse
+    - complexity
     - component
+    - finite
+    - folder
+    - graph
     - hardware
     - language
     - law
@@ -87,28 +115,31 @@ neighbors:
     - merge
     - network
     - processor
+    - quantum
+    - queue
     - screen
     - software
+    - stack
     - sti
     - storage
     - store
 signatures:
-  computationUuid: "d8719a13-334f-80aa-9d4b-b737fe50e181"
+  computationUuid: "35cc9505-2e81-8a07-87b6-1328660b1475"
   stages:
     - stage: path
       stageUuid: "99b5b1e3-04ec-8a6c-9e05-ce3772b23a0c"
     - stage: trinity
       stageUuid: "47640182-c4dd-89ab-9227-c67dd9599b30"
     - stage: boundary
-      stageUuid: "61131cd2-9105-8c9a-a39f-0703f00dd3a3"
+      stageUuid: "0b105708-66ee-86b4-be2a-3cd4d8959824"
     - stage: links
-      stageUuid: "69ba7efb-9779-8815-96a4-897d2cf74e7c"
+      stageUuid: "9c17304a-cae2-82f4-9068-21f6aab04831"
     - stage: horo
-      stageUuid: "9ae9537a-cf6d-8d71-98f1-69b612217465"
+      stageUuid: "9bdc9891-b390-825b-b7e9-036ae4f919bb"
     - stage: seal
-      stageUuid: "99ef4b6b-6aae-8a70-a0f7-6329f0901776"
+      stageUuid: "ee2541f7-c8d9-8680-8067-b36807c6a489"
     - stage: uuid
-      stageUuid: "0fc19f43-f0ee-88d5-92a2-7bc48526d648"
+      stageUuid: "47818781-4997-8a27-9357-77e0a9d76ada"
 version: 2
 ---
 # computer — the machine and its parts

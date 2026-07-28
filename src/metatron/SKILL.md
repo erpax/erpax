@@ -2,11 +2,11 @@
 name: metatron
 description: "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore."
 atomPath: metatron
-coordinate: metatron · 4/weave · 3cbdb86a
-contentUuid: "3c8fbd19-1f6b-5823-85ab-03548c12889c"
-diamondUuid: "f38cc8d4-056d-8427-b62d-8d75ba94de3e"
-uuid: "3cbdb86a-bc06-8b81-a3b9-8b2c5eb8fa48"
-horo: 4
+coordinate: "metatron · 2/share · bd4798e8"
+contentUuid: "e1d78584-17e6-5c7e-bc38-88e6a40eb79f"
+diamondUuid: "ad7fd8ba-473f-8a7e-b398-62a8a2399687"
+uuid: "bd4798e8-e070-8ff6-a64d-054d80ec18b5"
+horo: 2
 bonds:
   in:
     - architect
@@ -55,8 +55,6 @@ typography:
 standards:
   - "RFC 9562 §5.8 content-uuid (the total merge) + K₁₃ / cuboctahedron geometry"
   - "RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron"
-  - "counts computed on the live matrix, never hand-asserted"
-  - "every count computed on the live matrix, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -113,7 +111,7 @@ neighbors:
     - uuid
     - whole
 signatures:
-  computationUuid: "f56f1983-f109-8cbc-9ad4-7a225e299fa5"
+  computationUuid: "b3442f88-444a-8d22-b9bc-fa290b0a883b"
   stages:
     - stage: path
       stageUuid: "74cb6d3b-cd73-86d0-a91f-2f12886f8c44"
@@ -124,11 +122,11 @@ signatures:
     - stage: links
       stageUuid: "3180e019-8568-8423-99ae-e6f9d0291a05"
     - stage: horo
-      stageUuid: "ea319330-4d37-81bb-9af0-29284b399174"
+      stageUuid: "3ceffc01-ec70-8b4c-9b3f-fa64a678ad09"
     - stage: seal
-      stageUuid: "322c47f3-1107-8d79-a5cf-8b8465da75a2"
+      stageUuid: "b1521e55-be22-87dd-88df-1eb16373088a"
     - stage: uuid
-      stageUuid: "0e7acc82-2508-807d-84c9-873f9f49f9b4"
+      stageUuid: "32f27310-6adf-872b-8427-0aa882c77c2f"
 version: 2
 ---
 # metatron — the matrix IS Metatron's Cube (complete binding → one center)

@@ -1,11 +1,11 @@
 ---
 name: accounting
 description: "Use when reasoning about accounting — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
-atomPath: agents/accounting
-coordinate: agents/accounting · 4/weave · 9b1bcc8e
-contentUuid: "49845cde-9a61-5863-afa6-cb236e6d81d9"
-diamondUuid: "08cc3238-c2b5-8038-a3f3-f9d8d1a19d59"
-uuid: "9b1bcc8e-71df-8cec-a4d4-385c4e031001"
+atomPath: "agents/accounting"
+coordinate: "agents/accounting · 4/weave · ad8bddf9"
+contentUuid: "def0f66e-31a2-54cf-8afc-cd652755c799"
+diamondUuid: "ec311a54-6208-8b1e-b30f-e95d9319a650"
+uuid: "ad8bddf9-a3b9-83a1-bce9-e228a4fd6d55"
 horo: 4
 bonds:
   in:
@@ -14,6 +14,7 @@ bonds:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -21,6 +22,7 @@ bonds:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -46,6 +48,7 @@ bonds:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -63,11 +66,13 @@ bonds:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -81,6 +86,7 @@ bonds:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -105,6 +111,7 @@ bonds:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -113,12 +120,16 @@ bonds:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -127,7 +138,10 @@ bonds:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -139,6 +153,7 @@ bonds:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -152,6 +167,7 @@ bonds:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -173,6 +189,7 @@ bonds:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -185,6 +202,7 @@ bonds:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -220,6 +238,7 @@ bonds:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -227,6 +246,7 @@ bonds:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -252,6 +272,7 @@ bonds:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -269,11 +290,13 @@ bonds:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -287,6 +310,7 @@ bonds:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -311,6 +335,7 @@ bonds:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -319,12 +344,16 @@ bonds:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -333,7 +362,10 @@ bonds:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -345,6 +377,7 @@ bonds:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -358,6 +391,7 @@ bonds:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -379,6 +413,7 @@ bonds:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -391,6 +426,7 @@ bonds:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -422,7 +458,7 @@ bonds:
     - workspace
 typography:
   partition: agents
-  bondDegree: 743
+  bondDegree: 809
   neighbors:
     - aura
 standards:
@@ -439,6 +475,7 @@ neighbors:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -446,6 +483,7 @@ neighbors:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -471,6 +509,7 @@ neighbors:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -488,11 +527,13 @@ neighbors:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -506,6 +547,7 @@ neighbors:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -530,6 +572,7 @@ neighbors:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -538,12 +581,16 @@ neighbors:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -552,7 +599,10 @@ neighbors:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -564,6 +614,7 @@ neighbors:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -577,6 +628,7 @@ neighbors:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -598,6 +650,7 @@ neighbors:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -610,6 +663,7 @@ neighbors:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -645,6 +699,7 @@ neighbors:
     - accounts
     - adjustment
     - adjustments
+    - agent
     - agriculture
     - akashic
     - all
@@ -652,6 +707,7 @@ neighbors:
     - amendments
     - amortize
     - amount
+    - analysis
     - analytics
     - angel
     - arrangements
@@ -677,6 +733,7 @@ neighbors:
     - classifications
     - close
     - closing
+    - coa
     - code
     - codes
     - collections
@@ -694,11 +751,13 @@ neighbors:
     - contracts
     - conversion
     - coordinate
+    - corpus
     - corruption
     - cost
     - currency
     - customers
     - cycles
+    - debit
     - decompression
     - defence
     - depreciate
@@ -712,6 +771,7 @@ neighbors:
     - elimination
     - emissions
     - end
+    - engineering
     - entries
     - entropy
     - entry
@@ -736,6 +796,7 @@ neighbors:
     - identity
     - inspections
     - inventories
+    - invisible
     - invoices
     - items
     - journal
@@ -744,12 +805,16 @@ neighbors:
     - karma
     - law
     - leads
+    - ledger
+    - leftover
     - lineage
     - lines
     - locks
     - lots
+    - machine
     - mandates
     - manufacturing
+    - margin
     - marine
     - measurements
     - memories
@@ -758,7 +823,10 @@ neighbors:
     - metadata
     - milestones
     - modifications
+    - money
+    - monitor
     - movements
+    - notary
     - number
     - obligation
     - obligations
@@ -770,6 +838,7 @@ neighbors:
     - packs
     - part
     - party
+    - path
     - payment
     - payments
     - performances
@@ -783,6 +852,7 @@ neighbors:
     - port
     - postings
     - profane
+    - proof
     - provisions
     - quantum
     - queries
@@ -804,6 +874,7 @@ neighbors:
     - returns
     - revenue
     - reverse
+    - rosetta
     - routings
     - rules
     - runs
@@ -816,6 +887,7 @@ neighbors:
     - segments
     - sequence
     - service
+    - session
     - shares
     - shift
     - shifts
@@ -846,7 +918,7 @@ neighbors:
     - whole
     - workspace
 signatures:
-  computationUuid: "3c792cb1-9211-86d5-9ed8-bfedd5232f16"
+  computationUuid: "805b1510-ae44-8291-aba6-da2cfe853dc2"
   stages:
     - stage: path
       stageUuid: "17242111-69f8-8cab-ae1f-d6e5f5a4984d"
@@ -857,11 +929,11 @@ signatures:
     - stage: links
       stageUuid: "110bb7df-1d23-82a8-84fb-ab4ba7e494e4"
     - stage: horo
-      stageUuid: "e3d11957-8ad0-836f-9892-df2087bb06a5"
+      stageUuid: "aa592d93-f8b1-86e1-9bf7-a7a971a95819"
     - stage: seal
       stageUuid: "e16beb8a-f359-8181-9983-cbcdc87d6137"
     - stage: uuid
-      stageUuid: "6e559e1e-9cf1-8115-95d9-489ed235c61c"
+      stageUuid: "ce50e0b4-a4c4-8a3d-9e96-85456a470caf"
 version: 2
 ---
 # accounting

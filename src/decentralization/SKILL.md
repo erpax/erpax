@@ -2,10 +2,10 @@
 name: decentralization
 description: "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center."
 atomPath: decentralization
-coordinate: decentralization · 1/base · 4f73df07
-contentUuid: "d4649320-ba70-5f4e-acd8-df63041a3e10"
-diamondUuid: "66ba2c6d-6552-8505-bf27-e61deb7cedc2"
-uuid: "4f73df07-f422-8bd2-a899-786b80160423"
+coordinate: "decentralization · 1/base · ed8b2f50"
+contentUuid: "12553535-8e55-5bf9-a3e0-a626b6331387"
+diamondUuid: "b613117c-8b71-84b9-a071-b4cd0966712e"
+uuid: "ed8b2f50-45b2-8713-930e-db629a85b01b"
 horo: 1
 bonds:
   in:
@@ -38,7 +38,7 @@ bonds:
     - whole
 typography:
   partition: decentralization
-  bondDegree: 44
+  bondDegree: 46
   neighbors:
     - agent
 standards:
@@ -49,7 +49,6 @@ standards:
   - Gini coefficient
   - Herfindahl–Hirschman Index (HHI)
   - "Nakamoto coefficient (Srinivasan & Lee, 2017)"
-  - "computed, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -94,7 +93,7 @@ neighbors:
     - uuid
     - whole
 signatures:
-  computationUuid: "3209d6bc-5b60-8c55-a63d-ef7f0297a129"
+  computationUuid: "fe97a44d-1068-8fbc-a77e-d4f2c7240161"
   stages:
     - stage: path
       stageUuid: "3d860fac-0654-8c74-a381-3ab1b7ae96b4"
@@ -105,11 +104,11 @@ signatures:
     - stage: links
       stageUuid: "a54d2060-c84a-8be4-a815-bc11f1c578d7"
     - stage: horo
-      stageUuid: "1001d6c0-5d26-8053-93c9-9cc05a1f93f8"
+      stageUuid: "696d029c-bd97-83f4-955f-fa033107190a"
     - stage: seal
-      stageUuid: "0e72778f-0f41-879a-b0cf-c18452903b65"
+      stageUuid: "c278298b-a345-839c-8847-f2b404e7e826"
     - stage: uuid
-      stageUuid: "f4a07084-077e-8acd-919a-1869a2780600"
+      stageUuid: "eb28a767-2c12-8b40-be45-19e649a4a096"
 version: 2
 ---
 # decentralization — global order from local rules, no controller

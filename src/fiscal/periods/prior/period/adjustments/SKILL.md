@@ -1,12 +1,12 @@
 ---
 name: adjustments
 description: "Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node."
-atomPath: fiscal/periods/prior/period/adjustments
-coordinate: fiscal/periods/prior/period/adjustments · 7/descent · 10a0622c
-contentUuid: "9c033784-fe5a-50be-aa78-e6f5b62da30f"
-diamondUuid: "e1a768b6-7ff4-8200-b112-47a3872f655b"
-uuid: "10a0622c-285a-8b3e-8e57-ab234f214868"
-horo: 7
+atomPath: "fiscal/periods/prior/period/adjustments"
+coordinate: "fiscal/periods/prior/period/adjustments · 4/weave · 5ebea3f5"
+contentUuid: "461c7d0c-88db-5d6b-9ceb-18566a832ae6"
+diamondUuid: "7edb8ed4-5982-8486-a398-a9d49b536736"
+uuid: "5ebea3f5-f94f-850b-9d19-0f5c16096567"
+horo: 4
 bonds:
   in:
     - accounting
@@ -31,13 +31,15 @@ typography:
   neighbors: []
 standards:
   - "IFRS IAS-8 §42-49 errors-of-prior-periods"
-  - "ISO-19011:2018 audit-trail prior-period-restatement"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time adjustment-date post-date"
+  - "ISO-8601-1:2019 date-time adjustment-date post-date`"
   - "SOX §404 internal-controls restatement-control TOM-PPA-01"
   - "SOX §906 ceo-cfo-certification material-misstatement"
   - "US-GAAP ASC-250-10-45 accounting-changes-and-error-corrections"
   - "US-GAAP ASC-250-10-50 disclosure-of-prior-period-adjustments"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -66,7 +68,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "9591f14f-5df4-8cb5-b24d-105ef4dbd171"
+  computationUuid: "e48e4b9b-5c86-8181-90e6-9a46128a5121"
   stages:
     - stage: path
       stageUuid: "1f95d29e-02c6-8b0c-9dab-53841947a863"
@@ -77,11 +79,11 @@ signatures:
     - stage: links
       stageUuid: "8579ee87-5847-84ff-9245-2e315ec0de28"
     - stage: horo
-      stageUuid: "e3a801c0-28a9-8bae-a264-fe66e1fe4d4c"
+      stageUuid: "da49dda1-5e31-8af1-8038-1e86850508df"
     - stage: seal
       stageUuid: "f3030037-d05c-80cb-9772-d0bfce04fb30"
     - stage: uuid
-      stageUuid: "c09755e0-f412-8e82-bb31-09fec7597268"
+      stageUuid: "87eb40d4-6dd4-8607-a99c-fd54bfc45142"
 version: 2
 ---
 # prior-period-adjustments

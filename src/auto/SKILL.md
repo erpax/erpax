@@ -2,13 +2,14 @@
 name: auto
 description: "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: auto
-coordinate: auto · 8/crest · 58d8d39b
-contentUuid: "e34f04db-82d3-56d4-ac30-99aa291a0250"
-diamondUuid: "27242a70-bbf5-8ca7-87a1-eb783eb95e5e"
-uuid: "58d8d39b-5b3a-8f73-9b23-c2232df681eb"
-horo: 8
+coordinate: "auto · 5/round · e30d95b8"
+contentUuid: "94676f82-0a06-5722-b3ab-fad686922fb7"
+diamondUuid: "79f57d7e-cab2-80c4-99fb-15ee10b7e1bc"
+uuid: "e30d95b8-0b31-8d65-86d3-682ca6e9ffdd"
+horo: 5
 bonds:
   in:
+    - auto
     - body
     - by
     - collapse
@@ -25,6 +26,7 @@ bonds:
     - timestamp
     - wash
   out:
+    - auto
     - body
     - by
     - collapse
@@ -70,6 +72,7 @@ neighbors:
     - store
     - wash
   matrix:
+    - auto
     - body
     - by
     - collapse
@@ -86,6 +89,7 @@ neighbors:
     - timestamp
     - wash
   backlinks:
+    - auto
     - body
     - by
     - collapse
@@ -102,7 +106,7 @@ neighbors:
     - timestamp
     - wash
 signatures:
-  computationUuid: "e90bc4d6-bf6a-8a3d-a3d6-91c2ba0d9165"
+  computationUuid: "22e155f9-880c-894d-b231-51f3da0340c6"
   stages:
     - stage: path
       stageUuid: "a13d9345-25ea-8563-9b86-f77001c4f408"
@@ -113,11 +117,11 @@ signatures:
     - stage: links
       stageUuid: "f583b79a-9615-861c-80ee-c2f8f880c130"
     - stage: horo
-      stageUuid: "533d0f5e-96fb-8e74-b6de-128297808fc2"
+      stageUuid: "4edbb4d2-c102-8bc0-83e5-b62993fd8939"
     - stage: seal
       stageUuid: "5c4d5e04-1ca3-8894-b37b-ad61471598bf"
     - stage: uuid
-      stageUuid: "16733462-aba9-8e8b-8dbc-f66986e4f786"
+      stageUuid: "75b263dd-156d-8b8e-bfb3-c7adb3faebfa"
 version: 2
 ---
 # auto

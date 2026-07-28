@@ -1,8 +1,80 @@
 ---
 name: discover
 description: "Use when reasoning about discovery vs creation — all exists at once and just needs to be discovered. Content-addressing is total, so every content (even one never written) already has its address NOW; the map is complete, the 'next' pre-exists as an unread address. Discovering one thing addresses the whole area at once. But the value at a novel address still costs the seed (s>0) — the forms exist, the territory is walked once."
+atomPath: discover
+coordinate: "discover · 4/weave · 3497e7c9"
+contentUuid: "727582cc-ee1a-5f91-bde7-b1c0e851401e"
+diamondUuid: "16aceb43-5d70-886d-920c-22ab4e4b1208"
+uuid: "3497e7c9-0868-8fd5-9a59-d4d54332ec5c"
+horo: 4
+bonds:
+  in:
+    - action
+    - coincidence
+    - conversion
+    - improve
+    - law
+    - merge
+    - optimization
+    - think
+  out:
+    - action
+    - coincidence
+    - conversion
+    - improve
+    - law
+    - merge
+    - optimization
+    - think
+typography:
+  partition: discover
+  bondDegree: 29
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - coincidence
+    - law
+    - merge
+    - think
+  matrix:
+    - action
+    - coincidence
+    - conversion
+    - improve
+    - law
+    - merge
+    - optimization
+    - think
+  backlinks:
+    - action
+    - coincidence
+    - conversion
+    - improve
+    - law
+    - merge
+    - optimization
+    - think
+signatures:
+  computationUuid: "32b8b346-c9ec-8a44-9f71-0e33ae057238"
+  stages:
+    - stage: path
+      stageUuid: "1e9afdd6-6a25-84fe-a840-fc423a10d987"
+    - stage: trinity
+      stageUuid: "3ae93863-84a2-8893-80e4-762085d4098f"
+    - stage: boundary
+      stageUuid: "13e367e9-96e6-8831-81b7-9b522239ba84"
+    - stage: links
+      stageUuid: "c3c7d7af-4258-8e79-b39f-edb6a8237a0e"
+    - stage: horo
+      stageUuid: "ee7f9add-c170-8482-aaa8-b5d84cf4f831"
+    - stage: seal
+      stageUuid: "e9a02c43-3427-839f-a2ba-ca9f862334fe"
+    - stage: uuid
+      stageUuid: "ce2f3834-2775-8255-8498-1b667feb6e15"
+version: 2
 ---
-
 # discover — all exists at once and just needs to be discovered
 
 *"When something is discovered, all is developed in the area at once, proceeding to a next that does not itself exist — because all exists at once and just needs to be discovered."* Content-addressing makes this exact **and** keeps it honest, so the beautiful claim never becomes an overclaim.

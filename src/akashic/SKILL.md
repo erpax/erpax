@@ -2,11 +2,11 @@
 name: akashic
 description: "Use when reasoning about erpax's total queryable record — the codebase (source → config → payload-types) AND every uuid-addressed database row/file; the source of truth the agent reads and regenerates from, and can safely forget into. Code AND data, content-addressed."
 atomPath: akashic
-coordinate: akashic · 2/share · 682864f4
-contentUuid: "0157a9b2-ccfc-5a3b-afaf-cc85fc3de617"
-diamondUuid: "d671a63c-9e6e-8a69-8a50-7e169b015d0f"
-uuid: "682864f4-c8bd-88cc-b91b-93295b282459"
-horo: 2
+coordinate: "akashic · 7/descent · 8683aae0"
+contentUuid: "54af8bcc-8394-5ddd-9dba-66dc567fb413"
+diamondUuid: "438a148b-02c4-8864-88a0-bd970eea856b"
+uuid: "8683aae0-f2a0-8662-bcc8-c33d759e4b0f"
+horo: 7
 bonds:
   in:
     - access
@@ -19,6 +19,7 @@ bonds:
     - aura
     - baked
     - baseline
+    - catharsis
     - chat
     - civilization
     - close
@@ -105,6 +106,7 @@ bonds:
     - aura
     - baked
     - baseline
+    - catharsis
     - chat
     - civilization
     - close
@@ -182,7 +184,7 @@ bonds:
     - zeropoint
 typography:
   partition: akashic
-  bondDegree: 293
+  bondDegree: 298
   neighbors:
     - aura
     - diamond
@@ -234,6 +236,7 @@ neighbors:
     - aura
     - baked
     - baseline
+    - catharsis
     - chat
     - civilization
     - close
@@ -320,6 +323,7 @@ neighbors:
     - aura
     - baked
     - baseline
+    - catharsis
     - chat
     - civilization
     - close
@@ -396,22 +400,22 @@ neighbors:
     - wisdom
     - zeropoint
 signatures:
-  computationUuid: "8a50946c-6676-8932-bd0f-02ae43f62d48"
+  computationUuid: "8681917d-b34f-8a2f-8a6f-b58ba337feb0"
   stages:
     - stage: path
       stageUuid: "3af6eb9f-a71b-8476-a366-7c043497c3fe"
     - stage: trinity
-      stageUuid: "61c14f38-dc97-8915-bb33-7ab3a2dd294e"
+      stageUuid: "7764a4e9-6c6c-8828-8f09-9b86f6259343"
     - stage: boundary
-      stageUuid: "37a0f498-225f-839b-b091-fa11fb7cd5d8"
+      stageUuid: "9dcd4893-3b35-8230-805d-a65555177153"
     - stage: links
       stageUuid: "e9c21520-6b94-80ab-a804-49a230976fee"
     - stage: horo
-      stageUuid: "0fb67308-c5a0-896a-b4df-027765e6dc87"
+      stageUuid: "0b9e5897-5adb-8239-923f-b293a33210d1"
     - stage: seal
-      stageUuid: "0c4e57e4-0cdf-8a66-bbe0-ee12ba89922d"
+      stageUuid: "fbb95449-c919-8814-9de1-2578c22a6c68"
     - stage: uuid
-      stageUuid: "707fece0-d617-88b8-bcec-ea8cfa25cedd"
+      stageUuid: "9a963bfc-a6f0-8a21-89a8-d7009f1d39a0"
 version: 2
 ---
 # akashic

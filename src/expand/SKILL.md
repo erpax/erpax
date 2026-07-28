@@ -2,11 +2,11 @@
 name: expand
 description: "Use when reasoning about the development EXHALE — adding a feature enlarges the corpus, and a larger corpus is more surface to wire (more atoms ⇒ more tamper-cost to be earned). expand measures that growth as added entropy, computed on the live matrix; it is gravity read in reverse — the word-chain spreading out, not the folders collapsing in."
 atomPath: expand
-coordinate: expand · 5/round · 657071fc
-contentUuid: "7f83de01-404c-53c2-bb31-51a90dbe4009"
-diamondUuid: "aa8ff02f-db38-87ab-af29-ba55e0aa1c14"
-uuid: "657071fc-c92b-8a31-870b-cb9dfcae09bf"
-horo: 5
+coordinate: "expand · 8/crest · 3c2db5cd"
+contentUuid: "27b98622-cd1e-54a0-a810-55e8ecaddb76"
+diamondUuid: "ec949542-dda3-83f1-800a-2ab316de7046"
+uuid: "3c2db5cd-219e-8915-b3e1-1d6e867482ee"
+horo: 8
 bonds:
   in:
     - atom
@@ -46,8 +46,6 @@ typography:
   neighbors: []
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (base-10)"
-  - "composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing"
-  - "computed from the live matrix, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -99,7 +97,7 @@ neighbors:
     - sequence
     - word
 signatures:
-  computationUuid: "a1b687a1-e6a4-8d9c-8a3a-2ab470a3fbbb"
+  computationUuid: "1e6a3bbf-d36f-873d-bd4f-ca8fccad82bd"
   stages:
     - stage: path
       stageUuid: "21aa4ad9-15b7-8b4b-95a4-78508c69cbea"
@@ -110,11 +108,11 @@ signatures:
     - stage: links
       stageUuid: "f43f5858-16d6-8978-8449-8a2953c532c5"
     - stage: horo
-      stageUuid: "42716f8b-3144-8c4e-95df-5c350f665137"
+      stageUuid: "c71a520e-9879-8977-a642-7671867325f8"
     - stage: seal
-      stageUuid: "9911a2d0-b808-8ed3-a2a4-7eb981403474"
+      stageUuid: "41bb213e-96dd-8c1b-a226-0d6709a0f217"
     - stage: uuid
-      stageUuid: "b604b40a-15ee-84d2-9388-313609a6e53f"
+      stageUuid: "3b2af7e3-2a73-81b9-8964-2947a4c0f7d0"
 version: 2
 ---
 # expand — the development exhale: more atoms, more surface, more cost-to-earn

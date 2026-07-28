@@ -1,12 +1,12 @@
 ---
 name: requirements
 description: "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference."
-atomPath: compliance/frameworks/compliance/requirements
-coordinate: compliance/frameworks/compliance/requirements · 8/crest · 13aaf2c7
-contentUuid: "c4bc2eaf-ef75-5483-9ecd-66933b3abf04"
-diamondUuid: "b0964d4c-2d24-8248-bcf8-2127a3bb1577"
-uuid: "13aaf2c7-0a12-8ee7-bb31-a9acb5aac02a"
-horo: 8
+atomPath: "compliance/frameworks/compliance/requirements"
+coordinate: "compliance/frameworks/compliance/requirements · 5/round · de18b883"
+contentUuid: "c4408a3a-552d-5082-8a6b-97fba20de224"
+diamondUuid: "21135dec-a101-887f-a259-f56bc607894c"
+uuid: "de18b883-4b75-8e77-ae4b-9570ec01ef39"
+horo: 5
 bonds:
   in:
     - applicant
@@ -41,8 +41,10 @@ typography:
 standards:
   - "ISO-37301"
   - "ISO-37301:2021 obligation-register"
+  - "ISO-37301:2021 obligation-register`"
   - "SOX §404 control-objective"
   - "US-CTA-2021"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -74,7 +76,7 @@ neighbors:
     - software
     - storage
 signatures:
-  computationUuid: "7265b0d7-ed03-8eb5-8bc1-4ce509de7fcb"
+  computationUuid: "5976fb15-be0a-8530-ba60-8a524c526930"
   stages:
     - stage: path
       stageUuid: "12c5ca21-ec66-85c6-ac1b-89a64544597b"
@@ -85,11 +87,11 @@ signatures:
     - stage: links
       stageUuid: "379eb10e-62d0-8e8b-8482-ee00d61563d7"
     - stage: horo
-      stageUuid: "9ef8aabc-265d-8978-9b65-d8100b0ebd43"
+      stageUuid: "195a2508-3d57-8489-a50e-19d32960006c"
     - stage: seal
       stageUuid: "66c3d07c-0ea3-856a-a68a-827c41865036"
     - stage: uuid
-      stageUuid: "62ed0cb1-9d6f-8dc1-9769-2f4acdac4b83"
+      stageUuid: "102ef7b8-7d40-801f-bf35-e2e3539e946f"
 version: 2
 ---
 # compliance-requirements

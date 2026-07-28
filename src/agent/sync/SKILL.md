@@ -1,65 +1,40 @@
 ---
 name: sync
 description: "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens."
-atomPath: agent/sync
-coordinate: agent/sync · 4/weave · ce290ce1
-contentUuid: "87a171c3-bcec-56ee-a3d1-8f4080f7700c"
-diamondUuid: "d441b24c-d11e-830b-aafa-9417ee87f385"
-uuid: "ce290ce1-ad52-879e-ad17-d90028f4e392"
+atomPath: "agent/sync"
+coordinate: "agent/sync · 4/weave · a69c30da"
+contentUuid: "7b815fc7-df21-5de4-8fef-2e2b5e484924"
+diamondUuid: "d7cb7261-8376-808d-833f-d98a2221c1bc"
+uuid: "a69c30da-87d4-8594-903a-6d85c2b16887"
 horo: 4
 bonds:
   in:
     - agent
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
+    - duality
     - fractal
-    - generate
-    - hallucination
     - holographic
     - identity
-    - integrity
     - law
-    - linearity
     - memory
     - merge
-    - part
-    - peace
-    - purity
-    - snapshot
+    - standard
     - stream
     - sync
-    - uuid
-    - whole
   out:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
+    - agent
+    - duality
     - fractal
-    - generate
-    - hallucination
     - holographic
     - identity
-    - integrity
     - law
-    - linearity
     - memory
     - merge
-    - part
-    - peace
-    - purity
-    - snapshot
+    - standard
     - stream
     - sync
-    - uuid
-    - whole
 typography:
   partition: agent
-  bondDegree: 83
+  bondDegree: 57
   neighbors:
     - hallucination
     - purity
@@ -68,13 +43,18 @@ standards:
   - "ISO-27001"
   - "ISO/IEC-27001:2022"
   - "RFC 9562 §5.8 content-uuid event-identity (idempotency key)"
+  - "RFC 9562 §5.8 content-uuid event-identity (idempotency key)`"
   - "RFC-4122"
   - "RFC-4122 §4.3 content-uuid event-identity (idempotency key)"
+  - "RFC-4122 §4.3 content-uuid event-identity (idempotency key)`"
   - "RFC-6455 websocket"
+  - "RFC-6455 websocket`"
   - "RFC-9562"
   - SFIA
   - "W3C ActivityPub server-to-server activity-distribution (the model)"
+  - "W3C ActivityPub server-to-server activity-distribution (the model)`"
   - "W3C-ActivityPub"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -86,55 +66,31 @@ neighbors:
     - merge
     - standard
   matrix:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
+    - agent
+    - duality
     - fractal
-    - generate
-    - hallucination
     - holographic
     - identity
-    - integrity
     - law
-    - linearity
     - memory
     - merge
-    - part
-    - peace
-    - purity
-    - snapshot
+    - standard
     - stream
     - sync
-    - uuid
-    - whole
   backlinks:
-    - atom
-    - blockchain
-    - collapse
-    - distribution
-    - entropy
+    - agent
+    - duality
     - fractal
-    - generate
-    - hallucination
     - holographic
     - identity
-    - integrity
     - law
-    - linearity
     - memory
     - merge
-    - part
-    - peace
-    - purity
-    - snapshot
+    - standard
     - stream
     - sync
-    - uuid
-    - whole
 signatures:
-  computationUuid: "82d77801-592e-8039-92a2-ac6d55263cd7"
+  computationUuid: "581103e5-bff2-86a1-a72b-58ac14a861ea"
   stages:
     - stage: path
       stageUuid: "c91a7dfa-6b1d-868a-aa90-fd6a59e2b176"
@@ -145,11 +101,11 @@ signatures:
     - stage: links
       stageUuid: "3f334104-da41-8028-bdee-d36e51f400b9"
     - stage: horo
-      stageUuid: "19fdc1f1-4459-8d40-aca8-f17a4ace46bb"
+      stageUuid: "7626d136-1148-8832-9094-b9f15e5cdfb5"
     - stage: seal
       stageUuid: "634a806c-c86b-847d-a81e-bcb549d90fb1"
     - stage: uuid
-      stageUuid: "94e87534-14d3-8934-81f6-ed2ebf668c1a"
+      stageUuid: "bf1a7787-4eb8-8527-b5ba-11fd2cb91d72"
 version: 2
 ---
 # agent-sync

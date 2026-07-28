@@ -2,11 +2,11 @@
 name: feature
 description: "Use when reasoning about feature as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: feature
-coordinate: feature · 7/descent · 8e688869
-contentUuid: "40ec65a2-e082-5f65-8794-98740d539ddc"
-diamondUuid: "385b0f2a-c60b-8bb0-8cb4-04b305812f06"
-uuid: "8e688869-da29-8b24-a7e6-c52e9309d67d"
-horo: 7
+coordinate: "feature · 8/crest · e5199af1"
+contentUuid: "da22f8d7-2faf-5112-8635-6839e2054e76"
+diamondUuid: "a4a6a219-01cb-8fe3-a962-04059cbd70f1"
+uuid: "e5199af1-40d4-821a-9ff6-0d1452e8f258"
+horo: 8
 bonds:
   in:
     - accessibility
@@ -72,7 +72,7 @@ neighbors:
     - sti
     - wave
 signatures:
-  computationUuid: "7838e870-c51e-8652-9b84-8c7924ae8cf1"
+  computationUuid: "c769ff22-8c0d-87b1-adf6-a27cf8b21503"
   stages:
     - stage: path
       stageUuid: "e5533c3e-aa27-8730-a690-c10fbb1f212f"
@@ -83,11 +83,11 @@ signatures:
     - stage: links
       stageUuid: "2b26e0bf-a286-8b8e-844f-096498589b30"
     - stage: horo
-      stageUuid: "500f9c11-a61f-88cf-85d3-a5b17303e5c8"
+      stageUuid: "d6f6962e-bac1-8ee3-a6dd-795507369125"
     - stage: seal
       stageUuid: "a6eb43e2-6c66-809e-b41d-6d1d99b51033"
     - stage: uuid
-      stageUuid: "f5fcdf52-0d99-8a21-b391-4ea633c2602c"
+      stageUuid: "afd430dd-3785-87bf-aeb3-3ac32de1defc"
 version: 2
 ---
 # feature

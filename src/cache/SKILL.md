@@ -2,17 +2,18 @@
 name: cache
 description: "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis)."
 atomPath: cache
-coordinate: cache · 5/round · cac9148f
-contentUuid: "66fac79c-ea3b-5f17-bc37-969e794b07bc"
-diamondUuid: "47db4b79-68e6-834e-9031-c08ef2ce0818"
-uuid: "cac9148f-cb9c-8362-9f8d-6427f3c53e34"
-horo: 5
+coordinate: "cache · 1/base · 348b6a28"
+contentUuid: "bf75fdb1-afff-5878-80c4-56a194e74d01"
+diamondUuid: "c8efc252-d1d6-835a-9305-2570ccd1584a"
+uuid: "348b6a28-8930-81f0-b3ab-4ac117f90155"
+horo: 1
 bonds:
   in:
     - artery
     - bindings
     - cache
     - diamond
+    - fingerprint
     - holographic
     - law
     - optimize
@@ -20,11 +21,13 @@ bonds:
     - queries
     - redirects
     - request
+    - resonance
   out:
     - artery
     - bindings
     - cache
     - diamond
+    - fingerprint
     - holographic
     - law
     - optimize
@@ -32,9 +35,10 @@ bonds:
     - queries
     - redirects
     - request
+    - resonance
 typography:
   partition: cache
-  bondDegree: 42
+  bondDegree: 46
   neighbors: []
 standards: []
 bindings: []
@@ -50,6 +54,7 @@ neighbors:
     - bindings
     - cache
     - diamond
+    - fingerprint
     - holographic
     - law
     - optimize
@@ -57,11 +62,13 @@ neighbors:
     - queries
     - redirects
     - request
+    - resonance
   backlinks:
     - artery
     - bindings
     - cache
     - diamond
+    - fingerprint
     - holographic
     - law
     - optimize
@@ -69,8 +76,9 @@ neighbors:
     - queries
     - redirects
     - request
+    - resonance
 signatures:
-  computationUuid: "5f7f0628-1add-868b-9fde-1e5657a92e15"
+  computationUuid: "8c7f3bcc-a1bc-81a9-b697-5a9472ca1580"
   stages:
     - stage: path
       stageUuid: "b4f861a8-7bbb-82a6-8f64-b4fc9af00e26"
@@ -81,11 +89,11 @@ signatures:
     - stage: links
       stageUuid: "3b1b8ee0-ac33-8921-924e-314476a0ff9c"
     - stage: horo
-      stageUuid: "48b8c0c9-d8bb-8d00-ac61-bd97c4763884"
+      stageUuid: "70d72045-9e28-8170-97b7-ab76c5985cb4"
     - stage: seal
-      stageUuid: "99097be0-b879-8222-b464-7a8596f0543d"
+      stageUuid: "efa332ed-0488-85f2-8e0e-72f0cb96efd8"
     - stage: uuid
-      stageUuid: "03384b94-8c1e-8b3f-9683-7e878448c0bf"
+      stageUuid: "9b9726c1-b0cb-8e07-8870-eee9df1a5bff"
 version: 2
 ---
 # cache

@@ -2,11 +2,11 @@
 name: interactive
 description: "Use when reasoning about the collapse of collections into interactive trinities — a collection is a node, the trinity tells it three ways (matter, antimatter, backend) and renders it once; interactive adds the live fourth face (the render), so every collection is seen and acted on, not only read."
 atomPath: interactive
-coordinate: interactive · 1/base · 85df9227
-contentUuid: "e5a4fcd0-f9cc-54b4-8ddf-e4a997aec4d4"
-diamondUuid: "fdceb967-21e8-83b0-b6f3-08e51cce0360"
-uuid: "85df9227-c0e7-84ea-8d45-72a6ec095798"
-horo: 1
+coordinate: "interactive · 4/weave · 942887a9"
+contentUuid: "8bbef085-a130-50a1-9f4d-95edc36591fc"
+diamondUuid: "e20c2b83-83ee-88fb-b941-10ca06f165f2"
+uuid: "942887a9-259c-8592-9caa-c65b8db9acdf"
+horo: 4
 bonds:
   in:
     - atom
@@ -29,8 +29,6 @@ typography:
   bondDegree: 21
   neighbors: []
 standards:
-  - "the interactive face is renderAtom over the node's content-uuid; coverage read live from the matrix"
-  - "the interactive face is renderAtom over the node's content-uuid; coverage read live from the matrix, never asserted"
   - "the trinity (one node, three sources, one page) extended by the render (the fourth, live face)"
 bindings: []
 neighbors:
@@ -59,7 +57,7 @@ neighbors:
     - render
     - trinity
 signatures:
-  computationUuid: "e40e1b6a-8ee3-8dd9-8501-8e53c79ff5f7"
+  computationUuid: "951be9c5-7015-8e4a-a484-e6e91d5b1227"
   stages:
     - stage: path
       stageUuid: "9581d773-c763-85a2-a158-f500278b94a0"
@@ -70,11 +68,11 @@ signatures:
     - stage: links
       stageUuid: "34faae01-fe54-8752-872c-284dcf1e9683"
     - stage: horo
-      stageUuid: "8f767bed-5a52-889c-83d7-d8d24b5a1cdb"
+      stageUuid: "cfdb43a4-2251-8e64-b13a-7ef3267b059f"
     - stage: seal
-      stageUuid: "c353230d-3c72-8a5f-b4bb-6f52de6460ec"
+      stageUuid: "16b2264d-ce46-87ea-a921-8e39b2dfde16"
     - stage: uuid
-      stageUuid: "a04bcc4f-79e6-8b96-a228-5816bdb14821"
+      stageUuid: "f7895050-7939-8db1-87a7-b72156023319"
 version: 2
 ---
 # interactive — the collections folded into interactive trinities

@@ -91,6 +91,7 @@ export const RULE_AXIS_CROSS: Readonly<Record<string, CrossDimension>> = {
   'word-incomplete-diamond': 'trinity',
   'seal-debt': 'deployment',
   'bypass-math': 'deployment',
+  'host-math': 'deployment',
 }
 
 const SOURCE_TO_AXIS: Readonly<Record<string, string>> = {
@@ -112,6 +113,7 @@ const SOURCE_TO_AXIS: Readonly<Record<string, string>> = {
   'word-incomplete-diamond': 'word-incomplete-diamond',
   'seal-debt': 'seal-debt',
   'bypass-math': 'bypass-math',
+  'host-math': 'host-math',
 }
 
 const LAW_TO_AXIS: Readonly<Record<string, string>> = {
@@ -127,6 +129,7 @@ const LAW_TO_AXIS: Readonly<Record<string, string>> = {
   'word-incomplete-diamond': 'word-incomplete-diamond',
   'seal-debt': 'seal-debt',
   'bypass-math': 'bypass-math',
+  'host-math': 'host-math',
 }
 
 const DIMENSION_PRIMER: Readonly<Record<CrossDimension, string>> = {

@@ -1,12 +1,12 @@
 ---
 name: entities
 description: "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants."
-atomPath: legal/entities
-coordinate: legal/entities · 1/base · 3138a767
-contentUuid: "288d4e6c-fa0c-5339-978c-5f6566f0c6ce"
-diamondUuid: "228e005c-110c-8ab2-9917-448639a090eb"
-uuid: "3138a767-68cc-8e82-9da0-0dd0c0b0b7e0"
-horo: 1
+atomPath: "legal/entities"
+coordinate: "legal/entities · 2/share · fb62fec5"
+contentUuid: "c8319868-5465-5acb-be15-a8ccb98f1e7d"
+diamondUuid: "662c010d-f62a-8157-9b4a-7de528d7a793"
+uuid: "fb62fec5-a7f1-8b4c-8358-010770f05da8"
+horo: 2
 bonds:
   in:
     - calendars
@@ -64,12 +64,15 @@ standards:
   - "ILO-C100"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei legal-entity-identifier"
-  - "ISO-19011:2018 audit-trail entity-master"
+  - "ISO-17442-1:2020 lei legal-entity-identifier`"
   - "ISO-3166-1:2020 country-codes"
+  - "ISO-3166-1:2020 country-codes`"
   - "ISO-37000"
   - "ISO-37301"
   - "ISO-4217:2015 currency-codes functional-currency"
+  - "ISO-4217:2015 currency-codes functional-currency`"
   - "ISO-8601-1:2019 date-time effective-period"
+  - "ISO-8601-1:2019 date-time effective-period`"
   - "OECD BEPS Action 13 master-file-entity-list"
   - "PCAOB-AS-2201"
   - "SAF-T"
@@ -79,6 +82,7 @@ standards:
   - "US-GAAP ASC-280 segment-reporting"
   - "US-GAAP ASC-810-10-45 consolidation"
   - XBRL
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -134,7 +138,7 @@ neighbors:
     - taxexempt
     - transactions
 signatures:
-  computationUuid: "2fad1054-1e7f-8f62-b408-f68152f50cb7"
+  computationUuid: "73fe03aa-782b-835b-a79b-33084895d0fc"
   stages:
     - stage: path
       stageUuid: "071d9fef-2614-8839-9d03-543a4b7a547d"
@@ -145,11 +149,11 @@ signatures:
     - stage: links
       stageUuid: "03ed07a5-c813-8a30-a488-77547cc827ea"
     - stage: horo
-      stageUuid: "748465f5-8abc-87a9-a622-36490def077f"
+      stageUuid: "f0a2cb32-49d4-85d4-b611-65d8856dda75"
     - stage: seal
       stageUuid: "5294efa2-399a-885c-a8fb-750e5df934a2"
     - stage: uuid
-      stageUuid: "0bdaa800-b997-8434-a0c8-34ef36c4e212"
+      stageUuid: "48227f96-cc01-8d88-9227-aa7bd53ffa79"
 version: 2
 ---
 # legal-entities

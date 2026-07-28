@@ -299,6 +299,9 @@ export const THEOREM_PROVIDER = {
     'quantum-honesty': 'concept.science.quantum',
     'diamond-complete': 'concept.diamond.complete',
     'self-address': 'concept.self.address',
+    'architectural-ftl': 'quantumise-ftl',
+    'ftl-crack': 'ftl-crack',
+    'efficiency-reuse': 'efficiency-vote',
   },
 } as const
 

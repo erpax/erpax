@@ -1,12 +1,12 @@
 ---
 name: payments
 description: "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection."
-atomPath: invoices/payments
-coordinate: invoices/payments · 4/weave · addb42cb
-contentUuid: "15f5e2a9-6e19-565a-80d8-2b57428ae4c6"
-diamondUuid: "d1809864-e861-89db-af79-5d8f9abf7fcd"
-uuid: "addb42cb-029b-8bc6-8629-3fcf1c023d33"
-horo: 4
+atomPath: "invoices/payments"
+coordinate: "invoices/payments · 1/base · d4a8195d"
+contentUuid: "0b9de259-80d8-5283-af90-cababd7181c9"
+diamondUuid: "c99b5212-8976-836f-acac-1f51cf37c3b7"
+uuid: "d4a8195d-6673-8dea-82c4-3de785f8b46b"
+horo: 1
 bonds:
   in:
     - accounting
@@ -37,18 +37,24 @@ typography:
   neighbors: []
 standards:
   - "IFRS IAS-7 statement-of-cash-flows"
-  - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
-  - "ISO-19011:2018 audit-trail"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer"
+  - "ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer`"
   - "ISO-20022 pain.001 customer-credit-transfer-initiation"
+  - "ISO-20022 pain.001 customer-credit-transfer-initiation`"
   - "ISO-20022 pain.008 customer-direct-debit-initiation"
+  - "ISO-20022 pain.008 customer-direct-debit-initiation`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time payment-date value-date"
+  - "ISO-8601-1:2019 date-time payment-date value-date`"
   - "ISO-9362"
   - "ISO-9362:2022 bic"
+  - "ISO-9362:2022 bic`"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-230 statement-of-cash-flows"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -82,7 +88,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "6cbed06d-2299-8baf-a3c9-c76ae5a7a178"
+  computationUuid: "3d3eb817-0fef-8097-a005-120ab43baf9b"
   stages:
     - stage: path
       stageUuid: "88ef4de9-3e18-8ada-8375-bab76c5205dc"
@@ -93,11 +99,11 @@ signatures:
     - stage: links
       stageUuid: "7eed6bf4-5b4b-84d1-b951-0d8bb04a0472"
     - stage: horo
-      stageUuid: "e95a0ef0-7737-8bac-bd0d-cd7f92873984"
+      stageUuid: "13a12a23-0937-8eec-bfc3-1fa640e29c9f"
     - stage: seal
       stageUuid: "f9e293b2-0402-89a3-a40c-4501558054fd"
     - stage: uuid
-      stageUuid: "d72fedb0-26b5-8a96-9a4d-dec984a2e349"
+      stageUuid: "69f2c0df-8cc6-8d54-b5bd-c3aa9fdf828e"
 version: 2
 ---
 # payments

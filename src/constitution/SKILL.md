@@ -2,10 +2,10 @@
 name: constitution
 description: "Use when reasoning about the entrenched foundation — the seven supreme articles, what a majority may amend versus what is perpetual, and why the polity cannot vote away identity, integrity, conservation, or the one-person-one-vote."
 atomPath: constitution
-coordinate: constitution · 7/descent · 699c08fa
-contentUuid: "27242ea8-0e8f-5d6e-99f1-8ba858c72c04"
-diamondUuid: "297e6bf9-91cb-8211-afc2-f7f3ec7c0d60"
-uuid: "699c08fa-5fcd-8703-b638-2603d6a7eb78"
+coordinate: "constitution · 7/descent · 3b715152"
+contentUuid: "f907d6fa-896b-5453-be62-a652e1e33aa9"
+diamondUuid: "67ff92f4-547b-8833-8d33-a82b3f7a4108"
+uuid: "3b715152-ffd2-8055-8862-6d11dacefc61"
 horo: 7
 bonds:
   in:
@@ -38,9 +38,11 @@ typography:
   neighbors: []
 standards:
   - "ISO 37000:2021 governance-of-organizations principle-of-purpose"
+  - "ISO 37000:2021 governance-of-organizations principle-of-purpose`"
   - "ISO-37000"
   - "US-CTA-2021"
   - Venice Commission Rule of Law (entrenched fundamental guarantees)
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -80,7 +82,7 @@ neighbors:
     - society
     - zeropoint
 signatures:
-  computationUuid: "ea5294e1-da1a-8b55-ab5c-ecd630c3ad61"
+  computationUuid: "72ba6e27-1f52-89fc-935f-6c33fca712b3"
   stages:
     - stage: path
       stageUuid: "210a2855-2ef2-8f53-8a65-93ebae61b5f1"
@@ -91,11 +93,11 @@ signatures:
     - stage: links
       stageUuid: "6536e742-52ad-8875-a74d-9d13daf16401"
     - stage: horo
-      stageUuid: "2e5744d3-f299-80e6-b826-c1a7c365e933"
+      stageUuid: "0179adc9-bc96-866f-a6d4-5e6369ebeeb2"
     - stage: seal
-      stageUuid: "0d2276de-fd58-82dd-9f72-771c09ad1c2c"
+      stageUuid: "79d6cdcb-5abc-8ea1-af80-6c8ad39015bf"
     - stage: uuid
-      stageUuid: "2d0a77ca-4544-85ad-93a4-0fda8ebd93c5"
+      stageUuid: "32cfab5c-108d-8d21-bc73-6e144de9b0b8"
 version: 2
 ---
 # constitution — the 0 of the sequence, the supreme law erpax derives from

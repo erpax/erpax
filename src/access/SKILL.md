@@ -1,12 +1,12 @@
 ---
 name: access
-description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\\\\\"access denied\\\\\\\"/\\\\\\\"document hidden\\\\\\\". In erpax access is the society's \\\\\\\"who can do what\\\\\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
+description: "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\\\\\\\\\\\\\"access denied\\\\\\\\\\\\\\\"/\\\\\\\\\\\\\\\"document hidden\\\\\\\\\\\\\\\". In erpax access is the society's \\\\\\\\\\\\\\\"who can do what\\\\\\\\\\\\\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost."
 atomPath: access
-coordinate: access · 6/6 · 85386808
-contentUuid: "28e490f8-077c-52e0-9481-f10ba25cdbaa"
-diamondUuid: "f308bb42-e834-8724-9907-9c09f89edace"
-uuid: "85386808-dbc7-8084-ba95-d0a8cfa4e047"
-horo: 6
+coordinate: "access · 9/unity · 7888364d"
+contentUuid: "f8cf4768-5fce-5723-8085-491018a197d3"
+diamondUuid: "6388ca3d-ee6b-81cd-aa47-fc4be4b60134"
+uuid: "7888364d-5925-813e-9be2-41fee4b48d65"
+horo: 9
 bonds:
   in:
     - access
@@ -51,6 +51,7 @@ bonds:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -93,6 +94,7 @@ bonds:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -111,6 +113,7 @@ bonds:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -171,6 +174,7 @@ bonds:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -213,6 +217,7 @@ bonds:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -231,6 +236,7 @@ bonds:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -250,17 +256,22 @@ bonds:
     - workflow
 typography:
   partition: access
-  bondDegree: 415
-  neighbors:
-    - diamond
-    - hallucination
-    - purity
+  bondDegree: 422
+  neighbors: []
 standards:
+  - "EU-2002/58"
+  - "ILO-C001"
   - "ISO 27001 A.5.10 access-control-policy"
+  - "ISO-27001"
+  - "ISO/IEC-27001:2022"
   - "NIST SP 800-162 ABAC"
+  - "NIST-SP-800-162"
+  - "NIST-SP-800-63"
+  - "Naredba-N-18"
+  - SOX
 bindings:
-  - ratelimit/RATE_LIMITER_AI
-  - ratelimit/RATE_LIMITER_API
+  - "ratelimit/RATE_LIMITER_AI"
+  - "ratelimit/RATE_LIMITER_API"
 neighbors:
   wikilink:
     - akashic
@@ -334,6 +345,7 @@ neighbors:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -376,6 +388,7 @@ neighbors:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -394,6 +407,7 @@ neighbors:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -454,6 +468,7 @@ neighbors:
     - duality
     - ecommerce
     - education
+    - engineering
     - events
     - failures
     - federation
@@ -496,6 +511,7 @@ neighbors:
     - receipt
     - records
     - refunds
+    - report
     - request
     - requests
     - research
@@ -514,6 +530,7 @@ neighbors:
     - snapshots
     - society
     - specification
+    - standard
     - sti
     - submissions
     - subscriptions
@@ -532,7 +549,7 @@ neighbors:
     - versions
     - workflow
 signatures:
-  computationUuid: "b0c6b88c-f550-8e7d-8bd9-0cb24c97e832"
+  computationUuid: "22546f75-499c-81f2-bdf1-2fb5cacc78ba"
   stages:
     - stage: path
       stageUuid: "d7b1808b-9c66-801b-a8de-ed55ac4d2ba0"
@@ -543,11 +560,11 @@ signatures:
     - stage: links
       stageUuid: "61f812ba-81c0-8cf6-bf03-133a2e00058f"
     - stage: horo
-      stageUuid: "459518ea-cc32-830b-9efd-3ccc58ccf91e"
+      stageUuid: "36eac7b4-9f47-8378-b72b-4b7c36935ae6"
     - stage: seal
-      stageUuid: "1fbef22e-d2d6-8739-b8ad-06f8b453c677"
+      stageUuid: "67f50dad-9ba9-8e96-bf4a-17b64f5ed91c"
     - stage: uuid
-      stageUuid: "e3da9c35-338f-80a8-a4d2-0f691057a711"
+      stageUuid: "78231554-7947-82e9-bcff-db486f94b1b0"
 version: 2
 ---
 # access — who can do what in the society (position 3, the 3·6·9 governing axis)

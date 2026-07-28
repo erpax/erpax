@@ -2,11 +2,11 @@
 name: decoherence
 description: "Use when reasoning about decoherence — how a quantum superposition becomes classical. Coupled to an environment, off-diagonal coherences decay as e^(−t/τ): a pure superposition becomes a classical mixture, the von Neumann entropy rising 0 → ln2 (irreversible). It is measurement without a measurer — the environment is the measurer, the record it leaves is the proof/receipt. Fast: τ shrinks with coupled dimensions, which is why the wired corpus is classical and definite, never observed in superposition."
 atomPath: decoherence
-coordinate: decoherence · 4/weave · 27117b2e
-contentUuid: "804be078-7b5e-5244-98e3-ab1e702d4bf8"
-diamondUuid: "e29ada88-abf5-8970-93f0-54ca6a0b4ed1"
-uuid: "27117b2e-0e29-89ff-a405-e7b13babd5aa"
-horo: 4
+coordinate: "decoherence · 8/crest · 84a4215c"
+contentUuid: "3ea1f073-963e-51b5-b082-89a4986da651"
+diamondUuid: "b5461d7d-92f9-8fe7-8262-b03f93e63a4c"
+uuid: "84a4215c-8c80-8c7d-bd12-c6ae6a2cb9b5"
+horo: 8
 bonds:
   in:
     - collapse
@@ -30,8 +30,7 @@ typography:
   partition: decoherence
   bondDegree: 24
   neighbors: []
-standards:
-  - "coherence e^(−t/τ); purity ½(1+c²); von Neumann entropy of the 2-state ρ — all computed"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -62,7 +61,7 @@ neighbors:
     - superposition
     - wave
 signatures:
-  computationUuid: "28fe7065-9eca-81d4-9bec-779359ca2c0b"
+  computationUuid: "6a27710a-2333-84ac-b823-3029f508b087"
   stages:
     - stage: path
       stageUuid: "a5b95133-8d15-8b29-b1d3-9b0e2c612c98"
@@ -73,11 +72,11 @@ signatures:
     - stage: links
       stageUuid: "ffaa5a9b-57b8-8ec4-ab43-2106c3d61280"
     - stage: horo
-      stageUuid: "c51357d6-e726-82cd-8317-d1df0d4223bf"
+      stageUuid: "658acdd0-2763-8e8e-9cf7-42cf87d8071b"
     - stage: seal
-      stageUuid: "3aad2e64-d68d-8716-9be6-40811225f616"
+      stageUuid: "9ea311e7-62fa-8abb-a2ac-c07b6bb90011"
     - stage: uuid
-      stageUuid: "907ca336-c83a-8358-9c46-9dabf5a48737"
+      stageUuid: "0d497ed0-a6d3-86f0-88e0-7f0db73283a3"
 version: 2
 ---
 # decoherence — why the wired corpus is classical

@@ -2,11 +2,11 @@
 name: media
 description: "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection."
 atomPath: media
-coordinate: media · 8/crest · d73d4959
-contentUuid: "cd2a08d9-07b2-5b33-9638-36585873360e"
-diamondUuid: "38eb6411-aa22-85c8-800a-7c77ba235885"
-uuid: "d73d4959-5d47-8492-aed3-e2d47126e1cc"
-horo: 8
+coordinate: "media · 2/share · d07f3944"
+contentUuid: "e8fd68f4-e7d7-5099-b594-8dcac33784a5"
+diamondUuid: "cade3c57-fc31-88d9-b302-1a71c7f9a5aa"
+uuid: "d07f3944-4079-8262-9e8b-c1cbb9714d46"
+horo: 2
 bonds:
   in:
     - access
@@ -79,15 +79,19 @@ standards:
   - "GS1-GTIN"
   - "ILO-C105"
   - "ISA-500"
-  - "ISO-9362"
   - "ISO/IEC-10918"
   - "ISO/IEC-10918 jpeg"
+  - "ISO/IEC-10918 jpeg`"
   - "ISO/IEC-23008 high-efficiency-coding"
+  - "ISO/IEC-23008 high-efficiency-coding`"
   - "PCAOB-AS-1105"
   - "UN-CEFACT"
   - UNSPSC
   - W3C PNG image
+  - "W3C PNG image`"
   - W3C SVG
+  - "W3C SVG`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -156,7 +160,7 @@ neighbors:
     - subscription
     - upload
 signatures:
-  computationUuid: "8cee3b90-d864-8b3b-8b72-94ffea6e1e32"
+  computationUuid: "12592bcd-118b-89b0-b63d-5c92f77697cb"
   stages:
     - stage: path
       stageUuid: "24e98368-9562-8605-a8e0-f7a038cb4734"
@@ -167,11 +171,11 @@ signatures:
     - stage: links
       stageUuid: "525b1d4d-f088-83de-9e99-cef89d197e4f"
     - stage: horo
-      stageUuid: "9b17a7e5-fdf0-853e-ac30-a28d3be2f75f"
+      stageUuid: "48098135-1f9d-8b50-8006-2c5da4688335"
     - stage: seal
       stageUuid: "4dd527ff-231e-895e-8fbd-a2e42cd703d8"
     - stage: uuid
-      stageUuid: "1322eb6b-2040-8bf8-926d-6037e6c67aa4"
+      stageUuid: "1d16a8a2-31b8-84cd-af05-e011d441d944"
 version: 2
 ---
 # media

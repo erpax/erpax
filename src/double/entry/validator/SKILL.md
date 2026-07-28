@@ -1,8 +1,67 @@
 ---
 name: validator
 description: "Use when posting or reviewing a journal entry — the double-entry gate: every entry has two sides and the sides agree. Enforces a balance tolerance, one side per posting, non-negative amounts; warns (never refuses) on account polarity, because contra-accounts legitimately invert. Read this before trusting the word tolerance: the bound is absolute over float amounts, so the same one-cent gap posts at 50 and is refused at 100."
+atomPath: "double/entry/validator"
+coordinate: "double/entry/validator · 7/descent · 7ff057c3"
+contentUuid: "0b8bdc1a-9c2c-5f15-b3d3-291f61a035f3"
+diamondUuid: "73e58b63-05db-8288-88db-e976c7f713d4"
+uuid: "7ff057c3-3808-8df2-9813-d278aae6a36a"
+horo: 7
+bonds:
+  in:
+    - double
+    - entry
+    - law
+    - rules
+    - think
+  out:
+    - double
+    - law
+    - rules
+    - think
+typography:
+  partition: double
+  bondDegree: 12
+  neighbors: []
+standards:
+  - IAS 1 — an entry balances
+  - "IAS-1"
+bindings: []
+neighbors:
+  wikilink:
+    - double
+    - law
+    - rules
+    - think
+  matrix:
+    - double
+    - law
+    - rules
+    - think
+  backlinks:
+    - double
+    - law
+    - rules
+    - think
+signatures:
+  computationUuid: "4403f47b-e035-827c-a174-48d1fc050e74"
+  stages:
+    - stage: path
+      stageUuid: "0f4994e7-8e25-80bd-beea-7607c25e1e4c"
+    - stage: trinity
+      stageUuid: "8b5982de-d6bf-8893-bda7-c64b821acb35"
+    - stage: boundary
+      stageUuid: "b49ab6c4-c7c8-84fc-bdfa-6d473c3e6d13"
+    - stage: links
+      stageUuid: "7487e523-3c18-83f9-9b88-82f8cc307a65"
+    - stage: horo
+      stageUuid: "bd2791fe-2b8e-85a5-be2a-2ca1d4938eda"
+    - stage: seal
+      stageUuid: "ae7ff6c4-6c44-8436-a9b9-e51e3dcbc91b"
+    - stage: uuid
+      stageUuid: "ef960140-c09b-8117-b8aa-b0235bd1c816"
+version: 2
 ---
-
 # validator — the law an ERP exists to guarantee
 
 Debits equal credits. It is the one thing accounting is *for*, and in this corpus it carried **no proof** — the finding [[rules]]/refutable was built to surface. What it asserted, nothing could contradict:

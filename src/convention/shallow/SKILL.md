@@ -1,12 +1,12 @@
 ---
 name: shallow
 description: "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter)."
-atomPath: convention/shallow
-coordinate: convention/shallow · 4/weave · 3ffe927d
-contentUuid: "88f6242d-ba63-5b7d-8f16-5da3b6c4810d"
-diamondUuid: "99fb2055-0dbb-8169-9c74-c02718d4ac60"
-uuid: "3ffe927d-5f8c-8421-8036-eef01380bcd1"
-horo: 4
+atomPath: "convention/shallow"
+coordinate: "convention/shallow · 8/crest · c5043be6"
+contentUuid: "c88b41db-f6dd-58b3-abb5-b8818d3fb18e"
+diamondUuid: "dc934192-ae35-8e9a-a0dc-6bff8cce6260"
+uuid: "c5043be6-cae5-895f-b750-fb742834ac14"
+horo: 8
 bonds:
   in:
     - convention
@@ -25,7 +25,6 @@ typography:
   neighbors: []
 standards:
   - "UBL-2.1"
-  - "coverage = importPurity() read live from @/tamper/import; never re-implemented, never defaulted"
   - "the import graph is the config — the public face is index.ts only (shallow, never deep)"
 bindings: []
 neighbors:
@@ -45,7 +44,7 @@ neighbors:
     - law
     - tamper
 signatures:
-  computationUuid: "48d5f6d3-6c38-866a-951a-a19db72f6d24"
+  computationUuid: "bc10942d-f1c9-8bc4-8700-407ef2a41baf"
   stages:
     - stage: path
       stageUuid: "b809a38c-8b5b-873a-be5f-a515d158c88e"
@@ -56,11 +55,11 @@ signatures:
     - stage: links
       stageUuid: "bcb3fcdf-7716-89c4-92b2-825adfb60837"
     - stage: horo
-      stageUuid: "0a735cea-8f1f-8a88-be09-34546f1d0b60"
+      stageUuid: "ce67244d-ec34-896a-95f0-22c03c7e7532"
     - stage: seal
-      stageUuid: "ba603a6d-9b99-84a0-bac7-6ad060029d17"
+      stageUuid: "2f5156ef-115f-8824-b7bc-f6b8d4ecbccc"
     - stage: uuid
-      stageUuid: "07b06c8d-fa88-8e9a-b6a8-cdf0062c95a5"
+      stageUuid: "3cc89082-85f8-84d4-8926-bf82381e0f2a"
 version: 2
 ---
 # convention/shallow — import the index, not a deep file

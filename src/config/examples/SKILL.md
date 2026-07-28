@@ -1,11 +1,11 @@
 ---
 name: examples
 description: "Use when seeding or referencing a self-contained tenant template — the business-model-agnostic example `TenantConfig`s (course-builder, newsletter, marketplace) and the `getConfigByBusinessModel` / `listExampleConfigs` accessors over them."
-atomPath: config/examples
-coordinate: config/examples · 9/unity · dd3d97ea
-contentUuid: "00088232-e854-5996-8857-380aea58472f"
-diamondUuid: "29130dc5-07ef-898d-be20-fc294db72fbb"
-uuid: "dd3d97ea-e437-8fc4-b509-37a10fcb72f0"
+atomPath: "config/examples"
+coordinate: "config/examples · 9/unity · d26be1fc"
+contentUuid: "7eb82cf5-e62e-58b7-9b52-8cb9427ab60f"
+diamondUuid: "83f1d3a9-e8a6-854e-928a-52f45731ff96"
+uuid: "d26be1fc-3ec6-8167-990a-f21cbf9f9723"
 horo: 9
 bonds:
   in:
@@ -23,7 +23,6 @@ typography:
 standards:
   - "BCP-47"
   - "BCP-47 language-tag"
-  - "EU-Taxonomy-2020/852"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "ISO-3166-1"
   - "ISO-3166-1:2020 country-codes"
@@ -43,7 +42,7 @@ neighbors:
     - law
     - types
 signatures:
-  computationUuid: "a714435d-0724-8475-b8b3-e76385a1f447"
+  computationUuid: "6e789a59-05a9-8f22-9cbc-1244f8b42259"
   stages:
     - stage: path
       stageUuid: "6ed26be1-495e-8373-b7ba-52573f0457da"
@@ -54,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "373c7a9c-b072-85bb-8484-e2cd834b0717"
     - stage: horo
-      stageUuid: "85ae5cf1-b66a-8fd1-aa4a-fb91bbececdb"
+      stageUuid: "c813faa0-6531-8a6b-8c97-1cb2227e4334"
     - stage: seal
       stageUuid: "fd1038ca-d232-8d6f-acda-dfe81563f936"
     - stage: uuid
-      stageUuid: "01237754-7e32-829e-9bdd-4fda8cb85032"
+      stageUuid: "2698fc20-4d97-8b10-93ff-c09a921d37e9"
 version: 2
 ---
 # config/examples — self-contained tenant templates

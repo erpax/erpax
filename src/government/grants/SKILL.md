@@ -1,11 +1,11 @@
 ---
 name: grants
 description: "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register."
-atomPath: government/grants
-coordinate: government/grants · 1/base · 0c9b91d0
-contentUuid: "63db2992-cc8e-59b8-9aa0-3d9566ebfd65"
-diamondUuid: "55581511-ae99-8a99-9807-cddb20905ff4"
-uuid: "0c9b91d0-f92a-8352-a63c-969947eac836"
+atomPath: "government/grants"
+coordinate: "government/grants · 1/base · 66c7998d"
+contentUuid: "0e9beead-dd1e-52bb-b72d-257d97739701"
+diamondUuid: "0dd682d1-0509-8793-8911-1427939245db"
+uuid: "66c7998d-6670-8535-b76e-84752963b136"
 horo: 1
 bonds:
   in:
@@ -35,12 +35,14 @@ standards:
   - "IFRS IAS-20 §17 §18 §28 §32 disclosure"
   - "IFRS IAS-20 §39 disclosure-government-assistance"
   - "IFRS IAS-20 §7 §8 §10 recognition"
-  - "ISO-19011:2018 audit-trail grant-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "OECD BEPS Action 13 country-by-country (when grants ≥ threshold)"
   - "US-GAAP ASC-832 government-assistance-disclosure"
   - "US-GAAP ASC-958-605 contributions"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -68,7 +70,7 @@ neighbors:
     - provisions
     - standard
 signatures:
-  computationUuid: "289396b5-fd6b-8b6a-810d-b8dc70a94787"
+  computationUuid: "e76c5af2-3c88-8334-8a71-bf921c3c0e4d"
   stages:
     - stage: path
       stageUuid: "2bb7f38f-4966-81c1-93cc-90dc05023fcb"
@@ -79,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "19d20619-ea59-8250-a52d-66611330fcca"
     - stage: horo
-      stageUuid: "d571bcb2-edca-8fdd-93bd-6f24b907a0b4"
+      stageUuid: "dc6b4e6a-8bfa-8f59-8adf-6e0b5da039a1"
     - stage: seal
-      stageUuid: "c7df1975-8ba3-867f-bb59-ed54fa7cd2db"
+      stageUuid: "fd6f4322-366a-832d-a044-b8f47fc13c52"
     - stage: uuid
-      stageUuid: "16681ba7-834a-8b51-afea-0561a5915820"
+      stageUuid: "10063bc0-9d0a-8939-94cb-7b0fcecbc394"
 version: 2
 ---
 # government-grants

@@ -158,6 +158,14 @@ export function isFundamentallyBroken<T>(system: SystemUnderAudit<T>): BrokenVer
   return { broken: reasons.length > 0, reasons }
 }
 
+export {
+  hostMathViolations,
+  ALGEBRA_ATOMS,
+  HOST_MATH_RE,
+  type HostMathViolation,
+  type AlgebraAtom,
+} from './host'
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('algebra — all theorems are algebra only:\n')
   const gens: Record<string, number> = { doubling: 2, additive: 1 }

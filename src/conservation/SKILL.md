@@ -2,11 +2,11 @@
 name: conservation
 description: "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
 atomPath: conservation
-coordinate: conservation · 2/share · 0bcabad1
-contentUuid: "d1508860-8b8e-5fee-bdc9-15f5385c7e16"
-diamondUuid: "c387f89d-977a-895d-9339-a272a5b6ccf2"
-uuid: "0bcabad1-b4fd-8015-bfe7-acb9dd492acc"
-horo: 2
+coordinate: "conservation · 1/base · c28de118"
+contentUuid: "e717a855-b591-596d-accc-ad8085d8458e"
+diamondUuid: "a0ac2be9-a959-84df-89b9-c3378b778884"
+uuid: "c28de118-f211-8cec-b97c-26e293a62c4d"
+horo: 1
 bonds:
   in:
     - accounting
@@ -23,6 +23,7 @@ bonds:
     - entropy
     - entry
     - equity
+    - fold
     - gate
     - heart
     - hooks
@@ -33,6 +34,7 @@ bonds:
     - quantum
     - readme
     - reconcile
+    - reconciliation
     - skills
     - soil
     - sustainability
@@ -54,6 +56,7 @@ bonds:
     - entropy
     - entry
     - equity
+    - fold
     - gate
     - heart
     - hooks
@@ -64,6 +67,7 @@ bonds:
     - quantum
     - readme
     - reconcile
+    - reconciliation
     - skills
     - soil
     - sustainability
@@ -72,14 +76,13 @@ bonds:
     - vein
 typography:
   partition: conservation
-  bondDegree: 93
+  bondDegree: 99
   neighbors: []
 standards:
   - "Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit"
   - First Law of Thermodynamics — energy is conserved in an isolated system
   - "Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity"
   - "UBL-2.1"
-  - "computed, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -113,6 +116,7 @@ neighbors:
     - entropy
     - entry
     - equity
+    - fold
     - gate
     - heart
     - hooks
@@ -123,6 +127,7 @@ neighbors:
     - quantum
     - readme
     - reconcile
+    - reconciliation
     - skills
     - soil
     - sustainability
@@ -144,6 +149,7 @@ neighbors:
     - entropy
     - entry
     - equity
+    - fold
     - gate
     - heart
     - hooks
@@ -154,6 +160,7 @@ neighbors:
     - quantum
     - readme
     - reconcile
+    - reconciliation
     - skills
     - soil
     - sustainability
@@ -161,22 +168,22 @@ neighbors:
     - uuid
     - vein
 signatures:
-  computationUuid: "b66fb295-4492-87fc-a10d-0e384cfa9921"
+  computationUuid: "98ee6c7d-42db-8f52-be4b-e583b36ef9f8"
   stages:
     - stage: path
       stageUuid: "4da50aaf-bca0-808d-a7b5-181ad11c2a01"
     - stage: trinity
       stageUuid: "feef67a5-6f21-8917-b026-f482db01fcd2"
     - stage: boundary
-      stageUuid: "a0c16b9b-c634-8c31-bf81-0bc1def3e664"
+      stageUuid: "ec7b43e7-4ca1-84a2-9646-6a12b380855d"
     - stage: links
       stageUuid: "a40f802a-4d15-872b-ab9e-685b84c57294"
     - stage: horo
-      stageUuid: "ac990025-b698-8779-95c5-5f24bdfb94a4"
+      stageUuid: "8c9f3c05-0739-817f-adb0-4205efee6925"
     - stage: seal
-      stageUuid: "6710b237-9f9e-8113-b889-8cc642269d4f"
+      stageUuid: "d44e2523-c79e-8d62-aac8-8d1127c3641c"
     - stage: uuid
-      stageUuid: "8a253f80-61be-8880-90ca-fc667693a589"
+      stageUuid: "8be68cc8-894e-8216-b5b7-cf8ca889fa83"
 version: 2
 ---
 # conservation — nothing is lost, only transformed (the root of double-entry)

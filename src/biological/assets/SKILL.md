@@ -1,12 +1,12 @@
 ---
 name: assets
 description: "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection."
-atomPath: biological/assets
-coordinate: biological/assets · 4/weave · c44886d9
-contentUuid: "684c62f6-90a1-5d6a-b12d-f2ce3a8d2d24"
-diamondUuid: "2ad2703c-fce8-87d9-93d6-84e2b40e0d95"
-uuid: "c44886d9-3ea3-8f13-8f74-a56bad0f080f"
-horo: 4
+atomPath: "biological/assets"
+coordinate: "biological/assets · 2/share · d3f903d3"
+contentUuid: "0df03b61-204e-5bd8-afba-529e56b4382e"
+diamondUuid: "377c0852-ca15-84c9-89a2-6826b45189c9"
+uuid: "d3f903d3-ce3e-8bf5-aa6f-d9adbbe2fc63"
+horo: 2
 bonds:
   in:
     - access
@@ -82,30 +82,28 @@ typography:
   bondDegree: 120
   neighbors: []
 standards:
-  - "EU-2015/847"
-  - "EU-2015/849"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-Intrastat-Reg-2019/2152"
   - "IAS-41"
   - "IFRS IAS-41 §10 recognition-criteria"
+  - "IFRS IAS-41 §10 recognition-criteria`"
   - "IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell"
+  - "IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell`"
   - "IFRS IAS-41 §13 biological-transformation"
+  - "IFRS IAS-41 §13 biological-transformation`"
   - "IFRS IAS-41 §26 gains-losses-recognised-in-pnl"
+  - "IFRS IAS-41 §26 gains-losses-recognised-in-pnl`"
   - "IFRS IAS-41 §30 bearer-plants-now-IAS-16-since-2016-amendment"
+  - "IFRS IAS-41 §30 bearer-plants-now-IAS-16-since-2016-amendment`"
   - "IFRS IAS-41 §40 disclosure-by-class"
+  - "IFRS IAS-41 §40 disclosure-by-class`"
   - "IFRS IFRS-13 fair-value-input-hierarchy"
+  - "IFRS IFRS-13 fair-value-input-hierarchy`"
   - "IFRS-13"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-biological-assets"
-  - "ISO-4217"
   - "ISO-4217:2015 currency-codes"
-  - "ISO-8601-1"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls TOM-AGRI-01"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -190,7 +188,7 @@ neighbors:
     - rootstock
     - soil
 signatures:
-  computationUuid: "7eb81eb3-8837-835c-90da-48502be58ccb"
+  computationUuid: "499301f4-5a65-8e7d-a01d-6d2e37f0f271"
   stages:
     - stage: path
       stageUuid: "78a30e64-5ab4-848b-8d59-1078f20f0656"
@@ -201,11 +199,11 @@ signatures:
     - stage: links
       stageUuid: "c5ad9bd6-2f78-8953-b0ec-4f2dd0fbb856"
     - stage: horo
-      stageUuid: "81f903bb-6e36-82d4-82fa-ffe388c5b837"
+      stageUuid: "c9c75a00-3c7c-88dc-a8f4-a1dbf6d47b7d"
     - stage: seal
-      stageUuid: "d4a7efab-2876-8dcc-8edc-862a227a0540"
+      stageUuid: "3db92f29-073f-82ee-9982-e9e81fa80aad"
     - stage: uuid
-      stageUuid: "545f8812-d7c5-8a3f-b3c1-1ca0c85393b0"
+      stageUuid: "f9afbaa2-b2b3-8149-b52e-42711befc4b7"
 version: 2
 ---
 # biological-assets

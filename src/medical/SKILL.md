@@ -2,11 +2,11 @@
 name: medical
 description: "Use when reasoning about medical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: medical
-coordinate: medical · 1/base · 1c3c8fb6
-contentUuid: "679e6176-5292-5f9a-93e7-30056d75c4a3"
-diamondUuid: "4ce98557-68f3-8f9d-b44c-c332a71d5ad2"
-uuid: "1c3c8fb6-dac5-8fc5-84bc-33edcbefd9e5"
-horo: 1
+coordinate: "medical · 5/round · 3db72d38"
+contentUuid: "071f8965-4799-521b-a3aa-04822cda3ac9"
+diamondUuid: "3dba6f8a-3353-81f2-a280-109218c0b4e8"
+uuid: "3db72d38-a56c-8480-b198-6d3e79360de9"
+horo: 5
 bonds:
   in:
     - allergies
@@ -30,6 +30,7 @@ bonds:
     - estimator
     - evidence
     - factor
+    - folder
     - guideline
     - hospital
     - imaging
@@ -89,6 +90,7 @@ bonds:
     - estimator
     - evidence
     - factor
+    - folder
     - guideline
     - hospital
     - imaging
@@ -128,10 +130,9 @@ bonds:
     - web
 typography:
   partition: medical
-  bondDegree: 244
+  bondDegree: 332
   neighbors: []
 standards:
-  - "hub re-exports delegate to medical/device; never hand-asserted modalities"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 neighbors:
@@ -202,6 +203,7 @@ neighbors:
     - estimator
     - evidence
     - factor
+    - folder
     - guideline
     - hospital
     - imaging
@@ -261,6 +263,7 @@ neighbors:
     - estimator
     - evidence
     - factor
+    - folder
     - guideline
     - hospital
     - imaging
@@ -299,7 +302,7 @@ neighbors:
     - type
     - web
 signatures:
-  computationUuid: "e1f90025-9031-8fcb-ae85-68771bfddae5"
+  computationUuid: "f4563b37-bcd4-86ac-b120-75c63fb1ce3f"
   stages:
     - stage: path
       stageUuid: "e53ae029-efdc-825a-979a-e584d15d4d7e"
@@ -310,11 +313,11 @@ signatures:
     - stage: links
       stageUuid: "8a9ed1d8-96ed-83e0-91f9-cbeb75214f0e"
     - stage: horo
-      stageUuid: "c50bf44d-0099-894f-bfa9-3d4c7ddc4a31"
+      stageUuid: "c50198e6-5f25-8a56-8917-a8cf94162083"
     - stage: seal
       stageUuid: "5f3233cb-be83-804b-8790-85d735903fba"
     - stage: uuid
-      stageUuid: "5c752f11-e0ce-8136-9d58-6f8c00e46fff"
+      stageUuid: "27dd92d7-d864-8220-826f-48536679382c"
 version: 2
 ---
 # medical

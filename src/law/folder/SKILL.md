@@ -1,106 +1,133 @@
 ---
 name: folder
 description: "Use when reasoning about folder — The user's standing command, made a gate: **every atom is ONE generic lowercase word, and a code folder holds only its trinity** — (the word), (the matter), (the proof) — plus the"
-atomPath: law/folder
-coordinate: law/folder · 5/round · e32186ab
-contentUuid: "26200c13-483f-5c3a-b688-0191ec8ef8a2"
-diamondUuid: "40272e30-fea3-80a5-bfc8-f84bc320dd28"
-uuid: "e32186ab-b2c9-80cd-90cc-d1d40dc613e1"
-horo: 5
+atomPath: "law/folder"
+coordinate: "law/folder · 4/weave · 2f1d0189"
+contentUuid: "412f12ed-2621-5c77-ad1f-bc6a1f1eb208"
+diamondUuid: "b7dc867b-eb8a-83a6-8148-cffea3883843"
+uuid: "2f1d0189-1013-818e-9d6f-00719c69a024"
+horo: 4
 bonds:
   in:
+    - body
     - collapse
+    - computer
     - confirm
     - convention
     - cost
+    - diamond
     - law
+    - medical
     - merge
     - path
     - pivot
     - purity
     - quaternary
+    - rules
     - seal
     - standards
     - test
   out:
+    - body
     - collapse
+    - computer
     - confirm
     - convention
     - cost
+    - diamond
     - law
+    - medical
     - merge
     - path
     - pivot
     - purity
     - quaternary
+    - rules
     - seal
     - standards
     - test
 typography:
   partition: law
-  bondDegree: 40
-  neighbors: []
+  bondDegree: 56
+  neighbors:
+    - diamond
 standards:
   - "ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability"
-  - the law is computed from the live tree; the ratchet decision is a pure fn (test.ts)
+  - "ISO/IEC 25010:2023 §5.1 functional-completeness §5.5 testability`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
+    - body
     - collapse
+    - computer
     - confirm
     - convention
     - cost
+    - diamond
     - law
+    - medical
     - merge
     - quaternary
+    - rules
     - seal
     - standards
     - test
   matrix:
+    - body
     - collapse
+    - computer
     - confirm
     - convention
     - cost
+    - diamond
     - law
+    - medical
     - merge
     - path
     - pivot
     - purity
     - quaternary
+    - rules
     - seal
     - standards
     - test
   backlinks:
+    - body
     - collapse
+    - computer
     - confirm
     - convention
     - cost
+    - diamond
     - law
+    - medical
     - merge
     - path
     - pivot
     - purity
     - quaternary
+    - rules
     - seal
     - standards
     - test
 signatures:
-  computationUuid: "fd62ae91-66cd-8eba-b256-9efd5f03eaea"
+  computationUuid: "60b3012c-8db6-8174-846f-514d760fa1da"
   stages:
     - stage: path
       stageUuid: "f28108c6-1ce0-8589-b842-ae6753d414dd"
     - stage: trinity
       stageUuid: "0c625db2-736f-89c5-885d-5a3968c1c49e"
     - stage: boundary
-      stageUuid: "84e09ad3-9c63-8789-b509-f04dea170b46"
+      stageUuid: "2aeacf60-9b30-8363-a5c6-cfd448582454"
     - stage: links
-      stageUuid: "b8ab8700-0720-82b5-a71e-d47a20f3b923"
+      stageUuid: "21cb0924-9547-88b6-b583-8576da08ddb3"
     - stage: horo
-      stageUuid: "6a11f36e-16a6-80a6-8260-6d4300024a4b"
+      stageUuid: "fe4593ab-8545-87a7-a6df-61e18f456b25"
     - stage: seal
-      stageUuid: "e4ccd024-b171-8858-8cbe-48f017a6fdbf"
+      stageUuid: "153e3840-0d88-89c5-8878-a67dbb4d19fd"
     - stage: uuid
-      stageUuid: "c3ab6077-2d10-83c4-b7a0-cebb46380ac8"
+      stageUuid: "79ba673c-991d-8723-829d-d989039b024d"
 version: 2
 ---
 # folder — the folder-shape law

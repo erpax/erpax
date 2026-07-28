@@ -2,11 +2,11 @@
 name: cost
 description: "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0."
 atomPath: cost
-coordinate: cost · 1/base · c862eb2d
-contentUuid: "a9e8aca3-3331-58b2-8be4-71eb9df1350b"
-diamondUuid: "1e8631f6-a470-8179-a4ca-f80e7d515ecb"
-uuid: "c862eb2d-089f-8314-ae9b-43e2a51bc4c8"
-horo: 1
+coordinate: "cost · 2/share · fe09eac7"
+contentUuid: "8041cefc-5552-55d2-b2f8-d91d561ac867"
+diamondUuid: "156cc8b6-04e7-8c4e-bddd-04f4dbd1852b"
+uuid: "fe09eac7-0e88-89b4-9214-8fca12711b47"
+horo: 2
 bonds:
   in:
     - accounting
@@ -97,6 +97,7 @@ bonds:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -122,6 +123,7 @@ bonds:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
   out:
     - accounting
@@ -212,6 +214,7 @@ bonds:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -237,31 +240,31 @@ bonds:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
 typography:
   partition: cost
-  bondDegree: 440
+  bondDegree: 449
   neighbors:
     - analytics
-    - "analytics/max-tamper-cost"
     - aura
-    - diamond
-    - hallucination
-    - purity
+    - cloudflare
 standards:
   - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
   - "CRAQ — Terrace & Freedman, USENIX ATC 2009"
-  - Conservation Law 62 (coverage) — manual bypass ⇒ ∞ forge path
-  - "Conservation Law 62 (coverage) — the all-directions cascade"
   - "DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)"
   - "DeepSeek-Prover-V2 — recursive, kernel-checked invariants"
   - "ISO-3166-1"
   - "ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)"
+  - "ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)`"
   - "NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2"
+  - "NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2`"
   - "NIST-SP-800-63"
+  - RFC 9562 §5.8 (uuidv8) · §4.1 (variant)
   - RFC 9562 §8 — UUID security considerations
-  - "RFC-9562"
+  - "RFC 9562 §8 — UUID security considerations`"
   - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -282,7 +285,6 @@ neighbors:
     - holographic
     - law
     - matrix
-    - maxtampercost
     - mcp
     - merge
     - peace
@@ -293,6 +295,7 @@ neighbors:
     - self
     - society
     - tamper
+    - wave
   matrix:
     - accounting
     - addressed
@@ -382,6 +385,7 @@ neighbors:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -407,6 +411,7 @@ neighbors:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
   backlinks:
     - accounting
@@ -497,6 +502,7 @@ neighbors:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -522,9 +528,10 @@ neighbors:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
 signatures:
-  computationUuid: "c734bf5a-765b-880e-a554-031576d1ffad"
+  computationUuid: "7b612144-2078-8a71-8c63-d0add8122317"
   stages:
     - stage: path
       stageUuid: "9fa475f3-9812-8558-842d-9484e1e18cbf"
@@ -533,13 +540,13 @@ signatures:
     - stage: boundary
       stageUuid: "6db3b09c-fa85-8bda-8fd5-fe11c0289b54"
     - stage: links
-      stageUuid: "042e156f-8c46-87dd-8549-56c83bfcf52b"
+      stageUuid: "80d796b0-c126-8d82-8364-68b10131c80e"
     - stage: horo
-      stageUuid: "caa854bd-9bfa-8475-99b4-596cf8dc6bfd"
+      stageUuid: "e25bf7a5-7e59-830e-8e63-5dff9e12fbc0"
     - stage: seal
-      stageUuid: "217b9c6e-da82-8e38-9c86-e7bb0a3aa0e4"
+      stageUuid: "341ef0da-5cc1-887c-94d7-1dfb1c5b415d"
     - stage: uuid
-      stageUuid: "1ab8a216-07be-83bd-be0c-6becbc082b9c"
+      stageUuid: "a2877a4a-4121-80a1-9ac3-f59f6b7b372c"
 version: 2
 ---
 # cost — one efficiency law for every society cost (vs productivity + creativity)

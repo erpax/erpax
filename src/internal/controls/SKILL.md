@@ -1,12 +1,12 @@
 ---
 name: controls
 description: "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register."
-atomPath: internal/controls
-coordinate: internal/controls · 2/share · 7a89e19c
-contentUuid: "bd59c609-6abf-58b4-880d-785f8cfefead"
-diamondUuid: "973ec5d7-0608-896b-af49-d280c7c58514"
-uuid: "7a89e19c-e7dc-85d4-a58f-7cf8e427beb6"
-horo: 2
+atomPath: "internal/controls"
+coordinate: "internal/controls · 8/crest · d0ef32ff"
+contentUuid: "a25420a8-06fc-5120-a9f1-8f863361d04f"
+diamondUuid: "18963871-caed-89ee-995b-38b083c5e6f9"
+uuid: "d0ef32ff-78ca-8dad-ade6-9072529ef519"
+horo: 8
 bonds:
   in:
     - law
@@ -23,28 +23,11 @@ typography:
 standards:
   - "COSO-2013"
   - "COSO-2013 internal-control-integrated-framework"
-  - "COSO-ERM-2017"
-  - "EN-16931"
-  - "EU-2017/1132"
-  - "EU-2017/828"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
-  - "IAS-1"
-  - "IFRS-9"
-  - "ILO-C105"
   - "ISA-530"
-  - "ISO-19011"
-  - "ISO/IEC-29119"
+  - "ISO/IEC-27001:2022`"
   - "PCAOB AS 2201 ICFR-audit"
   - "PCAOB-AS-2201"
-  - SOX
   - "SOX §404 internal-controls"
-  - "US-GAAP"
-  - "W3C-PROV-O"
 bindings: []
 neighbors:
   wikilink:
@@ -59,7 +42,7 @@ neighbors:
     - privilege
     - tests
 signatures:
-  computationUuid: "232110fb-fe2a-8d0d-8106-b0c15aa2f007"
+  computationUuid: "9574ce55-4e24-84d9-9378-59a8f8a230a1"
   stages:
     - stage: path
       stageUuid: "6aa7ba77-f04d-85a8-b56d-e8bd815eab58"
@@ -70,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "b248a285-72cb-8729-9890-012ef923137f"
     - stage: horo
-      stageUuid: "785959a4-a3bb-8b36-b78c-3d9e8813d3db"
+      stageUuid: "2a6a269f-42d5-8581-8d0a-67b72af4ee72"
     - stage: seal
       stageUuid: "107b2037-3742-8f77-85b7-e292ef48b7ca"
     - stage: uuid
-      stageUuid: "bcb539cb-5a51-8b0d-aaf9-3959b4d7b6a9"
+      stageUuid: "b5c875d1-03e8-82d0-8a55-3d3b47ca0699"
 version: 2
 ---
 # internal-controls

@@ -1,12 +1,12 @@
 ---
 name: models
 description: "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone."
-atomPath: ai/models
-coordinate: ai/models · 4/weave · 50578fd2
-contentUuid: "cb630b00-a155-5d7d-8b9d-7f2d8869ac38"
-diamondUuid: "7490bc3a-393a-8749-87c7-895290204770"
-uuid: "50578fd2-6188-8a15-9b43-250b8d32989d"
-horo: 4
+atomPath: "ai/models"
+coordinate: "ai/models · 7/descent · 6b507ae3"
+contentUuid: "7b2af127-f0b8-5cf3-88d3-eaa5a8dbab84"
+diamondUuid: "17570577-6aa8-8086-a872-c05be0fcd616"
+uuid: "6b507ae3-9f9b-8eb8-a017-f6355492c2e8"
+horo: 7
 bonds:
   in:
     - access
@@ -40,10 +40,11 @@ standards:
   - "EU-AI-Act"
   - "EU-CSDDD-2024/1760"
   - "GDPR data-residency (`euHostable` — EU PoPs for EU tenants)"
-  - "ISO-19011:2018 audit-trail model-catalogue-changes"
   - "RFC-4122"
   - "RFC-4122 §4.3 uuid (content-addressed model identity)"
+  - "RFC-4122 §4.3 uuid (content-addressed model identity)`"
   - "SOX §404 internal-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -77,7 +78,7 @@ neighbors:
     - standard
     - suggestions
 signatures:
-  computationUuid: "5e4e160a-f2d9-8995-baea-64b155992bc6"
+  computationUuid: "540b071f-01d7-845d-8c36-5c5aff2855de"
   stages:
     - stage: path
       stageUuid: "e78584f2-055b-8136-92e8-38ff817ccfff"
@@ -88,11 +89,11 @@ signatures:
     - stage: links
       stageUuid: "211843b7-f577-8a87-8c0f-63187698184e"
     - stage: horo
-      stageUuid: "5be06f00-8b8c-8a67-9f13-a0427420a0ee"
+      stageUuid: "dbb20fbd-f0db-8247-b113-a7c8f0640bf9"
     - stage: seal
-      stageUuid: "53f68ebf-d345-83ca-9396-4f45c406b203"
+      stageUuid: "fe7a8370-28bb-8d23-9e5b-df34a5b131b6"
     - stage: uuid
-      stageUuid: "6108ec96-d55d-8c50-8692-2d9856c67d94"
+      stageUuid: "64daf0e2-6810-821e-8299-2175776e58d5"
 version: 2
 ---
 # ai-models

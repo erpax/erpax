@@ -1,12 +1,12 @@
 ---
 name: "38"
 description: "Use when implementing or referencing NIST SP 800-38 — Block Cipher Modes of Operation."
-atomPath: nist/sp/800/38
-coordinate: nist/sp/800/38 · 1/base · 5d5f341c
-contentUuid: "dcd01d99-d4fa-5da5-a4e9-1a988ef73701"
-diamondUuid: "73061503-af9c-8f67-a22e-68bf7db42e0d"
-uuid: "5d5f341c-08e2-8899-8092-9180dc107ca8"
-horo: 1
+atomPath: "nist/sp/800/38"
+coordinate: "nist/sp/800/38 · 2/share · 847e705c"
+contentUuid: "f1e1f67b-3558-5dbc-a914-1145f33205c3"
+diamondUuid: "93bf27a3-69bf-802f-8582-2f8f16161b21"
+uuid: "847e705c-89b8-8357-85b5-ea5897eb2d7b"
+horo: 2
 bonds:
   in:
     - secret
@@ -18,8 +18,10 @@ typography:
   neighbors: []
 standards:
   - "NIST SP-800-38D aes-gcm authenticated-encryption"
+  - "NIST SP-800-38D aes-gcm authenticated-encryption`"
   - "NIST-FIPS-180-4"
   - "NIST-SP-800-38D"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
@@ -28,7 +30,7 @@ neighbors:
   backlinks:
     - secret
 signatures:
-  computationUuid: "10658ad1-ece3-82a8-9b47-da11d4783448"
+  computationUuid: "8b19fb3e-0714-8061-b899-63e4a8ab5631"
   stages:
     - stage: path
       stageUuid: "7ac18005-6b7a-85ff-9617-01695fbfe2e6"
@@ -39,11 +41,11 @@ signatures:
     - stage: links
       stageUuid: "4c502b00-587e-8c72-89f4-7b5d7c82f434"
     - stage: horo
-      stageUuid: "7da46728-d2f3-8e6b-841f-83166f2ecc36"
+      stageUuid: "614af359-5149-8893-a89a-05d4d6eecede"
     - stage: seal
       stageUuid: "0dcfec0f-422a-8f99-82f8-a7f6ab558e33"
     - stage: uuid
-      stageUuid: "e060e3dc-4f77-8c69-a4f1-753fd87a6c8f"
+      stageUuid: "8fa324d0-d182-89ac-9f76-ad69c281e7f6"
 version: 2
 ---
 # NIST SP 800-38 — Block Cipher Modes of Operation

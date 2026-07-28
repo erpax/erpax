@@ -1,12 +1,12 @@
 ---
 name: signatures
 description: "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection."
-atomPath: customers/contracts/contract/signatures
-coordinate: customers/contracts/contract/signatures · 2/share · c370de75
-contentUuid: "1a702011-33f2-52b3-a432-1e6dfbbdd889"
-diamondUuid: "93cfbad7-a0a6-85b9-8146-e83a4474349a"
-uuid: "c370de75-cd3c-82ed-9083-126ea94f20aa"
-horo: 2
+atomPath: "customers/contracts/contract/signatures"
+coordinate: "customers/contracts/contract/signatures · 7/descent · 1df1ce40"
+contentUuid: "8ad298bc-37a5-5ca0-83d5-a4ef94727ec5"
+diamondUuid: "2d604db5-ae97-8b87-92ab-3054830b980d"
+uuid: "1df1ce40-a88b-8d87-884d-e4aaaa96cf05"
+horo: 7
 bonds:
   in:
     - contract
@@ -36,16 +36,20 @@ standards:
   - "EU-910/2014"
   - "GDPR Art.6(1)(b) lawful-basis-contract"
   - "IFRS IFRS-15 §10 contract-with-customer"
+  - "IFRS IFRS-15 §10 contract-with-customer`"
   - "IFRS IFRS-15 §23 contract-identification"
+  - "IFRS IFRS-15 §23 contract-identification`"
   - "IFRS-15"
-  - "ISO-19011:2018 audit-trail e-signature-evidence"
   - "ISO-8601-1:2019 date-time signature-timestamp"
+  - "ISO-8601-1:2019 date-time signature-timestamp`"
   - SOX
   - "SOX §302 management-certification audit-trail"
+  - "SOX §302 management-certification audit-trail`"
   - "US-GAAP"
   - "US-GAAP ASC-606-10-25-1 contract-existence"
   - eIDAS
   - "eIDAS Regulation (EU) 2014/910 electronic-signature"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -71,7 +75,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "a95a924f-d719-8ccc-a515-33897e357863"
+  computationUuid: "bc4af3dc-8455-8064-b427-4311c43c0c8f"
   stages:
     - stage: path
       stageUuid: "00388273-3891-8d95-957c-5a9c6ad6eeef"
@@ -82,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "915578ba-ae34-88a7-ac6d-44995cc4e3e9"
     - stage: horo
-      stageUuid: "f2e2a4fe-747f-88eb-8637-9e7b70a7bb93"
+      stageUuid: "7bf85643-3e96-8aee-b236-357404993d38"
     - stage: seal
       stageUuid: "573ccec1-dc40-85e4-94b4-2f077c905a57"
     - stage: uuid
-      stageUuid: "bf12181b-fcdd-84e7-8f93-9cb9dfd93b23"
+      stageUuid: "3bfeb3fd-71c0-85bb-8767-ae5d9ae9eff7"
 version: 2
 ---
 # contract-signatures

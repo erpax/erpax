@@ -1,12 +1,12 @@
 ---
 name: orders
 description: "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000."
-atomPath: maintenance/work/orders
-coordinate: maintenance/work/orders · 2/share · a42fa201
-contentUuid: "b870ddb8-5284-578f-8c8f-cc3720f1cd04"
-diamondUuid: "bc8c71e4-8cbf-8850-be71-7e1948efd4f1"
-uuid: "a42fa201-77fb-8959-bcde-632c63cc03e0"
-horo: 2
+atomPath: "maintenance/work/orders"
+coordinate: "maintenance/work/orders · 1/base · 5dc57e06"
+contentUuid: "48ed8817-4ee2-5a8d-8ea7-e69773fb30f3"
+diamondUuid: "50c1eeab-e15c-87c8-a17a-99d7e81b595a"
+uuid: "5dc57e06-a9dc-803b-bf93-8c1b91a56530"
+horo: 1
 bonds:
   in:
     - accounting
@@ -55,22 +55,25 @@ typography:
   neighbors: []
 standards:
   - "EN-13306:2017 maintenance-terminology"
-  - "EU-2014/55"
-  - "EU-537/2014"
-  - "EU-910/2014"
+  - "EN-13306:2017 maintenance-terminology`"
   - "IFRS IAS-16 §12 §13 capitalisable-vs-expense routine-maintenance"
   - "IFRS IAS-2 §10 cost-of-purchase materials-issued"
   - "ILO-C100"
   - "ISO-14224:2016 reliability-and-maintenance-data"
-  - "ISO-19011:2018 audit-trail work-order-evidence"
+  - "ISO-14224:2016 reliability-and-maintenance-data`"
   - "ISO-41001"
   - "ISO-41001:2018 §8.1 facility-management operational-control"
+  - "ISO-41001:2018 §8.1 facility-management operational-control`"
   - "ISO-55000"
   - "ISO-55000:2014 asset-management work-management"
+  - "ISO-55000:2014 asset-management work-management`"
   - "ISO-55001:2014 asset-management management-systems"
+  - "ISO-55001:2014 asset-management management-systems`"
   - "ISO-8601-1:2019 date-time scheduled-actual"
+  - "ISO-8601-1:2019 date-time scheduled-actual`"
   - "SOX §404 internal-controls capex-vs-opex-classification"
   - "US-GAAP ASC-360 ppe-maintenance"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -123,7 +126,7 @@ neighbors:
     - utility
     - variances
 signatures:
-  computationUuid: "8e275220-b1fd-893b-ad01-6f9a3e84e43e"
+  computationUuid: "fd546e9a-e33a-8014-945f-f78163e44b69"
   stages:
     - stage: path
       stageUuid: "c6a956bb-34cd-84a7-b807-39badf6e89da"
@@ -134,11 +137,11 @@ signatures:
     - stage: links
       stageUuid: "afa49f3d-cc19-8e84-99cd-a1f133da0d11"
     - stage: horo
-      stageUuid: "6b1f4791-8ee0-83fa-b5eb-eec977f482f1"
+      stageUuid: "d28b4bda-1d9b-871f-8cc4-d0cdadcf6415"
     - stage: seal
       stageUuid: "fd8140a2-dc6f-82f2-ae3f-e9d01a693246"
     - stage: uuid
-      stageUuid: "20bc4b25-2f55-8153-a67d-77571cff2110"
+      stageUuid: "7ec66084-8300-8eec-a030-2bd7166b9d65"
 version: 2
 ---
 # maintenance-work-orders

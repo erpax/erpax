@@ -1,12 +1,12 @@
 ---
 name: movements
 description: "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption."
-atomPath: items/inventory/movements
-coordinate: items/inventory/movements · 1/base · 5ccc3079
-contentUuid: "8448fbf1-b217-5803-9624-be377b1ec39d"
-diamondUuid: "91ef041f-c177-8c92-b524-bdb8ad7a5357"
-uuid: "5ccc3079-0a39-8bd4-9a04-053790c1031d"
-horo: 1
+atomPath: "items/inventory/movements"
+coordinate: "items/inventory/movements · 5/round · 4c4e64f7"
+contentUuid: "643cde00-cc67-5994-81cb-262fa0e12dec"
+diamondUuid: "5f58fae3-6f82-86e6-aab7-a773531dc00f"
+uuid: "4c4e64f7-585b-87c2-81c7-62f2cb890f85"
+horo: 5
 bonds:
   in:
     - accounting
@@ -38,13 +38,15 @@ typography:
 standards:
   - "IFRS IAS-2 §10 §36 inventories cost-formulas"
   - "IFRS IAS-2 §25 cost-formulas"
-  - "ISO-19011:2018 audit-trail stock-ledger"
   - "ISO-3166-1:2020 country-codes via location"
+  - "ISO-3166-1:2020 country-codes via location`"
   - "ISO-8601-1:2019 date-time movement-at posted-at"
+  - "ISO-8601-1:2019 date-time movement-at posted-at`"
   - "SOX §404 internal-controls inventory-cycle-count"
   - "US-GAAP ASC-330 inventory cost-flow"
   - "US-GAAP ASC-330-10-30 inventory-valuation"
   - "US-GAAP ASC-606 cogs-recognition"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -77,7 +79,7 @@ neighbors:
     - orders
     - transaction
 signatures:
-  computationUuid: "1d12fafe-517e-8681-aa3c-93281ab1189c"
+  computationUuid: "024ab086-1953-85f2-ae16-b18750c57bca"
   stages:
     - stage: path
       stageUuid: "9d9b856b-a92d-8cb8-8238-a6c274078938"
@@ -88,11 +90,11 @@ signatures:
     - stage: links
       stageUuid: "d0b3c040-bb58-8c01-846b-10ef355df92b"
     - stage: horo
-      stageUuid: "11595294-f245-85ef-b111-cf05a3179dc9"
+      stageUuid: "7e98e18e-cb15-8a71-9520-1c52b8359383"
     - stage: seal
       stageUuid: "af6eec69-3941-8be1-af17-cc9607733e93"
     - stage: uuid
-      stageUuid: "59ffb43c-f114-82cf-89c1-30fc4dd0cc50"
+      stageUuid: "e68037f4-1bba-89c9-9490-498d4149a906"
 version: 2
 ---
 # inventory-movements

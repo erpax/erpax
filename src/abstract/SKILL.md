@@ -2,10 +2,10 @@
 name: abstract
 description: Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.
 atomPath: abstract
-coordinate: abstract · 4/weave · c1591757
-contentUuid: "b0ba7062-a1a9-5b56-b9df-83f6616099ec"
-diamondUuid: "14997ad2-d426-804f-a73a-bdfe192956a5"
-uuid: "c1591757-baa5-8ee5-827f-d18aa544e50c"
+coordinate: "abstract · 4/weave · ba44d764"
+contentUuid: "fc313127-d76c-5be3-9ccb-de818a96fec0"
+diamondUuid: "f00f5156-b1c7-89aa-8110-4e1e404aefa1"
+uuid: "ba44d764-0e4c-8841-bef4-ceca1058952d"
 horo: 4
 bonds:
   in:
@@ -38,22 +38,22 @@ neighbors:
     - law
     - thing
 signatures:
-  computationUuid: "8b7e2282-d821-8dbb-b382-6197134ea621"
+  computationUuid: "61efc84c-4860-8077-bbf3-307afa51ccfb"
   stages:
     - stage: path
       stageUuid: "54f8a493-16c4-8dbd-af0a-0749f8978900"
     - stage: trinity
-      stageUuid: "5137c8ba-3f34-8ac7-9e10-77165117e1f4"
+      stageUuid: "40b0de15-872e-8fd7-8449-5d456158375e"
     - stage: boundary
-      stageUuid: "d4c4c015-ff42-82cc-8cc3-511e1f18248f"
+      stageUuid: "50813322-d756-8405-8e08-dd123cd77cd7"
     - stage: links
       stageUuid: "30884635-1086-82de-860f-615fa87706fe"
     - stage: horo
-      stageUuid: "3a4c12be-63b0-863f-8ef9-7de95420c3ca"
+      stageUuid: "cad59d6d-2427-83b6-ba1c-61aedd4a65c4"
     - stage: seal
-      stageUuid: "f19ce9f1-88c3-8abf-a1ea-2bcfac428e68"
+      stageUuid: "8bb30fd2-3efb-8bfa-a548-5e6c0cf5a975"
     - stage: uuid
-      stageUuid: "4e7057b3-86a3-8fec-adfe-4bc40ad5f973"
+      stageUuid: "e96a1673-ebae-8947-b0ec-495d0656a746"
 version: 2
 ---
 # abstract

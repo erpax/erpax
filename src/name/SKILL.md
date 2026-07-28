@@ -2,11 +2,11 @@
 name: name
 description: "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope)."
 atomPath: name
-coordinate: name · 1/base · b0539265
-contentUuid: "7cad0113-f63b-57be-a267-8fb18be5717a"
-diamondUuid: "8f595011-4b70-8902-bf7f-f4ec50457685"
-uuid: "b0539265-2a23-8405-8a32-5922e7c84ae4"
-horo: 1
+coordinate: "name · 2/share · bfcf9aba"
+contentUuid: "5a8f9873-a707-59b2-a839-3766ae84910f"
+diamondUuid: "caecde50-e45a-8a40-a4d3-548b20acb82f"
+uuid: "bfcf9aba-ff27-8789-9556-14496837ab5b"
+horo: 2
 bonds:
   in:
     - additional
@@ -52,7 +52,6 @@ bonds:
     - sufism
     - target
     - typography
-    - under
     - uuid
   out:
     - additional
@@ -98,14 +97,13 @@ bonds:
     - sufism
     - target
     - typography
-    - under
     - uuid
 typography:
   partition: name
-  bondDegree: 135
+  bondDegree: 132
   neighbors: []
 standards:
-  - "uuidOfName is total — defined for ANY name, so every name folds; the identity is computed"
+  - "EN-16931`"
 bindings: []
 neighbors:
   wikilink:
@@ -159,7 +157,6 @@ neighbors:
     - sufism
     - target
     - typography
-    - under
     - uuid
   backlinks:
     - additional
@@ -205,10 +202,9 @@ neighbors:
     - sufism
     - target
     - typography
-    - under
     - uuid
 signatures:
-  computationUuid: "6d41c5f0-ae26-83fc-90ff-15e8d5269659"
+  computationUuid: "ea28c921-aa4f-82ab-a6a2-95c6000d09fa"
   stages:
     - stage: path
       stageUuid: "dae99ed6-4f92-8101-b9e1-a3f5b37efae8"
@@ -219,11 +215,11 @@ signatures:
     - stage: links
       stageUuid: "a7c70dbb-673b-81b8-b407-07025001dc1e"
     - stage: horo
-      stageUuid: "aa975b1e-221e-833b-8a68-39530ecbb5d2"
+      stageUuid: "20766c6d-8b0e-80be-8138-0efaa3d99f9b"
     - stage: seal
-      stageUuid: "1fa32c66-bfe6-8666-bbe2-520a50d92a85"
+      stageUuid: "85abac57-56d6-8da1-b924-9b81580c76e4"
     - stage: uuid
-      stageUuid: "0ab6d4df-270a-8309-9d02-39db8c73c6e0"
+      stageUuid: "50ddf2ad-a4e9-83a3-9bd8-268aa0b22dce"
 version: 2
 ---
 # name

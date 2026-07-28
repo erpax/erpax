@@ -1,12 +1,12 @@
 ---
 name: change
 description: "Use when emitting an audit event after a Payload write — the afterChange hook builds a canonical AuditEntry, logs it to the streaming aggregator, and persists a durable, Merkle-chained row to the audit-events collection for tamper-evident SOX evidence."
-atomPath: audit/trail/after/change
-coordinate: audit/trail/after/change · 1/base · 5c8551a4
-contentUuid: "5af2f4de-d026-595c-bc28-dabf5dffa56b"
-diamondUuid: "ed0f3d9f-e48f-8e72-acd6-574041febe2b"
-uuid: "5c8551a4-fd31-8a8d-b911-a3175f3afbd7"
-horo: 1
+atomPath: "audit/trail/after/change"
+coordinate: "audit/trail/after/change · 7/descent · fd9cb5e4"
+contentUuid: "966c9d1b-61f4-5796-90c2-5326bdf46377"
+diamondUuid: "64df1522-7a53-829b-9872-21481fe92bde"
+uuid: "fd9cb5e4-ce7d-8e5f-84be-1782c7bffa9b"
+horo: 7
 bonds:
   in:
     - after
@@ -21,16 +21,18 @@ bonds:
     - law
 typography:
   partition: audit
-  bondDegree: 15
+  bondDegree: 18
   neighbors: []
 standards:
-  - "ISO-19011:2018 §6.4.6 audit-evidence-collection"
   - "NIST FIPS-180-4 sha-256"
+  - "NIST FIPS-180-4 sha-256`"
   - "NIST-FIPS-180-4"
   - "RFC-9562"
   - "SOC-2 CC4.1 monitoring-and-evaluation"
   - "SOX §404 internal-controls evidence-preservation"
   - "rfc-9562 uuid event-id"
+  - "rfc-9562 uuid event-id`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -48,7 +50,7 @@ neighbors:
     - changes
     - law
 signatures:
-  computationUuid: "3879f846-4ae7-8d13-9003-020b20c2d7d1"
+  computationUuid: "1de53b43-730f-8b2d-8525-9238880f45ef"
   stages:
     - stage: path
       stageUuid: "be6ac1fb-54a3-82cd-8b82-f3991779d2f4"
@@ -59,11 +61,11 @@ signatures:
     - stage: links
       stageUuid: "cac2ce41-769e-83ec-b339-e93ef9a9e1c5"
     - stage: horo
-      stageUuid: "b06f7816-d70d-85eb-b6ad-78151e05737d"
+      stageUuid: "200bab4d-6eb7-8313-afd4-c886bba71dca"
     - stage: seal
       stageUuid: "be6e5db3-52ed-8e1c-9240-8cc23b01210f"
     - stage: uuid
-      stageUuid: "e42a53eb-be95-8687-8441-f0ffe9ba8f76"
+      stageUuid: "7f64b511-0326-8940-b5d0-a73f5ea3009e"
 version: 2
 ---
 # audit/trail/after/change — the [[audit]] afterChange emitter

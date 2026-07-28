@@ -2,10 +2,10 @@
 name: acceptance
 description: "Use when reasoning about acceptance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: acceptance
-coordinate: acceptance · 2/share · c849d01a
-contentUuid: "c71ff1aa-6a7e-5997-b851-fb9572a86068"
-diamondUuid: "7387d1f6-8354-844f-a8e5-f7cad4783326"
-uuid: "c849d01a-0721-8147-97a7-0ce7cfeccd73"
+coordinate: "acceptance · 2/share · 3b75d6e8"
+contentUuid: "01041179-68a3-5f2a-ba08-2f3209fecae2"
+diamondUuid: "87d844af-876c-8203-a2a3-38b63169ec2a"
+uuid: "3b75d6e8-4fab-8e55-8ac3-0699553b5f3d"
 horo: 2
 bonds:
   in:
@@ -48,22 +48,22 @@ neighbors:
     - merge
     - sti
 signatures:
-  computationUuid: "906a5afc-250b-869a-8e1e-c1aa463470e7"
+  computationUuid: "ee541bb6-8945-8d33-9861-c06db28eb752"
   stages:
     - stage: path
       stageUuid: "0fad2b37-ee2d-86f2-bdcb-afe804b321ad"
     - stage: trinity
-      stageUuid: "e2de2424-cea4-8e14-97cf-205280f0d5fc"
+      stageUuid: "11c9bc82-bb40-83b9-90fa-054d1bfa04df"
     - stage: boundary
-      stageUuid: "e3fa2885-ae9a-8084-8fe5-fcff24231d7e"
+      stageUuid: "c3463465-c164-884d-8bde-2f1f7147fc22"
     - stage: links
       stageUuid: "da85eb3c-0401-8a88-ab71-28bcc51071f0"
     - stage: horo
-      stageUuid: "315f1729-500e-83c4-90cd-bddc6eefd8e9"
+      stageUuid: "c200da76-45be-8dee-89ae-5aa2489d5699"
     - stage: seal
-      stageUuid: "98298981-2001-869e-ab47-143eb2792cfc"
+      stageUuid: "8b095afc-dccd-8cc5-8b36-968e65c8712f"
     - stage: uuid
-      stageUuid: "1cf921df-9edf-8743-9831-0a5ac6b269c0"
+      stageUuid: "d53fd73f-f2cc-84f7-a88f-ac01bb58ce1f"
 version: 2
 ---
 # acceptance

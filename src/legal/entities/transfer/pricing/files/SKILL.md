@@ -1,12 +1,12 @@
 ---
 name: files
 description: "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register."
-atomPath: legal/entities/transfer/pricing/files
-coordinate: legal/entities/transfer/pricing/files · 4/weave · 3f477147
-contentUuid: "7931f50e-8159-5bf6-bfa1-5b45a46d1535"
-diamondUuid: "e5d5f337-9751-8a3b-8247-64b6d28df87c"
-uuid: "3f477147-e711-8574-854b-50f4cf294758"
-horo: 4
+atomPath: "legal/entities/transfer/pricing/files"
+coordinate: "legal/entities/transfer/pricing/files · 7/descent · a6c87b4d"
+contentUuid: "e7b6f6fe-dfd6-5c22-9231-e7a85c18e4ae"
+diamondUuid: "0977aaec-66fc-83ad-bd64-3230fb31d209"
+uuid: "a6c87b4d-15f2-8fe0-883f-13c77168f31f"
+horo: 7
 bonds:
   in:
     - accounting
@@ -29,12 +29,14 @@ typography:
 standards:
   - "EU 2016/881 administrative-cooperation-tax"
   - "EU DAC-4 country-by-country-reporting"
-  - "ISO-19011:2018 audit-trail tp-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "OECD BEPS Action 13 transfer-pricing-documentation"
   - OECD Pillar Two GloBE (15% global minimum tax)
   - "OECD TPG 2022 transfer-pricing-guidelines"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -58,7 +60,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "c0d1df2d-3295-84b2-a67e-5a72b3d2cebc"
+  computationUuid: "750bfeaf-5585-8a60-84c8-a10ef309e703"
   stages:
     - stage: path
       stageUuid: "56b105eb-b9db-83ca-86e1-6d6b4038f9bc"
@@ -69,11 +71,11 @@ signatures:
     - stage: links
       stageUuid: "6d42e2cb-64c3-8ce0-92f9-7a63cfba443b"
     - stage: horo
-      stageUuid: "5f978834-d9f9-8b9b-800e-43f5ac5269a3"
+      stageUuid: "5ac6bc6b-738f-83aa-a15e-1496f999c2d0"
     - stage: seal
       stageUuid: "7334f663-3215-8e0e-8982-e3a326d600e4"
     - stage: uuid
-      stageUuid: "e451d770-b41e-8f6a-8586-48b39439baa6"
+      stageUuid: "3e8c7c71-f720-8b03-91ec-0652832e8ece"
 version: 2
 ---
 # transfer-pricing-files

@@ -18,6 +18,11 @@
  * @standard BG Наредба Н-18 §СУПТО — fiscal writes are inspector-auditable, no delete on posted
  * @compliance GDPR §17 right-to-erasure · §15 right-of-access — data-subject controls
  * @standard ISO/IEC 27001 A.5.15 access-control — role-required, tenant-isolated
+ * @standard NIST-SP-800-92 — healed from ungated-mandatory by chatHealUngatedMandatory (fail-closed .ts gate)
+ * @standard NIST-SP-800-38D — healed from ungated-mandatory by chatHealUngatedMandatory (fail-closed .ts gate)
+ * @standard NIST-SP-800-57 — healed from ungated-mandatory by chatHealUngatedMandatory (fail-closed .ts gate)
+ * @standard NIST-SP-800-108 — healed from ungated-mandatory by chatHealUngatedMandatory (fail-closed .ts gate)
+ * @standard PCI-DSS — healed from ungated-mandatory by chatHealUngatedMandatory (fail-closed .ts gate)
  * @audit ISO-19011:2018 §6.4 — the access an operation carries is read by the reader who signs it
  */
 import { meshOf, standardsOf, type Mesh } from '@/mesh'

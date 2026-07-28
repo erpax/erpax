@@ -1,12 +1,12 @@
 ---
 name: storage
 description: "Use when reasoning about storage as a part of [[computer]] — vocabulary pivot to @/storage; nested not duplicated."
-atomPath: computer/storage
-coordinate: computer/storage · 1/base · 44bb568e
-contentUuid: "ccee0c72-0007-5fc5-8d28-233791746511"
-diamondUuid: "0d2ed8ba-0364-8292-94ba-00b07ec16d26"
-uuid: "44bb568e-842a-8bb9-be16-aff9098a7ea8"
-horo: 1
+atomPath: "computer/storage"
+coordinate: "computer/storage · 7/descent · b8a98bd0"
+contentUuid: "cb43c494-af59-5133-9239-6c30989a1f45"
+diamondUuid: "495fa82e-c315-87d6-a2f1-5ec791dededc"
+uuid: "b8a98bd0-9e42-8276-8568-67e2244081ad"
+horo: 7
 bonds:
   in:
     - bindings
@@ -61,7 +61,7 @@ neighbors:
     - sti
     - storage
 signatures:
-  computationUuid: "02dfe854-14de-8e42-8091-5ba21d299b86"
+  computationUuid: "feecb3e0-cd2b-8b7c-b1cb-21c0ac0581b0"
   stages:
     - stage: path
       stageUuid: "69dac02f-584d-8876-94c6-3b1c64db9319"
@@ -72,11 +72,11 @@ signatures:
     - stage: links
       stageUuid: "ab04aea3-212f-86c7-af86-eb57690629eb"
     - stage: horo
-      stageUuid: "b82dafcf-f44f-8482-8bfd-a97aef12a4e2"
+      stageUuid: "a4e382df-d63e-84e3-9555-b72e415d3416"
     - stage: seal
-      stageUuid: "ee17a7aa-e75a-8c0e-91e7-c851cbeb5cd7"
+      stageUuid: "5a82b980-73d2-8fca-abad-ca28f1c21c80"
     - stage: uuid
-      stageUuid: "389b1585-f4bd-818c-a86a-bcd821ee8d7f"
+      stageUuid: "50bdb036-0314-8edc-8d6c-bc45fba2e415"
 version: 2
 ---
 # computer/storage — persists bytes

@@ -2,11 +2,11 @@
 name: aura
 description: "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design."
 atomPath: aura
-coordinate: aura · 2/share · 3662c223
-contentUuid: "d5ec8c91-3438-5695-be06-28b05b28bdaa"
-diamondUuid: "9ab628af-35f8-8b50-be38-46c26ff690ba"
-uuid: "3662c223-4ebd-83e0-b37f-712e5aca7a33"
-horo: 2
+coordinate: "aura · 5/round · cc1db491"
+contentUuid: "c84d9f18-ac4d-5533-a851-a11e6c029071"
+diamondUuid: "7d4b6277-c6cd-8c4c-a5dd-35b1960b18e7"
+uuid: "cc1db491-1f4d-88bc-9909-6d2406aff552"
+horo: 5
 bonds:
   in:
     - accounting
@@ -214,10 +214,7 @@ typography:
   partition: aura
   bondDegree: 0
   neighbors: []
-standards:
-  - "derived from fs — the SAME walk as the link gate (walkSkills), so the two axes share one scan"
-  - derived from fs — the SAME walk as the link/coverage gates (walkSkills)
-  - "one resolver imported everywhere -- zero duplicated walk/norm/isRealDir"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -458,7 +455,7 @@ neighbors:
     - whole
     - zoroastrianism
 signatures:
-  computationUuid: "b19bc26a-40e0-88be-be58-841611933986"
+  computationUuid: "7f1a24a3-9dfd-86e0-a23c-09f68cb2a608"
   stages:
     - stage: path
       stageUuid: "733601aa-e8d6-818c-bf73-e74841172ee8"
@@ -469,11 +466,11 @@ signatures:
     - stage: links
       stageUuid: "407bcf1c-35d0-8e0e-b666-64e2393887a3"
     - stage: horo
-      stageUuid: "b71c39b8-1a65-8617-a1a9-fbf1c4790f86"
+      stageUuid: "448b9f0b-6df2-8204-a2dc-dfcddac926e6"
     - stage: seal
       stageUuid: "4e6e8aa6-604c-89a8-bbd3-fd0a5fdc5567"
     - stage: uuid
-      stageUuid: "f081acd9-40f9-898b-ac0c-3d503b09a75d"
+      stageUuid: "6ef0efc2-51d4-83ad-acc6-c49d757d37da"
 version: 2
 ---
 # aura

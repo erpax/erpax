@@ -295,8 +295,6 @@ export interface Config {
     'form-submissions': FormSubmission;
     redirects: Redirect;
     search: Search;
-    exports: Export;
-    imports: Import;
     'payload-mcp-api-keys': PayloadMcpApiKey;
     'payload-kv': PayloadKv;
     'payload-jobs': PayloadJob;
@@ -550,8 +548,6 @@ export interface Config {
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     search: SearchSelect<false> | SearchSelect<true>;
-    exports: ExportsSelect<false> | ExportsSelect<true>;
-    imports: ImportsSelect<false> | ImportsSelect<true>;
     'payload-mcp-api-keys': PayloadMcpApiKeysSelect<false> | PayloadMcpApiKeysSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-jobs': PayloadJobsSelect<false> | PayloadJobsSelect<true>;
@@ -679,8 +675,6 @@ export interface Config {
       'dunning-cycle': TaskDunningCycle;
       'bg-bnb-rates-sync': TaskBgBnbRatesSync;
       'sales-audit-file': TaskSalesAuditFile;
-      createCollectionExport: TaskCreateCollectionExport;
-      createCollectionImport: TaskCreateCollectionImport;
       schedulePublish: TaskSchedulePublish;
       inline: {
         input: unknown;
@@ -11920,7 +11914,7 @@ export interface PaymentRun {
   /**
    * pain.002 status reason (ISO 20022 ExternalPaymentTransactionStatus1Code).
    */
-  bankResponseStatus?: ('ACSC' | 'ACSP' | 'ACCP' | 'PDNG' | 'RJCT' | 'PART') | null;
+  bankResponseStatus?: ('ACSC' | 'ACSP' | 'ACCP' | 'ACWC' | 'RCVD' | 'PDNG' | 'RJCT' | 'PART') | null;
   /**
    * pain.002 reason code (e.g. AC01 incorrect account, AM04 insufficient funds).
    */
@@ -17865,7 +17859,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: adddae7c-bd28-84d9-bb76-00cd48cee61e
+ * — diamond-uuid: 9de81170-5412-8f90-82b8-f350a5094d2e
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
@@ -19690,123 +19684,6 @@ export interface Search {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "exports".
- */
-export interface Export {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  name?: string | null;
-  format: 'csv' | 'json';
-  limit?: number | null;
-  page?: number | null;
-  sort?: string | null;
-  sortOrder?: ('asc' | 'desc') | null;
-  locale?:
-    | (
-        | 'all'
-        | 'en'
-        | 'bg'
-        | 'cs'
-        | 'da'
-        | 'de'
-        | 'el'
-        | 'es'
-        | 'et'
-        | 'fi'
-        | 'fr'
-        | 'ga'
-        | 'hr'
-        | 'hu'
-        | 'is'
-        | 'it'
-        | 'ja'
-        | 'lt'
-        | 'lv'
-        | 'mt'
-        | 'nb'
-        | 'nl'
-        | 'pl'
-        | 'pt'
-        | 'ro'
-        | 'ru'
-        | 'sk'
-        | 'sl'
-        | 'sv'
-        | 'uk'
-        | 'ar'
-      )
-    | null;
-  drafts?: ('yes' | 'no') | null;
-  selectionToUse?: ('currentSelection' | 'currentFilters' | 'all') | null;
-  fields?: string[] | null;
-  collectionSlug: string;
-  where?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "imports".
- */
-export interface Import {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  collectionSlug: string;
-  importMode?: ('create' | 'update' | 'upsert') | null;
-  matchField?: string | null;
-  status?: ('pending' | 'completed' | 'partial' | 'failed') | null;
-  summary?: {
-    imported?: number | null;
-    updated?: number | null;
-    total?: number | null;
-    issues?: number | null;
-    issueDetails?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-  };
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-}
-/**
  * API keys control which collections, resources, tools, and prompts MCP clients can access
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19914,14 +19791,7 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug:
-          | 'inline'
-          | 'dunning-cycle'
-          | 'bg-bnb-rates-sync'
-          | 'sales-audit-file'
-          | 'createCollectionExport'
-          | 'createCollectionImport'
-          | 'schedulePublish';
+        taskSlug: 'inline' | 'dunning-cycle' | 'bg-bnb-rates-sync' | 'sales-audit-file' | 'schedulePublish';
         taskID: string;
         input?:
           | {
@@ -19954,17 +19824,7 @@ export interface PayloadJob {
         id?: string | null;
       }[]
     | null;
-  taskSlug?:
-    | (
-        | 'inline'
-        | 'dunning-cycle'
-        | 'bg-bnb-rates-sync'
-        | 'sales-audit-file'
-        | 'createCollectionExport'
-        | 'createCollectionImport'
-        | 'schedulePublish'
-      )
-    | null;
+  taskSlug?: ('inline' | 'dunning-cycle' | 'bg-bnb-rates-sync' | 'sales-audit-file' | 'schedulePublish') | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
@@ -28478,67 +28338,6 @@ export interface SearchSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "exports_select".
- */
-export interface ExportsSelect<T extends boolean = true> {
-  uuid?: T;
-  name?: T;
-  format?: T;
-  limit?: T;
-  page?: T;
-  sort?: T;
-  sortOrder?: T;
-  locale?: T;
-  drafts?: T;
-  selectionToUse?: T;
-  fields?: T;
-  collectionSlug?: T;
-  where?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "imports_select".
- */
-export interface ImportsSelect<T extends boolean = true> {
-  uuid?: T;
-  collectionSlug?: T;
-  importMode?: T;
-  matchField?: T;
-  status?: T;
-  summary?:
-    | T
-    | {
-        imported?: T;
-        updated?: T;
-        total?: T;
-        issues?: T;
-        issueDetails?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-mcp-api-keys_select".
  */
 export interface PayloadMcpApiKeysSelect<T extends boolean = true> {
@@ -28796,280 +28595,6 @@ export interface TaskBgBnbRatesSync {
  */
 export interface TaskSalesAuditFile {
   input?: unknown;
-  output?: unknown;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "TaskCreateCollectionExport".
- */
-export interface TaskCreateCollectionExport {
-  input: {
-    id: string;
-    name: string;
-    batchSize?: number | null;
-    collectionSlug:
-      | 'account-reconciliations'
-      | 'activities'
-      | 'ai-suggestions'
-      | 'api-audit-events'
-      | 'audit-committee-members'
-      | 'audit-committee-minutes'
-      | 'audit-committees'
-      | 'audit-events'
-      | 'audit-evidence'
-      | 'audit-findings'
-      | 'audit-reports'
-      | 'audit-samples'
-      | 'audit-submissions'
-      | 'bank-accounts'
-      | 'bank-reconciliations'
-      | 'bank-statements'
-      | 'bank-transactions'
-      | 'batches'
-      | 'beneficial-owners'
-      | 'bills-of-materials'
-      | 'biological-assets'
-      | 'board-actions'
-      | 'bookable-resources'
-      | 'bookings'
-      | 'budget-planning'
-      | 'business-combinations'
-      | 'carbon-emissions'
-      | 'carriers'
-      | 'cases'
-      | 'categories'
-      | 'chat'
-      | 'closing-entries'
-      | 'commitments-and-contingencies'
-      | 'compliance-deadlines'
-      | 'compliance-frameworks'
-      | 'compliance-gaps'
-      | 'compliance-notifications'
-      | 'compliance-requirements'
-      | 'connections'
-      | 'consent-records'
-      | 'consignment-arrangements'
-      | 'consignment-inventory'
-      | 'consignment-sales'
-      | 'consolidation-eliminations'
-      | 'consolidations'
-      | 'contracts'
-      | 'control-tests'
-      | 'cost-centers'
-      | 'cost-variances'
-      | 'credit-memos'
-      | 'csrd-disclosures'
-      | 'currency-rates'
-      | 'customer-segments'
-      | 'customers'
-      | 'customs-declarations'
-      | 'data-processing-activities'
-      | 'data-subject-requests'
-      | 'debt-schedule'
-      | 'deferred-tax-items'
-      | 'depreciation-schedules'
-      | 'disclosure-checklists'
-      | 'dunning-cycles'
-      | 'earnings-per-share'
-      | 'employees'
-      | 'entity-legal-structures'
-      | 'entity-types'
-      | 'evidence-attestations'
-      | 'expense-reports'
-      | 'fair-value-measurements'
-      | 'financial-statements'
-      | 'fiscal-calendars'
-      | 'fiscal-devices'
-      | 'fiscal-period-snapshots'
-      | 'fiscal-periods'
-      | 'fixed-assets'
-      | 'fx-transactions'
-      | 'gl-accounts'
-      | 'gl-posting-rules'
-      | 'gl-postings'
-      | 'goods-receipts'
-      | 'government-grants'
-      | 'held-for-sale-classifications'
-      | 'insurance-contracts'
-      | 'intercompany-transactions'
-      | 'internal-audit-function'
-      | 'internal-controls'
-      | 'internal-policies'
-      | 'inventory-movements'
-      | 'investment-properties'
-      | 'invoice-lines'
-      | 'invoices'
-      | 'items'
-      | 'job-positions'
-      | 'journal-entries'
-      | 'kyc-checks'
-      | 'leads'
-      | 'lease-modifications'
-      | 'lease-period-postings'
-      | 'leases'
-      | 'leave-requests'
-      | 'legal-entities'
-      | 'lot-variants'
-      | 'lot-work-phases'
-      | 'lots'
-      | 'maintenance-requests'
-      | 'maintenance-work-orders'
-      | 'management-assessment-icfr'
-      | 'management-certifications'
-      | 'mcp-tool-metadata'
-      | 'media'
-      | 'memories'
-      | 'messages'
-      | 'mineral-resource-assets'
-      | 'operation-runs'
-      | 'operations'
-      | 'operators'
-      | 'opportunities'
-      | 'pack-items'
-      | 'packages'
-      | 'packs'
-      | 'pages'
-      | 'payment-allocations'
-      | 'payment-methods'
-      | 'payment-runs'
-      | 'payments'
-      | 'payroll-runs'
-      | 'performance-obligations'
-      | 'performance-reviews'
-      | 'period-end-adjustments'
-      | 'period-locks'
-      | 'policy-acknowledgments'
-      | 'policy-versions'
-      | 'post-balance-sheet-events'
-      | 'post-close-analytics-reports'
-      | 'posts'
-      | 'prior-period-adjustments'
-      | 'production-receipts'
-      | 'project-milestones'
-      | 'project-tasks'
-      | 'projects'
-      | 'properties'
-      | 'provisions'
-      | 'purchase-orders'
-      | 'purchase-requisitions'
-      | 'quality-inspections'
-      | 'quotes'
-      | 'receipts'
-      | 'recruiting-pipeline'
-      | 'recurring-journals'
-      | 'refunds'
-      | 'regulatory-deferral-accounts'
-      | 'regulatory-reports'
-      | 'related-party-transactions'
-      | 'remediation-plans'
-      | 'reporting-mappings'
-      | 'reporting-standards'
-      | 'returns'
-      | 'risk-register'
-      | 'roles'
-      | 'rounding-adjustments'
-      | 'routings'
-      | 'sales'
-      | 'sales-commissions'
-      | 'sales-orders'
-      | 'sectors'
-      | 'segment-reporting'
-      | 'sepa-mandates'
-      | 'share-based-payments'
-      | 'shares'
-      | 'shipments'
-      | 'spaces'
-      | 'standards'
-      | 'statutory-field-mappings'
-      | 'statutory-report-templates'
-      | 'subscription-plans'
-      | 'subscriptions'
-      | 'taggings'
-      | 'tags'
-      | 'tax-calculations'
-      | 'tax-codes'
-      | 'tax-jurisdictions'
-      | 'tax-periods'
-      | 'tax-returns'
-      | 'taxing-jurisdictions'
-      | 'tenants'
-      | 'terminals'
-      | 'time-entries'
-      | 'tracking-events'
-      | 'transaction-failures'
-      | 'transfer-pricing-adjustments'
-      | 'transfer-pricing-files'
-      | 'translations'
-      | 'usage-records'
-      | 'user-roles'
-      | 'users'
-      | 'vendor-quotes'
-      | 'vendor-scorecards'
-      | 'vendors'
-      | 'warehouse-locations'
-      | 'wip-snapshots'
-      | 'work-centers'
-      | 'work-orders'
-      | 'work-phases'
-      | 'work-shifts'
-      | 'workflow-definitions'
-      | 'workflow-instances'
-      | 'commitments'
-      | 'contract-amendments'
-      | 'contract-performance'
-      | 'contract-signatures'
-      | 'addresses'
-      | 'variants'
-      | 'variantTypes'
-      | 'variantOptions'
-      | 'products'
-      | 'carts'
-      | 'orders'
-      | 'transactions'
-      | 'forms'
-      | 'form-submissions'
-      | 'redirects'
-      | 'search'
-      | 'exports'
-      | 'imports';
-    drafts?: ('yes' | 'no') | null;
-    exportCollection: string;
-    fields?: string[] | null;
-    format: 'csv' | 'json';
-    limit?: number | null;
-    locale?: string | null;
-    maxLimit?: number | null;
-    page?: number | null;
-    sort?: string | null;
-    userCollection?: string | null;
-    userID?: string | null;
-    where?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-  };
-  output?: unknown;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "TaskCreateCollectionImport".
- */
-export interface TaskCreateCollectionImport {
-  input: {
-    importId: string;
-    importCollection: string;
-    userID?: string | null;
-    userCollection?: string | null;
-    batchSize?: number | null;
-    debug?: boolean | null;
-    defaultVersionStatus?: ('draft' | 'published') | null;
-    maxLimit?: number | null;
-  };
   output?: unknown;
 }
 /**

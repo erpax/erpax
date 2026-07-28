@@ -1,12 +1,12 @@
 ---
 name: assets
 description: "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register."
-atomPath: mineral/resource/assets
-coordinate: mineral/resource/assets · 1/base · d61a1052
-contentUuid: "eb48affa-35c8-530f-9000-60f32d935bb6"
-diamondUuid: "2315bf8a-1264-8dee-9cdf-7b7abc5d4bc2"
-uuid: "d61a1052-8260-81e2-a844-74f7e927f09a"
-horo: 1
+atomPath: "mineral/resource/assets"
+coordinate: "mineral/resource/assets · 7/descent · 4c480fa1"
+contentUuid: "01c5be81-8a85-5ae2-951d-5b2c461091ae"
+diamondUuid: "19fb5cc9-5564-817c-bc55-fb82a472c5ab"
+uuid: "4c480fa1-8b72-8673-b225-24a1f6c89630"
+horo: 7
 bonds:
   in:
     - access
@@ -83,15 +83,22 @@ typography:
   neighbors: []
 standards:
   - "IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles"
+  - "IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles`"
   - "IFRS IFRS-6 §18-§22 impairment-of-EE-assets"
+  - "IFRS IFRS-6 §18-§22 impairment-of-EE-assets`"
   - "IFRS IFRS-6 §23-§25 disclosure"
+  - "IFRS IFRS-6 §23-§25 disclosure`"
   - "IFRS IFRS-6 §3 scope-exploration-and-evaluation"
+  - "IFRS IFRS-6 §3 scope-exploration-and-evaluation`"
   - "IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation"
+  - "IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation`"
   - "IFRS-6"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-EE-assets"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -170,7 +177,7 @@ neighbors:
     - rootstock
     - soil
 signatures:
-  computationUuid: "4703ae07-8bcb-8066-b887-ae27e037b440"
+  computationUuid: "2d46b6e2-99b1-8f44-849e-32fb51ad5668"
   stages:
     - stage: path
       stageUuid: "fd5c6279-1e92-8804-8300-95d37940c381"
@@ -181,11 +188,11 @@ signatures:
     - stage: links
       stageUuid: "fffd72cd-8318-8d44-8d42-b7c16851668d"
     - stage: horo
-      stageUuid: "60e7d05b-e440-8c72-a5ea-74e3b2e9a182"
+      stageUuid: "1e67edd6-a560-80fc-b71a-f8d2314dad0d"
     - stage: seal
       stageUuid: "6a0cfa3f-f8bf-8463-a8ec-932b13f644cd"
     - stage: uuid
-      stageUuid: "253b8295-e853-87b4-aeab-354eed0be460"
+      stageUuid: "904127d7-9a34-8004-9b35-2709b6c57815"
 version: 2
 ---
 # mineral-resource-assets

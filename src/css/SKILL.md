@@ -2,43 +2,51 @@
 name: css
 description: "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape."
 atomPath: css
-coordinate: css · 7/descent · 8a1c42f7
-contentUuid: "e0ce0973-81f2-567d-bead-835e403885cf"
-diamondUuid: "1d5f0bef-9952-8911-af90-81ddd6189b6f"
-uuid: "8a1c42f7-c013-85fe-988e-d73c65ff170d"
+coordinate: "css · 7/descent · 03b0b976"
+contentUuid: "048a059d-f89e-5109-ad65-2866fb669eb9"
+diamondUuid: "ebbec6cb-9300-87be-9c12-e613a01d6468"
+uuid: "03b0b976-5cb0-8110-8b2a-5a3c73ea0475"
 horo: 7
 bonds:
   in:
     - atom
     - component
+    - design
     - diamond
     - dimension
     - gate
     - law
+    - pixel
     - primitive
     - proof
     - purity
     - seal
-    - selector
+    - signal
+    - speech
     - trinity
     - typography
+    - ui
   out:
     - atom
     - component
+    - design
     - diamond
     - dimension
     - gate
     - law
+    - pixel
     - primitive
     - proof
     - purity
     - seal
-    - selector
+    - signal
+    - speech
     - trinity
     - typography
+    - ui
 typography:
   partition: css
-  bondDegree: 41
+  bondDegree: 53
   neighbors:
     - diamond
     - purity
@@ -48,61 +56,72 @@ neighbors:
   wikilink:
     - atom
     - component
+    - design
     - diamond
     - dimension
     - gate
     - law
+    - pixel
     - primitive
     - proof
     - purity
     - seal
+    - signal
     - trinity
     - typography
   matrix:
     - atom
     - component
+    - design
     - diamond
     - dimension
     - gate
     - law
+    - pixel
     - primitive
     - proof
     - purity
     - seal
-    - selector
+    - signal
+    - speech
     - trinity
     - typography
+    - ui
   backlinks:
     - atom
     - component
+    - design
     - diamond
     - dimension
     - gate
     - law
+    - pixel
     - primitive
     - proof
     - purity
     - seal
-    - selector
+    - signal
+    - speech
     - trinity
     - typography
+    - ui
 signatures:
-  computationUuid: "392165c9-e7fe-8c46-9315-a0cb51fe11a8"
+  computationUuid: "ebc696b1-0fb1-85e5-818b-5488fedd16a4"
   stages:
     - stage: path
       stageUuid: "c84b68a7-f352-88aa-bacb-a0c834de568c"
     - stage: trinity
       stageUuid: "87a08ca9-51a4-8d73-aa19-c9bdb1f8ae2a"
     - stage: boundary
-      stageUuid: "4921eda8-4945-8214-a08a-dd8c4d0eaa3b"
+      stageUuid: "de44372a-e273-84b0-b8d3-57f1013a5f02"
     - stage: links
-      stageUuid: "0d189a3f-8ee8-8e2a-b4b0-3f7fcb9ca66c"
+      stageUuid: "8f5c87a9-f1b4-8d89-ac21-7b7528baed7a"
     - stage: horo
-      stageUuid: "e86f6e41-2830-8407-b77a-ceff57beb223"
+      stageUuid: "ccf3e995-1949-8f6e-81e1-dca1523bfb4a"
     - stage: seal
-      stageUuid: "6842c71d-1c1d-86de-93e6-b856139a2dc4"
+      stageUuid: "d67e65d6-3536-8509-a221-4d4cf5586dd5"
     - stage: uuid
-      stageUuid: "b27b468d-3c5b-874c-9f0f-89359fc116c7"
+      stageUuid: "ac126b70-5215-8ca4-93e9-182b85b3c8ff"
 version: 2
 ---
 # css — the styling diamond (glyph ⊕ style)

@@ -1,11 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { readdirSync, statSync, existsSync, readFileSync } from 'node:fs'
 import { join, dirname, basename } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import type MarkdownIt from 'markdown-it'
 import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
-import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from '../src/corpus/index.mts'
+import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from '../src/corpus/index'
 import { pathNavMeta, topNavAnchorsFromSequence } from '../src/navigation/index.ts'
 
 // ── Heap budget for `docs:build` (the OOM note — MEASURED) ─────────────────
@@ -267,7 +268,14 @@ export default defineConfig({
   // Pin the docs client bundle to a modern target so esbuild doesn't try to
   // downlevel VitePress's own destructuring (it inherits an older `target` from
   // tsconfig otherwise → "Transforming destructuring … not supported yet").
-  vite: { build: { target: 'esnext' } },
+  vite: {
+    build: { target: 'esnext' },
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('../src', import.meta.url)),
+      },
+    },
+  },
   themeConfig: {
     nav: topNav,
     sidebar: [{ text: 'skills (the fractal path-set)', items: skillSidebar }],

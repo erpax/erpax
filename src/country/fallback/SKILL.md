@@ -1,43 +1,42 @@
 ---
 name: fallback
-description: "Use when a country slot is blank or unknown — CLDR ZZ (\\\"Unknown Region\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
-atomPath: country/fallback
-coordinate: country/fallback · 4/weave · 821a427b
-contentUuid: "756eba14-aacd-538f-b831-503915c629c8"
-diamondUuid: "d558020d-a944-8e64-a654-830f6def07f5"
-uuid: "821a427b-54a9-81b7-9669-2d5568866ee7"
-horo: 4
+description: "Use when a country slot is blank or unknown — CLDR ZZ (\\\\\\\"Unknown Region\\\\\\\") is the country identity element, the universal value that is compatible with every real country and resolves any nullish input to a non-null code."
+atomPath: "country/fallback"
+coordinate: "country/fallback · 7/descent · 157d8c7f"
+contentUuid: "785407aa-dc17-5630-951a-03846f48c61d"
+diamondUuid: "37d88e6a-1c43-8fb2-9094-c1fb5a112ca7"
+uuid: "157d8c7f-b9b6-8a65-abfd-e297148638f8"
+horo: 7
 bonds:
   in:
-    - collapse
     - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
   out:
-    - collapse
+    - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
 typography:
   partition: country
-  bondDegree: 26
+  bondDegree: 24
   neighbors: []
 standards:
   - CLDR ZZ Unknown Region
-  - "Conservation Law 54 universal-identity-element (country instance)"
   - "EU VIES — alpha-2 country code element"
   - "ISO 3166-1 §6 user-assigned codes"
+  - "ISO 3166-1 §6 user-assigned codes`"
   - "ISO 3166-2 — subdivision codes (handled by country-context)"
+  - "ISO 3166-2 — subdivision codes (handled by country-context)`"
   - "ISO-3166-2"
   - SWIFT BIC §3 country code (BIC normalises ZZ → reject; ERPax stores)
   - "SWIFT-MT"
   - UN M.49 — 001 World (numeric)
   - "Unicode-CLDR"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -45,36 +44,34 @@ neighbors:
     - integrity
     - law
   matrix:
-    - collapse
+    - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
   backlinks:
-    - collapse
+    - country
+    - integrity
     - law
-    - merge
     - science
-    - sti
     - unlabelled
 signatures:
-  computationUuid: "496bca7f-36dd-84b3-a1d3-8f6ff5eca71b"
+  computationUuid: "5fb9599b-113d-8c3c-a58b-acb0dcfdbbf8"
   stages:
     - stage: path
       stageUuid: "251c0471-960d-88a5-bf6a-eae7851ebd42"
     - stage: trinity
       stageUuid: "c64c1217-7b71-81a9-9082-176c3e92297a"
     - stage: boundary
-      stageUuid: "38c8e166-b64f-86b7-a4f0-0459dbff2a99"
+      stageUuid: "d309d003-2ebe-80bc-862e-2aea1c18ae78"
     - stage: links
       stageUuid: "51f26416-8b69-812d-91e0-cad4e6f33876"
     - stage: horo
-      stageUuid: "5ff1132e-7d77-8051-9aa9-e797f50af7cb"
+      stageUuid: "bdcdf2a3-10cc-8071-b6e5-939439d15921"
     - stage: seal
       stageUuid: "64ab4339-0f2e-8588-8202-71f0a7e2195a"
     - stage: uuid
-      stageUuid: "e73fa1c7-aa54-8f6f-b860-26a2c525dc98"
+      stageUuid: "1038edac-40c5-88b1-b6b7-6a25b6772411"
 version: 2
 ---
 # country/fallback — CLDR ZZ, the country identity element

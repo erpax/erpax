@@ -1,12 +1,12 @@
 ---
 name: contracts
 description: "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register."
-atomPath: insurance/contracts
-coordinate: insurance/contracts · 8/crest · 7c88a08e
-contentUuid: "3fdf06d8-bdab-5b52-b7bb-ed7a60130bea"
-diamondUuid: "8add3522-38e9-80f3-8802-ae693b903168"
-uuid: "7c88a08e-9f20-860d-8402-7f909033e96a"
-horo: 8
+atomPath: "insurance/contracts"
+coordinate: "insurance/contracts · 7/descent · c65023c0"
+contentUuid: "c5b0573b-684a-5cbb-9e99-8e130811b82c"
+diamondUuid: "6943afa4-7d53-8d3e-ac1d-17d725ce56fe"
+uuid: "c65023c0-a421-8172-8e9c-a48b931309d7"
+horo: 7
 bonds:
   in:
     - amendment
@@ -67,24 +67,33 @@ bonds:
     - warranty
 typography:
   partition: insurance
-  bondDegree: 89
+  bondDegree: 97
   neighbors: []
 standards:
   - "IFRS IFRS-13 fair-value-input-hierarchy"
+  - "IFRS IFRS-13 fair-value-input-hierarchy`"
   - "IFRS IFRS-17 §3 scope"
+  - "IFRS IFRS-17 §3 scope`"
   - "IFRS IFRS-17 §32 general-measurement-model-building-blocks"
+  - "IFRS IFRS-17 §32 general-measurement-model-building-blocks`"
   - "IFRS IFRS-17 §38 contractual-service-margin"
+  - "IFRS IFRS-17 §38 contractual-service-margin`"
   - "IFRS IFRS-17 §53 premium-allocation-approach-simplified"
+  - "IFRS IFRS-17 §53 premium-allocation-approach-simplified`"
   - "IFRS IFRS-17 §93 disclosure-requirements"
+  - "IFRS IFRS-17 §93 disclosure-requirements`"
   - "IFRS IFRS-17 §B100 variable-fee-approach"
+  - "IFRS IFRS-17 §B100 variable-fee-approach`"
   - "IFRS-13"
   - "IFRS-17"
   - "ILO-C100"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls TOM-INS-01"
-  - Solvency II / IAIS ICS — actuarial reserving link
+  - "Solvency II / IAIS ICS — actuarial reserving link"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -150,7 +159,7 @@ neighbors:
     - termination
     - warranty
 signatures:
-  computationUuid: "acbd09e1-ccbb-8c1c-8b82-8bdbe8e56aed"
+  computationUuid: "92f7084c-364f-85be-84f7-3cea6199dcb3"
   stages:
     - stage: path
       stageUuid: "ce0a3bec-a16d-8df9-b3be-9ae3bf5945c6"
@@ -161,11 +170,11 @@ signatures:
     - stage: links
       stageUuid: "7b2adee9-5a49-891a-9737-1b0ee14ec3be"
     - stage: horo
-      stageUuid: "242b8a41-4703-8b92-ac1b-e014677d2d23"
+      stageUuid: "babb7f2d-2dca-88a6-89ab-b26906b1249b"
     - stage: seal
-      stageUuid: "1fa6c377-1fe2-8593-bb3c-32df215aed13"
+      stageUuid: "9e4e4d15-01e5-8147-b28d-624f07c9aaec"
     - stage: uuid
-      stageUuid: "ca81e97b-47de-8236-965d-6917f8f7ce2f"
+      stageUuid: "faed50cb-375f-8b9d-a172-df8565f63c1b"
 version: 2
 ---
 # insurance-contracts

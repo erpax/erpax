@@ -2,31 +2,39 @@
 name: apply
 description: "Use when reasoning about apply — A schema.org component word, collided out of schema.org compounds — fused from ApplyAction · directApply (sti · collapse · merge)."
 atomPath: apply
-coordinate: apply · 1/base · d98ba2ba
-contentUuid: "48bce833-2c37-583a-a06d-b7d07e720c29"
-diamondUuid: "a1365b8e-ffe6-89c0-81db-b3b3a28bb45c"
-uuid: "d98ba2ba-3148-88a0-99b4-3e7b0e93296d"
-horo: 1
+coordinate: "apply · 2/share · 701d945a"
+contentUuid: "2aaf7000-04c2-5e01-bdfb-10fb4449148e"
+diamondUuid: "e87454e5-f568-81b0-a263-0403954684fe"
+uuid: "701d945a-a318-8117-8568-513ba02ff04f"
+horo: 2
 bonds:
   in:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
   out:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
 typography:
   partition: apply
-  bondDegree: 26
+  bondDegree: 39
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -38,40 +46,50 @@ neighbors:
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
   matrix:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
   backlinks:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
 signatures:
-  computationUuid: "404fc8a6-c246-8d4c-a115-74812f14b180"
+  computationUuid: "dd84ab17-d2f3-87ad-9ec3-cac91ba309ab"
   stages:
     - stage: path
       stageUuid: "af7e02e8-820d-805e-abb4-f88a19d268b8"
     - stage: trinity
-      stageUuid: "e82af1bc-0d92-82e7-b82a-8c060a9b912e"
+      stageUuid: "293c363a-6e96-8e5c-9ff5-7325752b7541"
     - stage: boundary
-      stageUuid: "902bf9d3-3e59-889b-a388-b0df263e6c4c"
+      stageUuid: "c9ca79eb-44c1-88b0-99cc-0d70edbef66c"
     - stage: links
-      stageUuid: "2bb9e63f-4873-8f62-a1cc-31b10ffb261a"
+      stageUuid: "c3997c8c-f7b2-8ba0-9935-d0bac56466b9"
     - stage: horo
-      stageUuid: "9f3f275d-f68d-89b9-b381-0cfa13289dbb"
+      stageUuid: "93238d99-a448-802c-8a4c-9f5d34138366"
     - stage: seal
-      stageUuid: "1d21ecf4-00f7-81fb-9486-651f1f946d23"
+      stageUuid: "762eb5ae-7420-8f7d-84e8-2f0dabd2bcf9"
     - stage: uuid
-      stageUuid: "10a4cbda-35b4-83fb-a273-21084a616625"
+      stageUuid: "a2275128-69bb-8fff-917b-039b86230d4a"
 version: 2
 ---
 # apply

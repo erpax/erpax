@@ -2,11 +2,11 @@
 name: localize
 description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
 atomPath: localize
-coordinate: localize · 5/round · 7e1079c3
-contentUuid: "1329f777-5f61-54ba-8180-6e13844a99a6"
-diamondUuid: "a70457ef-a1fd-8b93-861d-6360e7a1ec11"
-uuid: "7e1079c3-3788-8b20-8cf4-c85604ed6f47"
-horo: 5
+coordinate: "localize · 2/share · e8e2258f"
+contentUuid: "bba145e0-6413-5495-ac12-f26b5e00de88"
+diamondUuid: "dcc42d5d-b123-84dc-b7f8-92d6d101f669"
+uuid: "e8e2258f-7023-888b-92ab-66211ed33480"
+horo: 2
 bonds:
   in:
     - angel
@@ -92,15 +92,18 @@ standards:
   - "BCP-47 (locale tags) · EU 1958/1 (official EU languages)"
   - "BCP-47` (no edition/version; permanently \"BCP 47\", a two-RFC IETF subseries updated by reassigning member RFCs). A locale identifier must be a well-formed, valid BCP-47 tag: hyphen-separated subtags in canonical order (`language[-extlang][-script][-region][-variant][-extension][-privateuse]`), each registered in the live IANA Language Subtag Registry (the registry, not any RFC text, is the source of truth for which subtag values are valid). The umbrella `@standard BCP-47` tag is correct as-is."
   - "BCP-47` tag is correct as-is.\""
-  - "Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)"
   - "EU-1958"
   - "EU-2006/43"
   - "ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)"
   - "ITU-T-X667"
   - "NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)"
+  - "NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)`"
   - "RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)"
+  - "RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)`"
   - "RFC 9562 §5.8 (uuidv8 structured, name-based)"
+  - "RFC 9562 §5.8 (uuidv8 structured, name-based)`"
   - "RFC-4122"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -197,7 +200,7 @@ neighbors:
     - uuid
     - versions
 signatures:
-  computationUuid: "252b1d03-4b68-840b-9e95-22043cd5503f"
+  computationUuid: "7a525917-f5b2-8679-9bd3-8720494adc4c"
   stages:
     - stage: path
       stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
@@ -208,11 +211,11 @@ signatures:
     - stage: links
       stageUuid: "e78a23a9-1081-8e22-8701-4b8888c78b39"
     - stage: horo
-      stageUuid: "20097fa0-6d75-8f04-9ced-f4b0291ec413"
+      stageUuid: "18237426-6439-80db-bc1a-8abbf6c48ae9"
     - stage: seal
-      stageUuid: "bcec3b7c-6409-87fb-ab6f-652154648237"
+      stageUuid: "ab167e4a-044f-8271-bb4c-9d9cd41c765b"
     - stage: uuid
-      stageUuid: "57d770d4-3e83-8923-a5c1-4a2d41463429"
+      stageUuid: "70c3f64d-bbf1-8377-afaa-5013f2f4d1fe"
 version: 2
 ---
 # localize — localization as the tamper-cost ⊕ proof fusion

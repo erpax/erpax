@@ -1,11 +1,11 @@
 ---
 name: inspections
 description: "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts."
-atomPath: items/quality/inspections
-coordinate: items/quality/inspections · 1/base · 46c9af13
-contentUuid: "442789e0-d71d-557b-b82f-6d9e94a7c2fc"
-diamondUuid: "d6905e7d-a4f1-8db9-b459-dd3a07a310ae"
-uuid: "46c9af13-f2c1-87a2-bc07-ce274ada67b0"
+atomPath: "items/quality/inspections"
+coordinate: "items/quality/inspections · 1/base · b5a6afa1"
+contentUuid: "48a8f15d-3688-50ce-9537-f4271eab3d0b"
+diamondUuid: "d0f33646-d54e-828c-a9be-c25ca5603ebf"
+uuid: "b5a6afa1-756d-8072-86f8-0f75253d0241"
 horo: 1
 bonds:
   in:
@@ -39,13 +39,17 @@ typography:
   neighbors: []
 standards:
   - "ISO 17025:2017 testing-and-calibration-laboratories"
+  - "ISO 17025:2017 testing-and-calibration-laboratories`"
   - "ISO 9001:2015 §8.7 control-of-nonconforming-outputs"
+  - "ISO 9001:2015 §8.7 control-of-nonconforming-outputs`"
   - "ISO 9001:2015 §8.7 quality-management-system"
   - "ISO 9001:2015 §9.1.3 analysis-and-evaluation"
-  - "ISO-19011:2018 audit-trail inspection-evidence"
+  - "ISO 9001:2015 §9.1.3 analysis-and-evaluation`"
   - "ISO-8601-1:2019 date-time inspection-date"
+  - "ISO-8601-1:2019 date-time inspection-date`"
   - "ISO-9001"
   - "SOX §404 internal-controls quality-control TOM-QC-01"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -80,7 +84,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "e7416717-39df-8a8d-9fdd-f290ec295b81"
+  computationUuid: "257ce290-fc24-8481-aa9f-ab847f4a9fda"
   stages:
     - stage: path
       stageUuid: "0834a322-004d-889e-b174-a48dca66cacf"
@@ -91,11 +95,11 @@ signatures:
     - stage: links
       stageUuid: "45d31dd3-eb97-8bd8-9a1d-0cb4a715a236"
     - stage: horo
-      stageUuid: "7ebf30fa-89c4-8f3d-a641-b9d9bed2c0eb"
+      stageUuid: "cfb70140-bb63-8d57-9b5a-95db2de6cf35"
     - stage: seal
       stageUuid: "c4b9f3de-9b2f-8be9-ba4d-32b708ca009f"
     - stage: uuid
-      stageUuid: "a6b3b823-8a41-86e2-9786-9041d2b46dbb"
+      stageUuid: "b758099f-672a-89fa-8485-63f8970a4c72"
 version: 2
 ---
 # quality-inspections

@@ -2,11 +2,11 @@
 name: atom
 description: "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law."
 atomPath: atom
-coordinate: atom · 5/round · b8c241ca
-contentUuid: "d3705b33-911e-5a5b-83ec-16b925a6e216"
-diamondUuid: "827e7d21-be62-8a54-885c-b02c90cdc808"
-uuid: "b8c241ca-e3ec-89c4-978d-f7ffc0e4cb81"
-horo: 5
+coordinate: "atom · 7/descent · 7f6ab650"
+contentUuid: "639db3a9-bbb1-5c82-9768-e79b6c669502"
+diamondUuid: "bbe94b3d-e1ef-8dbd-a5dc-191cb0d6d272"
+uuid: "7f6ab650-234a-83d2-8814-b4d80dcef8b0"
+horo: 7
 bonds:
   in:
     - access
@@ -190,10 +190,9 @@ bonds:
     - zeropoint
 typography:
   partition: atom
-  bondDegree: 0
+  bondDegree: 283
   neighbors: []
-standards:
-  - MCP
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -419,22 +418,22 @@ neighbors:
     - word
     - zeropoint
 signatures:
-  computationUuid: "8bdac80b-8c8e-8ad2-8074-ee16844c5bfa"
+  computationUuid: "6911be0c-748c-841b-9520-815efdabee68"
   stages:
     - stage: path
       stageUuid: "1df7f303-31db-8aee-9772-34de82cbd797"
     - stage: trinity
-      stageUuid: "1e27db58-8cf1-8330-be80-f873b64439b5"
+      stageUuid: "f1b243f2-0f29-8e16-a676-4ac9be1eec8c"
     - stage: boundary
-      stageUuid: "978c8cb9-e2ba-8366-8a7e-b5e5a03c4fc0"
+      stageUuid: "33acc590-3f7f-8c55-9d0d-bc33e63f7d38"
     - stage: links
       stageUuid: "a260d9f5-7374-86c0-8604-0d6491c363a6"
     - stage: horo
-      stageUuid: "0c589b62-5f2b-87eb-8bf0-cb308707b87a"
+      stageUuid: "d1b400fb-8543-8514-b784-d06da89a2433"
     - stage: seal
-      stageUuid: "76bb6c4d-e124-8469-8ad6-12a6c54bea2b"
+      stageUuid: "540844e3-41b5-8ee8-a2d8-7052c63cf7b5"
     - stage: uuid
-      stageUuid: "88bfd7b6-9b7a-81cf-b1b1-7651b206061b"
+      stageUuid: "444fccff-912c-8dd2-952c-24a388c29d5c"
 version: 2
 ---
 # atom — the irreducible unit; everything is made of atoms

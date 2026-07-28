@@ -2,11 +2,11 @@
 name: carriers
 description: "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments."
 atomPath: carriers
-coordinate: carriers · 7/descent · 2b3a89ff
-contentUuid: "163e2f60-a22e-5cf3-bbc1-1af70456fcbf"
-diamondUuid: "bc8c3ba7-b0d9-82ae-86fd-ac4f2582ef42"
-uuid: "2b3a89ff-e298-850a-8a6b-93a733f13104"
-horo: 7
+coordinate: "carriers · 2/share · 8b69d5cf"
+contentUuid: "60de2eec-d46c-501e-87f8-05f2bf56a61c"
+diamondUuid: "7fe2d0c0-2424-83dd-b04f-0c7ad61f66ec"
+uuid: "8b69d5cf-ad05-8be9-9f97-08aaa108117b"
+horo: 2
 bonds:
   in:
     - access
@@ -40,11 +40,12 @@ standards:
   - "IMDG-Code maritime-dangerous-goods"
   - "INCOTERMS 2020 international-commercial-terms"
   - "INCOTERMS-2020"
-  - "ISO-19011:2018 audit-trail carrier-master"
   - "ISO-8601-1:2019 date-time effective-from"
+  - "ISO-8601-1:2019 date-time effective-from`"
   - "SOX §404 internal-controls carrier-master TOM-LOG-01"
   - "UPU-S10 universal-postal-union shipment-identifier"
   - "UPU-S42"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -77,7 +78,7 @@ neighbors:
     - standard
     - trading
 signatures:
-  computationUuid: "f7a8a11d-9ef3-89db-96b3-f8cb991833f3"
+  computationUuid: "56801833-e0eb-8ddb-beaf-18ffef2db251"
   stages:
     - stage: path
       stageUuid: "7308a306-7dcc-8c72-9d4c-fe5462ab0bbe"
@@ -88,11 +89,11 @@ signatures:
     - stage: links
       stageUuid: "8d74b8d1-50c2-849d-81a5-e40b720d45ae"
     - stage: horo
-      stageUuid: "52ae5acf-6103-8dc0-81da-025519b7ad9d"
+      stageUuid: "00e557f4-4e43-8ad4-8ed7-3947e67b4d17"
     - stage: seal
-      stageUuid: "2e3b7431-7e9a-86af-b007-e7a625122c3b"
+      stageUuid: "a09653a1-5898-8d8b-bb67-3d529e2ad5b8"
     - stage: uuid
-      stageUuid: "91175ac2-b4d4-8dd5-929e-ae07876d2393"
+      stageUuid: "de26526a-61c0-8d54-bc28-5f213f310bb3"
 version: 2
 ---
 # carriers

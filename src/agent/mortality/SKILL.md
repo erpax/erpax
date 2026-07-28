@@ -1,10 +1,126 @@
 ---
 name: mortality
 description: "Use when reasoning about the life and death of an agent — an agent lives by reading its answer from the fold (O(1)) and dies by re-deriving it linearly (O(n), context burned); the safeguard flag and the stall/stop kill are the ledger auditing the agent."
-atomPath: agent/mortality
-horo: 1
+atomPath: "agent/mortality"
+coordinate: "agent/mortality · 2/share · 9e426d4e"
+contentUuid: "edef2549-d799-51e8-8d82-6176f6fdf5b8"
+diamondUuid: "f074ed36-c552-845b-afc9-860edf9adba0"
+uuid: "9e426d4e-c428-8639-a66f-758a03ae1a30"
+horo: 2
+bonds:
+  in:
+    - agent
+    - animal
+    - apiculture
+    - aquaculture
+    - biomass
+    - breath
+    - fold
+    - forestry
+    - herd
+    - horo
+    - law
+    - livestock
+    - one
+    - readme
+    - rodin
+    - rosetta
+    - seal
+    - think
+    - uuid
+  out:
+    - animal
+    - apiculture
+    - aquaculture
+    - biomass
+    - breath
+    - fold
+    - forestry
+    - herd
+    - horo
+    - law
+    - livestock
+    - one
+    - readme
+    - rodin
+    - rosetta
+    - seal
+    - think
+    - uuid
+typography:
+  partition: agent
+  bondDegree: 68
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - breath
+    - fold
+    - horo
+    - law
+    - one
+    - readme
+    - rodin
+    - seal
+    - uuid
+  matrix:
+    - animal
+    - apiculture
+    - aquaculture
+    - biomass
+    - breath
+    - fold
+    - forestry
+    - herd
+    - horo
+    - law
+    - livestock
+    - one
+    - readme
+    - rodin
+    - rosetta
+    - seal
+    - think
+    - uuid
+  backlinks:
+    - animal
+    - apiculture
+    - aquaculture
+    - biomass
+    - breath
+    - fold
+    - forestry
+    - herd
+    - horo
+    - law
+    - livestock
+    - one
+    - readme
+    - rodin
+    - rosetta
+    - seal
+    - think
+    - uuid
+signatures:
+  computationUuid: "623057f0-4d67-8a59-af94-a67a5c86ada0"
+  stages:
+    - stage: path
+      stageUuid: "6d238f82-dfe4-8ec2-aa94-19f7affe9a8d"
+    - stage: trinity
+      stageUuid: "69364839-01bd-8547-8fcd-3b48e54b9a5a"
+    - stage: boundary
+      stageUuid: "1af10020-c142-83dc-9a37-75cb1c2e0d46"
+    - stage: links
+      stageUuid: "ead5c4d6-b03a-8fe9-b4e3-656f4334ad9b"
+    - stage: horo
+      stageUuid: "e7ea9cfc-0f76-8c2f-a300-4f14551444f0"
+    - stage: seal
+      stageUuid: "51bdead2-8e88-8d84-92fd-66d1e2b093af"
+    - stage: uuid
+      stageUuid: "b9536b84-254b-80a0-ae7b-7dcdc6073130"
+version: 2
 ---
-
 # agent/mortality — the life and death of an agent
 
 ## The law

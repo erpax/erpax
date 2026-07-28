@@ -1,12 +1,12 @@
 ---
 name: materials
 description: "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption."
-atomPath: items/bills/of/materials
-coordinate: items/bills/of/materials · 1/base · 6a6ebefe
-contentUuid: "378458ba-1e06-56c6-b9cf-64f4d78ac291"
-diamondUuid: "3b82799a-aebf-8d63-ae82-164014fc184e"
-uuid: "6a6ebefe-9020-8614-bc7b-61ca3e587ebc"
-horo: 1
+atomPath: "items/bills/of/materials"
+coordinate: "items/bills/of/materials · 8/crest · f0643201"
+contentUuid: "197287d5-d5da-594f-9b5b-78ad33151d3e"
+diamondUuid: "62452bbd-0ddf-8f6e-916a-93f68e4a1587"
+uuid: "f0643201-d48d-82aa-a3db-449296eb4a34"
+horo: 8
 bonds:
   in:
     - bundle
@@ -33,11 +33,13 @@ standards:
   - "ISA-95"
   - "ISA-95:2013 enterprise-control-system-integration §B.4"
   - "ISO 22400:2014 manufacturing-operations-management KPIs"
-  - "ISO-19011:2018 audit-trail bom-version-control"
+  - "ISO 22400:2014 manufacturing-operations-management KPIs`"
   - "ISO-22400-2"
   - "ISO-8601-1:2019 date-time effective-from / to"
+  - "ISO-8601-1:2019 date-time effective-from / to`"
   - "SOX §404 internal-controls bom-engineering-change-control"
   - "US-GAAP ASC-330-10-30 inventory-cost"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -58,7 +60,7 @@ neighbors:
     - law
     - orders
 signatures:
-  computationUuid: "750d429c-8cea-8894-82cf-e703952f611a"
+  computationUuid: "82024762-cc54-85b9-b9cd-e6aa0309a69a"
   stages:
     - stage: path
       stageUuid: "0678991a-9722-84ce-95fd-3f875a126a04"
@@ -69,11 +71,11 @@ signatures:
     - stage: links
       stageUuid: "0a586a94-3b81-86cc-91c0-bfdc65d37a1b"
     - stage: horo
-      stageUuid: "016fb310-4a50-8b29-8a3d-53f6427aa08d"
+      stageUuid: "7ae4efe5-138d-8c79-a8f0-218fef7479f9"
     - stage: seal
       stageUuid: "05195066-ede7-8221-98f5-9697ae5d3c81"
     - stage: uuid
-      stageUuid: "a61a0d1f-c198-812d-9d78-0ec4aea6bb0e"
+      stageUuid: "eac1bd41-c2a8-8321-baf5-985406b32937"
 version: 2
 ---
 # bills-of-materials

@@ -1,12 +1,12 @@
 ---
 name: "14289"
 description: "Use when implementing or referencing `src/standards/iso-14289/`."
-atomPath: iso/14289
-coordinate: iso/14289 · 7/descent · ac01df57
-contentUuid: "f56ee763-721d-5e66-985e-b23f9afe362e"
-diamondUuid: "3ce16b38-2274-83f0-b58b-8cb908bafe45"
-uuid: "ac01df57-1fe4-84e8-ac6a-fec54996765a"
-horo: 7
+atomPath: "iso/14289"
+coordinate: "iso/14289 · 2/share · b0934f2e"
+contentUuid: "6653e0d7-eee6-5fc7-be96-e8be25dae504"
+diamondUuid: "f9c357bb-c80b-8b83-b6cf-75755e6caa3e"
+uuid: "b0934f2e-f633-85c7-9912-da919d88009b"
+horo: 2
 bonds:
   in:
     - iso
@@ -25,14 +25,18 @@ standards:
   - "EU-CSDDD-2024/1760"
   - "ISO-14289-1"
   - "ISO-14289-1:2014 pdf-ua-1"
+  - "ISO-14289-1:2014 pdf-ua-1`"
   - "ISO-14289-2:2024 pdf-ua-2"
+  - "ISO-14289-2:2024 pdf-ua-2`"
+  - "WCAG-2.1"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
   matrix: []
   backlinks: []
 signatures:
-  computationUuid: "f8077085-6ae8-87e0-b046-e272e2d68be7"
+  computationUuid: "e5b853a6-8454-80cc-a225-43980cf9d04c"
   stages:
     - stage: path
       stageUuid: "ade7180e-e88a-8375-b539-315c4eced8fc"
@@ -43,11 +47,11 @@ signatures:
     - stage: links
       stageUuid: "82ab4f54-73f0-8fa8-9bdd-cecd50e7c25f"
     - stage: horo
-      stageUuid: "0a0bd98b-0f1a-8fc0-a895-b1a1f9616f45"
+      stageUuid: "df152bdd-ea51-8389-b85a-ab9ef183a91c"
     - stage: seal
       stageUuid: "0c11a6df-473e-8078-8eb2-ab4f9d8eb416"
     - stage: uuid
-      stageUuid: "cea2e9dd-fb7e-8bb4-8ed0-9c48b4f5694d"
+      stageUuid: "9c8ab792-857f-8e09-af34-89b11032babd"
 version: 2
 ---
 # `src/standards/iso-14289/`

@@ -1,12 +1,12 @@
 ---
 name: emitter
 description: "Use when an afterChange transition must fire a business-chain domain event — the wiring layer that maps a status change (or row-create) to one emitDomainEvent call so the chain registry's declared emits matches what actually fires."
-atomPath: chain/event/emitter
-coordinate: chain/event/emitter · 8/crest · 8bb68427
-contentUuid: "22bfa44c-18ac-570a-bd65-51b957e29125"
-diamondUuid: "3e1893a7-e773-8881-85a0-f2f0c2198e2b"
-uuid: "8bb68427-89cb-87bf-80ec-b581bd95d5bc"
-horo: 8
+atomPath: "chain/event/emitter"
+coordinate: "chain/event/emitter · 7/descent · 2f5c8da7"
+contentUuid: "1d1e4d09-63f7-5edd-bb4b-d55ecbacc172"
+diamondUuid: "94673ffb-f878-8df7-a6b6-1cda5e2d147f"
+uuid: "2f5c8da7-ea20-8616-9c80-e37c65717cca"
+horo: 7
 bonds:
   in:
     - audit
@@ -23,7 +23,6 @@ typography:
   bondDegree: 12
   neighbors: []
 standards:
-  - "ISO-19011:2018 audit-trail event-emit"
   - "SOX §404 internal-controls process-evidence"
 bindings: []
 neighbors:
@@ -43,22 +42,22 @@ neighbors:
     - event
     - law
 signatures:
-  computationUuid: "b5be3162-82a2-8341-9237-6f55c33117cf"
+  computationUuid: "3d76e349-4e3e-8f16-90d4-ab563f2e0252"
   stages:
     - stage: path
       stageUuid: "91fff2a3-0d2a-8036-83a7-8126d5e36879"
     - stage: trinity
       stageUuid: "c285f85f-5be7-897e-84fa-4ec5504764f5"
     - stage: boundary
-      stageUuid: "d967355e-c9a6-8bbf-9ab2-d7c8c71abcd3"
+      stageUuid: "6907f9a3-a23b-8d32-bbe3-e70033b42bd7"
     - stage: links
       stageUuid: "2c23b722-a4e2-8e75-86ed-e04b129dccc4"
     - stage: horo
-      stageUuid: "452d7a47-e737-8b24-909c-5303b6178a84"
+      stageUuid: "e2dc5d52-8453-8378-8a77-6cba6c8d9b1b"
     - stage: seal
       stageUuid: "3e9010de-8f57-8c20-9e0a-308f7cfab3a5"
     - stage: uuid
-      stageUuid: "6cb01620-f10d-81b7-938c-b0faecf5ab8e"
+      stageUuid: "b6d7625f-a36a-81dd-8136-1aa4c2a6e6a1"
 version: 2
 ---
 # chain/event/emitter — declared emits become fired events

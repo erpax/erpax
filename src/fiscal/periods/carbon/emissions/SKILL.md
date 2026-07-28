@@ -1,12 +1,12 @@
 ---
 name: emissions
 description: "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register."
-atomPath: fiscal/periods/carbon/emissions
-coordinate: fiscal/periods/carbon/emissions · 7/descent · 702132f7
-contentUuid: "ce16b94f-ef61-554c-ae4a-d7f11be2b6d9"
-diamondUuid: "6700a2a6-9667-88ec-80ea-6d0afcc4b098"
-uuid: "702132f7-97dd-8cad-9a7c-25de6ea5fe2b"
-horo: 7
+atomPath: "fiscal/periods/carbon/emissions"
+coordinate: "fiscal/periods/carbon/emissions · 8/crest · e35f41e8"
+contentUuid: "fc0dca9d-a994-572a-866a-a16b15fa7bc1"
+diamondUuid: "26719ac0-53ef-8688-bd98-43a210a3f493"
+uuid: "e35f41e8-0bdd-8a25-9ad8-b44e01a06828"
+horo: 8
 bonds:
   in:
     - accounting
@@ -36,12 +36,6 @@ standards:
   - "EU SFDR PAI 1 ghg-emissions"
   - "EU Taxonomy DNSH climate-mitigation"
   - "EU-2011/83"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "EU-ESRS"
   - "EU-VAT-Implementing-Reg-282/2011"
   - GHG Protocol Corporate Standard (revised 2015)
@@ -49,10 +43,12 @@ standards:
   - GHG Protocol Scope 3 Standard (2011)
   - "GHG-Protocol"
   - "IFRS S2 §29-32 climate-related-metrics"
-  - "ISAE 3410 greenhouse-gas-statements"
   - "ISO 14064-1:2018 organisation-level-ghg-quantification"
+  - "ISO 14064-1:2018 organisation-level-ghg-quantification`"
   - "ISO 14067:2018 carbon-footprint-of-products"
+  - "ISO 14067:2018 carbon-footprint-of-products`"
   - "ISO-14064-1"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -79,7 +75,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "6f6b0805-6bb3-8a39-adba-5a3cae1eaa96"
+  computationUuid: "b4fb7272-ee2e-8193-88e2-c0061139ab1b"
   stages:
     - stage: path
       stageUuid: "e8de1031-e28a-8497-b72f-151bcf47c09f"
@@ -90,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "6f9384b9-a559-8a9e-a724-12e3f24e1b79"
     - stage: horo
-      stageUuid: "f0ea4141-7e7d-8546-894b-3afe37456b60"
+      stageUuid: "a139b374-43eb-8e58-a04c-2ae78221ef5c"
     - stage: seal
       stageUuid: "296ad0d4-9eac-8303-adba-49660f568ace"
     - stage: uuid
-      stageUuid: "9c4aebb4-e403-879e-9f55-6a83ba71e386"
+      stageUuid: "b6796c7e-9240-8c01-be47-f4a1c99e2d3b"
 version: 2
 ---
 # carbon-emissions

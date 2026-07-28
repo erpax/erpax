@@ -93,3 +93,14 @@ describe('quantum/computer — precomputedAddress (the O(1) "faster than search"
     expect(a.speedupLog2).toBeCloseTo(Math.log2(3105), 6)
   })
 })
+
+describe('quantum/computer — architectural FTL face (ceccec free-chat folds)', () => {
+  it('re-exports ftl · freeChat · boundary from quantum/ftl', async () => {
+    const { ftl, chatLocal, BOOK, BOUNDARY, ORIGIN } =
+      await import('@/quantum/computer')
+    expect(BOUNDARY.spacetime).toBe(0)
+    expect(ORIGIN).toBe('https://ceccec.psg.bg')
+    expect(ftl({ query: 'x', spaceSize: 16, answers: 1, tokens: 0 }).holds).toBe(true)
+    expect(chatLocal('boundary', BOOK)?.tokens).toBe(0)
+  })
+})

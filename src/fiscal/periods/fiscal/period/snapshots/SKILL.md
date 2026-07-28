@@ -1,12 +1,12 @@
 ---
 name: snapshots
 description: "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node."
-atomPath: fiscal/periods/fiscal/period/snapshots
-coordinate: fiscal/periods/fiscal/period/snapshots · 2/share · 8e93c024
-contentUuid: "18caa431-5b9f-5fb7-9d63-8df3392826bb"
-diamondUuid: "1a5b243f-e8ea-8f26-9be1-bb5bf0ab4655"
-uuid: "8e93c024-f3cd-8826-bfbe-d1ab2562a563"
-horo: 2
+atomPath: "fiscal/periods/fiscal/period/snapshots"
+coordinate: "fiscal/periods/fiscal/period/snapshots · 7/descent · 52c6ba06"
+contentUuid: "b27cfbeb-2b10-512d-bb95-0e776bcb7c0f"
+diamondUuid: "4352f324-83bf-82c2-801f-0c72f46828f5"
+uuid: "52c6ba06-adbd-843b-9b80-7bc47a4dba92"
+horo: 7
 bonds:
   in:
     - accounting
@@ -35,13 +35,16 @@ standards:
   - "EU-537/2014"
   - "EU-910/2014"
   - "GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)"
-  - "NIST-SP-800-63"
+  - "GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)`"
   - "NIST-SP-800-92"
   - "NIST-SP-800-92 (audit logging, integrity verification)"
+  - "NIST-SP-800-92 (audit logging, integrity verification)`"
   - SOX
   - "SOX:2002 (access control audit evidence, change log)"
+  - "SOX:2002 (access control audit evidence, change log)`"
   - eIDAS
   - "eIDAS:2014/910/EU (signature on critical amendments)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -67,7 +70,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "eb389539-07c5-85f0-82d8-2e673d5f17c9"
+  computationUuid: "1e245119-20d9-86e0-8a52-b799646279c2"
   stages:
     - stage: path
       stageUuid: "42d7c04b-469d-8354-bfd8-d34c0d6851eb"
@@ -78,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "dcc4a99d-67a6-81d7-b107-c255f27c97ad"
     - stage: horo
-      stageUuid: "572dc351-97c9-84c7-96d4-52e0b7250ff7"
+      stageUuid: "f1ef1bda-c499-8316-9ab4-40c34af23801"
     - stage: seal
       stageUuid: "d8757962-66a2-8481-8f62-0a54912185e0"
     - stage: uuid
-      stageUuid: "9da4bd95-4c0a-8c84-a981-45af4efc5245"
+      stageUuid: "3a5a39dc-8ee1-8a34-8deb-b2d46caed5ef"
 version: 2
 ---
 # fiscal-period-snapshots

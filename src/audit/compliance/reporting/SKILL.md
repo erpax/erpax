@@ -1,11 +1,11 @@
 ---
 name: reporting
 description: "Use when implementing or referencing Phase B6: Audit & Compliance Reporting."
-atomPath: audit/compliance/reporting
-coordinate: audit/compliance/reporting · 5/round · 6856d1c7
-contentUuid: "fc6dcefd-402e-59ab-b39e-018841162463"
-diamondUuid: "ec92f658-3a94-8791-833b-dad369f0dcf2"
-uuid: "6856d1c7-c2af-81d8-902c-590dbdc98b10"
+atomPath: "audit/compliance/reporting"
+coordinate: "audit/compliance/reporting · 5/round · cb850a4d"
+contentUuid: "82133a31-6a8d-567d-8ccb-ffb93555fbbc"
+diamondUuid: "1a26b88d-e05a-858e-976e-450e4c1665db"
+uuid: "cb850a4d-aaaa-8823-b7e0-4ef8bcc496f0"
 horo: 5
 bonds:
   in:
@@ -36,9 +36,11 @@ standards:
   - "EU-2022/2555"
   - "EU-2022/868"
   - GDPR Art. 32 Data Protection
+  - "GDPR Art. 32 Data Protection`"
   - "IAS-1"
   - "IAS-1:2023 Presentation of Financial Statements"
   - "NIST SP 800-92 Computer Security Incident Handling"
+  - "NIST SP 800-92 Computer Security Incident Handling`"
   - "NIST-SP-800-63"
   - "NIST-SP-800-92"
   - "OECD Pillar Two:2023 Global Minimum Tax"
@@ -49,6 +51,7 @@ standards:
   - "SAF-T:3.0.2 Standard Audit File (Tax)"
   - "US-CTA-2021"
   - banner barrel (the regulatory contract)
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
@@ -67,7 +70,7 @@ neighbors:
     - merge
     - sti
 signatures:
-  computationUuid: "a0c052ae-6076-82de-8cea-198477475596"
+  computationUuid: "49da5bab-3e07-8e42-8fc8-e6400846d8af"
   stages:
     - stage: path
       stageUuid: "ff906584-7cd3-86ed-822c-d5619e136f2c"
@@ -78,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "a33cf334-e2ab-8c33-998d-ff03bbe35f68"
     - stage: horo
-      stageUuid: "6275b40d-0f43-8926-9766-b503f2d0755b"
+      stageUuid: "333f9207-86e8-8d09-8c66-a7c6bf04c632"
     - stage: seal
       stageUuid: "c4da9bb5-a0ac-8412-8b35-c0699d4468f0"
     - stage: uuid
-      stageUuid: "0cf0a779-ad2e-85b7-8430-7725efec51d9"
+      stageUuid: "f2acb9b6-dfcb-8d25-b488-867fc4888027"
 version: 2
 ---
 # Phase B6: Audit & Compliance Reporting

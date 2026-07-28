@@ -40,7 +40,7 @@ export function isIndexImport(spec: string, root = SRC): boolean {
 
 export const BARREL_ALIASES: Readonly<Record<string, string>> = {
   '@/payload-types': '@/types',
-  '@/corpus/index.mts': '@/corpus',
+  '@/corpus/index': '@/corpus',
   '@/payload.config': '@/payload',
 }
 

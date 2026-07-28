@@ -1,12 +1,12 @@
 ---
 name: batches
 description: "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection."
-atomPath: items/batches
-coordinate: items/batches · 5/round · 8a36d611
-contentUuid: "12dc76fd-f940-5f67-b015-77a29fbc9272"
-diamondUuid: "35060df3-de8f-87d1-aa59-5d8a788638e4"
-uuid: "8a36d611-3cf1-8a0a-97ce-a84ffba4ceaa"
-horo: 5
+atomPath: "items/batches"
+coordinate: "items/batches · 8/crest · 07da66a6"
+contentUuid: "29390216-44d0-5112-9751-3575dc9767ee"
+diamondUuid: "cd7f561a-011b-863d-8e95-4c2ccb1c1834"
+uuid: "07da66a6-a183-86ee-914b-b6b1e2677886"
+horo: 8
 bonds:
   in:
     - accounting
@@ -36,11 +36,14 @@ standards:
   - "IATF 16949:2016 §8.5.2.1 automotive-traceability"
   - "IFRS IAS-2 §23-§27 cost-formula-specific-identification"
   - "ISO 22005:2007 feed-and-food-chain-traceability"
+  - "ISO 22005:2007 feed-and-food-chain-traceability`"
   - "ISO 9001:2015 §8.5.2 identification-and-traceability"
-  - "ISO-19011:2018 audit-trail lot-genealogy-evidence"
+  - "ISO 9001:2015 §8.5.2 identification-and-traceability`"
   - "ISO-8601-1:2019 date-time manufacture-expiry-dates"
+  - "ISO-8601-1:2019 date-time manufacture-expiry-dates`"
   - "ISO-9001"
   - "SOX §404 internal-controls traceability-control TOM-TRACE-01"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -67,7 +70,7 @@ neighbors:
     - law
     - standard
 signatures:
-  computationUuid: "8f4b600c-fbe2-8a1b-9913-d2d4fd5c082e"
+  computationUuid: "2b34cc7a-bd41-8857-8cda-bad1647a1345"
   stages:
     - stage: path
       stageUuid: "aefe3c34-f084-86b3-ad32-498d7d774cbb"
@@ -78,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "c3d6a8a3-bfd3-865c-a91f-81e7620b1a9a"
     - stage: horo
-      stageUuid: "f0567989-9164-8fe2-96f5-6795d2f5c867"
+      stageUuid: "9d52cfed-7172-8e94-b1b3-e1961b164db4"
     - stage: seal
       stageUuid: "88ca933f-041e-8dd1-aaae-15e03c9dc0c3"
     - stage: uuid
-      stageUuid: "9a54b42c-8ebf-8b1c-9061-b2fd5178fba6"
+      stageUuid: "a914a750-5e34-853f-acba-d43370bac45c"
 version: 2
 ---
 # batches

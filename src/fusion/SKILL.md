@@ -2,11 +2,11 @@
 name: fusion
 description: "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root."
 atomPath: fusion
-coordinate: fusion · 8/crest · 7fad9fde
-contentUuid: "ed8acd9c-ac3c-580a-aa7c-073cd4cf9a19"
-diamondUuid: "4c5a24f7-313d-8c0c-8a91-c050af765715"
-uuid: "7fad9fde-846a-8484-b9dc-b1546a4d46f1"
-horo: 8
+coordinate: "fusion · 1/base · 7e12496a"
+contentUuid: "77c74910-741c-558d-9ab3-90fa74fe8933"
+diamondUuid: "fa8cd435-b6b4-88c8-b196-fc8a8bc4f947"
+uuid: "7e12496a-81d8-8409-aa33-3b28289a57de"
+horo: 1
 bonds:
   in:
     - akashic
@@ -25,6 +25,7 @@ bonds:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -58,6 +59,7 @@ bonds:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -76,10 +78,9 @@ bonds:
     - zeropoint
 typography:
   partition: fusion
-  bondDegree: 109
+  bondDegree: 113
   neighbors: []
-standards:
-  - "computed from the live matrix, never hand-asserted"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -122,6 +123,7 @@ neighbors:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -155,6 +157,7 @@ neighbors:
     - gate
     - gravity
     - law
+    - leftover
     - link
     - mass
     - matrix
@@ -172,7 +175,7 @@ neighbors:
     - whole
     - zeropoint
 signatures:
-  computationUuid: "5217496a-ad8d-8cfc-b7e2-6893f31e04eb"
+  computationUuid: "1766b445-093d-867a-b35e-cd3eb75f4769"
   stages:
     - stage: path
       stageUuid: "67cba431-d355-8b72-bb9c-d1c47cc97124"
@@ -183,11 +186,11 @@ signatures:
     - stage: links
       stageUuid: "c0afab77-e3fa-80e6-a2ab-82d87b60b3d7"
     - stage: horo
-      stageUuid: "097df5a0-6e4d-8b2e-9d0e-a186be5b5937"
+      stageUuid: "23ec31fa-ba60-8f69-94ef-aaae3d452a93"
     - stage: seal
-      stageUuid: "09bdd6c4-3bef-8820-8dbb-40494f37bb34"
+      stageUuid: "e7c0bc95-efea-84fe-973f-16f9b6af4224"
     - stage: uuid
-      stageUuid: "993cef44-f949-83c3-bf12-31241160fe1a"
+      stageUuid: "2353fc51-77e8-87a2-85de-32ede97b5565"
 version: 2
 ---
 # fusion — the reactor that fuses atoms into the one matrix

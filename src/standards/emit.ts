@@ -78,6 +78,10 @@ function sectionOf(value: string): string {
 
 function matcherFor(std: RegisteredStandard): RegExp {
   if (std.match) return new RegExp(std.match, 'i')
+  // EU-2015/849 must NOT match ISO-4217:2015 — longest-digit alone is a false wall.
+  // Require the year/number (or trailing lettered suffix) so AMLD citations are real.
+  const eu = std.id.match(/^EU-(\d{4}\/\d+[A-Za-z0-9-]*)$/i)
+  if (eu) return new RegExp(eu[1]!.replace('/', '\\/'), 'i')
   const fm = std.id.match(/^([A-Za-z/]+)-(\d+[A-Za-z]?)$/)
   if (fm) return new RegExp(fm[1]!.replace('/', '\\/') + '[- ]?' + fm[2] + '\\b', 'i')
   const big = (std.id.match(/\d{3,}/g) ?? []).sort((a, b) => b.length - a.length)[0]
@@ -214,6 +218,10 @@ const DEPTH_RANK: Readonly<Record<ImplementationDepth, number>> = { uncited: 0, 
  * that stands alone is isolated. The score rewards both: a standard is well-implemented-and-fused only if
  * it is ENFORCED and SHARES its matter with many others — enforced-and-alone or fused-but-prose both lose.
  *
+ * VIOLATION — prose in a gate folder is NOT gated. Markdown under src/rules (or law/access
+ * SKILL.md) is still prose; gated requires a .ts under rules|law|access (fail-closed code).
+ * Counting markdown in the gate tree as depth=gated was the wall that was only paper.
+ *
  * Honest boundary: depth reads the citing file's KIND, not that the code correctly implements the standard
  * (that is [[rules]]/audience's question); and fusion samples the top-24 citing files per standard (the
  * catalogue's cap), so a very widely-cited standard's fusion is a lower bound.
@@ -230,7 +238,8 @@ export function standardImplementation(cwd: string = process.cwd()): StandardImp
     .map((e) => {
       let depth: ImplementationDepth = e.count === 0 ? 'uncited' : 'prose'
       if (e.modules.some((m) => /\.tsx?$/.test(m.path))) depth = 'coded'
-      if (e.modules.some((m) => /^src\/(rules|law|access)\//.test(m.path))) depth = 'gated'
+      // GATED = fail-closed CODE in the gate tree — never markdown alone (prose-in-gate-folder is a violation).
+      if (e.modules.some((m) => /^src\/(rules|law|access)\//.test(m.path) && /\.tsx?$/.test(m.path))) depth = 'gated'
       const fused = new Set<string>()
       for (const m of e.modules) for (const other of byFile.get(m.path) ?? []) if (other !== e.id) fused.add(other)
       const score = DEPTH_RANK[depth] * (1 + Math.log2(1 + fused.size))
@@ -240,11 +249,32 @@ export function standardImplementation(cwd: string = process.cwd()): StandardImp
 }
 
 /**
+ * Prose cited only under rules|law|access (no .ts gate) — the VIOLATION "gates allow only prose".
+ * These look like walls in the folder tree but are paper; depth must stay prose/coded, never gated.
+ */
+export function proseInGateFolderViolations(cwd: string = process.cwd()): readonly {
+  readonly id: string
+  readonly paths: readonly string[]
+}[] {
+  const { entries } = buildStandardsCatalogue(cwd)
+  const out: { id: string; paths: readonly string[] }[] = []
+  for (const e of entries) {
+    const inGate = e.modules.filter((m) => /^src\/(rules|law|access)\//.test(m.path))
+    if (inGate.length === 0) continue
+    const gateTs = inGate.some((m) => /\.tsx?$/.test(m.path))
+    if (gateTs) continue
+    // only prose (.md / other) under the gate folders
+    out.push({ id: e.id, paths: inGate.map((m) => m.path) })
+  }
+  return out
+}
+
+/**
  * DECLARED: the families a signer/auditor/regulator RELIES ON as a wall — they must be fail-closed
  * gated, not merely coded. Arguable in the open (the [[rules]]/audience split): no theorem says SOX must
  * block; it is written here once so it can be contested. Enforcement-mandatory ⇒ `coded` is not enough.
  */
-export const MUST_GATE = /SOX|§404|§302|GDPR|Наредба|СУПТО|ЗДДС|ЗСч|PCI-?DSS|ISO.?27001|NIST-SP-800|AMLD|EU-2015\/849/i
+export const MUST_GATE = /SOX|§404|§302|GDPR|Наредба|СУПТО|ЗДДС|ZDDS|ЗСч|PCI-?DSS|ISO.?27001|NIST-SP-800|AMLD|EU-2015\/849/i
 
 /** Enforcement-mandatory standards that are CITED but not GATED — the missing walls. */
 export function ungatedMandatory(cwd: string = process.cwd()): StandardImplementation[] {
@@ -264,6 +294,22 @@ export function assertStandardsGated(cwd: string = process.cwd(), ceiling: numbe
   throw new Error(
     `✖ standards — ${ungated.length} enforcement-mandatory standard(s) cited but NOT gated (fail-closed) exceeds ceiling ${ceiling}: ` +
       `${ungated.map((s) => `${s.id}(${s.depth})`).slice(0, 6).join(' ')} — wire each to a rules/law/access gate, or the wall a signer relies on is missing.`,
+  )
+}
+
+/**
+ * FAIL-CLOSED — gates must not be prose-only. A citation under rules|law|access that has no `.ts`
+ * sibling in that tree is paper posing as a wall. Baseline 0 (theorem): never allow.
+ */
+export function assertNoProseOnlyGates(cwd: string = process.cwd()): void {
+  const v = proseInGateFolderViolations(cwd)
+  if (v.length === 0) return
+  throw new Error(
+    `✖ standards — ${v.length} standard(s) cited only as PROSE under rules|law|access (gates allow only prose = VIOLATION): ` +
+      `${v
+        .slice(0, 6)
+        .map((x) => `${x.id}←${x.paths[0]}`)
+        .join(' ')} — move the @standard banner into a .ts gate (rules/law/access), or remove the false wall.`,
   )
 }
 
@@ -401,8 +447,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // ENFORCEMENT ratchet: an enforcement-mandatory standard cited but not fail-closed gated is a
     // missing wall. Ceiling ratchets DOWN as each is wired to a rules/law/access gate (9→255 horizon).
     try {
-      assertStandardsGated(cwd, 6)
+      assertStandardsGated(cwd, 0)
       console.log('OK — every enforcement-mandatory standard within the gating ratchet.')
+      assertNoProseOnlyGates(cwd)
+      console.log('OK — no prose-only gates (gates require .ts under rules|law|access).')
     } catch (e) {
       console.error((e as Error).message)
       process.exit(1)

@@ -1,7 +1,5 @@
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'payload'
 
-import { revalidatePath, revalidateTag } from 'next/cache'
-
 import type { Post } from '@/types'
 
 /**
@@ -12,7 +10,7 @@ import type { Post } from '@/types'
  * @standard W3C HTML5 Living Standard
  * @see docs/STANDARDS.md §4.3
  */
-export const revalidatePost: CollectionAfterChangeHook<Post> = ({
+export const revalidatePost: CollectionAfterChangeHook<Post> = async ({
   doc,
   previousDoc,
   req: { payload, context },
@@ -20,6 +18,7 @@ export const revalidatePost: CollectionAfterChangeHook<Post> = ({
   if (process.env.VITEST) {
     return doc
   }
+  const { revalidatePath, revalidateTag } = await import('next/cache')
 
   if (!context.disableRevalidate) {
     if (doc._status === 'published') {
@@ -44,10 +43,11 @@ export const revalidatePost: CollectionAfterChangeHook<Post> = ({
   return doc
 }
 
-export const revalidateDelete: CollectionAfterDeleteHook<Post> = ({ doc, req: { context } }) => {
+export const revalidateDelete: CollectionAfterDeleteHook<Post> = async ({ doc, req: { context } }) => {
   if (process.env.VITEST) {
     return doc
   }
+  const { revalidatePath, revalidateTag } = await import('next/cache')
 
   if (!context.disableRevalidate) {
     const path = `/posts/${doc?.slug}`

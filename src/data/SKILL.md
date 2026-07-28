@@ -2,11 +2,11 @@
 name: data
 description: "Use when reasoning about data — Data associated with the event, like for instance a log message."
 atomPath: data
-coordinate: data · 7/descent · ca6e59f7
-contentUuid: "d07df961-801f-51a6-bc43-87f5009c27d0"
-diamondUuid: "5cda76dd-4f8d-836d-b25e-8a54562ea07f"
-uuid: "ca6e59f7-3ad3-883e-bac8-0a081b517d3a"
-horo: 7
+coordinate: "data · 1/base · 9f925b8b"
+contentUuid: "828d11af-6811-5c1b-8140-017ed940e34a"
+diamondUuid: "ee55575f-bbfe-89ad-b2fb-8caf83b27aa1"
+uuid: "9f925b8b-5e35-8934-af52-d9a67eda32a5"
+horo: 1
 bonds:
   in:
     - catalog
@@ -91,7 +91,7 @@ neighbors:
     - supporting
     - type
 signatures:
-  computationUuid: "fc0848a7-0c0c-823b-b1f4-b924585fdb22"
+  computationUuid: "0dd52ce9-f8d6-8bac-b24c-e498bb8df16c"
   stages:
     - stage: path
       stageUuid: "f80a32fc-bb02-8350-bc78-1bf4fafdf349"
@@ -102,11 +102,11 @@ signatures:
     - stage: links
       stageUuid: "110600f7-fb1c-8c96-89ed-676602fb39cb"
     - stage: horo
-      stageUuid: "84dde55a-7c54-8c98-a343-aa2c54744e2c"
+      stageUuid: "09b94afb-c609-8fa4-bdea-1268ba9175d8"
     - stage: seal
       stageUuid: "74351e44-f0bb-8526-90a2-1fe7f7729f7c"
     - stage: uuid
-      stageUuid: "cb216495-a0f0-83f4-8766-17b4bb03e2e9"
+      stageUuid: "18241568-6076-8971-ae4d-64d5d55ab8ff"
 version: 2
 ---
 # data

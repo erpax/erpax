@@ -1,12 +1,12 @@
 ---
 name: pipelines
 description: "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection."
-atomPath: cost/centers/job/positions/recruiting/pipelines
-coordinate: cost/centers/job/positions/recruiting/pipelines · 5/round · cd49baef
-contentUuid: "9da8228b-6be7-5a3a-84d0-75a046bce1f2"
-diamondUuid: "79350d65-b8ba-8249-8d41-3c66fec4f11c"
-uuid: "cd49baef-abf3-8c21-89b6-6742ad72343c"
-horo: 5
+atomPath: "cost/centers/job/positions/recruiting/pipelines"
+coordinate: "cost/centers/job/positions/recruiting/pipelines · 8/crest · f5c2252e"
+contentUuid: "b89d656a-2875-5be5-9a6b-92c470fbcd26"
+diamondUuid: "10e2d0f7-472e-8443-a561-b679e1929e55"
+uuid: "f5c2252e-f502-85df-9a54-81ae3f6390c5"
+horo: 8
 bonds:
   in:
     - access
@@ -31,11 +31,12 @@ typography:
   neighbors: []
 standards:
   - "ADA / EEOC US-equal-opportunity"
-  - EU Equal Treatment Directive 2000/78
+  - "EU Equal Treatment Directive 2000/78"
   - "GDPR Art.5(1)(e) storage-limitation"
   - "GDPR Art.6(1)(b) recruitment-lawful-basis"
-  - "ISO-19011:2018 audit-trail recruiting-evidence"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -62,7 +63,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "f5357b45-e474-87a6-8893-5273be7660c7"
+  computationUuid: "715cd83a-5d7d-8d1f-a470-e6e04dfff546"
   stages:
     - stage: path
       stageUuid: "4d849f42-98d4-8e67-bc26-040e53d4ec98"
@@ -73,11 +74,11 @@ signatures:
     - stage: links
       stageUuid: "666ce1f9-d459-8f90-bc27-19e53f781c25"
     - stage: horo
-      stageUuid: "44348790-bd04-8b7f-a50a-a9a4a0dc11b0"
+      stageUuid: "91162533-3b98-84fc-80b4-689d5ab6ede2"
     - stage: seal
       stageUuid: "b0184ca8-a938-82a6-bbc4-e3c778f21623"
     - stage: uuid
-      stageUuid: "79027a84-bf61-8a38-8588-e15ab2d61bdf"
+      stageUuid: "804f7688-b3ac-8905-b4f9-df880f51f2fc"
 version: 2
 ---
 # recruiting-pipeline

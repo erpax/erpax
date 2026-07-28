@@ -2,11 +2,11 @@
 name: ai
 description: "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel."
 atomPath: ai
-coordinate: ai · 4/weave · 120e69b4
-contentUuid: "e04a68d7-3b30-58de-9976-8a59bb0c9cf1"
-diamondUuid: "d84b469d-6228-851d-90d5-96143cca7dcf"
-uuid: "120e69b4-ee6e-89e2-953d-106134f1b117"
-horo: 4
+coordinate: "ai · 1/base · 385e3d9b"
+contentUuid: "a35559b3-e46a-5cad-ac6a-f1b3563b95d4"
+diamondUuid: "37a36ecd-23ad-8bf5-8f39-067964b4ac76"
+uuid: "385e3d9b-b930-8c08-acc1-76f9a7df1cf5"
+horo: 1
 bonds:
   in:
     - bindings
@@ -62,21 +62,24 @@ standards:
   - "ISO-27037"
   - "ISO-8601-1"
   - "ISO/IEC 42001:2023 ai-management-system"
+  - "ISO/IEC 42001:2023 ai-management-system`"
   - "ISO/IEC-23894"
   - "ISO/IEC-25010"
   - "ISO/IEC-27001:2022"
   - "ISO/IEC-42001"
   - "NIST-AI-RMF"
   - "NIST-FIPS-180-4"
+  - "OWASP-ASVS"
   - "RFC-4122"
   - "RFC-8785"
   - "RFC-9562"
   - "UN-CEFACT"
   - "WCAG-2.1"
   - "WCO-HS"
+  - "— the instrument reads SKILL.md) -->"
 bindings:
-  - ai/AI
-  - vectorize/VECTORIZE_DOCS
+  - "ai/AI"
+  - "vectorize/VECTORIZE_DOCS"
 neighbors:
   wikilink:
     - industry
@@ -94,7 +97,7 @@ neighbors:
     - law
     - models
 signatures:
-  computationUuid: "b9b4485a-c10a-8a37-abe0-60ec05dc66ea"
+  computationUuid: "87b85501-377f-8e73-9f56-5c5874613bc0"
   stages:
     - stage: path
       stageUuid: "8e6da7ff-0947-8c12-b941-623c69161362"
@@ -105,11 +108,11 @@ signatures:
     - stage: links
       stageUuid: "ff12b777-fa00-8f18-acf8-4acd6058dc07"
     - stage: horo
-      stageUuid: "26f01e67-2099-84cb-8a16-2869cb734306"
+      stageUuid: "42dc441e-75cf-804a-aff0-13a9623cc031"
     - stage: seal
-      stageUuid: "f3b34506-5041-817c-816d-e538428e2450"
+      stageUuid: "fc61a7fe-c9ef-81cd-8704-4946877a6865"
     - stage: uuid
-      stageUuid: "df436b8c-ec32-80bf-bc92-7a2e565409f3"
+      stageUuid: "094926e0-28d1-8169-a6a4-7e7b162325c6"
 version: 2
 ---
 # ai — the AI services barrel

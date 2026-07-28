@@ -1,12 +1,12 @@
 ---
 name: eliminations
 description: "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register."
-atomPath: consolidation/eliminations
-coordinate: consolidation/eliminations · 4/weave · d1535dd7
-contentUuid: "c75097ec-4c32-5e16-8070-6ff280d297df"
-diamondUuid: "17528d5a-a1fe-8949-a0d8-c2a2b480c035"
-uuid: "d1535dd7-43ef-8943-a9e4-2ceabd89f3d8"
-horo: 4
+atomPath: "consolidation/eliminations"
+coordinate: "consolidation/eliminations · 7/descent · 5e96cdbd"
+contentUuid: "9d2ec46d-ad3a-5436-936f-ee57d236e992"
+diamondUuid: "77d40f34-aae3-8740-b298-53f41289e107"
+uuid: "5e96cdbd-e242-8f5c-9128-8d5886aa9d94"
+horo: 7
 bonds:
   in:
     - consolidation
@@ -26,12 +26,14 @@ typography:
 standards:
   - "IFRS IAS-21 §39 foreign-currency-translation-on-consolidation"
   - "IFRS IFRS-10 §B86 consolidated-financial-statements"
-  - "ISO-19011:2018 audit-trail consolidation-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time consolidation-date"
+  - "ISO-8601-1:2019 date-time consolidation-date`"
   - "SOX §404 internal-controls consolidation-control TOM-CON-01"
   - "US-GAAP ASC-810-10-45 consolidation-elimination"
   - "US-GAAP ASC-830-30 foreign-currency-translation"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -49,7 +51,7 @@ neighbors:
     - law
     - transactions
 signatures:
-  computationUuid: "faf1113d-2a81-8658-90ae-6e7a98e0a3e1"
+  computationUuid: "18b85d7f-f473-8979-8ed7-dec52f60f5e5"
   stages:
     - stage: path
       stageUuid: "9e055a7a-931a-8925-a579-e0400f142749"
@@ -60,11 +62,11 @@ signatures:
     - stage: links
       stageUuid: "511f5e11-7f93-8122-94c4-7270bcbf3642"
     - stage: horo
-      stageUuid: "0ac788f9-5c54-8f18-b98d-ffeffb2ec751"
+      stageUuid: "3e9f9b40-5bb7-8b6c-93e9-e6a4a37d99e9"
     - stage: seal
-      stageUuid: "8dd42ffa-cd7e-82ed-b98f-8d2156768681"
+      stageUuid: "faa78d31-8f08-8987-aafb-15c904248275"
     - stage: uuid
-      stageUuid: "cd63a814-1b75-8a8a-b531-27162c4c3e41"
+      stageUuid: "e7f7f5c3-cc3d-851a-bdda-279dc0aab945"
 version: 2
 ---
 # consolidation-eliminations

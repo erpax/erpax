@@ -1,12 +1,12 @@
 ---
 name: transactions
 description: "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection."
-atomPath: bank/accounts/bank/transactions
-coordinate: bank/accounts/bank/transactions · 7/descent · 86ea2ad6
-contentUuid: "768a0f22-9bf1-5486-ac26-a1cad35433de"
-diamondUuid: "161025ef-c444-8716-9e6d-11cded76aefd"
-uuid: "86ea2ad6-1fa2-8270-9027-c8af57338239"
-horo: 7
+atomPath: "bank/accounts/bank/transactions"
+coordinate: "bank/accounts/bank/transactions · 1/base · 3f875ced"
+contentUuid: "ace59fe2-dcf9-57d5-b52d-6a3666400836"
+diamondUuid: "f9bd08c3-ecf1-8644-a104-44fbf331de69"
+uuid: "3f875ced-3fcf-8a1d-97a5-545163c4d086"
+horo: 1
 bonds:
   in:
     - accounting
@@ -56,25 +56,37 @@ standards:
   - "EU-Taxonomy-2020/852"
   - "IFRS IAS-7 statement-of-cash-flows"
   - "ISO-11649:2009 financial-services-creditor-reference"
+  - "ISO-11649:2009 financial-services-creditor-reference`"
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
-  - "ISO-19011:2018 audit-trail reconciliation-line-evidence"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-20022"
   - "ISO-20022 ChargeBearerType1Code"
+  - "ISO-20022 ChargeBearerType1Code`"
   - "ISO-20022 CreditDebitCode"
+  - "ISO-20022 CreditDebitCode`"
   - "ISO-20022 EntryStatus2Code"
+  - "ISO-20022 EntryStatus2Code`"
   - "ISO-20022 ExternalBankTransactionDomain1Code"
+  - "ISO-20022 ExternalBankTransactionDomain1Code`"
   - "ISO-20022 ExternalBankTransactionFamily1Code"
+  - "ISO-20022 ExternalBankTransactionFamily1Code`"
   - "ISO-20022 ExternalBankTransactionSubFamily1Code"
+  - "ISO-20022 ExternalBankTransactionSubFamily1Code`"
   - "ISO-20022 camt.053 bank-to-customer-statement"
+  - "ISO-20022 camt.053 bank-to-customer-statement`"
   - "ISO-4217"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time value-date booking-date matched-at"
+  - "ISO-8601-1:2019 date-time value-date booking-date matched-at`"
   - "ISO-9362"
   - "ISO-9362:2022 bic"
+  - "ISO-9362:2022 bic`"
   - "SOX §404 internal-controls bank-reconciliation"
   - "US-GAAP ASC-230 cash-flows"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -109,7 +121,7 @@ neighbors:
     - transaction
     - trinity
 signatures:
-  computationUuid: "c8a74b5c-85d2-824d-a1b9-7324cd9d3414"
+  computationUuid: "514de969-abcc-87cf-9bc3-dd54bd6ccc9e"
   stages:
     - stage: path
       stageUuid: "9bc72c7d-c011-87de-9ab1-8199c303678f"
@@ -120,11 +132,11 @@ signatures:
     - stage: links
       stageUuid: "3aec9d04-56f1-8b47-95dd-dd1dcc4349b6"
     - stage: horo
-      stageUuid: "b413752e-c37c-87c5-b36f-d0caa0af688b"
+      stageUuid: "eebdb9a3-52ab-8b49-8bba-a31801856e81"
     - stage: seal
       stageUuid: "b723adb2-6ded-8e95-aef0-6ca2dfe75fed"
     - stage: uuid
-      stageUuid: "49ea0dd7-ffad-85b3-897c-7ab42b8045f5"
+      stageUuid: "fff83da9-ab39-804f-9620-824437d87eda"
 version: 2
 ---
 # bank-transactions

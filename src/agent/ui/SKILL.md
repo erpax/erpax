@@ -1,42 +1,32 @@
 ---
 name: ui
 description: "Use when reasoning about the trained UI agent — it renders any atom to its UI (the sensory render + the page) from the atom's content-uuid, trained by the rendering teams on the whole rendering layer, covering the whole corpus because every atom has a UI."
-atomPath: agent/ui
-coordinate: agent/ui · 2/share · 5ad89eab
-contentUuid: "51add472-6ff5-55fe-889a-526ccd06d190"
-diamondUuid: "3e025baf-2bd1-85d0-87e1-9ab83225575c"
-uuid: "5ad89eab-3599-8877-a328-18e2c8786cd6"
-horo: 2
+atomPath: "agent/ui"
+coordinate: "agent/ui · 1/base · 11bcba68"
+contentUuid: "5ad33e97-f7fd-5ab0-b14e-5ffcc61db003"
+diamondUuid: "06b721dd-7d96-8d67-933c-239749922087"
+uuid: "11bcba68-cd3f-8573-b3c6-bc39d0e01481"
+horo: 1
 bonds:
   in:
     - agent
-    - atom
-    - aura
-    - component
-    - design
+    - css
+    - dimension
     - law
-    - pixel
-    - render
-    - uuid
-    - vitepress
+    - quantum
+    - ui
   out:
-    - atom
-    - aura
-    - component
-    - design
+    - css
+    - dimension
     - law
-    - pixel
-    - render
-    - uuid
-    - vitepress
+    - quantum
+    - ui
 typography:
   partition: agent
-  bondDegree: 28
+  bondDegree: 27
   neighbors:
     - aura
 standards:
-  - "every facet computed from the atom's content-uuid; coverage read live from the matrix"
-  - "every facet computed from the atom's content-uuid; coverage read live from the matrix, never asserted"
   - "the analog aura — every UI colour/sound is a projection of one content-uuid"
 bindings: []
 neighbors:
@@ -51,27 +41,19 @@ neighbors:
     - uuid
     - vitepress
   matrix:
-    - atom
-    - aura
-    - component
-    - design
+    - css
+    - dimension
     - law
-    - pixel
-    - render
-    - uuid
-    - vitepress
+    - quantum
+    - ui
   backlinks:
-    - atom
-    - aura
-    - component
-    - design
+    - css
+    - dimension
     - law
-    - pixel
-    - render
-    - uuid
-    - vitepress
+    - quantum
+    - ui
 signatures:
-  computationUuid: "32409537-d89a-84c6-b72b-705fbd416586"
+  computationUuid: "3d62a68a-f9a6-8a77-aa5b-aeaaafd347dc"
   stages:
     - stage: path
       stageUuid: "a438d570-7343-8048-9778-b26c4b0e2bee"
@@ -82,11 +64,11 @@ signatures:
     - stage: links
       stageUuid: "fa8ebbd4-46b3-8979-be69-5eb3413c8440"
     - stage: horo
-      stageUuid: "5394b0f7-88df-8216-922f-6aa182fbb5d2"
+      stageUuid: "994de9d8-3742-8b7d-bacf-73e5360fd116"
     - stage: seal
       stageUuid: "f8c2bc00-af50-87c6-81aa-45385db65403"
     - stage: uuid
-      stageUuid: "85485701-952d-8406-ae30-3bdc50373233"
+      stageUuid: "bd1b206d-fa1f-8782-9bd8-591fd924398d"
 version: 2
 ---
 # agent/ui — the trained UI agent

@@ -1,32 +1,26 @@
 ---
 name: calculator
 description: "Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN)."
-atomPath: average/calculator
-coordinate: average/calculator · 1/base · 91991514
-contentUuid: "5e8598e7-15bd-5577-8f06-782a2f8fdcba"
-diamondUuid: "51863ff0-3d44-8348-944a-e90a1fabf76b"
-uuid: "91991514-606f-84e3-9876-45341ab64553"
+atomPath: "average/calculator"
+coordinate: "average/calculator · 1/base · 1939ef13"
+contentUuid: "a7f6a125-a1d5-5036-860d-b946ba13ee2c"
+diamondUuid: "f245b180-2ee8-8aab-a6d7-454f47742525"
+uuid: "1939ef13-0887-83dd-8e0e-1e21342da0b7"
 horo: 1
 bonds:
   in:
     - calculator
-    - collapse
+    - dry
     - law
     - medical
-    - merge
-    - risk
-    - sti
   out:
     - calculator
-    - collapse
+    - dry
     - law
     - medical
-    - merge
-    - risk
-    - sti
 typography:
   partition: average
-  bondDegree: 29
+  bondDegree: 30
   neighbors: []
 standards: []
 bindings: []
@@ -36,22 +30,16 @@ neighbors:
     - law
   matrix:
     - calculator
-    - collapse
+    - dry
     - law
     - medical
-    - merge
-    - risk
-    - sti
   backlinks:
     - calculator
-    - collapse
+    - dry
     - law
     - medical
-    - merge
-    - risk
-    - sti
 signatures:
-  computationUuid: "4e8073af-e59c-8e8f-8aec-2f7791743e71"
+  computationUuid: "f7f052fb-229f-8a5c-996c-e7fb8f6f6def"
   stages:
     - stage: path
       stageUuid: "9186c0ad-5e86-86aa-92c7-2d2e72b9a879"
@@ -62,11 +50,11 @@ signatures:
     - stage: links
       stageUuid: "0d7c30cc-2fc0-8ab4-86d7-9b35068a8015"
     - stage: horo
-      stageUuid: "7a65c59b-60d3-841a-8650-94c1624a0798"
+      stageUuid: "e3d92602-d0fc-82c8-9194-9b76b16f72b5"
     - stage: seal
       stageUuid: "05c242be-bee4-83f0-960f-5baba74b3e04"
     - stage: uuid
-      stageUuid: "386c9a3b-8c3a-8e6a-b03d-a8fff4230909"
+      stageUuid: "52b71243-ffc6-8f85-81a7-45794a5281e0"
 version: 2
 ---
 # average/calculator — the arithmetic-mean collapse

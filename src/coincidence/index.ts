@@ -57,7 +57,8 @@ export type Verdict = 'theorem' | 'coincidence' | 'mismatch'
  * @invariant only an EXACT closed-form identity (relative error 0) is a theorem; a measured match is a coincidence
  */
 export function classify(c: Claim, tolerance = 1e-3): Verdict {
-  const relError = c.target === 0 ? Math.abs(c.claimed) : Math.abs(c.claimed - c.target) / Math.abs(c.target)
+  const abs0 = (x: number) => (x < 0 ? -x : x)
+  const relError = c.target === 0 ? abs0(c.claimed) : abs0(c.claimed - c.target) / abs0(c.target)
   const exact = relError === 0
   if (c.closedForm && exact && c.freeParameters === 0) return 'theorem'
   if (relError <= tolerance) return 'coincidence' // matches, but fitted or measured — necessary, not sufficient
@@ -88,8 +89,11 @@ export function classify(c: Claim, tolerance = 1e-3): Verdict {
  * @invariant a per-inversion chance of 1 never decays — that is the signature of an invariant, not a coincidence
  */
 export function coincidenceAfterInversions(perInversionChance: number, inversions: number): number {
-  const p = Math.min(1, Math.max(0, perInversionChance))
-  return Math.pow(p, Math.max(0, Math.floor(inversions)))
+  const p = perInversionChance < 0 ? 0 : perInversionChance > 1 ? 1 : perInversionChance
+  const k = inversions < 0 ? 0 : inversions | 0
+  let r = 1
+  for (let i = 0; i < k; i++) r *= p
+  return r
 }
 
 /** The verdict of the inversion test — did it survive every inversion, and is it now invariant or still fragile? */

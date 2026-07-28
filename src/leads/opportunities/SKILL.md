@@ -1,12 +1,12 @@
 ---
 name: opportunities
 description: "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection."
-atomPath: leads/opportunities
-coordinate: leads/opportunities · 8/crest · dff2ec08
-contentUuid: "25800e72-ab1b-5845-8e27-8353c0a1e642"
-diamondUuid: "1323705d-8a40-8e46-bfe4-4629289ff049"
-uuid: "dff2ec08-7570-817b-9ccc-40fd9d706dc2"
-horo: 8
+atomPath: "leads/opportunities"
+coordinate: "leads/opportunities · 4/weave · c0ef92fe"
+contentUuid: "bcbb3e95-15c4-51ff-9779-6bb286a48907"
+diamondUuid: "64c14bb4-7a33-892f-9f38-43d6b0cd0631"
+uuid: "c0ef92fe-3fe4-8086-bef9-6c76b330244e"
+horo: 4
 bonds:
   in:
     - activities
@@ -38,9 +38,11 @@ typography:
   neighbors: []
 standards:
   - "IFRS IFRS-15 §9 contract-existence-criteria"
-  - "ISO-19011:2018 audit-trail crm-pipeline"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -73,7 +75,7 @@ neighbors:
     - prospect
     - segments
 signatures:
-  computationUuid: "f4eacf77-9e40-8b04-ab50-f4277b275c60"
+  computationUuid: "882b82e0-47ce-870d-8446-6a27b2cc7864"
   stages:
     - stage: path
       stageUuid: "1333721a-cbe5-8c00-aac6-61a11f3015ee"
@@ -84,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "c65ff7f9-1a5c-8bc5-b4ac-d5eccf9cddcf"
     - stage: horo
-      stageUuid: "a5d09a86-e193-8fac-b578-ba6843de80d5"
+      stageUuid: "33cfdb12-ce1a-8dc9-a10b-ad486b0333b6"
     - stage: seal
-      stageUuid: "2b6930c0-a034-8529-bf0c-ac7698a79740"
+      stageUuid: "fafa7689-027c-8f52-89eb-a2488087bcad"
     - stage: uuid
-      stageUuid: "a120adaf-edd5-8919-b14e-0861fe8048b3"
+      stageUuid: "b47ecea2-60f6-87f5-9e47-9500ddb8640c"
 version: 2
 ---
 # opportunities

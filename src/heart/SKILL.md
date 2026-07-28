@@ -2,10 +2,10 @@
 name: heart
 description: "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
 atomPath: heart
-coordinate: heart · 7/descent · 4c2c0a58
-contentUuid: "98a8b2c6-1a48-59a3-9e56-82c8ccf755ee"
-diamondUuid: "d6301949-d4ab-8076-b76a-76a92502c7de"
-uuid: "4c2c0a58-9431-89d5-8bd3-b353b773ecc7"
+coordinate: "heart · 7/descent · 250e88f0"
+contentUuid: "235f126d-03ec-5d79-a3fa-d75b322ba0e0"
+diamondUuid: "3bb135db-c36c-8564-b0a3-d99f2bec9c3c"
+uuid: "250e88f0-0fa7-8f06-a185-38e51b844df9"
 horo: 7
 bonds:
   in:
@@ -34,6 +34,7 @@ bonds:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
@@ -64,13 +65,14 @@ bonds:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
     - writing
 typography:
   partition: heart
-  bondDegree: 95
+  bondDegree: 98
   neighbors:
     - aura
 standards:
@@ -122,6 +124,7 @@ neighbors:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
@@ -152,12 +155,13 @@ neighbors:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
     - writing
 signatures:
-  computationUuid: "e6021211-2447-8444-8a5e-af4fa833f57b"
+  computationUuid: "69284d5d-6658-89ce-9c61-b831f08bbf31"
   stages:
     - stage: path
       stageUuid: "c7c7df03-f98b-8f37-af43-b4587be908b9"
@@ -168,11 +172,11 @@ signatures:
     - stage: links
       stageUuid: "51fc3bff-9bb7-8e5e-bdab-3cdfcb379155"
     - stage: horo
-      stageUuid: "681dbbc0-2fd0-879f-b7bd-1d17dad1e653"
+      stageUuid: "f4f55475-bcbc-888b-8160-84bdda67a8af"
     - stage: seal
-      stageUuid: "56757902-1e3a-82d6-ac0e-450d2b15952d"
+      stageUuid: "7aee94d4-a78d-8e07-ae90-ce0665ac6f46"
     - stage: uuid
-      stageUuid: "1a1c98ae-a3e9-8dc6-a92d-cbded3b4fa8c"
+      stageUuid: "4737553d-1bd3-8198-ac1d-e342fc78a423"
 version: 2
 ---
 # heart — the centre (4th chakra, green)

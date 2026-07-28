@@ -1,11 +1,11 @@
 ---
 name: runs
 description: "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection."
-atomPath: bank/accounts/payroll/runs
-coordinate: bank/accounts/payroll/runs · 5/round · b1e3ff22
-contentUuid: "dbc2a732-8765-5a3e-8b2c-298535228630"
-diamondUuid: "ebb5dd02-4b11-8794-8945-df6ba962cf30"
-uuid: "b1e3ff22-c4b8-8577-ba4a-15370b3729b5"
+atomPath: "bank/accounts/payroll/runs"
+coordinate: "bank/accounts/payroll/runs · 5/round · 6d1c5b7c"
+contentUuid: "5e93d996-e697-5c86-8dde-124f95c33295"
+diamondUuid: "65c4f733-4365-8e93-b885-388940c38efb"
+uuid: "6d1c5b7c-553c-8c3a-ae06-d3140db8230b"
 horo: 5
 bonds:
   in:
@@ -50,22 +50,26 @@ standards:
   - "IFRS IAS-19 employee-benefits short-term"
   - "IFRS IAS-19 §51 defined-contribution-plans"
   - "IFRS IAS-26 §13 §14 §17 retirement-benefit-plan-reporting (employer-side contributions feed the §17 plan-asset disclosures)"
-  - "ILO-C001"
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
-  - "ISO-19011:2018 audit-trail payroll-evidence"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-20022"
   - "ISO-20022 pain.001 customer-credit-transfer-initiation"
+  - "ISO-20022 pain.001 customer-credit-transfer-initiation`"
   - "ISO-4217"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time period payment-date"
+  - "ISO-8601-1:2019 date-time period payment-date`"
   - "ISO-9362"
   - "ISO-9362:2022 bic"
+  - "ISO-9362:2022 bic`"
   - "SOX §302 disclosure-controls"
   - "SOX §404 internal-controls four-eyes"
   - "US-GAAP ASC-710 compensation-general"
   - "US-GAAP ASC-715 compensation-retirement-benefits"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -102,7 +106,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "1c70b5ec-902a-871d-85be-ca3e0e4f7419"
+  computationUuid: "5dc9e6f5-a321-8f1a-8bc4-2f39eb56ea22"
   stages:
     - stage: path
       stageUuid: "e00cdde0-106c-8683-98dd-e7a809314746"
@@ -113,11 +117,11 @@ signatures:
     - stage: links
       stageUuid: "dc485665-41d9-8d5c-a6f4-57fd5be60fe6"
     - stage: horo
-      stageUuid: "9d34f9f1-adf8-8309-9fd4-7f8f14f77a8d"
+      stageUuid: "4f116aee-2f40-86a9-aefc-ae31308dd48f"
     - stage: seal
       stageUuid: "74143566-4348-8b45-a1d7-072cfcf61520"
     - stage: uuid
-      stageUuid: "6e67d40e-4da5-8124-8987-1dd800fe8c1c"
+      stageUuid: "b00cd22e-4194-8210-9551-e2684d894887"
 version: 2
 ---
 # payroll-runs

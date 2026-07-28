@@ -1,8 +1,84 @@
 ---
 name: millennium
 description: "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH."
+atomPath: millennium
+coordinate: "millennium · 5/round · 5a65144e"
+contentUuid: "29ba5a26-0299-5a5f-9ef1-c3b8f92059ce"
+diamondUuid: "cde088ea-249c-8053-9a58-de520973f0e7"
+uuid: "5a65144e-37dd-835e-b2f9-2d06ee51b9cf"
+horo: 5
+bonds:
+  in:
+    - coincidence
+    - duel
+    - law
+    - merge
+    - quantum
+    - rules
+    - seeing
+    - theorem
+  out:
+    - coincidence
+    - duel
+    - law
+    - merge
+    - quantum
+    - rules
+    - seeing
+    - theorem
+typography:
+  partition: millennium
+  bondDegree: 24
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - coincidence
+    - duel
+    - law
+    - merge
+    - quantum
+    - rules
+    - seeing
+    - theorem
+  matrix:
+    - coincidence
+    - duel
+    - law
+    - merge
+    - quantum
+    - rules
+    - seeing
+    - theorem
+  backlinks:
+    - coincidence
+    - duel
+    - law
+    - merge
+    - quantum
+    - rules
+    - seeing
+    - theorem
+signatures:
+  computationUuid: "f6b47b14-b10a-8ad7-af7b-d0f0e25c864f"
+  stages:
+    - stage: path
+      stageUuid: "1ea0afd8-0007-8ac8-802d-3bf04a0ced0c"
+    - stage: trinity
+      stageUuid: "f3e9abef-85e3-88ca-aecb-d3efd3956080"
+    - stage: boundary
+      stageUuid: "b9196275-9c6f-89e3-a4af-41d36e7b8e37"
+    - stage: links
+      stageUuid: "c4ed706c-f9bb-80ae-96b1-4ab4c610e665"
+    - stage: horo
+      stageUuid: "e12c70a6-8a3a-85b3-b576-8292b94cf681"
+    - stage: seal
+      stageUuid: "20645fbb-d08f-8362-b087-0366b7970a44"
+    - stage: uuid
+      stageUuid: "967fce1d-1e2c-8ec3-9a81-0d2ca159ade0"
+version: 2
 ---
-
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve
 
 Pointed at the seven Millennium Prize Problems, the only honest toolbox **names** them, marks what is open, and **refuses to solve** them. Six are open; one is **solved** — Poincaré, by **Grigori Perelman** (Ricci flow, 2003), who then *declined* the $1M prize. The corpus's math (ℤ/9, the double torus, the fold) solves **none** of them; claiming it does is the coincidence-dressed-as-theorem this session built [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] to refuse.

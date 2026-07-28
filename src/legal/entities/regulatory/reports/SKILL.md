@@ -1,34 +1,28 @@
 ---
 name: reports
 description: "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register."
-atomPath: legal/entities/regulatory/reports
-coordinate: legal/entities/regulatory/reports · 2/share · 5d4754e1
-contentUuid: "470e0c4f-354c-5af7-b9af-558a5be781b0"
-diamondUuid: "da14a8cf-9fe2-81be-830d-9443ae0b0ffb"
-uuid: "5d4754e1-9de8-8695-bed7-ae063efa2ab9"
-horo: 2
+atomPath: "legal/entities/regulatory/reports"
+coordinate: "legal/entities/regulatory/reports · 8/crest · c466ff24"
+contentUuid: "c0d16ab8-9ae4-5cb4-beef-c52318f214e1"
+diamondUuid: "1e47892c-d16a-8927-ba26-a62d85f9ac7f"
+uuid: "c466ff24-6cba-86c2-a73a-855fdac96155"
+horo: 8
 bonds:
   in:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   out:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 typography:
   partition: legal
-  bondDegree: 29
+  bondDegree: 28
   neighbors: []
 standards:
   - "SAF-T"
@@ -41,24 +35,18 @@ neighbors:
   wikilink: []
   matrix:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   backlinks:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 signatures:
-  computationUuid: "e328515f-c240-8976-8303-5963a294448a"
+  computationUuid: "2efcbca0-285c-833a-b74e-1595a1236885"
   stages:
     - stage: path
       stageUuid: "763d0e92-636c-8473-bf9f-47178fee4ad5"
@@ -69,11 +57,11 @@ signatures:
     - stage: links
       stageUuid: "6eccfbb3-f25c-825e-a1c4-b2d315daaaf6"
     - stage: horo
-      stageUuid: "22091329-efe7-846b-a108-857718daeab6"
+      stageUuid: "c29b76a0-5d99-880d-8754-8828c9b54baa"
     - stage: seal
       stageUuid: "485f02ef-b0d4-8724-a33a-89669e61e556"
     - stage: uuid
-      stageUuid: "e6887a47-ff64-83d1-be06-e7ae30c02d15"
+      stageUuid: "f297c5df-fec1-843b-9685-77ec15690623"
 version: 2
 ---
 # regulatory-reports

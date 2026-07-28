@@ -1,12 +1,12 @@
 ---
 name: variants
 description: "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel."
-atomPath: lot/variants
-coordinate: lot/variants · 1/base · 57677362
-contentUuid: "5433f148-0b35-5b50-9e73-9fe94c9fd9c7"
-diamondUuid: "3cd1e596-c7bc-8829-865e-55321c8dd760"
-uuid: "57677362-6a01-814a-9ae0-6124ceed76a5"
-horo: 1
+atomPath: "lot/variants"
+coordinate: "lot/variants · 7/descent · 790c4b6e"
+contentUuid: "c19ba459-b4a1-5e8c-8917-e6a5edd7b096"
+diamondUuid: "1e21aa71-eea4-8596-ac4c-26fd35b094b3"
+uuid: "790c4b6e-fcdf-85cd-a07e-2905afdfdb9c"
+horo: 7
 bonds:
   in:
     - accounting
@@ -34,7 +34,6 @@ typography:
 standards:
   - "ISA-95"
   - "ISA-95:2013 / IEC-62264-1 material-lot sublot"
-  - "ISO-19011:2018 audit-trail variant-counter-changes"
   - "UBL-2.1"
   - "double-entry — every counter is a balanced number; the variant"
 bindings: []
@@ -66,7 +65,7 @@ neighbors:
     - lots
     - phases
 signatures:
-  computationUuid: "e5e5a303-ab2f-85f7-aa67-ce3ef6783346"
+  computationUuid: "abb982ef-3a90-8ba3-8a82-1165dca4a19b"
   stages:
     - stage: path
       stageUuid: "36078a37-8df6-8282-b320-004655785d78"
@@ -77,11 +76,11 @@ signatures:
     - stage: links
       stageUuid: "bf9799bf-0222-8a14-a441-3e522d337d69"
     - stage: horo
-      stageUuid: "245d0f02-4098-84ab-b3ff-e70cb8c49076"
+      stageUuid: "52f435d1-0568-824c-a2d1-3a30b9a5d68c"
     - stage: seal
       stageUuid: "147b92a6-7bf3-8c14-a835-f323b5d0ae52"
     - stage: uuid
-      stageUuid: "640ab836-9496-8001-a372-ac87a9f8c459"
+      stageUuid: "11a4eab9-131f-8c2f-8114-ce5b3401e9e7"
 version: 2
 ---
 # lot/variants — the option roll-up (the variant total IS the sum of its parts)

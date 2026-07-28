@@ -1,12 +1,12 @@
 ---
 name: accounts
 description: "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection."
-atomPath: bank/accounts
-coordinate: bank/accounts · 7/descent · 05c0dbb2
-contentUuid: "c502f81c-4ec8-5be9-9c5e-bddf54326c7e"
-diamondUuid: "40972207-9913-88e0-9bf5-1fe183c9f35e"
-uuid: "05c0dbb2-bbe8-85d5-9214-905664312129"
-horo: 7
+atomPath: "bank/accounts"
+coordinate: "bank/accounts · 5/round · 7beae73a"
+contentUuid: "fbd90a07-cdb0-5add-abdf-ea7019959808"
+diamondUuid: "688d45a4-1c6c-8b66-8fa5-f783dc86949f"
+uuid: "7beae73a-feba-86d3-ba72-d9d8ff3d9c99"
+horo: 5
 bonds:
   in:
     - access
@@ -54,15 +54,19 @@ standards:
   - "ILO-C001"
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
-  - "ISO-19011:2018 audit-trail bank-account-master"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-20022"
   - "ISO-20022 financial-messaging account-identification"
+  - "ISO-20022 financial-messaging account-identification`"
   - "ISO-4217"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1"
   - "ISO-9362"
   - "ISO-9362:2022 bic"
+  - "ISO-9362:2022 bic`"
   - "SOX §404 internal-controls cash-management"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -94,7 +98,7 @@ neighbors:
     - reconciliations
     - runs
 signatures:
-  computationUuid: "5b41f9f5-8ea8-8bba-9124-fac80c8d148c"
+  computationUuid: "fd9c663a-5ba3-8168-ad93-f2929649967a"
   stages:
     - stage: path
       stageUuid: "60b94686-1fac-88a8-a05f-29a6cb9baafb"
@@ -105,11 +109,11 @@ signatures:
     - stage: links
       stageUuid: "1550b6cd-8401-8c89-ac53-91016a54c928"
     - stage: horo
-      stageUuid: "cbb736f1-432b-856e-af26-1b95b60d9a76"
+      stageUuid: "52264116-7965-89b6-a825-eaabe218cc76"
     - stage: seal
       stageUuid: "1920324e-3087-8b0e-8da1-cf127899a70b"
     - stage: uuid
-      stageUuid: "190ee6ee-b59d-88f2-b12a-f5052e999727"
+      stageUuid: "4f525da2-e6a9-880c-9c77-a645264d38d0"
 version: 2
 ---
 # bank-accounts

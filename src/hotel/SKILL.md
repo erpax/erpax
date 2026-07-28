@@ -2,11 +2,11 @@
 name: hotel
 description: "Use when reasoning about hotel — A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedica"
 atomPath: hotel
-coordinate: hotel · 2/share · 328c7198
-contentUuid: "4373b98d-1e19-5c2b-a532-cb2d00353813"
-diamondUuid: "3cf9f41c-2055-85fe-a5ab-861c564d6862"
-uuid: "328c7198-64ed-83ff-aea2-24696630ec0c"
-horo: 2
+coordinate: "hotel · 7/descent · 354f5fea"
+contentUuid: "92f61947-dbac-5dee-bd04-635cc2842773"
+diamondUuid: "783b8792-d22f-8938-839d-a8b5a8808b40"
+uuid: "354f5fea-7d64-8f3b-8b52-16442826604d"
+horo: 7
 bonds:
   in:
     - law
@@ -32,7 +32,7 @@ neighbors:
     - law
     - room
 signatures:
-  computationUuid: "2e74ad08-f2a0-85cd-97d4-c66623cff79c"
+  computationUuid: "4cdd5efc-257c-8faa-b866-7181f5b24efb"
   stages:
     - stage: path
       stageUuid: "12da98fd-140b-87ae-af2a-c446bd9b5546"
@@ -43,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "c9475936-94d1-8d3f-a434-0b72c9a6a756"
     - stage: horo
-      stageUuid: "4d32afea-5381-8c2a-903e-d975c1705fd5"
+      stageUuid: "072d67b1-f5d7-8d27-bbbb-716e8bdbe94a"
     - stage: seal
-      stageUuid: "c4303a48-8ffa-8dac-8b7f-a4ee349210a9"
+      stageUuid: "45c8bffe-bdff-8f05-b39d-37df64eedd02"
     - stage: uuid
-      stageUuid: "ecc48540-3097-89c5-ac2d-99790373a5c3"
+      stageUuid: "fba69d16-4d70-857c-83f3-d4b7d4599883"
 version: 2
 ---
 # hotel

@@ -1,12 +1,12 @@
 ---
 name: runs
 description: "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection."
-atomPath: bank/accounts/payment/runs
-coordinate: bank/accounts/payment/runs · 7/descent · 3dca3059
-contentUuid: "cce61338-3940-5da4-afa9-13c06a693e76"
-diamondUuid: "c5ded831-b82b-8a4e-95d2-ad2787e222e0"
-uuid: "3dca3059-ace3-85bd-95ab-68056176f2e5"
-horo: 7
+atomPath: "bank/accounts/payment/runs"
+coordinate: "bank/accounts/payment/runs · 4/weave · d10d1c24"
+contentUuid: "e929d07b-0ad1-5d8d-9b59-1f16238e0c75"
+diamondUuid: "f763ba02-c286-8512-8192-5a20505169f2"
+uuid: "d10d1c24-4f84-8225-bb35-45c41d610e25"
+horo: 4
 bonds:
   in:
     - accounting
@@ -50,19 +50,26 @@ standards:
   - "ILO-C001"
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
-  - "ISO-19011:2018 audit-trail"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-20022"
   - "ISO-20022 pain.001 customer-credit-transfer-initiation"
+  - "ISO-20022 pain.001 customer-credit-transfer-initiation`"
   - "ISO-20022 pain.008 customer-direct-debit-initiation"
+  - "ISO-20022 pain.008 customer-direct-debit-initiation`"
   - "ISO-20022:2022 universal-financial-industry-message-scheme"
+  - "ISO-20022:2022 universal-financial-industry-message-scheme`"
   - "ISO-4217"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time creation-execution"
+  - "ISO-8601-1:2019 date-time creation-execution`"
   - "ISO-9362"
   - "ISO-9362:2022 bic"
+  - "ISO-9362:2022 bic`"
   - "SOX §404 internal-controls preparer-authoriser-segregation"
   - "US-GAAP ASC-230 statement-of-cash-flows"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -88,7 +95,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "e1646883-95bc-89dc-8377-84bdd88d1fa8"
+  computationUuid: "e8311cae-e4e2-85a2-ba6d-fc510e29f9c1"
   stages:
     - stage: path
       stageUuid: "61fb3b69-10fa-8f19-8272-3f03121383be"
@@ -99,11 +106,11 @@ signatures:
     - stage: links
       stageUuid: "06a6e5fe-326f-80bf-bfa1-e8dde2650b9d"
     - stage: horo
-      stageUuid: "1e89c195-9818-8d31-b5ae-f71e6c09a02e"
+      stageUuid: "ee57fc2e-fed5-8daa-9210-92a6bdb9588d"
     - stage: seal
       stageUuid: "a7251701-d320-8c67-b56c-ccce48265fe2"
     - stage: uuid
-      stageUuid: "4a1918f5-d489-83b0-b3fb-3058bf03e303"
+      stageUuid: "4fc61c4f-29c1-8e0b-9029-752451cdb293"
 version: 2
 ---
 # payment-runs

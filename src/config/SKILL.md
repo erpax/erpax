@@ -2,10 +2,10 @@
 name: config
 description: "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints."
 atomPath: config
-coordinate: config · 6/6 · 0f5bc7f7
-contentUuid: "21d07feb-9d8c-5fbb-85e7-cc4c9b644b66"
-diamondUuid: "8ed88c73-9f8b-844b-b51d-64f88fed9868"
-uuid: "0f5bc7f7-7b2d-82b7-a177-7a7d67321252"
+coordinate: "config · 6/6 · 93f554c8"
+contentUuid: "78779fef-4b82-53c8-a977-e6d9a0385e87"
+diamondUuid: "d32f5f28-9f1d-8753-9ed0-045fe1fb2ad7"
+uuid: "93f554c8-fbd0-8d38-a08d-52fcc041b175"
 horo: 6
 bonds:
   in:
@@ -126,12 +126,6 @@ standards:
   - "EU-2002/58"
   - "EU-2017/1132"
   - "EU-2017/828"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "EU-Taxonomy-2020/852"
   - "IFRS-9"
   - "ISO-13616-1"
   - "ISO-17442-1"
@@ -270,22 +264,22 @@ neighbors:
     - vitepress
     - whole
 signatures:
-  computationUuid: "50f0a9fa-460f-8857-bea1-fb310b806f3d"
+  computationUuid: "05714f1b-8fdf-887a-a816-707497a6878f"
   stages:
     - stage: path
       stageUuid: "3ea2c96b-64d2-8e0c-b61e-db0ac10ea1f1"
     - stage: trinity
-      stageUuid: "1805fadb-3e2b-880c-a863-d6d6bb170f6a"
+      stageUuid: "d02a1f0c-4bd2-8cc0-85c4-9230428f5d04"
     - stage: boundary
-      stageUuid: "176b0d5a-ccca-80a0-8f22-59e035deb757"
+      stageUuid: "3eb17a2d-0276-821b-92cd-225401ec0f5e"
     - stage: links
       stageUuid: "6936ccc4-f826-8824-8772-a6ad7df4491f"
     - stage: horo
-      stageUuid: "9e9ceefe-e5e8-8efd-8e75-0b7a5aedcf25"
+      stageUuid: "140db339-f044-825d-b2dd-08e8c6cd7ae4"
     - stage: seal
-      stageUuid: "ca1308e8-ea13-8a77-b0e3-ce99b983e68f"
+      stageUuid: "723d6671-4b8c-8286-aada-150e7d6874d9"
     - stage: uuid
-      stageUuid: "e67a082e-41ac-8c99-9c78-e02e6ff115b3"
+      stageUuid: "46db9c13-2bc4-8698-a553-03d3698fadcd"
 version: 2
 ---
 # config — the root Payload config (buildConfig)

@@ -1,10 +1,101 @@
 ---
 name: rosetta
 description: "Use when the structural gate is too slow to run every push — the rosetta gate folds the corpus to one root (corpusRoot) and reuses it: unchanged root ⇒ O(1) structural PASS, changed ⇒ verify only the changed atoms; the notary chain is the tamper-evident gate ledger. Fold-first for structure; tsc + tests remain the semantic complement."
-atomPath: gate/rosetta
+atomPath: "gate/rosetta"
+coordinate: "gate/rosetta · 7/descent · a934488f"
+contentUuid: "fe1430ad-82a0-5175-9197-012e350a6403"
+diamondUuid: "f76a0ebf-e7a2-8b00-a11e-559fc483566c"
+uuid: "a934488f-2105-8eaa-a30b-d19ade48fd54"
 horo: 7
+bonds:
+  in:
+    - accounting
+    - algebra
+    - decide
+    - gate
+    - gravity
+    - improve
+    - law
+    - leftover
+    - metric
+    - publish
+    - readme
+    - rules
+    - syntax
+  out:
+    - accounting
+    - algebra
+    - decide
+    - gravity
+    - improve
+    - law
+    - leftover
+    - metric
+    - publish
+    - readme
+    - rules
+    - syntax
+typography:
+  partition: gate
+  bondDegree: 44
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - fold
+    - gate
+    - globe
+    - law
+    - merge
+    - mortality
+    - notary
+    - seal
+  matrix:
+    - accounting
+    - algebra
+    - decide
+    - gravity
+    - improve
+    - law
+    - leftover
+    - metric
+    - publish
+    - readme
+    - rules
+    - syntax
+  backlinks:
+    - accounting
+    - algebra
+    - decide
+    - gravity
+    - improve
+    - law
+    - leftover
+    - metric
+    - publish
+    - readme
+    - rules
+    - syntax
+signatures:
+  computationUuid: "e658b374-cdde-8dfe-89f1-513284a337c2"
+  stages:
+    - stage: path
+      stageUuid: "399e5292-6d35-8ce2-9254-84097e383654"
+    - stage: trinity
+      stageUuid: "1f393f7e-eb01-8d43-adf3-01677987a9db"
+    - stage: boundary
+      stageUuid: "05e66f58-3878-8b21-aa27-0e2d8736a718"
+    - stage: links
+      stageUuid: "07720a55-5928-85c6-976f-150f822b9c37"
+    - stage: horo
+      stageUuid: "cd6df66a-5c5b-8987-a5d1-5de312c22536"
+    - stage: seal
+      stageUuid: "2c0b4f66-77ba-8d52-bc1a-cefcc510eb2d"
+    - stage: uuid
+      stageUuid: "1852d4d5-b19a-81ed-8119-fb9bbd45805b"
+version: 2
 ---
-
 # gate/rosetta — the incremental fold-first gate
 
 ## The gap it closes

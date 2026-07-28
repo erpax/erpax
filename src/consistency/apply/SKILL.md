@@ -1,50 +1,47 @@
 ---
 name: apply
 description: "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to."
-atomPath: consistency/apply
-coordinate: consistency/apply · 7/descent · 1e1a16a7
-contentUuid: "ec407244-3fcf-5321-8f3b-eae089886538"
-diamondUuid: "1f7797ee-0add-84de-833a-db0efc501087"
-uuid: "1e1a16a7-0cfe-8c3d-a2ee-acc131e1440f"
-horo: 7
+atomPath: "consistency/apply"
+coordinate: "consistency/apply · 2/share · b39a6158"
+contentUuid: "7171750b-d691-5ba0-8470-7914f0c37bba"
+diamondUuid: "10842a47-381b-86f2-abe6-5438b8b6c31c"
+uuid: "b39a6158-c1dc-8cf0-b061-f8ed95aa0a1b"
+horo: 2
 bonds:
   in:
     - action
     - apply
+    - automate
     - collapse
     - consistency
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
   out:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
 typography:
   partition: consistency
-  bondDegree: 26
+  bondDegree: 39
   neighbors: []
 standards:
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
-  - "ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited"
-  - "ISO 9241-210:2019 human-centred-design"
-  - "ISO-19011:2018 audit-trail visual-evidence ux-gap-finding"
   - "ISO/IEC 25010:2023 §5.1 functional-completeness"
   - "ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path"
-  - "ISO/IEC-29119"
   - "ISO/IEC-29119:2022 software-testing system-test-level"
-  - "Slice PPPPPPPP-cont CREATE_GAP emergence"
   - "W3C-WAI-ARIA-1.2 accessibility-landmarks"
-  - "WCAG-2.1"
   - "WCAG-2.1-AA contrast text-spacing"
 bindings: []
 neighbors:
@@ -55,21 +52,29 @@ neighbors:
   matrix:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
   backlinks:
     - action
     - apply
+    - automate
     - collapse
     - direct
     - law
     - merge
+    - rules
     - sti
+    - violations
+    - wave
 signatures:
-  computationUuid: "caf07ad1-b53d-86bc-aff7-dc44df6ab70d"
+  computationUuid: "5a0a05df-1aeb-863f-a30a-906d919ce580"
   stages:
     - stage: path
       stageUuid: "687fe7d3-a4dc-818f-b682-c0e0f5fc553a"
@@ -80,11 +85,11 @@ signatures:
     - stage: links
       stageUuid: "08a8b179-fe37-80d6-834f-e3e7fea990be"
     - stage: horo
-      stageUuid: "fada922e-9085-8f12-96c2-23f739d48d02"
+      stageUuid: "b02800da-1d38-865a-acdf-aa8b4ad7d1fe"
     - stage: seal
-      stageUuid: "67c29c22-4c4e-86fe-ab56-10c96640c98c"
+      stageUuid: "67f93012-a553-85bd-97a7-5e1c9cabc351"
     - stage: uuid
-      stageUuid: "36dee821-c287-8da6-880a-c8f5c4ca3d9b"
+      stageUuid: "ed3274ea-7f8b-89b2-932b-14b604ebf5e4"
 version: 2
 ---
 # consistency/apply — the deterministic gap-closing transforms

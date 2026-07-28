@@ -1,8 +1,81 @@
 ---
 name: check
 description: "Use when a notary must verify an instrument before sealing it — the per-document-type duty matrix (identity, capacity, title, encumbrance, cadastre, sanctions, tax, spousal consent, company, signature, timestamp, apostille) mapped to the responsible Bulgarian register and the standard it satisfies, with a rosetta coverage audit that surfaces every unwired gap. Provider adapters are contracts; live wiring needs accredited credentials — no endpoint is fabricated, no gap is hidden."
+atomPath: "notary/check"
+coordinate: "notary/check · 8/crest · 04df4a58"
+contentUuid: "dd28fb62-b772-500f-aa86-96a61e00e3d9"
+diamondUuid: "4e649624-02a7-84fa-81ed-87b390d4ac80"
+uuid: "04df4a58-c3fd-833d-b174-bc003257a377"
+horo: 8
+bonds:
+  in:
+    - action
+    - check
+    - law
+    - notary
+    - out
+    - standards
+    - uuid
+  out:
+    - action
+    - check
+    - law
+    - notary
+    - out
+    - standards
+    - uuid
+typography:
+  partition: notary
+  bondDegree: 28
+  neighbors: []
+standards:
+  - "EU-2006/43"
+  - "EU-VAT-Directive"
+  - eIDAS
+  - "eIDAS (EU 910/2014) · RFC 3161 · AMLD5 (EU 2018/843) · Hague Apostille 1961"
+bindings: []
+neighbors:
+  wikilink:
+    - check
+    - law
+    - notary
+    - standards
+    - uuid
+  matrix:
+    - action
+    - check
+    - law
+    - notary
+    - out
+    - standards
+    - uuid
+  backlinks:
+    - action
+    - check
+    - law
+    - notary
+    - out
+    - standards
+    - uuid
+signatures:
+  computationUuid: "9788b7d7-2d23-8d42-8cbd-9f8f85b8e6ec"
+  stages:
+    - stage: path
+      stageUuid: "c1d0233e-08c5-8fd8-afea-8f2b09d28582"
+    - stage: trinity
+      stageUuid: "c4335228-a7f8-8f43-a50d-fa0dfed1acd9"
+    - stage: boundary
+      stageUuid: "2061060a-6314-8d36-8cd6-d6cf0120a0fb"
+    - stage: links
+      stageUuid: "75dce7cd-2a32-8c8f-95eb-b58109162c8f"
+    - stage: horo
+      stageUuid: "48d6f8c1-e58d-86c9-9188-4b8aaf44638a"
+    - stage: seal
+      stageUuid: "6957cd82-6137-8194-ab8b-308eb3509227"
+    - stage: uuid
+      stageUuid: "b8fc4a53-2c50-85cb-be18-d0fbaf56b99f"
+version: 2
 ---
-
 # check — what a notary verifies, per document
 
 A notary does not only seal — it **checks** first, and different instruments demand different checks. A deed of sale needs title, encumbrances, cadastre, spousal consent and tax; a power of attorney needs none of those. This atom makes that duty computable: the **check → provider → standard** rows (the rosetta), the **per-document requirement matrix**, and a **coverage audit** that enumerates every gap.

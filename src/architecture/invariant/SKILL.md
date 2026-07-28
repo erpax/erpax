@@ -1,12 +1,12 @@
 ---
 name: invariant
 description: "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate."
-atomPath: architecture/invariant
-coordinate: architecture/invariant · 2/share · bfa891e1
-contentUuid: "7d3406fa-6f40-54ad-9b28-ef8c2562aa2d"
-diamondUuid: "ca11d0eb-88e2-8db0-9b4b-c1413df09b89"
-uuid: "bfa891e1-ae89-81a5-9467-b5b580ee8371"
-horo: 2
+atomPath: "architecture/invariant"
+coordinate: "architecture/invariant · 7/descent · de4e65d2"
+contentUuid: "42becfb4-e011-5715-ac84-bcfbf9ff9569"
+diamondUuid: "75b9f15d-f51f-8409-9f3e-dab549fac940"
+uuid: "de4e65d2-01f9-839f-96ee-ed0e178b169a"
+horo: 7
 bonds:
   in:
     - architecture
@@ -62,14 +62,13 @@ standards:
   - "EU-765/2008"
   - "ILO-C001"
   - "ISO-19011"
-  - "ISO-19011:2018 §6.4 audit-evidence-invariants"
   - "ISO-27001"
   - "ISO-27002"
   - "ISO-27037"
   - "ISO-37000"
   - "ISO/IEC 25010:2023 quality-model"
+  - "ISO/IEC 25010:2023 quality-model`"
   - "ISO/IEC-12207"
-  - "ISO/IEC-25010"
   - "ISO/IEC-27001:2022"
   - "ISO/IEC-27002:2022"
   - MCP
@@ -79,6 +78,7 @@ standards:
   - "RFC-9562"
   - "US-CTA-2021"
   - "W3C-JSON-LD-1.1"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -124,7 +124,7 @@ neighbors:
     - standard
     - vitepress
 signatures:
-  computationUuid: "e10dae8e-d95a-8db7-9cdc-d0ff2421f047"
+  computationUuid: "1f93258f-39ae-8a34-8103-2627bf5add30"
   stages:
     - stage: path
       stageUuid: "6e3a3b2e-4d9c-8bfd-8918-645115fc9912"
@@ -135,11 +135,11 @@ signatures:
     - stage: links
       stageUuid: "3badd720-b4ab-8995-83b3-91b6c454e19a"
     - stage: horo
-      stageUuid: "f0266603-2f32-8a59-8a4a-67a6f21ac4fb"
+      stageUuid: "9aad28df-c9cc-8da1-9126-c1c08dfbe869"
     - stage: seal
       stageUuid: "6f0e277e-1f54-84be-b31e-883e193a3f0e"
     - stage: uuid
-      stageUuid: "c5b47ef0-33de-8d05-91fb-9481c83dc1b2"
+      stageUuid: "532edef1-73c0-825b-895f-1e2130ed0195"
 version: 2
 ---
 # invariant — the architecture, enforced

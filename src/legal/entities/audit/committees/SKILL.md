@@ -1,12 +1,12 @@
 ---
 name: committees
 description: "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight."
-atomPath: legal/entities/audit/committees
-coordinate: legal/entities/audit/committees · 5/round · b6609291
-contentUuid: "f5684bd8-274d-57e6-a325-4f294df377e4"
-diamondUuid: "8e4d5b92-8c3f-8add-9f97-3dc150d2e116"
-uuid: "b6609291-d7a8-84c1-a3bd-93d8cd242a28"
-horo: 5
+atomPath: "legal/entities/audit/committees"
+coordinate: "legal/entities/audit/committees · 1/base · 32360af2"
+contentUuid: "ec81b997-9c7c-5547-94cd-fd9c2ecf56a9"
+diamondUuid: "14aca376-7b4e-8358-9e0a-bdae89595c27"
+uuid: "32360af2-8409-8121-8b3b-70e43657ef4f"
+horo: 1
 bonds:
   in:
     - audit
@@ -24,7 +24,6 @@ typography:
   bondDegree: 0
   neighbors: []
 standards:
-  - "ISO-19011:2018 oversight"
   - "SEC Rule 10A-3 audit-committee"
   - "SOX §301 audit-committee"
 bindings: []
@@ -43,7 +42,7 @@ neighbors:
     - members
     - minutes
 signatures:
-  computationUuid: "e28013d6-df0f-855e-bcaa-4f5e259ff5a0"
+  computationUuid: "8b942b6c-d361-8af3-b955-de3bf52f9e66"
   stages:
     - stage: path
       stageUuid: "32e16169-bf8b-816c-aff7-1477fdd3dcc8"
@@ -54,11 +53,11 @@ signatures:
     - stage: links
       stageUuid: "c4fae53f-91a9-87d5-9984-286f3ef35820"
     - stage: horo
-      stageUuid: "51dccd35-4a47-8cb1-998e-c503058b1478"
+      stageUuid: "fd638357-be36-8112-b55e-10f49c90f52e"
     - stage: seal
       stageUuid: "db52c85d-379e-8600-900f-f03acf5bd60c"
     - stage: uuid
-      stageUuid: "65eb717e-b162-878b-ac3b-390552af3384"
+      stageUuid: "5638cd26-44be-81f5-8400-71c2ffd46f7d"
 version: 2
 ---
 # audit-committees

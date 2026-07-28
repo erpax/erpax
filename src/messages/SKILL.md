@@ -2,11 +2,11 @@
 name: messages
 description: "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection."
 atomPath: messages
-coordinate: messages · 5/round · 121d528a
-contentUuid: "25ca015c-dd2d-5e06-be3d-718dd01c9ddd"
-diamondUuid: "e3fa9c26-5337-8ac3-916d-5381447d5658"
-uuid: "121d528a-971e-8d23-9fb6-2b7d671ff331"
-horo: 5
+coordinate: "messages · 1/base · fed6a730"
+contentUuid: "9ed893f9-e5ed-5f48-b4dd-c1a2db79ac0e"
+diamondUuid: "44c19a7a-ba07-83f4-b7c6-4142db80b0cf"
+uuid: "fed6a730-c75e-8054-942a-e5ff63da423b"
+horo: 1
 bonds:
   in:
     - access
@@ -32,9 +32,11 @@ typography:
   neighbors: []
 standards:
   - "GDPR Art 5(1)(e) storage-limitation retention"
-  - "ISO-19011:2018 audit-trail message-provenance"
   - "ISO-27001 A.5.23 cloud-service-tenant-isolation"
+  - "ISO-27001 A.5.23 cloud-service-tenant-isolation`"
   - "ISO-8601-1:2019 date-time sent-read-timestamps"
+  - "ISO-8601-1:2019 date-time sent-read-timestamps`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -64,7 +66,7 @@ neighbors:
     - law
     - standard
 signatures:
-  computationUuid: "1e95b8d6-0e7f-8aa1-bba0-5e21f3036649"
+  computationUuid: "4e1c659b-3541-8d9d-bc86-13041f6b53dc"
   stages:
     - stage: path
       stageUuid: "7dcb5e4e-8eba-8ae3-be38-2ff774a0d95d"
@@ -75,11 +77,11 @@ signatures:
     - stage: links
       stageUuid: "2e6a97ae-c8df-8c6a-8368-8c85161d1a96"
     - stage: horo
-      stageUuid: "63699bf8-1b97-8b65-b368-69c9d279799f"
+      stageUuid: "a4f5cc92-9fa5-8a04-8d05-82d637e2f296"
     - stage: seal
-      stageUuid: "a7edd62d-749a-895b-84d9-427a6d3410ad"
+      stageUuid: "e9039ea4-d0ed-8786-8fed-317fd0bf9e30"
     - stage: uuid
-      stageUuid: "281d9241-3c1a-8bd3-ab29-792935c12b15"
+      stageUuid: "9dddc34d-0e77-8132-beab-6062fa0a0e2c"
 version: 2
 ---
 # messages

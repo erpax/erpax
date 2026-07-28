@@ -2,11 +2,11 @@
 name: entropy
 description: "Use when reasoning about disorder as the matrix-reciprocity slack erpax's whole ledger balances — entropy() = 1 − the reciprocal-edge fraction of the uuid-matrix, an audit/aura signal, NOT an input to crackVerdict. It is a DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost via coverageCostLog2); reciprocity=1 does NOT imply coverage=1, so zero entropy does NOT by itself yield infinite cost (the live tree is the counter-example — entropy 0, coverage under 1, cost finite). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
 atomPath: entropy
-coordinate: entropy · 8/crest · 89fcd6ae
-contentUuid: "cabcc543-6ba1-5940-964d-0751b091ded5"
-diamondUuid: "9a0f0961-21ba-8494-8be5-b23deed3c1f3"
-uuid: "89fcd6ae-be48-8d7b-880f-e158dd9145ff"
-horo: 8
+coordinate: "entropy · 2/share · f15b7fd4"
+contentUuid: "41afce8d-1830-512d-b0fd-73280d9f4b5d"
+diamondUuid: "781f0389-e89c-8b25-8a3f-653f468e9465"
+uuid: "f15b7fd4-8ccf-8db0-984f-f328b4aa12be"
+horo: 2
 bonds:
   in:
     - accounting
@@ -36,6 +36,7 @@ bonds:
     - expense
     - fear
     - finality
+    - fold
     - forge
     - fusion
     - gate
@@ -90,6 +91,7 @@ bonds:
     - train
     - unavoidable
     - uncertainty
+    - violations
     - vocabulary
     - void
     - war
@@ -125,6 +127,7 @@ bonds:
     - expense
     - fear
     - finality
+    - fold
     - forge
     - fusion
     - gate
@@ -179,6 +182,7 @@ bonds:
     - train
     - unavoidable
     - uncertainty
+    - violations
     - vocabulary
     - void
     - war
@@ -188,11 +192,10 @@ bonds:
     - zeropoint
 typography:
   partition: entropy
-  bondDegree: 303
+  bondDegree: 310
   neighbors:
     - aura
-standards:
-  - "computed from the live matrix, never hand-asserted"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -245,6 +248,7 @@ neighbors:
     - expense
     - fear
     - finality
+    - fold
     - forge
     - fusion
     - gate
@@ -299,6 +303,7 @@ neighbors:
     - train
     - unavoidable
     - uncertainty
+    - violations
     - vocabulary
     - void
     - war
@@ -334,6 +339,7 @@ neighbors:
     - expense
     - fear
     - finality
+    - fold
     - forge
     - fusion
     - gate
@@ -388,6 +394,7 @@ neighbors:
     - train
     - unavoidable
     - uncertainty
+    - violations
     - vocabulary
     - void
     - war
@@ -396,22 +403,22 @@ neighbors:
     - writing
     - zeropoint
 signatures:
-  computationUuid: "981006e4-db3a-87a7-983b-67181218e3c1"
+  computationUuid: "d435563d-51a9-862d-98f2-a882810c169a"
   stages:
     - stage: path
       stageUuid: "0efe9321-e9d9-88cf-b054-2bbe0937a2f6"
     - stage: trinity
       stageUuid: "2fcb2307-3b80-8a47-89c1-6704b122a608"
     - stage: boundary
-      stageUuid: "93a09b82-2045-867e-ae54-8babca61f518"
+      stageUuid: "ac858bd3-93de-803a-98fc-b7e45212ec68"
     - stage: links
       stageUuid: "84b37278-4747-813f-bcd3-41c55c04a53c"
     - stage: horo
-      stageUuid: "58e7b18b-41bb-8a7b-954e-48244feab803"
+      stageUuid: "d96413ea-d29e-87b8-9533-c6e5c155de27"
     - stage: seal
-      stageUuid: "ad5db98c-c2ec-8702-a8ce-eec118da03dc"
+      stageUuid: "e4713d70-378f-8e73-b358-b4d0581e4959"
     - stage: uuid
-      stageUuid: "0a9ef46e-e1e0-8362-b930-ef514488fd55"
+      stageUuid: "58ee9409-c10e-8f12-a078-e5b696b24c1f"
 version: 2
 ---
 # entropy — the matrix-reciprocity slack the whole ledger balances

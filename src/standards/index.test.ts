@@ -49,4 +49,13 @@ describe('standardsUiWaves — decode the standards into UI improvement waves', 
     }
     expect(standardsUiWaves().map((w) => w.seal)).toEqual(waves.map((w) => w.seal)) // deterministic
   })
+  it('FTL memo: second schemaCoverage / standardsUiWaves call reuses the same object', () => {
+    expect(schemaCoverage()).toBe(schemaCoverage()) // same reference — memo hit
+    expect(standardsUiWaves()).toBe(standardsUiWaves())
+  })
+  it('lookupStandard is O(1) address path for a live catalogue id', async () => {
+    const { lookupStandard, STANDARDS_CATALOGUE } = await import('@/standards')
+    const id = STANDARDS_CATALOGUE[0]!.id
+    expect(lookupStandard(id)?.id).toBe(id)
+  })
 })

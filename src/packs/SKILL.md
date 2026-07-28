@@ -2,11 +2,11 @@
 name: packs
 description: "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs."
 atomPath: packs
-coordinate: packs · 1/base · 0ab22bcc
-contentUuid: "c368c7e3-d2f0-5a3d-88da-689fa00f8010"
-diamondUuid: "7f20c892-0aa1-8a07-9f95-4aca4e20449d"
-uuid: "0ab22bcc-e92b-8ff2-80ef-85e20f5d523a"
-horo: 1
+coordinate: "packs · 5/round · 7102a2c5"
+contentUuid: "186926ed-31f7-59fb-9ca5-df279b5ab27c"
+diamondUuid: "f018fc30-582c-8767-a6f2-834f203801c2"
+uuid: "7102a2c5-8b7d-8823-811e-7da00cc567e6"
+horo: 5
 bonds:
   in:
     - accounting
@@ -20,6 +20,7 @@ bonds:
     - orders
     - pack
     - pickup
+    - port
     - postharvest
   out:
     - accounting
@@ -33,17 +34,17 @@ bonds:
     - orders
     - pack
     - pickup
+    - port
     - postharvest
 typography:
   partition: packs
-  bondDegree: 40
+  bondDegree: 43
   neighbors: []
 standards:
   - "GS1 logistics SSCC carton-identity (the `number` / `barcode`)"
   - "IFRS IAS-2 §10 finished-goods carried to dispatch"
   - "ISA-95"
   - "ISA-95:2013 §B.5 production-operations dispatch"
-  - "ISO-19011:2018 audit-trail dispatch"
   - "ISO/IEC-29119"
   - "UN-CEFACT"
   - "UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)"
@@ -69,6 +70,7 @@ neighbors:
     - orders
     - pack
     - pickup
+    - port
     - postharvest
   backlinks:
     - accounting
@@ -82,9 +84,10 @@ neighbors:
     - orders
     - pack
     - pickup
+    - port
     - postharvest
 signatures:
-  computationUuid: "90f1377c-cd54-868e-87aa-b0b05b9d4461"
+  computationUuid: "e780d935-14cc-810a-94aa-ab735ebcc7e5"
   stages:
     - stage: path
       stageUuid: "e5c22266-1d75-8e8a-ae9f-8e06e46a4dab"
@@ -95,11 +98,11 @@ signatures:
     - stage: links
       stageUuid: "896a9210-1def-89cf-bb7b-7c74522adde1"
     - stage: horo
-      stageUuid: "8368d445-b725-8e74-9271-b98db11cc5e9"
+      stageUuid: "3217691e-8f91-89ea-9df7-1f5bd2e1f820"
     - stage: seal
-      stageUuid: "f6a78ac5-a64f-8090-8dcf-81d3abe73c07"
+      stageUuid: "1a697082-17a7-82cc-a5d1-173cd83ee2f6"
     - stage: uuid
-      stageUuid: "5d980032-76fd-8f9e-8f68-3a2b839b2bcb"
+      stageUuid: "44d796cf-d0e3-8ed1-ba93-a362ad99ffc6"
 version: 2
 ---
 # packs — the dispatch carton

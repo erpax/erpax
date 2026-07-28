@@ -2,11 +2,11 @@
 name: admin
 description: "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance."
 atomPath: admin
-coordinate: admin · 5/round · 83ab5c03
-contentUuid: "321e959e-d01e-5941-b4f7-7edbe94cc495"
-diamondUuid: "2b0ced02-50ee-8d89-993a-781d33f57afc"
-uuid: "83ab5c03-440c-8a97-879d-81b20c1a45bd"
-horo: 5
+coordinate: "admin · 7/descent · 63eba8f8"
+contentUuid: "336567bb-a9a8-50fa-ab1d-792cb864ad9f"
+diamondUuid: "7be85be2-cbd3-8cdb-9f3d-b8dfa717dd60"
+uuid: "63eba8f8-0cbb-8327-951e-97d42039451b"
+horo: 7
 bonds:
   in:
     - access
@@ -81,7 +81,7 @@ neighbors:
     - spec
     - tag
 signatures:
-  computationUuid: "06bc15bd-32a7-89f3-a896-5a0676a71f59"
+  computationUuid: "e5d3357b-ea33-8271-9b6a-9656c4f0d7ed"
   stages:
     - stage: path
       stageUuid: "b7196707-0f09-8c5d-8864-49c583aa4eca"
@@ -92,11 +92,11 @@ signatures:
     - stage: links
       stageUuid: "5560dc16-93b3-8368-a58f-de5d0bb8deb4"
     - stage: horo
-      stageUuid: "f6747a37-8b9b-84db-809f-f6c8df56147e"
+      stageUuid: "3fcf7b86-9bf2-8bd3-b672-a016516d9170"
     - stage: seal
       stageUuid: "b250497a-b378-8f84-817b-0c79bbb7797c"
     - stage: uuid
-      stageUuid: "004730dc-ba3d-837d-9b4a-576492b0bc55"
+      stageUuid: "b811680c-c63f-81c2-b37f-0e6ad54227af"
 version: 2
 ---
 # admin — the Admin Panel & custom components (position 5 of the material cycle)

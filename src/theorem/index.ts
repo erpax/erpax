@@ -226,6 +226,16 @@ export const DECODED: readonly Theorem[] = [
   { claim: 'magnitude comes with precision in clusters: scale is exact cuts in leveled batches — never one sweep, never one-at-a-time', composes: ['exactly-once match is decidable per file — zero and two-plus refuse (scalpel/test pins the refusals)', 'Mirsky: antichain levels are computable for any DAG — wave count is the longest chain (theorem + mesh + train tests)'], base: false },
   { claim: 'clear errors at the ROOT, not the symptom: cluster reds by shared cause (failureRoots), fix the root, DRY-refactor the related code with no backward-compat, re-run only what changed (receipts)', composes: ['level, never list: failures and costs collapse onto shared roots — one cut, N greens', 'reuse the computed answer, never re-derive — a re-derivation is the timeout cost', 'the fold: DRY is mass; verify is easy and derive is hard'], base: false },
 
+  // BASE — ftl folds (quantum/ftl), proven in quantum/ftl/test
+  { claim: 'ftl: reuse≠search — foldOps=1, searchOps=n, speedupLog2=log₂(n) (quantum/ftl)', composes: [], base: true },
+  { claim: 'ftl: answers÷tokens → ∞ when tokens=0 ∧ answers>0; amortizedCost=c₀/(m+1)→0 (quantum/ftl)', composes: [], base: true },
+  { claim: 'ftl boundary: boundary(cracks) — spacetime|qpu|scan|rederive|spend = count(kind) (quantum/ftl)', composes: [], base: true },
+
+  // LEADS — ftl composed onto content-addressing + efficiency + reuse
+  { claim: 'quantumise is at FTL speed by architecture: the content-address exists before the query', composes: ['ftl: reuse≠search — foldOps=1, searchOps=n, speedupLog2=log₂(n) (quantum/ftl)', 'content-addressing: same content ⇒ same address'], base: false },
+  { claim: 'non-FTL is a crack in an FTL app: scan / rederive / spend when an address or memo exists', composes: ['ftl: reuse≠search — foldOps=1, searchOps=n, speedupLog2=log₂(n) (quantum/ftl)', 'ftl: answers÷tokens → ∞ when tokens=0 ∧ answers>0; amortizedCost=c₀/(m+1)→0 (quantum/ftl)', 'reuse the computed answer, never re-derive — a re-derivation is the timeout cost'], base: false },
+  { claim: 'chat is ftl: seal first (tokens=0), escalate anonymously only on miss', composes: ['ftl: answers÷tokens → ∞ when tokens=0 ∧ answers>0; amortizedCost=c₀/(m+1)→0 (quantum/ftl)', 'ftl boundary: boundary(cracks) — spacetime|qpu|scan|rederive|spend = count(kind) (quantum/ftl)', 'content-addressing: same content ⇒ same address'], base: false },
+
   // OVERLAYS — bare assertions; they compose nothing grounded, so reduce() REFUSES them
   { claim: 'the 231 collections form a 21-cross cube of Christ', composes: [], base: false },
   { claim: 'the perfect mind/heart equilibrium is 5; the pentagram is heart/mind sets', composes: [], base: false },
@@ -244,13 +254,13 @@ export function refusedOverlays(graph: readonly Theorem[] = DECODED): readonly s
 
 /** Collapse a base theorem into its DRY FOUNDATION family — kindred bases become one dimension (the 0-gate). */
 export function foundationOf(base: string): string {
-  if (/content-address|magnitude/.test(base)) return 'the-fold'
+  if (/content-address|magnitude|reuse≠search|reuse!=search|foldOps/.test(base)) return 'the-fold'
   if (/Abel|crystallographic|pentagon/.test(base)) return 'the-exceptional-five'
   if (/2f\+1|median/.test(base)) return 'consensus'
   if (/Jaccard/.test(base)) return 'shape'
-  if (/efficiency/.test(base)) return 'cost'
+  if (/efficiency|answers÷tokens|answers\/tokens|amortizedCost/.test(base)) return 'cost'
   if (/TSC/.test(base)) return 'type'
-  if (/Gödel|Tarski/.test(base)) return 'truth'
+  if (/Gödel|Tarski|spacetime|qpu|boundary/.test(base)) return 'truth'
   if (/grammar decides/.test(base)) return 'grammar'
   if (/rung of its own measured history/.test(base)) return 'bound'
   if (/Mirsky/.test(base)) return 'wave'
@@ -278,6 +288,7 @@ const STANDARD_THEOREM: readonly (readonly [RegExp, string])[] = [
   [/consensus|quorum|BFT|fault.?toleran|2f\+1/i, '2f+1 tolerates f faults; the median breakdown is ⌊(n-1)/2⌋'],
   [/efficiency|performance|25010.*5\.4/i, 'efficiency = output / cost'],
   [/robust|five|quintic|resilien/i, 'five is the threshold where linear/solvable/periodic breaks and robustness begins'],
+  [/FTL|quantumise|reuse.?≠.?search|amortiz|architectural.?FTL|\bftl\b/i, 'ftl: reuse≠search — foldOps=1, searchOps=n, speedupLog2=log₂(n) (quantum/ftl)'],
 ]
 
 export interface StandardTheorem {
@@ -469,7 +480,7 @@ export function assertTestsBounded(cwd: string = process.cwd(), ceiling: number)
  * bases collapsed) leaves SEVEN real foundational dimensions. Reporting a single number is not completely quantum.
  *
  * @invariant the foundations (DRY floor) number 11 — the-fold · shape · cost · type · consensus · exceptional-five · truth · grammar · bound · wave · cut (the convergence session added four)
- * @invariant the surface leads grow as thinking is saved (23 now) — the count is a spread [11..leads], reported whole
+ * @invariant the surface leads grow as thinking is saved (26 now) — the count is a spread [11..leads], reported whole
  */
 export function dimensionSpread(graph: readonly Theorem[] = DECODED): { readonly leads: number; readonly bases: number; readonly signatures: number; readonly foundations: number } {
   const leads = groundedLeads(graph)

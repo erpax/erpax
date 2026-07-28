@@ -1,32 +1,24 @@
 ---
 name: registered
 description: "Use when reasoning about registered — **Law — law: barrel re-export at ; trinity sealed for import purity.**"
-atomPath: agents/registered
-coordinate: agents/registered · 5/round · 661f54cc
-contentUuid: "b86d29ac-ef4b-5ccd-b14f-5c354ae7b723"
-diamondUuid: "0ea18312-7e7d-8d17-b79e-395a1cf078a7"
-uuid: "661f54cc-743f-8ab8-9263-81f4db8ebd4b"
-horo: 5
+atomPath: "agents/registered"
+coordinate: "agents/registered · 4/weave · 383044b5"
+contentUuid: "5118356e-96b6-5b1a-89e8-e1f373923ab4"
+diamondUuid: "878df66d-aeec-8136-995c-f294aa8b18c1"
+uuid: "383044b5-8ca7-8f9f-a1a2-5ef816de11f4"
+horo: 4
 bonds:
   in:
-    - collapse
-    - date
     - first
     - law
-    - merge
-    - sti
     - vehicle
   out:
-    - collapse
-    - date
     - first
     - law
-    - merge
-    - sti
     - vehicle
 typography:
   partition: agents
-  bondDegree: 24
+  bondDegree: 16
   neighbors: []
 standards:
   - "COSO-2013"
@@ -59,23 +51,15 @@ neighbors:
   wikilink:
     - law
   matrix:
-    - collapse
-    - date
     - first
     - law
-    - merge
-    - sti
     - vehicle
   backlinks:
-    - collapse
-    - date
     - first
     - law
-    - merge
-    - sti
     - vehicle
 signatures:
-  computationUuid: "460d8dd0-0e07-82b5-9309-fc388b0d4a5d"
+  computationUuid: "fe381173-7a38-828c-9f07-dc87f1f184a2"
   stages:
     - stage: path
       stageUuid: "ff90fff0-0a7f-8145-af69-ead4b31d5811"
@@ -86,11 +70,11 @@ signatures:
     - stage: links
       stageUuid: "4f209a95-bc8d-8774-a353-a12eb2271b3e"
     - stage: horo
-      stageUuid: "21c6a5b8-b50f-800b-8400-b6ccfe7d5028"
+      stageUuid: "6d57f217-b227-854e-9bb3-98a9de825a30"
     - stage: seal
       stageUuid: "5fcb3a80-566d-80fc-b981-72d11809b8c5"
     - stage: uuid
-      stageUuid: "27093475-46d8-8f4d-a094-5a5cc288e591"
+      stageUuid: "4fd6a127-9336-89f8-a3fd-268b9f12ed7c"
 version: 2
 ---
 # registered

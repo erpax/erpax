@@ -1,12 +1,12 @@
 ---
 name: owners
 description: "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register."
-atomPath: legal/entities/beneficial/owners
-coordinate: legal/entities/beneficial/owners · 7/descent · 9f25efe8
-contentUuid: "4aaec23a-87e0-50a9-b073-1ae29e307dbe"
-diamondUuid: "d512324c-44f9-8b3e-92e0-e449ff34b68c"
-uuid: "9f25efe8-dbd3-8bd4-8e85-8f3ee16fad27"
-horo: 7
+atomPath: "legal/entities/beneficial/owners"
+coordinate: "legal/entities/beneficial/owners · 2/share · 6dfabcb6"
+contentUuid: "2296d6da-7c22-5238-8636-fb888d305eaf"
+diamondUuid: "1f43424f-0988-827a-94cc-4a1aa97797a3"
+uuid: "6dfabcb6-128a-81b2-8c49-f1a99371f842"
+horo: 2
 bonds:
   in:
     - accounting
@@ -35,8 +35,9 @@ standards:
   - "FATF-Recommendation-24 transparency-of-legal-persons"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei"
-  - "ISO-19011:2018 audit-trail ubo-evidence"
+  - "ISO-17442-1:2020 lei`"
   - "US-CTA Corporate-Transparency-Act-2021 beneficial-ownership"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -65,7 +66,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "bc98d344-f2d3-81d9-9839-1377bfb1e780"
+  computationUuid: "d105b9d1-50bb-812b-a05f-61c165e809f8"
   stages:
     - stage: path
       stageUuid: "046d4b8f-713f-8dd0-acb3-0d78854211d4"
@@ -76,11 +77,11 @@ signatures:
     - stage: links
       stageUuid: "995e00a5-2198-8bb7-9893-6259d70fee68"
     - stage: horo
-      stageUuid: "0a8bdbfc-42ef-8fce-a003-d3f203f9f329"
+      stageUuid: "758ae4cf-8a77-84b1-8cc1-4bb9ae43ef1b"
     - stage: seal
       stageUuid: "fc402a99-a20c-830c-bb58-783fdcbb271f"
     - stage: uuid
-      stageUuid: "0ff65322-6210-86cf-ba69-a1b391094bd1"
+      stageUuid: "7d682502-c9c9-8585-973b-57d883f0b4cf"
 version: 2
 ---
 # beneficial-owners

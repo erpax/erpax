@@ -2,14 +2,15 @@
 name: imaging
 description: "Use when reasoning about imaging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: imaging
-coordinate: imaging · 7/descent · 5e0352de
-contentUuid: "99318999-c812-5e6d-a340-737051a40fb5"
-diamondUuid: "a596bfec-c160-8f58-9910-fc1b5c1f9bd8"
-uuid: "5e0352de-d9e2-8f92-a691-c6d24958570a"
-horo: 7
+coordinate: "imaging · 4/weave · 315f83d2"
+contentUuid: "32dbe7d4-f80e-5834-995d-e3bfc9978842"
+diamondUuid: "b0ad34f3-2762-82f0-a1c7-07a74b8cce3b"
+uuid: "315f83d2-f7e2-84a1-8569-74cfb20261f7"
+horo: 4
 bonds:
   in:
     - collapse
+    - device
     - law
     - medical
     - merge
@@ -18,6 +19,7 @@ bonds:
     - test
   out:
     - collapse
+    - device
     - law
     - medical
     - merge
@@ -26,7 +28,7 @@ bonds:
     - test
 typography:
   partition: imaging
-  bondDegree: 24
+  bondDegree: 27
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -42,6 +44,7 @@ neighbors:
     - test
   matrix:
     - collapse
+    - device
     - law
     - medical
     - merge
@@ -50,6 +53,7 @@ neighbors:
     - test
   backlinks:
     - collapse
+    - device
     - law
     - medical
     - merge
@@ -57,7 +61,7 @@ neighbors:
     - technique
     - test
 signatures:
-  computationUuid: "b37b583e-de46-833e-ac40-f3ec0b3cb61f"
+  computationUuid: "0cc81864-966d-802f-8a20-98edfec9b29d"
   stages:
     - stage: path
       stageUuid: "81edcc73-8cc2-801d-8de6-d133e5dc32db"
@@ -68,11 +72,11 @@ signatures:
     - stage: links
       stageUuid: "26bfa820-5a9d-80fc-80b7-69759833bd13"
     - stage: horo
-      stageUuid: "30ff9e26-d70c-8076-af57-2332a1e491d5"
+      stageUuid: "9eb8f970-ca7b-8880-bc1e-0ed95a133a05"
     - stage: seal
-      stageUuid: "f3ce672a-b0d3-839f-b9a4-4ecbe95208a9"
+      stageUuid: "ff10fb05-c0b0-89bf-8966-27796afedd23"
     - stage: uuid
-      stageUuid: "fe469408-4ded-8a2b-9698-4f730b49b567"
+      stageUuid: "090a9bf4-b787-8dae-b177-66edd6d87e5e"
 version: 2
 ---
 # imaging

@@ -1,12 +1,12 @@
 ---
 name: periods
 description: "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked)."
-atomPath: fiscal/periods
-coordinate: fiscal/periods · 7/descent · c620e144
-contentUuid: "fa26643c-1cc1-5da4-a052-0dd6a51c0eb8"
-diamondUuid: "03de8029-0c3f-8837-b0ad-0f64563aeac3"
-uuid: "c620e144-eb80-8918-9885-237f317a893e"
-horo: 7
+atomPath: "fiscal/periods"
+coordinate: "fiscal/periods · 8/crest · 6f44a5f3"
+contentUuid: "00e471af-2dca-5ceb-8d7c-2b5738246f32"
+diamondUuid: "d761e5f3-4387-8956-affb-acc9d76e44bb"
+uuid: "6f44a5f3-54cd-8b1e-a1c8-2a84df1677ff"
+horo: 8
 bonds:
   in:
     - accounting
@@ -16,7 +16,6 @@ bonds:
     - law
     - periods
     - quota
-    - rest
     - share
     - shares
     - snapshots
@@ -28,7 +27,6 @@ bonds:
     - law
     - periods
     - quota
-    - rest
     - share
     - shares
     - snapshots
@@ -40,12 +38,6 @@ standards:
   - "EU-2011/83"
   - "EU-2014/55"
   - "EU-2016/679"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-ESRS"
@@ -56,10 +48,10 @@ standards:
   - "IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment"
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "ISO-14064-1"
-  - "ISO-19011:2018 audit-trail status-transition"
   - "ISO-4217:2015 currency-code per-fiscal-configuration"
+  - "ISO-4217:2015 currency-code per-fiscal-configuration`"
   - "ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering"
-  - "NIST-SP-800-63"
+  - "ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering`"
   - "NIST-SP-800-92"
   - "OECD-Transfer-Pricing"
   - "SAF-T"
@@ -72,6 +64,7 @@ standards:
   - "XBRL-GL fiscal-context general-ledger-reporting"
   - eIDAS
   - "eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -89,7 +82,6 @@ neighbors:
     - law
     - periods
     - quota
-    - rest
     - share
     - shares
     - snapshots
@@ -101,12 +93,11 @@ neighbors:
     - law
     - periods
     - quota
-    - rest
     - share
     - shares
     - snapshots
 signatures:
-  computationUuid: "774c0611-d032-8e3d-af94-30398ef3b9bb"
+  computationUuid: "466ed8a8-3459-824e-8958-7c7744152c48"
   stages:
     - stage: path
       stageUuid: "c2d46d7d-f33b-8c89-9ef4-d333fbff62a5"
@@ -117,11 +108,11 @@ signatures:
     - stage: links
       stageUuid: "4b5e5c91-6683-8872-8f10-17c232d67ede"
     - stage: horo
-      stageUuid: "38e664c5-04e2-8722-bf33-42942521867e"
+      stageUuid: "6c3de3b3-434a-8466-9d8e-b82ec946ae7a"
     - stage: seal
       stageUuid: "799579d1-a269-8094-bf85-70c24d3c360f"
     - stage: uuid
-      stageUuid: "9864f1f0-0e3c-8e8d-a7b2-0caf47a0f6bf"
+      stageUuid: "696fbd9c-5094-8287-841d-0f1c76f11345"
 version: 2
 ---
 # fiscal-periods

@@ -2,126 +2,157 @@
 name: decide
 description: "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary."
 atomPath: decide
-coordinate: decide · 4/weave · 3d07e328
-contentUuid: "82850011-1cd2-5afc-82ba-f8645cb082d0"
-diamondUuid: "225b2ad0-f150-81cb-881d-23f5fcd92137"
-uuid: "3d07e328-586b-83bb-8744-7e9b0cd9d4b3"
-horo: 4
+coordinate: "decide · 2/share · f2e5262a"
+contentUuid: "0e993a20-1e78-564c-8418-26567d7a0d25"
+diamondUuid: "ee32d7f6-faaa-8913-92b4-b7a9321b0cfc"
+uuid: "f2e5262a-5889-85ef-8e86-00640ae5d892"
+horo: 2
 bonds:
   in:
     - budgetvariance
+    - claim
     - classroom
     - competition
     - concatenate
+    - confirm
     - cost
     - decompression
     - gate
+    - guardian
     - harmony
+    - improve
     - law
     - logic
     - materiality
     - merge
     - peace
     - proof
+    - publish
+    - rosetta
+    - rules
     - self
     - society
     - uuid
     - variance
   out:
     - budgetvariance
+    - claim
     - classroom
     - competition
     - concatenate
+    - confirm
     - cost
     - decompression
     - gate
+    - guardian
     - harmony
+    - improve
     - law
     - logic
     - materiality
     - merge
     - peace
     - proof
+    - publish
+    - rosetta
+    - rules
     - self
     - society
     - uuid
     - variance
 typography:
   partition: decide
-  bondDegree: 54
+  bondDegree: 75
   neighbors: []
 standards: []
 bindings: []
 neighbors:
   wikilink:
     - competition
+    - confirm
     - cost
     - decompression
     - gate
+    - guardian
     - harmony
     - law
     - logic
     - merge
     - peace
     - proof
+    - rules
     - self
     - society
     - uuid
   matrix:
     - budgetvariance
+    - claim
     - classroom
     - competition
     - concatenate
+    - confirm
     - cost
     - decompression
     - gate
+    - guardian
     - harmony
+    - improve
     - law
     - logic
     - materiality
     - merge
     - peace
     - proof
+    - publish
+    - rosetta
+    - rules
     - self
     - society
     - uuid
     - variance
   backlinks:
     - budgetvariance
+    - claim
     - classroom
     - competition
     - concatenate
+    - confirm
     - cost
     - decompression
     - gate
+    - guardian
     - harmony
+    - improve
     - law
     - logic
     - materiality
     - merge
     - peace
     - proof
+    - publish
+    - rosetta
+    - rules
     - self
     - society
     - uuid
     - variance
 signatures:
-  computationUuid: "8235ded0-c6c7-8705-9272-8ccd953cdad9"
+  computationUuid: "9b612e3e-329e-8d26-a744-826189bf23ad"
   stages:
     - stage: path
       stageUuid: "e30bdc24-cda7-8b6c-b830-b96a3a530e7b"
     - stage: trinity
       stageUuid: "b1f3dfe2-8a50-8664-85b3-8608546644ef"
     - stage: boundary
-      stageUuid: "bfc91b27-bc84-8f12-9b42-00d83ea20f87"
+      stageUuid: "5c31db99-0602-8c9c-a684-8f2428156c44"
     - stage: links
-      stageUuid: "b3636052-6fe6-84bb-885b-6f5a4655d589"
+      stageUuid: "15472826-9719-8d8e-8f47-76d5796100cc"
     - stage: horo
-      stageUuid: "fdb3553f-46b7-8d32-ac02-909d97237150"
+      stageUuid: "2bf846a5-2e35-83ac-943f-642f4c8f2e0e"
     - stage: seal
-      stageUuid: "a71e6871-50b3-8535-a33d-4e3f641b4bfe"
+      stageUuid: "71809d7e-cb14-892b-bc6d-d05fa2ad062e"
     - stage: uuid
-      stageUuid: "359c5887-65c0-8d99-8d5d-6a94fa91aca8"
+      stageUuid: "c3c3989f-a878-8055-bb7a-49da58bb007f"
 version: 2
 ---
 # decide — the society's composed decision (correct · harmonic · efficient)

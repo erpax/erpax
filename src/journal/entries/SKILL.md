@@ -1,12 +1,12 @@
 ---
 name: entries
 description: "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3."
-atomPath: journal/entries
-coordinate: journal/entries · 4/weave · 54a4855a
-contentUuid: "ca7f6747-baaf-57d0-9c5a-e8be44dc072b"
-diamondUuid: "27321354-08b4-8bfc-88a2-5edef3ab32bc"
-uuid: "54a4855a-cc6e-888d-8f57-59ed66c8fb63"
-horo: 4
+atomPath: "journal/entries"
+coordinate: "journal/entries · 1/base · 448b4c9d"
+contentUuid: "69ca2698-6baf-5876-98af-9b45dab73a06"
+diamondUuid: "46461c75-7e79-8adb-95a0-d2853c3a267b"
+uuid: "448b4c9d-bf3f-810d-96d7-41f90b39ee1b"
+horo: 1
 bonds:
   in:
     - accounting
@@ -79,18 +79,15 @@ typography:
   neighbors: []
 standards:
   - "ECMA-262"
-  - "EU-2024/1183"
-  - "EU-2024/1620"
-  - "EU-2024/1624"
-  - "EU-CSDDD-2024/1760"
   - "IEEE-754"
   - "IFRS IAS-1 presentation-of-financial-statements"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-8601-1:2019 date-time entry-date posted-date approval-date"
+  - "ISO-8601-1:2019 date-time entry-date posted-date approval-date`"
   - "OECD SAF-T §3 journal-entries"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-105 generally-accepted-accounting-principles"
   - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -165,7 +162,7 @@ neighbors:
     - standard
     - transactions
 signatures:
-  computationUuid: "2dcae5a6-8579-883e-a719-7926a066c0a8"
+  computationUuid: "c71866e9-13ec-8dd8-8c08-3852615e6e56"
   stages:
     - stage: path
       stageUuid: "e1568b51-9231-8c31-b451-33e00acace8d"
@@ -176,11 +173,11 @@ signatures:
     - stage: links
       stageUuid: "d8a582b9-24ef-8760-a424-e9bb0b3974d0"
     - stage: horo
-      stageUuid: "1e69e279-0b09-8756-8a61-2dcc6ebae239"
+      stageUuid: "37203637-262d-85b6-aa9d-8a54afeeca56"
     - stage: seal
       stageUuid: "4d94095d-dde8-88d1-806a-155fee347f61"
     - stage: uuid
-      stageUuid: "01e00e4c-e621-8de3-99d0-1d2a7f3a2c76"
+      stageUuid: "7cb9b4f9-90db-842b-9d2b-055b7b11344d"
 version: 2
 ---
 # journal-entries

@@ -1,12 +1,12 @@
 ---
 name: items
 description: "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items."
-atomPath: pack/items
-coordinate: pack/items · 7/descent · 0b26ed90
-contentUuid: "ea244d6f-4238-5003-aac3-f894c2f3ba87"
-diamondUuid: "f16862b2-7d7a-8d43-9c85-290ca9ef1a2c"
-uuid: "0b26ed90-d1bd-8d6b-9007-d233586ef121"
-horo: 7
+atomPath: "pack/items"
+coordinate: "pack/items · 4/weave · f0478c92"
+contentUuid: "4acb0a9c-538d-5beb-91da-8098a817746a"
+diamondUuid: "b67d675b-f2fa-8b90-8ad3-c366e3f09f91"
+uuid: "f0478c92-9544-8b71-b965-ec432f039de4"
+horo: 4
 bonds:
   in:
     - agriculture
@@ -81,7 +81,6 @@ standards:
   - "IFRS IAS-2 §10 finished-goods at dispatch"
   - "ISA-95"
   - "ISA-95:2013 §B.5 production-operations dispatch line"
-  - "ISO-19011:2018 audit-trail dispatch line"
   - "ISO/IEC-29119"
   - "UN-CEFACT"
   - "UN/CEFACT Rec20 mass (gram) per-unit"
@@ -160,7 +159,7 @@ neighbors:
     - upsell
     - variant
 signatures:
-  computationUuid: "a88abfe2-c1ac-8f7b-965e-e7ec2e9bb192"
+  computationUuid: "3dc44b99-9779-86f6-8c6a-754857b4ac5a"
   stages:
     - stage: path
       stageUuid: "2d61d636-2b0d-8b4f-8144-c1aba7d389c3"
@@ -171,11 +170,11 @@ signatures:
     - stage: links
       stageUuid: "7bb8dd91-2a33-8d04-b306-a854bd2376c7"
     - stage: horo
-      stageUuid: "342212a7-915b-87eb-9741-ec3dcba6b8cd"
+      stageUuid: "98115367-7400-877b-a337-80ddac130159"
     - stage: seal
-      stageUuid: "11b3a64d-11e9-83fd-840c-c5da9f2a3092"
+      stageUuid: "3a93a549-a764-85bc-be3f-cd3d1e70751b"
     - stage: uuid
-      stageUuid: "caa118b9-80ec-8458-8b7d-dcb08703560f"
+      stageUuid: "23e886a3-d112-85bf-91d7-2fc5ed628be4"
 version: 2
 ---
 # pack/items — the pack line

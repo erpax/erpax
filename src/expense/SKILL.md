@@ -2,11 +2,11 @@
 name: expense
 description: "Use when reasoning about expense — A schema.org component word, collided out of schema.org compounds — fused from IncentiveQualifiedExpenseType · qualifiedExpense (sti · collapse · merge)."
 atomPath: expense
-coordinate: expense · 2/share · 0c5f945a
-contentUuid: "b31a53ae-6288-5a63-acec-759f16b8bd00"
-diamondUuid: "84b689a6-1afc-8040-9c1b-9b3174b4189e"
-uuid: "0c5f945a-a5cd-8da3-88a2-136c050595f6"
-horo: 2
+coordinate: "expense · 1/base · 2c5b5bf5"
+contentUuid: "3418adc6-3f23-5a5e-9d8f-757502169100"
+diamondUuid: "3d21af14-3207-8fbb-b4d7-4d89cd38ad1d"
+uuid: "2c5b5bf5-19dc-8c74-9555-dce993f97752"
+horo: 1
 bonds:
   in:
     - balance
@@ -45,7 +45,6 @@ typography:
   bondDegree: 47
   neighbors: []
 standards:
-  - "entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 neighbors:
@@ -95,7 +94,7 @@ neighbors:
     - tamper
     - type
 signatures:
-  computationUuid: "412236b1-0c72-8658-a4e2-f351adcba2b8"
+  computationUuid: "54b06e0e-bc4f-8cf8-a849-b2459b6218a3"
   stages:
     - stage: path
       stageUuid: "876db6fa-4c9d-8e61-bba0-abeb77bce6c7"
@@ -106,11 +105,11 @@ signatures:
     - stage: links
       stageUuid: "86cd7745-9a6e-8dd3-8e28-d9bd7d91659e"
     - stage: horo
-      stageUuid: "139b55c5-d788-853a-a889-b62fcac1d092"
+      stageUuid: "6748a3c8-9577-8dc6-9524-bfe3f0297129"
     - stage: seal
-      stageUuid: "800689a9-4ece-8ee2-b416-1d39abdb9127"
+      stageUuid: "1f646d27-20e2-858a-8e10-08b7b0c5ea57"
     - stage: uuid
-      stageUuid: "f3dd9792-290d-83b2-b34d-d1d0580d01e4"
+      stageUuid: "36fbd63d-3166-8410-8a21-6dcf47feeec4"
 version: 2
 ---
 # expense

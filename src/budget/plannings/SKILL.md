@@ -1,12 +1,12 @@
 ---
 name: plannings
 description: "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register."
-atomPath: budget/plannings
-coordinate: budget/plannings · 1/base · 24d65ed7
-contentUuid: "9cffd0b6-f7cd-52f9-8c42-4e5a87141c18"
-diamondUuid: "002f39bc-85e8-811f-b2a8-04f2c297bd7c"
-uuid: "24d65ed7-f08a-8226-9375-af1b5cedb618"
-horo: 1
+atomPath: "budget/plannings"
+coordinate: "budget/plannings · 8/crest · a171bec2"
+contentUuid: "61c1c7d2-2d58-5b73-868d-bf29e90307ad"
+diamondUuid: "b713bae9-2aab-850e-9578-4602defe7847"
+uuid: "a171bec2-f87f-80d0-bdfc-579c0e271c83"
+horo: 8
 bonds:
   in:
     - accounting
@@ -33,12 +33,13 @@ typography:
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "IFRS IAS-8 accounting-policies-changes-and-errors"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-4217:2015 currency-codes"
-  - "ISO-8601-1"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time fiscal-year period"
+  - "ISO-8601-1:2019 date-time fiscal-year period`"
   - "SOX §404 internal-controls budget-approval-workflow"
   - "US-GAAP ASC-270 interim-reporting"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -66,7 +67,7 @@ neighbors:
     - standard
     - variance
 signatures:
-  computationUuid: "457d5670-dbc5-8294-891b-bd195e67bfe2"
+  computationUuid: "dab6fefa-673f-8e3d-b5d4-de106d03ad80"
   stages:
     - stage: path
       stageUuid: "71d3b8b3-6d52-862e-9672-5e1e69bc72a0"
@@ -77,11 +78,11 @@ signatures:
     - stage: links
       stageUuid: "07cfe24c-f671-8aed-bc32-0a1f5c14b0c6"
     - stage: horo
-      stageUuid: "c04815cb-2b92-876f-bea8-39b0b6bab73c"
+      stageUuid: "cce3f77f-9197-854b-b651-4fd6fe792bd9"
     - stage: seal
       stageUuid: "27094773-9500-8f10-b216-8585885f7436"
     - stage: uuid
-      stageUuid: "edbc9127-14e7-8e52-9cba-e3e63c680951"
+      stageUuid: "bfeac829-3d81-8463-a0bf-638a45e6ddc9"
 version: 2
 ---
 # budget-planning

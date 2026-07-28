@@ -2,10 +2,10 @@
 name: blood
 description: "Use when reasoning about erpax's carrier — the courier organ that delivers accounted value to every node and carries entropy away. Blood is the receipt flow through the closed loop the heart drives and the lung charges: three properties of living blood (cooperative Hill binding · steady-state turnover by Little's law · conserved delivery) are computed and mapped — a structural isomorphism — onto erpax's coverage, regeneration, and double-entry."
 atomPath: blood
-coordinate: blood · 2/share · 64c6394c
-contentUuid: "032bd537-187c-5c54-94ce-aaf667db7ece"
-diamondUuid: "120affa0-02c5-8e27-a7c6-18efb1ea5a43"
-uuid: "64c6394c-8450-8ecf-81c8-5d5134a2b234"
+coordinate: "blood · 2/share · 2df5a535"
+contentUuid: "cd0bc64e-eb6f-5eb5-91d2-5664bb4d572f"
+diamondUuid: "93f49120-90bd-81c4-9c1e-84323e12b22e"
+uuid: "2df5a535-e272-88d0-ad32-9d46ecc437da"
 horo: 2
 bonds:
   in:
@@ -39,7 +39,6 @@ typography:
 standards:
   - "A. V. Hill,"
   - "Hill, J. Physiol. 1910 (cooperativity) · erythropoiesis (≈2M RBC/s, ≈120 d)"
-  - "computed (Hill equation · Little's law · mass balance) from cited constants"
 bindings: []
 neighbors:
   wikilink:
@@ -75,7 +74,7 @@ neighbors:
     - supply
     - test
 signatures:
-  computationUuid: "1c95c1ac-0c58-87da-82c3-a24992866677"
+  computationUuid: "55ca6b08-0b38-8527-9a0d-f0d26fb2675b"
   stages:
     - stage: path
       stageUuid: "2cdf2439-8f4a-8dd6-8571-6697ceba1894"
@@ -86,11 +85,11 @@ signatures:
     - stage: links
       stageUuid: "5bfa5375-0785-85f9-bde0-1cfb8bb4268d"
     - stage: horo
-      stageUuid: "fbbce37e-0a99-89bf-901a-4305f380228d"
+      stageUuid: "4fd96e60-8c1b-8e04-a4ad-b9560740489e"
     - stage: seal
-      stageUuid: "a8b3335a-ce75-8438-8ef7-d5ff8c42a6a6"
+      stageUuid: "f0894d76-5fc3-8cd7-9199-445aae280848"
     - stage: uuid
-      stageUuid: "0bb14ce6-97b6-8a5b-b323-c57c9ae6b5dd"
+      stageUuid: "374b394e-e73d-82fb-af4c-619cbfb7281e"
 version: 2
 ---
 # blood — the courier (cooperative delivery · regenerated · conserved)

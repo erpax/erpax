@@ -1,12 +1,12 @@
 ---
 name: actions
 description: "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register."
-atomPath: legal/entities/board/actions
-coordinate: legal/entities/board/actions · 2/share · 9ab09748
-contentUuid: "91257312-4744-567a-8942-bbaa991356d1"
-diamondUuid: "1fe5ea85-e124-8f4b-be7e-5341f1adb667"
-uuid: "9ab09748-0aaf-85c2-8ae0-061156bc2a11"
-horo: 2
+atomPath: "legal/entities/board/actions"
+coordinate: "legal/entities/board/actions · 4/weave · 742e9edd"
+contentUuid: "c14d072c-2449-5a19-b4a1-456af9e7786e"
+diamondUuid: "ef76566a-c5f4-8506-a079-2f3439266412"
+uuid: "742e9edd-6883-827f-bfba-23346c2bb3d1"
+horo: 4
 bonds:
   in:
     - minutes
@@ -19,9 +19,11 @@ typography:
 standards:
   - "ISO-37000"
   - "ISO-37000:2021 governance-of-organizations"
+  - "ISO-37000:2021 governance-of-organizations`"
   - "OECD G20 principles-of-corporate-governance"
   - SOX §404 governance
   - "US-CTA-2021"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
@@ -30,7 +32,7 @@ neighbors:
   backlinks:
     - minutes
 signatures:
-  computationUuid: "54e2bd23-d138-8314-b2b7-5dbf2c588139"
+  computationUuid: "2a0a148d-48ef-8d2e-a836-65d8b06d5704"
   stages:
     - stage: path
       stageUuid: "426ec008-e521-82bc-b81b-202852ba3a15"
@@ -41,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "e18fa1eb-43fe-82c5-869a-8cfbb67ba6a4"
     - stage: horo
-      stageUuid: "8b923f71-fcbf-8c61-9cb6-11bc9edf6bf5"
+      stageUuid: "4bf30d9a-245d-8bfb-a432-73046cb11a8f"
     - stage: seal
       stageUuid: "3442bb75-3d8a-8bfd-8904-9df7c353f8c7"
     - stage: uuid
-      stageUuid: "b4829fad-41ba-8ba8-845f-c2adcd230bd8"
+      stageUuid: "216e8510-8d31-8d63-93b2-d817be532a32"
 version: 2
 ---
 # board-actions

@@ -2,11 +2,11 @@
 name: collider
 description: "Use when collapsing the corpus's conventions into one tamper-cost verdict — pure math, no default; joint coverage is the product of each convention-check's computed coverage, and the tamper-cost is coverageCostLog2 of it, infinite only when every convention is computed clean (zero entropy)."
 atomPath: collider
-coordinate: collider · 2/share · 35baa33a
-contentUuid: "695937c0-f5ad-505a-a980-e33e6e99cdcb"
-diamondUuid: "290ae99f-7abc-8b7b-85e9-f5e73ce430fc"
-uuid: "35baa33a-2646-880f-a884-4a24ff0ba834"
-horo: 2
+coordinate: "collider · 1/base · a78bdaef"
+contentUuid: "f819f682-2a84-5dc7-982f-ec4ad9a3901a"
+diamondUuid: "e5dcf731-e58a-8cf1-b689-e545969158bf"
+uuid: "a78bdaef-ecf3-83d7-954a-1601c60880d6"
+horo: 1
 bonds:
   in:
     - convention
@@ -34,8 +34,6 @@ typography:
   neighbors: []
 standards:
   - "coverageCostLog2 (the ∞ law) · the product of independent convention coverages · computed-not-hardcoded"
-  - "each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed"
-  - "every check is a live computation; coverages bounded by construction, atom count positive by architecture; the verdict is never assumed"
 bindings: []
 neighbors:
   wikilink:
@@ -66,7 +64,7 @@ neighbors:
     - strength
     - tamper
 signatures:
-  computationUuid: "b0b06ddd-655d-8d7e-9bf7-b1c92e510fe0"
+  computationUuid: "665dd005-e66c-8799-9bd6-c393a76717d4"
   stages:
     - stage: path
       stageUuid: "7e176474-89a3-8875-8b92-9243e294b0b5"
@@ -77,11 +75,11 @@ signatures:
     - stage: links
       stageUuid: "af170a11-c9e6-82b9-afc4-c629d4d38c00"
     - stage: horo
-      stageUuid: "32091403-389b-8963-a976-1248509b199f"
+      stageUuid: "3c0a2e63-32e3-8dd3-8276-40c6f6670c11"
     - stage: seal
-      stageUuid: "1c1de4f2-7837-8f64-8574-e3d16bf795d2"
+      stageUuid: "682ee176-b3f9-8b44-86a1-627702e3470d"
     - stage: uuid
-      stageUuid: "e6a636a6-34bc-8d28-8c6b-f7ef554fc050"
+      stageUuid: "9a6f7453-2be6-8fb4-9b7f-c348c55a1e84"
 version: 2
 ---
 # collider — the conventions collided, pure math, no default

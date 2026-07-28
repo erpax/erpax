@@ -1,12 +1,12 @@
 ---
 name: accounts
 description: "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node."
-atomPath: gl/accounts
-coordinate: gl/accounts · 1/base · 06dcf682
-contentUuid: "2e7b180a-042b-54a8-8622-16d87d979a62"
-diamondUuid: "4e39d9d6-a640-8909-b610-765e0117e921"
-uuid: "06dcf682-ad63-84fb-aea3-13a4e360fea0"
-horo: 1
+atomPath: "gl/accounts"
+coordinate: "gl/accounts · 8/crest · 6ab62a98"
+contentUuid: "fbd29d2f-7d06-5ba8-9eb5-687074ee137a"
+diamondUuid: "1ffa7775-11e2-8b63-b7fe-262b0f05610b"
+uuid: "6ab62a98-3a43-8129-b212-4011273ca21a"
+horo: 8
 bonds:
   in:
     - access
@@ -33,22 +33,18 @@ typography:
   bondDegree: 0
   neighbors: []
 standards:
-  - "COSO-ERM-2017"
-  - "EN-16931"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "ISO-13616-1"
-  - "ISO-19011:2018 audit-trail chart-of-accounts-change"
-  - "ISO-20022"
   - "ISO-3166-2"
   - "ISO-4217:2015 currency-codes account-currency"
+  - "ISO-4217:2015 currency-codes account-currency`"
   - "ISO-9362"
   - "OECD SAF-T §2 general-ledger-accounts"
   - "RFC-5545"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-210 balance-sheet"
   - "W3C-PROV-O"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -80,7 +76,7 @@ neighbors:
     - reconciliations
     - runs
 signatures:
-  computationUuid: "d2be3318-304b-88a7-8020-37ca9132ba7f"
+  computationUuid: "6c14c580-c411-8135-b1f1-6fcd0023f11d"
   stages:
     - stage: path
       stageUuid: "7e314456-172a-833b-b65a-622e1b2c9fdd"
@@ -91,11 +87,11 @@ signatures:
     - stage: links
       stageUuid: "59b67049-d5e8-85d7-b83e-466ce45a4141"
     - stage: horo
-      stageUuid: "692a3e7b-a480-8cc7-b255-8ac7bbfce5f5"
+      stageUuid: "003a61f5-135f-852f-b13a-cca7810b4c60"
     - stage: seal
       stageUuid: "b050fb19-2afc-8106-aefa-e3b6157620fe"
     - stage: uuid
-      stageUuid: "61ffbadb-e89e-873c-ac1b-cd8e398729f0"
+      stageUuid: "7825ba28-bfd3-8d83-b6a3-ddd7193b82f7"
 version: 2
 ---
 # gl-accounts

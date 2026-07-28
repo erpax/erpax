@@ -2,11 +2,11 @@
 name: chakra
 description: "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432."
 atomPath: chakra
-coordinate: chakra · 1/base · 9de6754c
-contentUuid: "c84fd088-64ef-5587-9c37-c9c4c3d87a3b"
-diamondUuid: "6bed1d12-dda4-8e2e-a7a4-65c2d966b6a8"
-uuid: "9de6754c-1b6d-85ef-9f47-b685fdaced57"
-horo: 1
+coordinate: "chakra · 4/weave · 919853ec"
+contentUuid: "036808a1-1b64-524d-953f-c805c4cac5cc"
+diamondUuid: "bd2a31c1-ecc8-89a9-bdb2-8cc623f87d0c"
+uuid: "919853ec-12cf-82e3-9132-9b09c8f37c98"
+horo: 4
 bonds:
   in:
     - breath
@@ -68,8 +68,6 @@ typography:
   neighbors: []
 standards:
   - "ISO-16:1975 a432-tuning-reference (pitch from position)"
-  - "note, colour and uuid all computed from the position math, never hand-asserted"
-  - "note, colour and uuid computed from the position math, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -143,7 +141,7 @@ neighbors:
     - uuid
     - vibration
 signatures:
-  computationUuid: "9cf7dcc8-c9c8-88fb-b755-971939b55df5"
+  computationUuid: "5e918e90-27d6-8d95-839a-3aaf11f67868"
   stages:
     - stage: path
       stageUuid: "f1ab0622-9fde-8d5c-adc0-a73f2ed8d88b"
@@ -154,11 +152,11 @@ signatures:
     - stage: links
       stageUuid: "003f6278-00e1-8e44-ac05-d61c8df01018"
     - stage: horo
-      stageUuid: "cc2d12b0-635e-8ec8-a399-8ba63bdc0586"
+      stageUuid: "36e60561-fe7a-8256-a1d9-c307062cae8f"
     - stage: seal
-      stageUuid: "07168188-e76b-8308-8435-0ccdf7cce49c"
+      stageUuid: "1ffeb6c5-a333-84ae-a397-2f1819e9be96"
     - stage: uuid
-      stageUuid: "5556db5f-e680-83fa-8e76-54fff7a491c1"
+      stageUuid: "fa081edd-efb6-8ef8-93a5-3904e0f037e5"
 version: 2
 ---
 # chakra — the seven centers ARE the seven horo positions

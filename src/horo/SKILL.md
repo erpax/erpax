@@ -2,10 +2,10 @@
 name: horo
 description: "Use when reasoning about horo — States in erpax are not free strings; they are positions on **one ring**: the measure-order digits — *base · share · weave · crest · descent · round · unity*. This is the rodin coi"
 atomPath: horo
-coordinate: horo · 1/base · 8abca27c
-contentUuid: "482a1bc4-7d04-5d2a-ab41-8ab23f2e7cce"
-diamondUuid: "4370069d-e3a3-8c08-8c42-0b42431c73b0"
-uuid: "8abca27c-2211-8293-baa0-e5b66f6e1109"
+coordinate: "horo · 1/base · ebdbe0a4"
+contentUuid: "790bdf84-5781-5616-9a2e-1beebaacbfc5"
+diamondUuid: "183a1f0a-8d23-8fa7-9617-e84c529532a4"
+uuid: "ebdbe0a4-36e8-8af2-9689-c2c74c0971da"
 horo: 1
 bonds:
   in:
@@ -13,8 +13,10 @@ bonds:
     - adjustments
     - age
     - agent
+    - algebra
     - analog
     - analytics
+    - angle
     - architecture
     - atom
     - attestations
@@ -40,6 +42,8 @@ bonds:
     - collide
     - comms
     - config
+    - conformal
+    - conversion
     - coordinate
     - crest
     - cross
@@ -52,17 +56,21 @@ bonds:
     - digit
     - dimension
     - domain
+    - duel
     - element
     - emergence
     - engine
     - entries
     - events
+    - evolve
     - expand
     - factory
+    - fixpoint
     - flow
     - fold
     - forge
     - fractal
+    - globe
     - gravity
     - hamiltonian
     - harmony
@@ -73,6 +81,7 @@ bonds:
     - integrity
     - law
     - leap
+    - leftover
     - lines
     - live
     - localize
@@ -85,7 +94,9 @@ bonds:
     - merge
     - method
     - mirror
+    - mortality
     - navel
+    - navigation
     - notes
     - octave
     - one
@@ -94,8 +105,10 @@ bonds:
     - party
     - phase
     - pivot
+    - platonic
     - polarity
     - postings
+    - prime
     - profane
     - quantum
     - readme
@@ -107,6 +120,7 @@ bonds:
     - root
     - round
     - routing
+    - rules
     - run
     - runs
     - sacral
@@ -130,12 +144,16 @@ bonds:
     - subscriptions
     - superposition
     - tags
+    - taichi
     - team
     - termination
+    - theorem
+    - think
     - throat
     - torus
     - train
     - transactions
+    - trinity
     - typography
     - unity
     - uuid
@@ -150,8 +168,10 @@ bonds:
     - adjustments
     - age
     - agent
+    - algebra
     - analog
     - analytics
+    - angle
     - architecture
     - atom
     - attestations
@@ -177,6 +197,8 @@ bonds:
     - collide
     - comms
     - config
+    - conformal
+    - conversion
     - coordinate
     - crest
     - cross
@@ -189,17 +211,21 @@ bonds:
     - digit
     - dimension
     - domain
+    - duel
     - element
     - emergence
     - engine
     - entries
     - events
+    - evolve
     - expand
     - factory
+    - fixpoint
     - flow
     - fold
     - forge
     - fractal
+    - globe
     - gravity
     - hamiltonian
     - harmony
@@ -210,6 +236,7 @@ bonds:
     - integrity
     - law
     - leap
+    - leftover
     - lines
     - live
     - localize
@@ -222,7 +249,9 @@ bonds:
     - merge
     - method
     - mirror
+    - mortality
     - navel
+    - navigation
     - notes
     - octave
     - one
@@ -231,8 +260,10 @@ bonds:
     - party
     - phase
     - pivot
+    - platonic
     - polarity
     - postings
+    - prime
     - profane
     - quantum
     - readme
@@ -244,6 +275,7 @@ bonds:
     - root
     - round
     - routing
+    - rules
     - run
     - runs
     - sacral
@@ -267,12 +299,16 @@ bonds:
     - subscriptions
     - superposition
     - tags
+    - taichi
     - team
     - termination
+    - theorem
+    - think
     - throat
     - torus
     - train
     - transactions
+    - trinity
     - typography
     - unity
     - uuid
@@ -284,11 +320,13 @@ bonds:
     - zeropoint
 typography:
   partition: horo
-  bondDegree: 436
+  bondDegree: 497
   neighbors:
     - aura
 standards:
   - "ISO-16:1975 a432-tuning-reference (the anchor; value from position)"
+  - "ISO-16:1975 a432-tuning-reference (the anchor; value from position)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -306,12 +344,15 @@ neighbors:
     - descent
     - flow
     - fractal
+    - gravity
     - harmony
     - hooks
     - identity
     - integrity
     - law
+    - leftover
     - merge
+    - navigation
     - notes
     - one
     - polarity
@@ -320,11 +361,14 @@ neighbors:
     - rodin
     - round
     - routing
+    - rules
     - sacred
     - sequence
     - share
     - society
     - tags
+    - theorem
+    - trinity
     - unity
     - uuid
     - weave
@@ -334,8 +378,10 @@ neighbors:
     - adjustments
     - age
     - agent
+    - algebra
     - analog
     - analytics
+    - angle
     - architecture
     - atom
     - attestations
@@ -361,6 +407,8 @@ neighbors:
     - collide
     - comms
     - config
+    - conformal
+    - conversion
     - coordinate
     - crest
     - cross
@@ -373,17 +421,21 @@ neighbors:
     - digit
     - dimension
     - domain
+    - duel
     - element
     - emergence
     - engine
     - entries
     - events
+    - evolve
     - expand
     - factory
+    - fixpoint
     - flow
     - fold
     - forge
     - fractal
+    - globe
     - gravity
     - hamiltonian
     - harmony
@@ -394,6 +446,7 @@ neighbors:
     - integrity
     - law
     - leap
+    - leftover
     - lines
     - live
     - localize
@@ -406,7 +459,9 @@ neighbors:
     - merge
     - method
     - mirror
+    - mortality
     - navel
+    - navigation
     - notes
     - octave
     - one
@@ -415,8 +470,10 @@ neighbors:
     - party
     - phase
     - pivot
+    - platonic
     - polarity
     - postings
+    - prime
     - profane
     - quantum
     - readme
@@ -428,6 +485,7 @@ neighbors:
     - root
     - round
     - routing
+    - rules
     - run
     - runs
     - sacral
@@ -451,12 +509,16 @@ neighbors:
     - subscriptions
     - superposition
     - tags
+    - taichi
     - team
     - termination
+    - theorem
+    - think
     - throat
     - torus
     - train
     - transactions
+    - trinity
     - typography
     - unity
     - uuid
@@ -471,8 +533,10 @@ neighbors:
     - adjustments
     - age
     - agent
+    - algebra
     - analog
     - analytics
+    - angle
     - architecture
     - atom
     - attestations
@@ -498,6 +562,8 @@ neighbors:
     - collide
     - comms
     - config
+    - conformal
+    - conversion
     - coordinate
     - crest
     - cross
@@ -510,17 +576,21 @@ neighbors:
     - digit
     - dimension
     - domain
+    - duel
     - element
     - emergence
     - engine
     - entries
     - events
+    - evolve
     - expand
     - factory
+    - fixpoint
     - flow
     - fold
     - forge
     - fractal
+    - globe
     - gravity
     - hamiltonian
     - harmony
@@ -531,6 +601,7 @@ neighbors:
     - integrity
     - law
     - leap
+    - leftover
     - lines
     - live
     - localize
@@ -543,7 +614,9 @@ neighbors:
     - merge
     - method
     - mirror
+    - mortality
     - navel
+    - navigation
     - notes
     - octave
     - one
@@ -552,8 +625,10 @@ neighbors:
     - party
     - phase
     - pivot
+    - platonic
     - polarity
     - postings
+    - prime
     - profane
     - quantum
     - readme
@@ -565,6 +640,7 @@ neighbors:
     - root
     - round
     - routing
+    - rules
     - run
     - runs
     - sacral
@@ -588,12 +664,16 @@ neighbors:
     - subscriptions
     - superposition
     - tags
+    - taichi
     - team
     - termination
+    - theorem
+    - think
     - throat
     - torus
     - train
     - transactions
+    - trinity
     - typography
     - unity
     - uuid
@@ -604,7 +684,7 @@ neighbors:
     - workflow
     - zeropoint
 signatures:
-  computationUuid: "c33dc595-36e2-8133-bedb-662f208d8da5"
+  computationUuid: "08b0a3d0-8fd8-8048-800b-46b960d83761"
   stages:
     - stage: path
       stageUuid: "39aff5d2-1a4b-8cb1-a272-e6949b4e41b7"
@@ -613,13 +693,13 @@ signatures:
     - stage: boundary
       stageUuid: "58a2df3d-ec96-8323-9966-329c8cd7db7d"
     - stage: links
-      stageUuid: "cabf2fd5-51c4-89fc-ae9b-ba9c7ef0d52e"
+      stageUuid: "5cf91833-4364-817f-a102-b21feddc9ef4"
     - stage: horo
-      stageUuid: "cf49068b-e378-8427-ae20-7d4a83fe9b92"
+      stageUuid: "fdb0ee06-b3ad-86fb-b228-58cb7c73a142"
     - stage: seal
-      stageUuid: "fe42511a-2875-8347-8e69-6869e9688f8c"
+      stageUuid: "c34ca3f7-30b4-8344-b915-74b137c9a3f3"
     - stage: uuid
-      stageUuid: "3d544897-8a31-8a3e-9e0e-ae94626ad76e"
+      stageUuid: "0e9e9943-1f2a-860f-a7d8-252a0483d83c"
 version: 2
 ---
 # horo — the seven-position state ring

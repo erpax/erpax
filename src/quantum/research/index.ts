@@ -39,6 +39,10 @@ export const researchValue = (run: ResearchRun, rate: number): Entry =>
 /**
  * The research ledger: the expense ⊕ the value, consolidated into one balanced double-entry. The
  * `worth` is value − cost (the agent's net position); worthwhile only when the run pays for itself.
+ *
+ * ZERO-COST LIMIT — when tokens=0 (sealed local deep research / memo reuse), researchCost=0 and any
+ * entropyReduced≥0 is worthwhile with unbounded ROI (answers÷tokens → ∞). That path lives in
+ * [[quantum/ftl]].research — architectural FTL applied to research itself.
  */
 export function researchLedger(run: ResearchRun, rate: number): { entry: Entry; worth: number; worthwhile: boolean } {
   const entry = consolidate([researchExpense(run), researchValue(run, rate)])

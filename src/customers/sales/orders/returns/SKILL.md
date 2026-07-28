@@ -1,12 +1,12 @@
 ---
 name: returns
 description: "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection."
-atomPath: customers/sales/orders/returns
-coordinate: customers/sales/orders/returns · 5/round · d720d6ee
-contentUuid: "6bddf94a-eb26-5d22-9482-d6e84eeea8b4"
-diamondUuid: "21b8247a-229c-8f8a-a684-d9047d6fc25e"
-uuid: "d720d6ee-f33f-8941-96a5-055a0cce8faf"
-horo: 5
+atomPath: "customers/sales/orders/returns"
+coordinate: "customers/sales/orders/returns · 8/crest · a767eceb"
+contentUuid: "86fb91a8-d0d6-5fff-8e82-5d6cb0f7621c"
+diamondUuid: "f2bda075-961a-893d-8834-7c58d0df4702"
+uuid: "a767eceb-f762-8f4c-b3a1-e31285cd3ce5"
+horo: 8
 bonds:
   in:
     - accounting
@@ -37,11 +37,12 @@ typography:
 standards:
   - "IFRS IAS-2 inventories return-to-stock"
   - "IFRS IFRS-15 §B22 right-of-return-revenue-reversal"
-  - "ISO-19011:2018 audit-trail rma-evidence"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls return-approval"
   - "US-GAAP ASC-330 inventory cost-flow"
   - "US-GAAP ASC-606-10-32-10 variable-consideration"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -75,7 +76,7 @@ neighbors:
     - store
     - transaction
 signatures:
-  computationUuid: "c62b64f0-9e2c-8764-aac0-22f22204f8f7"
+  computationUuid: "04b7b254-a7b0-8c7f-a802-5ac1c7009f30"
   stages:
     - stage: path
       stageUuid: "2bf7c8f8-0287-893b-af46-38d6e75a697e"
@@ -86,11 +87,11 @@ signatures:
     - stage: links
       stageUuid: "bafa1ce5-fff9-862a-aee3-a893153ac587"
     - stage: horo
-      stageUuid: "59b08a75-9d80-86f7-bb0a-37f1e8cda7cf"
+      stageUuid: "3072d676-18c1-846a-964f-7fff3499ca10"
     - stage: seal
       stageUuid: "70ac5fd1-5c8d-8cfe-aa60-4be79ba32b9b"
     - stage: uuid
-      stageUuid: "176ba2fa-2e46-8c57-9553-d488aea230e0"
+      stageUuid: "8f8e9d13-04b3-8ac4-b67e-a59572d82eb8"
 version: 2
 ---
 # returns

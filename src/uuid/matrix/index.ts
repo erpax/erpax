@@ -10,7 +10,10 @@
  * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider)
  */
 import { createHash } from 'node:crypto'
-import { norm } from '@/corpus'
+// `norm` is a trivial pure normaliser; importing it from `@/corpus` dragged the fs-based dev corpus
+// walker (index.mts: loadCorpus/walk) into the app + admin bundle (Worker-unsafe, unparseable .mts).
+// Inline it — behaviour-identical, and it severs the corpus-dev-tooling → matrix → admin-field edge.
+const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import {
   UUID_MATRIX_NODES,

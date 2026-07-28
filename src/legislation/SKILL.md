@@ -2,10 +2,10 @@
 name: legislation
 description: "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority."
 atomPath: legislation
-coordinate: legislation · 4/weave · 7aa8e141
-contentUuid: "7e310d26-87e3-544b-8b53-f6a202149595"
-diamondUuid: "1fa7498a-ceb4-8bb1-88a7-3ad727f9205f"
-uuid: "7aa8e141-2626-8b4f-a5d4-5c8a22db86a2"
+coordinate: "legislation · 4/weave · be7f7998"
+contentUuid: "2d5d88bd-dc23-567f-9f54-dbaaf6e96133"
+diamondUuid: "08842891-2683-8b0b-a1f8-41c3da9f8563"
+uuid: "be7f7998-069d-8c4f-96e4-607578f0004d"
 horo: 4
 bonds:
   in:
@@ -35,12 +35,10 @@ bonds:
     - passed
     - proof
     - repeals
-    - responsible
     - separation
     - sequence
     - society
     - standard
-    - transposes
   out:
     - akashic
     - amends
@@ -68,22 +66,20 @@ bonds:
     - passed
     - proof
     - repeals
-    - responsible
     - separation
     - sequence
     - society
     - standard
-    - transposes
 typography:
   partition: legislation
-  bondDegree: 99
+  bondDegree: 93
   neighbors: []
 standards:
   - "ISO 37000:2021 governance-of-organizations (the body of governing rules)"
-  - "ISO-19011:2018 §6.4 audit-evidence (every law content-addressed + citable)"
+  - "ISO 37000:2021 governance-of-organizations (the body of governing rules)`"
   - "ISO-37000"
-  - "US-CTA-2021"
   - "Venice Commission Rule of Law (law public, prospective, stable, equally applied)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -129,12 +125,10 @@ neighbors:
     - passed
     - proof
     - repeals
-    - responsible
     - separation
     - sequence
     - society
     - standard
-    - transposes
   backlinks:
     - akashic
     - amends
@@ -162,14 +156,12 @@ neighbors:
     - passed
     - proof
     - repeals
-    - responsible
     - separation
     - sequence
     - society
     - standard
-    - transposes
 signatures:
-  computationUuid: "c2099ae2-b6ea-8cfe-b980-75582b883f38"
+  computationUuid: "a7a8e05f-b80c-81aa-94ed-406af1a1146d"
   stages:
     - stage: path
       stageUuid: "549abeec-81d0-8f31-b4f9-d4992f5a824a"
@@ -180,11 +172,11 @@ signatures:
     - stage: links
       stageUuid: "fc6723f9-a9ab-8cc7-9ff6-c9b385ef1be3"
     - stage: horo
-      stageUuid: "84d414b4-c815-82d4-a68a-d230d62274a2"
+      stageUuid: "fa483782-3ffb-8697-8d3f-40b3bce34b57"
     - stage: seal
-      stageUuid: "b9859a6d-94b5-8bc1-91e0-eba389afa140"
+      stageUuid: "6eb62203-635d-826c-8be6-11dd9a934c27"
     - stage: uuid
-      stageUuid: "0138ee71-8d39-856a-8f5e-f30b1ac79628"
+      stageUuid: "16586181-416e-87ee-8802-d4fb3657b995"
 version: 2
 ---
 # legislation — the society makes its own law, bounded by its constitution

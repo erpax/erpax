@@ -1,45 +1,51 @@
 ---
 name: complete
 description: "Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree."
-atomPath: convention/complete
-coordinate: convention/complete · 2/share · f57f2c6a
-contentUuid: "affa25ab-fbfd-5078-8356-d494b34b2860"
-diamondUuid: "d75b273c-637f-844e-8a58-26572267cf54"
-uuid: "f57f2c6a-a5a2-837a-a895-5bdb0665f946"
-horo: 2
+atomPath: "convention/complete"
+coordinate: "convention/complete · 7/descent · d3ced307"
+contentUuid: "e8e13992-f8ad-54b4-b6f2-c7295528e317"
+diamondUuid: "6f277296-f2ea-8a28-96d4-e47e38bad63a"
+uuid: "d3ced307-15f9-89e9-b5f9-206d70eb9601"
+horo: 7
 bonds:
   in:
+    - aura
     - collapse
     - convention
+    - cost
     - data
+    - dry
     - feed
     - folded
     - fronted
+    - gravity
     - honest
     - law
     - merge
     - named
-    - sti
-    - time
     - triggered
+    - trinity
     - twinned
   out:
+    - aura
     - collapse
+    - cost
     - data
+    - dry
     - feed
     - folded
     - fronted
+    - gravity
     - honest
     - law
     - merge
     - named
-    - sti
-    - time
     - triggered
+    - trinity
     - twinned
 typography:
   partition: convention
-  bondDegree: 50
+  bondDegree: 56
   neighbors:
     - aura
 standards:
@@ -56,35 +62,41 @@ neighbors:
     - merge
     - trinity
   matrix:
+    - aura
     - collapse
+    - cost
     - data
+    - dry
     - feed
     - folded
     - fronted
+    - gravity
     - honest
     - law
     - merge
     - named
-    - sti
-    - time
     - triggered
+    - trinity
     - twinned
   backlinks:
+    - aura
     - collapse
+    - cost
     - data
+    - dry
     - feed
     - folded
     - fronted
+    - gravity
     - honest
     - law
     - merge
     - named
-    - sti
-    - time
     - triggered
+    - trinity
     - twinned
 signatures:
-  computationUuid: "18a7443b-ce4e-852b-981a-fbeb7930737d"
+  computationUuid: "7754d76b-bc4d-8bf8-9668-f2e1775a18a7"
   stages:
     - stage: path
       stageUuid: "9a0444b1-1fce-8095-8864-9ed8f536acf3"
@@ -95,11 +107,11 @@ signatures:
     - stage: links
       stageUuid: "2d0a3719-cc44-88f0-b791-426d2df685d7"
     - stage: horo
-      stageUuid: "34620ef3-ba0f-8b27-ac91-359beeac8ff7"
+      stageUuid: "465d6d8d-10af-8dbd-8936-04ec7d9c2146"
     - stage: seal
-      stageUuid: "7679672e-0fc5-8ff5-9667-428baded47e7"
+      stageUuid: "034abbf9-47d5-8b20-8fb9-642a915776a8"
     - stage: uuid
-      stageUuid: "ee8966b1-0d6e-8052-a794-98d11900ff95"
+      stageUuid: "ac7b28e0-437a-8808-b8c2-9ce77b16ea8c"
 version: 2
 ---
 # convention/complete — every atom is the full trinity {SKILL.md, index.ts, test.ts}

@@ -1,9 +1,64 @@
 ---
 name: speed
 description: "Use when auditing must prove it is fast — pure invariant checkers (counter/referential/bound integrity) whose SQL forms verify a whole ERP history in seconds at zero tokens; measured on etrima's 20-yr 29.7M-row DB at ~24M rows/s."
-atomPath: audit/speed
+atomPath: "audit/speed"
+coordinate: "audit/speed · 7/descent · 054bc0b6"
+contentUuid: "d5d15c9b-882e-5908-886e-84fc49a6bde6"
+diamondUuid: "a54a421b-ae6c-8629-8d6e-2ad6b2231173"
+uuid: "054bc0b6-28bf-8ba6-a137-9ccdd478b956"
+horo: 7
+bonds:
+  in:
+    - audit
+    - finality
+    - law
+    - thing
+  out:
+    - finality
+    - law
+    - thing
+typography:
+  partition: audit
+  bondDegree: 14
+  neighbors: []
+standards:
+  - "BG Наредба Н-18 §СУПТО — the audit trail must be inspectable (a 97.5%-orphaned trail is a finding)"
+  - "Naredba-N-18"
+bindings: []
+neighbors:
+  wikilink:
+    - audit
+    - law
+    - report
+    - rules
+    - theorem
+  matrix:
+    - finality
+    - law
+    - thing
+  backlinks:
+    - finality
+    - law
+    - thing
+signatures:
+  computationUuid: "5c1374d1-186f-80a7-a79b-4d217e284e90"
+  stages:
+    - stage: path
+      stageUuid: "e19ebb5e-3f26-8821-82e2-7084aebe2bfe"
+    - stage: trinity
+      stageUuid: "27dd0cdf-20fc-8b86-b972-9bc1c7946ab1"
+    - stage: boundary
+      stageUuid: "26a45fb1-db96-8421-bcb2-821cd717f6c0"
+    - stage: links
+      stageUuid: "91b70b84-d3f7-8992-b476-808dd34af005"
+    - stage: horo
+      stageUuid: "0bc16632-3545-8c4e-91c2-2b94302d8907"
+    - stage: seal
+      stageUuid: "0bdf9f0e-954a-8d29-90dd-ae790abbdb2f"
+    - stage: uuid
+      stageUuid: "db828a8d-560e-89da-9a28-09a52b1824b0"
+version: 2
 ---
-
 # audit/speed — a whole ERP history audited in seconds, at no AI bill
 
 The zero-bill-compiler thesis ([[report]]) proven on **real data**. Three invariants over the etrima 20-year manufacturing DB — **3.9GB, 29.7M rows** — including a **24.2M-row audit trail:**

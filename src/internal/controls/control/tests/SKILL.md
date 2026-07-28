@@ -1,12 +1,12 @@
 ---
 name: tests
 description: "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection."
-atomPath: internal/controls/control/tests
-coordinate: internal/controls/control/tests · 7/descent · f77d73e2
-contentUuid: "5720cb1a-17e1-5684-bdaa-deb6b1a83211"
-diamondUuid: "ef70c7a6-db17-8147-a46a-e9fedce7103a"
-uuid: "f77d73e2-0f81-8b07-a674-237d8e71dca6"
-horo: 7
+atomPath: "internal/controls/control/tests"
+coordinate: "internal/controls/control/tests · 1/base · a67ea8ff"
+contentUuid: "67cc19d9-396f-5fe6-b10a-3bded52bb6a2"
+diamondUuid: "7f81a2b9-5ed6-8ffd-8c9a-534afc27afb1"
+uuid: "a67ea8ff-57cf-8168-94d8-33c0d2edfaee"
+horo: 1
 bonds:
   in:
     - control
@@ -23,10 +23,10 @@ typography:
   neighbors: []
 standards:
   - "ISA-530"
-  - "ISO-19011"
   - "ISO-19011:2018 audit-sampling"
-  - "ISO-19011:2018 audit-trail"
+  - "ISO-19011:2018 audit-sampling`"
   - "SOX §404 internal-controls testing-evidence"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -40,7 +40,7 @@ neighbors:
     - law
     - proof
 signatures:
-  computationUuid: "f196320f-a6a8-8ad6-aa79-d361b7d6dc38"
+  computationUuid: "0c4cb305-9a22-88d5-a762-ed5ff15f8504"
   stages:
     - stage: path
       stageUuid: "f27657c4-a5b7-8723-9061-dc88d72add76"
@@ -51,11 +51,11 @@ signatures:
     - stage: links
       stageUuid: "f3b4c5c8-5c38-8c89-8779-ca53fd9ce811"
     - stage: horo
-      stageUuid: "d47c3564-a6c5-81e9-8203-152427b5fb4a"
+      stageUuid: "35840702-f030-8d04-a4ca-1a1314381a18"
     - stage: seal
       stageUuid: "d4145970-8513-8137-9240-78eda1d17250"
     - stage: uuid
-      stageUuid: "e70adc96-275d-86e1-ad7f-c93d0fec74c4"
+      stageUuid: "8370c2f9-1b8b-8b18-bd1e-354093e16d04"
 version: 2
 ---
 # control-tests

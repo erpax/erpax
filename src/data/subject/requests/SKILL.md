@@ -1,12 +1,12 @@
 ---
 name: requests
 description: "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection."
-atomPath: data/subject/requests
-coordinate: data/subject/requests · 5/round · 5e312305
-contentUuid: "7d68333e-7f53-5801-aefd-59ec599d9fe8"
-diamondUuid: "360ac082-50df-8f57-a04e-a145f56b7400"
-uuid: "5e312305-07d3-8245-9597-7228bc4dc0a2"
-horo: 5
+atomPath: "data/subject/requests"
+coordinate: "data/subject/requests · 2/share · 71728c70"
+contentUuid: "e0fab7fd-3dc3-5bb1-bab9-d2fdea1f1acb"
+diamondUuid: "ec868636-afe2-8ffd-a604-31d54ae509ae"
+uuid: "71728c70-ede2-870f-b4f4-85429f7d05b5"
+horo: 2
 bonds:
   in:
     - assets
@@ -39,8 +39,9 @@ standards:
   - "GDPR Art.18 right-to-restriction"
   - "GDPR Art.20 right-to-data-portability"
   - "GDPR Art.21 right-to-object"
-  - "ISO-19011:2018 audit-trail dsr-evidence"
   - "ISO-8601-1:2019 date-time submitted-at completed-at"
+  - "ISO-8601-1:2019 date-time submitted-at completed-at`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -67,7 +68,7 @@ neighbors:
     - spaces
     - users
 signatures:
-  computationUuid: "711bb2e8-505e-882a-af93-2b4179c16006"
+  computationUuid: "cbc1db81-2d52-88f6-8f4a-bf9c35c2b1a8"
   stages:
     - stage: path
       stageUuid: "28925805-056e-8035-9a44-b88e23a1a67b"
@@ -78,11 +79,11 @@ signatures:
     - stage: links
       stageUuid: "58ff38e4-f50e-84bd-aecd-90798812f470"
     - stage: horo
-      stageUuid: "21b0a21b-79e1-8245-acd6-3ddb0684834e"
+      stageUuid: "d1058a97-5a49-833f-a7a6-2357fc69d815"
     - stage: seal
       stageUuid: "53e7d3f6-7d08-8260-9a70-01dcf94624de"
     - stage: uuid
-      stageUuid: "6eb6c22d-0214-836b-bd2f-5736eda5cdfd"
+      stageUuid: "e5f080b7-b1df-8ac0-a44f-799aabc72040"
 version: 2
 ---
 # data-subject-requests

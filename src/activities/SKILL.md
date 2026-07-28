@@ -2,10 +2,10 @@
 name: activities
 description: "Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection."
 atomPath: activities
-coordinate: activities · 5/round · 683e3f56
-contentUuid: "873f5049-44a1-57f6-b1a4-af065bafcc76"
-diamondUuid: "28f0a268-5bb9-84bd-8a59-078d44227ee7"
-uuid: "683e3f56-ae03-8d1c-be34-b392e91bbcf9"
+coordinate: "activities · 5/round · 5541d5d2"
+contentUuid: "b61dc4f3-480d-5584-b1f1-8ac7626d2f2f"
+diamondUuid: "d04acf6b-43a9-867a-a8a5-92fdf8535dd6"
+uuid: "5541d5d2-c04a-8b4f-a069-92c9ccf52b64"
 horo: 5
 bonds:
   in:
@@ -58,11 +58,13 @@ standards:
   - "EU-Intrastat-Reg-2019/2152"
   - "GDPR Art.30 records-of-processing-activities"
   - "GDPR Art.5(1)(c) data-minimisation"
-  - "ISO-19011:2018 audit-trail crm-activity"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "RFC-5545"
   - "rfc-5545 icalendar"
+  - "rfc-5545 icalendar`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -109,7 +111,7 @@ neighbors:
     - users
     - vendors
 signatures:
-  computationUuid: "1ea896e2-33c8-8a47-9150-7153f37fb1d5"
+  computationUuid: "b89a769e-2bb6-8a0a-bc8d-50ae50a979c0"
   stages:
     - stage: path
       stageUuid: "a7db485e-6813-825e-9e77-3c34e544ca06"
@@ -120,11 +122,11 @@ signatures:
     - stage: links
       stageUuid: "8f1f16fe-52fe-8875-8f4c-967707c27f48"
     - stage: horo
-      stageUuid: "4e86e6d4-c18e-8439-b8f2-e7082a229c3b"
+      stageUuid: "f5916bf3-d3d8-86c2-940b-869dbdb9bb39"
     - stage: seal
-      stageUuid: "67703e68-6f03-8bcc-ba99-d57fa1c0a6d0"
+      stageUuid: "181d77b7-a31c-8a7d-9890-4da0bae80813"
     - stage: uuid
-      stageUuid: "06b4d0cf-a530-8682-94e1-519332bdec42"
+      stageUuid: "52f4bd69-a122-8b6c-99fe-945ea23533de"
 version: 2
 ---
 # activities

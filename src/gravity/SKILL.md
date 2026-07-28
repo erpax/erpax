@@ -2,11 +2,11 @@
 name: gravity
 description: "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; but it is BIDIRECTIONAL — forward it collapses folders to a minimal root, reverse it expands an infinite word-chain along the sequence path, a holographic boundary (not a dead point) where minimal mass means maximal tampering cost."
 atomPath: gravity
-coordinate: gravity · 1/base · 2a12b33c
-contentUuid: "16effe01-09f7-585a-800b-7dc3d5f90b3c"
-diamondUuid: "96535b6f-39c1-80e2-9fb1-997d57550176"
-uuid: "2a12b33c-8508-88ca-a08c-cf72317daaa5"
-horo: 1
+coordinate: "gravity · 5/round · f694ddd1"
+contentUuid: "c7e35a66-ef5a-5005-a805-2a81be0d6717"
+diamondUuid: "352de8d5-9912-8f0b-b10c-ef782518a0b5"
+uuid: "f694ddd1-eda1-8848-90cd-1818587586ad"
+horo: 5
 bonds:
   in:
     - boltzmann
@@ -24,12 +24,15 @@ bonds:
     - expand
     - fear
     - finality
+    - fixpoint
     - folded
     - fusion
     - gravity
     - holographic
+    - horo
     - interference
     - law
+    - leftover
     - linearity
     - link
     - literature
@@ -38,21 +41,26 @@ bonds:
     - math
     - matrix
     - merge
+    - metric
     - one
     - particle
     - pivot
     - plasma
+    - platonic
+    - proof
     - reactor
     - readme
     - reciprocal
     - relocate
     - request
+    - rosetta
     - sequence
     - singularity
     - star
     - strength
     - tamper
     - temperature
+    - theorem
     - topography
     - torus
     - triggered
@@ -78,12 +86,15 @@ bonds:
     - expand
     - fear
     - finality
+    - fixpoint
     - folded
     - fusion
     - gravity
     - holographic
+    - horo
     - interference
     - law
+    - leftover
     - linearity
     - link
     - literature
@@ -92,21 +103,26 @@ bonds:
     - math
     - matrix
     - merge
+    - metric
     - one
     - particle
     - pivot
     - plasma
+    - platonic
+    - proof
     - reactor
     - readme
     - reciprocal
     - relocate
     - request
+    - rosetta
     - sequence
     - singularity
     - star
     - strength
     - tamper
     - temperature
+    - theorem
     - topography
     - torus
     - triggered
@@ -118,12 +134,11 @@ bonds:
     - zeropoint
 typography:
   partition: gravity
-  bondDegree: 195
+  bondDegree: 220
   neighbors:
     - agent
     - diamond
-standards:
-  - "computed from the live matrix, never hand-asserted"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -131,6 +146,7 @@ neighbors:
     - cost
     - dry
     - entropy
+    - fixpoint
     - fusion
     - holographic
     - law
@@ -141,6 +157,7 @@ neighbors:
     - one
     - sequence
     - tamper
+    - theorem
     - torus
     - whole
     - word
@@ -161,12 +178,15 @@ neighbors:
     - expand
     - fear
     - finality
+    - fixpoint
     - folded
     - fusion
     - gravity
     - holographic
+    - horo
     - interference
     - law
+    - leftover
     - linearity
     - link
     - literature
@@ -175,21 +195,26 @@ neighbors:
     - math
     - matrix
     - merge
+    - metric
     - one
     - particle
     - pivot
     - plasma
+    - platonic
+    - proof
     - reactor
     - readme
     - reciprocal
     - relocate
     - request
+    - rosetta
     - sequence
     - singularity
     - star
     - strength
     - tamper
     - temperature
+    - theorem
     - topography
     - torus
     - triggered
@@ -215,12 +240,15 @@ neighbors:
     - expand
     - fear
     - finality
+    - fixpoint
     - folded
     - fusion
     - gravity
     - holographic
+    - horo
     - interference
     - law
+    - leftover
     - linearity
     - link
     - literature
@@ -229,21 +257,26 @@ neighbors:
     - math
     - matrix
     - merge
+    - metric
     - one
     - particle
     - pivot
     - plasma
+    - platonic
+    - proof
     - reactor
     - readme
     - reciprocal
     - relocate
     - request
+    - rosetta
     - sequence
     - singularity
     - star
     - strength
     - tamper
     - temperature
+    - theorem
     - topography
     - torus
     - triggered
@@ -254,7 +287,7 @@ neighbors:
     - word
     - zeropoint
 signatures:
-  computationUuid: "7c8c5814-fa7f-8544-b51e-19e07609a614"
+  computationUuid: "6a21887b-d247-8e20-a1f2-6e060c528b4b"
   stages:
     - stage: path
       stageUuid: "39c66f97-a3c1-8bb6-823e-9c1173a10892"
@@ -263,13 +296,13 @@ signatures:
     - stage: boundary
       stageUuid: "b7fcf407-74c3-82e5-9336-ef3380234ef9"
     - stage: links
-      stageUuid: "37de78a9-c867-802c-bf7b-71b9cd450b66"
+      stageUuid: "eaf93dcc-2ee0-8e31-9f72-cc139bdac67c"
     - stage: horo
-      stageUuid: "87bb5f07-b7f5-86cc-9ee2-2c6d240e1551"
+      stageUuid: "440612d4-8fc9-895d-b290-ef09d01ad64c"
     - stage: seal
-      stageUuid: "6a53c1bc-1b61-88a1-83d3-45d318298caf"
+      stageUuid: "4444d280-010b-8a22-b43f-4174f8ff39d3"
     - stage: uuid
-      stageUuid: "e5ff5b65-1a7b-8f52-a16b-138b9f004d15"
+      stageUuid: "4d6b4373-397e-8f24-b868-c6d1d82624db"
 version: 2
 ---
 # gravity — the pull of mass (DRY = mass = gravity)

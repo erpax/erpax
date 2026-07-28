@@ -1,12 +1,12 @@
 ---
 name: identifier
 description: "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11)."
-atomPath: bg/identifier
-coordinate: bg/identifier · 5/round · cfb5fef4
-contentUuid: "519eb179-0e81-56cc-bdf3-c565bd9228a1"
-diamondUuid: "648ebffa-c5f1-8e8c-b02c-eac7d8f00203"
-uuid: "cfb5fef4-a8fb-89f8-afc5-83558bb09529"
-horo: 5
+atomPath: "bg/identifier"
+coordinate: "bg/identifier · 7/descent · 81c6c9e7"
+contentUuid: "e89f42dc-8819-5064-a71f-460828aef4b2"
+diamondUuid: "0941503b-484f-8bec-8043-78b16fe966f7"
+uuid: "81c6c9e7-6d2c-85c7-a823-6d4155bc3b73"
+horo: 7
 bonds:
   in:
     - access
@@ -41,8 +41,10 @@ typography:
 standards:
   - "ISO-7064"
   - "ISO-7064 check-character-systems (the modulo family these implement)"
+  - "ISO-7064 check-character-systems (the modulo family these implement)`"
   - БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum
   - "ЕГН regulation (Наредба РД-02-20-9/2012 on the population register)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -85,7 +87,7 @@ neighbors:
     - sequence
     - standard
 signatures:
-  computationUuid: "ac2dbeb1-0a2e-8606-9a69-90bbc8bbad2f"
+  computationUuid: "34e330c2-60f4-8ba7-b6f5-b6d642a505e4"
   stages:
     - stage: path
       stageUuid: "5a849b0f-a5c0-8de7-88e8-2803109840f9"
@@ -96,11 +98,11 @@ signatures:
     - stage: links
       stageUuid: "196bfdfb-aff1-8f29-a767-9c0d4705f2cc"
     - stage: horo
-      stageUuid: "a1ab9d80-fdcd-8345-b308-4e64f957a225"
+      stageUuid: "8939600b-bb1e-8caa-be35-fb97f1e8f3b8"
     - stage: seal
       stageUuid: "e39b1c0d-24be-8a96-991e-49e320140cca"
     - stage: uuid
-      stageUuid: "1ff766ec-534e-8a47-a88c-b543dca1e5bb"
+      stageUuid: "e0f3b51c-578d-8e19-86f2-ebdbcafd0e6d"
 version: 2
 ---
 # bg-identifiers — the gate for Bulgarian society into erpax

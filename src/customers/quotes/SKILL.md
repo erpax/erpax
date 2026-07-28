@@ -1,12 +1,12 @@
 ---
 name: quotes
 description: "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection."
-atomPath: customers/quotes
-coordinate: customers/quotes · 1/base · 1b87138f
-contentUuid: "f921944b-381a-5c90-beb5-1b12ea6f4a90"
-diamondUuid: "a8f30355-3450-83e0-bce2-1fc1439f71c0"
-uuid: "1b87138f-de36-8272-9fc9-b1a90b173bb5"
-horo: 1
+atomPath: "customers/quotes"
+coordinate: "customers/quotes · 4/weave · 6290381c"
+contentUuid: "3b0de976-5aae-5cc2-924d-ca858538c41e"
+diamondUuid: "fba285eb-29e7-8069-b4d6-19d68f7c333a"
+uuid: "6290381c-4db3-8249-be52-e7875549e807"
+horo: 4
 bonds:
   in:
     - accounting
@@ -35,11 +35,13 @@ typography:
   neighbors: []
 standards:
   - "IFRS IFRS-15 §10 contract-with-customer"
-  - "ISO-19011:2018 audit-trail quote-issuance"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time issued-at expires-at"
+  - "ISO-8601-1:2019 date-time issued-at expires-at`"
   - "SOX §404 internal-controls quote-approval"
   - "US-GAAP ASC-606-10-25 contract-existence"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -71,7 +73,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "469764a9-c278-825f-9ae2-bf2dbd434fd0"
+  computationUuid: "361dbd4a-f171-8009-bab3-d762f4f30f40"
   stages:
     - stage: path
       stageUuid: "a83bba08-3b7a-8b01-9360-ec5673842853"
@@ -82,11 +84,11 @@ signatures:
     - stage: links
       stageUuid: "49b01b43-f544-871b-932b-6fcb3738881c"
     - stage: horo
-      stageUuid: "182ec334-42f4-834f-897b-f3453c50c8b5"
+      stageUuid: "bdf831b6-5d15-8283-b5eb-19b1deeb06ef"
     - stage: seal
       stageUuid: "2610e8d6-fe72-8918-a9f7-e9997a7f2939"
     - stage: uuid
-      stageUuid: "9917e6ef-b142-8e2a-8035-66cbeaebb289"
+      stageUuid: "fba7a9f6-1c03-80a2-9905-65360e6ae549"
 version: 2
 ---
 # quotes

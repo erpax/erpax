@@ -10,11 +10,22 @@ import type {
   BookingStatus,
   CreditDebitIndicator,
   ChargeBearerCode,
+  Pain002TransactionStatus,
 } from './types'
 
 const BOOKING_STATUSES = new Set<BookingStatus>(['BOOK', 'PDNG', 'INFO', 'FUTR'])
 const CR_DR = new Set<CreditDebitIndicator>(['CRDT', 'DBIT'])
 const CHARGE_BEARERS = new Set<ChargeBearerCode>(['DEBT', 'CRED', 'SHAR', 'SLEV'])
+const PAIN002_STATUSES = new Set<Pain002TransactionStatus>([
+  'ACCP',
+  'ACSP',
+  'ACSC',
+  'ACWC',
+  'PDNG',
+  'RJCT',
+  'PART',
+  'RCVD',
+])
 
 /** Type-narrowing guard for {@link BookingStatus}. */
 export const isBookingStatus = (s: unknown): s is BookingStatus =>
@@ -27,6 +38,10 @@ export const isCreditDebitIndicator = (s: unknown): s is CreditDebitIndicator =>
 /** Type-narrowing guard for {@link ChargeBearerCode}. */
 export const isChargeBearerCode = (s: unknown): s is ChargeBearerCode =>
   typeof s === 'string' && CHARGE_BEARERS.has(s as ChargeBearerCode)
+
+/** Type-narrowing guard for {@link Pain002TransactionStatus}. */
+export const isPain002TransactionStatus = (s: unknown): s is Pain002TransactionStatus =>
+  typeof s === 'string' && PAIN002_STATUSES.has(s as Pain002TransactionStatus)
 
 /**
  * Loose validator for the bank-transaction-code triplet — every component

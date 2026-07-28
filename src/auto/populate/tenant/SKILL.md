@@ -1,12 +1,12 @@
 ---
 name: tenant
 description: "Use when auto-populating the multi-tenant tenant field from the request user before validation — a beforeValidate hook that copies req.user.tenants[0].tenant onto the incoming data for tenant isolation."
-atomPath: auto/populate/tenant
-coordinate: auto/populate/tenant · 4/weave · 9553f0eb
-contentUuid: "f8389d38-b682-5785-8d76-5bd7c574d198"
-diamondUuid: "642a5b0e-0641-82db-93e6-6938362ab78f"
-uuid: "9553f0eb-d4b0-8a2f-aab0-9501d5e38250"
-horo: 4
+atomPath: "auto/populate/tenant"
+coordinate: "auto/populate/tenant · 2/share · 65597364"
+contentUuid: "626e7ed9-b882-569f-ac1d-f2a7bdc0ef97"
+diamondUuid: "8357ad2d-7375-8d63-8d83-e74cc2a00a95"
+uuid: "65597364-6af4-86a1-a5b4-cb29b301f573"
+horo: 2
 bonds:
   in:
     - balance
@@ -27,7 +27,6 @@ typography:
   bondDegree: 30
   neighbors: []
 standards:
-  - "ISO-19011:2018 audit-trail before-validate-hooks"
   - "SOC-2 CC4.1 monitoring-and-evaluation"
 bindings: []
 neighbors:
@@ -52,7 +51,7 @@ neighbors:
     - tenant
     - tenants
 signatures:
-  computationUuid: "9b410cd4-34a2-8e29-8eb6-7fa4dd126343"
+  computationUuid: "dfa64bc6-f2b8-8257-8698-162ce430b1fa"
   stages:
     - stage: path
       stageUuid: "50ef0294-610a-853e-99dc-12b2938cc581"
@@ -63,11 +62,11 @@ signatures:
     - stage: links
       stageUuid: "2ed099af-ac70-8709-961c-7978f11d8617"
     - stage: horo
-      stageUuid: "e7b32473-cf6f-83a8-ac5a-3b8066a90e65"
+      stageUuid: "f6f26c66-e187-85ff-8bc0-74a631416d67"
     - stage: seal
       stageUuid: "38ae8a87-9312-83d9-b316-aa86479d8d23"
     - stage: uuid
-      stageUuid: "9e7dfd95-002b-8122-a4a5-2c5f14a165b2"
+      stageUuid: "d94282fc-7168-8e53-b43e-749bd51e5179"
 version: 2
 ---
 # auto/populate/tenant — tenant isolation from the request user

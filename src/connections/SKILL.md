@@ -2,10 +2,10 @@
 name: connections
 description: "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub."
 atomPath: connections
-coordinate: connections · 4/weave · 9ab5856a
-contentUuid: "9675ada4-f3e2-5027-a8b0-3d8cfa326eff"
-diamondUuid: "90141d14-7852-88e0-bf20-9092dad2ab4a"
-uuid: "9ab5856a-9ee7-8bc1-8add-a4ac6cfefdd3"
+coordinate: "connections · 4/weave · 6be39015"
+contentUuid: "f85622a8-725f-5c8f-bf14-e64a89ec4540"
+diamondUuid: "40e951b6-0a39-8ad8-906c-ee7b835c0a61"
+uuid: "6be39015-0f38-8391-8b19-08b676998491"
 horo: 4
 bonds:
   in:
@@ -58,17 +58,21 @@ standards:
   - "EU-2002/58"
   - "GDPR Art 17 right-to-erasure Art 21 right-to-object (mute/block)"
   - "ISO 20022 financial-business-party-relationships"
-  - "ISO-19011:2018 audit-trail transparent-relationship-ledger"
+  - "ISO 20022 financial-business-party-relationships`"
   - "ISO-20022"
   - "OASIS UBL 2.1 business-relationship (B2B trade edges)"
   - "Peppol BIS billing-and-procurement (B2B / B2G interoperability)"
   - "Peppol-BIS-3.0"
   - "RFC-4122"
   - "RFC-4122 §4.3 content-uuid edge-identity"
+  - "RFC-4122 §4.3 content-uuid edge-identity`"
   - "UBL-2.1"
   - "W3C ActivityPub server-to-server federation (the cross-platform sync)"
+  - "W3C ActivityPub server-to-server federation (the cross-platform sync)`"
   - "W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)"
+  - "W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)`"
   - "W3C-ActivityPub"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -126,7 +130,7 @@ neighbors:
     - trading
     - workspace
 signatures:
-  computationUuid: "2d3eb2d9-9a82-8d26-b880-120c31601d42"
+  computationUuid: "43abf0ee-f6d4-891e-9254-a6b1c77822f3"
   stages:
     - stage: path
       stageUuid: "365eb881-b33e-8c12-89d2-bdf9ef21f8a5"
@@ -137,11 +141,11 @@ signatures:
     - stage: links
       stageUuid: "75cd1b4a-71c5-8b8d-9e73-880ea620c9e7"
     - stage: horo
-      stageUuid: "8c36a5ec-b5d9-87ca-871e-5c884304b651"
+      stageUuid: "003a47c0-ea66-82d3-a05a-b30e91b001a6"
     - stage: seal
-      stageUuid: "c36bdd97-9d07-8396-b405-63d5705b748c"
+      stageUuid: "ab2bba1f-7fc3-8880-ad82-bb3733c93443"
     - stage: uuid
-      stageUuid: "21251aa4-c7b9-882e-b589-1ec9647b5e92"
+      stageUuid: "71c151cc-8590-88fe-92cb-05a7352fe757"
 version: 2
 ---
 # connections

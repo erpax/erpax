@@ -22,7 +22,7 @@ export { Roles } from '@/roles'
 export { UserRoles } from '@/roles/user/roles'
 
 // Content Collections
-export { Pages } from '@/pages'
+export { Pages } from '@/cmspage'
 export { Posts } from '@/posts'
 export { Media } from '@/media'
 export { Categories } from '@/categories'

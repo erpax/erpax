@@ -1,12 +1,12 @@
 ---
 name: types
 description: "Use when typing a tenant's agnostic seed configuration — the `TenantConfig` shape (branding, businessModel, subscriptionPlans with feature limits, marketing content, feature flags, localization, stripe) plus the `TranslatedField` / `FeatureLimit` helpers."
-atomPath: config/types
-coordinate: config/types · 9/unity · 38c73c81
-contentUuid: "c93c5314-b711-5000-933a-58994a017af9"
-diamondUuid: "6f9ce139-488a-86d2-8795-decff0426986"
-uuid: "38c73c81-b5ec-858a-a7e0-70fc75fb5b83"
-horo: 9
+atomPath: "config/types"
+coordinate: "config/types · 3/3 · 65cd7adc"
+contentUuid: "58f1705d-c482-5983-8526-9f5265138f75"
+diamondUuid: "d92b8aa3-39c5-8af0-a8d5-b7f0a6e88488"
+uuid: "65cd7adc-ceb9-848d-89e1-178b4854cb8e"
+horo: 3
 bonds:
   in:
     - chat
@@ -54,7 +54,6 @@ typography:
 standards:
   - "BCP-47"
   - "BCP-47 language-tag"
-  - "EU-Taxonomy-2020/852"
   - "GDPR Art.4(7) data-controller"
   - "IFRS IFRS-15 revenue-from-contracts-with-customers"
   - "ISO-17442-1"
@@ -107,7 +106,7 @@ neighbors:
     - types
     - vitepress
 signatures:
-  computationUuid: "93ed9be2-fd0d-8e1c-a8b3-1d2efaf0d526"
+  computationUuid: "103529e0-3a9c-8d5c-98a4-7de8f65b02c4"
   stages:
     - stage: path
       stageUuid: "0c15b24d-92f2-8307-b5d1-8a7a70e28e96"
@@ -118,11 +117,11 @@ signatures:
     - stage: links
       stageUuid: "0ddfdbf1-d37d-8240-9942-a08bbe524264"
     - stage: horo
-      stageUuid: "5f489717-fed2-855c-82a3-bac8a44a211e"
+      stageUuid: "80271314-2fa3-8753-a12f-d7c8f694d62b"
     - stage: seal
       stageUuid: "52444869-a2dd-8749-bf4f-7035de37ba99"
     - stage: uuid
-      stageUuid: "5d5bfab4-35fd-85fd-9a83-8de6a2bd79f3"
+      stageUuid: "7eb875ea-14a8-858b-9976-515de6ffa2e2"
 version: 2
 ---
 # config/types — the agnostic TenantConfig shape

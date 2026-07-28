@@ -23,7 +23,7 @@ import { createRequire } from 'node:module'
 
 import { config as loadEnv } from 'dotenv'
 
-import { loadCorpus } from '../src/corpus/index.mts'
+import { loadCorpus } from '../src/corpus/index'
 import { corpusToSearchDocs, type CorpusAtom } from '@/search'
 import { computeContentUuid } from '@/integrity/content-uuid'
 

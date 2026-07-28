@@ -2,11 +2,11 @@
 name: factory
 description: "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent."
 atomPath: factory
-coordinate: factory · 8/crest · dc85353b
-contentUuid: "36693c01-8aea-5318-a8b3-890eddcc4ddc"
-diamondUuid: "5b142fef-278c-8d8b-ac83-848cc237c6b8"
-uuid: "dc85353b-a544-893a-81bc-dbd330f79cae"
-horo: 8
+coordinate: "factory · 5/round · 58c56ad4"
+contentUuid: "09882094-d5b9-5ab8-99de-e9b699826098"
+diamondUuid: "5df68ad5-89dd-8acd-80fd-0919f2804b08"
+uuid: "58c56ad4-ca05-8f49-9a4e-b56c1971e925"
+horo: 5
 bonds:
   in:
     - collections
@@ -16,6 +16,7 @@ bonds:
     - hooks
     - horo
     - law
+    - signal
     - standards
     - uuid
   out:
@@ -26,6 +27,7 @@ bonds:
     - hooks
     - horo
     - law
+    - signal
     - standards
     - uuid
 typography:
@@ -33,10 +35,6 @@ typography:
   bondDegree: 0
   neighbors: []
 standards:
-  - "COSO-ERM-2017"
-  - "EN-16931"
-  - "EU-2017/1132"
-  - "EU-2017/828"
   - "ISA-95"
 bindings: []
 neighbors:
@@ -57,6 +55,7 @@ neighbors:
     - hooks
     - horo
     - law
+    - signal
     - standards
     - uuid
   backlinks:
@@ -67,10 +66,11 @@ neighbors:
     - hooks
     - horo
     - law
+    - signal
     - standards
     - uuid
 signatures:
-  computationUuid: "2a9e1288-02af-8216-9edf-c0c13b0ffce5"
+  computationUuid: "48852dd1-bb19-8e1c-95f0-54033024f1a3"
   stages:
     - stage: path
       stageUuid: "ee1efea5-acdf-8b3b-8fda-09a0cf9f9d7a"
@@ -81,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "a39050ef-b09e-884f-aa49-edcde69ee09d"
     - stage: horo
-      stageUuid: "c03beb64-bc36-878a-84e1-46ab1976dcb7"
+      stageUuid: "8296cafc-594c-8168-b166-c0133f389d88"
     - stage: seal
       stageUuid: "c2fdfd7a-6e45-886e-a333-8e98ec903306"
     - stage: uuid
-      stageUuid: "4d8b8220-47f7-8c84-83c1-bdbb94510cd4"
+      stageUuid: "ef871a2b-ba43-8a37-a3f7-f0d25ee75e21"
 version: 2
 ---
 # factory — declarative collection factory

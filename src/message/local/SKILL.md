@@ -1,10 +1,88 @@
 ---
 name: local
 description: "Use when reasoning about which safeguards a local-only message fabric can and cannot avoid — the send gate binds to EFFECT (one off-machine consumer makes the first local write the outward send), the injection boundary binds to CHANNEL (message content is data on any wire), and the content verdict binds to DECODED MEANING (invariant under glagolitic, cipher, or a quantum superposition of encodings — fails closed over branches)."
-atomPath: message/local
+atomPath: "message/local"
+coordinate: "message/local · 2/share · cf7cb163"
+contentUuid: "245dcd9b-4e56-5c61-ae74-2604e69bdb17"
+diamondUuid: "0a546ca1-2c68-82ac-8b45-2a481c842802"
+uuid: "cf7cb163-5ec2-8f29-99ab-d8630d53acd9"
 horo: 2
+bonds:
+  in:
+    - business
+    - confirm
+    - gate
+    - law
+    - message
+    - quantum
+    - send
+    - superposition
+    - transport
+  out:
+    - business
+    - confirm
+    - gate
+    - law
+    - message
+    - quantum
+    - send
+    - superposition
+    - transport
+typography:
+  partition: message
+  bondDegree: 32
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - confirm
+    - gate
+    - law
+    - message
+    - quantum
+    - send
+    - superposition
+    - transport
+  matrix:
+    - business
+    - confirm
+    - gate
+    - law
+    - message
+    - quantum
+    - send
+    - superposition
+    - transport
+  backlinks:
+    - business
+    - confirm
+    - gate
+    - law
+    - message
+    - quantum
+    - send
+    - superposition
+    - transport
+signatures:
+  computationUuid: "579c687b-74d5-800b-b459-0cd59d4e5336"
+  stages:
+    - stage: path
+      stageUuid: "dc8047c8-930b-823e-8f7d-ecb30b838656"
+    - stage: trinity
+      stageUuid: "5be0e54b-bc81-841d-a1d8-eb218e6e537c"
+    - stage: boundary
+      stageUuid: "a778a7ae-9f10-8306-9c4f-6cce157d6cad"
+    - stage: links
+      stageUuid: "b0bb9b48-d69d-828d-b0d8-20685a493072"
+    - stage: horo
+      stageUuid: "1c690534-f9dc-81f8-ac8f-d8609a0fa459"
+    - stage: seal
+      stageUuid: "c8126a75-a66d-8d17-be60-8ad0df754330"
+    - stage: uuid
+      stageUuid: "c31130d8-0b66-805a-a3bd-9bdccf124f30"
+version: 2
 ---
-
 # message/local — the gate follows the effect, not the wire
 
 ## The claim it answers

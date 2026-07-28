@@ -2,11 +2,11 @@
 name: design
 description: "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form."
 atomPath: design
-coordinate: design · 4/weave · 20b4b76c
-contentUuid: "fdf18591-7945-5ecb-8622-96d57d0555ed"
-diamondUuid: "080e74f5-17a5-8b6a-8d3b-22a6c6abbedc"
-uuid: "20b4b76c-cbfc-85f8-afe7-326ee760b3bd"
-horo: 4
+coordinate: "design · 5/round · b3b15465"
+contentUuid: "4106035f-7c0a-5b48-a6ae-210fc4898a52"
+diamondUuid: "3739290f-e148-81ce-9432-99f47fcd61e9"
+uuid: "b3b15465-d392-805a-b6ab-8656cedd6d96"
+horo: 5
 bonds:
   in:
     - accessibility
@@ -14,6 +14,7 @@ bonds:
     - color
     - component
     - components
+    - css
     - law
     - medical
     - observational
@@ -33,6 +34,7 @@ bonds:
     - color
     - component
     - components
+    - css
     - law
     - medical
     - observational
@@ -48,11 +50,9 @@ bonds:
     - uuid
 typography:
   partition: design
-  bondDegree: 57
+  bondDegree: 60
   neighbors: []
 standards:
-  - "every token/palette entry is computed from an atom's uuid via pixel(); no hardcoded hex"
-  - every token/palette/role colour computed via pixel(uuid); zero hardcoded hex in the design system
   - "the analog aura — colour as a projection of one content-uuid (digit → A432 spectrum)"
 bindings: []
 neighbors:
@@ -73,6 +73,7 @@ neighbors:
     - color
     - component
     - components
+    - css
     - law
     - medical
     - observational
@@ -92,6 +93,7 @@ neighbors:
     - color
     - component
     - components
+    - css
     - law
     - medical
     - observational
@@ -106,7 +108,7 @@ neighbors:
     - uncertainty
     - uuid
 signatures:
-  computationUuid: "86d38ccc-beb4-8fa0-a9f5-9c56c2eedfb6"
+  computationUuid: "faba1ab3-ec5e-8820-9b9c-68aae25f2c57"
   stages:
     - stage: path
       stageUuid: "62cc72ba-9cae-8220-9ff9-2651c1b2a207"
@@ -117,11 +119,11 @@ signatures:
     - stage: links
       stageUuid: "bba72066-651c-878a-a767-40a7a319d91d"
     - stage: horo
-      stageUuid: "36199524-320f-84da-a089-7a41df9ad3a8"
+      stageUuid: "cbf5a842-d8da-8b5d-82b5-687ea5f5eee2"
     - stage: seal
-      stageUuid: "b9d97b1e-315c-8bbf-a25b-f1875908883a"
+      stageUuid: "73ec4986-5c4f-887f-91a8-9634a27080c6"
     - stage: uuid
-      stageUuid: "b5f52864-5e90-865d-93a4-46da9f85b730"
+      stageUuid: "10f01cb5-656b-8742-8d9f-9ee61f991036"
 version: 2
 ---
 # design

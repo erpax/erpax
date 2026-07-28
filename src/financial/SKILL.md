@@ -2,11 +2,11 @@
 name: financial
 description: "Use when reasoning about financial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: financial
-coordinate: financial · 8/crest · d6c3b58b
-contentUuid: "c32c5453-037d-55ba-86a5-dfaf76d4d7a1"
-diamondUuid: "36037f65-dbab-895b-9b44-6c6ab2ad004d"
-uuid: "d6c3b58b-f9a2-8a54-bb1f-55177731b81b"
-horo: 8
+coordinate: "financial · 2/share · 2ffe4f32"
+contentUuid: "a890f750-18e9-5eef-8705-aad868c536df"
+diamondUuid: "f89073d4-67c2-89f4-be51-aa2c27317d96"
+uuid: "2ffe4f32-91b1-8a1d-b2c6-4554be9a8ebf"
+horo: 2
 bonds:
   in:
     - aid
@@ -30,7 +30,7 @@ bonds:
     - sti
 typography:
   partition: financial
-  bondDegree: 0
+  bondDegree: 32
   neighbors: []
 standards:
   - "BCP-47"
@@ -69,7 +69,7 @@ neighbors:
     - service
     - sti
 signatures:
-  computationUuid: "41d230a4-f0b3-8ff5-8fa6-30d206be8a4e"
+  computationUuid: "d924e57d-ef7b-8ec1-8a8a-94644bfd598c"
   stages:
     - stage: path
       stageUuid: "51512af1-b305-8cc8-846f-ee5b6a120c77"
@@ -80,11 +80,11 @@ signatures:
     - stage: links
       stageUuid: "c0c31784-fff5-8bdb-b268-1bc370d69760"
     - stage: horo
-      stageUuid: "2fac4d73-a8f1-8cb1-afc0-dcf67c4566f3"
+      stageUuid: "62a7de80-7132-8834-b5b5-228ee13393ee"
     - stage: seal
-      stageUuid: "549ff2d1-7f15-82f7-b927-7f886a786995"
+      stageUuid: "2ef1ab3b-1282-86b8-8193-bd639168f640"
     - stage: uuid
-      stageUuid: "68d3eac0-8e53-8ea0-ab25-8ecd64346839"
+      stageUuid: "3c828f8e-0513-86dd-83fb-8ef7e8cd3950"
 version: 2
 ---
 # financial

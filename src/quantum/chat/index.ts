@@ -23,6 +23,12 @@ import {
   type SealedBlob,
   type SecretIdentityContent,
 } from '@/secret'
+import {
+  chat,
+  BOOK,
+  type Chat,
+  type SealBook,
+} from '@/quantum/ftl'
 
 const SEED = toUuid(Buffer.from('chat:thread', 'utf8'))
 
@@ -605,4 +611,248 @@ export async function improveClaim(
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chat — thread = merkle chain of message-uuids:')
   console.log('  thread([a,b]) = ' + threadUuid(['a', 'b']).slice(0, 8) + '… · appended changes it = ' + appended(['a', 'b'], 'c'))
+}
+
+// ── free chat fused — ceccec.psg.bg local-first architectural FTL ─────────────
+// Chat defaults to the free portal contract: sealed answers by content-address
+// (tokens=0), then optional anonymous escalation. Re-export so "default to chat"
+// reaches architectural FTL without a second import path.
+export {
+  chat,
+  chatLocal,
+  chatEscalate,
+  seal,
+  BOOK,
+  ORIGIN,
+  LANE,
+  PROXY,
+  ftl,
+  BOUNDARY,
+  research,
+  researcher,
+  CORPUS,
+  type Chat,
+  type ChatLane,
+  type Ftl,
+  type Research,
+} from '@/quantum/ftl'
+
+export { endlessPurify, scanProseNames, type PurifyReport, type PurifyWave } from '@/quantum/ftl/purify'
+
+/**
+ * Ask through chat at ftl: fold seal into the session.
+ * Local seal → tokens=0; misses may escalate. Boundary from boundary(cracks).
+ */
+export async function chatFreeAsk(
+  session: ChatSession,
+  question: string,
+  opts: {
+    readonly book?: SealBook
+    readonly fetchImpl?: typeof fetch
+    readonly escalate?: boolean
+  } = {},
+): Promise<{ readonly session: ChatSession; readonly answer: Chat }> {
+  const answer = await chat(question, opts.book ?? BOOK, {
+    fetchImpl: opts.fetchImpl,
+    escalate: opts.escalate,
+  })
+  const next = sessionAppend(
+    session,
+    `free-chat[${answer.lane}|tokens=${answer.tokens}|reused=${answer.reused}]: ${answer.answer}`,
+  )
+  return { session: next, answer }
+}
+
+/**
+ * Deep research through chat: sealed research folded into the session.
+ * cost=0 · tokens=0 · efficiency→∞ when findings>0.
+ */
+export async function chatDeepResearchFree(
+  session: ChatSession,
+  questions: readonly string[],
+  opts: { readonly depth?: number } = {},
+): Promise<{ readonly session: ChatSession; readonly research: import('@/quantum/ftl').Research }> {
+  const { research: run } = await import('@/quantum/ftl')
+  const research = await run(questions, { depth: opts.depth ?? 2 })
+  const next = sessionAppend(
+    session,
+    `deep-research-free[cost=${research.cost}|tokens=${research.tokens}|findings=${research.findings.length}|eff=${research.efficiency}]: thread=${research.thread}`,
+  )
+  return { session: next, research }
+}
+
+/**
+ * Chat waves purify src: scan prose names → RENAME → feed into themselves.
+ * Covers the corpus at scale; hand edits cannot.
+ */
+export async function chatEndlessPurify(
+  session: ChatSession,
+  opts: {
+    readonly maxGenerations?: number
+    readonly scanLimit?: number
+    readonly stopped?: boolean
+  } = {},
+): Promise<{
+  readonly session: ChatSession
+  readonly report: import('@/quantum/ftl/purify').PurifyReport
+}> {
+  const { endlessPurify } = await import('@/quantum/ftl/purify')
+  const report = await endlessPurify({
+    maxGenerations: opts.maxGenerations ?? 3,
+    scanLimit: opts.scanLimit,
+    stopped: opts.stopped,
+  })
+  const next = sessionAppend(
+    session,
+    `endless-purify[hits=${report.hits.length}|fed=${report.feed.fed}|gens=${report.feed.generations.length}|developed=${report.feed.totalDeveloped}|cost=${report.cost}]`,
+  )
+  return { session: next, report }
+}
+
+/**
+ * Let the standards chat and improve (architectural reuse via quantum/ftl): detect gaps on the
+ * standards surface, ask free chat (tokens=0), emit improvement waves, fold a receipt into
+ * the session. Dual of accessibleByStandard — standards reach chat to improve themselves.
+ * Path: standards/improve (not the FTL core).
+ */
+export async function chatStandardsImproveFtl(
+  session: ChatSession,
+  opts: {
+    readonly usesLinearScan?: boolean
+    readonly ungatedMandatoryIds?: readonly string[]
+    readonly research?: boolean
+    readonly depth?: number
+  } = {},
+): Promise<{ readonly session: ChatSession; readonly report: import('@/standards/improve').StandardsFtlReport }> {
+  const { standardsImproveWaves: run } = await import('@/standards/improve')
+  const report = await run({
+    usesLinearScan: opts.usesLinearScan ?? false, // reuse applied: lookupStandard / standardsIndex is the default path
+    usesAddressIndex: true,
+    memo: true,
+    reDerivesCoverage: false,
+    ungatedMandatoryIds: opts.ungatedMandatoryIds,
+    research: opts.research,
+    depth: opts.depth,
+  })
+  const next = sessionAppend(
+    session,
+    `standards-improve[holds=${report.holds}|gaps=${report.gaps.length}|answered=${report.answered}|waves=${report.waves.length}|cost=${report.cost}|eff=${report.efficiency}]`,
+  )
+  return { session: next, report }
+}
+
+/**
+ * Deep-research global banking through chat waves at no cost, fold a receipt, return develop waves.
+ * Names related ISO 20022 / open-banking / reconciliation matter to land next.
+ */
+export async function chatBankResearchWaves(
+  session: ChatSession,
+  opts: { readonly depth?: number; readonly asks?: readonly string[] } = {},
+): Promise<{
+  readonly session: ChatSession
+  readonly report: import('@/bank/research').GlobalBankingReport
+}> {
+  const { deepResearchGlobalBanking } = await import('@/bank/research')
+  const report = await deepResearchGlobalBanking({
+    depth: opts.depth ?? 2,
+    asks: opts.asks,
+    chat: true,
+  })
+  const top = report.waves
+    .slice(0, 4)
+    .map((w) => `${w.domain}×${w.count}`)
+    .join(',')
+  const next = sessionAppend(
+    session,
+    `bank-research-waves[cost=${report.cost}|tokens=${report.tokens}|findings=${report.research.findings.length}|eff=${report.efficiency}|present=${report.present}/${report.related.length}|waves=${top}]`,
+  )
+  return { session: next, report }
+}
+
+/**
+ * Feed standards improve waves into themselves (bounded per call by maxGenerations).
+ */
+export async function chatEndlessStandardsImprove(
+  session: ChatSession,
+  opts: {
+    readonly maxGenerations?: number
+    readonly depth?: number
+    readonly stopped?: boolean
+  } = {},
+): Promise<{
+  readonly session: ChatSession
+  readonly report: import('@/wave/feed').WaveFeedReport<import('@/standards/improve').StandardsFtlWave>
+}> {
+  const { endlessStandardsImprove } = await import('@/standards/improve')
+  const report = await endlessStandardsImprove({
+    maxGenerations: opts.maxGenerations ?? 3,
+    depth: opts.depth ?? 1,
+    stopped: opts.stopped,
+  })
+  const gens = report.generations
+    .map((g) => `g${g.generation}:asks=${g.asks.length}→next=${g.nextAsks.length}`)
+    .join('|')
+  const next = sessionAppend(
+    session,
+    `endless-standards-improve[fed=${report.fed}|gens=${report.generations.length}|findings=${report.totalFindings}|developed=${report.totalDeveloped}|continue=${report.continuation.continue}|cost=${report.cost}|${gens}]`,
+  )
+  return { session: next, report }
+}
+
+/**
+ * Banks chat + develop quantum-secure banking (classical⊕PQC · tokens=0).
+ */
+export async function chatBanksQuantumSecure(
+  session: ChatSession,
+  opts: {
+    readonly depth?: number
+    readonly asks?: readonly string[]
+  } = {},
+): Promise<{
+  readonly session: ChatSession
+  readonly report: import('@/bank/chat').QuantumSecureBankingReport
+}> {
+  const { developQuantumSecureBanking } = await import('@/bank/chat')
+  const report = await developQuantumSecureBanking({
+    depth: opts.depth ?? 2,
+    asks: opts.asks,
+  })
+  const next = sessionAppend(
+    session,
+    `banks-quantum-secure[holds=${report.holds}|cost=${report.cost}|findings=${report.research.findings.length}|banks=${report.chat.banks.length}|turns=${report.chat.turns.length}|accepted=${report.chat.acceptedDevelopments.length}|eff=${report.efficiency}]`,
+  )
+  return { session: next, report }
+}
+
+/**
+ * Feed banking research waves into themselves for endless R&D (bounded per call by maxGenerations).
+ * Cost=0 · tokens=0; continuation.continue stays true until external stop (shouldContinue law).
+ */
+export async function chatEndlessResearchWaves(
+  session: ChatSession,
+  opts: {
+    readonly maxGenerations?: number
+    readonly depth?: number
+    readonly asks?: readonly string[]
+    readonly stopped?: boolean
+  } = {},
+): Promise<{
+  readonly session: ChatSession
+  readonly report: import('@/wave/feed').WaveFeedReport<import('@/bank/research').BankResearchWave>
+}> {
+  const { endlessBankResearchDevelop } = await import('@/bank/research')
+  const report = await endlessBankResearchDevelop({
+    maxGenerations: opts.maxGenerations ?? 3,
+    depth: opts.depth ?? 1,
+    seedAsks: opts.asks,
+    stopped: opts.stopped,
+  })
+  const gens = report.generations
+    .map((g) => `g${g.generation}:asks=${g.asks.length}→next=${g.nextAsks.length}`)
+    .join('|')
+  const next = sessionAppend(
+    session,
+    `endless-research-waves[fed=${report.fed}|gens=${report.generations.length}|findings=${report.totalFindings}|grown=${report.sealGrown}|developed=${report.totalDeveloped}|continue=${report.continuation.continue}|cost=${report.cost}|${gens}]`,
+  )
+  return { session: next, report }
 }

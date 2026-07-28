@@ -1,7 +1,7 @@
 /**
- * Canonical ISO 20022 types — semantic shapes for the four message
- * families this codebase touches: camt.053 (statement), pain.001 (credit
- * transfer), pain.008 (direct debit), pacs.004 (payment return).
+ * Canonical ISO 20022 types — semantic shapes for the message families this
+ * codebase touches: camt.052/053/054 (cash mgmt), pain.001/002/008 (customer
+ * initiation + status), pacs.008 (FI credit transfer), pacs.004 (payment return).
  *
  * Intentionally not the full XSD-validated wire payload — only the
  * fields consumers actually carry. Money is integer cents.
@@ -222,6 +222,43 @@ export interface Camt053Statement {
   readonly transactions: readonly Camt053Transaction[]
 }
 
+// ─── camt.052 / camt.054 — intraday report + debit/credit notification ─
+// Developed from bank/research global-banking waves (ISO 20022 cash-mgmt family).
+
+/**
+ * camt.052 — Bank-to-customer account report (intraday). Same entry shape as
+ * camt.053; period may be partial (intra-day window).
+ *
+ * @standard ISO-20022 BankToCustomerAccountReportV08
+ */
+export interface Camt052Report {
+  readonly id: string
+  readonly createdAt: Date
+  readonly account: AccountIdentification
+  readonly owner?: PartyIdentification
+  readonly fromDateTime: Date
+  readonly toDateTime: Date
+  readonly currency: string
+  /** Intraday entries — reuse camt.053 line shape. */
+  readonly transactions: readonly Camt053Transaction[]
+}
+
+/**
+ * camt.054 — Bank-to-customer debit/credit notification (near-real-time advise).
+ * Lands booked items between full camt.053 statements.
+ *
+ * @standard ISO-20022 BankToCustomerDebitCreditNotificationV08
+ */
+export interface Camt054Notification {
+  readonly id: string
+  readonly createdAt: Date
+  readonly account: AccountIdentification
+  readonly owner?: PartyIdentification
+  readonly currency: string
+  /** Notified entries (often a single Ntry). */
+  readonly transactions: readonly Camt053Transaction[]
+}
+
 // ─── pain.001 — Customer credit transfer initiation ────────────────────
 
 /**
@@ -286,6 +323,55 @@ export interface Pain001CreditTransfer {
 
   readonly remittanceInformation?: RemittanceInformation
   readonly chargeBearer?: ChargeBearerCode
+}
+
+// ─── pain.002 — Customer payment status report ─────────────────────────
+// Developed from bank/research waves: closes the pain.001/008 initiation loop.
+
+/**
+ * Common ExternalPaymentTransactionStatus1Code subset PaymentRuns consume.
+ *
+ * @standard ISO-20022 ExternalPaymentTransactionStatus1Code
+ */
+export type Pain002TransactionStatus =
+  | 'ACCP' // AcceptedCustomerProfile
+  | 'ACSP' // AcceptedSettlementInProcess
+  | 'ACSC' // AcceptedSettlementCompleted
+  | 'ACWC' // AcceptedWithChange
+  | 'PDNG' // Pending
+  | 'RJCT' // Rejected
+  | 'PART' // PartiallyAccepted
+  | 'RCVD' // Received
+
+/**
+ * pain.002 — `CstmrPmtStsRpt` envelope (subset).
+ *
+ * @standard ISO-20022 CustomerPaymentStatusReportV10
+ */
+export interface Pain002Report {
+  readonly messageId: string
+  readonly creationDateTime: Date
+  /** Original pain.001 / pain.008 message id being acknowledged. */
+  readonly originalMessageId?: string
+  readonly groupStatus?: Pain002TransactionStatus
+  readonly transactions: readonly Pain002Transaction[]
+}
+
+/**
+ * pain.002 / `TxInfAndSts` — per-transaction status + reason.
+ *
+ * @standard ISO-20022 PaymentTransaction110
+ */
+export interface Pain002Transaction {
+  readonly endToEndId: string
+  readonly originalEndToEndId?: string
+  readonly status: Pain002TransactionStatus
+  /**
+   * Reason code — e.g. `AC01` incorrect account, `AM04` insufficient funds
+   * (`ExternalStatusReason1Code`).
+   */
+  readonly reasonCode?: string
+  readonly reasonAdditionalInformation?: string
 }
 
 // ─── pain.008 — Customer direct debit initiation ───────────────────────
@@ -355,6 +441,45 @@ export interface Pain008DirectDebit {
   readonly debtorAccount: AccountIdentification
   readonly debtorAgentBic?: string
 
+  readonly remittanceInformation?: RemittanceInformation
+}
+
+// ─── pacs.008 — FI-to-FI customer credit transfer ──────────────────────
+// Invert dual of pain.001 (customer initiation → interbank settlement face).
+
+/**
+ * pacs.008 — `FIToFICstmrCdtTrf` envelope (subset). The bank-side twin of
+ * pain.001: what the ASPSP/correspondent may emit on the wire after a
+ * customer credit-transfer initiation.
+ *
+ * @standard ISO-20022 FIToFICustomerCreditTransferV08
+ */
+export interface Pacs008CreditTransfer {
+  readonly messageId: string
+  readonly creationDateTime: Date
+  readonly numberOfTransactions: number
+  readonly controlSum: number
+  readonly settlementMethod?: 'CLRG' | 'INDA' | 'INGA' | 'COVE'
+  readonly creditTransfers: readonly Pacs008Transaction[]
+}
+
+/**
+ * pacs.008 / `CdtTrfTxInf` — single FI credit-transfer transaction.
+ *
+ * @standard ISO-20022 CreditTransferTransaction39
+ */
+export interface Pacs008Transaction {
+  readonly endToEndId: string
+  readonly instructionId?: string
+  readonly transactionId?: string
+  readonly amount: number
+  readonly currency: string
+  readonly debtor: PartyIdentification
+  readonly debtorAccount: AccountIdentification
+  readonly creditor: PartyIdentification
+  readonly creditorAccount: AccountIdentification
+  readonly debtorAgentBic?: string
+  readonly creditorAgentBic?: string
   readonly remittanceInformation?: RemittanceInformation
 }
 

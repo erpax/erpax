@@ -276,6 +276,8 @@ const PaymentRuns: CollectionConfig = {
         { label: 'ACSC — Accepted, settled', value: 'ACSC' },
         { label: 'ACSP — Accepted, settlement in progress', value: 'ACSP' },
         { label: 'ACCP — Accepted, customer profile', value: 'ACCP' },
+        { label: 'ACWC — Accepted with change', value: 'ACWC' },
+        { label: 'RCVD — Received', value: 'RCVD' },
         { label: 'PDNG — Pending', value: 'PDNG' },
         { label: 'RJCT — Rejected', value: 'RJCT' },
         { label: 'PART — Partial — see per-transaction status', value: 'PART' },

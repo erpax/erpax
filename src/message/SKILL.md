@@ -2,11 +2,11 @@
 name: message
 description: "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts."
 atomPath: message
-coordinate: message · 4/weave · e229e341
-contentUuid: "83fc043e-993e-5fc6-908c-a06bfcd1f1a5"
-diamondUuid: "a83e662e-95bd-8db2-9a23-3bb532d5545e"
-uuid: "e229e341-ec85-8b4b-ab97-fdec852d04c9"
-horo: 4
+coordinate: "message · 5/round · 1715cb5b"
+contentUuid: "959945d2-48bc-533f-bfd7-cb44aef530dd"
+diamondUuid: "ba61b002-c49a-8198-8015-2a43c8653d13"
+uuid: "1715cb5b-d1df-89b6-80c3-20a244b77151"
+horo: 5
 bonds:
   in:
     - attachment
@@ -19,6 +19,7 @@ bonds:
     - holographic
     - identity
     - llm
+    - local
     - localize
     - memo
     - merge
@@ -42,6 +43,7 @@ bonds:
     - holographic
     - identity
     - llm
+    - local
     - localize
     - memo
     - merge
@@ -56,11 +58,12 @@ bonds:
     - uuid
 typography:
   partition: message
-  bondDegree: 82
+  bondDegree: 83
   neighbors: []
 standards:
   - RFC 9562 §5.8 (the structured uuid carries the message)
-  - "the uuid is self-decoding — every channel is an independent verify level"
+  - "RFC 9562 §5.8 (the structured uuid carries the message)`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -87,6 +90,7 @@ neighbors:
     - holographic
     - identity
     - llm
+    - local
     - localize
     - memo
     - merge
@@ -110,6 +114,7 @@ neighbors:
     - holographic
     - identity
     - llm
+    - local
     - localize
     - memo
     - merge
@@ -123,22 +128,22 @@ neighbors:
     - translation
     - uuid
 signatures:
-  computationUuid: "d08d2a36-bb10-89e9-baca-f6709115b0ee"
+  computationUuid: "67a0fffd-5615-8cee-a61a-282dc9678e0c"
   stages:
     - stage: path
       stageUuid: "c14742f0-dca2-8497-aa08-328b9fc736b3"
     - stage: trinity
       stageUuid: "f159a73b-0b57-82c1-9b9b-975a4aa4f61c"
     - stage: boundary
-      stageUuid: "3424d48e-6631-8b8a-8768-a113c12fbaff"
+      stageUuid: "4e6d9bcc-3b2e-8b47-8096-f6b36b659da1"
     - stage: links
       stageUuid: "db66be01-8376-851a-98e3-07ab0eaf029e"
     - stage: horo
-      stageUuid: "e1f2596b-7868-8906-8f62-da60865cffbb"
+      stageUuid: "aabdfe4b-8abd-8d82-947a-a1d543577f00"
     - stage: seal
-      stageUuid: "90b21f70-a405-85c8-845d-18fee16e948e"
+      stageUuid: "b12cc4a5-c4fc-8fb1-af5f-d761b6a563cc"
     - stage: uuid
-      stageUuid: "5f24f894-26f9-8b31-93c7-441c7698705c"
+      stageUuid: "92fc892e-06c6-8a6a-96d4-8e55923354f8"
 version: 2
 ---
 # message — the uuid is the message itself

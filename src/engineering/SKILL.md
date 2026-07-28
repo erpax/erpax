@@ -2,8 +2,73 @@
 name: engineering
 description: "Use when an engineering standard (ISO/IEC 25010 quality model) must move from cited to enforced — maps each quality concern to the erpax gate that enforces it, and names the cited-but-ungated concerns as the solutions to reverse-engineer next."
 atomPath: engineering
+coordinate: "engineering · 8/crest · 602b26f2"
+contentUuid: "bd7c4b2e-1697-5a50-8ada-0be4d2f3854d"
+diamondUuid: "c524aa0f-5778-8c7e-9d20-ec704377934c"
+uuid: "602b26f2-2336-81d9-855b-d6166e1086c7"
+horo: 8
+bonds:
+  in:
+    - access
+    - accounting
+    - compatibility
+    - law
+    - rules
+    - timeout
+  out:
+    - access
+    - accounting
+    - compatibility
+    - law
+    - rules
+    - timeout
+typography:
+  partition: engineering
+  bondDegree: 37
+  neighbors: []
+standards:
+  - "ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - accounting
+    - law
+    - rules
+    - timeout
+  matrix:
+    - access
+    - accounting
+    - compatibility
+    - law
+    - rules
+    - timeout
+  backlinks:
+    - access
+    - accounting
+    - compatibility
+    - law
+    - rules
+    - timeout
+signatures:
+  computationUuid: "1fbb596b-7ba8-8e9c-a5a5-78e3df44f935"
+  stages:
+    - stage: path
+      stageUuid: "95807699-b9b4-8136-b8f6-132233e1c55d"
+    - stage: trinity
+      stageUuid: "37343966-6f4d-8174-968b-d7a1ff9f7bca"
+    - stage: boundary
+      stageUuid: "05478494-1933-8d22-90cf-e75b9d06585f"
+    - stage: links
+      stageUuid: "e442d965-f220-886c-a479-1b634244ea44"
+    - stage: horo
+      stageUuid: "e68ba97c-f92a-8761-9448-f01ce445e0e1"
+    - stage: seal
+      stageUuid: "6d10faea-e4f7-8985-a9db-cf1037b733bb"
+    - stage: uuid
+      stageUuid: "2c1f01d1-2023-8b29-93fc-78e43acc7b61"
+version: 2
 ---
-
 # engineering — reverse-engineer the standards into the gates that enforce them
 
 The corpus **cites** ISO/IEC 25010:2023 (the product-quality model) **207×** — but a citation is prose, and prose is read and maybe obeyed ([[rules]]: a law is obeyed only when a gate blocks its violation). This atom is the engineering-quality twin of [[access]]/standard (which did it for the legal surface): it maps each 25010 quality **concern** to the erpax gate that already enforces it, computes what is enforced vs merely cited, and names the unenforced concerns as the **solutions to reverse-engineer**.

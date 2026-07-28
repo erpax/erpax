@@ -23,7 +23,7 @@ export {
   type NavHub,
 } from './groups'
 import { navPathsForGrouping } from './groups'
-import { trinities } from '@/horo'
+import { trinities } from '../horo'
 
 /** VitePress sidebar node — folder segment with optional link and nested groups. */
 export interface NavGroup {
@@ -343,4 +343,6 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('  nav:   ', meta.nav.join(' → ') || '(root)')
   console.log('  group: ', meta.group)
   console.log('  route: ', meta.route)
+  const m = merkaba(sample)
+  console.log('  merkaba center:', m.center, '· spins', m.descend.length)
 }

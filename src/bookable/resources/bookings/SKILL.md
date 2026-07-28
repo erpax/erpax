@@ -1,12 +1,12 @@
 ---
 name: bookings
 description: "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive."
-atomPath: bookable/resources/bookings
-coordinate: bookable/resources/bookings · 2/share · 9e4e03ce
-contentUuid: "445c63ee-03c4-523b-9f6b-4c58055192b3"
-diamondUuid: "afc53a5e-3fd6-8e7e-b575-dd7b13d91087"
-uuid: "9e4e03ce-cece-89a8-aee8-6e43ad1233f0"
-horo: 2
+atomPath: "bookable/resources/bookings"
+coordinate: "bookable/resources/bookings · 8/crest · e20e7873"
+contentUuid: "cd0b2bd2-f9d7-5605-81d3-816c7d77b60d"
+diamondUuid: "54774567-5629-87d3-8831-b9678e05d9b6"
+uuid: "e20e7873-4c3a-8f47-bee4-e71e0d0deab3"
+horo: 8
 bonds:
   in:
     - accounting
@@ -32,34 +32,27 @@ typography:
   neighbors: []
 standards:
   - "COSO-ERM-2017"
-  - "EU-2015/847"
-  - "EU-2015/849"
   - "EU-2017/1132"
   - "EU-2017/828"
-  - "EU-2019/1150"
-  - "EU-2019/1152"
-  - "EU-2019/1937"
-  - "EU-2019/2161"
-  - "EU-2019/770"
-  - "EU-2019/771"
-  - "EU-Intrastat-Reg-2019/2152"
   - "GDPR Art.6(1)(b) lawful-basis-contract guest-data"
   - "HTNG-2017 hotel-technology-next-generation"
   - "IFRS IFRS-15 §35 over-time-recognition (multi-night stay)"
   - "IFRS IFRS-15 §38 point-in-time-recognition (single-use)"
   - "IFRS IFRS-15 §B20-B27 right-of-return cancellation-policy"
   - "ISO-18513:2021 tourism-services-vocabulary check-in check-out"
-  - "ISO-19011:2018 audit-trail booking-lifecycle"
-  - "ISO-4217"
+  - "ISO-18513:2021 tourism-services-vocabulary check-in check-out`"
   - "ISO-4217:2015 currency-codes pricing"
-  - "ISO-8601-1"
+  - "ISO-4217:2015 currency-codes pricing`"
   - "ISO-8601-1:2019 date-time start-end-windows"
+  - "ISO-8601-1:2019 date-time start-end-windows`"
   - "OpenTravel Alliance reservation-message"
   - "RFC-5545"
   - "SOX §404 internal-controls revenue-completeness TOM-RES-01"
   - "US-CTA-2021"
   - "US-GAAP ASC-606-10-25-27 over-time-criteria"
   - "rfc-5545 icalendar-rrule recurring-bookings"
+  - "rfc-5545 icalendar-rrule recurring-bookings`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -89,7 +82,7 @@ neighbors:
     - resources
     - schedule
 signatures:
-  computationUuid: "885f3a04-f511-89f2-b9ca-147aef5e0d0f"
+  computationUuid: "5e9e302c-ef39-8446-90dd-e2b9638b0e22"
   stages:
     - stage: path
       stageUuid: "6405ba5a-73fd-84c1-ac74-c283390d3803"
@@ -100,11 +93,11 @@ signatures:
     - stage: links
       stageUuid: "6aebc6e6-cb9d-8ffe-afac-dcbe690a58dc"
     - stage: horo
-      stageUuid: "9845f694-e2d7-8c85-8f16-58702e15e599"
+      stageUuid: "da4f9cc3-670a-8b84-a9a2-47474db6a026"
     - stage: seal
       stageUuid: "e8318bfb-c6b2-883a-bc4e-13718f0a7ba9"
     - stage: uuid
-      stageUuid: "6aaceb34-c1d6-8a63-a324-30561716dec4"
+      stageUuid: "e42d5162-54c7-8932-86d9-293d08bd81b0"
 version: 2
 ---
 # bookings

@@ -1,12 +1,12 @@
 ---
 name: checker
 description: "Use when validating whether a fiscal period may be closed — pure, no-mutation checks that the period is in range and not already closed, that the closing entries balance, that a state transition is legal, and that reversals can post to the next period."
-atomPath: closing/period/checker
-coordinate: closing/period/checker · 1/base · 92d05df7
-contentUuid: "365090e3-36c7-5aec-9ee4-c9fc2c57dae6"
-diamondUuid: "3d09d796-d6f3-8752-8b24-2b000309e5e3"
-uuid: "92d05df7-f270-8ccf-85d9-d87f96134544"
-horo: 1
+atomPath: "closing/period/checker"
+coordinate: "closing/period/checker · 2/share · 6c93f05f"
+contentUuid: "8e8ebfea-6c99-5163-9b4e-814674496585"
+diamondUuid: "3b3daf8d-2821-8d01-a53b-07803cebebc1"
+uuid: "6c93f05f-3f4e-80a1-a7a4-88b807160764"
+horo: 2
 bonds:
   in:
     - balance
@@ -22,7 +22,7 @@ bonds:
     - trinity
 typography:
   partition: closing
-  bondDegree: 15
+  bondDegree: 18
   neighbors: []
 standards:
   - "IAS-34"
@@ -52,22 +52,22 @@ neighbors:
     - period
     - trinity
 signatures:
-  computationUuid: "fcfcfb78-6ec0-8c20-99bc-10fbbcc4e285"
+  computationUuid: "b56e1c50-a0c7-8e21-853a-303d928e2910"
   stages:
     - stage: path
       stageUuid: "94f10a92-0816-8970-b835-d582c9282449"
     - stage: trinity
       stageUuid: "4d0c225b-9c77-84cc-a71c-0754d42647c8"
     - stage: boundary
-      stageUuid: "830ed872-02e8-8ff1-80ba-02c78a346b77"
+      stageUuid: "7a223704-d65a-833d-a3ec-f5a43fe483a1"
     - stage: links
       stageUuid: "19e54426-efe7-867a-8e8c-cfa9eb4b4c68"
     - stage: horo
-      stageUuid: "4f93b71c-d1ce-844d-a56f-9568726cd822"
+      stageUuid: "d2385f99-6571-8aa5-9f9c-61b725740dec"
     - stage: seal
       stageUuid: "c6f0a215-5657-802d-8c81-a32ba9cb9cdf"
     - stage: uuid
-      stageUuid: "8d7c2ef0-e895-8bf8-803d-5b4c180e58a1"
+      stageUuid: "b2b624f0-4161-80c3-987c-71f7ee6446a6"
 version: 2
 ---
 # closing/period/checker — the period-closing gate

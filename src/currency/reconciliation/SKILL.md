@@ -1,37 +1,41 @@
 ---
 name: reconciliation
 description: "Use when closing a multi-currency period — verify each currency's closed revenues equal its closed expenses within tolerance, revalue non-reporting currencies at the period-end rate for unrealized gain/loss, and fold it all into one reporting currency with a chain-linked audit leaf."
-atomPath: currency/reconciliation
-coordinate: currency/reconciliation · 7/descent · f42ca11c
-contentUuid: "a3c1cd39-7e3e-5bb5-83bd-59cf064a83a0"
-diamondUuid: "cab8219b-e9ce-8643-9a48-fbd646fea1c0"
-uuid: "f42ca11c-d7cf-8c4f-ac60-e3d180dc20e2"
-horo: 7
+atomPath: "currency/reconciliation"
+coordinate: "currency/reconciliation · 2/share · b3de6dda"
+contentUuid: "315f9169-ce2b-5ff6-96e9-82ebe3228b9e"
+diamondUuid: "ff77a6c5-91d8-823a-9149-be73152c7831"
+uuid: "b3de6dda-2f4c-8eee-b20d-a7c3c76e0cce"
+horo: 2
 bonds:
   in:
-    - accounting
     - balance
     - currency
     - law
-    - reconciliations
+    - proof
+    - uuid
   out:
-    - accounting
     - balance
+    - currency
     - law
-    - reconciliations
+    - proof
+    - uuid
 typography:
   partition: currency
-  bondDegree: 17
+  bondDegree: 25
   neighbors: []
 standards:
-  - "Conservation Law 60 chain-leaf binding; never hand-asserted"
   - "IAS 21 §38 presentation-currency translation · IFRS 9 FX gains/losses · ISO 4217"
   - "IFRS-21:2023 (translation of foreign operations)"
+  - "IFRS-21:2023 (translation of foreign operations)`"
   - "IFRS-9"
   - "IFRS-9:2023 (foreign exchange gains/losses)"
+  - "IFRS-9:2023 (foreign exchange gains/losses)`"
   - "ISO-4217:2023 (currency codes, decimal places)"
+  - "ISO-4217:2023 (currency codes, decimal places)`"
   - "SAF-T"
   - "SAF-T:3.0.2 (multi-currency period coding)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -41,32 +45,34 @@ neighbors:
     - proof
     - uuid
   matrix:
-    - accounting
     - balance
+    - currency
     - law
-    - reconciliations
+    - proof
+    - uuid
   backlinks:
-    - accounting
     - balance
+    - currency
     - law
-    - reconciliations
+    - proof
+    - uuid
 signatures:
-  computationUuid: "c6d5611f-a5bc-8137-b7d3-9d353d86e60d"
+  computationUuid: "5f2e5897-824f-8da6-8947-3e4367454db7"
   stages:
     - stage: path
       stageUuid: "624214ed-b26b-84f2-815c-83c436116027"
     - stage: trinity
       stageUuid: "3d916cef-7860-850a-a036-2563eaddbc4f"
     - stage: boundary
-      stageUuid: "ae156718-540c-88cf-8dfb-f4dc0f63269a"
+      stageUuid: "4b0ef12b-3a8b-89f7-8d97-4ca0f944c766"
     - stage: links
       stageUuid: "4dd476e7-4495-8679-a8ee-34c3a2cba3a9"
     - stage: horo
-      stageUuid: "30bfc530-aa58-8fea-b8ff-43cb604eb97f"
+      stageUuid: "ff8d879b-5ded-8f09-94d6-bd0a41cc7cd4"
     - stage: seal
-      stageUuid: "03be08b4-c7b9-81d2-a912-6676c8db4a55"
+      stageUuid: "ccc10216-324f-8fc0-a4f2-25e47449a463"
     - stage: uuid
-      stageUuid: "2d2076f7-fa43-83b8-be1c-a8042d1a1f41"
+      stageUuid: "d87b74e7-9d24-812c-a65c-b9ab332067cc"
 version: 2
 ---
 # currency/reconciliation — multi-currency period closing

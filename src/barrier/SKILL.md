@@ -2,11 +2,11 @@
 name: barrier
 description: "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit."
 atomPath: barrier
-coordinate: barrier · 7/descent · a4768324
-contentUuid: "ea99aaa1-e145-56d5-b8bd-5e8674623de5"
-diamondUuid: "7748f1be-4d11-8cc3-8e71-02942eaac9e8"
-uuid: "a4768324-4808-8424-99d5-72018a18d733"
-horo: 7
+coordinate: "barrier · 5/round · c64bbaca"
+contentUuid: "fb3f477e-a0a5-576d-9649-95f790b31073"
+diamondUuid: "0a5235b5-6c8e-8542-aac7-e1f836ee58f6"
+uuid: "c64bbaca-30a4-886c-8558-9a8e29fda3a4"
+horo: 5
 bonds:
   in:
     - anchor
@@ -36,7 +36,12 @@ typography:
   neighbors: []
 standards:
   - "CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission"
-  - "κ from (m,V0,E); T exact + WKB; tamper-cost = −log2(T) — computed, never asserted"
+  - "EU-2018/1673"
+  - "EU-2018/1725"
+  - "EU-2018/302"
+  - "EU-2018/389-SCA-RTS"
+  - "EU-2018/843"
+  - "EU-2018/957"
 bindings: []
 neighbors:
   wikilink:
@@ -72,7 +77,7 @@ neighbors:
     - tamper
     - wave
 signatures:
-  computationUuid: "4d34f423-83fd-8427-b90a-ba454fa84907"
+  computationUuid: "fc24b897-3c02-8406-8b5a-32fe5e5ee880"
   stages:
     - stage: path
       stageUuid: "1cd2be0d-8cb8-8f6a-935b-9ce1af6d79ad"
@@ -83,11 +88,11 @@ signatures:
     - stage: links
       stageUuid: "68fc3bc3-95c7-88f6-bcdb-b71c850769f2"
     - stage: horo
-      stageUuid: "bde69a4f-68f3-8f19-a865-b96fccd75ce6"
+      stageUuid: "89e342ab-af5d-8cd8-a740-b75fa5b07cb1"
     - stage: seal
-      stageUuid: "15f8243c-cd08-8c35-b253-46eee92e3999"
+      stageUuid: "4a46691a-94f5-8123-bf88-4c2583818067"
     - stage: uuid
-      stageUuid: "4e25b996-277a-8612-aad5-b562a672bfab"
+      stageUuid: "a8258fd5-6fe7-8e16-8e0b-f6933f67b1f3"
 version: 2
 ---
 # barrier — quantum tunnelling, the exponential of tamper-cost

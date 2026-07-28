@@ -1,12 +1,12 @@
 ---
 name: centers
 description: "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master."
-atomPath: cost/centers
-coordinate: cost/centers · 5/round · 1c9da18a
-contentUuid: "7a17ec48-6c3d-56ae-8d3a-701a4214e8db"
-diamondUuid: "65fdedda-a2c0-8276-80bb-a3a2cbafb8a5"
-uuid: "1c9da18a-a4fa-827f-acae-e58a0c1a369d"
-horo: 5
+atomPath: "cost/centers"
+coordinate: "cost/centers · 2/share · 388e1279"
+contentUuid: "7158081b-0b4e-5539-a5e9-690c079d1ce9"
+diamondUuid: "688b561a-2405-870a-aa1c-6d17bcf606c1"
+uuid: "388e1279-998a-8c56-97fe-43240fcc604c"
+horo: 2
 bonds:
   in:
     - access
@@ -42,12 +42,14 @@ typography:
 standards:
   - "IFRS IAS-1 §99 statement-of-comprehensive-income"
   - "IFRS IFRS-8 operating-segments"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-3166-1"
   - "ISO-3166-1:2020 country-codes geographic-segment-tagging"
+  - "ISO-3166-1:2020 country-codes geographic-segment-tagging`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "SOX §302 disclosure-controls segment-disclosure"
   - "US-GAAP ASC-280 segment-reporting"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -86,7 +88,7 @@ neighbors:
     - runs
     - segment
 signatures:
-  computationUuid: "eb74f79d-a53e-8ad3-a1be-5482ea365a52"
+  computationUuid: "a89c4fdb-b0d1-818d-8aaa-3ca027b0187e"
   stages:
     - stage: path
       stageUuid: "4e92b35a-d309-88ba-8cd6-2f9f169a7ff6"
@@ -97,11 +99,11 @@ signatures:
     - stage: links
       stageUuid: "9882e617-4c2f-8ec3-9c4f-bce70e95c6bb"
     - stage: horo
-      stageUuid: "a4660ead-0f0a-84fd-b26a-5e831a1903ed"
+      stageUuid: "5fd0d81b-e9fd-8e5b-95d3-ede1e2dae4f2"
     - stage: seal
       stageUuid: "0df70517-a153-8442-bc15-c1297815be2a"
     - stage: uuid
-      stageUuid: "cf21abe6-829f-825b-8cc1-afdc11d46949"
+      stageUuid: "46822ed4-f993-8db2-a04a-e940c72d74c3"
 version: 2
 ---
 # cost-centers

@@ -2,11 +2,11 @@
 name: card
 description: "Use when reasoning about card as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: card
-coordinate: card · 7/descent · 666bb21b
-contentUuid: "ad4b6238-4ee0-5c83-9731-69bf7a37a2d9"
-diamondUuid: "779fddd7-fa69-8695-92f2-db7dd37b6b87"
-uuid: "666bb21b-aeef-866f-a66a-0620a968c665"
-horo: 7
+coordinate: "card · 1/base · 9c3e5a4e"
+contentUuid: "0de32473-df29-55d5-9a6c-8c943a07d45e"
+diamondUuid: "3e9f3007-5195-8629-b80a-265b35f1200c"
+uuid: "9c3e5a4e-533a-8582-ba55-f2e5fd322afd"
+horo: 1
 bonds:
   in:
     - collapse
@@ -52,7 +52,7 @@ neighbors:
     - payment
     - sti
 signatures:
-  computationUuid: "ccff4b2c-6de5-8e87-b1e4-00513b54c7c1"
+  computationUuid: "13b16a0c-3b9f-8628-8dab-524dd7511390"
   stages:
     - stage: path
       stageUuid: "080d0f25-3291-8ef6-932c-35dbc535eec8"
@@ -63,11 +63,11 @@ signatures:
     - stage: links
       stageUuid: "63fe8173-87c4-89ee-ae44-c2027234889e"
     - stage: horo
-      stageUuid: "c94ed78e-afb6-8633-81e6-3eb4013fa1a1"
+      stageUuid: "6d5e11d6-7dbe-84d6-a286-d2df66bcb55f"
     - stage: seal
       stageUuid: "35332f39-7791-8798-9cec-bc0f09800e8a"
     - stage: uuid
-      stageUuid: "ee9b719e-ad66-8d88-a095-ce7dd6088f7f"
+      stageUuid: "2a58b54e-3507-81dd-be3d-191209de2c95"
 version: 2
 ---
 # card

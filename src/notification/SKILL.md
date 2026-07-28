@@ -2,10 +2,10 @@
 name: notification
 description: "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map."
 atomPath: notification
-coordinate: notification · 4/weave · c958710f
-contentUuid: "34c6a022-5080-511d-827e-1b350a19c022"
-diamondUuid: "5ecac725-6e54-8297-9865-91bb46ad1833"
-uuid: "c958710f-f9c9-86f4-8418-b8d316924b4b"
+coordinate: "notification · 4/weave · 95b18a54"
+contentUuid: "0b6ab29f-c747-5798-9509-6c9b38514484"
+diamondUuid: "a3b8c3b4-fe33-82a7-aeef-e076caab09b1"
+uuid: "95b18a54-ac94-8348-a68a-9896e533e4d3"
 horo: 4
 bonds:
   in:
@@ -36,10 +36,13 @@ typography:
   neighbors: []
 standards:
   - "GDPR Art.7 transactional-email-consent"
-  - "ISO-19011:2018 audit-trail notification-evidence"
   - "rfc-2616 §14.10 https-keep-alive"
+  - "rfc-2616 §14.10 https-keep-alive`"
   - "rfc-5321 simple-mail-transfer-protocol"
+  - "rfc-5321 simple-mail-transfer-protocol`"
   - "rfc-5322 internet-message-format"
+  - "rfc-5322 internet-message-format`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -76,7 +79,7 @@ neighbors:
     - merge
     - society
 signatures:
-  computationUuid: "83d22884-78eb-8372-9c4b-8dc80de9d319"
+  computationUuid: "d9499dda-6c86-8f94-94af-37ed2092c89f"
   stages:
     - stage: path
       stageUuid: "3b455aa7-b87d-8eef-bd29-9a328d496f75"
@@ -87,11 +90,11 @@ signatures:
     - stage: links
       stageUuid: "d8724882-bd0c-8f54-9b5c-7902c497d353"
     - stage: horo
-      stageUuid: "ed0d7782-5f5a-8d0f-8ac2-de96f480e214"
+      stageUuid: "96878abb-eab1-8042-b84d-a2e664ff7455"
     - stage: seal
-      stageUuid: "69cfe514-c634-8a0e-ab59-bdcb52923c1b"
+      stageUuid: "87bc6056-fe3a-8f50-9e56-93779e9c71d7"
     - stage: uuid
-      stageUuid: "93475861-ba7a-83e6-9757-77984a3cf502"
+      stageUuid: "83817794-c81d-859f-b393-3857f5ed5829"
 version: 2
 ---
 # notifications — the society's one voice outward, consent-gated and audited

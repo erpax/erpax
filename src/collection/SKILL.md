@@ -2,11 +2,11 @@
 name: collection
 description: "Use when reasoning about collection — A collection of items, e.g. creative works or products."
 atomPath: collection
-coordinate: collection · 4/weave · 6dd5f28f
-contentUuid: "0fee6f6c-caca-582f-8cfa-c8c48caf8dba"
-diamondUuid: "0e4da537-9bc1-8a3e-9512-c4c53bc0e015"
-uuid: "6dd5f28f-2c66-8a51-89fd-123381a3b99a"
-horo: 4
+coordinate: "collection · 1/base · fa4deb84"
+contentUuid: "69925b56-d8e7-544d-a711-e7988f814ad7"
+diamondUuid: "445bd437-93f3-81bd-b312-11f649152886"
+uuid: "fa4deb84-c942-818d-8217-9c55b647e8d4"
+horo: 1
 bonds:
   in:
     - balance
@@ -73,7 +73,7 @@ neighbors:
     - target
     - translate
 signatures:
-  computationUuid: "82eab369-c7cc-80a2-adc0-5049a76a85c1"
+  computationUuid: "e886f4b4-8ba4-8cb9-a74c-47596801206c"
   stages:
     - stage: path
       stageUuid: "314d5d2c-92d1-8199-8fa1-ebda5fbefe75"
@@ -84,11 +84,11 @@ signatures:
     - stage: links
       stageUuid: "ff92c6e3-4892-8271-bce6-a4f9d0f512c1"
     - stage: horo
-      stageUuid: "48719326-76a1-81d2-987d-3ace0f489a42"
+      stageUuid: "2e40035e-0ba7-8052-a200-464013bdd8fe"
     - stage: seal
       stageUuid: "3aadbc71-3159-8360-ad67-0470b0dafb0f"
     - stage: uuid
-      stageUuid: "95412fb2-8677-8a35-9c2c-f7a0cbff120f"
+      stageUuid: "da16bc1b-2406-8211-b671-dbf4d7915bc2"
 version: 2
 ---
 # collection

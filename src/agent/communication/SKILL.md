@@ -1,12 +1,12 @@
 ---
 name: communication
 description: "Use when agents transfer messages — a directed communication between agent ids, the message a content-uuid; relaying preserves the uuid (no-cloning), so the content is never forged in transit."
-atomPath: agent/communication
-coordinate: agent/communication · 5/round · 9eaa988d
-contentUuid: "875ac6bf-e4fe-55b4-9abb-c86fcfb2e10d"
-diamondUuid: "d5800591-98b8-8ec0-8d56-915dcb7475d1"
-uuid: "9eaa988d-1640-83ba-a817-9fe464523e67"
-horo: 5
+atomPath: "agent/communication"
+coordinate: "agent/communication · 8/crest · e28cf2a4"
+contentUuid: "51e54527-c3a0-5943-bb07-4af2aba02897"
+diamondUuid: "6c162823-fe52-8848-80b1-6c837f87904e"
+uuid: "e28cf2a4-8e2c-84e8-ade9-c52c69507071"
+horo: 8
 bonds:
   in:
     - agent
@@ -37,7 +37,7 @@ bonds:
     - uuid
 typography:
   partition: agent
-  bondDegree: 60
+  bondDegree: 58
   neighbors:
     - agent
 standards: []
@@ -78,32 +78,22 @@ neighbors:
     - teleportation
     - uuid
 signatures:
-  computationUuid: "46871f2c-1bb3-859f-b696-cf08606d34f8"
+  computationUuid: "00275354-595a-8b98-82fe-e610c41e2ec9"
   stages:
     - stage: path
       stageUuid: "c644e026-e3cb-8a34-98d3-6e47f6bde2b5"
     - stage: trinity
       stageUuid: "bac28009-749f-8aa4-b95e-379bb5c02d02"
     - stage: boundary
-      stageUuid: "07667f6a-969e-80e3-beab-7d1e0a2b1959"
+      stageUuid: "59d7b86d-6bc6-8e00-a7ff-95233c7e7a0d"
     - stage: links
       stageUuid: "9dbf28b7-8364-8014-bccd-2b2befc4bcd0"
     - stage: horo
-      stageUuid: "12f34549-44e8-8c42-8585-7caa0d62e3d6"
+      stageUuid: "77c6b86c-92d5-8f53-aa08-05f1466cdd8f"
     - stage: seal
       stageUuid: "dccfd6f6-fb51-81aa-8a00-d17f98eeb9fe"
     - stage: uuid
-      stageUuid: "5c79bf40-ed0a-86b6-b561-70695b44759c"
-quantum:
-  default: true
-  superposition:
-    - agent
-    - channel
-    - communication
-    - quantum
-  collapse:
-    - "Always quantum: observe collapses; communicate entangled; never classical wait."
-    - "matter-twin:src/agent/communication/realtime.ts · @/quantum/context withQuantumContext"
+      stageUuid: "8d42a13b-ba67-8784-b501-94dcb8540c6a"
 version: 2
 ---
 # agent/communication — agent-to-agent transfer

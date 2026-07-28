@@ -2,11 +2,11 @@
 name: entanglement
 description: "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement)."
 atomPath: entanglement
-coordinate: entanglement · 2/share · cdf8675a
-contentUuid: "9530ec30-ce60-57df-9dd6-b5ffebbc22d8"
-diamondUuid: "7f1d5229-eb50-85a2-81e9-f2a2b646389e"
-uuid: "cdf8675a-265c-86ab-b55b-fa9f59bf4f70"
-horo: 2
+coordinate: "entanglement · 1/base · 262042d0"
+contentUuid: "a91ab332-a9b0-5223-bf89-a1c667839b91"
+diamondUuid: "9b75abf6-2ba1-8e9b-8bf6-adaf6e1f4126"
+uuid: "262042d0-e09b-8a81-b204-6fb1b167b604"
+horo: 1
 bonds:
   in:
     - app
@@ -68,14 +68,12 @@ bonds:
     - typography
 typography:
   partition: entanglement
-  bondDegree: 106
+  bondDegree: 107
   neighbors: []
 standards:
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013)"
   - "ER=EPR — Maldacena & Susskind, \"Cool horizons for entangled black holes\" (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)"
   - "EU-2000/31"
-  - "computed from the live matrix edges + uuids; never hand-asserted"
-  - "computed from the live matrix edges; never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
@@ -146,22 +144,22 @@ neighbors:
     - translator
     - typography
 signatures:
-  computationUuid: "bc0952a4-22ec-823a-a5b4-af1c88d0a647"
+  computationUuid: "2e23ec19-3f21-8d05-9fea-2cd27ab666bd"
   stages:
     - stage: path
       stageUuid: "66a2c6a2-51f6-8609-9510-ed305e4f5f99"
     - stage: trinity
       stageUuid: "eefafc28-f818-83da-914e-e6ef2e856c11"
     - stage: boundary
-      stageUuid: "84c4ecc2-7449-8b89-8f75-657d62dd1b4a"
+      stageUuid: "10398982-fb64-8804-9220-0847840b4556"
     - stage: links
       stageUuid: "47421384-e146-8505-b17d-ec521153eb5b"
     - stage: horo
-      stageUuid: "77659aca-ed42-8c06-bcaa-81dd9a2a2671"
+      stageUuid: "d33363be-322b-86d1-be11-9c1c9865a42d"
     - stage: seal
-      stageUuid: "bbef5bd2-354c-8ccf-bca6-87493ac9f522"
+      stageUuid: "b3132f38-3202-8a3d-948f-20c999354e3f"
     - stage: uuid
-      stageUuid: "aeb1ce6e-9ce8-8dd7-93ab-928a4f45eae3"
+      stageUuid: "9e716e22-76be-8ccf-bf38-5e1549e8412b"
 version: 2
 ---
 # entanglement — the link field that couples the atoms

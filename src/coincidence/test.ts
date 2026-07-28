@@ -70,7 +70,7 @@ describe('warrantsRecompute is proven by theorem.reduce (folded, not asserted)',
 describe('inversion survival — the possibility of coincidence after every inversion', () => {
   it('the possibility decays geometrically — chance^k → 0', () => {
     expect(coincidenceAfterInversions(0.1, 5)).toBeCloseTo(1e-5)
-    expect(coincidenceAfterInversions(0.5, 10)).toBeCloseTo(Math.pow(0.5, 10))
+    expect(coincidenceAfterInversions(0.5, 10)).toBeCloseTo(0.5 ** 10)
     expect(coincidenceAfterInversions(0.1, 0)).toBe(1) // no inversions survived yet ⇒ no evidence
   })
 

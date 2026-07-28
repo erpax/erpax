@@ -1,12 +1,12 @@
 ---
 name: minutes
 description: "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection."
-atomPath: legal/entities/audit/committees/audit/committee/minutes
-coordinate: legal/entities/audit/committees/audit/committee/minutes · 4/weave · 41d6a5bc
-contentUuid: "c28ba6c7-3b7f-55ab-9770-d332c7392ced"
-diamondUuid: "cdf00023-873e-8de5-9c2f-bfec315ab0de"
-uuid: "41d6a5bc-4c6e-8a27-97a7-1da0de1e3f09"
-horo: 4
+atomPath: "legal/entities/audit/committees/audit/committee/minutes"
+coordinate: "legal/entities/audit/committees/audit/committee/minutes · 7/descent · b18af5dd"
+contentUuid: "cbdaa1a4-e687-5f5d-a8db-0a220bbeb8bd"
+diamondUuid: "3727d3a6-9a1b-84dc-b793-4dd4a5b53af0"
+uuid: "b18af5dd-b643-8c1b-92c2-d9fba8b11989"
+horo: 7
 bonds:
   in:
     - actions
@@ -20,9 +20,10 @@ typography:
   bondDegree: 6
   neighbors: []
 standards:
-  - "ISO-19011:2018 audit-evidence"
   - "ISO-8601-1:2019 meeting-date"
+  - "ISO-8601-1:2019 meeting-date`"
   - "SOX §301 audit-committee-records"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -34,7 +35,7 @@ neighbors:
     - actions
     - committees
 signatures:
-  computationUuid: "14c09d9f-1130-86d7-911b-6330577736b8"
+  computationUuid: "a3fb3d56-020f-81c5-a884-e23281ac2f3c"
   stages:
     - stage: path
       stageUuid: "2dcc24ba-d36e-89ac-ac1d-52c1a9ddce7f"
@@ -45,11 +46,11 @@ signatures:
     - stage: links
       stageUuid: "718b344a-616a-8b7f-bfbe-970fadde8efc"
     - stage: horo
-      stageUuid: "1376a879-9e6e-84cb-b83d-04af91747065"
+      stageUuid: "18f8447d-935c-852f-9242-b25516e681a3"
     - stage: seal
       stageUuid: "ef407894-7f90-83ba-a7c2-c01cbfe55747"
     - stage: uuid
-      stageUuid: "25527e2b-17fe-802e-8eac-ebe28c879df6"
+      stageUuid: "9bc61e9d-6448-84fa-8bc4-f28358a61013"
 version: 2
 ---
 # audit-committee-minutes

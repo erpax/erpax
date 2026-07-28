@@ -1,11 +1,11 @@
 ---
 name: postings
 description: "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection."
-atomPath: leases/lease/period/postings
-coordinate: leases/lease/period/postings · 8/crest · 947ca018
-contentUuid: "d4c53448-5201-539e-a328-a07cc708712c"
-diamondUuid: "7fe8e5ec-7e1e-83c2-8c7f-5b0bf4590d32"
-uuid: "947ca018-5803-8452-a9a8-07c5c11aa29c"
+atomPath: "leases/lease/period/postings"
+coordinate: "leases/lease/period/postings · 8/crest · ce285976"
+contentUuid: "774a7c64-7b6f-5cd2-91b3-5fa0e7455498"
+diamondUuid: "8fbefab3-2b91-8a36-abf8-6b8b4034ad3b"
+uuid: "ce285976-c8ce-82ef-bd7f-0974ebc3504a"
 horo: 8
 bonds:
   in:
@@ -32,11 +32,13 @@ typography:
 standards:
   - "IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement"
   - "IFRS IFRS-16 §36-§38 lease-liability-amortised-cost"
-  - "ISO-19011:2018 audit-trail period-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time period-start period-end"
+  - "ISO-8601-1:2019 date-time period-start period-end`"
   - "SOX §404 internal-controls capital-asset-register"
   - "US-GAAP ASC-842-20-35 lessee-subsequent-measurement"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -60,7 +62,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "19a8face-55a8-8a9e-925b-301aa458ead7"
+  computationUuid: "7825ffa5-b939-8bc3-9d76-0d09d645516d"
   stages:
     - stage: path
       stageUuid: "4408dd1b-bdf1-89da-b23f-91b2dc4bdef9"
@@ -71,11 +73,11 @@ signatures:
     - stage: links
       stageUuid: "e0c03198-972f-81dc-8bba-69dc93458546"
     - stage: horo
-      stageUuid: "780d4424-be4e-8dbb-8d46-5d0df8ef6ae0"
+      stageUuid: "47862d1f-773f-8ed2-97ad-0e484111e5ea"
     - stage: seal
       stageUuid: "77588975-fa0f-8bfb-8982-da2b147a433d"
     - stage: uuid
-      stageUuid: "766c11f5-7a8c-83a1-b23f-56f09aa7a04c"
+      stageUuid: "374c4df9-29ad-8718-b454-01fc30fd3e71"
 version: 2
 ---
 # lease-period-postings

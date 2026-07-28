@@ -2,11 +2,11 @@
 name: customers
 description: "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection."
 atomPath: customers
-coordinate: customers · 1/base · bb79375b
-contentUuid: "033645bc-406c-5b01-a876-3a19707e646e"
-diamondUuid: "b5ccb30b-70ef-8c2d-81b7-fbd3bc00d5b9"
-uuid: "bb79375b-1f9b-83dd-94bd-b8c3ab9e095a"
-horo: 1
+coordinate: "customers · 4/weave · 64e95a83"
+contentUuid: "2090d42a-b6a3-56c1-bd4c-5697db043699"
+diamondUuid: "093b772d-da8f-86e1-8164-83a8364a862d"
+uuid: "64e95a83-8e42-874b-8e63-b7d6a08ad943"
+horo: 4
 bonds:
   in:
     - accounting
@@ -61,6 +61,7 @@ standards:
   - "COSO-ERM-2017"
   - "EN-16931"
   - "EN-16931:2017 §BG-7 buyer"
+  - "EN-16931:2017 §BG-7 buyer`"
   - "EU-2014/55"
   - "EU-2017/1132"
   - "EU-2017/828"
@@ -76,10 +77,14 @@ standards:
   - "INCOTERMS-2020"
   - "ISO-13616-1"
   - "ISO-13616-1:2020 iban"
+  - "ISO-13616-1:2020 iban`"
   - "ISO-17442-1"
   - "ISO-17442-1:2020 lei"
+  - "ISO-17442-1:2020 lei`"
   - "ISO-3166-1:2020 country-codes via-addresses"
+  - "ISO-3166-1:2020 country-codes via-addresses`"
   - "ISO-4217:2015 currency-codes default-currency"
+  - "ISO-4217:2015 currency-codes default-currency`"
   - "ISO-9735"
   - "Peppol-BIS-3.0"
   - SOX
@@ -88,6 +93,7 @@ standards:
   - "US-GAAP ASC-310 receivables"
   - "WCO-HS"
   - eIDAS
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -143,7 +149,7 @@ neighbors:
     - territory
     - upsell
 signatures:
-  computationUuid: "385db9ef-79eb-8d15-bfce-20cbe24c5dc9"
+  computationUuid: "2c6a50d9-998f-80b9-92ba-78660edc5f06"
   stages:
     - stage: path
       stageUuid: "06e2401f-1cb1-8548-a990-755d31d88436"
@@ -154,11 +160,11 @@ signatures:
     - stage: links
       stageUuid: "76a0cd85-c851-88fd-a4e3-0e34bda9597b"
     - stage: horo
-      stageUuid: "284e5cb8-1362-8c5d-8182-ff060526c9ac"
+      stageUuid: "0119ef1f-b9c7-8384-bf3b-f54be6e21ce7"
     - stage: seal
       stageUuid: "06983341-9c4d-8ff2-8f93-343a2d9d2c9b"
     - stage: uuid
-      stageUuid: "f66275d0-a028-8904-a9c3-a059cbb80da6"
+      stageUuid: "42aeb7e8-2695-86e5-8e2c-82f64ee479c6"
 version: 2
 ---
 # customers

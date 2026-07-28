@@ -7,7 +7,6 @@ import { fileURLToPath } from 'url'
 import type { CloudflareContext } from '@opennextjs/cloudflare'
 import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
-import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { searchPlugin } from '@payloadcms/plugin-search'
@@ -19,12 +18,9 @@ import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { versionsPlugin } from '@/plugins/versions'
-import { skillRouterPlugin } from './skill/router/plugin'
-import { adminUiPlugin } from '@/plugins/admin/ui'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
-import { translations as importExportTranslations } from '@payloadcms/plugin-import-export/translations/languages/all'
 import { translations as ecommerceTranslations } from '@payloadcms/plugin-ecommerce/translations/languages/all'
 import { ar } from '@payloadcms/translations/languages/ar'
 import { bg } from '@payloadcms/translations/languages/bg'
@@ -187,10 +183,6 @@ const adminTranslations = Object.fromEntries(
     {
       ...pluginTranslationsForLocale(
         multiTenantTranslations as Record<string, Record<string, unknown>>,
-        locale,
-      ),
-      ...pluginTranslationsForLocale(
-        importExportTranslations as Record<string, Record<string, unknown>>,
         locale,
       ),
       ...pluginTranslationsForLocale(
@@ -410,32 +402,9 @@ export default buildConfig({
       },
       userHasAccessToAllTenants: (user) => isSuperAdmin(user),
     }),
-    importExportPlugin({
-      // Every collection gets CSV/JSON import + export — derived from the
-      // barrel, not hand-listed. (The plugin only adds I/O to the slugs it
-      // is given; an empty list would disable it everywhere.)
-      collections: (Object.values(allCollections) as Array<{ slug: string }>).map((c) => ({
-        slug: c.slug as CollectionSlug,
-      })),
-      overrideExportCollection: ({ collection }) => ({
-        ...collection,
-        access: {
-          ...collection.access,
-          create: isSuperAdminAccess,
-          read: isSuperAdminAccess,
-          delete: isSuperAdminAccess,
-        },
-      }),
-      overrideImportCollection: ({ collection }) => ({
-        ...collection,
-        access: {
-          ...collection.access,
-          create: isSuperAdminAccess,
-          read: isSuperAdminAccess,
-          delete: isSuperAdminAccess,
-        },
-      }),
-    }),
+    // plugin-import-export deferred from the deployed Worker to stay under Cloudflare's 10MB
+    // script cap — the admin bulk CSV/JSON I/O surface is non-core and re-addable. Removed
+    // rather than stubbed so migrate-time, runtime, and generated types stay consistent.
     mcpPlugin({
       // Add ALL collections to the gateway — users and agents are ONE (the
       // actor-merge): the agent wields the full power of erpax exactly as a
@@ -490,12 +459,16 @@ export default buildConfig({
     // derived, never invented; references (collection slugs, field names)
     // keep their words. Runs last to cover all assembled fields. See `database`.
     uuidNamesPlugin(),
-    // The ONE catch-all — registered LAST so its endpoint is appended last:
-    // the fallback of all. A routeless /api path resolves against the skill
-    // corpus + serves the requested format. See src/skill/router.
-    skillRouterPlugin(),
-    // Payload admin UI — corpus cells, entropy dashboard, computed nav (last: sees full config).
-    adminUiPlugin(),
+    // skillRouterPlugin() REMOVED from the deployed Worker: it statically imports the 84MB
+    // `skill/router/skills.index` (the whole dev skills corpus) — which violates the corpus's own
+    // lazy-load law (CLAUDE.md: never import skills.index) AND cannot ship in a Cloudflare Worker
+    // (size cap is a few MB). Serving the skills docs is dev/agent tooling, not a standards-required
+    // ERP surface, so it is excluded from production. The plugin stays in the repo for dev.
+    // adminUiPlugin() REMOVED from the deployed Worker: its corpus bond-viz / entropy dashboard /
+    // computed-nav cells drag the whole ~19k-file dev corpus (readme·aura·monitor·matrix) into the
+    // bundle — auditable dev tooling, NOT a standards-required ERP surface, so it does not belong in
+    // production (the app is API-first). The plugin stays in the repo (src/plugins/admin/ui) for
+    // local/dev admin; the Worker ships lean. Re-add behind a dev-only guard if the admin viz is wanted.
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {

@@ -1,8 +1,113 @@
 ---
 name: notary
 description: "Use when a fact must be given public faith — recorded in a bound chronological register, timestamped, sealed tamper-evident, and made presumptively authentic. The legal notarial act modelled on erpax primitives: the seal is a content-uuid, the protocol is an append-only hash-chain, authenticity is an inclusion proof; the honest boundary is that real legal force needs a commissioned notary or an eIDAS/RFC-3161 trust service."
+atomPath: notary
+coordinate: "notary · 4/weave · 01640541"
+contentUuid: "20737f10-8239-594c-bc25-c001eaf7cc12"
+diamondUuid: "ae377c16-9a59-8978-ab33-2dcf4c019d5c"
+uuid: "01640541-951f-8a21-b527-cea997a7bca1"
+horo: 4
+bonds:
+  in:
+    - accounting
+    - cadastre
+    - check
+    - fold
+    - globe
+    - law
+    - merge
+    - pyramid
+    - qtsp
+    - registry
+    - rosetta
+    - sanctions
+    - seal
+    - uuid
+  out:
+    - accounting
+    - cadastre
+    - check
+    - fold
+    - globe
+    - law
+    - merge
+    - pyramid
+    - qtsp
+    - registry
+    - rosetta
+    - sanctions
+    - seal
+    - uuid
+typography:
+  partition: notary
+  bondDegree: 44
+  neighbors: []
+standards:
+  - "EU-2006/43"
+  - "EU-VAT-Directive"
+  - "Hague Apostille Convention (1961) — cross-border authentication of public documents"
+  - "RFC 3161 — Time-Stamp Protocol (TSP): trusted timestamping, the cryptographic notary"
+  - "UINL / Model Notary Act — the notariat and the bound notarial protocol"
+  - eIDAS
+  - "eIDAS — Regulation (EU) No 910/2014 — qualified electronic signatures, seals, timestamps"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - fold
+    - law
+    - merge
+    - seal
+    - uuid
+  matrix:
+    - accounting
+    - cadastre
+    - check
+    - fold
+    - globe
+    - law
+    - merge
+    - pyramid
+    - qtsp
+    - registry
+    - rosetta
+    - sanctions
+    - seal
+    - uuid
+  backlinks:
+    - accounting
+    - cadastre
+    - check
+    - fold
+    - globe
+    - law
+    - merge
+    - pyramid
+    - qtsp
+    - registry
+    - rosetta
+    - sanctions
+    - seal
+    - uuid
+signatures:
+  computationUuid: "681e107a-e8c2-8127-8434-691b3d6d44dc"
+  stages:
+    - stage: path
+      stageUuid: "e666b797-a70b-81c6-a7cd-a3a6696e39cd"
+    - stage: trinity
+      stageUuid: "74c7e781-8c4a-8ac8-9abb-79122d7a48cf"
+    - stage: boundary
+      stageUuid: "1fcfcb2b-fe73-82b2-b276-e4425d7f57f6"
+    - stage: links
+      stageUuid: "6bf2f23d-d22d-8419-a021-1941f4885440"
+    - stage: horo
+      stageUuid: "49d9d1db-9027-8c36-8b5a-cad11dbecada"
+    - stage: seal
+      stageUuid: "d762ba62-510a-8df1-9f5c-40d5db033450"
+    - stage: uuid
+      stageUuid: "6144972c-e554-8382-b441-fe502eca301a"
+version: 2
 ---
-
 # notary — the notarial act
 
 A notary gives a private instrument **public faith**. Across civil and common law the act is the same four moves: **verify** the parties, **record** the instrument in a bound chronological protocol (numbered, dated, no page insertable), **seal** it so any later alteration shows, and thereby grant it **evidentiary force** — a notarised act is presumed authentic until disproved. This is the oldest tamper-cost instrument civilization has, and erpax already holds every primitive it needs:

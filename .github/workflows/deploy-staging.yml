@@ -28,6 +28,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # payload.config imports @/skill/router/skills.index (gitignored — regenerate).
+      - name: Generate skill index
+        run: pnpm erpax corpus skill
+
       - name: Setup Wrangler
         uses: cloudflare/wrangler-action@v3
         with:

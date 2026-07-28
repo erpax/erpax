@@ -1,12 +1,12 @@
 ---
 name: adjustments
 description: "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection."
-atomPath: gl/accounts/period/end/adjustments
-coordinate: gl/accounts/period/end/adjustments · 2/share · 4db77e37
-contentUuid: "01a20d2d-f5c3-5945-8aa8-c890385482f1"
-diamondUuid: "01480312-16d9-888a-af01-4303100cf415"
-uuid: "4db77e37-8661-877e-807d-a89077c551b6"
-horo: 2
+atomPath: "gl/accounts/period/end/adjustments"
+coordinate: "gl/accounts/period/end/adjustments · 1/base · 3749344c"
+contentUuid: "6b623819-1602-59b5-a994-f90736bd5c14"
+diamondUuid: "020a4a93-59e3-84be-af3b-267d58f9781d"
+uuid: "3749344c-512d-85c4-92d0-eaae8f74d652"
+horo: 1
 bonds:
   in:
     - accounting
@@ -32,10 +32,11 @@ typography:
 standards:
   - "IFRS IAS-1 presentation-of-financial-statements"
   - "IFRS IAS-8 accounting-policies-changes-and-errors"
-  - "ISO-19011:2018 audit-trail"
   - "ISO-8601-1:2019 date-time period posted-at"
+  - "ISO-8601-1:2019 date-time period posted-at`"
   - "SOX §404 internal-controls"
   - "US-GAAP ASC-250 accounting-changes-and-error-corrections"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -60,7 +61,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "a6d5f2d0-7b35-8640-a051-270e1e63d551"
+  computationUuid: "fcbcf351-7491-8c20-8d99-7bd9960eae53"
   stages:
     - stage: path
       stageUuid: "85d4671a-1d9c-8734-80e6-f340dbb31d53"
@@ -71,11 +72,11 @@ signatures:
     - stage: links
       stageUuid: "339d4042-9243-88d4-8f46-fe23a36a3ae1"
     - stage: horo
-      stageUuid: "bcec42c2-0db9-8327-ad51-87effa227630"
+      stageUuid: "d11f5ec9-eb92-8115-8c4b-9b0e6077b69f"
     - stage: seal
       stageUuid: "6ec68967-5307-8fa5-ae43-92ff6f95e25b"
     - stage: uuid
-      stageUuid: "e470eaa3-b6f9-8bcb-8dd9-b037b29784ee"
+      stageUuid: "19a33d70-b941-8b1a-a173-98478879292f"
 version: 2
 ---
 # period-end-adjustments

@@ -1,32 +1,26 @@
 ---
 name: hardware
 description: "Use when reasoning about hardware as a part of [[computer]] — vocabulary pivot to @/hardware; nested not duplicated."
-atomPath: computer/hardware
-coordinate: computer/hardware · 2/share · 0ab47712
-contentUuid: "f022b950-dcd7-54d7-b3d8-70b6400cffbf"
-diamondUuid: "ee9ac6e7-849d-8c32-baaa-6c1bc7844fa6"
-uuid: "0ab47712-ebf3-834f-8893-26c92dab42ae"
-horo: 2
+atomPath: "computer/hardware"
+coordinate: "computer/hardware · 8/crest · 6895fa25"
+contentUuid: "d3061477-a7ef-50af-9e8b-c6498005d0a2"
+diamondUuid: "815efe87-02f7-8a44-87aa-593e97cd7e22"
+uuid: "6895fa25-c7b6-89c3-addf-3c9880e42931"
+horo: 8
 bonds:
   in:
-    - collapse
     - computer
     - hardware
     - law
-    - merge
-    - sti
     - store
   out:
-    - collapse
     - computer
     - hardware
     - law
-    - merge
-    - sti
     - store
 typography:
   partition: computer
-  bondDegree: 25
+  bondDegree: 20
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -37,23 +31,17 @@ neighbors:
     - hardware
     - law
   matrix:
-    - collapse
     - computer
     - hardware
     - law
-    - merge
-    - sti
     - store
   backlinks:
-    - collapse
     - computer
     - hardware
     - law
-    - merge
-    - sti
     - store
 signatures:
-  computationUuid: "58dd04ee-3e30-8733-af1f-e1fd4bd7faa0"
+  computationUuid: "835de282-371b-848c-9435-0ee0589afbc1"
   stages:
     - stage: path
       stageUuid: "3ee65197-1d75-8e7e-b462-385388a3c21b"
@@ -64,11 +52,11 @@ signatures:
     - stage: links
       stageUuid: "8ed655b7-4a86-8244-a30f-9f7e33a1ca90"
     - stage: horo
-      stageUuid: "dcf7cdb1-aaf5-8f79-9d7c-974f053fbaff"
+      stageUuid: "9dcad2a4-bd04-86e1-bad6-872a919b898c"
     - stage: seal
-      stageUuid: "d00ee0ea-337d-8cd5-80cd-a3dca65d95af"
+      stageUuid: "43a297dd-fd8b-88db-990f-a56ff02df75a"
     - stage: uuid
-      stageUuid: "77428371-bf28-81b8-8876-00220670ba92"
+      stageUuid: "d1041c2b-340e-87e0-bed7-f04e0128bdd2"
 version: 2
 ---
 # computer/hardware — physical machine facet

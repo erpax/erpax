@@ -2,10 +2,10 @@
 name: money
 description: "Use when reasoning about money as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: money
-coordinate: money · 8/crest · 87c6b453
-contentUuid: "d23e96c1-c8aa-50c7-a59e-9ed8631c770f"
-diamondUuid: "5f3dcca5-be3c-8077-8c69-b54ed44da0f1"
-uuid: "87c6b453-75f9-88f3-98d7-713ef10b1db3"
+coordinate: "money · 8/crest · dfd2c624"
+contentUuid: "0107d111-a570-5ad0-9dde-009ee07a0466"
+diamondUuid: "c2cfecd2-dd58-806e-9eed-da0145a45384"
+uuid: "dfd2c624-34ff-8c21-a6cb-becb54a2b573"
 horo: 8
 bonds:
   in:
@@ -28,14 +28,16 @@ bonds:
     - wallet
 typography:
   partition: money
-  bondDegree: 27
+  bondDegree: 32
   neighbors: []
 standards:
   - "IEEE-754"
   - "IFRS IAS-21 foreign-currency-translation"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO/IEC-29119"
   - "schema.org — the type vocabulary, collided to single words"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -65,7 +67,7 @@ neighbors:
     - transfer
     - wallet
 signatures:
-  computationUuid: "4a095cd8-0249-8217-b495-0f4a6c6faf2b"
+  computationUuid: "4409c652-b4c6-8e39-9783-1a4a00b05026"
   stages:
     - stage: path
       stageUuid: "b2945010-4ac1-8bb3-a53f-83eba5a1807c"
@@ -76,11 +78,11 @@ signatures:
     - stage: links
       stageUuid: "f23daea0-8288-8ec0-958e-bae47981bbdc"
     - stage: horo
-      stageUuid: "02cae87f-2933-86a1-9a5d-c2429844ceb2"
+      stageUuid: "d581e162-e1c7-82bf-bb02-3c442c229080"
     - stage: seal
-      stageUuid: "e32cf3da-1f98-8c13-81f0-db9758c8f750"
+      stageUuid: "4cfa9961-2e27-8b40-9639-072d80c2d91e"
     - stage: uuid
-      stageUuid: "ba6211f7-0b4b-8b18-9ddc-9d96c5337ed9"
+      stageUuid: "abf84861-3b42-8b37-98fa-c6610d273409"
 version: 2
 ---
 # money

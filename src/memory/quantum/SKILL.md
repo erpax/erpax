@@ -1,12 +1,12 @@
 ---
 name: quantum
 description: "Use when reasoning about memory read from the quantum ring — the other diagonal of the memory-quantum cross. One node at two names with quantum/memory: this path re-points to the canonical rather than restating it, the merge law at path scale, so the four crossed paths fuse into one seal."
-atomPath: memory/quantum
-coordinate: memory/quantum · 1/base · 370f38aa
-contentUuid: "4aa16bb0-4b62-501d-ba59-f6c201e99c48"
-diamondUuid: "73ef189f-3393-8cb0-8b94-8d2a77c2e622"
-uuid: "370f38aa-8113-8bd7-9861-716f0bb7a328"
-horo: 1
+atomPath: "memory/quantum"
+coordinate: "memory/quantum · 4/weave · c40f23cd"
+contentUuid: "00e09924-c040-5a44-8913-261ef7fe4bd3"
+diamondUuid: "d04cb90f-27c9-8b6d-9cc2-f6719f787130"
+uuid: "c40f23cd-a763-833b-bf57-6ba3310d5697"
+horo: 4
 bonds:
   in:
     - accounting
@@ -24,11 +24,13 @@ bonds:
     - chart
     - chat
     - cloudflare
+    - comms
     - communication
     - confirm
     - consciousness
     - consultant
     - consulting
+    - convene
     - cost
     - cross
     - decoherence
@@ -60,12 +62,15 @@ bonds:
     - leap
     - linearity
     - links
+    - local
     - love
     - marine
     - math
     - matrix
     - memory
     - merge
+    - metric
+    - millennium
     - particle
     - path
     - peace
@@ -74,12 +79,15 @@ bonds:
     - port
     - pqc
     - proof
+    - publish
     - purity
     - pwa
     - quantum
     - query
     - reactor
+    - readme
     - reality
+    - realtime
     - recycle
     - research
     - resolve
@@ -103,10 +111,12 @@ bonds:
     - translator
     - type
     - typography
+    - ui
     - uncertainty
     - uuid
     - vocabulary
     - wallet
+    - word
     - worker
   out:
     - accounting
@@ -124,11 +134,13 @@ bonds:
     - chart
     - chat
     - cloudflare
+    - comms
     - communication
     - confirm
     - consciousness
     - consultant
     - consulting
+    - convene
     - cost
     - cross
     - decoherence
@@ -160,12 +172,15 @@ bonds:
     - leap
     - linearity
     - links
+    - local
     - love
     - marine
     - math
     - matrix
     - memory
     - merge
+    - metric
+    - millennium
     - particle
     - path
     - peace
@@ -174,12 +189,15 @@ bonds:
     - port
     - pqc
     - proof
+    - publish
     - purity
     - pwa
     - quantum
     - query
     - reactor
+    - readme
     - reality
+    - realtime
     - recycle
     - research
     - resolve
@@ -203,14 +221,16 @@ bonds:
     - translator
     - type
     - typography
+    - ui
     - uncertainty
     - uuid
     - vocabulary
     - wallet
+    - word
     - worker
 typography:
   partition: memory
-  bondDegree: 400
+  bondDegree: 445
   neighbors:
     - aura
     - cloudflare
@@ -241,11 +261,13 @@ neighbors:
     - chart
     - chat
     - cloudflare
+    - comms
     - communication
     - confirm
     - consciousness
     - consultant
     - consulting
+    - convene
     - cost
     - cross
     - decoherence
@@ -277,12 +299,15 @@ neighbors:
     - leap
     - linearity
     - links
+    - local
     - love
     - marine
     - math
     - matrix
     - memory
     - merge
+    - metric
+    - millennium
     - particle
     - path
     - peace
@@ -291,12 +316,15 @@ neighbors:
     - port
     - pqc
     - proof
+    - publish
     - purity
     - pwa
     - quantum
     - query
     - reactor
+    - readme
     - reality
+    - realtime
     - recycle
     - research
     - resolve
@@ -320,10 +348,12 @@ neighbors:
     - translator
     - type
     - typography
+    - ui
     - uncertainty
     - uuid
     - vocabulary
     - wallet
+    - word
     - worker
   backlinks:
     - accounting
@@ -341,11 +371,13 @@ neighbors:
     - chart
     - chat
     - cloudflare
+    - comms
     - communication
     - confirm
     - consciousness
     - consultant
     - consulting
+    - convene
     - cost
     - cross
     - decoherence
@@ -377,12 +409,15 @@ neighbors:
     - leap
     - linearity
     - links
+    - local
     - love
     - marine
     - math
     - matrix
     - memory
     - merge
+    - metric
+    - millennium
     - particle
     - path
     - peace
@@ -391,12 +426,15 @@ neighbors:
     - port
     - pqc
     - proof
+    - publish
     - purity
     - pwa
     - quantum
     - query
     - reactor
+    - readme
     - reality
+    - realtime
     - recycle
     - research
     - resolve
@@ -420,13 +458,15 @@ neighbors:
     - translator
     - type
     - typography
+    - ui
     - uncertainty
     - uuid
     - vocabulary
     - wallet
+    - word
     - worker
 signatures:
-  computationUuid: "5f7dba72-6d03-83d1-8d48-89bcc6750891"
+  computationUuid: "9b3d8bb4-8952-8115-a83a-017461ec6d92"
   stages:
     - stage: path
       stageUuid: "7eb39de1-4185-8946-b679-d15f926873e6"
@@ -437,11 +477,11 @@ signatures:
     - stage: links
       stageUuid: "c73e0cdc-287c-8659-8289-49a9e1847b88"
     - stage: horo
-      stageUuid: "2142cf60-8ad3-816b-8e73-edecf0c38ee0"
+      stageUuid: "53b64cb1-c436-8214-9106-521f5a2b6da4"
     - stage: seal
-      stageUuid: "ef46c026-e1d2-89e1-8117-e1b5a98d9c97"
+      stageUuid: "1787fa5a-8149-8365-ba23-96ce9bbe5749"
     - stage: uuid
-      stageUuid: "72f1d8fa-419f-83d6-99e4-96c5ff651e80"
+      stageUuid: "16e8bfd1-643e-8adb-9c1d-a890dd055548"
 version: 2
 ---
 # memory/quantum — the same crossing, read from memory's ring

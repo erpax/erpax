@@ -1,12 +1,12 @@
 ---
 name: activities
 description: "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register."
-atomPath: data/processing/activities
-coordinate: data/processing/activities · 8/crest · 02336b30
-contentUuid: "0366935e-8925-56e8-ace0-19953ca0c4b9"
-diamondUuid: "7f6455be-ba91-88b5-9187-7e0dd8f5feec"
-uuid: "02336b30-a4c2-8230-8598-0d81cf0d216d"
-horo: 8
+atomPath: "data/processing/activities"
+coordinate: "data/processing/activities · 5/round · 069f1260"
+contentUuid: "cc2a0316-b22d-5504-ab1d-2c4aa0b9d520"
+diamondUuid: "e99f3178-0232-838e-8b05-6b14db72541a"
+uuid: "069f1260-a6ff-855c-bcad-d6a85301e702"
+horo: 5
 bonds:
   in:
     - attribution
@@ -53,9 +53,10 @@ standards:
   - "GDPR Art.30(1) records-controller"
   - "GDPR Art.30(2) records-processor"
   - "GDPR Art.5(1)(e) storage-limitation"
-  - "ISO-19011:2018 audit-trail ropa-evidence"
   - "ISO-27701:2019 §6.3.1 records-of-processing"
   - "ISO-8601-1:2019 date-time review-due-at"
+  - "ISO-8601-1:2019 date-time review-due-at`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -100,7 +101,7 @@ neighbors:
     - users
     - vendors
 signatures:
-  computationUuid: "7a302e15-cb0e-835e-bd39-b97505b70cd6"
+  computationUuid: "1f76e213-1a66-838b-a116-69dd7389b47e"
   stages:
     - stage: path
       stageUuid: "8d4664f9-fc2c-82c5-a13f-a40d9e25a966"
@@ -111,11 +112,11 @@ signatures:
     - stage: links
       stageUuid: "1cad9f42-8fc6-808a-a253-3a353b836f7b"
     - stage: horo
-      stageUuid: "0a87e5bd-414a-8fb6-8743-e3c97daf2f61"
+      stageUuid: "0a3d6d68-f29d-8177-97b9-485f1249d1e7"
     - stage: seal
       stageUuid: "94db3aa7-55aa-8ac5-a9e7-11accdd3822d"
     - stage: uuid
-      stageUuid: "23c8387a-d8bc-889f-b97c-25b487b56c54"
+      stageUuid: "7d70fce8-2177-8eef-a4c9-fe670498c640"
 version: 2
 ---
 # data-processing-activities

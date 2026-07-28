@@ -2,11 +2,11 @@
 name: archival
 description: "Use when pinning tenant content to long-term decentralized storage (IPFS, Arweave, Filecoin, R2-glacier) for regulatory long-retention rules — banks 10y, gov 30y, healthcare 50y, archives unlimited — pinning to every listed backend for defense-in-depth and verifying or recovering by receipt."
 atomPath: archival
-coordinate: archival · 2/share · 5ac9e205
-contentUuid: "ca46abba-50f2-5a84-96c3-3a3c413c8750"
-diamondUuid: "d42fbac0-9c64-8aff-b04b-a72d65be9167"
-uuid: "5ac9e205-cd35-86e6-972a-ebb346a88284"
-horo: 2
+coordinate: "archival · 7/descent · 9597dd0c"
+contentUuid: "158e889a-9f09-5079-959c-02572e758a4a"
+diamondUuid: "3dc7aa02-41f7-8c73-a7c3-d0b0e2c6de1c"
+uuid: "9597dd0c-9038-8793-ae24-772515abcca5"
+horo: 7
 bonds:
   in:
     - archive
@@ -28,8 +28,10 @@ typography:
   neighbors: []
 standards:
   - "Arweave Pay-Once-Store-Forever"
-  - Filecoin storage proofs (Spacegap / Spacetime)
+  - "Filecoin storage proofs (Spacegap / Spacetime)"
   - "W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid"
+  - "W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -54,7 +56,7 @@ neighbors:
     - retention
     - uuid
 signatures:
-  computationUuid: "49da0059-5b3c-8be2-88af-b560fcb45497"
+  computationUuid: "32cf0b33-0b62-89ce-bcf6-bd1b71469670"
   stages:
     - stage: path
       stageUuid: "d3d18419-2856-8d1d-be61-c116e67f2795"
@@ -65,11 +67,11 @@ signatures:
     - stage: links
       stageUuid: "b2714d20-3b7c-8693-a59e-97d5f03e3f03"
     - stage: horo
-      stageUuid: "217745c5-7bb6-8b58-9dfe-9da3af2f84a9"
+      stageUuid: "11f1a852-7b4b-8010-943f-d6628cfb1d61"
     - stage: seal
-      stageUuid: "5073cf48-05e5-8075-bf90-8d025d34db71"
+      stageUuid: "6cb5ad34-44ce-8321-aa0d-86c1e70a252c"
     - stage: uuid
-      stageUuid: "3edc0039-f73a-87ec-b434-910d881fb973"
+      stageUuid: "eb0f6246-2355-8fb4-b575-7710f118a313"
 version: 2
 ---
 # archival — long-term decentralized archival (defense-in-depth pinning)

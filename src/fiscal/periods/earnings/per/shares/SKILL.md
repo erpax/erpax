@@ -1,11 +1,11 @@
 ---
 name: shares
 description: "Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node."
-atomPath: fiscal/periods/earnings/per/shares
-coordinate: fiscal/periods/earnings/per/shares · 5/round · 20d192b6
-contentUuid: "ef9fbe23-f110-5098-b6d4-20013fba1769"
-diamondUuid: "eb81384c-3c2e-8fff-8923-88658ea86f6c"
-uuid: "20d192b6-6b5f-8bf7-85a1-7df3fb5eb14c"
+atomPath: "fiscal/periods/earnings/per/shares"
+coordinate: "fiscal/periods/earnings/per/shares · 5/round · c3bb717b"
+contentUuid: "64347146-4c90-52a0-b1ef-9ef1084e4e4e"
+diamondUuid: "ba1d697a-7e82-8785-83a6-62c50cab31d8"
+uuid: "c3bb717b-13c8-8bb0-9895-3500479b0a6f"
 horo: 5
 bonds:
   in:
@@ -20,14 +20,19 @@ typography:
 standards:
   - "IAS-33 §11-§19 weighted-average-number-of-ordinary-shares"
   - "IFRS IAS-33 §10 basic-eps"
+  - "IFRS IAS-33 §10 basic-eps`"
   - "IFRS IAS-33 §30-§63 diluted-eps"
+  - "IFRS IAS-33 §30-§63 diluted-eps`"
   - "IFRS IAS-33 §66-§70 disclosure"
-  - "ISO 19011:2018 §6.4.6 audit-evidence-eps-computation"
+  - "IFRS IAS-33 §66-§70 disclosure`"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time period-end"
+  - "ISO-8601-1:2019 date-time period-end`"
   - "SOX §404 internal-controls"
   - "US-GAAP"
   - "US-GAAP ASC-260 earnings-per-share"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -42,7 +47,7 @@ neighbors:
   backlinks:
     - law
 signatures:
-  computationUuid: "d2c896b9-b0c7-8593-afae-ce3dfd33ecbd"
+  computationUuid: "f9345e93-e8bb-84f6-ab2e-7bd9b18153eb"
   stages:
     - stage: path
       stageUuid: "ecae1eb7-5dc8-8b6e-bde7-125d1842b92b"
@@ -53,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "0bb5d892-1f84-8986-b0e5-ef413ddc4eee"
     - stage: horo
-      stageUuid: "708d3d2d-58c2-891c-8292-c57a03717f04"
+      stageUuid: "10cc1dd6-1a00-8c8a-b085-e712bdec831a"
     - stage: seal
       stageUuid: "b705a24d-bfd0-8fd0-988b-22ef5cda118c"
     - stage: uuid
-      stageUuid: "ca6be76a-86de-8f87-8395-d04955f47f2b"
+      stageUuid: "23ba01b7-7ff5-84ea-8201-c8eb4be5ee31"
 version: 2
 ---
 # earnings-per-share

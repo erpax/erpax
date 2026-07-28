@@ -1,11 +1,11 @@
 ---
 name: provisions
 description: "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register."
-atomPath: fiscal/periods/provisions
-coordinate: fiscal/periods/provisions · 2/share · b7643c83
-contentUuid: "328d55e0-8d8d-5b66-84db-13ee409b47f1"
-diamondUuid: "d3aa02fa-0418-8ab2-869e-0f9919734b95"
-uuid: "b7643c83-b004-8ca8-a009-778fe71d4531"
+atomPath: "fiscal/periods/provisions"
+coordinate: "fiscal/periods/provisions · 2/share · 026982e2"
+contentUuid: "3377d31c-7740-54aa-b7c3-ba826f5f9321"
+diamondUuid: "8d0dc773-5358-867f-b972-3d0816e81bae"
+uuid: "026982e2-5201-82fd-89df-d4f0cc25c3b0"
 horo: 2
 bonds:
   in:
@@ -34,12 +34,14 @@ standards:
   - "IFRS IAS-37 §36 §37 §39 measurement-best-estimate"
   - "IFRS IAS-37 §66 §67 onerous-contracts"
   - "IFRS IAS-37 §70 §83 disclosure-requirements"
-  - "ISO-19011:2018 audit-trail provision-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls liability-completeness"
   - "US-GAAP ASC-410 asset-retirement-obligations"
   - "US-GAAP ASC-450-20-25 loss-contingencies"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -65,7 +67,7 @@ neighbors:
     - liability
     - transaction
 signatures:
-  computationUuid: "3b0c22be-9e6b-837b-b204-5d9908cdfe7c"
+  computationUuid: "7de39c30-a70f-80c0-967a-e70df38cd796"
   stages:
     - stage: path
       stageUuid: "f2aac0b4-6e02-8568-8500-cb93b2c469a2"
@@ -76,11 +78,11 @@ signatures:
     - stage: links
       stageUuid: "8e04cf04-80a8-84c9-b786-82c82119f96a"
     - stage: horo
-      stageUuid: "45b37092-3ce6-8ff7-baa7-c017d8abf1bc"
+      stageUuid: "733302b1-a965-86eb-b203-7ecdc689947e"
     - stage: seal
       stageUuid: "8f7090c4-3197-8f3a-9239-5f7be130c51f"
     - stage: uuid
-      stageUuid: "196b44c6-3276-82f8-aa3b-de87e1527d71"
+      stageUuid: "2d579b71-8acf-8f3b-bd01-e89dcd147928"
 version: 2
 ---
 # provisions

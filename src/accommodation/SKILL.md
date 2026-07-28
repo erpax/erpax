@@ -2,10 +2,10 @@
 name: accommodation
 description: "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a"
 atomPath: accommodation
-coordinate: accommodation · 4/weave · 78107219
-contentUuid: "ec0e0deb-f8cd-583c-b89e-16bf73c2d9cf"
-diamondUuid: "00c2e9f9-22b8-8810-8278-c484d391658c"
-uuid: "78107219-89ab-81db-a268-870ce5cafe73"
+coordinate: "accommodation · 4/weave · a209d30f"
+contentUuid: "399597f3-f9e1-5a2d-b52a-2cdcb0de5956"
+diamondUuid: "50f977bc-d0c8-84d9-92ef-4cb0eb214eb8"
+uuid: "a209d30f-efbb-8998-8d0e-a3b49c158b20"
 horo: 4
 bonds:
   in:
@@ -58,22 +58,22 @@ neighbors:
     - plan
     - units
 signatures:
-  computationUuid: "c5b1a79b-dfd0-858b-8fb2-5689a68c046b"
+  computationUuid: "56f60d7b-0d9b-80c1-a94b-2fb8b4ac16e3"
   stages:
     - stage: path
       stageUuid: "ce2244ed-9a80-8faf-a632-0bf40a781806"
     - stage: trinity
-      stageUuid: "f6121bf5-7210-845d-89e8-b8160f69273a"
+      stageUuid: "2f5786f9-1b63-86d6-ae9f-57d4ea8cf4a1"
     - stage: boundary
-      stageUuid: "16d6484f-4a14-8b23-a252-3cab22b79439"
+      stageUuid: "3aebaa06-ca4f-8e42-abd0-cdb441899f38"
     - stage: links
       stageUuid: "8ae9abac-dcf7-8bf5-b974-abc689e825cf"
     - stage: horo
-      stageUuid: "e94f9b83-9e2e-8373-bd99-618125a45628"
+      stageUuid: "9b9ed109-7f82-899b-805c-82723f0708af"
     - stage: seal
-      stageUuid: "2061b26b-c2aa-891d-9879-2565691da7ad"
+      stageUuid: "8e584459-1f5f-8118-acf8-1b04804942b3"
     - stage: uuid
-      stageUuid: "55b8eb4f-fedb-87ad-b6fa-37eb2bb1daf4"
+      stageUuid: "c408f389-294c-8bf1-9233-1f2f67eee3b8"
 version: 2
 ---
 # accommodation

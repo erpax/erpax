@@ -1,12 +1,12 @@
 ---
 name: milestones
 description: "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project."
-atomPath: customers/projects/project/milestones
-coordinate: customers/projects/project/milestones · 4/weave · 3098569f
-contentUuid: "795e4445-0595-59b8-bf42-fe470c336a20"
-diamondUuid: "992aeedb-ca21-8859-87f0-8f7131819a77"
-uuid: "3098569f-a1f2-88fc-9d50-5bfc9bc3ab53"
-horo: 4
+atomPath: "customers/projects/project/milestones"
+coordinate: "customers/projects/project/milestones · 7/descent · 18ac4fc9"
+contentUuid: "9be77f17-3900-51c1-b14d-1f531f3ff85b"
+diamondUuid: "c68d6a40-a76b-8d8c-a08a-e4bc19369c0f"
+uuid: "18ac4fc9-ad30-8419-942d-c621e1169c0f"
+horo: 7
 bonds:
   in:
     - accounting
@@ -42,10 +42,12 @@ typography:
 standards:
   - "IFRS IFRS-15 §126 milestone-billing"
   - "IFRS IFRS-15 §35 over-time-recognition"
-  - "ISO-19011:2018 audit-trail milestone-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "US-GAAP ASC-606-10-25-30 milestone-method"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -85,7 +87,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "6be28325-ce1f-862b-b5e9-d671cb9bff47"
+  computationUuid: "057604b9-b4d4-86eb-9fb6-181366a69675"
   stages:
     - stage: path
       stageUuid: "bdab54e2-97ee-8ee5-ad3d-05b2c6a88bdb"
@@ -96,11 +98,11 @@ signatures:
     - stage: links
       stageUuid: "bd019b5a-01f1-8171-9834-2de6175e8435"
     - stage: horo
-      stageUuid: "cc8d1320-8f95-8915-ad82-ccb8eb865bbd"
+      stageUuid: "fb575f6f-b379-89b7-94c6-042e706b8cf0"
     - stage: seal
       stageUuid: "1f65602e-51ed-87e6-bd2c-848f454d26c2"
     - stage: uuid
-      stageUuid: "eca57250-e7eb-89ab-9ee1-d5d1b77cf30e"
+      stageUuid: "72f5bf5c-c918-8f43-bb4d-2828bcbfbd79"
 version: 2
 ---
 # project-milestones

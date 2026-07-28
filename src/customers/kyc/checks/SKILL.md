@@ -1,12 +1,12 @@
 ---
 name: checks
 description: "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection."
-atomPath: customers/kyc/checks
-coordinate: customers/kyc/checks · 5/round · 9afe6471
-contentUuid: "42a75fac-03de-579c-a717-1ad823de68d6"
-diamondUuid: "800b863b-dceb-8811-9afe-d6f754b0cbab"
-uuid: "9afe6471-627f-8fb9-9dc5-863e4c78713c"
-horo: 5
+atomPath: "customers/kyc/checks"
+coordinate: "customers/kyc/checks · 2/share · 22be3af2"
+contentUuid: "1615519d-0155-5dcd-bc7d-85fc1d0cf1d1"
+diamondUuid: "6404cc5e-bc17-8893-899c-2d7a071287cd"
+uuid: "22be3af2-3af7-8647-92d8-6f10dd8474c7"
+horo: 2
 bonds:
   in:
     - identity
@@ -28,9 +28,10 @@ standards:
   - "EU-AMLD-6 Directive-2018/1673 anti-money-laundering"
   - "EU-Regulation-2015/847 wire-transfers"
   - "FATF-Recommendation-10 customer-due-diligence"
-  - "ISO-19011:2018 audit-trail kyc-evidence"
   - "ISO/IEC-19794 biometric-data-interchange-formats"
+  - "ISO/IEC-19794 biometric-data-interchange-formats`"
   - "USA-PATRIOT-Act §326 customer-identification-program"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -52,7 +53,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "2058dc96-b028-8b1c-9769-9ff466128d26"
+  computationUuid: "9d03e89a-0c7b-8f37-b854-0c5c81dae571"
   stages:
     - stage: path
       stageUuid: "423de8ab-f987-829c-9d4c-7b985d4e39d0"
@@ -63,11 +64,11 @@ signatures:
     - stage: links
       stageUuid: "b8999206-541f-83f6-bd21-98eea84521a5"
     - stage: horo
-      stageUuid: "d6f89627-2caa-8e85-8a2a-57141f2fe241"
+      stageUuid: "bb2ababb-cfe8-8fd9-972f-d70cbed4eaec"
     - stage: seal
       stageUuid: "b7b5f3cc-402a-8e30-9f2a-638b3d56a416"
     - stage: uuid
-      stageUuid: "5bb6796c-15d2-8208-a4e2-748cca787f93"
+      stageUuid: "46db05b6-ae73-8ae4-b760-3b3e70bd7a1d"
 version: 2
 ---
 # kyc-checks

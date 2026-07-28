@@ -2,11 +2,11 @@
 name: mirror
 description: "Use when reasoning about a path read both ways — left→right and right→left are different paths (different words, different folders) yet carry the same value, because the path's digital root (the sum of its word-digits) is direction-invariant; the horo as path, max value the same on both sides for words and digits."
 atomPath: mirror
-coordinate: mirror · 7/descent · 58ca9a60
-contentUuid: "4894bd86-39e3-5412-8a54-64308064a1f7"
-diamondUuid: "df76179c-7211-848c-a260-709a67da499a"
-uuid: "58ca9a60-471e-86eb-9ed3-1f8fc7a5a4ef"
-horo: 7
+coordinate: "mirror · 1/base · 46bbc970"
+contentUuid: "54dc518a-91a5-56cb-b263-ebed4d813d6a"
+diamondUuid: "319e5705-e27d-8c9d-8a39-73ebb25763dd"
+uuid: "46bbc970-171e-88cd-b734-2c9a5235ade3"
+horo: 1
 bonds:
   in:
     - digit
@@ -29,8 +29,6 @@ typography:
   bondDegree: 21
   neighbors: []
 standards:
-  - "forward/backward are the two word-orders; the value is the digital root of a commutative sum"
-  - "forward/backward are the two word-orders; the value is the digital root of a commutative sum, computed"
   - "the base-10 digital root (direction-invariant) · the horo ring read both ways · duality (L→R ⊕ R→L)"
 bindings: []
 neighbors:
@@ -58,7 +56,7 @@ neighbors:
     - name
     - uuid
 signatures:
-  computationUuid: "5d3a2642-b26d-85d8-bd25-ef10969b4b09"
+  computationUuid: "1b795178-e453-81b0-a389-f1e9cafc9d0a"
   stages:
     - stage: path
       stageUuid: "118a50eb-1181-8e39-9b4b-700432693b80"
@@ -69,11 +67,11 @@ signatures:
     - stage: links
       stageUuid: "d097c10e-40e0-8c8c-a2aa-ea7676117d59"
     - stage: horo
-      stageUuid: "1120780b-526b-80b7-888f-01a0afe65b9d"
+      stageUuid: "ba2c7641-1280-8da5-8784-8fb3515e7c45"
     - stage: seal
-      stageUuid: "d55651a3-5a61-8c45-8899-40aeae5ff8b3"
+      stageUuid: "aa318b33-852c-86c6-9d24-257728952137"
     - stage: uuid
-      stageUuid: "6995f0d0-9694-80a1-bb17-457d5eed7a09"
+      stageUuid: "887c7267-fb09-89cb-92bd-c25f71b078c5"
 version: 2
 ---
 # mirror — the horo as path read both ways

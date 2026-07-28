@@ -1,12 +1,12 @@
 ---
 name: requests
 description: "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register."
-atomPath: employees/leave/requests
-coordinate: employees/leave/requests · 1/base · 3feea78f
-contentUuid: "3a43210b-925c-5fe9-a0c9-b876fcd1837a"
-diamondUuid: "36db970e-3c4d-8de2-b35c-aab7b03a8f71"
-uuid: "3feea78f-cac3-84ea-a33f-e3d6cc1da4d6"
-horo: 1
+atomPath: "employees/leave/requests"
+coordinate: "employees/leave/requests · 8/crest · 46f40ae1"
+contentUuid: "ba919e5c-7ddb-5eac-9c6d-e63d5bf8f181"
+diamondUuid: "94c71d2e-20fe-82cd-bdf5-f81f4ae389dc"
+uuid: "46f40ae1-c44b-879d-873b-a3acea90d416"
+horo: 8
 bonds:
   in:
     - assets
@@ -39,12 +39,13 @@ standards:
   - "IAS-19"
   - "IFRS IAS-19 §11 §13 §14 short-term-employee-benefits"
   - "IFRS IAS-19 §16 accumulating-paid-absences"
-  - "ISO-19011:2018 audit-trail leave-evidence"
   - "ISO-8601-1:2019"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "US FMLA family-medical-leave-act"
   - "US-FMLA"
   - "US-GAAP ASC-710-10-25 compensated-absences"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -73,7 +74,7 @@ neighbors:
     - spaces
     - users
 signatures:
-  computationUuid: "12627b10-72de-8e95-b586-b6e17796c22e"
+  computationUuid: "3f51d237-e6d5-8a91-84af-6c52a1608326"
   stages:
     - stage: path
       stageUuid: "3dc04419-a2dc-821f-904c-c83e478dff54"
@@ -84,11 +85,11 @@ signatures:
     - stage: links
       stageUuid: "93c5c8e5-cfe1-874f-b6b0-68db2062ab8f"
     - stage: horo
-      stageUuid: "9eb5d4a3-8150-89d9-8e48-f1f241a18b58"
+      stageUuid: "c6ce0a1c-e3e8-8e2b-93b0-df3d8e095812"
     - stage: seal
       stageUuid: "277cfb7e-153e-86d2-bfcd-e76ff9fb1d58"
     - stage: uuid
-      stageUuid: "166bddf0-779c-820a-868f-ee147ad14476"
+      stageUuid: "9a8764bd-e16b-81b7-ba38-13fb4087cb5d"
 version: 2
 ---
 # leave-requests

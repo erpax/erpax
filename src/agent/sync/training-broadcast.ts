@@ -22,6 +22,7 @@
  */
 import type { CollectionAfterChangeHook } from 'payload'
 import type { AgentContext, DomainEvent } from '../types'
+import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 import type { HeldLine, RequiredLine } from '@/competency/gap'
 import { processEffects } from '../effect-processor'
 import { createAgentContext } from '../context'
@@ -133,19 +134,25 @@ export function trainingAfterChange(): CollectionAfterChangeHook {
       if (!ev) return doc
       const { agentRuntime } = await import('@/agent/bootstrap')
       const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
-      const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
       const law = defaultAgentLawState({
         depth: 1,
         actor: 'training-broadcast',
         grant: AGENT_RUNTIME_GRANT,
         untrustedPayload: ev.payload,
       })
+      // Corpus MCP tools are a dev/agent facet — gated out of production so webpack
+      // tree-shakes tool-defs → atom-catalogue out of the Worker (see chat-broadcast).
+      let tools: ErpaxMcpTool[] = []
+      if (process.env.NODE_ENV !== 'production') {
+        const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
+        tools = buildErpaxMcpTools(agentRuntime.registry as never)
+      }
       const ctx: AgentContext = createAgentContext({
         runtime: agentRuntime,
         payload: req.payload,
         tenantId,
         law,
-        mcp: createInProcessMcpClient(buildErpaxMcpTools(agentRuntime.registry as never), req, { law }),
+        mcp: createInProcessMcpClient(tools, req, { law }),
         emit: chatEmit(req.payload as unknown as ChatClient, 1), // the priced plan broadcasts as a society row
       })
       const effects = await agentRuntime.dispatchEvent(ctx, ev)

@@ -1,12 +1,12 @@
 ---
 name: corruption
 description: "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable."
-atomPath: anti/corruption
-coordinate: anti/corruption · 4/weave · 8e08397c
-contentUuid: "790352b9-56d0-53e3-a1a7-2dae0cb0900f"
-diamondUuid: "52a0aa3d-741d-8f66-9041-7dc922cc7d5a"
-uuid: "8e08397c-e612-835e-9a4a-8e2d9ec27827"
-horo: 4
+atomPath: "anti/corruption"
+coordinate: "anti/corruption · 2/share · ce5400d5"
+contentUuid: "a899abbf-3675-587e-b34e-027e4fba0f10"
+diamondUuid: "81829aec-6506-8ac8-818e-80cd21f50bb5"
+uuid: "ce5400d5-ba2b-81a0-a944-c1b9adce2d23"
+horo: 2
 bonds:
   in:
     - access
@@ -63,7 +63,17 @@ typography:
   bondDegree: 72
   neighbors: []
 standards:
-  - "ISO-19011:2018 audit-trail integrity-verification"
+  - "EU-2022/1925"
+  - "EU-2022/2065"
+  - "EU-2022/2554"
+  - "EU-2022/2555"
+  - "EU-2022/868"
+  - "ILO-C001"
+  - "ISO-19011"
+  - "ISO-19011`"
+  - "ISO-27001"
+  - "ISO/IEC-27001:2022"
+  - "ISO/IEC-27001:2022`"
   - "SOX §404 segregation-of-duties internal-controls"
 bindings: []
 neighbors:
@@ -134,7 +144,7 @@ neighbors:
     - supto
     - voting
 signatures:
-  computationUuid: "a81eefe2-7073-81da-9d46-5caa18441fc6"
+  computationUuid: "0a7cb259-f246-8636-888f-5216e8b68aba"
   stages:
     - stage: path
       stageUuid: "29d53fec-2df7-8ef3-b27b-76fdbd140708"
@@ -145,11 +155,11 @@ signatures:
     - stage: links
       stageUuid: "95c594ce-539f-84a9-8062-deea5da92d05"
     - stage: horo
-      stageUuid: "7bf5dfa4-35e9-88d7-b499-7d73f7aad64c"
+      stageUuid: "28b4254e-99f0-8f7b-b160-91c626a54632"
     - stage: seal
       stageUuid: "e21c760a-79f7-8a0b-baad-c61cfdef37a5"
     - stage: uuid
-      stageUuid: "076d9109-cb2f-816d-86d3-efb0a1426c72"
+      stageUuid: "0480f6ed-ec4b-8906-893d-6e7304525cc6"
 version: 2
 ---
 # anti-corruption — corruption foreclosed by construction, not policed by policy

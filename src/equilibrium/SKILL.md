@@ -2,11 +2,11 @@
 name: equilibrium
 description: "Use when reasoning about equilibrium as detailed balance — every forward transition exactly matched by its reverse (rate(i→j)·pᵢ = rate(j→i)·pⱼ), no net flow, entropy maximal and stationary. It is the thermodynamic twin of erpax's symmetric-merge binding: the collider reciprocates every forward link a→b with b→a, so the matrix sits at detailed balance (reciprocity = 1, directed-link entropy = 0). The balance the engine relaxes toward, where the temperature Boltzmann distribution makes every rate-pair cancel."
 atomPath: equilibrium
-coordinate: equilibrium · 4/weave · d1b0a34c
-contentUuid: "3c5a520a-662e-5f3a-ae97-169bde672b70"
-diamondUuid: "e932a094-484c-8d5e-a8c7-72d91a70c7f8"
-uuid: "d1b0a34c-612a-807b-ad72-598af79579db"
-horo: 4
+coordinate: "equilibrium · 2/share · 57b78b4c"
+contentUuid: "e324cb47-79f6-5ca5-85f1-ad746651b6e8"
+diamondUuid: "786abca4-4273-819d-b0cd-ea04a2526c84"
+uuid: "57b78b4c-afad-8886-93bd-5a2d26dba626"
+horo: 2
 bonds:
   in:
     - balance
@@ -28,8 +28,7 @@ typography:
   partition: equilibrium
   bondDegree: 23
   neighbors: []
-standards:
-  - "detailed-balance residual |fwd·pᵢ − rev·pⱼ|; reciprocity fraction -- computed, never asserted"
+standards: []
 bindings: []
 neighbors:
   wikilink:
@@ -57,7 +56,7 @@ neighbors:
     - merge
     - temperature
 signatures:
-  computationUuid: "32f34ea8-cad2-88a5-8b7a-66f9855490c6"
+  computationUuid: "78cca054-4cb4-841f-b4d0-d523dc0d0f0f"
   stages:
     - stage: path
       stageUuid: "250729d5-051e-82fb-bcc6-2ba800d9c676"
@@ -68,11 +67,11 @@ signatures:
     - stage: links
       stageUuid: "a15ff6cf-f37a-825f-8c55-57e9b5ace912"
     - stage: horo
-      stageUuid: "ea18ac73-85f9-8e80-84da-f3fd723f98ae"
+      stageUuid: "ee52eeb4-143a-876a-a226-e3a861117209"
     - stage: seal
-      stageUuid: "cbc2cf72-b895-817e-9f7f-b31b3718aaea"
+      stageUuid: "79f8b31a-2d7b-8dff-a11a-d0768203d684"
     - stage: uuid
-      stageUuid: "9ecf0f1c-0cd8-861b-8ec4-d71bcc6e43ae"
+      stageUuid: "380b2239-7175-83db-8be1-47c4f99a04c8"
 version: 2
 ---
 # equilibrium — detailed balance = reciprocity

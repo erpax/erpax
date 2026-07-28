@@ -2,11 +2,11 @@
 name: emission
 description: "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]]."
 atomPath: emission
-coordinate: emission · 2/share · d3203283
-contentUuid: "ead610c7-3a0c-5faa-9e0f-093d6095b1a2"
-diamondUuid: "f47bc537-353a-87f7-8280-f1629f93535f"
-uuid: "d3203283-3152-8b3a-9c9e-82538f80cf14"
-horo: 2
+coordinate: "emission · 5/round · b11f62df"
+contentUuid: "49a74404-c66e-549e-866c-0048ede5edd0"
+diamondUuid: "989d8f91-9686-8e1a-b847-b01dc0a24893"
+uuid: "b11f62df-5878-8d65-9085-0352a256dfef"
+horo: 5
 bonds:
   in:
     - biophoton
@@ -36,13 +36,14 @@ standards:
   - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
-  - GHG Protocol Corporate Standard (Scope 1 / 2 / 3)
+  - "GHG Protocol Corporate Standard (Scope 1 / 2 / 3)"
   - "GHG-Protocol"
   - "ILO-C100"
   - "IPCC AR5 (2014) — 100-yr Global Warming Potentials (Table 8.A.1)"
   - ISO 14064 — Greenhouse gas quantification and reporting
+  - "ISO 14064 — Greenhouse gas quantification and reporting`"
   - "ISO-14064-1"
-  - "computed, never hand-asserted"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -74,7 +75,7 @@ neighbors:
     - standard
     - sustainability
 signatures:
-  computationUuid: "b1f05c8e-b21b-8933-bfe9-3411b30a358a"
+  computationUuid: "ae754918-cdbc-80c9-b369-f20b98a5b2fa"
   stages:
     - stage: path
       stageUuid: "6b83bd2a-a9d8-8e5b-bc63-da90403e5090"
@@ -85,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "b7e6154c-650f-84af-8dd0-ad32d25bd942"
     - stage: horo
-      stageUuid: "90e6ab0c-d35c-858c-a751-fab42cb41c51"
+      stageUuid: "1f424b74-af14-8453-bb4e-07e2b03f62c4"
     - stage: seal
-      stageUuid: "d6046083-ab33-8b05-b7e1-866c1c9d78f1"
+      stageUuid: "d564da16-4ca8-8846-8076-c7070c3271a0"
     - stage: uuid
-      stageUuid: "febde8e3-0d5b-8857-9d0c-43822db3db95"
+      stageUuid: "93e0493b-7340-8b79-b1ac-26822a21f619"
 version: 2
 ---
 # emission — the greenhouse-gas DEBIT a cycle releases (CO₂-equivalent)

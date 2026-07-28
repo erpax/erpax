@@ -116,5 +116,29 @@ describe('standards/emit — catalogue generator', () => {
       expect(() => assertStandardsGated(process.cwd(), u.length)).not.toThrow()
       expect(() => assertStandardsGated(process.cwd(), u.length - 1)).toThrow(/NOT gated \(fail-closed\)/)
     })
+
+    it('gates allow only prose is a VIOLATION — depth=gated requires .ts under rules|law|access, never markdown alone', async () => {
+      const {
+        standardImplementation,
+        proseInGateFolderViolations,
+        assertNoProseOnlyGates,
+      } = await import('@/standards/emit')
+      // ZDDS was the live false wall (SKILL.md only); heal moved the banner into rules/reference/index.ts
+      const zdds = standardImplementation().find((x) => x.id === 'ZDDS')
+      if (zdds) expect(zdds.depth).toBe('gated')
+      for (const x of standardImplementation().filter((s) => s.depth === 'gated')) {
+        // every gated standard must have at least one .ts citation under the gate tree —
+        // proven indirectly: proseInGateFolderViolations excludes anything with gate .ts,
+        // and no gated id may appear there.
+        expect(proseInGateFolderViolations().some((v) => v.id === x.id)).toBe(false)
+      }
+      // the violation inventory is the fail-closed wall: if any remain, assert throws
+      const v = proseInGateFolderViolations()
+      if (v.length === 0) {
+        expect(() => assertNoProseOnlyGates()).not.toThrow()
+      } else {
+        expect(() => assertNoProseOnlyGates()).toThrow(/gates allow only prose = VIOLATION/)
+      }
+    })
   })
 })

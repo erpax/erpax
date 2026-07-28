@@ -2,11 +2,11 @@
 name: page
 description: "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: page
-coordinate: page · 2/share · 3403c931
-contentUuid: "402b462a-e288-5a60-8fbb-004fca9fc264"
-diamondUuid: "c9a11e01-e550-8018-8911-19076f941ec1"
-uuid: "3403c931-335f-8d6a-ad81-4bce6eb97b4e"
-horo: 2
+coordinate: "page · 7/descent · f731a2b3"
+contentUuid: "4470fe37-0a23-5580-937b-e7d51bfa854a"
+diamondUuid: "11ade281-22ca-8834-96d6-ce8d879c4aa4"
+uuid: "f731a2b3-3226-869f-869d-1076b5b7c2f1"
+horo: 7
 bonds:
   in:
     - about
@@ -28,6 +28,7 @@ bonds:
     - main
     - medical
     - merge
+    - page
     - primary
     - print
     - profile
@@ -63,6 +64,7 @@ bonds:
     - main
     - medical
     - merge
+    - page
     - primary
     - print
     - profile
@@ -142,6 +144,7 @@ neighbors:
     - main
     - medical
     - merge
+    - page
     - primary
     - print
     - profile
@@ -177,6 +180,7 @@ neighbors:
     - main
     - medical
     - merge
+    - page
     - primary
     - print
     - profile
@@ -193,7 +197,7 @@ neighbors:
     - visits
     - web
 signatures:
-  computationUuid: "069495cd-4723-8170-be61-befaddeaa096"
+  computationUuid: "98e37012-f999-8b46-b7f5-26c6eda44b3a"
   stages:
     - stage: path
       stageUuid: "67a9d817-2e0f-8155-8b29-71841dc7522e"
@@ -204,11 +208,11 @@ signatures:
     - stage: links
       stageUuid: "f0a583e5-31e5-8cc5-a2b6-f1b6241d1a72"
     - stage: horo
-      stageUuid: "ece1acb7-1260-8aed-a653-3228c88fd005"
+      stageUuid: "2a50dc50-8c66-8506-9a58-3a0728f166ec"
     - stage: seal
       stageUuid: "3e264539-efba-8143-af96-fa061cf645fc"
     - stage: uuid
-      stageUuid: "bdd89454-eb6d-8b96-abfd-ecf0c3231736"
+      stageUuid: "5e1891f5-1878-88b7-9b76-5f1be5508537"
 version: 2
 ---
 # page

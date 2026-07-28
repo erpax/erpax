@@ -1,8 +1,65 @@
 ---
 name: immutability
 description: "Use when reasoning about whether a posted GL posting can be altered — the beforeChange hook that seals a row once postedDate is set, allowing an admin edit only with a documented override. Read this before assuming postings are immutable: the hook is correct, tested, and attached to NO collection, and gl-postings lacks the override fields it requires."
+atomPath: "enforce/posting/immutability"
+coordinate: "enforce/posting/immutability · 2/share · 93d1b829"
+contentUuid: "e670db65-3d11-5da5-bb3f-7f17979801a1"
+diamondUuid: "f372a584-b10e-8af8-9668-57614fca23f7"
+uuid: "93d1b829-c3c2-8280-a69f-bf8dc05fdfe4"
+horo: 2
+bonds:
+  in:
+    - hooks
+    - law
+    - merge
+    - posting
+    - rules
+  out:
+    - hooks
+    - law
+    - merge
+    - rules
+typography:
+  partition: enforce
+  bondDegree: 12
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - hooks
+    - law
+    - merge
+    - rules
+  matrix:
+    - hooks
+    - law
+    - merge
+    - rules
+  backlinks:
+    - hooks
+    - law
+    - merge
+    - rules
+signatures:
+  computationUuid: "deb7c834-a047-8c2e-a30e-bf95373735c6"
+  stages:
+    - stage: path
+      stageUuid: "5c27898d-870f-8413-b4a1-cefb393a0de5"
+    - stage: trinity
+      stageUuid: "46a24d8a-c851-8516-904f-5762f77c6ddd"
+    - stage: boundary
+      stageUuid: "ef26d04c-a96b-80d5-b1dc-3888edc7269e"
+    - stage: links
+      stageUuid: "6e96b91e-84a6-8193-98f5-12d5873352b7"
+    - stage: horo
+      stageUuid: "17747673-2f29-83d0-9ea4-78df9cb368df"
+    - stage: seal
+      stageUuid: "e0eed64e-cd94-85b2-be39-9ba4a2eac4b5"
+    - stage: uuid
+      stageUuid: "bd95b69e-30ae-83d3-b169-5bf77491dc14"
+version: 2
 ---
-
 # immutability — the control is written, tested, and guards nothing
 
 Once a posting is posted, it must not change. It is the audit control that sits beside the double-entry law: an ERP that lets a posted entry be edited has no auditable history, whatever its trail says.

@@ -2,38 +2,46 @@
 name: audit
 description: "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper."
 atomPath: audit
-coordinate: audit · 2/share · 15c9b6da
-contentUuid: "98900c6e-8a06-5b16-a9c8-00c50524e97b"
-diamondUuid: "9b0dbc27-0e79-83c3-a538-a49154143282"
-uuid: "15c9b6da-13f6-8eb5-bdde-16b39325eed3"
-horo: 2
+coordinate: "audit · 5/round · 645d0b84"
+contentUuid: "273c6960-3e41-5c9b-8e80-351fac1afe15"
+diamondUuid: "cfd20c38-5c54-81e2-8237-d1848c21f9dd"
+uuid: "645d0b84-7c87-8a2d-bfe5-c910a5e4e091"
+horo: 5
 bonds:
   in:
     - access
     - accounting
+    - agent
     - anchoring
     - approved
     - attestation
+    - audit
     - by
     - certification
     - chain
     - change
     - closure
     - cloudflare
+    - computer
+    - coverage
     - description
     - emitter
     - empirical
     - engineering
     - fields
     - finding
+    - fixpoint
     - media
     - organic
     - pqc
+    - proof
     - provenance
     - reason
+    - reference
     - replay
     - research
     - source
+    - speed
     - timestamp
     - truth
     - types
@@ -41,29 +49,37 @@ bonds:
   out:
     - access
     - accounting
+    - agent
     - anchoring
     - approved
     - attestation
+    - audit
     - by
     - certification
     - chain
     - change
     - closure
     - cloudflare
+    - computer
+    - coverage
     - description
     - emitter
     - empirical
     - engineering
     - fields
     - finding
+    - fixpoint
     - media
     - organic
     - pqc
+    - proof
     - provenance
     - reason
+    - reference
     - replay
     - research
     - source
+    - speed
     - timestamp
     - truth
     - types
@@ -89,6 +105,7 @@ standards:
   - "IAS-1"
   - "ILO-C001"
   - "ISO-19011"
+  - "ISO-19011`"
   - "ISO-27001"
   - "ISO-27037"
   - "ISO/IEC-27001:2022"
@@ -103,10 +120,10 @@ standards:
   - SOX
   - "US-CTA-2021"
 bindings:
-  - analytics_engine_datasets/ANALYTICS_AI
-  - analytics_engine_datasets/ANALYTICS_API
-  - analytics_engine_datasets/ANALYTICS_GL
-  - analytics_engine_datasets/ANALYTICS_JOBS
+  - "analytics_engine_datasets/ANALYTICS_AI"
+  - "analytics_engine_datasets/ANALYTICS_API"
+  - "analytics_engine_datasets/ANALYTICS_GL"
+  - "analytics_engine_datasets/ANALYTICS_JOBS"
 neighbors:
   wikilink:
     - access
@@ -117,29 +134,37 @@ neighbors:
   matrix:
     - access
     - accounting
+    - agent
     - anchoring
     - approved
     - attestation
+    - audit
     - by
     - certification
     - chain
     - change
     - closure
     - cloudflare
+    - computer
+    - coverage
     - description
     - emitter
     - empirical
     - engineering
     - fields
     - finding
+    - fixpoint
     - media
     - organic
     - pqc
+    - proof
     - provenance
     - reason
+    - reference
     - replay
     - research
     - source
+    - speed
     - timestamp
     - truth
     - types
@@ -147,35 +172,43 @@ neighbors:
   backlinks:
     - access
     - accounting
+    - agent
     - anchoring
     - approved
     - attestation
+    - audit
     - by
     - certification
     - chain
     - change
     - closure
     - cloudflare
+    - computer
+    - coverage
     - description
     - emitter
     - empirical
     - engineering
     - fields
     - finding
+    - fixpoint
     - media
     - organic
     - pqc
+    - proof
     - provenance
     - reason
+    - reference
     - replay
     - research
     - source
+    - speed
     - timestamp
     - truth
     - types
     - versions
 signatures:
-  computationUuid: "de6684de-2045-8f3f-be91-5e8338154e41"
+  computationUuid: "612ae90a-7d47-8f0c-a1e6-514163688e37"
   stages:
     - stage: path
       stageUuid: "5818acc2-eaa3-8ca0-aad3-692b527dd02b"
@@ -186,11 +219,11 @@ signatures:
     - stage: links
       stageUuid: "a693b788-2547-88db-bf9f-c05891b277f3"
     - stage: horo
-      stageUuid: "1e89c047-49ad-8829-9948-91502af5f7fa"
+      stageUuid: "f4f7f0b1-18c4-8ef8-915f-7d8b0f663d40"
     - stage: seal
       stageUuid: "d38004fa-72f9-8270-8ad7-99afc9589ee1"
     - stage: uuid
-      stageUuid: "6559978c-9092-85e9-81c2-3e1dd0c5a03a"
+      stageUuid: "4fb5edfd-04c1-8b43-a713-e8ed77c1acf4"
 version: 2
 ---
 # audit

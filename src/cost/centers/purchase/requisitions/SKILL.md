@@ -1,11 +1,11 @@
 ---
 name: requisitions
 description: "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection."
-atomPath: cost/centers/purchase/requisitions
-coordinate: cost/centers/purchase/requisitions · 1/base · ebc72cfb
-contentUuid: "67f792d2-fec4-591c-b687-d552ecdd8b0d"
-diamondUuid: "111f1179-be22-8851-8017-4a6f7a4603d5"
-uuid: "ebc72cfb-d865-870e-95e8-c50d07f230b3"
+atomPath: "cost/centers/purchase/requisitions"
+coordinate: "cost/centers/purchase/requisitions · 1/base · 47d6e57e"
+contentUuid: "e65b9254-5ae0-53af-bda2-65cc93f92815"
+diamondUuid: "8cf9568b-1397-8ed2-b5b9-8d19ba3129ce"
+uuid: "47d6e57e-3a3c-88d9-84c1-cfcee7d99bd4"
 horo: 1
 bonds:
   in:
@@ -34,10 +34,12 @@ typography:
   bondDegree: 27
   neighbors: []
 standards:
-  - "ISO-19011:2018 audit-trail requisition-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls four-eyes"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -69,7 +71,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "bd14408e-c2a1-805d-a96f-b01ef1689ad3"
+  computationUuid: "32d5a448-7f9e-809a-9052-039f6364408f"
   stages:
     - stage: path
       stageUuid: "c2e89d2a-b5e8-81cb-9429-458353f2337d"
@@ -80,11 +82,11 @@ signatures:
     - stage: links
       stageUuid: "dde586d1-1224-8a90-b83e-bfb6f3ce82f2"
     - stage: horo
-      stageUuid: "063f53d0-4d97-809c-885f-619ba86340c1"
+      stageUuid: "e6e97bf8-743b-8a95-8232-b0613b5d3456"
     - stage: seal
       stageUuid: "1d544be2-e1da-86bd-b8a3-901d65272e17"
     - stage: uuid
-      stageUuid: "12cbac37-20c7-828a-bb3e-a46cfdb0aef1"
+      stageUuid: "4ab0bdcc-ca6c-8289-9e8b-00166bde00e0"
 version: 2
 ---
 # purchase-requisitions

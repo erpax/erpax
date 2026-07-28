@@ -1,11 +1,11 @@
 ---
 name: "359"
 description: "Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control."
-atomPath: nist/incits/359
-coordinate: nist/incits/359 · 2/share · a94eb8b8
-contentUuid: "0e096b65-1ceb-54db-a366-ffd67943b834"
-diamondUuid: "5189cf05-1bdf-84f3-a9ee-90f592331827"
-uuid: "a94eb8b8-b3cd-8007-9482-a5a4ca557dfe"
+atomPath: "nist/incits/359"
+coordinate: "nist/incits/359 · 2/share · c8d515b3"
+contentUuid: "2531ca9b-867c-517b-8272-6c5e412358ba"
+diamondUuid: "7aed25f2-44ae-8015-a48b-e955aae93f75"
+uuid: "c8d515b3-737d-8f01-aacd-a28d827ce323"
 horo: 2
 bonds:
   in: []
@@ -17,19 +17,22 @@ typography:
   neighbors: []
 standards:
   - "NIST INCITS-359-2012 role-based-access-control"
+  - "NIST INCITS-359-2012 role-based-access-control`"
   - "NIST SP-800-162 attribute-based-access-control"
+  - "NIST SP-800-162 attribute-based-access-control`"
   - "NIST-INCITS-359-2012"
   - "NIST-SP-800-162"
   - "SOC-2 CC6.1 logical-access-controls"
   - "SOC-2 CC6.3 access-removal"
   - "SOX §404 internal-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
   matrix: []
   backlinks: []
 signatures:
-  computationUuid: "1b175fb4-b7bc-8af6-85db-b5bbe87bed7a"
+  computationUuid: "d0f22f90-1f3a-8bf6-bd5b-7c7a9404d671"
   stages:
     - stage: path
       stageUuid: "0e9bb9a2-627a-8ca4-8e8c-ec3b6a75c51a"
@@ -40,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "322a47fc-d091-85aa-b017-340427463f17"
     - stage: horo
-      stageUuid: "9b810857-f2b1-8305-a6b6-648975a2b77c"
+      stageUuid: "36d60d0d-4ae5-8d56-930c-1c32a053e619"
     - stage: seal
       stageUuid: "cbbb38f4-a2f8-8116-8fdb-4603e613f8c1"
     - stage: uuid
-      stageUuid: "fd041e69-0dd5-8295-a8ef-7f2fa746e191"
+      stageUuid: "273b6df5-ea35-8274-9360-12d6370203f8"
 version: 2
 ---
 # NIST INCITS 359 — Role-Based Access Control

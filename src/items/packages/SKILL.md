@@ -1,11 +1,11 @@
 ---
 name: packages
 description: "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment."
-atomPath: items/packages
-coordinate: items/packages · 4/weave · 14aa72e1
-contentUuid: "cec27954-cd11-57ec-bc56-fb89d49d86da"
-diamondUuid: "cbf40205-2216-877c-97f8-c93b9b47a2a2"
-uuid: "14aa72e1-bdee-8667-b964-e8ff3ca37414"
+atomPath: "items/packages"
+coordinate: "items/packages · 4/weave · 0265a2a5"
+contentUuid: "963b5fb9-021b-53a8-97ac-ddd5f0b44056"
+diamondUuid: "7f12c6fb-9ba5-83ca-b4f7-146208f4fbed"
+uuid: "0265a2a5-4038-8ac4-b830-1d6c18df0f8f"
 horo: 4
 bonds:
   in:
@@ -33,16 +33,15 @@ typography:
   bondDegree: 27
   neighbors: []
 standards:
-  - "EU-2014/55"
-  - "EU-537/2014"
-  - "EU-910/2014"
   - "GS1 General Specifications AI(00) SSCC serial-shipping-container-code"
   - GS1 Logistic Label
-  - "ISO-19011:2018 audit-trail packing-evidence"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "ISO/IEC 15459-1:2014 unique-identification transport-units"
+  - "ISO/IEC 15459-1:2014 unique-identification transport-units`"
   - "UN-CEFACT"
   - "UN/CEFACT Recommendation 21 packaging-codes"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -74,7 +73,7 @@ neighbors:
     - shipments
     - standard
 signatures:
-  computationUuid: "8413312f-3518-8e71-ad5a-50255ae7f9ca"
+  computationUuid: "95016987-b27f-840c-aef4-705d7abe8274"
   stages:
     - stage: path
       stageUuid: "8ea3744e-cdbf-8fe2-bf73-27dfdf390c3c"
@@ -85,11 +84,11 @@ signatures:
     - stage: links
       stageUuid: "f943572b-3056-8ee6-afb4-424b3fa8d926"
     - stage: horo
-      stageUuid: "6502e723-c9a5-8fb4-82c4-e0072a35e8cf"
+      stageUuid: "cd44a889-b280-8522-957e-bed3f49a7b7a"
     - stage: seal
       stageUuid: "081d58aa-fd09-87d9-9fb9-eb4d41bb2be6"
     - stage: uuid
-      stageUuid: "50a5f1aa-d957-855d-b6d1-35001dbea03e"
+      stageUuid: "3215bb3b-9697-88a6-a059-86b20fbf661a"
 version: 2
 ---
 # packages

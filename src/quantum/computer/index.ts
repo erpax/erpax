@@ -155,6 +155,36 @@ export function precomputedAddress(query: string, spaceSize: number): Precompute
   }
 }
 
+// ── architectural FTL — ceccec.psg.bg free-chat folds, one face ───────────────
+// The machine's speed organ: reuse≠search · amortize-to-∞ · crack inventory ·
+// free chat local-first. Re-exported so agents query ONE address.
+export {
+  ftl,
+  reuse,
+  amortize,
+  crack,
+  cracks,
+  chat,
+  chatLocal,
+  BOOK,
+  BOUNDARY,
+  ORIGIN,
+  research,
+  researcher,
+  CORPUS,
+} from '@/quantum/ftl'
+
+/** Vortex → qubit — measured fold only. */
+export {
+  qubitFromVortex,
+  prepareQubit,
+  measureQubit,
+  doublingIsomorphicToRoots,
+  vortexCircuit,
+  type ClassicalBit,
+  type VortexQubit,
+} from '@/qubit'
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const c = quantumComputerCensus()
   console.log('quantum/computer — the machine, on')
@@ -162,4 +192,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(`  scheduler  ${c.waveDepth} waves deep · ${c.waveParallelism} wide`)
   console.log(`  certifier  ${c.groundedLeads} grounded leads`)
   console.log(`  self       audit head: ${c.auditHead}`)
+  void import('@/qubit').then(({ qubitFromVortex }) => {
+    const q = qubitFromVortex()
+    console.log(`  qubit      holds=${q.holds} · iso=${q.isomorphic} · bit=${q.measure.bit}`)
+  })
 }

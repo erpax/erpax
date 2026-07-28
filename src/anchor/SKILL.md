@@ -2,11 +2,11 @@
 name: anchor
 description: "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts."
 atomPath: anchor
-coordinate: anchor · 7/descent · 5ffc970f
-contentUuid: "a62ca1a4-f6c6-51c2-818f-52e8bde1e369"
-diamondUuid: "4f44dff1-e5b6-8911-bf79-77e269a351ea"
-uuid: "5ffc970f-8154-8317-b216-7094c8e6e797"
-horo: 7
+coordinate: "anchor · 2/share · 7d84dcfc"
+contentUuid: "26c7b15b-22b7-58d7-aefe-1f9f84015159"
+diamondUuid: "537d6584-85cc-83e3-b8d4-b336585e8484"
+uuid: "7d84dcfc-b3bc-8cc3-92e5-5fbb0c2a29f8"
+horo: 2
 bonds:
   in:
     - access
@@ -86,17 +86,20 @@ bonds:
     - verification
 typography:
   partition: anchor
-  bondDegree: 119
+  bondDegree: 123
   neighbors: []
 standards:
   - "EU-2014/55"
   - "EU-537/2014"
   - "EU-910/2014"
   - "NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)"
+  - "NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)`"
   - "NIST-SP-800-57"
   - "NIST-SP-800-63"
-  - RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422
+  - "RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422"
+  - "RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422`"
   - eIDAS
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -187,22 +190,22 @@ neighbors:
     - uuid
     - verification
 signatures:
-  computationUuid: "c074dc1d-fb42-87ec-bab7-dd40d0b2414a"
+  computationUuid: "a48eed2e-1744-88cc-91a2-06c0b54395f1"
   stages:
     - stage: path
       stageUuid: "a67b8c67-2555-82a4-bf4a-6851baaa82ca"
     - stage: trinity
       stageUuid: "cfb18007-c7e0-8ddc-b6af-18dbbdbc3eae"
     - stage: boundary
-      stageUuid: "60ef0088-628e-8479-b4c5-c1b6fd78197d"
+      stageUuid: "97825268-792e-8de6-b8d3-932bf181ce90"
     - stage: links
       stageUuid: "d376d363-a49a-8306-938d-24aa184ae6e4"
     - stage: horo
-      stageUuid: "b6c2183c-cf0f-8df4-b340-e25c26ce316c"
+      stageUuid: "062a3b4b-6298-804c-88f4-8229e6449c28"
     - stage: seal
-      stageUuid: "3cb2be4b-42e3-8a09-af88-2519cc680260"
+      stageUuid: "05f9e206-43bb-8ebe-8bbb-46d89406277d"
     - stage: uuid
-      stageUuid: "483d729e-a8d6-8ded-9248-ed845545c70b"
+      stageUuid: "53ba5b5a-47a8-876b-b856-6d4192d0bb0b"
 version: 2
 ---
 # anchor — the borrowed entropy

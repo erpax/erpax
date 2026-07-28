@@ -1,44 +1,40 @@
 ---
 name: reports
 description: "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection."
-atomPath: employees/expense/reports
-coordinate: employees/expense/reports · 5/round · 33f75b6c
-contentUuid: "1d9ff766-f05c-5fb7-966e-549acc4d2652"
-diamondUuid: "63ec5f43-afa1-8e7f-a3c0-338caa690d30"
-uuid: "33f75b6c-6e8d-8b5a-a1e5-621576d6c0fb"
-horo: 5
+atomPath: "employees/expense/reports"
+coordinate: "employees/expense/reports · 4/weave · f47589d8"
+contentUuid: "97c071d0-6ecc-5d79-bcc4-63bbf47415fc"
+diamondUuid: "a5aba60c-1774-833e-8677-78cc70758207"
+uuid: "f47589d8-a610-8251-bc6f-bb515b783730"
+horo: 4
 bonds:
   in:
     - accounting
-    - employees
+    - balance
+    - debit
     - expense
-    - identity
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   out:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 typography:
   partition: employees
-  bondDegree: 29
+  bondDegree: 28
   neighbors: []
 standards:
   - "GDPR Art.5 PII receipt-images"
   - "IFRS IAS-19 employee-benefits"
   - "IFRS IAS-21 §28 fx-on-reimbursement"
-  - "ISO-19011:2018 audit-trail expense-evidence"
   - "ISO-4217:2015 currency-codes"
+  - "ISO-4217:2015 currency-codes`"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
   - "SOX §404 internal-controls four-eyes"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -51,24 +47,18 @@ neighbors:
     - transaction
   matrix:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
   backlinks:
     - accounting
-    - employees
-    - identity
+    - balance
+    - debit
     - law
-    - projects
-    - proof
-    - standard
-    - transaction
+    - path
 signatures:
-  computationUuid: "28221317-bb88-88e0-8b48-92be941beb76"
+  computationUuid: "fca32db6-4de2-85f7-a803-e4670e6a8fce"
   stages:
     - stage: path
       stageUuid: "403f2ee9-d470-8577-b33a-d3122cc50e6c"
@@ -79,11 +69,11 @@ signatures:
     - stage: links
       stageUuid: "fecec840-64b4-8347-9416-8487f4720f4b"
     - stage: horo
-      stageUuid: "7c23724d-d208-83e8-ab8a-9eb55b2eda4d"
+      stageUuid: "587b5b97-1e75-8566-ad68-8b9e0a20b9a5"
     - stage: seal
       stageUuid: "df5ad4cd-b7c3-81ec-9236-07c88fafff88"
     - stage: uuid
-      stageUuid: "16cb3f0d-b403-836c-bd50-9f57615097c9"
+      stageUuid: "66cdc35b-f5c7-8a12-a342-52d9c9d8897b"
 version: 2
 ---
 # expense-reports

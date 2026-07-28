@@ -2,11 +2,11 @@
 name: integrity
 description: "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution."
 atomPath: integrity
-coordinate: integrity · 2/share · 51a27605
-contentUuid: "339e87a9-fb91-5799-b32e-e0dd26238df7"
-diamondUuid: "f20ecacc-b9ee-8877-b618-d2c2a9fce708"
-uuid: "51a27605-f335-874e-84e3-a194994eeb86"
-horo: 2
+coordinate: "integrity · 4/weave · 370a27f2"
+contentUuid: "e32beebc-e6d7-5602-855c-29a7b73856bd"
+diamondUuid: "ec47577d-441d-801b-a7d7-cdecd287af76"
+uuid: "370a27f2-231f-8325-8224-2ba7b8dbf83f"
+horo: 4
 bonds:
   in:
     - akashic
@@ -38,6 +38,7 @@ bonds:
     - purity
     - refactor
     - replay
+    - seal
     - secret
     - society
     - standard
@@ -75,6 +76,7 @@ bonds:
     - purity
     - refactor
     - replay
+    - seal
     - secret
     - society
     - standard
@@ -84,29 +86,33 @@ bonds:
     - zeropoint
 typography:
   partition: integrity
-  bondDegree: 111
+  bondDegree: 114
   neighbors: []
 standards:
   - "EU-2014/55"
   - "EU-2016/679"
   - "EU-537/2014"
   - "EU-910/2014"
-  - "ISO-27001"
-  - "ISO/IEC-27001:2022"
+  - "ISO-19011`"
   - "NIST-FIPS-180-4"
+  - "NIST-FIPS-180-4`"
   - "NIST-SP-800-38D"
+  - "NIST-SP-800-38D`"
   - "NIST-SP-800-57"
-  - "NIST-SP-800-63"
+  - "RFC-4122"
+  - "RFC-4122`"
   - "RFC-8785"
+  - "RFC-8785`"
+  - "RFC-9562`"
   - "W3C-JSON-LD-1.1"
   - "W3C-VC-2.0"
   - eIDAS
 bindings:
-  - durable_objects/AUDIT_CHAIN_DO
-  - durable_objects/ERPAX_DO
-  - durable_objects/JOB_LOCK
-  - durable_objects/RATE_LIMITER
-  - durable_objects/TENANT_QUOTA
+  - "durable_objects/AUDIT_CHAIN_DO"
+  - "durable_objects/ERPAX_DO"
+  - "durable_objects/JOB_LOCK"
+  - "durable_objects/RATE_LIMITER"
+  - "durable_objects/TENANT_QUOTA"
 neighbors:
   wikilink:
     - akashic
@@ -152,6 +158,7 @@ neighbors:
     - purity
     - refactor
     - replay
+    - seal
     - secret
     - society
     - standard
@@ -189,6 +196,7 @@ neighbors:
     - purity
     - refactor
     - replay
+    - seal
     - secret
     - society
     - standard
@@ -197,7 +205,7 @@ neighbors:
     - upgrade
     - zeropoint
 signatures:
-  computationUuid: "1dbd1a0f-b160-8037-87ad-02d5be187412"
+  computationUuid: "54d4f7a0-c236-8273-ba11-f3080205cbf8"
   stages:
     - stage: path
       stageUuid: "d31b91cc-db18-84dd-8dcf-af4ca97c1b81"
@@ -208,11 +216,11 @@ signatures:
     - stage: links
       stageUuid: "21a6b652-eed2-8c1f-b00b-a0e48b8cfc51"
     - stage: horo
-      stageUuid: "9f532f9d-a9c6-8ce3-ba65-0d3a9cb5b822"
+      stageUuid: "928fc98b-127d-86b3-a79e-a243e1a6efc0"
     - stage: seal
-      stageUuid: "d0cbd6db-3245-80af-b12b-504bacb3e0bc"
+      stageUuid: "b79ede1e-8141-8956-ab9d-c4576b43bfc3"
     - stage: uuid
-      stageUuid: "554de61b-3209-80de-a094-c91558e74fd3"
+      stageUuid: "0756d89f-b22a-8492-91e8-ea2e0180e4e8"
 version: 2
 ---
 # integrity — the uuid is the witness; the bytes cannot lie

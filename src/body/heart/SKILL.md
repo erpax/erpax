@@ -1,11 +1,11 @@
 ---
 name: heart
 description: "Use when reasoning about the heart as an organ of [[body]] — pivot to canonical @/heart; zero duplication."
-atomPath: body/heart
-coordinate: body/heart · 2/share · 217e90e3
-contentUuid: "5925de7f-9e6a-544e-b995-6ef4a109d142"
-diamondUuid: "c7a5ff22-9fa1-864a-bfa1-72e537aa6294"
-uuid: "217e90e3-618d-8bdc-ba4b-f9c78a700f7e"
+atomPath: "body/heart"
+coordinate: "body/heart · 2/share · d77cd5c3"
+contentUuid: "6d1d13b5-a6ff-5f53-b60c-8f5bd439dfe5"
+diamondUuid: "9118ef5b-54fa-8d5e-9169-94244bf975ff"
+uuid: "d77cd5c3-e65e-8ba2-91f1-abdb90d1cdfd"
 horo: 2
 bonds:
   in:
@@ -34,6 +34,7 @@ bonds:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
@@ -64,13 +65,14 @@ bonds:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
     - writing
 typography:
   partition: body
-  bondDegree: 95
+  bondDegree: 98
   neighbors:
     - aura
 standards:
@@ -108,6 +110,7 @@ neighbors:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
@@ -138,12 +141,13 @@ neighbors:
     - recycle
     - rodin
     - sacral
+    - taichi
     - test
     - torus
     - vein
     - writing
 signatures:
-  computationUuid: "1fd0ab42-f9e8-8c9e-b223-e01236e3c922"
+  computationUuid: "4f258006-d4d9-8953-a7bc-7c32e4516362"
   stages:
     - stage: path
       stageUuid: "595b0f85-7e36-833b-a58f-57ccd14b21d2"
@@ -154,11 +158,11 @@ signatures:
     - stage: links
       stageUuid: "f6249aa3-6fc2-80d2-aa4f-3662b3b2b2ac"
     - stage: horo
-      stageUuid: "8aa340fa-fbea-8b17-9372-4e84861cf695"
+      stageUuid: "27efdff2-4b67-8fd9-adf0-bd0bc458d724"
     - stage: seal
-      stageUuid: "b9cd1ab4-db46-8343-b965-368e7198633c"
+      stageUuid: "01790a3e-fdb2-85da-9922-fb0bfad57740"
     - stage: uuid
-      stageUuid: "9e6f2f54-634e-85cc-87cb-a9cefd772736"
+      stageUuid: "d8e8306e-4c38-8e0c-81ea-7a38180b63b8"
 version: 2
 ---
 # body/heart — organ facet

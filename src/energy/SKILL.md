@@ -2,11 +2,11 @@
 name: energy
 description: "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'."
 atomPath: energy
-coordinate: energy · 4/weave · 4488466d
-contentUuid: "27c96114-fc92-5e3d-9e3f-c75d5e76382c"
-diamondUuid: "bbfa14b7-4543-842c-9e83-57510b473379"
-uuid: "4488466d-7463-84a4-a3d1-02b66f8b7b87"
-horo: 4
+coordinate: "energy · 2/share · ff177de8"
+contentUuid: "0ebf4f4b-7340-5c7c-a5c0-744e022ebfc2"
+diamondUuid: "a32c6bca-3bf2-8059-8234-116bcd2536df"
+uuid: "ff177de8-8e14-8fd3-b273-059a5df348f6"
+horo: 2
 bonds:
   in:
     - category
@@ -25,6 +25,7 @@ bonds:
     - scale
     - science
     - star
+    - taichi
     - temperature
   out:
     - category
@@ -43,10 +44,11 @@ bonds:
     - scale
     - science
     - star
+    - taichi
     - temperature
 typography:
   partition: energy
-  bondDegree: 62
+  bondDegree: 67
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -82,6 +84,7 @@ neighbors:
     - scale
     - science
     - star
+    - taichi
     - temperature
   backlinks:
     - category
@@ -100,9 +103,10 @@ neighbors:
     - scale
     - science
     - star
+    - taichi
     - temperature
 signatures:
-  computationUuid: "8ed4a488-835d-8152-8191-c3d51a1e8b66"
+  computationUuid: "948a982f-fc9f-8e64-a7ea-b88acb2987b1"
   stages:
     - stage: path
       stageUuid: "0ce98992-3572-8ba8-b572-63bc01ddd69d"
@@ -113,11 +117,11 @@ signatures:
     - stage: links
       stageUuid: "aeee91f1-94e8-83c7-9b5c-359f0caa1fc6"
     - stage: horo
-      stageUuid: "04c46f0b-4157-8e3b-8ac2-711b5db6d025"
+      stageUuid: "b0f40b90-19dc-8d5e-9ea2-07423e311a5b"
     - stage: seal
-      stageUuid: "c13ebb3f-06cd-87b3-8a9c-f33bdeb8436a"
+      stageUuid: "e1b14f1b-f0a5-88b3-a221-68915859f827"
     - stage: uuid
-      stageUuid: "5d47c225-d9ee-8962-881e-f97944f7106c"
+      stageUuid: "3960b677-f013-87cd-b9cf-286c7de379c6"
 version: 2
 ---
 # energy

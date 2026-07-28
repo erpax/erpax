@@ -1,11 +1,11 @@
 ---
 name: cost
 description: "Use when accounting the micro-USD price of a chain step against a tenant budget — estimateMicroUsd prices CPU-ms, egress and AI tokens; recordCost accrues spend and refuses once the cap is crossed; setBudget and getBudget manage the per-tenant cap."
-atomPath: beyond/cost
-coordinate: beyond/cost · 8/crest · d0052874
-contentUuid: "a76cbdc1-bd0b-570f-ad93-18bd1f47fb46"
-diamondUuid: "f0097f40-b6d5-84d9-b6e0-d53a15116ec5"
-uuid: "d0052874-a0d9-85c6-939f-702401ae2f7a"
+atomPath: "beyond/cost"
+coordinate: "beyond/cost · 8/crest · 83876fcd"
+contentUuid: "352b6bf4-50df-5edf-b80d-ec501e17c371"
+diamondUuid: "e8b740d8-09ed-89bf-8440-6f44f3799ab4"
+uuid: "83876fcd-a24a-87b2-9878-6b93749e37b1"
 horo: 8
 bonds:
   in:
@@ -98,6 +98,7 @@ bonds:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -123,6 +124,7 @@ bonds:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
   out:
     - accounting
@@ -213,6 +215,7 @@ bonds:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -238,17 +241,15 @@ bonds:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
 typography:
   partition: beyond
-  bondDegree: 440
+  bondDegree: 449
   neighbors:
     - analytics
-    - "analytics/max-tamper-cost"
     - aura
-    - diamond
-    - hallucination
-    - purity
+    - cloudflare
 standards: []
 bindings: []
 neighbors:
@@ -347,6 +348,7 @@ neighbors:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -372,6 +374,7 @@ neighbors:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
   backlinks:
     - accounting
@@ -462,6 +465,7 @@ neighbors:
     - rodin
     - science
     - scouting
+    - scratch
     - seal
     - security
     - self
@@ -487,9 +491,10 @@ neighbors:
     - unit
     - variance
     - vibration
+    - wave
     - zeropoint
 signatures:
-  computationUuid: "828c37d8-45a6-85a8-b5f3-265283da629d"
+  computationUuid: "8883e477-dffc-802d-94d0-79f2c6864ecd"
   stages:
     - stage: path
       stageUuid: "96e6a80d-76ad-8584-98cb-d60bd041fb81"
@@ -500,11 +505,11 @@ signatures:
     - stage: links
       stageUuid: "3f980a88-fb7a-84ab-ab69-805a1e2be0dc"
     - stage: horo
-      stageUuid: "823a4bb9-ead7-87eb-b07b-a84e5aad90a6"
+      stageUuid: "4fa98230-3d2d-8a36-b4cf-13c68bc9e11d"
     - stage: seal
       stageUuid: "3e826781-cf82-8883-908e-1f3cd188acfa"
     - stage: uuid
-      stageUuid: "5963315f-20e5-8f7c-8e38-fae613b75c1b"
+      stageUuid: "912547ac-73e1-891a-b175-a7d715f85aff"
 version: 2
 ---
 # beyond/cost — cost accountability per chain step

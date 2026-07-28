@@ -2,11 +2,11 @@
 name: color
 description: Use when reasoning about color — The color of the product.
 atomPath: color
-coordinate: color · 4/weave · b060a371
-contentUuid: "95f9929c-6a21-529b-9ca4-767cb4d3e5f2"
-diamondUuid: "5bbd5032-55fb-89a4-9523-bee034f4b0c8"
-uuid: "b060a371-7eac-81be-b8c7-e54e98a2fd7c"
-horo: 4
+coordinate: "color · 1/base · b98884dd"
+contentUuid: "e72219cb-e457-5f32-9ce2-41548034a99e"
+diamondUuid: "919ad89e-b0c1-8737-b1f2-6fc707b31f52"
+uuid: "b98884dd-ba1e-8ca7-ab7f-522f32915948"
+horo: 1
 bonds:
   in:
     - chart
@@ -14,6 +14,7 @@ bonds:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -27,6 +28,7 @@ bonds:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -36,7 +38,7 @@ bonds:
     - vehicle
 typography:
   partition: color
-  bondDegree: 48
+  bondDegree: 51
   neighbors: []
 standards:
   - "A432 tuning; the 7-chakra visible spectrum (Do..Ti / root..crown)"
@@ -54,6 +56,7 @@ neighbors:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -67,6 +70,7 @@ neighbors:
     - design
     - heart
     - hooks
+    - image
     - interior
     - law
     - photon
@@ -75,22 +79,22 @@ neighbors:
     - swatch
     - vehicle
 signatures:
-  computationUuid: "3dc648c9-7e7c-8e85-939b-06c2e7a37f59"
+  computationUuid: "0e94241e-6339-8ce6-a0e0-eed2fd0e5c92"
   stages:
     - stage: path
       stageUuid: "383c79e5-a6b1-81f8-86b9-5c67d713e134"
     - stage: trinity
       stageUuid: "580adacc-3b17-8405-927d-046bcf681dcc"
     - stage: boundary
-      stageUuid: "3a422aec-0a4e-8164-a3fe-e521aa12eacb"
+      stageUuid: "9f3f2e47-391b-82c9-b507-c17f79b8555e"
     - stage: links
       stageUuid: "cfb6d33e-2520-8258-87dc-d61783d2ab33"
     - stage: horo
-      stageUuid: "19949bd1-e9f8-835a-8689-54a5cbce3052"
+      stageUuid: "6e2bd928-e5ba-82ad-aa1d-f32a3be2c4ce"
     - stage: seal
-      stageUuid: "6f105864-114b-8d2c-8053-5be5182e8b35"
+      stageUuid: "98ff5470-18f6-874b-98d6-ed1b031f4fc5"
     - stage: uuid
-      stageUuid: "09cd88c8-86c6-8806-9eb5-e9b5bd8a2197"
+      stageUuid: "092a00d3-4ccf-8fe4-bdd0-73b2bd45a684"
 version: 2
 ---
 # color

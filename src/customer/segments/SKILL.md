@@ -1,12 +1,12 @@
 ---
 name: segments
 description: "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection."
-atomPath: customer/segments
-coordinate: customer/segments · 7/descent · cff6eb42
-contentUuid: "41a6ac63-f2ba-52f4-bf6f-988fb49894bc"
-diamondUuid: "fdfcc0ea-a1e7-8800-8802-7da1a51ba836"
-uuid: "cff6eb42-bb0c-8b96-a9a2-de833d63521a"
-horo: 7
+atomPath: "customer/segments"
+coordinate: "customer/segments · 2/share · aa504b3f"
+contentUuid: "b8a263f6-e295-52e6-8847-12824b8c19ce"
+diamondUuid: "42b41bfd-85a4-8fc0-b732-591b8dad69ab"
+uuid: "aa504b3f-64ce-8df1-baac-2d1a96918926"
+horo: 2
 bonds:
   in:
     - accounting
@@ -38,8 +38,9 @@ typography:
 standards:
   - "IFRS IFRS-15 §4 portfolio-practical-expedient"
   - "IFRS IFRS-8 §22 disclosure-of-segment-information"
-  - "ISO-19011:2018 audit-trail crm-segmentation"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -74,7 +75,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "7493e079-d8e0-886b-b1ed-2928c269ef88"
+  computationUuid: "0c748687-2041-8fb7-9a42-9824a1d300c7"
   stages:
     - stage: path
       stageUuid: "1c7ffcd0-9eb2-8460-8d19-ebb9cdc249ad"
@@ -85,11 +86,11 @@ signatures:
     - stage: links
       stageUuid: "5ae3b2b7-877a-8c3d-a2f4-c495142a36ce"
     - stage: horo
-      stageUuid: "97d43d5f-d2de-8751-93a9-284022014993"
+      stageUuid: "89a926a7-57e9-8609-9dfc-b9c069e0708e"
     - stage: seal
-      stageUuid: "1bcec909-4134-8230-ae6d-527605104f7f"
+      stageUuid: "fb4a6019-5ed4-81ea-89af-a298d840e048"
     - stage: uuid
-      stageUuid: "1a78211b-a7ac-8750-9959-3863da398052"
+      stageUuid: "22d04081-ff4b-814d-898c-889763fffa44"
 version: 2
 ---
 # customer-segments

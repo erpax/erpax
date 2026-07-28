@@ -2,11 +2,11 @@
 name: analytics
 description: "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them."
 atomPath: analytics
-coordinate: analytics · 2/share · 4ae3f38e
-contentUuid: "76df4872-530b-59a9-a3a0-7f027b5fd678"
-diamondUuid: "b2235c19-eb36-89f0-bef9-521490057df3"
-uuid: "4ae3f38e-f6d1-865e-a20e-b187e0358d30"
-horo: 2
+coordinate: "analytics · 5/round · 4bb8ef53"
+contentUuid: "e28a9076-4512-56c7-8317-e9a74ba66435"
+diamondUuid: "fc8efce3-6dff-803a-85ba-c014f9618235"
+uuid: "4bb8ef53-5e27-84c7-a4d1-e09a0b06560e"
+horo: 5
 bonds:
   in:
     - accounting
@@ -98,10 +98,11 @@ standards:
   - "ISO-8601-1"
   - "ISO/IEC-25010"
   - "ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects"
+  - "ISO/IEC-25010:2023 quality model — a computed read-out across quality aspects`"
   - "ISO/IEC-29119"
   - "NIST-SP-800-63"
   - "W3C-WAI-ARIA-1.2"
-  - "computed on the live uuid-matrix + balance/entropy/standards, never hand-asserted"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -170,22 +171,22 @@ neighbors:
     - typography
     - unavoidable
 signatures:
-  computationUuid: "a446f45f-f00a-86d6-87b8-717dab789c90"
+  computationUuid: "cb5c7736-4d8b-8925-a87e-74d415aa4641"
   stages:
     - stage: path
       stageUuid: "9e734818-9a0d-8503-86f7-f75d6ca272fd"
     - stage: trinity
       stageUuid: "8e3c54b7-367a-8a24-b1fc-ec4cce25ec21"
     - stage: boundary
-      stageUuid: "8a39134a-3b76-8a80-b086-55e20668793c"
+      stageUuid: "27d6d799-85b9-87fd-9f47-0efe6cbe060e"
     - stage: links
       stageUuid: "293c0ee6-1c5d-8cf5-9f00-3da2ad5a87a7"
     - stage: horo
-      stageUuid: "8980a269-731c-8cd4-bb78-0e7f35819198"
+      stageUuid: "b1519a26-59ed-8349-997a-b73380b56b54"
     - stage: seal
-      stageUuid: "f30cefaf-cd01-85ae-92ea-229750098476"
+      stageUuid: "b3e01a1d-08b1-836f-8530-effa1ed21d5f"
     - stage: uuid
-      stageUuid: "82a63495-e687-84ae-a169-9b436ff4f6ce"
+      stageUuid: "da8fcc74-fdff-8cd4-a47f-4ba561b6cb23"
 version: 2
 ---
 # analytics — the all-aspects analyzer

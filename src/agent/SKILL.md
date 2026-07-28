@@ -2,21 +2,24 @@
 name: agent
 description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
 atomPath: agent
-coordinate: agent · 8/crest · 1d6237db
-contentUuid: "e11733ce-2b6f-5bec-98d0-7e5cb352e278"
-diamondUuid: "fa1e7649-4913-8151-9c54-4ea70e1620b5"
-uuid: "1d6237db-1fbf-8f77-8aaa-89cbb83deddc"
-horo: 8
+coordinate: "agent · 5/round · 033e1014"
+contentUuid: "baeca2e4-2845-528b-936d-7fa34319be5a"
+diamondUuid: "67640e67-a27a-87fc-8a33-68fc946b13a3"
+uuid: "033e1014-bf81-88e5-86f7-86e21d62eb3c"
+horo: 5
 bonds:
   in:
     - access
+    - accounting
     - agent
     - ai
     - akashic
     - aura
     - auth
+    - baked
     - booking
     - breath
+    - capacity
     - chat
     - class
     - cloudflare
@@ -33,6 +36,7 @@ bonds:
     - entropy
     - estate
     - event
+    - fold
     - fractal
     - gate
     - generate
@@ -43,12 +47,16 @@ bonds:
     - identity
     - infectious
     - interaction
+    - inventory
     - law
     - log
     - mcp
     - merge
+    - navigation
     - observe
     - one
+    - path
+    - payload
     - real
     - receipt
     - reference
@@ -56,6 +64,9 @@ bonds:
     - research
     - reversibility
     - roles
+    - rules
+    - science
+    - seal
     - self
     - skill
     - skills
@@ -69,17 +80,22 @@ bonds:
     - unavoidable
     - users
     - uuid
+    - wave
     - whole
+    - wire
     - worker
   out:
     - access
+    - accounting
     - agent
     - ai
     - akashic
     - aura
     - auth
+    - baked
     - booking
     - breath
+    - capacity
     - chat
     - class
     - cloudflare
@@ -96,6 +112,7 @@ bonds:
     - entropy
     - estate
     - event
+    - fold
     - fractal
     - gate
     - generate
@@ -106,12 +123,16 @@ bonds:
     - identity
     - infectious
     - interaction
+    - inventory
     - law
     - log
     - mcp
     - merge
+    - navigation
     - observe
     - one
+    - path
+    - payload
     - real
     - receipt
     - reference
@@ -119,6 +140,9 @@ bonds:
     - research
     - reversibility
     - roles
+    - rules
+    - science
+    - seal
     - self
     - skill
     - skills
@@ -132,12 +156,53 @@ bonds:
     - unavoidable
     - users
     - uuid
+    - wave
     - whole
+    - wire
     - worker
 typography:
   partition: agent
-  bondDegree: 0
-  neighbors: []
+  bondDegree: 310
+  neighbors:
+    - agent
+    - ai
+    - "analytics/max-tamper-cost"
+    - aura
+    - booking
+    - capacity
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - decentralization
+    - diamond
+    - drone
+    - ecosystem
+    - estate
+    - gravity
+    - hallucination
+    - infectious
+    - interaction
+    - inventory
+    - log
+    - mcp
+    - observe
+    - purity
+    - real
+    - reference
+    - request
+    - research
+    - reversibility
+    - skill
+    - skills
+    - statistic
+    - team
+    - types
+    - unavoidable
+    - wave
+    - wire
+    - worker
 standards:
   - "EU-2018/1673"
   - "EU-2018/1725"
@@ -150,23 +215,33 @@ standards:
   - "EU-2023/956-CBAM"
   - "ILO-C001"
   - "ISO-19011"
+  - "ISO-19011`"
   - "ISO-27001"
   - "ISO/IEC-12207"
   - "ISO/IEC-25010"
+  - "ISO/IEC-25010`"
   - "ISO/IEC-27001:2022"
   - MCP
+  - "NIST SP 800-162 ABAC · OWASP-LLM-Top-10:2025 LLM01"
   - "NIST-FIPS-180-4"
+  - "NIST-SP-800-162"
+  - "NIST-SP-800-63"
+  - "OWASP-ASVS"
   - "RFC-4122"
   - "RFC-9562"
+  - "RFC-9562`"
   - SFIA
   - "W3C-ActivityPub"
 bindings: []
 neighbors:
   wikilink:
     - access
+    - accounting
+    - agent
     - akashic
     - aura
     - auth
+    - baked
     - breath
     - chat
     - contribution
@@ -176,6 +251,7 @@ neighbors:
     - duality
     - entropy
     - event
+    - fold
     - fractal
     - gate
     - generate
@@ -183,10 +259,17 @@ neighbors:
     - horo
     - identity
     - law
+    - mcp
     - merge
+    - navigation
     - one
+    - path
+    - payload
     - receipt
     - roles
+    - rules
+    - science
+    - seal
     - self
     - society
     - standard
@@ -195,16 +278,20 @@ neighbors:
     - tenants
     - users
     - uuid
+    - wave
     - whole
   matrix:
     - access
+    - accounting
     - agent
     - ai
     - akashic
     - aura
     - auth
+    - baked
     - booking
     - breath
+    - capacity
     - chat
     - class
     - cloudflare
@@ -221,6 +308,7 @@ neighbors:
     - entropy
     - estate
     - event
+    - fold
     - fractal
     - gate
     - generate
@@ -231,12 +319,16 @@ neighbors:
     - identity
     - infectious
     - interaction
+    - inventory
     - law
     - log
     - mcp
     - merge
+    - navigation
     - observe
     - one
+    - path
+    - payload
     - real
     - receipt
     - reference
@@ -244,6 +336,9 @@ neighbors:
     - research
     - reversibility
     - roles
+    - rules
+    - science
+    - seal
     - self
     - skill
     - skills
@@ -257,17 +352,22 @@ neighbors:
     - unavoidable
     - users
     - uuid
+    - wave
     - whole
+    - wire
     - worker
   backlinks:
     - access
+    - accounting
     - agent
     - ai
     - akashic
     - aura
     - auth
+    - baked
     - booking
     - breath
+    - capacity
     - chat
     - class
     - cloudflare
@@ -284,6 +384,7 @@ neighbors:
     - entropy
     - estate
     - event
+    - fold
     - fractal
     - gate
     - generate
@@ -294,12 +395,16 @@ neighbors:
     - identity
     - infectious
     - interaction
+    - inventory
     - law
     - log
     - mcp
     - merge
+    - navigation
     - observe
     - one
+    - path
+    - payload
     - real
     - receipt
     - reference
@@ -307,6 +412,9 @@ neighbors:
     - research
     - reversibility
     - roles
+    - rules
+    - science
+    - seal
     - self
     - skill
     - skills
@@ -320,25 +428,27 @@ neighbors:
     - unavoidable
     - users
     - uuid
+    - wave
     - whole
+    - wire
     - worker
 signatures:
-  computationUuid: "851b5c9e-16a3-824b-9db5-30a9bc5f1bfe"
+  computationUuid: "a5577cbd-6c13-8f67-b9ca-3b467f2181d5"
   stages:
     - stage: path
       stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
     - stage: trinity
       stageUuid: "af664f1d-7869-83a9-bc02-d8710e05dbe0"
     - stage: boundary
-      stageUuid: "1781846e-44f3-86c6-9acd-7d88b564a6dc"
+      stageUuid: "50fc9599-2cd2-866c-b250-24b2ccd2c1a2"
     - stage: links
-      stageUuid: "bec6620e-ca66-844b-ba8c-b314a384142f"
+      stageUuid: "40ed0d1e-8d92-8b1a-b6a0-e463355eed21"
     - stage: horo
-      stageUuid: "aad90ca0-dd20-825b-9fb4-9fef507960da"
+      stageUuid: "390836d1-0071-85f1-8036-e717e321cf0b"
     - stage: seal
-      stageUuid: "287db0da-1d77-8407-9349-f39626e2bc97"
+      stageUuid: "314f0044-b646-87e0-ba60-77309e790bcf"
     - stage: uuid
-      stageUuid: "13c562da-9ea0-8075-b732-9539fe52bc0a"
+      stageUuid: "23a4acc8-bded-827b-8832-2f4c4bd5cd1f"
 version: 2
 ---
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts

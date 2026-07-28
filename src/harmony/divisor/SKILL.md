@@ -1,9 +1,64 @@
 ---
 name: divisor
 description: "Use when the 432 anchor's structure must be exact — the divisor lattice C5×C4 (20 divisors) and its self-dual inversion φ(d)=432/d, where every divisor-fraction d/432 reduces to the unit fraction 1/φ(d), verified to the bit by integer arithmetic."
-atomPath: harmony/divisor
+atomPath: "harmony/divisor"
+coordinate: "harmony/divisor · 2/share · be93440c"
+contentUuid: "9699bbca-234c-50f9-a807-5bfd13565df5"
+diamondUuid: "d7ef7639-c5be-8dce-9aff-1632fa299e91"
+uuid: "be93440c-957d-8f1e-801a-34c894722978"
+horo: 2
+bonds:
+  in:
+    - harmony
+    - law
+    - rodin
+    - theorem
+  out:
+    - harmony
+    - law
+    - rodin
+    - theorem
+typography:
+  partition: harmony
+  bondDegree: 12
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - harmony
+    - law
+    - rodin
+    - theorem
+  matrix:
+    - harmony
+    - law
+    - rodin
+    - theorem
+  backlinks:
+    - harmony
+    - law
+    - rodin
+    - theorem
+signatures:
+  computationUuid: "d58e1221-fd73-8ac4-a030-769beb4d4c12"
+  stages:
+    - stage: path
+      stageUuid: "15b15981-f6b7-8eb6-8378-7dbb5533fd3c"
+    - stage: trinity
+      stageUuid: "54ec9c55-59bb-8069-a6f1-bb751f7dc1a3"
+    - stage: boundary
+      stageUuid: "f6d82634-a74d-892f-b10f-1896fd993ebc"
+    - stage: links
+      stageUuid: "1675b12e-280a-8e71-9511-f01d78018878"
+    - stage: horo
+      stageUuid: "42a0626f-f564-8721-a196-76c034eb74f9"
+    - stage: seal
+      stageUuid: "3c92be86-9929-84ad-b516-35ad8ce07903"
+    - stage: uuid
+      stageUuid: "ee7fb2ff-053a-83b5-b61f-a0a7c832fddb"
+version: 2
 ---
-
 # harmony/divisor — the 432 divisor lattice: the respected fractions, down to the bit
 
 432 = **2⁴·3³** is the A432 anchor ([[harmony]]). Its divisors, ordered by divisibility, form a lattice — and because the exponents are (4,3), that lattice is **exactly the product of chains C5 × C4**: five powers of two × four powers of three = **20 divisors**, one per coordinate (a,b), a∈0..4, b∈0..3. The count is a theorem (τ(432) = 5·4 = 20), not a measurement — none missing, none extra.

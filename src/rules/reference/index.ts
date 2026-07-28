@@ -19,6 +19,7 @@
  *
  * @standard ISO-19011:2018 §6.4 audit-evidence — the citation must lead to the evidence
  * @standard BG Наредба-Н-18 §СУПТО — the software must be documented and inspectable
+ * @standard ZDDS — BG Value Added Tax Act; statute→code traces for fiscal citations fail closed here (not prose-only under rules/)
  *
  * Composes [[rules]] · [[confirm]] · [[law]].
  */

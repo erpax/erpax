@@ -1,12 +1,12 @@
 ---
 name: closing
 description: "Use when implementing or referencing Multi-Currency Closing Standard."
-atomPath: multi/currency/closing
-coordinate: multi/currency/closing · 8/crest · b60da4bf
-contentUuid: "e136a8ef-80cb-5782-9a88-9a3f5841fb2f"
-diamondUuid: "527b84c2-9185-8984-963a-025da228db05"
-uuid: "b60da4bf-e41e-8312-98ec-0f8f38998db2"
-horo: 8
+atomPath: "multi/currency/closing"
+coordinate: "multi/currency/closing · 7/descent · a3fe5250"
+contentUuid: "f348088d-1801-53ac-83ee-f0604b172161"
+diamondUuid: "df3bf7a6-7b46-8fb4-8140-a82cc85d1396"
+uuid: "a3fe5250-53b0-8f15-983c-ca2bb6f7c222"
+horo: 7
 bonds:
   in:
     - checker
@@ -22,16 +22,22 @@ typography:
 standards:
   - "EU-2016/679"
   - "GDPR:2016/679 Art. 32 Security of processing"
+  - "GDPR:2016/679 Art. 32 Security of processing`"
   - "IFRS-21:2023 Translation of foreign operations"
+  - "IFRS-21:2023 Translation of foreign operations`"
   - "IFRS-9"
   - "IFRS-9:2023 Foreign exchange gains/losses"
+  - "IFRS-9:2023 Foreign exchange gains/losses`"
   - "ISO-4217:2023 Currency codes"
+  - "ISO-4217:2023 Currency codes`"
   - "NIST-SP-800-92"
   - "NIST-SP-800-92 Audit logging"
+  - "NIST-SP-800-92 Audit logging`"
   - "SAF-T"
   - "SAF-T:3.0.2 Standard Audit File for Tax (multi-currency)"
   - XBRL
   - "XBRL-GL General Ledger (multi-currency)"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -43,7 +49,7 @@ neighbors:
     - checker
     - law
 signatures:
-  computationUuid: "d0787cc4-1fea-8dc2-adbb-3005a8c26503"
+  computationUuid: "fd260fa1-01dd-8d9b-a366-69b942eeeb2d"
   stages:
     - stage: path
       stageUuid: "ee296f9c-14ae-88ee-b819-bc23bebfb1f0"
@@ -54,11 +60,11 @@ signatures:
     - stage: links
       stageUuid: "30df3af0-a1a0-89ff-84b6-af7314a98975"
     - stage: horo
-      stageUuid: "307a2635-062c-800d-a2fe-234e64ab2910"
+      stageUuid: "67532478-734c-8898-bde9-d3b4af30a269"
     - stage: seal
       stageUuid: "f3e26392-4109-8e84-ab19-f0edfaa5b97b"
     - stage: uuid
-      stageUuid: "a485fd0f-0436-8bc2-b3f4-a79c2b6ccc1a"
+      stageUuid: "e2438af4-badf-8529-97df-235a5b865c4d"
 version: 2
 ---
 # Multi-Currency Closing Standard

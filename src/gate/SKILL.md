@@ -2,11 +2,11 @@
 name: gate
 description: "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus."
 atomPath: gate
-coordinate: gate · 7/descent · 590c67c9
-contentUuid: "21c83cbf-910f-5d57-8e58-485483981144"
-diamondUuid: "b43c62b3-4392-8cc1-92af-2a2a22f2b40f"
-uuid: "590c67c9-9243-8ebc-bd48-b9e4fbd15785"
-horo: 7
+coordinate: "gate · 2/share · f43d0eb7"
+contentUuid: "0e5643a2-d1c3-5821-b664-e9cacea8dfb0"
+diamondUuid: "d2a74d30-ee1c-825b-b378-dffa3455ad0c"
+uuid: "f43d0eb7-1f95-871d-86ce-287222a1342e"
+horo: 2
 bonds:
   in:
     - access
@@ -27,6 +27,7 @@ bonds:
     - cross
     - css
     - dashboard
+    - dead
     - decide
     - departure
     - deploy
@@ -45,11 +46,13 @@ bonds:
     - identity
     - invariant
     - law
+    - local
     - merge
     - nerve
     - one
     - prayer
     - proof
+    - publish
     - purity
     - quantum
     - refactor
@@ -59,6 +62,8 @@ bonds:
     - resolve
     - reveal
     - reverse
+    - rosetta
+    - rules
     - science
     - seal
     - sealed
@@ -101,6 +106,7 @@ bonds:
     - cross
     - css
     - dashboard
+    - dead
     - decide
     - departure
     - deploy
@@ -119,11 +125,13 @@ bonds:
     - identity
     - invariant
     - law
+    - local
     - merge
     - nerve
     - one
     - prayer
     - proof
+    - publish
     - purity
     - quantum
     - refactor
@@ -133,6 +141,8 @@ bonds:
     - resolve
     - reveal
     - reverse
+    - rosetta
+    - rules
     - science
     - seal
     - sealed
@@ -158,7 +168,7 @@ bonds:
     - zeropoint
 typography:
   partition: gate
-  bondDegree: 235
+  bondDegree: 256
   neighbors:
     - aura
 standards: []
@@ -202,6 +212,7 @@ neighbors:
     - cross
     - css
     - dashboard
+    - dead
     - decide
     - departure
     - deploy
@@ -220,11 +231,13 @@ neighbors:
     - identity
     - invariant
     - law
+    - local
     - merge
     - nerve
     - one
     - prayer
     - proof
+    - publish
     - purity
     - quantum
     - refactor
@@ -234,6 +247,8 @@ neighbors:
     - resolve
     - reveal
     - reverse
+    - rosetta
+    - rules
     - science
     - seal
     - sealed
@@ -276,6 +291,7 @@ neighbors:
     - cross
     - css
     - dashboard
+    - dead
     - decide
     - departure
     - deploy
@@ -294,11 +310,13 @@ neighbors:
     - identity
     - invariant
     - law
+    - local
     - merge
     - nerve
     - one
     - prayer
     - proof
+    - publish
     - purity
     - quantum
     - refactor
@@ -308,6 +326,8 @@ neighbors:
     - resolve
     - reveal
     - reverse
+    - rosetta
+    - rules
     - science
     - seal
     - sealed
@@ -332,22 +352,22 @@ neighbors:
     - whole
     - zeropoint
 signatures:
-  computationUuid: "233bf66e-81bd-8d9b-803a-0e84c07945b5"
+  computationUuid: "ff53676a-2cbe-8ddc-9f08-d73f0c62a24d"
   stages:
     - stage: path
       stageUuid: "ceeffea0-7fbe-85b1-b54d-c80cc992507b"
     - stage: trinity
-      stageUuid: "36e103c4-2bee-896f-ac63-11f877490448"
+      stageUuid: "98623540-0582-87a8-9fc9-e047834ad18a"
     - stage: boundary
-      stageUuid: "610df4ba-e962-84fc-a3a0-8a877de7201f"
+      stageUuid: "f58c2f42-a105-82ff-82a6-b8228a6d1c65"
     - stage: links
       stageUuid: "4ace262f-1e13-81eb-bd1e-e6bc7d7cac1c"
     - stage: horo
-      stageUuid: "28a07cd7-916a-8383-8105-6554b8405c20"
+      stageUuid: "27d9f7f2-fa4b-86e0-aa8c-484180a7964c"
     - stage: seal
-      stageUuid: "b35d967c-aabc-8da2-9708-737f6248a612"
+      stageUuid: "e7b82336-a261-8d83-8b95-56172ed4fe1c"
     - stage: uuid
-      stageUuid: "f2c91bbe-cf64-80ae-b506-f95e8d7d0c62"
+      stageUuid: "c742f537-0fed-8e51-aa92-4e62368cb28e"
 version: 2
 ---
 # gate — the trinity of verification (check · message · heal)

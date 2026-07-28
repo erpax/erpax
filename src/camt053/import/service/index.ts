@@ -328,3 +328,13 @@ const parseStatement = (stmt: string): Camt053Statement => {
  */
 export const parseCamt053Multi = (xml: string): Camt053Statement[] =>
   extractAll(xml, 'Stmt').map(parseStatement)
+
+/** Shared by camt.054 (and siblings) — Ntry lines reuse the camt.053 entry shape. */
+export const parseCamt053Ntries = (xml: string): Camt053Transaction[] =>
+  extractAll(xml, 'Ntry')
+    .map(parseTransaction)
+    .filter((t): t is Camt053Transaction => t !== null)
+
+export const parseCamt053Account = parseAccount
+export const parseCamt053Party = parseParty
+export { extract as extractIso20022Tag, extractAll as extractIso20022All, extractAttr as extractIso20022Attr }

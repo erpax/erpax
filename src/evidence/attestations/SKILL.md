@@ -1,12 +1,12 @@
 ---
 name: attestations
 description: "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index."
-atomPath: evidence/attestations
-coordinate: evidence/attestations · 5/round · d3fe4dd3
-contentUuid: "7527be88-5969-54a4-a0d8-afd5f6edd1ed"
-diamondUuid: "32db0023-4665-8857-9696-ad912dfb555a"
-uuid: "d3fe4dd3-969a-8d78-b14b-bb7ade499a53"
-horo: 5
+atomPath: "evidence/attestations"
+coordinate: "evidence/attestations · 1/base · 4ee293ef"
+contentUuid: "79486ec7-5c52-57cf-bfb5-68556d57e27d"
+diamondUuid: "59cb353c-1c67-8ae9-9cba-e92918d5eb03"
+uuid: "4ee293ef-39de-87cc-be1f-e467e7953ec2"
+horo: 1
 bonds:
   in:
     - attestation
@@ -39,31 +39,31 @@ standards:
   - "ETSI-EN-319-142"
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile"
   - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile signature-fields"
+  - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile signature-fields`"
+  - "ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile`"
   - "EU 910/2014 eidas Art.28 qualified-electronic-signature"
   - "EU 910/2014 eidas qualified-electronic-signature"
   - "EU-2011/83"
   - "EU-2014/55"
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "EU-537/2014"
   - "EU-910/2014"
   - "EU-VAT-Implementing-Reg-282/2011"
   - "ISO-14289-1"
   - "ISO-14289-1:2014 pdf-ua-1"
+  - "ISO-14289-1:2014 pdf-ua-1`"
   - "ISO-19005"
   - "ISO-19005-2:2011 pdf-a-2"
-  - "ISO-19011"
-  - "ISO-19011:2018 audit-trail attestation-evidence"
+  - "ISO-19005-2:2011 pdf-a-2`"
   - "ISO-19011:2018 audit-trail visual-evidence"
+  - "ISO-19011:2018 audit-trail visual-evidence`"
   - "NIST FIPS-180-4 sha-256 message-digest"
+  - "NIST FIPS-180-4 sha-256 message-digest`"
   - "NIST-FIPS-180-4"
   - "RFC-5652"
   - "SOX §404 internal-controls process-walk-through"
   - "rfc-5652 cms-detached-signature"
+  - "rfc-5652 cms-detached-signature`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -96,7 +96,7 @@ neighbors:
     - proof
     - standard
 signatures:
-  computationUuid: "85dda62f-d945-8a33-bf0f-954acd8a1895"
+  computationUuid: "54a4e520-ce2c-8196-ab38-e33bd61d59d1"
   stages:
     - stage: path
       stageUuid: "43386994-5954-8894-b558-2260f4ccd0bf"
@@ -107,11 +107,11 @@ signatures:
     - stage: links
       stageUuid: "381cbbbd-e2b8-81a4-b808-d6315db084a3"
     - stage: horo
-      stageUuid: "6adc1762-c70b-8952-9c4b-aa528a5d6489"
+      stageUuid: "ee136313-8dea-8cca-87d0-c2674dd5bf7e"
     - stage: seal
       stageUuid: "3d88e974-6888-8f43-82e0-24d0119d6fd7"
     - stage: uuid
-      stageUuid: "e45b331e-e196-883c-a33c-75a26e9a43e9"
+      stageUuid: "c9c6a1c3-ebf1-8799-88db-334a0e1af2b9"
 version: 2
 ---
 # evidence-attestations

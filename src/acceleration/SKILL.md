@@ -2,10 +2,10 @@
 name: acceleration
 description: "Use when reasoning about acceleration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: acceleration
-coordinate: acceleration · 2/share · 1c7fa81d
-contentUuid: "d95a9972-ec55-5475-9cc5-d4eadd526514"
-diamondUuid: "b3b93e5c-c4bc-8ac1-8b96-8f053eac1190"
-uuid: "1c7fa81d-708c-8620-8498-f501197cbe54"
+coordinate: "acceleration · 2/share · 2431b9c2"
+contentUuid: "b590a556-cad1-555e-8adb-e6fe5761bcaa"
+diamondUuid: "0183a318-be6f-8d20-af4c-60d94b4d776a"
+uuid: "2431b9c2-f1b1-843f-be5e-fca683e7d25c"
 horo: 2
 bonds:
   in:
@@ -48,22 +48,22 @@ neighbors:
     - sti
     - time
 signatures:
-  computationUuid: "b577f325-7109-8e1b-aa13-be6569cb9306"
+  computationUuid: "49d73283-7654-8d9a-92b1-aa4e71e1bf40"
   stages:
     - stage: path
       stageUuid: "f4f59074-8eef-8da1-b99a-c5a82d021a75"
     - stage: trinity
-      stageUuid: "db91d97b-6f97-8ffa-bf0f-0e1e34240e63"
+      stageUuid: "59593235-e87a-8caf-89b3-d95d876280e5"
     - stage: boundary
-      stageUuid: "00ee33bc-94f5-891f-a1be-86e8e9c34342"
+      stageUuid: "dbd410dc-e5b7-8a36-9c3f-afa8018fd083"
     - stage: links
       stageUuid: "2aa8abcb-e2c9-8e08-acd5-27b61b09431e"
     - stage: horo
-      stageUuid: "b5676619-60e0-899f-9dc2-4e2b4684dbd8"
+      stageUuid: "0d96ed58-c7fc-8597-b9c1-2325364aaa5e"
     - stage: seal
-      stageUuid: "1bc45e7d-7b29-8a8c-b756-1ab03a851ecc"
+      stageUuid: "44c89cd4-7db9-8142-9d07-ede0c86198df"
     - stage: uuid
-      stageUuid: "85b68761-5396-87c2-ae2c-a6cde601f415"
+      stageUuid: "4c95e0f7-677a-86f3-9a44-9f6e55048927"
 version: 2
 ---
 # acceleration

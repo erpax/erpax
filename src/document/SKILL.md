@@ -2,11 +2,11 @@
 name: document
 description: "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: document
-coordinate: document · 5/round · d6e03be7
-contentUuid: "27b21c67-aabf-5b46-abdb-8b010d5ad7f4"
-diamondUuid: "33c66fc3-e1a2-8477-b2f2-86f2609a6bff"
-uuid: "d6e03be7-5574-8fe4-81ea-a7245931e435"
-horo: 5
+coordinate: "document · 1/base · 5a03a5fe"
+contentUuid: "f32da3bf-cf73-569a-ada2-a152d46357e9"
+diamondUuid: "bd45a8aa-1667-88ea-9dc3-5513ff37ba4e"
+uuid: "5a03a5fe-6223-826d-adb3-d5694665235e"
+horo: 1
 bonds:
   in:
     - acknowledgment
@@ -94,7 +94,7 @@ neighbors:
     - text
     - type
 signatures:
-  computationUuid: "050a0ec1-2a64-8896-a99a-f5d45de78678"
+  computationUuid: "3e6a4d5a-3419-8e1b-affd-f0f69ab288c6"
   stages:
     - stage: path
       stageUuid: "7d65c198-109c-8f30-bb8a-40cf6a377306"
@@ -105,11 +105,11 @@ signatures:
     - stage: links
       stageUuid: "26284b4f-414b-85a8-8582-090d8c3bba29"
     - stage: horo
-      stageUuid: "49d842d4-0e9c-874e-bf3c-10cd0ddc93ee"
+      stageUuid: "9a085ab9-8db5-8cfb-b91e-7b98bbd3cf4b"
     - stage: seal
       stageUuid: "16d236c9-24ab-85a7-9003-38b2dd444332"
     - stage: uuid
-      stageUuid: "009af275-1966-89eb-a6b6-c5d399adbd38"
+      stageUuid: "7a61f34d-0826-85ea-a341-ca923fdb28c3"
 version: 2
 ---
 # document

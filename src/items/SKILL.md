@@ -2,11 +2,11 @@
 name: items
 description: "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection."
 atomPath: items
-coordinate: items · 7/descent · b55aa460
-contentUuid: "10813e93-49f5-590a-8edc-01f5abb4cab5"
-diamondUuid: "13a13d87-4f45-8538-bacf-07e9d6fb5dbd"
-uuid: "b55aa460-556c-8600-9bab-539a0d1bdcb7"
-horo: 7
+coordinate: "items · 1/base · 17839cef"
+contentUuid: "94582fa5-5259-5ca0-a149-83c6a78e772c"
+diamondUuid: "6ffe0508-f1a1-8a92-8bca-6d5d7c554d5a"
+uuid: "17839cef-7e07-8956-b1c2-ebc3141f8f80"
+horo: 1
 bonds:
   in:
     - agriculture
@@ -78,6 +78,7 @@ typography:
   neighbors: []
 standards:
   - "EN-16931:2017 §BG-31 item-information"
+  - "EN-16931:2017 §BG-31 item-information`"
   - "EU-1007/2011 textile-fibre-names + composition-labelling (the `contents` field)"
   - "EU-2005/29"
   - "EU-2011/83"
@@ -93,12 +94,14 @@ standards:
   - "ISA-95"
   - "ISO-22400-2"
   - "ISO-4217:2015 currency-codes price-currency"
+  - "ISO-4217:2015 currency-codes price-currency`"
   - "ISO-9001"
   - "ISO-9735"
   - "UN-CEFACT"
   - "UN-CEFACT UNSPSC product-classification"
   - UNSPSC
   - "US-GAAP ASC-330 inventory"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -182,7 +185,7 @@ neighbors:
     - upsell
     - variant
 signatures:
-  computationUuid: "1f51f3a8-fae4-8755-96e9-bb580a7643b7"
+  computationUuid: "35de5f4d-0f99-8bde-bd4c-f20eae7ca612"
   stages:
     - stage: path
       stageUuid: "966285a0-056b-8fe0-94b4-9ced326c71b1"
@@ -193,11 +196,11 @@ signatures:
     - stage: links
       stageUuid: "31c384c8-dc3b-8450-828d-f1e9bbe391aa"
     - stage: horo
-      stageUuid: "430a21b0-6ccc-8838-a527-d55e64dc2eed"
+      stageUuid: "c342ec3d-5539-8ac2-a888-9641f78996e5"
     - stage: seal
       stageUuid: "cc10ed21-6c84-8c19-9834-5e61d6462f11"
     - stage: uuid
-      stageUuid: "b54c951a-7d5e-8f97-abe7-ac7178e7f80a"
+      stageUuid: "a8d22e3c-a749-840c-a843-cab17fc1f77e"
 version: 2
 ---
 # items

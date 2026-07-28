@@ -1,12 +1,12 @@
 ---
 name: events
 description: "Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log."
-atomPath: customers/sales/orders/shipments/tracking/events
-coordinate: customers/sales/orders/shipments/tracking/events · 2/share · 70f12b95
-contentUuid: "88ffb695-b290-5b69-a4c2-0ec425057305"
-diamondUuid: "c3cad3ee-706b-8d0d-944b-61bcf42c18a4"
-uuid: "70f12b95-a2cb-8500-b777-b4cd207b52f2"
-horo: 2
+atomPath: "customers/sales/orders/shipments/tracking/events"
+coordinate: "customers/sales/orders/shipments/tracking/events · 8/crest · 29af2e48"
+contentUuid: "ab4c4514-2f06-5a96-b346-90e2bd38614c"
+diamondUuid: "9b56f290-df6f-8ee9-ad18-68c49f8cf559"
+uuid: "29af2e48-42c7-8f47-9e2e-6cdfa6fb17b1"
+horo: 8
 bonds:
   in:
     - auditright
@@ -44,10 +44,11 @@ standards:
   - "IFRS IFRS-15 §38 point-in-time-revenue-recognition"
   - "INCOTERMS 2020 control-transfer-points"
   - "INCOTERMS-2020"
-  - "ISO-19011:2018 audit-trail shipment-tracking"
   - "ISO-8601-1:2019 date-time event-time"
+  - "ISO-8601-1:2019 date-time event-time`"
   - "ISO-9735"
   - "SOX §404 internal-controls delivery-evidence TOM-LOG-02"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -83,7 +84,7 @@ neighbors:
     - standard
     - sub
 signatures:
-  computationUuid: "e9baf2ff-15fc-8f57-a2a6-eb48da95dc95"
+  computationUuid: "c73be2cb-e8a7-8321-90f3-a80081567ff8"
   stages:
     - stage: path
       stageUuid: "e9e73587-5102-8618-835d-55c621eaca3b"
@@ -94,11 +95,11 @@ signatures:
     - stage: links
       stageUuid: "98460ea8-61fb-8114-b1ab-a012e7936d9f"
     - stage: horo
-      stageUuid: "8736abba-2c10-8944-99a5-e9e4e8a03eaa"
+      stageUuid: "e103b444-1613-888e-b04c-2877c27bd06f"
     - stage: seal
       stageUuid: "3e035edc-35fe-8d38-806a-fa3ee4f9989f"
     - stage: uuid
-      stageUuid: "59747034-9ac9-84ff-8e5e-81855920b4cc"
+      stageUuid: "44050a10-a1c4-82e8-85d7-3151c463033c"
 version: 2
 ---
 # tracking-events

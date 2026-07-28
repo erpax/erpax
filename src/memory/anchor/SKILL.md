@@ -1,8 +1,198 @@
 ---
 name: anchor
 description: "Use when a memory, note or doc OUTSIDE the corpus points at something inside it — anchorOf computes the target's content-uuid so the pointer can prove it is still current, and verifyAnchor reads fresh · moved · gone. A name says WHERE and rots silently; a content-address says WHAT and is derived. Run: tsx src/memory/anchor/index.ts <path…>"
+atomPath: "memory/anchor"
+coordinate: "memory/anchor · 7/descent · 73f919aa"
+contentUuid: "52b8fe46-fc57-51ce-a4df-860d43f870ce"
+diamondUuid: "141baf04-9c35-86fd-9706-5cbf00432cf4"
+uuid: "73f919aa-fda7-8554-99a2-29497f8ab1a3"
+horo: 7
+bonds:
+  in:
+    - access
+    - anchoring
+    - angel
+    - aura
+    - barrier
+    - blockchain
+    - cloning
+    - conservation
+    - cost
+    - deploy
+    - development
+    - entropy
+    - finality
+    - fusion
+    - history
+    - identity
+    - law
+    - memory
+    - merge
+    - patent
+    - power
+    - projection
+    - proof
+    - purity
+    - reality
+    - relocate
+    - research
+    - self
+    - standard
+    - statements
+    - surprisal
+    - sustainability
+    - tamper
+    - torus
+    - trading
+    - unavoidable
+    - uuid
+    - verification
+  out:
+    - access
+    - anchoring
+    - angel
+    - aura
+    - barrier
+    - blockchain
+    - cloning
+    - conservation
+    - cost
+    - deploy
+    - development
+    - entropy
+    - finality
+    - fusion
+    - history
+    - identity
+    - law
+    - merge
+    - patent
+    - power
+    - projection
+    - proof
+    - purity
+    - reality
+    - relocate
+    - research
+    - self
+    - standard
+    - statements
+    - surprisal
+    - sustainability
+    - tamper
+    - torus
+    - trading
+    - unavoidable
+    - uuid
+    - verification
+typography:
+  partition: memory
+  bondDegree: 123
+  neighbors: []
+standards:
+  - "RFC 9562 §5.8 — uuidv8 content-uuid"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+    - memory
+    - merge
+    - uuid
+  matrix:
+    - access
+    - anchoring
+    - angel
+    - aura
+    - barrier
+    - blockchain
+    - cloning
+    - conservation
+    - cost
+    - deploy
+    - development
+    - entropy
+    - finality
+    - fusion
+    - history
+    - identity
+    - law
+    - merge
+    - patent
+    - power
+    - projection
+    - proof
+    - purity
+    - reality
+    - relocate
+    - research
+    - self
+    - standard
+    - statements
+    - surprisal
+    - sustainability
+    - tamper
+    - torus
+    - trading
+    - unavoidable
+    - uuid
+    - verification
+  backlinks:
+    - access
+    - anchoring
+    - angel
+    - aura
+    - barrier
+    - blockchain
+    - cloning
+    - conservation
+    - cost
+    - deploy
+    - development
+    - entropy
+    - finality
+    - fusion
+    - history
+    - identity
+    - law
+    - merge
+    - patent
+    - power
+    - projection
+    - proof
+    - purity
+    - reality
+    - relocate
+    - research
+    - self
+    - standard
+    - statements
+    - surprisal
+    - sustainability
+    - tamper
+    - torus
+    - trading
+    - unavoidable
+    - uuid
+    - verification
+signatures:
+  computationUuid: "6dabf2d9-3e30-84df-bd5c-11b6d21276be"
+  stages:
+    - stage: path
+      stageUuid: "46701383-7bb2-8bde-baf9-9df2dc4f2f98"
+    - stage: trinity
+      stageUuid: "c07ea929-9d19-8802-ad9d-580d8e05ae6e"
+    - stage: boundary
+      stageUuid: "4a6e3d85-f1a9-8247-b44c-26403de37d94"
+    - stage: links
+      stageUuid: "58076480-0270-8ff4-9b73-23745d0a5cc6"
+    - stage: horo
+      stageUuid: "64d36506-3f9e-81a2-94c4-1412f7b39549"
+    - stage: seal
+      stageUuid: "28f4173d-50f5-8ce8-9df2-934c623de954"
+    - stage: uuid
+      stageUuid: "d4a63987-6577-8086-9b46-9d30e0553230"
+version: 2
 ---
-
 # anchor — the content-address is what links inside and outside, both ways
 
 An agent's memory lives **outside** (`~/.claude/projects/<project>/memory/`). The corpus lives **inside**. They are **duals, not copies**:

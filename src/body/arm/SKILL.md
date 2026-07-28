@@ -1,26 +1,25 @@
 ---
 name: arm
 description: "Use when reasoning about arm as an anatomical part of [[body]] — vocabulary pivot to @/arm; nested not duplicated."
-atomPath: body/arm
-coordinate: body/arm · 4/weave · e5faa9ac
-contentUuid: "e8af14e4-27da-5680-9e5b-b3bdca242dd4"
-diamondUuid: "6ec7486d-0c78-8c29-aff4-7532bdea654f"
-uuid: "e5faa9ac-dd6f-8dd1-9e2a-0657027f054d"
-horo: 4
+atomPath: "body/arm"
+coordinate: "body/arm · 7/descent · 193100f0"
+contentUuid: "6ce2df27-3fb4-5061-9bf0-b4bf0c9742ed"
+diamondUuid: "7db130ab-423d-81d6-a4a6-f3cf2a4d5209"
+uuid: "193100f0-41c4-8b80-95e8-314581db6f46"
+horo: 7
 bonds:
   in:
+    - anatomy
     - arm
     - body
-    - collapse
     - law
     - merge
-    - sti
   out:
+    - anatomy
     - arm
-    - collapse
+    - body
     - law
     - merge
-    - sti
 typography:
   partition: body
   bondDegree: 21
@@ -36,19 +35,19 @@ neighbors:
     - law
     - merge
   matrix:
+    - anatomy
     - arm
-    - collapse
+    - body
     - law
     - merge
-    - sti
   backlinks:
+    - anatomy
     - arm
-    - collapse
+    - body
     - law
     - merge
-    - sti
 signatures:
-  computationUuid: "db5b2914-e043-8897-b503-54532abd4153"
+  computationUuid: "483e08a7-3c3d-86c2-b70a-7526971c622f"
   stages:
     - stage: path
       stageUuid: "ccc7df98-0451-86b2-90b3-809fa7d04927"
@@ -59,11 +58,11 @@ signatures:
     - stage: links
       stageUuid: "7d4441cb-d59b-8c30-bc3d-926c0ee7b9f1"
     - stage: horo
-      stageUuid: "b3077eb5-07cc-8335-ba0f-f10142d7dbb0"
+      stageUuid: "ac640fee-60f9-841b-9ae4-8dcf13d90728"
     - stage: seal
-      stageUuid: "0693a866-3872-8e89-8138-b1d188870257"
+      stageUuid: "e27d31fe-b00c-8a86-9036-e2f0bef5c893"
     - stage: uuid
-      stageUuid: "5640ec4f-004c-8f36-9f99-230753d0f3b1"
+      stageUuid: "c10ed570-86be-8cf7-aeee-73bd708a08ce"
 version: 2
 ---
 # body/arm — anatomical part

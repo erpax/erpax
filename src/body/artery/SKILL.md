@@ -1,12 +1,12 @@
 ---
 name: artery
 description: "Use when reasoning about the artery as an organ of [[body]] — pivot to canonical @/artery; zero duplication."
-atomPath: body/artery
-coordinate: body/artery · 1/base · bd8297b6
-contentUuid: "1c3b4706-7134-54df-b522-54d83755ec48"
-diamondUuid: "a3881fad-b3a6-86b0-8e5e-0fbf25d30267"
-uuid: "bd8297b6-cfb5-803c-b5c4-73d650f26933"
-horo: 1
+atomPath: "body/artery"
+coordinate: "body/artery · 7/descent · bae922a0"
+contentUuid: "3208126a-872a-5132-949e-239292d06784"
+diamondUuid: "527347ac-25e6-8638-96bf-262bc7e38275"
+uuid: "bae922a0-e51b-8f23-b9d0-a484d7f7fb7b"
+horo: 7
 bonds:
   in:
     - artery
@@ -54,7 +54,7 @@ neighbors:
     - law
     - vein
 signatures:
-  computationUuid: "a3340477-8f0f-81a9-b2c6-38c09da71f6e"
+  computationUuid: "64a5169f-1187-88e5-b265-e0e61fcf386c"
   stages:
     - stage: path
       stageUuid: "bcaba82e-025a-8cd8-9ce0-147268174ecf"
@@ -65,11 +65,11 @@ signatures:
     - stage: links
       stageUuid: "799ddca0-62cc-8b06-b7c4-a809d69aa6dd"
     - stage: horo
-      stageUuid: "9835e2a9-cf1d-815a-84d9-deaa59cc21df"
+      stageUuid: "e60a39b2-1a82-86f0-a1f9-1d5848d5f4a1"
     - stage: seal
-      stageUuid: "6cfe9690-02a4-84a1-8859-06197d2c9605"
+      stageUuid: "d853fb4b-190f-810d-ac6d-cb2fbb96b4b9"
     - stage: uuid
-      stageUuid: "e19a01fb-abfd-8009-a5d7-3179540ac427"
+      stageUuid: "636252df-75fc-81c3-a32f-f95253529f43"
 version: 2
 ---
 # body/artery — organ facet

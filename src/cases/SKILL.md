@@ -2,11 +2,11 @@
 name: cases
 description: "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket."
 atomPath: cases
-coordinate: cases · 5/round · b20b0cda
-contentUuid: "c12acaf1-6695-5462-8586-4e73e4a3865d"
-diamondUuid: "89c21c2f-788d-8364-b03c-6d0e865cf21a"
-uuid: "b20b0cda-a2aa-84ea-a000-247d6404302f"
-horo: 5
+coordinate: "cases · 2/share · af614e6a"
+contentUuid: "be0cbef9-c423-5467-8f00-666842ae335f"
+diamondUuid: "19b27015-7acd-8387-afef-2f344d87d9c9"
+uuid: "af614e6a-91bd-8cb0-8720-001bb0112777"
+horo: 2
 bonds:
   in:
     - access
@@ -57,18 +57,12 @@ typography:
   bondDegree: 63
   neighbors: []
 standards:
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "ISA-500"
-  - "ISO-19011"
   - "ISO-19011:2018 ISA-500 evidence chain-of-custody append-only"
-  - "ISO-19011:2018 audit-trail file·hear·rule·seal"
+  - "ISO-19011:2018 ISA-500 evidence chain-of-custody append-only`"
   - "UBL-2.1"
   - "UN-COFOG-03 public-order-and-safety law-courts"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -136,7 +130,7 @@ neighbors:
     - standard
     - transaction
 signatures:
-  computationUuid: "6074fdee-7237-8544-9532-1b3a6c0a886f"
+  computationUuid: "962095bd-1bd0-8e2d-b429-1580dc327116"
   stages:
     - stage: path
       stageUuid: "d0e42baa-d4ec-8283-a35c-b360e4d912c4"
@@ -147,11 +141,11 @@ signatures:
     - stage: links
       stageUuid: "1cdd47b2-6d97-8d4c-8f62-b3b76c1eca29"
     - stage: horo
-      stageUuid: "23c69f84-8b69-885e-bb15-cebe71d1e1aa"
+      stageUuid: "dd349c90-8b09-812a-96e7-ad9dacec6293"
     - stage: seal
-      stageUuid: "8c77049f-077f-87c7-b8b3-fe24aa55ca29"
+      stageUuid: "7239fbbd-1522-87a8-af0c-a83b363fa2ad"
     - stage: uuid
-      stageUuid: "953c91fa-de6d-884f-89cd-236652d69da0"
+      stageUuid: "966f2599-c613-8cdd-bb35-ba2854ca445b"
 version: 2
 ---
 # Cases

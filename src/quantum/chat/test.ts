@@ -344,3 +344,51 @@ describe('quantum/chat — superpose: one uuid, many types at once, sealed, reve
     expect(s.asBits).toBe(ERPAX_DIGEST_BITS)
   })
 })
+
+describe('quantum/chat — free chat at architectural FTL (ceccec.psg.bg)', () => {
+  it('chatFreeAsk folds a local sealed answer into the session at tokens=0', async () => {
+    const { startSession, chatFreeAsk, BOUNDARY } = await import('@/quantum/chat')
+    const s0 = startSession('ftl')
+    const { session, answer } = await chatFreeAsk(s0, 'what is ftl', { escalate: false })
+    expect(answer.lane).toBe('seal')
+    expect(answer.tokens).toBe(0)
+    expect(answer.reused).toBe(true)
+    expect(session.messageUuids.length).toBe(s0.messageUuids.length + 1)
+    expect(session.thread).not.toBe(s0.thread)
+    expect(BOUNDARY.spacetime).toBe(0)
+  })
+
+  it('chatDeepResearchFree runs sealed deep research at cost=0 and folds a receipt', async () => {
+    const { startSession, chatDeepResearchFree } = await import('@/quantum/chat')
+    const s0 = startSession('deep-free')
+    const { session, research } = await chatDeepResearchFree(
+      s0,
+      ['what is ftl', 'research'],
+      { depth: 2 },
+    )
+    expect(research.cost).toBe(0)
+    expect(research.tokens).toBe(0)
+    expect(research.efficiency).toBe(Infinity)
+    expect(research.findings.length).toBeGreaterThanOrEqual(2)
+    expect(session.messageUuids.length).toBe(s0.messageUuids.length + 1)
+  })
+
+  it('chatStandardsImproveFtl lets standards chat and improve to FTL at cost=0', async () => {
+    const { startSession, chatStandardsImproveFtl } = await import('@/quantum/chat')
+    const s0 = startSession('standards-ftl')
+    const { session, report } = await chatStandardsImproveFtl(s0, {
+      usesLinearScan: false, // FTL applied — address index is the default
+      ungatedMandatoryIds: ['SOX:2002'],
+      research: true,
+      depth: 1,
+    })
+    expect(report.cost).toBe(0)
+    expect(report.tokens).toBe(0)
+    expect(report.efficiency).toBe(Infinity)
+    expect(report.holds).toBe(true)
+    expect(report.answered).toBeGreaterThan(0)
+    expect(session.thread).not.toBe(s0.thread)
+    // linear-scan crack absent when usesLinearScan=false
+    expect(report.gaps.some((g) => g.kind === 'scan')).toBe(false)
+  })
+})

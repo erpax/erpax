@@ -1,11 +1,11 @@
 ---
 name: suggestions
 description: "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection."
-atomPath: ai/suggestions
-coordinate: ai/suggestions · 7/descent · af32093e
-contentUuid: "b19d76d7-c8bb-59cf-8a8a-e30a7cd774d0"
-diamondUuid: "ac92eef5-98d1-8a69-a07a-ffd24ae93381"
-uuid: "af32093e-05c9-8651-adbb-68b9d34f7276"
+atomPath: "ai/suggestions"
+coordinate: "ai/suggestions · 7/descent · 0c42a2a1"
+contentUuid: "22d16ea2-a98c-59ea-bd15-461c2753e101"
+diamondUuid: "acf918ad-6573-8e01-8aa0-e687d0f2e7a9"
+uuid: "0c42a2a1-7839-863b-8529-ed1e4b8caf0a"
 horo: 7
 bonds:
   in:
@@ -43,18 +43,23 @@ standards:
   - "GDPR Art.22 automated-individual-decision-making"
   - "GDPR Art.22(3) right-to-human-intervention"
   - "ILO-C001"
-  - "ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail"
   - "ISO-8601-1"
   - "ISO-8601-1:2019 date-time inference-time"
+  - "ISO-8601-1:2019 date-time inference-time`"
   - "ISO/IEC 23894:2023 ai-risk-management"
+  - "ISO/IEC 23894:2023 ai-risk-management`"
   - "ISO/IEC 42001:2023 ai-management-system"
+  - "ISO/IEC 42001:2023 ai-management-system`"
   - "ISO/IEC-23894"
   - "ISO/IEC-42001"
   - "NIST AI-RMF-1.0 ai-risk-management-framework"
+  - "NIST AI-RMF-1.0 ai-risk-management-framework`"
   - "NIST-AI-RMF"
   - "RFC-9562"
   - "SOX §404 internal-controls ai-assisted-decision TOM-AI-01"
   - "rfc-9562 uuid suggestion-id"
+  - "rfc-9562 uuid suggestion-id`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -82,7 +87,7 @@ neighbors:
     - users
     - uuid
 signatures:
-  computationUuid: "9b4a44c4-b54e-85cf-b962-c45cf9e99b05"
+  computationUuid: "d2b90816-8d03-81c0-9f56-21bd04453aea"
   stages:
     - stage: path
       stageUuid: "3c06436e-b3fb-8511-a3a0-62d905fcab0b"
@@ -93,11 +98,11 @@ signatures:
     - stage: links
       stageUuid: "ca14180c-045f-8e6c-904b-e270b3d207a0"
     - stage: horo
-      stageUuid: "90ec16ba-045f-8d30-8203-a3b1b77cf97c"
+      stageUuid: "54ef2620-f968-81ee-82a2-afed7110d92d"
     - stage: seal
-      stageUuid: "5da4655c-ce48-8701-9110-7d87fcc3f169"
+      stageUuid: "ae0af0cd-2dc4-8a12-9711-71b9604b1a35"
     - stage: uuid
-      stageUuid: "f6119fbc-4666-83b7-996e-bc61a5776c87"
+      stageUuid: "5670986e-9bdd-8741-87de-28ffabc74619"
 version: 2
 ---
 # ai-suggestions

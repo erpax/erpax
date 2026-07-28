@@ -1,12 +1,12 @@
 ---
 name: blood
 description: "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication."
-atomPath: body/blood
-coordinate: body/blood · 7/descent · a58ee9f1
-contentUuid: "d97ae160-27ec-541e-a075-e457e2162a14"
-diamondUuid: "1c5320ed-baea-8479-83bf-0487a563155c"
-uuid: "a58ee9f1-6b06-815c-b3e6-069f2623cc66"
-horo: 7
+atomPath: "body/blood"
+coordinate: "body/blood · 4/weave · 6adb31f8"
+contentUuid: "04f1f296-42a7-57a3-bd0a-5c677201a534"
+diamondUuid: "046a5d1a-629a-856e-8117-af3c3eff992c"
+uuid: "6adb31f8-1245-8560-8ef3-a573ac8397b7"
+horo: 4
 bonds:
   in:
     - blood
@@ -70,7 +70,7 @@ neighbors:
     - supply
     - test
 signatures:
-  computationUuid: "e47db463-67fd-857e-bd41-0035db493a0f"
+  computationUuid: "c46b6954-430b-8ecc-afc4-b93bfc9ca436"
   stages:
     - stage: path
       stageUuid: "a4c3c220-0179-80fe-80dc-78145d3ff579"
@@ -81,11 +81,11 @@ signatures:
     - stage: links
       stageUuid: "ed0d6b89-eaa9-8d88-886b-53654b8546f5"
     - stage: horo
-      stageUuid: "bf47a04c-a675-87e3-831f-f44645187d8c"
+      stageUuid: "e263684f-bfb9-893d-83e2-85eff8bc8f38"
     - stage: seal
-      stageUuid: "1f0b5523-c5c8-8517-a37d-6c4a8d279099"
+      stageUuid: "41e91193-a6ef-8abf-8247-a35f090afffc"
     - stage: uuid
-      stageUuid: "dad0a524-538c-8b50-be82-e0ec5780dde5"
+      stageUuid: "3d69f589-1a45-8c85-85c6-c08d7a085bc1"
 version: 2
 ---
 # body/blood — organ facet

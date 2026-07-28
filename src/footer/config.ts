@@ -5,7 +5,7 @@
  * @standard W3C HTML5 footer-element
  * @standard WAI-ARIA 1.2 contentinfo-landmark-role
  * @standard BCP-47 language-tag
- * @see src/components/README.md
+ * @see src/footer/config.ts
  * @see docs/STANDARDS.md §3
  */
 
@@ -35,7 +35,7 @@ export const Footer: GlobalConfig = {
       admin: {
         initCollapsed: true,
         components: {
-          RowLabel: '@/components/Footer/RowLabel#RowLabel',
+          RowLabel: '@/footer/RowLabel#RowLabel',
         },
       },
     },

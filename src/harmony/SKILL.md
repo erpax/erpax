@@ -2,11 +2,11 @@
 name: harmony
 description: "Use when checking whether an interval — or a whole band of horo positions — is consonant. The seven positions ARE the diatonic scale (just intonation over the A432 anchor); harmony is the smallness of the ratio (Tenney height). The harmony-check the horo state-bands need. Matter-twin harmony/index.ts."
 atomPath: harmony
-coordinate: harmony · 5/round · 987ff413
-contentUuid: "2d1ac524-5395-5841-aa02-cfdc4082d651"
-diamondUuid: "c5d7bcc7-b9a4-8923-bebd-ee7baba7ce1f"
-uuid: "987ff413-bb42-85b7-ac24-e46c5bef9543"
-horo: 5
+coordinate: "harmony · 4/weave · f6321c99"
+contentUuid: "7df8279d-2c38-50e4-8289-aeb3ccd7d2d5"
+diamondUuid: "078144be-ed0c-8b1c-a3a1-c649c9b46612"
+uuid: "f6321c99-2990-80f4-9178-de8903b84217"
+horo: 4
 bonds:
   in:
     - akashic
@@ -29,6 +29,7 @@ bonds:
     - decide
     - deploy
     - diamond
+    - divisor
     - drone
     - duality
     - equilibrium
@@ -95,6 +96,7 @@ bonds:
     - decide
     - deploy
     - diamond
+    - divisor
     - drone
     - duality
     - equilibrium
@@ -142,10 +144,9 @@ bonds:
     - wisdom
 typography:
   partition: harmony
-  bondDegree: 199
+  bondDegree: 202
   neighbors: []
 standards:
-  - "harmony-checked horo bands (the horo state-ring law)"
   - "just intonation (5-limit) — the perfect (1:1, 2:1, 3:2, 4:3) and"
 bindings: []
 neighbors:
@@ -186,6 +187,7 @@ neighbors:
     - decide
     - deploy
     - diamond
+    - divisor
     - drone
     - duality
     - equilibrium
@@ -252,6 +254,7 @@ neighbors:
     - decide
     - deploy
     - diamond
+    - divisor
     - drone
     - duality
     - equilibrium
@@ -298,7 +301,7 @@ neighbors:
     - war
     - wisdom
 signatures:
-  computationUuid: "aeaa4f8a-36d7-87e6-a4bd-75650ea2c1b7"
+  computationUuid: "cca570a8-8ac0-800e-8291-e6c5fe7fe5e3"
   stages:
     - stage: path
       stageUuid: "a3475376-b251-8de8-998e-68bac6c1bc30"
@@ -309,11 +312,11 @@ signatures:
     - stage: links
       stageUuid: "7efc59a6-a676-84b0-838c-3abbeb756174"
     - stage: horo
-      stageUuid: "8fb215b9-f11f-89d0-9728-3a7ade9cf585"
+      stageUuid: "a14b5d77-4989-8b6f-8224-53c490dd1746"
     - stage: seal
-      stageUuid: "7d6c18e3-5f53-83cb-ae33-5b7123cb1ea2"
+      stageUuid: "c0116a4c-ee7b-8ab0-ab43-34a225b20b75"
     - stage: uuid
-      stageUuid: "be773852-a962-8309-8ed8-3f608a6f7f3f"
+      stageUuid: "19d0cfaf-67d3-8e7f-b964-e211dafedeb7"
 version: 2
 ---
 # harmony — consonance over A432

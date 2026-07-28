@@ -1,32 +1,26 @@
 ---
 name: processor
 description: "Use when reasoning about processor as a part of [[computer]] — vocabulary pivot to @/processor; nested not duplicated."
-atomPath: computer/processor
-coordinate: computer/processor · 8/crest · 9eae6e0b
-contentUuid: "51d8c018-7ad7-547a-9d4b-0d95038bfff4"
-diamondUuid: "907bf452-1a93-80f6-96c3-8c4ef3ab3190"
-uuid: "9eae6e0b-3655-8781-b521-f3cb79863125"
-horo: 8
+atomPath: "computer/processor"
+coordinate: "computer/processor · 2/share · c7d6b2c7"
+contentUuid: "f5fdb130-68b8-529c-909f-ac9c86cf6065"
+diamondUuid: "2302e2fb-9c20-89a9-8530-b2bd5f1a24bf"
+uuid: "c7d6b2c7-fa8e-8c48-8487-eb75b9b89247"
+horo: 2
 bonds:
   in:
-    - collapse
+    - complexity
     - computer
     - law
-    - merge
     - processor
-    - requirements
-    - sti
   out:
-    - collapse
+    - complexity
     - computer
     - law
-    - merge
     - processor
-    - requirements
-    - sti
 typography:
   partition: computer
-  bondDegree: 24
+  bondDegree: 20
   neighbors: []
 standards:
   - "schema.org — the type vocabulary, collided to single words"
@@ -37,23 +31,17 @@ neighbors:
     - law
     - processor
   matrix:
-    - collapse
+    - complexity
     - computer
     - law
-    - merge
     - processor
-    - requirements
-    - sti
   backlinks:
-    - collapse
+    - complexity
     - computer
     - law
-    - merge
     - processor
-    - requirements
-    - sti
 signatures:
-  computationUuid: "3efb3d0d-a847-8220-8609-6b0f5d9564a1"
+  computationUuid: "88cb7837-a534-8748-8a92-2bd3b4c577e0"
   stages:
     - stage: path
       stageUuid: "5efd3750-4789-8e44-af70-a0b4aaf7dac6"
@@ -64,11 +52,11 @@ signatures:
     - stage: links
       stageUuid: "93ee8751-3509-8265-8dce-963428b1ed5f"
     - stage: horo
-      stageUuid: "c3b63ab2-b869-8074-8e1a-33c1bf54a5a7"
+      stageUuid: "3df09013-46d3-8e75-a74c-1100fd27a7e3"
     - stage: seal
-      stageUuid: "2b76ae9c-51f5-8181-9a5f-3fb225a00da7"
+      stageUuid: "23994991-db4e-8f20-8267-76e3c2316df0"
     - stage: uuid
-      stageUuid: "237178bb-603c-894b-91cb-eaaea3a150ca"
+      stageUuid: "b194ed6b-8d64-8d9d-89ea-1f4431502b71"
 version: 2
 ---
 # computer/processor — executes instructions

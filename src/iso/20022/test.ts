@@ -26,6 +26,13 @@ describe('iso/20022 — code-list guards', () => {
     expect(isChargeBearerCode('SLEV')).toBe(true)
     expect(isChargeBearerCode('shar')).toBe(false)
   })
+
+  it('isPain002TransactionStatus accepts ACCP/RJCT (bank/research develop)', async () => {
+    const { isPain002TransactionStatus } = await import('@/iso/20022')
+    expect(isPain002TransactionStatus('ACCP')).toBe(true)
+    expect(isPain002TransactionStatus('RJCT')).toBe(true)
+    expect(isPain002TransactionStatus('ZZZZ')).toBe(false)
+  })
 })
 
 describe('iso/20022 — bank transaction code shape', () => {

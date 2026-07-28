@@ -2,11 +2,11 @@
 name: diversity
 description: "Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
 atomPath: diversity
-coordinate: diversity · 1/base · 4c75680e
-contentUuid: "b8e83eba-e178-5c8d-8e37-5c0c7a61a26f"
-diamondUuid: "18e4b542-43db-8638-84b2-018e9ef9c247"
-uuid: "4c75680e-adba-82ec-b86e-fedf0e861237"
-horo: 1
+coordinate: "diversity · 7/descent · d361b881"
+contentUuid: "1bfcf966-6160-5566-9a17-beb054f7a589"
+diamondUuid: "41e5047d-d7ba-8b50-bfa8-95897a14ea5c"
+uuid: "d361b881-e3fe-8e4a-9556-d769cef64af5"
+horo: 7
 bonds:
   in:
     - collapse
@@ -34,13 +34,12 @@ bonds:
     - sustainability
 typography:
   partition: diversity
-  bondDegree: 36
+  bondDegree: 38
   neighbors: []
 standards:
   - Pielou (1966) The Measurement of Diversity in Different Types of Biological Collections
   - Shannon (1948) A Mathematical Theory of Communication — information entropy
   - "Simpson (1949) Measurement of Diversity — Nature 163:688"
-  - "computed, never hand-asserted"
   - "schema.org — the type vocabulary, collided to single words"
 bindings: []
 neighbors:
@@ -77,7 +76,7 @@ neighbors:
     - sti
     - sustainability
 signatures:
-  computationUuid: "8a607062-7cdd-856e-9dc8-11f73928f4b1"
+  computationUuid: "19a401df-9414-8855-b950-a61f7926118a"
   stages:
     - stage: path
       stageUuid: "9f49f81e-351f-86a2-b999-4c9d3cd3b5c0"
@@ -88,11 +87,11 @@ signatures:
     - stage: links
       stageUuid: "c67e6e1d-a34c-8373-b542-220a083d4917"
     - stage: horo
-      stageUuid: "73058294-44a9-8880-ab94-7643e7081c83"
+      stageUuid: "443b3b2c-d667-84cd-a352-5b1a7dbd0014"
     - stage: seal
-      stageUuid: "a48a657e-d90c-8cf5-a3f7-40bf23264622"
+      stageUuid: "870a460c-1ed6-8b78-8c5d-da478cabb81a"
     - stage: uuid
-      stageUuid: "d3f390f6-4a01-8c95-b790-93d4c48e684a"
+      stageUuid: "fa4c4d9b-5a7c-8516-b9e7-c3acaef8217f"
 version: 2
 ---
 # diversity

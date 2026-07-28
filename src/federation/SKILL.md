@@ -2,10 +2,10 @@
 name: federation
 description: "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics."
 atomPath: federation
-coordinate: federation · 1/base · e2404b71
-contentUuid: "4dc97ef9-42ed-5e84-bfd2-f262a21e75ae"
-diamondUuid: "c326f4ad-0382-8238-a27a-c1110928ef4f"
-uuid: "e2404b71-58b1-819e-b84e-35e585cfab09"
+coordinate: "federation · 1/base · 28f33688"
+contentUuid: "79e8c77e-3f3a-5ac5-b0dc-efacece84df0"
+diamondUuid: "74776eff-3972-8129-a189-19bdd3ba2e09"
+uuid: "28f33688-3c77-8c2f-afae-7c5b89925fa9"
 horo: 1
 bonds:
   in:
@@ -54,9 +54,12 @@ typography:
   neighbors: []
 standards:
   - W3C Activity Streams 2.0 + ActivityPub + LDN
+  - "W3C Activity Streams 2.0 + ActivityPub + LDN`"
   - W3C Verifiable Credentials Data Model 2.0
+  - "W3C Verifiable Credentials Data Model 2.0`"
   - "W3C-ActivityPub"
   - "W3C-VC-2.0"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -113,7 +116,7 @@ neighbors:
     - uuid
     - workspace
 signatures:
-  computationUuid: "acc1bd5b-d0cb-8d4f-95f2-a958a6b08deb"
+  computationUuid: "2a937a94-d6a1-8b67-b6ac-047943e4205c"
   stages:
     - stage: path
       stageUuid: "7f9947bd-55cd-81c7-b4fe-3a1431596330"
@@ -124,11 +127,11 @@ signatures:
     - stage: links
       stageUuid: "73c3b056-6c5d-856b-be2e-f199cb01267b"
     - stage: horo
-      stageUuid: "968016f3-63d6-8a4a-9279-89200c16b69f"
+      stageUuid: "96f895f5-5a5c-8a8d-9447-5df74163356a"
     - stage: seal
-      stageUuid: "e1bf4311-68bf-8c5a-81b5-6cc7f1321eb8"
+      stageUuid: "2fe15827-bba1-882c-be1c-7cd6235582fe"
     - stage: uuid
-      stageUuid: "17574c77-5b96-84af-b810-9d11a7ce737e"
+      stageUuid: "fd31b549-33bb-8743-b7ce-5ce777dfbceb"
 version: 2
 ---
 # federation

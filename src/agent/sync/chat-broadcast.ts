@@ -24,6 +24,7 @@
  */
 import type { CollectionAfterChangeHook } from 'payload'
 import type { AgentContext, AgentEffect, AgentRuntime, DomainEvent } from '../types'
+import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 import { cascadeDepthVerdict } from '@/ai/industry'
 import { processEffects } from '../effect-processor'
 import { createAgentContext } from '../context'
@@ -79,7 +80,6 @@ export function chatBroadcastAfterChange(): CollectionAfterChangeHook {
     try {
       const { agentRuntime } = await import('@/agent/bootstrap')
       const { createInProcessMcpClient } = await import('@/agents/mcp/in-process-client')
-      const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
       const client = req.payload as unknown as ChatClient
       const law = defaultAgentLawState({
         depth,
@@ -87,12 +87,22 @@ export function chatBroadcastAfterChange(): CollectionAfterChangeHook {
         grant: AGENT_RUNTIME_GRANT,
         untrustedPayload: ev.payload,
       })
+      // The erpax corpus tool surface (buildErpaxMcpTools → tool-defs → the 3157-atom
+      // atom-catalogue) is a dev/agent facet. In production the in-process client carries
+      // NO corpus tools — chat agents reach erpax through the official /api/mcp gateway —
+      // so webpack dead-code-eliminates the tool-defs subtree OUT of the Worker (Cloudflare
+      // ships all reachable code; only the unreachable branch is dropped).
+      let tools: ErpaxMcpTool[] = []
+      if (process.env.NODE_ENV !== 'production') {
+        const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
+        tools = buildErpaxMcpTools(agentRuntime.registry as never)
+      }
       const ctx: AgentContext = createAgentContext({
         runtime: agentRuntime,
         payload: req.payload,
         tenantId: ev.tenantId,
         law,
-        mcp: createInProcessMcpClient(buildErpaxMcpTools(agentRuntime.registry as never), req, { law }),
+        mcp: createInProcessMcpClient(tools, req, { law }),
         emit: chatEmit(client, depth + 1), // a reaction becomes the next row (one hop deeper)
       })
       const effects = await broadcastChatRow(agentRuntime, ctx, row)

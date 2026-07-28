@@ -1,32 +1,186 @@
 ---
 name: rules
 description: "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection."
-atomPath: gl/posting/rules
-coordinate: gl/posting/rules · 2/share · f001701f
-contentUuid: "d4575ea6-7e10-561c-a89d-5f9ef1740c97"
-diamondUuid: "8fbc4d3a-6278-8aec-a494-645ad7e815ec"
-uuid: "f001701f-610d-8b8d-b7bf-bf633a4a9a1d"
-horo: 2
+atomPath: "gl/posting/rules"
+coordinate: "gl/posting/rules · 5/round · bc3db13d"
+contentUuid: "95405339-485a-5c5c-95e1-85b8c3fba730"
+diamondUuid: "82c99ed1-41a0-8194-a129-88831a9d436b"
+uuid: "bc3db13d-9f7a-8684-b3aa-8771aed57764"
+horo: 5
 bonds:
   in:
+    - account
     - accounting
-    - balance
+    - agent
+    - algebra
+    - apply
+    - argument
+    - ask
+    - audience
+    - canonical
+    - change
+    - checker
+    - claim
+    - coincidence
+    - collapse
+    - compatibility
+    - conditional
+    - confine
+    - confirm
+    - conformal
+    - convene
+    - convention
+    - coverage
+    - cycle
+    - decide
+    - diamond
+    - duel
+    - echo
+    - engineering
+    - experiment
+    - fingerprint
+    - fixpoint
+    - folder
+    - gaps
+    - gate
+    - guardian
+    - horo
+    - identity
+    - immutability
+    - improve
+    - input
+    - invisible
     - law
+    - leftover
+    - load
+    - mesh
+    - metric
+    - millennium
+    - navigation
+    - path
+    - perspective
+    - port
     - posting
+    - prime
+    - proof
+    - prose
+    - readme
+    - receipt
+    - reconciliation
+    - reference
+    - refutable
+    - report
+    - resolver
+    - rosetta
     - rule
+    - rules
+    - run
+    - scalpel
+    - seal
+    - speed
+    - standard
+    - syntax
+    - theorem
+    - think
+    - thought
+    - timeout
+    - train
+    - unfolded
+    - validator
+    - violations
+    - wave
   out:
+    - account
     - accounting
-    - balance
+    - agent
+    - algebra
+    - apply
+    - argument
+    - ask
+    - audience
+    - canonical
+    - change
+    - checker
+    - claim
+    - coincidence
+    - collapse
+    - compatibility
+    - conditional
+    - confine
+    - confirm
+    - conformal
+    - convene
+    - convention
+    - coverage
+    - cycle
+    - decide
+    - diamond
+    - duel
+    - echo
+    - engineering
+    - experiment
+    - fingerprint
+    - fixpoint
+    - folder
+    - gaps
+    - gate
+    - guardian
+    - horo
+    - identity
+    - immutability
+    - improve
+    - input
+    - invisible
     - law
+    - leftover
+    - load
+    - mesh
+    - metric
+    - millennium
+    - navigation
+    - path
+    - perspective
+    - port
+    - posting
+    - prime
+    - proof
+    - prose
+    - readme
+    - receipt
+    - reconciliation
+    - reference
+    - refutable
+    - report
+    - resolver
+    - rosetta
     - rule
+    - rules
+    - run
+    - scalpel
+    - seal
+    - speed
+    - standard
+    - syntax
+    - theorem
+    - think
+    - thought
+    - timeout
+    - train
+    - unfolded
+    - validator
+    - violations
+    - wave
 typography:
   partition: gl
-  bondDegree: 13
-  neighbors: []
+  bondDegree: 259
+  neighbors:
+    - diamond
 standards:
   - "IFRS IAS-1 double-entry"
   - "ISO-8601-1:2019 effective-date"
+  - "ISO-8601-1:2019 effective-date`"
   - "SOX §404 internal-controls"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -34,17 +188,169 @@ neighbors:
     - balance
     - law
   matrix:
+    - account
     - accounting
-    - balance
+    - agent
+    - algebra
+    - apply
+    - argument
+    - ask
+    - audience
+    - canonical
+    - change
+    - checker
+    - claim
+    - coincidence
+    - collapse
+    - compatibility
+    - conditional
+    - confine
+    - confirm
+    - conformal
+    - convene
+    - convention
+    - coverage
+    - cycle
+    - decide
+    - diamond
+    - duel
+    - echo
+    - engineering
+    - experiment
+    - fingerprint
+    - fixpoint
+    - folder
+    - gaps
+    - gate
+    - guardian
+    - horo
+    - identity
+    - immutability
+    - improve
+    - input
+    - invisible
     - law
+    - leftover
+    - load
+    - mesh
+    - metric
+    - millennium
+    - navigation
+    - path
+    - perspective
+    - port
+    - posting
+    - prime
+    - proof
+    - prose
+    - readme
+    - receipt
+    - reconciliation
+    - reference
+    - refutable
+    - report
+    - resolver
+    - rosetta
     - rule
+    - rules
+    - run
+    - scalpel
+    - seal
+    - speed
+    - standard
+    - syntax
+    - theorem
+    - think
+    - thought
+    - timeout
+    - train
+    - unfolded
+    - validator
+    - violations
+    - wave
   backlinks:
+    - account
     - accounting
-    - balance
+    - agent
+    - algebra
+    - apply
+    - argument
+    - ask
+    - audience
+    - canonical
+    - change
+    - checker
+    - claim
+    - coincidence
+    - collapse
+    - compatibility
+    - conditional
+    - confine
+    - confirm
+    - conformal
+    - convene
+    - convention
+    - coverage
+    - cycle
+    - decide
+    - diamond
+    - duel
+    - echo
+    - engineering
+    - experiment
+    - fingerprint
+    - fixpoint
+    - folder
+    - gaps
+    - gate
+    - guardian
+    - horo
+    - identity
+    - immutability
+    - improve
+    - input
+    - invisible
     - law
+    - leftover
+    - load
+    - mesh
+    - metric
+    - millennium
+    - navigation
+    - path
+    - perspective
+    - port
+    - posting
+    - prime
+    - proof
+    - prose
+    - readme
+    - receipt
+    - reconciliation
+    - reference
+    - refutable
+    - report
+    - resolver
+    - rosetta
     - rule
+    - rules
+    - run
+    - scalpel
+    - seal
+    - speed
+    - standard
+    - syntax
+    - theorem
+    - think
+    - thought
+    - timeout
+    - train
+    - unfolded
+    - validator
+    - violations
+    - wave
 signatures:
-  computationUuid: "008e2772-fa1e-8baa-905f-b45e613c3540"
+  computationUuid: "c58e8f58-49aa-8b0c-a5b4-e75c66d4eb36"
   stages:
     - stage: path
       stageUuid: "a9a175d9-9908-8ad6-8b6e-e8c0b672260f"
@@ -55,11 +361,11 @@ signatures:
     - stage: links
       stageUuid: "71687a86-0cb9-8785-a609-f4c0fa8e1976"
     - stage: horo
-      stageUuid: "629fbc5d-8eb3-880d-b095-dc76df617a1c"
+      stageUuid: "9b393cc0-bd97-80f1-a860-70456dcabf7e"
     - stage: seal
       stageUuid: "c3c84f84-f531-8fdb-8d40-19278075ce4a"
     - stage: uuid
-      stageUuid: "30ba0e01-a7e6-8cd2-9a92-36b572d1d26a"
+      stageUuid: "920006ab-e9cc-8c4a-a163-1e02df094a98"
 version: 2
 ---
 # gl-posting-rules

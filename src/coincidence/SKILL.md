@@ -1,8 +1,103 @@
 ---
 name: coincidence
 description: "Use when a research program claims its numbers match physical constants (Haramein's holographic work, the 3·6·9 / vortex literature) and asks whether that confirms it. The tool separates a THEOREM (an exact identity in a closed algebraic system) from a COINCIDENCE (a within-tolerance match, possibly fitted) — and refuses the leap from either to 'recompute all science', because a match is necessary but never sufficient."
+atomPath: coincidence
+coordinate: "coincidence · 8/crest · 98424aef"
+contentUuid: "0866a57e-2b8f-53bf-8a1f-438d0564b365"
+diamondUuid: "2b722b14-04b1-8dd8-96ab-ed8955177d10"
+uuid: "98424aef-0f75-8e58-9434-202a4ef769c2"
+horo: 8
+bonds:
+  in:
+    - algebra
+    - argument
+    - conformal
+    - conversion
+    - discover
+    - evolve
+    - gaps
+    - law
+    - millennium
+    - rodin
+    - rules
+    - seeing
+    - theorem
+  out:
+    - algebra
+    - argument
+    - conformal
+    - conversion
+    - discover
+    - evolve
+    - gaps
+    - law
+    - millennium
+    - rodin
+    - rules
+    - seeing
+    - theorem
+typography:
+  partition: coincidence
+  bondDegree: 40
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - algebra
+    - conformal
+    - conversion
+    - law
+    - rodin
+    - rules
+    - theorem
+  matrix:
+    - algebra
+    - argument
+    - conformal
+    - conversion
+    - discover
+    - evolve
+    - gaps
+    - law
+    - millennium
+    - rodin
+    - rules
+    - seeing
+    - theorem
+  backlinks:
+    - algebra
+    - argument
+    - conformal
+    - conversion
+    - discover
+    - evolve
+    - gaps
+    - law
+    - millennium
+    - rodin
+    - rules
+    - seeing
+    - theorem
+signatures:
+  computationUuid: "ba40ae00-82b6-8d0a-b002-90f149e1b509"
+  stages:
+    - stage: path
+      stageUuid: "f825e16c-c5de-8542-8140-34748f9d4f3d"
+    - stage: trinity
+      stageUuid: "8aa34483-40a0-8dcb-a5e2-8825abd520bd"
+    - stage: boundary
+      stageUuid: "ab749c44-02e7-8cab-9c9c-3a6a147888c2"
+    - stage: links
+      stageUuid: "2bc8504d-182a-86ed-9f53-945dfe1ef2b6"
+    - stage: horo
+      stageUuid: "e2c0bc8d-b035-816c-90ad-9cb5a6cfc720"
+    - stage: seal
+      stageUuid: "7e6b4b3e-149f-8e4f-aedc-b470a11afb6f"
+    - stage: uuid
+      stageUuid: "aa8b2807-87c9-8fa6-a177-88a7c6ae69a0"
+version: 2
 ---
-
 # coincidence — the testing ground: theorem, or coincidence?
 
 A research program built on matching numbers to physical constants is the **perfect testing ground**, because the corpus already knows the answer's shape: [[rodin]] holds it — *"the arithmetic is exact, the metaphysics is not adopted."* This atom makes that a measurement.

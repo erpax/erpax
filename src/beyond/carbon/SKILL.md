@@ -1,12 +1,12 @@
 ---
 name: carbon
 description: "Use when accounting the gCO2e of a chain step for ESRS E1 / CSRD reporting — estimateCarbon converts CPU-ms and egress-bytes into grams via grid intensity, recordCarbon accumulates per tenant, getTenantCarbon reads the running total; the carbon dual of cost."
-atomPath: beyond/carbon
-coordinate: beyond/carbon · 4/weave · 19116ed5
-contentUuid: "82ccb64a-0675-562e-b250-43d39d86e6e4"
-diamondUuid: "2c36b93f-3d8c-8d1e-83a3-f1d7e911f19c"
-uuid: "19116ed5-b965-8250-bbaf-f2e23608d97e"
-horo: 4
+atomPath: "beyond/carbon"
+coordinate: "beyond/carbon · 5/round · 22dd6c72"
+contentUuid: "dd4a0eb1-c149-5b99-a87e-2146943ff2e5"
+diamondUuid: "ac4cfc70-6c7a-88cc-a1b6-f4ca33e8c393"
+uuid: "22dd6c72-29a9-815b-8a48-ad82e45a7ffc"
+horo: 5
 bonds:
   in:
     - beyond
@@ -27,11 +27,6 @@ typography:
 standards:
   - "ESRS E1 climate-change-disclosures"
   - "EU CSRD 2022/2464 sustainability-reporting-directive"
-  - "EU-2022/1925"
-  - "EU-2022/2065"
-  - "EU-2022/2554"
-  - "EU-2022/2555"
-  - "EU-2022/868"
   - "EU-CSRD"
   - "EU-ESRS"
   - "GHG Protocol Scope-2 location-based"
@@ -57,7 +52,7 @@ neighbors:
     - standard
     - trinity
 signatures:
-  computationUuid: "83bd3f8f-6c60-8c64-95b7-d56624a59c44"
+  computationUuid: "9518de97-5b33-89d5-95e1-8c7bb8d1a5bf"
   stages:
     - stage: path
       stageUuid: "022811c8-2825-8805-8327-1f3ecdaa1b5e"
@@ -68,11 +63,11 @@ signatures:
     - stage: links
       stageUuid: "3475e702-cae7-8cd9-9935-0a24f869502b"
     - stage: horo
-      stageUuid: "ef47c9aa-2294-8d6a-8904-009a47fb4185"
+      stageUuid: "c635ffc2-f03d-8aca-8d5e-59a11db56e35"
     - stage: seal
       stageUuid: "6a0836ec-0154-8d66-82e6-5d63df670b8e"
     - stage: uuid
-      stageUuid: "cffdb181-4a48-8871-abf0-541527b1d237"
+      stageUuid: "65f9c08e-c1fe-8a9d-83b6-ed0bb3f80f83"
 version: 2
 ---
 # beyond/carbon — carbon-aware execution (gCO2e per chain step)

@@ -1,8 +1,405 @@
 ---
 name: agent
-description: "Use to audit an agent's own changeset the way a real auditor audits a human's submission — every claim (@invariant · @standard · @compliance · @audit) in a changed code file must have a proof leg beside it, or the submission is refused. ISO 19011 §6.4: a finding traces to objective evidence. Run: git diff --name-only | tsx src/audit/agent/index.ts"
+description: "Use when reasoning about agent — Use to audit an agent's own changeset the way a real auditor audits a human's submission — every claim (@invariant · @standard · @compliance · @audit) in a changed code file must have a proof leg beside it, or the submission is refused. ISO 19011 §6.4: a finding traces to objective evidence. Run: git diff --name-only | tsx src/audit/agent/index.ts"
+atomPath: "audit/agent"
+coordinate: "audit/agent · 2/share · b7207a30"
+contentUuid: "4dad9332-bb73-5940-b26e-74f119daa3b6"
+diamondUuid: "2af03a76-2a9f-8a0b-b2c1-361ade5d2869"
+uuid: "b7207a30-4c58-8c98-9a6a-8a5e92d7b582"
+horo: 2
+bonds:
+  in:
+    - access
+    - accounting
+    - agent
+    - ai
+    - akashic
+    - audit
+    - aura
+    - auth
+    - baked
+    - booking
+    - breath
+    - capacity
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fold
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - inventory
+    - law
+    - log
+    - mcp
+    - merge
+    - navigation
+    - observe
+    - one
+    - path
+    - payload
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - rules
+    - science
+    - seal
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - wave
+    - whole
+    - wire
+    - worker
+  out:
+    - access
+    - accounting
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - baked
+    - booking
+    - breath
+    - capacity
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fold
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - inventory
+    - law
+    - log
+    - mcp
+    - merge
+    - navigation
+    - observe
+    - one
+    - path
+    - payload
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - rules
+    - science
+    - seal
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - wave
+    - whole
+    - wire
+    - worker
+typography:
+  partition: audit
+  bondDegree: 310
+  neighbors:
+    - agent
+    - ai
+    - "analytics/max-tamper-cost"
+    - aura
+    - booking
+    - capacity
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - decentralization
+    - diamond
+    - drone
+    - ecosystem
+    - estate
+    - gravity
+    - hallucination
+    - infectious
+    - interaction
+    - inventory
+    - log
+    - mcp
+    - observe
+    - purity
+    - real
+    - reference
+    - request
+    - research
+    - reversibility
+    - skill
+    - skills
+    - statistic
+    - team
+    - types
+    - unavoidable
+    - wave
+    - wire
+    - worker
+standards:
+  - "EU-2018/1673"
+  - "EU-2018/1725"
+  - "EU-2018/302"
+  - "EU-2018/389-SCA-RTS"
+  - "EU-2018/843"
+  - "EU-2018/957"
+  - "ISO-19011"
+  - "ISO-19011:2018 §6.4 — audit evidence: a finding traces to objective evidence"
+  - "SOX §404`)"
+  - "SOX §404`, `@compliance SOX §302`, `@audit ISO-19011` — and have"
+  - "and Composes',"
+  - "· @audit) in a changed code file must have a proof leg beside it, or the submission is refused. ISO 19011 §6.4: a finding traces to objective evidence. Run: git diff --name-only | tsx src/audit/agent/index.ts\""
+  - "· @audit`, read from a file's"
+  - "· @compliance · @audit) in a changed code file must have a proof leg beside it, or the submission is refused. ISO 19011 §6.4: a finding traces to objective evidence. Run: git diff --name-only | tsx src/audit/agent/index.ts\""
+  - "· @compliance · @audit`, read from a file's"
+bindings: []
+neighbors:
+  wikilink:
+    - audit
+    - confirm
+    - law
+    - rules
+    - run
+    - syntax
+  matrix:
+    - access
+    - accounting
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - baked
+    - booking
+    - breath
+    - capacity
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fold
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - inventory
+    - law
+    - log
+    - mcp
+    - merge
+    - navigation
+    - observe
+    - one
+    - path
+    - payload
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - rules
+    - science
+    - seal
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - wave
+    - whole
+    - wire
+    - worker
+  backlinks:
+    - access
+    - accounting
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - baked
+    - booking
+    - breath
+    - capacity
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fold
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - inventory
+    - law
+    - log
+    - mcp
+    - merge
+    - navigation
+    - observe
+    - one
+    - path
+    - payload
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - rules
+    - science
+    - seal
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - wave
+    - whole
+    - wire
+    - worker
+signatures:
+  computationUuid: "0de3362b-5dff-8540-981f-b510099c5e55"
+  stages:
+    - stage: path
+      stageUuid: "c8c08643-e0d0-86aa-87eb-7e0a13d2c096"
+    - stage: trinity
+      stageUuid: "bed80e30-1500-8459-a8c3-056324491717"
+    - stage: boundary
+      stageUuid: "e3417ea4-24d3-8ac3-ae3b-c6dc6b73b8d2"
+    - stage: links
+      stageUuid: "955a84a6-0be4-82d5-99d5-69eb5a6eb017"
+    - stage: horo
+      stageUuid: "db170c29-a65a-8a53-a7da-0053c9d93281"
+    - stage: seal
+      stageUuid: "ef065399-6e91-8214-bc71-8c31c16eabca"
+    - stage: uuid
+      stageUuid: "1f37f85d-4d41-8272-8734-60e418edcc6a"
+version: 2
 ---
-
 # agent — audit the agent as a real auditor audits a human
 
 Every catastrophe this corpus produced was an **agent** doing precisely what an auditor catches a **human** doing:

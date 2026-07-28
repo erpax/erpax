@@ -1,12 +1,12 @@
 ---
 name: reviews
 description: "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection."
-atomPath: employees/performance/reviews
-coordinate: employees/performance/reviews · 8/crest · e7d9287c
-contentUuid: "92b21028-6b5d-5424-9dab-0e6e2890cd05"
-diamondUuid: "d7a4ee4e-7f04-846a-b64d-28500a3f6118"
-uuid: "e7d9287c-fa7c-8da4-9840-2f2399eb1aee"
-horo: 8
+atomPath: "employees/performance/reviews"
+coordinate: "employees/performance/reviews · 2/share · 2fc3d532"
+contentUuid: "a4f24ac6-0fc7-53f8-8e93-ac4323c68715"
+diamondUuid: "516073e1-b2ec-8921-9a1d-6ce59ba190b2"
+uuid: "2fc3d532-afdc-86bc-ac80-2725eaf7701e"
+horo: 2
 bonds:
   in:
     - access
@@ -34,10 +34,11 @@ typography:
   bondDegree: 27
   neighbors: []
 standards:
-  - EU Equal Treatment Directive 2000/78
+  - "EU Equal Treatment Directive 2000/78"
   - GDPR Art.5 PII processing
-  - "ISO-19011:2018 audit-trail performance-evidence"
   - "ISO-8601-1:2019 date-time"
+  - "ISO-8601-1:2019 date-time`"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink:
@@ -68,7 +69,7 @@ neighbors:
     - proof
     - satisfaction
 signatures:
-  computationUuid: "dba264f4-90e6-825a-b2bc-2256baacb366"
+  computationUuid: "aeb4c32a-1c4b-82c9-9e12-14a25d02e065"
   stages:
     - stage: path
       stageUuid: "5277ad0d-e19b-863b-952e-000dac385bcf"
@@ -79,11 +80,11 @@ signatures:
     - stage: links
       stageUuid: "327fce69-ee90-846e-8489-1ebce855c70e"
     - stage: horo
-      stageUuid: "33f17f1b-048d-8fb5-9c6c-deab126a7ceb"
+      stageUuid: "87b666bb-5ce4-8384-b222-736717757831"
     - stage: seal
       stageUuid: "f9b059a7-e7da-8eac-a32e-15eb604c42c3"
     - stage: uuid
-      stageUuid: "2b1c5c85-a32c-8d1f-9464-29d55c297405"
+      stageUuid: "0632c3de-fe31-83b8-a9c7-1f46e04998e5"
 version: 2
 ---
 # performance-reviews

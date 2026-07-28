@@ -1,36 +1,57 @@
 ---
 name: gaps
 description: "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register."
-atomPath: compliance/frameworks/compliance/requirements/compliance/gaps
-coordinate: compliance/frameworks/compliance/requirements/compliance/gaps · 1/base · 89bac204
-contentUuid: "6361ce22-fc09-58c0-9a50-f07aa0c058ee"
-diamondUuid: "8f2b4ae3-a1b2-8e36-95d4-b64cda88038f"
-uuid: "89bac204-2b69-8dd8-a8cd-91cec2bc2dc1"
-horo: 1
+atomPath: "compliance/frameworks/compliance/requirements/compliance/gaps"
+coordinate: "compliance/frameworks/compliance/requirements/compliance/gaps · 2/share · 300a0cb7"
+contentUuid: "e6c3f87b-77db-5f41-9837-8ec7e9dd026b"
+diamondUuid: "184a2856-331f-887f-b630-578eb67c9e4e"
+uuid: "300a0cb7-808b-80e5-9ddf-b2570b5a5725"
+horo: 2
 bonds:
   in:
-    - requirements
+    - coincidence
+    - law
+    - rules
+    - seeing
+    - theorem
+    - think
   out:
-    - requirements
+    - coincidence
+    - law
+    - rules
+    - seeing
+    - theorem
+    - think
 typography:
   partition: compliance
-  bondDegree: 3
+  bondDegree: 19
   neighbors: []
 standards:
-  - "ISO-19011:2018 nonconformity"
   - "ISO-37301"
   - "ISO-37301:2021 compliance-management"
+  - "ISO-37301:2021 compliance-management`"
   - SOX §404 deficiency
   - "US-CTA-2021"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
   matrix:
-    - requirements
+    - coincidence
+    - law
+    - rules
+    - seeing
+    - theorem
+    - think
   backlinks:
-    - requirements
+    - coincidence
+    - law
+    - rules
+    - seeing
+    - theorem
+    - think
 signatures:
-  computationUuid: "d11b4e34-343f-89c6-8609-9ddccbf087bf"
+  computationUuid: "736666be-2c9c-8078-8f1d-7d9ee55c1fb2"
   stages:
     - stage: path
       stageUuid: "79c246eb-57f4-8cff-afe3-e3b539110840"
@@ -41,11 +62,11 @@ signatures:
     - stage: links
       stageUuid: "d381a5a3-e35f-86ff-8ed5-295ee2b1a856"
     - stage: horo
-      stageUuid: "96ef5f5d-3c93-8797-a4c6-48d787920b02"
+      stageUuid: "f56971fe-1d64-8322-933a-95ca7ab87530"
     - stage: seal
       stageUuid: "aea2f889-e3d6-8ad2-a6ad-3f925bece28b"
     - stage: uuid
-      stageUuid: "b0281e1c-30a1-8473-bd1b-6ece83340af6"
+      stageUuid: "573548bf-c2ba-80aa-9060-37af148c812e"
 version: 2
 ---
 # compliance-gaps

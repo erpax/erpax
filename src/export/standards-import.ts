@@ -5,86 +5,90 @@
  * routes it to the canonical parser by a `format` discriminator and
  * returns the typed structure for the write path to ingest.
  *
- * Format coverage:
- *   camt.053         ISO 20022 bank-to-customer statement (XML) →
- *                    Camt053Statement (single-statement file)
- *   camt.053-multi   Same, but one file batching N statements →
- *                    Camt053Statement[]
- *   peppol-ubl       Peppol BIS Billing 3.0 invoice (UBL 2.1 XML) →
- *                    PeppolBillingMessage
+ * Format coverage (banking invert fills the inbound duals):
+ *   camt.052         ISO 20022 bank-to-customer account report (intraday)
+ *   camt.053         ISO 20022 bank-to-customer statement (XML)
+ *   camt.053-multi   Same, batched N statements
+ *   camt.054         ISO 20022 debit/credit notification (XML)
+ *   pain.002         ISO 20022 customer payment status report (XML)
+ *   pacs.004         ISO 20022 payment return (XML)
+ *   peppol-ubl       Peppol BIS Billing 3.0 invoice (UBL 2.1 XML)
  *
- * Shared shape: each request carries the raw `xml`; the result pairs the
- * echoed `format` with the parsed canonical `data`. The standards each
- * route honours are declared on the parser it delegates to (see @see).
- *
- * Future formats: pain.002 (status report), EDIFACT INVOIC inbound.
- *
- * @standard ISO-20022 camt.053 bank-to-customer-statement
+ * @standard ISO-20022 camt.052 · camt.053 · camt.054 · pain.002 · pacs.004
  * @standard Peppol-BIS-3.0 billing
- * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
- * @standard UBL-2.1 universal-business-language
- * @audit ISO-19011:2018 audit-trail
- * @see src/services/export/standards.service.ts (outbound counterpart)
- * @see src/services/camt053-import.service.ts
- * @see src/services/peppol-import.service.ts
+ * @see src/camt052/import/service · src/camt053/import/service · src/camt054/import/service
+ * @see src/pain002/import/service · src/pacs004/import/service
  */
 
 import {
   parseCamt053,
   parseCamt053Multi,
 } from '@/camt053/import/service'
+import { parseCamt052 } from '@/camt052/import/service'
+import { parseCamt054 } from '@/camt054/import/service'
+import { parsePain002 } from '@/pain002/import/service'
+import { parsePacs004 } from '@/pacs004/import/service'
 import { parsePeppolInvoice } from '@/peppol/import/service'
-import type { Camt053Statement } from '@/iso/20022'
+import type {
+  Camt052Report,
+  Camt053Statement,
+  Camt054Notification,
+  Pain002Report,
+  Pacs004Return,
+} from '@/iso/20022'
 import type { PeppolBillingMessage } from '@/peppol/bis/3'
 
-/**
- * Inbound wire-format discriminator. Mirrors `StandardsExportFormat`
- * but covers the inverse direction.
- */
-export type StandardsImportFormat = 'camt.053' | 'camt.053-multi' | 'peppol-ubl'
+export type StandardsImportFormat =
+  | 'camt.052'
+  | 'camt.053'
+  | 'camt.053-multi'
+  | 'camt.054'
+  | 'pain.002'
+  | 'pacs.004'
+  | 'peppol-ubl'
 
-/**
- * Discriminated request — every inbound format is fed the raw `xml`.
- */
 export type StandardsImportRequest =
+  | { format: 'camt.052'; xml: string }
   | { format: 'camt.053'; xml: string }
   | { format: 'camt.053-multi'; xml: string }
+  | { format: 'camt.054'; xml: string }
+  | { format: 'pain.002'; xml: string }
+  | { format: 'pacs.004'; xml: string }
   | { format: 'peppol-ubl'; xml: string }
 
-/**
- * Result of a standards import — the echoed format plus the parsed
- * canonical structure.
- */
 export interface StandardsImportResult<T = unknown> {
   format: StandardsImportFormat
   /** The parsed canonical structure. */
   data: T
 }
 
-/**
- * Unified dispatcher — routes inbound XML to the canonical parser based
- * on the format discriminator. Inverse of `exportStandards`.
- */
 export const importStandards = async (
   request: StandardsImportRequest,
 ): Promise<
-  StandardsImportResult<Camt053Statement | Camt053Statement[] | PeppolBillingMessage>
+  StandardsImportResult<
+    | Camt052Report
+    | Camt053Statement
+    | Camt053Statement[]
+    | Camt054Notification
+    | Pain002Report
+    | Pacs004Return
+    | PeppolBillingMessage
+  >
 > => {
   switch (request.format) {
+    case 'camt.052':
+      return { format: 'camt.052', data: parseCamt052(request.xml) }
     case 'camt.053':
-      return {
-        format: 'camt.053',
-        data: parseCamt053(request.xml),
-      }
+      return { format: 'camt.053', data: parseCamt053(request.xml) }
     case 'camt.053-multi':
-      return {
-        format: 'camt.053-multi',
-        data: parseCamt053Multi(request.xml),
-      }
+      return { format: 'camt.053-multi', data: parseCamt053Multi(request.xml) }
+    case 'camt.054':
+      return { format: 'camt.054', data: parseCamt054(request.xml) }
+    case 'pain.002':
+      return { format: 'pain.002', data: parsePain002(request.xml) }
+    case 'pacs.004':
+      return { format: 'pacs.004', data: parsePacs004(request.xml) }
     case 'peppol-ubl':
-      return {
-        format: 'peppol-ubl',
-        data: parsePeppolInvoice(request.xml),
-      }
+      return { format: 'peppol-ubl', data: parsePeppolInvoice(request.xml) }
   }
 }

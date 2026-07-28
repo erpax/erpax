@@ -1,11 +1,11 @@
 ---
 name: notifications
 description: "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection."
-atomPath: legal/entities/compliance/deadlines/compliance/notifications
-coordinate: legal/entities/compliance/deadlines/compliance/notifications · 8/crest · 02ad448d
-contentUuid: "f063f14a-a799-5398-8e89-f596e83fd5ff"
-diamondUuid: "bb673377-ba31-8c23-9db2-564ade6ca5b1"
-uuid: "02ad448d-5a36-8d3e-a4b7-345386250bde"
+atomPath: "legal/entities/compliance/deadlines/compliance/notifications"
+coordinate: "legal/entities/compliance/deadlines/compliance/notifications · 8/crest · b12a5c1f"
+contentUuid: "89d7bf83-7bef-56e7-8b69-9fb24a83d75e"
+diamondUuid: "a59bdfaf-40f0-824d-aab7-640251f42477"
+uuid: "b12a5c1f-f42a-8f12-a50d-389d2be3128f"
 horo: 8
 bonds:
   in:
@@ -19,8 +19,11 @@ typography:
 standards:
   - "ISO-37301"
   - "ISO-37301:2021 compliance-management"
+  - "ISO-37301:2021 compliance-management`"
   - "ISO-8601-1:2019 notified-at"
+  - "ISO-8601-1:2019 notified-at`"
   - "US-CTA-2021"
+  - "— the instrument reads SKILL.md) -->"
 bindings: []
 neighbors:
   wikilink: []
@@ -29,7 +32,7 @@ neighbors:
   backlinks:
     - deadlines
 signatures:
-  computationUuid: "d765e84e-7324-894d-874b-6bdd0715a196"
+  computationUuid: "912ec75e-a9d0-828e-9f3b-2f15be1b7d68"
   stages:
     - stage: path
       stageUuid: "32a71354-b624-8b99-873b-bd8553e6f18b"
@@ -40,11 +43,11 @@ signatures:
     - stage: links
       stageUuid: "c979f220-3234-8ef1-88e3-61d42a8d8932"
     - stage: horo
-      stageUuid: "24cc3240-e664-861c-a70a-db546380d1ff"
+      stageUuid: "51a2d523-b8a5-891d-aea6-95d1d145c1ac"
     - stage: seal
       stageUuid: "7aae8859-8c2d-8722-a139-79b2309e5307"
     - stage: uuid
-      stageUuid: "dd8e0a99-bbdd-8380-9061-979263e615a5"
+      stageUuid: "987d3038-6ca0-86cc-98cc-4d9431ce00ae"
 version: 2
 ---
 # compliance-notifications
