@@ -16,6 +16,10 @@ const HEAVY_TSX = 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size
 const NODE_TSX = 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" node'
 const ESLINT =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" eslint'
+/** Type-aware ESLint on the full src tree recurses deep Payload types — needs a larger V8 stack
+ * (NODE_OPTIONS forbids --stack-size, so invoke node directly). */
+const ESLINT_SRC =
+  'node --stack-size=8192 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
 const VITEST =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" vitest run --config ./vitest.config.mts'
 
@@ -46,7 +50,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     default: { desc: 'ESLint whole repo', cmd: `${ESLINT} .` },
     src: {
       desc: 'ESLint src/**/* (zero warnings)',
-      cmd: `${ESLINT} "src/**/*.{ts,tsx}" --ignore-pattern "src/migrations/*_*.ts" --max-warnings 0`,
+      cmd: `${ESLINT_SRC} "src/**/*.{ts,tsx}" --ignore-pattern "src/migrations/*_*.ts" --max-warnings 0`,
     },
     imports: { desc: 'Import-convention ratchet gate', cmd: `${NODE_TSX} src/convention/import/gate.mjs` },
     folders: { desc: 'Folder-shape law gate', cmd: 'cross-env NODE_OPTIONS="--no-deprecation" tsx src/law/folder/index.ts --check' },
