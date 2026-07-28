@@ -152,9 +152,25 @@ export function runTestWaves(args: readonly string[] = []): number {
       ? { ms: Math.max(timeoutOf(history).ms * 3, 900_000), minutes: Math.max(timeoutOf(history).minutes * 3, 15) }
       : { ms: 900_000, minutes: 15 }
     const started = Date.now()
+    const nodeOpts = [process.env.NODE_OPTIONS, '--import=./src/css/load-hook.mjs']
+      .filter(Boolean)
+      .join(' ')
+      .replace(/\s+/g, ' ')
+      .trim()
     const r = spawnSync(
       `./node_modules/.bin/vitest run --config ./vitest.config.mts ${batch.map((f) => JSON.stringify(f)).join(' ')}`,
-      { shell: true, stdio: 'inherit', cwd, timeout: bound.ms, killSignal: 'SIGKILL', env: { ...process.env, PAYLOAD_TEST_SKIP_MIGRATE: process.env.PAYLOAD_TEST_SKIP_MIGRATE ?? '' } },
+      {
+        shell: true,
+        stdio: 'inherit',
+        cwd,
+        timeout: bound.ms,
+        killSignal: 'SIGKILL',
+        env: {
+          ...process.env,
+          NODE_OPTIONS: nodeOpts,
+          PAYLOAD_TEST_SKIP_MIGRATE: process.env.PAYLOAD_TEST_SKIP_MIGRATE ?? '',
+        },
+      },
     )
     if (r.signal) {
       console.error(`✗ test waves — batch ${b} timed out at ${bound.minutes}min (batch bound); suites: ${batch.join(' ')}`)

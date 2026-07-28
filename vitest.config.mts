@@ -81,7 +81,16 @@ const shared = {
   // keep Node's event loop alive, so a suite that starts one (e.g. the monitor/violations loop) hangs
   // vitest teardown ("something prevents the main process from exiting"). Poll-only fallback is unref'd.
   // A test that needs the enabled path sets process.env.ERPAX_REALTIME in-test.
-  env: { ERPAX_REALTIME: 'off' },
+  env: {
+    ERPAX_REALTIME: 'off',
+    // Unit suites that transitively import payload.config (e.g. blocks barrel → archive Component)
+    // need a sealed secret; CI sets this on the job, local/waves inherit here.
+    PAYLOAD_SECRET: process.env.PAYLOAD_SECRET ?? 'test-secret-not-for-production-32-characters',
+  },
+  // CSS is a diamond facet (@/css/load-hook) — stub .css when Payload UI is pulled into unit suites.
+  // Vitest 4: execArgv is top-level (poolOptions removed).
+  pool: 'forks' as const,
+  execArgv: ['--import', './src/css/load-hook.mjs'],
   server: { deps: { external: [/[/\\]skills\.index(?:\.ts)?$/] } },
   exclude: [...configDefaults.exclude, 'src/skills/**'],
 }

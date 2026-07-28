@@ -21,7 +21,7 @@ const ESLINT =
 const ESLINT_SRC =
   'node --stack-size=65536 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
 const VITEST =
-  'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" vitest run --config ./vitest.config.mts'
+  'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" vitest run --config ./vitest.config.mts'
 
 /** Canonical on-disk aura scanner (hooks + package surface must agree). */
 export const AURA_SCAN_PATH = 'src/aura/scan.mjs'
@@ -70,7 +70,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     waves: { desc: 'Vitest integration in receipt-split batches', cmd: '__test_waves__' },
     fast: {
       desc: 'Vitest integration (skip migrate)',
-      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts',
+      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts',
     },
     e2e: {
       desc: 'Playwright e2e (starts pnpm dev unless SKIP_E2E_WEBSERVER=1)',
