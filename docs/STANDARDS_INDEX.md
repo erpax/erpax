@@ -589,14 +589,14 @@ src/business/chain/wire-producers.ts:19: * @standard ISO/IEC 25010:2023 §5.4 re
 src/camt052/import/service/index.ts:22: * @standard ISO-20022 BankToCustomerAccountReportV08
 src/camt052/import/service/index.ts:7: * @standard ISO-20022 camt.052 bank-to-customer-account-report
 src/camt052/import/service/test.ts:4: * @standard ISO-20022 camt.052 bank-to-customer-account-report
-src/camt053/import/service/index.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing
-src/camt053/import/service/index.test.ts:8: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/camt053/import/service/index.ts:17: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/camt053/import/service/index.ts:18: * @standard ISO-13616-1:2020 iban
 src/camt053/import/service/index.ts:19: * @standard ISO-9362:2022 bic
 src/camt053/import/service/index.ts:20: * @standard ISO-4217:2015 currency-codes
 src/camt053/import/service/index.ts:21: * @standard ISO-8601-1:2019 date-time
 src/camt053/import/service/index.ts:260: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/camt053/import/service/test.ts:7: * @standard ISO/IEC-29119:2022 software-testing
+src/camt053/import/service/test.ts:8: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/camt054/import/service/index.ts:21: * @standard ISO-20022 BankToCustomerDebitCreditNotificationV08
 src/camt054/import/service/index.ts:6: * @standard ISO-20022 camt.054 bank-to-customer-debit-credit-notification
 src/camt054/import/service/test.ts:4: * @standard ISO-20022 camt.054 bank-to-customer-debit-credit-notification
@@ -5574,8 +5574,8 @@ src/business/chain/gen-doc.ts:9: * @audit ISO-19011:2018 audit-trail registry-tr
 src/business/chain/run-chain.ts:11: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/business/chain/types.ts:21: * @audit ISO-19011:2018 §6.4.6 audit-evidence-process
 src/business/chain/wire-producers.ts:20: * @audit ISO 19011:2018 §6.4.6 producer→event traceability via BUSINESS_CHAINS
-src/camt053/import/service/index.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/camt053/import/service/index.ts:22: * @audit ISO-19011:2018 audit-trail
+src/camt053/import/service/test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/capture/media/index.ts:28: * @audit ISO-19011:2018 audit-trail test-recording-provenance
 src/carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
 src/cases/index.ts:19: * @audit ISO-19011:2018 audit-trail file·hear·rule·seal
