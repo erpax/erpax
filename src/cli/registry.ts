@@ -19,7 +19,7 @@ const ESLINT =
 /** Type-aware ESLint on the full src tree recurses deep Payload types — needs a larger V8 stack
  * (NODE_OPTIONS forbids --stack-size, so invoke node directly). */
 const ESLINT_SRC =
-  'node --stack-size=8192 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
+  'node --stack-size=16384 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js'
 const VITEST =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" vitest run --config ./vitest.config.mts'
 
