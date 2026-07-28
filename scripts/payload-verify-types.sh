@@ -48,10 +48,13 @@ for entry in "${TARGETS[@]}"; do
   backup="${tmp}/$(echo "$target" | tr '/' '_').committed"
   cp "$target" "$backup"
 
-  if ! NODE_OPTIONS="--no-deprecation --import=tsx/esm --import=./src/css/load-hook.mjs" eval "$cmd" > /dev/null 2>&1 ; then
+  if ! NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=tsx/esm --import=./src/css/load-hook.mjs" \
+      eval "$cmd" >"${tmp}/regen.out" 2>&1 ; then
     cp "$backup" "$target"
     echo "ERROR: ${cmd} failed for ${label}."
-    echo "       Run it manually to see the error."
+    echo "------- regen output (last 80 lines) -------"
+    tail -80 "${tmp}/regen.out" || true
+    echo "--------------------------------------------"
     fail=1
     continue
   fi

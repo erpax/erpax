@@ -2,7 +2,7 @@
  * quantum/ftl/purify — chat waves cover src: scan prose names → develop RENAME.
  * src is too large to hand-edit; waves discover entanglements and feed themselves.
  *
- *   tsx src/quantum/ftl/purify.ts
+ *   tsx src/quantum/ftl/purify/index.ts
  *
  * @see ./map · ./index · ../../wave/feed · ../../quantum/chat
  */
@@ -10,7 +10,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { foldToRoot, merge } from '@/merge'
 import { feedWavesIntoThemselves, type WaveFeedReport } from '@/wave/feed'
-import { RENAME, PROSE, TOKENS, type Token } from './map'
+import { RENAME, PROSE, TOKENS, type Token } from '../map'
 import { researcher, CORPUS, type Seal, boundary, type Boundary } from './index'
 
 export const atomPath = 'quantum/ftl/purify' as const
@@ -61,7 +61,7 @@ export function scanProseNames(opts: {
   for (const file of files) {
     // Do not purify the map / purify atom itself (they DEFINE the old→new table)
     const rel = relative(process.cwd(), file).replace(/\\/g, '/')
-    if (rel === 'src/quantum/ftl/map.ts' || rel === 'src/quantum/ftl/purify.ts' || rel === 'src/quantum/ftl/test.ts') continue
+    if (rel === 'src/quantum/ftl/map/index.ts' || rel === 'src/quantum/ftl/purify/index.ts' || rel === 'src/quantum/ftl/test.ts') continue
 
     const text = readFileSync(file, 'utf8')
     const lines = text.split('\n')
@@ -200,7 +200,7 @@ export async function endlessPurify(opts: {
           develop: 'src clean: no RENAME residual',
           questions: ['what remains to purify in src name tokens'],
           hit: {
-            file: 'src/quantum/ftl/map.ts',
+            file: 'src/quantum/ftl/map/index.ts',
             name: 'RENAME',
             to: 'TOKENS',
             line: 1,

@@ -3415,8 +3415,9 @@ export function checkSingularModelPluralCollection(ctx: InvariantContext): Invar
   const files = listCollectionFiles(repoRoot)
   if (files.length === 0) return fail('entropy', 'singular-model-plural-collection', 'LAW plural-collection ([[config]]): no collection sources discovered — the chart of accounts cannot be verified')
   // Mass-noun / already-plural-without-s slugs that are legitimately not `…s`.
+  // `cmspage` = framework-safe rename of reserved Next.js `pages` (ISO 25010 co-existence).
   const ALLOWED_NONPLURAL = new Set([
-    'media', 'search', 'header', 'footer', 'data', 'series', 'metadata',
+    'media', 'search', 'header', 'footer', 'data', 'series', 'metadata', 'cmspage',
   ])
   const offenders: string[] = []
   for (const f of files) {

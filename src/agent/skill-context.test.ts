@@ -139,9 +139,12 @@ describe('agent skill load — realiseSkillsForPath', () => {
   })
 
   it('contextBytes ≪ skills.index (never loads 77MB bundle)', () => {
-    let indexBytes = 76_756_764
+    // Full emit ~77MB; CI/deploy uses --stub (~265B). Compare against the FULL size floor
+    // so a stubbed index cannot invert the inequality.
+    const FULL_INDEX_FLOOR = 76_756_764
+    let indexBytes = FULL_INDEX_FLOOR
     try {
-      indexBytes = statSync(SKILL_INDEX_PATH).size
+      indexBytes = Math.max(statSync(SKILL_INDEX_PATH).size, FULL_INDEX_FLOOR)
     } catch {
       // gitignored on fresh clone
     }

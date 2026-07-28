@@ -4,7 +4,7 @@
  * Host transcendental/runtime Math (PI · cos · sin · sqrt · exp · … and any `Math.`)
  * bypasses the carrier. Scan algebra atoms; baseline 0 (theorem, not ratchet).
  *
- *   tsx src/algebra/host.ts
+ *   tsx src/algebra/host/index.ts
  *
  * @see ./index · ../qubit · ../pi · ../phi · ../e · ../rules
  */
@@ -81,7 +81,7 @@ export function hostMathViolations(cwd: string = process.cwd()): readonly HostMa
     for (const file of walk(root)) {
       const rel = relative(cwd, file).replace(/\\/g, '/')
       // gate definition file: allow the scanner source only
-      if (rel === 'src/algebra/host.ts') continue
+      if (rel === 'src/algebra/host/index.ts') continue
       const raw = readFileSync(file, 'utf8')
       const code = codeOf(raw)
       const lines = code.split('\n')
