@@ -464,7 +464,6 @@ export function exportsForTokens(mod: Record<string, unknown> = {}): {
     ...mod,
   }
   const missing = [...new Set(Object.values(
-    // eslint-disable-next-line @typescript-eslint/no-require-imports -- inline avoid cycle; values from map
     { address: 'reuse', reuse: 'reuse', search: 'reuse', amortize: 'amortize', crack: 'crack', cracks: 'cracks', boundary: 'boundary', seal: 'seal', chat: 'chat', chatLocal: 'chatLocal', chatEscalate: 'chatEscalate', research: 'research', researcher: 'researcher', memo: 'researcher', token: 'amortize', fold: 'reuse', ftl: 'ftl' },
   ))].filter((name) => typeof (api as Record<string, unknown>)[name] !== 'function')
   return { missing, holds: missing.length === 0 }
