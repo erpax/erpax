@@ -1,3 +1,9 @@
+/**
+ * standards/improve — address-index · FTL gaps · chat heal gates.
+ *
+ * @standard ISO-25010:2023 systems-and-software-quality
+ * @see ./index.ts · ../catalogue.ts · ../../quantum/ftl
+ */
 import { describe, it, expect } from 'vitest'
 import {
   atomPath,
