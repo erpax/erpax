@@ -3172,6 +3172,8 @@ tests/e2e/i18n.e2e.spec.ts:18: * @standard EU 1958/1 official-languages-of-the-e
 tests/e2e/search.e2e.spec.ts:6: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/search.e2e.spec.ts:7: * @standard W3C WebDriver-BiDi browser-automation
 tests/e2e/search.e2e.spec.ts:9: * @standard schema.org SearchAction
+tests/e2e/smoke.e2e.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing system-test-level
+tests/e2e/smoke.e2e.spec.ts:6: * @standard W3C WebDriver-BiDi browser-automation
 tests/e2e/standards/audit/saf-t-export-flow.e2e.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/standards/audit/saf-t-export-flow.e2e.spec.ts:12: * @standard OECD SAF-T 2.0 audit-file
 tests/e2e/standards/compliance/gdpr-data-subject-request.e2e.spec.ts:10: * @standard ISO/IEC-29119:2022 software-testing system-test-level

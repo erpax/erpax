@@ -1,7 +1,10 @@
 import { describe, it, expect } from 'vitest'
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
+import { join } from 'node:path'
+import { tmpdir } from 'node:os'
 import { pathNavMeta } from '@/navigation'
 import { contentUuidOf } from '../upgrade/seal'
-import { relatedOf } from './index'
+import { relatedOf, buildSkillIndexStub } from './index'
 
 describe('skill/router/build — index emit helpers', () => {
   it('contentUuidOf is deterministic v5-style', () => {
@@ -24,6 +27,20 @@ describe('skill/router/build — index emit helpers', () => {
         group: segs[0] ?? '',
         route: '/' + segs.join('/') + '/SKILL',
       })
+    }
+  })
+
+  it('buildSkillIndexStub writes empty pool under the Worker size budget', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'skill-stub-'))
+    try {
+      const r = buildSkillIndexStub(dir)
+      expect(r.count).toBe(0)
+      expect(r.bytes).toBeLessThan(2_000)
+      const body = readFileSync(join(dir, r.out), 'utf8')
+      expect(body).toContain('export const SKILL_INDEX')
+      expect(body).toContain('[]')
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
     }
   })
 })

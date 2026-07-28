@@ -1,0 +1,33 @@
+name: Setup erpax
+description: Node 22 + pnpm install + empty skills.index stub (fits Worker limits; skips 80MB emit)
+
+inputs:
+  skill-index:
+    description: 'stub (default, CI/deploy) or full (local research only)'
+    required: false
+    default: stub
+
+runs:
+  using: composite
+  steps:
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+        cache: pnpm
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile
+
+    - name: Emit skills.index
+      shell: bash
+      run: |
+        if [ "${{ inputs.skill-index }}" = "full" ]; then
+          pnpm erpax corpus skill
+        else
+          pnpm erpax corpus skill-stub
+        fi

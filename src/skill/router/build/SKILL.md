@@ -13,10 +13,11 @@ Child atom of [[router]] — compiles `src/**/SKILL.md` into `skills.index.ts` (
 
 | Function | Role |
 | --- | --- |
-| `buildSkillIndex` | Walk src corpus → `skills.index.ts` |
+| `buildSkillIndex` | Walk src corpus → `skills.index.ts` (full; local research) |
+| `buildSkillIndexStub` | Empty pool for CI/deploy (fits Worker 3MB) |
 | `buildInstalledCatalogue` | Walk Claude plugins → `installed.catalogue.ts` |
 | `relatedOf` | Derive [[links]] from SKILL body |
 
-**Law — [[law]]: build emit is computed — regenerate from live corpus; never hand-edit generated index files.**
+**Law — [[law]]: build emit is computed — regenerate from live corpus; never hand-edit generated index files. CI/deploy uses `--stub` so the Worker stays under the hardware limit.**
 
 @see ../index.ts · ../merge · ../upgrade · [[navigation]]

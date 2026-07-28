@@ -34,8 +34,8 @@ export default defineConfig({
   outputDir: 'public/evidence/test-results',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://localhost:3000',
+    /* Base URL — local dev default; post-deploy smoke sets PLAYWRIGHT_BASE_URL. */
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -86,7 +86,7 @@ export default defineConfig({
         // only when you know `pnpm dev` already matches this env.
         reuseExistingServer: !process.env.CI,
         url: 'http://localhost:3000',
-        timeout: 120_000,
+        timeout: 180_000,
         gracefulShutdown: {
           signal: 'SIGTERM',
           timeout: 5_000,

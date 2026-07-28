@@ -1,32 +1,17 @@
-# Publish the VitePress docs (the fractal skill corpus) to GitHub Pages.
-#
-# This is erpax's binding to GitHub: every push to main re-renders the corpus
-# and re-publishes it at https://erpax.github.io/erpax/ — the self-development
-# loop made continuous (commit → build → publish, no human in the path).
-#
-# HONEST STATUS (measured 2026-06-06, see .vitepress/config.mts): the full
-# ~2,906-page corpus build OOMs even at 24 GB heap on a 32 GB box, so this first
-# run may fail on the default 16 GB runner. The wiring is intentionally in place
-# regardless so the binding exists; the fix is one of:
-#   • enable a 64 GB GitHub larger runner and raise --max-old-space-size, or
-#   • land the chunked / per-section build the config note calls for.
-# Until then, re-run with workflow_dispatch after either change.
+# VitePress docs → GitHub Pages. Manual only until chunked build lands
+# (full corpus OOMs on default 16GB runners).
 name: Deploy Docs (GitHub Pages)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
-# Least-privilege tokens the Pages deploy needs.
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# One in-flight Pages deploy at a time; don't cancel a running publish.
 concurrency:
-  group: pages
+  group: pages-docs
   cancel-in-progress: false
 
 jobs:
@@ -34,41 +19,24 @@ jobs:
     name: Build VitePress
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # full history: transformPageData reads the live tree
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+          fetch-depth: 0
+      - uses: ./.github/actions/setup
         with:
-          node-version: '22'
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
+          skill-index: stub
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
         with:
-          enablement: true # turn on Pages (source: GitHub Actions) if not already
-
+          enablement: true
       - name: Build docs
         env:
-          # Project page → base must be /erpax/; absolute OG/JSON-LD URLs too.
           ERPAX_DOCS_BASE: /erpax/
           ERPAX_SITE_URL: https://erpax.github.io/erpax
-          # Best realistic heap for a 16 GB runner (leave headroom for the OS).
-          # Mirrors `pnpm docs:build` but tunes the ceiling for CI — see note above.
           NODE_OPTIONS: --no-deprecation --max-old-space-size=14336
         run: pnpm exec vitepress build
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
 
@@ -80,6 +48,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4

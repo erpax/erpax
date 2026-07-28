@@ -62,8 +62,12 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts',
     },
     e2e: {
-      desc: 'Playwright e2e',
-      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" SKIP_E2E_WEBSERVER=1 playwright test --config=playwright.config.ts',
+      desc: 'Playwright e2e (starts pnpm dev unless SKIP_E2E_WEBSERVER=1)',
+      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" playwright test --config=playwright.config.ts',
+    },
+    'e2e-smoke': {
+      desc: 'UI smoke only (frontend+admin) — set PLAYWRIGHT_BASE_URL for deployed target',
+      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" playwright test --config=playwright.config.ts tests/e2e/smoke.e2e.spec.ts',
     },
   },
   accounting: {
@@ -185,7 +189,11 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
     atoms: { desc: 'Atom catalogue emit', cmd: 'node src/atom/catalogue.mjs' },
     matrix: { desc: 'Uuid matrix collide emit', cmd: 'node src/uuid/matrix/collide.mjs --emit' },
-    skill: { desc: 'Skill router index emit', cmd: `${TSX} src/skill/router/build/index.ts` },
+    skill: { desc: 'Skill router index emit (full; use skill-stub in CI)', cmd: `${TSX} src/skill/router/build/index.ts` },
+    'skill-stub': {
+      desc: 'Empty skills.index for CI/deploy (fits Worker 3MB; skips 80MB emit)',
+      cmd: `cross-env ERPAX_SKILL_INDEX=stub ${TSX} src/skill/router/build/index.ts --stub`,
+    },
     upgrade: { desc: 'Skill upgrade sync', cmd: `${TSX} src/skill/router/upgrade/index.ts --sync` },
     'upgrade-check': { desc: 'Skill upgrade verify', cmd: `${TSX} src/skill/router/upgrade/index.ts --verify` },
     mint: { desc: 'Mint new atoms', cmd: 'node src/generate/mint.mjs' },
@@ -224,11 +232,11 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   deploy: {
     db: {
       desc: 'Migrate remote D1 + optimize',
-      cmd: 'cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs" payload migrate && wrangler d1 execute D1 --command \'PRAGMA optimize\' --env=$CLOUDFLARE_ENV --remote',
+      cmd: 'cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs" payload migrate && wrangler d1 execute D1 --command \'PRAGMA optimize\' --remote',
     },
     app: {
-      desc: 'Build + deploy app to Cloudflare',
-      cmd: 'opennextjs-cloudflare build --env=$CLOUDFLARE_ENV && opennextjs-cloudflare deploy --env=$CLOUDFLARE_ENV',
+      desc: 'Build + deploy app to Cloudflare (OpenNext)',
+      cmd: 'opennextjs-cloudflare build && opennextjs-cloudflare deploy',
     },
   },
   plugin: {
