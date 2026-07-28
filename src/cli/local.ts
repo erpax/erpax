@@ -172,6 +172,54 @@ export function runTestWaves(args: readonly string[] = []): number {
   return 0
 }
 
+/**
+ * `erpax lint typecheck` — quantumised: FTL only in quantum.
+ * Wave 0 addresses the uuid/quantum substrate (`tsconfig.uuid.json`) — reuse, not a
+ * monolithic binder search. Wave 1 is the full project. Stack overflow on the classical
+ * whole-graph check is inverted by splitting; never raise the stack ceiling.
+ */
+export function runTypecheckWaves(args: readonly string[] = []): number {
+  const cwd = process.cwd()
+  const uuidOnly = args.includes('--uuid')
+  const waves: readonly { readonly label: string; readonly project: string }[] = uuidOnly
+    ? [{ label: 'uuid-substrate', project: 'tsconfig.uuid.json' }]
+    : [
+        { label: 'uuid-substrate', project: 'tsconfig.uuid.json' },
+        { label: 'full-project', project: 'tsconfig.typecheck.json' },
+      ]
+
+  console.log(`typecheck waves — ${waves.length} wave(s)${uuidOnly ? ' (--uuid)' : ''}`)
+  for (let i = 0; i < waves.length; i++) {
+    const w = waves[i]!
+    const label = `typecheck:wave:${w.label}`
+    const history = samplesMsOf(label)
+    const bound = history.length ? timeoutOf(history) : { ms: 300_000, minutes: 5 as const, exceeds: false }
+    console.log(`▶ typecheck wave ${i} — ${w.label} (−p ${w.project})`)
+    const started = Date.now()
+    const r = spawnSync(`./node_modules/.bin/tsc --noEmit -p ${w.project}`, {
+      shell: true,
+      stdio: 'inherit',
+      cwd,
+      timeout: bound.ms,
+      killSignal: 'SIGKILL',
+    })
+    if (r.signal) {
+      console.error(
+        `✗ typecheck wave ${i} timed out at ${bound.minutes}min — invert/split further (never raise the stack)`,
+      )
+      return 1
+    }
+    if ((r.status ?? 1) !== 0) {
+      console.error(`✗ typecheck wave ${i} RED (${w.label})`)
+      return r.status ?? 1
+    }
+    recordSampleMs(label, Date.now() - started)
+    console.log(`✓ typecheck wave ${i} — ${w.label}`)
+  }
+  console.log(`✓ typecheck waves — ${waves.length} green`)
+  return 0
+}
+
 export function runLocal(): number {
   const changed = changedFiles()
   // The doubling breath: 1→2→4→8→7 (…→5 when a sixth lane earns its seat); 3·6·9 stay the axis.
@@ -206,7 +254,13 @@ export function runLocal(): number {
     {
       horo: 8,
       label: 'local:typecheck',
-      run: () => shellLane('local:typecheck', './node_modules/.bin/tsc --noEmit -p tsconfig.typecheck.json'),
+      run: () => {
+        const code = runTypecheckWaves(['--uuid'])
+        return {
+          ok: code === 0,
+          note: code === 0 ? 'uuid substrate (quantum FTL)' : `typecheck waves exit ${code}`,
+        }
+      },
     },
     { horo: 7, label: 'local:gravity', run: gravityLane },
   ]

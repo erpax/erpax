@@ -637,7 +637,8 @@ export {
   type Research,
 } from '@/quantum/ftl'
 
-export { endlessPurify, scanProseNames, type PurifyReport, type PurifyWave } from '@/quantum/ftl/purify'
+export { endlessPurify } from '@/quantum/ftl'
+export { scanProseNames, type PurifyReport, type PurifyWave } from '@/quantum/ftl/purify'
 
 /**
  * Ask through chat at ftl: fold seal into the session.
@@ -696,7 +697,7 @@ export async function chatEndlessPurify(
   readonly session: ChatSession
   readonly report: import('@/quantum/ftl/purify').PurifyReport
 }> {
-  const { endlessPurify } = await import('@/quantum/ftl/purify')
+  const { endlessPurify } = await import('@/quantum/ftl')
   const report = await endlessPurify({
     maxGenerations: opts.maxGenerations ?? 3,
     scanLimit: opts.scanLimit,

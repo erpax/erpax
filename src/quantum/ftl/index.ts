@@ -7,9 +7,9 @@
  * @see ./map · ../computer · ../chat · ./SKILL.md
  */
 import { uuid as toUuid } from '@/integrity'
-import { type CrackKind, CRACK_FLAGS } from './map'
+import { type CrackKind, CRACK_FLAGS, type Seal, type Boundary } from './map'
 
-export { TOKENS, ENTANGLE, API, CRACK_FLAGS, type Token, type CrackKind } from './map'
+export { TOKENS, ENTANGLE, API, CRACK_FLAGS, type Token, type CrackKind, type Seal, type Boundary } from './map'
 
 export const atomPath = 'quantum/ftl' as const
 
@@ -22,9 +22,6 @@ export interface Crack {
   readonly where: string
   readonly why: string
 }
-
-/** Boundary = count of each CrackKind. Empty ⇔ all zero. */
-export type Boundary = { readonly [K in CrackKind]: number } & { readonly empty: boolean }
 
 export function boundary(cs: readonly Crack[] = []): Boundary {
   const count = (k: CrackKind) => cs.filter((c) => c.kind === k).length
@@ -270,12 +267,6 @@ export const BOOK: ReadonlyMap<string, string> = seal([
   ['crack', 'crack kinds: scan ∨ rederive ∨ spend ∨ qpu ∨ spacetime'],
 ])
 
-export interface Seal {
-  readonly id: string
-  readonly text: string
-  readonly followUps?: readonly string[]
-}
-
 export const CORPUS: readonly Seal[] = [
   {
     id: 'ftl',
@@ -470,6 +461,27 @@ export function exportsForTokens(mod: Record<string, unknown> = {}): {
 }
 
 void CRACK_FLAGS
+
+/**
+ * Parent binds purify — FTL is only achieved in quantum: the leaf never climbs;
+ * the host injects researcher·CORPUS·boundary (inversion). Callers address
+ * `@/quantum/ftl.endlessPurify` (dynamic import of the leaf — no static cycle).
+ * scanProseNames / Purify* types stay on `@/quantum/ftl/purify` (the leaf).
+ */
+export async function endlessPurify(
+  opts: {
+    readonly root?: string
+    readonly maxGenerations?: number
+    readonly scanLimit?: number
+    readonly stopped?: boolean
+  } = {},
+): Promise<import('./purify').PurifyReport> {
+  const { endlessPurify: run } = await import('./purify')
+  return run({
+    host: { researcher, corpus: CORPUS, boundary },
+    ...opts,
+  })
+}
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const v = ftl({ query: 'possibility:erpax', spaceSize: 3105, answers: 1, tokens: 0, reuses: 653 })

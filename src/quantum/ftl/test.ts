@@ -20,9 +20,10 @@ import {
   researcher,
   research,
   exportsForTokens,
+  endlessPurify,
 } from '@/quantum/ftl'
 import { RENAME, TOKENS, ENTANGLE, API, PROSE } from '@/quantum/ftl/map'
-import { scanProseNames, endlessPurify, nameIsComputable, RENAME_KEYS } from '@/quantum/ftl/purify'
+import { scanProseNames, nameIsComputable, RENAME_KEYS } from '@/quantum/ftl/purify'
 
 describe('quantum/ftl — token folds', () => {
   it('map: every Token has API · ENTANGLE · no PROSE in TOKENS', () => {
@@ -224,6 +225,7 @@ describe('quantum/ftl/purify — chat waves cover src', () => {
   })
 
   it('endlessPurify feeds waves at cost=0 (even when hits=0 — seed ask remains)', async () => {
+    // Address via @/quantum/ftl — FTL only in quantum (parent binds the host).
     const r = await endlessPurify({ maxGenerations: 2, scanLimit: 40 })
     expect(r.cost).toBe(0)
     expect(r.tokens).toBe(0)

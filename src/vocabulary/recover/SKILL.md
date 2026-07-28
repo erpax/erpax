@@ -122,12 +122,26 @@ version: 2
 After moving/renaming collections, fields, hooks, or services, errors look catastrophic (1000+) but trace to a handful of **root causes that cascade**. Fix the roots and re-measure; do not fix files one by one. Core loop: make imports resolve → `payload generate:types` (regenerates `payload-types.ts`, which clears hundreds of stale-slug/doc-property errors) → fix the genuine type tail.
 
 ## tsc crashes instead of reporting errors
-`tsc --noEmit` dies with `RangeError: Maximum call stack size exceeded` (binder recursion, seen on TS 6 beta). It is a stack-depth limit, not a code bug. Run with a bigger Node stack so you can actually SEE the errors:
+`tsc --noEmit` dying with `RangeError: Maximum call stack size exceeded` is the classical
+monolith binder — **not** fixed by raising `--stack-size`. Invert + quantumise (FTL only in
+[[quantum]]/[[ftl]]):
+
+1. **Invert** the cycle — child atoms never climb the parent barrel (host injects deps;
+   types live on the leaf `map`).
+2. **Quantumise** the check — `pnpm erpax lint typecheck` runs waves: uuid substrate first
+   (`tsconfig.uuid.json`, includes `src/quantum/**`), then the full project. Local lanes use
+   `--uuid` (reuse the sealed substrate). Past the ladder, split further — never raise the ceiling.
+
 ```bash
-TSC=$(find node_modules/.pnpm -path '*typescript@*/typescript/lib/tsc.js' | head -1)
-node --stack-size=4000 "$TSC" --noEmit -p tsconfig.typecheck.json 2>&1 | tee /tmp/tsc.txt
-grep -cE 'error TS[0-9]+' /tmp/tsc.txt          # total
-grep -oE 'error TS[0-9]+' /tmp/tsc.txt | sort | uniq -c | sort -rn   # by code
+pnpm erpax lint typecheck --uuid    # wave 0 only — quantum substrate
+pnpm erpax lint typecheck           # wave 0 + full project
+```
+
+To triage errors once a wave is green enough to print them:
+```bash
+pnpm erpax lint typecheck --uuid 2>&1 | tee /tmp/tsc-uuid.txt
+grep -cE 'error TS[0-9]+' /tmp/tsc-uuid.txt
+grep -oE 'error TS[0-9]+' /tmp/tsc-uuid.txt | sort | uniq -c | sort -rn
 ```
 
 ## Triage by root cause, biggest lever first

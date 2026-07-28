@@ -129,3 +129,13 @@ export const PROSE = [
   'Required',
   'quantumise',
 ] as const
+
+/** Boundary = count of each CrackKind. Empty ⇔ all zero. Lives on the map leaf so purify never climbs the parent. */
+export type Boundary = { readonly [K in CrackKind]: number } & { readonly empty: boolean }
+
+/** Sealed research row — types on the map leaf; CORPUS/researcher stay on the parent (host injects them). */
+export interface Seal {
+  readonly id: string
+  readonly text: string
+  readonly followUps?: readonly string[]
+}

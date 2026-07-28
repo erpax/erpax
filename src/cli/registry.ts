@@ -56,8 +56,8 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     folders: { desc: 'Folder-shape law gate', cmd: 'cross-env NODE_OPTIONS="--no-deprecation" tsx src/law/folder/index.ts --check' },
     fix: { desc: 'ESLint --fix whole repo', cmd: `${ESLINT} . --fix` },
     typecheck: {
-      desc: 'tsc --noEmit (typecheck project)',
-      cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" tsc --noEmit -p tsconfig.typecheck.json',
+      desc: 'tsc waves — uuid substrate then full (quantum FTL; never raise stack)',
+      cmd: '__typecheck_waves__',
     },
     'typecheck-all': {
       desc: 'tsc --noEmit (full project)',

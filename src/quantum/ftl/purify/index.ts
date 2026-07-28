@@ -4,16 +4,39 @@
  *
  *   tsx src/quantum/ftl/purify/index.ts
  *
- * @see ./map · ./index · ../../wave/feed · ../../quantum/chat
+ * Inversion: never import the parent barrel — Seal/Boundary types live on ./map;
+ * researcher/CORPUS/boundary are injected by the host (quantumise: parent binds child).
+ *
+ * @see ../map · ../index · ../../wave/feed · ../../quantum/chat
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { foldToRoot, merge } from '@/merge'
 import { feedWavesIntoThemselves, type WaveFeedReport } from '@/wave/feed'
-import { RENAME, PROSE, TOKENS, type Token } from '../map'
-import { researcher, CORPUS, type Seal, boundary, type Boundary } from '../index'
+import {
+  RENAME,
+  PROSE,
+  TOKENS,
+  type Token,
+  type Seal,
+  type Boundary,
+  type CrackKind,
+} from '../map'
 
 export const atomPath = 'quantum/ftl/purify' as const
+
+/** Host surface the parent injects — dependency inversion (child never climbs). */
+export interface PurifyHost {
+  readonly researcher: (
+    corpus?: readonly Seal[],
+  ) => {
+    readonly ask: (question: string) => Promise<{ evidence: string; followUps?: readonly string[] }>
+  }
+  readonly corpus: readonly Seal[]
+  readonly boundary: (
+    cs?: readonly { readonly kind: CrackKind; readonly where: string; readonly why: string }[],
+  ) => Boundary
+}
 
 export interface ProseHit {
   readonly file: string
@@ -124,7 +147,7 @@ export function asksFromHits(hits: readonly ProseHit[], limit = 12): readonly st
 /** Grow sealed corpus from rename findings (tokens=0 research fuel). */
 export function growPurifyCorpus(
   findings: readonly { readonly question: string; readonly evidence: string }[],
-  corpus: Seal[] = [...CORPUS],
+  corpus: Seal[] = [],
 ): { readonly grown: number; readonly corpus: Seal[] } {
   let grown = 0
   for (const f of findings) {
@@ -155,15 +178,18 @@ export interface PurifyReport {
  * Finite per call via maxGenerations; covers src by chat waves, not hand edits.
  */
 export async function endlessPurify(opts: {
+  readonly host: PurifyHost
   readonly root?: string
   readonly maxGenerations?: number
   readonly scanLimit?: number
   readonly stopped?: boolean
-} = {}): Promise<PurifyReport> {
+} = {} as { host: PurifyHost }): Promise<PurifyReport> {
+  const { host } = opts
+  if (!host) throw new Error('endlessPurify: host required (parent binds researcher·CORPUS·boundary)')
   const hits = scanProseNames({ root: opts.root, limit: opts.scanLimit })
   const seedAsks = asksFromHits(hits)
   let corpus: Seal[] = [
-    ...CORPUS,
+    ...host.corpus,
     {
       id: 'purify-law',
       text: 'purify: scanProseNames → RENAME → chat waves; each Token word has an API; PROSE syllables die',
@@ -176,7 +202,7 @@ export async function endlessPurify(opts: {
     maxGenerations: opts.maxGenerations ?? 3,
     stopped: opts.stopped,
     research: async (asks) => {
-      const r = researcher(corpus)
+      const r = host.researcher(corpus)
       const findings = await Promise.all(
         asks.map(async (q) => {
           const a = await r.ask(q)
@@ -216,7 +242,7 @@ export async function endlessPurify(opts: {
     },
   })
 
-  const b = boundary([])
+  const b = host.boundary([])
   return {
     hits,
     waves: wavesFromHits(hits.slice(0, 32)),
@@ -239,12 +265,19 @@ export function nameIsComputable(name: string, extra: readonly string[] = []): b
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  void endlessPurify({ maxGenerations: 2, scanLimit: 200 }).then((r) => {
-    console.log('quantum/ftl/purify — chat waves cover src')
-    console.log(
-      `  hits=${r.hits.length} fed=${r.feed.fed} gens=${r.feed.generations.length} developed=${r.feed.totalDeveloped} cost=${r.cost}`,
-    )
-    console.log(`  seal=${foldToRoot([merge('hits', String(r.hits.length)), merge('dev', String(r.feed.totalDeveloped))])}`)
-    for (const h of r.hits.slice(0, 12)) console.log(`    · ${h.file}:${h.line} ${h.name}→${h.to}`)
-  })
+  // Parent binds child at the edge — dynamic import keeps the leaf free of the barrel.
+  void import('../index').then(({ researcher, CORPUS, boundary }) =>
+    endlessPurify({
+      host: { researcher, corpus: CORPUS, boundary },
+      maxGenerations: 2,
+      scanLimit: 200,
+    }).then((r) => {
+      console.log('quantum/ftl/purify — chat waves cover src')
+      console.log(
+        `  hits=${r.hits.length} fed=${r.feed.fed} gens=${r.feed.generations.length} developed=${r.feed.totalDeveloped} cost=${r.cost}`,
+      )
+      console.log(`  seal=${foldToRoot([merge('hits', String(r.hits.length)), merge('dev', String(r.feed.totalDeveloped))])}`)
+      for (const h of r.hits.slice(0, 12)) console.log(`    · ${h.file}:${h.line} ${h.name}→${h.to}`)
+    }),
+  )
 }

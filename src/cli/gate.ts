@@ -12,7 +12,7 @@ import {
 import { formatVerdict, rosettaGate } from '@/gate/rosetta'
 import { runPayloadApprovalCli } from '@/payload/approval'
 import { startProgressHeartbeat } from './progress-heartbeat'
-import { runTestWaves } from './local'
+import { runTestWaves, runTypecheckWaves } from './local'
 
 export const GATE_LANES: readonly (readonly [string, string])[] = [
   // LANE ZERO — does the app LOAD? Every lane below is a statement about code that runs; if it does not,
@@ -104,8 +104,13 @@ export function runGate(argv: readonly string[] = process.argv.slice(2)): number
   for (let i = 0; i < total; i++) {
     const [label, cmd] = GATE_LANES[i]!
     console.log(`\n▶ gate [${i + 1}/${total}] — ${label}`)
-    // test:int is receipt-split waves, self-bounded per batch — run it directly, not under the 5-min lane cap.
-    const code = label === 'test:int' ? runTestWaves([]) : runShell(cmd, [], `gate — ${label}`)
+    // test:int / typecheck are quantumised waves — self-bounded; never under the 5-min shell rung.
+    const code =
+      label === 'test:int'
+        ? runTestWaves([])
+        : label === 'typecheck'
+          ? runTypecheckWaves([])
+          : runShell(cmd, [], `gate — ${label}`)
     if (code !== 0) {
       console.error(`\n✗ gate — failed at lane ${i + 1}/${total}: ${label}`)
       return code
