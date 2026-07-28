@@ -80,11 +80,6 @@ tsx src/law/folder/index.ts --check
 # Skill frontmatter YAML safety — an unquoted description with ": " breaks the docs
 # YAML parse (bit access/sacred). Another step of the one horo gate (who can't dance can't join).
 node scripts/check-skill-frontmatter.mjs
-# Type-aware ESLint (nextTs) on the full src tree needs a large V8 stack —
-# Payload recursive types overflow the default under post-gate memory pressure.
-# NODE_OPTIONS forbids --stack-size; invoke node with an explicit stack.
-node --stack-size=65536 --max-old-space-size=8000 ./node_modules/eslint/bin/eslint.js \
-  "src/**/*.{ts,tsx}" --ignore-pattern "src/migrations/*_*.ts" --max-warnings 0
-# tsc needs a large heap after eslint (same Payload graph); default ~4GB OOMs.
-NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" tsc --noEmit -p tsconfig.typecheck.json
-NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts
+# Lint · typecheck · vitest live in CI (.github/workflows/ci.yml) + Cloudflare deploy.
+# Running the full type-aware suite here duplicated ~15min and OOMed/stack-overflowed
+# on Payload recursive types after the long local gate. Push stays lean; CI is the seal.
