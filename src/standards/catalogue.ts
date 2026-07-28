@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 130,
+    "count": 129,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -132,7 +132,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/export/standards-import.ts",
+        "path": "src/factory/recompute-parent-aggregates.ts",
         "section": ""
       }
     ]
@@ -270,648 +270,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "EU-2019/1150",
-    "family": "eu",
-    "title": "Platform-to-Business Regulation — P2B (Regulation (EU) 2019/1150)",
-    "uuid": "1d8762c4-7443-8908-a1b3-ef39a6e40408",
-    "color": "hsl(359 83% 42%)",
-    "count": 356,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/activities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/activities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2019/1152",
-    "family": "eu",
-    "title": "Transparent and Predictable Working Conditions Directive (EU) 2019/1152",
-    "uuid": "a450c879-c8dc-8f59-aec1-310a6161d919",
-    "color": "hsl(304 80% 39%)",
-    "count": 356,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/activities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/activities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2019/1937",
-    "family": "eu",
-    "title": "Directive (EU) 2019/1937 on the protection of persons who report breaches of Union law (Whistleblower Directive)",
-    "uuid": "b036e5bd-808c-8076-a5dd-c8e87eb48b7a",
-    "color": "hsl(110 74% 59%)",
-    "count": 356,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/activities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/activities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2019/2161",
-    "family": "eu",
-    "title": "Modernisation (Omnibus) Directive (Directive (EU) 2019/2161)",
-    "uuid": "5566b9af-e847-86c3-8c48-959650deec5e",
-    "color": "hsl(262 65% 45%)",
-    "count": 356,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/activities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/activities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2019/770",
-    "family": "eu",
-    "title": "Digital Content and Digital Services Directive (Directive (EU) 2019/770)",
-    "uuid": "eac09093-2fa7-8e1f-9371-a70157e3cf78",
-    "color": "hsl(336 59% 41%)",
-    "count": 356,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/activities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/activities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2019/771",
-    "family": "eu",
-    "title": "Sale of Goods Directive (Directive (EU) 2019/771)",
-    "uuid": "ae885df4-75ec-83d5-bf98-aa1a5820bbb0",
-    "color": "hsl(40 78% 42%)",
-    "count": 356,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/activities/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/activities/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/auto/set/timestamp/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "EU-Intrastat-Reg-2019/2152",
     "family": "eu",
     "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
     "uuid": "5cbb6bc1-887a-8c8c-88fd-fba1a9346c71",
     "color": "hsl(339 57% 39%)",
-    "count": 356,
+    "count": 355,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -1007,536 +371,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2015/847",
-    "family": "eu",
-    "title": "Regulation (EU) 2015/847 on information accompanying transfers of funds and repealing Regulation (EC) No 1781/2006 (Wire Transfer Regulation)",
-    "uuid": "a0890a2a-8aa5-8b07-abe5-46b5521231f0",
-    "color": "hsl(57 65% 56%)",
-    "count": 310,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/BudgetVsActualCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/KPIDashboard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(api)/api/subscriptions/create/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/products/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2015/849",
-    "family": "eu",
-    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
-    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
-    "color": "hsl(79 77% 56%)",
-    "count": 310,
-    "modules": [
-      {
-        "path": "src/accounting/analysis/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/analysis/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/money/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/accounting/reports/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/BudgetVsActualCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/KPIDashboard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(api)/api/subscriptions/create/route.ts",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/app/(frontend)/[locale]/products/page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2023/1113",
-    "family": "eu",
-    "title": "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds / crypto Travel Rule)",
-    "uuid": "21f55193-2265-8002-9a8c-70a9b8300433",
-    "color": "hsl(53 66% 41%)",
-    "count": 248,
-    "modules": [
-      {
-        "path": "src/agent/blocks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/bootstrap.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/coil.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/context.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/effect-processor.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/runtime.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/types.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/auto-generated.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/dry-clean.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/in-process-client.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/rebuild-from-source.ts",
-        "section": "§5.5"
-      },
-      {
-        "path": "src/agents/mcp/self-test.ts",
-        "section": "§5.5"
-      },
-      {
-        "path": "src/agents/mcp/standardization.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§5.3"
-      },
-      {
-        "path": "src/agents/mcp/tool/SKILL.md",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/mcp/tool/consistency.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/mcp/tool/index.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/registered/consistency.agent.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/ai/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/anomaly-detection.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/audit-summarisation.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/bank-matching.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/cloudflare-ai.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/document-classification.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2023/2854",
-    "family": "eu",
-    "title": "Regulation (EU) 2023/2854 — Data Act, on harmonised rules on fair access to and use of data",
-    "uuid": "1b87a397-6113-8257-9b81-fb82841c78c9",
-    "color": "hsl(207 78% 45%)",
-    "count": 248,
-    "modules": [
-      {
-        "path": "src/agent/blocks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/bootstrap.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/coil.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/context.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/effect-processor.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/runtime.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/types.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/auto-generated.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/dry-clean.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/in-process-client.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/rebuild-from-source.ts",
-        "section": "§5.5"
-      },
-      {
-        "path": "src/agents/mcp/self-test.ts",
-        "section": "§5.5"
-      },
-      {
-        "path": "src/agents/mcp/standardization.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§5.3"
-      },
-      {
-        "path": "src/agents/mcp/tool/SKILL.md",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/mcp/tool/consistency.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/mcp/tool/index.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/registered/consistency.agent.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/ai/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/anomaly-detection.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/audit-summarisation.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/bank-matching.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/cloudflare-ai.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/document-classification.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2023/956-CBAM",
-    "family": "eu",
-    "title": "Carbon Border Adjustment Mechanism — Regulation (EU) 2023/956",
-    "uuid": "b4f6dd26-c4bf-8dd0-8cc4-5f5db71660b8",
-    "color": "hsl(246 66% 52%)",
-    "count": 248,
-    "modules": [
-      {
-        "path": "src/agent/blocks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/bootstrap.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/coil.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/context.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/effect-processor.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/runtime.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agent/types.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/auto-generated.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/dry-clean.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/in-process-client.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/rebuild-from-source.ts",
-        "section": "§5.5"
-      },
-      {
-        "path": "src/agents/mcp/self-test.ts",
-        "section": "§5.5"
-      },
-      {
-        "path": "src/agents/mcp/standardization.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§5.3"
-      },
-      {
-        "path": "src/agents/mcp/tool/SKILL.md",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/mcp/tool/consistency.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/mcp/tool/index.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/agents/registered/consistency.agent.ts",
-        "section": "§5.7"
-      },
-      {
-        "path": "src/ai/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/anomaly-detection.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/audit-summarisation.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/bank-matching.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/cloudflare-ai.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/document-classification.ts",
         "section": ""
       }
     ]
@@ -1547,7 +381,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation)",
     "uuid": "a7d2e799-e418-83ca-add4-039a74d0af59",
     "color": "hsl(122 76% 47%)",
-    "count": 206,
+    "count": 207,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -1610,6 +444,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/bank/research/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/bank/statement/import/service/index.ts",
         "section": ""
       },
@@ -1639,1494 +477,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/classify/tax/id/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/classify/tax/id/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2017/1132",
-    "family": "eu",
-    "title": "Directive (EU) 2017/1132 relating to certain aspects of company law (codification)",
-    "uuid": "11f95f98-2f21-8aba-ba32-3c9408e5d1ef",
-    "color": "hsl(281 80% 46%)",
-    "count": 144,
-    "modules": [
-      {
-        "path": "src/address/validation/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/address/validation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/invoice-ocr.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/tax-classification.ts",
-        "section": "§BT-151"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/bookings/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/address/formats/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/country/specifics/index.ts",
-        "section": "§BG-1"
-      },
-      {
-        "path": "src/country/api/client/SKILL.md",
-        "section": "§B2G"
-      },
-      {
-        "path": "src/country/api/client/index.ts",
-        "section": "§B2G"
-      },
-      {
-        "path": "src/country/client/bg-hybrid-invoice.ts",
-        "section": "§6"
-      },
-      {
-        "path": "src/country/client/bg-vat.ts",
-        "section": "§BG-23"
-      },
-      {
-        "path": "src/customers/SKILL.md",
-        "section": "§BG-7"
-      },
-      {
-        "path": "src/customers/index.ts",
-        "section": "§BG-7"
-      },
-      {
-        "path": "src/customers/sales/orders/SKILL.md",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/customers/sales/orders/index.ts",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/customers/sales/orders/shipments/SKILL.md",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/customers/sales/orders/shipments/index.ts",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/decentralization/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/types.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2017/828",
-    "family": "eu",
-    "title": "Directive (EU) 2017/828 (SRD II) amending Directive 2007/36/EC as regards the encouragement of long-term shareholder engagement",
-    "uuid": "78becb9c-64ae-8a87-89c0-4614e0a5068e",
-    "color": "hsl(310 83% 50%)",
-    "count": 144,
-    "modules": [
-      {
-        "path": "src/address/validation/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/address/validation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/invoice-ocr.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/tax-classification.ts",
-        "section": "§BT-151"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/bookings/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/address/formats/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/country/specifics/index.ts",
-        "section": "§BG-1"
-      },
-      {
-        "path": "src/country/api/client/SKILL.md",
-        "section": "§B2G"
-      },
-      {
-        "path": "src/country/api/client/index.ts",
-        "section": "§B2G"
-      },
-      {
-        "path": "src/country/client/bg-hybrid-invoice.ts",
-        "section": "§6"
-      },
-      {
-        "path": "src/country/client/bg-vat.ts",
-        "section": "§BG-23"
-      },
-      {
-        "path": "src/customers/SKILL.md",
-        "section": "§BG-7"
-      },
-      {
-        "path": "src/customers/index.ts",
-        "section": "§BG-7"
-      },
-      {
-        "path": "src/customers/sales/orders/SKILL.md",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/customers/sales/orders/index.ts",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/customers/sales/orders/shipments/SKILL.md",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/customers/sales/orders/shipments/index.ts",
-        "section": "§BG-13"
-      },
-      {
-        "path": "src/decentralization/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/types.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2002/58",
-    "family": "eu",
-    "title": "ePrivacy Directive (Directive 2002/58/EC) — privacy and electronic communications (as amended by Directive 2009/136/EC)",
-    "uuid": "1fdea4fd-ddf2-8a5d-8efc-0f182d2749c2",
-    "color": "hsl(238 79% 51%)",
-    "count": 131,
-    "modules": [
-      {
-        "path": "src/access/standard/index.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/agents/registered/data.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/bank-matching.ts",
-        "section": "§Ntry.RmtInf.Ustrd"
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/camt053/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/iso/4217/numeric/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/iso/4217/special/index.ts",
-        "section": "§Ccy"
-      },
-      {
-        "path": "src/connections/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/connections/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/country/api/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2022/1925",
-    "family": "eu",
-    "title": "Regulation (EU) 2022/1925 — Digital Markets Act (DMA)",
-    "uuid": "99abd903-2be6-85f9-ba7b-6ae2e9e4a3b9",
-    "color": "hsl(99 62% 41%)",
-    "count": 123,
-    "modules": [
-      {
-        "path": "src/ai/hs-code-suggestion.ts",
-        "section": ""
-      },
-      {
-        "path": "src/allow/public/read/tenant/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anti/corruption/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/anyone/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/audit/compliance/reporting/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/standard.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/submissions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/or/published/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/agent-capability.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2022/2065",
-    "family": "eu",
-    "title": "Regulation (EU) 2022/2065 — Digital Services Act (DSA)",
-    "uuid": "f1fce4ae-fc69-8307-9f3a-3528a8373ca4",
-    "color": "hsl(28 73% 44%)",
-    "count": 123,
-    "modules": [
-      {
-        "path": "src/ai/hs-code-suggestion.ts",
-        "section": ""
-      },
-      {
-        "path": "src/allow/public/read/tenant/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anti/corruption/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/anyone/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/audit/compliance/reporting/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/standard.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/submissions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/or/published/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/agent-capability.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2022/2554",
-    "family": "eu",
-    "title": "Regulation (EU) 2022/2554 (DORA) on digital operational resilience for the financial sector",
-    "uuid": "1f2ce151-0159-8fc6-8984-d4cdf7dc0f8c",
-    "color": "hsl(60 70% 47%)",
-    "count": 123,
-    "modules": [
-      {
-        "path": "src/ai/hs-code-suggestion.ts",
-        "section": ""
-      },
-      {
-        "path": "src/allow/public/read/tenant/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anti/corruption/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/anyone/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/audit/compliance/reporting/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/standard.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/submissions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/or/published/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/agent-capability.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2022/2555",
-    "family": "eu",
-    "title": "Directive (EU) 2022/2555 (NIS2) — measures for a high common level of cybersecurity across the Union",
-    "uuid": "672f0cf3-96e4-83fe-803d-a8e87a383299",
-    "color": "hsl(135 67% 41%)",
-    "count": 123,
-    "modules": [
-      {
-        "path": "src/ai/hs-code-suggestion.ts",
-        "section": ""
-      },
-      {
-        "path": "src/allow/public/read/tenant/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anti/corruption/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/anyone/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/audit/compliance/reporting/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/standard.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/submissions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/or/published/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/agent-capability.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2022/868",
-    "family": "eu",
-    "title": "Regulation (EU) 2022/868 — Data Governance Act (DGA), on European data governance and amending Regulation (EU) 2018/1724",
-    "uuid": "a4c1f12f-ca9c-8b7a-bada-c3f01ef0d7d3",
-    "color": "hsl(57 86% 61%)",
-    "count": 123,
-    "modules": [
-      {
-        "path": "src/ai/hs-code-suggestion.ts",
-        "section": ""
-      },
-      {
-        "path": "src/allow/public/read/tenant/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anti/corruption/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/anyone/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§5.4"
-      },
-      {
-        "path": "src/audit/compliance/reporting/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/standard.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/submissions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/or/published/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/authenticated/test.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/agent-capability.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2018/1673",
-    "family": "eu",
-    "title": "Directive (EU) 2018/1673 (6th Anti-Money-Laundering Directive, AMLD6) on combating money laundering by criminal law",
-    "uuid": "5d0d3b82-8a4b-8802-84c0-f6e6c2a6255d",
-    "color": "hsl(61 79% 48%)",
-    "count": 99,
-    "modules": [
-      {
-        "path": "src/accounting/proof/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/agent/memory-writer.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/batch.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/events.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/versions.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/registered/engineering.agent.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/api/audit/events/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/api/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/by-agent.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/agent/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/events/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/barrier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/capture/media/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2018/302",
-    "family": "eu",
-    "title": "Geo-blocking Regulation (Regulation (EU) 2018/302)",
-    "uuid": "5fec2727-8ed5-88a4-b744-53f0dc4f2f32",
-    "color": "hsl(76 59% 53%)",
-    "count": 99,
-    "modules": [
-      {
-        "path": "src/accounting/proof/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/agent/memory-writer.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/batch.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/events.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/versions.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/registered/engineering.agent.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/api/audit/events/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/api/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/by-agent.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/agent/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/events/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/barrier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/capture/media/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2018/389-SCA-RTS",
-    "family": "eu",
-    "title": "Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 — regulatory technical standards for strong customer authentication and common and secure open standards of communication (SCA-RTS)",
-    "uuid": "b6bd7981-4978-88fe-aab0-db169e2f11b9",
-    "color": "hsl(341 71% 47%)",
-    "count": 99,
-    "modules": [
-      {
-        "path": "src/accounting/proof/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/agent/memory-writer.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/batch.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/events.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/versions.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/registered/engineering.agent.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/api/audit/events/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/api/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/by-agent.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/agent/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/events/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/barrier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/capture/media/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2018/843",
-    "family": "eu",
-    "title": "Directive (EU) 2018/843 (5th Anti-Money-Laundering Directive, AMLD5) amending Directive (EU) 2015/849",
-    "uuid": "236c9091-ba23-8612-b31a-7ed41603a127",
-    "color": "hsl(68 59% 39%)",
-    "count": 99,
-    "modules": [
-      {
-        "path": "src/accounting/proof/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/agent/memory-writer.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/batch.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/events.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/versions.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/registered/engineering.agent.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/api/audit/events/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/api/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/by-agent.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/agent/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/events/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/barrier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/capture/media/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2018/957",
-    "family": "eu",
-    "title": "Revised Posting of Workers Directive — Directive (EU) 2018/957 amending Directive 96/71/EC",
-    "uuid": "50aa60a9-70e7-8a4e-ad5a-78f845f7dba2",
-    "color": "hsl(130 81% 39%)",
-    "count": 99,
-    "modules": [
-      {
-        "path": "src/accounting/proof/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/agent/memory-writer.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/batch.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/events.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/versions.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/registered/engineering.agent.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/api/audit/events/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/api/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/by-agent.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/agent/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/events/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/barrier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/capture/media/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2014/55",
-    "family": "eu",
-    "title": "Directive 2014/55/EU of 16 April 2014 on electronic invoicing in public procurement (the legal mandate for EN 16931 in B2G)",
-    "uuid": "51148b64-011b-866d-b3b5-f59063e1bc98",
-    "color": "hsl(236 89% 42%)",
-    "count": 55,
-    "modules": [
-      {
-        "path": "src/anchor/SKILL.md",
-        "section": "§2.4"
-      },
-      {
-        "path": "src/anchor/index.ts",
-        "section": "§2.4"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/customers/contracts/contract/signatures/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/emission/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/export/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/fiscal/period/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/integrity/signatures.ts",
-        "section": "§3.12"
-      },
-      {
-        "path": "src/iso/14289/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/profile.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/operation/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/operation/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/routings/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/bills/of/materials/work/orders/routings/index.ts",
         "section": ""
       }
     ]
@@ -3344,324 +694,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "EU-2024/1183",
-    "family": "eu",
-    "title": "Regulation (EU) 2024/1183 (eIDAS 2.0) — amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework (EUDI Wallet)",
-    "uuid": "cda6b30d-36c8-8118-bde9-8df06f1455c2",
-    "color": "hsl(86 59% 51%)",
-    "count": 42,
-    "modules": [
-      {
-        "path": "src/admin/TenantFilters.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/admin/TenantManagement.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/ai/models/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/models/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/BudgetVsActualCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/CostAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/FinancialRatiosCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/KPIDashboard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/ai-audit.ts",
-        "section": "Annex IV"
-      },
-      {
-        "path": "src/beyond/explainability/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/index.ts",
-        "section": "Annex IV"
-      },
-      {
-        "path": "src/blocks/form/Component.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/commerce/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/actions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/index.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/nav/Nav.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/nav/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/discriminator/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/eu/ai/act/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ifrs/15/validate.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2024/1620",
-    "family": "eu",
-    "title": "Regulation (EU) 2024/1620 establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)",
-    "uuid": "a8ba4ebd-560b-8ce9-bf52-57e80de4f2d1",
-    "color": "hsl(354 63% 59%)",
-    "count": 42,
-    "modules": [
-      {
-        "path": "src/admin/TenantFilters.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/admin/TenantManagement.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/ai/models/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/models/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/BudgetVsActualCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/CostAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/FinancialRatiosCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/KPIDashboard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/ai-audit.ts",
-        "section": "Annex IV"
-      },
-      {
-        "path": "src/beyond/explainability/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/index.ts",
-        "section": "Annex IV"
-      },
-      {
-        "path": "src/blocks/form/Component.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/commerce/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/actions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/index.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/nav/Nav.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/nav/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/discriminator/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/eu/ai/act/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ifrs/15/validate.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2024/1624",
-    "family": "eu",
-    "title": "Regulation (EU) 2024/1624 — the single EU AML/CFT Rulebook (AMLR)",
-    "uuid": "e87826e0-2134-89b8-b7c0-b07ef77b799b",
-    "color": "hsl(112 58% 46%)",
-    "count": 42,
-    "modules": [
-      {
-        "path": "src/admin/TenantFilters.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/admin/TenantManagement.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/ai/models/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/models/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/BudgetVsActualCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/CostAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/FinancialRatiosCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/KPIDashboard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/analytics/TrendAnalysisCard.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/ai-audit.ts",
-        "section": "Annex IV"
-      },
-      {
-        "path": "src/beyond/explainability/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/types/index.ts",
-        "section": "Annex IV"
-      },
-      {
-        "path": "src/blocks/form/Component.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/commerce/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/actions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/index.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/nav/Nav.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/dashboard/nav/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/discriminator/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/eu/ai/act/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ifrs/15/validate.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "EU-CSDDD-2024/1760",
     "family": "eu",
     "title": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
@@ -3834,112 +866,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "EU-2011/83",
-    "family": "eu",
-    "title": "Consumer Rights Directive (Directive 2011/83/EU)",
-    "uuid": "7ac042bc-3fc8-84b8-b0df-c18d3623e728",
-    "color": "hsl(104 86% 58%)",
-    "count": 25,
-    "modules": [
-      {
-        "path": "src/beyond/bitemporal/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/export/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/fiscal/periods/carbon/emissions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ghg/protocol/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/profile.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/properties/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/properties/spaces/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/spaces/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tags/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/tags/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tags/taggings/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/tags/taggings/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vocabulary/manufacturing/seed/positions.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vocabulary/manufacturing/seed/standards.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vocabulary/tag/field.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vocabulary/tag/list.ts",
-        "section": ""
-      },
-      {
-        "path": "src/vocabulary/tag/setTagList.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "EU-VAT-Implementing-Reg-282/2011",
     "family": "eu",
     "title": "Council Implementing Regulation (EU) No 282/2011 of 15 March 2011 laying down implementing measures for Directive 2006/112/EC on the common system of value added tax (recast)",
@@ -4100,114 +1026,48 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "EU-2000/31",
+    "id": "CoE-108+",
     "family": "eu",
-    "title": "Directive 2000/31/EC on electronic commerce (e-Commerce Directive)",
-    "uuid": "2d276472-7078-86f0-93b8-9876beda2945",
-    "color": "hsl(39 85% 56%)",
-    "count": 14,
-    "modules": [
-      {
-        "path": "src/country/client/bg-bank-statement-pdf.ts",
-        "section": ""
-      },
-      {
-        "path": "src/country/client/bg-pades-signer.ts",
-        "section": "§12.8"
-      },
-      {
-        "path": "src/country/client/pdf-text-extractor-default.ts",
-        "section": ""
-      },
-      {
-        "path": "src/country/clients/bg/bank/parser/fibank.ts",
-        "section": ""
-      },
-      {
-        "path": "src/country/clients/bg/bank/parser/unicredit-bulbank.ts",
-        "section": ""
-      },
-      {
-        "path": "src/entanglement/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/etsi/en/319/142/SKILL.md",
-        "section": "§12.8"
-      },
-      {
-        "path": "src/etsi/en/319/142/index.ts",
-        "section": "§12.8"
-      },
-      {
-        "path": "src/etsi/en/319/142/profile.ts",
-        "section": "§12.8"
-      },
-      {
-        "path": "src/etsi/en/319/142/signature-dictionary.ts",
-        "section": "§12.8"
-      },
-      {
-        "path": "src/evidence/attestation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/profile.ts",
-        "section": ""
-      },
-      {
-        "path": "src/quantum/entanglement/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/quantum/entanglement/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "EU-2006/43",
-    "family": "eu",
-    "title": "Directive 2006/43/EC on statutory audits of annual accounts and consolidated accounts (as amended by Directive 2014/56/EU)",
-    "uuid": "29b50b9e-0532-8018-afab-9b4fbbdcbb23",
-    "color": "hsl(237 66% 52%)",
+    "title": "Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+    "uuid": "5d03ac11-664b-8a33-981b-2c8f73edf65a",
+    "color": "hsl(51 87% 55%)",
     "count": 9,
     "modules": [
       {
-        "path": "src/base/accounting/field/index.ts",
+        "path": "src/access/standard/index.ts",
         "section": ""
       },
       {
-        "path": "src/localize/SKILL.md",
+        "path": "src/cloudflare/seal.ts",
         "section": ""
       },
       {
-        "path": "src/nace/rev2/index.ts",
+        "path": "src/get/preview/secret/index.ts",
         "section": ""
       },
       {
-        "path": "src/naredba/n/18/vat-groups.ts",
+        "path": "src/mala/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/notary/check/registry/index.ts",
+        "path": "src/nist/sp/800/108/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/self/accounting/index.ts",
+        "path": "src/nist/sp/800/108/index.ts",
         "section": ""
       },
       {
-        "path": "src/shared/SKILL.md",
+        "path": "src/nist/sp/800/108/kdf.ts",
         "section": ""
       },
       {
-        "path": "src/shared/field.ts",
+        "path": "src/tenant/remote/secret/index.ts",
         "section": ""
       },
       {
-        "path": "src/taxing/jurisdictions/index.ts",
-        "section": ""
+        "path": "src/types/events/index.ts",
+        "section": "§107"
       }
     ]
   },
@@ -4304,85 +1164,31 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "CoE-108+",
+    "id": "PSD2",
     "family": "eu",
-    "title": "Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data",
-    "uuid": "5d03ac11-664b-8a33-981b-2c8f73edf65a",
-    "color": "hsl(51 87% 55%)",
-    "count": 8,
+    "title": "EU Payment Services Directive 2 (2015/2366)",
+    "uuid": "f98c2c28-565b-8606-8790-99e38c367638",
+    "color": "hsl(164 64% 54%)",
+    "count": 9,
     "modules": [
       {
-        "path": "src/cloudflare/seal.ts",
+        "path": "src/bank/index.ts",
         "section": ""
       },
       {
-        "path": "src/get/preview/secret/index.ts",
+        "path": "src/bank/research/index.ts",
         "section": ""
       },
       {
-        "path": "src/mala/SKILL.md",
+        "path": "src/country/api/client/index.ts",
         "section": ""
       },
       {
-        "path": "src/nist/sp/800/108/SKILL.md",
+        "path": "src/country/client/berlin-group-psd2.ts",
         "section": ""
       },
       {
-        "path": "src/nist/sp/800/108/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/nist/sp/800/108/kdf.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenant/remote/secret/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/types/events/index.ts",
-        "section": "§107"
-      }
-    ]
-  },
-  {
-    "id": "EU-2005/29",
-    "family": "eu",
-    "title": "Unfair Commercial Practices Directive (Directive 2005/29/EC)",
-    "uuid": "450cae5d-71aa-83dd-98af-7cb8765db30b",
-    "color": "hsl(36 89% 59%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/bulk/op/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/19005/metadata.ts",
-        "section": "§6.7"
-      },
-      {
-        "path": "src/iso/19005/profile.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/batches/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/items/batches/index.ts",
+        "path": "src/tenant/roles/profile/payment-provider.profile.ts",
         "section": ""
       }
     ]
@@ -4493,28 +1299,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/vocabulary/manufacturing/seed/standards.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "PSD2",
-    "family": "eu",
-    "title": "EU Payment Services Directive 2 (2015/2366)",
-    "uuid": "f98c2c28-565b-8606-8790-99e38c367638",
-    "color": "hsl(164 64% 54%)",
-    "count": 7,
-    "modules": [
-      {
-        "path": "src/country/api/client/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/country/client/berlin-group-psd2.ts",
-        "section": ""
-      },
-      {
-        "path": "src/tenant/roles/profile/payment-provider.profile.ts",
         "section": ""
       }
     ]
@@ -4632,6 +1416,46 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "SEPA",
+    "family": "eu",
+    "title": "Single Euro Payments Area schemes",
+    "uuid": "553c7767-3e7e-8cf1-be50-aff8155f57b7",
+    "color": "hsl(220 69% 45%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/bank/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/research/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/client/berlin-group-psd2.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2018/843",
+    "family": "eu",
+    "title": "Directive (EU) 2018/843 (5th Anti-Money-Laundering Directive, AMLD5) amending Directive (EU) 2015/849",
+    "uuid": "236c9091-ba23-8612-b31a-7ed41603a127",
+    "color": "hsl(68 59% 39%)",
+    "count": 2,
+    "modules": [
+      {
+        "path": "src/notary/check/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/notary/check/sanctions/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "EU-Admin-Coop-Reg-904/2010",
     "family": "eu",
     "title": "Council Regulation (EU) No 904/2010 of 7 October 2010 on administrative cooperation and combating fraud in the field of value added tax (recast) — VIES legal basis",
@@ -4650,16 +1474,16 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "SEPA",
+    "id": "EU-2002/58",
     "family": "eu",
-    "title": "Single Euro Payments Area schemes",
-    "uuid": "553c7767-3e7e-8cf1-be50-aff8155f57b7",
-    "color": "hsl(220 69% 45%)",
-    "count": 2,
+    "title": "ePrivacy Directive (Directive 2002/58/EC) — privacy and electronic communications (as amended by Directive 2009/136/EC)",
+    "uuid": "1fdea4fd-ddf2-8a5d-8efc-0f182d2749c2",
+    "color": "hsl(238 79% 51%)",
+    "count": 1,
     "modules": [
       {
-        "path": "src/country/client/berlin-group-psd2.ts",
-        "section": ""
+        "path": "src/self/closure/provider/notification.ts",
+        "section": "§13"
       }
     ]
   },
@@ -4714,6 +1538,87 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "modules": []
   },
   {
+    "id": "EU-2000/31",
+    "family": "eu",
+    "title": "Directive 2000/31/EC on electronic commerce (e-Commerce Directive)",
+    "uuid": "2d276472-7078-86f0-93b8-9876beda2945",
+    "color": "hsl(39 85% 56%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2005/29",
+    "family": "eu",
+    "title": "Unfair Commercial Practices Directive (Directive 2005/29/EC)",
+    "uuid": "450cae5d-71aa-83dd-98af-7cb8765db30b",
+    "color": "hsl(36 89% 59%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2006/43",
+    "family": "eu",
+    "title": "Directive 2006/43/EC on statutory audits of annual accounts and consolidated accounts (as amended by Directive 2014/56/EU)",
+    "uuid": "29b50b9e-0532-8018-afab-9b4fbbdcbb23",
+    "color": "hsl(237 66% 52%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2011/83",
+    "family": "eu",
+    "title": "Consumer Rights Directive (Directive 2011/83/EU)",
+    "uuid": "7ac042bc-3fc8-84b8-b0df-c18d3623e728",
+    "color": "hsl(104 86% 58%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2014/55",
+    "family": "eu",
+    "title": "Directive 2014/55/EU of 16 April 2014 on electronic invoicing in public procurement (the legal mandate for EN 16931 in B2G)",
+    "uuid": "51148b64-011b-866d-b3b5-f59063e1bc98",
+    "color": "hsl(236 89% 42%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2015/847",
+    "family": "eu",
+    "title": "Regulation (EU) 2015/847 on information accompanying transfers of funds and repealing Regulation (EC) No 1781/2006 (Wire Transfer Regulation)",
+    "uuid": "a0890a2a-8aa5-8b07-abe5-46b5521231f0",
+    "color": "hsl(57 65% 56%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2015/849",
+    "family": "eu",
+    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
+    "uuid": "1dd7398a-4877-8f53-aa8b-2420619a37a1",
+    "color": "hsl(79 77% 56%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2017/1132",
+    "family": "eu",
+    "title": "Directive (EU) 2017/1132 relating to certain aspects of company law (codification)",
+    "uuid": "11f95f98-2f21-8aba-ba32-3c9408e5d1ef",
+    "color": "hsl(281 80% 46%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2017/828",
+    "family": "eu",
+    "title": "Directive (EU) 2017/828 (SRD II) amending Directive 2007/36/EC as regards the encouragement of long-term shareholder engagement",
+    "uuid": "78becb9c-64ae-8a87-89c0-4614e0a5068e",
+    "color": "hsl(310 83% 50%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "EU-2018-848",
     "family": "eu",
     "title": "EU Organic Production Regulation",
@@ -4723,11 +1628,200 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "modules": []
   },
   {
+    "id": "EU-2018/1673",
+    "family": "eu",
+    "title": "Directive (EU) 2018/1673 (6th Anti-Money-Laundering Directive, AMLD6) on combating money laundering by criminal law",
+    "uuid": "5d0d3b82-8a4b-8802-84c0-f6e6c2a6255d",
+    "color": "hsl(61 79% 48%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2018/302",
+    "family": "eu",
+    "title": "Geo-blocking Regulation (Regulation (EU) 2018/302)",
+    "uuid": "5fec2727-8ed5-88a4-b744-53f0dc4f2f32",
+    "color": "hsl(76 59% 53%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2018/389-SCA-RTS",
+    "family": "eu",
+    "title": "Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 — regulatory technical standards for strong customer authentication and common and secure open standards of communication (SCA-RTS)",
+    "uuid": "b6bd7981-4978-88fe-aab0-db169e2f11b9",
+    "color": "hsl(341 71% 47%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2018/957",
+    "family": "eu",
+    "title": "Revised Posting of Workers Directive — Directive (EU) 2018/957 amending Directive 96/71/EC",
+    "uuid": "50aa60a9-70e7-8a4e-ad5a-78f845f7dba2",
+    "color": "hsl(130 81% 39%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/1150",
+    "family": "eu",
+    "title": "Platform-to-Business Regulation — P2B (Regulation (EU) 2019/1150)",
+    "uuid": "1d8762c4-7443-8908-a1b3-ef39a6e40408",
+    "color": "hsl(359 83% 42%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/1152",
+    "family": "eu",
+    "title": "Transparent and Predictable Working Conditions Directive (EU) 2019/1152",
+    "uuid": "a450c879-c8dc-8f59-aec1-310a6161d919",
+    "color": "hsl(304 80% 39%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/1937",
+    "family": "eu",
+    "title": "Directive (EU) 2019/1937 on the protection of persons who report breaches of Union law (Whistleblower Directive)",
+    "uuid": "b036e5bd-808c-8076-a5dd-c8e87eb48b7a",
+    "color": "hsl(110 74% 59%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/2161",
+    "family": "eu",
+    "title": "Modernisation (Omnibus) Directive (Directive (EU) 2019/2161)",
+    "uuid": "5566b9af-e847-86c3-8c48-959650deec5e",
+    "color": "hsl(262 65% 45%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/770",
+    "family": "eu",
+    "title": "Digital Content and Digital Services Directive (Directive (EU) 2019/770)",
+    "uuid": "eac09093-2fa7-8e1f-9371-a70157e3cf78",
+    "color": "hsl(336 59% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/771",
+    "family": "eu",
+    "title": "Sale of Goods Directive (Directive (EU) 2019/771)",
+    "uuid": "ae885df4-75ec-83d5-bf98-aa1a5820bbb0",
+    "color": "hsl(40 78% 42%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2022/1925",
+    "family": "eu",
+    "title": "Regulation (EU) 2022/1925 — Digital Markets Act (DMA)",
+    "uuid": "99abd903-2be6-85f9-ba7b-6ae2e9e4a3b9",
+    "color": "hsl(99 62% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2022/2065",
+    "family": "eu",
+    "title": "Regulation (EU) 2022/2065 — Digital Services Act (DSA)",
+    "uuid": "f1fce4ae-fc69-8307-9f3a-3528a8373ca4",
+    "color": "hsl(28 73% 44%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2022/2554",
+    "family": "eu",
+    "title": "Regulation (EU) 2022/2554 (DORA) on digital operational resilience for the financial sector",
+    "uuid": "1f2ce151-0159-8fc6-8984-d4cdf7dc0f8c",
+    "color": "hsl(60 70% 47%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2022/2555",
+    "family": "eu",
+    "title": "Directive (EU) 2022/2555 (NIS2) — measures for a high common level of cybersecurity across the Union",
+    "uuid": "672f0cf3-96e4-83fe-803d-a8e87a383299",
+    "color": "hsl(135 67% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2022/868",
+    "family": "eu",
+    "title": "Regulation (EU) 2022/868 — Data Governance Act (DGA), on European data governance and amending Regulation (EU) 2018/1724",
+    "uuid": "a4c1f12f-ca9c-8b7a-bada-c3f01ef0d7d3",
+    "color": "hsl(57 86% 61%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2023/1113",
+    "family": "eu",
+    "title": "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds / crypto Travel Rule)",
+    "uuid": "21f55193-2265-8002-9a8c-70a9b8300433",
+    "color": "hsl(53 66% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2023/2854",
+    "family": "eu",
+    "title": "Regulation (EU) 2023/2854 — Data Act, on harmonised rules on fair access to and use of data",
+    "uuid": "1b87a397-6113-8257-9b81-fb82841c78c9",
+    "color": "hsl(207 78% 45%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2023/956-CBAM",
+    "family": "eu",
+    "title": "Carbon Border Adjustment Mechanism — Regulation (EU) 2023/956",
+    "uuid": "b4f6dd26-c4bf-8dd0-8cc4-5f5db71660b8",
+    "color": "hsl(246 66% 52%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "EU-2023/988",
     "family": "eu",
     "title": "General Product Safety Regulation — GPSR (Regulation (EU) 2023/988)",
     "uuid": "4b329054-e746-8e94-95e4-562f257244d1",
     "color": "hsl(170 59% 50%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2024/1183",
+    "family": "eu",
+    "title": "Regulation (EU) 2024/1183 (eIDAS 2.0) — amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework (EUDI Wallet)",
+    "uuid": "cda6b30d-36c8-8118-bde9-8df06f1455c2",
+    "color": "hsl(86 59% 51%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2024/1620",
+    "family": "eu",
+    "title": "Regulation (EU) 2024/1620 establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)",
+    "uuid": "a8ba4ebd-560b-8ce9-bf52-57e80de4f2d1",
+    "color": "hsl(354 63% 59%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2024/1624",
+    "family": "eu",
+    "title": "Regulation (EU) 2024/1624 — the single EU AML/CFT Rulebook (AMLR)",
+    "uuid": "e87826e0-2134-89b8-b7c0-b07ef77b799b",
+    "color": "hsl(112 58% 46%)",
     "count": 0,
     "modules": []
   },
@@ -4775,112 +1869,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "color": "hsl(195 79% 58%)",
     "count": 0,
     "modules": []
-  },
-  {
-    "id": "EU-2018/1725",
-    "family": "gdpr",
-    "title": "Regulation (EU) 2018/1725 — protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data",
-    "uuid": "0d44a96c-9a80-8cc8-bd9d-5a1319876b04",
-    "color": "hsl(156 84% 50%)",
-    "count": 99,
-    "modules": [
-      {
-        "path": "src/accounting/proof/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/agent/memory-writer.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/batch.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/events.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/mcp/tool/versions.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/agents/registered/engineering.agent.ts",
-        "section": "§404"
-      },
-      {
-        "path": "src/anchoring/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/anchoring/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/api/audit/events/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/api/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/by-agent.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/agent/index.ts",
-        "section": "§6.4"
-      },
-      {
-        "path": "src/audit/events/SKILL.md",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/barrier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/base/accounting/field/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/beyond/reversibility/index.ts",
-        "section": "§6.4.6"
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/capture/media/SKILL.md",
-        "section": ""
-      }
-    ]
   },
   {
     "id": "EU-2016/679",
@@ -4989,6 +1977,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-2018/1725",
+    "family": "gdpr",
+    "title": "Regulation (EU) 2018/1725 — protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data",
+    "uuid": "0d44a96c-9a80-8cc8-bd9d-5a1319876b04",
+    "color": "hsl(156 84% 50%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "GDPR-Art-32",
     "family": "gdpr",
     "title": "Regulation (EU) 2016/679 Article 32 — Security of processing",
@@ -5003,7 +2000,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 175,
+    "count": 176,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -5109,7 +2106,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 41,
+    "count": 42,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -5137,6 +2134,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import/service/test.ts",
         "section": ""
       },
       {
@@ -5201,10 +2202,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/testing/config/discovery/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/testing/index.ts",
         "section": ""
       }
     ]
@@ -6175,6 +3172,112 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO-20022",
+    "family": "iso",
+    "title": "Universal financial industry message scheme",
+    "uuid": "37af5d59-91b7-88a5-9a2e-b9f2b1e525ac",
+    "color": "hsl(215 78% 55%)",
+    "count": 132,
+    "modules": [
+      {
+        "path": "src/agents/registered/data.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": "§Ntry.RmtInf.Ustrd"
+      },
+      {
+        "path": "src/bank/accounts/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/chat/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/research/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt052/import/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt052/import/service/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import/service/test.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "ISO-3166-1",
     "family": "iso",
     "title": "Country codes",
@@ -6276,112 +3379,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/country/client/bg-pades-signer.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "ISO-20022",
-    "family": "iso",
-    "title": "Universal financial industry message scheme",
-    "uuid": "37af5d59-91b7-88a5-9a2e-b9f2b1e525ac",
-    "color": "hsl(215 78% 55%)",
-    "count": 109,
-    "modules": [
-      {
-        "path": "src/agents/registered/data.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/bank-matching.ts",
-        "section": "§Ntry.RmtInf.Ustrd"
-      },
-      {
-        "path": "src/bank/accounts/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/reconciliations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/bank/transactions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/accounts/payroll/runs/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/reconciliation/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bank/statement/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bulk/op/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/camt053/import/service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/iso/4217/numeric/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/config/iso/4217/special/index.ts",
-        "section": "§Ccy"
-      },
-      {
-        "path": "src/connections/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/connections/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/country/api/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/country/api/index.ts",
         "section": ""
       }
     ]
@@ -6710,7 +3707,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "IBAN — International Bank Account Number",
     "uuid": "7d425926-b6b5-8210-87c2-e420beb25015",
     "color": "hsl(26 74% 52%)",
-    "count": 45,
+    "count": 47,
     "modules": [
       {
         "path": "src/bank/accounts/SKILL.md",
@@ -6749,7 +3746,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/bank/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/bank/reconciliation/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/research/index.ts",
         "section": ""
       },
       {
@@ -6799,14 +3804,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/employees/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/gl/accounts/bank/statements/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/gl/accounts/bank/statements/hooks/bank-statement.ts",
-        "section": ""
       }
     ]
   },
@@ -6816,7 +3813,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BIC — Business Identifier Code (SWIFT)",
     "uuid": "69a1e579-4329-831c-b8c0-d8ec92947245",
     "color": "hsl(41 74% 39%)",
-    "count": 34,
+    "count": 37,
     "modules": [
       {
         "path": "src/bank/accounts/SKILL.md",
@@ -6855,7 +3852,19 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/bank/chat/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/bank/reconciliation/service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/research/index.ts",
         "section": ""
       },
       {
@@ -6900,18 +3909,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/iso/20022/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/9362/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/9362/bic.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/9362/index.ts",
         "section": ""
       }
     ]
@@ -8213,7 +5210,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG Value Added Tax Act",
     "uuid": "83644ba0-d61a-840d-9821-ea275af4340f",
     "color": "hsl(156 60% 54%)",
-    "count": 3,
+    "count": 4,
     "modules": [
       {
         "path": "src/naredba/n/18/index.ts",
@@ -8225,6 +5222,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/rules/reference/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/rules/reference/index.ts",
         "section": ""
       }
     ]
@@ -8244,10 +5245,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 88,
+    "count": 92,
     "modules": [
       {
         "path": "src/access/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/access/standard/index.ts",
         "section": ""
       },
       {
@@ -8337,10 +5342,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/error/uuid/index.ts",
         "section": "§3.4"
-      },
-      {
-        "path": "src/fiscal/period/SKILL.md",
-        "section": ""
       }
     ]
   },
@@ -8358,6 +5359,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/auth/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/access/superAdminOrTenantAdmin.ts",
         "section": ""
       },
       {
@@ -8443,10 +5448,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/nist/incits/359/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/nist/incits/359/payload.ts",
-        "section": "§5.2"
       }
     ]
   },
@@ -8636,8 +5637,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "AES-GCM authenticated encryption",
     "uuid": "439bcd9a-0e52-8c60-821c-c598a4c40e2f",
     "color": "hsl(27 85% 48%)",
-    "count": 15,
+    "count": 16,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
       {
         "path": "src/cloudflare/seal.ts",
         "section": ""
@@ -8698,8 +5703,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Log management",
     "uuid": "20d957c5-70c3-819c-b8a6-fc1b0dc835cf",
     "color": "hsl(129 72% 43%)",
-    "count": 15,
+    "count": 16,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
       {
         "path": "src/audit/compliance/reporting/SKILL.md",
         "section": ""
@@ -8830,8 +5839,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key management lifecycles",
     "uuid": "03b4df35-67f2-8fa4-a7a6-445d7b0df5dd",
     "color": "hsl(228 68% 43%)",
-    "count": 10,
+    "count": 11,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
       {
         "path": "src/anchor/SKILL.md",
         "section": "§5.6.1"
@@ -8880,8 +5893,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key derivation functions",
     "uuid": "1956d6ff-473e-8900-94f4-bb9afa8b5b86",
     "color": "hsl(6 59% 53%)",
-    "count": 6,
+    "count": 7,
     "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
       {
         "path": "src/cloudflare/seal.ts",
         "section": ""
@@ -9174,7 +6191,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Enterprise Risk Management — Integrating with Strategy and Performance (2017)",
     "uuid": "4ff3ea84-eb9f-80d5-bc11-1a3996d0b20a",
     "color": "hsl(307 79% 50%)",
-    "count": 144,
+    "count": 143,
     "modules": [
       {
         "path": "src/address/validation/SKILL.md",
@@ -9867,7 +6884,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "count": 6,
     "modules": [
       {
-        "path": "src/pages/hooks/revalidatePage.ts",
+        "path": "src/cmspage/hooks/revalidatePage.ts",
         "section": ""
       },
       {
@@ -9923,6 +6940,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "PCI-DSS",
+    "family": "other",
+    "title": "Payment Card Industry Data Security Standard",
+    "uuid": "f5fe4927-b30b-8ff0-bc59-7efa4c7bccee",
+    "color": "hsl(334 58% 53%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": "§3"
+      }
+    ]
+  },
+  {
     "id": "SWIFT-MT",
     "family": "other",
     "title": "SWIFT MT financial messages",
@@ -9967,20 +7002,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/uuid/llm/index.ts",
         "section": ""
-      }
-    ]
-  },
-  {
-    "id": "PCI-DSS",
-    "family": "other",
-    "title": "Payment Card Industry Data Security Standard",
-    "uuid": "f5fe4927-b30b-8ff0-bc59-7efa4c7bccee",
-    "color": "hsl(334 58% 53%)",
-    "count": 3,
-    "modules": [
-      {
-        "path": "src/billing/stripeWebhookHandlers.ts",
-        "section": "§3"
       }
     ]
   },
@@ -10552,6 +7573,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/cmspage/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/config/address/formats/index.ts",
         "section": ""
       },
@@ -10589,10 +7614,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/footer/config.ts",
-        "section": ""
-      },
-      {
-        "path": "src/get/enabled/locales/for/tenant/index.ts",
         "section": ""
       }
     ]
@@ -11113,7 +8134,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 45,
+    "count": 44,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
@@ -11133,6 +8154,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/hooks/beforeChange.ts",
         "section": ""
       },
       {
@@ -11181,10 +8206,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/entry/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/export/standards-import.ts",
         "section": ""
       },
       {
@@ -12082,6 +9103,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/cmspage/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/get/enabled/locales/for/tenant/index.ts",
         "section": ""
       },
@@ -12111,10 +9136,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/page/range/index.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/pages/index.ts",
         "section": ""
       },
       {

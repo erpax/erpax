@@ -74,7 +74,10 @@ const sameAtom = (a: string, b: string): boolean =>
   a === b ||
   singularize(a) === singularize(b) ||
   candidateSingulars(a).includes(b) ||
-  candidateSingulars(b).includes(a)
+  candidateSingulars(b).includes(a) ||
+  // Framework-safe rename: Next.js reserves `pages` — collection lives at cmspage, slug stays `pages`.
+  (a === 'cmspage' && b === 'pages') ||
+  (a === 'pages' && b === 'cmspage')
 
 /** Read the `slug:` literal from a collection's source file (index.ts / barrel.ts). */
 const slugOfPath = (path: string): string | null => {

@@ -27,8 +27,8 @@ cd "$(dirname "$0")/.."
 # Order matters — payload generate:types ALSO emits the schema, so it
 # runs first; importmap regenerates after collections settle.
 TARGETS=(
-  "src/payload-types.ts|pnpm exec payload generate:types|Payload types"
-  "src/app/(payload)/admin/importMap.js|pnpm exec payload generate:importmap|Payload admin importmap"
+  "src/payload-types.ts|./node_modules/.bin/payload generate:types|Payload types"
+  "src/app/(payload)/admin/importMap.js|./node_modules/.bin/payload generate:importmap|Payload admin importmap"
 )
 
 tmp=$(mktemp -d)
