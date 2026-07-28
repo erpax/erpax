@@ -137,8 +137,10 @@ describe('quantum/ftl — chat (seal first)', () => {
     expect(escalated.lane).toBe('lane')
     expect(escalated.answer).toBe('escalated algebraic answer')
     expect(escalated.reused).toBe(false)
-    const init = fetchImpl.mock.calls[0]![1] as RequestInit
-    expect((init.headers as Record<string, string>).Authorization).toBe('')
+    const call = fetchImpl.mock.calls[0] as unknown as [unknown, RequestInit | undefined]
+    const init = call[1]
+    expect(init).toBeDefined()
+    expect((init!.headers as Record<string, string>).Authorization).toBe('')
   })
 
   it('chatEscalate refuses non-OK upstream', async () => {
