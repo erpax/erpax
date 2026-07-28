@@ -65,8 +65,9 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   test: {
-    default: { desc: 'Vitest integration suite', cmd: VITEST },
-    int: { desc: 'Vitest integration suite', cmd: VITEST },
+    default: { desc: 'Vitest integration (waves / receipts)', cmd: VITEST },
+    int: { desc: 'Vitest integration (waves / receipts)', cmd: VITEST },
+    waves: { desc: 'Vitest integration in receipt-split batches', cmd: '__test_waves__' },
     fast: {
       desc: 'Vitest integration (skip migrate)',
       cmd: 'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts',

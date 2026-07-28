@@ -363,6 +363,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(
       `  chat: banks=${r.chat.banks.length} turns=${r.chat.turns.length} accepted=${r.chat.acceptedDevelopments.length} thread=${r.chat.thread.slice(0, 8)}…`,
     )
-    console.log(`  develop → ${d}`)
+    console.log(`  develop → ${r.develop.join(' · ')}`)
   })
 }

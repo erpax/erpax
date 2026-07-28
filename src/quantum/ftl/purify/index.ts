@@ -11,7 +11,7 @@ import { join, relative } from 'node:path'
 import { foldToRoot, merge } from '@/merge'
 import { feedWavesIntoThemselves, type WaveFeedReport } from '@/wave/feed'
 import { RENAME, PROSE, TOKENS, type Token } from '../map'
-import { researcher, CORPUS, type Seal, boundary, type Boundary } from './index'
+import { researcher, CORPUS, type Seal, boundary, type Boundary } from '../index'
 
 export const atomPath = 'quantum/ftl/purify' as const
 

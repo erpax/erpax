@@ -113,7 +113,8 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
     return runLocal()
   }
 
-  if (rawDomain === 'test' && action === 'waves') {
+  // int / bare / waves: receipt-split batches bound themselves (never the 5-min shell rung).
+  if (rawDomain === 'test' && (!action || action === 'waves' || action === 'int')) {
     return runTestWaves(rest)
   }
 

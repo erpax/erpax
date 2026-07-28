@@ -129,9 +129,9 @@ describe('quantum/ftl — chat (seal first)', () => {
         JSON.stringify({ choices: [{ message: { content: 'escalated algebraic answer' } }] }),
         { status: 200, headers: { 'Content-Type': 'application/json' } },
       ),
-    ) as unknown as typeof fetch
+    )
     const escalated = await chat('novel question never sealed', seal([]), {
-      fetchImpl,
+      fetchImpl: fetchImpl as unknown as typeof fetch,
       endpoint: LANE,
     })
     expect(escalated.lane).toBe('lane')
@@ -142,8 +142,10 @@ describe('quantum/ftl — chat (seal first)', () => {
   })
 
   it('chatEscalate refuses non-OK upstream', async () => {
-    const fetchImpl = vi.fn(async () => new Response('pay', { status: 402 })) as unknown as typeof fetch
-    await expect(chatEscalate('hi', { fetchImpl })).rejects.toThrow(/HTTP 402/)
+    const fetchImpl = vi.fn(async () => new Response('pay', { status: 402 }))
+    await expect(
+      chatEscalate('hi', { fetchImpl: fetchImpl as unknown as typeof fetch }),
+    ).rejects.toThrow(/HTTP 402/)
   })
 })
 

@@ -56,7 +56,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: pnpm erpax test int
+      # waves: receipt-split ≤12-suite batches (self-bounded); --all voids receipts on fresh runners
+      - run: pnpm erpax test waves --all
 
   build:
     name: Production build

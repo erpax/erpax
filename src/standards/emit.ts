@@ -34,6 +34,14 @@ export interface CatalogueEntry {
   modules: Module[]
 }
 
+function requireRg(err: { status?: number; code?: string; message?: string }): never | void {
+  if (err.status === 1) return
+  if (err.code === 'ENOENT' || /not found|ENOENT/i.test(err.message ?? '')) {
+    throw new Error('standards/emit requires ripgrep (`rg`) on PATH — install ripgrep')
+  }
+  throw err
+}
+
 function scan(cwd: string): { path: string; value: string }[] {
   let raw = ''
   try {
@@ -42,8 +50,8 @@ function scan(cwd: string): { path: string; value: string }[] {
       { cwd, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 },
     )
   } catch (e) {
-    if ((e as { status?: number }).status === 1) return []
-    throw e
+    requireRg(e as { status?: number; code?: string; message?: string })
+    return []
   }
   const hits: { path: string; value: string }[] = []
   for (const line of raw.split('\n')) {
@@ -121,8 +129,8 @@ export function parsedCitations(cwd: string = process.cwd()): { path: string; va
       .split('\n')
       .filter(Boolean)
   } catch (e) {
-    if ((e as { status?: number }).status === 1) return []
-    throw e
+    requireRg(e as { status?: number; code?: string; message?: string })
+    return []
   }
   const out: { path: string; value: string }[] = []
   for (const rel of files) {

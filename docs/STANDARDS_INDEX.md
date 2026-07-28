@@ -2639,8 +2639,8 @@ src/standards/catalogue.test.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusabil
 src/standards/catalogue.ts:11: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
 src/standards/catalogue.ts:12: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
 src/standards/emit.test.ts:2: * @standard ISO/IEC-29119:2022 software-testing (emit invariant coverage)
-src/standards/emit.ts:328: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
-src/standards/emit.ts:329: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
+src/standards/emit.ts:336: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
+src/standards/emit.ts:337: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
 src/standards/emit.ts:7: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers, one uuid)
 src/standards/emit.ts:8: * @standard ISO-19011:2018 §6.4 audit-evidence (citations are the audit trail)
 src/standards/improve/test.ts:4: * @standard ISO-25010:2023 systems-and-software-quality
@@ -3456,7 +3456,7 @@ src/spec/generator/i18n-keys.ts:33: * @rfc 8259 json
 src/spec/generator/i18n-stub-filler.ts:11: * @rfc 8259 json
 src/standards/catalogue.test.ts:9: * @rfc 9562 content-uuid (every standard is content-addressed)
 src/standards/catalogue.ts:13: * @rfc 9562 content-uuid (each standard row is content-addressed)
-src/standards/emit.ts:330: * @rfc 9562 content-uuid (each standard row is content-addressed)
+src/standards/emit.ts:338: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/standards/emit.ts:9: * @rfc 9562 content-uuid (each standard is content-addressed)
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
 src/tenant/service/index.ts:15: * @rfc 9110 http-semantics
