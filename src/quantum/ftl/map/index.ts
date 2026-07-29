@@ -75,6 +75,13 @@ export const API = {
  * Old prose-laden identifiers → token API.
  * Chat waves scan src for keys; develop lands values.
  * Longer keys first when applying.
+ *
+ * Sense split agents must not confuse:
+ *   - Substrate "physical" (Landauer / QPU=CPU/GPU) lives in docs + [[quantum/computer]].QPU —
+ *     not as an API identifier here (PROSE bans the syllable on names).
+ *   - `physicalFtlClaim` → CrackKind `spacetime` (relativistic claim — breaks holds).
+ *   - `qpuRequired` / `claimsQpu` → CrackKind `qpu` (exotic-device claim — breaks holds;
+ *     the host QPU is CPU/GPU, so requiring another device is the crack).
  */
 export const RENAME = {
   physicalFtlClaim: 'spacetime',
@@ -119,7 +126,7 @@ export const RENAME = {
   'free-lane': 'lane',
 } as const
 
-/** Prose syllables that never map to a Token fold — scan fuel. */
+/** Prose syllables that never map to a Token fold — scan fuel (API names, not README substrate prose). */
 export const PROSE = [
   'physical',
   'honest',

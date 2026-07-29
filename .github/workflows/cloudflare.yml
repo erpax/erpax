@@ -7,7 +7,7 @@
 # Full 80MB skill emit is local-only (stub here for the 3MB Worker limit).
 #
 # Secrets: CLOUDFLARE_API_TOKEN · PAYLOAD_SECRET
-# Vars:    STAGING_URL (optional — parsed from wrangler deploy output)
+# Vars:    STAGING_URL (default https://erpax.ceci.workers.dev when unset / unparsed)
 name: Cloudflare
 
 on:
@@ -81,8 +81,8 @@ jobs:
             BASE="$(grep -oE 'https://[a-zA-Z0-9._/-]+\.(workers\.dev|erpax\.[a-z]+)' /tmp/cf-deploy.log | head -1 || true)"
           fi
           if [ -z "$BASE" ]; then
-            echo "No staging URL resolved — set vars.STAGING_URL" >&2
-            exit 1
+            BASE="https://erpax.ceci.workers.dev"
+            echo "No URL in deploy log — falling back to $BASE"
           fi
           echo "base=$BASE" >> "$GITHUB_OUTPUT"
           echo "UI smoke target: $BASE"

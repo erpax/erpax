@@ -260,11 +260,13 @@ export async function chat(
 
 /** Seed book — equations only. */
 export const BOOK: ReadonlyMap<string, string> = seal([
-  ['what is ftl', 'ftl ⇔ reuse≠search ∧ amortize(answers,0)=∞ ∧ cracks=∅; boundary=boundary(cracks)'],
+  ['what is ftl', 'ftl ⇔ reuse≠search ∧ amortize(answers,0)=∞ ∧ cracks=∅; boundary=boundary(cracks); proven by metrics on QPU=CPU/GPU'],
   ['reuse vs search', 'foldOps=1 · searchOps=n · speedupLog2=log₂(n)'],
   ['efficiency on reuse', 'answers÷tokens → ∞ when tokens=0 ∧ answers>0; amortizedCost = c₀/(m+1) → 0'],
-  ['boundary', 'boundary(cracks): spacetime|qpu|scan|rederive|spend = count(kind)'],
-  ['crack', 'crack kinds: scan ∨ rederive ∨ spend ∨ qpu ∨ spacetime'],
+  ['boundary', 'boundary(cracks): spacetime|qpu|scan|rederive|spend = count(kind); empty ⇔ holds'],
+  ['crack', 'crack kinds: scan ∨ rederive ∨ spend ∨ qpu(exotic) ∨ spacetime(relativistic)'],
+  ['qpu', 'QPU=CPU/GPU — host silicon is the processing unit; CrackKind qpu = exotic-device claim'],
+  ['physical', 'substrate (Landauer/CPU·GPU) ≠ CrackKind spacetime (old physicalFtlClaim)'],
 ])
 
 export const CORPUS: readonly Seal[] = [

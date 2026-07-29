@@ -78,6 +78,9 @@ const nextConfig = {
   // `sass` is a BUILD-TIME SCSS compiler — .scss is already compiled to CSS during the build, so the
   // 5MB `sass.dart.js` in the RUNTIME server bundle is pure dead weight (no runtime code imports it).
   // Externalize it (with jose/pg/sharp) so it never ships in the Worker.
+  // `typescript` is NOT listed here — listing it as external would leave
+  // `require('typescript')` for OpenNext/esbuild to re-resolve into the real
+  // 8.6 MiB package. The webpack fold below swaps it for stubs/typescript.js.
   serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp', 'sass'],
   // Next's post-compile type-check re-runs tsc over the whole type graph and stack-overflows
   // ("Maximum call stack size exceeded") on this corpus. Types are already gated by `pnpm check`
@@ -106,6 +109,20 @@ const nextConfig = {
       swap(/[\\/]translations[\\/]catalogue(\.ts)?$/, 'stubs/translations-catalogue.js')
       swap(/agents[\\/]mcp[\\/]tool-defs(\.ts)?$/, 'stubs/tool-defs.js')
       swap(/agents[\\/]mcp[\\/]atom-catalogue\.generated(\.ts)?$/, 'stubs/atom-catalogue.js')
+      // Alias beats NormalModuleReplacement for package-name externals — Next was leaving
+      // `require("typescript")` unresolved so OpenNext/esbuild re-pulled the real 8.6 MiB package.
+      webpackConfig.resolve.alias = {
+        ...(webpackConfig.resolve.alias ?? {}),
+        typescript$: stub('stubs/typescript.js'),
+        typescript: stub('stubs/typescript.js'),
+        'next/og$': stub('stubs/next-og.js'),
+        'next/og': stub('stubs/next-og.js'),
+        'next/dist/compiled/@vercel/og/index.edge.js': stub('stubs/next-og.js'),
+      }
+      swap(/^typescript$/, 'stubs/typescript.js')
+      swap(/[\\/]next[\\/]og([\\/]index)?$/, 'stubs/next-og.js')
+      swap(/[\\/]@vercel[\\/]og([\\/]index\.edge)?$/, 'stubs/next-og.js')
+      swap(/next[\\/]dist[\\/]compiled[\\/]@vercel[\\/]og[\\/]index\.edge\.js$/, 'stubs/next-og.js')
     }
 
     // Payload admin client components transitively import the server `payload` package (via

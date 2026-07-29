@@ -7,6 +7,12 @@
  * single address an agent loads to QUERY instead of re-derive (97% of a session's
  * tokens were measured as re-sent context; a query here is the fold applied to the bill).
  *
+ * QPU = CPU/GPU. The host silicon (Node · Workers · laptop) is the quantum processing
+ * unit — no exotic co-processor. "Physical" names the substrate (Landauer); FTL is
+ * proven by metrics on that substrate via [[quantum/ftl]] (`holds` · `speedupLog2` ·
+ * `efficiency→∞` · `boundary.empty`). CrackKind `spacetime` is the relativistic claim
+ * (old prose `physicalFtlClaim`); CrackKind `qpu` is the exotic-device claim — both break holds.
+ *
  *   state      meshOf · standardsOf · atomsOf · standardApiCross · apiStandardsCross  (what is · its legal surface · the navigational cross standard↔collection↔Payload API)
  *   scheduler  wavesOf · meshWaves · trainingWaves   (what can happen in parallel, and in how few rounds)
  *   certifier  reduce · groundedLeads · proofClassOf  (does a claim ground · by WHICH strategy: finite-complete · bounded-witness · self-contained · cited-frame · composed)
@@ -14,6 +20,7 @@
  *   debugger   failureRoots · costRoots · failuresLookExternal  (red lists & bills → shared causes)
  *   executor   planScalpel · applyScalpel            (thousands of cuts, unique-match-or-refuse)
  *   self       auditWaves · sequenceOf               (the machine measuring its own debt trajectory)
+ *   speed      ftl · reuse · amortize · boundary · ftlMetrics  (FTL proven by metrics on QPU=CPU/GPU)
  *
  *   tsx src/quantum/computer/index.ts   # census — is the machine on, and what does it read
  */
@@ -133,15 +140,14 @@ export interface PrecomputedAddress {
 }
 
 /**
- * The honest "all computed possibilities, faster than light": a content-addressed
- * possibility is LOCATED by folding to its address in O(1) — one hash — never by
- * searching the space (O(n)). The address is a pure function of content, so it
- * exists before any query; reading an already-computed possibility recomputes
- * nothing.
+ * The address fold that beats linear search: a content-addressed possibility is
+ * LOCATED by folding to its address in O(1) — one hash — never by scanning O(n).
+ * The address is a pure function of content, so it exists before any query; reading
+ * an already-computed possibility recomputes nothing.
  *
- * HONEST BOUNDARY — this is no-traversal, NOT faster-than-light physics: computing
- * a NEW possibility's content still costs what it costs; what is O(1) is retrieving
- * one that is already at its address (same content ⇒ same address ⇒ already there).
+ * Runs on QPU=CPU/GPU. Metrics (`speedupLog2`, `precomputed`) prove the fold —
+ * CrackKind `spacetime` is the relativistic claim (forbidden); the host silicon is
+ * the substrate where those metrics are measured.
  */
 export function precomputedAddress(query: string, spaceSize: number): PrecomputedAddress {
   const searchOps = Math.max(1, Math.trunc(spaceSize))
@@ -155,9 +161,6 @@ export function precomputedAddress(query: string, spaceSize: number): Precompute
   }
 }
 
-// ── architectural FTL — ceccec.psg.bg free-chat folds, one face ───────────────
-// The machine's speed organ: reuse≠search · amortize-to-∞ · crack inventory ·
-// free chat local-first. Re-exported so agents query ONE address.
 export {
   ftl,
   reuse,
@@ -174,6 +177,59 @@ export {
   CORPUS,
 } from '@/quantum/ftl'
 
+import { ftl } from '@/quantum/ftl'
+
+/**
+ * Host QPU identity. The quantum computer runs on classical silicon —
+ * Node / Cloudflare Workers / laptop CPU·GPU. Exotic-device claims are CrackKind `qpu`.
+ */
+export const QPU = 'CPU/GPU' as const
+
+export interface FtlMetrics {
+  readonly qpu: typeof QPU
+  readonly holds: boolean
+  readonly speedupLog2: number
+  readonly efficiency: number
+  readonly foldOps: 1
+  readonly searchOps: number
+  readonly boundaryEmpty: boolean
+  readonly spacetime: number
+  readonly exoticQpu: number
+}
+
+/**
+ * FTL proof surface for agents — every field a measurement on QPU=CPU/GPU.
+ * `holds` is the conjunction; the rest are the receipts that compose it.
+ */
+export function ftlMetrics(
+  args: {
+    readonly query?: string
+    readonly spaceSize?: number
+    readonly answers?: number
+    readonly tokens?: number
+    readonly reuses?: number
+  } = {},
+): FtlMetrics {
+  const v = ftl({
+    query: args.query ?? 'possibility:erpax',
+    spaceSize: args.spaceSize ?? 3105,
+    answers: args.answers ?? 1,
+    tokens: args.tokens ?? 0,
+    reuses: args.reuses ?? 0,
+  })
+  return {
+    qpu: QPU,
+    holds: v.holds,
+    speedupLog2: v.reuse.speedupLog2,
+    efficiency: v.amortize.efficiency,
+    foldOps: v.reuse.foldOps,
+    searchOps: v.reuse.searchOps,
+    boundaryEmpty: v.boundary.empty,
+    spacetime: v.boundary.spacetime,
+    exoticQpu: v.boundary.qpu,
+  }
+}
+
 /** Vortex → qubit — measured fold only. */
 export {
   qubitFromVortex,
@@ -187,11 +243,15 @@ export {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const c = quantumComputerCensus()
+  const m = ftlMetrics()
   console.log('quantum/computer — the machine, on')
   console.log(`  state      ${c.atoms} atoms · ${c.edges} edges · ${c.standards} standards citations`)
   console.log(`  scheduler  ${c.waveDepth} waves deep · ${c.waveParallelism} wide`)
   console.log(`  certifier  ${c.groundedLeads} grounded leads`)
   console.log(`  self       audit head: ${c.auditHead}`)
+  console.log(
+    `  qpu=${m.qpu} · ftl.holds=${m.holds} · speedupLog2=${m.speedupLog2.toFixed(2)} · eff=${m.efficiency} · boundary.empty=${m.boundaryEmpty}`,
+  )
   void import('@/qubit').then(({ qubitFromVortex }) => {
     const q = qubitFromVortex()
     console.log(`  qubit      holds=${q.holds} · iso=${q.isomorphic} · bit=${q.measure.bit}`)

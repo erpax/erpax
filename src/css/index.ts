@@ -46,7 +46,9 @@ export {
   type UiSurfaceKind,
 } from './computed'
 
-export { ComputedCssProvider, useComputedCss, type ComputedCssContextValue, type ComputedCssProviderProps } from './ComputedCssProvider'
+// ComputedCssProvider is a 'use client' module — import it from
+// `@/css/ComputedCssProvider` (not this barrel). Re-exporting it here would
+// pull node:fs + @/diamond into any client that touches `@/css`.
 
 export interface CssDiamondResult {
   /** Src-relative stylesheet path — the diamond address. */

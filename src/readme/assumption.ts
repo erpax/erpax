@@ -12,15 +12,13 @@ export interface ReadmeCompletenessMatrix { readonly kind: 'root' | 'folder'; re
 
 const ROOT_SPECS = [
   ['orient', '## Orient to erpax'],
+  ['qpu', '## quantum computer — physical FTL on QPU=CPU/GPU'],
   ['diamond', '## the diamond'],
   ['pivot', '## [[pivot]]'],
   ['pivot-horo', '| digit | measure | atoms | principal facets |'],
-  ['pivot-trinity', '### the trinity — every atom told three ways'],
-  ['bonds', 'bonds'],
-  ['analytics', '## corpus analytics'],
-  ['standards', '[[standards]]'],
+  ['seal', 'sealed **'],
   ['bindings', '[[cloudflare]]'],
-  ['quantum', '## corpus quantum thinking'],
+  ['standards', '[[standards]]'],
   ['entropy', '## corpus entropy'],
 ] as const
 

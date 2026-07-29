@@ -478,6 +478,8 @@ export function mergeCorpusEntropy(a: CorpusEntropyRollup, b: CorpusEntropyRollu
 export interface CorpusEntropyRenderOpts {
   readonly violationCount?: number
   readonly workTamperProduct?: number
+  /** Root README omits the Landauer proof essay — metrics only. */
+  readonly skipProof?: boolean
 }
 
 /** Render corpus entropy section for the root README — pure. */
@@ -488,31 +490,21 @@ export function renderCorpusEntropySection(
   const L: string[] = [
     '## corpus entropy',
     '',
-    'Gap debits and seal credits roll up in **comparable units (eb)** — entropy-bits',
-    '(tamper-cost log₂ mass at the horo imperial-ratio floor). Folders and sectors sum on one scale.',
+    `- gap \`${rollup.totalGapEb}\` eb · seal \`${rollup.totalSealEb}\` eb · net \`${rollup.netEntropyEb}\` eb · ratio \`${rollup.sealGapRatio}\``,
+    `- sealed \`${rollup.sealedMass}\` · unsealed \`${rollup.unsealedMass}\``,
     '',
-    `- gap mass \`${rollup.totalGapEb}\` eb · seal mass \`${rollup.totalSealEb}\` eb · net residual \`${rollup.netEntropyEb}\` eb`,
-    `- seal/gap ratio \`${rollup.sealGapRatio}\` · sealed \`${rollup.sealedMass}\` · unsealed \`${rollup.unsealedMass}\``,
-    '',
-    '| partition | folders | gap eb | seal eb | net eb |',
-    '| --------- | ------: | -----: | ------: | -----: |',
   ]
-  for (const row of rollup.bySector.slice(0, 12)) {
-    L.push(`| ${row.partition} | ${row.folders} | ${row.gapEb} | ${row.sealEb} | ${row.netEb} |`)
+  if (!opts.skipProof) {
+    L.push(
+      entropyProofMarkdown({
+        entropyEb: rollup.netEntropyEb,
+        violationCount: opts.violationCount ?? 0,
+        workTamperProduct: opts.workTamperProduct ?? 0,
+        totalSealEb: rollup.totalSealEb,
+        totalGapEb: rollup.totalGapEb,
+      }),
+    )
   }
-  if (rollup.bySector.length > 12) {
-    L.push(`| … | ${rollup.bySector.length - 12} more sectors | — | — | — |`)
-  }
-  // Free-energy proof line — computed via Landauer bindings (not hand-maintained).
-  L.push(
-    entropyProofMarkdown({
-      entropyEb: rollup.netEntropyEb,
-      violationCount: opts.violationCount ?? 0,
-      workTamperProduct: opts.workTamperProduct ?? 0,
-      totalSealEb: rollup.totalSealEb,
-      totalGapEb: rollup.totalGapEb,
-    }),
-  )
   return L.join('\n')
 }
 

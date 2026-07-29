@@ -10,13 +10,18 @@
  *
  * @see ./SKILL.md — ../pixel — ../signal — ../design — ../accounting/coa
  */
-import { accountCodeOf } from '@/accounting'
 import { colorOf, GREEN } from '@/color'
 import { digitalRootOfUuid } from '@/digit'
 import { uuid, jcsCanonicalize } from '@/integrity'
 import { isHoroStep, type HoroStep } from '@/horo'
 import { pixel } from '@/pixel'
 import { CMYK, signalForStep } from '@/signal'
+
+/** Path → account code (local pure fold — do NOT import `@/accounting` barrels here;
+ * they pull seal/path into the client CSS provider chunk). */
+function accountCodeOf(atomPath: string): string {
+  return atomPath.trim().replace(/^\/+|\/+$/g, '').replace(/^src\//, '')
+}
 
 export type CssMode = 'light' | 'dark'
 

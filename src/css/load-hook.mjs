@@ -8,7 +8,7 @@
 // Wired via NODE_OPTIONS --import in package.json `payload` / `build` scripts.
 import { registerHooks } from 'node:module'
 
-const STYLE_RE = /\.(css|scss|sass)(?:\?.*)?$/i
+const STYLE_RE = /\.(css|scss|sass|svg|ttf|woff|woff2|png|jpg|jpeg|gif|webp)(?:\?.*)?$/i
 
 registerHooks({
   load(url, context, nextLoad) {

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import { ComputedCssProvider } from '@/css'
+import { ComputedCssProvider } from '@/css/ComputedCssProvider'
 import type { Page } from '@/types'
 
 import { ArchiveBlock } from '@/blocks'

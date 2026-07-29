@@ -1,6 +1,6 @@
 'use client'
 
-import { ComputedCssProvider } from '@/css'
+import { ComputedCssProvider } from '@/css/ComputedCssProvider'
 import { ViolationMonitorProvider } from '@/admin/ui'
 import { QuantumDimensionsProvider } from '@/quantum/QuantumDimensionsProvider'
 import { Toaster } from '@/ui'

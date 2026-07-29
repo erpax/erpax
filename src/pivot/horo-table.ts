@@ -153,8 +153,11 @@ export function renderRootPivotHub(
   horo: HoroPivotTable,
   trinity: TrinityCorpusRollup,
   intro?: string,
+  opts: { readonly trinity?: boolean } = {},
 ): string {
-  return [intro ?? '—', '', renderHoroPivotSection(horo), renderTrinityCorpusSection(trinity)].join('\n')
+  const parts = [intro ?? '—', '', renderHoroPivotSection(horo)]
+  if (opts.trinity !== false) parts.push(renderTrinityCorpusSection(trinity))
+  return parts.join('\n')
 }
 
 export interface TrinityFlags {

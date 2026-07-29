@@ -9,8 +9,7 @@
 
 import React from 'react'
 
-import { ComputedCssProvider } from '@/css'
-import { QuantumDimensionsProvider } from '@/quantum/QuantumDimensionsProvider'
+import { ComputedCssProvider } from '@/css/ComputedCssProvider'
 import { HeaderThemeProvider } from '@/providers/header/theme'
 import { ThemeProvider } from '@/providers/theme'
 import { Toaster } from '@/ui'
@@ -21,12 +20,10 @@ export const Providers: React.FC<{
   return (
     <ThemeProvider>
       <ComputedCssProvider>
-        <QuantumDimensionsProvider emitOnChange={false}>
-          <HeaderThemeProvider>
-            {children}
-            <Toaster />
-          </HeaderThemeProvider>
-        </QuantumDimensionsProvider>
+        <HeaderThemeProvider>
+          {children}
+          <Toaster />
+        </HeaderThemeProvider>
       </ComputedCssProvider>
     </ThemeProvider>
   )

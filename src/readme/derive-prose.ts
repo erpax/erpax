@@ -3,7 +3,6 @@
  */
 import { readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
-import { renderGithubBrowseNote } from '@/navigation/github-browse'
 import { HORO_DIGITS } from '@/horo'
 import { neighborsOf, backlinksOf } from '@/uuid/matrix'
 import { wireFromRepoUrl, ERPAX_CANONICAL_REPO } from '@/skill/wire'
@@ -105,7 +104,7 @@ export function plainLanguageOf(input: PlainLanguageInput): string {
       const trinityLine = trinity
         ? `form **${trinity.skills}** · code **${trinity.index}** · proof **${trinity.tests}**`
         : 'trinity —'
-      return `${ring} horo facets · ${atoms} atoms · ${trinityLine} — all counts from matrix + fs scan. ${renderGithubBrowseNote()}`
+      return `${ring} horo facets · ${atoms} atoms · ${trinityLine}`
     }
     case 'analytics': {
       const m = input.model
@@ -135,28 +134,12 @@ export function plainLanguageOf(input: PlainLanguageInput): string {
 export function deriveOrientSection(cwd: string = process.cwd()): readonly string[] {
   const wire = wireFromRepoUrl(ERPAX_CANONICAL_REPO)
   if (!wire.ok) return ['## Orient to erpax', '', '—', '']
-  const surfaces = wire.surfaces.filter((s) => s !== 'README.md')
-  const excerpt =
-    skillDescriptionOf('skills', cwd) ??
-    skillDescriptionOf('readme', cwd) ??
-    skillDescriptionOf('entry', cwd) ??
-    '—'
-  const surfaceList = surfaces.map((s) => `\`${s}\``).join(', ')
   return [
     '## Orient to erpax',
     '',
-    `**Paste [\`${wire.repoUrl}\`](${wire.repoUrl}) or clone — both load [\`${wire.entryPoint}\`](${wire.entryPoint}) first.**`,
-    '',
-    `1. \`git clone ${wire.repoUrl} && cd erpax\``,
-    '2. `pnpm install`',
-    '3. `pnpm erpax doctor`',
-    '4. `pnpm erpax automate`',
+    `**[\`${wire.repoUrl}\`](${wire.repoUrl})** → [\`${wire.entryPoint}\`](${wire.entryPoint}). Then \`pnpm install\` · \`pnpm erpax doctor\`.`,
     '',
     'No separate agent setup — the URL and the repo are the same orientation.',
-    '',
-    plainLanguageOf({ section: 'orient', excerpt, surfaces: wire.surfaces }),
-    '',
-    `Surfaces: ${surfaceList} → [\`${wire.entryPoint}\`](${wire.entryPoint}).`,
     '',
   ]
 }

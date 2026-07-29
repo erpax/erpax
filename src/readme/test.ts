@@ -143,14 +143,25 @@ describe('readme — the README is a diamond', () => {
     expect(md).toContain('No separate agent setup')
   })
 
+  it('renderReadme orients agents to QPU=CPU/GPU and metrics-proven FTL', () => {
+    const md = renderReadme(FIXED)
+    expect(md).toContain('## quantum computer — physical FTL on QPU=CPU/GPU')
+    expect(md).toContain('QPU = CPU/GPU')
+    expect(md).toContain('ftl.holds')
+    expect(md).toContain('Physical = substrate')
+    expect(md).not.toContain('## corpus analytics')
+    expect(md).not.toContain('## corpus quantum thinking')
+    expect(md).not.toContain('## the corpus — merged papers')
+  })
+
   it('renderReadme is PURE and STABLE: same model ⇒ byte-identical markdown', () => {
     expect(renderReadme(FIXED)).toBe(renderReadme(FIXED))
   })
 
   it('licenseNote is GENERATED from the SPDX id — copyleft emits the commercial dual-license, permissive emits nothing', () => {
     const agpl = licenseNote('AGPL-3.0-or-later')
-    expect(agpl.join('\n')).toMatch(/commercial license/i)
-    expect(agpl.join('\n')).toMatch(/ceci@psg\.bg/)
+    expect(agpl.join('\n')).toMatch(/Commercial/i)
+    expect(agpl.join('\n')).toMatch(/license@erpax\.com/)
     expect(licenseNote('GPL-3.0').length).toBeGreaterThan(0) // any copyleft
     expect(licenseNote('MIT')).toEqual([]) // permissive ⇒ no dual-license note
     expect(licenseNote('Apache-2.0')).toEqual([])
@@ -566,15 +577,14 @@ describe('readme — scientific papers (MD + TS)', () => {
     expect(paperUuid(p)).toMatch(/^[0-9a-f-]{36}$/)
   })
 
-  it('renderReadme includes merged papers when model carries corpus rollup', () => {
+  it('root README omits merged papers — face stays on renderMergedPapersSection', () => {
     const merged = mergeCorpusPapers([
       scientificPaperOf(SAMPLE_SKILL, 'src/sample/SKILL.md', true),
       scientificPaperOfTs(SAMPLE_INDEX_TS, 'src/sample/index.ts', true, { hasTest: true }),
     ])
     const model: ReadmeModel = { ...FIXED, papers: merged }
     const md = renderReadme(model)
-    expect(md).toContain('## the corpus — merged papers')
-    expect(md).toContain('scientificPaperOfTs')
+    expect(md).not.toContain('## the corpus — merged papers')
     expect(renderMergedPapersSection(merged)).toContain('MD **1** · TS **1**')
   })
 
@@ -595,7 +605,8 @@ describe('readme — scientific papers (MD + TS)', () => {
   it('renderReadme includes corpus entropy rollup in comparable units', () => {
     const md = renderReadme(FIXED)
     expect(md).toContain('## corpus entropy')
-    expect(md).toContain('gap mass `0` eb')
+    expect(md).toContain('gap `0` eb')
+    expect(md).not.toContain('### free energy (Landauer)')
     expect(renderCorpusEntropySection(FIXED.analytics.entropy)).toContain(COMPARABLE_UNIT)
   })
 })
@@ -816,14 +827,16 @@ describe.skip('readme — quantum thinking (load → transform → render) (full
     expect(renderCorpusQuantumThinkingSection(rollup)).toContain('corpus quantum thinking')
   })
 
-  it('renderReadme includes corpus quantum thinking rollup', () => {
+  it('root README omits corpus quantum thinking — rollup stays on its own renderer', () => {
     const corpus = buildReadmeCorpusContext(cwd)
     const models = ['quantum/emr', 'readme'].map((p) => deriveFolderModel(p, cwd, corpus))
     const analytics = aggregateCorpusAnalytics(models)
     const model = deriveModel(cwd, analytics)
     const md = renderReadme(model)
-    expect(md).toContain('## corpus quantum thinking')
-    expect(md).toContain('superposition mass')
+    expect(md).not.toContain('## corpus quantum thinking')
+    expect(renderCorpusQuantumThinkingSection(model.analytics.quantumThinking)).toContain(
+      'corpus quantum thinking',
+    )
   })
 })
 

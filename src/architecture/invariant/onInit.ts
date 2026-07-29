@@ -20,6 +20,8 @@
  * @standard ISO/IEC 25010:2023 reliability-fault-tolerance
  */
 
+import { existsSync } from 'node:fs'
+import { join } from 'node:path'
 import type { Payload } from 'payload'
 import { runAllInvariants, formatInvariantResult, type InvariantSuiteResult } from '@/architecture/invariant'
 
@@ -28,6 +30,22 @@ import { runAllInvariants, formatInvariantResult, type InvariantSuiteResult } fr
  * inspect or fail the boot when desired.
  */
 export async function runInvariantsAtBoot(payload: Payload): Promise<InvariantSuiteResult> {
+  // Cloudflare Workers (unenv): existsSync → false and readdirSync throws.
+  // Corpus-tree checks need a real `src/` checkout; skip the gate at Worker boot.
+  const srcRoot = join(typeof process !== 'undefined' && process.cwd ? process.cwd() : '.', 'src')
+  if (!existsSync(srcRoot)) {
+    payload.logger.info({
+      msg: 'architecture-invariants:skip',
+      reason: 'src/ not available (Worker / no corpus tree)',
+    })
+    return {
+      totalChecks: 0,
+      fails: [],
+      warns: [],
+      passes: [],
+    }
+  }
+
   // Skip the fallback axis at boot — it requires runtime conditions
   // (no AI binding, no notification target) that don't always hold
   // during normal startup. The vitest suite still runs all 5 axes.

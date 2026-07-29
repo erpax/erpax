@@ -9,8 +9,10 @@
 
 import React from 'react'
 
-import { ComputedCssProvider } from '@/css'
-import { QuantumDimensionsProvider } from '@/quantum/QuantumDimensionsProvider'
+// Import the client provider directly — `@/css` barrel also exports the Node
+// diamond/fs pipeline (`computeCssDiamond`), which would pull `createRequire` +
+// seal into the browser chunk and 500 the Worker homepage.
+import { ComputedCssProvider } from '@/css/ComputedCssProvider'
 import { HeaderThemeProvider } from '@/providers/header/theme'
 import { ThemeProvider } from '@/providers/theme'
 import { Toaster } from '@/ui'
@@ -21,12 +23,10 @@ export const Providers: React.FC<{
   return (
     <ThemeProvider>
       <ComputedCssProvider>
-        <QuantumDimensionsProvider emitOnChange={false}>
-          <HeaderThemeProvider>
-            {children}
-            <Toaster />
-          </HeaderThemeProvider>
-        </QuantumDimensionsProvider>
+        <HeaderThemeProvider>
+          {children}
+          <Toaster />
+        </HeaderThemeProvider>
       </ComputedCssProvider>
     </ThemeProvider>
   )

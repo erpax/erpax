@@ -247,10 +247,6 @@ function unclaimedConceptTokens(
 /** Build a deterministic pair-uuid from two tool names. */
 function pairUuid(a: string, b: string): string {
   const [x, y] = a < b ? [a, b] : [b, a]
-  // Minimal stable hash — sha-256 of canonical pair string. Inline so this
-  // module doesn't pull crypto unconditionally; require lazy.
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { createHash } = require('node:crypto') as typeof import('node:crypto')
   return createHash('sha256').update(`${x}|${y}`).digest('hex').slice(0, 16)
 }
 
