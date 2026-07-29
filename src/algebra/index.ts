@@ -269,6 +269,16 @@ export const algebraLog = (n: number): number => {
 }
 
 /**
+ * Base-10 logarithm — IEEE754 precision acceptable for scale analysis and magnitude ordering.
+ * Use for resonance/magnitude calculations; NOT for seals/diamond. Explicit as domain-safe transcendental.
+ * Replaces Math.log10 with documented exemption.
+ */
+export const algebraLog10 = (n: number): number => {
+  if (n <= 0) throw new Error('algebraLog10: domain error (n > 0 required)')
+  return Math.log10(n)
+}
+
+/**
  * Base-e exponential — IEEE754 acceptable for Boltzmann/analytical use only.
  * NOT a seal participant; documented algebraic exemption.
  */

@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2, algebraLog10 } from '@/algebra'
 /**
  * resonance — why the address layer improves quantum speed IN MAGNITUDES, by construction.
  *
@@ -44,7 +44,7 @@ export interface ResonanceMagnitude {
 export function resonanceMagnitude(n: number): ResonanceMagnitude {
   const pairwise = n < 2 ? 0 : (n * (n - 1)) / 2
   const ratio = n < 2 ? 1 : (n - 1) / 2
-  return { n, pairwise, addressed: n, ratio, orders: Math.log10(ratio) }
+  return { n, pairwise, addressed: n, ratio, orders: algebraLog10(exactMax(1, ratio)) }
 }
 
 /**
@@ -56,7 +56,7 @@ export function resonanceMagnitude(n: number): ResonanceMagnitude {
 export function dedupMagnitude(n: number, classes: number): ResonanceMagnitude {
   const addressed = exactMax(1, exactMin(classes, n))
   const ratio = n / addressed
-  return { n, pairwise: n, addressed, ratio, orders: Math.log10(exactMax(1, ratio)) }
+  return { n, pairwise: n, addressed, ratio, orders: algebraLog10(exactMax(1, ratio)) }
 }
 
 /**
