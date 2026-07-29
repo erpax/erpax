@@ -246,7 +246,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
       cmd: 'cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs" payload migrate && wrangler d1 execute D1 --command \'PRAGMA optimize\' --remote',
     },
     app: {
-      desc: 'Build + deploy app to Cloudflare (OpenNext)',
+      desc: 'Build + deploy app to Cloudflare (OpenNext; lean build:next via open-next.config)',
       cmd: 'opennextjs-cloudflare build && opennextjs-cloudflare deploy',
     },
   },

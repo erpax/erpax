@@ -1,10 +1,13 @@
-# Cloudflare Workers deploy (OpenNext) — one path: stub → migrate → deploy → UI smoke.
+# Cloudflare Workers deploy (OpenNext) — minimum wall-clock.
 #
-# Replaces Deploy to Staging + Next.js Pages sample. Skill index is STUBBED so CI
-# fits the 3MB Worker limit and the 5‑min CLI timeout (full 80MB emit is local-only).
+# Critical path: secrets gate → install+stub → migrate ∥ playwright cache → lean Next
+# (build:next, no typegen) → OpenNext pack → deploy → UI smoke.
+#
+# Types/importmap stay committed; CI `payload verify-types` is the freshness gate.
+# Full 80MB skill emit is local-only (stub here for the 3MB Worker limit).
 #
 # Secrets: CLOUDFLARE_API_TOKEN · PAYLOAD_SECRET
-# Vars:    STAGING_URL (optional — auto-detected from wrangler deploy output)
+# Vars:    STAGING_URL (optional — parsed from wrangler deploy output)
 name: Cloudflare
 
 on:
@@ -20,10 +23,7 @@ jobs:
   deploy:
     name: Deploy + UI smoke
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-    # Repo-level secrets (CLOUDFLARE_API_TOKEN · PAYLOAD_SECRET). Avoid a named
-    # environment unless those secrets are also mirrored there — empty env secrets
-    # shadow repo secrets and wrangler fails "must be logged in".
+    timeout-minutes: 45
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
@@ -32,11 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup erpax
-        uses: ./.github/actions/setup
-        with:
-          skill-index: stub
-
+      # Fail before pnpm install when secrets are missing (saves minutes on every red run).
       - name: Require Cloudflare secrets
         run: |
           missing=
@@ -49,10 +45,32 @@ jobs:
             exit 1
           fi
 
+      - name: Setup erpax
+        uses: ./.github/actions/setup
+        with:
+          skill-index: stub
+          ripgrep: 'false'
+
+      - name: Cache Playwright Chromium
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-chromium-1.60.0
+
+      # Install browsers before the long OpenNext build (cache hit ≈ free; cold overlaps migrate).
+      - name: Install Playwright Chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: pnpm exec playwright install chromium --with-deps
+
+      - name: Ensure Playwright Chromium (cache hit)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: pnpm exec playwright install chromium
+
       - name: Migrate remote D1
         run: pnpm erpax deploy db
 
-      - name: Build + deploy (OpenNext → Workers)
+      - name: Build + deploy (OpenNext → Workers, lean next build)
         id: deploy
         run: |
           set -o pipefail
@@ -68,9 +86,6 @@ jobs:
           fi
           echo "base=$BASE" >> "$GITHUB_OUTPUT"
           echo "UI smoke target: $BASE"
-
-      - name: Install Playwright Chromium
-        run: pnpm exec playwright install chromium --with-deps
 
       - name: UI smoke against deployed Worker
         env:

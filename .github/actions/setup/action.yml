@@ -6,6 +6,10 @@ inputs:
     description: 'stub (default, CI/deploy) or full (local research only)'
     required: false
     default: stub
+  ripgrep:
+    description: 'Install ripgrep (needed for standards emit / CI; skip on Cloudflare deploy)'
+    required: false
+    default: 'true'
 
 runs:
   using: composite
@@ -20,6 +24,7 @@ runs:
         cache: pnpm
 
     - name: Install ripgrep
+      if: inputs.ripgrep == 'true'
       shell: bash
       run: |
         if ! command -v rg >/dev/null 2>&1; then

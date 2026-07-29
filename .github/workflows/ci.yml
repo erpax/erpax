@@ -1,5 +1,6 @@
-# Standards · lint · typecheck · vitest · production build.
+# Standards · lint · typecheck · vitest · lean production build (build:next).
 # skills.index is STUBBED (see .github/actions/setup) — full 80MB emit is not CI.
+# Typegen/importmap verified in typecheck; OpenNext/CF use the same lean next build.
 name: CI
 
 on:
@@ -60,12 +61,16 @@ jobs:
       - run: pnpm erpax test waves --all
 
   build:
-    name: Production build
+    name: Production build (lean)
     runs-on: ubuntu-latest
-    needs: [standards, lint, typecheck, test-int]
+    # Types freshness is the typecheck job; CF OpenNext uses the same lean next build.
+    needs: [standards, lint, typecheck]
     env:
       PAYLOAD_SECRET: test-secret-not-for-production-32-characters
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: pnpm run build
+        with:
+          ripgrep: 'false'
+      # Skip typegen/importmap/sitemap — committed + verified above; matches OpenNext buildCommand.
+      - run: pnpm build:next

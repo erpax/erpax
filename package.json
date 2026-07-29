@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next dev",
     "dev:clean": "rm -rf .next .open-next && pnpm dev",
-    "build": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm\" payload generate:types && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm\" payload generate:importmap && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build --webpack",
+    "build:next": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build --webpack",
+    "build": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm\" payload generate:types && cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs --import=tsx/esm\" payload generate:importmap && pnpm build:next",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "cross-env NODE_ENV=production PAYLOAD_SECRET=ignore NODE_OPTIONS=\"--no-deprecation --import=./src/css/load-hook.mjs --import=tsx/esm\" payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --remote && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
