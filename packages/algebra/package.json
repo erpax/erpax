@@ -1,6 +1,6 @@
 {
   "name": "@erpax/algebra",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Free core math for erpax — exact* / algebra* ops, theorem algebras, audit. Core math free for all; the rest of erpax is AGPL/commercial.",
   "license": "MIT",
   "type": "module",

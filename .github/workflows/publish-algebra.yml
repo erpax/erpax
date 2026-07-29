@@ -3,7 +3,10 @@
 # Publishes packages/algebra — NEVER the private root erpax app.
 # Fold magma (→ @/merge) and licensed surfaces are excluded by packages/algebra/build.mjs.
 #
-# Triggers: algebra-v* tags, GitHub Release published, or workflow_dispatch.
+# Triggers (tag-only for uniqueness — do NOT also fire on release.published;
+# a GitHub Release that creates algebra-v* would double-publish the same version):
+#   - push tags algebra-v*
+#   - workflow_dispatch (manual; fails if version already on npm)
 #
 # Auth (prefer trusted publishing / OIDC):
 #   1. npmjs.com → @erpax/algebra → Settings → Trusted Publisher
@@ -20,8 +23,6 @@ on:
   push:
     tags:
       - 'algebra-v*'
-  release:
-    types: [published]
   workflow_dispatch:
 
 permissions:
@@ -86,22 +87,51 @@ jobs:
             exit 1
           fi
 
-      - name: Skip if version already on npm
-        id: gate
+      - name: Fail if version already on npm
+        env:
+          # Same token as publish — scoped packuments may 404 without auth
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          set -euo pipefail
           NAME="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).name")"
           VER="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).version")"
-          echo "package=${NAME}@${VER}" >> "$GITHUB_OUTPUT"
-          if npm view "${NAME}@${VER}" version >/dev/null 2>&1; then
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "${NAME}@${VER} already published — skip"
-          else
-            echo "exists=false" >> "$GITHUB_OUTPUT"
-          fi
+          export NAME VER
+          RAW="$(npm view "$NAME" versions --json 2>/dev/null || echo '[]')"
+          echo "$RAW" | node --input-type=module -e '
+            let d = "";
+            process.stdin.on("data", (c) => (d += c));
+            process.stdin.on("end", () => {
+              const ver = process.env.VER;
+              const name = process.env.NAME;
+              let versions = [];
+              try {
+                const j = JSON.parse(d || "[]");
+                if (Array.isArray(j)) versions = j;
+                else if (typeof j === "string") versions = [j];
+                else if (j && typeof j === "object" && j.error) versions = [];
+              } catch {
+                versions = [];
+              }
+              if (versions.includes(ver)) {
+                console.error(
+                  `✖ ${name}@${ver} already on npm — bump packages/algebra/package.json and tag algebra-v<new>`,
+                );
+                process.exit(2);
+              }
+              console.log(`✔ ${name}@${ver} not in registry (${versions.length} known versions)`);
+            });
+          '
 
       - name: Publish to npm
-        if: steps.gate.outputs.exists == 'false'
-        run: npm publish --access public
+        run: |
+          set -euo pipefail
+          NAME="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).name")"
+          VER="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).version")"
+          if ! npm publish --access public; then
+            echo "::error::npm publish failed for ${NAME}@${VER}. Unpublished versions stay burned — bump package.json and tag algebra-v<new>."
+            exit 1
+          fi
+          echo "✔ published ${NAME}@${VER}"
         env:
           # Optional classic fallback when trusted publisher is not configured yet
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
