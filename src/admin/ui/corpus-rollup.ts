@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * admin/ui/corpus-rollup — corpus entropy/seal metrics for the admin dashboard.
  *
@@ -120,7 +121,7 @@ export function loadCorpusPathJournalSamples(
 
 /** Instant dashboard shell — reciprocity only, no corpus fs walk. */
 export function loadCorpusDashboardShell(): CorpusDashboardShell {
-  return { reciprocityPct: Math.round(100 * reciprocity()) }
+  return { reciprocityPct: exactRound(100 * reciprocity()) }
 }
 
 function metricsFromAnalytics(
@@ -136,7 +137,7 @@ function metricsFromAnalytics(
     folderCount: ent.sealedMass + ent.unsealedMass,
     sealedFolders: ent.sealedMass,
     unsealedFolders: ent.unsealedMass,
-    reciprocityPct: Math.round(100 * reciprocity()),
+    reciprocityPct: exactRound(100 * reciprocity()),
     pathSamples: buildCorpusPathJournalSamples(CORPUS_JOURNAL_SAMPLE_PATHS, cwd, ctx, graph),
   }
 }

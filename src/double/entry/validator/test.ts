@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { DoubleEntryValidator, ACCOUNT_POLARITY, MINOR_UNIT, quantumLedger, type GLPostingLine } from './index'
 
@@ -53,7 +54,7 @@ describe('double/entry/validator — the law an ERP exists to guarantee', () => 
   // a change to every amount in the ledger and is NOT smuggled into the diff that gave this atom its proof.
   // Pinning it means the next person cannot rediscover it by being burned in production.
   it('the boundary is a float accident, not a cent — one cent posts at 50 and is refused at 100', () => {
-    const gapAt = (n: number) => Math.abs(n - (n - 0.01))
+    const gapAt = (n: number) => exactAbs(n - (n - 0.01))
     expect(gapAt(100)).toBeGreaterThan(MINOR_UNIT) // 0.010000000000005…
     expect(gapAt(50)).toBeLessThan(MINOR_UNIT) // 0.009999999999998…
 
@@ -62,7 +63,7 @@ describe('double/entry/validator — the law an ERP exists to guarantee', () => 
   })
 
   it('float drift scales with magnitude — the bound is absolute, so its real meaning is not', () => {
-    const drift = (n: number) => Math.abs(n - (n - 0.01) - 0.01)
+    const drift = (n: number) => exactAbs(n - (n - 0.01) - 0.01)
     expect(drift(100)).toBeLessThan(1e-13)
     expect(drift(1e6)).toBeGreaterThan(drift(100)) // the same cent, ~1000× the error
   })

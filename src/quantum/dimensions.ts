@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/dimensions — quantum semantics folded across every projection axis.
  *
@@ -68,7 +69,7 @@ export function superpose2D(
   for (const [k, v] of Object.entries(raw)) {
     if (k in amp) amp[k] = v ?? 0
   }
-  const norm = Math.sqrt(Object.values(amp).reduce((s, a) => s + a * a, 0))
+  const norm = algebraSqrt(Object.values(amp).reduce((s, a) => s + a * a, 0))
   if (norm === 0) throw new Error('superpose2D: the zero state has no normalisation — give at least one non-zero amplitude')
   for (const k of Object.keys(amp)) amp[k] = amp[k]! / norm
   return { amplitudes: amp }
@@ -126,13 +127,13 @@ export const uniform2D = (partitions: readonly string[] = PARTITION2D_SAMPLES): 
 /** 2D quantum facet holds — Born rule, on-ring collapse, deterministic seal. */
 export const quantum2dHolds = (): boolean => {
   const u = uniform2D()
-  if (Math.abs(total2D(u) - 1) > 1e-9) return false
+  if (exactAbs(total2D(u) - 1) > 1e-9) return false
   const biased = superpose2D({
     [cell2DKey('quantum', 1)]: 2,
     [cell2DKey('horo', 4)]: 1,
     [cell2DKey('diamond', 9)]: 3,
   })
-  if (Math.abs(total2D(biased) - 1) > 1e-9) return false
+  if (exactAbs(total2D(biased) - 1) > 1e-9) return false
   for (const r of [0, 0.3, 0.6, 0.999]) {
     const c = collapse2D(u, r)
     if (!HORO_DIGITS.includes(c.horo)) return false
@@ -164,7 +165,7 @@ export interface QuantumDimensionCoverage {
 /** 1D path axis — horo-ring superposition (the sequence eigenbasis). */
 const holds1D = (): { holds: boolean; detail: string } => {
   const u = uniform()
-  const holds = Math.abs(total(u) - 1) < 1e-9 && HORO_DIGITS.includes(collapse1D(u, 0))
+  const holds = exactAbs(total(u) - 1) < 1e-9 && HORO_DIGITS.includes(collapse1D(u, 0))
   return { holds, detail: `Σ|c|²=${total(u).toFixed(6)} · levels=${HORO_DIGITS.length}` }
 }
 

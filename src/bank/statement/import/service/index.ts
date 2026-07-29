@@ -1,5 +1,6 @@
 /**
- * Bank Statement Import Service — parse CSV / OFX / camt.053 statements.
+ * Bank Statement Import Servicimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+e — parse CSV / OFX / camt.053 statements.
  *
  * @standard ISO-20022 camt.053 bank-to-customer-statement
  * @standard MT940 swift-statement-message legacy
@@ -233,7 +234,7 @@ class BankStatementImportService {
           if (!dateMatch || !amountMatch) continue;
 
           const txDate = this.parseOFXDate(dateMatch[1]);
-          const amount = Math.abs(parseFloat(amountMatch[1]));
+          const amount = exactAbs(parseFloat(amountMatch[1]));
           const type = parseFloat(amountMatch[1]) < 0 ? 'debit' : 'credit';
           const description = `${nameMatch?.[1] || ''} ${memoMatch?.[1] || ''}`.trim();
 

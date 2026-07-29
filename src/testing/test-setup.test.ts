@@ -1,5 +1,6 @@
 /**
- * Test setup utility tests — isolated environments, parallel runners, snapshots.
+ * Test setup utility tests — isolated environments, parallel runnimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+ers, snapshots.
  *
  * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
  * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation
@@ -26,7 +27,7 @@ class MockPayload {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, new Map());
     }
-    const id = `${collection}-${Math.random().toString(36).substr(2, 9)}`;
+    const id = `${collection}-${Date.now().toString(36).substr(2, 9)}`;
     const doc = { ...data, id };
     this.documents.get(collection)!.set(id, doc);
     return doc;
@@ -303,7 +304,7 @@ describe('ParallelTestRunner', () => {
         factory: new SimpleSeed(payload as unknown as Payload),
         test: async () => {
           currentConcurrent++;
-          maxConcurrent = Math.max(maxConcurrent, currentConcurrent);
+          maxConcurrent = exactMax(maxConcurrent, currentConcurrent);
           await new Promise(r => setTimeout(r, 10));
           currentConcurrent--;
           return true;

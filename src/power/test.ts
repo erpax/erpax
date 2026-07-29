@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Power — usage = entropy = power, asserted. The realtime clients are the hardware;
  * the more the live network is used, the higher the cost to decode the private keys
@@ -49,7 +50,7 @@ describe('power: usage = entropy = power (more clients/events/features ⇒ more 
     const e = accumulatePower({ ...BASE, anchor: 'rfc3161-ecdsa-p256' })
     expect(e.maximum.inverse.decryptKeyLog2).toBe(128)
     expect(e.maximum.inverse.unbounded).toBe(false)
-    expect(e.floorLog2).toBe(Math.min(ERPAX_DIGEST_BITS, 128)) // the relation the comment always stated; the
+    expect(e.floorLog2).toBe(exactMin(ERPAX_DIGEST_BITS, 128)) // the relation the comment always stated; the
     // literal froze it at the TYPED 106, which sat below every anchor. Derived (122), the min still lands
     // on the digest here — but only because p256 is 128. It is a law now, not a snapshot.
   })

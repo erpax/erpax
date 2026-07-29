@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * book/harmony-index — book-of-books index harmony rollup (volume list · metrics).
  */
@@ -40,7 +41,7 @@ export interface BookIndexHarmony {
   readonly impurities: readonly string[]
 }
 
-const round3 = (n: number): number => Math.round(n * 1000) / 1000
+const round3 = (n: number): number => exactRound(n * 1000) / 1000
 
 const bondRankOf = (atomPath: string): number => {
   const leaf = atomPath.split('/').pop() ?? atomPath
@@ -102,8 +103,8 @@ export function harmonyOfBookIndex(cwd: string = process.cwd()): BookIndexHarmon
 
   const horoIdeal = n / HORO_DIGITS.length
   const horoVar =
-    HORO_DIGITS.reduce((s, d) => s + Math.pow((horoAcc.get(d) ?? 0) - horoIdeal, 2), 0) / HORO_DIGITS.length
-  const horoEvenness = n > 0 ? Math.max(0, 1 - Math.sqrt(horoVar) / horoIdeal) : 0
+    HORO_DIGITS.reduce((s, d) => s + algebraFloatPow((horoAcc.get(d) ?? 0) - horoIdeal, 2), 0) / HORO_DIGITS.length
+  const horoEvenness = n > 0 ? exactMax(0, 1 - algebraSqrt(horoVar) / horoIdeal) : 0
 
   const rec = reciprocity()
   const roots = UUID_MATRIX_NODES.filter((r) => r.path && !r.path.includes('/'))
@@ -146,7 +147,7 @@ export function harmonyOfBookIndex(cwd: string = process.cwd()): BookIndexHarmon
   if (offRing > 0) impurities.push(`off-ring horo: ${offRing} index volumes`)
   if (sealedPct < 0.8) impurities.push(`sealed % low: ${round3(sealedPct * 100)}%`)
   if (literaryRatio > 0.3) {
-    impurities.push(`literary ratio high: ${Math.round(literaryRatio * 100)}% form-only at index`)
+    impurities.push(`literary ratio high: ${exactRound(literaryRatio * 100)}% form-only at index`)
   }
   if (rec.fraction < 0.99) impurities.push('bond reciprocity asymmetric')
   if (trinityPct < 0.5) impurities.push(`trinity incomplete: ${round3(trinityPct * 100)}%`)
@@ -160,11 +161,11 @@ export function harmonyOfBookIndex(cwd: string = process.cwd()): BookIndexHarmon
     counts.dirs <= GITHUB_DIR_LIMIT ? 1 : 0,
     horoEvenness,
     sealedPct,
-    1 - Math.min(1, literaryRatio * 2),
+    1 - exactMin(1, literaryRatio * 2),
     rec.fraction,
     1 - seqVsAlpha,
     trinityPct,
-    offRing === 0 ? 1 : Math.max(0, 1 - offRing / n),
+    offRing === 0 ? 1 : exactMax(0, 1 - offRing / n),
   ]
   const score = round3(scores.reduce((a, b) => a + b, 0) / scores.length)
   const harmonic = score >= 0.65 && counts.dirs <= GITHUB_DIR_LIMIT && impurities.length <= 3

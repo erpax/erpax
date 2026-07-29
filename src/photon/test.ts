@@ -1,3 +1,4 @@
+import { PI } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { PLANCK_H, HBAR, C, energy, frequency, wavelength, momentum, photonOf, render, uuid, refract, disperse, VISIBLE_MIN_NM, VISIBLE_MAX_NM } from '@/photon'
 import { HORO_DIGITS } from '@/horo'
@@ -15,8 +16,8 @@ describe('photon: E = hν, the massless quantum', () => {
   })
 
   it('the reduced constant ħ = h / 2π, and ω = 2πν', () => {
-    expect(HBAR).toBe(PLANCK_H / (2 * Math.PI))
-    expect(photonOf(hz).omega).toBe(2 * Math.PI * hz)
+    expect(HBAR).toBe(PLANCK_H / (2 * PI))
+    expect(photonOf(hz).omega).toBe(2 * PI * hz)
   })
 
   it('massless dispersion: p = E/c by definition and E/p = c (E = pc)', () => {

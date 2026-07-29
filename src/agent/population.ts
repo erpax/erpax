@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * population — the agent society's harmonic homeostasis.
  *
@@ -19,12 +20,12 @@
 
 /** Little's law: the steady-state live population = birth rate × mean lifespan. */
 export function steadyStatePopulation(birthRate: number, lifespan: number): number {
-  return Math.max(0, birthRate) * Math.max(0, lifespan)
+  return exactMax(0, birthRate) * exactMax(0, lifespan)
 }
 
 /** The live population bounded by the hardware cap — the ≤2/3 resource limit made concrete. */
 export function boundedPopulation(birthRate: number, lifespan: number, hardwareCap: number): number {
-  return Math.min(steadyStatePopulation(birthRate, lifespan), Math.max(0, hardwareCap))
+  return exactMin(steadyStatePopulation(birthRate, lifespan), exactMax(0, hardwareCap))
 }
 
 /**
@@ -34,18 +35,18 @@ export function boundedPopulation(birthRate: number, lifespan: number, hardwareC
  * the "infinite" recursion is finite per instant. Never runs away.
  */
 export function recursivePopulation(branching: number, depth: number, hardwareCap: number): number {
-  const b = Math.max(0, branching)
-  const d = Math.max(0, Math.floor(depth))
+  const b = exactMax(0, branching)
+  const d = exactMax(0, exactFloor(depth))
   // nodes of a b-ary tree of depth d: (b^(d+1) − 1)/(b − 1); b=1 ⇒ d+1; guard overflow at the cap.
-  const cap = Math.max(0, hardwareCap)
-  if (b <= 1) return Math.min(b === 1 ? d + 1 : 1, cap)
+  const cap = exactMax(0, hardwareCap)
+  if (b <= 1) return exactMin(b === 1 ? d + 1 : 1, cap)
   // short-circuit once the series is guaranteed to exceed the cap (avoids Infinity for huge depth).
   let total = 0
   for (let g = 0; g <= d; g++) {
-    total += Math.pow(b, g)
+    total += algebraFloatPow(b, g)
     if (total >= cap) return cap
   }
-  return Math.min(total, cap)
+  return exactMin(total, cap)
 }
 
 /**
@@ -55,6 +56,6 @@ export function recursivePopulation(branching: number, depth: number, hardwareCa
  */
 export function isHarmonic(birthRate: number, deathRate: number, live: number, hardwareCap: number): boolean {
   const bounded = live >= 0 && live <= hardwareCap
-  const conserved = Math.abs(birthRate - deathRate) < 1e-9
+  const conserved = exactAbs(birthRate - deathRate) < 1e-9
   return bounded && conserved
 }

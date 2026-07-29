@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { extractPulse, coherence, detrend } from '@/coherence'
 
@@ -5,8 +6,8 @@ import { extractPulse, coherence, detrend } from '@/coherence'
 // Gated on SYNTHETIC signals with KNOWN ground truth — computed, not asserted.
 function sine(freqHz: number, fps: number, seconds: number, amp = 4, dc = 128, driftHz = 0.05, drift = 8): number[] {
   const out: number[] = []
-  for (let i = 0; i < Math.round(fps * seconds); i++) {
-    out.push(dc + amp * Math.sin((2 * Math.PI * freqHz * i) / fps) + drift * Math.sin((2 * Math.PI * driftHz * i) / fps))
+  for (let i = 0; i < exactRound(fps * seconds); i++) {
+    out.push(dc + amp * algebraSin((2 * PI * freqHz * i) / fps) + drift * algebraSin((2 * PI * driftHz * i) / fps))
   }
   return out
 }
@@ -55,6 +56,6 @@ describe('coherence: edge-safe rPPG pulse extraction (synthetic ground truth)', 
   it('detrend removes DC + slow drift (zero-mean output)', () => {
     const d = detrend(sine(1.2, 30, 10), 30)
     const m = d.reduce((a, b) => a + b, 0) / d.length
-    expect(Math.abs(m)).toBeLessThan(1e-6)
+    expect(exactAbs(m)).toBeLessThan(1e-6)
   })
 })

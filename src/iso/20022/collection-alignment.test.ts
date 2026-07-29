@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * ISO 20022 — collection-to-canonical-type alignment tests.
  *
@@ -76,7 +77,7 @@ const toCanonicalCamt053Transaction = (
     endToEndId: doc.endToEndId,
     bookingDate: new Date(doc.bookingDate ?? doc.valueDate),
     valueDate: new Date(doc.valueDate),
-    amount: Math.abs(doc.amount),
+    amount: exactAbs(doc.amount),
     currency: doc.currency,
     creditDebitIndicator: indicator,
     status: doc.bookingStatus ?? 'BOOK',

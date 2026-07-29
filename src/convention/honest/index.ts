@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * convention/honest — the HONEST-SPLIT convention as a computed, self-measuring atom.
  *
@@ -51,7 +52,7 @@ const MARK_RE =
 
 /** The sentence (between sentence/line breaks) a match sits in — its local frame. */
 const sentenceAround = (text: string, at: number): string => {
-  const left = Math.max(
+  const left = exactMax(
     text.lastIndexOf('.', at),
     text.lastIndexOf('\n', at),
     text.lastIndexOf('!', at),
@@ -59,7 +60,7 @@ const sentenceAround = (text: string, at: number): string => {
   )
   const rightDot = text.indexOf('.', at)
   const rightNl = text.indexOf('\n', at)
-  const right = Math.min(
+  const right = exactMin(
     rightDot === -1 ? text.length : rightDot,
     rightNl === -1 ? text.length : rightNl,
   )

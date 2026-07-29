@@ -1,9 +1,10 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { surprisal, nats } from '@/surprisal'
 
 // Self-information in bits. Tests assert the RELATIONS — zero at certainty,
 // 1 bit at a coin flip, additivity, the nats conversion — never a magic number.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 
 describe('surprisal: I(p) = −log₂ p', () => {
   it('a certainty carries zero bits; a fair coin carries exactly one', () => {
@@ -21,7 +22,7 @@ describe('surprisal: I(p) = −log₂ p', () => {
   })
 
   it('nats is the natural-log form: bits = nats / ln2', () => {
-    for (const p of [0.5, 0.1, 0.9]) expect(rel(surprisal(p), nats(p) / Math.LN2)).toBeLessThan(1e-12)
+    for (const p of [0.5, 0.1, 0.9]) expect(rel(surprisal(p), nats(p) / LN2)).toBeLessThan(1e-12)
   })
 
   it('a probability outside (0,1] is not an event', () => {

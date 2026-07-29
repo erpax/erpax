@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * entry — the universal double-entry: ALL is accounted for, in ALL directions.
  *
@@ -47,7 +48,7 @@ export interface Entry {
 
 /** Turn ANY flow into a balanced double-entry: the payer credits (gives), the payee debits (takes). */
 export function toDoubleEntry(flow: Flow): Entry {
-  const amt = Math.abs(flow.amount)
+  const amt = exactAbs(flow.amount)
   return {
     lines: [
       { accountable: flow.payer, debit: 0, credit: amt },

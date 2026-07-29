@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * BG bank-statement PDF parser — fallback path when a tenant hasn't
  * onboarded PSD2 with their bank yet (or the bank doesn't expose a
@@ -119,7 +120,7 @@ export function parseBgAmount(raw: string): number {
   const normalised = stripped.includes(',') ? stripped.replace(/\./g, '').replace(',', '.') : stripped
   const value = Number(normalised)
   if (!Number.isFinite(value)) return Number.NaN
-  const minor = Math.round(value * 100)
+  const minor = exactRound(value * 100)
   return negative ? -minor : minor
 }
 

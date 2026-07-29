@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * taichi — the double-torus flow of internal chi (气) through the dantian (丹田 cung),
  * COMPUTED as counter-rotating rodin coils on the horo ring.
@@ -53,7 +54,7 @@ export interface DoubleTorusFlow {
 /** Walk `ticks` steps along one coil multiplier from `anchor`. */
 function walkCoil(anchor: HoroStep, multiplier: number, ticks: number): HoroStep {
   let pos = anchor
-  const n = Math.max(0, Math.trunc(ticks))
+  const n = exactMax(0, exactTrunc(ticks))
   for (let i = 0; i < n; i++) {
     pos = composeSteps(pos, multiplier) as HoroStep
   }
@@ -66,7 +67,7 @@ function walkCoil(anchor: HoroStep, multiplier: number, ticks: number): HoroStep
  */
 export function doubleTorusFlow(step: number, horo: HoroStep): DoubleTorusFlow {
   const anchor: HoroStep = isHoroStep(horo) ? horo : HORO_DIGITS[0]
-  const ticks = Math.trunc(step)
+  const ticks = exactTrunc(step)
   const forward = walkCoil(anchor, FORWARD, ticks)
   const reverse = walkCoil(anchor, REVERSE, ticks)
   const roundTrip = walkCoil(forward, REVERSE, ticks)
@@ -124,7 +125,7 @@ export interface ChiCungBreath {
  */
 export function chiCungBreathCycle(tick: number, horo: HoroStep = DANTIAN): ChiCungBreath {
   const anchor: HoroStep = isHoroStep(horo) ? horo : DANTIAN
-  const t = Math.trunc(tick)
+  const t = exactTrunc(tick)
   const phase = CHI_CUNG_PHASES[((t % 4) + 4) % 4]!
   const flow = doubleTorusFlow(t, anchor)
   const ordinal = ((t % 7) + 7) % 7 + 1

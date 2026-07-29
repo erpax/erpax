@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { computedBaseline, loadRatchet } from './baseline'
 import { RATCHET_GENERATED } from './ratchet.generated'
@@ -44,12 +45,12 @@ describe('law/folder baseline — computed from math + ratchet.generated', () =>
     const digit = AXIS_HORO[axis]
     const live = 400
     const scale = LANDAUER_BIT * horoRatio(digit, 10)
-    expect(mathCeiling(axis, live)).toBe(Math.ceil(live / scale))
+    expect(mathCeiling(axis, live)).toBe(exactCeil(live / scale))
     expect(mathCeiling(axis, 0)).toBe(0)
   })
 
   it('ratchetDown never raises committed ceiling', () => {
-    expect(ratchetDown('stray-ts', 419, 400)).toBe(Math.min(419, mathCeiling('stray-ts', 400)))
+    expect(ratchetDown('stray-ts', 419, 400)).toBe(exactMin(419, mathCeiling('stray-ts', 400)))
     expect(ratchetDown('stray-ts', undefined, 10)).toBe(mathCeiling('stray-ts', 10))
   })
 

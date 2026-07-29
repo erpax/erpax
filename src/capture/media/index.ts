@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Test-artifact → Media uploader + WebVTT subtitle generator.
  *
@@ -65,9 +66,9 @@ export interface TestArtifactManifest {
  * Format a millisecond offset as a WebVTT timestamp `HH:MM:SS.mmm`.
  */
 function vttTimestamp(ms: number): string {
-  const h = Math.floor(ms / 3_600_000)
-  const m = Math.floor((ms % 3_600_000) / 60_000)
-  const s = Math.floor((ms % 60_000) / 1_000)
+  const h = exactFloor(ms / 3_600_000)
+  const m = exactFloor((ms % 3_600_000) / 60_000)
+  const s = exactFloor((ms % 60_000) / 1_000)
   const mmm = ms % 1_000
   return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}.${String(mmm).padStart(3, '0')}`
 }
@@ -83,7 +84,7 @@ export function buildWebVtt(steps: TestStep[], durationMs: number = 0): string {
   const cues: string[] = ['WEBVTT', '']
   for (let i = 0; i < steps.length; i++) {
     const start = steps[i].ts
-    const end = i + 1 < steps.length ? steps[i + 1].ts : Math.max(durationMs, start + 3000)
+    const end = i + 1 < steps.length ? steps[i + 1].ts : exactMax(durationMs, start + 3000)
     cues.push(String(i + 1))
     cues.push(`${vttTimestamp(start)} --> ${vttTimestamp(end)}`)
     cues.push(steps[i].title)

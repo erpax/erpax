@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * computer/complexity — big-O classifier from loop-depth bindings (no AST required).
  *
@@ -19,7 +20,7 @@ export interface LoopBinding {
 }
 
 export function maxLoopDepth(bindings: readonly LoopBinding[]): number {
-  return bindings.reduce((m, b) => Math.max(m, b.depth), 0)
+  return bindings.reduce((m, b) => exactMax(m, b.depth), 0)
 }
 
 /** Classify asymptotic complexity from a loop binding table. */

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cheapAgentDispatch — minimal agent context: sealed SKILL excerpt + path account + eb only.
  *
@@ -56,7 +57,7 @@ export function cheapAgentDispatch(opts: CheapAgentDispatchOpts): CheapAgentDisp
   const ebBalance = opts.ebBalance ?? pathComparableUnits(opts.atomPath)
 
   const skill = loadSealedSkill(opts.atomPath, opts)
-  const relatedCap = Math.max(0, policy.maxContextAtoms - (skill ? 1 : 0))
+  const relatedCap = exactMax(0, policy.maxContextAtoms - (skill ? 1 : 0))
   // load → filter → cap: the cap bounds LOADED context atoms; a path that fails to load
   // must not consume a slot (it did — 8 requested with 2 unloadable returned 5, not 6)
   const related = (opts.relatedAtomPaths ?? [])

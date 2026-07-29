@@ -1,3 +1,4 @@
+import { PI } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { intensity, constructive, destructive, crossTerm, visibility } from '@/interference'
 
@@ -10,18 +11,18 @@ const classical = a1 * a1 + a2 * a2
 describe('interference: amplitudes combine by phase', () => {
   it('constructive in phase (φ=0) is the max; destructive out of phase (φ=π) is the min', () => {
     expect(intensity(a1, a2, 0)).toBeCloseTo(constructive(a1, a2), 12)
-    expect(intensity(a1, a2, Math.PI)).toBeCloseTo(destructive(a1, a2), 12)
+    expect(intensity(a1, a2, PI)).toBeCloseTo(destructive(a1, a2), 12)
     expect(constructive(a1, a2)).toBeGreaterThan(destructive(a1, a2))
   })
 
   it('at quadrature (φ=π/2) the cross term vanishes — the classical sum a1²+a2²', () => {
-    expect(intensity(a1, a2, Math.PI / 2)).toBeCloseTo(classical, 12)
-    expect(crossTerm(a1, a2, Math.PI / 2)).toBeCloseTo(0, 12)
+    expect(intensity(a1, a2, PI / 2)).toBeCloseTo(classical, 12)
+    expect(crossTerm(a1, a2, PI / 2)).toBeCloseTo(0, 12)
   })
 
   it('intensity stays within [destructive, constructive] for every phase', () => {
     for (let k = 0; k < 16; k++) {
-      const phi = (2 * Math.PI * k) / 16
+      const phi = (2 * PI * k) / 16
       const I = intensity(a1, a2, phi)
       expect(I).toBeGreaterThanOrEqual(destructive(a1, a2) - 1e-12)
       expect(I).toBeLessThanOrEqual(constructive(a1, a2) + 1e-12)
@@ -32,7 +33,7 @@ describe('interference: amplitudes combine by phase', () => {
   it('energy is conserved — intensity averaged over a full period is the classical sum', () => {
     const N = 360
     let sum = 0
-    for (let k = 0; k < N; k++) sum += intensity(a1, a2, (2 * Math.PI * k) / N)
+    for (let k = 0; k < N; k++) sum += intensity(a1, a2, (2 * PI * k) / N)
     expect(sum / N).toBeCloseTo(classical, 9) // the cross term averages to zero
   })
 

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * BG public-holiday calendar — non-banking days the value-date /
  * settlement-date / due-date arithmetic must skip.
@@ -46,7 +47,7 @@ function orthodoxEaster(year: number): string {
   const c = year % 19
   const d = (19 * c + 15) % 30
   const e = (2 * a + 4 * b - d + 34) % 7
-  const julianMonth = Math.floor((d + e + 114) / 31) // 3 = March, 4 = April
+  const julianMonth = exactFloor((d + e + 114) / 31) // 3 = March, 4 = April
   const julianDay = ((d + e + 114) % 31) + 1
   // Convert Julian → Gregorian: add (year/100 difference) days. For the
   // 21st century the offset is 13.

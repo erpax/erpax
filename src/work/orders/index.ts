@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Workorders — the production EXECUTION leaf, evolved from 2.05M rows of the
  * etrima `work_orders` table (the 20-year manufacturing ledger).
@@ -107,7 +108,7 @@ interface OptionLine {
 
 const toInt = (v: unknown): number => {
   const n = Number(v)
-  return Number.isFinite(n) ? Math.trunc(n) : 0
+  return Number.isFinite(n) ? exactTrunc(n) : 0
 }
 
 const sumOptions = (options: readonly OptionLine[] | null | undefined, key: keyof OptionLine): number =>
@@ -194,7 +195,7 @@ export const pieceRateWage = (doc: WorkorderShape): number => {
   const pay = Number(doc.payPerHour)
   if (!Number.isFinite(pay) || pay <= 0 || unitSeconds <= 0 || produced <= 0) return 0
   const mpw = machinesPerWorker(doc.machinesPerWorker)
-  return Math.round(((produced * unitSeconds * pay) / 3600 / mpw) * 100) / 100
+  return exactRound(((produced * unitSeconds * pay) / 3600 / mpw) * 100) / 100
 }
 
 /** work-minutes remaining = (ordered − produced) × unitSeconds / mpw / 60 (etrima `work_minutes_remaining`). */
@@ -203,7 +204,7 @@ export const minutesRemaining = (doc: WorkorderShape): number => {
   const unitSeconds = toInt(doc.unitSeconds)
   if (remaining <= 0 || unitSeconds <= 0) return 0
   const mpw = machinesPerWorker(doc.machinesPerWorker)
-  return Math.trunc((remaining * unitSeconds) / mpw / 60)
+  return exactTrunc((remaining * unitSeconds) / mpw / 60)
 }
 
 /**
@@ -298,7 +299,7 @@ export const forwardProducedToNextPhase: CollectionAfterChangeHook = async ({ do
     // Top up the successor's ordered units from this phase's produced (per option).
     const merged: OptionLine[] = (d.options ?? []).map((o) => ({
       label: o.label ?? null,
-      ordered: Math.max(toInt(o.produced), toInt(o.ordered)),
+      ordered: exactMax(toInt(o.produced), toInt(o.ordered)),
       produced: 0,
       backordered: 0,
     }))

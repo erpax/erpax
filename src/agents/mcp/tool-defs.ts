@@ -1,3 +1,4 @@
+import { algebraSqrt } from '@/algebra'
 /**
  * ERPax MCP tool registry — central declaration of every tool the
  * Payload MCP plugin exposes.
@@ -416,7 +417,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
           case 'collapse': {
             const counts = Object.fromEntries(HORO_DIGITS.map((d) => [d, 0])) as Record<HoroStep, number>
             for (const n of UUID_MATRIX_NODES) if (rungs.includes(n.horo)) counts[n.horo as HoroStep]++
-            const amps = Object.fromEntries(HORO_DIGITS.map((d) => [d, Math.sqrt(counts[d])])) as Record<HoroStep, number>
+            const amps = Object.fromEntries(HORO_DIGITS.map((d) => [d, algebraSqrt(counts[d])])) as Record<HoroStep, number>
             if (HORO_DIGITS.reduce((s, d) => s + amps[d], 0) === 0) return json({ error: 'no atoms on diatonic rungs to superpose' })
             const state = superpose(amps)
             const rr = typeof r === 'number' && Number.isFinite(r) ? ((r % 1) + 1) % 1 : 0

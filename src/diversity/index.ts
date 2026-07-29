@@ -1,3 +1,4 @@
+import { algebraLog } from '@/algebra'
 /**
  * diversity -- variety measured: Shannon H, Simpson 1-Σpᵢ², Pielou evenness.
  *
@@ -30,7 +31,7 @@ export const richness = (abundances: number[]): number => abundances.filter((a) 
 export const shannon = (abundances: number[]): number => {
   const ps = proportions(abundances)
   if (ps.length === 0) return 0
-  const h = -ps.reduce((s, p) => s + p * Math.log(p), 0)
+  const h = -ps.reduce((s, p) => s + p * algebraLog(p), 0)
   return h === 0 ? 0 : h // normalize −0 (a single class: −(1·ln1)) to +0
 }
 
@@ -48,7 +49,7 @@ export const simpson = (abundances: number[]): number => {
 export const evenness = (abundances: number[]): number => {
   const S = richness(abundances)
   if (S <= 1) return 1
-  return shannon(abundances) / Math.log(S)
+  return shannon(abundances) / algebraLog(S)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

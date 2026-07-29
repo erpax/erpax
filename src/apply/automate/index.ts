@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * apply/automate — one orchestration loop: inventory → clean → measure → ratchet → emit.
  *
@@ -72,7 +73,7 @@ const MANIFEST_LAW =
 export const AUTOMATE_WATCH_BASE_MS = 60_000
 
 /** Max wall-clock budget per cycle — crest-step horo ratio × base minute. */
-export const AUTOMATE_CYCLE_BUDGET_MS = Math.round(
+export const AUTOMATE_CYCLE_BUDGET_MS = exactRound(
   AUTOMATE_WATCH_BASE_MS * horoRatio(HORO_DIGITS[3] ?? 8),
 )
 
@@ -188,7 +189,7 @@ export function persistAutomateManifest(manifest: AutomateManifest, cwd: string 
 /** HORO-derived watch interval — apply (base·1) composed with unity (9). */
 export function automateWatchIntervalMs(): number {
   const composed = composeSteps(1, 9)
-  return Math.max(5_000, Math.round(AUTOMATE_WATCH_BASE_MS * horoRatio(composed)))
+  return exactMax(5_000, exactRound(AUTOMATE_WATCH_BASE_MS * horoRatio(composed)))
 }
 
 /** Session-law inventory + active erpax process hints (log-only duplicate detection). */
@@ -238,7 +239,7 @@ export function rulesLightScan(cwd: string = process.cwd()): RulesLightScanResul
 /** Violation headroom from an existing light scan (avoids rescan). */
 export function violationFloorDistanceFromRules(rules: RulesLightScanResult): number {
   return CLEAN_SCAN_AXES.reduce(
-    (s, axis) => s + Math.max(0, rules.axes[axis].baseline - rules.axes[axis].count),
+    (s, axis) => s + exactMax(0, rules.axes[axis].baseline - rules.axes[axis].count),
     0,
   )
 }
@@ -259,8 +260,8 @@ export function tamperCostOf(
   cwd: string = process.cwd(),
   opts: TamperCostOfOpts = {},
 ): TamperCostVerdict {
-  const folderCount = Math.max(corpus.folderCount, 1)
-  const contentUuidPct = Math.round((corpus.sealed / folderCount) * 1000) / 10
+  const folderCount = exactMax(corpus.folderCount, 1)
+  const contentUuidPct = exactRound((corpus.sealed / folderCount) * 1000) / 10
   const sealedPct = contentUuidPct
   const matrixEdges = corpus.meanBondDegree
   const vfd =
@@ -268,23 +269,23 @@ export function tamperCostOf(
     (opts.rules ? violationFloorDistanceFromRules(opts.rules) : violationFloorDistance(cwd))
 
   const uuidNorm = corpus.sealed / folderCount
-  const matrixNorm = Math.min(1, matrixEdges / 50)
-  const violationNorm = Math.min(1, vfd / 100)
-  const coverage = Math.min(
+  const matrixNorm = exactMin(1, matrixEdges / 50)
+  const violationNorm = exactMin(1, vfd / 100)
+  const coverage = exactMin(
     1,
-    Math.round((uuidNorm * 0.35 + (sealedPct / 100) * 0.25 + matrixNorm * 0.25 + violationNorm * 0.15) * 1000) /
+    exactRound((uuidNorm * 0.35 + (sealedPct / 100) * 0.25 + matrixNorm * 0.25 + violationNorm * 0.15) * 1000) /
       1000,
   )
 
   const policy = maxWorkTamperPolicy()
   const _tamperCostLog2 = tamperCostLog2ForCoverage(coverage, policy)
-  const waveOrdinal = Math.max(1, Math.round(coverage * policy.waveDepth))
+  const waveOrdinal = exactMax(1, exactRound(coverage * policy.waveDepth))
   const units: WorkUnit[] = [
     {
       sealedEb: corpus.entropy.totalSealEb,
       paths: corpus.folderCount,
       waveOrdinal,
-      receiptSeq: Math.round(coverage * policy.receiptChainDepth),
+      receiptSeq: exactRound(coverage * policy.receiptChainDepth),
     },
   ]
   const wt = workTamperProduct(units, { policy })
@@ -307,7 +308,7 @@ export function tamperCostReport(
 ): TamperCostReport {
   const current = tamperCostOf(corpus, cwd, opts)
   const prior = loadAutomateManifest(cwd)?.tamper.product ?? loadEfficiencyStore(cwd).latest?.workTamperProduct ?? null
-  const delta = prior !== null ? Math.round((current.product - prior) * 1000) / 1000 : null
+  const delta = prior !== null ? exactRound((current.product - prior) * 1000) / 1000 : null
   return {
     ...current,
     priorProduct: prior,
@@ -320,22 +321,22 @@ const buildLightCorpus = (
   inventory: TaskInventory,
   prior: EfficiencyMetrics | null,
 ): CorpusAnalytics => {
-  const folderCount = Math.max(inventory.session.totalAtoms, 1)
+  const folderCount = exactMax(inventory.session.totalAtoms, 1)
   const sealed = inventory.session.trinity
   const entropyEb = prior?.entropyEb ?? 0
   return {
     folderCount,
     sealed,
     balanced: sealed,
-    meanBondDegree: prior ? Math.round(prior.concentrationTopScore * 10) / 10 : 0,
+    meanBondDegree: prior ? exactRound(prior.concentrationTopScore * 10) / 10 : 0,
     totalVariance: 0,
     withBindings: 0,
     distinctStandards: 0,
     byHoro: [],
     entropy: {
       unit: 'eb',
-      totalGapEb: Math.max(0, folderCount - sealed),
-      totalSealEb: Math.max(sealed * 2, 1),
+      totalGapEb: exactMax(0, folderCount - sealed),
+      totalSealEb: exactMax(sealed * 2, 1),
       netEntropyEb: entropyEb,
       sealGapRatio: sealed / folderCount,
       sealedMass: sealed,
@@ -539,7 +540,7 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
     dryRun,
     inventory: {
       atoms: inventory.session.totalAtoms,
-      trinityPct: Math.round(inventory.session.trinityPct * 10) / 10,
+      trinityPct: exactRound(inventory.session.trinityPct * 10) / 10,
       activeAgents: inventory.activeAgents.length,
       duplicateAgents: inventory.activeAgents.filter((a) => a.duplicate).length,
     },
@@ -563,7 +564,7 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
   persistAutomateManifest({ ...manifest, emitted }, cwd)
 
   stopHeartbeat()
-  const durationMs = Math.round(performance.now() - started)
+  const durationMs = exactRound(performance.now() - started)
 
   return {
     aborted: false,
@@ -660,7 +661,7 @@ function abortedResult(
     ratchet: efficiencyRatchet(loadEfficiencyStore(cwd).latest, snap.metrics),
     manifest,
     emitted: [],
-    durationMs: Math.round(performance.now() - started),
+    durationMs: exactRound(performance.now() - started),
   }
 }
 

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * agentCostPolicy — agent dispatch cost law: derive-path vs manual-forge ratio,
  * horo wave context cap, lazy skill load by atomPath (never the 77MB bundle).
@@ -52,7 +53,7 @@ export interface AgentCostPolicy {
 export function agentCostPolicy(opts: AgentCostPolicyOpts = {}): AgentCostPolicy {
   const wavePolicy = maxWorkTamperPolicy(opts.wavePolicy)
   const corpusCoverage = opts.corpusCoverage ?? 0.999
-  const nodes = Math.max(opts.nodes ?? 1, 1)
+  const nodes = exactMax(opts.nodes ?? 1, 1)
 
   const derivePrice = manualDevelopmentPrice({ corpusCoverage, nodes, manualPath: false })
   const manualPrice = manualDevelopmentPrice({ corpusCoverage, nodes, manualPath: true })

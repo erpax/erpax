@@ -257,7 +257,7 @@ export interface FoldSpeedup {
  * full-corpus derivation, 79% of the 27s compactRulesSnapshot scan being stray-file overhead.
  */
 export function foldSpeedup(files: number, atoms: number, excess: number): FoldSpeedup {
-  const foldedFiles = Math.max(atoms, files - excess) // cannot fold below one index per atom
+  const foldedFiles = exactMax(atoms, files - excess) // cannot fold below one index per atom
   return {
     files,
     atoms,

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * earth — Earth realised by computing poles as a pyramid.
  *
@@ -234,7 +235,7 @@ export function realiseEarth(opts: { readonly seed?: string; readonly merkabaPat
 export function tipAtPhase(phaseDeg: number): HomologyTip {
   const p = ((phaseDeg % 360) + 360) % 360
   const locked = ([0, 90, 180, 270] as const).reduce((best, cand) =>
-    Math.abs(cand - p) < Math.abs(best - p) ? cand : best,
+    exactAbs(cand - p) < exactAbs(best - p) ? cand : best,
   )
   const tip = (Object.entries(TIP_PHASE) as [CardinalTip, number][]).find(([, ph]) => ph === locked)![0]
   return homologyTips().find((t) => t.tip === tip)!

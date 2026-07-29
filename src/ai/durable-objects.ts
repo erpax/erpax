@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Durable Object stubs for Slice YYY deep-AI coordination.
  *
@@ -76,15 +77,15 @@ export class RateLimiter {
     }
     // Refill since last call.
     const elapsedMin = (now - bucket.lastRefill) / 60000
-    bucket.tokens = Math.min(bucketSize, bucket.tokens + elapsedMin * refillRate)
+    bucket.tokens = exactMin(bucketSize, bucket.tokens + elapsedMin * refillRate)
     bucket.lastRefill = now
     if (bucket.tokens < cost) {
       await this.state.storage.put('bucket', bucket)
-      return Response.json({ allowed: false, retryAfterSeconds: Math.ceil((cost - bucket.tokens) * (60 / refillRate)) }, { status: 429 })
+      return Response.json({ allowed: false, retryAfterSeconds: exactCeil((cost - bucket.tokens) * (60 / refillRate)) }, { status: 429 })
     }
     bucket.tokens -= cost
     await this.state.storage.put('bucket', bucket)
-    return Response.json({ allowed: true, remaining: Math.floor(bucket.tokens) })
+    return Response.json({ allowed: true, remaining: exactFloor(bucket.tokens) })
   }
 }
 
@@ -238,8 +239,8 @@ export class AuditChain {
     if (request.method === 'GET' && path === '/chain') {
       const head = (await this.state.storage.get<ChainHead>('head')) ?? null
       if (!head) return Response.json({ leaves: [] })
-      const fromSeq = Math.max(0, Number(url.searchParams.get('fromSeq') ?? 0))
-      const toSeq = Math.min(head.seq, Number(url.searchParams.get('toSeq') ?? head.seq))
+      const fromSeq = exactMax(0, Number(url.searchParams.get('fromSeq') ?? 0))
+      const toSeq = exactMin(head.seq, Number(url.searchParams.get('toSeq') ?? head.seq))
       const leaves: UuidLinkedLeaf[] = []
       for (let s = fromSeq; s <= toSeq; s++) {
         const leaf = await this.state.storage.get<UuidLinkedLeaf>(`leaf:${s}`)

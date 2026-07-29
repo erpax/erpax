@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * cost — one efficiency law for every cost in the society. efficiency = output / cost, where the
  * cost may be of any kind (ai/money/energy/time/labor/entropy) and output is productivity (committed,
@@ -51,7 +52,7 @@ export function moreEfficient(a: Ledger, b: Ledger): boolean {
  */
 export function wasteFraction(totalCost: number, productiveCost: number): number {
   if (totalCost <= 0) return 0
-  return Math.max(0, totalCost - productiveCost) / totalCost
+  return exactMax(0, totalCost - productiveCost) / totalCost
 }
 
 /**
@@ -117,10 +118,10 @@ export const ERPAX_DIGEST_BITS = UUID_BITS - UUID_VERSION_BITS - UUID_VARIANT_BI
 export const CONTENT_DIGEST_BITS = 256
 
 /** log2 of the whole Bitcoin network's hashrate (~7×10^20 H/s). */
-export const BITCOIN_HASHRATE_LOG2 = Math.log2(7e20)
+export const BITCOIN_HASHRATE_LOG2 = algebraLog2(7e20)
 
 /** log2 of seconds in a Julian year. */
-export const LOG2_SECONDS_PER_YEAR = Math.log2(365.25 * 24 * 3600)
+export const LOG2_SECONDS_PER_YEAR = algebraLog2(365.25 * 24 * 3600)
 
 /** Second-preimage resistance of an n-bit digest ≈ 2^n operations (log2 = n). */
 export const secondPreimageLog2 = (digestBits: number): number => digestBits
@@ -133,7 +134,7 @@ export const birthdayLog2 = (digestBits: number): number => digestBits / 2
  * Positive ⇒ safe; ≤ 0 ⇒ at/past the birthday bound. Per content namespace.
  */
 export const birthdayMarginBits = (digestBits: number, rows: number): number =>
-  birthdayLog2(digestBits) - Math.log2(Math.max(rows, 1))
+  birthdayLog2(digestBits) - algebraLog2(exactMax(rows, 1))
 
 /** log2 of years for a hashrate (log2 H/s) to perform 2^workLog2 operations. */
 export const bruteYearsLog2 = (workLog2: number, hashrateLog2: number): number =>
@@ -170,7 +171,7 @@ export const harmonicFloors = (digestBits: number): [number, number, number] => 
 
 /** P(undetected tamper) ≈ (1 − coverage)^checks. → 0 as coverage → 1. */
 export const tamperEvasionProbability = (coverage: number, checks: number): number =>
-  Math.max(0, 1 - coverage) ** checks
+  exactMax(0, 1 - coverage) ** checks
 
 /**
  * Work (log2 ops) to evade detection at a coverage across `checks` independent
@@ -178,7 +179,7 @@ export const tamperEvasionProbability = (coverage: number, checks: number): numb
  * 100% coverage by architecture ⇒ ∞. (The coverage=1 / max-tamper-cost law.)
  */
 export const coverageCostLog2 = (coverage: number, checks: number): number =>
-  coverage >= 1 ? Number.POSITIVE_INFINITY : -checks * Math.log2(1 - Math.min(coverage, 1))
+  coverage >= 1 ? Number.POSITIVE_INFINITY : -checks * algebraLog2(1 - exactMin(coverage, 1))
 
 /**
  * 3FS/CRAQ replication amplifier: under strong consistency, every replica's
@@ -188,7 +189,7 @@ export const coverageCostLog2 = (coverage: number, checks: number): number =>
  * @standard CRAQ — Terrace & Freedman, USENIX ATC 2009
  */
 export const replicationChecks = (checks: number, replicas: number, strongConsistency: boolean): number =>
-  strongConsistency ? checks * Math.max(replicas, 1) : checks
+  strongConsistency ? checks * exactMax(replicas, 1) : checks
 
 /**
  * Machine-checked-invariant amplifier: each conservation invariant the audit
@@ -198,7 +199,7 @@ export const replicationChecks = (checks: number, replicas: number, strongConsis
  * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
  */
 export const invariantChecks = (checks: number, invariants: number): number =>
-  checks + Math.max(invariants, 0)
+  checks + exactMax(invariants, 0)
 
 // ─────────────────────────────────────────────────────────────────────────────
 // MANUAL DEVELOPMENT PRICE — make impossible price to pay for manual development.
@@ -266,10 +267,10 @@ export const MANUAL_IMPOSSIBLE_RATIO = secondPreimageLog2(ERPAX_DIGEST_BITS)
  */
 export function manualDevelopmentPrice(ctx: ManualDevelopmentContext): ManualDevelopmentPrice {
   const checks = ctx.checks ?? CONFIRM_GATE_CHECKS
-  const nodes = Math.max(ctx.nodes ?? 1, 1)
-  const coverage = Math.min(Math.max(ctx.corpusCoverage, 0), 1)
+  const nodes = exactMax(ctx.nodes ?? 1, 1)
+  const coverage = exactMin(exactMax(ctx.corpusCoverage, 0), 1)
 
-  const verifyBase = Math.log2(nodes) + checks
+  const verifyBase = algebraLog2(nodes) + checks
   const verifyCost = ctx.manualPath ? verifyBase : verifyBase * RODIN_FLOW_RATIO
 
   if (ctx.manualBypass || ctx.unsealed) {
@@ -296,7 +297,7 @@ export function manualDevelopmentPrice(ctx: ManualDevelopmentContext): ManualDev
   }
 
   if (ctx.manualSkillEdit) {
-    forgeCost += coverageCostLog2(Math.max(0, 1 - 1 / checks), checks)
+    forgeCost += coverageCostLog2(exactMax(0, 1 - 1 / checks), checks)
   }
 
   const ratio = verifyCost > 0 ? forgeCost / verifyCost : Number.POSITIVE_INFINITY

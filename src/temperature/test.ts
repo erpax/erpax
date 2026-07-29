@@ -1,9 +1,10 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { factor, partition, distribution, ratio } from '@/temperature'
 
 // The Boltzmann distribution over energy levels. Tests assert the RELATIONS —
 // normalisation, descending occupancy, detailed-balance ratio, the hot/cold limits.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 const levels = [0, 1e-21, 2e-21] // ascending energies (J)
 
 describe('temperature: the Boltzmann distribution', () => {

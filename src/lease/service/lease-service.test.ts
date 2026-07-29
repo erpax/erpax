@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Lease Service — IFRS 16 / ASC 842 PV + amortisation arithmetic.
  *
@@ -55,7 +56,7 @@ describe('Lease service — presentValueOfAnnuity', () => {
     const r = 0.05 / 12
     const immediate = presentValueOfAnnuity(1_000_00, r, 12, 'in_arrears')
     const due = presentValueOfAnnuity(1_000_00, r, 12, 'in_advance')
-    expect(due).toBe(Math.round(immediate * (1 + r)))
+    expect(due).toBe(exactRound(immediate * (1 + r)))
   })
 
   it('zero rate collapses to undiscounted sum', () => {
@@ -168,7 +169,7 @@ describe('Lease service — calculateAmortisationSchedule', () => {
     const totalInterest = schedule.reduce((s, p) => s + p.interest, 0)
     const totalPrincipal = schedule.reduce((s, p) => s + p.principal, 0)
     // Allow tail rounding within one cent per period.
-    expect(Math.abs(totalPayments - totalPrincipal - totalInterest)).toBeLessThan(
+    expect(exactAbs(totalPayments - totalPrincipal - totalInterest)).toBeLessThan(
       schedule.length,
     )
   })
@@ -197,7 +198,7 @@ describe('Lease service — calculatePeriod (single-period split)', () => {
       isFinalPeriod: false,
     })
     // interest = 168,532 × 0.00375 = 631.995 → 632 cents
-    expect(period.interest).toBe(Math.round(168_532_00 * 0.00375))
+    expect(period.interest).toBe(exactRound(168_532_00 * 0.00375))
   })
 
   it('caps principal at openingLiability in the final period', () => {

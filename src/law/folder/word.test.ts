@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { computedBaseline } from './baseline'
 import {
@@ -86,7 +87,7 @@ describe('law/folder/word — useless complexity (incomplete diamond)', () => {
   it('top50 ranks useless words by bond reference frequency', () => {
     const diamond = wordDiamondViolations()
     expect(diamond.top50.length).toBeLessThanOrEqual(50)
-    expect(diamond.top50.length).toBe(Math.min(50, diamond.uselessWords))
+    expect(diamond.top50.length).toBe(exactMin(50, diamond.uselessWords))
     for (let i = 1; i < diamond.top50.length; i++) {
       expect(diamond.top50[i - 1]!.referenceCount).toBeGreaterThanOrEqual(
         diamond.top50[i]!.referenceCount,

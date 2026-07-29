@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * fold — the math of the folding: how the whole corpus collapses to ONE root, and how many folds it
  * takes. The fold is [[merge]] made a tree: pair the atoms, pair the pairs, up to the single Merkle
@@ -22,17 +23,17 @@ import { digitalRoot } from '@/horo'
 import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
 
 /** Fold DEPTH — folds to collapse n leaves to one root (the binary Merkle fold): ceil(log2 n). */
-export const foldDepth = (n: number): number => (n <= 1 ? 0 : Math.ceil(Math.log2(n)))
+export const foldDepth = (n: number): number => (n <= 1 ? 0 : exactCeil(algebraLog2(n)))
 
 /** Fold COUNT — merges in a binary fold of n leaves to one root: n − 1. */
-export const foldCount = (n: number): number => Math.max(0, n - 1)
+export const foldCount = (n: number): number => exactMax(0, n - 1)
 
 /** The halving sequence — the leaf-count at each fold level, from n down to 1 (its length − 1 = the depth). */
 export function halving(n: number): number[] {
   const seq = [n]
   let x = n
   while (x > 1) {
-    x = Math.ceil(x / 2)
+    x = exactCeil(x / 2)
     seq.push(x)
   }
   return seq

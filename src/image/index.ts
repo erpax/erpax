@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 /**
  * image — the DETERMINISTIC visual face of a content-uuid (and its animation). One more projection of the
  * self-decoding uuid, alongside [[color]] (the wave), [[signal]] (colour+sound), [[translation]] (meaning).
@@ -30,12 +31,12 @@ function mandala(uuid: string, size: number, animated: boolean): string {
   const g = (i: number): number => b[((i % b.length) + b.length) % b.length] ?? 0
   const cx = size / 2
   const cy = size / 2
-  const col = (i: number): string => `hsl(${Math.round((g(i) * 360) / 256)} 72% 55%)`
+  const col = (i: number): string => `hsl(${exactRound((g(i) * 360) / 256)} 72% 55%)`
   let petals = ''
   for (let k = 0; k < 6; k++) {
-    const ang = (k * 60 * Math.PI) / 180 // 60° — the fold step ([[angle]])
-    const px = cx + Math.cos(ang) * size * 0.28
-    const py = cy + Math.sin(ang) * size * 0.28
+    const ang = (k * 60 * PI) / 180 // 60° — the fold step ([[angle]])
+    const px = cx + algebraCos(ang) * size * 0.28
+    const py = cy + algebraSin(ang) * size * 0.28
     const r = size * (0.14 + 0.14 * (g(k + 1) / 255))
     petals += `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${r.toFixed(1)}" fill="${col(k + 3)}" opacity="0.68"/>`
   }

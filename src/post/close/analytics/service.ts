@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * PostCloseAnalytics Service
  *
@@ -520,7 +521,7 @@ export class PostCloseAnalytics {
       totalGroupRevenue,
       totalGroupProfit,
       segmentConcertation: {
-        topSegmentShare: (Math.max(...segmentShares) * 100),
+        topSegmentShare: (exactMax(...segmentShares) * 100),
         topThreeShare: (segmentShares.slice(0, 3).reduce((a, b) => a + b, 0) * 100),
         herfindahlIndex,
       },
@@ -612,7 +613,7 @@ export class PostCloseAnalytics {
       alerts.push({
         severity: 'critical',
         metric: 'Revenue',
-        message: `Revenue ${Math.abs(varianceReport.totalVariancePercent).toFixed(1)}% below budget`,
+        message: `Revenue ${exactAbs(varianceReport.totalVariancePercent).toFixed(1)}% below budget`,
         recommendation: 'Review revenue drivers and market conditions; assess sales pipeline',
       })
     }
@@ -638,7 +639,7 @@ export class PostCloseAnalytics {
         {
           metric: 'Revenue',
           direction: varianceReport.totalVariancePercent > 0 ? 'up' : 'down',
-          percentChange: Math.abs(varianceReport.totalVariancePercent),
+          percentChange: exactAbs(varianceReport.totalVariancePercent),
           periodSpan: 'YoY',
         },
         {

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Empirical proof leg — the LARGEST proof-of-work blockchain decoded and verified
  * from first principles, on commodity hardware, at zero trust. This is the public
@@ -40,8 +41,8 @@ describe('bitcoin-genesis: decode + verify the biggest blockchain from first pri
   it('quantifies the asymmetry: forge ≈ 2^32 double-SHA256 hashes ≫ the 2-hash verify', () => {
     const p = verifyBitcoinGenesis()
     expect(p.verifyHashes).toBe(2) // one double-SHA256 to fully verify
-    expect(Math.round(p.forgeCostLog2)).toBe(32) // 2^256 / (target+1), difficulty-1
-    expect(p.forgeCostLog2).toBeGreaterThan(Math.log2(p.verifyHashes)) // forge ≫ verify
+    expect(exactRound(p.forgeCostLog2)).toBe(32) // 2^256 / (target+1), difficulty-1
+    expect(p.forgeCostLog2).toBeGreaterThan(algebraLog2(p.verifyHashes)) // forge ≫ verify
   })
 
   it('is deterministic + independently recomputable (same output every call, no state)', () => {

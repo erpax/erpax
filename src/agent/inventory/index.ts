@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * agent/inventory — automatic coordinator task inventory (subagents · terminals).
  *
@@ -85,7 +86,7 @@ const finiteMs = (value: number, fallback: number): number =>
   Number.isFinite(value) ? value : fallback
 
 const finiteSec = (value: number): number =>
-  Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0
+  Number.isFinite(value) ? exactMax(0, exactFloor(value)) : 0
 
 const normalizeTitle = (raw: string): string =>
   raw
@@ -96,8 +97,8 @@ const normalizeTitle = (raw: string): string =>
 
 const formatAge = (sec: number): string => {
   if (sec < 60) return `${sec}s`
-  if (sec < 3600) return `${Math.floor(sec / 60)}m`
-  return `${Math.floor(sec / 3600)}h${Math.floor((sec % 3600) / 60)}m`
+  if (sec < 3600) return `${exactFloor(sec / 60)}m`
+  return `${exactFloor(sec / 3600)}h${exactFloor((sec % 3600) / 60)}m`
 }
 
 const extractTitle = (firstUserText: string, fallbackId: string): string => {
@@ -229,7 +230,7 @@ const parseTerminalFile = (filePath: string, nowMs: number): ParsedTerminal | nu
     startedMatch?.[1] ? Date.parse(startedMatch[1]) : stat.birthtimeMs,
     stat.birthtimeMs,
   )
-  const runningMs = runningMatch ? Number(runningMatch[1]) : Math.max(0, nowMs - startedAtMs)
+  const runningMs = runningMatch ? Number(runningMatch[1]) : exactMax(0, nowMs - startedAtMs)
   return {
     id: `term-${basename(filePath, '.txt')}`,
     filePath,
@@ -391,7 +392,7 @@ export function taskInventory(opts: TaskInventoryOpts = {}): TaskInventoryResult
     const longStale = rows.filter(
       (r) => r.status === 'stale' && r.ageSeconds >= staleAfterSec,
     ).length
-    if (longStale > 0) warnings.push(`${longStale} stale >${Math.floor(staleAfterSec / 60)}min`)
+    if (longStale > 0) warnings.push(`${longStale} stale >${exactFloor(staleAfterSec / 60)}min`)
   }
   const stalled = detectStalledProcesses()
   if (stalled.length) warnings.push(`${stalled.length} long-running erpax process(es) — erpax doctor stalls`)

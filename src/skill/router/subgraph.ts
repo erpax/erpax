@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * subgraph — the per-message aura: resolve a query's RELATED skill subgraph (the
  * harmonic context to LOAD) and FLAG absent neighbours (the gap discovered by use).
@@ -50,7 +51,7 @@ export function relatedSubgraph(seed: SkillNode, index: readonly SkillNode[], de
   const gaps = new Set<string>()
   let frontier: SkillNode[] = [seed]
 
-  for (let d = 0; d < Math.max(0, depth); d++) {
+  for (let d = 0; d < exactMax(0, depth); d++) {
     const next: SkillNode[] = []
     for (const node of frontier) {
       for (const ref of [...node.related, ...node.ancestors, ...node.children]) {

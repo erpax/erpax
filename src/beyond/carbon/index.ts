@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Law 16 — Carbon-aware execution. Slice ZZZZZ.
  * gCO2e per chain step → ESRS E1 / CSRD reporting.
@@ -23,7 +24,7 @@ export function estimateCarbon(args: { cpuMs: number; egressBytes: number; regio
   const networkKwh = (args.egressBytes / 1_073_741_824) * 0.06
   const totalKwh = cpuKwh + networkKwh
   return {
-    gramsCO2e: Math.round(totalKwh * GRID_INTENSITY_GCO2_PER_KWH * 1000) / 1000,
+    gramsCO2e: exactRound(totalKwh * GRID_INTENSITY_GCO2_PER_KWH * 1000) / 1000,
     factorSource: 'Cloudflare grid avg 2025 + IEA network factor',
     region: args.region,
   }

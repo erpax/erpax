@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * conformal — changing perspective is a conformal map, and the invariant it preserves is the ANGLE.
  *
@@ -38,12 +39,12 @@ export function dot(u: readonly number[], v: readonly number[]): number {
 
 /** Euclidean length. */
 export function norm(v: readonly number[]): number {
-  return Math.sqrt(dot(v, v))
+  return algebraSqrt(dot(v, v))
 }
 
 /** The angle between two vectors — the conformal invariant. */
 export function angle(u: readonly number[], v: readonly number[]): number {
-  return Math.acos(Math.max(-1, Math.min(1, dot(u, v) / (norm(u) * norm(v)))))
+  return algebraAcos(exactMax(-1, exactMin(1, dot(u, v) / (norm(u) * norm(v)))))
 }
 
 /** SCALE — dilation by λ. A conformal generator: it breathes the frame, the angle holds. */
@@ -60,8 +61,8 @@ export function invert(v: readonly number[]): number[] {
 /** ROTATE — a plane rotation in the `(i, j)` plane by θ. A generator of `SO(n)`; the vortex / merkaba spin. */
 export function rotatePlane(v: readonly number[], i: number, j: number, theta: number): number[] {
   const out = [...v]
-  const c = Math.cos(theta)
-  const s = Math.sin(theta)
+  const c = algebraCos(theta)
+  const s = algebraSin(theta)
   out[i] = (v[i] ?? 0) * c - (v[j] ?? 0) * s
   out[j] = (v[i] ?? 0) * s + (v[j] ?? 0) * c
   return out
@@ -86,7 +87,7 @@ export function inversionConformalDefect(v: readonly number[]): number {
   )
   const sigma = G[0]![0]!
   let defect = 0
-  for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) defect = Math.max(defect, Math.abs(G[i]![j]! - (i === j ? sigma : 0)))
+  for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) defect = exactMax(defect, exactAbs(G[i]![j]! - (i === j ? sigma : 0)))
   return defect
 }
 
@@ -100,8 +101,8 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const v = [0, 1, 1, 3]
   console.log('conformal — changing perspective preserves the angle, in every dimension:\n')
   console.log(`  angle(u,v)                = ${angle(u, v).toFixed(6)}`)
-  console.log(`  rotate preserves it       : ${Math.abs(angle(u, v) - angle(rotatePlane(u, 0, 1, 0.7), rotatePlane(v, 0, 1, 0.7))) < 1e-12}`)
-  console.log(`  scale  preserves it       : ${Math.abs(angle(u, v) - angle(scale(3.5, u), scale(3.5, v))) < 1e-12}`)
+  console.log(`  rotate preserves it       : ${exactAbs(angle(u, v) - angle(rotatePlane(u, 0, 1, 0.7), rotatePlane(v, 0, 1, 0.7))) < 1e-12}`)
+  console.log(`  scale  preserves it       : ${exactAbs(angle(u, v) - angle(scale(3.5, u), scale(3.5, v))) < 1e-12}`)
   console.log(`  invert conformal (JᵀJ∝I) in dims: ${[2, 3, 4, 5, 6, 7, 8].map((n) => `${n}:${inversionConformalDefect(Array.from({ length: n }, (_, i) => i + 1)) < 1e-9 ? '✓' : '✗'}`).join('  ')}`)
   console.log('\n  the {2,3,7} restriction was a coincidence — inversion is conformal in EVERY dimension. Angle is the invariant of all three generators.')
 }

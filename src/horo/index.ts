@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 /**
  * horo — the seven-position state ring, the erpax matter-twin of
  * `svilena-me/.vitepress/horo-band.js`.
@@ -49,7 +50,7 @@ export function isHoroStep(n: unknown): n is HoroStep {
 
 /** Digital root (base-10) of an integer → 1..9 (0 only for 0): repeated digit-sum = reduction mod 9. The canonical integer digital root; the uuid form is `@/digit`. */
 export function digitalRoot(n: number): number {
-  let dr = Math.abs(Math.trunc(n))
+  let dr = exactAbs(exactTrunc(n))
   while (dr >= 10) dr = String(dr).split('').reduce((s, c) => s + Number(c), 0)
   return dr
 }
@@ -74,8 +75,8 @@ export function imperialRatio(numerator: number, denominator: number): number {
  * contains every move.
  */
 export function composeSteps(a: number, b: number): HoroStep {
-  const x = Math.abs(Number(a) || 0)
-  const y = Math.abs(Number(b) || 0)
+  const x = exactAbs(Number(a) || 0)
+  const y = exactAbs(Number(b) || 0)
   if (x === 0 || y === 0) return 9
   const dr = digitalRoot(x * y)
   return (dr === 0 ? 9 : dr) as HoroStep
@@ -346,7 +347,7 @@ export interface Loop2D {
 
 /** The STATIC loop — a circle, winding once, that never touches its own centre. This is `0`: a closed loop going nowhere. */
 export function circleLoop(t: number): Loop2D {
-  return { x: Math.cos(t), y: Math.sin(t) }
+  return { x: algebraCos(t), y: algebraSin(t) }
 }
 
 /**
@@ -365,12 +366,12 @@ export function circleLoop(t: number): Loop2D {
  * @invariant the lemniscate is a closed figure-eight with two lobes (`x > 0` and `x < 0`) — the double loop
  */
 export function lemniscate(t: number): Loop2D {
-  return { x: Math.cos(t), y: Math.sin(2 * t) / 2 }
+  return { x: algebraCos(t), y: algebraSin(2 * t) / 2 }
 }
 
 /** Does the loop point sit at the void `(0,0)` (within ε)? The circle never does; the folded ∞ does, twice. */
 export function atVoid(p: Loop2D, eps = 1e-9): boolean {
-  return Math.abs(p.x) < eps && Math.abs(p.y) < eps
+  return exactAbs(p.x) < eps && exactAbs(p.y) < eps
 }
 
 /**
@@ -387,23 +388,23 @@ export function atVoid(p: Loop2D, eps = 1e-9): boolean {
  */
 export function turningNumber(loop: (t: number) => Loop2D, samples = 20000): number {
   const h = 2e-5
-  const N = Math.max(1, samples)
+  const N = exactMax(1, samples)
   let total = 0
   let prev = NaN
   for (let i = 0; i <= N; i += 1) {
-    const t = (i / N) * 2 * Math.PI
+    const t = (i / N) * 2 * PI
     const p = loop(t)
     const q = loop(t + h)
-    const phi = Math.atan2((q.y - p.y) / h, (q.x - p.x) / h)
+    const phi = algebraAtan2((q.y - p.y) / h, (q.x - p.x) / h)
     if (!Number.isNaN(prev)) {
       let d = phi - prev
-      while (d > Math.PI) d -= 2 * Math.PI
-      while (d < -Math.PI) d += 2 * Math.PI
+      while (d > PI) d -= 2 * PI
+      while (d < -PI) d += 2 * PI
       total += d
     }
     prev = phi
   }
-  return total / (2 * Math.PI)
+  return total / (2 * PI)
 }
 
 /** One step of the full breath — the digit, and the slope to it (`up` = larger than the last, `down` = smaller). */

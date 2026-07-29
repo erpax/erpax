@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * wave/load — self-balancing horo-phase wave partitioner.
  *
@@ -19,7 +20,7 @@ import { doubleTorusCostLog2 } from '@/quantum'
 import { LANDAUER_BIT } from '@/readme/entropy'
 
 const stepOfOrdinal = (ordinal: number): HoroStep => {
-  const o = Math.trunc(Number(ordinal) || 0)
+  const o = exactTrunc(Number(ordinal) || 0)
   if (o <= 0) return HORO_DIGITS[0]
   return HORO_DIGITS[(o - 1) % HORO_DIGITS.length] as HoroStep
 }
@@ -61,12 +62,12 @@ export interface SelfBalancingWaveLoadOpts<T> {
 }
 
 const defaultMaxItemsPerWave = (n: number): number =>
-  n <= HORO_DIGITS.length ? n : Math.ceil(n / HORO_DIGITS.length)
+  n <= HORO_DIGITS.length ? n : exactCeil(n / HORO_DIGITS.length)
 
 /** Path depth → comparable units (eb) — one Landauer bit scaled by log₂ depth. */
 export function pathComparableUnits(path: string): number {
   const depth = path.split('/').filter(Boolean).length
-  return Math.round(LANDAUER_BIT * Math.log2(depth + 1) * 1000) / 1000
+  return exactRound(LANDAUER_BIT * algebraLog2(depth + 1) * 1000) / 1000
 }
 
 /**
@@ -80,7 +81,7 @@ export function selfBalancingWaveLoad<T>(
   const weightOf = opts.weightOf ?? (() => 1)
   const maxUnits = opts.maxUnitsPerWave ?? Number.POSITIVE_INFINITY
   const maxItems = opts.maxItemsPerWave ?? defaultMaxItemsPerWave(items.length)
-  const startOrd = Math.max(1, Math.trunc(opts.waveOrdinalStart ?? 1))
+  const startOrd = exactMax(1, exactTrunc(opts.waveOrdinalStart ?? 1))
 
   if (items.length === 0) {
     return {
@@ -93,7 +94,7 @@ export function selfBalancingWaveLoad<T>(
   }
 
   const weighted = items
-    .map((item) => ({ item, weight: Math.max(0, weightOf(item)) }))
+    .map((item) => ({ item, weight: exactMax(0, weightOf(item)) }))
     .sort((a, b) => b.weight - a.weight)
 
   type Bucket = { items: T[]; units: number }
@@ -121,21 +122,21 @@ export function selfBalancingWaveLoad<T>(
     ordinal: startOrd + i,
     step: stepOfOrdinal(startOrd + i),
     items: b.items,
-    totalUnits: Math.round(b.units * 1000) / 1000,
+    totalUnits: exactRound(b.units * 1000) / 1000,
     itemCount: b.items.length,
   }))
 
   const totalUnits = waves.reduce((s, w) => s + w.totalUnits, 0)
   const unitLoads = waves.map((w) => w.totalUnits)
-  const minU = Math.min(...unitLoads)
-  const maxU = Math.max(...unitLoads)
+  const minU = exactMin(...unitLoads)
+  const maxU = exactMax(...unitLoads)
   const balanceRatio = minU > 0 ? maxU / minU : maxU > 0 ? Number.POSITIVE_INFINITY : 1
 
   return {
     waves,
     waveCount: waves.length,
-    totalUnits: Math.round(totalUnits * 1000) / 1000,
-    balanceRatio: Math.round(balanceRatio * 1000) / 1000,
+    totalUnits: exactRound(totalUnits * 1000) / 1000,
+    balanceRatio: exactRound(balanceRatio * 1000) / 1000,
     restingStep: composeWaveSteps(waves.map((w) => w.step)),
   }
 }
@@ -152,7 +153,7 @@ export function waveDispatchCost<T>(
 ): ManualDevelopmentPrice {
   return manualDevelopmentPrice({
     corpusCoverage: opts.corpusCoverage ?? 1,
-    nodes: Math.max(batch.itemCount, 1),
+    nodes: exactMax(batch.itemCount, 1),
     manualPath: opts.manualPath ?? false,
   })
 }
@@ -171,14 +172,14 @@ export function tamperCostForWave<T>(
   batch: WaveBatch<T>,
   opts: WaveTamperCostOpts = {},
 ): number {
-  const total = Math.max(opts.totalWaves ?? 1, 1)
-  const completed = Math.min(Math.max(opts.completedWaves ?? 1, 1), total)
+  const total = exactMax(opts.totalWaves ?? 1, 1)
+  const completed = exactMin(exactMax(opts.completedWaves ?? 1, 1), total)
   const coverage = completed / total
   const gap = 1 - coverage
 
   const torus = doubleTorusCostLog2(gap)
   const chain = coverageCostLog2(coverage, CONFIRM_GATE_CHECKS * completed)
-  const itemAmp = Math.log2(Math.max(batch.itemCount, 1) + 1)
+  const itemAmp = algebraLog2(exactMax(batch.itemCount, 1) + 1)
 
   if (!Number.isFinite(torus) || !Number.isFinite(chain)) return Number.POSITIVE_INFINITY
   return torus + chain + itemAmp

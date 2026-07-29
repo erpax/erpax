@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * color — colour grounded in the A432 harmonic: the 7-colour chakra spectrum (root → crown), the
  * visible octave of A432. The HEART (4th, [[chakra]]) is GREEN — the colour of coherence, and the
@@ -16,7 +17,7 @@ export const A432 = 432
 export const SPECTRUM = ['#e23b3b', '#ee8b22', '#f2cb22', '#2fb344', '#2f9bd4', '#3a44b0', '#7b3fb0'] as const
 
 /** The colour at a 1..7 scale position (wraps the ring); position 4 (heart) is green. */
-export const colorOf = (position: number): string => SPECTRUM[(((Math.trunc(position) - 1) % 7) + 7) % 7]!
+export const colorOf = (position: number): string => SPECTRUM[(((exactTrunc(position) - 1) % 7) + 7) % 7]!
 
 /** The heart / coherence colour — green (the A432-anchored colour of a passing test). */
 export const GREEN: string = SPECTRUM[3]
@@ -47,18 +48,18 @@ export function wavelengthToRgb(nm: number): [number, number, number] {
   let f = 1
   if (nm < 420) f = 0.3 + (0.7 * (nm - 380)) / 40
   else if (nm > 700) f = 0.3 + (0.7 * (780 - nm)) / 80
-  const a = (v: number): number => (v <= 0 ? 0 : Math.round(255 * (v * f) ** 0.8))
+  const a = (v: number): number => (v <= 0 ? 0 : exactRound(255 * (v * f) ** 0.8))
   return [a(r), a(g), a(b)]
 }
 
 /** sRGB → CMYK, each 0..100. */
 export function rgbToCmyk([r, g, b]: readonly [number, number, number]): [number, number, number, number] {
-  const k = 1 - Math.max(r, g, b) / 255
+  const k = 1 - exactMax(r, g, b) / 255
   if (k >= 1) return [0, 0, 0, 100]
   const c = (1 - r / 255 - k) / (1 - k)
   const m = (1 - g / 255 - k) / (1 - k)
   const y = (1 - b / 255 - k) / (1 - k)
-  return [Math.round(c * 100), Math.round(m * 100), Math.round(y * 100), Math.round(k * 100)]
+  return [exactRound(c * 100), exactRound(m * 100), exactRound(y * 100), exactRound(k * 100)]
 }
 
 const toHex = ([r, g, b]: readonly [number, number, number]): string =>
@@ -77,8 +78,8 @@ export function computedColor(band: number): {
   hex: string
   cmyk: [number, number, number, number]
 } {
-  const b = Math.max(0, Math.min(1, band))
-  const nm = Math.round(b <= 0.5 ? 700 - b * 290 : 555 - (b - 0.5) * 310) // 700 root → 555 heart → 400 crown
+  const b = exactMax(0, exactMin(1, band))
+  const nm = exactRound(b <= 0.5 ? 700 - b * 290 : 555 - (b - 0.5) * 310) // 700 root → 555 heart → 400 crown
   const rgb = wavelengthToRgb(nm)
   return { nm, rgb, hex: toHex(rgb), cmyk: rgbToCmyk(rgb) }
 }
@@ -95,7 +96,7 @@ const C_NM = 299792458e9
  * octave fold is a construction (sound ≠ light); the continuity and the wavelength→colour are real.
  */
 export function waveColor(frequencyHz: number): { nm: number; rgb: [number, number, number]; hex: string } {
-  let f = Math.abs(frequencyHz)
+  let f = exactAbs(frequencyHz)
   if (f === 0) return { nm: 0, rgb: [0, 0, 0], hex: '#000000' }
   while (f < 4.0e14) f *= 2
   while (f > 7.9e14) f /= 2

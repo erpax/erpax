@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cloudflare/cost — erpax's real Cloudflare billable surface, priced, fed into the one efficiency law.
  *
@@ -111,9 +112,9 @@ export interface CfBill {
 
 /** Meter one dimension: nothing billable below the included tier, linear above it. Never negative. */
 function meter(dimension: string, used: number, r: Rate): LineItem {
-  const billable = Math.max(0, used - r.included)
+  const billable = exactMax(0, used - r.included)
   const usd = (billable / r.per) * r.rate
-  return { dimension, used, billable, unit: r.unit, usd: Math.round(usd * 100) / 100 }
+  return { dimension, used, billable, unit: r.unit, usd: exactRound(usd * 100) / 100 }
 }
 
 /**
@@ -141,7 +142,7 @@ export function cloudflareCost(profile: CfProfile, p: CfPricing = DEFAULT_CF_PRI
     meter('durableObjects.gbSeconds', g(profile.doGbSeconds), p.doGbSeconds),
     meter('analyticsEngine.dataPoints', g(profile.analyticsDataPoints), p.analyticsDataPoints),
   ]
-  const monthlyUsd = Math.round(lines.reduce((s, l) => s + l.usd, 0) * 100) / 100
+  const monthlyUsd = exactRound(lines.reduce((s, l) => s + l.usd, 0) * 100) / 100
   return { lines, monthlyUsd }
 }
 
@@ -270,7 +271,7 @@ const PRICE_RATE: Record<string, number> = {
 export function revealBackend(): Divergence[] {
   return Object.entries(THEORETICAL_FLOOR).map(([dimension, floor]) => {
     const price = PRICE_RATE[dimension] ?? 0
-    const ratio = floor.usdPerUnit === 0 ? Infinity : Math.round((price / floor.usdPerUnit) * 100) / 100
+    const ratio = floor.usdPerUnit === 0 ? Infinity : exactRound((price / floor.usdPerUnit) * 100) / 100
     const verdict: Divergence['verdict'] = ratio < 0.8 ? 'subsidy' : ratio <= 3 ? 'commoditised' : 'margin'
     return { dimension, priceUsdPerUnit: price, floorUsdPerUnit: floor.usdPerUnit, ratio, verdict, basis: floor.basis }
   }).sort((a, b) => a.ratio - b.ratio)

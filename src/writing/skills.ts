@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * writing/skills — scored exercises for improving writing craft from computed metrics.
  *
@@ -40,7 +41,7 @@ export function improveWritingSkill(model: WritingSkillModel): SkillExerciseResu
   const wm = wordMatterViolations(model.cwd).filter((v) => v.atomPath === model.atomPath)
   if (wm.length > 0) gaps.push(`${wm.length} word-matter violation(s) in matter-twin`)
   let score = writingScore(computed)
-  score = Math.max(0, score - wm.length * 5)
+  score = exactMax(0, score - wm.length * 5)
   return {
     score,
     passes: score >= PASS_THRESHOLD && computed.balanced && gaps.length === 0,

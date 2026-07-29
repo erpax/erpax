@@ -15,6 +15,7 @@ import {
   digitFold,
 } from '@/quantum/fold'
 import { architectureMask } from '@/quantum/word'
+import { exactMax } from '@/algebra'
 
 export const BALANCE_EQUATION =
   'Σdebit − Σcredit = 0 · Σgap − Σseal = netEb · wordHalf ⊗ digitHalf = combined128'
@@ -207,7 +208,7 @@ export function renderBalanceMeetingPivotSection(model: FolderReadmeModel): stri
 
 export function renderQuantumFoldSection(model: FolderReadmeModel): string {
   const m = balanceMeetingFromModel(model)
-  const rows = Math.max(model.statement.debits.length, model.statement.credits.length)
+  const rows = exactMax(model.statement.debits.length, model.statement.credits.length)
   const fmt = (account: string, amount: number): string => `[[${account}]] ${amount}`
   const L: string[] = [
     '## quantum fold',

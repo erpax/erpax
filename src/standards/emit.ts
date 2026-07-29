@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * standards/emit — the ONE shared, uuid-native index where the dissolved
  * standards vocabulary meets.
@@ -250,7 +251,7 @@ export function standardImplementation(cwd: string = process.cwd()): StandardImp
       if (e.modules.some((m) => /^src\/(rules|law|access)\//.test(m.path) && /\.tsx?$/.test(m.path))) depth = 'gated'
       const fused = new Set<string>()
       for (const m of e.modules) for (const other of byFile.get(m.path) ?? []) if (other !== e.id) fused.add(other)
-      const score = DEPTH_RANK[depth] * (1 + Math.log2(1 + fused.size))
+      const score = DEPTH_RANK[depth] * (1 + algebraLog2(1 + fused.size))
       return { id: e.id, citations: e.count, depth, fusionDegree: fused.size, score }
     })
     .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id))
@@ -468,7 +469,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log('Wrote catalogue.ts + SKILL.md index (uuid-native).')
     console.log(`  registry: ${entries.length} · cited: ${cited.length} · uncited: ${uncited.length}`)
     console.log(
-      `  banners: ${totalHits} scanned, ${matched} matched (${((100 * matched) / Math.max(1, totalHits)).toFixed(0)}% coverage)`,
+      `  banners: ${totalHits} scanned, ${matched} matched (${((100 * matched) / exactMax(1, totalHits)).toFixed(0)}% coverage)`,
     )
     if (uncited.length) console.log(`  uncited registry rows: ${uncited.map((e) => e.id).join(', ')}`)
   }

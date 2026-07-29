@@ -1,10 +1,11 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { redundancy, efficiency } from '@/redundancy'
 import { entropy, maxEntropy } from '@/shannon'
 
 // Redundancy = the structure (coverage) in a distribution. Tests assert the
 // RELATIONS — 0 at uniform, 1 at certainty, R+efficiency=1 — never a magic number.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 
 describe('redundancy: R = 1 − H/H_max (structure = coverage)', () => {
   it('a uniform (incompressible) source has zero redundancy', () => {

@@ -15,6 +15,8 @@
  * @see src/standards/_money/
  */
 
+import { exactAbs, exactRound } from '@/algebra'
+
 export const createAmountField = (fieldName: string = 'amount') => {
   return {
     name: fieldName,
@@ -30,7 +32,7 @@ export const createAmountField = (fieldName: string = 'amount') => {
       }
 
       // Value must be within reasonable limits (up to $9,999,999.99)
-      if (Math.abs(value) > 999999999) {
+      if (exactAbs(value) > 999999999) {
         return 'Amount exceeds maximum allowed value'
       }
 
@@ -42,7 +44,7 @@ export const createAmountField = (fieldName: string = 'amount') => {
           // If decimal value is provided, convert to cents
           if (data[fieldName] && typeof data[fieldName] === 'string') {
             const decimal = parseFloat(data[fieldName] as string)
-            data[fieldName] = Math.round(decimal * 100)
+            data[fieldName] = exactRound(decimal * 100)
           }
           return data
         },
@@ -74,21 +76,21 @@ export class MoneyFormatter {
    * @returns Amount in cents as integer
    */
   static usdToCents(dollars: number): number {
-    return Math.round(dollars * 100)
+    return exactRound(dollars * 100)
   }
 
   /**
    * Validate monetary amount in cents
    */
   static isValidCents(cents: number): boolean {
-    return Number.isInteger(cents) && Math.abs(cents) <= 999999999
+    return Number.isInteger(cents) && exactAbs(cents) <= 999999999
   }
 
   /**
    * Round cents to nearest cent
    */
   static roundCents(cents: number): number {
-    return Math.round(cents)
+    return exactRound(cents)
   }
 
   /**
@@ -109,7 +111,7 @@ export class MoneyFormatter {
    * Multiply monetary amount
    */
   static multiplyCents(cents: number, multiplier: number): number {
-    return Math.round(cents * multiplier)
+    return exactRound(cents * multiplier)
   }
 
   /**
@@ -117,7 +119,7 @@ export class MoneyFormatter {
    */
   static divideCents(cents: number, divisor: number): number {
     if (divisor === 0) throw new Error('Cannot divide by zero')
-    return Math.round(cents / divisor)
+    return exactRound(cents / divisor)
   }
 }
 

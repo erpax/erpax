@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * quantum/log — append-only trail; length is forging difficulty.
  *
@@ -29,8 +30,8 @@ describe('quantum/log — forging difficulty rises with chain length', () => {
   })
 
   it('each link after genesis adds ~log2(10) orders', () => {
-    expect(forgingDifficultyLog2(2)).toBeCloseTo(Math.log2(10), 5)
-    expect(forgingDifficultyLog2(5)).toBeCloseTo(4 * Math.log2(10), 5)
+    expect(forgingDifficultyLog2(2)).toBeCloseTo(algebraLog2(10), 5)
+    expect(forgingDifficultyLog2(5)).toBeCloseTo(4 * algebraLog2(10), 5)
     expect(logTamperCostLog2(5)).toBe(forgingDifficultyLog2(5))
   })
 })

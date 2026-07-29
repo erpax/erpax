@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Berlin Group NextGenPSD2 v1.3 — generic ASPSP client.
  *
@@ -90,7 +91,7 @@ export async function acquireAspspToken(config: AspspConfig): Promise<ApiResult<
     if (!r.ok) return err(config.name, `OAuth2 HTTP ${r.status}`)
     const json = (await r.json()) as { access_token?: string; expires_in?: number }
     if (!json.access_token) return err(config.name, 'OAuth2 response missing access_token')
-    const expiresAt = Date.now() + Math.max(0, (json.expires_in ?? 60) - 5) * 1000
+    const expiresAt = Date.now() + exactMax(0, (json.expires_in ?? 60) - 5) * 1000
     return ok(config.name, { token: json.access_token, expiresAt })
   } catch (e) {
     return err(config.name, String(e))

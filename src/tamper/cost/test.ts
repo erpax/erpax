@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Tamper-cost — the security math, asserted. Green by construction: these tests
  * ARE the proof that "how much to crack a zero-entropy app" resolves the way the
@@ -115,7 +116,7 @@ describe('tamper-cost: the headline answer', () => {
     const v = crackVerdict({ rows: 1e9 })
     const ANCHOR_FLOOR = 112 // RFC 3161 RSA-2048 TSA
     expect(v.tamperEvident).toBe(true)
-    expect(v.crackCostLog2).toBe(Math.min(ERPAX_DIGEST_BITS, ANCHOR_FLOOR))
+    expect(v.crackCostLog2).toBe(exactMin(ERPAX_DIGEST_BITS, ANCHOR_FLOOR))
     expect(v.binding).toBe('anchor') // NOT the digest — the correction moved the bottleneck
     expect(2 ** v.bruteYearsLog2).toBeGreaterThan(1000) // millennia of global hashpower
   })
@@ -129,7 +130,7 @@ describe('tamper-cost: the two layers are honestly distinct — cryptographic fl
     const v = crackVerdict({})
     // the floor is the MIN over paths — at the derived 122-bit digest the default RFC-3161 anchor (112) is
     // the weakest, which the typed 106 hid by sitting below it.
-    expect(v.crackCostLog2).toBe(Math.min(ERPAX_DIGEST_BITS, 112))
+    expect(v.crackCostLog2).toBe(exactMin(ERPAX_DIGEST_BITS, 112))
     expect(['second-preimage', 'anchor', 'collision']).toContain(v.binding)
   })
   it('coverage is ADDED on top of the floor (structural amplifier), not folded into the min', () => {

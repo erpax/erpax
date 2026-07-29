@@ -11,6 +11,8 @@
  * @see docs/STANDARDS.md §4.2
  */
 
+import { exactAbs, exactMin, exactRound, exactSqrt, exactPow } from '@/algebra'
+
 
 interface FinancialData {
   asOfDate: string | Date;
@@ -321,7 +323,7 @@ export class FinancialAnalysisEngine {
     const variancePercent = this.safeDiv(variance, budgetAmount) * 100;
 
     let status: 'under' | 'over' | 'on-target';
-    if (Math.abs(variancePercent) <= 5) {
+    if (exactAbs(variancePercent) <= 5) {
       status = 'on-target';
     } else if (variance < 0) {
       status = 'under';
@@ -368,10 +370,10 @@ export class FinancialAnalysisEngine {
 
     const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
     const avgValue = sumY / n;
-    const stdDev = Math.sqrt(
-      values.reduce((sum, v) => sum + Math.pow(v - avgValue, 2), 0) / n
+    const stdDev = exactSqrt(
+      values.reduce((sum, v) => sum + exactPow(v - avgValue, 2), 0) / n
     );
-    const trendStrength = Math.min(1, Math.abs(slope) / (stdDev || 1));
+    const trendStrength = exactMin(1, exactAbs(slope) / (stdDev || 1));
 
     const trend =
       slope > stdDev * 0.05
@@ -550,7 +552,7 @@ export class FinancialAnalysisEngine {
    * Utility: Convert to percentage
    */
   private toPercent(value: number): number {
-    return Math.round(value * 10000) / 100;
+    return exactRound(value * 10000) / 100;
   }
 }
 

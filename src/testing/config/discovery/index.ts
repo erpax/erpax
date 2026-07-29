@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * PayloadConfigDiscovery — runtime schema introspection + validation.
  *
@@ -263,7 +264,7 @@ function coerceInteger(value: unknown): CoercionResult {
   const num = Number(numberResult.value)
   if (!Number.isInteger(num)) {
     return {
-      value: Math.floor(num),
+      value: exactFloor(num),
       success: true,
       coerced: true,
     }

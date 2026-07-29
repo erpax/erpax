@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Tamper-Reversibility-Cost — Conservation Law 55.
  *
@@ -145,9 +146,9 @@ export function computeTamperReverseCost(input: TamperReverseCostInput): TamperR
     throw new Error('computeTamperReverseCost: leafDepth must be ≥ 1 (genesis leaf has nothing to tamper)')
   }
   const sigContribution = signatureBitsPerSeal * leafDepth
-  const streamContribution = streamCount > 1 ? Math.log2(streamCount) * leafDepth : 0
-  const dimContribution = dimensionCount > 1 ? Math.log2(dimensionCount) * leafDepth : 0
-  const totalBits = Math.round(sigContribution + streamContribution + dimContribution)
+  const streamContribution = streamCount > 1 ? algebraLog2(streamCount) * leafDepth : 0
+  const dimContribution = dimensionCount > 1 ? algebraLog2(dimensionCount) * leafDepth : 0
+  const totalBits = exactRound(sigContribution + streamContribution + dimContribution)
   return {
     leafDepth,
     streamCount,

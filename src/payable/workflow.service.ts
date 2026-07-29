@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Bill Status Workflow — directed-graph state transitions.
  *
@@ -77,7 +78,7 @@ export class BillStatusWorkflow {
    * Record payment
    */
   static recordPayment(bill: Bill, paymentAmount: number): Bill {
-    const newBalance = Math.max(0, bill.balance - paymentAmount)
+    const newBalance = exactMax(0, bill.balance - paymentAmount)
     const newPaidAmount = bill.totalAmount - newBalance
     const newStatus = this.determineStatus(newBalance, bill.totalAmount, bill.dueDate)
 
@@ -172,7 +173,7 @@ export class BillStatusWorkflow {
    */
   static calculateDaysUntilDue(dueDate: Date, asOfDate: Date = new Date()): number {
     const diffTime = dueDate.getTime() - asOfDate.getTime()
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
     return diffDays
   }
 
@@ -181,8 +182,8 @@ export class BillStatusWorkflow {
    */
   static calculateDaysOverdue(dueDate: Date, asOfDate: Date = new Date()): number {
     const diffTime = asOfDate.getTime() - dueDate.getTime()
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-    return Math.max(0, diffDays)
+    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
+    return exactMax(0, diffDays)
   }
 
   /**
@@ -190,6 +191,6 @@ export class BillStatusWorkflow {
    */
   static getBillAge(billDate: Date, asOfDate: Date = new Date()): number {
     const diffTime = asOfDate.getTime() - billDate.getTime()
-    return Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    return exactCeil(diffTime / (1000 * 60 * 60 * 24))
   }
 }

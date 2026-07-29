@@ -15,9 +15,10 @@ import {
 import { aggregateCorpusEntropy, mergeCorpusEntropy } from '@/readme/entropy'
 import { corpusPathWaveBatches, pathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave/policy'
+import { exactRound, exactAbs, exactMax } from '@/algebra'
 
 const SRC = 'src'
-const ROUND = (n: number): number => Math.round(n * 1000) / 1000
+const ROUND = (n: number): number => exactRound(n * 1000) / 1000
 
 export const P0_ACCOUNTING_ROOT = 'accounting' as const
 export const P0_ACCOUNTING_LEAVES = [
@@ -107,8 +108,8 @@ const impuritiesForModel = (
     out.push({ kind: 'missing-hook', path: atomPath, detail: 'missing ATOM_LEDGER_PATHS hook' })
   }
   const readmeNet = parseReadmeNetEb(atomPath, cwd)
-  if (readmeNet !== null && Math.abs(readmeNet - entropy.netEntropyEb) > 0.001) {
-    out.push({ kind: 'entropy-drift', path: atomPath, detail: `README ${readmeNet} ≠ derived ${entropy.netEntropyEb}`, eb: Math.abs(readmeNet - entropy.netEntropyEb) })
+  if (readmeNet !== null && exactAbs(readmeNet - entropy.netEntropyEb) > 0.001) {
+    out.push({ kind: 'entropy-drift', path: atomPath, detail: `README ${readmeNet} ≠ derived ${entropy.netEntropyEb}`, eb: exactAbs(readmeNet - entropy.netEntropyEb) })
   }
   if (parent && entropy.netEntropyEb > 0 && parent.sealed && parent.entropy.netEntropyEb === 0) {
     out.push({ kind: 'ancestor-eb', path: atomPath, detail: 'sealed parent net 0', eb: entropy.netEntropyEb })
@@ -165,7 +166,7 @@ export function accountingGapsInWaves(cwd = process.cwd(), opts: AccountingGapsI
   const r = rollup ?? aggregateCorpusEntropy([])
   const topGapsByWave: Record<number, string[]> = {}
   for (const w of waves) topGapsByWave[w.wave] = topGapPaths(w.impurities, topPerWave)
-  return { waves, corpusGapEb: r.totalGapEb, corpusSealEb: r.totalSealEb, corpusNetEb: r.netEntropyEb, corpusNetEbDeltaPotential: ROUND(Math.max(0, r.netEntropyEb)), gapPathCount, p0Accounting: p0AccountingStatus(cwd, derive), topGapsByWave }
+  return { waves, corpusGapEb: r.totalGapEb, corpusSealEb: r.totalSealEb, corpusNetEb: r.netEntropyEb, corpusNetEbDeltaPotential: ROUND(exactMax(0, r.netEntropyEb)), gapPathCount, p0Accounting: p0AccountingStatus(cwd, derive), topGapsByWave }
 }
 
 export function p0AccountingStatus(cwd: string, derive?: (p: string) => FolderReadmeModel): P0AccountingStatus {
@@ -185,7 +186,7 @@ export function fixAccountingGapsOnP0(cwd = process.cwd(), opts: { readonly dryR
   let fixes = 0
   for (const p of targets) if (missingLedgerHook(p, cwd)) { paths.push(p); if (!opts.dryRun) fixes++ }
   if (!opts.dryRun) {
-    const drifted = targets.filter((p) => { const m = deriveFolderModel(p, cwd); const n = parseReadmeNetEb(p, cwd); return n !== null && Math.abs(n - m.entropy.netEntropyEb) > 0.001 })
+    const drifted = targets.filter((p) => { const m = deriveFolderModel(p, cwd); const n = parseReadmeNetEb(p, cwd); return n !== null && exactAbs(n - m.entropy.netEntropyEb) > 0.001 })
     if (drifted.length) { materializeComputedFacesForPathsStable(drifted, cwd); fixes += drifted.length; paths.push(...drifted) }
   }
   return { fixesApplied: fixes, paths: [...new Set(paths)] }

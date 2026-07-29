@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Infinite-within-finite spacetime — Slice IIIIIIIII (2026-05-11).
  *
@@ -197,7 +198,7 @@ export function buildInfiniteFinitenessReport(args?: BuildReportArgs): InfiniteF
   const backendsRegistered = listBackends().length
   const federationPeersConfigured = args?.federationPeersConfigured ?? 1
   const bitemporalVersionsAvg = args?.bitemporalVersionsAvg ?? 1
-  const multiplier = Math.max(1, backendsRegistered) * Math.max(1, federationPeersConfigured) * Math.max(1, bitemporalVersionsAvg)
+  const multiplier = exactMax(1, backendsRegistered) * exactMax(1, federationPeersConfigured) * exactMax(1, bitemporalVersionsAvg)
   const totalLogicalUuids = totalUuids * multiplier
 
   // Physical bytes: rough estimate — production reads from CF Analytics.

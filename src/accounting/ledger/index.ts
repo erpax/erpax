@@ -18,6 +18,7 @@
  */
 import { ANCHOR } from '@/allocation'
 import { StandardTransactions, type ValidatedEntry } from '../debit'
+import { exactRound, exactMax } from '@/algebra'
 
 /** One inter-agent token spend — the unit the ledger accounts for. */
 export interface TokenSpend {
@@ -35,7 +36,7 @@ export const AGENT_RESOURCE_POOL = '2900-agent-resource-pool'
 
 /** Price a token spend in cents at the harmonic anchor (allocation: value = anchor × tokens). */
 export function priceTokens(tokens: number, anchor: number = ANCHOR): number {
-  return Math.round(Math.max(0, tokens) * anchor)
+  return exactRound(exactMax(0, tokens) * anchor)
 }
 
 /**
@@ -62,7 +63,7 @@ export interface TokenLedger {
  */
 export function tokenLedger(spends: readonly TokenSpend[], anchor: number = ANCHOR): TokenLedger {
   const entries = spends.map((s) => tokenEntry(s, anchor))
-  const totalTokens = spends.reduce((sum, s) => sum + Math.max(0, s.tokens), 0)
+  const totalTokens = spends.reduce((sum, s) => sum + exactMax(0, s.tokens), 0)
   const sumDebits = entries.reduce((sum, e) => sum + e.totalDebits, 0)
   const sumCredits = entries.reduce((sum, e) => sum + e.totalCredits, 0)
   return {

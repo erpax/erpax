@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * receipt — the governance receipt IS a uuid. A trust layer splits trust into four primitives
  * (signed receipt + hash-linked audit chain + capability + identity); erpax wires all four through
@@ -73,7 +74,7 @@ export function verifyReceiptChain(
     return Promise.resolve({
       ok: false,
       chainLength: receipts.length,
-      brokenAtSeq: Math.min(decisions.length, receipts.length),
+      brokenAtSeq: exactMin(decisions.length, receipts.length),
       reason: `decisions/receipts length mismatch: ${decisions.length} decisions for ${receipts.length} receipts — cannot verify every receipt's content`,
     })
   }

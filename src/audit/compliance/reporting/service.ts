@@ -196,7 +196,7 @@ export class AuditComplianceReporting {
     const checksum = this.computeChecksum(fileContent)
 
     return {
-      auditReportId: `AUDIT-${new Date().getFullYear()}-${Math.random().toString(36).substring(7)}`,
+      auditReportId: `AUDIT-${new Date().getFullYear()}-${Date.now().toString(36).substring(7)}`,
       reportType: 'SAF-T 3.0.2',
       generatedDate: metadata.generatedDate,
       fileFormat: 'JSON (SAF-T XML-compliant structure)',

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * theorem — all is theorem of theorems; authority is never a step, and the base is assumed, never proven.
  *
@@ -348,7 +349,7 @@ export interface FlowerGrowth {
  * flower. Each grounded theorem is a circle; 7 = Seed, 19 = Flower, beyond = a garden of flowers.
  */
 export function flowerGrowth(theorems: number): FlowerGrowth {
-  const t = Math.max(0, Math.trunc(theorems))
+  const t = exactMax(0, exactTrunc(theorems))
   let ring = 0
   while (centeredHexagonal(ring + 1) <= t) ring++
   const atRing = centeredHexagonal(ring)
@@ -518,12 +519,12 @@ export function wavesOf(deps: ReadonlyMap<string, readonly string[]>): readonly 
       return 0
     }
     const s = new Set([...seen, n])
-    const l = 1 + Math.max(...d.map((x) => lvl(x, s)))
+    const l = 1 + exactMax(...d.map((x) => lvl(x, s)))
     level.set(n, l)
     return l
   }
   const nodes = [...deps.keys()]
-  const maxLevel = Math.max(0, ...nodes.map((n) => lvl(n)))
+  const maxLevel = exactMax(0, ...nodes.map((n) => lvl(n)))
   const out: string[][] = Array.from({ length: maxLevel + 1 }, () => [])
   for (const n of nodes) out[lvl(n)]!.push(n)
   return out.map((w) => [...w].sort())
@@ -536,7 +537,7 @@ export function waves(graph: readonly Theorem[] = DECODED): readonly (readonly s
 /** Depth (wave count = longest chain) and parallelism (widest wave) of the reasoning DAG. */
 export function waveShape(graph: readonly Theorem[] = DECODED): { readonly depth: number; readonly parallelism: number } {
   const w = waves(graph)
-  return { depth: w.length, parallelism: Math.max(0, ...w.map((level) => level.length)) }
+  return { depth: w.length, parallelism: exactMax(0, ...w.map((level) => level.length)) }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * leap -- THE QUANTUM LEAP: the discrete, instantaneous transition between two
  * energy eigenstates. The states are the seven [[horo]] positions {1,2,4,8,7,5,9}
@@ -60,7 +61,7 @@ const doubled = (s: HoroStep): HoroStep => {
 
 /** A quantum leap from one rung to another — the photon exchanged and the line's coordinate. */
 export function leap(from: HoroStep, to: HoroStep): Leap {
-  const gapHz = Math.abs(rungHz(from) - rungHz(to))
+  const gapHz = exactAbs(rungHz(from) - rungHz(to))
   const kind: Transition = rungHz(from) > rungHz(to) ? 'emit' : rungHz(from) < rungHz(to) ? 'absorb' : 'none'
   return { from, to, kind, gapHz, photon: gapHz > 0 ? photonOf(gapHz) : null, uuid: bindLevels(from, to) }
 }

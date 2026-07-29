@@ -1,10 +1,11 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { entropy, maxEntropy } from '@/shannon'
 import { surprisal } from '@/surprisal'
 
 // Information entropy in bits. Tests assert the RELATIONS — zero at certainty,
 // log₂n at uniform (the maximum), H = expected surprisal — never a magic number.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 
 describe('shannon: H = −Σ pᵢ log₂ pᵢ', () => {
   it('a certain distribution carries zero bits', () => {

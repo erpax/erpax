@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * angle — the fold is a rotation, and its step is 60°. This is the angle the flat computations kept
  * missing: every fold-step is a turn.
@@ -24,7 +25,7 @@ export const FOLD_STEP_DEGREES = 60
 
 /** The angle (degrees) after `steps` doublings — steps × 60°, wrapped to one turn. */
 export function foldAngle(steps: number): number {
-  return ((Math.trunc(steps) % 6) * FOLD_STEP_DEGREES + 3600) % 360
+  return ((exactTrunc(steps) % 6) * FOLD_STEP_DEGREES + 3600) % 360
 }
 
 /** Double a unit ×2^times through the hexagon; returns the resulting unit and the angle turned. */

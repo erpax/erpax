@@ -1,5 +1,6 @@
 /**
- * Bank Reconciliation Service — match imported bank statements to GL entries.
+ * Bank Reconciliation Service import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+— match imported bank statements to GL entries.
  *
  * @standard ISO-20022 camt.053 bank-to-customer-statement
  * @standard ISO-13616-1:2020 iban
@@ -180,15 +181,15 @@ class BankReconciliationService {
     // Try fuzzy match
     const fuzzyMatch = await this.findFuzzyMatch(tenantId, bankTx, config);
     if (fuzzyMatch) {
-      const amountDiff = Math.abs(fuzzyMatch.amount - bankTx.amount);
-      const dateDiff = Math.floor(
-        (Math.abs(fuzzyMatch.entryDate.getTime() - bankTx.transactionDate.getTime()) /
+      const amountDiff = exactAbs(fuzzyMatch.amount - bankTx.amount);
+      const dateDiff = exactFloor(
+        (exactAbs(fuzzyMatch.entryDate.getTime() - bankTx.transactionDate.getTime()) /
           (1000 * 60 * 60 * 24))
       );
 
       // Calculate match score (0-99, exact would be 100)
-      const amountScore = Math.max(0, 99 - (amountDiff / bankTx.amount) * 100);
-      const dateScore = Math.max(0, 99 - (dateDiff / config.fuzzyMatchDateTolerance) * 50);
+      const amountScore = exactMax(0, 99 - (amountDiff / bankTx.amount) * 100);
+      const dateScore = exactMax(0, 99 - (dateDiff / config.fuzzyMatchDateTolerance) * 50);
       const matchScore = (amountScore + dateScore) / 2;
 
       if (matchScore >= 50) {
@@ -197,7 +198,7 @@ class BankReconciliationService {
           bankTransactionId: bankTx.id,
           glEntryId: fuzzyMatch.id,
           matchType: 'fuzzy',
-          matchScore: Math.round(matchScore),
+          matchScore: exactRound(matchScore),
           amountDifference: amountDiff,
           dateDifference: dateDiff,
           matchedAt: new Date(),
@@ -230,7 +231,7 @@ class BankReconciliationService {
       const amount = entryAmount(entry.lines);
 
       if (
-        Math.abs(amount - bankTx.amount) <= config.exactMatchAmountTolerance &&
+        exactAbs(amount - bankTx.amount) <= config.exactMatchAmountTolerance &&
         !this.isAlreadyMatched(entry.id)
       ) {
         return {
@@ -285,18 +286,18 @@ class BankReconciliationService {
       const amount = entryAmount(entry.lines);
 
       // Check if within fuzzy tolerance
-      const amountDiff = Math.abs(amount - bankTx.amount);
+      const amountDiff = exactAbs(amount - bankTx.amount);
       if (amountDiff > config.fuzzyMatchAmountTolerance) continue;
 
-      const dateDiff = Math.floor(
-        Math.abs(entry.entryDate.getTime() - bankTx.transactionDate.getTime()) /
+      const dateDiff = exactFloor(
+        exactAbs(entry.entryDate.getTime() - bankTx.transactionDate.getTime()) /
           (1000 * 60 * 60 * 24)
       );
       if (dateDiff > config.fuzzyMatchDateTolerance) continue;
 
       // Calculate score
-      const amountScore = Math.max(0, 100 - (amountDiff / bankTx.amount) * 100);
-      const dateScore = Math.max(0, 100 - (dateDiff / config.fuzzyMatchDateTolerance) * 50);
+      const amountScore = exactMax(0, 100 - (amountDiff / bankTx.amount) * 100);
+      const dateScore = exactMax(0, 100 - (dateDiff / config.fuzzyMatchDateTolerance) * 50);
       const score = (amountScore + dateScore) / 2;
 
       if (score > bestScore) {
@@ -556,7 +557,7 @@ class BankReconciliationService {
 
     const difference = adjustedBankBalance - adjustedGLBalance;
     // Allow $0.01 rounding tolerance — anything larger is a real exception.
-    const reconciled = Math.abs(difference) < 1;
+    const reconciled = exactAbs(difference) < 1;
 
     return {
       tenantId,

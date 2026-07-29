@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * bank/research — deep-research global banking via sealed chat waves (tokens=0).
  * Uses quantum/ftl; is not the FTL core.
@@ -472,7 +473,7 @@ export async function deepResearchGlobalBanking(opts: {
   const am = amortizeReuse(research.findings.length, 0)
   void computeFtl({
     query: 'bank:global',
-    spaceSize: Math.max(1, GLOBAL_BANKING_CORPUS.length),
+    spaceSize: exactMax(1, GLOBAL_BANKING_CORPUS.length),
     answers: research.findings.length,
     tokens: 0,
     patterns: [],

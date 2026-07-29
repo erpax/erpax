@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * wave — the development EXHALE unit, COMPUTED.
  *
@@ -44,7 +45,7 @@ export const UNITY: HoroStep = 9
  * ordinals (≤ 0) fall to base. The digit IS the meaning (no free counter).
  */
 export function waveStep(ordinal: number): HoroStep {
-  const o = Math.trunc(Number(ordinal) || 0)
+  const o = exactTrunc(Number(ordinal) || 0)
   if (o <= 0) return HORO_DIGITS[0]
   return HORO_DIGITS[(o - 1) % HORO_DIGITS.length] as HoroStep
 }

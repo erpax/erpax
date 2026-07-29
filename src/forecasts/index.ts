@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * forecasts — phase-locked forecasts on Earth's cardinal homology tips.
  *
@@ -83,7 +84,7 @@ export function forecastEarth(opts: {
   const holds =
     earth.complete &&
     ring.length === 4 &&
-    ring.every((s) => Math.abs(s.deltaPhaseDeg) === 90) &&
+    ring.every((s) => exactAbs(s.deltaPhaseDeg) === 90) &&
     tip.next.phaseDeg === tipAtPhase(tip.from.phaseDeg + tip.deltaPhaseDeg).phaseDeg
   return { earth, tip, ring, navigation, holds }
 }

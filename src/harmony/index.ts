@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * Harmony — consonance over the A432 anchor.
  *
@@ -32,7 +33,7 @@ export function intervalRatio(a: HoroStep, b: HoroStep): [number, number] {
 }
 
 /** Tenney height log2(n·d) — lower = more consonant (the dissonance metric). */
-export const tenneyHeight = (r: readonly [number, number]): number => Math.log2(r[0] * r[1])
+export const tenneyHeight = (r: readonly [number, number]): number => algebraLog2(r[0] * r[1])
 
 const PERFECT = new Set(['1:1', '2:1', '3:2', '4:3'])
 const IMPERFECT = new Set(['5:4', '6:5', '5:3', '8:5'])
@@ -80,7 +81,7 @@ export function bandHarmony(steps: readonly HoroStep[]): BandHarmony {
     consonant: consonantCount === intervals.length,
     intervals,
     consonantFraction: intervals.length ? consonantCount / intervals.length : 1,
-    worstTenney: tenneys.length ? Math.max(...tenneys) : 0,
+    worstTenney: tenneys.length ? exactMax(...tenneys) : 0,
     meanTenney: tenneys.length ? tenneys.reduce((a, b) => a + b, 0) / tenneys.length : 0,
   }
 }

@@ -1,7 +1,8 @@
 /**
  * GL Posting Service — event-driven double-entry posting.
  *
- * Subscribes to domain events (invoice/payment/inventory/bank) and creates
+ * Subscribimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+es to domain events (invoice/payment/inventory/bank) and creates
  * balanced GL entries via `journalEntryService`. Decouples business write
  * paths from the ledger's debit/credit semantics.
  *
@@ -1174,7 +1175,7 @@ export class GLPostingService {
    */
   async postCostVarianceComputed(event: CostVarianceComputedEvent): Promise<void> {
     const { tenantId, userId, payload } = event;
-    const amount = Math.abs(payload.varianceAmount);
+    const amount = exactAbs(payload.varianceAmount);
     if (amount === 0) return;
     const wip = GL_ACCOUNTS.WIP;
     const variance = payload.varianceAccountCode
@@ -1285,7 +1286,7 @@ export class GLPostingService {
       lines.push({ accountId: asset, credit: -payload.recognisedRevenueDelta, description: desc });
     }
     if (payload.unbilledOrDeferred < 0) {
-      const amt = Math.abs(payload.unbilledOrDeferred);
+      const amt = exactAbs(payload.unbilledOrDeferred);
       lines.push({ accountId: asset, credit: amt, description: `${desc} reclass to liability` });
       lines.push({ accountId: liab,  debit:  amt, description: `${desc} reclass to liability` });
     }

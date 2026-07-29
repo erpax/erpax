@@ -16,6 +16,8 @@
  * @audit ISO-19011 — cost and margin are deterministic functions of materials + labor + price
  */
 
+import { exactMax } from '@/algebra'
+
 export interface UnitCost {
   /** materials cost per unit, cents (BOM components × their unit cost). */
   readonly materials: number
@@ -25,7 +27,7 @@ export interface UnitCost {
 
 /** Manufactured unit cost = materials + labor, in cents (negatives floored to 0 — every case defined). */
 export function unitCost(c: UnitCost): number {
-  return Math.max(0, c.materials) + Math.max(0, c.labor)
+  return exactMax(0, c.materials) + exactMax(0, c.labor)
 }
 
 export interface LineMargin {
@@ -41,8 +43,8 @@ export interface LineMargin {
 
 /** The margin of ONE invoice line — revenue − manufactured cost, tying price to materials+labor. */
 export function lineMargin(unitPrice: number, cost: UnitCost, qty: number): LineMargin {
-  const q = Math.max(0, qty)
-  const revenue = Math.max(0, unitPrice) * q
+  const q = exactMax(0, qty)
+  const revenue = exactMax(0, unitPrice) * q
   const costTotal = unitCost(cost) * q
   const grossMargin = revenue - costTotal
   return { revenue, cost: costTotal, grossMargin, marginPct: revenue > 0 ? grossMargin / revenue : 0 }

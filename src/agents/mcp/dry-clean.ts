@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * MCP DRY cleaning — Slice BBBBBBB (2026-05-11).
  *
@@ -398,7 +399,7 @@ export function dryCleanScan(tools: ReadonlyArray<ErpaxMcpTool>): DryCleanReport
       if (score >= 0.3) allPairs.push({ a: ti.name, b: tj.name, score, sameArea })
     }
   }
-  const realDriftFloor = Math.min(
+  const realDriftFloor = exactMin(
     MAX_DESCRIPTION_OVERLAP,
     stableDriftCeiling + DRIFT_THRESHOLD_EPSILON,
   )

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * positions — the harmonic rate ladder, filled with job positions, where
  * government and society are one continuum.
@@ -50,7 +51,7 @@ export const SFIA_RESPONSIBILITY: Readonly<Record<number, string>> = {
   7: 'set-strategy-and-mobilise',
 }
 
-const clampLevel = (level: number): number => (level < 1 ? 1 : level > 7 ? 7 : Math.round(level))
+const clampLevel = (level: number): number => (level < 1 ? 1 : level > 7 ? 7 : exactRound(level))
 
 /**
  * A position: a rung on the ladder. Government and society share this shape —
@@ -71,7 +72,7 @@ export interface Position {
 
 /** Hourly rate of a position = anchor × harmonic, via the [[allocation]] leverage law. */
 export function positionHourlyRate(position: Position, anchor: number = ANCHOR): number {
-  const tier = Math.max(1, position.harmonic)
+  const tier = exactMax(1, position.harmonic)
   return hourlyRate({ ownTime: 1, timeSavedForOthers: tier - 1, verified: 1 }, anchor)
 }
 
@@ -88,7 +89,7 @@ export interface JobDescription {
 
 /** Compute (never hand-write) the job description for a position. */
 export function jobDescription(position: Position, anchor: number = ANCHOR): JobDescription {
-  const tier = Math.max(1, position.harmonic)
+  const tier = exactMax(1, position.harmonic)
   const saved = tier - 1
   return {
     title: position.title,
@@ -119,7 +120,7 @@ export function conditionsOf(position: Position, anchor: number = ANCHOR): Posit
   return {
     title: position.title,
     function: position.function,
-    harmonic: Math.max(1, position.harmonic),
+    harmonic: exactMax(1, position.harmonic),
     level: clampLevel(position.level),
     hourlyRate: positionHourlyRate(position, anchor),
     requires: position.requires ?? [],
@@ -164,7 +165,7 @@ export function oneLadder(
 ): { harmonic: number; functions: string[]; rates: number[] }[] {
   const byTier = new Map<number, { functions: string[]; rates: number[] }>()
   for (const p of positions) {
-    const tier = Math.max(1, p.harmonic)
+    const tier = exactMax(1, p.harmonic)
     const entry = byTier.get(tier) ?? { functions: [], rates: [] }
     entry.functions.push(p.function)
     entry.rates.push(positionHourlyRate(p, anchor))

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * rules/word-without-logic — literary atoms: prose without executable matter or use case.
  *
@@ -378,7 +379,7 @@ export function wordWithoutLogicViolations(cwd: string = process.cwd()): WordWit
     totalAtoms,
     literaryCount,
     withUseCase,
-    withUseCasePct: totalAtoms ? Math.round((withUseCase / totalAtoms) * 1000) / 10 : 100,
+    withUseCasePct: totalAtoms ? exactRound((withUseCase / totalAtoms) * 1000) / 10 : 100,
     violations,
     violationCount: violations.length,
     top50: violations.slice(0, 50),

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { BEADS, math108, step, dualitiesOnRound } from '@/mala'
 
@@ -23,6 +24,6 @@ describe('mala — the 108-step round (the next math)', () => {
     expect(r.dualities).toBeGreaterThan(0)
     expect(r.fraction).toBeGreaterThanOrEqual(0)
     expect(r.fraction).toBeLessThanOrEqual(1)
-    expect(r.remaining).toBe(Math.max(0, 108 - r.dualities))
+    expect(r.remaining).toBe(exactMax(0, 108 - r.dualities))
   })
 })

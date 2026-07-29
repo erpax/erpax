@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/chat — a chat thread as a merkle chain: each message is a content-uuid, and the thread
  * folds its message-uuids into ONE chain-uuid (a tamper-evident history — change or reorder any
@@ -92,10 +93,10 @@ export const coverage = (messageUuids: readonly string[], candidates: readonly s
 export const GATEWAY_BITS = 1
 
 /** The dyadic state space of an n-referral cross: 1 direction bit each ⇒ 2^n states. */
-export const crossStates = (referrals: number): number => 2 ** Math.max(0, Math.trunc(referrals))
+export const crossStates = (referrals: number): number => 2 ** exactMax(0, exactTrunc(referrals))
 
 /** Referral directions needed to span `states` (the inverse: log₂). 1024 ⇒ 10. */
-export const referralsFor = (states: number): number => (states > 0 ? Math.ceil(Math.log2(states)) : 0)
+export const referralsFor = (states: number): number => (states > 0 ? exactCeil(algebraLog2(states)) : 0)
 
 /** Distribute an amount equally across a cross's states — the same proportion down to each state/bit. */
 export const distributeToStates = (amount: number, referrals: number): number => amount / crossStates(referrals)
@@ -485,7 +486,7 @@ export async function deepResearch(
   researcher: Researcher,
   opts?: { depth?: number },
 ): Promise<DeepResearchResult> {
-  const depth = Math.max(1, opts?.depth ?? 3)
+  const depth = exactMax(1, opts?.depth ?? 3)
   let messageUuids: readonly string[] = [...seed]
   const findings: Finding[] = []
   const asked = new Set<string>()

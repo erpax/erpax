@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cli/progress-heartbeat — stderr tick so long CLI runs are not silent.
  */
@@ -7,7 +8,7 @@ export function startProgressHeartbeat(
 ): () => void {
   const started = Date.now()
   const tick = (): void => {
-    const sec = Math.floor((Date.now() - started) / 1000)
+    const sec = exactFloor((Date.now() - started) / 1000)
     process.stderr.write(`${label} — still running (${sec}s)\n`)
   }
   tick()

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * metric — quantomize: the corpus's metrics held at once in one coherent superposition, not scattered numbers.
  *
@@ -118,11 +119,11 @@ export function accuracy(metric: QuantumMetric, reference: Readonly<Record<strin
     .filter((r) => Object.prototype.hasOwnProperty.call(reference, r.name))
     .map((r) => {
       const expected = reference[r.name]!
-      const relError = Math.abs(r.value - expected) / (Math.abs(expected) || 1)
+      const relError = exactAbs(r.value - expected) / (exactAbs(expected) || 1)
       return { name: r.name, value: r.value, expected, relError }
     })
   const referenced = errors.length
-  const acc = referenced === 0 ? 0 : errors.reduce((sum, e) => sum + Math.max(0, 1 - e.relError), 0) / referenced
+  const acc = referenced === 0 ? 0 : errors.reduce((sum, e) => sum + exactMax(0, 1 - e.relError), 0) / referenced
   return { referenced, accuracy: acc, errors }
 }
 

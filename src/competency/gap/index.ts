@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * competency-gap — the skill-gap computation: required − held.
  *
@@ -49,13 +50,13 @@ const idOf = (c: string | number | { id?: string | number } | null | undefined):
 export function competencyGap(held: HeldLine[], required: RequiredLine[]): GapResult {
   const heldByKey = new Map<string, number>()
   for (const h of held) {
-    heldByKey.set(idOf(h.competency), Math.max(heldByKey.get(idOf(h.competency)) ?? 0, h.proficiency ?? 0))
+    heldByKey.set(idOf(h.competency), exactMax(heldByKey.get(idOf(h.competency)) ?? 0, h.proficiency ?? 0))
   }
 
   const gaps: CompetencyGap[] = required.map((r) => {
     const requiredLevel = r.minProficiency ?? 1
     const heldLevel = heldByKey.get(idOf(r.competency)) ?? 0
-    const gap = Math.max(0, requiredLevel - heldLevel)
+    const gap = exactMax(0, requiredLevel - heldLevel)
     return {
       competency: r.competency,
       required: requiredLevel,

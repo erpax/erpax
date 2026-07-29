@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * readme/entropy — gaps · seals · residual entropy in comparable units (eb).
  *
@@ -31,18 +32,18 @@ export interface EntropyStatementInput {
 
 /** log₂ base weights for gap categories (disorder borrowed). */
 export const GAP_BASE_WEIGHT: Readonly<Record<string, number>> = {
-  trinity: Math.log2(3),
-  stray: Math.log2(2),
-  unfolded: Math.log2(4),
+  trinity: algebraLog2(3),
+  stray: algebraLog2(2),
+  unfolded: algebraLog2(4),
   link: LANDAUER_BIT,
   horo: LANDAUER_BIT,
   uuid: LANDAUER_BIT,
   escape: LANDAUER_BIT,
   typography: LANDAUER_BIT,
-  membership: Math.log2(2),
+  membership: algebraLog2(2),
   'folder-name': LANDAUER_BIT,
-  matrix: Math.log2(2),
-  ancestor: Math.log2(2),
+  matrix: algebraLog2(2),
+  ancestor: algebraLog2(2),
   deployment: LANDAUER_BIT,
   partition: LANDAUER_BIT,
   path: LANDAUER_BIT,
@@ -63,7 +64,7 @@ export const SEAL_BASE_WEIGHT: Readonly<Record<string, number>> = {
   matrix: LANDAUER_BIT,
   reciprocal: LANDAUER_BIT / 2,
   deployment: LANDAUER_BIT,
-  diamond: Math.log2(3),
+  diamond: algebraLog2(3),
   balanced: LANDAUER_BIT,
   entropy: LANDAUER_BIT,
   gravity: LANDAUER_BIT,
@@ -111,7 +112,7 @@ export interface CorpusEntropyRollup {
   readonly bySector: readonly SectorEntropyRollup[]
 }
 
-const roundEb = (n: number): number => Math.round(n * 1000) / 1000
+const roundEb = (n: number): number => exactRound(n * 1000) / 1000
 
 const horoScaleOf = (digit: number | null, horoScaled: boolean): number => {
   if (!horoScaled || digit === null) return 1
@@ -516,7 +517,7 @@ export function renderFolderEntropySection(
   accounting: FolderEntropyAccounting,
   atomPath?: string,
 ): string {
-  const rows = Math.max(accounting.gaps.length, accounting.seals.length)
+  const rows = exactMax(accounting.gaps.length, accounting.seals.length)
   const L: string[] = [
     '## [[entropy]] — gaps · seals',
     '',

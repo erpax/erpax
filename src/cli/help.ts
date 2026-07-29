@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cli/help — grouped --help, domain blurbs, nearest-match suggestions.
  */
@@ -57,7 +58,7 @@ function levenshtein(a: string, b: string): number {
   for (let i = 1; i <= m; i++) {
     for (let j = 1; j <= n; j++) {
       const cost = a[i - 1] === b[j - 1] ? 0 : 1
-      dp[i]![j] = Math.min(dp[i - 1]![j]! + 1, dp[i]![j - 1]! + 1, dp[i - 1]![j - 1]! + cost)
+      dp[i]![j] = exactMin(dp[i - 1]![j]! + 1, dp[i]![j - 1]! + 1, dp[i - 1]![j - 1]! + cost)
     }
   }
   return dp[m]![n]!
@@ -77,7 +78,7 @@ export function suggestNearestDomain(input: string, domains: readonly string[] =
       best = d
     }
   }
-  return bestDist <= Math.max(3, Math.floor(q.length / 2)) ? best : undefined
+  return bestDist <= exactMax(3, exactFloor(q.length / 2)) ? best : undefined
 }
 
 /** Nearest action within a domain. */

@@ -1,3 +1,4 @@
+import { LN2 } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { coherence, decohered, purity, entropy, decoherenceTime } from '@/decoherence'
 
@@ -24,8 +25,8 @@ describe('decoherence: a pure superposition decays to a classical mixture', () =
     expect(entropy(0, tau)).toBeCloseTo(0, 12)
     expect(entropy(0.5, tau)).toBeGreaterThan(entropy(0, tau))
     expect(entropy(2, tau)).toBeGreaterThan(entropy(0.5, tau)) // monotone ⇒ irreversible
-    expect(entropy(50, tau)).toBeCloseTo(Math.LN2, 6) // maximally mixed = 1 bit
-    expect(entropy(5, tau)).toBeLessThanOrEqual(Math.LN2)
+    expect(entropy(50, tau)).toBeCloseTo(LN2, 6) // maximally mixed = 1 bit
+    expect(entropy(5, tau)).toBeLessThanOrEqual(LN2)
   })
 
   it('more coupled dimensions ⇒ shorter τ ⇒ faster decoherence (why the macro corpus is classical)', () => {

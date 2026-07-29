@@ -1,3 +1,4 @@
+import { PI } from '@/algebra'
 /**
  * uncertainty -- the HEISENBERG floor: two conjugate quantities (position ⊗
  * momentum, energy ⊗ time) can never BOTH be sharp -- their spreads obey
@@ -30,7 +31,7 @@ export const allowed = (spreadA: number, spreadB: number): boolean => spreadA * 
 export const linewidth = (lifetimeS: number): number => bound() / lifetimeS
 
 /** The same floor in frequency: Δν ≥ 1/(4π·Δt) (since ΔE = hΔν). */
-export const linewidthHz = (lifetimeS: number): number => 1 / (4 * Math.PI * lifetimeS)
+export const linewidthHz = (lifetimeS: number): number => 1 / (4 * PI * lifetimeS)
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('uncertainty -- the Heisenberg floor Δa·Δb ≥ ħ/2 = ' + bound().toExponential(4) + ' J·s:')

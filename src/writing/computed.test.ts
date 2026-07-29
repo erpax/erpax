@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * writing/computed — computed writing metrics from sealed coordinates.
  */
@@ -31,7 +32,7 @@ describe('computedWritingForPath — diamond-derived prose metrics', () => {
       ebPerWord: w.ebPerWord,
       balanced: w.balanced,
       variance: w.variance,
-      proseRatio: Math.round(w.proseRatio * 100) / 100,
+      proseRatio: exactRound(w.proseRatio * 100) / 100,
     }).toMatchInlineSnapshot(`
       {
         "atomPath": "quantum/emr",

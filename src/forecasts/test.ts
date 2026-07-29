@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { atomPath, forecastTip, forecastTipRing, forecastEarth } from '@/forecasts'
 
@@ -21,7 +22,7 @@ describe('forecasts — phase-locked Earth tip forecasts', () => {
   it('forecastTipRing closes four homology steps', () => {
     const ring = forecastTipRing()
     expect(ring).toHaveLength(4)
-    expect(ring.every((s) => Math.abs(s.deltaPhaseDeg) === 90)).toBe(true)
+    expect(ring.every((s) => exactAbs(s.deltaPhaseDeg) === 90)).toBe(true)
   })
 
   it('forecastEarth holds: complete earth ⊕ tip ring ⊕ optional nav', () => {

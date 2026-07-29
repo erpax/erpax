@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * TaxPeriodReconciliation Service
  *
@@ -184,7 +185,7 @@ export class TaxPeriodReconciliation {
     for (const adjustment of transferPricingAdjustments) {
       const difference = adjustment.adjustedAmount - adjustment.originalAmount
 
-      if (Math.abs(difference) < 0.01) {
+      if (exactAbs(difference) < 0.01) {
         continue // Skip if adjustment is immaterial
       }
 
@@ -196,7 +197,7 @@ export class TaxPeriodReconciliation {
         jurisdiction: adjustment.jurisdiction,
         account: '6000-6099', // Tax expense range (illustrative)
         accountType: 'expense',
-        adjustmentAmount: Math.abs(difference),
+        adjustmentAmount: exactAbs(difference),
         description: `Transfer pricing adjustment: ${adjustment.transactionType} between ${adjustment.fromEntity} and ${adjustment.toEntity} per ${adjustment.methodUsed}`,
         preparedDate: adjustmentDate,
       })

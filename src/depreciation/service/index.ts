@@ -1,5 +1,6 @@
 /**
- * Depreciation Service — period-by-period PP&E depreciation.
+ * Depreciation Service — perioimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+d-by-period PP&E depreciation.
  *
  * Closes the Slice FFF DOA: `depreciation.hook.ts` previously delegated to
  * `req.payload.services?.depreciation` which never existed. This singleton
@@ -173,7 +174,7 @@ class DepreciationService {
 
     // Final stop-rule: never depreciate below residual value.
     const headroom = bookValueBefore - asset.residualValue;
-    const cappedAmount = amount > headroom ? Math.max(0, headroom) : amount;
+    const cappedAmount = amount > headroom ? exactMax(0, headroom) : amount;
     const accumulatedAfter = accumulatedDepreciation + cappedAmount;
     const bookValueAfter = bookValueBefore - cappedAmount;
 

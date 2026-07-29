@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * standards/improve — standards chat + improve via quantum/ftl reuse.
  * Uses quantum/ftl; path is standards/improve — not a domain ftl path.
@@ -366,7 +367,7 @@ export function deriveProseInGateOp(
   if (new RegExp(`@standard\\s+${v.id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text)) return null // already healed
   const lines = text.split('\n')
   let lastStd = -1
-  for (let i = 0; i < Math.min(lines.length, 40); i++) {
+  for (let i = 0; i < exactMin(lines.length, 40); i++) {
     if (/^\s*\*\s*@standard\b/.test(lines[i]!)) lastStd = i
   }
   if (lastStd < 0) return null
@@ -470,7 +471,7 @@ export function deriveUngatedMandatoryOp(
   if (new RegExp(`@standard\\s+${esc}\\b`).test(text)) return null
   const lines = text.split('\n')
   let lastStd = -1
-  for (let i = 0; i < Math.min(lines.length, 80); i++) {
+  for (let i = 0; i < exactMin(lines.length, 80); i++) {
     if (/^\s*\*\s*@standard\b/.test(lines[i]!)) lastStd = i
   }
   if (lastStd < 0) return null
@@ -524,7 +525,7 @@ export function chatHealUngatedMandatory(opts: {
   const text = readFileSync(abs, 'utf8')
   const lines = text.split('\n')
   let lastStd = -1
-  for (let i = 0; i < Math.min(lines.length, 80); i++) {
+  for (let i = 0; i < exactMin(lines.length, 80); i++) {
     if (/^\s*\*\s*@standard\b/.test(lines[i]!)) lastStd = i
   }
   if (lastStd < 0) {
@@ -670,7 +671,7 @@ export async function standardsChatImproveFtl(opts: {
   const am = amortizeReuse(answered, 0)
   const fold = computeFtl({
     query: 'standards:ftl',
-    spaceSize: Math.max(1, (opts.catalogue ?? STANDARDS_CATALOGUE).length),
+    spaceSize: exactMax(1, (opts.catalogue ?? STANDARDS_CATALOGUE).length),
     answers: answered,
     tokens: 0,
     patterns: gaps

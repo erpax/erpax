@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * train — auto-train each actor toward best efficiency in the app: close the
  * competency gap, off-gas the debt, climb the pay curve.
@@ -163,5 +164,5 @@ export function trainingWaves(
 
 /** Depth (fewest sequential rounds) and parallelism (widest enrollment) of the training DAG. */
 export function trainingWaveShape(waves: readonly TrainingWave[]): { readonly depth: number; readonly parallelism: number } {
-  return { depth: waves.length, parallelism: Math.max(0, ...waves.map((w) => w.steps.length)) }
+  return { depth: waves.length, parallelism: exactMax(0, ...waves.map((w) => w.steps.length)) }
 }

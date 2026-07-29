@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 /**
  * photon -- THE QUANTUM: the indivisible packet a [[leap]] emits or absorbs, its
  * energy locked to its frequency by Planck's relation E = hν (= ℏω = hc/λ). The
@@ -24,7 +25,7 @@ import { nodeOf } from '@/uuid/matrix'
 /** Planck's constant h -- the quantum of action (J·s), exact SI-2019 definition. */
 export const PLANCK_H = 6.62607015e-34
 /** The reduced Planck constant ħ = h / 2π (J·s). */
-export const HBAR = PLANCK_H / (2 * Math.PI)
+export const HBAR = PLANCK_H / (2 * PI)
 /** The speed of light in vacuum c (m/s), exact SI-2019 definition. */
 export const C = 299792458
 
@@ -48,7 +49,7 @@ export const momentum = (hz: number): number => energy(hz) / C
 
 /** Decode a photon from its frequency -- the whole physics packet. */
 export function photonOf(hz: number): Photon {
-  return { hz, omega: 2 * Math.PI * hz, energyJ: energy(hz), momentum: momentum(hz), wavelengthM: wavelength(hz) }
+  return { hz, omega: 2 * PI * hz, energyJ: energy(hz), momentum: momentum(hz), wavelengthM: wavelength(hz) }
 }
 
 /** Render a photon as colour+sound from a [[horo]] position -- the uuid-message frame (downstream of the uuid). */
@@ -74,7 +75,7 @@ export const energyJoules = (watts: number, seconds: number): number => watts * 
 
 /** Total energy over a fixed window: the active work, plus idle at `idleWatts` for the remaining time. */
 export function windowEnergy(active: EnergyStrategy, windowSeconds: number, idleWatts: number): number {
-  const idle = Math.max(0, windowSeconds - active.seconds)
+  const idle = exactMax(0, windowSeconds - active.seconds)
   return energyJoules(active.watts, active.seconds) + energyJoules(idleWatts, idle)
 }
 

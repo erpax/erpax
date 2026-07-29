@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Multi-search — one query across every collection.
  *
@@ -210,8 +211,8 @@ function extractSnippet(source: string, q: string, windowChars = 80): string {
   const lower = source.toLowerCase()
   const idx = lower.indexOf(q.toLowerCase())
   if (idx === -1) return source.slice(0, windowChars)
-  const start = Math.max(0, idx - Math.floor(windowChars / 2))
-  const end = Math.min(source.length, start + windowChars)
+  const start = exactMax(0, idx - exactFloor(windowChars / 2))
+  const end = exactMin(source.length, start + windowChars)
   const head = start > 0 ? '…' : ''
   const tail = end < source.length ? '…' : ''
   return `${head}${source.slice(start, end)}${tail}`

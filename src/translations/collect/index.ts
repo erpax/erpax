@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * translations/collect — THE COLLECTOR (computed in the skill, not in scripts/).
  *
@@ -40,7 +41,7 @@ const DRY = argv.includes('--dry')
 const VERIFY = argv.includes('--verify')
 const LIMIT = (() => {
   const i = argv.indexOf('--limit')
-  return i >= 0 && argv[i + 1] ? Math.max(0, parseInt(argv[i + 1]!, 10)) : Infinity
+  return i >= 0 && argv[i + 1] ? exactMax(0, parseInt(argv[i + 1]!, 10)) : Infinity
 })()
 
 // ── the shared resolver: walk SKILL.md, skip symlinks (the src/skills → . loop) ──

@@ -1,3 +1,4 @@
+import { algebraLog, algebraExp } from '@/algebra'
 /**
  * boltzmann -- ENTROPY IS COUNTING: S = k·ln W. The [[entropy]] of a macrostate is
  * the Boltzmann constant times the log of W, the number of microstates that look
@@ -22,15 +23,15 @@ export const BOLTZMANN_K = 1.380649e-23
 /** Boltzmann entropy S = k·ln W of a macrostate with W equally-likely microstates (W ≥ 1). */
 export function entropy(microstates: number): number {
   if (microstates < 1) throw new Error('boltzmann: a macrostate has at least one microstate (W ≥ 1)')
-  return BOLTZMANN_K * Math.log(microstates)
+  return BOLTZMANN_K * algebraLog(microstates)
 }
 
 /** The inverse: the microstate count implied by an entropy, W = e^(S/k). */
-export const microstates = (entropyJperK: number): number => Math.exp(entropyJperK / BOLTZMANN_K)
+export const microstates = (entropyJperK: number): number => algebraExp(entropyJperK / BOLTZMANN_K)
 
 /** Gibbs entropy S = −k·Σ pᵢ·ln pᵢ for any distribution (reduces to k·ln W when uniform; maximal there). */
 export function gibbs(probabilities: readonly number[]): number {
-  return -BOLTZMANN_K * probabilities.reduce((s, p) => s + (p > 0 ? p * Math.log(p) : 0), 0)
+  return -BOLTZMANN_K * probabilities.reduce((s, p) => s + (p > 0 ? p * algebraLog(p) : 0), 0)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

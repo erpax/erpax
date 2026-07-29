@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * FiscalPeriodResolver Service
  *
@@ -129,13 +130,13 @@ export class FiscalPeriodResolver {
     let daysIntoFiscalYear: number
     if (date >= fyStart && date < fyEnd) {
       fiscalYear = date.getUTCFullYear()
-      daysIntoFiscalYear = Math.floor(
+      daysIntoFiscalYear = exactFloor(
         (date.getTime() - fyStart.getTime()) / (1000 * 60 * 60 * 24),
       )
     } else {
       fiscalYear = date.getUTCFullYear() - 1
       const priorFyStart = this.getFiscalYearStart(fiscalYear, config)
-      daysIntoFiscalYear = Math.floor(
+      daysIntoFiscalYear = exactFloor(
         (date.getTime() - priorFyStart.getTime()) / (1000 * 60 * 60 * 24),
       )
     }
@@ -150,7 +151,7 @@ export class FiscalPeriodResolver {
       )
 
     // Calendar metadata
-    const quarterNumber = Math.ceil((date.getUTCMonth() + 1) / 3)
+    const quarterNumber = exactCeil((date.getUTCMonth() + 1) / 3)
     const monthNumber = date.getUTCMonth() + 1
     const dayOfWeek = date.getUTCDay()
     const weekNumber = config.periodType === 'iso-week' ? this.getISOWeek(date) : undefined
@@ -529,7 +530,7 @@ export class FiscalPeriodResolver {
     periodEndDate: string
   } {
     const fyStart = this.getFiscalYearStart(fiscalYear, config)
-    const monthsIn = Math.floor(daysIntoFiscalYear / 30)
+    const monthsIn = exactFloor(daysIntoFiscalYear / 30)
     const fiscalPeriod = monthsIn + 1
 
     const periodStart = new Date(fyStart)
@@ -558,7 +559,7 @@ export class FiscalPeriodResolver {
     periodStartDate: string
     periodEndDate: string
   } {
-    const fiscalPeriod = Math.floor(daysIntoFiscalYear / 91) + 1
+    const fiscalPeriod = exactFloor(daysIntoFiscalYear / 91) + 1
     const label = `Q${fiscalPeriod}`
     return {
       fiscalPeriod,
@@ -579,7 +580,7 @@ export class FiscalPeriodResolver {
     periodStartDate: string
     periodEndDate: string
   } {
-    const fiscalPeriod = Math.floor(daysIntoFiscalYear / 7) + 1
+    const fiscalPeriod = exactFloor(daysIntoFiscalYear / 7) + 1
     return {
       fiscalPeriod,
       periodLabel: `W${fiscalPeriod} ${fiscalYear}`,
@@ -668,7 +669,7 @@ export class FiscalPeriodResolver {
     const dayNum = d.getUTCDay() || 7
     d.setUTCDate(d.getUTCDate() + 4 - dayNum)
     const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
-    return Math.ceil(((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7)
+    return exactCeil(((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7)
   }
 
   private static computeRegulatoryCode(

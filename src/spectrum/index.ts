@@ -1,3 +1,4 @@
+import { algebraExp, PI } from '@/algebra'
 /**
  * spectrum -- the DISCRETE set of lines a system can emit or absorb: every
  * [[leap]] between two of the seven [[horo]] energy-rungs, collected and
@@ -74,14 +75,14 @@ export interface WickReading {
 
 /** Read one spectral energy three ways via the Wick fold at inverse-temperature (imaginary-time period) β. */
 export function wickFold(energy: number, beta: number): WickReading {
-  return { energy, frequency: energy, boltzmann: Math.exp(-beta * energy), temperature: 1 / beta }
+  return { energy, frequency: energy, boltzmann: algebraExp(-beta * energy), temperature: 1 / beta }
 }
 
 /** The de Sitter horizon's imaginary-time period — its temporal circumference: 2π/H. */
-export const deSitterPeriod = (hubble: number): number => (2 * Math.PI) / hubble
+export const deSitterPeriod = (hubble: number): number => (2 * PI) / hubble
 
 /** Gibbons–Hawking: the de Sitter horizon temperature is T_dS = H/2π (the inverse of its imaginary-time period). */
-export const deSitterTemperature = (hubble: number): number => hubble / (2 * Math.PI)
+export const deSitterTemperature = (hubble: number): number => hubble / (2 * PI)
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const ls = lines()

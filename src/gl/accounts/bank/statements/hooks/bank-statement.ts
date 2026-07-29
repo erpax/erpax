@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Bank Statement Import Hook — emits `bank:statement:imported` so
  * `glPostingService.postBankStatementImported` can book a JE for every
@@ -86,7 +87,7 @@ const toTransaction = (
     id: String(raw.id ?? uuid()),
     date: asDate(raw.transactionDate, fallbackDate),
     description: String(raw.description ?? ''),
-    amount: Math.abs(amount),
+    amount: exactAbs(amount),
     balance: Number(raw.balanceAfter ?? 0),
     type: amount < 0 ? 'debit' : 'credit',
     referenceNumber: raw.reference ? String(raw.reference) : undefined,

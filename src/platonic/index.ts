@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 /**
  * platonic — the sphere is formed by the MOVEMENT of the Platonic solids' points, not by fiat.
  *
@@ -20,7 +21,7 @@
  *
  * Composes [[globe]] · [[horo]] · [[merge]] · [[law]].
  */
-const PHI = (1 + Math.sqrt(5)) / 2
+const PHI = (1 + algebraSqrt(5)) / 2
 type V = readonly [number, number, number]
 const cube: V[] = [
   [1, 1, 1], [1, 1, -1], [1, -1, 1], [1, -1, -1],
@@ -45,26 +46,26 @@ export const PLATONIC: Readonly<Record<string, readonly V[]>> = {
   ],
 }
 
-const mag = (v: V): number => Math.hypot(v[0], v[1], v[2])
+const mag = (v: V): number => algebraHypot(v[0], v[1], v[2])
 
 /** The circumradius if every vertex is equidistant from the centre (all on ONE sphere) — else null. */
 export function circumradius(vertices: readonly V[], eps = 1e-9): number | null {
   if (vertices.length === 0) return null
   const r = mag(vertices[0]!)
-  return vertices.every((v) => Math.abs(mag(v) - r) < eps) ? r : null
+  return vertices.every((v) => exactAbs(mag(v) - r) < eps) ? r : null
 }
 
 /** Rotate a point about the polar (z) axis by θ radians — the movement that sweeps a latitude circle. */
 export function rotateZ(v: V, theta: number): V {
-  const c = Math.cos(theta)
-  const s = Math.sin(theta)
+  const c = algebraCos(theta)
+  const s = algebraSin(theta)
   return [v[0] * c - v[1] * s, v[0] * s + v[1] * c, v[2]]
 }
 
 /** The sphere is the movement-invariant: a rotated vertex is still at the circumradius (never leaves). */
 export function staysOnSphere(v: V, r: number, samples = 24, eps = 1e-9): boolean {
   for (let i = 0; i < samples; i++) {
-    if (Math.abs(mag(rotateZ(v, (2 * Math.PI * i) / samples)) - r) > eps) return false
+    if (exactAbs(mag(rotateZ(v, (2 * PI * i) / samples)) - r) > eps) return false
   }
   return true
 }

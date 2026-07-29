@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * A/R Analytics — KPIs (DSO, turnover, collection effectiveness).
  *
@@ -107,9 +108,9 @@ export class ARAnalytics {
     const openInvoices = invoices.filter((inv) => inv.balance > 0)
 
     return daysOutstandingBuckets.map((bucket) => {
-      const estimatedCash = Math.round(
+      const estimatedCash = exactRound(
         openInvoices.reduce((sum, inv) => {
-          const daysSinceBilled = Math.ceil(
+          const daysSinceBilled = exactCeil(
             (new Date().getTime() - inv.invoiceDate.getTime()) / (1000 * 60 * 60 * 24)
           )
           if (daysSinceBilled <= bucket.days) {
@@ -144,7 +145,7 @@ export class ARAnalytics {
     } = {}
 
     invoices.forEach((inv) => {
-      const daysOverdue = Math.ceil(
+      const daysOverdue = exactCeil(
         (new Date().getTime() - inv.dueDate.getTime()) / (1000 * 60 * 60 * 24)
       )
 
@@ -210,7 +211,7 @@ export class ARAnalytics {
       .reduce((sum, inv) => sum + inv.balance, 0)
 
     const overdueDays30 = invoices.filter((inv) => {
-      const daysOverdue = Math.ceil(
+      const daysOverdue = exactCeil(
         (new Date().getTime() - inv.dueDate.getTime()) / (1000 * 60 * 60 * 24)
       )
       return daysOverdue > 30 && inv.balance > 0

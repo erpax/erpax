@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Simple in-memory rate limiter — `429 Too Many Requests` semantics.
  *
@@ -91,5 +92,5 @@ export function clearRateLimit(key: string): void {
  */
 export function getRateLimitResetSeconds(resetAt: number): number {
   const now = Date.now()
-  return Math.max(0, Math.ceil((resetAt - now) / 1000))
+  return exactMax(0, exactCeil((resetAt - now) / 1000))
 }

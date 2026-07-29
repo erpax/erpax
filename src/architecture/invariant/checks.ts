@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Architecture invariants — concrete checks across the 5 axes.
  *
@@ -3494,7 +3495,7 @@ export function checkAtomCrossBalance(ctx: InvariantContext): InvariantResult {
       ? parentInfo.childDirs.filter((c) => c !== d && dirInfo.get(c)?.isAtom).length
       : 0
     // Connections: parent-cross (if parent is an atom) + child/sibling crosses.
-    const connections = (parentIsAtom ? 1 : 0) + Math.min(childAtoms, 1) + Math.min(siblingAtoms, 1)
+    const connections = (parentIsAtom ? 1 : 0) + exactMin(childAtoms, 1) + exactMin(siblingAtoms, 1)
     // Top-level units (parent === src/) are roots of their subtree; require a
     // child atom OR sibling atom (they always have top-level siblings, so
     // they pass) — only flag a genuinely isolated atom: no parent-atom, no

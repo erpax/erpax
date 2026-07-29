@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * metatron -- PROOF that erpax's uuid-matrix is Metatron's Cube: the complete
  * pairwise binding of 12-around-1 folding to one center. Computed on the live
@@ -55,7 +56,7 @@ export function metatronLines(): { seeds: number; lines: number; distinct: numbe
 
 /** PROOF: merge is TOTAL -- every sampled pair yields a valid binding-uuid ⇒ the binding-algebra is K_n. */
 export function mergeIsTotal(sample = 120): { pairsTested: number; allDefined: boolean } {
-  const m = Math.min(sample, N.length)
+  const m = exactMin(sample, N.length)
   let tested = 0
   let ok = 0
   for (let i = 0; i < m; i++) {

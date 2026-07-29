@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/fold — word ⊗ digit double fold (64-bit torus halves → 128-bit combined).
  *
@@ -838,7 +839,7 @@ export async function sealLinearGaps(
   return {
     before,
     after,
-    sealed: Math.max(0, before - after),
+    sealed: exactMax(0, before - after),
     remainder: after,
     paths: [...new Set(sealedPaths)].sort(),
     byKind,

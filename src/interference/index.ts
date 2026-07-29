@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 /**
  * interference -- two [[wave]] amplitudes combine by PHASE, not by classical sum.
  * For amplitudes a1,a2 with relative phase φ the intensity is
@@ -22,7 +23,7 @@
 
 /** The two-path intensity: I = a1² + a2² + 2·a1·a2·cos(φ). */
 export const intensity = (a1: number, a2: number, phaseRad: number): number =>
-  a1 * a1 + a2 * a2 + 2 * a1 * a2 * Math.cos(phaseRad)
+  a1 * a1 + a2 * a2 + 2 * a1 * a2 * algebraCos(phaseRad)
 
 /** Constructive maximum (in phase, φ=0): (a1+a2)². */
 export const constructive = (a1: number, a2: number): number => (a1 + a2) * (a1 + a2)
@@ -31,20 +32,20 @@ export const constructive = (a1: number, a2: number): number => (a1 + a2) * (a1 
 export const destructive = (a1: number, a2: number): number => (a1 - a2) * (a1 - a2)
 
 /** The cross (interference) term — the deviation from the classical sum a1²+a2². */
-export const crossTerm = (a1: number, a2: number, phaseRad: number): number => 2 * a1 * a2 * Math.cos(phaseRad)
+export const crossTerm = (a1: number, a2: number, phaseRad: number): number => 2 * a1 * a2 * algebraCos(phaseRad)
 
 /** Fringe visibility (contrast) V = 2·|a1·a2| / (a1²+a2²), in [0,1]; 1 when a1=a2 (full contrast). */
 export const visibility = (a1: number, a2: number): number => {
   const denom = a1 * a1 + a2 * a2
-  return denom === 0 ? 0 : (2 * Math.abs(a1 * a2)) / denom
+  return denom === 0 ? 0 : (2 * exactAbs(a1 * a2)) / denom
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const a1 = 1
   const a2 = 1
   console.log('interference -- two equal amplitudes combine by phase (a1=a2=1):')
-  for (const f of [0, Math.PI / 2, Math.PI, (3 * Math.PI) / 2]) {
-    console.log('  φ=' + (f / Math.PI).toFixed(2) + 'π  I=' + intensity(a1, a2, f).toFixed(4))
+  for (const f of [0, PI / 2, PI, (3 * PI) / 2]) {
+    console.log('  φ=' + (f / PI).toFixed(2) + 'π  I=' + intensity(a1, a2, f).toFixed(4))
   }
   console.log('  constructive=' + constructive(a1, a2) + '  destructive=' + destructive(a1, a2) + '  visibility=' + visibility(a1, a2))
 }

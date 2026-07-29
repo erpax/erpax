@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * taggings/counter — the `taggings_count` counter cache (port of the gem's
  * `counter_cache: true` on `Tagging.belongs_to :tag`). One source of truth for
@@ -39,7 +40,7 @@ async function adjustCount(payload: Payload, tagId: string | number | null, delt
     await payload.update({
       collection: 'tags' as CollectionSlug,
       id: tagId,
-      data: { taggingsCount: Math.max(0, current + delta) },
+      data: { taggingsCount: exactMax(0, current + delta) },
       overrideAccess: true,
     })
   } catch {

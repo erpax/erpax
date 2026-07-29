@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { leap, allowedLeap, ladder, levelUuid } from '@/leap'
 import { energy } from '@/photon'
@@ -34,7 +35,7 @@ describe('leap: the discrete transition between energy rungs', () => {
     const a = HORO_DIGITS[1]! // 2
     const b = HORO_DIGITS[5]! // 5
     const l = leap(a, b)
-    expect(l.gapHz).toBe(Math.abs(NOTES[a].hz - NOTES[b].hz))
+    expect(l.gapHz).toBe(exactAbs(NOTES[a].hz - NOTES[b].hz))
     expect(l.photon).not.toBeNull()
     expect(l.photon!.energyJ).toBe(energy(l.gapHz))
   })

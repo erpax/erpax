@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * confirm/uuid — the uuid-pure gate stack (substrate-independent).
  *
@@ -319,7 +320,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   const total = gates.reduce((s, g) => s + (g.ms ?? 0), 0)
   const slowest = [...gates].sort((a, b) => (b.ms ?? 0) - (a.ms ?? 0))[0]
-  console.log(`\n  total ${total}ms · slowest lane: ${slowest?.axis} (${slowest?.ms}ms = ${Math.round(((slowest?.ms ?? 0) / total) * 100)}%)`)
+  console.log(`\n  total ${total}ms · slowest lane: ${slowest?.axis} (${slowest?.ms}ms = ${exactRound(((slowest?.ms ?? 0) / total) * 100)}%)`)
   console.log(
     sealed
       ? '✓ confirmed:uuid — all gates green (content-uuid layer; Payload optional)'

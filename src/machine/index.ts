@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * machine — the equipment node of the production-traceability spine, mined from the upstream source of
  * truth (etrima, 20 years of garment manufacturing: 101 machines · 172 machine_types · real prod data).
@@ -69,7 +70,7 @@ export function machineRate(rates: MachineRates, hours: number): MachineSpread {
 /** A machine type's throughput — units it can complete in `minutes`, given per-unit work-seconds. */
 export function typeThroughput(t: MachineType, minutes: number, workSecondsPerUnit: number): number {
   if (workSecondsPerUnit <= 0) return 0
-  return Math.floor((minutes * 60 * t.machinesPerWorker) / workSecondsPerUnit)
+  return exactFloor((minutes * 60 * t.machinesPerWorker) / workSecondsPerUnit)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

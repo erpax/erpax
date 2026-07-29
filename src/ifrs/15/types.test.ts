@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * IFRS 15 / ASC 606 — canonical revenue-recognition types tests.
  *
@@ -146,7 +147,7 @@ describe('IFRS 15 — five-step model end-to-end', () => {
           obligationId: 'PO-1',
           standaloneSellingPrice: poSubscription.standaloneSellingPrice,
           method: 'relative_ssp',
-          allocatedAmount: Math.round(
+          allocatedAmount: exactRound(
             (poSubscription.standaloneSellingPrice / totalSsp) * transactionPrice,
           ),
         },
@@ -154,7 +155,7 @@ describe('IFRS 15 — five-step model end-to-end', () => {
           obligationId: 'PO-2',
           standaloneSellingPrice: poSetup.standaloneSellingPrice,
           method: 'relative_ssp',
-          allocatedAmount: Math.round(
+          allocatedAmount: exactRound(
             (poSetup.standaloneSellingPrice / totalSsp) * transactionPrice,
           ),
         },
@@ -163,7 +164,7 @@ describe('IFRS 15 — five-step model end-to-end', () => {
     }
     const sum = allocation.byObligation.reduce((s, a) => s + a.allocatedAmount, 0)
     // Off-by-one rounding tolerance
-    expect(Math.abs(sum - transactionPrice)).toBeLessThanOrEqual(1)
+    expect(exactAbs(sum - transactionPrice)).toBeLessThanOrEqual(1)
     // PO-1 is 80% of total SSP (120k of 150k)
     expect(allocation.byObligation[0].allocatedAmount).toBeCloseTo(
       transactionPrice * 0.8,
@@ -176,7 +177,7 @@ describe('IFRS 15 — five-step model end-to-end', () => {
     const monthsTotal = 12
     const recognition: RevenueRecognition[] = []
     for (let m = 1; m <= monthsTotal; m++) {
-      const cumulative = Math.round((allocated * m) / monthsTotal)
+      const cumulative = exactRound((allocated * m) / monthsTotal)
       const previous = recognition[recognition.length - 1]?.cumulativeRecognized ?? 0
       recognition.push({
         id: `REC-PO1-${m}`,

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * computed-at-all-scales — every face traces to a derive* function.
  *
@@ -123,7 +124,7 @@ const summarizeScales = (checks: readonly ComputedFaceCheck[]): ComputedScaleSum
       scale,
       total,
       computed,
-      pctComputed: total === 0 ? 100 : Math.round((computed / total) * 1000) / 10,
+      pctComputed: total === 0 ? 100 : exactRound((computed / total) * 1000) / 10,
     }
   })
 
@@ -249,7 +250,7 @@ function analyticsCheck(atomPath: string, cwd: string): ComputedFaceCheck {
     if (!Number.isFinite(statement.totalDebits) || !Number.isFinite(statement.totalCredits)) {
       violations.push('deriveFolderAccounting: non-finite ledger totals')
     }
-    if (Math.abs(statement.totalDebits - statement.totalCredits) > 1e-6) {
+    if (exactAbs(statement.totalDebits - statement.totalCredits) > 1e-6) {
       violations.push('deriveFolderAccounting: debits ≠ credits')
     }
   } catch (e) {

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Power — usage = entropy = power. The realtime proof-of-power core.
  *
@@ -93,8 +94,8 @@ export interface PowerReading {
  * busy store with un-wired nodes is high HERE yet low there; do not conflate them.
  */
 export function coverageFromUsage(events: number, corpusNodes: number = matrixDigest().nodes): number {
-  const e = Math.max(events, 0)
-  return e / (e + Math.max(corpusNodes, 1))
+  const e = exactMax(events, 0)
+  return e / (e + exactMax(corpusNodes, 1))
 }
 
 /**
@@ -104,7 +105,7 @@ export function coverageFromUsage(events: number, corpusNodes: number = matrixDi
  * `crackVerdict` computes internally for the same usage.
  */
 export function usageChecks(u: UsageSnapshot): number {
-  return replicationChecks(invariantChecks(Math.max(u.streams, 1), u.features), Math.max(u.clients, 1), u.strongConsistency ?? true)
+  return replicationChecks(invariantChecks(exactMax(u.streams, 1), u.features), exactMax(u.clients, 1), u.strongConsistency ?? true)
 }
 
 /** Compute the platform's accumulated tamper-power from a live usage snapshot. */
@@ -119,17 +120,17 @@ export function accumulatePower(u: UsageSnapshot): PowerReading {
   // powerLog2 is finite (no usage-driven ∞ "by architecture" claim).
   const v = crackVerdict({
     coverage,
-    checks: Math.max(u.streams, 1),
+    checks: exactMax(u.streams, 1),
     invariants: u.features,
-    replicas: Math.max(u.clients, 1),
+    replicas: exactMax(u.clients, 1),
     strongConsistency,
     anchorStrengthBits: ANCHOR_STRENGTH_BITS[anchor],
   })
   // The linear Law-55 cascade term — grows with history depth (events ≥ 1).
   const history = computeTamperReverseCost({
-    leafDepth: Math.max(u.events, 1),
-    streamCount: Math.max(u.streams, 1),
-    dimensionCount: Math.max(u.dimensions, 1),
+    leafDepth: exactMax(u.events, 1),
+    streamCount: exactMax(u.streams, 1),
+    dimensionCount: exactMax(u.dimensions, 1),
   })
   return {
     powerLog2: v.crackCostLog2,

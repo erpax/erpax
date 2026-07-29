@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * ratchet-math — Landauer × horo ceiling from live violation counts.
  *
@@ -9,7 +10,7 @@
 import { horoRatio, type HoroStep } from '@/horo'
 
 /** Landauer floor — inlined to avoid readme ↔ accounting init cycle at emit. */
-const LANDAUER_BIT = Math.log2(2)
+const LANDAUER_BIT = algebraLog2(2)
 import type { RatchetAxis } from './baseline-types'
 
 /** Every gate axis — order stable for content-uuid seal. */
@@ -75,7 +76,7 @@ export function mathCeiling(axis: RatchetAxis, violations: number): number {
   const digit = AXIS_HORO[axis]
   const scale = LANDAUER_BIT * horoRatio(digit, 10)
   if (scale <= 0) return violations
-  return Math.ceil(violations / scale)
+  return exactCeil(violations / scale)
 }
 
 /** DOWN-only ratchet — committed ceiling never rises above prior math. */
@@ -87,5 +88,5 @@ export function ratchetDown(
   const math = mathCeiling(axis, liveViolations)
   if (!Number.isFinite(math)) return Number.NaN
   if (prior === undefined) return math
-  return Math.min(prior, math)
+  return exactMin(prior, math)
 }

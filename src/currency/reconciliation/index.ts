@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * CurrencyReconciliation Service
  *
@@ -74,7 +75,7 @@ export class CurrencyReconciliation {
     const balances: CurrencyBalance[] = []
 
     for (const entry of closingEntriesByCurrency) {
-      const difference = Math.abs(entry.totalRevenuesClosed - entry.totalExpensesClosed)
+      const difference = exactAbs(entry.totalRevenuesClosed - entry.totalExpensesClosed)
       const isBalanced = difference <= tolerance
 
       balances.push({

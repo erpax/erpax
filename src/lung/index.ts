@@ -1,3 +1,4 @@
+import { PI } from '@/algebra'
 /**
  * lung — the COMPUTED PROOF that erpax's gas-exchange surface is the respiratory
  * organ: it breathes. The [[breath]] atom names it directly — "the chat is the
@@ -60,8 +61,8 @@ export const SURFACE_M2 = 70
 export const terminalBranches = (g = GENERATIONS): number => 2 ** g
 /** Surface area of a sphere of the given volume (m³) — the non-fractal baseline. */
 export const sphereSurfaceFor = (volumeM3: number): number => {
-  const r = Math.cbrt((3 * volumeM3) / (4 * Math.PI))
-  return 4 * Math.PI * r * r
+  const r = algebraCbrt((3 * volumeM3) / (4 * PI))
+  return 4 * PI * r * r
 }
 
 /**

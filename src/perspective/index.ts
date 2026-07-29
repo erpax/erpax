@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * perspective — switch the point of view on one content-uuid node.
  *
@@ -81,7 +82,7 @@ export function viewTransferFrom(
 ): TransferView {
   const v = idOf(viewer)
   if (!Number.isFinite(transfer.amount)) throw new Error('Transfer amount must be a finite number')
-  const amt = Math.abs(transfer.amount)
+  const amt = exactAbs(transfer.amount)
   if (v === idOf(transfer.payer)) return { viewer: v, direction: 'outflow', signedAmount: -amt, role: 'give' }
   if (v === idOf(transfer.payee)) return { viewer: v, direction: 'inflow', signedAmount: +amt, role: 'take' }
   return { viewer: v, direction: 'observer', signedAmount: 0, role: 'witness' }

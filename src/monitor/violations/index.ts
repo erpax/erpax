@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * monitor/violations — realtime corpus violation scan across all gate axes.
  *
@@ -690,7 +691,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       for (const e of fresh.filter((ev) => ev.source !== 'cross-concept').slice(0, 12)) {
         console.log(`  [${e.source}] ${e.accountCode} — ${e.detail}`)
       }
-      const nonCrossShown = Math.min(12, fresh.filter((ev) => ev.source !== 'cross-concept').length)
+      const nonCrossShown = exactMin(12, fresh.filter((ev) => ev.source !== 'cross-concept').length)
       const hidden = fresh.length - crossFresh.length - nonCrossShown
       if (hidden > 0) console.log(`  … +${hidden} more`)
     } else if (!watch) {

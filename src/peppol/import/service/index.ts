@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Peppol Import Service — parses an inbound UBL 2.1 Invoice XML
  * (Peppol BIS Billing 3.0) into the canonical `PeppolBillingMessage`
@@ -124,7 +125,7 @@ const decodeXml = (s: string | undefined): string | undefined => {
 
 const toCents = (decimal: string | undefined): number => {
   if (!decimal) return 0
-  return Math.round(parseFloat(decimal.trim()) * 100)
+  return exactRound(parseFloat(decimal.trim()) * 100)
 }
 
 // ─── Per-element parsers ──────────────────────────────────────────────

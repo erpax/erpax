@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * wave/scheduler — batched readme/matrix jobs in horo waves (OOM guard).
  *
@@ -33,7 +34,7 @@ export function corpusWaveOptsFromPolicy(
   return {
     root,
     maxUnitsPerWave: policy.maxUnitsPerWave,
-    maxItemsPerWave: Math.ceil(3087 / policy.waveDepth),
+    maxItemsPerWave: exactCeil(3087 / policy.waveDepth),
     weightOf: pathComparableUnits,
   }
 }

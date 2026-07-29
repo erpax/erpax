@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * BNB rate sync — nightly (or on-demand) job that pulls the БНБ daily
  * fixing for every reporting-currency pair the BG-resident tenants need
@@ -101,7 +102,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
       // Normalise: publishers vary on the `units` denominator (БНБ uses
       // "X BGN per <units> <fromCurrency>"; ECB always uses 1 unit).
       // Dividing by `units` gives the rate-per-unit consumers expect.
-      const ratePerUnit = lookup.data.rate / Math.max(1, lookup.data.units)
+      const ratePerUnit = lookup.data.rate / exactMax(1, lookup.data.units)
 
       // currency-rates row shape mirrors `SEED_VALIDATION_REGISTRY['currency-rates']`.
       try {

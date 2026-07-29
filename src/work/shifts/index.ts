@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Workshifts — the per-actor-day labour aggregate: the efficiency + wage AUTHORITY.
  *
@@ -128,7 +129,7 @@ export const computeShiftAuthority: CollectionBeforeChangeHook = ({ data }) => {
   const produced = num(d.minutesProduced)
 
   // ordered = produced + backordered (the work-order rollup conservation; never negative).
-  d.minutesBackordered = Math.max(0, ordered - produced)
+  d.minutesBackordered = exactMax(0, ordered - produced)
 
   // efficiency = ⌊produced·100 / presence⌋ — INTEGER truncation (data-verified, not rounding).
   // Otherwise PRESERVE what was recorded — the Rails `||=` (a recorded 0 stands; 0 is truthy in Ruby).
@@ -143,7 +144,7 @@ export const computeShiftAuthority: CollectionBeforeChangeHook = ({ data }) => {
   const baseline = d.employeeWorkEfficiency
   d.efficiencyPercent =
     presence > 0 && produced > 0
-      ? Math.trunc((produced * 100) / presence)
+      ? exactTrunc((produced * 100) / presence)
       : typeof recorded === 'number'
         ? recorded
         : typeof baseline === 'number'
@@ -153,7 +154,7 @@ export const computeShiftAuthority: CollectionBeforeChangeHook = ({ data }) => {
   // wage = MAX(time-clock pay, order-rollup wage), rounded to 2dp (the greater pole wins).
   const timePay = (num(d.payPerHour) * shift) / 60
   const orderWage = num(d.orderWage)
-  d.wage = Math.round(Math.max(timePay, orderWage) * 100) / 100
+  d.wage = exactRound(exactMax(timePay, orderWage) * 100) / 100
 
   return data
 }

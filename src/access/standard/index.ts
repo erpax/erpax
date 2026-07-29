@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * access/standard — the API's access is DERIVED FROM and GATED BY its legal surface.
  *
@@ -113,7 +114,7 @@ const WRITE_OPS: readonly ApiOp[] = ['create', 'update', 'delete']
  * its legal surface. The auditor's cost of an under-governed API, in the same currency as every leak.
  */
 export function accessComplianceLeak(gaps: readonly AccessComplianceGap[], totalEndpoints: number): CrackLeak {
-  return crackLeak(Math.max(1, totalEndpoints), gaps.length)
+  return crackLeak(exactMax(1, totalEndpoints), gaps.length)
 }
 
 export function accessComplianceOverMesh(cwd: string = process.cwd(), mesh?: Mesh): AccessComplianceGap[] {
@@ -141,7 +142,7 @@ export function accessComplianceGaps(collections: readonly CollectionAccessInput
     const topStandard = c.standardIds.find((id) => STANDARD_TIER.some((r) => r.re.test(id) && r.tier === floor.tier)) ?? c.standardIds[0] ?? ''
     for (const op of ['find', ...WRITE_OPS] as ApiOp[]) {
       // read requirement relaxes one rung; writes take the full floor
-      const req = op === 'find' ? TIER_ORDER[Math.max(0, tierRank(floor.tier) - 1)]! : floor.tier
+      const req = op === 'find' ? TIER_ORDER[exactMax(0, tierRank(floor.tier) - 1)]! : floor.tier
       if (tierRank(declared) < tierRank(req)) {
         gaps.push({ slug: c.slug, atom: c.atom, operation: op, required: req, declared, standard: topStandard, why: floor.why })
       }

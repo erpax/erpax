@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * equilibrium -- DETAILED BALANCE: a system is at equilibrium when every forward
  * transition is exactly matched by its reverse — rate(i→j)·pᵢ = rate(j→i)·pⱼ for
@@ -24,7 +25,7 @@ export interface Transition {
 
 /** Detailed-balance residual for one pair: |rate(i→j)·pᵢ − rate(j→i)·pⱼ|. Zero ⇒ that pair balances. */
 export const residual = (t: Transition, p: readonly number[]): number =>
-  Math.abs(t.forward * (p[t.i] ?? 0) - t.reverse * (p[t.j] ?? 0))
+  exactAbs(t.forward * (p[t.i] ?? 0) - t.reverse * (p[t.j] ?? 0))
 
 /** Is the whole system at detailed balance? Every pair's residual within tolerance. */
 export const atEquilibrium = (transitions: readonly Transition[], p: readonly number[], tol = 1e-9): boolean =>

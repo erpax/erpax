@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * testing/witness — the bounded-witness helper (ceccec.psg.bg proof taxonomy, made a tool).
  *
@@ -36,7 +37,7 @@ export const isFiniteComplete = <T>(domain: readonly T[], n: number = WITNESS_SI
  */
 export function spreadWitness<T>(domain: readonly T[], n: number = WITNESS_SIZE): readonly T[] {
   if (domain.length <= n) return domain
-  const step = Math.floor(domain.length / n)
+  const step = exactFloor(domain.length / n)
   const out: T[] = []
   for (let i = 0; i < domain.length && out.length < n; i += step) out.push(domain[i]!)
   return out

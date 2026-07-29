@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * self/sufficient — self-sufficiency as a SECURITY property, made computational.
  *
@@ -80,7 +81,7 @@ export function selfSufficiencyVerdict(opts: {
   const anchorStrengthBits = opts.anchorStrengthBits ?? 128
   const liabilities = opts.liabilities ?? []
   // Without liabilities the floor is the tamper-cost bound itself.
-  const floor = Math.min(digestBits, anchorStrengthBits)
+  const floor = exactMin(digestBits, anchorStrengthBits)
   let effectiveCostBits = floor
   let binding: SelfSufficiencyVerdict['binding'] = anchorStrengthBits < digestBits ? 'anchor' : 'digest'
   let weakestLink: string | null = null
@@ -91,7 +92,7 @@ export function selfSufficiencyVerdict(opts: {
       weakestLink = dep.id
     }
   }
-  const selfSufficiency = binding === 'dependency' ? Math.max(0, effectiveCostBits / floor) : 1
+  const selfSufficiency = binding === 'dependency' ? exactMax(0, effectiveCostBits / floor) : 1
   return {
     effectiveCostBits,
     binding,

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Early Payment Discount Calculator — vendor discount programs.
  *
@@ -55,8 +56,8 @@ export class EarlyPaymentDiscountCalculator {
    */
   private static calculateDaysTillDiscount(discountDeadline: Date, asOfDate: Date): number {
     const diffTime = discountDeadline.getTime() - asOfDate.getTime()
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-    return Math.max(0, diffDays)
+    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
+    return exactMax(0, diffDays)
   }
 
   /**
@@ -132,7 +133,7 @@ export class EarlyPaymentDiscountCalculator {
    */
   static calculateImpliedAPR(discountPercentage: number, discountDays: number, standardDays: number): number {
     const discountPeriods = 365 / (standardDays - discountDays)
-    return Math.pow(1 + discountPercentage / 100, discountPeriods) - 1
+    return algebraFloatPow(1 + discountPercentage / 100, discountPeriods) - 1
   }
 
   /**
@@ -152,7 +153,7 @@ export class EarlyPaymentDiscountCalculator {
       .map((bill) => bill.discountAvailable || 0)
       .reduce((sum, amount) => sum + amount, 0)
 
-    const expectedSavings = Math.round(availableDiscounts * discountTakingRate)
+    const expectedSavings = exactRound(availableDiscounts * discountTakingRate)
     const missedSavings = availableDiscounts - expectedSavings
 
     return {

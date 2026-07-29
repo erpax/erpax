@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * port — Rails/ActiveAdmin → Payload/Next Rosetta diamond.
  *
@@ -441,7 +442,7 @@ export function portWaves(
   // The generator seal — this module's own source. Without it a classifier change reads a stale thought
   // (decoherence): the key must capture the code the thought depends on, not just its inputs.
   const genSeal = seal(readFileSync(new URL(import.meta.url), 'utf8'))
-  const size = Math.max(1, Math.ceil(tables.length / (opts?.waves ?? 7)))
+  const size = exactMax(1, exactCeil(tables.length / (opts?.waves ?? 7)))
   const thoughts: PortThought[] = []
   let allCached = true
   let ordinal = 0

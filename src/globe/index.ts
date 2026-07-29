@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
 /**
  * globe — the corpus is a sphere, not a flat wheel. The colour wheel, the spectrum column, and the
  * vortex were all PROJECTIONS of one globe, and projecting a sphere onto a plane is exactly where the
@@ -42,7 +43,7 @@ export const EQUATOR_LATITUDE = 0
  */
 export function toGeodetic(ringPosition: number, elevationBand: number, elevation = 0): Geodetic {
   const latitude = (elevationBand - 0.5) * 180 // 0 → −90 (S), 0.5 → 0 (equator), 1 → +90 (N)
-  const atPole = Math.abs(latitude) >= 90
+  const atPole = exactAbs(latitude) >= 90
   const longitude = atPole ? null : ((ringPosition % 6) * 60 + 360) % 360
   return { longitude, latitude, elevation }
 }
@@ -54,13 +55,13 @@ export function atPole(g: Geodetic): boolean {
 
 /** Great-circle angle between two points (haversine, degrees) — the real distance on the globe. */
 export function greatCircleAngle(a: Geodetic, b: Geodetic): number {
-  const rad = (d: number) => (d * Math.PI) / 180
+  const rad = (d: number) => (d * PI) / 180
   const la1 = rad(a.latitude)
   const la2 = rad(b.latitude)
   const lo1 = rad(a.longitude ?? 0)
   const lo2 = rad(b.longitude ?? 0)
-  const h = Math.sin((la2 - la1) / 2) ** 2 + Math.cos(la1) * Math.cos(la2) * Math.sin((lo2 - lo1) / 2) ** 2
-  return (2 * Math.asin(Math.min(1, Math.sqrt(h))) * 180) / Math.PI
+  const h = algebraSin((la2 - la1) / 2) ** 2 + algebraCos(la1) * algebraCos(la2) * algebraSin((lo2 - lo1) / 2) ** 2
+  return (2 * algebraAsin(exactMin(1, algebraSqrt(h))) * 180) / PI
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

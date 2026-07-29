@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * resource-bound — the THERMODYNAMIC half of the tamper proof (Conservation Law 55,
  * physical form). `tamper-reverse-cost` gives the forge cost in BITS (2^k × depth ×
@@ -88,7 +89,7 @@ export interface ResourceVerdict {
 
 /** Price a {@link TamperReverseCost} (bits) into energy and prove it against the resource budgets. */
 export function proveBeyondResources(cost: TamperReverseCost): ResourceVerdict {
-  const verifyOps = Math.max(1, cost.leafDepth) // O(N): walk the chain once
+  const verifyOps = exactMax(1, cost.leafDepth) // O(N): walk the chain once
   const forgeEnergyLog10 = energyLog10Joules(cost.totalBits)
   return {
     forgeBits: cost.totalBits,

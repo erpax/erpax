@@ -131,7 +131,7 @@ export function plainLanguageOf(input: PlainLanguageInput): string {
   }
 }
 
-export function deriveOrientSection(cwd: string = process.cwd()): readonly string[] {
+export function deriveOrientSection(_cwd: string = process.cwd()): readonly string[] {
   const wire = wireFromRepoUrl(ERPAX_CANONICAL_REPO)
   if (!wire.ok) return ['## Orient to erpax', '', '—', '']
   return [

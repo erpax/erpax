@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Runtime guards for UN/EDIFACT enums.
  *
@@ -29,5 +30,5 @@ export const isBalancedInvoicNet = (
   documentNetTotal: number,
 ): boolean => {
   const sum = lineNets.reduce((a, b) => a + b, 0)
-  return Math.abs(sum - documentNetTotal) < 1
+  return exactAbs(sum - documentNetTotal) < 1
 }

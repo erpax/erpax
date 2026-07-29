@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * pyramid — the geometry of the fold, and the shape the notary is built on.
  *
@@ -63,7 +64,7 @@ export function pyramid(base: readonly string[]): Pyramid {
     apex: rows[rows.length - 1]![0]!,
     base: n,
     height: rows.length - 1,
-    faces: Math.max(0, n - 1),
+    faces: exactMax(0, n - 1),
   }
 }
 

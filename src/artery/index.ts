@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * artery — the COMPUTED PROOF that erpax's outbound vessel is the Windkessel
  * organ: an elastic reservoir that SMOOTHS the heart's pulsatile output into
@@ -45,7 +46,7 @@ export const windkessel = (
 }
 
 /** Peak-to-trough — the pulsatility of a waveform. */
-export const pulsatility = (xs: readonly number[]): number => Math.max(...xs) - Math.min(...xs)
+export const pulsatility = (xs: readonly number[]): number => exactMax(...xs) - exactMin(...xs)
 
 /** A pulsatile source: a sharp systolic ejection every `period` steps, else zero. */
 export const pulsatileSource = (n: number, period = 4, stroke = 100): number[] =>

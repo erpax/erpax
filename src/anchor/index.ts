@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Anchor — the one external entropy a zero-entropy app borrows to be tamper-proof.
  *
@@ -39,7 +40,7 @@ export const anchorBinds = (anchor: AnchorKind, digestBits: number): boolean =>
 
 /** The tamper-cost floor (log2 ops) for an anchored store: min(collide digest, forge anchor). */
 export const anchoredFloorLog2 = (anchor: AnchorKind, digestBits: number): number =>
-  Math.min(digestBits, ANCHOR_STRENGTH_BITS[anchor])
+  exactMin(digestBits, ANCHOR_STRENGTH_BITS[anchor])
 
 /** Which side is the weak link — for the verdict note. */
 export function anchorBinding(anchor: AnchorKind, digestBits: number): 'digest' | 'anchor' | 'none' {
@@ -90,7 +91,7 @@ export function fusionResilience(keys = 4, digestBits = ERPAX_DIGEST_BITS): Fusi
     singleKeyBrokenLog2: 0,
     fusionFloorClassicalLog2: secondPreimageLog2(digestBits),
     fusionFloorQuantumLog2: bhtCollisionLog2(digestBits),
-    crackableWithIntegrity: Math.max(0, keys - 1),
+    crackableWithIntegrity: exactMax(0, keys - 1),
     flatUnderCracking: true,
     orientationBits: keys,
   }

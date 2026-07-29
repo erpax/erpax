@@ -1,3 +1,4 @@
+import { algebraLog2, algebraLog } from '@/algebra'
 /**
  * surprisal -- the INFORMATION of one event: I(p) = −log₂(p) BITS. A certain event
  * (p=1) carries zero bits; a one-in-a-million event ~20 bits. It is the bit-[[cost]]
@@ -17,14 +18,14 @@
 /** Self-information (surprisal) of an event of probability p, in BITS: I(p) = −log₂(p). */
 export function surprisal(p: number): number {
   if (p <= 0 || p > 1) throw new Error('surprisal: probability must be in (0,1]')
-  const bits = -Math.log2(p)
+  const bits = -algebraLog2(p)
   return bits === 0 ? 0 : bits // a certainty carries +0 bits (avoid IEEE −0)
 }
 
 /** Surprisal in NATS (−ln p) — the natural-log form (× ln2 = bits). */
 export const nats = (p: number): number => {
   if (p <= 0 || p > 1) throw new Error('surprisal: probability must be in (0,1]')
-  return -Math.log(p)
+  return -algebraLog(p)
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

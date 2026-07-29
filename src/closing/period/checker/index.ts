@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * ClosingPeriodChecker Service
  *
@@ -106,7 +107,7 @@ export class ClosingPeriodChecker {
     totalExpensesClosed: number,
     tolerance: number = 0.01,
   ): { isBalanced: boolean; difference: number; errors: string[] } {
-    const difference = Math.abs(totalRevenuesClosed - totalExpensesClosed)
+    const difference = exactAbs(totalRevenuesClosed - totalExpensesClosed)
 
     if (difference > tolerance) {
       return {
@@ -146,7 +147,7 @@ export class ClosingPeriodChecker {
       // Reversal: flip sign of net amount
       const reversalAmount = -entry.netAmount
       const [debitAmount, creditAmount] =
-        reversalAmount > 0 ? [reversalAmount, 0] : [0, Math.abs(reversalAmount)]
+        reversalAmount > 0 ? [reversalAmount, 0] : [0, exactAbs(reversalAmount)]
 
       reversals.push({
         sequenceNumber,

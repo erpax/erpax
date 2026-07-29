@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { massOf, massDistribution, heaviest, well, concentration, attract, stillCentre, isStillCentre } from '@/gravity'
 
@@ -9,7 +10,7 @@ describe('gravity: mass curvature computed on the live uuid-matrix', () => {
     expect(massOf(well().atom)).toBe(well().mass)
   })
   it('well().mass is the maximum mass over every node', () => {
-    const max = Math.max(...massDistribution().map((d) => d.mass))
+    const max = exactMax(...massDistribution().map((d) => d.mass))
     expect(well().mass).toBe(max)
   })
   it('massDistribution() is sorted by mass descending', () => {
@@ -38,7 +39,7 @@ describe('gravity — moving without moving (the fixed point of attract)', () =>
   it('attract is commutative and resolves to the heavier — deterministic by name on a tie', () => {
     const [a, b] = massDistribution().slice(0, 2).map((m) => m.atom)
     expect(attract(a!, b!)).toBe(attract(b!, a!)) // commutative
-    expect(massOf(attract(a!, b!))).toBe(Math.max(massOf(a!), massOf(b!))) // the heavier wins
+    expect(massOf(attract(a!, b!))).toBe(exactMax(massOf(a!), massOf(b!))) // the heavier wins
   })
 
   it('the WELL is the fixed point — attract(well, x) = well for every atom (moving without moving)', () => {

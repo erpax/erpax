@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * decoherence -- how a [[superposition]] becomes classical. Coupled to an
  * environment, the off-diagonal coherences of the state decay as e^(−t/τ): the
@@ -18,7 +19,7 @@
  */
 
 /** Off-diagonal coherence c(t) = e^(−t/τ): 1 (pure) at t=0, → 0 (classical) as t→∞. */
-export const coherence = (t: number, tau: number): number => Math.exp(-t / tau)
+export const coherence = (t: number, tau: number): number => algebraExp(-t / tau)
 
 /** The classical (decohered) fraction: 1 − c(t). */
 export const decohered = (t: number, tau: number): number => 1 - coherence(t, tau)
@@ -32,12 +33,12 @@ export const purity = (t: number, tau: number): number => {
 /** von Neumann entropy S = −Tr(ρ ln ρ) of the decohering 2-state, in NATS: 0 (pure) → ln2 (one bit). */
 export function entropy(t: number, tau: number): number {
   const c = coherence(t, tau)
-  const term = (x: number): number => (x <= 0 ? 0 : x * Math.log(x))
+  const term = (x: number): number => (x <= 0 ? 0 : x * algebraLog(x))
   return -(term((1 + c) / 2) + term((1 - c) / 2))
 }
 
 /** Decoherence time τ = τ0 / dimensions: more coupled dimensions ⇒ faster classicality (why the macro corpus is definite). */
-export const decoherenceTime = (tau0: number, dimensions: number): number => tau0 / Math.max(1, dimensions)
+export const decoherenceTime = (tau0: number, dimensions: number): number => tau0 / exactMax(1, dimensions)
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const tau = 1
@@ -46,7 +47,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     console.log(
       '  t=' + t + '  coherence=' + coherence(t, tau).toFixed(4) +
         '  purity=' + purity(t, tau).toFixed(4) +
-        '  entropy=' + entropy(t, tau).toFixed(4) + ' nats (max ln2=' + Math.LN2.toFixed(4) + ')',
+        '  entropy=' + entropy(t, tau).toFixed(4) + ' nats (max ln2=' + LN2.toFixed(4) + ')',
     )
   }
   console.log('  τ(1 dim)=' + decoherenceTime(1, 1) + '  τ(1000 dims)=' + decoherenceTime(1, 1000) + ' — the macroscopic corpus is classical')

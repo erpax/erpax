@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * entropy -- the FUEL, the disorder the whole ledger balances, COMPUTED live.
  *
@@ -65,25 +66,25 @@ export function orphans(): string[] {
 /** Horo unity — last ring position (close / decade ratio 9/10). */
 export const UNITY_HORO_STEP = HORO_DIGITS[HORO_DIGITS.length - 1]!
 
-const roundBits = (n: number): number => Math.round(n * 1000) / 1000
+const roundBits = (n: number): number => exactRound(n * 1000) / 1000
 
 /** Corpus entropy S (bits) — gap/seal eb imbalance + violation bits at Landauer floor. */
 export function corpusEntropyBits(entropyEb: number, violationCount: number): number {
-  const disorderEb = Math.max(0, entropyEb)
-  const violationBits = Math.max(0, violationCount) * LANDAUER_BIT
+  const disorderEb = exactMax(0, entropyEb)
+  const violationBits = exactMax(0, violationCount) * LANDAUER_BIT
   return roundBits(disorderEb + violationBits)
 }
 
 /** Max reversible work capacity — tamper-sealed work × horo unity, else seal mass × unity. */
 export function fMaxFromBindings(workTamperProduct: number, totalSealEb: number): number {
   const unityScale = horoRatio(UNITY_HORO_STEP as HoroStep)
-  const capacity = workTamperProduct > 0 ? workTamperProduct : Math.max(0, totalSealEb)
+  const capacity = workTamperProduct > 0 ? workTamperProduct : exactMax(0, totalSealEb)
   return roundBits(capacity * unityScale)
 }
 
 /** Free energy at entropy S — monotone decreasing in S. */
 export function freeEnergyBitsAt(S: number, fMax: number): number {
-  return Math.max(0, roundBits(fMax - S * LANDAUER_BIT))
+  return exactMax(0, roundBits(fMax - S * LANDAUER_BIT))
 }
 
 export interface FreeEnergyFromEntropyInput {
@@ -115,7 +116,7 @@ export function freeEnergyFromEntropy(input: FreeEnergyFromEntropyInput): FreeEn
   const releasePotential = roundBits(S * LANDAUER_BIT)
   const sAtZero = F_max / LANDAUER_BIT
   const scaleTowardZeroPct =
-    S <= 0 ? 100 : sAtZero <= 0 ? 0 : roundBits(Math.max(0, 100 * (1 - S / sAtZero)))
+    S <= 0 ? 100 : sAtZero <= 0 ? 0 : roundBits(exactMax(0, 100 * (1 - S / sAtZero)))
 
   return {
     unit: COMPARABLE_UNIT,
@@ -215,9 +216,9 @@ export function freeEnergySampleTable(fMax: number): ReadonlyArray<{ S: number; 
   const sMax = fMax > 0 ? fMax / LANDAUER_BIT : 0
   const samples =
     sMax > 0
-      ? [0, sMax / HORO_DIGITS.length, sMax].map((s) => Math.round(s))
+      ? [0, sMax / HORO_DIGITS.length, sMax].map((s) => exactRound(s))
       : [0, LANDAUER_BIT, LANDAUER_BIT * HORO_DIGITS.length]
-  const unique = [...new Set(samples.map((s) => Math.max(0, Math.round(s))))].sort((a, b) => a - b)
+  const unique = [...new Set(samples.map((s) => exactMax(0, exactRound(s))))].sort((a, b) => a - b)
   return unique.map((S) => ({ S, F: freeEnergyBitsAt(S, fMax) }))
 }
 

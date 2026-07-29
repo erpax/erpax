@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * agent/research/educate — self-educating bounded loop.
  */
@@ -54,7 +55,7 @@ export function scanEducateGaps(cwd = process.cwd()): EducateGapScan {
 
 export function selfEducateCycle(opts: SelfEducateCycleOpts = {}): SelfEducateCycleResult {
   const cwd = opts.cwd ?? process.cwd()
-  const batch = Math.max(1, Math.trunc(opts.batch ?? 10))
+  const batch = exactMax(1, exactTrunc(opts.batch ?? 10))
   const dryRun = opts.dryRun !== false
   const scan = scanEducateGaps(cwd)
   const secured = parseWithSecurity(JSON.stringify(scan.gaps.slice(0, batch)), 'corpus:local', (r) =>

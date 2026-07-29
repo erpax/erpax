@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * pivot — cross-tab state statistics for folder README models.
  *
@@ -81,7 +82,7 @@ export interface PivotComparisonTable {
 }
 
 const pct = (count: number, total: number): number =>
-  total > 0 ? Math.round((count * 10000) / total) / 100 : 0
+  total > 0 ? exactRound((count * 10000) / total) / 100 : 0
 
 const tally = (models: readonly PivotFolderInput[], key: (m: PivotFolderInput) => string): Map<string, number> => {
   const acc = new Map<string, number>()

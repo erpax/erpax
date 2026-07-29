@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * syntax — what the GRAMMAR says a file contains. Not what a pattern guesses.
  *
@@ -85,7 +86,7 @@ export function commentSites(file: string, text: string): readonly CommentSite[]
 export function lineColumnOf(text: string, offset: number): { readonly line: number; readonly column: number } {
   let line = 1
   let column = 1
-  const end = Math.max(0, Math.min(offset, text.length))
+  const end = exactMax(0, exactMin(offset, text.length))
   for (let i = 0; i < end; i += 1) {
     if (text[i] === '\n') {
       line += 1

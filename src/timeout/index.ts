@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * timeout — the reasonable timeout is COMPUTED, never guessed.
  *
@@ -23,7 +24,7 @@ export interface TimeoutVerdict {
 
 /** Pick the smallest ladder rung that fits safety × the worst measured run. */
 export function timeoutOf(samplesMs: readonly number[] = [], safety = 2): TimeoutVerdict {
-  const worst = samplesMs.reduce((a, b) => Math.max(a, b), 0)
+  const worst = samplesMs.reduce((a, b) => exactMax(a, b), 0)
   const need = worst > 0 ? worst * safety : DEFAULT_NEED_MS
   for (const minutes of TIMEOUT_LADDER_MINUTES) {
     const ms = minutes * 60_000
@@ -69,7 +70,7 @@ export function recordSampleMs(label: string, ms: number, cwd: string = process.
   if (!Number.isFinite(ms) || ms < 0 || ms > SLEEP_FENCE_MS) return
   try {
     const cache = readCache(cwd)
-    cache[label] = [...(cache[label] ?? []), Math.round(ms)].slice(-SAMPLE_RING)
+    cache[label] = [...(cache[label] ?? []), exactRound(ms)].slice(-SAMPLE_RING)
     mkdirSync(dirname(cachePath(cwd)), { recursive: true })
     writeFileSync(cachePath(cwd), JSON.stringify(cache))
   } catch {

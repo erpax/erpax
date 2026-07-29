@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * seeing — seeing is not proving; assume nothing; be surprised by a passing test, not a vivid one.
  *
@@ -51,7 +52,7 @@ export interface Seen {
  * @invariant evidenceSeen is a function of claimEvidence alone — two renderings of one claim at any frame counts carry equal evidence
  */
 export function evidenceSeen(s: Seen): number {
-  return Math.max(0, Math.min(1, s.claimEvidence)) // frames never appear — vividness is orthogonal to proof
+  return exactMax(0, exactMin(1, s.claimEvidence)) // frames never appear — vividness is orthogonal to proof
 }
 
 /** The three honest states of belief. `assume-nothing` is the neutral prior — neither confirmed nor refuted. */

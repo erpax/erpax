@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * conservation -- the root of double-entry: nothing created or destroyed, only transformed.
  *
@@ -32,7 +33,7 @@ export const trialBalance = (entries: Entry[]): number =>
  * Default tol=0 (exact conservation); use a small positive value for floats.
  */
 export const conserves = (entries: Entry[], tol = 0): boolean =>
-  Math.abs(trialBalance(entries)) <= tol
+  exactAbs(trialBalance(entries)) <= tol
 
 /**
  * netFlow — Σ of signed flows across a boundary.
@@ -54,7 +55,7 @@ export const boundaryConserves = (
   outflows: number[],
   tol = 0,
 ): boolean =>
-  Math.abs(deltaStock - (netFlow(inflows) - netFlow(outflows))) <= tol
+  exactAbs(deltaStock - (netFlow(inflows) - netFlow(outflows))) <= tol
 
 /**
  * NOETHER — documentation-as-data: the canonical Noether pairs.

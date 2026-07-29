@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cache-vote — respond from the AI cache FIRST, ranked by rating/voting.
  *
@@ -54,7 +55,7 @@ export function voteFor<T>(
   const next = candidates.map((c) => {
     if (keyOf(c.output) !== k) return c
     found = true
-    return { output: c.output, votes: c.votes + 1, confidence: Math.max(c.confidence ?? 0, confidence ?? 0) || undefined }
+    return { output: c.output, votes: c.votes + 1, confidence: exactMax(c.confidence ?? 0, confidence ?? 0) || undefined }
   })
   if (!found) next.push({ output, votes: 1, confidence })
   return next

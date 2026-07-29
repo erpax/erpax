@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 import { describe, it, expect, afterAll } from 'vitest'
 import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
@@ -90,7 +91,7 @@ describe('quantum/computer — precomputedAddress (the O(1) "faster than search"
     const a = precomputedAddress('possibility:x', 3105)
     expect(a.foldOps).toBe(1)
     expect(a.searchOps).toBe(3105)
-    expect(a.speedupLog2).toBeCloseTo(Math.log2(3105), 6)
+    expect(a.speedupLog2).toBeCloseTo(algebraLog2(3105), 6)
   })
 })
 
@@ -109,7 +110,7 @@ describe('quantum/computer — FTL face on QPU=CPU/GPU', () => {
     expect(m.boundaryEmpty).toBe(true)
     expect(m.exoticQpu).toBe(0)
     expect(m.spacetime).toBe(0)
-    expect(m.speedupLog2).toBeCloseTo(Math.log2(16), 6)
+    expect(m.speedupLog2).toBeCloseTo(algebraLog2(16), 6)
     expect(m.efficiency).toBe(Infinity)
   })
 })

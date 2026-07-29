@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * shannon -- INFORMATION ENTROPY: H = −Σ pᵢ·log₂(pᵢ) BITS, the EXPECTED [[surprisal]]
  * of a distribution — the average bits per symbol, the irreducible limit of lossless
@@ -20,7 +21,7 @@ export function entropy(probabilities: readonly number[]): number {
 }
 
 /** The maximum possible entropy for n outcomes: log₂ n bits (the uniform distribution). */
-export const maxEntropy = (n: number): number => (n > 0 ? Math.log2(n) : 0)
+export const maxEntropy = (n: number): number => (n > 0 ? algebraLog2(n) : 0)
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('shannon -- H = −Σ pᵢ log₂ pᵢ bits (expected surprisal):')

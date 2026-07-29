@@ -39,7 +39,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('subscribeTenant is idempotent per uuid', () => {
-    const t = `tenant-${Math.random()}`
+    const t = `tenant-${Date.now()}`
     subscribeTenant(t, 'u1')
     subscribeTenant(t, 'u1')
     subscribeTenant(t, 'u2')
@@ -62,7 +62,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('Law 27 — a tenant subscribed to a conflicting pair is flagged', () => {
-    const t = `tenant-${Math.random()}`
+    const t = `tenant-${Date.now()}`
     declareConflict('c1', 'c2')
     subscribeTenant(t, 'c1')
     subscribeTenant(t, 'c2')
@@ -72,7 +72,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('a tenant with no conflicting subscriptions is consistent', () => {
-    const t = `tenant-${Math.random()}`
+    const t = `tenant-${Date.now()}`
     subscribeTenant(t, 'lone')
     expect(checkStandardCitationsConsistent(t).ok).toBe(true)
   })
@@ -85,7 +85,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('Law 28 — a subscription whose uuid was superseded becomes pending', () => {
-    const t = `tenant-${Math.random()}`
+    const t = `tenant-${Date.now()}`
     declareSupersession({ oldUuid: 's-old', newUuid: 's-new', jurisdiction: 'global', effectiveDate: '2026-01-01' })
     subscribeTenant(t, 's-old')
     const res = checkStandardSupersessionsResolved(t, 'DE')
@@ -94,7 +94,7 @@ describe('registry — standards as uuid-keyed live objects', () => {
   })
 
   it('findSupersededSubscriptions proposes the rebind via supersedes link', () => {
-    const t = `tenant-${Math.random()}`
+    const t = `tenant-${Date.now()}`
     const oldStd = publishStandard({ body: 'ISO', id: 'ISO-1', version: '1', bodyText: 'a', publisherDid: 'did:erpax:t:p' })
     const newStd = publishStandard({ body: 'ISO', id: 'ISO-1', version: '2', bodyText: 'b', publisherDid: 'did:erpax:t:p', supersedes: oldStd.uuid })
     subscribeTenant(t, oldStd.uuid)

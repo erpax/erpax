@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   pivotSpecsForHub,
@@ -44,7 +45,7 @@ describe('navigation/distribute — hub pivot waves', () => {
 
   it('selfBalancingWaveLoad balances medical leaves by path depth units', () => {
     const plan = selfBalancingWaveLoad([...MEDICAL_WAVE_1], {
-      weightOf: () => Math.log2(2),
+      weightOf: () => algebraLog2(2),
     })
     expect(plan.waves.length).toBe(7)
     expect(plan.balanceRatio).toBeLessThanOrEqual(2)

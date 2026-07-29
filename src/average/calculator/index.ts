@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Arithmetic mean of a number array, zero-guarded (empty ⇒ 0, never NaN).
  * The shared collapse of the repeated `sum/length` reduce across the
@@ -11,5 +12,5 @@ export function calculateAverage(values: number[]): number {
 /** Arithmetic mean rounded to the nearest integer (zero-guarded). */
 export function calculateAverageRounded(values: number[]): number {
   if (values.length === 0) return 0
-  return Math.round(values.reduce((sum, val) => sum + val, 0) / values.length)
+  return exactRound(values.reduce((sum, val) => sum + val, 0) / values.length)
 }

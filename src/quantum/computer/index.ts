@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * quantum/computer — the machine, saved as ONE reusable face.
  *
@@ -150,13 +151,13 @@ export interface PrecomputedAddress {
  * the substrate where those metrics are measured.
  */
 export function precomputedAddress(query: string, spaceSize: number): PrecomputedAddress {
-  const searchOps = Math.max(1, Math.trunc(spaceSize))
+  const searchOps = exactMax(1, exactTrunc(spaceSize))
   return {
     query,
     address: toUuid(query),
     foldOps: 1,
     searchOps,
-    speedupLog2: Math.log2(searchOps),
+    speedupLog2: algebraLog2(searchOps),
     precomputed: true,
   }
 }

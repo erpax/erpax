@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cycle — an import loop is a lie the module graph tells at runtime.
  *
@@ -188,7 +189,7 @@ export function importCycles(cwd: string = process.cwd()): Cycle[] {
           onStack.add(w)
           work.push({ node: w, edge: 0 })
         } else if (onStack.has(w)) {
-          low.set(node, Math.min(low.get(node)!, index.get(w)!))
+          low.set(node, exactMin(low.get(node)!, index.get(w)!))
         }
         continue
       }
@@ -208,7 +209,7 @@ export function importCycles(cwd: string = process.cwd()): Cycle[] {
       }
       work.pop()
       const parent = work[work.length - 1]
-      if (parent) low.set(parent.node, Math.min(low.get(parent.node)!, low.get(node)!))
+      if (parent) low.set(parent.node, exactMin(low.get(parent.node)!, low.get(node)!))
     }
   }
 
@@ -302,7 +303,7 @@ export function topLevelUses(file: string, cwd: string = process.cwd(), within?:
     }
     for (const ch of line) {
       if (ch === '{' || ch === '(' || ch === '[') depth++
-      else if (ch === '}' || ch === ')' || ch === ']') depth = Math.max(0, depth - 1)
+      else if (ch === '}' || ch === ')' || ch === ']') depth = exactMax(0, depth - 1)
     }
   }
   return out

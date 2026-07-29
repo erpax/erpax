@@ -1,3 +1,4 @@
+import { algebraLog } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { richness, shannon, simpson, evenness } from '@/diversity'
 import { herfindahl } from '@/decentralization'
@@ -25,12 +26,12 @@ describe('diversity: Shannon / Simpson / Pielou over abundance distributions', (
   // 2. n equal classes: maximum diversity — shannon = ln(n), simpson = 1 − 1/n, evenness = 1.
   describe('n equal classes (maximum diversity)', () => {
     it('[1,1,1,1] n=4 — shannon ≈ ln(4), simpson ≈ 3/4, evenness ≈ 1', () => {
-      expect(shannon([1, 1, 1, 1])).toBeCloseTo(Math.log(4))
+      expect(shannon([1, 1, 1, 1])).toBeCloseTo(algebraLog(4))
       expect(simpson([1, 1, 1, 1])).toBeCloseTo(1 - 1 / 4)
       expect(evenness([1, 1, 1, 1])).toBeCloseTo(1)
     })
     it('[1,1,1] n=3 — shannon ≈ ln(3), simpson ≈ 2/3, evenness ≈ 1', () => {
-      expect(shannon([1, 1, 1])).toBeCloseTo(Math.log(3))
+      expect(shannon([1, 1, 1])).toBeCloseTo(algebraLog(3))
       expect(simpson([1, 1, 1])).toBeCloseTo(1 - 1 / 3)
       expect(evenness([1, 1, 1])).toBeCloseTo(1)
     })

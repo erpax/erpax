@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * catharsis — the biggest gap: an agent turns to local knowledge only AFTER a catharsis from unresolved work.
  *
@@ -70,7 +71,7 @@ export function catharsis(moves: readonly Move[]): CatharsisMeasure {
 
 /** The gap that front-loading would have closed: the re-derivations before the catharsis that were of the DERIVABLE. */
 export function frontLoadSaving(moves: readonly Move[], seed = 0): number {
-  return Math.max(0, catharsis(moves).unresolvedBefore - seed) // subtract the irreducible seed — that was never waste
+  return exactMax(0, catharsis(moves).unresolvedBefore - seed) // subtract the irreducible seed — that was never waste
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

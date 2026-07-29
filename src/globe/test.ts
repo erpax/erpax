@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { toGeodetic, atPole, greatCircleAngle, EQUATOR_LATITUDE } from './index'
 
@@ -29,10 +30,10 @@ describe('globe — the corpus is a sphere, the poles are the honest ÷0', () =>
   it('great-circle distances are real geodesy — pole→equator 90°, antipodes 180°, self 0°', () => {
     const heart = toGeodetic(5, 0.5)
     const north = toGeodetic(9, 1)
-    expect(Math.round(greatCircleAngle(north, heart))).toBe(90) // pole to equator
-    expect(Math.round(greatCircleAngle(heart, heart))).toBe(0) // same point
+    expect(exactRound(greatCircleAngle(north, heart))).toBe(90) // pole to equator
+    expect(exactRound(greatCircleAngle(heart, heart))).toBe(0) // same point
     const equatorHere = toGeodetic(1, 0.5)
     const equatorOpposite = toGeodetic(4, 0.5) // 180° of longitude away (1→4 = +180°)
-    expect(Math.round(greatCircleAngle(equatorHere, equatorOpposite))).toBe(180) // antipodal on the equator
+    expect(exactRound(greatCircleAngle(equatorHere, equatorOpposite))).toBe(180) // antipodal on the equator
   })
 })

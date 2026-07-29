@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * readme/entropy-unit — lawful physics bindings (no imports).
  *
@@ -11,4 +12,4 @@
 export const COMPARABLE_UNIT = 'eb' as const
 
 /** Landauer floor — one bit destroyed/ordered = 1 eb at unity horo scale. */
-export const LANDAUER_BIT = Math.log2(2)
+export const LANDAUER_BIT = algebraLog2(2)

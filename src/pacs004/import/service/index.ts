@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * pacs.004 Import Service — parses PaymentReturn XML into `Pacs004Return`.
  * Invert dual of pacs.004 types (and of outbound pain.001/pacs.008): returns
@@ -23,7 +24,7 @@ const parseReturnTx = (txXml: string): Pacs004ReturnTransaction => {
     extractIso20022Tag(extractIso20022Tag(txXml, 'OrgnlTxRef') ?? '', 'EndToEndId')
   const amtBlock = extractIso20022Tag(txXml, 'RtrdIntrBkSttlmAmt') ?? extractIso20022Tag(txXml, 'Amt')
   const amountRaw = amtBlock ? amtBlock.replace(/<[^>]+>/g, '').trim() : '0'
-  const amount = Math.round(parseFloat(amountRaw || '0') * 100)
+  const amount = exactRound(parseFloat(amountRaw || '0') * 100)
   const currency =
     extractIso20022Attr(txXml, 'RtrdIntrBkSttlmAmt', 'Ccy') ??
     extractIso20022Attr(txXml, 'Amt', 'Ccy') ??
@@ -65,7 +66,7 @@ export const parsePacs004 = (xml: string): Pacs004Return => {
     Number(extractIso20022Tag(hdr, 'NbOfTxs') ?? returns.length) || returns.length
   const controlSumRaw = extractIso20022Tag(hdr, 'CtrlSum')
   const controlSum = controlSumRaw
-    ? Math.round(parseFloat(controlSumRaw) * 100)
+    ? exactRound(parseFloat(controlSumRaw) * 100)
     : returns.reduce((s, r) => s + r.amount, 0)
   return {
     messageId,

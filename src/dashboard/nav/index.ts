@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * dashboard/nav — THE NAVIGATION: a 7×6 DOUBLE-TORUS over the corpus.
  *
@@ -199,7 +200,7 @@ export function navNext(cell: Pick<NavCell, 'row' | 'col'>): NavCell {
   const idx = walkIndexOf(cell.row, cell.col)
   const next = wrapIndex(idx + 1, NAV_ROWS * NAV_COLS)
   // Invert the serpentine index back to (row, col).
-  const row = Math.floor(next / NAV_COLS)
+  const row = exactFloor(next / NAV_COLS)
   const within = next % NAV_COLS
   const col = row % 2 === 0 ? within : NAV_COLS - 1 - within
   return navCell(row, col)

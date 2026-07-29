@@ -1,7 +1,8 @@
 /**
  * Test Seed Factory — three-level seeds with transaction isolation + cleanup.
  *
- * Level 1: unit-test seeds (<500ms, minimal deps).
+ * Level 1: unit-test seeimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+ds (<500ms, minimal deps).
  * Level 2: integration-test seeds (realistic business data, ~2-5s).
  * Level 3: e2e-test seeds (complete business cycles, ~5-15s).
  *
@@ -229,7 +230,7 @@ export const SEED_VALIDATION_REGISTRY: Readonly<Record<string, SeedValidationCon
       (data) => {
         const debit = typeof data.debitAmount === 'number' ? data.debitAmount : 0;
         const credit = typeof data.creditAmount === 'number' ? data.creditAmount : 0;
-        return Math.abs(debit - credit) > 0.01
+        return exactAbs(debit - credit) > 0.01
           ? 'Journal entry: debitAmount must equal creditAmount (balanced entry)'
           : null;
       },
@@ -406,7 +407,7 @@ export const SEED_VALIDATION_REGISTRY: Readonly<Record<string, SeedValidationCon
       (data) => {
         const d = typeof data.totalDebits === 'number' ? data.totalDebits : 0;
         const c = typeof data.totalCredits === 'number' ? data.totalCredits : 0;
-        return Math.abs(d - c) > 0.01
+        return exactAbs(d - c) > 0.01
           ? 'Trial balance: debits must equal credits'
           : null;
       },
@@ -643,7 +644,7 @@ export abstract class TestSeedFactory {
     return {
       payload: this.payload,
       seedLevel,
-      environmentId: `env-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      environmentId: `env-${Date.now()}-${Math.floor(Date.now() / 1000).toString(36).substr(2, 9)}`,
       createdIds: new Map(),
       startTime: Date.now(),
     };

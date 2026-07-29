@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect, afterEach } from 'vitest'
 import { performance } from 'node:perf_hooks'
 import { statSync } from 'node:fs'
@@ -144,7 +145,7 @@ describe('agent skill load — realiseSkillsForPath', () => {
     const FULL_INDEX_FLOOR = 76_756_764
     let indexBytes = FULL_INDEX_FLOOR
     try {
-      indexBytes = Math.max(statSync(SKILL_INDEX_PATH).size, FULL_INDEX_FLOOR)
+      indexBytes = exactMax(statSync(SKILL_INDEX_PATH).size, FULL_INDEX_FLOOR)
     } catch {
       // gitignored on fresh clone
     }

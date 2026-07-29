@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * navigation/distribute — nest vocabulary atoms under hub parents in horo waves.
  *
@@ -174,8 +175,8 @@ export function hubSealSnapshot(hub: string, cwd: string = process.cwd()): HubSe
     trinity,
     sealed,
     crossed,
-    pctSealed: total ? Math.round((sealed / total) * 1000) / 10 : 100,
-    pctCrossed: total ? Math.round((crossed / total) * 1000) / 10 : 100,
+    pctSealed: total ? exactRound((sealed / total) * 1000) / 10 : 100,
+    pctCrossed: total ? exactRound((crossed / total) * 1000) / 10 : 100,
     unsealed,
   }
 }

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { calculateAverage, calculateAverageRounded } from '@/average/calculator'
 
@@ -42,6 +43,6 @@ describe('average/calculator — calculateAverageRounded', () => {
 
   it('equals Math.round of the raw mean', () => {
     const xs = [1, 2, 2, 2]
-    expect(calculateAverageRounded(xs)).toBe(Math.round(calculateAverage(xs)))
+    expect(calculateAverageRounded(xs)).toBe(exactRound(calculateAverage(xs)))
   })
 })

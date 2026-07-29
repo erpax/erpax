@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * agent/intelligence — self-improving intelligence via measure · fold · seal · balance.
  *
@@ -161,7 +162,7 @@ export function rankGapsByEntanglement(
       if (sb < sa) return -1
       return a.path.localeCompare(b.path)
     })
-    .slice(0, Math.max(1, batch))
+    .slice(0, exactMax(1, batch))
 }
 
 export interface LeveragedNext {
@@ -263,7 +264,7 @@ export interface VerificationMove {
  * worth reliance × (1/cost). When that value beats the top fix, MEASURE THE PREMISE before building on it.
  */
 export function verificationValue(premise: string, reliance: number, checkCost: number): VerificationMove {
-  const cost = Math.max(1e-9, checkCost)
+  const cost = exactMax(1e-9, checkCost)
   return { premise, reliance, checkCost: cost, value: reliance / cost }
 }
 
@@ -320,7 +321,7 @@ const chainReceipt = (
 /** One coordinated self-improvement wave: payload gate → measure → rank → seal → measure → receipts. */
 export function selfImproveCycle(opts: SelfImproveCycleOpts = {}): SelfImproveCycleResult {
   const cwd = opts.cwd ?? process.cwd()
-  const batch = Math.max(1, Math.trunc(opts.batch ?? 10))
+  const batch = exactMax(1, exactTrunc(opts.batch ?? 10))
   const dryRun = opts.dryRun !== false
   const axes = opts.axes ?? WAVE_SEAL_AXES
   const receipts: Receipt[] = []
@@ -444,7 +445,7 @@ export function runIntelligenceCli(argv: string[] = process.argv.slice(2)): numb
   const batch = Number(argv.find((a) => a.startsWith('--batch='))?.slice(8) ?? 10)
   // --next: compute the highest-leverage move (the decision the agent makes instead of asking)
   if (argv.includes('--next')) {
-    const moves = nextMoveByLeverage(process.cwd(), Math.max(batch, 50))
+    const moves = nextMoveByLeverage(process.cwd(), exactMax(batch, 50))
     if (moves.length === 0) {
       console.log('intelligence next: no gaps — nothing to decide')
       return 0

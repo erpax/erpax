@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * computed — shadcn + Payload admin CSS variables derived from diamond state.
  *
@@ -93,7 +94,7 @@ function parseHex(hex: string): Rgb {
 }
 
 function toHex({ r, g, b }: Rgb): string {
-  const clamp = (v: number) => Math.max(0, Math.min(255, Math.round(v)))
+  const clamp = (v: number) => exactMax(0, exactMin(255, exactRound(v)))
   return (
     '#' +
     [clamp(r), clamp(g), clamp(b)]
@@ -106,7 +107,7 @@ function toHex({ r, g, b }: Rgb): string {
 export function mixHex(a: string, b: string, t: number): string {
   const A = parseHex(a)
   const B = parseHex(b)
-  const w = Math.max(0, Math.min(1, t))
+  const w = exactMax(0, exactMin(1, t))
   return toHex({
     r: A.r + (B.r - A.r) * w,
     g: A.g + (B.g - A.g) * w,
@@ -136,7 +137,7 @@ function pathUuid(path: string): string {
 function horoStepOf(n: number | undefined): HoroStep | undefined {
   if (n == null || !Number.isFinite(n)) return undefined
   if (isHoroStep(n)) return n
-  const root = ((Math.trunc(n) - 1) % 9) + 1
+  const root = ((exactTrunc(n) - 1) % 9) + 1
   return isHoroStep(root) ? root : 1
 }
 

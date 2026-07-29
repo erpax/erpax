@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * merge — the binary operation of the folded algebra, made real (was a `@generated` stub).
  *
@@ -217,7 +218,7 @@ export const sameObject = (a: ErpaxObject, b: ErpaxObject): boolean => objectAdd
 
 /** The recursion depth — a leaf is 0; a combination is 1 + its deepest part. */
 export function objectDepth(obj: ErpaxObject): number {
-  return obj.kind === 'leaf' ? 0 : 1 + obj.parts.reduce((max, p) => Math.max(max, objectDepth(p)), 0)
+  return obj.kind === 'leaf' ? 0 : 1 + obj.parts.reduce((max, p) => exactMax(max, objectDepth(p)), 0)
 }
 
 /** Every leaf content in composition order — the atomic matter the whole is built from. */
@@ -331,7 +332,7 @@ export function merkleProof(leaves: readonly string[], index: number): MerkleSte
         path.push(i === k ? { sibling: level[k + 1]!, right: true } : { sibling: level[k]!, right: false })
       }
     }
-    i = Math.floor(i / 2)
+    i = exactFloor(i / 2)
     level = next
   }
   return path

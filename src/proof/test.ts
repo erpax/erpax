@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * Public tamper-cost surfacing — the proof bundle self-describes its forge≫verify
  * asymmetry from its OWN invariant count, deepseek-amplified. Pure (no DB), so a
@@ -46,7 +47,7 @@ describe('dry-proof: empirical blockchain legs faced at /proof/ (verify, do not 
     const e = empiricalProofs()
     expect(e.bitcoinGenesis.blockHash).toBe('000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f')
     expect(e.bitcoinGenesis.powValid).toBe(true)
-    expect(e.bitcoinGenesis.forgeCostLog2).toBeGreaterThan(Math.log2(e.bitcoinGenesis.verifyHashes))
+    expect(e.bitcoinGenesis.forgeCostLog2).toBeGreaterThan(algebraLog2(e.bitcoinGenesis.verifyHashes))
     // No git facts ⇒ no merkle leg: buildDryProofBundle runs at the edge where git is absent.
     expect(e.merkleDag).toBeUndefined()
   })

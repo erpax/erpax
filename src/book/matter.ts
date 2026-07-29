@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * book/matter — spread + seal from folder models (readme import boundary).
  */
@@ -64,7 +65,7 @@ export function bookOf(hubPath: string, cwd: string = process.cwd()): BookOfResu
   const pages = pageEntriesOf(ordered, cwd)
   const sealedCount = pages.filter((p) => p.sealed).length
   const pageCount = pages.length
-  const sealedPercent = pageCount > 0 ? Math.round((sealedCount * 1000) / pageCount) / 10 : 0
+  const sealedPercent = pageCount > 0 ? exactRound((sealedCount * 1000) / pageCount) / 10 : 0
   return {
     book,
     pageCount,

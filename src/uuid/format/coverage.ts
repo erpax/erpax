@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Feature-coverage calculator — Conservation Law 62 made measurable.
  *
@@ -181,13 +182,13 @@ export function computeCoverage(args: {
   let capCount = 0
   for (const row of perCapability) {
     if (row.relevantTotal > 0) {
-      capHarmonic += 1 / Math.max(row.coverage, 1e-9)
+      capHarmonic += 1 / exactMax(row.coverage, 1e-9)
       capCount++
     }
   }
   const capCoverage = capCount === 0 ? 1 : capCount / capHarmonic
   const effective = overallStructuredCoverage * capCoverage
-  const tamperProbabilityEstimate = Math.pow(1 - effective, axesPerUuid)
+  const tamperProbabilityEstimate = algebraFloatPow(1 - effective, axesPerUuid)
 
   return {
     totalSamples,

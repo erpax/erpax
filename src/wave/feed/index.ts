@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * wave/feed — feed research/develop waves into themselves for endless R&D.
  *
@@ -75,7 +76,7 @@ export function asksFromWaveOutput(opts: {
     push(`verify and extend: ${f.question}`)
   }
   for (const fu of opts.followUps ?? []) push(fu)
-  return out.slice(0, Math.max(1, opts.limit ?? 12))
+  return out.slice(0, exactMax(1, opts.limit ?? 12))
 }
 
 /**
@@ -101,7 +102,7 @@ export async function feedWavesIntoThemselves<W>(opts: {
   readonly seedFraction?: number
   readonly askLimit?: number
 }): Promise<WaveFeedReport<W>> {
-  const maxG = Math.max(1, Math.trunc(opts.maxGenerations ?? 5))
+  const maxG = exactMax(1, exactTrunc(opts.maxGenerations ?? 5))
   const generations: WaveFeedGeneration<W>[] = []
   let asks: readonly string[] = [...opts.seedAsks]
   let sealGrown = 0

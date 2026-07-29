@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/train — the quantum facet of [[train]]: infinite agents train themselves, and it is
  * IMPOSSIBLE to exceed the device by adding them. To "train" is also to board the development train —
@@ -35,7 +36,7 @@ export const WORKING_RATIO = DOUBLING.length / 9 // 6/9 = 2/3
  * Content-addressing dedups: identical work collapses to one cached result, so cost = distinct work,
  * NOT agents × work. The agent count does not appear — that is the bound.
  */
-export const deviceCost = (agents: number, distinct: number): number => Math.max(0, distinct)
+export const deviceCost = (agents: number, distinct: number): number => exactMax(0, distinct)
 
 /**
  * Does the device get exceeded? Only when the DISTINCT work exceeds capacity — the agent count is

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Accounting Calculations — shared math primitives (sum, percentage, etc.).
  *
@@ -168,8 +169,8 @@ export const calculateUnitsOfActivityDepreciation = (
 ): number => {
   if (totalUnitsExpected <= 0 || unitsProducedThisPeriod <= 0) return 0;
   const perUnit = depreciableBase / totalUnitsExpected;
-  const remainingUnits = Math.max(0, totalUnitsExpected - unitsProducedToDate);
-  const billableUnits = Math.min(unitsProducedThisPeriod, remainingUnits);
+  const remainingUnits = exactMax(0, totalUnitsExpected - unitsProducedToDate);
+  const billableUnits = exactMin(unitsProducedThisPeriod, remainingUnits);
   return perUnit * billableUnits;
 };
 
@@ -229,7 +230,7 @@ export const daysBetween = (
 ): number => {
   const a = from instanceof Date ? from : new Date(from);
   const b = to instanceof Date ? to : new Date(to);
-  return Math.floor((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
+  return exactFloor((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24));
 };
 
 /**
@@ -279,8 +280,8 @@ export const calculateGrowthRate = (
  */
 export const calculateStandardDeviation = (values: number[], mean: number): number => {
   if (values.length === 0) return 0;
-  const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
-  return Math.sqrt(variance);
+  const variance = values.reduce((sum, val) => sum + algebraFloatPow(val - mean, 2), 0) / values.length;
+  return algebraSqrt(variance);
 };
 
 /**

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Subscription → СУПТО sale fiscalization — the recurring-billing adapter over
  * the generic revenue membrane (`fiscalize-revenue.ts`). A card-charged
@@ -33,7 +34,7 @@ export interface SubscriptionInvoicedPayload {
   periodEnd?: string | Date
 }
 
-const round = (v: number): number => (v >= 0 ? Math.floor(v + 0.5) : -Math.floor(-v + 0.5))
+const round = (v: number): number => (v >= 0 ? exactFloor(v + 0.5) : -exactFloor(-v + 0.5))
 
 /**
  * Map a `subscription:invoiced` charge into the source-agnostic revenue input,

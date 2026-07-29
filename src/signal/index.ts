@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * signal — the matter-twin of the `identity/signal` skill: a horo position
  * rendered as **color + sound** from the single A432 anchor.
@@ -24,7 +25,7 @@ import { HORO_DIGITS, type HoroStep } from '@/horo'
 /** The single anchor — Hz for sound, ms for the color-animation period. */
 export const A432 = 432
 
-const round2 = (n: number): number => Math.round(n * 100) / 100
+const round2 = (n: number): number => exactRound(n * 100) / 100
 
 /** One diatonic note pinned to a horo position (just-intonation over A432). */
 export interface NoteBand {
@@ -116,7 +117,7 @@ export function uuidSignal(uuid: string): UuidSignal {
   return {
     hue: at(0, 4) % 360,
     spinMs: 900 + (at(12, 4) % 9000),
-    frequency: Math.round(A432 * 2 ** (((at(16, 4) % 48) - 24) / 12) * 100) / 100,
+    frequency: exactRound(A432 * 2 ** (((at(16, 4) % 48) - 24) / 12) * 100) / 100,
   }
 }
 

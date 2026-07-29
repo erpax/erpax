@@ -1,8 +1,9 @@
+import { E } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { eBySeries, eByCompounding, selfDerivative } from './index'
 
 const abs0 = (x: number) => (x < 0 ? -x : x)
-/** Oracle = deep series — never host Math.E. */
+/** Oracle = deep series — never host E. */
 const E = eBySeries(24)
 
 describe('e — the number whose rate of change is itself (the dynamic self-address)', () => {

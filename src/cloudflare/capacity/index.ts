@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cloudflare/capacity — the production HARDWARE, computed. erpax runs on the Cloudflare edge (Workers ·
  * D1 · R2 · Durable Objects), and that hardware has hard ceilings. This models them at production scale
@@ -71,7 +72,7 @@ export function productionCapacity(cwd: string = process.cwd()): CapacityFinding
   const out: CapacityFinding[] = []
   const push = (resource: string, demand: number, note: string): void => {
     const l = CLOUDFLARE_LIMITS.find((x) => x.resource === resource)!
-    out.push({ resource, demand: Math.round(demand * 100) / 100, limit: l.limit, unit: l.unit, hard: l.hard, fits: demand <= l.limit, headroom: Math.round((l.limit - demand) * 100) / 100, note })
+    out.push({ resource, demand: exactRound(demand * 100) / 100, limit: l.limit, unit: l.unit, hard: l.hard, fits: demand <= l.limit, headroom: exactRound((l.limit - demand) * 100) / 100, note })
   }
 
   // Worker script: the shipped bundle must exclude the 80MB skill index (lazy-loaded). We report the

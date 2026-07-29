@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * navigation/github-browse — shard literary vocabulary under vocabulary/ for GitHub legibility.
  *
@@ -139,9 +140,9 @@ export function planVocabularyFold(
   const before = countSrcTopLevel(cwd)
   const targetBelow = opts.targetBelow ?? GITHUB_DIR_LIMIT
   const candidates = vocabularyFoldCandidates(cwd)
-  const need = Math.max(0, before.dirs - targetBelow + 1)
-  const cap = opts.limit ?? Math.max(need, 800)
-  const selected = candidates.slice(0, Math.min(cap, need > 0 ? need : cap))
+  const need = exactMax(0, before.dirs - targetBelow + 1)
+  const cap = opts.limit ?? exactMax(need, 800)
+  const selected = candidates.slice(0, exactMin(cap, need > 0 ? need : cap))
   return { before, candidates, selected, afterDirs: before.dirs - selected.length, targetBelow }
 }
 

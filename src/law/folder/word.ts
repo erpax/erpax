@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * law/folder/word — every referenced word is a folder with code.
  *
@@ -231,7 +232,7 @@ export function wordFolderViolations(cwd: string = process.cwd()): WordFolderAud
   return {
     totalWords,
     withCode,
-    withCodePct: totalWords ? Math.round((withCode / totalWords) * 1000) / 10 : 100,
+    withCodePct: totalWords ? exactRound((withCode / totalWords) * 1000) / 10 : 100,
     violations,
     violationCount: violations.length,
   }
@@ -428,7 +429,7 @@ export function wordDiamondViolations(cwd: string = process.cwd()): WordDiamondA
   return {
     totalWords,
     completeWords,
-    completePct: totalWords ? Math.round((completeWords / totalWords) * 1000) / 10 : 100,
+    completePct: totalWords ? exactRound((completeWords / totalWords) * 1000) / 10 : 100,
     uselessWords: violations.length,
     violations,
     top50: violations.slice(0, 50),

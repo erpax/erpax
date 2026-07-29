@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * IntercompanyReconciliation Service
  *
@@ -90,7 +91,7 @@ export class IntercompanyReconciliation {
     amountReceivable: number,
     tolerance: number = 0.01,
   ): IntercompanyBalance {
-    const difference = Math.abs(amountPayable - amountReceivable)
+    const difference = exactAbs(amountPayable - amountReceivable)
     const isReconciled = difference <= tolerance
 
     return {
@@ -262,7 +263,7 @@ export class IntercompanyReconciliation {
             payable.toEntity === receivable.toEntity) ||
           (payable.fromEntity === receivable.toEntity && payable.toEntity === receivable.fromEntity)
 
-        const amountMatch = Math.abs(payable.amount - receivable.amount) <= tolerance
+        const amountMatch = exactAbs(payable.amount - receivable.amount) <= tolerance
 
         if (pairMatch && amountMatch) {
           matchedPairs.push({ payable, receivable })

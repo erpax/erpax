@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/context — always-quantum default: superposition until seal, entangled collapse.
  *
@@ -87,7 +88,7 @@ export function quantumStatus(): QuantumStatusReport {
     entangledChannels: quantumEntangledChannelCount(),
     pendingPaths: [...pendingPaths].sort(),
     lastCollapse,
-    reciprocityPct: Math.round(ent.reciprocity * 1000) / 10,
+    reciprocityPct: exactRound(ent.reciprocity * 1000) / 10,
   }
 }
 

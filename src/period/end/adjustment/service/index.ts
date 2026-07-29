@@ -1,5 +1,6 @@
 /**
- * Period-End Adjustment Service — depreciation, accruals, deferrals, allocations.
+ * Period-End Adjustment Servicimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+e — depreciation, accruals, deferrals, allocations.
  *
  * **Status (post tech-debt sweep)**: the calculation methods on this
  * service (`generateDepreciation`, `generateInterestAccruals`,
@@ -302,7 +303,7 @@ class PeriodEndAdjustmentService {
     asOfDate: Date
   ): InterestAccrualCalculation {
     // Days since last accrual
-    const daysInPeriod = Math.floor(
+    const daysInPeriod = exactFloor(
       (asOfDate.getTime() - accrual.lastAccrualDate.getTime()) / (1000 * 60 * 60 * 24)
     ) || 1;
 
@@ -394,7 +395,7 @@ class PeriodEndAdjustmentService {
     asOfDate: Date
   ): SalaryAccrualCalculation {
     // Days since last accrual
-    const daysInPeriod = Math.floor(
+    const daysInPeriod = exactFloor(
       (asOfDate.getTime() - salary.lastAccrualDate.getTime()) / (1000 * 60 * 60 * 24)
     ) || 1;
 
@@ -516,7 +517,7 @@ class PeriodEndAdjustmentService {
             : undefined,
         credit:
           adjustment.adjustmentQuantity < 0
-            ? Math.abs(adjustment.adjustmentAmount)
+            ? exactAbs(adjustment.adjustmentAmount)
             : undefined,
         description: `Inventory adjustment - ${adjustment.itemName}`,
       },
@@ -524,7 +525,7 @@ class PeriodEndAdjustmentService {
         accountId: adjustment.inventoryAccountId,
         debit:
           adjustment.adjustmentQuantity < 0
-            ? Math.abs(adjustment.adjustmentAmount)
+            ? exactAbs(adjustment.adjustmentAmount)
             : undefined,
         credit:
           adjustment.adjustmentQuantity > 0

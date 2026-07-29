@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Pack Items — the pack line, evolved from 200,993 rows of the etrima `pack_items`
  * table. One line = the units of one produced variant (`lot_variant`) packed into one
@@ -42,7 +43,7 @@ import { referenceField, auditFields } from '@/fields'
 
 const toInt = (v: unknown): number => {
   const n = Number(v)
-  return Number.isFinite(n) ? Math.trunc(n) : 0
+  return Number.isFinite(n) ? exactTrunc(n) : 0
 }
 
 // ─── The option line (the collapse of the 48 fixed columns) ──────────
@@ -81,7 +82,7 @@ export const rollUpOptions: CollectionBeforeChangeHook = ({ data }) => {
     d.unitsOrdered = sumOptions(options, 'ordered')
     d.unitsPacked = sumOptions(options, 'packed')
   }
-  d.unitsBackordered = Math.max(0, toInt(d.unitsOrdered) - toInt(d.unitsPacked))
+  d.unitsBackordered = exactMax(0, toInt(d.unitsOrdered) - toInt(d.unitsPacked))
   return data
 }
 

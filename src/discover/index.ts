@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * discover — all exists at once and just needs to be discovered; development is discovery, not creation.
  *
@@ -72,7 +73,7 @@ export interface Discovery {
  * price of a new value. The address `preExisted` regardless — discovery is reading, not creation.
  */
 export function discover(content: string, seedFraction: number): Discovery {
-  const s = Math.min(1, Math.max(0, seedFraction))
+  const s = exactMin(1, exactMax(0, seedFraction))
   const c = ceiling(s) // 1/s
   return { address: addressOf(content), preExisted: true, cost: c === Infinity ? 0 : 1 / c } // 1/(1/s) = s
 }

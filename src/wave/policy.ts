@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * wave/policy — max work × max tampering cost (dual objective).
  *
@@ -50,7 +51,7 @@ export function literaryWordWavePriority(
 ): number {
   let score = isP0BlockingAtom(atomPath) ? 1000 : 0
   if (opts.literary) score += 200
-  if ((opts.importerCount ?? 0) > 0) score += Math.min(500, (opts.importerCount ?? 0) * 25)
+  if ((opts.importerCount ?? 0) > 0) score += exactMin(500, (opts.importerCount ?? 0) * 25)
   return score
 }
 
@@ -101,7 +102,7 @@ export function workSealedFromUnits(units: readonly WorkUnit[]): number {
     const eb = u.sealedEb ?? 0
     const pathWork = (u.paths ?? 0) * LANDAUER_BIT
     const fixWork = (u.fixes ?? 0) * LANDAUER_BIT
-    return Math.round((s + eb + pathWork + fixWork) * 1000) / 1000
+    return exactRound((s + eb + pathWork + fixWork) * 1000) / 1000
   }, 0)
 }
 
@@ -111,12 +112,12 @@ export function coverageFromWorkUnits(
   policy: MaxWorkTamperPolicy,
 ): number {
   if (units.length === 0 || policy.waveDepth <= 0) return 0
-  const maxWave = Math.max(0, ...units.map((u) => u.waveOrdinal ?? 0))
-  const maxSeq = Math.max(0, ...units.map((u) => u.receiptSeq ?? 0))
+  const maxWave = exactMax(0, ...units.map((u) => u.waveOrdinal ?? 0))
+  const maxSeq = exactMax(0, ...units.map((u) => u.receiptSeq ?? 0))
   const waveCoverage = maxWave / policy.waveDepth
   const receiptCoverage =
     policy.receiptChainDepth > 0 ? maxSeq / policy.receiptChainDepth : 0
-  return Math.min(1, Math.max(waveCoverage, receiptCoverage))
+  return exactMin(1, exactMax(waveCoverage, receiptCoverage))
 }
 
 /** Tamper cost (log₂) at coverage — double-torus gap + receipt-chain amplifier. */
@@ -124,7 +125,7 @@ export function tamperCostLog2ForCoverage(
   coverage: number,
   policy: MaxWorkTamperPolicy,
 ): number {
-  const c = Math.min(Math.max(coverage, 0), 1)
+  const c = exactMin(exactMax(coverage, 0), 1)
   const gap = 1 - c
   const torus = doubleTorusCostLog2(gap)
   const chain = coverageCostLog2(c, policy.receiptChainDepth)
@@ -145,7 +146,7 @@ export function workTamperProduct(
   const coverage = coverageFromWorkUnits(workUnits, policy)
   const tamperCostLog2 = tamperCostLog2ForCoverage(coverage, policy)
   const tamperFactor = Number.isFinite(tamperCostLog2) ? tamperCostLog2 : Number.MAX_VALUE
-  const product = Math.round(workSealed * tamperFactor * 1000) / 1000
+  const product = exactRound(workSealed * tamperFactor * 1000) / 1000
   return { workSealed, coverage, tamperCostLog2, product, policy }
 }
 
@@ -162,10 +163,10 @@ export interface ImproveReceiptTamperOpts {
  */
 export function tamperCostForImproveReceipt(opts: ImproveReceiptTamperOpts): number {
   const policy = opts.policy ?? maxWorkTamperPolicy()
-  const chainDepth = Math.max(0, opts.receiptSeq) + Math.max(0, opts.pathLedgerDepth)
-  const waveCoverage = (opts.completedWaves ?? 0) / Math.max(policy.waveDepth, 1)
-  const receiptCoverage = chainDepth / Math.max(policy.receiptChainDepth, 1)
-  const coverage = Math.min(1, Math.max(waveCoverage, receiptCoverage))
+  const chainDepth = exactMax(0, opts.receiptSeq) + exactMax(0, opts.pathLedgerDepth)
+  const waveCoverage = (opts.completedWaves ?? 0) / exactMax(policy.waveDepth, 1)
+  const receiptCoverage = chainDepth / exactMax(policy.receiptChainDepth, 1)
+  const coverage = exactMin(1, exactMax(waveCoverage, receiptCoverage))
   return tamperCostLog2ForCoverage(coverage, policy)
 }
 

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * law/folder/index-cross — index.ts is the cross; wire bidirectionally; linear folds into quantum whole.
  *
@@ -314,7 +315,7 @@ export function sealPathDoubleWire(cwd: string = process.cwd(), max = 30): SealP
     if (paths.length >= max) break
   }
   const after = pathDoubleWireViolations(cwd).filter((x) => x.kind === 'one-way-path').length
-  return { before, after, sealed: Math.max(0, before - after), paths }
+  return { before, after, sealed: exactMax(0, before - after), paths }
 }
 
 const auditFolder = (atomPath: string, cwd: string): IndexCrossViolation[] => {

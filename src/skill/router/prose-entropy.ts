@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * prose-entropy — measure how much of a skill is REFERENCES vs PLAIN TEXT.
  *
@@ -35,7 +36,7 @@ export function proseEntropy(body: string): ProseEntropy {
   const links = linkMatches.length
   const refChars = linkMatches.reduce((s, m) => s + m[0].length, 0)
   const chars = stripped.replace(/\s+/g, ' ').trim().length
-  const proseRatio = chars > 0 ? Math.max(0, chars - refChars) / chars : 0
+  const proseRatio = chars > 0 ? exactMax(0, chars - refChars) / chars : 0
   return { chars, links, refChars, proseRatio }
 }
 

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Law 15 — Cost accountability per chain step.
  * Slice ZZZZZ. Every chain step records its compute/storage/network cost.
@@ -28,7 +29,7 @@ export function estimateMicroUsd(c: CostMetric): number {
   const cpu = c.cpuMs * 0.02
   const egress = c.egressBytes / 1024 * 0.05
   const ai = ((c.aiTokensIn ?? 0) + (c.aiTokensOut ?? 0)) * 0.0001
-  return Math.round((cpu + egress + ai) * 100) / 100
+  return exactRound((cpu + egress + ai) * 100) / 100
 }
 
 export function getBudget(tenantId: string): { spentMicroUsd: number; capMicroUsd: number } | undefined {

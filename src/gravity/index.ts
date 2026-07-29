@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * gravity -- the FORCE of mass, COMPUTED on the live uuid-matrix.
  *
@@ -27,7 +28,7 @@ for (const e of E) inDegree[e.t] = (inDegree[e.t] ?? 0) + 1
 // `massDistribution` report as the maximum. A name→index map (last-wins) silently returned a lighter duplicate,
 // so `massOf(well().atom) !== well().mass` and the fall-flow fell to the wrong centre. Fold to the max by name.
 const massByAtom = new Map<string, number>()
-N.forEach((n, i) => massByAtom.set(n.atom, Math.max(massByAtom.get(n.atom) ?? 0, inDegree[i]!)))
+N.forEach((n, i) => massByAtom.set(n.atom, exactMax(massByAtom.get(n.atom) ?? 0, inDegree[i]!)))
 
 /** Gravitational mass = referential in-degree (# edges pointing at the atom) — the deepest node of a shared name. NOT schema.org kg. */
 export function massOf(atom: string): number {

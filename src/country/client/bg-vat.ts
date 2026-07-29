@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * BG VAT (ДДС) calculator + rate registry.
  *
@@ -108,5 +109,5 @@ export function summariseBgVat(lines: ReadonlyArray<BgVatLine>): ReadonlyArray<B
 }
 
 function roundHalfAwayFromZero(value: number): number {
-  return value >= 0 ? Math.floor(value + 0.5) : -Math.floor(-value + 0.5)
+  return value >= 0 ? exactFloor(value + 0.5) : -exactFloor(-value + 0.5)
 }

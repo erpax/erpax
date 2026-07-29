@@ -1,10 +1,11 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { bound, conjugate, allowed, linewidth, linewidthHz } from '@/uncertainty'
 import { HBAR, PLANCK_H } from '@/photon'
 
 // The Heisenberg floor computed from ħ. Tests assert the bound RELATIONS —
 // saturation, the inequality, monotonicity, and ΔE = hΔν — never a magic number.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 
 describe('uncertainty: the Heisenberg floor Δa·Δb ≥ ħ/2', () => {
   it('the bound is ħ/2 and is a hard positive floor (never zero)', () => {

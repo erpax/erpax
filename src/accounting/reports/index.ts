@@ -37,6 +37,7 @@ import type { Payload } from 'payload'
 import { computeAgingBuckets, type AgingBucket, type BucketDefinition } from '@/party'
 import { DebitCreditLogic } from '../debit'
 import { BALANCE_TOLERANCE } from '@/double/entry/validator'
+import { exactAbs } from '@/algebra'
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -255,7 +256,7 @@ export async function generateTrialBalance(
     // where one said balanced and the other did not. (That bound names a cent and does not mean one — it is
     // an absolute epsilon over floats, so the same 1-cent gap is refused at 100 and admitted at 50. See the
     // validator: the disease is money in floats, pinned there, not re-litigated here.)
-    isBalanced: Math.abs(totalDebits - totalCredits) <= BALANCE_TOLERANCE,
+    isBalanced: exactAbs(totalDebits - totalCredits) <= BALANCE_TOLERANCE,
     currency,
     generatedAt: new Date().toISOString(),
   }
@@ -287,7 +288,7 @@ export async function generateBalanceSheet(
     equity,
     totalAssets: assets.total,
     totalLiabilitiesAndEquity: liabilities.total + equity.total,
-    isBalanced: Math.abs(assets.total - (liabilities.total + equity.total)) < 0.01,
+    isBalanced: exactAbs(assets.total - (liabilities.total + equity.total)) < 0.01,
     currency,
     generatedAt: new Date().toISOString(),
   }

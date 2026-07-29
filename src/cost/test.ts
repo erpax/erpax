@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { totalOutput, efficiency, moreEfficient, wasteFraction, costEntry, type Ledger } from '@/cost'
 import {
@@ -108,7 +109,7 @@ describe('cost — manual development price (forge ≫ verify)', () => {
     const manual = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: true })
     // pin the SYMBOL, not the literal: the hardcoded `+ 8` was the stale mirror of a gate count
     // that was never 8 (the fixpoint commit corrected it to CONFIRM_GATE_CHECKS = 7)
-    expect(computed.verifyCost).toBeCloseTo((Math.log2(100) + CONFIRM_GATE_CHECKS) * RODIN_FLOW_RATIO, 10)
+    expect(computed.verifyCost).toBeCloseTo((algebraLog2(100) + CONFIRM_GATE_CHECKS) * RODIN_FLOW_RATIO, 10)
     expect(manual.forgeCost).toBeGreaterThan(secondPreimageLog2(ERPAX_DIGEST_BITS) / 3)
   })
 

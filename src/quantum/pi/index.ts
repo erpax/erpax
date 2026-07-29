@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/pi — infinite address space; offset cost ~ data length (information conserved).
  *
@@ -14,7 +15,7 @@ import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** Lower bound on offset digits to locate a string of N decimal digits in π — ~N. */
 export function piOffsetLowerBound(dataDigits: number): number {
-  return Math.max(0, dataDigits)
+  return exactMax(0, dataDigits)
 }
 
 /** Information conserved — offset scale tracks payload scale (not free compression). */

@@ -56,7 +56,7 @@ export async function createChainContext(
   payload: Payload,
   opts: ChainContextOptions = {},
 ): Promise<ChainContext> {
-  const slug = opts.tenantSlug ?? `chain-test-${Math.random().toString(36).slice(2, 10)}`
+  const slug = opts.tenantSlug ?? `chain-test-${Date.now().toString(36).slice(2, 10)}`
   const countryCode = opts.countryCode ?? 'BG'
   const currency = (opts.currency ?? 'EUR') as
     | 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX'

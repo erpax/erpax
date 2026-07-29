@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * agent/communication/realtime — unified push facade (direction bus · violation stream · sync).
  *
@@ -238,7 +239,7 @@ export function listActiveRealtimeChannels(): readonly RealtimeChannelRow[] {
       path,
       subscriberCount: ch.subscribers.size,
       lastEventAgeSec:
-        ch.lastEmittedAtMs === null ? null : Math.round((Date.now() - ch.lastEmittedAtMs) / 1000),
+        ch.lastEmittedAtMs === null ? null : exactRound((Date.now() - ch.lastEmittedAtMs) / 1000),
       generation: ch.generation,
     }))
     .sort((a, b) => a.path.localeCompare(b.path))
@@ -269,7 +270,7 @@ export function realtimeDoctorLine(): string {
   const ages = rows
     .map((r) => r.lastEventAgeSec)
     .filter((a): a is number => a !== null)
-  const minAge = ages.length ? Math.min(...ages) : null
+  const minAge = ages.length ? exactMin(...ages) : null
   const ageLabel = minAge === null ? '—' : minAge === 0 ? '0s' : `${minAge}s`
   return `realtime channels ${n} · last event ${ageLabel} ago`
 }

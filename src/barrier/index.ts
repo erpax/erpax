@@ -1,3 +1,4 @@
+import { algebraExp } from '@/algebra'
 /**
  * barrier -- QUANTUM TUNNELLING (the word `tunnel` is taken — it is agriculture's
  * season-extension structure; this is the physics). A particle of energy E meets a
@@ -24,20 +25,20 @@ import { HBAR } from '@/photon'
 /** The evanescent decay constant κ = √(2m(V0−E))/ħ (1/m) inside a barrier of height V0 > E. */
 export function decay(massKg: number, barrierHeightJ: number, energyJ: number): number {
   if (barrierHeightJ <= energyJ) throw new Error('barrier: not classically forbidden (V0 ≤ E) — there is no tunnelling regime')
-  return Math.sqrt(2 * massKg * (barrierHeightJ - energyJ)) / HBAR
+  return algebraSqrt(2 * massKg * (barrierHeightJ - energyJ)) / HBAR
 }
 
 /** WKB transmission through a thick/high barrier: T ≈ e^(−2κa). In (0,1] for κ,a ≥ 0. */
-export const transmissionWKB = (kappa: number, widthM: number): number => Math.exp(-2 * kappa * widthM)
+export const transmissionWKB = (kappa: number, widthM: number): number => algebraExp(-2 * kappa * widthM)
 
 /** Exact rectangular-barrier transmission: T = 1 / (1 + V0²·sinh²(κa) / (4·E·(V0−E))). */
 export function transmission(kappa: number, widthM: number, energyJ: number, barrierHeightJ: number): number {
-  const s = Math.sinh(kappa * widthM)
+  const s = algebraSinh(kappa * widthM)
   return 1 / (1 + (barrierHeightJ * barrierHeightJ * s * s) / (4 * energyJ * (barrierHeightJ - energyJ)))
 }
 
 /** The tamper-cost to tunnel through (forge): −log2(T_WKB) = 2κa/ln2 BITS — linear in width, so T is exponential. */
-export const tamperCostBits = (kappa: number, widthM: number): number => (2 * kappa * widthM) / Math.LN2
+export const tamperCostBits = (kappa: number, widthM: number): number => (2 * kappa * widthM) / LN2
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const m = 9.1093837015e-31 // electron mass (kg)

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Order → СУПТО sale fiscalization — the ecommerce *adapter* over the generic
  * revenue membrane (`fiscalize-revenue.ts`). On `order:activated` (payment
@@ -72,7 +73,7 @@ function lineToSaleItem(li: OrderLine): RevenueItem {
   const gross = Number(li.lineTotal ?? 0)
   const tax = Number(li.taxAmount ?? 0)
   const net = gross - tax
-  const vatRate = net > 0 && tax > 0 ? Math.round((tax / net) * 100) : 0
+  const vatRate = net > 0 && tax > 0 ? exactRound((tax / net) * 100) : 0
   return {
     description: li.sku ?? li.itemId ?? '',
     quantity: Number(li.quantity ?? 1),

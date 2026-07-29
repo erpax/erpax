@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * discovery — the society's CONTRIBUTION layer over the agent-sync bus.
  *
@@ -166,4 +167,4 @@ export function contributionsByAgent(ledger: ContributionLedger): ReadonlyMap<st
  * Drives to 0 like the tsc tail — by many hands.
  */
 export const collectiveGap = (initialGap: number, ledger: ContributionLedger): number =>
-  Math.max(0, initialGap - distinctContributions(ledger))
+  exactMax(0, initialGap - distinctContributions(ledger))

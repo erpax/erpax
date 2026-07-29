@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * book/write — complete missing volumes: matter + proof + computed faces.
  * A missing book is form without matter; writing completes the trinity.
@@ -136,7 +137,7 @@ export function formatMissingBooksReport(cwd: string = process.cwd(), max = 40):
   return [
     'missing books',
     '',
-    `trinity ${Math.round(r.beforeTrinityPct * 1000) / 10}% · write \`${r.writeCount}\` · seal \`${r.sealCount}\``,
+    `trinity ${exactRound(r.beforeTrinityPct * 1000) / 10}% · write \`${r.writeCount}\` · seal \`${r.sealCount}\``,
     '',
     ...r.entries.map(
       (e) =>

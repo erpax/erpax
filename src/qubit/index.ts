@@ -1,3 +1,4 @@
+import { PI } from '@/algebra'
 /**
  * qubit — vortex circuit ⇒ measure ⇒ bit. Algebra only — no host Math.*.
  *
@@ -20,7 +21,7 @@ export const isClassicalBit = (x: unknown): x is ClassicalBit => x === 0 || x ==
 
 /**
  * Element of ℚ(√3): value = (a + b√3) / den.
- * Sixth roots of unity live exactly here — no Math.PI / cos / sin.
+ * Sixth roots of unity live exactly here — no PI / cos / sin.
  */
 export interface Quad {
   readonly a: number

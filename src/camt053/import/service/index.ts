@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * camt.053 Import Service — parses an inbound ISO 20022 BankToCustomer
  * Statement XML into the canonical `Camt053Statement` shape.
@@ -198,7 +199,7 @@ const parseTransaction = (entryXml: string): Camt053Transaction | null => {
 
   const amtRaw = extract(entryXml, 'Amt')
   const amount = amtRaw
-    ? Math.round(parseFloat(amtRaw.replace(/<[^>]+>/g, '').trim()) * 100)
+    ? exactRound(parseFloat(amtRaw.replace(/<[^>]+>/g, '').trim()) * 100)
     : 0
   const currency = extractAttr(entryXml, 'Amt', 'Ccy') ?? 'EUR'
   const cdtDbtInd = extract(entryXml, 'CdtDbtInd') as CreditDebitIndicator | undefined
@@ -294,7 +295,7 @@ const parseStatement = (stmt: string): Camt053Statement => {
     const tpCd = extract(extract(extract(balXml, 'Tp') ?? '', 'CdOrPrtry') ?? '', 'Cd')
     const amt = extract(balXml, 'Amt')
     if (!amt) continue
-    const value = Math.round(
+    const value = exactRound(
       parseFloat(amt.replace(/<[^>]+>/g, '').trim()) * 100,
     )
     const ccy = extractAttr(balXml, 'Amt', 'Ccy') ?? currency

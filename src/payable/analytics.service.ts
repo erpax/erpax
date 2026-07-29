@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * A/P Analytics — vendor performance, DPO, spend analysis.
  *
@@ -27,13 +28,13 @@ export class APAnalytics {
     const avgBillAmount = calculateAverage(vendorBills.map((b) => b.totalAmount))
 
     const daysToReceive = vendorBills.map((b) => {
-      return Math.ceil((b.billDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
+      return exactCeil((b.billDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
     })
     const avgDaysToReceive = calculateAverage(daysToReceive)
 
     const paidBills = vendorBills.filter((b) => b.status === 'paid')
     const daysToPay = paidBills.map((b) => {
-      return Math.ceil((asOfDate.getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
+      return exactCeil((asOfDate.getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
     })
     const avgDaysToPay = calculateAverage(daysToPay)
 
@@ -41,7 +42,7 @@ export class APAnalytics {
     const discountRate = vendor.earlyPaymentDiscount || 0
 
     const onTimePayments = paidBills.filter((b) => {
-      const daysToDue = Math.ceil((b.dueDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
+      const daysToDue = exactCeil((b.dueDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
       return daysToDue <= (b.paymentTerms === 'custom' ? 45 : parseInt(b.paymentTerms))
     }).length
 
@@ -51,9 +52,9 @@ export class APAnalytics {
       vendorId: vendor.id,
       vendorName: vendor.name,
       totalBillsReceived: totalBills,
-      avgBillAmount: Math.round(avgBillAmount),
-      avgDaysToReceiveBill: Math.round(avgDaysToReceive),
-      avgDaysToPayBill: Math.round(avgDaysToPay),
+      avgBillAmount: exactRound(avgBillAmount),
+      avgDaysToReceiveBill: exactRound(avgDaysToReceive),
+      avgDaysToPayBill: exactRound(avgDaysToPay),
       discountsEarned,
       discountRate,
       onTimePaymentRate,
@@ -85,7 +86,7 @@ export class APAnalytics {
     return {
       earlyPaymentOpportunity,
       bulkingOpportunity,
-      paymentMethodSavings: Math.round(paymentMethodSavings),
+      paymentMethodSavings: exactRound(paymentMethodSavings),
     }
   }
 
@@ -113,7 +114,7 @@ export class APAnalytics {
       }
 
       byTerm[term].count++
-      byTerm[term].daysOutstanding.push(Math.ceil((new Date().getTime() - bill.dueDate.getTime()) / (1000 * 60 * 60 * 24)))
+      byTerm[term].daysOutstanding.push(exactCeil((new Date().getTime() - bill.dueDate.getTime()) / (1000 * 60 * 60 * 24)))
 
       if (bill.discountAvailable) {
         byTerm[term].discountCount++
@@ -200,12 +201,12 @@ export class APAnalytics {
     const totalAP = openBills.reduce((sum, b) => sum + b.balance, 0)
 
     const overdueBills = bills.filter((b) => {
-      const daysOverdue = Math.ceil((new Date().getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
+      const daysOverdue = exactCeil((new Date().getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
       return daysOverdue > 0 && b.balance > 0
     })
 
     const dueSoon = bills.filter((b) => {
-      const daysToDue = Math.ceil((b.dueDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
+      const daysToDue = exactCeil((b.dueDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
       return daysToDue >= 0 && daysToDue <= 7 && b.balance > 0
     })
 

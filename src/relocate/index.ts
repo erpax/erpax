@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * relocate — move logic to its gravity well. The GRAVITY law: mass (the links /
  * dependents an atom carries) IS gravity, and logic belongs at the atom its mass
@@ -54,7 +55,7 @@ export const pull = (atom: string, factor = 4): Pull => {
     mass,
     centerMass,
     ratio: mass > 0 ? centerMass / mass : Infinity,
-    relocate: center !== atom && centerMass >= Math.max(mass, 1) * factor,
+    relocate: center !== atom && centerMass >= exactMax(mass, 1) * factor,
   }
 }
 

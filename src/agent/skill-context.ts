@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * skill-context — realise all required skills for a touched path without skills.index.
  *
@@ -406,7 +407,7 @@ const contextBytesOf = (markdown: string, skills: readonly RealisedSkillEntry[])
       ebBalance: s.ebBalance,
     })),
   })
-  return Math.max(new TextEncoder().encode(markdown).length, new TextEncoder().encode(jsonHint).length)
+  return exactMax(new TextEncoder().encode(markdown).length, new TextEncoder().encode(jsonHint).length)
 }
 
 const trimToByteBudget = (
@@ -432,7 +433,7 @@ const trimToByteBudget = (
   if (contextBytesOf(md, current) > maxBytes && current.length > 0) {
     const last = current[current.length - 1]!
     if (last.skill) {
-      const shrunk = sealSkillExcerpt(last.atomPath, last.skill.excerpt, Math.floor(maxBytes / 4))
+      const shrunk = sealSkillExcerpt(last.atomPath, last.skill.excerpt, exactFloor(maxBytes / 4))
       current = [...current.slice(0, -1), { ...last, skill: shrunk }]
     }
   }

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * mesh — one quantum mesh over the whole ERP: atoms ⊕ imports ⊕ standards, wave-schedulable.
  *
@@ -235,7 +236,7 @@ export function meshWaves(mesh: Mesh): readonly (readonly string[])[] {
 /** Depth (longest chain) and parallelism (widest wave) of the whole corpus mesh. */
 export function meshShape(mesh: Mesh): { readonly depth: number; readonly parallelism: number } {
   const w = meshWaves(mesh)
-  return { depth: w.length, parallelism: Math.max(0, ...w.map((x) => x.length)) }
+  return { depth: w.length, parallelism: exactMax(0, ...w.map((x) => x.length)) }
 }
 
 /** Everything an atom depends on, transitively — the space its failure may be CAUSED from. */
@@ -354,7 +355,7 @@ export function costRoots(mesh: Mesh, costMs: ReadonlyMap<string, number>): Cost
     }
   }
   return [...acc.entries()]
-    .map(([root, a]) => ({ root, costMs: Math.round(a.cost), explains: [...a.atoms].sort() }))
+    .map(([root, a]) => ({ root, costMs: exactRound(a.cost), explains: [...a.atoms].sort() }))
     .sort((a, b) => b.costMs - a.costMs || a.root.localeCompare(b.root))
 }
 

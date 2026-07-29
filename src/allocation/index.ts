@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * allocation — the math of who gets what, for what.
  *
@@ -63,7 +64,7 @@ export interface Work {
 
 /** The verified societal time a contribution accounts for: own labour + confirmed leverage. Anchor-free. */
 function earnedTime(work: Work): number {
-  return Math.max(0, work.ownTime ?? 0) + clamp01(work.verified ?? 0) * Math.max(0, work.timeSavedForOthers ?? 0)
+  return exactMax(0, work.ownTime ?? 0) + clamp01(work.verified ?? 0) * exactMax(0, work.timeSavedForOthers ?? 0)
 }
 
 /**
@@ -73,7 +74,7 @@ function earnedTime(work: Work): number {
  * pure leverage with no own labour is `Infinity` (priced directly by {@link reward}).
  */
 export function harmonic(work: Work): number {
-  const own = Math.max(0, work.ownTime ?? 0)
+  const own = exactMax(0, work.ownTime ?? 0)
   if (own <= 0) return work.timeSavedForOthers ? Infinity : 1 // natural default for no labour
   return earnedTime(work) / own
 }
@@ -113,7 +114,7 @@ export function competencyWeight(level?: number): number {
 export function apportion(pot: number, weights: number[]): number[] {
   const n = weights.length
   if (n === 0) return []
-  const nonNeg = weights.map((w) => Math.max(0, w))
+  const nonNeg = weights.map((w) => exactMax(0, w))
   const total = nonNeg.reduce((s, w) => s + w, 0)
   // natural default: no earned contribution ⇒ symmetric equal split
   const effective = total > 0 ? nonNeg : nonNeg.map(() => 1)
@@ -123,7 +124,7 @@ export function apportion(pot: number, weights: number[]): number[] {
   const remainder = pot - shares.reduce((s, f) => s + f, 0)
   // hand the leftover integer units to the largest fractional parts (ties: lower index)
   const order = exact
-    .map((x, i) => ({ i, frac: x - Math.floor(x) }))
+    .map((x, i) => ({ i, frac: x - exactFloor(x) }))
     .sort((a, b) => b.frac - a.frac || a.i - b.i)
   for (let k = 0; k < remainder; k++) shares[order[k].i] += 1
   return shares

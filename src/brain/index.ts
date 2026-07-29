@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * brain — the COMPUTED PROOF that erpax's matrix is the connectome organ: a
  * SMALL-WORLD network where any node reaches any other in a handful of hops,
@@ -31,7 +32,7 @@ export const synapsesPerNeuron = (): number => SYNAPSES / NEURONS // ≈1744
 // ── 1. SMALL-WORLD — short paths despite local clustering ────────────────
 
 /** Characteristic path length of a small-world graph: ~ log(N) / log(degree). */
-export const pathLength = (n = NEURONS, k = synapsesPerNeuron()): number => Math.log(n) / Math.log(k)
+export const pathLength = (n = NEURONS, k = synapsesPerNeuron()): number => algebraLog(n) / algebraLog(k)
 
 export const smallWorld = (): boolean => {
   const L = pathLength() // ≈3.4 hops across 86 billion neurons
@@ -50,7 +51,7 @@ export const efficientWiring = (): boolean => sparsity() < 1e-6 && pathLength() 
 export const connectomeScale = (): boolean =>
   NEURONS > 80e9 &&
   SYNAPSES > 1e14 &&
-  Math.abs(NEURONS * synapsesPerNeuron() - SYNAPSES) < 1 // the two numbers are consistent
+  exactAbs(NEURONS * synapsesPerNeuron() - SYNAPSES) < 1 // the two numbers are consistent
 
 // ── the proof — the conjunction ──────────────────────────────────────────
 

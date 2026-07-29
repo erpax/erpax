@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * apply/clean — coordinated dry-clean cycle (scan → classify → apply → measure → ratchet → emit).
  *
@@ -242,7 +243,7 @@ export function scanCleanAxes(cwd: string = process.cwd()): CleanScanResult {
     'stray-ts': {
       count: stray.length,
       baseline: safeBaseline('stray-ts', cwd),
-      overBaseline: Math.max(0, stray.length - safeBaseline('stray-ts', cwd)),
+      overBaseline: exactMax(0, stray.length - safeBaseline('stray-ts', cwd)),
     },
     'not-allowed': {
       count: notAllowedCount,
@@ -257,12 +258,12 @@ export function scanCleanAxes(cwd: string = process.cwd()): CleanScanResult {
     'word-matter': {
       count: wordMatter.length,
       baseline: safeBaseline('word-matter', cwd),
-      overBaseline: Math.max(0, wordMatter.length - safeBaseline('word-matter', cwd)),
+      overBaseline: exactMax(0, wordMatter.length - safeBaseline('word-matter', cwd)),
     },
     'logic-concentration': {
       count: concentration.length,
       baseline: safeBaseline('logic-concentration', cwd),
-      overBaseline: Math.max(0, concentration.length - safeBaseline('logic-concentration', cwd)),
+      overBaseline: exactMax(0, concentration.length - safeBaseline('logic-concentration', cwd)),
     },
   }
 

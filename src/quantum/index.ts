@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum -- the quantum-physics laws COMPUTED on the live uuid-matrix.
  *
@@ -89,7 +90,7 @@ export const singleTorusFloorLog2 = (): number => bhtCollisionLog2(TORUS_BITS)
  * torus is forgeable without the other, simultaneously. A gap is the only forge path.
  */
 export const doubleTorusCostLog2 = (gap = 0): number =>
-  coverageCostLog2(1 - Math.max(0, Math.min(gap, 1)), 2)
+  coverageCostLog2(1 - exactMax(0, exactMin(gap, 1)), 2)
 
 export {
   interact64,

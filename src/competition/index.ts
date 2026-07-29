@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * competition — skills evolve by competing in commits. Many agents attempt the SAME
  * problem; the fastest CORRECT candidate wins the lead; losers re-approach to beat it,
@@ -87,5 +88,5 @@ export function openApproaches(allApproaches: readonly string[], tried: readonly
  * `services/integrity/resource-bound.energyLog10Joules` to price it in joules.
  */
 export function competitionTamperBits(correctCompetitors: number): number {
-  return correctCompetitors > 1 ? Math.log2(correctCompetitors) : 0
+  return correctCompetitors > 1 ? algebraLog2(correctCompetitors) : 0
 }

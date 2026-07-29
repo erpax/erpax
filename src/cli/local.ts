@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cli/local — the inner loop as a horo ring walk, self-timed and gravity-ratcheted.
  *
@@ -149,7 +150,7 @@ export function runTestWaves(args: readonly string[] = []): number {
     // unmeasured rung). Green batches record real samples and the bound tightens from evidence.
     const history = samplesMsOf(label)
     const bound = history.length
-      ? { ms: Math.max(timeoutOf(history).ms * 3, 900_000), minutes: Math.max(timeoutOf(history).minutes * 3, 15) }
+      ? { ms: exactMax(timeoutOf(history).ms * 3, 900_000), minutes: exactMax(timeoutOf(history).minutes * 3, 15) }
       : { ms: 900_000, minutes: 15 }
     const started = Date.now()
     const nodeOpts = [process.env.NODE_OPTIONS, '--import=./src/css/load-hook.mjs']

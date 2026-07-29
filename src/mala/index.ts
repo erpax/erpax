@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * mala — the 108-STEP ROUND, the next math. 108 is the round count, and it is not arbitrary:
  *   108 = 1¹·2²·3³ = 1·4·27   (the first three naturals each raised to themselves)
@@ -47,9 +48,9 @@ export function dualitiesOnRound(): { dualities: number; beads: number; fraction
   return {
     dualities,
     beads: BEADS,
-    fraction: Math.min(1, dualities / BEADS),
+    fraction: exactMin(1, dualities / BEADS),
     full: dualities >= BEADS,
-    remaining: Math.max(0, BEADS - dualities),
+    remaining: exactMax(0, BEADS - dualities),
   }
 }
 

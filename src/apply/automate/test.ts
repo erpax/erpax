@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * apply/automate — orchestration loop tests.
  */
@@ -52,7 +53,7 @@ const mockCorpus = (sealed: number, total: number, bond: number): CorpusAnalytic
     totalGapEb: total - sealed,
     totalSealEb: sealed * 2,
     netEntropyEb: total - sealed,
-    sealGapRatio: sealed / Math.max(total, 1),
+    sealGapRatio: sealed / exactMax(total, 1),
     sealedMass: sealed,
     unsealedMass: total - sealed,
     bySector: [],

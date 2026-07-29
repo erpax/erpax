@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * bank/chat — interbank BIC chat + hybrid classical⊕PQC envelopes.
  *
@@ -330,7 +331,7 @@ export async function developQuantumSecureBanking(
   const am = amortizeReuse(research.findings.length, 0)
   void computeFtl({
     query: 'bank:quantum-secure',
-    spaceSize: Math.max(1, QUANTUM_SECURE_BANKING_CORPUS.length),
+    spaceSize: exactMax(1, QUANTUM_SECURE_BANKING_CORPUS.length),
     answers: research.findings.length,
     tokens: 0,
     patterns: [],

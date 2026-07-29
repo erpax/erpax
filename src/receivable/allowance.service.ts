@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Allowance for Doubtful Accounts — aging-bucket-based ECL estimator.
  *
@@ -49,7 +50,7 @@ export class AllowanceCalculator {
         rate = rates['90+']
       }
 
-      const allowance = Math.round(bucket.totalAmount * rate)
+      const allowance = exactRound(bucket.totalAmount * rate)
 
       return {
         bucketName: bucket.name,
@@ -81,7 +82,7 @@ export class AllowanceCalculator {
    * @param percentage Allowance percentage (0.01 = 1%)
    */
   static allowanceByPercentageOfSales(totalSales: number, percentage: number = 0.02): number {
-    return Math.round(totalSales * percentage)
+    return exactRound(totalSales * percentage)
   }
 
   /**
@@ -97,7 +98,7 @@ export class AllowanceCalculator {
     const avgWriteOff = (writtenOffThisYear + previousYearWrittenOff + twoYearsAgoWrittenOff) / 3
     const lossRatio = totalAR > 0 ? avgWriteOff / totalAR : 0
 
-    const allowance = Math.round(totalAR * lossRatio)
+    const allowance = exactRound(totalAR * lossRatio)
 
     return {
       totalAR,
@@ -143,7 +144,7 @@ export class AllowanceCalculator {
     writeOffAmount: number
   ): number {
     // When account is written off, reduce allowance
-    return Math.max(0, currentAllowance - writeOffAmount)
+    return exactMax(0, currentAllowance - writeOffAmount)
   }
 
   /**
@@ -155,7 +156,7 @@ export class AllowanceCalculator {
   ): { adjustment: number; isIncrease: boolean } {
     const adjustment = requiredAllowance - currentAllowance
     return {
-      adjustment: Math.abs(adjustment),
+      adjustment: exactAbs(adjustment),
       isIncrease: adjustment > 0,
     }
   }

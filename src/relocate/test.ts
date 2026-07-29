@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * relocate — the gravity-placement law, asserted. The gravity centre is the
  * heaviest wired atom (or the atom itself if it IS the well); the pull never
@@ -13,7 +14,7 @@ describe('relocate — move logic to its gravity well', () => {
       const p = pull(a)
       expect(p.center).toBe(gravityCenter(a))
       expect(p.centerMass).toBeGreaterThanOrEqual(p.mass)
-      expect(p.ratio).toBeCloseTo(p.centerMass / Math.max(p.mass, 1), 6)
+      expect(p.ratio).toBeCloseTo(p.centerMass / exactMax(p.mass, 1), 6)
     }
   })
 

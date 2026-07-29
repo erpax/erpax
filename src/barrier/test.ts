@@ -1,10 +1,11 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { decay, transmission, transmissionWKB, tamperCostBits } from '@/barrier'
 
 // Quantum tunnelling computed from ħ. Tests assert the tunnelling RELATIONS —
 // exponential suppression, the −log2(T) tamper-cost, and the WKB prefactor limit —
 // never a magic number.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 const eV = 1.602176634e-19
 const m = 9.1093837015e-31 // electron mass
 

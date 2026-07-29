@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   normalizeShares,
@@ -25,8 +26,8 @@ describe('decentralization: concentration-distribution invariants', () => {
       expect(effectiveNodes(equal4)).toBeCloseTo(n)
     })
 
-    it('nakamoto === Math.floor(n/2)+1 (need majority of participants to control)', () => {
-      expect(nakamoto(equal4)).toBe(Math.floor(n / 2) + 1)
+    it('nakamoto === exactFloor(n/2)+1 (need majority of participants to control)', () => {
+      expect(nakamoto(equal4)).toBe(exactFloor(n / 2) + 1)
     })
 
     it('gini toBeCloseTo 0 (no inequality in a uniform distribution)', () => {

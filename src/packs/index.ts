@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Packs — the shipping carton, evolved from 118,716 rows of the etrima `packs`
  * table (the 20-year dispatch ledger). One pack = one packed unit of dispatch
@@ -119,7 +120,7 @@ export const balanceWeight: CollectionBeforeChangeHook = ({ data }) => {
   const d = data as PackShape
   const net = toNum(d.netWeight)
   const tare = toNum(d.tareWeight)
-  if (net > 0 && tare > 0) d.grossWeight = Math.round((net + tare) * 1000) / 1000
+  if (net > 0 && tare > 0) d.grossWeight = exactRound((net + tare) * 1000) / 1000
   return data
 }
 

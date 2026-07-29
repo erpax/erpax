@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cross — the versioning cross: every entity change mints ONE content-addressed
  * leaf, read THREE ways.
@@ -84,7 +85,7 @@ export interface VersionCrossInput<T extends Record<string, unknown>> {
  * rewrite to keep the chain consistent. This is precisely why "versioning IS
  * tamper-cost" — a deeper history is a more expensive forgery.
  */
-export const chainChecks = (seq: number): number => Math.max(1, Math.floor(seq))
+export const chainChecks = (seq: number): number => exactMax(1, exactFloor(seq))
 
 /**
  * Mint the version leaf for one entity change — the cross point that joins the

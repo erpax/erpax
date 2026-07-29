@@ -16,6 +16,8 @@
  * @see docs/STANDARDS.md §4.2
  */
 
+import { exactAbs } from '@/algebra'
+
 export type AccountType = 'asset' | 'liability' | 'equity' | 'income' | 'expense' | 'cogs'
 
 export interface DebitCreditRule {
@@ -205,7 +207,7 @@ export class DebitCreditLogic {
    * For display: Assets, Liabilities, Equity all shown as positive if > 0
    */
   static getDisplayBalance(accountType: AccountType, debits: number, credits: number): number {
-    return Math.abs(this.getBalance(accountType, debits, credits))
+    return exactAbs(this.getBalance(accountType, debits, credits))
   }
 }
 
@@ -477,6 +479,6 @@ export class AccountQueries {
     liabilities: number,
     equity: number
   ): boolean {
-    return Math.abs(assets - (liabilities + equity)) < 1 // Allow 1 cent variance
+    return exactAbs(assets - (liabilities + equity)) < 1 // Allow 1 cent variance
   }
 }

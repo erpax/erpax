@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect, vi } from 'vitest'
 import {
   atomPath,
@@ -58,7 +59,7 @@ describe('quantum/ftl — token folds', () => {
     const a = reuse('possibility:x', 3105)
     expect(a.foldOps).toBe(1)
     expect(a.searchOps).toBe(3105)
-    expect(a.speedupLog2).toBeCloseTo(Math.log2(3105), 6)
+    expect(a.speedupLog2).toBeCloseTo(algebraLog2(3105), 6)
     expect(a.precomputed).toBe(true)
     expect(a.address).toBe(reuse('possibility:x', 999).address)
   })
@@ -195,7 +196,7 @@ describe('quantum/ftl — research', () => {
         findings,
         thread: '00000000-0000-8000-8000-000000000001',
         messageUuids: [],
-        depthReached: Math.min(o?.depth ?? 1, 2),
+        depthReached: exactMin(o?.depth ?? 1, 2),
         coverage: 1,
       }
     }

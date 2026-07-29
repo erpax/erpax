@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * validateMultiCurrencyClosing Hook
  *
@@ -90,7 +91,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
     if (netAmount >= 0) {
       closingEntriesByCurrency[currency].totalRevenuesClosed += netAmount
     } else {
-      closingEntriesByCurrency[currency].totalExpensesClosed += Math.abs(netAmount)
+      closingEntriesByCurrency[currency].totalExpensesClosed += exactAbs(netAmount)
     }
   }
 

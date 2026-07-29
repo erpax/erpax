@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * IFRS 16 / ASC 842 — canonical lease accounting types tests.
  *
@@ -128,7 +129,7 @@ describe('IFRS 16 — Lease initial measurement', () => {
     //   payment 5,000 → principal = 5,000 − 635.79 = 4,364.21
     //   liability after = 169,543.24 − 4,364.21 = 165,179.03
     const monthlyRate = 4.5 / 12 / 100
-    const interest = Math.round(initialLiability * monthlyRate)
+    const interest = exactRound(initialLiability * monthlyRate)
     const principal = 5_000_00 - interest
     const liabilityAfter = initialLiability - principal
 
@@ -138,8 +139,8 @@ describe('IFRS 16 — Lease initial measurement', () => {
       interest,
       principal,
       liabilityAfter,
-      rouAmortisation: Math.round(166_543_24 / 36),
-      rouCarryingAfter: 166_543_24 - Math.round(166_543_24 / 36),
+      rouAmortisation: exactRound(166_543_24 / 36),
+      rouCarryingAfter: 166_543_24 - exactRound(166_543_24 / 36),
     }
     expect(payment.amount).toBe(payment.interest + payment.principal)
     expect(payment.liabilityAfter).toBeLessThan(initialLiability)

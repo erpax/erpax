@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * quantum/ftl — reuse · amortize · crack · boundary · seal · chat · research.
  * Each name-token is a fold (see ./map). Combinations compose tools, not prose.
@@ -48,13 +49,13 @@ export interface Reuse {
 
 /** reuse ≠ search: foldOps=1 · searchOps=n · speedupLog2=log₂(n). */
 export function reuse(query: string, spaceSize: number): Reuse {
-  const searchOps = Math.max(1, Math.trunc(spaceSize))
+  const searchOps = exactMax(1, exactTrunc(spaceSize))
   return {
     query,
     address: toUuid(query),
     foldOps: 1,
     searchOps,
-    speedupLog2: Math.log2(searchOps),
+    speedupLog2: algebraLog2(searchOps),
     precomputed: true,
   }
 }
@@ -73,10 +74,10 @@ export function amortize(
   tokens: number,
   opts: { readonly firstComputeCost?: number; readonly reuses?: number } = {},
 ): Amortize {
-  const a = Math.max(0, answers)
-  const t = Math.max(0, tokens)
-  const c0 = Math.max(0, opts.firstComputeCost ?? 1)
-  const m = Math.max(0, Math.trunc(opts.reuses ?? 0))
+  const a = exactMax(0, answers)
+  const t = exactMax(0, tokens)
+  const c0 = exactMax(0, opts.firstComputeCost ?? 1)
+  const m = exactMax(0, exactTrunc(opts.reuses ?? 0))
   const efficiency = t === 0 ? (a > 0 ? Infinity : 0) : a / t
   return {
     answers: a,
@@ -331,7 +332,7 @@ export function searchSealed(
     .map((s) => ({ ...s, score: sealScore(question, s) }))
     .filter((s) => s.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, Math.max(1, limit))
+    .slice(0, exactMax(1, limit))
 }
 
 export interface ResearchHit {

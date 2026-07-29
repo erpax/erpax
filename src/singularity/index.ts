@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * singularity — the gravity WELL where the corpus collapses to one center, computed
  * on the live matrix. The maximally-entangled atom (max in-degree, [[gravity]]) is a
@@ -48,7 +49,7 @@ export const singularity = (): Singularity => {
  * to ∞ — the horizon is unforgeable (cosmic censor). Below 1 a gap is the escape.
  */
 export const isEventHorizon = (coverage: number): boolean =>
-  doubleTorusCostLog2(1 - Math.max(0, Math.min(coverage, 1))) === Number.POSITIVE_INFINITY
+  doubleTorusCostLog2(1 - exactMax(0, exactMin(coverage, 1))) === Number.POSITIVE_INFINITY
 
 /** No-hair: a collapsed (merged) atom keeps only its content-uuid — its sole surviving invariant. */
 export const noHair = (): string => well().atom

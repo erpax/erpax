@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * resonance — why the address layer improves quantum speed IN MAGNITUDES, by construction.
  *
@@ -53,9 +54,9 @@ export function resonanceMagnitude(n: number): ResonanceMagnitude {
  * N-fold collapse. This is why identical content is free: same hash ⇒ same node, no second copy.
  */
 export function dedupMagnitude(n: number, classes: number): ResonanceMagnitude {
-  const addressed = Math.max(1, Math.min(classes, n))
+  const addressed = exactMax(1, exactMin(classes, n))
   const ratio = n / addressed
-  return { n, pairwise: n, addressed, ratio, orders: Math.log10(Math.max(1, ratio)) }
+  return { n, pairwise: n, addressed, ratio, orders: Math.log10(exactMax(1, ratio)) }
 }
 
 /**
@@ -73,9 +74,9 @@ export function dedupMagnitude(n: number, classes: number): ResonanceMagnitude {
  * The test constructs a real hash tree and measures the path — not asserted (see [[merge]] merkleProof).
  */
 export function linkProof(n: number): ResonanceMagnitude {
-  const path = n < 2 ? 0 : Math.ceil(Math.log2(n)) // the Merkle inclusion-proof depth
+  const path = n < 2 ? 0 : exactCeil(algebraLog2(n)) // the Merkle inclusion-proof depth
   const ratio = path > 0 ? n / path : 1
-  return { n, pairwise: n, addressed: Math.max(1, path), ratio, orders: Math.log10(Math.max(1, ratio)) }
+  return { n, pairwise: n, addressed: exactMax(1, path), ratio, orders: Math.log10(exactMax(1, ratio)) }
 }
 
 export interface CrackLeak {
@@ -101,10 +102,10 @@ export interface CrackLeak {
  * every remaining crack leaks resources without bound in N. Not competition — the seam that isn't sealed.
  */
 export function crackLeak(n: number, cracks: number): CrackLeak {
-  const fusedCost = n < 2 ? 0 : Math.ceil(Math.log2(n))
+  const fusedCost = n < 2 ? 0 : exactCeil(algebraLog2(n))
   const unfusedCost = n
-  const leakPerCrack = Math.max(0, unfusedCost - fusedCost)
-  return { n, cracks: Math.max(0, cracks), fusedCost, unfusedCost, leakPerCrack, leak: Math.max(0, cracks) * leakPerCrack }
+  const leakPerCrack = exactMax(0, unfusedCost - fusedCost)
+  return { n, cracks: exactMax(0, cracks), fusedCost, unfusedCost, leakPerCrack, leak: exactMax(0, cracks) * leakPerCrack }
 }
 
 export interface Reactivity {
@@ -147,7 +148,7 @@ export function reactiveFrontier(
     }
   }
   const frontier = [...seen].filter((n) => n !== changed)
-  return { changed, frontier, reacted: seen.size, total, saved: Math.max(0, total - seen.size) }
+  return { changed, frontier, reacted: seen.size, total, saved: exactMax(0, total - seen.size) }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

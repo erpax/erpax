@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   permits,
@@ -48,7 +49,7 @@ describe('skin — regenerates (continuous renewal from seed)', () => {
 
 describe('skin — homeostasis (negative feedback to the setpoint)', () => {
   it('one step moves toward the setpoint', () => {
-    expect(Math.abs(regulate(41) - SETPOINT_C)).toBeLessThan(Math.abs(41 - SETPOINT_C))
+    expect(exactAbs(regulate(41) - SETPOINT_C)).toBeLessThan(exactAbs(41 - SETPOINT_C))
   })
   it('thermoregulation converges to 37 °C, monotonically, from above and below', () => {
     expect(homeostasis(41)).toBe(true)

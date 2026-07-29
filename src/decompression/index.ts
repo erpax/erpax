@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * decompression — the matter-twin of the `decompression` skill: the TIME
  * dynamics of pay. [[allocation]] prices a contribution the instant the
@@ -67,7 +68,7 @@ export interface GradientFactors {
  * half-times (n=0 ⇒ 0, base only; n=6 ⇒ 0.984375; n→∞ ⇒ 1, the M-value).
  */
 export function saturate(halfTimes: number): number {
-  const n = Math.max(0, halfTimes)
+  const n = exactMax(0, halfTimes)
   return 1 - 2 ** -n
 }
 
@@ -82,7 +83,7 @@ const CLEARED_FRACTION = 1 - 2 ** -SATURATION_HALFTIMES // 0.984375
  * span the whole ring. Out-of-range clamps into the band.
  */
 export function levelCeiling(level: number): HoroStep {
-  const i = level < 1 ? 0 : level > 7 ? 6 : Math.round(level) - 1
+  const i = level < 1 ? 0 : level > 7 ? 6 : exactRound(level) - 1
   return HORO_DIGITS[i]
 }
 
@@ -108,7 +109,7 @@ export function verifiedFraction(halfTimes: number, gf: GradientFactors = {}): n
  * actor's efficiency (the competency match-score). M is never exceeded (the bends bound).
  */
 export function harmonicAtFraction(mValue: number, fraction: number): number {
-  const m = Math.max(1, mValue)
+  const m = exactMax(1, mValue)
   return 1 + clamp01(fraction) * (m - 1)
 }
 
@@ -147,7 +148,7 @@ export function decompressionDebt(
   anchor: number = ANCHOR,
   gf: GradientFactors = {},
 ): number {
-  const m = Math.max(1, mValue)
+  const m = exactMax(1, mValue)
   return anchor * (m - dynamicHarmonic(m, halfTimes, gf))
 }
 
@@ -168,7 +169,7 @@ export function isCleared(halfTimes: number, gf: GradientFactors = {}): boolean 
  * is the member count (≥ 1).
  */
 export function teamRedundancy(size: number): number {
-  return basicTeams(size).length === 0 ? 1 : Math.max(1, Math.floor(size))
+  return basicTeams(size).length === 0 ? 1 : exactMax(1, exactFloor(size))
 }
 
 /** The decompression debt borne by EACH member after the team shares it — `totalDebt / teamRedundancy(size)`. */

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * cache/fingerprint — REUSE the whole-corpus scan, never re-derive it. The fold behind the AI-bill lever.
  *
@@ -45,7 +46,7 @@ export function corpusFingerprint(cwd: string = process.cwd()): string {
     }
   }
   walk(join(cwd, 'src'))
-  return `${count}:${Math.round(newest)}`
+  return `${count}:${exactRound(newest)}`
 }
 
 const memos = new Map<string, { fp: string; value: unknown }>()

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * gate/rosetta — the INCREMENTAL fold-first gate. The old `pnpm check` ran 11 LINEAR O(n) lanes, each
  * re-scanning the whole corpus every push; that cost is why the team resorted to `git push --no-verify`
@@ -114,7 +115,7 @@ function changeReach(nodes: readonly { readonly horo: number }[]): number {
   const points = nodes.map((n) => toGeodetic(n.horo, (((n.horo % 9) + 9) % 9) / 9))
   let max = 0
   for (let i = 0; i < points.length; i++)
-    for (let j = i + 1; j < points.length; j++) max = Math.max(max, greatCircleAngle(points[i]!, points[j]!))
+    for (let j = i + 1; j < points.length; j++) max = exactMax(max, greatCircleAngle(points[i]!, points[j]!))
   return max
 }
 

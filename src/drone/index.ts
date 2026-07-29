@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * drone — a scout that flies the content-uuid matrix in coordinated self-learning
  * to support the agents. Warfare tactics for peace ([[war]] · [[peace]]):
@@ -47,7 +48,7 @@ export function flyMatrix(start: string, maxHops = 2): string[] {
  * the matrix in parallel. `n < 1` ⇒ a single sector (one drone, the whole).
  */
 export function squadron(n: number): string[][] {
-  const count = Math.max(1, Math.floor(n))
+  const count = exactMax(1, exactFloor(n))
   const sectors: string[][] = Array.from({ length: count }, () => [])
   // The drone flies ATOMS (flyMatrix/neighborsOf are atom-keyed), and 366 atoms carry
   // multiple matrix nodes (method/dimension sub-nodes). A clean partition — "every atom

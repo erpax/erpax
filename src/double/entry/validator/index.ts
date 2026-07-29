@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * DoubleEntryValidator — the law an ERP exists to guarantee.
  *
@@ -144,7 +145,7 @@ export class DoubleEntryValidator {
       totalCredits += credit
     }
 
-    const difference = Math.abs(totalDebits - totalCredits)
+    const difference = exactAbs(totalDebits - totalCredits)
     if (difference > BALANCE_TOLERANCE) {
       errors.push(
         `Debits ($${totalDebits.toFixed(2)}) do not equal credits ($${totalCredits.toFixed(2)}). Difference: $${difference.toFixed(2)}`
@@ -206,7 +207,7 @@ export class DoubleEntryValidator {
       totalCredits += posting.creditAmount || 0
     }
 
-    return Math.abs(totalDebits - totalCredits) <= BALANCE_TOLERANCE
+    return exactAbs(totalDebits - totalCredits) <= BALANCE_TOLERANCE
   }
 }
 

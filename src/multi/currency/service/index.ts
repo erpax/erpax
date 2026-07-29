@@ -1,5 +1,6 @@
 /**
- * Multi-Currency GL Service — FX translation, gain/loss, revaluation.
+ * Multi-Currency GL Service — FX translation, gain/loss, rimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+evaluation.
  *
  * Per-tenant defaults derive from the tenant's country via
  * {@link getTenantDefaults} in `@/config/regional/defaults`. When no
@@ -274,7 +275,7 @@ class MultiCurrencyService {
       0
     );
     const totalLoss = adjustments.reduce(
-      (sum, adj) => sum + (adj.gainOrLoss < 0 ? Math.abs(adj.gainOrLoss) : 0),
+      (sum, adj) => sum + (adj.gainOrLoss < 0 ? exactAbs(adj.gainOrLoss) : 0),
       0
     );
 
@@ -332,7 +333,7 @@ class MultiCurrencyService {
         lines.push({
           accountId: 'currency_revaluation',
           description: 'Currency Revaluation',
-          debit: totalAdjustment > 0 ? 0 : Math.abs(totalAdjustment),
+          debit: totalAdjustment > 0 ? 0 : exactAbs(totalAdjustment),
           credit: totalAdjustment > 0 ? totalAdjustment : 0,
         });
       }
@@ -423,8 +424,8 @@ class MultiCurrencyService {
       totalCreditsOriginal,
       totalDebitsBase,
       totalCreditsBase,
-      balancedInOriginal: Math.abs(totalDebitsOriginal - totalCreditsOriginal) < 0.01,
-      balancedInBase: Math.abs(totalDebitsBase - totalCreditsBase) < 0.01,
+      balancedInOriginal: exactAbs(totalDebitsOriginal - totalCreditsOriginal) < 0.01,
+      balancedInBase: exactAbs(totalDebitsBase - totalCreditsBase) < 0.01,
     };
   }
 
@@ -457,8 +458,8 @@ class MultiCurrencyService {
 
     const avgRate = calculateAverage(rates.map((r) => r.rate));
     const rateValues = rates.map((r) => r.rate);
-    const highRate = rateValues.length > 0 ? Math.max(...rateValues) : 0;
-    const lowRate = rateValues.length > 0 ? Math.min(...rateValues) : 0;
+    const highRate = rateValues.length > 0 ? exactMax(...rateValues) : 0;
+    const lowRate = rateValues.length > 0 ? exactMin(...rateValues) : 0;
 
     return {
       currencyPair: { from: fromCurrency, to: toCurrency },

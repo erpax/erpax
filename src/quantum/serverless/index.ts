@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/serverless — the COMPUTED PROOF that serverless IS the quantum host
  * and erpax IS the existence proof.
@@ -152,9 +153,9 @@ export function workerHosted(cwd = process.cwd()): boolean {
 /** Born rule: superposed amplitudes balance at unity (1D horo + 2D partition×horo). */
 export const superpositionHolds = (): boolean => {
   const u = uniform()
-  if (Math.abs(total(u) - 1) > 1e-9) return false
+  if (exactAbs(total(u) - 1) > 1e-9) return false
   const biased = superpose({ 1: 2, 2: 1, 4: 3 })
-  return Math.abs(total(biased) - 1) < 1e-9 && quantum2dHolds()
+  return exactAbs(total(biased) - 1) < 1e-9 && quantum2dHolds()
 }
 
 /** Matrix collapse + superposition measurement to one eigenstate. */

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * SAF-T Export Service — projects Payload collections onto the canonical
  * `SafTAuditFile` shape from `@/standards/saf-t`.
@@ -795,7 +796,7 @@ export const buildMovementOfGoods = async (
   return {
     numberOfMovementLines: movements.reduce((s, m) => s + m.lines.length, 0),
     totalQuantityIssued: movements.reduce(
-      (s, m) => s + m.lines.reduce((ls, l) => ls + Math.abs(l.quantity), 0),
+      (s, m) => s + m.lines.reduce((ls, l) => ls + exactAbs(l.quantity), 0),
       0,
     ),
     movements,

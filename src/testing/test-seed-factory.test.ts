@@ -1,5 +1,6 @@
 /**
  * TestSeedFactory tests — isolation, cleanup, transactional seeding.
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
  *
  * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
  * @standard ISO/IEC/IEEE-29119-4:2021 test-techniques
@@ -25,7 +26,7 @@ class MockPayload {
     if (!this.documents.has(collection as string)) {
       this.documents.set(collection as string, new Map());
     }
-    const id = Math.random().toString(36).substr(2, 9);
+    const id = Date.now().toString(36).substr(2, 9);
     const doc = { ...(data as Record<string, unknown>), id };
     this.documents.get(collection as string)!.set(id, doc);
     return doc;
@@ -345,7 +346,7 @@ describe('TestSeedFactory - Core Functionality', () => {
       const elapsed = Date.now() - start;
 
       // Result time should be close to actual elapsed time
-      expect(Math.abs(result.totalTime - elapsed)).toBeLessThan(100);
+      expect(exactAbs(result.totalTime - elapsed)).toBeLessThan(100);
     });
   });
 });

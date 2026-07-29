@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * strength — the DRY math: a DRY corpus has infinite strength. Strength (the schema.org sense — a
  * magnitude, a potency) is here the corpus's tamper-strength, and it is its [[dry]]-ness amplified by
@@ -27,7 +28,7 @@ export const strength = (dryness: number, slices: number = SLICES.length): numbe
 export function corpusStrength(): { atoms: number; residue: number; dryness: number; slices: number; strength: number } {
   const atoms = UUID_MATRIX_NODES.length
   const dup = residue().length
-  const dryness = atoms === 0 ? 0 : Math.max(0, 1 - dup / atoms)
+  const dryness = atoms === 0 ? 0 : exactMax(0, 1 - dup / atoms)
   return { atoms, residue: dup, dryness, slices: SLICES.length, strength: strength(dryness, SLICES.length) }
 }
 

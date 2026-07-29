@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * quantum/number — the dot collapses iff rational; irrationals stream forever.
  *
@@ -15,7 +16,7 @@ import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 /** True iff the reduced denominator has only factors 2 and 5 — decimal terminates. */
 export function decimalTerminates(num: number, den: number): boolean {
   if (den === 0) return false
-  let d = Math.abs(den)
+  let d = exactAbs(den)
   while (d % 2 === 0) d /= 2
   while (d % 5 === 0) d /= 5
   return d === 1

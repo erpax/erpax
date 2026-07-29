@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * DRY-clean strategy ladder + drift-distribution tests.
  *
@@ -142,7 +143,7 @@ describe('dryCleanScan — drift distribution + cycle uuid', () => {
       MAX_DESCRIPTION_OVERLAP - DRIFT_THRESHOLD_EPSILON,
     )
     const delta = r.driftDistribution.realDriftFloor - r.driftDistribution.stableDriftCeiling
-    expect(Math.abs(delta - DRIFT_THRESHOLD_EPSILON)).toBeLessThan(1e-3)
+    expect(exactAbs(delta - DRIFT_THRESHOLD_EPSILON)).toBeLessThan(1e-3)
   })
 
   it('exposes the next-disambiguation target as the highest-overlap pair', () => {

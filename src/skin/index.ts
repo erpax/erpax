@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * skin — the COMPUTED PROOF that erpax's boundary is the integument organ: the
  * largest organ, a selectively-permeable BARRIER between inside and outside that
@@ -74,15 +75,15 @@ export const regulate = (tempC: number, gain = 0.5): number => tempC + gain * (S
 /** From any starting temperature, thermoregulation converges to the setpoint. */
 export const homeostasis = (start = 41, steps = 40): boolean => {
   let t = start
-  let prev = Math.abs(start - SETPOINT_C)
+  let prev = exactAbs(start - SETPOINT_C)
   let monotone = true
   for (let i = 0; i < steps; i++) {
     t = regulate(t)
-    const err = Math.abs(t - SETPOINT_C)
+    const err = exactAbs(t - SETPOINT_C)
     if (err > prev) monotone = false // each step must move toward the setpoint
     prev = err
   }
-  return monotone && Math.abs(t - SETPOINT_C) < 1e-6
+  return monotone && exactAbs(t - SETPOINT_C) < 1e-6
 }
 
 // ── the proof — the conjunction ──────────────────────────────────────────

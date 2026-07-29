@@ -1,9 +1,10 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { BOLTZMANN_K, entropy, microstates, gibbs } from '@/boltzmann'
 
 // Entropy as microstate-counting. Tests assert the RELATIONS — zero at W=1,
 // extensivity (ln turns product into sum), the uniform max — never a magic number.
-const rel = (a: number, b: number): number => Math.abs(a - b) / Math.abs(b)
+const rel = (a: number, b: number): number => exactAbs(a - b) / exactAbs(b)
 
 describe('boltzmann: S = k·ln W', () => {
   it('one microstate has zero entropy; fewer-than-one is not a macrostate', () => {

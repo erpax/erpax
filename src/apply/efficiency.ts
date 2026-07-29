@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * apply/efficiency — pass efficiency snapshots + ratchet (coordinate a18ebd36).
  *
@@ -137,7 +138,7 @@ export function measureRulesOfMs(cwd: string = process.cwd()): number {
   clearRulesCache()
   const t0 = performance.now()
   rulesOf(cwd, { force: true })
-  return Math.round((performance.now() - t0) * 10) / 10
+  return exactRound((performance.now() - t0) * 10) / 10
 }
 
 /** Measure agent skill-context bytes for canonical probe path. */
@@ -158,7 +159,7 @@ export function measureViolationCount(cwd: string = process.cwd()): number {
 /** Top hub concentration score — deployment-axis pressure. */
 export function measureConcentrationTopScore(cwd: string = process.cwd()): number {
   const top = topConcentrations(cwd, 1)[0]
-  return top ? Math.round(top.metrics.concentrationScore * 1000) / 1000 : 0
+  return top ? exactRound(top.metrics.concentrationScore * 1000) / 1000 : 0
 }
 
 /** Surviving ALCAP baseline const exports — seal-debt count. */
@@ -283,7 +284,7 @@ export function efficiencyRatchet(
       metric: key,
       prev: p,
       next: n,
-      delta: Math.round((n - p) * 1000) / 1000,
+      delta: exactRound((n - p) * 1000) / 1000,
       direction: lowerBetter ? 'lower' : 'higher',
     }
     if (improved) improvements.push(row)
@@ -407,7 +408,7 @@ export function renderEfficiencyDelta(
   const rows = metricKeys().map((key) => {
     const p = prev[key]
     const n = next[key]
-    const delta = Math.round((n - p) * 1000) / 1000
+    const delta = exactRound((n - p) * 1000) / 1000
     const arrow = LOWER_IS_BETTER.has(key) ? (delta < 0 ? '↓' : delta > 0 ? '↑' : '·') : delta > 0 ? '↑' : delta < 0 ? '↓' : '·'
     return `| ${key} | ${p} | ${n} | ${arrow} ${delta} |`
   })

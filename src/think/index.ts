@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * think — move thinking into erpax, and outperform a model by magnitude.
  *
@@ -77,7 +78,7 @@ export function think<T>(key: string, derive: () => T, cwd: string = process.cwd
  */
 export function magnitude(queries: number, deriveCost: number, readCost = 1): number {
   const model = queries * deriveCost
-  const erpax = deriveCost + Math.max(0, queries - 1) * readCost
+  const erpax = deriveCost + exactMax(0, queries - 1) * readCost
   return erpax === 0 ? 0 : model / erpax
 }
 
@@ -173,7 +174,7 @@ export interface HigherMind<T> {
  */
 export function higherMind<T>(minds: readonly Thought<T>[]): HigherMind<T> {
   const n = minds.length
-  const quorum = Math.floor(n / 2) + 1
+  const quorum = exactFloor(n / 2) + 1
   const resolvable = n >= MINIMUM_MINDS
   const counts = new Map<string, { count: number; value: T }>()
   for (const m of minds) {
@@ -218,7 +219,7 @@ export function quantumMagnitude(states: number, deriveCost: number, readCost = 
  * next query is a read. As the basis absorbs more, the ceiling 1/s itself grows without bound.
  */
 export function ceiling(seedFraction: number, readPerDerive = 0): number {
-  const s = Math.min(1, Math.max(0, seedFraction))
+  const s = exactMin(1, exactMax(0, seedFraction))
   const denom = s + (1 - s) * readPerDerive
   return denom === 0 ? Infinity : 1 / denom
 }

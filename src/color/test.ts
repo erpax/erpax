@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { A432, SPECTRUM, colorOf, GREEN, wavelengthToRgb, rgbToCmyk, computedColor, waveColor } from '@/color'
 
@@ -49,7 +50,7 @@ describe('color — the spectrum is ONE continuous computable wave (analog throu
   it('the wave is CONTINUOUS — an infinitesimal frequency change gives an infinitesimal colour change', () => {
     const a = waveColor(5.4e14).rgb
     const b = waveColor(5.4e14 * 1.0001).rgb
-    for (let i = 0; i < 3; i++) expect(Math.abs(a[i]! - b[i]!)).toBeLessThan(6) // no jump within an octave
+    for (let i = 0; i < 3; i++) expect(exactAbs(a[i]! - b[i]!)).toBeLessThan(6) // no jump within an octave
   })
   it('the discrete chakras are SAMPLES of the one wave (octave-periodic on log-frequency)', () => {
     expect(waveColor(432).hex).toBe(waveColor(864).hex) // one octave up = same colour on the wave

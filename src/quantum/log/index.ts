@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * quantum/log — append-only agent trail; chain length IS forging difficulty.
  *
@@ -10,7 +11,7 @@
  */
 import { verifyReceiptChain, type Receipt, type Decision } from '@/receipt'
 
-const LOG10_2 = Math.log2(10)
+const LOG10_2 = algebraLog2(10)
 
 /** Forging difficulty grows ~one decimal order per append-only link after genesis. */
 export function forgingDifficultyLog2(chainLength: number): number {

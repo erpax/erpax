@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Lease Service — canonical IFRS 16 / ASC 842 PV + amortisation arithmetic.
  *
@@ -85,9 +86,9 @@ export const totalPeriods = (
   const end = endDate instanceof Date ? endDate : new Date(endDate)
   const MS_PER_DAY = 86_400_000
   const AVG_DAYS_PER_YEAR = 365.25
-  const days = Math.max(0, (end.getTime() - start.getTime()) / MS_PER_DAY)
+  const days = exactMax(0, (end.getTime() - start.getTime()) / MS_PER_DAY)
   const daysPerPeriod = AVG_DAYS_PER_YEAR / PERIODS_PER_YEAR[frequency]
-  return Math.max(1, Math.ceil(days / daysPerPeriod))
+  return exactMax(1, exactCeil(days / daysPerPeriod))
 }
 
 // ─── Present value ────────────────────────────────────────────────────
@@ -110,17 +111,17 @@ export const presentValueOfAnnuity = (
   timing: PaymentTiming,
 ): number => {
   if (periods <= 0 || paymentCents === 0) return 0
-  if (Math.abs(ratePerPeriod) < 1e-9) {
+  if (exactAbs(ratePerPeriod) < 1e-9) {
     // r ≈ 0 — pure undiscounted sum.
-    return Math.round(paymentCents * periods)
+    return exactRound(paymentCents * periods)
   }
   const annuityImmediate =
-    paymentCents * ((1 - Math.pow(1 + ratePerPeriod, -periods)) / ratePerPeriod)
+    paymentCents * ((1 - algebraFloatPow(1 + ratePerPeriod, -periods)) / ratePerPeriod)
   const adjusted =
     timing === 'in_advance'
       ? annuityImmediate * (1 + ratePerPeriod)
       : annuityImmediate
-  return Math.round(adjusted)
+  return exactRound(adjusted)
 }
 
 // ─── Initial measurement ──────────────────────────────────────────────
@@ -173,11 +174,11 @@ export const calculateInitialMeasurement = (
 
   const residualPv =
     input.residualValueGuarantee && input.residualValueGuarantee > 0
-      ? Math.round(input.residualValueGuarantee / Math.pow(1 + r, n))
+      ? exactRound(input.residualValueGuarantee / algebraFloatPow(1 + r, n))
       : 0
   const terminationPv =
     input.terminationPenalty && input.terminationPenalty > 0
-      ? Math.round(input.terminationPenalty / Math.pow(1 + r, n))
+      ? exactRound(input.terminationPenalty / algebraFloatPow(1 + r, n))
       : 0
 
   const initialLiability = annuityPv + residualPv + terminationPv
@@ -245,9 +246,9 @@ export const calculatePeriod = (
 ): PeriodDecomposition => {
   const interestBase =
     args.paymentTiming === 'in_advance'
-      ? Math.max(0, args.openingLiability - args.cashPayment)
+      ? exactMax(0, args.openingLiability - args.cashPayment)
       : args.openingLiability
-  const interest = Math.round(interestBase * args.periodicRate)
+  const interest = exactRound(interestBase * args.periodicRate)
   let principalRepayment = args.cashPayment - interest
   if (principalRepayment > args.openingLiability) {
     // Final period: cap principal at the remaining liability.
@@ -274,8 +275,8 @@ export const calculatePeriod = (
 
   const rouAmortisation = args.isFinalPeriod
     ? args.openingRou
-    : Math.round(args.openingRou / args.remainingPeriods)
-  const closingRou = Math.max(0, args.openingRou - rouAmortisation)
+    : exactRound(args.openingRou / args.remainingPeriods)
+  const closingRou = exactMax(0, args.openingRou - rouAmortisation)
 
   return {
     interest,

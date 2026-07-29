@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * validateFiscalPeriodPosting Hook
  *
@@ -20,7 +21,7 @@
  * calendar query sat COMMENTED OUT beside a "Placeholder resolution" that invented the answer:
  *
  *   data.fiscalYear   = new Date(postingDate).getUTCFullYear()   // the CALENDAR year
- *   data.fiscalPeriod = Math.ceil((month + 1) / 3)               // hardcoded QUARTERLY
+ *   data.fiscalPeriod = exactCeil((month + 1) / 3)               // hardcoded QUARTERLY
  *
  * — the calendar year for a tenant whose fiscal year may start in any month, and a calendar quarter for a
  * tenant whose periodType may be monthly, iso-week, retail-445 or custom. It then denormalised that guess

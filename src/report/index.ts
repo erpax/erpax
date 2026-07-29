@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * report — a document self-built by COLLAPSING a standards×format×data superposition on request.
  *
@@ -115,7 +116,7 @@ export function reportConserves(
   tolerance = 0.005,
 ): ReportBalanceCheck {
   const net = netFlow([...signedFigures])
-  return { format, net, conserves: Math.abs(net) <= tolerance }
+  return { format, net, conserves: exactAbs(net) <= tolerance }
 }
 
 export function buildableReports(cwd: string = process.cwd(), mesh?: Mesh): {

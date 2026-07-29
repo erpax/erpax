@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * team — multiple agents sharing skills; competence is the union.
  *
@@ -124,7 +125,7 @@ export const isBasicTeam = (size: number): size is BasicTeamSize => size === 1 |
  */
 export function basicTeams(size: number): BasicTeamSize[] {
   if (!Number.isInteger(size) || size <= 0) return []
-  const out: BasicTeamSize[] = Array.from({ length: Math.floor(size / 3) }, () => 3 as BasicTeamSize)
+  const out: BasicTeamSize[] = Array.from({ length: exactFloor(size / 3) }, () => 3 as BasicTeamSize)
   const rem = size % 3
   if (rem === 1) out.push(1)
   else if (rem === 2) out.push(2)
@@ -263,7 +264,7 @@ export function collectiveQuality(team: readonly Candidate[]): number {
   if (team.length === 0) return 0
   const avg = team.reduce((s, c) => s + c.quality, 0) / team.length
   const div = simpson(perspectiveAbundances(team)) // Simpson diversity ∈ [0,1]
-  return Math.min(1, avg + div * (1 - avg))
+  return exactMin(1, avg + div * (1 - avg))
 }
 
 /** A computed lead-team assignment and its value — the objective the leader is chosen to maximise. */

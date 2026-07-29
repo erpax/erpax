@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import type { Payload } from 'payload'
 
 /**
@@ -77,7 +78,7 @@ const DUNNING_STAGES: DunningStage[] = [
  */
 function getDaysSincePastDue(pastDueSinceAt: Date | string): number {
   const ts = pastDueSinceAt instanceof Date ? pastDueSinceAt : new Date(pastDueSinceAt)
-  return Math.floor((Date.now() - ts.getTime()) / (24 * 60 * 60 * 1000))
+  return exactFloor((Date.now() - ts.getTime()) / (24 * 60 * 60 * 1000))
 }
 
 /**

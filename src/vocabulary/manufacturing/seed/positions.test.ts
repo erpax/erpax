@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { POSITIONS, iscoOf, positionHarmonic, type SeedPosition } from './positions'
 import { PAY_BAND } from './operations'
@@ -26,6 +27,6 @@ describe('manufacturing/seeds/positions — the real ladder, ISCO-08 anchored fr
     expect(top.titleKey).toBe('pos.industry-manager') // 1435 BGN, the top rung
     expect(positionHarmonic(top)).toBeCloseTo(1435 / PAY_BAND.floor, 6) // ~16× the floor
     // the supervisory band sits well above the worker floor (90)
-    expect(Math.min(...POSITIONS.map(positionHarmonic))).toBeGreaterThan(5)
+    expect(exactMin(...POSITIONS.map(positionHarmonic))).toBeGreaterThan(5)
   })
 })

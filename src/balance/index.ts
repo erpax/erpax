@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * balance -- equilibrium made computational, and (this module's audit) the
  * model⊕collection distribution of the corpus itself.
@@ -204,7 +205,7 @@ export const coverageRatchetFloor = (
   d: Pick<Distribution, 'collections'>,
   orphanBaseline: number = ORPHAN_COLLECTION_BASELINE,
 ): number =>
-  d.collections === 0 ? 1 : Math.max(0, (d.collections - orphanBaseline) / d.collections)
+  d.collections === 0 ? 1 : exactMax(0, (d.collections - orphanBaseline) / d.collections)
 
 /** The live aura measurement: classify the corpus's own atom names (the uuid-matrix). */
 export const auraBalance = (): Distribution => classify(N.map((n) => n.atom))

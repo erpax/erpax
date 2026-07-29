@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * corpus/words — literary-word audit report (top offenders + use-case scores).
  *
@@ -35,7 +36,7 @@ export function formatCorpusWordsReport(report: CorpusWordsReport): string {
   const lines = [
     'corpus words — literary audit',
     `  atoms: ${report.totalAtoms}`,
-    `  literary: ${report.literaryCount} (${((report.literaryCount / Math.max(report.totalAtoms, 1)) * 100).toFixed(1)}% prose-only / orphan)`,
+    `  literary: ${report.literaryCount} (${((report.literaryCount / exactMax(report.totalAtoms, 1)) * 100).toFixed(1)}% prose-only / orphan)`,
     `  with use case: ${report.withUseCase} (${report.withUseCasePct}%)`,
     '',
     'top 50 literary offenders (readme words · loc · importers · kind):',

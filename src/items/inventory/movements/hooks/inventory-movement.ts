@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Inventory Movement Posting Hook — fires `inventory:adjusted` on
  * `InventoryMovements.status → 'posted'` for the movement kinds that
@@ -107,7 +108,7 @@ export const inventoryMovementPostingHook: CollectionAfterChangeHook = async ({
     const quantity = Number(mv.quantity ?? 0)
     const unitCost = Number(mv.unitCost ?? 0)
     const extendedCost =
-      Number(mv.extendedCost ?? 0) || Math.abs(quantity) * unitCost
+      Number(mv.extendedCost ?? 0) || exactAbs(quantity) * unitCost
 
     if (extendedCost <= 0) {
       req.payload.logger.warn(

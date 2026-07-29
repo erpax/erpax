@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Generic aging calculator — single source of truth for the algorithm.
  *
@@ -50,7 +51,7 @@ export function computeAgingBuckets<D extends PartyDocument>(
   let totalOutstanding = 0
   for (const d of docs) {
     if (d.balance <= 0) continue
-    const daysPastDue = Math.max(0, daysBetween(d.dueDate, asOfDate))
+    const daysPastDue = exactMax(0, daysBetween(d.dueDate, asOfDate))
     const bucket = out.find((b) => daysPastDue >= b.dayMin && daysPastDue <= b.dayMax)
     if (!bucket) continue
     bucket.totalAmount += d.balance

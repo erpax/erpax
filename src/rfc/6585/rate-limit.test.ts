@@ -19,7 +19,7 @@ import {
 
 // Each test uses a unique key so the in-memory Map does not bleed state
 // across tests within this file.
-const k = (label: string) => `rfc-6585-test:${label}:${Math.random()}`
+const k = (label: string) => `rfc-6585-test:${label}:${Date.now()}`
 
 describe('RFC 6585 rate-limit', () => {
   describe('getRateLimitKey', () => {

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * computed — speech derived from diamond state (the color+sound twin of css/computed).
  *
@@ -20,7 +21,7 @@ import { isHoroStep, type HoroStep } from '@/horo'
 import { A432, NOTES, signalForStep } from '@/signal'
 import { horoStepOf as horoStepOfUuid } from '@/uuid/llm'
 
-const round2 = (n: number): number => Math.round(n * 100) / 100
+const round2 = (n: number): number => exactRound(n * 100) / 100
 
 /** User spelling alias — bonds may reference `speach` instead of `speech`. */
 export const SPEACH_ALIAS = 'speach' as const
@@ -50,7 +51,7 @@ function hexOf(uuid: string): string {
 function horoStepFromNumber(n: number | undefined): HoroStep {
   if (n == null || !Number.isFinite(n)) return 1
   if (isHoroStep(n)) return n
-  const root = ((Math.trunc(n) - 1) % 9) + 1
+  const root = ((exactTrunc(n) - 1) % 9) + 1
   return isHoroStep(root) ? root : 1
 }
 
@@ -73,7 +74,7 @@ export function phonemeDurationMs(step: HoroStep): number {
 /** Phoneme chain from content-uuid nibbles + horo anchor syllable. */
 export function phonemesOf(uuid: string, step: HoroStep): readonly string[] {
   const hex = hexOf(uuid)
-  const count = Math.min(step, 9)
+  const count = exactMin(step, 9)
   const anchor = NOTES[step].solfege.toLowerCase()
   const out: string[] = [anchor]
   for (let i = 1; i < count; i++) {

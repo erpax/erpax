@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * trading/quantum — quantum realtime trading across economic surfaces.
  *
@@ -102,7 +103,7 @@ export function normaliseQuoteAmplitudes(
   for (const [k, v] of Object.entries(raw)) {
     if (Number.isFinite(v) && v !== 0) amp[k] = v!
   }
-  const norm = Math.sqrt(Object.values(amp).reduce((s, a) => s + a * a, 0))
+  const norm = algebraSqrt(Object.values(amp).reduce((s, a) => s + a * a, 0))
   if (norm === 0) {
     throw new Error('quantumTradeQuote: zero superposition — provide at least one non-zero amplitude')
   }
@@ -194,7 +195,7 @@ export function quantumTradeCollapse(
  * tamper-cost floor (double-torus ∞ at zero gap; manual-path forge impossible).
  */
 export function settleTradePayment(trade: CollapsedTrade): TradeSettlementResult {
-  const value = Math.abs(trade.notional * trade.price)
+  const value = exactAbs(trade.notional * trade.price)
   const entry = toDoubleEntry({
     payer: `cash:${trade.currency}`,
     payee: `position:${trade.instrument}:${trade.side}`,

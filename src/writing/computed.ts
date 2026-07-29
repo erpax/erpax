@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * computed — writing metrics derived from sealed coordinates (not prose templates).
  *
@@ -87,13 +88,13 @@ export function writingScore(w: Pick<
   'variance' | 'proseRatio' | 'balanced' | 'wikilinkDensity' | 'lawLines' | 'trinity'
 >): number {
   let score = 100
-  score -= Math.min(40, w.variance * 20)
-  score -= Math.min(30, w.proseRatio * 40)
+  score -= exactMin(40, w.variance * 20)
+  score -= exactMin(30, w.proseRatio * 40)
   if (!w.balanced) score -= 15
   if (w.trinity.form + w.trinity.code + w.trinity.proof < 3) score -= 10
   if (w.lawLines === 0) score -= 10
-  score += Math.min(15, w.wikilinkDensity * 2)
-  return Math.max(0, Math.min(100, Math.round(score)))
+  score += exactMin(15, w.wikilinkDensity * 2)
+  return exactMax(0, exactMin(100, exactRound(score)))
 }
 
 /**
@@ -123,9 +124,9 @@ export function computedWritingForPath(
     : null
   const trinity = trinityOf(dir)
   const ebTotal =
-    Math.round((pathComparableUnits(atomPath) + statement.variance * LANDAUER_BIT) * 1000) / 1000
-  const ebPerWord = words > 0 ? Math.round((ebTotal / words) * 10000) / 10000 : ebTotal
-  const wikilinkDensity = words > 0 ? Math.round((entropy.links / words) * 10000) / 100 : 0
+    exactRound((pathComparableUnits(atomPath) + statement.variance * LANDAUER_BIT) * 1000) / 1000
+  const ebPerWord = words > 0 ? exactRound((ebTotal / words) * 10000) / 10000 : ebTotal
+  const wikilinkDensity = words > 0 ? exactRound((entropy.links / words) * 10000) / 100 : 0
 
   const partial = {
     variance: statement.variance,

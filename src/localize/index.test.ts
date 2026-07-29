@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * localize — the fusion proof. Green by construction: these tests ARE the
  * claim that localization fuses tamper-cost (forge↑) with proof (verify O(N)),
@@ -112,12 +113,12 @@ describe('localize: the fusion — forge↑ and proof O(N)', () => {
     // the verifier is linear in chain depth — identical for both ⇒ the
     // asymmetry (the released trust) is real, not an artefact of the locale count.
     expect(many.verifyBits).toBe(few.verifyBits)
-    expect(few.verifyBits).toBeCloseTo(Math.log2(100), 6)
+    expect(few.verifyBits).toBeCloseTo(algebraLog2(100), 6)
   })
 
   it('the proof nucleus is a positive, threshold-scale verify cost', () => {
     const f = localizationFusion({ elements: 100, coverage: 0.9, chainDepth: 1000 })
     expect(f.proof.totalBits).toBeGreaterThan(0)
-    expect(f.verifyBits).toBeCloseTo(Math.log2(1000), 6)
+    expect(f.verifyBits).toBeCloseTo(algebraLog2(1000), 6)
   })
 })

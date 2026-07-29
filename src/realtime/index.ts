@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * realtime — delivery of events as they arrive: an append-only log + a per-subscriber cursor.
  * `since(log, cursor)` is the live tail (everything after the cursor); `advance` moves a cursor
@@ -14,7 +15,7 @@
 export const append = <T>(log: readonly T[], event: T): T[] => [...log, event]
 
 /** The live tail: every event after the cursor. */
-export const since = <T>(log: readonly T[], cursor: number): readonly T[] => log.slice(Math.max(0, cursor))
+export const since = <T>(log: readonly T[], cursor: number): readonly T[] => log.slice(exactMax(0, cursor))
 
 /** The cursor that has consumed the whole log so far. */
 export const advance = (log: readonly unknown[]): number => log.length

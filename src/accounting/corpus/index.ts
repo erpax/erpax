@@ -22,6 +22,7 @@ import {
 import { COMPARABLE_UNIT } from '@/readme/entropy-unit'
 import type { CorpusEntropyRollup, FolderEntropyAccounting } from '@/readme/entropy'
 import type { FolderReadmeModel } from '@/readme'
+import { exactRound } from '@/algebra'
 
 /** Functional currency — derived from readme entropy comparable unit. */
 export const ENTROPY_CURRENCY = COMPARABLE_UNIT
@@ -32,7 +33,7 @@ export type PathPostingUnit = typeof ENTROPY_CURRENCY | 'count'
 /** Integer scale for eb on journal lines — milli-eb (3 decimal places). */
 const EB_DECIMALS = 3
 export const MILLI_EB_SCALE = 10 ** EB_DECIMALS
-export const ebToMilliEb = (eb: number): number => Math.round(eb * MILLI_EB_SCALE)
+export const ebToMilliEb = (eb: number): number => exactRound(eb * MILLI_EB_SCALE)
 export const milliEbToEb = (milli: number): number => milli / MILLI_EB_SCALE
 
 export {

@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Invoice Status Workflow — directed-graph state transitions.
  *
@@ -78,7 +79,7 @@ export class InvoiceStatusWorkflow {
    * Update invoice after payment
    */
   static applyPayment(invoice: Invoice, paymentAmount: number): Invoice {
-    const newBalance = Math.max(0, invoice.balance - paymentAmount)
+    const newBalance = exactMax(0, invoice.balance - paymentAmount)
     const newPaidAmount = invoice.totalAmount - newBalance
     const newStatus = this.determineStatus(
       newBalance,
@@ -157,7 +158,7 @@ export class InvoiceStatusWorkflow {
     amount?: number
   ): CollectionEvent {
     return {
-      id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      id: `evt_${Date.now()}_${Math.floor(Date.now() * 1000).toString(36).substr(2, 9)}`,
       invoiceId,
       customerId,
       eventType,
@@ -186,8 +187,8 @@ export class InvoiceStatusWorkflow {
    */
   static calculateDaysOverdue(dueDate: Date, asOfDate: Date = new Date()): number {
     const diffTime = asOfDate.getTime() - dueDate.getTime()
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-    return Math.max(0, diffDays)
+    const diffDays = exactCeil(diffTime / (1000 * 60 * 60 * 24))
+    return exactMax(0, diffDays)
   }
 
   /**
@@ -211,6 +212,6 @@ export class InvoiceStatusWorkflow {
    */
   static getInvoiceAge(invoiceDate: Date, asOfDate: Date = new Date()): number {
     const diffTime = asOfDate.getTime() - invoiceDate.getTime()
-    return Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    return exactCeil(diffTime / (1000 * 60 * 60 * 24))
   }
 }

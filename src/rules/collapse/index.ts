@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * collapse — what can honestly become one table, decided by a theorem instead of a marker list.
  *
@@ -178,7 +179,7 @@ export function inversePairs(cwd: string = process.cwd()): InversePair[] {
     if (!fa || !fb) return { a, b, why, jaccard: 0, shared: 0, verdict: 'absent' as const }
     const shared = [...fa].filter((f) => fb.has(f)).length
     const union = new Set([...fa, ...fb]).size
-    const jaccard = union === 0 ? 0 : Math.round((shared / union) * 100) / 100
+    const jaccard = union === 0 ? 0 : exactRound((shared / union) * 100) / 100
     const verdict = jaccard >= 0.6 ? 'theorem' : jaccard >= 0.3 ? 'meaning' : 'distinct'
     return { a, b, why, jaccard, shared, verdict: verdict as InversePair['verdict'] }
   })

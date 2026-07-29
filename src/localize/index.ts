@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * localize — localization as the tamper-cost ⊕ proof FUSION reactor.
  *
@@ -243,10 +244,10 @@ export interface LocalizationFusionInput {
  * Lexical node density. This is the `checks` that feeds the coverage law.
  */
 export function localizationChecks(input: LocalizationFusionInput): number {
-  const locales = Math.max(input.locales ?? SUPPORTED_LOCALE_COUNT, 1)
-  const levels = Math.max(input.levels ?? IDENTIFICATION_LEVELS.length, 1)
-  const elements = Math.max(input.elements, 1)
-  return elements * locales * levels + Math.max(input.lexicalNodes ?? 0, 0)
+  const locales = exactMax(input.locales ?? SUPPORTED_LOCALE_COUNT, 1)
+  const levels = exactMax(input.levels ?? IDENTIFICATION_LEVELS.length, 1)
+  const elements = exactMax(input.elements, 1)
+  return elements * locales * levels + exactMax(input.lexicalNodes ?? 0, 0)
 }
 
 export interface LocalizationFusion {
@@ -281,14 +282,14 @@ export function localizationFusion(input: LocalizationFusionInput): Localization
   // zero grounding; removed.
   const coverage = input.coverage
   const tamper = crackVerdict({ coverage, checks })
-  const depth = Math.max(input.chainDepth ?? input.elements, 1)
+  const depth = exactMax(input.chainDepth ?? input.elements, 1)
   const proof = computeTamperReverseCost({
     leafDepth: depth,
-    streamCount: Math.max(input.locales ?? SUPPORTED_LOCALE_COUNT, 1),
-    dimensionCount: Math.max(input.levels ?? IDENTIFICATION_LEVELS.length, 1),
+    streamCount: exactMax(input.locales ?? SUPPORTED_LOCALE_COUNT, 1),
+    dimensionCount: exactMax(input.levels ?? IDENTIFICATION_LEVELS.length, 1),
   })
   const forgeBits = tamper.crackCostLog2
-  const verifyBits = Math.log2(depth)
+  const verifyBits = algebraLog2(depth)
   return {
     checks,
     tamper,

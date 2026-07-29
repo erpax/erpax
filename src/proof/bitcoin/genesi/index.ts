@@ -1,3 +1,4 @@
+import { algebraLog2 } from '@/algebra'
 /**
  * Bitcoin genesis — the empirical upper bound of the forge≫verify asymmetry.
  *
@@ -109,7 +110,7 @@ export function verifyBitcoinGenesis(): BitcoinGenesisProof {
 
   // Expected double-SHA256 attempts to find a header hashing ≤ target = 2^256 / (target+1).
   const expectedHashes = (1n << 256n) / (target + 1n)
-  const forgeCostLog2 = Math.log2(Number(expectedHashes))
+  const forgeCostLog2 = algebraLog2(Number(expectedHashes))
 
   return {
     chain: 'bitcoin',

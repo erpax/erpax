@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * Currency fallback — blank currency as the identity element.
  *
@@ -376,7 +377,7 @@ export async function convertMoney(
   const raw = amount * quote.rate
   // Half-even rounding to N decimals.
   const factor = 10 ** decimals
-  const rounded = Math.round(raw * factor) / factor
+  const rounded = exactRound(raw * factor) / factor
   return { amount: rounded, currency: quote.toCurrency, quote }
 }
 
@@ -492,7 +493,7 @@ export async function aggregateBalancesAcrossCurrencies(
   const factor = 10 ** decimals
   return {
     presentationCurrency: presentation,
-    totalBalance: Math.round(total * factor) / factor,
+    totalBalance: exactRound(total * factor) / factor,
     perWallet,
     hasIdentityFallback,
     asOf,

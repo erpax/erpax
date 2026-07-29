@@ -1,3 +1,4 @@
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
 /**
  * apply/wave — coordinated self-balancing wave runner (ONE runner at a time).
  */
@@ -73,18 +74,18 @@ export function scanWaveAxisDebt(cwd = process.cwd(), axes: readonly WaveSealAxi
   return axes.filter((a) => WAVE_SEAL_AXES.includes(a)).map((axis): WaveAxisDebt => {
     if (axis === 'phrase-without-diamond') {
       const count = phrase.violationCount
-      return { axis, count, baseline: safeBaseline(axis, cwd), debt: Math.max(0, count - safeBaseline(axis, cwd)), allocated: 0 }
+      return { axis, count, baseline: safeBaseline(axis, cwd), debt: exactMax(0, count - safeBaseline(axis, cwd)), allocated: 0 }
     }
-    if (axis === 'accounting-wave') return { axis, count: accounting.count, baseline: 0, debt: Math.max(0, accounting.count), allocated: 0 }
+    if (axis === 'accounting-wave') return { axis, count: accounting.count, baseline: 0, debt: exactMax(0, accounting.count), allocated: 0 }
     const a = clean.axes[axis as CleanScanAxis]
-    return { axis, count: a.count, baseline: a.baseline, debt: Math.max(0, a.overBaseline), allocated: 0 }
+    return { axis, count: a.count, baseline: a.baseline, debt: exactMax(0, a.overBaseline), allocated: 0 }
   })
 }
 
 export function allocateWaveBatch(debts: readonly WaveAxisDebt[], batch: number): WaveAxisDebt[] {
   const totalDebt = debts.reduce((s, d) => s + d.debt, 0)
   if (totalDebt <= 0 || batch <= 0) return debts.map((d) => ({ ...d, allocated: 0 }))
-  return debts.map((d) => ({ ...d, allocated: d.debt > 0 ? Math.max(1, Math.round((batch * d.debt) / totalDebt)) : 0 }))
+  return debts.map((d) => ({ ...d, allocated: d.debt > 0 ? exactMax(1, exactRound((batch * d.debt) / totalDebt)) : 0 }))
 }
 
 export function proposeWaveSealActions(allocated: readonly WaveAxisDebt[], cwd = process.cwd()): WaveSealAction[] {
@@ -118,7 +119,7 @@ export function coordinatedWave(opts: CoordinatedWaveOpts = {}): CoordinatedWave
   }
   const started = performance.now()
   const cwd = opts.cwd ?? process.cwd()
-  const batch = Math.max(1, Math.trunc(opts.batch ?? 30))
+  const batch = exactMax(1, exactTrunc(opts.batch ?? 30))
   const dryRun = opts.dryRun !== false
   const token = opts.token ?? interruptTokenFor(waveDirectionPath(), agentId)
   const empty = (aborted: boolean, reason?: string): CoordinatedWaveResult => ({
@@ -136,7 +137,7 @@ export function coordinatedWave(opts: CoordinatedWaveOpts = {}): CoordinatedWave
     plan: { waves: [], waveCount: 0, totalUnits: 0, balanceRatio: 1, restingStep: 9 },
     sessionBalanced: false,
     clean: null,
-    durationMs: Math.round(performance.now() - started),
+    durationMs: exactRound(performance.now() - started),
   })
 
   if (!opts.force) {
@@ -154,7 +155,7 @@ export function coordinatedWave(opts: CoordinatedWaveOpts = {}): CoordinatedWave
     const debts = allocateWaveBatch(scanWaveAxisDebt(cwd, opts.axes ?? WAVE_SEAL_AXES), batch)
     const debit = debts.reduce((s, d) => s + d.debt, 0)
     const actions = proposeWaveSealActions(debts, cwd)
-    const plan = selfBalancingWaveLoad(actions, { maxItemsPerWave: Math.max(1, Math.ceil(batch / 7)) })
+    const plan = selfBalancingWaveLoad(actions, { maxItemsPerWave: exactMax(1, exactCeil(batch / 7)) })
     const session = createWaveSession(plan, createHash('sha256').update(`wave|${batch}`).digest('hex').slice(0, 12))
     const sealed: string[] = []
     const receipts: Receipt[] = []
@@ -164,7 +165,7 @@ export function coordinatedWave(opts: CoordinatedWaveOpts = {}): CoordinatedWave
       receipts.push(completeWaveHop(session, wave.ordinal, ts, agentId))
     }
     const credit = sealed.length
-    return { aborted: false, runnerHeld: true, batch, axes: debts, debit, credit, balanced: credit <= debit || debit === 0, actions, sealed: [...new Set(sealed)], receipts, plan, sessionBalanced: waveSessionVerdict(session).balanced, clean: null, durationMs: Math.round(performance.now() - started) }
+    return { aborted: false, runnerHeld: true, batch, axes: debts, debit, credit, balanced: credit <= debit || debit === 0, actions, sealed: [...new Set(sealed)], receipts, plan, sessionBalanced: waveSessionVerdict(session).balanced, clean: null, durationMs: exactRound(performance.now() - started) }
   } finally {
     waveRunnerActive = false
     releaseWaveLock(cwd, 'wave')
