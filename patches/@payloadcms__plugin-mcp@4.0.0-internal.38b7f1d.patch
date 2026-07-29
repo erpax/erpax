@@ -175,3 +175,43 @@ index 8ce01f18102f2860375ad20b7d38972166214de9..1520a1720ba866acb88e76dceb8c4f36
                      if (allowFind) {
                          registerTool(allowFind, `Find ${enabledGlobalSlug}`, ()=>findGlobalTool(server, req, user, useVerboseLogs, enabledGlobalSlug, globalsPluginConfig), payload, useVerboseLogs);
                      }
+diff --git a/src/mcp/createRequest.ts b/src/mcp/createRequest.ts
+index d4d3e70dfc9c315ca433a0992d7920677354b05b..74f6ddef5e676fe20387eba4549378cfecc036d3 100644
+--- a/src/mcp/createRequest.ts
++++ b/src/mcp/createRequest.ts
+@@ -4,10 +4,29 @@ export const createRequestFromPayloadRequest = (req: PayloadRequest) => {
+   if (!req.url) {
+     throw new AuthenticationError()
+   }
+-  return new Request(req.url, {
+-    body: req.body,
+-    duplex: 'half',
+-    headers: req.headers,
+-    method: req.method,
+-  } as { duplex: 'half' } & RequestInit)
++  // erpax/Workers: Payload may have already consumed the body stream.
++  // Re-feeding a spent stream (or a parsed object) with duplex:'half' hangs
++  // the isolate with zero bytes. Re-serialize JSON bodies; omit empty bodies.
++  const method = (req.method || 'GET').toUpperCase()
++  const canHaveBody = method !== 'GET' && method !== 'HEAD'
++  let body: BodyInit | undefined
++  const headers = new Headers(req.headers)
++  if (canHaveBody) {
++    const raw = req.body as unknown
++    if (typeof raw === 'string' || raw instanceof Uint8Array || raw instanceof ArrayBuffer) {
++      body = raw as BodyInit
++    } else if (raw && typeof raw === 'object' && typeof (raw as { getReader?: unknown }).getReader !== 'function') {
++      if (!headers.has('content-type')) headers.set('content-type', 'application/json')
++      body = JSON.stringify(raw)
++    } else {
++      const data = (req as { data?: unknown }).data
++      if (data != null) {
++        if (!headers.has('content-type')) headers.set('content-type', 'application/json')
++        body = JSON.stringify(data)
++      }
++    }
++  }
++  const init: RequestInit = { headers, method: req.method }
++  if (body !== undefined) init.body = body
++  return new Request(req.url, init)
+ }
