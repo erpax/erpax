@@ -1,0 +1,107 @@
+# Publish @erpax/algebra (free core math only)
+#
+# Publishes packages/algebra — NEVER the private root erpax app.
+# Fold magma (→ @/merge) and licensed surfaces are excluded by packages/algebra/build.mjs.
+#
+# Triggers: algebra-v* tags, GitHub Release published, or workflow_dispatch.
+#
+# Auth (prefer trusted publishing / OIDC):
+#   1. npmjs.com → @erpax/algebra → Settings → Trusted Publisher
+#      GitHub org: erpax  ·  repo: erpax  ·  workflow: publish-algebra.yml
+#   2. Optional fallback: repo Actions secret NPM_TOKEN (classic automation token)
+#      → NODE_AUTH_TOKEN. Prefer OIDC; long-lived tokens are last resort.
+#
+# Provenance: publishConfig.provenance + id-token: write.
+# Does not touch Cloudflare deploy.
+
+name: Publish algebra
+
+on:
+  push:
+    tags:
+      - 'algebra-v*'
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # npm trusted publishing (OIDC)
+
+concurrency:
+  group: npm-publish-algebra-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: packages/algebra
+
+jobs:
+  publish:
+    name: Publish @erpax/algebra
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+          cache: pnpm
+
+      # Trusted publishing needs npm ≥ 11.5.1
+      - name: Ensure modern npm
+        working-directory: ${{ github.workspace }}
+        run: npm install -g npm@latest
+
+      - name: Install (workspace)
+        working-directory: ${{ github.workspace }}
+        run: pnpm install --frozen-lockfile
+
+      - name: Assert root stays private (no app publish)
+        working-directory: ${{ github.workspace }}
+        run: |
+          node -e "
+            const p = require('./package.json')
+            if (p.private !== true) { console.error('✖ root package.json must be private'); process.exit(1) }
+            if (p.name !== 'erpax') { console.error('✖ unexpected root name'); process.exit(1) }
+            console.log('✔ root private — will not publish licensed app')
+          "
+
+      - name: Build free core math
+        run: pnpm build
+
+      - name: Assert tag matches package version
+        if: startsWith(github.ref, 'refs/tags/algebra-v')
+        run: |
+          TAG="${GITHUB_REF_NAME#algebra-v}"
+          PKG="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).version")"
+          if [ "$TAG" != "$PKG" ]; then
+            echo "::error::Tag algebra-v${TAG} does not match @erpax/algebra version ${PKG}"
+            exit 1
+          fi
+
+      - name: Skip if version already on npm
+        id: gate
+        run: |
+          NAME="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).name")"
+          VER="$(node -p "JSON.parse(require('fs').readFileSync('package.json','utf8')).version")"
+          echo "package=${NAME}@${VER}" >> "$GITHUB_OUTPUT"
+          if npm view "${NAME}@${VER}" version >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "${NAME}@${VER} already published — skip"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to npm
+        if: steps.gate.outputs.exists == 'false'
+        run: npm publish --access public
+        env:
+          # Optional classic fallback when trusted publisher is not configured yet
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

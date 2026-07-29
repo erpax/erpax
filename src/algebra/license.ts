@@ -16,6 +16,9 @@ export const LICENSE_CONTACT = 'license@erpax.com' as const
 /** Package SPDX for everything outside core math. */
 export const ERPAX_SPDX = 'AGPL-3.0-or-later' as const
 
+/** SPDX for the publishable free core-math package (`@erpax/algebra`). */
+export const CORE_MATH_SPDX = 'MIT' as const
+
 /** True iff a repo-relative path is under the free core-math surface. */
 export function isCoreMathPath(repoPath: string): boolean {
   const n = repoPath.replace(/\\/g, '/').replace(/^\.\//, '')
@@ -29,7 +32,7 @@ export function isCoreMathPath(repoPath: string): boolean {
 export function erpaxLicenseNote(license: string): string[] {
   if (!/AGPL|GPL/i.test(license)) return []
   return [
-    `**Core math** (\`${CORE_MATH_GLOB}\` · exact* / algebra*): free for all.`,
+    `**Core math** (\`${CORE_MATH_GLOB}\` · exact* / algebra* · \`@erpax/algebra\` · ${CORE_MATH_SPDX}): free for all.`,
     `Everything else — ([${ERPAX_SPDX}](LICENSE) / commercial) via \`${LICENSE_CONTACT}\`.`,
     '',
   ]

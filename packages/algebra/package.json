@@ -1,0 +1,47 @@
+{
+  "name": "@erpax/algebra",
+  "version": "0.1.0",
+  "description": "Free core math for erpax — exact* / algebra* ops, theorem algebras, audit. Core math free for all; the rest of erpax is AGPL/commercial.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpax/erpax.git",
+    "directory": "packages/algebra"
+  },
+  "bugs": {
+    "url": "https://github.com/erpax/erpax/issues"
+  },
+  "homepage": "https://github.com/erpax/erpax/tree/main/packages/algebra",
+  "keywords": [
+    "algebra",
+    "exact-arithmetic",
+    "erpax",
+    "math"
+  ],
+  "engines": {
+    "node": ">=18.20.2"
+  },
+  "scripts": {
+    "build": "node ./build.mjs",
+    "prepublishOnly": "node ./build.mjs"
+  }
+}

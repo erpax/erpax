@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import {
   THEOREMS,
-  FOLD,
   isClosed,
   movie,
   product,
@@ -12,11 +11,15 @@ import {
   CORE_MATH_GLOB,
   LICENSE_CONTACT,
   ERPAX_SPDX,
+  CORE_MATH_SPDX,
   isCoreMathPath,
   erpaxLicenseNote,
   type Algebra,
 } from './index'
+import { FOLD } from './fold'
 import { merge } from '@/merge'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 describe('algebra — host Math.* is a violation', () => {
   it('ALGEBRA_ATOMS have zero host-math (theorem baseline 0)', () => {
@@ -136,6 +139,7 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(CORE_MATH_GLOB).toBe('src/algebra/**')
     expect(LICENSE_CONTACT).toBe('license@erpax.com')
     expect(ERPAX_SPDX).toBe('AGPL-3.0-or-later')
+    expect(CORE_MATH_SPDX).toBe('MIT')
   })
 
   it('isCoreMathPath accepts only src/algebra/**', () => {
@@ -153,7 +157,19 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     const note = erpaxLicenseNote('AGPL-3.0-or-later').join('\n')
     expect(note).toMatch(/free for all/)
     expect(note).toMatch(/src\/algebra\/\*\*/)
+    expect(note).toMatch(/@erpax\/algebra/)
     expect(note).toMatch(/license@erpax\.com/)
     expect(erpaxLicenseNote('MIT')).toEqual([])
+  })
+
+  it('@erpax/algebra package.json license matches CORE_MATH_SPDX; root stays private', () => {
+    const root = join(process.cwd())
+    const pkg = JSON.parse(readFileSync(join(root, 'packages/algebra/package.json'), 'utf8'))
+    const app = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'))
+    expect(pkg.name).toBe('@erpax/algebra')
+    expect(pkg.license).toBe(CORE_MATH_SPDX)
+    expect(pkg.private).not.toBe(true)
+    expect(app.private).toBe(true)
+    expect(app.license).toBe(ERPAX_SPDX)
   })
 })

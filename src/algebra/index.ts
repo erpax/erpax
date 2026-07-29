@@ -26,11 +26,11 @@
  * it is the naming that dressed the operation, marked and stripped. The algebra is what a test can contradict;
  * the picture never was ([[rules]]/refutable · [[rodin]]). The base is still assumed ([[theorem]]: `s > 0`).
  *
- * Composes [[merge]] · [[horo]] · [[navigation]] · [[rosetta]] · [[theorem]] · [[law]].
+ * Composes [[horo]] · [[navigation]] · [[rosetta]] · [[theorem]] · [[law]].
+ * Fold magma (merge-bound) lives at [[./fold]] — not on the npm free face.
  *
- * License — core math (`src/algebra/**`) free for all; the rest via `license@erpax.com` ([[./license]]).
+ * License — core math (`src/algebra/**`) free for all ([[./license]]); npm: `@erpax/algebra`.
  */
-import { merge } from '@/merge'
 
 const dr9 = (n: number): number => (((n % 9) + 9) % 9) || 9
 
@@ -52,14 +52,6 @@ export const THEOREMS: readonly Algebra<number>[] = [
   { name: 'doubling', carrier: [1, 2, 4, 5, 7, 8], op: (a, b) => dr9(a * b), identity: 1, overlay: 'the moving double torus' },
   { name: 'additive', carrier: [1, 2, 3, 4, 5, 6, 7, 8, 9], op: (a, b) => dr9(a + b), identity: 9, overlay: 'matter/antimatter annihilation to the void' },
 ]
-
-/** The fold, as an algebra over uuids — a magma (closed, deterministic, NOT associative). The merkabas' fold. */
-export const FOLD: Algebra<string> = {
-  name: 'fold',
-  carrier: ['00000000-0000-0000-0000-000000000000'],
-  op: (a, b) => merge(a, b),
-  overlay: 'the merkabas folding into themselves and each other',
-}
 
 /** Is the operation CLOSED on its carrier? — the minimal proof that it IS an algebra. Membership by value, so tuples (products) work; pass `contains` to sample an infinite carrier (the fold over uuid-space). */
 export function isClosed<T>(
@@ -416,6 +408,7 @@ export {
   CORE_MATH_GLOB,
   LICENSE_CONTACT,
   ERPAX_SPDX,
+  CORE_MATH_SPDX,
   isCoreMathPath,
   erpaxLicenseNote,
 } from './license'
