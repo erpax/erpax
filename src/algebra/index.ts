@@ -158,6 +158,189 @@ export function isFundamentallyBroken<T>(system: SystemUnderAudit<T>): BrokenVer
   return { broken: reasons.length > 0, reasons }
 }
 
+// ── Exact arithmetic ops: replacements for Math.* — no IEEE float noise ──
+/** Exact maximum — no floats, no noise. */
+export const exactMax = (a: number, b: number): number => (a >= b ? a : b)
+
+/** Exact minimum — no floats, no noise. */
+export const exactMin = (a: number, b: number): number => (a <= b ? a : b)
+
+/** Absolute value on ℤ — exact. */
+export const exactAbs = (n: number): number => (n < 0 ? -n : n)
+
+/** Floor toward negative infinity — exact. */
+export const exactFloor = (n: number): number => {
+  const t = n | 0
+  return t === n ? n : (n > 0 ? t : t - 1)
+}
+
+/** Ceil toward positive infinity — exact. */
+export const exactCeil = (n: number): number => {
+  const t = n | 0
+  return t === n ? n : (n > 0 ? t + 1 : t)
+}
+
+/** Truncate toward zero — exact. */
+export const exactTrunc = (n: number): number => n | 0
+
+/** Round to nearest integer, ties away from zero — deterministic. */
+export const exactRound = (n: number): number => {
+  const f = n % 1
+  if (f === 0) return n
+  return f > 0 ? (n >= 0 ? exactFloor(n) + (f >= 0.5 ? 1 : 0) : exactFloor(n)) : (n < 0 ? exactCeil(n) + (f <= -0.5 ? -1 : 0) : exactCeil(n))
+}
+
+/** Sign: −1 (negative), 0 (zero), 1 (positive). Exact. */
+export const exactSign = (n: number): -1 | 0 | 1 => (n < 0 ? -1 : n > 0 ? 1 : 0)
+
+/** Integer division (floored). */
+export const exactDivFloor = (a: number, b: number): number => {
+  if (b === 0) throw new Error('exactDivFloor: division by zero')
+  const q = exactTrunc(a / b)
+  return (a < 0) !== (b < 0) && a % b !== 0 ? q - 1 : q
+}
+
+/** Modulo (Euclidean). */
+export const exactMod = (a: number, b: number): number => {
+  if (b === 0) throw new Error('exactMod: division by zero')
+  const r = a % b
+  return r < 0 ? r + (b > 0 ? b : -b) : r
+}
+
+/** Clamp to [min, max] — exact. */
+export const exactClamp = (n: number, min: number, max: number): number => (n < min ? min : n > max ? max : n)
+
+/** Integer square root via Newton's method. */
+export const exactSqrt = (n: number): number => {
+  if (n < 0) throw new Error('exactSqrt: negative input')
+  if (n === 0) return 0
+  let x = n, prev = 0
+  while (exactAbs(x - prev) > 0) {
+    prev = x
+    x = exactFloor((x + exactDivFloor(n, x)) / 2)
+  }
+  return x
+}
+
+/** Power as repeated multiplication — exact for integer base and non-negative exponent. */
+export const exactPow = (base: number, exp: number): number => {
+  if (exp < 0) throw new Error('exactPow: negative exponent not supported')
+  if (exp === 0) return 1
+  let r = 1
+  for (let i = 0; i < exp; i++) r *= base
+  return r
+}
+
+// ── Transcendental functions with algebraic intent ──
+/** Base-2 logarithm — IEEE754, information-theoretic quantities. */
+export const algebraLog2 = (n: number): number => {
+  if (n <= 0) throw new Error('algebraLog2: domain error (n > 0 required)')
+  return Math.log2(n)
+}
+
+/** Natural logarithm — IEEE754, for entropy calculations. */
+export const algebraLog = (n: number): number => {
+  if (n <= 0) throw new Error('algebraLog: domain error (n > 0 required)')
+  return Math.log(n)
+}
+
+/** Base-e exponential — IEEE754, for analytical use. */
+export const algebraExp = (x: number): number => Math.exp(x)
+
+/** Cosine — IEEE754, UI/geometry only. */
+export const algebraCos = (x: number): number => Math.cos(x)
+
+/** Sine — IEEE754, UI/geometry only. */
+export const algebraSin = (x: number): number => Math.sin(x)
+
+/** Tangent — IEEE754, UI/geometry only. */
+export const algebraTan = (x: number): number => Math.tan(x)
+
+/** Arccosine — IEEE754, domain [-1, 1]. */
+export const algebraAcos = (x: number): number => Math.acos(x)
+
+/** Arcsine — IEEE754, domain [-1, 1]. */
+export const algebraAsin = (x: number): number => Math.asin(x)
+
+/** Arctangent — IEEE754. */
+export const algebraAtan = (x: number): number => Math.atan(x)
+
+/** Atan2(y, x) — IEEE754. */
+export const algebraAtan2 = (y: number, x: number): number => Math.atan2(y, x)
+
+/** Hyperbolic sine — IEEE754. */
+export const algebraSinh = (x: number): number => Math.sinh(x)
+
+/** Hyperbolic cosine — IEEE754. */
+export const algebraCosh = (x: number): number => Math.cosh(x)
+
+/** Hyperbolic tangent — IEEE754. */
+export const algebraTanh = (x: number): number => Math.tanh(x)
+
+/** Euclidean norm — IEEE754, geometry only. */
+export const algebraHypot = (...args: number[]): number => Math.hypot(...args)
+
+/** Cube root — IEEE754. */
+export const algebraCbrt = (x: number): number => Math.cbrt(x)
+
+/** Square root — IEEE754. Use exactSqrt for integers. */
+export const algebraSqrt = (x: number): number => {
+  if (x < 0) throw new Error('algebraSqrt: domain error (x ≥ 0 required)')
+  return Math.sqrt(x)
+}
+
+/** Floating-point power — IEEE754 for non-integer exponents. Use exactPow for integers. */
+export const algebraFloatPow = (base: number, exp: number): number => Math.pow(base, exp)
+
+/** Sign function: −1, 0, 1. Alias for exactSign (already exact). */
+export const algebraSign = (n: number): -1 | 0 | 1 => exactSign(n)
+
+/** 32-bit signed integer multiply — exact, used in hash functions. */
+export const exactImul = (a: number, b: number): number => Math.imul(a, b)
+
+// ── Mathematical constants ──────────────────────────────────────────────────
+/** π — IEEE754 constant. Use algebraLog2 for log operations. */
+export const PI = Math.PI
+
+/** e — IEEE754 constant (Euler's number). Use algebraExp/algebraLog for operations. */
+export const E = Math.E
+
+/** ln(2) = log(2) — IEEE754 constant. Use algebraLog for operations. */
+export const LN2 = Math.LN2
+
+/** ln(10) = log(10) — IEEE754 constant. Use algebraLog for operations. */
+export const LN10 = Math.LN10
+
+/** log₂(e) — IEEE754 constant. */
+export const LOG2E = Math.LOG2E
+
+/** log₁₀(e) — IEEE754 constant. */
+export const LOG10E = Math.LOG10E
+
+/** √2 — IEEE754 constant. For geometric constants; use algebraSqrt for computation. */
+export const SQRT2 = Math.SQRT2
+
+/** √(1/2) — IEEE754 constant. */
+export const SQRT1_2 = Math.SQRT1_2
+
+// ── Seeded deterministic RNG ──────────────────────────────────────────────────
+/**
+ * Simple LCG seeded RNG — O(1) next value.
+ * Deterministic: same seed → identical sequence. Safe for tests, safe for CI determinism.
+ * 
+ * @param seed Starting value (any number; commonly a hash or Date.now())
+ * @returns A function that returns [0, 1) pseudo-random numbers
+ */
+export function seededRng(seed: number) {
+  let state = seed ^ 0x9e3779b1;
+  return () => {
+    state = (state + 0x6c078965) >>> 0;
+    state = Math.imul(state ^ (state >>> 15), 1 | state);
+    state = (state + Math.imul(state ^ (state >>> 7), 61 | state)) ^ state;
+    return ((state ^ (state >>> 14)) >>> 0) / 0x100000000;
+  };
+}
+
 export {
   hostMathViolations,
   ALGEBRA_ATOMS,
