@@ -116,8 +116,8 @@ Cross-tab of **3178** folder README models — state × count per axis.
 
 `1.0.0` · `AGPL-3.0-or-later`
 
-Dual-licensed **open core** ([AGPL-3.0-or-later](LICENSE)): network modifications publish source.
-Commercial / closed SaaS / SLA — contact `license@erpax.com`. Contributions under CLA (relicense right).
+**Core math** (`src/algebra/**` · exact* / algebra*): free for all.
+Everything else — ([AGPL-3.0-or-later](LICENSE) / commercial) via `license@erpax.com`.
 
 ---
 

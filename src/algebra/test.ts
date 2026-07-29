@@ -9,6 +9,11 @@ import {
   isFundamentallyBroken,
   hostMathViolations,
   ALGEBRA_ATOMS,
+  CORE_MATH_GLOB,
+  LICENSE_CONTACT,
+  ERPAX_SPDX,
+  isCoreMathPath,
+  erpaxLicenseNote,
   type Algebra,
 } from './index'
 import { merge } from '@/merge'
@@ -123,5 +128,32 @@ describe('algebra — isFundamentallyBroken: audit a system against its own law'
     })
     expect(v.broken).toBe(true)
     expect(v.reasons.length).toBe(2)
+  })
+})
+
+describe('algebra/license — USER LAW: core math free; rest via contact', () => {
+  it('CORE_MATH_GLOB and LICENSE_CONTACT are the sealed constants', () => {
+    expect(CORE_MATH_GLOB).toBe('src/algebra/**')
+    expect(LICENSE_CONTACT).toBe('license@erpax.com')
+    expect(ERPAX_SPDX).toBe('AGPL-3.0-or-later')
+  })
+
+  it('isCoreMathPath accepts only src/algebra/**', () => {
+    expect(isCoreMathPath('src/algebra')).toBe(true)
+    expect(isCoreMathPath('src/algebra/index.ts')).toBe(true)
+    expect(isCoreMathPath('src/algebra/license.ts')).toBe(true)
+    expect(isCoreMathPath('src/algebra/host/index.ts')).toBe(true)
+    expect(isCoreMathPath('./src/algebra/foo')).toBe(true)
+    expect(isCoreMathPath('src/readme/compute.ts')).toBe(false)
+    expect(isCoreMathPath('src/algebraic')).toBe(false)
+    expect(isCoreMathPath('LICENSE')).toBe(false)
+  })
+
+  it('erpaxLicenseNote emits free core + contact for copyleft; nothing for permissive', () => {
+    const note = erpaxLicenseNote('AGPL-3.0-or-later').join('\n')
+    expect(note).toMatch(/free for all/)
+    expect(note).toMatch(/src\/algebra\/\*\*/)
+    expect(note).toMatch(/license@erpax\.com/)
+    expect(erpaxLicenseNote('MIT')).toEqual([])
   })
 })

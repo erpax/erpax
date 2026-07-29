@@ -1,4 +1,13 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import {
+  exactMax,
+  exactMin,
+  exactAbs,
+  exactFloor,
+  exactCeil,
+  exactRound,
+  exactTrunc,
+  erpaxLicenseNote,
+} from '@/algebra'
 /**
  * readme/compute — derive*, render, analytics, computed faces (pure compute hub).
  *
@@ -310,18 +319,11 @@ export function deriveModel(
 }
 
 /**
- * The dual-license note — GENERATED from the SPDX id, so it is diamond-signed like the rest of the
- * README and no hand-written LICENSING.md can drift from it. A copyleft license (AGPL/GPL) closes the
- * SaaS loophole for recognition + the commons; the commercial line is the monetisation path for those
- * who cannot accept it (the open-core playbook). A permissive license emits nothing extra.
+ * README license body — DRY delegate to [[algebra]]/license (USER LAW).
+ * Copyleft SPDX emits core-math-free + contact; permissive emits nothing.
  */
 export function licenseNote(license: string): string[] {
-  if (!/AGPL|GPL/i.test(license)) return []
-  return [
-    'Dual-licensed **open core** ([AGPL-3.0-or-later](LICENSE)): network modifications publish source.',
-    'Commercial / closed SaaS / SLA — contact `license@erpax.com`. Contributions under CLA (relicense right).',
-    '',
-  ]
+  return erpaxLicenseNote(license)
 }
 
 /**

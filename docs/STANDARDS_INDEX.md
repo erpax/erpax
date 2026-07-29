@@ -2280,7 +2280,7 @@ src/query/fingerprint/index.ts:58: * @standard RFC 8785 JSON Canonicalization Sc
 src/query/fingerprint/index.ts:59: * @standard NIST FIPS 180-4 SHA-256
 src/readings/test.ts:4: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/readme/index.ts:12: * @standard RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)
-src/readme/test.ts:528: * @standard RFC 9562
+src/readme/test.ts:530: * @standard RFC 9562
 src/realtime/index.ts:10: * @standard append-only log + cursor (the pull-based realtime model)
 src/realtime/translator/index.ts:9: * @standard interlingua (language-independent meaning) over the realtime tail
 src/receipt/index.ts:11: * @standard RFC 8785 JSON canonicalization (the content the uuid addresses)

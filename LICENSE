@@ -1,3 +1,11 @@
+erpax — licensing
+
+Core math (`src/algebra/**`) is free for all.
+Everything else is licensed under AGPL-3.0-or-later below, or commercially via
+license@erpax.com. Computable seal: `erpaxLicenseNote` in `src/algebra/license.ts`.
+
+==============================================================================
+
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 

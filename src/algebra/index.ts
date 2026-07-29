@@ -27,6 +27,8 @@
  * the picture never was ([[rules]]/refutable · [[rodin]]). The base is still assumed ([[theorem]]: `s > 0`).
  *
  * Composes [[merge]] · [[horo]] · [[navigation]] · [[rosetta]] · [[theorem]] · [[law]].
+ *
+ * License — core math (`src/algebra/**`) free for all; the rest via `license@erpax.com` ([[./license]]).
  */
 import { merge } from '@/merge'
 
@@ -409,6 +411,14 @@ export {
   type HostMathViolation,
   type AlgebraAtom,
 } from './host'
+
+export {
+  CORE_MATH_GLOB,
+  LICENSE_CONTACT,
+  ERPAX_SPDX,
+  isCoreMathPath,
+  erpaxLicenseNote,
+} from './license'
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('algebra — all theorems are algebra only:\n')

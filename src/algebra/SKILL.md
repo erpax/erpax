@@ -113,6 +113,8 @@ Apply a generator and it traces an **orbit** — a sequence of frames. `movie(do
 
 **Law — [[law]]: all theorems are algebra only — a carrier and a closed operation; the theorem draws its movie (the orbit of a generator), algebras compose into products (theorem of theorems), and the overlay (torus · tetrahedron · mind) is named and stripped, never tested. When the rosetta moves the carrier grows, and the merkabas fold — into themselves (self-address) and into each other (composition) — by the one magma the whole corpus runs on: `merge`.**
 
+**License — core math (`src/algebra/**` · exact*/algebra*) free for all; everything else via `license@erpax.com` (`erpaxLicenseNote` · LICENSE).**
+
 ## Standards
 
 - **Universal algebra** — a structure is a set with operations closed on it; a magma is the minimal case.
