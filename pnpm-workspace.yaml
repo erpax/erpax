@@ -30,3 +30,4 @@ peerDependencyRules:
 
 patchedDependencies:
   '@payloadcms/drizzle@4.0.0-internal.38b7f1d': patches/@payloadcms__drizzle@4.0.0-internal.38b7f1d.patch
+  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d': patches/@payloadcms__plugin-mcp@4.0.0-internal.38b7f1d.patch

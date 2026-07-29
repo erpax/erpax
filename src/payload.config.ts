@@ -17,6 +17,7 @@ import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
+import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
@@ -406,23 +407,16 @@ export default buildConfig({
     // script cap — the admin bulk CSV/JSON I/O surface is non-core and re-addable. Removed
     // rather than stubbed so migrate-time, runtime, and generated types stay consistent.
     mcpPlugin({
-      // Add ALL collections to the gateway — users and agents are ONE (the
-      // actor-merge): the agent wields the full power of erpax exactly as a
-      // human, only infinitely faster, so the door opens onto everything a
-      // human can reach. Access still gates every call (the cross + the key
-      // owner's access, run in the actor's PayloadRequest — never widened).
-      // Computed from the collections barrel, never hand-listed
-      // (computed-not-hardcoded) — every collection becomes find/create/update/
-      // delete tools; the per-key toggles let an admin narrow a given key.
-      collections: Object.fromEntries(
-        (Object.values(allCollections) as Array<{ slug: string }>).map(
-          (c) => [c.slug, { enabled: true }] as const,
-        ),
-      ) as Partial<Record<CollectionSlug, { enabled: true }>>,
-      globals: {
-        header: { enabled: true },
-        footer: { enabled: true },
-      },
+      // Users and agents are ONE (actor-merge): access still gates every call.
+      // Production/Worker defaults to gateway auth atoms only (users/tenants/
+      // roles/payload-mcp-api-keys) — enabling all ~206 collections crashes
+      // the isolate on `/api/mcp` (CF 1101/1102) after Bearer auth.
+      // CMS fixtures: `ERPAX_MCP_INCLUDE_CMS=1`. Full barrel: `ERPAX_MCP_SEED=0`.
+      // Extra slugs: `ERPAX_MCP_EXTRA=a,b`. See `@/plugins/mcp/seed`.
+      collections: mcpCollectionsConfig(
+        Object.values(allCollections) as Array<{ slug: string }>,
+      ),
+      globals: mcpGlobalsConfig(),
       // Collapse the 824-column capability matrix (over D1's 100-col cap) to a
       // compact `scopes` field + virtual afterRead capabilities — the same
       // matrix→cross collapse as access. See src/plugins/mcp/scopes.

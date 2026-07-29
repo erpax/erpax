@@ -1,0 +1,177 @@
+diff --git a/dist/mcp/createRequest.js b/dist/mcp/createRequest.js
+index cfbf3f0ddcfb6d310f70fd4d70553bc174d63488..350c59396434938f45c75d4c81f080fde7a9b6d5 100644
+--- a/dist/mcp/createRequest.js
++++ b/dist/mcp/createRequest.js
+@@ -3,12 +3,37 @@ export const createRequestFromPayloadRequest = (req)=>{
+     if (!req.url) {
+         throw new AuthenticationError();
+     }
+-    return new Request(req.url, {
+-        body: req.body,
+-        duplex: 'half',
+-        headers: req.headers,
++    // erpax/Workers: Payload may have already consumed the body stream.
++    // Re-feeding a spent stream (or a parsed object) with duplex:'half' hangs
++    // the isolate with zero bytes. Re-serialize JSON bodies; omit empty bodies.
++    const method = (req.method || 'GET').toUpperCase();
++    const canHaveBody = method !== 'GET' && method !== 'HEAD';
++    let body = undefined;
++    const headers = new Headers(req.headers);
++    if (canHaveBody) {
++        const raw = req.body;
++        if (typeof raw === 'string' || raw instanceof Uint8Array || raw instanceof ArrayBuffer) {
++            body = raw;
++        } else if (raw && typeof raw === 'object' && typeof raw.getReader !== 'function') {
++            // Already-parsed JSON (common after Payload middleware)
++            if (!headers.has('content-type')) headers.set('content-type', 'application/json');
++            body = JSON.stringify(raw);
++        } else if (typeof req.json === 'function') {
++            // fall through — prefer data if present on the payload request
++            const data = req.data ?? req.payloadData;
++            if (data != null) {
++                if (!headers.has('content-type')) headers.set('content-type', 'application/json');
++                body = JSON.stringify(data);
++            }
++        }
++    }
++    const init = {
++        headers,
+         method: req.method
+-    });
++    };
++    if (body !== undefined) {
++        init.body = body;
++        // duplex only required for streams; string bodies need none on Workers
++    }
++    return new Request(req.url, init);
+ };
+-
+-//# sourceMappingURL=createRequest.js.map
+\ No newline at end of file
+diff --git a/dist/mcp/getMcpHandler.js b/dist/mcp/getMcpHandler.js
+index 8ce01f18102f2860375ad20b7d38972166214de9..1520a1720ba866acb88e76dceb8c4f36462a3bac 100644
+--- a/dist/mcp/getMcpHandler.js
++++ b/dist/mcp/getMcpHandler.js
+@@ -33,9 +33,50 @@ import { runJobTool } from './tools/job/run.js';
+ import { updateJobTool } from './tools/job/update.js';
+ export const getMCPHandler = (pluginOptions, mcpAccessSettings, req)=>{
+     const { payload } = req;
+-    const configSchema = configToJSONSchema(payload.config, payload.db.defaultIDType, req.i18n, {
+-        forceInlineBlocks: true
+-    });
++    // MCP Server and Handler Options (resolved before schema so we can slim)
++    const MCPOptions = pluginOptions.mcp || {};
++    const customMCPTools = MCPOptions.tools || [];
++    const customMCPPrompts = MCPOptions.prompts || [];
++    const customMCPResources = MCPOptions.resources || [];
++    const MCPHandlerOptions = MCPOptions.handlerOptions || {};
++    const serverOptions = MCPOptions.serverOptions || {};
++    const useVerboseLogs = MCPHandlerOptions.verboseLogs ?? false;
++    const isDevelopment = process.env.NODE_ENV === 'development';
++    const experimentalTools = pluginOptions?.experimental?.tools || {};
++    const collectionsPluginConfig = pluginOptions.collections || {};
++    const globalsPluginConfig = pluginOptions.globals || {};
++    const enabledCollectionSlugs = getEnabledSlugs(collectionsPluginConfig, 'collection');
++    const enabledGlobalSlugsEarly = getEnabledSlugs(globalsPluginConfig, 'global');
++    // erpax: skip configToJSONSchema on production seed / lean Workers.
++    // Even a slim pages/posts surface hangs the isolate (Lexical/blocks).
++    // Find/delete tools do not need JSON Schema; create/update register only
++    // when a definition exists (local full mode still builds schema).
++    const leanSchema =
++        process.env.ERPAX_MCP_LEAN === '1' ||
++        (process.env.NODE_ENV === 'production' && process.env.ERPAX_MCP_SEED !== '0' && process.env.ERPAX_MCP_SEED !== 'full');
++    const enabledCol = new Set(enabledCollectionSlugs);
++    const enabledGlob = new Set(enabledGlobalSlugsEarly);
++    const schemaCacheKey = `${leanSchema ? 'lean' : 'full'}\0${[...enabledCollectionSlugs, ...enabledGlobalSlugsEarly].sort().join('\0')}`;
++    const cacheHost = payload;
++    let configSchema = cacheHost.__erpaxMcpSchemaCache?.get(schemaCacheKey);
++    if (!configSchema) {
++        if (leanSchema) {
++            configSchema = {
++                definitions: {}
++            };
++        } else {
++            const slimConfig = {
++                ...payload.config,
++                collections: (payload.config.collections || []).filter((c)=>enabledCol.has(c.slug)),
++                globals: (payload.config.globals || []).filter((g)=>enabledGlob.has(g.slug))
++            };
++            configSchema = configToJSONSchema(slimConfig, payload.db.defaultIDType, req.i18n, {
++                forceInlineBlocks: true
++            });
++        }
++        if (!cacheHost.__erpaxMcpSchemaCache) cacheHost.__erpaxMcpSchemaCache = new Map();
++        cacheHost.__erpaxMcpSchemaCache.set(schemaCacheKey, configSchema);
++    }
+     // Handler wrapper that injects req before the _extra argument
+     const wrapHandler = (handler)=>{
+         return async (...args)=>{
+@@ -49,35 +90,24 @@ export const getMCPHandler = (pluginOptions, mcpAccessSettings, req)=>{
+     const payloadResourceHandler = (handler)=>wrapHandler(handler);
+     // User
+     const user = mcpAccessSettings.user;
+-    // MCP Server and Handler Options
+-    const MCPOptions = pluginOptions.mcp || {};
+-    const customMCPTools = MCPOptions.tools || [];
+-    const customMCPPrompts = MCPOptions.prompts || [];
+-    const customMCPResources = MCPOptions.resources || [];
+-    const MCPHandlerOptions = MCPOptions.handlerOptions || {};
+-    const serverOptions = MCPOptions.serverOptions || {};
+-    const useVerboseLogs = MCPHandlerOptions.verboseLogs ?? false;
+-    // Experimental MCP Tool Requirements
+-    const isDevelopment = process.env.NODE_ENV === 'development';
+-    const experimentalTools = pluginOptions?.experimental?.tools || {};
+-    const collectionsPluginConfig = pluginOptions.collections || {};
+-    const globalsPluginConfig = pluginOptions.globals || {};
+     const collectionsDirPath = experimentalTools && experimentalTools.collections?.collectionsDirPath ? experimentalTools.collections.collectionsDirPath : join(process.cwd(), 'src/collections');
+     const configFilePath = experimentalTools && experimentalTools.config?.configFilePath ? experimentalTools.config.configFilePath : join(process.cwd(), 'src/payload.config.ts');
+     const jobsDirPath = experimentalTools && experimentalTools.jobs?.jobsDirPath ? experimentalTools.jobs.jobsDirPath : join(process.cwd(), 'src/jobs');
+     try {
+         return createMcpHandler((server)=>{
+-            // Get enabled collections
+-            const enabledCollectionSlugs = getEnabledSlugs(collectionsPluginConfig, 'collection');
+-            // Collection Operation Tools
++            // Collection Operation Tools (enabledCollectionSlugs resolved above)
+             enabledCollectionSlugs.forEach((enabledCollectionSlug)=>{
+                 try {
+                     const rawSchema = configSchema.definitions?.[enabledCollectionSlug];
+-                    const virtualFieldNames = getCollectionVirtualFieldNames(payload.config, enabledCollectionSlug);
+-                    const schema = removeVirtualFieldsFromSchema(JSON.parse(JSON.stringify(rawSchema)), virtualFieldNames);
++                    const schema = rawSchema
++                        ? removeVirtualFieldsFromSchema(
++                            JSON.parse(JSON.stringify(rawSchema)),
++                            getCollectionVirtualFieldNames(payload.config, enabledCollectionSlug),
++                          )
++                        : undefined;
+                     const toolCapabilities = mcpAccessSettings?.[`${toCamelCase(enabledCollectionSlug)}`];
+-                    const allowCreate = toolCapabilities?.create;
+-                    const allowUpdate = toolCapabilities?.update;
++                    const allowCreate = Boolean(schema) && toolCapabilities?.create;
++                    const allowUpdate = Boolean(schema) && toolCapabilities?.update;
+                     const allowFind = toolCapabilities?.find;
+                     const allowDelete = toolCapabilities?.delete;
+                     if (allowCreate) {
+@@ -97,15 +127,18 @@ export const getMCPHandler = (pluginOptions, mcpAccessSettings, req)=>{
+                 }
+             });
+             // Global Operation Tools
+-            const enabledGlobalSlugs = getEnabledSlugs(globalsPluginConfig, 'global');
+-            enabledGlobalSlugs.forEach((enabledGlobalSlug)=>{
++            enabledGlobalSlugsEarly.forEach((enabledGlobalSlug)=>{
+                 try {
+                     const rawSchema = configSchema.definitions?.[enabledGlobalSlug];
+-                    const virtualFieldNames = getGlobalVirtualFieldNames(payload.config, enabledGlobalSlug);
+-                    const schema = removeVirtualFieldsFromSchema(JSON.parse(JSON.stringify(rawSchema)), virtualFieldNames);
++                    const schema = rawSchema
++                        ? removeVirtualFieldsFromSchema(
++                            JSON.parse(JSON.stringify(rawSchema)),
++                            getGlobalVirtualFieldNames(payload.config, enabledGlobalSlug),
++                          )
++                        : undefined;
+                     const toolCapabilities = mcpAccessSettings?.[`${toCamelCase(enabledGlobalSlug)}`];
+                     const allowFind = toolCapabilities?.['find'];
+-                    const allowUpdate = toolCapabilities?.['update'];
++                    const allowUpdate = Boolean(schema) && toolCapabilities?.['update'];
+                     if (allowFind) {
+                         registerTool(allowFind, `Find ${enabledGlobalSlug}`, ()=>findGlobalTool(server, req, user, useVerboseLogs, enabledGlobalSlug, globalsPluginConfig), payload, useVerboseLogs);
+                     }
