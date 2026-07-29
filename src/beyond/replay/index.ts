@@ -54,7 +54,7 @@ export async function replayLeaf(args: {
   return { ok: false, mismatch: { expectedHash: args.expectedOutputHash, actualHash: actual } }
 }
 
-/** Pure function — confirm an effect sequence is replay-stable (no Date.now / Math.random in the kinds). */
+/** Pure function — confirm an effect sequence is replay-stable (deterministic emit timestamps + JCS-serializable kinds). */
 export function isReplayStable(effects: ReadonlyArray<AgentEffect>): { ok: boolean; reason?: string } {
   for (const e of effects) {
     if (e.kind === 'emit' && !e.event.emittedAt) {
