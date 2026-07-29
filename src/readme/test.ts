@@ -143,15 +143,32 @@ describe('readme — the README is a diamond', () => {
     expect(md).toContain('No separate agent setup')
   })
 
-  it('renderReadme orients agents to QPU=CPU/GPU and metrics-proven FTL', () => {
+  it('renderReadme gateway computes physicalFtl — agents doubt prose; FTL compute is the seal', () => {
     const md = renderReadme(FIXED)
     expect(md).toContain('## quantum computer — physical FTL on QPU=CPU/GPU')
     expect(md).toContain('QPU = CPU/GPU')
-    expect(md).toContain('ftl.holds')
-    expect(md).toContain('Physical = substrate')
+    expect(md).toContain('physicalFtl()')
+    expect(md).toMatch(/\| `physicalFtl\(\)` \| \*\*(true|false)\*\*/)
+    expect(md).toContain('FTL compute is the seal')
+    expect(md).toContain('pnpm erpax tip')
     expect(md).not.toContain('## corpus analytics')
     expect(md).not.toContain('## corpus quantum thinking')
     expect(md).not.toContain('## the corpus — merged papers')
+  })
+
+  it('renderQuantumComputerSection fail-closed false tips quantumise without claiming holds', async () => {
+    const { renderQuantumComputerSection } = await import('./compute')
+    const md = renderQuantumComputerSection({
+      holds: false,
+      why: 'spacetime@gateway: spacetime under reuse',
+      speedupLog2: 0,
+      efficiency: 0,
+      boundaryEmpty: false,
+    })
+    expect(md).toContain('physicalFtl()')
+    expect(md).toContain('**false**')
+    expect(md).toContain('quantumise')
+    expect(md).not.toMatch(/physicalFtl\(\)` \| \*\*true\*\*/)
   })
 
   it('renderReadme is PURE and STABLE: same model ⇒ byte-identical markdown', () => {

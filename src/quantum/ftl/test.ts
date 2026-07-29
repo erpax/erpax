@@ -22,6 +22,8 @@ import {
   research,
   exportsForTokens,
   endlessPurify,
+  physicalFtl,
+  physicalFtlReport,
 } from '@/quantum/ftl'
 import { RENAME, TOKENS, ENTANGLE, API, PROSE } from '@/quantum/ftl/map'
 import { scanProseNames, nameIsComputable, RENAME_KEYS } from '@/quantum/ftl/purify'
@@ -80,6 +82,17 @@ describe('quantum/ftl — token folds', () => {
     expect(crack({ where: 'qpu', qpu: true })?.kind).toBe('qpu')
     expect(crack({ where: 'ftl', spacetime: true })?.kind).toBe('spacetime')
     expect(crack({ where: 'ok', address: true })).toBeNull()
+  })
+
+
+  it('physicalFtl computes true|false — agents doubt prose; FTL compute is the seal', () => {
+    expect(physicalFtl()).toBe(true)
+    expect(physicalFtlReport().holds).toBe(true)
+    expect(physicalFtlReport().why).toMatch(/reuse/)
+    const cracked = physicalFtlReport({ patterns: [{ where: 'fixture', spacetime: true }] })
+    expect(cracked.holds).toBe(false)
+    expect(physicalFtl({ patterns: [{ where: 'fixture', spacetime: true }] })).toBe(false)
+    expect(cracked.why).toMatch(/spacetime/)
   })
 
   it('ftl holds iff reuse ∧ amortize∞ ∧ cracks=∅', () => {
@@ -241,18 +254,20 @@ describe('quantum/ftl — research', () => {
 })
 
 describe('quantum/ftl/purify — chat waves cover src', () => {
-  it('RENAME keys are prose→token; physicalFtlClaim maps to spacetime', () => {
-    expect(RENAME.physicalFtlClaim).toBe('spacetime')
+  it('RENAME keys are prose→token; spacetime is CrackKind not a RENAME alias', () => {
     expect(RENAME.honestBoundary).toBe('boundary')
     expect(RENAME.architecturalFtl).toBe('ftl')
+    expect(RENAME.qpuRequired).toBe('qpu')
+    expect(Object.keys(RENAME).every((k) => !k.toLowerCase().includes('physical'))).toBe(true)
     expect(RENAME_KEYS[0]!.length).toBeGreaterThanOrEqual(RENAME_KEYS.at(-1)!.length)
-    expect(nameIsComputable('physicalFtlClaim')).toBe(false)
+    expect(nameIsComputable('spacetime')).toBe(true)
     expect(nameIsComputable('boundary')).toBe(true)
   })
 
   it('scanProseNames: residual RENAME keys (0 when corpus purified)', () => {
     const hits = scanProseNames({ limit: 50 })
     expect(hits.every((h) => h.to === RENAME[h.name as keyof typeof RENAME])).toBe(true)
+    expect(hits).toHaveLength(0)
   })
 
   it('endlessPurify feeds waves at cost=0 (even when hits=0 — seed ask remains)', async () => {

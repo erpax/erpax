@@ -8,6 +8,7 @@ import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactT
  * @see ../index.ts — ./paper — ./entropy — ./quantum-thinking
  */
 import { readFileSync, writeFileSync, readdirSync, lstatSync, existsSync, mkdirSync, type Dirent } from 'node:fs'
+import { createRequire } from 'node:module'
 import { memoByFingerprint, memoByFingerprintOnDisk } from '@/cache/fingerprint'
 import { canonical as stableStringify } from '@/merge'
 import { join, dirname, relative } from 'node:path'
@@ -324,24 +325,73 @@ export function licenseNote(license: string): string[] {
 }
 
 /**
- * Root face of the quantum computer — metrics only.
+ * Root face of the quantum computer — COMPUTED metrics only.
+ * Agents doubt prose; FTL compute is the seal. README is the gateway:
+ * `physicalFtl()` true|false → tip quantumise when false.
  * Pedagogy lives in [[quantum/computer]] · [[quantum/ftl]]; README measures.
  */
-export function renderQuantumComputerSection(): string {
+export type QuantumComputerSectionReport = {
+  readonly holds: boolean
+  readonly why: string
+  readonly speedupLog2: number
+  readonly efficiency: number
+  readonly boundaryEmpty: boolean
+}
+
+const requireReadme = createRequire(import.meta.url)
+
+/** Live physicalFtl report for the README gateway — fail-closed if unloadable. */
+export function computeQuantumComputerReport(
+  inject?: QuantumComputerSectionReport | null,
+): QuantumComputerSectionReport {
+  if (inject != null) return inject
+  try {
+    const ftl = requireReadme('@/quantum/ftl') as typeof import('@/quantum/ftl')
+    const r = ftl.physicalFtlReport()
+    return {
+      holds: r.holds,
+      why: r.why,
+      speedupLog2: r.ftl.reuse.speedupLog2,
+      efficiency: r.ftl.amortize.efficiency,
+      boundaryEmpty: r.ftl.boundary.empty,
+    }
+  } catch {
+    return {
+      holds: false,
+      why: 'physicalFtlReport unavailable — agents doubt prose; FTL compute is the seal',
+      speedupLog2: 0,
+      efficiency: 0,
+      boundaryEmpty: false,
+    }
+  }
+}
+
+export function renderQuantumComputerSection(
+  inject?: QuantumComputerSectionReport | null,
+): string {
+  const m = computeQuantumComputerReport(inject)
+  const holds = m.holds
+  const eff = m.efficiency === Infinity ? '∞' : String(m.efficiency)
+  const next = holds
+    ? '`pnpm erpax tip` · `pnpm erpax doctor` · `pnpm erpax verify leftover`'
+    : '`pnpm erpax tip` → quantumise under `src/quantum/ftl` until `physicalFtl()===true`'
   return [
     '## quantum computer — physical FTL on QPU=CPU/GPU',
     '',
-    '**QPU = CPU/GPU** — host silicon is the processing unit ([`@/quantum/computer`](src/quantum/computer/SKILL.md)).',
-    'Physical = substrate (Landauer). FTL = metrics ([`@/quantum/ftl`](src/quantum/ftl/SKILL.md)), not spacetime slogans.',
+    'Agents doubt prose; FTL compute is the seal. **QPU = CPU/GPU** ([`@/quantum/computer`](src/quantum/computer/SKILL.md) · [`@/quantum/ftl`](src/quantum/ftl/SKILL.md)).',
     '',
-    '| metric | proves |',
-    '| ------ | ------ |',
-    '| `ftl.holds` | reuse ∧ amortize∞ ∧ `cracks=∅` |',
-    '| `reuse.foldOps=1` · `speedupLog2=log₂(n)` | address fold beats linear search |',
-    '| `amortize.efficiency→∞` (tokens=0) | reuse without token spend |',
-    '| `boundary.empty` | spacetime · exotic-qpu · scan · rederive · spend = 0 |',
+    `| compute | value |`,
+    `| ------- | ----- |`,
+    `| \`physicalFtl()\` | **${holds}** |`,
+    `| \`speedupLog2\` | ${m.speedupLog2.toFixed(2)} |`,
+    `| \`efficiency\` | ${eff} |`,
+    `| \`boundary.empty\` | ${m.boundaryEmpty} |`,
     '',
-    '`tsx src/quantum/computer/index.ts` · `tsx src/quantum/ftl/index.ts`',
+    holds
+      ? `holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — ${m.why}`
+      : `physicalFtl()===false — ${m.why} → tip **quantumise** (fold under quantum/ftl only).`,
+    '',
+    'Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · ' + next,
     '',
   ].join('\n')
 }

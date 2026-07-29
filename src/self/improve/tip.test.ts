@@ -57,7 +57,7 @@ describe('self/improve/tip — scored feed-scanner', () => {
   })
 
   it('planTrinity is precise for every gap kind', () => {
-    const kinds = ['leftover', 'math', 'purify', 'dry-proof', 'doctor', 'mcp-fuse', 'admin-boot'] as const
+    const kinds = ['leftover', 'math', 'purify', 'dry-proof', 'doctor', 'mcp-fuse', 'admin-boot', 'quantumise'] as const
     for (const kind of kinds) {
       const t = planTrinity(gap({ kind }))
       const p = isPreciseTip(t)
@@ -151,5 +151,38 @@ describe('self/improve/tip — scored feed-scanner', () => {
     })
     expect(tip.continuation.continue).toBe(false)
     expect(tip.continuation.stoppedExternally).toBe(true)
+  })
+
+  it('physicalFtl true omits quantumise tip', () => {
+    const audit = auditSelfDevGaps({ ...quiet, mathCount: 0, purifyHits: 0, physicalFtl: true })
+    expect(audit.physicalFtl).toBe(true)
+    expect(audit.gaps.some((g) => g.kind === 'quantumise')).toBe(false)
+  })
+
+  it('physicalFtl false emits precise quantumise tip', () => {
+    const audit = auditSelfDevGaps({
+      ...quiet,
+      mathCount: 0,
+      purifyHits: 3,
+      physicalFtl: false,
+      physicalFtlWhy: 'spacetime@fixture: spacetime under reuse',
+    })
+    expect(audit.physicalFtl).toBe(false)
+    expect(audit.gaps.some((g) => g.kind === 'purify')).toBe(false) // prose-only downgraded
+    const q = audit.gaps.find((g) => g.kind === 'quantumise')
+    expect(q).toBeTruthy()
+    expect(q!.file).toBe('src/quantum/ftl/index.ts')
+    const tip = emitNextTip({
+      ...quiet,
+      mathCount: 0,
+      purifyHits: 0,
+      physicalFtl: false,
+      physicalFtlWhy: 'spacetime@fixture: spacetime under reuse',
+    })
+    expect(tip.accepted).toBe(true)
+    expect(tip.gap.kind).toBe('quantumise')
+    expect(tip.code).toMatch(/physicalFtlReport|quantum\/ftl/)
+    expect(tip.proof).toMatch(/physicalFtl\(\)\s*===\s*true/)
+    expect(isPreciseTip(tip).ok).toBe(true)
   })
 })

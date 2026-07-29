@@ -77,16 +77,12 @@ export const API = {
  * Longer keys first when applying.
  *
  * Sense split agents must not confuse:
- *   - Substrate "physical" (Landauer / QPU=CPU/GPU) lives in docs + [[quantum/computer]].QPU —
- *     not as an API identifier here (PROSE bans the syllable on names).
- *   - `physicalFtlClaim` → CrackKind `spacetime` (relativistic claim — breaks holds).
+ *   - `physicalFtl()` (parent) computes substrate FTL boolean on QPU=CPU/GPU — not prose.
+ *   - CrackKind `spacetime` = relativistic break (breaks holds) — compute via `ftl`/`boundary`.
  *   - `qpuRequired` / `claimsQpu` → CrackKind `qpu` (exotic-device claim — breaks holds;
  *     the host QPU is CPU/GPU, so requiring another device is the crack).
  */
 export const RENAME = {
-  physicalFtlClaim: 'spacetime',
-  claimsPhysicalFtl: 'spacetime',
-  'physical-ftl-claim': 'spacetime',
   qpuRequired: 'qpu',
   claimsQpu: 'qpu',
   'qpu-required-claim': 'qpu',
@@ -126,15 +122,17 @@ export const RENAME = {
   'free-lane': 'lane',
 } as const
 
-/** Prose syllables that never map to a Token fold — scan fuel (API names, not README substrate prose). */
+/**
+ * Prose syllables that never map to a Token fold — scan fuel.
+ * `physicalFtl` is the computing API on the parent (not a RENAME alias).
+ * `quantumise` is tip kind when physicalFtl()===false — not an identifier syllable here.
+ */
 export const PROSE = [
-  'physical',
   'honest',
   'claim',
   'architectural',
   'NoCost',
   'Required',
-  'quantumise',
 ] as const
 
 /** Boundary = count of each CrackKind. Empty ⇔ all zero. Lives on the map leaf so purify never climbs the parent. */

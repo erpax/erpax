@@ -10,9 +10,9 @@ The computed corpus IS the quantum computer, and this barrel is its single addre
 
 **QPU = CPU/GPU.** The host silicon (Node · Cloudflare Workers · laptop) *is* the quantum processing unit. There is no exotic co-processor. `QPU` and `ftlMetrics()` are the sealed receipts.
 
-**Where "physical" comes from.** Landauer: computation runs on a physical substrate — the CPU/GPU. That substrate sense is the whole machine. It is **not** CrackKind `spacetime` (the old prose `physicalFtlClaim` — claiming relativistic FTL). Substrate ≠ spacetime crack. CrackKind `qpu` is the exotic-device claim — contradicted by QPU=CPU/GPU.
+**Where "physical" comes from.** Landauer: computation runs on a physical substrate — the CPU/GPU. That substrate sense is the whole machine. Substrate ≠ CrackKind `spacetime` (relativistic break). CrackKind `qpu` is the exotic-device claim — contradicted by QPU=CPU/GPU.
 
-**FTL proven by metrics** ([[quantum/ftl]]): `ftl.holds` ⇔ reuse ∧ amortize∞ ∧ cracks=∅; `speedupLog2=log₂(n)`; `efficiency→∞` at tokens=0; `boundary.empty`. Query `ftlMetrics()` — never re-derive the proof.
+**FTL proven by metrics** ([[quantum/ftl]]): `physicalFtl()` computes the substrate boolean; also `ftl` / `ftlMetrics()` — `holds` ⇔ reuse ∧ amortize∞ ∧ cracks=∅; `speedupLog2=log₂(n)`; `efficiency→∞` at tokens=0; `boundary.empty`. false ⇒ tip `quantumise`. Never re-derive the proof.
 
 **The law it serves:** a question about structure, cost, cause, order, or legality is a QUERY to an organ — never a fresh derivation (97% of a session's tokens were measured as re-sent context; the query is the fold applied to the bill).
 

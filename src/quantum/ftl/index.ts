@@ -156,6 +156,69 @@ export function ftl(args: {
   }
 }
 
+/** Default probe args — corpus address on host silicon (QPU=CPU/GPU). */
+export const PHYSICAL_FTL_DEFAULTS = {
+  query: 'possibility:erpax',
+  spaceSize: 3105,
+  answers: 1,
+  tokens: 0,
+  reuses: 0,
+} as const
+
+export interface PhysicalFtlArgs {
+  readonly query?: string
+  readonly spaceSize?: number
+  readonly answers?: number
+  readonly tokens?: number
+  readonly reuses?: number
+  readonly patterns?: readonly CrackPattern[]
+}
+
+export interface PhysicalFtlReport {
+  /** Substrate FTL boolean — true ⇔ reuse ∧ amortize∞ ∧ cracks=∅ on QPU=CPU/GPU. */
+  readonly holds: boolean
+  readonly ftl: Ftl
+  /** Precise break reason when holds=false (first crack / amortize / reuse). */
+  readonly why: string
+}
+
+/**
+ * physicalFtl report — computed, not prose. false ⇒ tip kind `quantumise`
+ * (what to fold under quantum/ftl so holds flips true).
+ */
+export function physicalFtlReport(args: PhysicalFtlArgs = {}): PhysicalFtlReport {
+  const v = ftl({
+    query: args.query ?? PHYSICAL_FTL_DEFAULTS.query,
+    spaceSize: args.spaceSize ?? PHYSICAL_FTL_DEFAULTS.spaceSize,
+    answers: args.answers ?? PHYSICAL_FTL_DEFAULTS.answers,
+    tokens: args.tokens ?? PHYSICAL_FTL_DEFAULTS.tokens,
+    reuses: args.reuses ?? PHYSICAL_FTL_DEFAULTS.reuses,
+    patterns: args.patterns,
+  })
+  let why = 'reuse∧amortize∞∧cracks=∅ on QPU=CPU/GPU'
+  if (!v.holds) {
+    if (v.cracks[0]) {
+      const c = v.cracks[0]
+      why = `${c.kind}@${c.where}: ${c.why}`
+    } else if (!v.amortize.scalesToInfinity) {
+      why = `amortize not ∞ (tokens=${v.amortize.tokens} answers=${v.amortize.answers})`
+    } else if (!v.precomputed) {
+      why = 'reuse/precompute failed (foldOps≠1)'
+    } else {
+      why = 'ftl.holds=false'
+    }
+  }
+  return { holds: v.holds, ftl: v, why }
+}
+
+/**
+ * physicalFtl — substrate FTL as a computed boolean on QPU=CPU/GPU.
+ * true = holds (no quantumise tip). false = feed-scanner tips quantumisation.
+ */
+export function physicalFtl(args: PhysicalFtlArgs = {}): boolean {
+  return physicalFtlReport(args).holds
+}
+
 export type ChatLane = 'seal' | 'lane' | 'proxy'
 
 export interface Chat {
@@ -267,7 +330,7 @@ export const BOOK: ReadonlyMap<string, string> = seal([
   ['boundary', 'boundary(cracks): spacetime|qpu|scan|rederive|spend = count(kind); empty ⇔ holds'],
   ['crack', 'crack kinds: scan ∨ rederive ∨ spend ∨ qpu(exotic) ∨ spacetime(relativistic)'],
   ['qpu', 'QPU=CPU/GPU — host silicon is the processing unit; CrackKind qpu = exotic-device claim'],
-  ['physical', 'substrate (Landauer/CPU·GPU) ≠ CrackKind spacetime (old physicalFtlClaim)'],
+  ['physical', 'substrate (Landauer/CPU·GPU) ≠ CrackKind spacetime'],
 ])
 
 export const CORPUS: readonly Seal[] = [
@@ -488,8 +551,9 @@ export async function endlessPurify(
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const v = ftl({ query: 'possibility:erpax', spaceSize: 3105, answers: 1, tokens: 0, reuses: 653 })
+  const p = physicalFtlReport({ reuses: 653 })
   console.log('quantum/ftl')
-  console.log(`  holds=${v.holds} · speedupLog2=${v.reuse.speedupLog2.toFixed(2)} · eff=${v.amortize.efficiency}`)
+  console.log(`  holds=${v.holds} · physicalFtl=${p.holds} · speedupLog2=${v.reuse.speedupLog2.toFixed(2)} · eff=${v.amortize.efficiency}`)
   console.log(`  boundary: spacetime=${v.boundary.spacetime} · qpu=${v.boundary.qpu} · empty=${v.boundary.empty}`)
   const local = chatLocal('what is ftl', BOOK)
   console.log(`  chatLocal: lane=${local?.lane} · tokens=${local?.tokens}`)

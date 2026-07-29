@@ -15,25 +15,26 @@ No separate agent setup — the URL and the repo are the same orientation.
 
 ## quantum computer — physical FTL on QPU=CPU/GPU
 
-**QPU = CPU/GPU** — host silicon is the processing unit ([`@/quantum/computer`](src/quantum/computer/SKILL.md)).
-Physical = substrate (Landauer). FTL = metrics ([`@/quantum/ftl`](src/quantum/ftl/SKILL.md)), not spacetime slogans.
+Agents doubt prose; FTL compute is the seal. **QPU = CPU/GPU** ([`@/quantum/computer`](src/quantum/computer/SKILL.md) · [`@/quantum/ftl`](src/quantum/ftl/SKILL.md)).
 
-| metric | proves |
-| ------ | ------ |
-| `ftl.holds` | reuse ∧ amortize∞ ∧ `cracks=∅` |
-| `reuse.foldOps=1` · `speedupLog2=log₂(n)` | address fold beats linear search |
-| `amortize.efficiency→∞` (tokens=0) | reuse without token spend |
-| `boundary.empty` | spacetime · exotic-qpu · scan · rederive · spend = 0 |
+| compute | value |
+| ------- | ----- |
+| `physicalFtl()` | **true** |
+| `speedupLog2` | 11.60 |
+| `efficiency` | ∞ |
+| `boundary.empty` | true |
 
-`tsx src/quantum/computer/index.ts` · `tsx src/quantum/ftl/index.ts`
+holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — reuse∧amortize∞∧cracks=∅ on QPU=CPU/GPU
+
+Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · `pnpm erpax tip` · `pnpm erpax doctor` · `pnpm erpax verify leftover`
 
 ## the diamond
 
-**3178** atoms · **37716** bonds · corpus `b63ff218-aae9-8e4a-ac28-7aec59004c06` · README `fc442445-0cf7-8e93-af6e-457d846daad2` · sealed **1085**/**3178** · **11** [[cloudflare]] · **2404** [[standards]]
+**3178** atoms · **37716** bonds · corpus `b63ff218-aae9-8e4a-ac28-7aec59004c06` · README `861c8a2d-75b4-8709-a795-36c92b4bf47b` · sealed **1085**/**3178** · **11** [[cloudflare]] · **2404** [[standards]]
 
 ## [[pivot]]
 
-7 horo · form **3177** · code **1154** · proof **1128**
+7 horo · form **3177** · code **1155** · proof **1157**
 
 ### the horo ring — the diamond's facets
 
@@ -66,14 +67,14 @@ Cross-tab of **3178** folder README models — state × count per axis.
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| balanced | 3017 | 94.93 |
-| unbalanced | 161 | 5.07 |
+| balanced | 3020 | 95.03 |
+| unbalanced | 158 | 4.97 |
 | **Σ** | **3178** | **100** |
 
 
 ## corpus entropy
 
-- gap `9652.62` eb · seal `33610.625` eb · net `-23958.005` eb · ratio `3.482`
+- gap `9641.035` eb · seal `33619.625` eb · net `-23978.59` eb · ratio `3.487`
 - sealed `1085` · unsealed `2093`
 
 
@@ -107,7 +108,7 @@ Cross-tab of **3178** folder README models — state × count per axis.
 
 ## stack
 
-`@hookform/resolvers ^5.4.0` · `@opennextjs/cloudflare ^1.19.11` · `@radix-ui/react-accordion ^1.2.13` · `@radix-ui/react-alert-dialog ^1.1.16` · `@radix-ui/react-aspect-ratio ^1.1.9` · `@radix-ui/react-avatar ^1.1.12` · `@radix-ui/react-checkbox ^1.3.3` · `@radix-ui/react-collapsible ^1.1.13` · `@radix-ui/react-context-menu ^2.3.0` · `@radix-ui/react-dialog ^1.1.15` · `@radix-ui/react-dropdown-menu ^2.1.17` · `@radix-ui/react-hover-card ^1.1.16` · `@radix-ui/react-label ^2.1.8` · `@radix-ui/react-menubar ^1.1.17` · `@radix-ui/react-navigation-menu ^1.2.15` · `@radix-ui/react-popover ^1.1.16` · `@radix-ui/react-progress ^1.1.9` · `@radix-ui/react-radio-group ^1.4.0` · `@radix-ui/react-scroll-area ^1.2.11` · `@radix-ui/react-select ^2.2.6` · `@radix-ui/react-separator ^1.1.9` · `@radix-ui/react-slider ^1.4.0` · `@radix-ui/react-slot ^1.2.4` · `@radix-ui/react-switch ^1.3.0` · `@radix-ui/react-tabs ^1.1.14` · `@radix-ui/react-toggle ^1.1.11` · `@radix-ui/react-toggle-group ^1.1.12` · `@radix-ui/react-tooltip ^1.2.9` · `@stripe/react-stripe-js ^6.6.0` · `@stripe/stripe-js ^9.7.0` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^0.2.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^16.14.1` · `input-otp ^1.4.2` · `lucide-react ^1.17.0` · `next ^16.2.7` · `next-intl ^4.13.0` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.7` · `react-day-picker ^10.0.1` · `react-dom ^19.2.7` · `react-hook-form ^7.77.0` · `react-resizable-panels ^4.11.2` · `recharts 2.15.4` · `sharp ^0.34.5` · `sonner ^2.0.7` · `stripe ^22.2.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
+`@hookform/resolvers ^5.4.0` · `@opennextjs/cloudflare ^1.19.11` · `@radix-ui/react-accordion ^1.2.13` · `@radix-ui/react-alert-dialog ^1.1.16` · `@radix-ui/react-aspect-ratio ^1.1.9` · `@radix-ui/react-avatar ^1.1.12` · `@radix-ui/react-checkbox ^1.3.3` · `@radix-ui/react-collapsible ^1.1.13` · `@radix-ui/react-context-menu ^2.3.0` · `@radix-ui/react-dialog ^1.1.15` · `@radix-ui/react-dropdown-menu ^2.1.17` · `@radix-ui/react-hover-card ^1.1.16` · `@radix-ui/react-label ^2.1.8` · `@radix-ui/react-menubar ^1.1.17` · `@radix-ui/react-navigation-menu ^1.2.15` · `@radix-ui/react-popover ^1.1.16` · `@radix-ui/react-progress ^1.1.9` · `@radix-ui/react-radio-group ^1.4.0` · `@radix-ui/react-scroll-area ^1.2.11` · `@radix-ui/react-select ^2.2.6` · `@radix-ui/react-separator ^1.1.9` · `@radix-ui/react-slider ^1.4.0` · `@radix-ui/react-slot ^1.2.4` · `@radix-ui/react-switch ^1.3.0` · `@radix-ui/react-tabs ^1.1.14` · `@radix-ui/react-toggle ^1.1.11` · `@radix-ui/react-toggle-group ^1.1.12` · `@radix-ui/react-tooltip ^1.2.9` · `@stripe/react-stripe-js ^6.6.0` · `@stripe/stripe-js ^9.7.0` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^0.2.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^16.14.1` · `input-otp ^1.4.2` · `lucide-react ^1.17.0` · `next ^16.2.7` · `next-intl ^4.13.0` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.7` · `react-day-picker ^10.0.1` · `react-dom ^19.2.7` · `react-hook-form ^7.77.0` · `react-resizable-panels ^4.11.2` · `recharts 2.15.4` · `sharp ^0.35.0` · `sonner ^2.0.7` · `stripe ^22.2.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
 
 `node ^18.20.2 || >=20.9.0 · pnpm >=9`
 
@@ -120,4 +121,4 @@ Commercial / closed SaaS / SLA — contact `license@erpax.com`. Contributions un
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `fc442445-0cf7-8e93-af6e-457d846daad2`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `861c8a2d-75b4-8709-a795-36c92b4bf47b`, regenerated from the live tree; any drift fails the gate.</sub>
