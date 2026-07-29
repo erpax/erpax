@@ -38,9 +38,10 @@ function runVerify(atoms: readonly string[]): number {
  * `erpax gaps` — run the always-present gap scanner, instead of re-deriving it in a throwaway. The scanner is
  * self/improve.sendQuantumWaves + leftover.attraction, which have lived in the tree unused; this is their
  * standing caller, so the gap-finder is present AND used (and its own unfolded status is thereby closed).
+ * Ends by emitting THE next tip (audit → trinity) so the chat self-feed has fuel.
  */
 async function runGaps(): Promise<number> {
-  const { sendQuantumWaves } = await import('@/self/improve')
+  const { sendQuantumWaves, auditSelfDevGaps, emitNextTip, formatNextTip } = await import('@/self/improve')
   const { attraction } = await import('@/leftover')
   const cwd = process.cwd()
   const q = sendQuantumWaves(cwd)
@@ -48,8 +49,67 @@ async function runGaps(): Promise<number> {
   console.log(`  ${q.sites} surgical sites across ${q.states} fields, held as one coherent wave`)
   console.log(`  root ${q.root}\n  heaviest fields (one proof settles the most):`)
   for (const c of attraction(cwd).slice(0, 8)) console.log(`    ${String(c.pull).padStart(4)}  ${c.group}`)
-  console.log('\n  the scanner is present AND used — `pnpm erpax gaps`; do not re-derive it in a throwaway.')
-  return 0
+  console.log('\n  the scanner is present AND used — `pnpm erpax gaps`; do not re-derive it in a throwaway.\n')
+  return runTipEmit(cwd)
+}
+
+/**
+ * `erpax tip` — audit live gaps → score unblock/(cost×risk) → precise form·code·proof.
+ * Lean scanners by default (cheap Math count; leftover/attraction; admin TTFB residual).
+ */
+async function runTip(): Promise<number> {
+  return runTipEmit(process.cwd())
+}
+
+async function cheapMathSites(cwd: string): Promise<{ count: number; file: string | null }> {
+  const { execFileSync } = await import('node:child_process')
+  try {
+    const out = execFileSync(
+      'rg',
+      ['-n', String.raw`\bMath\.`, 'src', '--glob', '*.ts', '--glob', '*.tsx', '--glob', '!**/payload-types.ts', '--glob', '!**/translations.ts'],
+      { cwd, encoding: 'utf8', maxBuffer: 4_000_000 },
+    )
+    const lines = out.trim().split('\n').filter(Boolean)
+    if (lines.length === 0) return { count: 0, file: null }
+    const parts = lines[0]!.split(':')
+    return { count: lines.length, file: parts[0] && parts[1] ? `${parts[0]}:${parts[1]}` : null }
+  } catch (e) {
+    const err = e as { status?: number; stdout?: string }
+    if (err.status === 1) return { count: 0, file: null }
+    if (typeof err.stdout === 'string' && err.stdout.trim()) {
+      const lines = err.stdout.trim().split('\n').filter(Boolean)
+      const parts = lines[0]?.split(':')
+      return { count: lines.length, file: parts?.[0] && parts[1] ? `${parts[0]}:${parts[1]}` : null }
+    }
+    return { count: 0, file: null }
+  }
+}
+
+async function runTipEmit(cwd: string): Promise<number> {
+  const { auditSelfDevGaps, emitNextTip, formatNextTip, secretNamesPresent } = await import('@/self/improve')
+  const math = await cheapMathSites(cwd)
+  const secrets = secretNamesPresent(cwd)
+  const audit = auditSelfDevGaps({
+    cwd,
+    lean: true,
+    mathCount: math.count,
+    mathFile: math.file,
+    purifyHits: 0,
+    mcpFuseReady: secrets.any,
+    dryProofOk: false, // Law 44 — local process unpublished until publishDryProofBundle
+  })
+  const tip = emitNextTip({
+    cwd,
+    lean: true,
+    mathCount: audit.mathCount,
+    mathFile: math.file,
+    purifyHits: audit.purifyHits,
+    mcpFuseReady: audit.mcpFuseReady,
+    dryProofOk: audit.dryProofOk,
+    adminTtfbMs: audit.adminTtfbMs,
+  })
+  console.log(formatNextTip(tip, audit))
+  return tip.accepted ? 0 : 1
 }
 
 async function runFold(family?: string): Promise<number> {
@@ -107,6 +167,10 @@ export function runCli(argv: readonly string[]): number | Promise<number> {
 
   if (rawDomain === 'gaps') {
     return runGaps()
+  }
+
+  if (rawDomain === 'tip') {
+    return runTip()
   }
 
   if (rawDomain === 'local') {

@@ -3,6 +3,7 @@
  */
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
+import { createRequire } from 'node:module'
 import { formatCleanSummary } from '@/apply/clean'
 import { formatAutomateSummary } from '@/apply/automate'
 import { detectStalledProcesses, formatStallTable, killStalledProcesses } from '@/apply/stall-watch'
@@ -57,6 +58,8 @@ export interface DoctorReport {
     readonly baseline: number
     readonly ok: boolean
   }
+  /** Law 44 — local process has a fresh published dry-proof (warn only on quick doctor). */
+  readonly dryProof: { readonly ok: boolean; readonly reasons: readonly string[] }
 }
 
 /**
@@ -91,6 +94,16 @@ export function collectDoctorReport(cwd: string = process.cwd(), opts?: { readon
     }
   }
 
+  let dryProof: DoctorReport['dryProof'] = { ok: false, reasons: ['dry-proof checker unavailable'] }
+  try {
+    // Deferred — dry-proof pulls invariant/MCP surface; quick doctor still stays under rung.
+    const { checkDryProofPublished } = createRequire(import.meta.url)('@/proof/dry-proof') as typeof import('@/proof/dry-proof')
+    const r = checkDryProofPublished(process.env.ERPAX_ORIGIN ?? 'https://erpax.ceci.workers.dev')
+    dryProof = { ok: r.ok, reasons: r.reasons }
+  } catch {
+    /* leave unavailable */
+  }
+
   return {
     payload: payloadApprovalGate({ cwd }),
     strayTs: {
@@ -122,6 +135,7 @@ export function collectDoctorReport(cwd: string = process.cwd(), opts?: { readon
       baseline: computedBaseline('phrase-without-diamond', cwd),
       ok: snapshot.userWordUnproven.violationCount <= computedBaseline('phrase-without-diamond', cwd),
     },
+    dryProof,
   }
 }
 
@@ -165,6 +179,10 @@ export function formatDoctorReport(report: DoctorReport): string {
   const phraseMark = report.phraseWithoutDiamond.ok ? 'ok' : 'OVER baseline'
   lines.push(
     `  phrase-without-diamond ${report.phraseWithoutDiamond.count} (baseline ≤${report.phraseWithoutDiamond.baseline}) — ${phraseMark}`,
+  )
+  const dryMark = report.dryProof.ok ? 'ok' : 'GAP'
+  lines.push(
+    `  dry-proof      ${dryMark}${report.dryProof.ok ? '' : ` — ${report.dryProof.reasons[0] ?? 'unpublished'} (pnpm erpax doctor dry-proof)`}`,
   )
   lines.push(formatDoctorInventorySection())
   lines.push(`  ${realtimeDoctorLine()}`)
@@ -260,9 +278,36 @@ export async function runDoctorCorpus(cwd: string = process.cwd()): Promise<numb
   return 0
 }
 
+export function runDoctorDryProof(): number {
+  console.log('erpax doctor dry-proof — Law 44 publish gate\n')
+  try {
+    const { checkDryProofPublished, getCurrentProofBundle } = createRequire(import.meta.url)(
+      '@/proof/dry-proof',
+    ) as typeof import('@/proof/dry-proof')
+    const origin = process.env.ERPAX_ORIGIN ?? 'https://erpax.ceci.workers.dev'
+    const r = checkDryProofPublished(origin)
+    const current = getCurrentProofBundle()
+    console.log(`  published   ${current ? 'yes' : 'no'}`)
+    console.log(`  ok          ${r.ok}`)
+    if (current) {
+      console.log(`  uuid        ${current.contentUuid.slice(0, 12)}…`)
+      console.log(`  generated   ${current.generatedAt}`)
+    }
+    for (const reason of r.reasons) console.log(`  · ${reason}`)
+    if (!r.ok) {
+      console.log('\n  next: buildDryProofBundle → publishDryProofBundle → re-run; or pnpm erpax tip')
+    }
+    return r.ok ? 0 : 1
+  } catch (e) {
+    console.error(`  dry-proof unavailable: ${e instanceof Error ? e.message : String(e)}`)
+    return 1
+  }
+}
+
 export function runDoctor(cwd: string = process.cwd(), sub?: string): number | Promise<number> {
   if (sub === 'stalls') return runDoctorStalls()
   if (sub === 'corpus') return runDoctorCorpus(cwd)
+  if (sub === 'dry-proof' || sub === 'dryproof') return runDoctorDryProof()
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
   try {

@@ -214,6 +214,22 @@ export function loopResolves(cwd: string = process.cwd(), loop: readonly Stage[]
   return out
 }
 
+export {
+  auditSelfDevGaps,
+  planTrinity,
+  emitNextTip,
+  formatNextTip,
+  scoreGap,
+  isPreciseTip,
+  secretNamesPresent,
+  type GapKind,
+  type SelfDevGap,
+  type TrinityTip,
+  type SelfDevAudit,
+  type TipEmitOpts,
+  type GapScore,
+} from './tip'
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const c = selfImproves()
   const resolved = loopResolves()

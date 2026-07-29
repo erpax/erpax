@@ -38,12 +38,13 @@ export const DOMAIN_META: Record<string, DomainMeta> = {
   path: { summary: 'Path hooks registry emit', example: 'pnpm erpax path hooks' },
   gate: { summary: 'Full CI gate (standards · lint · test)', example: 'pnpm check' },
   doctor: { summary: 'Quick repo health snapshot', example: 'pnpm erpax doctor' },
+  tip: { summary: 'Emit next self-dev tip (audit→trinity)', example: 'pnpm erpax tip' },
   aliases: { summary: 'Legacy pnpm script → erpax map', example: 'pnpm erpax aliases' },
 }
 
 export const DOMAIN_GROUPS: readonly { readonly title: string; readonly domains: readonly string[] }[] = [
   { title: 'Corpus & docs', domains: ['readme', 'corpus', 'standards', 'translations', 'aura', 'harmony', 'plugin', 'spec'] },
-  { title: 'Quality gates', domains: ['gate', 'doctor', 'lint', 'test', 'rules', 'confirm', 'monitor'] },
+  { title: 'Quality gates', domains: ['gate', 'doctor', 'tip', 'lint', 'test', 'rules', 'confirm', 'monitor'] },
   { title: 'Session & apply', domains: ['apply', 'automate', 'clean', 'build', 'codemod', 'path'] },
   { title: 'Runtime & deploy', domains: ['payload', 'deploy', 'db', 'import', 'mcp', 'seeds'] },
   { title: 'Meta', domains: ['aliases'] },
