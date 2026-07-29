@@ -160,6 +160,17 @@ describe('quantum/ftl — chat (seal first)', () => {
     expect(a!.boundary.spacetime).toBe(0)
   })
 
+  it('chatLocal seals string theory asks (physics=false equation)', () => {
+    const st = chatLocal('what is string theory', BOOK)
+    expect(st).toBeDefined()
+    expect(st!.lane).toBe('seal')
+    expect(st!.tokens).toBe(0)
+    expect(st!.answer).toContain('threadModes')
+    expect(st!.answer).toContain('physics=false')
+    expect(chatLocal('string theory in chat', BOOK)?.answer).toContain('chatStringTheory')
+    expect(chatLocal('thread modes', BOOK)?.answer).toContain('threadModes')
+  })
+
   it('unknown question misses locally', () => {
     expect(chatLocal('unsealed novel question xyz', BOOK)).toBeUndefined()
   })

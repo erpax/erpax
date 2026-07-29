@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 /**
  * quantum/chat — a chat thread as a merkle chain: each message is a content-uuid, and the thread
  * folds its message-uuids into ONE chain-uuid (a tamper-evident history — change or reorder any
@@ -12,7 +12,14 @@ import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactT
 import { merge, toUuid } from '@/uuid/matrix'
 import { A432, NOTES } from '@/signal'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
-import { intervalRatio, tenneyHeight } from '@/harmony'
+import {
+  intervalRatio,
+  tenneyHeight,
+  bandHarmony,
+  consonance,
+  type Consonance,
+  type BandHarmony,
+} from '@/harmony'
 import { bind4 } from '@/merge'
 import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'
 import { consensusProof } from '@/theorem'
@@ -170,6 +177,103 @@ export function compose(uuid: string): Composition {
   let t = 0
   for (let i = 1; i < notes.length; i++) t += tenneyHeight(intervalRatio(notes[i - 1]!.horo, notes[i]!.horo))
   return { notes, rootFreq: A432, meanTenney: notes.length > 1 ? t / (notes.length - 1) : 0 }
+}
+
+// ── string theory (honest): the thread IS a 1D string ─────────────────────────
+// Physics string theory (10/11-d, Calabi–Yau, SUSY) has no honest computation here —
+// quantum/gaps names it as an open physics programme. The computable kernel:
+// a chat thread is a sequence of message-uuids (a 1D string); each leaf projects to
+// one horo mode; consecutive intervals are the vibration spectrum; bandHarmony is
+// resonance vs dissonance; compose(threadUuid) is the standing wave.
+// "Quantum" = content-addressed. "String" = the 1D thread. physics=false always.
+
+/** One mode of the thread-as-string: a message leaf → one horo degree (A432×ratio). */
+export interface StringMode {
+  readonly index: number
+  readonly messageUuid: string
+  readonly horo: HoroStep
+  readonly freq: number
+}
+
+/** One consecutive interval on the vibrating thread. */
+export interface StringInterval {
+  readonly from: number
+  readonly to: number
+  readonly ratio: readonly [number, number]
+  readonly tenney: number
+  readonly consonance: Consonance
+}
+
+/**
+ * Thread-as-string analysis — the honest string theory of chat.
+ * HONEST BOUNDARY: harmonic modes of a message sequence, NOT spacetime string physics.
+ */
+export interface ThreadString {
+  readonly thread: string
+  readonly modes: readonly StringMode[]
+  readonly spectrum: readonly StringInterval[]
+  readonly harmony: BandHarmony
+  /** standing wave = compose(threadUuid) — deterministic sonification of the whole string. */
+  readonly standing: Composition
+  /** resonant iff every consecutive interval is consonant (empty thread ⇒ true). */
+  readonly resonant: boolean
+  /** always false — physics string theory is not claimed. */
+  readonly physics: false
+}
+
+/** Project one message-uuid to its fundamental mode (first hex nibble → horo). */
+export function modeOf(messageUuid: string, index = 0): StringMode {
+  const hex = messageUuid.replace(/-/g, '')
+  const horo = HORO_DIGITS[parseInt(hex[0] ?? '0', 16) % HORO_DIGITS.length]! as HoroStep
+  const [n, d] = NOTES[horo].ratio
+  return { index, messageUuid, horo, freq: (A432 * n) / d }
+}
+
+/**
+ * Analyze a chat thread as a vibrating string: modes · spectrum · bandHarmony · standing wave.
+ * Deterministic: same messageUuids ⇒ same ThreadString (content-addressed).
+ */
+export function threadModes(messageUuids: readonly string[]): ThreadString {
+  const modes = messageUuids.map((u, i) => modeOf(u, i))
+  const spectrum: StringInterval[] = []
+  for (let i = 1; i < modes.length; i++) {
+    const ratio = intervalRatio(modes[i - 1]!.horo, modes[i]!.horo)
+    spectrum.push({
+      from: i - 1,
+      to: i,
+      ratio,
+      tenney: tenneyHeight(ratio),
+      consonance: consonance(ratio),
+    })
+  }
+  const thread = threadUuid(messageUuids)
+  return {
+    thread,
+    modes,
+    spectrum,
+    harmony: bandHarmony(modes.map((m) => m.horo)),
+    standing: compose(thread),
+    resonant: spectrum.length === 0 || spectrum.every((s) => s.consonance !== 'dissonant'),
+    physics: false,
+  }
+}
+
+/** Named API — agents ask "string theory"; this computes. Alias of threadModes. */
+export const stringTheory = threadModes
+
+/**
+ * Compact equation for seal books / chatLocal — one line agents can reuse at tokens=0.
+ * Derived from a live ThreadString so the seal text stays equation-shaped, not prose theater.
+ */
+export function stringTheoryEquation(t: ThreadString = threadModes([])): string {
+  return (
+    `stringTheory=threadModes(messageUuids): modes=${t.modes.length}` +
+    ` · resonant=${t.resonant}` +
+    ` · meanTenney=${t.harmony.meanTenney}` +
+    ` · consonantFraction=${t.harmony.consonantFraction}` +
+    ` · physics=${t.physics}` +
+    ` · standing=compose(threadUuid); NOT Calabi–Yau/SUSY`
+  )
 }
 
 // ── chat sessions — the bounded, sealed unit that improves Payload ────────────
@@ -612,6 +716,13 @@ export async function improveClaim(
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/chat — thread = merkle chain of message-uuids:')
   console.log('  thread([a,b]) = ' + threadUuid(['a', 'b']).slice(0, 8) + '… · appended changes it = ' + appended(['a', 'b'], 'c'))
+  const demo = threadModes([
+    '11111111-1111-8111-8111-111111111111',
+    '22222222-2222-8222-8222-222222222222',
+  ])
+  console.log(
+    `  stringTheory: modes=${demo.modes.length} · resonant=${demo.resonant} · physics=${demo.physics} · meanTenney=${demo.harmony.meanTenney}`,
+  )
 }
 
 // ── free chat fused — ceccec.psg.bg local-first architectural FTL ─────────────
@@ -663,6 +774,22 @@ export async function chatFreeAsk(
     `free-chat[${answer.lane}|tokens=${answer.tokens}|reused=${answer.reused}]: ${answer.answer}`,
   )
   return { session: next, answer }
+}
+
+/**
+ * Fold the honest string theory of this session's thread into the session.
+ * Computes threadModes(session.messageUuids); physics=false; tokens not spent.
+ */
+export function chatStringTheory(session: ChatSession): {
+  readonly session: ChatSession
+  readonly theory: ThreadString
+} {
+  const theory = threadModes(session.messageUuids)
+  const next = sessionAppend(
+    session,
+    `string-theory[modes=${theory.modes.length}|resonant=${theory.resonant}|meanTenney=${theory.harmony.meanTenney}|consonantFraction=${theory.harmony.consonantFraction}|physics=${theory.physics}|thread=${theory.thread}]`,
+  )
+  return { session: next, theory }
 }
 
 /**

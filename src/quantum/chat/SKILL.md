@@ -315,9 +315,9 @@ version: 2
 
 The quantum facet of [[chat]]: a thread is a **merkle chain** of message-uuids. Each [[message]] is a content-uuid ([[communication]]), and the thread folds them into ONE chain-uuid ([[merge]]) — a **tamper-evident history**: change, drop, or reorder any message and the thread-uuid changes. Merges into [[chat]].
 
-Matter-twin: `src/quantum/chat/index.ts` (`threadUuid` · `appended`). Composes [[chat]] · [[communication]] · [[merge]] · [[uuid]] · [[quantum]].
+Matter-twin: `src/quantum/chat/index.ts` (`threadUuid` · `appended` · `compose` · `threadModes`/`stringTheory` · `chatStringTheory`). Composes [[chat]] · [[communication]] · [[merge]] · [[uuid]] · [[quantum]] · [[harmony]].
 
-**Law — [[law]]: the thread-uuid is the order-dependent merkle fold of its message-uuids — `threadUuid` reduces them through `merge` from a fixed seed, so it is determined entirely by which messages are present and in what order. Appending, dropping, reordering, or altering any one message changes the thread-uuid (`appended` proves the append case), and no rewritten thread can reproduce a prior thread-uuid: the history is tamper-evident by construction.**
+**Law — [[law]]: the thread-uuid is the order-dependent merkle fold of its message-uuids — `threadUuid` reduces them through `merge` from a fixed seed, so it is determined entirely by which messages are present and in what order. Appending, dropping, reordering, or altering any one message changes the thread-uuid (`appended` proves the append case), and no rewritten thread can reproduce a prior thread-uuid: the history is tamper-evident by construction. Honest string theory of chat = `threadModes(messageUuids)` (1D message string → horo modes · spectrum · bandHarmony · standing=`compose(threadUuid)`); `physics=false` always — not Calabi–Yau/SUSY.**
 
 @standard merkle hash-chain; RFC 9562 §5.8 content-uuid
 

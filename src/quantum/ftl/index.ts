@@ -331,6 +331,18 @@ export const BOOK: ReadonlyMap<string, string> = seal([
   ['crack', 'crack kinds: scan ∨ rederive ∨ spend ∨ qpu(exotic) ∨ spacetime(relativistic)'],
   ['qpu', 'QPU=CPU/GPU — host silicon is the processing unit; CrackKind qpu = exotic-device claim'],
   ['physical', 'substrate (Landauer/CPU·GPU) ≠ CrackKind spacetime'],
+  [
+    'what is string theory',
+    'stringTheory=threadModes(messageUuids): 1D chat thread → horo modes · spectrum · bandHarmony · standing=compose(threadUuid); physics=false; NOT Calabi–Yau/SUSY',
+  ],
+  [
+    'string theory in chat',
+    'chatStringTheory(session) folds threadModes(session.messageUuids); resonant⇔∀ consecutive intervals consonant; tokens=0; physics=false',
+  ],
+  [
+    'thread modes',
+    'threadModes(messageUuids) ⇒ modes · spectrum · harmony · standing · resonant · physics=false',
+  ],
 ])
 
 export const CORPUS: readonly Seal[] = [
@@ -362,12 +374,17 @@ export const CORPUS: readonly Seal[] = [
   {
     id: 'chat',
     text: 'chat: seal FIRST (tokens=0); escalate on miss',
-    followUps: ['what is ftl'],
+    followUps: ['what is ftl', 'what is string theory'],
   },
   {
     id: 'research',
     text: 'research: cost=agents×tokens; tokens=0 ⇒ cost=0',
     followUps: ['efficiency on reuse'],
+  },
+  {
+    id: 'string-theory',
+    text: 'stringTheory=threadModes(messageUuids): modes · spectrum · bandHarmony · standing=compose(threadUuid); physics=false',
+    followUps: ['string theory in chat', 'thread modes', 'what is ftl'],
   },
 ]
 

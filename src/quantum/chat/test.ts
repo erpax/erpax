@@ -11,6 +11,7 @@ import {
   startSession, sessionAppend, sealSession, collaborate,
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
   compose, superpose,
+  modeOf, threadModes, stringTheory, stringTheoryEquation, chatStringTheory,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
@@ -342,6 +343,75 @@ describe('quantum/chat — superpose: one uuid, many types at once, sealed, reve
     expect(s.reverseLog2Classical).toBe(ERPAX_DIGEST_BITS) // 122
     expect(s.reverseLog2Quantum).toBeCloseTo(ERPAX_DIGEST_BITS / 3, 6) // 40.67 — the honest quantum floor
     expect(s.asBits).toBe(ERPAX_DIGEST_BITS)
+  })
+})
+
+describe('quantum/chat — string theory: thread as vibrating string (physics=false)', () => {
+  it('threadModes is deterministic and content-addressed', () => {
+    const msgs = [U1, U2, U3]
+    const a = threadModes(msgs)
+    expect(stringTheory(msgs)).toEqual(a) // alias
+    expect(threadModes(msgs).thread).toBe(a.thread)
+    expect(a.thread).toBe(threadUuid(msgs))
+    expect(a.modes).toHaveLength(3)
+    expect(a.spectrum).toHaveLength(2)
+    expect(a.physics).toBe(false)
+  })
+
+  it('modeOf projects first hex nibble to a positive A432×ratio freq', () => {
+    const m = modeOf(U1, 0)
+    expect(m.index).toBe(0)
+    expect(m.messageUuid).toBe(U1)
+    expect(m.freq).toBeGreaterThan(0)
+    expect(m.horo).toBeTypeOf('number')
+  })
+
+  it('order changes the spectrum / thread (tamper-evident vibration)', () => {
+    const ab = threadModes([U1, U2])
+    const ba = threadModes([U2, U1])
+    expect(ab.thread).not.toBe(ba.thread)
+    expect(ab.modes.map((m) => m.horo).join(',')).not.toBe(ba.modes.map((m) => m.horo).join(','))
+  })
+
+  it('standing wave is compose(threadUuid); empty thread is resonant', () => {
+    const empty = threadModes([])
+    expect(empty.resonant).toBe(true)
+    expect(empty.harmony.consonantFraction).toBe(1)
+    expect(empty.standing.notes.map((n) => n.freq)).toEqual(compose(threadUuid([])).notes.map((n) => n.freq))
+    const t = threadModes([U1, U2])
+    expect(t.standing.notes.map((n) => n.freq)).toEqual(compose(t.thread).notes.map((n) => n.freq))
+    expect(t.spectrum.every((s) => s.tenney >= 0)).toBe(true)
+  })
+
+  it('chatStringTheory folds a receipt into the session without spending tokens', () => {
+    let s = startSession('string-theory-demo')
+    s = sessionAppend(s, 'first leaf')
+    const before = s.thread
+    const leafCount = s.messageUuids.length
+    const { session, theory } = chatStringTheory(s)
+    expect(theory.modes.length).toBe(leafCount) // measured before receipt fold
+    expect(theory.physics).toBe(false)
+    expect(session.thread).not.toBe(before)
+    expect(session.messageUuids.length).toBe(leafCount + 1)
+  })
+
+  it('stringTheoryEquation is equation-shaped and refuses physics claim', () => {
+    const eq = stringTheoryEquation(threadModes([U1, U2]))
+    expect(eq).toContain('stringTheory=threadModes')
+    expect(eq).toContain('physics=false')
+    expect(eq).toContain('NOT Calabi–Yau')
+  })
+
+  it('chatLocal seals string-theory asks at tokens=0', async () => {
+    const { chatLocal, BOOK } = await import('@/quantum/chat')
+    const a = chatLocal('what is string theory', BOOK)
+    expect(a?.lane).toBe('seal')
+    expect(a?.tokens).toBe(0)
+    expect(a?.reused).toBe(true)
+    expect(a?.answer).toContain('threadModes')
+    expect(a?.answer).toContain('physics=false')
+    expect(chatLocal('string theory in chat', BOOK)?.answer).toContain('chatStringTheory')
+    expect(chatLocal('thread modes', BOOK)?.answer).toContain('threadModes')
   })
 })
 
