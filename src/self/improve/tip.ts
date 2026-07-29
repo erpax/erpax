@@ -486,7 +486,7 @@ export function planTrinity(gap: SelfDevGap): Omit<TrinityTip, 'continuation' | 
     case 'math':
       return {
         form: `Replace host Math.* at ${file ?? 'first violation'} with @/algebra exact* ops.`,
-        code: `rg -n '\\bMath\\.' ${file?.split(':')[0] ?? 'src'} ; replace; PAYLOAD_TEST_SKIP_MIGRATE=1 pnpm erpax verify algebra/host`,
+        code: `hostMathViolations() // codeOf strips comments/JSDoc/strings; replace call site at ${file ?? 'first hit'}; PAYLOAD_TEST_SKIP_MIGRATE=1 pnpm erpax verify algebra/host`,
         proof: `hostMathViolations().length === 0`,
         gap,
         nextAsks,

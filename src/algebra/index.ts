@@ -404,6 +404,8 @@ export function seededIdGen(seed: number) {
 
 export {
   hostMathViolations,
+  hostMathTipSite,
+  codeOf,
   ALGEBRA_ATOMS,
   HOST_MATH_RE,
   type HostMathViolation,

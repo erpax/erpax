@@ -161,6 +161,18 @@ export function hostMathViolations(cwd: string = process.cwd()): readonly HostMa
   return out
 }
 
+/**
+ * Lean tip / feed-scanner Math score — same truth as the host gate.
+ * Comments, JSDoc, and string literals mentioning `Math.` never count (via codeOf).
+ */
+export function hostMathTipSite(cwd: string = process.cwd()): {
+  readonly count: number
+  readonly file: string | null
+} {
+  const v = hostMathViolations(cwd)
+  return { count: v.length, file: v[0] ? `${v[0]!.file}:${v[0]!.line}` : null }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const v = hostMathViolations()
   console.log(`algebra/host — host-math violations: ${v.length} (baseline 0)`)

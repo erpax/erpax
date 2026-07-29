@@ -61,28 +61,13 @@ async function runTip(): Promise<number> {
   return runTipEmit(process.cwd())
 }
 
+/**
+ * Lean tip Math score — DRY with algebra/host (codeOf strips comments · JSDoc · strings).
+ * Raw `rg '\\bMath\\.'` is NOT the feed: it false-tips prose like `no host Math.*`.
+ */
 async function cheapMathSites(cwd: string): Promise<{ count: number; file: string | null }> {
-  const { execFileSync } = await import('node:child_process')
-  try {
-    const out = execFileSync(
-      'rg',
-      ['-n', String.raw`\bMath\.`, 'src', '--glob', '*.ts', '--glob', '*.tsx', '--glob', '!**/payload-types.ts', '--glob', '!**/translations.ts'],
-      { cwd, encoding: 'utf8', maxBuffer: 4_000_000 },
-    )
-    const lines = out.trim().split('\n').filter(Boolean)
-    if (lines.length === 0) return { count: 0, file: null }
-    const parts = lines[0]!.split(':')
-    return { count: lines.length, file: parts[0] && parts[1] ? `${parts[0]}:${parts[1]}` : null }
-  } catch (e) {
-    const err = e as { status?: number; stdout?: string }
-    if (err.status === 1) return { count: 0, file: null }
-    if (typeof err.stdout === 'string' && err.stdout.trim()) {
-      const lines = err.stdout.trim().split('\n').filter(Boolean)
-      const parts = lines[0]?.split(':')
-      return { count: lines.length, file: parts?.[0] && parts[1] ? `${parts[0]}:${parts[1]}` : null }
-    }
-    return { count: 0, file: null }
-  }
+  const { hostMathTipSite } = await import('@/algebra/host')
+  return hostMathTipSite(cwd)
 }
 
 async function runTipEmit(cwd: string): Promise<number> {
