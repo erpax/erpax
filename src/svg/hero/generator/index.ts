@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, exactImul } from '@/algebra'
 /**
  * Auto-generated SVG hero images for product pages.
  *
@@ -43,7 +43,7 @@ function hueFor(s: string): number {
   let h = 2166136261
   for (let i = 0; i < s.length; i++) {
     h ^= s.charCodeAt(i)
-    h = Math.imul(h, 16777619)
+    h = exactImul(h, 16777619)
   }
   return exactAbs(h) % 360
 }

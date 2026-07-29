@@ -120,7 +120,7 @@ export function apportion(pot: number, weights: number[]): number[] {
   const effective = total > 0 ? nonNeg : nonNeg.map(() => 1)
   const effTotal = total > 0 ? total : n
   const exact = effective.map((w) => (pot * w) / effTotal)
-  const shares = exact.map(Math.floor)
+  const shares = exact.map(exactFloor)
   const remainder = pot - shares.reduce((s, f) => s + f, 0)
   // hand the leftover integer units to the largest fractional parts (ties: lower index)
   const order = exact

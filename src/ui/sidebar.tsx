@@ -5,6 +5,7 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import { PanelLeft } from "lucide-react"
 
+import { exactFloor, seededRng } from "@/algebra"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/ui/utils"
 import { Button } from "@/ui/button"
@@ -660,8 +661,8 @@ const SidebarMenuSkeleton = React.forwardRef<
     showIcon?: boolean
   }
 >(({ className, showIcon = false, ...props }, ref) => {
-  // Random width between 50 to 90% (stable per mount).
-  const [width] = React.useState(() => `${Math.floor(Math.random() * 40) + 50}%`)
+  // Deterministic skeleton width 50–90% via algebra seededRng + exactFloor (stable per mount).
+  const [width] = React.useState(() => `${exactFloor(seededRng(0x51deba4)() * 40) + 50}%`)
 
   return (
     <div

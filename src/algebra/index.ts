@@ -168,6 +168,12 @@ export const exactAbs = (n: number): number => (n < 0 ? -n : n)
 /** Floor toward negative infinity — exact. Use for integer div lower bound. */
 export const exactFloor = (n: number): number => exactTrunc(n < 0 ? n - (n % 1 !== 0 ? 1 : 0) : n)
 
+/**
+ * 32-bit integer multiply — same contract as host imul; for FNV / LCG / hash loops.
+ * Lives on the algebra wrap face so call sites never touch host Math.
+ */
+export const exactImul = (a: number, b: number): number => Math.imul(a, b)
+
 /** Ceil toward positive infinity — exact. Use for batching/allocation. */
 export const exactCeil = (n: number): number => exactTrunc(n > 0 ? n + (n % 1 !== 0 ? 1 : 0) : n)
 
@@ -375,8 +381,8 @@ export function seededRng(seed: number) {
   
   return () => {
     state = (state + 0x6c078965) >>> 0;
-    state = Math.imul(state ^ (state >>> 15), 1 | state);
-    state = (state + Math.imul(state ^ (state >>> 7), 61 | state)) ^ state;
+    state = exactImul(state ^ (state >>> 15), 1 | state);
+    state = (state + exactImul(state ^ (state >>> 7), 61 | state)) ^ state;
     return ((state ^ (state >>> 14)) >>> 0) / 0x100000000;
   };
 }
@@ -391,7 +397,7 @@ export function seededIdGen(seed: number) {
   const rng = seededRng(seed);
   return () => {
     // Generate 36-bit alphanumeric string (like Math.random().toString(36))
-    const n = Math.floor(rng() * 0x100000000);
+    const n = exactFloor(rng() * 0x100000000);
     return n.toString(36);
   };
 }

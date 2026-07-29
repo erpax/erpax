@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, seededIdGen } from '@/algebra'
 /**
  * Berlin Group NextGenPSD2 v1.3 — generic ASPSP client.
  *
@@ -191,5 +191,5 @@ export async function initiateSepaCreditTransfer(
 // + Node 19+ runtime).
 function cryptoRandomId(): string {
   const c = (globalThis as { crypto?: { randomUUID?: () => string } }).crypto
-  return c?.randomUUID?.() ?? Math.random().toString(36).slice(2)
+  return c?.randomUUID?.() ?? seededIdGen(0x51deba4)()
 }

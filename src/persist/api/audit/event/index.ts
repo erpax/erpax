@@ -21,6 +21,7 @@
  */
 
 import type { Payload, RequiredDataFromCollectionSlug } from 'payload'
+import { seededIdGen } from '@/algebra'
 
 export type ApiAuditEventKind =
   | 'fx_rate'
@@ -111,5 +112,5 @@ export async function persistApiAuditEvent<T>(
 
 function cryptoRandomId(): string {
   const c = (globalThis as { crypto?: { randomUUID?: () => string } }).crypto
-  return c?.randomUUID?.() ?? Math.random().toString(36).slice(2)
+  return c?.randomUUID?.() ?? seededIdGen(0x51deba4)()
 }

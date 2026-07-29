@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog10 } from '@/algebra'
 /**
  * resource-bound — the THERMODYNAMIC half of the tamper proof (Conservation Law 55,
  * physical form). `tamper-reverse-cost` gives the forge cost in BITS (2^k × depth ×
@@ -44,7 +44,7 @@ export const LANDAUER_FLOOR_JOULES = 2.61e-23
  * but 256·log10(2) is). A lower bound on any 2^bits brute force.
  */
 export function energyLog10Joules(bits: number): number {
-  return bits * Math.log10(2) + Math.log10(LANDAUER_FLOOR_JOULES)
+  return bits * algebraLog10(2) + algebraLog10(LANDAUER_FLOOR_JOULES)
 }
 
 /** An energy budget an attacker might command, as log10(joules), with its provenance. */
@@ -97,6 +97,6 @@ export function proveBeyondResources(cost: TamperReverseCost): ResourceVerdict {
     largestBudgetExceeded: largestBudgetExceeded(cost.totalBits)?.name ?? null,
     beyondUniverse: beyondUniverse(cost.totalBits),
     verifyOps,
-    asymmetryLog10: cost.totalBits * Math.log10(2) - Math.log10(verifyOps),
+    asymmetryLog10: cost.totalBits * algebraLog10(2) - algebraLog10(verifyOps),
   }
 }

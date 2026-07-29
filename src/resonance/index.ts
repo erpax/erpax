@@ -76,7 +76,7 @@ export function dedupMagnitude(n: number, classes: number): ResonanceMagnitude {
 export function linkProof(n: number): ResonanceMagnitude {
   const path = n < 2 ? 0 : exactCeil(algebraLog2(n)) // the Merkle inclusion-proof depth
   const ratio = path > 0 ? n / path : 1
-  return { n, pairwise: n, addressed: exactMax(1, path), ratio, orders: Math.log10(exactMax(1, ratio)) }
+  return { n, pairwise: n, addressed: exactMax(1, path), ratio, orders: algebraLog10(exactMax(1, ratio)) }
 }
 
 export interface CrackLeak {

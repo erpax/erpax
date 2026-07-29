@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { algebraLog10 } from '@/algebra'
 import { resonanceMagnitude, dedupMagnitude, linkProof, crackLeak, reactiveFrontier } from './index'
 import { foldToRoot, merkleProof, verifyMerkleProof } from '@/merge'
 import { createHash } from 'node:crypto'
@@ -18,7 +19,7 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
       const r = resonanceMagnitude(n)
       expect(r.pairwise).toBe((n * (n - 1)) / 2)
       expect(r.ratio).toBe((n - 1) / 2)
-      expect(r.orders).toBeCloseTo(Math.log10((n - 1) / 2), 9)
+      expect(r.orders).toBeCloseTo(algebraLog10((n - 1) / 2), 9)
     }
   })
 
@@ -46,7 +47,7 @@ describe('resonance — the address collapses O(N²) to O(N), in orders of magni
     const r = linkProof(442)
     expect(r.addressed).toBe(9) // ⌈log₂ 442⌉ — the inclusion-proof depth
     expect(r.ratio).toBeCloseTo(442 / 9, 5) // ≈ 49.1
-    expect(r.orders).toBeCloseTo(Math.log10(442 / 9), 5) // ≈ 1.69
+    expect(r.orders).toBeCloseTo(algebraLog10(442 / 9), 5) // ≈ 1.69
   })
 
   it('the link IS the proof — a REAL sha256 hash tree over 442 addresses, path measured not asserted', () => {

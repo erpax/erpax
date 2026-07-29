@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { exactImul } from '@/algebra'
 import { seal, open, shred } from '@/beyond/erasure'
 import type { Cipher, KeyVault } from '@/beyond/erasure'
 
@@ -20,7 +21,7 @@ const uuidOf = (s: string): string => {
   let h = 0x811c9dc5
   for (let i = 0; i < s.length; i++) {
     h ^= s.charCodeAt(i)
-    h = Math.imul(h, 0x01000193) >>> 0
+    h = exactImul(h, 0x01000193) >>> 0
   }
   return h.toString(16).padStart(8, '0')
 }
