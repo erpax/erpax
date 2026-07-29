@@ -23,6 +23,9 @@ export const ADMIN_MATRIX_SPACE = 3105 as const
 /** Stable query address for the admin boot shell (content-addressed reuse). */
 export const ADMIN_BOOT_QUERY = 'admin:boot:shell' as const
 
+/** Idle gap before dashboard corpus walks — amortize past first paint. */
+export const ADMIN_IDLE_DEFER_MS = 2_500 as const
+
 /** CSS surface facets for Payload admin — never recomputed from diamond/fs on boot. */
 export const ADMIN_UI_SURFACE = {
   kind: 'admin' as const,
@@ -103,6 +106,8 @@ export interface AdminBootShell {
   readonly clientMatrixStubbed: true
   /** First paint: no poll; panels opt-in after idle. */
   readonly pollMs: 0
+  /** Dashboard heavy scans wait this long (ms) so first paint is not blocked. */
+  readonly idleDeferMs: typeof ADMIN_IDLE_DEFER_MS
   readonly query: typeof ADMIN_BOOT_QUERY
   readonly address: string
 }
@@ -120,6 +125,7 @@ export function adminBootShell(opts: AdminBootOpts = {}): AdminBootShell {
     deferHeavyProviders: true,
     clientMatrixStubbed: true,
     pollMs: 0,
+    idleDeferMs: ADMIN_IDLE_DEFER_MS,
     query: ADMIN_BOOT_QUERY,
     address: proof.reuse.address,
   }

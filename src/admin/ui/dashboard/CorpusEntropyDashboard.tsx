@@ -6,6 +6,7 @@ import {
   loadCorpusEntropyRollup,
   type CorpusDashboardMetrics,
 } from '@/admin/ui'
+import { adminBootShell } from '@/quantum/ftl/admin'
 import {
   Alert,
   AlertDescription,
@@ -25,6 +26,8 @@ import {
 } from '@/ui'
 import React, { useEffect, useMemo, useState } from 'react'
 
+const boot = adminBootShell({ reuses: 1 })
+
 /** Admin afterDashboard — corpus entropy/seal rollup (eb units). */
 const CorpusEntropyDashboard: React.FC = () => {
   const shell = useMemo(() => loadCorpusDashboardShell(), [])
@@ -34,15 +37,17 @@ const CorpusEntropyDashboard: React.FC = () => {
 
   useEffect(() => {
     let cancelled = false
-    queueMicrotask(() => {
+    // FTL: shell paints first; defer corpus walk past idle (scan∧address crack).
+    const id = window.setTimeout(() => {
       const metrics = loadCorpusEntropyRollup()
       if (!cancelled) {
         setRollup(metrics)
         setLoadingRollup(false)
       }
-    })
+    }, boot.idleDeferMs)
     return () => {
       cancelled = true
+      window.clearTimeout(id)
     }
   }, [])
 

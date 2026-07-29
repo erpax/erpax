@@ -12,7 +12,11 @@ import React from 'react'
 const boot = adminBootShell({ reuses: 1 })
 
 const AdminQuantumDashboard: React.FC = () => (
-  <QuantumDimensionsProvider pollMs={30_000} emitOnChange deferMs={boot.pollMs === 0 ? 1 : 0}>
+  <QuantumDimensionsProvider
+    pollMs={boot.pollMs}
+    emitOnChange
+    deferMs={boot.idleDeferMs}
+  >
     <RadixDimensionPanel />
   </QuantumDimensionsProvider>
 )

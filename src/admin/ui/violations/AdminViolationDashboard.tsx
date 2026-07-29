@@ -13,10 +13,10 @@ const boot = adminBootShell({ reuses: 1 })
 
 const AdminViolationDashboard: React.FC = () => (
   <ViolationMonitorProvider
-    pollMs={30_000}
+    pollMs={boot.pollMs}
     emitOnChange
     improveOnDetect={false}
-    deferMs={boot.pollMs === 0 ? 1 : 0}
+    deferMs={boot.idleDeferMs}
   >
     <ViolationMonitorPanel />
   </ViolationMonitorProvider>

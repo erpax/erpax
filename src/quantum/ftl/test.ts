@@ -122,6 +122,7 @@ describe('quantum/ftl — token folds', () => {
     expect(shell.deferHeavyProviders).toBe(true)
     expect(shell.clientMatrixStubbed).toBe(true)
     expect(shell.pollMs).toBe(0)
+    expect(shell.idleDeferMs).toBeGreaterThan(0)
     expect(shell.surface).toEqual(ADMIN_UI_SURFACE)
     expect(shell.query).toBe(ADMIN_BOOT_QUERY)
 
