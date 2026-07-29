@@ -1,53 +1,207 @@
+diff --git a/dist/endpoints/mcp.js b/dist/endpoints/mcp.js
+index 7b6b62d82ed708d679e329d43c424595c39b81b1..cb26b6fc35d0bf0064e865aefd458deb552793d2 100644
+--- a/dist/endpoints/mcp.js
++++ b/dist/endpoints/mcp.js
+@@ -1,71 +1,91 @@
+-import crypto from 'crypto';
+-import { UnauthorizedError } from 'payload';
+-import { createRequestFromPayloadRequest } from '../mcp/createRequest.js';
+-import { getMCPHandler } from '../mcp/getMcpHandler.js';
++import crypto from 'crypto'
++import { UnauthorizedError } from 'payload'
++import { createRequestFromPayloadRequest } from '../mcp/createRequest.js'
++import { getMCPHandler } from '../mcp/getMcpHandler.js'
++
++/** erpax/Workers: capture JSON-RPC body before anything else locks the stream. */
++async function captureBodyText(req) {
++  try {
++    const raw = req.body
++    if (typeof raw === 'string') return raw
++    if (raw instanceof Uint8Array || raw instanceof ArrayBuffer) {
++      return new TextDecoder().decode(raw)
++    }
++    if (raw && typeof raw === 'object' && typeof raw.getReader !== 'function') {
++      return JSON.stringify(raw)
++    }
++    if (raw && typeof raw.getReader === 'function' && !raw.locked) {
++      return await new Response(raw).text()
++    }
++  } catch {
++    /* fall through */
++  }
++  try {
++    const data = req.data ?? req.payloadData
++    if (data != null) return JSON.stringify(data)
++  } catch {
++    /* fall through */
++  }
++  return undefined
++}
++
+ export const initializeMCPHandler = (pluginOptions)=>{
+     const mcpHandler = async (req)=>{
+-        const { payload } = req;
+-        const MCPOptions = pluginOptions.mcp || {};
+-        const MCPHandlerOptions = MCPOptions.handlerOptions || {};
+-        const useVerboseLogs = MCPHandlerOptions.verboseLogs ?? false;
+-        req.payloadAPI = 'MCP';
++        const bodyText = await captureBodyText(req)
++        const { payload } = req
++        const MCPOptions = pluginOptions.mcp || {}
++        const MCPHandlerOptions = MCPOptions.handlerOptions || {}
++        const useVerboseLogs = MCPHandlerOptions.verboseLogs ?? false
++        req.payloadAPI = 'MCP'
+         const getDefaultMcpAccessSettings = async (overrideApiKey)=>{
+-            const apiKey = overrideApiKey ?? req.headers.get('Authorization')?.startsWith('Bearer ') ? req.headers.get('Authorization')?.replace('Bearer ', '').trim() : null;
++            const apiKey = overrideApiKey ?? req.headers.get('Authorization')?.startsWith('Bearer ') ? req.headers.get('Authorization')?.replace('Bearer ', '').trim() : null
+             if (apiKey === null) {
+-                throw new UnauthorizedError();
++                throw new UnauthorizedError()
+             }
+-            const sha256APIKeyIndex = crypto.createHmac('sha256', payload.secret).update(apiKey || '').digest('hex');
++            const sha256APIKeyIndex = crypto.createHmac('sha256', payload.secret).update(apiKey || '').digest('hex')
+             const where = {
+                 apiKeyIndex: {
+                     equals: sha256APIKeyIndex
+                 }
+-            };
++            }
+             const { docs } = await payload.find({
+                 collection: 'payload-mcp-api-keys',
+                 depth: 1,
+                 limit: 1,
+                 pagination: false,
+                 where
+-            });
++            })
+             if (docs.length === 0) {
+-                throw new UnauthorizedError();
++                throw new UnauthorizedError()
+             }
+             if (useVerboseLogs) {
+-                payload.logger.info('[payload-mcp] API Key is valid');
++                payload.logger.info('[payload-mcp] API Key is valid')
+             }
+-            const user = docs[0]?.user;
+-            user.collection = pluginOptions.userCollection;
+-            user._strategy = 'mcp-api-key';
+-            return docs[0];
+-        };
+-        const mcpAccessSettings = pluginOptions.overrideAuth ? await pluginOptions.overrideAuth(req, getDefaultMcpAccessSettings) : await getDefaultMcpAccessSettings();
+-        // @modelcontextprotocol/sdk's StreamableHTTPServerTransport uses @hono/node-server's
+-        // getRequestListener, which replaces global.Request and global.Response with Hono
+-        // custom classes. Unfortunately, we cannot pass overrideGlobalObjects: false because the option is
+-        // consumed inside the SDK transport and is not exposed to callers.
+-        // Save originals here and restore after the handler resolves so that Next.js
+-        // instanceof Response checks on subsequent route handlers keep working.
+-        const globals = globalThis;
+-        const originalResponse = globals['Response'];
+-        const originalRequest = globals['Request'];
+-        const handler = getMCPHandler(pluginOptions, mcpAccessSettings, req);
+-        const request = createRequestFromPayloadRequest(req);
++            const user = docs[0]?.user
++            user.collection = pluginOptions.userCollection
++            user._strategy = 'mcp-api-key'
++            return docs[0]
++        }
++        const mcpAccessSettings = pluginOptions.overrideAuth ? await pluginOptions.overrideAuth(req, getDefaultMcpAccessSettings) : await getDefaultMcpAccessSettings()
++        const globals = globalThis
++        const originalResponse = globals['Response']
++        const originalRequest = globals['Request']
++        const handler = getMCPHandler(pluginOptions, mcpAccessSettings, req)
++        const request = createRequestFromPayloadRequest(req, bodyText)
+         try {
+-            return await handler(request);
++            return await handler(request)
+         } finally{
+             if (globals['Response'] !== originalResponse) {
+                 Object.defineProperty(globalThis, 'Response', {
+                     value: originalResponse
+-                });
++                })
+             }
+             if (globals['Request'] !== originalRequest) {
+                 Object.defineProperty(globalThis, 'Request', {
+                     value: originalRequest
+-                });
++                })
+             }
+         }
+-    };
+-    return mcpHandler;
+-};
+-
+-//# sourceMappingURL=mcp.js.map
+\ No newline at end of file
++    }
++    return mcpHandler
++}
 diff --git a/dist/mcp/createRequest.js b/dist/mcp/createRequest.js
-index cfbf3f0ddcfb6d310f70fd4d70553bc174d63488..350c59396434938f45c75d4c81f080fde7a9b6d5 100644
+index cfbf3f0ddcfb6d310f70fd4d70553bc174d63488..be099ad051538e62c9920068eab95e9984fa67c7 100644
 --- a/dist/mcp/createRequest.js
 +++ b/dist/mcp/createRequest.js
-@@ -3,12 +3,37 @@ export const createRequestFromPayloadRequest = (req)=>{
+@@ -1,14 +1,49 @@
+-import { AuthenticationError } from 'payload';
+-export const createRequestFromPayloadRequest = (req)=>{
++import { AuthenticationError } from 'payload'
++/**
++ * @param req Payload request
++ * @param bodyOverride optional pre-captured JSON-RPC body text (Workers)
++ */
++export const createRequestFromPayloadRequest = (req, bodyOverride)=>{
      if (!req.url) {
-         throw new AuthenticationError();
+-        throw new AuthenticationError();
++        throw new AuthenticationError()
      }
 -    return new Request(req.url, {
 -        body: req.body,
 -        duplex: 'half',
 -        headers: req.headers,
 +    // erpax/Workers: Payload may have already consumed the body stream.
-+    // Re-feeding a spent stream (or a parsed object) with duplex:'half' hangs
-+    // the isolate with zero bytes. Re-serialize JSON bodies; omit empty bodies.
-+    const method = (req.method || 'GET').toUpperCase();
-+    const canHaveBody = method !== 'GET' && method !== 'HEAD';
-+    let body = undefined;
-+    const headers = new Headers(req.headers);
-+    if (canHaveBody) {
-+        const raw = req.body;
++    // Prefer bodyOverride (captured at endpoint entry). Never leave
++    // content-length set without a body — the MCP transport will hang.
++    const method = (req.method || 'GET').toUpperCase()
++    const canHaveBody = method !== 'GET' && method !== 'HEAD'
++    let body = undefined
++    const headers = new Headers(req.headers)
++    if (typeof bodyOverride === 'string') {
++        body = bodyOverride
++        if (!headers.has('content-type')) headers.set('content-type', 'application/json')
++    } else if (canHaveBody) {
++        const raw = req.body
 +        if (typeof raw === 'string' || raw instanceof Uint8Array || raw instanceof ArrayBuffer) {
-+            body = raw;
++            body = raw
 +        } else if (raw && typeof raw === 'object' && typeof raw.getReader !== 'function') {
-+            // Already-parsed JSON (common after Payload middleware)
-+            if (!headers.has('content-type')) headers.set('content-type', 'application/json');
-+            body = JSON.stringify(raw);
-+        } else if (typeof req.json === 'function') {
-+            // fall through — prefer data if present on the payload request
-+            const data = req.data ?? req.payloadData;
++            if (!headers.has('content-type')) headers.set('content-type', 'application/json')
++            body = JSON.stringify(raw)
++        } else {
++            const data = req.data ?? req.payloadData
 +            if (data != null) {
-+                if (!headers.has('content-type')) headers.set('content-type', 'application/json');
-+                body = JSON.stringify(data);
++                if (!headers.has('content-type')) headers.set('content-type', 'application/json')
++                body = JSON.stringify(data)
 +            }
 +        }
++    }
++    if (body === undefined) {
++        headers.delete('content-length')
++        headers.delete('Content-Length')
++    } else if (typeof body === 'string') {
++        headers.set('content-length', String(new TextEncoder().encode(body).byteLength))
 +    }
 +    const init = {
 +        headers,
          method: req.method
 -    });
-+    };
-+    if (body !== undefined) {
-+        init.body = body;
-+        // duplex only required for streams; string bodies need none on Workers
-+    }
-+    return new Request(req.url, init);
- };
+-};
 -
 -//# sourceMappingURL=createRequest.js.map
 \ No newline at end of file
++    }
++    if (body !== undefined) {
++        init.body = body
++    }
++    return new Request(req.url, init)
++}
 diff --git a/dist/mcp/getMcpHandler.js b/dist/mcp/getMcpHandler.js
 index 8ce01f18102f2860375ad20b7d38972166214de9..1520a1720ba866acb88e76dceb8c4f36462a3bac 100644
 --- a/dist/mcp/getMcpHandler.js

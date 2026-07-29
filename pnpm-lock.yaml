@@ -14,7 +14,7 @@ overrides:
 
 patchedDependencies:
   '@payloadcms/drizzle@4.0.0-internal.38b7f1d': 9730c1aeb8259ca6844833f31cfa5742bb78f002eb5903d1b947ec3fe33d9bf2
-  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d': cd11abee5429924a32020ff7738970678b6a8846e6e7d07710c87d19b2ed64d6
+  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d': cb5e229138aa0b89abee31dd7c3e4375458e27417091a74eb95de2aa949b9ada
 
 importers:
 
@@ -52,7 +52,7 @@ importers:
         version: 4.0.0-internal.38b7f1d(@payloadcms/ui@4.0.0-internal.38b7f1d(@types/react@19.2.16)(monaco-editor@0.55.1)(next@16.2.7(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.7.3))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@payloadcms/plugin-mcp':
         specifier: 4.0.0-internal.38b7f1d
-        version: 4.0.0-internal.38b7f1d(patch_hash=cd11abee5429924a32020ff7738970678b6a8846e6e7d07710c87d19b2ed64d6)(next@16.2.7(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))
+        version: 4.0.0-internal.38b7f1d(patch_hash=cb5e229138aa0b89abee31dd7c3e4375458e27417091a74eb95de2aa949b9ada)(next@16.2.7(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))
       '@payloadcms/plugin-multi-tenant':
         specifier: 4.0.0-internal.38b7f1d
         version: 4.0.0-internal.38b7f1d(@payloadcms/ui@4.0.0-internal.38b7f1d(@types/react@19.2.16)(monaco-editor@0.55.1)(next@16.2.7(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.7.3))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))
@@ -10858,7 +10858,7 @@ snapshots:
       - react
       - react-dom
 
-  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d(patch_hash=cd11abee5429924a32020ff7738970678b6a8846e6e7d07710c87d19b2ed64d6)(next@16.2.7(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))':
+  '@payloadcms/plugin-mcp@4.0.0-internal.38b7f1d(patch_hash=cb5e229138aa0b89abee31dd7c3e4375458e27417091a74eb95de2aa949b9ada)(next@16.2.7(@babel/core@7.29.7)(@playwright/test@1.60.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.4))(payload@4.0.0-internal.38b7f1d(graphql@16.14.1)(typescript@5.7.3))':
     dependencies:
       '@modelcontextprotocol/sdk': 1.27.1(zod@3.25.76)
       '@types/json-schema': 7.0.15
