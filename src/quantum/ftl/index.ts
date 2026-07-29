@@ -494,4 +494,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const local = chatLocal('what is ftl', BOOK)
   console.log(`  chatLocal: lane=${local?.lane} · tokens=${local?.tokens}`)
   console.log(`  map holds=${exportsForTokens().holds}`)
+  void import('./admin').then(({ adminBootShell }) => {
+    const boot = adminBootShell({ reuses: 100 })
+    console.log(`  adminBoot: holds=${boot.ftl.holds} · defer=${boot.deferHeavyProviders} · addr=${boot.address.slice(0, 8)}`)
+  })
 }

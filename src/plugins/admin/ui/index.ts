@@ -173,8 +173,9 @@ export const adminUiPlugin = (): Plugin => (config: Config): Config => ({
       afterDashboard: [
         ...(config.admin?.components?.afterDashboard ?? []),
         '@/admin/ui/dashboard/CorpusEntropyDashboard',
-        '@/quantum/RadixDimensionPanel',
-        '@/admin/ui/violations/ViolationMonitorPanel',
+        // FTL: providers scoped to dashboard panels — not every admin route (see adminBootShell).
+        '@/admin/ui/dashboard/AdminQuantumDashboard',
+        '@/admin/ui/violations/AdminViolationDashboard',
       ],
       beforeNavLinks: [
         '@/admin/ui/nav/CorpusNavLinks',

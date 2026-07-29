@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
 import { describe, it, expect, vi } from 'vitest'
 import {
   atomPath,
@@ -103,6 +103,35 @@ describe('quantum/ftl — token folds', () => {
     })
     expect(cracked.holds).toBe(false)
     expect(cracks([{ where: 'bad', spacetime: true }])).toHaveLength(1)
+  })
+
+  it('adminBootShell: FTL holds when scans deferred; crack when sync-scan on boot', async () => {
+    const {
+      adminBootShell,
+      adminBootFtl,
+      ADMIN_BOOT_QUERY,
+      ADMIN_UI_SURFACE,
+      ADMIN_MATRIX_SPACE,
+    } = await import('@/quantum/ftl/admin')
+    const shell = adminBootShell({ collectionCount: 210, reuses: 50 })
+    expect(shell.ftl.holds).toBe(true)
+    expect(shell.ftl.precomputed).toBe(true)
+    expect(shell.ftl.reuse.speedupLog2).toBeCloseTo(algebraLog2(ADMIN_MATRIX_SPACE), 6)
+    expect(shell.ftl.amortize.efficiency).toBe(Infinity)
+    expect(shell.ftl.boundary.empty).toBe(true)
+    expect(shell.deferHeavyProviders).toBe(true)
+    expect(shell.clientMatrixStubbed).toBe(true)
+    expect(shell.pollMs).toBe(0)
+    expect(shell.surface).toEqual(ADMIN_UI_SURFACE)
+    expect(shell.query).toBe(ADMIN_BOOT_QUERY)
+
+    const crackedScan = adminBootFtl({ scansOnBoot: true, collectionCount: 210 })
+    expect(crackedScan.holds).toBe(false)
+    expect(crackedScan.cracks[0]?.kind).toBe('scan')
+
+    const crackedMatrix = adminBootFtl({ clientMatrixSearch: true })
+    expect(crackedMatrix.holds).toBe(false)
+    expect(crackedMatrix.cracks.some((c) => c.where.includes('matrix.generated'))).toBe(true)
   })
 })
 

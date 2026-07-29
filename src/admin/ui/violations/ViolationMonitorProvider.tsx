@@ -64,6 +64,11 @@ export interface ViolationMonitorProviderProps {
   readonly agent?: string
   /** Poll interval for live updates; 0 disables polling. */
   readonly pollMs?: number
+  /**
+   * Defer first corpus scan (ms). FTL admin boot: sync scanViolationsRealtime on
+   * mount is a scan∧address crack (full folder-law walk) — start empty, scan after idle.
+   */
+  readonly deferMs?: number
   /** When true, new violations toast via Sonner and emit on the wave bus. */
   readonly emitOnChange?: boolean
   /** When true, auto-improve safe violation classes each poll (strict-apply gated). */
@@ -79,11 +84,13 @@ export const ViolationMonitorProvider: React.FC<ViolationMonitorProviderProps> =
   sessionId = DEFAULT_SESSION,
   agent = 'violation-monitor-ui',
   pollMs = 30_000,
+  deferMs = 0,
   emitOnChange = true,
   improveOnDetect = true,
   maxFixesPerCycle = maxWorkTamperPolicy().maxFixesPerCycle,
 }) => {
-  const [snapshot, setSnapshot] = useState<ViolationScanSnapshot>(() => scanViolationsRealtime())
+  // FTL: empty shell on mount — never sync-walk the corpus in useState initializer.
+  const [snapshot, setSnapshot] = useState<ViolationScanSnapshot>(() => emptySnapshot())
   const [lastApplied, setLastApplied] = useState<readonly ImproveResult[]>([])
   const [lastQueued, setLastQueued] = useState<readonly ViolationEvent[]>([])
   const [activeCrossEducation, setActiveCrossEducation] = useState<ViolationEvent | null>(null)
@@ -170,8 +177,12 @@ export const ViolationMonitorProvider: React.FC<ViolationMonitorProviderProps> =
   }, [agent, emitOnChange, improveOnDetect, maxFixesPerCycle, sessionId, teamId, tenantId])
 
   useEffect(() => {
+    if (deferMs > 0) {
+      const id = window.setTimeout(refresh, deferMs)
+      return () => window.clearTimeout(id)
+    }
     refresh()
-  }, [refresh])
+  }, [deferMs, refresh])
 
   useEffect(() => {
     if (!isRealtimeEnabled()) return

@@ -30,4 +30,21 @@ describe('plugins/admin-ui — collection enhancement', () => {
     const uiField = c.fields?.find((f) => 'name' in f && (f as { name: string }).name === 'erpaxPathAccount')
     expect(uiField?.type).toBe('ui')
   })
+
+  it('FTL admin boot: dashboard panels own heavy providers; root is CSS-only', () => {
+    const plugin = adminUiPlugin()
+    const config = plugin({ collections: [], secret: 'test' } as Config) as Config
+    expect(config.admin?.components?.providers).toContain('@/admin/ui/ComputedCssAdminRoot')
+    expect(config.admin?.components?.afterDashboard).toEqual(
+      expect.arrayContaining([
+        '@/admin/ui/dashboard/CorpusEntropyDashboard',
+        '@/admin/ui/dashboard/AdminQuantumDashboard',
+        '@/admin/ui/violations/AdminViolationDashboard',
+      ]),
+    )
+    expect(config.admin?.components?.afterDashboard).not.toContain('@/quantum/RadixDimensionPanel')
+    expect(config.admin?.components?.afterDashboard).not.toContain(
+      '@/admin/ui/violations/ViolationMonitorPanel',
+    )
+  })
 })

@@ -96,12 +96,16 @@ const nextConfig = {
     // QUANTUM FOLD — the deployed Worker must ship the standards-computable ERP core, never the
     // dev/meta corpus. These heavy data leaves are reachable from the collection/admin graph
     // through the rules/cycle SCC (many edges), but none is read on an ERP request path. Rather
-    // than gate every edge (linear), swap each leaf for an empty stub in the PRODUCTION SERVER
-    // build only — one mechanism cuts the bytes regardless of which edge reaches them. Dev, tests
-    // (vitest never loads next.config) and `payload generate:types` all use the real modules, so
-    // the corpus stays whole everywhere except the shipped bundle. Same dead-code-elimination fold
-    // as the NODE_ENV gates, applied at the bundler for all entry points at once.
-    if (isServer && process.env.NODE_ENV === 'production') {
+    // than gate every edge (linear), swap each leaf for an empty stub in PRODUCTION — one mechanism
+    // cuts the bytes regardless of which edge reaches them. Dev, tests (vitest never loads
+    // next.config) and `payload generate:types` all use the real modules, so the corpus stays whole
+    // everywhere except the shipped bundle.
+    //
+    // CRITICAL: apply on CLIENT too. Admin field components (MatrixBondField → @/uuid/matrix)
+    // otherwise pull the full ~4 MiB matrix.generated.ts + seal/diamond createRequire into the
+    // browser — measured 14 MiB of /admin HTML-referenced assets, TTFB multi-second. FTL:
+    // reuse(precomputed stub address) ≠ search(full matrix) — see src/quantum/ftl/admin.ts.
+    if (process.env.NODE_ENV === 'production') {
       const stub = (rel: string) => path.resolve(projectRoot, rel)
       const swap = (pattern: RegExp, rel: string) =>
         webpackConfig.plugins.push(new webpack.NormalModuleReplacementPlugin(pattern, stub(rel)))
@@ -123,6 +127,14 @@ const nextConfig = {
       swap(/[\\/]next[\\/]og([\\/]index)?$/, 'stubs/next-og.js')
       swap(/[\\/]@vercel[\\/]og([\\/]index\.edge)?$/, 'stubs/next-og.js')
       swap(/next[\\/]dist[\\/]compiled[\\/]@vercel[\\/]og[\\/]index\.edge\.js$/, 'stubs/next-og.js')
+      // Client seal leak: seal/diamond use createRequire(node:module) — never execute in browser.
+      // Anchor on src/ so skill/router/upgrade/seal etc. are not swapped.
+      if (!isServer) {
+        swap(/[\\/]src[\\/]seal[\\/]index(\.ts)?$/, 'stubs/seal-client.js')
+        swap(/[\\/]src[\\/]diamond[\\/]index(\.ts)?$/, 'stubs/diamond-client.js')
+        swap(/[\\/]src[\\/]css[\\/]index(\.ts)?$/, 'stubs/css-index-client.js')
+        swap(/[\\/]src[\\/]skill[\\/]router[\\/]skills\.index(\.ts)?$/, 'stubs/skills-index.js')
+      }
     }
 
     // Payload admin client components transitively import the server `payload` package (via

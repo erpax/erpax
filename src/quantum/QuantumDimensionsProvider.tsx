@@ -50,6 +50,11 @@ export interface QuantumDimensionsProviderProps {
   readonly agent?: string
   /** Poll interval for live updates; 0 disables polling. */
   readonly pollMs?: number
+  /**
+   * Defer first snapshot build (ms). FTL admin boot: sync buildDimensionSnapshot on
+   * every route is a scan∧address crack — start from pending shell, fold after idle.
+   */
+  readonly deferMs?: number
   /** When true, seal transitions toast via Sonner and emit on the wave bus. */
   readonly emitOnChange?: boolean
 }
@@ -61,9 +66,11 @@ export const QuantumDimensionsProvider: React.FC<QuantumDimensionsProviderProps>
   sessionId = DEFAULT_SESSION,
   agent = 'quantum-dimensions-ui',
   pollMs = 0,
+  deferMs = 0,
   emitOnChange = true,
 }) => {
-  const [snapshot, setSnapshot] = useState<DimensionSnapshot>(() => buildDimensionSnapshot())
+  // FTL: never sync-scan on mount — pending shell is the precomputed address.
+  const [snapshot, setSnapshot] = useState<DimensionSnapshot>(() => fallbackSnapshot())
   const priorSeals = useRef<Record<string, string>>({})
 
   const refresh = useCallback(() => {
@@ -97,8 +104,12 @@ export const QuantumDimensionsProvider: React.FC<QuantumDimensionsProviderProps>
   }, [agent, emitOnChange, sessionId, teamId, tenantId])
 
   useEffect(() => {
+    if (deferMs > 0) {
+      const id = window.setTimeout(refresh, deferMs)
+      return () => window.clearTimeout(id)
+    }
     refresh()
-  }, [refresh])
+  }, [deferMs, refresh])
 
   useEffect(() => {
     if (!pollMs || pollMs <= 0) return

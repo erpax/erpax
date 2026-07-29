@@ -15,6 +15,7 @@ atomPath: quantum/ftl
 | seal · chat | `seal` · `chatLocal` · `chat` |
 | research | `researcher` · `research` |
 | ftl | `ftl` ⇔ reuse ∧ amortize∞ ∧ cracks=∅ |
+| admin | `adminBootShell` · `adminBootFtl` — admin boot as reuse(stub), not matrix/corpus search |
 | purify | `scanProseNames` · `endlessPurify` |
 
 **QPU = CPU/GPU** ([[quantum/computer]]). Metrics on the host silicon prove FTL — `holds` · `speedupLog2` · `efficiency→∞` · `boundary.empty`. CrackKind `qpu` = exotic-device claim (not the host). CrackKind `spacetime` = relativistic claim (old prose `physicalFtlClaim`). The word "physical" in agent docs names the **substrate** (Landauer / CPU·GPU), never those cracks.
