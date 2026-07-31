@@ -1,5 +1,5 @@
 /**
- * quantum/dimension-realtime — collapse → sealed update → wave emit per projection axis.
+ * quantum/dimension/realtime — collapse → sealed update → wave emit per projection axis.
  *
  * Composes [[dimensions]] · [[team/comms]] · [[realtime]] · [[wave/session]] for live
  * Radix UI surfaces bound to every quantum projection dimension.
@@ -31,9 +31,9 @@ import {
   uniform2D,
   type QuantumDimensionCoverage,
   type QuantumProjectionDimension,
-} from './dimensions'
+} from '../index'
 
-export { type QuantumProjectionDimension } from './dimensions'
+export { type QuantumProjectionDimension } from '../index'
 
 /** Matrix path per projection axis — coordinateAddress source. */
 export const DIMENSION_ATOM_PATHS: Readonly<Record<QuantumProjectionDimension, string>> = {

@@ -166,7 +166,7 @@ export {
   type State2D,
   type QuantumProjectionDimension,
   type QuantumDimensionCoverage,
-} from './dimensions'
+} from './dimension'
 
 export {
   DIMENSION_ATOM_PATHS,
@@ -183,7 +183,7 @@ export {
   type DimensionRealtimeEvent,
   type DimensionRealtimeEmitResult,
   type DimensionRealtimeEmitOpts,
-} from './dimension-realtime'
+} from './dimension/realtime'
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = matrixDigest()

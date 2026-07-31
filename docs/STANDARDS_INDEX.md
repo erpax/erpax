@@ -784,7 +784,7 @@ src/consolidation/eliminations/index.ts:12: * @standard ISO-4217:2015 currency-c
 src/consolidation/eliminations/index.ts:13: * @standard ISO-8601-1:2019 date-time consolidation-date
 src/constitution/index.ts:13: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
 src/convention/addressed/index.ts:29: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content
-src/convention/complete/index.ts:24: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/complete/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/dry/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/folded/index.ts:30: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/fronted/index.ts:38: * @standard schema.org — the type vocabulary, collided to single words
@@ -793,7 +793,7 @@ src/convention/lawful/index.ts:27: * @standard schema.org — the type vocabular
 src/convention/link/index.ts:24: * @standard CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word
 src/convention/named/index.ts:40: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/reciprocal/index.ts:27: * @standard schema.org — the type vocabulary, collided to single words
-src/convention/sourced/index.ts:27: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/sourced/index.ts:22: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/triggered/index.ts:28: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/twinned/index.ts:34: * @standard schema.org — the type vocabulary, collided to single words
 src/cost/centers/index.ts:14: * @standard ISO-3166-1:2020 country-codes geographic-segment-tagging
@@ -5641,7 +5641,7 @@ src/consolidation/eliminations/index.ts:18: * @audit ISO-19011:2018 audit-trail 
 src/convention/fresh/index.ts:27: * @audit imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted
 src/convention/import/index.ts:15: * @audit coverage = importPurity() from @/tamper/import — scanned live over src, never hand-asserted
 src/convention/index.ts:8: * @audit each coverage is a live computation in its atom; this file only collects them, no logic
-src/convention/sealed/index.ts:13: * @audit catches + leaks scanned live from src; coverage = (catches − leaks)/catches, never assumed
+src/convention/sealed/index.ts:20: * @audit catches + leaks scanned live from the SEALED git tree; coverage = (catches − leaks)/catches
 src/convention/shallow/index.ts:16: * @audit coverage = importPurity() read live from @/tamper/import; never re-implemented, never defaulted
 src/cost/centers/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/cost/centers/job/positions/index.ts:11: * @audit ISO-19011:2018 audit-trail headcount-evidence

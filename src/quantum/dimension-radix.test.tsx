@@ -10,7 +10,7 @@ import React from 'react'
 
 import { QuantumDimensionsProvider } from '@/quantum/QuantumDimensionsProvider'
 import { RadixDimensionPanel } from '@/quantum/RadixDimensionPanel'
-import { buildDimensionSnapshot, dimensionSnapshotFingerprint } from '@/quantum/dimension-realtime'
+import { buildDimensionSnapshot, dimensionSnapshotFingerprint } from '@/quantum/dimension/realtime'
 
 describe('quantum — Radix dimension panel mount', () => {
   it('renders all five dimension tabs inside the provider', () => {

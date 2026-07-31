@@ -1,5 +1,5 @@
 /**
- * quantum/dimension-realtime — collapse · seal · wave emit across projection axes.
+ * quantum/dimension/realtime — collapse · seal · wave emit across projection axes.
  */
 import { describe, it, expect } from 'vitest'
 import { advance, since } from '@/realtime'
@@ -12,7 +12,7 @@ import {
   dimensionSessionUuid,
   dimensionSnapshotFingerprint,
   dimensionWaveCorrelationUuid,
-} from '@/quantum/dimension-realtime'
+} from './index'
 
 const TENANT = 'erpax-corpus'
 const TEAM = 'quantum-dimensions'
@@ -20,7 +20,7 @@ const SESSION = '0896eab2-dimension-session'
 const TS = '2026-06-08T12:00:00.000Z'
 const AGENT = 'quantum-dimensions-ui'
 
-describe('quantum/dimension-realtime — snapshot across all axes', () => {
+describe('quantum/dimension/realtime — snapshot across all axes', () => {
   it('buildDimensionSnapshot covers five projection dimensions', () => {
     const snap = buildDimensionSnapshot()
     expect(snap.axes.map((a) => a.dimension)).toEqual([
@@ -50,7 +50,7 @@ describe('quantum/dimension-realtime — snapshot across all axes', () => {
   })
 })
 
-describe('quantum/dimension-realtime — collapse per axis', () => {
+describe('quantum/dimension/realtime — collapse per axis', () => {
   it('1d-path collapse lands on the horo ring', () => {
     const c = collapseDimensionState('1d-path', 0)
     expect(c.horo).toBeDefined()
@@ -73,7 +73,7 @@ describe('quantum/dimension-realtime — collapse per axis', () => {
   })
 })
 
-describe('quantum/dimension-realtime — wave emit + log tail', () => {
+describe('quantum/dimension/realtime — wave emit + log tail', () => {
   function emitTransition(dimension: '1d-path' | '2d-partition', prior: string, next: string) {
     return dimensionRealtimeEmit({
       scopeTenantId: TENANT,

@@ -10,7 +10,7 @@ import {
   type DimensionRealtimeEmitResult,
   type DimensionSnapshot,
   type QuantumProjectionDimension,
-} from '@/quantum/dimension-realtime'
+} from '@/quantum/dimension/realtime'
 
 export interface QuantumDimensionsContextValue {
   readonly snapshot: DimensionSnapshot
