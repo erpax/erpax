@@ -9,7 +9,7 @@
  *      `enforceSegregationOfDuties` requires a different user to flip
  *      the status to `'approved'`.
  *   2. When status flips to `'posted'`, this hook calls
- *      `journalEntryService.createEntry(...)` with the canonical
+ *      `postingService().createEntry(...)` with the canonical
  *      Dr/Cr line pair derived from `debitAccount` / `creditAccount` /
  *      `adjustmentAmount`, then `postEntry(...)` to immutabilise.
  *   3. The journal-entry id is back-linked into the adjustment doc
@@ -31,13 +31,13 @@
  * @standard ISO-8601-1:2019 date-time posted-date
  * @audit ISO-19011:2018 audit-trail period-end-adjustment-evidence
  * @compliance SOX §404 internal-controls four-eyes
- * @see src/services/period-end-adjustment.service.ts
- * @see src/services/journal-entry.service.ts
+ * @see src/gl/accounts/period/end/adjustments/index.ts
+ * @see src/journal/entry/service/index.ts
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
-import { journalEntryService, type JournalEntryLine } from '@/journal/entry/service'
+import { postingService, type JournalEntryLine } from '@/journal/entry/service'
 import { idOf } from '@/relation'
 
 type AdjustmentDoc = Record<string, unknown> & {
@@ -108,7 +108,7 @@ export const periodEndAdjustmentPostingHook: CollectionAfterChangeHook = async (
       { accountId: creditAccount, credit: amount, description },
     ]
 
-    const entry = await journalEntryService.createEntry(tenant, {
+    const entry = await postingService().createEntry(tenant, {
       entryDate: new Date((adj.period as string | Date | undefined) ?? new Date()),
       description,
       lines,
@@ -117,7 +117,7 @@ export const periodEndAdjustmentPostingHook: CollectionAfterChangeHook = async (
       sourceEvent: `period:adjustment:${adj.adjustmentType ?? 'other'}:posted`,
       userId: String(userId),
     })
-    await journalEntryService.postEntry(tenant, entry.id, String(userId))
+    await postingService().postEntry(tenant, entry.id, String(userId))
 
     // Back-link the JE id onto the adjustment doc so the auditor can
     // click through. Use overrideAccess so the hook itself can write

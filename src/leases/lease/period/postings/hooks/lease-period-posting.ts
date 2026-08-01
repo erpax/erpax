@@ -32,14 +32,14 @@
  * @standard ISO-8601-1:2019 date-time period-end posted-at
  * @audit ISO-19011:2018 audit-trail period-evidence
  * @compliance SOX §404 internal-controls
- * @see src/plugins/accounting/collections/LeasePeriodPostings.ts
- * @see src/services/journal-entry.service.ts
+ * @see src/leases/lease/period/postings/index.ts
+ * @see src/journal/entry/service/index.ts
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
 import {
-  journalEntryService,
+  postingService,
   type JournalEntryLine,
 } from '@/journal/entry/service'
 import {
@@ -199,7 +199,7 @@ export const leasePeriodPostingHook: CollectionAfterChangeHook = async ({
       })
     }
 
-    const entry = await journalEntryService.createEntry(tenant, {
+    const entry = await postingService().createEntry(tenant, {
       entryDate: new Date(
         (posting.periodEnd as string | Date | undefined) ?? new Date(),
       ),
@@ -210,7 +210,7 @@ export const leasePeriodPostingHook: CollectionAfterChangeHook = async ({
       sourceEvent: 'lease:period:posted',
       userId: String(userId),
     })
-    await journalEntryService.postEntry(tenant, entry.id, String(userId))
+    await postingService().postEntry(tenant, entry.id, String(userId))
 
     await req.payload.update({
       collection: 'lease-period-postings',

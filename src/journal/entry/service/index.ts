@@ -326,3 +326,46 @@ class JournalEntryService {
 
 export const journalEntryService = new JournalEntryService();
 export default journalEntryService;
+
+/**
+ * The posting seam — why the three posting hooks had no test.
+ *
+ * Each hook imported the singleton directly, so the only way to exercise its failure path was to boot
+ * Payload and make a real posting fail. That is why the rethrow those hooks now carry ("DO NOT
+ * SWALLOW — the ledger and the record silently disagreeing") went unproven: the coupling, not the
+ * TDZ, is what kept it untested.
+ *
+ * The hooks call `postingService()` instead, and a test substitutes for the duration of one call.
+ *
+ * **It cannot leak.** `withPostingService` restores in `finally`, and it REFUSES to nest — a second
+ * override while one is active throws rather than silently shadowing it, so a forgotten restore in one
+ * test cannot quietly retarget another. Production never calls it; the accessor returns the singleton.
+ */
+export type PostingService = Pick<JournalEntryService, 'createEntry' | 'postEntry'>
+
+let postingOverride: PostingService | undefined
+
+export function postingService(): PostingService {
+  return postingOverride ?? journalEntryService
+}
+
+export class PostingOverrideNested extends Error {
+  constructor() {
+    super(
+      'journal/entry/service: a posting-service override is already active. Nesting would shadow it and ' +
+        'leave the inner restore pointing at the wrong instance — run the calls sequentially instead.',
+    )
+    this.name = 'PostingOverrideNested'
+  }
+}
+
+/** Substitute the posting service for exactly one call. Restores even when the body throws. */
+export async function withPostingService<T>(svc: PostingService, fn: () => Promise<T>): Promise<T> {
+  if (postingOverride) throw new PostingOverrideNested()
+  postingOverride = svc
+  try {
+    return await fn()
+  } finally {
+    postingOverride = undefined
+  }
+}

@@ -48,14 +48,14 @@
  * @compliance SOX §302 disclosure-controls
  * @compliance SOX §404 internal-controls four-eyes
  * @security ISO-27002 §5.4 segregation-of-duties
- * @see src/plugins/accounting/collections/PayrollRuns.ts
- * @see src/services/journal-entry.service.ts
+ * @see src/bank/accounts/payroll/runs/index.ts
+ * @see src/journal/entry/service/index.ts
  * @see docs/adr/0001-event-driven-gl-posting.md
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
 import {
-  journalEntryService,
+  postingService,
   type JournalEntryLine,
 } from '@/journal/entry/service'
 import { idOf } from '@/relation'
@@ -320,7 +320,7 @@ export const payrollRunPostingHook: CollectionAfterChangeHook = async ({
       })
     }
 
-    const entry = await journalEntryService.createEntry(tenant, {
+    const entry = await postingService().createEntry(tenant, {
       entryDate: new Date((run.periodEnd as string | Date | undefined) ?? new Date()),
       description,
       lines: entryLines,
@@ -329,7 +329,7 @@ export const payrollRunPostingHook: CollectionAfterChangeHook = async ({
       sourceEvent: 'payroll:posted',
       userId: String(userId),
     })
-    await journalEntryService.postEntry(tenant, entry.id, String(userId))
+    await postingService().postEntry(tenant, entry.id, String(userId))
 
     await req.payload.update({
       collection: 'payroll-runs',
