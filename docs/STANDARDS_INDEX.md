@@ -2360,6 +2360,7 @@ src/rich/text/index.tsx:5: * @standard CommonMark 0.31 markdown-fallback
 src/rich/text/index.tsx:6: * @standard schema.org HTMLRichText
 src/rodin/coil/index.ts:21: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/rodin/index.ts:24: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
+src/rodin/phase/index.ts:41: * @standard ISO 80000-2 — mathematical signs and symbols
 src/roles/hooks/validateRoleDefinition.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control role-binding
 src/roles/index.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/roles/registry/index.ts:19: * @standard ISO 27002:2022 §5.4 segregation-of-duties
