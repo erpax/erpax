@@ -20,6 +20,7 @@
  * @standard RFC-4122 §4.3 uuid content-addressed-dedup
  * @see ./list.ts (parse/reconcile) · ./taggedWith.ts (reverse read) · ../tags/taggings/counter.ts
  */
+import { asSystem } from '@/principal'
 import type { CollectionSlug, Payload, Where } from 'payload'
 import { parseTagList, reconcileTags } from './list'
 
@@ -61,7 +62,7 @@ const tenantClauseOf = (tenantId?: string | number): Where[] =>
 export async function findOrCreateTags(
   payload: Payload,
   names: readonly string[],
-  tenantId?: string | number,
+  tenantId: string | number,
 ): Promise<Array<string | number>> {
   const clean = parseTagList(names) // normalise + dedupe even if already split
   if (clean.length === 0) return []
@@ -71,7 +72,11 @@ export async function findOrCreateTags(
     limit: 10_000,
     depth: 0,
     pagination: false,
-    overrideAccess: true,
+    // ACCESS ON. `overrideAccess: false` + a principal means the check RUNS and passes, instead of
+    // being skipped. Both are required — passing `user` alone changes nothing, because
+    // overrideAccess still defaults to true. See [[principal]].
+    overrideAccess: false,
+    user: asSystem('hook', String(tenantId)),
   })
   const byName = new Map<string, string | number>()
   for (const d of existing.docs as Array<{ id: string | number; name?: string }>) {
@@ -83,8 +88,9 @@ export async function findOrCreateTags(
     if (id == null) {
       const created = await payload.create({
         collection: 'tags' as CollectionSlug,
-        data: { name, ...(tenantId != null ? { tenant: tenantId } : {}) } as Record<string, unknown>,
-        overrideAccess: true,
+        data: { name, tenant: tenantId } as Record<string, unknown>,
+        overrideAccess: false,
+        user: asSystem('hook', String(tenantId)),
       })
       id = created.id
       byName.set(name, id)

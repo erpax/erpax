@@ -95,6 +95,69 @@ export function bypassSites(cwd: string = process.cwd()): readonly BypassSite[] 
   return out.sort((a, b) => a.file.localeCompare(b.file))
 }
 
+/**
+ * EVERY bypass in the corpus, not just the routed ones — the ratcheted axis.
+ *
+ * `bypassSites` judges `src/app` at a theorem baseline of 0, because a silent cross-tenant read on
+ * a route is a catastrophe. But that leaves the other ~130 UNMONITORED, and an unmonitored default
+ * is how the count reached 138 in the first place: nothing was counting.
+ *
+ * So the whole surface is counted and ratcheted DOWN. It cannot be a theorem at 0 today — hooks and
+ * seeds genuinely have no user until [[principal]] replaces them one subsystem at a time — but it
+ * can be forbidden from growing, which is the difference between a debt and a leak.
+ *
+ * @invariant a bypass in a comment is not counted — prose about the pattern is not a use of it
+ */
+export function allBypasses(cwd: string = process.cwd()): readonly BypassSite[] {
+  const out: BypassSite[] = []
+  const walk = (dir: string): void => {
+    let entries: ReturnType<typeof readdirSync>
+    try {
+      entries = readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const entry of entries) {
+      const p = join(dir, entry.name)
+      if (entry.isDirectory()) {
+        if (!entry.name.startsWith('.') && entry.name !== 'node_modules') walk(p)
+        continue
+      }
+      if (!/\.(ts|tsx)$/.test(entry.name) || /\.test\.|(^|\/)test\./.test(entry.name)) continue
+      let text: string
+      try {
+        text = readFileSync(p, 'utf8')
+      } catch {
+        continue
+      }
+      const rel = p.slice(cwd.length + 1)
+      const comments = commentsOf(rel, text).join('\n')
+      const code = text.split('\n').filter((l) => !comments.includes(l.trim()) || l.trim().length === 0).join('\n')
+      const bypasses = (code.match(BYPASS) ?? []).length
+      if (bypasses === 0) continue
+      out.push({ file: rel, bypasses, authenticates: AUTH.test(code) })
+    }
+  }
+  walk(join(cwd, 'src'))
+  return out.sort((a, b) => b.bypasses - a.bypasses || a.file.localeCompare(b.file))
+}
+
+/** Total bypasses corpus-wide — the number the ratchet drives to zero. */
+export function bypassCount(cwd: string = process.cwd()): number {
+  return allBypasses(cwd).reduce((n, s) => n + s.bypasses, 0)
+}
+
+/** Ratchet: the corpus-wide bypass count may fall, never rise. */
+export function assertBypassRatchet(cwd: string = process.cwd(), ceiling: number): void {
+  const n = bypassCount(cwd)
+  if (n > ceiling) {
+    throw new Error(
+      `rules/bypass: ${n} access-control bypasses corpus-wide > ceiling ${ceiling} — ` +
+        'a bypass may be migrated to a scoped principal, never added. See src/principal.',
+    )
+  }
+}
+
 /** The violation: a request-reachable bypass in a handler that never authenticated anyone. */
 export function unauthenticatedBypasses(cwd: string = process.cwd()): readonly BypassSite[] {
   return bypassSites(cwd).filter((s) => !s.authenticates)

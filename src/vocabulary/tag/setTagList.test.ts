@@ -52,10 +52,10 @@ function memPayload(): { payload: Payload; db: Record<string, Row[]> } {
 describe('tag/setTagList — save_tags + tag_list_on port (the write engine)', () => {
   it('find-or-creates tags, deduping by normalised name', async () => {
     const { payload, db } = memPayload()
-    const ids1 = await findOrCreateTags(payload, ['Alpha', 'Beta'])
+    const ids1 = await findOrCreateTags(payload, ['Alpha', 'Beta'], 't1')
     expect(ids1.length).toBe(2)
     expect(db.tags.length).toBe(2)
-    const ids2 = await findOrCreateTags(payload, ['alpha', 'Gamma']) // alpha already exists (lower-cased)
+    const ids2 = await findOrCreateTags(payload, ['alpha', 'Gamma'], 't1') // alpha already exists (lower-cased)
     expect(db.tags.length).toBe(3) // only gamma is new
     expect(ids2[0]).toBe(ids1[0]) // same id reused for alpha
   })
