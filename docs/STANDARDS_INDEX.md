@@ -230,6 +230,9 @@ src/analytics/types.ts:14: * @standard ISO-4217:2015 currency-codes monetary-amo
 src/analytics/types.ts:15: * @standard ISO-8601-1:2019 date-time as-of-date
 src/anchor/index.ts:15: * @standard RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422
 src/anchor/index.ts:16: * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)
+src/anchor/surface/index.ts:22: * @standard FIPS 203 (ML-KEM) — key establishment; mandatory on every channel that exchanges state
+src/anchor/surface/index.ts:23: * @standard FIPS 204 (ML-DSA) — lattice signature, a distinct assumption from the digest
+src/anchor/surface/index.ts:24: * @standard FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption
 src/anchoring/index.ts:27: * @standard W3C Verifiable Credentials Data Model 2.0
 src/anchoring/index.ts:28: * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
 src/anchoring/index.ts:29: * @standard RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors
@@ -448,7 +451,7 @@ src/bank/statement/import/service/index.ts:6: * @standard MT940 swift-statement-
 src/bank/statement/import/service/index.ts:7: * @standard OFX-2.2 open-financial-exchange
 src/bank/statement/import/service/index.ts:8: * @standard ISO-13616-1:2020 iban
 src/bank/statement/import/service/index.ts:9: * @standard ISO-9362:2022 bic
-src/barrier/index.ts:19: * @standard CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission
+src/barrier/index.ts:24: * @standard CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission
 src/base/accounting/field/index.ts:115: * @standard UN/CEFACT Recommendation 20 unit-of-measure-codes
 src/base/accounting/field/index.ts:176: * @standard ISO-19011:2018 audit-trail
 src/base/accounting/field/index.ts:308: * @standard ISO 3166-1:2020 country-codes
@@ -782,7 +785,7 @@ src/consistency/apply/index.ts:418: * @standard WCAG-2.1-AA contrast text-spacin
 src/consistency/apply/index.ts:524: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/consolidation/eliminations/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/consolidation/eliminations/index.ts:13: * @standard ISO-8601-1:2019 date-time consolidation-date
-src/constitution/index.ts:13: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
+src/constitution/index.ts:20: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
 src/convention/addressed/index.ts:29: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content
 src/convention/complete/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words
 src/convention/dry/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words
@@ -1878,7 +1881,7 @@ src/lot/work/phases/index.ts:25: * @standard ISA-95:2013 / IEC-62264-1 §B.4 pro
 src/lot/work/phases/index.ts:26: * @standard ISO-22400-2:2014 manufacturing-operations efficiency throughput
 src/lots/index.ts:25: * @standard ISA-95:2013 / IEC-62264-1 §B.3 production-schedule production-order
 src/lots/index.ts:26: * @standard ISO-22400-2:2014 manufacturing-operations throughput
-src/lung/index.ts:26: * @standard West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree
+src/lung/index.ts:29: * @standard West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree
 src/machine/index.ts:15: * @standard mined from etrima (Rails source-of-truth) · the machine rate spread as double-entry
 src/maintenance/requests/index.ts:10: * @standard ISO-41001:2018 §8.1 facility-management operational-control
 src/maintenance/requests/index.ts:11: * @standard ISO-41011:2017 facility-management vocabulary
@@ -2077,10 +2080,10 @@ src/payload.config.multi-tenant-admin.test.ts:9: * @standard NIST INCITS-359-201
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:533:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:551:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:552:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:571:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:545:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:563:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:564:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:583:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -2835,6 +2838,9 @@ src/translations/index.ts:39: * @standard BCP-47 language tags
 src/translations/index.ts:40: * @standard EU 1958/1 official-languages-of-the-european-union
 src/translations/seed.ts:14: * @standard Wikidata (CC0) · BCP-47 language tags · RFC 9562 §5.8 content-uuid
 src/translator/index.ts:15: * @standard Johnson et al., "Google's Multilingual NMT System: Enabling Zero-Shot Translation," TACL (2017), arXiv:1611.04558
+src/trello/index.ts:25: * @standard RFC 6749 §1.4 bearer-credential (the token is the whole authority — env-only, never stored)
+src/trello/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7.2 fault-tolerance (a rate-limited burst queues; it does not drop)
+src/trello/plugin/index.ts:27: * @standard ISO/IEC 25010:2023 §5.3 co-existence (erpax shares Trello's namespace without detriment)
 src/trinity/index.ts:13: * @standard the file is architecture — the detail lives in the folder PATH, never the filename
 src/types/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/types/bank/reconciliation/index.ts:4: * @standard ISO-20022 camt.053 bank-to-customer-statement
@@ -2974,10 +2980,10 @@ src/validate/closing/period/index.ts:15: * @standard SAF-T:3.0.2 Period coding d
 src/validate/consolidation/readiness/index.ts:15: * @standard IAS-27:2023 Consolidated financial statements
 src/validate/consolidation/readiness/index.ts:16: * @standard IFRS-10:2023 Consolidated financial statements (control definition)
 src/validate/consolidation/readiness/index.ts:17: * @standard SAF-T:3.0.2 Multi-entity audit trail
-src/validate/fiscal/period/posting/index.ts:45: * @standard IAS-34:2023 (period context for interim reporting)
-src/validate/fiscal/period/posting/index.ts:46: * @standard Law 60 (chain leaf, immutable audit)
-src/validate/fiscal/period/posting/index.ts:47: * @standard GDPR:2016/679 (access control, audit trail)
-src/validate/fiscal/period/posting/index.ts:48: * @standard SOX:2002 (period-lock enforcement, access control)
+src/validate/fiscal/period/posting/index.ts:44: * @standard IAS-34:2023 (period context for interim reporting)
+src/validate/fiscal/period/posting/index.ts:45: * @standard Law 60 (chain leaf, immutable audit)
+src/validate/fiscal/period/posting/index.ts:46: * @standard GDPR:2016/679 (access control, audit trail)
+src/validate/fiscal/period/posting/index.ts:47: * @standard SOX:2002 (period-lock enforcement, access control)
 src/validate/multi/currency/closing/index.ts:20: * @standard ISO-4217:2023 Currency codes + decimal places
 src/validate/multi/currency/closing/index.ts:21: * @standard IFRS-21:2023 Translation of foreign operations
 src/validate/multi/currency/closing/index.ts:22: * @standard IFRS-9:2023 Foreign exchange gains/losses
@@ -3655,7 +3661,7 @@ src/consent/records/index.ts:11: * @compliance GDPR Art.7(3) right-to-withdraw-c
 src/consent/records/index.ts:12: * @compliance ISO-27701:2019 §6.3.1.4 record-of-consent
 src/consent/records/index.ts:9: * @compliance GDPR Art.6(1)(a) lawful-basis-consent
 src/consolidation/eliminations/index.ts:19: * @compliance SOX §404 internal-controls consolidation-control TOM-CON-01
-src/constitution/index.ts:14: * @compliance Venice Commission Rule of Law (entrenched fundamental guarantees)
+src/constitution/index.ts:21: * @compliance Venice Commission Rule of Law (entrenched fundamental guarantees)
 src/cost/centers/index.ts:20: * @compliance SOX §302 disclosure-controls segment-disclosure
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:10: * @compliance GDPR Art.6(1)(b) recruitment-lawful-basis
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:11: * @compliance GDPR Art.5(1)(e) storage-limitation
@@ -4673,9 +4679,9 @@ src/payable/discounts.service.ts:12: * @accounting US-GAAP ASC-705 cost-of-sales
 src/payable/index.ts:7: * @accounting US-GAAP ASC-405 liabilities
 src/payable/workflow.service.ts:10: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/payable/workflow.service.ts:11: * @accounting US-GAAP ASC-405 liabilities
-src/payload.config.ts:531:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:532:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:553:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:543:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:544:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:565:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/period/end/adjustment/service/index.ts:24: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/period/end/adjustment/service/index.ts:25: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/period/end/adjustment/service/index.ts:26: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
@@ -5552,7 +5558,7 @@ src/bank/reconciliation/service/index.ts:485:   * @audit ISO-19011:2018 audit-tr
 src/bank/reconciliation/service/index.ts:593:   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
 src/bank/reconciliation/service/index.ts:651:   * @audit ISO-19011:2018 audit-trail adjusting-entry
 src/bank/statement/import/service/index.ts:13: * @audit ISO-19011:2018 audit-trail
-src/barrier/index.ts:20: * @audit κ from (m,V0,E); T exact + WKB; tamper-cost = −log2(T) — computed, never asserted
+src/barrier/index.ts:25: * @audit κ from (m,V0,E); T exact + WKB; tamper-cost = −log2(T) — computed, never asserted
 src/billing/stripeWebhookHandlers.ts:433: * @audit ISO-19011:2018 audit-trail refund-cash-leg
 src/biological/assets/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-biological-assets
 src/biomass/index.ts:15: * @audit computed, never hand-asserted
@@ -5954,7 +5960,7 @@ src/localize/index.ts:44: * @audit Conservation Law 8 (content-uuid) · 55 (tamp
 src/lot/variants/index.ts:26: * @audit ISO-19011:2018 audit-trail variant-counter-changes
 src/lot/work/phases/index.ts:27: * @audit ISO-19011:2018 audit-trail routing-step-changes
 src/lots/index.ts:29: * @audit ISO-19011:2018 audit-trail lot-lifecycle confirmed·started·finished·closed
-src/lung/index.ts:25: * @audit computed from first principles (Fick's law · dichotomous branching · conservation)
+src/lung/index.ts:28: * @audit computed from first principles (Fick's law · dichotomous branching · conservation)
 src/maintenance/requests/index.ts:14: * @audit ISO-19011:2018 audit-trail maintenance-request-evidence
 src/maintenance/work/orders/index.ts:21: * @audit ISO-19011:2018 audit-trail work-order-evidence
 src/mala/index.ts:18: * @audit the 108 identities + digital root are computed; the dualities-on-round read live from @/duality
@@ -6005,9 +6011,9 @@ src/path/record.ts:12: * @audit pure; never silent mutation of ledger entries
 src/payable/aging.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow.service.ts:12: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:14: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:534:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:554:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:572:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:546:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:566:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:584:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
