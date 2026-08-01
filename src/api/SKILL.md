@@ -2,16 +2,15 @@
 name: api
 description: "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components."
 atomPath: api
-coordinate: "api · 5/round · 2366e8d6"
-contentUuid: "a8816871-5d60-5aab-a5ba-0989875188fc"
-diamondUuid: "a1ce15d8-6745-869e-b253-1adf7aac0e96"
-uuid: "2366e8d6-590b-89a8-b83d-1778f6346d94"
-horo: 5
+coordinate: "api · 8/crest · 95edf517"
+contentUuid: "f6835ab0-ef12-511e-a53a-26f86877ea26"
+diamondUuid: "54d774dd-800b-861f-aadc-a20c579a7163"
+uuid: "95edf517-5398-8971-b85b-f2e1f8839b72"
+horo: 8
 bonds:
   in:
     - access
     - calculate
-    - client
     - descent
     - dev
     - dimension
@@ -38,7 +37,6 @@ bonds:
   out:
     - access
     - calculate
-    - client
     - descent
     - dev
     - dimension
@@ -67,14 +65,9 @@ typography:
   bondDegree: 0
   neighbors: []
 standards:
-  - "EU-2018/1673"
-  - "EU-2018/1725"
-  - "EU-2018/302"
-  - "EU-2018/389-SCA-RTS"
-  - "EU-2018/843"
-  - "EU-2018/957"
   - "EU-Taxonomy-2020/852"
   - "ISO-19011"
+  - "RFC-6749"
 bindings: []
 neighbors:
   wikilink:
@@ -95,7 +88,6 @@ neighbors:
   matrix:
     - access
     - calculate
-    - client
     - descent
     - dev
     - dimension
@@ -122,7 +114,6 @@ neighbors:
   backlinks:
     - access
     - calculate
-    - client
     - descent
     - dev
     - dimension
@@ -147,7 +138,7 @@ neighbors:
     - web
     - workspace
 signatures:
-  computationUuid: "6dd7b626-696c-8277-a3ed-9628ec9ad967"
+  computationUuid: "2e225ed9-272b-8812-b49e-5e4e321fa13d"
   stages:
     - stage: path
       stageUuid: "6ab3d6d5-bcae-8dbf-b4ce-e6a3e6f05d97"
@@ -158,11 +149,11 @@ signatures:
     - stage: links
       stageUuid: "d9cd4e19-c697-8184-af0b-847ae0b1ade0"
     - stage: horo
-      stageUuid: "25921880-d244-89ea-9972-80dc0eec5ba6"
+      stageUuid: "fcaaf670-e7c9-8699-a672-1d88a3db4c1e"
     - stage: seal
       stageUuid: "f5055290-b736-883f-8c67-99adcd93f8b0"
     - stage: uuid
-      stageUuid: "2757807b-2c6d-8ef5-8573-7327df10a287"
+      stageUuid: "9fbb74ba-a8d4-8c21-89e5-7ceb2c895692"
 version: 2
 ---
 # api — Local / REST / GraphQL (position 7 of the material cycle)

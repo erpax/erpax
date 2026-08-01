@@ -240,6 +240,9 @@ src/angle/index.ts:15: * @standard group theory — (Z/9Z)* is cyclic of order 6
 src/anyone/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/api/audit/events/index.ts:22: * @standard ISO-19011:2018 audit-trail external-system-evidence
 src/api/audit/events/index.ts:23: * @standard ISO/IEC-27007:2020 isms-auditing
+src/api/integration/index.ts:28: * @standard RFC 9110 §9 http-semantics (methods, status classes, safe/idempotent)
+src/api/integration/index.ts:29: * @standard RFC 6749 §1.4 bearer-credential — the token is the whole authority, env-only
+src/api/integration/index.ts:30: * @standard ISO/IEC 25010:2023 §5.7.2 fault-tolerance — a rate-limited burst queues; it does not drop
 src/app/(api)/api/subscriptions/create/route.ts:5: * @standard ISO-4217:2015 currency-codes
 src/app/(api)/api/webhooks/stripe/route.ts:7: * @standard HMAC-SHA256 stripe-signature-scheme
 src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts:4: * @standard sitemaps.org 0.9 sitemap-protocol

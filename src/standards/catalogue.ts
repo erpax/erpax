@@ -2000,7 +2000,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 178,
+    "count": 179,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -6940,31 +6940,17 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "PCI-DSS",
-    "family": "other",
-    "title": "Payment Card Industry Data Security Standard",
-    "uuid": "f5fe4927-b30b-8ff0-bc59-7efa4c7bccee",
-    "color": "hsl(334 58% 53%)",
-    "count": 4,
-    "modules": [
-      {
-        "path": "src/access/standard/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/billing/stripeWebhookHandlers.ts",
-        "section": "§3"
-      }
-    ]
-  },
-  {
     "id": "RFC-6749",
     "family": "other",
     "title": "The OAuth 2.0 Authorization Framework",
     "uuid": "56856ca8-a2f8-8b50-9572-04dcf185d55d",
     "color": "hsl(189 58% 38%)",
-    "count": 4,
+    "count": 5,
     "modules": [
+      {
+        "path": "src/api/integration/index.ts",
+        "section": "§1.4"
+      },
       {
         "path": "src/country/client/berlin-group-psd2.ts",
         "section": "§4.4"
@@ -6980,6 +6966,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/trello/index.ts",
         "section": "§1.4"
+      }
+    ]
+  },
+  {
+    "id": "PCI-DSS",
+    "family": "other",
+    "title": "Payment Card Industry Data Security Standard",
+    "uuid": "f5fe4927-b30b-8ff0-bc59-7efa4c7bccee",
+    "color": "hsl(334 58% 53%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/access/standard/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": "§3"
       }
     ]
   },
