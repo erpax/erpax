@@ -6,7 +6,7 @@ import { assertInstrument, INSTRUMENTS, instrumentFor, paidFor, renderInstrument
 
 describe('instrument — name the tool before the measurement', () => {
   it('every row names a real failure mode and the instrument that settles it', () => {
-    expect(INSTRUMENTS.length).toBeGreaterThanOrEqual(8)
+    expect(INSTRUMENTS.length).toBeGreaterThanOrEqual(9)
     for (const i of INSTRUMENTS) {
       expect(i.failure.length).toBeGreaterThan(30)
       expect(i.because.length).toBeGreaterThan(30)
@@ -70,7 +70,7 @@ describe('instrument — judged by the constitution', () => {
       {
         text: 'this prevents wrong measurements',
         boundary:
-          'it prevents the EIGHT recorded ones. It is a register, not a whitelist — an unregistered ' +
+          'it prevents the NINE recorded ones. It is a register, not a whitelist — an unregistered ' +
           'question passes silently, because pretending the table were complete would be the same ' +
           'category of error it exists to catch. Which instrument answers which question is DECLARED ' +
           'by a human; no theorem derives it',
@@ -78,20 +78,20 @@ describe('instrument — judged by the constitution', () => {
     ],
     axes: [
       { name: 'build⊕break', ring: [3, 3] },
-      { name: 'question⊕instrument', ring: [8, 8] },
+      { name: 'question⊕instrument', ring: [9, 9] },
     ],
     served: [{ result: 'the instrument register', recompute: 'src/instrument/index.ts' }],
     postings: [
-      { debit: 'measurement/question', credit: 'instrument/answer', amount: 8 },
-      { debit: 'instrument/answer', credit: 'measurement/question', amount: 8 },
+      { debit: 'measurement/question', credit: 'instrument/answer', amount: 9 },
+      { debit: 'instrument/answer', credit: 'measurement/question', amount: 9 },
     ],
     edges: [
       { from: 'instrument', to: 'local' },
       { from: 'local', to: 'instrument' },
     ],
     quantities: [
-      { name: 'registered instruments', value: 8, derivation: 'src/instrument/index.ts' },
-      { name: 'misreadings actually paid for', value: 8, derivation: 'src/instrument/index.ts' },
+      { name: 'registered instruments', value: 9, derivation: 'src/instrument/index.ts' },
+      { name: 'misreadings actually paid for', value: 9, derivation: 'src/instrument/index.ts' },
     ],
     keepers: [],
     seed: ['src/instrument/index.ts'],
@@ -101,5 +101,16 @@ describe('instrument — judged by the constitution', () => {
     const v = judge(change)
     expect(v.verdicts.filter((x) => !x.holds)).toEqual([])
     expect(v.sealed).toBe(true)
+  })
+})
+
+describe('instrument — the threshold row, added the day it was paid for', () => {
+  it('a ceiling is meaningless until you know the function that produced it', () => {
+    const i = instrumentFor('is this ratchet ceiling too loose?')!
+    expect(i.failure).toMatch(/the gap IS the design/)
+    expect(i.right).toMatch(/mathCeiling/)
+    // three plan items were written against comparing two numbers without their definition
+    expect(i.failure).toMatch(/Three plan items/)
+    expect(i.paid).toBe(true)
   })
 })
