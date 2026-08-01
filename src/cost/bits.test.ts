@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import { CONFIRM_GATE_CHECKS } from './index'
 import { randomBytes } from 'node:crypto'
 import { toUuid } from '@/uuid/matrix'
 import { nameUuid } from '@/integrity/content-uuid'
@@ -50,5 +51,21 @@ describe('cost/bits — the digest width is derived, and the primitive agrees', 
   it('truncation costs 134 bits — paid for a display format', () => {
     expect(CONTENT_DIGEST_BITS - ERPAX_DIGEST_BITS).toBe(134)
     expect(CONTENT_DIGEST_BITS / 2).toBeGreaterThan(ERPAX_DIGEST_BITS / 2) // why the anchor commits FULL
+  })
+})
+
+describe('the mirror is PINNED — a typed count that nothing contradicts is how 106 survived', () => {
+  it('CONFIRM_GATE_CHECKS equals the axes the gate actually runs', async () => {
+    const { CONFIRM_CHECK_AXES } = await import('@/confirm/matter')
+    // A TEST may import both; production code may not, because the edge would join the 225-file
+    // tangle (rules/cycle). That is what makes this the right place for the pin rather than an
+    // argument for deriving the constant across the boundary.
+    expect(CONFIRM_GATE_CHECKS).toBe(CONFIRM_CHECK_AXES.length)
+  })
+
+  it('and the number is the one the gate reports, not one anyone typed', async () => {
+    const { CONFIRM_CHECK_AXES } = await import('@/confirm/matter')
+    expect(CONFIRM_CHECK_AXES.length).toBeGreaterThan(0)
+    expect(new Set(CONFIRM_CHECK_AXES).size).toBe(CONFIRM_CHECK_AXES.length) // no axis counted twice
   })
 })

@@ -217,15 +217,22 @@ export const invariantChecks = (checks: number, invariants: number): number =>
  * Independent gate axes unsealed manual work must evade to persist (uuid-pure stack).
  *
  * It read **8**. The gate ran **6**, then **7** once `standards` was added — it was never 8, and it prices
- * a forge, so the error was a wrong security claim. The law now lives where the gate is
- * (`[[confirm]]/matter` → `CONFIRM_CHECK_AXES`), whose `.length` is not a number anyone types; this mirrors
- * it because importing confirm here would add an edge to the 225-file tangle ([[rules]]/cycle). The mirror
- * is PINNED by `src/cost/bits.test.ts` — it fails the moment an axis is added and this is not updated, which
- * is exactly how `ERPAX_DIGEST_BITS = 106` survived: nothing contradicted it.
+ * a forge, so the error was a wrong security claim. The law lives where the gate is
+ * (`[[confirm]]/matter` → `CONFIRM_CHECK_AXES`), whose `.length` is not a number anyone types; this MIRRORS
+ * it rather than importing it, because the import would add an edge to the 225-file tangle ([[rules]]/cycle).
  *
- * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length
+ * **And the mirror drifted anyway.** It read 7 while the axes were 9 — `grounded` and `outside` were added
+ * and nothing said so. The docstring claimed a pin in `src/cost/bits.test.ts`; that file had no such
+ * assertion, so the claim of being pinned was itself the unrefuted statement. This is the exact shape it
+ * names one line above — `ERPAX_DIGEST_BITS = 106` survived because nothing contradicted it — repeated by
+ * the note warning about it.
+ *
+ * The pin is now REAL: `src/cost/bits.test.ts` imports both and asserts equality, so the next axis added
+ * fails the suite instead of silently re-pricing a forge.
+ *
+ * @invariant CONFIRM_GATE_CHECKS === CONFIRM_CHECK_AXES.length — asserted in src/cost/bits.test.ts
  */
-export const CONFIRM_GATE_CHECKS = 7
+export const CONFIRM_GATE_CHECKS = 9
 
 export interface ManualDevelopmentContext {
   /** Joint corpus coverage ∈ [0,1] — collider product or schema coverage. */

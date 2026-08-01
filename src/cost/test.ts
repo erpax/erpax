@@ -108,7 +108,8 @@ describe('cost — manual development price (forge ≫ verify)', () => {
     const computed = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: false })
     const manual = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: true })
     // pin the SYMBOL, not the literal: the hardcoded `+ 8` was the stale mirror of a gate count
-    // that was never 8 (the fixpoint commit corrected it to CONFIRM_GATE_CHECKS = 7)
+    // that was never 8. The constant is read symbolically here on purpose: it drifted 7→9 once
+    // already, and src/cost/bits.test.ts is what now pins it to CONFIRM_CHECK_AXES.length
     expect(computed.verifyCost).toBeCloseTo((algebraLog2(100) + CONFIRM_GATE_CHECKS) * RODIN_FLOW_RATIO, 10)
     expect(manual.forgeCost).toBeGreaterThan(secondPreimageLog2(ERPAX_DIGEST_BITS) / 3)
   })
