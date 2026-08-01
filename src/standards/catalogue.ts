@@ -2000,7 +2000,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 180,
+    "count": 181,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -3437,7 +3437,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 89,
+    "count": 90,
     "modules": [
       {
         "path": "src/accounting/proof/index.ts",
