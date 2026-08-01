@@ -2,11 +2,11 @@
 name: millennium
 description: "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH."
 atomPath: millennium
-coordinate: "millennium · 5/round · 5a65144e"
-contentUuid: "29ba5a26-0299-5a5f-9ef1-c3b8f92059ce"
-diamondUuid: "cde088ea-249c-8053-9a58-de520973f0e7"
-uuid: "5a65144e-37dd-835e-b2f9-2d06ee51b9cf"
-horo: 5
+coordinate: "millennium · 8/crest · fc3b536a"
+contentUuid: "556c5916-9623-585b-82f5-92b5ee99e745"
+diamondUuid: "e4f8a953-d552-8ad8-a390-f6834e375e1f"
+uuid: "fc3b536a-2dd0-83a1-ae44-95fc6f321f19"
+horo: 8
 bonds:
   in:
     - coincidence
@@ -28,7 +28,7 @@ bonds:
     - theorem
 typography:
   partition: millennium
-  bondDegree: 24
+  bondDegree: 26
   neighbors: []
 standards: []
 bindings: []
@@ -39,6 +39,7 @@ neighbors:
     - law
     - merge
     - quantum
+    - row
     - rules
     - seeing
     - theorem
@@ -61,22 +62,22 @@ neighbors:
     - seeing
     - theorem
 signatures:
-  computationUuid: "f6b47b14-b10a-8ad7-af7b-d0f0e25c864f"
+  computationUuid: "b14b999e-f50f-87e6-8be3-559cc3b86119"
   stages:
     - stage: path
       stageUuid: "1ea0afd8-0007-8ac8-802d-3bf04a0ced0c"
     - stage: trinity
       stageUuid: "f3e9abef-85e3-88ca-aecb-d3efd3956080"
     - stage: boundary
-      stageUuid: "b9196275-9c6f-89e3-a4af-41d36e7b8e37"
+      stageUuid: "289b9a54-68ab-889a-b505-fc3952397c8b"
     - stage: links
-      stageUuid: "c4ed706c-f9bb-80ae-96b1-4ab4c610e665"
+      stageUuid: "579e48fc-c299-8db5-9346-222dcf2fbfcd"
     - stage: horo
-      stageUuid: "e12c70a6-8a3a-85b3-b576-8292b94cf681"
+      stageUuid: "1c0cd109-2df4-85e1-a857-160a69ea2093"
     - stage: seal
       stageUuid: "20645fbb-d08f-8362-b087-0366b7970a44"
     - stage: uuid
-      stageUuid: "967fce1d-1e2c-8ec3-9a81-0d2ca159ade0"
+      stageUuid: "0c79d705-1e5b-8577-837c-a28c704f65ec"
 version: 2
 ---
 # millennium — the Clay problems as a testing ground; the waves classify, they do not solve
@@ -96,6 +97,21 @@ Honest **by construction**: every entry's `corpusSolves` is the literal type `fa
 | **Poincaré** (SOLVED, Perelman) | fold to one point — simply-connected 3-manifold IS the 3-sphere | **false** |
 
 **P vs NP carries the strongest genuine resonance**, and it is worth learning through: content-addressing is *verify-easy* (check content matches its address) and *derive-hard/one-way* (recover content from an address — the tamper-cost), and `think.ceiling`'s `s > 0` is the irreducible novel work. But that is **one instance** of the verify/derive asymmetry, **not** a proof that `P ≠ NP` — no separation is derived. Where there is no honest lens (Yang–Mills, Hodge, BSD), the lens is **`none`** and I did not invent one.
+
+## Invert to solve — the seven saved beside their negations
+
+You do not solve one of these by asserting it. You solve it by **surviving its inversion**: the refuter takes `¬claim` and needs **one** counterexample, and falsification is decisive. So the honest computational form of *invert to solve* is not a proof-generator — it is a **door**.
+
+`challenges()` saves all seven as duels ([[duel]]): each resolution claim beside `¬(claim)`, with the round read from the **record**, never assumed. The count that comes back is the honest one:
+
+| | |
+| --- | ---: |
+| challenges saved, each inverted | **7** |
+| standing (proved, never refuted) | **1** — Poincaré, prover **Perelman** |
+| **open** — neither proved nor refuted | **6** |
+| **lensless** — the duel cannot even start | **3** (Yang–Mills · Hodge · BSD) |
+
+`open` is not a gap in the register; it is the precise state the duel exists to close. And `attempt(name, rounds)` is the door: bring rounds, and it computes whether the attempt survived. It **cannot** return survived on an empty attempt — an assertion is not an attempt — a single refutation falls it whatever else was proved, and an unknown problem is refused rather than silently treated as unsolved. Surviving still never sets `corpusSolves`, which stays the literal `false` throughout. The register seeds through [[seed/row]] with that `false` intact.
 
 **Honest boundary.** A lens teaches the *structure*; it is never a solution. The open problems stay open, and `corpusSolvesAny()` returns `false`, by the register, forever. Sending the quantum waves at these problems returns the same verdict every time: **OPEN — not solved here — lens at most.** That the tools refuse to fabricate a proof IS them passing the test. **HARMONY ≠ TRUTH**, and a million-dollar problem is exactly where that discipline earns its keep.
 

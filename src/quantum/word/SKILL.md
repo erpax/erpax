@@ -1,109 +1,213 @@
 ---
 name: word
 description: "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix."
-atomPath: quantum/word
-coordinate: quantum/word · 7/descent · a1b2c3d4
-contentUuid: "00000000-0000-8000-8000-000000000001"
-diamondUuid: "00000000-0000-8000-8000-000000000002"
-uuid: "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
-horo: 7
+atomPath: "quantum/word"
+coordinate: "quantum/word · 2/share · f9079270"
+contentUuid: "a61c24b5-b6c3-50ae-98a1-398c7b136e9f"
+diamondUuid: "79dba4b2-00f9-882d-8f3b-b7623c1259ae"
+uuid: "f9079270-8661-8704-9fc5-ebff0de48593"
+horo: 2
 bonds:
   in:
     - atom
-    - digit
+    - bahai
+    - brainstorm
+    - christianity
+    - collapse
+    - count
     - diamond
-    - horo
+    - digit
+    - engineering
+    - expand
+    - fs
+    - gnosticism
+    - gravity
+    - hermeticism
+    - hinduism
+    - islam
+    - judaism
+    - kabbalah
     - law
-    - matrix
+    - linearity
+    - literature
     - merge
+    - protestantism
     - quantum
-    - sequence
+    - religion
+    - sikhism
+    - sti
+    - taoism
     - text
+    - thought
+    - topography
+    - translate
+    - translation
     - typography
-    - uuid
+    - vocabulary
     - word
   out:
     - atom
-    - digit
+    - bahai
+    - brainstorm
+    - christianity
+    - collapse
+    - count
     - diamond
-    - horo
+    - digit
+    - engineering
+    - expand
+    - fs
+    - gnosticism
+    - gravity
+    - hermeticism
+    - hinduism
+    - islam
+    - judaism
+    - kabbalah
     - law
-    - matrix
+    - linearity
+    - literature
     - merge
-    - quantum
-    - sequence
+    - protestantism
+    - religion
+    - sikhism
+    - sti
+    - taoism
     - text
+    - thought
+    - topography
+    - translate
+    - translation
     - typography
-    - uuid
+    - vocabulary
     - word
 typography:
   partition: quantum
-  bondDegree: 50
-  neighbors: []
-standards:
-  - "RFC 9562 §5.8 content-uuid"
+  bondDegree: 124
+  neighbors:
+    - diamond
+standards: []
 bindings: []
 neighbors:
   wikilink:
     - digit
+    - law
+    - links
     - matrix
+    - merge
     - quantum
     - uuid
     - word
   matrix:
     - atom
-    - digit
+    - bahai
+    - brainstorm
+    - christianity
+    - collapse
+    - count
     - diamond
-    - horo
+    - digit
+    - engineering
+    - expand
+    - fs
+    - gnosticism
+    - gravity
+    - hermeticism
+    - hinduism
+    - islam
+    - judaism
+    - kabbalah
     - law
-    - matrix
+    - linearity
+    - literature
     - merge
-    - quantum
-    - sequence
+    - protestantism
+    - religion
+    - sikhism
+    - sti
+    - taoism
     - text
+    - thought
+    - topography
+    - translate
+    - translation
     - typography
-    - uuid
+    - vocabulary
     - word
   backlinks:
     - atom
-    - digit
+    - bahai
+    - brainstorm
+    - christianity
+    - collapse
+    - count
     - diamond
-    - horo
+    - digit
+    - engineering
+    - expand
+    - fs
+    - gnosticism
+    - gravity
+    - hermeticism
+    - hinduism
+    - islam
+    - judaism
+    - kabbalah
     - law
-    - matrix
+    - linearity
+    - literature
     - merge
-    - quantum
-    - sequence
+    - protestantism
+    - religion
+    - sikhism
+    - sti
+    - taoism
     - text
+    - thought
+    - topography
+    - translate
+    - translation
     - typography
-    - uuid
+    - vocabulary
     - word
 signatures:
-  computationUuid: "00000000-0000-8000-8000-000000000003"
+  computationUuid: "66892d4e-b0ad-848a-a23d-5d28a6285082"
   stages:
     - stage: path
-      stageUuid: "00000000-0000-8000-8000-000000000004"
+      stageUuid: "d3df522e-d232-8ec2-a277-8f627d8e3da1"
     - stage: trinity
-      stageUuid: "00000000-0000-8000-8000-000000000005"
+      stageUuid: "fb984825-4855-8159-bf03-678b5113c0d9"
     - stage: boundary
-      stageUuid: "00000000-0000-8000-8000-000000000006"
+      stageUuid: "076dd576-837b-8ba6-9e7a-095e3647c776"
     - stage: links
-      stageUuid: "00000000-0000-8000-8000-000000000007"
+      stageUuid: "9624d347-fcd6-8a15-9246-584cd37efc9c"
     - stage: horo
-      stageUuid: "00000000-0000-8000-8000-000000000008"
+      stageUuid: "2b34cbc4-e774-85b0-aec6-e8c39255b352"
     - stage: seal
-      stageUuid: "00000000-0000-8000-8000-000000000009"
+      stageUuid: "b51149ab-7182-8f75-84ff-a175bcee146e"
     - stage: uuid
-      stageUuid: "00000000-0000-8000-8000-00000000000a"
+      stageUuid: "9d3f11e0-db00-8e46-9df0-92b7159c2bd3"
 quantum:
   superposition:
+    - atom
+    - bahai
+    - brainstorm
+    - christianity
+    - collapse
+    - count
+    - diamond
     - digit
-    - quantum
-    - word
+    - superposition
   collapse:
-    - "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid."
-    - "interact64(a,b) ANDs two torus halves within TORUS_BITS; architectureBond entangles word ⊕ digit paths; combineArchitectures packs both halves into DOUBLE_TORUS_BITS."
+    - "Use when reasoning about the WORD half of the double-torus — one 64-bit address architecture (folder name / aura / link space) that vortexes with the digit architecture into the 128-bit content-uuid; interact64 ANDs the two torus halves, architectureBond entangles word ⊕ digit on the matrix."
+    - "[[digit]]"
+    - "[[matrix]]"
+    - "[[quantum/digit]]"
+    - "[[quantum]]"
+    - "[[uuid]]"
+    - "[[word]]"
     - "matter-twin:src/quantum/word/index.ts"
+    - "the word corpus obeys the SAME 64-bit address-law as the digit corpus — one torus each, crosslinked by [[links]], entangled by `architectureBond`, folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither architecture has a law the other lacks; together they are the double-torus."
   seal:
     sandbox: false
     receipt: false
@@ -111,8 +215,8 @@ quantum:
     canonicalRecord: true
     analogResults: false
     speechResults: false
-    computationUuid: "00000000-0000-8000-8000-000000000003"
-    contentUuid: "00000000-0000-8000-8000-000000000001"
+    computationUuid: "66892d4e-b0ad-848a-a23d-5d28a6285082"
+    contentUuid: "a61c24b5-b6c3-50ae-98a1-398c7b136e9f"
 version: 2
 ---
 # quantum/word — the word corpus (word ⊕ digit, 64-bit half)
@@ -126,3 +230,5 @@ Every atom has two addresses ([[digit]]): WORD (folder name) and DIGIT (horo + u
 Matter-twin: `src/quantum/word/index.ts` (`interact64` · `architectureBond` · `combineArchitectures` · `architectureFoldPaths` · `recordWordOnPath` · `recordArchitectureFoldOnPath`). Composes [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[matrix]] · [[uuid]] · [[merge]].
 
 @see [[word]] · [[digit]] · [[quantum/digit]] · [[quantum]] · [[uuid]] · [[matrix]]
+
+<sub>content-uuid `a61c24b5-b6c3-50ae-98a1-398c7b136e9f` · account `quantum/word` · `pnpm skill:upgrade` · `pnpm computed:check`</sub>

@@ -26,6 +26,45 @@ import {
 /** One 64-bit torus — 2^|rodin doubling circuit| (hexagram gate space ≡ TORUS_BITS). */
 export const architectureBits = (): number => 1 << DOUBLING.length
 
+/**
+ * The interaction count of the architecture — with and WITHOUT each bit's reflection of itself.
+ *
+ * Between distinct bits there are `C(n,2)` interactions. Each bit also interacts with ITSELF — the
+ * diagonal of the symmetric matrix — giving `n(n+1)/2`. The diagonal contributes exactly `n`, and on
+ * the ring it contributes `digitalRoot(n)`.
+ *
+ * At n = 64 that is the whole point: `C(64,2) = 2016` has digital root **9** — the axis pole, where
+ * the ring closes (9 ≡ 0, the void). Adding the 64 self-interactions gives `2080`, digital root
+ * **1** — which is exactly `nextOctave(9)`, the seal reopening. So the self-reflection is worth one
+ * unit on the ring, and it is the unit that reopens the closure.
+ *
+ * HONEST BOUNDARY — the arithmetic is a theorem; the READING is not. That dr(2016) = 9 is exact; that
+ * "9 means the void" is this corpus's declared naming for the ring, not a derived fact. And it does
+ * NOT generalise: at n = 128 the same construction gives dr 1 → dr 3, because the shift is always
+ * `digitalRoot(n)`. It is a fact about 64, not a law about n.
+ *
+ * @invariant withSelf − pairs === n, always — the diagonal is the self-interaction
+ * @invariant at n=64: dr(pairs)=9 and dr(withSelf)=1, and nextOctave(9)===1
+ */
+export interface ArchitectureInteractions {
+  readonly bits: number
+  /** C(n,2) — interactions between distinct bits */
+  readonly pairs: number
+  /** n(n+1)/2 — pairs plus the diagonal */
+  readonly withSelf: number
+  /** the diagonal: each bit reflecting itself */
+  readonly diagonal: number
+}
+
+export function architectureInteractions(bits: number = architectureBits()): ArchitectureInteractions {
+  return {
+    bits,
+    pairs: (bits * (bits - 1)) / 2,
+    withSelf: (bits * (bits + 1)) / 2,
+    diagonal: bits,
+  }
+}
+
 /** Two vortexing halves — the 128-bit content-uuid (DOUBLE_TORUS_BITS). */
 export const doubleArchitectureBits = (): number => architectureBits() * 2
 

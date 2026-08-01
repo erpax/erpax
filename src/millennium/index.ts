@@ -23,6 +23,7 @@
  *
  * Composes [[coincidence]] · [[theorem]] · [[seeing]] · [[duel]] · [[quantum]]/gaps · [[rules]]/refutable · [[law]].
  */
+import { invert, manifest, survives, type InvertedPair, type Round, type Verdict } from '@/duel'
 
 /** One Millennium Problem, taught as a lens — never claimed solved by the corpus (`corpusSolves` is literal false). */
 export interface Problem {
@@ -101,6 +102,144 @@ export const MILLENNIUM: readonly Problem[] = [
 /** Does the corpus solve ANY Millennium Problem? No. The honest answer, enforced by the register. */
 export function corpusSolvesAny(): boolean {
   return MILLENNIUM.some((p) => (p.corpusSolves as boolean) === true) // always false
+}
+
+// ── INVERT TO SOLVE — the seven as duels, not as assertions ─────────────────────────────────────
+// You do not solve one of these by asserting it. You solve it by SURVIVING its inversion: the
+// refuter takes ¬claim and needs one counterexample, and falsification is decisive (Popper). So the
+// honest computational form of "invert to solve" is not a proof-generator — it is a DOOR. Each
+// problem is saved beside its negation; an attempt brings rounds; the verdict is computed from what
+// the rounds actually did. Nothing here can return "solved" without a round that proved and none
+// that refuted, and `corpusSolves` stays the literal `false` throughout.
+//
+// Six sit at `open` — neither proved nor refuted — which is not a gap in the register but the exact
+// state the duel exists to close. Poincaré stands, and its prover is Perelman, not this corpus.
+
+/** One Millennium Problem saved as a DUEL: the resolution claim, its inversion, and who holds the field. */
+export interface Challenge {
+  readonly problem: Problem
+  readonly pair: InvertedPair
+  readonly verdict: Verdict
+  /** true when even the duel cannot START here — no lens on either side (Yang–Mills · Hodge · BSD). */
+  readonly lensless: boolean
+}
+
+/** The resolution claim a duel is fought over — the proposition, never the problem's name alone. */
+export function resolutionClaim(problem: Problem): string {
+  return `${problem.name} is resolved`
+}
+
+/**
+ * The seven, each inverted. The round is read from the RECORD, never assumed: a problem counts as
+ * proved only when it actually has a solver (Perelman), and nothing here has ever been refuted — so
+ * six return `open`, which is the honest verdict for an untested claim.
+ */
+export function challenges(): readonly Challenge[] {
+  return MILLENNIUM.map((problem) => ({
+    problem,
+    pair: invert(resolutionClaim(problem)),
+    verdict: manifest({ proved: problem.solvedBy.length > 0, refuted: false }),
+    lensless: problem.lens.startsWith('none'),
+  }))
+}
+
+/** The challenges nothing has yet proved or refuted — the six the duel is open on. */
+export function openChallenges(): readonly Challenge[] {
+  return challenges().filter((c) => c.verdict.holder === 'open')
+}
+
+// ── THE DIAGONAL — each problem interacting with ITSELF ─────────────────────────────────────────
+// `challenges()` saves the OFF-diagonal move: a claim beside its negation. That is 7 inversions, and
+// it leaves the diagonal empty — the cell where a problem is applied to itself. The count says so:
+// C(7,2) = 21 pairwise cells (digital root 3, a polarity boundary the ring never occupies); adding
+// the 7 self-cells gives 28 (digital root 1, on the ring). The diagonal is exactly `n`.
+//
+// Self-reference is not decoration in this list — it is where several of these problems LIVE. P vs NP
+// is the verify/derive asymmetry turned on a verifier that must judge verification; Poincaré is a loop
+// contracting to itself. Naming the diagonal does not solve any of them, and `corpusSolves` stays the
+// literal `false`: this adds the missing CELL, never a proof to put in it.
+
+/** One cell of the seven-by-seven interaction matrix — a pair, or a problem meeting itself. */
+export interface MatrixCell {
+  readonly row: string
+  readonly column: string
+  /** true on the diagonal: the problem applied to itself (self-reference) */
+  readonly self: boolean
+}
+
+export interface ProblemMatrix {
+  readonly cells: readonly MatrixCell[]
+  /** off-diagonal cells — C(n,2) */
+  readonly pairs: number
+  /** the diagonal — n, one per problem */
+  readonly diagonal: number
+}
+
+/**
+ * The seven as a symmetric matrix WITH its diagonal — every problem against every other, and each
+ * against itself. The upper triangle including the diagonal, so a pair is counted once.
+ *
+ * @invariant cells = n(n+1)/2; diagonal = n; pairs = C(n,2); pairs + diagonal = cells
+ * @invariant exactly one self-cell per problem, and no self-cell is a pair
+ */
+export function problemMatrix(): ProblemMatrix {
+  const names = MILLENNIUM.map((p) => p.name)
+  const cells: MatrixCell[] = []
+  for (let i = 0; i < names.length; i++) {
+    for (let j = i; j < names.length; j++) {
+      cells.push({ row: names[i]!, column: names[j]!, self: i === j })
+    }
+  }
+  return {
+    cells,
+    pairs: cells.filter((c) => !c.self).length,
+    diagonal: cells.filter((c) => c.self).length,
+  }
+}
+
+/** The diagonal alone — each problem meeting itself, the cell `challenges()` never filled. */
+export function selfCells(): readonly MatrixCell[] {
+  return problemMatrix().cells.filter((c) => c.self)
+}
+
+export interface Attempt {
+  readonly problem: string
+  /** did the attempt survive — ever proved, never refuted, across the rounds brought */
+  readonly survived: boolean
+  readonly verdict: Verdict
+  readonly reason: string
+}
+
+/**
+ * Attempt a problem: bring rounds, and the door computes whether the attempt SURVIVED its inversion.
+ * This is the executable form of "invert to solve" — it never manufactures a proof, and it cannot
+ * return survived on an empty attempt (`survives` requires at least one round that proved).
+ *
+ * @invariant an unknown problem name is refused, never silently treated as unsolved
+ * @invariant no round, or a single refutation, ⇒ survived is false — asserting is not surviving
+ */
+export function attempt(name: string, rounds: readonly Round[]): Attempt {
+  const problem = lensFor(name)
+  if (!problem) {
+    return {
+      problem: name,
+      survived: false,
+      verdict: manifest({ proved: false, refuted: false }),
+      reason: `no such Millennium Problem: ${name} — the register holds ${MILLENNIUM.length}`,
+    }
+  }
+  const survived = survives(rounds)
+  const last = manifest(rounds[rounds.length - 1] ?? { proved: false, refuted: false })
+  return {
+    problem: problem.name,
+    survived,
+    verdict: last,
+    reason: survived
+      ? `survived ${rounds.length} round(s) — corroborated against its inversion, never proven true`
+      : rounds.length === 0
+        ? 'no rounds — an assertion is not an attempt; bring a proof the refuter can attack'
+        : last.reason,
+  }
 }
 
 /** The open problems — the six the quantum waves classify as OPEN, lens at most. */

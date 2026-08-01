@@ -1,4 +1,14 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import {
+  exactMax,
+  exactMin,
+  exactAbs,
+  exactFloor,
+  exactCeil,
+  exactRound,
+  exactTrunc,
+  algebraSign,
+  PI,
+} from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   HORO_DIGITS,
@@ -13,6 +23,9 @@ import {
   VOID_PIVOT,
   AFFINE_ORDER,
   affineStep,
+  sequenceForward,
+  sequenceReflected,
+  reflectNumeral,
   doublingOrbits,
   orbitOf,
   POLE,
@@ -131,6 +144,58 @@ describe('horo', () => {
     for (const n of [1, 4, 7]) expect(throughVoid(n) % 3).toBe(0) // units → axis
     for (const n of [3, 6, 9]) expect(throughVoid(n) % 3).toBe(1) // axis → units
     for (const n of [2, 5, 8]) expect(throughVoid(n) % 3).toBe(2) // ≡2 is fixed setwise
+  })
+
+  it('the sequence is entangled to its reflection — 1\\2\\4\\8/7/5·3\\6\\9·0\\1 ↔ 9/8/6/2\\3\\5\\7/4/1/0\\1', () => {
+    expect([...sequenceForward()]).toEqual([1, 2, 4, 8, 7, 5, 3, 6, 9, 0, 1])
+    // the reflection is COMPUTED by throughVoid, and it is exactly the inverted spelling
+    expect([...sequenceReflected()]).toEqual([9, 8, 6, 2, 3, 5, 7, 4, 1, 0, 1])
+
+    const nine = sequenceForward().slice(0, 9)
+    const mirrored = sequenceReflected().slice(0, 9)
+    // an involution: reflecting the reflection returns the sequence, fixed only at 5
+    expect(mirrored.map(throughVoid)).toEqual([...nine])
+    // and the reflected nine is a permutation of the forward nine — the same ring, read through the void
+    expect([...mirrored].sort((a, b) => a - b)).toEqual([...nine].sort((a, b) => a - b))
+
+    // the halves EXCHANGE: the flow carries the axis into itself and the axis becomes units
+    expect(orbitOf(1).map(throughVoid).filter((n) => [3, 6, 9].includes(n))).toEqual([9, 6, 3])
+    expect([3, 6, 9].map(throughVoid)).toEqual([7, 4, 1])
+
+    // NEITHER reaches the other alone — doubling's gap IS the axis, and only the void bridges it
+    expect([...inverseClosure(1).gaps]).toEqual([3, 6, 9])
+    expect(inverseClosure(1).voidCloses).toBe(true)
+    // the entanglement, measured: apart they are order 6 and 2; together 54 — the excess over 6·2
+    expect(AFFINE_ORDER).toBe(54)
+    expect(AFFINE_ORDER).toBeGreaterThan(inverseClosure(1).order * 2)
+  })
+
+  it('a numeral has TWO reflections — 14 gives 5 as a value, and 9,6 as digits', () => {
+    const r = reflectNumeral(14)
+    expect(r.asValue).toBe(5) // 14 ≡ 5 (mod 9), and 5 is the mirror's fixed point — it reflects to itself
+    expect([...r.asDigits]).toEqual([9, 6]) // 1↦9, 4↦6 — both land on the axis {3,6,9}
+    // both landing sites are structurally distinguished, and they are DIFFERENT sets
+    expect(throughVoid(r.asValue)).toBe(r.asValue) // the pivot: fixed
+    for (const d of r.asDigits) expect([3, 6, 9]).toContain(d) // the axis: the gap doubling cannot reach
+    expect([...inverseClosure(1).gaps]).toEqual([3, 6, 9])
+  })
+
+  it('the axis carries a polarity under DOUBLING that the mirror does not: 3↔6, with 9 fixed', () => {
+    const dr9 = (n: number) => ((n % 9) + 9) % 9 || 9
+    expect(dr9(3 * 2)).toBe(6) // doubling swaps the inner circuit …
+    expect(dr9(6 * 2)).toBe(3) // … a genuine 2-cycle
+    expect(dr9(9 * 2)).toBe(9) // and fixes the pole
+    expect(3 + 6).toBe(9)
+    // the MIRROR pairs the axis differently — 3↔7, 6↔4 — so "3 and 6" is a doubling fact, not a mirror one
+    expect(throughVoid(3)).toBe(7)
+    expect(throughVoid(6)).toBe(4)
+  })
+
+  it('5 is 2⁻¹ — the propulsion that lands on 1, and 9 IS the void (9 ≡ 0)', () => {
+    expect((2 * VOID_PIVOT) % 9).toBe(1)
+    expect(9 % 9).toBe(0)
+    expect(throughVoid(1)).toBe(9) // 1 ↔ 9: the mirror pair that spans unit and void
+    expect(throughVoid(9)).toBe(1)
   })
 
   it('ring ∘ void COMMUTED make the unit translation: D∘M∘D⁻¹∘M = x ↦ x+1', () => {
@@ -499,8 +564,10 @@ describe('fold 0 → ∞ — the static circle vs the folded lemniscate', () => 
 
   it('the lemniscate is a closed figure-eight with TWO lobes (x>0 and x<0) — the double loop', () => {
     const xs = samples.map((t) => lemniscate(t).x)
-    expect(exactMax(...xs)).toBeGreaterThan(0.9) // right lobe
-    expect(exactMin(...xs)).toBeLessThan(-0.9) // left lobe
+    // exactMax/exactMin are BINARY — spreading 400 samples read only the first two, so the right-lobe
+    // assertion passed on cos(0) vs cos(2π/400) and the left lobe was never measured. Fold instead.
+    expect(xs.reduce(exactMax)).toBeGreaterThan(0.9) // right lobe
+    expect(xs.reduce(exactMin)).toBeLessThan(-0.9) // left lobe
     // closed: t=0 and t=2π coincide (within float precision)
     expect(lemniscate(0).x).toBeCloseTo(lemniscate(2 * PI).x, 12)
     expect(lemniscate(0).y).toBeCloseTo(lemniscate(2 * PI).y, 12)

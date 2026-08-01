@@ -1,5 +1,16 @@
 import { describe, it, expect } from 'vitest'
-import { MILLENNIUM, corpusSolvesAny, open, lensFor } from './index'
+import {
+  MILLENNIUM,
+  attempt,
+  challenges,
+  corpusSolvesAny,
+  lensFor,
+  open,
+  openChallenges,
+  problemMatrix,
+  selfCells,
+  resolutionClaim,
+} from './index'
 
 // "The Clay Millennium Problems are the testing ground for the quantum waves." The only honest toolbox NAMES
 // them and refuses to solve them. Every entry's `corpusSolves` is the literal false — the type forbids claiming
@@ -42,5 +53,98 @@ describe('millennium — the Clay problems, taught as lenses; the corpus solves 
     const r = lensFor('Riemann Hypothesis')!
     expect(r.open).toBe(true)
     expect(r.why).toMatch(/does not prove|refuse/) // the corpus touches ζ, does not prove the critical line
+  })
+})
+
+describe('millennium — all seven saved INVERTED: a claim solves by surviving, never by asserting', () => {
+  it('every problem is saved beside its negation — seven challenges, seven inversions', () => {
+    const cs = challenges()
+    expect(cs).toHaveLength(MILLENNIUM.length)
+    expect(cs).toHaveLength(7)
+    for (const c of cs) {
+      expect(c.pair.claim).toBe(resolutionClaim(c.problem))
+      expect(c.pair.antiClaim).toBe(`¬(${c.pair.claim})`)
+      // the inversion never touches the register's own honesty
+      expect(c.problem.corpusSolves as boolean).toBe(false)
+    }
+  })
+
+  it('six stand OPEN — neither proved nor refuted, which is the state the duel exists to close', () => {
+    expect(openChallenges()).toHaveLength(6)
+    for (const c of openChallenges()) {
+      expect(c.verdict.holder).toBe('open')
+      expect(c.verdict.stands).toBe(false)
+      expect(c.problem.solvedBy).toBe('')
+    }
+  })
+
+  it('exactly one stands — Poincaré, and its prover is Perelman, not this corpus', () => {
+    const standing = challenges().filter((c) => c.verdict.stands)
+    expect(standing).toHaveLength(1)
+    expect(standing[0]!.problem.name).toBe('Poincaré Conjecture')
+    expect(standing[0]!.problem.solvedBy).toMatch(/Perelman/)
+    expect(standing[0]!.verdict.holder).toBe('prover')
+    expect(standing[0]!.problem.corpusSolves as boolean).toBe(false) // still not ours
+    expect(corpusSolvesAny()).toBe(false)
+  })
+
+  it('three are LENSLESS — the duel cannot even start where nothing points at the problem', () => {
+    const lensless = challenges().filter((c) => c.lensless)
+    expect(lensless.map((c) => c.problem.name).sort()).toEqual([
+      'Birch–Swinnerton-Dyer',
+      'Hodge Conjecture',
+      'Yang–Mills existence & mass gap',
+    ])
+  })
+
+  it('the door refuses an assertion — no rounds is not an attempt', () => {
+    const a = attempt('P vs NP', [])
+    expect(a.survived).toBe(false)
+    expect(a.reason).toContain('an assertion is not an attempt')
+  })
+
+  it('a single refutation falls the attempt, whatever else was proved (Popper asymmetry)', () => {
+    const a = attempt('P vs NP', [{ proved: true, refuted: false }, { proved: true, refuted: true }])
+    expect(a.survived).toBe(false)
+    expect(a.verdict.holder).toBe('refuter')
+  })
+
+  it('an attempt SURVIVES only by proving and never being refuted — corroborated, never proven true', () => {
+    const a = attempt('P vs NP', [{ proved: true, refuted: false }, { proved: true, refuted: false }])
+    expect(a.survived).toBe(true)
+    expect(a.reason).toContain('never proven true')
+    // and surviving a duel still does not make it the corpus's solution
+    expect(corpusSolvesAny()).toBe(false)
+  })
+
+  it('an unknown problem is REFUSED, never silently treated as unsolved', () => {
+    const a = attempt('Collatz', [{ proved: true, refuted: false }])
+    expect(a.survived).toBe(false)
+    expect(a.reason).toContain('no such Millennium Problem')
+  })
+})
+
+describe('millennium — the diagonal: each problem interacting with itself', () => {
+  it('the matrix is n(n+1)/2 cells — the pairs PLUS the diagonal that challenges() left empty', () => {
+    const m = problemMatrix()
+    const n = MILLENNIUM.length
+    expect(m.pairs).toBe((n * (n - 1)) / 2) // 21
+    expect(m.diagonal).toBe(n) // 7 — one per problem
+    expect(m.cells).toHaveLength((n * (n + 1)) / 2) // 28
+    expect(m.pairs + m.diagonal).toBe(m.cells.length)
+  })
+
+  it('exactly one self-cell per problem, and a self-cell is never a pair', () => {
+    const self = selfCells()
+    expect(self).toHaveLength(MILLENNIUM.length)
+    expect(self.map((c) => c.row)).toEqual(MILLENNIUM.map((p) => p.name))
+    for (const c of self) expect(c.row).toBe(c.column)
+    for (const c of problemMatrix().cells.filter((c) => !c.self)) expect(c.row).not.toBe(c.column)
+  })
+
+  it('naming the diagonal solves nothing — corpusSolves is still the literal false', () => {
+    expect(corpusSolvesAny()).toBe(false)
+    expect(problemMatrix().cells.length).toBeGreaterThan(challenges().length) // 28 > 7
+    for (const p of MILLENNIUM) expect(p.corpusSolves as boolean).toBe(false)
   })
 })

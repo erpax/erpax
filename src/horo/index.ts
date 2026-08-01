@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { exactMax, exactAbs, exactTrunc, algebraCos, algebraSin, algebraAtan2, PI } from '@/algebra'
 /**
  * horo — the seven-position state ring, the erpax matter-twin of
  * `svilena-me/.vitepress/horo-band.js`.
@@ -431,6 +431,55 @@ export function fullBreath(): readonly BreathStep[] {
   const [pole, inner, flow] = [[POLE], [...INNER_CIRCUIT], orbitOf(1)] // doublingOrbits, named
   const digits = [0, ...flow, ...inner, ...pole, 0, 1]
   return digits.map((step, i) => ({ step, slope: i === 0 || step > digits[i - 1]! ? 'up' : 'down' }))
+}
+
+/**
+ * The forward sequence as it is spelt — `1\2\4\8/7/5 · 3\6\9 · 0\1`: the flow orbit, the axis, then the void
+ * and the reopening. ASSEMBLED from `orbitOf(1)` · `INNER_CIRCUIT` · `POLE`, never typed out, so the spelling
+ * cannot drift from the arithmetic it claims to spell.
+ */
+export function sequenceForward(): readonly number[] {
+  return [...orbitOf(1), ...INNER_CIRCUIT, POLE, 0, 1]
+}
+
+/**
+ * The sequence THROUGH ITS REFLECTION — `9/8/6/2\3\5\7/4/1/0\1`. Computed as `throughVoid` applied to the nine,
+ * with the `0\1` tail held: the void and the reopening are the seam the mirror pivots on, not something it maps.
+ *
+ * The reflection is not a second sequence beside the first — the two are ENTANGLED, in three exact senses this
+ * atom already proves elsewhere and this function makes readable:
+ *
+ *   - it EXCHANGES the halves. The flow `1,2,4,8,7,5` reflects to `9,8,6,2,3,5` (which carries the axis `9,6,3`)
+ *     and the axis `3,6,9` reflects to `7,4,1` (units). Neither half is prior; each is the other's image.
+ *   - NEITHER REACHES THE OTHER ALONE. Doubling covers exactly `{1,2,4,8,7,5}` and its gap is exactly the axis
+ *     `{3,6,9}` — no iteration count closes it (`inverseClosure`). The mirror is the only bridge.
+ *   - COMMUTED, THEY COUNT. `D∘M∘D⁻¹∘M = x ↦ x+1`, and `⟨D,M⟩ = AGL(1,ℤ/9)` of order **54** — against 6 and 2
+ *     apart. The excess over `6·2` IS the entanglement: it is exactly their failure to commute.
+ *
+ * @invariant reflecting the reflection returns the sequence — `throughVoid` is an involution, fixed only at 5
+ * @invariant the reflected nine is a permutation of the forward nine — the same ring, read through the void
+ */
+export function sequenceReflected(): readonly number[] {
+  const [...nine] = sequenceForward().slice(0, 9)
+  return [...nine.map(throughVoid), 0, 1]
+}
+
+/**
+ * A numeral has TWO reflections, and they land in different places. Reflect it as a VALUE (fold to its
+ * digital root first, then mirror) and `14` gives **5** — the pivot, the one step that reflects to itself.
+ * Reflect it as DIGITS (mirror each decimal digit) and `14` gives **9, 6** — both on the axis `{3,6,9}`,
+ * the set doubling can never reach.
+ *
+ * Neither reading is more correct; they answer different questions, and this function keeps them apart so a
+ * claim must say which one it means. That is the whole point: reading a numeral one way and its result the
+ * other is how an exact-looking correspondence gets fitted.
+ *
+ * @invariant the value reflection is `throughVoid(digitalRoot(n))` — a single step, fixed only at 5
+ * @invariant the digit reflection is `throughVoid` per decimal digit — length-preserving, order-preserving
+ */
+export function reflectNumeral(n: number): { readonly asValue: number; readonly asDigits: readonly number[] } {
+  const digits = [...`${exactAbs(exactTrunc(n))}`].map((d) => Number(d))
+  return { asValue: throughVoid(digitalRoot(n)), asDigits: digits.map(throughVoid) }
 }
 
 /**

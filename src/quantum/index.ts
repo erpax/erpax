@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * quantum -- the quantum-physics laws COMPUTED on the live uuid-matrix.
  *
@@ -98,6 +98,7 @@ export {
   architectureBondStable,
   architectureMask,
   architectureBits,
+  architectureInteractions,
   doubleArchitectureBits,
   combineArchitectures,
   architectureFoldPaths,
