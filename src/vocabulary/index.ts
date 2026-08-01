@@ -1,4 +1,4 @@
-import { exactAbs, exactMin } from '@/algebra'
+import { exactAbs, exactMin, exactMinOf} from '@/algebra'
 /**
  * vocabulary — every word from the shared, standards-grounded scheme. Whatever
  * the language, the WORDS are written only from one vocabulary (./words.ts: the
@@ -48,7 +48,7 @@ export const editDistance = (a: string, b: string): number => {
   for (let j = 0; j <= b.length; j++) d[0][j] = j
   for (let i = 1; i <= a.length; i++)
     for (let j = 1; j <= b.length; j++)
-      d[i][j] = exactMin(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1))
+      d[i][j] = exactMinOf([d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)])
   return d[a.length][b.length]
 }
 

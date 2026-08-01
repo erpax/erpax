@@ -1,4 +1,4 @@
-import { exactAbs, exactMax, exactMin, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactMax, exactMin, exactRound, exactTrunc, exactMaxOf} from '@/algebra'
 /**
  * color — colour grounded in the A432 harmonic: the 7-colour chakra spectrum (root → crown), the
  * visible octave of A432. The HEART (4th, [[chakra]]) is GREEN — the colour of coherence, and the
@@ -54,7 +54,7 @@ export function wavelengthToRgb(nm: number): [number, number, number] {
 
 /** sRGB → CMYK, each 0..100. */
 export function rgbToCmyk([r, g, b]: readonly [number, number, number]): [number, number, number, number] {
-  const k = 1 - exactMax(r, g, b) / 255
+  const k = 1 - exactMaxOf([r, g, b]) / 255
   if (k >= 1) return [0, 0, 0, 100]
   const c = (1 - r / 255 - k) / (1 - k)
   const m = (1 - g / 255 - k) / (1 - k)
