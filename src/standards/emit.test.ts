@@ -5,7 +5,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
+import { matcherFor, buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
 
 // The parser mind — a second, independent reading of the same source, crossed with the regex `scan` because a
 // single mind breaks. A `@standard` banner is a citation only in a real COMMENT; the same sigil in a string
@@ -140,5 +140,32 @@ describe('standards/emit — catalogue generator', () => {
         expect(() => assertNoProseOnlyGates()).toThrow(/gates allow only prose = VIOLATION/)
       }
     })
+  })
+})
+
+describe('matcherFor — a compliance catalogue must not over-report coverage', () => {
+  const re = (id: string, family = 'ilo', title = 't') => matcherFor({ id, family, title } as never)
+
+  it('a LETTERED instrument number matches only itself', () => {
+    expect(re('ILO-C001').test('@standard ILO C001 hours-of-work presence-minutes')).toBe(true)
+    expect(re('ILO-C001').test('@standard ILO-C001 anything')).toBe(true)
+    // THE BUG: ILO-C001 fell through to the digit-run fallback and became /001/i, so it matched
+    // ISO 27001 — 120 fabricated citations for a convention the corpus cites once. An audit tool
+    // that INVENTS coverage manufactures assurance for whoever signs; under-reporting is survivable.
+    expect(re('ILO-C001').test('@standard ISO 27001 A.5.10 access-control-policy')).toBe(false)
+    expect(re('ILO-C001').test('@standard ISO 9001 quality')).toBe(false)
+    expect(re('ILO-C182').test('@standard ISO/IEC 25010 §5.6')).toBe(false)
+  })
+
+  it('a bare digit run is bounded on BOTH sides — it is a substring of every longer number', () => {
+    // 800 must not match 25010, 18004, or 8000-series ids that merely contain it
+    const eight = re('SP-800', 'nist')
+    expect(eight.test('@standard NIST SP 800-162 ABAC')).toBe(true)
+    expect(eight.test('@standard ISO 18004 qr-code')).toBe(false)
+  })
+
+  it('real standards are untouched by the fix', () => {
+    expect(re('EN-16931', 'en').test('@standard EN 16931 §BT-151')).toBe(true)
+    expect(re('ISO-27002', 'iso').test('@standard ISO 27002 8.24')).toBe(true)
   })
 })

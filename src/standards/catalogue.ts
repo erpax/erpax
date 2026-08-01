@@ -699,7 +699,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
     "uuid": "1d07c6b3-c502-8aa3-8b1b-1198dba57044",
     "color": "hsl(231 78% 49%)",
-    "count": 45,
+    "count": 44,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -762,10 +762,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/commerce/index.ts",
-        "section": ""
-      },
-      {
         "path": "src/dashboard/actions/index.ts",
         "section": ""
       },
@@ -795,6 +791,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/iso/14289/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/index.ts",
         "section": ""
       }
     ]
@@ -2865,6 +2865,32 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "IFRS-S2",
+    "family": "ifrs",
+    "title": "IFRS S2 Climate-related Disclosures (ISSB)",
+    "uuid": "36ac4a32-6bad-8dd9-8a1f-5cfb3444008f",
+    "color": "hsl(316 59% 40%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/eu/csrd/esr/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/SKILL.md",
+        "section": "§29-32"
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": "§29-32"
+      }
+    ]
+  },
+  {
     "id": "IFRS-16",
     "family": "ifrs",
     "title": "Leases",
@@ -2882,6 +2908,28 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/validate/tax/period/closing/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "IFRS-S1",
+    "family": "ifrs",
+    "title": "General Requirements for Disclosure of Sustainability-related Financial Information",
+    "uuid": "768cf4d0-70b7-8be2-b712-d415ec65db0b",
+    "color": "hsl(108 89% 54%)",
+    "count": 3,
+    "modules": [
+      {
+        "path": "src/eu/csrd/esr/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/self/accounting/index.ts",
         "section": ""
       }
     ]
@@ -2938,24 +2986,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Presentation and Disclosure in Financial Statements",
     "uuid": "e73cd6c2-b462-80fa-8e3c-62b17d3094ea",
     "color": "hsl(156 59% 40%)",
-    "count": 0,
-    "modules": []
-  },
-  {
-    "id": "IFRS-S1",
-    "family": "ifrs",
-    "title": "General Requirements for Disclosure of Sustainability-related Financial Information",
-    "uuid": "768cf4d0-70b7-8be2-b712-d415ec65db0b",
-    "color": "hsl(108 89% 54%)",
-    "count": 0,
-    "modules": []
-  },
-  {
-    "id": "IFRS-S2",
-    "family": "ifrs",
-    "title": "IFRS S2 Climate-related Disclosures (ISSB)",
-    "uuid": "36ac4a32-6bad-8dd9-8a1f-5cfb3444008f",
-    "color": "hsl(316 59% 40%)",
     "count": 0,
     "modules": []
   },
@@ -5245,7 +5275,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 93,
+    "count": 92,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -6292,112 +6322,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ILO-C001",
-    "family": "other",
-    "title": "Hours of Work (Industry) Convention, 1919 (No. 1)",
-    "uuid": "c4a2d197-a686-84ef-875d-dacd7e8aaaa3",
-    "color": "hsl(298 89% 45%)",
-    "count": 120,
-    "modules": [
-      {
-        "path": "src/access/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/access/standard/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agent/sync/chat-broadcast.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agent/sync/horo.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agent/sync/payload-chat.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agent/sync/society.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/tool-defs.ts",
-        "section": "§A.9.4.5"
-      },
-      {
-        "path": "src/agents/mcp/tool/_guards.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/tool/cloudflare.ts",
-        "section": ""
-      },
-      {
-        "path": "src/agents/mcp/tool/security.ts",
-        "section": "Annex A"
-      },
-      {
-        "path": "src/agents/registered/ops.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/cloudflare-ai.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/durable-objects.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/industry/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/industry/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/anti/corruption/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/submissions/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "Annex A"
-      },
-      {
-        "path": "src/bank/accounts/payment/runs/SKILL.md",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "MCP",
     "family": "other",
     "title": "Model Context Protocol",
@@ -6499,96 +6423,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/multi/search/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "ILO-C100",
-    "family": "other",
-    "title": "Equal Remuneration Convention, 1951 (No. 100)",
-    "uuid": "0cb071db-7b0b-8375-b028-ac3a85d3026b",
-    "color": "hsl(8 63% 41%)",
-    "count": 20,
-    "modules": [
-      {
-        "path": "src/agents/registered/ops.agent.ts",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/emission/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/en/16931/validate.ts",
-        "section": ""
-      },
-      {
-        "path": "src/insurance/contracts/SKILL.md",
-        "section": "§B100"
-      },
-      {
-        "path": "src/insurance/contracts/index.ts",
-        "section": "§B100"
-      },
-      {
-        "path": "src/invoices/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/items/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/risk/registers/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/legal/entities/risk/registers/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/maintenance/requests/SKILL.md",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/maintenance/requests/index.ts",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/maintenance/work/orders/SKILL.md",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/maintenance/work/orders/index.ts",
-        "section": "§8.1"
-      },
-      {
-        "path": "src/properties/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/properties/spaces/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/properties/spaces/index.ts",
         "section": ""
       }
     ]
@@ -6876,40 +6710,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ILO-C111",
-    "family": "other",
-    "title": "Discrimination (Employment and Occupation) Convention, 1958 (No. 111)",
-    "uuid": "7b560931-bac4-8956-98a7-218388b271cb",
-    "color": "hsl(254 64% 39%)",
-    "count": 6,
-    "modules": [
-      {
-        "path": "src/cmspage/hooks/revalidatePage.ts",
-        "section": ""
-      },
-      {
-        "path": "src/posts/hooks/revalidatePost.ts",
-        "section": ""
-      },
-      {
-        "path": "src/revalidate/redirect/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/rfc/9110/cache.ts",
-        "section": ""
-      },
-      {
-        "path": "src/rfc/9110/get-document.ts",
-        "section": ""
-      },
-      {
-        "path": "src/rfc/9110/get-globals.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "INCOTERMS-2020",
     "family": "other",
     "title": "ICC Incoterms 2020 rules (ICC publication No 723E)",
@@ -7054,15 +6854,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ILO-C105",
+    "id": "ILO-C001",
     "family": "other",
-    "title": "Abolition of Forced Labour Convention, 1957 (No. 105)",
-    "uuid": "55bb2040-cb6a-8f12-8b34-f87d488b197f",
-    "color": "hsl(347 87% 54%)",
+    "title": "Hours of Work (Industry) Convention, 1919 (No. 1)",
+    "uuid": "c4a2d197-a686-84ef-875d-dacd7e8aaaa3",
+    "color": "hsl(298 89% 45%)",
     "count": 1,
     "modules": [
       {
-        "path": "src/media/audit/evidences/index.ts",
+        "path": "src/work/shifts/index.ts",
         "section": ""
       }
     ]
@@ -7222,6 +7022,33 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Right to Organise and Collective Bargaining Convention, 1949 (No. 98)",
     "uuid": "318beac5-71d6-8c3e-99f3-380e2646cb45",
     "color": "hsl(83 79% 43%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ILO-C100",
+    "family": "other",
+    "title": "Equal Remuneration Convention, 1951 (No. 100)",
+    "uuid": "0cb071db-7b0b-8375-b028-ac3a85d3026b",
+    "color": "hsl(8 63% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ILO-C105",
+    "family": "other",
+    "title": "Abolition of Forced Labour Convention, 1957 (No. 105)",
+    "uuid": "55bb2040-cb6a-8f12-8b34-f87d488b197f",
+    "color": "hsl(347 87% 54%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ILO-C111",
+    "family": "other",
+    "title": "Discrimination (Employment and Occupation) Convention, 1958 (No. 111)",
+    "uuid": "7b560931-bac4-8956-98a7-218388b271cb",
+    "color": "hsl(254 64% 39%)",
     "count": 0,
     "modules": []
   },

@@ -85,7 +85,7 @@ function sectionOf(value: string): string {
   return m ? m[0] : ''
 }
 
-function matcherFor(std: RegisteredStandard): RegExp {
+export function matcherFor(std: RegisteredStandard): RegExp {
   if (std.match) return new RegExp(std.match, 'i')
   // EU-2015/849 must NOT match ISO-4217:2015 — longest-digit alone is a false wall.
   // Require the year/number (or trailing lettered suffix) so AMLD citations are real.
@@ -93,8 +93,15 @@ function matcherFor(std: RegisteredStandard): RegExp {
   if (eu) return new RegExp(eu[1]!.replace('/', '\\/'), 'i')
   const fm = std.id.match(/^([A-Za-z/]+)-(\d+[A-Za-z]?)$/)
   if (fm) return new RegExp(fm[1]!.replace('/', '\\/') + '[- ]?' + fm[2] + '\\b', 'i')
+  // A LETTERED instrument number — `ILO-C001`, `ILO-C182`. Without this branch the id fell through
+  // to the digit-run fallback below and became /001/i, which matches `ISO 27001`: ILO-C001 reported
+  // 120 citations while the corpus cites it NOWHERE. A compliance catalogue that over-reports
+  // coverage is worse than one that under-reports — it manufactures assurance for an auditor.
+  const lettered = std.id.match(/^([A-Za-z/]+)-([A-Za-z]+\d+[A-Za-z]?)$/)
+  if (lettered) return new RegExp(lettered[1]!.replace('/', '\\/') + '[- ]?' + lettered[2] + '\\b', 'i')
   const big = (std.id.match(/\d{3,}/g) ?? []).sort((a, b) => b.length - a.length)[0]
-  if (big) return new RegExp(big, 'i')
+  // bounded on BOTH sides: a bare digit run is a substring of every longer number
+  if (big) return new RegExp('\\b' + big + '\\b', 'i')
   return new RegExp('\\b' + std.id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i')
 }
 
