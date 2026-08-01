@@ -33,7 +33,7 @@ describe('plugins/admin-ui — collection enhancement', () => {
 
   it('FTL admin boot: dashboard panels own heavy providers; root is CSS-only', () => {
     const plugin = adminUiPlugin()
-    const config = plugin({ collections: [], secret: 'test' } as Config) as Config
+    const config = plugin({ collections: [], secret: 'test' } as unknown as Config) as Config
     expect(config.admin?.components?.providers).toContain('@/admin/ui/ComputedCssAdminRoot')
     expect(config.admin?.components?.afterDashboard).toEqual(
       expect.arrayContaining([

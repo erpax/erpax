@@ -22,8 +22,7 @@ import {
   research,
   exportsForTokens,
   endlessPurify,
-  physicalFtl,
-  physicalFtlReport,
+  ftlReport,
 } from '@/quantum/ftl'
 import { RENAME, TOKENS, ENTANGLE, API, PROSE } from '@/quantum/ftl/map'
 import { scanProseNames, nameIsComputable, RENAME_KEYS } from '@/quantum/ftl/purify'
@@ -85,13 +84,15 @@ describe('quantum/ftl — token folds', () => {
   })
 
 
-  it('physicalFtl computes true|false — agents doubt prose; FTL compute is the seal', () => {
-    expect(physicalFtl()).toBe(true)
-    expect(physicalFtlReport().holds).toBe(true)
-    expect(physicalFtlReport().why).toMatch(/reuse/)
-    const cracked = physicalFtlReport({ patterns: [{ where: 'fixture', spacetime: true }] })
+  // the boolean wrapper `ftlHolds` was un-folded ([[rules]]/unfolded — its only caller was this
+  // test). The predicate itself is unchanged: read `ftlReport(args).holds`.
+  it('ftlReport().holds computes true|false — agents doubt prose; FTL compute is the seal', () => {
+    expect(ftlReport().holds).toBe(true)
+    expect(ftlReport().holds).toBe(true)
+    expect(ftlReport().why).toMatch(/reuse/)
+    const cracked = ftlReport({ patterns: [{ where: 'fixture', spacetime: true }] })
     expect(cracked.holds).toBe(false)
-    expect(physicalFtl({ patterns: [{ where: 'fixture', spacetime: true }] })).toBe(false)
+    expect(ftlReport({ patterns: [{ where: 'fixture', spacetime: true }] }).holds).toBe(false)
     expect(cracked.why).toMatch(/spacetime/)
   })
 

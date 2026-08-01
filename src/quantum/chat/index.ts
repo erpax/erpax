@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactCeil, exactMax, exactTrunc } from '@/algebra'
 /**
  * quantum/chat — a chat thread as a merkle chain: each message is a content-uuid, and the thread
  * folds its message-uuids into ONE chain-uuid (a tamper-evident history — change or reorder any
@@ -21,6 +21,11 @@ import {
   type BandHarmony,
 } from '@/harmony'
 import { bind4 } from '@/merge'
+import { coalescer } from '@/quantum/coalesce'
+import { clock, type Tick } from '@/quantum/clock'
+// A re-export NAMES nothing at runtime — `export { x } from '…'` gave tsc a resolution while the
+// module scope had no binding, so `ftlReport` was a ReferenceError with zero type errors.
+import { ftlReport } from '@/quantum/ftl'
 import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'
 import { consensusProof } from '@/theorem'
 import {
@@ -774,6 +779,106 @@ export async function chatFreeAsk(
     `free-chat[${answer.lane}|tokens=${answer.tokens}|reused=${answer.reused}]: ${answer.answer}`,
   )
   return { session: next, answer }
+}
+
+/** What a chat machine actually spent — every field MEASURED, none supplied. */
+export interface ChatFtl {
+  /** questions answered */
+  readonly answers: number
+  /** upstream `chat()` calls actually made */
+  readonly tokens: number
+  /** answers served from an in-flight or retained fold */
+  readonly reuses: number
+  /** ftl.holds computed from the two numbers above, not from arguments */
+  readonly holds: boolean
+  /** sealed order of this machine's asks — reordering history changes it */
+  readonly head: string | null
+}
+
+export interface ChatMachine {
+  ask(
+    session: ChatSession,
+    question: string,
+    opts?: { readonly book?: SealBook; readonly fetchImpl?: typeof fetch; readonly escalate?: boolean },
+  ): Promise<{ readonly session: ChatSession; readonly answer: Chat; readonly tick: Tick }>
+  ftl(): ChatFtl
+}
+
+/**
+ * Chat at ftl, MEASURED.
+ *
+ * Theorem 238 says *"chat is ftl: seal first (tokens=0), escalate anonymously only on miss"*, and
+ * `chatFreeAsk` already seals first. Two things were missing, and both are now folded in:
+ *
+ *   1. COALESCE — N callers asking the same question concurrently each escalated separately. The
+ *      question's content-address matches BEFORE any call is made ([[quantum]]/coalesce), so
+ *      identical asks collapse onto one upstream `chat()`. Duplicate work provably disappears.
+ *   2. ORDER — a session appended to an array, so history could be reordered silently. Each ask now
+ *      ticks [[quantum]]/clock, and the head seals the sequence: edit or reorder an ask and the head
+ *      cannot reproduce.
+ *
+ * `ftl()` then reports `holds` from what was actually spent. That is the whole point: `ftl.holds`
+ * fed with caller-supplied numbers restates its arguments and nothing can contradict it. Fed from
+ * here, a genuinely novel question yields `tokens > 0` and REFUTES the claim — which by
+ * [[rules]]/refutable is the only condition under which it can be true.
+ *
+ * HONEST BOUNDARY — this reduces the NUMBER of escalations; it does not make one escalation faster,
+ * and `holds` is a statement about reuse, never about physics: there is no time and no distance
+ * here, so nothing claims a velocity.
+ */
+/**
+ * A stable identity for a seal book, used ONLY as part of the coalescing key.
+ *
+ * `SealBook` is a `ReadonlyMap` or a lookup function, and neither carries a name — the previous
+ * `o.book?.name` was `undefined` for every Map, so every custom book collapsed onto the same key as
+ * "no book at all". Two different books coalesced into one flight, and one book's answer could be
+ * served for another's question. The type error was the surface; that was the defect.
+ *
+ * Identity is by OBJECT, never by content: hashing the content would be slower than the lookup it
+ * guards, and two books that merely look alike must still not share an answer.
+ *
+ * @invariant distinct books never share a key; the same book always yields the same key
+ */
+const BOOK_KEYS = new WeakMap<object, string>()
+let bookSeq = 0
+
+function bookKey(book: SealBook | undefined): string | null {
+  if (book === undefined) return null
+  const seen = BOOK_KEYS.get(book)
+  if (seen !== undefined) return seen
+  bookSeq += 1
+  const key = `book:${bookSeq}`
+  BOOK_KEYS.set(book, key)
+  return key
+}
+
+export function chatMachine(opts: { readonly concurrency?: number } = {}): ChatMachine {
+  const flight = coalescer<Chat>({ concurrency: opts.concurrency ?? 8, retain: true })
+  const order = clock()
+  return {
+    async ask(session, question, o = {}) {
+      // The ADDRESS of the question is the coalescing key — same question, one escalation.
+      const answer = await flight.run({ q: question, book: bookKey(o.book) }, () =>
+        chat(question, o.book ?? BOOK, { fetchImpl: o.fetchImpl, escalate: o.escalate }),
+      )
+      const tick = order.tick({ q: question, lane: answer.lane })
+      const next = sessionAppend(
+        session,
+        `free-chat[${answer.lane}|tokens=${answer.tokens}|reused=${answer.reused}]: ${answer.answer}`,
+      )
+      return { session: next, answer, tick }
+    },
+    ftl(): ChatFtl {
+      const m = flight.amortizeInput()
+      return {
+        answers: m.answers,
+        tokens: m.tokens,
+        reuses: m.reuses,
+        holds: ftlReport({ answers: m.answers, tokens: m.tokens, reuses: m.reuses }).holds,
+        head: order.now()?.address ?? null,
+      }
+    },
+  }
 }
 
 /**

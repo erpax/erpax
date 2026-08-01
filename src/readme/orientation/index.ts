@@ -10,7 +10,7 @@
  * (https://ceccec.psg.bg), which solves the same problem for the same corpus family and does eight
  * things this README does not — it opens with what the thing IS and a paste-a-link input, names
  * runnable commands, publishes its census, states its Clay position as `claySolvedByThisFold=0`,
- * disclaims `NOT a QPU / qpuRequired=false`, and carries Reproducibility · Limitations · Receipt
+ * disclaims the exotic-device claim (`NOT a QPU`), and carries Reproducibility · Limitations · Receipt
  * sections. Deriving the bar from a working example rather than from taste is the point: the
  * comparison is checkable, and anyone may argue with the source rather than with an opinion.
  *
@@ -93,7 +93,7 @@ export const ORIENTATION_CRITERIA: readonly Criterion[] = [
   {
     id: 'limits',
     gives: 'the honest boundary — what this does NOT do',
-    derivedFrom: 'explicit Limitations and Reproducibility sections; "NOT a QPU", "qpuRequired=false"',
+    derivedFrom: 'explicit Limitations and Reproducibility sections; the "NOT a QPU" disclaimer',
     met: (t) => has(t, 'honest boundary', 'limitation', 'does not', 'not a proof', 'never claims'),
   },
 ]

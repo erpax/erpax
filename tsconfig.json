@@ -29,6 +29,9 @@
       ],
       "@payload-config": [
         "./src/payload.config.ts"
+      ],
+      "sharp": [
+        "./node_modules/sharp/lib/index.d.ts"
       ]
     },
     "target": "ES2022"

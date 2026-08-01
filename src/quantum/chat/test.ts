@@ -12,6 +12,7 @@ import {
   GATEWAY_BITS, crossStates, referralsFor, distributeToStates,
   compose, superpose,
   modeOf, threadModes, stringTheory, stringTheoryEquation, chatStringTheory,
+  chatMachine,
   type Transcriber,
   type Researcher,
 } from '@/quantum/chat'
@@ -460,5 +461,57 @@ describe('quantum/chat — free chat at architectural FTL (ceccec.psg.bg)', () =
     expect(session.thread).not.toBe(s0.thread)
     // linear-scan crack absent when usesLinearScan=false
     expect(report.gaps.some((g) => g.kind === 'scan')).toBe(false)
+  })
+})
+
+describe('chatMachine — theorem 238 MEASURED instead of claimed', () => {
+  // The escalate lane reads `choices[0].message.content` — a stub of any other shape throws
+  // `empty answer`, which is the lane refusing to invent a response it did not receive.
+  const fetchStub = (async () =>
+    new Response(JSON.stringify({ choices: [{ message: { content: 'stub answer' } }] }), {
+      status: 200,
+      headers: { 'content-type': 'application/json' },
+    })) as unknown as typeof fetch
+
+  it('identical CONCURRENT asks escalate ONCE — the address matches before any call', async () => {
+    const m = chatMachine({ concurrency: 8 })
+    const s = startSession('t') // the seed folds the topic — deterministic, not supplied
+    await Promise.all(Array.from({ length: 25 }, () => m.ask(s, 'same question', { fetchImpl: fetchStub })))
+    const f = m.ftl()
+    expect(f.answers).toBe(25)
+    expect(f.tokens).toBe(1)
+    expect(f.reuses).toBe(24)
+  })
+
+  it('DISTINCT questions each escalate — content-addressing never over-collapses', async () => {
+    const m = chatMachine({ concurrency: 8 })
+    const s = startSession('t') // the seed folds the topic — deterministic, not supplied
+    await Promise.all(
+      Array.from({ length: 5 }, (_, i) => m.ask(s, `question ${i}`, { fetchImpl: fetchStub })),
+    )
+    expect(m.ftl().tokens).toBe(5)
+  })
+
+  it('a novel question REFUTES holds — the claim can now be contradicted', async () => {
+    // This is the whole point. ftl.holds fed with caller-supplied numbers restates its arguments
+    // and nothing can say no. Fed from what was actually spent, tokens>0 says no.
+    const m = chatMachine()
+    const s = startSession('t') // the seed folds the topic — deterministic, not supplied
+    await m.ask(s, 'genuinely novel', { fetchImpl: fetchStub })
+    const f = m.ftl()
+    expect(f.tokens).toBeGreaterThan(0)
+    expect(f.holds).toBe(false)
+  })
+
+  it('order is sealed — each ask ticks the clock and advances the head', async () => {
+    const m = chatMachine()
+    const s = startSession('t') // the seed folds the topic — deterministic, not supplied
+    const a = await m.ask(s, 'first', { fetchImpl: fetchStub })
+    const headAfterFirst = m.ftl().head
+    const b = await m.ask(s, 'second', { fetchImpl: fetchStub })
+    expect(a.tick.index).toBe(1)
+    expect(b.tick.index).toBe(2)
+    expect(b.tick.prev).toBe(a.tick.address)
+    expect(m.ftl().head).not.toBe(headAfterFirst)
   })
 })
