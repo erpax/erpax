@@ -24,6 +24,7 @@ import {
   horoCrossed,
 } from '@/uuid/matrix'
 import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf, renderSequenceSection } from '@/horo'
+import { renderInstrumentSection } from '@/instrument'
 import { renderMillenniumSection } from '@/millennium'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
@@ -446,6 +447,10 @@ export function renderReadme(
     renderQuantumComputerSection(),
     // the sequence and its reflection, and the Clay register — both CALLED, so the landing page
     // cannot state a digit or a verdict the math does not produce ([[horo]] · [[millennium]])
+    // how to measure this corpus without being wrong — placed BEFORE the claims it protects,
+    // because every mis-measurement here was an orientation error, and orientation is what a
+    // README is for ([[instrument]])
+    ...renderInstrumentSection(),
     ...renderSequenceSection(),
     ...renderMillenniumSection(),
     '## the diamond',
