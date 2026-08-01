@@ -21,7 +21,21 @@ import { pathNavMeta, topNavAnchorsFromSequence } from '../src/navigation/index.
 // (~6.5 min) AND at 24000 (the practical ceiling on a 32GB box). The page count
 // has outgrown a single-pass V8 heap. So the chunked/per-section build (or a
 // vitepress/rolldown upgrade) is now a REQUIRED follow-up, not a speculative
-// one. Until that lands, `docs:build` is the one gate left UN-wired into
+// one.
+//
+// RULED OUT (measured 2026-08-01, node 26, 14336 heap = the CI budget) — two
+// cheap levers that look like the cause and are not. Both were probed by
+// building with them removed, and both still OOM, so neither is worth retrying:
+//   - local search. The MiniSearch index over every page is large, but the
+//     build dies without `search` configured at all.
+//   - minification + sourcemaps. `minify: false, sourcemap: false` changes
+//     nothing; the peak is not the terser/esbuild pass.
+// What remains is the page COUNT itself (3,216 SKILL.md pages, each a Vue SFC
+// held through the bundle phase), which is what the chunked build addresses.
+// Note the CI heap is 14336 (ubuntu-latest), BELOW the 16000 that already fails
+// locally — so raising the local flag can never make the deploy pass.
+//
+// Until that lands, `docs:build` is the one gate left UN-wired into
 // pre-push/CI on purpose: enabling it would fail-closed-block every push on a
 // build that cannot complete (a gate that blocks unrelated work, not just
 // regressions). The cheap matter-twin of the speech gate — aura (gap=0, dead
