@@ -5,6 +5,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { exactMaxOf } from '@/algebra'
 import { STANDARDS_REGISTRY } from '@/standards/registry'
 import { matcherFor, jurisdictionOf, obligationsFor, consolidatedObligations, buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
 
@@ -206,7 +207,7 @@ describe('jurisdiction — the tax-residence join', () => {
 
   it('a GROUP carries the UNION, never the intersection', () => {
     const g = consolidatedObligations(['BG', 'US'], rows)
-    const most = Math.max(...Object.values(g.perResidence).map((v) => v.length))
+    const most = exactMaxOf(Object.values(g.perResidence).map((v) => v.length))
     expect(g.all.length).toBeGreaterThanOrEqual(most) // a superset of every member
     expect(g.all).toContain('ZDDS') // BG-only, still carried by the group
     expect(g.all).toContain('SOX') // US-only, still carried by the group

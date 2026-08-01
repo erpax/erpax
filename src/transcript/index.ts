@@ -22,6 +22,7 @@
  * @standard W3C WebVTT — The Web Video Text Tracks Format
  * @see ./SKILL.md -- ../local -- ../instrument -- ../handoff
  */
+import { exactMax, exactTrunc } from '@/algebra'
 
 /** One cue: what was said, and when. */
 export interface Segment {
@@ -95,9 +96,9 @@ export function parseCaptions(text: string): readonly Segment[] {
 
 /** `01:23:45` — for citing a moment a human can scrub to. */
 export function atTime(ms: number): string {
-  const total = Math.trunc(ms / 1000)
+  const total = exactTrunc(ms / 1000)
   const pad = (n: number): string => String(n).padStart(2, '0')
-  return `${pad(Math.trunc(total / 3600))}:${pad(Math.trunc((total % 3600) / 60))}:${pad(total % 60)}`
+  return `${pad(exactTrunc(total / 3600))}:${pad(exactTrunc((total % 3600) / 60))}:${pad(total % 60)}`
 }
 
 export interface Mention {
@@ -130,7 +131,7 @@ export function mentions(segments: readonly Segment[], terms: readonly string[])
 
 /** Total spoken duration covered by cues — not the video length, which captions do not report. */
 export function coveredMs(segments: readonly Segment[]): number {
-  return segments.reduce((n, s) => n + Math.max(0, s.endMs - s.startMs), 0)
+  return segments.reduce((n, s) => n + exactMax(0, s.endMs - s.startMs), 0)
 }
 
 /* c8 ignore start -- CLI face: `pnpm erpax transcript <file.vtt> [term …]` */
