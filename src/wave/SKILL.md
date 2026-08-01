@@ -2,13 +2,16 @@
 name: wave
 description: "Use when describing a batch of features added in one development breath before they are collided — a wave rides the horo sequence, raising entropy first so the later collide can DRY it back to the dense core."
 atomPath: wave
-coordinate: wave · 2/share · 70f75fbd
-contentUuid: "afbdb043-b5b7-5345-84c5-9efdc7f5dc71"
-diamondUuid: "e1aa8123-d05d-8447-8eeb-9f4ea6068c1a"
-uuid: "70f75fbd-5a00-8346-aab2-81bc09fecdb2"
-horo: 2
+coordinate: "wave · 7/descent · debefc5a"
+contentUuid: "12319ce9-ec77-5047-acf7-b293911bc1cd"
+diamondUuid: "c5b2a927-fac0-8559-82f9-ac7cea454867"
+uuid: "debefc5a-ef19-8e2e-8a75-3c7e9982c0a2"
+horo: 7
 bonds:
   in:
+    - agent
+    - apply
+    - audit
     - barrier
     - body
     - breath
@@ -16,6 +19,7 @@ bonds:
     - collapse
     - comms
     - confirm
+    - cost
     - decoherence
     - development
     - duality
@@ -33,14 +37,20 @@ bonds:
     - quantum
     - realtime
     - receipt
+    - research
     - sequence
     - spectrum
     - superposition
+    - taichi
+    - tamper
     - team
     - trinity
     - uncertainty
     - uuid
   out:
+    - agent
+    - apply
+    - audit
     - barrier
     - body
     - breath
@@ -48,6 +58,7 @@ bonds:
     - collapse
     - comms
     - confirm
+    - cost
     - decoherence
     - development
     - duality
@@ -65,24 +76,33 @@ bonds:
     - quantum
     - realtime
     - receipt
+    - research
     - sequence
     - spectrum
     - superposition
+    - taichi
+    - tamper
     - team
     - trinity
     - uncertainty
     - uuid
 typography:
   partition: wave
-  bondDegree: 95
-  neighbors: []
+  bondDegree: 130
+  neighbors:
+    - agent
+    - "analytics/max-tamper-cost"
+    - aura
+    - diamond
+    - hallucination
+    - purity
 standards:
   - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
-  - "the entropy a wave borrows is read from the live matrix, never hand-asserted"
 bindings: []
 neighbors:
   wikilink:
     - agent
+    - apply
     - breath
     - chat
     - collapse
@@ -100,11 +120,13 @@ neighbors:
     - realtime
     - receipt
     - sequence
-    - agent
     - team
     - trinity
     - uuid
   matrix:
+    - agent
+    - apply
+    - audit
     - barrier
     - body
     - breath
@@ -112,6 +134,7 @@ neighbors:
     - collapse
     - comms
     - confirm
+    - cost
     - decoherence
     - development
     - duality
@@ -129,14 +152,20 @@ neighbors:
     - quantum
     - realtime
     - receipt
+    - research
     - sequence
     - spectrum
     - superposition
+    - taichi
+    - tamper
     - team
     - trinity
     - uncertainty
     - uuid
   backlinks:
+    - agent
+    - apply
+    - audit
     - barrier
     - body
     - breath
@@ -144,6 +173,7 @@ neighbors:
     - collapse
     - comms
     - confirm
+    - cost
     - decoherence
     - development
     - duality
@@ -161,30 +191,33 @@ neighbors:
     - quantum
     - realtime
     - receipt
+    - research
     - sequence
     - spectrum
     - superposition
+    - taichi
+    - tamper
     - team
     - trinity
     - uncertainty
     - uuid
 signatures:
-  computationUuid: "2c4b24c0-56e0-819b-853e-0e642e70e37c"
+  computationUuid: "9f98a781-fa12-89fd-920c-7f3fbe7bdc32"
   stages:
     - stage: path
       stageUuid: "5844e4f3-8340-8b53-9573-4376c6b7f565"
     - stage: trinity
       stageUuid: "40a1a820-4723-8f6f-857b-0c6446ac3ac1"
     - stage: boundary
-      stageUuid: "0673d965-8486-8db0-9a92-8f07a445ff4f"
+      stageUuid: "afb2f160-11d5-804b-9d50-4c9f373057b2"
     - stage: links
-      stageUuid: "0295c4d1-be23-833a-8f3d-385e45794ea3"
+      stageUuid: "a7c8e844-549e-8876-bf35-f6f5168f5a1e"
     - stage: horo
-      stageUuid: "b4d73658-1f08-844d-9bdb-5a1c6946ba9f"
+      stageUuid: "99d8ea08-a570-8692-a6cf-20e22d7136b8"
     - stage: seal
-      stageUuid: "b1e46350-f963-824b-8151-7d4f7d5ded8c"
+      stageUuid: "41997baf-90c7-8aee-b981-1bd22340a1dd"
     - stage: uuid
-      stageUuid: "46ff8532-6e98-8e8b-afdb-423428c2574a"
+      stageUuid: "0c594073-227b-8ec6-964a-8bd5c48d0636"
 version: 2
 ---
 # wave — one breath of features, added then collided

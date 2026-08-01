@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactTrunc } from '@/algebra'
 /**
  * wave — the development EXHALE unit, COMPUTED.
  *
@@ -117,6 +117,10 @@ export const waveEntropy = (): number => entropy()
 export const collideOf = (): string[] => dualOf('wave')
 
 export {
+  laneCostAt,
+  laneCostSplit,
+  laneSpeedupCeiling,
+  type LaneCostSplit,
   selfBalancingWaveLoad,
   waveDispatchCost,
   tamperCostForWave,

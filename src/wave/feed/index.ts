@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactTrunc } from '@/algebra'
 /**
  * wave/feed — feed research/develop waves into themselves for endless R&D.
  *

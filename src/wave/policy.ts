@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMaxOf, exactMin, exactRound } from '@/algebra'
 /**
  * wave/policy — max work × max tampering cost (dual objective).
  *
@@ -112,8 +112,8 @@ export function coverageFromWorkUnits(
   policy: MaxWorkTamperPolicy,
 ): number {
   if (units.length === 0 || policy.waveDepth <= 0) return 0
-  const maxWave = exactMax(0, ...units.map((u) => u.waveOrdinal ?? 0))
-  const maxSeq = exactMax(0, ...units.map((u) => u.receiptSeq ?? 0))
+  const maxWave = exactMaxOf([0, ...units.map((u) => u.waveOrdinal ?? 0)])
+  const maxSeq = exactMaxOf([0, ...units.map((u) => u.receiptSeq ?? 0)])
   const waveCoverage = maxWave / policy.waveDepth
   const receiptCoverage =
     policy.receiptChainDepth > 0 ? maxSeq / policy.receiptChainDepth : 0

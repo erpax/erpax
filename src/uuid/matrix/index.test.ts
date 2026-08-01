@@ -11,12 +11,14 @@
  * @see ./index.ts, ./matrix.generated.ts, ./collide.mjs
  */
 import { describe, it, expect } from 'vitest'
+import { HORO_DIGITS } from '@/horo'
 import {
   nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest,
   parentOf, prevOf, nextOf, childrenOf, bidirectionalCrossOf,
   coordinateOf, coordinateAddress, verifyBind, verifyRoot, tamperedAtoms, assertMatrixSigned,
   toUuid, merge,
   UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT,
+  entanglementOf,
 } from '@/uuid/matrix'
 
 describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', () => {
@@ -50,12 +52,19 @@ describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', (
     expect(byPath).toBeDefined()
     expect(byPath?.path).toBe('architecture/invariant')
     expect(byPath?.uuid).toBe(byLeaf?.uuid)
-    expect(byPath?.horo).toBe(7) // page-position derived — 7/descent after the vocabulary shard grew the sequence
+    // horo is PAGE-POSITION derived, so it MOVES as the corpus grows — pinning the digit rots the
+    // test on the next atom (it read 7, then 5 when the corpus went 3178 → 3191). Assert the law
+    // instead: the digit is on the horo ring, and the two lookups agree about it.
+    expect(HORO_DIGITS).toContain(byPath?.horo)
+    expect(byPath?.horo).toBe(byLeaf?.horo)
   })
 
   it('coordinateAddress folds path · horo/measure · uuid (digit-computed, not hand labels)', () => {
     const addr = coordinateAddress('architecture/invariant')
-    expect(addr).toMatch(/^architecture\/invariant · 7\/descent · [0-9a-f]{8}$/)
+    // the horo digit and its measure name are PAGE-POSITION derived and move as the corpus grows —
+    // assert the SHAPE and the ring membership, not a pinned digit that rots on the next atom.
+    expect(addr).toMatch(/^architecture\/invariant · [0-9]\/[a-z]+ · [0-9a-f]{8}$/)
+    expect(HORO_DIGITS).toContain(Number(addr.split(' · ')[1]!.split('/')[0]))
   })
 
   it('the band assignment landed: a control atom → control, a noble-0 atom → source', () => {
@@ -225,5 +234,34 @@ describe('uuid-matrix coordinate: the 3-connected [[coordinate]] cross verifies'
     if (!n?.bind || !n.parent || !n.prev || !n.next) return
     const tampered = rebind(flipFirstByte(n.uuid), n.parent, n.prev, n.next)
     expect(tampered).not.toBe(n.bind)
+  })
+})
+
+describe('entanglementOf — the verdict that a hand-rolled scan got wrong twice', () => {
+  it('reads the real edge shape { f, t } — a bonded atom is never reported isolated', () => {
+    const horo = entanglementOf('horo')
+    expect(horo.present).toBe(true)
+    expect(horo.out).toBeGreaterThan(0)
+    expect(horo.isolated).toBe(false)
+    // reciprocity holds at atom scale, as it does corpus-wide
+    expect(horo.oneWay).toBe(0)
+    expect(horo.in).toBe(horo.out)
+  })
+
+  it('an atom ABSENT from the matrix reports present:false — never a silent zero', () => {
+    const ghost = entanglementOf('no-such-atom-anywhere')
+    expect(ghost.present).toBe(false)
+    expect(ghost.isolated).toBe(false) // absent is not isolated — the distinction that was missed
+    expect(ghost.out).toBe(0)
+  })
+
+  it('the atoms folded this session are entangled in BOTH directions', () => {
+    for (const atom of ['trello', 'trello/plugin', 'anchor/surface', 'constitution']) {
+      const e = entanglementOf(atom)
+      expect(e.present).toBe(true)
+      expect(e.isolated).toBe(false)
+      expect(e.out).toBeGreaterThan(0)
+      expect(e.oneWay).toBe(0)
+    }
   })
 })

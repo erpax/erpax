@@ -157,6 +157,49 @@ export const neighborsOf = (atom: string): MatrixNode[] => {
   return UUID_MATRIX_EDGES.filter((e) => e.f === i).map((e) => at(e.t)).filter(isNode)
 }
 
+/**
+ * Is this atom ENTANGLED, and in which directions — the verdict, not the raw edges.
+ *
+ * Saved because its absence cost two false measurements: a hand-rolled scan filtered on `e.from` /
+ * `e.to`, and the edge shape is `{ f, t }` — INDICES. That filter returns 0 for every atom in the
+ * corpus, so it "confirmed" an atom was isolated when the same query said `horo` had no edges either.
+ * A tool that reads the real shape once cannot be wrong in the direction nobody checked
+ * ([[rules]]: a heuristic is wrong in the direction you did not check).
+ *
+ * `isolated` is the case that matters: a node present in the matrix with NO edges is an atom that was
+ * authored but never folded — no bond, no tamper-cost contribution, invisible to the seed.
+ *
+ * @invariant an atom absent from the matrix reports `present: false`, never a silent zero
+ * @invariant oneWay is a subset of out; oneWay = 0 ⟺ every outgoing edge is reciprocated
+ */
+export interface Entanglement {
+  readonly atom: string
+  /** false when the atom has no node at all — distinct from a node with no edges */
+  readonly present: boolean
+  readonly out: number
+  readonly in: number
+  /** outgoing edges with no mirror — the reciprocity gap at atom scale */
+  readonly oneWay: number
+  /** present but bonded to nothing: authored, never folded */
+  readonly isolated: boolean
+}
+
+export function entanglementOf(atom: string): Entanglement {
+  const i = indexOf(atom)
+  if (i === undefined) return { atom, present: false, out: 0, in: 0, oneWay: 0, isolated: false }
+  const out = UUID_MATRIX_EDGES.filter((e) => e.f === i)
+  const inn = UUID_MATRIX_EDGES.filter((e) => e.t === i)
+  const oneWay = out.filter((e) => !UUID_MATRIX_EDGES.some((r) => r.f === e.t && r.t === e.f))
+  return {
+    atom,
+    present: true,
+    out: out.length,
+    in: inn.length,
+    oneWay: oneWay.length,
+    isolated: out.length === 0 && inn.length === 0,
+  }
+}
+
 /** Atoms that link TO this atom path (incoming edges — path-aware backlinks). */
 export const backlinksOf = (atom: string): MatrixNode[] => {
   const i = indexOf(atom)

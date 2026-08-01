@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactCeil, exactMax, exactMaxOf, exactMin, exactMinOf, exactRound, exactTrunc } from '@/algebra'
 /**
  * wave/load — self-balancing horo-phase wave partitioner.
  *
@@ -128,8 +128,8 @@ export function selfBalancingWaveLoad<T>(
 
   const totalUnits = waves.reduce((s, w) => s + w.totalUnits, 0)
   const unitLoads = waves.map((w) => w.totalUnits)
-  const minU = exactMin(...unitLoads)
-  const maxU = exactMax(...unitLoads)
+  const minU = exactMinOf(unitLoads)
+  const maxU = exactMaxOf(unitLoads)
   const balanceRatio = minU > 0 ? maxU / minU : maxU > 0 ? Number.POSITIVE_INFINITY : 1
 
   return {
@@ -139,6 +139,64 @@ export function selfBalancingWaveLoad<T>(
     balanceRatio: exactRound(balanceRatio * 1000) / 1000,
     restingStep: composeWaveSteps(waves.map((w) => w.step)),
   }
+}
+
+/**
+ * A lane's cost split into what is PAID ONCE and what scales — the measurement that makes a regen
+ * cost legible.
+ *
+ * Timing a lane end-to-end measures its SETUP, not its work: the README face regen was measured at
+ * 82.4 s for one atom and 127.1 s for eight, which is **76 s fixed + 6.38 s/atom** — 92% of a
+ * one-atom run is the boot, re-paid on every invocation. That is why a per-directive regen costs
+ * ~73 h across the corpus while one pass costs ~5.7 h: the fixed term is being re-spent, which is
+ * exactly the unfolded linearity [[quantum]]/ftl exists to name (a token spent once, never re-spent).
+ *
+ * Two samples give the split exactly; more samples are fitted by least squares. The ceiling a
+ * partition permits is `fixed + (n·marginal)/lanes` — the sequence gives 7 lanes, the sequence with
+ * its reflection gives 14.
+ *
+ * @invariant the split is exact for two samples and least-squares for more
+ * @invariant speedup is a CEILING the partition permits, never a measured throughput
+ */
+export interface LaneCostSplit {
+  /** cost paid once per invocation, whatever the item count (ms) */
+  readonly fixedMs: number
+  /** cost per item (ms) */
+  readonly marginalMs: number
+  /** fraction of a single-item run that is pure setup */
+  readonly fixedShare: number
+}
+
+/** Split measured (items, ms) samples into fixed + marginal. Needs at least two distinct item counts. */
+export function laneCostSplit(samples: readonly { readonly items: number; readonly ms: number }[]): LaneCostSplit {
+  const distinct = new Set(samples.map((s) => s.items))
+  if (samples.length < 2 || distinct.size < 2) {
+    throw new Error('laneCostSplit: need at least two samples with different item counts — one point cannot separate fixed from marginal')
+  }
+  const n = samples.length
+  const sx = samples.reduce((a, s) => a + s.items, 0)
+  const sy = samples.reduce((a, s) => a + s.ms, 0)
+  const sxx = samples.reduce((a, s) => a + s.items * s.items, 0)
+  const sxy = samples.reduce((a, s) => a + s.items * s.ms, 0)
+  const marginalMs = (n * sxy - sx * sy) / (n * sxx - sx * sx)
+  const fixedMs = (sy - marginalMs * sx) / n
+  const one = fixedMs + marginalMs
+  return { fixedMs, marginalMs, fixedShare: one === 0 ? 0 : fixedMs / one }
+}
+
+/**
+ * The cost of a lane over `items`, and the CEILING a lane-partition permits. Amdahl, stated honestly:
+ * the fixed term does not divide, so the speedup saturates at `1 + (n·marginal)/fixed` however many
+ * lanes are added.
+ */
+export function laneCostAt(split: LaneCostSplit, items: number, lanes = 1): number {
+  if (lanes < 1) throw new Error('laneCostAt: lanes must be ≥ 1')
+  return split.fixedMs + (items * split.marginalMs) / lanes
+}
+
+/** Speedup ceiling of a partition — a bound the balance permits, NOT a measured throughput. */
+export function laneSpeedupCeiling(split: LaneCostSplit, items: number, lanes: number): number {
+  return laneCostAt(split, items, 1) / laneCostAt(split, items, lanes)
 }
 
 export interface WaveDispatchCostOpts {

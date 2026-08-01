@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil } from '@/algebra'
 /**
  * wave/scheduler — batched readme/matrix jobs in horo waves (OOM guard).
  *
