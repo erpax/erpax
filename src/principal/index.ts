@@ -1,0 +1,129 @@
+/**
+ * principal — act as someone, never as no one.
+ *
+ * Payload's Local API defaults to `overrideAccess: true`, and the corpus uses it at **138 sites**.
+ * Every one of them turns the access check OFF. The reason is real: an access function reads
+ * `req.user`, and a hook, a seed, a migration or a cron job has no user, so the check would deny
+ * everything. But "the check would fail" and "the check should not run" are different claims, and
+ * only the first is true.
+ *
+ * The alternative is a **system principal**: a real, narrowly-scoped identity passed as `req.user`.
+ * Then access control still runs — it simply *passes*, because the principal is authorised for what
+ * it is doing and for nothing else. Three things change:
+ *
+ *   ACCOUNTABILITY  "who posted this journal entry" has an answer. Today, in `journal/entry`, the
+ *                   answer is `overrideAccess: true` — 7 bypasses inside double-entry posting.
+ *   LEAST PRIVILEGE a seed principal cannot delete; a job principal cannot write the ledger. With
+ *                   the check off, every bypass has ALL privileges by construction.
+ *   BLAST RADIUS    a wrong query under a principal returns nothing. Under a bypass it returns
+ *                   every tenant's rows, and nothing distinguishes that from a correct result.
+ *
+ * **This is the shape, not the migration.** 138 call sites move one subsystem at a time, each
+ * verified, with the ledger last — a sweep here would replace a known-permissive default with an
+ * unknown-restrictive one across the whole corpus at once, and the failures would be silent reads
+ * returning nothing rather than loud errors.
+ *
+ * @law act as someone. A system operation runs under a scoped principal so the check runs and
+ *      passes — never with the check disabled, which grants everything to no one.
+ * @invariant every principal declares its subsystem and its roles; there is no all-powerful one
+ * @invariant a principal is always tenant-bound — a system op still happens somewhere
+ * @invariant `roles` is readonly and never empty — a principal with no capability is not a principal
+ * @standard ISO/IEC 27001 A.5.15 — access control: least privilege
+ * @standard ISO/IEC 27001 A.8.2 — privileged access rights
+ * @see ./SKILL.md -- ../auth -- ../rules/bypass
+ */
+import type { UserRole } from '@/types/auth'
+
+/** The subsystems that legitimately act without a human. Declared — no theorem derives this list. */
+export type Subsystem = 'seed' | 'hook' | 'job' | 'migration' | 'import'
+
+/**
+ * A system identity, shaped so `getUserContext(req)` reads it exactly as it reads a person:
+ * `{ id, tenants: [{ tenant }], roles }`. Nothing about the access path is special-cased — that is
+ * the point. A principal that needed its own code path would be a second door.
+ */
+export interface SystemPrincipal {
+  readonly id: string
+  readonly subsystem: Subsystem
+  readonly tenants: readonly [{ readonly tenant: string }]
+  readonly roles: readonly UserRole[]
+  /** why this principal exists and what it may not do — read by a human, not by the checker */
+  readonly scope: string
+}
+
+/**
+ * The capability each subsystem gets. DECLARED, deliberately narrow, and argued with here rather
+ * than inferred: no theorem says a seed may not delete. A human decided, in the open.
+ *
+ * `admin` appears nowhere. A subsystem that needs it is a subsystem whose job is wrong.
+ */
+const CAPABILITY: Readonly<Record<Subsystem, readonly UserRole[]>> = {
+  // seeds create reference data; they never remove a tenant's rows
+  seed: ['user'] as readonly UserRole[],
+  // hooks react to a write already authorised — they extend it, they do not widen it
+  hook: ['user'] as readonly UserRole[],
+  // background jobs read and write their own artefacts
+  job: ['user'] as readonly UserRole[],
+  // migrations reshape structure; they run once, under review
+  migration: ['user'] as readonly UserRole[],
+  // imports write what an authenticated human handed over
+  import: ['user'] as readonly UserRole[],
+}
+
+const SCOPE: Readonly<Record<Subsystem, string>> = {
+  seed: 'creates reference data at install; may not delete tenant rows',
+  hook: 'extends a write that was already authorised; may not widen its scope',
+  job: 'reads and writes its own artefacts on a schedule; no interactive authority',
+  migration: 'reshapes structure once, under review; not a runtime path',
+  import: 'writes data an authenticated human supplied; inherits their tenant',
+}
+
+/**
+ * The principal for a subsystem, bound to a tenant.
+ *
+ * Tenant is REQUIRED. A system operation still happens somewhere, and a principal with no tenant
+ * would make `scopedAccess` — which returns `{ tenant: { equals: user.tenant } }` — match nothing
+ * or everything depending on how the empty value is coerced. Neither is a policy.
+ */
+export function asSystem(subsystem: Subsystem, tenant: string): SystemPrincipal {
+  const t = tenant.trim()
+  if (t.length === 0) {
+    throw new Error(
+      `principal: a system operation needs a tenant — asSystem('${subsystem}', …) was given none. ` +
+        'A tenantless principal is a bypass wearing an identity.',
+    )
+  }
+  return {
+    id: `system:${subsystem}`,
+    subsystem,
+    tenants: [{ tenant: t }],
+    roles: CAPABILITY[subsystem],
+    scope: SCOPE[subsystem],
+  }
+}
+
+/** Every declared principal for a tenant — the full privileged surface, enumerable and reviewable. */
+export function principals(tenant: string): readonly SystemPrincipal[] {
+  return (Object.keys(CAPABILITY) as Subsystem[]).map((s) => asSystem(s, tenant))
+}
+
+/**
+ * Does this principal hold the role an operation needs?
+ *
+ * Exists so a caller can fail LOUDLY at the call site rather than discover the answer as an empty
+ * result set. A denied read and an empty table are indistinguishable downstream, which is the
+ * failure mode that makes this migration delicate.
+ */
+export function principalMay(p: SystemPrincipal, role: UserRole): boolean {
+  return p.roles.includes(role)
+}
+
+/* c8 ignore start -- CLI face: `pnpm erpax principal [tenant]` */
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const tenant = process.argv[2] ?? 'platform'
+  console.log(`principals for tenant "${tenant}" — the privileged surface, enumerated:`)
+  for (const p of principals(tenant)) {
+    console.log(`  ${p.id.padEnd(20)} roles=${p.roles.join(',').padEnd(10)} ${p.scope}`)
+  }
+}
+/* c8 ignore stop */

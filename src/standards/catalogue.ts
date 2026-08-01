@@ -2000,7 +2000,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 179,
+    "count": 180,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -2746,6 +2746,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/insurance/contracts/index.ts",
+        "section": "§3"
+      }
+    ]
+  },
+  {
+    "id": "IAS-10",
+    "family": "ifrs",
+    "title": "Events after the Reporting Period",
+    "uuid": "6dac3dfd-7de2-8eaa-9d01-b00723510875",
+    "color": "hsl(356 81% 51%)",
+    "count": 10,
+    "modules": [
+      {
+        "path": "src/fiscal/periods/post/balance/sheet/events/SKILL.md",
+        "section": "§3"
+      },
+      {
+        "path": "src/fiscal/periods/post/balance/sheet/events/index.ts",
         "section": "§3"
       }
     ]
@@ -3525,7 +3543,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 59,
+    "count": 62,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -3631,7 +3649,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
     "uuid": "1f8df678-adff-8feb-9e78-aaa58e7b0fb4",
     "color": "hsl(157 56% 38%)",
-    "count": 59,
+    "count": 62,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -4127,6 +4145,92 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/users/SKILL.md",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-17442",
+    "family": "iso",
+    "title": "Legal Entity Identifier (LEI)",
+    "uuid": "ed22248b-5224-88d3-890d-95015a7efbfc",
+    "color": "hsl(226 56% 57%)",
+    "count": 19,
+    "modules": [
+      {
+        "path": "src/config/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/customers/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/employees/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/20022/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/beneficial/owners/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/beneficial/owners/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/payable/analytics.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/entity/legal/structures/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/entity/legal/structures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenants/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/tenants/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/payables/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/tenant/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/vendors/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/vendors/index.ts",
         "section": ""
       }
     ]
@@ -4819,6 +4923,52 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/properties/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO/IEC-19510",
+    "family": "iso",
+    "title": "Business Process Model and Notation (BPMN) 2.0",
+    "uuid": "47df648c-0555-8292-aa79-f478ee8c47ff",
+    "color": "hsl(39 85% 58%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/business/chain/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/concatenate/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/concatenate/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/definitions/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/definitions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/definitions/workflow/instances/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/definitions/workflow/instances/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/workflow/index.ts",
         "section": ""
       }
     ]
@@ -7454,6 +7604,218 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "RFC-9110",
+    "family": "rfc",
+    "title": "HTTP Semantics",
+    "uuid": "42b50cc1-3e1e-814f-92b8-4ce817395a16",
+    "color": "hsl(157 67% 39%)",
+    "count": 73,
+    "modules": [
+      {
+        "path": "src/allow/public/read/tenant/index.ts",
+        "section": "§13"
+      },
+      {
+        "path": "src/api/integration/index.ts",
+        "section": "§9"
+      },
+      {
+        "path": "src/app/(api)/api/subscriptions/create/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(api)/api/webhooks/stripe/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/[slug]/page.tsx",
+        "section": "§15.4"
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/not-found.tsx",
+        "section": "§15.5.5"
+      },
+      {
+        "path": "src/app/(frontend)/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/coherence/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/exit-preview/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/preview/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/seed/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/system/health/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/not-found.tsx",
+        "section": "§15.5.5"
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/[tenant]/login/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/my-route/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "RFC-3986",
+    "family": "rfc",
+    "title": "Uniform Resource Identifier (URI): Generic Syntax",
+    "uuid": "6538af56-2a38-8326-b7ab-261a9fd42e3d",
+    "color": "hsl(352 55% 52%)",
+    "count": 44,
+    "modules": [
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/search/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/preview/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/[tenant]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-domains/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/[tenant]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/tenant-slugs/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/archive/block/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/call/to/action/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/card/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/categories/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/hooks/beforeChange.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/default/lexical/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ensure/unique/slug/within/tenant/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/erpax/api/surface/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fetch/remote/file/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/generate/meta/index.ts",
+        "section": "§5.3"
+      },
+      {
+        "path": "src/get/media/url/index.ts",
+        "section": "§2.1"
+      },
+      {
+        "path": "src/i18n/routing/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "RFC-8785",
     "family": "rfc",
     "title": "JSON Canonicalization Scheme",
@@ -7638,6 +8000,110 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/voting/SKILL.md",
         "section": "§4.3"
+      }
+    ]
+  },
+  {
+    "id": "RFC-5646",
+    "family": "rfc",
+    "title": "Tags for Identifying Languages",
+    "uuid": "e02ee373-c4fa-8fb9-ba75-4ee6f9c43f18",
+    "color": "hsl(150 72% 57%)",
+    "count": 12,
+    "modules": [
+      {
+        "path": "src/app/(frontend)/[locale]/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/bcp/47/language-tag.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bcp/47/locale-utils.ts",
+        "section": ""
+      },
+      {
+        "path": "src/get/enabled/locales/for/tenant/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/localization/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/request/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/locale/fallback/index.ts",
+        "section": "§4.1"
+      },
+      {
+        "path": "src/localize/SKILL.md",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "RFC-8259",
+    "family": "rfc",
+    "title": "The JavaScript Object Notation (JSON) Data Interchange Format",
+    "uuid": "b976c062-4df1-8691-b5ad-1a32f1518980",
+    "color": "hsl(318 72% 40%)",
+    "count": 12,
+    "modules": [
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/next/coherence/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/my-route/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/httpApiError.ts",
+        "section": ""
+      },
+      {
+        "path": "src/i18n/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sale/audit-file.ts",
+        "section": ""
+      },
+      {
+        "path": "src/spec/generator/i18n-audit.ts",
+        "section": ""
+      },
+      {
+        "path": "src/spec/generator/i18n-keys.ts",
+        "section": ""
+      },
+      {
+        "path": "src/spec/generator/i18n-stub-filler.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/config/discovery/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/index.ts",
+        "section": ""
       }
     ]
   },
@@ -8706,6 +9172,112 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "W3C-HTML5",
+    "family": "w3c",
+    "title": "HTML — the living standard",
+    "uuid": "3ff1f7ce-4f79-86db-8e8d-4af55f5a567f",
+    "color": "hsl(169 57% 52%)",
+    "count": 47,
+    "modules": [
+      {
+        "path": "src/admin/bar/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/layout.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/before/login/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/banner/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/call/to/action/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/code/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/content/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/form/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/blocks/media/block/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/card/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/hooks/revalidatePage.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cmspage/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collection/archive/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/country/client/pdf-text-extractor-default.ts",
+        "section": ""
+      },
+      {
+        "path": "src/default/lexical/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/footer/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/generate/meta/index.ts",
+        "section": "§4.2.5"
+      },
+      {
+        "path": "src/header/config.ts",
+        "section": ""
+      },
+      {
+        "path": "src/hero/config/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/link/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/link/cms-link.tsx",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "ECMA-262",
     "family": "w3c",
     "title": "ECMAScript language specification",
@@ -9505,4 +10077,4 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
   }
 ] as const
 
-export const STANDARDS_COUNT = 255
+export const STANDARDS_COUNT = 263

@@ -2197,6 +2197,8 @@ src/posts/index.ts:40: * @standard ECMA-402 internationalization-api
 src/power/index.ts:32: * @standard NIST SP 800-107r1 §5.1 (hash strengths) · NIST SP 800-57 Part 1 r5 §5.6
 src/prime/index.ts:32: * @standard Fundamental Theorem of Arithmetic — unique prime factorisation (Euclid; Gauss)
 src/prime/index.ts:33: * @standard Shor 1994 — integer factorisation by quantum period-finding (proven, not claimed)
+src/principal/index.ts:31: * @standard ISO/IEC 27001 A.5.15 — access control: least privilege
+src/principal/index.ts:32: * @standard ISO/IEC 27001 A.8.2 — privileged access rights
 src/product/price/index.ts:20: * @standard ISO-4217:2015 currency-codes
 src/proof/bitcoin/genesi/index.ts:24: * @standard Nakamoto (2008) "Bitcoin: A Peer-to-Peer Electronic Cash System" §§3–4 (PoW + chain)
 src/proof/bitcoin/genesi/index.ts:25: * @standard NIST FIPS 180-4 SHA-256 (double-SHA256 block hash)
@@ -2360,6 +2362,8 @@ src/rolify/index.ts:11: * @standard EN-16931 business-terms (the party roles BG-
 src/routing/index.ts:6: * @standard NIST AI RMF (risk-proportionate controls) — map risk → control strength
 src/rules/ask/index.ts:23: * @standard ISO 9241-110:2020 §6.2 — self-descriptiveness / suitability for the task (do not ask what is known)
 src/rules/audience/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence — a citation is read by a person
+src/rules/bypass/index.ts:29: * @standard ISO/IEC 27001 A.5.23 — cloud-service tenant isolation
+src/rules/bypass/index.ts:30: * @standard ISO/IEC 25010:2023 §5.4 — security: confidentiality by default
 src/rules/canonical/index.ts:17: * @standard ISO/IEC 25010:2023 §5.5 reusability — use the dependency or drop it
 src/rules/collapse/index.ts:32: * @standard RFC 9562 §5.8 — content-address (same content, same address)
 src/rules/compatibility/index.ts:17: * @standard ISO/IEC 25010:2023 §5.3 compatibility — co-existence with the framework namespace
