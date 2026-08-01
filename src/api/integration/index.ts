@@ -328,3 +328,99 @@ export function foldingClient(inner: IntegrationClient): IntegrationClient & {
     }),
   }
 }
+
+// ── The SHARED fold — the speedup of wiring vendors together ─────────────────────────────────────
+// A per-client fold only reuses within one client. But a combination graph touches the same endpoint
+// from many directions: with N specs there are C(N,2) vendor↔vendor cells plus N self-cells (a vendor
+// chaining into itself), and several of those paths hit the SAME address. A shared fold collapses
+// them to one upstream call, so the speedup is over the whole matrix rather than one client.
+//
+// THE TRAP, and why the address is vendor-scoped: `GET /ping` means different things to stripe and to
+// resend. An unscoped shared fold would serve one vendor's answer for another's request — a wrong
+// answer, silently, which is worse than any number of extra calls. So cross-vendor addresses can
+// never collide, and what the sharing actually buys is the SAME vendor reached from many paths.
+
+/** A fold shared across clients — one address space, vendor-scoped so answers cannot cross. */
+export interface SharedFold {
+  readonly held: (address: string) => Promise<unknown> | undefined
+  readonly hold: (address: string, p: Promise<unknown>) => void
+  readonly size: () => number
+}
+
+/** Create a shared fold. Pass one to many clients and they reuse each other's safe answers. */
+export function createSharedFold(): SharedFold {
+  const m = new Map<string, Promise<unknown>>()
+  return { held: (a) => m.get(a), hold: (a, p) => void m.set(a, p), size: () => m.size }
+}
+
+/** The vendor-scoped address — the reason two vendors' identical paths never collide. */
+export function scopedAddress(vendor: string, method: string, path: string, params: Readonly<Record<string, string | undefined>>): string {
+  return `${vendor} ${requestAddress(method, path, params)}`
+}
+
+/**
+ * Wrap a client against a SHARED fold. Identical to `foldingClient` except the address carries the
+ * vendor and the map is external, so every client wired to the same fold reuses the others' answers.
+ *
+ * @invariant two vendors asking the same method+path NEVER share an answer
+ * @invariant unsafe methods still always reach the wire
+ */
+export function sharedFoldingClient(
+  inner: IntegrationClient,
+  fold: SharedFold,
+): IntegrationClient & { readonly ftl: () => IntegrationFtl } {
+  let answers = 0
+  let calls = 0
+  let reuses = 0
+  return {
+    spec: inner.spec,
+    async request<T>(
+      method: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE',
+      path: string,
+      params: Readonly<Record<string, string | undefined>> = {},
+    ): Promise<T> {
+      answers += 1
+      if (!SAFE.has(method)) {
+        calls += 1
+        return inner.request<T>(method, path, params)
+      }
+      const address = scopedAddress(inner.spec.vendor, method, path, params)
+      const held = fold.held(address)
+      if (held) {
+        reuses += 1
+        return held as Promise<T>
+      }
+      calls += 1
+      const p = inner.request<T>(method, path, params)
+      fold.hold(address, p)
+      return p
+    },
+    ftl: () => ({
+      answers,
+      calls,
+      reuses,
+      holds: reuses > 0 && calls < answers,
+      speedupLog2: reuses > 0 ? algebraLog2(answers / calls) : 0,
+    }),
+  }
+}
+
+/**
+ * The combination matrix over a set of specs: every vendor↔vendor cell PLUS the diagonal, where a
+ * vendor chains into itself. `C(n,2)` pairs alone leave the diagonal empty — and the diagonal is
+ * where a wiring reflects on its own output ([[quantum]]/word: the self-interaction is what reopens
+ * the ring). This names the cells; it does not decide which are worth wiring.
+ */
+export function combinationCells(specs: readonly IntegrationSpec[]): readonly {
+  readonly from: string
+  readonly to: string
+  readonly self: boolean
+}[] {
+  const cells: { from: string; to: string; self: boolean }[] = []
+  for (let i = 0; i < specs.length; i++) {
+    for (let j = i; j < specs.length; j++) {
+      cells.push({ from: specs[i]!.vendor, to: specs[j]!.vendor, self: i === j })
+    }
+  }
+  return cells
+}

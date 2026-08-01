@@ -11,6 +11,10 @@ import {
   configFromEnv,
   createIntegrationClient,
   foldingClient,
+  createSharedFold,
+  sharedFoldingClient,
+  scopedAddress,
+  combinationCells,
   requestAddress,
   credentialed,
   IntegrationError,
@@ -277,5 +281,62 @@ describe('api/integration — the reuse fold: one instrument, every vendor', () 
   it('nothing reused ⇒ holds is FALSE and speedup is 0 — no free number', () => {
     const { client: c } = client()
     expect(c.ftl()).toEqual({ answers: 0, calls: 0, reuses: 0, holds: false, speedupLog2: 0 })
+  })
+})
+
+describe('api/integration — the shared fold: speedup from WIRING vendors together', () => {
+  const wired = (spec = TRELLO) => {
+    const { impl, calls } = stubFetch(() => ({ body: {} }))
+    return { impl, wire: calls, cfg: { spec, values: spec.credentials.map(() => 'x'), fetchImpl: impl } }
+  }
+
+  it('the same vendor reached from MANY paths costs ONE upstream call', async () => {
+    const fold = createSharedFold()
+    const { cfg: c, wire } = wired()
+    // ten combination cells all touching the same trello endpoint, ten separate clients
+    const clients = Array.from({ length: 10 }, () =>
+      sharedFoldingClient(createIntegrationClient(c), fold),
+    )
+    for (const cl of clients) await cl.request('GET', '/boards', { id: 'B1' })
+    expect(wire).toHaveLength(1) // measured at the wire
+    expect(fold.size()).toBe(1)
+    const total = clients.reduce((a, cl) => a + cl.ftl().calls, 0)
+    expect(total).toBe(1) // one call across ten clients
+    expect(clients.filter((cl) => cl.ftl().holds).length).toBe(9) // the nine that reused
+  })
+
+  it('TWO VENDORS asking the same path never share an answer — the trap this scoping closes', async () => {
+    const fold = createSharedFold()
+    const a = wired(STRIPE)
+    const b = wired(RESEND)
+    const ca = sharedFoldingClient(createIntegrationClient(a.cfg), fold)
+    const cb = sharedFoldingClient(createIntegrationClient(b.cfg), fold)
+    await ca.request('GET', '/ping')
+    await cb.request('GET', '/ping')
+    expect(a.wire).toHaveLength(1) // stripe called its own
+    expect(b.wire).toHaveLength(1) // resend called its own — NOT served stripe's answer
+    expect(fold.size()).toBe(2) // two addresses, because the vendor scopes them
+    expect(scopedAddress('stripe', 'GET', '/ping', {})).not.toBe(scopedAddress('resend', 'GET', '/ping', {}))
+  })
+
+  it('a write still always reaches the wire, shared fold or not', async () => {
+    const fold = createSharedFold()
+    const { cfg: c, wire } = wired()
+    const x = sharedFoldingClient(createIntegrationClient(c), fold)
+    const y = sharedFoldingClient(createIntegrationClient(c), fold)
+    await x.request('POST', '/cards', { name: 'n' })
+    await y.request('POST', '/cards', { name: 'n' })
+    expect(wire).toHaveLength(2) // never deduped — deduping would drop a write
+    expect(fold.size()).toBe(0)
+  })
+
+  it('the combination matrix has the DIAGONAL — a vendor chaining into itself', () => {
+    const cells = combinationCells(SPECS)
+    const n = SPECS.length
+    expect(cells).toHaveLength((n * (n + 1)) / 2) // 10 for four specs
+    expect(cells.filter((c) => !c.self)).toHaveLength((n * (n - 1)) / 2) // 6 pairs
+    expect(cells.filter((c) => c.self)).toHaveLength(n) // 4 self-cells
+    for (const c of cells.filter((c) => c.self)) expect(c.from).toBe(c.to)
+    expect(cells.filter((c) => c.self).map((c) => c.from)).toEqual(SPECS.map((s) => s.vendor))
   })
 })

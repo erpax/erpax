@@ -89,6 +89,14 @@ A request has an address (method ⊕ path ⊕ canonical params), so a repeat of 
 
 **Only safe methods fold.** A POST/PUT/PATCH/DELETE is not idempotent (RFC 9110 §9.2.2), and deduping one would **drop a write** — the worst possible "optimisation". Every write reaches the wire, and the honest consequence is that a write-heavy client shows **no speedup at all**. `holds` is `false` there, and that is the instrument telling the truth rather than flattering the seam.
 
+## The shared fold — speedup from WIRING them together
+
+A per-client fold reuses within one client. But a combination graph touches the same endpoint from many directions: with N specs there are `C(N,2)` vendor↔vendor cells **plus N self-cells** — a vendor chaining into itself — and `combinationCells` names all `N(N+1)/2`. For the four discovered specs that is **6 pairs + 4 diagonal = 10**, and the digital roots land where they have all evening: `dr(6) = 6` (a polarity boundary the ring never occupies) → `dr(10) = 1` (on the ring). The diagonal is what reopens it.
+
+`createSharedFold` + `sharedFoldingClient` give every client one address space, so ten combination paths hitting one trello endpoint cost **one upstream call** — measured at the wire, not on a counter. Ten clients, `speedupLog2 = 3.32`.
+
+**The trap this closes.** `GET /ping` means different things to stripe and to resend. An unscoped shared fold would serve one vendor's answer for another's request — a *wrong answer*, silently, which is worse than any number of extra calls. So the address is **vendor-scoped**, cross-vendor answers can never cross, and what the sharing actually buys is the same vendor reached from many paths. The suite asserts both halves: ten paths → one call, and two vendors on the same path → two calls.
+
 ## Discovered, not invented
 
 Every spec in `seed.ts` is derived from something already in the repo — a `package.json` dependency, a `.env.example` credential, a wrangler binding, a `.mcp.json` server, or an atom that already calls the lane: **trello · pollinations · stripe · resend**. A vendor nobody depends on is a wish, not an integration. Every limit carries `limitsSource`, the vendor's own published page — the recompute path ([[constitution]] Law 5), so a number here is checkable against its origin rather than asserted.
