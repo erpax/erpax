@@ -70,3 +70,82 @@ export const SPECS: readonly IntegrationSpec[] = [TRELLO, POLLINATIONS, STRIPE, 
 export function specOf(vendor: string): IntegrationSpec | undefined {
   return SPECS.find((s) => s.vendor === vendor)
 }
+
+/**
+ * YouTube Data API v3 — the metadata surface. Keyed, and the key is a real quota, not a formality.
+ *
+ * The quota is per DAY and it is spent per CALL, not per request-second: a `search.list` costs 100
+ * units of a 10,000-unit daily allowance, so **a hundred searches exhausts a day**. Modelling that
+ * as a rate limit would be a lie of shape — `limits` here is the burst guard, and the daily quota
+ * is the constraint that actually binds. Prefer `playlistItems.list` (1 unit) over `search.list`
+ * (100 units) wherever a playlist id is known.
+ *
+ * **What it does NOT give you: captions.** `captions.download` requires OAuth as the video's OWNER;
+ * an API key cannot read another channel's transcript. The metadata is titles, ids and descriptions
+ * — which is a real signal and a thin one, and calling it "video content" would be the fabrication
+ * [[instrument]] row 5 is about.
+ */
+export const YOUTUBE: IntegrationSpec = {
+  vendor: 'youtube',
+  baseUrl: 'https://www.googleapis.com/youtube/v3',
+  auth: 'query',
+  credentials: ['YOUTUBE_API_KEY'],
+  authNames: ['key'],
+  limits: [{ scope: 'key', capacity: 60, windowMs: 60_000 }],
+  limitsSource: 'https://developers.google.com/youtube/v3/getting-started#quota — 10,000 units/day; search.list = 100 units, playlistItems.list = 1',
+}
+
+/**
+ * Crossref — every DOI-registered work. **Keyless.**
+ *
+ * The polite pool is the free tier and it asks for a contact address in the User-Agent; supplying
+ * one is not authentication, it is courtesy that buys a better lane. `credentials` is empty because
+ * nothing is required — the honest description of a public endpoint, as with Pollinations.
+ */
+export const CROSSREF: IntegrationSpec = {
+  vendor: 'crossref',
+  baseUrl: 'https://api.crossref.org',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 50, windowMs: 1_000 }],
+  limitsSource: 'https://api.crossref.org/swagger-ui/index.html — polite pool, ~50 req/s with a mailto User-Agent',
+}
+
+/** OpenAlex — the open scholarly graph: works, authors, institutions, concepts. **Keyless.** */
+export const OPENALEX: IntegrationSpec = {
+  vendor: 'openalex',
+  baseUrl: 'https://api.openalex.org',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 10, windowMs: 1_000 }],
+  limitsSource: 'https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication — 100,000/day, 10/s',
+}
+
+/** arXiv — preprint metadata and abstracts, Atom XML. **Keyless**, and it asks for 3s between calls. */
+export const ARXIV: IntegrationSpec = {
+  vendor: 'arxiv',
+  baseUrl: 'https://export.arxiv.org/api',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 1, windowMs: 3_000 }],
+  limitsSource: 'https://info.arxiv.org/help/api/tou.html — one request per three seconds',
+}
+
+/** Wikidata — the structured claim graph behind Wikipedia. **Keyless**; SPARQL and REST. */
+export const WIKIDATA: IntegrationSpec = {
+  vendor: 'wikidata',
+  baseUrl: 'https://www.wikidata.org/w/api.php',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 5, windowMs: 1_000 }],
+  limitsSource: 'https://www.mediawiki.org/wiki/API:Etiquette — serial requests, identifying User-Agent',
+}
+
+/**
+ * The research lanes that cost NOTHING — the set an agent can use without a credential.
+ *
+ * This is the answer to "extend research capability using local tools": four of the six specs above
+ * need no key at all, so the capability is available on a clean checkout with no secret ceremony.
+ * YouTube is the outlier and is marked as such by carrying a credential.
+ */
+export const KEYLESS_RESEARCH: readonly IntegrationSpec[] = [CROSSREF, OPENALEX, ARXIV, WIKIDATA, POLLINATIONS]

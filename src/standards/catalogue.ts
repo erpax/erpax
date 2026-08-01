@@ -8605,7 +8605,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1987,
+    "count": 1986,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",

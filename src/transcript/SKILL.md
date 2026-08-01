@@ -1,63 +1,49 @@
 ---
 name: transcript
-description: "Use when reasoning about transcript — If this MediaObject is an AudioObject or VideoObject, the transcript of that object."
-atomPath: transcript
-coordinate: transcript · 7/descent · d4e88815
-contentUuid: "a0f60441-7782-5fc5-976d-ea71522d6629"
-diamondUuid: "b170e28a-5998-81da-b105-bb7ca75be2cd"
-uuid: "d4e88815-63f7-8973-8df8-a053cf06fa5c"
-horo: 7
-bonds:
-  in:
-    - law
-    - thing
-  out:
-    - law
-    - thing
-typography:
-  partition: transcript
-  bondDegree: 6
-  neighbors: []
-standards:
-  - "schema.org — the type vocabulary, collided to single words"
-bindings: []
-neighbors:
-  wikilink:
-    - law
-    - thing
-  matrix:
-    - law
-    - thing
-  backlinks:
-    - law
-    - thing
-signatures:
-  computationUuid: "5c75eea8-5fe4-8ed5-8d89-25d7b3a4871b"
-  stages:
-    - stage: path
-      stageUuid: "dfaa5b1e-5b64-893c-b98d-8e1cabe1fb5d"
-    - stage: trinity
-      stageUuid: "f6aec74e-a197-8dc0-bfc0-bbd73a7c460d"
-    - stage: boundary
-      stageUuid: "236b6f3f-7000-82ba-98c3-56a1f557bfef"
-    - stage: links
-      stageUuid: "7fc4651a-efb2-871a-9c0d-a4f96c16ecf8"
-    - stage: horo
-      stageUuid: "eb773f95-6a24-8b5a-a1ab-0218ed0c7bf8"
-    - stage: seal
-      stageUuid: "d93e9e49-9ba9-872d-88a7-ec5d834f52d7"
-    - stage: uuid
-      stageUuid: "b983e208-d26b-8704-8e36-bd0df586960e"
-version: 2
+description: "Use when spoken content must be read rather than watched — captions parsed into locatable segments. Handles WebVTT and SubRip alike, decides the format from the bytes rather than a filename, strips inline markup as presentation, and SKIPS a malformed cue instead of guessing a timestamp. mentions() returns a term with the moment attached, which is a pointer to go listen, never a finding: a transcript is what was said, not what is true, and auto-generated captions carry transcription error."
+atomPath: "transcript"
 ---
-# transcript
 
-If this MediaObject is an AudioObject or VideoObject, the transcript of that object.
+# transcript — what was said, located
 
-Entangled with — [[thing]]
+This atom existed as **prose only** — `SKILL.md`, `README.md`, `LLM.md`, and no `index.ts`, no `test.ts`. A name with no matter, exactly what [[rules]]/word-without-logic counts. It was found by looking for an honest way to read video content and discovering the socket was already cut and empty.
 
-Attested in schema.org — transcript
+## Why captions, and not the video
 
-**Law — [[law]]: transcript is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+An agent cannot watch or hear. What it *can* do is read captions as **bytes** — locally, with no consent wall, no JS rendering, and no model standing between the source and the reader ([[local]]). A `.vtt` on disk is a primary source; a summary of a video is not.
 
-@standard schema.org — the type vocabulary, collided to single words
+```
+pnpm erpax transcript captions.vtt ratchet void
+captions.vtt — vtt · 2 segment(s) · 00:00:06 spoken
+  00:00:01  void: the sequence folds through the void
+  00:14:22  ratchet: and the ratchet ceiling is derived
+```
+
+## What it refuses
+
+- **A malformed cue is skipped, never guessed at.** A fabricated timestamp sends a reader to the wrong moment *with confidence* — the failure this corpus keeps paying for ([[instrument]]).
+- **The format is decided by the bytes**, not by the filename. Prose with no cues is `unknown`, not defaulted to VTT.
+- **Inline markup is presentation, not speech** — `<v Speaker>` and `<i>` are stripped, because they were never said.
+
+VTT and SRT are both parsed, because they differ only by a decimal separator and an index line, and a parser refusing one would send a reader to convert a file by hand — which is where transcription errors enter.
+
+## Honest boundary
+
+A transcript is **what was said** — never that the statement is true, and never the visual content. Auto-generated captions additionally carry transcription error, so a symbol name or a number can be silently wrong. `mentions()` therefore returns a **pointer**: *go listen at 00:14:22*. The corpus is checked against the tree, never against what someone said about it.
+
+And `coveredMs` is spoken duration, not video length — captions do not report how long the video is.
+
+## Getting the captions
+
+The [[api]]/integration seed wires **YouTube Data API v3** for metadata, and marks its own limit: `captions.download` requires OAuth as the video **owner**, so an API key reads playlists and titles and can never read another channel's transcript. The route that works is to export the captions and put them on disk.
+
+Four research lanes beside it need **no credential at all** — Crossref, OpenAlex, arXiv, Wikidata — so a clean checkout has them without any secret ceremony.
+
+**Law — [[law]]: a transcript is what was said, located — never what is true, and never what was shown.**
+
+## Standards
+
+- **W3C WebVTT** — The Web Video Text Tracks Format.
+- **ISO-19011:2018 §6.4** — audit evidence: the citation must lead to the evidence, and a timestamp is the citation.
+
+Composes: [[local]] · [[instrument]] · [[api]] · [[handoff]] · [[law]].

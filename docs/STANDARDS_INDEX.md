@@ -2837,6 +2837,7 @@ src/train/index.ts:25: * @standard SFIA 8 responsibility-levels-1-7 (the held/re
 src/train/index.ts:26: * @standard ISO 30405:2016 essential-vs-optional (mandatory gates the surface)
 src/transaction/failures/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/transaction/failures/index.ts:12: * @standard ISO-8601-1:2019 date-time transaction-date
+src/transcript/index.ts:22: * @standard W3C WebVTT — The Web Video Text Tracks Format
 src/translate/field/index.ts:13: * @standard Payload field hooks (afterRead) · BCP-47 locale tags
 src/translate/index.ts:20: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2) · BCP-47 language tags
 src/translation/index.ts:19: * @standard BCP-47 language tags
