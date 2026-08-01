@@ -668,6 +668,29 @@ The measure ring `HORO_DIGITS` is the flow plus the pole (`[1,2,4,8,7,5,9]`); it
 
 A static loop is exactly **`0`**: a circle (`circleLoop`) that goes round once and **never touches its own centre** (`|(cos t, sin t)| = 1`, always). **Fold it** — pull it through the middle — and it becomes **`∞`**: the Gerono lemniscate `(cos t, sin 2t / 2)`, a figure-eight whose two lobes **counter-rotate** (opposite angular sense, tested) and meet **at the void `(0,0)`**, which it crosses at the fold points `t = π/2, 3π/2`. That crossing IS the fold — it turns one lobe into two. `∞` is `8` rotated a quarter turn (the inverted 8), and it is the 2D shadow of the double torus — the two flow trinities counter-rotating about the axis. So the fixpoint (the reduction's loop, [[theorem]]) is **dead as a static 0** and **alive as a folded ∞**: the void, folded, generates the infinite double loop. The still centre does not move; folded, everything counter-rotates about it.
 
+## What a fold carries — `carryRays()` · `carryClosure()`
+
+`8` doubles to `16` and lands on `7`. The fold is not a discard: `1` and `6` are what the sum was made of, and each sits on a ray of its own — `1` on the flow orbit, `6` on the axis.
+
+```
+step  2n   digits   rays          lands
+8     16   1+6      ring+axis     7     ← the only one
+7     14   1+4      ring+ring     5
+6     12   1+2      ring+ring     3
+9     18   1+8      ring+ring     9
+5     10   1+0      ring+void     1
+```
+
+**`8 → 7` is the only doubling in the nine whose carry straddles both rays.** Every other multi-digit fold carries two ring digits, or touches the void. That is why it reads as the seam where the halves meet rather than an arbitrary point on the orbit — `straddlingSteps()` computes it, and returns `[8]`.
+
+Taken to its end, the carry **closes**. Double a step, keep its digits, double those, and keep going: from every step it settles on `{1, 2, 4, 6, 8}`, and from `5` on `{0, 1, 2, 4, 6, 8}`.
+
+It must. For a single digit `n`, `2n ∈ [2, 18]` — so the units digit is even and the tens digit can only ever be `1`. No iteration produces `3`, `5`, `7` or `9`. The attractor is forced by the arithmetic, not found by search, and `5` alone reaches the void because `2·5 = 10` is the only double ending in zero.
+
+**So the unfolding is finite, and that is the finding.** An endless regress of carries would be unbounded entropy; instead it terminates in one small set reached from everywhere. It does **not** seal all nine — `{3,5,7,9}` are never carry digits from any step. Both rays are represented, so the entanglement propagates; the coverage is 5 of 9, and saying so is the honest version of the claim.
+
+**Boundary.** This is base-10 digit arithmetic: the carry digits depend on writing the number in base 10, while the orbit itself does not. A real, checkable asymmetry in the spelling — nothing outside it.
+
 ## Common mistakes
 - A state value off the ring {1,2,4,8,7,5,9} — escape; back out to the last harmonic.
 - A flow state on a triad digit {3,6} — those govern, they don't flow.

@@ -570,6 +570,114 @@ export const POLE = 9
 /** The inner circuit — 3 and 6 rotate into each other. NOT the same kind of thing as the pole. */
 export const INNER_CIRCUIT = [3, 6] as const
 
+/** Which ray a single DIGIT lies on — the flow orbit, the axis, or the void. */
+export type Ray = 'ring' | 'axis' | 'void'
+
+export function rayOf(digit: number): Ray {
+  if (digit === 0) return 'void'
+  return orbitOf(1).includes(digit) ? 'ring' : 'axis'
+}
+
+/**
+ * What a doubling step CARRIES when it folds.
+ *
+ * `8` doubles to `16` and the digital root sends it to `7`. The fold is not a discard: the digits
+ * `1` and `6` are what the sum was made of, and each one sits on a ray of its own — `1` on the flow
+ * orbit, `6` on the axis. Reading only the root `7` loses that; reading the carry keeps it.
+ *
+ * Computed across all nine, **8 → 7 is the only doubling whose carry digits straddle both rays**:
+ *
+ * ```
+ * step  2n   digits   rays          lands
+ * 8     16   1+6      ring+axis     7     ← the only one
+ * 7     14   1+4      ring+ring     5
+ * 6     12   1+2      ring+ring     3
+ * 9     18   1+8      ring+ring     9
+ * 5     10   1+0      ring+void     1
+ * ```
+ *
+ * Every other multi-digit doubling carries two ring digits, or touches the void. So the step from
+ * `8` is the single place in the cycle where one fold holds one digit from each ray at once — which
+ * is why it is the seam the two halves meet at, rather than an arbitrary point on the orbit.
+ *
+ * **Boundary.** This is base-10 digit arithmetic over (ℤ/9ℤ), and nothing more: the carry digits are
+ * a property of writing the number in base 10, while the orbit itself is base-independent. It is a
+ * real and checkable asymmetry in the spelling, not a claim about anything outside it.
+ *
+ * @invariant every carry's digits sum, under digitalRoot, to the step it lands on
+ * @invariant exactly one step straddles — `straddlingSteps()` is `[8]`, computed, never typed
+ */
+export interface CarryRay {
+  readonly step: number
+  readonly doubled: number
+  readonly digits: readonly number[]
+  readonly rays: readonly Ray[]
+  readonly lands: number
+  /** true when the carry holds one ring digit AND one axis digit — the two rays met in one fold */
+  readonly straddles: boolean
+}
+
+export function carryRays(): readonly CarryRay[] {
+  return [...orbitOf(1), ...INNER_CIRCUIT, POLE].map((step) => {
+    const doubled = step * 2
+    const digits = String(doubled).split('').map(Number)
+    const rays = digits.map(rayOf)
+    return {
+      step,
+      doubled,
+      digits,
+      rays,
+      lands: digitalRoot(doubled),
+      straddles: rays.includes('ring') && rays.includes('axis'),
+    }
+  })
+}
+
+/** The steps whose fold holds a digit from each ray. Computed — and it is exactly one. */
+export function straddlingSteps(): readonly number[] {
+  return carryRays().filter((c) => c.straddles).map((c) => c.step)
+}
+
+/**
+ * The carry, taken to its end: double a step, keep its digits, double THOSE, and keep going.
+ *
+ * `8 → 16` carries `1` and `6`; `6 → 12` carries `1` and `2`; `1 → 2` carries `2` — and the process
+ * does not run away. It **closes**, on the same five digits from every starting step:
+ *
+ * ```
+ * from any of 1 2 4 8 7 3 6 9  →  {1, 2, 4, 6, 8}     rays: ring + axis
+ * from 5                       →  {0, 1, 2, 4, 6, 8}  rays: ring + axis + void
+ * ```
+ *
+ * **Why it must.** For a single digit `n`, `2n ∈ [2, 18]`. So the units digit of `2n` is even, and
+ * the tens digit — when there is one — can only ever be `1`. Every carry digit is therefore drawn
+ * from `{1} ∪ {0,2,4,6,8}`, and no amount of iteration produces `3`, `5`, `7` or `9`. The attractor
+ * is forced by the arithmetic, not discovered by search. `5` alone reaches the void, because `2·5 =
+ * 10` is the only double ending in zero.
+ *
+ * **So the unfolding is finite, and that is the interesting part.** An infinite regress of carries
+ * would be unbounded entropy; instead it terminates in one small fixed set reached from everywhere.
+ * But it does NOT seal all nine — `{3,5,7,9}` are never reached as carry digits from any step, which
+ * is a limit worth stating plainly rather than a gap waiting to be closed.
+ *
+ * @invariant the closure is identical from every step except 5, which additionally reaches the void
+ * @invariant no odd digit above 1 is ever a carry — proven by 2n ≤ 18, not sampled
+ */
+export function carryClosure(seed: number): readonly number[] {
+  const seen = new Set<number>()
+  const queue = [digitalRoot(seed)]
+  while (queue.length > 0) {
+    const n = queue.shift()!
+    for (const d of String(n * 2).split('').map(Number)) {
+      if (!seen.has(d)) {
+        seen.add(d)
+        queue.push(d)
+      }
+    }
+  }
+  return [...seen].sort((a, b) => a - b)
+}
+
 /** A (stepA, stepB) cell is a merge point — a gateway between rings — when the composed step is 1 or 9. */
 export function isMergePoint(a: number, b: number): boolean {
   const c = composeSteps(a, b)

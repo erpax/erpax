@@ -23,8 +23,12 @@ import {
   VOID_PIVOT,
   AFFINE_ORDER,
   affineStep,
+  carryClosure,
+  carryRays,
+  rayOf,
   renderSequenceSection,
   sequenceForward,
+  straddlingSteps,
   sequenceReflected,
   reflectNumeral,
   doublingOrbits,
@@ -600,6 +604,53 @@ describe('turningNumber — a complete circle is 1, twisted is 0 (Whitney rotati
   it('the 0 is the TURNING, not π — π is transcendental and is not 0', () => {
     expect(PI).not.toBe(0)
     expect(turningNumber(lemniscate)).not.toBeCloseTo(PI, 1) // the 0 belongs to the winding, never to π
+  })
+})
+
+describe('horo — what a fold CARRIES, and where the carry ends', () => {
+  it('8 → 7 is the ONLY doubling whose carry holds one digit from each ray', () => {
+    const eight = carryRays().find((c) => c.step === 8)!
+    expect(eight.doubled).toBe(16)
+    expect([...eight.digits]).toEqual([1, 6])
+    expect([...eight.rays]).toEqual(['ring', 'axis']) // 1 on the flow orbit, 6 on the axis
+    expect(eight.lands).toBe(7)
+    expect(eight.straddles).toBe(true)
+    // and it is alone in that — computed across all nine, never asserted
+    expect([...straddlingSteps()]).toEqual([8])
+  })
+
+  it('7 → 5 carries 1 and 4, and BOTH stay on the ring — the contrast that makes 8 singular', () => {
+    const seven = carryRays().find((c) => c.step === 7)!
+    expect([...seven.digits]).toEqual([1, 4])
+    expect([...seven.rays]).toEqual(['ring', 'ring'])
+    expect(seven.lands).toBe(5)
+    expect(seven.straddles).toBe(false)
+    // 5 is the one that touches the void: 2·5 = 10 is the only double ending in zero
+    const five = carryRays().find((c) => c.step === 5)!
+    expect([...five.rays]).toEqual(['ring', 'void'])
+  })
+
+  it('every carry sums back to the step it lands on — the fold loses nothing', () => {
+    for (const c of carryRays()) {
+      expect(digitalRoot(c.digits.reduce((a, b) => a + b, 0))).toBe(c.lands)
+      expect(c.doubled).toBe(c.step * 2)
+    }
+  })
+
+  it('the carry taken to infinity CLOSES — one attractor, reached from everywhere', () => {
+    // not sampled: identical from every step, because 2n ≤ 18 forces every carry digit
+    // into {1} ∪ evens, so 3, 5, 7 and 9 can never appear however far it is iterated
+    for (const step of [1, 2, 4, 8, 7, 3, 6, 9]) {
+      expect([...carryClosure(step)]).toEqual([1, 2, 4, 6, 8])
+    }
+    expect([...carryClosure(5)]).toEqual([0, 1, 2, 4, 6, 8]) // 5 alone reaches the void
+  })
+
+  it('and it does NOT seal all nine — the limit, stated rather than hidden', () => {
+    const reachable = new Set(carryClosure(8))
+    for (const unreachable of [3, 5, 7, 9]) expect(reachable.has(unreachable)).toBe(false)
+    // both rays ARE represented, so the entanglement propagates — it just does not cover everything
+    expect(new Set([...reachable].map(rayOf))).toEqual(new Set(['ring', 'axis']))
   })
 })
 
