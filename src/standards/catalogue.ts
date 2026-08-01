@@ -5429,7 +5429,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 94,
+    "count": 96,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -6023,7 +6023,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key management lifecycles",
     "uuid": "03b4df35-67f2-8fa4-a7a6-445d7b0df5dd",
     "color": "hsl(228 68% 43%)",
-    "count": 11,
+    "count": 12,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -6035,6 +6035,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/anchor/index.ts",
+        "section": "§5.6.1"
+      },
+      {
+        "path": "src/entropy/threshold/index.ts",
         "section": "§5.6.1"
       },
       {

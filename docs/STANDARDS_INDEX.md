@@ -1132,6 +1132,8 @@ src/entity/types/index.ts:11: * @standard COSO-2013 entity-classification
 src/entropy/source/index.ts:33: * @standard NIST SP 800-90B — entropy sources: validated at the source, not by output inspection
 src/entropy/source/index.ts:34: * @standard NIST SP 800-108 — key derivation in counter mode
 src/entropy/source/index.ts:35: * @standard RFC 2104 — HMAC
+src/entropy/threshold/index.ts:31: * @standard NIST SP 800-57 Part 1 r5 §5.6.1 — comparable key strengths
+src/entropy/threshold/index.ts:32: * @standard NIST SP 800-90B — entropy sources
 src/entry/index.ts:25: * @standard IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
 src/entry/index.ts:26: * @standard FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation
 src/entry/index.ts:27: * @standard ISO 20022: debtor/creditor are the two signs of ONE transfer
