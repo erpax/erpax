@@ -102,9 +102,9 @@ export function composedStrengthBits(shares: readonly Share[]): number {
  * reveal nothing, and there is no field arithmetic to get wrong. It is not "custom secret-sharing
  * math" — it is the case where the math is a single operation.
  *
- * **m-of-n is deliberately absent.** Shamir over a prime field is where implementations go wrong,
- * and rolling it here would be exactly what the spec forbids. It is declared a COMPASS below until
- * a vetted library is pinned, so the gap is visible in the integrity metric rather than papered over.
+ * **m-of-n now lives in [[entropy]]/threshold/split**, over GF(256), where the information-theoretic
+ * property is a finite check rather than an argument. XOR remains the n-of-n case: every share
+ * required, and the math is a single operation.
  */
 export function composeAll(shares: readonly Share[]): Buffer {
   if (shares.length < 2) {
@@ -151,11 +151,11 @@ export const CLAIMS: readonly Claim[] = [
   { property: 'threshold.independence', measuredBy: 'src/entropy/threshold/test.ts' },
   { property: 'threshold.composition', measuredBy: 'src/entropy/threshold/test.ts' },
   { property: 'threshold.foldAddsNoEntropy', measuredBy: 'src/entropy/threshold/test.ts' },
-  {
-    property: 'threshold.mOfN',
-    closedBy: 'a vetted Shamir-over-prime-field implementation, pinned by version',
-    owner: 'security',
-  },
+  // CLOSED — it was a compass on the reasoning that prime-field secret sharing is where
+  // implementations go wrong. That names the risk correctly and draws the wrong conclusion: the risk
+  // is an implementation whose security property is ASSERTED. Over GF(256) it is DECIDED — the proof
+  // enumerates all 256 candidate secrets and shows m−1 shares are consistent with every one.
+  { property: 'threshold.mOfN', measuredBy: 'src/entropy/threshold/split/test.ts' },
 ]
 
 export const SURFACES: readonly string[] = [
@@ -172,5 +172,10 @@ export const EVIDENCE: readonly EvidenceSource[] = [
     measuredBy: 'src/entropy/threshold/test.ts',
     exercised: 'refused two shares from one seed; composed three independent draws additively',
     wouldFailIf: 'assertIndependentSources accepted shares sharing a source address',
+  },
+  {
+    measuredBy: 'src/entropy/threshold/split/test.ts',
+    exercised: 'every 3-of-5 subset reconstructed the secret; two shares reached all 256 candidates',
+    wouldFailIf: 'reachableSecrets returned fewer than 256 — the shares would then leak',
   },
 ]

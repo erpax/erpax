@@ -100,16 +100,19 @@ describe('entropy/threshold — the claims, typed by discern', () => {
   // the prose is the atom's, exported beside its claims; this supplies only the outcome
   const run: MeasureRun = runFrom(EVIDENCE, () => true)
 
-  it('independence, composition and the zero-entropy fold are VERDICTS; m-of-n is a COMPASS', () => {
+  it('all four are VERDICTS — m-of-n stopped being a compass when its property became decidable', () => {
     const m = manifest('entropy/threshold', CLAIMS, SURFACES)
     expect(m.verdicts.map((v) => v.property)).toEqual([
       'threshold.independence',
       'threshold.composition',
       'threshold.foldAddsNoEntropy',
+      'threshold.mOfN',
     ])
-    // Shamir over a prime field is where implementations go wrong. Rolling it here is what the
-    // spec forbids, so the gap is DECLARED and shows in the integrity metric rather than hidden.
-    expect(classify(CLAIMS[3]!)).toBe('compass')
+    expect(m.compasses).toEqual([])
+    // it was a compass on the reasoning that prime-field secret sharing is where implementations go
+    // wrong. The risk is real and it is not the field — it is a security property that is ASSERTED.
+    // Over GF(256) it is DECIDED: entropy/threshold/split enumerates all 256 candidate secrets.
+    expect(classify(CLAIMS[3]!)).toBe('verdict')
     for (const v of m.verdicts) expect(verdictHolds(v, run).holds).toBe(true)
   })
 
