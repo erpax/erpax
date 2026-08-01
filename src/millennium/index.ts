@@ -38,6 +38,19 @@ export interface Problem {
   readonly corpusSolves: false
   /** why the lens is a teaching analogy, not a solution — or, for Poincaré, whose result it echoes. */
   readonly why: string
+  /**
+   * The conjecture ITSELF, stated algebraically — what the problem asserts, independent of any lens.
+   * Separating the STATEMENT from the corpus's commentary is the discipline: a reader can see what is
+   * actually being claimed before meeting anything this corpus says about it, and a lens can never be
+   * mistaken for the mathematics it points at.
+   */
+  readonly statement: string
+  /**
+   * The NAMED gap — what is missing for this to be proved, said plainly. `''` only where nothing is
+   * missing because the result exists externally (Poincaré). A gap that is named is a gap that can be
+   * argued with; an unnamed one reads as a mystery and hides the size of the distance.
+   */
+  readonly gap: string
 }
 
 export const MILLENNIUM: readonly Problem[] = [
@@ -48,6 +61,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'the fold — content-addressing is verify-easy / derive-hard ([[merge]]); the seed floor s>0 ([[think]].ceiling)',
     corpusSolves: false,
     why: 'the strongest genuine resonance: checking content matches its address is easy, recovering content from an address is one-way (the tamper-cost). But that is ONE instance of the verify/derive asymmetry, not a proof that P ≠ NP — no separation is derived here',
+    statement: 'Is P = NP? Whether every decision problem whose solution is VERIFIABLE in polynomial time is also SOLVABLE in polynomial time — i.e. whether the classes P and NP coincide.',
+    gap: 'no separation is derived. The verify/derive asymmetry the fold exhibits is ONE instance of easy-to-check / hard-to-produce; a lower bound separating the classes is what is missing, and nothing here supplies one.',
   },
   {
     name: 'Riemann Hypothesis',
@@ -56,6 +71,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'the primes ↔ π link via ζ (ζ(2)=π²/6, the Euler product; [[horo]]/turningNumber, [[coincidence]])',
     corpusSolves: false,
     why: 'the corpus touches the real π–primes connection through ζ — but it does not prove the non-trivial zeros lie on the critical line. I refused to fabricate this earlier and refuse again',
+    statement: 'All non-trivial zeros of the Riemann zeta function lie on the critical line: ζ(s) = 0 with 0 < Re(s) < 1 ⟹ Re(s) = ½.',
+    gap: 'the corpus touches the primes↔π link through ζ (ζ(2) = π²/6, the Euler product) but derives nothing about the location of the zeros. What is missing is any argument constraining Re(s) — the whole conjecture.',
   },
   {
     name: 'Navier–Stokes existence & smoothness',
@@ -64,6 +81,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'plasma confinement / turbulence ([[rules]]/confine: handle the field, not each particle)',
     corpusSolves: false,
     why: 'the confinement analogy is physical and honest, but global smoothness of the 3D equations is a hard analysis problem the corpus does not resolve',
+    statement: 'For the 3D incompressible Navier–Stokes equations ∂u/∂t + (u·∇)u = −∇p + νΔu, ∇·u = 0, with smooth initial data: do smooth solutions exist for all time, or can they blow up in finite time?',
+    gap: 'global regularity is a hard-analysis question about a PDE. The confinement analogy (handle the field, not each particle) is physical intuition, not an estimate; no a-priori bound is derived here.',
   },
   {
     name: 'Yang–Mills existence & mass gap',
@@ -72,6 +91,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'none — the "mass gap" wordplay to the void/axis is overlay, not physics; I did not invent a lens',
     corpusSolves: false,
     why: 'quantum field theory existence + a positive mass gap is open; nothing here bears on it',
+    statement: 'For a compact simple gauge group G, does a non-trivial quantum Yang–Mills theory exist on ℝ⁴ with a mass gap Δ > 0 — i.e. the lightest particle has strictly positive mass?',
+    gap: 'no lens at all. Constructive QFT existence plus a positive spectral gap is outside anything this corpus computes; the "mass gap" wordplay to the void/axis is overlay, not physics.',
   },
   {
     name: 'Hodge Conjecture',
@@ -80,6 +101,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'none — algebraic cycles and cohomology are outside the corpus',
     corpusSolves: false,
     why: 'no honest lens; not invented',
+    statement: 'On a projective non-singular complex algebraic variety, every Hodge class (a rational cohomology class of type (p,p)) is a rational linear combination of the classes of algebraic cycles.',
+    gap: 'no lens at all. Algebraic cycles and Hodge theory are outside the corpus; nothing here bears on the rationality of Hodge classes.',
   },
   {
     name: 'Birch–Swinnerton-Dyer',
@@ -88,6 +111,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'none — elliptic curves and L-functions are outside the corpus',
     corpusSolves: false,
     why: 'no honest lens; not invented',
+    statement: 'For an elliptic curve E over ℚ, the order of vanishing of its L-function at s = 1 equals the rank of its Mordell–Weil group: ord₍ₛ₌₁₎ L(E, s) = rank E(ℚ).',
+    gap: 'no lens at all. Elliptic curves and L-functions are outside the corpus; the rank↔order-of-vanishing identity is untouched by anything computed here.',
   },
   {
     name: 'Poincaré Conjecture',
@@ -96,6 +121,8 @@ export const MILLENNIUM: readonly Problem[] = [
     lens: 'the fold to one point — a simply-connected closed 3-manifold IS the 3-sphere ([[gravity]] still centre: everything folds to one)',
     corpusSolves: false,
     why: 'SOLVED — by Perelman, not the corpus. The "fold to one point" resonates with the RESULT (everything simply-connected collapses to the sphere), but it is Perelman\'s theorem; the corpus only echoes its shape',
+    statement: 'Every simply-connected closed 3-manifold is homeomorphic to the 3-sphere: π₁(M) = 0 with M a closed 3-manifold ⟹ M ≅ S³.',
+    gap: '',
   },
 ]
 
@@ -260,4 +287,62 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     if (!p.open) console.log(`         solved by: ${p.solvedBy}`)
   }
   console.log(`\n  does the corpus solve any? ${corpusSolvesAny()}. The tools classify a claimed solution; they do not produce one. HARMONY ≠ TRUTH.`)
+}
+
+/**
+ * The register as a README section — the toolbox shown working on the hardest available problems.
+ *
+ * This publishes STATE, never a solution: seven challenges saved inverted, what stands on the record
+ * (Perelman's, not the corpus's), what is open, what is lensless, the matrix with its diagonal, and
+ * the frontier each claim still carries. `corpusSolves` is the literal `false` and appears in the
+ * table so a reader sees the refusal rather than infers it — the same move the sibling portal makes
+ * with `claySolvedByThisFold=0`.
+ *
+ * Why it belongs on the front page: these are the CORE TOOLS ([[coincidence]] · [[theorem]] ·
+ * [[duel]] · [[seeing]]), and the honest way to show a toolbox is to point it at the hardest thing
+ * available and publish exactly what comes back. A reader gets the recompute path, not a claim.
+ *
+ * @invariant the rendered table never asserts a solution — corpusSolvesAny() is printed, and it is false
+ */
+export function renderMillenniumSection(): readonly string[] {
+  const cs = challenges()
+  const standing = cs.filter((c) => c.verdict.stands)
+  const open = cs.filter((c) => c.verdict.holder === 'open')
+  const lensless = cs.filter((c) => c.lensless)
+  const m = problemMatrix()
+  return [
+    '## [[millennium]] — the toolbox, pointed at the hardest available problems',
+    '',
+    'The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **classify** a claimed ' +
+      'solution; they never produce one. Pointed at the seven Clay Millennium Problems they return ' +
+      'this, and `corpusSolves` is the literal type `false` — the code cannot assert a solution.',
+    '',
+    '| | |',
+    '| --- | ---: |',
+    `| challenges saved, each inverted | **${cs.length}** |`,
+    `| standing (proved, never refuted) | **${standing.length}** — ${standing.map((c) => c.problem.name).join(', ')}, by **${standing[0]?.problem.solvedBy.split('(')[0]?.trim() ?? '—'}** |`,
+    `| **open** — neither proved nor refuted | **${open.length}** |`,
+    `| **lensless** — the duel cannot start | **${lensless.length}** (${lensless.map((c) => c.problem.name.split(' ')[0]).join(' · ')}) |`,
+    `| matrix cells (${m.pairs} pairs + ${m.diagonal} diagonal) | **${m.cells.length}** |`,
+    `| \`corpusSolvesAny()\` | **${corpusSolvesAny()}** |`,
+    '',
+    '| problem | statement (algebraic) | the named gap |',
+    '| --- | --- | --- |',
+    ...MILLENNIUM.map(
+      (p) =>
+        `| **${p.name}** | ${p.statement} | ${p.gap || '_no open gap — proved externally (' + p.solvedBy.split('(')[0]?.trim() + '); this corpus records the status, it does not re-solve it_'} |`,
+    ),
+    '',
+    'The **statement** is what the conjecture asserts — read it before anything this corpus says about ' +
+      'it, so a lens can never be mistaken for the mathematics it points at. The **gap** is what is ' +
+      'missing, named plainly: a gap you can argue with, rather than a mystery that hides its size.',
+    '',
+    'You do not solve one by asserting it — you solve it by **surviving its inversion**. ' +
+      '`attempt(name, rounds)` is the door: it refuses an empty attempt (*an assertion is not an ' +
+      'attempt*), falls on a single refutation whatever else was proved, and refuses an unknown ' +
+      'problem. `reductionFrontier(claim)` names the exact links still ungrounded ([[millennium/reduction]]).',
+    '',
+    'Recompute: `tsx src/millennium/index.ts` · `pnpm vitest run src/millennium`',
+    '',
+  ]
 }

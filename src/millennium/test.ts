@@ -8,6 +8,7 @@ import {
   open,
   openChallenges,
   problemMatrix,
+  renderMillenniumSection,
   selfCells,
   resolutionClaim,
 } from './index'
@@ -146,5 +147,42 @@ describe('millennium — the diagonal: each problem interacting with itself', ()
     expect(corpusSolvesAny()).toBe(false)
     expect(problemMatrix().cells.length).toBeGreaterThan(challenges().length) // 28 > 7
     for (const p of MILLENNIUM) expect(p.corpusSolves as boolean).toBe(false)
+  })
+})
+
+describe('millennium — the statement and the named gap', () => {
+  it('every problem states its conjecture ALGEBRAICALLY, separate from any lens', () => {
+    for (const p of MILLENNIUM) {
+      expect(p.statement.length).toBeGreaterThan(40)
+      expect(p.statement).not.toBe(p.lens) // the mathematics is not the analogy
+      expect(p.statement).not.toBe(p.why)
+    }
+    // the statements carry their actual algebra, not a gloss
+    expect(lensFor('Riemann Hypothesis')!.statement).toMatch(/Re\(s\) = ½/)
+    expect(lensFor('Birch–Swinnerton-Dyer')!.statement).toMatch(/rank E\(ℚ\)/)
+    expect(lensFor('Poincaré Conjecture')!.statement).toMatch(/M ≅ S³/)
+  })
+
+  it('every OPEN problem names its gap; only the externally-proved one has none', () => {
+    for (const p of MILLENNIUM) {
+      if (p.open) {
+        expect(p.gap.length).toBeGreaterThan(20) // a named gap, argue-able
+        expect(p.gap).not.toBe('') // never a mystery
+      } else {
+        expect(p.gap).toBe('') // Poincaré: nothing missing, it is proved — externally
+        expect(p.solvedBy).toMatch(/Perelman/)
+      }
+    }
+    expect(MILLENNIUM.filter((p) => p.gap === '')).toHaveLength(1)
+  })
+
+  it('the rendered section publishes the refusal — corpusSolvesAny appears IN the table', () => {
+    const md = renderMillenniumSection().join('\n')
+    expect(md).toContain('corpusSolvesAny()')
+    expect(md).toContain('**false**')
+    expect(md).not.toMatch(/\bsolved by this (fold|corpus)\b/i)
+    for (const p of MILLENNIUM) expect(md).toContain(p.statement)
+    // and it gives a recompute path — Law 5
+    expect(md).toMatch(/tsx src\/millennium|pnpm vitest/)
   })
 })
