@@ -5,7 +5,7 @@ import { exactMinOf, exactRound } from '@/algebra'
  * Law: communication is always realtime — publishDirection + subscribeDirection;
  * Task resume-wait is fallback only. Inventory + direction collapse same tick.
  *
- * @see ./SKILL.md · @/quantum/entanglement/direction-bus · @/monitor/violations/stream
+ * @see ./SKILL.md · @/quantum/entanglement/direction · @/monitor/violations/stream
  */
 import { toAtomPath } from '@/path'
 import {
@@ -16,7 +16,7 @@ import {
   automateDirectionPath,
   type DirectionPayload,
   type SealedDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 import {
   pushCrossViolationToStream,
   subscribeCrossViolationStream,

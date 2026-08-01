@@ -10,7 +10,7 @@ import {
   cleanDirectionPath,
   interruptTokenFor,
   publishDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 import {
   scanCleanAxes,
   classifyCleanFindings,

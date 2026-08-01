@@ -11,7 +11,7 @@ import {
   subscribe,
   violationsWatchPath,
 } from './realtime'
-import { __resetDirectionBusForTests } from '@/quantum/entanglement/direction-bus'
+import { __resetDirectionBusForTests } from '@/quantum/entanglement/direction'
 import { resetCrossViolationStream } from '@/monitor/violations/stream'
 
 describe('agent/communication/realtime — unified push facade', () => {

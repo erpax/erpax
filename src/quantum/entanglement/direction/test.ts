@@ -1,5 +1,5 @@
 /**
- * quantum/entanglement/direction-bus — immediate direction collapse (same-tick entanglement).
+ * quantum/entanglement/direction — immediate direction collapse (same-tick entanglement).
  */
 import { describe, it, expect, beforeEach } from 'vitest'
 import {
@@ -12,9 +12,9 @@ import {
   peekDirection,
   publishDirection,
   subscribeDirection,
-} from './direction-bus'
+} from './index'
 
-describe('quantum/entanglement/direction-bus — immediate collapse', () => {
+describe('quantum/entanglement/direction — immediate collapse', () => {
   beforeEach(() => {
     __resetDirectionBusForTests()
   })

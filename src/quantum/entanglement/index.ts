@@ -49,7 +49,7 @@ export {
   type DirectionPayload,
   type SealedDirection,
   type InterruptToken,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 
 /** The Bell-test analogue: the corpus is "maximally entangled" when reciprocity = 1 AND no-cloning holds. */
 export const isMaximallyEntangled = (): boolean => isFullyEntangled() && noCloning()

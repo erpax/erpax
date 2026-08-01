@@ -39,7 +39,7 @@ import {
   peekDirection,
   type InterruptToken,
   type SealedDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 

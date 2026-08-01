@@ -2,9 +2,9 @@ import { exactRound } from '@/algebra'
 /**
  * quantum/context — always-quantum default: superposition until seal, entangled collapse.
  *
- * Composes @/realtime append log · @/quantum/entanglement/direction-bus for cycle wrappers.
+ * Composes @/realtime append log · @/quantum/entanglement/direction for cycle wrappers.
  *
- * @see ./bindings — ./entanglement/direction-bus — ../realtime
+ * @see ./bindings — ./entanglement/direction — ../realtime
  */
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -19,7 +19,7 @@ import {
   subscribeDirection,
   type InterruptToken,
   type SealedDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 
 export type SuperpositionKind = 'pending' | 'collapsed' | 'aborted'
 

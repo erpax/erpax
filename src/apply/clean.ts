@@ -8,7 +8,7 @@ import { exactMax } from '@/algebra'
  *   pnpm erpax clean [--apply] [--force]
  *   pnpm erpax apply clean [--apply] [--force]
  *
- * @see ./efficiency — ./emit-efficiency — ../quantum/entanglement/direction-bus
+ * @see ./efficiency — ./emit-efficiency — ../quantum/entanglement/direction
  */
 import { createHash } from 'node:crypto'
 import {
@@ -26,7 +26,7 @@ import {
   interruptTokenFor,
   isDirectionStale,
   type InterruptToken,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 

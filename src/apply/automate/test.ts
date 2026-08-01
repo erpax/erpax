@@ -11,7 +11,7 @@ import {
   automateDirectionPath,
   interruptTokenFor,
   publishDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 import {
   automateCycle,
   automateWatchIntervalMs,

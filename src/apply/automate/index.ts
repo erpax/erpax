@@ -23,7 +23,7 @@ import {
   interruptTokenFor,
   isDirectionStale,
   type InterruptToken,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 import { quantumModeDefault } from '@/quantum/bindings'
 import { withQuantumContext } from '@/quantum/context'
 import { HORO_DIGITS, composeSteps, horoRatio } from '@/horo'

@@ -16,7 +16,7 @@ import {
   improveDirectionPath,
   interruptTokenFor,
   publishDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 
 const TS = '2026-06-08T12:00:00.000Z'
 

@@ -1,5 +1,5 @@
 /**
- * quantum/entanglement/direction-bus — immediate direction collapse for running agents.
+ * quantum/entanglement/direction — immediate direction collapse for running agents.
  *
  * Parent coordinators publish a content-uuid sealed signal; workers subscribed on the
  * same path observe it synchronously (same tick) — no resume-wait. In-flight work
