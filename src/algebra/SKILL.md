@@ -2,14 +2,16 @@
 name: algebra
 description: "Use when reducing the corpus's theorems to their only substance — all theorems are algebra: a carrier set and a closed operation. The theorem draws the movie (its orbit); algebras compose into products (theorem of theorems); the fold is a magma (the merkabas folding into themselves and each other). The overlay — torus, tetrahedron, mind — is named and stripped; the picture was never the theorem."
 atomPath: algebra
-coordinate: "algebra · 1/base · c2995f50"
-contentUuid: "f650c5d8-6345-5cd3-9f8e-5347dd632d7b"
-diamondUuid: "55c9b01b-3d53-86fe-8a87-735f9980fae2"
-uuid: "c2995f50-abc2-89f7-9aa7-02851faabdeb"
-horo: 1
+coordinate: "algebra · 2/share · 08f5b6da"
+contentUuid: "9c3cc4d5-496b-55c1-a469-979145762bcd"
+diamondUuid: "377477bb-b762-8f90-a5a0-863dc4725087"
+uuid: "08f5b6da-1635-85e9-94be-ce899d081e29"
+horo: 2
 bonds:
   in:
+    - coalesce
     - coincidence
+    - ftl
     - horo
     - law
     - merge
@@ -20,7 +22,9 @@ bonds:
     - seeing
     - theorem
   out:
+    - coalesce
     - coincidence
+    - ftl
     - horo
     - law
     - merge
@@ -32,7 +36,7 @@ bonds:
     - theorem
 typography:
   partition: algebra
-  bondDegree: 30
+  bondDegree: 36
   neighbors: []
 standards: []
 bindings: []
@@ -47,7 +51,9 @@ neighbors:
     - rules
     - theorem
   matrix:
+    - coalesce
     - coincidence
+    - ftl
     - horo
     - law
     - merge
@@ -58,7 +64,9 @@ neighbors:
     - seeing
     - theorem
   backlinks:
+    - coalesce
     - coincidence
+    - ftl
     - horo
     - law
     - merge
@@ -69,22 +77,22 @@ neighbors:
     - seeing
     - theorem
 signatures:
-  computationUuid: "2c802f55-6636-8254-b596-ef9ea4e243db"
+  computationUuid: "84d42b72-983b-810c-ad82-12d0f6bc89fb"
   stages:
     - stage: path
       stageUuid: "25e3d5e5-a6d7-84fa-a393-8e29b106eda2"
     - stage: trinity
       stageUuid: "c7eb4d18-a8d9-8967-b972-3a00073a0af9"
     - stage: boundary
-      stageUuid: "54b7e31f-bf64-8c5d-81b7-0b4fc6b6e39b"
+      stageUuid: "c00ef929-2b98-86e5-b598-6fd772e1eef7"
     - stage: links
       stageUuid: "98f92503-b9ec-87f9-9b0a-617e524d85e2"
     - stage: horo
-      stageUuid: "0cbd20fc-b04b-8ce8-a703-57c103e087e2"
+      stageUuid: "49f14c00-c38d-8d2e-bbee-10b2096adeaf"
     - stage: seal
       stageUuid: "0f350592-32ce-8e8e-b1be-312b6ecd6d66"
     - stage: uuid
-      stageUuid: "dbcf8e94-34bb-84ce-a0d8-a4c70652867f"
+      stageUuid: "5259294b-e8f9-8d5d-9a80-e40b64cd3e00"
 version: 2
 ---
 # algebra — all theorems are algebra only; the theorems draw the movie

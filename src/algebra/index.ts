@@ -162,6 +162,38 @@ export const exactMax = (a: number, b: number): number => (a >= b ? a : b)
 /** Exact minimum — no floats, no noise. `a ≤ b ? a : b` as an algebra op. */
 export const exactMin = (a: number, b: number): number => (a <= b ? a : b)
 
+/**
+ * Exact maximum over a SEQUENCE — the fold `exactMax` needed and did not have.
+ *
+ * `exactMax` is BINARY. Spreading a sequence into it (`exactMax(...xs)`) reads only the first two
+ * elements and silently returns the larger of those — a wrong number, not an error, which is the
+ * worst failure an arithmetic op can have. That is exactly what happened when `Math.max(...xs)` was
+ * rewritten to `exactMax(...xs)`: variadic call, binary function, no complaint at runtime.
+ *
+ * An empty sequence THROWS rather than defaulting. `Math.max()` returns `-Infinity`, which then
+ * propagates through a ledger as a plausible-looking number; a max of nothing is a question, not a
+ * value, and the corpus does not leak entropy through a defaulted answer ([[convention]]/sealed).
+ *
+ * @invariant exactMaxOf(xs) is the maximum of every element, never of a prefix
+ * @invariant an empty sequence throws — no default, no -Infinity leaking into a computation
+ */
+export function exactMaxOf(xs: readonly number[]): number {
+  if (xs.length === 0) throw new Error('exactMaxOf: empty sequence — the maximum of nothing is undefined, not -Infinity')
+  return xs.reduce(exactMax)
+}
+
+/**
+ * Exact minimum over a SEQUENCE — the dual of `exactMaxOf`, and the same trap: `exactMin(...xs)`
+ * compares only the first two elements.
+ *
+ * @invariant exactMinOf(xs) is the minimum of every element, never of a prefix
+ * @invariant an empty sequence throws — no default, no +Infinity leaking into a computation
+ */
+export function exactMinOf(xs: readonly number[]): number {
+  if (xs.length === 0) throw new Error('exactMinOf: empty sequence — the minimum of nothing is undefined, not Infinity')
+  return xs.reduce(exactMin)
+}
+
 /** Absolute value on ℤ — exact carrier op. */
 export const exactAbs = (n: number): number => (n < 0 ? -n : n)
 
@@ -177,10 +209,30 @@ export const exactImul = (a: number, b: number): number => Math.imul(a, b)
 /** Ceil toward positive infinity — exact. Use for batching/allocation. */
 export const exactCeil = (n: number): number => exactTrunc(n > 0 ? n + (n % 1 !== 0 ? 1 : 0) : n)
 
-/** Truncate toward zero — exact. Use for integer conversion. */
+/**
+ * Truncate toward zero — exact. Use for integer conversion.
+ *
+ * NOT `n | 0`. The bitwise OR coerces to a **32-bit signed integer**, so it is exact only on
+ * ℤ ∩ [−2³¹, 2³¹). Outside that range it is not a truncation at all — it WRAPS, silently and with
+ * the wrong sign, and it maps ±Infinity and NaN to 0:
+ *
+ *     (2**31) | 0            = −2147483648      (positive amount ⇒ negative)
+ *     (1e10)  | 0            =  1410065408      (10 billion ⇒ 1.4 billion)
+ *     Infinity | 0           =  0               (an overflow reads as zero)
+ *     NaN | 0                =  0               (an undefined result reads as zero)
+ *
+ * Every rounding op here is built on this one, `exactRound` among them — the function documented for
+ * MONEY. 2³¹ minor units is ~21.5 million currency units: an ordinary mid-size ledger, coming out
+ * negative. Subtraction with `n % 1` is exact across the whole double range and takes no 32-bit
+ * detour, and a non-finite value PROPAGATES rather than collapsing to a plausible-looking 0
+ * ([[convention]]/sealed — entropy leaves through a defaulted answer).
+ *
+ * @invariant exactTrunc is exact for every finite double, not only the 32-bit window
+ * @invariant ±Infinity and NaN pass through unchanged — never silently 0
+ */
 export const exactTrunc = (n: number): number => {
-  // Bitwise OR is exact for integers in ℤ and truncates toward zero
-  return n | 0
+  if (!Number.isFinite(n)) return n
+  return n - (n % 1)
 }
 
 /**

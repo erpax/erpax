@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest'
 import {
+  exactTrunc,
+  exactFloor,
+  exactCeil,
+  exactRound,
+  exactMaxOf,
+  exactMinOf,
   THEOREMS,
   isClosed,
   movie,
@@ -171,5 +177,52 @@ describe('algebra/license — USER LAW: core math free; rest via contact', () =>
     expect(pkg.private).not.toBe(true)
     expect(app.private).toBe(true)
     expect(app.license).toBe(ERPAX_SPDX)
+  })
+})
+
+describe('algebra — exactTrunc is exact across the WHOLE double range, not a 32-bit window', () => {
+  it('does not wrap above 2³¹ — the money bug: 2.5e9 minor units must not come out negative', () => {
+    // `n | 0` coerced to a 32-bit signed int, so an ordinary mid-size ledger amount wrapped:
+    //   (2**31)|0 = -2147483648 · (1e10)|0 = 1410065408 · exactRound(2_500_000_000.5) = -1794967295
+    expect(exactTrunc(2 ** 31)).toBe(2147483648)
+    expect(exactTrunc(1e10)).toBe(1e10)
+    expect(exactFloor(3e9)).toBe(3e9)
+    expect(exactRound(2_500_000_000.5)).toBe(2_500_000_001)
+    expect(exactRound(1e10 + 0.4)).toBe(1e10)
+    // the sign is the tell — every one of these was NEGATIVE before
+    for (const n of [2 ** 31, 1e10, 3e9, 2_500_000_000.5]) expect(exactRound(n)).toBeGreaterThan(0)
+  })
+
+  it('a non-finite value PROPAGATES — it never collapses to a plausible-looking 0', () => {
+    expect(exactTrunc(Number.POSITIVE_INFINITY)).toBe(Number.POSITIVE_INFINITY)
+    expect(exactTrunc(Number.NEGATIVE_INFINITY)).toBe(Number.NEGATIVE_INFINITY)
+    expect(Number.isNaN(exactTrunc(Number.NaN))).toBe(true)
+    // this is what made an INFINITE tamper cost read as ZERO through exactRound
+    expect(exactRound(Number.POSITIVE_INFINITY)).toBe(Number.POSITIVE_INFINITY)
+    expect(exactCeil(Number.POSITIVE_INFINITY)).toBe(Number.POSITIVE_INFINITY)
+  })
+
+  it('the ordinary cases are unchanged — truncation toward zero, ties away from zero', () => {
+    expect(exactTrunc(5.7)).toBe(5)
+    expect(exactTrunc(-5.7)).toBe(-5)
+    expect(exactFloor(-5.7)).toBe(-6)
+    expect(exactFloor(5.7)).toBe(5)
+    expect(exactCeil(5.2)).toBe(6)
+    expect(exactCeil(-5.2)).toBe(-5)
+    expect(exactRound(2.5)).toBe(3)
+    expect(exactRound(-2.5)).toBe(-3)
+    expect(exactRound(2.4)).toBe(2)
+    expect(exactRound(-2.4)).toBe(-2)
+  })
+
+  it('exactMaxOf / exactMinOf fold a SEQUENCE — the binary spread read only a prefix', () => {
+    const xs = [3, 9, 1, 7]
+    expect(exactMaxOf(xs)).toBe(9) // exactMax(...xs) returned max(3,9)=9 by luck here …
+    expect(exactMinOf(xs)).toBe(1) // … and min(3,9)=3, which is WRONG
+    expect(exactMaxOf([1, 2, 100])).toBe(100) // the prefix read would have said 2
+    expect(exactMinOf([9, 8, 0])).toBe(0) // the prefix read would have said 8
+    // empty throws rather than leaking ±Infinity into a computation
+    expect(() => exactMaxOf([])).toThrow(/empty sequence/)
+    expect(() => exactMinOf([])).toThrow(/empty sequence/)
   })
 })
