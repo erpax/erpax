@@ -699,7 +699,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
     "uuid": "1d07c6b3-c502-8aa3-8b1b-1198dba57044",
     "color": "hsl(231 78% 49%)",
-    "count": 44,
+    "count": 47,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -735,6 +735,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/anchor/claims/index.ts",
         "section": ""
       },
       {
@@ -791,10 +795,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/iso/14289/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
         "section": ""
       }
     ]
@@ -2004,7 +2004,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 181,
+    "count": 182,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -5429,7 +5429,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 96,
+    "count": 97,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -5462,6 +5462,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/anchor/SKILL.md",
         "section": "§5.6.1"
+      },
+      {
+        "path": "src/anchor/claims/index.ts",
+        "section": ""
       },
       {
         "path": "src/anchor/index.ts",
@@ -5522,10 +5526,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/cost/index.ts",
         "section": "§5.1"
-      },
-      {
-        "path": "src/entropy/source/index.ts",
-        "section": ""
       }
     ]
   },
@@ -8447,7 +8447,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 44,
+    "count": 45,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
