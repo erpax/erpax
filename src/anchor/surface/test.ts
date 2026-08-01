@@ -17,6 +17,9 @@ import {
   manifestSealed,
   openSurfaces,
   REACHABLE_SURFACES,
+  SURFACE_BINDING,
+  bound,
+  groundInBindings,
   ROOT_STANDARDS,
   type SurfaceDeclaration,
   type SurfaceGapKind,
@@ -165,5 +168,63 @@ describe('anchor/surface — the judgment guard: an undeclared surface fails the
       'status-bare',
       'surface-undeclared',
     ])
+  })
+})
+
+describe('anchor/surface — PQC bindings: a sealed claim needs a provider bound behind it', () => {
+  const ALL_BOUND = {
+    PQC_ROOT_PROVIDER: '@noble/post-quantum/slh-dsa',
+    PQC_KEM_PROVIDER: '@noble/post-quantum/ml-kem',
+    PQC_STORAGE_PROVIDER: 'node:crypto aes-256-gcm',
+  }
+
+  it('every reachable surface names the binding it needs — none is global', () => {
+    for (const s of REACHABLE_SURFACES) expect(SURFACE_BINDING[s]).toMatch(/^PQC_[A-Z_]+$/)
+    // the two channel surfaces share the KEM binding; the root and storage have their own
+    expect(SURFACE_BINDING['channel-keying']).toBe(SURFACE_BINDING['re-exchange'])
+    expect(SURFACE_BINDING['root-signing']).not.toBe(SURFACE_BINDING['channel-keying'])
+    expect(new Set(Object.values(SURFACE_BINDING)).size).toBe(3) // 4 surfaces, 3 distinct bindings
+  })
+
+  it('bound() is an explicit absence — empty and whitespace are not bindings', () => {
+    expect(bound('root-signing', {})).toBe(false)
+    expect(bound('root-signing', { PQC_ROOT_PROVIDER: '' })).toBe(false)
+    expect(bound('root-signing', { PQC_ROOT_PROVIDER: '   ' })).toBe(false)
+    expect(bound('root-signing', ALL_BOUND)).toBe(true)
+  })
+
+  it('a sealed claim with NO provider bound is downgraded to open, gap named', () => {
+    const grounded = groundInBindings(sealedManifest, {})
+    expect(grounded.every((d) => d.status.state === 'open')).toBe(true)
+    const root = grounded.find((d) => d.kind === 'root-signing')!
+    expect(root.status.state).toBe('open')
+    if (root.status.state === 'open') {
+      expect(root.status.gap).toContain('PQC_ROOT_PROVIDER is not bound')
+      expect(root.status.gap).toContain('FIPS 205') // the claim it WAS making is quoted back
+      expect(root.status.owner).toBe('root-signing')
+    }
+    // and the manifest is still well-formed — open with gap+owner passes the guard
+    expect(manifestSealed(grounded)).toBe(true)
+    expect(openSurfaces(grounded)).toHaveLength(4)
+  })
+
+  it('with every provider bound, nothing is touched', () => {
+    const grounded = groundInBindings(sealedManifest, ALL_BOUND)
+    expect(grounded).toEqual(sealedManifest)
+    expect(manifestSealed(grounded)).toBe(true)
+    expect(openSurfaces(grounded)).toEqual([])
+  })
+
+  it('it only ever DOWNGRADES — an honest open declaration is never rewritten', () => {
+    const honest = replace('re-exchange', { state: 'open', gap: 'no rekey yet', owner: 'ceci' })
+    const grounded = groundInBindings(honest, ALL_BOUND)
+    const re = grounded.find((d) => d.kind === 're-exchange')!
+    expect(re.status).toEqual({ state: 'open', gap: 'no rekey yet', owner: 'ceci' })
+  })
+
+  it('partial binding reports exactly which surfaces are unbacked', () => {
+    const grounded = groundInBindings(sealedManifest, { PQC_ROOT_PROVIDER: 'slh-dsa' })
+    expect([...openSurfaces(grounded)].sort()).toEqual(['channel-keying', 're-exchange', 'storage-at-rest'])
+    expect(grounded.find((d) => d.kind === 'root-signing')!.status.state).toBe('sealed')
   })
 })
