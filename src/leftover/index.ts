@@ -239,7 +239,11 @@ export function deriveLeftoverProof(
   const testRel = `${dir}/test.ts`.replace(/\\/g, '/')
   if (
     !opts.force &&
-    ['test.ts', 'test.tsx', 'index.test.ts'].some((n) => existsSync(join(cwd, dir, n)))
+    // `index.test.tsx` was missing from this list, and it is the exact name a React component
+    // proof needs — jsdom is matched on `**/*.test.tsx`. So an atom that proved its claims
+    // properly stayed UNSETTLED, and the generator kept offering to emit a weaker credit beside
+    // a stronger one that already existed. A recognition gap reads as an absence of proof.
+    ['test.ts', 'test.tsx', 'index.test.ts', 'index.test.tsx'].some((n) => existsSync(join(cwd, dir, n)))
   ) {
     return null
   }
