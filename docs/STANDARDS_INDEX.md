@@ -6098,7 +6098,7 @@ src/quantum/device/index.ts:10: * @audit pure functions; never hand-asserted sen
 src/quantum/digit/index.ts:9: * @audit digit trace computed from live matrix; never hand-maintained
 src/quantum/emr/index.ts:12: * @audit pure chain invariants; never hand-asserted clinical records
 src/quantum/entanglement/index.ts:19: * @audit composed from ../../entanglement + ../index.ts; computed on the live matrix
-src/quantum/entanglement/registry.ts:5: * @audit computed from live collection sources; collapse hooks are canonical ids
+src/quantum/entanglement/registry/index.ts:5: * @audit computed from live collection sources; collapse hooks are canonical ids
 src/quantum/export/index.ts:9: * @audit re-exports boundary organ; computed live, never authored
 src/quantum/fs/index.ts:9: * @audit content-address from @/integrity; never hand-pinned paths
 src/quantum/generator/index.ts:9: * @audit manifest uuid from live matrix toUuid; never hand-pinned
