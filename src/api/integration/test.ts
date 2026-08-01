@@ -22,7 +22,7 @@ import {
   TokenBucket,
   type IntegrationConfig,
 } from './index'
-import { POLLINATIONS, RESEND, SPECS, STRIPE, TRELLO, specOf } from './seed'
+import { GITHUB, YOUTUBE, KEYLESS_RESEARCH, POLLINATIONS, RESEND, SPECS, STRIPE, TRELLO, specOf } from './seed'
 
 const cfg = (spec = TRELLO, values = ['K', 'T']): IntegrationConfig => ({ spec, values })
 
@@ -338,5 +338,44 @@ describe('api/integration — the shared fold: speedup from WIRING vendors toget
     expect(cells.filter((c) => c.self)).toHaveLength(n) // 4 self-cells
     for (const c of cells.filter((c) => c.self)) expect(c.from).toBe(c.to)
     expect(cells.filter((c) => c.self).map((c) => c.from)).toEqual(SPECS.map((s) => s.vendor))
+  })
+})
+
+describe('api/integration — the research lanes, as reusable data', () => {
+  it('THIRTEEN lanes need no credential at all — capability on a clean checkout', () => {
+    expect(KEYLESS_RESEARCH.length).toBeGreaterThanOrEqual(13)
+    for (const s of KEYLESS_RESEARCH) {
+      expect(s.credentials).toEqual([]) // keyless means keyless — no "optional" key hiding here
+      expect(s.baseUrl).toMatch(/^https:\/\//)
+      expect(s.limits.length).toBeGreaterThan(0) // a lane with no stated limit is a lane that gets banned
+      expect(s.limitsSource.length).toBeGreaterThan(20) // where the number came from, recomputable
+    }
+  })
+
+  it('every spec names WHERE its limits are published — a number with no source is a guess', () => {
+    for (const s of [...KEYLESS_RESEARCH, YOUTUBE, GITHUB]) {
+      expect(s.limitsSource).toMatch(/https?:\/\/|self-imposed|courtesy/)
+    }
+  })
+
+  it('a keyed lane is marked keyed — YouTube and GitHub are the outliers, not the rule', () => {
+    expect(YOUTUBE.credentials).toEqual(['YOUTUBE_API_KEY'])
+    expect(GITHUB.credentials).toEqual(['GITHUB_TOKEN'])
+    expect(KEYLESS_RESEARCH.map((s) => s.vendor)).not.toContain('youtube')
+    expect(KEYLESS_RESEARCH.map((s) => s.vendor)).not.toContain('github')
+  })
+
+  it('the lanes aimed at MEASURED gaps carry the gap in their own docs', () => {
+    // normlex → the 15 uncited labour conventions; eurlex → the 64 EU rows;
+    // restcountries → the residence hierarchy the registry lacks (3 territories loaded)
+    const byVendor = Object.fromEntries(KEYLESS_RESEARCH.map((s) => [s.vendor, s]))
+    for (const v of ['normlex', 'eurlex', 'restcountries', 'worldbank', 'eurostat', 'zenodo']) {
+      expect(byVendor[v]).toBeDefined()
+    }
+  })
+
+  it('vendors are unique — a duplicate spec is two sources of truth for one limit', () => {
+    const vendors = KEYLESS_RESEARCH.map((s) => s.vendor)
+    expect(new Set(vendors).size).toBe(vendors.length)
   })
 })

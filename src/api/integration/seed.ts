@@ -148,4 +148,140 @@ export const WIKIDATA: IntegrationSpec = {
  * need no key at all, so the capability is available on a clean checkout with no secret ceremony.
  * YouTube is the outlier and is marked as such by carrying a credential.
  */
-export const KEYLESS_RESEARCH: readonly IntegrationSpec[] = [CROSSREF, OPENALEX, ARXIV, WIKIDATA, POLLINATIONS]
+
+
+/**
+ * Stack Exchange — the whole network (Stack Overflow, Server Fault, Ask Ubuntu …) behind one API.
+ * **Keyless** for a small daily allowance; a free key raises it and is not authentication.
+ *
+ * Responses are gzip-encoded ALWAYS, and the useful fields (`body`, `body_markdown`) require an
+ * explicit `filter` — the default returns metadata only. That is a shape trap: a caller who forgets
+ * the filter gets a 200, a well-formed payload, and no answer text, which reads exactly like "no
+ * results" ([[instrument]] — the wrong instrument does not error, it answers).
+ */
+export const STACKEXCHANGE: IntegrationSpec = {
+  vendor: 'stackexchange',
+  baseUrl: 'https://api.stackexchange.com/2.3',
+  auth: 'query',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 30, windowMs: 1_000 }],
+  limitsSource: 'https://api.stackexchange.com/docs/throttle — 300/day keyless, 10,000/day with a free key; 30 req/s burst',
+}
+
+/** Hacker News (Firebase) — stories, comments, the whole item graph. **Keyless**, no throttle published. */
+export const HACKERNEWS: IntegrationSpec = {
+  vendor: 'hackernews',
+  baseUrl: 'https://hacker-news.firebaseio.com/v0',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 20, windowMs: 1_000 }],
+  limitsSource: 'https://github.com/HackerNews/API — no documented limit; 20/s is a self-imposed courtesy bound',
+}
+
+/** GitHub REST — code, issues, releases. Keyless at 60/hr; a token raises it to 5,000/hr. */
+export const GITHUB: IntegrationSpec = {
+  vendor: 'github',
+  baseUrl: 'https://api.github.com',
+  auth: 'bearer',
+  credentials: ['GITHUB_TOKEN'],
+  limits: [{ scope: 'ip', capacity: 60, windowMs: 3_600_000 }],
+  limitsSource: 'https://docs.github.com/rest/using-the-rest-api/rate-limits-for-the-rest-api — 60/hr unauthenticated, 5,000/hr with a token',
+}
+
+/**
+ * ILO NORMLEX — the labour conventions AND their ratification per country. **Keyless.**
+ *
+ * This one is aimed at a measured gap, not a guess: of 16 labour/HR standards in the registry,
+ * FIFTEEN are cited by nothing (only ILO C001 is implemented, in [[work]]/shifts). NORMLEX carries
+ * both the instrument text and — the part that matters for a residence query — **which states have
+ * ratified it**, which is the difference between "this convention exists" and "this convention
+ * binds this employer".
+ */
+export const NORMLEX: IntegrationSpec = {
+  vendor: 'normlex',
+  baseUrl: 'https://normlex.ilo.org/dyn/normlex/en',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 1, windowMs: 2_000 }],
+  limitsSource: 'https://normlex.ilo.org — no published limit; 1 per 2s is a self-imposed courtesy bound',
+}
+
+/**
+ * EUR-Lex / EU Publications Office — every EU act by CELEX id, with a public SPARQL endpoint.
+ * **Keyless.**
+ *
+ * The registry holds 64 EU-jurisdiction rows and the directives behind the uncited HR obligations
+ * (EU-2019/1152 transparent working conditions, EU-96/71/EC and EU-2018/957 posted workers,
+ * EU-2019/1937 whistleblowing). CELEX is the address; this is how a citation becomes resolvable.
+ */
+export const EURLEX: IntegrationSpec = {
+  vendor: 'eurlex',
+  baseUrl: 'https://publications.europa.eu/webapi/rdf/sparql',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 1, windowMs: 1_000 }],
+  limitsSource: 'https://op.europa.eu/en/web/who-we-are/cellar — public SPARQL, fair-use; 1/s courtesy bound',
+}
+
+/**
+ * REST Countries — ISO 3166-1 codes with UN M49 region and subregion. **Keyless.**
+ *
+ * The residence join added this session resolves any alpha-2 code but the registry loads statutes
+ * for THREE territories. A region/subregion hierarchy is what turns that into "loadable per region"
+ * — an EU obligation reaching every member without a per-country row — instead of 190 hand-typed
+ * registries, which is the derived-not-transcribed move [[cli]]/face made for commands.
+ */
+export const RESTCOUNTRIES: IntegrationSpec = {
+  vendor: 'restcountries',
+  baseUrl: 'https://restcountries.com/v3.1',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 10, windowMs: 1_000 }],
+  limitsSource: 'https://restcountries.com — public, no documented limit; 10/s courtesy bound',
+}
+
+/** World Bank Indicators — country-level society and economy series. **Keyless.** */
+export const WORLDBANK: IntegrationSpec = {
+  vendor: 'worldbank',
+  baseUrl: 'https://api.worldbank.org/v2',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 10, windowMs: 1_000 }],
+  limitsSource: 'https://datahelpdesk.worldbank.org/knowledgebase/articles/889392 — public, no key',
+}
+
+/** Eurostat — the EU statistical surface behind CSRD/ESRS reporting. **Keyless.** */
+export const EUROSTAT: IntegrationSpec = {
+  vendor: 'eurostat',
+  baseUrl: 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 5, windowMs: 1_000 }],
+  limitsSource: 'https://wikis.ec.europa.eu/display/EUROSTATHELP — public API, fair use',
+}
+
+/** Zenodo — DOI-minted research artifacts, datasets and software. **Keyless** for read. */
+export const ZENODO: IntegrationSpec = {
+  vendor: 'zenodo',
+  baseUrl: 'https://zenodo.org/api',
+  auth: 'header',
+  credentials: [],
+  limits: [{ scope: 'ip', capacity: 60, windowMs: 60_000 }],
+  limitsSource: 'https://developers.zenodo.org/#rate-limiting — 60/min unauthenticated',
+}
+
+export const KEYLESS_RESEARCH: readonly IntegrationSpec[] = [
+  CROSSREF,
+  OPENALEX,
+  ARXIV,
+  WIKIDATA,
+  POLLINATIONS,
+  STACKEXCHANGE,
+  HACKERNEWS,
+  NORMLEX,
+  EURLEX,
+  RESTCOUNTRIES,
+  WORLDBANK,
+  EUROSTAT,
+  ZENODO,
+]
