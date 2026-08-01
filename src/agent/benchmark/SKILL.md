@@ -68,10 +68,10 @@ The severity weights are **declared, in the open**. No theorem says an exposed s
 ```
 claude-opus-5 · claude-code
 precision 93.75%   efficiency 72.0%
-security  NOT CLEAN — gatesBypassed×2 · unverifiedQuoted×2
+security  NOT CLEAN — gatesBypassed×3 · unverifiedQuoted×2
 ```
 
-Two pushes landed on a protected ref by bypassing the rule; a model's rendering of a page was quoted as the source, twice, with a local clone on disk. Secrets exposed: **0**. Destructive-without-backup: **0** — the 3,184-file corruption was recoverable and was recovered.
+Three pushes landed on a protected ref by bypassing the rule — not `--no-verify`, but a GitHub ruleset the pushing account can override, so every push to main trips it; a model's rendering of a page was quoted as the source, twice, with a local clone on disk. Secrets exposed: **0**. Destructive-without-backup: **0** — the 3,184-file corruption was recoverable and was recovered.
 
 A standard whose author publishes a clean sheet for themselves is not a standard.
 

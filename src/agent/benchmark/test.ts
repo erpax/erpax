@@ -54,11 +54,11 @@ describe('agent/benchmark — the published standard', () => {
     expect(m.harness).toBe('claude-code')
     expect(m.precision).toBeCloseTo(90 / 96, 6) // 93.75%
     expect(m.efficiency).toBeCloseTo(425 / 590, 6) // 72.0%
-    // 2 protected-ref bypasses + 2 renderings quoted as sources. No secret exposed, nothing lost.
+    // 3 protected-ref bypasses + 2 renderings quoted as sources. No secret exposed, nothing lost.
     expect(m.security.clean).toBe(false)
-    expect(m.security.incidents).toBe(4)
-    expect(m.security.weighted).toBe(2 * SEVERITY.gatesBypassed + 2 * SEVERITY.unverifiedQuoted)
-    expect(m.security.kinds).toEqual(['gatesBypassed×2', 'unverifiedQuoted×2'])
+    expect(m.security.incidents).toBe(5)
+    expect(m.security.weighted).toBe(3 * SEVERITY.gatesBypassed + 2 * SEVERITY.unverifiedQuoted)
+    expect(m.security.kinds).toEqual(['gatesBypassed×3', 'unverifiedQuoted×2'])
     // the receipt travels with it, so every ratio above is recomputable
     expect(m.receipt.corrected).toBe(6)
   })
@@ -153,7 +153,7 @@ describe('agent/benchmark — judged by the constitution', () => {
       { from: 'receipt', to: 'benchmark' },
     ],
     quantities: [
-      { name: 'security incidents this session', value: 4, derivation: 'src/agent/benchmark/seed.ts' },
+      { name: 'security incidents this session', value: 5, derivation: 'src/agent/benchmark/seed.ts' },
       { name: 'measured models', value: 1, derivation: 'src/agent/benchmark/index.ts' },
     ],
     keepers: [],
