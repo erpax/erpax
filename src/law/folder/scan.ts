@@ -173,7 +173,13 @@ export function alphanumericNameViolations(cwd: string = process.cwd()): Alphanu
   return out
 }
 
-const PERMITTED_TS = new Set(['index.ts', 'test.ts'])
+// `seed.ts` is LAWFUL, not stray. The trinity-filename law names the set {index, test, SKILL} + seed,
+// and 208 atoms carry one — 193 of them since 2026-06-04. Counting it applied the same defect the
+// comment below already argues against for generated files: it is one-per-atom BY CONSTRUCTION, so
+// counting it makes the down-only ratchet grow with the corpus, which is the opposite of its intent.
+// Two laws disagreed and the ratchet silently accumulated the difference; this is the realisation
+// that tightens the gate rather than a relaxation of it.
+const PERMITTED_TS = new Set(['index.ts', 'test.ts', 'seed.ts'])
 // Generated derivations (AUTO-GENERATED, regenerated on demand) — never agent-authored strays:
 // `*.generated.ts`, the per-atom translations projection, the translations catalogue aggregate,
 // and the skills index bundle. They are one-per-atom by construction, so counting them as strays
@@ -265,7 +271,7 @@ export function strayTsViolations(cwd: string = process.cwd()): StrayTsViolation
         atomPath: rel || '.',
         file: e,
         law: 'stray-ts',
-        reason: 'stray .ts sibling — only index.ts and test.ts permitted; nest child atom or fold into index.ts',
+        reason: 'stray .ts sibling — only index.ts, test.ts and seed.ts permitted; nest child atom or fold into index.ts',
       })
     }
   }

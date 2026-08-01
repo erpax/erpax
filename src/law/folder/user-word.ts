@@ -146,11 +146,18 @@ export function phraseWithoutDiamondChangesetGate(files: readonly string[], cwd 
   for (const rel of relSet) {
     if (!rel.endsWith('SKILL.md')) continue
     const atomPath = rel.startsWith('src/') ? rel.slice(4, -'/SKILL.md'.length) : rel.slice(0, -'/SKILL.md'.length)
+    // In the changeset OR already on disk. The changeset-only form was UNSATISFIABLE at the write:
+    // the confirm hook scopes to the single edited file, so a SKILL.md edit could never carry its
+    // siblings and every such write was refused — including edits to atoms whose trinity was
+    // complete and committed. The law is "no prose without matter", not "rewrite the trinity to
+    // touch a sentence"; an existing sibling satisfies it either way.
+    const has = (leaf: 'index.ts' | 'test.ts'): boolean =>
+      relSet.has(`src/${atomPath}/${leaf}`) || existsSync(join(cwd, 'src', atomPath, leaf))
     const missing: ('index.ts' | 'test.ts')[] = []
-    if (!relSet.has(`src/${atomPath}/index.ts`)) missing.push('index.ts')
-    if (!relSet.has(`src/${atomPath}/test.ts`)) missing.push('test.ts')
+    if (!has('index.ts')) missing.push('index.ts')
+    if (!has('test.ts')) missing.push('test.ts')
     if (missing.length) {
-      out.push({ atomPath, law: 'phrase-without-diamond', reason: `SKILL.md without ${missing.join(' + ')} in same changeset`, missingInChangeset: missing })
+      out.push({ atomPath, law: 'phrase-without-diamond', reason: `SKILL.md without ${missing.join(' + ')} — no sibling on disk either, so add it in this changeset`, missingInChangeset: missing })
     }
   }
   return out

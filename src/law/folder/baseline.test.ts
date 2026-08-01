@@ -5,6 +5,7 @@ import { RATCHET_GENERATED } from './ratchet.generated'
 import {
   mathCeiling,
   ratchetDown,
+  RATCHET_AXES,
   BYPASS_MATH_COORDINATE,
   AXIS_HORO,
 } from './ratchet-math'
@@ -95,4 +96,30 @@ describe('law/folder baseline — computed from math + ratchet.generated', () =>
     },
     300_000,
   )
+})
+
+describe('ratchet — DOWN-only is the property that licenses auto-tightening', () => {
+  it('a ceiling can NEVER rise, whatever the live count does', () => {
+    // this is the whole safety argument for running the emitter unattended: a gate that could
+    // loosen itself is not a gate. min(prior, math) means a worse tree cannot buy headroom.
+    for (const axis of RATCHET_AXES) {
+      const prior = 100
+      expect(ratchetDown(axis, prior, 1_000_000)).toBeLessThanOrEqual(prior)
+      expect(ratchetDown(axis, prior, 0)).toBeLessThanOrEqual(prior)
+      expect(ratchetDown(axis, prior, 50)).toBeLessThanOrEqual(prior)
+    }
+  })
+
+  it('a REALISED gain lowers the ceiling — that is what tightening by realisation means', () => {
+    const axis = RATCHET_AXES[0]!
+    const tight = ratchetDown(axis, 100, 0)
+    expect(tight).toBe(0) // zero violations ⇒ zero ceiling, no human required
+    expect(tight).toBeLessThan(100)
+  })
+
+  it('an unmeasurable axis yields NaN, never a silent ceiling', () => {
+    // a scan that failed must not be read as "no violations" — that is default-ALLOW by omission
+    expect(ratchetDown(RATCHET_AXES[0]!, 100, Number.NaN)).toBeNaN()
+    expect(ratchetDown(RATCHET_AXES[0]!, 100, -1)).toBeNaN()
+  })
 })
