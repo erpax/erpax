@@ -1031,7 +1031,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data",
     "uuid": "5d03ac11-664b-8a33-981b-2c8f73edf65a",
     "color": "hsl(51 87% 55%)",
-    "count": 9,
+    "count": 10,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -1039,6 +1039,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/cloudflare/seal.ts",
+        "section": ""
+      },
+      {
+        "path": "src/entropy/source/index.ts",
         "section": ""
       },
       {
@@ -5425,7 +5429,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 92,
+    "count": 94,
     "modules": [
       {
         "path": "src/access/index.ts",
@@ -5520,8 +5524,8 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.1"
       },
       {
-        "path": "src/error/uuid/index.ts",
-        "section": "§3.4"
+        "path": "src/entropy/source/index.ts",
+        "section": ""
       }
     ]
   },
@@ -6073,7 +6077,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key derivation functions",
     "uuid": "1956d6ff-473e-8900-94f4-bb9afa8b5b86",
     "color": "hsl(6 59% 53%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/access/standard/index.ts",
@@ -6081,6 +6085,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/cloudflare/seal.ts",
+        "section": ""
+      },
+      {
+        "path": "src/entropy/source/index.ts",
         "section": ""
       },
       {

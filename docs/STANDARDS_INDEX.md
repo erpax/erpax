@@ -1129,6 +1129,9 @@ src/en/16931/validate.ts:9: * @standard UN-CEFACT 4461 payment-means
 src/engineering/index.ts:16: * @standard ISO/IEC 25010:2023 §5 — product quality model (functional suitability … maintainability)
 src/entanglement/index.ts:22: * @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 src/entity/types/index.ts:11: * @standard COSO-2013 entity-classification
+src/entropy/source/index.ts:33: * @standard NIST SP 800-90B — entropy sources: validated at the source, not by output inspection
+src/entropy/source/index.ts:34: * @standard NIST SP 800-108 — key derivation in counter mode
+src/entropy/source/index.ts:35: * @standard RFC 2104 — HMAC
 src/entry/index.ts:25: * @standard IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
 src/entry/index.ts:26: * @standard FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation
 src/entry/index.ts:27: * @standard ISO 20022: debtor/creditor are the two signs of ONE transfer
