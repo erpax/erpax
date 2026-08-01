@@ -1,12 +1,12 @@
 ---
 name: principal
-description: "Use when code must act without a human — a scoped system identity instead of overrideAccess:true. Payload's Local API defaults to skipping access control, and the corpus does so at 138 sites; a principal makes the check RUN and pass, because the identity is authorised for its subsystem and nothing else. Five declared principals (seed, hook, job, migration, import), none holding admin, each tenant-bound. Reads exactly like a person to the access layer — a principal needing its own code path would be a second door."
+description: "Use when code must act without a human — a scoped system identity instead of overrideAccess:true. Payload's Local API defaults to skipping access control, and the corpus did so at 138 sites, now 132; a principal makes the check RUN and pass, because the identity is authorised for its subsystem and nothing else. Five declared principals (seed, hook, job, migration, import), none holding admin, each tenant-bound. Reads exactly like a person to the access layer — a principal needing its own code path would be a second door."
 atomPath: "principal"
 ---
 
 # principal — act as someone, never as no one
 
-`overrideAccess: true` appears at **138 sites**. Every one turns the access check off.
+`overrideAccess: true` appeared at **138 sites**, and is now at **132**. Every one turns the access check off.
 
 The reason is real: an access function reads `req.user`, and a hook, seed, migration or job has none, so the check would deny everything. But *"the check would fail"* and *"the check should not run"* are different claims, and only the first is true.
 
@@ -40,7 +40,7 @@ system:import      roles=user   writes data an authenticated human supplied
 
 ## Honest boundary
 
-This builds the identity that makes removal possible — **it does not remove anything**. All 138 sites still bypass. They move one subsystem at a time, verified, with the ledger last, because a sweep replaces a known-permissive default with an unknown-restrictive one everywhere at once, and the failures are **silent reads returning nothing** rather than loud errors.
+This builds the identity that makes removal possible — **it does not remove anything**. Six are migrated; **132** still bypass. They move one subsystem at a time, verified, with the ledger last, because a sweep replaces a known-permissive default with an unknown-restrictive one everywhere at once, and the failures are **silent reads returning nothing** rather than loud errors.
 
 And a principal only proves the check *ran and passed* — never that the capability granted is the right one. The role map is declared by a human and is exactly as good as that judgement.
 

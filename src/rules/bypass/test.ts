@@ -28,7 +28,7 @@ describe('rules/bypass — access control is on by default on a request-reachabl
   })
 
   it('only REQUEST-REACHABLE paths are judged — a hook or a seed is not routed', () => {
-    // 138 overrideAccess:true sites exist corpus-wide; the vast majority are hooks, seeds and
+    // 132 overrideAccess:true sites exist corpus-wide; the vast majority are hooks, seeds and
     // system jobs that genuinely have no user in scope. Counting them would make the gate noise,
     // and a gate that cries wolf is one nobody reads.
     for (const s of bypassSites(cwd)) expect(s.file.startsWith('src/app')).toBe(true)

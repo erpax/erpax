@@ -32,6 +32,7 @@
  * @standard ISO/IEC 27001 A.8.2 — privileged access rights
  * @see ./SKILL.md -- ../auth -- ../rules/bypass
  */
+import { ACCOUNTING_WRITE_ROLES } from '@/roles/registry'
 import type { UserRole } from '@/types/auth'
 
 /** The subsystems that legitimately act without a human. Declared — no theorem derives this list. */
@@ -82,6 +83,38 @@ const CAPABILITY: Readonly<Record<Subsystem, readonly UserRole[]>> = {
  * access function will refuse. That is the difference between a policy and a comment.
  */
 export const NO_PRINCIPAL_MAY_DELETE = true
+
+/**
+ * Which subsystems may WRITE — computed from the capability map against the collections' own write
+ * roles, never listed by hand.
+ *
+ * This exists because the map's read-only entry is enforced *by the access function*, silently: a
+ * create issued under a principal without a write role is refused at runtime with a normal
+ * permission error, and a caller that does not check the result sees a hook that simply stopped
+ * working. `hook` is read-only by design — so calling it for a write is a defect at the CALL SITE,
+ * and `assertMayWrite` turns that into a loud, testable refusal before the request is made.
+ */
+export function canWrite(subsystem: Subsystem): boolean {
+  return CAPABILITY[subsystem].some((r) => (ACCOUNTING_WRITE_ROLES as readonly UserRole[]).includes(r))
+}
+
+export const WRITING_SUBSYSTEMS: readonly Subsystem[] = (Object.keys(CAPABILITY) as Subsystem[]).filter(canWrite)
+
+export class PrincipalMayNotWrite extends Error {
+  constructor(subsystem: Subsystem, operation: string) {
+    super(
+      `principal: '${subsystem}' may not ${operation} — it holds [${CAPABILITY[subsystem].join(', ')}], and a write ` +
+        `needs one of [${ACCOUNTING_WRITE_ROLES.join(', ')}]. The access function would refuse this at runtime; ` +
+        `use one of [${WRITING_SUBSYSTEMS.join(', ')}], or do not issue the write.`,
+    )
+    this.name = 'PrincipalMayNotWrite'
+  }
+}
+
+/** Refuse a write under a read-only principal HERE, rather than letting the request fail silently. */
+export function assertMayWrite(subsystem: Subsystem, operation = 'write'): void {
+  if (!canWrite(subsystem)) throw new PrincipalMayNotWrite(subsystem, operation)
+}
 
 const SCOPE: Readonly<Record<Subsystem, string>> = {
   seed: 'creates reference data at install; may not delete tenant rows',

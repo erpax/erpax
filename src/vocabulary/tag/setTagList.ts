@@ -20,7 +20,7 @@
  * @standard RFC-4122 §4.3 uuid content-addressed-dedup
  * @see ./list.ts (parse/reconcile) · ./taggedWith.ts (reverse read) · ../tags/taggings/counter.ts
  */
-import { asSystem } from '@/principal'
+import { asSystem, assertMayWrite, type Subsystem } from '@/principal'
 import type { CollectionSlug, Payload, Where } from 'payload'
 import { parseTagList, reconcileTags } from './list'
 
@@ -63,9 +63,14 @@ export async function findOrCreateTags(
   payload: Payload,
   names: readonly string[],
   tenantId: string | number,
+  as: Subsystem = 'job',
 ): Promise<Array<string | number>> {
   const clean = parseTagList(names) // normalise + dedupe even if already split
   if (clean.length === 0) return []
+  // `tags` gates create on ACCOUNTING_WRITE_ROLES, and the hook principal holds only `user` — so a
+  // create issued under it is REFUSED at runtime, silently, as an ordinary permission error. The
+  // caller declares which subsystem it is, and this refuses here rather than there.
+  assertMayWrite(as, 'create a tag')
   const existing = await payload.find({
     collection: 'tags' as CollectionSlug,
     where: { and: [{ name: { in: clean } }, ...tenantClauseOf(tenantId)] } as Where,
@@ -76,7 +81,7 @@ export async function findOrCreateTags(
     // being skipped. Both are required — passing `user` alone changes nothing, because
     // overrideAccess still defaults to true. See [[principal]].
     overrideAccess: false,
-    user: asSystem('hook', String(tenantId)),
+    user: asSystem(as, String(tenantId)),
   })
   const byName = new Map<string, string | number>()
   for (const d of existing.docs as Array<{ id: string | number; name?: string }>) {
@@ -90,7 +95,7 @@ export async function findOrCreateTags(
         collection: 'tags' as CollectionSlug,
         data: { name, tenant: tenantId } as Record<string, unknown>,
         overrideAccess: false,
-        user: asSystem('hook', String(tenantId)),
+        user: asSystem(as, String(tenantId)),
       })
       id = created.id
       byName.set(name, id)
@@ -123,7 +128,9 @@ export async function tagListOn(payload: Payload, t: TagTarget): Promise<string[
     limit: 100_000,
     depth: 1, // populate `tag` → { name }
     pagination: false,
-    overrideAccess: true,
+    // a READ, so the read-only hook principal is exactly the right authority here
+    overrideAccess: false,
+    user: asSystem('hook', String(t.tenantId)),
   })
   const names: string[] = []
   for (const row of res.docs as Array<{ tag?: unknown }>) {
@@ -143,10 +150,13 @@ export async function setTagList(
   payload: Payload,
   t: TagTarget,
   list: string | readonly string[] | null | undefined,
+  as: Subsystem = 'job',
 ): Promise<{ added: number; removed: number; names: string[] }> {
   const context = t.context ?? DEFAULT_CONTEXT
+  assertMayWrite(as, 'reconcile taggings')
+  const principal = asSystem(as, String(t.tenantId))
   const desiredNames = parseTagList(list)
-  const desiredIds = await findOrCreateTags(payload, desiredNames, t.tenantId)
+  const desiredIds = await findOrCreateTags(payload, desiredNames, t.tenantId, as)
 
   const current = await payload.find({
     collection: 'taggings' as CollectionSlug,
@@ -154,7 +164,8 @@ export async function setTagList(
     limit: 100_000,
     depth: 0,
     pagination: false,
-    overrideAccess: true,
+    overrideAccess: false,
+    user: principal,
   })
   const currentByTag = new Map<string, string | number>()
   for (const row of current.docs as Array<{ id: string | number; tag?: unknown }>) {
@@ -175,12 +186,18 @@ export async function setTagList(
         ...(t.taggerId != null ? { tagger: t.taggerId } : {}),
         ...(t.tenantId != null ? { tenant: t.tenantId } : {}),
       } as Record<string, unknown>,
-      overrideAccess: true,
+      overrideAccess: false,
+      user: principal,
     })
   }
   for (const tagId of remove) {
     const id = currentByTag.get(String(tagId))
     if (id != null) {
+      // DELETE stays bypassed, and the reason is structural rather than convenient: the factory gates
+      // delete on `tenantAdmin`, and NO principal holds admin ([[principal]]), so a scoped delete is
+      // refused by construction. Removing a tagging is not a tenant-admin act, so the gate is aimed at
+      // the wrong thing here — which is a finding about the delete policy, not a licence to widen the
+      // principal. Until that policy admits a narrower delete, this is the one remaining bypass.
       await payload.delete({ collection: 'taggings' as CollectionSlug, id, overrideAccess: true })
     }
   }

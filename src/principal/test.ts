@@ -2,7 +2,16 @@ import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
 
-import { asSystem, principalMay, principals, type Subsystem } from './index'
+import {
+  PrincipalMayNotWrite,
+  WRITING_SUBSYSTEMS,
+  asSystem,
+  assertMayWrite,
+  canWrite,
+  principalMay,
+  principals,
+  type Subsystem,
+} from './index'
 
 describe('principal — act as someone, never as no one', () => {
   it('reads exactly like a person to the access layer — no special code path', () => {
@@ -123,5 +132,30 @@ describe('principal — judged by the constitution', () => {
     const v = judge(change)
     expect(v.verdicts.filter((x) => !x.holds)).toEqual([])
     expect(v.sealed).toBe(true)
+  })
+})
+
+describe('principal — a read-only principal may not write, and it fails HERE', () => {
+  it('the writing subsystems are COMPUTED from the capability map, not listed', () => {
+    expect([...WRITING_SUBSYSTEMS].sort()).toEqual(['import', 'job', 'migration', 'seed'])
+    expect(canWrite('hook')).toBe(false)
+  })
+
+  it('THE REGRESSION THIS CLOSES: a create under the hook principal is refused before the request', () => {
+    // tags/taggings gate create on ACCOUNTING_WRITE_ROLES; the hook principal holds only `user`, so
+    // the access function refuses at runtime as an ordinary permission error — a hook that silently
+    // stops working. This turns that into a loud failure at the call site.
+    expect(() => assertMayWrite('hook', 'create a tag')).toThrow(PrincipalMayNotWrite)
+    expect(() => assertMayWrite('hook')).toThrow(/use one of \[seed, import, migration, job\]/)
+  })
+
+  it('every writing subsystem passes, and the message names what it holds', () => {
+    for (const s of WRITING_SUBSYSTEMS) expect(() => assertMayWrite(s)).not.toThrow()
+    try {
+      assertMayWrite('hook', 'delete a row')
+    } catch (e) {
+      expect((e as Error).message).toContain('it holds [user]')
+      expect((e as Error).message).toContain('delete a row')
+    }
   })
 })
