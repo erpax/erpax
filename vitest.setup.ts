@@ -79,6 +79,11 @@ if (process.env.PAYLOAD_DEV_PUSH !== 'true' && !process.env.PAYLOAD_TEST_SKIP_MI
     timeout: 30_000, // 30 second timeout
   })
   const errText = `${result.stderr ?? ''}${result.stdout ?? ''}`
+  // Did this run actually SETTLE the schema, or did it only fail to find out? The sentinel below
+  // means "verified", and stamping it after a lock-skip turns "could not verify this time" into
+  // "verified forever" — every later process then skips the migrate entirely on the strength of a
+  // run that never checked. Same shape as the swallow closed below, one branch further on.
+  let settled = true
   if (result.status !== 0) {
     // Local drift: dev push created objects before payload_migrations recorded the migration.
     if (/already exists|duplicate/i.test(errText)) {
@@ -86,9 +91,11 @@ if (process.env.PAYLOAD_DEV_PUSH !== 'true' && !process.env.PAYLOAD_TEST_SKIP_MI
         '[vitest] payload migrate reported existing objects; continuing (schema likely already applied).\n',
       )
     } else if (result.error?.message?.includes('ETIMEDOUT') || errText.includes('SQLITE_BUSY')) {
-      // Database locked - common with D1 local dev
+      // Database locked - common with D1 local dev. Continue (a sibling probably holds the lock and
+      // is applying it), but do NOT record this run as a verification.
+      settled = false
       process.stderr.write(
-        '[vitest] payload migrate timed out or database locked. Skipping - schema likely already applied.\n',
+        '[vitest] payload migrate timed out or database locked. Continuing, and NOT stamping the sentinel — the next process re-checks rather than trusting this run.\n',
       )
     } else {
       // BOOT-SWALLOW CLOSED (the open intent the lens surfaced): a REAL migrate failure —
@@ -100,12 +107,14 @@ if (process.env.PAYLOAD_DEV_PUSH !== 'true' && !process.env.PAYLOAD_TEST_SKIP_MI
       process.exit(result.status ?? 1)
     }
   }
-  // schema settled (applied, already-present, or lock-skipped — every branch above continues):
-  // stamp the sentinel so sibling processes skip the spawn entirely
-  try {
-    mkdirSync(dirname(migrateSentinel), { recursive: true })
-    writeFileSync(migrateSentinel, migrationsKey())
-  } catch {
-    /* a lost stamp only means the next process re-pays once */
+  // Stamp ONLY when this run settled the schema — applied, or already-present. A lock-skip did not
+  // verify anything, so it leaves the sentinel absent and the next process pays the check again.
+  if (settled) {
+    try {
+      mkdirSync(dirname(migrateSentinel), { recursive: true })
+      writeFileSync(migrateSentinel, migrationsKey())
+    } catch {
+      /* a lost stamp only means the next process re-pays once */
+    }
   }
 }

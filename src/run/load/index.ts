@@ -2,17 +2,21 @@
  * load — does the app run at all?
  *
  * Twelve gates read STRUCTURE. None can say the sentence that matters: a user cannot open this app. Only
- * loading it says that — and it fails, at src/fixed/assets:34, in every loader tried:
+ * loading it says that.
  *
- *   tsx / node ESM        ReferenceError: Cannot access 'createAccountingCollection' before initialization
+ * IT NOW LOADS — `load — OK from esm · 229 collections`. What it cost is the record worth keeping:
+ *
+ *   tsx / node ESM        was ReferenceError: Cannot access 'createAccountingCollection' before initialization
  *   vitest / Vite         the same TDZ, same line
- *   next dev / turbopack  a different defect: src/pages collides with Next's reserved Pages Router dir
+ *   next dev / turbopack  a different defect: the `pages` collection collided with Next's reserved Pages Router dir
  *
- * The harness has been swallowing it. Every suite prints "payload migrate timed out … Skipping" and carries
- * on, so every file labelled `payload-integration` runs with NO booted Payload. See this atom's SKILL.
+ * Both are closed — the `tool-defs → collections` edge was cut so initialisation order changed, and
+ * the `pages` collection was renamed. The SCC is still ~225 files: entangled is not fatal ([[rules]]/cycle), which is
+ * the finding, not a loose end. And the harness that swallowed the boot fails closed now: an unknown migrate
+ * failure exits everywhere instead of continuing (`vitest.setup.ts`).
  *
- * The proof is test.ts, and it is RED ON PURPOSE. This face exists so the question is addressable and can be
- * run on demand rather than only by the suite.
+ * The proof is test.ts, and it is GREEN because the app boots — not because the question stopped being
+ * asked. This face exists so it is addressable and runnable on demand rather than only by the suite.
  *
  * Composes [[rules]]/cycle · [[law]].
  */
@@ -56,7 +60,7 @@ export function currentLoader(): Loader {
  *   esm (tsx/node)   TDZ at fixed/assets:34
  *   vite (vitest)    the same TDZ — and confirm/matter.test.ts passed 9 tests, then could not collect, AT
  *                    THE SAME COMMIT: two coordinates, not two outcomes
- *   turbopack        a different defect entirely — src/pages collides with Next's reserved Pages Router
+ *   turbopack        a different defect entirely — the `pages` collection collided with Next's reserved Pages Router
  *   workers          UNTRIED (Cloudflare/OpenNext) — absent, not passing
  *
  * That is not non-determinism, which is what I called it. **Initialisation order is a function of the entry

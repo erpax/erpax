@@ -1,6 +1,6 @@
 ---
 name: load
-description: "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It currently FAILS, and that is correct: erpax does not boot in any loader, and the test harness has been swallowing it."
+description: "Use when asking the only question no other gate asks — does the app actually LOAD? Boots payload.config for real and asserts every collection registers. It now PASSES — load — OK from esm, 229 collections — after the tool-defs → collections edge was cut and the `pages` collection was renamed. The SCC is still ~225 files: entangled is not fatal. The harness that swallowed the boot fails closed now, and the sentinel is stamped only by a run that verified the schema."
 atomPath: "run/load"
 coordinate: "run/load · 2/share · cf607799"
 contentUuid: "d09d251f-1f9b-5cb8-b89e-a717cc8850eb"
@@ -55,7 +55,7 @@ ReferenceError: Cannot access 'createAccountingCollection' before initialization
 | --- | --- |
 | `esm` (tsx/node) | **TDZ** — `fixed/assets:34` |
 | `vite` (vitest) | **TDZ** — the same line |
-| `turbopack` (next dev) | **compile error** — a different defect first (`src/pages`, below) |
+| `turbopack` (next dev) | **compile error** — a different defect first (the `pages` collection, below) |
 | `workers` (Cloudflare/OpenNext) | **UNTRIED** — absent, not passing |
 
 ## A verdict is a function of (source, observer)
@@ -72,37 +72,33 @@ This is [[rules]]/audience's law applied to machines instead of people: the fabr
 
 ## Why nobody knew — the harness swallowed it
 
-Every test file in this repo prints, and has been printing:
+Every test file in this repo printed, and kept printing:
 
 ```
 [vitest] payload migrate timed out or database locked. Skipping - schema likely already applied.
 ```
 
-That is the setup **catching the boot failure and continuing**. So every suite labelled `|payload-integration|` runs with **no booted Payload**. The green was real; the integration was not. A harness that swallows the boot has no way to tell you the app is dead — it can only tell you the pure functions still work, which they do.
+That was the setup **continuing past a failure it could not diagnose**. So every suite labelled `|payload-integration|` could run with **no booted Payload**. The green was real; the integration was not. A harness that swallows the boot has no way to tell you the app is dead — it can only tell you the pure functions still work, which they do.
 
-And the one test that WOULD have said it — `run/dev/smoke.ts`, which boots the Local API against real D1 — is **switched off in the gate**:
+**Closed, in two places.** An *unknown* migrate failure now writes the error and `process.exit`s, so it fails everywhere instead of continuing. And the sentinel that marks the schema verified is stamped **only by a run that verified it** — a lock-skip leaves it absent so the next process re-checks, instead of recording "could not find out this time" as "verified forever". The two benign branches (already-exists, held lock) still continue, because neither is evidence of a broken schema.
 
-```
-src/cli/gate.ts:54   packageApprovalMatrix({ execute: true, smoke: false })
-```
-
-Third time in one session that a working tool sat disabled: `smoke: false`, `--no-verify`, and the standards lane that let a statutory index rot to ~50% wrong.
+**What `smoke: false` is, and is not.** `src/cli/gate.ts` calls `packageApprovalMatrix({ execute: true, smoke: false })`, and it is tempting to read that as the boot test being switched off. It is not: that flag governs whether the *package-approval matrix* additionally runs the **full vitest suite**, and the gate already has `test:int` as its own lane (`pnpm erpax test waves`) which runs the suites as receipt-split waves. Turning the flag on would duplicate that lane, not add a boot check. Flipping it on the strength of the earlier reading would have been an instrument error ([[instrument]]) — changing a gate to fix a sentence.
 
 ## The browser finds a second, independent defect
 
 ```
-src/pages/hooks/revalidatePage.ts:3
+the collection’s revalidate hook, line 3
   "revalidatePath" is only available in Server Components in the App Router,
   but you are using it in the Pages Router.
 ```
 
-`src/app/` exists, so this is an App Router project — and **Next reserves `src/pages/` for the legacy Pages Router**. But `src/pages/` is erpax's **CMS pages collection** (`slug: 'pages'`), minted by the corpus's own law: *every atom is ONE generic lowercase word.*
+``app/` exists, so this is an App Router project — and **Next reserves the `pages` directory for the legacy Pages Router**. But that directory was erpax's **CMS pages collection** (`slug: 'pages'`), minted by the corpus's own law: *every atom is ONE generic lowercase word.*
 
 **The one-word law claimed a name the framework already owns.** No gate here can see that: [[law]]/folder checks the word is one lowercase word, and `pages` passes perfectly. The framework's namespace is not in the corpus's model.
 
 Its import trace also names the tangle's closing edge: `pages/hooks/revalidatePage → pages → collections → agents/mcp/tool-defs`. The MCP tool-defs importing **every collection** drags server-only hooks into the **client** bundle.
 
-**Honest boundary.** This proves the config does not **load**; it does not prove production is down — the Cloudflare/OpenNext build is a fourth loader and was not tried here. That is precisely the point: the same source loads or does not depending on the bundler, which is [[rules]]/cycle's *"initialisation order is decided by accident"* demonstrated rather than argued. This test is **red on purpose**. It is not a defect in the test.
+**Honest boundary.** This proves the config does not **load**; it does not prove production is down — the Cloudflare/OpenNext build is a fourth loader and was not tried here. That is precisely the point: the same source loads or does not depending on the bundler, which is [[rules]]/cycle's *"initialisation order is decided by accident"* demonstrated rather than argued. This test was **red on purpose** while the app did not boot; it is green now because the app boots, not because the question stopped being asked. The Cloudflare/OpenNext build remains a fourth loader this face does not try.
 
 **Law — [[law]]: a corpus that cannot load has no other properties. Every green gate above this one is a statement about code that does not run — and a harness that swallows the boot will report all of them green forever.**
 
