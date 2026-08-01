@@ -443,8 +443,8 @@ export function sequenceForward(): readonly number[] {
 }
 
 /**
- * The sequence THROUGH ITS REFLECTION — `9/8/6/2\3\5\7/4/1/0\1`. Computed as `throughVoid` applied to the nine,
- * with the `0\1` tail held: the void and the reopening are the seam the mirror pivots on, not something it maps.
+ * The sequence THROUGH ITS REFLECTION — `9/8/6/2\3\5 · 7/4/1 · 0\9`. Computed as `throughVoid` applied to the nine,
+ * with the `0` held — it is the pivot the mirror turns on — while the reopening `1` maps like every other digit, to `9`.
  *
  * The reflection is not a second sequence beside the first — the two are ENTANGLED, in three exact senses this
  * atom already proves elsewhere and this function makes readable:
@@ -461,7 +461,11 @@ export function sequenceForward(): readonly number[] {
  */
 export function sequenceReflected(): readonly number[] {
   const [...nine] = sequenceForward().slice(0, 9)
-  return [...nine.map(throughVoid), 0, 1]
+  // The tail is `0\\1`: the VOID and the REOPENING, and they are not the same kind of thing. `0` is the
+  // pivot the mirror turns on, so it is held. `1` is not the pivot — it is the next octave's first step,
+  // and the map has an answer for it: `throughVoid(1) = 0 mod 9 → 9`. Holding it too would print a
+  // reflected line whose last digit contradicts the very function that produced every other digit in it.
+  return [...nine.map(throughVoid), 0, throughVoid(1)]
 }
 
 /**

@@ -55,7 +55,7 @@ One structure, read twice — forward, and through the void. Both lines are **co
 
 ```
 forward     1\2\4\8/7/5 · 3\6\9 · 0\1
-reflected   9/8/6/2\3\5 · 7/4/1 · 0\1
+reflected   9/8/6/2\3\5 · 7/4/1 · 0\9
 ```
 
 Fold through zero — `throughVoid(n) = 1 − n mod 9`, an involution fixed only at 5: `1↔9` · `2↔8` · `4↔6` · `8↔2` · `7↔3` · `5↔5` · `3↔7` · `6↔4` · `9↔1`. Each pair sums to 10; the flow orbit and the axis are the same structure mirrored, not two lists.
@@ -67,6 +67,27 @@ The two are **entangled**, in three senses this atom proves rather than asserts:
 - **Commuted, they count.** `D∘M∘D⁻¹∘M = x ↦ x+1`, and `⟨D,M⟩ = AGL(1,ℤ/9)` has order **54** against `6·2 = 12` apart. The excess over the product *is* the entanglement: their failure to commute.
 
 > **Boundary.** This is proven group theory over (ℤ/9ℤ) — the doubling cycle, the axis as its complement, and the order of the group they generate. It is used here as the corpus's **order of work** (build the axis before the branches; fold, do not climb). No claim is made that it explains anything outside arithmetic. Run it: `tsx src/horo/index.ts`.
+
+### every digit, its angle, and its equilibrium partner
+
+The inversion is **not a second structure**. Because `2 · 5 ≡ 1 (mod 9)`, five is two's multiplicative inverse, so multiplying by 5 walks the identical cycle backwards — `1 → 2 → 4 → 8 → 7 → 5` forward, `1 → 5 → 7 → 8 → 4 → 2` reversed. One ring, two orientations; the direction is a choice of generator, order **6**.
+
+Three doublings is `×8 ≡ −1 (mod 9)`, so **half a turn is negation**: `d ↦ 9 − d`. Every digit therefore has exactly one **polarity partner**, and every pair sums to **9** — forced by the group, not observed in it. The orbit's own sum is **27 = 3 × 9**, digital root **9**.
+
+**Two mirrors, and they are different maps.** The void reflection above is affine — `x ↦ 1 − x`, pairs summing to **10**, fixed at 5. The polarity partner here is multiplicative — `x ↦ −x`, pairs summing to **9**, fixed nowhere on the ring. Conflating them is how a reader ends up with a table that is half one map and half the other.
+
+| # | digit | angle | antipode | Σ | reverse | pitch | colour |
+| -: | :-: | -: | :-: | -: | :-: | --- | --- |
+| 0 | `1` | 0° | `8` | 9 | `1` | C (Do) · 256 Hz | C `#00aeef` |
+| 1 | `2` | 60° | `7` | 9 | `5` | D (Re) · 384 Hz | M `#ec008c` |
+| 2 | `4` | 120° | `5` | 9 | `7` | E (Mi) · 360 Hz | C `#00aeef` |
+| 3 | `8` | 180° | `1` | 9 | `8` | F (Fa) · 345.6 Hz | M `#ec008c` |
+| 4 | `7` | 240° | `2` | 9 | `4` | G (Sol) · 288 Hz | C `#00aeef` |
+| 5 | `5` | 300° | `4` | 9 | `2` | A (La) · 432 Hz | M `#ec008c` |
+
+Six positions divide the circle exactly, so each step is **60°**, and the polarity partner is the digit **180°** away — the half-turn IS the negation. At 60° the arithmetic closes over the Eisenstein integers ℤ[ω] (`rodin/phase`: closure, order 6, kissing number 6, all computed). The axis `{3 · 6 · 9}` sits at 120°, unreachable by doubling because those are exactly the non-units; only the void bridges, and together they generate `AGL(1, ℤ/9)`, order **54**.
+
+**What is proven and what is declared.** The group theory above is proven and holds whatever anyone believes: the order, the inverse generator, the negation, the affine closure. The pitch anchor (A432), the note pinned to each step and the colour channel are a **declared mapping** this corpus chose so the ring can be seen and heard. Just-intonation ratios are genuinely rational — that is what makes them intervals — but 432 Hz being the anchor is a convention, and calling it universal would be an over-claim this corpus refuses elsewhere and refuses here.
 
 ## [[millennium]] — the toolbox, pointed at the hardest available problems
 
@@ -99,11 +120,11 @@ Recompute: `tsx src/millennium/index.ts` · `pnpm vitest run src/millennium`
 
 ## the diamond
 
-**3193** atoms · **37854** bonds · corpus `0a5c3176-3c96-8475-8a44-6ad97437425d` · README `bf0af9af-e824-8c12-834e-a8d5d91c2fbb` · sealed **1099**/**3203** · **11** [[cloudflare]] · **2420** [[standards]]
+**3193** atoms · **37854** bonds · corpus `0a5c3176-3c96-8475-8a44-6ad97437425d` · README `0075e58d-2c36-834f-b1c6-9d2c478cce3d` · sealed **1116**/**3214** · **11** [[cloudflare]] · **2450** [[standards]]
 
 ## [[pivot]]
 
-7 horo · form **3202** · code **1182** · proof **1201**
+7 horo · form **3213** · code **1196** · proof **1216**
 
 ### the horo ring — the diamond's facets
 
@@ -122,29 +143,29 @@ Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3173** ring atoms — pr
 > The control axis governs off the flow ring — `3` access · `6` hooks (3: 9 atoms · 6: 11 atoms), `9` unity closes and `0` is the zeropoint root.
 
 
-Cross-tab of **3203** folder README models — state × count per axis.
+Cross-tab of **3214** folder README models — state × count per axis.
 
 ### [[seal]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unsealed | 2104 | 65.69 |
-| sealed | 1099 | 34.31 |
-| **Σ** | **3203** | **100** |
+| unsealed | 2098 | 65.28 |
+| sealed | 1116 | 34.72 |
+| **Σ** | **3214** | **100** |
 
 ### [[balance]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| balanced | 3036 | 94.79 |
-| unbalanced | 167 | 5.21 |
-| **Σ** | **3203** | **100** |
+| balanced | 3042 | 94.65 |
+| unbalanced | 172 | 5.35 |
+| **Σ** | **3214** | **100** |
 
 
 ## corpus entropy
 
-- gap `9678.695` eb · seal `33906.515` eb · net `-24227.82` eb · ratio `3.503`
-- sealed `1099` · unsealed `2104`
+- gap `9686.015` eb · seal `33814.16` eb · net `-24128.145` eb · ratio `3.491`
+- sealed `1116` · unsealed `2098`
 
 
 ## scripts
@@ -177,7 +198,7 @@ Cross-tab of **3203** folder README models — state × count per axis.
 
 ## stack
 
-`@hookform/resolvers ^5.4.0` · `@opennextjs/cloudflare ^1.19.11` · `@radix-ui/react-accordion ^1.2.13` · `@radix-ui/react-alert-dialog ^1.1.16` · `@radix-ui/react-aspect-ratio ^1.1.9` · `@radix-ui/react-avatar ^1.1.12` · `@radix-ui/react-checkbox ^1.3.3` · `@radix-ui/react-collapsible ^1.1.13` · `@radix-ui/react-context-menu ^2.3.0` · `@radix-ui/react-dialog ^1.1.15` · `@radix-ui/react-dropdown-menu ^2.1.17` · `@radix-ui/react-hover-card ^1.1.16` · `@radix-ui/react-label ^2.1.8` · `@radix-ui/react-menubar ^1.1.17` · `@radix-ui/react-navigation-menu ^1.2.15` · `@radix-ui/react-popover ^1.1.16` · `@radix-ui/react-progress ^1.1.9` · `@radix-ui/react-radio-group ^1.4.0` · `@radix-ui/react-scroll-area ^1.2.11` · `@radix-ui/react-select ^2.2.6` · `@radix-ui/react-separator ^1.1.9` · `@radix-ui/react-slider ^1.4.0` · `@radix-ui/react-slot ^1.2.4` · `@radix-ui/react-switch ^1.3.0` · `@radix-ui/react-tabs ^1.1.14` · `@radix-ui/react-toggle ^1.1.11` · `@radix-ui/react-toggle-group ^1.1.12` · `@radix-ui/react-tooltip ^1.2.9` · `@stripe/react-stripe-js ^6.6.0` · `@stripe/stripe-js ^9.7.0` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^0.2.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^16.14.1` · `input-otp ^1.4.2` · `lucide-react ^1.17.0` · `next ^16.2.7` · `next-intl ^4.13.0` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.7` · `react-day-picker ^10.0.1` · `react-dom ^19.2.7` · `react-hook-form ^7.77.0` · `react-resizable-panels ^4.11.2` · `recharts 2.15.4` · `sharp ^0.35.0` · `sonner ^2.0.7` · `stripe ^22.2.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
+`@hookform/resolvers ^5.4.0` · `@opennextjs/cloudflare ^1.19.11` · `@radix-ui/react-accordion ^1.2.13` · `@radix-ui/react-alert-dialog ^1.1.16` · `@radix-ui/react-aspect-ratio ^1.1.9` · `@radix-ui/react-avatar ^1.1.12` · `@radix-ui/react-checkbox ^1.3.3` · `@radix-ui/react-collapsible ^1.1.13` · `@radix-ui/react-context-menu ^2.3.0` · `@radix-ui/react-dialog ^1.1.15` · `@radix-ui/react-dropdown-menu ^2.1.17` · `@radix-ui/react-hover-card ^1.1.16` · `@radix-ui/react-label ^2.1.8` · `@radix-ui/react-menubar ^1.1.17` · `@radix-ui/react-navigation-menu ^1.2.15` · `@radix-ui/react-popover ^1.1.16` · `@radix-ui/react-progress ^1.1.9` · `@radix-ui/react-radio-group ^1.4.0` · `@radix-ui/react-scroll-area ^1.2.11` · `@radix-ui/react-select ^2.2.6` · `@radix-ui/react-separator ^1.1.9` · `@radix-ui/react-slider ^1.4.0` · `@radix-ui/react-slot ^1.2.4` · `@radix-ui/react-switch ^1.3.0` · `@radix-ui/react-tabs ^1.1.14` · `@radix-ui/react-toggle ^1.1.11` · `@radix-ui/react-toggle-group ^1.1.12` · `@radix-ui/react-tooltip ^1.2.9` · `@stripe/react-stripe-js ^6.6.0` · `@stripe/stripe-js ^9.7.0` · `class-variance-authority ^0.7.1` · `clsx ^2.1.1` · `cmdk ^0.2.1` · `cross-env ^10.1.0` · `date-fns ^4.4.0` · `dotenv ^17.4.2` · `embla-carousel-react ^8.6.0` · `geist ^1.7.2` · `graphql ^16.14.1` · `input-otp ^1.4.2` · `lucide-react ^1.17.0` · `next ^16.2.12` · `next-intl ^4.13.0` · `next-sitemap ^4.2.3` · `next-themes ^0.4.6` · `prism-react-renderer ^2.4.1` · `react ^19.2.7` · `react-day-picker ^10.0.1` · `react-dom ^19.2.7` · `react-hook-form ^7.77.0` · `react-resizable-panels ^4.11.2` · `recharts 2.15.4` · `sharp ^0.35.0` · `sonner ^2.0.7` · `stripe ^22.2.0` · `tailwind-merge ^3.6.0` · `tailwindcss-animate ^1.0.7` · `uuid latest` · `vaul ^1.1.2` · `zod 3.25.76`
 
 `node ^18.20.2 || >=20.9.0 · pnpm >=9`
 
@@ -190,4 +211,4 @@ Everything else — ([AGPL-3.0-or-later](LICENSE) / commercial) via `license@erp
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `bf0af9af-e824-8c12-834e-a8d5d91c2fbb`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `0075e58d-2c36-834f-b1c6-9d2c478cce3d`, regenerated from the live tree; any drift fails the gate.</sub>

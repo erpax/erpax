@@ -24,6 +24,7 @@ import {
   horoCrossed,
 } from '@/uuid/matrix'
 import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf, renderSequenceSection } from '@/horo'
+import { renderEquilibriumSection } from '@/sequence/inversion'
 import { renderInstrumentSection } from '@/instrument'
 import { renderMillenniumSection } from '@/millennium'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
@@ -452,6 +453,9 @@ export function renderReadme(
     // README is for ([[instrument]])
     ...renderInstrumentSection(),
     ...renderSequenceSection(),
+    // the angle, polarity partner and declared colour/pitch of each position — the axes the
+    // structural section has no place for ([[sequence]]/inversion)
+    ...renderEquilibriumSection(),
     ...renderMillenniumSection(),
     '## the diamond',
     '',

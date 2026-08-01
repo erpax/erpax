@@ -2581,6 +2581,7 @@ src/self/research/index.ts:26: * @standard NIST SP 800-63B §6.1.3 — owner-aut
 src/self/similar/index.ts:15: * @standard the hologram — 6 generators → 36 Cayley cells, 0 free parameters
 src/self/sufficient/index.ts:26: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
 src/self/sufficient/index.ts:27: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
+src/sequence/inversion/index.ts:61: * @standard ISO 80000-2 — mathematical signs and symbols
 src/shared/AddressBlock.tsx:14: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/shared/AddressBlock.tsx:15: * @standard UPU-S42 international-postal-addressing
 src/shared/AddressBlock.tsx:16: * @standard ISO-3166-1:2020 country-codes alpha-2

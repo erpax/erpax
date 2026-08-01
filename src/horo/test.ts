@@ -154,10 +154,10 @@ describe('horo', () => {
     for (const n of [2, 5, 8]) expect(throughVoid(n) % 3).toBe(2) // ≡2 is fixed setwise
   })
 
-  it('the sequence is entangled to its reflection — 1\\2\\4\\8/7/5·3\\6\\9·0\\1 ↔ 9/8/6/2\\3\\5\\7/4/1/0\\1', () => {
+  it('the sequence is entangled to its reflection — 1\\2\\4\\8/7/5·3\\6\\9·0\\1 ↔ 9/8/6/2\\3\\5·7/4/1·0\\9', () => {
     expect([...sequenceForward()]).toEqual([1, 2, 4, 8, 7, 5, 3, 6, 9, 0, 1])
     // the reflection is COMPUTED by throughVoid, and it is exactly the inverted spelling
-    expect([...sequenceReflected()]).toEqual([9, 8, 6, 2, 3, 5, 7, 4, 1, 0, 1])
+    expect([...sequenceReflected()]).toEqual([9, 8, 6, 2, 3, 5, 7, 4, 1, 0, 9])
 
     const nine = sequenceForward().slice(0, 9)
     const mirrored = sequenceReflected().slice(0, 9)
@@ -689,10 +689,11 @@ describe('horo — what a fold CARRIES, and where the carry ends', () => {
 
   it("5's carry {1,0} is exactly the sequence's own tail — the pivot folds onto the seam", () => {
     const five = carryRays().find((c) => c.step === 5)!
-    const tail = sequenceForward().slice(9) // the `0\1` that both spellings hold unchanged
+    const tail = sequenceForward().slice(9) // the forward `0\1`
     expect([...five.digits].sort()).toEqual([...tail].sort())
-    // and the reflection holds the same tail — it is the seam the mirror turns on, not a mapped part
-    expect([...sequenceReflected()].slice(9)).toEqual([...tail])
+    // the reflection holds the VOID (the pivot the mirror turns on) and maps the REOPENING like every
+    // other digit — throughVoid(1) = 9 — so the reflected line closes on the axis, not on the unit
+    expect([...sequenceReflected()].slice(9)).toEqual([0, 9])
   })
 
   it('and it does NOT seal all nine — the limit, stated rather than hidden', () => {
@@ -710,7 +711,7 @@ describe('horo — the rendered sequence cannot drift from the arithmetic', () =
     // the forward spelling: ascending `\`, descending `/`
     expect(md).toContain('forward     1\\2\\4\\8/7/5 · 3\\6\\9 · 0\\1')
     // and its reflection through the void — the same rule applied to throughVoid's image
-    expect(md).toContain('reflected   9/8/6/2\\3\\5 · 7/4/1 · 0\\1')
+    expect(md).toContain('reflected   9/8/6/2\\3\\5 · 7/4/1 · 0\\9')
   })
 
   it('every digit on the page comes from the functions, so a wrong one cannot be printed', () => {
