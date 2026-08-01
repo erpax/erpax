@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { PI, algebraCos, algebraSin, algebraSqrt, exactAbs, exactFloor, exactMax, exactMin, exactRound } from '@/algebra'
 /**
  * coherence -- the MATTER-twin: phase-alignment as a measurable number, and the
  * edge-safe rPPG extractor that turns a camera colour-trace into a pulse.

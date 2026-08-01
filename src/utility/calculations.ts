@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraFloatPow, algebraSqrt, exactFloor, exactMax, exactMin } from '@/algebra'
 /**
  * Accounting Calculations — shared math primitives (sum, percentage, etc.).
  *

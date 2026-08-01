@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMin } from '@/algebra'
 /**
  * receipt — the governance receipt IS a uuid. A trust layer splits trust into four primitives
  * (signed receipt + hash-linked audit chain + capability + identity); erpax wires all four through

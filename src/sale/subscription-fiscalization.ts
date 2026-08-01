@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor } from '@/algebra'
 /**
  * Subscription → СУПТО sale fiscalization — the recurring-billing adapter over
  * the generic revenue membrane (`fiscalize-revenue.ts`). A card-charged

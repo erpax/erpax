@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMin, exactRound, exactTrunc } from '@/algebra'
 /**
  * computed — speech derived from diamond state (the color+sound twin of css/computed).
  *

@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { PI, algebraCos, exactAbs } from '@/algebra'
 /**
  * interference -- two [[wave]] amplitudes combine by PHASE, not by classical sum.
  * For amplitudes a1,a2 with relative phase φ the intensity is

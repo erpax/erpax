@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * BNB rate sync — nightly (or on-demand) job that pulls the БНБ daily
  * fixing for every reporting-currency pair the BG-resident tenants need

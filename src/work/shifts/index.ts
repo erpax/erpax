@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactRound, exactTrunc } from '@/algebra'
 /**
  * Workshifts — the per-actor-day labour aggregate: the efficiency + wage AUTHORITY.
  *

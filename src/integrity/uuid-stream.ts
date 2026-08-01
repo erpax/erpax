@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * Infinite-within-finite spacetime — Slice IIIIIIIII (2026-05-11).
  *

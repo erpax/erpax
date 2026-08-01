@@ -1,6 +1,6 @@
+import { exactMax } from '@/algebra'
 /**
- * Test setup utility tests — isolated environments, parallel runnimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-ers, snapshots.
+ * Test setup utility tests — isolated environments, parallel runners, snapshots.
  *
  * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
  * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation

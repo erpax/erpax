@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * law/folder/word — every referenced word is a folder with code.
  *

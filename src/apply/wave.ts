@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil, exactMax, exactRound, exactTrunc } from '@/algebra'
 /**
  * apply/wave — coordinated self-balancing wave runner (ONE runner at a time).
  */

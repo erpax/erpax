@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * SAF-T Export Service — projects Payload collections onto the canonical
  * `SafTAuditFile` shape from `@/standards/saf-t`.

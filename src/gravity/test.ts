@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactCeil, exactFloor, exactMax, exactMaxOf, exactMin, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { massOf, massDistribution, heaviest, well, concentration, attract, stillCentre, isStillCentre } from '@/gravity'
 
@@ -10,7 +10,7 @@ describe('gravity: mass curvature computed on the live uuid-matrix', () => {
     expect(massOf(well().atom)).toBe(well().mass)
   })
   it('well().mass is the maximum mass over every node', () => {
-    const max = exactMax(...massDistribution().map((d) => d.mass))
+    const max = exactMaxOf(massDistribution().map((d) => d.mass))
     expect(well().mass).toBe(max)
   })
   it('massDistribution() is sorted by mass descending', () => {

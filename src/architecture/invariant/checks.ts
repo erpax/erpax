@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMin } from '@/algebra'
 /**
  * Architecture invariants — concrete checks across the 5 axes.
  *

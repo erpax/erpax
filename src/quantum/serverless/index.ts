@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * quantum/serverless — the COMPUTED PROOF that serverless IS the quantum host
  * and erpax IS the existence proof.

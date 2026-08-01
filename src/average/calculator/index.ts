@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * Arithmetic mean of a number array, zero-guarded (empty ⇒ 0, never NaN).
  * The shared collapse of the repeated `sum/length` reduce across the

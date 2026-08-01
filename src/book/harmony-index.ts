@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraFloatPow, algebraSqrt, exactMax, exactMin, exactRound } from '@/algebra'
 /**
  * book/harmony-index — book-of-books index harmony rollup (volume list · metrics).
  */

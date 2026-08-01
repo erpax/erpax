@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * cloudflare/capacity — the production HARDWARE, computed. erpax runs on the Cloudflare edge (Workers ·
  * D1 · R2 · Durable Objects), and that hardware has hard ceilings. This models them at production scale

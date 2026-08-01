@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraLog, exactAbs } from '@/algebra'
 /**
  * brain — the COMPUTED PROOF that erpax's matrix is the connectome organ: a
  * SMALL-WORLD network where any node reaches any other in a handful of hops,

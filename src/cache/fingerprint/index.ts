@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * cache/fingerprint — REUSE the whole-corpus scan, never re-derive it. The fold behind the AI-bill lever.
  *

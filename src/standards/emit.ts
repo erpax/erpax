@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMax } from '@/algebra'
 /**
  * standards/emit — the ONE shared, uuid-native index where the dissolved
  * standards vocabulary meets.

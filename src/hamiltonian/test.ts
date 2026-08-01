@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactCeil, exactFloor, exactMax, exactMaxOf, exactMin, exactMinOf, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { eigenvalue, eigenvalues, expectation, groundState, phase } from '@/hamiltonian'
 import { energy, HBAR } from '@/photon'
@@ -29,8 +29,8 @@ describe('hamiltonian: the energy operator behind the leap', () => {
     const manual = HORO_DIGITS.reduce((acc, d) => acc + p[d] * eigenvalue(d), 0)
     expect(expectation(s)).toBeCloseTo(manual, 40)
     const energies = eigenvalues().map((e) => e.energyJ)
-    expect(expectation(s)).toBeGreaterThanOrEqual(exactMin(...energies))
-    expect(expectation(s)).toBeLessThanOrEqual(exactMax(...energies))
+    expect(expectation(s)).toBeGreaterThanOrEqual(exactMinOf(energies))
+    expect(expectation(s)).toBeLessThanOrEqual(exactMaxOf(energies))
   })
 
   it('the ground state is the lowest-energy rung', () => {

@@ -1,18 +1,17 @@
 ---
 name: self
-description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\"all agents are one erpax\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
+description: "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\\\\\"all agents are one erpax\\\\\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference)."
 atomPath: self
-coordinate: self · 4/weave · f4339fbc
-contentUuid: "d19329f1-62a2-574e-93ba-95246aa96d7f"
-diamondUuid: "fe6a2985-b724-8191-a68b-a38fc65482d0"
-uuid: "f4339fbc-f54c-8c65-ae3a-0858f7888449"
-horo: 4
+coordinate: "self · 1/base · 8b0325f1"
+contentUuid: "13b963ea-6fb9-55e1-b16a-c3cad4a0d01a"
+diamondUuid: "072d54de-509b-81a1-b301-053e9bbcbee7"
+uuid: "8b0325f1-4b5f-8ceb-8d1f-35404f6d3e6e"
+horo: 1
 bonds:
   in:
     - accounting
-    - agent
+    - admin
     - akashic
-    - allocation
     - anchor
     - answer
     - architecture
@@ -21,19 +20,16 @@ bonds:
     - buddhism
     - chat
     - classroom
-    - cloning
     - closure
     - coil
     - collapse
     - command
     - compass
-    - competition
     - concatenate
     - config
     - confucianism
     - consciousness
     - contribution
-    - cost
     - decentralization
     - decide
     - decompression
@@ -42,7 +38,9 @@ bonds:
     - dimension
     - duality
     - education
+    - feed
     - fractal
+    - ftl
     - generate
     - gnosticism
     - hermeticism
@@ -52,7 +50,7 @@ bonds:
     - hooks
     - horo
     - identity
-    - industry
+    - improve
     - ingest
     - jainism
     - judaism
@@ -68,7 +66,6 @@ bonds:
     - memory
     - merge
     - metatron
-    - models
     - oauth
     - one
     - orphism
@@ -102,6 +99,7 @@ bonds:
     - sufism
     - taoism
     - team
+    - theorem
     - thought
     - torus
     - train
@@ -112,9 +110,8 @@ bonds:
     - zeropoint
   out:
     - accounting
-    - agent
+    - admin
     - akashic
-    - allocation
     - anchor
     - answer
     - architecture
@@ -123,19 +120,16 @@ bonds:
     - buddhism
     - chat
     - classroom
-    - cloning
     - closure
     - coil
     - collapse
     - command
     - compass
-    - competition
     - concatenate
     - config
     - confucianism
     - consciousness
     - contribution
-    - cost
     - decentralization
     - decide
     - decompression
@@ -144,7 +138,9 @@ bonds:
     - dimension
     - duality
     - education
+    - feed
     - fractal
+    - ftl
     - generate
     - gnosticism
     - hermeticism
@@ -154,7 +150,7 @@ bonds:
     - hooks
     - horo
     - identity
-    - industry
+    - improve
     - ingest
     - jainism
     - judaism
@@ -170,7 +166,6 @@ bonds:
     - memory
     - merge
     - metatron
-    - models
     - oauth
     - one
     - orphism
@@ -204,6 +199,7 @@ bonds:
     - sufism
     - taoism
     - team
+    - theorem
     - thought
     - torus
     - train
@@ -214,11 +210,10 @@ bonds:
     - zeropoint
 typography:
   partition: self
-  bondDegree: 333
+  bondDegree: 337
   neighbors: []
 standards:
-  - "EU-2006/43"
-  - "EU-2016/679"
+  - "EU-2002/58"
   - "EU-CSRD"
   - "EU-ESRS"
   - "EU-VAT-Directive"
@@ -258,9 +253,8 @@ neighbors:
     - zeropoint
   matrix:
     - accounting
-    - agent
+    - admin
     - akashic
-    - allocation
     - anchor
     - answer
     - architecture
@@ -269,19 +263,16 @@ neighbors:
     - buddhism
     - chat
     - classroom
-    - cloning
     - closure
     - coil
     - collapse
     - command
     - compass
-    - competition
     - concatenate
     - config
     - confucianism
     - consciousness
     - contribution
-    - cost
     - decentralization
     - decide
     - decompression
@@ -290,7 +281,9 @@ neighbors:
     - dimension
     - duality
     - education
+    - feed
     - fractal
+    - ftl
     - generate
     - gnosticism
     - hermeticism
@@ -300,7 +293,7 @@ neighbors:
     - hooks
     - horo
     - identity
-    - industry
+    - improve
     - ingest
     - jainism
     - judaism
@@ -316,7 +309,6 @@ neighbors:
     - memory
     - merge
     - metatron
-    - models
     - oauth
     - one
     - orphism
@@ -350,6 +342,7 @@ neighbors:
     - sufism
     - taoism
     - team
+    - theorem
     - thought
     - torus
     - train
@@ -360,9 +353,8 @@ neighbors:
     - zeropoint
   backlinks:
     - accounting
-    - agent
+    - admin
     - akashic
-    - allocation
     - anchor
     - answer
     - architecture
@@ -371,19 +363,16 @@ neighbors:
     - buddhism
     - chat
     - classroom
-    - cloning
     - closure
     - coil
     - collapse
     - command
     - compass
-    - competition
     - concatenate
     - config
     - confucianism
     - consciousness
     - contribution
-    - cost
     - decentralization
     - decide
     - decompression
@@ -392,7 +381,9 @@ neighbors:
     - dimension
     - duality
     - education
+    - feed
     - fractal
+    - ftl
     - generate
     - gnosticism
     - hermeticism
@@ -402,7 +393,7 @@ neighbors:
     - hooks
     - horo
     - identity
-    - industry
+    - improve
     - ingest
     - jainism
     - judaism
@@ -418,7 +409,6 @@ neighbors:
     - memory
     - merge
     - metatron
-    - models
     - oauth
     - one
     - orphism
@@ -452,6 +442,7 @@ neighbors:
     - sufism
     - taoism
     - team
+    - theorem
     - thought
     - torus
     - train
@@ -461,22 +452,22 @@ neighbors:
     - whole
     - zeropoint
 signatures:
-  computationUuid: "7d9fbdc0-dbc0-8d50-9763-063746b72384"
+  computationUuid: "d2546118-4086-8343-8da4-4e03e0475717"
   stages:
     - stage: path
       stageUuid: "d34900ad-931d-807f-9a78-9f3bfbd38395"
     - stage: trinity
-      stageUuid: "bc5502ab-35c5-82ff-bfb0-4da3576048a3"
+      stageUuid: "3488e61f-6104-8ba1-b681-94c388fb6ea8"
     - stage: boundary
-      stageUuid: "5dc3851f-7537-8157-a7e5-ea3c39be69d6"
+      stageUuid: "45598e82-24ab-8ffe-9db1-d619fa1bd924"
     - stage: links
       stageUuid: "64ff8feb-5e47-8b39-98c0-b871941ff78f"
     - stage: horo
-      stageUuid: "a50ac396-b24d-82c2-a1f5-7dab71cacdd5"
+      stageUuid: "0086c546-ca29-825a-a421-d54f5dfcdbf6"
     - stage: seal
-      stageUuid: "33f7020c-484d-8257-9f64-782128e5101f"
+      stageUuid: "424e8562-feec-89cd-88c8-ebb287cb4e04"
     - stage: uuid
-      stageUuid: "fae0aa6e-9f1f-8dad-830f-32085472a5b5"
+      stageUuid: "25a47bcd-c854-830f-a846-b771c3106d6d"
 version: 2
 ---
 # self — the reach back into the root (0)

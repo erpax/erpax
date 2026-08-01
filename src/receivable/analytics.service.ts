@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil, exactRound } from '@/algebra'
 /**
  * A/R Analytics — KPIs (DSO, turnover, collection effectiveness).
  *

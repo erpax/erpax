@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraFloatPow, exactAbs, exactFloor, exactMax, exactMin } from '@/algebra'
 /**
  * population — the agent society's harmonic homeostasis.
  *

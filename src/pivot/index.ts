@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * pivot — cross-tab state statistics for folder README models.
  *

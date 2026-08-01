@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * self/sufficient — self-sufficiency as a SECURITY property, made computational.
  *

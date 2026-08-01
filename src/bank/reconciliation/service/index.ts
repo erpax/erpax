@@ -1,6 +1,6 @@
+import { exactAbs, exactFloor, exactMax, exactRound } from '@/algebra'
 /**
- * Bank Reconciliation Service import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-— match imported bank statements to GL entries.
+ * Bank Reconciliation Service — match imported bank statements to GL entries.
  *
  * @standard ISO-20022 camt.053 bank-to-customer-statement
  * @standard ISO-13616-1:2020 iban

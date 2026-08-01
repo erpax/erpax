@@ -18,7 +18,10 @@ import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
-import { hostMathViolations } from '@/algebra'
+import {
+  exactMax,
+  hostMathViolations,
+} from '@/algebra'
 import { matrixCrackViolations } from '@/matrix'
 import { linearGapCount, linearLogicCount } from '@/quantum'
 import { engineeringConformance } from '@/engineering'

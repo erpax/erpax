@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMaxOf } from '@/algebra'
 /**
  * Harmony — consonance over the A432 anchor.
  *
@@ -81,7 +81,7 @@ export function bandHarmony(steps: readonly HoroStep[]): BandHarmony {
     consonant: consonantCount === intervals.length,
     intervals,
     consonantFraction: intervals.length ? consonantCount / intervals.length : 1,
-    worstTenney: tenneys.length ? exactMax(...tenneys) : 0,
+    worstTenney: tenneys.length ? exactMaxOf(tenneys) : 0,
     meanTenney: tenneys.length ? tenneys.reduce((a, b) => a + b, 0) / tenneys.length : 0,
   }
 }

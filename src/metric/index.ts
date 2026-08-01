@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactMax } from '@/algebra'
 /**
  * metric — quantomize: the corpus's metrics held at once in one coherent superposition, not scattered numbers.
  *

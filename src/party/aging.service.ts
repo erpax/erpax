@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * Generic aging calculator — single source of truth for the algorithm.
  *

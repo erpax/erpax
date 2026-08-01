@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactTrunc } from '@/algebra'
 /**
  * agent/intelligence — self-improving intelligence via measure · fold · seal · balance.
  *

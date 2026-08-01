@@ -1,4 +1,13 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import {
+  LN2,
+  exactAbs,
+  exactCeil,
+  exactFloor,
+  exactMax,
+  exactMin,
+  exactRound,
+  exactTrunc,
+} from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { surprisal, nats } from '@/surprisal'
 

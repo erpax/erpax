@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactCeil, exactFloor, exactMax, exactMaxOf, exactMin, exactMinOf, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { ANCHOR, harmonic, hourlyRate, reward, competencyWeight, apportion, distribute } from '@/allocation'
 
@@ -63,7 +63,7 @@ describe('allocation — who gets what, for what, as harmonic math', () => {
     // with an indivisible remainder, fairness is preserved to ±1 and still conserves
     const tight = distribute(601, six)
     expect(tight.reduce((s, x) => s + x, 0)).toBe(601)
-    expect(exactMax(...tight) - exactMin(...tight)).toBeLessThanOrEqual(1)
+    expect(exactMaxOf(tight) - exactMinOf(tight)).toBeLessThanOrEqual(1)
   })
 
   it('natural defaults exist for everything: empty work, all-unverified pot, missing competency', () => {

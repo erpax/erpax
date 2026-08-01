@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMaxOf } from '@/algebra'
 /**
  * A/R Aging Calculator — receivables-side wrapper over `@/party/aging`.
  *
@@ -100,8 +100,8 @@ export class ARAgingCalculator {
       avgDaysOutstanding,
       overdueInvoices: overdue.length,
       overduePercentage: open.length ? ((overdue.length / open.length) * 100).toFixed(2) : '0.00',
-      largestInvoice: open.length ? exactMax(...open.map((inv) => inv.balance)) : 0,
-      oldestInvoice: dsoSamples.length ? exactMax(...dsoSamples) : 0,
+      largestInvoice: open.length ? exactMaxOf(open.map((inv) => inv.balance)) : 0,
+      oldestInvoice: dsoSamples.length ? exactMaxOf(dsoSamples) : 0,
     }
   }
 }

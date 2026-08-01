@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactCeil, exactFloor, exactMax, exactMaxOf, exactMin, exactMinOf, exactRound, exactTrunc } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   cloudflareCost,
@@ -68,7 +68,7 @@ describe('cloudflare/cost — the billable surface, priced honestly', () => {
       expect(verdicts.has('subsidy')).toBe(true) // egress, priced below floor
       expect(verdicts.has('margin')).toBe(true) // requests etc., priced well above floor
       const ratios = r.map((d) => d.ratio).filter((x) => Number.isFinite(x))
-      expect(exactMax(...ratios) / exactMin(...ratios.filter((x) => x > 0))).toBeGreaterThan(5) // spread, not a match
+      expect(exactMaxOf(ratios) / exactMinOf(ratios.filter((x) => x > 0))).toBeGreaterThan(5) // spread, not a match
     })
 
     it('R2 egress is the SUBSIDY — priced below its transit floor, the dimension to exploit', () => {

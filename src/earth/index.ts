@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * earth — Earth realised by computing poles as a pyramid.
  *

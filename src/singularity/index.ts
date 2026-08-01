@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * singularity — the gravity WELL where the corpus collapses to one center, computed
  * on the live matrix. The maximally-entangled atom (max in-degree, [[gravity]]) is a

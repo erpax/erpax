@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * translations/collect — THE COLLECTOR (computed in the skill, not in scripts/).
  *

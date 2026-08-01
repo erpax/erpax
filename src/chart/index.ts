@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMaxOf, exactMinOf } from '@/algebra'
 /**
  * chart — a pure chart spec: a numeric [[series]] with its range, and a deterministic normalizer to
  * [0,1] (the scale). No rendering — just the spec as [[data]], so the [[quantum]]/chart facet can
@@ -16,7 +16,7 @@ export interface Chart {
 
 /** Build a chart from a numeric series (computes its range; empty ⇒ 0..0). */
 export const chart = (series: readonly number[]): Chart =>
-  series.length === 0 ? { series, min: 0, max: 0 } : { series, min: exactMin(...series), max: exactMax(...series) }
+  series.length === 0 ? { series, min: 0, max: 0 } : { series, min: exactMinOf(series), max: exactMaxOf(series) }
 
 /** Normalize a value to [0,1] within the chart's range (0 when flat). */
 export const normalize = (c: Chart, v: number): number => (c.max === c.min ? 0 : (v - c.min) / (c.max - c.min))

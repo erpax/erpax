@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactMax, exactRound } from '@/algebra'
 /**
  * Allowance for Doubtful Accounts — aging-bucket-based ECL estimator.
  *

@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactTrunc } from '@/algebra'
 /**
  * taichi — the double-torus flow of internal chi (气) through the dantian (丹田 cung),
  * COMPUTED as counter-rotating rodin coils on the horo ring.

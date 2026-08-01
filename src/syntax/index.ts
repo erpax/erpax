@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * syntax — what the GRAMMAR says a file contains. Not what a pattern guesses.
  *

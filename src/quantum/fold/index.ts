@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * quantum/fold — word ⊗ digit double fold (64-bit torus halves → 128-bit combined).
  *

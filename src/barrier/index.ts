@@ -1,4 +1,9 @@
-import { algebraExp } from '@/algebra'
+import {
+  LN2,
+  algebraExp,
+  algebraSinh,
+  algebraSqrt,
+} from '@/algebra'
 /**
  * barrier -- QUANTUM TUNNELLING (the word `tunnel` is taken — it is agriculture's
  * season-extension structure; this is the physics). A particle of energy E meets a

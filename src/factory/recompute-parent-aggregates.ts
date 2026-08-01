@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMaxOf, exactMinOf } from '@/algebra'
 /**
  * recompute-parent-aggregates — generic afterChange/afterDelete factory that
  * caches a parent document's denormalised SUM / COUNT / MIN / MAX columns from
@@ -115,9 +115,9 @@ function aggregateValue(spec: AggregateSpec, children: ReadonlyArray<unknown>): 
     case 'sum':
       return vals.reduce((a, b) => a + b, 0)
     case 'min':
-      return vals.length ? exactMin(...vals) : 0
+      return vals.length ? exactMinOf(vals) : 0
     case 'max':
-      return vals.length ? exactMax(...vals) : 0
+      return vals.length ? exactMaxOf(vals) : 0
   }
 }
 

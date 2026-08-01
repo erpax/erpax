@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraLog2, exactCeil, exactMax } from '@/algebra'
 /**
  * fold — the math of the folding: how the whole corpus collapses to ONE root, and how many folds it
  * takes. The fold is [[merge]] made a tree: pair the atoms, pair the pairs, up to the single Merkle

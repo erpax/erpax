@@ -1,3 +1,4 @@
+import { exactAbs, exactMaxOf, exactMinOf } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import {
   basis2D, superpose2D, probabilities2D, total2D, collapse2D, seal2D, uniform2D,
@@ -18,12 +19,12 @@ describe('quantum/dimension — the projection basis', () => {
     const vals = Object.values(p)
     expect(vals.length).toBeGreaterThan(0)
     // uniform means no cell is privileged — max and min agree to floating tolerance
-    expect(Math.max(...vals) - Math.min(...vals)).toBeLessThan(1e-9)
+    expect(exactMaxOf(vals) - exactMinOf(vals)).toBeLessThan(1e-9)
   })
 
   it('probabilities sum to one — a distribution, not a scatter', () => {
     const sum = Object.values(probabilities2D(uniform2D())).reduce((a, b) => a + b, 0)
-    expect(Math.abs(sum - 1)).toBeLessThan(1e-9)
+    expect(exactAbs(sum - 1)).toBeLessThan(1e-9)
   })
 
   it('collapse is deterministic in r — the same draw yields the same cell', () => {

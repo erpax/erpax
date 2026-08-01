@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { PI, algebraCos, algebraHypot, algebraSin, algebraSqrt, exactAbs } from '@/algebra'
 /**
  * platonic — the sphere is formed by the MOVEMENT of the Platonic solids' points, not by fiat.
  *

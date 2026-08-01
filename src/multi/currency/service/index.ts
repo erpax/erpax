@@ -1,6 +1,6 @@
+import { exactAbs, exactMaxOf, exactMinOf } from '@/algebra'
 /**
- * Multi-Currency GL Service — FX translation, gain/loss, rimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-evaluation.
+ * Multi-Currency GL Service — FX translation, gain/loss, revaluation.
  *
  * Per-tenant defaults derive from the tenant's country via
  * {@link getTenantDefaults} in `@/config/regional/defaults`. When no
@@ -458,8 +458,8 @@ class MultiCurrencyService {
 
     const avgRate = calculateAverage(rates.map((r) => r.rate));
     const rateValues = rates.map((r) => r.rate);
-    const highRate = rateValues.length > 0 ? exactMax(...rateValues) : 0;
-    const lowRate = rateValues.length > 0 ? exactMin(...rateValues) : 0;
+    const highRate = rateValues.length > 0 ? exactMaxOf(rateValues) : 0;
+    const lowRate = rateValues.length > 0 ? exactMinOf(rateValues) : 0;
 
     return {
       currencyPair: { from: fromCurrency, to: toCurrency },

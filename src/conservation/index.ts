@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * conservation -- the root of double-entry: nothing created or destroyed, only transformed.
  *

@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax, exactMin } from '@/algebra'
 /**
  * cli/help — grouped --help, domain blurbs, nearest-match suggestions.
  */

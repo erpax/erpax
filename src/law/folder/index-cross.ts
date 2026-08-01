@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * law/folder/index-cross — index.ts is the cross; wire bidirectionally; linear folds into quantum whole.
  *

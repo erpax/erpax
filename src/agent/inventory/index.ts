@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax } from '@/algebra'
 /**
  * agent/inventory — automatic coordinator task inventory (subagents · terminals).
  *

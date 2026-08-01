@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil, exactFloor } from '@/algebra'
 /**
  * FiscalPeriodResolver Service
  *

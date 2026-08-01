@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * bank/research — deep-research global banking via sealed chat waves (tokens=0).
  * Uses quantum/ftl; is not the FTL core.

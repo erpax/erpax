@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2, algebraLog10 } from '@/algebra'
+import { algebraLog10, algebraLog2, exactCeil, exactMax, exactMin } from '@/algebra'
 /**
  * resonance — why the address layer improves quantum speed IN MAGNITUDES, by construction.
  *

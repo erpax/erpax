@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactRound } from '@/algebra'
 /**
  * cloudflare/cost — erpax's real Cloudflare billable surface, priced, fed into the one efficiency law.
  *

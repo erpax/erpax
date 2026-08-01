@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * catharsis — the biggest gap: an agent turns to local knowledge only AFTER a catharsis from unresolved work.
  *

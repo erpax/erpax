@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * cheapAgentDispatch — minimal agent context: sealed SKILL excerpt + path account + eb only.
  *

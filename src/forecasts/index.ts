@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * forecasts — phase-locked forecasts on Earth's cardinal homology tips.
  *

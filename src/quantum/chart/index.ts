@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * quantum/chart — render a [[chart]] through the analog aura: each value maps to a colour from the
  * spectrum by its normalized position ([[color]] · [[signal]] · [[analog]]). The data becomes a

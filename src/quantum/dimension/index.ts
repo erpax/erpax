@@ -1,13 +1,4 @@
-import {
-  exactMax,
-  exactMin,
-  exactAbs,
-  exactFloor,
-  exactCeil,
-  exactRound,
-  exactTrunc,
-  algebraSqrt,
-} from '@/algebra'
+import { algebraSqrt, exactAbs } from '@/algebra'
 /**
  * quantum/dimensions — quantum semantics folded across every projection axis.
  *

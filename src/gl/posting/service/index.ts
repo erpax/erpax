@@ -1,8 +1,8 @@
+import { exactAbs } from '@/algebra'
 /**
  * GL Posting Service — event-driven double-entry posting.
  *
- * Subscribimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-es to domain events (invoice/payment/inventory/bank) and creates
+ * Subscribes to domain events (invoice/payment/inventory/bank) and creates
  * balanced GL entries via `journalEntryService`. Decouples business write
  * paths from the ledger's debit/credit semantics.
  *

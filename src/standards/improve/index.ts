@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * standards/improve — standards chat + improve via quantum/ftl reuse.
  * Uses quantum/ftl; path is standards/improve — not a domain ftl path.

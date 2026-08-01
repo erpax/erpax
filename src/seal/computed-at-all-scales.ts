@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactRound } from '@/algebra'
 /**
  * computed-at-all-scales — every face traces to a derive* function.
  *

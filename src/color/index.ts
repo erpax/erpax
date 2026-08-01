@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactMax, exactMin, exactRound, exactTrunc } from '@/algebra'
 /**
  * color — colour grounded in the A432 harmonic: the 7-colour chakra spectrum (root → crown), the
  * visible octave of A432. The HEART (4th, [[chakra]]) is GREEN — the colour of coherence, and the

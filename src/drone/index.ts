@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax } from '@/algebra'
 /**
  * drone — a scout that flies the content-uuid matrix in coordinated self-learning
  * to support the agents. Warfare tactics for peace ([[war]] · [[peace]]):

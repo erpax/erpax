@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraSqrt, exactAbs } from '@/algebra'
 /**
  * trading/quantum — quantum realtime trading across economic surfaces.
  *

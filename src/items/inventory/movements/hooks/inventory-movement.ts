@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * Inventory Movement Posting Hook — fires `inventory:adjusted` on
  * `InventoryMovements.status → 'posted'` for the movement kinds that

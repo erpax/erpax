@@ -1,8 +1,8 @@
+import { exactAbs } from '@/algebra'
 /**
  * Test Seed Factory — three-level seeds with transaction isolation + cleanup.
  *
- * Level 1: unit-test seeimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-ds (<500ms, minimal deps).
+ * Level 1: unit-test seeds (<500ms, minimal deps).
  * Level 2: integration-test seeds (realistic business data, ~2-5s).
  * Level 3: e2e-test seeds (complete business cycles, ~5-15s).
  *

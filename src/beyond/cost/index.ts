@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * Law 15 — Cost accountability per chain step.
  * Slice ZZZZZ. Every chain step records its compute/storage/network cost.

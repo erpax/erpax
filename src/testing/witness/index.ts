@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor } from '@/algebra'
 /**
  * testing/witness — the bounded-witness helper (ceccec.psg.bg proof taxonomy, made a tool).
  *

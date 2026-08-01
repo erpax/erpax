@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraFloatPow, exactMax } from '@/algebra'
 /**
  * Feature-coverage calculator — Conservation Law 62 made measurable.
  *

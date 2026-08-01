@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, exactImul } from '@/algebra'
+import { exactAbs, exactImul } from '@/algebra'
 /**
  * Auto-generated SVG hero images for product pages.
  *

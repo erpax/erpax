@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * quantum/train — the quantum facet of [[train]]: infinite agents train themselves, and it is
  * IMPOSSIBLE to exceed the device by adding them. To "train" is also to board the development train —

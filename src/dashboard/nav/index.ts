@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor } from '@/algebra'
 /**
  * dashboard/nav — THE NAVIGATION: a 7×6 DOUBLE-TORUS over the corpus.
  *

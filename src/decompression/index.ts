@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax, exactRound } from '@/algebra'
 /**
  * decompression — the matter-twin of the `decompression` skill: the TIME
  * dynamics of pay. [[allocation]] prices a contribution the instant the

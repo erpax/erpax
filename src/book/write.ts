@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * book/write — complete missing volumes: matter + proof + computed faces.
  * A missing book is form without matter; writing completes the trinity.

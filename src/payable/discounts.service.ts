@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraFloatPow, exactCeil, exactMax, exactRound } from '@/algebra'
 /**
  * Early Payment Discount Calculator — vendor discount programs.
  *

@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMax, exactMin } from '@/algebra'
 /**
  * cost — one efficiency law for every cost in the society. efficiency = output / cost, where the
  * cost may be of any kind (ai/money/energy/time/labor/entropy) and output is productivity (committed,

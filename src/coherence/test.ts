@@ -1,4 +1,14 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import {
+  PI,
+  algebraSin,
+  exactAbs,
+  exactCeil,
+  exactFloor,
+  exactMax,
+  exactMin,
+  exactRound,
+  exactTrunc,
+} from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { extractPulse, coherence, detrend } from '@/coherence'
 

@@ -1,6 +1,6 @@
+import { exactAbs, exactFloor } from '@/algebra'
 /**
- * Period-End Adjustment Servicimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-e — depreciation, accruals, deferrals, allocations.
+ * Period-End Adjustment Service — depreciation, accruals, deferrals, allocations.
  *
  * **Status (post tech-debt sweep)**: the calculation methods on this
  * service (`generateDepreciation`, `generateInterestAccruals`,

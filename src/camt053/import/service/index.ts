@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * camt.053 Import Service — parses an inbound ISO 20022 BankToCustomer
  * Statement XML into the canonical `Camt053Statement` shape.

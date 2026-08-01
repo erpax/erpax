@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * Law 16 — Carbon-aware execution. Slice ZZZZZ.
  * gCO2e per chain step → ESRS E1 / CSRD reporting.

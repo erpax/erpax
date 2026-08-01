@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMin } from '@/algebra'
 /**
  * MCP DRY cleaning — Slice BBBBBBB (2026-05-11).
  *

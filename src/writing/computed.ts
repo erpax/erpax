@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactRound } from '@/algebra'
 /**
  * computed — writing metrics derived from sealed coordinates (not prose templates).
  *

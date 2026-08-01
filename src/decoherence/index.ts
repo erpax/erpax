@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { LN2, algebraExp, algebraLog, exactMax } from '@/algebra'
 /**
  * decoherence -- how a [[superposition]] becomes classical. Coupled to an
  * environment, the off-diagonal coherences of the state decay as e^(−t/τ): the

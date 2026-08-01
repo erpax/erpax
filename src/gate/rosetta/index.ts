@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * gate/rosetta — the INCREMENTAL fold-first gate. The old `pnpm check` ran 11 LINEAR O(n) lanes, each
  * re-scanning the whole corpus every push; that cost is why the team resorted to `git push --no-verify`

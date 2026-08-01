@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactMaxOf } from '@/algebra'
 /**
  * PostCloseAnalytics Service
  *
@@ -521,7 +521,7 @@ export class PostCloseAnalytics {
       totalGroupRevenue,
       totalGroupProfit,
       segmentConcertation: {
-        topSegmentShare: (exactMax(...segmentShares) * 100),
+        topSegmentShare: (exactMaxOf(segmentShares) * 100),
         topThreeShare: (segmentShares.slice(0, 3).reduce((a, b) => a + b, 0) * 100),
         herfindahlIndex,
       },

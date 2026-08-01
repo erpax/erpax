@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * realtime — delivery of events as they arrive: an append-only log + a per-subscriber cursor.
  * `since(log, cursor)` is the live tail (everything after the cursor); `advance` moves a cursor

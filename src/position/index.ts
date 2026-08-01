@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactRound } from '@/algebra'
 /**
  * positions — the harmonic rate ladder, filled with job positions, where
  * government and society are one continuum.

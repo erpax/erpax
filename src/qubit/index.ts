@@ -1,4 +1,3 @@
-import { PI } from '@/algebra'
 /**
  * qubit — vortex circuit ⇒ measure ⇒ bit. Algebra only — no host Math.*.
  *

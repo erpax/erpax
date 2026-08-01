@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMin } from '@/algebra'
 /**
  * metatron -- PROOF that erpax's uuid-matrix is Metatron's Cube: the complete
  * pairwise binding of 12-around-1 folding to one center. Computed on the live

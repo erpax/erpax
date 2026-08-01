@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactTrunc } from '@/algebra'
 /**
  * Pack Items — the pack line, evolved from 200,993 rows of the etrima `pack_items`
  * table. One line = the units of one produced variant (`lot_variant`) packed into one

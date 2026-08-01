@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraLog2, exactMax } from '@/algebra'
 /**
  * localize — localization as the tamper-cost ⊕ proof FUSION reactor.
  *

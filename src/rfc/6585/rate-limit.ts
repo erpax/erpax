@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil, exactMax } from '@/algebra'
 /**
  * Simple in-memory rate limiter — `429 Too Many Requests` semantics.
  *

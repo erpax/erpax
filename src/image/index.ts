@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { PI, algebraCos, algebraSin, exactRound } from '@/algebra'
 /**
  * image — the DETERMINISTIC visual face of a content-uuid (and its animation). One more projection of the
  * self-decoding uuid, alongside [[color]] (the wave), [[signal]] (colour+sound), [[translation]] (meaning).

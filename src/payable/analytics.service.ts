@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil, exactRound } from '@/algebra'
 /**
  * A/P Analytics — vendor performance, DPO, spend analysis.
  *

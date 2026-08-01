@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraFloatPow, exactAbs, exactCeil, exactMax, exactRound } from '@/algebra'
 /**
  * Lease Service — canonical IFRS 16 / ASC 842 PV + amortisation arithmetic.
  *

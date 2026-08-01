@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * agentCostPolicy — agent dispatch cost law: derive-path vs manual-forge ratio,
  * horo wave context cap, lazy skill load by atomPath (never the 77MB bundle).

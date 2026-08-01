@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * taggings/counter — the `taggings_count` counter cache (port of the gem's
  * `counter_cache: true` on `Tagging.belongs_to :tag`). One source of truth for

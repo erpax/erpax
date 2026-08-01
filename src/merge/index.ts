@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax } from '@/algebra'
 /**
  * merge — the binary operation of the folded algebra, made real (was a `@generated` stub).
  *

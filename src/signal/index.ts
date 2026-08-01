@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * signal — the matter-twin of the `identity/signal` skill: a horo position
  * rendered as **color + sound** from the single A432 anchor.

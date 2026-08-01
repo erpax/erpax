@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactMin } from '@/algebra'
 /**
  * vocabulary — every word from the shared, standards-grounded scheme. Whatever
  * the language, the WORDS are written only from one vocabulary (./words.ts: the

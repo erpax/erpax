@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * Packs — the shipping carton, evolved from 118,716 rows of the etrima `packs`
  * table (the 20-year dispatch ledger). One pack = one packed unit of dispatch

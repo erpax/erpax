@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactRound, exactTrunc } from '@/algebra'
 /**
  * computed — shadcn + Payload admin CSS variables derived from diamond state.
  *

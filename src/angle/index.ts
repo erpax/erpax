@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactTrunc } from '@/algebra'
 /**
  * angle — the fold is a rotation, and its step is 60°. This is the angle the flat computations kept
  * missing: every fold-step is a turn.

@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor } from '@/algebra'
 /**
  * machine — the equipment node of the production-traceability spine, mined from the upstream source of
  * truth (etrima, 20 years of garment manufacturing: 101 machines · 172 machine_types · real prod data).

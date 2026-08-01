@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactCeil, exactMin } from '@/algebra'
 /**
  * ratchet-math — Landauer × horo ceiling from live violation counts.
  *

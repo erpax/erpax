@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax } from '@/algebra'
 /**
  * cross — the versioning cross: every entity change mints ONE content-addressed
  * leaf, read THREE ways.

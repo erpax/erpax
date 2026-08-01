@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor } from '@/algebra'
 /**
  * cli/progress-heartbeat — stderr tick so long CLI runs are not silent.
  */

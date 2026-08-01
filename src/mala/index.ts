@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin } from '@/algebra'
 /**
  * mala — the 108-STEP ROUND, the next math. 108 is the round count, and it is not arbitrary:
  *   108 = 1¹·2²·3³ = 1·4·27   (the first three naturals each raised to themselves)

@@ -1,3 +1,4 @@
+import { exactMax } from '@/algebra'
 import { describe, it, expect } from 'vitest'
 import { coalescer } from './index'
 
@@ -44,7 +45,7 @@ describe('quantum/coalesce — same content ⇒ one upstream call', () => {
       Array.from({ length: 200 }, (_, i) =>
         c.run({ q: i }, async () => {
           live++
-          maxLive = Math.max(maxLive, live)
+          maxLive = exactMax(maxLive, live)
           await new Promise((r) => setTimeout(r, 0))
           live--
           return i

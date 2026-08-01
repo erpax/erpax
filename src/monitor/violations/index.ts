@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMin } from '@/algebra'
 /**
  * monitor/violations — realtime corpus violation scan across all gate axes.
  *

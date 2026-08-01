@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, algebraLog2 } from '@/algebra'
+import { algebraLog2, exactMax, exactRound } from '@/algebra'
 /**
  * readme/entropy — gaps · seals · residual entropy in comparable units (eb).
  *

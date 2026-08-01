@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMinOf, exactRound } from '@/algebra'
 /**
  * agent/communication/realtime — unified push facade (direction bus · violation stream · sync).
  *
@@ -270,7 +270,7 @@ export function realtimeDoctorLine(): string {
   const ages = rows
     .map((r) => r.lastEventAgeSec)
     .filter((a): a is number => a !== null)
-  const minAge = ages.length ? exactMin(...ages) : null
+  const minAge = ages.length ? exactMinOf(ages) : null
   const ageLabel = minAge === null ? '—' : minAge === 0 ? '0s' : `${minAge}s`
   return `realtime channels ${n} · last event ${ageLabel} ago`
 }

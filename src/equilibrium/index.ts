@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * equilibrium -- DETAILED BALANCE: a system is at equilibrium when every forward
  * transition is exactly matched by its reverse — rate(i→j)·pᵢ = rate(j→i)·pⱼ for

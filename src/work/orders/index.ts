@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactRound, exactTrunc } from '@/algebra'
 /**
  * Workorders — the production EXECUTION leaf, evolved from 2.05M rows of the
  * etrima `work_orders` table (the 20-year manufacturing ledger).

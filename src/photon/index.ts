@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { PI, exactMax } from '@/algebra'
 /**
  * photon -- THE QUANTUM: the indivisible packet a [[leap]] emits or absorbs, its
  * energy locked to its frequency by Planck's relation E = hν (= ℏω = hc/λ). The

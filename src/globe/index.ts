@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc, PI } from '@/algebra'
+import { PI, algebraAsin, algebraCos, algebraSin, algebraSqrt, exactAbs, exactMin } from '@/algebra'
 /**
  * globe — the corpus is a sphere, not a flat wheel. The colour wheel, the spectrum column, and the
  * vortex were all PROJECTIONS of one globe, and projecting a sphere onto a plane is exactly where the

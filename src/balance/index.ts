@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * balance -- equilibrium made computational, and (this module's audit) the
  * model⊕collection distribution of the corpus itself.

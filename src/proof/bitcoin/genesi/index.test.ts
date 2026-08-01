@@ -1,4 +1,13 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import {
+  algebraLog2,
+  exactAbs,
+  exactCeil,
+  exactFloor,
+  exactMax,
+  exactMin,
+  exactRound,
+  exactTrunc,
+} from '@/algebra'
 /**
  * Empirical proof leg — the LARGEST proof-of-work blockchain decoded and verified
  * from first principles, on commodity hardware, at zero trust. This is the public

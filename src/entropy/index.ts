@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactRound } from '@/algebra'
 /**
  * entropy -- the FUEL, the disorder the whole ledger balances, COMPUTED live.
  *

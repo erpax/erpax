@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor, exactMax, exactMin } from '@/algebra'
 /**
  * Multi-search — one query across every collection.
  *

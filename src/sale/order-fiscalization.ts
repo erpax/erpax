@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * Order → СУПТО sale fiscalization — the ecommerce *adapter* over the generic
  * revenue membrane (`fiscalize-revenue.ts`). On `order:activated` (payment

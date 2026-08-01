@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraAcos, algebraCos, algebraSin, algebraSqrt, exactAbs, exactMax, exactMin } from '@/algebra'
 /**
  * conformal — changing perspective is a conformal map, and the invariant it preserves is the ANGLE.
  *

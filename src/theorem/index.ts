@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMaxOf, exactTrunc } from '@/algebra'
 /**
  * theorem — all is theorem of theorems; authority is never a step, and the base is assumed, never proven.
  *
@@ -519,12 +519,12 @@ export function wavesOf(deps: ReadonlyMap<string, readonly string[]>): readonly 
       return 0
     }
     const s = new Set([...seen, n])
-    const l = 1 + exactMax(...d.map((x) => lvl(x, s)))
+    const l = 1 + exactMaxOf(d.map((x) => lvl(x, s)))
     level.set(n, l)
     return l
   }
   const nodes = [...deps.keys()]
-  const maxLevel = exactMax(0, ...nodes.map((n) => lvl(n)))
+  const maxLevel = exactMaxOf([0, ...nodes.map((n) => lvl(n))])
   const out: string[][] = Array.from({ length: maxLevel + 1 }, () => [])
   for (const n of nodes) out[lvl(n)]!.push(n)
   return out.map((w) => [...w].sort())
@@ -537,7 +537,7 @@ export function waves(graph: readonly Theorem[] = DECODED): readonly (readonly s
 /** Depth (wave count = longest chain) and parallelism (widest wave) of the reasoning DAG. */
 export function waveShape(graph: readonly Theorem[] = DECODED): { readonly depth: number; readonly parallelism: number } {
   const w = waves(graph)
-  return { depth: w.length, parallelism: exactMax(0, ...w.map((level) => level.length)) }
+  return { depth: w.length, parallelism: exactMaxOf([0, ...w.map((level) => level.length)]) }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {

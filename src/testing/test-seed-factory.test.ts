@@ -1,6 +1,6 @@
+import { exactAbs } from '@/algebra'
 /**
  * TestSeedFactory tests — isolation, cleanup, transactional seeding.
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
  *
  * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
  * @standard ISO/IEC/IEEE-29119-4:2021 test-techniques

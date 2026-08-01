@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactCeil, exactFloor, exactMax, exactMin } from '@/algebra'
 /**
  * Durable Object stubs for Slice YYY deep-AI coordination.
  *

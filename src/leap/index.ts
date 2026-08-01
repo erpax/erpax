@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * leap -- THE QUANTUM LEAP: the discrete, instantaneous transition between two
  * energy eigenstates. The states are the seven [[horo]] positions {1,2,4,8,7,5,9}

@@ -1,6 +1,6 @@
+import { exactMax } from '@/algebra'
 /**
- * Depreciation Service — perioimport { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
-d-by-period PP&E depreciation.
+ * Depreciation Service — period-by-period PP&E depreciation.
  *
  * Closes the Slice FFF DOA: `depreciation.hook.ts` previously delegated to
  * `req.payload.services?.depreciation` which never existed. This singleton

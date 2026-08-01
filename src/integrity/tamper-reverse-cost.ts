@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { algebraLog2, exactRound } from '@/algebra'
 /**
  * Tamper-Reversibility-Cost — Conservation Law 55.
  *

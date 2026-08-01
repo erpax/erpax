@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs, exactCeil, exactFloor, exactMax, exactMin, exactMinOf, exactRound, exactTrunc } from '@/algebra'
 /**
  * analytics/max-tamper-cost — computed tests. Verifies the MIN law (the weakest
  * link caps the whole) and the commitment-width trap (bare ERPAX_DIGEST_BITS-wide
@@ -23,7 +23,7 @@ describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', 
   })
 
   it('the weakest link is the minimum binding cost across the levers', () => {
-    const min = exactMin(...r.levers.map((l) => l.bindingLog2))
+    const min = exactMinOf(r.levers.map((l) => l.bindingLog2))
     expect(r.weakest.bindingLog2).toBe(min)
   })
 

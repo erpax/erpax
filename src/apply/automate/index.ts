@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax, exactMin, exactRound } from '@/algebra'
 /**
  * apply/automate — one orchestration loop: inventory → clean → measure → ratchet → emit.
  *

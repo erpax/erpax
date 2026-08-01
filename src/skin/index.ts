@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactAbs } from '@/algebra'
 /**
  * skin — the COMPUTED PROOF that erpax's boundary is the integument organ: the
  * largest organ, a selectively-permeable BARRIER between inside and outside that

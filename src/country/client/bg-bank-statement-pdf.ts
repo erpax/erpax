@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactRound } from '@/algebra'
 /**
  * BG bank-statement PDF parser — fallback path when a tenant hasn't
  * onboarded PSD2 with their bank yet (or the bank doesn't expose a

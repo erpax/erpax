@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * subgraph — the per-message aura: resolve a query's RELATED skill subgraph (the
  * harmonic context to LOAD) and FLAG absent neighbours (the gap discovered by use).

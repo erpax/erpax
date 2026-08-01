@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactFloor } from '@/algebra'
 /**
  * BG public-holiday calendar — non-banking days the value-date /
  * settlement-date / due-date arithmetic must skip.

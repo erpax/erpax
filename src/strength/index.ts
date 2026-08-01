@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactAbs, exactFloor, exactCeil, exactRound, exactTrunc } from '@/algebra'
+import { exactMax } from '@/algebra'
 /**
  * strength — the DRY math: a DRY corpus has infinite strength. Strength (the schema.org sense — a
  * magnitude, a potency) is here the corpus's tamper-strength, and it is its [[dry]]-ness amplified by

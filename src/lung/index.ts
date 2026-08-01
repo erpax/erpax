@@ -1,4 +1,7 @@
-import { PI } from '@/algebra'
+import {
+  PI,
+  algebraCbrt,
+} from '@/algebra'
 /**
  * lung — the COMPUTED PROOF that erpax's gas-exchange surface is the respiratory
  * organ: it breathes. The [[breath]] atom names it directly — "the chat is the
