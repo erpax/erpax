@@ -259,6 +259,9 @@ export const NORMATIVE_FAMILIES: readonly RegExp[] = [
   /^IEC[\s-]/,
   /^RFC\s?\d+/i,
   /^NIST\b/,
+  // FIPS PUBs are NIST's normative federal series — the post-quantum standards (203/204/205) are
+  // published there and nowhere else, so a corpus that anchors to them needs the family declared.
+  /^FIPS\s?\d+/,
   /^W3C\b/,
   /^EN[\s-]?\d+/,
   /^SOX\b/,

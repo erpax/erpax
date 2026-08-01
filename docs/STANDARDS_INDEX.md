@@ -229,6 +229,10 @@ src/analytics/max-tamper-cost.ts:22: * @standard NIST SP 800-107r1 §5.1 — 2nd
 src/analytics/test.ts:7: * @standard ISO/IEC-29119:2022 software testing (computed invariants, full-aspect coverage)
 src/analytics/types.ts:14: * @standard ISO-4217:2015 currency-codes monetary-amount-display
 src/analytics/types.ts:15: * @standard ISO-8601-1:2019 date-time as-of-date
+src/anchor/claims/index.ts:29: * @standard FIPS 205 (SLH-DSA, 2024-08-13) — stateless hash-based signatures
+src/anchor/claims/index.ts:30: * @standard FIPS 204 (ML-DSA, 2024-08-13, with errata) — lattice signatures
+src/anchor/claims/index.ts:31: * @standard FIPS 203 (ML-KEM, 2024-08-13, with errata) — key encapsulation
+src/anchor/claims/index.ts:32: * @standard NIST SP 800-227 — recommendations for key encapsulation mechanisms
 src/anchor/index.ts:15: * @standard RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422
 src/anchor/index.ts:16: * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)
 src/anchor/index.ts:17: * @standard FIPS 205 (SLH-DSA, finalized 2024-08-13) — the primary root signature kind defined
