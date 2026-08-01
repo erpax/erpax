@@ -17899,6 +17899,10 @@ export interface Standard {
     | 'national'
     | 'other';
   /**
+   * ISO 3166-1 alpha-2 territory ("BG"), "EU", or "international". Derived by jurisdictionOf — a publisher (ISO/IEC/W3C/NIST) is never a jurisdiction. A tenant resident in X carries X + international, never X alone; a holding group carries the UNION across its members, never the intersection.
+   */
+  jurisdiction?: string | null;
+  /**
    * Issuing body — "IASB" / "ISO/TC 46" / "W3C TAG" / "ETSI ESI". Free-text; the family already implies the publisher in most cases.
    */
   publisher?: string | null;
@@ -26500,6 +26504,7 @@ export interface StandardsSelect<T extends boolean = true> {
   standardId?: T;
   title?: T;
   family?: T;
+  jurisdiction?: T;
   publisher?: T;
   version?: T;
   url?: T;

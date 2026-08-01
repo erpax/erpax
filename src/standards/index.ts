@@ -104,6 +104,21 @@ export default createAccountingCollection({
         { label: 'Other', value: 'other' },
       ],
     },
+    // The TERRITORY the instrument binds in — the join a tax-residence query needs. Derived by
+    // `jurisdictionOf` (src/standards/emit.ts) rather than typed: the registry declared it on 113
+    // of 255 rows and recorded `ISO` — a publisher — as a jurisdiction on 4 of them. A residence
+    // query returning "ISO" as a place would have an HR officer filing against a territory that
+    // does not exist. `international` is NOT "none": an ILO convention or an ISO guideline applies
+    // to every tenant, and collapsing the two is how a compliance list loses its labour obligations.
+    {
+      name: 'jurisdiction',
+      type: 'text',
+      index: true,
+      admin: {
+        description:
+          'ISO 3166-1 alpha-2 territory ("BG"), "EU", or "international". Derived by jurisdictionOf — a publisher (ISO/IEC/W3C/NIST) is never a jurisdiction. A tenant resident in X carries X + international, never X alone; a holding group carries the UNION across its members, never the intersection.',
+      },
+    },
     { name: 'publisher', type: 'text',
       admin: { description: 'Issuing body — "IASB" / "ISO/TC 46" / "W3C TAG" / "ETSI ESI". Free-text; the family already implies the publisher in most cases.' } },
     { name: 'version', type: 'text',

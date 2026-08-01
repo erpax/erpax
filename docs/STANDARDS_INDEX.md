@@ -2654,6 +2654,7 @@ src/standards/catalogue.ts:12: * @standard ISO-19011:2018 §6.4 audit-evidence (
 src/standards/emit.test.ts:2: * @standard ISO/IEC-29119:2022 software-testing (emit invariant coverage)
 src/standards/emit.ts:344: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
 src/standards/emit.ts:345: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
+src/standards/emit.ts:510: * @standard ISO 3166-1 alpha-2 — the territory codes this returns for a country
 src/standards/emit.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers, one uuid)
 src/standards/emit.ts:9: * @standard ISO-19011:2018 §6.4 audit-evidence (citations are the audit trail)
 src/standards/improve/test.ts:4: * @standard ISO-25010:2023 systems-and-software-quality

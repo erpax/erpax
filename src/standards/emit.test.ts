@@ -5,7 +5,8 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { matcherFor, buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
+import { STANDARDS_REGISTRY } from '@/standards/registry'
+import { matcherFor, jurisdictionOf, obligationsFor, consolidatedObligations, buildStandardsCatalogue, verifyStandardsCatalogue, citationsInComments } from './emit'
 
 // The parser mind — a second, independent reading of the same source, crossed with the regex `scan` because a
 // single mind breaks. A `@standard` banner is a citation only in a real COMMENT; the same sigil in a string
@@ -167,5 +168,67 @@ describe('matcherFor — a compliance catalogue must not over-report coverage', 
   it('real standards are untouched by the fix', () => {
     expect(re('EN-16931', 'en').test('@standard EN 16931 §BT-151')).toBe(true)
     expect(re('ISO-27002', 'iso').test('@standard ISO 27002 8.24')).toBe(true)
+  })
+})
+
+describe('jurisdiction — the tax-residence join', () => {
+  const rows = STANDARDS_REGISTRY as unknown as Array<{ id: string; family: string; title?: string; jurisdiction?: string }>
+
+  it('a PUBLISHER is never returned as a jurisdiction', () => {
+    // the registry records `ISO` as a jurisdiction on 4 rows. ISO is a body, not a territory —
+    // a residence query returning "ISO" as a place files against somewhere that does not exist
+    expect(jurisdictionOf({ id: 'ISO-30414', family: 'iso', jurisdiction: 'ISO' })).toBe('international')
+    for (const body of ['IEC', 'W3C', 'NIST', 'ETSI']) {
+      expect(jurisdictionOf({ id: 'X-1', family: 'other', jurisdiction: body })).toBe('international')
+    }
+  })
+
+  it('a national instrument names its own territory — READ, not assumed', () => {
+    expect(jurisdictionOf({ id: 'ZDDS', family: 'national', title: 'BG Value Added Tax Act' })).toBe('BG')
+    expect(jurisdictionOf({ id: 'ZKPO', family: 'national', title: 'BG Corporate Income Tax Act' })).toBe('BG')
+    // a hardcoded national→BG would mis-file the first non-Bulgarian statute added after this
+    expect(jurisdictionOf({ id: 'UStG', family: 'national', title: 'DE Umsatzsteuergesetz' })).toBe('DE')
+  })
+
+  it('every registry row resolves — none is left undefined', () => {
+    for (const r of rows) expect(jurisdictionOf(r).length).toBeGreaterThan(1)
+    expect(rows.filter((r) => jurisdictionOf(r) === 'BG').map((r) => r.id).sort()).toEqual(['Naredba-N-18', 'ZDDS', 'ZKPO'])
+  })
+
+  it('a residence carries its own territory PLUS international — never its territory alone', () => {
+    const bg = obligationsFor('BG', rows)
+    expect(bg).toContain('ZDDS')
+    expect(bg).toContain('ILO-C029') // international binds everywhere it is adopted
+    expect(bg).not.toContain('SOX') // and US statute does not reach a BG resident
+    // international is NOT a synonym for "none" — collapsing them loses the labour obligations
+    expect(bg.length).toBeGreaterThan(rows.filter((r) => jurisdictionOf(r) === 'BG').length)
+  })
+
+  it('a GROUP carries the UNION, never the intersection', () => {
+    const g = consolidatedObligations(['BG', 'US'], rows)
+    const most = Math.max(...Object.values(g.perResidence).map((v) => v.length))
+    expect(g.all.length).toBeGreaterThanOrEqual(most) // a superset of every member
+    expect(g.all).toContain('ZDDS') // BG-only, still carried by the group
+    expect(g.all).toContain('SOX') // US-only, still carried by the group
+    // and the attribution survives — a consolidated total nobody can trace is not auditable
+    expect(g.perResidence.BG).toContain('ZDDS')
+    expect(g.perResidence.US).not.toContain('ZDDS')
+    expect(g.uniqueToOne.length).toBeGreaterThan(0) // the group's single points of exposure
+  })
+
+  it('an empty group carries NOTHING, not everything', () => {
+    const g = consolidatedObligations([], rows)
+    expect(g.all).toEqual([])
+    expect(g.uniqueToOne).toEqual([]) // and one member has no "unique to one" — there is no other
+    expect(consolidatedObligations(['BG'], rows).uniqueToOne).toEqual([])
+  })
+
+  it('THE BOUNDARY: the mechanism covers any residence; the REGISTRY covers three', () => {
+    // structural coverage is total — any ISO 3166-1 code resolves and queries
+    expect(obligationsFor('JP', rows).length).toBeGreaterThan(0) // international still applies
+    // substantive coverage is not: no Japanese statute is loaded, so the JP answer is
+    // international-only. Reporting that as "covered" would be the fabricated-assurance failure
+    expect(obligationsFor('JP', rows)).toEqual(obligationsFor('international', rows))
+    expect(rows.filter((r) => /^[A-Z]{2}$/.test(jurisdictionOf(r)) && jurisdictionOf(r) !== 'EU').length).toBeLessThan(20)
   })
 })

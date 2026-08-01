@@ -481,3 +481,115 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (uncited.length) console.log(`  uncited registry rows: ${uncited.map((e) => e.id).join(', ')}`)
   }
 }
+
+/**
+ * The JURISDICTION a standard binds in — derived, then exposed on the Payload `standards`
+ * collection so "which obligations does this tax residence carry" is a query rather than a memo.
+ *
+ * The registry declares `jurisdiction` on 113 of 255 rows, and 4 of those declare **`ISO`**, which
+ * is a category error: ISO is a *publisher*, not a territory. ISO 30414 (human-capital reporting)
+ * binds nobody by geography — it is guidance, available everywhere. Left as-is, a residence query
+ * would return "ISO" as a place, and an HR officer would file against a jurisdiction that does not
+ * exist.
+ *
+ * So the field is COMPUTED from what the id and family already say, and the declared value is used
+ * only when it names a real territory. The mapping is small, visible, and arguable:
+ *
+ *   family `bg`                          → BG   (ZDDS · ZKPO · Наредба Н-18 · ЗСч)
+ *   id `EU-…` or family `eu`             → EU
+ *   SOX · SEC-… · ASC-… · FASB · USDA-…  → US
+ *   everything else                      → international
+ *
+ * **International is not a synonym for "none".** An ILO convention or an ISO guideline applies
+ * wherever it is adopted, and the residence query must return it for every tenant — a standard that
+ * binds everywhere is the opposite of a standard that binds nowhere, and collapsing the two is how
+ * a compliance list quietly loses its labour obligations.
+ *
+ * @invariant a publisher is never returned as a jurisdiction — `ISO` is corrected, never echoed
+ * @invariant every registry row resolves to a jurisdiction; none is left undefined
+ * @standard ISO 3166-1 alpha-2 — the territory codes this returns for a country
+ * @see ./SKILL.md -- ../country/context
+ */
+export type Jurisdiction = 'EU' | 'US' | 'BG' | 'international' | (string & {})
+
+/** Publishers the registry mistakenly recorded as jurisdictions — a body is not a territory. */
+const NOT_A_TERRITORY = new Set(['ISO', 'IEC', 'W3C', 'IETF', 'ETSI', 'NIST'])
+
+export function jurisdictionOf(std: { readonly id: string; readonly family: string; readonly title?: string; readonly jurisdiction?: string }): Jurisdiction {
+  const declared = std.jurisdiction?.trim()
+  if (declared && !NOT_A_TERRITORY.has(declared)) {
+    if (declared === 'BG' || declared === 'EU' || declared === 'US' || declared === 'international') return declared
+  }
+  // A `national` instrument names its own territory in its title — "BG Value Added Tax Act".
+  // READ it rather than assume: the three national rows today are Bulgarian, and a hardcoded
+  // `national → BG` would silently mis-file the first German or Greek statute added after this.
+  if (std.family === 'national') {
+    const alpha2 = /^([A-Z]{2})\s/.exec(std.title ?? '')
+    if (alpha2) return alpha2[1]!
+  }
+  if (std.family === 'bg') return 'BG'
+  if (std.family === 'eu' || /^EU-/i.test(std.id)) return 'EU'
+  if (/^(SOX|SEC-|ASC-|FASB|USDA-|FSMA)/i.test(std.id)) return 'US'
+  return 'international'
+}
+
+/**
+ * The obligations a tax residence carries: everything binding in that territory, plus everything
+ * binding internationally. A tenant resident in BG answers to BG statute AND to the international
+ * instruments — never to BG alone.
+ */
+export function obligationsFor(
+  residence: Jurisdiction,
+  registry: ReadonlyArray<{ readonly id: string; readonly family: string; readonly title?: string; readonly jurisdiction?: string }>,
+): readonly string[] {
+  return registry
+    .filter((s) => {
+      const j = jurisdictionOf(s)
+      return j === residence || j === 'international'
+    })
+    .map((s) => s.id)
+    .sort()
+}
+
+/**
+ * A GROUP's consolidated obligations — the union across every residence it operates in.
+ *
+ * A holding structure does not answer to the intersection of its subsidiaries' regimes; it answers
+ * to the **union**. A BG parent with a US subsidiary carries the Bulgarian statutes AND the US ones
+ * AND the international instruments — nothing is dropped because it binds only one member. Taking
+ * the intersection is the error that makes a group report look clean while a subsidiary is exposed.
+ *
+ * `perResidence` keeps the attribution, because a consolidated total that cannot be traced back to
+ * the entity that carries the obligation is not auditable ([[rules]]/audience — the reader who signs
+ * a group report needs to know which member the line came from).
+ *
+ * @invariant the consolidated set is a superset of every member's set — never an intersection
+ * @invariant an empty group carries nothing, not everything — no residence, no obligations
+ */
+export interface ConsolidatedObligations {
+  readonly residences: readonly Jurisdiction[]
+  readonly all: readonly string[]
+  readonly perResidence: Readonly<Record<string, readonly string[]>>
+  /** obligations arising from exactly one member — the group's single points of exposure */
+  readonly uniqueToOne: readonly string[]
+}
+
+export function consolidatedObligations(
+  residences: readonly Jurisdiction[],
+  registry: ReadonlyArray<{ readonly id: string; readonly family: string; readonly title?: string; readonly jurisdiction?: string }>,
+): ConsolidatedObligations {
+  const unique = [...new Set(residences)]
+  const perResidence: Record<string, readonly string[]> = {}
+  const carriers = new Map<string, number>()
+  for (const r of unique) {
+    const ids = obligationsFor(r, registry)
+    perResidence[r] = ids
+    for (const id of ids) carriers.set(id, (carriers.get(id) ?? 0) + 1)
+  }
+  return {
+    residences: unique,
+    all: [...carriers.keys()].sort(),
+    perResidence,
+    uniqueToOne: unique.length < 2 ? [] : [...carriers.entries()].filter(([, n]) => n === 1).map(([id]) => id).sort(),
+  }
+}

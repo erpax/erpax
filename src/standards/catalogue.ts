@@ -3313,7 +3313,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Country codes",
     "uuid": "33acc25b-1712-8bcd-88ff-6a849f536c4e",
     "color": "hsl(268 74% 57%)",
-    "count": 115,
+    "count": 116,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
