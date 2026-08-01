@@ -19,6 +19,8 @@ import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { mcpCollectionsConfig, mcpGlobalsConfig } from '@/plugins/mcp/seed'
 import { versionsPlugin } from '@/plugins/versions'
+import { trelloClientFromEnv } from '@/trello'
+import { trelloPlugin, TRELLO_SYNC } from '@/trello/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -432,6 +434,16 @@ export default buildConfig({
             singular: localeRecord('payload-mcp-api-keys.singular'),
           },
         }),
+    }),
+    // Trello entanglement — beside the MCP gateway because it is the same kind of thing: an
+    // external surface entered as an atom. INERT by default: TRELLO_SYNC is empty, so no field is
+    // injected and no hook is wired. Adding a mapping is a schema change and needs a migration in
+    // the same diff; without TRELLO_API_KEY + TRELLO_TOKEN there is no client, so the plugin stays
+    // field-only rather than half-wired. See `@/trello` and `@/trello/plugin`.
+    trelloPlugin({
+      collections: TRELLO_SYNC,
+      client: trelloClientFromEnv(),
+      enabled: TRELLO_SYNC.length > 0,
     }),
     // Make every collection taggable — one polymorphic `taggings` join +
     // a reverse `tags` join injected everywhere. Before uuidPlugin

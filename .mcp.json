@@ -6,6 +6,18 @@
       "headers": {
         "Authorization": "Bearer ${ERPAX_API_KEY}"
       }
+    },
+    "trello": {
+      "comment": "OFF by default (disabled: true). Scaffolded for an AGENT holding a conversation about a board — NOT for the sync path, which goes through the typed REST client in src/trello so write ordering, the rate-limit budget and typed errors stay observable. Enable by setting TRELLO_MCP_ENABLED=1 and flipping disabled to false. The token grants full Trello account access.",
+      "disabled": true,
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@delorenj/mcp-server-trello"],
+      "env": {
+        "TRELLO_API_KEY": "${TRELLO_API_KEY}",
+        "TRELLO_TOKEN": "${TRELLO_TOKEN}",
+        "TRELLO_BOARD_ID": "${TRELLO_BOARD_ID}"
+      }
     }
   }
 }
