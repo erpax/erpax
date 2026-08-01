@@ -2081,6 +2081,8 @@ src/pain002/import/service/test.ts:4: * @standard ISO-20022 pain.002 customer-pa
 src/party/aging.service.ts:9: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/party/identity/index.ts:32: * @standard ISO 3166-1 alpha-2 — the jurisdiction a tax id is unique within
 src/party/identity/index.ts:33: * @standard RFC 9562 §5.8 — the content-address
+src/patent/prior/index.ts:45: * @standard 35 U.S.C. §102 — novelty; a prior public disclosure anticipates
+src/patent/prior/index.ts:46: * @standard 35 U.S.C. §154 — patent term (20 years from filing; 17 from grant pre-1995)
 src/payable/aging.service.ts:11: * @standard ISO-8601-1:2019 date-time as-of-date
 src/payable/analytics.service.ts:7: * @standard ISO-4217:2015 currency-codes
 src/payable/analytics.service.ts:8: * @standard ISO-8601-1:2019 date-time
