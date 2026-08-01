@@ -263,3 +263,21 @@ export const SEQUENCE_PROVENANCE = {
     'earliest appearance in THESE repositories, computed from local bytes. Not a claim of first ' +
     'publication anywhere: the doubling cycle of (ℤ/9ℤ)* is classical mathematics.',
 } as const
+
+/* c8 ignore start -- CLI face: `pnpm erpax benchmark` */
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const { SESSION_2026_08_01 } = await import('../receipt/seed')
+  const { SESSION_SECURITY_2026_08_01 } = await import('./seed')
+  const board = scoreboard([measure(SESSION_2026_08_01, SESSION_SECURITY_2026_08_01)])
+  for (const spec of standardMetrics()) console.log(`${spec.name.padEnd(11)} ${spec.unit.padEnd(6)} ${spec.derivation}`)
+  console.log()
+  for (const r of board.rows) {
+    console.log(`${r.agent} · ${r.harness || 'unknown harness'}`)
+    console.log(`  precision  ${(r.precision * 100).toFixed(2)}%`)
+    console.log(`  efficiency ${(r.efficiency * 100).toFixed(1)}%`)
+    console.log(`  security   ${r.security.clean ? 'clean' : `NOT CLEAN — ${r.security.kinds.join(' · ')} (weighted ${r.security.weighted})`}`)
+  }
+  console.log(`\ncomparable: ${board.comparable}\n${board.caveat}`)
+  console.log(`\nprovenance — ${SEQUENCE_PROVENANCE.repo} ${SEQUENCE_PROVENANCE.commit} ${SEQUENCE_PROVENANCE.date}`)
+}
+/* c8 ignore stop */

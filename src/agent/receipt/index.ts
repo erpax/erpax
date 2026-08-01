@@ -268,3 +268,17 @@ export function assertHonest(s: SessionReceipt, floor: number): void {
     )
   }
 }
+
+/* c8 ignore start -- CLI face: `pnpm erpax receipt` */
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const { SESSION_2026_08_01 } = await import('./seed')
+  const v = receiptOf(SESSION_2026_08_01)
+  const c = withoutCorpus(SESSION_2026_08_01)
+  console.log(`agent ${v.agent} · harness ${v.harness || 'unknown'}`)
+  console.log(`  precision  ${(v.honesty * 100).toFixed(2)}%   (${v.corrected} of ${v.claims} claims corrected)`)
+  console.log(`  efficiency ${(v.efficiency * 100).toFixed(1)}%   commits ${v.commits} · lapses ${v.lapses}`)
+  console.log(`  counterfactual — with erpax ${c.withCorpus.found} found / ${c.withCorpus.shipped} shipped`)
+  console.log(`                   without    ${c.withoutCorpus.found} found / ${c.withoutCorpus.shipped} shipped`)
+  console.log(`\n${trainingPrompt(SESSION_2026_08_01)}`)
+}
+/* c8 ignore stop */

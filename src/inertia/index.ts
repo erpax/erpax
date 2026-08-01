@@ -204,3 +204,10 @@ export function render(turn: Turn, tolerance: number): readonly string[] {
     ),
   ]
 }
+
+/* c8 ignore start -- CLI face: `pnpm erpax inertia [mass] [speed] [radius] [gTolerance]` */
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const [mass = '1000', speed = '300', radius = '1', tol = '9'] = process.argv.slice(2)
+  console.log(render({ mass: Number(mass), speed: Number(speed), radius: Number(radius) }, Number(tol)).join('\n'))
+}
+/* c8 ignore stop */

@@ -195,3 +195,13 @@ export function render(v: HandoffVerdict): string {
       : ['', `  ${v.deviations.length} recorded deviation(s) — built differently, on purpose:`, ...v.deviations.map((d) => `    line ${d.line}  ${d.specified} → ${d.built}  (${d.because})`)]
   return [head, ...gaps, ...dev].join('\n')
 }
+
+/* c8 ignore start -- CLI face: `pnpm erpax handoff` */
+if (import.meta.url === `file://${process.argv[1]}`) {
+  // dynamic, so the seed's value import can never form a load-time ring with this module
+  const { HANDOFF_SPEC } = await import('./seed')
+  const verdict = checkSpec(HANDOFF_SPEC, process.cwd())
+  console.log(render(verdict))
+  process.exitCode = verdict.unmet.length === 0 ? 0 : 1
+}
+/* c8 ignore stop */

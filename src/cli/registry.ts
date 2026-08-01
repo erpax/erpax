@@ -23,6 +23,8 @@ const ESLINT_SRC =
 const VITEST =
   'cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000 --import=./src/css/load-hook.mjs" vitest run --config ./vitest.config.mts'
 
+import { derivedCliFaces, mergeDerivedFaces } from './face'
+
 /** Canonical on-disk aura scanner (hooks + package surface must agree). */
 export const AURA_SCAN_PATH = 'src/aura/scan.mjs'
 
@@ -303,8 +305,8 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     },
   },
   quantum: {
-    default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },
-    status: { desc: 'Superposition pending paths, last collapse, bond reciprocity', cmd: `${TSX} src/quantum/status.ts` },
+    default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status/index.ts` },
+    status: { desc: 'Superposition pending paths, last collapse, bond reciprocity', cmd: `${TSX} src/quantum/status/index.ts` },
     seal: { desc: 'Seal linear gaps (entanglement priority)', cmd: `${TSX} src/quantum/fold/index.ts --seal` },
     fold: {
       desc: 'Fold linear segments into quantum surfaces (--linear · --apply)',
@@ -380,8 +382,64 @@ export const LEGACY_ALIASES: Record<string, string> = {
   check: 'erpax gate',
 }
 
+/**
+ * Faces DERIVED from the tree, computed once per process.
+ *
+ * The hand-written map above is the EXPLICIT surface — aliases, flags, non-default runners. This is
+ * the implicit one: every atom whose `index.ts` carries a CLI guard is a command at its own atom
+ * path, found by parsing rather than by remembering. 336 atoms already carried a guard while four
+ * were registered, which is the measurement that made this necessary: hand-registration does not
+ * fail loudly, it just leaves things unreachable.
+ *
+ * Lazily computed and cached — the walk parses every index.ts, and a CLI must not pay that twice.
+ *
+ * @invariant an explicitly registered domain always wins; derivation only fills a gap
+ */
+let derivedCache: Record<string, CliDomain> | undefined
+
+export function derivedDomains(cwd: string = process.cwd()): Record<string, CliDomain> {
+  if (derivedCache) return derivedCache
+  const faces = derivedCliFaces(cwd)
+  const make = (face: { atomPath: string; file: string; desc: string }): CliDomain => ({
+    default: {
+      desc: face.desc || `Run the ${face.atomPath} atom`,
+      cmd: `${TSX} ${face.file}`,
+    },
+  })
+  const byPath = mergeDerivedFaces<CliDomain>({}, faces, make)
+
+  // LEAF ALIASES — `erpax receipt` for `agent/receipt`, the way a search resolves a unique hit.
+  // Registered ONLY when the leaf is unambiguous across the whole tree and no explicit domain
+  // already owns the word. An ambiguous leaf gets no alias at all: guessing between two atoms is
+  // exactly the judgment-without-measurement the constitution forbids, and the full path always
+  // works, so the cost of refusing is one extra segment rather than a wrong command.
+  const leafCount = new Map<string, number>()
+  for (const face of faces) {
+    const leaf = face.atomPath.split('/').at(-1) ?? face.atomPath
+    leafCount.set(leaf, (leafCount.get(leaf) ?? 0) + 1)
+  }
+  for (const face of faces) {
+    const leaf = face.atomPath.split('/').at(-1) ?? face.atomPath
+    if (leaf === face.atomPath) continue // already registered under its own name
+    if (leafCount.get(leaf) !== 1) continue // ambiguous — refuse rather than pick
+    if (CLI_REGISTRY[leaf] !== undefined || byPath[leaf] !== undefined) continue // explicit wins
+    byPath[leaf] = make(face)
+  }
+
+  derivedCache = byPath
+  return derivedCache
+}
+
+/** Every atom path a leaf resolves to — what an ambiguous word would have to choose between. */
+export function leafCandidates(leaf: string, cwd: string = process.cwd()): readonly string[] {
+  return derivedCliFaces(cwd)
+    .map((f) => f.atomPath)
+    .filter((p) => (p.split('/').at(-1) ?? p) === leaf)
+    .sort()
+}
+
 export function resolveAction(domain: string, action?: string): CliAction | undefined {
-  const d = CLI_REGISTRY[domain]
+  const d = CLI_REGISTRY[domain] ?? derivedDomains()[domain]
   if (!d) return undefined
   if (action) {
     const key = action.startsWith('--') ? action.slice(2) : action
@@ -393,4 +451,9 @@ export function resolveAction(domain: string, action?: string): CliAction | unde
 
 export function listDomains(): string[] {
   return Object.keys(CLI_REGISTRY).sort()
+}
+
+/** Every command that exists — hand-written and derived, the surface a user can actually reach. */
+export function listAllDomains(cwd: string = process.cwd()): string[] {
+  return [...new Set([...Object.keys(CLI_REGISTRY), ...Object.keys(derivedDomains(cwd))])].sort()
 }
