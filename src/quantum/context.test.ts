@@ -12,7 +12,7 @@ import { ALWAYS_QUANTUM, quantumModeDefault } from '@/quantum/bindings'
 import {
   __resetDirectionBusForTests,
   publishDirection,
-} from '@/quantum/entanglement/direction-bus'
+} from '@/quantum/entanglement/direction'
 
 describe('quantum/bindings — always quantum law', () => {
   it('ALWAYS_QUANTUM is true and quantumModeDefault holds', () => {
