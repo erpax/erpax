@@ -39,7 +39,9 @@ describe('plugins/mcp/seed — self-computable Worker surface', () => {
     expect(cfg.invoices).toEqual({ enabled: true })
     expect(cfg.users).toEqual({ enabled: true })
     expect(cfg.pages).toBeUndefined()
-    expect(cfg.missing).toBeUndefined()
+    // 'missing' is deliberately NOT a CollectionSlug — the point of the assertion is that an
+    // unregistered slug never appears, so it must be read off the record, not off the type.
+    expect((cfg as Record<string, unknown>).missing).toBeUndefined()
   })
 
   it('full mode enables every registered slug; globals stay seed-derived', () => {

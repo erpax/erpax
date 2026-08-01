@@ -33,9 +33,12 @@ export const MCP_GATEWAY_SEED_SLUGS = [
 
 export type McpSeedMode = 'seed' | 'full'
 
+/** The env face this atom reads — narrow and readonly, so a test may pass just the keys it sets. */
+export type McpEnv = Readonly<Record<string, string | undefined>>
+
 /** Resolve seed vs full from env — production defaults to seed (Worker-safe). */
 export function mcpSeedMode(
-  env: NodeJS.ProcessEnv = process.env,
+  env: McpEnv = process.env,
 ): McpSeedMode {
   const raw = env.ERPAX_MCP_SEED?.trim().toLowerCase()
   if (raw === '0' || raw === 'full' || raw === 'false') return 'full'
@@ -46,7 +49,7 @@ export function mcpSeedMode(
 }
 
 /** Extra slugs from `ERPAX_MCP_EXTRA=a,b,c` — still seed-driven, not code churn. */
-export function mcpExtraSlugs(env: NodeJS.ProcessEnv = process.env): readonly string[] {
+export function mcpExtraSlugs(env: McpEnv = process.env): readonly string[] {
   const raw = env.ERPAX_MCP_EXTRA?.trim()
   if (!raw) return []
   return raw
@@ -61,7 +64,7 @@ export function mcpExtraSlugs(env: NodeJS.ProcessEnv = process.env): readonly st
  * Opt into CMS MCP surface via `ERPAX_MCP_EXTRA` or `ERPAX_MCP_INCLUDE_CMS=1`.
  */
 export function mcpSeedCollectionSlugs(
-  env: NodeJS.ProcessEnv = process.env,
+  env: McpEnv = process.env,
 ): readonly CollectionSlug[] {
   const includeCms =
     env.ERPAX_MCP_INCLUDE_CMS === '1' || env.ERPAX_MCP_INCLUDE_CMS === 'true'
@@ -89,7 +92,7 @@ export function mcpSeedGlobalSlugs(): readonly GlobalSlug[] {
  */
 export function mcpCollectionsConfig(
   registered: ReadonlyArray<{ readonly slug: string }>,
-  env: NodeJS.ProcessEnv = process.env,
+  env: McpEnv = process.env,
 ): Partial<Record<CollectionSlug, { enabled: true }>> {
   const registeredSet = new Set(registered.map((c) => c.slug))
   const mode = mcpSeedMode(env)
@@ -103,7 +106,7 @@ export function mcpCollectionsConfig(
 }
 
 export function mcpGlobalsConfig(
-  _env: NodeJS.ProcessEnv = process.env,
+  _env: McpEnv = process.env,
 ): Partial<Record<GlobalSlug, { enabled: true }>> {
   // Full and seed share the CMS global identity — never re-list header/footer.
   return Object.fromEntries(
