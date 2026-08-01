@@ -27,6 +27,11 @@ export const GATE_LANES: readonly (readonly [string, string])[] = [
   // gate fails closed. Pure matrix recomputation (fast, no boot); forging past it means inverting the
   // 4-key fold (the 2^128 wall). Was proven only in a vitest test — now a lane that cannot be skipped.
   ['seal', 'pnpm erpax seal'],
+  // Security INTEGRITY — every claim erpax makes about its own security, typed as a verdict (measured)
+  // or a compass (open, with an owner). Fails closed on a verdict whose own proof is red: that is a
+  // false statement about security, and there is no acceptable count of those. The RATIO is reported
+  // and never ratcheted — forcing it upward would only push honest compasses into dishonest verdicts.
+  ['integrity', 'tsx src/convention/discern/corpus/index.ts'],
   ['readme:check', 'pnpm erpax readme check'],
   ['payload-types', 'bash scripts/payload-verify-types.sh'],
   ['lint', 'pnpm erpax lint'],

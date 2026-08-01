@@ -34,7 +34,7 @@
  */
 import { createHmac } from 'node:crypto'
 
-import type { Claim } from '@/convention/discern'
+import type { Claim, EvidenceSource } from '@/convention/discern'
 
 import { seedAddress, type Admission } from '../source'
 
@@ -163,4 +163,14 @@ export const SURFACES: readonly string[] = [
   'threshold.composition',
   'threshold.foldAddsNoEntropy',
   'threshold.mOfN',
+]
+
+
+/** What the proof exercises, declared beside the claims so the corpus metric never imports a test. */
+export const EVIDENCE: readonly EvidenceSource[] = [
+  {
+    measuredBy: 'src/entropy/threshold/test.ts',
+    exercised: 'refused two shares from one seed; composed three independent draws additively',
+    wouldFailIf: 'assertIndependentSources accepted shares sharing a source address',
+  },
 ]

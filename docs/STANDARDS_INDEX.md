@@ -799,6 +799,7 @@ src/consolidation/eliminations/index.ts:13: * @standard ISO-8601-1:2019 date-tim
 src/constitution/index.ts:20: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
 src/convention/addressed/index.ts:29: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content
 src/convention/complete/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/discern/corpus/index.ts:38: * @standard ISO/IEC 25010:2023 §5.5 — testability: a claim is measured or it is not made
 src/convention/discern/index.ts:29: * @standard ISO/IEC 25010:2023 §5.5 — testability: a claim that cannot be exercised cannot be met
 src/convention/discern/index.ts:30: * @standard ISO-19011:2018 §6.4 — audit evidence: sufficient and appropriate, not merely present
 src/convention/dry/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words

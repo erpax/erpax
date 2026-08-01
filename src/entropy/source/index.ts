@@ -37,7 +37,7 @@
  */
 import { createHmac, createHash, timingSafeEqual } from 'node:crypto'
 
-import type { Claim } from '@/convention/discern'
+import type { Claim, EvidenceSource } from '@/convention/discern'
 
 /** The floor. 256 bits is the least a symmetric root may be born from. */
 export const MIN_SEED_BYTES = 32
@@ -172,3 +172,13 @@ export const CLAIMS: readonly Claim[] = [
 ]
 
 export const SURFACES: readonly string[] = ['entropy.source', 'entropy.fleet', 'entropy.hwKeyProvisioning']
+
+
+/** What the proof exercises, declared beside the claims so the corpus metric never imports a test. */
+export const EVIDENCE: readonly EvidenceSource[] = [
+  {
+    measuredBy: 'src/entropy/source/test.ts',
+    exercised: 'admitted an attested seed; refused a forged tag and a cross-device repeat',
+    wouldFailIf: 'admit() accepted a tag the hardware key does not produce',
+  },
+]

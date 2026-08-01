@@ -2,7 +2,7 @@ import { randomBytes } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
-import { classify, manifest, verdictHolds, type MeasureRun } from '@/convention/discern'
+import { classify, manifest, runFrom, verdictHolds, type MeasureRun } from '@/convention/discern'
 import { commentsOf } from '@/syntax'
 
 import {
@@ -11,6 +11,7 @@ import {
   CLAIMS,
   deriveFromAdmitted,
   EntropyRefused,
+  EVIDENCE,
   memoryRegistry,
   MIN_SEED_BYTES,
   seedAddress,
@@ -111,14 +112,8 @@ function readFileSyncSafe(p: string): string {
 }
 
 describe('entropy/source — the claims, typed by discern', () => {
-  const run: MeasureRun = (m) =>
-    m === 'src/entropy/source/test.ts'
-      ? {
-          exercised: 'admitted an attested seed; refused a forged tag and a cross-device repeat',
-          wouldFailIf: 'admit() accepted a tag the hardware key does not produce',
-          passed: true,
-        }
-      : undefined
+  // the prose is the atom's, exported beside its claims; this supplies only the outcome
+  const run: MeasureRun = runFrom(EVIDENCE, () => true)
 
   it('source and fleet are VERDICTS; hwKeyProvisioning is an honest COMPASS', () => {
     const m = manifest('entropy/source', CLAIMS, SURFACES)

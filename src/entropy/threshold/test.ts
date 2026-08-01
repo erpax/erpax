@@ -2,7 +2,7 @@ import { randomBytes } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
-import { classify, manifest, verdictHolds, type MeasureRun } from '@/convention/discern'
+import { classify, manifest, runFrom, verdictHolds, type MeasureRun } from '@/convention/discern'
 
 import { admit, attest, memoryRegistry, MIN_SEED_BYTES } from '../source'
 
@@ -14,6 +14,7 @@ import {
   composeAll,
   composedStrengthBits,
   ENTROPY_ADDED_BY_FOLD,
+  EVIDENCE,
   shareFrom,
   SURFACES,
   ThresholdRefused,
@@ -96,14 +97,8 @@ describe('entropy/threshold — n keys are strong only when they are n independe
 })
 
 describe('entropy/threshold — the claims, typed by discern', () => {
-  const run: MeasureRun = (m) =>
-    m === 'src/entropy/threshold/test.ts'
-      ? {
-          exercised: 'refused two shares from one seed; composed three independent draws additively',
-          wouldFailIf: 'assertIndependentSources accepted shares sharing a source address',
-          passed: true,
-        }
-      : undefined
+  // the prose is the atom's, exported beside its claims; this supplies only the outcome
+  const run: MeasureRun = runFrom(EVIDENCE, () => true)
 
   it('independence, composition and the zero-entropy fold are VERDICTS; m-of-n is a COMPASS', () => {
     const m = manifest('entropy/threshold', CLAIMS, SURFACES)

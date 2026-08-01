@@ -32,7 +32,7 @@
  * @standard NIST SP 800-227 — recommendations for key encapsulation mechanisms
  * @see ./SKILL.md -- ../surface -- ../../convention/discern
  */
-import type { Claim } from '@/convention/discern'
+import type { Claim, EvidenceSource } from '@/convention/discern'
 
 /** A standard pinned to the revision a reviewer must actually open. */
 export interface PinnedStandard {
@@ -152,3 +152,17 @@ export const CLAIMS: readonly Claim[] = [
 ]
 
 export const SURFACES: readonly string[] = CLAIMS.map((c) => c.property)
+
+/** What each proof exercises, declared here so the corpus metric reads it without importing a test. */
+export const EVIDENCE: readonly EvidenceSource[] = [
+  {
+    measuredBy: 'src/anchor/surface/test.ts',
+    exercised: 'a channel without ML-KEM, and a root without a PQ signature, both raised gaps',
+    wouldFailIf: 'manifestGaps accepted an undeclared or bare-status surface',
+  },
+  {
+    measuredBy: 'src/anchor/claims/test.ts',
+    exercised: 'rejected a bare citation and an imminent-break claim; every non-final standard resolved to a compass',
+    wouldFailIf: 'citationIsPinned accepted "FIPS 203" without its revision',
+  },
+]

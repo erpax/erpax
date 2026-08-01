@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest'
 
 import { judge, type Change } from '@/constitution'
-import { classify, integrity, manifest, verdictHolds, type MeasureRun } from '@/convention/discern'
+import { classify, integrity, manifest, runFrom, verdictHolds, type MeasureRun } from '@/convention/discern'
 
 import {
   assertThreatClaim,
   citationIsPinned,
   CLAIMS,
+  EVIDENCE,
   OverClaim,
   PINNED,
   pinned,
@@ -14,24 +15,11 @@ import {
   THREAT_MODEL,
 } from './index'
 
-/** Only the tests that genuinely exercise something report evidence. The rest do not exist. */
-const run: MeasureRun = (m) => {
-  if (m === 'src/anchor/surface/test.ts') {
-    return {
-      exercised: 'a channel without ML-KEM, and a root without a PQ signature, both raised gaps',
-      wouldFailIf: 'manifestGaps accepted an undeclared or bare-status surface',
-      passed: true,
-    }
-  }
-  if (m === 'src/anchor/claims/test.ts') {
-    return {
-      exercised: 'rejected a bare citation and an imminent-break claim',
-      wouldFailIf: 'citationIsPinned accepted "FIPS 203" without its revision',
-      passed: true,
-    }
-  }
-  return undefined
-}
+/**
+ * The evidence PROSE is the atom's, exported beside its claims — this only supplies the outcome.
+ * Writing those sentences here as well would be the duplication that hides a third divergence.
+ */
+const run: MeasureRun = runFrom(EVIDENCE, (m) => (EVIDENCE.some((e) => e.measuredBy === m) ? true : undefined))
 
 describe('anchor/claims — pinned standards, calibrated threat', () => {
   it('a BARE citation does not identify a document — FIPS 203 and 204 carry errata', () => {

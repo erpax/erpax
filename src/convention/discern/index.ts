@@ -112,6 +112,40 @@ export interface Evidence {
 /** A run of the test named by a verdict. `undefined` means the test does not exist. */
 export type MeasureRun = (measuredBy: string) => Evidence | undefined
 
+/**
+ * An atom's declaration of what its proof exercises — exported beside its CLAIMS, not buried in the
+ * test file.
+ *
+ * The two halves of evidence come from different places on purpose. **What a test exercises and what
+ * would break it are prose only the author can write**; whether it PASSED is a fact only a run can
+ * supply. Keeping the declaration in the atom lets the corpus-level metric read it without importing
+ * a test, and stops the same sentences being written twice.
+ */
+export interface EvidenceSource {
+  readonly measuredBy: string
+  readonly exercised: string
+  readonly wouldFailIf: string
+}
+
+/**
+ * Build a `MeasureRun` from declared sources plus an outcome oracle.
+ *
+ * `passed` returns `undefined` for a test that was not run or does not exist — which surfaces as
+ * ABSENT rather than as a silent pass. A declared source with no outcome is not evidence.
+ */
+export function runFrom(
+  sources: readonly EvidenceSource[],
+  passed: (measuredBy: string) => boolean | undefined,
+): MeasureRun {
+  return (measuredBy) => {
+    const s = sources.find((x) => x.measuredBy === measuredBy)
+    if (!s) return undefined
+    const ok = passed(measuredBy)
+    if (ok === undefined) return undefined
+    return { exercised: s.exercised, wouldFailIf: s.wouldFailIf, passed: ok }
+  }
+}
+
 export interface VerdictVerdict {
   readonly holds: boolean
   readonly reason: string
