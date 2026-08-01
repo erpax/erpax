@@ -275,7 +275,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
     "uuid": "5cbb6bc1-887a-8c8c-88fd-fba1a9346c71",
     "color": "hsl(339 57% 39%)",
-    "count": 355,
+    "count": 356,
     "modules": [
       {
         "path": "src/accounting/analysis/SKILL.md",
@@ -5245,7 +5245,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
     "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
     "color": "hsl(157 78% 44%)",
-    "count": 92,
+    "count": 93,
     "modules": [
       {
         "path": "src/access/index.ts",

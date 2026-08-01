@@ -1403,6 +1403,8 @@ src/ifrs/16/validate.ts:4: * @standard ISO/IEC-29119:2022 software-testing runti
 src/image/index.ts:15: * @standard SVG 1.1 / SMIL animation · deterministic hash-to-art (identicon family)
 src/incoterms/2020/index.ts:12: * @standard ICC INCOTERMS 2020 publication-no-723E
 src/incoterms/2020/index.ts:13: * @standard ISO 6346 freight-container-code (related)
+src/inertia/index.ts:29: * @standard ISO 80000-4:2019 — quantities and units, mechanics: force, acceleration, mass
+src/inertia/index.ts:30: * @standard NIST SP 811 §B.8 — standard acceleration of free fall, 9.80665 m/s² exactly
 src/ingest/index.ts:6: * @standard idempotent upsert by content-address (re-runnable, no cursor needed)
 src/insurance/contracts/index.ts:12: * @standard IFRS IFRS-17 §3 scope
 src/insurance/contracts/index.ts:13: * @standard IFRS IFRS-17 §32 general-measurement-model-building-blocks
