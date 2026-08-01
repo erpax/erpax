@@ -16,7 +16,7 @@
  * Usage: node src/skill/router/build-index.mjs  (pnpm skill:index)
  */
 
-import { readdirSync, statSync, lstatSync, existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readdirSync, lstatSync, existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 import { createHash } from 'node:crypto'
 import { execSync } from 'node:child_process'

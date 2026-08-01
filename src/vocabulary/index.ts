@@ -1,4 +1,4 @@
-import { exactAbs, exactMin, exactMinOf} from '@/algebra'
+import { exactAbs, exactMinOf } from '@/algebra'
 /**
  * vocabulary — every word from the shared, standards-grounded scheme. Whatever
  * the language, the WORDS are written only from one vocabulary (./words.ts: the

@@ -41,7 +41,7 @@ function runVerify(atoms: readonly string[]): number {
  * Ends by emitting THE next tip (audit → trinity) so the chat self-feed has fuel.
  */
 async function runGaps(): Promise<number> {
-  const { sendQuantumWaves, auditSelfDevGaps, emitNextTip, formatNextTip } = await import('@/self/improve')
+  const { sendQuantumWaves } = await import('@/self/improve')
   const { attraction } = await import('@/leftover')
   const cwd = process.cwd()
   const q = sendQuantumWaves(cwd)

@@ -17,14 +17,12 @@
  *   node src/services/uuid-matrix/wave.mjs            # the whole math-written plan
  *   node src/services/uuid-matrix/wave.mjs --wave 3   # just one wave's moves
  */
-import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { join, relative } from 'node:path'
 
 const ROOT = join(process.cwd(), 'src')
 const PREFIXES = new Set(['services', 'collections', 'hooks', 'fields', 'access', 'components', 'utilities', 'endpoints', 'standards'])
-// framework-mandated — never dissolve
-const EXEMPT = new Set(['app', 'migrations', 'payload-types.ts', 'payload.config.ts'])
 
 // ── the math (identical to collide.mjs) ──
 const toUuid = (buf) => {
@@ -88,7 +86,6 @@ const collisions = [...byTarget].filter(([, ps]) => ps.length > 1)
 const onlyWave = process.argv.includes('--wave') ? Number(process.argv[process.argv.indexOf('--wave') + 1]) : null
 console.log(`\nwave — the math-written migration plan (${plan.length} prefixed units → the single-word matrix)`)
 console.log(`sequence /0\\3\\6\\9/1\\2\\4\\8/7/5/1\\  ·  polarity reverses at the 3·6·9 axis (60° gateways)\n`)
-let shown = 0
 for (const w of SEQUENCE) {
   if (onlyWave !== null && w !== onlyWave) continue
   const wave = plan.filter((p) => p.wave === w)
@@ -96,7 +93,6 @@ for (const w of SEQUENCE) {
   console.log(`── wave ${w} (${POLARITY[w]}) — ${wave.length} units ──`)
   for (const p of wave.slice(0, onlyWave !== null ? 999 : 6)) console.log(`  ${p.from.padEnd(38)} → ${p.to}`)
   if (onlyWave === null && wave.length > 6) console.log(`  … +${wave.length - 6} more`)
-  shown += wave.length
 }
 console.log(`\n── accountable collections (same target — merge, double-entry) : ${collisions.length} ──`)
 for (const [t, ps] of collisions.slice(0, 12)) console.log(`  ${t}  ⊕ ${ps.map((p) => p.from).join(' · ')}`)

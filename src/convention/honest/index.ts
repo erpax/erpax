@@ -1,4 +1,4 @@
-import { exactMax, exactMin, exactMaxOf} from '@/algebra'
+import { exactMin, exactMaxOf } from '@/algebra'
 /**
  * convention/honest — the HONEST-SPLIT convention as a computed, self-measuring atom.
  *

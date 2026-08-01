@@ -6,7 +6,7 @@
  *   pnpm path:hooks
  */
 import { readdirSync, statSync, writeFileSync, existsSync } from 'node:fs'
-import { join, relative, dirname } from 'node:path'
+import { join, relative } from 'node:path'
 
 const SRC = join(process.cwd(), 'src')
 const SKIP = new Set(['app', 'migrations'])
