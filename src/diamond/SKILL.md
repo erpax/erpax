@@ -81,7 +81,7 @@ Every diamond — repository, folder, file, method, README, CSS facet, Payload *
 | ----- | ------------ |
 | `atomPath` | [[path]]/toAtomPath · collection slug/atomPath |
 | `boundaryUuid` | [[uuid/matrix]] node · [[quantum/boundary]] · [[method]]/methodBoundaryUuid |
-| `trinity` { form · code · proof } | SKILL.md · index.ts · test.ts ([[readme]]/deriveFolderModel) |
+| `trinity` `{ form · code · proof }` | SKILL.md · index.ts · test.ts ([[readme]]/deriveFolderModel) |
 | `horo` · `measure` | [[horo]] ring · matrix node |
 | `imports` · `exports` · `escapes` | [[quantum/boundary]]/computeBoundary |
 | `links` | [[typography]]/linksOf (quantum wikilink bonds) |

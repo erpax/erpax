@@ -144,9 +144,26 @@ function relationsFromPath(pageRel: string): {
 // An unresolved word points at its EXPECTED skill path, so VitePress strict
 // (ignoreDeadLinks: false) flags it as a dead link = an aura gap = an
 // unanswered question. The docs build is the immune system for the speech layer.
+let routeSet: Set<string> | undefined
+function routes(): Set<string> {
+  if (!routeSet) {
+    if (allSkills.length === 0) walk(SKILLS_DIR)
+    routeSet = new Set(allSkills.map((s) => s.route))
+  }
+  return routeSet
+}
+
 function resolveWiki(target: string): string {
   const t = target.trim()
-  if (t.includes('/')) return '/' + t.replace(/^\/+/, '') + '/SKILL'
+  if (t.includes('/')) {
+    const literal = '/' + t.replace(/^\/+/, '') + '/SKILL'
+    if (routes().has(literal)) return literal
+    // A nested atom is written by its TAIL — `[[fear/love]]` for `vocabulary/fear/love` — because
+    // that is how the corpus reads it, while VitePress resolves by FULL PATH. wikiMap already keys
+    // every trailing-segment run (`fearlove` → the full route), so the reconciliation is a lookup
+    // rather than a rule: try the literal path, then the tail, and only then fail as a dead link.
+    return wikiMap[norm(t.replace(/\//g, ''))] ?? literal
+  }
   return wikiMap[norm(t)] ?? '/' + t + '/SKILL'
 }
 
@@ -261,6 +278,22 @@ export default defineConfig({
   // is now in the base, not the glob match — and everything outside (src/, docs/,
   // tests/, test-results/, README) is automatically not a page.
   srcDir: SKILLS_DIR,
+  // `.claude` is a SYMLINK to `src`, so srcDir IS the whole source tree — which means every
+  // generated face was being compiled as a Vue page. Measured: 3,203 SKILL.md against 3,195
+  // LLM.md + 3,195 README.md, so TWO THIRDS of the build was gitignored derivations.
+  //
+  // Three separate costs, one cause:
+  //   BUILD    a generated face can carry a fragment the face generator split mid-backtick
+  //            (`@standard <id> …` → a bare `<id>`), and Vue's compiler reads that as an
+  //            unclosed tag. The build died on convention/sourced/LLM.md.
+  //   SPEED    9,593 pages compiled where 3,203 are documentation — this is the "full corpus
+  //            OOMs on 16GB runners" the deploy workflow blames, and it is 3× self-inflicted.
+  //   SAFETY   these faces are GITIGNORED derivations. Publishing them to a public Pages site
+  //            ships artifacts the repository deliberately does not commit.
+  //
+  // srcExclude is VitePress's own option for exactly this — a page scanner filter, not a hack.
+  // The faces stay on disk for agents to read; they simply are not pages.
+  srcExclude: ['**/LLM.md', '**/README.md', '**/CHANGELOG.md'],
   // strict: a dead link is an unanswered question / aura gap — the docs build
   // fails until every [[link]] resolves to a path with its answer.
   ignoreDeadLinks: false,

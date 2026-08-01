@@ -33,6 +33,6 @@ version: 2
 ---
 # migrate
 
-The migrating skills: computable, idempotent collisions that fold structural violations into the [[quaternary]] atom ({SKILL.md · index.ts · test.ts · translations.ts}).
+The migrating skills: computable, idempotent collisions that fold structural violations into the [[quaternary]] atom (`{SKILL.md · index.ts · test.ts · translations.ts}`).
 
 Zero manual work — each migration is a **deterministic rule** (no training, all computable), dry-previewable then applied, and verified green by [[quaternary]]'s test. Violations become atoms; entropy collapses to mass. [[collapse]] · [[dissolution]] · [[generate]] · [[merge]].

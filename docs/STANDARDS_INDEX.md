@@ -1954,6 +1954,7 @@ src/messages/index.ts:11: * @standard ISO-8601-1:2019 date-time sent-read-timest
 src/messages/index.ts:12: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/meta/automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/metatron/index.ts:20: * @standard RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron
+src/migrate/index.ts:32: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: a change is reviewable when it is reproducible
 src/migrate/quaternary/index.ts:19: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/millennium/correspondence/index.ts:39: * @standard ISO 80000-2 — mathematical signs and symbols
 src/mineral/resource/assets/index.ts:11: * @standard IFRS IFRS-6 §3 scope-exploration-and-evaluation
@@ -3073,6 +3074,7 @@ src/vocabulary/marketing/StandardsBadges.tsx:10: * @standard W3C HTML5 living-st
 src/vocabulary/marketing/StandardsBadges.tsx:9: * @standard schema.org Thing badge-credibility
 src/vocabulary/marketing/types.ts:11: * @standard schema.org WebPageElement
 src/vocabulary/marketing/types.ts:12: * @standard W3C HTML5 Living Standard
+src/vocabulary/maxtampercost/index.ts:20: * @standard ISO/IEC 25010:2023 §5.6 — maintainability: one source, addressable
 src/vocabulary/provider/index.tsx:9: * @standard W3C CSS-Color-4 color-contrast
 src/vocabulary/tag/field.ts:20: * @standard ISO-25964-1:2011 controlled-vocabulary
 src/vocabulary/tag/list.ts:21: * @standard ISO-25964-1:2011 controlled-vocabulary delimited-entry

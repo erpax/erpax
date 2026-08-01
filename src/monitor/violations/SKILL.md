@@ -43,4 +43,4 @@ version: 2
 
 **Improve law — always improve in realtime.** `improveInRealtime()` · `runRealtimeImproveCycle()` — auto-fix safe violations; human-gate tenant/invoices/structure; append-only receipt + seal credit eb.
 
-@see [[monitor]] · [[rules]] · [[readme/entropy]] · [[apply]] · [[realtime]]
+@see [[monitor]] · [[rules]] · [[readme]]/entropy · [[apply]] · [[realtime]]

@@ -42,6 +42,6 @@ version: 2
 
 **CLI:** `pnpm erpax automate` · `pnpm erpax automate watch`
 
-Composes — [[apply]] · [[apply/efficiency]] · [[apply/inventory]] · [[wave/policy]] · [[quantum/entanglement]]
+Composes — [[apply]] · [[apply]]/efficiency · [[apply]]/inventory · [[wave]]/policy · [[quantum/entanglement]]
 
 @standard erpax — automate orchestration loop
