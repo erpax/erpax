@@ -1954,6 +1954,7 @@ src/messages/index.ts:12: * @standard ISO-27001 A.5.23 cloud-service-tenant-isol
 src/meta/automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/metatron/index.ts:20: * @standard RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron
 src/migrate/quaternary/index.ts:19: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/millennium/correspondence/index.ts:39: * @standard ISO 80000-2 — mathematical signs and symbols
 src/mineral/resource/assets/index.ts:11: * @standard IFRS IFRS-6 §3 scope-exploration-and-evaluation
 src/mineral/resource/assets/index.ts:12: * @standard IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation
 src/mineral/resource/assets/index.ts:13: * @standard IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles
