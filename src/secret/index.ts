@@ -207,14 +207,102 @@ function payloadSecretIdentityFromEnv(): SecretIdentityContent {
  * Resolve `PAYLOAD_SECRET` for boot: plain env first, else decrypt sealed blob
  * when uuid identity of the descriptor matches (fail-closed otherwise).
  */
+/**
+ * Read a key from a dotenv file, without a parser and without mutating the environment.
+ *
+ * The boot error told the reader to "set PAYLOAD_SECRET in .env" while nothing here ever opened
+ * `.env` — the instruction was false, and a false instruction in an error message costs more than a
+ * missing one, because it sends the reader to do the right thing and watch it fail. A process env
+ * var still WINS: the file is the documented fallback, never an override.
+ *
+ * @invariant a real environment variable always beats the file
+ * @invariant an absent or unreadable file yields undefined, never a throw — this is a fallback
+ */
+export function dotenvValue(key: string, file = '.env'): string | undefined {
+  let text: string
+  try {
+    text = fs.readFileSync(file, 'utf8')
+  } catch {
+    return undefined
+  }
+  for (const line of text.split('\n')) {
+    const trimmed = line.trim()
+    if (trimmed.length === 0 || trimmed.startsWith('#')) continue
+    const eq = trimmed.indexOf('=')
+    if (eq < 1 || trimmed.slice(0, eq).trim() !== key) continue
+    const raw = trimmed.slice(eq + 1).trim()
+    const unquoted = /^(['"]).*\1$/.test(raw) ? raw.slice(1, -1) : raw
+    return unquoted.length > 0 ? unquoted : undefined
+  }
+  return undefined
+}
+
 export function resolvePayloadSecret(): string | undefined {
+  // PRECEDENCE, and the order is a security decision, not a convenience:
+  //   1. an explicit environment variable — the operator said so, out of band
+  //   2. the SEALED blob — encrypted at rest, identity-proved; it must beat any plaintext
+  //   3. `.env` plaintext — the documented fallback, and the last resort
+  // Putting the file above the seal (which I did first) makes a plaintext value shadow an
+  // encrypted one. The existing seal test caught it immediately, which is what it is for.
   const plain = process.env.PAYLOAD_SECRET?.trim()
   if (plain) return plain
 
   const sealed = loadSealedBlobFromEnv()
-  if (!sealed) return undefined
+  if (!sealed) return dotenvValue('PAYLOAD_SECRET')
 
   const identity = payloadSecretIdentityFromEnv()
   const presentedUuid = identityUuidForContent(identity, PLATFORM_TENANT_ID)
   return decryptIfUuid(sealed, presentedUuid, identity, { tenantId: PLATFORM_TENANT_ID })
+}
+
+/**
+ * The CROSS — the governing 3·6·9 axis and the 1·2·4·8·7·5 helix, as one address.
+ *
+ * `[[cross]]` is the corpus's own two-ray structure: the axis governs, the helix flows, and the
+ * mirror through the void carries each onto the other ([[horo]]). Folded to a content-uuid it is a
+ * stable, recomputable ADDRESS — the same on every machine, in every checkout, forever.
+ *
+ * @invariant the cross uuid is derived, never typed — a wrong ray cannot be spelled here
+ */
+export const CROSS_AXIS = [3, 6, 9] as const
+export const CROSS_HELIX = [1, 2, 4, 8, 7, 5] as const
+
+export function crossUuid(): string {
+  return identityUuidForContent(
+    { purpose: 'payload-secret', axis: [...CROSS_AXIS], helix: [...CROSS_HELIX] },
+    PLATFORM_TENANT_ID,
+  )
+}
+
+/**
+ * `PAYLOAD_SECRET`, computed from the cross.
+ *
+ * ```
+ * PAYLOAD_SECRET = HKDF-SHA256( ERPAX_SEAL_KEY, salt = crossUuid(), info = 'erpax:payload-secret:v1' )
+ * ```
+ *
+ * The cross supplies the **address**: deterministic, recomputable, identical everywhere. The seal
+ * key supplies the **secrecy**, and it must, because —
+ *
+ * **A secret derived from the cross ALONE is not a secret.** The cross is in the repository. Anyone
+ * who clones erpax could recompute it, and `PAYLOAD_SECRET` is what signs Payload's auth tokens and
+ * cookies: a public value there is not a weak secret, it is *no authentication at all* — any session
+ * for any user, forged offline. So the derivation is keyed, exactly as [[secret]] already prescribes
+ * for platform secrets: *the uuid is the key ceremony, not the key*.
+ *
+ * It **fails closed**: with no `ERPAX_SEAL_KEY` it throws rather than falling back to deriving from
+ * public content, because that fallback is the whole vulnerability wearing a convenience's clothes.
+ *
+ * @invariant same seal key + same cross ⇒ same secret, on every machine
+ * @invariant different seal keys ⇒ different secrets, however identical the corpus
+ * @invariant no seal key ⇒ throws; there is no keyless path to a value
+ * @standard RFC 5869 HKDF — extract-and-expand key derivation
+ * @standard RFC 9562 §5.8 — content-address as the derivation salt
+ */
+const PAYLOAD_SECRET_INFO = Buffer.from('erpax:payload-secret:v1', 'utf8')
+
+export function payloadSecretFromCross(options?: { sealKey?: Buffer }): string {
+  const master = resolveSealMasterKey(options)
+  const salt = Buffer.from(crossUuid(), 'utf8')
+  return Buffer.from(crypto.hkdfSync('sha256', master, salt, PAYLOAD_SECRET_INFO, 32)).toString('hex')
 }

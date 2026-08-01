@@ -2483,6 +2483,8 @@ src/seal/index.ts:17: * @standard ISO/IEC 25010:2023 §5.5 testability — the d
 src/search/engine/optimization/index.ts:9: * @standard schema.org + Open Graph discoverability; on-page keyword coverage
 src/secret/index.ts:13: * @standard NIST SP 800-38D AES-GCM
 src/secret/index.ts:14: * @standard RFC 5869 HKDF
+src/secret/index.ts:299: * @standard RFC 5869 HKDF — extract-and-expand key derivation
+src/secret/index.ts:300: * @standard RFC 9562 §5.8 — content-address as the derivation salt
 src/sectors/index.ts:14: * @standard UN SNA-2008 institutional-sectors (S.11/S.12 corporations · S.13 government · S.14 households · S.15 NPISH)
 src/sectors/index.ts:15: * @standard UN ISIC Rev.4 international-standard-industrial-classification (economic activity)
 src/sectors/index.ts:16: * @standard EU NACE Rev.2 economic-activities
