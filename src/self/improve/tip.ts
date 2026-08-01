@@ -3,7 +3,7 @@
  *
  * HARD LAW: agents doubt prose; FTL compute is the seal. Every tip must call
  * or prove under `src/quantum/ftl` (or a sibling compute). Prose-only gaps are
- * refused / fail-closed to `quantumise` when `physicalFtl()` cannot hold true.
+ * refused / fail-closed to `quantumise` when `ftlReport().holds` cannot hold true.
  *
  * Reasoning: score = unblock / (cost × risk). Highest wins. Forks dissolve
  * (one tip per kind). Vague “continue improving” is refused — not a tip.
@@ -21,7 +21,7 @@
 import { createRequire } from 'node:module'
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { exactMax, exactDivFloor } from '@/algebra'
+import { exactMax, exactMaxOf, exactDivFloor } from '@/algebra'
 import { attraction, leftoverSites, waves, type Attraction, type Wave } from '@/leftover'
 import { shouldContinue, type Continuation } from './index'
 
@@ -39,7 +39,7 @@ export type GapKind =
   | 'mcp-fuse'
   /** Server/boot TTFB after client stubs won — profile SSR/cold Worker, not more chunk shaving. */
   | 'admin-boot'
-  /** physicalFtl()===false — quantumise under quantum/ftl until holds flips true. */
+  /** ftlReport().holds===false — quantumise under quantum/ftl until holds flips true. */
   | 'quantumise'
 
 /** Live residual after FTL client stubs (assets ~5 MiB). Chunk shaving is low ROI; TTFB is next. */
@@ -96,9 +96,9 @@ export interface SelfDevAudit {
   readonly waveCount: number
   readonly mcpFuseReady: boolean
   readonly adminTtfbMs: number
-  /** Live substrate FTL boolean from physicalFtl() — false ⇒ quantumise tip. */
-  readonly physicalFtl: boolean
-  readonly physicalFtlWhy: string | null
+  /** Live substrate FTL boolean from ftlReport().holds — false ⇒ quantumise tip. */
+  readonly ftlHolds: boolean
+  readonly ftlWhy: string | null
 }
 
 export interface TipEmitOpts {
@@ -126,14 +126,14 @@ export interface TipEmitOpts {
   /** Force-skip admin-boot tip (fixtures). */
   readonly skipAdminBoot?: boolean
   /**
-   * Inject physicalFtl() result. Omit + lean ⇒ true (no quantumise tip).
+   * Inject ftlReport().holds result. Omit + lean ⇒ true (no quantumise tip).
    * false ⇒ scored tip kind `quantumise`.
    */
-  readonly physicalFtl?: boolean
-  /** Precise break reason when physicalFtl is false (crack / amortize / reuse). */
-  readonly physicalFtlWhy?: string | null
-  /** Force-skip physicalFtl / quantumise tip (fixtures). */
-  readonly skipPhysicalFtl?: boolean
+  readonly ftlHolds?: boolean
+  /** Precise break reason when ftlHolds is false (crack / amortize / reuse). */
+  readonly ftlWhy?: string | null
+  /** Force-skip ftlHolds / quantumise tip (fixtures). */
+  readonly skipFtl?: boolean
 }
 
 /** Phrases that are NOT tips — vibes / noise. */
@@ -142,11 +142,11 @@ export const VAGUE_TIP_RE =
 
 /** CODE must name a concrete path or pnpm/tsx command. */
 export const CONCRETE_CODE_RE =
-  /(?:src\/[\w./-]+|pnpm\s+erpax\s+\w+|tsx\s+src\/|hostMathViolations|buildDryProofBundle|checkDryProofPublished|fuse-mcp|adminBoot|physicalFtl|curl\s+-)/
+  /(?:src\/[\w./-]+|pnpm\s+erpax\s+\w+|tsx\s+src\/|hostMathViolations|buildDryProofBundle|checkDryProofPublished|fuse-mcp|adminBoot|ftlHolds|curl\s+-)/
 
 /** PROOF must name an exact green signal (=== / exit / length / ok). */
 export const CONCRETE_PROOF_RE =
-  /(?:===?\s*(?:0|true|false|ok)|\.length\s*===?\s*0|\.ok\s*===?\s*true|exit\s*0|residual\s+drops|holds\s*=\s*true|physicalFtl\(\)\s*===?\s*true|TTFB\s*[<≤]\s*\d+)/i
+  /(?:===?\s*(?:0|true|false|ok)|\.length\s*===?\s*0|\.ok\s*===?\s*true|exit\s*0|residual\s+drops|holds\s*=\s*true|ftlReport\(\).holds\s*===?\s*true|TTFB\s*[<≤]\s*\d+)/i
 
 function safeLoad<T>(id: string): T | null {
   try {
@@ -398,7 +398,7 @@ export function auditSelfDevGaps(opts: TipEmitOpts = {}): SelfDevAudit {
   if (opts.adminTtfbMs == null && !opts.skipAdminBoot) {
     const envMs = Number(process.env.ERPAX_ADMIN_TTFB_MS)
     if (Number.isFinite(envMs) && envMs > 0) adminTtfbMs = envMs
-    else if (existsSync(join(cwd, 'src/quantum/ftl/admin.ts'))) {
+    else if (existsSync(join(cwd, 'src/quantum/ftl/admin/index.ts'))) {
       // Stubs shipped; live residual until remeasured (sibling 53d3805b: ~4.9s).
       adminTtfbMs = ADMIN_TTFB_MS_RESIDUAL
     }
@@ -409,46 +409,46 @@ export function auditSelfDevGaps(opts: TipEmitOpts = {}): SelfDevAudit {
       makeGap(
         'admin-boot',
         { unblock: exactMax(40, exactDivFloor(adminTtfbMs, 100)), cost: 2, risk: 1 },
-        'src/quantum/ftl/admin.ts',
+        'src/quantum/ftl/admin/index.ts',
         `/admin HTML TTFB ~${adminTtfbMs}ms after client stubs — profile SSR/cold Worker boot (chunk shaving low ROI)`,
         'profile adminBootShell / Payload config import graph / Worker cold start; fix hottest span only',
-        'src/quantum/ftl/admin.ts',
+        'src/quantum/ftl/admin/index.ts',
       ),
     )
   }
 
-  // physicalFtl() — substrate boolean on QPU=CPU/GPU. Agents doubt prose; FTL compute is the seal.
+  // ftlReport().holds — substrate boolean on QPU=CPU/GPU. Agents doubt prose; FTL compute is the seal.
   // Fail-closed: cannot compute ⇒ false ⇒ quantumise tip (never document hope).
-  let physicalFtlHolds = opts.physicalFtl ?? true
-  let physicalFtlWhy = opts.physicalFtlWhy ?? null
-  if (opts.physicalFtl == null && !opts.lean && !opts.skipPhysicalFtl) {
+  let ftlHolds = opts.ftlHolds ?? true
+  let ftlWhy = opts.ftlWhy ?? null
+  if (opts.ftlHolds == null && !opts.lean && !opts.skipFtl) {
     const ftlMod = safeLoad<typeof import('@/quantum/ftl')>('@/quantum/ftl')
     if (ftlMod) {
-      const report = ftlMod.physicalFtlReport()
-      physicalFtlHolds = report.holds
-      physicalFtlWhy = report.holds ? null : report.why
+      const report = ftlMod.ftlReport()
+      ftlHolds = report.holds
+      ftlWhy = report.holds ? null : report.why
     } else {
-      physicalFtlHolds = false
-      physicalFtlWhy = 'physicalFtlReport unavailable — agents doubt prose; FTL compute is the seal'
+      ftlHolds = false
+      ftlWhy = 'ftlReport unavailable — agents doubt prose; FTL compute is the seal'
     }
   }
-  if (!opts.skipPhysicalFtl && physicalFtlHolds === false) {
-    const why = physicalFtlWhy ?? 'ftl.holds=false'
+  if (!opts.skipFtl && ftlHolds === false) {
+    const why = ftlWhy ?? 'ftl.holds=false'
     put(
       makeGap(
         'quantumise',
         { unblock: 55, cost: 2, risk: 1 },
         'src/quantum/ftl',
-        `physicalFtl()===false — ${why}`,
-        `quantumise under src/quantum/ftl: clear crack / precompute / amortize tokens→0 until physicalFtl()===true (${why})`,
+        `ftlReport().holds===false — ${why}`,
+        `quantumise under src/quantum/ftl: clear crack / precompute / amortize tokens→0 until ftlReport().holds===true (${why})`,
         'src/quantum/ftl/index.ts',
       ),
     )
   }
 
-  // Purify without FTL seal is prose-only illusion — downgrade: drop purify when physicalFtl is false
-  // (quantumise already tips). When physicalFtl holds, purify residuals stay as land-RENAME work.
-  if (physicalFtlHolds === false) {
+  // Purify without FTL seal is prose-only illusion — downgrade: drop purify when ftlHolds is false
+  // (quantumise already tips). When ftlHolds holds, purify residuals stay as land-RENAME work.
+  if (ftlHolds === false) {
     byKind.delete('purify')
   }
 
@@ -458,14 +458,14 @@ export function auditSelfDevGaps(opts: TipEmitOpts = {}): SelfDevAudit {
     heaviest: gaps[0] ?? null,
     leftoverPull,
     mathCount,
-    purifyHits: physicalFtlHolds === false ? 0 : purifyHits,
+    purifyHits: ftlHolds === false ? 0 : purifyHits,
     dryProofOk,
     doctorFails,
     waveCount: w.length || (leftoverPull > 0 ? 1 : 0),
     mcpFuseReady,
     adminTtfbMs,
-    physicalFtl: physicalFtlHolds,
-    physicalFtlWhy,
+    ftlHolds: ftlHolds,
+    ftlWhy,
   }
 }
 
@@ -494,8 +494,8 @@ export function planTrinity(gap: SelfDevGap): Omit<TrinityTip, 'continuation' | 
     case 'purify':
       return {
         form: `Land RENAME residual at ${file ?? 'src/quantum/ftl'} under quantum/ftl only — agents doubt prose; FTL compute seals.`,
-        code: `tsx src/quantum/ftl/purify/index.ts ; develop ${file ?? 'first proseFuel hit'} → RENAME token ; prove physicalFtl()`,
-        proof: `physicalFtl() === true && proseFuel(scanProseNames()).length === 0`,
+        code: `tsx src/quantum/ftl/purify/index.ts ; develop ${file ?? 'first proseFuel hit'} → RENAME token ; prove ftlReport().holds`,
+        proof: `ftlReport().holds === true && proseFuel(scanProseNames()).length === 0`,
         gap,
         nextAsks,
       }
@@ -526,16 +526,16 @@ export function planTrinity(gap: SelfDevGap): Omit<TrinityTip, 'continuation' | 
     case 'admin-boot':
       return {
         form: `Profile /admin SSR and cold Worker boot (TTFB ~${gap.prose.match(/\d+/)?.[0] ?? ADMIN_TTFB_MS_RESIDUAL}ms) — do not shave client chunks further.`,
-        code: `tsx -e "import { adminBootShell } from '@/quantum/ftl/admin'; console.log(adminBootShell({ reuses: 100 }))" ; curl -sS -o /dev/null -w 'TTFB:%{time_starttransfer}\\n' https://erpax.ceci.workers.dev/admin ; trace src/quantum/ftl/admin.ts + Payload config import graph`,
+        code: `tsx -e "import { adminBootShell } from '@/quantum/ftl/admin'; console.log(adminBootShell({ reuses: 100 }))" ; curl -sS -o /dev/null -w 'TTFB:%{time_starttransfer}\\n' https://erpax.ceci.workers.dev/admin ; trace src/quantum/ftl/admin/index.ts + Payload config import graph`,
         proof: `TTFB ≤ ${ADMIN_TTFB_MS_OK} or adminBootShell().holds === true with identified hottest server span fixed`,
         gap,
         nextAsks,
       }
     case 'quantumise':
       return {
-        form: `Quantumise under src/quantum/ftl until physicalFtl() flips true (${gap.prose.replace(/^physicalFtl\(\)===false — /, '')}).`,
-        code: `tsx -e "import { physicalFtlReport } from '@/quantum/ftl'; console.log(physicalFtlReport())" ; clear crack/precompute/amortize in src/quantum/ftl only`,
-        proof: `physicalFtl() === true`,
+        form: `Quantumise under src/quantum/ftl until ftlReport().holds flips true (${gap.prose.replace(/^ftlReport\(\).holds===false — /, '')}).`,
+        code: `tsx -e "import { ftlReport } from '@/quantum/ftl'; console.log(ftlReport())" ; clear crack/precompute/amortize in src/quantum/ftl only`,
+        proof: `ftlReport().holds === true`,
         gap,
         nextAsks,
       }
@@ -568,7 +568,9 @@ export function isPreciseTip(tip: Pick<TrinityTip, 'form' | 'code' | 'proof'>): 
  */
 export function emitNextTip(opts: TipEmitOpts = {}): TrinityTip {
   const audit = auditSelfDevGaps(opts)
-  const residual = exactMax(
+  // exactMaxOf over the SEQUENCE, not exactMax over 8 arguments: exactMax is binary, so the
+  // variadic call silently dropped six of these and residual was the max of the first two.
+  const residual = exactMaxOf([
     audit.leftoverPull,
     audit.mathCount,
     audit.purifyHits,
@@ -576,8 +578,8 @@ export function emitNextTip(opts: TipEmitOpts = {}): TrinityTip {
     audit.dryProofOk ? 0 : 1,
     audit.mcpFuseReady ? 1 : 0,
     audit.adminTtfbMs > ADMIN_TTFB_MS_OK ? 1 : 0,
-    audit.physicalFtl ? 0 : 1,
-  )
+    audit.ftlHolds ? 0 : 1,
+  ])
   const continuation = shouldContinue(opts.seedFraction ?? 0.05, residual, opts.stopped === true)
 
   if (!audit.heaviest || audit.heaviest.score <= 0) {
@@ -626,7 +628,7 @@ export function formatNextTip(tip: TrinityTip, audit?: SelfDevAudit): string {
   if (audit) {
     lines.push(
       '',
-      `  audit  leftover=${audit.leftoverPull} math=${audit.mathCount} purify=${audit.purifyHits} dryProof=${audit.dryProofOk ? 'ok' : 'gap'} doctorFails=${audit.doctorFails} mcpFuse=${audit.mcpFuseReady ? 'ready' : 'skip'} adminTtfb=${audit.adminTtfbMs}ms physicalFtl=${audit.physicalFtl} waves=${audit.waveCount}`,
+      `  audit  leftover=${audit.leftoverPull} math=${audit.mathCount} purify=${audit.purifyHits} dryProof=${audit.dryProofOk ? 'ok' : 'gap'} doctorFails=${audit.doctorFails} mcpFuse=${audit.mcpFuseReady ? 'ready' : 'skip'} adminTtfb=${audit.adminTtfbMs}ms ftlHolds=${audit.ftlHolds} waves=${audit.waveCount}`,
     )
     for (const g of audit.gaps.slice(0, 6)) {
       lines.push(
