@@ -25,6 +25,7 @@ import {
   affineStep,
   carryClosure,
   carryRays,
+  pivotSingularities,
   rayOf,
   renderSequenceSection,
   sequenceForward,
@@ -644,6 +645,27 @@ describe('horo — what a fold CARRIES, and where the carry ends', () => {
       expect([...carryClosure(step)]).toEqual([1, 2, 4, 6, 8])
     }
     expect([...carryClosure(5)]).toEqual([0, 1, 2, 4, 6, 8]) // 5 alone reaches the void
+  })
+
+  it('THREE independent singularities coincide on 5 — and on nothing else', () => {
+    const s = pivotSingularities()
+    const five = s.find((x) => x.digit === 5)!
+    expect(five.fixedByMirror).toBe(true) // throughVoid(5) = 5
+    expect(five.carryReachesVoid).toBe(true) // 2·5 = 10, the only double ending in zero
+    expect(five.inverseOfDoubling).toBe(true) // 2·5 ≡ 1 (mod 9)
+    expect(five.count).toBe(3)
+    // each property is defined without reference to the others, so agreement is not forced
+    expect(s.filter((x) => x.count === 3).map((x) => x.digit)).toEqual([VOID_PIVOT])
+    expect(s.filter((x) => x.count === 2)).toEqual([]) // and nothing PARTIALLY overlaps
+    for (const x of s) if (x.digit !== 5) expect(x.count).toBe(0)
+  })
+
+  it("5's carry {1,0} is exactly the sequence's own tail — the pivot folds onto the seam", () => {
+    const five = carryRays().find((c) => c.step === 5)!
+    const tail = sequenceForward().slice(9) // the `0\1` that both spellings hold unchanged
+    expect([...five.digits].sort()).toEqual([...tail].sort())
+    // and the reflection holds the same tail — it is the seam the mirror turns on, not a mapped part
+    expect([...sequenceReflected()].slice(9)).toEqual([...tail])
   })
 
   it('and it does NOT seal all nine — the limit, stated rather than hidden', () => {

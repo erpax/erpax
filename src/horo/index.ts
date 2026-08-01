@@ -663,6 +663,57 @@ export function straddlingSteps(): readonly number[] {
  * @invariant the closure is identical from every step except 5, which additionally reaches the void
  * @invariant no odd digit above 1 is ever a carry — proven by 2n ≤ 18, not sampled
  */
+/**
+ * Three independent singularities — and they coincide on one digit.
+ *
+ * Each is defined without reference to the others: being fixed by the mirror is a statement about
+ * `throughVoid`; carrying a zero is a statement about base-10 doubling; being `2⁻¹` is a statement
+ * about the group. Nothing forces them to agree.
+ *
+ * ```
+ * digit | fixed by mirror | carry reaches void | is 2⁻¹ mod 9
+ * 5     | true            | true               | true
+ * every other            (all false, on all three)
+ * ```
+ *
+ * **5 has all three. No other digit has even two.** `2·5 = 10` is the only double ending in zero, so
+ * `5` is the only step whose carry `{1,0}` is exactly the sequence's own tail `0\1` — the step that
+ * cannot move under the mirror is the one whose fold reaches the seam the mirror pivots on.
+ *
+ * **Boundary.** A coincidence of three properties on one digit of a nine-element group is a real,
+ * checkable fact about (ℤ/9ℤ) in base 10. It is not evidence about anything outside arithmetic, and
+ * this function makes no such claim — it computes which digits satisfy which predicates.
+ *
+ * @invariant exactly one digit satisfies all three, and it is VOID_PIVOT
+ * @invariant no digit satisfies exactly two — the properties do not partially overlap anywhere
+ */
+export interface Singularity {
+  readonly digit: number
+  /** `throughVoid(d) === d` — the mirror moves everything but this */
+  readonly fixedByMirror: boolean
+  /** the carry digits of `2d` include 0 — only `2·5 = 10` does */
+  readonly carryReachesVoid: boolean
+  /** `2d ≡ 1 (mod 9)` — the inverse of the doubling generator */
+  readonly inverseOfDoubling: boolean
+  readonly count: number
+}
+
+export function pivotSingularities(): readonly Singularity[] {
+  const carries = carryRays()
+  return [...orbitOf(1), ...INNER_CIRCUIT, POLE].map((digit) => {
+    const fixedByMirror = throughVoid(digit) === digit
+    const carryReachesVoid = carries.find((c) => c.step === digit)?.digits.includes(0) ?? false
+    const inverseOfDoubling = (2 * digit) % 9 === 1
+    return {
+      digit,
+      fixedByMirror,
+      carryReachesVoid,
+      inverseOfDoubling,
+      count: [fixedByMirror, carryReachesVoid, inverseOfDoubling].filter(Boolean).length,
+    }
+  })
+}
+
 export function carryClosure(seed: number): readonly number[] {
   const seen = new Set<number>()
   const queue = [digitalRoot(seed)]
