@@ -2000,7 +2000,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 176,
+    "count": 178,
     "modules": [
       {
         "path": "src/agent/SKILL.md",
@@ -6958,6 +6958,32 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "RFC-6749",
+    "family": "other",
+    "title": "The OAuth 2.0 Authorization Framework",
+    "uuid": "56856ca8-a2f8-8b50-9572-04dcf185d55d",
+    "color": "hsl(189 58% 38%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/country/client/berlin-group-psd2.ts",
+        "section": "§4.4"
+      },
+      {
+        "path": "src/oauth/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/oauth/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/trello/index.ts",
+        "section": "§1.4"
+      }
+    ]
+  },
+  {
     "id": "SWIFT-MT",
     "family": "other",
     "title": "SWIFT MT financial messages",
@@ -7001,28 +7027,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/uuid/llm/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "RFC-6749",
-    "family": "other",
-    "title": "The OAuth 2.0 Authorization Framework",
-    "uuid": "56856ca8-a2f8-8b50-9572-04dcf185d55d",
-    "color": "hsl(189 58% 38%)",
-    "count": 3,
-    "modules": [
-      {
-        "path": "src/country/client/berlin-group-psd2.ts",
-        "section": "§4.4"
-      },
-      {
-        "path": "src/oauth/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/oauth/index.ts",
         "section": ""
       }
     ]
@@ -8770,7 +8774,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1986,
+    "count": 1987,
     "modules": [
       {
         "path": "src/abdomen/SKILL.md",

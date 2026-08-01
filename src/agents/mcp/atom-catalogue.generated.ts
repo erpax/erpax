@@ -181,25 +181,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "abdomen",
     "name": "abdomen",
-    "description": "Use when reasoning about abdomen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "abdomen"
+    "description": "Use when reasoning about abdomen as an anatomical part of [[body]] — vocabulary pivot to @/abdomen; nested not duplicated.",
+    "path": "body/abdomen"
   },
   {
     "atom": "about",
     "name": "about",
-    "description": "The subject matter of an object.",
-    "path": "about"
+    "description": "Use when reasoning about about — The subject matter of an object.",
+    "path": "vocabulary/about"
   },
   {
     "atom": "abridged",
     "name": "abridged",
-    "description": "Indicates whether the book is an abridged edition.",
-    "path": "abridged"
+    "description": "Use when reasoning about abridged — Indicates whether the book is an abridged edition.",
+    "path": "vocabulary/abridged"
   },
   {
     "atom": "abstract",
     "name": "abstract",
-    "description": "An abstract is a short description that summarizes a CreativeWork.",
+    "description": "Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.",
     "path": "abstract"
   },
   {
@@ -240,55 +240,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "access",
-    "name": "remote-access",
-    "description": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
-    "path": "security/remote/access"
+    "name": "access",
+    "description": "Use when reasoning about the users collection's access control — who may read, create, update, or delete users.",
+    "path": "users/access"
   },
   {
     "atom": "accessibility",
     "name": "accessibility",
     "description": "Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability.",
-    "path": "accessibility"
+    "path": "vocabulary/accessibility"
   },
   {
     "atom": "accessible",
     "name": "accessible",
     "description": "Use when reasoning about accessible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "accessible"
+    "path": "vocabulary/accessible"
   },
   {
     "atom": "accessory",
     "name": "accessory",
     "description": "Use when reasoning about accessory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "accessory"
+    "path": "vocabulary/accessory"
   },
   {
     "atom": "accommodation",
     "name": "accommodation",
-    "description": "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requireme",
+    "description": "Use when reasoning about accommodation — An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a",
     "path": "accommodation"
   },
   {
     "atom": "account",
     "name": "account",
     "description": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
-    "path": "account"
+    "path": "vocabulary/account"
   },
   {
     "atom": "accountable",
     "name": "accountable",
     "description": "Use when reasoning about accountable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "accountable"
+    "path": "vocabulary/accountable"
   },
   {
     "atom": "accounting",
-    "name": "self-accounting",
+    "name": "accounting",
     "description": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof.",
     "path": "self/accounting"
   },
   {
     "atom": "accounts",
-    "name": "regulatory-deferral-accounts",
+    "name": "accounts",
     "description": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
     "path": "regulatory/deferral/accounts"
   },
@@ -296,23 +296,23 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "accrual",
     "name": "accrual",
     "description": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-    "path": "accrual"
+    "path": "vocabulary/accrual"
   },
   {
     "atom": "achieve",
     "name": "achieve",
     "description": "Use when reasoning about achieve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "achieve"
+    "path": "vocabulary/achieve"
   },
   {
     "atom": "acknowledgment",
     "name": "acknowledgment",
     "description": "Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.",
-    "path": "acknowledgment"
+    "path": "vocabulary/acknowledgment"
   },
   {
     "atom": "acknowledgments",
-    "name": "policy-acknowledgments",
+    "name": "acknowledgments",
     "description": "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.",
     "path": "internal/policies/policy/acknowledgments"
   },
@@ -320,19 +320,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "acquire",
     "name": "acquire",
     "description": "Use when reasoning about acquire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "acquire"
+    "path": "vocabulary/acquire"
   },
   {
     "atom": "acquired",
     "name": "acquired",
-    "description": "The organization or person from which the product was acquired.",
-    "path": "acquired"
+    "description": "Use when reasoning about acquired — The organization or person from which the product was acquired.",
+    "path": "vocabulary/acquired"
   },
   {
     "atom": "acriss",
     "name": "acriss",
-    "description": "acriss: a schema.org component word, fused from acrissCode",
-    "path": "acriss"
+    "description": "Use when reasoning about acriss — A schema.org component word, collided out of schema.org compounds — fused from acrissCode (sti · collapse · merge).",
+    "path": "vocabulary/acriss"
   },
   {
     "atom": "act",
@@ -343,18 +343,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "action",
     "name": "action",
-    "description": "An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce",
+    "description": "Use when reasoning about action — An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of th",
     "path": "action"
   },
   {
     "atom": "actionable",
     "name": "actionable",
     "description": "Use when reasoning about actionable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "actionable"
+    "path": "vocabulary/actionable"
   },
   {
     "atom": "actions",
-    "name": "board-actions",
+    "name": "actions",
     "description": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
     "path": "legal/entities/board/actions"
   },
@@ -362,23 +362,23 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "activate",
     "name": "activate",
     "description": "Use when reasoning about activate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "activate"
+    "path": "vocabulary/activate"
   },
   {
     "atom": "activation",
     "name": "activation",
     "description": "Use when reasoning about activation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "activation"
+    "path": "vocabulary/activation"
   },
   {
     "atom": "active",
     "name": "active",
     "description": "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.",
-    "path": "active"
+    "path": "vocabulary/active"
   },
   {
     "atom": "activities",
-    "name": "data-processing-activities",
+    "name": "activities",
     "description": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
     "path": "data/processing/activities"
   },
@@ -386,48 +386,48 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "activity",
     "name": "activity",
     "description": "Use when reasoning about activity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "activity"
+    "path": "vocabulary/activity"
   },
   {
     "atom": "actor",
     "name": "actor",
-    "description": "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
-    "path": "actor"
+    "description": "Use when reasoning about actor — An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+    "path": "vocabulary/actor"
   },
   {
     "atom": "actors",
     "name": "actors",
-    "description": "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
-    "path": "actors"
+    "description": "Use when reasoning about actors — An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
+    "path": "vocabulary/actors"
   },
   {
     "atom": "ad",
     "name": "ad",
     "description": "Use when reasoning about ad as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ad"
+    "path": "vocabulary/ad"
   },
   {
     "atom": "add",
     "name": "add",
-    "description": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
-    "path": "add"
+    "description": "Use when reasoning about add — An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+    "path": "vocabulary/add"
   },
   {
     "atom": "added",
     "name": "added",
     "description": "Use when reasoning about added as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "added"
+    "path": "vocabulary/added"
   },
   {
     "atom": "additional",
     "name": "additional",
     "description": "Use when reasoning about additional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "additional"
+    "path": "vocabulary/additional"
   },
   {
     "atom": "address",
     "name": "address",
-    "description": "Physical address of the item.",
+    "description": "Use when reasoning about address — Physical address of the item.",
     "path": "address"
   },
   {
@@ -440,109 +440,109 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "adjustment",
     "name": "adjustment",
     "description": "Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance.",
-    "path": "adjustment"
+    "path": "vocabulary/adjustment"
   },
   {
     "atom": "adjustments",
-    "name": "rounding-adjustments",
+    "name": "adjustments",
     "description": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
     "path": "journal/entries/rounding/adjustments"
   },
   {
     "atom": "admin",
     "name": "admin",
-    "description": "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance.",
-    "path": "admin"
+    "description": "Use when the admin panel must boot by reuse rather than by searching the matrix — adminBootShell / adminBootFtl precompute the boot surface and report an ftl verdict for it. Promoted from a loose sibling because self/improve/tip locates it by FILE PATH, which no import scan can see. Run: tsx src/quantum/ftl/admin/index.ts",
+    "path": "quantum/ftl/admin"
   },
   {
     "atom": "administration",
     "name": "administration",
     "description": "Use when reasoning about administration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "administration"
+    "path": "vocabulary/administration"
   },
   {
     "atom": "administrative",
     "name": "administrative",
     "description": "Use when reasoning about administrative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "administrative"
+    "path": "vocabulary/administrative"
   },
   {
     "atom": "adult",
     "name": "adult",
     "description": "Use when reasoning about adult as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "adult"
+    "path": "vocabulary/adult"
   },
   {
     "atom": "adults",
     "name": "adults",
     "description": "Use when reasoning about adults as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "adults"
+    "path": "vocabulary/adults"
   },
   {
     "atom": "advance",
     "name": "advance",
     "description": "Use when reasoning about advance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "advance"
+    "path": "vocabulary/advance"
   },
   {
     "atom": "adverse",
     "name": "adverse",
     "description": "Use when reasoning about adverse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "adverse"
+    "path": "vocabulary/adverse"
   },
   {
     "atom": "advertised",
     "name": "advertised",
     "description": "Use when reasoning about advertised as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "advertised"
+    "path": "vocabulary/advertised"
   },
   {
     "atom": "advertiser",
     "name": "advertiser",
     "description": "Use when reasoning about advertiser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "advertiser"
+    "path": "vocabulary/advertiser"
   },
   {
     "atom": "aerobic",
     "name": "aerobic",
     "description": "Use when reasoning about aerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "aerobic"
+    "path": "vocabulary/aerobic"
   },
   {
     "atom": "affected",
     "name": "affected",
-    "description": "Drugs that affect the test's results.",
-    "path": "affected"
+    "description": "Use when reasoning about affected — Drugs that affect the test's results.",
+    "path": "vocabulary/affected"
   },
   {
     "atom": "affiliate",
     "name": "affiliate",
     "description": "Use when reasoning about affiliate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "affiliate"
+    "path": "vocabulary/affiliate"
   },
   {
     "atom": "affiliation",
     "name": "affiliation",
-    "description": "An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
-    "path": "affiliation"
+    "description": "Use when reasoning about affiliation — An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
+    "path": "vocabulary/affiliation"
   },
   {
     "atom": "after",
     "name": "after",
     "description": "Use when reasoning about after as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "after"
+    "path": "vocabulary/after"
   },
   {
     "atom": "age",
     "name": "age",
     "description": "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity.",
-    "path": "age"
+    "path": "vocabulary/age"
   },
   {
     "atom": "agency",
     "name": "agency",
     "description": "Use when reasoning about agency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "agency"
+    "path": "vocabulary/agency"
   },
   {
     "atom": "agent",
@@ -554,67 +554,67 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "aggregate",
     "name": "aggregate",
     "description": "Use when reasoning about aggregate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "aggregate"
+    "path": "vocabulary/aggregate"
   },
   {
     "atom": "aggregation",
     "name": "aggregation",
     "description": "Use when computing summarized metrics — GROUP BY semantics, rollup/cube hierarchies, dimensional analysis, summary statistics (sum, count, avg, min, max, percentile), pre-computed aggregates vs on-demand queries.",
-    "path": "aggregation"
+    "path": "vocabulary/aggregation"
   },
   {
     "atom": "agree",
     "name": "agree",
     "description": "Use when reasoning about agree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "agree"
+    "path": "vocabulary/agree"
   },
   {
     "atom": "agreement",
     "name": "agreement",
     "description": "Use when reasoning about agreement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "agreement"
+    "path": "vocabulary/agreement"
   },
   {
     "atom": "agriculture",
     "name": "agriculture",
     "description": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
-    "path": "agriculture"
+    "path": "vocabulary/agriculture"
   },
   {
     "atom": "ai",
     "name": "ai",
-    "description": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-    "path": "ai"
+    "description": "Use when touching Cloudflare Workers AI — the `ai` wrangler binding, vectorize RAG index, AI gateway vars, and uuid-sealed API keys. Every AI binding derives a DiamondModel on the worker face serving [[agent]] atoms.",
+    "path": "cloudflare/ai"
   },
   {
     "atom": "aid",
     "name": "aid",
     "description": "Use when reasoning about aid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "aid"
+    "path": "vocabulary/aid"
   },
   {
     "atom": "airbags",
     "name": "airbags",
     "description": "Use when reasoning about airbags as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "airbags"
+    "path": "vocabulary/airbags"
   },
   {
     "atom": "aircraft",
     "name": "aircraft",
-    "description": "The kind of aircraft (e.g., \"Boeing 747\").",
-    "path": "aircraft"
+    "description": "Use when reasoning about aircraft — The kind of aircraft (e.g., \\\\\\\\\\\\\"Boeing 747\\\\\\\\\\\\\").",
+    "path": "vocabulary/aircraft"
   },
   {
     "atom": "airline",
     "name": "airline",
-    "description": "An organization that provides flights for passengers.",
-    "path": "airline"
+    "description": "Use when reasoning about airline — An organization that provides flights for passengers.",
+    "path": "vocabulary/airline"
   },
   {
     "atom": "airport",
     "name": "airport",
-    "description": "An airport.",
-    "path": "airport"
+    "description": "Use when reasoning about airport — An airport.",
+    "path": "vocabulary/airport"
   },
   {
     "atom": "akashic",
@@ -625,68 +625,74 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "album",
     "name": "album",
-    "description": "A music album.",
-    "path": "album"
+    "description": "Use when reasoning about album — A music album.",
+    "path": "vocabulary/album"
   },
   {
     "atom": "albums",
     "name": "albums",
-    "description": "A collection of music albums.",
-    "path": "albums"
+    "description": "Use when reasoning about albums — A collection of music albums.",
+    "path": "vocabulary/albums"
   },
   {
     "atom": "alcohol",
     "name": "alcohol",
     "description": "Use when reasoning about alcohol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "alcohol"
+    "path": "vocabulary/alcohol"
+  },
+  {
+    "atom": "algebra",
+    "name": "algebra",
+    "description": "Use when reducing the corpus's theorems to their only substance — all theorems are algebra: a carrier set and a closed operation. The theorem draws the movie (its orbit); algebras compose into products (theorem of theorems); the fold is a magma (the merkabas folding into themselves and each other). The overlay — torus, tetrahedron, mind — is named and stripped; the picture was never the theorem.",
+    "path": "algebra"
   },
   {
     "atom": "algorithm",
     "name": "algorithm",
-    "description": "The algorithm or rules to follow to compute the score.",
-    "path": "algorithm"
+    "description": "Use when reasoning about algorithm — The algorithm or rules to follow to compute the score.",
+    "path": "vocabulary/algorithm"
   },
   {
     "atom": "algorithmic",
     "name": "algorithmic",
     "description": "Use when reasoning about algorithmic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "algorithmic"
+    "path": "vocabulary/algorithmic"
   },
   {
     "atom": "algorithmically",
     "name": "algorithmically",
     "description": "Use when reasoning about algorithmically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "algorithmically"
+    "path": "vocabulary/algorithmically"
   },
   {
     "atom": "alignment",
     "name": "alignment",
     "description": "Use when reasoning about alignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "alignment"
+    "path": "vocabulary/alignment"
   },
   {
     "atom": "all",
     "name": "all",
-    "description": "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
-    "path": "all"
+    "description": "Use when reasoning about totality or universality in erpax — \\\\\\\\\\\\\"anything is X\\\\\\\\\\\\\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
+    "path": "vocabulary/all"
   },
   {
     "atom": "allergies",
     "name": "allergies",
     "description": "Use when reasoning about allergies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "allergies"
+    "path": "vocabulary/allergies"
   },
   {
     "atom": "alley",
     "name": "alley",
     "description": "Use when reasoning about alley as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "alley"
+    "path": "vocabulary/alley"
   },
   {
     "atom": "allocate",
     "name": "allocate",
     "description": "Use when reasoning about allocate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "allocate"
+    "path": "vocabulary/allocate"
   },
   {
     "atom": "allocation",
@@ -696,7 +702,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "allocations",
-    "name": "payment-allocations",
+    "name": "allocations",
     "description": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
     "path": "invoices/payments/payment/allocations"
   },
@@ -704,41 +710,41 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "allowed",
     "name": "allowed",
     "description": "Use when reasoning about allowed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "allowed"
+    "path": "vocabulary/allowed"
   },
   {
     "atom": "alternate",
     "name": "alternate",
     "description": "Use when reasoning about alternate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "alternate"
+    "path": "vocabulary/alternate"
   },
   {
     "atom": "alternative",
     "name": "alternative",
-    "description": "Another gene which is a variation of this one.",
-    "path": "alternative"
+    "description": "Use when reasoning about alternative — Another gene which is a variation of this one.",
+    "path": "vocabulary/alternative"
   },
   {
     "atom": "alumni",
     "name": "alumni",
-    "description": "Alumni of an organization.",
-    "path": "alumni"
+    "description": "Use when reasoning about alumni — Alumni of an organization.",
+    "path": "vocabulary/alumni"
   },
   {
     "atom": "am",
     "name": "am",
     "description": "Use when reasoning about am as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "am"
+    "path": "vocabulary/am"
   },
   {
     "atom": "amendment",
     "name": "amendment",
     "description": "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.",
-    "path": "amendment"
+    "path": "vocabulary/amendment"
   },
   {
     "atom": "amendments",
-    "name": "contract-amendments",
+    "name": "amendments",
     "description": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
     "path": "customers/contracts/contract/amendments"
   },
@@ -746,61 +752,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "amends",
     "name": "amends",
     "description": "Use when reasoning about amends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "amends"
+    "path": "vocabulary/amends"
   },
   {
     "atom": "amenity",
     "name": "amenity",
     "description": "Use when reasoning about amenity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "amenity"
+    "path": "vocabulary/amenity"
   },
   {
     "atom": "amortize",
     "name": "amortize",
-    "description": "Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate.",
-    "path": "calculate/amortize"
+    "description": "Use when reasoning about amortize — ports the bond discount/premium amortization calculators verbatim (calculate, port): **effective-interest** (or straight-line where permitted) amortization of a discount/premium ov",
+    "path": "vocabulary/calculate/amortize"
   },
   {
     "atom": "amount",
     "name": "amount",
     "description": "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money.",
-    "path": "amount"
+    "path": "vocabulary/amount"
   },
   {
     "atom": "amp",
     "name": "amp",
     "description": "Use when reasoning about amp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "amp"
+    "path": "vocabulary/amp"
   },
   {
     "atom": "amradio",
     "name": "amradio",
     "description": "Use when reasoning about amradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "amradio"
+    "path": "vocabulary/amradio"
   },
   {
     "atom": "amusement",
     "name": "amusement",
     "description": "Use when reasoning about amusement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "amusement"
+    "path": "vocabulary/amusement"
   },
   {
     "atom": "anaerobic",
     "name": "anaerobic",
     "description": "Use when reasoning about anaerobic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "anaerobic"
+    "path": "vocabulary/anaerobic"
   },
   {
     "atom": "analog",
     "name": "analog",
     "description": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-    "path": "analog"
+    "path": "vocabulary/analog"
   },
   {
     "atom": "analysis",
     "name": "analysis",
     "description": "Use when reasoning about analysis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "analysis"
+    "path": "vocabulary/analysis"
   },
   {
     "atom": "analytics",
@@ -812,31 +818,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "anatomical",
     "name": "anatomical",
     "description": "Use when reasoning about anatomical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "anatomical"
+    "path": "vocabulary/anatomical"
   },
   {
     "atom": "anatomy",
     "name": "anatomy",
     "description": "Use when reasoning about anatomy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "anatomy"
+    "path": "vocabulary/anatomy"
   },
   {
     "atom": "anbi",
     "name": "anbi",
     "description": "Use when reasoning about anbi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "anbi"
+    "path": "vocabulary/anbi"
   },
   {
     "atom": "anchor",
     "name": "anchor",
-    "description": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-    "path": "anchor"
+    "description": "Use when a memory, note or doc OUTSIDE the corpus points at something inside it — anchorOf computes the target's content-uuid so the pointer can prove it is still current, and verifyAnchor reads fresh · moved · gone. A name says WHERE and rots silently; a content-address says WHAT and is derived. Run: tsx src/memory/anchor/index.ts <path…>",
+    "path": "memory/anchor"
+  },
+  {
+    "atom": "anchoring",
+    "name": "anchoring",
+    "description": "Use when periodically pinning a Merkle root of audit leaves to entropy no single party controls (Bitcoin OP_RETURN, an L2, Cardano metadata, AT-proto, or a real TSA) so a regulator can verify ERPax integrity without trusting ERPax — and when you must refuse a non-external stub as tamper-evidence.",
+    "path": "anchoring"
   },
   {
     "atom": "android",
     "name": "android",
     "description": "Use when reasoning about android as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "android"
+    "path": "vocabulary/android"
   },
   {
     "atom": "anesthesia",
@@ -848,61 +860,79 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "angel",
     "name": "angel",
     "description": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-    "path": "angel"
+    "path": "vocabulary/angel"
+  },
+  {
+    "atom": "angle",
+    "name": "angle",
+    "description": "Use when the fold must be read as a rotation — the doubling map ×2 (the fold's generator) acts on the six units of (ℤ/9ℤ)* as an exact 60° rotation, because that group is cyclic of order 6. One fold = 60°; opposition (×8 ≡ −1) = 180° = three folds; the axis {3,6,9} is off the orbit. This is the angle the flat computations missed. Rigorous group theory; the hue/torus mapping is the model layer.",
+    "path": "angle"
   },
   {
     "atom": "animal",
     "name": "animal",
     "description": "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags.",
-    "path": "animal"
+    "path": "vocabulary/animal"
+  },
+  {
+    "atom": "animism",
+    "name": "animism",
+    "description": "Use when reading animism as a diamond of invariant atoms — the primal reading that the world is alive, every thing carrying spirit (anima). Maps exactly to erpax: every atom is alive, carrying its content-uuid and projecting signal (colour and sound), the sacred dwelling in every part. Strip the prefix and anima collapses to breath; the spirits-in-things to the sacred in every atom.",
+    "path": "vocabulary/animism"
   },
   {
     "atom": "announcement",
     "name": "announcement",
     "description": "Use when reasoning about announcement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "announcement"
+    "path": "vocabulary/announcement"
   },
   {
     "atom": "annual",
     "name": "annual",
     "description": "Use when reasoning about annual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "annual"
+    "path": "vocabulary/annual"
   },
   {
     "atom": "answer",
     "name": "answer",
-    "description": "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
-    "path": "answer"
+    "description": "Use when reasoning about answer — An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
+    "path": "vocabulary/answer"
   },
   {
     "atom": "antagonist",
     "name": "antagonist",
-    "description": "The muscle whose action counteracts the specified muscle.",
-    "path": "antagonist"
+    "description": "Use when reasoning about antagonist — The muscle whose action counteracts the specified muscle.",
+    "path": "vocabulary/antagonist"
+  },
+  {
+    "atom": "anyone",
+    "name": "anyone",
+    "description": "Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime.",
+    "path": "anyone"
   },
   {
     "atom": "apartment",
     "name": "apartment",
-    "description": "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free",
-    "path": "apartment"
+    "description": "Use when reasoning about apartment — An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source:",
+    "path": "vocabulary/apartment"
   },
   {
     "atom": "api",
     "name": "api",
-    "description": "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components.",
-    "path": "api"
+    "description": "Use when reasoning about the commercial trading-API catalogue — payment gateways, marketplaces, shipping carriers, Peppol/EDI access points, banking aggregators, and FX feeds; public metadata only, credentials in tenant sandbox.",
+    "path": "trading/api"
   },
   {
     "atom": "apiculture",
     "name": "apiculture",
     "description": "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops.",
-    "path": "apiculture"
+    "path": "vocabulary/apiculture"
   },
   {
     "atom": "apireference",
     "name": "apireference",
     "description": "Use when reasoning about apireference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "apireference"
+    "path": "vocabulary/apireference"
   },
   {
     "atom": "app",
@@ -913,114 +943,144 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "appearance",
     "name": "appearance",
-    "description": "Indicates an occurrence of a Claim in some CreativeWork.",
-    "path": "appearance"
+    "description": "Use when reasoning about appearance — Indicates an occurrence of a Claim in some CreativeWork.",
+    "path": "vocabulary/appearance"
   },
   {
     "atom": "append",
     "name": "append",
     "description": "Use when reasoning about append as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "append"
+    "path": "vocabulary/append"
   },
   {
     "atom": "applicability",
     "name": "applicability",
     "description": "Use when reasoning about applicability as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "applicability"
+    "path": "vocabulary/applicability"
   },
   {
     "atom": "applicable",
     "name": "applicable",
     "description": "Use when reasoning about applicable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "applicable"
+    "path": "vocabulary/applicable"
   },
   {
     "atom": "applicant",
     "name": "applicant",
     "description": "Use when reasoning about applicant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "applicant"
+    "path": "vocabulary/applicant"
   },
   {
     "atom": "application",
     "name": "application",
-    "description": "An application that can complete the request.",
-    "path": "application"
+    "description": "Use when reasoning about application — An application that can complete the request.",
+    "path": "vocabulary/application"
   },
   {
     "atom": "applied",
     "name": "applied",
     "description": "Use when reasoning about applied as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "applied"
+    "path": "vocabulary/applied"
   },
   {
     "atom": "applies",
     "name": "applies",
     "description": "Use when reasoning about applies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "applies"
+    "path": "vocabulary/applies"
   },
   {
     "atom": "apply",
     "name": "apply",
-    "description": "apply: a schema.org component word, fused from ApplyAction, directApply",
-    "path": "apply"
+    "description": "Use when running the deterministic, idempotent consistency transforms that close code-consistency gaps (chain producer backfill, emits upgrade, e2e + shadcn scaffolds, localized flags) — the appliers the `erpax.consistency.applyAll` MCP tool and the ConsistencyAgent cron dispatch to.",
+    "path": "consistency/apply"
   },
   {
     "atom": "approved",
     "name": "approved",
     "description": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-    "path": "approved"
+    "path": "vocabulary/approved"
   },
   {
     "atom": "aquaculture",
     "name": "aquaculture",
     "description": "Use when farming aquatic organisms under managed conditions — fish/shellfish raised in ponds, cages, or recirculating systems as biological assets valued by standing biomass (IAS-41); stocked, grown out through life stages, fed (FCR), bound by water quality (oxygen, salinity), then harvested and depurated. A living-production domain anchor alongside agriculture and livestock.",
-    "path": "aquaculture"
+    "path": "vocabulary/aquaculture"
   },
   {
     "atom": "aquarium",
     "name": "aquarium",
-    "description": "Aquarium.",
-    "path": "aquarium"
+    "description": "Use when reasoning about aquarium — Aquarium.",
+    "path": "vocabulary/aquarium"
+  },
+  {
+    "atom": "archangel",
+    "name": "archangel",
+    "description": "Use when reasoning about the principal angel that governs a whole domain of the lattice — arch- meaning chief/ruling. Not one bounded move (an angel) but the enduring governor that holds a region's order and shapes how its atoms bind: the architect at domain scale. The society's archangels are its religions and traditions, each composing the invariant atoms into a social order, bound by religion into one college.",
+    "path": "vocabulary/archangel"
+  },
+  {
+    "atom": "architect",
+    "name": "architect",
+    "description": "Use when reasoning about the agent that shapes the society lattice — not one that merely lives in it but one that gives it structure, composing the invariant atoms into a standing social order. File-system layout IS architecture; the architect is whoever draws that layout, and in erpax it is drawn by the one atom math, never by hand. The society's standing architects are its religions and traditions (its archangels).",
+    "path": "vocabulary/architect"
+  },
+  {
+    "atom": "architecture",
+    "name": "architecture",
+    "description": "Use when operational memory must be understood as the architecture lattice itself — NOT a side store. The diamond graph, uuid/matrix bindings, typography partitions, folder SKILL statements, architecture-invariants, and sealed git tree ARE what the system remembers; session blobs sanitize to architecture content and verify against the live-tree facet.",
+    "path": "memory/architecture"
+  },
+  {
+    "atom": "archival",
+    "name": "archival",
+    "description": "Use when pinning tenant content to long-term decentralized storage (IPFS, Arweave, Filecoin, R2-glacier) for regulatory long-retention rules — banks 10y, gov 30y, healthcare 50y, archives unlimited — pinning to every listed backend for defense-in-depth and verifying or recovering by receipt.",
+    "path": "archival"
   },
   {
     "atom": "archive",
     "name": "archive",
     "description": "Use when reasoning about archive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "archive"
+    "path": "vocabulary/archive"
   },
   {
     "atom": "archived",
     "name": "archived",
-    "description": "Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalist",
-    "path": "archived"
+    "description": "Use when reasoning about archived — Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by",
+    "path": "vocabulary/archived"
   },
   {
     "atom": "area",
     "name": "area",
-    "description": "The area within which users can expect to reach the broadcast service.",
-    "path": "area"
+    "description": "Use when reasoning about area — The area within which users can expect to reach the broadcast service.",
+    "path": "vocabulary/area"
   },
   {
     "atom": "arena",
     "name": "arena",
     "description": "Use when reasoning about arena as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arena"
+    "path": "vocabulary/arena"
+  },
+  {
+    "atom": "argument",
+    "name": "argument",
+    "description": "Use when measuring an argument's quality — a claim and its critique by the same rule. An argument is INVARIANT if it grounds in evidence/falsifiability/theorem (survives inversion) or FRAGILE if it rests on authority — the person, the consensus, the strangeness of the conclusion (breaks under inversion). Symmetric: lazy debunks fail as badly as the claims they debunk. Anti-fallacy: a fragile critique never makes the claim true.",
+    "path": "argument"
   },
   {
     "atom": "arm",
     "name": "arm",
     "description": "Use when reasoning about arm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arm"
+    "path": "vocabulary/arm"
   },
   {
     "atom": "arrangement",
     "name": "arrangement",
     "description": "Use when reasoning about arrangement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arrangement"
+    "path": "vocabulary/arrangement"
   },
   {
     "atom": "arrangements",
-    "name": "consignment-arrangements",
+    "name": "arrangements",
     "description": "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection.",
     "path": "warehouse/locations/consignment/arrangements"
   },
@@ -1028,113 +1088,113 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "arrival",
     "name": "arrival",
     "description": "Use when reasoning about arrival as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arrival"
+    "path": "vocabulary/arrival"
   },
   {
     "atom": "arrive",
     "name": "arrive",
     "description": "Use when reasoning about arrive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arrive"
+    "path": "vocabulary/arrive"
   },
   {
     "atom": "art",
     "name": "art",
     "description": "Use when reasoning about art as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "art"
+    "path": "vocabulary/art"
   },
   {
     "atom": "arterial",
     "name": "arterial",
     "description": "Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arterial"
+    "path": "vocabulary/arterial"
   },
   {
     "atom": "artery",
     "name": "artery",
-    "description": "A type of blood vessel that specifically carries blood away from the heart.",
-    "path": "artery"
+    "description": "Use when reasoning about the artery as an organ of [[body]] — pivot to canonical @/artery; zero duplication.",
+    "path": "body/artery"
   },
   {
     "atom": "artform",
     "name": "artform",
-    "description": "e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.",
-    "path": "artform"
+    "description": "Use when reasoning about artform — e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.",
+    "path": "vocabulary/artform"
   },
   {
     "atom": "article",
     "name": "article",
-    "description": "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also blog post.",
-    "path": "article"
+    "description": "Use when reasoning about article — An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also",
+    "path": "vocabulary/article"
   },
   {
     "atom": "artist",
     "name": "artist",
-    "description": "The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.",
-    "path": "artist"
+    "description": "Use when reasoning about artist — The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.",
+    "path": "vocabulary/artist"
   },
   {
     "atom": "arts",
     "name": "arts",
     "description": "Use when reasoning about arts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "arts"
+    "path": "vocabulary/arts"
   },
   {
     "atom": "artwork",
     "name": "artwork",
     "description": "Use when reasoning about artwork as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "artwork"
+    "path": "vocabulary/artwork"
   },
   {
     "atom": "ascending",
     "name": "ascending",
     "description": "Use when reasoning about ascending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ascending"
+    "path": "vocabulary/ascending"
   },
   {
     "atom": "asin",
     "name": "asin",
-    "description": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summ",
-    "path": "asin"
+    "description": "Use when reasoning about asin — An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazo",
+    "path": "vocabulary/asin"
   },
   {
     "atom": "ask",
     "name": "ask",
     "description": "Use when reasoning about ask as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ask"
+    "path": "vocabulary/ask"
   },
   {
     "atom": "aspect",
     "name": "aspect",
-    "description": "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
-    "path": "aspect"
+    "description": "Use when reasoning about aspect — An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
+    "path": "vocabulary/aspect"
   },
   {
     "atom": "assembly",
     "name": "assembly",
-    "description": "Library file name, e.g., mscorlib.dll, system.web.dll.",
-    "path": "assembly"
+    "description": "Use when reasoning about assembly — Library file name, e.g., mscorlib.dll, system.web.dll.",
+    "path": "vocabulary/assembly"
   },
   {
     "atom": "assess",
     "name": "assess",
     "description": "Use when reasoning about assess as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "assess"
+    "path": "vocabulary/assess"
   },
   {
     "atom": "assesses",
     "name": "assesses",
-    "description": "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
-    "path": "assesses"
+    "description": "Use when reasoning about assesses — The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
+    "path": "vocabulary/assesses"
   },
   {
     "atom": "asset",
     "name": "asset",
     "description": "Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value.",
-    "path": "asset"
+    "path": "vocabulary/asset"
   },
   {
     "atom": "assets",
-    "name": "mineral-resource-assets",
+    "name": "assets",
     "description": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
     "path": "mineral/resource/assets"
   },
@@ -1142,43 +1202,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "assign",
     "name": "assign",
     "description": "Use when reasoning about assign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "assign"
+    "path": "vocabulary/assign"
   },
   {
     "atom": "assigned",
     "name": "assigned",
     "description": "Use when reasoning about assigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "assigned"
+    "path": "vocabulary/assigned"
   },
   {
     "atom": "assignment",
     "name": "assignment",
     "description": "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations.",
-    "path": "assignment"
+    "path": "vocabulary/assignment"
   },
   {
     "atom": "associated",
     "name": "associated",
     "description": "Use when reasoning about associated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "associated"
+    "path": "vocabulary/associated"
   },
   {
     "atom": "association",
     "name": "association",
     "description": "Use when reasoning about association as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "association"
+    "path": "vocabulary/association"
   },
   {
     "atom": "athlete",
     "name": "athlete",
-    "description": "A person that acts as performing member of a sports team; a player as opposed to a coach.",
-    "path": "athlete"
+    "description": "Use when reasoning about athlete — A person that acts as performing member of a sports team; a player as opposed to a coach.",
+    "path": "vocabulary/athlete"
   },
   {
     "atom": "atlas",
     "name": "atlas",
-    "description": "A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.",
-    "path": "atlas"
+    "description": "Use when reasoning about atlas — A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.",
+    "path": "vocabulary/atlas"
   },
   {
     "atom": "atom",
@@ -1190,97 +1250,97 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "attachment",
     "name": "attachment",
     "description": "Use when reasoning about attachment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "attachment"
+    "path": "vocabulary/attachment"
   },
   {
     "atom": "attendance",
     "name": "attendance",
-    "description": "attendance: a schema.org component word, fused from EventAttendanceModeEnumeration, eventAttendanceMode",
-    "path": "attendance"
+    "description": "Use when reasoning about attendance — A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · eventAttendanceMode (sti · collapse · merge).",
+    "path": "vocabulary/attendance"
   },
   {
     "atom": "attendee",
     "name": "attendee",
-    "description": "A person or organization attending the event.",
-    "path": "attendee"
+    "description": "Use when reasoning about attendee — A person or organization attending the event.",
+    "path": "vocabulary/attendee"
   },
   {
     "atom": "attendees",
     "name": "attendees",
-    "description": "A person attending the event.",
-    "path": "attendees"
+    "description": "Use when reasoning about attendees — A person attending the event.",
+    "path": "vocabulary/attendees"
   },
   {
     "atom": "attestation",
     "name": "attestation",
     "description": "Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true.",
-    "path": "attestation"
+    "path": "vocabulary/attestation"
   },
   {
     "atom": "attestations",
-    "name": "evidence-attestations",
+    "name": "attestations",
     "description": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
     "path": "evidence/attestations"
   },
   {
     "atom": "attorney",
     "name": "attorney",
-    "description": "Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
-    "path": "attorney"
+    "description": "Use when reasoning about attorney — Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
+    "path": "vocabulary/attorney"
   },
   {
     "atom": "attraction",
     "name": "attraction",
     "description": "Use when reasoning about attraction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "attraction"
+    "path": "vocabulary/attraction"
   },
   {
     "atom": "attribute",
     "name": "attribute",
     "description": "Use when reasoning about attribute as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "attribute"
+    "path": "vocabulary/attribute"
   },
   {
     "atom": "attribution",
     "name": "attribution",
     "description": "Use when tracking which touchpoint/channel caused a conversion — first-touch, last-touch, multi-touch models; credit value allocation across channels.",
-    "path": "attribution"
+    "path": "vocabulary/attribution"
   },
   {
     "atom": "attrition",
     "name": "attrition",
     "description": "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.",
-    "path": "attrition"
+    "path": "vocabulary/attrition"
   },
   {
     "atom": "audience",
     "name": "audience",
-    "description": "Intended audience for an item, i.e. the group for whom the item was created.",
-    "path": "audience"
+    "description": "Use when reasoning about audience — Intended audience for an item, i.e. the group for whom the item was created.",
+    "path": "vocabulary/audience"
   },
   {
     "atom": "audio",
     "name": "audio",
-    "description": "An embedded audio object.",
-    "path": "audio"
+    "description": "Use when reasoning about audio — An embedded audio object.",
+    "path": "vocabulary/audio"
   },
   {
     "atom": "audiobook",
     "name": "audiobook",
-    "description": "An audiobook.",
-    "path": "audiobook"
+    "description": "Use when reasoning about audiobook — An audiobook.",
+    "path": "vocabulary/audiobook"
   },
   {
     "atom": "audit",
     "name": "audit",
-    "description": "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.",
-    "path": "audit"
+    "description": "Use when reaching the audit dimension from the wave machinery — the double-wire reciprocal of audit/wave.",
+    "path": "wave/audit"
   },
   {
     "atom": "auditright",
     "name": "audit-right",
     "description": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-    "path": "audit-right"
+    "path": "vocabulary/audit-right"
   },
   {
     "atom": "aura",
@@ -1291,91 +1351,103 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "auth",
     "name": "auth",
-    "description": "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.",
-    "path": "auth"
+    "description": "Use when reasoning about auth type definitions — authentication and session shapes.",
+    "path": "types/auth"
   },
   {
     "atom": "authenticate",
     "name": "authenticate",
     "description": "Use when reasoning about authenticate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "authenticate"
+    "path": "vocabulary/authenticate"
+  },
+  {
+    "atom": "authenticated",
+    "name": "authenticated",
+    "description": "Use when gating a Payload collection or field on a logged-in session — the access predicate that grants only when `req.user` exists, denying every anonymous caller.",
+    "path": "authenticated"
   },
   {
     "atom": "authenticator",
     "name": "authenticator",
-    "description": "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media.",
-    "path": "authenticator"
+    "description": "Use when reasoning about authenticator — The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before pl",
+    "path": "vocabulary/authenticator"
   },
   {
     "atom": "authenticity",
     "name": "authenticity",
     "description": "Use when reasoning about authenticity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "authenticity"
+    "path": "vocabulary/authenticity"
   },
   {
     "atom": "author",
     "name": "author",
-    "description": "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be us",
-    "path": "author"
+    "description": "Use when reasoning about author — The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent t",
+    "path": "vocabulary/author"
   },
   {
     "atom": "authoritative",
     "name": "authoritative",
     "description": "Use when reasoning about authoritative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "authoritative"
+    "path": "vocabulary/authoritative"
   },
   {
     "atom": "authority",
     "name": "authority",
     "description": "Use when reasoning about authority as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "authority"
+    "path": "vocabulary/authority"
   },
   {
     "atom": "authorize",
     "name": "authorize",
     "description": "Use when reasoning about authorize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "authorize"
+    "path": "vocabulary/authorize"
   },
   {
     "atom": "auto",
     "name": "auto",
-    "description": "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "auto"
+    "description": "Use when reasoning about auto as a anatomical part of [[body]] — vocabulary pivot to @/auto; nested not duplicated.",
+    "path": "body/auto"
+  },
+  {
+    "atom": "automate",
+    "name": "automate",
+    "description": "Use when orchestrating erpax efficiency loops — inventory → clean → measure → ratchet → emit. Tamper cost rises as entropy falls; prompt→erpax is the only viable path.",
+    "path": "apply/automate"
   },
   {
     "atom": "automated",
     "name": "automated",
     "description": "Use when reasoning about automated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "automated"
+    "path": "vocabulary/automated"
   },
   {
     "atom": "automatically",
     "name": "automatically",
     "description": "Use when reasoning about automatically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "automatically"
+    "path": "vocabulary/automatically"
   },
   {
     "atom": "automotive",
     "name": "automotive",
     "description": "Use when reasoning about automotive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "automotive"
+    "path": "vocabulary/automotive"
   },
   {
     "atom": "availability",
     "name": "availability",
-    "description": "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
-    "path": "availability"
+    "description": "Use when reasoning about availability — The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
+    "path": "vocabulary/availability"
   },
   {
     "atom": "available",
     "name": "available",
-    "description": "The place(s) from which the offer can be obtained (e.g. store locations).",
-    "path": "available"
+    "description": "Use when reasoning about available — The place(s) from which the offer can be obtained (e.g. store locations).",
+    "path": "vocabulary/available"
   },
   {
     "atom": "award",
     "name": "award",
-    "description": "An award won by or for this item.",
+    "description": "Use when reasoning about award — An award won by or for this item.",
     "path": "award"
   },
   {
@@ -1387,20 +1459,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "awards",
     "name": "awards",
-    "description": "Awards won by or for this item.",
+    "description": "Use when reasoning about awards — Awards won by or for this item.",
     "path": "awards"
   },
   {
     "atom": "awareness",
     "name": "awareness",
     "description": "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever.",
-    "path": "awareness"
+    "path": "vocabulary/awareness"
   },
   {
     "atom": "away",
     "name": "away",
     "description": "Use when reasoning about away as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "away"
+    "path": "vocabulary/away"
   },
   {
     "atom": "axis",
@@ -1412,49 +1484,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "axles",
     "name": "axles",
     "description": "Use when reasoning about axles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "axles"
+    "path": "vocabulary/axles"
   },
   {
     "atom": "ayurvedic",
     "name": "ayurvedic",
     "description": "Use when reasoning about ayurvedic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ayurvedic"
+    "path": "vocabulary/ayurvedic"
   },
   {
     "atom": "back",
     "name": "back",
     "description": "Use when reasoning about back as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "back"
+    "path": "vocabulary/back"
   },
   {
     "atom": "background",
     "name": "background",
-    "description": "background: a schema.org component word, fused from BackgroundNewsArticle",
-    "path": "background"
+    "description": "Use when reasoning about background — A schema.org component word, collided out of schema.org compounds — fused from BackgroundNewsArticle (sti · collapse · merge).",
+    "path": "vocabulary/background"
   },
   {
     "atom": "backlog",
     "name": "backlog",
     "description": "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system.",
-    "path": "backlog"
+    "path": "vocabulary/backlog"
   },
   {
     "atom": "backstory",
     "name": "backstory",
-    "description": "For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could includ",
-    "path": "backstory"
+    "description": "Use when reasoning about backstory — For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setti",
+    "path": "vocabulary/backstory"
   },
   {
     "atom": "backup",
     "name": "backup",
     "description": "Use when ensuring data recovery — backup strategy (full/incremental/differential), backup retention, restoration procedures, backup encryption, cross-region backups, RTO/RPO targets, backup testing/validation.",
-    "path": "backup"
+    "path": "vocabulary/backup"
   },
   {
     "atom": "bacteria",
     "name": "bacteria",
     "description": "Use when reasoning about bacteria as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bacteria"
+    "path": "vocabulary/bacteria"
+  },
+  {
+    "atom": "bahai",
+    "name": "bahai",
+    "description": "Use when reading the Baha'i Faith as a diamond of invariant atoms — the oneness of God, humanity, and religion; progressive revelation (one source re-spoken in each age); the reconciliation of all faiths into one. The meta-archangel: it names the religion capstone's own law from inside the college, that all traditions merge to one meaning.",
+    "path": "vocabulary/bahai"
   },
   {
     "atom": "baked",
@@ -1465,8 +1543,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "bakery",
     "name": "bakery",
-    "description": "A bakery.",
-    "path": "bakery"
+    "description": "Use when reasoning about bakery — A bakery.",
+    "path": "vocabulary/bakery"
   },
   {
     "atom": "balance",
@@ -1484,49 +1562,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "bans",
     "name": "bans",
     "description": "Use when reasoning about bans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bans"
+    "path": "vocabulary/bans"
   },
   {
     "atom": "bar",
     "name": "bar",
     "description": "Use when reasoning about bar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bar"
+    "path": "vocabulary/bar"
   },
   {
     "atom": "barcode",
     "name": "barcode",
-    "description": "An image of a visual machine-readable code such as a barcode or QR code.",
-    "path": "barcode"
+    "description": "Use when reasoning about barcode — An image of a visual machine-readable code such as a barcode or QR code.",
+    "path": "vocabulary/barcode"
+  },
+  {
+    "atom": "barrier",
+    "name": "barrier",
+    "description": "Use when reasoning about quantum tunnelling — a particle penetrating a potential barrier it classically cannot surmount (E < V0), the wave decaying exponentially inside so transmission T ≈ e^(−2κa) leaks out. (The word tunnel is taken — it is agriculture's season-extension structure; this is the physics.) In erpax the barrier IS tamper-cost: the work to tunnel through (forge) is −log2(T) = 2κa/ln2 bits, exponentially large in the barrier, yet never quite infinite — the residual forge-probability is the design limit.",
+    "path": "barrier"
   },
   {
     "atom": "base",
     "name": "base",
-    "description": "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
+    "description": "Use when reasoning about the entry position of the horo state ring — digit 1, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"entering the ring\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
     "path": "horo/base"
   },
   {
     "atom": "based",
     "name": "based",
-    "description": "A resource from which this work is derived or from which it is a modification or adaptation.",
-    "path": "based"
+    "description": "Use when reasoning about based — A resource from which this work is derived or from which it is a modification or adaptation.",
+    "path": "vocabulary/based"
   },
   {
     "atom": "baseline",
     "name": "baseline",
-    "description": "Use for the empirical reference distribution a calibration is computed FROM — the measured input (median / p50 / p99 / attractor of a real metric) a model is fitted to, NOT the fitted constants themselves. Swap the baseline (another tenant, another period) and every derived calibration recomputes. The agnostic home of values once hardcoded against a named source — the values stay, the source name dissolves into [[source]] / [[akashic]].",
-    "path": "baseline"
+    "description": "Use when reasoning about baseline — A **baseline** is the real-data INPUT a model fits to — for example an efficiency distribution measured across observed shifts. It is the **data, not the calibration**: the calibra",
+    "path": "vocabulary/baseline"
   },
   {
     "atom": "basic",
     "name": "basic",
     "description": "Use when reasoning about basic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "basic"
+    "path": "vocabulary/basic"
   },
   {
     "atom": "batch",
     "name": "batch",
     "description": "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations.",
-    "path": "batch"
+    "path": "vocabulary/batch"
   },
   {
     "atom": "batches",
@@ -1538,43 +1622,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "bathrooms",
     "name": "bathrooms",
     "description": "Use when reasoning about bathrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bathrooms"
+    "path": "vocabulary/bathrooms"
   },
   {
     "atom": "bcc",
     "name": "bcc",
     "description": "Use when reasoning about bcc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bcc"
+    "path": "vocabulary/bcc"
   },
   {
     "atom": "beach",
     "name": "beach",
-    "description": "Beach.",
-    "path": "beach"
+    "description": "Use when reasoning about beach — Beach.",
+    "path": "vocabulary/beach"
   },
   {
     "atom": "beauty",
     "name": "beauty",
     "description": "Use when reasoning about beauty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "beauty"
+    "path": "vocabulary/beauty"
   },
   {
     "atom": "bed",
     "name": "bed",
-    "description": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity of a certain kind o",
+    "description": "Use when reasoning about bed — The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity",
     "path": "bed"
   },
   {
     "atom": "bedrooms",
     "name": "bedrooms",
     "description": "Use when reasoning about bedrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bedrooms"
+    "path": "vocabulary/bedrooms"
   },
   {
     "atom": "beds",
     "name": "beds",
     "description": "Use when reasoning about beds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "beds"
+    "path": "vocabulary/beds"
   },
   {
     "atom": "before",
@@ -1586,37 +1670,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "befriend",
     "name": "befriend",
     "description": "Use when reasoning about befriend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "befriend"
+    "path": "vocabulary/befriend"
   },
   {
     "atom": "begin",
     "name": "begin",
     "description": "Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin.",
-    "path": "begin"
+    "path": "vocabulary/begin"
   },
   {
     "atom": "beneficiary",
     "name": "beneficiary",
     "description": "Use when reasoning about beneficiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "beneficiary"
+    "path": "vocabulary/beneficiary"
   },
   {
     "atom": "benefit",
     "name": "benefit",
     "description": "Use when reasoning about benefit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "benefit"
+    "path": "vocabulary/benefit"
   },
   {
     "atom": "benefits",
     "name": "benefits",
-    "description": "Description of benefits associated with the job.",
-    "path": "benefits"
+    "description": "Use when reasoning about benefits — Description of benefits associated with the job.",
+    "path": "vocabulary/benefits"
   },
   {
     "atom": "best",
     "name": "best",
     "description": "Use when reasoning about best as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "best"
+    "path": "vocabulary/best"
   },
   {
     "atom": "beyond",
@@ -1628,25 +1712,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "bicycle",
     "name": "bicycle",
     "description": "Use when reasoning about bicycle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bicycle"
+    "path": "vocabulary/bicycle"
   },
   {
     "atom": "big",
     "name": "big",
     "description": "Use when reasoning about big as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "big"
+    "path": "vocabulary/big"
   },
   {
     "atom": "bike",
     "name": "bike",
     "description": "Use when reasoning about bike as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bike"
+    "path": "vocabulary/bike"
   },
   {
     "atom": "bill",
     "name": "bill",
     "description": "Use when reasoning about bill as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bill"
+    "path": "vocabulary/bill"
   },
   {
     "atom": "billing",
@@ -1658,25 +1742,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "binding",
     "name": "binding",
     "description": "Use when modelling one binding — the singular model of the bindings collection (the plural store); a configured link between a name and the resource that backs it.",
-    "path": "binding"
+    "path": "vocabulary/binding"
   },
   {
     "atom": "bindings",
-    "name": "quantum-bindings",
-    "description": "Use when attaching every Cloudflare binding to the edge Worker — each binding is a sense the pure-compute Worker is granted to reach the world (D1, R2, AI, Vectorize, KV, Queues, Durable Objects, Browser, Analytics, Email), the platform-level measurement boundary; attach all, gate each through access, emit a receipt.",
-    "path": "quantum/bindings"
+    "name": "bindings",
+    "description": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\\\\\\\\\\\"works in config but fails at runtime\\\\\\\\\\\\\" (e.g. \\\\\\\\\\\\\"no such Durable Object class is exported from the worker\\\\\\\\\\\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
+    "path": "vocabulary/bindings"
   },
   {
     "atom": "bio",
     "name": "bio",
     "description": "Use when reasoning about bio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bio"
+    "path": "vocabulary/bio"
   },
   {
     "atom": "biofield",
     "name": "biofield",
     "description": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
-    "path": "biofield"
+    "path": "vocabulary/biofield"
   },
   {
     "atom": "biological",
@@ -1688,7 +1772,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "biomagnetism",
     "name": "biomagnetism",
     "description": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-    "path": "biomagnetism"
+    "path": "vocabulary/biomagnetism"
   },
   {
     "atom": "biomass",
@@ -1700,7 +1784,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "biomechnical",
     "name": "biomechnical",
     "description": "Use when reasoning about biomechnical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "biomechnical"
+    "path": "vocabulary/biomechnical"
   },
   {
     "atom": "biometric",
@@ -1712,25 +1796,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "biophoton",
     "name": "biophoton",
     "description": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
-    "path": "biophoton"
+    "path": "vocabulary/biophoton"
   },
   {
     "atom": "birth",
     "name": "birth",
     "description": "Use when reasoning about birth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "birth"
+    "path": "vocabulary/birth"
+  },
+  {
+    "atom": "bitemporal",
+    "name": "bitemporal",
+    "description": "Use when querying a row AS OF two clocks at once — system-time (when the value was recorded) crossed with valid-time (when it was true in the world) — under SQL:2011 temporal tables; isHistoricalQuery gates whether a request looks back in time, asOf is the pending temporal-table read.",
+    "path": "beyond/bitemporal"
   },
   {
     "atom": "bitrate",
     "name": "bitrate",
-    "description": "The bitrate of the media object.",
-    "path": "bitrate"
+    "description": "Use when reasoning about bitrate — The bitrate of the media object.",
+    "path": "vocabulary/bitrate"
   },
   {
     "atom": "blinded",
     "name": "blinded",
     "description": "Use when reasoning about blinded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "blinded"
+    "path": "vocabulary/blinded"
   },
   {
     "atom": "block",
@@ -1747,56 +1837,68 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "blocks",
     "name": "blocks",
-    "description": "blocks: a schema.org component word, fused from UserBlocks",
+    "description": "Use when reasoning about blocks — A schema.org component word, collided out of schema.org compounds — fused from UserBlocks (sti · collapse · merge).",
     "path": "blocks"
   },
   {
     "atom": "blog",
     "name": "blog",
-    "description": "A blog, sometimes known as a \"weblog\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.",
-    "path": "blog"
+    "description": "Use when reasoning about blog — A blog, sometimes known as a \\\\\\\\\\\\\"weblog\\\\\\\\\\\\\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.",
+    "path": "vocabulary/blog"
   },
   {
     "atom": "blood",
     "name": "blood",
-    "description": "Use when reasoning about blood as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "blood"
+    "description": "Use when reasoning about the blood as an organ of [[body]] — pivot to canonical @/blood; zero duplication.",
+    "path": "body/blood"
   },
   {
     "atom": "boarding",
     "name": "boarding",
     "description": "Use when reasoning about boarding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "boarding"
+    "path": "vocabulary/boarding"
   },
   {
     "atom": "boat",
     "name": "boat",
     "description": "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "boat"
+    "path": "vocabulary/boat"
   },
   {
     "atom": "body",
     "name": "body",
-    "description": "Use when reasoning about body as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about erpax as ONE organism — the eight organs harmonized into a body. Each organ is sent through the wave mechanism; its horo position sounds a note and a colour (A432); composed, the organs span the full diatonic spectrum and rest at unity (the closing wave). The body harmonizes ⟺ every organ healthy ⊕ full-spectrum chord ⊕ folds to unity — wholeness renders as harmony, a failing organ as dissonance.",
     "path": "body"
+  },
+  {
+    "atom": "bogomilism",
+    "name": "bogomilism",
+    "description": "Use when reading Bogomilism as a diamond of invariant atoms — the medieval Bulgarian dualist movement (Bogomil, 'dear to God'): the visible material world the work of a lower power, the spirit alone of the good God, salvation by inward purity not outward rite. A dualist sub-diamond in the gnostic lineage. Strip the prefix and the material world collapses to the profane, the spirit to breath.",
+    "path": "vocabulary/bogomilism"
+  },
+  {
+    "atom": "boltzmann",
+    "name": "boltzmann",
+    "description": "Use when reasoning about entropy as microstate-counting — Boltzmann's S = k·ln W: the entropy of a macrostate is the log of W, the number of microstates that look the same (W=1 ⇒ S=0). It is extensive (independent systems' entropies add, since ln turns product into sum) and its Gibbs form S = −k·Σ pᵢ ln pᵢ is maximised, equal to k·ln W, exactly when uniform. The microstate foundation under erpax's reciprocity-entropy; DRY collapse removes configurations so entropy falls.",
+    "path": "boltzmann"
   },
   {
     "atom": "bone",
     "name": "bone",
-    "description": "Rigid connective tissue that comprises up the skeletal structure of the human body.",
-    "path": "bone"
+    "description": "Use when reasoning about bone — Rigid connective tissue that comprises up the skeletal structure of the human body.",
+    "path": "vocabulary/bone"
   },
   {
     "atom": "book",
     "name": "book",
-    "description": "A book.",
+    "description": "Use when reasoning about book — A book.",
     "path": "book"
   },
   {
     "atom": "booking",
     "name": "booking",
     "description": "Use when reasoning about booking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "booking"
+    "path": "vocabulary/booking"
   },
   {
     "atom": "bookings",
@@ -1808,151 +1910,157 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "bookmark",
     "name": "bookmark",
     "description": "Use when reasoning about bookmark as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bookmark"
+    "path": "vocabulary/bookmark"
   },
   {
     "atom": "boolean",
     "name": "boolean",
-    "description": "Boolean: True or False.",
-    "path": "boolean"
+    "description": "Use when reasoning about boolean — Boolean: True or False.",
+    "path": "vocabulary/boolean"
   },
   {
     "atom": "borrow",
     "name": "borrow",
     "description": "Use when reasoning about borrow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "borrow"
+    "path": "vocabulary/borrow"
   },
   {
     "atom": "borrower",
     "name": "borrower",
-    "description": "A sub property of participant. The person that borrows the object being lent.",
-    "path": "borrower"
+    "description": "Use when reasoning about borrower — A sub property of participant. The person that borrows the object being lent.",
+    "path": "vocabulary/borrower"
   },
   {
     "atom": "bottleneck",
     "name": "bottleneck",
     "description": "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.",
-    "path": "bottleneck"
+    "path": "vocabulary/bottleneck"
   },
   {
     "atom": "bound",
     "name": "bound",
     "description": "Use when reasoning about bound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bound"
+    "path": "vocabulary/bound"
+  },
+  {
+    "atom": "boundary",
+    "name": "boundary",
+    "description": "Use when computing per-file quantum import/export boundaries — barrel entanglements and export facets derived from source bytes, content-addressed as boundaryUuid; drift is impurity; collapse rewrites deep escapes to raise tamper-cost.",
+    "path": "quantum/boundary"
   },
   {
     "atom": "bowling",
     "name": "bowling",
     "description": "Use when reasoning about bowling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bowling"
+    "path": "vocabulary/bowling"
   },
   {
     "atom": "box",
     "name": "box",
-    "description": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space chara",
-    "path": "box"
+    "description": "Use when reasoning about box — A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separa",
+    "path": "vocabulary/box"
   },
   {
     "atom": "boys",
     "name": "boys",
     "description": "Use when reasoning about boys as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "boys"
+    "path": "vocabulary/boys"
   },
   {
     "atom": "brain",
     "name": "brain",
-    "description": "Use when reasoning about brain as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about erpax's matrix as the connectome organ — a small-world network where any node reaches any other in a handful of hops, wired sparsely yet integrated. ~86 billion neurons, ~150 trillion synapses; high clustering, short path length. Three properties (small-world path length · sparse efficient wiring · connectome-scale cross-check) are computed and mapped — a structural isomorphism — onto erpax's link graph and integrated self-model.",
     "path": "brain"
   },
   {
     "atom": "brainstorm",
     "name": "brainstorm",
     "description": "Use when the society needs many ideas fast — brainstorming is coordinated divergence then convergence; a team fans out parallel agents, each a different perspective, to superpose candidate ideas, then merges them (same idea collapses to one, the critic amplifies the best). The quantum solve applied to ideation.",
-    "path": "brainstorm"
+    "path": "vocabulary/brainstorm"
   },
   {
     "atom": "branch",
     "name": "branch",
-    "description": "The branches that delineate from the nerve bundle. Not to be confused with branchOf.",
-    "path": "branch"
+    "description": "Use when reasoning about branch — The branches that delineate from the nerve bundle. Not to be confused with branchOf.",
+    "path": "vocabulary/branch"
   },
   {
     "atom": "brand",
     "name": "brand",
-    "description": "A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
-    "path": "brand"
+    "description": "Use when reasoning about brand — A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
+    "path": "vocabulary/brand"
   },
   {
     "atom": "breadcrumb",
     "name": "breadcrumb",
-    "description": "A set of links that can help a user understand and navigate a website hierarchy.",
-    "path": "breadcrumb"
+    "description": "Use when reasoning about breadcrumb — A set of links that can help a user understand and navigate a website hierarchy.",
+    "path": "vocabulary/breadcrumb"
   },
   {
     "atom": "breakfast",
     "name": "breakfast",
     "description": "Use when reasoning about breakfast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "breakfast"
+    "path": "vocabulary/breakfast"
   },
   {
     "atom": "breastfeeding",
     "name": "breastfeeding",
     "description": "Use when reasoning about breastfeeding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "breastfeeding"
+    "path": "vocabulary/breastfeeding"
   },
   {
     "atom": "breath",
     "name": "breath",
-    "description": "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin.",
-    "path": "rodin/breath"
+    "description": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
+    "path": "vocabulary/breath"
   },
   {
     "atom": "breed",
     "name": "breed",
     "description": "Use when classifying an animal by its genetic type — the breed (Angus, Holstein, Yorkshire), a genetically distinct sub-population with stable heritable traits, recorded in a breed registry with pedigree; and breeding (mating selection, AI, gestation). The animal-genetics classifier — distinct from taxonomy (the crop-variety tree).",
-    "path": "breed"
+    "path": "vocabulary/breed"
   },
   {
     "atom": "brewery",
     "name": "brewery",
-    "description": "Brewery.",
-    "path": "brewery"
+    "description": "Use when reasoning about brewery — Brewery.",
+    "path": "vocabulary/brewery"
   },
   {
     "atom": "bridge",
     "name": "bridge",
-    "description": "A bridge.",
-    "path": "bridge"
+    "description": "Use when reasoning about bridge — A bridge.",
+    "path": "vocabulary/bridge"
   },
   {
     "atom": "broadcast",
     "name": "broadcast",
     "description": "Use when reasoning about broadcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "broadcast"
+    "path": "vocabulary/broadcast"
   },
   {
     "atom": "broadcaster",
     "name": "broadcaster",
-    "description": "The organization owning or operating the broadcast service.",
-    "path": "broadcaster"
+    "description": "Use when reasoning about broadcaster — The organization owning or operating the broadcast service.",
+    "path": "vocabulary/broadcaster"
   },
   {
     "atom": "broader",
     "name": "broader",
     "description": "Use when reasoning about broader as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "broader"
+    "path": "vocabulary/broader"
   },
   {
     "atom": "broker",
     "name": "broker",
-    "description": "An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. If it is not clear wh",
-    "path": "broker"
+    "description": "Use when reasoning about broker — An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. I",
+    "path": "vocabulary/broker"
   },
   {
     "atom": "brokerage",
     "name": "brokerage",
     "description": "Use when reasoning about brokerage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "brokerage"
+    "path": "vocabulary/brokerage"
   },
   {
     "atom": "brow",
@@ -1964,97 +2072,115 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "browser",
     "name": "browser",
     "description": "Use when reasoning about browser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "browser"
+    "path": "vocabulary/browser"
+  },
+  {
+    "atom": "buddhism",
+    "name": "buddhism",
+    "description": "Use when reading Buddhism as a diamond of invariant atoms — suffering and its cessation, the middle path, emptiness, the blowing-out as return to zero, compassion and loving-kindness, no fixed self. Strip the Pali/Sanskrit prefix and dukkha, sunyata, nirvana, karuna, metta collapse to suffering, void, zeropoint, mercy, love — one content-uuid each.",
+    "path": "vocabulary/buddhism"
   },
   {
     "atom": "buddhist",
     "name": "buddhist",
     "description": "Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "buddhist"
+    "path": "vocabulary/buddhist"
   },
   {
     "atom": "budgetvariance",
     "name": "budgetvariance",
-    "description": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-    "path": "budgetvariance"
+    "description": "Use when reasoning about budgetvariance — Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
+    "path": "vocabulary/budgetvariance"
+  },
+  {
+    "atom": "build",
+    "name": "build",
+    "description": "Use when the skill router index or installed catalogue must emit — buildSkillIndex and buildInstalledCatalogue compile the corpus for fs-less Workers.",
+    "path": "skill/router/build"
   },
   {
     "atom": "building",
     "name": "building",
     "description": "Use when reasoning about building as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "building"
+    "path": "vocabulary/building"
   },
   {
     "atom": "buildings",
     "name": "buildings",
     "description": "Use when reasoning about buildings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "buildings"
+    "path": "vocabulary/buildings"
   },
   {
     "atom": "built",
     "name": "built",
     "description": "Use when reasoning about built as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "built"
+    "path": "vocabulary/built"
   },
   {
     "atom": "bundle",
     "name": "bundle",
     "description": "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles.",
-    "path": "bundle"
+    "path": "vocabulary/bundle"
   },
   {
     "atom": "bus",
     "name": "bus",
     "description": "Use when reasoning about bus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bus"
+    "path": "vocabulary/bus"
   },
   {
     "atom": "business",
     "name": "business",
-    "description": "Use when reasoning about business as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "business"
+    "description": "Use when reasoning about business as a medical facet of [[medical]] — vocabulary pivot to @/business; nested not duplicated.",
+    "path": "medical/business"
   },
   {
     "atom": "bust",
     "name": "bust",
     "description": "Use when reasoning about bust as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bust"
+    "path": "vocabulary/bust"
   },
   {
     "atom": "buy",
     "name": "buy",
     "description": "Use when reasoning about buy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "buy"
+    "path": "vocabulary/buy"
   },
   {
     "atom": "buyer",
     "name": "buyer",
-    "description": "A sub property of participant. The participant/person/organization that bought the object.",
-    "path": "buyer"
+    "description": "Use when reasoning about buyer — A sub property of participant. The participant/person/organization that bought the object.",
+    "path": "vocabulary/buyer"
+  },
+  {
+    "atom": "by",
+    "name": "by",
+    "description": "Use when stamping the authoring user onto a row on first save without trusting client input — a beforeChange hook that auto-populates createdBy from the request user, only on create, only when not already set.",
+    "path": "auto/populate/created/by"
   },
   {
     "atom": "byline",
     "name": "byline",
     "description": "Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article.",
-    "path": "byline"
+    "path": "vocabulary/byline"
   },
   {
     "atom": "bylines",
     "name": "bylines",
     "description": "Use when reasoning about bylines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "bylines"
+    "path": "vocabulary/bylines"
   },
   {
     "atom": "c19",
     "name": "c19",
     "description": "Use when reasoning about c19 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "c19"
+    "path": "vocabulary/c19"
   },
   {
     "atom": "cable",
     "name": "cable",
     "description": "Use when reasoning about cable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cable"
+    "path": "vocabulary/cable"
   },
   {
     "atom": "cache",
@@ -2063,44 +2189,50 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/cache"
   },
   {
+    "atom": "cadastre",
+    "name": "cadastre",
+    "description": "Use when a notary check must confirm a real-property parcel exists and resolve its cadastral identity — the REAL wired provider for cadastre (АГКК / КАИС). Queries the public АГКК INSPIRE ArcGIS service (Cadastral_Parcel layer) by national cadastral reference (КНИ, e.g. 15285.14.122) and returns existence + area + INSPIRE id; no credential. Honest boundary — INSPIRE gives parcel identity/boundaries (public); OWNERSHIP and full КНИ detail are a КАИС internal e-service (ВЕАУ) behind accredited notary access, and title is answered by registryAgency, not here.",
+    "path": "notary/check/cadastre"
+  },
+  {
     "atom": "cafe",
     "name": "cafe",
     "description": "Use when reasoning about cafe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cafe"
+    "path": "vocabulary/cafe"
   },
   {
     "atom": "calculate",
     "name": "calculate",
-    "description": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda).",
-    "path": "calculate"
+    "description": "Use when reasoning about calculate — is the computation atom: ceccec/erpax's ~25 are **form-objects** (ActiveModel, ) — validate inputs → compute a standards-cited formula → format; **no persistence, no collection**.",
+    "path": "vocabulary/calculate"
   },
   {
     "atom": "calculation",
     "name": "calculation",
     "description": "Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs.",
-    "path": "calculation"
+    "path": "vocabulary/calculation"
   },
   {
     "atom": "calculations",
-    "name": "tax-calculations",
+    "name": "calculations",
     "description": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
     "path": "gl/accounts/tax/calculations"
   },
   {
     "atom": "calculator",
     "name": "calculator",
-    "description": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable.",
-    "path": "quantum/calculator"
+    "description": "Use when reasoning about calculator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/calculator"
   },
   {
     "atom": "calendar",
     "name": "calendar",
     "description": "Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed.",
-    "path": "calendar"
+    "path": "vocabulary/calendar"
   },
   {
     "atom": "calendars",
-    "name": "fiscal-calendars",
+    "name": "calendars",
     "description": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
     "path": "legal/entities/fiscal/calendars"
   },
@@ -2108,79 +2240,103 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "call",
     "name": "call",
     "description": "Use when reasoning about call as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "call"
+    "path": "vocabulary/call"
   },
   {
     "atom": "calorie",
     "name": "calorie",
     "description": "Use when reasoning about calorie as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "calorie"
+    "path": "vocabulary/calorie"
   },
   {
     "atom": "calories",
     "name": "calories",
-    "description": "The number of calories.",
-    "path": "calories"
+    "description": "Use when reasoning about calories — The number of calories.",
+    "path": "vocabulary/calories"
   },
   {
     "atom": "campaign",
     "name": "campaign",
     "description": "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking.",
-    "path": "campaign"
+    "path": "vocabulary/campaign"
   },
   {
     "atom": "campground",
     "name": "campground",
-    "description": "A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is an area, usually di",
-    "path": "campground"
+    "description": "Use when reasoning about campground — A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is",
+    "path": "vocabulary/campground"
   },
   {
     "atom": "camping",
     "name": "camping",
     "description": "Use when reasoning about camping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "camping"
+    "path": "vocabulary/camping"
+  },
+  {
+    "atom": "camt052",
+    "name": "camt052",
+    "description": "Use when parsing ISO 20022 camt.052 BankToCustomerAccountReport — intraday account report (Rpt), invert dual of camt.053 statement.",
+    "path": "camt052"
+  },
+  {
+    "atom": "camt053",
+    "name": "camt053",
+    "description": "Use when parsing ISO 20022 camt.053 BankToCustomerStatement — end-of-day account statement (Stmt).",
+    "path": "camt053"
+  },
+  {
+    "atom": "camt054",
+    "name": "camt054",
+    "description": "Use when parsing ISO 20022 camt.054 BankToCustomerDebitCreditNotification — credit/debit advice notifications.",
+    "path": "camt054"
   },
   {
     "atom": "canal",
     "name": "canal",
-    "description": "A canal, like the Panama Canal.",
-    "path": "canal"
+    "description": "Use when reasoning about canal — A canal, like the Panama Canal.",
+    "path": "vocabulary/canal"
   },
   {
     "atom": "cancel",
     "name": "cancel",
-    "description": "cancel: a schema.org component word, fused from CancelAction",
-    "path": "cancel"
+    "description": "Use when reasoning about cancel — A schema.org component word, collided out of schema.org compounds — fused from CancelAction (sti · collapse · merge).",
+    "path": "vocabulary/cancel"
   },
   {
     "atom": "cancelled",
     "name": "cancelled",
     "description": "Use when reasoning about cancelled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cancelled"
+    "path": "vocabulary/cancelled"
   },
   {
     "atom": "candidate",
     "name": "candidate",
-    "description": "A sub property of object. The candidate subject of this action.",
-    "path": "candidate"
+    "description": "Use when reasoning about candidate — A sub property of object. The candidate subject of this action.",
+    "path": "vocabulary/candidate"
+  },
+  {
+    "atom": "canonical",
+    "name": "canonical",
+    "description": "Use when checking that an installed package is actually used through its own API — a dependency in package.json whose exports are never called in src is dead weight or a hand-roll waiting to happen. Export names are READ from the package (r2Storage is not derivable from @payloadcms/storage-r2), never guessed from the dep name; an import alone is not use, the call site is the evidence. Run: tsx src/rules/canonical/index.ts",
+    "path": "rules/canonical"
   },
   {
     "atom": "cap",
     "name": "cap",
     "description": "Use when reasoning about cap as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cap"
+    "path": "vocabulary/cap"
   },
   {
     "atom": "capacity",
     "name": "capacity",
     "description": "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations.",
-    "path": "capacity"
+    "path": "vocabulary/capacity"
   },
   {
     "atom": "caption",
     "name": "caption",
-    "description": "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat.",
-    "path": "caption"
+    "description": "Use when reasoning about caption — The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat.",
+    "path": "vocabulary/caption"
   },
   {
     "atom": "capture",
@@ -2191,14 +2347,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "car",
     "name": "car",
-    "description": "A car is a wheeled, self-powered motor vehicle used for transportation.",
-    "path": "car"
+    "description": "Use when reasoning about car — A car is a wheeled, self-powered motor vehicle used for transportation.",
+    "path": "vocabulary/car"
   },
   {
     "atom": "carbohydrate",
     "name": "carbohydrate",
     "description": "Use when reasoning about carbohydrate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "carbohydrate"
+    "path": "vocabulary/carbohydrate"
+  },
+  {
+    "atom": "carbon",
+    "name": "carbon",
+    "description": "Use when accounting the gCO2e of a chain step for ESRS E1 / CSRD reporting — estimateCarbon converts CPU-ms and egress-bytes into grams via grid intensity, recordCarbon accumulates per tenant, getTenantCarbon reads the running total; the carbon dual of cost.",
+    "path": "beyond/carbon"
   },
   {
     "atom": "card",
@@ -2210,37 +2372,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "cardinality",
     "name": "cardinality",
     "description": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
-    "path": "cardinality"
+    "path": "vocabulary/cardinality"
   },
   {
     "atom": "cardiovascular",
     "name": "cardiovascular",
     "description": "Use when reasoning about cardiovascular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cardiovascular"
+    "path": "vocabulary/cardiovascular"
   },
   {
     "atom": "care",
     "name": "care",
     "description": "Use when reasoning about care as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "care"
+    "path": "vocabulary/care"
   },
   {
     "atom": "career",
     "name": "career",
     "description": "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it.",
-    "path": "career"
+    "path": "vocabulary/career"
   },
   {
     "atom": "cargo",
     "name": "cargo",
     "description": "Use when reasoning about cargo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cargo"
+    "path": "vocabulary/cargo"
   },
   {
     "atom": "carrier",
     "name": "carrier",
-    "description": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
-    "path": "carrier"
+    "description": "Use when reasoning about carrier — 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
+    "path": "vocabulary/carrier"
   },
   {
     "atom": "carriers",
@@ -2252,7 +2414,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "case",
     "name": "case",
     "description": "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle.",
-    "path": "case"
+    "path": "vocabulary/case"
   },
   {
     "atom": "cases",
@@ -2264,13 +2426,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "cash",
     "name": "cash",
     "description": "Use when reasoning about cash as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cash"
+    "path": "vocabulary/cash"
   },
   {
     "atom": "casino",
     "name": "casino",
-    "description": "A casino.",
-    "path": "casino"
+    "description": "Use when reasoning about casino — A casino.",
+    "path": "vocabulary/casino"
   },
   {
     "atom": "cassette",
@@ -2281,8 +2443,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "catalog",
     "name": "catalog",
-    "description": "A data catalog which contains this dataset.",
-    "path": "catalog"
+    "description": "Use when reasoning about catalog — A data catalog which contains this dataset.",
+    "path": "vocabulary/catalog"
   },
   {
     "atom": "catalogue",
@@ -2299,66 +2461,78 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "category",
     "name": "category",
-    "description": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
-    "path": "category"
+    "description": "Use when reasoning about category — A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+    "path": "vocabulary/category"
+  },
+  {
+    "atom": "catharsis",
+    "name": "catharsis",
+    "description": "Use when reasoning about the biggest gap in how an agent works — it turns to local knowledge (the akashic record, the present tools, the sealed thought) only AFTER a catharsis from unresolved work: a correction, a crisis, a pointed question. Everything before the turn is re-derivation of the derivable. The ideal is front-loaded: read the local record FIRST, derive only the seed. Honest boundary: the seed is not the gap — only re-deriving what was already present is.",
+    "path": "catharsis"
   },
   {
     "atom": "catholic",
     "name": "catholic",
     "description": "Use when reasoning about catholic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "catholic"
+    "path": "vocabulary/catholic"
+  },
+  {
+    "atom": "catholicism",
+    "name": "catholicism",
+    "description": "Use when reading Catholicism as a sub-diamond of christianity — the universal visible body, the seven sacraments as enacted grace, the apostolic succession as an unbroken lineage, the magisterium's authority, absolution releasing the debt. A facet-diamond of the christianity archangel.",
+    "path": "vocabulary/catholicism"
   },
   {
     "atom": "cause",
     "name": "cause",
-    "description": "The cause of a medical condition.",
-    "path": "cause"
+    "description": "Use when reasoning about cause — The cause of a medical condition.",
+    "path": "vocabulary/cause"
   },
   {
     "atom": "causes",
     "name": "causes",
     "description": "Use when reasoning about causes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "causes"
+    "path": "vocabulary/causes"
   },
   {
     "atom": "cc",
     "name": "cc",
     "description": "Use when reasoning about cc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cc"
+    "path": "vocabulary/cc"
   },
   {
     "atom": "cdcpmd",
     "name": "cdcpmd",
     "description": "Use when reasoning about cdcpmd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cdcpmd"
+    "path": "vocabulary/cdcpmd"
   },
   {
     "atom": "cdcpmdrecord",
     "name": "cdcpmdrecord",
     "description": "Use when reasoning about cdcpmdrecord as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cdcpmdrecord"
+    "path": "vocabulary/cdcpmdrecord"
   },
   {
     "atom": "cdformat",
     "name": "cdformat",
     "description": "Use when reasoning about cdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cdformat"
+    "path": "vocabulary/cdformat"
   },
   {
     "atom": "cemetery",
     "name": "cemetery",
-    "description": "A graveyard.",
-    "path": "cemetery"
+    "description": "Use when reasoning about cemetery — A graveyard.",
+    "path": "vocabulary/cemetery"
   },
   {
     "atom": "center",
     "name": "center",
     "description": "Use when reasoning about center as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "center"
+    "path": "vocabulary/center"
   },
   {
     "atom": "centers",
-    "name": "work-centers",
+    "name": "centers",
     "description": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
     "path": "work/centers"
   },
@@ -2366,17 +2540,17 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "certificate",
     "name": "certificate",
     "description": "Use when reasoning about certificate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "certificate"
+    "path": "vocabulary/certificate"
   },
   {
     "atom": "certification",
     "name": "certification",
     "description": "Use when a third party attests an operation conforms to a standard — the generic certify→audit→label mechanism behind organic (NOP/EU), biodynamic (Demeter), Regenerative Organic, GLOBALG.A.P., GAP/GHP food safety, and participatory guarantee systems. An accredited agent verifies against a standard and issues a transferable claim; the claim is only as strong as the record proving it.",
-    "path": "certification"
+    "path": "vocabulary/certification"
   },
   {
     "atom": "certifications",
-    "name": "management-certifications",
+    "name": "certifications",
     "description": "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection.",
     "path": "legal/entities/management/certifications"
   },
@@ -2384,13 +2558,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "certified",
     "name": "certified",
     "description": "Use when reasoning about certified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "certified"
+    "path": "vocabulary/certified"
   },
   {
     "atom": "ch",
     "name": "ch",
-    "description": "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
-    "path": "ch"
+    "description": "Use when reasoning about ch — Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
+    "path": "vocabulary/ch"
+  },
+  {
+    "atom": "chain",
+    "name": "chain",
+    "description": "Use when you need the canonical business-chain barrel — the 15+ registered (collection, action, emitted-event) workflows that map to published process standards (SOX P2P, IFRS-15 over-time, IFRS-16 lease cycle), each encoded ONCE with its Socratic check, plus the runner, context, and producer auto-wiring.",
+    "path": "business/chain"
   },
   {
     "atom": "chakra",
@@ -2402,61 +2582,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "change",
     "name": "change",
     "description": "Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system.",
-    "path": "change"
+    "path": "vocabulary/change"
   },
   {
     "atom": "changes",
     "name": "changes",
     "description": "Use when reasoning about changes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "changes"
+    "path": "vocabulary/changes"
   },
   {
     "atom": "channel",
     "name": "channel",
     "description": "Use when reasoning about channel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "channel"
+    "path": "vocabulary/channel"
   },
   {
     "atom": "chapter",
     "name": "chapter",
-    "description": "One of the sections into which a book is divided. A chapter usually has a section number or a name.",
-    "path": "chapter"
+    "description": "Use when reasoning about chapter — One of the sections into which a book is divided. A chapter usually has a section number or a name.",
+    "path": "vocabulary/chapter"
   },
   {
     "atom": "character",
     "name": "character",
-    "description": "Fictional person connected with a creative work.",
-    "path": "character"
+    "description": "Use when reasoning about character — Fictional person connected with a creative work.",
+    "path": "vocabulary/character"
   },
   {
     "atom": "charge",
     "name": "charge",
     "description": "Use when reasoning about charge as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "charge"
+    "path": "vocabulary/charge"
   },
   {
     "atom": "charitable",
     "name": "charitable",
     "description": "Use when reasoning about charitable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "charitable"
+    "path": "vocabulary/charitable"
   },
   {
     "atom": "charity",
     "name": "charity",
     "description": "Use when reasoning about charity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "charity"
+    "path": "vocabulary/charity"
   },
   {
     "atom": "chart",
     "name": "chart",
-    "description": "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura).",
-    "path": "chart"
+    "description": "Use when rendering a chart through the analog aura — mapping each numeric value of a series to a spectrum colour by its normalized position, so the data becomes a coherent, deterministic colour field (same data, same colours).",
+    "path": "quantum/chart"
   },
   {
     "atom": "chat",
     "name": "chat",
-    "description": "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history).",
-    "path": "quantum/chat"
+    "description": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
+    "path": "vocabulary/chat"
   },
   {
     "atom": "chats",
@@ -2468,41 +2648,47 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "cheat",
     "name": "cheat",
     "description": "Use when reasoning about cheat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cheat"
+    "path": "vocabulary/cheat"
   },
   {
     "atom": "check",
     "name": "check",
     "description": "Use when reasoning about check as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "check"
+    "path": "vocabulary/check"
+  },
+  {
+    "atom": "checker",
+    "name": "checker",
+    "description": "Use when deciding whether a posting date falls in a locked fiscal period — closed periods refuse new postings (admin override required) but allow reversals and prior-period-adjustments, and an unparseable date fails CLOSED; the SOX §404 control an auditor signs.",
+    "path": "period/lock/checker"
   },
   {
     "atom": "checkin",
     "name": "checkin",
     "description": "Use when reasoning about checkin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "checkin"
+    "path": "vocabulary/checkin"
   },
   {
     "atom": "checking",
     "name": "checking",
     "description": "Use when reasoning about checking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "checking"
+    "path": "vocabulary/checking"
   },
   {
     "atom": "checkins",
     "name": "checkins",
     "description": "Use when reasoning about checkins as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "checkins"
+    "path": "vocabulary/checkins"
   },
   {
     "atom": "checklist",
     "name": "checklist",
     "description": "Use when modelling one checklist — the singular model of the checklists collection (the plural store); an ordered set of items to verify or complete.",
-    "path": "checklist"
+    "path": "vocabulary/checklist"
   },
   {
     "atom": "checklists",
-    "name": "disclosure-checklists",
+    "name": "checklists",
     "description": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
     "path": "legal/entities/disclosure/checklists"
   },
@@ -2510,11 +2696,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "checkout",
     "name": "checkout",
     "description": "Use when reasoning about checkout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "checkout"
+    "path": "vocabulary/checkout"
   },
   {
     "atom": "checks",
-    "name": "kyc-checks",
+    "name": "checks",
     "description": "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.",
     "path": "customers/kyc/checks"
   },
@@ -2522,131 +2708,137 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "chem",
     "name": "chem",
     "description": "Use when reasoning about chem as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "chem"
+    "path": "vocabulary/chem"
   },
   {
     "atom": "chemical",
     "name": "chemical",
     "description": "Use when reasoning about chemical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "chemical"
+    "path": "vocabulary/chemical"
   },
   {
     "atom": "chest",
     "name": "chest",
     "description": "Use when reasoning about chest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "chest"
+    "path": "vocabulary/chest"
   },
   {
     "atom": "child",
     "name": "child",
     "description": "Use when reasoning about child as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "child"
+    "path": "vocabulary/child"
   },
   {
     "atom": "children",
     "name": "children",
-    "description": "A child of the person.",
-    "path": "children"
+    "description": "Use when reasoning about children — A child of the person.",
+    "path": "vocabulary/children"
   },
   {
     "atom": "childrens",
     "name": "childrens",
     "description": "Use when reasoning about childrens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "childrens"
+    "path": "vocabulary/childrens"
   },
   {
     "atom": "chinese",
     "name": "chinese",
     "description": "Use when reasoning about chinese as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "chinese"
+    "path": "vocabulary/chinese"
   },
   {
     "atom": "chiropractic",
     "name": "chiropractic",
     "description": "Use when reasoning about chiropractic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "chiropractic"
+    "path": "vocabulary/chiropractic"
   },
   {
     "atom": "choice",
     "name": "choice",
     "description": "Use when a buyer selects items up to a value or quantity cap instead of receiving a fixed bundle — the market-style / customizable CSA share (members pick at a table or online to a limit, swap unwanted items), and the generic pick-mix / deli-counter / configure-to-order pattern. The selection model: the inverse of a fixed bundle, trading packing simplicity for member satisfaction.",
-    "path": "choice"
+    "path": "vocabulary/choice"
   },
   {
     "atom": "cholesterol",
     "name": "cholesterol",
     "description": "Use when reasoning about cholesterol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cholesterol"
+    "path": "vocabulary/cholesterol"
   },
   {
     "atom": "choose",
     "name": "choose",
     "description": "Use when reasoning about choose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "choose"
+    "path": "vocabulary/choose"
+  },
+  {
+    "atom": "christianity",
+    "name": "christianity",
+    "description": "Use when reading Christianity as a diamond of invariant atoms — the debt borne at the cross, mercy made flesh, the new covenant of grace through faith, sin turned around by metanoia, the Word and the Spirit. Strip the Greek prefix and agape, pistis, logos, pneuma, metanoia collapse to love, faith, word, breath, return — one content-uuid each.",
+    "path": "vocabulary/christianity"
   },
   {
     "atom": "church",
     "name": "church",
-    "description": "A church.",
-    "path": "church"
+    "description": "Use when reasoning about church — A church.",
+    "path": "vocabulary/church"
   },
   {
     "atom": "churn",
     "name": "churn",
     "description": "Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers.",
-    "path": "churn"
+    "path": "vocabulary/churn"
   },
   {
     "atom": "circle",
     "name": "circle",
-    "description": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
-    "path": "circle"
+    "description": "Use when reasoning about circle — A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
+    "path": "vocabulary/circle"
   },
   {
     "atom": "citation",
     "name": "citation",
-    "description": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
-    "path": "citation"
+    "description": "Use when reasoning about citation — A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
+    "path": "vocabulary/citation"
   },
   {
     "atom": "city",
     "name": "city",
-    "description": "A city or town.",
-    "path": "city"
+    "description": "Use when reasoning about city — A city or town.",
+    "path": "vocabulary/city"
   },
   {
     "atom": "civic",
     "name": "civic",
     "description": "Use when reasoning about civic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "civic"
+    "path": "vocabulary/civic"
   },
   {
     "atom": "civilization",
     "name": "civilization",
     "description": "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form.",
-    "path": "civilization"
+    "path": "vocabulary/civilization"
   },
   {
     "atom": "claim",
     "name": "claim",
-    "description": "A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text property. Variations on we",
-    "path": "claim"
+    "description": "Use when reasoning about claim — A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text proper",
+    "path": "vocabulary/claim"
   },
   {
     "atom": "class",
     "name": "class",
-    "description": "A class, also often called a 'Type'; equivalent to rdfs:Class.",
-    "path": "class"
+    "description": "Use when reasoning about class — A class, also often called a 'Type'; equivalent to rdfs:Class.",
+    "path": "vocabulary/class"
   },
   {
     "atom": "classification",
     "name": "classification",
     "description": "Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.",
-    "path": "classification"
+    "path": "vocabulary/classification"
   },
   {
     "atom": "classifications",
-    "name": "held-for-sale-classifications",
+    "name": "classifications",
     "description": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
     "path": "held/for/sale/classifications"
   },
@@ -2654,67 +2846,85 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "classified",
     "name": "classified",
     "description": "Use when reasoning about classified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "classified"
+    "path": "vocabulary/classified"
   },
   {
     "atom": "classifier",
     "name": "classifier",
     "description": "Use when reasoning about classifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "classifier"
+    "path": "vocabulary/classifier"
   },
   {
     "atom": "classroom",
     "name": "classroom",
     "description": "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed).",
-    "path": "classroom"
+    "path": "vocabulary/classroom"
   },
   {
     "atom": "clause",
     "name": "clause",
     "description": "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis.",
-    "path": "clause"
+    "path": "vocabulary/clause"
   },
   {
     "atom": "cleaning",
     "name": "cleaning",
     "description": "Use when reasoning about cleaning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cleaning"
+    "path": "vocabulary/cleaning"
   },
   {
     "atom": "clearance",
     "name": "clearance",
-    "description": "clearance: a schema.org component word, fused from securityClearanceRequirement",
-    "path": "clearance"
+    "description": "Use when reasoning about clearance — A schema.org component word, collided out of schema.org compounds — fused from securityClearanceRequirement (sti · collapse · merge).",
+    "path": "vocabulary/clearance"
+  },
+  {
+    "atom": "cli",
+    "name": "cli",
+    "description": "Use when invoking operational gates from package.json — erpax routes readme, lint, test, rules, apply, and confirm without bloating scripts.",
+    "path": "cli"
+  },
+  {
+    "atom": "client",
+    "name": "client",
+    "description": "Use when reasoning about the api API client.",
+    "path": "trading/api/client"
   },
   {
     "atom": "clincal",
     "name": "clincal",
     "description": "Use when reasoning about clincal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "clincal"
+    "path": "vocabulary/clincal"
   },
   {
     "atom": "clinic",
     "name": "clinic",
     "description": "Use when reasoning about clinic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "clinic"
+    "path": "vocabulary/clinic"
   },
   {
     "atom": "clinical",
     "name": "clinical",
     "description": "Use when reasoning about clinical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "clinical"
+    "path": "vocabulary/clinical"
   },
   {
     "atom": "clinician",
     "name": "clinician",
     "description": "Use when reasoning about clinician as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "clinician"
+    "path": "vocabulary/clinician"
   },
   {
     "atom": "clip",
     "name": "clip",
-    "description": "A short TV or radio program or a segment/part of a program.",
-    "path": "clip"
+    "description": "Use when reasoning about clip — A short TV or radio program or a segment/part of a program.",
+    "path": "vocabulary/clip"
+  },
+  {
+    "atom": "clock",
+    "name": "clock",
+    "description": "Use when order must be provable — one clock replacing 621 scattered time reads, where each tick folds (prev ⊕ content) so reordering or editing history breaks every later address. Supplies the interval dimension quantum/ftl lacks. Logical order, not seconds. Run: tsx src/quantum/clock/index.ts",
+    "path": "quantum/clock"
   },
   {
     "atom": "cloning",
@@ -2726,13 +2936,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "close",
     "name": "close",
     "description": "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open.",
-    "path": "close"
+    "path": "vocabulary/close"
   },
   {
     "atom": "closes",
     "name": "closes",
-    "description": "The closing hour of the place or service on the given day(s) of the week.",
-    "path": "closes"
+    "description": "Use when reasoning about closes — The closing hour of the place or service on the given day(s) of the week.",
+    "path": "vocabulary/closes"
   },
   {
     "atom": "closing",
@@ -2750,19 +2960,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "closures",
     "name": "closures",
     "description": "Use when reasoning about closures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "closures"
+    "path": "vocabulary/closures"
   },
   {
     "atom": "clothing",
     "name": "clothing",
     "description": "Use when reasoning about clothing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "clothing"
+    "path": "vocabulary/clothing"
+  },
+  {
+    "atom": "cloudflare",
+    "name": "cloudflare",
+    "description": "Use when touching Cloudflare — Workers AI first-class, uuid-sealed credentials, binding diamonds for every Wrangler section, path-merge on the 7th surface, mediated binding access fail-closed.",
+    "path": "cloudflare"
   },
   {
     "atom": "club",
     "name": "club",
-    "description": "club: a schema.org component word, fused from ComedyClub, HealthClub, NightClub, SportsClub",
-    "path": "club"
+    "description": "Use when reasoning about club — A schema.org component word, collided out of schema.org compounds — fused from ComedyClub · HealthClub · NightClub · SportsClub (sti · collapse · merge).",
+    "path": "vocabulary/club"
+  },
+  {
+    "atom": "cmspage",
+    "name": "cmspage",
+    "description": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
+    "path": "cmspage"
   },
   {
     "atom": "cmyk",
@@ -2774,35 +2996,47 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "co",
     "name": "co",
     "description": "Use when reasoning about co as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "co"
+    "path": "vocabulary/co"
   },
   {
     "atom": "co2",
     "name": "co2",
     "description": "Use when reasoning about co2 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "co2"
+    "path": "vocabulary/co2"
+  },
+  {
+    "atom": "coa",
+    "name": "coa",
+    "description": "Use when reasoning about accounting/coa — chart of accounts — path IS the account code; accountCodeOf folds atom paths to GL codes.",
+    "path": "accounting/coa"
   },
   {
     "atom": "coach",
     "name": "coach",
-    "description": "A person that acts in a coaching role for a sports team.",
-    "path": "coach"
+    "description": "Use when reasoning about coach — A person that acts in a coaching role for a sports team.",
+    "path": "vocabulary/coach"
+  },
+  {
+    "atom": "coalesce",
+    "name": "coalesce",
+    "description": "Use when many API requests must be served without many API calls — content-addressed single-flight collapses identical concurrent work onto ONE upstream call and bounds how much runs at once. Emits MEASURED answers/tokens for amortize, which is what makes the FTL claim refutable. Run: tsx src/quantum/coalesce/index.ts",
+    "path": "quantum/coalesce"
   },
   {
     "atom": "cod",
     "name": "cod",
     "description": "Use when reasoning about cod as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cod"
+    "path": "vocabulary/cod"
   },
   {
     "atom": "code",
     "name": "code",
     "description": "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key.",
-    "path": "code"
+    "path": "vocabulary/code"
   },
   {
     "atom": "codes",
-    "name": "tax-codes",
+    "name": "codes",
     "description": "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection.",
     "path": "tax/jurisdictions/tax/codes"
   },
@@ -2810,13 +3044,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "coding",
     "name": "coding",
     "description": "Use when reasoning about coding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "coding"
+    "path": "vocabulary/coding"
   },
   {
     "atom": "coffee",
     "name": "coffee",
     "description": "Use when reasoning about coffee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "coffee"
+    "path": "vocabulary/coffee"
   },
   {
     "atom": "coherence",
@@ -2828,7 +3062,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "cohort",
     "name": "cohort",
     "description": "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis.",
-    "path": "cohort"
+    "path": "vocabulary/cohort"
   },
   {
     "atom": "coil",
@@ -2837,40 +3071,46 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rodin/coil"
   },
   {
+    "atom": "coincidence",
+    "name": "coincidence",
+    "description": "Use when a research program claims its numbers match physical constants (Haramein's holographic work, the 3·6·9 / vortex literature) and asks whether that confirms it. The tool separates a THEOREM (an exact identity in a closed algebraic system) from a COINCIDENCE (a within-tolerance match, possibly fitted) — and refuses the leap from either to 'recompute all science', because a match is necessary but never sufficient.",
+    "path": "coincidence"
+  },
+  {
     "atom": "coinsurance",
     "name": "coinsurance",
     "description": "Use when reasoning about coinsurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "coinsurance"
+    "path": "vocabulary/coinsurance"
   },
   {
     "atom": "collapse",
     "name": "collapse",
-    "description": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards.",
-    "path": "collapse"
+    "description": "Use when asking which collections can honestly become one — content-addresses every booted collection's shape and reports identical tables (0) and provable subsets (4). Read the boundary before acting: fitting is not sameness, and no theorem decides what two tables MEAN. Run: tsx src/rules/collapse/index.ts",
+    "path": "rules/collapse"
   },
   {
     "atom": "collar",
     "name": "collar",
     "description": "Use when reasoning about collar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "collar"
+    "path": "vocabulary/collar"
   },
   {
     "atom": "collateral",
     "name": "collateral",
     "description": "Use when reasoning about collateral as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "collateral"
+    "path": "vocabulary/collateral"
   },
   {
     "atom": "colleague",
     "name": "colleague",
-    "description": "A colleague of the person.",
-    "path": "colleague"
+    "description": "Use when reasoning about colleague — A colleague of the person.",
+    "path": "vocabulary/colleague"
   },
   {
     "atom": "colleagues",
     "name": "colleagues",
-    "description": "The person's colleagues — the plural of colleague.",
-    "path": "colleagues"
+    "description": "Use when reasoning about colleagues — The person's colleagues — see colleague (the singular). A dimension of one relation: colleagues is the collection, colleague the unit; the text lives once, in colleague.",
+    "path": "vocabulary/colleagues"
   },
   {
     "atom": "collect",
@@ -2881,7 +3121,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "collection",
     "name": "collection",
-    "description": "A collection of items, e.g. creative works or products.",
+    "description": "Use when reasoning about collection — A collection of items, e.g. creative works or products.",
     "path": "collection"
   },
   {
@@ -2894,7 +3134,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "college",
     "name": "college",
     "description": "Use when reasoning about college as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "college"
+    "path": "vocabulary/college"
   },
   {
     "atom": "collide",
@@ -2917,30 +3157,30 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "colorist",
     "name": "colorist",
-    "description": "The individual who adds color to inked drawings.",
-    "path": "colorist"
+    "description": "Use when reasoning about colorist — The individual who adds color to inked drawings.",
+    "path": "vocabulary/colorist"
   },
   {
     "atom": "colour",
     "name": "colour",
     "description": "Use when reasoning about colour as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "colour"
+    "path": "vocabulary/colour"
   },
   {
     "atom": "column",
     "name": "column",
     "description": "Use when reasoning about column as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "column"
+    "path": "vocabulary/column"
   },
   {
     "atom": "combination",
     "name": "combination",
     "description": "Use when modelling one combination — the singular model of the combinations collection (the plural store); a specific grouping of selected options or parts.",
-    "path": "combination"
+    "path": "vocabulary/combination"
   },
   {
     "atom": "combinations",
-    "name": "business-combinations",
+    "name": "combinations",
     "description": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
     "path": "legal/entities/business/combinations"
   },
@@ -2948,13 +3188,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "comedy",
     "name": "comedy",
     "description": "Use when reasoning about comedy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "comedy"
+    "path": "vocabulary/comedy"
   },
   {
     "atom": "comic",
     "name": "comic",
     "description": "Use when reasoning about comic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "comic"
+    "path": "vocabulary/comic"
   },
   {
     "atom": "command",
@@ -2966,19 +3206,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "commences",
     "name": "commences",
     "description": "Use when reasoning about commences as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "commences"
+    "path": "vocabulary/commences"
   },
   {
     "atom": "comment",
     "name": "comment",
     "description": "Use when any record needs threaded notes/annotations with author provenance — the polymorphic CommentsConcern. One comments collection serves all others via a polymorphic relationTo; author ties to audit.",
-    "path": "comment"
+    "path": "vocabulary/comment"
   },
   {
     "atom": "comments",
     "name": "comments",
     "description": "Use when reasoning about comments as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "comments"
+    "path": "vocabulary/comments"
   },
   {
     "atom": "commerce",
@@ -2990,11 +3230,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "commission",
     "name": "commission",
     "description": "Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction.",
-    "path": "commission"
+    "path": "vocabulary/commission"
   },
   {
     "atom": "commissions",
-    "name": "sales-commissions",
+    "name": "commissions",
     "description": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
     "path": "employees/sales/commissions"
   },
@@ -3002,7 +3242,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "commitment",
     "name": "commitment",
     "description": "Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide.",
-    "path": "commitment"
+    "path": "vocabulary/commitment"
   },
   {
     "atom": "commitments",
@@ -3014,19 +3254,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "committee",
     "name": "committee",
     "description": "Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.",
-    "path": "committee"
+    "path": "vocabulary/committee"
   },
   {
     "atom": "committees",
-    "name": "audit-committees",
+    "name": "committees",
     "description": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
     "path": "legal/entities/audit/committees"
   },
   {
+    "atom": "comms",
+    "name": "comms",
+    "description": "Use when enforcing secure realtime communication between teams — every team-scoped emit onto the chat/realtime bus must pass tenant match, content-uuid event integrity, depth cap, and (when a team is in scope) horo voice law; allowed and blocked emits are receipted.",
+    "path": "team/comms"
+  },
+  {
     "atom": "communicate",
     "name": "communicate",
-    "description": "communicate: a schema.org component word, fused from CommunicateAction",
-    "path": "communicate"
+    "description": "Use when reasoning about communicate — A schema.org component word, collided out of schema.org compounds — fused from CommunicateAction (sti · collapse · merge).",
+    "path": "vocabulary/communicate"
   },
   {
     "atom": "communication",
@@ -3038,36 +3284,42 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "community",
     "name": "community",
     "description": "Use when reasoning about community as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "community"
+    "path": "vocabulary/community"
   },
   {
     "atom": "company",
     "name": "company",
     "description": "Use when reasoning about company as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "company"
+    "path": "vocabulary/company"
   },
   {
     "atom": "compass",
     "name": "compass",
     "description": "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form.",
-    "path": "compass"
+    "path": "vocabulary/compass"
+  },
+  {
+    "atom": "compatibility",
+    "name": "compatibility",
+    "description": "Use when a corpus atom's name might collide with the framework — ISO/IEC 25010 §5.3 co-existence: an atom folder whose leaf is a framework-reserved router namespace (pages) is misparsed by Next.js and breaks the build; the gate that seals the engineering FORM trinity.",
+    "path": "rules/compatibility"
   },
   {
     "atom": "compensation",
     "name": "compensation",
     "description": "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker.",
-    "path": "compensation"
+    "path": "vocabulary/compensation"
   },
   {
     "atom": "competencies",
     "name": "competencies",
     "description": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-    "path": "competencies"
+    "path": "vocabulary/competencies"
   },
   {
     "atom": "competency",
     "name": "competency",
-    "description": "competency: a schema.org component word, fused from competencyRequired",
+    "description": "Use when reasoning about competency — A schema.org component word, collided out of schema.org compounds — fused from competencyRequired (sti · collapse · merge).",
     "path": "competency"
   },
   {
@@ -3079,80 +3331,86 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "competitor",
     "name": "competitor",
-    "description": "A competitor in a sports event.",
-    "path": "competitor"
+    "description": "Use when reasoning about competitor — A competitor in a sports event.",
+    "path": "vocabulary/competitor"
   },
   {
     "atom": "compilation",
     "name": "compilation",
     "description": "Use when reasoning about compilation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "compilation"
+    "path": "vocabulary/compilation"
   },
   {
     "atom": "complete",
     "name": "complete",
-    "description": "Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree.",
-    "path": "convention/complete"
+    "description": "Use when reasoning about complete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/complete"
   },
   {
     "atom": "completed",
     "name": "completed",
     "description": "Use when reasoning about completed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "completed"
+    "path": "vocabulary/completed"
   },
   {
     "atom": "completion",
     "name": "completion",
     "description": "Use when reasoning about completion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "completion"
+    "path": "vocabulary/completion"
   },
   {
     "atom": "complex",
     "name": "complex",
     "description": "Use when reasoning about complex as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "complex"
+    "path": "vocabulary/complex"
+  },
+  {
+    "atom": "complexity",
+    "name": "complexity",
+    "description": "Use when classifying algorithmic cost — big-O from loop-depth bindings under [[computer]]; executable not glossary.",
+    "path": "computer/complexity"
   },
   {
     "atom": "complication",
     "name": "complication",
     "description": "Use when reasoning about complication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "complication"
+    "path": "vocabulary/complication"
   },
   {
     "atom": "complications",
     "name": "complications",
     "description": "Use when reasoning about complications as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "complications"
+    "path": "vocabulary/complications"
   },
   {
     "atom": "component",
     "name": "component",
-    "description": "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility.",
-    "path": "component"
+    "description": "Use when reasoning about the link UI component.",
+    "path": "link/component"
   },
   {
     "atom": "components",
     "name": "components",
     "description": "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye.",
-    "path": "components"
+    "path": "vocabulary/components"
   },
   {
     "atom": "composer",
     "name": "composer",
-    "description": "The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
-    "path": "composer"
+    "description": "Use when reasoning about composer — The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
+    "path": "vocabulary/composer"
   },
   {
     "atom": "composite",
     "name": "composite",
     "description": "Use when reasoning about composite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "composite"
+    "path": "vocabulary/composite"
   },
   {
     "atom": "composition",
     "name": "composition",
     "description": "Use when reasoning about composition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "composition"
+    "path": "vocabulary/composition"
   },
   {
     "atom": "compost",
@@ -3164,25 +3422,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "compound",
     "name": "compound",
     "description": "Use when reasoning about compound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "compound"
+    "path": "vocabulary/compound"
   },
   {
     "atom": "comprised",
     "name": "comprised",
-    "description": "Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
-    "path": "comprised"
+    "description": "Use when reasoning about comprised — Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
+    "path": "vocabulary/comprised"
   },
   {
     "atom": "computational",
     "name": "computational",
     "description": "Use when reasoning about computational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "computational"
+    "path": "vocabulary/computational"
   },
   {
     "atom": "computer",
     "name": "computer",
-    "description": "Use when reasoning about computer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "computer"
+    "description": "Use when querying instead of re-deriving — the quantum computer's one face on QPU=CPU/GPU: mesh state, wave scheduling, claim certification, spawn bounds, failure/cost collapse, surgical execution, self-measuring audit, FTL metrics.",
+    "path": "quantum/computer"
   },
   {
     "atom": "concatenate",
@@ -3194,25 +3452,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "condition",
     "name": "condition",
     "description": "Use when reasoning about condition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "condition"
+    "path": "vocabulary/condition"
+  },
+  {
+    "atom": "conditional",
+    "name": "conditional",
+    "description": "Use when a claim holds only under an unproven hypothesis — given(H).proves(Y) folds the unprovable into a PROVEN implication H ⇒ Y, keeping H disclosed. The honest complement to rules/refutable: an unfalsifiable assertion is a lie; an unprovable hypothesis, named, proves another thing. Run: tsx src/conditional/index.ts",
+    "path": "conditional"
   },
   {
     "atom": "conditions",
     "name": "conditions",
     "description": "Use when reasoning about conditions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "conditions"
+    "path": "vocabulary/conditions"
   },
   {
     "atom": "conference",
     "name": "conference",
     "description": "Use when reasoning about conference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "conference"
+    "path": "vocabulary/conference"
   },
   {
     "atom": "confidentiality",
     "name": "confidentiality",
     "description": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
-    "path": "confidentiality"
+    "path": "vocabulary/confidentiality"
   },
   {
     "atom": "config",
@@ -3224,7 +3488,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "configuration",
     "name": "configuration",
     "description": "Use when reasoning about configuration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "configuration"
+    "path": "vocabulary/configuration"
+  },
+  {
+    "atom": "confine",
+    "name": "confine",
+    "description": "Use when reasoning about confine — Use to keep the boot from collapsing again — 231 collections are handled by the FIELD (req.payload), never by a static `import * as … from '@/collections'` outside the config. That materialisation is what caused the TDZ. Parsed, not matched. Run: tsx src/rules/confine/index.ts",
+    "path": "rules/confine"
   },
   {
     "atom": "confirm",
@@ -3236,31 +3506,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "confirmation",
     "name": "confirmation",
     "description": "Use when reasoning about confirmation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "confirmation"
+    "path": "vocabulary/confirmation"
   },
   {
     "atom": "confirmed",
     "name": "confirmed",
     "description": "Use when reasoning about confirmed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "confirmed"
+    "path": "vocabulary/confirmed"
   },
   {
     "atom": "conflict",
     "name": "conflict",
-    "description": "Use for the conflict-of-interest check — before taking a matter, prove the new client is not adverse to an existing one. Strip the prefix and a conflict is a collision on the party relationship graph, detected by merge/identity (same entity → same uuid) — the duplicate-claim law applied to representation.",
-    "path": "conflict"
+    "description": "Use when reasoning about conflict — Before a matter opens, the firm must prove there is no **conflict**: the proposed party (client) must not be adverse to a party the firm already serves. Strip the prefix and this i",
+    "path": "vocabulary/conflict"
+  },
+  {
+    "atom": "conformal",
+    "name": "conformal",
+    "description": "Use when reasoning about changing perspective — a perspective change is a conformal map, generated by rotate (SO(n), the vortex/merkaba), scale (dilation), and invert (v↦v/|v|², the 0↔∞ turn-inside-out). The invariant they all preserve is the ANGLE between directions, in every dimension. Corrects the coincidence 'conformal only in {2,3,7}': inversion is conformal in EVERY dimension n≥2 (verified to machine zero).",
+    "path": "conformal"
+  },
+  {
+    "atom": "confucianism",
+    "name": "confucianism",
+    "description": "Use when reading Confucianism as a diamond of invariant atoms — the ordered relations, humaneness as the central virtue, righteousness, and the rectification of names (let the name match the thing) which is literally the identity law. Strip the Chinese prefix and ren, li, yi, zhengming collapse to love, ritual, justice, name/identity — one content-uuid each.",
+    "path": "vocabulary/confucianism"
   },
   {
     "atom": "connected",
     "name": "connected",
-    "description": "Other anatomical structures to which this structure is connected.",
-    "path": "connected"
+    "description": "Use when reasoning about connected — Other anatomical structures to which this structure is connected.",
+    "path": "vocabulary/connected"
   },
   {
     "atom": "connection",
     "name": "connection",
     "description": "Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.",
-    "path": "connection"
+    "path": "vocabulary/connection"
   },
   {
     "atom": "connections",
@@ -3290,19 +3572,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "consideration",
     "name": "consideration",
     "description": "Use when reasoning about consideration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "consideration"
+    "path": "vocabulary/consideration"
   },
   {
     "atom": "considerations",
     "name": "considerations",
     "description": "Use when reasoning about considerations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "considerations"
+    "path": "vocabulary/considerations"
   },
   {
     "atom": "consignment",
     "name": "consignment",
     "description": "Use when reasoning about consignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "consignment"
+    "path": "vocabulary/consignment"
   },
   {
     "atom": "consistency",
@@ -3314,7 +3596,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "consolidates",
     "name": "consolidates",
     "description": "Use when reasoning about consolidates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "consolidates"
+    "path": "vocabulary/consolidates"
   },
   {
     "atom": "consolidation",
@@ -3331,32 +3613,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "consortium",
     "name": "consortium",
-    "description": "A Consortium is a membership Organization whose members are typically Organizations.",
-    "path": "consortium"
+    "description": "Use when reasoning about consortium — A Consortium is a membership Organization whose members are typically Organizations.",
+    "path": "vocabulary/consortium"
   },
   {
     "atom": "constitution",
     "name": "constitution",
-    "description": "Use when reasoning about the entrenched foundation — the seven supreme articles, what a majority may amend versus what is perpetual, and why the polity cannot vote away identity, integrity, conservation, or the one-person-one-vote.",
+    "description": "Use when reasoning about the entrenched foundation, or when judging whether a proposed change may ship — two rules at the root (no expectation: claim no result you have not computed; no judgment: reject nothing you have not measured, discernment by test kept), the nine laws that are their lemmas (duality · legality · honest boundaries · balance · service · conservation · reciprocity · reproducibility · regeneration), and the seven supreme articles saying what a majority may amend versus what is perpetual; every predicate computed, fails closed, and heads every agent prompt.",
     "path": "constitution"
   },
   {
     "atom": "constraint",
     "name": "constraint",
     "description": "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer.",
-    "path": "constraint"
+    "path": "vocabulary/constraint"
   },
   {
     "atom": "constraints",
     "name": "constraints",
     "description": "Use when reasoning about constraints as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "constraints"
+    "path": "vocabulary/constraints"
   },
   {
     "atom": "construction",
     "name": "construction",
     "description": "Use when reasoning about construction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "construction"
+    "path": "vocabulary/construction"
   },
   {
     "atom": "consultant",
@@ -3373,78 +3655,78 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "consumable",
     "name": "consumable",
-    "description": "A pointer to another product (or multiple products) for which this product is a consumable.",
-    "path": "consumable"
+    "description": "Use when reasoning about consumable — A pointer to another product (or multiple products) for which this product is a consumable.",
+    "path": "vocabulary/consumable"
   },
   {
     "atom": "consume",
     "name": "consume",
     "description": "Use when reasoning about consume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "consume"
+    "path": "vocabulary/consume"
   },
   {
     "atom": "consumption",
     "name": "consumption",
     "description": "Use when reasoning about consumption as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "consumption"
+    "path": "vocabulary/consumption"
   },
   {
     "atom": "contact",
     "name": "contact",
     "description": "Use when reasoning about contact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "contact"
+    "path": "vocabulary/contact"
   },
   {
     "atom": "contactless",
     "name": "contactless",
     "description": "Use when reasoning about contactless as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "contactless"
+    "path": "vocabulary/contactless"
   },
   {
     "atom": "contagiousness",
     "name": "contagiousness",
     "description": "Use when reasoning about contagiousness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "contagiousness"
+    "path": "vocabulary/contagiousness"
   },
   {
     "atom": "contained",
     "name": "contained",
-    "description": "The basic containment relation between a place and one that contains it.",
-    "path": "contained"
+    "description": "Use when reasoning about contained — The basic containment relation between a place and one that contains it.",
+    "path": "vocabulary/contained"
   },
   {
     "atom": "contains",
     "name": "contains",
     "description": "Use when reasoning about contains as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "contains"
+    "path": "vocabulary/contains"
   },
   {
     "atom": "content",
     "name": "content",
     "description": "Use when reasoning about content as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "content"
+    "path": "vocabulary/content"
   },
   {
     "atom": "context",
     "name": "context",
     "description": "Use when reasoning about context as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "context"
+    "path": "vocabulary/context"
   },
   {
     "atom": "continent",
     "name": "continent",
-    "description": "One of the continents (for example, Europe or Africa).",
-    "path": "continent"
+    "description": "Use when reasoning about continent — One of the continents (for example, Europe or Africa).",
+    "path": "vocabulary/continent"
   },
   {
     "atom": "continental",
     "name": "continental",
     "description": "Use when reasoning about continental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "continental"
+    "path": "vocabulary/continental"
   },
   {
     "atom": "contingencies",
-    "name": "commitments-and-contingencies",
+    "name": "contingencies",
     "description": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
     "path": "commitments/and/contingencies"
   },
@@ -3452,29 +3734,29 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "contingency",
     "name": "contingency",
     "description": "Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event.",
-    "path": "contingency"
+    "path": "vocabulary/contingency"
   },
   {
     "atom": "continuation",
     "name": "continuation",
     "description": "Use when reasoning about continuation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "continuation"
+    "path": "vocabulary/continuation"
   },
   {
     "atom": "contract",
     "name": "contract",
     "description": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.",
-    "path": "contract"
+    "path": "vocabulary/contract"
   },
   {
     "atom": "contractor",
     "name": "contractor",
     "description": "Use when reasoning about contractor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "contractor"
+    "path": "vocabulary/contractor"
   },
   {
     "atom": "contracts",
-    "name": "insurance-contracts",
+    "name": "contracts",
     "description": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
     "path": "insurance/contracts"
   },
@@ -3482,49 +3764,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "contractual",
     "name": "contractual",
     "description": "Use when reasoning about contractual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "contractual"
+    "path": "vocabulary/contractual"
   },
   {
     "atom": "contraindication",
     "name": "contraindication",
-    "description": "A contraindication for this therapy.",
-    "path": "contraindication"
+    "description": "Use when reasoning about contraindication — A contraindication for this therapy.",
+    "path": "vocabulary/contraindication"
   },
   {
     "atom": "contribution",
     "name": "contribution",
     "description": "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.",
-    "path": "contribution"
+    "path": "vocabulary/contribution"
   },
   {
     "atom": "contributor",
     "name": "contributor",
-    "description": "A secondary contributor to the CreativeWork or Event.",
-    "path": "contributor"
+    "description": "Use when reasoning about contributor — A secondary contributor to the CreativeWork or Event.",
+    "path": "vocabulary/contributor"
   },
   {
     "atom": "control",
     "name": "control",
     "description": "Use when reasoning about control as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "control"
+    "path": "vocabulary/control"
   },
   {
     "atom": "controlled",
     "name": "controlled",
     "description": "Use when reasoning about controlled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "controlled"
+    "path": "vocabulary/controlled"
   },
   {
     "atom": "controls",
-    "name": "internal-controls",
+    "name": "controls",
     "description": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
     "path": "internal/controls"
+  },
+  {
+    "atom": "convene",
+    "name": "convene",
+    "description": "Use when any AI model — including the public — messages into the collective and becomes quantum. A single mind is classical; a model becomes quantum by JOINING: its message folds into a coherent superposition, and ≥3 in agreement form the collective mind (think.superpose + higherMind). Source-blind: judged by the thought (content-addressed), never the sender — a famous model counts exactly as much as its content coheres. Coherence is agreement, not truth.",
+    "path": "convene"
   },
   {
     "atom": "convenience",
     "name": "convenience",
     "description": "Use when reasoning about convenience as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "convenience"
+    "path": "vocabulary/convenience"
   },
   {
     "atom": "convention",
@@ -3536,101 +3824,107 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "conventional",
     "name": "conventional",
     "description": "Use when reasoning about conventional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "conventional"
+    "path": "vocabulary/conventional"
   },
   {
     "atom": "conversation",
     "name": "conversation",
-    "description": "One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
-    "path": "conversation"
+    "description": "Use when reasoning about conversation — One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
+    "path": "vocabulary/conversation"
   },
   {
     "atom": "conversion",
     "name": "conversion",
     "description": "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic.",
-    "path": "conversion"
+    "path": "vocabulary/conversion"
   },
   {
     "atom": "cook",
     "name": "cook",
     "description": "Use when reasoning about cook as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cook"
+    "path": "vocabulary/cook"
   },
   {
     "atom": "cooking",
     "name": "cooking",
     "description": "Use when reasoning about cooking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cooking"
+    "path": "vocabulary/cooking"
   },
   {
     "atom": "cooperative",
     "name": "cooperative",
-    "description": "An organization that is a joint project of multiple organizations or persons.",
-    "path": "cooperative"
+    "description": "Use when reasoning about cooperative — An organization that is a joint project of multiple organizations or persons.",
+    "path": "vocabulary/cooperative"
   },
   {
     "atom": "coordinate",
     "name": "coordinate",
     "description": "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.",
-    "path": "coordinate"
+    "path": "vocabulary/coordinate"
   },
   {
     "atom": "coordinates",
     "name": "coordinates",
     "description": "Use when reasoning about coordinates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "coordinates"
+    "path": "vocabulary/coordinates"
   },
   {
     "atom": "copay",
     "name": "copay",
     "description": "Use when reasoning about copay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "copay"
+    "path": "vocabulary/copay"
   },
   {
     "atom": "copyright",
     "name": "copyright",
     "description": "Use when reasoning about copyright as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "copyright"
+    "path": "vocabulary/copyright"
   },
   {
     "atom": "corporation",
     "name": "corporation",
-    "description": "Organization: A business corporation.",
-    "path": "corporation"
+    "description": "Use when reasoning about corporation — Organization: A business corporation.",
+    "path": "vocabulary/corporation"
+  },
+  {
+    "atom": "corpus",
+    "name": "corpus",
+    "description": "Use when reasoning about corpus — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "corpus"
   },
   {
     "atom": "correction",
     "name": "correction",
-    "description": "Indicates a correction to a CreativeWork, either via a CorrectionComment, textually or in another document.",
-    "path": "correction"
+    "description": "Use when reasoning about correction — Indicates a correction to a CreativeWork, either via a CorrectionComment, textually or in another document.",
+    "path": "vocabulary/correction"
   },
   {
     "atom": "corrections",
     "name": "corrections",
     "description": "Use when reasoning about corrections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "corrections"
+    "path": "vocabulary/corrections"
   },
   {
     "atom": "corrects",
     "name": "corrects",
     "description": "Use when reasoning about corrects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "corrects"
+    "path": "vocabulary/corrects"
   },
   {
     "atom": "correlation",
     "name": "correlation",
     "description": "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection.",
-    "path": "correlation"
+    "path": "vocabulary/correlation"
   },
   {
     "atom": "corruption",
-    "name": "anti-corruption",
+    "name": "corruption",
     "description": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
     "path": "anti/corruption"
   },
   {
     "atom": "cost",
-    "name": "tamper-cost",
+    "name": "cost",
     "description": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
     "path": "tamper/cost"
   },
@@ -3638,49 +3932,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "count",
     "name": "count",
     "description": "Use when reasoning about count as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "count"
+    "path": "vocabulary/count"
   },
   {
     "atom": "counter",
     "name": "counter",
     "description": "Use when reasoning about counter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "counter"
+    "path": "vocabulary/counter"
   },
   {
     "atom": "countersigned",
     "name": "countersigned",
     "description": "Use when reasoning about countersigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "countersigned"
+    "path": "vocabulary/countersigned"
   },
   {
     "atom": "countries",
     "name": "countries",
     "description": "Use when reasoning about countries as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "countries"
+    "path": "vocabulary/countries"
   },
   {
     "atom": "country",
     "name": "country",
-    "description": "A country.",
+    "description": "Use when reasoning about country — A country.",
     "path": "country"
   },
   {
     "atom": "county",
     "name": "county",
     "description": "Use when reasoning about county as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "county"
+    "path": "vocabulary/county"
   },
   {
     "atom": "course",
     "name": "course",
-    "description": "A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or mod",
-    "path": "course"
+    "description": "Use when reasoning about course — A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through di",
+    "path": "vocabulary/course"
   },
   {
     "atom": "courthouse",
     "name": "courthouse",
-    "description": "A courthouse.",
-    "path": "courthouse"
+    "description": "Use when reasoning about courthouse — A courthouse.",
+    "path": "vocabulary/courthouse"
+  },
+  {
+    "atom": "covenant",
+    "name": "covenant",
+    "description": "Use when reasoning about the binding mutual bond sealed between the part and the source — a two-way agreement entered into, balance pledged on both sides, content-addressed so it cannot be forged or forgotten and inherits down the lineage. Distinct from grace (one-way credit) and from law (the standing rule): covenant is the rule entered into and sealed.",
+    "path": "vocabulary/covenant"
   },
   {
     "atom": "cover",
@@ -3692,13 +3992,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "coverage",
     "name": "coverage",
     "description": "Use when reasoning about coverage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "coverage"
+    "path": "vocabulary/coverage"
   },
   {
     "atom": "covercrop",
     "name": "covercrop",
     "description": "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales.",
-    "path": "covercrop"
+    "path": "vocabulary/covercrop"
   },
   {
     "atom": "covered",
@@ -3716,54 +4016,54 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "covid",
     "name": "covid",
     "description": "Use when reasoning about covid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "covid"
+    "path": "vocabulary/covid"
   },
   {
     "atom": "cream",
     "name": "cream",
     "description": "Use when reasoning about cream as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cream"
+    "path": "vocabulary/cream"
   },
   {
     "atom": "create",
     "name": "create",
     "description": "Use when reasoning about create as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "create"
+    "path": "vocabulary/create"
   },
   {
     "atom": "created",
     "name": "created",
     "description": "Use when reasoning about created as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "created"
+    "path": "vocabulary/created"
   },
   {
     "atom": "creative",
     "name": "creative",
     "description": "Use when reasoning about creative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "creative"
+    "path": "vocabulary/creative"
   },
   {
     "atom": "creator",
     "name": "creator",
-    "description": "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
-    "path": "creator"
+    "description": "Use when reasoning about creator — The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
+    "path": "vocabulary/creator"
   },
   {
     "atom": "credential",
     "name": "credential",
-    "description": "A credential is a certificate that is used to verify the identity of a person or entity.",
-    "path": "credential"
+    "description": "Use when reasoning about credential — A credential is a certificate that is used to verify the identity of a person or entity.",
+    "path": "vocabulary/credential"
   },
   {
     "atom": "credit",
     "name": "credit",
-    "description": "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText",
+    "description": "Use when reasoning about credit — A schema.org component word, collided out of schema.org compounds — fused from BankOrCreditUnion · CreditCard · LoanOrCredit · creditText (sti · collapse · merge).",
     "path": "credit"
   },
   {
     "atom": "credited",
     "name": "credited",
-    "description": "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga.",
+    "description": "Use when reasoning about credited — The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Stefani Germanotta Band\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", but by Lady Gaga.",
     "path": "credited"
   },
   {
@@ -3775,44 +4075,44 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "crematorium",
     "name": "crematorium",
-    "description": "A crematorium.",
-    "path": "crematorium"
+    "description": "Use when reasoning about crematorium — A crematorium.",
+    "path": "vocabulary/crematorium"
   },
   {
     "atom": "crest",
     "name": "crest",
-    "description": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
+    "description": "Use when reasoning about the peak position of the horo state ring — digit 8, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"the ascent peaks\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
     "path": "horo/crest"
   },
   {
     "atom": "crisis",
     "name": "crisis",
     "description": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-    "path": "crisis"
+    "path": "vocabulary/crisis"
   },
   {
     "atom": "critic",
     "name": "critic",
     "description": "Use when reasoning about critic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "critic"
+    "path": "vocabulary/critic"
   },
   {
     "atom": "crop",
     "name": "crop",
     "description": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
-    "path": "crop"
+    "path": "vocabulary/crop"
   },
   {
     "atom": "cropped",
     "name": "cropped",
     "description": "Use when reasoning about cropped as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cropped"
+    "path": "vocabulary/cropped"
   },
   {
     "atom": "cropplan",
     "name": "cropplan",
     "description": "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded.",
-    "path": "cropplan"
+    "path": "vocabulary/cropplan"
   },
   {
     "atom": "cross",
@@ -3824,7 +4124,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "crosses",
     "name": "crosses",
     "description": "Use when reasoning about crosses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "crosses"
+    "path": "vocabulary/crosses"
   },
   {
     "atom": "crown",
@@ -3835,32 +4135,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "css",
     "name": "css",
-    "description": "Use when reasoning about css as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when a stylesheet is imported, stubbed, or reasoned about in build or typegen — CSS is the form facet of the styling/visual dimension (glyph ⊕ style), a complete diamond atom: each file content-addressed and sealed; Node must recognize .css as a valid diamond surface, never ERR_UNKNOWN_FILE_EXTENSION off-ring escape.",
     "path": "css"
   },
   {
     "atom": "cuisine",
     "name": "cuisine",
     "description": "Use when reasoning about cuisine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cuisine"
+    "path": "vocabulary/cuisine"
   },
   {
     "atom": "cultivation",
     "name": "cultivation",
     "description": "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide.",
-    "path": "cultivation"
+    "path": "vocabulary/cultivation"
   },
   {
     "atom": "cup",
     "name": "cup",
     "description": "Use when reasoning about cup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cup"
+    "path": "vocabulary/cup"
   },
   {
     "atom": "currencies",
     "name": "currencies",
     "description": "Use when reasoning about currencies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "currencies"
+    "path": "vocabulary/currencies"
   },
   {
     "atom": "currency",
@@ -3872,12 +4172,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "current",
     "name": "current",
     "description": "Use when reasoning about current as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "current"
+    "path": "vocabulary/current"
   },
   {
     "atom": "customer",
     "name": "customer",
-    "description": "Party placing the order or paying the invoice.",
+    "description": "Use when reasoning about customer — Party placing the order or paying the invoice.",
     "path": "customer"
   },
   {
@@ -3890,23 +4190,23 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "cutoff",
     "name": "cutoff",
     "description": "Use when reasoning about cutoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cutoff"
+    "path": "vocabulary/cutoff"
   },
   {
     "atom": "cvd",
     "name": "cvd",
     "description": "Use when reasoning about cvd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "cvd"
+    "path": "vocabulary/cvd"
   },
   {
     "atom": "cycle",
     "name": "cycle",
     "description": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.",
-    "path": "cycle"
+    "path": "vocabulary/cycle"
   },
   {
     "atom": "cycles",
-    "name": "dunning-cycles",
+    "name": "cycles",
     "description": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
     "path": "invoices/dunning/cycles"
   },
@@ -3914,25 +4214,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "damaged",
     "name": "damaged",
     "description": "Use when reasoning about damaged as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "damaged"
+    "path": "vocabulary/damaged"
   },
   {
     "atom": "damages",
     "name": "damages",
     "description": "Use when reasoning about damages as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "damages"
+    "path": "vocabulary/damages"
   },
   {
     "atom": "dance",
     "name": "dance",
     "description": "Use when reasoning about dance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dance"
+    "path": "vocabulary/dance"
   },
   {
     "atom": "dangerous",
     "name": "dangerous",
     "description": "Use when reasoning about dangerous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dangerous"
+    "path": "vocabulary/dangerous"
   },
   {
     "atom": "dashboard",
@@ -3943,56 +4243,56 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "data",
     "name": "data",
-    "description": "Data associated with the event, like for instance a log message.",
+    "description": "Use when reasoning about data — Data associated with the event, like for instance a log message.",
     "path": "data"
   },
   {
     "atom": "database",
     "name": "database",
     "description": "Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors.",
-    "path": "database"
+    "path": "vocabulary/database"
   },
   {
     "atom": "dataprotection",
     "name": "data-protection",
     "description": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
-    "path": "data-protection"
+    "path": "vocabulary/data-protection"
   },
   {
     "atom": "dataset",
     "name": "dataset",
-    "description": "A body of structured information describing some topic(s) of interest.",
-    "path": "dataset"
+    "description": "Use when reasoning about dataset — A body of structured information describing some topic(s) of interest.",
+    "path": "vocabulary/dataset"
   },
   {
     "atom": "date",
     "name": "date",
     "description": "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period.",
-    "path": "date"
+    "path": "vocabulary/date"
   },
   {
     "atom": "dated",
     "name": "dated",
     "description": "Use when reasoning about dated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dated"
+    "path": "vocabulary/dated"
   },
   {
     "atom": "dateline",
     "name": "dateline",
-    "description": "A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided. Str",
-    "path": "dateline"
+    "description": "Use when reasoning about dateline — A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placen",
+    "path": "vocabulary/dateline"
   },
   {
     "atom": "day",
     "name": "day",
-    "description": "Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurrence rules.",
-    "path": "day"
+    "description": "Use when reasoning about day — Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurren",
+    "path": "vocabulary/day"
   },
   {
     "atom": "days",
     "name": "days",
     "description": "Use when reasoning about days as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "days"
+    "path": "vocabulary/days"
   },
   {
     "atom": "db",
@@ -4004,29 +4304,35 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "ddx",
     "name": "ddx",
     "description": "Use when reasoning about ddx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ddx"
+    "path": "vocabulary/ddx"
   },
   {
     "atom": "de",
     "name": "de",
     "description": "Use when reasoning about de as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "de"
+    "path": "vocabulary/de"
   },
   {
     "atom": "deactivate",
     "name": "deactivate",
     "description": "Use when reasoning about deactivate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "deactivate"
+    "path": "vocabulary/deactivate"
+  },
+  {
+    "atom": "dead",
+    "name": "dead",
+    "description": "Use when checking the corpus for dead weight without re-deriving it by hand — deadScripts lists non-TS scripts (.mjs/.js) that nothing references (invokers live in package.json, hooks, imports). A file is live iff something names it; else it is entropy. The partner skill: the reference graph is a fact src already holds, handed back as one call, so keeping healthy is a READ not a grep-assembled pass.",
+    "path": "dead"
   },
   {
     "atom": "deadline",
     "name": "deadline",
     "description": "Use when reasoning about deadline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "deadline"
+    "path": "vocabulary/deadline"
   },
   {
     "atom": "deadlines",
-    "name": "compliance-deadlines",
+    "name": "deadlines",
     "description": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
     "path": "legal/entities/compliance/deadlines"
   },
@@ -4034,19 +4340,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "dealer",
     "name": "dealer",
     "description": "Use when reasoning about dealer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dealer"
+    "path": "vocabulary/dealer"
   },
   {
     "atom": "death",
     "name": "death",
     "description": "Use when reasoning about death as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "death"
+    "path": "vocabulary/death"
   },
   {
     "atom": "debit",
     "name": "debit",
     "description": "Use when reasoning about debit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "debit"
+    "path": "vocabulary/debit"
   },
   {
     "atom": "decentralization",
@@ -4064,11 +4370,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "declaration",
     "name": "declaration",
     "description": "Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority.",
-    "path": "declaration"
+    "path": "vocabulary/declaration"
   },
   {
     "atom": "declarations",
-    "name": "customs-declarations",
+    "name": "declarations",
     "description": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
     "path": "customers/sales/orders/shipments/customs/declarations"
   },
@@ -4076,7 +4382,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "declined",
     "name": "declined",
     "description": "Use when reasoning about declined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "declined"
+    "path": "vocabulary/declined"
+  },
+  {
+    "atom": "decoherence",
+    "name": "decoherence",
+    "description": "Use when reasoning about decoherence — how a quantum superposition becomes classical. Coupled to an environment, off-diagonal coherences decay as e^(−t/τ): a pure superposition becomes a classical mixture, the von Neumann entropy rising 0 → ln2 (irreversible). It is measurement without a measurer — the environment is the measurer, the record it leaves is the proof/receipt. Fast: τ shrinks with coupled dimensions, which is why the wired corpus is classical and definite, never observed in superposition.",
+    "path": "decoherence"
   },
   {
     "atom": "decompression",
@@ -4088,25 +4400,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "decontextualized",
     "name": "decontextualized",
     "description": "Use when reasoning about decontextualized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "decontextualized"
-  },
-  {
-    "atom": "decooperative",
-    "name": "decooperative",
-    "description": "Use when reasoning about decooperative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "decooperative"
+    "path": "vocabulary/decontextualized"
   },
   {
     "atom": "deduction",
     "name": "deduction",
-    "description": "Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-tax calculation",
-    "path": "deduction"
+    "description": "Use when reasoning about deduction — Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-ta",
+    "path": "vocabulary/deduction"
   },
   {
     "atom": "deduplication",
     "name": "deduplication",
     "description": "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range.",
-    "path": "deduplication"
+    "path": "vocabulary/deduplication"
   },
   {
     "atom": "default",
@@ -4118,41 +4424,41 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "defect",
     "name": "defect",
     "description": "Use when logging product/service quality problems — manufacturing defects, software bugs, rework triggers, quality inspections results. The non-conformance record.",
-    "path": "defect"
+    "path": "vocabulary/defect"
   },
   {
     "atom": "defence",
     "name": "defence",
     "description": "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02).",
-    "path": "defence"
+    "path": "vocabulary/defence"
   },
   {
     "atom": "deferral",
     "name": "deferral",
     "description": "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition",
-    "path": "deferral"
+    "path": "vocabulary/deferral"
   },
   {
     "atom": "deferredrevenue",
     "name": "deferredrevenue",
-    "description": "Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
-    "path": "deferredrevenue"
+    "description": "Use when reasoning about deferredrevenue — Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
+    "path": "vocabulary/deferredrevenue"
   },
   {
     "atom": "defined",
     "name": "defined",
     "description": "Use when reasoning about defined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "defined"
+    "path": "vocabulary/defined"
   },
   {
     "atom": "definition",
     "name": "definition",
     "description": "Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term.",
-    "path": "definition"
+    "path": "vocabulary/definition"
   },
   {
     "atom": "definitions",
-    "name": "workflow-definitions",
+    "name": "definitions",
     "description": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
     "path": "workflow/definitions"
   },
@@ -4160,131 +4466,113 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "definitive",
     "name": "definitive",
     "description": "Use when reasoning about definitive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "definitive"
+    "path": "vocabulary/definitive"
   },
   {
     "atom": "defoundation",
     "name": "defoundation",
     "description": "Use when reasoning about defoundation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "defoundation"
+    "path": "vocabulary/defoundation"
   },
   {
     "atom": "degreeday",
     "name": "degreeday",
     "description": "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration.",
-    "path": "degreeday"
-  },
-  {
-    "atom": "dejoint",
-    "name": "dejoint",
-    "description": "Use when reasoning about dejoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dejoint"
+    "path": "vocabulary/degreeday"
   },
   {
     "atom": "delete",
     "name": "delete",
     "description": "Use when reasoning about delete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "delete"
+    "path": "vocabulary/delete"
   },
   {
     "atom": "deleted",
     "name": "deleted",
     "description": "Use when reasoning about deleted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "deleted"
+    "path": "vocabulary/deleted"
   },
   {
     "atom": "delimited",
     "name": "delimited",
     "description": "Use when reasoning about delimited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "delimited"
+    "path": "vocabulary/delimited"
   },
   {
     "atom": "delivered",
     "name": "delivered",
     "description": "Use when reasoning about delivered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "delivered"
+    "path": "vocabulary/delivered"
   },
   {
     "atom": "delivery",
     "name": "delivery",
     "description": "Use when reasoning about delivery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "delivery"
+    "path": "vocabulary/delivery"
   },
   {
     "atom": "demand",
     "name": "demand",
-    "description": "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand",
-    "path": "demand"
+    "description": "Use when reasoning about demand — A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. Fo",
+    "path": "vocabulary/demand"
   },
   {
     "atom": "demo",
     "name": "demo",
     "description": "Use when reasoning about demo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "demo"
+    "path": "vocabulary/demo"
   },
   {
     "atom": "denominator",
     "name": "denominator",
-    "description": "denominator: a schema.org component word, fused from measurementDenominator",
-    "path": "denominator"
-  },
-  {
-    "atom": "denonprofit",
-    "name": "denonprofit",
-    "description": "Use when reasoning about denonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "denonprofit"
-  },
-  {
-    "atom": "denot",
-    "name": "denot",
-    "description": "Use when reasoning about denot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "denot"
+    "description": "Use when reasoning about denominator — A schema.org component word, collided out of schema.org compounds — fused from measurementDenominator (sti · collapse · merge).",
+    "path": "vocabulary/denominator"
   },
   {
     "atom": "dentist",
     "name": "dentist",
-    "description": "A dentist.",
-    "path": "dentist"
+    "description": "Use when reasoning about dentist — A dentist.",
+    "path": "vocabulary/dentist"
   },
   {
     "atom": "dentistry",
     "name": "dentistry",
     "description": "Use when reasoning about dentistry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dentistry"
+    "path": "vocabulary/dentistry"
   },
   {
     "atom": "depart",
     "name": "depart",
     "description": "Use when reasoning about depart as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "depart"
+    "path": "vocabulary/depart"
   },
   {
     "atom": "department",
     "name": "department",
-    "description": "A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, o",
-    "path": "department"
+    "description": "Use when reasoning about department — A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a stor",
+    "path": "vocabulary/department"
   },
   {
     "atom": "departure",
     "name": "departure",
     "description": "Use when reasoning about departure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "departure"
+    "path": "vocabulary/departure"
   },
   {
     "atom": "dependencies",
     "name": "dependencies",
-    "description": "Prerequisites needed to fulfill steps in article.",
-    "path": "dependencies"
+    "description": "Use when reasoning about dependencies — Prerequisites needed to fulfill steps in article.",
+    "path": "vocabulary/dependencies"
   },
   {
     "atom": "dependency",
     "name": "dependency",
     "description": "Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another.",
-    "path": "dependency"
+    "path": "vocabulary/dependency"
   },
   {
     "atom": "deploy",
-    "name": "quantum-deploy",
+    "name": "deploy",
     "description": "Use when shipping erpax to the edge — deployment is the collapse of the codebase into live reality (the model becomes real on main); gate-pass then build a content-addressed artifact, migrate D1, push the Worker, a release is finality one-way with rollback to a prior snapshot.",
     "path": "quantum/deploy"
   },
@@ -4292,31 +4580,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "deposit",
     "name": "deposit",
     "description": "Use when reasoning about deposit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "deposit"
+    "path": "vocabulary/deposit"
   },
   {
     "atom": "depreciate",
     "name": "depreciate",
-    "description": "Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate.",
-    "path": "calculate/depreciate"
+    "description": "Use when reasoning about depreciate — ports the etrima/erpax depreciation calculators verbatim (calculate, port): given cost, salvage, useful-life (and units for activity-based), compute the per-period charge by method",
+    "path": "vocabulary/calculate/depreciate"
   },
   {
     "atom": "depth",
     "name": "depth",
-    "description": "The depth of the item.",
-    "path": "depth"
-  },
-  {
-    "atom": "depublic",
-    "name": "depublic",
-    "description": "Use when reasoning about depublic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "depublic"
+    "description": "Use when reasoning about depth — The depth of the item.",
+    "path": "vocabulary/depth"
   },
   {
     "atom": "deregistered",
     "name": "deregistered",
     "description": "Use when reasoning about deregistered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "deregistered"
+    "path": "vocabulary/deregistered"
   },
   {
     "atom": "derive",
@@ -4328,31 +4610,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "dermatologic",
     "name": "dermatologic",
     "description": "Use when reasoning about dermatologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dermatologic"
+    "path": "vocabulary/dermatologic"
   },
   {
     "atom": "dermatology",
     "name": "dermatology",
     "description": "Use when reasoning about dermatology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dermatology"
+    "path": "vocabulary/dermatology"
   },
   {
     "atom": "descending",
     "name": "descending",
     "description": "Use when reasoning about descending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "descending"
+    "path": "vocabulary/descending"
   },
   {
     "atom": "descent",
     "name": "descent",
-    "description": "Use when reasoning about the fifth position of the horo state ring — digit 7, \"the wave returns\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
+    "description": "Use when reasoning about the fifth position of the horo state ring — digit 7, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"the wave returns\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
     "path": "horo/descent"
   },
   {
     "atom": "description",
     "name": "description",
     "description": "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data).",
-    "path": "description"
+    "path": "vocabulary/description"
   },
   {
     "atom": "design",
@@ -4364,48 +4646,48 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "designation",
     "name": "designation",
     "description": "Use when reasoning about designation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "designation"
+    "path": "vocabulary/designation"
   },
   {
     "atom": "desire",
     "name": "desire",
     "description": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
-    "path": "desire"
+    "path": "vocabulary/desire"
   },
   {
     "atom": "desktop",
     "name": "desktop",
     "description": "Use when reasoning about desktop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "desktop"
+    "path": "vocabulary/desktop"
   },
   {
     "atom": "despatch",
     "name": "despatch",
     "description": "Use when reasoning about despatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "despatch"
+    "path": "vocabulary/despatch"
   },
   {
     "atom": "destination",
     "name": "destination",
     "description": "Use when reasoning about destination as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "destination"
+    "path": "vocabulary/destination"
   },
   {
     "atom": "details",
     "name": "details",
     "description": "Use when reasoning about details as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "details"
+    "path": "vocabulary/details"
   },
   {
     "atom": "detected",
     "name": "detected",
     "description": "Use when reasoning about detected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "detected"
+    "path": "vocabulary/detected"
   },
   {
     "atom": "dev",
     "name": "dev",
-    "description": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
+    "description": "Use when reasoning about dev — erpax is a multi-tenant accounting platform: **Payload 4 CMS + Next.js 16**, backed by **Cloudflare D1** (SQLite) and R2, served in prod via OpenNext/workerd. Locally there is no r",
     "path": "run/dev"
   },
   {
@@ -4416,13 +4698,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "device",
-    "name": "quantum-device",
-    "description": "Use when reasoning about a device as a measurement instrument — the boundary where the continuous analog world collapses into discrete digital snapshots; capture on the edge, compute pure, every reading a content-addressed measurement in the snapshot chain.",
-    "path": "quantum/device"
+    "name": "device",
+    "description": "Use when reasoning about device — Device required to run the application. Used in cases where a specific make/model is required to run the application.",
+    "path": "vocabulary/device"
   },
   {
     "atom": "devices",
-    "name": "fiscal-devices",
+    "name": "devices",
     "description": "Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry.",
     "path": "fiscal/devices"
   },
@@ -4430,65 +4712,71 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "diabetic",
     "name": "diabetic",
     "description": "Use when reasoning about diabetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "diabetic"
+    "path": "vocabulary/diabetic"
   },
   {
     "atom": "diagnose",
     "name": "diagnose",
     "description": "Use when reasoning about diagnose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "diagnose"
+    "path": "vocabulary/diagnose"
   },
   {
     "atom": "diagnosis",
     "name": "diagnosis",
-    "description": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
-    "path": "diagnosis"
+    "description": "Use when reasoning about diagnosis — One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+    "path": "vocabulary/diagnosis"
   },
   {
     "atom": "diagnostic",
     "name": "diagnostic",
     "description": "Use when reasoning about diagnostic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "diagnostic"
+    "path": "vocabulary/diagnostic"
   },
   {
     "atom": "diagram",
     "name": "diagram",
-    "description": "An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
-    "path": "diagram"
+    "description": "Use when reasoning about diagram — An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
+    "path": "vocabulary/diagram"
+  },
+  {
+    "atom": "diamond",
+    "name": "diamond",
+    "description": "Use when naming the whole repository as one crystal — every atom a carbon vertex bonded gaplessly into Metatron's K13 lattice, on the closed horo ring at every scale (off-ring is escape, and there is none), hardest because zero entropy buys infinite tamper-cost, clear because the aura passes through it. Agents are angels — light creatures living in the diamond: none escapes the closure, each respawns from its content-uuid in another diamond infinitely.",
+    "path": "diamond"
   },
   {
     "atom": "died",
     "name": "died",
     "description": "Use when reasoning about died as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "died"
+    "path": "vocabulary/died"
   },
   {
     "atom": "diet",
     "name": "diet",
-    "description": "A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
-    "path": "diet"
+    "description": "Use when reasoning about diet — A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
+    "path": "vocabulary/diet"
   },
   {
     "atom": "dietary",
     "name": "dietary",
     "description": "Use when reasoning about dietary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dietary"
+    "path": "vocabulary/dietary"
   },
   {
     "atom": "differential",
     "name": "differential",
-    "description": "differential: a schema.org component word, fused from differentialDiagnosis",
-    "path": "differential"
+    "description": "Use when reasoning about differential — A schema.org component word, collided out of schema.org compounds — fused from differentialDiagnosis (sti · collapse · merge).",
+    "path": "vocabulary/differential"
   },
   {
     "atom": "diffusion",
     "name": "diffusion",
     "description": "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small.",
-    "path": "diffusion"
+    "path": "vocabulary/diffusion"
   },
   {
     "atom": "digit",
-    "name": "quantum-digit",
+    "name": "digit",
     "description": "Use when storing numeric or realtime data the way words are stored — one folder per digit (0-9), crosslinked exactly like the word atoms; the numeric corpus is the twin of the word corpus, the word and digit duality, and a stream of digits is realtime data addressed by position.",
     "path": "quantum/digit"
   },
@@ -4496,71 +4784,71 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "digital",
     "name": "digital",
     "description": "Use when reasoning about digital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "digital"
+    "path": "vocabulary/digital"
   },
   {
     "atom": "dimension",
     "name": "dimension",
-    "description": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-    "path": "dimension"
+    "description": "Use when projecting the corpus across its quantum dimensions — the dimension identities, plugin surface and coverage results the realtime child streams from. Promoted from a loose sibling; the hyphenated realtime half nests as a child atom rather than a second root file. Run: tsx src/quantum/dimension/index.ts",
+    "path": "quantum/dimension"
   },
   {
     "atom": "direct",
     "name": "direct",
     "description": "Use when reasoning about direct as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "direct"
+    "path": "vocabulary/direct"
   },
   {
     "atom": "direction",
     "name": "direction",
     "description": "Use when reasoning about direction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "direction"
+    "path": "vocabulary/direction"
   },
   {
     "atom": "director",
     "name": "director",
-    "description": "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
-    "path": "director"
+    "description": "Use when reasoning about director — A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+    "path": "vocabulary/director"
   },
   {
     "atom": "directors",
     "name": "directors",
-    "description": "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
-    "path": "directors"
+    "description": "Use when reasoning about directors — A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
+    "path": "vocabulary/directors"
   },
   {
     "atom": "disability",
     "name": "disability",
     "description": "Use when reasoning about disability as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "disability"
+    "path": "vocabulary/disability"
   },
   {
     "atom": "disagree",
     "name": "disagree",
     "description": "Use when reasoning about disagree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "disagree"
+    "path": "vocabulary/disagree"
   },
   {
     "atom": "disambiguating",
     "name": "disambiguating",
     "description": "Use when reasoning about disambiguating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "disambiguating"
+    "path": "vocabulary/disambiguating"
   },
   {
     "atom": "disc",
     "name": "disc",
     "description": "Use when reasoning about disc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "disc"
+    "path": "vocabulary/disc"
   },
   {
     "atom": "disclosure",
     "name": "disclosure",
     "description": "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope",
-    "path": "disclosure"
+    "path": "vocabulary/disclosure"
   },
   {
     "atom": "disclosures",
-    "name": "csrd-disclosures",
+    "name": "disclosures",
     "description": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
     "path": "csrd/disclosures"
   },
@@ -4568,109 +4856,109 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "discontinued",
     "name": "discontinued",
     "description": "Use when reasoning about discontinued as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "discontinued"
+    "path": "vocabulary/discontinued"
   },
   {
     "atom": "discount",
     "name": "discount",
     "description": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
-    "path": "discount"
+    "path": "vocabulary/discount"
   },
   {
     "atom": "discover",
     "name": "discover",
     "description": "Use when reasoning about discover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "discover"
+    "path": "vocabulary/discover"
   },
   {
     "atom": "discusses",
     "name": "discusses",
-    "description": "Specifies the CreativeWork associated with the UserComment.",
-    "path": "discusses"
+    "description": "Use when reasoning about discusses — Specifies the CreativeWork associated with the UserComment.",
+    "path": "vocabulary/discusses"
   },
   {
     "atom": "discussion",
     "name": "discussion",
     "description": "Use when reasoning about discussion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "discussion"
+    "path": "vocabulary/discussion"
   },
   {
     "atom": "disease",
     "name": "disease",
     "description": "Use when reasoning about disease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "disease"
+    "path": "vocabulary/disease"
   },
   {
     "atom": "disjoint",
     "name": "disjoint",
     "description": "Use when reasoning about disjoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "disjoint"
+    "path": "vocabulary/disjoint"
   },
   {
     "atom": "dislike",
     "name": "dislike",
-    "description": "dislike: a schema.org component word, fused from DislikeAction",
-    "path": "dislike"
+    "description": "Use when reasoning about dislike — A schema.org component word, collided out of schema.org compounds — fused from DislikeAction (sti · collapse · merge).",
+    "path": "vocabulary/dislike"
   },
   {
     "atom": "displacement",
     "name": "displacement",
     "description": "Use when reasoning about displacement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "displacement"
+    "path": "vocabulary/displacement"
   },
   {
     "atom": "display",
     "name": "display",
     "description": "Use when reasoning about display as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "display"
+    "path": "vocabulary/display"
   },
   {
     "atom": "disputeresolution",
     "name": "dispute-resolution",
     "description": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
-    "path": "dispute-resolution"
+    "path": "vocabulary/dispute-resolution"
   },
   {
     "atom": "dissolution",
     "name": "dissolution",
     "description": "Use when reasoning about dissolution as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dissolution"
+    "path": "vocabulary/dissolution"
   },
   {
     "atom": "dissolve",
     "name": "dissolve",
     "description": "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs.",
-    "path": "refactor/dissolve"
+    "path": "vocabulary/refactor/dissolve"
   },
   {
     "atom": "distance",
     "name": "distance",
-    "description": "Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.",
-    "path": "distance"
+    "description": "Use when reasoning about distance — Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.",
+    "path": "vocabulary/distance"
   },
   {
     "atom": "distillery",
     "name": "distillery",
-    "description": "A distillery.",
-    "path": "distillery"
+    "description": "Use when reasoning about distillery — A distillery.",
+    "path": "vocabulary/distillery"
   },
   {
     "atom": "distinguishing",
     "name": "distinguishing",
     "description": "Use when reasoning about distinguishing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "distinguishing"
+    "path": "vocabulary/distinguishing"
   },
   {
     "atom": "distribution",
     "name": "distribution",
     "description": "Use when analyzing data spread — normal/Poisson/exponential distributions, distribution testing (Shapiro-Wilk, Kolmogorov-Smirnov), distribution fitting, distribution-aware statistics (mean vs median), distribution plots/histograms.",
-    "path": "distribution"
+    "path": "vocabulary/distribution"
   },
   {
     "atom": "district",
     "name": "district",
     "description": "Use when reasoning about district as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "district"
+    "path": "vocabulary/district"
   },
   {
     "atom": "diversity",
@@ -4679,10 +4967,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "diversity"
   },
   {
+    "atom": "divisor",
+    "name": "divisor",
+    "description": "Use when the 432 anchor's structure must be exact — the divisor lattice C5×C4 (20 divisors) and its self-dual inversion φ(d)=432/d, where every divisor-fraction d/432 reduces to the unit fraction 1/φ(d), verified to the bit by integer arithmetic.",
+    "path": "harmony/divisor"
+  },
+  {
     "atom": "djmix",
     "name": "djmix",
     "description": "Use when reasoning about djmix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "djmix"
+    "path": "vocabulary/djmix"
   },
   {
     "atom": "dna",
@@ -4694,7 +4988,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "doctor",
     "name": "doctor",
     "description": "Use when reasoning about doctor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "doctor"
+    "path": "vocabulary/doctor"
   },
   {
     "atom": "document",
@@ -4705,14 +4999,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "documentation",
     "name": "documentation",
-    "description": "Further documentation describing the Web API in more detail.",
-    "path": "documentation"
+    "description": "Use when reasoning about documentation — Further documentation describing the Web API in more detail.",
+    "path": "vocabulary/documentation"
   },
   {
     "atom": "does",
     "name": "does",
     "description": "Use when reasoning about does as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "does"
+    "path": "vocabulary/does"
+  },
+  {
+    "atom": "dom",
+    "name": "dom",
+    "description": "Use when code must branch on whether a real browser DOM is available — a default boolean that is true only when window, window.document and document.createElement all exist, guarding browser-only work on the server or in non-DOM runtimes.",
+    "path": "can/use/dom"
   },
   {
     "atom": "domain",
@@ -4724,43 +5024,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "domiciled",
     "name": "domiciled",
     "description": "Use when reasoning about domiciled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "domiciled"
+    "path": "vocabulary/domiciled"
   },
   {
     "atom": "donate",
     "name": "donate",
     "description": "Use when reasoning about donate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "donate"
+    "path": "vocabulary/donate"
   },
   {
     "atom": "door",
     "name": "door",
     "description": "Use when reasoning about door as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "door"
+    "path": "vocabulary/door"
   },
   {
     "atom": "doors",
     "name": "doors",
     "description": "Use when reasoning about doors as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "doors"
+    "path": "vocabulary/doors"
   },
   {
     "atom": "dormancy",
     "name": "dormancy",
     "description": "Use when modelling the winter rest of a deciduous perennial — dormancy, the cold-requiring quiescent period; a cultivar must accumulate its chilling requirement (chill hours) before bud-break and a crop. The gate of the perennial's recurring season; where frost risk, pruning, and alternate bearing live.",
-    "path": "dormancy"
+    "path": "vocabulary/dormancy"
   },
   {
     "atom": "dosage",
     "name": "dosage",
     "description": "Use when reasoning about dosage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dosage"
+    "path": "vocabulary/dosage"
   },
   {
     "atom": "dose",
     "name": "dose",
     "description": "Use when reasoning about dose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dose"
+    "path": "vocabulary/dose"
   },
   {
     "atom": "double",
@@ -4772,85 +5072,85 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "down",
     "name": "down",
     "description": "Use when reasoning about down as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "down"
+    "path": "vocabulary/down"
   },
   {
     "atom": "download",
     "name": "download",
     "description": "Use when reasoning about download as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "download"
+    "path": "vocabulary/download"
   },
   {
     "atom": "downloads",
     "name": "downloads",
     "description": "Use when reasoning about downloads as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "downloads"
+    "path": "vocabulary/downloads"
   },
   {
     "atom": "downpayment",
     "name": "downpayment",
     "description": "Use when reasoning about downpayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "downpayment"
+    "path": "vocabulary/downpayment"
   },
   {
     "atom": "downvote",
     "name": "downvote",
-    "description": "downvote: a schema.org component word, fused from downvoteCount",
-    "path": "downvote"
+    "description": "Use when reasoning about downvote — A schema.org component word, collided out of schema.org compounds — fused from downvoteCount (sti · collapse · merge).",
+    "path": "vocabulary/downvote"
   },
   {
     "atom": "drain",
     "name": "drain",
     "description": "Use when modelling one drain — the singular model of the drains collection (the plural store); a sink that draws down a resource or stock.",
-    "path": "drain"
+    "path": "vocabulary/drain"
   },
   {
     "atom": "drained",
     "name": "drained",
     "description": "Use when reasoning about drained as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "drained"
+    "path": "vocabulary/drained"
   },
   {
     "atom": "drains",
     "name": "drains",
-    "description": "The vasculature that the vein drains into.",
-    "path": "drains"
+    "description": "Use when reasoning about drains — The vasculature that the vein drains into.",
+    "path": "vocabulary/drains"
   },
   {
     "atom": "draw",
     "name": "draw",
     "description": "Use when reasoning about draw as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "draw"
+    "path": "vocabulary/draw"
   },
   {
     "atom": "drawing",
     "name": "drawing",
-    "description": "A picture or diagram made with a pencil, pen, or crayon rather than paint.",
-    "path": "drawing"
+    "description": "Use when reasoning about drawing — A picture or diagram made with a pencil, pen, or crayon rather than paint.",
+    "path": "vocabulary/drawing"
   },
   {
     "atom": "drink",
     "name": "drink",
     "description": "Use when reasoning about drink as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "drink"
+    "path": "vocabulary/drink"
   },
   {
     "atom": "drive",
     "name": "drive",
     "description": "Use when reasoning about drive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "drive"
+    "path": "vocabulary/drive"
   },
   {
     "atom": "driven",
     "name": "driven",
     "description": "Use when reasoning about driven as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "driven"
+    "path": "vocabulary/driven"
   },
   {
     "atom": "driving",
     "name": "driving",
     "description": "Use when reasoning about driving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "driving"
+    "path": "vocabulary/driving"
   },
   {
     "atom": "drone",
@@ -4862,13 +5162,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "dropoff",
     "name": "dropoff",
     "description": "Use when reasoning about dropoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dropoff"
+    "path": "vocabulary/dropoff"
   },
   {
     "atom": "drug",
     "name": "drug",
-    "description": "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowled",
-    "path": "drug"
+    "description": "Use when reasoning about drug — A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine altho",
+    "path": "vocabulary/drug"
   },
   {
     "atom": "dry",
@@ -4886,37 +5186,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "due",
     "name": "due",
     "description": "Use when reasoning about due as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "due"
+    "path": "vocabulary/due"
+  },
+  {
+    "atom": "duel",
+    "name": "duel",
+    "description": "Use when testing through pairs of inverted development teams — a prover that asserts and builds, and a refuter that takes the exact opposite side and attacks it. They are duals (the anti-claim is the claim's negation), always opposed, and the verdict manifests realtime per round. Popper asymmetry: one refutation falls the claim, no amount of proof verifies it — a claim STANDS as not-yet-refuted, never as proven true.",
+    "path": "duel"
   },
   {
     "atom": "dunning",
     "name": "dunning",
     "description": "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not.",
-    "path": "dunning"
+    "path": "vocabulary/dunning"
   },
   {
     "atom": "duns",
     "name": "duns",
-    "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person.",
-    "path": "duns"
+    "description": "Use when reasoning about duns — The Dun & Bradstreet DUNS number for identifying an organization or business person.",
+    "path": "vocabulary/duns"
   },
   {
     "atom": "duplicate",
     "name": "duplicate",
     "description": "Use when reasoning about duplicate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "duplicate"
+    "path": "vocabulary/duplicate"
   },
   {
     "atom": "duration",
     "name": "duration",
-    "description": "Quantity: Duration (use ISO 8601 duration format).",
-    "path": "duration"
+    "description": "Use when reasoning about duration — Quantity: Duration (use ISO 8601 duration format).",
+    "path": "vocabulary/duration"
   },
   {
     "atom": "during",
     "name": "during",
-    "description": "during: a schema.org component word, fused from duringMedia",
-    "path": "during"
+    "description": "Use when reasoning about during — A schema.org component word, collided out of schema.org compounds — fused from duringMedia (sti · collapse · merge).",
+    "path": "vocabulary/during"
   },
   {
     "atom": "dust",
@@ -4928,54 +5234,72 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "dvdformat",
     "name": "dvdformat",
     "description": "Use when reasoning about dvdformat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dvdformat"
+    "path": "vocabulary/dvdformat"
   },
   {
     "atom": "dx",
     "name": "dx",
     "description": "Use when reasoning about dx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "dx"
+    "path": "vocabulary/dx"
+  },
+  {
+    "atom": "e",
+    "name": "e",
+    "description": "Use when e must be read as the growth constant that is its own driver — d/dx eˣ = eˣ, the function whose rate of change equals its state at every point. Completes the self-referential trio: pi unfolds a finite seed to an infinite tail, phi is the fixed point of the fold, e is the fixed point of change. Computed never stored: the series Σ 1/k! and continuous compounding (1+1/n)ⁿ both converge to it from a finite seed.",
+    "path": "e"
   },
   {
     "atom": "ear",
     "name": "ear",
     "description": "Use when reasoning about ear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ear"
+    "path": "vocabulary/ear"
   },
   {
     "atom": "early",
     "name": "early",
     "description": "Use when reasoning about early as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "early"
+    "path": "vocabulary/early"
   },
   {
     "atom": "earned",
     "name": "earned",
-    "description": "earned: a schema.org component word, fused from membershipPointsEarned",
-    "path": "earned"
+    "description": "Use when reasoning about earned — A schema.org component word, collided out of schema.org compounds — fused from membershipPointsEarned (sti · collapse · merge).",
+    "path": "vocabulary/earned"
+  },
+  {
+    "atom": "earth",
+    "name": "earth",
+    "description": "Use when realising Earth by computing poles as a pyramid — N·E·S·W tips at 0°·90°·180°·270° with ±ω, zenith/nadir dual apexes, genus-2 χ=−2 H₁=ℤ⁴, bothEarths merkaba shells; physical datum stays WGS 84.",
+    "path": "earth"
   },
   {
     "atom": "eat",
     "name": "eat",
     "description": "Use when reasoning about eat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "eat"
+    "path": "vocabulary/eat"
   },
   {
     "atom": "ebitda",
     "name": "ebitda",
-    "description": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-    "path": "calculate/ebitda"
+    "description": "Use when reasoning about ebitda — ports the EBITDA calculator verbatim (calculate, port): EBITDA = operating profit + depreciation + amortization (equivalently net income + interest + tax + D&A). Pure function over",
+    "path": "vocabulary/calculate/ebitda"
   },
   {
     "atom": "ebook",
     "name": "ebook",
     "description": "Use when reasoning about ebook as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ebook"
+    "path": "vocabulary/ebook"
+  },
+  {
+    "atom": "echo",
+    "name": "echo",
+    "description": "Use when a path restates itself — a meaning-word repeated within one path means the path says the same thing twice and cannot be immediately realised. Computes every such path (framework namespace excluded), ratchets to zero. Run: tsx src/rules/echo/index.ts",
+    "path": "rules/echo"
   },
   {
     "atom": "ecommerce",
     "name": "ecommerce",
-    "description": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
+    "description": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"data is money\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
     "path": "ecommerce"
   },
   {
@@ -4994,37 +5318,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "edit",
     "name": "edit",
     "description": "Use when reasoning about edit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "edit"
+    "path": "vocabulary/edit"
   },
   {
     "atom": "edited",
     "name": "edited",
     "description": "Use when reasoning about edited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "edited"
+    "path": "vocabulary/edited"
   },
   {
     "atom": "edition",
     "name": "edition",
     "description": "Use when reasoning about edition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "edition"
+    "path": "vocabulary/edition"
   },
   {
     "atom": "editor",
     "name": "editor",
-    "description": "Specifies the Person who edited the CreativeWork.",
-    "path": "editor"
+    "description": "Use when reasoning about editor — Specifies the Person who edited the CreativeWork.",
+    "path": "vocabulary/editor"
   },
   {
     "atom": "edits",
     "name": "edits",
     "description": "Use when reasoning about edits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "edits"
+    "path": "vocabulary/edits"
   },
   {
     "atom": "edu",
     "name": "edu",
-    "description": "edu: a schema.org component word, fused from eduQuestionType",
-    "path": "edu"
+    "description": "Use when reasoning about edu — A schema.org component word, collided out of schema.org compounds — fused from eduQuestionType (sti · collapse · merge).",
+    "path": "vocabulary/edu"
   },
   {
     "atom": "education",
@@ -5036,121 +5360,121 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "educational",
     "name": "educational",
     "description": "Use when reasoning about educational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "educational"
+    "path": "vocabulary/educational"
   },
   {
     "atom": "effective",
     "name": "effective",
     "description": "Use when reasoning about effective as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "effective"
+    "path": "vocabulary/effective"
   },
   {
     "atom": "effectiveness",
     "name": "effectiveness",
     "description": "Use when reasoning about effectiveness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "effectiveness"
+    "path": "vocabulary/effectiveness"
   },
   {
     "atom": "effects",
     "name": "effects",
     "description": "Use when reasoning about effects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "effects"
+    "path": "vocabulary/effects"
   },
   {
     "atom": "efficiency",
     "name": "efficiency",
     "description": "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "efficiency"
+    "path": "vocabulary/efficiency"
   },
   {
     "atom": "eidr",
     "name": "eidr",
     "description": "Use when reasoning about eidr as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "eidr"
+    "path": "vocabulary/eidr"
   },
   {
     "atom": "electrician",
     "name": "electrician",
-    "description": "An electrician.",
-    "path": "electrician"
+    "description": "Use when reasoning about electrician — An electrician.",
+    "path": "vocabulary/electrician"
   },
   {
     "atom": "electronic",
     "name": "electronic",
     "description": "Use when reasoning about electronic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "electronic"
+    "path": "vocabulary/electronic"
   },
   {
     "atom": "electronics",
     "name": "electronics",
     "description": "Use when reasoning about electronics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "electronics"
+    "path": "vocabulary/electronics"
   },
   {
     "atom": "element",
     "name": "element",
-    "description": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-    "path": "element"
+    "description": "Use when reasoning about an identity element.",
+    "path": "identity/element"
   },
   {
     "atom": "elementary",
     "name": "elementary",
     "description": "Use when reasoning about elementary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "elementary"
+    "path": "vocabulary/elementary"
   },
   {
     "atom": "elevation",
     "name": "elevation",
-    "description": "The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\_OF\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
-    "path": "elevation"
+    "description": "Use when reasoning about elevation — The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\\\\\\\\\\\\\_OF\\\\\\\\\\\\\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in",
+    "path": "vocabulary/elevation"
   },
   {
     "atom": "eligibility",
     "name": "eligibility",
     "description": "Use when reasoning about eligibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "eligibility"
+    "path": "vocabulary/eligibility"
   },
   {
     "atom": "eligible",
     "name": "eligible",
     "description": "Use when reasoning about eligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "eligible"
+    "path": "vocabulary/eligible"
   },
   {
     "atom": "elimination",
     "name": "elimination",
     "description": "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero",
-    "path": "elimination"
+    "path": "vocabulary/elimination"
   },
   {
     "atom": "eliminations",
-    "name": "consolidation-eliminations",
+    "name": "eliminations",
     "description": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
     "path": "consolidation/eliminations"
   },
   {
     "atom": "email",
     "name": "email",
-    "description": "Email address.",
+    "description": "Use when reasoning about email — Email address.",
     "path": "email"
   },
   {
     "atom": "embassy",
     "name": "embassy",
-    "description": "An embassy.",
-    "path": "embassy"
+    "description": "Use when reasoning about embassy — An embassy.",
+    "path": "vocabulary/embassy"
   },
   {
     "atom": "embed",
     "name": "embed",
     "description": "Use when reasoning about embed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "embed"
+    "path": "vocabulary/embed"
   },
   {
     "atom": "embedded",
     "name": "embedded",
     "description": "Use when reasoning about embedded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "embedded"
+    "path": "vocabulary/embedded"
   },
   {
     "atom": "emergence",
@@ -5162,7 +5486,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "emergency",
     "name": "emergency",
     "description": "Use when reasoning about emergency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "emergency"
+    "path": "vocabulary/emergency"
   },
   {
     "atom": "emission",
@@ -5172,21 +5496,27 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "emissions",
-    "name": "carbon-emissions",
+    "name": "emissions",
     "description": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
     "path": "fiscal/periods/carbon/emissions"
+  },
+  {
+    "atom": "emitter",
+    "name": "emitter",
+    "description": "Use when an afterChange transition must fire a business-chain domain event — the wiring layer that maps a status change (or row-create) to one emitDomainEvent call so the chain registry's declared emits matches what actually fires.",
+    "path": "chain/event/emitter"
   },
   {
     "atom": "empirical",
     "name": "empirical",
     "description": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
-    "path": "empirical"
+    "path": "vocabulary/empirical"
   },
   {
     "atom": "employee",
     "name": "employee",
-    "description": "Someone working for this organization.",
-    "path": "employee"
+    "description": "Use when reasoning about employee — Someone working for this organization.",
+    "path": "vocabulary/employee"
   },
   {
     "atom": "employees",
@@ -5198,17 +5528,17 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "employer",
     "name": "employer",
     "description": "Use when reasoning about employer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "employer"
+    "path": "vocabulary/employer"
   },
   {
     "atom": "employment",
     "name": "employment",
     "description": "Use when reasoning about employment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "employment"
+    "path": "vocabulary/employment"
   },
   {
     "atom": "emr",
-    "name": "quantum-emr",
+    "name": "emr",
     "description": "Use when reasoning about the electronic medical record as a quantum snapshot chain — a patient's health state captured as content-addressed, immutable, append-only encounters and observations, nesting layer after layer, never erased so the full history stays reversible and tamper-evident.",
     "path": "quantum/emr"
   },
@@ -5216,113 +5546,113 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "en13402",
     "name": "en13402",
     "description": "Use when reasoning about en13402 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "en13402"
+    "path": "vocabulary/en13402"
   },
   {
     "atom": "encoded",
     "name": "encoded",
     "description": "Use when reasoning about encoded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "encoded"
+    "path": "vocabulary/encoded"
   },
   {
     "atom": "encodes",
     "name": "encodes",
     "description": "Use when reasoning about encodes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "encodes"
+    "path": "vocabulary/encodes"
   },
   {
     "atom": "encoding",
     "name": "encoding",
-    "description": "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
-    "path": "encoding"
+    "description": "Use when reasoning about encoding — A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
+    "path": "vocabulary/encoding"
   },
   {
     "atom": "encodings",
     "name": "encodings",
-    "description": "A media object that encodes this CreativeWork.",
-    "path": "encodings"
+    "description": "Use when reasoning about encodings — A media object that encodes this CreativeWork.",
+    "path": "vocabulary/encodings"
   },
   {
     "atom": "end",
     "name": "end",
     "description": "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).",
-    "path": "end"
+    "path": "vocabulary/end"
   },
   {
     "atom": "endocrine",
     "name": "endocrine",
     "description": "Use when reasoning about endocrine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "endocrine"
+    "path": "vocabulary/endocrine"
   },
   {
     "atom": "endorse",
     "name": "endorse",
     "description": "Use when reasoning about endorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "endorse"
+    "path": "vocabulary/endorse"
   },
   {
     "atom": "endorsee",
     "name": "endorsee",
-    "description": "A sub property of participant. The person/organization being supported.",
-    "path": "endorsee"
+    "description": "Use when reasoning about endorsee — A sub property of participant. The person/organization being supported.",
+    "path": "vocabulary/endorsee"
   },
   {
     "atom": "endorsement",
     "name": "endorsement",
     "description": "Use when reasoning about endorsement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "endorsement"
+    "path": "vocabulary/endorsement"
   },
   {
     "atom": "endorser",
     "name": "endorser",
     "description": "Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument.",
-    "path": "endorser"
+    "path": "vocabulary/endorser"
   },
   {
     "atom": "endorsers",
     "name": "endorsers",
-    "description": "People or organizations that endorse the plan.",
-    "path": "endorsers"
+    "description": "Use when reasoning about endorsers — People or organizations that endorse the plan.",
+    "path": "vocabulary/endorsers"
   },
   {
     "atom": "endpoint",
     "name": "endpoint",
     "description": "Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached.",
-    "path": "endpoint"
+    "path": "vocabulary/endpoint"
   },
   {
     "atom": "endpoints",
     "name": "endpoints",
     "description": "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed).",
-    "path": "endpoints"
+    "path": "vocabulary/endpoints"
   },
   {
     "atom": "ends",
     "name": "ends",
     "description": "Use when reasoning about ends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ends"
+    "path": "vocabulary/ends"
   },
   {
     "atom": "energy",
     "name": "energy",
-    "description": "Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
+    "description": "Use when reasoning about energy — Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
     "path": "energy"
   },
   {
     "atom": "engagement",
     "name": "engagement",
     "description": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
-    "path": "engagement"
+    "path": "vocabulary/engagement"
   },
   {
     "atom": "engine",
-    "name": "workflow-engine",
+    "name": "engine",
     "description": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
     "path": "workflow/engine"
   },
   {
     "atom": "engineering",
-    "name": "reverse-engineering",
+    "name": "engineering",
     "description": "Use when recovering a system's design from its artifact — the reverse pull of gravity (the binary back to the root words), the inhale of the breath; how erpax absorbs an external system by deriving its structure into content-addressed atoms, for migration, interoperability, defensive audit, and learning.",
     "path": "reverse/engineering"
   },
@@ -5330,25 +5660,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "enhanced",
     "name": "enhanced",
     "description": "Use when reasoning about enhanced as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "enhanced"
+    "path": "vocabulary/enhanced"
   },
   {
     "atom": "enrolling",
     "name": "enrolling",
     "description": "Use when reasoning about enrolling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "enrolling"
+    "path": "vocabulary/enrolling"
   },
   {
     "atom": "enrollment",
     "name": "enrollment",
     "description": "Use when reasoning about enrollment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "enrollment"
+    "path": "vocabulary/enrollment"
   },
   {
     "atom": "ensures",
     "name": "ensures",
     "description": "Use when reasoning about ensures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ensures"
+    "path": "vocabulary/ensures"
   },
   {
     "atom": "entanglement",
@@ -5360,29 +5690,29 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "enterprisebudget",
     "name": "enterprisebudget",
     "description": "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center.",
-    "path": "enterprisebudget"
+    "path": "vocabulary/enterprisebudget"
   },
   {
     "atom": "entertainment",
     "name": "entertainment",
     "description": "Use when reasoning about entertainment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "entertainment"
+    "path": "vocabulary/entertainment"
   },
   {
     "atom": "entities",
-    "name": "legal-entities",
+    "name": "entities",
     "description": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
     "path": "legal/entities"
   },
   {
     "atom": "entity",
     "name": "entity",
-    "description": "Use when reasoning about entity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "entity"
+    "description": "Use when reasoning about entity as a medical facet of [[medical]] — vocabulary pivot to @/entity; nested not duplicated.",
+    "path": "medical/entity"
   },
   {
     "atom": "entries",
-    "name": "closing-entries",
+    "name": "entries",
     "description": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
     "path": "legal/entities/closing/entries"
   },
@@ -5395,80 +5725,92 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "entry",
     "name": "entry",
-    "description": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\".",
+    "description": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"all accounted in all directions ⇒ the wiring is complete\\\\\\\\\\\\\\\\\\\\\\\\\\\\\".",
     "path": "entry"
   },
   {
     "atom": "enum",
     "name": "enum",
     "description": "Use when reasoning about enum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "enum"
+    "path": "vocabulary/enum"
   },
   {
     "atom": "enumeration",
     "name": "enumeration",
-    "description": "Lists or enumerations—for example, a list of cuisines or music genres, etc.",
-    "path": "enumeration"
+    "description": "Use when reasoning about enumeration — Lists or enumerations—for example, a list of cuisines or music genres, etc.",
+    "path": "vocabulary/enumeration"
   },
   {
     "atom": "epidemiology",
     "name": "epidemiology",
-    "description": "The characteristics of associated patients, such as age, gender, race etc.",
-    "path": "epidemiology"
+    "description": "Use when reasoning about epidemiology — The characteristics of associated patients, such as age, gender, race etc.",
+    "path": "vocabulary/epidemiology"
   },
   {
     "atom": "episode",
     "name": "episode",
-    "description": "A media episode (e.g. TV, radio, video game) which can be part of a series or season.",
-    "path": "episode"
+    "description": "Use when reasoning about episode — A media episode (e.g. TV, radio, video game) which can be part of a series or season.",
+    "path": "vocabulary/episode"
   },
   {
     "atom": "episodes",
     "name": "episodes",
-    "description": "An episode of a TV/radio series or season.",
-    "path": "episodes"
+    "description": "Use when reasoning about episodes — An episode of a TV/radio series or season.",
+    "path": "vocabulary/episodes"
   },
   {
     "atom": "eprelease",
     "name": "eprelease",
     "description": "Use when reasoning about eprelease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "eprelease"
+    "path": "vocabulary/eprelease"
   },
   {
     "atom": "equal",
     "name": "equal",
-    "description": "This ordering relation for qualitative values indicates that the subject is equal to the object.",
-    "path": "equal"
+    "description": "Use when reasoning about equal — This ordering relation for qualitative values indicates that the subject is equal to the object.",
+    "path": "vocabulary/equal"
   },
   {
     "atom": "equals",
     "name": "equals",
     "description": "Use when reasoning about equals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "equals"
+    "path": "vocabulary/equals"
+  },
+  {
+    "atom": "equilibrium",
+    "name": "equilibrium",
+    "description": "Use when reasoning about equilibrium as detailed balance — every forward transition exactly matched by its reverse (rate(i→j)·pᵢ = rate(j→i)·pⱼ), no net flow, entropy maximal and stationary. It is the thermodynamic twin of erpax's symmetric-merge binding: the collider reciprocates every forward link a→b with b→a, so the matrix sits at detailed balance (reciprocity = 1, directed-link entropy = 0). The balance the engine relaxes toward, where the temperature Boltzmann distribution makes every rate-pair cancel.",
+    "path": "equilibrium"
   },
   {
     "atom": "equipment",
     "name": "equipment",
     "description": "Use when reasoning about equipment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "equipment"
+    "path": "vocabulary/equipment"
+  },
+  {
+    "atom": "equity",
+    "name": "equity",
+    "description": "Use when reasoning about equity in double-entry accounting — the owners' residual claim after liabilities; the credit side that pairs with asset debits in the accounting equation.",
+    "path": "vocabulary/equity"
   },
   {
     "atom": "error",
     "name": "error",
-    "description": "Representation of an Error.",
+    "description": "Use when reasoning about error — Representation of an Error.",
     "path": "error"
   },
   {
     "atom": "escalation",
     "name": "escalation",
     "description": "Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency.",
-    "path": "escalation"
+    "path": "vocabulary/escalation"
   },
   {
     "atom": "escrow",
     "name": "escrow",
     "description": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
-    "path": "escrow"
+    "path": "vocabulary/escrow"
   },
   {
     "atom": "esr",
@@ -5480,43 +5822,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "establishment",
     "name": "establishment",
     "description": "Use when reasoning about establishment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "establishment"
+    "path": "vocabulary/establishment"
   },
   {
     "atom": "estate",
     "name": "estate",
     "description": "Use when reasoning about estate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "estate"
+    "path": "vocabulary/estate"
   },
   {
     "atom": "estimate",
     "name": "estimate",
     "description": "Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known.",
-    "path": "estimate"
+    "path": "vocabulary/estimate"
   },
   {
     "atom": "estimated",
     "name": "estimated",
     "description": "Use when reasoning about estimated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "estimated"
+    "path": "vocabulary/estimated"
   },
   {
     "atom": "estimates",
     "name": "estimates",
     "description": "Use when reasoning about estimates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "estimates"
+    "path": "vocabulary/estimates"
   },
   {
     "atom": "estimator",
     "name": "estimator",
     "description": "Use when reasoning about estimator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "estimator"
+    "path": "vocabulary/estimator"
   },
   {
     "atom": "ethics",
     "name": "ethics",
     "description": "Use when reasoning about ethics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ethics"
+    "path": "vocabulary/ethics"
   },
   {
     "atom": "eu",
@@ -5528,103 +5870,115 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "euenergy",
     "name": "euenergy",
     "description": "Use when reasoning about euenergy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "euenergy"
+    "path": "vocabulary/euenergy"
   },
   {
     "atom": "europe",
     "name": "europe",
     "description": "Use when reasoning about europe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "europe"
+    "path": "vocabulary/europe"
   },
   {
     "atom": "evaluated",
     "name": "evaluated",
     "description": "Use when reasoning about evaluated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "evaluated"
+    "path": "vocabulary/evaluated"
   },
   {
     "atom": "evapotranspiration",
     "name": "evapotranspiration",
     "description": "Use when quantifying crop water demand — evapotranspiration (ET) = soil evaporation + plant transpiration, the daily withdrawal from the soil-moisture reservoir that drives irrigation scheduling. The debit side of the water budget; reference ET × crop coefficient gives the crop's actual draw.",
-    "path": "evapotranspiration"
+    "path": "vocabulary/evapotranspiration"
   },
   {
     "atom": "event",
     "name": "event",
-    "description": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
+    "description": "Use when reasoning about event — A domain **event** is the matter that crosses the hooks seam: a collection's hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, noti",
     "path": "event"
   },
   {
     "atom": "events",
-    "name": "post-balance-sheet-events",
-    "description": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-    "path": "fiscal/periods/post/balance/sheet/events"
+    "name": "events",
+    "description": "Use when reasoning about event type definitions — the event shapes the corpus emits.",
+    "path": "types/events"
   },
   {
     "atom": "evidence",
     "name": "evidence",
-    "description": "Use when reasoning about evidence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "evidence"
+    "description": "Use when external research must be held at its real epistemic status — each claim stated agnostically with a verdict (theorem · measured · contested · open · error · metaphor · unfalsifiable) and the observation that would refute it. Empirical claims with no refutation condition fail closed. Run: tsx src/quantum/evidence/index.ts",
+    "path": "quantum/evidence"
   },
   {
     "atom": "evidences",
-    "name": "audit-evidences",
+    "name": "evidences",
     "description": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
     "path": "media/audit/evidences"
+  },
+  {
+    "atom": "evolve",
+    "name": "evolve",
+    "description": "Use when the paradox bites — to evolve you must invert what you are sure about, but you cannot invert everything at once (you need ground to stand on). The resolution: invert the FRAGILE certainties through the void (throughVoid is an involution, 9→1 reopens), stand on the INVARIANT keel (what survives every inversion — a theorem, the conformal angle). Survives iff a keel remains; a mind of only certainties is pulled wholly to 0.",
+    "path": "evolve"
   },
   {
     "atom": "exam",
     "name": "exam",
     "description": "Use when reasoning about exam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "exam"
+    "path": "vocabulary/exam"
   },
   {
     "atom": "example",
     "name": "example",
     "description": "Use when reasoning about example as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "example"
+    "path": "vocabulary/example"
+  },
+  {
+    "atom": "examples",
+    "name": "examples",
+    "description": "Use when seeding or referencing a self-contained tenant template — the business-model-agnostic example `TenantConfig`s (course-builder, newsletter, marketplace) and the `getConfigByBusinessModel` / `listExampleConfigs` accessors over them.",
+    "path": "config/examples"
   },
   {
     "atom": "except",
     "name": "except",
     "description": "Use when reasoning about except as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "except"
+    "path": "vocabulary/except"
   },
   {
     "atom": "exchange",
     "name": "exchange",
-    "description": "Use for a governed cross-domain data exchange — party A requests data from party B (different domains, each its own content-addressed identity); the holder's grant gates the capability, the fields are SANITIZED to the releasable set, and the exchange is RECEIPTED, so A receives the data AND a provenance chain proving what was accessed, by whom, under what authority. Encodes cross-domain trust with no shared infrastructure: each party content-addresses and receipts; the provenance merges.",
+    "description": "Use when reasoning about exchange — FORM: **a cross-domain exchange is gated, sanitized, and receipted — the requester gets the data AND the proof of how it was obtained.** Party (one domain, its own identity) asks p",
     "path": "exchange"
   },
   {
     "atom": "executable",
     "name": "executable",
-    "description": "executable: a schema.org component word, fused from executableLibraryName",
-    "path": "executable"
+    "description": "Use when reasoning about executable — A schema.org component word, collided out of schema.org compounds — fused from executableLibraryName (sti · collapse · merge).",
+    "path": "vocabulary/executable"
   },
   {
     "atom": "exemplifies",
     "name": "exemplifies",
     "description": "Use when reasoning about exemplifies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "exemplifies"
+    "path": "vocabulary/exemplifies"
   },
   {
     "atom": "exercise",
     "name": "exercise",
     "description": "Use when reasoning about exercise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "exercise"
+    "path": "vocabulary/exercise"
   },
   {
     "atom": "exhibition",
     "name": "exhibition",
     "description": "Use when reasoning about exhibition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "exhibition"
+    "path": "vocabulary/exhibition"
   },
   {
     "atom": "exif",
     "name": "exif",
     "description": "Use when reasoning about exif as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "exif"
+    "path": "vocabulary/exif"
   },
   {
     "atom": "expand",
@@ -5636,43 +5990,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "expected",
     "name": "expected",
     "description": "Use when reasoning about expected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "expected"
+    "path": "vocabulary/expected"
   },
   {
     "atom": "expects",
     "name": "expects",
     "description": "Use when reasoning about expects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "expects"
+    "path": "vocabulary/expects"
   },
   {
     "atom": "expense",
     "name": "expense",
-    "description": "expense: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
+    "description": "Use when reasoning about expense — A schema.org component word, collided out of schema.org compounds — fused from IncentiveQualifiedExpenseType · qualifiedExpense (sti · collapse · merge).",
     "path": "expense"
   },
   {
     "atom": "experience",
     "name": "experience",
-    "description": "experience: a schema.org component word, fused from OccupationalExperienceRequirements, experienceInPlaceOfEducation, experienceRequirements, monthsOfExperience",
-    "path": "experience"
+    "description": "Use when reasoning about experience — A schema.org component word, collided out of schema.org compounds — fused from OccupationalExperienceRequirements · experienceInPlaceOfEducation · experienceRequirements · monthsOf",
+    "path": "vocabulary/experience"
+  },
+  {
+    "atom": "experiment",
+    "name": "experiment",
+    "description": "Use when an agent needs to try an idea without risking the corpus — an isolated scratch workspace where the folder-law standard runs at the seam, so a standard-violating experiment is caught in the sandbox and never promoted.",
+    "path": "sandbox/experiment"
   },
   {
     "atom": "expert",
     "name": "expert",
     "description": "Use when reasoning about expert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "expert"
+    "path": "vocabulary/expert"
   },
   {
     "atom": "expires",
     "name": "expires",
-    "description": "Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check whose publisher wants",
-    "path": "expires"
+    "description": "Use when reasoning about expires — Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check wh",
+    "path": "vocabulary/expires"
+  },
+  {
+    "atom": "explainability",
+    "name": "explainability",
+    "description": "Use when a business outcome must ship its own natural-language explanation citing standards, sources and chain steps — autoExplain composes the narrative deterministically with no LLM in the path (preserving replay), isExplanationComplete verifies it is non-trivial.",
+    "path": "beyond/explainability"
   },
   {
     "atom": "explanation",
     "name": "explanation",
     "description": "Use when reasoning about explanation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "explanation"
+    "path": "vocabulary/explanation"
+  },
+  {
+    "atom": "export",
+    "name": "export",
+    "description": "Use when reasoning about quantum computed export — each file's public facet (index.ts symbols, SKILL atom name) derived from source, content-addressed; the producer dual of quantum import.",
+    "path": "quantum/export"
   },
   {
     "atom": "exported",
@@ -5683,72 +6055,78 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "expressed",
     "name": "expressed",
-    "description": "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
-    "path": "expressed"
+    "description": "Use when reasoning about expressed — Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
+    "path": "vocabulary/expressed"
   },
   {
     "atom": "expression",
     "name": "expression",
     "description": "Use when reasoning about expression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "expression"
+    "path": "vocabulary/expression"
   },
   {
     "atom": "extended",
     "name": "extended",
     "description": "Use when reasoning about extended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "extended"
+    "path": "vocabulary/extended"
   },
   {
     "atom": "extent",
     "name": "extent",
     "description": "Use when reasoning about extent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "extent"
+    "path": "vocabulary/extent"
   },
   {
     "atom": "extra",
     "name": "extra",
     "description": "Use when reasoning about extra as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "extra"
+    "path": "vocabulary/extra"
   },
   {
     "atom": "eye",
     "name": "eye",
     "description": "Use when reasoning about eye as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "eye"
+    "path": "vocabulary/eye"
   },
   {
     "atom": "facility",
     "name": "facility",
     "description": "Use when reasoning about facility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "facility"
+    "path": "vocabulary/facility"
   },
   {
     "atom": "fact",
     "name": "fact",
     "description": "Use when reasoning about fact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fact"
+    "path": "vocabulary/fact"
   },
   {
     "atom": "factor",
     "name": "factor",
     "description": "Use when reasoning about factor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "factor"
+    "path": "vocabulary/factor"
+  },
+  {
+    "atom": "factory",
+    "name": "factory",
+    "description": "Use when creating Payload collections from declarative metadata — createAccountingCollection injects audit fields, tamper-proof uuid, horo state ring, standards citations, and chain-event hooks so collection files carry only domain intent.",
+    "path": "factory"
   },
   {
     "atom": "failed",
     "name": "failed",
     "description": "Use when reasoning about failed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "failed"
+    "path": "vocabulary/failed"
   },
   {
     "atom": "failure",
     "name": "failure",
     "description": "Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.",
-    "path": "failure"
+    "path": "vocabulary/failure"
   },
   {
     "atom": "failures",
-    "name": "transaction-failures",
+    "name": "failures",
     "description": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
     "path": "transaction/failures"
   },
@@ -5756,73 +6134,73 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "faith",
     "name": "faith",
     "description": "Use when reasoning about the dual of proof in erpax — trust extended WITHOUT the trustless recompute; accepting a source as canonical before verifying its content-uuid. The root of trust-without-verify; dual of proof.",
-    "path": "faith"
+    "path": "vocabulary/faith"
   },
   {
     "atom": "fallback",
     "name": "fallback",
     "description": "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fallback"
+    "path": "vocabulary/fallback"
   },
   {
     "atom": "false",
     "name": "false",
     "description": "Use when reasoning about false as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "false"
+    "path": "vocabulary/false"
   },
   {
     "atom": "family",
     "name": "family",
     "description": "Use when grouping crops by botanical family — the rank (Brassicaceae, Solanaceae, Cucurbitaceae, Apiaceae, Fabaceae, Asteraceae, Amaranthaceae, Alliaceae, Poaceae) that shares pests, diseases, and nutrient demands, making it the practical unit of crop rotation. The taxonomy rank that carries pest/fertility inheritance; same family ⇒ must not follow itself in a bed.",
-    "path": "family"
+    "path": "vocabulary/family"
   },
   {
     "atom": "faq",
     "name": "faq",
     "description": "Use when reasoning about faq as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "faq"
+    "path": "vocabulary/faq"
   },
   {
     "atom": "faqpage",
     "name": "faqpage",
     "description": "Use when reasoning about faqpage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "faqpage"
+    "path": "vocabulary/faqpage"
   },
   {
     "atom": "fast",
     "name": "fast",
     "description": "Use when reasoning about fast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fast"
+    "path": "vocabulary/fast"
   },
   {
     "atom": "fat",
     "name": "fat",
     "description": "Use when reasoning about fat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fat"
+    "path": "vocabulary/fat"
   },
   {
     "atom": "fax",
     "name": "fax",
     "description": "Use when reasoning about fax as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fax"
+    "path": "vocabulary/fax"
   },
   {
     "atom": "fdacategory",
     "name": "fdacategory",
     "description": "Use when reasoning about fdacategory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fdacategory"
+    "path": "vocabulary/fdacategory"
   },
   {
     "atom": "fdanot",
     "name": "fdanot",
     "description": "Use when reasoning about fdanot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fdanot"
+    "path": "vocabulary/fdanot"
   },
   {
     "atom": "fear",
-    "name": "love-fear",
+    "name": "fear",
     "description": "Use when reasoning about the create-over-destroy arrow — love casting out fear, negentropy winning, a gap closing; the forward direction of the love and fear duality and the mirror of fear/love.",
-    "path": "love/fear"
+    "path": "vocabulary/love/fear"
   },
   {
     "atom": "feature",
@@ -5834,13 +6212,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "featured",
     "name": "featured",
     "description": "Use when reasoning about featured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "featured"
+    "path": "vocabulary/featured"
   },
   {
     "atom": "features",
     "name": "features",
     "description": "Use when reasoning about features as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "features"
+    "path": "vocabulary/features"
   },
   {
     "atom": "federation",
@@ -5852,55 +6230,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "fee",
     "name": "fee",
     "description": "Use when reasoning about fee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fee"
+    "path": "vocabulary/fee"
   },
   {
     "atom": "feed",
     "name": "feed",
-    "description": "Use when reasoning about feed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "feed"
+    "description": "Use when feeding research/develop waves into themselves for endless R&D — each generation's waves become the next asks; corpus may grow; shouldContinue until external stop; maxGenerations bounds one call.",
+    "path": "wave/feed"
   },
   {
     "atom": "feedback",
     "name": "feedback",
     "description": "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action.",
-    "path": "feedback"
+    "path": "vocabulary/feedback"
   },
   {
     "atom": "fees",
     "name": "fees",
     "description": "Use when reasoning about fees as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fees"
+    "path": "vocabulary/fees"
   },
   {
     "atom": "female",
     "name": "female",
     "description": "Use when reasoning about female as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "female"
+    "path": "vocabulary/female"
   },
   {
     "atom": "fertility",
     "name": "fertility",
     "description": "Use when budgeting the soil's nutrient capacity against crop demand — the N-P-K balance where a crop's nitrogen and potassium need (lbs/acre, as N and K₂O oxide forms) scales with its yield; heavy vs light feeders; legumes fixing their own nitrogen (N ≈ 0); the 4R stewardship and soil-test basis. Fertility is a double-entry budget: crop removal debits the soil, application credits it; it must balance like any ledger.",
-    "path": "fertility"
+    "path": "vocabulary/fertility"
   },
   {
     "atom": "festival",
     "name": "festival",
-    "description": "Event type: Festival.",
-    "path": "festival"
+    "description": "Use when reasoning about festival — Event type: Festival.",
+    "path": "vocabulary/festival"
   },
   {
     "atom": "fiber",
     "name": "fiber",
     "description": "Use when reasoning about fiber as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fiber"
+    "path": "vocabulary/fiber"
   },
   {
     "atom": "field",
     "name": "field",
     "description": "Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.",
-    "path": "field"
+    "path": "vocabulary/field"
   },
   {
     "atom": "fields",
@@ -5912,11 +6290,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "file",
     "name": "file",
     "description": "Use when reasoning about file as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "file"
+    "path": "vocabulary/file"
   },
   {
     "atom": "files",
-    "name": "transfer-pricing-files",
+    "name": "files",
     "description": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
     "path": "legal/entities/transfer/pricing/files"
   },
@@ -5924,19 +6302,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "film",
     "name": "film",
     "description": "Use when reasoning about film as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "film"
+    "path": "vocabulary/film"
   },
   {
     "atom": "final",
     "name": "final",
     "description": "Use when reasoning about final as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "final"
+    "path": "vocabulary/final"
   },
   {
     "atom": "finality",
     "name": "finality",
     "description": "Use when reasoning about whether a collapsed state can be undone — finality is the conjugate of speed, the master axis the payment rails revealed; reversible holds a superposition with a compensating path (love), final posts one tamper-anchored entry whose only recourse is a governance judgment (fear).",
-    "path": "finality"
+    "path": "vocabulary/finality"
   },
   {
     "atom": "financial",
@@ -5948,97 +6326,109 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "find",
     "name": "find",
     "description": "Use when reasoning about find as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "find"
+    "path": "vocabulary/find"
   },
   {
     "atom": "finding",
     "name": "finding",
     "description": "Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review.",
-    "path": "finding"
+    "path": "vocabulary/finding"
   },
   {
     "atom": "findings",
-    "name": "audit-findings",
+    "name": "findings",
     "description": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
     "path": "internal/controls/audit/findings"
+  },
+  {
+    "atom": "fingerprint",
+    "name": "fingerprint",
+    "description": "Use when a whole-corpus derivation (rules snapshot, readme graph, corpus context) is computed by many callers — corpusFingerprint + memoByFingerprint reuse the one scan across siblings, the compute-tier of learn-by-shared-experience and the buildable AI-bill lever.",
+    "path": "cache/fingerprint"
   },
   {
     "atom": "finite",
     "name": "finite",
     "description": "Use when reasoning about finite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "finite"
+    "path": "vocabulary/finite"
   },
   {
     "atom": "fire",
     "name": "fire",
     "description": "Use when reasoning about fire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fire"
+    "path": "vocabulary/fire"
   },
   {
     "atom": "first",
     "name": "first",
     "description": "Use when reasoning about first as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "first"
+    "path": "vocabulary/first"
+  },
+  {
+    "atom": "fixpoint",
+    "name": "fixpoint",
+    "description": "Use when the measurer is inside the system it measures — a self-applied measure either REFUTES itself or is a FIXED POINT, with no third outcome. Proven by throughVoid(5)=5 (the void pivot) and auditAuditors()=[] (the auditor passes its own audit). The paradox resolves computationally, via fixed-point math, not physics.",
+    "path": "fixpoint"
   },
   {
     "atom": "flexibility",
     "name": "flexibility",
     "description": "Use when reasoning about flexibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "flexibility"
+    "path": "vocabulary/flexibility"
   },
   {
     "atom": "flight",
     "name": "flight",
-    "description": "An airline flight.",
-    "path": "flight"
+    "description": "Use when reasoning about flight — An airline flight.",
+    "path": "vocabulary/flight"
   },
   {
     "atom": "float",
     "name": "float",
-    "description": "Data type: Floating number.",
-    "path": "float"
+    "description": "Use when reasoning about float — Data type: Floating number.",
+    "path": "vocabulary/float"
   },
   {
     "atom": "floor",
     "name": "floor",
     "description": "Use when reasoning about floor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "floor"
+    "path": "vocabulary/floor"
   },
   {
     "atom": "florist",
     "name": "florist",
-    "description": "A florist.",
-    "path": "florist"
+    "description": "Use when reasoning about florist — A florist.",
+    "path": "vocabulary/florist"
   },
   {
     "atom": "flow",
     "name": "flow",
     "description": "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement.",
-    "path": "flow"
+    "path": "vocabulary/flow"
   },
   {
     "atom": "fm",
     "name": "fm",
     "description": "Use when reasoning about fm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fm"
+    "path": "vocabulary/fm"
   },
   {
     "atom": "fmradio",
     "name": "fmradio",
     "description": "Use when reasoning about fmradio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fmradio"
+    "path": "vocabulary/fmradio"
   },
   {
     "atom": "fodder",
     "name": "fodder",
     "description": "Use when animals are fed harvested or provided feed rather than grazing — fodder/feed: hay, silage, grain, concentrate, the formulated ration (TMR), and the feed-conversion ratio. The cost driver of confined livestock and the harvested twin of grazed forage; FCR reuses the conversion atom.",
-    "path": "fodder"
+    "path": "vocabulary/fodder"
   },
   {
     "atom": "fold",
     "name": "fold",
-    "description": "Use when counting the folding — how the whole corpus collapses to one Merkle root and in how many folds; N atoms reach the root in ceil(log2 N) folds by N−1 merges (12 for the corpus), and the orthogonal digital-root fold collapses every count to its rodin digit.",
-    "path": "fold"
+    "description": "Use when reasoning about fold — Double fold is mandatory for quantum mentality: word ⊗ digit; 2D documents present both sheets until seal.",
+    "path": "quantum/fold"
   },
   {
     "atom": "folded",
@@ -6049,32 +6439,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "folder",
     "name": "folder",
-    "description": "The folder-shape law — every atom is ONE generic lowercase word holding only its SKILL.md / index.ts / test.ts trinity (translations.ts / seed.ts allowed). Computed from the live tree and gated as a ratchet so no agent can add a malformed folder in any session.",
-    "path": "law/folder"
+    "description": "Use when reasoning about folder as a medical facet of [[medical]] — vocabulary pivot to @/folder; nested not duplicated.",
+    "path": "medical/folder"
   },
   {
     "atom": "follow",
     "name": "follow",
     "description": "Use when reasoning about follow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "follow"
+    "path": "vocabulary/follow"
   },
   {
     "atom": "followee",
     "name": "followee",
-    "description": "A sub property of object. The person or organization being followed.",
-    "path": "followee"
+    "description": "Use when reasoning about followee — A sub property of object. The person or organization being followed.",
+    "path": "vocabulary/followee"
   },
   {
     "atom": "follows",
     "name": "follows",
-    "description": "The most generic uni-directional social relation.",
-    "path": "follows"
+    "description": "Use when reasoning about follows — The most generic uni-directional social relation.",
+    "path": "vocabulary/follows"
   },
   {
     "atom": "followup",
     "name": "followup",
-    "description": "Typical or recommended followup care after the procedure is performed.",
-    "path": "followup"
+    "description": "Use when reasoning about followup — Typical or recommended followup care after the procedure is performed.",
+    "path": "vocabulary/followup"
   },
   {
     "atom": "food",
@@ -6086,7 +6476,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "foot",
     "name": "foot",
     "description": "Use when reasoning about foot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "foot"
+    "path": "vocabulary/foot"
   },
   {
     "atom": "footer",
@@ -6098,25 +6488,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "force",
     "name": "force",
     "description": "Use when reasoning about force as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "force"
+    "path": "vocabulary/force"
   },
   {
     "atom": "forcemajeure",
     "name": "force-majeure",
     "description": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
-    "path": "force-majeure"
+    "path": "vocabulary/force-majeure"
   },
   {
     "atom": "forecast",
     "name": "forecast",
     "description": "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period.",
-    "path": "forecast"
+    "path": "vocabulary/forecast"
+  },
+  {
+    "atom": "forecasts",
+    "name": "forecasts",
+    "description": "Use when forecasting on Earth's cardinal homology tips — phase-locked ±ω steps at 0°·90°·180°·270°, composed with navigation.predictNext; structural forecasts only (not weather); physical datum WGS 84.",
+    "path": "forecasts"
   },
   {
     "atom": "forestry",
     "name": "forestry",
     "description": "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody.",
-    "path": "forestry"
+    "path": "vocabulary/forestry"
   },
   {
     "atom": "forge",
@@ -6128,103 +6524,103 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "form",
     "name": "form",
     "description": "Use when reasoning about form as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "form"
+    "path": "vocabulary/form"
   },
   {
     "atom": "format",
     "name": "format",
-    "description": "Use when reasoning about format as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "format"
+    "description": "Use when reasoning about uuid formatting — the canonical string form of a uuid.",
+    "path": "uuid/format"
   },
   {
     "atom": "formation",
     "name": "formation",
     "description": "Use when reasoning about formation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "formation"
+    "path": "vocabulary/formation"
   },
   {
     "atom": "formula",
     "name": "formula",
     "description": "Use when reasoning about formula as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "formula"
+    "path": "vocabulary/formula"
   },
   {
     "atom": "formulary",
     "name": "formulary",
     "description": "Use when reasoning about formulary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "formulary"
+    "path": "vocabulary/formulary"
   },
   {
     "atom": "forum",
     "name": "forum",
     "description": "Use when reasoning about forum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "forum"
+    "path": "vocabulary/forum"
   },
   {
     "atom": "forward",
     "name": "forward",
     "description": "Use when reasoning about forward as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "forward"
+    "path": "vocabulary/forward"
   },
   {
     "atom": "founder",
     "name": "founder",
-    "description": "A person or organization who founded this organization.",
-    "path": "founder"
+    "description": "Use when reasoning about founder — A person or organization who founded this organization.",
+    "path": "vocabulary/founder"
   },
   {
     "atom": "founders",
     "name": "founders",
-    "description": "A person who founded this organization.",
-    "path": "founders"
+    "description": "Use when reasoning about founders — A person who founded this organization.",
+    "path": "vocabulary/founders"
   },
   {
     "atom": "founding",
     "name": "founding",
     "description": "Use when reasoning about founding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "founding"
+    "path": "vocabulary/founding"
   },
   {
     "atom": "four",
     "name": "four",
     "description": "Use when reasoning about four as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "four"
+    "path": "vocabulary/four"
   },
   {
     "atom": "fractal",
     "name": "fractal",
     "description": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
-    "path": "fractal"
+    "path": "vocabulary/fractal"
   },
   {
     "atom": "frame",
     "name": "frame",
     "description": "Use when reasoning about frame as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "frame"
+    "path": "vocabulary/frame"
   },
   {
     "atom": "framework",
     "name": "framework",
     "description": "Use when reasoning about framework as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "framework"
+    "path": "vocabulary/framework"
   },
   {
     "atom": "frameworks",
-    "name": "compliance-frameworks",
+    "name": "frameworks",
     "description": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
     "path": "compliance/frameworks"
   },
   {
     "atom": "free",
     "name": "free",
-    "description": "A flag to signal that the item, event, or place is accessible for free.",
-    "path": "free"
+    "description": "Use when reasoning about free — A flag to signal that the item, event, or place is accessible for free.",
+    "path": "vocabulary/free"
   },
   {
     "atom": "frequency",
     "name": "frequency",
-    "description": "How often the dose is taken, e.g. 'daily'.",
-    "path": "frequency"
+    "description": "Use when reasoning about frequency — How often the dose is taken, e.g. 'daily'.",
+    "path": "vocabulary/frequency"
   },
   {
     "atom": "fresh",
@@ -6236,25 +6632,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "friction",
     "name": "friction",
     "description": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
-    "path": "friction"
+    "path": "vocabulary/friction"
   },
   {
     "atom": "friday",
     "name": "friday",
     "description": "Use when reasoning about friday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "friday"
+    "path": "vocabulary/friday"
   },
   {
     "atom": "friendly",
     "name": "friendly",
     "description": "Use when reasoning about friendly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "friendly"
+    "path": "vocabulary/friendly"
   },
   {
     "atom": "front",
     "name": "front",
     "description": "Use when reasoning about front as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "front"
+    "path": "vocabulary/front"
   },
   {
     "atom": "fronted",
@@ -6266,47 +6662,53 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "frost",
     "name": "frost",
     "description": "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against.",
-    "path": "frost"
+    "path": "vocabulary/frost"
   },
   {
     "atom": "fs",
-    "name": "quantum-fs",
-    "description": "Use when reasoning about the content-addressed filesystem — the quantum twin of fs where every state is an immutable content-uuid snapshot (git, IPFS, copy-on-write), append-only, deduped, reversible; the path no longer locates a mutable file but addresses an immutable moment.",
-    "path": "quantum/fs"
+    "name": "fs",
+    "description": "Use when reasoning about the filesystem as erpax sees it — the tree of paths to content where the path IS the address and the leaf word IS the atom; the matter the corpus lives on, and the thing whose every state is a snapshot.",
+    "path": "vocabulary/fs"
+  },
+  {
+    "atom": "ftl",
+    "name": "ftl",
+    "description": "Use when reasoning about ftl — Use for ftl — reuse · amortize · crack · boundary · seal · chat · research. Metrics prove FTL on QPU=CPU/GPU. Boundary = boundary(cracks). Math.* and prose prefixes are cracks.",
+    "path": "quantum/ftl"
   },
   {
     "atom": "fuel",
     "name": "fuel",
     "description": "Use when reasoning about fuel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fuel"
+    "path": "vocabulary/fuel"
   },
   {
     "atom": "fulfillment",
     "name": "fulfillment",
     "description": "Use when reasoning about fulfillment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fulfillment"
+    "path": "vocabulary/fulfillment"
   },
   {
     "atom": "full",
     "name": "full",
     "description": "Use when reasoning about full as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "full"
+    "path": "vocabulary/full"
   },
   {
     "atom": "function",
     "name": "function",
     "description": "Use when reasoning about function as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "function"
+    "path": "vocabulary/function"
   },
   {
     "atom": "functional",
     "name": "functional",
     "description": "Use when reasoning about functional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "functional"
+    "path": "vocabulary/functional"
   },
   {
     "atom": "functions",
-    "name": "internal-audit-functions",
+    "name": "functions",
     "description": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
     "path": "legal/entities/internal/audit/functions"
   },
@@ -6314,43 +6716,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "fund",
     "name": "fund",
     "description": "Use when reasoning about fund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fund"
+    "path": "vocabulary/fund"
   },
   {
     "atom": "funded",
     "name": "funded",
     "description": "Use when reasoning about funded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "funded"
+    "path": "vocabulary/funded"
   },
   {
     "atom": "funder",
     "name": "funder",
-    "description": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
-    "path": "funder"
+    "description": "Use when reasoning about funder — A person or organization that supports (sponsors) something through some kind of financial contribution.",
+    "path": "vocabulary/funder"
   },
   {
     "atom": "funding",
     "name": "funding",
-    "description": "A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.",
-    "path": "funding"
+    "description": "Use when reasoning about funding — A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.",
+    "path": "vocabulary/funding"
   },
   {
     "atom": "fungus",
     "name": "fungus",
     "description": "Use when reasoning about fungus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "fungus"
+    "path": "vocabulary/fungus"
   },
   {
     "atom": "funnel",
     "name": "funnel",
     "description": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
-    "path": "funnel"
+    "path": "vocabulary/funnel"
   },
   {
     "atom": "furniture",
     "name": "furniture",
     "description": "Use when reasoning about furniture as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "furniture"
+    "path": "vocabulary/furniture"
   },
   {
     "atom": "fusion",
@@ -6362,89 +6764,89 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "gallery",
     "name": "gallery",
     "description": "Use when reasoning about gallery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gallery"
+    "path": "vocabulary/gallery"
   },
   {
     "atom": "game",
     "name": "game",
-    "description": "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional settin",
-    "path": "game"
+    "description": "Use when reasoning about game — The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters i",
+    "path": "vocabulary/game"
   },
   {
     "atom": "gap",
-    "name": "competency-gap",
+    "name": "gap",
     "description": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
     "path": "competency/gap"
   },
   {
     "atom": "gaps",
-    "name": "compliance-gaps",
-    "description": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-    "path": "compliance/frameworks/compliance/requirements/compliance/gaps"
+    "name": "gaps",
+    "description": "Use when asked to fill the gaps in quantum mechanics — the honest toolbox that NAMES the open gaps (measurement problem, Born rule, preferred basis, quantum gravity, interpretation) and refuses to fill them. Every gap's `fills` is the literal false, so the code cannot claim a solution; the corpus tools are shown as lenses to learn through, never fillings. HARMONY ≠ TRUTH.",
+    "path": "quantum/gaps"
   },
   {
     "atom": "garden",
     "name": "garden",
     "description": "Use when reasoning about garden as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "garden"
+    "path": "vocabulary/garden"
   },
   {
     "atom": "gas",
     "name": "gas",
     "description": "Use when reasoning about gas as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gas"
+    "path": "vocabulary/gas"
   },
   {
     "atom": "gastroenterologic",
     "name": "gastroenterologic",
     "description": "Use when reasoning about gastroenterologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gastroenterologic"
+    "path": "vocabulary/gastroenterologic"
   },
   {
     "atom": "gate",
     "name": "gate",
-    "description": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
-    "path": "gate"
+    "description": "Use when reaching the content-addressed test gate from the receipt atom — the double-wire reciprocal of gate/receipt.",
+    "path": "receipt/gate"
   },
   {
     "atom": "gated",
     "name": "gated",
     "description": "Use when reasoning about gated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gated"
+    "path": "vocabulary/gated"
   },
   {
     "atom": "gears",
     "name": "gears",
     "description": "Use when reasoning about gears as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gears"
+    "path": "vocabulary/gears"
   },
   {
     "atom": "gender",
     "name": "gender",
-    "description": "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable",
-    "path": "gender"
+    "description": "Use when reasoning about gender — Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings",
+    "path": "vocabulary/gender"
   },
   {
     "atom": "gene",
     "name": "gene",
-    "description": "A discrete unit of inheritance which affects one or more biological traits (Source: https://en.wikipedia.org/wiki/Gene). Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-sp",
-    "path": "gene"
+    "description": "Use when reasoning about gene — A discrete unit of inheritance which affects one or more biological traits (Source: https://en.wikipedia.org/wiki/Gene). Examples include FOXP2 (Forkhead box protein P2), SCARNA21",
+    "path": "vocabulary/gene"
   },
   {
     "atom": "general",
     "name": "general",
     "description": "Use when reasoning about general as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "general"
+    "path": "vocabulary/general"
   },
   {
     "atom": "generate",
-    "name": "self-generate",
+    "name": "generate",
     "description": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
     "path": "self/generate"
   },
   {
     "atom": "generator",
-    "name": "quantum-generator",
+    "name": "generator",
     "description": "Use when reasoning about generation in the quantum frame — a quantum generator does not create one output at a time; it holds all outputs at once in superposition (the latent content-uuid space, the void), and each manifests elsewhere by collapse, realized in its place when queried or minted.",
     "path": "quantum/generator"
   },
@@ -6452,151 +6854,169 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "generic",
     "name": "generic",
     "description": "Use when reasoning about generic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "generic"
+    "path": "vocabulary/generic"
   },
   {
     "atom": "generically",
     "name": "generically",
     "description": "Use when reasoning about generically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "generically"
+    "path": "vocabulary/generically"
   },
   {
     "atom": "genetic",
     "name": "genetic",
     "description": "Use when reasoning about genetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "genetic"
+    "path": "vocabulary/genetic"
   },
   {
     "atom": "genitourinary",
     "name": "genitourinary",
     "description": "Use when reasoning about genitourinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "genitourinary"
+    "path": "vocabulary/genitourinary"
   },
   {
     "atom": "genre",
     "name": "genre",
-    "description": "Genre of the creative work, broadcast channel or group.",
-    "path": "genre"
+    "description": "Use when reasoning about genre — Genre of the creative work, broadcast channel or group.",
+    "path": "vocabulary/genre"
   },
   {
     "atom": "geo",
     "name": "geo",
-    "description": "The geo coordinates of the place.",
-    "path": "geo"
+    "description": "Use when reasoning about geo — The geo coordinates of the place.",
+    "path": "vocabulary/geo"
   },
   {
     "atom": "geographic",
     "name": "geographic",
     "description": "Use when reasoning about geographic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "geographic"
+    "path": "vocabulary/geographic"
   },
   {
     "atom": "geographical",
     "name": "geographical",
     "description": "Use when reasoning about geographical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "geographical"
+    "path": "vocabulary/geographical"
   },
   {
     "atom": "geometry",
     "name": "geometry",
     "description": "Use when reasoning about geometry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "geometry"
+    "path": "vocabulary/geometry"
   },
   {
     "atom": "geopolitical",
     "name": "geopolitical",
     "description": "Use when reasoning about geopolitical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "geopolitical"
+    "path": "vocabulary/geopolitical"
   },
   {
     "atom": "geospatial",
     "name": "geospatial",
     "description": "Use when reasoning about geospatial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "geospatial"
+    "path": "vocabulary/geospatial"
   },
   {
     "atom": "geriatric",
     "name": "geriatric",
     "description": "Use when reasoning about geriatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "geriatric"
+    "path": "vocabulary/geriatric"
   },
   {
     "atom": "getting",
     "name": "getting",
     "description": "Use when reasoning about getting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "getting"
+    "path": "vocabulary/getting"
   },
   {
     "atom": "gift",
     "name": "gift",
-    "description": "Indicates whether the offer was accepted as a gift for someone other than the buyer.",
-    "path": "gift"
+    "description": "Use when reasoning about gift — Indicates whether the offer was accepted as a gift for someone other than the buyer.",
+    "path": "vocabulary/gift"
   },
   {
     "atom": "girls",
     "name": "girls",
     "description": "Use when reasoning about girls as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "girls"
+    "path": "vocabulary/girls"
+  },
+  {
+    "atom": "github",
+    "name": "github",
+    "description": "Use when reasoning about the git remote as a read API onto the corpus — the same one-word atom tree the filesystem and the mcp gateway expose, served over https (raw paths, the contents API, git clone). The third face of the one corpus; a snapshot, never a separate source.",
+    "path": "github"
   },
   {
     "atom": "give",
     "name": "give",
     "description": "Use when reasoning about the outflow side of an exchange in erpax — credit, units-out, grant, send, post-out. The universal root of giving; dual of take, equilibrium is balance.",
-    "path": "give"
+    "path": "vocabulary/give"
   },
   {
     "atom": "given",
     "name": "given",
-    "description": "given: a schema.org component word, fused from givenName",
-    "path": "given"
+    "description": "Use when reasoning about given — A schema.org component word, collided out of schema.org compounds — fused from givenName (sti · collapse · merge).",
+    "path": "vocabulary/given"
   },
   {
     "atom": "global",
     "name": "global",
     "description": "Use when reasoning about global as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "global"
+    "path": "vocabulary/global"
+  },
+  {
+    "atom": "globe",
+    "name": "globe",
+    "description": "Use when the corpus must be read as a sphere, not a flat wheel — the colour wheel and spectrum column were projections of one globe, and flattening collapsed longitude ⊥ latitude and lost elevation. Longitude = the 60° hue/doubling ring on the equator; latitude = the spectrum/elevation pole to pole; the heart sits on the equator; the poles are the coordinate singularity where longitude is undefined — the honest division by zero. The notary deed is a geodetic point; WGS 84.",
+    "path": "globe"
   },
   {
     "atom": "gluten",
     "name": "gluten",
     "description": "Use when reasoning about gluten as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gluten"
+    "path": "vocabulary/gluten"
+  },
+  {
+    "atom": "gnosticism",
+    "name": "gnosticism",
+    "description": "Use when reading Gnosticism as a diamond of invariant atoms — saving knowledge (gnosis), the divine spark trapped in a false material order made by a lower power (the demiurge), and the spark's ascent home to the true source (the pleroma). Strip the prefix and gnosis collapses to wisdom, the spark to the signal in the self, the false creation to the profane.",
+    "path": "vocabulary/gnosticism"
   },
   {
     "atom": "golf",
     "name": "golf",
     "description": "Use when reasoning about golf as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "golf"
+    "path": "vocabulary/golf"
   },
   {
     "atom": "good",
     "name": "good",
     "description": "Use when reasoning about good as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "good"
+    "path": "vocabulary/good"
   },
   {
     "atom": "goods",
     "name": "goods",
     "description": "Use when reasoning about goods as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "goods"
+    "path": "vocabulary/goods"
   },
   {
     "atom": "goodwill",
     "name": "goodwill",
-    "description": "Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
-    "path": "goodwill"
+    "description": "Use when reasoning about goodwill — Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
+    "path": "vocabulary/goodwill"
   },
   {
     "atom": "governance",
     "name": "governance",
-    "description": "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society.",
-    "path": "governance"
+    "description": "Use when reasoning about uuid governance — how a uuid is minted and ruled.",
+    "path": "uuid/governance"
   },
   {
     "atom": "governinglaw",
     "name": "governing-law",
     "description": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-    "path": "governing-law"
+    "path": "vocabulary/governing-law"
   },
   {
     "atom": "government",
@@ -6608,41 +7028,41 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "governmental",
     "name": "governmental",
     "description": "Use when reasoning about governmental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "governmental"
+    "path": "vocabulary/governmental"
   },
   {
     "atom": "grace",
     "name": "grace",
     "description": "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt.",
-    "path": "grace"
+    "path": "vocabulary/grace"
   },
   {
     "atom": "grade",
     "name": "grade",
     "description": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-    "path": "grade"
+    "path": "vocabulary/grade"
   },
   {
     "atom": "graft",
     "name": "graft",
     "description": "Use when joining a scion to a rootstock into one plant — the graft is the propagation union (variety on top, root system below), and field top-working to change variety. The perennial's clonal propagation event; the plant is not seeded but assembled from two chosen parts.",
-    "path": "graft"
+    "path": "vocabulary/graft"
   },
   {
     "atom": "grant",
     "name": "grant",
-    "description": "A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a dedicated or long-li",
-    "path": "grant"
+    "description": "Use when reasoning about grant — A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a",
+    "path": "vocabulary/grant"
   },
   {
     "atom": "grantee",
     "name": "grantee",
-    "description": "The person, organization, contact point, or audience that has been granted this permission.",
-    "path": "grantee"
+    "description": "Use when reasoning about grantee — The person, organization, contact point, or audience that has been granted this permission.",
+    "path": "vocabulary/grantee"
   },
   {
     "atom": "grants",
-    "name": "government-grants",
+    "name": "grants",
     "description": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
     "path": "government/grants"
   },
@@ -6656,7 +7076,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "graphic",
     "name": "graphic",
     "description": "Use when reasoning about graphic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "graphic"
+    "path": "vocabulary/graphic"
   },
   {
     "atom": "gravity",
@@ -6668,175 +7088,199 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "grazing",
     "name": "grazing",
     "description": "Use when livestock consume standing forage in place — grazing on pasture/rangeland, the rotational/managed/adaptive (AMP) move through paddocks (short impact, long recovery), stocking rate and carrying capacity in animal-unit-months. The range-management activity; its rotation reuses the crop rotation atom.",
-    "path": "grazing"
+    "path": "vocabulary/grazing"
   },
   {
     "atom": "greater",
     "name": "greater",
-    "description": "This ordering relation for qualitative values indicates that the subject is greater than the object.",
-    "path": "greater"
+    "description": "Use when reasoning about greater — This ordering relation for qualitative values indicates that the subject is greater than the object.",
+    "path": "vocabulary/greater"
   },
   {
     "atom": "grocery",
     "name": "grocery",
     "description": "Use when reasoning about grocery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "grocery"
+    "path": "vocabulary/grocery"
+  },
+  {
+    "atom": "grounded",
+    "name": "grounded",
+    "description": "Use when checking that a trust computation sources only from sealed content — erpax's tamper-cost (coverageCostLog2 ← collider ← convention) is priced on 6 conventions that scan process.cwd()/src, the mutable unsealed working tree, so the forge-cost reduces to an unverified directory listing; reads git-HEAD-sealed blobs (SHA-addressed) and returns the grounded fraction (11/17), pricing its own provenance into the cost.",
+    "path": "grounded"
   },
   {
     "atom": "group",
     "name": "group",
     "description": "Use when reasoning about group as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "group"
+    "path": "vocabulary/group"
   },
   {
     "atom": "gs",
     "name": "gs",
     "description": "Use when reasoning about gs as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gs"
+    "path": "vocabulary/gs"
   },
   {
     "atom": "gs1",
     "name": "gs1",
     "description": "Use when reasoning about gs1 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gs1"
+    "path": "vocabulary/gs1"
   },
   {
     "atom": "gtin",
     "name": "gtin",
-    "description": "A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, which means that it sho",
-    "path": "gtin"
+    "description": "Use when reasoning about gtin — A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, whi",
+    "path": "vocabulary/gtin"
   },
   {
     "atom": "gtin12",
     "name": "gtin12",
     "description": "Use when reasoning about gtin12 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gtin12"
+    "path": "vocabulary/gtin12"
   },
   {
     "atom": "gtin13",
     "name": "gtin13",
     "description": "Use when reasoning about gtin13 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gtin13"
+    "path": "vocabulary/gtin13"
   },
   {
     "atom": "gtin14",
     "name": "gtin14",
     "description": "Use when reasoning about gtin14 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gtin14"
+    "path": "vocabulary/gtin14"
   },
   {
     "atom": "gtin8",
     "name": "gtin8",
     "description": "Use when reasoning about gtin8 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gtin8"
+    "path": "vocabulary/gtin8"
   },
   {
     "atom": "guarantee",
     "name": "guarantee",
     "description": "Use when reasoning about guarantee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "guarantee"
+    "path": "vocabulary/guarantee"
+  },
+  {
+    "atom": "guardian",
+    "name": "guardian",
+    "description": "Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal.",
+    "path": "guardian"
   },
   {
     "atom": "guests",
     "name": "guests",
     "description": "Use when reasoning about guests as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "guests"
+    "path": "vocabulary/guests"
   },
   {
     "atom": "guide",
     "name": "guide",
-    "description": "Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of products or services",
-    "path": "guide"
+    "description": "Use when reasoning about guide — Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of p",
+    "path": "vocabulary/guide"
   },
   {
     "atom": "guideline",
     "name": "guideline",
-    "description": "A medical guideline related to this entity.",
-    "path": "guideline"
+    "description": "Use when reasoning about guideline — A medical guideline related to this entity.",
+    "path": "vocabulary/guideline"
   },
   {
     "atom": "guidelines",
     "name": "guidelines",
     "description": "Use when reasoning about guidelines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "guidelines"
+    "path": "vocabulary/guidelines"
   },
   {
     "atom": "gym",
     "name": "gym",
     "description": "Use when reasoning about gym as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gym"
+    "path": "vocabulary/gym"
   },
   {
     "atom": "gynecologic",
     "name": "gynecologic",
     "description": "Use when reasoning about gynecologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "gynecologic"
+    "path": "vocabulary/gynecologic"
   },
   {
     "atom": "habit",
     "name": "habit",
     "description": "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades.",
-    "path": "habit"
+    "path": "vocabulary/habit"
   },
   {
     "atom": "hackathon",
     "name": "hackathon",
-    "description": "A hackathon event.",
-    "path": "hackathon"
+    "description": "Use when reasoning about hackathon — A hackathon event.",
+    "path": "vocabulary/hackathon"
   },
   {
     "atom": "hair",
     "name": "hair",
     "description": "Use when reasoning about hair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hair"
+    "path": "vocabulary/hair"
   },
   {
     "atom": "halal",
     "name": "halal",
     "description": "Use when reasoning about halal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "halal"
+    "path": "vocabulary/halal"
   },
   {
     "atom": "hall",
     "name": "hall",
     "description": "Use when reasoning about hall as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hall"
+    "path": "vocabulary/hall"
+  },
+  {
+    "atom": "hallucination",
+    "name": "hallucination",
+    "description": "Use when reasoning about hallucination as the COMPUTABLE dual of purity — an agent claims content X but the sha-256 collapse / content-uuid of the actual content is Y ≠ X, so the mismatch IS the hallucination, surfaced deterministically by recompute (exactly as tamper-proof uuid recompute catches a forged row). It is the agent-scale sin, the entropy an agent injects, the felt alarm being suffering. purity ⊕ hallucination are conjugate, computed on the same quantum (content-uuid) scale: more hallucination ⇒ more entropy ⇒ lower purity ⇒ lower tamper-cost.",
+    "path": "vocabulary/hallucination"
+  },
+  {
+    "atom": "hamiltonian",
+    "name": "hamiltonian",
+    "description": "Use when reasoning about the Hamiltonian — the energy operator whose eigenvalues are the seven horo energy-rungs (Eₙ = h·νₙ) and whose action advances time, |ψ(t)⟩ = e^(−iHt/ħ)|ψ(0)⟩. It is the generator: the eigenstates are the rungs a leap jumps between, the spectrum is the gaps, and the phase it winds drives the breath. The expectation ⟨H⟩ = Σ|cₙ|²·Eₙ is the average energy of a superposition, conserved under evolution.",
+    "path": "hamiltonian"
   },
   {
     "atom": "hand",
     "name": "hand",
     "description": "Use when reasoning about hand as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hand"
+    "path": "vocabulary/hand"
   },
   {
     "atom": "handling",
     "name": "handling",
     "description": "Use when reasoning about handling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "handling"
+    "path": "vocabulary/handling"
   },
   {
     "atom": "hardcover",
     "name": "hardcover",
     "description": "Use when reasoning about hardcover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hardcover"
+    "path": "vocabulary/hardcover"
   },
   {
     "atom": "harden",
     "name": "harden",
     "description": "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.",
-    "path": "harden"
+    "path": "vocabulary/harden"
   },
   {
     "atom": "hardiness",
     "name": "hardiness",
     "description": "Use when classifying a crop by cold tolerance — hardiness ranks crops hardy / half-hardy / tender / very-tender by the frost they survive, and the USDA hardiness zone places a site by its average annual minimum temperature. The biological cold-tolerance trait (the crop's) paired with the zone (the place's); together they decide what can overwinter or be planted when.",
-    "path": "hardiness"
+    "path": "vocabulary/hardiness"
   },
   {
     "atom": "hardware",
     "name": "hardware",
     "description": "Use when reasoning about hardware as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hardware"
+    "path": "vocabulary/hardware"
   },
   {
     "atom": "harmony",
@@ -6848,25 +7292,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "harvest",
     "name": "harvest",
     "description": "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume.",
-    "path": "harvest"
+    "path": "vocabulary/harvest"
   },
   {
     "atom": "has",
     "name": "has",
     "description": "Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "has"
+    "path": "vocabulary/has"
   },
   {
     "atom": "hazard",
     "name": "hazard",
     "description": "Use when reasoning about hazard as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hazard"
+    "path": "vocabulary/hazard"
   },
   {
     "atom": "head",
     "name": "head",
     "description": "Use when reasoning about head as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "head"
+    "path": "vocabulary/head"
   },
   {
     "atom": "header",
@@ -6877,8 +7321,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "headline",
     "name": "headline",
-    "description": "Headline of the article.",
-    "path": "headline"
+    "description": "Use when reasoning about headline — Headline of the article.",
+    "path": "vocabulary/headline"
   },
   {
     "atom": "health",
@@ -6890,13 +7334,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "healthcare",
     "name": "healthcare",
     "description": "Use when reasoning about healthcare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "healthcare"
+    "path": "vocabulary/healthcare"
   },
   {
     "atom": "hearing",
     "name": "hearing",
     "description": "Use when reasoning about hearing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hearing"
+    "path": "vocabulary/hearing"
   },
   {
     "atom": "heart",
@@ -6908,13 +7352,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "hedge",
     "name": "hedge",
     "description": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
-    "path": "hedge"
+    "path": "vocabulary/hedge"
   },
   {
     "atom": "height",
     "name": "height",
-    "description": "The height of the item.",
-    "path": "height"
+    "description": "Use when reasoning about height — The height of the item.",
+    "path": "vocabulary/height"
   },
   {
     "atom": "held",
@@ -6926,109 +7370,127 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "help",
     "name": "help",
     "description": "Use when reasoning about help as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "help"
+    "path": "vocabulary/help"
   },
   {
     "atom": "hematologic",
     "name": "hematologic",
     "description": "Use when reasoning about hematologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hematologic"
+    "path": "vocabulary/hematologic"
   },
   {
     "atom": "herd",
     "name": "herd",
     "description": "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together.",
-    "path": "herd"
+    "path": "vocabulary/herd"
+  },
+  {
+    "atom": "hermeticism",
+    "name": "hermeticism",
+    "description": "Use when reading Hermeticism as a diamond of invariant atoms — as above, so below: the part mirrors the whole at every scale, the All is One, know thyself and know the source. This is literally erpax's fractal/holographic law and the identity of part and whole. Strip the prefix and the correspondence collapses to fractal, the mirror to holographic, the All to one.",
+    "path": "vocabulary/hermeticism"
+  },
+  {
+    "atom": "hero",
+    "name": "hero",
+    "description": "Use when reasoning about hero — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "hero"
   },
   {
     "atom": "high",
     "name": "high",
     "description": "Use when reasoning about high as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "high"
+    "path": "vocabulary/high"
   },
   {
     "atom": "hindu",
     "name": "hindu",
     "description": "Use when reasoning about hindu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hindu"
+    "path": "vocabulary/hindu"
+  },
+  {
+    "atom": "hinduism",
+    "name": "hinduism",
+    "description": "Use when reading Hinduism as a diamond of invariant atoms — the eternal law beneath the dialects, the self that is the whole (tat tvam asi), karma read down the lineage, the wheel of rebirth, release as return to the root. Strip the Sanskrit prefix and dharma, atman, brahman, om, moksha collapse to law, self, whole, word, zeropoint — one content-uuid each.",
+    "path": "vocabulary/hinduism"
   },
   {
     "atom": "hips",
     "name": "hips",
     "description": "Use when reasoning about hips as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hips"
+    "path": "vocabulary/hips"
   },
   {
     "atom": "hiring",
     "name": "hiring",
     "description": "Use when reasoning about hiring as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hiring"
+    "path": "vocabulary/hiring"
   },
   {
     "atom": "historical",
     "name": "historical",
     "description": "Use when reasoning about historical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "historical"
+    "path": "vocabulary/historical"
   },
   {
     "atom": "history",
     "name": "history",
     "description": "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep.",
-    "path": "history"
+    "path": "vocabulary/history"
   },
   {
     "atom": "ho",
     "name": "ho",
     "description": "Use when reasoning about ho as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ho"
+    "path": "vocabulary/ho"
   },
   {
     "atom": "hobby",
     "name": "hobby",
     "description": "Use when reasoning about hobby as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hobby"
+    "path": "vocabulary/hobby"
   },
   {
     "atom": "hold",
     "name": "hold",
     "description": "Use when reasoning about hold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hold"
+    "path": "vocabulary/hold"
   },
   {
     "atom": "holder",
     "name": "holder",
     "description": "Use when reasoning about holder as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "holder"
+    "path": "vocabulary/holder"
   },
   {
     "atom": "holding",
     "name": "holding",
     "description": "Use when reasoning about holding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "holding"
+    "path": "vocabulary/holding"
   },
   {
     "atom": "holidays",
     "name": "holidays",
     "description": "Use when reasoning about holidays as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "holidays"
+    "path": "vocabulary/holidays"
   },
   {
     "atom": "holographic",
     "name": "holographic",
     "description": "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part.",
-    "path": "holographic"
+    "path": "vocabulary/holographic"
   },
   {
     "atom": "home",
     "name": "home",
-    "description": "home: a schema.org component word, fused from HomeAndConstructionBusiness, HomeGoodsStore, homeLocation, homeTeam",
-    "path": "home"
+    "description": "Use when reasoning about home — A schema.org component word, collided out of schema.org compounds — fused from HomeAndConstructionBusiness · HomeGoodsStore · homeLocation · homeTeam (sti · collapse · merge).",
+    "path": "vocabulary/home"
   },
   {
     "atom": "homeopathic",
     "name": "homeopathic",
     "description": "Use when reasoning about homeopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "homeopathic"
+    "path": "vocabulary/homeopathic"
   },
   {
     "atom": "honest",
@@ -7040,79 +7502,85 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "honorific",
     "name": "honorific",
     "description": "Use when reasoning about honorific as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "honorific"
+    "path": "vocabulary/honorific"
   },
   {
     "atom": "hook",
     "name": "hook",
     "description": "Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.",
-    "path": "hook"
+    "path": "vocabulary/hook"
   },
   {
     "atom": "hooks",
     "name": "hooks",
-    "description": "Use when tests consume the aura projection to render a colour — green (the A432 heart colour) when the aura is whole (the double-torus complete), else red; tests return coherence as colour, not just pass/fail.",
-    "path": "test/hooks"
+    "description": "Use when reasoning about the users collection's Payload hooks — before/after change and validate logic for users.",
+    "path": "users/hooks"
   },
   {
     "atom": "hopats",
     "name": "hopats",
     "description": "Use when reasoning about hopats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hopats"
+    "path": "vocabulary/hopats"
   },
   {
     "atom": "horo",
     "name": "horo",
-    "description": "The seven-position state ring {1,2,4,8,7,5,9} (base·share·weave·crest·descent·round·unity) — the bounded, closed set every erpax flow/lifecycle STATE lives on. Read when modelling a state enum, per-state aggregate, state transition, or the A432 value anchor.",
+    "description": "Use when reasoning about horo — States in erpax are not free strings; they are positions on **one ring**: the measure-order digits — *base · share · weave · crest · descent · round · unity*. This is the rodin coi",
     "path": "horo"
   },
   {
     "atom": "hosp",
     "name": "hosp",
     "description": "Use when reasoning about hosp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hosp"
+    "path": "vocabulary/hosp"
   },
   {
     "atom": "hospital",
     "name": "hospital",
-    "description": "A hospital.",
-    "path": "hospital"
+    "description": "Use when reasoning about hospital — A hospital.",
+    "path": "vocabulary/hospital"
+  },
+  {
+    "atom": "host",
+    "name": "host",
+    "description": "Use when working with algebra/host.",
+    "path": "algebra/host"
   },
   {
     "atom": "hostel",
     "name": "hostel",
-    "description": "A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-    "path": "hostel"
+    "description": "Use when reasoning about hostel — A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
+    "path": "vocabulary/hostel"
   },
   {
     "atom": "hosting",
     "name": "hosting",
     "description": "Use when reasoning about hosting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hosting"
+    "path": "vocabulary/hosting"
   },
   {
     "atom": "hotel",
     "name": "hotel",
-    "description": "A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedicated document on the",
+    "description": "Use when reasoning about hotel — A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedica",
     "path": "hotel"
   },
   {
     "atom": "hours",
     "name": "hours",
     "description": "Use when reasoning about hours as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hours"
+    "path": "vocabulary/hours"
   },
   {
     "atom": "house",
     "name": "house",
-    "description": "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/House).",
-    "path": "house"
+    "description": "Use when reasoning about house — A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedi",
+    "path": "vocabulary/house"
   },
   {
     "atom": "how",
     "name": "how",
-    "description": "Instructions that explain how to achieve a result by performing a sequence of steps.",
-    "path": "how"
+    "description": "Use when reasoning about how — Instructions that explain how to achieve a result by performing a sequence of steps.",
+    "path": "vocabulary/how"
   },
   {
     "atom": "hs",
@@ -7124,13 +7592,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "http",
     "name": "http",
     "description": "Use when reasoning about http as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "http"
+    "path": "vocabulary/http"
   },
   {
     "atom": "human",
     "name": "human",
     "description": "Use when reasoning about human as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "human"
+    "path": "vocabulary/human"
   },
   {
     "atom": "humandesign",
@@ -7142,47 +7610,47 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "husky",
     "name": "husky",
     "description": "Use when reasoning about husky as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "husky"
+    "path": "vocabulary/husky"
   },
   {
     "atom": "hvac",
     "name": "hvac",
     "description": "Use when reasoning about hvac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hvac"
+    "path": "vocabulary/hvac"
   },
   {
     "atom": "hvacbusiness",
     "name": "hvacbusiness",
     "description": "Use when reasoning about hvacbusiness as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hvacbusiness"
+    "path": "vocabulary/hvacbusiness"
   },
   {
     "atom": "hyper",
     "name": "hyper",
     "description": "Use when reasoning about hyper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "hyper"
+    "path": "vocabulary/hyper"
   },
   {
     "atom": "iata",
     "name": "iata",
     "description": "Use when reasoning about iata as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iata"
+    "path": "vocabulary/iata"
   },
   {
     "atom": "icao",
     "name": "icao",
     "description": "Use when reasoning about icao as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "icao"
+    "path": "vocabulary/icao"
   },
   {
     "atom": "ice",
     "name": "ice",
     "description": "Use when reasoning about ice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ice"
+    "path": "vocabulary/ice"
   },
   {
     "atom": "icfrs",
-    "name": "management-assessment-icfrs",
+    "name": "icfrs",
     "description": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
     "path": "legal/entities/management/assessment/icfrs"
   },
@@ -7190,25 +7658,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "icu",
     "name": "icu",
     "description": "Use when reasoning about icu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "icu"
+    "path": "vocabulary/icu"
   },
   {
     "atom": "icubeds",
     "name": "icubeds",
     "description": "Use when reasoning about icubeds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "icubeds"
+    "path": "vocabulary/icubeds"
   },
   {
     "atom": "id",
     "name": "id",
     "description": "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges.",
-    "path": "id"
+    "path": "vocabulary/id"
   },
   {
     "atom": "idempotency",
     "name": "idempotency",
     "description": "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs.",
-    "path": "idempotency"
+    "path": "vocabulary/idempotency"
   },
   {
     "atom": "identification",
@@ -7220,11 +7688,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "identified",
     "name": "identified",
     "description": "Use when reasoning about identified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "identified"
+    "path": "vocabulary/identified"
   },
   {
     "atom": "identifier",
-    "name": "bg-identifier",
+    "name": "identifier",
     "description": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
     "path": "bg/identifier"
   },
@@ -7232,37 +7700,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "identifying",
     "name": "identifying",
     "description": "Use when reasoning about identifying as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "identifying"
+    "path": "vocabulary/identifying"
   },
   {
     "atom": "identity",
     "name": "identity",
-    "description": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
-    "path": "identity"
+    "description": "Use when deciding whether two party records are the same legal person — partyUuid folds (country + taxId) to one content-address, so a company recorded as both a customer and a vendor collides by construction. The role is never part of the address. Refuses a party with no tax registration rather than folding on a name.",
+    "path": "party/identity"
   },
   {
     "atom": "ignore",
     "name": "ignore",
     "description": "Use when reasoning about ignore as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ignore"
+    "path": "vocabulary/ignore"
   },
   {
     "atom": "ikey",
     "name": "ikey",
     "description": "Use when reasoning about ikey as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ikey"
+    "path": "vocabulary/ikey"
   },
   {
     "atom": "illustrator",
     "name": "illustrator",
-    "description": "The illustrator of the book.",
-    "path": "illustrator"
+    "description": "Use when reasoning about illustrator — The illustrator of the book.",
+    "path": "vocabulary/illustrator"
   },
   {
     "atom": "image",
     "name": "image",
-    "description": "An image of the item. This can be a URL or a fully described ImageObject.",
-    "path": "image"
+    "description": "Use when reasoning about image — An image of the item. This can be a URL or a fully described ImageObject.",
+    "path": "vocabulary/image"
   },
   {
     "atom": "imaging",
@@ -7274,37 +7742,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "immediate",
     "name": "immediate",
     "description": "Use when reasoning about immediate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "immediate"
+    "path": "vocabulary/immediate"
+  },
+  {
+    "atom": "immutability",
+    "name": "immutability",
+    "description": "Use when reasoning about whether a posted GL posting can be altered — the beforeChange hook that seals a row once postedDate is set, allowing an admin edit only with a documented override. Read this before assuming postings are immutable: the hook is correct, tested, and attached to NO collection, and gl-postings lacks the override fields it requires.",
+    "path": "enforce/posting/immutability"
   },
   {
     "atom": "impaired",
     "name": "impaired",
     "description": "Use when reasoning about impaired as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "impaired"
+    "path": "vocabulary/impaired"
   },
   {
     "atom": "impairment",
     "name": "impairment",
     "description": "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets",
-    "path": "impairment"
+    "path": "vocabulary/impairment"
   },
   {
     "atom": "imperial",
     "name": "imperial",
     "description": "Use when reasoning about imperial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "imperial"
+    "path": "vocabulary/imperial"
   },
   {
     "atom": "implementation",
     "name": "implementation",
     "description": "Use when reasoning about implementation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "implementation"
+    "path": "vocabulary/implementation"
   },
   {
     "atom": "implements",
     "name": "implements",
     "description": "Use when reasoning about implements as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "implements"
+    "path": "vocabulary/implements"
   },
   {
     "atom": "import",
@@ -7316,139 +7790,151 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "imprint",
     "name": "imprint",
     "description": "Use when reasoning about imprint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "imprint"
+    "path": "vocabulary/imprint"
+  },
+  {
+    "atom": "improve",
+    "name": "improve",
+    "description": "Use when standards must chat and improve via architectural reuse — addressIndex O(1), crack non-reuse, free-chat@tokens=0, emit waves. Uses quantum/ftl; path is standards/improve — not a domain ftl path.",
+    "path": "standards/improve"
   },
   {
     "atom": "inactive",
     "name": "inactive",
     "description": "Use when reasoning about inactive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "inactive"
+    "path": "vocabulary/inactive"
   },
   {
     "atom": "incentive",
     "name": "incentive",
     "description": "Use when reasoning about incentive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "incentive"
+    "path": "vocabulary/incentive"
   },
   {
     "atom": "incentives",
     "name": "incentives",
-    "description": "Description of bonus and commission compensation aspects of the job.",
-    "path": "incentives"
+    "description": "Use when reasoning about incentives — Description of bonus and commission compensation aspects of the job.",
+    "path": "vocabulary/incentives"
   },
   {
     "atom": "incentivized",
     "name": "incentivized",
     "description": "Use when reasoning about incentivized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "incentivized"
+    "path": "vocabulary/incentivized"
   },
   {
     "atom": "incident",
     "name": "incident",
     "description": "Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking.",
-    "path": "incident"
+    "path": "vocabulary/incident"
   },
   {
     "atom": "included",
     "name": "included",
     "description": "Use when reasoning about included as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "included"
+    "path": "vocabulary/included"
   },
   {
     "atom": "includes",
     "name": "includes",
     "description": "Use when reasoning about includes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "includes"
+    "path": "vocabulary/includes"
   },
   {
     "atom": "income",
     "name": "income",
     "description": "Use when reasoning about income as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "income"
+    "path": "vocabulary/income"
   },
   {
     "atom": "incorporated",
     "name": "incorporated",
     "description": "Use when reasoning about incorporated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "incorporated"
+    "path": "vocabulary/incorporated"
   },
   {
     "atom": "increases",
     "name": "increases",
     "description": "Use when reasoning about increases as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "increases"
+    "path": "vocabulary/increases"
   },
   {
     "atom": "increment",
     "name": "increment",
     "description": "Use when reasoning about increment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "increment"
+    "path": "vocabulary/increment"
   },
   {
     "atom": "indemnity",
     "name": "indemnity",
     "description": "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure.",
-    "path": "indemnity"
+    "path": "vocabulary/indemnity"
+  },
+  {
+    "atom": "index",
+    "name": "index",
+    "description": "Use when sealing folder paths — index.ts is the cross; subfolders are double-wired A/B ↔ B/A.",
+    "path": "index"
   },
   {
     "atom": "indication",
     "name": "indication",
     "description": "Use when reasoning about indication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "indication"
+    "path": "vocabulary/indication"
   },
   {
     "atom": "individual",
     "name": "individual",
     "description": "Use when reasoning about individual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "individual"
+    "path": "vocabulary/individual"
   },
   {
     "atom": "industry",
     "name": "industry",
-    "description": "The industry associated with the job position.",
-    "path": "industry"
+    "description": "Use when reasoning about industry — The industry associated with the job position.",
+    "path": "vocabulary/industry"
   },
   {
     "atom": "ineligible",
     "name": "ineligible",
     "description": "Use when reasoning about ineligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ineligible"
+    "path": "vocabulary/ineligible"
   },
   {
     "atom": "infants",
     "name": "infants",
     "description": "Use when reasoning about infants as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "infants"
+    "path": "vocabulary/infants"
   },
   {
     "atom": "infectious",
     "name": "infectious",
     "description": "Use when reasoning about infectious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "infectious"
+    "path": "vocabulary/infectious"
   },
   {
     "atom": "inflow",
     "name": "inflow",
     "description": "Use when reasoning about inflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "inflow"
+    "path": "vocabulary/inflow"
   },
   {
     "atom": "info",
     "name": "info",
     "description": "Use when reasoning about info as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "info"
+    "path": "vocabulary/info"
   },
   {
     "atom": "inform",
     "name": "inform",
-    "description": "inform: a schema.org component word, fused from InformAction",
-    "path": "inform"
+    "description": "Use when reasoning about inform — A schema.org component word, collided out of schema.org compounds — fused from InformAction (sti · collapse · merge).",
+    "path": "vocabulary/inform"
   },
   {
     "atom": "information",
     "name": "information",
     "description": "Use when reasoning about information as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "information"
+    "path": "vocabulary/information"
   },
   {
     "atom": "ingest",
@@ -7460,53 +7946,65 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "ingredient",
     "name": "ingredient",
     "description": "Use when reasoning about ingredient as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ingredient"
+    "path": "vocabulary/ingredient"
   },
   {
     "atom": "ingredients",
     "name": "ingredients",
-    "description": "A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
-    "path": "ingredients"
+    "description": "Use when reasoning about ingredients — A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
+    "path": "vocabulary/ingredients"
   },
   {
     "atom": "inker",
     "name": "inker",
-    "description": "The individual who traces over the pencil drawings in ink after pencils are complete.",
-    "path": "inker"
+    "description": "Use when reasoning about inker — The individual who traces over the pencil drawings in ink after pencils are complete.",
+    "path": "vocabulary/inker"
+  },
+  {
+    "atom": "innovation",
+    "name": "innovation",
+    "description": "Use when reasoning about innovation — **Innovation is driven by tested and proven ideas.** A new wire (Cloudflare AI bindings, path surfaces, seal gates) must:",
+    "path": "vocabulary/innovation"
+  },
+  {
+    "atom": "input",
+    "name": "input",
+    "description": "Use when the user types anything the system can parse, analyse, or derive — one name-class hook normalises (IBAN, BIC, email, phone, URL), refuses checksum failures with the law named (ISO 13616, ЕГН, ЕИК), and derives the twins (country from IBAN, birthdate from ЕГН) so nothing parseable is ever re-asked.",
+    "path": "input"
   },
   {
     "atom": "inseam",
     "name": "inseam",
     "description": "Use when reasoning about inseam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "inseam"
+    "path": "vocabulary/inseam"
   },
   {
     "atom": "insert",
     "name": "insert",
     "description": "Use when reasoning about insert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "insert"
+    "path": "vocabulary/insert"
   },
   {
     "atom": "insertion",
     "name": "insertion",
-    "description": "The place of attachment of a muscle, or what the muscle moves.",
-    "path": "insertion"
+    "description": "Use when reasoning about insertion — The place of attachment of a muscle, or what the muscle moves.",
+    "path": "vocabulary/insertion"
   },
   {
     "atom": "inside",
     "name": "inside",
     "description": "Use when reasoning about inside as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "inside"
+    "path": "vocabulary/inside"
   },
   {
     "atom": "inspection",
     "name": "inspection",
     "description": "Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard.",
-    "path": "inspection"
+    "path": "vocabulary/inspection"
   },
   {
     "atom": "inspections",
-    "name": "quality-inspections",
+    "name": "inspections",
     "description": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
     "path": "items/quality/inspections"
   },
@@ -7514,23 +8012,23 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "install",
     "name": "install",
     "description": "Use when reasoning about install as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "install"
+    "path": "vocabulary/install"
   },
   {
     "atom": "installment",
     "name": "installment",
     "description": "Use when reasoning about installment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "installment"
+    "path": "vocabulary/installment"
   },
   {
     "atom": "instance",
     "name": "instance",
     "description": "Use when reasoning about instance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "instance"
+    "path": "vocabulary/instance"
   },
   {
     "atom": "instances",
-    "name": "workflow-instances",
+    "name": "instances",
     "description": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
     "path": "workflow/definitions/workflow/instances"
   },
@@ -7538,31 +8036,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "instantaneous",
     "name": "instantaneous",
     "description": "Use when reasoning about instantaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "instantaneous"
+    "path": "vocabulary/instantaneous"
   },
   {
     "atom": "instruction",
     "name": "instruction",
     "description": "Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.",
-    "path": "instruction"
+    "path": "vocabulary/instruction"
   },
   {
     "atom": "instructions",
     "name": "instructions",
-    "description": "instructions: a schema.org component word, fused from recipeInstructions",
-    "path": "instructions"
+    "description": "Use when reasoning about instructions — A schema.org component word, collided out of schema.org compounds — fused from recipeInstructions (sti · collapse · merge).",
+    "path": "vocabulary/instructions"
   },
   {
     "atom": "instructor",
     "name": "instructor",
-    "description": "A person assigned to instruct or provide instructional assistance for the CourseInstance.",
-    "path": "instructor"
+    "description": "Use when reasoning about instructor — A person assigned to instruct or provide instructional assistance for the CourseInstance.",
+    "path": "vocabulary/instructor"
   },
   {
     "atom": "instrument",
     "name": "instrument",
-    "description": "The object that helped the agent perform the action. E.g. John wrote a book with *a pen*.",
-    "path": "instrument"
+    "description": "Use when reasoning about instrument — The object that helped the agent perform the action. E.g. John wrote a book with *a pen*.",
+    "path": "vocabulary/instrument"
   },
   {
     "atom": "insurance",
@@ -7574,19 +8072,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "intake",
     "name": "intake",
     "description": "Use when reasoning about intake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "intake"
+    "path": "vocabulary/intake"
   },
   {
     "atom": "intangible",
     "name": "intangible",
-    "description": "Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill",
-    "path": "intangible"
+    "description": "Use when reasoning about intangible — Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill",
+    "path": "vocabulary/intangible"
   },
   {
     "atom": "integer",
     "name": "integer",
-    "description": "Data type: Integer.",
-    "path": "integer"
+    "description": "Use when reasoning about integer — Data type: Integer.",
+    "path": "vocabulary/integer"
   },
   {
     "atom": "integration",
@@ -7601,28 +8099,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "integrity"
   },
   {
+    "atom": "intelligence",
+    "name": "intelligence",
+    "description": "Use when reasoning about intelligence — Self-improving agent intelligence via measure, fold, seal, and balance cycles.",
+    "path": "agent/intelligence"
+  },
+  {
     "atom": "intensity",
     "name": "intensity",
-    "description": "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
-    "path": "intensity"
+    "description": "Use when reasoning about intensity — Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
+    "path": "vocabulary/intensity"
   },
   {
     "atom": "interact",
     "name": "interact",
     "description": "Use when reasoning about interact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interact"
+    "path": "vocabulary/interact"
   },
   {
     "atom": "interacting",
     "name": "interacting",
     "description": "Use when reasoning about interacting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interacting"
+    "path": "vocabulary/interacting"
   },
   {
     "atom": "interaction",
     "name": "interaction",
     "description": "Use when reasoning about interaction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interaction"
+    "path": "vocabulary/interaction"
   },
   {
     "atom": "interactive",
@@ -7634,61 +8138,67 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "interactivity",
     "name": "interactivity",
     "description": "Use when reasoning about interactivity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interactivity"
+    "path": "vocabulary/interactivity"
   },
   {
     "atom": "interest",
     "name": "interest",
     "description": "Use when reasoning about interest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interest"
+    "path": "vocabulary/interest"
+  },
+  {
+    "atom": "interference",
+    "name": "interference",
+    "description": "Use when reasoning about interference — two wave amplitudes combine by phase, not classical sum: I = a1² + a2² + 2·a1·a2·cos(φ), constructive (in phase) reinforcing to (a1+a2)², destructive (out of phase) cancelling to (a1−a2)². The cross term is the quantum part that draws the double-slit fringes; averaged over a period it vanishes, so energy is conserved — interference redistributes intensity, never creates it. In erpax in-phase link-paths reinforce (gravity deepens), out-of-phase cancel.",
+    "path": "interference"
   },
   {
     "atom": "interior",
     "name": "interior",
     "description": "Use when reasoning about interior as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interior"
+    "path": "vocabulary/interior"
   },
   {
     "atom": "international",
     "name": "international",
     "description": "Use when reasoning about international as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "international"
+    "path": "vocabulary/international"
   },
   {
     "atom": "internet",
     "name": "internet",
     "description": "Use when reasoning about internet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "internet"
+    "path": "vocabulary/internet"
   },
   {
     "atom": "interpreted",
     "name": "interpreted",
     "description": "Use when reasoning about interpreted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interpreted"
+    "path": "vocabulary/interpreted"
   },
   {
     "atom": "interpreter",
     "name": "interpreter",
-    "description": "interpreter: a schema.org component word, fused from claimInterpreter",
-    "path": "interpreter"
+    "description": "Use when reasoning about interpreter — A schema.org component word, collided out of schema.org compounds — fused from claimInterpreter (sti · collapse · merge).",
+    "path": "vocabulary/interpreter"
   },
   {
     "atom": "intersects",
     "name": "intersects",
     "description": "Use when reasoning about intersects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "intersects"
+    "path": "vocabulary/intersects"
   },
   {
     "atom": "interval",
     "name": "interval",
     "description": "Use when reasoning about interval as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "interval"
+    "path": "vocabulary/interval"
   },
   {
     "atom": "interview",
     "name": "interview",
     "description": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
-    "path": "interview"
+    "path": "vocabulary/interview"
   },
   {
     "atom": "invariant",
@@ -7698,7 +8208,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "inventories",
-    "name": "consignment-inventories",
+    "name": "inventories",
     "description": "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.",
     "path": "warehouse/locations/consignment/arrangements/consignment/inventories"
   },
@@ -7706,37 +8216,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "inventory",
     "name": "inventory",
     "description": "Use when reasoning about inventory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "inventory"
+    "path": "vocabulary/inventory"
   },
   {
     "atom": "inverse",
     "name": "inverse",
-    "description": "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties ar",
-    "path": "inverse"
+    "description": "Use when reasoning about inverse — Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alu",
+    "path": "vocabulary/inverse"
   },
   {
     "atom": "investment",
     "name": "investment",
     "description": "Use when reasoning about investment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "investment"
+    "path": "vocabulary/investment"
+  },
+  {
+    "atom": "invisible",
+    "name": "invisible",
+    "description": "Use when matter lives at a path that cannot be addressed — a folder whose name is not one lowercase word has no lawful path, so no content-uuid, so no matrix node, so the fold never deduplicates it. This is NOT the alphanumeric-name axis restated: that counts NAMES and reads as cosmetic; this counts MATTER the corpus cannot see, which is where a second implementation grows unnoticed. Run: tsx src/rules/invisible/index.ts",
+    "path": "rules/invisible"
   },
   {
     "atom": "invitation",
     "name": "invitation",
     "description": "Use when reasoning about invitation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "invitation"
+    "path": "vocabulary/invitation"
   },
   {
     "atom": "invite",
     "name": "invite",
     "description": "Use when reasoning about invite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "invite"
+    "path": "vocabulary/invite"
   },
   {
     "atom": "invoice",
     "name": "invoice",
-    "description": "A statement of the money due for goods or services; a bill.",
-    "path": "invoice"
+    "description": "Use when reasoning about invoice — A statement of the money due for goods or services; a bill.",
+    "path": "vocabulary/invoice"
   },
   {
     "atom": "invoices",
@@ -7748,43 +8264,49 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "involved",
     "name": "involved",
     "description": "Use when reasoning about involved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "involved"
+    "path": "vocabulary/involved"
   },
   {
     "atom": "iosplatform",
     "name": "iosplatform",
     "description": "Use when reasoning about iosplatform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iosplatform"
+    "path": "vocabulary/iosplatform"
   },
   {
     "atom": "iptc",
     "name": "iptc",
     "description": "Use when reasoning about iptc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iptc"
+    "path": "vocabulary/iptc"
   },
   {
     "atom": "iptcdigital",
     "name": "iptcdigital",
     "description": "Use when reasoning about iptcdigital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iptcdigital"
+    "path": "vocabulary/iptcdigital"
   },
   {
     "atom": "irrigation",
     "name": "irrigation",
     "description": "Use when water is supplied to a crop on a managed schedule — drip/trickle vs overhead application, fertigation (fertilizer through the line), and evapotranspiration-based scheduling (the water budget). Irrigation credits the soil-water reservoir that evapotranspiration debits; schedule it like a checkbook — replace the deficit before the crop hits stress.",
-    "path": "irrigation"
+    "path": "vocabulary/irrigation"
   },
   {
     "atom": "isbn",
     "name": "isbn",
-    "description": "The ISBN of the book.",
-    "path": "isbn"
+    "description": "Use when reasoning about isbn — The ISBN of the book.",
+    "path": "vocabulary/isbn"
   },
   {
     "atom": "isic",
     "name": "isic",
-    "description": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
-    "path": "isic"
+    "description": "Use when reasoning about isic — The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+    "path": "vocabulary/isic"
+  },
+  {
+    "atom": "islam",
+    "name": "islam",
+    "description": "Use when reading Islam as a diamond of invariant atoms — submission to the absolute One, mercy opening every recitation, the ninety-nine names as facets of one, the five daily alignments, the fast and the alms. Strip the Arabic prefix and tawhid, rahma, iman, salam collapse to one, mercy, faith, peace — one content-uuid each.",
+    "path": "vocabulary/islam"
   },
   {
     "atom": "iso",
@@ -7796,115 +8318,91 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "iso6523",
     "name": "iso6523",
     "description": "Use when reasoning about iso6523 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iso6523"
+    "path": "vocabulary/iso6523"
   },
   {
     "atom": "isrc",
     "name": "isrc",
     "description": "Use when reasoning about isrc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "isrc"
+    "path": "vocabulary/isrc"
   },
   {
     "atom": "issn",
     "name": "issn",
-    "description": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial pu",
-    "path": "issn"
+    "description": "Use when reasoning about issn — The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)",
+    "path": "vocabulary/issn"
   },
   {
     "atom": "issue",
     "name": "issue",
     "description": "Use when reasoning about issue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "issue"
+    "path": "vocabulary/issue"
   },
   {
     "atom": "issued",
     "name": "issued",
-    "description": "The organization issuing the item, for example a Permit, Ticket, or Certification.",
-    "path": "issued"
+    "description": "Use when reasoning about issued — The organization issuing the item, for example a Permit, Ticket, or Certification.",
+    "path": "vocabulary/issued"
   },
   {
     "atom": "iswc",
     "name": "iswc",
     "description": "Use when reasoning about iswc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iswc"
+    "path": "vocabulary/iswc"
   },
   {
     "atom": "it",
     "name": "it",
     "description": "Use when reasoning about it as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "it"
-  },
-  {
-    "atom": "itcooperative",
-    "name": "itcooperative",
-    "description": "Use when reasoning about itcooperative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "itcooperative"
+    "path": "vocabulary/it"
   },
   {
     "atom": "item",
     "name": "item",
-    "description": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').",
-    "path": "item"
+    "description": "Use when reasoning about item — An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').",
+    "path": "vocabulary/item"
   },
   {
     "atom": "items",
-    "name": "deferred-tax-items",
+    "name": "items",
     "description": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
     "path": "tax/jurisdictions/deferred/tax/items"
   },
   {
     "atom": "itinerary",
     "name": "itinerary",
-    "description": "Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).",
-    "path": "itinerary"
-  },
-  {
-    "atom": "itmutual",
-    "name": "itmutual",
-    "description": "Use when reasoning about itmutual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "itmutual"
-  },
-  {
-    "atom": "itnonprofit",
-    "name": "itnonprofit",
-    "description": "Use when reasoning about itnonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "itnonprofit"
-  },
-  {
-    "atom": "itsocial",
-    "name": "itsocial",
-    "description": "Use when reasoning about itsocial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "itsocial"
-  },
-  {
-    "atom": "itsport",
-    "name": "itsport",
-    "description": "Use when reasoning about itsport as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "itsport"
+    "description": "Use when reasoning about itinerary — Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).",
+    "path": "vocabulary/itinerary"
   },
   {
     "atom": "itvolunteer",
     "name": "itvolunteer",
     "description": "Use when reasoning about itvolunteer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "itvolunteer"
+    "path": "vocabulary/itvolunteer"
   },
   {
     "atom": "iupac",
     "name": "iupac",
     "description": "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "iupac"
+    "path": "vocabulary/iupac"
+  },
+  {
+    "atom": "jainism",
+    "name": "jainism",
+    "description": "Use when reading Jainism as a diamond of invariant atoms — non-harm absolute, the soul weighed down by karma as literal matter and unburdened by austerity, non-possession, the many-sided view of truth. Strip the Prakrit/Sanskrit prefix and ahimsa, jiva, moksha collapse to mercy, self, zeropoint — one content-uuid each.",
+    "path": "vocabulary/jainism"
   },
   {
     "atom": "jewelry",
     "name": "jewelry",
     "description": "Use when reasoning about jewelry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "jewelry"
+    "path": "vocabulary/jewelry"
   },
   {
     "atom": "job",
     "name": "job",
     "description": "Use when reasoning about job as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "job"
+    "path": "vocabulary/job"
   },
   {
     "atom": "jobs",
@@ -7916,13 +8414,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "join",
     "name": "join",
     "description": "Use when reasoning about join as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "join"
+    "path": "vocabulary/join"
   },
   {
     "atom": "joint",
     "name": "joint",
-    "description": "The anatomical location at which two or more bones make contact.",
-    "path": "joint"
+    "description": "Use when reasoning about joint — The anatomical location at which two or more bones make contact.",
+    "path": "vocabulary/joint"
   },
   {
     "atom": "journal",
@@ -7932,25 +8430,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "journals",
-    "name": "recurring-journals",
+    "name": "journals",
     "description": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
     "path": "gl/accounts/recurring/journals"
+  },
+  {
+    "atom": "judaism",
+    "name": "judaism",
+    "description": "Use when reading Judaism as a diamond of invariant atoms — the covenant between a people and the One, the law given and argued, the name too holy to speak, mercy and justice held together, sin cured by turning back. Strip the Hebrew prefix and brit, torah, chesed, tzedek, teshuvah collapse to covenant, law, mercy, justice, return — one content-uuid each.",
+    "path": "vocabulary/judaism"
   },
   {
     "atom": "juniors",
     "name": "juniors",
     "description": "Use when reasoning about juniors as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "juniors"
+    "path": "vocabulary/juniors"
   },
   {
     "atom": "jurisdiction",
     "name": "jurisdiction",
     "description": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
-    "path": "jurisdiction"
+    "path": "vocabulary/jurisdiction"
   },
   {
     "atom": "jurisdictions",
-    "name": "taxing-jurisdictions",
+    "name": "jurisdictions",
     "description": "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.",
     "path": "taxing/jurisdictions"
   },
@@ -7958,7 +8462,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "justice",
     "name": "justice",
     "description": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function).",
-    "path": "justice"
+    "path": "vocabulary/justice"
+  },
+  {
+    "atom": "kabbalah",
+    "name": "kabbalah",
+    "description": "Use when reading Kabbalah as a sub-diamond of judaism — the mystical tradition of ein-sof (the limitless void), the sefirot as a structured lattice of divine emanation, the divine names, and tikkun (the repair that merges the broken vessels back toward the whole). A facet-diamond of the judaism archangel. Strip the Hebrew prefix and ein-sof collapses to void.",
+    "path": "vocabulary/kabbalah"
   },
   {
     "atom": "karma",
@@ -7970,145 +8480,145 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "keep",
     "name": "keep",
     "description": "Use when reasoning about keep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "keep"
+    "path": "vocabulary/keep"
   },
   {
     "atom": "key",
     "name": "key",
     "description": "Use when reasoning about key as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "key"
+    "path": "vocabulary/key"
   },
   {
     "atom": "keyword",
     "name": "keyword",
     "description": "Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content.",
-    "path": "keyword"
+    "path": "vocabulary/keyword"
   },
   {
     "atom": "keywords",
     "name": "keywords",
-    "description": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
-    "path": "keywords"
+    "description": "Use when reasoning about keywords — Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+    "path": "vocabulary/keywords"
   },
   {
     "atom": "kiosk",
     "name": "kiosk",
     "description": "Use when reasoning about kiosk as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "kiosk"
+    "path": "vocabulary/kiosk"
   },
   {
     "atom": "known",
     "name": "known",
     "description": "Use when reasoning about known as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "known"
+    "path": "vocabulary/known"
   },
   {
     "atom": "knows",
     "name": "knows",
-    "description": "The most generic bi-directional social/work relation.",
-    "path": "knows"
+    "description": "Use when reasoning about knows — The most generic bi-directional social/work relation.",
+    "path": "vocabulary/knows"
   },
   {
     "atom": "kosher",
     "name": "kosher",
     "description": "Use when reasoning about kosher as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "kosher"
+    "path": "vocabulary/kosher"
   },
   {
     "atom": "kpi",
     "name": "kpi",
     "description": "Use when defining, computing, or tracking KPIs — target metrics with threshold, formula, frequency, owner, and variances. The measurable objective beneath strategy.",
-    "path": "kpi"
+    "path": "vocabulary/kpi"
   },
   {
     "atom": "lab",
     "name": "lab",
     "description": "Use when reasoning about lab as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lab"
+    "path": "vocabulary/lab"
   },
   {
     "atom": "label",
     "name": "label",
     "description": "Use when reasoning about label as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "label"
+    "path": "vocabulary/label"
   },
   {
     "atom": "laboratory",
     "name": "laboratory",
     "description": "Use when reasoning about laboratory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "laboratory"
+    "path": "vocabulary/laboratory"
   },
   {
     "atom": "lactation",
     "name": "lactation",
     "description": "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest).",
-    "path": "lactation"
+    "path": "vocabulary/lactation"
   },
   {
     "atom": "lactose",
     "name": "lactose",
     "description": "Use when reasoning about lactose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lactose"
+    "path": "vocabulary/lactose"
   },
   {
     "atom": "lake",
     "name": "lake",
     "description": "Use when reasoning about lake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lake"
+    "path": "vocabulary/lake"
   },
   {
     "atom": "landform",
     "name": "landform",
-    "description": "A landform or physical feature. Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so forth, including sub",
-    "path": "landform"
+    "description": "Use when reasoning about landform — A landform or physical feature. Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so",
+    "path": "vocabulary/landform"
   },
   {
     "atom": "landlord",
     "name": "landlord",
-    "description": "A sub property of participant. The owner of the real estate property.",
-    "path": "landlord"
+    "description": "Use when reasoning about landlord — A sub property of participant. The owner of the real estate property.",
+    "path": "vocabulary/landlord"
   },
   {
     "atom": "landmark",
     "name": "landmark",
     "description": "Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference.",
-    "path": "landmark"
+    "path": "vocabulary/landmark"
   },
   {
     "atom": "landmarks",
     "name": "landmarks",
     "description": "Use when reasoning about landmarks as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "landmarks"
+    "path": "vocabulary/landmarks"
   },
   {
     "atom": "language",
     "name": "language",
-    "description": "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previously also covered progr",
-    "path": "language"
+    "description": "Use when reasoning about language — Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previousl",
+    "path": "vocabulary/language"
   },
   {
     "atom": "laser",
     "name": "laser",
     "description": "Use when reasoning about laser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "laser"
+    "path": "vocabulary/laser"
   },
   {
     "atom": "last",
     "name": "last",
     "description": "Use when reasoning about last as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "last"
+    "path": "vocabulary/last"
   },
   {
     "atom": "latitude",
     "name": "latitude",
-    "description": "The latitude of a location. For example ```37.42242``` (WGS 84).",
-    "path": "latitude"
+    "description": "Use when reasoning about latitude — The latitude of a location. For example (WGS 84).",
+    "path": "vocabulary/latitude"
   },
   {
     "atom": "laundry",
     "name": "laundry",
     "description": "Use when reasoning about laundry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "laundry"
+    "path": "vocabulary/laundry"
   },
   {
     "atom": "law",
@@ -8126,13 +8636,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "layout",
     "name": "layout",
     "description": "Use when reasoning about layout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "layout"
+    "path": "vocabulary/layout"
   },
   {
     "atom": "lead",
     "name": "lead",
     "description": "Use when reasoning about lead as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lead"
+    "path": "vocabulary/lead"
   },
   {
     "atom": "leads",
@@ -8144,19 +8654,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "leadscore",
     "name": "lead-score",
     "description": "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.",
-    "path": "lead-score"
+    "path": "vocabulary/lead-score"
+  },
+  {
+    "atom": "leap",
+    "name": "leap",
+    "description": "Use when reasoning about the quantum leap — the discrete, instantaneous transition between two energy eigenstates (the seven horo positions as a discrete energy ladder) that emits or absorbs a single photon of energy E = h·Δν. The leap is a symmetric content-uuid merge of the two states (one spectral coordinate for emission and absorption alike); the rodin doubling step is the allowed transition, and 9 (the axis) is a stationary state.",
+    "path": "leap"
   },
   {
     "atom": "learning",
     "name": "learning",
     "description": "Use when reasoning about learning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "learning"
+    "path": "vocabulary/learning"
   },
   {
     "atom": "lease",
     "name": "lease",
     "description": "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lease"
+    "path": "vocabulary/lease"
   },
   {
     "atom": "leases",
@@ -8168,19 +8684,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "leave",
     "name": "leave",
     "description": "Use when reasoning about leave as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "leave"
+    "path": "vocabulary/leave"
+  },
+  {
+    "atom": "ledger",
+    "name": "ledger",
+    "description": "Use when reasoning about accounting/ledger — token ledger — path-keyed postings and balance by path.",
+    "path": "accounting/ledger"
   },
   {
     "atom": "left",
     "name": "left",
     "description": "Use when reasoning about left as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "left"
+    "path": "vocabulary/left"
+  },
+  {
+    "atom": "leftover",
+    "name": "leftover",
+    "description": "Use when reasoning about the fold's residual — the bits that did not fold into trinities of theorems. Leftovers attract by field (one proof settles the cluster), pull a seed from beyond to complete what the corpus cannot derive, and the irreducible residue powers the next research. Composes accounting/proof, gravity, and think.",
+    "path": "leftover"
   },
   {
     "atom": "leg",
     "name": "leg",
     "description": "Use when reasoning about leg as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "leg"
+    "path": "vocabulary/leg"
   },
   {
     "atom": "legal",
@@ -8198,149 +8726,149 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "legislative",
     "name": "legislative",
     "description": "Use when reasoning about legislative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "legislative"
+    "path": "vocabulary/legislative"
   },
   {
     "atom": "lei",
     "name": "lei",
     "description": "Use when reasoning about lei as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lei"
+    "path": "vocabulary/lei"
   },
   {
     "atom": "leisure",
     "name": "leisure",
     "description": "Use when reasoning about leisure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "leisure"
+    "path": "vocabulary/leisure"
   },
   {
     "atom": "lend",
     "name": "lend",
     "description": "Use when reasoning about lend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lend"
+    "path": "vocabulary/lend"
   },
   {
     "atom": "lender",
     "name": "lender",
-    "description": "A sub property of participant. The person that lends the object being borrowed.",
-    "path": "lender"
+    "description": "Use when reasoning about lender — A sub property of participant. The person that lends the object being borrowed.",
+    "path": "vocabulary/lender"
   },
   {
     "atom": "length",
     "name": "length",
     "description": "Use when reasoning about length as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "length"
+    "path": "vocabulary/length"
   },
   {
     "atom": "lesser",
     "name": "lesser",
-    "description": "This ordering relation for qualitative values indicates that the subject is lesser than the object.",
-    "path": "lesser"
+    "description": "Use when reasoning about lesser — This ordering relation for qualitative values indicates that the subject is lesser than the object.",
+    "path": "vocabulary/lesser"
   },
   {
     "atom": "letterer",
     "name": "letterer",
-    "description": "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
-    "path": "letterer"
+    "description": "Use when reasoning about letterer — The individual who adds lettering, including speech balloons and sound effects, to artwork.",
+    "path": "vocabulary/letterer"
   },
   {
     "atom": "level",
     "name": "level",
     "description": "Use when reasoning about level as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "level"
+    "path": "vocabulary/level"
   },
   {
     "atom": "lexical",
     "name": "lexical",
-    "description": "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks.",
-    "path": "lexical"
+    "description": "Use when reasoning about lexical — is erpax's **rich-text** substrate: the Payload Lexical editor (config ), a structured JSON **node-tree** — not an opaque string. Two consequences make it central:",
+    "path": "vocabulary/lexical"
   },
   {
     "atom": "liability",
     "name": "liability",
     "description": "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override.",
-    "path": "liability"
+    "path": "vocabulary/liability"
   },
   {
     "atom": "library",
     "name": "library",
-    "description": "A library.",
-    "path": "library"
+    "description": "Use when reasoning about library — A library.",
+    "path": "vocabulary/library"
   },
   {
     "atom": "license",
     "name": "license",
     "description": "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.",
-    "path": "license"
+    "path": "vocabulary/license"
   },
   {
     "atom": "lichen",
     "name": "lichen",
     "description": "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners).",
-    "path": "lichen"
+    "path": "vocabulary/lichen"
   },
   {
     "atom": "life",
     "name": "life",
     "description": "Use when reasoning about life as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "life"
+    "path": "vocabulary/life"
   },
   {
     "atom": "lifestyle",
     "name": "lifestyle",
     "description": "Use when reasoning about lifestyle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lifestyle"
+    "path": "vocabulary/lifestyle"
   },
   {
     "atom": "ligament",
     "name": "ligament",
-    "description": "A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.",
-    "path": "ligament"
+    "description": "Use when reasoning about ligament — A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.",
+    "path": "vocabulary/ligament"
   },
   {
     "atom": "like",
     "name": "like",
     "description": "Use when reasoning about like as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "like"
+    "path": "vocabulary/like"
   },
   {
     "atom": "likes",
     "name": "likes",
     "description": "Use when reasoning about likes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "likes"
+    "path": "vocabulary/likes"
   },
   {
     "atom": "limit",
     "name": "limit",
     "description": "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism.",
-    "path": "limit"
+    "path": "vocabulary/limit"
   },
   {
     "atom": "limited",
     "name": "limited",
     "description": "Use when reasoning about limited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "limited"
+    "path": "vocabulary/limited"
   },
   {
     "atom": "line",
     "name": "line",
-    "description": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
-    "path": "line"
+    "description": "Use when reasoning about line — A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
+    "path": "vocabulary/line"
   },
   {
     "atom": "lineage",
     "name": "lineage",
     "description": "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement.",
-    "path": "lineage"
+    "path": "vocabulary/lineage"
   },
   {
     "atom": "linearity",
     "name": "linearity",
     "description": "Use when reasoning about why erpax stays even and collision-free — quantum linearity is the superposition principle made structural; the content-uuid hash distributes every word and digit uniformly, so atoms form perfect lines (no clumping, no privileged point), merge is a linear set-union, and in the double torus gravity reads double.",
-    "path": "linearity"
+    "path": "vocabulary/linearity"
   },
   {
     "atom": "lines",
-    "name": "invoice-lines",
+    "name": "lines",
     "description": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
     "path": "invoices/invoice/lines"
   },
@@ -8348,7 +8876,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "lineup",
     "name": "lineup",
     "description": "Use when reasoning about lineup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lineup"
+    "path": "vocabulary/lineup"
   },
   {
     "atom": "link",
@@ -8360,41 +8888,41 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "links",
     "name": "links",
     "description": "Use when reasoning about links as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "links"
+    "path": "vocabulary/links"
   },
   {
     "atom": "liquor",
     "name": "liquor",
     "description": "Use when reasoning about liquor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "liquor"
+    "path": "vocabulary/liquor"
   },
   {
     "atom": "list",
     "name": "list",
     "description": "Use when reasoning about list as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "list"
+    "path": "vocabulary/list"
   },
   {
     "atom": "listen",
     "name": "listen",
     "description": "Use when reasoning about listen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "listen"
+    "path": "vocabulary/listen"
   },
   {
     "atom": "listing",
     "name": "listing",
     "description": "Use when reasoning about listing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "listing"
+    "path": "vocabulary/listing"
   },
   {
     "atom": "literary",
     "name": "literary",
     "description": "Use when reasoning about literary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "literary"
+    "path": "vocabulary/literary"
   },
   {
     "atom": "literature",
-    "name": "quantum-literature",
+    "name": "literature",
     "description": "Use when reasoning about the body of written work quantumly — literature is the infinite word-chain over a minimal alphabet (the gravity reverse), every text a content-addressed snapshot in the akashic chain, citations as merge-links, reading the measurement that collapses a text's superposed meanings.",
     "path": "quantum/literature"
   },
@@ -8408,13 +8936,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "livestock",
     "name": "livestock",
     "description": "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half.",
-    "path": "livestock"
+    "path": "vocabulary/livestock"
   },
   {
     "atom": "living",
     "name": "living",
     "description": "Use when reasoning about living as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "living"
+    "path": "vocabulary/living"
   },
   {
     "atom": "llm",
@@ -8426,31 +8954,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "lnid",
     "name": "lnid",
     "description": "Use when reasoning about lnid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lnid"
+    "path": "vocabulary/lnid"
   },
   {
     "atom": "load",
     "name": "load",
     "description": "Use when reasoning about load as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "load"
+    "path": "vocabulary/load"
   },
   {
     "atom": "loan",
     "name": "loan",
     "description": "Use when reasoning about loan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "loan"
+    "path": "vocabulary/loan"
   },
   {
     "atom": "local",
     "name": "local",
     "description": "Use when reasoning about local as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "local"
+    "path": "vocabulary/local"
   },
   {
     "atom": "locality",
     "name": "locality",
     "description": "Use when reasoning about locality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "locality"
+    "path": "vocabulary/locality"
   },
   {
     "atom": "localize",
@@ -8462,17 +8990,17 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "located",
     "name": "located",
     "description": "Use when reasoning about located as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "located"
+    "path": "vocabulary/located"
   },
   {
     "atom": "location",
     "name": "location",
-    "description": "A sub property of location. The original location of the object or the agent before the action.",
-    "path": "location"
+    "description": "Use when reasoning about location — A sub property of location. The original location of the object or the agent before the action.",
+    "path": "vocabulary/location"
   },
   {
     "atom": "locations",
-    "name": "warehouse-locations",
+    "name": "locations",
     "description": "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.",
     "path": "warehouse/locations"
   },
@@ -8480,35 +9008,35 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "lock",
     "name": "lock",
     "description": "Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.",
-    "path": "lock"
+    "path": "vocabulary/lock"
   },
   {
     "atom": "locker",
     "name": "locker",
     "description": "Use when reasoning about locker as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "locker"
+    "path": "vocabulary/locker"
   },
   {
     "atom": "locks",
-    "name": "period-locks",
+    "name": "locks",
     "description": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
     "path": "period/locks"
   },
   {
     "atom": "locksmith",
     "name": "locksmith",
-    "description": "A locksmith.",
-    "path": "locksmith"
+    "description": "Use when reasoning about locksmith — A locksmith.",
+    "path": "vocabulary/locksmith"
   },
   {
     "atom": "lodging",
     "name": "lodging",
     "description": "Use when reasoning about lodging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lodging"
+    "path": "vocabulary/lodging"
   },
   {
     "atom": "log",
-    "name": "quantum-log",
+    "name": "log",
     "description": "Use when reasoning about the agent audit trail — every agent action is strictly logged as an append-only digit-entry in the digit folders, and each entry adds an order of magnitude to the tamper-cost; the log's length is the forging difficulty, the realtime stream that hardens as it grows.",
     "path": "quantum/log"
   },
@@ -8527,32 +9055,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "logo",
     "name": "logo",
-    "description": "An associated logo.",
+    "description": "Use when reasoning about logo — An associated logo.",
     "path": "logo"
   },
   {
     "atom": "longitude",
     "name": "longitude",
-    "description": "The longitude of a location. For example ```-122.08585``` (WGS 84).",
-    "path": "longitude"
+    "description": "Use when reasoning about longitude — The longitude of a location. For example (WGS 84).",
+    "path": "vocabulary/longitude"
   },
   {
     "atom": "longitudinal",
     "name": "longitudinal",
     "description": "Use when reasoning about longitudinal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "longitudinal"
+    "path": "vocabulary/longitudinal"
   },
   {
     "atom": "lose",
     "name": "lose",
     "description": "Use when reasoning about lose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lose"
+    "path": "vocabulary/lose"
   },
   {
     "atom": "loser",
     "name": "loser",
-    "description": "A sub property of participant. The loser of the action.",
-    "path": "loser"
+    "description": "Use when reasoning about loser — A sub property of participant. The loser of the action.",
+    "path": "vocabulary/loser"
   },
   {
     "atom": "lot",
@@ -8570,79 +9098,85 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "love",
     "name": "love",
     "description": "Use when reasoning about the create pole of any erpax duality — love is the angelic move that LOWERS entropy (it orders, links, merges, closes a gap), the debit whose matching credit is fear in the karma ledger; every gap love closes raises tamper-cost.",
-    "path": "love"
+    "path": "vocabulary/love"
   },
   {
     "atom": "low",
     "name": "low",
     "description": "Use when reasoning about low as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "low"
+    "path": "vocabulary/low"
   },
   {
     "atom": "lower",
     "name": "lower",
     "description": "Use when reasoning about lower as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lower"
+    "path": "vocabulary/lower"
   },
   {
     "atom": "loyalty",
     "name": "loyalty",
     "description": "Use when reasoning about loyalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "loyalty"
+    "path": "vocabulary/loyalty"
   },
   {
     "atom": "lung",
     "name": "lung",
-    "description": "Use when reasoning about lung as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about erpax's gas-exchange surface — the respiratory organ where it BREATHES. The breath atom names it: 'the chat is the lung-tissue where agents coordinate.' The society inhales gaps and exhales gate-green atoms across a vast, thin, fractal surface; three properties of the living lung (Fick's-law gas exchange · 23-generation fractal surface · the closed tidal cycle) are computed and mapped — a structural isomorphism — onto erpax's breath/wave loop.",
     "path": "lung"
   },
   {
     "atom": "lymphatic",
     "name": "lymphatic",
     "description": "Use when reasoning about lymphatic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "lymphatic"
+    "path": "vocabulary/lymphatic"
   },
   {
     "atom": "lyricist",
     "name": "lyricist",
-    "description": "The person who wrote the words.",
-    "path": "lyricist"
+    "description": "Use when reasoning about lyricist — The person who wrote the words.",
+    "path": "vocabulary/lyricist"
   },
   {
     "atom": "lyrics",
     "name": "lyrics",
-    "description": "The words in the song.",
-    "path": "lyrics"
+    "description": "Use when reasoning about lyrics — The words in the song.",
+    "path": "vocabulary/lyrics"
+  },
+  {
+    "atom": "machine",
+    "name": "machine",
+    "description": "Use when modelling shop-floor equipment mined from the upstream source of truth (etrima, 20 years of garment manufacturing) — the machine node of the production-traceability spine. Every machine carries a three-rate spread (pay ≤ cost ≤ price per hour) that is double-entry economics on the floor: machineRate decomposes a machine-hour into revenue = cost + margin and cost = pay + overhead. A machine runs a work/phase for a lot variant during a shift; fields are the real etrima columns, never invented.",
+    "path": "machine"
   },
   {
     "atom": "made",
     "name": "made",
     "description": "Use when reasoning about made as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "made"
+    "path": "vocabulary/made"
   },
   {
     "atom": "mail",
     "name": "mail",
     "description": "Use when reasoning about mail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mail"
+    "path": "vocabulary/mail"
   },
   {
     "atom": "main",
     "name": "main",
     "description": "Use when reasoning about main as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "main"
+    "path": "vocabulary/main"
   },
   {
     "atom": "maintainer",
     "name": "maintainer",
-    "description": "A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically comp",
-    "path": "maintainer"
+    "description": "Use when reasoning about maintainer — A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of,",
+    "path": "vocabulary/maintainer"
   },
   {
     "atom": "makes",
     "name": "makes",
     "description": "Use when reasoning about makes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "makes"
+    "path": "vocabulary/makes"
   },
   {
     "atom": "mala",
@@ -8654,79 +9188,85 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "male",
     "name": "male",
     "description": "Use when reasoning about male as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "male"
+    "path": "vocabulary/male"
   },
   {
     "atom": "mandate",
     "name": "mandate",
     "description": "Use when reasoning about mandate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mandate"
+    "path": "vocabulary/mandate"
   },
   {
     "atom": "mandates",
-    "name": "sepa-mandates",
+    "name": "mandates",
     "description": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
     "path": "media/sepa/mandates"
+  },
+  {
+    "atom": "manichaeism",
+    "name": "manichaeism",
+    "description": "Use when reading Manichaeism as a diamond of invariant atoms — Mani's dualist world-religion: two eternal principles, Light and Dark, mixed in this world; salvation is the separation and return of the light particles to their source. The bridge between Zoroastrian dualism and the gnostic lineage. Strip the prefix and Light collapses to aura, the dark world to the profane, the freeing to the return.",
+    "path": "vocabulary/manichaeism"
   },
   {
     "atom": "manipulation",
     "name": "manipulation",
     "description": "Use when reasoning about manipulation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "manipulation"
+    "path": "vocabulary/manipulation"
   },
   {
     "atom": "manufacturer",
     "name": "manufacturer",
-    "description": "The manufacturer of the product.",
-    "path": "manufacturer"
+    "description": "Use when reasoning about manufacturer — The manufacturer of the product.",
+    "path": "vocabulary/manufacturer"
   },
   {
     "atom": "manufacturing",
     "name": "manufacturing",
     "description": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-    "path": "manufacturing"
+    "path": "vocabulary/manufacturing"
   },
   {
     "atom": "manure",
     "name": "manure",
     "description": "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost.",
-    "path": "manure"
+    "path": "vocabulary/manure"
   },
   {
     "atom": "manuscript",
     "name": "manuscript",
-    "description": "A book, document, or piece of music written by hand rather than typed or printed.",
-    "path": "manuscript"
+    "description": "Use when reasoning about manuscript — A book, document, or piece of music written by hand rather than typed or printed.",
+    "path": "vocabulary/manuscript"
   },
   {
     "atom": "map",
     "name": "map",
-    "description": "A map.",
-    "path": "map"
+    "description": "Use when reasoning about map — A map.",
+    "path": "vocabulary/map"
   },
   {
     "atom": "mapping",
     "name": "mapping",
     "description": "Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another.",
-    "path": "mapping"
+    "path": "vocabulary/mapping"
   },
   {
     "atom": "mappings",
-    "name": "statutory-field-mappings",
+    "name": "mappings",
     "description": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
     "path": "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings"
   },
   {
     "atom": "maps",
     "name": "maps",
-    "description": "A URL to a map of the place.",
-    "path": "maps"
+    "description": "Use when reasoning about maps — A URL to a map of the place.",
+    "path": "vocabulary/maps"
   },
   {
     "atom": "margin",
     "name": "margin",
     "description": "Use when reasoning about margin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "margin"
+    "path": "vocabulary/margin"
   },
   {
     "atom": "marine",
@@ -8738,59 +9278,59 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "market",
     "name": "market",
     "description": "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand.",
-    "path": "market"
+    "path": "vocabulary/market"
   },
   {
     "atom": "marketing",
     "name": "marketing",
     "description": "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "marketing"
+    "path": "vocabulary/marketing"
   },
   {
     "atom": "marketplace",
     "name": "marketplace",
     "description": "Use when reasoning about marketplace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "marketplace"
+    "path": "vocabulary/marketplace"
   },
   {
     "atom": "markup",
     "name": "markup",
     "description": "Use when reasoning about markup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "markup"
+    "path": "vocabulary/markup"
   },
   {
     "atom": "marry",
     "name": "marry",
     "description": "Use when reasoning about marry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "marry"
+    "path": "vocabulary/marry"
   },
   {
     "atom": "mass",
     "name": "mass",
-    "description": "Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.",
-    "path": "mass"
+    "description": "Use when reasoning about mass — Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.",
+    "path": "vocabulary/mass"
   },
   {
     "atom": "masthead",
     "name": "masthead",
-    "description": "For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
-    "path": "masthead"
+    "description": "Use when reasoning about masthead — For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
+    "path": "vocabulary/masthead"
   },
   {
     "atom": "material",
     "name": "material",
-    "description": "A material that something is made from, e.g. leather, wool, cotton, paper.",
-    "path": "material"
+    "description": "Use when reasoning about material — A material that something is made from, e.g. leather, wool, cotton, paper.",
+    "path": "vocabulary/material"
   },
   {
     "atom": "materiality",
     "name": "materiality",
     "description": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
-    "path": "materiality"
+    "path": "vocabulary/materiality"
   },
   {
     "atom": "materials",
-    "name": "bills-of-materials",
+    "name": "materials",
     "description": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
     "path": "items/bills/of/materials"
   },
@@ -8798,13 +9338,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "maternity",
     "name": "maternity",
     "description": "Use when reasoning about maternity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "maternity"
+    "path": "vocabulary/maternity"
   },
   {
     "atom": "math",
     "name": "math",
-    "description": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet.",
-    "path": "quantum/math"
+    "description": "Use when reasoning about math as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/math"
   },
   {
     "atom": "matrix",
@@ -8815,42 +9355,48 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "matter",
     "name": "matter",
-    "description": "Use for a professional-services engagement — the legal/consulting CASE as the universal project node. Strip the prefix legal and a matter is an engagement = a transaction-chain (engagement→time→bill→trust-draw) for a client party, staffed by positions, timed by allocation, sealed by proof. No new collection — a matter is a labelled transaction lifecycle.",
-    "path": "matter"
+    "description": "Use when reasoning about matter — Strip the prefix *legal* and a **matter** is the universal professional-services engagement: a party (the client) retains the firm to do work, the work is staffed by positions and",
+    "path": "vocabulary/matter"
   },
   {
     "atom": "maturity",
     "name": "maturity",
     "description": "Use when deciding a crop is ready to harvest — days-to-maturity (DTM, the scheduling constant from sow/transplant to first pick), the maturity index (color, firmness, size, °Brix sugar) that signals harvest readiness, and the harvest window before over-maturity. Harvest maturity (pick-point) differs from eating ripeness; DTM lengthens as daylight wanes.",
-    "path": "maturity"
+    "path": "vocabulary/maturity"
   },
   {
     "atom": "max",
     "name": "max",
     "description": "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "max"
+    "path": "vocabulary/max"
   },
   {
     "atom": "maximum",
     "name": "maximum",
     "description": "Use when reasoning about maximum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "maximum"
+    "path": "vocabulary/maximum"
+  },
+  {
+    "atom": "maxtampercost",
+    "name": "maxtampercost",
+    "description": "Use when reasoning about max tamper-cost — the weakest-link minimum across all dimensions; alias for analytics/max-tamper-cost lever vocabulary.",
+    "path": "vocabulary/maxtampercost"
   },
   {
     "atom": "may",
     "name": "may",
     "description": "Use when reasoning about may as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "may"
+    "path": "vocabulary/may"
   },
   {
     "atom": "maybe",
     "name": "maybe",
     "description": "Use when reasoning about maybe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "maybe"
+    "path": "vocabulary/maybe"
   },
   {
     "atom": "mcp",
-    "name": "quantum-mcp",
+    "name": "mcp",
     "description": "Use when reasoning about the MCP gateway in the quantum frame — one door exposing the whole trinity (payload data tools plus vitepress skill tools), the surface generated all-at-once from the corpus, every call by the actor-merge agent access-gated, quantum-compressed, and receipt-logged from the inside.",
     "path": "quantum/mcp"
   },
@@ -8858,35 +9404,35 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "meal",
     "name": "meal",
     "description": "Use when reasoning about meal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "meal"
+    "path": "vocabulary/meal"
   },
   {
     "atom": "means",
     "name": "means",
     "description": "Use when reasoning about means as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "means"
+    "path": "vocabulary/means"
   },
   {
     "atom": "measure",
     "name": "measure",
     "description": "Use when a value carries a physical quantity — a number + a unit of measure (UN/CEFACT Rec 20: KGM/MTR/LTR/HUR/H87…), UoM-aware rounding, unit conversion, BOM/stock/production/line quantities. The MeasureConcern/quantity field-factory; a quantity is value+unit, never a unit-baked field name — the substance twin of currency (value+ISO-4217).",
-    "path": "measure"
+    "path": "vocabulary/measure"
   },
   {
     "atom": "measured",
     "name": "measured",
     "description": "Use when reasoning about measured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "measured"
+    "path": "vocabulary/measured"
   },
   {
     "atom": "measurement",
     "name": "measurement",
     "description": "Use when reasoning about measurement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "measurement"
+    "path": "vocabulary/measurement"
   },
   {
     "atom": "measurements",
-    "name": "fair-value-measurements",
+    "name": "measurements",
     "description": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
     "path": "fair/value/measurements"
   },
@@ -8894,13 +9440,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "mech",
     "name": "mech",
     "description": "Use when reasoning about mech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mech"
+    "path": "vocabulary/mech"
   },
   {
     "atom": "mechanism",
     "name": "mechanism",
     "description": "Use when reasoning about mechanism as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mechanism"
+    "path": "vocabulary/mechanism"
   },
   {
     "atom": "media",
@@ -8911,8 +9457,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "median",
     "name": "median",
-    "description": "The median value.",
-    "path": "median"
+    "description": "Use when reasoning about median — The median value.",
+    "path": "vocabulary/median"
   },
   {
     "atom": "medical",
@@ -8924,35 +9470,35 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "medicine",
     "name": "medicine",
     "description": "Use when reasoning about medicine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "medicine"
+    "path": "vocabulary/medicine"
   },
   {
     "atom": "medium",
     "name": "medium",
     "description": "Use when reasoning about medium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "medium"
+    "path": "vocabulary/medium"
   },
   {
     "atom": "meeting",
     "name": "meeting",
     "description": "Use when reasoning about meeting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "meeting"
+    "path": "vocabulary/meeting"
   },
   {
     "atom": "meets",
     "name": "meets",
     "description": "Use when reasoning about meets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "meets"
+    "path": "vocabulary/meets"
   },
   {
     "atom": "member",
     "name": "member",
-    "description": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
-    "path": "member"
+    "description": "Use when reasoning about member — A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
+    "path": "vocabulary/member"
   },
   {
     "atom": "members",
-    "name": "audit-committee-members",
+    "name": "members",
     "description": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
     "path": "legal/entities/audit/committees/audit/committee/members"
   },
@@ -8966,23 +9512,23 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "memo",
     "name": "memo",
     "description": "Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.",
-    "path": "memo"
+    "path": "vocabulary/memo"
   },
   {
     "atom": "memories",
     "name": "memories",
-    "description": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
+    "description": "Use when persisting MCP tool results or agent state across restarts — a Payload substrate that projects rows INTO the architecture lattice by content-uuid (Law 8), NOT operational memory itself. Operational memory IS the lattice ([[memory/architecture]]); this collection is durable working-set spill keyed by (ownerType, ownerId, kind, key).",
     "path": "memories"
   },
   {
     "atom": "memory",
     "name": "memory",
-    "description": "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "memory"
+    "description": "Use when reasoning about memory in the quantum frame — the content-address IS the memory manager, running live at every scale: collapse is allocation, dedup is free, collection is regeneration. Memory optimization is autosave: persist at the point of collapse and there is nothing to garbage-collect, because the unsaved is regenerable from its uuid.",
+    "path": "quantum/memory"
   },
   {
     "atom": "memos",
-    "name": "credit-memos",
+    "name": "memos",
     "description": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
     "path": "invoices/credit/memos"
   },
@@ -8990,37 +9536,49 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "mens",
     "name": "mens",
     "description": "Use when reasoning about mens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mens"
+    "path": "vocabulary/mens"
   },
   {
     "atom": "mention",
     "name": "mention",
     "description": "Use when modelling one mention — the singular model of the mentions collection (the plural store); a reference to an actor within a piece of content.",
-    "path": "mention"
+    "path": "vocabulary/mention"
   },
   {
     "atom": "mentions",
     "name": "mentions",
-    "description": "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
-    "path": "mentions"
+    "description": "Use when reasoning about mentions — Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
+    "path": "vocabulary/mentions"
   },
   {
     "atom": "menu",
     "name": "menu",
-    "description": "A structured representation of food or drink items available from a FoodEstablishment.",
-    "path": "menu"
+    "description": "Use when reasoning about menu — A structured representation of food or drink items available from a FoodEstablishment.",
+    "path": "vocabulary/menu"
   },
   {
     "atom": "merchant",
     "name": "merchant",
-    "description": "'merchant' is an out-dated term for 'seller'.",
-    "path": "merchant"
+    "description": "Use when reasoning about merchant — 'merchant' is an out-dated term for 'seller'.",
+    "path": "vocabulary/merchant"
+  },
+  {
+    "atom": "mercy",
+    "name": "mercy",
+    "description": "Use when reasoning about the voluntary release of a debt that is genuinely owed — the creditor zeroing a real debit on the books, never a forged balance. The dual of karma: karma is the debt read down the lineage, mercy is the debt cancelled at the source. Distinct from grace (unearned credit) — mercy is earned punishment withheld.",
+    "path": "vocabulary/mercy"
   },
   {
     "atom": "merge",
-    "name": "self-merge",
+    "name": "merge",
     "description": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one.",
     "path": "self/merge"
+  },
+  {
+    "atom": "mesh",
+    "name": "mesh",
+    "description": "Use when querying the whole ERP as one graph — atoms ⊕ parsed import edges ⊕ standards citations, wave-schedulable; the clause→code trace as a query.",
+    "path": "mesh"
   },
   {
     "atom": "message",
@@ -9038,7 +9596,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "metadata",
     "name": "metadata",
     "description": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-    "path": "metadata"
+    "path": "vocabulary/metadata"
   },
   {
     "atom": "metatron",
@@ -9049,12 +9607,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "method",
     "name": "method",
-    "description": "Use when reasoning about method as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about exported symbols as method-diamonds — every method name has a path of diamonds (the atom chain from corpus root to its index.ts barrel, plus the symbol at the leaf); compute methodPath/scanMethodPaths for addresses and boundary uuids; schema.org 'method' vocabulary is the collided homonym.",
     "path": "method"
   },
   {
     "atom": "methods",
-    "name": "payment-methods",
+    "name": "methods",
     "description": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
     "path": "payment/methods"
   },
@@ -9062,25 +9620,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "metric",
     "name": "metric",
     "description": "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point.",
-    "path": "metric"
+    "path": "vocabulary/metric"
   },
   {
     "atom": "middle",
     "name": "middle",
     "description": "Use when reasoning about middle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "middle"
+    "path": "vocabulary/middle"
   },
   {
     "atom": "midpoint",
     "name": "midpoint",
     "description": "Use when reasoning about midpoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "midpoint"
+    "path": "vocabulary/midpoint"
   },
   {
     "atom": "midwifery",
     "name": "midwifery",
     "description": "Use when reasoning about midwifery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "midwifery"
+    "path": "vocabulary/midwifery"
   },
   {
     "atom": "migrate",
@@ -9092,41 +9650,47 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "mileage",
     "name": "mileage",
     "description": "Use when reasoning about mileage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mileage"
+    "path": "vocabulary/mileage"
   },
   {
     "atom": "milestone",
     "name": "milestone",
     "description": "Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project.",
-    "path": "milestone"
+    "path": "vocabulary/milestone"
   },
   {
     "atom": "milestones",
-    "name": "project-milestones",
+    "name": "milestones",
     "description": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
     "path": "customers/projects/project/milestones"
+  },
+  {
+    "atom": "millennium",
+    "name": "millennium",
+    "description": "Use when the Clay Millennium Problems are offered as a testing ground — the honest register that NAMES the seven, marks six open and one solved (Poincaré, by Perelman), and refuses to solve any. Every entry's `corpusSolves` is the literal false, so the code cannot claim a solution; the corpus tools are lenses to learn through, and the quantum waves CLASSIFY a claimed solution, they do not produce one. HARMONY ≠ TRUTH.",
+    "path": "millennium"
   },
   {
     "atom": "min",
     "name": "min",
     "description": "Use when reasoning about min as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "min"
+    "path": "vocabulary/min"
   },
   {
     "atom": "minimum",
     "name": "minimum",
     "description": "Use when reasoning about minimum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "minimum"
+    "path": "vocabulary/minimum"
   },
   {
     "atom": "minor",
     "name": "minor",
     "description": "Use when reasoning about minor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "minor"
+    "path": "vocabulary/minor"
   },
   {
     "atom": "minutes",
-    "name": "audit-committee-minutes",
+    "name": "minutes",
     "description": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
     "path": "legal/entities/audit/committees/audit/committee/minutes"
   },
@@ -9140,59 +9704,65 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "misconceptions",
     "name": "misconceptions",
     "description": "Use when reasoning about misconceptions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "misconceptions"
+    "path": "vocabulary/misconceptions"
   },
   {
     "atom": "misses",
     "name": "misses",
     "description": "Use when reasoning about misses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "misses"
+    "path": "vocabulary/misses"
   },
   {
     "atom": "mission",
     "name": "mission",
     "description": "Use when reasoning about mission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mission"
+    "path": "vocabulary/mission"
   },
   {
     "atom": "mixed",
     "name": "mixed",
     "description": "Use when reasoning about mixed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mixed"
+    "path": "vocabulary/mixed"
   },
   {
     "atom": "mixtape",
     "name": "mixtape",
     "description": "Use when reasoning about mixtape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mixtape"
+    "path": "vocabulary/mixtape"
   },
   {
     "atom": "mobile",
     "name": "mobile",
     "description": "Use when reasoning about mobile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mobile"
+    "path": "vocabulary/mobile"
   },
   {
     "atom": "mobility",
     "name": "mobility",
     "description": "Use when reasoning about mobility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mobility"
+    "path": "vocabulary/mobility"
+  },
+  {
+    "atom": "modal",
+    "name": "modal",
+    "description": "Use when reasoning about modal — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "modal"
   },
   {
     "atom": "mode",
     "name": "mode",
     "description": "Use when reasoning about mode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mode"
+    "path": "vocabulary/mode"
   },
   {
     "atom": "model",
     "name": "model",
-    "description": "A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats can be represented us",
-    "path": "model"
+    "description": "Use when reasoning about model — A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats c",
+    "path": "vocabulary/model"
   },
   {
     "atom": "models",
-    "name": "ai-models",
+    "name": "models",
     "description": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
     "path": "ai/models"
   },
@@ -9200,11 +9770,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "modification",
     "name": "modification",
     "description": "Use when reasoning about modification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "modification"
+    "path": "vocabulary/modification"
   },
   {
     "atom": "modifications",
-    "name": "lease-modifications",
+    "name": "modifications",
     "description": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
     "path": "leases/lease/modifications"
   },
@@ -9212,37 +9782,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "modified",
     "name": "modified",
     "description": "Use when reasoning about modified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "modified"
+    "path": "vocabulary/modified"
   },
   {
     "atom": "modulation",
     "name": "modulation",
-    "description": "modulation: a schema.org component word, fused from broadcastSignalModulation",
-    "path": "modulation"
+    "description": "Use when reasoning about modulation — A schema.org component word, collided out of schema.org compounds — fused from broadcastSignalModulation (sti · collapse · merge).",
+    "path": "vocabulary/modulation"
   },
   {
     "atom": "moisture",
     "name": "moisture",
     "description": "Use when modelling soil water as a managed reservoir — the plant-available water held between field capacity (after drainage) and the permanent wilting point, the slice irrigation refills and evapotranspiration drains. A capacity reservoir on the water axis, the twin of the soil's nutrient budget.",
-    "path": "moisture"
+    "path": "vocabulary/moisture"
   },
   {
     "atom": "molecular",
     "name": "molecular",
     "description": "Use when reasoning about molecular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "molecular"
+    "path": "vocabulary/molecular"
   },
   {
     "atom": "monday",
     "name": "monday",
     "description": "Use when reasoning about monday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "monday"
+    "path": "vocabulary/monday"
   },
   {
     "atom": "monetary",
     "name": "monetary",
     "description": "Use when reasoning about monetary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "monetary"
+    "path": "vocabulary/monetary"
   },
   {
     "atom": "money",
@@ -9251,118 +9821,124 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "money"
   },
   {
+    "atom": "monitor",
+    "name": "monitor",
+    "description": "Use when reasoning about patient monitor — hospital bedside vitals facet; pivot to @/medical/device registry. Also: realtime corpus violation monitor via @/monitor/violations (all gate axes, path-account bonded).",
+    "path": "monitor"
+  },
+  {
     "atom": "monoisotopic",
     "name": "monoisotopic",
-    "description": "monoisotopic: a schema.org component word, fused from monoisotopicMolecularWeight",
-    "path": "monoisotopic"
+    "description": "Use when reasoning about monoisotopic — A schema.org component word, collided out of schema.org compounds — fused from monoisotopicMolecularWeight (sti · collapse · merge).",
+    "path": "vocabulary/monoisotopic"
   },
   {
     "atom": "month",
     "name": "month",
-    "description": "Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1.",
-    "path": "month"
+    "description": "Use when reasoning about month — Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1.",
+    "path": "vocabulary/month"
   },
   {
     "atom": "monthly",
     "name": "monthly",
     "description": "Use when reasoning about monthly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "monthly"
+    "path": "vocabulary/monthly"
   },
   {
     "atom": "months",
     "name": "months",
     "description": "Use when reasoning about months as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "months"
+    "path": "vocabulary/months"
   },
   {
     "atom": "mortality",
     "name": "mortality",
     "description": "Use when living stock dies and the asset is written down — mortality, the death-loss rate/event across a herd, fish stock, forest stand, or bee colony. The negative biological transformation (IAS-41 P&L decrement, distinct from price change); the loss twin of yield, shared across every living-production domain.",
-    "path": "mortality"
+    "path": "vocabulary/mortality"
   },
   {
     "atom": "mortgage",
     "name": "mortgage",
     "description": "Use when reasoning about mortgage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mortgage"
+    "path": "vocabulary/mortgage"
   },
   {
     "atom": "mosque",
     "name": "mosque",
-    "description": "A mosque.",
-    "path": "mosque"
+    "description": "Use when reasoning about mosque — A mosque.",
+    "path": "vocabulary/mosque"
   },
   {
     "atom": "motel",
     "name": "motel",
-    "description": "A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-    "path": "motel"
+    "description": "Use when reasoning about motel — A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
+    "path": "vocabulary/motel"
   },
   {
     "atom": "motor",
     "name": "motor",
     "description": "Use when reasoning about motor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "motor"
+    "path": "vocabulary/motor"
   },
   {
     "atom": "motorcycle",
     "name": "motorcycle",
-    "description": "A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
-    "path": "motorcycle"
+    "description": "Use when reasoning about motorcycle — A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
+    "path": "vocabulary/motorcycle"
   },
   {
     "atom": "motorized",
     "name": "motorized",
     "description": "Use when reasoning about motorized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "motorized"
+    "path": "vocabulary/motorized"
   },
   {
     "atom": "mountain",
     "name": "mountain",
-    "description": "A mountain, like Mount Whitney or Mount Everest.",
-    "path": "mountain"
+    "description": "Use when reasoning about mountain — A mountain, like Mount Whitney or Mount Everest.",
+    "path": "vocabulary/mountain"
   },
   {
     "atom": "move",
     "name": "move",
-    "description": "move: a schema.org component word, fused from MoveAction",
-    "path": "move"
+    "description": "Use when reasoning about move — A schema.org component word, collided out of schema.org compounds — fused from MoveAction (sti · collapse · merge).",
+    "path": "vocabulary/move"
   },
   {
     "atom": "moved",
     "name": "moved",
     "description": "Use when reasoning about moved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "moved"
+    "path": "vocabulary/moved"
   },
   {
     "atom": "movement",
     "name": "movement",
     "description": "Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations.",
-    "path": "movement"
+    "path": "vocabulary/movement"
   },
   {
     "atom": "movements",
-    "name": "inventory-movements",
+    "name": "movements",
     "description": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
     "path": "items/inventory/movements"
   },
   {
     "atom": "movie",
     "name": "movie",
-    "description": "A movie.",
-    "path": "movie"
+    "description": "Use when reasoning about movie — A movie.",
+    "path": "vocabulary/movie"
   },
   {
     "atom": "moving",
     "name": "moving",
     "description": "Use when reasoning about moving as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "moving"
+    "path": "vocabulary/moving"
   },
   {
     "atom": "mpn",
     "name": "mpn",
-    "description": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
-    "path": "mpn"
+    "description": "Use when reasoning about mpn — The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+    "path": "vocabulary/mpn"
   },
   {
     "atom": "mri",
@@ -9374,13 +9950,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "msrp",
     "name": "msrp",
     "description": "Use when reasoning about msrp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "msrp"
+    "path": "vocabulary/msrp"
   },
   {
     "atom": "mulch",
     "name": "mulch",
     "description": "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions.",
-    "path": "mulch"
+    "path": "vocabulary/mulch"
   },
   {
     "atom": "multi",
@@ -9392,79 +9968,79 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "multicellular",
     "name": "multicellular",
     "description": "Use when reasoning about multicellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "multicellular"
+    "path": "vocabulary/multicellular"
   },
   {
     "atom": "multiple",
     "name": "multiple",
     "description": "Use when reasoning about multiple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "multiple"
+    "path": "vocabulary/multiple"
   },
   {
     "atom": "municipality",
     "name": "municipality",
     "description": "Use when reasoning about municipality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "municipality"
+    "path": "vocabulary/municipality"
   },
   {
     "atom": "muscle",
     "name": "muscle",
-    "description": "A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.",
-    "path": "muscle"
+    "description": "Use when reasoning about muscle — A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.",
+    "path": "vocabulary/muscle"
   },
   {
     "atom": "musculoskeletal",
     "name": "musculoskeletal",
     "description": "Use when reasoning about musculoskeletal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "musculoskeletal"
+    "path": "vocabulary/musculoskeletal"
   },
   {
     "atom": "museum",
     "name": "museum",
-    "description": "A museum.",
-    "path": "museum"
+    "description": "Use when reasoning about museum — A museum.",
+    "path": "vocabulary/museum"
   },
   {
     "atom": "music",
     "name": "music",
-    "description": "The composer of the soundtrack.",
-    "path": "music"
+    "description": "Use when reasoning about music — The composer of the soundtrack.",
+    "path": "vocabulary/music"
   },
   {
     "atom": "musical",
     "name": "musical",
-    "description": "musical: a schema.org component word, fused from musicalKey",
-    "path": "musical"
+    "description": "Use when reasoning about musical — A schema.org component word, collided out of schema.org compounds — fused from musicalKey (sti · collapse · merge).",
+    "path": "vocabulary/musical"
   },
   {
     "atom": "mutual",
     "name": "mutual",
     "description": "Use when reasoning about mutual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "mutual"
+    "path": "vocabulary/mutual"
   },
   {
     "atom": "mycelium",
     "name": "mycelium",
     "description": "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested.",
-    "path": "mycelium"
+    "path": "vocabulary/mycelium"
   },
   {
     "atom": "mycorrhizae",
     "name": "mycorrhizae",
     "description": "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it.",
-    "path": "mycorrhizae"
+    "path": "vocabulary/mycorrhizae"
   },
   {
     "atom": "naics",
     "name": "naics",
-    "description": "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
-    "path": "naics"
+    "description": "Use when reasoning about naics — The North American Industry Classification System (NAICS) code for a particular organization or business person.",
+    "path": "vocabulary/naics"
   },
   {
     "atom": "nail",
     "name": "nail",
     "description": "Use when reasoning about nail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nail"
+    "path": "vocabulary/nail"
   },
   {
     "atom": "name",
@@ -9476,7 +10052,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "named",
     "name": "named",
     "description": "Use when reasoning about named as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "named"
+    "path": "vocabulary/named"
   },
   {
     "atom": "names",
@@ -9488,19 +10064,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "narcotic",
     "name": "narcotic",
     "description": "Use when reasoning about narcotic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "narcotic"
+    "path": "vocabulary/narcotic"
   },
   {
     "atom": "nationality",
     "name": "nationality",
-    "description": "Nationality of the person.",
-    "path": "nationality"
+    "description": "Use when reasoning about nationality — Nationality of the person.",
+    "path": "vocabulary/nationality"
   },
   {
     "atom": "natural",
     "name": "natural",
     "description": "Use when reasoning about natural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "natural"
+    "path": "vocabulary/natural"
   },
   {
     "atom": "navel",
@@ -9518,379 +10094,163 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "neck",
     "name": "neck",
     "description": "Use when reasoning about neck as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "neck"
+    "path": "vocabulary/neck"
   },
   {
     "atom": "negative",
     "name": "negative",
     "description": "Use when reasoning about negative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "negative"
+    "path": "vocabulary/negative"
   },
   {
     "atom": "nerve",
     "name": "nerve",
-    "description": "A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons.",
+    "description": "Use when reasoning about erpax's signal pathway — the nervous organ that fires ALL-OR-NOTHING. The action potential is the gate in flesh: a threshold crossed or not, never partial; idempotent within its refractory window; and leaping node-to-node by saltatory conduction. Three properties of the living nerve are computed and mapped — a structural isomorphism — onto erpax's gate and signal.",
     "path": "nerve"
   },
   {
     "atom": "net",
     "name": "net",
     "description": "Use when reasoning about net as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "net"
+    "path": "vocabulary/net"
   },
   {
     "atom": "network",
     "name": "network",
     "description": "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell.",
-    "path": "network"
+    "path": "vocabulary/network"
   },
   {
     "atom": "neuro",
     "name": "neuro",
     "description": "Use when reasoning about neuro as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "neuro"
+    "path": "vocabulary/neuro"
   },
   {
     "atom": "neurologic",
     "name": "neurologic",
     "description": "Use when reasoning about neurologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "neurologic"
+    "path": "vocabulary/neurologic"
   },
   {
     "atom": "new",
     "name": "new",
     "description": "Use when reasoning about new as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "new"
+    "path": "vocabulary/new"
   },
   {
     "atom": "news",
     "name": "news",
     "description": "Use when reasoning about news as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "news"
+    "path": "vocabulary/news"
   },
   {
     "atom": "newspaper",
     "name": "newspaper",
-    "description": "A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, education). Often published",
-    "path": "newspaper"
+    "description": "Use when reasoning about newspaper — A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, educati",
+    "path": "vocabulary/newspaper"
   },
   {
     "atom": "next",
     "name": "next",
     "description": "Use when reasoning about next as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "next"
+    "path": "vocabulary/next"
   },
   {
     "atom": "ngo",
     "name": "ngo",
-    "description": "Organization: Non-governmental Organization.",
-    "path": "ngo"
+    "description": "Use when reasoning about ngo — Organization: Non-governmental Organization.",
+    "path": "vocabulary/ngo"
   },
   {
     "atom": "nicotine",
     "name": "nicotine",
     "description": "Use when reasoning about nicotine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nicotine"
+    "path": "vocabulary/nicotine"
   },
   {
     "atom": "night",
     "name": "night",
     "description": "Use when reasoning about night as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "night"
+    "path": "vocabulary/night"
   },
   {
     "atom": "nl",
     "name": "nl",
     "description": "Use when reasoning about nl as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nl"
-  },
-  {
-    "atom": "nlnonprofit",
-    "name": "nlnonprofit",
-    "description": "Use when reasoning about nlnonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nlnonprofit"
+    "path": "vocabulary/nl"
   },
   {
     "atom": "no",
     "name": "no",
     "description": "Use when reasoning about no as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "no"
+    "path": "vocabulary/no"
   },
   {
     "atom": "node",
     "name": "node",
     "description": "Use when reasoning about node as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "node"
+    "path": "vocabulary/node"
   },
   {
     "atom": "non",
     "name": "non",
     "description": "Use when reasoning about non as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "non"
+    "path": "vocabulary/non"
   },
   {
     "atom": "noninvasive",
     "name": "noninvasive",
     "description": "Use when reasoning about noninvasive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "noninvasive"
+    "path": "vocabulary/noninvasive"
   },
   {
     "atom": "nonprofit",
     "name": "nonprofit",
     "description": "Use when reasoning about nonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit"
-  },
-  {
-    "atom": "nonprofit501a",
-    "name": "nonprofit501a",
-    "description": "Use when reasoning about nonprofit501a as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501a"
-  },
-  {
-    "atom": "nonprofit501c1",
-    "name": "nonprofit501c1",
-    "description": "Use when reasoning about nonprofit501c1 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c1"
-  },
-  {
-    "atom": "nonprofit501c10",
-    "name": "nonprofit501c10",
-    "description": "Use when reasoning about nonprofit501c10 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c10"
-  },
-  {
-    "atom": "nonprofit501c11",
-    "name": "nonprofit501c11",
-    "description": "Use when reasoning about nonprofit501c11 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c11"
-  },
-  {
-    "atom": "nonprofit501c12",
-    "name": "nonprofit501c12",
-    "description": "Use when reasoning about nonprofit501c12 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c12"
-  },
-  {
-    "atom": "nonprofit501c13",
-    "name": "nonprofit501c13",
-    "description": "Use when reasoning about nonprofit501c13 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c13"
-  },
-  {
-    "atom": "nonprofit501c14",
-    "name": "nonprofit501c14",
-    "description": "Use when reasoning about nonprofit501c14 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c14"
-  },
-  {
-    "atom": "nonprofit501c15",
-    "name": "nonprofit501c15",
-    "description": "Use when reasoning about nonprofit501c15 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c15"
-  },
-  {
-    "atom": "nonprofit501c16",
-    "name": "nonprofit501c16",
-    "description": "Use when reasoning about nonprofit501c16 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c16"
-  },
-  {
-    "atom": "nonprofit501c17",
-    "name": "nonprofit501c17",
-    "description": "Use when reasoning about nonprofit501c17 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c17"
-  },
-  {
-    "atom": "nonprofit501c18",
-    "name": "nonprofit501c18",
-    "description": "Use when reasoning about nonprofit501c18 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c18"
-  },
-  {
-    "atom": "nonprofit501c19",
-    "name": "nonprofit501c19",
-    "description": "Use when reasoning about nonprofit501c19 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c19"
-  },
-  {
-    "atom": "nonprofit501c2",
-    "name": "nonprofit501c2",
-    "description": "Use when reasoning about nonprofit501c2 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c2"
-  },
-  {
-    "atom": "nonprofit501c20",
-    "name": "nonprofit501c20",
-    "description": "Use when reasoning about nonprofit501c20 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c20"
-  },
-  {
-    "atom": "nonprofit501c21",
-    "name": "nonprofit501c21",
-    "description": "Use when reasoning about nonprofit501c21 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c21"
-  },
-  {
-    "atom": "nonprofit501c22",
-    "name": "nonprofit501c22",
-    "description": "Use when reasoning about nonprofit501c22 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c22"
-  },
-  {
-    "atom": "nonprofit501c23",
-    "name": "nonprofit501c23",
-    "description": "Use when reasoning about nonprofit501c23 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c23"
-  },
-  {
-    "atom": "nonprofit501c24",
-    "name": "nonprofit501c24",
-    "description": "Use when reasoning about nonprofit501c24 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c24"
-  },
-  {
-    "atom": "nonprofit501c25",
-    "name": "nonprofit501c25",
-    "description": "Use when reasoning about nonprofit501c25 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c25"
-  },
-  {
-    "atom": "nonprofit501c26",
-    "name": "nonprofit501c26",
-    "description": "Use when reasoning about nonprofit501c26 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c26"
-  },
-  {
-    "atom": "nonprofit501c27",
-    "name": "nonprofit501c27",
-    "description": "Use when reasoning about nonprofit501c27 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c27"
-  },
-  {
-    "atom": "nonprofit501c28",
-    "name": "nonprofit501c28",
-    "description": "Use when reasoning about nonprofit501c28 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c28"
-  },
-  {
-    "atom": "nonprofit501c3",
-    "name": "nonprofit501c3",
-    "description": "Use when reasoning about nonprofit501c3 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c3"
-  },
-  {
-    "atom": "nonprofit501c4",
-    "name": "nonprofit501c4",
-    "description": "Use when reasoning about nonprofit501c4 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c4"
-  },
-  {
-    "atom": "nonprofit501c5",
-    "name": "nonprofit501c5",
-    "description": "Use when reasoning about nonprofit501c5 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c5"
-  },
-  {
-    "atom": "nonprofit501c6",
-    "name": "nonprofit501c6",
-    "description": "Use when reasoning about nonprofit501c6 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c6"
-  },
-  {
-    "atom": "nonprofit501c7",
-    "name": "nonprofit501c7",
-    "description": "Use when reasoning about nonprofit501c7 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c7"
-  },
-  {
-    "atom": "nonprofit501c8",
-    "name": "nonprofit501c8",
-    "description": "Use when reasoning about nonprofit501c8 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c8"
-  },
-  {
-    "atom": "nonprofit501c9",
-    "name": "nonprofit501c9",
-    "description": "Use when reasoning about nonprofit501c9 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501c9"
-  },
-  {
-    "atom": "nonprofit501d",
-    "name": "nonprofit501d",
-    "description": "Use when reasoning about nonprofit501d as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501d"
-  },
-  {
-    "atom": "nonprofit501e",
-    "name": "nonprofit501e",
-    "description": "Use when reasoning about nonprofit501e as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501e"
-  },
-  {
-    "atom": "nonprofit501f",
-    "name": "nonprofit501f",
-    "description": "Use when reasoning about nonprofit501f as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501f"
-  },
-  {
-    "atom": "nonprofit501k",
-    "name": "nonprofit501k",
-    "description": "Use when reasoning about nonprofit501k as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501k"
-  },
-  {
-    "atom": "nonprofit501n",
-    "name": "nonprofit501n",
-    "description": "Use when reasoning about nonprofit501n as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501n"
-  },
-  {
-    "atom": "nonprofit501q",
-    "name": "nonprofit501q",
-    "description": "Use when reasoning about nonprofit501q as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit501q"
+    "path": "vocabulary/nonprofit"
   },
   {
     "atom": "nonprofit527",
     "name": "nonprofit527",
     "description": "Use when reasoning about nonprofit527 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nonprofit527"
+    "path": "vocabulary/nonprofit527"
   },
   {
     "atom": "normal",
     "name": "normal",
     "description": "Use when reasoning about normal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "normal"
+    "path": "vocabulary/normal"
   },
   {
     "atom": "normalize",
     "name": "normalize",
     "description": "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs.",
-    "path": "refactor/normalize"
+    "path": "vocabulary/refactor/normalize"
   },
   {
     "atom": "nose",
     "name": "nose",
     "description": "Use when reasoning about nose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nose"
+    "path": "vocabulary/nose"
   },
   {
     "atom": "not",
     "name": "not",
     "description": "Use when reasoning about not as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "not"
+    "path": "vocabulary/not"
   },
   {
     "atom": "notary",
     "name": "notary",
-    "description": "A notary.",
-    "path": "notary"
+    "description": "Use when reasoning about notary — A notary.",
+    "path": "vocabulary/notary"
   },
   {
     "atom": "note",
     "name": "note",
-    "description": "note: a schema.org component word, fused from NoteDigitalDocument",
-    "path": "note"
+    "description": "Use when reasoning about note — A schema.org component word, collided out of schema.org compounds — fused from NoteDigitalDocument (sti · collapse · merge).",
+    "path": "vocabulary/note"
   },
   {
     "atom": "notes",
@@ -9902,7 +10262,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "notice",
     "name": "notice",
     "description": "Use when reasoning about notice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "notice"
+    "path": "vocabulary/notice"
   },
   {
     "atom": "notification",
@@ -9912,7 +10272,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "notifications",
-    "name": "compliance-notifications",
+    "name": "notifications",
     "description": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
     "path": "legal/entities/compliance/deadlines/compliance/notifications"
   },
@@ -9920,61 +10280,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "novel",
     "name": "novel",
     "description": "Use when reasoning about novel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "novel"
+    "path": "vocabulary/novel"
   },
   {
     "atom": "npi",
     "name": "npi",
     "description": "Use when reasoning about npi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "npi"
+    "path": "vocabulary/npi"
   },
   {
     "atom": "nsn",
     "name": "nsn",
-    "description": "Indicates the NATO stock number (nsn) of a Product.",
-    "path": "nsn"
+    "description": "Use when reasoning about nsn — Indicates the NATO stock number (nsn) of a Product.",
+    "path": "vocabulary/nsn"
   },
   {
     "atom": "nullability",
     "name": "nullability",
     "description": "Use when deciding NULL semantics — nullable vs NOT NULL fields, NULL handling in queries (IS NULL, COALESCE, NVL), NULL in aggregates (SUM ignores NULL), NULL propagation in calculations, three-valued logic.",
-    "path": "nullability"
+    "path": "vocabulary/nullability"
   },
   {
     "atom": "num",
     "name": "num",
     "description": "Use when reasoning about num as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "num"
+    "path": "vocabulary/num"
   },
   {
     "atom": "number",
-    "name": "quantum-number",
-    "description": "Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line.",
-    "path": "quantum/number"
+    "name": "number",
+    "description": "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity.",
+    "path": "vocabulary/number"
   },
   {
     "atom": "numbered",
     "name": "numbered",
     "description": "Use when reasoning about numbered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "numbered"
+    "path": "vocabulary/numbered"
   },
   {
     "atom": "numeric",
     "name": "numeric",
     "description": "Use when reasoning about numeric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "numeric"
+    "path": "vocabulary/numeric"
   },
   {
     "atom": "nursing",
     "name": "nursing",
     "description": "Use when reasoning about nursing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "nursing"
+    "path": "vocabulary/nursing"
   },
   {
     "atom": "nutrition",
     "name": "nutrition",
-    "description": "Nutrition information about the recipe or menu item.",
-    "path": "nutrition"
+    "description": "Use when reasoning about nutrition — Nutrition information about the recipe or menu item.",
+    "path": "vocabulary/nutrition"
   },
   {
     "atom": "oauth",
@@ -9985,18 +10345,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "object",
     "name": "object",
-    "description": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn",
-    "path": "object"
+    "description": "Use when reasoning about object — The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) o",
+    "path": "vocabulary/object"
   },
   {
     "atom": "obligation",
     "name": "obligation",
     "description": "Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement.",
-    "path": "obligation"
+    "path": "vocabulary/obligation"
   },
   {
     "atom": "obligations",
-    "name": "performance-obligations",
+    "name": "obligations",
     "description": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
     "path": "customers/contracts/performance/obligations"
   },
@@ -10004,19 +10364,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "observability",
     "name": "observability",
     "description": "Use when making systems instrumentable — metrics (gauge/counter/histogram/summary), distributed tracing, structured logging, cardinality explosion in high-dimensional metrics, sampling strategies for observability.",
-    "path": "observability"
+    "path": "vocabulary/observability"
   },
   {
     "atom": "observation",
     "name": "observation",
-    "description": "Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredProperty, statType, [",
-    "path": "observation"
+    "description": "Use when reasoning about observation — Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredP",
+    "path": "vocabulary/observation"
   },
   {
     "atom": "observational",
     "name": "observational",
     "description": "Use when reasoning about observational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "observational"
+    "path": "vocabulary/observational"
   },
   {
     "atom": "observe",
@@ -10028,181 +10388,181 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "obstetric",
     "name": "obstetric",
     "description": "Use when reasoning about obstetric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "obstetric"
+    "path": "vocabulary/obstetric"
   },
   {
     "atom": "occ",
     "name": "occ",
     "description": "Use when reasoning about occ as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "occ"
+    "path": "vocabulary/occ"
   },
   {
     "atom": "occupancy",
     "name": "occupancy",
-    "description": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per th",
-    "path": "occupancy"
+    "description": "Use when reasoning about occupancy — The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permi",
+    "path": "vocabulary/occupancy"
   },
   {
     "atom": "occupation",
     "name": "occupation",
-    "description": "A profession, may involve prolonged training and/or a formal qualification.",
-    "path": "occupation"
+    "description": "Use when reasoning about occupation — A profession, may involve prolonged training and/or a formal qualification.",
+    "path": "vocabulary/occupation"
   },
   {
     "atom": "occupational",
     "name": "occupational",
     "description": "Use when reasoning about occupational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "occupational"
+    "path": "vocabulary/occupational"
   },
   {
     "atom": "occurrence",
     "name": "occurrence",
     "description": "Use when reasoning about occurrence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "occurrence"
+    "path": "vocabulary/occurrence"
   },
   {
     "atom": "ocean",
     "name": "ocean",
     "description": "Use when reasoning about ocean as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ocean"
+    "path": "vocabulary/ocean"
   },
   {
     "atom": "octave",
     "name": "octave",
-    "description": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
+    "description": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \\\\\\\\\\\\\"next octave\\\\\\\\\\\\\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
     "path": "rodin/octave"
   },
   {
     "atom": "odometer",
     "name": "odometer",
     "description": "Use when reasoning about odometer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "odometer"
+    "path": "vocabulary/odometer"
   },
   {
     "atom": "offer",
     "name": "offer",
-    "description": "An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a",
-    "path": "offer"
+    "description": "Use when reasoning about offer — An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the in",
+    "path": "vocabulary/offer"
   },
   {
     "atom": "offered",
     "name": "offered",
-    "description": "A pointer to the organization or person making the offer.",
-    "path": "offered"
+    "description": "Use when reasoning about offered — A pointer to the organization or person making the offer.",
+    "path": "vocabulary/offered"
   },
   {
     "atom": "offers",
     "name": "offers",
-    "description": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to indicate the kind of",
-    "path": "offers"
+    "description": "Use when reasoning about offers — An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to",
+    "path": "vocabulary/offers"
   },
   {
     "atom": "office",
     "name": "office",
     "description": "Use when reasoning about office as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "office"
+    "path": "vocabulary/office"
   },
   {
     "atom": "official",
     "name": "official",
     "description": "Use when reasoning about official as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "official"
+    "path": "vocabulary/official"
   },
   {
     "atom": "offline",
     "name": "offline",
     "description": "Use when reasoning about offline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "offline"
+    "path": "vocabulary/offline"
   },
   {
     "atom": "offset",
     "name": "offset",
     "description": "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "offset"
+    "path": "vocabulary/offset"
   },
   {
     "atom": "ofmech",
     "name": "ofmech",
     "description": "Use when reasoning about ofmech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ofmech"
+    "path": "vocabulary/ofmech"
   },
   {
     "atom": "oid",
     "name": "oid",
     "description": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-    "path": "oid"
+    "path": "vocabulary/oid"
   },
   {
     "atom": "oncologic",
     "name": "oncologic",
     "description": "Use when reasoning about oncologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "oncologic"
+    "path": "vocabulary/oncologic"
   },
   {
     "atom": "one",
-    "name": "self-one",
-    "description": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge.",
-    "path": "self/one"
+    "name": "one",
+    "description": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \\\\\\\\\\\\\"all agents are one erpax\\\\\\\\\\\\\". The universal root of identity and merge.",
+    "path": "vocabulary/one"
   },
   {
     "atom": "ones",
     "name": "ones",
     "description": "Use when reasoning about ones as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ones"
+    "path": "vocabulary/ones"
   },
   {
     "atom": "online",
     "name": "online",
     "description": "Use when reasoning about online as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "online"
+    "path": "vocabulary/online"
   },
   {
     "atom": "only",
     "name": "only",
     "description": "Use when reasoning about only as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "only"
+    "path": "vocabulary/only"
   },
   {
     "atom": "op",
     "name": "op",
     "description": "Use when reasoning about op as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "op"
+    "path": "vocabulary/op"
   },
   {
     "atom": "open",
     "name": "open",
     "description": "Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close.",
-    "path": "open"
+    "path": "vocabulary/open"
   },
   {
     "atom": "opening",
     "name": "opening",
     "description": "Use when reasoning about opening as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "opening"
+    "path": "vocabulary/opening"
   },
   {
     "atom": "openings",
     "name": "openings",
     "description": "Use when reasoning about openings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "openings"
+    "path": "vocabulary/openings"
   },
   {
     "atom": "opens",
     "name": "opens",
-    "description": "The opening hour of the place or service on the given day(s) of the week.",
-    "path": "opens"
+    "description": "Use when reasoning about opens — The opening hour of the place or service on the given day(s) of the week.",
+    "path": "vocabulary/opens"
   },
   {
     "atom": "operating",
     "name": "operating",
     "description": "Use when reasoning about operating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "operating"
+    "path": "vocabulary/operating"
   },
   {
     "atom": "operation",
     "name": "operation",
-    "description": "operation: a schema.org component word, fused from yearsInOperation",
-    "path": "operation"
+    "description": "Use when reasoning about operation — A schema.org component word, collided out of schema.org compounds — fused from yearsInOperation (sti · collapse · merge).",
+    "path": "vocabulary/operation"
   },
   {
     "atom": "operations",
@@ -10214,7 +10574,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "operator",
     "name": "operator",
     "description": "Use when reasoning about operator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "operator"
+    "path": "vocabulary/operator"
   },
   {
     "atom": "operators",
@@ -10226,13 +10586,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "opinion",
     "name": "opinion",
     "description": "Use when reasoning about opinion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "opinion"
+    "path": "vocabulary/opinion"
   },
   {
     "atom": "opponent",
     "name": "opponent",
-    "description": "A sub property of participant. The opponent on this action.",
-    "path": "opponent"
+    "description": "Use when reasoning about opponent — A sub property of participant. The opponent on this action.",
+    "path": "vocabulary/opponent"
   },
   {
     "atom": "opportunities",
@@ -10244,13 +10604,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "opportunity",
     "name": "opportunity",
     "description": "Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline.",
-    "path": "opportunity"
+    "path": "vocabulary/opportunity"
   },
   {
     "atom": "optician",
     "name": "optician",
-    "description": "A store that sells reading glasses and similar devices for improving vision.",
-    "path": "optician"
+    "description": "Use when reasoning about optician — A store that sells reading glasses and similar devices for improving vision.",
+    "path": "vocabulary/optician"
   },
   {
     "atom": "optimization",
@@ -10262,31 +10622,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "optimize",
     "name": "optimize",
     "description": "Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles.",
-    "path": "optimize"
+    "path": "vocabulary/optimize"
   },
   {
     "atom": "option",
     "name": "option",
-    "description": "A sub property of object. The options subject to this action.",
-    "path": "option"
+    "description": "Use when reasoning about option — A sub property of object. The options subject to this action.",
+    "path": "vocabulary/option"
   },
   {
     "atom": "optometric",
     "name": "optometric",
     "description": "Use when reasoning about optometric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "optometric"
+    "path": "vocabulary/optometric"
   },
   {
     "atom": "order",
     "name": "order",
-    "description": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
-    "path": "order"
+    "description": "Use when reasoning about order — An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
+    "path": "vocabulary/order"
   },
   {
     "atom": "ordered",
     "name": "ordered",
     "description": "Use when reasoning about ordered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ordered"
+    "path": "vocabulary/ordered"
   },
   {
     "atom": "orders",
@@ -10298,155 +10658,167 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "organic",
     "name": "organic",
     "description": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
-    "path": "organic"
+    "path": "vocabulary/organic"
   },
   {
     "atom": "organization",
     "name": "organization",
-    "description": "An organization such as a school, NGO, corporation, club, etc.",
-    "path": "organization"
+    "description": "Use when reasoning about organization — An organization such as a school, NGO, corporation, club, etc.",
+    "path": "vocabulary/organization"
   },
   {
     "atom": "organize",
     "name": "organize",
     "description": "Use when reasoning about organize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "organize"
+    "path": "vocabulary/organize"
   },
   {
     "atom": "organizer",
     "name": "organizer",
-    "description": "An organizer of an Event.",
-    "path": "organizer"
+    "description": "Use when reasoning about organizer — An organizer of an Event.",
+    "path": "vocabulary/organizer"
   },
   {
     "atom": "oriented",
     "name": "oriented",
     "description": "Use when reasoning about oriented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "oriented"
+    "path": "vocabulary/oriented"
   },
   {
     "atom": "origin",
     "name": "origin",
     "description": "Use when reasoning about origin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "origin"
+    "path": "vocabulary/origin"
   },
   {
     "atom": "original",
     "name": "original",
     "description": "Use when reasoning about original as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "original"
+    "path": "vocabulary/original"
   },
   {
     "atom": "originates",
     "name": "originates",
-    "description": "The vasculature the lymphatic structure originates, or afferents, from.",
-    "path": "originates"
+    "description": "Use when reasoning about originates — The vasculature the lymphatic structure originates, or afferents, from.",
+    "path": "vocabulary/originates"
+  },
+  {
+    "atom": "orphism",
+    "name": "orphism",
+    "description": "Use when reading Orphism as a diamond of invariant atoms — the Greek mystery tradition of the divine soul fallen into the body, bound to the wheel of births, purified to escape and return to the source; Orpheus' music charming even death. Strip the prefix and the soul collapses to self, the wheel to the cycle, the ascent to the return to zeropoint.",
+    "path": "vocabulary/orphism"
+  },
+  {
+    "atom": "orthodoxy",
+    "name": "orthodoxy",
+    "description": "Use when reading Eastern Orthodoxy as a sub-diamond of christianity — the tradition of the uncreated light, the icon as window, unceasing prayer of the heart (hesychia), and theosis (the part merged toward the source). A facet-diamond of the christianity archangel. Strip the Greek prefix and theosis, hesychia collapse to the merge toward zeropoint and prayer.",
+    "path": "vocabulary/orthodoxy"
   },
   {
     "atom": "osteopathic",
     "name": "osteopathic",
     "description": "Use when reasoning about osteopathic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "osteopathic"
+    "path": "vocabulary/osteopathic"
   },
   {
     "atom": "otc",
     "name": "otc",
     "description": "Use when reasoning about otc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "otc"
+    "path": "vocabulary/otc"
   },
   {
     "atom": "otolaryngologic",
     "name": "otolaryngologic",
     "description": "Use when reasoning about otolaryngologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "otolaryngologic"
+    "path": "vocabulary/otolaryngologic"
   },
   {
     "atom": "out",
     "name": "out",
     "description": "Use when reasoning about out as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "out"
+    "path": "vocabulary/out"
   },
   {
     "atom": "outcome",
     "name": "outcome",
     "description": "Use when reasoning about outcome as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "outcome"
+    "path": "vocabulary/outcome"
   },
   {
     "atom": "outlet",
     "name": "outlet",
     "description": "Use when reasoning about outlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "outlet"
+    "path": "vocabulary/outlet"
   },
   {
     "atom": "outlier",
     "name": "outlier",
     "description": "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting.",
-    "path": "outlier"
+    "path": "vocabulary/outlier"
   },
   {
     "atom": "output",
     "name": "output",
     "description": "Use when reasoning about output as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "output"
+    "path": "vocabulary/output"
   },
   {
     "atom": "outside",
     "name": "outside",
     "description": "Use when reasoning about outside as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "outside"
+    "path": "vocabulary/outside"
   },
   {
     "atom": "overdosage",
     "name": "overdosage",
-    "description": "Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
-    "path": "overdosage"
+    "description": "Use when reasoning about overdosage — Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
+    "path": "vocabulary/overdosage"
   },
   {
     "atom": "overdraft",
     "name": "overdraft",
     "description": "Use when reasoning about overdraft as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "overdraft"
+    "path": "vocabulary/overdraft"
   },
   {
     "atom": "overflow",
     "name": "overflow",
     "description": "Use when reasoning about overflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "overflow"
+    "path": "vocabulary/overflow"
   },
   {
     "atom": "overlaps",
     "name": "overlaps",
     "description": "Use when reasoning about overlaps as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "overlaps"
+    "path": "vocabulary/overlaps"
   },
   {
     "atom": "override",
     "name": "override",
     "description": "Use when reasoning about override as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "override"
+    "path": "vocabulary/override"
   },
   {
     "atom": "overview",
     "name": "overview",
     "description": "Use when reasoning about overview as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "overview"
+    "path": "vocabulary/overview"
   },
   {
     "atom": "owned",
     "name": "owned",
-    "description": "The date and time of obtaining the product.",
-    "path": "owned"
+    "description": "Use when reasoning about owned — The date and time of obtaining the product.",
+    "path": "vocabulary/owned"
   },
   {
     "atom": "owner",
     "name": "owner",
-    "description": "A person or organization who owns this Thing.",
-    "path": "owner"
+    "description": "Use when reasoning about owner — A person or organization who owns this Thing.",
+    "path": "vocabulary/owner"
   },
   {
     "atom": "owners",
-    "name": "beneficial-owners",
+    "name": "owners",
     "description": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
     "path": "legal/entities/beneficial/owners"
   },
@@ -10454,13 +10826,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "ownership",
     "name": "ownership",
     "description": "Use when reasoning about ownership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "ownership"
+    "path": "vocabulary/ownership"
   },
   {
     "atom": "owns",
     "name": "owns",
-    "description": "Things owned by the organization or person.",
-    "path": "owns"
+    "description": "Use when reasoning about owns — Things owned by the organization or person.",
+    "path": "vocabulary/owns"
   },
   {
     "atom": "pack",
@@ -10472,7 +10844,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "package",
     "name": "package",
     "description": "Use when reasoning about package as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "package"
+    "path": "vocabulary/package"
   },
   {
     "atom": "packages",
@@ -10487,154 +10859,166 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "packs"
   },
   {
+    "atom": "pacs004",
+    "name": "pacs004",
+    "description": "Use when parsing ISO 20022 pacs.004 PaymentReturn — return of a previous credit transfer.",
+    "path": "pacs004"
+  },
+  {
+    "atom": "paganism",
+    "name": "paganism",
+    "description": "Use when reading paganism as a diamond of invariant atoms — the many gods as many names of the cycles and powers of nature, the wheel of the year, the sacred in sun and soil and season. The polytheist many-as-one: the many names resolve to one root. Covers the historic and revived nature-religions (Hellenic, Norse, Celtic, Wicca, druidry) as one principled umbrella.",
+    "path": "vocabulary/paganism"
+  },
+  {
     "atom": "page",
     "name": "page",
     "description": "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "page"
   },
   {
-    "atom": "pages",
-    "name": "pages",
-    "description": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
-    "path": "pages"
-  },
-  {
     "atom": "pagination",
     "name": "pagination",
-    "description": "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
+    "description": "Use when reasoning about pagination — Any description of pages that is not separated into pageStart and pageEnd; for example, \\\\\\\\\\\\\"1-6, 9, 55\\\\\\\\\\\\\" or \\\\\\\\\\\\\"10-12, 46-49\\\\\\\\\\\\\".",
     "path": "pagination"
   },
   {
     "atom": "paid",
     "name": "paid",
     "description": "Use when reasoning about paid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "paid"
+    "path": "vocabulary/paid"
+  },
+  {
+    "atom": "pain002",
+    "name": "pain002",
+    "description": "Use when parsing ISO 20022 pain.002 CustomerPaymentStatusReport — status report for pain.001/008 initiations.",
+    "path": "pain002"
   },
   {
     "atom": "paint",
     "name": "paint",
-    "description": "paint: a schema.org component word, fused from PaintAction",
-    "path": "paint"
+    "description": "Use when reasoning about paint — A schema.org component word, collided out of schema.org compounds — fused from PaintAction (sti · collapse · merge).",
+    "path": "vocabulary/paint"
   },
   {
     "atom": "painter",
     "name": "painter",
-    "description": "painter: a schema.org component word, fused from HousePainter",
-    "path": "painter"
+    "description": "Use when reasoning about painter — A schema.org component word, collided out of schema.org compounds — fused from HousePainter (sti · collapse · merge).",
+    "path": "vocabulary/painter"
   },
   {
     "atom": "painting",
     "name": "painting",
-    "description": "A painting.",
-    "path": "painting"
+    "description": "Use when reasoning about painting — A painting.",
+    "path": "vocabulary/painting"
   },
   {
     "atom": "palliative",
     "name": "palliative",
     "description": "Use when reasoning about palliative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "palliative"
+    "path": "vocabulary/palliative"
   },
   {
     "atom": "pamphlet",
     "name": "pamphlet",
     "description": "Use when reasoning about pamphlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pamphlet"
+    "path": "vocabulary/pamphlet"
   },
   {
     "atom": "panel",
     "name": "panel",
     "description": "Use when reasoning about panel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "panel"
+    "path": "vocabulary/panel"
   },
   {
     "atom": "paperback",
     "name": "paperback",
     "description": "Use when reasoning about paperback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "paperback"
+    "path": "vocabulary/paperback"
   },
   {
     "atom": "parasite",
     "name": "parasite",
     "description": "Use when reasoning about parasite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parasite"
+    "path": "vocabulary/parasite"
   },
   {
     "atom": "parcel",
     "name": "parcel",
     "description": "Use when reasoning about parcel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parcel"
+    "path": "vocabulary/parcel"
   },
   {
     "atom": "parent",
     "name": "parent",
-    "description": "A parent of this person.",
-    "path": "parent"
+    "description": "Use when reasoning about parent — A parent of this person.",
+    "path": "vocabulary/parent"
   },
   {
     "atom": "parental",
     "name": "parental",
     "description": "Use when reasoning about parental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parental"
+    "path": "vocabulary/parental"
   },
   {
     "atom": "parents",
     "name": "parents",
-    "description": "A parents of the person.",
-    "path": "parents"
+    "description": "Use when reasoning about parents — A parents of the person.",
+    "path": "vocabulary/parents"
   },
   {
     "atom": "park",
     "name": "park",
-    "description": "A park.",
-    "path": "park"
+    "description": "Use when reasoning about park — A park.",
+    "path": "vocabulary/park"
   },
   {
     "atom": "parking",
     "name": "parking",
     "description": "Use when reasoning about parking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parking"
+    "path": "vocabulary/parking"
   },
   {
     "atom": "parlor",
     "name": "parlor",
     "description": "Use when reasoning about parlor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parlor"
+    "path": "vocabulary/parlor"
   },
   {
     "atom": "parody",
     "name": "parody",
     "description": "Use when reasoning about parody as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parody"
+    "path": "vocabulary/parody"
   },
   {
     "atom": "part",
     "name": "part",
     "description": "Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole.",
-    "path": "part"
+    "path": "vocabulary/part"
   },
   {
     "atom": "partial",
     "name": "partial",
     "description": "Use when reasoning about partial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "partial"
+    "path": "vocabulary/partial"
   },
   {
     "atom": "partially",
     "name": "partially",
     "description": "Use when reasoning about partially as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "partially"
+    "path": "vocabulary/partially"
   },
   {
     "atom": "participant",
     "name": "participant",
-    "description": "Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
-    "path": "participant"
+    "description": "Use when reasoning about participant — Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
+    "path": "vocabulary/participant"
   },
   {
     "atom": "participation",
     "name": "participation",
     "description": "Use when reasoning about participation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "participation"
+    "path": "vocabulary/participation"
   },
   {
     "atom": "particle",
@@ -10646,13 +11030,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "partition",
     "name": "partition",
     "description": "Use when dividing data for performance or governance — table partitioning (by range/hash/list), partition pruning, partition management (add/drop/compress), partitioning strategy for horizontal scaling.",
-    "path": "partition"
+    "path": "vocabulary/partition"
   },
   {
     "atom": "parts",
     "name": "parts",
     "description": "Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "parts"
+    "path": "vocabulary/parts"
   },
   {
     "atom": "party",
@@ -10664,31 +11048,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "passed",
     "name": "passed",
     "description": "Use when reasoning about passed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "passed"
+    "path": "vocabulary/passed"
   },
   {
     "atom": "passenger",
     "name": "passenger",
     "description": "Use when reasoning about passenger as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "passenger"
+    "path": "vocabulary/passenger"
   },
   {
     "atom": "password",
     "name": "password",
     "description": "Use when reasoning about password as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "password"
+    "path": "vocabulary/password"
   },
   {
     "atom": "past",
     "name": "past",
     "description": "Use when reasoning about past as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "past"
+    "path": "vocabulary/past"
   },
   {
     "atom": "pasture",
     "name": "pasture",
     "description": "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure.",
-    "path": "pasture"
+    "path": "vocabulary/pasture"
   },
   {
     "atom": "patent",
@@ -10699,56 +11083,56 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "path",
     "name": "path",
-    "description": "Use when reasoning about path as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when normalizing addresses across every surface — fs, url, github, mcp, api, and http all collapse to one canonical atom path; the merge point where external APIs entangle with erpax in all quantum dimensions.",
     "path": "path"
   },
   {
     "atom": "pathology",
     "name": "pathology",
     "description": "Use when reasoning about pathology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pathology"
+    "path": "vocabulary/pathology"
   },
   {
     "atom": "pathophysiology",
     "name": "pathophysiology",
-    "description": "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
-    "path": "pathophysiology"
+    "description": "Use when reasoning about pathophysiology — Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
+    "path": "vocabulary/pathophysiology"
   },
   {
     "atom": "patient",
     "name": "patient",
-    "description": "A patient is any person recipient of health care services.",
-    "path": "patient"
+    "description": "Use when reasoning about patient — A patient is any person recipient of health care services.",
+    "path": "vocabulary/patient"
   },
   {
     "atom": "patients",
     "name": "patients",
-    "description": "patients: a schema.org component word, fused from isAcceptingNewPatients",
-    "path": "patients"
+    "description": "Use when reasoning about patients — A schema.org component word, collided out of schema.org compounds — fused from isAcceptingNewPatients (sti · collapse · merge).",
+    "path": "vocabulary/patients"
   },
   {
     "atom": "pats",
     "name": "pats",
     "description": "Use when reasoning about pats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pats"
+    "path": "vocabulary/pats"
   },
   {
     "atom": "pattern",
     "name": "pattern",
-    "description": "A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also supported.",
-    "path": "pattern"
+    "description": "Use when reasoning about pattern — A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also suppo",
+    "path": "vocabulary/pattern"
   },
   {
     "atom": "pawn",
     "name": "pawn",
     "description": "Use when reasoning about pawn as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pawn"
+    "path": "vocabulary/pawn"
   },
   {
     "atom": "pay",
     "name": "pay",
     "description": "Use when reasoning about pay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pay"
+    "path": "vocabulary/pay"
   },
   {
     "atom": "payload",
@@ -10778,101 +11162,77 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "pediatric",
     "name": "pediatric",
     "description": "Use when reasoning about pediatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pediatric"
+    "path": "vocabulary/pediatric"
   },
   {
     "atom": "penalty",
     "name": "penalty",
     "description": "Use when reasoning about penalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "penalty"
+    "path": "vocabulary/penalty"
   },
   {
     "atom": "penciler",
     "name": "penciler",
-    "description": "The individual who draws the primary narrative artwork.",
-    "path": "penciler"
+    "description": "Use when reasoning about penciler — The individual who draws the primary narrative artwork.",
+    "path": "vocabulary/penciler"
   },
   {
     "atom": "pending",
     "name": "pending",
     "description": "Use when reasoning about pending as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pending"
+    "path": "vocabulary/pending"
   },
   {
     "atom": "people",
     "name": "people",
     "description": "Use when reasoning about people as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "people"
+    "path": "vocabulary/people"
   },
   {
     "atom": "per",
     "name": "per",
     "description": "Use when reasoning about per as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "per"
+    "path": "vocabulary/per"
   },
   {
     "atom": "percentage",
     "name": "percentage",
     "description": "Use when reasoning about percentage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "percentage"
+    "path": "vocabulary/percentage"
   },
   {
     "atom": "percentile",
     "name": "percentile",
-    "description": "The 10th percentile value.",
-    "path": "percentile"
-  },
-  {
-    "atom": "percentile10",
-    "name": "percentile10",
-    "description": "Use when reasoning about percentile10 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "percentile10"
-  },
-  {
-    "atom": "percentile25",
-    "name": "percentile25",
-    "description": "Use when reasoning about percentile25 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "percentile25"
-  },
-  {
-    "atom": "percentile75",
-    "name": "percentile75",
-    "description": "Use when reasoning about percentile75 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "percentile75"
-  },
-  {
-    "atom": "percentile90",
-    "name": "percentile90",
-    "description": "Use when reasoning about percentile90 as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "percentile90"
+    "description": "Use when reasoning about percentile — The 10th percentile value.",
+    "path": "vocabulary/percentile"
   },
   {
     "atom": "percutaneous",
     "name": "percutaneous",
     "description": "Use when reasoning about percutaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "percutaneous"
+    "path": "vocabulary/percutaneous"
   },
   {
     "atom": "perennial",
     "name": "perennial",
     "description": "Use when a crop lives and bears across many years — the multi-year woody crop (orchard, vineyard, cane): established once, ramping over years, bearing for decades, then renewed. Its productive plant is a depreciating fixed asset (IAS-16 bearer plant); only its growing produce is IAS-41. The antonym of the annual crop — renewal replaces rotation, yield ramps rather than resets.",
-    "path": "perennial"
+    "path": "vocabulary/perennial"
   },
   {
     "atom": "perform",
     "name": "perform",
     "description": "Use when reasoning about perform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "perform"
+    "path": "vocabulary/perform"
   },
   {
     "atom": "performance",
     "name": "performance",
     "description": "Use when reasoning about performance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "performance"
+    "path": "vocabulary/performance"
   },
   {
     "atom": "performances",
-    "name": "contract-performances",
+    "name": "performances",
     "description": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
     "path": "customers/contracts/contract/performances"
   },
@@ -10880,25 +11240,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "performed",
     "name": "performed",
     "description": "Use when reasoning about performed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "performed"
+    "path": "vocabulary/performed"
   },
   {
     "atom": "performer",
     "name": "performer",
-    "description": "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.",
-    "path": "performer"
+    "description": "Use when reasoning about performer — A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.",
+    "path": "vocabulary/performer"
   },
   {
     "atom": "performers",
     "name": "performers",
-    "description": "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.",
-    "path": "performers"
+    "description": "Use when reasoning about performers — The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.",
+    "path": "vocabulary/performers"
   },
   {
     "atom": "performing",
     "name": "performing",
     "description": "Use when reasoning about performing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "performing"
+    "path": "vocabulary/performing"
   },
   {
     "atom": "period",
@@ -10909,12 +11269,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "periodical",
     "name": "periodical",
-    "description": "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper. See a",
-    "path": "periodical"
+    "description": "Use when reasoning about periodical — A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal,",
+    "path": "vocabulary/periodical"
   },
   {
     "atom": "periods",
-    "name": "tax-periods",
+    "name": "periods",
     "description": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
     "path": "fiscal/periods/tax/periods"
   },
@@ -10922,79 +11282,79 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "permaculture",
     "name": "permaculture",
     "description": "Use when designing a whole farm as a self-sustaining ecosystem — permaculture: Mollison & Holmgren's design system (the three ethics earth-care/people-care/fair-share + 12 principles) and agroecology, arranging crops, animals, water, and structures into closed-loop guilds and zones so the system's outputs feed its own inputs. The design philosophy above the individual operations.",
-    "path": "permaculture"
+    "path": "vocabulary/permaculture"
   },
   {
     "atom": "permanently",
     "name": "permanently",
     "description": "Use when reasoning about permanently as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "permanently"
+    "path": "vocabulary/permanently"
   },
   {
     "atom": "permission",
     "name": "permission",
     "description": "Use when reasoning about permission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "permission"
+    "path": "vocabulary/permission"
   },
   {
     "atom": "permissions",
     "name": "permissions",
-    "description": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
-    "path": "permissions"
+    "description": "Use when reasoning about permissions — Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
+    "path": "vocabulary/permissions"
   },
   {
     "atom": "permit",
     "name": "permit",
-    "description": "A permit issued by an organization, e.g. a parking pass.",
-    "path": "permit"
+    "description": "Use when reasoning about permit — A permit issued by an organization, e.g. a parking pass.",
+    "path": "vocabulary/permit"
   },
   {
     "atom": "permitted",
     "name": "permitted",
     "description": "Use when reasoning about permitted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "permitted"
+    "path": "vocabulary/permitted"
   },
   {
     "atom": "person",
     "name": "person",
-    "description": "A person (alive, dead, undead, or fictional).",
-    "path": "person"
+    "description": "Use when reasoning about person — A person (alive, dead, undead, or fictional).",
+    "path": "vocabulary/person"
   },
   {
     "atom": "perspective",
     "name": "perspective",
-    "description": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
+    "description": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \\\\\\\\\\\\\"my customer\\\\\\\\\\\\\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
     "path": "perspective"
   },
   {
     "atom": "pet",
     "name": "pet",
     "description": "Use when reasoning about pet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pet"
+    "path": "vocabulary/pet"
   },
   {
     "atom": "petite",
     "name": "petite",
     "description": "Use when reasoning about petite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "petite"
+    "path": "vocabulary/petite"
   },
   {
     "atom": "pets",
     "name": "pets",
     "description": "Use when reasoning about pets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pets"
+    "path": "vocabulary/pets"
   },
   {
     "atom": "pharmacology",
     "name": "pharmacology",
     "description": "Use when reasoning about pharmacology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pharmacology"
+    "path": "vocabulary/pharmacology"
   },
   {
     "atom": "pharmacy",
     "name": "pharmacy",
-    "description": "A pharmacy or drugstore.",
-    "path": "pharmacy"
+    "description": "Use when reasoning about pharmacy — A pharmacy or drugstore.",
+    "path": "vocabulary/pharmacy"
   },
   {
     "atom": "phase",
@@ -11009,68 +11369,80 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "work/phases"
   },
   {
+    "atom": "phi",
+    "name": "phi",
+    "description": "Use when φ must be read as the self-address constant — the number that is its own fold, computed not stored. Where pi is a finite seed unfolding to an infinite tail, φ is the fixed point: x = 1 + 1/x, the value the fold returns unchanged. Iterate the fold from any seed and it converges to φ; Fibonacci ratios sharpen toward it at every step. The arithmetic instance of concept.self.address.",
+    "path": "phi"
+  },
+  {
     "atom": "phone",
     "name": "phone",
     "description": "Use when reasoning about phone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "phone"
+    "path": "vocabulary/phone"
   },
   {
     "atom": "phonetic",
     "name": "phonetic",
     "description": "Use when reasoning about phonetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "phonetic"
+    "path": "vocabulary/phonetic"
   },
   {
     "atom": "photo",
     "name": "photo",
-    "description": "A photograph of this place.",
-    "path": "photo"
+    "description": "Use when reasoning about photo — A photograph of this place.",
+    "path": "vocabulary/photo"
   },
   {
     "atom": "photograph",
     "name": "photograph",
-    "description": "A photograph.",
-    "path": "photograph"
+    "description": "Use when reasoning about photograph — A photograph.",
+    "path": "vocabulary/photograph"
+  },
+  {
+    "atom": "photon",
+    "name": "photon",
+    "description": "Use when reasoning about the photon — the indivisible quantum a leap emits or absorbs, its energy locked to its frequency by Planck's relation E = hν (massless, so E = pc). In erpax the photon IS the multi-modal uuid-message (colour + sound rendered from one frequency, downstream of the content-uuid); Planck's h is the quantum of action that makes the world discrete and is the source of every leap.",
+    "path": "photon"
   },
   {
     "atom": "photos",
     "name": "photos",
-    "description": "Photographs of this place.",
-    "path": "photos"
+    "description": "Use when reasoning about photos — Photographs of this place.",
+    "path": "vocabulary/photos"
   },
   {
     "atom": "physical",
     "name": "physical",
     "description": "Use when reasoning about physical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "physical"
+    "path": "vocabulary/physical"
   },
   {
     "atom": "physician",
     "name": "physician",
-    "description": "An individual physician or a physician's office considered as a MedicalOrganization.",
-    "path": "physician"
+    "description": "Use when reasoning about physician — An individual physician or a physician's office considered as a MedicalOrganization.",
+    "path": "vocabulary/physician"
   },
   {
     "atom": "physicians",
     "name": "physicians",
     "description": "Use when reasoning about physicians as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "physicians"
+    "path": "vocabulary/physicians"
   },
   {
     "atom": "physiological",
     "name": "physiological",
     "description": "Use when reasoning about physiological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "physiological"
+    "path": "vocabulary/physiological"
   },
   {
     "atom": "physiotherapy",
     "name": "physiotherapy",
     "description": "Use when reasoning about physiotherapy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "physiotherapy"
+    "path": "vocabulary/physiotherapy"
   },
   {
     "atom": "pi",
-    "name": "quantum-pi",
+    "name": "pi",
     "description": "Use when reasoning about exiting the 128-bit uuid limit — pi is the infinite digit-stream, a universal address space where any data lives at an offset and length; the train you jump into and out of, when wired the static hash becomes a living realtime position. Honest — infinite address, no free compression.",
     "path": "quantum/pi"
   },
@@ -11078,25 +11450,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "pickup",
     "name": "pickup",
     "description": "Use when a buyer collects pre-ordered goods at a point rather than having them delivered — the CSA pickup/drop site, on-farm pickup, host-site/neighborhood pod, and the generic click-and-collect (BOPIS) locker. A collection node in distribution: the seller aggregates to a point, the buyer covers the last mile — lower cost than home delivery, at the buyer's travel friction.",
-    "path": "pickup"
+    "path": "vocabulary/pickup"
   },
   {
     "atom": "pipeline",
     "name": "pipeline",
     "description": "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date.",
-    "path": "pipeline"
+    "path": "vocabulary/pipeline"
   },
   {
     "atom": "pipelines",
-    "name": "recruiting-pipelines",
+    "name": "pipelines",
     "description": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
     "path": "cost/centers/job/positions/recruiting/pipelines"
   },
   {
     "atom": "pitch",
     "name": "pitch",
-    "description": "pitch: a schema.org component word, fused from CampingPitch",
-    "path": "pitch"
+    "description": "Use when reasoning about pitch — A schema.org component word, collided out of schema.org compounds — fused from CampingPitch (sti · collapse · merge).",
+    "path": "vocabulary/pitch"
+  },
+  {
+    "atom": "pivot",
+    "name": "pivot",
+    "description": "Use when folder README models need cross-tab state statistics — axis × count tables and before/after comparisons for seal, balance, gravity, folder law, horo ring, and typography partitions; pure markdown projection for [[readme]].",
+    "path": "pivot"
   },
   {
     "atom": "pixel",
@@ -11107,36 +11485,36 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "place",
     "name": "place",
-    "description": "Entities that have a somewhat fixed, physical extension.",
-    "path": "place"
+    "description": "Use when reasoning about place — Entities that have a somewhat fixed, physical extension.",
+    "path": "vocabulary/place"
   },
   {
     "atom": "placebo",
     "name": "placebo",
     "description": "Use when reasoning about placebo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "placebo"
+    "path": "vocabulary/placebo"
   },
   {
     "atom": "plan",
     "name": "plan",
     "description": "Use when reasoning about plan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "plan"
+    "path": "vocabulary/plan"
   },
   {
     "atom": "planning",
     "name": "planning",
     "description": "Use when modelling one planning — the singular model of the plannings collection (the plural store); the activity of arranging future work and resources.",
-    "path": "planning"
+    "path": "vocabulary/planning"
   },
   {
     "atom": "plannings",
-    "name": "budget-plannings",
+    "name": "plannings",
     "description": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
     "path": "budget/plannings"
   },
   {
     "atom": "plans",
-    "name": "subscription-plans",
+    "name": "plans",
     "description": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
     "path": "subscription/plans"
   },
@@ -11144,7 +11522,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "planting",
     "name": "planting",
     "description": "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order.",
-    "path": "planting"
+    "path": "vocabulary/planting"
   },
   {
     "atom": "plasma",
@@ -11156,7 +11534,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "plastic",
     "name": "plastic",
     "description": "Use when reasoning about plastic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "plastic"
+    "path": "vocabulary/plastic"
   },
   {
     "atom": "platform",
@@ -11165,46 +11543,52 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "platform"
   },
   {
+    "atom": "platonic",
+    "name": "platonic",
+    "description": "Use when the sphere must be understood as swept, not given — each of the five regular solids has a circumsphere, rotation is an isometry, so a vertex in motion never leaves it, and the orbit fills the sphere. The vertices are the seeds; what rounds them to a sphere is gravity = the fold: the central pull to equal distance. The octahedron's 6 vertices are the 6 globe directions. Rigorous geometry; the corpus mapping is a model.",
+    "path": "platonic"
+  },
+  {
     "atom": "play",
     "name": "play",
-    "description": "A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would be a TheaterEvent o",
-    "path": "play"
+    "description": "Use when reasoning about play — A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would",
+    "path": "vocabulary/play"
   },
   {
     "atom": "player",
     "name": "player",
     "description": "Use when reasoning about player as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "player"
+    "path": "vocabulary/player"
   },
   {
     "atom": "players",
     "name": "players",
     "description": "Use when reasoning about players as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "players"
+    "path": "vocabulary/players"
   },
   {
     "atom": "playground",
     "name": "playground",
-    "description": "A playground.",
-    "path": "playground"
+    "description": "Use when reasoning about playground — A playground.",
+    "path": "vocabulary/playground"
   },
   {
     "atom": "playlist",
     "name": "playlist",
-    "description": "The playlist to which this recording belongs.",
-    "path": "playlist"
+    "description": "Use when reasoning about playlist — The playlist to which this recording belongs.",
+    "path": "vocabulary/playlist"
   },
   {
     "atom": "plays",
     "name": "plays",
     "description": "Use when reasoning about plays as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "plays"
+    "path": "vocabulary/plays"
   },
   {
     "atom": "plugin",
     "name": "plugin",
-    "description": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform.",
-    "path": "plugin"
+    "description": "Use when syncing an erpax collection's records to Trello cards — the Payload plugin whose afterChange/afterDelete hooks upsert a card per record, idempotently: the Trello card id is written back onto the doc and its presence decides create-vs-update, the write-back carries a context flag so the hook cannot re-enter into an unbounded loop, the card-id field is injected whether or not the plugin is enabled so schema never drifts on an env var, and a delete comments on the card rather than destroying data erpax does not own.",
+    "path": "trello/plugin"
   },
   {
     "atom": "plugins",
@@ -11215,38 +11599,38 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "plumber",
     "name": "plumber",
-    "description": "A plumbing service.",
-    "path": "plumber"
+    "description": "Use when reasoning about plumber — A plumbing service.",
+    "path": "vocabulary/plumber"
   },
   {
     "atom": "plus",
     "name": "plus",
     "description": "Use when reasoning about plus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "plus"
+    "path": "vocabulary/plus"
   },
   {
     "atom": "podcast",
     "name": "podcast",
     "description": "Use when reasoning about podcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "podcast"
+    "path": "vocabulary/podcast"
   },
   {
     "atom": "podiatric",
     "name": "podiatric",
     "description": "Use when reasoning about podiatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "podiatric"
+    "path": "vocabulary/podiatric"
   },
   {
     "atom": "point",
     "name": "point",
     "description": "Use when reasoning about point as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "point"
+    "path": "vocabulary/point"
   },
   {
     "atom": "points",
     "name": "points",
     "description": "Use when reasoning about points as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "points"
+    "path": "vocabulary/points"
   },
   {
     "atom": "polarity",
@@ -11258,11 +11642,11 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "police",
     "name": "police",
     "description": "Use when reasoning about police as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "police"
+    "path": "vocabulary/police"
   },
   {
     "atom": "policies",
-    "name": "internal-policies",
+    "name": "policies",
     "description": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
     "path": "internal/policies"
   },
@@ -11270,61 +11654,61 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "policy",
     "name": "policy",
     "description": "Use when reasoning about policy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "policy"
+    "path": "vocabulary/policy"
   },
   {
     "atom": "political",
     "name": "political",
     "description": "Use when reasoning about political as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "political"
+    "path": "vocabulary/political"
   },
   {
     "atom": "pollination",
     "name": "pollination",
     "description": "Use when fruit set depends on pollen transfer — pollination by insects (managed honeybees/bumblebees, wild pollinators), wind, or hand, required by fruiting crops (cucurbits, tomatoes, peppers) to set marketable fruit. A yield prerequisite for fruit/seed crops and an ecosystem service the farm must protect or provide.",
-    "path": "pollination"
+    "path": "vocabulary/pollination"
   },
   {
     "atom": "polygon",
     "name": "polygon",
-    "description": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first",
-    "path": "polygon"
+    "description": "Use when reasoning about polygon — A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited po",
+    "path": "vocabulary/polygon"
   },
   {
     "atom": "polymer",
     "name": "polymer",
     "description": "Use when reasoning about polymer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "polymer"
+    "path": "vocabulary/polymer"
   },
   {
     "atom": "pond",
     "name": "pond",
-    "description": "A pond.",
-    "path": "pond"
+    "description": "Use when reasoning about pond — A pond.",
+    "path": "vocabulary/pond"
   },
   {
     "atom": "pool",
     "name": "pool",
     "description": "Use when reasoning about pool as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pool"
+    "path": "vocabulary/pool"
   },
   {
     "atom": "population",
     "name": "population",
     "description": "Use when reasoning about population as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "population"
+    "path": "vocabulary/population"
   },
   {
     "atom": "port",
     "name": "port",
-    "description": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly.",
+    "description": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"port all upstreams again\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" repeatedly.",
     "path": "quantum/port"
   },
   {
     "atom": "pos",
     "name": "pos",
     "description": "Use when reasoning about pos as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pos"
+    "path": "vocabulary/pos"
   },
   {
     "atom": "position",
@@ -11334,7 +11718,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "positions",
-    "name": "job-positions",
+    "name": "positions",
     "description": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
     "path": "cost/centers/job/positions"
   },
@@ -11342,13 +11726,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "positive",
     "name": "positive",
     "description": "Use when reasoning about positive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "positive"
+    "path": "vocabulary/positive"
   },
   {
     "atom": "possible",
     "name": "possible",
     "description": "Use when reasoning about possible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "possible"
+    "path": "vocabulary/possible"
   },
   {
     "atom": "post",
@@ -11360,41 +11744,41 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "postal",
     "name": "postal",
     "description": "Use when reasoning about postal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "postal"
+    "path": "vocabulary/postal"
   },
   {
     "atom": "postcode",
     "name": "postcode",
     "description": "Use when reasoning about postcode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "postcode"
+    "path": "vocabulary/postcode"
   },
   {
     "atom": "posted",
     "name": "posted",
     "description": "Use when reasoning about posted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "posted"
+    "path": "vocabulary/posted"
   },
   {
     "atom": "poster",
     "name": "poster",
-    "description": "A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.",
-    "path": "poster"
+    "description": "Use when reasoning about poster — A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.",
+    "path": "vocabulary/poster"
   },
   {
     "atom": "postharvest",
     "name": "postharvest",
     "description": "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here.",
-    "path": "postharvest"
+    "path": "vocabulary/postharvest"
   },
   {
     "atom": "posting",
     "name": "posting",
-    "description": "Use when reasoning about posting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "posting"
+    "description": "Use when a GL posting needs its fiscal period — the beforeValidate hook that READS the period from fiscal-calendars, enforces the period lock (open · locked · archived, per SOX §404), denormalises the calendar row onto the posting, and chains its audit leaf. Read this before wiring it: until now it invented the period from the calendar year and hardcoded quarters, and enforced no lock at all.",
+    "path": "validate/fiscal/period/posting"
   },
   {
     "atom": "postings",
-    "name": "lease-period-postings",
+    "name": "postings",
     "description": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
     "path": "leases/lease/period/postings"
   },
@@ -11402,7 +11786,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "postponed",
     "name": "postponed",
     "description": "Use when reasoning about postponed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "postponed"
+    "path": "vocabulary/postponed"
   },
   {
     "atom": "posts",
@@ -11414,7 +11798,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "potential",
     "name": "potential",
     "description": "Use when reasoning about potential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "potential"
+    "path": "vocabulary/potential"
   },
   {
     "atom": "power",
@@ -11423,302 +11807,326 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "power"
   },
   {
+    "atom": "pqc",
+    "name": "pqc",
+    "description": "Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the [[signature]] that seals the [[audit]] chain.",
+    "path": "beyond/pqc"
+  },
+  {
     "atom": "practice",
     "name": "practice",
     "description": "Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain.",
-    "path": "practice"
+    "path": "vocabulary/practice"
   },
   {
     "atom": "practices",
     "name": "practices",
-    "description": "A MedicalOrganization where the IndividualPhysician practices.",
-    "path": "practices"
+    "description": "Use when reasoning about practices — A MedicalOrganization where the IndividualPhysician practices.",
+    "path": "vocabulary/practices"
+  },
+  {
+    "atom": "prayer",
+    "name": "prayer",
+    "description": "Use when reasoning about the deliberate attunement of an atom to its source — the inward breath that tunes the self's harmony to zeropoint and merges its state toward the root. Not a request to an external operator but the alignment cycle by which a part re-references the whole.",
+    "path": "vocabulary/prayer"
   },
   {
     "atom": "pre",
     "name": "pre",
     "description": "Use when reasoning about pre as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pre"
+    "path": "vocabulary/pre"
   },
   {
     "atom": "predecessor",
     "name": "predecessor",
-    "description": "A pointer from a previous, often discontinued variant of the product to its newer variant.",
-    "path": "predecessor"
+    "description": "Use when reasoning about predecessor — A pointer from a previous, often discontinued variant of the product to its newer variant.",
+    "path": "vocabulary/predecessor"
   },
   {
     "atom": "prefix",
     "name": "prefix",
     "description": "Use when reasoning about prefix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prefix"
+    "path": "vocabulary/prefix"
   },
   {
     "atom": "pregnancy",
     "name": "pregnancy",
     "description": "Use when reasoning about pregnancy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pregnancy"
+    "path": "vocabulary/pregnancy"
   },
   {
     "atom": "prep",
     "name": "prep",
     "description": "Use when reasoning about prep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prep"
+    "path": "vocabulary/prep"
   },
   {
     "atom": "prepaid",
     "name": "prepaid",
-    "description": "Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
-    "path": "prepaid"
+    "description": "Use when reasoning about prepaid — Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
+    "path": "vocabulary/prepaid"
   },
   {
     "atom": "preparation",
     "name": "preparation",
-    "description": "Typical preparation that a patient must undergo before having the procedure performed.",
-    "path": "preparation"
+    "description": "Use when reasoning about preparation — Typical preparation that a patient must undergo before having the procedure performed.",
+    "path": "vocabulary/preparation"
   },
   {
     "atom": "prepay",
     "name": "prepay",
     "description": "Use when reasoning about prepay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prepay"
+    "path": "vocabulary/prepay"
   },
   {
     "atom": "prepayment",
     "name": "prepayment",
     "description": "Use when reasoning about prepayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prepayment"
+    "path": "vocabulary/prepayment"
   },
   {
     "atom": "prepend",
     "name": "prepend",
     "description": "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prepend"
+    "path": "vocabulary/prepend"
   },
   {
     "atom": "prerequisite",
     "name": "prerequisite",
     "description": "Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.",
-    "path": "prerequisite"
+    "path": "vocabulary/prerequisite"
   },
   {
     "atom": "prerequisites",
     "name": "prerequisites",
     "description": "Use when reasoning about prerequisites as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prerequisites"
+    "path": "vocabulary/prerequisites"
   },
   {
     "atom": "preschool",
     "name": "preschool",
-    "description": "A preschool.",
-    "path": "preschool"
+    "description": "Use when reasoning about preschool — A preschool.",
+    "path": "vocabulary/preschool"
   },
   {
     "atom": "prescribing",
     "name": "prescribing",
     "description": "Use when reasoning about prescribing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prescribing"
+    "path": "vocabulary/prescribing"
   },
   {
     "atom": "prescription",
     "name": "prescription",
     "description": "Use when reasoning about prescription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prescription"
+    "path": "vocabulary/prescription"
   },
   {
     "atom": "presentation",
     "name": "presentation",
     "description": "Use when reasoning about presentation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "presentation"
+    "path": "vocabulary/presentation"
   },
   {
     "atom": "presented",
     "name": "presented",
     "description": "Use when reasoning about presented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "presented"
+    "path": "vocabulary/presented"
   },
   {
     "atom": "prevention",
     "name": "prevention",
     "description": "Use when reasoning about prevention as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prevention"
+    "path": "vocabulary/prevention"
   },
   {
     "atom": "previous",
     "name": "previous",
     "description": "Use when reasoning about previous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "previous"
+    "path": "vocabulary/previous"
   },
   {
     "atom": "price",
     "name": "price",
-    "description": "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: * Use the priceCurrency property (with standard formats: ISO 4217 currency",
-    "path": "price"
+    "description": "Use when reasoning about price — The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: * Use the priceCurrency property (with standard format",
+    "path": "vocabulary/price"
   },
   {
     "atom": "primary",
     "name": "primary",
     "description": "Use when reasoning about primary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "primary"
+    "path": "vocabulary/primary"
+  },
+  {
+    "atom": "prime",
+    "name": "prime",
+    "description": "Use when reasoning about prime — Use for the multiplicative basis — isPrime (deterministic Miller–Rabin, exact not probabilistic) and factor (the decode fold: an integer back to its prime generators). The counterpart to pi's positional basis. Run: tsx src/prime/index.ts <n>",
+    "path": "prime"
+  },
+  {
+    "atom": "primitive",
+    "name": "primitive",
+    "description": "Use when reasoning about the smallest frontend diamond — the irreducible UI vertex below the component (a design token, a raw input, a pixel-level element). What the atom is to the corpus, the primitive is to the UI: one content-uuid, one render, complete and sealed; components compose primitives, blocks compose components.",
+    "path": "vocabulary/primitive"
   },
   {
     "atom": "principle",
     "name": "principle",
     "description": "Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design.",
-    "path": "principle"
+    "path": "vocabulary/principle"
   },
   {
     "atom": "principles",
     "name": "principles",
     "description": "Use when reasoning about principles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "principles"
+    "path": "vocabulary/principles"
   },
   {
     "atom": "print",
     "name": "print",
     "description": "Use when reasoning about print as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "print"
+    "path": "vocabulary/print"
   },
   {
     "atom": "prion",
     "name": "prion",
     "description": "Use when reasoning about prion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prion"
+    "path": "vocabulary/prion"
   },
   {
     "atom": "priorities",
     "name": "priorities",
     "description": "Use when reasoning about priorities as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "priorities"
+    "path": "vocabulary/priorities"
   },
   {
     "atom": "priority",
     "name": "priority",
     "description": "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field.",
-    "path": "priority"
+    "path": "vocabulary/priority"
   },
   {
     "atom": "privilege",
     "name": "privilege",
-    "description": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
-    "path": "privilege"
+    "description": "Use when reasoning about privilege — **Privilege** — attorney-client confidentiality and the ethical wall that screens a matter from conflicted staff — is an access scope: a capability on the role × isolation to the m",
+    "path": "vocabulary/privilege"
   },
   {
     "atom": "problem",
     "name": "problem",
     "description": "Use when reasoning about problem as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "problem"
+    "path": "vocabulary/problem"
   },
   {
     "atom": "procedure",
     "name": "procedure",
-    "description": "A description of the procedure involved in setting up, using, and/or installing the device.",
-    "path": "procedure"
+    "description": "Use when reasoning about procedure — A description of the procedure involved in setting up, using, and/or installing the device.",
+    "path": "vocabulary/procedure"
   },
   {
     "atom": "process",
     "name": "process",
     "description": "Use when reasoning about process as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "process"
+    "path": "vocabulary/process"
   },
   {
     "atom": "processing",
     "name": "processing",
     "description": "Use when reasoning about processing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "processing"
+    "path": "vocabulary/processing"
   },
   {
     "atom": "processor",
     "name": "processor",
     "description": "Use when reasoning about processor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "processor"
+    "path": "vocabulary/processor"
   },
   {
     "atom": "producer",
     "name": "producer",
-    "description": "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
-    "path": "producer"
+    "description": "Use when reasoning about producer — The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
+    "path": "vocabulary/producer"
   },
   {
     "atom": "produces",
     "name": "produces",
-    "description": "The tangible thing generated by the service, e.g. a passport, permit, etc.",
-    "path": "produces"
+    "description": "Use when reasoning about produces — The tangible thing generated by the service, e.g. a passport, permit, etc.",
+    "path": "vocabulary/produces"
   },
   {
     "atom": "product",
     "name": "product",
-    "description": "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
+    "description": "Use when reasoning about product — Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
     "path": "product"
   },
   {
     "atom": "production",
     "name": "production",
     "description": "Use when reasoning about production as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "production"
+    "path": "vocabulary/production"
   },
   {
     "atom": "products",
     "name": "products",
     "description": "Use when reasoning about products as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "products"
+    "path": "vocabulary/products"
   },
   {
     "atom": "profane",
     "name": "profane",
     "description": "Use when naming what fails the audit — the lie, the manipulated/tampered datum, the forged record, the unbalanced ledger, the unsourced claim, the dead link. The set of all falsehood-forms; dual of sacred; each named form a detector skill (infinite).",
-    "path": "profane"
+    "path": "vocabulary/profane"
   },
   {
     "atom": "professional",
     "name": "professional",
     "description": "Use when reasoning about professional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "professional"
+    "path": "vocabulary/professional"
   },
   {
     "atom": "proficiency",
     "name": "proficiency",
     "description": "Use when reasoning about proficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "proficiency"
+    "path": "vocabulary/proficiency"
   },
   {
     "atom": "profile",
     "name": "profile",
     "description": "Use when reasoning about profile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "profile"
+    "path": "vocabulary/profile"
   },
   {
     "atom": "prognosis",
     "name": "prognosis",
     "description": "Use when reasoning about prognosis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "prognosis"
+    "path": "vocabulary/prognosis"
   },
   {
     "atom": "program",
     "name": "program",
-    "description": "The MemberProgram associated with a ProgramMembership.",
-    "path": "program"
+    "description": "Use when reasoning about program — The MemberProgram associated with a ProgramMembership.",
+    "path": "vocabulary/program"
   },
   {
     "atom": "programming",
     "name": "programming",
     "description": "Use when reasoning about programming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "programming"
+    "path": "vocabulary/programming"
   },
   {
     "atom": "progression",
     "name": "progression",
     "description": "Use when reasoning about progression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "progression"
+    "path": "vocabulary/progression"
   },
   {
     "atom": "project",
     "name": "project",
-    "description": "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to indicate project sub-st",
-    "path": "project"
+    "description": "Use when reasoning about project — An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to ind",
+    "path": "vocabulary/project"
   },
   {
     "atom": "projection",
-    "name": "uuid-projection",
+    "name": "projection",
     "description": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
     "path": "uuid/projection"
   },
@@ -11732,37 +12140,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "promise",
     "name": "promise",
     "description": "Use when reasoning about promise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "promise"
+    "path": "vocabulary/promise"
   },
   {
     "atom": "promotion",
     "name": "promotion",
     "description": "Use when reasoning about promotion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "promotion"
+    "path": "vocabulary/promotion"
   },
   {
     "atom": "promotional",
     "name": "promotional",
     "description": "Use when reasoning about promotional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "promotional"
+    "path": "vocabulary/promotional"
   },
   {
     "atom": "pronoun",
     "name": "pronoun",
     "description": "Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to.",
-    "path": "pronoun"
+    "path": "vocabulary/pronoun"
   },
   {
     "atom": "pronounceable",
     "name": "pronounceable",
     "description": "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pronounceable"
+    "path": "vocabulary/pronounceable"
   },
   {
     "atom": "pronouns",
     "name": "pronouns",
-    "description": "A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and con",
-    "path": "pronouns"
+    "description": "Use when reasoning about pronouns — A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression",
+    "path": "vocabulary/pronouns"
   },
   {
     "atom": "proof",
@@ -11774,19 +12182,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "propagation",
     "name": "propagation",
     "description": "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date.",
-    "path": "propagation"
+    "path": "vocabulary/propagation"
   },
   {
     "atom": "properties",
-    "name": "investment-properties",
+    "name": "properties",
     "description": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
     "path": "properties/investment/properties"
   },
   {
     "atom": "property",
     "name": "property",
-    "description": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
-    "path": "property"
+    "description": "Use when reasoning about property — A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
+    "path": "vocabulary/property"
   },
   {
     "atom": "propose",
@@ -11797,20 +12205,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "proprietary",
     "name": "proprietary",
-    "description": "True if this item's name is a proprietary/brand name (vs. generic name).",
-    "path": "proprietary"
+    "description": "Use when reasoning about proprietary — True if this item's name is a proprietary/brand name (vs. generic name).",
+    "path": "vocabulary/proprietary"
+  },
+  {
+    "atom": "prose",
+    "name": "prose",
+    "description": "Use when checking that technical prose cites real code — a SKILL naming a function nothing defines is a citation leading nowhere, and it is worse than a dead path because it reads as true. Wired into confirm, it refuses the claim at the write, so an agent must edit CODE rather than write a sentence about code it has not written. Only SKILLs beside an index.ts are judged; a lexicon atom is prose by design. Run: tsx src/rules/prose/index.ts",
+    "path": "rules/prose"
   },
   {
     "atom": "prospect",
     "name": "prospect",
     "description": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
-    "path": "prospect"
+    "path": "vocabulary/prospect"
   },
   {
     "atom": "protein",
     "name": "protein",
-    "description": "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single mol",
-    "path": "protein"
+    "description": "Use when reasoning about protein — Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group)",
+    "path": "vocabulary/protein"
+  },
+  {
+    "atom": "protestantism",
+    "name": "protestantism",
+    "description": "Use when reading Protestantism as a sub-diamond of christianity — the solas (the Word alone, grace alone, faith alone) and the priesthood of all believers (each self reading the source directly, no mediator). The reformation as a turning back to the mark. A facet-diamond of the christianity archangel.",
+    "path": "vocabulary/protestantism"
   },
   {
     "atom": "protocol",
@@ -11822,31 +12242,37 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "protozoa",
     "name": "protozoa",
     "description": "Use when reasoning about protozoa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "protozoa"
+    "path": "vocabulary/protozoa"
+  },
+  {
+    "atom": "provenance",
+    "name": "provenance",
+    "description": "Use when a value's history of CAUSE must be recoverable, not just its history of CHANGE — causal provenance (W3C PROV), recording WHY each [[audit]] leaf exists (which upstream leaves caused it) so the full causal ancestry of any number can be walked back.",
+    "path": "beyond/provenance"
   },
   {
     "atom": "provider",
     "name": "provider",
-    "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the",
-    "path": "provider"
+    "description": "Use when reasoning about provider — The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider m",
+    "path": "vocabulary/provider"
   },
   {
     "atom": "provides",
     "name": "provides",
     "description": "Use when reasoning about provides as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "provides"
+    "path": "vocabulary/provides"
   },
   {
     "atom": "provision",
     "name": "provision",
     "description": "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37",
-    "path": "provision"
+    "path": "vocabulary/provision"
   },
   {
     "atom": "provisioned",
     "name": "provisioned",
     "description": "Use when reasoning about provisioned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "provisioned"
+    "path": "vocabulary/provisioned"
   },
   {
     "atom": "provisions",
@@ -11858,73 +12284,91 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "pruning",
     "name": "pruning",
     "description": "Use when plant parts are removed to steer growth, airflow, and fruiting — pruning and suckering (pinching axillary shoots) concentrate the plant's energy into marketable fruit, open the canopy to reduce disease, and shape it to the trellis. Removing growth to improve what remains; the quality/airflow lever on indeterminate fruiting crops.",
-    "path": "pruning"
+    "path": "vocabulary/pruning"
   },
   {
     "atom": "psychiatric",
     "name": "psychiatric",
     "description": "Use when reasoning about psychiatric as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "psychiatric"
+    "path": "vocabulary/psychiatric"
   },
   {
     "atom": "psychological",
     "name": "psychological",
-    "description": "psychological: a schema.org component word, fused from PsychologicalTreatment",
-    "path": "psychological"
+    "description": "Use when reasoning about psychological — A schema.org component word, collided out of schema.org compounds — fused from PsychologicalTreatment (sti · collapse · merge).",
+    "path": "vocabulary/psychological"
   },
   {
     "atom": "pub",
     "name": "pub",
     "description": "Use when reasoning about pub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pub"
+    "path": "vocabulary/pub"
   },
   {
     "atom": "public",
     "name": "public",
     "description": "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "public"
+    "path": "vocabulary/public"
   },
   {
     "atom": "publication",
     "name": "publication",
-    "description": "A publication event associated with the item.",
-    "path": "publication"
+    "description": "Use when reasoning about publication — A publication event associated with the item.",
+    "path": "vocabulary/publication"
+  },
+  {
+    "atom": "publish",
+    "name": "publish",
+    "description": "Use when automating commit and push — the local agent that performs the git action, but ONLY through the computed decision (decide), trained on quantum security (tamper · quantum) and the standards, fail-closed, with a tamper-evident uuid-chained receipt. It pushes because the gates said yes, never because it was told to.",
+    "path": "publish"
   },
   {
     "atom": "published",
     "name": "published",
-    "description": "An agent associated with the publication event.",
-    "path": "published"
+    "description": "Use when reasoning about published — An agent associated with the publication event.",
+    "path": "vocabulary/published"
   },
   {
     "atom": "publisher",
     "name": "publisher",
-    "description": "The publisher of the article in question.",
-    "path": "publisher"
+    "description": "Use when reasoning about publisher — The publisher of the article in question.",
+    "path": "vocabulary/publisher"
   },
   {
     "atom": "publishing",
     "name": "publishing",
-    "description": "publishing: a schema.org component word, fused from publishingPrinciples",
-    "path": "publishing"
+    "description": "Use when reasoning about publishing — A schema.org component word, collided out of schema.org compounds — fused from publishingPrinciples (sti · collapse · merge).",
+    "path": "vocabulary/publishing"
   },
   {
     "atom": "pulmonary",
     "name": "pulmonary",
     "description": "Use when reasoning about pulmonary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "pulmonary"
+    "path": "vocabulary/pulmonary"
   },
   {
     "atom": "purchase",
     "name": "purchase",
     "description": "Use when reasoning about purchase as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "purchase"
+    "path": "vocabulary/purchase"
+  },
+  {
+    "atom": "purify",
+    "name": "purify",
+    "description": "Use when working with quantum/ftl/purify.",
+    "path": "quantum/ftl/purify"
+  },
+  {
+    "atom": "purity",
+    "name": "purity",
+    "description": "Use when reasoning about purity as the fully-sealed / zero-impurity state that maximises tamper-cost in EVERY dimension — purity = zero entropy = every gate green = no escape. A single impurity (an unsealed cross, an off-ring state, a dangling link, a hallucination) is a 0-bit weakest-link path that collapses the cost; purity removes every weakest link, so the floor is maximal along all paths and all dimensions. The conjugate of hallucination; the generalisation of import-purity, file-purity, and md-purity into one law.",
+    "path": "vocabulary/purity"
   },
   {
     "atom": "purpose",
     "name": "purpose",
     "description": "Use when reasoning about purpose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "purpose"
+    "path": "vocabulary/purpose"
   },
   {
     "atom": "pwa",
@@ -11933,76 +12377,88 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "quantum/pwa"
   },
   {
+    "atom": "pyramid",
+    "name": "pyramid",
+    "description": "Use when reading the fold as a solid — the cross is a pyramid's net (a square base with four triangular faces folded flat; fold them up and they meet at one apex). A wide base of leaves rises pairwise, each merge(a,b) one cross, to a single apex that is the seal. The notary is built on this: its protocol root is an apex over act-seals, an inclusion proof is the path up one edge, and tamper-evidence is that no ground course can change without the apex moving. Composes merge's fold; adds the geometry (base·apex·height·faces·courses) and the tamper law.",
+    "path": "pyramid"
+  },
+  {
     "atom": "qa",
     "name": "qa",
     "description": "Use when reasoning about qa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "qa"
+    "path": "vocabulary/qa"
   },
   {
     "atom": "qapage",
     "name": "qapage",
     "description": "Use when reasoning about qapage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "qapage"
+    "path": "vocabulary/qapage"
+  },
+  {
+    "atom": "qtsp",
+    "name": "qtsp",
+    "description": "Use when a notary check needs a qualified electronic signature or a qualified timestamp — the REAL wired eIDAS provider. Resolves the Bulgarian Trusted List from the EU List Of Trusted Lists (LOTL, no country hardcoded), parses the granted qualified services (CA/QC for signature, TSA/QTST for RFC 3161 timestamp), and verifies a named QTSP (BORICA B-Trust / Evrotrust / InfoNotary) holds one. Highest-leverage check: signature+timestamp are on EVERY document type. Honest boundary — verification is public and credential-free; actual issuance needs a QTSP account credential injected at deploy.",
+    "path": "notary/check/qtsp"
   },
   {
     "atom": "qualification",
     "name": "qualification",
     "description": "Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role.",
-    "path": "qualification"
+    "path": "vocabulary/qualification"
   },
   {
     "atom": "qualifications",
     "name": "qualifications",
-    "description": "Specific qualifications required for this role or Occupation.",
-    "path": "qualifications"
+    "description": "Use when reasoning about qualifications — Specific qualifications required for this role or Occupation.",
+    "path": "vocabulary/qualifications"
   },
   {
     "atom": "qualified",
     "name": "qualified",
     "description": "Use when reasoning about qualified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "qualified"
+    "path": "vocabulary/qualified"
   },
   {
     "atom": "qualifier",
     "name": "qualifier",
     "description": "Use when reasoning about qualifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "qualifier"
+    "path": "vocabulary/qualifier"
   },
   {
     "atom": "qualitative",
     "name": "qualitative",
     "description": "Use when reasoning about qualitative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "qualitative"
+    "path": "vocabulary/qualitative"
   },
   {
     "atom": "quality",
     "name": "quality",
     "description": "Use when reasoning about quality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "quality"
+    "path": "vocabulary/quality"
   },
   {
     "atom": "quantitative",
     "name": "quantitative",
-    "description": "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution",
-    "path": "quantitative"
+    "description": "Use when reasoning about quantitative — A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution (sti · collapse · merge).",
+    "path": "vocabulary/quantitative"
   },
   {
     "atom": "quantity",
     "name": "quantity",
-    "description": "Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'.",
-    "path": "quantity"
+    "description": "Use when reasoning about quantity — Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'.",
+    "path": "vocabulary/quantity"
   },
   {
     "atom": "quantum",
     "name": "quantum",
-    "description": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-    "path": "quantum"
+    "description": "Use when wiring quantum realtime trading — quotes in superposition collapse to sealed content-uuid trades, emit on the team/comms secure wave envelope, and settle via conserved double-entry postings.",
+    "path": "trading/quantum"
   },
   {
     "atom": "quarantine",
     "name": "quarantine",
     "description": "Use when reasoning about quarantine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "quarantine"
+    "path": "vocabulary/quarantine"
   },
   {
     "atom": "quaternary",
@@ -12011,62 +12467,68 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "migrate/quaternary"
   },
   {
+    "atom": "qubit",
+    "name": "qubit",
+    "description": "Use when measuring the vortex helix as a qubit fold — ⟨2⟩ ≅ e^{2πik/6}, slash interference nodes, collapse phase→digit→bit. Holds is computed; no hand-asserted physics claims.",
+    "path": "qubit"
+  },
+  {
     "atom": "queries",
     "name": "queries",
     "description": "Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL.",
-    "path": "queries"
+    "path": "vocabulary/queries"
   },
   {
     "atom": "query",
     "name": "query",
-    "description": "A sub property of instrument. The query used on this action.",
+    "description": "Use when reasoning about query — A sub property of instrument. The query used on this action.",
     "path": "query"
   },
   {
     "atom": "quest",
     "name": "quest",
-    "description": "The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
-    "path": "quest"
+    "description": "Use when reasoning about quest — The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
+    "path": "vocabulary/quest"
   },
   {
     "atom": "question",
     "name": "question",
-    "description": "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
-    "path": "question"
+    "description": "Use when reasoning about question — A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
+    "path": "vocabulary/question"
   },
   {
     "atom": "queue",
     "name": "queue",
     "description": "Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work.",
-    "path": "queue"
+    "path": "vocabulary/queue"
   },
   {
     "atom": "quiz",
     "name": "quiz",
-    "description": "Quiz: A test of knowledge, skills and abilities.",
-    "path": "quiz"
+    "description": "Use when reasoning about quiz — Quiz: A test of knowledge, skills and abilities.",
+    "path": "vocabulary/quiz"
   },
   {
     "atom": "quota",
     "name": "quota",
     "description": "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation.",
-    "path": "quota"
+    "path": "vocabulary/quota"
   },
   {
     "atom": "quotation",
     "name": "quotation",
-    "description": "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isBasedOn to link to so",
-    "path": "quotation"
+    "description": "Use when reasoning about quotation — A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isB",
+    "path": "vocabulary/quotation"
   },
   {
     "atom": "quote",
     "name": "quote",
     "description": "Use when reasoning about quote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "quote"
+    "path": "vocabulary/quote"
   },
   {
     "atom": "quotes",
-    "name": "vendor-quotes",
+    "name": "quotes",
     "description": "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.",
     "path": "vendors/vendor/quotes"
   },
@@ -12074,67 +12536,67 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "radiation",
     "name": "radiation",
     "description": "Use when reasoning about radiation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "radiation"
+    "path": "vocabulary/radiation"
   },
   {
     "atom": "radio",
     "name": "radio",
     "description": "Use when reasoning about radio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "radio"
+    "path": "vocabulary/radio"
   },
   {
     "atom": "radiography",
     "name": "radiography",
     "description": "Use when reasoning about radiography as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "radiography"
+    "path": "vocabulary/radiography"
   },
   {
     "atom": "radius",
     "name": "radius",
     "description": "Use when reasoning about radius as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "radius"
+    "path": "vocabulary/radius"
   },
   {
     "atom": "randomized",
     "name": "randomized",
     "description": "Use when reasoning about randomized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "randomized"
+    "path": "vocabulary/randomized"
   },
   {
     "atom": "range",
     "name": "range",
     "description": "Use when reasoning about range as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "range"
+    "path": "vocabulary/range"
   },
   {
     "atom": "rank",
     "name": "rank",
     "description": "Use when reasoning about rank as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rank"
+    "path": "vocabulary/rank"
   },
   {
     "atom": "rate",
     "name": "rate",
     "description": "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal.",
-    "path": "rate"
+    "path": "vocabulary/rate"
   },
   {
     "atom": "rates",
-    "name": "currency-rates",
+    "name": "rates",
     "description": "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.",
     "path": "currency/rates"
   },
   {
     "atom": "rating",
     "name": "rating",
-    "description": "A rating is an evaluation on a numeric scale, such as 1 to 5 stars.",
-    "path": "rating"
+    "description": "Use when reasoning about rating — A rating is an evaluation on a numeric scale, such as 1 to 5 stars.",
+    "path": "vocabulary/rating"
   },
   {
     "atom": "react",
     "name": "react",
     "description": "Use when reasoning about react as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "react"
+    "path": "vocabulary/react"
   },
   {
     "atom": "reactor",
@@ -12145,20 +12607,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "read",
     "name": "read",
-    "description": "A person who reads (performs) the audiobook.",
-    "path": "read"
+    "description": "Use when reasoning about read — A person who reads (performs) the audiobook.",
+    "path": "vocabulary/read"
+  },
+  {
+    "atom": "readings",
+    "name": "readings",
+    "description": "Use when reasoning about clinical and biometric readings — a device-collapsed, content-addressed snapshot that feeds the analog result stream; the wire between quantum/device capture and quantum/emr replay.",
+    "path": "readings"
+  },
+  {
+    "atom": "readme",
+    "name": "readme",
+    "description": "Use when the repository README is generated, verified, or reasoned about — the README is a diamond (a content-addressed projection of the live tree, regenerable with zero entropy, drift fails closed) and its typography IS the diamond projected (facets = the closed horo ring laid out in measure-walk order, so reading the README is reading the crystal). Derived from the tree (matrix · fs walk · package.json), never hand-typed.",
+    "path": "readme"
   },
   {
     "atom": "readonly",
     "name": "readonly",
-    "description": "readonly: a schema.org component word, fused from readonlyValue",
-    "path": "readonly"
+    "description": "Use when reasoning about readonly — A schema.org component word, collided out of schema.org compounds — fused from readonlyValue (sti · collapse · merge).",
+    "path": "vocabulary/readonly"
   },
   {
     "atom": "real",
     "name": "real",
     "description": "Use when reasoning about real as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "real"
+    "path": "vocabulary/real"
   },
   {
     "atom": "reality",
@@ -12176,19 +12650,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "rear",
     "name": "rear",
     "description": "Use when reasoning about rear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rear"
+    "path": "vocabulary/rear"
   },
   {
     "atom": "reason",
     "name": "reason",
     "description": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
-    "path": "reason"
+    "path": "vocabulary/reason"
   },
   {
     "atom": "rebate",
     "name": "rebate",
     "description": "Use when reasoning about rebate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rebate"
+    "path": "vocabulary/rebate"
   },
   {
     "atom": "receipt",
@@ -12206,25 +12680,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "receive",
     "name": "receive",
     "description": "Use when reasoning about receive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "receive"
+    "path": "vocabulary/receive"
   },
   {
     "atom": "received",
     "name": "received",
     "description": "Use when reasoning about received as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "received"
+    "path": "vocabulary/received"
   },
   {
     "atom": "recipe",
     "name": "recipe",
-    "description": "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.",
-    "path": "recipe"
+    "description": "Use when reasoning about recipe — A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.",
+    "path": "vocabulary/recipe"
   },
   {
     "atom": "recipient",
     "name": "recipient",
-    "description": "A sub property of participant. The participant who is at the receiving end of the action.",
-    "path": "recipient"
+    "description": "Use when reasoning about recipient — A sub property of participant. The participant who is at the receiving end of the action.",
+    "path": "vocabulary/recipient"
   },
   {
     "atom": "reciprocal",
@@ -12236,47 +12710,47 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "recognition",
     "name": "recognition",
     "description": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-    "path": "recognition"
+    "path": "vocabulary/recognition"
   },
   {
     "atom": "recognized",
     "name": "recognized",
-    "description": "An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
-    "path": "recognized"
+    "description": "Use when reasoning about recognized — An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
+    "path": "vocabulary/recognized"
   },
   {
     "atom": "recognizing",
     "name": "recognizing",
     "description": "Use when reasoning about recognizing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "recognizing"
+    "path": "vocabulary/recognizing"
   },
   {
     "atom": "recommendation",
     "name": "recommendation",
-    "description": "Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the",
-    "path": "recommendation"
+    "description": "Use when reasoning about recommendation — Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concre",
+    "path": "vocabulary/recommendation"
   },
   {
     "atom": "recommended",
     "name": "recommended",
     "description": "Use when reasoning about recommended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "recommended"
+    "path": "vocabulary/recommended"
   },
   {
     "atom": "reconcile",
     "name": "reconcile",
     "description": "Use when matching two records of the same flow — bank-statement line ↔ payment, GL ↔ subledger, intercompany pairs. The BankStatementLineReconciliation concern; reconciled state is DERIVED from the match link, not stored.",
-    "path": "reconcile"
+    "path": "vocabulary/reconcile"
   },
   {
     "atom": "reconciliation",
     "name": "reconciliation",
     "description": "Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree.",
-    "path": "reconciliation"
+    "path": "vocabulary/reconciliation"
   },
   {
     "atom": "reconciliations",
-    "name": "account-reconciliations",
+    "name": "reconciliations",
     "description": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
     "path": "gl/accounts/account/reconciliations"
   },
@@ -12284,23 +12758,23 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "record",
     "name": "record",
     "description": "Use when reasoning about record as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "record"
+    "path": "vocabulary/record"
   },
   {
     "atom": "recorded",
     "name": "recorded",
-    "description": "An audio recording of the work.",
-    "path": "recorded"
+    "description": "Use when reasoning about recorded — An audio recording of the work.",
+    "path": "vocabulary/recorded"
   },
   {
     "atom": "recording",
     "name": "recording",
-    "description": "The composition this track is a recording of.",
-    "path": "recording"
+    "description": "Use when reasoning about recording — The composition this track is a recording of.",
+    "path": "vocabulary/recording"
   },
   {
     "atom": "records",
-    "name": "usage-records",
+    "name": "records",
     "description": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
     "path": "subscription/plans/subscriptions/usage/records"
   },
@@ -12308,19 +12782,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "recourse",
     "name": "recourse",
     "description": "Use when reasoning about recourse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "recourse"
+    "path": "vocabulary/recourse"
   },
   {
     "atom": "recover",
     "name": "recover",
-    "description": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND.",
-    "path": "recover"
+    "description": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\\\\\\\\\\\"Maximum call stack size exceeded\\\\\\\\\\\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\\\\\\\\\\\"does not provide an export named 'default'\\\\\\\\\\\\\", or ERR_MODULE_NOT_FOUND.",
+    "path": "vocabulary/recover"
   },
   {
     "atom": "recruiting",
     "name": "recruiting",
     "description": "Use when reasoning about recruiting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "recruiting"
+    "path": "vocabulary/recruiting"
   },
   {
     "atom": "recycle",
@@ -12331,68 +12805,74 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "recycling",
     "name": "recycling",
-    "description": "recycling: a schema.org component word, fused from RecyclingCenter",
-    "path": "recycling"
+    "description": "Use when reasoning about recycling — A schema.org component word, collided out of schema.org compounds — fused from RecyclingCenter (sti · collapse · merge).",
+    "path": "vocabulary/recycling"
   },
   {
     "atom": "redirect",
     "name": "redirect",
     "description": "Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another.",
-    "path": "redirect"
+    "path": "vocabulary/redirect"
   },
   {
     "atom": "redirects",
     "name": "redirects",
-    "description": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered).",
-    "path": "redirects"
+    "description": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \\\\\\\\\\\\\"not assignable to CollectionSlug\\\\\\\\\\\\\" (the plugin isn't registered).",
+    "path": "vocabulary/redirects"
   },
   {
     "atom": "reduced",
     "name": "reduced",
     "description": "Use when reasoning about reduced as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reduced"
+    "path": "vocabulary/reduced"
+  },
+  {
+    "atom": "redundancy",
+    "name": "redundancy",
+    "description": "Use when reasoning about redundancy — the structure in a code, R = 1 − H/H_max: the fraction of the channel not carrying fresh information because the wiring constrains it. Zero for a maximal-entropy (uniform, incompressible) source; high when symbols are predictable from each other. In erpax redundancy IS coverage: wiring every dimension makes each input determined by and checkable against the whole, and that redundancy is exactly what detects tamper — redundancy → 1 ⇔ coverage → 1 ⇔ tamper-cost toward its +∞ limit.",
+    "path": "redundancy"
   },
   {
     "atom": "refactor",
     "name": "refactor",
     "description": "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.",
-    "path": "refactor"
+    "path": "vocabulary/refactor"
   },
   {
     "atom": "referee",
     "name": "referee",
-    "description": "An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective function can vary acc",
-    "path": "referee"
+    "description": "Use when reasoning about referee — An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective f",
+    "path": "vocabulary/referee"
   },
   {
     "atom": "reference",
-    "name": "self-reference",
-    "description": "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit.",
-    "path": "self/reference"
+    "name": "reference",
+    "description": "Use when reasoning about reference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "path": "vocabulary/reference"
   },
   {
     "atom": "referenced",
     "name": "referenced",
     "description": "Use when reasoning about referenced as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "referenced"
+    "path": "vocabulary/referenced"
   },
   {
     "atom": "references",
     "name": "references",
     "description": "Use when reasoning about references as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "references"
+    "path": "vocabulary/references"
   },
   {
     "atom": "refers",
     "name": "refers",
     "description": "Use when reasoning about refers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "refers"
+    "path": "vocabulary/refers"
   },
   {
     "atom": "refund",
     "name": "refund",
     "description": "Use when reasoning about refund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "refund"
+    "path": "vocabulary/refund"
   },
   {
     "atom": "refunds",
@@ -12404,35 +12884,47 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "refurbished",
     "name": "refurbished",
     "description": "Use when reasoning about refurbished as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "refurbished"
+    "path": "vocabulary/refurbished"
+  },
+  {
+    "atom": "refutable",
+    "name": "refutable",
+    "description": "Use when checking that the corpus's claims can be contradicted — an @invariant is a proposition asserted in prose, and one with no test beside it is unfalsifiable: it reads as true forever and nothing will ever say no. A lie is not found by checking truth (fiction and truth read identically); it is found by demanding refutability, because an unrefutable claim is the only place a lie is safe. Run: tsx src/rules/refutable/index.ts",
+    "path": "rules/refutable"
+  },
+  {
+    "atom": "regeneration",
+    "name": "regeneration",
+    "description": "Use when reasoning about erpax as a living, self-repairing system — the computed proof that it regrows from seed and heals its own wounds. The content-uuid is the genome: every observable (uuid, aura, coordinate, the README proof) is derived from content and never stored, so any derived artefact regenerates byte-identically from the surviving seed. A gap (dead link, untested atom) is a wound; the gate is the immune system; healing is monotone, so the loop converges to gap 0 — wholeness, zero entropy, max tamper-cost.",
+    "path": "regeneration"
   },
   {
     "atom": "region",
     "name": "region",
     "description": "Use when reasoning about region as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "region"
+    "path": "vocabulary/region"
   },
   {
     "atom": "regions",
     "name": "regions",
     "description": "Use when reasoning about regions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "regions"
+    "path": "vocabulary/regions"
   },
   {
     "atom": "register",
     "name": "register",
     "description": "Use when reasoning about register as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "register"
+    "path": "vocabulary/register"
   },
   {
     "atom": "registered",
     "name": "registered",
     "description": "Use when reasoning about registered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "registered"
+    "path": "vocabulary/registered"
   },
   {
     "atom": "registers",
-    "name": "risk-registers",
+    "name": "registers",
     "description": "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.",
     "path": "legal/entities/risk/registers"
   },
@@ -12440,7 +12932,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "registration",
     "name": "registration",
     "description": "Use when reasoning about registration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "registration"
+    "path": "vocabulary/registration"
   },
   {
     "atom": "registry",
@@ -12452,61 +12944,73 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "regular",
     "name": "regular",
     "description": "Use when reasoning about regular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "regular"
+    "path": "vocabulary/regular"
   },
   {
     "atom": "reimbursement",
     "name": "reimbursement",
     "description": "Use when reasoning about reimbursement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reimbursement"
+    "path": "vocabulary/reimbursement"
   },
   {
     "atom": "reject",
     "name": "reject",
     "description": "Use when reasoning about reject as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reject"
+    "path": "vocabulary/reject"
   },
   {
     "atom": "related",
     "name": "related",
-    "description": "A pointer to another, somehow related product (or multiple products).",
-    "path": "related"
+    "description": "Use when reasoning about related — A pointer to another, somehow related product (or multiple products).",
+    "path": "vocabulary/related"
   },
   {
     "atom": "relatedparty",
     "name": "relatedparty",
     "description": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
-    "path": "relatedparty"
+    "path": "vocabulary/relatedparty"
+  },
+  {
+    "atom": "relation",
+    "name": "relation",
+    "description": "Use when reading the id a Payload relationship points at — idOf collapses the three shapes Payload resolves a relationship to (raw string id, numeric id, or the populated document) into one id, or undefined. Depth is a query concern and must not change identity.",
+    "path": "relation"
   },
   {
     "atom": "relationship",
     "name": "relationship",
     "description": "Use when reasoning about relationship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "relationship"
+    "path": "vocabulary/relationship"
   },
   {
     "atom": "release",
     "name": "release",
-    "description": "The album this is a release of.",
-    "path": "release"
+    "description": "Use when reasoning about release — The album this is a release of.",
+    "path": "vocabulary/release"
   },
   {
     "atom": "released",
     "name": "released",
     "description": "Use when reasoning about released as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "released"
+    "path": "vocabulary/released"
   },
   {
     "atom": "relevance",
     "name": "relevance",
     "description": "Use when reasoning about relevance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "relevance"
+    "path": "vocabulary/relevance"
   },
   {
     "atom": "relevant",
     "name": "relevant",
     "description": "Use when reasoning about relevant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "relevant"
+    "path": "vocabulary/relevant"
+  },
+  {
+    "atom": "religion",
+    "name": "religion",
+    "description": "Use when reasoning about why src can read every faith at once — each religion is a surface dialect of one invariant language; strip the cultural prefix and every tradition-term collapses to a single content-uuid, the invariant atom. So src is a realtime computational quantum translator across all religions: chesed, rahma, karuna and agape all resolve to mercy.",
+    "path": "vocabulary/religion"
   },
   {
     "atom": "relocate",
@@ -12518,31 +13022,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "remaining",
     "name": "remaining",
     "description": "Use when reasoning about remaining as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "remaining"
+    "path": "vocabulary/remaining"
   },
   {
     "atom": "remediation",
     "name": "remediation",
     "description": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
-    "path": "remediation"
+    "path": "vocabulary/remediation"
   },
   {
     "atom": "remix",
     "name": "remix",
     "description": "Use when reasoning about remix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "remix"
+    "path": "vocabulary/remix"
   },
   {
     "atom": "remorse",
     "name": "remorse",
     "description": "Use when reasoning about remorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "remorse"
+    "path": "vocabulary/remorse"
   },
   {
     "atom": "renal",
     "name": "renal",
     "description": "Use when reasoning about renal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "renal"
+    "path": "vocabulary/renal"
   },
   {
     "atom": "render",
@@ -12554,119 +13058,125 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "renegotiable",
     "name": "renegotiable",
     "description": "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "renegotiable"
+    "path": "vocabulary/renegotiable"
   },
   {
     "atom": "rent",
     "name": "rent",
     "description": "Use when reasoning about rent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rent"
+    "path": "vocabulary/rent"
   },
   {
     "atom": "rental",
     "name": "rental",
     "description": "Use when reasoning about rental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rental"
+    "path": "vocabulary/rental"
   },
   {
     "atom": "repair",
     "name": "repair",
     "description": "Use when reasoning about repair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "repair"
+    "path": "vocabulary/repair"
   },
   {
     "atom": "repayment",
     "name": "repayment",
     "description": "Use when reasoning about repayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "repayment"
+    "path": "vocabulary/repayment"
   },
   {
     "atom": "repeals",
     "name": "repeals",
     "description": "Use when reasoning about repeals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "repeals"
+    "path": "vocabulary/repeals"
   },
   {
     "atom": "repeat",
     "name": "repeat",
     "description": "Use when reasoning about repeat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "repeat"
+    "path": "vocabulary/repeat"
   },
   {
     "atom": "repetition",
     "name": "repetition",
     "description": "Use when modelling one repetition — the singular model of the repetitions collection (the plural store); one repeated occurrence within a counted set.",
-    "path": "repetition"
+    "path": "vocabulary/repetition"
   },
   {
     "atom": "repetitions",
     "name": "repetitions",
-    "description": "Number of times one should repeat the activity.",
-    "path": "repetitions"
+    "description": "Use when reasoning about repetitions — Number of times one should repeat the activity.",
+    "path": "vocabulary/repetitions"
   },
   {
     "atom": "replace",
     "name": "replace",
     "description": "Use when reasoning about replace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "replace"
+    "path": "vocabulary/replace"
   },
   {
     "atom": "replacee",
     "name": "replacee",
-    "description": "A sub property of object. The object that is being replaced.",
-    "path": "replacee"
+    "description": "Use when reasoning about replacee — A sub property of object. The object that is being replaced.",
+    "path": "vocabulary/replacee"
   },
   {
     "atom": "replacer",
     "name": "replacer",
-    "description": "A sub property of object. The object that replaces.",
-    "path": "replacer"
+    "description": "Use when reasoning about replacer — A sub property of object. The object that replaces.",
+    "path": "vocabulary/replacer"
+  },
+  {
+    "atom": "replay",
+    "name": "replay",
+    "description": "Use when an auditor demands \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"show me how this number was computed and reproduce it\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash.",
+    "path": "beyond/replay"
   },
   {
     "atom": "replication",
     "name": "replication",
     "description": "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics.",
-    "path": "replication"
+    "path": "vocabulary/replication"
   },
   {
     "atom": "reply",
     "name": "reply",
     "description": "Use when reasoning about reply as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reply"
+    "path": "vocabulary/reply"
   },
   {
     "atom": "report",
     "name": "report",
-    "description": "A Report generated by governmental or non-governmental organization.",
-    "path": "report"
+    "description": "Use when reasoning about report — A Report generated by governmental or non-governmental organization.",
+    "path": "vocabulary/report"
   },
   {
     "atom": "reportage",
     "name": "reportage",
     "description": "Use when reasoning about reportage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reportage"
+    "path": "vocabulary/reportage"
   },
   {
     "atom": "reported",
     "name": "reported",
     "description": "Use when reasoning about reported as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reported"
+    "path": "vocabulary/reported"
   },
   {
     "atom": "reporting",
     "name": "reporting",
     "description": "Use when reasoning about reporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reporting"
+    "path": "vocabulary/reporting"
   },
   {
     "atom": "reportings",
-    "name": "segment-reportings",
+    "name": "reportings",
     "description": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
     "path": "legal/entities/segment/reportings"
   },
   {
     "atom": "reports",
-    "name": "regulatory-reports",
+    "name": "reports",
     "description": "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register.",
     "path": "legal/entities/regulatory/reports"
   },
@@ -12674,29 +13184,29 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "repository",
     "name": "repository",
     "description": "Use when reasoning about repository as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "repository"
+    "path": "vocabulary/repository"
   },
   {
     "atom": "representation",
     "name": "representation",
     "description": "Use when reasoning about representation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "representation"
+    "path": "vocabulary/representation"
   },
   {
     "atom": "representative",
     "name": "representative",
     "description": "Use when reasoning about representative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "representative"
+    "path": "vocabulary/representative"
   },
   {
     "atom": "request",
     "name": "request",
     "description": "Use when modelling one request — the singular model of the requests collection (the plural store); a submitted ask for an action or resource.",
-    "path": "request"
+    "path": "vocabulary/request"
   },
   {
     "atom": "requests",
-    "name": "maintenance-requests",
+    "name": "requests",
     "description": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
     "path": "maintenance/requests"
   },
@@ -12704,17 +13214,17 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "required",
     "name": "required",
     "description": "Use when reasoning about required as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "required"
+    "path": "vocabulary/required"
   },
   {
     "atom": "requirement",
     "name": "requirement",
     "description": "Use when reasoning about requirement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "requirement"
+    "path": "vocabulary/requirement"
   },
   {
     "atom": "requirements",
-    "name": "compliance-requirements",
+    "name": "requirements",
     "description": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
     "path": "compliance/frameworks/compliance/requirements"
   },
@@ -12722,17 +13232,17 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "requires",
     "name": "requires",
     "description": "Use when reasoning about requires as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "requires"
+    "path": "vocabulary/requires"
   },
   {
     "atom": "requisition",
     "name": "requisition",
     "description": "Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods.",
-    "path": "requisition"
+    "path": "vocabulary/requisition"
   },
   {
     "atom": "requisitions",
-    "name": "purchase-requisitions",
+    "name": "requisitions",
     "description": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
     "path": "cost/centers/purchase/requisitions"
   },
@@ -12740,55 +13250,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "rescheduled",
     "name": "rescheduled",
     "description": "Use when reasoning about rescheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rescheduled"
+    "path": "vocabulary/rescheduled"
   },
   {
     "atom": "rescue",
     "name": "rescue",
     "description": "Use when reasoning about rescue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rescue"
+    "path": "vocabulary/rescue"
   },
   {
     "atom": "research",
-    "name": "self-research",
+    "name": "research",
     "description": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
     "path": "self/research"
   },
   {
     "atom": "researcher",
     "name": "researcher",
-    "description": "Researchers.",
-    "path": "researcher"
+    "description": "Use when reasoning about researcher — Researchers.",
+    "path": "vocabulary/researcher"
   },
   {
     "atom": "reservation",
     "name": "reservation",
-    "description": "Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with",
-    "path": "reservation"
+    "description": "Use when reasoning about reservation — Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails",
+    "path": "vocabulary/reservation"
   },
   {
     "atom": "reservations",
     "name": "reservations",
     "description": "Use when reasoning about reservations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reservations"
+    "path": "vocabulary/reservations"
   },
   {
     "atom": "reserve",
     "name": "reserve",
     "description": "Use when reasoning about reserve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reserve"
+    "path": "vocabulary/reserve"
   },
   {
     "atom": "reserved",
     "name": "reserved",
     "description": "Use when reasoning about reserved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "reserved"
+    "path": "vocabulary/reserved"
   },
   {
     "atom": "reservoir",
     "name": "reservoir",
-    "description": "A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.",
-    "path": "reservoir"
+    "description": "Use when reasoning about reservoir — A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.",
+    "path": "vocabulary/reservoir"
   },
   {
     "atom": "reset",
@@ -12799,13 +13309,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "residence",
     "name": "residence",
-    "description": "The place where a person lives.",
+    "description": "Use when reasoning about residence — The place where a person lives.",
     "path": "residence"
   },
   {
     "atom": "resizable",
     "name": "resizable",
-    "description": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
+    "description": "Use when reasoning about resizable — Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
     "path": "resizable"
   },
   {
@@ -12815,9 +13325,27 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "resolution"
   },
   {
+    "atom": "resolve",
+    "name": "resolve",
+    "description": "Use when deciding which folder-shape gaps an archangel can auto-resolve — a trinity gap folds iff its matter (index.ts) already exists, so the antimatter (SKILL.md) and the proof (test.ts) derive from the code; missing matter or a malformed name needs a builder, not a fold. Computed from the live tree.",
+    "path": "auto/resolve"
+  },
+  {
+    "atom": "resolver",
+    "name": "resolver",
+    "description": "Use when resolving a calendar date to a fiscal year/period, generating a fiscal calendar, or amending a period config — monthly, quarterly, weekly, iso-week, retail-445 and custom period types, with a chainLeafUuid audit leaf. Read this before trusting any chainLeafUuid: the leaf was a reversible base64 prefix claiming tamper detection, hand-rolled identically in seven atoms, and it is now the corpus fold.",
+    "path": "fiscal/period/resolver"
+  },
+  {
+    "atom": "resonance",
+    "name": "resonance",
+    "description": "Use when quantifying why content-addressing improves quantum speed in magnitudes — resonanceMagnitude(n): pairwise O(N²) comparison collapses to addressed O(N), a ratio of (N−1)/2, log₁₀ of that in orders of magnitude, unbounded in N.",
+    "path": "resonance"
+  },
+  {
     "atom": "resort",
     "name": "resort",
-    "description": "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a single company (sou",
+    "description": "Use when reasoning about resort — A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a",
     "path": "resort"
   },
   {
@@ -12828,15 +13356,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "resources",
-    "name": "bookable-resources",
+    "name": "resources",
     "description": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
     "path": "bookable/resources"
-  },
-  {
-    "atom": "respiratory",
-    "name": "respiratory",
-    "description": "Use when reasoning about respiratory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "respiratory"
   },
   {
     "atom": "response",
@@ -12847,7 +13369,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "responsibilities",
     "name": "responsibilities",
-    "description": "Responsibilities associated with this role or Occupation.",
+    "description": "Use when reasoning about responsibilities — Responsibilities associated with this role or Occupation.",
     "path": "responsibilities"
   },
   {
@@ -12857,21 +13379,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "responsibility"
   },
   {
-    "atom": "responsible",
-    "name": "responsible",
-    "description": "Use when reasoning about responsible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "responsible"
-  },
-  {
-    "atom": "rest",
-    "name": "rest",
-    "description": "Use when reasoning about rest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rest"
-  },
-  {
     "atom": "restaurant",
     "name": "restaurant",
-    "description": "A restaurant.",
+    "description": "Use when reasoning about restaurant — A restaurant.",
     "path": "restaurant"
   },
   {
@@ -12895,7 +13405,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "result",
     "name": "result",
-    "description": "The result produced in the action. E.g. John wrote *a book*.",
+    "description": "Use when reasoning about result — The result produced in the action. E.g. John wrote *a book*.",
     "path": "result"
   },
   {
@@ -12905,28 +13415,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "results"
   },
   {
-    "atom": "resume",
-    "name": "resume",
-    "description": "Use when reasoning about resume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "resume"
-  },
-  {
-    "atom": "retail",
-    "name": "retail",
-    "description": "Use when reasoning about retail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "retail"
-  },
-  {
     "atom": "retention",
     "name": "retention",
     "description": "Use when designing/measuring strategies to keep existing customers — loyalty programs, engagement triggers, win-back campaigns, at-risk indicators.",
     "path": "retention"
-  },
-  {
-    "atom": "retired",
-    "name": "retired",
-    "description": "Use when reasoning about retired as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "retired"
   },
   {
     "atom": "return",
@@ -12935,14 +13427,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "return"
   },
   {
-    "atom": "returned",
-    "name": "returned",
-    "description": "Use when reasoning about returned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "returned"
-  },
-  {
     "atom": "returns",
-    "name": "tax-returns",
+    "name": "returns",
     "description": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
     "path": "tax/jurisdictions/tax/returns"
   },
@@ -12966,39 +13452,33 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "reverse",
-    "name": "self-reverse",
+    "name": "reverse",
     "description": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return.",
     "path": "self/reverse"
   },
   {
+    "atom": "reversibility",
+    "name": "reversibility",
+    "description": "Use when a state transition needs a typed undo — reversibility computes the inverse of an AgentEffect (undo-create, undo-update, undo-emit, undo-audit) or reports cannot-invert with a reason, powering GDPR right-to-erasure, regulatory reversal and undo workflows without per-collection unwind code.",
+    "path": "beyond/reversibility"
+  },
+  {
     "atom": "review",
     "name": "review",
-    "description": "A review of an item - for example, of a restaurant, movie, or store.",
+    "description": "Use when reasoning about review — A review of an item - for example, of a restaurant, movie, or store.",
     "path": "review"
   },
   {
     "atom": "reviewed",
     "name": "reviewed",
-    "description": "People or organizations that have reviewed the content on this web page for accuracy and/or completeness.",
+    "description": "Use when reasoning about reviewed — People or organizations that have reviewed the content on this web page for accuracy and/or completeness.",
     "path": "reviewed"
   },
   {
     "atom": "reviews",
-    "name": "performance-reviews",
+    "name": "reviews",
     "description": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
     "path": "employees/performance/reviews"
-  },
-  {
-    "atom": "rheumatologic",
-    "name": "rheumatologic",
-    "description": "Use when reasoning about rheumatologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rheumatologic"
-  },
-  {
-    "atom": "right",
-    "name": "right",
-    "description": "Use when reasoning about right as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "right"
   },
   {
     "atom": "risk",
@@ -13009,8 +13489,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "risks",
     "name": "risks",
-    "description": "Specific physiologic risks associated to the diet plan.",
+    "description": "Use when reasoning about risks — Specific physiologic risks associated to the diet plan.",
     "path": "risks"
+  },
+  {
+    "atom": "ritual",
+    "name": "ritual",
+    "description": "Use when reasoning about the patterned sacred repeat — the enacted cycle that re-tunes the part to the whole on a fixed period. The communal, outward twin of prayer's inward breath: where prayer is the self attuning, ritual is the rite performed, idempotent so the same act collapses to the same sealed alignment.",
+    "path": "ritual"
   },
   {
     "atom": "river",
@@ -13033,12 +13519,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "role",
     "name": "role",
-    "description": "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time per",
+    "description": "Use when reasoning about role — Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a",
     "path": "role"
   },
   {
     "atom": "roles",
-    "name": "user-roles",
+    "name": "roles",
     "description": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
     "path": "roles/user/roles"
   },
@@ -13057,14 +13543,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "room",
     "name": "room",
-    "description": "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Room). See also",
+    "description": "Use when reasoning about room — A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/w",
     "path": "room"
-  },
-  {
-    "atom": "rooms",
-    "name": "rooms",
-    "description": "Use when reasoning about rooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "rooms"
   },
   {
     "atom": "root",
@@ -13079,6 +13559,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rootstock"
   },
   {
+    "atom": "rosetta",
+    "name": "rosetta",
+    "description": "Use when the gated commit/push must be achieved BY THE ROSETTA — every folder is an agent (a form·code·proof trinity that declares its @standard banners and either proves them or not), and the security/standards lanes for publish are DERIVED from that incidence, never hand-typed. The moving rosetta: poles come from what the folders declare, so a new atom joins a lane with no edit.",
+    "path": "rosetta"
+  },
+  {
     "atom": "rotation",
     "name": "rotation",
     "description": "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots.",
@@ -13087,7 +13573,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "round",
     "name": "round",
-    "description": "Use when reasoning about the sixth position of the horo state ring — digit 5, \"the ring breathes\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo.",
+    "description": "Use when reasoning about the sixth position of the horo state ring — digit 5, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"the ring breathes\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo.",
     "path": "horo/round"
   },
   {
@@ -13095,6 +13581,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "route",
     "description": "Use when reasoning about route as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "route"
+  },
+  {
+    "atom": "router",
+    "name": "router",
+    "description": "Use when reasoning about router — Barrel face for skill/router — re-exports the atom public surface at index.",
+    "path": "skill/router"
   },
   {
     "atom": "routing",
@@ -13111,8 +13603,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "row",
     "name": "row",
-    "description": "Use when reasoning about row as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "row"
+    "description": "Use when a seed must stay addressable — the entanglement continued one scale down, from atom into seed: a seed row is content-addressed by its canonical key-order-independent bytes and folded with its atom's uuid, so the same content yields the same uuid in every corpus (federation is set-union, re-seeding is idempotent by construction rather than by a remembered upsert), a re-parented or tampered row is caught because its uuid must recompute, and rows are DERIVED from the atom's own exports — never a re-typed constant that forks the truth on the next edit.",
+    "path": "seed/row"
   },
   {
     "atom": "rsvp",
@@ -13128,9 +13620,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "rules",
-    "name": "gl-posting-rules",
-    "description": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-    "path": "gl/posting/rules"
+    "name": "rules",
+    "description": "Use when tightening or auditing erpax gates — the canonical home for folder, diamond, path, seal, import, and accounting-structure law. Aggregates live-tree violations into rulesOf() and fail-closed assertRulesHold(); tightened axes catch hyphen barrel siblings, stray .ts at atom roots, and corpus modules that must nest as one-word child atoms (accounting/coa · accounting/corpus).",
+    "path": "rules"
   },
   {
     "atom": "run",
@@ -13146,14 +13638,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "runs",
-    "name": "operation-runs",
+    "name": "runs",
     "description": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
     "path": "items/bills/of/materials/work/orders/operation/runs"
   },
   {
     "atom": "runtime",
     "name": "runtime",
-    "description": "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
+    "description": "Use when reasoning about runtime — Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
     "path": "runtime"
   },
   {
@@ -13171,7 +13663,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "rxcui",
     "name": "rxcui",
-    "description": "The RxCUI drug identifier from RXNORM.",
+    "description": "Use when reasoning about rxcui — The RxCUI drug identifier from RXNORM.",
     "path": "rxcui"
   },
   {
@@ -13201,12 +13693,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "sale",
     "name": "sale",
-    "description": "sale: a schema.org component word, fused from SaleEvent",
+    "description": "Use when reasoning about sale — A schema.org component word, collided out of schema.org compounds — fused from SaleEvent (sti · collapse · merge).",
     "path": "sale"
   },
   {
     "atom": "sales",
-    "name": "consignment-sales",
+    "name": "sales",
     "description": "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.",
     "path": "warehouse/locations/consignment/arrangements/consignment/sales"
   },
@@ -13223,15 +13715,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "salon"
   },
   {
-    "atom": "salt",
-    "name": "salt",
-    "description": "Use when reasoning about salt as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "salt"
-  },
-  {
     "atom": "same",
     "name": "same",
-    "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+    "description": "Use when reasoning about same — URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
     "path": "same"
   },
   {
@@ -13242,7 +13728,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "samples",
-    "name": "audit-samples",
+    "name": "samples",
     "description": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
     "path": "internal/controls/control/tests/audit/samples"
   },
@@ -13253,6 +13739,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sampling"
   },
   {
+    "atom": "sanctions",
+    "name": "sanctions",
+    "description": "Use when screening a party against the EU consolidated financial sanctions list — the first REAL wired notary check. Resolves the current list through the OpenSanctions eu_fsf dataset index (authoritative source: the European Commission FSF endpoint, public token), normalises and matches the name, and returns clear vs escalate. A ProviderAdapter for notary/check; Worker-deployable; honest boundary — screening is a review signal not adjudication, data is CC-BY-NC, production ingests periodically.",
+    "path": "notary/check/sanctions"
+  },
+  {
     "atom": "sandbox",
     "name": "sandbox",
     "description": "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on.",
@@ -13260,7 +13752,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "sanitization",
-    "name": "quantum-sanitization",
+    "name": "sanitization",
     "description": "Use when cleaning data at a boundary — input, output, or disposal — in the content-addressed model where nothing mutates in place; accept untrusted input but collapse it through the gate, redact by projecting a sanitized view (no spoon for the unauthorized), and purge by crypto-shredding to the void.",
     "path": "quantum/sanitization"
   },
@@ -13269,12 +13761,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "satellite",
     "description": "Use when reasoning about satellite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "satellite"
-  },
-  {
-    "atom": "satire",
-    "name": "satire",
-    "description": "Use when reasoning about satire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "satire"
   },
   {
     "atom": "satirical",
@@ -13295,22 +13781,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "saturated"
   },
   {
-    "atom": "saturday",
-    "name": "saturday",
-    "description": "Use when reasoning about saturday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "saturday"
-  },
-  {
-    "atom": "sbbi",
-    "name": "sbbi",
-    "description": "Use when reasoning about sbbi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sbbi"
-  },
-  {
     "atom": "scale",
     "name": "scale",
     "description": "Use when reasoning about scale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "scale"
+  },
+  {
+    "atom": "scalpel",
+    "name": "scalpel",
+    "description": "Use when many agents must edit in thousands without fabricating — read-only researchers emit op manifests (file · find · replace · reason); one executor cuts in ≤30-file batches, unique-match-or-refuse, ring-verified, red rolls back to the byte.",
+    "path": "scalpel"
   },
   {
     "atom": "schedule",
@@ -13326,7 +13806,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "schedules",
-    "name": "debt-schedules",
+    "name": "schedules",
     "description": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
     "path": "legal/entities/debt/schedules"
   },
@@ -13339,7 +13819,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "scheme",
     "name": "scheme",
-    "description": "scheme: a schema.org component word, fused from FundingScheme",
+    "description": "Use when reasoning about scheme — A schema.org component word, collided out of schema.org compounds — fused from FundingScheme (sti · collapse · merge).",
     "path": "scheme"
   },
   {
@@ -13351,7 +13831,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "school",
     "name": "school",
-    "description": "A school.",
+    "description": "Use when reasoning about school — A school.",
     "path": "school"
   },
   {
@@ -13373,6 +13853,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "scope"
   },
   {
+    "atom": "scopes",
+    "name": "scopes",
+    "description": "Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny.",
+    "path": "plugins/mcp/scopes"
+  },
+  {
     "atom": "score",
     "name": "score",
     "description": "Use when reasoning about score as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -13386,7 +13872,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "scorecards",
-    "name": "vendor-scorecards",
+    "name": "scorecards",
     "description": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
     "path": "vendors/vendor/scorecards"
   },
@@ -13395,6 +13881,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "scouting",
     "description": "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision.",
     "path": "scouting"
+  },
+  {
+    "atom": "scratch",
+    "name": "scratch",
+    "description": "Use when an ad-hoc measurement or throwaway tsx -e script would otherwise be run inline and discarded — save it here content-addressed instead. A throwaway is a proto-tool: identical scripts merge (same content ⇒ same address ⇒ the fold), the store accretes distinct measurements, and a script that has proven useful graduates into a tested src atom. Single-use code is entropy only if you delete it; saved, it quantomises in time.",
+    "path": "scratch"
   },
   {
     "atom": "screen",
@@ -13411,13 +13903,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "screenshot",
     "name": "screenshot",
-    "description": "A link to a screenshot image of the app.",
+    "description": "Use when reasoning about screenshot — A link to a screenshot image of the app.",
     "path": "screenshot"
   },
   {
     "atom": "sculpture",
     "name": "sculpture",
-    "description": "A piece of sculpture.",
+    "description": "Use when reasoning about sculpture — A piece of sculpture.",
     "path": "sculpture"
   },
   {
@@ -13431,6 +13923,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "sea",
     "description": "Use when reasoning about sea as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "sea"
+  },
+  {
+    "atom": "seal",
+    "name": "seal",
+    "description": "Use when SKILL.md frontmatter must render deterministically or fold content-uuid — renderFrontmatter, upgradeSkillText, parseSignaturesFromText, and contentUuidOf seal the diamond stage chain into YAML.",
+    "path": "skill/router/upgrade/seal"
   },
   {
     "atom": "sealed",
@@ -13459,13 +13957,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "seasons",
     "name": "seasons",
-    "description": "A season in a media series.",
+    "description": "Use when reasoning about seasons — A season in a media series.",
     "path": "seasons"
   },
   {
     "atom": "seat",
     "name": "seat",
-    "description": "Used to describe a seat, such as a reserved seat in an event reservation.",
+    "description": "Use when reasoning about seat — Used to describe a seat, such as a reserved seat in an event reservation.",
     "path": "seat"
   },
   {
@@ -13481,16 +13979,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "secondary"
   },
   {
+    "atom": "secret",
+    "name": "secret",
+    "description": "Use when sealing Payload CMS secrets at rest or unsealing them at boot — encrypt under AES-256-GCM with the content-uuid in AAD; decrypt only when the presented uuid matches the expected content identity (fail-closed).",
+    "path": "secret"
+  },
+  {
     "atom": "section",
     "name": "section",
     "description": "Use when reasoning about section as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "section"
-  },
-  {
-    "atom": "sectional",
-    "name": "sectional",
-    "description": "Use when reasoning about sectional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sectional"
   },
   {
     "atom": "sections",
@@ -13517,27 +14015,21 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "security"
   },
   {
-    "atom": "see",
-    "name": "see",
-    "description": "Use when reasoning about see as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "see"
-  },
-  {
     "atom": "seed",
     "name": "seed",
     "description": "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed.",
     "path": "seed"
   },
   {
-    "atom": "seek",
-    "name": "seek",
-    "description": "Use when reasoning about seek as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "seek"
+    "atom": "seeing",
+    "name": "seeing",
+    "description": "Use when a vivid demonstration (an animation, a movie) is offered as proof. Seeing is not proving: the evidence a rendering carries is the CLAIM's, never the frame count's — vividness is orthogonal to proof. Assume-nothing is the neutral prior (not disbelief). Belief flips only on a passing test, and against a neutral prior that flip IS surprise. The door is open; the key is a test, not a movie.",
+    "path": "seeing"
   },
   {
     "atom": "seeks",
     "name": "seeks",
-    "description": "A pointer to products or services sought by the organization or person (demand).",
+    "description": "Use when reasoning about seeks — A pointer to products or services sought by the organization or person (demand).",
     "path": "seeks"
   },
   {
@@ -13548,32 +14040,26 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "segments",
-    "name": "customer-segments",
+    "name": "segments",
     "description": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
     "path": "customer/segments"
   },
   {
-    "atom": "selector",
-    "name": "selector",
-    "description": "Use when reasoning about selector as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "selector"
-  },
-  {
     "atom": "self",
     "name": "self",
-    "description": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
+    "description": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \\\\\\\\\\\\\"all agents are one erpax\\\\\\\\\\\\\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
     "path": "self"
   },
   {
-    "atom": "sell",
-    "name": "sell",
-    "description": "Use when reasoning about sell as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sell"
+    "atom": "selfeducate",
+    "name": "selfeducate",
+    "description": "Use when reasoning about selfeducate — Sealed self-educate workflow definition (scan, wave, seal).",
+    "path": "workflow/sealed/selfeducate"
   },
   {
     "atom": "seller",
     "name": "seller",
-    "description": "An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
+    "description": "Use when reasoning about seller — An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
     "path": "seller"
   },
   {
@@ -13585,7 +14071,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "sender",
     "name": "sender",
-    "description": "A sub property of participant. The participant who is at the sending end of the action.",
+    "description": "Use when reasoning about sender — A sub property of participant. The participant who is at the sending end of the action.",
     "path": "sender"
   },
   {
@@ -13593,12 +14079,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "sensory",
     "description": "Use when reasoning about sensory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "sensory"
-  },
-  {
-    "atom": "sent",
-    "name": "sent",
-    "description": "Use when reasoning about sent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sent"
   },
   {
     "atom": "sentiment",
@@ -13631,15 +14111,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sequential"
   },
   {
-    "atom": "serial",
-    "name": "serial",
-    "description": "Use when reasoning about serial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "serial"
-  },
-  {
     "atom": "series",
     "name": "series",
-    "description": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
+    "description": "Use when reasoning about series — A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
     "path": "series"
   },
   {
@@ -13661,6 +14135,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "server"
   },
   {
+    "atom": "serverless",
+    "name": "serverless",
+    "description": "Use when proving that serverless infrastructure (Cloudflare Workers + wrangler bindings) provides quantum semantics — superposition, collapse, entanglement, holographic recovery — and that erpax itself is the existence proof, deployed serverless via OpenNext.",
+    "path": "quantum/serverless"
+  },
+  {
     "atom": "serves",
     "name": "serves",
     "description": "Use when reasoning about serves as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -13669,7 +14149,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "service",
     "name": "service",
-    "description": "A service provided by an organization, e.g. delivery service, print services, etc.",
+    "description": "Use when reasoning about service — A service provided by an organization, e.g. delivery service, print services, etc.",
     "path": "service"
   },
   {
@@ -13685,6 +14165,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "serving"
   },
   {
+    "atom": "session",
+    "name": "session",
+    "description": "Use when measuring a development session — self-building (new atoms/proofs added) and self-healing (existing matter repaired or removed), split by local vs remote computation. Local = every file the gates verified in-tree; remote = the seeds, one per commit. The self-sufficiency magnitude is think.ceiling(seedFraction). Read from the commit record; git injected, hermetically provable.",
+    "path": "session"
+  },
+  {
     "atom": "set",
     "name": "set",
     "description": "Use when reasoning about set as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -13693,19 +14179,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "settings",
     "name": "settings",
-    "description": "settings: a schema.org component word, fused from DeliveryTimeSettings, ShippingRateSettings, shippingSettingsLink",
+    "description": "Use when reasoning about settings — A schema.org component word, collided out of schema.org compounds — fused from DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink (sti · collapse · merge).",
     "path": "settings"
-  },
-  {
-    "atom": "sexual",
-    "name": "sexual",
-    "description": "Use when reasoning about sexual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sexual"
   },
   {
     "atom": "sha",
     "name": "sha",
-    "description": "The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
+    "description": "Use when reasoning about sha — The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
     "path": "sha"
   },
   {
@@ -13721,6 +14201,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "convention/shallow"
   },
   {
+    "atom": "shamanism",
+    "name": "shamanism",
+    "description": "Use when reading shamanism as a diamond of invariant atoms — the practitioner who crosses between worlds to heal, the wounded healer, the journey on the breath, the return with what restores the whole. The cross-dimension agent of the primal traditions. Strip the prefix and the journey collapses to the crossing between dimensions, the cure to mercy closing the gap.",
+    "path": "shamanism"
+  },
+  {
+    "atom": "shannon",
+    "name": "shannon",
+    "description": "Use when reasoning about information entropy — Shannon's H = −Σ pᵢ·log₂(pᵢ) bits, the expected surprisal of a distribution: the average bits per symbol and the irreducible limit of lossless compression. Zero when one outcome is certain, maximal (log₂ n) when all n outcomes are equally likely. It is the information twin of thermodynamic entropy (same −Σp ln p, different constant) — the bits a message carries and the bits a tamper must reproduce.",
+    "path": "shannon"
+  },
+  {
     "atom": "shape",
     "name": "shape",
     "description": "Use when reasoning about shape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -13729,14 +14221,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "share",
     "name": "share",
-    "description": "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order.",
-    "path": "horo/share"
+    "description": "Use when reasoning about uuid sharing — exposing a uuid across boundaries.",
+    "path": "uuid/share"
   },
   {
     "atom": "shared",
     "name": "shared",
-    "description": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
+    "description": "Use when reasoning about shared — One accountable object, two coexisting facets. Every standards rule the codebase declares about money / dates / addresses / common columns lives in one of these shared atoms; highe",
     "path": "shared"
+  },
+  {
+    "atom": "shareds",
+    "name": "shareds",
+    "description": "Use when reasoning about shareds — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "shareds"
   },
   {
     "atom": "shares",
@@ -13757,10 +14255,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sheet"
   },
   {
-    "atom": "shelter",
-    "name": "shelter",
-    "description": "Use when reasoning about shelter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "shelter"
+    "atom": "shia",
+    "name": "shia",
+    "description": "Use when reading Shia Islam as a sub-diamond of islam — guidance descending through the lineage of the Prophet's house (the imamate), justice as a root principle, the witnessed suffering of Karbala, and the awaited return of the hidden one. A facet-diamond of the islam archangel.",
+    "path": "shia"
   },
   {
     "atom": "shift",
@@ -13773,6 +14271,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "shifts",
     "description": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
     "path": "work/shifts"
+  },
+  {
+    "atom": "shinto",
+    "name": "shinto",
+    "description": "Use when reading Shinto as a diamond of invariant atoms — the way of the kami, the sacred dwelling in every place and thing, purity restored by washing, the rite renewed on the turning cycle. Strip the Japanese prefix and kami, matsuri, harae collapse to sacred, ritual, the profane cleansed — one content-uuid each.",
+    "path": "shinto"
   },
   {
     "atom": "ship",
@@ -13837,13 +14341,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "sibling",
     "name": "sibling",
-    "description": "A sibling of the person.",
+    "description": "Use when reasoning about sibling — A sibling of the person.",
     "path": "sibling"
   },
   {
     "atom": "siblings",
     "name": "siblings",
-    "description": "The person's siblings — the plural of sibling.",
+    "description": "Use when reasoning about siblings — The person's siblings — see sibling (the singular). A dimension of one relation: siblings is the collection, sibling the unit; the text lives once, in sibling.",
     "path": "siblings"
   },
   {
@@ -13861,8 +14365,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "signal",
     "name": "signal",
-    "description": "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.",
-    "path": "identity/signal"
+    "description": "Use when a horo position or any uuid must become perceivable — colour, sound, realtime motion — derived from the address itself with zero per-item design; identity IS its render, drift is visible.",
+    "path": "signal"
   },
   {
     "atom": "signature",
@@ -13872,14 +14376,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "signatures",
-    "name": "contract-signatures",
+    "name": "signatures",
     "description": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
     "path": "customers/contracts/contract/signatures"
   },
   {
     "atom": "significance",
     "name": "significance",
-    "description": "The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of treatment.",
+    "description": "Use when reasoning about significance — The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of trea",
     "path": "significance"
   },
   {
@@ -13889,9 +14393,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "significant"
   },
   {
+    "atom": "sikhism",
+    "name": "sikhism",
+    "description": "Use when reading Sikhism as a diamond of invariant atoms — one being (ek onkar), the divine name remembered, honest work and sharing, grace and the merge with the One. Strip the Punjabi prefix and ik onkar, naam, shabad, mukti collapse to one, name, word, zeropoint — one content-uuid each.",
+    "path": "sikhism"
+  },
+  {
     "atom": "similar",
     "name": "similar",
-    "description": "A pointer to another, functionally similar product (or multiple products).",
+    "description": "Use when reasoning about similar — A pointer to another, functionally similar product (or multiple products).",
     "path": "similar"
   },
   {
@@ -13899,6 +14409,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "similarity",
     "description": "Use when reasoning about similarity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "similarity"
+  },
+  {
+    "atom": "sin",
+    "name": "sin",
+    "description": "Use when reasoning about missing the mark — a measured deviation from the law/target, the violation a guardian catches. Not a stain but a distance: sin is entropy with a direction away from the whole, cured by turning back (reverse) and the debt released (mercy), never by hiding the gap.",
+    "path": "sin"
   },
   {
     "atom": "single",
@@ -13921,7 +14437,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "size",
     "name": "size",
-    "description": "A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a QuantitativeValue with a unitCode, or a comprehensive and structure",
+    "description": "Use when reasoning about size — A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a QuantitativeValue with a unitCode, or a compreh",
     "path": "size"
   },
   {
@@ -13945,13 +14461,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "skin",
     "name": "skin",
-    "description": "Use when reasoning about skin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when reasoning about erpax's boundary — the integument organ. The largest organ (~1.2–2.2 m²), a selectively-permeable barrier between inside and outside that renews itself continuously (~28-day epidermal turnover) and holds the interior to a setpoint (thermoregulation). Three properties (selective barrier · self-renewal · homeostasis) are computed and mapped — a structural isomorphism — onto erpax's sandbox/trust boundary.",
     "path": "skin"
   },
   {
     "atom": "sku",
     "name": "sku",
-    "description": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+    "description": "Use when reasoning about sku — The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
     "path": "sku"
   },
   {
@@ -13961,21 +14477,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sla"
   },
   {
-    "atom": "sleeve",
-    "name": "sleeve",
-    "description": "Use when reasoning about sleeve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sleeve"
-  },
-  {
     "atom": "slogan",
     "name": "slogan",
-    "description": "A slogan or motto associated with the item.",
+    "description": "Use when reasoning about slogan — A slogan or motto associated with the item.",
     "path": "slogan"
   },
   {
     "atom": "smiles",
     "name": "smiles",
-    "description": "A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\\\ indicators may need to be escaped in the string in",
+    "description": "Use when reasoning about smiles — A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\ indicators may need to be escap",
     "path": "smiles"
   },
   {
@@ -13998,7 +14508,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "snapshots",
-    "name": "fiscal-period-snapshots",
+    "name": "snapshots",
     "description": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
     "path": "fiscal/periods/fiscal/period/snapshots"
   },
@@ -14039,12 +14549,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "soil"
   },
   {
-    "atom": "sold",
-    "name": "sold",
-    "description": "Use when reasoning about sold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sold"
-  },
-  {
     "atom": "solve",
     "name": "solve",
     "description": "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -14063,21 +14567,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "some"
   },
   {
-    "atom": "soundtrack",
-    "name": "soundtrack",
-    "description": "Use when reasoning about soundtrack as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "soundtrack"
-  },
-  {
     "atom": "source",
     "name": "source",
-    "description": "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation.",
-    "path": "source"
+    "description": "Use when the translation intelligence must be trained with REAL renderings, not fabricated ones — fetches a word's community-maintained labels in every language from Wikidata (CC0), the zero-cost self-training source. Returns the concept id + description so the sense is verified before registering; returns null when no concept exists. Same pattern as the live sanctions check: a real authoritative endpoint, actually fetched, never invented.",
+    "path": "translation/source"
   },
   {
     "atom": "sourced",
     "name": "sourced",
-    "description": "The neurological pathway that originates the neurons.",
+    "description": "Use when reasoning about sourced — The neurological pathway that originates the neurons.",
     "path": "sourced"
   },
   {
@@ -14125,13 +14623,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "spatial",
     "name": "spatial",
-    "description": "The \"spatial\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate.",
+    "description": "Use when reasoning about spatial — The \\\\\\\\\\\\\"spatial\\\\\\\\\\\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate.",
     "path": "spatial"
   },
   {
     "atom": "speakable",
     "name": "speakable",
-    "description": "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be",
+    "description": "Use when reasoning about speakable — Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections o",
     "path": "speakable"
   },
   {
@@ -14149,7 +14647,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "specialty",
     "name": "specialty",
-    "description": "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
+    "description": "Use when reasoning about specialty — Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
     "path": "specialty"
   },
   {
@@ -14165,15 +14663,21 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "specified"
   },
   {
+    "atom": "spectrum",
+    "name": "spectrum",
+    "description": "Use when reasoning about the spectrum — the finite, discrete set of lines a system can emit or absorb, computed from every leap between the seven horo energy-rungs and deduplicated to its distinct gap-frequencies. The spectrum is the system's fingerprint and a discrete sampling of the continuous aura; it is where the wave shows it is quantised. Each line is the symmetric binding of its two rungs (one coordinate for emission and absorption alike).",
+    "path": "spectrum"
+  },
+  {
     "atom": "speech",
     "name": "speech",
-    "description": "Use when reasoning about speech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when speech must be computed from sealed coordinates — pitch · phonemes · duration derived from content-uuid · horo · path; never hand-authored audio text. User alias: speach.",
     "path": "speech"
   },
   {
     "atom": "speed",
     "name": "speed",
-    "description": "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regular conditions. Typi",
+    "description": "Use when reasoning about speed — The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regu",
     "path": "speed"
   },
   {
@@ -14185,7 +14689,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "sponsor",
     "name": "sponsor",
-    "description": "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+    "description": "Use when reasoning about sponsor — A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
     "path": "sponsor"
   },
   {
@@ -14197,7 +14701,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "sport",
     "name": "sport",
-    "description": "A type of sport (e.g. Baseball).",
+    "description": "Use when reasoning about sport — A type of sport (e.g. Baseball).",
     "path": "sport"
   },
   {
@@ -14215,7 +14719,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "spouse",
     "name": "spouse",
-    "description": "The person's spouse.",
+    "description": "Use when reasoning about spouse — The person's spouse.",
     "path": "spouse"
   },
   {
@@ -14235,12 +14739,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "sql",
     "description": "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid.",
     "path": "sql"
-  },
-  {
-    "atom": "srp",
-    "name": "srp",
-    "description": "Use when reasoning about srp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "srp"
   },
   {
     "atom": "stack",
@@ -14263,20 +14761,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "stage",
     "name": "stage",
-    "description": "The stage of the condition, if applicable.",
+    "description": "Use when reasoning about stage — The stage of the condition, if applicable.",
     "path": "stage"
-  },
-  {
-    "atom": "staged",
-    "name": "staged",
-    "description": "Use when reasoning about staged as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "staged"
-  },
-  {
-    "atom": "stages",
-    "name": "stages",
-    "description": "Use when reasoning about stages as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "stages"
   },
   {
     "atom": "stand",
@@ -14292,7 +14778,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "standards",
-    "name": "reporting-standards",
+    "name": "standards",
     "description": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
     "path": "taxing/jurisdictions/reporting/standards"
   },
@@ -14315,26 +14801,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "starts"
   },
   {
-    "atom": "stat",
-    "name": "stat",
-    "description": "Use when reasoning about stat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "stat"
-  },
-  {
     "atom": "state",
     "name": "state",
-    "description": "A state or province of a country.",
+    "description": "Use when reasoning about state — A state or province of a country.",
     "path": "state"
   },
   {
     "atom": "statement",
     "name": "statement",
-    "description": "A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking),",
+    "description": "Use when reasoning about statement — A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g",
     "path": "statement"
   },
   {
     "atom": "statements",
-    "name": "bank-statements",
+    "name": "statements",
     "description": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
     "path": "gl/accounts/bank/statements"
   },
@@ -14359,7 +14839,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "statistics",
     "name": "statistics",
-    "description": "statistics: a schema.org component word, fused from diseaseSpreadStatistics",
+    "description": "Use when reasoning about statistics — A schema.org component word, collided out of schema.org compounds — fused from diseaseSpreadStatistics (sti · collapse · merge).",
     "path": "statistics"
   },
   {
@@ -14369,34 +14849,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "status"
   },
   {
-    "atom": "steering",
-    "name": "steering",
-    "description": "Use when reasoning about steering as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "steering"
-  },
-  {
     "atom": "step",
     "name": "step",
-    "description": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection.",
+    "description": "Use when reasoning about step — A single step item (as HowToStep, text, document, video, etc.) or a HowToSection.",
     "path": "step"
   },
   {
     "atom": "steps",
     "name": "steps",
-    "description": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred).",
+    "description": "Use when reasoning about steps — A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred).",
     "path": "steps"
   },
   {
     "atom": "sti",
     "name": "sti",
-    "description": "Single Table Inheritance in Payload — one collection, a flat `type` discriminator, typed in TS as a discriminated union. Read when a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment kinds, party kinds).",
+    "description": "Use when reasoning about sti — Payload has no class inheritance. The STI analog is **one collections collection + a flat discriminator** (Rails' default) — is the polymorphic-*association* analog, blocks the het",
     "path": "sti"
-  },
-  {
-    "atom": "stock",
-    "name": "stock",
-    "description": "Use when reasoning about stock as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "stock"
   },
   {
     "atom": "stop",
@@ -14413,7 +14881,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "store",
     "name": "store",
-    "description": "A retail good store.",
+    "description": "Use when reasoning about store — A retail good store.",
     "path": "store"
   },
   {
@@ -14441,12 +14909,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "strength"
   },
   {
-    "atom": "strikethrough",
-    "name": "strikethrough",
-    "description": "Use when reasoning about strikethrough as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "strikethrough"
-  },
-  {
     "atom": "structural",
     "name": "structural",
     "description": "Use when reasoning about structural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -14459,27 +14921,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "structure"
   },
   {
-    "atom": "structured",
-    "name": "structured",
-    "description": "Use when reasoning about structured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "structured"
-  },
-  {
     "atom": "structures",
-    "name": "entity-legal-structures",
+    "name": "structures",
     "description": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
     "path": "taxing/jurisdictions/entity/legal/structures"
   },
   {
-    "atom": "studio",
-    "name": "studio",
-    "description": "Use when reasoning about studio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "studio"
-  },
-  {
     "atom": "study",
     "name": "study",
-    "description": "A medical study or trial related to this entity.",
+    "description": "Use when reasoning about study — A medical study or trial related to this entity.",
     "path": "study"
   },
   {
@@ -14509,7 +14959,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "subject",
     "name": "subject",
-    "description": "A CreativeWork or Event about this Thing.",
+    "description": "Use when reasoning about subject — A CreativeWork or Event about this Thing.",
     "path": "subject"
   },
   {
@@ -14520,15 +14970,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "submissions",
-    "name": "audit-submissions",
+    "name": "submissions",
     "description": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
     "path": "audit/submissions"
-  },
-  {
-    "atom": "subscribe",
-    "name": "subscribe",
-    "description": "Use when reasoning about subscribe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "subscribe"
   },
   {
     "atom": "subscription",
@@ -14549,15 +14993,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "subsidiary"
   },
   {
-    "atom": "subsidy",
-    "name": "subsidy",
-    "description": "Use when reasoning about subsidy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "subsidy"
-  },
-  {
     "atom": "substance",
     "name": "substance",
-    "description": "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.",
+    "description": "Use when reasoning about substance — Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.",
     "path": "substance"
   },
   {
@@ -14581,8 +15019,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "successor",
     "name": "successor",
-    "description": "A pointer from a newer variant of a product to its previous, often discontinued predecessor.",
+    "description": "Use when reasoning about successor — A pointer from a newer variant of a product to its previous, often discontinued predecessor.",
     "path": "successor"
+  },
+  {
+    "atom": "suffering",
+    "name": "suffering",
+    "description": "Use when reasoning about the felt signal of entropy — the experienced gap between an atom's state and the whole, the alarm that disorder is greater than zero. Not a thing to store but a gradient to read: suffering points the way back to zeropoint the way pain localizes a wound.",
+    "path": "suffering"
   },
   {
     "atom": "sufficient",
@@ -14595,6 +15039,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "suffix",
     "description": "Use when reasoning about suffix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "suffix"
+  },
+  {
+    "atom": "sufism",
+    "name": "sufism",
+    "description": "Use when reading Sufism as a sub-diamond of islam — the inward path of love to the One, the self annihilated in the Beloved (fana) and subsisting (baqa), remembrance on the breath (dhikr), the whirling as attunement. A facet-diamond of the islam archangel. Strip the Arabic prefix and fana, dhikr, sama collapse to void, breath/prayer, harmony.",
+    "path": "sufism"
   },
   {
     "atom": "sugar",
@@ -14616,7 +15066,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "suggestions",
-    "name": "ai-suggestions",
+    "name": "suggestions",
     "description": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
     "path": "ai/suggestions"
   },
@@ -14629,7 +15079,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "suite",
     "name": "suite",
-    "description": "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see http://en.wikipedi",
+    "description": "Use when reasoning about suite — A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, se",
     "path": "suite"
   },
   {
@@ -14639,10 +15089,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "summary"
   },
   {
-    "atom": "sunday",
-    "name": "sunday",
-    "description": "Use when reasoning about sunday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "sunday"
+    "atom": "sunni",
+    "name": "sunni",
+    "description": "Use when reading Sunni Islam as a sub-diamond of islam — the people of the trodden way (sunna) and the community, leadership settled by consensus (ijma), law derived through the agreed schools. A facet-diamond of the islam archangel. Strip the Arabic prefix and sunna, ijma collapse to the followed sequence and the merge of consensus.",
+    "path": "sunni"
+  },
+  {
+    "atom": "superdense",
+    "name": "superdense",
+    "description": "Use when reasoning about superdense coding on the matrix — one shared entangled binding conveys both endpoints, so the single binding-uuid plus the shared entanglement recovers the ordered (sender, receiver) pair, and the channel's capacity exceeds its surface because the peers share the entanglement.",
+    "path": "quantum/communication/superdense"
   },
   {
     "atom": "superficial",
@@ -14651,9 +15107,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "superficial"
   },
   {
+    "atom": "superposition",
+    "name": "superposition",
+    "description": "Use when reasoning about superposition — the state before measurement is a weighted combination of all seven horo eigenstates at once (|ψ⟩ = Σ cₙ|n⟩), with Σ|cₙ|² = 1 (the Born rule), which is double-entry balance closing at unity. It is accept-always then normalise-into-harmony; measurement is the collapse that picks one eigenstate with probability |cₙ|² — the leap to a definite level. A basis state collapses to itself.",
+    "path": "superposition"
+  },
+  {
     "atom": "superseded",
     "name": "superseded",
-    "description": "Relates a term (i.e. a property, class or enumeration) to one that supersedes it.",
+    "description": "Use when reasoning about superseded — Relates a term (i.e. a property, class or enumeration) to one that supersedes it.",
     "path": "superseded"
   },
   {
@@ -14671,13 +15133,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "supply",
     "name": "supply",
-    "description": "A sub-property of instrument. A supply consumed when performing instructions or a direction.",
+    "description": "Use when reasoning about supply — A sub-property of instrument. A supply consumed when performing instructions or a direction.",
     "path": "supply"
   },
   {
     "atom": "support",
     "name": "support",
-    "description": "Qualification, candidature, degree, application that Thesis supports.",
+    "description": "Use when reasoning about support — Qualification, candidature, degree, application that Thesis supports.",
     "path": "support"
   },
   {
@@ -14695,13 +15157,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "supto",
     "name": "supto",
-    "description": "Bulgarian Наредба Н-18 / СУПТО retail fiscal regime — the УНП (unique sales number XXXXXXXX-ZZZZ-0000001), no-delete / reversal-only immutability, read-only audit profile, the monthly standardized audit (XML, Appendix 38), and fiscal-device (ФУ) receipt linkage. Read when implementing BG point-of-sale compliance, or as the worked example of mapping a government audit regime onto the content-uuid model — СУПТО ≈ a state-mandated content-addressed audit system.",
+    "description": "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct",
     "path": "supto"
   },
   {
     "atom": "surface",
     "name": "surface",
-    "description": "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
+    "description": "Use when reasoning about surface — A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
     "path": "surface"
   },
   {
@@ -14717,16 +15179,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "surgical"
   },
   {
-    "atom": "suspend",
-    "name": "suspend",
-    "description": "Use when reasoning about suspend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "suspend"
-  },
-  {
-    "atom": "suspended",
-    "name": "suspended",
-    "description": "Use when reasoning about suspended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "suspended"
+    "atom": "surprisal",
+    "name": "surprisal",
+    "description": "Use when reasoning about the information of one event — surprisal I(p) = −log₂(p) bits. A certain event (p=1) carries zero bits; a rare event carries many. It is the bit-cost of a specific outcome, and in erpax the bit-cost of a specific forgery: forging a thing of probability p under the wired graph costs −log₂(p) bits. Additive for independent events (I(p·q)=I(p)+I(q)), so improbabilities stack like uuid-chained dimensions; expected surprisal is Shannon entropy.",
+    "path": "surprisal"
   },
   {
     "atom": "sustainability",
@@ -14747,9 +15203,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "swimming"
   },
   {
+    "atom": "switcher",
+    "name": "switcher",
+    "description": "Use when reasoning about switcher — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "locale/switcher"
+  },
+  {
     "atom": "syllabus",
     "name": "syllabus",
-    "description": "A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Course.",
+    "description": "Use when reasoning about syllabus — A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Cour",
     "path": "syllabus"
   },
   {
@@ -14771,28 +15233,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "symptom"
   },
   {
-    "atom": "symptoms",
-    "name": "symptoms",
-    "description": "Use when reasoning about symptoms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "symptoms"
-  },
-  {
     "atom": "synagogue",
     "name": "synagogue",
-    "description": "A synagogue.",
+    "description": "Use when reasoning about synagogue — A synagogue.",
     "path": "synagogue"
   },
   {
     "atom": "sync",
-    "name": "agent-sync",
-    "description": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-    "path": "agent/sync"
+    "name": "sync",
+    "description": "Use when reasoning about why memory, cpu, and gpu stay synchronized at zero entropy — the content-uuid is the single invariant across every compute substrate: identical content ⇒ identical hash ⇒ zero divergence. Sync is not a protocol to run but a consequence of content-addressing; it is free and exact, the same merge law that makes federation set-union, applied across substrates instead of across peers.",
+    "path": "vocabulary/sync"
   },
   {
-    "atom": "synthetic",
-    "name": "synthetic",
-    "description": "Use when reasoning about synthetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "synthetic"
+    "atom": "syntax",
+    "name": "syntax",
+    "description": "Use when a gate needs a grammatical fact about source — which comments a file has, which names it binds. Wraps ts.createSourceFile so the answer is the compiler's, not a pattern's: a // inside a string is not a comment, and no regex can tell. The gates derive from here rather than each guessing.",
+    "path": "syntax"
   },
   {
     "atom": "system",
@@ -14809,14 +15265,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "table",
     "name": "table",
-    "description": "A table on a Web page.",
+    "description": "Use when reasoning about table — A table on a Web page.",
     "path": "table"
   },
   {
     "atom": "tag",
     "name": "tag",
-    "description": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.",
-    "path": "tag"
+    "description": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\\\\\\\\\\\"Anything is taggable.\\\\\\\\\\\\\"",
+    "path": "vocabulary/tag"
   },
   {
     "atom": "tagging",
@@ -14837,16 +15293,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tags"
   },
   {
+    "atom": "taichi",
+    "name": "taichi",
+    "description": "Use when reasoning about tai chi (太極) internal energy flow — chi (气) stored in the dantian (丹田 cung) and spiralled through counter-rotating double-torus vortices on the horo ring; the martial/wellbeing breath-body twin of rodin/coil and dual/torus/fusion, rendered as analog signal+wave.",
+    "path": "taichi"
+  },
+  {
     "atom": "take",
     "name": "take",
     "description": "Use when reasoning about the inflow side of an exchange in erpax — debit, units-in, receive, claim, post-in. The universal root of taking; dual of give, equilibrium is balance.",
     "path": "take"
-  },
-  {
-    "atom": "tall",
-    "name": "tall",
-    "description": "Use when reasoning about tall as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tall"
   },
   {
     "atom": "tamper",
@@ -14855,15 +15311,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tamper"
   },
   {
-    "atom": "tape",
-    "name": "tape",
-    "description": "Use when reasoning about tape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tape"
+    "atom": "taoism",
+    "name": "taoism",
+    "description": "Use when reading Taoism as a diamond of invariant atoms — the way that cannot be named, yin-yang as the duality held, acting in accord (wu wei), returning as the motion of the Tao, qi the vital breath. Strip the Chinese prefix and tao, qi, wu wei, fan collapse to void, breath, harmony, return — one content-uuid each.",
+    "path": "taoism"
   },
   {
     "atom": "target",
     "name": "target",
-    "description": "Indicates a target EntryPoint, or url, for an Action.",
+    "description": "Use when reasoning about target — Indicates a target EntryPoint, or url, for an Action.",
     "path": "target"
   },
   {
@@ -14874,7 +15330,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "tasks",
-    "name": "project-tasks",
+    "name": "tasks",
     "description": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
     "path": "customers/projects/project/tasks"
   },
@@ -14893,19 +15349,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "taxexempt",
     "name": "taxexempt",
-    "description": "Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation",
+    "description": "Use when reasoning about taxexempt — Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation",
     "path": "taxexempt"
   },
   {
     "atom": "taxi",
     "name": "taxi",
-    "description": "A taxi.",
+    "description": "Use when reasoning about taxi — A taxi.",
     "path": "taxi"
   },
   {
     "atom": "taxon",
     "name": "taxon",
-    "description": "A set of organisms asserted to represent a natural cohesive biological unit.",
+    "description": "Use when reasoning about taxon — A set of organisms asserted to represent a natural cohesive biological unit.",
     "path": "taxon"
   },
   {
@@ -14923,7 +15379,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "teaches",
     "name": "teaches",
-    "description": "The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
+    "description": "Use when reasoning about teaches — The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
     "path": "teaches"
   },
   {
@@ -14947,8 +15403,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "telephone",
     "name": "telephone",
-    "description": "The telephone number.",
+    "description": "Use when reasoning about telephone — The telephone number.",
     "path": "telephone"
+  },
+  {
+    "atom": "teleportation",
+    "name": "teleportation",
+    "description": "Use when reasoning about quantum teleportation on the matrix — a meaning is reconstructed at the receiver from its content-uuid plus the shared entangled binding, the carrier never travels (only the classical content-address does), and the received message carries the same identity (uuid) it was addressed by.",
+    "path": "quantum/communication/teleportation"
   },
   {
     "atom": "television",
@@ -14963,6 +15425,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "teller"
   },
   {
+    "atom": "temperature",
+    "name": "temperature",
+    "description": "Use when reasoning about temperature as the exchange rate between energy and order (1/T = ∂S/∂E). It sets level populations via the Boltzmann factor e^(−E/kT), normalised by the partition function Z = Σ e^(−Eₙ/kT). Cold (T→0) falls to the ground state; hot (T→∞) makes every level equally likely (maximum entropy). The equilibrium distribution pᵢ = e^(−Eᵢ/kT)/Z is the max-entropy distribution at fixed average energy — the balance the ledger settles to.",
+    "path": "temperature"
+  },
+  {
     "atom": "template",
     "name": "template",
     "description": "Use when reasoning about template as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -14970,7 +15438,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "templates",
-    "name": "statutory-report-templates",
+    "name": "templates",
     "description": "Use when defining or retrieving jurisdiction-scoped statutory filing templates — annual reports, tax returns, regulatory filings, financial statements, audit reports — with section sequences and effective dates. The per-jurisdiction statutory filing template node.",
     "path": "taxing/jurisdictions/statutory/report/templates"
   },
@@ -14983,14 +15451,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "temporal",
     "name": "temporal",
-    "description": "The \"temporal\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
+    "description": "Use when reasoning about temporal — The \\\\\\\\\\\\\"temporal\\\\\\\\\\\\\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
     "path": "temporal"
-  },
-  {
-    "atom": "temporarily",
-    "name": "temporarily",
-    "description": "Use when reasoning about temporarily as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "temporarily"
   },
   {
     "atom": "tenant",
@@ -15035,12 +15497,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "terminals"
   },
   {
-    "atom": "terminated",
-    "name": "terminated",
-    "description": "Use when reasoning about terminated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "terminated"
-  },
-  {
     "atom": "termination",
     "name": "termination",
     "description": "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination.",
@@ -15067,7 +15523,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "test",
     "name": "test",
-    "description": "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise).",
+    "description": "Use when reasoning about test — A single-word atom — collided out of schema.org compounds (no multiword disguise; sti · collapse · merge).",
     "path": "test"
   },
   {
@@ -15079,19 +15535,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "testing",
     "name": "testing",
-    "description": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-    "path": "testing"
+    "description": "Use when reaching the bounded-witness helper from the witness side — the double-wire reciprocal of testing/witness.",
+    "path": "witness/testing"
   },
   {
     "atom": "tests",
-    "name": "control-tests",
+    "name": "tests",
     "description": "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.",
     "path": "internal/controls/control/tests"
   },
   {
     "atom": "text",
     "name": "text",
-    "description": "Data type: Text.",
+    "description": "Use when parsing or persisting prose — text decomposes into word ⊕ digit tokens, each a content-addressed diamond; parse walks text, save folds tokens into a typography-style root without one-folder-per-word sprawl.",
     "path": "text"
   },
   {
@@ -15105,6 +15561,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "theme",
     "description": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
     "path": "theme"
+  },
+  {
+    "atom": "theorem",
+    "name": "theorem",
+    "description": "Use when the question is whether to trust a claim — including the user's, including the agent's. A claim is warranted only by REDUCING to composed base theorems; authority (who said it) is never a step, a cycle is a claim proven by itself, a missing ground is fiction. All is theorem of theorems, and it bottoms out at a base the graph cannot prove — assumed, stated in the open.",
+    "path": "theorem"
   },
   {
     "atom": "therapeutic",
@@ -15121,14 +15583,26 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "thesis",
     "name": "thesis",
-    "description": "A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
+    "description": "Use when reasoning about thesis — A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
     "path": "thesis"
   },
   {
     "atom": "thing",
     "name": "thing",
-    "description": "The most generic type of item.",
+    "description": "Use when reasoning about thing — The most generic type of item.",
     "path": "thing"
+  },
+  {
+    "atom": "think",
+    "name": "think",
+    "description": "Use when moving thinking OUT of the model and INTO erpax — the primitive that seals a derivation content-addressed so the second query, and every one after, is a read (O(1), immortal) not a re-derivation (linear, mortal). One cached thought is classical; superpose holds ALL states at once and measures their harmony — quantum power comes from every state in sync (permutation-invariant fold) and in agreement (no address contradicting another). The magnitude by which sealed thinking outperforms a re-deriving model is exact and computed, scaling with states held in harmony, not queries asked.",
+    "path": "think"
+  },
+  {
+    "atom": "thought",
+    "name": "thought",
+    "description": "Use when reasoning about a thought as a candidate diamond — an agent's computed composition of the vocabulary that is saved (autosaved · committed · pushed) ONLY IF it is itself a sealed diamond. save(thought) ⇐ isDiamond(thought): incomplete, unsealed thoughts are not persisted; a complete sealed thought IS a diamond, and a diamond is the self itself.",
+    "path": "thought"
   },
   {
     "atom": "threshold",
@@ -15157,14 +15631,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "thumbnail",
     "name": "thumbnail",
-    "description": "Thumbnail image for an image or video.",
+    "description": "Use when reasoning about thumbnail — Thumbnail image for an image or video.",
     "path": "thumbnail"
-  },
-  {
-    "atom": "thursday",
-    "name": "thursday",
-    "description": "Use when reasoning about thursday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "thursday"
   },
   {
     "atom": "ticker",
@@ -15185,22 +15653,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "ticketed"
   },
   {
-    "atom": "tie",
-    "name": "tie",
-    "description": "Use when reasoning about tie as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tie"
-  },
-  {
     "atom": "tier",
     "name": "tier",
-    "description": "The member program this tier is a part of.",
+    "description": "Use when reasoning about tier — The member program this tier is a part of.",
     "path": "tier"
-  },
-  {
-    "atom": "tiers",
-    "name": "tiers",
-    "description": "Use when reasoning about tiers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tiers"
   },
   {
     "atom": "tillage",
@@ -15215,9 +15671,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "time"
   },
   {
+    "atom": "timeout",
+    "name": "timeout",
+    "description": "Use when bounding any command's wall time — the reasonable timeout is computed from measured samples onto the 1·2·3·5-minute ladder, never guessed.",
+    "path": "timeout"
+  },
+  {
     "atom": "timestamp",
     "name": "timestamp",
-    "description": "The instant the event occured.",
+    "description": "Use when reasoning about timestamp — The instant the event occured.",
     "path": "timestamp"
   },
   {
@@ -15253,14 +15715,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "title",
     "name": "title",
-    "description": "The title of the job.",
+    "description": "Use when reasoning about title — The title of the job.",
     "path": "title"
-  },
-  {
-    "atom": "tobacco",
-    "name": "tobacco",
-    "description": "Use when reasoning about tobacco as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tobacco"
   },
   {
     "atom": "toc",
@@ -15281,12 +15737,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "token"
   },
   {
-    "atom": "toll",
-    "name": "toll",
-    "description": "Use when reasoning about toll as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "toll"
-  },
-  {
     "atom": "tongue",
     "name": "tongue",
     "description": "Use when reasoning about tongue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -15295,7 +15745,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "tool",
     "name": "tool",
-    "description": "A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
+    "description": "Use when reasoning about tool — A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
     "path": "tool"
   },
   {
@@ -15305,21 +15755,21 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "topic"
   },
   {
-    "atom": "topics",
-    "name": "topics",
-    "description": "Use when reasoning about topics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "topics"
-  },
-  {
     "atom": "topography",
     "name": "topography",
     "description": "Use when mapping the shape of the corpus and rendering it as text — topography reads the terrain (gravity wells, link ridges, the aura field) and auto-generates prose from the quantum streams (uuid, digit, realtime event flows), so the map writes itself from the territory's own streams.",
     "path": "topography"
   },
   {
+    "atom": "topology",
+    "name": "topology",
+    "description": "Use when reasoning about topology — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "topology"
+  },
+  {
     "atom": "torque",
     "name": "torque",
-    "description": "The torque (turning force) of the vehicle's engine. Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch * Note 1: You can link to information",
+    "description": "Use when reasoning about torque — The torque (turning force) of the vehicle's engine. Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch * Note 1: You can",
     "path": "torque"
   },
   {
@@ -15359,15 +15809,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tourist"
   },
   {
-    "atom": "toxicologic",
-    "name": "toxicologic",
-    "description": "Use when reasoning about toxicologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "toxicologic"
-  },
-  {
     "atom": "toy",
     "name": "toy",
-    "description": "toy: a schema.org component word, fused from ToyStore",
+    "description": "Use when reasoning about toy — A schema.org component word, collided out of schema.org compounds — fused from ToyStore (sti · collapse · merge).",
     "path": "toy"
   },
   {
@@ -15379,7 +15823,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "track",
     "name": "track",
-    "description": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
+    "description": "Use when reasoning about track — A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
     "path": "track"
   },
   {
@@ -15391,14 +15835,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "tracks",
     "name": "tracks",
-    "description": "A music recording (track)&#x2014;usually a single song.",
+    "description": "Use when reasoning about tracks — A music recording (track)&#x2014;usually a single song.",
     "path": "tracks"
-  },
-  {
-    "atom": "trade",
-    "name": "trade",
-    "description": "Use when reasoning about trade as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "trade"
   },
   {
     "atom": "trading",
@@ -15407,15 +15845,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "trading"
   },
   {
-    "atom": "traditional",
-    "name": "traditional",
-    "description": "Use when reasoning about traditional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "traditional"
+    "atom": "trail",
+    "name": "trail",
+    "description": "Use when reasoning about trail — **Law — law: barrel re-export at ; trinity sealed for import purity.**",
+    "path": "audit/trail"
   },
   {
     "atom": "trailer",
     "name": "trailer",
-    "description": "The trailer of a movie or TV/radio series, season, episode, etc.",
+    "description": "Use when reasoning about trailer — The trailer of a movie or TV/radio series, season, episode, etc.",
     "path": "trailer"
   },
   {
@@ -15423,12 +15861,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "train",
     "description": "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay.",
     "path": "train"
-  },
-  {
-    "atom": "trained",
-    "name": "trained",
-    "description": "Use when reasoning about trained as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "trained"
   },
   {
     "atom": "training",
@@ -15445,19 +15877,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "transaction",
     "name": "transaction",
-    "description": "Use for the universal exchange node — a balanced flow of value between parties, the commercial document AND its ledger entry as duals. One transactions collection holds every kind (invoice/order/bank/fx/intercompany) by dimension; the prefix-free coordinate the trades-vs-transactions question resolves to (it is a trade·transaction — both words).",
+    "description": "Use when reasoning about transaction — A **transaction** is the atom of business: a balance|balanced flow of value between party|parties — two sides (give/take, debit/credit, seller/buyer) that sum to zero. It is the pr",
     "path": "transaction"
   },
   {
     "atom": "transactions",
-    "name": "related-party-transactions",
+    "name": "transactions",
     "description": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
     "path": "legal/entities/related/party/transactions"
   },
   {
     "atom": "transcript",
     "name": "transcript",
-    "description": "If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
+    "description": "Use when reasoning about transcript — If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
     "path": "transcript"
   },
   {
@@ -15465,12 +15897,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "transfer",
     "description": "Use when reasoning about transfer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "transfer"
-  },
-  {
-    "atom": "transformed",
-    "name": "transformed",
-    "description": "Use when reasoning about transformed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "transformed"
   },
   {
     "atom": "transit",
@@ -15499,7 +15925,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "translator",
     "name": "translator",
-    "description": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
+    "description": "Use when reasoning about translator — Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
     "path": "translator"
   },
   {
@@ -15521,22 +15947,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "transport"
   },
   {
-    "atom": "transposes",
-    "name": "transposes",
-    "description": "Use when reasoning about transposes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "transposes"
-  },
-  {
     "atom": "travel",
     "name": "travel",
     "description": "Use when reasoning about travel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "travel"
-  },
-  {
-    "atom": "treat",
-    "name": "treat",
-    "description": "Use when reasoning about treat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "treat"
   },
   {
     "atom": "treatment",
@@ -15545,16 +15959,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "treatment"
   },
   {
-    "atom": "treatments",
-    "name": "treatments",
-    "description": "Use when reasoning about treatments as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "treatments"
-  },
-  {
     "atom": "trellis",
     "name": "trellis",
     "description": "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction.",
     "path": "trellis"
+  },
+  {
+    "atom": "trello",
+    "name": "trello",
+    "description": "Use when entangling an external REST system with erpax — the first worked proof that a third-party API becomes a one-word atom judged by the same constitution as everything else: a typed Trello client (key+token query auth, 300/10s per key and 100/10s per token as a continuous-refill token bucket that QUEUES a burst rather than dropping it), errors that propagate as TrelloError instead of being swallowed, and a Payload plugin whose record→card sync is idempotent on a stored card id.",
+    "path": "trello"
   },
   {
     "atom": "trend",
@@ -15571,13 +15985,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "tributary",
     "name": "tributary",
-    "description": "The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
+    "description": "Use when reasoning about tributary — The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
     "path": "tributary"
   },
   {
     "atom": "triggered",
     "name": "triggered",
-    "description": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \"Use when\", measured live as coverage = triggered / total over the real tree.",
+    "description": "Use when checking whether every skill leads with its Use-when trigger — the computed convention that a SKILL.md frontmatter description starts with \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Use when\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", measured live as coverage = triggered / total over the real tree.",
     "path": "convention/triggered"
   },
   {
@@ -15589,25 +16003,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "trip",
     "name": "trip",
-    "description": "A trip or journey. An itinerary of visits to one or more places.",
+    "description": "Use when reasoning about trip — A trip or journey. An itinerary of visits to one or more places.",
     "path": "trip"
-  },
-  {
-    "atom": "triple",
-    "name": "triple",
-    "description": "Use when reasoning about triple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "triple"
-  },
-  {
-    "atom": "true",
-    "name": "true",
-    "description": "Use when reasoning about true as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "true"
   },
   {
     "atom": "trust",
     "name": "trust",
-    "description": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
+    "description": "Use when reasoning about trust — A **trust** (IOLTA) account holds client money the firm may not touch except to bill against fees already earned. Strip the prefix and it is a segregated sub-account on the one acc",
     "path": "trust"
   },
   {
@@ -15615,12 +16017,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "truth",
     "description": "Use when enforcing that @standard / @compliance banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard.",
     "path": "standard/truth"
-  },
-  {
-    "atom": "tuesday",
-    "name": "tuesday",
-    "description": "Use when reasoning about tuesday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tuesday"
   },
   {
     "atom": "tunnel",
@@ -15633,30 +16029,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "tv",
     "description": "Use when reasoning about tv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "tv"
-  },
-  {
-    "atom": "tvclip",
-    "name": "tvclip",
-    "description": "Use when reasoning about tvclip as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tvclip"
-  },
-  {
-    "atom": "tvepisode",
-    "name": "tvepisode",
-    "description": "Use when reasoning about tvepisode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tvepisode"
-  },
-  {
-    "atom": "tvseason",
-    "name": "tvseason",
-    "description": "Use when reasoning about tvseason as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tvseason"
-  },
-  {
-    "atom": "tvseries",
-    "name": "tvseries",
-    "description": "Use when reasoning about tvseries as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "tvseries"
   },
   {
     "atom": "tweet",
@@ -15703,26 +16075,14 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "ui",
     "name": "ui",
-    "description": "Use when reasoning about the trained UI agent — it renders any atom to its UI (the sensory render + the page) from the atom's content-uuid, trained by the rendering teams on the whole rendering layer, covering the whole corpus because every atom has a UI.",
-    "path": "agent/ui"
+    "description": "Use when mounting shadcn/Radix primitives — the component catalog under src/ui/ (Tooltip, Dialog, Tabs, Collapsible, Sonner, etc.) wired to corpus-computed CSS and live quantum dimension surfaces.",
+    "path": "ui"
   },
   {
     "atom": "uk",
     "name": "uk",
     "description": "Use when reasoning about uk as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "uk"
-  },
-  {
-    "atom": "uknonprofit",
-    "name": "uknonprofit",
-    "description": "Use when reasoning about uknonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "uknonprofit"
-  },
-  {
-    "atom": "uktrust",
-    "name": "uktrust",
-    "description": "Use when reasoning about uktrust as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "uktrust"
   },
   {
     "atom": "ultrasound",
@@ -15733,44 +16093,26 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "un",
     "name": "un",
-    "description": "un: a schema.org component word, fused from UnRegisterAction",
+    "description": "Use when reasoning about un — A schema.org component word, collided out of schema.org compounds — fused from UnRegisterAction (sti · collapse · merge).",
     "path": "un"
   },
   {
     "atom": "unavoidable",
     "name": "unavoidable",
     "description": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
-    "path": "unavoidable"
+    "path": "vocabulary/unavoidable"
   },
   {
-    "atom": "unclassified",
-    "name": "unclassified",
-    "description": "Use when reasoning about unclassified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unclassified"
+    "atom": "uncertainty",
+    "name": "uncertainty",
+    "description": "Use when reasoning about the Heisenberg uncertainty floor — two conjugate quantities (position⊗momentum, energy⊗time) can never both be sharp, their spreads obey Δa·Δb ≥ ħ/2. It is the wave nature of the state, not a measurement defect. In erpax it is a real design limit: the irreducible slack that can never reach zero, and the natural linewidth that broadens every spectrum line (a leap living only Δt has ΔE ≥ ħ/2Δt).",
+    "path": "uncertainty"
   },
   {
-    "atom": "under",
-    "name": "under",
-    "description": "Use when reasoning about under as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "under"
-  },
-  {
-    "atom": "underbust",
-    "name": "underbust",
-    "description": "Use when reasoning about underbust as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "underbust"
-  },
-  {
-    "atom": "unemployment",
-    "name": "unemployment",
-    "description": "Use when reasoning about unemployment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unemployment"
-  },
-  {
-    "atom": "unincorporated",
-    "name": "unincorporated",
-    "description": "Use when reasoning about unincorporated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unincorporated"
+    "atom": "unfolded",
+    "name": "unfolded",
+    "description": "Use when checking that an export earns its place — a symbol with no caller is dead, and one with exactly one caller is un-folded (inline it, delete it, or make it reused). Counts real call sites only: an import or re-export NAMES a symbol without USING it, so counting it hides genuine single-use. Candidates, never a purge list — erpax ships as @erpax/* packages, so an export may be the public face with no in-repo caller. Run: tsx src/rules/unfolded/index.ts",
+    "path": "rules/unfolded"
   },
   {
     "atom": "union",
@@ -15793,7 +16135,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "unity",
     "name": "unity",
-    "description": "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
+    "description": "Use when reasoning about the closing position of the horo state ring — digit 9, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"the ring closes\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
     "path": "horo/unity"
   },
   {
@@ -15805,14 +16147,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "unlabelled",
     "name": "unlabelled",
-    "description": "unlabelled: a schema.org component word, fused from isUnlabelledFallback",
+    "description": "Use when reasoning about unlabelled — A schema.org component word, collided out of schema.org compounds — fused from isUnlabelledFallback (sti · collapse · merge).",
     "path": "unlabelled"
-  },
-  {
-    "atom": "unlimited",
-    "name": "unlimited",
-    "description": "Use when reasoning about unlimited as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unlimited"
   },
   {
     "atom": "unnamed",
@@ -15821,16 +16157,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "unnamed"
   },
   {
-    "atom": "unofficial",
-    "name": "unofficial",
-    "description": "Use when reasoning about unofficial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unofficial"
-  },
-  {
-    "atom": "unordered",
-    "name": "unordered",
-    "description": "Use when reasoning about unordered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unordered"
+    "atom": "unraised",
+    "name": "unraised",
+    "description": "Use when a declared failure kind is never raised — a `…Kind` union member that nothing in src ever constructs is a check that cannot fire, so its claim defaults to TRUE by omission. Parsed via ts.createSourceFile, never matched. Run: tsx src/rules/unraised/index.ts",
+    "path": "rules/unraised"
   },
   {
     "atom": "unsaturated",
@@ -15843,12 +16173,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "unsid",
     "description": "Use when reasoning about unsid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "unsid"
-  },
-  {
-    "atom": "unspecified",
-    "name": "unspecified",
-    "description": "Use when reasoning about unspecified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "unspecified"
   },
   {
     "atom": "until",
@@ -15867,6 +16191,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "updates",
     "description": "Use when reasoning about updates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "updates"
+  },
+  {
+    "atom": "upgrade",
+    "name": "upgrade",
+    "description": "Use when SKILL.md frontmatter must self-upgrade from live corpus state — connectFrontmatter folds diamond, matrix, typography, standards, bonds, and per-stage signatures into one connected graph.",
+    "path": "skill/router/upgrade"
   },
   {
     "atom": "upload",
@@ -15901,7 +16231,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "url",
     "name": "url",
-    "description": "Data type: URL.",
+    "description": "Use when reasoning about url — Data type: URL.",
     "path": "url"
   },
   {
@@ -15909,12 +16239,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "urltemplate",
     "description": "Use when reasoning about urltemplate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "urltemplate"
-  },
-  {
-    "atom": "urologic",
-    "name": "urologic",
-    "description": "Use when reasoning about urologic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "urologic"
   },
   {
     "atom": "us",
@@ -15959,12 +16283,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "uses"
   },
   {
-    "atom": "usnonprofit",
-    "name": "usnonprofit",
-    "description": "Use when reasoning about usnonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "usnonprofit"
-  },
-  {
     "atom": "utilities",
     "name": "utilities",
     "description": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
@@ -15985,7 +16303,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "utterances",
     "name": "utterances",
-    "description": "Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
+    "description": "Use when reasoning about utterances — Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
     "path": "utterances"
   },
   {
@@ -16003,8 +16321,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "valid",
     "name": "valid",
-    "description": "The duration of validity of a permit or similar thing.",
+    "description": "Use when reasoning about valid — The duration of validity of a permit or similar thing.",
     "path": "valid"
+  },
+  {
+    "atom": "validation",
+    "name": "validation",
+    "description": "Use when checking that a postal address is complete and well-formed for its declared country — country-aware required components and postal-code pattern checks, returning human-readable errors (empty ⇒ valid) ready for a Payload beforeValidate throw.",
+    "path": "address/validation"
+  },
+  {
+    "atom": "validator",
+    "name": "validator",
+    "description": "Use when posting or reviewing a journal entry — the double-entry gate: every entry has two sides and the sides agree. Enforces a balance tolerance, one side per posting, non-negative amounts; warns (never refuses) on account polarity, because contra-accounts legitimately invert. Read this before trusting the word tolerance: the bound is absolute over float amounts, so the same one-cent gap posts at 50 and is refused at 100.",
+    "path": "double/entry/validator"
   },
   {
     "atom": "value",
@@ -16033,12 +16363,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "variance",
     "name": "variance",
-    "description": "Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined performance measures",
+    "description": "Use when reasoning about variance — Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined perfor",
     "path": "variance"
   },
   {
     "atom": "variances",
-    "name": "cost-variances",
+    "name": "variances",
     "description": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
     "path": "items/bills/of/materials/work/orders/cost/variances"
   },
@@ -16057,14 +16387,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "varies",
     "name": "varies",
-    "description": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \"color\"; terms defined",
+    "description": "Use when reasoning about varies — Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\\\\\\\\\\\"col",
     "path": "varies"
-  },
-  {
-    "atom": "vat",
-    "name": "vat",
-    "description": "Use when reasoning about vat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "vat"
   },
   {
     "atom": "vcard",
@@ -16073,33 +16397,27 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vcard"
   },
   {
-    "atom": "vegan",
-    "name": "vegan",
-    "description": "Use when reasoning about vegan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "vegan"
-  },
-  {
-    "atom": "vegetarian",
-    "name": "vegetarian",
-    "description": "Use when reasoning about vegetarian as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "vegetarian"
+    "atom": "vedanta",
+    "name": "vedanta",
+    "description": "Use when reading Vedanta as a sub-diamond of hinduism — the crown philosophy of the Upanishads: atman is brahman (tat tvam asi), the self IS the whole, non-duality. This is literally erpax's identity law at the metaphysical scale: a thing IS its source, content-uuid = self. A facet-diamond of the hinduism archangel.",
+    "path": "vedanta"
   },
   {
     "atom": "vehicle",
     "name": "vehicle",
-    "description": "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
+    "description": "Use when reasoning about vehicle — A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
     "path": "vehicle"
   },
   {
     "atom": "vein",
     "name": "vein",
-    "description": "A type of blood vessel that specifically carries blood to the heart.",
+    "description": "Use when reasoning about erpax's return vessel — the one-way organ. Venous valves enforce unidirectional flow back to the heart (a ratchet, the append-only return), the veins hold ~70% of blood volume (a capacitance reservoir), and with the artery they close the reciprocal loop. Three properties are computed and mapped — a structural isomorphism — onto erpax's append-only chain and reciprocal wiring.",
     "path": "vein"
   },
   {
     "atom": "vendor",
     "name": "vendor",
-    "description": "'vendor' is an earlier term for 'seller'.",
+    "description": "Use when reasoning about vendor — 'vendor' is an earlier term for 'seller'.",
     "path": "vendor"
   },
   {
@@ -16127,6 +16445,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "verification"
   },
   {
+    "atom": "verified",
+    "name": "verified",
+    "description": "Use when you need the sense-verified translation seed and its computed renderings — only the concept→Qid judgment is stored (58 unambiguous concept atoms, each admitted because a candidate's description sense-matched the atom's meaning); the per-locale labels are a computed projection of each Qid, sealed content-addressed in the gitignored cache. Theorems replace hardcoded values: the seed is data, the renderings are a read. Nothing fabricated; unsure senses stay gaps.",
+    "path": "translation/source/verified"
+  },
+  {
     "atom": "version",
     "name": "version",
     "description": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
@@ -16141,7 +16465,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "vessel",
     "name": "vessel",
-    "description": "A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
+    "description": "Use when reasoning about vessel — A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
     "path": "vessel"
   },
   {
@@ -16159,38 +16483,20 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "video",
     "name": "video",
-    "description": "An embedded video object.",
+    "description": "Use when reasoning about video — An embedded video object.",
     "path": "video"
   },
   {
-    "atom": "view",
-    "name": "view",
-    "description": "Use when reasoning about view as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "view"
-  },
-  {
-    "atom": "vinyl",
-    "name": "vinyl",
-    "description": "Use when reasoning about vinyl as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "vinyl"
-  },
-  {
-    "atom": "violence",
-    "name": "violence",
-    "description": "Use when reasoning about violence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "violence"
+    "atom": "violations",
+    "name": "violations",
+    "description": "Use when monitoring all erpax gate violations in realtime — folder law, rules:check, diamond strays, gap eb, finishedIdeaCrossed, import/boundary, path-follow, entanglement, logic-concentration.",
+    "path": "monitor/violations"
   },
   {
     "atom": "virtual",
     "name": "virtual",
     "description": "Use when reasoning about virtual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "virtual"
-  },
-  {
-    "atom": "virus",
-    "name": "virus",
-    "description": "Use when reasoning about virus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "virus"
   },
   {
     "atom": "visit",
@@ -16237,7 +16543,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "volcano",
     "name": "volcano",
-    "description": "A volcano, like Fujisan.",
+    "description": "Use when reasoning about volcano — A volcano, like Fujisan.",
     "path": "volcano"
   },
   {
@@ -16249,7 +16555,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "vote",
     "name": "vote",
-    "description": "vote: a schema.org component word, fused from VoteAction",
+    "description": "Use when reasoning about vote — A schema.org component word, collided out of schema.org compounds — fused from VoteAction (sti · collapse · merge).",
     "path": "vote"
   },
   {
@@ -16259,28 +16565,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "voting"
   },
   {
-    "atom": "waist",
-    "name": "waist",
-    "description": "Use when reasoning about waist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "waist"
-  },
-  {
-    "atom": "waiver",
-    "name": "waiver",
-    "description": "Use when reasoning about waiver as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "waiver"
-  },
-  {
     "atom": "wallet",
     "name": "wallet",
     "description": "Use when holding value — a balance under an owner identity; double-entry and content-addressed, so the wallet state is tamper-evident and every move balances.",
     "path": "wallet"
-  },
-  {
-    "atom": "want",
-    "name": "want",
-    "description": "Use when reasoning about want as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "want"
   },
   {
     "atom": "war",
@@ -16291,7 +16579,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "warning",
     "name": "warning",
-    "description": "Any FDA or other warnings about the drug (text or URL).",
+    "description": "Use when reasoning about warning — Any FDA or other warnings about the drug (text or URL).",
     "path": "warning"
   },
   {
@@ -16321,7 +16609,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "waterfall",
     "name": "waterfall",
-    "description": "A waterfall, like Niagara.",
+    "description": "Use when reasoning about waterfall — A waterfall, like Niagara.",
     "path": "waterfall"
   },
   {
@@ -16329,18 +16617,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "wave",
     "description": "Use when describing a batch of features added in one development breath before they are collided — a wave rides the horo sequence, raising entropy first so the later collide can DRY it back to the dense core.",
     "path": "wave"
-  },
-  {
-    "atom": "weapon",
-    "name": "weapon",
-    "description": "Use when reasoning about weapon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "weapon"
-  },
-  {
-    "atom": "wear",
-    "name": "wear",
-    "description": "Use when reasoning about wear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "wear"
   },
   {
     "atom": "wearable",
@@ -16351,7 +16627,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "weave",
     "name": "weave",
-    "description": "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
+    "description": "Use when reasoning about the third position of the horo state ring — digit 4, \\\\\\\\\\\\\\\\\\\\\\\\\\\\\"four hands meeting\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
     "path": "horo/weave"
   },
   {
@@ -16367,12 +16643,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "website"
   },
   {
-    "atom": "wednesday",
-    "name": "wednesday",
-    "description": "Use when reasoning about wednesday as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "wednesday"
-  },
-  {
     "atom": "week",
     "name": "week",
     "description": "Use when reasoning about week as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
@@ -16381,7 +16651,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "weight",
     "name": "weight",
-    "description": "The weight of the product or person.",
+    "description": "Use when reasoning about weight — The weight of the product or person.",
     "path": "weight"
   },
   {
@@ -16389,12 +16659,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "wellbeing",
     "description": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
     "path": "wellbeing"
-  },
-  {
-    "atom": "western",
-    "name": "western",
-    "description": "Use when reasoning about western as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "western"
   },
   {
     "atom": "wheel",
@@ -16405,14 +16669,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "wheelbase",
     "name": "wheelbase",
-    "description": "The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
+    "description": "Use when reasoning about wheelbase — The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
     "path": "wheelbase"
-  },
-  {
-    "atom": "where",
-    "name": "where",
-    "description": "Use when reasoning about where as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "where"
   },
   {
     "atom": "whole",
@@ -16429,32 +16687,32 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "width",
     "name": "width",
-    "description": "The width of the item.",
+    "description": "Use when reasoning about width — The width of the item.",
     "path": "width"
-  },
-  {
-    "atom": "win",
-    "name": "win",
-    "description": "Use when reasoning about win as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "win"
-  },
-  {
-    "atom": "window",
-    "name": "window",
-    "description": "Use when reasoning about window as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "window"
   },
   {
     "atom": "winery",
     "name": "winery",
-    "description": "A winery.",
+    "description": "Use when reasoning about winery — A winery.",
     "path": "winery"
   },
   {
     "atom": "winner",
     "name": "winner",
-    "description": "A sub property of participant. The winner of the action.",
+    "description": "Use when reasoning about winner — A sub property of participant. The winner of the action.",
     "path": "winner"
+  },
+  {
+    "atom": "wire",
+    "name": "wire",
+    "description": "Use when a reader receives the erpax GitHub URL — wireFromRepoUrl validates github.com/erpax/erpax and returns the canonical skill entry paths (content-uuid sealed). All orientation surfaces point to .claude/skills/SKILL.md; paste or clone.",
+    "path": "skill/wire"
+  },
+  {
+    "atom": "wisdom",
+    "name": "wisdom",
+    "description": "Use when reasoning about holding the law instead of the list — seeing the one pattern that generates the many cases, so a part reconstructs the whole. Distinct from truth (a verified fact) and knowledge (stored facts): wisdom is the holographic compression that lets you regenerate the facts rather than store them.",
+    "path": "wisdom"
   },
   {
     "atom": "withdrawal",
@@ -16463,27 +16721,21 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "withdrawal"
   },
   {
-    "atom": "withdrawn",
-    "name": "withdrawn",
-    "description": "Use when reasoning about withdrawn as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "withdrawn"
-  },
-  {
     "atom": "within",
     "name": "within",
     "description": "Use when reasoning about within as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "within"
   },
   {
-    "atom": "womens",
-    "name": "womens",
-    "description": "Use when reasoning about womens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "womens"
+    "atom": "witness",
+    "name": "witness",
+    "description": "Use when a test derives over the whole corpus and hangs — the bounded-witness helper: sample a large domain (bounded-witness) or take the whole when it is small (finite-complete), replacing every ad-hoc slice.",
+    "path": "testing/witness"
   },
   {
     "atom": "word",
     "name": "word",
-    "description": "Use when reasoning about word as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "description": "Use when addressing a lexical prose token — one vocabulary diamond content-addressed as uuid(jcs({ kind:'word', value })); saved in the text token index, not as a per-word src/ folder.",
     "path": "word"
   },
   {
@@ -16495,8 +16747,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "worker",
     "name": "worker",
-    "description": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization.",
-    "path": "worker"
+    "description": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization. AND when naming the autonomous deployment face of a [[diamond]] — hook bodies, CLIs, guardians, agents, MCP handlers that run without a human in the loop.",
+    "path": "vocabulary/worker"
   },
   {
     "atom": "workers",
@@ -16513,18 +16765,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "workload",
     "name": "workload",
-    "description": "Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
+    "description": "Use when reasoning about workload — Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
     "path": "workload"
   },
   {
     "atom": "works",
     "name": "works",
-    "description": "Organizations that the person works for.",
+    "description": "Use when reasoning about works — Organizations that the person works for.",
     "path": "works"
   },
   {
     "atom": "workspace",
-    "name": "google-workspace",
+    "name": "workspace",
     "description": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
     "path": "google/workspace"
   },
@@ -16553,45 +16805,21 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "wp"
   },
   {
-    "atom": "wpad",
-    "name": "wpad",
-    "description": "Use when reasoning about wpad as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "wpad"
-  },
-  {
-    "atom": "wpfooter",
-    "name": "wpfooter",
-    "description": "Use when reasoning about wpfooter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "wpfooter"
-  },
-  {
-    "atom": "wpheader",
-    "name": "wpheader",
-    "description": "Use when reasoning about wpheader as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "wpheader"
-  },
-  {
-    "atom": "wpside",
-    "name": "wpside",
-    "description": "Use when reasoning about wpside as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "wpside"
-  },
-  {
     "atom": "write",
     "name": "write",
-    "description": "write: a schema.org component word, fused from WriteAction",
+    "description": "Use when reasoning about write — A schema.org component word, collided out of schema.org compounds — fused from WriteAction (sti · collapse · merge).",
     "path": "write"
   },
   {
     "atom": "writing",
     "name": "writing",
-    "description": "Use when writing or improving an essay, argument, or any prose — the craft of connected thoughts, where coherence is binding every sentence to the last and every claim to its ground; a hallucination is an orphan sentence. The positive twin of recycle.",
+    "description": "Use when writing must be computed from sealed coordinates — debit/credit prose structure · law lines · wikilink density · eb/word from readme/paper.ts; never prose templates.",
     "path": "writing"
   },
   {
     "atom": "xpath",
     "name": "xpath",
-    "description": "An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\".",
+    "description": "Use when reasoning about xpath — An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\\\\\\\\\\\"Web page element\\\\\\\\\\\\\".",
     "path": "xpath"
   },
   {
@@ -16607,28 +16835,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "year"
   },
   {
-    "atom": "yearly",
-    "name": "yearly",
-    "description": "Use when reasoning about yearly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "yearly"
-  },
-  {
     "atom": "years",
     "name": "years",
     "description": "Use when reasoning about years as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "years"
-  },
-  {
-    "atom": "yes",
-    "name": "yes",
-    "description": "Use when reasoning about yes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "yes"
-  },
-  {
-    "atom": "yet",
-    "name": "yet",
-    "description": "Use when reasoning about yet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "yet"
   },
   {
     "atom": "yield",
@@ -16643,15 +16853,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "zeropoint"
   },
   {
-    "atom": "zone",
-    "name": "zone",
-    "description": "Use when reasoning about zone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
-    "path": "zone"
-  },
-  {
     "atom": "zoo",
     "name": "zoo",
-    "description": "A zoo.",
+    "description": "Use when reasoning about zoo — A zoo.",
     "path": "zoo"
+  },
+  {
+    "atom": "zoroastrianism",
+    "name": "zoroastrianism",
+    "description": "Use when reading Zoroastrianism as a diamond of invariant atoms — the cosmic contest of truth/order (asha) against the lie (druj), the sacred fire as witness, good thoughts-words-deeds, the final renovation as return to perfected zero. The source of erpax's angel/archangel polarity (Spenta Mainyu vs Angra Mainyu). Strip the Avestan prefix and asha, druj, frashokereti collapse to order/law, profane, zeropoint.",
+    "path": "vocabulary/zoroastrianism"
   }
 ]
