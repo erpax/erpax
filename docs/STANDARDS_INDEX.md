@@ -230,6 +230,9 @@ src/analytics/types.ts:14: * @standard ISO-4217:2015 currency-codes monetary-amo
 src/analytics/types.ts:15: * @standard ISO-8601-1:2019 date-time as-of-date
 src/anchor/index.ts:15: * @standard RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422
 src/anchor/index.ts:16: * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)
+src/anchor/index.ts:17: * @standard FIPS 205 (SLH-DSA, finalized 2024-08-13) — the primary root signature kind defined
+src/anchor/index.ts:20: * @standard FIPS 204 (ML-DSA, finalized 2024-08-13) — the lattice hybrid `ml-dsa-fips204`, whose
+src/anchor/index.ts:22: * @standard FIPS 203 (ML-KEM, finalized 2024-08-13) — key establishment; not an anchor kind, it
 src/anchor/surface/index.ts:22: * @standard FIPS 203 (ML-KEM) — key establishment; mandatory on every channel that exchanges state
 src/anchor/surface/index.ts:23: * @standard FIPS 204 (ML-DSA) — lattice signature, a distinct assumption from the digest
 src/anchor/surface/index.ts:24: * @standard FIPS 205 (SLH-DSA) — hash-based signature; the primary root, no new assumption

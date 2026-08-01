@@ -699,7 +699,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
     "uuid": "1d07c6b3-c502-8aa3-8b1b-1198dba57044",
     "color": "hsl(231 78% 49%)",
-    "count": 42,
+    "count": 45,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -735,6 +735,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/anchor/index.ts",
         "section": ""
       },
       {
@@ -791,10 +795,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/iso/14289/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
         "section": ""
       }
     ]

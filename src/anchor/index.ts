@@ -14,6 +14,13 @@ import { exactMax, exactMin } from '@/algebra'
  *
  * @standard RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422
  * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)
+ * @standard FIPS 205 (SLH-DSA, finalized 2024-08-13) — the primary root signature kind defined
+ *           below as `slh-dsa-fips205`; hash-based, so it adds no assumption the digest does not
+ *           already carry
+ * @standard FIPS 204 (ML-DSA, finalized 2024-08-13) — the lattice hybrid `ml-dsa-fips204`, whose
+ *           DISTINCT assumption (MLWE/MSIS) is recorded per-kind in ANCHOR_ASSUMPTION
+ * @standard FIPS 203 (ML-KEM, finalized 2024-08-13) — key establishment; not an anchor kind, it
+ *           seals the CHANNEL rather than the root, and is enforced in [[anchor]]/surface
  */
 
 import { ERPAX_DIGEST_BITS, secondPreimageLog2, bhtCollisionLog2 } from '@/cost'

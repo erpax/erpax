@@ -160,7 +160,7 @@ Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
 <!-- CATALOGUE:START -->
 
-## Catalogue — 150 standards, 6499 citations
+## Catalogue — 150 standards, 6502 citations
 
 <!-- GENERATED from registry.ts ⊕ @standard banners by src/standards/emit.ts. Do not edit by hand. -->
 
@@ -181,7 +181,7 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(122 76% 47%)"></span> `EU-Taxonomy-2020/852` — Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation) · 207 · `a7d2e799`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(333 63% 38%)"></span> `EU-537/2014` — Regulation (EU) No 537/2014 on specific requirements regarding statutory audit of public-interest entities · 55 · `de157160`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(35 73% 57%)"></span> `EU-910/2014` — Regulation (EU) No 910/2014 (eIDAS) — electronic identification and trust services for electronic transactions in the internal market, repealing Directive 1999/93/EC · 55 · `018b582b`
-- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(231 78% 49%)"></span> `EU-CSDDD-2024/1760` — Corporate Sustainability Due Diligence Directive (EU) 2024/1760 · 42 · `1d07c6b3`
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(231 78% 49%)"></span> `EU-CSDDD-2024/1760` — Corporate Sustainability Due Diligence Directive (EU) 2024/1760 · 45 · `1d07c6b3`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(48 86% 49%)"></span> `Peppol-BIS-3.0` — Peppol Billing BIS · 26 · `6408ce0b`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(25 79% 54%)"></span> `EU-VAT-Implementing-Reg-282/2011` — Council Implementing Regulation (EU) No 282/2011 of 15 March 2011 laying down implementing measures for Directive 2006/112/EC on the common system of value added tax (recast) · 25 · `f09181a0`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(313 59% 47%)"></span> `EU-ESRS` — European Sustainability Reporting Standards · 18 · `b2699009`
