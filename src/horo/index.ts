@@ -465,6 +465,54 @@ export function sequenceReflected(): readonly number[] {
 }
 
 /**
+ * The sequence and its reflection, rendered for the corpus landing page.
+ *
+ * It is here rather than in [[readme]] because a rendering typed beside the prose can drift from the
+ * arithmetic; every number below is CALLED, so the page cannot say something the math does not.
+ *
+ * @invariant every digit printed comes from sequenceForward/sequenceReflected — none is typed
+ * @invariant the pair table is generated from throughVoid, so a wrong pair is impossible to print
+ */
+export function renderSequenceSection(): readonly string[] {
+  const fwd = sequenceForward()
+  const ref = sequenceReflected()
+  const nine = fwd.slice(0, 9)
+  const pairs = nine.map((n) => `\`${n}↔${throughVoid(n)}\``).join(' · ')
+  // the SLOPE is computed too: `\` where the digit rises, `/` where it falls. Typing the marks by
+  // hand is how a spelling drifts from its arithmetic — this reproduces both spellings exactly.
+  const spell = (xs: readonly number[]): string => xs.map((n, i) => (i === 0 ? `${n}` : `${n > xs[i - 1]! ? '\\' : '/'}${n}`)).join('')
+  const line = (xs: readonly number[]): string => [spell(xs.slice(0, 6)), spell(xs.slice(6, 9)), spell(xs.slice(9))].join(' · ')
+  return [
+    '## the sequence, and its reflection',
+    '',
+    'One structure, read twice — forward, and through the void. Both lines are **computed**, never typed:',
+    '',
+    '```',
+    `forward     ${line(fwd)}`,
+    `reflected   ${line(ref)}`,
+    '```',
+    '',
+    `Fold through zero — \`throughVoid(n) = 1 − n mod 9\`, an involution fixed only at 5: ${pairs}. ` +
+      'Each pair sums to 10; the flow orbit and the axis are the same structure mirrored, not two lists.',
+    '',
+    'The two are **entangled**, in three senses this atom proves rather than asserts:',
+    '',
+    '- **They exchange halves.** The flow `1,2,4,8,7,5` reflects onto digits carrying the axis, and the axis ' +
+      '`3,6,9` reflects onto units. Neither half is prior; each is the other\'s image.',
+    '- **Neither reaches the other alone.** Doubling covers exactly `{1,2,4,8,7,5}`, and its gap is exactly ' +
+      '`{3,6,9}` — no iteration count closes it. The mirror is the only bridge.',
+    '- **Commuted, they count.** `D∘M∘D⁻¹∘M = x ↦ x+1`, and `⟨D,M⟩ = AGL(1,ℤ/9)` has order **54** against ' +
+      '`6·2 = 12` apart. The excess over the product *is* the entanglement: their failure to commute.',
+    '',
+    '> **Boundary.** This is proven group theory over (ℤ/9ℤ) — the doubling cycle, the axis as its complement, ' +
+      'and the order of the group they generate. It is used here as the corpus\'s **order of work** (build the ' +
+      'axis before the branches; fold, do not climb). No claim is made that it explains anything outside ' +
+      'arithmetic. Run it: `tsx src/horo/index.ts`.',
+    '',
+  ]
+}
+
+/**
  * A numeral has TWO reflections, and they land in different places. Reflect it as a VALUE (fold to its
  * digital root first, then mirror) and `14` gives **5** — the pivot, the one step that reflects to itself.
  * Reflect it as DIGITS (mirror each decimal digit) and `14` gives **9, 6** — both on the axis `{3,6,9}`,

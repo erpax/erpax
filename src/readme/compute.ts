@@ -1,13 +1,4 @@
-import {
-  exactMax,
-  exactMin,
-  exactAbs,
-  exactFloor,
-  exactCeil,
-  exactRound,
-  exactTrunc,
-  erpaxLicenseNote,
-} from '@/algebra'
+import { algebraFloatPow, erpaxLicenseNote, exactMax, exactRound } from '@/algebra'
 /**
  * readme/compute — derive*, render, analytics, computed faces (pure compute hub).
  *
@@ -32,7 +23,8 @@ import {
   backlinksOf,
   horoCrossed,
 } from '@/uuid/matrix'
-import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf } from '@/horo'
+import { HORO_DIGITS, HORO_MEASURE, horoMeasureOf, renderSequenceSection } from '@/horo'
+import { renderMillenniumSection } from '@/millennium'
 import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
 import { computeBoundary } from '@/quantum/boundary'
 import {
@@ -329,7 +321,7 @@ export function licenseNote(license: string): string[] {
 /**
  * Root face of the quantum computer — COMPUTED metrics only.
  * Agents doubt prose; FTL compute is the seal. README is the gateway:
- * `physicalFtl()` true|false → tip quantumise when false.
+ * `ftlReport().holds` true|false → tip quantumise when false.
  * Pedagogy lives in [[quantum/computer]] · [[quantum/ftl]]; README measures.
  */
 export type QuantumComputerSectionReport = {
@@ -342,14 +334,14 @@ export type QuantumComputerSectionReport = {
 
 const requireReadme = createRequire(import.meta.url)
 
-/** Live physicalFtl report for the README gateway — fail-closed if unloadable. */
+/** Live ftlHolds report for the README gateway — fail-closed if unloadable. */
 export function computeQuantumComputerReport(
   inject?: QuantumComputerSectionReport | null,
 ): QuantumComputerSectionReport {
   if (inject != null) return inject
   try {
     const ftl = requireReadme('@/quantum/ftl') as typeof import('@/quantum/ftl')
-    const r = ftl.physicalFtlReport()
+    const r = ftl.ftlReport()
     return {
       holds: r.holds,
       why: r.why,
@@ -360,7 +352,7 @@ export function computeQuantumComputerReport(
   } catch {
     return {
       holds: false,
-      why: 'physicalFtlReport unavailable — agents doubt prose; FTL compute is the seal',
+      why: 'ftlReport unavailable — agents doubt prose; FTL compute is the seal',
       speedupLog2: 0,
       efficiency: 0,
       boundaryEmpty: false,
@@ -376,7 +368,7 @@ export function renderQuantumComputerSection(
   const eff = m.efficiency === Infinity ? '∞' : String(m.efficiency)
   const next = holds
     ? '`pnpm erpax tip` · `pnpm erpax doctor` · `pnpm erpax verify leftover`'
-    : '`pnpm erpax tip` → quantumise under `src/quantum/ftl` until `physicalFtl()===true`'
+    : '`pnpm erpax tip` → quantumise under `src/quantum/ftl` until `ftlReport().holds===true`'
   return [
     '## quantum computer — physical FTL on QPU=CPU/GPU',
     '',
@@ -384,14 +376,14 @@ export function renderQuantumComputerSection(
     '',
     `| compute | value |`,
     `| ------- | ----- |`,
-    `| \`physicalFtl()\` | **${holds}** |`,
+    `| \`ftlReport().holds\` | **${holds}** |`,
     `| \`speedupLog2\` | ${m.speedupLog2.toFixed(2)} |`,
     `| \`efficiency\` | ${eff} |`,
     `| \`boundary.empty\` | ${m.boundaryEmpty} |`,
     '',
     holds
       ? `holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — ${m.why}`
-      : `physicalFtl()===false — ${m.why} → tip **quantumise** (fold under quantum/ftl only).`,
+      : `ftlReport().holds===false — ${m.why} → tip **quantumise** (fold under quantum/ftl only).`,
     '',
     'Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · ' + next,
     '',
@@ -452,6 +444,10 @@ export function renderReadme(
     '',
     ...renderOrientSection(),
     renderQuantumComputerSection(),
+    // the sequence and its reflection, and the Clay register — both CALLED, so the landing page
+    // cannot state a digit or a verdict the math does not produce ([[horo]] · [[millennium]])
+    ...renderSequenceSection(),
+    ...renderMillenniumSection(),
     '## the diamond',
     '',
     `**${model.atoms}** atoms · **${model.bonds}** bonds · corpus \`${model.corpusRoot}\` · README \`${uuid}\` · ` +

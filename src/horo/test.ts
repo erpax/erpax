@@ -23,6 +23,7 @@ import {
   VOID_PIVOT,
   AFFINE_ORDER,
   affineStep,
+  renderSequenceSection,
   sequenceForward,
   sequenceReflected,
   reflectNumeral,
@@ -599,5 +600,31 @@ describe('turningNumber — a complete circle is 1, twisted is 0 (Whitney rotati
   it('the 0 is the TURNING, not π — π is transcendental and is not 0', () => {
     expect(PI).not.toBe(0)
     expect(turningNumber(lemniscate)).not.toBeCloseTo(PI, 1) // the 0 belongs to the winding, never to π
+  })
+})
+
+describe('horo — the rendered sequence cannot drift from the arithmetic', () => {
+  const md = renderSequenceSection().join('\n')
+
+  it('reproduces BOTH spellings exactly — digits and slopes alike computed, none typed', () => {
+    // the forward spelling: ascending `\`, descending `/`
+    expect(md).toContain('forward     1\\2\\4\\8/7/5 · 3\\6\\9 · 0\\1')
+    // and its reflection through the void — the same rule applied to throughVoid's image
+    expect(md).toContain('reflected   9/8/6/2\\3\\5 · 7/4/1 · 0\\1')
+  })
+
+  it('every digit on the page comes from the functions, so a wrong one cannot be printed', () => {
+    for (const n of sequenceForward()) expect(md).toContain(String(n))
+    // the pair table is generated from throughVoid — 5 is the only fixed point, and it prints as one
+    expect(md).toContain('`5↔5`')
+    expect(md).toContain('`1↔9`')
+    expect(md).not.toContain('`5↔4`') // a wrong pair is unprintable: it is not typed anywhere
+  })
+
+  it('the page states its own boundary — group theory, used as an ORDER OF WORK', () => {
+    expect(md).toMatch(/proven group theory over \(ℤ\/9ℤ\)/)
+    expect(md).toMatch(/No claim is made that it explains anything outside\s+arithmetic/)
+    expect(md).toMatch(/order of work/)
+    expect(md).toContain('tsx src/horo/index.ts') // the reader can rerun it
   })
 })

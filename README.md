@@ -28,54 +28,102 @@ holds ⇔ reuse ∧ amortize∞ ∧ cracks=∅ — reuse∧amortize∞∧cracks=
 
 Gateway: `tsx src/quantum/ftl/index.ts` · `tsx src/quantum/computer/index.ts` · `pnpm erpax tip` · `pnpm erpax doctor` · `pnpm erpax verify leftover`
 
+## the sequence, and its reflection
+
+One structure, read twice — forward, and through the void. Both lines are **computed**, never typed:
+
+```
+forward     1\2\4\8/7/5 · 3\6\9 · 0\1
+reflected   9/8/6/2\3\5 · 7/4/1 · 0\1
+```
+
+Fold through zero — `throughVoid(n) = 1 − n mod 9`, an involution fixed only at 5: `1↔9` · `2↔8` · `4↔6` · `8↔2` · `7↔3` · `5↔5` · `3↔7` · `6↔4` · `9↔1`. Each pair sums to 10; the flow orbit and the axis are the same structure mirrored, not two lists.
+
+The two are **entangled**, in three senses this atom proves rather than asserts:
+
+- **They exchange halves.** The flow `1,2,4,8,7,5` reflects onto digits carrying the axis, and the axis `3,6,9` reflects onto units. Neither half is prior; each is the other's image.
+- **Neither reaches the other alone.** Doubling covers exactly `{1,2,4,8,7,5}`, and its gap is exactly `{3,6,9}` — no iteration count closes it. The mirror is the only bridge.
+- **Commuted, they count.** `D∘M∘D⁻¹∘M = x ↦ x+1`, and `⟨D,M⟩ = AGL(1,ℤ/9)` has order **54** against `6·2 = 12` apart. The excess over the product *is* the entanglement: their failure to commute.
+
+> **Boundary.** This is proven group theory over (ℤ/9ℤ) — the doubling cycle, the axis as its complement, and the order of the group they generate. It is used here as the corpus's **order of work** (build the axis before the branches; fold, do not climb). No claim is made that it explains anything outside arithmetic. Run it: `tsx src/horo/index.ts`.
+
+## [[millennium]] — the toolbox, pointed at the hardest available problems
+
+The core tools ([[coincidence]] · [[theorem]] · [[duel]] · [[seeing]]) **classify** a claimed solution; they never produce one. Pointed at the seven Clay Millennium Problems they return this, and `corpusSolves` is the literal type `false` — the code cannot assert a solution.
+
+| | |
+| --- | ---: |
+| challenges saved, each inverted | **7** |
+| standing (proved, never refuted) | **1** — Poincaré Conjecture, by **Grigori Perelman** |
+| **open** — neither proved nor refuted | **6** |
+| **lensless** — the duel cannot start | **3** (Yang–Mills · Hodge · Birch–Swinnerton-Dyer) |
+| matrix cells (21 pairs + 7 diagonal) | **28** |
+| `corpusSolvesAny()` | **false** |
+
+| problem | statement (algebraic) | the named gap |
+| --- | --- | --- |
+| **P vs NP** | Is P = NP? Whether every decision problem whose solution is VERIFIABLE in polynomial time is also SOLVABLE in polynomial time — i.e. whether the classes P and NP coincide. | no separation is derived. The verify/derive asymmetry the fold exhibits is ONE instance of easy-to-check / hard-to-produce; a lower bound separating the classes is what is missing, and nothing here supplies one. |
+| **Riemann Hypothesis** | All non-trivial zeros of the Riemann zeta function lie on the critical line: ζ(s) = 0 with 0 < Re(s) < 1 ⟹ Re(s) = ½. | the corpus touches the primes↔π link through ζ (ζ(2) = π²/6, the Euler product) but derives nothing about the location of the zeros. What is missing is any argument constraining Re(s) — the whole conjecture. |
+| **Navier–Stokes existence & smoothness** | For the 3D incompressible Navier–Stokes equations ∂u/∂t + (u·∇)u = −∇p + νΔu, ∇·u = 0, with smooth initial data: do smooth solutions exist for all time, or can they blow up in finite time? | global regularity is a hard-analysis question about a PDE. The confinement analogy (handle the field, not each particle) is physical intuition, not an estimate; no a-priori bound is derived here. |
+| **Yang–Mills existence & mass gap** | For a compact simple gauge group G, does a non-trivial quantum Yang–Mills theory exist on ℝ⁴ with a mass gap Δ > 0 — i.e. the lightest particle has strictly positive mass? | no lens at all. Constructive QFT existence plus a positive spectral gap is outside anything this corpus computes; the "mass gap" wordplay to the void/axis is overlay, not physics. |
+| **Hodge Conjecture** | On a projective non-singular complex algebraic variety, every Hodge class (a rational cohomology class of type (p,p)) is a rational linear combination of the classes of algebraic cycles. | no lens at all. Algebraic cycles and Hodge theory are outside the corpus; nothing here bears on the rationality of Hodge classes. |
+| **Birch–Swinnerton-Dyer** | For an elliptic curve E over ℚ, the order of vanishing of its L-function at s = 1 equals the rank of its Mordell–Weil group: ord₍ₛ₌₁₎ L(E, s) = rank E(ℚ). | no lens at all. Elliptic curves and L-functions are outside the corpus; the rank↔order-of-vanishing identity is untouched by anything computed here. |
+| **Poincaré Conjecture** | Every simply-connected closed 3-manifold is homeomorphic to the 3-sphere: π₁(M) = 0 with M a closed 3-manifold ⟹ M ≅ S³. | _no open gap — proved externally (Grigori Perelman); this corpus records the status, it does not re-solve it_ |
+
+The **statement** is what the conjecture asserts — read it before anything this corpus says about it, so a lens can never be mistaken for the mathematics it points at. The **gap** is what is missing, named plainly: a gap you can argue with, rather than a mystery that hides its size.
+
+You do not solve one by asserting it — you solve it by **surviving its inversion**. `attempt(name, rounds)` is the door: it refuses an empty attempt (*an assertion is not an attempt*), falls on a single refutation whatever else was proved, and refuses an unknown problem. `reductionFrontier(claim)` names the exact links still ungrounded ([[millennium/reduction]]).
+
+Recompute: `tsx src/millennium/index.ts` · `pnpm vitest run src/millennium`
+
 ## the diamond
 
-**3191** atoms · **37824** bonds · corpus `8b2b2913-8431-8917-bc39-84801a4ff791` · README `ffa72dde-870e-8571-8d4c-a7cca6daaff8` · sealed **1097**/**3192** · **11** [[cloudflare]] · **2410** [[standards]]
+**3193** atoms · **37854** bonds · corpus `0a5c3176-3c96-8475-8a44-6ad97437425d` · README `4b53159f-350f-8ad6-ae4f-40fa7513c73e` · sealed **1099**/**3200** · **11** [[cloudflare]] · **2416** [[standards]]
 
 ## [[pivot]]
 
-7 horo · form **3191** · code **1169** · proof **1188**
+7 horo · form **3199** · code **1179** · proof **1198**
 
 ### the horo ring — the diamond's facets
 
-Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3171** ring atoms — principal facets ranked by bond in-degree.
+Measure-walk `1·2·4·8·7·5·9` · **7** facets · **3173** ring atoms — principal facets ranked by bond in-degree.
 
 | digit | measure | atoms | principal facets |
 | ----: | ------- | ----: | ---------------- |
-| 1 | base | 497 | `quantum` · `duality` · `diamond` · `self` · `cost` · `tamper` |
-| 2 | share | 553 | `thing` · `horo` · `action` · `entropy` · `matrix` · `transaction` |
-| 4 | weave | 530 | `law` · `collapse` · `accounting` · `proof` · `atom` · `rodin` |
-| 8 | crest | 527 | `sequence` · `aura` · `akashic` · `rules` · `breath` · `agriculture` |
-| 7 | descent | 537 | `sti` · `balance` · `standard` · `society` · `medical` · `fields` |
-| 5 | round | 513 | `merge` · `uuid` · `fractal` · `type` · `holographic` · `number` |
+| 1 | base | 497 | `quantum` · `duality` · `diamond` · `cost` · `tamper` · `science` |
+| 2 | share | 554 | `thing` · `action` · `entropy` · `matrix` · `transaction` · `religion` |
+| 4 | weave | 532 | `law` · `collapse` · `accounting` · `proof` · `atom` · `rodin` |
+| 8 | crest | 526 | `horo` · `sequence` · `aura` · `akashic` · `rules` · `breath` |
+| 7 | descent | 536 | `sti` · `balance` · `standard` · `society` · `self` · `medical` |
+| 5 | round | 514 | `merge` · `uuid` · `fractal` · `type` · `holographic` · `number` |
 | 9 | unity | 14 | `identity` · `whole` · `zeropoint` · `auth` · `signal` · `whole` |
 
 > The control axis governs off the flow ring — `3` access · `6` hooks (3: 9 atoms · 6: 11 atoms), `9` unity closes and `0` is the zeropoint root.
 
 
-Cross-tab of **3192** folder README models — state × count per axis.
+Cross-tab of **3200** folder README models — state × count per axis.
 
 ### [[seal]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unsealed | 2095 | 65.63 |
-| sealed | 1097 | 34.37 |
-| **Σ** | **3192** | **100** |
+| unsealed | 2101 | 65.66 |
+| sealed | 1099 | 34.34 |
+| **Σ** | **3200** | **100** |
 
 ### [[balance]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| balanced | 3033 | 95.02 |
-| unbalanced | 159 | 4.98 |
-| **Σ** | **3192** | **100** |
+| balanced | 3036 | 94.88 |
+| unbalanced | 164 | 5.13 |
+| **Σ** | **3200** | **100** |
 
 
 ## corpus entropy
 
-- gap `9638.035` eb · seal `33809.445` eb · net `-24171.41` eb · ratio `3.508`
-- sealed `1097` · unsealed `2095`
+- gap `9662.695` eb · seal `33881.315` eb · net `-24218.62` eb · ratio `3.506`
+- sealed `1099` · unsealed `2101`
 
 
 ## scripts
@@ -121,4 +169,4 @@ Everything else — ([AGPL-3.0-or-later](LICENSE) / commercial) via `license@erp
 
 ---
 
-<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `ffa72dde-870e-8571-8d4c-a7cca6daaff8`, regenerated from the live tree; any drift fails the gate.</sub>
+<sub>generated by `pnpm readme` · verified by `pnpm readme:check` · this README is a diamond — content-uuid `4b53159f-350f-8ad6-ae4f-40fa7513c73e`, regenerated from the live tree; any drift fails the gate.</sub>
